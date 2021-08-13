@@ -1,11 +1,11 @@
 ---
-title: Método CreateInstanceFromPropertyData de la clase MicrosoftDNS_SRVType
+title: Método CreateInstanceFromPropertyData de la MicrosoftDNS_SRVType clase
 description: El método CreateInstanceFromPropertyData crea una instancia de un registro de recursos de servicio (SRV).
 ms.assetid: ef55faa8-1109-4c96-98ac-2b01b940fa5c
 keywords:
-- CreateInstanceFromPropertyData el método DNS
-- Método CreateInstanceFromPropertyData DNS, clase MicrosoftDNS_SRVType
-- MicrosoftDNS_SRVType de clase DNS, método CreateInstanceFromPropertyData
+- Dns del método CreateInstanceFromPropertyData
+- Método DNS CreateInstanceFromPropertyData , MicrosoftDNS_SRVType clase
+- MicrosoftDNS_SRVType clase DNS , método CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 607ed606bf12e9e2a6f90a6e7f309aa708b7f230
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92519a3dcd383fca9297323c5217cfdefa997752ede62435b8002af5e151114f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118669093"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_srvtype-class"></a>Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS SRVType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_srvtype-class"></a>Método CreateInstanceFromPropertyData de la clase SRVType de MicrosoftDNS \_
 
-El método **CreateInstanceFromPropertyData** crea una instancia de un registro de recursos de servicio (SRV).
+El **método CreateInstanceFromPropertyData** crea una instancia de un registro de recursos de servicio (SRV).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,21 +51,21 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ de\]
+*DnsServerName* \[ En\]
 </dt> <dd>
 
 FQDN o dirección IP del servidor DNS que contiene este RR.
 
 </dd> <dt>
 
-*ContainerName* \[ de\]
+*ContainerName* \[ En\]
 </dt> <dd>
 
-Nombre del contenedor de la zona, la memoria caché o la instancia de RootHints que contiene este RR.
+Nombre del contenedor de la instancia de Zone, Cache o RootHints que contiene este RR.
 
 </dd> <dt>
 
-*Nombrepropietario* \[ de\]
+*OwnerName* \[ En\]
 </dt> <dd>
 
 Nombre del propietario del RR.
@@ -81,9 +81,9 @@ Clase del RR. El valor predeterminado es 1. Los valores siguientes son válidos.
 
 | Value                                                                                                | Significado                  |
 |------------------------------------------------------------------------------------------------------|--------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | EN (Internet)<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
 | <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
@@ -92,42 +92,42 @@ Clase del RR. El valor predeterminado es 1. Los valores siguientes son válidos.
 
 </dd> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*Prioridad* \[ de de\]
+*Prioridad* \[ En\]
 </dt> <dd>
 
 Prioridad del host de destino especificado en el nombre del propietario. Los números más bajos implican prioridades más altas.
 
 </dd> <dt>
 
-*Peso* \[ de de\]
+*Peso* \[ En\]
 </dt> <dd>
 
-Peso del host de destino. Esto resulta útil al seleccionar entre los hosts que tienen la misma prioridad. Las posibilidades de usar este host deben ser proporcionales a su peso.
+Peso del host de destino. Esto resulta útil al seleccionar entre hosts que tienen la misma prioridad. Las posibilidades de usar este host deben ser proporcionales a su peso.
 
 </dd> <dt>
 
-*Puerto* \[ de de\]
+*Puerto* \[ En\]
 </dt> <dd>
 
-Puerto usado en el host de destino de un servicio de protocolo.
+Puerto utilizado en el host de destino de un servicio de protocolo.
 
 </dd> <dt>
 
-*SRVDomainName* \[ de\]
+*SRVDomainName* \[ En\]
 </dt> <dd>
 
-FQDN del host de destino. Un destino de \\ . \\ significa que el servicio no está disponible en este dominio.
+FQDN del host de destino. Un destino de \\ significa que el servicio no está disponible en este \\ dominio.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Referencia al nuevo objeto.
@@ -147,7 +147,7 @@ Este método no devuelve ningún valor.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -158,10 +158,10 @@ Este método no devuelve ningún valor.
 [**MicrosoftDNS \_ SRVType**](microsoftdns-srvtype.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS SRVType**](microsoftdns-srvtype-modify.md)
+[**Método Modify de la clase SRVType de MicrosoftDNS \_**](microsoftdns-srvtype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

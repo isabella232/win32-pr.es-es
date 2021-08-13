@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTaggedNotNULLException'
-title: Constructor de EsentTaggedNotNULLException
+description: 'Más información sobre: Constructor EsentTaggedNotNULLException'
+title: Constructor EsentTaggedNotNULLException
 TOCTitle: 'EsentTaggedNotNULLException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTaggedNotNULLException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttaggednotnullexception.esenttaggednotnullexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ea657c58312b8145b8c7c8f973f002db3da846ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: baca69039c2ea5755046e971a13c1f2700f9b773d76e3bbd83689971d3cbfccf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118769187"
 ---
-# <a name="esenttaggednotnullexception-constructor"></a>Constructor de EsentTaggedNotNULLException
+# <a name="esenttaggednotnullexception-constructor"></a>Constructor EsentTaggedNotNULLException
 
 Inicializa una nueva instancia de la clase EsentTaggedNotNULLException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTaggedNotNULLException()
 public EsentTaggedNotNULLException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTaggedNotNULLException()
 
 [Miembros de EsentTaggedNotNULLException](./esenttaggednotnullexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

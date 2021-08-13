@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. altitud.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.Altitude.
 ms.assetid: 63d59aa3-52a6-4b6f-b6ec-a1c4abcee83f
-title: Directiva de metadatos de la foto System. GPS. altitud
+title: Directiva de metadatos de fotos System.GPS.Altitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 003d39d135c625a01035c023b5d7dc8d890b3b1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40a9209bfb0bbc1a4c6f95ce4a995d32d3f532c293dd2295c335eea61c22df89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442005"
 ---
-# <a name="systemgpsaltitude-photo-metadata-policy"></a>Directiva de metadatos de la foto System. GPS. altitud
+# <a name="systemgpsaltitude-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.Altitude
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. altitud](../properties/props-system-gps-altitude.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.Altitude.](../properties/props-system-gps-altitude.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Altitud de GPS de PKEY \_
+PKEY \_ GPS \_ Altitude
 
 ### <a name="description"></a>Descripción
 
@@ -31,40 +31,40 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ R8
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
 VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se puede escribir escribiendo en System. GPS. altitud. Numerator y System. GPS. altitud. denominador. No se puede escribir directamente. Las rutas de acceso de escritura de las tablas siguientes indican dónde se puede guardar el valor cuando se genera, no cuando se escribe directamente. Cuando se lee el valor, se reconcilian los valores de los distintos esquemas.
+Este valor se puede escribir escribiendo en System.GPS.Altitude.Numerator y System.GPS.Altitude.Denominator. No se puede escribir directamente. Las rutas de acceso de escritura de las tablas siguientes indican dónde se puede guardar el valor cuando se genera, no cuando se escribe directamente. Cuando se lee el valor, se concilian los valores de esquemas diferentes.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 6} |             |
+| 1     | /app1/ifd/gps/{ushort=6} |             |
 | 2     | /xmp/exif:GPSAltitude    |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 6} |             |
+| 1     | /app1/ifd/gps/{ushort=6} |             |
 | 2     | /xmp/exif:GPSAltitude    |             |
 
 
@@ -75,9 +75,9 @@ Este valor se puede escribir escribiendo en System. GPS. altitud. Numerator y Sy
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Path                     |
 |-------|--------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 6} |
+| 1     | /app1/ifd/gps/{ushort=6} |
 | 2     | /xmp/exif:gpsaltitude    |
 
 
@@ -86,26 +86,26 @@ Este valor se puede escribir escribiendo en System. GPS. altitud. Numerator y Sy
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Path                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 6}       |             |
+| 1     | /ifd/gps/{ushort=6}       |             |
 | 2     | /ifd/xmp/exif:GPSAltitude |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Path                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 6}       |             |
+| 1     | /ifd/gps/{ushort=6}       |             |
 | 2     | /ifd/xmp/exif:GPSAltitude |             |
 
 
@@ -116,9 +116,9 @@ Este valor se puede escribir escribiendo en System. GPS. altitud. Numerator y Sy
 
 
 
-| Pedido | Ruta                      |     |
+| Pedido | Path                      |     |
 |-------|---------------------------|-----|
-| 1     | /IFD/GPS/{ushort = 6}       |     |
+| 1     | /ifd/gps/{ushort=6}       |     |
 | 2     | /ifd/xmp/exif:gpsaltitude |     |
 
 
@@ -131,7 +131,7 @@ Este valor se puede escribir escribiendo en System. GPS. altitud. Numerator y Sy
 
 <dl> <dt>
 
-[System. GPS. altitud](../properties/props-system-gps-altitude.md)
+[System.GPS.Altitude](../properties/props-system-gps-altitude.md)
 </dt> </dl>
 
  

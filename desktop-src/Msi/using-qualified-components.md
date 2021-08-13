@@ -4,39 +4,39 @@ ms.assetid: 45a05ab2-d951-415d-bdb8-cb0a73eb9967
 title: Uso de componentes calificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d11233a91e8883d1a4151957d3e73d18ebdcff25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46c92d165bc06640efea4b8678eeaefa5eb04c36f1b47b6c965faeea00c66adb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622951"
 ---
 # <a name="using-qualified-components"></a>Uso de componentes calificados
 
 Los componentes calificados son un método de direccionamiento indirecto y se pueden usar para agrupar componentes con funcionalidad paralela en categorías.
 
-Para devolver la ruta de acceso completa e instalar un [componente completo](qualified-components.md), llame a [**MsiProvideQualifiedComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponenta) o [**MsiProvideQualifiedComponentEx**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponentexa).
+Para devolver la ruta de acceso completa e instalar un [componente](qualified-components.md)completo, llame a [**MsiProvideQualifiedComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponenta) o [**MsiProvideQualifiedComponentEx**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponentexa).
 
-Para enumerar todos los calificadores de componente cualificados y las cadenas descriptivas, llame a [**MsiEnumComponentQualifiers**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa).
+Para enumerar todos los calificadores de componentes calificados y cadenas descriptivas, llame a [**MsiEnumComponentQualifiers.**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa)
 
-**Para agrupar los componentes en una categoría de componente calificado**
+**Para agrupar componentes en una categoría de componentes calificados**
 
-1.  Debe haber un registro en la [tabla de componentes](component-table.md) para cada componente incluido en la nueva categoría de componentes calificados. Cree los campos en la tabla de componentes de la misma forma que para los componentes normales. Tenga en cuenta que cada componente calificado debe tener un GUID de identificador de componente único escrito en la columna ComponentId de la tabla de componentes.
-2.  Generar una cadena de texto de calificador para cada componente calificado. El calificador debe ser una cadena de texto única que se pueda generar fácilmente al buscar un componente calificado. Por ejemplo, si los componentes de la categoría se califican por idioma, el identificador numérico de la configuración regional (LCID) es una cadena de calificador razonable.
-3.  Agregue un registro en la [tabla PublishComponent](publishcomponent-table.md) para cada componente calificado. Especifique los identificadores de componente completo de la columna componente de la tabla componente en la \_ columna componente de la tabla PublishComponent. Escriba las cadenas de calificador de cada componente calificado en la columna calificador. Escriba una cadena traducida que se mostrará al usuario y que describa el componente calificado en la columna AppData opcional. Se debe colocar una cadena explicativa en el campo AppData, como "Diccionario francés", en lugar de solo el LCID numérico. Escriba el nombre de la característica que usa este componente en la columna de la característica \_ . El identificador de característica de este campo también debe aparecer en la columna característica de la [tabla de características](feature-table.md).
-4.  Genere un GUID de categoría para esta categoría de componentes calificados. Debe ser un [GUID](guid.md)válido. Si utiliza una utilidad como GUIDGEN para generar el GUID, asegúrese de que contiene solo letras mayúsculas. Para cada componente calificado en esta categoría, escriba el GUID de la categoría en el campo ComponentId de la [tabla PublishComponent](publishcomponent-table.md).
+1.  Debe haber un registro en la tabla [Component](component-table.md) para cada componente incluido en la nueva categoría de componentes calificados. Cree los campos de la tabla Componente de la misma manera que para los componentes normales. Tenga en cuenta que cada componente calificado debe tener un GUID de identificador de componente único especificado en la columna ComponentId de la tabla Component.
+2.  Genere una cadena de texto calificador para cada componente calificado. El calificador debe ser una cadena de texto única que se pueda generar fácilmente al buscar un componente completo. Por ejemplo, si los componentes de la categoría están calificados por idioma, el identificador numérico de configuración regional (LCID) es una cadena de calificador razonable.
+3.  Agregue un registro en la [tabla PublishComponent para](publishcomponent-table.md) cada componente calificado. Escriba los identificadores de componente calificado de la columna Componente de la tabla Componente en la columna \_ Componente de la tabla PublishComponent. Escriba las cadenas de calificador de cada componente calificado en la columna Calificador. Escriba una cadena localizada que se mostrará al usuario y describa el componente calificado en la columna AppData opcional. Se debe colocar una cadena explicativa en el campo AppData, como "Diccionario de francés", en lugar de simplemente el LCID numérico. Escriba el nombre de la característica que usa este componente en la columna \_ Característica. El identificador de característica de este campo también debe aparecer en la columna Característica de la [tabla Característica](feature-table.md).
+4.  Genere un GUID de categoría para esta categoría de componentes calificados. Debe ser un [GUID válido.](guid.md) Si usa una utilidad como GUIDGEN para generar el GUID, asegúrese de que solo contiene letras mayúsculas. Para cada componente calificado de esta categoría, escriba el GUID de categoría en el campo ComponentId de la [tabla PublishComponent](publishcomponent-table.md).
 
-En el ejemplo siguiente se muestra cómo se crea la categoría de "plantillas de FAX" de los componentes calificados en las tablas componente, característica y PublishComponent.
+En el ejemplo siguiente se muestra cómo se crea la categoría "Plantillas de FAX" de componentes completos en las tablas Component, Feature y PublishComponent.
 
 [Tabla PublishComponent](publishcomponent-table.md)
 
 
 
-| ComponentId                  | Qualifier | AppData             | Característica\_   | Componente\_    |
+| Componentid                  | Qualifier | AppData             | Característica\_   | Componente\_    |
 |------------------------------|-----------|---------------------|-------------|----------------|
-| {GUID de categoría de plantilla de FAX} | 3082      | Plantilla de Inglés de EE. UU. | FAXTemplate | FAXTemplateENU |
-|                              | 1041      | Plantilla en Japonés   | FAXTemplate | FAXTemplateJPN |
-|                              | 1054      | Plantilla tailandesa       | FAXTemplate | FAXTemplateTHA |
+| {GUID de categoría de plantilla de FAX} | 3082      | Plantilla en inglés de EE. UU. | FAXTemplate | FAXTemplateENU |
+|                              | 1041      | Plantilla japonesa   | FAXTemplate | FAXTemplateTEMPLATETEMPLATEN |
+|                              | 1054      | Plantilla tailandesa       | FAXTemplate | FAXTemplateTEMPLATE |
 |                              | 1031      | Plantilla alemana     | FAXTemplate | FAXTemplateDEU |
 
 
@@ -47,12 +47,12 @@ En el ejemplo siguiente se muestra cómo se crea la categoría de "plantillas de
 
 
 
-| Componente      | ComponentId                                  |
+| Componente      | Componentid                                  |
 |----------------|----------------------------------------------|
-| FAXTemplateENU | {*Plantilla de fax (Inglés de EE. UU.) GUID del componente*} |
-| FAXTemplateJPN | {*GUID del componente de plantilla de fax (japonés)*}   |
-| FAXTemplateTHA | {*GUID del componente de plantilla de fax (tailandés)*}       |
-| FAXTemplateDEU | {*GUID del componente de plantilla de fax (alemán)*}     |
+| FAXTemplateENU | {*FAX Template (US English) component GUID*} |
+| FAXTemplateTEMPLATETEMPLATEN | {*GUID de componente de plantilla de FAX (japonés)*}   |
+| FAXTemplateTEMPLATE | {*GUID de componente de plantilla de FAX (tailandés)*}       |
+| FAXTemplateDEU | {*GUID de componente de plantilla de FAX (alemán)*}     |
 
 
 

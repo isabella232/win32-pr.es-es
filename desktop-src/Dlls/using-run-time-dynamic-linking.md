@@ -1,23 +1,23 @@
 ---
 description: Puede usar el mismo archivo DLL en la vinculación dinámica en tiempo de carga y en tiempo de ejecución.
 ms.assetid: 0ffce2b1-ce50-4550-aa68-6628fdcac01a
-title: Usar Run-Time vinculación dinámica
+title: Uso Run-Time dynamic linking
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4d6ca65c510433350b81a282d8bf7a3a3825ef1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8c13cc66a34f0fd5938fcdada027b30223ebff0abe6e9ce459d60f93a6546f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119255985"
 ---
-# <a name="using-run-time-dynamic-linking"></a>Usar Run-Time vinculación dinámica
+# <a name="using-run-time-dynamic-linking"></a>Uso Run-Time dynamic linking
 
-Puede usar el mismo archivo DLL en la vinculación dinámica en tiempo de carga y en tiempo de ejecución. En el ejemplo siguiente se usa la función [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) para obtener un identificador para el archivo dll allocas (consulte [creación de una biblioteca de Dynamic-Link sencilla](creating-a-simple-dynamic-link-library.md)). Si **LoadLibrary** se realiza correctamente, el programa utiliza el controlador devuelto en la función [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para obtener la dirección de la función puts de la dll. Después de llamar a la función DLL, el programa llama a la función [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) para descargar el archivo dll.
+Puede usar el mismo archivo DLL en la vinculación dinámica en tiempo de carga y en tiempo de ejecución. En el ejemplo siguiente se usa [**la función LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) para obtener un identificador del archivo DLL de Myputs (vea Creación de una biblioteca de Dynamic-Link [sencilla).](creating-a-simple-dynamic-link-library.md) Si **LoadLibrary** se realiza correctamente, el programa usa el identificador devuelto en la función [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para obtener la dirección de la función myPuts del archivo DLL. Después de llamar a la función DLL, el programa llama a [**la función FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) para descargar el archivo DLL.
 
 Dado que el programa usa la vinculación dinámica en tiempo de ejecución, no es necesario vincular el módulo con una biblioteca de importación para el archivo DLL.
 
-Este ejemplo muestra una diferencia importante entre la vinculación dinámica en tiempo de ejecución y en tiempo de carga. Si el archivo DLL no está disponible, la aplicación que usa la vinculación dinámica en tiempo de carga debe finalizar simplemente. El ejemplo de vinculación dinámica en tiempo de ejecución, sin embargo, puede responder al error.
+En este ejemplo se muestra una diferencia importante entre la vinculación dinámica en tiempo de ejecución y la vinculación dinámica en tiempo de carga. Si el archivo DLL no está disponible, la aplicación que usa la vinculación dinámica en tiempo de carga simplemente debe finalizar. Sin embargo, el ejemplo de vinculación dinámica en tiempo de ejecución puede responder al error.
 
 
 ```C++

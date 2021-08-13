@@ -1,7 +1,7 @@
 ---
 description: Representa un objeto de lápiz óptico.
 ms.assetid: c55945b7-59df-49b5-b25f-fa96056889fc
-title: Interfaz ITabletCursor
+title: ITabletCursor (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,36 +14,36 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: eecbebc7090fb57d3794f3d056c24fba61fa5c61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83a24329b318ec2bb542a3bbb63a28d4db9fce877b99f75aa7091670825fa439
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118716943"
 ---
-# <a name="itabletcursor-interface"></a>Interfaz ITabletCursor
+# <a name="itabletcursor-interface"></a>ITabletCursor (interfaz)
 
 Representa un objeto de lápiz óptico.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITabletCursor** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletCursor** también tiene estos tipos de miembros:
+La **interfaz ITabletCursor** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletCursor** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITabletCursor** tiene estos métodos.
+La **interfaz ITabletCursor** tiene estos métodos.
 
 
 
 | Método                                                 | Descripción                                                            |
 |:-------------------------------------------------------|:-----------------------------------------------------------------------|
-| [**GetButton**](itabletcursor-getbutton.md)           | Recupera el objeto de botón especificado de un lápiz de Tablet PC.<br/> |
-| [**GetButtonCount**](itabletcursor-getbuttoncount.md) | Recupera el número de botones del lápiz de Tablet PC.<br/>       |
+| [**GetButton**](itabletcursor-getbutton.md)           | Recupera el objeto de botón especificado de un lápiz óptico de tableta.<br/> |
+| [**GetButtonCount**](itabletcursor-getbuttoncount.md) | Recupera el número de botones del lápiz óptico de la tableta.<br/>       |
 | [**GetId**](itabletcursor-getid.md)                   | Recupera el identificador del lápiz óptico.<br/>                            |
-| [**GetName**](itabletcursor-getname.md)               | Recupera el nombre del lápiz de Tablet PC.<br/>                    |
-| [**IsInverted**](itabletcursor-isinverted.md)         | Indica si el lápiz está en la parte inferior.<br/>                     |
+| [**GetName**](itabletcursor-getname.md)               | Recupera el nombre del lápiz óptico de tableta.<br/>                    |
+| [**IsInverted**](itabletcursor-isinverted.md)         | Indica si el lápiz óptico está al revés.<br/>                     |
 
 
 
@@ -53,7 +53,7 @@ La interfaz **ITabletCursor** tiene estos métodos.
 
 No utilice esta interfaz.
 
-En el código siguiente se describe cómo se define la interfaz **ITabletCursor** .
+En el código siguiente se describe cómo se define la interfaz **ITabletCursor.**
 
 ``` syntax
 [
@@ -91,7 +91,7 @@ interface ITabletCursor : IUnknown
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

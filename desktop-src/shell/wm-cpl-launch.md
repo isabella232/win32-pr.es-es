@@ -1,5 +1,5 @@
 ---
-description: 'WM_CPL_LAUNCH mensaje: no se admite este mensaje.'
+description: 'WM_CPL_LAUNCH mensaje: este mensaje no se admite.'
 title: WM_CPL_LAUNCH mensaje (Cpl.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f94f63a7f38822b5f0f08fbed0b6f406c16ec9cd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d351fde8745edb1892e6498c9c5dd74497fc57ca66ab9860801705774d807580
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451851"
 ---
 # <a name="wm_cpl_launch-message"></a>Mensaje \_ WM CPL \_ LAUNCH
 

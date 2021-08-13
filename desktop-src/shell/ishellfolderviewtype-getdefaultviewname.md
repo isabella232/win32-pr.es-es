@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 99229d13-40dc-4750-81a7-48a2f608b778
-ms.openlocfilehash: 808f68093512e2da602d5e73775b47943b140a46
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 252616bd2391606b9942777caf07a2f5f58627a316f51e481c19fbfcc98599b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443275"
 ---
 # <a name="ishellfolderviewtypegetdefaultviewname-method"></a>IShellFolderViewType::GetDefaultViewName (método)
 
@@ -54,7 +54,7 @@ Marcas opcionales; debe establecerse en 0.
 
 Tipo: **LPWSTR \***
 
-Dirección de un puntero de cadena que recibe el nombre de vista predeterminado. La memoria de la cadena se asigna con [**SHStrDup.**](/windows/desktop/api/Shlwapi/nf-shlwapi-shstrdupa)
+Dirección de un puntero de cadena que recibe el nombre de vista predeterminado. La memoria de la cadena se asigna con [**SHStrDup**](/windows/desktop/api/Shlwapi/nf-shlwapi-shstrdupa).
 
 </dd> </dl>
 

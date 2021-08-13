@@ -1,11 +1,11 @@
 ---
-title: Propiedad ResultsStyle de IResultsViewer
-description: Propiedad ResultsStyle de IResultsViewer
+title: IResultsViewer ResultsStyle, propiedad
+description: IResultsViewer ResultsStyle, propiedad
 ms.assetid: 11fb946c-b27e-4dbd-872f-8db5bd6692b6
 keywords:
-- Propiedad ResultsStyle características de entorno heredado de Windows
-- Propiedad ResultsStyle características de entorno heredado de Windows, interfaz IResultsViewer
-- Interfaz IResultsViewer características del entorno heredado de Windows, propiedad ResultsStyle
+- Características heredadas del entorno de Windows ResultsStyle
+- Propiedad ResultsStyle Legacy Windows Environment Features , IResultsViewer (Interfaz IResultsViewer)
+- Interfaz IResultsViewer heredada de Windows Environment Features , propiedad ResultsStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c084e4610e82027f0fe096342ee6346dac12fa53
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2e5b303a06200767b7c9c7c84b9bb0d345505c4a80c38aae0ff4683540bc2680
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103994621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753511"
 ---
-# <a name="iresultsviewerresultsstyle-property"></a>IResultsViewer:: ResultsStyle (propiedad)
+# <a name="iresultsviewerresultsstyle-property"></a>IResultsViewer::ResultsStyle, propiedad
 
 Esta propiedad no está implementada.
 
- 
+ 
 
- 
+ 
 
 
 

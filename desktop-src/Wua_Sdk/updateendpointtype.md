@@ -1,7 +1,7 @@
 ---
-description: Define el tipo de puntos de conexión que se pueden utilizar para conectarse a un servicio.
+description: Define el tipo de puntos de conexión que se pueden usar para conectarse a un servicio.
 ms.assetid: 50397D25-7C71-4AA2-89BF-F90CBDCFFA91
-title: Enumeración UpdateEndpointType (UpdateEndpointAuth. h)
+title: Enumeración UpdateEndpointType (UpdateEndpointAuth.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - UpdateEndpointAuth.h
-ms.openlocfilehash: 942bcb5275c6a4f39d6e2828025e5b9a40e52c46
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fbfd67b3009fbe904284ea7a92cdea996d0a6e23a43a17639eb567d66536917
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462915"
 ---
 # <a name="updateendpointtype-enumeration"></a>Enumeración UpdateEndpointType
 
-Define el tipo de puntos de conexión que se pueden utilizar para conectarse a un servicio.
+Define el tipo de puntos de conexión que se pueden usar para conectarse a un servicio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,64 +45,64 @@ typedef enum tagEndpointType {
 
 <dl> <dt>
 
-<span id="uetClientServer"></span><span id="uetclientserver"></span><span id="UETCLIENTSERVER"></span>**uetClientServer**
+<span id="uetClientServer"></span><span id="uetclientserver"></span><span id="UETCLIENTSERVER"></span>**clientServer**
 </dt> <dd>
 
-Un punto de conexión cliente-servidor que se utiliza para conectarse al servicio de actualización, como Windows Update, Microsoft Update y servidor WSUS en un entorno corporativo, para buscar información sobre las actualizaciones que pueden ser aplicables al equipo.
+Un punto de conexión cliente-servidor que se usa para conectarse al servicio de actualización, como Windows Update, Microsoft Update y el servidor WSUS en un entorno corporativo, para buscar información sobre las actualizaciones que pueden ser aplicables al equipo.
 
 El servicio de actualización devuelve información sobre las actualizaciones publicadas, revisadas o retiradas desde la última vez que el cliente realizó una sincronización con el servidor.
 
 </dd> <dt>
 
-<span id="uetReporting"></span><span id="uetreporting"></span><span id="UETREPORTING"></span>**uetReporting**
+<span id="uetReporting"></span><span id="uetreporting"></span><span id="UETREPORTING"></span>**reporting**
 </dt> <dd>
 
-Un punto de conexión de informes que se utiliza cuando el cliente informa de los resultados de los análisis, las descargas y vuelve a instalarse en el servicio de actualización.
+Un punto de conexión de informes que se usa cuando el cliente informa de los resultados de exámenes, descargas e instala de nuevo en el servicio de actualización.
 
-En el caso de los servicios públicos (Windows Update y Microsoft Update), esto se hace para la supervisión de la calidad.
+En el caso de los servicios públicos (Windows Update y Microsoft Update), esto se realiza con fines de supervisión de calidad.
 
-En el caso de los servicios privados, como un servidor WSUS corporativo, el tipo de punto de conexión thhis también permite que el servidor recopile el inventario y otra información sobre los equipos cliente que se están controlando.
+En el caso de los servicios privados, como un servidor WSUS corporativo, el tipo de punto de conexión también permite que el servidor recopile el inventario y otra información sobre los equipos cliente bajo administración.
 
 </dd> <dt>
 
-<span id="uetWuaSelfUpdate"></span><span id="uetwuaselfupdate"></span><span id="UETWUASELFUPDATE"></span>**uetWuaSelfUpdate**
+<span id="uetWuaSelfUpdate"></span><span id="uetwuaselfupdate"></span><span id="UETWUASELFUPDATE"></span>**wuWuaSelfUpdate**
 </dt> <dd>
 
-Un punto de conexión de actualización automática que se utiliza cuando el equipo cliente se pone en contacto con un servicio de actualización para comprobar si hay una nueva versión del software cliente del agente de Windows Update.
+Un punto de conexión de actualización automática que se usa cuando el equipo cliente se pone en contacto con un servicio de actualización para ver si hay una nueva versión del software cliente Windows Update Agent.
 
-El punto de conexión de actualización automática usa un protocolo diferente, el extremo de Client-Server para que se puedan distribuir las actualizaciones automáticas, incluso si hay una condición de error que podría impedir que la sincronización de cliente-servidor normal funcione en un equipo cliente determinado.
+El punto de conexión de actualización automática usa un protocolo diferente y, a continuación, el punto de conexión de Client-Server para que las actualizaciones automáticas se puedan distribuir incluso si hay una condición de error que podría impedir que la sincronización cliente-servidor normal funcione en un equipo cliente determinado.
 
 </dd> <dt>
 
-<span id="uetRegulation"></span><span id="uetregulation"></span><span id="UETREGULATION"></span>**uetRegulation**
+<span id="uetRegulation"></span><span id="uetregulation"></span><span id="UETREGULATION"></span>**vocación**
 </dt> <dd>
 
-Un punto de conexión de Reglamento que se utiliza cuando el equipo cliente se pone en contacto con el servicio de Reglamento para actuar sobre una actualización determinada que es aplicable al equipo de destino.
+Un punto de conexión de reglamento que se usa cuando el equipo cliente se pone en contacto con el servicio de regulación para actuar en una actualización determinada que se aplica al equipo de destino.
 
-El servicio de regulación puede indicar si la actualización está "regulada" (también conocida como "limitada"); en otras palabras, el servicio de regulación puede indicar al equipo cliente que no debe actuar en una actualización determinada, aunque esa actualización parezca ser aplicable.
+El servicio de regulación puede indicar si la actualización está "regulado" (también conocido como "limitada"), es decir, el servicio de regulación puede indicar al equipo cliente que no debe actuar en una actualización determinada, aunque parezca aplicable.
 
 </dd> <dt>
 
-<span id="uetSimpleTargeting"></span><span id="uetsimpletargeting"></span><span id="UETSIMPLETARGETING"></span>**uetSimpleTargeting**
+<span id="uetSimpleTargeting"></span><span id="uetsimpletargeting"></span><span id="UETSIMPLETARGETING"></span>**simpleTargeting**
 </dt> <dd>
 
-Un punto de conexión de destino simple que solo se usa con servicios privados (servidores WSUS en entornos corporativos). En un entorno corporativo, los equipos cliente se pueden asignar a grupos de destino concretos y las actualizaciones se pueden aprobar para su instalación en equipos en algunos grupos, pero no en otros.
+Un punto de conexión de destino simple que solo se usa con servicios privados (servidores WSUS en entornos corporativos). En un entorno corporativo, los equipos cliente se pueden asignar a grupos de destino concretos y las actualizaciones se pueden aprobar para la instalación en equipos de algunos grupos, pero no en otros.
 
-Por ejemplo, el administrador de WSUS puede crear un grupo de "pruebas" para los equipos que se usan para probar nuevas actualizaciones, y el administrador puede aprobar las actualizaciones recién publicadas para instalarlas en los equipos del grupo de prueba sin que se aprueben para su instalación en otros equipos de la organización. El intercambio de destino sencillo se usa para permitir que un equipo cliente se registre en el servidor WSUS y permitir que el servidor indique al equipo cliente en qué grupo se encuentra.
+Por ejemplo, el administrador de WSUS puede crear un grupo de "Pruebas" para equipos que se usan para probar nuevas actualizaciones y el administrador puede aprobar actualizaciones recién publicadas para la instalación en equipos del grupo Pruebas sin aprobarlas para su instalación en otros equipos de la organización. El intercambio de destino simple se usa para permitir que un equipo cliente se registre en el servidor WSUS y para permitir que el servidor le informe al equipo cliente en qué grupo se encuentra.
 
 </dd> <dt>
 
-<span id="uetSecuredClientServer"></span><span id="uetsecuredclientserver"></span><span id="UETSECUREDCLIENTSERVER"></span>**uetSecuredClientServer**
+<span id="uetSecuredClientServer"></span><span id="uetsecuredclientserver"></span><span id="UETSECUREDCLIENTSERVER"></span>**segurodClientServer**
 </dt> <dd>
 
-Un punto de conexión de cliente-servidor protegido que permite a un cliente obtener información sobre las aplicaciones que necesitan licencias para que se puedan usar en un equipo cliente. Actualmente, Windows 8 solo usa este marco de licencias para implementar aplicaciones y actualizaciones que se obtienen a través de la tienda Windows. Windows Update, Microsoft Update o WSUS no usan actualmente el punto de conexión protegido-cliente-servidor.
+Un punto de conexión de cliente-servidor protegido que permite a un cliente obtener información sobre las aplicaciones que necesitan licencias para que se puedan usar en un equipo cliente. Actualmente, este marco de licencias solo se usa Windows 8 para implementar aplicaciones y actualizaciones que se obtienen a través de Windows Store. El punto de conexión secured-client-server no se usa actualmente en Windows Update, Microsoft Update o WSUS.
 
 </dd> <dt>
 
-<span id="uetSecondaryServiceAuth"></span><span id="uetsecondaryserviceauth"></span><span id="UETSECONDARYSERVICEAUTH"></span>**uetSecondaryServiceAuth**
+<span id="uetSecondaryServiceAuth"></span><span id="uetsecondaryserviceauth"></span><span id="UETSECONDARYSERVICEAUTH"></span>**secSecondaryServiceAuth**
 </dt> <dd>
 
-Un cliente usa el punto de conexión de autenticación de servicio secundario para proporcionar la autenticación antes de obtener información sobre las aplicaciones que necesitan licencias para que se puedan usar en un equipo cliente. Actualmente, Windows 8 solo emplea este marco de licencias para implementar aplicaciones y actualizaciones que se obtienen a través de la tienda Windows. Windows Update, Microsoft Update o WSUS no usan actualmente el punto de conexión de autenticación de servicio secundario.
+Un cliente usa el punto de conexión de autenticación de servicio secundario para proporcionar autenticación antes de obtener información sobre las aplicaciones que necesitan licencias para que se puedan usar en un equipo cliente. Actualmente, este marco de licencias solo lo usan Windows 8 implementar aplicaciones y actualizaciones que se obtienen a través de Windows Store. El punto de conexión de autenticación de servicio secundario no se usa actualmente en Windows Update, Microsoft Update o WSUS.
 
 </dd> </dl>
 
@@ -112,10 +112,10 @@ Un cliente usa el punto de conexión de autenticación de servicio secundario pa
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                              |
-| Encabezado<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UpdateEndpointAuth. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                        |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                              |
+| Header<br/>                   | <dl> <dt>UpdateEndpointAuth.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UpdateEndpointAuth.idl</dt> </dl> |
 
 
 

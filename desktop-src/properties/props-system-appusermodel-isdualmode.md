@@ -1,19 +1,19 @@
 ---
-description: Indica que una aplicación admite los modos de doble escritorio y inmersivo. En Windows 8, esta propiedad solo es aplicable para los exploradores Web.
+description: Indica que una aplicación admite los modos de escritorio dual y envolvente. En Windows 8, esta propiedad solo es aplicable a los exploradores web.
 ms.assetid: 91e29f22-2873-4ab4-8285-61c54e710f87
-title: System. AppUserModel. IsDualMode
+title: System.AppUserModel.IsDualMode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c7040254f95d38dcc0c3de181a56a408a63cba5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d08598f42f9a21cce55d7293587e7802afa999e13254768f0aa485713ef551f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731035"
 ---
-# <a name="systemappusermodelisdualmode"></a>System. AppUserModel. IsDualMode
+# <a name="systemappusermodelisdualmode"></a>System.AppUserModel.IsDualMode
 
-Indica que una aplicación admite los modos de doble escritorio y inmersivo. En Windows 8, esta propiedad solo es aplicable para los exploradores Web.
+Indica que una aplicación admite los modos de escritorio dual y envolvente. En Windows 8, esta propiedad solo es aplicable a los exploradores web.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

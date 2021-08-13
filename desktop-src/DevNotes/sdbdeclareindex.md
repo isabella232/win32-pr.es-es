@@ -1,7 +1,7 @@
 ---
 description: Declara un nuevo índice en la base de datos especificada.
 ms.assetid: 21a09201-8f84-4263-b258-77716826a3cd
-title: SdbDeclareIndex función)
+title: Función SdbDeclareIndex
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 68004a29d01288a2e1d177b8a33df32b919e73ce
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b428699641d5a18bad8a1869f59ab1bb5402e7b667526070c3dc0575e435fc38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118666594"
 ---
-# <a name="sdbdeclareindex-function"></a>SdbDeclareIndex función)
+# <a name="sdbdeclareindex-function"></a>Función SdbDeclareIndex
 
 Declara un nuevo índice en la base de datos especificada.
 
@@ -44,51 +44,51 @@ BOOL WINAPI SdbDeclareIndex(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tWhich* \[ de\]
+*tWhich* \[ En\]
 </dt> <dd>
 
-Este parámetro debe ser **una \_ \_ lista de tipo de etiqueta**.
+Este parámetro debe ser **TAG \_ TYPE \_ LIST.**
 
 </dd> <dt>
 
-*tKey* \[ de\]
+*tKey* \[ En\]
 </dt> <dd>
 
-ETIQUETA que especifica el tipo que se va a usar como clave. Este parámetro no puede ser una **\_ \_ lista de tipo de etiqueta**.
+Etiqueta que especifica el tipo que se va a usar como clave. Este parámetro no puede ser **TAG \_ TYPE \_ LIST.**
 
 </dd> <dt>
 
-*dwEntries* \[ de\]
+*dwEntries* \[ En\]
 </dt> <dd>
 
-Número de entradas que se van a asignar en el índice.
+Número de entradas que se asignarán en el índice.
 
 </dd> <dt>
 
-*bUniqueKey* \[ de\]
+*bUniqueKey* \[ En\]
 </dt> <dd>
 
-Si este parámetro es **true**, el índice es un índice de clave única.
+Si este parámetro es **TRUE**, el índice es un índice de clave única.
 
 </dd> <dt>
 
-*piiIndex* \[ enuncia\]
+*piiIndex* \[ out\]
 </dt> <dd>
 
-**INDEXID** resultante del índice recién declarado.
+IndexID **resultante** del índice recién declarado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -100,8 +100,8 @@ Llame a esta función antes de escribir etiquetas en el nuevo índice.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

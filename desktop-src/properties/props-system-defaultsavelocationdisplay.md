@@ -1,19 +1,19 @@
 ---
-description: Ayuda a mostrar como un icono si una ubicación es la ubicación de almacenamiento predeterminada para el propietario o los usuarios que no son propietarios de una biblioteca.
+description: Ayuda a mostrar como icono si una ubicación es o no la ubicación predeterminada para el propietario o no propietario de una biblioteca.
 ms.assetid: 42375796-bf95-4092-bce0-c77e7b5bfeea
-title: System. DefaultSaveLocationDisplay
+title: System.DefaultSaveLocationDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1147a7c0fce8b4bc564b57bac2476b1826e4313
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0078a1f8aa08ef98efc2aea90def1c10c6e7b632d7b84cff4c2e105185fd7fda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118729003"
 ---
-# <a name="systemdefaultsavelocationdisplay"></a>System. DefaultSaveLocationDisplay
+# <a name="systemdefaultsavelocationdisplay"></a>System.DefaultSaveLocationDisplay
 
-Ayuda a mostrar como un icono si una ubicación es la ubicación de almacenamiento predeterminada para el propietario o los usuarios que no son propietarios de una biblioteca.
+Ayuda a mostrar como icono si una ubicación es o no la ubicación de almacenamiento predeterminada para el propietario o no propietario de una biblioteca.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -54,7 +54,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -69,7 +69,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -81,7 +81,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -99,7 +99,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

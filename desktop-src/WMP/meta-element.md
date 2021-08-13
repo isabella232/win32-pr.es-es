@@ -1,9 +1,9 @@
 ---
-title: Elemento meta
-description: El elemento meta especifica metadatos que se aplican a toda la lista de reproducción.
+title: meta (Elemento)
+description: El meta elemento especifica los metadatos que se aplican a toda la lista de reproducción.
 ms.assetid: 7248e1d9-ebd1-48cb-9019-89a35eac27ae
 keywords:
-- Media Player del elemento meta de Windows
+- meta Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9f3c41c25a0df0895c645c34f97495712b113ffc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2e4120b3eceea6d2a664edec9b48a46d33ad19b788bb820458a8802dccd2d9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415745"
 ---
-# <a name="meta-element"></a>Elemento meta
+# <a name="meta-element"></a>meta (Elemento)
 
-El elemento **meta** especifica metadatos que se aplican a toda la lista de reproducción.
+El **meta** elemento especifica los metadatos que se aplican a toda la lista de reproducción.
 
 ``` syntax
 <meta
@@ -37,8 +37,8 @@ El elemento **meta** especifica metadatos que se aplican a toda la lista de repr
 
 | Término                                                                       | Descripción                                                                                                                       |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| <span id="name"></span><span id="NAME"></span>**Name**<br/>          | Nombre de un elemento de metadatos.<br/>                                                                                       |
-| <span id="content"></span><span id="CONTENT"></span>**Content**<br/> | Valor de un elemento de metadatos. Por ejemplo, si el atributo de nombre es "género", el atributo de contenido podría ser "Rock".<br/> |
+| <span id="name"></span><span id="NAME"></span>**Nombre**<br/>          | Nombre de un elemento de metadatos.<br/>                                                                                       |
+| <span id="content"></span><span id="CONTENT"></span>**Contenido**<br/> | Valor de un elemento de metadatos. Por ejemplo, si el atributo name es "Genre", el atributo content podría ser "Rock".<br/> |
 
 
 
@@ -59,7 +59,7 @@ El elemento **meta** especifica metadatos que se aplican a toda la lista de repr
 
 ## <a name="remarks"></a>Observaciones
 
-El creador de una lista de reproducción de Windows Media puede establecer el atributo de nombre de un elemento meta en cualquier cadena. La lista siguiente muestra algunos atributos de nombre típicos que se encuentran en las listas de reproducción de Windows Media creadas por Windows Media Player y otros componentes de Microsoft.
+El creador de una lista Windows multimedia puede establecer el atributo name de un meta elemento en cualquier cadena. En la lista siguiente se muestran algunos atributos de nombre típicos que se encuentran en Windows listas de reproducción multimedia creadas por Reproductor de Windows Media y otros componentes de Microsoft.
 
 -   Autor
 -   Category
@@ -87,7 +87,7 @@ El creador de una lista de reproducción de Windows Media puede establecer el at
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
@@ -95,10 +95,10 @@ El creador de una lista de reproducción de Windows Media puede establecer el at
 
 <dl> <dt>
 
-[**Elemento de encabezado**](head-element.md)
+[**elemento head**](head-element.md)
 </dt> <dt>
 
-[**Referencia de elementos de lista de reproducción de Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

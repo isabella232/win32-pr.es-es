@@ -1,63 +1,63 @@
 ---
-description: Los reconocedores creados para su uso con Windows Vista y Windows XP Tablet PC Edition usan un conjunto de estructuras, cada una de las cuales se denomina Lattice, para devolver los resultados de reconocimiento a las bibliotecas de plataforma de Tablet PC.
+description: Los reconocedores creados para su uso con Windows Vista y Windows XP Tablet PC Edition usan un conjunto de estructuras, cada una de las cuales se denomina lattice, para devolver los resultados de reconocimiento a las bibliotecas de la plataforma de Tablet PC.
 ms.assetid: 628ca677-31eb-47d9-bcc6-d7777f8aaf7c
-title: Estructura Lattice del reconocedor
+title: Recognizer Lattice (estructura)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46bbfe71674571ae0554509dfa8477569ef8b44d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc5610d60428bd3259672f43e45efa59c25f78b7ddc5909c363610eaf08520e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104551251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118716032"
 ---
-# <a name="recognizer-lattice-structure"></a>Estructura Lattice del reconocedor
+# <a name="recognizer-lattice-structure"></a>Recognizer Lattice (estructura)
 
-Los reconocedores creados para su uso con Windows Vista y Windows XP Tablet PC Edition usan un conjunto de estructuras, cada una de las cuales se denomina Lattice, para devolver los resultados de reconocimiento a las bibliotecas de plataforma de Tablet PC. A continuación, la plataforma de Tablet PC copia la información de estas estructuras en el objeto [**IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult) , la colección [**IInkRecognitionAlternates**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternates) y el objeto [**IInkRecognitionAlternate**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternate) .
+Los reconocedores creados para su uso con Windows Vista y Windows XP Tablet PC Edition usan un conjunto de estructuras, cada una de las cuales se denomina lattice, para devolver los resultados de reconocimiento a las bibliotecas de la plataforma de Tablet PC. A continuación, la plataforma de Tablet PC copia la información de estas estructuras en el objeto [**IInkRecognitionResult,**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult) la colección [**IInkRecognitionAlternates**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternates) y el [**objeto IInkRecognitionAlternate.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternate)
 
-El reconocedor debe devolver un puntero a Lattice cuando la plataforma llama a la función [**GetLatticePtr**](/windows/desktop/api/recapis/nf-recapis-getlatticeptr) en el identificador [HRECOCONTEXT](hrecocontext-handle.md) .
+El reconocedor debe devolver un puntero al lattice cuando la plataforma llama a la función [**GetLatticePtr**](/windows/desktop/api/recapis/nf-recapis-getlatticeptr) en el [identificador HRECOCONTEXT.](hrecocontext-handle.md)
 
-En esta sección se describe la estructura de Lattice en detalle. Para obtener información general sobre los reconocedores y los conceptos relacionados, consulte [acerca del reconocimiento de escritura a mano](about-handwriting-recognition.md).
+En esta sección se describe detalladamente la estructura lattice. Para obtener información general sobre los reconocedores y los conceptos relacionados, vea [Acerca del reconocimiento de escritura a mano.](about-handwriting-recognition.md)
 
-## <a name="the-need-for-a-lattice"></a>La necesidad de un Lattice
+## <a name="the-need-for-a-lattice"></a>La necesidad de un lattice
 
-Un reconocedor puede encontrar varias formas de dividir un conjunto de trazos de tinta en segmentos de reconocimiento. Lo que el reconocedor utiliza como segmento de reconocimiento depende del tipo de reconocedor. Los reconocedores de idiomas ingleses suelen usar palabras como el segmento de reconocimiento. Otros reconocedores pueden usar caracteres, formas o gestos como segmento de reconocimiento. La flexibilidad de las estructuras Lattice permite la administración lógica del gran número de resultados de reconocimiento que se pueden combinar en relaciones complejas.
+Un reconocedor puede encontrar varias maneras de dividir un conjunto de trazos de lápiz en segmentos de reconocimiento. Lo que el reconocedor usa como segmento de reconocimiento depende del tipo de reconocedor. Los reconocedores de idioma inglés suelen usar palabras como segmento de reconocimiento. Otros reconocedores pueden usar caracteres, formas o gestos como segmento de reconocimiento. La flexibilidad de las estructuras lattice permite la administración lógica del gran número de resultados de reconocimiento que se pueden combinar en relaciones complejas.
 
-Internamente, los reconocedores usan un Lattice para mantener las unidades de reconocimiento básicas para un determinado fragmento de tinta. El Lattice también contiene la puntuación o el nivel de confianza del resultado combinado. Además, el Lattice almacena la asignación de segmentos a los trazos de tinta originales.
+Internamente, los reconocedores usan un entramado para contener unidades de reconocimiento básicas para un fragmento de lápiz determinado. El entramado también contiene la puntuación, o nivel de confianza, del resultado combinado. Además, el entramado almacena la asignación de segmentos a los trazos de lápiz originales.
 
-Las estructuras Lattice se definen en el archivo de encabezado RecTypes. h. Las estructuras Lattice incluyen las siguientes estructuras:
+Las estructuras lattice se definen en el archivo de encabezado RecTypes.h. Las estructuras de celosía incluyen las siguientes estructuras:
 
--   [**RECU \_ LATTICE**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice)
--   [**RECU \_ LATTICE \_ columna**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_column)
--   [**\_elemento LATTICE de recu \_**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_element)
--   [**propiedades de recu \_ LATTICE \_**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_properties)
--   [**\_propiedad LATTICE de recu \_**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_property)
+-   [**RECO \_ LATTICE**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice)
+-   [**RECO \_ LATTICE \_ COLUMN**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_column)
+-   [**RECO \_ LATTICE, \_ ELEMENTO**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_element)
+-   [**RECO \_ LATTICE PROPERTIES (PROPIEDADES DE RECO \_ LATTICE)**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_properties)
+-   [**RECO \_ LATTICE, \_ PROPIEDAD**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_property)
 
 ## <a name="lattice-components"></a>Componentes de Lattice
 
-En los ejemplos siguientes se usan los trazos de la palabra "juntos", tal como se muestra en la siguiente imagen. En los ejemplos, los segmentos se evalúan como una o varias palabras. Los números representan los trazos individuales del segmento que se está evaluando. Tenga en cuenta que cada uno de los caracteres "t" contiene dos trazos.
+En los ejemplos siguientes se usan los trazos de la palabra "juntos", como se muestra en la imagen siguiente. En los ejemplos, los segmentos se evalúan como una o varias palabras. Los números representan los trazos individuales del segmento que se está evaluando. Tenga en cuenta que cada uno de los caracteres "t" contiene dos trazos.
 
 ![trazos de la palabra "juntos"](images/1d5fa9fb-6c38-49b8-8caa-2b6dcc1d5dec.gif)
 
-Un Lattice se compone de una o más columnas, una para cada segmento. Cada columna a su vez contiene uno o más elementos. Un elemento contiene una alternativa de reconocimiento discreto. Para obtener más información sobre las columnas, vea la estructura de [**\_ \_ columnas de recu LATTICE**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_column) . Para obtener más información sobre los elementos, vea la estructura del [**\_ \_ elemento recu LATTICE**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_element) .
+Un entramado se compone de una o varias columnas, una para cada segmento. A su vez, cada columna contiene uno o varios elementos. Un elemento contiene una alternativa de reconocimiento discreto. Para obtener más información sobre las columnas, vea la [**estructura RECO \_ LATTICE \_ COLUMN.**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_column) Para obtener más información sobre los elementos, vea [**la estructura RECO \_ LATTICE \_ ELEMENT.**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_element)
 
-El reconocedor puede devolver un solo segmento al evaluar el ejemplo de entrada de lápiz que se muestra en el ejemplo anterior. En este caso, Lattice contiene una sola columna con un solo elemento.
+El reconocedor podría devolver un único segmento al evaluar la muestra de lápiz que se muestra en el ejemplo anterior. En este caso, la celosía contiene una sola columna con un solo elemento.
 
-Un ejemplo más complejo se presenta cuando el reconocedor evalúa el ejemplo de entrada de lápiz y aparece con varios segmentos y varias alternativas para cada segmento.
+Un ejemplo más complejo se presenta cuando el reconocedor evalúa la muestra de lápiz y presenta varios segmentos y varias alternativas para cada segmento.
 
-El número de alternativas de reconocimiento puede ser escalonado, incluso para un ejemplo de tinta pequeña. Por ejemplo, "t o g e t h e r" puede producir los siguientes resultados:
+El número de alternativas de reconocimiento puede ser escalonado, incluso para una pequeña muestra de lápiz. Por ejemplo, "t o g e t h e r" puede producir los siguientes resultados:
 
--   "para obtener" (más alternativas para cada palabra)
+-   "para obtenerla" (más alternativas para cada palabra)
 -   "para recopilar" (más alternativas para cada palabra)
--   "para obtenerlo" (más alternativas para cada palabra)
--   "juntos" (más alternativas para la palabra)
+-   "to got her" (plus alternates for each word)
+-   "together" (más alternativas para la palabra)
 
-En este caso, un reconocedor podría crear la siguiente estructura Lattice.
+En este caso, un reconocedor podría crear la siguiente estructura de celosía.
 
-![Lattice estructura de la palabra "juntos"](images/2496c3dd-8b08-4f86-9fe3-f118be49a8c8.gif)
+![estructura de lattice para la palabra "together"](images/2496c3dd-8b08-4f86-9fe3-f118be49a8c8.gif)
 
 > [!Note]  
-> Cada columna comparte el mismo orden de trazos porque hacen referencia a la misma colección [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) .
+> Cada columna comparte el mismo orden de trazo porque todas hacen referencia a la misma [colección InkStrokes.](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 
  
 

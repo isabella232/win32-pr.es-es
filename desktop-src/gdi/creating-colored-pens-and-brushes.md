@@ -1,19 +1,19 @@
 ---
-description: Aunque puede especificar cualquier color para un lápiz al crearlo, el sistema usa solo los colores que están disponibles en el dispositivo.
+description: Aunque puede especificar cualquier color para un lápiz al crearlo, el sistema solo usa los colores que están disponibles en el dispositivo.
 ms.assetid: 2ea32786-f769-4096-8f60-f924c83ca9c8
-title: Crear lápices y pinceles de color
+title: Creación de pinceles y lápices de color
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15c1678ffb2faf91ef49834471a8124998910e23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e487338e967f5981eaa28c2f90981f60d7e094df58317fb1af98a447622a4631
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119452265"
 ---
-# <a name="creating-colored-pens-and-brushes"></a>Crear lápices y pinceles de color
+# <a name="creating-colored-pens-and-brushes"></a>Creación de pinceles y lápices de color
 
-Aunque puede especificar cualquier color para un lápiz al crearlo, el sistema usa solo los colores que están disponibles en el dispositivo. Esto significa que el sistema utiliza el color coincidente más cercano cuando se obtiene el lápiz del dibujo. Al crear pinceles, el sistema genera un color con el que se especifica un color que el dispositivo no admite. En cualquier caso, puede usar la macro [**RGB**](/windows/desktop/api/Wingdi/nf-wingdi-rgb) para especificar un color al crear un lápiz o un pincel.
+Aunque puede especificar cualquier color para un lápiz al crearlo, el sistema solo usa los colores que están disponibles en el dispositivo. Esto significa que el sistema usa el color de coincidencia más cercano cuando se da cuenta del lápiz para dibujar. Al crear pinceles, el sistema genera un color entreteado si especifica un color que el dispositivo no admite. En cualquier caso, puede usar la [**macro RGB**](/windows/desktop/api/Wingdi/nf-wingdi-rgb) para especificar un color al crear un lápiz o pincel.
 
 
 ```C++

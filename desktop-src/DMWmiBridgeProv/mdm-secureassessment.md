@@ -1,9 +1,9 @@
 ---
-title: MDM_SecureAssessment (clase)
-description: La SecureAssessmentclass de MDM \_ se usa para proporcionar información de configuración para el explorador de evaluación segura.
+title: MDM_SecureAssessment clase
+description: La clase \_ SecureAssessmentclass de MDM se usa para proporcionar información de configuración para el explorador de evaluación segura.
 ms.assetid: ad456f01-c77d-428b-a8bf-03e9ae106e60
 keywords:
-- MDM_SecureAssessment (clase)
+- MDM_SecureAssessment clase
 - MDM_SecureAssessment clase, descrita
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: deef2c8ee832a54775ae9dd51d85414a607ca8b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b2bb6179316a9e101f2ac12ab0cb8b4df26866346e2953d4eaf3bdf2039bcc49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433295"
 ---
-# <a name="mdm_secureassessment-class"></a>\_Clase SecureAssessment de MDM
+# <a name="mdm_secureassessment-class"></a>Clase \_ SecureAssessment de MDM
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información aquí proporcionada.\]
 
 La **clase \_ SecureAssessment de MDM** se usa para proporcionar información de configuración para el explorador de evaluación segura.
 
@@ -50,13 +50,13 @@ class MDM_SecureAssessment
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ SecureAssessment de MDM** tiene estos tipos de miembros:
+La **\_ clase SecureAssessment de MDM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ SecureAssessment de MDM** tiene estas propiedades.
+La **\_ clase SecureAssessment de MDM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ La **clase \_ SecureAssessment de MDM** tiene estas propiedades.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -77,7 +77,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -91,7 +91,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "SecureAssessment".
@@ -104,7 +104,7 @@ Identifica el nombre del nodo primario. Para esta clase, la cadena es "SecureAss
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -118,10 +118,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/"
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -142,7 +142,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -153,11 +153,11 @@ Tipo de acceso: lectura/escritura
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

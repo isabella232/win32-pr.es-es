@@ -1,10 +1,10 @@
 ---
-title: Método ID3DX11EffectPass Apply (D3dx11effect. h)
-description: Establezca el estado contenido en un paso en el dispositivo.
+title: Método ID3DX11EffectPass Apply (D3dx11effect.h)
+description: Establezca el estado contenido en un paso al dispositivo.
 ms.assetid: d67fe968-bfb2-4f3a-b393-3f72f680211f
 keywords:
-- Aplicar el método Direct3D 11
-- Aplicar método Direct3D 11, interfaz ID3DX11EffectPass
+- Aplicación del método Direct3D 11
+- Aplicación del método Direct3D 11, interfaz ID3DX11EffectPass
 - Interfaz ID3DX11EffectPass Direct3D 11, método Apply
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a061609953e164524e16722222a5ecea81f275b3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e18d3d546a1bf6381103b7d38f7467fe4d66ed8e0d9702afcf7640197abb5c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104986923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046053"
 ---
-# <a name="id3dx11effectpassapply-method"></a>ID3DX11EffectPass:: Apply (método)
+# <a name="id3dx11effectpassapply-method"></a>Método ID3DX11EffectPass::Apply
 
-Establezca el estado contenido en un paso en el dispositivo.
+Establezca el estado contenido en un paso al dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ HRESULT Apply(
 *Marcas* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Sin usar.
 
@@ -58,7 +58,7 @@ Sin usar.
 
 Tipo: **[ **ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)\***
 
-[**ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) al que se va a aplicar el paso.
+[**Id3D11DeviceContext al**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) que se aplicará el paso.
 
 </dd> </dl>
 
@@ -66,12 +66,12 @@ Tipo: **[ **ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11dev
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -81,8 +81,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

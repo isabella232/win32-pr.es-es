@@ -1,9 +1,9 @@
 ---
-title: Enumeración PreviewDisplayStyle
-description: Lo utiliza IResultsViewer PreviewStyle para establecer o determinar el estilo de presentación que se está usando actualmente.
+title: PreviewDisplayStyle (enumeración)
+description: Usado por IResultsViewer PreviewStyle para establecer o determinar el estilo de presentación que se usa actualmente.
 ms.assetid: ccbbfe38-0719-41e0-9331-cc0c1be651eb
 keywords:
-- Enumeración PreviewDisplayStyle características de entorno heredado de Windows
+- PreviewDisplayStyle enumeration Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11902821ec9fdbbaa9ab8d3fda8971f42fc28c1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd98a439daeadfd2af6135c1519aea8f981f94394ac68efe142a64037e70a25f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753399"
 ---
-# <a name="previewdisplaystyle-enumeration"></a>Enumeración PreviewDisplayStyle
+# <a name="previewdisplaystyle-enumeration"></a>PreviewDisplayStyle (enumeración)
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use Windows [Search API](../search/-search-reference-entry-page.md) en su lugar. 
 
-Usado por [**IResultsViewer::P reviewstyle**](-search-2x-iresultsviewer-previewstyle.md) para establecer o determinar el estilo de presentación que se está usando actualmente.
+[**IResultsViewer::P reviewStyle**](-search-2x-iresultsviewer-previewstyle.md) para establecer o determinar el estilo de presentación que se usa actualmente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,10 +46,10 @@ typedef enum PreviewDisplayStyleEnum {
 
 <dl> <dt>
 
-<span id="AutoPreview"></span><span id="autopreview"></span><span id="AUTOPREVIEW"></span>**Vista previa automática**
+<span id="AutoPreview"></span><span id="autopreview"></span><span id="AUTOPREVIEW"></span>**Vista prevista automática**
 </dt> <dd>
 
-Indica la vista previa automática.
+Indica AutoPreview.
 
 </dd> <dt>
 
@@ -67,10 +67,10 @@ Indica BottomPreview.
 
 </dd> <dt>
 
-<span id="NoPreview"></span><span id="nopreview"></span><span id="NOPREVIEW"></span>**Novista previa**
+<span id="NoPreview"></span><span id="nopreview"></span><span id="NOPREVIEW"></span>**NoPreview**
 </dt> <dd>
 
-Indica Preview.
+Indica NoPreview.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Indica Preview.
 
 | Requisito | Value |
 |----------------|----------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>WdsView. idl</dt> </dl> |
+| Idl<br/> | <dl> <dt>WdsView.idl</dt> </dl> |
 
 
 

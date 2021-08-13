@@ -1,7 +1,7 @@
 ---
 description: Comienza una escena.
 ms.assetid: 8125c592-b985-42f7-8644-59ba93a1c517
-title: 'ID3DXRenderToSurface:: BeginScene (método) (D3dx9core. h)'
+title: Método ID3DXRenderToSurface::BeginScene (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5aa2229e88123cc1d52f65f1edf032c46f819229
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ce6e120361972ac1ff4dbed5d37808dffa0f010af64feda365f65aad8dd393f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293117"
 ---
-# <a name="id3dxrendertosurfacebeginscene-method"></a>ID3DXRenderToSurface:: BeginScene (método)
+# <a name="id3dxrendertosurfacebeginscene-method"></a>Método ID3DXRenderToSurface::BeginScene
 
 Comienza una escena.
 
@@ -41,21 +41,21 @@ HRESULT BeginScene(
 
 <dl> <dt>
 
-*pSurface* \[ de\]
+*pSurface* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DSURFACE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9)**
 
-Puntero a una interfaz [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) que representa la superficie de representación.
+Puntero a una [**interfaz IDirect3DSurface9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) que representa la superficie de representación.
 
 </dd> <dt>
 
-*pViewport* \[ de\]
+*pViewport* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DVIEWPORT9**](d3dviewport9.md) \***
 
-Puntero a una estructura [**D3DVIEWPORT9**](d3dviewport9.md) , que describe la ventanilla de la escena.
+Puntero a una [**estructura D3DVIEWPORT9,**](d3dviewport9.md) que describe la ventanilla de la escena.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a una estructura [**D3DVIEWPORT9**](d3dviewport9.md) , que describe la v
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL. D3DERR \_ OUTOFVIDEOMEMORY D3DXERR \_ INVALIDDATA E \_ OUTOFMEMORY
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL. D3DERR \_ OUTOFVIDEOMEMORY D3DXERR \_ INVALIDDATA E \_ OUTOFMEMORY
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: miembros de ColumnInfo'
-title: Miembros de ColumnInfo
+description: 'Más información sobre: Miembros ColumnInfo'
+title: Miembros ColumnInfo
 TOCTitle: ColumnInfo members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.ColumnInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo_members(v=EXCHG.10)
 ms:contentKeyID: 55100969
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 46a709ba0c789d77b8fd7b5b16eb1876b3989467
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a638188363be85966fe76fa038297f19a1060ac24a0b2d083618c0d243f08e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104561754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119455155"
 ---
-# <a name="columninfo-members"></a>Miembros de ColumnInfo
+# <a name="columninfo-members"></a>Miembros ColumnInfo
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Información sobre una columna esent. Esta no es una clase de interoperabilidad, pero la usan los métodos auxiliares de metadatos.
+Información sobre una columna de Esent. No se trata de una clase de interoperabilidad, pero la usan los métodos auxiliares de metadatos.
 
-El tipo [ColumnInfo](./columninfo-class.md) expone los siguientes miembros.
+El [tipo ColumnInfo](./columninfo-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -46,12 +46,12 @@ El tipo [ColumnInfo](./columninfo-class.md) expone los siguientes miembros.
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn334185(v=exchg.10).md">CP</a></td>
+<td><a href="dn334185(v=exchg.10).md">Cp</a></td>
 <td>Obtiene la página de códigos de la columna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn334137(v=exchg.10).md">DefaultValue</a></td>
+<td><a href="dn334137(v=exchg.10).md">Defaultvalue</a></td>
 <td>Obtiene el valor predeterminado de la columna.</td>
 </tr>
 <tr class="odd">
@@ -93,7 +93,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -103,7 +103,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -114,7 +114,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334183(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn334128(v=exchg.10).md">ColumnInfo</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el <a href="dn334128(v=exchg.10).md">elemento ColumnInfo actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -126,6 +126,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnInfo](./columninfo-class.md)
+[ColumnInfo (clase)](./columninfo-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Exporta material de creación de claves según el estándar RFC 5705.
+description: Exporta el material de clave según el estándar RFC 5705.
 ms.assetid: 19624852-B1A6-4BB4-96AF-0457834DA294
-title: Función SslExportKeyingMaterial (Sslprovider. h)
+title: Función SslExportKeyingMaterial (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 906a7535b297f309c0c8471843ce07f43a110a3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39aaebba64f92794e179af95a5a175e2603fccc40410989cfcd427c6a7a1a88e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103818499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906623"
 ---
-# <a name="sslexportkeyingmaterial-function"></a>SslExportKeyingMaterial función)
+# <a name="sslexportkeyingmaterial-function"></a>Función SslExportKeyingMaterial
 
-Exporta material de creación de claves según el [estándar RFC 5705](https://tools.ietf.org/html/rfc5705). Esta función usa la función pseudoaleatorios de TLS para generar un búfer de bytes de material de creación de claves. Toma una referencia al secreto principal, la etiqueta ASCII ambigüedad, los valores aleatorios de cliente y servidor y, opcionalmente, los datos de contexto de la aplicación.
+Exporta el material de clave según [el estándar RFC 5705.](https://tools.ietf.org/html/rfc5705) Esta función usa la función seudoaleativo TLS para generar un búfer de bytes de material de clave. Toma una referencia al secreto maestro, la etiqueta ASCII de eliminación de ambigüedad, los valores aleatorios de cliente y servidor y, opcionalmente, los datos de contexto de la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,89 +48,89 @@ SECURITY_STATUS WINAPI SslExportKeyingMaterial(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor del protocolo TLS.
+Identificador de la instancia del proveedor de protocolo TLS.
 
 </dd> <dt>
 
-*hMasterKey* \[ de\]
+*hMasterKey* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de clave maestra que se utilizará para crear el material de creación de claves para br exportado.
+Identificador del objeto de clave maestra que se usará para crear el material de clave que se va a exportar.
 
 </dd> <dt>
 
-*sLabel* \[ de\]
+*sLabel* \[ En\]
 </dt> <dd>
 
-una cadena de etiqueta ASCII terminada en NULL. Schannel quitará el carácter NUL de terminación antes de pasarlo a la función pseudoaleatorios.
+una cadena de etiqueta ASCII terminada en NUL. Schannel quitará el carácter NUL de terminación antes de pasarlo a la función pseudoaleativo.
 
 </dd> <dt>
 
-*pbRandoms* \[ de\]
+*pbRandoms* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene una concatenación de los valores aleatorios de *cliente \_* y de *servidor \_* de la conexión TLS.
+Puntero a un búfer que contiene *una \_* concatenación de los valores aleatorios de cliente y *aleatorios \_* del servidor de la conexión TLS.
 
 </dd> <dt>
 
-*cbRandoms* \[ de\]
+*cbRandoms* \[ En\]
 </dt> <dd>
 
-La longitud, en bytes, del búfer *pbRandoms* .
+Longitud, en bytes, del *búfer pbRandoms.*
 
 </dd> <dt>
 
 *pbContextValue* \[ en, opcional\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene el contexto de la aplicación. Si *pbContextValue* es **null**, *cbContextValue* debe ser cero.
+Puntero a un búfer que contiene el contexto de la aplicación. Si *pbContextValue* es **NULL,** *cbContextValue* debe ser cero.
 
 </dd> <dt>
 
-*cbContextValue* \[ de\]
+*cbContextValue* \[ En\]
 </dt> <dd>
 
-La longitud, en bytes, del búfer *pbContextValue* .
+Longitud, en bytes, del *búfer pbContextValue.*
 
 </dd> <dt>
 
-*pbOutput* \[ enuncia\]
+*pbOutput* \[ out\]
 </dt> <dd>
 
-La dirección de un búfer que recibe el material de creación de claves exportado. El parámetro *cbOutput* contiene el tamaño de este búfer. Este valor no puede ser **null**.
+Dirección de un búfer que recibe el material de clave exportado. El *parámetro cbOutput* contiene el tamaño de este búfer. Este valor no puede ser **NULL.**
 
 </dd> <dt>
 
-*cbOutput* \[ de\]
+*cbOutput* \[ En\]
 </dt> <dd>
 
-La longitud, en bytes, del búfer *pbOutput* . Debe ser mayor que cero.
+Longitud, en bytes, del *búfer pbOutput.* Debe ser mayor que cero.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-No se utiliza. Debe establecerse en cero.
+No se usa. Debe establecerse en cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                    | Descripción                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
 
 
 
@@ -142,9 +142,9 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

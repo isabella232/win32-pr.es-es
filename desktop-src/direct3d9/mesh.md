@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\mesh.htm
 title: En malla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ced60785a5f013db7fc26e4d203119a160953b65
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f4ce4cf6fb6a3eee3417a7d0fe1594164c1e22df9d118f4f995955f8070fc015
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119240745"
 ---
 # <a name="mesh"></a>En malla
 
@@ -30,10 +30,10 @@ template Mesh
 Donde:
 
 -   nVertices: número de vértices.
--   los vértices del vector de matriz \[ nVertices \] -matriz de vértices, cada uno de tipo vector. Consulte [**Vector**](vector.md).
+-   array Vector vertices \[ nVertices: \] matriz de vértices, cada uno de tipo Vector. Vea [**Vector**](vector.md).
 -   nFaces: número de caras.
--   array MeshFace Face \[ nFaces \] -Array of Faces, cada una de tipo MeshFace. Vea [**MeshFace**](meshface.md).
--   \[ ... \] -Aquí puede usarse cualquier plantilla de archivo. x. Esto hace que la arquitectura sea extensible. Normalmente se usan plantillas de [**material**](material.md) y [**TextureFilename**](texturefilename.md) .
+-   array MeshFace faces \[ nFaces \] : matriz de caras, cada una de tipo MeshFace. Vea [**MeshFace**](meshface.md).
+-   \[ ... \] - Cualquier plantilla de archivo .x se puede usar aquí. Esto hace que la arquitectura sea extensible. [**Normalmente se**](material.md) usan las plantillas Material [**y TextureFilename.**](texturefilename.md)
 
 ## <a name="see-also"></a>Vea también
 

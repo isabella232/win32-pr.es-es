@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase Int64ColumnValue'
-title: Clase Int64ColumnValue
+description: 'Más información sobre: Int64ColumnValue (clase)'
+title: Int64ColumnValue (clase)
 TOCTitle: Int64ColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Int64ColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int64columnvalue(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe1c08845097ae612881a8002ddc896f4a792f96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43cdf7498317a4431faeb548b577fdd7934affd14fa5873ba980744352644c9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118767604"
 ---
-# <a name="int64columnvalue-class"></a>Clase Int64ColumnValue
+# <a name="int64columnvalue-class"></a>Int64ColumnValue (clase)
 
-Valor de columna [Int64](/dotnet/api/system.int64) .
+Valor [de columna Int64.](/dotnet/api/system.int64)
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int64](/dotnet/api/system.int64)\>  
-      Microsoft. ISAM. esent. Interop. Int64ColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int64](/dotnet/api/system.int64)\>  
+      Microsoft.Isam.Esent.Interop.Int64ColumnValue  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,6 +67,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de Int64ColumnValue](./int64columnvalue-members.md)
+[Miembros Int64ColumnValue](./int64columnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

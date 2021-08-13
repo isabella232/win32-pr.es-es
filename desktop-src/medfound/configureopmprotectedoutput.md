@@ -1,7 +1,7 @@
 ---
 description: Configura un objeto de salida protegido.
 ms.assetid: d22a378e-2d4e-4ff4-a18e-136932c24d2b
-title: ConfigureOPMProtectedOutput función)
+title: Función ConfigureOPMProtectedOutput
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: d72f3d8bbb7d3063fe6982c6d1de99b2f721f005
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f62d310526d95cf4ab6d1727a3ba43eec147f320b04c0692a89d52305b7f3589
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118743552"
 ---
-# <a name="configureopmprotectedoutput-function"></a>ConfigureOPMProtectedOutput función)
+# <a name="configureopmprotectedoutput-function"></a>Función ConfigureOPMProtectedOutput
 
 > [!IMPORTANT]
-> El administrador de protección de [salida](output-protection-manager.md) (OPM) usa esta función para tener acceso a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
+> Output [Protection Manager](output-protection-manager.md) (OPM) usa esta función para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
 
  
 
@@ -47,43 +47,43 @@ NTSTATUS WINAPI ConfigureOPMProtectedOutput(
 
 <dl> <dt>
 
-*opoOPMProtectedOutput* \[ de\]
+*opoOPMProtectedOutput* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de salida protegido. Este identificador se obtiene llamando a [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
+Identificador del objeto de salida protegido. Este identificador se obtiene mediante una llamada a [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
 
 </dd> <dt>
 
-*pParameters* \[ de\]
+*pParameters* \[ En\]
 </dt> <dd>
 
-Un puntero a una estructura de **\_ \_ \_ parámetros** de configuración de DXGKMDT OPM que contiene el comando de configuración.
+Puntero a una estructura **DXGKMDT \_ OPM \_ CONFIGURE \_ PARAMETERS** que contiene el comando de configuración.
 
 </dd> <dt>
 
-*ulAdditionalParametersSize* \[ de\]
+*ulAdditionalParametersSize* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer de *pbAdditionalParameters* , en bytes.
+Tamaño del búfer *pbAdditionalParameters,* en bytes.
 
 </dd> <dt>
 
-*pbAdditionalParameters* \[ de\]
+*pbAdditionalParameters* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene información adicional para el comando.
+Puntero a un búfer que contiene información adicional para el comando.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve el **estado \_ correcto**. De lo contrario, devuelve un código de error **NTSTATUS** .
+Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
 ## <a name="remarks"></a>Observaciones
 
-Las aplicaciones deben llamar a [**IOPMVideoOutput:: configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure) en lugar de llamar a esta función.
+Las aplicaciones deben llamar [**a IOPMVideoOutput::Configure en**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure) lugar de llamar a esta función.
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

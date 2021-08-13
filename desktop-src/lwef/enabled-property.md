@@ -1,15 +1,15 @@
 ---
 title: Propiedad Enabled (objeto Balloon)
-description: Obtenga información sobre la propiedad del objeto Globo habilitado. Microsoft Agent está en desuso a partir de Windows 7.
+description: Obtenga información sobre la propiedad del objeto Globo habilitado. Microsoft Agent está en desuso a partir Windows 7.
 ms.assetid: 4d73acda-6fcc-4912-a466-570849aeb807
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 602d39a9bef7713a92707d8a43050f04a3577b6d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: b0d4eaa09e173d847e9dead1bbd559b59e2d12a2d40b5f1d1f989d3cf70263ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118752007"
 ---
 # <a name="enabled-property-balloon-object"></a>Propiedad Enabled (objeto Balloon)
 
@@ -31,7 +31,7 @@ Devuelve si el globo de palabras está habilitado para el carácter especificado
 
 
 
-| Valor     | Descripción              |
+| Value     | Descripción              |
 |-----------|--------------------------|
 | **True**  | El globo está habilitado.  |
 | **False** | El globo está deshabilitado. |

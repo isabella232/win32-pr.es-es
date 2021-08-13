@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentColumnLongException'
-title: Constructor de EsentColumnLongException
+description: 'Más información sobre: Constructor EsentColumnLongException'
+title: Constructor EsentColumnLongException
 TOCTitle: 'EsentColumnLongException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnLongException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcolumnlongexception.esentcolumnlongexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be5d05b3fe4b6b025bc2a995745b3c2f1b07c2e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ece3a4231fa9d5d1e0834e74e8e6d34da20656997551a6a848ae93d19b0aa16a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118782390"
 ---
-# <a name="esentcolumnlongexception-constructor"></a>Constructor de EsentColumnLongException
+# <a name="esentcolumnlongexception-constructor"></a>Constructor EsentColumnLongException
 
 Inicializa una nueva instancia de la clase EsentColumnLongException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentColumnLongException()
 public EsentColumnLongException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentColumnLongException()
 
 [Miembros de EsentColumnLongException](./esentcolumnlongexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

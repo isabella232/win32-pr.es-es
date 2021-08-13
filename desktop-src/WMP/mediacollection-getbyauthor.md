@@ -1,11 +1,11 @@
 ---
-title: MediaCollection. getByAuthor, método
-description: El método getByAuthor recupera una lista de reproducción de los elementos multimedia por el autor especificado.
+title: Método MediaCollection.getByAuthor
+description: El método getByAuthor recupera una lista de reproducción de los elementos multimedia del autor especificado.
 ms.assetid: 8f9b3ee3-a809-4d24-81ce-adad63e5347c
 keywords:
-- método getByAuthor de Windows Media Player
-- método getByAuthor de Windows Media Player, clase MediaCollection
-- Clase MediaCollection Windows Media Player, método getByAuthor
+- Método getByAuthor Reproductor de Windows Media
+- Método getByAuthor Reproductor de Windows Media , clase MediaCollection
+- Clase MediaCollection Reproductor de Windows Media , método getByAuthor
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7eae0928250e37e76bf3a39f38b43bef8a5691c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87989d38d49ff87ce26b7394f4ee79ef4bd7197cd0e35dcd5316797df401ba49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574632"
 ---
-# <a name="mediacollectiongetbyauthor-method"></a>MediaCollection. getByAuthor, método
+# <a name="mediacollectiongetbyauthor-method"></a>Método MediaCollection.getByAuthor
 
-El método **getByAuthor** recupera una lista de reproducción de los elementos multimedia por el autor especificado.
+El **método getByAuthor** recupera una lista de reproducción de los elementos multimedia del autor especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ retVal = MediaCollection.getByAuthor(
 
 <dl> <dt>
 
-*autor* \[ de de\]
+*author* \[ En\]
 </dt> <dd>
 
 **Cadena** que contiene el nombre del autor.
@@ -51,15 +51,15 @@ retVal = MediaCollection.getByAuthor(
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un objeto de **lista de reproducción** .
+Este método devuelve un objeto **Playlist.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *MediaCollection*. **getByAuthor** para recuperar una lista de reproducción de elementos multimedia. La lista de reproducción contiene elementos que coinciden con el autor especificado por el usuario en un elemento de entrada de texto HTML denominado GetAuthor. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se *usa MediaCollection*. **getByAuthor para recuperar** una lista de reproducción de elementos multimedia. La lista de reproducción contiene elementos que coinciden con el autor especificado por el usuario en un elemento de entrada HTML TEXT denominado GetAuthor. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -90,27 +90,27 @@ onClick = "
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

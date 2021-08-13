@@ -1,9 +1,9 @@
 ---
-title: WM/año
-description: El atributo WM/año contiene el año en que se publicó el contenido.
+title: WM/Year
+description: El atributo WM/Year contiene el año en que se publicó el contenido.
 ms.assetid: 02a4a2da-737c-4ac2-992c-4da9fc7ba26c
 keywords:
-- Formato de Windows Media WM/año
+- Formato multimedia de Windows WM/Year
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0536cd86a4bc4eb317735aa993c15ff137c4382c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 832fe6f77bb817d6df131aa42e9a3d680c906fee6d486a8ea15402652d6c973c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105704857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118698161"
 ---
-# <a name="wmyear"></a>WM/año
+# <a name="wmyear"></a>WM/Year
 
-El atributo **WM/año** contiene el año en que se publicó el contenido.
+El **atributo WM/Year** contiene el año en que se publicó el contenido.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMYear
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE \_ TIPO \_ WMT**
 
 ## <a name="example"></a>Ejemplo
 
@@ -41,7 +41,7 @@ g \_ wszWMYear
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -50,9 +50,9 @@ g \_ wszWMYear
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_prep'
-title: Enumeración JET_prep
+description: 'Más información sobre: enumeración JET_prep datos'
+title: JET_prep enumeración
 TOCTitle: JET_prep enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_prep
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_prep(v=EXCHG.10)
@@ -36,19 +36,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: edeaef8144fe6e13674ec6d3dfcb8adf7522e148
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0246114eef784fea2fc145f7cab737c815c17626fc2580b33aa6d09229418066
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765061"
 ---
-# <a name="jet_prep-enumeration"></a>Enumeración JET_prep
+# <a name="jet_prep-enumeration"></a>JET_prep enumeración
 
 Tipos de actualización para JetPrepareUpdate.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,12 +77,12 @@ public enum JET_prep
 <tr class="odd">
 <td></td>
 <td>Insertar</td>
-<td>Esta marca hace que el cursor se prepare para una inserción de un nuevo registro. Todos los datos se inicializan en el estado predeterminado del registro. Si la tabla tiene una columna de incremento automático, se asigna un nuevo valor a este registro independientemente de si la actualización se realiza en última instancia, si se produce un error o se cancela.</td>
+<td>Esta marca hace que el cursor se prepare para una inserción de un nuevo registro. Todos los datos se inicializan en el estado predeterminado del registro. Si la tabla tiene una columna de incremento automático, se asigna un nuevo valor a este registro independientemente de si la actualización se realiza correctamente, se produce un error o se cancela.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Replace</td>
-<td>Esta marca hace que el cursor se prepare para un reemplazo del registro actual. Si la tabla tiene una columna de versión, la columna versión se establece en el valor siguiente en su secuencia. Si esta actualización no se completa, el valor de versión del registro no se verá afectado. Se realiza un bloqueo de actualización en el registro para evitar que otras sesiones actualicen este registro antes de que se complete esta sesión.</td>
+<td>Esta marca hace que el cursor se prepare para reemplazar el registro actual. Si la tabla tiene una columna de versión, la columna de versión se establece en el siguiente valor de su secuencia. Si esta actualización no se completa, el valor de versión del registro no se verá afectado. Se toma un bloqueo de actualización en el registro para evitar que otras sesiones actualicen este registro antes de que se complete esta sesión.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -92,17 +92,17 @@ public enum JET_prep
 <tr class="even">
 <td></td>
 <td>ReplaceNoLock</td>
-<td>Esta marca es similar a JET_prepReplace, pero no se realiza ningún bloqueo para evitar que otras sesiones actualicen este registro. En su lugar, esta sesión puede recibir JET_errWriteConflict cuando llama a JetUpdate para completar la actualización.</td>
+<td>Esta marca es similar a JET_prepReplace, pero no se toma ningún bloqueo para impedir que otras sesiones actualicen este registro. En su lugar, esta sesión puede recibir JET_errWriteConflict cuando llama a JetUpdate para completar la actualización.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InsertCopy</td>
-<td>Esta marca hace que el cursor se prepare para una inserción de una copia del registro existente. Debe haber un registro actual si se usa esta opción. El estado inicial del nuevo registro se copia del registro actual. Los valores Long que se almacenan fuera de registro se copian de manera virtual.</td>
+<td>Esta marca hace que el cursor se prepare para una inserción de una copia del registro existente. Debe haber un registro actual si se usa esta opción. El estado inicial del nuevo registro se copia del registro actual. Los valores largos almacenados fuera de registro se copian virtualmente.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>InsertCopyDeleteOriginal</td>
-<td>Esta marca hace que el cursor se prepare para una inserción del mismo registro, y una eliminación o el registro original. Se utiliza en casos en los que la clave principal ha cambiado.</td>
+<td>Esta marca hace que el cursor se prepare para una inserción del mismo registro y una eliminación o el registro original. Se usa en los casos en los que la clave principal ha cambiado.</td>
 </tr>
 </tbody>
 </table>
@@ -112,4 +112,4 @@ public enum JET_prep
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

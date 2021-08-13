@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. Image. VerticalResolution.
+description: Directiva de metadatos de fotos para la propiedad System.Image.VerticalResolution.
 ms.assetid: a58b7463-3572-4ca8-8299-93d92d2f06fb
-title: Directiva de metadatos de la foto de System. Image. VerticalResolution
+title: Directiva de metadatos de fotos System.Image.VerticalResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e895ef9e1181a3ec40b474940c6dfaaa3e1329
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9962a00be34d227756d295e992174d6e80b6d058fc32af29ad9cde58a04ed07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710288"
 ---
-# <a name="systemimageverticalresolution-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. Image. VerticalResolution
+# <a name="systemimageverticalresolution-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Image.VerticalResolution
 
-La Directiva de metadatos de la fotografía para la propiedad [System. Image. VerticalResolution](../properties/props-system-image-verticalresolution.md) .
+Directiva de metadatos de fotos para [la propiedad System.Image.VerticalResolution.](../properties/props-system-image-verticalresolution.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ Image \_ VerticalResolution
+Imagen PKEY \_ \_ VerticalResolution
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,13 +27,13 @@ JPEG, TIFF
 
 Sí.
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-El sistema genera este valor y no se puede escribir directamente. Se reconcilian los valores de los distintos esquemas.
+El sistema genera este valor y no se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -41,9 +41,9 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 
 
-| Pedido | Ruta                   | Formato de disco |
+| Pedido | Path                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 283} |             |
+| 1     | /app1/ifd/{ushort=283} |             |
 | 2     | /xmp/tiff:YResolution  |             |
 
 
@@ -54,9 +54,9 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 
 
-| Pedido | Ruta                        |
+| Pedido | Path                        |
 |-------|-----------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 283} |
+| 1     | /app1/ifd/exif/{ushort=283} |
 | 2     | /xmp/tiff:yresolution       |
 
 
@@ -69,9 +69,9 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Path                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 283}    |             |
+| 1     | /ifd/exif/{ushort=283}    |             |
 | 2     | /ifd/xmp/tiff:YResolution |             |
 
 
@@ -82,9 +82,9 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Path                      |
 |-------|---------------------------|
-| 1     | /IFD/Exif/{ushort = 283}    |
+| 1     | /ifd/exif/{ushort=283}    |
 | 2     | /ifd/xmp/tiff:yresolution |
 
 
@@ -97,7 +97,7 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 <dl> <dt>
 
-[System. Image. VerticalResolution](../properties/props-system-image-verticalresolution.md)
+[System.Image.VerticalResolution](../properties/props-system-image-verticalresolution.md)
 </dt> </dl>
 
  

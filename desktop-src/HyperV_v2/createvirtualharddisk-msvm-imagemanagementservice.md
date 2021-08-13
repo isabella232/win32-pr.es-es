@@ -1,7 +1,7 @@
 ---
 description: Crea un archivo de disco duro virtual.
 ms.assetid: 6c136000-1df2-4456-833c-094671408338
-title: Método CreateVirtualHardDisk de la clase Msvm_ImageManagementService
+title: Método CreateVirtualHardDisk de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b80a309274eb51ad7aff768898a9c3bd211f37cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 689b805eb7233bfecb8ec6a33eb29ee0aacc1cd43b2eeebfba3e5ba366def2a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119254255"
 ---
-# <a name="createvirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método CreateVirtualHardDisk de la \_ clase ImageManagementService de MSVM
+# <a name="createvirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método CreateVirtualHardDisk de la clase \_ Msvm ImageManagementService
 
 Crea un archivo de disco duro virtual.
 
@@ -40,17 +40,17 @@ uint32 CreateVirtualHardDisk(
 
 <dl> <dt>
 
-*VirtualDiskSettingData* \[ de\]
+*VirtualDiskSettingData* \[ En\]
 </dt> <dd>
 
-Cadena que contiene una instancia incrustada de la clase [**MSVM \_ VirtualHardDiskSettingData**](msvm-virtualharddisksettingdata.md) que se usa para definir los atributos del disco duro virtual que se va a crear.
+Cadena que contiene una instancia incrustada de la clase [**\_ VirtualHardDiskSettingData de Msvm**](msvm-virtualharddisksettingdata.md) que se usa para definir los atributos del disco duro virtual que se va a crear.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo (puede ser **null** si se ha completado la tarea).
+Referencia al trabajo (puede ser **Null si** se completa la tarea).
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Este método devuelve uno de los valores siguientes.
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -75,16 +75,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,18 +93,18 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ ImageManagementService de Msvm**](msvm-imagemanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,10 +112,10 @@ El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementse
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -124,7 +124,7 @@ El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementse
 
 <dl> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

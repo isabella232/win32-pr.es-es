@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5dbdc71239455772809e44f535634a0d06cc0653
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e5b0f02a4fb114f46930076f46ea7c416850a0e81f7369d4aab63a2de5ed6d95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801141"
 ---
 # <a name="id3dxsaveuserdata-interface"></a>Interfaz ID3DXSaveUserData
 
@@ -27,7 +27,7 @@ Esta interfaz la implementa la aplicación para guardar los datos de usuario adi
 
 ## <a name="members"></a>Miembros
 
-La **interfaz ID3DXSaveUserData** hereda de [**la interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXSaveUserData** también tiene estos tipos de miembros:
+La **interfaz ID3DXSaveUserData** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXSaveUserData** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -50,7 +50,7 @@ La **interfaz ID3DXSaveUserData** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tipo LPD3DXSAVEUSERDATA se define como un puntero a esta interfaz.
 
@@ -73,7 +73,7 @@ typedef interface ID3DXSaveUserData *LPD3DXSAVEUSERDATA;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

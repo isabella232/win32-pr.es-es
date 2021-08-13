@@ -1,7 +1,7 @@
 ---
-description: Contiene el objeto de la carpeta del elemento, si el elemento es una carpeta.
+description: Contiene el objeto Folder del elemento, si el elemento es una carpeta.
 ms.assetid: 87afd0b6-245b-4550-9f21-aa0426ba8470
-title: Propiedad carpeta. GetFolder (ShlObj. h)
+title: Propiedad FolderItem.GetFolder (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d08c774b53d1fa0db74a7d8d282c4f88f237cfd4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad1f136fdc59291b36bb5d609269b97e7ab7a5f9d74eccbbedf204d4c2d4e014
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458885"
 ---
-# <a name="folderitemgetfolder-property"></a>Propiedad carpeta. GetFolder
+# <a name="folderitemgetfolder-property"></a>Propiedad FolderItem.GetFolder
 
-Contiene el objeto de la [**carpeta**](folder.md) del elemento, si el elemento es una carpeta.
+Contiene el objeto [**Folder**](folder.md) del elemento, si el elemento es una carpeta.
 
 Esta propiedad es de solo lectura.
 
@@ -37,13 +37,13 @@ objGetFolder = FolderItem.GetFolder
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recibe el objeto de [**carpeta**](folder.md) .
+Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recibe el [**objeto Folder.**](folder.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **GetFolder** para recuperar el objeto de [**carpeta**](folder.md) de la carpeta system32. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa GetFolder** para recuperar el [**objeto Folder**](folder.md) de la carpeta System32. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -77,7 +77,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -164,11 +164,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h (incluye Shldisp. h)</dt> </dl>        |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h (incluir Shldisp.h)</dt> </dl>        |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
@@ -176,7 +176,7 @@ End Sub
 
 <dl> <dt>
 
-[**Carpeta**](folderitem.md)
+[**FolderItem**](folderitem.md)
 </dt> <dt>
 
 [**IsFolder**](folderitem-isfolder.md)

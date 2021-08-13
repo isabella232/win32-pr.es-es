@@ -1,9 +1,9 @@
 ---
-title: WaveActiveAllEqual función)
-description: Devuelve true si la expresión es la misma para cada carril activo de la ola actual (y, por tanto, uniforme en ella).
+title: Función WaveActiveAllEqual
+description: Devuelve true si la expresión es la misma para todos los carriles activos de la ola actual (y, por tanto, uniforme en ella).
 ms.assetid: E0A051A8-0ADD-4EC7-8D9A-8820CED9DA9D
 keywords:
-- WaveActiveAllEqual de función HLSL
+- Función WaveActiveAllEqual HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34745e428fcd4453ce7274fc2a5accc6185f5b10
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: f62493a1bf08b85e95acad319bac2d022c30a53d43c28a87d0f5f603e78d300f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103797248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786115"
 ---
-# <a name="waveactiveallequal-function"></a>WaveActiveAllEqual función)
+# <a name="waveactiveallequal-function"></a>Función WaveActiveAllEqual
 
-Devuelve true si la expresión es la misma para cada carril activo de la ola actual (y, por tanto, uniforme en ella).
+Devuelve true si la expresión es la misma para todos los carriles activos de la ola actual (y, por tanto, uniforme en ella).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,11 +48,11 @@ La expresión que se va a evaluar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-True si la expresión es la misma para cada carril activo de la ola actual.
+True si la expresión es la misma para todos los carriles activos de la ola actual.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del sombreador. 
+Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador. 
 
 
 
@@ -62,10 +62,10 @@ Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del
 
 <dl> <dt>
 
-[Información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo de sombreador 6](shader-model-6-0.md)
+[Shader Model 6](shader-model-6-0.md)
 </dt> </dl>
 
  

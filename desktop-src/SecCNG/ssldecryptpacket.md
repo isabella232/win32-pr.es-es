@@ -1,7 +1,7 @@
 ---
-description: Descifra un único paquete de protocolo de Capa de sockets seguros (SSL).
+description: Descifra un único Capa de sockets seguros de protocolo de seguridad (SSL).
 ms.assetid: 22a7dd2b-d023-47b9-8f76-1c17c2dd6466
-title: Función SslDecryptPacket (Sslprovider. h)
+title: Función SslDecryptPacket (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: cd568596b7e780242c0ff8d9c522a9e1758c60b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b058fbb01183ccf0582c0fa196bec71bfaffa2e8a44739c1ea5fb01a8148174
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906707"
 ---
-# <a name="ssldecryptpacket-function"></a>SslDecryptPacket función)
+# <a name="ssldecryptpacket-function"></a>Función SslDecryptPacket
 
-la función **SslDecryptPacket** descifra un único paquete de [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+La **función SslDecryptPacket** descifra un único [*Capa de sockets seguros de protocolo de*](/windows/desktop/SecGloss/s-gly) cifrado (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,10 +47,10 @@ SECURITY_STATUS WINAPI SslDecryptPacket(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor del protocolo SSL.
+Identificador de la instancia del proveedor de protocolo SSL.
 
 </dd> <dt>
 
@@ -61,49 +61,49 @@ Identificador de la clave que se usa para descifrar el paquete.
 
 </dd> <dt>
 
-*pbInput* \[ de\]
+*pbInput* \[ En\]
 </dt> <dd>
 
-Un puntero al búfer que contiene el paquete que se va a descifrar.
+Puntero al búfer que contiene el paquete que se va a descifrar.
 
 </dd> <dt>
 
-*cbInput* \[ de\]
+*cbInput* \[ En\]
 </dt> <dd>
 
-La longitud, en bytes, del búfer *pbInput* .
+Longitud, en bytes, del *búfer pbInput.*
 
 </dd> <dt>
 
-*pbOutput* \[ enuncia\]
+*pbOutput* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer para que contenga el paquete descifrado.
+Puntero a un búfer que contiene el paquete descifrado.
 
 </dd> <dt>
 
-*cbOutput* \[ de\]
+*cbOutput* \[ En\]
 </dt> <dd>
 
-La longitud, bytes, del búfer *pbOutput* .
+Longitud, bytes, del *búfer pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ enuncia\]
+*pwResult* \[ out\]
 </dt> <dd>
 
-Número de bytes escritos en el búfer de *pbOutput* .
+Número de bytes escritos en el *búfer pbOutput.*
 
 </dd> <dt>
 
-*SequenceNumber* \[ de\]
+*SequenceNumber* \[ En\]
 </dt> <dd>
 
-El número de secuencia que corresponde a este paquete.
+Número de secuencia que corresponde a este paquete.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -112,17 +112,17 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                    | Descripción                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
 
 
 
@@ -130,7 +130,7 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 ## <a name="remarks"></a>Observaciones
 
-La longitud del paquete puede ser cero, por ejemplo, cuando se descifra un mensaje "HelloRequest".
+La longitud del paquete puede ser cero, como cuando se descifra un mensaje "HelloRequest".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -138,9 +138,9 @@ La longitud del paquete puede ser cero, por ejemplo, cuando se descifra un mensa
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

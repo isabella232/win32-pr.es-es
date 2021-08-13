@@ -1,24 +1,24 @@
 ---
-description: A continuación se muestran las constantes de seguridad de WMI que se usan para los eventos. Se usan para establecer entradas de control de acceso (ACE) en descriptores de seguridad usados para eventos o receptores.
+description: A continuación se muestran las constantes de seguridad wmi usadas para los eventos. Se usan para establecer entradas de control de acceso (ACE) en descriptores de seguridad usados para eventos o receptores.
 ms.assetid: 18318262-d948-4329-8d48-23664798fc58
 ms.tgt_platform: multiple
-title: Constantes de seguridad de evento (Wbemcli. h)
+title: Constantes de seguridad de eventos (Wbemcli.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a3009b16e468a647ee96b9be365286caba2c12b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8ae26364c7edf6daaf9b70dcf769675c0a39966286b3b8f725fefe0af73ff8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244295"
 ---
 # <a name="event-security-constants"></a>Constantes de seguridad de eventos
 
-A continuación se muestran las constantes de seguridad de WMI que se usan para los eventos. Se usan para establecer entradas de control de acceso (ACE) en descriptores de seguridad usados para eventos o receptores.
+A continuación se muestran las constantes de seguridad wmi usadas para los eventos. Se usan para establecer entradas de control de acceso (ACE) en descriptores de seguridad usados para eventos o receptores.
 
 <dl> <dt>
 
-<span id="WBEM_RIGHT_PUBLISH"></span><span id="wbem_right_publish"></span>**\_publicación correcta de WBEM \_**
+<span id="WBEM_RIGHT_PUBLISH"></span><span id="wbem_right_publish"></span>**WBEM \_ RIGHT \_ PUBLISH**
 </dt> <dd> <dl> <dt>
 
 128 (0x80)
@@ -26,12 +26,12 @@ A continuación se muestran las constantes de seguridad de WMI que se usan para 
 
 
 
-Especifica que la cuenta puede publicar eventos en la instancia de [**\_ \_ EventFilter**](--eventfilter.md) que define el filtro de eventos para un consumidor permanente. Disponible en wbemcli. h.
+Especifica que la cuenta puede publicar eventos en la instancia de [**\_ \_ EventFilter**](--eventfilter.md) que define el filtro de eventos para un consumidor permanente. Disponible en wbemcli.h.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_RIGHT_SUBSCRIBE"></span><span id="wbem_right_subscribe"></span>**suscripción de WBEM \_ right \_**
+<span id="WBEM_RIGHT_SUBSCRIBE"></span><span id="wbem_right_subscribe"></span>**WBEM \_ RIGHT \_ SUBSCRIBE**
 </dt> <dd> <dl> <dt>
 
 64 (0x40)
@@ -39,12 +39,12 @@ Especifica que la cuenta puede publicar eventos en la instancia de [**\_ \_ Even
 
 
 
-Especifica que un consumidor puede suscribirse a los eventos entregados a un receptor. Se usa en [**IWbemEventSink:: SetSinkSecurity**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventsink-setsinksecurity). Disponible en wbemcli. h.
+Especifica que un consumidor puede suscribirse a los eventos entregados a un receptor. Se usa [**en IWbemEventSink::SetSinkSecurity**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemeventsink-setsinksecurity). Disponible en wbemcli.h.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_SUBJECT_TO_SDS"></span><span id="wbem_s_subject_to_sds"></span>**WBEM \_ S \_ sujeto \_ a \_ SDS**
+<span id="WBEM_S_SUBJECT_TO_SDS"></span><span id="wbem_s_subject_to_sds"></span>**WBEM \_ S SUJETO A \_ \_ \_ SDS**
 </dt> <dd> <dl> <dt>
 
 274435 (0x43003)
@@ -52,7 +52,7 @@ Especifica que un consumidor puede suscribirse a los eventos entregados a un rec
 
 
 
-El proveedor de eventos indica que WMI comprueba la propiedad del **\_ descriptor de seguridad** en cada evento (heredado del [**\_ \_ evento**](--event.md)) y solo envía eventos a los consumidores con los permisos de acceso adecuados. Disponible en wbemprov. h.
+El proveedor de eventos indica que WMI comprueba la propiedad **\_ DESCRIPTOR** DE SEGURIDAD de cada evento (heredada de [**\_ \_ Evento**](--event.md)) y solo envía eventos a los consumidores con los permisos de acceso adecuados. Disponible en wbemprov.h.
 
 
 </dt> </dl> </dd> </dl>
@@ -65,7 +65,7 @@ El proveedor de eventos indica que WMI comprueba la propiedad del **\_ descripto
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                                                                         |
-| Encabezado<br/>                   | <dl> <dt>Wbemcli. h; </dt> <dt>Wbemprov. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemcli.h; </dt> <dt>Wbemprov.h</dt> </dl> |
 
 
 
@@ -73,13 +73,13 @@ El proveedor de eventos indica que WMI comprueba la propiedad del **\_ descripto
 
 <dl> <dt>
 
-[Constantes de seguridad de WMI](wmi-security-constants.md)
+[Constantes de seguridad WMI](wmi-security-constants.md)
 </dt> <dt>
 
-[Mantenimiento de la seguridad de WMI](maintaining-wmi-security.md)
+[Mantenimiento de la seguridad wmi](maintaining-wmi-security.md)
 </dt> <dt>
 
-[Proteger eventos WMI](securing-wmi-events.md)
+[Protección de eventos WMI](securing-wmi-events.md)
 </dt> </dl>
 
  

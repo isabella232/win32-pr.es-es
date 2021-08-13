@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_SETMAXTIPWIDTH (commctrl. h)
+title: TTM_SETMAXTIPWIDTH mensaje (Commctrl.h)
 description: Establece el ancho máximo de una ventana de información sobre herramientas.
 ms.assetid: 3cfb6011-d0c3-4a57-aead-d4ec09a057cc
 keywords:
-- TTM_SETMAXTIPWIDTH controles de mensajes de Windows
+- TTM_SETMAXTIPWIDTH controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55ce930b289205b5fb0d2768068b8cb28cd11aec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d344a3abcbe2b3bf57a71c8020d383f76ab1922b9009cd69411912d4468fa19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433765"
 ---
-# <a name="ttm_setmaxtipwidth-message"></a>TTM \_ SETMAXTIPWIDTH
+# <a name="ttm_setmaxtipwidth-message"></a>Mensaje \_ SETMAXTIPWIDTH de TTM
 
 Establece el ancho máximo de una ventana de información sobre herramientas.
 
@@ -35,13 +35,13 @@ Establece el ancho máximo de una ventana de información sobre herramientas.
 *lParam* 
 </dt> <dd>
 
-Ancho máximo de la ventana de información sobre herramientas o-1 para permitir cualquier ancho.
+Ancho máximo de la ventana de información sobre herramientas o -1 para permitir cualquier ancho.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el ancho máximo de la información sobre herramientas anterior.
+Devuelve el ancho de información sobre herramientas máximo anterior.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -53,9 +53,9 @@ El valor de ancho máximo no indica el ancho real de una ventana de información
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

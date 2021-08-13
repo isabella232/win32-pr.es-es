@@ -1,7 +1,7 @@
 ---
-description: Recupera el valor de una propiedad con nombre para un objeto de clave de proveedor del Protocolo de Capa de sockets seguros (SSL).
+description: Recupera el valor de una propiedad con nombre para un objeto de clave de proveedor Capa de sockets seguros protocolo de seguridad (SSL).
 ms.assetid: 01a7e82a-3888-4f96-85a2-e07811f1895e
-title: Función SslGetKeyProperty (Sslprovider. h)
+title: Función SslGetKeyProperty (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 42952b76bfb46eeeb31b9f76b1f677e7b3b8e3e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b86f8a2e76573122bcfcf809d5301bc6bf70690467527f4dc69a5ec12419f56b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906123"
 ---
-# <a name="sslgetkeyproperty-function"></a>SslGetKeyProperty función)
+# <a name="sslgetkeyproperty-function"></a>Función SslGetKeyProperty
 
-La función **SslGetKeyProperty** recupera el valor de una propiedad con nombre para un objeto de clave de proveedor del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+La **función SslGetKeyProperty** recupera el valor de una propiedad con nombre para un [*objeto de clave de*](/windows/desktop/SecGloss/s-gly) proveedor Capa de sockets seguros protocolo de seguridad (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,35 +43,35 @@ SECURITY_STATUS WINAPI SslGetKeyProperty(
 
 <dl> <dt>
 
-*hKey* \[ de\]
+*hKey* \[ En\]
 </dt> <dd>
 
 Identificador del proveedor SSL.
 
 </dd> <dt>
 
-*pszProperty* \[ de\]
+*pszProperty* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena Unicode terminada en null que contiene el nombre de la propiedad que se va a recuperar. Puede ser uno de los [**identificadores de propiedad de almacenamiento de claves**](key-storage-property-identifiers.md) predefinidos o un identificador de propiedad personalizado.
+Puntero a una cadena Unicode terminada en NULL que contiene el nombre de la propiedad que se recuperará. Puede ser uno de los identificadores de propiedad [**Storage clave predefinidos**](key-storage-property-identifiers.md) o un identificador de propiedad personalizado.
 
 </dd> <dt>
 
-*ppbOutput* \[ enuncia\]
+*ppbOutput* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe el valor de propiedad. El autor de la llamada de la función debe liberar este búfer mediante una llamada a la función [**SslFreeBuffer**](sslfreebuffer.md) .
+Puntero a un búfer que recibe el valor de propiedad. El llamador de la función debe liberar este búfer llamando a la [**función SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
-*pcbOutput* \[ enuncia\]
+*output* \[ out\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer *pbOutput* .
+Tamaño, en bytes, del *búfer pbOutput.*
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -80,18 +80,18 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                       | Descripción                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl>    | Uno de los identificadores proporcionados no es válido.<br/>    |
-| <dl> <dt>**NTE \_ \_Parámetro no válido**</dt> <dt>0x80090027L</dt> </dl> | Uno de los parámetros proporcionados no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | Uno de los identificadores proporcionados no es válido.<br/>    |
+| <dl> <dt>**NTE \_ PARÁMETRO \_ NO VÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | Uno de los parámetros proporcionados no es válido.<br/> |
 
 
 
@@ -103,9 +103,9 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

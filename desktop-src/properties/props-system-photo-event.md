@@ -1,17 +1,17 @@
 ---
 description: Evento en el que se tomó la foto. El usuario final proporciona este valor.
 ms.assetid: 6fc350fa-9597-484a-bd6d-7a343ba58eca
-title: System. Photo. event
+title: System.Photo.Event
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 040ae10d9ff3bc445d81fdb6463ad183a65aba19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28bbe096a59beb96e8b0c3e93ec977ca5d35a2ec760be456b248496b3c91267e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723900"
 ---
-# <a name="systemphotoevent"></a>System. Photo. event
+# <a name="systemphotoevent"></a>System.Photo.Event
 
 Evento en el que se tomó la foto. El usuario final proporciona este valor.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Propiedad String.Id
+title: String.Id propiedad
 description: Representa el identificador único de un recurso de cadena.
 ms.assetid: 393da279-bdf6-4796-a546-1931cbe49113
 keywords:
-- Propiedad String.Id cinta de opciones de Windows
+- String.Id propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c3ab87327ed4f11a901fb8a201e72137ab62c7a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15f9c1af4ba32982ce52ba470f6b3d1996abe11c81bdd520a4e50203adb56093
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441655"
 ---
-# <a name="stringid-property"></a>Propiedad String.Id
+# <a name="stringid-property"></a>String.Id propiedad
 
 Representa el identificador único de un recurso de cadena.
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 | Elemento                                                   |
 |-----------------------------------------------------------|
-| [**String@**](windowsribbon-element-string.md)<br/> |
+| [**Cadena**](windowsribbon-element-string.md)<br/> |
 
 
 
@@ -51,19 +51,19 @@ No hay elementos secundarios.
 
 Opcional.
 
-Puede aparecer como máximo una vez para cada elemento de [**cadena**](windowsribbon-element-string.md) .
+Puede producirse como máximo una vez para cada [**elemento String.**](windowsribbon-element-string.md)
 
-El valor de **String.ID** debe ser único.
+El valor de **String.Id** debe ser único.
 
 El identificador está asociado a una definición de cadena en el archivo de encabezado de la cinta de opciones, por ejemplo, `#define strSave 59999` .
 
-Este elemento contiene un valor de la Unión de tipos *xs: positiveInteger* y *xs: String*. El valor se limita a un valor entero comprendido entre 2 y 59999, ambos incluidos, o 0X2 y 0xea5f en formato hexadecimal, ambos incluidos.
+Este elemento contiene un valor de la unión de los tipos *xs:positiveInteger* y *xs:string.* El valor está restringido a un valor entero entre 2 y 59999, ambos incluidos o 0x2 y 0xea5f en hexadecimal, inclusivo.
 
-La longitud máxima es de 10 caracteres con ceros a la izquierda opcionales.
+La longitud máxima es de 10 caracteres con ceros iniciales opcionales.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de un elemento [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) con una declaración **String.ID** .
+En el ejemplo siguiente se muestra el marcado de [**un elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) con **una String.Id** de datos.
 
 
 ```XML
@@ -84,8 +84,8 @@ En el ejemplo siguiente se muestra el marcado de un elemento [**Command. LabelTi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

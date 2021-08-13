@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LB_GETCOUNT (Winuser. h)
+title: LB_GETCOUNT mensaje (Winuser.h)
 description: Obtiene el número de elementos de un cuadro de lista.
 ms.assetid: 1fbe44fc-8b9d-4bfa-a8bb-06817eecf064
 keywords:
-- LB_GETCOUNT controles de mensajes de Windows
+- LB_GETCOUNT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ddedbd7b9165e00e722edbadbb8806a68417551
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef4f4792bf290343e2868b754f8efb1bfc03d0be1f600c9f7584f051053400b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435490"
 ---
-# <a name="lb_getcount-message"></a>Mensaje de LB \_ GETCOUNT
+# <a name="lb_getcount-message"></a>Mensaje \_ GETCOUNT de LB
 
 Obtiene el número de elementos de un cuadro de lista.
 
@@ -32,20 +32,20 @@ Obtiene el número de elementos de un cuadro de lista.
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el número de elementos del cuadro de lista o LB \_ Err si se produce un error.
+El valor devuelto es el número de elementos del cuadro de lista o \_ LB ERR si se produce un error.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -57,9 +57,9 @@ El recuento devuelto es uno mayor que el valor de índice del último elemento (
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

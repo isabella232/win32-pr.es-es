@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_DBINFOMISC. logtimeRepair'
-title: Propiedad JET_DBINFOMISC. logtimeRepair
+description: 'Más información sobre: JET_DBINFOMISC.logtimeRepair'
+title: JET_DBINFOMISC.logtimeRepair, propiedad
 TOCTitle: 'logtimeRepair property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.logtimeRepair
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.logtimerepair(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cb5b890ce082b27ca76842540113c0560c5e122c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4fc1f6fb6bda8e1dcf70208b4e2a74c2857adeec3f07658c6b88458cbc33bf0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766199"
 ---
-# <a name="jet_dbinfomisclogtimerepair-property"></a>Propiedad JET_DBINFOMISC. logtimeRepair
+# <a name="jet_dbinfomisclogtimerepair-property"></a>JET_DBINFOMISC.logtimeRepair, propiedad
 
-Obtiene la última vez que se ejecutó la reparación en esta base de datos.
+Obtiene la última vez que se ha ejecutado la reparación en esta base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,14 +60,14 @@ public JET_LOGTIME logtimeRepair { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_DBINFOMISC (clase)](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC clase](./jet-dbinfomisc-class.md)
 
-[Miembros de JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC miembros](./jet-dbinfomisc-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

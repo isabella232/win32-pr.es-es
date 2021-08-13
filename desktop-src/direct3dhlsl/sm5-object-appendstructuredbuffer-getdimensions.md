@@ -1,9 +1,9 @@
 ---
-title: 'AppendStructuredBuffer:: Getdimensions ((función)'
-description: 'Obtiene las dimensiones de recursos. | AppendStructuredBuffer:: Getdimensions ((función)'
+title: Función AppendStructuredBuffer::GetDimensions
+description: Obtiene las dimensiones de recursos. | Función AppendStructuredBuffer::GetDimensions
 ms.assetid: 41ed86d5-25c0-48bd-add9-792eb89605c3
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 93db905ae40f1bec7488eca292f4ea44d87950d3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 96f40417834b8e23a9e746e4e4e3df93b96c1fc2affc7cd9147842e389dc99d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790656"
 ---
-# <a name="appendstructuredbuffergetdimensions-function"></a>AppendStructuredBuffer:: Getdimensions ((función)
+# <a name="appendstructuredbuffergetdimensions-function"></a>Función AppendStructuredBuffer::GetDimensions
 
 Obtiene las dimensiones de recursos.
 
@@ -37,16 +37,16 @@ void GetDimensions(
 
 <dl> <dt>
 
-*numStructs* \[ enuncia\]
+*numStructs* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-El número de estructuras.
+Número de estructuras.
 
 </dd> <dt>
 
-*STRIDE* \[ enuncia\]
+*stride* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -61,11 +61,11 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

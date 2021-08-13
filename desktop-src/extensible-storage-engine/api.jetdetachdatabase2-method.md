@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetDetachDatabase2 (método)'
-title: Método API. JetDetachDatabase2
+description: Más información sobre el método Api.JetDetachDatabase2
+title: Método Api.JetDetachDatabase2
 TOCTitle: 'JetDetachDatabase2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetDetachDatabase2(Microsoft.Isam.Esent.Interop.JET_SESID,System.String,Microsoft.Isam.Esent.Interop.DetachDatabaseGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetdetachdatabase2(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 44cc8b5d03ba720f1acb7d0e8603bf29906a611e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f90ed476fa691ffbc84496d6add48b2d502444af1777a952343c3162f6a5d7fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118784347"
 ---
-# <a name="apijetdetachdatabase2-method"></a>Método API. JetDetachDatabase2
+# <a name="apijetdetachdatabase2-method"></a>Método Api.JetDetachDatabase2
 
-Libera un archivo de base de datos que se adjuntó previamente a una sesión de base de datos.
+Libera un archivo de base de datos que se adjuntaba previamente a una sesión de base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,23 +65,23 @@ public static void JetDetachDatabase2(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión de base de datos que se va a usar.
+    Sesión de base de datos que se usará.
 
 <!-- end list -->
 
   - database  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Base de datos que se va a desasociar.
+    Base de datos que se desasoyó.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. DetachDatabaseGrbit](./detachdatabasegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.DetachDatabaseGrbit](./detachdatabasegrbit-enumeration.md)  
     
-    Opciones de desasociación.
+    Opciones de desasoción.
 
 ## <a name="see-also"></a>Vea también
 
@@ -89,6 +89,6 @@ public static void JetDetachDatabase2(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

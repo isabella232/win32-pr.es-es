@@ -1,7 +1,7 @@
 ---
-description: Calcula el bloque de claves utilizado por el protocolo de autenticación extensible (EAP).
+description: Calcula el bloque de claves utilizado por el Protocolo de autenticación extensible (EAP).
 ms.assetid: 0f382668-6fc6-440f-ba61-70b1db0f3987
-title: Función SslComputeEapKeyBlock (Sslprovider. h)
+title: Función SslComputeEapKeyBlock (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: d46c1284b208975126067ff295507b51def9133b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48f657f565c239f797fd67b108ce3b18b692dfabc0248e1005465e9123ac492d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907185"
 ---
-# <a name="sslcomputeeapkeyblock-function"></a>SslComputeEapKeyBlock función)
+# <a name="sslcomputeeapkeyblock-function"></a>Función SslComputeEapKeyBlock
 
-La función **SslComputeEapKeyBlock** calcula el bloque de claves que usa el protocolo de autenticación extensible (EAP).
+La **función SslComputeEapKeyBlock** calcula el bloque de claves usado por el Protocolo de autenticación extensible (EAP).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,65 +46,65 @@ SECURITY_STATUS WINAPI SslComputeEapKeyBlock(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor de protocolo del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+El identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de seguridad (SSL).
 
 </dd> <dt>
 
-*hMasterKey* \[ de\]
+*hMasterKey* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de [*clave maestra*](/windows/desktop/SecGloss/m-gly) .
+Identificador del objeto [*de clave*](/windows/desktop/SecGloss/m-gly) maestra.
 
 </dd> <dt>
 
-*pbRandoms* \[ de\]
+*pbRandoms* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene una concatenación de los valores aleatorios de cliente \_ y \_ de servidor de la sesión SSL.
+Puntero a un búfer que contiene una concatenación de los valores aleatorios de cliente y \_ \_ aleatorios del servidor de la sesión SSL.
 
 </dd> <dt>
 
-*cbRandoms* \[ de\]
+*cbRandoms* \[ En\]
 </dt> <dd>
 
-La longitud, en bytes, del búfer *pbRandoms* .
+Longitud, en bytes, del *búfer pbRandoms.*
 
 </dd> <dt>
 
 *pbOutput* \[ out, opcional\]
 </dt> <dd>
 
-La dirección de un búfer que recibe el BLOB de clave. El parámetro *cbOutput* contiene el tamaño de este búfer. Si este parámetro es **null**, esta función colocará el tamaño necesario, en bytes, en el **valor DWORD** al que apunta el parámetro *pcbResult* .
+Dirección de un búfer que recibe la clave BLOB. El *parámetro cbOutput* contiene el tamaño de este búfer. Si este parámetro es **NULL,** esta función colocará el tamaño necesario, en bytes, en el **DWORD** al que apunta el *parámetro byteResult.*
 
 </dd> <dt>
 
-*cbOutput* \[ de\]
+*cbOutput* \[ En\]
 </dt> <dd>
 
-La longitud, en bytes, del búfer *pbOutput* .
+Longitud, en bytes, del *búfer pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ enuncia\]
+*pwResult* \[ out\]
 </dt> <dd>
 
-Un puntero a un valor **DWORD** que especifica la longitud, en bytes, del hash escrito en el búfer de *pbOutput* .
+Puntero a un **valor DWORD** que especifica la longitud, en bytes, del hash escrito en el *búfer pbOutput.*
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Establezca en **\_ marca de \_ servidor \_ SSL NCRYPT** para indicar que se trata de una llamada de servidor.
+Establezca en **NCRYPT \_ SSL SERVER \_ \_ FLAG** para indicar que se trata de una llamada de servidor.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
@@ -112,7 +112,7 @@ Si se produce un error en la función, devuelve un valor de error distinto de ce
 
 | Código o valor devuelto                                                                                                                                                    | Descripción                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
 
 
 
@@ -124,9 +124,9 @@ Si se produce un error en la función, devuelve un valor de error distinto de ce
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

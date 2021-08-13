@@ -1,7 +1,7 @@
 ---
 description: Representa una colección de calificadores.
 ms.assetid: 2f51404d-b26e-4153-b206-ab6b413363a1
-title: Qualifiers (objeto) (iAds. h)
+title: Objeto Qualifiers (Iads.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,44 +13,44 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e873019d6fbfb21de8be430d7960f697b39eeca7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f68dbeefefbe675199522dfbc5b1dab81b8a2840fa8b7d5189c72b811fcba7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900961"
 ---
-# <a name="qualifiers-object"></a>Calificadors (objeto)
+# <a name="qualifiers-object"></a>Objeto Qualifiers
 
-\[El objeto **calificadores** está disponible para su uso en los sistemas operativos especificados en la sección requisitos. En su lugar, use la [**clase X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) en el espacio de nombres [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) llamando al constructor que toma un OID como parámetro y, a continuación, use el OID para las directivas de certificado para procesar calificadores que formen parte de la información de directivas en la extensión de directivas de certificado.\]
+\[El **objeto Calificadores** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use la clase [**X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) llamando al constructor que toma un OID como parámetro y, a continuación, use el OID para las directivas de certificado para procesar calificadores que forman parte de la información de directiva en la extensión Directivas de certificado.\]
 
-El objeto **Qualifiers** representa una colección de calificadores.
+El **objeto Qualifiers** representa una colección de calificadores.
 
 ## <a name="when-to-use"></a>Cuándo se usa
 
-El objeto **calificadores** se usa para realizar las siguientes tareas:
+El **objeto Qualifiers** se usa para realizar las tareas siguientes:
 
--   Recupera una propiedad extendida específica de la colección.
+-   Recupere una propiedad extendida específica de la colección.
 -   Recupere el número de propiedades extendidas de la colección.
 -   Recorrer en iteración la colección.
 
 ## <a name="members"></a>Miembros
 
-El objeto **Qualifiers** tiene estos tipos de miembros:
+El **objeto Qualifiers** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **Qualifiers** tiene estas propiedades.
+El **objeto Qualifiers** tiene estas propiedades.
 
 
 
 | Propiedad                                           | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
 |:---------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_NewEnum**](qualifiers-newenum.md)<br/> | Solo lectura<br/> | Recupera una interfaz [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) en un objeto que se puede utilizar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contabiliza**](qualifiers-count.md)<br/>       | Solo lectura<br/> | Recupera el número de calificadores de la colección.<br/>                                                                                                                                                                |
-| [**Elemento**](qualifiers-item.md)<br/>         | Solo lectura<br/> | Recupera un objeto [**calificador**](qualifier.md) que representa el calificador indizado de la colección. Esta es la propiedad predeterminada.<br/>                                                                             |
+| [**\_NewEnum**](qualifiers-newenum.md)<br/> | Solo lectura<br/> | Recupera una [**interfaz IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).<br/> |
+| [**Count**](qualifiers-count.md)<br/>       | Solo lectura<br/> | Recupera el número de calificadores de la colección.<br/>                                                                                                                                                                |
+| [**Elemento**](qualifiers-item.md)<br/>         | Solo lectura<br/> | Recupera un objeto [**Qualifier**](qualifier.md) que representa el calificador indexado de la colección. Esta es la propiedad predeterminada.<br/>                                                                             |
 
 
 
@@ -58,9 +58,9 @@ El objeto **Qualifiers** tiene estas propiedades.
 
 ## <a name="remarks"></a>Observaciones
 
-No se puede crear el objeto **calificadores** .
+No se puede crear el objeto **Qualifiers.**
 
-La propiedad de objeto [**PolicyInformation. Qualifiers**](policyinformation-qualifiers.md) CAPICOM devuelve un objeto de **calificadores** .
+La propiedad de objeto CAPICOM [**PolicyInformation.Qualifiers**](policyinformation-qualifiers.md) devuelve un **objeto Qualifiers.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,8 +68,8 @@ La propiedad de objeto [**PolicyInformation. Qualifiers**](policyinformation-qua
 
 | Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
-| Encabezado<br/>          | <dl> <dt>IAds. h</dt> </dl>      |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Header<br/>          | <dl> <dt>Iads.h</dt> </dl>      |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

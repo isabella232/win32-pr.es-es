@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentVersionStoreOutOfMemoryException'
-title: Constructor de EsentVersionStoreOutOfMemoryException
+description: 'Más información sobre: Constructor EsentVersionStoreOutOfMemoryException'
+title: Constructor EsentVersionStoreOutOfMemoryException
 TOCTitle: 'EsentVersionStoreOutOfMemoryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentVersionStoreOutOfMemoryException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentversionstoreoutofmemoryexception.esentversionstoreoutofmemoryexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e6481e90614af9836709b59ea96fe0f87d0e2fdc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c79be5858a146d326d8a8f89fe1003809e4fd005c480c492e2d113124f79cf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118768407"
 ---
-# <a name="esentversionstoreoutofmemoryexception-constructor"></a>Constructor de EsentVersionStoreOutOfMemoryException
+# <a name="esentversionstoreoutofmemoryexception-constructor"></a>Constructor EsentVersionStoreOutOfMemoryException
 
 Inicializa una nueva instancia de la clase EsentVersionStoreOutOfMemoryException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentVersionStoreOutOfMemoryException()
 public EsentVersionStoreOutOfMemoryException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentVersionStoreOutOfMemoryException()
 
 [Miembros de EsentVersionStoreOutOfMemoryException](./esentversionstoreoutofmemoryexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
