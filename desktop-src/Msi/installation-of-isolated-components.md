@@ -1,35 +1,35 @@
 ---
-description: Windows Installer realiza las siguientes acciones durante la instalación de una aplicación cuando el paquete contiene componentes aislados. Normalmente, \_ el componente compartido es un archivo dll compartido por la \_ aplicación de componentes y otros ejecutables de cliente.
+description: Windows El instalador realiza las siguientes acciones durante la instalación de una aplicación cuando el paquete contiene componentes aislados. Normalmente, El componente \_ compartido es un archivo DLL compartido por la aplicación de componentes y otros \_ ejecutables de cliente.
 ms.assetid: fbc5dd86-5d38-4ce8-ab38-03c84cc77e80
 title: Instalación de componentes aislados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3c1b9a7e21c212474701409e887d0afd5517774
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82f842f626775dce436abedace96549fd55079c577885aad81492df861cd1a68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118634130"
 ---
 # <a name="installation-of-isolated-components"></a>Instalación de componentes aislados
 
-Windows Installer realiza las siguientes acciones durante la instalación de una aplicación cuando el paquete contiene componentes aislados. Normalmente, \_ el componente compartido es un archivo dll compartido por la \_ aplicación de componentes y otros ejecutables de cliente.
+Windows El instalador realiza las siguientes acciones durante la instalación de una aplicación cuando el paquete contiene componentes aislados. Normalmente, El componente \_ compartido es un archivo DLL compartido por la aplicación de componentes y otros \_ ejecutables de cliente.
 
 ## <a name="installation"></a>Instalación
 
--   Copie los archivos de componentes \_ compartidos en la misma carpeta que la aplicación de componentes \_ solo si \_ también se está instalando la aplicación de componentes.
--   Cree un archivo de cero bytes con el nombre de archivo corto del archivo de clave de la aplicación de componentes \_ . Busque este archivo en la misma carpeta que la \_ aplicación de componentes. Anexe la extensión. LOCAL a este nombre de archivo.
--   Incremente el recuento de SharedDLL si el bit msidbComponentAttributesSharedDllRefCount se establece en la columna Attributes de la [tabla Component](component-table.md).
--   Registre \_ la aplicación de componentes como un cliente del componente \_ compartido y registre una ruta de acceso de clave que apunte a la ubicación compartida del componente \_ compartido.
--   Instale todos los recursos de la aplicación de componentes de la \_ forma habitual.
+-   Copie los archivos de Componente compartido en la misma carpeta que aplicación de componente solo si también \_ \_ se está \_ instalando la aplicación de componentes.
+-   Cree un archivo de cero bytes con el nombre de archivo corto del archivo de clave de aplicación \_ de componentes. Busque este archivo en la misma carpeta que aplicación \_ de componentes. Anexe la extensión . LOCAL a este nombre de archivo.
+-   Incremente el recuento de referencias de SharedDLL si el bit msidbComponentAttributesSharedDllRefCount está establecido en la columna Atributos de la [tabla Component](component-table.md).
+-   Registre aplicación de componente como cliente de Componente compartido y registre una ruta de acceso clave que apunte \_ a la ubicación compartida de Componente \_ \_ compartido.
+-   Instale todos los recursos de aplicación de \_ componentes como de costumbre.
 
-Si \_ el componente compartido o su archivo de clave ya está instalado en el equipo, no copie los archivos en la ubicación compartida del componente \_ compartido.
+Si el componente Compartido o su archivo de clave ya está instalado en el equipo, no copie los archivos en la \_ ubicación compartida de Componente \_ compartido.
 
-Si \_ el componente compartido o su archivo de clave todavía no está instalado en el equipo:
+Si el \_ componente Compartido o su archivo de clave aún no están instalados en el equipo:
 
--   Copie los archivos del componente \_ compartido en la ubicación compartida.
--   Procesa todas las acciones de instalación del componente \_ compartido.
--   Si \_ el componente compartido es un componente com, registre la ruta de acceso completa de com de forma que la sintaxis \[ $Component \] y \[ \# FileKey \] señalen a la ubicación compartida del componente \_ compartido.
+-   Copie los archivos de Componente \_ compartido en la ubicación compartida.
+-   Procese todas las acciones de instalación de Component \_ Shared.
+-   Si Componente compartido es un componente COM, registre la ruta de acceso COM completa de forma que la sintaxis $Component y FileKey apunten a la ubicación compartida \_ \[ de Component \] \[ \# \] \_ Shared.
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_SETTIMECODE (mmsystem. h)
-description: El \_ comando MCI SETTIMECODE habilita o deshabilita la grabación de código de tiempo para un VCR. Los dispositivos VCR reconocen este comando.
+title: MCI_SETTIMECODE comando (Mmsystem.h)
+description: El comando MCI SETTIMECODE habilita o deshabilita la grabación \_ de código de tiempo para un VCR. Los dispositivos VCR reconocen este comando.
 ms.assetid: b014fbe0-de97-4540-a5fe-b22d157361f7
 keywords:
-- Comando de MCI_SETTIMECODE de Windows multimedia
+- MCI_SETTIMECODE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7df0727f4386bad46b3fde7f2d816ce951850b8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f75a1722b1e1e26ece0bc7f3eac705bdd290f770a659cfebe46b603859a3918
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430465"
 ---
-# <a name="mci_settimecode-command"></a>\_Comando MCI SETTIMECODE
+# <a name="mci_settimecode-command"></a>Comando \_ SETTIMECODE de MCI
 
-El \_ comando MCI SETTIMECODE habilita o deshabilita la grabación de código de tiempo para un VCR. Los dispositivos VCR reconocen este comando.
+El comando MCI SETTIMECODE habilita o deshabilita la grabación \_ de código de tiempo para un VCR. Los dispositivos VCR reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,45 +50,45 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificación de MCI, \_ espera de MCI o \_ prueba de MCI. Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpSetTimeCode"></span><span id="lpsettimecode"></span><span id="LPSETTIMECODE"></span>*lpSetTimeCode*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms genérica de MCI**](mci-generic-parms.md) . (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura con una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-La marca adicional siguiente se aplica a los dispositivos VCR:
+La siguiente marca adicional se aplica a los dispositivos VCR:
 
 <dl> <dt>
 
-<span id="MCI_VCR_SETTIMECODE_RECORD"></span><span id="mci_vcr_settimecode_record"></span>\_registro de \_ SETTIMECODE de VCR de MCI \_
+<span id="MCI_VCR_SETTIMECODE_RECORD"></span><span id="mci_vcr_settimecode_record"></span>REGISTRO \_ \_ SETTIMECODE de MCI VCR \_
 </dt> <dd>
 
-Establece la grabación de seguimiento de código de tiempo en activado o desactivado. Esta marca se usa en combinación con una de las siguientes marcas adicionales:
+Establece la grabación de la pista de código de tiempo en activa o desactivada. Esta marca se usa en combinación con una de las siguientes marcas adicionales:
 
 </dd> <dt>
 
-<span id="MCI_SET_ON"></span><span id="mci_set_on"></span>MCI \_ activado \_
+<span id="MCI_SET_ON"></span><span id="mci_set_on"></span>MCI \_ SET \_ ON
 </dt> <dd>
 
-Grabación de código de tiempo activada.
+Grabación de código de tiempo activa.
 
 </dd> <dt>
 
-<span id="MCI_SET_OFF"></span><span id="mci_set_off"></span>Desactivación de MCI \_ \_
+<span id="MCI_SET_OFF"></span><span id="mci_set_off"></span>MCI \_ SET \_ OFF
 </dt> <dd>
 
 Grabación de código de tiempo desactivada.
@@ -103,7 +103,7 @@ Grabación de código de tiempo desactivada.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -111,10 +111,10 @@ Grabación de código de tiempo desactivada.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

@@ -4,22 +4,22 @@ ms.assetid: B1BD9C93-7F8A-4946-B5B7-BB0FDE3A9DCA
 title: Métodos IAssociatedIdentityProvider
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e83cac414ce161d51554a5caac63b433ff81eecd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d69b19d2a1deb1f11b23a01f6ab3a43695f7af5726baa2b9f20c2fabf6859cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119417765"
 ---
 # <a name="iassociatedidentityprovider-methods"></a>Métodos IAssociatedIdentityProvider
 
-La interfaz [**IAssociatedIdentityProvider**](/windows/desktop/api/IdentityProvider/nn-identityprovider-iassociatedidentityprovider) expone los métodos siguientes.
+La [**interfaz IAssociatedIdentityProvider**](/windows/desktop/api/IdentityProvider/nn-identityprovider-iassociatedidentityprovider) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Método AssociateIdentity**](/windows/desktop/api/IdentityProvider/nf-identityprovider-iassociatedidentityprovider-associateidentity)
--   [**Método ChangeCredential**](/windows/desktop/api/IdentityProvider/nf-identityprovider-iassociatedidentityprovider-changecredential)
--   [**Método DisassociateIdentity**](/windows/desktop/api/IdentityProvider/nf-identityprovider-iassociatedidentityprovider-disassociateidentity)
+-   [**AssociateIdentity (método)**](/windows/desktop/api/IdentityProvider/nf-identityprovider-iassociatedidentityprovider-associateidentity)
+-   [**ChangeCredential (método)**](/windows/desktop/api/IdentityProvider/nf-identityprovider-iassociatedidentityprovider-changecredential)
+-   [**DisassociateIdentity (método)**](/windows/desktop/api/IdentityProvider/nf-identityprovider-iassociatedidentityprovider-disassociateidentity)
 
  
 

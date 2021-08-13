@@ -4,12 +4,12 @@ ms.assetid: 3acd0428-e623-4c6a-81b3-de49c7e0fa3b
 title: playback.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe08d0d6ef9b04a5f6e2a2b46d68baafb3999660
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0d4e62088636b13f7c48e42f89b5fb19e4e66581089cfde9cd064de65172dd09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432215"
 ---
 # <a name="playbackcpp"></a>playback.cpp
 
@@ -402,7 +402,7 @@ done:
 [Reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Ejemplo de reproducción de DirectShow](directshow-playback-example.md)
+[DirectShow Ejemplo de reproducción](directshow-playback-example.md)
 </dt> </dl>
 
  

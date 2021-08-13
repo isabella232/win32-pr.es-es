@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de HDN_ITEMKEYDOWN (commctrl. h)
-description: Notifica a la ventana primaria de un control de encabezado que se ha presionado una tecla con un elemento seleccionado. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: HDN_ITEMKEYDOWN de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de encabezado que se ha presionado una tecla con un elemento seleccionado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: ab6922ab-907d-44fc-8606-28f395118405
 keywords:
-- HDN_ITEMKEYDOWN controles de código de notificación de Windows
+- HDN_ITEMKEYDOWN código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c4415eb5a026bf96d53884fe2735f3a3fa2e494
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 473222e6cd0da7fd886571db045ee91ea6d8c46ce6bcc20e141af837d5aa92e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435435"
 ---
-# <a name="hdn_itemkeydown-notification-code"></a>Código de notificación de ITEMKEYDOWN de HDN \_
+# <a name="hdn_itemkeydown-notification-code"></a>Código de notificación \_ ITEMKEYDOWN de HDN
 
-Notifica a la ventana primaria de un control de encabezado que se ha presionado una tecla con un elemento seleccionado. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de encabezado que se ha presionado una tecla con un elemento seleccionado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ HDN_ITEMKEYDOWN
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) que contiene información adicional sobre la tecla que se va a presionar.
+Puntero a una [**estructura NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) que contiene información adicional sobre la clave que se está pulsando.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

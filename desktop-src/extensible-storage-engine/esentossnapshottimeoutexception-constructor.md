@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentOSSnapshotTimeOutException'
-title: Constructor de EsentOSSnapshotTimeOutException
+description: 'Más información sobre: Constructor EsentOSSnapshotTimeOutException'
+title: Constructor EsentOSSnapshotTimeOutException
 TOCTitle: 'EsentOSSnapshotTimeOutException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOSSnapshotTimeOutException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentossnapshottimeoutexception.esentossnapshottimeoutexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 98aac848cc4c8475a73a778adffc4bac5f9f730b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 758fd6448ebcec24019271b3e339f6a5d0b3374c63c58ba5a1c4491a19d77af8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119478555"
 ---
-# <a name="esentossnapshottimeoutexception-constructor"></a>Constructor de EsentOSSnapshotTimeOutException
+# <a name="esentossnapshottimeoutexception-constructor"></a>Constructor EsentOSSnapshotTimeOutException
 
 Inicializa una nueva instancia de la clase EsentOSSnapshotTimeOutException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentOSSnapshotTimeOutException()
 public EsentOSSnapshotTimeOutException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentOSSnapshotTimeOutException()
 
 [Miembros de EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

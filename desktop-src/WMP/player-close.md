@@ -1,11 +1,11 @@
 ---
-title: Player. Close (método)
-description: El método Close libera los recursos de Media Player de Windows.
+title: Método Player.close
+description: El método close libera Reproductor de Windows Media recursos.
 ms.assetid: 15bd5a05-dbfa-4bea-90c2-afd9f69631e0
 keywords:
-- Close (método) de Windows Media Player
-- Close (método) Windows Media Player, clase Player
-- Clase player Windows Media Player, Close (método)
+- método close Reproductor de Windows Media
+- método close Reproductor de Windows Media , clase Player
+- Clase de reproductor Reproductor de Windows Media método , close
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: debc2667c42da92b3a2639e0f14c767d2b5b0651
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a29e68aed11b095dff80c8c91c88410f98b9a236bbcadcbff75da0fc0de392fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467885"
 ---
-# <a name="playerclose-method"></a>Player. Close (método)
+# <a name="playerclose-method"></a>Método Player.close
 
-El método **Close** libera los recursos de Media Player de Windows.
+El **método close** libera Reproductor de Windows Media recursos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,11 +46,11 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Este método cierra el archivo multimedia digital actual, no Media Player de Windows.
+Este método cierra el archivo multimedia digital actual, no Reproductor de Windows Media sí mismo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento de botón HTML que, cuando se hace clic en él, detiene la reproducción en Windows Media Player y libera los recursos en uso. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que, al hacer clic en él, detiene la reproducción en Reproductor de Windows Media y libera los recursos en uso. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -70,7 +70,7 @@ En el ejemplo siguiente se crea un elemento de botón HTML que, cuando se hace c
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

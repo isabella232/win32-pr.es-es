@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMSecurity CheckCertForRevocation (wmdrmsdk. h)
+title: Método IWMDRMSecurity CheckCertForRevocation (Wmdrmsdk.h)
 description: El método CheckCertForRevocation determina si se ha revocado un certificado.
 ms.assetid: 3efde398-f2ba-486e-b017-6787ca402e4c
 keywords:
-- Método CheckCertForRevocation formato de Windows Media
-- Método CheckCertForRevocation formato de Windows Media, interfaz IWMDRMSecurity
-- Interfaz IWMDRMSecurity formato de Windows Media, método CheckCertForRevocation
+- Método CheckCertForRevocation windows Media Format
+- Método CheckCertForRevocation windows Media Format , interfaz IWMDRMSecurity
+- IWMDRMSecurity interface windows Media Format , CheckCertForRevocation method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a2439085c6483720e84956ef9932f4f1ab95535
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e090dfb655837ad2cf36cf45486488fde1440b499b73f16fdfbdaf2989532687
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118700791"
 ---
-# <a name="iwmdrmsecuritycheckcertforrevocation-method"></a>IWMDRMSecurity:: CheckCertForRevocation (método)
+# <a name="iwmdrmsecuritycheckcertforrevocation-method"></a>IWMDRMSecurity::CheckCertForRevocation (método)
 
-El método **CheckCertForRevocation** determina si se ha revocado un certificado.
+El **método CheckCertForRevocation** determina si se ha revocado un certificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,18 +46,18 @@ HRESULT CheckCertForRevocation(
 
 <dl> <dt>
 
-*rguidRevocationList* \[ de\]
+*rguidRevocationList* \[ En\]
 </dt> <dd>
 
-GUID que identifica la lista de revocación que se va a usar. Establezca en uno de los valores de la tabla siguiente.
+GUID que identifica la lista de revocación que se usará. Establezca en uno de los valores de la tabla siguiente.
 
 
 
 | Constante GUID                 | Descripción                                                                                |
 |-------------------------------|--------------------------------------------------------------------------------------------|
-| \_aplicación REVOCATIONTYPE de WMDRM \_    | Especifica la lista de revocación de certificados de la aplicación.                                     |
-| \_dispositivo REVOCATIONTYPE \_ WMDRM | Especifica la lista de revocación de certificados de dispositivo.                                          |
-| \_CARDEA REVOCATIONTYPE \_ WMDRM | Especifica la lista de revocación de certificados de DRM de Microsoft Windows Media para dispositivos de red. |
+| APLICACIÓN WMDRM \_ \_ REVOCATIONTYPE    | Especifica la lista de revocación de certificados de aplicación.                                     |
+| DISPOSITIVO WMDRM \_ \_ REVOCATIONTYPE | Especifica la lista de revocación de certificados de dispositivo.                                          |
+| WMDRM \_ REVOCATIONTYPE \_ CARDEA | Especifica la lista de revocación de certificados Windows DRM multimedia de Microsoft para dispositivos de red. |
 
 
 
@@ -65,21 +65,21 @@ GUID que identifica la lista de revocación que se va a usar. Establezca en uno 
 
 </dd> <dt>
 
-*pbCert* \[ de\]
+*pbCert* \[ En\]
 </dt> <dd>
 
-Búfer que contiene el certificado que se va a buscar.
+Búfer que contiene el certificado que se buscará.
 
 </dd> <dt>
 
-*cbCert* \[ de\]
+*cbCert* \[ En\]
 </dt> <dd>
 
 Tamaño del búfer *pbCert*, en bytes.
 
 </dd> <dt>
 
-*fRevoked* \[ enuncia\]
+*fRevoked* \[ out\]
 </dt> <dd>
 
 En la salida, indica si el certificado está presente en la lista de revocación.
@@ -88,13 +88,13 @@ En la salida, indica si el certificado está presente en la lista de revocación
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -106,8 +106,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -115,7 +115,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Interfaz IWMDRMSecurity**](iwmdrmsecurity.md)
+[**IWMDRMSecurity (interfaz)**](iwmdrmsecurity.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JET_ENUMCOLUMN constructor'
-title: Constructor de JET_ENUMCOLUMN
+title: JET_ENUMCOLUMN constructor
 TOCTitle: 'JET_ENUMCOLUMN constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn.jet_enumcolumn(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed74abf10f2b69d4fcde568e1a7392fb790e129f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6e27f5db4a6090951e1cedefefcb90e5685e57a2575ea6f8781a00fcaddb712
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475185"
 ---
-# <a name="jet_enumcolumn-constructor"></a>Constructor de JET_ENUMCOLUMN
+# <a name="jet_enumcolumn-constructor"></a>JET_ENUMCOLUMN constructor
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +50,12 @@ Dim instance As New JET_ENUMCOLUMN()
 public JET_ENUMCOLUMN()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMN (clase)](./jet-enumcolumn-class.md)
+[JET_ENUMCOLUMN clase](./jet-enumcolumn-class.md)
 
-[Miembros de JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN miembros](./jet-enumcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

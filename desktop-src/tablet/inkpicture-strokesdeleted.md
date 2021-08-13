@@ -1,19 +1,19 @@
 ---
-description: Se produce después de eliminar los objetos IInkStrokeDisp de la propiedad Ink.
+description: Se produce después de eliminar objetos IInkStrokeDisp de la propiedad Ink.
 ms.assetid: 395544e1-dc93-45d3-ac7a-d54712f3c027
-title: Evento InkPicture. StrokesDeleted (Msinkaut. h)
+title: Evento InkPicture.StrokesDeleted (Ms inkut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf98e51196d760f467d507c133429201883b340e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5b2d4f0be69adf6c9c44f3eadec250d8cba3ebb8935bde5c06cd026e478da3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717364"
 ---
-# <a name="inkpicturestrokesdeleted-event"></a>Evento InkPicture. StrokesDeleted
+# <a name="inkpicturestrokesdeleted-event"></a>Evento InkPicture.StrokesDeleted
 
-Se produce después de eliminar los objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) de la propiedad [**Ink**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_ink) .
+Se produce después de [**eliminar objetos IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) de la [**propiedad Ink.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_ink)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,9 +34,9 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-No hay datos de evento.
+No hay datos de eventos.
 
-Este método de evento se define en las interfaces de solo envío **\_ IInkOverlayEvents** y **\_ IInkPictureEvents** (dispinterfaces) con un identificador de DISPID \_ IOEStrokesDeleted.
+Este método de evento se define en las interfaces de solo envío (dispinterfaces) de **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de DISPID \_ IOEStrokesDeleted.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,9 +44,9 @@ Este método de evento se define en las interfaces de solo envío **\_ IInkOverl
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

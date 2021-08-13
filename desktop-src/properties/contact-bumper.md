@@ -4,12 +4,12 @@ ms.assetid: 00198aec-d05d-4aaf-b63e-1625d8befe06
 title: Contacto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d170b94a8a1b6a33345ff06eb051740e179aaca
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 024f8330e2aa5402fac76192928afd8064b4ff456fd37adab5d8e0e7d3d785d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460145"
 ---
 # <a name="contact"></a>Contacto
 
@@ -25,7 +25,7 @@ ms.locfileid: "108105093"
 | [System.Contact.Anniversary](./props-system-contact-anniversary.md)<br/>                                    | Aniversario del contacto.<br/>                                                                         |
 | [System.Contact.AssistantName](./props-system-contact-assistantname.md)<br/>                                | Nombre del asistente del contacto.<br/>                                                                           |
 | [System.Contact.AssistantTelephone](./props-system-contact-assistanttelephone.md)<br/>                      | Número de teléfono del asistente del contacto.<br/>                                                        |
-| [System.Contact.Birthday](./props-system-contact-birthday.md)<br/>                                          | Fecha de nacimiento del contacto.<br/>                                                                            |
+| [System.Contact.Birthday](./props-system-contact-birthday.md)<br/>                                          | Aniversario del contacto.<br/>                                                                            |
 | [System.Contact.BusinessAddress](./props-system-contact-businessaddress.md)<br/>                            | Dirección empresarial del contacto.<br/>                                                                    |
 | [System.Contact.BusinessAddress1Country](props-system-contact-businessaddress1country.md)<br/>                   |                                                                                                                |
 | [System.Contact.BusinessAddress1Locality](props-system-contact-businessaddress1locality.md)<br/>                 |                                                                                                                |
@@ -42,10 +42,10 @@ ms.locfileid: "108105093"
 | [System.Contact.BusinessAddress3PostalCode](props-system-contact-businessaddress3postalcode.md)<br/>             |                                                                                                                |
 | [System.Contact.BusinessAddress3Region](props-system-contact-businessaddress3region.md)<br/>                     |                                                                                                                |
 | [System.Contact.BusinessAddress3Address](props-system-contact-businessaddress3street.md)<br/>                     |                                                                                                                |
-| [System.Contact.BusinessAddressCity](./props-system-contact-businessaddresscity.md)<br/>                    | Ciudad de la dirección de negocio del contacto.<br/>                                                               |
-| [System.Contact.BusinessAddressCountry](./props-system-contact-businessaddresscountry.md)<br/>              | País de la dirección de negocio del contacto.<br/>                                                            |
-| [System.Contact.BusinessAddressPostalCode](./props-system-contact-businessaddresspostalcode.md)<br/>        | Código postal de contacto de la dirección de negocio.<br/>                                                            |
-| [System.Contact.BusinessAddressPostOfficeBox](./props-system-contact-businessaddresspostofficebox.md)<br/>  | Número de la oficina postal de la dirección empresarial del contacto.<br/>                                             |
+| [System.Contact.BusinessAddressCity](./props-system-contact-businessaddresscity.md)<br/>                    | Ciudad de la dirección empresarial del contacto.<br/>                                                               |
+| [System.Contact.BusinessAddressCountry](./props-system-contact-businessaddresscountry.md)<br/>              | País de la dirección empresarial del contacto.<br/>                                                            |
+| [System.Contact.BusinessAddressPostalCode](./props-system-contact-businessaddresspostalcode.md)<br/>        | Código postal de contacto de la dirección empresarial.<br/>                                                            |
+| [System.Contact.BusinessAddressPostOfficeBox](./props-system-contact-businessaddresspostofficebox.md)<br/>  | Número de la oficina de correos de la dirección empresarial del contacto.<br/>                                             |
 | [System.Contact.BusinessAddressState](./props-system-contact-businessaddressstate.md)<br/>                  | Estado de la dirección empresarial del contacto<br/>                                                               |
 | [System.Contact.BusinessAddressAddress](./props-system-contact-businessaddressstreet.md)<br/>                | Dirección comercial del contacto.<br/>                                                             |
 | [System.Contact.BusinessEmailAddresses](props-system-contact-businessemailaddresses.md)<br/>                     |                                                                                                                |
@@ -135,7 +135,7 @@ ms.locfileid: "108105093"
 | [System.Contact.MiddleName](./props-system-contact-middlename.md)<br/>                                      | Nombre intermedio del contacto.<br/>                                                                         |
 | [System.Contact.MobileTelephone](./props-system-contact-mobiletelephone.md)<br/>                            | Número de teléfono móvil del contacto.<br/>                                                             |
 | [System.Contact.NickName](./props-system-contact-nickname.md)<br/>                                          | Alias del contacto.<br/>                                                                            |
-| [System.Contact.OfficeLocation](./props-system-contact-officelocation.md)<br/>                              | Ubicación de la oficina del contacto.<br/>                                                                     |
+| [System.Contact.OfficeLocation](./props-system-contact-officelocation.md)<br/>                              | Office ubicación del contacto.<br/>                                                                     |
 | [System.Contact.OtherAddress](./props-system-contact-otheraddress.md)<br/>                                  | Otra dirección del contacto<br/>                                                                        |
 | [System.Contact.OtherAddress1Country](props-system-contact-otheraddress1country.md)<br/>                         |                                                                                                                |
 | [System.Contact.OtherAddress1Locality](props-system-contact-otheraddress1locality.md)<br/>                       |                                                                                                                |
@@ -152,12 +152,12 @@ ms.locfileid: "108105093"
 | [System.Contact.OtherAddress3PostalCode](props-system-contact-otheraddress3postalcode.md)<br/>                   |                                                                                                                |
 | [System.Contact.OtherAddress3Region](props-system-contact-otheraddress3region.md)<br/>                           |                                                                                                                |
 | [System.Contact.OtherAddress3Address](props-system-contact-otheraddress3street.md)<br/>                           |                                                                                                                |
-| [System.Contact.OtherAddressCity](./props-system-contact-otheraddresscity.md)<br/>                          | Otro nombre de ciudad de dirección del contacto.<br/>                                                             |
+| [System.Contact.OtherAddressCity](./props-system-contact-otheraddresscity.md)<br/>                          | Nombre de la ciudad de otra dirección del contacto.<br/>                                                             |
 | [System.Contact.OtherAddressCountry](./props-system-contact-otheraddresscountry.md)<br/>                    | Otro nombre de país de dirección del contacto.<br/>                                                          |
-| [System.Contact.OtherAddressPostalCode](./props-system-contact-otheraddresspostalcode.md)<br/>              | Código postal de otra dirección del contacto.<br/>                                                           |
-| [System.Contact.OtherAddressPostOfficeBox](./props-system-contact-otheraddresspostofficebox.md)<br/>        | Número de la oficina de correos de otra dirección del contacto.<br/>                                                |
+| [System.Contact.OtherAddressPostalCode](./props-system-contact-otheraddresspostalcode.md)<br/>              | Otro código postal de dirección del contacto.<br/>                                                           |
+| [System.Contact.OtherAddressPostOfficeBox](./props-system-contact-otheraddresspostofficebox.md)<br/>        | Número de la oficina postal de otra dirección del contacto.<br/>                                                |
 | [System.Contact.OtherAddressState](./props-system-contact-otheraddressstate.md)<br/>                        | Otro nombre de estado de dirección del contacto.<br/>                                                            |
-| [System.Contact.OtherAddressAddress](./props-system-contact-otheraddressstreet.md)<br/>                      | Otra dirección del contacto.<br/>                                                                |
+| [System.Contact.OtherAddressAddressAddress](./props-system-contact-otheraddressstreet.md)<br/>                      | Otra dirección del contacto.<br/>                                                                |
 | [System.Contact.OtherEmailAddresses](props-system-contact-otheremailaddresses.md)<br/>                           |                                                                                                                |
 | [System.Contact.PagerTelephone](./props-system-contact-pagertelephone.md)<br/>                              | Número de teléfono de paginación del contacto.<br/>                                                              |
 | [System.Contact.PersonalTitle](./props-system-contact-personaltitle.md)<br/>                                | Título personal del contacto.<br/>                                                                           |
@@ -171,11 +171,11 @@ ms.locfileid: "108105093"
 | [System.Contact.PrimaryAddressAddressAddress](./props-system-contact-primaryaddressstreet.md)<br/>                  | Dirección principal del contacto.<br/>                                                              |
 | [System.Contact.PrimaryEmailAddress](./props-system-contact-primaryemailaddress.md)<br/>                    | Dirección de correo electrónico principal del contacto<br/>                                                                |
 | [System.Contact.PrimaryTelephone](./props-system-contact-primarytelephone.md)<br/>                          | Número de teléfono principal del contacto.<br/>                                                            |
-| [System.Contact.Estadística](./props-system-contact-profession.md)<br/>                                      | La persona de contacto es la primera vez que se contacta.<br/>                                                                          |
-| [System.Contact.EstadistaNombre](./props-system-contact-spousename.md)<br/>                                      | Nombre del apellido del contacto.<br/>                                                                      |
+| [System.Contact.Sesos](./props-system-contact-profession.md)<br/>                                      | Se ha quedado con el contacto.<br/>                                                                          |
+| [System.Contact.ElnombreDeMeseso](./props-system-contact-spousename.md)<br/>                                      | Nombre de la pareja del contacto.<br/>                                                                      |
 | [System.Contact.Suffix](./props-system-contact-suffix.md)<br/>                                              | Sufijo asociado al nombre del contacto.<br/>                                                              |
 | [System.Contact.TelexNumber](./props-system-contact-telexnumber.md)<br/>                                    | Número telex del contacto<br/>                                                                         |
-| [System.Contact.TTYTDDTelephone](./props-system-contact-ttytddtelephone.md)<br/>                            | Teletipo o número de dispositivo de telecomunicaciones del contacto.<br/>                                         |
+| [System.Contact.TTYTDDTelephone](./props-system-contact-ttytddtelephone.md)<br/>                            | Número de dispositivo de teletipo o telecomunicaciones del contacto.<br/>                                         |
 | [System.Contact.WebPage](./props-system-contact-webpage.md)<br/>                                            | Página web del contacto.<br/>                                                                             |
 | [System.Contact.Webpage2](props-system-contact-webpage2.md)<br/>                                                 |                                                                                                                |
 | [System.Contact.Webpage3](props-system-contact-webpage3.md)<br/>                                                 |                                                                                                                |

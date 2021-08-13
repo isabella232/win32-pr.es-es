@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaApi. JetOSSnapshotTruncateLogInstance (método)'
-title: Método VistaApi. JetOSSnapshotTruncateLogInstance (Microsoft. ISAM. esent. Interop. vista)
+description: Más información sobre el método VistaApi.JetOSSnapshotTruncateLogInstance
+title: Método VistaApi.JetOSSnapshotTruncateLogInstance (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'JetOSSnapshotTruncateLogInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.VistaApi.JetOSSnapshotTruncateLogInstance(Microsoft.Isam.Esent.Interop.JET_OSSNAPID,Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.Vista.SnapshotTruncateLogGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaapi.jetossnapshottruncateloginstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 75d694629585a730f5c1c7b9b08bb7b06e735cb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00a30d604aa57aeaff1d97ca8f92397d6919a769f9416eb504b2d22abe186f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471225"
 ---
-# <a name="vistaapijetossnapshottruncateloginstance-method"></a>VistaApi. JetOSSnapshotTruncateLogInstance, método
+# <a name="vistaapijetossnapshottruncateloginstance-method"></a>Método VistaApi.JetOSSnapshotTruncateLogInstance
 
 Trunca el registro de una instancia especificada durante una sesión de instantánea.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,34 +65,34 @@ public static void JetOSSnapshotTruncateLogInstance(
 #### <a name="parameters"></a>Parámetros
 
   - instantánea  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
-    Identificador de la instantánea.
+    Identificador de instantánea.
 
 <!-- end list -->
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia para la que se va a truncar el registro.
+    Instancia de para la que se trunca el registro.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. vista. SnapshotTruncateLogGrbit](./snapshottruncateloggrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.SnapshotTruncateLogGrbit](./snapshottruncateloggrbit-enumeration.md)  
     
     Opciones para esta llamada.
 
 ## <a name="remarks"></a>Observaciones
 
-Solo se debe llamar a esta función si la instantánea se creó con la opción [ContinueAfterThaw](./vistagrbits.continueafterthaw-field.md) . De lo contrario, la sesión de instantánea finaliza después de la llamada a [JetOSSnapshotThaw (JET_OSSNAPID, SnapshotThawGrbit)](./api.jetossnapshotthaw-method.md).
+Solo se debe llamar a esta función si la instantánea se creó con [la opción ContinueAfterThaw.](./vistagrbits.continueafterthaw-field.md) De lo contrario, la sesión de instantánea finaliza después de la llamada a [JetOSSnapshotThaw(JET_OSSNAPID, SnapshotThawGrbit).](./api.jetossnapshotthaw-method.md)
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaApi](./vistaapi-class.md)
+[VistaApi (clase)](./vistaapi-class.md)
 
 [Miembros de VistaApi](./vistaapi-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

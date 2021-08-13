@@ -1,23 +1,23 @@
 ---
-description: La acción RegisterTypeLibraries registra las bibliotecas de tipos con el sistema. Esta acción se aplica a cada archivo al que se hace referencia en la tabla TypeLib que está programada para instalarse.
+description: La acción RegisterTypeLibraries registra bibliotecas de tipos con el sistema. Esta acción se aplica a cada archivo al que se hace referencia en la tabla TypeLib que está programada para su instalación.
 ms.assetid: 374450bb-316c-4fe6-abb1-cd8a8a31f284
 title: Acción RegisterTypeLibraries
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 469cc18fc2842a3258804fc012c48a49085f1598
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac42c831c8413f297d3df2302523a2372b11d1efcffe82ce0d3a82da722832cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626768"
 ---
 # <a name="registertypelibraries-action"></a>Acción RegisterTypeLibraries
 
-La acción RegisterTypeLibraries registra las bibliotecas de tipos con el sistema. Esta acción se aplica a cada archivo al que se hace referencia en la [tabla typelib](typelib-table.md) que está programada para instalarse.
+La acción RegisterTypeLibraries registra bibliotecas de tipos con el sistema. Esta acción se aplica a cada archivo al que se hace referencia en la [tabla TypeLib](typelib-table.md) que está programada para su instalación.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-La acción RegisterTypeLibraries debe aparecer después de la acción [InstallFiles](installfiles-action.md) .
+La acción RegisterTypeLibraries debe ir después de [la acción InstallFiles.](installfiles-action.md)
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
@@ -25,7 +25,7 @@ La acción RegisterTypeLibraries debe aparecer después de la acción [InstallFi
 
 | Campo | Descripción de los datos de acción                   |
 |-------|----------------------------------------------|
-| \[1\] | [GUID](guid.md) de la biblioteca de tipos registrados. |
+| \[1\] | [GUID de](guid.md) la biblioteca de tipos registrada. |
 
 
 
@@ -33,7 +33,7 @@ La acción RegisterTypeLibraries debe aparecer después de la acción [InstallFi
 
 ## <a name="remarks"></a>Observaciones
 
-La acción RegisterTypeLibraries requiere que el idioma de la biblioteca de tipos se cree correctamente en el campo Language de la tabla TypeLib. La creación incorrecta del campo de idioma puede hacer que el instalador no pueda registrar una biblioteca de tipos válida de otro modo.
+La acción RegisterTypeLibraries requiere que el lenguaje de biblioteca de tipos se cree correctamente en el campo Idioma de la tabla TypeLib. La creación incorrecta del campo Idioma puede hacer que el instalador no registre una biblioteca de tipos válida de otro modo.
 
  
 

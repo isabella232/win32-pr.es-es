@@ -1,24 +1,24 @@
 ---
-title: Código de ejemplo para mostrar los miembros de un grupo
+title: Código de ejemplo para mostrar miembros de un grupo
 description: En este tema se incluyen ejemplos de código que muestran los miembros de un grupo.
 ms.assetid: 0c066bf2-65ab-47fd-bf1e-0b3192d3b4c4
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, Mostrar miembros de un grupo
+- Active Directory ejemplos Active Directory , que muestran los miembros de un grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ef78c23c4a32b8a8ed36c98912f8cac24d5f375
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c0eb492b50a42cb400413d4cb1779c95e7da9d33fe828ee72be7d3b068f37f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104077516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693964"
 ---
-# <a name="example-code-for-displaying-members-of-a-group"></a>Código de ejemplo para mostrar los miembros de un grupo
+# <a name="example-code-for-displaying-members-of-a-group"></a>Código de ejemplo para mostrar miembros de un grupo
 
 En este tema se incluyen ejemplos de código que muestran los miembros de un grupo.
 
-En el ejemplo de código de C++ siguiente se usan las clases [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) y [**IADsMembers**](/windows/desktop/api/iads/nn-iads-iadsmembers) para mostrar los miembros de un grupo.
+En el siguiente ejemplo de código de C++ se usan las clases [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) [**e IADsMembers**](/windows/desktop/api/iads/nn-iads-iadsmembers) para mostrar los miembros de un grupo.
 
 
 ```C++
@@ -134,7 +134,7 @@ HRESULT PrintGroupObjectMembers(IADsGroup * pADsGroup)
 
 
 
-En el siguiente ejemplo de código Visual Basic se usa la clase [**IADs**](/windows/desktop/api/iads/nn-iads-iads) para mostrar los miembros del grupo.
+En el ejemplo Visual Basic código siguiente se usa [**la clase IADs**](/windows/desktop/api/iads/nn-iads-iads) para mostrar los miembros del grupo.
 
 
 ```VB
@@ -167,6 +167,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

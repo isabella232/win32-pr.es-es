@@ -4,15 +4,15 @@ description: En este tema se incluye un ejemplo de código que busca en el subá
 ms.assetid: 07b27324-4f59-42c2-a42f-8c2cef138928
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, buscar grupos en un dominio
+- Active Directory ejemplos Active Directory , buscar grupos en un dominio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59cb0e6d8e5aa6eb6a45d582b23fe0ee38f3d7dc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e15d2e0957032202e2080f85c71631daeddec70817ec09eb8432415aba47b3d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693344"
 ---
 # <a name="example-code-for-searching-for-groups-in-a-domain"></a>Código de ejemplo para buscar grupos en un dominio
 
@@ -115,7 +115,7 @@ HRESULT PrintGroupsInContainer(LPCWSTR pwszContainerDN, DWORD type)
 
 
 
-En el siguiente ejemplo de código Visual Basic se busca en el subárbol del contenedor especificado todos los objetos de grupo que tienen el tipo de grupo especificado.
+En el ejemplo Visual Basic código siguiente se busca en el subárbol del contenedor especificado todos los objetos de grupo que tienen el tipo de grupo especificado.
 
 
 ```VB
@@ -164,9 +164,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

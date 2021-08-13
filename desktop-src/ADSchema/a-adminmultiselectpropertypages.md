@@ -1,11 +1,11 @@
 ---
-title: Admin-MultiSelect-Property-Pages (atributo)
-description: Se trata de un atributo multivalor cuyos valores son un número que representa el orden en el que se agregan las páginas y un GUID de un objeto COM que implementa páginas de propiedades de selección múltiple para el complemento usuarios y equipos de AD.
+title: Atributo Admin-Multiselect-Property-Pages
+description: Se trata de un atributo de varios valores cuyos valores son un número que representa el orden en el que se agregan las páginas y un GUID de un objeto COM que implementa páginas de propiedades de selección múltiple para el complemento Usuarios y equipos de AD.
 ms.assetid: b2b4aafe-ac2d-44b3-80eb-910ba9852bb0
 ms.tgt_platform: multiple
 keywords:
-- Admin-MultiSelect-Property-pages atributo AD Schema
-- adminMultiselectPropertyPages esquema de AD de atributos
+- Esquema de AD del atributo Admin-Multiselect-Property-Pages
+- AdminMultiselectPropertyPages attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e653568d4f8f6653e4c7dc939c91a7d3cd8b83c6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6ed42d2383d194ca417a381da8ef0e849b4d4b6b93665fd7d360df2829f7e0d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688399"
 ---
-# <a name="admin-multiselect-property-pages-attribute"></a>Admin-MultiSelect-Property-Pages (atributo)
+# <a name="admin-multiselect-property-pages-attribute"></a>Atributo Admin-Multiselect-Property-Pages
 
-Se trata de un atributo multivalor cuyos valores son un número que representa el orden en el que se agregan las páginas y un GUID de un objeto COM que implementa páginas de propiedades de selección múltiple para el complemento usuarios y equipos de AD.
+Se trata de un atributo de varios valores cuyos valores son un número que representa el orden en el que se agregan las páginas y un GUID de un objeto COM que implementa páginas de propiedades de selección múltiple para el complemento Usuarios y equipos de AD.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| CN                | Admin-MultiSelect-Property-pages                                                                                                            |
-| Nombre para mostrar de LDAP | adminMultiselectPropertyPages                                                                                                               |
-| Tamaño              | 40 bytes                                                                                                                                    |
-| Actualizar privilegio  | Administrador de dominio                                                                                                                        |
-| Frecuencia de actualización  | Solo se actualizará si se ha instalado un servicio como Exchange o Terminal Server que implementa sus propias páginas de propiedades de selección múltiple. |
+| CN                | Admin-Multiselect-Property-Pages                                                                                                            |
+| Ldap-Display-Name | adminMultiselectPropertyPages                                                                                                               |
+| Size              | 40 bytes                                                                                                                                    |
+| Privilegio actualizar  | Administrador de dominio                                                                                                                        |
+| Frecuencia de actualización  | Esto solo se actualizará si se instala un servicio como Exchange o Terminal Server que implementa sus propias páginas de propiedades de selección múltiple. |
 | Attribute-Id      | 1.2.840.113556.1.4.1690                                                                                                                     |
-| System-ID-GUID    | 18f9b67d-5ac6-4b3b-97db-d0a406afb7ba                                                                                                        |
+| System-Id-Guid    | 18f9b67d-5ac6-4b3b-97db-d0a406afb7ba                                                                                                        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                                                                 |
 
 
@@ -54,13 +54,13 @@ Se trata de un atributo multivalor cuyos valores son un número que representa e
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -75,13 +75,13 @@ Se trata de un atributo multivalor cuyos valores son un número que representa e
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -96,13 +96,13 @@ Se trata de un atributo multivalor cuyos valores son un número que representa e
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -117,13 +117,13 @@ Se trata de un atributo multivalor cuyos valores son un número que representa e
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -138,13 +138,13 @@ Se trata de un atributo multivalor cuyos valores son un número que representa e
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

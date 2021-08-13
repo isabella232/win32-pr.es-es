@@ -1,25 +1,25 @@
 ---
-description: El establecimiento de la propiedad DISABLEMEDIA evita que el instalador registre cualquier origen multimedia, como un CD-ROM, como un origen válido para el producto. Sin embargo, si la exploración está habilitada, es posible que un usuario siga explorando un origen de medios.
+description: Establecer la propiedad DISABLEMEDIA impide que el instalador registre cualquier origen multimedia, como un CD-ROM, como origen válido para el producto. Sin embargo, si la exploración está habilitada, un usuario todavía puede ir a un origen multimedia.
 ms.assetid: 83c4e7f6-fced-447f-bfa2-847dce660139
-title: Propiedad DISABLEMEDIA
+title: DisableMEDIA, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffc1cad17269541fdb60573ae11065d485af9bda
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d56e6e50bdfe8a6ead05ad467caa355a7b6051715b65ec624e3cec6eea2affcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640460"
 ---
-# <a name="disablemedia-property"></a>Propiedad DISABLEMEDIA
+# <a name="disablemedia-property"></a>DisableMEDIA, propiedad
 
-El establecimiento de la propiedad [**DISABLEMEDIA**](disablemedia.md) evita que el instalador registre cualquier origen multimedia, como un CD-ROM, como un origen válido para el producto. Sin embargo, si la exploración está habilitada, es posible que un usuario siga explorando un origen de medios.
+Establecer la [**propiedad DISABLEMEDIA**](disablemedia.md) impide que el instalador registre cualquier origen multimedia, como un CD-ROM, como origen válido para el producto. Sin embargo, si la exploración está habilitada, un usuario todavía puede ir a un origen multimedia.
 
 ## <a name="remarks"></a>Observaciones
 
-Tenga en cuenta que la propiedad [**DISABLEMEDIA**](disablemedia.md) tiene un efecto diferente al establecimiento de la Directiva DISABLEMEDIA. La configuración de **DISABLEMEDIA** impide el registro de cualquier origen multimedia y esto también evita la primera instalación de una aplicación desde un origen de medios.
+Tenga en cuenta que [**la propiedad DISABLEMEDIA**](disablemedia.md) tiene un efecto diferente al de establecer la directiva DisableMedia. Si **se establece DISABLEMEDIA,** se evita el registro de cualquier origen multimedia, lo que también impide la primera instalación de una aplicación desde un origen multimedia.
 
-Para obtener más información acerca de cómo proteger los orígenes de medios de la [*aplicación administrada*](m-gly.md) frente a la exploración e instalación por parte de usuarios no administrativos, consulte [resistencia de origen](source-resiliency.md).
+Para obtener más información sobre [](m-gly.md) cómo proteger los orígenes multimedia de la aplicación administrada contra la exploración y la instalación por parte de usuarios no [administrativos,](source-resiliency.md)vea Resistencia de origen .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -27,7 +27,7 @@ Para obtener más información acerca de cómo proteger los orígenes de medios 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows installer.<br/> |
 
 
 

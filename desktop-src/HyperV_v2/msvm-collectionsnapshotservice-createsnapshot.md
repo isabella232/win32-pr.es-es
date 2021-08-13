@@ -1,7 +1,7 @@
 ---
-description: Crea una instantánea de una colección de sistemas virtuales.
+description: Crea una instantánea de una colección de sistema virtual.
 ms.assetid: 2512d82f-06b9-4613-b920-d3a9be884a75
-title: Método CreateSnapshot de la clase Msvm_CollectionSnapshotService
+title: Método CreateSnapshot de la Msvm_CollectionSnapshotService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 653dae65cc5fe50416b069da6a66e8c678c1b512
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 251213d0ff7a98d922a4dec761252479f911e66e2304596a97858fe0b7dc5fbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119426915"
 ---
-# <a name="createsnapshot-method-of-the-msvm_collectionsnapshotservice-class"></a>Método CreateSnapshot de la \_ clase CollectionSnapshotService de MSVM
+# <a name="createsnapshot-method-of-the-msvm_collectionsnapshotservice-class"></a>Método CreateSnapshot de la clase \_ CollectionSnapshotService de Msvm
 
-Crea una instantánea de una colección de sistemas virtuales.
+Crea una instantánea de una colección de sistema virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,21 +43,21 @@ uint32 CreateSnapshot(
 
 <dl> <dt>
 
-*Colección* \[ de de\]
+*Colección* \[ En\]
 </dt> <dd>
 
-Referencia a un [**\_ CollectionOfMSEs de CIM**](cim-collectionofmses.md) que describe la colección de sistemas virtuales afectada.
+Referencia a una [**colección \_ CIMOfMSE**](cim-collectionofmses.md) que describe la colección del sistema virtual afectada.
 
 </dd> <dt>
 
-*SnapshotSettings* \[ de\]
+*SnapshotSettings* \[ En\]
 </dt> <dd>
 
-Contiene la configuración del parámetro.
+Contiene la configuración de parámetros.
 
 </dd> <dt>
 
-*SnapshotType* \[ de\]
+*SnapshotType* \[ En\]
 </dt> <dd>
 
 Tipo de instantánea solicitada:
@@ -102,7 +102,7 @@ Instantánea para escenarios de recuperación, incluida la replicación de conmu
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Específico del proveedor** (32768... 65535)
+<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Específico del** proveedor (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -114,10 +114,10 @@ Si se ejecuta correctamente, devuelve una referencia de [**\_ colección CIM**](
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia opcional que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta a una instancia de [**CIM \_ ConcreteJob**](cim-concretejob.md) se puede usar para supervisar el progreso y obtener el resultado del método.
+Referencia opcional que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta a una instancia de [**\_ CIM ConcreteJob**](cim-concretejob.md) se puede usar para supervisar el progreso y obtener el resultado del método .
 
 </dd> </dl>
 
@@ -136,7 +136,7 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -145,7 +145,7 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 **Estado no válido** (5)
 </dt> <dt>
 
-**Tipo no válido** (6)
+**Tipo no** válido (6)
 </dt> <dt>
 
 **DMTF reservado** (..)
@@ -154,10 +154,10 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -166,10 +166,10 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -178,7 +178,7 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 
 <dl> <dt>
 
-[**MSVM \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md)
+[**Msvm \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Proporciona acceso al contexto de seguridad de la llamada actual, que contiene información sobre los llamadores de un objeto.
 ms.assetid: e8ac05fb-6665-4e57-b64e-82d9799d29d4
-title: SecurityCallContext (clase) (ComSvcs. h)
+title: Clase SecurityCallContext (ComSvcs.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,22 +11,22 @@ api_name:
 - SecurityCallContext
 api_type:
 - COM
-ms.openlocfilehash: bd15b7e0317a507a2340cc148bb927bb5d94a37b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: f0efa73ef704d77cc68b5a1193ccdc3de71b1ed0a5b8c730a2ea67474600bf5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105717433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118546269"
 ---
-# <a name="securitycallcontext-class"></a>SecurityCallContext (clase)
+# <a name="securitycallcontext-class"></a>Clase SecurityCallContext
 
-Proporciona acceso al contexto de seguridad de la llamada actual, que contiene información sobre los llamadores de un objeto. Con esta clase, también puede averiguar si el llamador directo de un objeto es miembro de un rol determinado y si la seguridad está habilitada para el objeto.
+Proporciona acceso al contexto de seguridad de la llamada actual, que contiene información sobre los llamadores de un objeto. Con esta clase, también puede averiguar si el autor de la llamada directo de un objeto es miembro de un rol determinado y si la seguridad está habilitada para el objeto.
 
-Solo las aplicaciones COM+ que utilizan la seguridad basada en roles pueden tener acceso a la clase **SecurityCallContext** . Para obtener más información sobre los roles, consulte [Administración de la seguridad basada en roles](role-based-security-administration.md).
+Solo las aplicaciones COM+ que usan la seguridad basada en roles pueden acceder a **la clase SecurityCallContext.** Para obtener más información sobre los roles, vea [Administración de seguridad basada en roles.](role-based-security-administration.md)
 
 ## <a name="when-to-implement"></a>Cuándo implementar
 
-Esta clase se implementa mediante COM+.
+ESTA clase se implementa mediante COM+.
 
 
 
@@ -40,13 +40,13 @@ Esta clase se implementa mediante COM+.
 
 ## <a name="when-to-use"></a>Cuándo se usa
 
-Utilice esta clase para tener acceso a los métodos de [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext).
+Use esta clase para tener acceso a los métodos [**de ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext).
 
 ## <a name="remarks"></a>Observaciones
 
-No se puede crear directamente un objeto **SecurityCallContext** . Para utilizar los métodos de [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext), debe obtener una referencia a su implementación llamando a [**COGETCALLCONTEXT**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetcallcontext), proporcionando IID \_ ISecurityCallContext para el parámetro *riid* .
+No se puede crear directamente un **objeto SecurityCallContext.** Para usar los métodos de [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext), debe obtener una referencia a su implementación mediante una llamada a [**CoGetCallContext**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetcallcontext), que proporciona IID ISecurityCallContext para el \_ parámetro *riid.*
 
-Para usar esta clase desde Microsoft Visual Basic, agregue una referencia a la biblioteca de tipos de servicios COM+. Un objeto SecurityCallContext puede declararse con "COMSVCSLib. SecurityCallContext" como nombre de clase; se crea llamando a [**GetSecurityCallContext**](/windows/desktop/api/ComSvcs/nf-comsvcs-igetsecuritycallcontext-getsecuritycallcontext).
+Para usar esta clase de Microsoft Visual Basic, agregue una referencia a la biblioteca de tipos de servicios COM+. Un objeto SecurityCallContext se puede declarar mediante "COMSVCSLib.SecurityCallContext" como nombre de clase; se crea mediante una llamada [**a GetSecurityCallContext.**](/windows/desktop/api/ComSvcs/nf-comsvcs-igetsecuritycallcontext-getsecuritycallcontext)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Para usar esta clase desde Microsoft Visual Basic, agregue una referencia a la b
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>ComSvcs. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>ComSvcs.h</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Para usar esta clase desde Microsoft Visual Basic, agregue una referencia a la b
 [Seguridad de componentes mediante programación](programmatic-component-security.md)
 </dt> <dt>
 
-[Administración de la seguridad basada en roles](role-based-security-administration.md)
+[Administración de seguridad basada en roles](role-based-security-administration.md)
 </dt> <dt>
 
 [**SecurityCallers**](securitycallers.md)

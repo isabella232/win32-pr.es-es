@@ -1,26 +1,26 @@
 ---
-title: Propiedad HotKeyAltEsc de IMsRdpClientAdvancedSettings
-description: Especifica el código de tecla virtual que se va a agregar a ALT para determinar el reemplazo de la tecla de cambio para ALT + ESC.
+title: Propiedad IMsRdpClientAdvancedSettings HotKeyAltEsc
+description: Especifica el código de clave virtual que se agregará a ALT para determinar el reemplazo de la tecla de acceso rápido para ALT+ESC.
 ms.assetid: 17cae4ca-8e97-4713-bb4e-ac9a9876c16c
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad HotKeyAltEsc
-- Propiedad HotKeyAltEsc Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad HotKeyAltEsc
-- Propiedad HotKeyAltEsc Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad HotKeyAltEsc
-- Propiedad HotKeyAltEsc Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad HotKeyAltEsc
-- Propiedad HotKeyAltEsc Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad HotKeyAltEsc
-- Propiedad HotKeyAltEsc Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad HotKeyAltEsc
-- Propiedad HotKeyAltEsc Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad HotKeyAltEsc
-- Propiedad HotKeyAltEsc Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad HotKeyAltEsc
-- Propiedad HotKeyAltEsc Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad HotKeyAltEsc
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad HotKeyAltEsc
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad HotKeyAltEsc
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad HotKeyAltEsc
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad HotKeyAltEsc
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad HotKeyAltEsc
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad HotKeyAltEsc
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad HotKeyAltEsc
+- Propiedad HotKeyAltEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad HotKeyAltEsc
 topic_type:
 - apiref
 api_name:
@@ -54,18 +54,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b661a91a0204177525063629825c478b40b4c29e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8757a2c8ba35ad2ba3080f340126fd689704769682a72389806eb905ecbf9aae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475465"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyaltesc-property"></a>IMsRdpClientAdvancedSettings:: HotKeyAltEsc (propiedad)
+# <a name="imsrdpclientadvancedsettingshotkeyaltesc-property"></a>Propiedad IMsRdpClientAdvancedSettings::HotKeyAltEsc
 
-Especifica el código de tecla virtual que se va a agregar a ALT para determinar el reemplazo de la tecla de cambio para ALT + ESC.
+Especifica el código de clave virtual que se agregará a ALT para determinar el reemplazo de la tecla de acceso rápido para ALT+ESC.
 
-Esta propiedad solo es válida cuando la propiedad [**KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) no está habilitada.
+Esta propiedad solo es válida cuando la [**propiedad KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) no está habilitada.
 
 Esta propiedad es de lectura y escritura.
 
@@ -86,15 +86,15 @@ HRESULT get_HotKeyAltEsc(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo código de tecla virtual. **VK \_ INSERT** es el valor predeterminado, con Alt + Insert como la secuencia resultante.
+Nuevo código de clave virtual. **VK \_ INSERT** es el valor predeterminado, con ALT+INSERT como secuencia resultante.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,11 +1,11 @@
 ---
-title: IWMPDVD (método posterior)
-description: El método atrás cambia la presentación de un submenú a su menú primario.
+title: Método back IWMPDVD
+description: El método back cambia la presentación de un submenú a su menú primario.
 ms.assetid: 81d033d4-f570-44a5-898a-e419101c04fa
 keywords:
-- Back (método) Windows Media Player
-- Back (método) Windows Media Player, interfaz IWMPDVD
-- Interfaz IWMPDVD Windows Media Player, método back
+- método back Reproductor de Windows Media
+- Método back Reproductor de Windows Media , interfaz IWMPDVD
+- Interfaz IWMPDVD Reproductor de Windows Media método , back
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cd31cd6365843a6905760c4447ea679e15e70ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 483e8e36f8ac5e539925306a53c04d144fb6de1281878840fc598c96c814f002
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414565"
 ---
-# <a name="iwmpdvdback-method"></a>IWMPDVD:: Back (método)
+# <a name="iwmpdvdback-method"></a>IWMPDVD::back (método)
 
-El método **atrás** cambia la presentación de un submenú a su menú primario.
+El **método back** cambia la presentación de un submenú a su menú primario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Cada DVD se crea de forma diferente. Algunos DVDs se crean para que el `back` método esté disponible en el menú raíz, pero cuando se invoca, no hará nada.
+Cada DVD se ha escrito de forma diferente. Algunos DVD se crearon para que el método esté disponible en el menú raíz, pero cuando se invoque, `back` no hará nada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Cada DVD se crea de forma diferente. Algunos DVDs se crean para que el `back` m�
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

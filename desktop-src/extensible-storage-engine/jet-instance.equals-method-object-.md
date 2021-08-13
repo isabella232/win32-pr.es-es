@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_INSTANCE. Equals (método, Object)'
-title: JET_INSTANCE. Equals (método, Object)
+description: 'Más información sobre: JET_INSTANCE. Método Equals (Object)'
+title: JET_INSTANCE. Método Equals (Object)
 TOCTitle: Equals method (Object)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_INSTANCE.Equals(System.Object)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b13393b487abb4de65360f5199ae1123d3f076e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 490e5763aa1754387db67fcd52b6b2a5383affa5d061905b26bafb52acd35716
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765669"
 ---
-# <a name="jet_instanceequals-method-object"></a>JET_INSTANCE. Equals (método, Object)
+# <a name="jet_instanceequals-method-object"></a>JET_INSTANCE. Método Equals (Object)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Objeto que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_INSTANCE](./jet-instance-structure.md)
+[JET_INSTANCE estructura](./jet-instance-structure.md)
 
-[Miembros de JET_INSTANCE](./jet-instance-members.md)
+[JET_INSTANCE miembros](./jet-instance-members.md)
 
-[Equals (sobrecarga)](./jet-instance.equals-method.md)
+[Sobrecarga igual a](./jet-instance.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

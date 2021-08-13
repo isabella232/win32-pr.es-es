@@ -1,7 +1,7 @@
 ---
-description: Contiene la respuesta a una consulta de D3DAUTHENTICATEDQUERY \_ RESTRICTEDSHAREDRESOURCEPROCESS.
+description: Contiene la respuesta a una consulta D3DAUTHENTICATEDQUERY \_ RESTRICTEDSHAREDRESOURCEPROCESS.
 ms.assetid: 763c56b5-b240-4bad-b601-07959ed37479
-title: D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_OUTPUT estructura (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_OUTPUT estructura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: bd93e1cadb7da500a82218924044af79fbb1f493
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8a9f3f916dff486be01584d98bef59aa3bda4851d41e2b03f8f86819be28ec6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742921"
 ---
-# <a name="d3dauthenticatedchannel_queryrestrictedsharedresourceprocess_output-structure"></a>Estructura de salida de D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_
+# <a name="d3dauthenticatedchannel_queryrestrictedsharedresourceprocess_output-structure"></a>D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_ OUTPUT structure
 
-Contiene la respuesta a una consulta de [**D3DAUTHENTICATEDQUERY \_ RESTRICTEDSHAREDRESOURCEPROCESS**](d3dauthenticatedquery-restrictedsharedresourceprocess.md) .
+Contiene la respuesta a una [**consulta D3DAUTHENTICATEDQUERY \_ RESTRICTEDSHAREDRESOURCEPROCESS.**](d3dauthenticatedquery-restrictedsharedresourceprocess.md)
 
-Para enviar esta consulta, llame a [**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
+Para enviar esta consulta, llame a [**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_OUT
 **Salida**
 </dt> <dd>
 
-Una estructura de [**\_ \_ salida de consulta de D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-query-output.md) que contiene un código de autentificación de mensajes (Mac) (Mac) y otros datos.
+Estructura [**D3DAUTHENTICATEDCHANNEL \_ QUERY \_ OUTPUT**](d3dauthenticatedchannel-query-output.md) que contiene un código de autenticación de mensajes (MAC) y otros datos.
 
 </dd> <dt>
 
@@ -61,20 +61,20 @@ Una estructura de [**\_ \_ salida de consulta de D3DAUTHENTICATEDCHANNEL**](d3da
 **ProcessIdentifer**
 </dt> <dd>
 
-Un valor de [**D3DAUTHENTICATEDCHANNEL \_ PROCESSIDENTIFIERTYPE**](d3dauthenticatedchannel-processidentifiertype.md) que especifica el tipo de proceso.
+Valor [**\_ PROCESSIDENTIFIERTYPE de D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-processidentifiertype.md) que especifica el tipo de proceso.
 
 </dd> <dt>
 
 **ProcessHandle**
 </dt> <dd>
 
-Identificador de proceso. Si el miembro **ProcessIdentifier** es igual que el **\_ identificador PROCESSIDTYPE**, el miembro **ProcessHandle** contiene un identificador válido para un proceso. De lo contrario, se omite este miembro.
+Un identificador de proceso. Si el **miembro ProcessIdentifier** es igual a **PROCESSIDTYPE \_ HANDLE**, el **miembro ProcessHandle** contiene un identificador válido para un proceso. De lo contrario, se omite este miembro.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El proceso Administrador de ventanas de escritorio (DWM) se identifica estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ DWM**. Otros procesos se identifican estableciendo el identificador de proceso en **ProcessHandle** y estableciendo el valor de **ProcessIdentifier** en **PROCESSIDTYPE \_**.
+El Administrador de ventanas de escritorio de Administrador de ventanas de escritorio (DWM) se identifica estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ DWM.** Otros procesos se identifican estableciendo el identificador de proceso **en ProcessHandle** y estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ HANDLE**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,9 +82,9 @@ El proceso Administrador de ventanas de escritorio (DWM) se identifica estableci
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
+| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ El proceso Administrador de ventanas de escritorio (DWM) se identifica estableci
 [Estructuras de vídeo de Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

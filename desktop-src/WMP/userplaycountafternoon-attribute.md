@@ -1,9 +1,9 @@
 ---
 title: Atributo UserPlaycountAfternoon
-description: El atributo UserPlaycountAfternoon es el número de veces que se ha reproducido el elemento entre la hora local 12 00 y 17 00.
+description: El atributo UserPlaycountAfternoon es el número de veces que el elemento se ha reproducido entre las 12 00 y las 17 00 hora local.
 ms.assetid: d02ac67b-6962-452d-9046-491b452447b0
 keywords:
-- UserPlaycountAfternoon Media Player de Windows
+- Atributo UserPlaycountAfternoon Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,29 +12,29 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52ce581dc5f4f9c3142c069aca62f3e970d18add
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 329feb503f59fd60a95e2da79023f93677ef2b9643c05dfb0a42b9533a29b2e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466285"
 ---
 # <a name="userplaycountafternoon-attribute"></a>Atributo UserPlaycountAfternoon
 
-El atributo **UserPlaycountAfternoon** es el número de veces que se ha reproducido el elemento entre la hora local 12:00 y 17:00.
+El **atributo UserPlaycountAfternoon** es el número de veces que el elemento se ha reproducido entre las 12:00 y las 17:00 hora local.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Otros elementos](other-item-attributes.md)
--   [Reproducción](playlist-attributes-ref.md)
+-   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
 ## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,7 +42,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: métodos EsentIndexTuplesNonUniqueOnlyException'
+description: 'Más información sobre: Métodos de EsentIndexTuplesNonUniqueOnlyException'
 title: 'Métodos de EsentIndexTuplesNonUniqueOnlyException '
 TOCTitle: EsentIndexTuplesNonUniqueOnlyException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentIndexTuplesNonUniqueOnlyException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101789
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 91abd0cbca755578d6dfc6be60adb5b0ed6b572e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85a20d407e70013a06ac372fbae45492633b7617965f402bbca07224f7f65e43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104561063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118495178"
 ---
 # <a name="esentindextuplesnonuniqueonlyexception-methods"></a>Métodos de EsentIndexTuplesNonUniqueOnlyException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonlyexception-class.md) expone los siguientes miembros.
+El [tipo EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonlyexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -39,13 +39,13 @@ El tipo [EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonly
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -55,12 +55,12 @@ El tipo [EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonly
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Cuando se reemplaza en una clase derivada, establece <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con información sobre la excepción. (Se hereda de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>).</td>
+<td>Cuando se invalida en una clase derivada, establece <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con información sobre la excepción. (Se hereda de <a href="dn274314(v=exchg.10).md">EsentErrorException).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
@@ -70,7 +70,7 @@ El tipo [EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonly
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ Superior
 
 [Clase EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonlyexception-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

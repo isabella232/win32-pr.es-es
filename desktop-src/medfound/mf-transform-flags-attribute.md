@@ -1,35 +1,35 @@
 ---
-description: Contiene marcas para un objeto de activación de transformación de Media Foundation (MFT).
+description: Contiene marcas para un objeto Media Foundation transformación de transformación (MFT).
 ms.assetid: de377132-19b0-4c8c-882e-193c31420739
-title: MF_TRANSFORM_FLAGS_Attribute atributo (Mftransform. h)
+title: MF_TRANSFORM_FLAGS_Attribute atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2f3e334b83bbe8ce50f8770eb33e1e7a4c799c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d54d8775cb58980e0b5b4a8557ae4a3e8082b045eb3e87330841f75dfd057774
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739233"
 ---
-# <a name="mf_transform_flags_attribute-attribute"></a>MF \_ Transform \_ \_ attributes atributo Attribute
+# <a name="mf_transform_flags_attribute-attribute"></a>Atributo MF \_ TRANSFORM \_ FLAGS \_
 
-Contiene marcas para un objeto de activación de transformación de Media Foundation (MFT).
+Contiene marcas para un objeto Media Foundation transformación de transformación (MFT).
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-El valor es **una operación OR** bit a bit de marcas de la enumeración de la [**\_ \_ \_ marca de enumeración MFT**](/windows/win32/api/mfapi/ne-mfapi-_mft_enum_flag) .
+El valor es un OR bit **a** bit de marcas de la [**\_ enumeración \_ MFT ENUM \_ FLAG.**](/windows/win32/api/mfapi/ne-mfapi-_mft_enum_flag)
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se establece en los punteros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) devueltos por la función [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) . El atributo contiene marcas que describen la MFT.
+Este atributo se establece en los punteros [**DE LAACTIVATE**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) devueltos por la [**función MFTEnumEx.**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) El atributo contiene marcas que describen el MFT.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Este atributo se establece en los punteros [**IMFActivate**](/windows/desktop/ap
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                        |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -47,10 +47,10 @@ Este atributo se establece en los punteros [**IMFActivate**](/windows/desktop/ap
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de transformación](transform-attributes.md)
+[Transformar atributos](transform-attributes.md)
 </dt> </dl>
 
  

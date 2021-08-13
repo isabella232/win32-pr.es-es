@@ -3,7 +3,7 @@ title: Elemento DropDownButton
 description: Representa un control button Drop-Down estándar.
 ms.assetid: 41031be2-43bc-4f75-b37a-1dcecc1635e1
 keywords:
-- Elemento DropDownButton de la cinta de opciones de Windows
+- DropDownButton, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a42b8ffb6d39c1da8993972c0b25995f778bdaca
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 3275e6de398c42d29424b2a1f9b0c750989357ef21c10d5db1e1680e7adb0836
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118707273"
 ---
 # <a name="dropdownbutton-element"></a>Elemento DropDownButton
 
@@ -49,7 +49,7 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -58,7 +58,7 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Válido solo si <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> es el elemento primario.<br/> <br/>
+<td>Solo es válido <a href="windowsribbon-element-menugroup.md"><strong>si MenuGroup</strong></a> es el elemento primario.<br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena que contiene una lista separada por comas de enteros entre 0 y 31.<br/> El espacio en blanco es válido y se omite.<br/> Longitud máxima: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
@@ -79,7 +79,7 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 
 | Elemento                                                                             | Descripción                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Button**](windowsribbon-element-button.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
+| [**Botón**](windowsribbon-element-button.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
 | [**Casilla**](windowsribbon-element-checkbox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
 | **DropDownButton**<br/>                                                       | Puede producirse una o varias veces<br/> <br/> |
@@ -108,21 +108,21 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Opcional o obligatorio, en función del elemento primario.
+Opcional o obligatorio, según el elemento primario.
 
-Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), **DropDownButton,** [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup,**](windowsribbon-element-menugroup.md) [**SplitButton**](windowsribbon-element-splitbutton.md) [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), **DropDownButton**, [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup,**](windowsribbon-element-menugroup.md) [**SplitButton**](windowsribbon-element-splitbutton.md) [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-**DropDownButton admite** [los modos de](ribbon-applicationmodes.md) aplicación cuando se hospeda en la columna izquierda del menú aplicación.
+**DropDownButton admite** [modos de aplicación](ribbon-applicationmodes.md) cuando se hospeda en la columna izquierda del menú de la aplicación.
 
-[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) y [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) no son elementos secundarios válidos de **DropDownButton** cuando **DropDownButton** es un descendiente de [**ApplicationMenu**](windowsribbon-element-applicationmenu.md).
+[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) y [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) no son elementos secundarios válidos de **DropDownButton** cuando **DropDownButton** es un descendiente de [**ApplicationMenu.**](windowsribbon-element-applicationmenu.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para **DropDownButton**.
+En el ejemplo siguiente se muestra el marcado básico para **DropDownButton.**
 
-En esta sección de código se muestran las [](windowsribbon-element-group.md) declaraciones del comando **DropDownButton,** con un grupo asociado que funciona como contenedor primario para el **elemento DropDownButton.**
+En esta sección de código se muestran las declaraciones de **DropDownButton** Command, con un [**grupo**](windowsribbon-element-group.md) asociado que funciona como contenedor primario para el **elemento DropDownButton.**
 
 
 ```XML
@@ -174,7 +174,7 @@ En esta sección de código se muestran las declaraciones de control **DropDownB
 
 <dl> <dt>
 
-[Control De botón desplegable](windowsribbon-controls-dropdownbutton.md)
+[Control Botón de lista desplegable](windowsribbon-controls-dropdownbutton.md)
 </dt> <dt>
 
 [**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)

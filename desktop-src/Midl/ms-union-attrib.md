@@ -1,9 +1,9 @@
 ---
 title: ms_union (atributo)
-description: La palabra clave \ MS \_ Union \ se utiliza para controlar la alineación del NDR de las uniones no encapsuladas.
+description: La palabra clave \ms union\ se usa para controlar la alineación de API de las uniones \_ nocapsuladas.
 ms.assetid: 20ac2985-4552-4224-b03b-07378a2c0cdf
 keywords:
-- ms_union el atributo MIDL
+- ms_union atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7ad9b750027163aef806f5a66e51f87874a0ad2
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 860054fe26657c4028c172da08e0c56dbf6ae257ffc98e79905f8420b54e6878
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642803"
 ---
-# <a name="ms_union-attribute"></a>atributo de unión de MS \_
+# <a name="ms_union-attribute"></a>Atributo \_ de unión ms
 
-La palabra clave \[ **MS \_ Union** \] se utiliza para controlar la alineación del NDR de las uniones no encapsuladas.
+La palabra \[ **clave ms \_ union** se usa para controlar la alineación API de las uniones \] nocapsuladas.
 
 ``` syntax
 [
@@ -40,28 +40,28 @@ interface interface-name
 
 <dl> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Especifica el nombre de la interfaz.
 
 </dd> <dt>
 
-*tipo de procedimiento* 
+*procedure-type* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto del procedimiento al que se aplica el atributo.
 
 </dd> <dt>
 
-*procedimiento: nombre* 
+*procedure-name* 
 </dt> <dd>
 
 Especifica el nombre del procedimiento.
 
 </dd> <dt>
 
-*lista de parámetros* 
+*param-list* 
 </dt> <dd>
 
 Especifica la lista de parámetros del procedimiento, que puede estar vacía.
@@ -70,9 +70,9 @@ Especifica la lista de parámetros del procedimiento, que puede estar vacía.
 
 ## <a name="remarks"></a>Observaciones
 
-No utilice nunca este modificador o atributo con nuevas interfaces. Esta es solo una característica de compatibilidad con versiones anteriores. El compilador MIDL en esta versión de Microsoft RPC refleja el comportamiento del compilador de OSF DCE IDL para uniones no encapsuladas. Sin embargo, dado que las versiones anteriores del compilador de MIDL no lo hacían, el modificador [**/MS \_ Union**](-ms-union.md) proporciona compatibilidad con las interfaces creadas en versiones anteriores del compilador de MIDL.
+Nunca use este modificador o atributo con nuevas interfaces. Se trata solo de una característica de compatibilidad con versiones anteriores. El compilador MIDL de esta versión de RPC de Microsoft refleja el comportamiento del compilador IDL de DCE de OSF para las uniones no superadas. Sin embargo, dado que las versiones anteriores del compilador MIDL no lo hacían, el modificador de unión [**/ms \_**](-ms-union.md) proporciona compatibilidad con interfaces creadas en versiones anteriores del compilador MIDL.
 
-La característica **MS \_ Union** se puede usar como un atributo de interfaz IDL, un atributo de tipo IDL o como un modificador de la línea de comandos ( [**/MS \_ Union**](-ms-union.md)).
+La **característica de \_ unión ms** se puede usar como un atributo de interfaz IDL, un atributo de tipo IDL o como un modificador de línea de comandos ( [**/ms \_ union**](-ms-union.md)).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -87,12 +87,12 @@ La característica **MS \_ Union** se puede usar como un atributo de interfaz ID
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**\_Unión/MS**](-ms-union.md)
+[**/ms \_ union**](-ms-union.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Phonetic-First-Name
-description: Contiene el nombre fonético especificado o el nombre de la persona.
+title: Atributo ms-DS-Phonetic-First-Name
+description: Contiene el nombre fonético o el nombre de la persona.
 ms.assetid: a1338295-4545-4146-9dfe-8e45d5f9fdf4
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Phonetic-First-Name
-- Esquema de AD de atributo msDS-PhoneticFirstName
+- ms-DS-Phonetic-First-Name attribute AD Schema
+- Esquema de AD del atributo msDS-PhoneticFirstName
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65021c32aa2fef11102c4686b278b67bd0341254
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e6e2d7829609617ca507873a0b9bb9958cee017db7372b699657055b97e616ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683398"
 ---
-# <a name="ms-ds-phonetic-first-name-attribute"></a>atributo MS-DS-Phonetic-First-Name
+# <a name="ms-ds-phonetic-first-name-attribute"></a>Atributo ms-DS-Phonetic-First-Name
 
-Contiene el nombre fonético especificado o el nombre de la persona.
+Contiene el nombre fonético o el nombre de la persona.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-fonética-First-Name                   |
-| Nombre para mostrar de LDAP | msDS-PhoneticFirstName                      |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Phonetic-First-Name                   |
+| Ldap-Display-Name | msDS-PhoneticFirstName                      |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1942                     |
-| System-ID-GUID    | 4b1cba4e-302F-4134-ac7c-f01f6c797843        |
+| System-Id-Guid    | 4b1cba4e-302f-4134-ac7c-f01f6c797843        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -52,13 +52,13 @@ Contiene el nombre fonético especificado o el nombre de la persona.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
+| Es de un solo valor       | True                                                               |
 | Está indexado             | True                                                               |
 | En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
@@ -73,13 +73,13 @@ Contiene el nombre fonético especificado o el nombre de la persona.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
+| Es de un solo valor       | True                                                               |
 | Está indexado             | True                                                               |
 | En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
@@ -94,13 +94,13 @@ Contiene el nombre fonético especificado o el nombre de la persona.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
+| Es de un solo valor       | True                                                               |
 | Está indexado             | True                                                               |
 | En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |

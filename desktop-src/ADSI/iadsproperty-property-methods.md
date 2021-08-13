@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsProperty (iAds. h)
+title: Métodos de propiedad IADsProperty (Iads.h)
 description: Lea y escriba las propiedades descritas en la tabla siguiente.
 ms.assetid: dd348a3c-0386-4fa2-984d-cdea6f09bd72
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsProperty ADSI
+- AdsI de métodos de propiedad IADsProperty
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 233bd5411e1c82956ef745255418a1b176af5900
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bc0e15589b54fc6ca568a385e1a3806d5f0be206eedb6c263546bbd24e81274
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691064"
 ---
 # <a name="iadsproperty-property-methods"></a>Métodos de propiedad IADsProperty
 
-Los métodos de propiedad de la interfaz [**IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty) leen y escriben las propiedades descritas en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty) leen y escriben las propiedades descritas en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -52,10 +52,10 @@ Límite superior de valores.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -80,10 +80,10 @@ Límite inferior de valores.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -101,17 +101,17 @@ HRESULT put_MinRange(
 
 </dt> </dl> </dd> <dt>
 
-**Varios valores**
+**Multivalor**
 </dt> <dd> <dl>
 
-Indica si la propiedad admite uno o varios valores.
+Si la propiedad admite uno o varios valores.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante \_ bool**
+Tipo de datos de scripting: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -129,14 +129,14 @@ HRESULT put_MultiValued(
 
 </dt> </dl> </dd> <dt>
 
-**OID**
+**Oid**
 </dt> <dd> <dl>
 
 Identificador de objeto específico del directorio.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -164,7 +164,7 @@ Ruta de acceso relativa del objeto de sintaxis.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -189,7 +189,7 @@ HRESULT put_Syntax(
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se examina el atributo **OperatingSystem** de un equipo en una red a través del proveedor de Winnt.
+En el ejemplo de código siguiente se examina el **atributo OperatingSystem** de un equipo en una red a través del proveedor WinNT.
 
 
 ```VB
@@ -223,7 +223,7 @@ Cleanup:
 
 
 
-En el ejemplo de código siguiente se examina el atributo **OperatingSystem** de un equipo en una red a través del proveedor de Winnt. Por motivos de brevedad, se omite la comprobación de errores.
+En el ejemplo de código siguiente se examina el **atributo OperatingSystem** de un equipo en una red a través del proveedor WinNT. Por brevedad, se omite la comprobación de errores.
 
 
 ```C++
@@ -315,9 +315,9 @@ CoUninitialize();
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsProperty se define como C8F93DD3-4AE0-11cf-9E73-00AA004A5691<br/>         |
+| IID<br/>                      | IID IADsProperty se define como \_ C8F93DD3-4AE0-11CF-9E73-00AA004A5691<br/>         |
 
 
 

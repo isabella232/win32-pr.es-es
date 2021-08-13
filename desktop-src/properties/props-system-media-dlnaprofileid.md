@@ -1,19 +1,19 @@
 ---
-description: El identificador de perfil DLNA para contenido multimedia, definido por los estándares DLNA.
+description: El identificador de perfil de DLNA para el contenido multimedia, definido por los estándares DLNA.
 ms.assetid: ADE2E3CB-AAAC-4208-BB75-72AFF1D24C26
-title: System. Media. DlnaProfileID
+title: System.Media.DlnaProfileID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ffffd55031c1b5c6c8349dc121f13f13acfb856
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: cf74a968f93fe2d27de556e032be264089411ddd86b847f5b58714bc2c061579
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105721333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118725277"
 ---
-# <a name="systemmediadlnaprofileid"></a>System. Media. DlnaProfileID
+# <a name="systemmediadlnaprofileid"></a>System.Media.DlnaProfileID
 
-El identificador de perfil DLNA para contenido multimedia, definido por los estándares DLNA.
+El identificador de perfil de DLNA para el contenido multimedia, definido por los estándares DLNA.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

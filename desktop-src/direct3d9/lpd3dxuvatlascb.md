@@ -1,17 +1,17 @@
 ---
 description: Función de devolución de llamada para UVAtlas.
 ms.assetid: a605ae27-10c9-49b4-98fe-8c788c2c0752
-title: LPD3D LPVATLASCB
+title: LPD3DVATLASCB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfe073b5e6a798ccb74421d42502b089d59be11f
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: d4473134d7ecf98c50d0c3a69085e7f46344d1d57ff2650c1adbc54c43dba266
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119458724"
 ---
-# <a name="lpd3dxuvatlascb"></a>LPD3D LPVATLASCB
+# <a name="lpd3dxuvatlascb"></a>LPD3DVATLASCB
 
 Función de devolución de llamada para UVAtlas.
 
@@ -37,9 +37,9 @@ typedef HRESULT (*LPD3DXUVATLASCB (
 
 Esta función debe implementarse para devolver S \_ OK para seguir ejecutando el simulador. Cualquier otro valor detendrá el simulador.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Asegúrese de especificar la convención de llamada tipos de datos de [**Windows**](../winprog/windows-data-types.md) al declarar la función de devolución de llamada. De lo contrario, pueden producirse desbordamientos de pila.
+Asegúrese de especificar la convención de llamada [**Windows tipos**](../winprog/windows-data-types.md) de datos al declarar la función de devolución de llamada. De lo contrario, pueden producirse desbordamientos de pila.
 
 
 

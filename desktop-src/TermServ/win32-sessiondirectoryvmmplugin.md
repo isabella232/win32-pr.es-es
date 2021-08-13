@@ -1,11 +1,11 @@
 ---
-title: Win32_SessionDirectoryVMMPlugin (clase)
-description: Representa un complemento de Virtual Machine Manager (VMM) registrado con un agente de sesiones.
+title: Win32_SessionDirectoryVMMPlugin clase
+description: Representa un complemento de Virtual Machine Manager (VMM) registrado con un agente de sesión.
 ms.assetid: b5c5deb1-6c1b-4547-a24a-db3ce6654144
 ms.tgt_platform: multiple
 keywords:
 - Win32_SessionDirectoryVMMPlugin clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_SessionDirectoryVMMPlugin de clase, se describe
+- Win32_SessionDirectoryVMMPlugin clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c5fc6b899eaa264357527eb107e11ad5a40ad67
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7481022951664b49b912b854e96e2d30895b0716ee67b6eb01ce1a9f1b1561ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422365"
 ---
-# <a name="win32_sessiondirectoryvmmplugin-class"></a>\_Clase Win32 SessionDirectoryVMMPlugin
+# <a name="win32_sessiondirectoryvmmplugin-class"></a>Clase \_ SessionDirectoryVMMPlugin de Win32
 
-Representa un complemento de Virtual Machine Manager (VMM) registrado con un agente de sesiones.
+Representa un complemento de Virtual Machine Manager (VMM) registrado con un agente de sesión.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -59,14 +59,14 @@ La **clase \_ SessionDirectoryVMMPlugin de Win32** tiene estos tipos de miembros
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ SessionDirectoryVMMPlugin** tiene estos métodos.
+La **clase \_ SessionDirectoryVMMPlugin de Win32** tiene estos métodos.
 
 
 
 | Método                                                                             | Descripción                                                   |
 |:-----------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [**GetCurrentVMMPlugin**](getcurrentvmmplugin-win32-sessiondirectoryvmmplugin.md) | Obtiene el complemento de prioridad máxima que está habilitado.<br/> |
-| [**RegisterVMMPlugin**](registervmmplugin-win32-sessiondirectoryvmmplugin.md)     | Registra un nuevo complemento de VMM.<br/>                       |
+| [**GetCurrentVMMPlugin**](getcurrentvmmplugin-win32-sessiondirectoryvmmplugin.md) | Obtiene el complemento de prioridad más alta que está habilitado.<br/> |
+| [**RegisterVMMPlugin**](registervmmplugin-win32-sessiondirectoryvmmplugin.md)     | Registra un nuevo complemento vmm.<br/>                       |
 | [**SetEnabled**](setenabled-win32-sessiondirectoryvmmplugin.md)                   | Habilita o deshabilita el complemento.<br/>                   |
 | [**SetName**](setname-win32-sessiondirectoryvmmplugin.md)                         | Establece el nombre del complemento.<br/>                      |
 | [**SetPriority**](setpriority-win32-sessiondirectoryvmmplugin.md)                 | Establece la prioridad del complemento.<br/>                  |
@@ -84,7 +84,7 @@ La **clase \_ SessionDirectoryVMMPlugin de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
-**Enabled**
+**Habilitado**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -93,7 +93,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el complemento está habilitado o deshabilitado. **True** si el complemento está habilitado o **false** en caso contrario. El complemento está deshabilitado de forma predeterminada.
+Indica si el complemento está habilitado o deshabilitado. **True** si el complemento está habilitado o **false** de lo contrario. El complemento está deshabilitado de forma predeterminada.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Prioridad del complemento. Cuanto mayor sea el valor, mayor será la prioridad del complemento. De forma predeterminada, la prioridad es cero.
+Prioridad del complemento. Cuanto mayor sea el valor, mayor será la prioridad del complemento. La prioridad es cero de forma predeterminada.
 
 </dd> <dt>
 
@@ -161,7 +161,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ubicación del servicio en la que debe ponerse en contacto el complemento.
+Ubicación del servicio con la que debe ponerse en contacto el complemento.
 
 </dd> </dl>
 
@@ -173,8 +173,8 @@ La ubicación del servicio en la que debe ponerse en contacto el complemento.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

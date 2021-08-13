@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentStopwatch'
+description: 'Más información sobre: Clase EsentStopwatch'
 title: Clase EsentStopwatch
 TOCTitle: EsentStopwatch class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentStopwatch
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1250b10763aca6155ef7ac12bc64adbb95ac77a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fa68330e778d5a08fef91e909379f2dcd40c77ed4f201d78e37bce666c11350
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454325"
 ---
 # <a name="esentstopwatch-class"></a>Clase EsentStopwatch
 
-Proporciona un conjunto de métodos y propiedades que puede usar para medir las estadísticas de trabajo ESENT de un subproceso. Si la versión actual de ESENT no es compatible con [JetGetThreadStats (JET_THREADSTATS)](./vistaapi.jetgetthreadstats-method.md) , todas las estadísticas de esent serán 0.
+Proporciona un conjunto de métodos y propiedades que puede usar para medir las estadísticas de trabajo de ESENT para un subproceso. Si la versión actual de ESENT no admite [JetGetThreadStats(JET_THREADSTATS),](./vistaapi.jetgetthreadstats-method.md) todas las estadísticas de ESENT serán 0.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. EsentStopwatch  
+  Microsoft.Isam.Esent.Interop.EsentStopwatch  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,4 +66,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentStopwatch](./esentstopwatch-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

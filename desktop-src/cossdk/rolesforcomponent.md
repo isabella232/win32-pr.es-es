@@ -1,5 +1,5 @@
 ---
-description: Contiene un objeto para cada rol asignado al componente con el que está relacionada la colección. Los roles ya deben estar asignados en el nivel de aplicación.
+description: Contiene un objeto para cada rol asignado al componente al que está relacionada la colección. Los roles ya deben estar asignados en el nivel de aplicación.
 ms.assetid: c253c72f-908e-4990-ac1a-27e32c99283c
 title: Colección RolesForComponent
 ms.topic: reference
@@ -12,38 +12,38 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 701921f8f88656753857707c045da0c8e231e1a0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e0acd1bfd374c4d0cdb2eb43b49288f0527847abeec97d8bb96c0c5aecd74585
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118547012"
 ---
 # <a name="rolesforcomponent-collection"></a>Colección RolesForComponent
 
-Contiene un objeto para cada rol asignado al componente con el que está relacionada la colección. Los roles ya deben estar asignados en el nivel de aplicación.
+Contiene un objeto para cada rol asignado al componente al que está relacionada la colección. Los roles ya deben estar asignados en el nivel de aplicación.
 
-Esta colección admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Miembros
 
-La colección **RolesForComponent** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección RolesForComponent** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
 -   [**Componentes**](components.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
 -   [Nombre](#name)
 
@@ -53,8 +53,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nombre del rol. Debe ser ya un rol asignado a la aplicación (que aparece en la colección de roles). Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | WriteOnce                                                                                                                                                                                                                                                                                                                                           |
+| Descripción    | Nombre del rol. Ya debe ser un rol asignado a la aplicación (que aparece en la colección Roles). Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
+| Acceso         | WriteOnce                                                                                                                                                                                                                                                                                                                                           |
 | Tipo           | String                                                                                                                                                                                                                                                                                                                                              |
 | Predeterminado        | "Nuevo rol"                                                                                                                                                                                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                        |

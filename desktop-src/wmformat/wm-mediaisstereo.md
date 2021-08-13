@@ -3,7 +3,7 @@ title: WM/MediaIsStereo
 description: El atributo WM/MediaIsStereo indica si el contenido se difunde con sonido estéreo.
 ms.assetid: d9a7ba4a-d46b-4240-92e4-19ec6ea402c7
 keywords:
-- Formato de Windows Media WM/MediaIsStereo
+- Formato multimedia de Windows WM/MediaIsStereo
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dff49bfd611462a01d3dd99eb5bfff1938c474a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a7c96462a3d632740f8e5a80e0c1fff82d7a78af719061b0015eb0a058c41a02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118698673"
 ---
 # <a name="wmmediaisstereo"></a>WM/MediaIsStereo
 
-El atributo **WM/MediaIsStereo** indica si el contenido se difunde con sonido estéreo.
+El **atributo WM/MediaIsStereo** indica si el contenido se difunde con sonido estéreo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMMediaIsStereo
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ bool**
+**WMT \_ TYPE \_ BOOL**
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se utiliza para la televisión de difusión.
+Este atributo se usa para la televisión de difusión.
 
 ## <a name="see-also"></a>Vea también
 
@@ -42,9 +42,9 @@ Este atributo se utiliza para la televisión de difusión.
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

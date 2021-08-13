@@ -1,9 +1,9 @@
 ---
-title: Propiedad SplitButtonGallery. MenuGroups
+title: Propiedad SplitButtonGallery.MenuGroups
 description: Representa un contenedor para un conjunto de elementos de menú desplegable en un control SplitButtonGallery.
 ms.assetid: e30fcf9a-488b-423a-8bc4-fccbc78f74de
 keywords:
-- SplitButtonGallery. MenuGroups (propiedad) cinta de Windows
+- Propiedad SplitButtonGallery.MenuGroups Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72176e7d7e79b076c3a7cf4d1fd847aa4f4e0561
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 931a66ffca192a1655f3eeffc405c4c02c8e298c28fe9cb9d0d8c6612e29d793
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441725"
 ---
-# <a name="splitbuttongallerymenugroups-property"></a>Propiedad SplitButtonGallery. MenuGroups
+# <a name="splitbuttongallerymenugroups-property"></a>Propiedad SplitButtonGallery.MenuGroups
 
-Representa un contenedor para un conjunto de elementos de menú desplegable en un control [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Representa un contenedor para un conjunto de elementos de menú desplegable en un control [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="usage"></a>Uso
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                         | Descripción                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe aparecer al menos una vez<br/> <br/> |
+| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
 
 
 
@@ -59,13 +59,13 @@ No hay atributos.
 
 Obligatorio.
 
-Debe aparecer exactamente una vez para cada elemento [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Debe producirse exactamente una vez para [**cada elemento SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el elemento **SplitButtonGallery. MenuGroups** .
+En el ejemplo siguiente se muestra el marcado básico para el **elemento SplitButtonGallery.MenuGroups.**
 
-En esta sección de código se muestra la declaración de control **SplitButtonGallery. MenuGroups** .
+En esta sección de código se muestra la declaración de control **SplitButtonGallery.MenuGroups.**
 
 
 ```XML
@@ -98,8 +98,8 @@ En esta sección de código se muestra la declaración de control **SplitButtonG
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -107,7 +107,7 @@ En esta sección de código se muestra la declaración de control **SplitButtonG
 
 <dl> <dt>
 
-[Control Galería de botones de expansión](windowsribbon-controls-splitbuttongallery.md)
+[Control Split Button Gallery (Galería de botones de división)](windowsribbon-controls-splitbuttongallery.md)
 </dt> <dt>
 
 [Trabajar con galerías](ribbon-controls-galleries.md)

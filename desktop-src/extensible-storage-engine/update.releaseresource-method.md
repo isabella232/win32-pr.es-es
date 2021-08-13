@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método Update. ReleaseResource'
-title: Método Update. ReleaseResource
+description: Más información sobre el método Update.ReleaseResource
+title: Método Update.ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 72a17022ff91f278b6a5ac4f84fc7e2d70bb04bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a188b60aeba16aab1d5e4a07c27b42ca57e2fc4eadde5b56333900102d383db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471435"
 ---
-# <a name="updatereleaseresource-method"></a>Método Update. ReleaseResource
+# <a name="updatereleaseresource-method"></a>Método Update.ReleaseResource
 
-Se llama cuando la transacción se desecha mientras está activa. Esto debería revertir la transacción.
+Se llama cuando la transacción se elimina mientras está activa. Esto debería revertir la transacción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,12 +52,12 @@ Me.ReleaseResource()
 protected override void ReleaseResource()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Update (clase)](./update-class.md)
+[Actualizar clase](./update-class.md)
 
 [Actualizar miembros](./update-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

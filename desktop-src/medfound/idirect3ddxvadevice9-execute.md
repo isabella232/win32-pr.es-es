@@ -1,7 +1,7 @@
 ---
-description: Realiza una operación de descodificación de DirectX video Acceleration (DXVA).
+description: Realiza una operación de decodización de aceleración de vídeo de DirectX (DXVA).
 ms.assetid: cb87a087-ca53-470e-ab46-f4022cfd7869
-title: 'IDirect3DDXVADevice9:: Execute (método) (DXVA. h)'
+title: Método IDirect3DDXVADevice9::Execute (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: d624146c32b5f7eaeb4e680cf03878e8d065ee5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac00e5f78e4281523c006216f3173745ba26bc6429ddfdd9d74c9abbe616b89a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465965"
 ---
-# <a name="idirect3ddxvadevice9execute-method"></a>IDirect3DDXVADevice9:: Execute (método)
+# <a name="idirect3ddxvadevice9execute-method"></a>IDirect3DDXVADevice9::Execute (Método)
 
-Realiza una operación de descodificación de DirectX video Acceleration (DXVA).
+Realiza una operación de decodización de aceleración de vídeo de DirectX (DXVA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,18 +48,18 @@ HRESULT Execute(
 *FunctionNum* 
 </dt> <dd>
 
-**DWORD** que contiene uno o más números de función de DXVA. Para obtener más información, consulte la [especificación de DXVA 1,0](/windows-hardware/drivers/display/directx-video-acceleration).
+DWORD **que** contiene uno o varios números de función DXVA. Para más información, consulte la [especificación DXVA 1.0](/windows-hardware/drivers/display/directx-video-acceleration).
 
 </dd> <dt>
 
 *pInputData* 
 </dt> <dd>
 
-Un puntero a un búfer que contiene los datos de entrada para la operación de descodificación. El significado de estos datos depende del tipo de superficie y el número de función.
+Puntero a un búfer que contiene datos de entrada para la operación decoding. El significado de estos datos depende del tipo de superficie y el número de función.
 
 </dd> <dt>
 
-*Inlocate* 
+*InputSize* 
 </dt> <dd>
 
 Tamaño de los datos de entrada, en bytes.
@@ -69,34 +69,34 @@ Tamaño de los datos de entrada, en bytes.
 *OutputData* 
 </dt> <dd>
 
-Puntero a un búfer en el que el acelerador de vídeo escribe los datos de salida.
+Puntero a un búfer donde el acelerador de vídeo escribe los datos de salida.
 
 </dd> <dt>
 
-*Outlocate* 
+*OutputSize* 
 </dt> <dd>
 
-Tamaño del búfer de *OutputData* , en bytes.
+Tamaño del búfer *OutputData,* en bytes.
 
 </dd> <dt>
 
 *NumBuffers* 
 </dt> <dd>
 
-Número de elementos de la matriz *pBufferInfo* .
+Número de elementos de la matriz *pBufferInfo.*
 
 </dd> <dt>
 
 *pBufferInfo* 
 </dt> <dd>
 
-Puntero a una matriz de estructuras [**DXVABufferInfo**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvabufferinfo) .
+Puntero a una matriz de [**estructuras DXVABufferInfo.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvabufferinfo)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,9 +104,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

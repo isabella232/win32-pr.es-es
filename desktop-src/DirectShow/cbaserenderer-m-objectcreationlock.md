@@ -1,7 +1,7 @@
 ---
 description: Bloqueo para proteger la creación de objetos dentro del filtro.
 ms.assetid: ad1d2584-0d9e-42a8-83ea-0c1907ddcf33
-title: 'Miembro CBaseRenderer:: m_ObjectCreationLock (Renbase. h)'
+title: CBaseRenderer::m_ObjectCreationLock miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e344b20b4924ac26ebe6253f5388136b350abefe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b0925aab0345d5eed8da19e12f355c417d66c1f36a1384a05950a87d4c95b3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429317"
 ---
-# <a name="cbaserendererm_objectcreationlock-member"></a>Miembro ObjectCreationLock CBaseRenderer:: m \_
+# <a name="cbaserendererm_objectcreationlock-member"></a>Miembro CBaseRenderer::m \_ ObjectCreationLock
 
-Bloqueo para proteger la creación de objetos dentro del filtro. El filtro contiene este bloqueo cuando crea el PIN de entrada ([**CBaseRenderer:: m \_ pInputPin**](cbaserenderer-m-pinputpin.md)) o el objeto [**CRendererPosPassThru**](crendererpospassthru.md) ([**CBaseRenderer:: m \_ pPosition**](cbaserenderer-m-pposition.md)). Este bloqueo impide que varios subprocesos intenten crear uno de estos objetos al mismo tiempo.
+Bloqueo para proteger la creación de objetos dentro del filtro. El filtro mantiene este bloqueo cuando crea el pin de entrada ([**CBaseRenderer::m \_ pInputPin**](cbaserenderer-m-pinputpin.md)) o el objeto [**CRendererPosPassThru**](crendererpospassthru.md) ([**CBaseRenderer::m \_ pPosition**](cbaserenderer-m-pposition.md)). Este bloqueo impide que varios subprocesos intenten crear uno de estos objetos al mismo tiempo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ CCritSec m_ObjectCreationLock;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CCritSec m_ObjectCreationLock;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

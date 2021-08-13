@@ -4,12 +4,12 @@ ms.assetid: 73840548-f68b-4af8-acb4-6f7faa2e8879
 title: DocumentOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2afc20f15aed8d3076afb79d755c54791573b393
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 2d3027e405f5fa3c07a1af9aa6ae31aa13c8409bab6b8081d995be8405cd8cf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732873"
 ---
 # <a name="documentoutputbin"></a>DocumentOutputBin
 
@@ -27,7 +27,7 @@ Describe la lista completa de ubicaciones admitidas para el dispositivo. Permite
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Característica<br/>  |
 | Prefijo de ámbito <br/> | Documento<br/> |
@@ -78,7 +78,7 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
+## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
