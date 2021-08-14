@@ -1,5 +1,5 @@
 ---
-description: El objeto ComponentInfo representa los detalles adicionales sobre un componente que se puede obtener a través de una llamada de MsiGetComponentPathEx.
+description: El objeto ComponentInfo representa detalles adicionales sobre un componente que se pueden obtener a través de una llamada desde MsiGetComponentPathEx.
 ms.assetid: 9b0ad0a1-c49f-4b14-817b-0cfc9b228d77
 title: Objeto ComponentInfo
 ms.topic: reference
@@ -13,36 +13,36 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 1890ff127f60188deae8fdad251e44b3edb614f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a59aa1d9f7bdc5babc29461ca90c01b6fe604482cb78ba6549e782b1e34d54b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119252005"
 ---
 # <a name="componentinfo-object"></a>Objeto ComponentInfo
 
-El objeto ComponentInfo representa los detalles adicionales sobre un componente que se puede obtener a través de una llamada de MsiGetComponentPathEx.
+El objeto ComponentInfo representa detalles adicionales sobre un componente que se pueden obtener a través de una llamada desde MsiGetComponentPathEx.
 
-**[Windows Installer 4,5 o una versión anterior](not-supported-in-windows-installer-4-5.md):** No compatible. Este objeto está disponible a partir de Windows Installer 5,0.
+**[Windows Instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Este objeto está disponible a partir de Windows Installer 5.0.
 
 ## <a name="members"></a>Miembros
 
-El objeto **ComponentInfo** tiene estos tipos de miembros:
+El **objeto ComponentInfo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **ComponentInfo** tiene estas propiedades.
+El **objeto ComponentInfo** tiene estas propiedades.
 
 
 
 | Propiedad                                                        | Descripción                                                 |
 |:----------------------------------------------------------------|:------------------------------------------------------------|
 | [**ComponentCode**](componentinfo-componentcode.md)<br/> | Código de componente del componente en cuestión.<br/> |
-| [**Ruta**](componentinfo-componentcode.md)<br/>          | Ruta de acceso del componente.<br/>                       |
-| [**State**](componentinfo-state.md)<br/>                 | Estado del componente.<br/>                      |
+| [**Path**](componentinfo-componentcode.md)<br/>          | Ruta de acceso del componente.<br/>                       |
+| [**Estado**](componentinfo-state.md)<br/>                 | Estado del componente.<br/>                      |
 
 
 
@@ -54,9 +54,9 @@ El objeto **ComponentInfo** tiene estas propiedades.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 o posterior.<br/>                                         |
+| Versión<br/> | Windows Instalador 5.0 o posterior.<br/>                                         |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
-| IID<br/>     | IID \_ IComponentInfo se define como 000C1099-0000-0000-C000-000000000046<br/>  |
+| IID<br/>     | IID IComponentInfo se define como \_ 000C1099-0000-0000-C000-00000000046<br/>  |
 
 
 
@@ -64,10 +64,10 @@ El objeto **ComponentInfo** tiene estas propiedades.
 
 <dl> <dt>
 
-[Usar la interfaz de automatización](using-the-automation-interface.md)
+[Uso de la interfaz de Automation](using-the-automation-interface.md)
 </dt> <dt>
 
-[Ejemplos de scripting Windows Installer](windows-installer-scripting-examples.md)
+[Windows Ejemplos de scripting del instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

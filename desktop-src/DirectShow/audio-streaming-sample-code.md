@@ -4,21 +4,21 @@ ms.assetid: f3ba32c5-c3de-4f6b-bc89-f7860ca5f65b
 title: Código de ejemplo de streaming de audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba09e4d0305fa2eca92755422a76fd06130c51c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5fdd93279c92813db61c44b4f7d45b478ea89bc188415fb0b5966a1d6e550cf7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119384905"
 ---
 # <a name="audio-streaming-sample-code"></a>Código de ejemplo de streaming de audio
 
 > [!Note]  
-> Estas API están en desuso. Las aplicaciones deben usar el filtro de [**enganche de ejemplo**](sample-grabber-filter.md) o implementar un filtro personalizado para obtener datos de un gráfico de filtros de DirectShow.
+> Estas API están en desuso. Las aplicaciones deben usar el [**filtro Sample Grabber**](sample-grabber-filter.md) o implementar un filtro personalizado para obtener datos de un DirectShow gráfico de filtros.
 
  
 
-En el ejemplo de código siguiente se muestra cómo transmitir datos de audio mediante las interfaces [**IAudioMediaStream**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiomediastream), [**IAudioStreamSample**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiostreamsample), [**IMemoryData**](/previous-versions/windows/desktop/api/austream/nn-austream-imemorydata)y [**IAudioData**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiodata) . Por motivos de brevedad, este ejemplo realiza una comprobación de errores mínima.
+En el ejemplo de código siguiente se muestra cómo transmitir datos de audio mediante las interfaces [**IAudioMediaStream**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiomediastream), [**IAudioStreamSample,**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiostreamsample) [**IMemoryData**](/previous-versions/windows/desktop/api/austream/nn-austream-imemorydata)e [**IAudioData.**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiodata) Por brevedad, en este ejemplo se realiza una comprobación de errores mínima.
 
 
 ```C++
@@ -361,7 +361,7 @@ int __cdecl main(int argc, char *argv[])
 
 <dl> <dt>
 
-[Código de ejemplo de transmisión por secuencias multimedia](multimedia-streaming-sample-code.md)
+[Código de ejemplo de streaming multimedia](multimedia-streaming-sample-code.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Propiedad UID de IPropertyFilter (WdsSharedIDL. h)
-description: UID para la propiedad que se va a filtrar.
+title: Propiedad IPropertyFilter UID (WdsSharedIDL.h)
+description: UID de la propiedad por la que filtrar.
 ms.assetid: a9dfb34c-a161-4d5f-8d01-695b2f9346e6
 keywords:
-- Propiedad UID características de entorno heredado de Windows
-- Propiedad UID características de entorno heredado de Windows, interfaz IPropertyFilter
-- Interfaz IPropertyFilter características del entorno heredado de Windows, propiedad UID
+- Características heredadas del entorno de Windows UID
+- Propiedades de UID heredadas Windows environment features , IPropertyFilter (interfaz)
+- IPropertyFilter interface Legacy Windows Environment Features , UID property
 topic_type:
 - apiref
 api_name:
@@ -18,23 +18,23 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 529f3f9142345705b9e14cabd2a46200d62fe2ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d0e96fc2c207a3dc7e11d751cb2e545f6d917036b3ce8f184280807c71f55e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963785"
 ---
-# <a name="ipropertyfilteruid-property"></a>IPropertyFilter:: UID (propiedad)
+# <a name="ipropertyfilteruid-property"></a>Propiedad IPropertyFilter::UID
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use Windows [Search API](../search/-search-reference-entry-page.md) en su lugar. 
 
-UID para la propiedad que se va a filtrar.
+UID de la propiedad por la que filtrar.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -57,12 +57,12 @@ Establece la propiedad UID.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio sp1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: b5c8e79c-cdae-4c53-b594-915726423b4f
 title: JobPrimaryCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74ed9bbc1b49e230eabc3fd7f45773a73401e058
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 70ac990caca0f10e03f33eda9971ad967c1c7192ae07a1326675f66880c27857
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118471689"
 ---
 # <a name="jobprimarycoverbacksource"></a>JobPrimaryCoverBackSource
 

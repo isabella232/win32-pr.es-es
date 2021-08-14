@@ -4,12 +4,12 @@ ms.assetid: CF2F3058-328A-4128-B5C6-29723B49AB1E
 title: GUID de vídeo de Direct3D 11 (D3d11.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a16f5277123c3d174427debc3f0ad5e184e49a6c
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 905621e26edcc149d456d5d7b4ef7294ae39c80ae35955e9a19902484d5ff5eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119346475"
 ---
 # <a name="direct3d-11-video-guids"></a>GUID de vídeo de Direct3D 11
 
@@ -46,7 +46,7 @@ Cuando se especifica este GUID, no se debe llamar a los métodos siguientes:
 
 Indica que el descodificador recibirá datos de un componente DRM basado en hardware.
 
-El establecimiento de este GUID en el miembro **guidConfigBitstreamEncryption** de la estructura DE CONFIGURACIÓN [**D3D11 \_ VIDEO \_ DECODER \_**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_video_decoder_config) pasada a la API [**ID3D11VideoDevice::CreateVideoDecoder**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createvideodecoder) indica que se pasarán los parámetros siguientes en la llamada [**ID3D11VideoDevice::D ecoderBeginFrame:**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-decoderbeginframe)
+Establecer este GUID en el miembro **guidConfigBitstreamEncryption** de la estructura DE CONFIGURACIÓN [**D3D11 \_ VIDEO \_ DECODER \_**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_video_decoder_config) pasada a la API [**ID3D11VideoDevice::CreateVideoDecoder**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createvideodecoder) indica que se pasarán los parámetros siguientes en la llamada [**ID3D11VideoDevice::D ecoderBeginFrame:**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-decoderbeginframe)
 
 
 
@@ -68,9 +68,9 @@ El establecimiento de este GUID en el miembro **guidConfigBitstreamEncryption** 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>D3d11.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                        |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>D3d11.h</dt> </dl> |
 
 
 

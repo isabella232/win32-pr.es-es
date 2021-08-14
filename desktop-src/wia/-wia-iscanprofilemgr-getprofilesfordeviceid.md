@@ -1,7 +1,7 @@
 ---
-description: Obtiene todos los perfiles de análisis asociados a un dispositivo.
+description: Obtiene todos los perfiles de examen asociados a un dispositivo.
 ms.assetid: 2e509f01-9c5e-4d17-8888-b08b6b4b9fa9
-title: 'IScanProfileMgr:: GetProfilesforDeviceID (método) (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::GetProfilesforDeviceID (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 10a7d891a114fc36de3f91341febf1616a06ed22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ca150d02aff2f84becf8b36aca87e2da24b2b83c9ccd85c0cf5a1c5ced0d664
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118209061"
 ---
-# <a name="iscanprofilemgrgetprofilesfordeviceid-method"></a>IScanProfileMgr:: GetProfilesforDeviceID (método)
+# <a name="iscanprofilemgrgetprofilesfordeviceid-method"></a>IScanProfileMgr::GetProfilesforDeviceID (método)
 
-Obtiene todos los perfiles de análisis asociados a un dispositivo.
+Obtiene todos los perfiles de examen asociados a un dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,25 +41,25 @@ HRESULT GetProfilesforDeviceID(
 
 <dl> <dt>
 
-*bstrDeviceID* \[ de\]
+*bstrDeviceID* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-IDENTIFICADOR del dispositivo.
+Identificador del dispositivo.
 
 </dd> <dt>
 
 *pulNumProfiles* \[ in, out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
-Cuando se pasa, puntero al número máximo de perfiles que se van a devolver. Cuando se devuelve, puntero al número de perfiles devueltos.
+Cuando se pasa, un puntero al número máximo de perfiles que se devolverán. Cuando se devuelve, un puntero al número de perfiles devueltos.
 
 </dd> <dt>
 
-_ppScanProfile * \[ out\]
+*ppScanProfile* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\*\***
@@ -72,33 +72,33 @@ Dirección de un puntero a una matriz de perfiles.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el número total de perfiles asociados con el dispositivo es menor que el valor pasado a *pulNumProfiles*, *pulNumProfiles* devuelve ese total. De lo contrario, devuelve el mismo valor que se le ha pasado.
+Si el número total de perfiles asociados al dispositivo es menor que el valor pasado a *pulNumProfiles,* *pulNumProfiles* devuelve ese total. De lo contrario, devuelve el mismo valor que se le pasó.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

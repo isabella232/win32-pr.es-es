@@ -1,10 +1,10 @@
 ---
-title: SystemMonitor. ClearData, método
-description: Borra todos los campos de datos del control.
+title: Método SystemMonitor.ClearData
+description: Borra todos los campos de datos del control .
 ms.assetid: 6d7e510c-7f76-42b1-b470-1110d124448f
 keywords:
 - Método ClearData SysMon
-- Método ClearData SysMon, objeto SystemMonitor
+- Método ClearData SysMon , Objeto SystemMonitor
 - Objeto SystemMonitor SysMon, método ClearData
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b346dacaf9df945be8c4c55ce9ee2be3eb76e9d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebd2ad0e748a3b914db8bb92e8a7b6405dbef8fdc56e04a5b6cd02bfe9a74b8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882650"
 ---
-# <a name="systemmonitorcleardata-method"></a>SystemMonitor. ClearData, método
+# <a name="systemmonitorcleardata-method"></a>Método SystemMonitor.ClearData
 
-Borra todos los campos de datos del control.
+Borra todos los campos de datos del control .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,19 +48,19 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método GetDataPointer.
 ms.assetid: 7256d6eb-cb7c-4067-8382-511d64da6825
-title: IWICBitmapLock_GetDataPointer_STA_Proxy función)
+title: IWICBitmapLock_GetDataPointer_STA_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 957ae5974d65430bd39ea41f2e094e9f9c7efb06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b693c78ba3a3d7c68c33f68ec1494997536ffb10272cc384d89d9e94ded7145b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206767"
 ---
-# <a name="iwicbitmaplock_getdatapointer_sta_proxy-function"></a>IWICBitmapLock \_ GetDataPointer \_ STA \_ proxy (función)
+# <a name="iwicbitmaplock_getdatapointer_sta_proxy-function"></a>Función proxy IWICBitmapLock \_ GetDataPointer \_ STA \_
 
-Función de proxy para el método [**GetDataPointer**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getdatapointer) .
+Función de proxy para el [**método GetDataPointer.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getdatapointer)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ HRESULT IWICBitmapLock_GetDataPointer_STA_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) \** _
+Tipo: **[ **IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock)\***
 
-Puntero a este objeto [_ *IWICBitmapLock* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) .
+Puntero a este [**objeto IWICBitmapLock.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock)
 
 </dd> <dt>
 
-*pcbBufferSize* \[ enuncia\]
+*bufferBufferSize* \[ out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Puntero que recibe el tamaño del búfer.
 
 </dd> <dt>
 
-_ppbData * \[ out\]
+*ppbData* \[ out\]
 </dt> <dd>
 
-Tipo: **byte \* \***
+Tipo: **\* \* BYTE**
 
 Puntero que recibe un puntero al píxel superior izquierdo del rectángulo bloqueado.
 
@@ -73,7 +73,7 @@ Puntero que recibe un puntero al píxel superior izquierdo del rectángulo bloqu
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -81,11 +81,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

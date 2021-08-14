@@ -1,7 +1,7 @@
 ---
 description: Indica si este objeto de datos de archivo es un objeto de referencia que apunta a otro objeto de datos secundario.
 ms.assetid: 4894308d-4f61-4015-8b80-6caab9fcb054
-title: 'ID3DXFileData:: IsReference (método) (D3DX9Xof. h)'
+title: Método ID3DXFileData::IsReference (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: fb49a46b3a6caa559febb0ab38bc1b1bd9282025
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aa32832c42f1e28c9e9acec1a3a9b400808a766455aa6025d10e7153e9c67dd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119407365"
 ---
-# <a name="id3dxfiledataisreference-method"></a>ID3DXFileData:: IsReference (método)
+# <a name="id3dxfiledataisreference-method"></a>Método ID3DXFileData::IsReference
 
 Indica si este objeto de datos de archivo es un objeto de referencia que apunta a otro objeto de datos secundario.
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Devuelve **true** si el objeto de datos de archivo es un objeto de referencia; Devuelve **false** en caso contrario.
+Devuelve **TRUE si** el objeto de datos de archivo es un objeto de referencia; devuelve **FALSE en caso** contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Devuelve **true** si el objeto de datos de archivo es un objeto de referencia; D
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

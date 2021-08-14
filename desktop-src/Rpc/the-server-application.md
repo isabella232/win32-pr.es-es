@@ -4,12 +4,12 @@ description: Vea la parte de la aplicación de servidor de un ejemplo de llamada
 ms.assetid: 82ccfd67-6626-49c4-8974-86ebc5841444
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34b8a2bb66fd415a9b8f778134edb4903f88a717
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c393e16a4c26b39efb95d23a2745f75cbeb984cac466c869046f9775f94c80c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923994"
 ---
 # <a name="the-server-application"></a>La aplicación de servidor
 
@@ -21,7 +21,7 @@ La ventaja de organizar los procedimientos remotos en archivos independientes es
 
 El servidor llama a las funciones en tiempo de ejecución [**rpcServerUseProtseqEp**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserveruseprotseqep) y [**RpcServerRegisterIf**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverregisterif) para que la información de enlace esté disponible para el cliente. Este programa de ejemplo pasa el nombre del identificador de interfaz **a RpcServerRegisterIf**. Los demás parámetros se establecen en **NULL.** A continuación, el servidor llama [**a la función RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) para indicar que está esperando solicitudes de cliente.
 
-La aplicación de servidor también debe incluir las dos funciones de administración de memoria a las que llama el código auxiliar del servidor: [**midl \_ user \_ allocate**](the-midl-user-allocate-function.md) y [**midl \_ user \_ free**](the-midl-user-free-function.md). Estas funciones asignan y liberan memoria en el servidor cuando un procedimiento remoto pasa parámetros al servidor. En este programa de ejemplo, **midl \_ user \_ allocate** y **midl \_ user \_ free** son simplemente contenedores para las funciones [**malloc**](pointers-and-memory-allocation.md) y **free** de la biblioteca de C. (Tenga en cuenta que, en las declaraciones de reenvío generadas por el compilador MIDL, "MIDL" está en mayúsculas. El archivo de encabezado Rpc rpcl.h define midl user free y midl user allocate para que sea midL user free y \_ \_ \_ \_ \_ \_ MIDL \_ user \_ allocate, respectivamente).
+La aplicación de servidor también debe incluir las dos funciones de administración de memoria a las que llama el código auxiliar del servidor: [**midl \_ user \_ allocate**](the-midl-user-allocate-function.md) y [**midl \_ user \_ free**](the-midl-user-free-function.md). Estas funciones asignan y liberan memoria en el servidor cuando un procedimiento remoto pasa parámetros al servidor. En este programa de ejemplo, **midl \_ user \_ allocate** y **midl \_ user \_ free** son simplemente contenedores para las funciones [**malloc**](pointers-and-memory-allocation.md) y **free** de la biblioteca de C. (Tenga en cuenta que, en las declaraciones de reenvío generadas por el compilador MIDL, "MIDL" está en mayúsculas. El archivo de encabezado Rpc rpcl.h define midl user free y midl user allocate para que sean midL user free y \_ \_ \_ \_ \_ \_ MIDL \_ user \_ allocate, respectivamente).
 
 
 ```C++

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_INDEXRANGE. ToString (método)'
-title: JET_INDEXRANGE. ToString (método)
+description: 'Más información sobre: JET_INDEXRANGE. Método ToString'
+title: JET_INDEXRANGE. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_INDEXRANGE.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexrange.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f063bc0a107e29c81c8f83d50730d1219d926518
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fae38436263a2d992e8655e373d58139d94f9cfded7921341ce0cd84c777350
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119232675"
 ---
-# <a name="jet_indexrangetostring-method"></a>JET_INDEXRANGE. ToString (método)
+# <a name="jet_indexrangetostring-method"></a>JET_INDEXRANGE. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [JET_INDEXRANGE](./jet-indexrange-class.md)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_INDEXRANGE](./jet-indexrange-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [JET_INDEXRANGE](./jet-indexrange-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el objeto [JET_INDEXRANGE](./jet-indexrange-class.md).  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXRANGE (clase)](./jet-indexrange-class.md)
+[JET_INDEXRANGE clase](./jet-indexrange-class.md)
 
-[Miembros de JET_INDEXRANGE](./jet-indexrange-members.md)
+[JET_INDEXRANGE miembros](./jet-indexrange-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

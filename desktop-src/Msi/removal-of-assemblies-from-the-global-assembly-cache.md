@@ -1,21 +1,21 @@
 ---
-description: El Windows Installer determina si se permite la eliminación de un ensamblado Common Language Runtime basado en una lista de clientes que se mantiene independientemente del ensamblado.
+description: El Windows de aplicaciones determina si se permite la eliminación de un ensamblado de Common Language Runtime basado en una lista de cliente que mantiene independientemente del ensamblado.
 ms.assetid: 3f83ad88-e6a4-484b-bcf5-8e2e65f1f41f
 title: Eliminación de ensamblados de la caché global de ensamblados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47d50bc2856891c67952a27b27a27cf1cf2d1d65
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7490142c1d3bd375b79513685198571b0638fbe16e03b99b39f59ec5ec9a9219
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119327555"
 ---
 # <a name="removal-of-assemblies-from-the-global-assembly-cache"></a>Eliminación de ensamblados de la caché global de ensamblados
 
-El Windows Installer determina si se permite la eliminación de un ensamblado Common Language Runtime basado en una lista de clientes que se mantiene independientemente del ensamblado. El Windows Installer mantiene un bit de anclaje para representar a los clientes de Windows Installer del ensamblado. El instalador ancla el ensamblado para el primer Windows Installer cliente y lo desancla cuando se quita el último cliente de Windows Installer. El ensamblado mantiene un bit de anclaje por cada cliente de un ensamblado.
+El Windows de aplicaciones determina si se permite la eliminación de un ensamblado de Common Language Runtime basado en una lista de cliente que mantiene independientemente del ensamblado. El Windows mantiene un bit de anclado para representar Windows installer del ensamblado. El instalador ancla el ensamblado para el primer cliente Windows Installer y lo desanclar cuando se quita el último Windows installer. El ensamblado mantiene un bit de anclado para cada cliente de un ensamblado.
 
-El Windows Installer no es responsable directamente de la eliminación física de los ensamblados de Common Language Runtime del equipo. El instalador desancla el ensamblado cuando se quita el último Windows Installer cliente. Si el Windows Installer es el último cliente del ensamblado, el Common Language Runtime proporciona la opción de forzar una limpieza sincrónica del ensamblado. El proceso de limpieza es atómico y no hay ningún aprovisionamiento para una "reversión" en este momento. Todo desanclaje de ensamblados de Common Language Runtime debe producirse después de que el usuario haya tenido la oportunidad de cancelar la instalación o la eliminación.
+El Windows instalador no es directamente responsable de la eliminación física de ensamblados de Common Language Runtime del equipo. El instalador desanclará el ensamblado cuando se Windows cliente del instalador. Si el Windows es el último cliente del ensamblado, Common Language Runtime proporciona la opción de forzar una limpieza sincrónica del ensamblado. El proceso de limpieza es atómico y no hay ninguna disposición para una "reversión" en este momento. Todas las anulaciones de los ensamblados de Common Language Runtime deben producirse después de que el usuario haya tenido la oportunidad de cancelar la instalación o eliminación.
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo Manager
+title: Atributo de administrador
 description: Contiene el nombre distintivo del usuario que es el administrador del usuario. El objeto de usuario del administrador contiene una propiedad directReports que contiene referencias a todos los objetos de usuario que tienen sus propiedades de administrador establecidas en este nombre distintivo.
 ms.assetid: 40743784-a99c-4ec0-9140-9f865c073244
 ms.tgt_platform: multiple
 keywords:
-- Atributo de administrador esquema de AD
-- atributo de administrador esquema de AD
+- Esquema de AD de atributo de administrador
+- Esquema de AD del atributo de administrador
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f42c659a436f9798861f5c37df19f8d10db91127
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e87b17f3252963e03c86b5b25a3651606a004afe672f1c8ec07f419ddff3a826
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301265"
 ---
-# <a name="manager-attribute"></a>Atributo Manager
+# <a name="manager-attribute"></a>Atributo de administrador
 
 Contiene el nombre distintivo del usuario que es el administrador del usuario. El objeto de usuario del administrador contiene una propiedad directReports que contiene referencias a todos los objetos de usuario que tienen sus propiedades de administrador establecidas en este nombre distintivo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------------|
 | CN                | Manager                                                                     |
-| Nombre para mostrar de LDAP | manager                                                                     |
-| Tamaño              | \-                                                                          |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                      |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que el administrador tiene que cambiar. |
+| Ldap-Display-Name | manager                                                                     |
+| Size              | \-                                                                          |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                      |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que el administrador necesita cambiar. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.10                                                  |
-| System-ID-GUID    | bf9679b5-0de6-11d0-a285-00aa003049e2                                        |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md)                                     |
+| System-Id-Guid    | bf9679b5-0de6-11d0-a285-00aa003049e2                                        |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)                                     |
 
 
 
@@ -53,15 +53,15 @@ Contiene el nombre distintivo del usuario que es el administrador del usuario. E
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | 42                                                                 |
+| Id. de vínculo                | 42                                                                 |
 | MAPI-Id                | 0x8005                                                             |
 | System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
+| Es de un solo valor       | True                                                               |
 | Está indexado             | False                                                              |
 | En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000010                                                         |
@@ -74,15 +74,15 @@ Contiene el nombre distintivo del usuario que es el administrador del usuario. E
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 42                                                                                                                     |
+| Id. de vínculo                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                   |
 | Está indexado             | False                                                                                                                  |
 | En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
@@ -95,15 +95,15 @@ Contiene el nombre distintivo del usuario que es el administrador del usuario. E
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 42                                                                                                                     |
+| Id. de vínculo                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                   |
 | Está indexado             | False                                                                                                                  |
 | En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
@@ -116,15 +116,15 @@ Contiene el nombre distintivo del usuario que es el administrador del usuario. E
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 42                                                                                                                     |
+| Id. de vínculo                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                   |
 | Está indexado             | False                                                                                                                  |
 | En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
@@ -137,15 +137,15 @@ Contiene el nombre distintivo del usuario que es el administrador del usuario. E
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 42                                                                                                                     |
+| Id. de vínculo                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                   |
 | Está indexado             | False                                                                                                                  |
 | En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
@@ -158,15 +158,15 @@ Contiene el nombre distintivo del usuario que es el administrador del usuario. E
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 42                                                                                                                     |
+| Id. de vínculo                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                   |
 | Está indexado             | False                                                                                                                  |
 | En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |

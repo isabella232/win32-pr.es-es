@@ -1,7 +1,7 @@
 ---
 description: El método GetRealState recupera el estado del filtro.
 ms.assetid: d31c5c0b-6220-4d2e-a81a-d16b7d513c87
-title: Método CBaseRenderer. GetRealState (Renbase. h)
+title: Método CBaseRenderer.GetRealState (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 40f2e49137a4324b14f25e4abb9b14cb919efbb9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c65ac4310abddc619296776981040cc5e1e6c5ad48ce37ea24210bc5a85d94b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403424"
 ---
-# <a name="cbaserenderergetrealstate-method"></a>CBaseRenderer. GetRealState, método
+# <a name="cbaserenderergetrealstate-method"></a>Método CBaseRenderer.GetRealState
 
 El `GetRealState` método recupera el estado del filtro.
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de [**CBaseFilter:: m \_ State**](cbasefilter-m-state.md). El valor es un miembro del tipo enumerado de [**\_ Estado de filtro**](/windows/win32/api/strmif/ne-strmif-filter_state) .
+Devuelve el valor de [**CBaseFilter::m \_ State**](cbasefilter-m-state.md). El valor es un miembro del [**tipo enumerado FILTER \_ STATE.**](/windows/win32/api/strmif/ne-strmif-filter_state)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método proporciona una alternativa más sencilla al método [**CBaseRenderer:: GetState**](cbaserenderer-getstate.md) para uso interno.
+Este método proporciona una alternativa más sencilla al método [**CBaseRenderer::GetState,**](cbaserenderer-getstate.md) para uso interno.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,16 +54,16 @@ Este método proporciona una alternativa más sencilla al método [**CBaseRender
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: 'Texture1D:: Getdimensions ((función)'
-description: 'Devuelve las dimensiones del recurso. | Texture1D:: Getdimensions ((función)'
+title: Función Texture1D::GetDimensions
+description: Devuelve las dimensiones del recurso. | Función Texture1D::GetDimensions
 ms.assetid: eb8fc02f-01c8-44b9-9d7e-faf59660c287
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fdd9b79a1cc1fa2a5a8db3e0db7a7163878b066b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1cca266d5e921d4f8071123d7b6be8b142ff83b06e2efebbe16fb5970555eaf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104547635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508701"
 ---
-# <a name="texture1dgetdimensions-function"></a>Texture1D:: Getdimensions ((función)
+# <a name="texture1dgetdimensions-function"></a>Función Texture1D::GetDimensions
 
 Devuelve las dimensiones del recurso.
 
@@ -38,30 +38,30 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ de\]
+*MipLevel* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Opcional. Nivel de mipmap (debe especificarse si se usa *NumberOfLevels* ).
+Opcional. Nivel mipmap (se debe especificar si *se usa NumberOfLevels).*
 
 </dd> <dt>
 
-*Ancho* \[ de enuncia\]
+*Ancho* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El ancho del recurso, en textura.
+Ancho del recurso, en texturas.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ enuncia\]
+*NumberOfLevels* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El número de niveles de mipmap (requiere también *MipLevel* ).
+El número de niveles de mapa mip *(también requiere MipLevel).*
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ El número de niveles de mipmap (requiere también *MipLevel* ).
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -90,11 +90,11 @@ void GetDimensions(out float Width);
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -102,7 +102,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

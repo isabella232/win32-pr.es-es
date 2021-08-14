@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionRectangleClip SetLeft (Dcomp. h)
-description: Anima o cambia el valor de la propiedad izquierda de un rectángulo de recorte.
+title: Métodos IDCompositionRectangleClip SetLeft (Dcomp.h)
+description: Anima o cambia el valor de la propiedad Left de un rectángulo de recorte.
 ms.assetid: A8E2C2A3-6146-486F-8FF4-05097BFE9222
 keywords:
 - Métodos SetLeft DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e13093c5d0cb13afdff1bc6bbb31f32adb6e5426
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac718d2ba2fc67c7982b2e7b7e693ae7e8e48c33ea2a97cc15859f3a3421e270
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980015"
 ---
-# <a name="idcompositionrectangleclipsetleft-methods"></a>IDCompositionRectangleClip:: SetLeft (métodos)
+# <a name="idcompositionrectangleclipsetleft-methods"></a>Métodos IDCompositionRectangleClip::SetLeft
 
-Anima o cambia el valor de la propiedad izquierda de un rectángulo de recorte. La propiedad izquierda especifica la coordenada x de la esquina superior izquierda del rectángulo de recorte.
+Anima o cambia el valor de la propiedad Left de un rectángulo de recorte. La propiedad Left especifica la coordenada x de la esquina superior izquierda del rectángulo de recorte.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Anima o cambia el valor de la propiedad izquierda de un rectángulo de recorte. 
 
 | Método                                                                                                 | Descripción                                         |
 |:-------------------------------------------------------------------------------------------------------|:----------------------------------------------------|
-| [**SetLeft (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-setleft(float))                                     | Cambia el valor de la propiedad izquierda.<br/>  |
-| [**SetLeft (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-setleft(idcompositionanimation)) | Anima el valor de la propiedad izquierda.<br/> |
+| [**SetLeft(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-setleft(float))                                     | Cambia el valor de la propiedad Left.<br/>  |
+| [**SetLeft(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-setleft(idcompositionanimation)) | Anima el valor de la propiedad Left.<br/> |
 
 
 
@@ -38,17 +38,17 @@ Anima o cambia el valor de la propiedad izquierda de un rectángulo de recorte. 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 8 aplicaciones \[ de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

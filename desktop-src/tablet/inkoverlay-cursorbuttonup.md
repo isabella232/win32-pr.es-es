@@ -1,15 +1,15 @@
 ---
 description: 'Evento InkOverlay.CursorButtonUp: se produce cuando InkCollector detecta un botón de cursor que está encendido.'
 ms.assetid: ce7205f7-727c-4acf-a727-4dbb3cc42441
-title: Evento InkOverlay.CursorButtonUp (Msyecciónut.h)
+title: Evento InkOverlay.CursorButtonUp (Ms cursorut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f22590362c6eb9a987da94bf3adb4e99943c12cd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 60e94fb9c1727e0c8fce13f3696397462fdf590c076627df869dcafd177190c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220855"
 ---
 # <a name="inkoverlaycursorbuttonup-event"></a>Evento InkOverlay.CursorButtonUp
 
@@ -63,9 +63,9 @@ Este método de evento se define en las interfaces de solo envío \_ \_ (dispint
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -86,7 +86,7 @@ Este método de evento se define en las interfaces de solo envío \_ \_ (dispint
 [**IInkCursor (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 </dt> <dt>
 
-[**IInkCursorButton (Interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbutton)
+[**IInkCursorButton (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbutton)
 </dt> </dl>
 
  

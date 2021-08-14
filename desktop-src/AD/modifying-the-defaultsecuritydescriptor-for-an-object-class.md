@@ -1,30 +1,30 @@
 ---
-title: Modificar defaultSecurityDescriptor para una clase de objeto
+title: Modificar defaultSecurityDescriptor para una clase object
 description: En el ejemplo de código siguiente se recupera el descriptor de seguridad predeterminado para una clase de objeto, se agrega una ACE a la DACL y, a continuación, se establece el descriptor de seguridad modificado en la clase de objeto.
 ms.assetid: 38b4d129-f98f-43da-9bd9-1ae23c090657
 ms.tgt_platform: multiple
 keywords:
-- descriptores de seguridad AD, modificar defaultSecurityDescriptor para una clase de objeto
-- objetos AD, modificar defaultSecurityDescriptor para una clase de objeto
-- clase AD, modificar defaultSecurityDescriptor para una clase de objeto
+- descriptores de seguridad de AD, modificando defaultSecurityDescriptor para una clase de objeto
+- objetos AD , modificando defaultSecurityDescriptor para una clase de objeto
+- Clase AD , modificando defaultSecurityDescriptor para una clase de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efc3bd441cb19c43ee36550520d18ee38726b05e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: be0d837530454e8e563718d3f5974be22e5b7d42dfa5e29b8424a51c7a5c993d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186330"
 ---
-# <a name="modifying-the-defaultsecuritydescriptor-for-an-object-class"></a>Modificar defaultSecurityDescriptor para una clase de objeto
+# <a name="modifying-the-defaultsecuritydescriptor-for-an-object-class"></a>Modificar defaultSecurityDescriptor para una clase object
 
 En el ejemplo de código siguiente se recupera el descriptor de seguridad predeterminado para una clase de objeto, se agrega una ACE a la DACL y, a continuación, se establece el descriptor de seguridad modificado en la clase de objeto.
 
-Tenga en cuenta que la modificación de esquemas está deshabilitada de forma predeterminada en todos los controladores de dominio de Windows 2000. Para habilitar la modificación de esquemas en un DC determinado, establezca un valor de REG \_ DWORD denominado "Schema Update Allowed" en la siguiente clave del registro:
+Tenga en cuenta que la modificación del esquema está deshabilitada, de forma predeterminada, en todos los Windows de dominio 2000. Para habilitar la modificación del esquema en un controlador de dominio determinado, establezca un valor \_ REG DWORD denominado "Schema Update Allowed" (Actualización de esquema permitida) en la siguiente clave del Registro:
 
-**HKEY \_ \_** \\  \\  \\  \\  \\ **Parámetros** NTDS de sistema de equipo local CurrentControlSet
+**HKEY \_ Parámetros \_** \\  \\  \\  \\ **NTDS** \\  del sistema LOCAL MACHINE System CurrentControlSet Services
 
-Agregue este valor si aún no existe. Establezca este valor en 1 para habilitar la modificación del esquema. Si este valor es cero, se deshabilita la modificación del esquema. El complemento MMC del administrador de esquemas proporciona una casilla que selecciona o borra esta clave del registro.
+Agregue este valor si aún no existe. Establezca este valor en 1 para habilitar la modificación del esquema. Si este valor es cero, se deshabilita la modificación del esquema. El complemento MMC del Administrador de esquemas proporciona una casilla que selecciona o borra esta clave del Registro.
 
 
 ```C++
@@ -276,9 +276,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

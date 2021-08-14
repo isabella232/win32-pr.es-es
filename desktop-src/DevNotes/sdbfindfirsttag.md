@@ -1,7 +1,7 @@
 ---
-description: Busca una coincidencia de etiqueta en el elemento primario especificado y devuelve el TAGID de la primera coincidencia.
+description: Busca una coincidencia TAG dentro del elemento primario especificado y devuelve el TAGID de la primera coincidencia.
 ms.assetid: ecbe216c-1e46-4472-b1d1-e2ac7ace82ab
-title: SdbFindFirstTag función)
+title: Función SdbFindFirstTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: dc8b752d536be83d90ded55474166d14521f0f7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f6562589158e5c3a5e1b65273451f812802c1c73b76f52c47274c06b9639f5ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390235"
 ---
-# <a name="sdbfindfirsttag-function"></a>SdbFindFirstTag función)
+# <a name="sdbfindfirsttag-function"></a>Función SdbFindFirstTag
 
-Busca una coincidencia de etiqueta en el elemento primario especificado y devuelve el **TAGID** de la primera coincidencia.
+Busca una coincidencia TAG dentro del elemento primario especificado y devuelve el **TAGID** de la primera coincidencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,44 +41,44 @@ TAGID WINAPI SdbFindFirstTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tiParent* \[ de\]
+*tiParent* \[ En\]
 </dt> <dd>
 
-El **TAGID** del inicio de la búsqueda. Este parámetro puede ser **la \_ raíz de TAGID** o la **lista de \_ tipos \_ de etiqueta**.
+TAGID **del** inicio de búsqueda. Este parámetro puede ser **TAGID \_ ROOT o** **TAG TYPE \_ \_ LIST.**
 
 </dd> <dt>
 
-*tTag* \[ de\]
+*tTag* \[ En\]
 </dt> <dd>
 
-ETIQUETA que se va a comparar. Vea [etiqueta](tag.md) para obtener una lista de valores posibles.
+Etiqueta con la que se va a coincidir. Consulte [TAG](tag.md) para obtener una lista de valores posibles.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**TAGID** de la primera coincidencia.
+TAGID **de** la primera coincidencia.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

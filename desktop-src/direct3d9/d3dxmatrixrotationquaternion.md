@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4b30de0c45c8d78b2e07d6ff57a4e94b9753298a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8aac453ce7a2cfec9c31d5807714c1b80c3e4251ca0c68ae684c4547096d04c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525280"
 ---
 # <a name="d3dxmatrixrotationquaternion-function-d3dx9mathh"></a>Función D3DXMatrixRotationQuaternion (D3dx9math.h)
 
@@ -69,7 +69,7 @@ Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) creada a partir del cua
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixRotationQuaternion** se puede usar como parámetro para otra función.
 
-Para obtener información sobre cómo calcular valores de cuaternión a partir de un vector de dirección (x, y, z ) y un ángulo de rotación, vea [**D3DXQUATERNION**](d3dxquaternion.md).
+Para obtener información sobre cómo calcular valores de cuaternión a partir de un vector de dirección (x, y, z) y un ángulo de rotación, vea [**D3DXQUATERNION**](d3dxquaternion.md).
 
 ## <a name="requirements"></a>Requisitos
 

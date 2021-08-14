@@ -1,7 +1,7 @@
 ---
-description: Especifica las propiedades del material.
+description: Especifica las propiedades de material.
 ms.assetid: 943e6f6d-8091-462f-8c44-e0c27686934a
-title: Estructura D3DMATERIAL9 (D3D9Types. h)
+title: Estructura D3DMATERIAL9 (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: b9c3ad93fe2cb80fe758e2e66da37cce9d4267ad
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 640fd4ce0110f47aa20a04d0df595b0ae8bf5052c229825dd93e1066150c6306
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104424424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527585"
 ---
-# <a name="d3dmaterial9-structure"></a>Estructura D3DMATERIAL9
+# <a name="d3dmaterial9-structure"></a>D3DMATERIAL9 (estructura)
 
-Especifica las propiedades del material.
+Especifica las propiedades de material.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Valor que especifica el color difuso del material. Vea [**D3DCOLORVALUE**](d3dcolorvalue.md).
+Valor que especifica el color difuso del material. Vea [**D3DCOLORVALUE.**](d3dcolorvalue.md)
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Valor que especifica el color ambiente del material. Vea [**D3DCOLORVALUE**](d3dcolorvalue.md).
+Valor que especifica el color ambiente del material. Vea [**D3DCOLORVALUE.**](d3dcolorvalue.md)
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Valor que especifica el color especular del material. Vea [**D3DCOLORVALUE**](d3dcolorvalue.md).
+Valor que especifica el color especular del material. Vea [**D3DCOLORVALUE.**](d3dcolorvalue.md)
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Valor que especifica el color de emisor del material. Vea [**D3DCOLORVALUE**](d3dcolorvalue.md).
+Valor que especifica el color emisivo del material. Vea [**D3DCOLORVALUE.**](d3dcolorvalue.md)
 
 </dd> <dt>
 
@@ -94,15 +94,15 @@ Tipo: **float**
 
 </dd> <dd>
 
-Valor de punto flotante que especifica la nitidez de los reflejos especulares. Cuanto mayor sea el valor, más nítido será el resaltado.
+Valor de punto flotante que especifica la niguidad de los resaltados especulares. Cuanto mayor sea el valor, más nítido será el resaltado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para desactivar las iluminaciones especulares, establezca D3DRS \_ SPECULARENABLE en **false**, con [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md). Esta es la opción más rápida porque no se calcularán los reflejos especulares.
+Para desactivar los resaltados especulares, establezca D3DRS \_ SPECULARENABLE en **FALSE** mediante [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md). Esta es la opción más rápida porque no se calculará ningún resaltado especular.
 
-Para obtener más información sobre el uso del motor de iluminación para calcular la iluminación especular, vea [iluminación especular (Direct3D 9)](specular-lighting.md).
+Para obtener más información sobre el uso del motor de iluminación para calcular la iluminación especular, vea [Specular Lighting (Direct3D 9) ( Iluminación especular [Direct3D 9]).](specular-lighting.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,11 +110,11 @@ Para obtener más información sobre el uso del motor de iluminación para calcu
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

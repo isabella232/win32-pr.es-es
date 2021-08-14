@@ -4,12 +4,12 @@ ms.assetid: 434d52cb-c98d-4860-87f7-4aedab7f8188
 title: Directiva de metadatos de fotos System.Photo.FNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85443b849d9f810709f3e75c3082738e5377092f
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: c90ad29c4dc6211f66df8621cfb589c2947f08dbb9f0b4f0fe03196c23909a2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204815"
 ---
 # <a name="systemphotofnumber-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.FNumber
 
@@ -33,11 +33,11 @@ VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se genera a partir de System.Photo.FNumberNumerator y System.Photo.FNumberDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
+Este valor se genera a partir de System.Photo.FNumberNumerator y System.Photo.FNumberDenominator. No se puede escribir directamente. Se concilian los valores de esquemas diferentes.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
@@ -75,7 +75,7 @@ Este valor se genera a partir de System.Photo.FNumberNumerator y System.Photo.FN
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 

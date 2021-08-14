@@ -1,36 +1,36 @@
 ---
-description: Describe cómo usar la herramienta de búsqueda de errores de Microsoft para buscar explicaciones de texto de códigos de error hexadecimales en Windows.
+description: Describe cómo usar la Herramienta de búsqueda de errores de Microsoft para buscar explicaciones de texto de códigos de error hexadecimales en Windows.
 title: Herramienta de búsqueda de errores de Microsoft
 ms.topic: article
 ms.date: 12/4/2019
-ms.openlocfilehash: e39b5623458fc176f5ecc81eae71212ba279945c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 534b2af92b8dc0e906bd033e8ce1f0fbd08ead0cda21406d1818a318356db613
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118405895"
 ---
 # <a name="the-microsoft-error-lookup-tool"></a>Herramienta de búsqueda de errores de Microsoft
 
-La herramienta de búsqueda de errores de Microsoft muestra el texto del mensaje que está asociado a un código de estado hexadecimal (u otro código). Este texto se define en varios archivos de encabezado de código fuente de Microsoft, como Winerror. h, setupapi. h, etc.
+La Herramienta de búsqueda de errores de Microsoft muestra el texto del mensaje asociado a un código de estado hexadecimal (u otro código). Este texto se define en varios archivos de encabezado de código fuente de Microsoft, como Winerror.h, Setupapi.h, y así sucesivamente.
 
-La herramienta está firmada digitalmente por Microsoft. A continuación se encuentra la información de SHA256 para la descarga de archivos:  
+Microsoft firma digitalmente la herramienta. A continuación se muestra la información sha256 para la descarga de archivos:  
 
 |Algoritmo |Hash |
 | --- | --- |
 |SHA256 |88739EC82BA16A0B4A3C83C1DD2FCA6336AD8E2A1E5F1238C085B1E86AB8834A |
 
 > [!NOTE]
-> Los entornos empresariales pueden restringir qué archivos pueden ejecutarse y desde dónde. Antes de descargar y ejecutar esta herramienta, compruebe los detalles siguientes:
+> Los entornos empresariales pueden restringir qué archivos se pueden ejecutar y desde dónde. Antes de descargar y ejecutar esta herramienta, compruebe los detalles siguientes:
 > - ¿Tiene que tener permiso o una excepción de seguridad para descargar o ejecutar la herramienta?
-> - ¿Puede almacenar y ejecutar esta herramienta en el equipo (por ejemplo, en la carpeta documentos)? ¿O tiene que almacenar y ejecutar la herramienta en un equipo especializado, como un servidor de archivos central?
+> - ¿Puede almacenar y ejecutar esta herramienta en el equipo (por ejemplo, en la carpeta Documentos)? ¿O tiene que almacenar y ejecutar la herramienta en un equipo especializado, como un servidor de archivos central?
 
 ## <a name="usage"></a>Uso
 
-1. Descargue la herramienta seleccionando [este vínculo](https://download.microsoft.com/download/4/3/2/432140e8-fb6c-4145-8192-25242838c542/Err_6.4.5/Err_6.4.5.exe).
-1. Si no especificó una ubicación en el paso 1, vaya a la carpeta de descarga y copie o mueva el archivo descargado (Err_6.4.5.exe) a la carpeta en la que se almacenará la herramienta. No es necesario expandir ni instalar el archivo.
+1. Para descargar la herramienta, seleccione [este vínculo.](https://download.microsoft.com/download/4/3/2/432140e8-fb6c-4145-8192-25242838c542/Err_6.4.5/Err_6.4.5.exe)
+1. Si no especificó una ubicación en el paso 1, vaya a la carpeta de descarga y copie o mueva el archivo descargado (Err_6.4.5.exe) a la carpeta en la que almacenará la herramienta. No es necesario expandir ni instalar el archivo.
    > [!NOTE]
-   > Si copia o mueve el archivo a una carpeta que aparece en la variable de entorno **path** de su sistema operativo, funcionará en cualquier símbolo del sistema.
+   > Si copia o mueve el archivo a una carpeta que aparece en la variable de entorno **Path** del sistema operativo, funcionará en cualquier símbolo del sistema.
 
 1. Abra una ventana de símbolo del sistema. Si es necesario, cambie el directorio a la ubicación de la herramienta de búsqueda de errores.
 1. Ejecute el siguiente comando:
@@ -75,4 +75,4 @@ C:\Tools>Err_6.4.5.exe 7b
 
 ## <a name="more-information"></a>Más información
 
-Tenga en cuenta que se trata de una herramienta "momento dado". La herramienta de búsqueda de errores de Microsoft descodifica la mayoría de los códigos de error de Microsoft a partir de la fecha en la que se compiló la herramienta. A medida que nuevas versiones de Windows agregan nuevos eventos y códigos de error, es posible que tenga que descargar una nueva versión de la herramienta de búsqueda de errores. Consulte el centro de descarga de Microsoft para obtener una nueva versión o vea los [códigos de error](system-error-codes.md).
+Tenga en cuenta que se trata de una herramienta "a un momento dado". La Herramienta de búsqueda de errores de Microsoft descodifica la mayoría de los códigos de error de Microsoft a partir de la fecha en que se compiló la herramienta. A medida que las nuevas versiones Windows agregar nuevos códigos de error y eventos, es posible que tenga que descargar una nueva versión de la herramienta de búsqueda de errores. Compruebe en el Centro de descarga de Microsoft una nueva versión o vea [Códigos de error](system-error-codes.md).

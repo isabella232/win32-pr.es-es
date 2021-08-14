@@ -1,9 +1,9 @@
 ---
-title: modificador/enum_class
-description: El \_ modificador de clase/enum habilita el uso de la construcción de clase enum de C++.
+title: Modificador /enum_class
+description: El modificador de clase /enum \_ permite el uso de la construcción de clase de enumeración de C++.
 ms.assetid: 801C00DF-6798-4650-9141-56B89C9241E4
 keywords:
-- /enum_class modificador MIDL
+- /enum_class switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a6c61affceacbe11707c57ac11f17d4027901d1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b8bae465e1e47802b2b6ba961586bf8f09eb255fdcbe238d666ceeee26808b8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385772"
 ---
-# <a name="enum_class-switch"></a>/enum ( \_ modificador de clase)
+# <a name="enum_class-switch"></a>Modificador de clase /enum \_
 
-El modificador de **\_ clase/enum** habilita el uso de la construcción de clase **enum** de C++.
+El **modificador \_ de clase /enum** permite el uso de la construcción **de clase de enumeración de** C++.
 
 ``` syntax
 midlrt /enum_class 
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Opciones de cambio
 
 Este modificador no tiene parámetros.
 
@@ -35,24 +35,24 @@ Este modificador no tiene parámetros.
 
 ## <a name="examples"></a>Ejemplos
 
-**midlrt/enum ( \_ clase)**
+**midlrt /enum \_ (clase)**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------|--------------------------------|
-| Remoto<br/> | Windows 8<br/>           |
+| Cliente<br/> | Windows 8<br/>           |
 | Servidor<br/> | Windows Server 2012<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

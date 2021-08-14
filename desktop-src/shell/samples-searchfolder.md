@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c86a29c4a7d01fad3b91db20035cb84751e0b78a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8af53b6617ad2d655367969195e16854715e9ab75b65416bd9c75deaa9932988
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219821"
 ---
 # <a name="search-folder-sample"></a>Ejemplo de carpeta de búsqueda
 
@@ -26,11 +26,11 @@ En este tema se incluyen las siguientes secciones.
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 
 ## <a name="description"></a>Descripción
 
-En este ejemplo se muestra cómo crear una búsqueda restringida mediante el uso de la interfaz [**ISearchFolderItemFactory**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-isearchfolderitemfactory) para construir un elemento de Shell de carpeta (un contenedor) que representa la consulta. Los resultados se muestran mediante el cuadro de diálogo Abrir archivo.
+En este ejemplo se muestra cómo crear una búsqueda restringida mediante la interfaz [**ISearchFolderItemFactory**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-isearchfolderitemfactory) para construir un elemento shell de carpeta (un contenedor) que represente la consulta. Los resultados se muestran mediante el cuadro de diálogo abrir archivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,27 +39,27 @@ En este ejemplo se muestra cómo crear una búsqueda restringida mediante el uso
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
-| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
 
 
 
  
 
-Para conocer los requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
+Para obtener requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                                             |
+| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [SearchFolder (ejemplo)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/searchfolder) |
+| GitHub  | [Ejemplo de SearchFolder](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/searchfolder) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
  
 

@@ -4,18 +4,18 @@ ms.assetid: 0a380854-f3a9-4077-a481-dda67737d4c8
 title: Implementación de IAMErrorLog
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65eb968eb370d06fab6aca13af3215bb3b650257
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 446e193a6a28fc1cbd5515414b9914f2653e8bc27bb9b5a57e69d05dfc947d62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118398085"
 ---
 # <a name="implementing-iamerrorlog"></a>Implementación de IAMErrorLog
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-La interfaz [**IAMErrorLog**](iamerrorlog.md) contiene un único método, [**LogError**](iamerrorlog-logerror.md). Los parámetros del método contienen información sobre el error que se ha producido.
+La [**interfaz IAMErrorLog**](iamerrorlog.md) contiene un único método, [**LogError**](iamerrorlog-logerror.md). Los parámetros del método contienen información sobre el error que se produjo.
 
 
 ```C++
@@ -29,9 +29,9 @@ STDMETHODIMP LogError(
 
 
 
-El código de error y la cadena de error se definen mediante los servicios de edición de DirectShow. Para obtener una lista de errores, vea [errores de representación](rendering-errors.md).
+El código de error y la cadena de error se definen mediante DirectShow Editing Services. Para obtener una lista de errores, vea [Rendering Errors](rendering-errors.md).
 
-El parámetro *pExtraInfo* contiene un puntero a un tipo Variant que contiene información adicional sobre el error. El tipo de datos y el contenido de la variante dependen del error específico que se ha producido. Por ejemplo, si el error se debe a un nombre de archivo incorrecto, la variante es una cadena con el nombre de archivo incorrecto. Algunos errores no tienen información adicional, por lo que *pExtraInfo* puede ser **null**. En el código siguiente se muestra cómo probar el miembro **VT** de la variante, que indica el tipo de datos, y cómo dar formato a un mensaje en consecuencia.
+El *parámetro pExtraInfo* contiene un puntero a un tipo VARIANT que contiene información adicional sobre el error. El tipo de datos y el contenido de VARIANT dependen del error específico que se produjo. Por ejemplo, si el error se debe a un nombre de archivo incorrecto, VARIANT es una cadena con el nombre de archivo incorrecto. Algunos errores no tienen información adicional, por lo *que pExtraInfo* podría ser **NULL.** El código siguiente muestra cómo probar el **miembro vt** de VARIANT, que indica el tipo de datos, y dar formato a un mensaje en consecuencia.
 
 
 ```C++
@@ -63,7 +63,7 @@ if( pExtraInfo )    // Report extra information, if any.
 
 
 > [!Note]  
-> No libere la variante a la que apunta
+> No liberar la VARIANTE a la que apunta
 >
 > <span codelanguage=""></span>
 >
@@ -78,7 +78,7 @@ if( pExtraInfo )    // Report extra information, if any.
 > </tbody>
 > </table> 
 >
-> . Además, la variante deja de ser válida una vez devuelto el método, por lo que no se hace referencia a ella más adelante.
+> . Además, VARIANT deja de ser válido después de que el método vuelva, por lo que no haga referencia a él más adelante.
 
  
 

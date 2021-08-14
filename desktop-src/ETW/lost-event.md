@@ -1,7 +1,7 @@
 ---
-description: Esta es la clase primaria para los eventos perdidos en una sesión en tiempo real. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta es la clase primaria para los eventos perdidos en una sesión en tiempo real. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 09ffcc4d-916f-458d-91c6-a261776092d2
-title: Lost_Event (clase)
+title: Lost_Event clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cbf52e76d9cd84ea53ec0ecd124279d159a2cddf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: add30f336661b03eb720e7429182abfda4d07e6c4db2fd3e81be67f803288a84
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383485"
 ---
-# <a name="lost_event-class"></a>Lost ( \_ clase de eventos)
+# <a name="lost_event-class"></a>Lost \_ Event (clase)
 
 Esta es la clase primaria para los eventos perdidos en una sesión en tiempo real.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,24 +36,24 @@ class Lost_Event : MSNT_SystemTrace
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ eventos Lost** no define ningún miembro.
+La **clase \_ Lost Event** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace de MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**RT \_ LostEvent**](rt-lostevent.md)

@@ -1,7 +1,7 @@
 ---
-description: Establece el descriptor de seguridad asociado al recurso compartido DDE.
+description: Establece el descriptor de seguridad asociado al recurso compartido de DDE.
 ms.assetid: 8bb8c466-3dd7-49a6-8ba5-632001b8a47f
-title: Función NDdeSetShareSecurity (Nddeapi. h)
+title: Función NDdeSetShareSecurity (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 112752bcd0953fbbc358c75080cb2749273ed95d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00e6d8c4b235e8f7d02ba22e737fc4de9bf4a739864afb1464e6f84c620faa48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118481829"
 ---
-# <a name="nddesetsharesecurity-function"></a>NDdeSetShareSecurity función)
+# <a name="nddesetsharesecurity-function"></a>Función NDdeSetShareSecurity
 
-\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ no \_ implementado.\]
+\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Establece el descriptor de seguridad asociado al recurso compartido DDE. Esto se hace normalmente después de editar la DACL asignada al recurso compartido DDE.
+Establece el descriptor de seguridad asociado al recurso compartido de DDE. Esto suele hacerse después de editar la DACL asignada al recurso compartido de DDE.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,70 +46,70 @@ UINT NDdeSetShareSecurity(
 
 <dl> <dt>
 
-*lpszServer* \[ de\]
+*lpszServer* \[ En\]
 </dt> <dd>
 
 Nombre del servidor cuyo DSDM se va a modificar.
 
 </dd> <dt>
 
-*lpszShareName* \[ de\]
+*lpszShareName* \[ En\]
 </dt> <dd>
 
-Nombre del recurso compartido cuyo descriptor de seguridad se va a modificar. Este parámetro no puede ser **null**.
+Nombre del recurso compartido cuyo descriptor de seguridad se va a modificar. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*si* \[ de\]
+*si* \[ En\]
 </dt> <dd>
 
-Valor [**de \_ información de seguridad**](/windows/desktop/SecAuthZ/security-information) que identifica la información de seguridad que se va a recuperar.
+Valor [**DE \_ INFORMACIÓN DE**](/windows/desktop/SecAuthZ/security-information) SEGURIDAD que identifica la información de seguridad que se debe recuperar.
 
 </dd> <dt>
 
-*pSD* \[ de\]
+*pSD* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ descriptores de seguridad**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contiene información de seguridad. Este parámetro no puede ser **null** y debe apuntar a un descriptor de seguridad válido.
+Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contiene información de seguridad. Este parámetro no puede ser **NULL** y debe apuntar a un descriptor de seguridad válido.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es NDDE \_ sin \_ error.
+Si la función se realiza correctamente, el valor devuelto es NDDE \_ NO \_ ERROR.
 
-Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto mediante una llamada a [**NDdeGetErrorString**](nddegeterrorstring.md).
+Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto llamando a [**NDdeGetErrorString**](nddegeterrorstring.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para modificar el [**\_ descriptor de seguridad**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) asociado a un recurso compartido DDE en DSDM, el usuario debe tener el privilegio adecuado. el creador del recurso compartido tiene este privilegio.
+Para modificar el [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) asociado a un recurso compartido DDE en DSDM, el usuario debe tener el privilegio adecuado; el creador del recurso compartido tiene este privilegio.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **NDdeSetShareSecurityW** (Unicode) y **NDdeSetShareSecurityA** (ANSI)<br/>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información general de Intercambio dinámico de datos de red](network-dynamic-data-exchange.md)
+[Información general sobre datos dinámicos Exchange red](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funciones DDE de red](network-dde-functions.md)
 </dt> <dt>
 
-[**información de seguridad \_**](/windows/desktop/SecAuthZ/security-information)
+[**INFORMACIÓN DE \_ SEGURIDAD**](/windows/desktop/SecAuthZ/security-information)
 </dt> <dt>
 
 [**NDdeGetShareSecurity**](nddegetsharesecurity.md)

@@ -1,10 +1,10 @@
 ---
-title: Estructura de WINBIO_REGISTERED_FORMAT (Winbio \_ Types. h)
-description: Especifica un formato de datos registrado como par propietario/formato.
+title: WINBIO_REGISTERED_FORMAT estructura (Winbio \_ types.h)
+description: Especifica un formato de datos registrado como un par propietario/formato.
 ms.assetid: a178840e-81cc-4dd3-9d80-a181fa7fa888
 keywords:
-- Plataforma de biometría de Windows API de WINBIO_REGISTERED_FORMAT Structure
-- PWINBIO_REGISTERED_FORMAT de puntero de estructura Plataforma de biometría de Windows API
+- WINBIO_REGISTERED_FORMAT estructura Windows API de marco biométrico
+- PWINBIO_REGISTERED_FORMAT puntero de estructura Windows API de marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f45293fe95627c7dfad4c9c51eb7fa74ad1738c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2fcf871f3fc5f258de22e033e8a388968ab58c1a35e19829bf3d02a97ca60c53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909373"
 ---
-# <a name="winbio_registered_format-structure"></a>WINBIO \_ \_ estructura de formato registrada
+# <a name="winbio_registered_format-structure"></a>Estructura DE \_ FORMATO REGISTRADO \_ DE WINBIO
 
-La estructura de **\_ \_ formato registrada WINBIO** especifica un formato de datos registrado como par de propietario/formato.
+La **estructura FORMATO REGISTRADO \_ \_ DE WINBIO** especifica un formato de datos registrado como un par propietario/formato.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,27 +45,27 @@ typedef struct _WINBIO_REGISTERED_FORMAT {
 **Propietario**
 </dt> <dd>
 
-Un valor de propietario asignado de IBIA (Asociación del sector biométrico internacional).
+Valor de propietario asignado de IBIA (Asociación internacional del sector biométrico).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd>
 
-Formato asignado al propietario.
+Formato asignado por el propietario.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Dado que Windows actualmente solo admite lectores de huellas digitales, se deben usar los valores siguientes en la estructura de **\_ \_ formato registrada WINBIO** .
+Dado Windows admite actualmente solo lectores de huellas digitales, se deben usar los siguientes valores en la **estructura DE FORMATO REGISTRADO \_ \_ DE WINBIO.**
 
 
 
 | Constante                                    | Significado                                                                                                               |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| WINBIO \_ \_ propietario de \_ formato ANSI 381 \_<br/> | Comité Internacional para el Comité técnico M1 (biométrico de estándares de tecnología de la información) (INCITS).<br/> |
-| WINBIO \_ \_ tipo de \_ formato ANSI 381 \_<br/>  | Formato de intercambio de datos basado en imágenes de Finger ANSI INCITS 381.<br/>                                                |
+| PROPIETARIO DEL FORMATO WINBIO \_ ANSI \_ 381 \_ \_<br/> | Comité Inter International para estándares de tecnologías de la información (INCITS) M1 (biométrica).<br/> |
+| TIPO DE FORMATO WINBIO \_ ANSI \_ 381 \_ \_<br/>  | Formato de intercambio de datos basado en imágenes ANSI INCITS 381.<br/>                                                |
 
 
 
@@ -75,28 +75,28 @@ Dado que Windows actualmente solo admite lectores de huellas digitales, se deben
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Estructuras de aplicación cliente](client-application-structures.md)
 </dt> <dt>
 
-[**WINBIO \_ \_ constantes de \_ formato ANSI 381**](winbio-ansi-381-format-constants.md)
+[**Constantes DE FORMATO DE WINBIO \_ ANSI \_ 381 \_**](winbio-ansi-381-format-constants.md)
 </dt> <dt>
 
-[**\_Encabezado WINBIO BDB \_ ANSI \_ 381 \_**](winbio-bdb-ansi-381-header.md)
+[**ENCABEZADO ANSI \_ \_ \_ 381 \_ DE WINBIO BDB**](winbio-bdb-ansi-381-header.md)
 </dt> <dt>
 
-[**WINBIO \_ \_ encabezado Bir**](winbio-bir-header.md)
+[**ENCABEZADO WINBIO \_ BIR \_**](winbio-bir-header.md)
 </dt> </dl>
 
  

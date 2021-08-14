@@ -1,19 +1,19 @@
 ---
-title: Aplicación independiente
-description: Esta aplicación independiente, que consta de una llamada a una única función, constituye la base de nuestra aplicación distribuida.
+title: La aplicación independiente
+description: Esta aplicación independiente, que consta de una llamada a una sola función, constituye la base de nuestra aplicación distribuida.
 ms.assetid: 640f5d01-84c8-4fe8-9dae-f4d55cc6f06b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddf1b11df2372a1db5c74659d1800b62e53b7309
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 946d76d0259fd3db971da345a10108cb3dbe11c23184b4ea9a88254e4ecb5e0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923869"
 ---
-# <a name="the-standalone-application"></a>Aplicación independiente
+# <a name="the-standalone-application"></a>La aplicación independiente
 
-Esta aplicación independiente, que consta de una llamada a una única función, constituye la base de nuestra aplicación distribuida. La función, **HelloProc**, se define en su propio archivo de código fuente para que se pueda compilar y vincular con una aplicación independiente o con una aplicación distribuida.
+Esta aplicación independiente, que consta de una llamada a una sola función, constituye la base de nuestra aplicación distribuida. La función **HelloProc** se define en su propio archivo de código fuente para que se pueda compilar y vincular con una aplicación independiente o una aplicación distribuida.
 
 
 ```C++
@@ -38,9 +38,9 @@ void main(void)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

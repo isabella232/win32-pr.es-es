@@ -1,9 +1,9 @@
 ---
 title: Elemento MaintenanceSettings (maintenanceSettingsType)
-description: Especifica cómo realiza el Programador de tareas las tareas durante el mantenimiento automático.
+description: Especifica cómo realiza el Programador de tareas tareas durante el mantenimiento automático.
 ms.assetid: 6A204980-851D-4487-A6CC-01BE262A517A
 keywords:
-- Programador de tareas del elemento MaintenanceSettings
+- Elemento MaintenanceSettings Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ca68876d8742ea04faa972d2ea7fd5f4b2071ffc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5724a5dff942377af783970e5d011e8f8a1ce9123039112917a3f652372495d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119309345"
 ---
 # <a name="maintenancesettings-maintenancesettingstype-element"></a>Elemento MaintenanceSettings (maintenanceSettingsType)
 
-Especifica cómo realiza el Programador de tareas las tareas durante el mantenimiento automático.
+Especifica cómo realiza el Programador de tareas tareas durante el mantenimiento automático.
 
 ``` syntax
 <xs:element name="MaintenanceSettings"
@@ -31,7 +31,7 @@ Especifica cómo realiza el Programador de tareas las tareas durante el mantenim
  />
 ```
 
-El elemento **MaintenanceSettings** se define mediante el tipo complejo de [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) .
+El **tipo complejo maintenanceSettingsType** define el elemento [**MaintenanceSettings.**](taskschedulerschema-maintenancesettingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -39,7 +39,7 @@ El elemento **MaintenanceSettings** se define mediante el tipo complejo de [**ma
 
 | Elemento                                                           | Derivado de                                                         | Descripción                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas utiliza para realizar la tarea.<br/> |
+| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas usa para realizar la tarea.<br/> |
 
 
 
@@ -50,18 +50,18 @@ El elemento **MaintenanceSettings** se define mediante el tipo complejo de [**ma
 | Elemento                                                    | Tipo    | Descripción                                                                                                                                                                                     |
 |------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Fecha límite**](taskschedulerschema-deadline-element.md)   |         | Especifica la cantidad de tiempo después de la cual el programador de tareas intentará iniciar la tarea durante el mantenimiento automático de emergencia, si no se pudo completar durante el mantenimiento normal. <br/> |
-| [**Exclusivo**](taskschedulerschema-exclusive-element.md) | boolean | Si se establece en true, la tarea se iniciará exclusivamente entre otras tareas de mantenimiento. <br/>                                                                                                 |
-| [**Período**](taskschedulerschema-period-element.md)       |         | Especifica la frecuencia con que se debe iniciar la tarea durante el mantenimiento automático. <br/>                                                                                                      |
+| [**Exclusivo**](taskschedulerschema-exclusive-element.md) | boolean | Si se establece en true, la tarea se inicia exclusivamente entre otras tareas de mantenimiento. <br/>                                                                                                 |
+| [**Período**](taskschedulerschema-period-element.md)       |         | Especifica la frecuencia con la que se debe iniciar la tarea durante el mantenimiento automático. <br/>                                                                                                      |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la programación de C++, esta configuración de inactividad se especifica mediante la propiedad [**ITaskSettings3:: MaintenanceSettings**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings) .
+Para la programación de C++, esta configuración inactiva se especifica mediante la [**propiedad ITaskSettings3::MaintenanceSettings.**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings)
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define un elemento de configuración que indica a Programador de tareas que ejecute la tarea una vez en 5 días durante el mantenimiento automático regular y, si se produce un error durante 15 días, empiece a intentar la tarea durante el mantenimiento automático de emergencia.
+El siguiente XML define un elemento de configuración que indica a Programador de tareas que ejecute la tarea una vez en 5 días durante el mantenimiento automático normal y, si se ha dado un error durante 15 días, empiece a intentar la tarea durante el mantenimiento automático de emergencia.
 
 
 ```XML
@@ -81,16 +81,16 @@ En el código XML siguiente se define un elemento de configuración que indica a
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -1,21 +1,21 @@
 ---
-title: El encabezado
+title: Encabezado
 description: El encabezado siguiente representa uno de los estilos de encabezado que puede generar la versión actual de MIDL. Para mayor comodidad, aquí se proporciona la lista completa de campos de encabezado.
 ms.assetid: 2078d2d9-1757-4449-9cc1-a21804654722
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0afcc9ad880278fdbcb8efc45fdabdc22ad06224
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b27ee00425f3611234b0cd001f254b1499a0d4873d05846c65a2828c3eeffe57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924544"
 ---
-# <a name="the-header"></a>El encabezado
+# <a name="the-header"></a>Encabezado
 
 El encabezado siguiente representa uno de los estilos de encabezado que puede generar la versión actual de MIDL. Para mayor comodidad, aquí se proporciona la lista completa de campos de encabezado.
 
-([**–**](/windows/desktop/Midl/-oi) Encabezado de interfaces)
+([**encabezado –Oif)**](/windows/desktop/Midl/-oi)
 
 ``` syntax
 handle_type<1> 
@@ -41,9 +41,9 @@ NotifyIndex<2>
 [ FloatDoubleMask<2> ]
 ```
 
-La \_ versión de la extensión<1> proporciona el tamaño de la sección de extensión, en bytes. Si lo hace, el motor NDR actual puede desplazarse por la sección de la extensión correctamente aunque la sección proviniera de una versión posterior del compilador con más campos de los que el motor actual entiende.
+La versión \_ de<1> proporciona el tamaño de la sección de extensión, en bytes. De este modo, el motor EXPLORE actual puede ir paso a paso por la sección de extensión correctamente incluso si la sección procede de una versión posterior del compilador con más campos de los que entiende el motor actual.
 
-El intérprete \_ OPT \_ FLAGS2 se define de la siguiente manera:
+INTERPRETER \_ OPT \_ FLAGS2 se define de la siguiente manera:
 
 ``` syntax
 typedef struct
@@ -57,39 +57,39 @@ typedef struct
   } INTERPRETER_OPT_FLAGS2, *PINTERPRETER_OPT_FLAGS2;
 ```
 
-El miembro **HasNewCorrDesc** indica si se usan nuevos descriptores de correlación en las cadenas de formato generadas por el compilador. El nuevo descriptor de correlación está relacionado con la funcionalidad de denegación de ataque. Los miembros **ClientCorrCheck** y **ServerCorrCheck** se establecen cuando la rutina necesita la comprobación de correlación en el lado indicado.
+El **miembro HasNewCorrDesc** indica si se usan nuevos descriptores de correlación en las cadenas de formato generadas por el compilador. El nuevo descriptor de correlación está relacionado con la funcionalidad de denegación de ataque. Los **miembros ClientCorrCheck y** **ServerCorrCheck** se establecen cuando la rutina necesita la comprobación de correlación en el lado indicado.
 
-Las marcas **HasNotify** y **HasNotify2** indican que la rutina utiliza la característica de notificación, tal como se define en los atributos **\[ \] Notify** y **\[ Notify \_ Flag \]** , respectivamente.
+Las **marcas HasNotify** y **HasNotify2** indican que la rutina usa la característica de notificación definida por los atributos de marca **\[ notify \]** y **\[ notify, \_ \]** respectivamente.
 
-El miembro **ClientCorrCheck** es una sugerencia de tamaño de caché en el lado cliente y **ServerCorrCheck** es una sugerencia en el lado servidor. Cuando el tamaño llega como cero, se debe usar un tamaño predeterminado.
+El **miembro ClientCorrCheck es** una sugerencia de tamaño de caché en el lado cliente y **ServerCorrCheck** es una sugerencia en el lado servidor. Cuando el tamaño sale como cero, se debe usar un tamaño predeterminado.
 
-El elemento **NotifyIndex** es un índice de una rutina Notify, si se usa una.
+El **elemento NotifyIndex** es un índice de una rutina de notificación, si se usa uno.
 
-El elemento **FloatDoubleMask** aborda el problema de un argumento de punto flotante para Windows de 64 bits. Este campo solo se genera para el código auxiliar de 64 bits. La máscara es necesaria para las rutinas de ensamblado que descargan o cargan registros de/en la pila virtual para controlar los argumentos de punto flotante y se registran correctamente. La máscara consta de 2 bits por argumento, o en lugar de registro de punto flotante. La codificación es la siguiente: los bits menos significativos corresponden al primer registro FP, los dos bits siguientes corresponden al segundo registro, etc.
+El **elemento FloatDoubleMask** aborda el problema de un argumento de punto flotante para los archivos de 64 Windows. Este campo solo se genera para códigos auxiliares de 64 bits. La máscara es necesaria para las rutinas de ensamblado que descargan o cargan registros desde o hacia la pila virtual para controlar los argumentos de punto flotante y los registros correctamente. La máscara consta de 2 bits por argumento o, en su lugar, por registro de punto flotante. La codificación es la siguiente: los bits menos significativos corresponden al primer registro FP, los 2 bits siguientes corresponden al segundo registro, y así sucesivamente.
 
 > [!Note]  
-> En el caso de las rutinas de objeto, el primer argumento termina en el segundo registro debido a que este puntero está en primer lugar. En cada registro, el significado de bits es como se muestra en la tabla siguiente.
+> Para las rutinas de objeto, el primer argumento termina en el segundo registro debido a que este puntero es el primero. Para cada registro, el significado de los bits es como se muestra en la tabla siguiente.
 
- 
+ 
 
 
 
 | Bits | Significado                                          |
 |------|--------------------------------------------------|
-| 01   | Un valor Float debe cargarse en el registro.  |
-| 10   | Se debe cargar un valor Double en el registro. |
+| 01   | Se debe cargar un valor float en el registro.  |
+| 10   | Se debe cargar un valor double en el registro. |
 
 
 
- 
+ 
 
 00 y 11 son valores no válidos para los bits.
 
-Actualmente hay ocho registros FP en un procesador de 64 bits de arquitectura Intel, por lo que la máscara solo puede tener conjuntos de bits inferiores de 16B. El tamaño de la máscara se ha establecido en un total de 16 bits en función de la máscara del compilador de C que permanece sin cambios.
+Actualmente hay ocho registros FP en un procesador intel architecture de 64 bits, por lo que la máscara solo puede tener establecidos 16b bits más bajos. El tamaño de máscara se ha establecido en un total de 16 bits en función de que la máscara del compilador de C permanece sin cambios.
 
-## <a name="header-streamlining-for-performance"></a>Optimización del encabezado para el rendimiento
+## <a name="header-streamlining-for-performance"></a>Secuenciación de encabezados para el rendimiento
 
-Para simplificar el código y mejorar el rendimiento, el compilador intenta generar un encabezado de tamaño fijo siempre que sea posible. En concreto, se usa el encabezado siguiente para DCOM de Async:
+Para simplificar el código y mejorar el rendimiento, el compilador intenta generar un encabezado de tamaño fijo siempre que sea posible. En concreto, se usa el siguiente encabezado para DCOM asincrónico:
 
 ``` syntax
 typedef struct _NDR_DCOM_OI2_PROC_HEADER
@@ -108,6 +108,6 @@ typedef struct _NDR_DCOM_OI2_PROC_HEADER
   } NDR_DCOM_OI2_PROC_HEADER, *PNDR_DCOM_OI2_PROC_HEADER;
 ```
 
- 
+ 
 
- 
+ 
