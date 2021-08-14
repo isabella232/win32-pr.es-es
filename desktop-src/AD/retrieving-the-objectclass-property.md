@@ -1,22 +1,22 @@
 ---
 title: Recuperar el atributo objectClass
-description: El atributo objectClass contiene la clase de la que el objeto es una instancia, así como todas las clases de las que se deriva esa clase.
+description: El atributo objectClass contiene la clase de la que el objeto es una instancia de , así como todas las clases de las que se deriva esa clase.
 ms.assetid: 6066d9c3-f97b-482a-88c7-0fde1dc2f4c4
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f237efff1e13c7f3498a51f38588c9885fbab76
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f2c4ae206298937839a965eca787b0d56b0021cff32c7d89b06865bb27855a5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118184146"
 ---
 # <a name="retrieving-the-objectclass-attribute"></a>Recuperar el atributo objectClass
 
-El atributo **objectClass** contiene la clase de la que el objeto es una instancia, así como todas las clases de las que se deriva esa clase. Por ejemplo, la clase de **usuario** hereda de **Top**, **Person** y **OrganizationalPerson**; por lo tanto, el atributo **objectClass** contiene los nombres de esas clases, así como User. Por lo tanto, ¿cómo averiguar la clase de la que es instancia el objeto? El atributo **objectClass** es el único atributo con varios valores que tienen valores ordenados. El primer valor es la parte superior de la jerarquía de clases, que es la clase superior, y el último valor es la clase más derivada, que es la clase de la que el objeto es una instancia de.
+El **atributo objectClass** contiene la clase de la que el objeto es una instancia de , así como todas las clases de las que se deriva esa clase. Por ejemplo, la **clase de** usuario hereda de **la parte** superior , **person** y **organizationalPerson**; Por lo tanto, **el atributo objectClass** contiene los nombres de esas clases, así como user. Por lo tanto, ¿cómo averiguar de qué clase es una instancia el objeto? El **atributo objectClass** es el único atributo con varios valores que tiene valores ordenados. El primer valor es la parte superior de la jerarquía de clases, que es la clase superior, y el último valor es la clase más derivada, que es la clase de la que el objeto es una instancia.
 
-La siguiente función toma un puntero a una columna que contiene un atributo **objectClass** y devuelve el **objectClass** con instancias del objeto.
+La función siguiente toma un puntero a una columna que contiene un atributo **objectClass** y devuelve la **instancia objectClass** del objeto.
 
 
 ```C++
@@ -62,9 +62,9 @@ HRESULT GetClass(ADS_SEARCH_COLUMN *pcol, LPOLESTR *ppClass)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

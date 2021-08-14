@@ -1,6 +1,6 @@
 ---
-title: Métodos de la propiedad IADsWinNTSystemInfo (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsWinNTSystemInfo obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsWinNTSystemInfo (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsWinNTSystemInfo obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: 5ba36851-3d03-4179-8cee-dbebe24b7c4e
 ms.tgt_platform: multiple
 keywords:
@@ -23,16 +23,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d647cf672032a4a06967ee034eb7b6430faf8dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87942adb526b88ae2b538841cd274da69aa0ea5150f6b528ea4ef299ad478f2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179488"
 ---
 # <a name="iadswinntsysteminfo-property-methods"></a>Métodos de propiedad IADsWinNTSystemInfo
 
-Los métodos de propiedad de la interfaz [**IADsWinNTSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadswinntsysteminfo) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsWinNTSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadswinntsysteminfo) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -41,7 +41,7 @@ Los métodos de propiedad de la interfaz [**IADsWinNTSystemInfo**](/windows/desk
 **nombreDeEquipo**
 </dt> <dd> <dl>
 
-Nombre del equipo host en el que se ejecuta la aplicación.
+Nombre del equipo host donde se ejecuta la aplicación.
 
 <dt>
 
@@ -88,7 +88,7 @@ HRESULT get_DomainName(
 
 </dt> </dl> </dd> <dt>
 
-**ÉL**
+**Pdc**
 </dt> <dd> <dl>
 
 Nombre del controlador de dominio principal al que pertenece el equipo host.
@@ -116,7 +116,7 @@ HRESULT get_PDC(
 **UserName**
 </dt> <dd> <dl>
 
-Nombre de la cuenta de usuario en la que se crea el objeto **WinNTSystemInfo** .
+Nombre de la cuenta de usuario con la que se crea el objeto **WinNTSystemInfo.**
 
 <dt>
 
@@ -142,7 +142,7 @@ HRESULT get_UserName(
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código de C/C++ se recupera la información del sistema Winnt. Por motivos de brevedad, se omite la comprobación de errores.
+En el siguiente ejemplo de código de C/C++ se recupera la información del sistema WinNT. Por brevedad, se omite la comprobación de errores.
 
 
 ```C++
@@ -198,7 +198,7 @@ int main()
 
 
 
-En el siguiente ejemplo de código de Visual Basic se recupera la información del sistema Winnt.
+En el ejemplo Visual Basic código siguiente se recupera la información del sistema WinNT.
 
 
 ```VB
@@ -211,7 +211,7 @@ Debug.print "PDC: " & ntsys.PDC
 
 
 
-En el siguiente ejemplo de código de páginas de Visual Basic Scripting Edition/Active Server se recupera la información del sistema Winnt.
+En el siguiente Visual Basic de código de Scripting Edition/Active Server Pages se recupera la información del sistema WinNT.
 
 
 ```VB
@@ -231,17 +231,17 @@ Response.Write "PDC: " & ntsys.PDC
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsWinNTSystemInfo se define como 6C6D65DC-AFD1-11D2-9CB9-0000F87A369E<br/>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

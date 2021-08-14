@@ -1,9 +1,9 @@
 ---
-title: Elemento de encabezado
-description: El elemento de encabezado contiene metadatos que se aplican a toda la lista de reproducción.
+title: elemento head
+description: El elemento principal contiene metadatos que se aplican a toda la lista de reproducción.
 ms.assetid: 9554c84a-34af-4492-964a-4b262cd7c4a4
 keywords:
-- Elemento de encabezado de Windows Media Player
+- Elemento head Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8708a8a683f7457e6568df3a897c71253ad76c02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a865419a005927cd85ea6b03d4fabad2e2ac3ef15a840b3bd01209a4df00c075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339176"
 ---
-# <a name="head-element"></a>Elemento de encabezado
+# <a name="head-element"></a>elemento head
 
-El elemento de **encabezado** contiene metadatos que se aplican a toda la lista de reproducción.
+El **elemento principal** contiene metadatos que se aplican a toda la lista de reproducción.
 
 ``` syntax
 <head>
@@ -39,16 +39,16 @@ Este elemento no tiene atributos.
 
 | Hierarchy | Elementos                                                  |
 |-----------|-----------------------------------------------------------|
-| Parent    | [gestual](smil-element.md)                                  |
-| Elemento secundario     | [título](title-element--wpl.md), [meta](meta-element.md) |
+| Parent    | [Smil](smil-element.md)                                  |
+| Elemento secundario     | [title](title-element--wpl.md), [meta](meta-element.md) |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, el elemento de **encabezado** contiene un elemento de **título** y uno o varios elementos **meta** que definen las características globales de la lista de reproducción.
+Normalmente, **el elemento principal** contiene un elemento **title** y uno o varios elementos **meta** que definen las características globales de la lista de reproducción.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -70,23 +70,23 @@ Normalmente, el elemento de **encabezado** contiene un elemento de **título** y
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento meta**](meta-element.md)
+[**meta (Elemento)**](meta-element.md)
 </dt> <dt>
 
-[**Elemento title (WPL)**](title-element--wpl.md)
+[**elemento title (WPL)**](title-element--wpl.md)
 </dt> <dt>
 
-[**Referencia de elementos de lista de reproducción de Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

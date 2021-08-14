@@ -1,19 +1,19 @@
 ---
 description: GetFinalPathNameByHandle, introducido en Windows Vista y Windows Server 2008, devolverá una ruta de acceso de un identificador.
 ms.assetid: 359673bf-cc4c-4881-b946-ecdbef4a7ecb
-title: Obtener un nombre de archivo de un identificador de archivo
+title: Obtener un nombre de archivo a partir de un identificador de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7d0c6fd8ea6839fdbfbe887f7a28b38571013b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f905051fdc9c26d16c00f3f1acb2629ae06b8581abb5e5de50944a74e0c6b8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118386418"
 ---
-# <a name="obtaining-a-file-name-from-a-file-handle"></a>Obtener un nombre de archivo de un identificador de archivo
+# <a name="obtaining-a-file-name-from-a-file-handle"></a>Obtener un nombre de archivo a partir de un identificador de archivo
 
-[**GetFinalPathNameByHandle**](/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlea), introducido en Windows Vista y windows Server 2008, devolverá una ruta de acceso de un identificador. Si necesita hacer esto en versiones anteriores de Windows, en el ejemplo siguiente se obtiene un nombre de archivo de un identificador a un objeto de archivo mediante un objeto de asignación de archivos. Usa las funciones [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) y [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para crear la asignación. A continuación, se usa la función [**GetMappedFileName**](/windows/win32/api/psapi/nf-psapi-getmappedfilenamea) para obtener el nombre de archivo. En el caso de los archivos remotos, imprime la ruta de acceso del dispositivo recibida de esta función. En el caso de los archivos locales, convierte la ruta de acceso para usar una letra de unidad e imprime esta ruta de acceso. Para probar este código, cree una función **Main** que abra un archivo mediante [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) y pase el identificador resultante a `GetFileNameFromHandle` .
+[**GetFinalPathNameByHandle,**](/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlea)introducido en Windows Vista y Windows Server 2008, devolverá una ruta de acceso de un identificador. Si necesita hacerlo en versiones anteriores de Windows, en el ejemplo siguiente se obtiene un nombre de archivo de un identificador a un objeto de archivo mediante un objeto de asignación de archivos. Usa las [**funciones CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) y [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para crear la asignación. A continuación, usa [**la función GetMappedFileName**](/windows/win32/api/psapi/nf-psapi-getmappedfilenamea) para obtener el nombre de archivo. En el caso de los archivos remotos, imprime la ruta de acceso del dispositivo recibida de esta función. En el caso de los archivos locales, convierte la ruta de acceso para usar una letra de unidad e imprime esta ruta de acceso. Para probar este código, cree una **función principal** que abra un archivo mediante [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) y pase el identificador resultante a `GetFileNameFromHandle` .
 
 
 ```C++
@@ -146,7 +146,7 @@ int _tmain(int argc, TCHAR *argv[])
 
 <dl> <dt>
 
-[Usar la asignación de archivos](using-file-mapping.md)
+[Uso de la asignación de archivos](using-file-mapping.md)
 </dt> <dt>
 
 [**GetFinalPathNameByHandle**](/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlea)

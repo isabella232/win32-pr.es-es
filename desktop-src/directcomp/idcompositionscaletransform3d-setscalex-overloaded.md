@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 0799c0fa93564e4db277311ae6492a5f7eb85649
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f7fc52b6b98bfcc60bdf8db1636c6ef23c0c62ea7fb382a9c17e8daa00b8ddae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118505525"
 ---
-# <a name="idcompositionscaletransform3dsetscalex-methods"></a>IDCompositionScaleTransform3D:: SetScaleX (métodos)
+# <a name="idcompositionscaletransform3dsetscalex-methods"></a>Métodos IDCompositionScaleTransform3D::SetScaleX
 
-Cambia o anima el valor de la propiedad ScaleX de una transformación de escala 3D. La propiedad ScaleX especifica el factor de escala a lo largo del eje x.
+Cambia o anima el valor de la propiedad ScaleX de una transformación de escala 3D. La propiedad ScaleX especifica el factor de escala a lo largo del eje X.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Cambia o anima el valor de la propiedad ScaleX de una transformación de escala 
 
 | Método                                                                                                        | Descripción                                           |
 |:--------------------------------------------------------------------------------------------------------------|:------------------------------------------------------|
-| [**SetScaleX (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscalex(float))                                     | Cambia el valor de la propiedad ScaleX.<br/>  |
-| [**SetScaleX (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscalex(idcompositionanimation)) | Anima el valor de la propiedad ScaleX.<br/> |
+| [**SetScaleX(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscalex(float))                                     | Cambia el valor de la propiedad ScaleX.<br/>  |
+| [**SetScaleX(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscalex(idcompositionanimation)) | Anima el valor de la propiedad ScaleX.<br/> |
 
 
 
@@ -38,17 +38,17 @@ Cambia o anima el valor de la propiedad ScaleX de una transformación de escala 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

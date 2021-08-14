@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una solicitud de generación de clave que se muestra en formato ASN. 1.
+description: El ejemplo siguiente contiene una solicitud de generación de claves que se muestra en formato ASN.1.
 ms.assetid: d08c33f8-f372-44d3-8c8e-a26440e85c34
-title: ASN de generación de claves codificado. 1
+title: ASN.1 con codificación de generación de claves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f46e09273e32d4e7bd63ba035076ebb30facf18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61c423d209edfe4dbfd6b4ed53511dc5ae8b2f1a4cb41f404d6fae4d927f93b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993595"
 ---
-# <a name="key-generation-encoded-asn1"></a>ASN de generación de claves codificado. 1
+# <a name="key-generation-encoded-asn1"></a>ASN.1 con codificación de generación de claves
 
-El ejemplo siguiente contiene una solicitud de generación de clave que se muestra en formato ASN. 1.
+El ejemplo siguiente contiene una solicitud de generación de claves que se muestra en formato ASN.1.
 
 ``` syntax
 0000: 30 82 02 4e               ; SEQUENCE (24e Bytes)

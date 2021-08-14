@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para establecer permisos en un grupo de propiedades
-description: En los siguientes ejemplos de código de C y C++ se crea una ACE que asigna acceso de lectura y escritura a los atributos del conjunto de propiedades de información personal de objetos de usuario para el administrador de confianza especificado.
+description: Los siguientes ejemplos de código de C y C++ crean una ACE que asigna acceso de lectura y escritura a los atributos del conjunto de propiedades Información personal de objetos de usuario al administrador de confianza especificado.
 ms.assetid: 46d53b41-02eb-4830-b625-2d9ffa21a312
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, establecer permisos en un grupo de propiedades
+- Active Directory ejemplos Active Directory , establecer permisos en un grupo de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fb45e75aaab9399fc2962b95397380f4bb4eeb3
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 220a9f306a4691aed53ec5c769405ae5db9f9c53fcb192cc383fbf9e8235def4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103995086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190103"
 ---
 # <a name="example-code-for-setting-permissions-on-a-group-of-properties"></a>Código de ejemplo para establecer permisos en un grupo de propiedades
 
-En los siguientes ejemplos de código de C y C++ se crea una ACE que asigna acceso de lectura y escritura a los atributos del conjunto de propiedades de [**información personal**](/windows/desktop/ADSchema/r-personal-information) de objetos de usuario para el administrador de confianza especificado.
+Los siguientes ejemplos de código de C y C++ crean una ACE que asigna acceso de lectura y escritura a los atributos del conjunto de propiedades Información [**personal**](/windows/desktop/ADSchema/r-personal-information) de objetos de usuario al administrador de confianza especificado.
 
 
 ```C++
@@ -132,6 +132,6 @@ HRESULT CreateAceChangePersonalInfoPropGroupOfUsers(LPWSTR pwszTrustee,
 
 
 
- 
+ 
 
- 
+ 

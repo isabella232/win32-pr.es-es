@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 569a8dd4352edb0c4660fecd3e77fdfaec0ec4c4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fdd646458bb10287e1a76ffed897f1ea039e1b047ccf14d10aeb990ebfc74622
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403454"
 ---
 # <a name="cbaserenderergetpincount-method"></a>Método CBaseRenderer.GetPinCount
 
@@ -54,7 +54,7 @@ Este método implementa el [**método CBaseFilter::GetPinCount,**](cbasefilter-g
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

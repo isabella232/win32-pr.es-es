@@ -7,12 +7,12 @@ keywords:
 - Lista alfabética de interfaces ADSI ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 760d8b39547248ca1ebaed04a07a8dff499a3a9f
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 9d101357760026c42ae0969832691a2d557c64363220fe662565c0dd3923ad40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104533483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118692694"
 ---
 # <a name="alphabetical-listing-of-adsi-interfaces"></a>Lista alfabética de interfaces ADSI
 
@@ -20,9 +20,9 @@ La tabla siguiente contiene una lista alfabética de todas las interfaces ADSI.
 
 
 
-| Interfaz                                                      | Categoría/Descripción        |
+| Interfaz                                                      | Categoría o descripción        |
 |----------------------------------------------------------------|-----------------------------|
-| [**IADs**](/windows/desktop/api/Iads/nn-iads-iads)                                           | Core                        |
+| [**Iads**](/windows/desktop/api/Iads/nn-iads-iads)                                           | Core                        |
 | [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)       | Seguridad                    |
 | [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)         | Seguridad                    |
 | [**IADsAcl**](/windows/desktop/api/Iads/nn-iads-iadsacl)                                     | Tipo de datos                   |
@@ -79,20 +79,20 @@ La tabla siguiente contiene una lista alfabética de todas las interfaces ADSI.
 | [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession)                             | Objeto dinámico              |
 | [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax)                               | Schema                      |
 | [**IADsTimestamp**](/windows/desktop/api/Iads/nn-iads-iadstimestamp)                         | Tipo de datos                   |
-| [**IADsTsUserEx**](/windows/desktop/api/tsuserex/nn-tsuserex-iadstsuserex)                      | Terminal Services datos de usuario |
+| [**IADsTsUserEx**](/windows/desktop/api/tsuserex/nn-tsuserex-iadstsuserex)                      | Datos de usuario de Terminal Services |
 | [**IADsTypedName**](/windows/desktop/api/Iads/nn-iads-iadstypedname)                         | Tipo de datos                   |
 | [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser)                                   | Objeto persistente           |
 | [**IADsWinNTSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadswinntsysteminfo)             | Utilidad                     |
-| [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject)                   | Núcleo/no automatización         |
+| [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject)                   | Core/Non-Automation         |
 | **IDirectorySchemaMgmt**                                       | Obsoletos                    |
-| [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)                   | Núcleo/no automatización         |
+| [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)                   | Core/Non-Automation         |
 | **IPrivateDispatch**                                           | Obsoletos                    |
 | **IPrivateUnknown**                                            | Obsoletos                    |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: constructor EsentOperationException (String, JET_err)'
-title: Constructor EsentOperationException (String, JET_err)
+description: 'Más información sobre: Constructor EsentOperationException (String, JET_err)'
+title: EsentOperationException constructor (String, JET_err)
 TOCTitle: EsentOperationException constructor (String, JET_err)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOperationException.#ctor(System.String,Microsoft.Isam.Esent.Interop.JET_err)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentoperationexception.esentoperationexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb25ea404e4581b369f9d81e772ba4b2e95f7fc1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59ade12284cd6e0a7d165a03b61e6b67edd2ad86aa41c7b93f6a6da15cae0593
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118493678"
 ---
-# <a name="esentoperationexception-constructor-string-jet_err"></a>Constructor EsentOperationException (String, JET_err)
+# <a name="esentoperationexception-constructor-string-jet_err"></a>EsentOperationException constructor (String, JET_err)
 
 Inicializa una nueva instancia de la clase EsentOperationException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,18 +60,18 @@ protected EsentOperationException(
 #### <a name="parameters"></a>Parámetros
 
   - description  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Descripción del error.
 
 <!-- end list -->
 
   - err  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
     
-    El código de error de la excepción.
+    Código de error de la excepción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -79,6 +79,6 @@ protected EsentOperationException(
 
 [Miembros de EsentOperationException](./esentoperationexception-members.md)
 
-[Sobrecarga EsentOperationException](./esentoperationexception-constructor.md)
+[Sobrecarga de EsentOperationException](./esentoperationexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

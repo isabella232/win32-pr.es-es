@@ -3,7 +3,7 @@ title: SB_GETUNICODEFORMAT mensaje (Commctrl.h)
 description: 'SB_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control.'
 ms.assetid: 0b2b543a-b1ef-452c-9b34-c5fbbac4aaa9
 keywords:
-- SB_GETUNICODEFORMAT mensaje Controles de Windows
+- SB_GETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 857af43911a01ffc58b1a878be6e1875a44c76cb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ba6a00725b5c161e6b2a85aae9e21436e4826619b0336ffedf7eaa307c285ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409175"
 ---
 # <a name="sb_getunicodeformat-message"></a>Mensaje \_ SB GETUNICODEFORMAT
 
@@ -49,9 +49,9 @@ Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodefor
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

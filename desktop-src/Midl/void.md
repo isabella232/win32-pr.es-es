@@ -1,9 +1,9 @@
 ---
-title: atributo void
-description: El tipo de base void indica un procedimiento sin argumentos o un procedimiento que no devuelve un valor de resultado.
+title: void (atributo)
+description: El tipo base void indica un procedimiento sin argumentos o un procedimiento que no devuelve un valor de resultado.
 ms.assetid: a3eebfe7-bf43-4bab-b87b-9188a54ab9bf
 keywords:
-- atributo void de MIDL
+- atributo void MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4b14a5ae4a2325f840d8a840cb0a1bc5283bb4a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7ad758ba334114e13493e7b082f45f37dc6e68efba16dc3a55f14fa57a772d63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105665761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382441"
 ---
-# <a name="void-attribute"></a>atributo void
+# <a name="void-attribute"></a>void (atributo)
 
-El tipo de base **void** indica un procedimiento sin argumentos o un procedimiento que no devuelve un valor de resultado.
+El tipo base **void** indica un procedimiento sin argumentos o un procedimiento que no devuelve un valor de resultado.
 
 ``` syntax
 void function-name(parameter-list);
@@ -39,37 +39,37 @@ return-type function-name(
 
 <dl> <dt>
 
-*nombre de función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre del procedimiento remoto.
 
 </dd> <dt>
 
-*lista de parámetros* 
+*parameter-list* 
 </dt> <dd>
 
-Especifica la lista de parámetros que se pasan a la función junto con los tipos de parámetros y atributos de parámetro asociados.
+Especifica la lista de parámetros pasados a la función junto con los tipos de parámetros asociados y los atributos de parámetro.
 
 </dd> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
 Especifica el nombre del tipo devuelto por la función.
 
 </dd> <dt>
 
-*context-Handle-type* 
+*context-handle-type* 
 </dt> <dd>
 
-Especifica el nombre del tipo que toma el atributo de **\[** [**\_ identificador de contexto**](context-handle.md) **\]** .
+Especifica el nombre del tipo que toma el atributo **\[** [**de identificador \_ de**](context-handle.md) **\]** contexto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo de **puntero \* void**, que en C describe un puntero genérico que se puede convertir para representar cualquier tipo de puntero, está limitado en MIDL a su uso con la palabra clave de **\[ \_ identificador \] de contexto** .
+El tipo de puntero void _, que en C describe un puntero genérico que se puede convertir para representar cualquier tipo de puntero, está limitado en MIDL a su uso con la palabra clave **\* *_* \[ context \_ handle. \]**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -84,18 +84,18 @@ HRESULT InitHandle([out] MY_CX_HNDL_TYPE * ppCxHndl);
 
 <dl> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**identificador de contexto \_**](context-handle.md)
+[**identificador de \_ contexto**](context-handle.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

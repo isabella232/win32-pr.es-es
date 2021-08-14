@@ -1,7 +1,7 @@
 ---
-description: Crea un enumerador de información de propiedad para cada dispositivo de adquisición de imágenes de Windows (WIA) 2,0 disponible.
+description: Crea un enumerador de información de propiedades para cada dispositivo Windows adquisición de imágenes (WIA) 2.0 disponible.
 ms.assetid: e37b73d5-5192-46e4-bb1c-bd1ef41f1d6c
-title: 'IWiaDevMgr2:: EnumDeviceInfo (método) (WIA. h)'
+title: Método IWiaDevMgr2::EnumDeviceInfo (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: bd9e9281b625f4cec5377537d82a304045b95a3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b646c494d9793986373d45db2d89dfde91e744196d86d28aceab35874f504d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208727"
 ---
-# <a name="iwiadevmgr2enumdeviceinfo-method"></a>IWiaDevMgr2:: EnumDeviceInfo (método)
+# <a name="iwiadevmgr2enumdeviceinfo-method"></a>IWiaDevMgr2::EnumDeviceInfo (método)
 
-Crea un enumerador de información de propiedad para cada dispositivo de adquisición de imágenes de Windows (WIA) 2,0 disponible.
+Crea un enumerador de información de propiedades para cada dispositivo Windows adquisición de imágenes (WIA) 2.0 disponible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,43 +40,43 @@ HRESULT EnumDeviceInfo(
 
 <dl> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Especifica el tipo de dispositivos WIA 2,0 que se va a enumerar.
+Especifica el tipo de dispositivos WIA 2.0 que se enumerará.
 
 <dt>
 
 <span id="WIA_DEVINFO_ENUM_LOCAL"></span><span id="wia_devinfo_enum_local"></span>
 
-<span id="WIA_DEVINFO_ENUM_LOCAL"></span><span id="wia_devinfo_enum_local"></span>**\_ \_ enumeración local de la DevInfo de WIA \_**
+<span id="WIA_DEVINFO_ENUM_LOCAL"></span><span id="wia_devinfo_enum_local"></span>**WIA \_ DEVINFO \_ ENUM \_ LOCAL**
 
 
 </dt> <dd>
 
-Solo se enumeran los dispositivos de analizador activos conectados localmente.
+Solo se enumeran los dispositivos de escáner activo conectados localmente.
 
 </dd> <dt>
 
 <span id="WIA_DEVINFO_ENUM_ALL"></span><span id="wia_devinfo_enum_all"></span>
 
-<span id="WIA_DEVINFO_ENUM_ALL"></span><span id="wia_devinfo_enum_all"></span>**\_ \_ enumeración todo en la DevInfo de WIA \_**
+<span id="WIA_DEVINFO_ENUM_ALL"></span><span id="wia_devinfo_enum_all"></span>**WIA \_ DEVINFO \_ ENUM \_ ALL**
 
 
 </dt> <dd>
 
-Todos los dispositivos se enumeran, tanto de forma local como remota, incluidos los dispositivos inactivos (desconectados) y los dispositivos solo de STI heredados.
+Todos los dispositivos se enumeran, tanto de forma local como remota, incluidos los dispositivos inactivos (desconectados) y los dispositivos heredados solo DESER.
 
 </dd> </dl> </dd> <dt>
 
 *ppIEnum* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **[ **IEnumWIA \_ dev \_ info**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)\*\***
+Tipo: **[ **IEnumWIA \_ DEV \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)\*\***
 
-Recibe la dirección de un puntero a la interfaz de [**\_ \_ información de desarrollo de IEnumWIA**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) .
+Recibe la dirección de un puntero a la interfaz INFO de [**IEnumWIA \_ \_ DEV.**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)
 
 </dd> </dl>
 
@@ -84,24 +84,24 @@ Recibe la dirección de un puntero a la interfaz de [**\_ \_ información de des
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **IWiaDevMgr2:: EnumDeviceInfo** crea un objeto de enumerador que admite la interfaz de [**información de \_ desarrollo \_ de IEnumWIA**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) . El método almacena un puntero a la interfaz **IEnumWIA \_ dev \_ info** en el parámetro *ppIEnum*. Las aplicaciones pueden usar el puntero de la interfaz de **IEnumWIA \_ dev \_ info** para enumerar las propiedades de cada dispositivo WIA 2,0 conectado al equipo del usuario.
+El **método IWiaDevMgr2::EnumDeviceInfo** crea un objeto enumerador que admite la [**interfaz INFO de IEnumWIA \_ DEV. \_**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) El método almacena un puntero a la **interfaz INFO de IEnumWIA \_ DEV \_** en el parámetro *ppIEnum*. Las aplicaciones pueden usar el puntero de interfaz INFO de **IEnumWIA \_ \_ DEV** para enumerar las propiedades de cada dispositivo WIA 2.0 conectado al equipo del usuario.
 
-Las aplicaciones deben llamar al método [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del parámetro *ppIEnum* .
+Las aplicaciones deben llamar [al método IUnknown::Release en](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) los punteros de interfaz que reciben a través del parámetro *ppIEnum.*
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

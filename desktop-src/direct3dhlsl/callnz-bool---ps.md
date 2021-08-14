@@ -1,6 +1,6 @@
 ---
-title: callnz bool-PS
-description: Llame a si no es cero. Realiza una llamada condicional a la instrucción marcada por el índice de la etiqueta. | callnz bool-PS
+title: callnz bool - ps
+description: Llame a si no es cero. Realiza una llamada condicional a la instrucción marcada por el índice de etiqueta. | callnz bool - ps
 ms.assetid: 1b9ff276-c2b8-46cc-96ac-a5b5455c5cc0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0516e62ce07c60866715591bc59123f38dc5c272
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 793feb1934b86b46f26050a67b5f26d94b9f277e31735c4d1912805374bab903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118516635"
 ---
-# <a name="callnz-bool---ps"></a>callnz bool-PS
+# <a name="callnz-bool---ps"></a>callnz bool - ps
 
-Llame a si no es cero. Realiza una llamada condicional a la instrucción marcada por el índice de la etiqueta.
+Llame a si no es cero. Realiza una llamada condicional a la instrucción marcada por el índice de etiqueta.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| callnz l \# , \[ ! \] b\# |
+| callnz l \# , \[ ! \] B\# |
 |----------------------|
 
 
@@ -33,15 +33,15 @@ Llame a si no es cero. Realiza una llamada condicional a la instrucción marcada
 
 Donde:
 
--   l \# es una [etiqueta-PS](label---ps.md) que marca el principio de la subrutina a la que se va a llamar.
--   \[!\] es un modificador opcional Negate.
--   b \# identifica un [registro booleano constante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
+-   l \# es una [etiqueta: ps](label---ps.md) marca el principio de la subrutina a la que se va a llamar.
+-   \[!\] es un modificador negate opcional.
+-   b \# identifica un registro [booleano constante.](dx9-graphics-reference-asm-ps-registers-constant-boolean.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | callnz bool           |      |      |      |      |      | x    | x     | x    | x     |
 

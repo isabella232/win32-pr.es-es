@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MediaCollectionChange
-description: El evento MediaCollectionChange se produce cuando cambia la colección de medios. | Evento Player. MediaCollectionChange
+title: Evento Player.MediaCollectionChange
+description: El evento MediaCollectionChange tiene lugar cuando cambia la colección multimedia. | Evento Player.MediaCollectionChange
 ms.assetid: 1cc8f26d-ccd5-49ba-a2b3-0adfe9b51b11
 keywords:
-- Media Player MediaCollectionChange de eventos de Windows
-- Evento MediaCollectionChange de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento MediaCollectionChange
+- Evento MediaCollectionChange Reproductor de Windows Media
+- Evento MediaCollectionChange Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media evento , MediaCollectionChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05177b542217132bb10004a29faaa3cbe7fcce6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bc5af57908371eaf7fd7e75dab39bb966977de358fa9488e54d32e985a104c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338093"
 ---
-# <a name="playermediacollectionchange-event"></a>Evento Player. MediaCollectionChange
+# <a name="playermediacollectionchange-event"></a>Evento Player.MediaCollectionChange
 
-El evento **MediaCollectionChange** se produce cuando cambia la colección de medios.
+El **evento MediaCollectionChange** tiene lugar cuando cambia la colección multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,22 +44,22 @@ Este evento no tiene parámetros.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Este evento no devuelve un valor.
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. mediaCollection**](player-mediacollection.md)
+[**Player.mediaCollection**](player-mediacollection.md)
 </dt> </dl>
 
  

@@ -1,30 +1,30 @@
 ---
-description: El escritor de pruebas es una utilidad que puede usar para probar las aplicaciones de solicitante de VSS.
+description: Test Writer es una utilidad que puede usar para probar las aplicaciones solicitantes de VSS.
 ms.assetid: 02434cb9-390c-4cf0-9941-b833ace55685
-title: Herramienta de escritura de prueba de VSS
+title: Herramienta VSS Test Writer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61ffdbb513697a701866be5ceeb40168e8c28368
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b93f0b81bd5e27db9fdfb70ca52e6f43bbb1e853af87bc12e1d76f01d7966ef3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344238"
 ---
-# <a name="vss-test-writer-tool"></a>Herramienta de escritura de prueba de VSS
+# <a name="vss-test-writer-tool"></a>Herramienta VSS Test Writer
 
-El escritor de pruebas es una utilidad que puede usar para probar las aplicaciones de solicitante de VSS. Este escritor puede configurarse para realizar casi todas las acciones que puede realizar un VSS Writer. Además, el escritor de pruebas realiza comprobaciones exhaustivas para asegurarse de que el solicitante ha solucionado correctamente estas acciones del escritor.
+Test Writer es una utilidad que puede usar para probar las aplicaciones solicitantes de VSS. Este sistema de escritura se puede configurar para realizar casi todas las acciones que un escritor de VSS puede realizar. Además, el escritor de pruebas realiza comprobaciones exhaustivas para asegurarse de que el solicitante ha abordado correctamente estas acciones de escritura.
 
-Cada instancia del escritor se inicializa con un archivo de configuración XML que describe exactamente en qué componentes informará el escritor y cómo se comporta el escritor. El escritor puede configurarse para informar sobre diversos tipos de escenarios, incluidos escenarios más complicados con las interfaces incrementales y diferenciales. El escritor realizará comprobaciones en varios puntos durante el proceso para asegurarse de que el solicitante se comporta de la manera adecuada. Una vez finalizada la restauración, el escritor comprobará que todos los archivos necesarios se han restaurado sin daños. El escritor también puede configurarse para realizar otras operaciones, como errores de eventos específicos.
+Cada instancia del sistema de escritura se inicializa con un archivo de configuración XML que describe exactamente los componentes sobre los que el escritor va a informar y cómo se comporta el escritor. El sistema de escritura se puede configurar para informar sobre varios tipos de escenarios, incluidos escenarios más complicados mediante las interfaces incremental y diferencial. El escritor realizará comprobaciones en varios puntos durante el proceso para asegurarse de que el solicitante se comporta de forma adecuada. Una vez completada la restauración, el sistema de escritura comprobará que todos los archivos necesarios se han restaurado sin daños. El sistema de escritura también se puede configurar para realizar otras operaciones, como eventos específicos con errores.
 
 > [!Note]  
-> Esta herramienta se incluye en el kit de desarrollo de software (SDK) de Microsoft Windows para Windows Vista y versiones posteriores. Puede descargar la Windows SDK desde [https://msdn.microsoft.com/windowsvista](https://msdn.microsoft.com/windows/default.aspx) .
+> Esta herramienta se incluye en el Kit de desarrollo de software (SDK) de Microsoft Windows para Windows Vista y versiones posteriores. Puede descargar el SDK Windows desde [https://msdn.microsoft.com/windowsvista](https://msdn.microsoft.com/windows/default.aspx) .
 
  
 
-En la instalación de Windows SDK, la herramienta VssSampleProvider se puede encontrar en `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para Windows de 64 bits) y `%Program Files(x86)%\Windows Kits\8.1\bin\x86` .
+En la Windows DEL SDK, la herramienta VssSampleProvider se puede encontrar en (para archivos de `%Program Files(x86)%\Windows Kits\8.1\bin\x64` 64 Windows) y `%Program Files(x86)%\Windows Kits\8.1\bin\x86` .
 
-## <a name="running-the-test-writer-tool"></a>Ejecutar la herramienta de escritura de prueba
+## <a name="running-the-test-writer-tool"></a>Ejecución de la herramienta de escritura de pruebas
 
 Para iniciar el escritor de pruebas, escriba lo siguiente en el símbolo del sistema:
 
@@ -32,15 +32,15 @@ Para iniciar el escritor de pruebas, escriba lo siguiente en el símbolo del sis
 
 donde *config-file* es la ruta de acceso a un archivo de configuración que especifica el comportamiento de este escritor.
 
-Para detener el escritor de pruebas, presione CTRL + C.
+Para detener el escritor de pruebas, presione CTRL+C.
 
-Se pueden ejecutar varias instancias del escritor de pruebas al mismo tiempo. Sin embargo, cada instancia del escritor informará del mismo ID. de clase del escritor (aunque es un identificador de instancia de escritor diferente), por lo que las rutas de acceso lógicas y los nombres de componente deben ser únicos en todas las instancias en ejecución simultáneas del escritor.
+Se pueden ejecutar varias instancias del escritor de pruebas al mismo tiempo. Sin embargo, cada instancia del escritor informará del mismo identificador de clase de escritor (aunque sea un identificador de instancia de escritor diferente), por lo que las rutas de acceso lógicas y los nombres de componente deben ser únicos en todas las instancias que se ejecutan simultáneamente del escritor.
 
-Para asegurarse de que el escritor puede comprobar correctamente que el solicitante ha respetado las especificaciones de exclusión de archivos, todos los archivos de los que se realizó una copia de seguridad deberían eliminarse del volumen original antes de intentar restaurarlos. Se recomienda que se almacene una plantilla de cada escenario del escritor, por lo que el escenario se puede volver a crear fácilmente.
+Para asegurarse de que el escritor puede comprobar correctamente que el solicitante ha respetado las especificaciones de archivo de exclusión, todos los archivos de los que se ha hecho una copia de seguridad deben eliminarse del volumen original antes de intentar restaurarlos. Se recomienda almacenar una plantilla de cada escenario de escritor, para que el escenario se pueda volver a crear fácilmente.
 
 ## <a name="using-a-configuration-file"></a>Uso de un archivo de configuración
 
-El siguiente archivo de configuración de ejemplo, vswriter \_config.xml, se puede encontrar en `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` en plataformas x86 y `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` en plataformas x64.
+El siguiente archivo de configuración de ejemplo, vswriterconfig.xml, se puede encontrar en en plataformas \_ `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` x86 y `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` en plataformas x64.
 
 ``` syntax
 <TestWriter usage="USER_DATA">
@@ -63,38 +63,38 @@ El siguiente archivo de configuración de ejemplo, vswriter \_config.xml, se pue
 </TestWriter>
 ```
 
-El elemento raíz de este archivo de configuración se denomina TestWriter. Todos los demás elementos se organizan bajo el elemento TestWriter.
+El elemento raíz de este archivo de configuración se denomina TestWriter. Todos los demás elementos se organizan en el elemento TestWriter.
 
-Uno de los atributos asociados a TestWriter es el atributo Usage. Este atributo especifica el tipo de uso indicado a través de [**IVssExamineWriterMetadata:: GetIdentity**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity). Uno de los valores posibles para este atributo son los \_ datos de usuario.
+Uno de los atributos asociados a TestWriter es el atributo de uso. Este atributo especifica el tipo de uso notificado a través [**de IVssExgvWriterMetadata::GetIdentity**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity). Uno de los valores posibles para este atributo es USER \_ DATA.
 
 El primer elemento secundario del elemento raíz siempre debe ser un elemento RestoreMethod. Este elemento especifica lo siguiente:
 
--   El método restore (en este caso, RESTOre \_ If \_ \_ se puede \_ reemplazar)
+-   Método de restauración (en este caso, RESTORE \_ IF \_ CAN BE \_ \_ REPLACED)
 -   Si el escritor requiere eventos de restauración (en este caso, siempre)
--   Si es necesario un reinicio después de restaurar el escritor (en este caso, no)
+-   Si se requiere un reinicio después de restaurar el sistema de escritura (en este caso, no)
 
-Este elemento puede especificar opcionalmente una asignación de ubicación alternativa. (En este caso, no se especifica ninguna ubicación alternativa).
+Opcionalmente, este elemento puede especificar una asignación de ubicación alternativa. (En este caso, no se especifica ninguna ubicación alternativa).
 
 El segundo elemento secundario es un elemento ExcludeFile. Este elemento hace que el escritor excluya un archivo o un conjunto de archivos de la copia de seguridad.
 
-El tercer elemento secundario es un elemento de componente. Este elemento hace que el escritor agregue un componente a sus metadatos. Un elemento Component contiene atributos para describir el componente y los elementos secundarios para describir el contenido del componente, como el siguiente:
+El tercer elemento secundario es un elemento Component. Este elemento hace que el escritor agregue un componente a sus metadatos. Un elemento Component contiene atributos para describir el componente y los elementos secundarios para describir el contenido del componente, como los siguientes:
 
 -   componentType para indicar si se trata de un grupo de archivos o una base de datos
 -   logicalPath para la ruta de acceso lógica del componente
 -   componentName para el nombre del componente
--   Selectable para indicar el estado Selectable-for-Backup
+-   seleccionable para indicar el estado seleccionable para copia de seguridad
 
-El elemento componente también tiene un elemento secundario denominado ComponentFile para agregar una especificación de archivo a este componente. (Un elemento de componente puede tener un número arbitrario de elementos ComponentFile que se pueden especificar para cada componente). Este elemento ComponentFile tiene los siguientes atributos:
+El elemento Component también tiene un elemento secundario denominado ComponentFile para agregar una especificación de archivo a este componente. (Un elemento Component puede tener un número arbitrario de elementos ComponentFile que se pueden especificar para cada componente). Este elemento ComponentFile tiene los siguientes atributos:
 
--   Ruta de acceso = "c: \\ writerData \\ myFilesHere"
--   filespec = " \* "
--   Recursive = "no"
+-   path="c: \\ writerData \\ myFilesHere"
+-   filespec=" \* "
+-   recursive="no"
 
-Aunque el escritor de pruebas comprueba el comportamiento del solicitante, no comprueba que el archivo de configuración Mantenga siempre la semántica documentada para un escritor. Hay muchas operaciones que un escritor con buen comportamiento no debe hacer (por ejemplo, notificar el mismo archivo en varios componentes) y depende del autor del archivo de configuración XML para mantener estas semánticas.
+Aunque el escritor de pruebas comprueba el comportamiento del solicitante, no comprueba que el archivo de configuración mantenga siempre la semántica documentada para un escritor. Hay muchas operaciones que un escritor bien comportado no debe realizar (por ejemplo, notificar el mismo archivo en varios componentes) y es el autor del archivo de configuración XML el que debe mantener esta semántica.
 
-## <a name="configuring-writer-attributes"></a>Configuración de atributos del escritor
+## <a name="configuring-writer-attributes"></a>Configuración de atributos de escritor
 
-El elemento raíz TestWriter contiene atributos que determinan distintos comportamientos del escritor. Algunos de los comportamientos que se pueden modificar son los siguientes:
+El elemento raíz TestWriter contiene atributos que determinan varios comportamientos del escritor. Algunos de los comportamientos que se pueden modificar son los siguientes:
 
 
 
@@ -111,33 +111,33 @@ El elemento raíz TestWriter contiene atributos que determinan distintos comport
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="verbosity"></span><span id="VERBOSITY"></span>detalle<br/></td>
-<td>El escritor imprime el estado en la consola a medida que recibe eventos y los procesa. El nivel de detalle mostrado se especifica mediante el atributo de detalle. Hay tres niveles de detalle entre los que elegir:<br/> <dl> <dt><span id="low"></span><span id="LOW"></span>habilita</dt> <dd> Solo se imprimirán los errores del escritor o el comportamiento incorrecto del solicitante.<br/> </dd> <dt><span id="medium"></span><span id="MEDIUM"></span>medio</dt> <dd> Todo lo que se encuentra en el nivel de detalle bajo se imprime además de información de estado adicional, como cuando se reciben los eventos. Es el nivel predeterminado.<br/> </dd> <dt><span id="high"></span><span id="HIGH"></span>calidad</dt> <dd> Se indica información de estado detallada sobre el funcionamiento del escritor.<br/> </dd> </dl></td>
+<td><span id="verbosity"></span><span id="VERBOSITY"></span>nivel de detalle<br/></td>
+<td>El escritor imprime el estado en la consola a medida que recibe eventos y los procesa. El nivel de detalle mostrado se especifica mediante el atributo verbosity. Hay tres niveles de detalle entre los que elegir:<br/> <dl> <dt><span id="low"></span><span id="LOW"></span>Bajo</dt> <dd> Solo se imprimirán los errores en el sistema de escritura o el comportamiento incorrecto del solicitante.<br/> </dd> <dt><span id="medium"></span><span id="MEDIUM"></span>Medio</dt> <dd> Todo en el nivel de detalle bajo se imprime además de información de estado adicional, como cuando se reciben eventos. Es el nivel predeterminado.<br/> </dd> <dt><span id="high"></span><span id="HIGH"></span>Alto</dt> <dd> Se notifica información de estado detallada sobre el funcionamiento del sistema de escritura.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="deleteFiles"></span><span id="deletefiles"></span><span id="DELETEFILES"></span>deleteFiles<br/></td>
-<td>Para realizar una comprobación adicional, establezca este atributo en &quot; sí &quot; para que el escritor elimine todos sus archivos inmediatamente después de crear la instantánea de volumen. A continuación, el solicitante debe copiar los archivos de la instantánea, ya que ya no existen en el volumen original. <br/>
+<td>Para realizar una comprobación adicional, establezca este atributo en sí para que el escritor elimine todos sus archivos inmediatamente después de crear la &quot; &quot; instantánea de volumen. A continuación, el solicitante debe copiar los archivos de la instantánea, ya que ya no existen en el volumen original. <br/>
 <blockquote>
 [!Note]<br />
-En el caso de los escritores de asignación, los archivos se eliminan de la ubicación original después de la asignación, pero antes de que se cree la instantánea. Una vez creada la instantánea, los archivos se eliminan del directorio de la.
+En el caso de los escritores de escritores de escritores, los archivos se eliminan de la ubicación original después de la cópiela, pero antes de que se cree la instantánea. Una vez creada la instantánea, los archivos se eliminan del directorio de la instantánea.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="deletePartialFiles"></span><span id="deletepartialfiles"></span><span id="DELETEPARTIALFILES"></span>deletePartialFiles<br/></td>
-<td>Para eliminar archivos parciales, establezca este atributo en &quot; sí &quot; .<br/></td>
+<td>Para eliminar archivos parciales, establezca este atributo en &quot; &quot; sí.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="deleteDifferencedFiles"></span><span id="deletedifferencedfiles"></span><span id="DELETEDIFFERENCEDFILES"></span>deleteDifferencedFiles<br/></td>
-<td>Para eliminar archivos diferenciados, establezca este atributo en &quot; sí &quot; .<br/></td>
+<td>Para eliminar archivos diferenciados, establezca este atributo en &quot; &quot; sí.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="checkIncludes"></span><span id="checkincludes"></span><span id="CHECKINCLUDES"></span>checkIncludes<br/></td>
-<td>Establezca este atributo en &quot; sí &quot; para que el escritor Compruebe que todos los archivos de los que se ha realizado una copia de seguridad se han restaurado en una ubicación adecuada y que el archivo no está dañado. Los archivos parciales y los archivos diferenciados también se administran correctamente.<br/></td>
+<td>Establezca este atributo en sí para que el escritor compruebe que todos los archivos de los que se ha realizado una copia de seguridad se han restaurado en una ubicación adecuada y que el archivo no se ha &quot; &quot; dañado. Los archivos parciales y los archivos diferenciados también se controlan correctamente.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="checkExcludes"></span><span id="checkexcludes"></span><span id="CHECKEXCLUDES"></span>checkExcludes<br/></td>
-<td>Establezca este atributo en &quot; sí &quot; para que el escritor Compruebe que los archivos que coinciden con una especificación de archivo en la lista de exclusión no se restauran. Para que funcione correctamente, los directorios de restauración se deben vaciar antes de la restauración.<br/></td>
+<td>Establezca este atributo en sí para que el escritor compruebe que los archivos que coinciden con una especificación de archivo de la lista de exclusión &quot; &quot; no se restauran. Para que funcione correctamente, los directorios de restauración deben vaciarse antes de la restauración.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -148,7 +148,7 @@ En el caso de los escritores de asignación, los archivos se eliminan de la ubic
 
 ## <a name="specifying-alternate-location-mappings"></a>Especificar asignaciones de ubicación alternativas
 
-Una asignación de ubicación alternativa especifica una ubicación en la que restaurar si el método de restauración es VSS \_ WRE \_ restore \_ en una \_ \_ ubicación alternativa o si se produce un error en la restauración normal de un componente. Un escritor puede informar de las asignaciones de ubicación alternativas al solicitante mediante el método [**IVssExamineWriterMetadata:: GetAlternateLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getalternatelocationmapping) . Puede Agregar asignaciones de ubicación alternativas al archivo de configuración del escritor de pruebas agregando subelementos AlternateLocationMapping al elemento RestoreMethod.
+Una asignación de ubicación alternativa especifica una ubicación a la que restaurar si el método de restauración es VSS WRE RESTORE TO ALTERNATE LOCATION o si se produce un error en la restauración \_ \_ normal de un \_ \_ \_ componente. Un escritor puede notificar sus asignaciones de ubicación alternativas al solicitante mediante el método [**IVssExgvWriterMetadata::GetAlternateLocationMapping.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getalternatelocationmapping) Puede agregar asignaciones de ubicación alternativas al archivo de configuración del escritor de pruebas agregando subelementos AlternateLocationMapping al elemento RestoreMethod.
 
 El siguiente elemento RestoreMethod contiene un subelemento AlternateLocationMapping.
 
@@ -163,13 +163,13 @@ El siguiente elemento RestoreMethod contiene un subelemento AlternateLocationMap
 </RestoreMethod>
 ```
 
-Este ejemplo especifica que el solicitante debe intentar primero restaurar todos los archivos que coincidan con c: \\ files \\ \* . txt en el directorio c: \\ files. Si uno de estos archivos no se puede reemplazar, el solicitante debe restaurar todos los archivos al directorio c: \\ altfiles en su lugar. El solicitante debe guardar esta asignación de ubicación alternativa mediante el método [**IVssBackupComponents:: AddAlternativeLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping) . Si el escritor de pruebas está configurado para comprobar si los archivos se han restaurado, también comprobará si el solicitante ha llamado a **AddAlternativeLocationMapping**.
+En este ejemplo se especifica que el solicitante debe intentar primero restaurar todos los archivos que coinciden con c:.txt al directorio \\ \\ \* de archivos \\ c:. Si no se puede reemplazar uno de estos archivos, el solicitante debe restaurar todos los archivos en el directorio c: \\ altfiles en su lugar. El solicitante debe guardar esta asignación de ubicación alternativa mediante el método [**IVssBackupComponents::AddAlternativeLocationMapping.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping) Si el escritor de pruebas está configurado para comprobar si se han restaurado los archivos, también comprobará si el solicitante ha llamado a **AddAlternativeLocationMapping**.
 
-## <a name="specifying-files-to-be-excluded"></a>Especificar los archivos que se van a excluir
+## <a name="specifying-files-to-be-excluded"></a>Especificar los archivos que se excluirán
 
-Cada escritor puede especificar una lista de especificaciones de archivo que especifican los archivos que el solicitante debe excluir de la copia de seguridad. Puede agregar estas especificaciones de archivo al archivo de configuración del escritor de pruebas agregando subelementos ExcludeFile al elemento raíz TestWriter.
+Cada escritor puede especificar una lista de especificaciones de archivo que especifican los archivos para que el solicitante los excluya de la copia de seguridad. Puede agregar estas especificaciones de archivo al archivo de configuración del escritor de pruebas agregando subelementos ExcludeFile al elemento raíz TestWriter.
 
-Este es un ejemplo de un subelemento ExcludeFile que excluye todos los archivos del directorio C: \\ files que coinciden con C: \\ temp \* . \* .
+Este es un ejemplo de un subelemento ExcludeFile que excluye todos los archivos del directorio C: \\ files que coinciden con C: temp \\ \* \* .
 
 ``` syntax
     <ExcludeFile path="c:\files" 
@@ -177,9 +177,9 @@ Este es un ejemplo de un subelemento ExcludeFile que excluye todos los archivos 
                  recursive="no"/>
 ```
 
-## <a name="backing-up-spit-writers"></a>Realizar copias de seguridad de los escritores de
+## <a name="backing-up-spit-writers"></a>Copia de seguridad de escritores de escritores de escritores
 
-Muchos escritores actúan como "redactores". Un redactor de asignaciones crea archivos intermedios, o "genera archivos", basándose en un conjunto original de archivos, y coloca los archivos de asignación en una ubicación alternativa en el momento de la copia de seguridad. El escritor usa el método [**IVssWMFiledesc:: GetAlternateLocation**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getalternatelocation) para notificar al solicitante que debe hacer copia de seguridad de estos archivos desde la ubicación alternativa. Sin embargo, estos archivos se deben restaurar en la ubicación activa de los archivos originales. El escritor de pruebas se puede configurar para que actúe como un escritor de la forma de una especificación de archivo determinada.
+Muchos escritores actúan como "escritores de escritores de escritores". Un escritor de escritores de escritores crea archivos intermedios, o "archivos de almacenamiento", basados en un conjunto original de archivos, y coloca los archivos en una ubicación alternativa en el momento de la copia de seguridad. El escritor usa el [**método IVssWMFiledesc::GetAlternateLocation**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getalternatelocation) para notificar al solicitante que debe hacer una copia de seguridad de estos archivos desde la ubicación alternativa. Sin embargo, estos archivos deben restaurarse en la ubicación activa de los archivos originales. El escritor de pruebas se puede configurar para que actúe como escritor de escritores de escritura para una especificación de archivo determinada.
 
 El siguiente elemento ComponentFile contiene un atributo alternatePath:
 
@@ -190,13 +190,13 @@ El siguiente elemento ComponentFile contiene un atributo alternatePath:
                    alternatePath="c:\files\spit" />
 ```
 
-En este ejemplo se configura el escritor de pruebas para copiar todos los archivos que coincidan con c: \\ files \\ \* . txt en el directorio c: \\ files alsign \\ inmediatamente antes de que se cree la instantánea de volumen. El solicitante debe hacer una copia de seguridad de los archivos del \\ directorio c: files alliberar \\ . Si el escritor de pruebas está configurado para eliminar archivos, elimina los archivos originales antes de crear la instantánea, por lo que no aparecen en el directorio c: \\ files del volumen de instantáneas. En este caso, los archivos de c: \\ los archivos \\ se eliminan después de crear la instantánea, por lo que se les debe hacer una copia de seguridad desde el directorio c: \\ files \\ en el volumen de instantáneas.
+En este ejemplo se configura el escritor de pruebas para copiar todos los archivos que coinciden con c:.txt en el directorio c: files directory inmediatamente antes de crear la instantánea \\ \\ \* \\ de \\ volumen. El solicitante debe hacer una copia de seguridad de los archivos desde el directorio c: \\ \\ files directory. Si el escritor de pruebas está configurado para eliminar archivos, elimina los archivos originales antes de crear la instantánea, por lo que no aparecen en el directorio de archivos c: del volumen de \\ instantáneas. En este caso, los archivos de c: files se eliminan después de crear la instantánea, por lo que se debe hacer una copia de seguridad de ellos desde el directorio c: files del volumen de \\ \\ \\ \\ instantáneas.
 
 ## <a name="reporting-component-dependencies"></a>Dependencias de componentes de informes
 
-Los escritores pueden especificar una dependencia entre un componente local y un componente que existe en otro escritor. Estas dependencias se envían al solicitante mediante [**IVssWMComponent:: GetDependency**](/windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdependency). El escritor de pruebas puede configurarse para notificar estas dependencias mediante la adición de uno o varios subelementos de dependencia al elemento de componente.
+Los escritores pueden especificar una dependencia entre un componente local y un componente que existe en otro escritor. Estas dependencias se notifican al solicitante mediante [**IVssWMComponent::GetDependency**](/windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdependency). Test Writer se puede configurar para notificar estas dependencias agregando uno o varios subelementos Dependency al elemento Component.
 
-El siguiente elemento de componente contiene un subelemento de dependencia:
+El siguiente elemento Component contiene un subelemento Dependency:
 
 ``` syntax
     <Component componentType="filegroup"
@@ -209,48 +209,48 @@ El siguiente elemento de componente contiene un subelemento de dependencia:
     </Component>
 ```
 
-La dependencia se especifica como atributos del elemento de dependencia. writerId es el identificador de clase del escritor que contiene el destino de la dependencia, logicalPath es la ruta de acceso lógica al componente en ese escritor y componentName es el nombre del componente. En este caso, si el solicitante realiza una copia de seguridad de "WriterComponent" en el escritor actual, también debe hacer una copia de seguridad del componente "ComponentPath \\ Writer2Component" en el escritor de destino.
+La dependencia se especifica como atributos del elemento Dependency. writerId es el identificador de clase del escritor que contiene el destino de la dependencia, logicalPath es la ruta de acceso lógica al componente en ese escritor y componentName es el nombre del componente. En este caso, si el solicitante hace una copia de seguridad de "WriterComponent" en el sistema de escritura actual, también debe hacer una copia de seguridad del componente "ComponentPath Writer2Component" en el escritor \\ de destino.
 
 > [!Note]  
-> El escritor de pruebas no realiza ninguna comprobación para asegurarse de que se respetan las dependencias.
+> Test Writer no realiza ninguna comprobación para asegurarse de que se respetan las dependencias.
 
  
 
-## <a name="failing-events"></a>Eventos con error
+## <a name="failing-events"></a>Eventos con errores
 
-El escritor de pruebas se puede configurar para que se produzca un error en cualquiera de los eventos normales que recibe un escritor. Estos eventos son los siguientes:
+El escritor de pruebas se puede configurar para producir un error en cualquiera de los eventos normales que recibe un escritor. Estos eventos son los siguientes:
 
 
 
 | Evento                                                                                                                                    | Descripción                                                                                                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Identify"></span><span id="identify"></span><span id="IDENTIFY"></span>Identificar<br/>                                     | Se recibe como respuesta a una llamada a [**IVssBackupComponents:: GatherWriterMetadata**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwritermetadata) . Un error aquí hará que no se notifique al escritor.<br/>                                                                 |
-| <span id="PrepareForBackup"></span><span id="prepareforbackup"></span><span id="PREPAREFORBACKUP"></span>PrepareForBackup<br/>     | Se recibe como respuesta al solicitante que llama a [**IVssBackupComponents::P repareforbackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup).<br/>                                                                                                                 |
-| <span id="PrepareForSnapsot"></span><span id="prepareforsnapsot"></span><span id="PREPAREFORSNAPSOT"></span>PrepareForSnapsot<br/> | Se recibe cuando el solicitante llama a [**IVssBackupComponents::D osnapshotset**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), pero antes de crear la instantánea.<br/>                                                                                              |
-| <span id="Freeze"></span><span id="freeze"></span><span id="FREEZE"></span>Inmovilice<br/>                                             | Se recibe inmediatamente después de [*PrepareForSnapshot*](vssgloss-p.md), pero aún antes de que se cree la instantánea.<br/>                                                                                                      |
-| <span id="Thaw"></span><span id="thaw"></span><span id="THAW"></span>Moviliza<br/>                                                     | Se recibe una vez finalizada la creación de la instantánea.<br/>                                                                                                                                                                                                     |
-| <span id="PostSnapshot"></span><span id="postsnapshot"></span><span id="POSTSNAPSHOT"></span>Instantánea<br/>                     | Recibido después de que se complete la reanudación, pero antes de que se complete [**IVssBackupComponents::D osnapshotset**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset) .<br/>                                                                                                                   |
-| <span id="Abort"></span><span id="abort"></span><span id="ABORT"></span>Aborta<br/>                                                 | Se recibe si transcurre demasiado tiempo entre [*Freeze*](vssgloss-f.md) e [*reanudación*](vssgloss-t.md) o si el solicitante llama a [**IVssBackupComponents:: AbortBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-abortbackup).<br/> |
-| <span id="BackupComplete"></span><span id="backupcomplete"></span><span id="BACKUPCOMPLETE"></span>BackupComplete<br/>             | Se recibe cuando se cierra el solicitante. Los errores aquí nunca se inscribirán.<br/>                                                                                                                                                                                 |
-| <span id="PreRestore"></span><span id="prerestore"></span><span id="PRERESTORE"></span>Prerestauración<br/>                             | Se recibe cuando el solicitante llama a [**IVssBackupComponents::P**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore)volver a restaurar.<br/>                                                                                                                                           |
-| <span id="PostRestore"></span><span id="postrestore"></span><span id="POSTRESTORE"></span>Postrestore<br/>                         | Se recibe cuando el solicitante llama a [**IVssBackupComponents::P ostrestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-postrestore).<br/>                                                                                                                                         |
+| <span id="Identify"></span><span id="identify"></span><span id="IDENTIFY"></span>Identificar<br/>                                     | Se recibe como respuesta a una [**llamada a IVssBackupComponents::GatherWriterMetadata.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwritermetadata) Un error aquí hará que no se notimente el escritor.<br/>                                                                 |
+| <span id="PrepareForBackup"></span><span id="prepareforbackup"></span><span id="PREPAREFORBACKUP"></span>PrepareForBackup<br/>     | Se recibe como respuesta al solicitante que llama a [**IVssBackupComponents::P repareForBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup).<br/>                                                                                                                 |
+| <span id="PrepareForSnapsot"></span><span id="prepareforsnapsot"></span><span id="PREPAREFORSNAPSOT"></span>PrepareForSnapsot<br/> | Se recibe cuando el solicitante llama a [**IVssBackupComponents::D oSnapshotSet**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), pero antes de crear la instantánea.<br/>                                                                                              |
+| <span id="Freeze"></span><span id="freeze"></span><span id="FREEZE"></span>Congelar<br/>                                             | Se recibe inmediatamente después [*de PrepareForSnapshot,*](vssgloss-p.md)pero todavía antes de que se cree la instantánea.<br/>                                                                                                      |
+| <span id="Thaw"></span><span id="thaw"></span><span id="THAW"></span>Deshielo<br/>                                                     | Se recibe una vez finalizada la creación de la instantánea.<br/>                                                                                                                                                                                                     |
+| <span id="PostSnapshot"></span><span id="postsnapshot"></span><span id="POSTSNAPSHOT"></span>PostSnapshot<br/>                     | Se recibe una vez completado Thaw, pero antes de [**que finalice IVssBackupComponents::D oSnapshotSet.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset)<br/>                                                                                                                   |
+| <span id="Abort"></span><span id="abort"></span><span id="ABORT"></span>Aborta<br/>                                                 | Se recibe si transcurre demasiado tiempo entre [*Freeze*](vssgloss-f.md) y [*Thaw*](vssgloss-t.md) o si el solicitante llama a [**IVssBackupComponents::AbortBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-abortbackup).<br/> |
+| <span id="BackupComplete"></span><span id="backupcomplete"></span><span id="BACKUPCOMPLETE"></span>BackupComplete<br/>             | Se recibe cuando se cierra el solicitante. Los errores aquí nunca se notifican.<br/>                                                                                                                                                                                 |
+| <span id="PreRestore"></span><span id="prerestore"></span><span id="PRERESTORE"></span>PreRestore<br/>                             | Se recibe cuando el solicitante llama [**a IVssBackupComponents::P reStore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore).<br/>                                                                                                                                           |
+| <span id="PostRestore"></span><span id="postrestore"></span><span id="POSTRESTORE"></span>PostRestore<br/>                         | Se recibe cuando el solicitante llama [**a IVssBackupComponents::P ostRestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-postrestore).<br/>                                                                                                                                         |
 
 
 
  
 
-Estos errores se configuran agregando uno o más subelementos FailEvent al elemento raíz TestWriter. Hay dos clases de errores que se pueden establecer: reintentos y no reintentables. Los errores con posibilidad de reintento son errores que pueden desaparecer si se vuelve a intentar todo el proceso de copia de seguridad, aunque es improbable que los errores no reintentables desaparezcan. El tipo de error para el evento se elige en función del atributo de reintento.
+Estos errores se configuran agregando uno o varios subelementos FailEvent al elemento raíz TestWriter. Hay dos clases de errores que se pueden establecer: reintentar y no reintentar. Los errores reintentables son errores que pueden desaparecer si se vuelve a intentar todo el proceso de copia de seguridad, mientras que es poco probable que los errores que no se pueden reintentar desaparezcan. El tipo de error para el evento se elige en función del atributo que se puede reintentar.
 
-A continuación se muestra un ejemplo de un error básico no reintentable:
+Este es un ejemplo de un error básico que no se puede reintentar:
 
 ``` syntax
     <FailEvent writerEvent="Freeze"
                retryable="no" />
 ```
 
-En este ejemplo se producirá un error en el escritor durante el evento [*Freeze*](vssgloss-f.md) . [**IVssBackupComponents:: GatherWriterStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus) informará de que el error del escritor es de VSS \_ E \_ WRITERERROR no \_ reintentable.
+Este ejemplo provocará un error en el escritor durante el [*evento Freeze.*](vssgloss-f.md) [**IVssBackupComponents::GatherWriterStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus) informa del error del sistema de escritura como VSS \_ E \_ WRITERERROR \_ NONRETRYABLE.
 
-A continuación se muestra un ejemplo de un error de reintento básico:
+Este es un ejemplo de un error básico que se puede reintentar:
 
 ``` syntax
     <FailEvent writerEvent="Freeze"
@@ -258,25 +258,25 @@ A continuación se muestra un ejemplo de un error de reintento básico:
                numFailures="2"/>
 ```
 
-En este ejemplo se producirá un error en el escritor las dos primeras veces que recibe un evento [*Freeze*](vssgloss-f.md) . Después de las dos primeras veces, el escritor siempre se realizará correctamente. El error del escritor informado a través de [**GatherWriterStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus) será un código de error de reintento aleatorio.
+Este ejemplo hará que el sistema de escritura no se pueda escribir las dos primeras veces que recibe un [*evento Freeze.*](vssgloss-f.md) Después de las dos primeras veces, el escritor siempre se realizará correctamente. El error del escritor notificado [**a través de GatherWriterStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus) será un código de error que se puede reintentar aleatoriamente.
 
 ## <a name="declaring-supported-backup-types"></a>Declarar tipos de copia de seguridad admitidos
 
-Los escritores comunican qué tipos de copia de seguridad se admiten a través de la llamada a [**IVssExamineWriterMetadata:: GetBackupSchema**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema)del solicitante. El elemento raíz TestWriter contiene atributos para cada tipo de copia de seguridad para indicar la compatibilidad. Estos atributos son supportsCopy, supportsDifferential, supportsIncremental y supportsLog. Para indicar la compatibilidad con un tipo de copia de seguridad determinado, establezca el atributo correspondiente en "sí".
+Los escritores comunican qué tipos de copia de seguridad se admiten a través de la [**llamada de IVssExgvWriterMetadata::GetBackupSchema del**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema)solicitante. El elemento raíz TestWriter contiene atributos para cada tipo de copia de seguridad para indicar la compatibilidad. Estos atributos son supportsCopy, supportsDifferential, supportsIncremental y supportsLog. Para indicar la compatibilidad con un tipo de copia de seguridad determinado, establezca el atributo correspondiente en "sí".
 
-Si el solicitante establece el tipo de copia de seguridad en un tipo de copia de seguridad que no es compatible con el escritor, el escritor notará este hecho durante [**PrepareForBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup), pero de otro modo funcionará correctamente.
+Si el solicitante establece el tipo de copia de seguridad en un tipo de copia de seguridad que no es compatible con el escritor, el escritor tendrá en cuenta este hecho durante [**PrepareForBackup,**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup)pero de lo contrario funcionará correctamente.
 
-## <a name="indicating-the-file-backup-type"></a>Que indica el tipo de copia de seguridad de archivos
+## <a name="indicating-the-file-backup-type"></a>Indica el tipo de copia de seguridad de archivos
 
-El método [**IVssWMFiledesc:: GetBackupTypeMask**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getbackuptypemask) devuelve una máscara de archivos al solicitante que indica cómo se debe realizar la copia de seguridad de un archivo. Esto indicará si un archivo es necesario o no durante determinados tipos de copia de seguridad y si se requiere una instantánea durante determinados tipos de copia de seguridad. Los tipos de copia de seguridad de esta máscara de caracteres se explican con mayor longitud en el [rol solicitante de documentos en la copia de seguridad de almacenes complejos](requestor-role-in-backing-up-complex-stores.md).
+El [**método IVssWMFiledesc::GetBackupTypeMask**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getbackuptypemask) devuelve una máscara de bits al solicitante que indica cómo se debe hacer una copia de seguridad de un archivo. Esto indicará si un archivo es necesario o no durante determinados tipos de copia de seguridad, así como si se requiere una instantánea durante determinados tipos de copia de seguridad. Los tipos de copia de seguridad de esta máscara de bits se explican con mayor longitud en el documento Rol del solicitante en Copia de [seguridad de almacenes complejos](requestor-role-in-backing-up-complex-stores.md).
 
-En el escritor de pruebas, los elementos de esta máscara de máscara se especifican mediante el establecimiento de atributos en cada elemento ComponentFile. Los atributos fullBackupRequired, diffBackupRequired, incBackupRequired y logBackupRequired especifican Cuándo es necesario hacer una copia de seguridad de un archivo. Los atributos fullSnapshotRequired, diffSnapshotRequired, incSnapshotRequired y logSnapshotRequired especifican Cuándo se debe realizar una copia de seguridad de un archivo desde una instantánea de un volumen (y nunca desde el volumen original). El valor predeterminado para todos estos valores es "sí", lo que indica que siempre se debe hacer una copia de seguridad de un archivo y se debe realizar una copia de seguridad de una instantánea de un volumen.
+En Test Writer, los elementos de esta máscara de bits se especifican estableciendo atributos en cada elemento ComponentFile. Los atributos fullBackupRequired, diffBackupRequired, incBackupRequired y logBackupRequired especifican cuándo es necesario realizar una copia de seguridad de un archivo. Los atributos fullSnapshotRequired, diffSnapshotRequired, incSnapshotRequired y logSnapshotRequired especifican cuándo se debe hacer una copia de seguridad de un archivo desde una instantánea de un volumen (y nunca desde el volumen original). El valor predeterminado de todos estos valores es "yes", lo que indica que siempre se debe hacer una copia de seguridad de un archivo y se debe hacer una copia de seguridad desde una instantánea de un volumen.
 
 ## <a name="adding-partial-files"></a>Agregar archivos parciales
 
-Durante el procesamiento de [**DoSnapshotSet**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), un escritor tiene la oportunidad de agregar archivos parciales a cada componente. Estos archivos parciales se muestran mediante [**IVssComponent:: GetPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile). El escritor de pruebas se puede configurar para agregar archivos parciales mediante la especificación de subelementos PartialFile en un elemento componente.
+Durante el procesamiento de [**DoSnapshotSet,**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset)un escritor tiene la oportunidad de agregar archivos parciales a cada componente. Estos archivos parciales se notifican [**mediante IVssComponent::GetPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile). Test Writer se puede configurar para agregar archivos parciales especificando subelementos PartialFile en un elemento Component.
 
-A continuación se muestra un ejemplo de un elemento de componente que tiene dos subelementos PartialFile:
+Este es un ejemplo de un elemento Component que tiene dos subelementos PartialFile:
 
 ``` syntax
     <Component componentType="filegroup"
@@ -295,15 +295,15 @@ A continuación se muestra un ejemplo de un elemento de componente que tiene dos
     </Component>
 ```
 
-Solo se deben especificar de esta manera los archivos parciales que coincidan parcialmente con un ComponentFile existente (como en el primer archivo parcial del ejemplo) o nuevos archivos parciales que estén en el mismo volumen que un ComponentFile existente (como en el segundo archivo parcial). Para este componente, el solicitante debe realizar una copia de seguridad completa de todos los archivos que coincidan con c: \\ files \\ \* . txt, excepto partial.txt. Después, el solicitante debe hacer una copia de seguridad de los intervalos especificados (donde un intervalo es un desplazamiento seguido de una longitud) para los archivos c: \\ files \\partial.txt y c: \\ files2 \\partial.txt.
+Solo se deben especificar de esta manera los archivos parciales que coincidan parcialmente con un ComponentFile existente (como en el primer archivo parcial del ejemplo) o los nuevos archivos parciales que se encuentran en el mismo volumen que un ComponentFile existente (como en el segundo archivo parcial). Para este componente, el solicitante debe hacer una copia de seguridad completa de todos los archivos que coincidan con c: \\.txt \\ \* excepto partial.txt. A continuación, el solicitante debe hacer una copia de seguridad de los intervalos especificados (donde un intervalo es un desplazamiento seguido de una longitud) para los archivos c: filespartial.txt y \\ \\ c: \\ files2 \\partial.txt.
 
-Si el escritor está configurado para comprobar las restauraciones de archivos, solo se comprobarán los intervalos de copia de seguridad del archivo parcial en el momento de la restauración. Las modificaciones realizadas en otras partes del archivo pasarán desapercibidas. Si se establece el atributo deletePartialFiles del elemento raíz TestWriter, los archivos parciales se eliminan del volumen original inmediatamente después de crear la instantánea.
+Si el sistema de escritura está configurado para comprobar las restauraciones de archivos, solo se comprobarán los intervalos de copia de seguridad del archivo parcial en el momento de la restauración. Las modificaciones en otras partes del archivo pasarán desapercibidas. Si se establece el atributo deletePartialFiles del elemento raíz TestWriter, los archivos parciales se eliminan del volumen original inmediatamente después de crear la instantánea.
 
 ## <a name="adding-differenced-files"></a>Agregar archivos diferenciados
 
-Durante el procesamiento de [**DoSnapshotSet**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), un escritor puede Agregar archivos diferenciados a cada componente. Estos archivos diferenciados se muestran mediante [**IVssComponent:: GetDifferencedFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfile). El escritor de pruebas se puede configurar para agregar archivos diferenciados mediante la especificación de subelementos DifferencedFile en un elemento componente.
+Durante el procesamiento de [**DoSnapshotSet,**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset)un escritor puede agregar archivos diferenciados a cada componente. Estos archivos diferenciados se notifican [**mediante IVssComponent::GetDifferencedFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfile). Test Writer se puede configurar para agregar archivos diferenciados especificando subelementos DifferencedFile en un elemento Component.
 
-A continuación se muestra un ejemplo de un elemento de componente que tiene dos subelementos DifferencedFile:
+Este es un ejemplo de un elemento Component que tiene dos subelementos DifferencedFile:
 
 ``` syntax
     <Component componentType="filegroup"
@@ -332,19 +332,19 @@ A continuación se muestra un ejemplo de un elemento de componente que tiene dos
     </Component>
 ```
 
-A diferencia de los archivos parciales, los archivos diferenciados nunca deben coincidir parcialmente con una especificación ComponentFile. La especificación de archivo en un elemento DifferencedFile debe coincidir exactamente con un ComponentFile (como en el primer archivo diferenciado en el ejemplo) o no debe coincidir en absoluto, sino en un volumen al que se hace referencia en un ComponentFile (como en el segundo archivo diferenciado). Los valores de fecha y hora deben ser relativos a la zona horaria local, pero se convertirán a GMT antes de que se notifique al solicitante. En el ejemplo, solo se realizarán copias de seguridad de los archivos que coincidan con c: \\ files \\ \* . txt o c: \\ files2 \\ \* . txt que se han modificado desde 1/22/2003:12:44:17.
+A diferencia de los archivos parciales, los archivos diferenciados nunca deben coincidir parcialmente con una especificación ComponentFile. La especificación de archivo de un elemento DifferencedFile debe coincidir exactamente con un ComponentFile (como en el primer archivo diferenciado del ejemplo) o no debe coincidir en absoluto, pero debe estar en un volumen al que se hace referencia en un ComponentFile (como en el segundo archivo diferenciado). Los valores de fecha y hora deben ser relativos a la zona horaria local, pero se convertirán a GMT antes de que se notifican al solicitante. En el ejemplo, solo se hará una copia de seguridad de los archivos que coinciden con c:.txt o c: files2.txt que se han modificado desde \\ \\ \* \\ el \\ \* 22/1/2003:12:44:17.
 
 Si el escritor de pruebas está configurado para comprobar las restauraciones de archivos, solo se comprobará la restauración de los archivos modificados. Si se establece el atributo deleteDifferencedFiles del elemento raíz TestWriter, los archivos diferenciados se eliminan del volumen original inmediatamente después de crear la instantánea.
 
 ## <a name="new-targets"></a>Nuevos destinos
 
-Algunos escritores permiten al solicitante informarles de que se ha elegido una nueva ubicación para restaurar determinados archivos en. El escritor indica que admite este modo como parte de la máscara de la máscara devuelta por [**IVssExamineWriterMetadata:: GetBackupSchema**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema). De forma predeterminada, el escritor de pruebas siempre admite nuevos destinos. Esta compatibilidad se puede deshabilitar si se establece el atributo supportsNewTarget del elemento raíz TestWriter en "no".
+Determinados escritores permiten al solicitante informarles de que se ha elegido una nueva ubicación en la que restaurar determinados archivos. El sistema de escritura indica que admite este modo como parte de la máscara de bits devuelta por [**IVssExgvWriterMetadata::GetBackupSchema**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema). De forma predeterminada, Test Writer siempre admite nuevos destinos. Esta compatibilidad se puede deshabilitar estableciendo el atributo supportsNewTarget del elemento raíz TestWriter en "no".
 
-Si un escritor admite nuevos destinos, el solicitante puede informar al escritor de nuevos destinos llamando a [**IVssBackupComponents:: AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget). El escritor comprobará entonces la nueva ubicación de destino para comprobar la restauración en lugar de la ubicación original.
+Si un sistema de escritura admite nuevos destinos, el solicitante puede informar al escritor de nuevos destinos mediante una llamada a [**IVssBackupComponents::AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget). A continuación, el escritor comprobará la nueva ubicación de destino para comprobar la restauración en lugar de la ubicación original.
 
 ## <a name="more-information"></a>Más información
 
-El escritor de pruebas admite más opciones de configuración que no se describen aquí. El esquema completo de todas las capacidades de configuración del escritor de pruebas se especifica en swriter.xml `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` (para Windows de 64 bits) y `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` (para windows de 32 bits). Este archivo contiene un esquema XML que describe completamente todos los elementos y atributos que componen un archivo de configuración. Cada elemento y cada atributo de este archivo se comentan con una descripción que documenta el uso del atributo o del elemento.
+Test Writer admite más opciones de configuración que no se describen aquí. El esquema completo de todas las funcionalidades de configuración del sistema de escritura de pruebas se especifica en swriter.xml en (para el Windows de 64 bits) y (para las Windows `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` de 32 bits). Este archivo contiene un esquema XML que describe por completo todos los elementos y atributos que forma un archivo de configuración. Cada elemento y cada atributo de este archivo se comentan con una descripción que documenta el uso de ese elemento o atributo.
 
  
 

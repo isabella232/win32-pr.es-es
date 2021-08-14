@@ -1,25 +1,25 @@
 ---
-title: Seguridad e información de error ampliada
-description: La información de error extendida ofrece datos muy útiles a la hora de solucionar problemas de RPC, pero muchos de ellos se consideran confidenciales en las organizaciones con seguridad.
+title: Seguridad e información de error extendida
+description: La información de error extendida ofrece datos muy útiles al solucionar un problema de RPC, pero muchas organizaciones con control de seguridad consideran estos datos confidenciales.
 ms.assetid: ca6ef213-e59d-4b4e-ae7e-f5b20d11fd01
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b2029b40937dcef0622f6163e5e8f95b7006ade
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f246e86dee31ea5e755c45211e3bd949657cdf95c37bf6ab4de3706be09fdec3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103779087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118925692"
 ---
-# <a name="security-and-extended-error-information"></a>Seguridad e información de error ampliada
+# <a name="security-and-extended-error-information"></a>Seguridad e información de error extendida
 
-La información de error extendida ofrece datos muy útiles a la hora de solucionar problemas de RPC, pero muchos de ellos se consideran confidenciales en las organizaciones con seguridad. En consideración de estos problemas de seguridad, la información de error ampliada está desactivada de forma predeterminada.
+La información de error extendida ofrece datos muy útiles al solucionar un problema de RPC, pero muchas organizaciones con control de seguridad consideran estos datos confidenciales. A la vista de estos problemas de seguridad, la información de error extendida está desactivada de forma predeterminada.
 
-La información de error extendida se sigue generando cuando la información de error extendida está deshabilitada, pero la información nunca se transmite a través de los límites de proceso o equipo. Este enfoque permite que la información de errores sea utilizada por herramientas que tienen acceso al espacio de direcciones de proceso, como depuradores. Cuando está activada, se genera información de error extendida que se puede enviar a través de los límites del proceso y del equipo. Actualmente, la información de error extendida se usa para las secuencias de protocolos orientados a conexiones y RPC local (LRPC). Se implementa parcialmente para los datagramas.
+La información de error extendida se sigue generando cuando la información de error extendida está deshabilitada, pero la información nunca se transmite a través de los límites del proceso o del equipo. Este enfoque permite que las herramientas que tienen acceso al espacio de direcciones del proceso, como los depuradores, utilicen la información de errores. Cuando está activada, se genera información de error extendida y se puede enviar a través de los límites del proceso y del equipo. Actualmente, se usa información de error extendida para secuencias de protocolo orientadas a conexiones y RPC local (LRPC). Se implementa parcialmente para datagramas.
 
- 
+ 
 
- 
+ 
 
 
 

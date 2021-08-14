@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsPropertyValue (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsPropertyValue proporcionan acceso a las propiedades que se describen en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsPropertyValue (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsPropertyValue proporcionan acceso a las propiedades descritas en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: 1039d4a9-bef8-457d-9a32-3743c14adef1
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsPropertyValue ADSI
+- AdsI de los métodos de propiedad IADsPropertyValue
 topic_type:
 - apiref
 api_name:
@@ -51,16 +51,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 196e8097e5beaa5350738971be29de89b43c17a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aaa64ef7d7802306902060a9eb0e2423f3155ba032115c831212403cda658784
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427621"
 ---
 # <a name="iadspropertyvalue-property-methods"></a>Métodos de propiedad IADsPropertyValue
 
-Los métodos de propiedad de la interfaz [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) proporcionan acceso a las propiedades que se describen en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) proporcionan acceso a las propiedades descritas en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -69,14 +69,14 @@ Los métodos de propiedad de la interfaz [**IADsPropertyValue**](/windows/deskto
 **ADsType**
 </dt> <dd> <dl>
 
-El tipo de datos del valor de la propiedad, tomado de la enumeración [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) , de la propiedad Value.
+Tipo de datos del valor de la propiedad, tomado de la [**enumeración ADSTYPEENUM,**](/windows/win32/api/iads/ne-iads-adstypeenum) de la propiedad value.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -101,10 +101,10 @@ Valor booleano.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -129,7 +129,7 @@ Cadena que se va a interpretar. Distingue mayúsculas de minúsculas.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -157,7 +157,7 @@ Cadena que se va a interpretar. No hay distinción de mayúsculas y minúsculas.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -185,7 +185,7 @@ Cadena que identifica el nombre distintivo (ruta de acceso) de un objeto de valo
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -213,10 +213,10 @@ Valor entero.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -237,11 +237,11 @@ HRESULT put_Integer(
 **LargeInteger**
 </dt> <dd> <dl>
 
-Puntero a la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) del objeto que implementa [**IADsLargeInteger**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger) para este valor.
+Puntero a la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) del objeto que implementa [**IADsLargeInteger**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger) para este valor.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **IDispatch**
@@ -269,7 +269,7 @@ Texto que se va a interpretar. Tipo numérico.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -293,14 +293,14 @@ HRESULT put_NumericString(
 **OctetString**
 </dt> <dd> <dl>
 
-Matriz Variant de caracteres de un byte.
+Matriz variante de caracteres de un byte.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -325,7 +325,7 @@ Mostrar o imprimir cadena.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -349,11 +349,11 @@ HRESULT put_PrintableString(
 **SecurityDescriptor**
 </dt> <dd> <dl>
 
-Puntero a la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) del objeto que implementa [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) para este valor.
+Puntero a la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) del objeto que implementa [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) para este valor.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **IDispatch**
@@ -374,17 +374,17 @@ HRESULT put_SecurityDescriptor(
 
 </dt> </dl> </dd> <dt>
 
-**UTCTime**
+**HORA UTC**
 </dt> <dd> <dl>
 
-Fecha del tipo de **\_ datos VT** expresado en formato de hora universal coordinada (UTC).
+Fecha del tipo **\_ VT DATE** expresada en formato de hora universal coordinada (UTC).
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **fecha**
+Tipo de datos de scripting: **DATE**
 </dt> <dt>
 
 
@@ -404,25 +404,25 @@ HRESULT put_UTCTime(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las propiedades [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) solo establecerán o recuperarán un valor de propiedad del tipo especificado. Por ejemplo, la propiedad **CaseIgnoreString** de un atributo de tipo **\_ \_ cadena DN ADSTYPE**, como el atributo **distinguishedName** , producirá un error. La propiedad **CaseIgnoreString** solo funcionará en atributos de tipo **ADS \_ Case \_ Ignore \_ String**. En la tabla siguiente se asigna el valor de [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) a la propiedad **IADsPropertyValue** correspondiente que se puede usar para tener acceso a ese tipo de atributo. Si un valor **ADSTYPEENUM** no aparece en esta tabla, no está disponible en la interfaz **IADsPropertyValue** . La interfaz [**IADsPropertyValue2**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2) se debe usar para obtener los datos en los otros formatos.
+Las [**propiedades IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) solo establecerán o recuperarán un valor de propiedad del tipo especificado. Por ejemplo, la **propiedad CaseIgnoreString** en un atributo de tipo **ADSTYPE \_ DN \_ STRING**, como el atributo **distinguishedName,** producirá un error. La **propiedad CaseIgnoreString** solo funcionará en atributos de tipo **ADS CASE IGNORE \_ \_ \_ STRING**. En la tabla siguiente se asigna el valor [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) a la propiedad **IADsPropertyValue** correspondiente que se puede usar para tener acceso a ese tipo de atributo. Si un **valor ADSTYPEENUM no** aparece en esta tabla, no está disponible en la **interfaz IADsPropertyValue.** La [**interfaz IADsPropertyValue2**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2) debe usarse para obtener datos en los demás formatos.
 
 
 
-| Valor [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) | Propiedad [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) |
+| [**Valor ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) | [**Propiedad IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) |
 |------------------------------------------|---------------------------------------------------------|
-| **ADSTYPE \_ \_ cadena DN**                  | **DNString**                                            |
-| **\_ \_ cadena exacta de caso ADSTYPE \_**         | **CaseExactString**                                     |
-| **ADSTYPE \_ caso \_ omitir \_ cadena**        | **CaseIgnoreString**                                    |
-| **ADSTYPE \_ cadena imprimible \_**           | **PrintableString**                                     |
-| **ADSTYPE \_ \_ cadena numérica**             | **NumericString**                                       |
-| **ADSTYPE \_ booleano**                     | **Boolean**                                             |
-| **\_entero ADSTYPE**                     | **Entero**                                             |
-| **ADSTYPE \_ cadena de octeto \_**               | **OctetString**                                         |
-| **\_hora UTC de ADSTYPE \_**                   | **UTCTime**                                             |
-| **\_entero grande de ADSTYPE \_**              | **LargeInteger**                                        |
-| **descriptor de seguridad de ADSTYPE \_ NT \_ \_**    | **SecurityDescriptor**                                  |
+| **ADSTYPE \_ DN \_ STRING**                  | **DNString**                                            |
+| **CADENA EXACTA \_ DE MAYÚSCULAS \_ Y MINÚSCULAS ADSTYPE \_**         | **CaseExactString**                                     |
+| **ADSTYPE \_ CASE \_ IGNORE \_ STRING**        | **CaseIgnoreString**                                    |
+| **ADSTYPE \_ CADENA IMPRIMIBLE \_**           | **PrintableString**                                     |
+| **ADSTYPE \_ NUMERIC \_ STRING**             | **NumericString**                                       |
+| **ADSTYPE \_ BOOLEAN**                     | **Boolean**                                             |
+| **ADSTYPE \_ INTEGER**                     | **Entero**                                             |
+| **ADSTYPE \_ OCTET \_ STRING**               | **OctetString**                                         |
+| **ADSTYPE \_ UTC \_ TIME**                   | **HORA UTC**                                             |
+| **ADSTYPE \_ LARGE \_ INTEGER**              | **LargeInteger**                                        |
+| **ADSTYPE \_ NT \_ SECURITY \_ DESCRIPTOR**    | **SecurityDescriptor**                                  |
 
 
 
@@ -473,7 +473,7 @@ Cleanup:
 
 
 
-En el código siguiente se muestra cómo usar **IADsPropertyValue:: get \_ CaseIgnoreString** para recuperar el valor de la propiedad Description de una lista de propiedades.
+El código siguiente muestra cómo usar **IADsPropertyValue::get \_ CaseIgnoreString** para recuperar el valor de la propiedad description de una lista de propiedades.
 
 
 ```C++
@@ -589,17 +589,17 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsPropertyValue se define como 79FA9AD0-A97C-11D0-8534-00C04FD8D503<br/>    |
+| IID<br/>                      | IID IADsPropertyValue se define como \_ 79FA9AD0-A97C-11D0-8534-00C04FD8D503<br/>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

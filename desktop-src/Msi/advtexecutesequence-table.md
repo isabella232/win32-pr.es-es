@@ -1,21 +1,21 @@
 ---
-description: En la tabla AdvtExecuteSequence se enumeran las acciones que el instalador llama cuando se ejecuta la acción de anuncio de nivel superior.
+description: La tabla AdvtExecuteSequence enumera las acciones a las que llama el instalador cuando se ejecuta la acción ADVERTISE de nivel superior.
 ms.assetid: 8873c161-a709-48b8-a66f-fe2ee9be859f
 title: Tabla AdvtExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b68a3f69cc7473b2364f169545743941d752f51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fed9a566b721be1065e825cbf7cd6650a52c83ace653dc2730f1fcf7785d125c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118381594"
 ---
 # <a name="advtexecutesequence-table"></a>Tabla AdvtExecuteSequence
 
-En la tabla AdvtExecuteSequence se enumeran las acciones que el instalador llama cuando se ejecuta la [acción de anuncio](advertise-action.md) de nivel superior.
+La tabla AdvtExecuteSequence enumera las acciones a las que llama el instalador cuando se ejecuta la acción [ADVERTISE](advertise-action.md) de nivel superior.
 
-Solo se pueden usar las siguientes acciones en la tabla AdvtExecuteSequence. No se pueden usar acciones personalizadas en esta tabla.
+Solo se pueden usar las siguientes acciones en la tabla AdvtExecuteSequence. Las acciones personalizadas no se pueden usar en esta tabla.
 
 [CostFinalize](costfinalize-action.md)
 
@@ -45,7 +45,7 @@ Solo se pueden usar las siguientes acciones en la tabla AdvtExecuteSequence. No 
 
 [RegisterProgIdInfo](registerprogidinfo-action.md)
 
-Las columnas son idénticas a las de la [tabla InstallExecuteSequence](installexecutesequence-table.md). La tabla AdvtExecuteSequence tiene las columnas siguientes.
+Las columnas son idénticas a las de [la tabla InstallExecuteSequence](installexecutesequence-table.md). La tabla AdvtExecuteSequence tiene las columnas siguientes.
 
 
 
@@ -63,39 +63,39 @@ Las columnas son idénticas a las de la [tabla InstallExecuteSequence](installex
 
 <dl> <dt>
 
-<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Actuar
+<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Acción
 </dt> <dd>
 
-Nombre de la [acción estándar](standard-actions.md) que va a ejecutar el instalador. Esta es la clave principal de la tabla.
+Nombre de la [acción estándar que](standard-actions.md) el instalador va a ejecutar. Esta es la clave principal de la tabla.
 
 </dd> <dt>
 
-<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Cumple
+<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Condición
 </dt> <dd>
 
-Expresión lógica. Si la expresión se evalúa como false, se omite la acción. Si la sintaxis de la expresión no es válida, la secuencia finaliza y devuelve iesBadActionData. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea sintaxis de la [instrucción condicional](conditional-statement-syntax.md).
+Expresión lógica. Si la expresión se evalúa como false, se omite la acción. Si la sintaxis de la expresión no es válida, la secuencia finaliza y devuelve iesBadActionData. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea [Sintaxis de instrucciones condicionales.](conditional-statement-syntax.md)
 
 </dd> <dt>
 
-<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>SPRJ
+<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>Secuencia
 </dt> <dd>
 
-Un valor positivo indica la posición de la secuencia de la acción. Los siguientes valores negativos indican que se llama a la acción si el instalador devuelve la marca de finalización. Cada marca de finalización (valor negativo) se puede usar sin más de una acción. Varias acciones pueden tener marcas de finalización, pero deben ser marcas diferentes. Las marcas de finalización (valores negativos) suelen usarse con [cuadros de diálogo](dialog-boxes.md).
+Un valor positivo indica la posición de secuencia de la acción. Los siguientes valores negativos indican que se llama a la acción si el instalador devuelve la marca de terminación. Cada marca de terminación (valor negativo) se puede usar sin más de una acción. Varias acciones pueden tener marcas de terminación, pero deben ser marcas diferentes. Las marcas de terminación (valores negativos) se usan normalmente con cuadros [de diálogo](dialog-boxes.md).
 
 
 
-| Marca de terminación          | Value | Descripción                                                                          |
+| Marca de terminación          | Valor | Descripción                                                                          |
 |---------------------------|-------|--------------------------------------------------------------------------------------|
-| msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con los cuadros de diálogo de [salida](exit-dialog.md) .               |
-| msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con los cuadros de diálogo de [UserExit](userexit-dialog.md) .     |
-| msiDoActionStatusFailure  | -3    | Se termina la salida grave. Se usa con un cuadro de diálogo de [FatalError](fatalerror-dialog.md) . |
+| msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con [los cuadros de](exit-dialog.md) diálogo Salir.               |
+| msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con [los cuadros de diálogo UserExit.](userexit-dialog.md)     |
+| msiDoActionStatusFailure  | -3    | Finaliza la salida irrescindiendo. Se usa con cuadros [de diálogo FatalError.](fatalerror-dialog.md) |
 | msiDoActionStatusSuspend  | -4    | La instalación está suspendida.                                                                |
 
 
 
  
 
-Cero, todos los demás números negativos o un valor null indican que nunca se llama a la acción.
+Cero, todos los demás números negativos o un valor NULL indican que nunca se llama a la acción.
 
 </dd> </dl>
 

@@ -1,23 +1,23 @@
 ---
-description: En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una cadena de efectos de XAudio2.
+description: En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una cadena de efectos XAudio2.
 ms.assetid: dc325584-13f7-231a-e0c7-17f38d54ae11
 title: 'Cómo: usar XAPOFX en XAudio2'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77b0bb4cbeabb38f408d9102a2534634e8eed7cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 618e508d5e023c29c373193aa38da9d0e7f9f76c94a57f63e50df0c346426b6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696156"
 ---
 # <a name="how-to-use-xapofx-in-xaudio2"></a>Cómo: usar XAPOFX en XAudio2
 
-En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una cadena de efectos de XAudio2.
+En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una cadena de efectos XAudio2.
 
-## <a name="to-use-an-effect-from-xapofx-in-an-xaudio2-effect-chain"></a>Para usar un efecto de XAPOFX en una cadena de efectos de XAudio2
+## <a name="to-use-an-effect-from-xapofx-in-an-xaudio2-effect-chain"></a>Para usar un efecto de XAPOFX en una cadena de efectos XAudio2
 
-1.  Cree el efecto pasando el CLSID de un efecto XAPOFX a la función [**CreateFX**](/windows/desktop/api/XAPOFX/nf-xapofx-createfx) .
+1.  Cree el efecto pasando el CLSID de un efecto XAPOFX a la [**función CreateFX.**](/windows/desktop/api/XAPOFX/nf-xapofx-createfx)
 
     En este caso, se crea el efecto de reverberación simplificado FXReverb.
 
@@ -28,7 +28,7 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
 
     
 
-2.  Rellenar una estructura de [**\_ \_ descriptor de efectos de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_descriptor) con datos.
+2.  Rellene una [**estructura DEL DESCRIPTOR DE EFECTO \_ \_ XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_descriptor) con datos.
 
     ```
     XAUDIO2_EFFECT_DESCRIPTOR descriptor;
@@ -39,7 +39,7 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
 
     
 
-3.  Rellenar una estructura de [**\_ \_ cadena de efectos de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_chain) con datos.
+3.  Rellene una [**estructura \_ EFFECT \_ CHAIN de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_chain) con datos.
 
     ```
     XAUDIO2_EFFECT_CHAIN chain;
@@ -49,7 +49,7 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
 
     
 
-4.  Aplique la cadena de efectos a una voz de XAudio2 con la función [**SetEffectChain**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain) .
+4.  Aplique la cadena de efectos a una voz XAudio2 con la [**función SetEffectChain.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain)
 
     ```
     pVoice->SetEffectChain(&chain);
@@ -58,11 +58,11 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
     
 
     > [!Note]  
-    > También puede aplicar una cadena de efectos a una voz cuando cree la voz pasando la cadena como un parámetro a [**IXAudio2:: CreateSourceVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice), [**IXAudio2:: CreateSubmixVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsubmixvoice)o [**IXAudio2:: CreateMasteringVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice).
+    > También puede aplicar una cadena de efectos a una voz al crear la voz pasando la cadena como parámetro a [**IXAudio2::CreateSourceVoice,**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice) [**IXAudio2::CreateSubmixVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsubmixvoice)o [**IXAudio2::CreateMasteringVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice).
 
      
 
-5.  Libere el efecto con IUnknown:: Release. Al crear un XAPO, tendrá un recuento de referencias de 1. Cuando el XAPO se pasa a XAudio2 con [**SetEffectChain**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain), XAudio2 incrementa el recuento de referencias en el XAPO. La liberación de la referencia del cliente a XAPO permite a XAudio2 tomar posesión del XAPO. Si XAudio2 tiene la única referencia a XAPO, esta referencia se elimina cuando se deja de usar en XAudio2. Si el código de cliente necesita mantener una referencia a XAPO (por ejemplo, para reutilizarlo más adelante), puede omitir este paso.
+5.  Libere el efecto con IUnknown::Release. Al crear un XAPO, tendrá un recuento de referencias de 1. Cuando el XAPO se pasa a XAudio2 con [**SetEffectChain,**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain)XAudio2 incrementa el recuento de referencias en el XAPO. Liberar la referencia del cliente a XAPO permite que XAudio2 tome posesión del XAPO. Si XAudio2 tiene la única referencia al XAPO, esta referencia se elimina cuando XAudio2 ya no la usa. Si el código de cliente necesita mantener una referencia al XAPO (por ejemplo, para reutilizarlo más adelante), puede omitir este paso.
 
     ```
     pXAPO->Release();
@@ -70,9 +70,9 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
 
     
 
-6.  Rellena la estructura del parámetro, si existe, asociada al efecto.
+6.  Rellene la estructura de parámetros, si la hay, asociada al efecto.
 
-    En este caso, la estructura de [**\_ parámetros FXREVERB**](/windows/desktop/api/xapofx/ns-xapofx-fxreverb_parameters) se usa para establecer la difusión y el tamaño de la sala que el efecto de reverberación debe usar.
+    En este caso, la estructura PARAMETERS de [**FXREVERB \_**](/windows/desktop/api/xapofx/ns-xapofx-fxreverb_parameters) se usa para establecer el tamaño de habitación y la reverberación que debe usar el efecto de reverberación.
 
     ```
     FXREVERB_PARAMETERS XAPOParameters;
@@ -82,7 +82,7 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
 
     
 
-7.  Para pasar la estructura del parámetro de efecto al efecto, llame a la función [**SetEffectParameters**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters) en la voz a la que está asociado el efecto.
+7.  Pase la estructura del parámetro de efecto al efecto mediante una llamada a la función [**SetEffectParameters**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters) en la voz a la que está asociado el efecto.
 
     ```
     hr = pVoice->SetEffectParameters( 0, &XAPOParameters, sizeof( FXREVERB_PARAMETERS ) );

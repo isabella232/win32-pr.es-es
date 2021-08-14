@@ -1,9 +1,9 @@
 ---
-title: Estructura de WINBIO_BDB_ANSI_381_HEADER (Winbio \_ Types. h)
-description: Especifica información acerca de una serie de muestras de huellas digitales o Palm.
+title: WINBIO_BDB_ANSI_381_HEADER estructura (Winbio \_ types.h)
+description: Especifica información sobre una serie de muestras de huellas digitales o de ramas.
 ms.assetid: 8b0caa50-9bba-45c4-b4bf-514540894793
 keywords:
-- Plataforma de biometría de Windows API de WINBIO_BDB_ANSI_381_HEADER Structure
+- WINBIO_BDB_ANSI_381_HEADER estructura Windows API de Marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9da04643bbdff273a2594394011ba46c16bfa29d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3bc9eee5d3ca99799c76b849e7b990eee2b94c61309c4d729f736ad33a00eecc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911284"
 ---
-# <a name="winbio_bdb_ansi_381_header-structure"></a>\_Estructura del encabezado WINBIO BDB \_ ANSI \_ 381 \_
+# <a name="winbio_bdb_ansi_381_header-structure"></a>Estructura DE \_ ENCABEZADO \_ ANSI \_ 381 \_ de WINBIO BDB
 
-La estructura de **\_ encabezado WINBIO BDB \_ ANSI \_ 381 \_** especifica información sobre una serie de muestras de huellas digitales o Palm.
+La **estructura WINBIO \_ BDB ANSI \_ \_ 381 \_ HEADER** especifica información sobre una serie de muestras de huellas digitales o de hojas de árbol.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ typedef struct _WINBIO_BDB_ANSI_381_HEADER {
 **RecordLength**
 </dt> <dd>
 
-Tamaño, en bytes, de esta estructura más el tamaño de todas las estructuras de [**\_ registro WINBIO BDB \_ ANSI \_ 381 \_**](winbio-bdb-ansi-381-record.md) para la huella digital o los ejemplos de Palm capturados por un usuario final. Solo los seis bytes inferiores son válidos.
+El tamaño, en bytes, de esta estructura más el tamaño de todas las estructuras [**\_ DE REGISTRO ANSI \_ \_ \_ 381 DE WINBIO BDB**](winbio-bdb-ansi-381-record.md) para las muestras de huella digital o de ramas capturadas de un usuario final. Solo los seis bytes bajos son válidos.
 
 </dd> <dt>
 
@@ -68,24 +68,24 @@ Especifica el formato. Actualmente, debe ser 0x46495200.
 
 </dd> <dt>
 
-**NúmeroDeVersión**
+**VersionNumber**
 </dt> <dd>
 
-Especifica el número de versión. Actualmente, este debe ser 0x30313000, que corresponde internamente a 0.1.0.0.
+Especifica el número de versión. Actualmente, debe ser 0x30313000 que se corresponda internamente con 0.1.0.0.
 
 </dd> <dt>
 
 **ProductId**
 </dt> <dd>
 
-Estructura [**de \_ \_ formato registrada en WINBIO**](winbio-registered-format.md) que contiene el formato de datos registrado como par de propietario/tipo.
+Estructura [**DE FORMATO REGISTRADO \_ \_ DE WINBIO**](winbio-registered-format.md) que contiene el formato de datos registrado como un par propietario/tipo.
 
 </dd> <dt>
 
 **CaptureDeviceId**
 </dt> <dd>
 
-Contiene el identificador de unidad del dispositivo usado para capturar el ejemplo.
+Contiene el identificador de unidad del dispositivo utilizado para capturar el ejemplo.
 
 </dd> <dt>
 
@@ -113,21 +113,21 @@ Especifica la resolución vertical del examen.
 **HorizontalImageResolution**
 </dt> <dd>
 
-Especifica la resolución horizontal de la huella digital capturada o la imagen de Palm.
+Especifica la resolución horizontal de la huella digital capturada o la imagen de la mano.
 
 </dd> <dt>
 
 **VerticalImageResolution**
 </dt> <dd>
 
-Especifica la resolución vertical de la huella digital capturada o la imagen de Palm.
+Especifica la resolución vertical de la huella digital capturada o la imagen de la mano.
 
 </dd> <dt>
 
 **ElementCount**
 </dt> <dd>
 
-Número de registros de dedo o Palm en esta estructura.
+Número de registros de dedo o de mano en esta estructura.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Especifica el número de bits de un píxel. Puede ser de 1 a 16 bits por píxel 
 **ImageCompressionAlg**
 </dt> <dd>
 
-Especifica el algoritmo utilizado para comprimir el dedo o la imagen de Palm.
+Especifica el algoritmo utilizado para comprimir la imagen de dedo o de mano.
 
 </dd> <dt>
 
@@ -161,9 +161,9 @@ Especifica el algoritmo utilizado para comprimir el dedo o la imagen de Palm.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

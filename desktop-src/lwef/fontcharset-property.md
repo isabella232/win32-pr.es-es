@@ -4,36 +4,36 @@ description: Propiedad FontCharSet
 ms.assetid: 2f23a242-d620-4766-8f59-cf158aa55969
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e4561de9af823b4213266a93b7bfa2e29588c3c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ca702bb1ff9dfe020f7fdb43b57a74fd1e5e46a14caff8735f21170ed8e2f1b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479333"
 ---
 # <a name="fontcharset-property"></a>Propiedad FontCharSet
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
-Devuelve o establece el juego de caracteres de la fuente que se muestra en el globo de palabras del carácter especificado.
+Devuelve o establece el juego de caracteres para la fuente que se muestra en el globo de palabras del carácter especificado.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agente ***. Caracteres ("*** CharacterID * *"). Balloon. FontCharSet* *  \[  =  *valor*\]
+*agent***. Caracteres ("**_CharacterID_*_"). Valor de Balloon.FontCharSet_ *  \[  =  \]
 
 
 
 | Parte    | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *value* | Valor entero que especifica el juego de caracteres utilizado por la fuente. A continuación se muestran algunos valores de configuración comunes para el valor: 0 caracteres estándar de Windows (ANSI).<br/> 1 juego de caracteres predeterminado.<br/> 2 el juego de caracteres de símbolos.<br/> 128 juego de caracteres de doble byte (DBCS) único para la versión en japonés de Windows.<br/> 129 juego de caracteres de doble byte (DBCS) único para la versión coreana de Windows.<br/> 134 juego de caracteres de doble byte (DBCS) único para la versión de chino simplificado de Windows.<br/> 136 juego de caracteres de doble byte (DBCS) único para la versión en chino tradicional de Windows.<br/> 255 caracteres extendidos que se muestran normalmente en aplicaciones de Microsoft MS-DOS.<br/> Para otros valores de juego de caracteres, consulte la documentación del SDK de la plataforma.<br/> |
+| *value* | Valor entero que especifica el juego de caracteres utilizado por la fuente. A continuación se muestra una configuración común para value: 0 Standard Windows characters (ANSI).<br/> 1 Juego de caracteres predeterminado.<br/> 2 Juego de caracteres de símbolo.<br/> Juego de caracteres de doble byte (DBCS) de 128 único en la versión japonesa de Windows.<br/> Juego de caracteres de doble byte (DBCS) de 129 único para la versión en coreano de Windows.<br/> 134 Juego de caracteres de doble byte (DBCS) único para la versión en chino simplificado de Windows.<br/> Juego de caracteres de doble byte (DBCS) de 136 único para la versión en chino tradicional de Windows.<br/> 255 Caracteres extendidos que normalmente muestran las aplicaciones MS-DOS de Microsoft.<br/> Para otros valores de juego de caracteres, consulte la documentación del SDK de plataforma.<br/> |
 
 
 
@@ -41,20 +41,20 @@ Devuelve o establece el juego de caracteres de la fuente que se muestra en el gl
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor predeterminado para el juego de caracteres del globo de palabras de un carácter se establece en el editor de caracteres del agente de Microsoft. Además, el usuario puede invalidar la configuración del juego de caracteres para todos los caracteres de la hoja de propiedades del agente de Microsoft.
+El valor predeterminado del juego de caracteres del globo de palabras de un carácter se establece en el Editor de caracteres de Microsoft Agent. Además, el usuario puede invalidar la configuración del juego de caracteres para todos los caracteres de la hoja de propiedades de Microsoft Agent.
 
-Esta propiedad solo se aplica al uso de la aplicación cliente del carácter; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
+Esta propiedad solo se aplica al uso del carácter por parte de la aplicación cliente; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
 
 > [!Note]  
-> Si usa un carácter que no ha compilado, compruebe las propiedades [**FontName**](fontname-property.md) y **FontCharSet** del carácter para determinar si son adecuados para la configuración regional. Es posible que tenga que establecer estos valores antes de usar el método [**Speak**](speak-method.md) para asegurarse de que el texto se muestre correctamente en el globo de palabras.
+> Si usa un carácter que no compiló, compruebe las propiedades [**FontName**](fontname-property.md) y **FontCharSet** del carácter para determinar si son adecuadas para la configuración regional. Es posible que tenga que establecer estos valores antes de usar el [**método Speak**](speak-method.md) para asegurarse de que se muestra el texto adecuado en el globo de palabras.
 
  
 
 ## <a name="see-also"></a>Consulte también
 
-[**FontName (propiedad)**](fontname-property.md)
+[**FontName, propiedad**](fontname-property.md)
 
 
  

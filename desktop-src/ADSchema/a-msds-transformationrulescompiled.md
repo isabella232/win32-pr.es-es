@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Transformation-rules-Compiled
-description: BLOB que contiene reglas de transformación compiladas.
+title: Atributo ms-DS-Transformation-Rules-Compiled
+description: Blob que contiene reglas de transformación compiladas.
 ms.assetid: 13fc1bd5-b9dc-4934-bccf-86d4d32243c6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos compilados de MS-DS-Transformation-rules
-- Esquema de AD de atributo msDS-TransformationRulesCompiled
+- Esquema de AD del atributo ms-DS-Transformation-Rules-Compiled
+- msDS-TransformationRules Schema de AD del atributoCompiled
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbadd0d7b2ddce46894d0acdbd90507ab0721142
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6eacc372da07c13f46ef8ac0bccaa31ff944715ed56d922907c7f9fa13a36ef9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425662"
 ---
-# <a name="ms-ds-transformation-rules-compiled-attribute"></a>atributo MS-DS-Transformation-rules-Compiled
+# <a name="ms-ds-transformation-rules-compiled-attribute"></a>Atributo ms-DS-Transformation-Rules-Compiled
 
-BLOB que contiene reglas de transformación compiladas.
+Blob que contiene reglas de transformación compiladas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DS-Transformation-reglas-compiladas                   |
-| Nombre para mostrar de LDAP | msDS-TransformationRulesCompiled                      |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-DS-Transformation-Rules-Compiled                   |
+| Ldap-Display-Name | msDS-TransformationRulesCompiled                      |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2190                               |
-| System-ID-GUID    | 0bb49a10-536b-bc4d-a273-0bab0dd4bd10                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 0bb49a10-536b-bc4d-a273-0bab0dd4bd10                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -48,20 +48,20 @@ BLOB que contiene reglas de transformación compiladas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                  |
+| Id. de vínculo                | \-                                                                                                  |
 | MAPI-Id                | \-                                                                                                  |
-| System-Only            | True                                                                                                |
-| Tiene un único valor       | True                                                                                                |
-| Está indexado             | False                                                                                               |
-| En el catálogo global      | False                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                        |
+| System-Only            | Verdadero                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                |
+| Está indexado             | Falso                                                                                               |
+| En el catálogo global      | Falso                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                        |
 | Range-Lower            | \-                                                                                                  |
 | Range-Upper            | \-                                                                                                  |
 | Search-Flags           | 0x00000080                                                                                          |
 | System-Flags           | 0x00000011                                                                                          |
-| Clases usadas en        | [**MS-DS-Claims-Transformation-Policy-Type**](c-msds-claimstransformationpolicytype.md)<br/> |
+| Clases usadas en        | [**ms-DS-Claims-Transformation-Policy-Type**](c-msds-claimstransformationpolicytype.md)<br/> |
 
 
 

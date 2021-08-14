@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura de blobs KEYSVC define un BLOB de servicio de claves. La función RKeyPFXInstall usa esta estructura.
+description: La estructura KEYSVC \_ BLOB define un BLOB de servicio de claves. La función RKeyPFXInstall usa esta estructura.
 ms.assetid: 255b5fab-6271-4d3f-9c56-a63278b8b104
-title: KEYSVC_BLOB estructura (Rkeysvcc. h)
+title: KEYSVC_BLOB estructura (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 801be5f5a0d431f488da6e13e1f3082d147c5974
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e71a090558b31444c550146a2cb99f062080db9b80e7d69561ff891b93262b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992975"
 ---
-# <a name="keysvc_blob-structure"></a>KEYSVC \_ estructura de BLOB
+# <a name="keysvc_blob-structure"></a>ESTRUCTURA DE BLOBS KEYSVC \_
 
-La estructura de **\_ blobs KEYSVC** define un BLOB de servicio de claves. La función [**RKeyPFXInstall**](rkeypfxinstall.md) usa esta estructura.
+La **estructura KEYSVC \_ BLOB** define un BLOB de servicio de claves. La función [**RKeyPFXInstall**](rkeypfxinstall.md) usa esta estructura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ typedef struct _KEYSVC_BLOB {
 
 <dl> <dt>
 
-**CB**
+**Cb**
 </dt> <dd>
 
-Valor **ULong** que especifica el tamaño, en bytes, de **PB**.
+Valor **ULONG** que especifica el tamaño, en bytes, de **pb**.
 
 </dd> <dt>
 
-**PB**
+**pb**
 </dt> <dd>
 
-Un puntero a un **byte** que contiene el BLOB, en formato [*PKCS \# 12*](../secgloss/p-gly.md) .
+Puntero a un **BYTE que** contiene el BLOB, en [*formato PKCS \# 12.*](../secgloss/p-gly.md)
 
 </dd> </dl>
 
@@ -58,22 +58,22 @@ Un puntero a un **byte** que contiene el BLOB, en formato [*PKCS \# 12*](../secg
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**RKeyPFXInstall**](rkeypfxinstall.md)
 </dt> <dt>
 
-[**KEYSVC \_ cadena UNIcode \_**](keysvc-unicode-string.md)
+[**CADENA UNICODE KEYSVC \_ \_**](keysvc-unicode-string.md)
 </dt> </dl>
 
  

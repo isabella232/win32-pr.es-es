@@ -4,24 +4,24 @@ description: Reproducir una película
 ms.assetid: 779c49b1-3fbd-48a7-b9fc-04bb952aaa9e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c01d96d82c83a1dda39d8b28a8e70b1658049f11
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1d7c25d56076a6291e6b857b85d6db3cba2344a252183109067ab9b7fc1f4859
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372676"
 ---
 # <a name="playing-a-movie"></a>Reproducir una película
 
-En los siguientes ejemplos se muestra cómo configurar y reproducir un archivo de audio y vídeo intercalado (AVI).
+En los ejemplos siguientes se muestra cómo configurar y reproducir un archivo de audio y vídeo intercalado (AVI).
 
 -   [Abrir la ventana de reproducción](opening-the-playback-window.md)
 -   [Configuración de la ventana de reproducción](setting-up-the-playback-window.md)
--   [Reproducir el archivo AVI](playing-the-avi-file.md)
+-   [Reproducción del archivo AVI](playing-the-avi-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

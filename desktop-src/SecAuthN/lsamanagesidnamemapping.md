@@ -1,7 +1,7 @@
 ---
 UID: ''
-title: LsaManageSidNameMapping función)
-description: Agrega o quita asignaciones de SID/nombre del conjunto de asignaciones registrado con el servicio de búsqueda de LSA.
+title: Función LsaManageSidNameMapping
+description: Agrega o quita las asignaciones de SID o nombre del conjunto de asignaciones registrado con el servicio de búsqueda LSA.
 old-location: ''
 ms.assetid: na
 ms.date: 04/10/2019
@@ -36,18 +36,18 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: fc0065c3964718d690149693f3c71ec4e9f676ec
-ms.sourcegitcommit: 382c7259008374408368c173e0027fb641c848fe
+ms.openlocfilehash: 6c2a66a318076588b725f74e9f03a23b8a134595b196dbf140850e72a7d78d8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "104358759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118921864"
 ---
-# <a name="lsamanagesidnamemapping-function"></a>LsaManageSidNameMapping función)
+# <a name="lsamanagesidnamemapping-function"></a>Función LsaManageSidNameMapping
 
 ## <a name="description"></a>Descripción
 
-La función **LsaManageSidNameMapping** agrega o quita asignaciones SID/Name del conjunto de asignaciones registrado con el servicio de búsqueda de LSA.
+La **función LsaManageSidNameMapping** agrega o quita las asignaciones de SID o nombre del conjunto de asignaciones registrado con el servicio de búsqueda de LSA.
 
 ```cpp
 void WINAPI LsaManageSidNameMapping(
@@ -61,31 +61,31 @@ void WINAPI LsaManageSidNameMapping(
 
 ### <a name="optype-in"></a>OpType [in]
 
-Indica si se llama a esta función para agregar o quitar una asignación de SID/nombre.
+Indica si se llama a esta función para agregar o quitar una asignación de SID o nombre.
 
 ### <a name="opinput-in"></a>OpInput [in]
 
-Indica los valores de dominio, cuenta y SID que se van a usar durante esta operación. También se pueden establecer marcas adicionales en esta estructura.
+Indica los valores de dominio, cuenta y SID que se usarán durante esta operación. También se pueden establecer marcas adicionales dentro de esta estructura.
 
 ### <a name="opoutput-out"></a>OpOutput [out]
 
-Contiene un valor de [LSA_SID_NAME_MAPPING_OPERATION_ERROR](/previous-versions/windows/desktop/legacy/dn280707(v=vs.85)) que indica si la operación se ha realizado correctamente o no.
+Contiene un valor de [LSA_SID_NAME_MAPPING_OPERATION_ERROR](/previous-versions/windows/desktop/legacy/dn280707(v=vs.85)) que indica que la operación se ha correcto o no.
 
-| Value | Significado |
+| Valor | Significado |
 |-------|---------|
-| **Success** | La operación se completó sin errores. |
-| **NonMappingError** | Se ha producido un error no relacionado con la asignación de nombre de SID. |
-| **NameCollision** | Error de la operación debido a un conflicto de nombres. |
-| **SidCollision** | Error de la operación debido a un conflicto de SID. |
+| **Success** | La operación se completa sin errores. |
+| **NonMappingError** | Se ha producido un error no relacionado con la asignación de nombres de SID. |
+| **NameCollision** | Error de operación debido a una colisión de nombres. |
+| **SidCollision** | Error de operación debido a una colisión de SID. |
 | **DomainNotFound** | No se encontró el dominio correspondiente. |
 | **DomainSidPrefixMismatch** | El SID proporcionado no tiene el prefijo de dominio correcto. |
-| **MappingNotFound** | No se encontró la asignación en la memoria caché. |
+| **MappingNotFound** | Asignación no encontrada en la memoria caché. |
 
 ## <a name="returns"></a>Devoluciones
 
 Si la asignación se inserta correctamente, el valor devuelto es STATUS_SUCCESS.
-De lo contrario, si se produce un error en la función debido a conflictos de SID o de nombre, se devolverá STATUS_INVALID_PARAMETER error.
+De lo contrario, si se produce un error en la función debido a conflictos de nombre o SID, STATUS_INVALID_PARAMETER error se devolverá.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también

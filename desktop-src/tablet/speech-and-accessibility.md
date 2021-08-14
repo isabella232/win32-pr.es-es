@@ -1,23 +1,23 @@
 ---
-description: Para que las aplicaciones sean accesibles, se debe exponer la información sobre el contenido de la pantalla mediante las utilidades de reconocimiento de voz.
+description: Para que las aplicaciones sean accesibles, la información sobre el contenido de la pantalla debe exponerse mediante las utilidades de reconocimiento de voz.
 ms.assetid: 6fc4116b-1516-49e2-acad-da376d2efa50
 title: Voz y accesibilidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e3632b9cd225ee9146d56148974bc823210e553
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34b043b683b6754cb46752201cf0db39a1336f80b04e6f6dd1c2fb6e995d5a05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118715505"
 ---
 # <a name="speech-and-accessibility"></a>Voz y accesibilidad
 
-Para que las aplicaciones sean accesibles, se debe exponer la información sobre el contenido de la pantalla mediante las utilidades de reconocimiento de voz. Estas utilidades necesitan identificar y nombrar controles específicos para que puedan reconocer el nombre de un control que se habla y manipular ese control en respuesta a comandos orales.
+Para que las aplicaciones sean accesibles, la información sobre el contenido de la pantalla debe exponerse mediante las utilidades de reconocimiento de voz. Estas utilidades necesitan identificar y dar nombre a controles específicos para que puedan reconocer un nombre de control que se habla y manipular ese control en respuesta a los comandos hablados.
 
-Por ejemplo, al utilizar una utilidad de entrada de voz, un usuario podría decir "archivo", "Configurar página" para elegir el elemento de menú de comandos correspondiente y, a continuación, decir "horizontal" para activar la casilla correspondiente. Debe exponer la información sobre estos elementos para lograr el objetivo deseado.
+Por ejemplo, al usar una utilidad de entrada de voz, un usuario podría decir "Archivo", luego "Configuración de página" para elegir el elemento de menú de comandos correspondiente y, a continuación, decir "Horizontal" para activar la casilla correspondiente. Debe exponer la información sobre estos elementos para lograr el objetivo deseado.
 
-En los temas siguientes se describe el uso de directrices de voz y accesibilidad.
+En los temas siguientes se describe el uso de la voz y las directrices de accesibilidad.
 
 -   [Uso de Microsoft Active Accessibility](using-microsoft-active-accessibility.md)
 -   [Exponer controles y menús](exposing-controls-and-menus.md)

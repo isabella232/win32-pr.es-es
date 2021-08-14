@@ -4,12 +4,12 @@ description: Las siguientes funciones recuperan y modifican los valores de confi
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
-ms.openlocfilehash: ee16bb0b65545c4abbef387c5b90d42fb9d3c629
-ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
+ms.openlocfilehash: 050db5574a1c10f01dadd1f53bb8e5a5aee2625a922680fe44f50a76e07ada97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "114394218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389136"
 ---
 # <a name="ip-helper-functions"></a>Funciones auxiliares de IP
 
@@ -122,7 +122,7 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**RtlIpv6StringToAddress**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressa)
 -   [**RtlIpv6StringToAddressEx**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressexw)
 
-## <a name="ip-neighbor-address-management"></a>Administración de direcciones ip de vecino
+## <a name="ip-neighbor-address-management"></a>Administración de direcciones de vecino IP
 
 -   [**CreateIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-createipnetentry2)
 -   [**DeleteIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-deleteipnetentry2)
@@ -172,7 +172,7 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**CreateSortedAddressPairs**](/windows/win32/api/Netioapi/nf-netioapi-createsortedaddresspairs)
 -   [**ParseNetworkString**](/windows/win32/api/Iphlpapi/nf-iphlpapi-parsenetworkstring)
 
-## <a name="network-configuration"></a>Configuración de red
+## <a name="network-configuration"></a>Network configuration (Configuración de red)
 
 -   [**GetNetworkParams**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getnetworkparams)
 

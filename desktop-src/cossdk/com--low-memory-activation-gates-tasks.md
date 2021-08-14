@@ -1,19 +1,19 @@
 ---
-description: Tareas de las puertas de activación de Low-Memory COM+
+description: Tareas de com+ Low-Memory puertas de activación
 ms.assetid: 42a50775-05aa-49ef-9f38-e557110670d7
-title: Tareas de las puertas de activación de Low-Memory COM+
+title: Tareas de com+ Low-Memory puertas de activación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5ef0aa0d84925bb54ff1f4c31eb480c8952c636
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b98f1ff6294cafa8ed77d5178612db9e49cd7370942da4f418f5e7c0779743dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118308054"
 ---
-# <a name="com-low-memory-activation-gates-tasks"></a>Tareas de las puertas de activación de Low-Memory COM+
+# <a name="com-low-memory-activation-gates-tasks"></a>Tareas de com+ Low-Memory puertas de activación
 
-COM+ proporciona automáticamente la característica de puertas de activación de memoria insuficiente de COM+. Esta característica no se puede configurar, por lo que no hay ninguna tarea asociada a ella.
+COM+ proporciona automáticamente la característica de puertas de activación de memoria baja de COM+. Esta característica no es configurable, por lo que no hay ninguna tarea asociada a ella.
 
  
 

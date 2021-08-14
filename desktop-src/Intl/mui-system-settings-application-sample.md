@@ -1,19 +1,19 @@
 ---
-description: 'MUI: ejemplo de la aplicación de configuración del sistema'
+description: 'MUI: Ejemplo de aplicación Configuración sistema'
 ms.assetid: 34cfd3a8-20b2-4a57-bc43-8da410cf9ae9
-title: 'MUI: ejemplo de la aplicación de configuración del sistema'
+title: 'MUI: Ejemplo de aplicación Configuración sistema'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d27871f3878c695b85b2131916185c62bc4a3dc1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32669faf81276bf1605dcbed93615c874fcaf9cc82f90a29bb42653bf4fbace2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118390835"
 ---
-# <a name="mui-system-settings-application-sample"></a>MUI: ejemplo de la aplicación de configuración del sistema
+# <a name="mui-system-settings-application-sample"></a>MUI: Ejemplo de aplicación Configuración sistema
 
-La aplicación de ejemplo que se describe en este tema es una sencilla aplicación Hello MUI que admite la configuración del sistema para sus idiomas de interfaz de usuario.
+La aplicación de ejemplo que se describe en este tema es una sencilla aplicación Hello IAM que admite la configuración del sistema para sus lenguajes de interfaz de usuario.
 
 
 ```C++

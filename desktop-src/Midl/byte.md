@@ -1,9 +1,9 @@
 ---
-title: byte (atributo)
+title: atributo byte
 description: La palabra clave byte especifica un elemento de datos de 8 bits.
 ms.assetid: d6401e05-5498-4d66-8f70-2c794ed26527
 keywords:
-- atributo de byte MIDL
+- atributo byte MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 347b1f22f06431c5490d4fdac15cdb22b25da69e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a271cc81fe97fb25850bfe4dcb7d2edb55ba3c69805dab17d013bc646768e87f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105651339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384736"
 ---
-# <a name="byte-attribute"></a>byte (atributo)
+# <a name="byte-attribute"></a>atributo byte
 
-La palabra clave **byte** especifica un elemento de datos de 8 bits.
+La **palabra clave byte** especifica un elemento de datos de 8 bits.
 
 ``` syntax
 byte identifier-name;
@@ -31,27 +31,27 @@ byte identifier-name;
 
 <dl> <dt>
 
-*identificador: nombre* 
+*identifier-name* 
 </dt> <dd>
 
-Especifica un identificador de MIDL válido. Los identificadores de MIDL válidos constan de hasta 31 caracteres alfanuméricos o de subrayado, y deben comenzar por un carácter alfabético o de subrayado.
+Especifica un identificador MIDL válido. Los identificadores MIDL válidos constan de hasta 31 caracteres alfanuméricos o de subrayado y deben comenzar con un carácter alfabético o de subrayado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un elemento de datos de **bytes** no se somete a ninguna conversión de transmisión en la red como un tipo [**Char**](char-idl.md) .
+Un **elemento de** datos byte no se somete a ninguna conversión para la transmisión en la red como podría ser un tipo [**char.**](char-idl.md)
 
-El tipo de **byte** es uno de los tipos base del lenguaje de definición de interfaz (IDL). El tipo **byte** puede aparecer como un especificador de tipo en declaraciones [**const**](const.md) , declaraciones [**typedef**](typedef.md) , declaraciones generales y declaradores de función (como un especificador de tipo de valor devuelto de función y como especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea [archivo de definición de interfaz (IDL)](interface-definition-idl-file.md).
+El **tipo byte** es uno de los tipos base del lenguaje de definición de interfaz (IDL). El **tipo byte** puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como especificador function-return-type y como especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea Archivo de [definición de interfaz (IDL).](interface-definition-idl-file.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**char**](char-idl.md)
+[**Char**](char-idl.md)
 </dt> <dt>
 
 [**const**](const.md)
@@ -60,12 +60,12 @@ El tipo de **byte** es uno de los tipos base del lenguaje de definición de inte
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

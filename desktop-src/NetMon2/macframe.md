@@ -1,7 +1,7 @@
 ---
-description: La estructura MACFRAME es una Unión de los protocolos iniciales más comunes.
+description: La estructura MACFRAME es una unión de los protocolos iniciales más comunes.
 ms.assetid: ec7e3a54-a47f-4390-a137-9574c63c9a11
-title: MACFRAME Union (Netmon. h)
+title: Unión MACFRAME (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: a7901daf467a63586543c52ca8a214d5d0094982
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcff7294d2800e797b43b3a05bd25c35418c6fb466c95130b97be73f25040d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364713"
 ---
-# <a name="macframe-union"></a>Unión MACFRAME
+# <a name="macframe-union"></a>Unión de MACFRAME
 
-La estructura **MACFRAME** es una Unión de los protocolos iniciales más comunes.
+La **estructura MACFRAME** es una unión de los protocolos iniciales más comunes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,30 +59,30 @@ Puntero Ethernet a un marco.
 **Tokenring**
 </dt> <dd>
 
-Puntero de token ring a un marco.
+Puntero de anillo de token a un marco.
 
 </dd> <dt>
 
-**FDDI**
+**Fddi**
 </dt> <dd>
 
 Puntero FDDI a un marco.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se usa con más frecuencia como una superposición. Para que se pueda tener acceso a las propiedades del primer Protocolo, convierta el marco en el mismo tipo que el protocolo.
+Esta estructura se usa con más frecuencia como superposición. Para que las propiedades del primer protocolo puedan ser accesibles, convierte el marco en el mismo tipo que el protocolo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

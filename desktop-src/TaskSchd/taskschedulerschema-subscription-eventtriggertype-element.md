@@ -1,9 +1,9 @@
 ---
-title: Elemento subscription (eventTriggerType)
+title: Elemento Subscription (eventTriggerType)
 description: Especifica la consulta XPath que identifica el evento que activa el desencadenador.
 ms.assetid: ea351a55-c6f9-4e39-b15e-c2a1027a1360
 keywords:
-- Elemento subscription Programador de tareas
+- Elemento Subscription Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: efe38f2e825e2de566391a7b1707ce1f8cfbbc68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ec45a9c240a9dd5d30d2089f98216fc165af13fe418424f5b85feed5e022b67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131560"
 ---
-# <a name="subscription-eventtriggertype-element"></a>Elemento subscription (eventTriggerType)
+# <a name="subscription-eventtriggertype-element"></a>Elemento Subscription (eventTriggerType)
 
 Especifica la consulta XPath que identifica el evento que activa el desencadenador.
 
@@ -30,7 +30,7 @@ Especifica la consulta XPath que identifica el evento que activa el desencadenad
  />
 ```
 
-El tipo complejo [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md) define el elemento **subscription** .
+El tipo complejo [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md) define el elemento **Subscription.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,28 +42,28 @@ El tipo complejo [**eventTriggerType**](taskschedulerschema-eventtriggertype-com
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripts, la suscripción de eventos se especifica mediante la propiedad [**EventTrigger. subscription**](eventtrigger-subscription.md) .
+Para el desarrollo de scripts, la propiedad [**EventTrigger.Subscription**](eventtrigger-subscription.md) especifica la suscripción de eventos.
 
-En el desarrollo de C++, la suscripción de eventos se especifica mediante la propiedad [**IEventTrigger:: subscription**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_subscription) .
+Para el desarrollo de C++, la propiedad [**IEventTrigger::Subscription**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_subscription) especifica la suscripción de eventos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

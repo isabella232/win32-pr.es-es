@@ -1,42 +1,42 @@
 ---
-description: Los servicios HTTP de Microsoft Windows (WinHTTP) usan identificadores para realizar un seguimiento de la configuración y la información necesaria cuando se usa el protocolo HTTP.
+description: Microsoft Windows HTTP Services (WinHTTP) usa identificadores para realizar un seguimiento de la configuración y la información necesaria al usar el protocolo HTTP.
 ms.assetid: 0bd82860-1347-40c8-ae77-c4d865c109be
-title: Controladores HINTERNET en WinHTTP
+title: Identificadores HINTERNET en WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf374675ad6f2114dd48e0a3ff1db50cd0dd7f9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a76f925d11646ed2fe5b5d3732fe8972d979cdc6383a4d47e955c0e60a1390e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104563559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563280"
 ---
-# <a name="hinternet-handles-in-winhttp"></a>Controladores HINTERNET en WinHTTP
+# <a name="hinternet-handles-in-winhttp"></a>Identificadores HINTERNET en WinHTTP
 
-Los servicios HTTP de Microsoft Windows (WinHTTP) usan identificadores para realizar un seguimiento de la configuración y la información necesaria cuando se usa el protocolo HTTP. Cada identificador mantiene la información pertinente a una sesión HTTP, una conexión con un servidor HTTP o un recurso específico. En este tema se describen los distintos tipos de identificadores, las convenciones de nomenclatura de estos identificadores y su estructura jerárquica.
+Microsoft Windows HTTP Services (WinHTTP) usa identificadores para realizar un seguimiento de la configuración y la información necesaria al usar el protocolo HTTP. Cada identificador mantiene la información pertinente a una sesión HTTP, una conexión con un servidor HTTP o un recurso específico. En este tema se describen los distintos tipos de identificadores, las convenciones de nomenclatura para estos identificadores y su estructura jerárquica.
 
--   [Acerca de los identificadores de HINTERNET](#about-hinternet-handles)
--   [Controladores de nomenclatura](#naming-handles)
--   [Jerarquía de identificadores](#handle-hierarchy)
+-   [Acerca de los identificadores HINTERNET](#about-hinternet-handles)
+-   [Identificadores de nomenclatura](#naming-handles)
+-   [Controlar jerarquía](#handle-hierarchy)
 -   [Explicación de la jerarquía de identificadores](#explanation-of-the-handle-hierarchy)
 
-## <a name="about-hinternet-handles"></a>Acerca de los identificadores de HINTERNET
+## <a name="about-hinternet-handles"></a>Acerca de los identificadores HINTERNET
 
-Los identificadores que se crean y usan en WinHTTP se denominan identificadores de **HINTERNET** . Las funciones WinHTTP devuelven identificadores **HINTERNET** que no son intercambiables con otros identificadores, por lo que no se pueden usar con funciones como [**readfile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) o [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle). Del mismo modo, no se pueden usar otros identificadores con funciones WinHTTP. Por ejemplo, un identificador devuelto por [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) no se puede pasar a [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata). Estos identificadores de **HINTERNET** no se pueden cerrar mientras haya una llamada API que use el identificador en curso. Para evitar una condición de carrera, las aplicaciones deben proteger el identificador e impedir que se cierre mientras la llamada a la API esté en curso.
+Los identificadores creados y usados por WinHTTP se denominan **identificadores HINTERNET.** Las funciones WinHTTP devuelven identificadores **HINTERNET** que no son intercambiables con otros identificadores, por lo que no se pueden usar con funciones como [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) o [**CloseHandle.**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) Del mismo modo, no se pueden usar otros identificadores con funciones WinHTTP. Por ejemplo, un identificador devuelto por [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) no se puede pasar [**a WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata). Estos **identificadores HINTERNET** no se pueden cerrar mientras una llamada API que usa el identificador está en curso. Para evitar una condición de carrera, las aplicaciones deben proteger el identificador y evitar que se cierre mientras la llamada API esté en curso.
 
-Las funciones de Microsoft Win32 Internet (WinInet) también usan identificadores de **HINTERNET** . Sin embargo, los identificadores que se usan en las funciones WinInet no se pueden intercambiar con los identificadores utilizados en las funciones WinHTTP. Para obtener más información sobre WinInet, vea [About WinInet](/windows/desktop/WinInet/about-wininet).
+Las funciones de Microsoft Win32 Internet (WinInet) también usan **identificadores HINTERNET.** Sin embargo, los identificadores usados en las funciones wininet no se pueden intercambiar con los identificadores usados en las funciones WinHTTP. Para más información sobre WinInet, consulte [Acerca de WinINet.](/windows/desktop/WinInet/about-wininet)
 
-La función [**WinHttpCloseHandle**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpclosehandle) cierra los identificadores de WinHTTP **HINTERNET** .
+La [**función WinHttpCloseHandle**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpclosehandle) cierra los identificadores de WinHTTP **HINTERNET.**
 
-## <a name="naming-handles"></a>Controladores de nomenclatura
+## <a name="naming-handles"></a>Identificadores de nomenclatura
 
-En la documentación de WinHTTP, las descripciones de las funciones de la interfaz de programación de aplicaciones (API) y el código de ejemplo muestran la creación y el uso de diversos tipos de identificadores de **HINTERNET** . Para realizar un seguimiento de los distintos tipos de identificadores disponibles, la nomenclatura de estos identificadores es coherente. En la tabla siguiente se muestran los identificadores usados por la Convención en la documentación de.
+En la documentación de WinHTTP, las descripciones de las funciones de la interfaz de programación de aplicaciones (API) y el código de ejemplo muestran la creación y el uso de varios tipos de **identificadores HINTERNET.** Para realizar un seguimiento de los distintos tipos de identificadores disponibles, la nomenclatura de estos identificadores es coherente. En la tabla siguiente se muestran los identificadores utilizados por convención en la documentación.
 
 
 
-| Tipo de identificador       | Función que crea el controlador                                                                                                          | Identificador |
+| Tipo de identificador       | Identificador de creación de funciones                                                                                                          | Identificador |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------|
-| Identificador genérico    | [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen), [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect)o [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) | hInternet  |
+| Identificador genérico    | [**WinHttpOpen,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect)o [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) | hInternet  |
 | Identificador de sesión    | [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen)                                                                                                | hSession   |
 | Identificador de conexión | [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect)                                                                                          | hConnect   |
 | Identificador de solicitud    | [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)                                                                                  | hRequest   |
@@ -45,27 +45,27 @@ En la documentación de WinHTTP, las descripciones de las funciones de la interf
 
  
 
-## <a name="handle-hierarchy"></a>Jerarquía de identificadores
+## <a name="handle-hierarchy"></a>Controlar jerarquía
 
-Los identificadores de **HINTERNET** se mantienen en una jerarquía. El identificador devuelto por [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) es el identificador de **HINTERNET** de la sesión. La llamada a **WinHttpOpen** inicializa las funciones WinHTTP e inicia un contexto de sesión que mantiene la información y la configuración de usuario a lo largo de la vida del identificador de sesión. [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) especifica un servidor http o https de destino y crea un identificador de **HINTERNET** de conexión. De forma predeterminada, el identificador de conexión hereda la configuración del identificador de sesión. A cada recurso especificado con una llamada a [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) se le asigna un identificador de **HINTERNET** de solicitud.
+Los **identificadores HINTERNET** se mantienen en una jerarquía. El identificador devuelto por [**WinHttpOpen es**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) el identificador **HINTERNET de** sesión. Al **llamar a WinHttpOpen,** se inicializan las funciones WinHTTP y se inicia un contexto de sesión que mantiene la información del usuario y la configuración a lo largo de la vida del identificador de sesión. [**WinHttpConnect especifica**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) un servidor HTTP o HTTPS de destino y crea un identificador **HINTERNET de** conexión. De forma predeterminada, el identificador de conexión hereda la configuración del identificador de sesión. A cada recurso especificado con una llamada a [**WinHttpOpenRequest se**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) le asigna un identificador **HINTERNET de solicitud.**
 
-En el diagrama siguiente se ilustra la jerarquía de los identificadores de **HINTERNET** . Cada cuadro del diagrama representa una función WinHTTP que devuelve un identificador **HINTERNET** .
+En el diagrama siguiente se muestra la jerarquía de **identificadores HINTERNET.** Cada cuadro del diagrama representa una función WinHTTP que devuelve un **identificador HINTERNET.**
 
 ![funciones que crean identificadores](images/art-winhttp2.png)
 
-Después de cerrar un identificador, la aplicación debe estar preparada para recibir notificaciones de devolución de llamada en el identificador hasta que se devuelva el valor **Closed del identificador de estado de devolución de llamada de WinHTTP \_ \_ \_ \_** final para indicar que el identificador está completamente cerrado.
+Después de cerrar un identificador, la aplicación debe estar preparada para recibir notificaciones de devolución de llamada en el identificador hasta que se devuelva el valor final de **WINHTTP \_ CALLBACK \_ STATUS HANDLE \_ \_ CLOSED** para indicar que el identificador está completamente cerrado.
 
-Un identificador de sesión se denomina elemento primario de cualquier identificador de conexión que se use para crear; del mismo modo, tanto el identificador de conexión como su identificador de sesión principal se denominan elementos primarios de cualquier identificador de solicitud que se utiliza para crear el identificador de conexión.
+Un identificador de sesión se denomina elemento primario de cualquier identificador de conexión que se usa para crear; Del mismo modo, tanto el identificador de conexión como su identificador de sesión primario se denominan elementos primarios de cualquier identificador de solicitud que se usa para crear el identificador de conexión.
 
-Cuando se cierra un identificador primario, los elementos secundarios que tiene se invalidan indirectamente incluso si no se cierran, y las solicitudes posteriores que los usan se producen con el error de **\_ \_ identificador no válido**. No se puede confiar en las solicitudes asincrónicas pendientes para que se completen correctamente.
+Cuando se cierra un identificador primario, todos los elementos secundarios que tiene se invalidan indirectamente aunque no se cierren por sí mismos y las solicitudes posteriores que los usan producirán el **error ERROR \_ INVALID \_ HANDLE**. No se puede confiar en las solicitudes asincrónicas pendientes para completarse correctamente.
 
-En el diagrama siguiente se muestran las funciones que utilizan el identificador **HINTERNET** creado por [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest). Los cuadros sombreados representan funciones de WinHTTP que crean identificadores y los cuadros de texto simple muestran las funciones que usan esos manipuladores de **HINTERNET** . El diagrama también se organiza para mostrar el orden en el que normalmente se llama a las funciones WinHTTP.
+En el diagrama siguiente se muestran las funciones que usan el identificador **HINTERNET** creado [**por WinHttpOpenRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) Los cuadros sombreados representan funciones WinHTTP que crean identificadores y los cuadros sin formato muestran las funciones que usan esos **identificadores HINTERNET.** El diagrama también se organiza para mostrar el orden en el que normalmente se llama a las funciones WinHTTP.
 
 ![funciones que crean identificadores](images/art-winhttp2.png)
 
 ## <a name="explanation-of-the-handle-hierarchy"></a>Explicación de la jerarquía de identificadores
 
-En primer lugar, se crea un identificador de sesión con [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen). [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) requiere el identificador de sesión como primer parámetro y devuelve un identificador de conexión para un servidor especificado. [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)crea un identificador de solicitud que usa el identificador de conexión creado por [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect). Si la aplicación elige agregar encabezados adicionales a la solicitud, o si es necesario para que la aplicación establezca credenciales para la autenticación, se puede llamar a [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) y [**WinHttpSetCredentials**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetcredentials) mediante este identificador de solicitud. La solicitud se envía mediante [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest), que usa el identificador de solicitud. Después de enviar la solicitud, se pueden enviar datos adicionales al servidor mediante [**WinHttpWriteData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata), o bien la aplicación puede omitir directamente [**WinHttpReceiveResponse**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse) para especificar que no se envía más información al servidor. En este punto, dependiendo del propósito de la aplicación, el identificador de solicitud se puede usar para llamar a [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders), [**WinHttpQueryAuthSchemes**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryauthschemes)o recuperar un recurso con [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) y [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata).
+En primer lugar, se crea un identificador de sesión [**con WinHttpOpen.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) [**WinHttpConnect requiere**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) el identificador de sesión como primer parámetro y devuelve un identificador de conexión para un servidor especificado. [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)crea un identificador de solicitud, que usa el identificador de conexión creado [**por WinHttpConnect.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) Si la aplicación decide agregar encabezados adicionales a la solicitud o si es necesario que la aplicación establezca credenciales para la autenticación, se puede llamar a [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) y [**WinHttpSetCredentials**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetcredentials) mediante este identificador de solicitud. [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest)envía la solicitud, que usa el identificador de solicitud. Después de enviar la solicitud, se pueden enviar datos adicionales al servidor mediante [**WinHttpWriteData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata)o la aplicación puede ir directamente a [**WinHttpReceiveResponse**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse) para especificar que no se envíe más información al servidor. En este punto, según el propósito de la aplicación, el identificador de solicitud se puede usar para llamar a [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders), [**WinHttpQueryAuthSchemes**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryauthschemes)o recuperar un recurso [**con WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) y [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata).
 
  
 

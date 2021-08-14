@@ -1,55 +1,55 @@
 ---
-title: Archivos de regiones
-description: Archivos de regiones
+title: Archivos de región
+description: Archivos de región
 ms.assetid: 20952eb9-4cd1-4d7d-b5cc-f1741977745f
 keywords:
-- Aspectos móviles de Windows Media Player, archivos de imagen
-- máscaras, archivos de imagen
-- archivos para máscaras, arte
-- archivos de imagen para máscaras, archivos de regiones
-- Aspectos móviles de Windows Media Player, archivos de regiones
-- máscaras, archivos de regiones
-- Archivos de regiones en máscaras
+- Reproductor de Windows Media Máscaras móviles, archivos art
+- skins,art files
+- archivos para máscaras, art
+- archivos art para máscaras, archivos de región
+- Reproductor de Windows Media Máscaras móviles, archivos de región
+- skins,Archivos de región
+- Archivos de región en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48d258afeab029df7218d3616b8aecdb62c72806
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 48ce26db27ef6ad3373916337c6378886a2846f71f1d8aa0e8d5266aae23eff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934106"
 ---
-# <a name="region-files"></a>Archivos de regiones
+# <a name="region-files"></a>Archivos de región
 
-Los archivos de regiones son necesarios si se usa cualquier tipo de botón de posicionamiento (2PushHit, PushHit o ToggleHit).
+Los archivos de región son necesarios si usa cualquier tipo de botón de pulsación (2PushHit, PushHit o ToggleHit).
 
-Los archivos de región se usan para definir áreas que responderán a una pulsación, también conocida como golpe, en un botón específico. Para cada botón de posicionamiento, se asigna un color Web específico a un área en el mapa de bits de la región (por ejemplo \# , FF0000, que es el valor de rojo sólido). El número de color se especifica en la definición del botón de región. Cuando el usuario muestra la máscara, la imagen del botón se superpone en el fondo mediante las coordenadas del área en el mapa de bits de la región.
+Los archivos de región se usan para definir áreas que responderán a una pulsación, también conocida como pulsación, en un botón específico. Para cada botón de pulsación, a un área del mapa de bits Región se le da un color web específico (como FF0000, que es el valor \# de rojo sólido). El número de color se especifica en la definición del botón de región. Cuando el usuario muestra la máscara, la imagen de botón se superpone en el fondo mediante las coordenadas del área en el mapa de bits Región.
 
-Por ejemplo, puede dibujar un círculo rojo en una ubicación que corresponda a la ubicación del botón siguiente y colorearlo en rojo sólido ( \# FF0000). Después, en la definición del botón, podría asignar un valor RGB de posicionamiento de 255, 0, 0 (que es el equivalente RGB de \# FF0000). En este caso, el botón siguiente solo respondería a los grifos (aciertos) dentro del círculo rojo.
+Por ejemplo, podría dibujar un círculo rojo en una ubicación correspondiente a la ubicación del botón Siguiente y colorearlo de color rojo sólido \# (FF0000). A continuación, en la definición del botón, podría asignar un valor RGB de 255,0,0 (que es el equivalente RGB de \# FF0000). En este caso, el botón Siguiente solo respondería a pulsaciones (aciertos) dentro del círculo rojo.
 
-Los botones de acceso se utilizan cuando se desea definir formas que no sean rectángulos. Todavía debe definir las coordenadas de cada botón para que las imágenes secundarias, como Insert y Disabled, se puedan encontrar correctamente. En la práctica, cada botón está limitado por un rectángulo y estos rectángulos de límite imaginarios no deben superponerse.
+Los botones de pulsación se usan cuando se quieren definir formas distintas de los rectángulos. Todavía debe definir las coordenadas de cada botón para que las imágenes secundarias, como Pushed y Disabled, se puedan encontrar correctamente. En la práctica, cada botón está delimitado por un rectángulo y estos rectángulos de límite imaginario no deben superponerse.
 
 > [!Note]  
-> Los archivos de región no son necesarios en las máscaras móviles de Windows Media Player 10 porque los tipos de botón no se admiten en Windows Media Player 10 Mobile o posterior.
+> No se necesitan archivos de arte de región Reproductor de Windows Media 10 máscaras móviles porque los tipos de botón no se admiten en Reproductor de Windows Media 10 Mobile o versiones posteriores.
 
- 
+ 
 
 La siguiente imagen es un archivo de región típico.
 
 ![archivo de región](images/cesdkreg.png)
 
-Este archivo define los elementos de la máscara para cada botón de tipo de posicionamiento. Cada color se identificará por su número de color en la sección botones del archivo de definición de máscara.
+Este archivo define las partes de la máscara para cada botón de tipo de pulsación. Cada color se identificará por su número de color en la sección Botones del archivo de definición de máscara.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Archivos de imagen**](art-files-mobile.md)
+[**Archivos de arte**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

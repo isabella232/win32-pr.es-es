@@ -1,17 +1,17 @@
 ---
-title: Estructuras de control Toolbar
-description: Estructuras de control Toolbar
+title: Estructuras de control de barra de herramientas
+description: Estructuras de control de barra de herramientas
 ms.assetid: 0db291f3-b558-434f-8dde-eddff5b82ba6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e8043446e8b8035642aabd88498bf50e8fa8c81
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5913ac2ecec0d53ef07c42b2a044e5a9b80c4551bf9f9391e43fd87373f65595
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104157068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118415829"
 ---
-# <a name="toolbar-control-structures"></a>Estructuras de control Toolbar
+# <a name="toolbar-control-structures"></a>Estructuras de control de barra de herramientas
 
 ## <a name="in-this-section"></a>En esta sección
 

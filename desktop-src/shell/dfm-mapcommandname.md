@@ -1,6 +1,6 @@
 ---
 description: Enviado por la implementación predeterminada del menú contextual para asignar un nombre a un comando de menú.
-title: Mensaje de DFM_MAPCOMMANDNAME (ShlObj. h)
+title: DFM_MAPCOMMANDNAME mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 8aa764f7-d5d4-4a84-94d2-993265e1eb5a
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 312817e5c530078b906af63e4e8c3d00595d3a04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e3dac1cdb3c04397a59b26a2212fe1c46b611ce72ba029aabd25e0b01c9000b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459981"
 ---
-# <a name="dfm_mapcommandname-message"></a>DFM \_ MAPCOMMANDNAME
+# <a name="dfm_mapcommandname-message"></a>Mensaje \_ MAPCOMMANDNAME de DFM
 
 Enviado por la implementación predeterminada del menú contextual para asignar un nombre a un comando de menú.
 
@@ -48,28 +48,28 @@ Puntero al identificador del comando de menú seleccionado.
 
 </dd> <dt>
 
-*pszCommandName* \[ de\]
+*pszCommandName* \[ En\]
 </dt> <dd>
 
 Puntero a una cadena Unicode que contiene el nombre del comando.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje se envía a la función de devolución de llamada o al objeto de devolución de llamada, dependiendo de cómo se implemente el objeto de menú contextual predeterminado. Hay dos API para su implementación, [**CDefFolderMenu \_ Create2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2), [**SHCreateDefaultContextMenu**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu).
+Este mensaje se envía a la función de devolución de llamada o al objeto de devolución de llamada en función de cómo se implemente el objeto de menú contextual predeterminado. Hay dos API para su implementación, [**CDefFolderMenu \_ Create2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2), [**SHCreateDefaultContextMenu**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu).
 
-[**DFM \_ INVOKECOMMANDEX**](dfm-invokecommandex.md) es una versión extendida de este mensaje y proporciona más información a la devolución de llamada. Use **DFM \_ INVOKECOMMANDEX** si necesita la información adicional proporcionada por esa interfaz en su implementación de.
+[**DFM \_ INVOKECOMMANDEX es**](dfm-invokecommandex.md) una versión extendida de este mensaje y proporciona más información a la devolución de llamada. Use **DFM \_ INVOKECOMMANDEX si** la información adicional proporcionada por esa interfaz es necesaria en la implementación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

@@ -1,17 +1,17 @@
 ---
-title: Mensajes del control TrackBar
-description: Mensajes del control TrackBar
+title: Mensajes de control de la barra de seguimiento
+description: Mensajes de control de la barra de seguimiento
 ms.assetid: 1640fc7c-5fe5-4b11-9517-2608b837eedf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef3716595caafa684324c077fa6204344dd07182
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5fe5d1010fdc737f3c7d098bec6b3ca38e180842e6f0f1ae2a62d378af1870db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118414957"
 ---
-# <a name="trackbar-control-messages"></a>Mensajes del control TrackBar
+# <a name="trackbar-control-messages"></a>Mensajes de control de la barra de seguimiento
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -39,7 +39,7 @@ ms.locfileid: "104003493"
 -   [**TBM \_ SETPAGESIZE**](tbm-setpagesize.md)
 -   [**TBM \_ SETPOS**](tbm-setpos.md)
 -   [**TBM \_ SETPOSNOTIFY**](tbm-setposnotify.md)
--   [**TBM \_ SetRange**](tbm-setrange.md)
+-   [**TBM \_ SETRANGE**](tbm-setrange.md)
 -   [**TBM \_ SETRANGEMAX**](tbm-setrangemax.md)
 -   [**TBM \_ SETRANGEMIN**](tbm-setrangemin.md)
 -   [**TBM \_ SETSEL**](tbm-setsel.md)

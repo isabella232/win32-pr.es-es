@@ -1,11 +1,11 @@
 ---
-title: Atributo de lista de atributos parciales
-description: Realiza un seguimiento del estado de replicación interna de réplicas parciales (es decir, en GC). Atributo del objeto NC de réplica parcial. Se usa cuando el GC está en el proceso de quitar atributos de los objetos en sus NC de réplica parcial.
+title: Atributo Partial-Attribute-Deletion-List
+description: Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GCs). Atributo del objeto NC de réplica parcial. Se usa cuando el GC está en proceso de quitar atributos de los objetos de sus NCs de réplica parcial.
 ms.assetid: 0084774b-7231-4cfc-8f60-c014006da2b9
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de lista de atributos parciales
-- partialAttributeDeletionList esquema de AD de atributos
+- Esquema de AD de atributo Partial-Attribute-Deletion-List
+- Esquema de AD del atributo partialAttributeDeletionList
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c2c6c0428d71dbba4199eeb441c838fb54a4463
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6d3dafe1a3e4913d8f6f6d1ba60dd0afa576e8bcb3ecf398e7f3cdc5c9075156
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423948"
 ---
-# <a name="partial-attribute-deletion-list-attribute"></a>Atributo de lista de atributos parciales
+# <a name="partial-attribute-deletion-list-attribute"></a>Atributo Partial-Attribute-Deletion-List
 
-Realiza un seguimiento del estado de replicación interna de réplicas parciales (es decir, en GC). Atributo del objeto NC de réplica parcial. Se usa cuando el GC está en el proceso de quitar atributos de los objetos en sus NC de réplica parcial.
+Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GCs). Atributo del objeto NC de réplica parcial. Se usa cuando el GC está en proceso de quitar atributos de los objetos de sus NCs de réplica parcial.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Lista de atributos parciales eliminados                       |
-| Nombre para mostrar de LDAP | partialAttributeDeletionList                          |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | El sistema establece este valor.                      |
+| CN                | Partial-Attribute-Deletion-List                       |
+| Ldap-Display-Name | partialAttributeDeletionList                          |
+| Size              | \-                                                    |
+| Privilegio actualizar  | El sistema establece este valor.                      |
 | Frecuencia de actualización  | Durante la replicación                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.663                                |
-| System-ID-GUID    | 28630ec0-41d5-11d1-a9c1-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 28630ec0-41d5-11d1-a9c1-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Realiza un seguimiento del estado de replicación interna de réplicas parciales
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,15 +54,15 @@ Realiza un seguimiento del estado de replicación interna de réplicas parciales
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,15 +75,15 @@ Realiza un seguimiento del estado de replicación interna de réplicas parciales
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Realiza un seguimiento del estado de replicación interna de réplicas parciales
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -117,15 +117,15 @@ Realiza un seguimiento del estado de replicación interna de réplicas parciales
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -138,15 +138,15 @@ Realiza un seguimiento del estado de replicación interna de réplicas parciales
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -159,15 +159,15 @@ Realiza un seguimiento del estado de replicación interna de réplicas parciales
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -180,15 +180,15 @@ Realiza un seguimiento del estado de replicación interna de réplicas parciales
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

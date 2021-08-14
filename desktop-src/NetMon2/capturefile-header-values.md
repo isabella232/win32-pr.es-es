@@ -1,7 +1,7 @@
 ---
-description: Define la estructura del archivo de encabezado Monitor de red.
+description: Define la estructura Monitor de red archivo de encabezado.
 ms.assetid: 944980c9-ebaa-4042-a112-d32b7a28ba21
-title: Estructura de CAPTUREFILE_HEADER_VALUES (Netmon. h)
+title: CAPTUREFILE_HEADER_VALUES estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 2597b3f83a65dafd2da0198aade5243acc1184fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29ee0ab0a9a927b3860760877457735198465b7c28789a542c040fc9e9e788a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118367421"
 ---
-# <a name="capturefile_header_values-structure"></a>CAPTUREFILE \_ estructura de valores de encabezado \_
+# <a name="capturefile_header_values-structure"></a>Estructura CAPTUREFILE \_ HEADER \_ VALUES
 
-La estructura de **\_ \_ los valores del encabezado CAPTUREFILE** define la estructura del archivo de encabezado monitor de red.
+La **estructura CAPTUREFILE \_ HEADER \_ VALUES** define la estructura Monitor de red archivo de encabezado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,21 +58,21 @@ typedef struct _CAPTUREFILE_HEADER_VALUES {
 **Signature**
 </dt> <dd>
 
-Identificador único: ' GMBU.
+Identificador único: 'GMBU.
 
 </dd> <dt>
 
 **BCDVerMinor**
 </dt> <dd>
 
-Binario, decimal codificado (secundaria). El valor de este miembro debe ser cero (0).
+Binario, decimal codificado (menor). El valor de este miembro debe ser cero (0).
 
 </dd> <dt>
 
 **BCDVerMajor**
 </dt> <dd>
 
-Decimal codificado binario (principal). Este valor debe ser 2.
+Decimal binario codificado (principal). Este valor debe ser 2.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Tipo de topología.
 
 </dd> <dt>
 
-**Indicaciones**
+**Timestamp**
 </dt> <dd>
 
 Hora de captura.
@@ -107,14 +107,14 @@ Tamaño de la tabla de índice de fotogramas.
 **UserDataOffset**
 </dt> <dd>
 
-Desplazamiento de datos del usuario.
+Desplazamiento de datos de usuario.
 
 </dd> <dt>
 
 **UserDataLength**
 </dt> <dd>
 
-Longitud de los datos de usuario.
+Longitud de los datos del usuario.
 
 </dd> <dt>
 
@@ -135,28 +135,28 @@ Longitud de los datos de comentario.
 **StatisticsOffset**
 </dt> <dd>
 
-Desplazamiento a la estructura **Statistics** .
+Desplazamiento a la **estructura STATISTICS.**
 
 </dd> <dt>
 
 **StatisticsLength**
 </dt> <dd>
 
-Longitud de la estructura de **estadísticas** .
+Longitud de la **estructura STATISTICS.**
 
 </dd> <dt>
 
 **NetworkInfoOffset**
 </dt> <dd>
 
-Desplazamiento a la estructura **NETWORKINFO** .
+Desplazamiento a la **estructura NETWORKINFO.**
 
 </dd> <dt>
 
 **NetworkInfoLength**
 </dt> <dd>
 
-Longitud de la estructura **NETWORKINFO** .
+Longitud de la **estructura NETWORKINFO.**
 
 </dd> <dt>
 
@@ -178,11 +178,11 @@ Este miembro no se usa.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

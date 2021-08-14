@@ -1,12 +1,12 @@
 ---
-title: Método SetServers de la clase Win32_TSGatewayLoadBalancer
-description: Establece la propiedad servidores con la lista de servidores de equilibrio de carga de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+title: Método SetServers de la Win32_TSGatewayLoadBalancer clase
+description: Establece la propiedad Servers con la lista de servidores de equilibrio de carga Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto).
 ms.assetid: c82de8e2-301b-465d-b375-038b8a480cde
 ms.tgt_platform: multiple
 keywords:
 - Método SetServers Servicios de Escritorio remoto
-- Método SetServers Servicios de Escritorio remoto, clase Win32_TSGatewayLoadBalancer
-- Win32_TSGatewayLoadBalancer de clase Servicios de Escritorio remoto, método SetServers
+- Método SetServers Servicios de Escritorio remoto , Win32_TSGatewayLoadBalancer clase
+- Win32_TSGatewayLoadBalancer clase Servicios de Escritorio remoto , método SetServers
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b28d1123ce82844fb501f3562014b93337502b51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da2c23ac6cf965687a022c5ae5ba8c1ce690c39c45f9149076f36ab13bc2d222
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349632"
 ---
-# <a name="setservers-method-of-the-win32_tsgatewayloadbalancer-class"></a>Método SetServers de la \_ clase TSGatewayLoadBalancer de Win32
+# <a name="setservers-method-of-the-win32_tsgatewayloadbalancer-class"></a>Método SetServers de la clase \_ TSGatewayLoadBalancer de Win32
 
-Establece la propiedad **servidores** con la lista de servidores de equilibrio de carga de puerta de enlace de escritorio remoto (puerta de enlace de escritorio remoto).
+Establece la **propiedad Servers** con la lista de servidores de equilibrio de carga Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,40 +43,40 @@ uint32 SetServers(
 
 <dl> <dt>
 
-*Servidores* \[ de de\]
+*Servidores* \[ En\]
 </dt> <dd>
 
-Lista separada por punto y coma de servidores de equilibrio de carga de puerta de enlace de escritorio remoto.
+Lista separada por punto y coma de servidores de equilibrio de carga de puerta de enlace de Escritorio remoto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si hay varios servidores en el parámetro *Servers* y uno de ellos no se puede procesar, no se procesará ninguno de los servidores.
+Si hay varios servidores en el *parámetro Servidores* y uno de los servidores no se puede procesar, no se procesará ninguno de los servidores.
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

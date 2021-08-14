@@ -1,7 +1,7 @@
 ---
 description: La función SetClassIDInBlob establece el valor de identificador de clase con nombre de un BLOB.
 ms.assetid: d17dd48b-2e35-4c57-ba33-688180910b63
-title: Función SetClassIDInBlob (Netmon. h)
+title: Función SetClassIDInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: b617c39767038bac51d749a640ebcf2301e0c63f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70e68d3a0d9d105b765ee6cd0ae1a6422f48e3dd6776cf144b302c9e1c5ff951
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364164"
 ---
-# <a name="setclassidinblob-function"></a>SetClassIDInBlob función)
+# <a name="setclassidinblob-function"></a>Función SetClassIDInBlob
 
-La función **SetClassIDInBlob** establece el valor de identificador de clase con nombre de un BLOB.
+La **función SetClassIDInBlob** establece el valor de identificador de clase con nombre de un BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,35 +43,35 @@ DWORD SetClassIDInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ de\]
+*pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del **propietario** del BLOB que se establece.
+Puntero al nombre del **propietario de** BLOB que se establece.
 
 </dd> <dt>
 
-*pCategoryName* \[ de\]
+*pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la **categoría** de BLOB que se establece.
+Puntero al nombre de **la categoría** BLOB que se establece.
 
 </dd> <dt>
 
-*pTagName* \[ de\]
+*pTagName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la **etiqueta** de BLOB que se establece.
+Puntero al nombre de **la etiqueta** BLOB que se establece.
 
 </dd> <dt>
 
-*pClsID* \[ de\]
+*pClsID* \[ En\]
 </dt> <dd>
 
 Puntero al identificador de clase del BLOB que se establece.
@@ -80,25 +80,25 @@ Puntero al identificador de clase del BLOB que se establece.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
