@@ -1,7 +1,7 @@
 ---
 description: Recupera el tamaño total de los archivos del sistema de la máquina virtual.
 ms.assetid: 492aa0df-1562-4d83-a0ea-43776b12c1b1
-title: Método GetSizeOfSystemFiles de la clase Msvm_VirtualSystemManagementService
+title: Método GetSizeOfSystemFiles de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ed9fcf93093e17c2989121bf33ee5f5fbf09bab0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 385235e407cac2dd67f3dade99e4d1c834d082dfe59b541020a4548e8eea383c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118392908"
 ---
-# <a name="getsizeofsystemfiles-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método GetSizeOfSystemFiles de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="getsizeofsystemfiles-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método GetSizeOfSystemFiles de la clase Msvm \_ VirtualSystemManagementService
 
-Recupera el tamaño total de los archivos del sistema de la máquina virtual. Entre ellos se incluyen los archivos de configuración y de estado guardado.
+Recupera el tamaño total de los archivos del sistema de la máquina virtual. Estos incluyen la configuración y los archivos de estado guardados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ uint32 GetSizeOfSystemFiles(
 
 <dl> <dt>
 
-*Vssd* \[ de\]
+*Vssd* \[ En\]
 </dt> <dd>
 
-Referencia a la instancia [**de \_ VirtualSystemSettingData de CIM**](/previous-versions//cc136954(v=vs.85)) cuyo tamaño de archivos del sistema se va a recuperar. Esta instancia puede representar la creación de instancias actual de la máquina virtual o una instancia de una instantánea de máquina virtual.
+Referencia a la instancia [**de CIM \_ VirtualSystemSettingData cuyo**](/previous-versions//cc136954(v=vs.85)) tamaño de archivos del sistema se va a recuperar. Esta instancia puede representar la creación de instancias actual de la máquina virtual o una instancia de una instantánea de máquina virtual.
 
 </dd> <dt>
 
-*Tamaño* \[ de enuncia\]
+*Tamaño* \[ out\]
 </dt> <dd>
 
 Tamaño total, en bytes, de los archivos del sistema.
@@ -75,16 +75,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,31 +93,31 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

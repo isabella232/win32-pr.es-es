@@ -4,12 +4,12 @@ ms.assetid: 21f62b5d-0a2d-468c-af88-2fab1512f0ec
 title: Escribir eventos MOF (clásico)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29d081c48567851d2fb570dd7bfa5c75e687b524
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: c29b5d753c40bb2fca5313340638a63d2a5e55c5eaf6dcef14e8388906cb190a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112261847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393664"
 ---
 # <a name="writing-mof-classic-events"></a>Escribir eventos MOF (clásico)
 
@@ -17,7 +17,7 @@ Para poder escribir eventos en una sesión de seguimiento, debe registrar el pro
 
 **Antes de Windows Vista:** No hay ningún límite en el número de proveedores que un proceso puede registrar.
 
-Para registrar un proveedor clásico, llame a [**la función RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) La función registra el GUID del proveedor, los GUID de la clase de seguimiento de eventos e identifica la devolución de llamada a la que ETW llama cuando un controlador habilita o deshabilita el proveedor.
+Para registrar un proveedor clásico, llame a [**la función RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) La función registra el GUID del proveedor, guid de la clase de seguimiento de eventos e identifica la devolución de llamada a la que llama ETW cuando un controlador habilita o deshabilita el proveedor.
 
 Si el proveedor llama a la función [**TraceEvent**](/windows/win32/api/evntrace/nf-evntrace-traceevent) para registrar eventos, no es necesario incluir la matriz de GUID de clase (puede ser **NULL)** al llamar a la [**función RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) Solo debe incluir la matriz si el proveedor llama a la [**función TraceEventInstance**](/windows/win32/api/evntrace/nf-evntrace-traceeventinstance) para registrar eventos.
 
@@ -33,7 +33,7 @@ Todos [los proveedores](about-event-tracing.md) clásicos (excepto los que traza
 
 El proveedor especifica el nombre de la función de devolución de llamada cuando llama a [**la función RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) para registrarse. ETW llama a la función de devolución de llamada cuando el controlador llama a la [**función EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar o deshabilitar el proveedor.
 
-En la [**implementación de ControlCallback,**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) debe llamar a la [**función GetTraceLoggerHandle**](/windows/win32/api/evntrace/nf-evntrace-gettraceloggerhandle) para recuperar el identificador de sesión. se usa el identificador de sesión al llamar a la [**función TraceEvent.**](/windows/win32/api/evntrace/nf-evntrace-traceevent) Solo tiene que llamar a la función [**GetTraceEnableFlags**](/windows/win32/api/evntrace/nf-evntrace-gettraceenableflags) o a la función [**GetTraceEnableLevel**](/windows/win32/api/evntrace/nf-evntrace-gettraceenablelevel) en la **implementación de ControlCallback** si el proveedor usa el nivel de habilitación o las marcas de habilitación.
+En la [**implementación de ControlCallback,**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) debe llamar a la [**función GetTraceLoggerHandle**](/windows/win32/api/evntrace/nf-evntrace-gettraceloggerhandle) para recuperar el identificador de sesión; se usa el identificador de sesión al llamar a la [**función TraceEvent.**](/windows/win32/api/evntrace/nf-evntrace-traceevent) Solo tiene que llamar a la [**función GetTraceEnableFlags**](/windows/win32/api/evntrace/nf-evntrace-gettraceenableflags) o a la función [**GetTraceEnableLevel**](/windows/win32/api/evntrace/nf-evntrace-gettraceenablelevel) en la **implementación de ControlCallback** si el proveedor usa el nivel de habilitación o las marcas de habilitación.
 
 Un proveedor puede registrar eventos de seguimiento en una sola sesión, pero no hay nada que impida que varios controladores habiliten un único proveedor. Para evitar que otro controlador redirija los eventos de seguimiento a su sesión, puede agregar lógica a la implementación [**de ControlCallback**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) para comparar los identificadores de sesión y omitir las solicitudes de habilitación de otros controladores.
 
@@ -46,7 +46,7 @@ El encabezado debe contener la siguiente información:
 
     **Windows XP y Windows 2000:** El GUID de clase se debe haber registrado previamente mediante [**la función RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa)
 
--   El **miembro Flags** debe contener la **marca GUID \_ \_ TRACED \_ de WNODE FLAG.** Si especifica el GUID de clase mediante el **miembro GuidPtr,** agregue también la marca **\_ \_ \_ \_ PTR USE GUID de WNODE FLAG.**
+-   El **miembro Flags** debe contener la **marca GUID \_ \_ TRACED de \_ WNODE FLAG.** Si especifica el GUID de clase mediante el **miembro GuidPtr,** agregue también la marca **\_ \_ \_ \_ PTR USE GUID de WNODE FLAG.**
 -   El **miembro Class.Type** debe contener el tipo de evento si usa MOF para publicar el diseño de los datos del evento.
 -   El **miembro Class.Version** debe contener la versión del evento, si usa MOF para publicar el diseño de los datos del evento. La versión se usa para distinguir entre las revisiones de los datos del evento. Establezca el número de versión inicial en 0.
 
@@ -56,7 +56,7 @@ Debe asignar un bloque de memoria para el evento y copiar cada elemento de datos
 
 Para obtener información sobre el seguimiento de eventos relacionados, vea Escribir eventos relacionados en un escenario [de un extremo a otro.](writing-related-events-in-an-end-to-end-scenario.md)
 
-En el ejemplo siguiente se muestra cómo llamar a la [**función TraceEvent**](/windows/win32/api/evntrace/nf-evntrace-traceevent) para registrar eventos. En el ejemplo se hace referencia a los eventos definidos [en Publishing Your Event Schema for a Classic Provider](publishing-your-event-schema-for-a-classic-provider.md).
+En el ejemplo siguiente se muestra cómo llamar a [**la función TraceEvent**](/windows/win32/api/evntrace/nf-evntrace-traceevent) para registrar eventos. En el ejemplo se hace referencia a los eventos definidos [en Publishing Your Event Schema for a Classic Provider](publishing-your-event-schema-for-a-classic-provider.md).
 
 
 ```C++

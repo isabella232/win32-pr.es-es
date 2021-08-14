@@ -4,29 +4,29 @@ description: En este tema se incluyen varios ejemplos de código que agregan una
 ms.assetid: fb1ad9f5-af2f-4ad1-a58b-6439cca6fd23
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, establecer una ACE en un objeto de directorio
+- Active Directory ejemplos Active Directory , establecer una ACE en un objeto de directorio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e16180a2e1216c749c35d68ff607e81320a1482c
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 86bf938e113a9293bf13e2bbb5a910617e41cba0ee411a15598966ea7a54628a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105656344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190177"
 ---
 # <a name="example-code-for-setting-an-ace-on-a-directory-object"></a>Código de ejemplo para establecer una ACE en un objeto de directorio
 
-## <a name="define-the-setright-function"></a>Definir la función SetRight
+## <a name="define-the-setright-function"></a>Definición de la función SetRight
 
 En el ejemplo de código siguiente se define una función que agrega una entrada Access Control (ACE) a la lista de Access Control discrecional (DACL) del descriptor de seguridad de un objeto especificado en Active Directory Domain Services. La subrutina le permite:
 
--   Conceder o denegar el acceso a todo el objeto.
--   Conceder o denegar el acceso a una propiedad específica en el objeto.
--   Conceda o deniegue el acceso a un conjunto de propiedades en el objeto.
+-   Conceda o deniegue el acceso a todo el objeto.
+-   Conceda o deniegue el acceso a una propiedad específica en el objeto .
+-   Conceda o deniegue el acceso a un conjunto de propiedades en el objeto .
 -   Conceda o deniegue el derecho a crear un tipo específico de objeto secundario.
--   Establezca una ACE que pueda ser heredada por todos los objetos secundarios o por objetos secundarios de una clase de objeto especificada.
+-   Establezca una ACE que puedan heredar todos los objetos secundarios o los objetos secundarios de una clase de objeto especificada.
 
-Después de este Visual Basic ejemplo de código hay varios ejemplos de código que muestran cómo usar la función **SetRight** para establecer distintos tipos de ACE.
+A continuación Visual Basic ejemplo de código hay varios ejemplos de código que muestran cómo usar la **función SetRight** para establecer distintos tipos de ACE.
 
 
 ```VB
@@ -247,9 +247,9 @@ return hr;
 
 
 
-## <a name="grant-or-deny-access-to-the-entire-object"></a>Conceder o denegar el acceso a todo el objeto
+## <a name="grant-or-deny-access-to-the-entire-object"></a>Concesión o denegación de acceso a todo el objeto
 
-En el siguiente ejemplo de código Visual Basic se crea una cadena de enlace para el contenedor de usuarios y, a continuación, se llama a la función **SetRight** para establecer una ACE en el contenedor de usuarios. En este ejemplo se establece una ACE que concede al administrador de confianza el derecho de leer o escribir cualquier propiedad en el objeto.
+En el ejemplo Visual Basic código siguiente se compila una cadena de enlace para el contenedor Users y, a continuación, se llama a la función **SetRight** para establecer una ACE en el contenedor Users. En este ejemplo se establece una ACE que concede al administrador de confianza el derecho de leer o escribir cualquier propiedad en el objeto.
 
 
 ```VB
@@ -281,7 +281,7 @@ End If
 
 
 
-En el siguiente ejemplo de código de C++ se establece una ACE que concede al administrador de confianza el permiso para leer o escribir cualquier propiedad en el objeto. En el ejemplo de código se da por supuesto que *pObject* y *szTrustee* se establecen en valores válidos. Para obtener más información, consulte [configuración de derechos de acceso en un objeto](setting-access-rights-on-an-object.md).
+En el siguiente ejemplo de código de C++ se establece una ACE que concede al administrador de confianza permiso para leer o escribir cualquier propiedad en el objeto . En el ejemplo de código se supone que *pObject* *y szTrustee* están establecidos en valores válidos. Para obtener más información, vea [Establecer derechos de acceso en un objeto](setting-access-rights-on-an-object.md).
 
 
 ```C++
@@ -302,9 +302,9 @@ hr = SetRight(
 
 
 
-## <a name="grant-or-deny-access-to-a-specific-property-on-the-object"></a>Conceder o denegar el acceso a una propiedad específica en el objeto
+## <a name="grant-or-deny-access-to-a-specific-property-on-the-object"></a>Concesión o denegación de acceso a una propiedad específica en el objeto
 
-En este ejemplo de código se llama a la función **SetRight** para conceder al administrador de confianza el derecho a leer o escribir una propiedad específica en el objeto. Tenga en cuenta que debe especificar el **schemaIDGUID** de la propiedad y debe especificar el **\_ \_ \_ \_ objeto permitido de ADS ACETYPE acceso** para indicar que se trata de una ACE específica del objeto. En este ejemplo de código también se especifica la marca de la ACE de herencia de ACEFLAG de ADS que indica que los objetos secundarios pueden heredar la ACE. **\_ \_ \_**
+En este ejemplo de código se llama a **la función SetRight** para conceder al administrador de confianza el derecho de leer o escribir una propiedad específica en el objeto . Tenga en cuenta que debe especificar el **schemaIDGUID** de la propiedad y debe especificar **ADS \_ ACETYPE \_ ACCESS ALLOWED \_ \_ OBJECT** para indicar que se trata de una ACE específica del objeto. En este ejemplo de código también se especifica la marca **\_ ACEFLAG \_ INHERIT \_ ACE** de ADS, que indica que los objetos secundarios pueden heredar la ACE.
 
 
 ```VB
@@ -349,13 +349,13 @@ hr = SetRight(
 
 
 
-## <a name="grant-or-deny-access-to-a-set-of-properties-on-the-object"></a>Conceder o denegar el acceso a un conjunto de propiedades en el objeto
+## <a name="grant-or-deny-access-to-a-set-of-properties-on-the-object"></a>Concesión o denegación de acceso a un conjunto de propiedades en el objeto
 
-En este ejemplo de código se llama a la función **SetRight** para conceder al administrador de confianza el derecho de leer o escribir un conjunto específico de propiedades en el objeto. Especifique **el \_ \_ \_ \_ objeto permitido de ADS ACETYPE acceso** para indicar que se trata de una ACE específica del objeto.
+En este ejemplo de código se llama a la **función SetRight** para conceder al administrador de confianza el derecho de leer o escribir un conjunto específico de propiedades en el objeto. Especifique **ADS \_ ACETYPE ACCESS ALLOWED \_ \_ \_ OBJECT** para indicar que se trata de una ACE específica del objeto.
 
-Un conjunto de propiedades se define mediante un objeto **controlAccessRight** en el contenedor de derechos extendidos de la partición de configuración. Para identificar el conjunto de propiedades en la ACE, especifique la propiedad **rightsGUID** de un objeto **controlAccessRight** . Tenga en cuenta que este GUID de conjunto de propiedades también se establece en la propiedad **attributeSecurityGUID** de cada objeto **attributeSchema** incluido en el conjunto de propiedades. Para obtener más información, vea [controlar derechos de acceso](control-access-rights.md).
+Un objeto **controlAccessRight** define un conjunto de propiedades en el contenedor Extended Rights de la partición Configuration. Para identificar la propiedad establecida en la ACE, especifique la **propiedad rightsGUID** de un **objeto controlAccessRight.** Tenga en cuenta que este GUID del conjunto de propiedades también se establece en la propiedad **attributeSecurityGUID** de cada **objeto attributeSchema** incluido en el conjunto de propiedades. Para obtener más información, vea [Controlar los derechos de acceso.](control-access-rights.md)
 
-En este ejemplo de código también se especifican los marcadores de herencia que establecen la ACE como heredable por los objetos secundarios, pero ineficaces en el objeto inmediato. Además, el ejemplo especifica el GUID de la clase de usuario, que indica que la ACE solo puede ser heredada por objetos de esa clase.
+Este ejemplo de código también especifica marcas de herencia que establecen la ACE como heredable por objetos secundarios, pero ineficaces en el objeto inmediato. Además, el ejemplo especifica el GUID de la clase User, que indica que la ACE solo la pueden heredar los objetos de esa clase.
 
 
 ```VB
@@ -402,9 +402,9 @@ hr = SetRight(
 
 
 
-## <a name="grant-or-deny-permission-to-create-a-specific-type-of-child-object"></a>Conceder o denegar el permiso para crear un tipo específico de objeto secundario
+## <a name="grant-or-deny-permission-to-create-a-specific-type-of-child-object"></a>Concesión o denegación de permiso para crear un tipo específico de objeto secundario
 
-En el ejemplo de código siguiente se llama a la función **SetRight** para conceder a un administrador de confianza especificado el derecho para crear y eliminar objetos de usuario en el subárbol bajo el objeto especificado. Tenga en cuenta que el ejemplo especifica el GUID de la clase de usuario, lo que significa que la ACE solo permite al administrador de confianza crear objetos de usuario, no objetos de otras clases. Especifique **el \_ \_ \_ \_ objeto permitido de ADS ACETYPE acceso** para indicar que se trata de una ACE específica del objeto.
+En el ejemplo de código siguiente se llama a la función **SetRight** para conceder a un administrador de confianza especificado el derecho de crear y eliminar objetos User en el subárbol bajo el objeto especificado. Tenga en cuenta que el ejemplo especifica el GUID de la clase User, lo que significa que la ACE permite que solo el administrador de confianza cree objetos User, no objetos de otras clases. Especifique **ADS \_ ACETYPE ACCESS ALLOWED \_ \_ \_ OBJECT** para indicar que se trata de una ACE específica del objeto.
 
 
 ```VB
@@ -449,8 +449,8 @@ hr = SetRight(
 
 
 
-Para obtener más información y el **schemaIDGUID** de un atributo o una clase predefinidos, vea la página de referencia del atributo o clase en la Active Directory referencia del [esquema](/windows/desktop/ADSchema/active-directory-schema) . Para obtener más información y un ejemplo de código que se puede utilizar para obtener un **schemaIDGUID** mediante programación, vea [leer objetos attributeSchema y ClassSchema](reading-attributeschema-and-classschema-objects.md).
+Para obtener más información, y el **schemaIDGUID** de un atributo o clase predefinidos, vea la página de referencia de atributo o clase en la referencia Active Directory [esquema.](/windows/desktop/ADSchema/active-directory-schema) Para obtener más información y un ejemplo de código que se puede usar para obtener un **schemaIDGUID** mediante programación, vea Lectura de attributeSchema y [classSchema Objects](reading-attributeschema-and-classschema-objects.md).
 
- 
+ 
 
- 
+ 

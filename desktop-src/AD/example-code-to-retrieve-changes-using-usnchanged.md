@@ -1,32 +1,32 @@
 ---
 title: Código de ejemplo para recuperar cambios mediante USNChanged
-description: En el ejemplo de código siguiente se usa el atributo uSNChanged de un objeto en Active Directory Domain Services para recuperar los cambios desde una consulta anterior.
+description: En el ejemplo de código siguiente se usa el atributo uSNChanged de un objeto Active Directory Domain Services para recuperar los cambios desde una consulta anterior.
 ms.assetid: 519fd20f-9eb4-4702-9338-8cda899604bd
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, recuperar cambios mediante USNChanged
+- Active Directory ejemplos Active Directory , recuperación de cambios mediante USNChanged
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 175092699d6f0e99c20dcc4af136cfea792c3754
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 244bb2ad1133925cf44e0183c66955f523d1e55db617fd964e43f5b9e8aa6800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104358806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189698"
 ---
 # <a name="example-code-to-retrieve-changes-using-usnchanged"></a>Código de ejemplo para recuperar cambios mediante USNChanged
 
-En el ejemplo de código siguiente se usa el atributo **uSNChanged** de un objeto en Active Directory Domain Services para recuperar los cambios desde una consulta anterior. En el ejemplo de código se puede realizar una sincronización completa o una actualización incremental. En el caso de una sincronización completa, la aplicación de ejemplo se conecta a rootDSE de un controlador de dominio y Lee los parámetros siguientes que almacena para su uso en la siguiente sincronización incremental:
+En el ejemplo de código siguiente se **usa el atributo uSNChanged** de un objeto Active Directory Domain Services para recuperar los cambios desde una consulta anterior. El ejemplo de código puede realizar una sincronización completa o una actualización incremental. Para una sincronización completa, la aplicación de ejemplo se conecta al rootDSE de un controlador de dominio y lee los parámetros siguientes que almacena para su uso en la siguiente sincronización incremental:
 
 -   Nombre DNS del controlador de dominio. Las sincronizaciones incrementales deben realizarse en el mismo controlador de dominio que la sincronización anterior.
--   GUID del ID. de **invocación** del controlador de dominio. En el ejemplo de código se usa este valor para detectar que el controlador de dominio se ha restaurado a partir de una copia de seguridad, en cuyo caso el ejemplo debe realizar una sincronización completa.
--   **HighestCommittedUSN,**. Este valor se convierte en el límite inferior para el filtro de **uSNChanged** en la siguiente sincronización incremental.
+-   GUID **de invocationID** del controlador de dominio. En el ejemplo de código se usa este valor para detectar que el controlador de dominio se ha restaurado a partir de una copia de seguridad, en cuyo caso, el ejemplo debe realizar una sincronización completa.
+-   **HighestCommittedUSN.** Este valor se convierte en el límite inferior del filtro **uSNChanged** en la siguiente sincronización incremental.
 
-En el ejemplo de código se usa la interfaz [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) , que especifica el nombre distintivo de la base de la búsqueda, un ámbito de búsqueda y un filtro. No hay restricciones en la base o el ámbito de la búsqueda. Además de especificar los objetos de interés, el filtro también debe especificar una comparación de **uSNChanged** , como "uSNChanged >= <lower bound USN> ". Para una sincronización completa, " &lt; USN de límite inferior &gt; " es cero. En el caso de una sincronización incremental, es el 1 más el valor de **highestCommittedUSN,** de la búsqueda anterior.
+En el ejemplo de código se usa la [**interfaz IDirectorySearch,**](/windows/desktop/api/iads/nn-iads-idirectorysearch) que especifica el nombre distintivo de la base de la búsqueda, un ámbito de búsqueda y un filtro. No hay restricciones en la base de búsqueda ni en el ámbito. Además de especificar los objetos de interés, el filtro también debe especificar una comparación **de uSNChanged,** como "uSNChanged >= <lower bound USN> ". Para una sincronización completa, &lt; "USN de límite &gt; inferior" es cero. Para una sincronización incremental, es el valor 1 más el **valor highestCommittedUSN** de la búsqueda anterior.
 
-Tenga en cuenta que esta aplicación de ejemplo está diseñada únicamente para mostrar cómo usar **uSNChanged** para recuperar los cambios del servidor de Active Directory. Imprime los cambios y no sincroniza realmente los datos en un almacenamiento secundario. Por lo tanto, no muestra cómo controlar problemas como objetos que se han descargado o condiciones "no principales". Muestra cómo recuperar los objetos eliminados, pero no muestra cómo una aplicación usa el **objectGUID** de los objetos eliminados para determinar el objeto correspondiente que se eliminará en el almacenamiento.
+Tenga en cuenta que esta aplicación de ejemplo solo está pensada para mostrar cómo usar **uSNChanged** para recuperar los cambios del Active Directory servidor. Imprime los cambios y no sincroniza realmente los datos en un almacenamiento secundario. Por lo tanto, no muestra cómo controlar problemas como objetos movidos o condiciones "sin elementos primarios". Muestra cómo recuperar objetos eliminados, pero no muestra cómo una aplicación usa el **objectGUID** de los objetos eliminados para determinar el objeto correspondiente que se va a eliminar en el almacenamiento.
 
-Además, el ejemplo almacena en caché el nombre del controlador de dominio, el **invocación** y **highestCommittedUSN,** en el registro. En una aplicación de sincronización real, debe almacenar los parámetros en el mismo almacenamiento que se mantienen coherentes con el servidor de Active Directory. Esto garantiza que los parámetros y los datos de objeto permanecen sincronizados si la base de datos se restaura a partir de una copia de seguridad.
+Además, el ejemplo almacena en caché el nombre del controlador de dominio, **invocationID** y **highestCommittedUSN** en el Registro. En una aplicación de sincronización real, debe almacenar los parámetros en el mismo almacenamiento que se mantienen coherentes con el Active Directory servidor. Esto garantiza que los parámetros y los datos del objeto permanezcan sincronizados si la base de datos se restaura alguna vez a partir de una copia de seguridad.
 
 
 ```C++
@@ -817,6 +817,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

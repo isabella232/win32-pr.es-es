@@ -4,19 +4,19 @@ description: En este tema se incluye un código de ejemplo de código que crea u
 ms.assetid: f6bba6fc-fec2-4dd9-b7f2-da7782a6caa5
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, crear un grupo
+- Active Directory ejemplos Active Directory , crear un grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 817ea5ddd9201addccd4df4ed7a1f268d7f5e2c4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1d7f0740150990efdd333f25e69210a85452653ca99163f2793e2aca8495f4e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190818"
 ---
 # <a name="example-code-for-creating-a-group"></a>Código de ejemplo para crear un grupo
 
-El siguiente ejemplo de código de C++ contiene una función que crea un grupo con solo las propiedades esenciales establecidas explícitamente (**CN**, **sAMAccountType**, **GroupType**) y no contiene miembros.
+El siguiente ejemplo de código de C++ contiene una función que crea un grupo con solo las propiedades esenciales establecidas explícitamente **(cn**, **sAMAccountType**, **groupType**) y que no contiene ningún miembro.
 
 
 ```C++
@@ -304,7 +304,7 @@ WCHAR * GetDirectoryObjectAttrib(IDirectoryObject *pDirObject,
 
 
 
-En el siguiente ejemplo de código Visual Basic se crea un grupo que solo tiene las propiedades esenciales establecidas explícitamente (**CN**, **sAMAccountType**, **GroupType**) y no contiene miembros.
+En el Visual Basic ejemplo de código siguiente se crea un grupo con solo las propiedades esenciales establecidas explícitamente **(cn**, **sAMAccountType**, **groupType**) y que no contiene ningún miembro.
 
 
 ```VB
@@ -379,9 +379,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

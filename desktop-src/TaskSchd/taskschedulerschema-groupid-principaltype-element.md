@@ -1,6 +1,6 @@
 ---
 title: Elemento GroupId (principalType)
-description: Especifica el identificador del grupo de usuarios necesario para ejecutar las tareas asociadas a la entidad de seguridad.
+description: Especifica el identificador del grupo de usuarios necesario para ejecutar esas tareas asociadas a la entidad de seguridad.
 ms.assetid: 1e576c31-79a9-42d4-b497-74412e464d60
 keywords:
 - Elemento GroupId Programador de tareas
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 080a408f65ac7a36ada1751bbd5cb95395cf0b35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4376e7037c228ebf2d2ffdc193cc34e7f92647220251cd82f09b0b65c7f9a81c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131844"
 ---
 # <a name="groupid-principaltype-element"></a>Elemento GroupId (principalType)
 
-Especifica el identificador del grupo de usuarios necesario para ejecutar las tareas asociadas a la entidad de seguridad.
+Especifica el identificador del grupo de usuarios necesario para ejecutar esas tareas asociadas a la entidad de seguridad.
 
 ``` syntax
 <xs:element name="GroupId"
@@ -30,7 +30,7 @@ Especifica el identificador del grupo de usuarios necesario para ejecutar las ta
  />
 ```
 
-El elemento **GROUPID** se define mediante el tipo complejo [**principalType**](taskschedulerschema-principaltype-complextype.md) .
+El **elemento GroupId** se define mediante el [**tipo complejo principalType.**](taskschedulerschema-principaltype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,34 +38,34 @@ El elemento **GROUPID** se define mediante el tipo complejo [**principalType**](
 
 | Elemento                                                                  | Derivado de                                                           | Descripción                                                    |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------|
-| [**Principal**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica las credenciales de seguridad para una entidad de seguridad.<br/> |
+| [**Principal**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica las credenciales de seguridad de una entidad de seguridad.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se puede especificar un identificador de grupo y un identificador de usuario al mismo tiempo. Especifique los elementos [**userid**](taskschedulerschema-userid-principaltype-element.md) o **GROUPID** , pero no ambos.
+No se puede especificar un identificador de grupo y un identificador de usuario al mismo tiempo. Especifique los elementos [**UserId**](taskschedulerschema-userid-principaltype-element.md) **o GroupId,** pero no ambos.
 
-Para el desarrollo de scripts, el identificador de grupo de la entidad de seguridad se especifica mediante la propiedad [**principal. GROUPID**](principal-groupid.md) .
+Para el desarrollo de scripts, el identificador de grupo de la entidad de seguridad se especifica mediante la [**propiedad Principal.GroupId.**](principal-groupid.md)
 
-En el desarrollo de C++, el identificador de grupo de la entidad de seguridad se especifica mediante la propiedad [**IPrincipal:: GROUPID**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_groupid) .
+Para el desarrollo de C++, el identificador de grupo de la entidad de seguridad se especifica mediante la [**propiedad IPrincipal::GroupId.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_groupid)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML de una tarea que usa este elemento, vea [ejemplo de desencadenador de inicio de sesión (XML)](logon-trigger-example--xml-.md).
+Para obtener un ejemplo completo del XML para una tarea que usa este elemento, vea Ejemplo de desencadenador de inicio de [sesión (XML).](logon-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

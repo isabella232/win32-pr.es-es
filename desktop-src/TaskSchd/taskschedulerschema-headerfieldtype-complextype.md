@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de headerFieldType
+title: tipo complejo headerFieldType
 description: Define los elementos que se usan para crear un campo de encabezado en un mensaje de correo electrónico.
 ms.assetid: 66036875-1116-46eb-b2f5-8c8ad8373ab1
 keywords:
-- tipo complejo de headerFieldType Programador de tareas
+- tipo complejo headerFieldType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7ddbc0ae22c6baf3fd288cbe2ead19dac506afee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 78c4fb3a8ca85cea5b765fc1fc4521f968efd76e9169613dc4a1565a43ee1b36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131834"
 ---
-# <a name="headerfieldtype-complex-type"></a>Tipo complejo de headerFieldType
+# <a name="headerfieldtype-complex-type"></a>tipo complejo headerFieldType
 
 Define los elementos que se usan para crear un campo de encabezado en un mensaje de correo electrónico.
 
@@ -43,8 +43,8 @@ Define los elementos que se usan para crear un campo de encabezado en un mensaje
 
 | Elemento                                                            | Tipo                                                                    | Descripción                                                            |
 |--------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**Name**](taskschedulerschema-name-headerfieldtype-element.md)   | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md) | Especifica el nombre del campo de encabezado en un mensaje de correo electrónico.<br/> |
-| [**Value**](taskschedulerschema-value-headerfieldtype-element.md) | **string**                                                              | Especifica el valor de un campo de encabezado en un mensaje de correo electrónico.<br/>  |
+| [**Nombre**](taskschedulerschema-name-headerfieldtype-element.md)   | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md) | Especifica el nombre del campo de encabezado en un mensaje de correo electrónico.<br/> |
+| [**Valor**](taskschedulerschema-value-headerfieldtype-element.md) | **string**                                                              | Especifica el valor de un campo de encabezado en un mensaje de correo electrónico.<br/>  |
 
 
 
@@ -52,10 +52,10 @@ Define los elementos que se usan para crear un campo de encabezado en un mensaje
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

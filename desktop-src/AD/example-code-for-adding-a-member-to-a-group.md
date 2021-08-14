@@ -4,27 +4,27 @@ description: Este tema contiene ejemplos de código que agregan un miembro a un 
 ms.assetid: 306fcadb-a492-41e5-bfb3-8beaaec24fb5
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, agregar un miembro a un grupo
+- Active Directory ejemplos Active Directory , agregar un miembro a un grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a64a41fac871c6793ee4d0db1f4be79c9fbd0d1
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: f5cccccca0fa701b4f5bc1ce9b350ac1073c6da7614c7292724138b2d433ef2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103995736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191298"
 ---
 # <a name="example-code-for-adding-a-member-to-a-group"></a>Código de ejemplo para agregar un miembro a un grupo
 
-Este tema contiene ejemplos de código que agregan un miembro a un grupo. Los ejemplos de Visual Basic Scripting Edition (VBScript) y C++ agregan un miembro agregando el objeto [**IADs**](/windows/desktop/api/iads/nn-iads-iads) que representa el miembro al objeto [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) que representa el grupo. Los ejemplos Visual Basic .NET y C# modifican la propiedad de miembro del objeto [DirectoryEntry](/dotnet/api/system.directoryservices.directoryentry) que representa el grupo.
+Este tema contiene ejemplos de código que agregan un miembro a un grupo. Los ejemplos Visual Basic Scripting Edition (VBScript) y C++ agregan un miembro agregando el objeto [**IADs**](/windows/desktop/api/iads/nn-iads-iads) que representa el miembro al objeto [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) que representa el grupo. Los Visual Basic de .NET y C# modifican la propiedad miembro del [objeto DirectoryEntry](/dotnet/api/system.directoryservices.directoryentry) que representa el grupo.
 
 
-Los siguientes ejemplos de código de C# agregan un miembro existente a un grupo. La función toma el ADsPath del contenedor de grupo y el nombre distintivo del miembro que se va a agregar al grupo. El ADsPath se usa para crear un objeto [DirectoryEntry](/dotnet/api/system.directoryservices.directoryentry) que representa el grupo. El método [PropertyValueCollection. Add](/dotnet/api/system.directoryservices.propertyvaluecollection.add#System_DirectoryServices_PropertyValueCollection_Add_System_Object_) agrega al grupo el miembro cuyo nombre distintivo se pasó a la función. A continuación, la función usa el método [DirectoryEntry. commitChanges](/dotnet/api/system.directoryservices.directoryentry.commitchanges#System_DirectoryServices_DirectoryEntry_CommitChanges) para escribir la información de nuevos miembros en la base de datos.
+Los siguientes ejemplos de código de C# agregan un miembro existente a un grupo. La función toma el ADsPath del contenedor de grupo y el nombre distintivo del miembro que se va a agregar al grupo. ADsPath se usa para crear un [objeto DirectoryEntry](/dotnet/api/system.directoryservices.directoryentry) que representa el grupo. El [método PropertyValueCollection.Add](/dotnet/api/system.directoryservices.propertyvaluecollection.add#System_DirectoryServices_PropertyValueCollection_Add_System_Object_) agrega al grupo el miembro cuyo nombre distintivo se pasó a la función. A continuación, la función usa [el método DirectoryEntry.CommitChanges](/dotnet/api/system.directoryservices.directoryentry.commitchanges#System_DirectoryServices_DirectoryEntry_CommitChanges) para escribir la nueva información de miembro en la base de datos.
 
 Llame a la función con los parámetros siguientes:
 
--   *bindString*: un ADsPath válido para un contenedor de grupo, como "LDAP://fabrikam.com/cn=TestGroup,ou=TestOU,DC=Fabrikam,DC=com"
--   *newMember*: el nombre distintivo del miembro que se va a agregar al grupo, por ejemplo, "CN = JUANPÉREZ, ou = TESTOU, DC = Fabrikam, DC = com".
+-   *bindString:* ADsPath válido para un contenedor de grupo, como "LDAP://fabrikam.com/CN=TestGroup,OU=TestOU,DC=fabrikam,DC=com"
+-   *newMember*: nombre distintivo del miembro que se va a agregar al grupo, como "CN=JeffSmith,OU=TestOU,DC=fabrikam,DC=com"
 
 
 ```CSharp
@@ -66,12 +66,12 @@ private void AddMemberToGroup(
 
 
 
-En los siguientes ejemplos de código de .NET Visual Basic se agrega un miembro existente a un grupo. La función toma el ADsPath del contenedor de grupo y el nombre distintivo del miembro que se va a agregar al grupo. El ADsPath se usa para crear un objeto [DirectoryEntry](/dotnet/api/system.directoryservices.directoryentry) que representa el grupo. El método [PropertyValueCollection. Add](/dotnet/api/system.directoryservices.propertyvaluecollection.add#System_DirectoryServices_PropertyValueCollection_Add_System_Object_) agrega al grupo el miembro cuyo nombre distintivo se pasó a la función. A continuación, la función usa el método [DirectoryEntry. commitChanges](/dotnet/api/system.directoryservices.directoryentry.commitchanges#System_DirectoryServices_DirectoryEntry_CommitChanges) para escribir la información de nuevos miembros en la base de datos.
+En los Visual Basic ejemplos de código de .NET se agrega un miembro existente a un grupo. La función toma el ADsPath del contenedor de grupo y el nombre distintivo del miembro que se va a agregar al grupo. ADsPath se usa para crear un [objeto DirectoryEntry](/dotnet/api/system.directoryservices.directoryentry) que representa el grupo. El [método PropertyValueCollection.Add](/dotnet/api/system.directoryservices.propertyvaluecollection.add#System_DirectoryServices_PropertyValueCollection_Add_System_Object_) agrega al grupo el miembro cuyo nombre distintivo se pasó a la función. A continuación, la función usa [el método DirectoryEntry.CommitChanges](/dotnet/api/system.directoryservices.directoryentry.commitchanges#System_DirectoryServices_DirectoryEntry_CommitChanges) para escribir la nueva información de miembro en la base de datos.
 
 Llame a la función con los parámetros siguientes:
 
--   *bindString*: un ADsPath válido para un contenedor de grupo, como "LDAP://fabrikam.com/cn=TestGroup,ou=TestOU,DC=Fabrikam,DC=com"
--   *newMember*: el nombre distintivo del miembro que se va a agregar al grupo, por ejemplo, "CN = JUANPÉREZ, ou = TESTOU, DC = Fabrikam, DC = com".
+-   *bindString:* ADsPath válido para un contenedor de grupo, como "LDAP://fabrikam.com/CN=TestGroup,OU=TestOU,DC=fabrikam,DC=com"
+-   *newMember*: nombre distintivo del miembro que se va a agregar al grupo, como "CN=JeffSmith,OU=TestOU,DC=fabrikam,DC=com"
 
 
 ```VB
@@ -102,7 +102,7 @@ End Sub
 
 
 
-En el siguiente ejemplo de VBScript se agrega un miembro existente a un grupo. El script agrega el usuario, Jeff Smith, al grupo TestGroup.
+En el siguiente ejemplo de VBScript se agrega un miembro existente a un grupo. El script agrega el usuario Jeff Smith al grupo TestGroup.
 
 
 ```VB
@@ -317,22 +317,22 @@ HRESULT AddMemberToGroup(IADsGroup * pGroup, IADs* pIADsNewMember)
 
 <dl> <dt>
 
-[Agregar miembros a grupos de un dominio](adding-members-to-groups-in-a-domain.md)
+[Agregar miembros a grupos en un dominio](adding-members-to-groups-in-a-domain.md)
 </dt> <dt>
 
 [DirectoryEntry](/dotnet/api/system.directoryservices.directoryentry)
 </dt> <dt>
 
-[DirectoryEntry. CommitChanges](/dotnet/api/system.directoryservices.directoryentry.commitchanges#System_DirectoryServices_DirectoryEntry_CommitChanges)
+[DirectoryEntry.CommitChanges](/dotnet/api/system.directoryservices.directoryentry.commitchanges#System_DirectoryServices_DirectoryEntry_CommitChanges)
 </dt> <dt>
 
-[**IADs**](/windows/desktop/api/iads/nn-iads-iads)
+[**Iads**](/windows/desktop/api/iads/nn-iads-iads)
 </dt> <dt>
 
 [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup)
 </dt> <dt>
 
-[PropertyValueCollection. Add](/dotnet/api/system.directoryservices.propertyvaluecollection.add#System_DirectoryServices_PropertyValueCollection_Add_System_Object_)
+[PropertyValueCollection.Add](/dotnet/api/system.directoryservices.propertyvaluecollection.add#System_DirectoryServices_PropertyValueCollection_Add_System_Object_)
 </dt> </dl>
 
  

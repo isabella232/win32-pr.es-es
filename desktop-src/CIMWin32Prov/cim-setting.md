@@ -1,8 +1,8 @@
 ---
-description: La \_ clase de configuración CIM representa parámetros operativos y relacionados con la configuración de uno o más elementos del sistema administrados.
+description: La clase CIM Setting representa los parámetros operativos y \_ relacionados con la configuración de uno o varios elementos del sistema administrados.
 ms.assetid: 57c46b00-96c4-4df1-82ad-01f7b4f75ced
 ms.tgt_platform: multiple
-title: CIM_Setting (clase) (proveedores WMI de CIMWin32)
+title: CIM_Setting clase (proveedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f1081bd93c95dfa90b6a4dfa6a87339e8e3172a0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b76fd28b99cf218b9d6276b80e070eabaa5d9aeef5c6016399f8b8336d2bb328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118421316"
 ---
-# <a name="cim_setting-class-cimwin32-wmi-providers"></a>CIM_Setting (clase) (proveedores WMI de CIMWin32)
+# <a name="cim_setting-class-cimwin32-wmi-providers"></a>CIM_Setting clase (proveedores WMI CIMWin32)
 
-La clase de **\_ configuración CIM** representa parámetros operativos y relacionados con la configuración de uno o más elementos del sistema administrados. Un elemento del sistema administrado puede tener varios objetos de configuración asociados. Los valores operativos actuales de los parámetros de un elemento se reflejan en las propiedades del propio elemento o de las propiedades de sus asociaciones. No es necesario que estas propiedades tengan los mismos valores presentes en el objeto de configuración. Por ejemplo, un módem puede tener un valor de velocidad en baudios de 56 kilobytes por segundo, pero funcionar a 19,2 kilobytes por segundo.
+La **clase CIM \_ Setting** representa los parámetros operativos y relacionados con la configuración de uno o varios elementos del sistema administrados. Un elemento del sistema administrado puede tener varios objetos de configuración asociados. Los valores operativos actuales de los parámetros de un elemento se reflejan en las propiedades del propio elemento o en las propiedades de sus asociaciones. Estas propiedades no tienen que ser los mismos valores presentes en el objeto de configuración. Por ejemplo, un módem puede tener una velocidad en baudios de 56 kilobytes por segundo, pero funciona a 19,2 kilobytes por segundo.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,13 +49,13 @@ class CIM_Setting
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ configuración CIM** tiene estos tipos de miembros:
+La **clase CIM \_ Setting** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ configuración CIM** tiene estas propiedades.
+La **clase Cim \_ Setting** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -104,22 +104,22 @@ Identificador por el que se conoce el objeto actual.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-WMI no implementa esta clase. Para las clases WMI derivadas de la **\_ configuración de CIM**, vea [clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de la configuración **\_ cim**, vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

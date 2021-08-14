@@ -1,22 +1,22 @@
 ---
-description: La estructura XMUSHORT2 expone los siguientes operadores.
+description: La estructura XMUSHORT2 expone los operadores siguientes.
 ms.assetid: f57c9445-bd7f-42f7-b892-1023b76c792e
 title: Operadores XMUSHORT2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 281c5a741e94746c81d98e3836ba2ba980533d0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e95dd1bb1cf008c9a3447014bcafed0ff41a94ee204b5b7b7649aa7d7b385032
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118500780"
 ---
 # <a name="xmushort2-operators"></a>Operadores XMUSHORT2
 
-La estructura [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) expone los siguientes operadores.
+La [**estructura XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-direct
 
 | Métodos                                                | Descripción                                                                                                            |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/previous-versions/windows/desktop/legacy/ee420700(v=vs.85))<br/> | Asigna los datos del componente de vector de una instancia de `XMUSHORT2` a la instancia actual de `XMUSHORT2` . <br/> |
+| [**operator =**](/previous-versions/windows/desktop/legacy/ee420700(v=vs.85))<br/> | Asigna los datos del componente vectorial de una instancia de `XMUSHORT2` a la instancia actual de `XMUSHORT2` . <br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-direct
 
 <dl> <dt>
 
-[Extensiones de XMUSHORT2](ovw-xmushort2-extensions.md)
+[Extensiones XMUSHORT2](ovw-xmushort2-extensions.md)
 </dt> <dt>
 
 **Referencia**

@@ -7,32 +7,32 @@ keywords:
 - efectos de la seguridad en la búsqueda Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26feee840c0668b2ea9412932a27927bb1c00012
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 429150489f2ab4d00015744beff72ee2b90b0399afd3d43f9263d39cadbaecd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191625"
 ---
 # <a name="effects-of-security-on-searching"></a>Efectos de la seguridad en la búsqueda
 
 La seguridad es un filtro implícito al realizar búsquedas, enumerar contenedores o leer propiedades.
 
-ADSI no puede devolver ninguna \_ propiedad de este tipo, \_ ni \_ \_ siquiera cuando el objeto existe si no tiene acceso para leer atributos en el objeto.
+ADSI puede devolver errores NO SUCH PROPERTY o NO SUCH OBJECT incluso cuando el objeto existe si no tiene acceso para leer \_ \_ atributos en el \_ \_ objeto.
 
-Por ejemplo, un llamador puede enumerar los objetos secundarios de un contenedor porque el autor de la llamada tiene \_ derechos de lista de contenido en el contenedor. Pero es posible que el mismo llamador no pueda tener acceso a los objetos enumerados si el autor de la llamada no tiene acceso de lectura a los objetos secundarios. En este caso, es posible que una consulta para un objeto secundario NO devuelva \_ este tipo de \_ objeto aunque el autor de la llamada haya enumerado correctamente el objeto.
+Por ejemplo, un autor de la llamada puede enumerar los objetos secundarios de un contenedor porque el autor de la llamada tiene derechos LIST \_ CONTENTS en el contenedor. Pero es posible que el mismo autor de la llamada no pueda acceder a los objetos enumerados si el autor de la llamada no tiene acceso de lectura a los objetos secundarios. En este caso, una consulta para un objeto secundario puede devolver NO SUCH OBJECT aunque el autor de la llamada \_ \_ enumerase correctamente el objeto.
 
 Si el autor de la llamada no tiene derechos suficientes, se pueden devolver los siguientes códigos de retorno:
 
-E \_ ADS \_ \_ objeto de dominio no válido \_
+E \_ ADS \_ INVALID \_ DOMAIN \_ OBJECT
 
-\_no se \_ admite la propiedad de ADS \_ \_
+NO \_ SE ADMITE LA PROPIEDAD E \_ \_ \_ ADS
 
-\_ \_ \_ no \_ se encontró la propiedad de ADS
+E \_ ADS \_ PROPERTY \_ NOT \_ FOUND
 
- 
+ 
 
- 
+ 
 
 
 

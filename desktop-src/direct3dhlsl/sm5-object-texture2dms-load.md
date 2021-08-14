@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DMS:: Load (int, int) (función)'
-description: 'Obtiene un valor. | Texture2DMS:: Load (int, int) (función)'
+title: Función Texture2DMS::Load(int,int)
+description: Obtiene un valor. | Función Texture2DMS::Load(int,int)
 ms.assetid: b49b94e0-5c49-4901-b49d-3e652d4fd2d1
 keywords:
-- Función de carga de DXGI
+- Carga de la función DXGI
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d9c86bea7d914dd5975105a00a64789864a1fbd
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0997a1bd30b4912864674015057fcafec227d90ad05b16b88fd3f05b671f155c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285733"
 ---
-# <a name="texture2dmsloadintint-function"></a>Texture2DMS:: Load (int, int) (función)
+# <a name="texture2dmsloadintint-function"></a>Función Texture2DMS::Load(int,int)
 
 Obtiene un valor.
 
@@ -37,16 +37,16 @@ T Load(
 
 <dl> <dt>
 
-*coordenadas* \[ de\]
+*coord* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Ubicación de entrada.
 
 </dd> <dt>
 
-*sampleindex* \[ de\]
+*sampleindex* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
@@ -61,7 +61,7 @@ Tipo: **T**
 
 Un valor, cuyo tipo coincide con el tipo de plantilla de textura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -74,11 +74,11 @@ void Load(in int2 coord,
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -86,11 +86,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Cargar métodos](texture2dms-load.md)
+[Métodos de carga](texture2dms-load.md)
 </dt> <dt>
 
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)

@@ -1,19 +1,19 @@
 ---
-description: Indica si la longitud es oriental o oeste.
+description: Indica si la longitud es este u oeste.
 ms.assetid: 011b8830-60a4-4c37-a7a7-4948f87bffcc
-title: System. GPS. LongitudeRef
+title: System.GPS.LongitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64d554f44fbbb1afb343703f6c1509d7ce3488d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d303fff4ea76df12f4113e5a079bc168a9f6927fdf7a534f65f674fd50bb76c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466521"
 ---
-# <a name="systemgpslongituderef"></a>System. GPS. LongitudeRef
+# <a name="systemgpslongituderef"></a>System.GPS.LongitudeRef
 
-Indica si la longitud es oriental o oeste.
+Indica si la longitud es este u oeste.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -45,9 +45,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -62,7 +62,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -74,7 +74,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -92,7 +92,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

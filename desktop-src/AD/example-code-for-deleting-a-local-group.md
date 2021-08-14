@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para eliminar un grupo local
-description: Ejemplos de código para eliminar un grupo local en un servidor miembro o un equipo que ejecuta Windows NT Workstation o Windows 2000 Professional.
+description: Ejemplos de código para eliminar un grupo local en un servidor miembro o un equipo que ejecuta Windows estación de trabajo NT o Windows 2000 Professional.
 ms.assetid: ff4fd148-2fa2-4355-bfaa-1f093d61aa00
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, eliminar un grupo local
+- Active Directory ejemplos Active Directory , eliminar un grupo local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b91588bf59ae7b276aecbaa1740b2510f652f5c8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c02f58958888f7540559cdf196f8f44f54c6c3d2ddd8039b05f82688be2e7f9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190768"
 ---
 # <a name="example-code-for-deleting-a-local-group"></a>Código de ejemplo para eliminar un grupo local
 
-En el siguiente ejemplo de código de C++ se elimina un grupo local en un servidor miembro o en un equipo que ejecuta Windows 2000 Professional o Windows NT Workstation.
+En el siguiente ejemplo de código de C++ se elimina un grupo local en un servidor miembro o un equipo que ejecuta Windows 2000 Professional o Windows estación de trabajo NT.
 
 
 ```C++
@@ -145,7 +145,7 @@ HRESULT DeleteADObject(LPOLESTR pwszAdsPath,
 
 
 
-En el siguiente ejemplo de código Visual Basic Scripting Edition se elimina un grupo local en un servidor miembro o en un equipo que ejecuta Windows 2000 Professional o Windows NT Workstation.
+En el ejemplo de código Visual Basic Scripting Edition siguiente se elimina un grupo local en un servidor miembro o un equipo que ejecuta Windows 2000 Professional o Windows estación de trabajo NT.
 
 
 ```VB
@@ -210,9 +210,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,21 +4,21 @@ description: En este tema se incluye un ejemplo de código que se usa para busca
 ms.assetid: 539e0127-1355-4606-97bd-49dfafb25f8d
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para buscar objetos de esquema AD
+- Código de ejemplo para buscar objetos de esquema de AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f58fda74e637430cc2d773c00cb020a848dbf9e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d28bb0a873f3a867934521607239a96611bbdc4cd4738edcd766cc0bad852311
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190265"
 ---
 # <a name="example-code-for-searching-for-schema-objects"></a>Código de ejemplo para buscar objetos de esquema
 
 En este tema se incluye un ejemplo de código que se usa para buscar objetos de esquema.
 
-En el ejemplo de código de C++ siguiente se muestra cómo buscar objetos de esquema que tienen bits establecidos en el atributo **systemFlags** .
+En el siguiente ejemplo de código de C++ se muestra cómo buscar objetos de esquema que tienen bits establecidos en el **atributo systemFlags.**
 
 
 ```C++
@@ -373,9 +373,9 @@ HRESULT PrintIndexedAttributes(IDirectorySearch *pSchemaNC)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

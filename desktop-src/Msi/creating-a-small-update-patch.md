@@ -1,29 +1,29 @@
 ---
-description: Siga las instrucciones que se indican a continuación al crear una revisión para una Windows Installer actualización pequeña.
+description: Siga las instrucciones siguientes al crear una revisión para una Windows Installer.
 ms.assetid: 0e57c2aa-e86a-4161-9749-c7963182a6d5
-title: Crear una revisión de actualización pequeña
+title: Creación de una revisión de actualización pequeña
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d948c871baed7fbc15545ed9669c9864ce954799
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b2c3dffac099358b924914b5dbd86871ba370241c42a2e3fd5caef2d8f12ff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118379400"
 ---
-# <a name="creating-a-small-update-patch"></a>Crear una revisión de actualización pequeña
+# <a name="creating-a-small-update-patch"></a>Creación de una revisión de actualización pequeña
 
-Al crear una revisión para [las actualizaciones pequeñas](small-updates.md), los autores deben cumplir las siguientes directrices:
+Al crear una revisión para [actualizaciones pequeñas,](small-updates.md)los autores deben cumplir las siguientes directrices:
 
--   Las revisiones de actualización pequeñas deben diseñarse para una única instalación de destino.
--   Las revisiones de actualización pequeñas deben usar la versión más antigua como la instalación de destino.
--   Una revisión de actualización pequeña debe reemplazar y hacer que las revisiones de actualización pequeñas anteriores queden obsoletas.
+-   Las revisiones de actualización pequeñas deben diseñarse para una instalación de destino única.
+-   Las revisiones de actualización pequeñas deben usar la versión más antigua como instalación de destino.
+-   Una revisión de actualización pequeña debe reemplazar y dejar obsoletas las revisiones de actualización pequeñas anteriores.
 
-El siguiente escenario muestra Cuándo es mejor una pequeña revisión de actualización.
+En el siguiente escenario se muestra cuándo es mejor una revisión de actualización pequeña.
 
-Su empresa incluye la versión 1,0 de Myproduct.msi. Poco después, envía una pequeña revisión de [actualización](small-updates.md) para Myproduct.msi denominada QFE1. Esto no cambia la propiedad [**ProductCode**](productcode.md) o la propiedad [**ProductVersion**](productversion.md) .
+Su empresa envía la versión 1.0 de Myproduct.msi. Poco después, se envía una pequeña [revisión de](small-updates.md) actualización para Myproduct.msi llamada QFE1. Esto no cambia la [**propiedad ProductCode**](productcode.md) ni [**la propiedad ProductVersion.**](productversion.md)
 
-Más adelante, creará una segunda revisión de [actualización pequeña](small-updates.md) para Myproduct.msi denominada QFE2. Esta segunda revisión debe tener como destino Myproduct.msi versión 1,0. Esta segunda revisión no debe tener como destino Myproduct.msi versión 1,0 y Myproduct.msi versión 1,0 + QFE1. Cuando se aplica QFE2, debe quitar QFE1.
+Más adelante, cree una segunda [revisión de actualización](small-updates.md) pequeña para Myproduct.msi llamada QFE2. Esta segunda revisión debe tener como Myproduct.msi versión 1.0. Esta segunda revisión no debe tener como destino Myproduct.msi versión 1.0 y Myproduct.msi versión 1.0 + QFE1. Cuando se aplica QFE2, debe quitar QFE1.
 
  
 

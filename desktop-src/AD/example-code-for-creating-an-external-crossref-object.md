@@ -4,8 +4,8 @@ description: En este tema se incluye un ejemplo de código que crea un objeto cr
 ms.assetid: 282ca648-3bc7-4c5b-98db-1d8f2d040e3a
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, crear un objeto crossRef externo
-- Active Directory ejemplos Active Directory crear un anuncio de referencia externa, código de ejemplo
+- Active Directory ejemplos Active Directory , crear un objeto crossRef externo
+- Active Directory ejemplos Active Directory crear una referencia externa de AD, código de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 484fafed7e77fcd4d97c74c26acf8dfaf058dcf4
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 19b3ee6eb9f13171576cac1a0c656139cee83b7a689eadcb89a33f2807eb8b03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104077517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190759"
 ---
 # <a name="example-code-for-creating-an-external-crossref-object"></a>Código de ejemplo para crear un objeto crossRef externo
 
-En el siguiente ejemplo de código de Visual Basic se muestra cómo crear un objeto [**crossRef**](/windows/desktop/ADSchema/c-crossref) externo.
+En el Visual Basic ejemplo de código siguiente se muestra cómo crear un objeto [**crossRef**](/windows/desktop/ADSchema/c-crossref) externo.
 
 
 ```VB
@@ -75,6 +75,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

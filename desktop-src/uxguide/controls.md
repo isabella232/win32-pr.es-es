@@ -1,22 +1,22 @@
 ---
 title: Controles (conceptos básicos de diseño)
-description: Los controles son elementos de la interfaz de usuario con los que interactúan los usuarios en el área de ventana principal de la aplicación. Vea ejemplos visuales de controles en aplicaciones de escritorio basadas en Windows y obtenga vínculos a las directrices para cada control.
+description: Los controles son elementos de la interfaz de usuario con los que interactúan los usuarios en el área de ventana principal de la aplicación. Vea ejemplos visuales de controles en Windows aplicaciones de escritorio basadas en aplicaciones de escritorio y obtenga vínculos a directrices para cada control.
 ms.assetid: 5c48728b-6d86-4827-9757-f06c23ca54d8
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c44e7b5f3772984b1dc24b166b9fe8c03a395f8a
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 7254608502145c0e64098941f923ac2051008aa2db2936fe8baf439455c0cfaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118040430"
 ---
 # <a name="controls-design-basics"></a>Controles (conceptos básicos de diseño)
 
 > [!NOTE]
 > Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-Los controles son elementos de la interfaz de usuario con los que interactúan los usuarios en el área de ventana principal de la aplicación. Vea ejemplos visuales de controles en aplicaciones de escritorio basadas en Windows y obtenga vínculos a las directrices para cada control.
+Los controles son elementos de la interfaz de usuario con los que interactúan los usuarios en el área de ventana principal de la aplicación. Vea ejemplos visuales de controles en Windows aplicaciones de escritorio basadas en aplicaciones de escritorio y obtenga vínculos a directrices para cada control.
 
 
 

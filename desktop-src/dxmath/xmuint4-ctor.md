@@ -1,24 +1,24 @@
 ---
 description: Constructores expuestos por XMUINT4.
 ms.assetid: f942a6a3-467c-4beb-964a-b1f066f30b36
-title: Constructores XMUINT4 (Directxmath. h)
+title: Constructores XMUINT4 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 65493672d613095cb93630444b1cc09db63b8ac4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5ccfba325142d4bffe16a890331b955425c479b50b0721af174a42cdb5e469b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118499554"
 ---
 # <a name="xmuint4-constructors"></a>Constructores XMUINT4
 
 Constructores expuestos por `XMUINT4` .
 
-Construye instancias de la estructura [**XMUINT4**](/windows/win32/api/directxmath/ns-directxmath-xmuint4) .
+Construye instancias de la [**estructura XMUINT4.**](/windows/win32/api/directxmath/ns-directxmath-xmuint4)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -39,8 +39,8 @@ Construye instancias de la estructura [**XMUINT4**](/windows/win32/api/directxma
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMUINT4 ()</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint4-xmuint4 (constuint32_t))</td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMUINT4</code> . <br/> Constructor predeterminado para [<strong>XMUINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint4). <br/>
+<td style="text-align: left;">[<strong>XMUINT4 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint4-xmuint4(constuint32_t))</td>
+<td style="text-align: left;">Constructor predeterminado para <code>XMUINT4</code> . <br/> Constructor predeterminado para [<strong>XMUINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint4). <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -48,8 +48,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[<strong>XMUINT4 (const uint32_t *)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint4-xmuint4 (constuint32_t))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMUINT4</code> a partir de un argumento de matriz de cuatro elementos <code>uint32_t</code> . <br/> Este constructor inicializa una nueva instancia de [<strong>XMUINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint4) a partir de un argumento de matriz de cuatro elementos <code>uint32_t</code> . <br/>
+<td style="text-align: left;">[<strong>XMUINT4 (const uint32_t*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint4-xmuint4(constuint32_t))</td>
+<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMUINT4</code> de un argumento de matriz de cuatro <code>uint32_t</code> elementos. <br/> Este constructor inicializa una nueva instancia de [<strong>XMUINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint4) a partir de un argumento de matriz de cuatro <code>uint32_t</code> elementos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -57,8 +57,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMUINT4 (uint32_t, uint32_t, uint32_t, uint32_t)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint4-xmuint4 (uint32_t_uint32_t_uint32_t_uint32_t))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMUINT4</code> a partir de cuatro <code>uint32_t</code> argumentos. <br/> Este constructor inicializa una nueva instancia de [<strong>XMUINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint4) a partir de cuatro <code>uint32_t</code> argumentos. <br/>
+<td style="text-align: left;">[<strong>XMUINT4 (uint32_t,uint32_t,uint32_t,uint32_t)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint4-xmuint4(uint32_t_uint32_t_uint32_t_uint32_t))</td>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUINT4</code> partir de <code>uint32_t</code> cuatro argumentos. <br/> Este constructor inicializa una nueva instancia de [<strong>XMUINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint4) a partir de cuatro <code>uint32_t</code> argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -76,15 +76,15 @@ Este constructor solo está disponible en C++.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Directxmath. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMUINT4](ovw-xmuint4-extensions.md)
+[Extensiones XMUINT4](ovw-xmuint4-extensions.md)
 </dt> <dt>
 
 **Referencia**

@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: campos Server2003Grbits'
-title: Campos Server2003Grbits (Microsoft. ISAM. esent. Interop. Server2003)
+description: 'Más información sobre: Campos Server2003Grbits'
+title: Campos Server2003Grbits (Microsoft.Isam.Esent.Interop.Server2003)
 TOCTitle: Server2003Grbits fields
 ms:assetid: Fields.T:Microsoft.Isam.Esent.Interop.Server2003.Server2003Grbits
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.server2003.server2003grbits_fields(v=EXCHG.10)
 ms:contentKeyID: 55104210
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: ed7a99118674d955fc6a882ac08407e45837af77
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77db94da9f3a5dbec982b31c0ea3d673ffb6228a58f81adf644ff498a2cf4f84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104560745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071677"
 ---
-# <a name="server2003grbits-fields"></a>Campos de Server2003Grbits
+# <a name="server2003grbits-fields"></a>Campos Server2003Grbits
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [Server2003Grbits](./server2003grbits-class.md) expone los siguientes miembros.
+El [tipo Server2003Grbits](./server2003grbits-class.md) expone los miembros siguientes.
 
 ## <a name="fields"></a>Campos
 
@@ -40,12 +40,12 @@ El tipo [Server2003Grbits](./server2003grbits-class.md) expone los siguientes mi
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351284(v=exchg.10).md">ForwardOnly</a></td>
-<td>Esta opción solicita que la tabla temporal se cree solo si el administrador de tablas temporales puede usar la implementación optimizada para los resultados intermedios de la consulta. Si alguna característica de la tabla temporal impidiera el uso de esta optimización, la operación producirá un error con JET_errCannotMaterializeForwardOnlySort. Un efecto secundario de esta opción es permitir que la tabla temporal contenga registros con claves de índice duplicadas. Consulte <a href="hh558517(v=exchg.10).md">Unique</a> para obtener más información.</td>
+<td>Esta opción solicita que la tabla temporal solo se cree si el administrador de tablas temporales puede usar la implementación optimizada para los resultados intermedios de la consulta. Si alguna característica de la tabla temporal impediría el uso de esta optimización, se producirá un error en la operación JET_errCannotMaterializeForwardOnlySort. Un efecto secundario de esta opción es permitir que la tabla temporal contenga registros con claves de índice duplicadas. Consulte <a href="hh558517(v=exchg.10).md">Único</a> para obtener más información.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351209(v=exchg.10).md">WaitAllLevel0Commit</a></td>
-<td>Todas las transacciones confirmadas previamente por cualquier sesión que todavía no se hayan vaciado en el archivo de registro de transacciones se vaciarán inmediatamente. Esta API esperará hasta que se hayan vaciado las transacciones antes de volver al autor de la llamada. Esta opción puede usarse incluso si la sesión no está actualmente en una transacción. Esta opción no se puede usar en combinación con ninguna otra opción.</td>
+<td>Todas las transacciones confirmadas previamente por cualquier sesión que aún no se hayan vaciado en el archivo de registro de transacciones se vaciarán inmediatamente. Esta API esperará hasta que se hayan vaciado las transacciones antes de volver al autor de la llamada. Esta opción se puede usar incluso si la sesión no está actualmente en una transacción. Esta opción no se puede usar en combinación con ninguna otra opción.</td>
 </tr>
 </tbody>
 </table>
@@ -53,10 +53,10 @@ El tipo [Server2003Grbits](./server2003grbits-class.md) expone los siguientes mi
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase Server2003Grbits](./server2003grbits-class.md)
+[Server2003Grbits (clase)](./server2003grbits-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)

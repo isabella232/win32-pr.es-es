@@ -1,11 +1,11 @@
 ---
-title: EDB_RSTMAP estructura (Ntdsbcli. h)
+title: EDB_RSTMAP estructura (Ntdsbcli.h)
 description: Se usa con la función DsRestoreRegister para asignar una base de datos de copia de seguridad a una nueva base de datos.
 ms.assetid: b2c5d30a-3617-4807-82e8-57f7179b817c
 ms.tgt_platform: multiple
 keywords:
-- Estructura de EDB_RSTMAP Active Directory
-- PEDB_RSTMAP puntero de estructura Active Directory
+- EDB_RSTMAP estructura Active Directory
+- PEDB_RSTMAP de puntero de estructura Active Directory
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be2c960ab7ebc687508131deac6cd8e7b99bbe81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c81fe35d8d41818d279df094a57c041b8ea52212d2ce2f0cdc379628f5d5971
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191696"
 ---
-# <a name="edb_rstmap-structure"></a>\_Estructura RSTMAP de edb
+# <a name="edb_rstmap-structure"></a>Estructura \_ RSTMAP de EDB
 
-La estructura **EDB \_ RSTMAP** se usa con la función [**DsRestoreRegister**](dsrestoreregister.md) para asignar una base de datos de copia de seguridad a una nueva base de datos.
+La **estructura \_ RSTMAP** de EDB se usa con la función [**DsRestoreRegister**](dsrestoreregister.md) para asignar una base de datos de copia de seguridad a una nueva base de datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,14 +48,14 @@ typedef struct {
 **szDatabaseName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que contiene el nombre de la base de datos cuando se hizo la copia de seguridad.
+Puntero a una cadena terminada en NULL que contiene el nombre de la base de datos en la que se ha hecho una copia de seguridad.
 
 </dd> <dt>
 
 **szNewDatabaseName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que contiene el nuevo nombre de la base de datos, incluida su nueva ubicación, cuando sea aplicable.
+Puntero a una cadena terminada en NULL que contiene el nuevo nombre de la base de datos, incluida su nueva ubicación, cuando corresponda.
 
 </dd> </dl>
 
@@ -63,16 +63,16 @@ Puntero a una cadena terminada en null que contiene el nuevo nombre de la base d
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **EDB \_ RSTMAPW** (Unicode) y **EDB \_ RSTMAPA** (ANSI)<br/>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

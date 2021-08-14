@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemBootConfiguration Association de Win32 relaciona un equipo con su configuración de arranque.
+description: La clase WMI de asociación SystemBootConfiguration de Win32 \_ relaciona un sistema informático y su configuración de arranque.
 ms.assetid: 1c6bce81-84d9-4949-92da-6111b4ecc939
 ms.tgt_platform: multiple
-title: Win32_SystemBootConfiguration (clase)
+title: Win32_SystemBootConfiguration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 863e4103f7e87681e25ccf53679bfe006ed3ff75
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ad5b30d42e94391163a4a54836877f90415225d0ae697e719e6c088f432430cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118416758"
 ---
-# <a name="win32_systembootconfiguration-class"></a>\_Clase Win32 SystemBootConfiguration
+# <a name="win32_systembootconfiguration-class"></a>Clase SystemBootConfiguration de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemBootConfiguration** Association de Win32 relaciona un equipo con su configuración de arranque.
+La clase WMI **de asociación \_ SystemBootConfiguration** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y su configuración de arranque.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -61,7 +61,7 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
 Referencia a la instancia de que representa el sistema del equipo mediante la configuración de arranque.
@@ -77,32 +77,32 @@ Tipo de datos: **Win32 \_ BootConfiguration**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ BootConfiguration")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ BootConfiguration")
 </dt> </dl>
 
-Referencia a la instancia de que representa la configuración de arranque del equipo.
+Referencia a la instancia de que representa la configuración de arranque del sistema del equipo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ SystemBootConfiguration de Win32** se deriva de [**\_ SystemSetting de Win32**](win32-systemsetting.md).
+La **clase \_ SystemBootConfiguration de Win32** se deriva de [**\_ SystemSetting de Win32.**](win32-systemsetting.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

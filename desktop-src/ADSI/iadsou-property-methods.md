@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsOU (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsOU obtienen o establecen las propiedades enumeradas en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsOU (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsOU obtienen o establecen las propiedades enumeradas en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: 8cb84972-733b-47ca-8647-1b7a85c97021
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsOU ADSI
+- ADSI de métodos de propiedad IADsOU
 topic_type:
 - apiref
 api_name:
@@ -36,16 +36,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0ce30fad6a690a26a8e16b817b77b129dee25f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 019fb93575bc8b8b419797c7efdf41c15a6375172a834f48626befd3526b3b2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179536"
 ---
 # <a name="iadsou-property-methods"></a>Métodos de propiedad IADsOU
 
-Los métodos de propiedad de la interfaz [**IADsOU**](/windows/desktop/api/Iads/nn-iads-iadsou) obtienen o establecen las propiedades enumeradas en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsOU**](/windows/desktop/api/Iads/nn-iads-iadsou) obtienen o establecen las propiedades enumeradas en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -54,11 +54,11 @@ Los métodos de propiedad de la interfaz [**IADsOU**](/windows/desktop/api/Iads/
 **BusinessCategory**
 </dt> <dd> <dl>
 
-Una cadena que contiene las funciones empresariales generales que realiza la unidad organizativa, por ejemplo "contabilidad".
+Cadena que contiene la función o funciones empresariales generales realizadas por la unidad organizativa, por ejemplo, "Contabilidad".
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -86,7 +86,7 @@ Cadena que contiene una descripción textual de la unidad organizativa.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -110,11 +110,11 @@ HRESULT put_Description(
 **FaxNumber**
 </dt> <dd> <dl>
 
-Una cadena que contiene el número de facsímil de la unidad organizativa.
+Cadena que contiene el número facsímil de la unidad organizativa.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -138,11 +138,11 @@ HRESULT put_FaxNumber(
 **LocalityName**
 </dt> <dd> <dl>
 
-Una cadena que contiene el nombre de la región geográfica de la unidad organizativa.
+Cadena que contiene el nombre de la región geográfica de la unidad organizativa.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -170,7 +170,7 @@ Cadena que contiene la dirección postal de la unidad organizativa.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -194,14 +194,14 @@ HRESULT put_PostalAddress(
 **SeeAlso**
 </dt> <dd> <dl>
 
-Matriz de cadenas que contiene los nombres distintivos de otros objetos de directorio que pueden ser pertinentes para este objeto.
+Matriz de cadenas que contiene los nombres distintivos de otros objetos de directorio que pueden ser relevantes para este objeto.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -226,7 +226,7 @@ Cadena que contiene el número de teléfono de la unidad organizativa.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -251,7 +251,7 @@ HRESULT put_TelephoneNumber(
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el **BusinessCategory** y la **Descripción** de todas las unidades de organización en un contenedor. Se supone que el servicio de directorio subyacente admite la agrupación de objetos de directorio por unidad organizativa.
+En el ejemplo de código siguiente se **muestran BusinessCategory** y **Description** de todas las unidades organizativas de un contenedor. Se supone que el servicio de directorio subyacente admite la agrupación de objetos de directorio por unidad organizativa.
 
 
 ```VB
@@ -277,17 +277,17 @@ Next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsOU se define como A2F733B8-Effe-11cf-8ABC-00C04FD8D503<br/>               |
+| IID<br/>                      | IID \_ IADsOU se define como A2F733B8-EFFE-11CF-8ABC-00C04FD8D503<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

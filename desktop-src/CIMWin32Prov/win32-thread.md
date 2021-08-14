@@ -1,8 +1,8 @@
 ---
-description: El \_ subproceso de Win32&\# 8194; La clase WMI representa un subproceso de ejecución.
+description: El subproceso win32 \_&\# 8194; La clase WMI representa un subproceso de ejecución.
 ms.assetid: a284616c-1977-441a-9173-dff4f56b2d39
 ms.tgt_platform: multiple
-title: Win32_Thread (clase)
+title: Win32_Thread clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -36,16 +36,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6e9f6a8c821aa327e8b810b634c85bb06459910f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f3add3a93cc974c2d6c5b20c360d099d46b688887f81cb646005568240a7cb52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118416721"
 ---
-# <a name="win32_thread-class"></a>\_Clase de subproceso Win32
+# <a name="win32_thread-class"></a>Clase Thread de Win32 \_
 
-La  [clase WMI](../wmisdk/retrieving-a-class.md) de **\_ subproceso Win32** representa un subproceso de ejecución. Mientras que un proceso debe tener un subproceso de ejecución, el proceso puede crear otros subprocesos para ejecutar tareas en paralelo. Los subprocesos comparten el entorno de proceso, por lo que varios subprocesos del mismo proceso usan menos memoria que el mismo número de procesos.
+La clase  [WMI](../wmisdk/retrieving-a-class.md) **de subproceso \_ Win32** representa un subproceso de ejecución. Aunque un proceso debe tener un subproceso de ejecución, el proceso puede crear otros subprocesos para ejecutar tareas en paralelo. Los subprocesos comparten el entorno de proceso, por lo que varios subprocesos del mismo proceso usan menos memoria que el mismo número de procesos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -82,13 +82,13 @@ class Win32_Thread : CIM_Thread
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ subproceso de Win32** tiene estos tipos de miembros:
+La **clase Win32 \_ Thread** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ subproceso de Win32** tiene estas propiedades.
+La **clase Win32 \_ Thread** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -101,12 +101,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -119,12 +119,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la primera clase concreta que debe aparecer en la cadena de herencia utilizada en la creación de una instancia. Cuando se usa con las otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
-Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
+Esta propiedad se hereda del subproceso [**CIM \_**](cim-thread.md).
 
 </dd> <dt>
 
@@ -137,12 +137,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ proceso de CIM**](cim-process.md).**CSCreationClassName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Proceso \_ CIM**](cim-process.md).**CSCreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito del equipo.
+Nombre de clase de creación del sistema de equipo de ámbito.
 
-Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
+Esta propiedad se hereda del subproceso [**CIM \_**](cim-thread.md).
 
 </dd> <dt>
 
@@ -155,12 +155,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ proceso de CIM**](cim-process.md).**CSName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Proceso \_ CIM**](cim-process.md).**CSName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre del sistema de ámbito del equipo.
+Nombre del sistema de equipo de ámbito.
 
-Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
+Esta propiedad se hereda del subproceso [**CIM \_**](cim-thread.md).
 
 </dd> <dt>
 
@@ -173,37 +173,37 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| performance Data Structures \| [**Perf \_ Object \_ Type**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PerfTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("Milliseconds")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de datos de rendimiento de Win32API \| \| [**PERF \_ OBJECT \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PerfTime"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("milisegundos")
 </dt> </dl>
 
-Tiempo de ejecución total, en milisegundos, dado a este subproceso desde su creación.
+Tiempo total de ejecución, en milisegundos, dado a este subproceso desde su creación.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **ExecutionState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -211,7 +211,7 @@ Tipo de acceso: solo lectura
 
 Condición de funcionamiento actual del subproceso.
 
-Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
+Esta propiedad se hereda del subproceso [**CIM \_**](cim-thread.md).
 
 <dt>
 
@@ -224,7 +224,7 @@ Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -238,7 +238,7 @@ Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-En **ejecución** (3)
+**En** ejecución (3)
 
 
 </dt> <dd></dd> <dt>
@@ -259,7 +259,7 @@ En **ejecución** (3)
 
 <span id="Suspended_Ready"></span><span id="suspended_ready"></span><span id="SUSPENDED_READY"></span>
 
-**Suspendido preparado** (6)
+**Suspendido listo** (6)
 
 
 </dt> <dd></dd> </dl>
@@ -275,46 +275,46 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**override**](../wmisdk/standard-qualifiers.md) ("Handle"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32ThreadID")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("Handle"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32ThreadID")
 </dt> </dl>
 
-Identificador de un subproceso. De forma predeterminada, el identificador tiene derechos de acceso completo. Con el acceso de seguridad correcto, el identificador se puede utilizar en cualquier función que acepte un identificador de subproceso. Dependiendo de la marca de herencia especificada al crearse, este identificador puede ser heredado por procesos secundarios.
+Identificador de un subproceso. El identificador tiene derechos de acceso completos de forma predeterminada. Con el acceso de seguridad correcto, el identificador se puede usar en cualquier función que acepte un identificador de subproceso. Según la marca de herencia especificada cuando se crea, los procesos secundarios pueden heredar este identificador.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
-Objeto instalado. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
+Se instaló el objeto . Esta propiedad no necesita un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **KernelModeTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("KernelModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| performance Data Structures \| [**Perf \_ Object \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PrivilegedTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanosegundos")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("KernelModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Performance Data Structures \| [**PERF OBJECT \_ \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PrivilegedTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanoseconds")
 </dt> </dl>
 
 Tiempo en modo kernel, en unidades de 100 nanosegundos. Si esta información no está disponible, se debe usar un valor de 0 (cero).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
@@ -327,12 +327,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, la propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -345,12 +345,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ proceso de CIM**](cim-process.md).**OSCreationClassName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Proceso \_ CIM**](cim-process.md).**OSCreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la clase de creación del sistema operativo de ámbito.
+Nombre de clase de creación del sistema operativo de ámbito.
 
-Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
+Esta propiedad se hereda del subproceso [**CIM \_**](cim-thread.md).
 
 </dd> <dt>
 
@@ -363,44 +363,44 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ proceso de CIM**](cim-process.md).**OSName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Proceso \_ CIM**](cim-process.md).**OSName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Nombre del sistema operativo de ámbito.
 
-Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
+Esta propiedad se hereda del [**subproceso CIM \_**](cim-thread.md).
 
 </dd> <dt>
 
 **Prioridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Priority"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| tpDeltaPri")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Priority"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| tpDeltaPri")
 </dt> </dl>
 
-Prioridad dinámica del subproceso. Cada subproceso tiene una prioridad dinámica que el programador usa para determinar qué subproceso se debe ejecutar. Inicialmente, la prioridad dinámica de un subproceso es igual que su prioridad base. El sistema puede aumentar y disminuir la prioridad dinámica para garantizar que responde (lo que garantiza que ningún subproceso se queda sin tiempo de procesador). El sistema no aumenta la prioridad de los subprocesos con un nivel de prioridad base entre 16 y 31. Solo los subprocesos con una prioridad base entre 0 y 15 reciben aumentos de prioridad dinámica. Los números más altos indican prioridades más altas.
+Prioridad dinámica del subproceso. Cada subproceso tiene una prioridad dinámica que el programador usa para determinar qué subproceso se va a ejecutar. Inicialmente, la prioridad dinámica de un subproceso es la misma que su prioridad base. El sistema puede aumentar y reducir la prioridad dinámica para asegurarse de que responde (lo que garantiza que ningún subproceso se ha quebrado durante el tiempo de procesador). El sistema no aumenta la prioridad de los subprocesos con un nivel de prioridad base entre 16 y 31. Solo los subprocesos con una prioridad base entre 0 y 15 reciben aumentos de prioridad dinámicos. Los números más altos indican prioridades más altas.
 
 </dd> <dt>
 
 **PriorityBase**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| performance Data Structures \| [**Perf \_ Object \_ Type**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PerfPriorityBase")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de datos de rendimiento de Win32API \| \| [**PERF \_ OBJECT \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PerfPriorityBase")
 </dt> </dl>
 
-Prioridad base actual de un subproceso. El sistema operativo puede aumentar la prioridad dinámica del subproceso por encima de la prioridad base si el subproceso está controlando los datos proporcionados por el usuario o reducirlo hacia la prioridad base si el subproceso se convierte en un enlace de proceso. La propiedad **PriorityBase** puede tener un valor entre 0 y 31.
+Prioridad base actual de un subproceso. El sistema operativo puede elevar la prioridad dinámica del subproceso por encima de la prioridad base si el subproceso está controlando la entrada del usuario o reducirla hacia la prioridad base si el subproceso se enlaza a proceso. La **propiedad PriorityBase** puede tener un valor entre 0 y 31.
 
 </dd> <dt>
 
@@ -413,12 +413,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ proceso de CIM**](cim-process.md).**CreationClassName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Proceso \_ CIM**](cim-process.md).**CreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Valor de la propiedad de proceso de ámbito de **CreationClassName** .
+Valor de la propiedad **CreationClassName** del proceso de ámbito.
 
-Esta propiedad se hereda del [**\_ subproceso CIM**](cim-thread.md).
+Esta propiedad se hereda del [**subproceso CIM \_**](cim-thread.md).
 
 </dd> <dt>
 
@@ -431,26 +431,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**invalidar**](../wmisdk/standard-qualifiers.md) ("ProcessHandle"), [**propagado**](../wmisdk/standard-qualifiers.md) ("[**\_ proceso de CIM**](cim-process.md).**Handle**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" inesperados win32api \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32OwnerProcessID ")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("ProcessHandle"), [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ Process**](cim-process.md).**Handle**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32OwnerProcessID")
 </dt> </dl>
 
-Proceso que creó el subproceso. Los elementos de la interfaz de programación de aplicaciones (API) de Windows pueden usar el contenido de esta propiedad.
+Proceso que creó el subproceso. El contenido de esta propiedad puede ser utilizado por Windows de la interfaz de programación de aplicaciones (API).
 
 </dd> <dt>
 
 **StartAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| objeto inesperados win32api Thread \| LPTHREAD \_ Start \_ rutina \| lpStartAddress")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIn32API \| Thread Object \| LPTHREAD START ROUTINE \_ \_ \| lpStartAddress")
 </dt> </dl>
 
-Dirección inicial del subproceso. Dado que cualquier aplicación con el acceso adecuado al subproceso puede cambiar el contexto del subproceso, este valor solo puede ser una aproximación de la dirección de inicio del subproceso.
+Dirección inicial del subproceso. Dado que cualquier aplicación con acceso adecuado al subproceso puede cambiar el contexto del subproceso, este valor solo puede ser una aproximación de la dirección inicial del subproceso.
 
 </dd> <dt>
 
@@ -463,12 +463,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son:
 
@@ -476,84 +476,84 @@ Los valores son:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error de pred")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detener** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -563,13 +563,13 @@ Con **estrés** ("acentuado")
 **ThreadState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Thread State")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estado del subproceso Win32API") \|
 </dt> </dl>
 
 Estado de ejecución actual del subproceso.
@@ -583,7 +583,7 @@ Estado de ejecución actual del subproceso.
 
 </dt> <dd>
 
-Initialized: el microkernel lo reconoce.
+Inicializado: lo reconoce el microkernel.
 
 </dd> <dt>
 
@@ -600,7 +600,7 @@ Listo: está preparado para ejecutarse en el siguiente procesador disponible.
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>En **ejecución** (2)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**En** ejecución (2)
 
 
 </dt> <dd>
@@ -611,34 +611,34 @@ En ejecución: se está ejecutando.
 
 <span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>
 
-<span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>En **espera** (3)
+<span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>**En** espera (3)
 
 
 </dt> <dd>
 
-Standby: está a punto de ejecutarse, solo un subproceso puede estar en este estado a la vez.
+En espera: está a punto de ejecutarse, solo un subproceso puede estar en este estado a la vez.
 
 </dd> <dt>
 
 <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>
 
-<span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>**Terminada** (4)
+<span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>**Finalizado** (4)
 
 
 </dt> <dd>
 
-Terminada: ha terminado de ejecutarse.
+Finalizado: ha terminado de ejecutarse.
 
 </dd> <dt>
 
 <span id="Waiting"></span><span id="waiting"></span><span id="WAITING"></span>
 
-<span id="Waiting"></span><span id="waiting"></span><span id="WAITING"></span>En **espera** (5)
+<span id="Waiting"></span><span id="waiting"></span><span id="WAITING"></span>**En** espera (5)
 
 
 </dt> <dd>
 
-Esperando: no está listo para el procesador, cuando esté listo, se volverá a programar.
+En espera: no está listo para el procesador, cuando esté listo, se volverá a programar.
 
 </dd> <dt>
 
@@ -649,7 +649,7 @@ Esperando: no está listo para el procesador, cuando esté listo, se volverá a 
 
 </dt> <dd>
 
-Transición: el subproceso está esperando recursos distintos del procesador,
+Transición: el subproceso está esperando recursos distintos del procesador.
 
 </dd> <dt>
 
@@ -660,7 +660,7 @@ Transición: el subproceso está esperando recursos distintos del procesador,
 
 </dt> <dd>
 
-Desconocido: se desconoce el estado del subproceso.
+Desconocido: el estado del subproceso es desconocido.
 
 </dd> </dl>
 
@@ -669,16 +669,16 @@ Desconocido: se desconoce el estado del subproceso.
 **ThreadWaitReason**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| razón de espera del subproceso de inesperados win32api")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Thread Wait Reason")
 </dt> </dl>
 
-Motivo por el que el subproceso está esperando. Este valor solo es válido si el miembro **ThreadState** está establecido en Transition (6). Los pares de eventos permiten la comunicación con subsistemas protegidos.
+Motivo por el que el subproceso está esperando. Este valor solo es válido si el **miembro ThreadState** está establecido en Transición (6). Los pares de eventos permiten la comunicación con subsistemas protegidos.
 
 <dt>
 
@@ -702,7 +702,7 @@ FreePage
 
 <span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>
 
-<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**Buscapersonas** (2)
+<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**PageIn** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -730,7 +730,7 @@ FreePage
 
 <span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>
 
-<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**Buscapersonas** (6)
+<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**PageIn** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -751,7 +751,7 @@ FreePage
 
 <span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>
 
-<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**Buscapersonas** (9)
+<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**PageIn** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -779,7 +779,7 @@ FreePage
 
 <span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>
 
-<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**Buscapersonas** (13)
+<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**PageIn** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -821,7 +821,7 @@ FreePage
 
 <span id="PageOut"></span><span id="pageout"></span><span id="PAGEOUT"></span>
 
-<span id="PageOut"></span><span id="pageout"></span><span id="PAGEOUT"></span>**Pageout.** (19)
+<span id="PageOut"></span><span id="pageout"></span><span id="PAGEOUT"></span>**PageOut** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -838,42 +838,42 @@ FreePage
 **UserModeTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("UserModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| performance Data Structures \| [**Perf \_ Object \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| UserTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanosegundos")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("UserModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Performance Data Structures \| [**PERF OBJECT \_ \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| UserTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanoseconds")
 </dt> </dl>
 
 Tiempo en modo de usuario, en unidades de 100 nanosegundos. Si esta información no está disponible, se debe usar un valor de 0 (cero).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **\_ subproceso de Win32** se deriva del [**\_ subproceso CIM**](cim-thread.md).
+La **clase Thread \_ de Win32** se deriva del [**subproceso CIM \_**](cim-thread.md).
 
 **Información general**
 
-En el caso de la supervisión diaria rutinaria, normalmente hay poca razón para tener una lista detallada de subprocesos y sus propiedades asociadas. Los equipos crean y eliminan miles de subprocesos durante el transcurso del día y algunas de estas creaciones o eliminaciones son significativas para cualquier persona, pero el desarrollador que escribió el software.
+Para la supervisión rutinaria del día a día, normalmente hay poca razón para tener una lista detallada de subprocesos y sus propiedades asociadas. Los equipos crean y eliminan miles de subprocesos durante el transcurso de un día, y algunas de estas creaciones o eliminaciones son significativas para cualquier persona, menos para el desarrollador que escribió el software.
 
-Sin embargo, cuando se están solucionando problemas con una aplicación, el seguimiento de los subprocesos individuales de un proceso permite identificar cuándo se crean los subprocesos y cuándo (o si) se destruyen. Dado que los subprocesos que se crean pero no se destruyen producen fugas de memoria, el seguimiento de subprocesos individuales puede ser información útil para los técnicos de soporte. Del mismo modo, identificar las prioridades de subprocesos puede ayudar a identificar los subprocesos que, al ejecutarse con una prioridad anómalamente alta, son los ciclos de CPU que necesitan otros subprocesos y otros procesos.
+Sin embargo, cuando se solucionan problemas con una aplicación, el seguimiento de los subprocesos individuales de un proceso permite identificar cuándo se crean los subprocesos y cuándo (o si) se destruyen. Dado que los subprocesos que se crean pero no se destruyen provocan pérdidas de memoria, el seguimiento de subprocesos individuales puede ser información útil para los técnicos de soporte técnico. Del mismo modo, la identificación de prioridades de subprocesos puede ayudar a identificar subprocesos que, al ejecutarse con una prioridad anómalamente alta, están adelantando los ciclos de CPU que necesitan otros subprocesos y otros procesos.
 
-**Usar el \_ subproceso Win32**
+**Uso de Win32 \_ Thread**
 
-Como se ha implícito en el bloque de sintaxis anterior, la clase de **\_ subproceso de Win32** no informa del nombre del proceso en el que se ejecuta cada subproceso. En su lugar, notifica el identificador del proceso en el que se ejecuta el subproceso. Para devolver el nombre de un proceso y una lista de todos los subprocesos, el script debe:
+Como se implícito en el bloque de sintaxis anterior, la clase Thread de **Win32 \_** no informa del nombre del proceso en el que se ejecuta cada subproceso. En su lugar, notifica el identificador del proceso en el que se ejecuta el subproceso. Para devolver el nombre de un proceso y una lista de todos sus subprocesos, el script debe:
 
-1.  Conéctese a la clase de [**\_ proceso de Win32**](win32-process.md) y devuelva la lista de procesos y sus identificadores de proceso.
-2.  Almacene temporalmente esta información en un objeto de matriz o de diccionario.
-3.  Para cada ID. de proceso, devuelve la lista de subprocesos para ese proceso y, a continuación, muestra el nombre del proceso y la lista de subprocesos.
+1.  Conectar a la clase Process de [**Win32 \_**](win32-process.md) y devuelve la lista de procesos y sus IDs de proceso.
+2.  Almacene temporalmente esta información en una matriz o un objeto Dictionary.
+3.  Para cada identificador de proceso, devuelva la lista de subprocesos para ese proceso y, a continuación, muestre el nombre del proceso y la lista de subprocesos.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de VBScript se supervisan los subprocesos que se ejecutan en un equipo.
+El siguiente ejemplo de VBScript supervisa los subprocesos que se ejecutan en un equipo.
 
 
 ```VB
@@ -899,21 +899,21 @@ Next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Subproceso CIM \_**](cim-thread.md)
+[**Subproceso \_ CIM**](cim-thread.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

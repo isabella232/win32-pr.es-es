@@ -16,12 +16,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b69ca7cf4ee4e16a5fbcb6a5f10c659f713ab458
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5cfe3bfd4509a02eeafcb014f9265f810e4cb942e87b67390dbd1cbf841f7295
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393794"
 ---
 # <a name="systemconfig_v0_services-class"></a>SystemConfig \_ V0 \_ Services (clase)
 
@@ -66,7 +66,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (2), **Max** (256)
 </dt> </dl>
 
-Nombre para mostrar del servicio. El nombre se conserva entre mayúsculas y minúsculas en Service Control Manager. Sin embargo, las comparaciones de nombres para mostrar siempre se realizan sin distinción entre mayúsculas y minúsculas.
+Nombre para mostrar del servicio. El nombre se conserva en el Administrador de control de servicios. Sin embargo, las comparaciones de nombres para mostrar siempre se realizan sin distinción entre mayúsculas y minúsculas.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Nombre del proceso en el que se ejecuta el servicio.
 
 </dd> <dt>
 
-**Servicename**
+**ServiceName**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **matriz char16**
@@ -125,7 +125,7 @@ Identificador único del servicio. El identificador proporciona una indicación 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 

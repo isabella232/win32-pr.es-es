@@ -1,7 +1,7 @@
 ---
-description: La estructura del DESENCADENAdor indica una acción que debe llevar a cabo el controlador en un momento determinado.
+description: La estructura TRIGGER indica una acción que debe realizar el controlador en un momento especificado.
 ms.assetid: 63541796-b0d8-456c-8544-697fedbe05f7
-title: Estructura del DESENCADENAdor (Netmon. h)
+title: Estructura TRIGGER (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: d9b385557e3c34bdf75f2bf959d4e5e3e47e0750
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99404c8e9fc48e0ab85b956dd84af39b11eb87b22c87b4f9a232bd5b72d32143
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363023"
 ---
-# <a name="trigger-structure"></a>Estructura del DESENCADENAdor
+# <a name="trigger-structure"></a>TRIGGER (estructura)
 
-La estructura del **desencadenador** indica una acción que debe llevar a cabo el controlador en un momento determinado.
+La **estructura TRIGGER** indica una acción que debe realizar el controlador en un momento especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Código de operación del desencadenador.
 **TriggerAction**
 </dt> <dd>
 
-Acción que el desencadenador debe llevar a cabo si se activa.
+Acción que debe realizar el desencadenador si se activa.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Marcas de desencadenador.
 **TriggerPatternMatch**
 </dt> <dd>
 
-Coincidencia de patrón de desencadenador.
+Coincidencia del patrón de desencadenador.
 
 </dd> <dt>
 
@@ -98,11 +98,11 @@ Reservado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

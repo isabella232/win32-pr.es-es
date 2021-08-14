@@ -1,28 +1,28 @@
 ---
 title: Código de ejemplo que usa ADS_SEARCHPREF_DIRSYNC
-description: En el ejemplo de código siguiente se usa la implementación ADSI del control de sincronización de directorios (DirSync) para buscar en la partición de dominio local de un servidor de Active Directory para los objetos de usuario modificados desde la llamada anterior.
+description: En el ejemplo de código siguiente se usa la implementación adsi del control de sincronización de directorios (DirSync) para buscar objetos de usuario modificados desde la llamada anterior en la partición de dominio local de un servidor Active Directory.
 ms.assetid: 8bf9dae7-426c-4018-ad6d-b20395beba01
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, usar ADS_SEARCHPREF_DIRSYNC
+- Active Directory ejemplos Active Directory , mediante ADS_SEARCHPREF_DIRSYNC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03c9e7ea0ce262be9268ddc2e7a9c63af213c3b3
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5ff5cc1d3cd43d5b5d7149001f1e1a183d3a4239dfd7691bf6b1ebeca95dbd05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104487439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189688"
 ---
-# <a name="example-code-using-ads_searchpref_dirsync"></a>Código de ejemplo con ADS \_ SEARCHPREF \_ DirSync
+# <a name="example-code-using-ads_searchpref_dirsync"></a>Código de ejemplo que usa \_ ADS SEARCHPREF \_ DIRSYNC
 
-En el ejemplo de código siguiente se usa la implementación ADSI del control de sincronización de directorios (DirSync) para buscar en la partición de dominio local de un servidor de Active Directory para los objetos de usuario modificados desde la llamada anterior.
+En el ejemplo de código siguiente se usa la implementación adsi del control de sincronización de directorios (DirSync) para buscar objetos de usuario modificados desde la llamada anterior en la partición de dominio local de un servidor Active Directory.
 
-En el ejemplo de código se usa la interfaz [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para buscar desde la raíz de la partición de dominio. Antes de llamar al método [**ExecuteSearch**](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) , el ejemplo llama al método [**SetSearchPreference**](/windows/desktop/api/iads/nf-iads-idirectorysearch-setsearchpreference) para especificar **el \_ \_ \_ ámbito de búsqueda de ADS SEARCHPREF**, **ADS \_ SEARCHPREF \_ DirSync** y las preferencias de búsqueda de **ad SEARCHPREF de marcadores de \_ \_ exclusión** . El ámbito debe especificar una búsqueda de subárbol. Con la preferencia de búsqueda **ADS \_ SEARCHPREF \_ DirSync** , especifique una estructura [**\_ \_ específica de ad Prov**](/windows/win32/api/iads/ns-iads-ads_prov_specific) que contenga la longitud de la cookie y un puntero a ella.
+En el ejemplo de código se [**usa la interfaz IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para buscar desde la raíz de la partición de dominio. Antes de llamar al [**método ExecuteSearch,**](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) el ejemplo llama al método [**SetSearchPreference**](/windows/desktop/api/iads/nf-iads-idirectorysearch-setsearchpreference) para especificar las preferencias de búsqueda **ADS \_ SEARCHPREF \_ SEARCH \_ SCOPE**, **ADS \_ SEARCHPREF \_ DIRSYNC** y **ADS \_ SEARCHPREF \_ TOMBSTONE.** El ámbito debe especificar una búsqueda de subárbol. Con la preferencia de búsqueda **\_ ADS SEARCHPREF \_ DIRSYNC,** especifique una estructura [**ADS \_ PROV \_ SPECIFIC**](/windows/win32/api/iads/ns-iads-ads_prov_specific) que contenga la longitud de la cookie y un puntero a ella.
 
-La primera vez que se llama a esta aplicación, se especifica una cookie nula y una longitud cero. Esto hace que la operación de búsqueda realice una lectura completa y devuelve todos los atributos solicitados de todos los objetos que coinciden con el filtro. Junto con los resultados de la búsqueda, el servidor devuelve una cookie válida y la longitud de la cookie. En las ejecuciones posteriores, el programa recupera la cookie y la longitud almacenadas en caché y las usa para recuperar los cambios desde la ejecución anterior.
+La primera vez que se llama a esta aplicación, especifica una cookie nula y una longitud cero. Esto hace que la operación de búsqueda realice una lectura completa y devuelva todos los atributos solicitados para todos los objetos que coinciden con el filtro. Junto con los resultados de la búsqueda, el servidor devuelve una cookie válida y la longitud de la cookie. En ejecuciones posteriores, el programa recupera la cookie y la longitud almacenadas en caché y los usa para recuperar los cambios desde la ejecución anterior.
 
-Tenga en cuenta que este ejemplo simplemente almacena en caché la cookie y la longitud de la cookie en el registro. En una aplicación de sincronización real, almacene los parámetros en el mismo almacenamiento que mantiene coherente con el servidor de Active Directory. Esto garantiza que los parámetros y los datos de objetos permanecen sincronizados si la base de datos se restaura a partir de una copia de seguridad.
+Tenga en cuenta que este ejemplo simplemente almacena en caché la cookie y la longitud de la cookie en el registro. En una aplicación de sincronización real, almacene los parámetros en el mismo almacenamiento que mantiene coherente con el Active Directory servidor. Esto garantiza que los parámetros y los datos del objeto permanecen sincronizados si la base de datos se restaura alguna vez a partir de una copia de seguridad.
 
 
 ```C++
@@ -462,6 +462,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

@@ -1,23 +1,23 @@
 ---
 title: Código de ejemplo para instalar una clase de servicio RnR
-description: El programa siguiente instala una clase de servicio RnR.
+description: El programa siguiente instala una clase RnR Service.
 ms.assetid: 85605ecf-bc82-48ac-8b36-ee43862a3bc9
 ms.tgt_platform: multiple
 keywords:
-- Registro y resolución de Windows Sockets AD, código de ejemplo, instalación de una clase de servicio RnR
+- Windows Registro y resolución de sockets AD, código de ejemplo, instalación de una clase de servicio RnR
 - Instalación de una clase de servicio RnR AD, código de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f1b918e22d15bca59018048de8d43969b18e8f5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 26afe0fda2fa03e9631a098963c6c3f061e8e300fa0c54664ab4c50e3a513390
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190329"
 ---
 # <a name="example-code-for-installing-an-rnr-service-class"></a>Código de ejemplo para instalar una clase de servicio RnR
 
-El programa siguiente instala una clase de servicio RnR.
+El programa siguiente instala una clase RnR Service.
 
 
 ```C++
@@ -170,9 +170,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

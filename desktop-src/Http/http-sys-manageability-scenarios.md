@@ -1,29 +1,29 @@
 ---
-title: HTTP.sys escenarios de administración
-description: En los escenarios siguientes se proporcionan ejemplos de cómo estas herramientas pueden ayudar a los profesionales de ti a diagnosticar y resolver problemas relacionados con el componente API del servidor HTTP (HTTP.sys).
+title: HTTP.sys escenarios de capacidad de administración
+description: En los escenarios siguientes se proporcionan ejemplos de cómo estas herramientas pueden ayudar a los profesionales de IT a diagnosticar y resolver problemas relacionados con el componente HTTP Server API (HTTP.sys).
 ms.assetid: 000e26d7-fce4-4768-96f5-ff97d240007e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9bcd07235f2da3a4a86c4dc34c09e5b4b4cbfcb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d84e53cf35fc0c6381ca04029029e660f3e732adf8b130eb60b3f119b76b7c95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394274"
 ---
-# <a name="httpsys-manageability-scenarios"></a>HTTP.sys escenarios de administración
+# <a name="httpsys-manageability-scenarios"></a>HTTP.sys escenarios de capacidad de administración
 
-En los escenarios siguientes se proporcionan ejemplos de cómo estas herramientas pueden ayudar a los profesionales de ti a diagnosticar y resolver problemas relacionados con el componente API del servidor HTTP (HTTP.sys). Las herramientas que se usan en estos ejemplos están disponibles en Windows Vista y Windows Server 2008.
+En los escenarios siguientes se proporcionan ejemplos de cómo estas herramientas pueden ayudar a los profesionales de IT a diagnosticar y resolver problemas relacionados con el componente HTTP Server API (HTTP.sys). Las herramientas usadas en estos ejemplos están disponibles en Windows Vista y Windows Server 2008.
 
--   [Escenario 1: ejemplo de tiempo de espera de HTTP usando seguimiento ETW y comandos Netsh](scenario-1--http-timeout-example-using-etw-tracing-and-netsh-commands.md)
--   [Escenario 2: ejemplo de analizador con seguimiento de ETW](scenario-2--parser-example-using-etw-tracing.md)
--   [Escenario 3: contadores de rendimiento](scenario-3--performance-counters.md)
+-   [Escenario 1: Ejemplo de tiempo de espera http mediante el seguimiento etw y comandos Netsh](scenario-1--http-timeout-example-using-etw-tracing-and-netsh-commands.md)
+-   [Escenario 2: Ejemplo de analizador mediante el seguimiento etw](scenario-2--parser-example-using-etw-tracing.md)
+-   [Escenario 3: Contadores de rendimiento](scenario-3--performance-counters.md)
 
-Los escenarios de este documento son ejemplos del uso de las herramientas de administración del componente API del servidor HTTP. Estos ejemplos no están diseñados para sugerir cambios de configuración específicos.
+Los escenarios de este documento son ejemplos del uso de las herramientas de administración del componente de API de servidor HTTP. Estos ejemplos no están diseñados para sugerir cambios de configuración específicos.
 
- 
+ 
 
- 
+ 
 
 
 

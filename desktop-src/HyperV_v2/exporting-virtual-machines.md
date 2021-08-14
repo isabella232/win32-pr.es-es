@@ -1,21 +1,21 @@
 ---
-description: En los siguientes ejemplos de C# y Visual Basic Scripting Edition (VBScript) se muestra la exportación de una instantánea de una máquina virtual.
+description: Los siguientes ejemplos de C# Visual Basic Scripting Edition (VBScript) muestran cómo exportar una instantánea de una máquina virtual.
 ms.assetid: 4DEC4962-99E1-42BB-81B1-8530BF9C4B92
 title: Exportación de una instantánea de una máquina virtual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bef5cb0f86c1de1b82c294760f7e2a33539218b
-ms.sourcegitcommit: 3d9eb6638763fee8b87c378657458f814182e36c
+ms.openlocfilehash: 07b8ce51f8cddeb648b5d4a5c58166eda3fcd2841a55f2eeda9e4f42e3f3e8fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105670053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393359"
 ---
 # <a name="exporting-a-snapshot-of-a-virtual-machine"></a>Exportación de una instantánea de una máquina virtual
 
-En los siguientes ejemplos de C# y Visual Basic Scripting Edition (VBScript) se muestra la exportación de una instantánea de una máquina virtual. En el tema [**ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md) se pueden encontrar ejemplos en los que se muestra cómo exportar una máquina virtual.
+Los siguientes ejemplos de C# Visual Basic Scripting Edition (VBScript) muestran cómo exportar una instantánea de una máquina virtual. Los ejemplos que muestran la exportación de una máquina virtual se pueden encontrar en el [**tema ExportSystemDefinition.**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md)
 
-Las utilidades de C# a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+Las utilidades de C# a las que se hace referencia se pueden encontrar en [Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp

@@ -1,9 +1,9 @@
 ---
-title: Elemento EapType (propiedad de conexión del esquema V1)
-description: Obtenga información sobre el elemento EapType. Este elemento captura la configuración específica del método dentro del elemento EAP. | Elemento EapType (propiedad de conexión del esquema V1)
+title: Elemento EapType (propiedad de conexión de esquema v1)
+description: Obtenga información sobre el elemento EapType. Este elemento captura la configuración específica del método dentro del elemento Eap. | Elemento EapType (propiedad de conexión de esquema v1)
 ms.assetid: f953e150-64cf-41b2-937f-410799be4602
 keywords:
-- Elemento EapType EAPHost
+- EapType, elemento EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 88361931946f8a209c5b1c41bd17fcbd0e44096d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3f2681e5682ad98ab5f4185174996920315d8c3b81dde8ba69d13ca178904ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498791"
 ---
-# <a name="eaptype-element-v1-schema-connection-property"></a>Elemento EapType (propiedad de conexión del esquema V1)
+# <a name="eaptype-element-v1-schema-connection-property"></a>Elemento EapType (propiedad de conexión de esquema v1)
 
-El elemento **EapType** captura la configuración específica del método dentro del elemento EAP.
+El **elemento EapType** captura la configuración específica del método dentro del elemento Eap.
 
 ``` syntax
 <xs:element name="EapType"
@@ -31,29 +31,29 @@ El elemento **EapType** captura la configuración específica del método dentro
  />
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **EapType** es abstracto; cada método debe definir y usar un elemento derivado en los documentos de instancia.
+El **elemento EapType** es abstracto; cada método debe definir y usar un elemento derivado en los documentos de instancia.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema baseeapconnectionpropertiesv1](baseeapconnectionpropertiesv1schema-schema.md)
+[baseeapconnectionpropertiesv1 Schema](baseeapconnectionpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

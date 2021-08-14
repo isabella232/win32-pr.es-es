@@ -1,49 +1,49 @@
 ---
-title: Procesar reservas
-description: El administrador del sistema realiza las reservas de partes del espacio de nombres de la dirección URL y se colocan en el almacén de reserva persistente.
+title: Procesamiento de reservas
+description: El administrador del sistema realiza reservas para partes del espacio de nombres url y se colocan en el almacén de reservas persistente.
 ms.assetid: deab6323-d114-463b-a0e7-acd173149b63
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a0a78fd6d374ede14e0eba7c1b22ad33ba50648
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: c5c4f0e38f5994687bfe26d1334300c0aa7fbbd3f8096abcf60e6c523e7d030a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104421587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393767"
 ---
-# <a name="processing-reservations"></a>Procesar reservas
+# <a name="processing-reservations"></a>Procesamiento de reservas
 
-El administrador del sistema realiza las reservas de partes del espacio de nombres de la dirección URL y se colocan en el almacén de reserva persistente. La raíz del espacio de nombres de la dirección URL para HTTP es propiedad del administrador del sistema. En todos los valores de host y puerto, siempre se asumen las dos reservas siguientes en la raíz del espacio de nombres **relativeUri** .
+El administrador del sistema realiza reservas para partes del espacio de nombres url y se colocan en el almacén de reservas persistente. La raíz del espacio de nombres de dirección URL para HTTP es propiedad del administrador del sistema. Para todos los valores de host y puerto, siempre se asumen las dos reservas siguientes en la raíz del espacio **de nombres relativeUri.**
 
 
 
 | Espacio de nombres reservado                 | Reservado para              |
 |------------------------------------|---------------------------|
-| https:// <host> :<port>/  | Administrador de LocalSystem |
-| https:// <host> :<port>/ | Administrador de LocalSystem |
+| https:// <host> :<port>/  | Administrador del sistema local |
+| https:// <host> :<port>/ | Administrador del sistema local |
 
 
 
- 
+ 
 
-Estas reservas implícitas no se pueden quitar. Sin embargo, es posible delegar reservas de raíz explícitas a otros usuarios. Las reservas como las siguientes crearían estas delegaciones:
+No se pueden quitar estas reservas implícitas. Sin embargo, es posible delegar reservas raíz explícitas a otros usuarios. Las reservas como las siguientes crearían dichas delegaciones:
 
 
 
 | Espacio de nombres reservado        | Reservado para |
 |---------------------------|--------------|
-| `https://+:80/`           | UsuarioA, Usuarioc |
+| `https://+:80/`           | UserA, UserC |
 | `https://adatum.com:443/` | UserB        |
 
 
 
- 
+ 
 
-Si el administrador del sistema quita estas reservas delegadas, la propiedad del espacio de nombres se revierte a la reserva implícita para los valores de puerto y host correspondientes.
+Si el administrador del sistema quita estas reservas delegadas, la propiedad del espacio de nombres vuelve a la reserva implícita para los valores de host y puerto correspondientes.
 
- 
+ 
 
- 
+ 
 
 
 

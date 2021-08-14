@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM ProcessThread representa un vínculo entre un proceso y los subprocesos que se ejecutan en el contexto del proceso.
+description: La clase ProcessThread de CIM \_ representa un vínculo entre un proceso y los subprocesos que se ejecutan en el contexto del proceso.
 ms.assetid: e71543c5-d9b3-4f98-93a6-08f977a26305
 ms.tgt_platform: multiple
-title: CIM_ProcessThread (clase)
+title: CIM_ProcessThread clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: afc29d1576355eda1f9e3dfd7ed55d2cca399d5b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dfc8e900704d165215b38b55d8f129e6583a47477152287687bd4644230b58ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118421899"
 ---
-# <a name="cim_processthread-class"></a>\_Clase ProcessThread de CIM
+# <a name="cim_processthread-class"></a>Cim \_ ProcessThread (clase)
 
-La clase **CIM \_ ProcessThread** representa un vínculo entre un proceso y los subprocesos que se ejecutan en el contexto del proceso.
+La **clase \_ ProcessThread** de CIM representa un vínculo entre un proceso y los subprocesos que se ejecutan en el contexto del proceso.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,73 +47,73 @@ class CIM_ProcessThread : CIM_Component
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ProcessThread** tiene estos tipos de miembros:
+La **clase \_ ProcessThread** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ProcessThread** tiene estas propiedades.
+La **clase \_ ProcessThread** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ proceso CIM**
+Tipo de datos: **Proceso CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-[**\_ Proceso CIM**](cim-process.md) que describe el proceso.
+Proceso [**CIM \_ que**](cim-process.md) describe el proceso.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ subproceso CIM**
+Tipo de datos: **subproceso CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**débil**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Un [**\_ subproceso CIM**](cim-thread.md) que describe el subproceso que se ejecuta en el contexto del proceso.
+Subproceso [**CIM \_ que**](cim-thread.md) describe el subproceso que se ejecuta en el contexto del proceso.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> </dl>
 
  

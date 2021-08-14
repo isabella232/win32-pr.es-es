@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1fe7514c3aff50a7ecddadb3d8073a37b6c770eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e56fe90677d0988420a97510da75ea24bf9d50610f9b0b06555a127ef5f731c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274479"
 ---
 # <a name="credentialsblob-eaphostusercredentials-element"></a>Elemento CredentialsBlob (EapHostUserCredentials)
 
-El elemento **CredentialsBlob (EapHostUserCredentials)** se usa cuando la configuración del método es un BLOB binario en lugar de en formato de texto XML.
+El **elemento CredentialsBlob (EapHostUserCredentials)** se usa cuando la configuración del método es un BLOB binario en lugar de en formato de texto XML.
 
 ``` syntax
 <xs:element name="CredentialsBlob"
@@ -31,24 +31,24 @@ El elemento **CredentialsBlob (EapHostUserCredentials)** se usa cuando la config
  />
 ```
 
-El elemento **CredentialsBlob** se define mediante el elemento [**EapHostUserCredentials**](eaphostusercredentialsschema-eaphostusercredentials-element.md) .
+El **elemento CredentialsBlob** se define mediante el [**elemento EapHostUserCredentials.**](eaphostusercredentialsschema-eaphostusercredentials-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los elementos [**Credentials**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md) y **CredentialsBlob** no se pueden usar simultáneamente.
+Los [**elementos Credentials**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md) y **CredentialsBlob** no se pueden usar simultáneamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

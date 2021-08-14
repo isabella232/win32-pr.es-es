@@ -1,22 +1,22 @@
 ---
-title: Código de ejemplo para establecer los derechos de propiedad de lectura en un objeto
-description: El siguiente ejemplo de código contiene una función que crea una ACE que asigna acceso de lectura a todas las propiedades del objeto al administrador de confianza especificado.
+title: Código de ejemplo para establecer derechos de propiedad de lectura en un objeto
+description: El ejemplo de código siguiente contiene una función que crea una ACE que asigna acceso de lectura a todas las propiedades del objeto al administrador de confianza especificado.
 ms.assetid: 343538d7-fef4-492d-a385-37433ce1250b
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, establecer derechos de propiedad de lectura en un objeto
+- Active Directory ejemplos Active Directory , establecer derechos de propiedad de lectura en un objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c6228b3485c47b2ed3d972d2490a70ad264c8ac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 487fb7179db8b754f603a65ca58bd242087101497c4c4c3692b4b2766ad4d424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190083"
 ---
-# <a name="example-code-for-setting-read-property-rights-on-an-object"></a>Código de ejemplo para establecer los derechos de propiedad de lectura en un objeto
+# <a name="example-code-for-setting-read-property-rights-on-an-object"></a>Código de ejemplo para establecer derechos de propiedad de lectura en un objeto
 
-El siguiente ejemplo de código contiene una función que crea una ACE que asigna acceso de lectura a todas las propiedades del objeto al administrador de confianza especificado.
+El ejemplo de código siguiente contiene una función que crea una ACE que asigna acceso de lectura a todas las propiedades del objeto al administrador de confianza especificado.
 
 
 ```C++
@@ -116,9 +116,9 @@ HRESULT CreateAceEffectiveReadAllProperties(LPWSTR pwszTrustee,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

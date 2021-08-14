@@ -1,10 +1,10 @@
 ---
-title: Función DsBackupClose (Ntdsbcli. h)
+title: Función DsBackupClose (Ntdsbcli.h)
 description: Cierra un archivo de copia de seguridad abierto con la función DsBackupOpenFile.
 ms.assetid: 5452a222-abe8-4d2d-84ff-6f577073b220
 ms.tgt_platform: multiple
 keywords:
-- Active Directory de la función DsBackupClose
+- Función DsBackupClose Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5d03c9cd7f125d223d264236a52120714d5198c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 00c9c8931d67b33fdad1f9e3605ee6efe801dac988d3931d96d1417561c093b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192193"
 ---
-# <a name="dsbackupclose-function"></a>DsBackupClose función)
+# <a name="dsbackupclose-function"></a>Función DsBackupClose
 
-\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. A partir de Windows Vista, use [servicio de instantáneas de volumen (VSS)](../vss/volume-shadow-copy-service-overview.md) en su lugar.\]
+\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. A partir Windows Vista, use [Servicio de instantáneas de volumen (VSS) en](../vss/volume-shadow-copy-service-overview.md) su lugar.\]
 
-La función **DsBackupClose** cierra un archivo de copia de seguridad abierto con la función [**DsBackupOpenFile**](dsbackupopenfile.md) . Para cada identificador de copia de seguridad, solo se puede abrir un archivo cada vez, por lo que esta función cierra el archivo abierto actualmente.
+La **función DsBackupClose** cierra un archivo de copia de seguridad abierto con la [**función DsBackupOpenFile.**](dsbackupopenfile.md) Para cada identificador de copia de seguridad, solo se puede abrir un archivo a la vez, por lo que esta función cierra el archivo abierto actualmente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,30 +43,30 @@ HRESULT DsBackupClose(
 
 <dl> <dt>
 
-*HBC* \[ de\]
+*hbc* \[ En\]
 </dt> <dd>
 
-Contiene el identificador de contexto de copia de seguridad obtenido con la función [**DsBackupPrepare**](dsbackupprepare.md) .
+Contiene el identificador de contexto de copia de seguridad obtenido con la [**función DsBackupPrepare.**](dsbackupprepare.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ OK** si la función es correcta o un código de error de Win32 o RPC en caso contrario. En la lista siguiente se enumeran otros códigos de error posibles.
+Devuelve **S \_ OK si** la función es correcta o un código de error de Win32 o RPC en caso contrario. En la lista siguiente se enumeran otros códigos de error posibles.
 
 <dl> <dt>
 
-**ERROR \_ de \_ parámetro no válido**
+**ERROR \_ PARÁMETRO NO \_ VÁLIDO**
 </dt> <dd>
 
-*HBC* no es válido.
+*hbc* no es válido.
 
 </dd> <dt>
 
 **hrInvalidHandle**
 </dt> <dd>
 
-No hay ningún archivo abierto actualmente.
+Actualmente no hay ningún archivo abierto.
 
 </dd> </dl>
 
@@ -74,17 +74,17 @@ No hay ningún archivo abierto actualmente.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -94,7 +94,7 @@ No hay ningún archivo abierto actualmente.
 [**DsBackupPrepare**](dsbackupprepare.md)
 </dt> <dt>
 
-[Copia de seguridad de un servidor Active Directory](backing-up-an-active-directory-server.md)
+[Copia de seguridad de un Active Directory servidor](backing-up-an-active-directory-server.md)
 </dt> <dt>
 
 [Funciones de copia de seguridad de directorios](directory-backup-functions.md)

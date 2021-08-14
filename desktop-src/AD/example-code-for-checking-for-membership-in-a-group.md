@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para comprobar la pertenencia a un grupo
-description: En el ejemplo de código siguiente se comprueba la pertenencia absoluta de un objeto comprobando de forma recursiva que un objeto es miembro de un grupo o los grupos anidados en ese grupo.
+description: En el ejemplo de código siguiente se comprueba la pertenencia absoluta de un objeto mediante la comprobación recursiva de que un objeto es miembro de un grupo o de cualquier grupo anidado en ese grupo.
 ms.assetid: 4b6ef607-8d2e-4209-be61-498302749f7c
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, comprobar la pertenencia a un grupo
+- Active Directory ejemplos Active Directory , comprobar la pertenencia a un grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2043808dc31fb3c154a050fb77a7e4f44f44632d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c929580bec3717f0dd1bd82520af7755061112eca7a28226275f796f4d41af22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191156"
 ---
 # <a name="example-code-for-checking-for-membership-in-a-group"></a>Código de ejemplo para comprobar la pertenencia a un grupo
 
-En el ejemplo de código siguiente se comprueba la pertenencia absoluta de un objeto comprobando de forma recursiva que un objeto es miembro de un grupo o los grupos anidados en ese grupo.
+En el ejemplo de código siguiente se comprueba la pertenencia absoluta de un objeto mediante la comprobación recursiva de que un objeto es miembro de un grupo o de cualquier grupo anidado en ese grupo.
 
 
 ```C++
@@ -356,9 +356,9 @@ void PrintBanner(LPOLESTR pwszBanner)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

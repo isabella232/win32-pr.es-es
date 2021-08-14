@@ -4,18 +4,18 @@ description: Muestra cómo girar un objeto.
 ms.assetid: 468e29b6-941b-4cf8-8649-9e513326ccb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b69cd900a78ba4d81919df91b85fd97723172eba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: babc84c08af759d8484c8ba85db40780f68570d93a0a8b9442e93b960ecac39c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003540"
 ---
 # <a name="how-to-rotate-an-object"></a>Cómo girar un objeto
 
-En este tema se describe cómo girar un objeto sobre un punto especificado. Para girar un objeto, llame al método [**Matrix3x2F:: Rotation**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation) . Este método toma dos parámetros, el ángulo especificado y el punto central. El ángulo es un ángulo de rotación en el sentido de las agujas del reloj, en grados, y el punto central es el punto sobre el que gira el objeto. El punto central se expresa en el sistema de coordenadas del objeto que se transforma.
+En este tema se describe cómo girar un objeto sobre un punto especificado. Para girar un objeto, llame al [**método Matrix3x2F::Rotation.**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation) Este método toma dos parámetros, el ángulo especificado y el punto central. El ángulo es un ángulo de rotación en grados en el sentido de las agujas del reloj y el punto central es el punto sobre el que gira el objeto. El punto central se expresa en el sistema de coordenadas del objeto que se transforma.
 
-Por ejemplo, en el código siguiente se gira un cuadrado en el sentido de las agujas del reloj 45 grados sobre el centro del cuadrado.
+Por ejemplo, el código siguiente gira un cuadrado de 45 grados en el sentido de las agujas del reloj sobre el centro del cuadrado.
 
 
 ```C++
@@ -47,13 +47,13 @@ Por ejemplo, en el código siguiente se gira un cuadrado en el sentido de las ag
 
 
 
-En la ilustración siguiente se muestra el efecto de aplicar la transformación rotación anterior al cuadrado. El cuadrado original es un contorno punteado y el cuadrado girado es un contorno sólido.
+En la ilustración siguiente se muestra el efecto de aplicar la transformación de rotación anterior al cuadrado. El cuadrado original es un contorno de puntos y el cuadrado girado es un contorno sólido.
 
-![Ilustración de un cuadrado girado en el sentido de las agujas del reloj 45 grados sobre el centro del cuadrado original](images/rotate-ovw.png)
+![ilustración de un cuadrado girado en el sentido de las agujas del reloj 45 grados sobre el centro del cuadrado original](images/rotate-ovw.png)
 
-En la ilustración siguiente se muestra el efecto de girar en el mismo ángulo sobre un punto central diferente. Observe que los objetos girados se encuentran en posiciones diferentes en relación con el original. El cuadrado de la izquierda es el resultado de girar sobre el centro del cuadrado original y el cuadrado de la derecha es el resultado de girar sobre la esquina superior izquierda del cuadrado original.
+En la ilustración siguiente se muestra el efecto de girar por el mismo ángulo sobre un punto central diferente. Observe que los objetos girados se encuentran en diferentes posiciones con respecto al original. El cuadrado con contorno izquierdo es el resultado de girar sobre el centro del cuadrado original y el cuadrado con contorno derecho es el resultado de girar sobre la esquina superior izquierda del cuadrado original.
 
-![Ilustración de un cuadrado girado en el sentido de las agujas del reloj 45 grados sobre un punto central diferente](images/translate-rotationcompare.png)
+![ilustración de un cuadrado girado en el sentido de las agujas del reloj 45 grados sobre un punto central diferente](images/translate-rotationcompare.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -62,9 +62,9 @@ En la ilustración siguiente se muestra el efecto de girar en el mismo ángulo s
 [Referencia de Direct2D](reference.md)
 </dt> <dt>
 
-[Información general sobre transformaciones de Direct2D](direct2d-transforms-overview.md)
+[Introducción a las transformaciones de Direct2D](direct2d-transforms-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
 title: Código de ejemplo para crear un descriptor de seguridad
-description: En este tema se incluye un Visual Basic ejemplo de código que muestra cómo crear un objeto de descriptor de seguridad para un objeto ADSI.
+description: En este tema se incluye Visual Basic ejemplo de código que muestra cómo crear un objeto descriptor de seguridad para un objeto ADSI.
 ms.assetid: 7c6dcdaf-0bef-4f72-bd9d-dc3ab4295008
 ms.tgt_platform: multiple
 keywords:
@@ -12,16 +12,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dcbe659d8c9b2e639fbd947cc5156807fa09367b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 05bb6cba8f766a3c211f082824380bbb5f9b1ee2df8a47041780a1f3e1a336b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190808"
 ---
 # <a name="example-code-for-creating-a-security-descriptor"></a>Código de ejemplo para crear un descriptor de seguridad
 
-En este tema se incluye un Visual Basic ejemplo de código que muestra cómo crear un objeto de descriptor de seguridad para un objeto ADSI.
+En este tema se incluye Visual Basic ejemplo de código que muestra cómo crear un objeto descriptor de seguridad para un objeto ADSI.
 
 
 ```VB
@@ -81,9 +81,9 @@ Cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI COMApplicationSettings Association de Win32 relaciona una aplicación DCOM y sus valores de configuración.
+description: La clase WMI de asociación COMApplicationSettings de Win32 \_ relaciona una aplicación DCOM y sus opciones de configuración.
 ms.assetid: b08eaff1-b42a-42f3-abf7-3664b6195acd
 ms.tgt_platform: multiple
-title: Win32_COMApplicationSettings (clase)
+title: Win32_COMApplicationSettings clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8f2fd5953d770d541e704b7dc7fe8580e98b3066
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0a1126563b00861ab8b8168832f72189c3a3828378f5d89c4b74e49f68b09bd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118417915"
 ---
-# <a name="win32_comapplicationsettings-class"></a>\_Clase Win32 COMApplicationSettings
+# <a name="win32_comapplicationsettings-class"></a>Clase COMApplicationSettings de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ COMApplicationSettings** Association de Win32 relaciona una aplicación DCOM y sus valores de configuración.
+La clase WMI **de asociación \_ COMApplicationSettings** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona una aplicación DCOM y sus opciones de configuración.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -61,10 +61,10 @@ Tipo de datos: **Win32 \_ DCOMApplication**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Element"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Element"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
 </dt> </dl>
 
-[**\_ DCOMApplication de Win32**](win32-dcomapplication.md) que representa la aplicación DCOM en la que se aplica la configuración.
+Una [**aplicación \_ DCOM de Win32**](win32-dcomapplication.md) que representa la aplicación DCOM donde se aplica la configuración.
 
 </dd> <dt>
 
@@ -77,36 +77,36 @@ Tipo de datos: **Win32 \_ DCOMApplicationSetting**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("configuración"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplicationSetting")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Setting"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplicationSetting")
 </dt> </dl>
 
-[**\_ DCOMApplicationSetting de Win32**](win32-dcomapplicationsetting.md) que representa los valores de configuración asociados a la aplicación DCOM.
+Un [**\_ DCOMApplicationSetting de Win32**](win32-dcomapplicationsetting.md) que representa los valores de configuración asociados a la aplicación DCOM.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ COMApplicationSettings de Win32** se deriva de [**\_ ElementSetting de CIM**](cim-elementsetting.md).
+La **clase \_ COMApplicationSettings de Win32** se deriva del [**elemento \_ CIMSetting**](cim-elementsetting.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_ELEMENTSETTING CIM**](cim-elementsetting.md)
+[**CIM \_ ElementSetting**](cim-elementsetting.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

@@ -1,7 +1,7 @@
 ---
-description: Estructura D3DXSHPRTSPLITMESHCLUSTERDATA
+description: D3DXSHPRTSPLITMESHCLUSTERDATA (estructura)
 ms.assetid: 6a53420c-06bc-4f52-ac2e-5adda5e34cb2
-title: Estructura D3DXSHPRTSPLITMESHCLUSTERDATA (D3dx9mesh. h)
+title: Estructura D3DXSHPRTSPLITMESHCLUSTERDATA (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: e7b1bc23606dbf08f5a924860e12c9c09d719287
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c4405b383e0403326c3cb84f43c97f4c7da826872b62cb21c94b3edb9ef0e475
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298294"
 ---
-# <a name="d3dxshprtsplitmeshclusterdata-structure"></a>Estructura D3DXSHPRTSPLITMESHCLUSTERDATA
+# <a name="d3dxshprtsplitmeshclusterdata-structure"></a>D3DXSHPRTSPLITMESHCLUSTERDATA (estructura)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,18 +45,18 @@ typedef struct D3DXSHPRTSPLITMESHCLUSTERDATA {
 **uVertStart**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Vértice inicial en matriz de vértices reasignado.
+Vértice inicial en una matriz de vértices rematada.
 
 </dd> <dt>
 
 **uVertLength**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,7 +67,7 @@ Número de vértices de este superclúster.
 **uFaceStart**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -78,7 +78,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 **uFaceLength**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -89,22 +89,22 @@ Número de caras de este superclúster.
 **uClusterStart**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Índice inicial en la matriz de clústeres.
+Índice inicial en la matriz del clúster.
 
 </dd> <dt>
 
 **uClusterLength**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de clústeres en esta matriz supercluster.
+Número de clústeres de esta matriz de superclústeres.
 
 </dd> </dl>
 
@@ -114,15 +114,15 @@ Número de clústeres en esta matriz supercluster.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
 [**D3DXSHPRTCompSplitMeshSC**](d3dxshprtcompsplitmeshsc.md)
