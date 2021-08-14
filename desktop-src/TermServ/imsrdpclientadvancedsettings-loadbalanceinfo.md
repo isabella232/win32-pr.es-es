@@ -1,26 +1,26 @@
 ---
-title: Propiedad LoadBalanceInfo de IMsRdpClientAdvancedSettings
-description: Especifica la cookie de equilibrio de carga que se colocará en el paquete de solicitud de conexión X. 224 en la secuencia de conexión del Protocolo de servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+title: Propiedad IMsRdpClientAdvancedSettings LoadBalanceInfo
+description: Especifica la cookie de equilibrio de carga que se colocará en el paquete de solicitud de conexión X.224 en la secuencia de conexión del protocolo de servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto).
 ms.assetid: 25f12a2e-00a2-42a8-afd3-81efcd94da94
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad LoadBalanceInfo
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad LoadBalanceInfo
+- Interfaz de propiedad LoadBalanceInfo Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a12112eb2a18d38993e905f8d36175f1ab15f58a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efe7ca9b9ed68f3327779177e706ee5a943c9e6580e2b789e2b96e74ee9f0b4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353044"
 ---
-# <a name="imsrdpclientadvancedsettingsloadbalanceinfo-property"></a>IMsRdpClientAdvancedSettings:: LoadBalanceInfo (propiedad)
+# <a name="imsrdpclientadvancedsettingsloadbalanceinfo-property"></a>Propiedad IMsRdpClientAdvancedSettings::LoadBalanceInfo
 
-Especifica la cookie de equilibrio de carga que se colocará en el paquete de solicitud de conexión X. 224 en la secuencia de conexión del Protocolo de servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+Especifica la cookie de equilibrio de carga que se colocará en el paquete de solicitud de conexión X.224 en la secuencia de conexión del protocolo de servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -84,37 +84,37 @@ HRESULT get_LoadBalanceInfo(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Puntero a la nueva cookie. Para obtener más información, vea la sección Comentarios.
+Puntero a la nueva cookie. Para más información, consulte la sección comentarios.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los enrutadores de equilibrio de carga usan la información de equilibrio de carga para elegir el mejor servidor para el cliente cuando se usan granjas de servidores host de sesión de escritorio remoto. El propio servidor host de sesión de escritorio remoto no usa esta información y lo descartará.
+Los enrutadores de equilibrio de carga usan la información de equilibrio de carga para elegir el mejor servidor para el cliente cuando se usan granjas de servidores host de sesión de Escritorio remoto. El propio servidor host de sesión de Escritorio remoto no usa esta información y la descartará.
 
-La cookie utiliza la sintaxis siguiente, que distingue entre mayúsculas y minúsculas:
+La cookie usa la siguiente sintaxis, que distingue mayúsculas de minúsculas:
 
-**Cookie: MSTS =**_IpAddressAndPortNumber_*_\\ r \\ n_*
+**Cookie: msts=**_IpAddressAndPortNumber_*_\\ r \\ n_*
 
-Donde *IpAddressAndPortNumber* es la dirección IP y el número de puerto, en el orden de bytes de la red.
+Donde *IpAddressAndPortNumber es* la dirección IP y el número de puerto, en orden de bytes de red.
 
-Por ejemplo, la cookie usada para tener acceso a la dirección IP de 172.31.249.216, el número de Puerto 3389 es el siguiente:
+Por ejemplo, la cookie usada para acceder a la dirección IP de 172.31.249.216, el número de puerto 3389 es el siguiente:
 
-**Cookie: MSTS = 3640205228.15629.0000 \\ r \\ n**
+**Cookie: msts=3640205228.15629.0000 \\ r \\ n**
 
-Los cuatro últimos ceros son opcionales y están reservados. El último punto decimal es obligatorio, al igual que el retorno de carro y el avance de carro finales. La longitud de la cadena, en caracteres, debe ser un múltiplo par de 2, por lo que debe agregar un espacio si es necesario.
+Los cuatro últimos ceros son opcionales y están reservados. El separador decimal final es necesario, al igual que el retorno de carro final y el recorrido de línea. La longitud de la cadena, en caracteres, debe ser un múltiplo par de 2, por lo que debe agregar un espacio si es necesario.
 
-Si no se proporciona ninguna cookie, el valor predeterminado es **Cookie: mstshash =**_username_*_\\ r \\ n_*.
+Si no se proporciona ninguna cookie, el valor predeterminado **es Cookie: mstshash=**_UserName_*_\\ r \\ n_*.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                  |
@@ -124,7 +124,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

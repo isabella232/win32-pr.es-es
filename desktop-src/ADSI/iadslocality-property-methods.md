@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsLocality (iAds. h)
-description: Los métodos de la interfaz IADsLocality leen y escriben las propiedades descritas en este tema. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsLocality (Iads.h)
+description: Los métodos de la interfaz IADsLocality leen y escriben las propiedades descritas en este tema. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: 5d1cea40-62fb-49d4-857f-4563e9db7f51
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsLocality ADSI
+- ADSI de métodos de propiedad IADsLocality
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34023f0af5365deb4f023d53a843dcf688c40afd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 03954f95446dc898c5992c0ac6a16cc9679e363e9574adc2e780d29c90cb26f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428042"
 ---
 # <a name="iadslocality-property-methods"></a>Métodos de propiedad IADsLocality
 
-Los métodos de la interfaz [**IADsLocality**](/windows/desktop/api/Iads/nn-iads-iadslocality) leen y escriben las propiedades descritas en este tema. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de [**la interfaz IADsLocality**](/windows/desktop/api/Iads/nn-iads-iadslocality) leen y escriben las propiedades descritas en este tema. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -49,7 +49,7 @@ Indica el texto que describe la localidad.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -73,11 +73,11 @@ HRESULT put_Description(
 **LocalityName**
 </dt> <dd> <dl>
 
-Indica el nombre de la región geográfica tal como lo representa este objeto de localidad.
+Indica el nombre de la región geográfica representada por este objeto de localidad.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -105,7 +105,7 @@ Indica la dirección postal principal de la localidad.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -133,10 +133,10 @@ Indica una matriz de nombres ADsPath de objetos de directorio relevantes para es
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -158,7 +158,7 @@ HRESULT put_SeeAlso(
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestran los datos de ubicación de un objeto contenedor. Se supone que se ha creado un objeto de localidad, denominado "locality", para el objeto contenedor y se han establecido las propiedades.
+En el ejemplo de código siguiente se muestran los datos de localidad de un objeto contenedor. Se supone que se ha creado un objeto de localidad, denominado "myLocality", para el objeto contenedor y se han establecido las propiedades.
 
 
 ```VB
@@ -188,21 +188,21 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsLocality se define como A05E03A2-Effe-11cf-8ABC-00C04FD8D503<br/>         |
+| IID<br/>                      | IID \_ IADsLocality se define como A05E03A2-EFFE-11CF-8ABC-00C04FD8D503<br/>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IADs**](/windows/desktop/api/Iads/nn-iads-iads)
+[**Iads**](/windows/desktop/api/Iads/nn-iads-iads)
 </dt> <dt>
 
 [**IADsLocality**](/windows/desktop/api/Iads/nn-iads-iadslocality)

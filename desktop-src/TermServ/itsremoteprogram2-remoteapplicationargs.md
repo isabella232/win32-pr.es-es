@@ -1,14 +1,14 @@
 ---
-title: Propiedad RemoteApplicationArgs de ITSRemoteProgram2
-description: Argumentos de la línea de comandos para RemoteApp.
+title: ItsRemoteProgram2 RemoteApplicationArgs, propiedad
+description: Argumentos de línea de comandos para RemoteApp.
 ms.assetid: c1c36876-df3d-4ef9-a5ac-f623bc51fe7b
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RemoteApplicationArgs
-- Propiedad RemoteApplicationArgs Servicios de Escritorio remoto, interfaz ITSRemoteProgram2
-- Servicios de Escritorio remoto de la interfaz ITSRemoteProgram2, propiedad RemoteApplicationArgs
-- Propiedad RemoteApplicationArgs Servicios de Escritorio remoto, interfaz ITSRemoteProgram3
-- Servicios de Escritorio remoto de la interfaz ITSRemoteProgram3, propiedad RemoteApplicationArgs
+- Propiedad RemoteApplicationArgs Servicios de Escritorio remoto
+- Propiedad RemoteApplicationArgs Servicios de Escritorio remoto , interfaz ITSRemoteProgram2
+- Interfaz ITSRemoteProgram2 Servicios de Escritorio remoto , propiedad RemoteApplicationArgs
+- Propiedad RemoteApplicationArgs Servicios de Escritorio remoto , interfaz ITSRemoteProgram3
+- Interfaz ITSRemoteProgram3 Servicios de Escritorio remoto , propiedad RemoteApplicationArgs
 topic_type:
 - apiref
 api_name:
@@ -22,20 +22,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b77cc7259520156321140c8f85713095f02e2b78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fd5ac7f2d909666e5938d28a313a6ac1b893204312c729880e7987e3fd10e263
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756777"
 ---
-# <a name="itsremoteprogram2remoteapplicationargs-property"></a>ITSRemoteProgram2:: RemoteApplicationArgs (propiedad)
+# <a name="itsremoteprogram2remoteapplicationargs-property"></a>ITSRemoteProgram2::RemoteApplicationArgs, propiedad
 
-Argumentos de la línea de comandos para RemoteApp.
+Argumentos de línea de comandos para RemoteApp.
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -54,16 +54,16 @@ Argumentos de la línea de comandos de RemoteApp.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_CALLBACK delegado'
+description: 'Más información sobre: JET_CALLBACK delegado'
 title: JET_CALLBACK delegado
 TOCTitle: JET_CALLBACK delegate
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_CALLBACK
@@ -28,19 +28,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 617cbefba047f822b338627a782be7e016c2a16f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30ba54414bcc7043edb06300b7bda31e40b838cbc6f78f32171f26c1e37684c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487311"
 ---
 # <a name="jet_callback-delegate"></a>JET_CALLBACK delegado
 
-Función de devolución de llamada de varios propósitos utilizada por el motor de base de datos para informar a la aplicación de un evento que implica las notificaciones de estado de cursor y desfragmentación en línea.
+Una función de devolución de llamada multiuso utilizada por el motor de base de datos para informar a la aplicación de un evento que implica notificaciones de estado de cursor y desfragmentación en línea.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,65 +76,65 @@ public delegate JET_err JET_CALLBACK(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sesión para la que se realiza la devolución de llamada.
+    La sesión para la que se realiza la devolución de llamada.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
-    La base de datos para la que se realiza la devolución de llamada.
+    Base de datos para la que se realiza la devolución de llamada.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursor para el que se realiza la devolución de llamada.
 
 <!-- end list -->
 
   - cbtyp  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_cbtyp](./jet-cbtyp-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_cbtyp](./jet-cbtyp-enumeration.md)  
     
     Operación para la que se realiza la devolución de llamada.
 
 <!-- end list -->
 
   - arg1  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Primer argumento específico de la devolución de llamada.
 
 <!-- end list -->
 
   - arg2  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Segundo argumento específico de la devolución de llamada.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Contexto de devolución de llamada.
 
 <!-- end list -->
 
   - unused  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Este parámetro no se utiliza.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

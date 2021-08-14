@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManySortsException'
-title: Constructor de EsentTooManySortsException
+description: 'Más información sobre: Constructor EsentTooManySortsException'
+title: Constructor EsentTooManySortsException
 TOCTitle: 'EsentTooManySortsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManySortsException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanysortsexception.esenttoomanysortsexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 359820380fd76de136d734cf7a369f2373e5c685
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40cdae87d91fed31c164a4daa243cbaca16fec0480fe05c7c3aa0fe468358df8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118488000"
 ---
-# <a name="esenttoomanysortsexception-constructor"></a>Constructor de EsentTooManySortsException
+# <a name="esenttoomanysortsexception-constructor"></a>Constructor EsentTooManySortsException
 
 Inicializa una nueva instancia de la clase EsentTooManySortsException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentTooManySortsException()
 
 [Miembros de EsentTooManySortsException](./esenttoomanysortsexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

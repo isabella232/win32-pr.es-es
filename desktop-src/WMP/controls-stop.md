@@ -1,11 +1,11 @@
 ---
-title: Controls. STOP (método)
-description: El método Stop detiene la reproducción del elemento multimedia. | Controls. STOP (método)
+title: Método Controls.stop
+description: El método stop detiene la reproducción del elemento multimedia. | Método Controls.stop
 ms.assetid: ace95fde-9c94-4737-88f2-94321cbc687c
 keywords:
-- detener el método Windows Media Player
-- método STOP Windows Media Player, clase Controls
-- Clase Controls Windows Media Player, método STOP
+- método stop Reproductor de Windows Media
+- método stop Reproductor de Windows Media , clase Controls
+- Clase Controls Reproductor de Windows Media método , stop
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e1ffc581fffbce0a341559e82c6bd196f712149
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b882f462903c2c5f75a3655cd26b927e7439043828dad41fcce7d0e64e4ce812
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580164"
 ---
-# <a name="controlsstop-method"></a>Controls. STOP (método)
+# <a name="controlsstop-method"></a>Método Controls.stop
 
-El método **Stop** detiene la reproducción del elemento multimedia.
+El **método stop** detiene la reproducción del elemento multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,15 +44,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método hace que Windows Media Player libere cualquier recurso del sistema que esté usando, como el dispositivo de audio. Sin embargo, el elemento multimedia actual no se libera.
+Este método hace que Reproductor de Windows Media liberar todos los recursos del sistema que usa, como el dispositivo de audio. Sin embargo, el elemento multimedia actual no se libera.
 
-Cuando se detiene el reproductor, la pista se rebobina hasta el principio. La llamada a **Play** iniciará la reproducción del clip desde el principio. Para detener una operación de reproducción sin cambiar la posición actual, use el método **PAUSE** .
+Cuando se detiene el reproductor, la pista rebobina al principio. Al llamar **a play,** se iniciará la reproducción del clip desde el principio. Para detener una operación de reproducción sin cambiar la posición actual, use el **método pause.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento de botón HTML que usa **Stop** para detener la reproducción. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **stop** para detener la reproducción. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -74,27 +74,27 @@ En el ejemplo siguiente se crea un elemento de botón HTML que usa **Stop** para
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Controls (objeto)**](controls-object.md)
 </dt> <dt>
 
-[**Controls. Next**](controls-next.md)
+[**Controls.next**](controls-next.md)
 </dt> <dt>
 
-[**Controls. PAUSE**](controls-pause.md)
+[**Controls.pause**](controls-pause.md)
 </dt> <dt>
 
-[**Controls. Previous**](controls-previous.md)
+[**Controls.previous**](controls-previous.md)
 </dt> </dl>
 
  

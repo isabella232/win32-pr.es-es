@@ -3,20 +3,20 @@ title: Abrir un archivo AVI
 description: Abrir un archivo AVI
 ms.assetid: 322eb45f-7dd3-40f4-b6bf-381021c50397
 keywords:
-- AVIFileInit función)
-- AVIFileOpen función)
+- Función AVIFileInit
+- Función AVIFileOpen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 833219194dc984bbf7bfa3d0415f77c5eed9b43b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c7e8415e6cb3f54dc4eb6bffa11d7f70879546ff2a434fc75cbb91d283bb65c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373264"
 ---
 # <a name="opening-an-avi-file"></a>Abrir un archivo AVI
 
-En el ejemplo siguiente se inicializa la biblioteca AVIFile con la función [**AVIFileInit**](/windows/desktop/api/Vfw/nf-vfw-avifileinit) y se abre un archivo AVI con la función [**AVIFileOpen**](/windows/desktop/api/Vfw/nf-vfw-avifileopen) . La función utiliza un controlador de archivos predeterminado.
+En el ejemplo siguiente se inicializa la biblioteca AVIFile mediante la función [**AVIFileInit**](/windows/desktop/api/Vfw/nf-vfw-avifileinit) y se abre un archivo AVI mediante la [**función AVIFileOpen.**](/windows/desktop/api/Vfw/nf-vfw-avifileopen) La función usa un controlador de archivos predeterminado.
 
 
 ```C++
@@ -50,9 +50,9 @@ VOID LoadAVIFile(LPCSTR szFile, HWND hwnd)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Player. windowlessVideo
-description: La propiedad windowlessVideo especifica o recupera un valor que indica si el control de Windows Media Player representa el vídeo en el modo sin ventanas.
+title: Player.windowlessVideo
+description: La propiedad windowlessVideo especifica o recupera un valor que indica si el control Reproductor de Windows Media representa vídeo en modo sin ventanas.
 ms.assetid: 314a75a3-d096-4cd4-a747-e31367e0e265
 keywords:
-- Media Player de Windows Player. windowlessVideo
+- Player.windowlessVideo Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,53 +14,53 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93f4a8a2b70a42cd0893d463eccca0427dde6c43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 733f8488d1d45f4c7e9794e64e2b3a70b41722048eac82d5d8eb6eb2f1d91cd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572082"
 ---
-# <a name="playerwindowlessvideo"></a>Player. windowlessVideo
+# <a name="playerwindowlessvideo"></a>Player.windowlessVideo
 
-La propiedad **windowlessVideo** especifica o recupera un valor que indica si el control de Windows Media Player representa el vídeo en el modo sin ventanas.
+La **propiedad windowlessVideo** especifica o recupera un valor que indica si el control Reproductor de Windows Media representa vídeo en modo sin ventanas.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. **windowlessVideo**
+*player*. **windowlessVideo**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **valor booleano** que se especifica en tiempo de diseño y, a partir de ese momento, es de solo lectura.
+Esta propiedad es un **valor booleano** que se especifica en tiempo de diseño y es de solo lectura a partir de entonces.
 
 
 
-| Value | Descripción                                      |
+| Valor | Descripción                                      |
 |-------|--------------------------------------------------|
-| true  | El vídeo se representa en el modo sin ventanas.        |
+| true  | El vídeo se representa en modo sin ventanas.        |
 | false | Predeterminada. El vídeo se representa en modo de ventana. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, un control incrustado de Windows Media Player representa el vídeo en su propia ventana dentro del área cliente. Cuando **windowlessVideo** se establece en true, el control Player representa el vídeo directamente en el área cliente, por lo que puede aplicar efectos especiales o capas el vídeo con texto.
+De forma predeterminada, un control Reproductor de Windows Media integrado representa el vídeo en su propia ventana dentro del área cliente. Cuando **windowlessVideo** está establecido en true, el control Player representa el vídeo directamente en el área de cliente, por lo que puede aplicar efectos especiales o agregar texto al vídeo.
 
-En Windows Vista, la representación de vídeo en el modo sin ventanas puede degradar el rendimiento.
+En Windows Vista, la representación de vídeo en modo sin ventanas puede degradar el rendimiento.
 
-La propiedad **windowlessVideo** no es compatible con Netscape Navigator. Establecer un valor para esta propiedad en el navegador puede producir resultados inesperados.
+La **propiedad windowlessVideo** no es compatible con Netscape Navigator. Establecer un valor para esta propiedad en Navigator puede producir resultados inesperados.
 
-**Windows Media Player 10 Mobile:** Esta propiedad no se admite.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior.<br/>                           |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior.<br/>                           |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

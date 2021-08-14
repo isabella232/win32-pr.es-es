@@ -3,28 +3,28 @@ title: Trabajar con dispositivos portátiles
 description: Trabajar con dispositivos portátiles
 ms.assetid: 145ede07-a23b-486b-a561-9c87a48b72a8
 keywords:
-- Windows Media Player, dispositivos portátiles
-- Modelo de objetos de Windows Media Player, dispositivos portátiles
+- Reproductor de Windows Media dispositivos portátiles
+- Reproductor de Windows Media de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
-- Control ActiveX de Windows Media Player, dispositivos portátiles
-- Control ActiveX, dispositivos portátiles
-- Control ActiveX móvil de Windows Media Player, dispositivos portátiles
-- Windows Media Player dispositivos móviles y portátiles
+- Reproductor de Windows Media ActiveX, dispositivos portátiles
+- ActiveX control, dispositivos portátiles
+- Reproductor de Windows Media Control de ActiveX móviles, dispositivos portátiles
+- Reproductor de Windows Media Dispositivos móviles y portátiles
 - dispositivos portátiles, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b64c6e7047864b899a2d7dca2ba4754cc7cb5dc2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 34cbff16b293ac4ab438c1b018608497d2a61cdfa6fb727332d5b50a27de313c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745512"
 ---
 # <a name="working-with-portable-devices"></a>Trabajar con dispositivos portátiles
 
-En esta sección se describe cómo usar un control ActiveX de Windows Media Player remoto para trabajar con dispositivos portátiles.
+En esta sección se describe cómo usar un control Reproductor de Windows Media ActiveX remoto para trabajar con dispositivos portátiles.
 
-En los ejemplos de código de esta sección se usan las clases Active Template Library (ATL), como **CComPtr**.
+Los ejemplos de código de esta sección usan Active Template Library (ATL), como **CComPtr**.
 
 ## <a name="included-headers"></a>Encabezados incluidos
 
@@ -44,7 +44,7 @@ Para usar el código de esta sección, incluya los encabezados siguientes:
 
 ## <a name="iwmpplayer-pointer"></a>Puntero IWMPPlayer
 
-El puntero **IWMPPlayer** se almacena en una variable miembro.
+El **puntero IWMPPlayer** se almacena en una variable miembro.
 
 
 ```C++
@@ -64,7 +64,7 @@ IWMPSyncDevice **m_ppWMPDevices; // Points to the custom device array.
 
 
 
-El recuento de dispositivos se almacena en una variable miembro.
+El número de dispositivos se almacena en una variable miembro.
 
 
 ```C++
@@ -73,7 +73,7 @@ int m_cDevices; // Count of devices.
 
 
 
-## <a name="retrieving-a-device-pointer"></a>Recuperación de un puntero de dispositivo
+## <a name="retrieving-a-device-pointer"></a>Recuperar un puntero de dispositivo
 
 Un puntero a un dispositivo determinado se recupera a través de su índice de matriz mediante código similar al siguiente:
 
@@ -84,7 +84,7 @@ CComPtr<IWMPSyncDevice> spSyncDevice(m_ppWMPDevices[lIndex]);
 
 
 
-Tenga en cuenta que el índice que se muestra en los ejemplos anteriores no es el índice de Asociación para el dispositivo. Es el índice del dispositivo en la matriz personalizada de dispositivos.
+Tenga en cuenta que el índice que se muestra en los ejemplos anteriores no es el índice de asociación del dispositivo. Es el índice del dispositivo en la matriz personalizada de dispositivos.
 
 ## <a name="cleaning-up"></a>Limpieza
 
@@ -123,7 +123,7 @@ long CMainDlg::GetSelectedDeviceIndex()
 
 
 
-## <a name="user-interface-state-is-managed-by-a-single-function"></a>El estado de la interfaz de usuario se administra mediante una sola función
+## <a name="user-interface-state-is-managed-by-a-single-function"></a>Interfaz de usuario state se administra mediante una sola función
 
 La función SetUIState administra la interfaz de usuario.
 
@@ -136,7 +136,7 @@ bConnected)
 
 
 
-Los detalles de esta función no son relevantes para las discusiones de esta sección, pero tenga en cuenta que esta función realiza tareas como habilitar o deshabilitar los controles y cambiar el texto para mostrar en la interfaz de usuario.
+Los detalles de esta función no son pertinentes para las discusiones de esta sección, pero tenga en cuenta que esta función realiza tareas como habilitar o deshabilitar controles y cambiar el texto para mostrar en la interfaz de usuario.
 
 La enumeración UIState se definió de la siguiente manera:
 
@@ -152,14 +152,14 @@ enum UIState
 
 
 
-El parámetro *bConnected* especifica si se va a configurar la interfaz de usuario para un dispositivo conectado (true significa que el dispositivo está conectado). Los parámetros *NewState* y *bConnected* transmiten la información necesaria para que la función realice su trabajo.
+El *parámetro bConnected* especifica si se debe configurar la interfaz de usuario para un dispositivo conectado (TRUE significa que el dispositivo está conectado). Los *parámetros NewState* *y bConnected* transmiten la información necesaria para que la función realice su trabajo.
 
 En las secciones siguientes se proporcionan explicaciones del código de ejemplo:
 
--   [Enumerar dispositivos](enumerating-devices.md)
+-   [Enumeración de dispositivos](enumerating-devices.md)
 -   [Recuperación de atributos de dispositivo](retrieving-device-attributes.md)
--   [Mostrando el progreso de la sincronización](showing-synchronization-progress.md)
--   [Administrar listas de reproducción de sincronización](managing-synchronization-playlists.md)
+-   [Mostrar el progreso de la sincronización](showing-synchronization-progress.md)
+-   [Administración de listas de reproducción de sincronización](managing-synchronization-playlists.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -168,9 +168,9 @@ En las secciones siguientes se proporcionan explicaciones del código de ejemplo
 [**Guía de control del reproductor**](player-control-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

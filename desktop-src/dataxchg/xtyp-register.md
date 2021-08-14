@@ -1,9 +1,9 @@
 ---
-title: XTYP_REGISTER transacción (ddeml. h)
-description: Una función de devolución de llamada de Intercambio dinámico de datos (DDE), DdeCallback, recibe el \_ tipo de transacción de registro XTYP cada vez que una aplicación de servidor de la biblioteca de administración de intercambio dinámico de datos (ddeml) utiliza la función DdeNameService para registrar un nombre de servicio, o cuando se inicia una aplicación que no es de ddeml que admite el tema del sistema.
+title: XTYP_REGISTER transacción (Ddeml.h)
+description: Una función de devolución de llamada de datos dinámicos Exchange (DDE), DdeCallback, recibe el tipo de transacción XTYP REGISTER cada vez que una aplicación de servidor de la biblioteca de administración de datos dinámicos Exchange (DDEML) usa la función DdeNameService para registrar un nombre de servicio o cada vez que se inicia una aplicación que no es DDEML que admite el tema \_ System.
 ms.assetid: 465e9c10-1526-4e2a-8a46-5984043f5a93
 keywords:
-- Intercambio de datos de transacciones XTYP_REGISTER
+- XTYP_REGISTER datos de transacción Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd56bf4f5ac2b4eb0f714e5348174942f685c2ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79c4ffdb48b7a69109659e65d816b4ab146a1f38bde976e7f8330746f564bc64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544754"
 ---
-# <a name="xtyp_register-transaction"></a>XTYP \_ registrar transacción
+# <a name="xtyp_register-transaction"></a>Transacción XTYP \_ REGISTER
 
-Una función de devolución de llamada de Intercambio dinámico de datos (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe el tipo de transacción de **\_ registro XTYP** cada vez que una aplicación de servidor de la biblioteca de administración de intercambio dinámico de datos (ddeml) utiliza la función [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice) para registrar un nombre de servicio, o cuando se inicia una aplicación que no es de ddeml que admite el tema del sistema.
+Una función de devolución de llamada de datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe el tipo de transacción **XTYP \_ REGISTER** cada vez que una aplicación de servidor de la biblioteca de administración de datos dinámicos Exchange (DDEML) usa la función [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice) para registrar un nombre de servicio o cada vez que se inicia una aplicación que no es DDEML que admite el tema System.
 
 
 ```C++
@@ -48,14 +48,14 @@ El tipo de transacción.
 *uFmt* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *hconv* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -76,31 +76,31 @@ Identificador del nombre de servicio específico de la instancia que se va a reg
 *hdata* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData1* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData2* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Esta transacción se filtra si la aplicación especificó la marca **CBF \_ SKIP \_ registrations** en la función [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Esta transacción se filtra si la aplicación especificó la **marca CBF \_ SKIP \_ REGISTRATIONS** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
-Una aplicación no puede bloquear este tipo de transacción; se omite el código de retorno del **\_ bloque CBR** .
+Una aplicación no puede bloquear este tipo de transacción; Se omite el código de retorno **\_ CBR BLOCK.**
 
-Una aplicación debe usar el parámetro *hsz1* para agregar el nombre de servicio a la lista de servidores disponibles para el usuario. Una aplicación debe usar el parámetro *hsz2* para identificar la instancia de la aplicación que se ha iniciado.
+Una aplicación debe usar el *parámetro hsz1* para agregar el nombre del servicio a la lista de servidores disponibles para el usuario. Una aplicación debe usar el *parámetro hsz2* para identificar qué instancia de aplicación se ha iniciado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ Una aplicación debe usar el parámetro *hsz1* para agregar el nombre de servici
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -127,10 +127,10 @@ Una aplicación debe usar el parámetro *hsz1* para agregar el nombre de servici
 [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de administración de Intercambio dinámico de datos](dynamic-data-exchange-management-library.md)
+[datos dinámicos Exchange management library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

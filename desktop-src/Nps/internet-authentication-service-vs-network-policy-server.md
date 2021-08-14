@@ -5,12 +5,12 @@ ms.assetid: c7c6d1a3-d0c8-469e-ae1e-a848ef7fee2b
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd62a50021c485c7bf51cdc9caff4360e4cc863
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: f46e4052b2c7277f49f898a290d689928b5838c0562042c0ba8937c5daf00210
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118362321"
 ---
 # <a name="internet-authentication-service--network-policy-server"></a>Servicio de autenticación de Internet & servidor de directivas de red
 
@@ -95,7 +95,7 @@ NPS, a través de NAP, interopera con CISCO NAC.<br/> IAS no admite NAP.<br/></t
 </tr>
 <tr class="odd">
 <td>Se ha actualizado el scripting de línea de comandos <a href="/previous-versions/windows/it-pro/windows-server-2003/cc785383(v=ws.10)">con Netsh</a>.<br/></td>
-<td>NPS admite la interfaz de línea de comandos &quot; nps de &quot; Netsh. &quot;Netsh nps &quot; contiene nuevos comandos que permiten configurar completamente NPS, incluidas las características de NAP.<br/> IAS admite la interfaz &quot; de la línea de comandos aaaa de &quot; Netsh.<br/></td>
+<td>NPS admite la interfaz de línea de comandos &quot; nps de &quot; Netsh. &quot;Netsh nps contiene nuevos comandos que permiten &quot; configurar completamente NPS, incluidas las características de NAP.<br/> IAS admite la interfaz &quot; de la línea de comandos aaaa de &quot; Netsh.<br/></td>
 </tr>
 <tr class="even">
 <td>Aislamiento de directivas<br/></td>

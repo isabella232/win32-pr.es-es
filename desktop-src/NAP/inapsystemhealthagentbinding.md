@@ -1,10 +1,10 @@
 ---
-title: Interfaz INapSystemHealthAgentBinding (NapSystemHealthAgent. h)
-description: Los Sha usan para comunicarse con el NapAgent. | Interfaz INapSystemHealthAgentBinding (NapSystemHealthAgent. h)
+title: Interfaz INapSystemHealthAgentBinding (NapSystemHealthAgent.h)
+description: Los SHA usan para comunicarse con NapAgent. | Interfaz INapSystemHealthAgentBinding (NapSystemHealthAgent.h)
 ms.assetid: 9366f61f-086a-4f44-900e-9ec3165a35ba
 keywords:
-- Interfaz INapSystemHealthAgentBinding NAP
-- Interfaz INapSystemHealthAgentBinding NAP, descripción
+- NAP de la interfaz INapSystemHealthAgentBinding
+- Interfaz NAP de INapSystemHealthAgentBinding , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,74 +15,74 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d38d1331996e34c6879fc2e98ce566ce6802527a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 38fe66a5cd6883114ff46da3e98174d299f1813e670ed5ce67ee3843dc210d18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105678759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117799190"
 ---
-# <a name="inapsystemhealthagentbinding-interface"></a>Interfaz INapSystemHealthAgentBinding
+# <a name="inapsystemhealthagentbinding-interface"></a>INapSystemHealthAgentBinding (interfaz)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-**INapSystemHealthAgentBinding** proporciona métodos que los Sha usan para comunicarse con NapAgent.
+**INapSystemHealthAgentBinding proporciona métodos** que los SHA usan para comunicarse con NapAgent.
 
 > [!Note]  
-> [**INapSystemHealthAgentBinding2**](inapsystemhealthagentbinding2.md) hereda todos los métodos de esta interfaz y debe usarse en su lugar.
+> [**INapSystemHealthAgentBinding2**](inapsystemhealthagentbinding2.md) hereda todos los métodos de esta interfaz y se debe usar en su lugar.
 
  
 
 ## <a name="members"></a>Miembros
 
-La interfaz **INapSystemHealthAgentBinding** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapSystemHealthAgentBinding** también tiene estos tipos de miembros:
+La **interfaz INapSystemHealthAgentBinding** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapSystemHealthAgentBinding** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **INapSystemHealthAgentBinding** tiene estos métodos.
+La **interfaz INapSystemHealthAgentBinding** tiene estos métodos.
 
 
 
 | Método                                                                                                                     | Descripción                                                                                        |
 |:---------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [**INapSystemHealthAgentBinding::FlushCache**](inapsystemhealthagentbinding-flushcache-method.md)                         | Lo llama un SHA para vaciar la memoria caché de SoH.<br/>                                                |
-| [**INapSystemHealthAgentBinding::GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md) | Lo llaman los Sha para determinar el estado de aislamiento del sistema.<br/>                                 |
-| [**INapSystemHealthAgentBinding:: Initialize**](inapsystemhealthagentbinding-initialize-method.md)                         | Inicializa SHA y enlaza el SHA al servicio NapAgent. <br/>                         |
-| [**INapSystemHealthAgentBinding::NotifySoHChange**](inapsystemhealthagentbinding-notifysohchange-method.md)               | Lo llaman los Sha cuando cambia el SoH.<br/>                                                  |
-| [**INapSystemHealthAgentBinding:: UnInitialize**](inapsystemhealthagentbinding-uninitialize-method.md)                     | Lo llaman los Sha para hacer que el NapAgent libere todas sus referencias a punteros COM SHA.<br/> |
+| [**INapSystemHealthAgentBinding::FlushCache**](inapsystemhealthagentbinding-flushcache-method.md)                         | Lo llama sha para vaciar su caché de SoH.<br/>                                                |
+| [**INapSystemHealthAgentBinding::GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md) | Lo llaman las SHA para determinar el estado de aislamiento del sistema.<br/>                                 |
+| [**INapSystemHealthAgentBinding::Initialize**](inapsystemhealthagentbinding-initialize-method.md)                         | Inicializa sha y enlaza sha al servicio NapAgent. <br/>                         |
+| [**INapSystemHealthAgentBinding::NotifySoHChange**](inapsystemhealthagentbinding-notifysohchange-method.md)               | Lo llaman las SHA cuando su SoH cambia.<br/>                                                  |
+| [**INapSystemHealthAgentBinding::Uninitialize**](inapsystemhealthagentbinding-uninitialize-method.md)                     | Lo llaman las SHA para hacer que NapAgent libere todas sus referencias a punteros SHA COM.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todas las API de esta interfaz devolverán **RPC \_ E \_ desconectadas** si NapAgent está detenido. Este objeto se recuperará automáticamente y se volverá a enlazar a NapAgent, una vez que se reinicie.
+Todas las API de esta interfaz **devolverán RPC \_ E \_ DISCONNECTED** si napAgent está detenido. Este objeto se recuperará automáticamente y se volverá a conectar a NapAgent, una vez que se reinicie.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
+| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
 [Referencia de NAP](nap-reference.md)

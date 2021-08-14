@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-User-Password-Expired
-description: Indica si ha expirado la contraseña de la cuenta a la que hace referencia este atributo.
+title: Atributo ms-DS-User-Password-Expired
+description: Indica si la contraseña de la cuenta a la que hace referencia este atributo ha expirado.
 ms.assetid: cab4a2e8-b440-45d2-8da8-9f020ffee08c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos MS-DS-User-Password-Expired
-- Esquema de AD de atributo msDS-UserPasswordExpired
+- Esquema de AD del atributo ms-DS-User-Password-Expired
+- Esquema de AD del atributo msDS-UserPasswordExpired
 topic_type:
 - apiref
 api_name:
@@ -14,60 +14,60 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73d99143c470e58d1b1cb5e0cbd7e5302618ff0a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a187f9d0b2be2feeca076d7c7eef82a34ca5827a9d07c76b2d711a5196f84ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104274593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425361"
 ---
-# <a name="ms-ds-user-password-expired-attribute"></a>atributo MS-DS-User-Password-Expired
+# <a name="ms-ds-user-password-expired-attribute"></a>Atributo ms-DS-User-Password-Expired
 
-Indica si ha expirado la contraseña de la cuenta a la que hace referencia este atributo. True si la contraseña ha expirado; en caso contrario, false.
+Indica si la contraseña de la cuenta a la que hace referencia este atributo ha expirado. True si la contraseña ha expirado; de lo contrario, False.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-User-Password-Expired          |
-| Nombre para mostrar de LDAP | msDS-UserPasswordExpired             |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-User-Password-Expired          |
+| Ldap-Display-Name | msDS-UserPasswordExpired             |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1858              |
-| System-ID-GUID    | 565c7ab5-e13e-47f6-abb5-de741806f125 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 565c7ab5-e13e-47f6-abb5-de741806f125 |
+| Syntax            | [**Booleana**](s-boolean.md)         |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Clases usadas en        | [**Objeto MS-DS-Bindable**](c-msds-bindableobject.md)<br/> |
+| Clases usadas en        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En ADAM, este atributo reemplaza la marca [**ADS \_ up \_ password \_ Expired**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) en el atributo [**UserAccountControl**](a-useraccountcontrol.md) .
+En ADAM, este atributo reemplaza la marca [**ADS \_ UF \_ PASSWORD \_ EXPIRED**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) del [**atributo userAccountControl.**](a-useraccountcontrol.md)
 
  
 

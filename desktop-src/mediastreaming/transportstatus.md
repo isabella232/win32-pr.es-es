@@ -1,9 +1,9 @@
 ---
 title: Enumeración TransportStatus
-description: Define el estado de transporte disponible tal y como se define en las directrices de UPnP.
+description: Define el estado de transporte disponible tal como se define en las directrices de UPnP.
 ms.assetid: 6fde82f0-9bc4-4abb-9d10-0000501c2b24
 keywords:
-- Enumeración de TransportStatus de media streaming API
+- Enumeración TransportStatus Media Streaming API
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb4a9de34f358db96b468dbd3329483a8e09b6b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e96b7d3892d0344b166665426c66313da370aed1abbdb80c17037ea6aeb44e46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118473001"
 ---
 # <a name="transportstatus-enumeration"></a>Enumeración TransportStatus
 
-Define el estado de transporte disponible tal y como se define en las directrices de UPnP.
+Define el estado de transporte disponible tal como se define en las directrices de UPnP.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,7 +43,7 @@ typedef enum TransportStatus {
 
 <dl> <dt>
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown**
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconocido**
 </dt> <dd>
 
 Estado de dispositivo erróneo.
@@ -60,14 +60,14 @@ El dispositivo está en buen estado.
 <span id="ErrorOccurred"></span><span id="erroroccurred"></span><span id="ERROROCCURRED"></span>**ErrorOccurred**
 </dt> <dd>
 
-Error en el dispositivo.
+Se produjo un error en el dispositivo.
 
 </dd> <dt>
 
-<span id="Last"></span><span id="last"></span><span id="LAST"></span>**Guardado**
+<span id="Last"></span><span id="last"></span><span id="LAST"></span>**Última**
 </dt> <dd>
 
-El estado anterior del dispositivo es el estado de transporte actual.
+Estado anterior del dispositivo al estado de transporte actual.
 
 </dd> </dl>
 
@@ -75,9 +75,9 @@ El estado anterior del dispositivo es el estado de transporte actual.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>Windows. Media. streaming. idl (referencia a Windows. Media. streaming. idl)</dt> </dl> |
+| Idl<br/> | <dl> <dt>Windows. Media.Streaming.idl (referencia Windows. Media.Streaming.idl)</dt> </dl> |
 
 
 

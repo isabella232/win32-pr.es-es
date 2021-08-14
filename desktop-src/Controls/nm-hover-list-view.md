@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_HOVER (vista de lista) (commctrl. h)
-description: Lo envía un control de vista de lista cuando se mantiene el mouse sobre un elemento. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_HOVER de notificación (vista de lista) (Commctrl.h)
+description: Enviado por un control de vista de lista cuando el mouse mantiene el mouse sobre un elemento. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 0d4a2eee-9c98-43d1-bc05-226d91c0480a
 keywords:
-- NM_HOVER (vista de lista) controles de Windows de código de notificación
+- NM_HOVER (vista de lista) código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e60606dfac73e13b0439ce861f37cb4ec941fda3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb380e96e579e5e740678a4fa91270c510e7ca01c3596a68cdac02eedd3f1da8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103904996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411139"
 ---
-# <a name="nm_hover-list-view-notification-code"></a>Código de notificación de desplazamiento de NM \_ (vista de lista)
+# <a name="nm_hover-list-view-notification-code"></a>Código \_ de notificación NM HOVER (vista de lista)
 
-Lo envía un control de vista de lista cuando se mantiene el mouse sobre un elemento. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de vista de lista cuando el mouse mantiene el mouse sobre un elemento. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,23 +41,23 @@ NM_HOVER
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero para permitir que la vista de lista procese el desplazamiento normal, o un valor distinto de cero para evitar que se procese el desplazamiento.
+Devuelve cero para permitir que la vista de lista procese el puntero con normalidad o distinto de cero para evitar que se procese el puntero.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

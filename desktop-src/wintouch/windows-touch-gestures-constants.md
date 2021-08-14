@@ -1,6 +1,6 @@
 ---
-title: Constantes de gestos táctiles de Windows (Winuser. h)
-description: En esta sección se enumeran las constantes utilizadas para los gestos táctiles de Windows.
+title: Windows Constantes de gestos táctiles (Winuser.h)
+description: En esta sección se enumeran las constantes que se usan Windows gestos táctiles.
 ms.assetid: C5C3C533-A781-47EF-8209-2D94A94C9097
 topic_type:
 - apiref
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 02/18/2020
-ms.openlocfilehash: be1d8fe9354c7160643dcefb2d35938453ad5b07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e980619a4f0f2a0df83ebfbe2fb8e8a767ef5f988e2bb3b769bde64e714eb80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118435231"
 ---
-# <a name="windows-touch-gestures-constants"></a>Constantes de gestos táctiles de Windows
+# <a name="windows-touch-gestures-constants"></a>Windows Constantes de gestos táctiles
 
-En esta sección se enumeran las constantes utilizadas para los gestos táctiles de Windows.
+En esta sección se enumeran las constantes que se usan Windows gestos táctiles.
 
 <dl> <dt>
 
@@ -31,7 +31,7 @@ En esta sección se enumeran las constantes utilizadas para los gestos táctiles
 256
 </dt> <dt>
 
-Define el número máximo de configuraciones de gesto que se pueden incluir en una única llamada a [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig) o [**GetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig).
+Define el número máximo de configuraciones de gestos que se pueden incluir en una sola llamada a [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig) o [**GetGestureConfig.**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig)
 
 </dt> </dl> </dd> </dl>
 
@@ -39,10 +39,10 @@ Define el número máximo de configuraciones de gesto que se pueden incluir en u
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                  |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                  |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 ## <a name="see-also"></a>Vea también
 
-[**GetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig), [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig), [gestos táctiles de Windows](multi-touch-gestures.md)
+[**GetGestureConfig,**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig) [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig), [Windows touch gestures](multi-touch-gestures.md)

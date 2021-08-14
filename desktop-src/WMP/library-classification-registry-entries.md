@@ -1,81 +1,81 @@
 ---
-title: Entradas del registro de clasificación de biblioteca
-description: Entradas del registro de clasificación de biblioteca
+title: Entradas del Registro de clasificación de bibliotecas
+description: Entradas del Registro de clasificación de bibliotecas
 ms.assetid: 3ef7d384-503f-4b8f-9f4b-e0ef3c56616b
 keywords:
-- Windows Media Player, biblioteca
-- Windows Media Player, entradas del registro de clasificación
-- Windows Media Player, extensiones de nombre de archivo
-- Media Player de Windows, registro
-- registro, extensiones de nombre de archivo
+- Reproductor de Windows Media,library
+- Reproductor de Windows Media, entradas del Registro de clasificación
+- Reproductor de Windows Media,extensiones de nombre de archivo
+- Reproductor de Windows Media,registry
+- registry,file name extensions
 - registro, entradas de clasificación de biblioteca
-- registro, configuración para Windows Media Player
-- configuración del registro de la extensión de nombre de archivo
-- Biblioteca, entradas del registro de clasificación
-- Biblioteca, registro
+- registry,settings for Reproductor de Windows Media
+- configuración del Registro de extensión de nombre de archivo
+- biblioteca, entradas del Registro de clasificación
+- library,registry
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e48ea1aacdd1e4c553a7e83bfdd711ff331c0878
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 51cb263732dc8071d603c5acd62db25fc8ee887c35b28d109d961a63aba80d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575135"
 ---
-# <a name="library-classification-registry-entries"></a>Entradas del registro de clasificación de biblioteca
+# <a name="library-classification-registry-entries"></a>Entradas del Registro de clasificación de bibliotecas
 
-Cuando Windows Media Player encuentra un archivo multimedia que tiene una extensión de nombre de archivo personalizada, no sabe si el archivo debe clasificarse como audio, vídeo o algún otro tipo. De forma predeterminada, Windows Media Player coloca dichos archivos en la otra parte multimedia de la biblioteca.
+Cuando Reproductor de Windows Media encuentra un archivo multimedia que tiene una extensión de nombre de archivo personalizada, no sabe si el archivo debe clasificarse como audio, vídeo u otro tipo. De forma predeterminada, Reproductor de Windows Media estos archivos en la parte Otros medios de la biblioteca.
 
-Si los archivos multimedia digitales tienen un formato personalizado, puede proporcionar a Windows Media Player información sobre el lugar en el que los archivos deben aparecer en la biblioteca del reproductor colocando dos entradas en el registro en el equipo del usuario.
+Si los archivos multimedia digitales tienen un formato personalizado, puede proporcionar a Reproductor de Windows Media información sobre dónde deben aparecer los archivos en la biblioteca del reproductor colocando dos entradas en el Registro en el equipo del usuario.
 
-Una entrada entra en la subclave siguiente.
+Una entrada va en la subclave siguiente.
 
-**HKEY \_ local \_ Machine \\ software \\ Microsoft \\ MediaPlayer \\ MLS \\ extensions**
+**HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ MediaPlayer \\ MLS \\ Extensions**
 
-La entrada del registro tiene el siguiente formato.
+La entrada del Registro tiene el formato siguiente.
 
 
 
 | Nombre                                                  | Tipo de datos   | Value                                      |
 |-------------------------------------------------------|-------------|--------------------------------------------|
-| La extensión de nombre de archivo sin el separador de puntos (.) | **Registro \_ SZ** | Cadena que especifica la ubicación de una biblioteca. |
+| Extensión de nombre de archivo sin el separador de puntos (.) | **REG \_ SZ** | Cadena que especifica una ubicación de biblioteca |
 
 
 
- 
+ 
 
-La otra entrada del registro entra en la siguiente subclave que cree.
+La otra entrada del Registro va en la siguiente subclave que cree.
 
-**HKEY \_ Clases \_ raíz \\** *customExtension*
+**HKEY \_ CLASSES \_ \\ ROOT** *customExtension*
 
 donde *customExtension* es la extensión de nombre de archivo, incluido el separador de puntos (.).
 
-La entrada del registro tiene el siguiente formato.
+La entrada del Registro tiene el formato siguiente.
 
 
 
 | Nombre          | Tipo de datos   | Value                                      |
 |---------------|-------------|--------------------------------------------|
-| PerceivedType | **Registro \_ SZ** | Cadena que especifica la ubicación de una biblioteca. |
+| PerceivedType | **REG \_ SZ** | Cadena que especifica una ubicación de biblioteca |
 
 
 
- 
+ 
 
-Ambas entradas del registro deben tener el mismo valor. En la tabla siguiente se proporcionan los valores posibles.
+Ambas entradas del Registro deben tener el mismo valor. Los valores posibles se dan en la tabla siguiente.
 
 
 
-| Value | Descripción                                                                      |
+| Valor | Descripción                                                                      |
 |-------|----------------------------------------------------------------------------------|
-| audio | Los archivos que tienen la extensión personalizada aparecen en la parte música de la biblioteca. |
+| audio | Los archivos que tienen la extensión personalizada aparecen en la parte de música de la biblioteca. |
 | video | Los archivos que tienen la extensión personalizada aparecen en la parte de vídeo de la biblioteca. |
 
 
 
- 
+ 
 
-Por ejemplo, las siguientes entradas del registro especifican que los archivos que tienen la extensión de nombre de archivo. XYZ aparecerán en la parte de música de la biblioteca:
+Por ejemplo, las siguientes entradas del Registro especifican que los archivos que tienen la extensión de nombre de archivo .xyz aparecerán en la parte de música de la biblioteca:
 
 
 ```C++
@@ -90,23 +90,23 @@ HKEY_CLASSES_ROOT\.xyz
 
 
 
-Tenga en cuenta que cualquier código que intente escribir en el registro en el equipo del usuario puede escribir en el \_ subárbol de la máquina local HKEY \_ solo si el usuario actual tiene privilegios administrativos.
+Tenga en cuenta que cualquier código que intente escribir en el Registro en el equipo del usuario puede escribir en el subárbol HKEY LOCAL MACHINE solo si el usuario actual tiene \_ \_ privilegios administrativos.
 
-Las entradas del registro de clasificación de bibliotecas son compatibles con las siguientes versiones de Windows Media Player.
+Las siguientes versiones de Reproductor de Windows Media admiten las entradas del Registro de clasificación de bibliotecas.
 
--   Windows Media Player 9 series con la revisión 823275
--   Windows Media Player 10 y versiones posteriores
+-   Reproductor de Windows Media serie 9 con revisión 823275
+-   Reproductor de Windows Media 10 y versiones posteriores
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Configuración del registro de la extensión de nombre de archivo**](file-name-extension-registry-settings.md)
+[**Extensión del Registro de nombre de archivo Configuración**](file-name-extension-registry-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

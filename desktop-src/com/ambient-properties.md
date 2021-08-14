@@ -4,24 +4,24 @@ description: Propiedades ambiente
 ms.assetid: 48d4f365-f78d-4fba-99ee-0c060253a195
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18c4b1710071e2c09c8cb4e8f5c04cfb3bd101ea
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d9c3422a8da051707c775d940359f57bc01cd4ee6ffe668d4d58e84222175376
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117737308"
 ---
 # <a name="ambient-properties"></a>Propiedades ambiente
 
-Como mínimo, los contenedores de controles ActiveX deben admitir las siguientes propiedades de ambiente mediante los DISPID estándar.
+Como mínimo, los contenedores ActiveX Control deben admitir las siguientes propiedades ambientales mediante el estándar dispids.
 
 
 
-| Propiedad Ambient             | DISPID          | Comentarios y condiciones                                                      |
+| Propiedad Ambient             | Desaconsulte          | Comentarios y condiciones                                                      |
 |------------------------------|-----------------|--------------------------------------------------------------------------|
-| LocaleID<br/>          | -705<br/> |   <br/>                                                          |
-| En modo usuario<br/>          | -709<br/> | Para los contenedores que tienen diferentes entornos de usuario y de ejecución.<br/> |
-| DisplayAsDefault <br/> | -713<br/> | Para esos contenedores donde un botón predeterminado es relevante.<br/>      |
+| LocaleID<br/>          | -705<br/> |   <br/>                                                          |
+| UserMode<br/>          | -709<br/> | Para contenedores que tienen entornos de usuario y ejecución diferentes.<br/> |
+| DisplayAsDefault <br/> | -713<br/> | Para los contenedores en los que un botón predeterminado es relevante.<br/>      |
 
 
 

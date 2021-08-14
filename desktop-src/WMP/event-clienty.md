@@ -1,9 +1,9 @@
 ---
-title: evento. clienty
-description: El atributo Client obtiene la coordenada y del puntero del mouse con respecto a la región cliente de la ventana de la aplicación.
+title: event.clientY
+description: El atributo clientY recupera la coordenada y del puntero del mouse con respecto a la región de cliente de la ventana de la aplicación.
 ms.assetid: 2510f140-8d46-4fb2-80f5-98064c2b838c
 keywords:
-- evento. cliente de Windows Media Player
+- event.clientY Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7dde8ecbd0da40cdbfb1bc9cd72fa190bbd2463
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b412d376794e94c0e8969600a85faaf5e4ecab039703cd35c73a0f7d5896e0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577411"
 ---
-# <a name="eventclienty"></a>evento. clienty
+# <a name="eventclienty"></a>event.clientY
 
-El atributo **Client** obtiene la coordenada y del puntero del mouse con respecto a la región cliente de la ventana de la aplicación.
+El **atributo clientY** recupera la coordenada y del puntero del mouse con respecto a la región de cliente de la ventana de la aplicación.
 
 ``` syntax
 event.clientY
@@ -29,26 +29,26 @@ event.clientY
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de solo lectura (**Long**).
+Este atributo es un número de solo **lectura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Atributos de evento de ambiente**](ambient-event-attributes.md)
+[**Atributos de evento ambiente**](ambient-event-attributes.md)
 </dt> <dt>
 
-[**evento. clientX**](event-clientx.md)
+[**event.clientX**](event-clientx.md)
 </dt> </dl>
 
  

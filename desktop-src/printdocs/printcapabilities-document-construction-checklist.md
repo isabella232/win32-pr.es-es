@@ -4,12 +4,12 @@ ms.assetid: 4b8fa1a4-6461-4722-861b-354f206b2a73
 title: Lista de comprobación de construcción de documentos PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee309c96cf7b2d70cb78f125e7783668fb2298da
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 3a5284a480f73151750926d975535ea799457a1ce2cd4c14f197a4fc6519b646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117867967"
 ---
 # <a name="printcapabilities-document-construction-checklist"></a>Lista de comprobación de construcción de documentos PrintCapabilities
 
@@ -17,13 +17,13 @@ Este tema no es actual. Para obtener la información más reciente, vea [La espe
 
 El [resumen de tipos de elementos](summary-of-element-types.md) describe los distintos elementos que forma un documento PrintCapabilities. En esta sección se proporciona una lista de comprobación que los autores de documentos PrintCapabilities pueden usar para crear un documento PrintCapabilities que describa un dispositivo.
 
-1.  Identifique todos los atributos de dispositivo que contribuyen a la configuración del dispositivo. Para cada atributo de dispositivo de este tipo, determine si debe representarse como una construcción feature/option o como una construcción de parámetro.
+1.  Identifique todos los atributos de dispositivo que contribuyen a la configuración del dispositivo. Para cada atributo de dispositivo de este tipo, determine si debe representarse como una construcción feature/option o como una construcción de parámetros.
 
 2.  Para cada característica de dispositivo, determine si se puede representar mediante una característica definida en las palabras clave de esquema de impresión. Si no es así, deberá introducir una nueva característica definida de forma privada (y un atributo de nombre correspondiente).
 
     -   Para las instancias de características definidas por palabras clave de esquema de impresión, identifique cada uno de los estados disponibles en los que se puede establecer esta característica. Cada estado corresponde a una opción de la instancia de característica. Determine cuál de estos estados corresponde a las instancias de opción definidas por el esquema de impresión asociadas a esta característica y qué estados requieren una instancia de opción personalizada. En [el tema Definiciones de](option-definitions.md) opciones se presenta información sobre cómo construir nuevas instancias de Option y cómo derivar nuevas instancias de Option a partir de instancias de Option existentes.
 
-    -   En el caso de las instancias de características no estándar, identifique las características que se pueden usar para distinguir una opción de otra. Represente cada una de estas características mediante un elemento ScoredProperty y, en cada instancia de Option, asigne a cada ScoredProperty un valor específico de esa opción. Asegúrese de que hay suficientes elementos ScoredProperty para que cada opción de una característica determinada sea única. Por su naturaleza, las instancias de característica y opción no estándar no sonportables. Es decir, otro controlador no podrá encontrar ninguna característica u opción equivalente para que coincida con una característica o opción no estándar especificada en el PrintTicket que crea el controlador.
+    -   En el caso de las instancias de características no estándar, identifique las características que se pueden usar para distinguir una opción de otra. Represente cada una de estas características mediante un elemento ScoredProperty y, en cada instancia de Option, asigne a cada ScoredProperty un valor específico de esa opción. Asegúrese de que hay suficientes elementos ScoredProperty para que cada opción de una característica determinada sea única. Por su naturaleza, las instancias de característica y opción no estándar son noportables. Es decir, otro controlador no podrá encontrar ninguna característica u opción equivalente para que coincida con una característica o opción no estándar especificada en el PrintTicket que crea el controlador.
 
 3.  Determine si alguna opción debe contener elementos ParameterRef. Para obtener más información, vea [Construcciones de parámetros y](parameter-constructs.md) [Elementos de referencia de parámetros](parameter-reference-elements.md).
 
@@ -33,7 +33,7 @@ El [resumen de tipos de elementos](summary-of-element-types.md) describe los dis
 
 6.  Agregue instancias de propiedad y subpropiedad adicionales según sea necesario. Puede introducir instancias de propiedad definidas de forma privada si hay aspectos del dispositivo que necesita caracterizar que no están cubiertos por las instancias de propiedad definidas en las palabras clave de esquema de impresión.
 
-7.  Observe la convención de espacio de nombres para los atributos de nombre. Esto se aplica a los atributos de nombre definidos de forma privada, así como a los definidos en las palabras clave de esquema de impresión.
+7.  Observe la Convención de espacio de nombres para los atributos de nombre. Esto se aplica a los atributos de nombre definidos de forma privada, así como a los definidos en las palabras clave de esquema de impresión.
 
 8.  Los elementos secundarios del mismo tipo de elemento no pueden anidar en una profundidad de más de 10 elementos. Esta regla se aplica de forma independiente a cada tipo de elemento que se puede definir.
 
@@ -41,9 +41,9 @@ Tenga en cuenta que el contenido XML del documento Capacidades de impresión deb
 
 Tenga en cuenta que el conjunto de instancias de Feature, Option y ParameterDef notificadas no debe cambiar, independientemente de la instantánea. Las instancias de ScoredProperty que son cada instancia de Option y el valor asignado a cada elemento ScoredProperty tampoco deben cambiar. Lo mismo se aplica a las instancias de propiedad que conste de cada instancia de ParameterDef.
 
-Para obtener una lista de instancias de propiedad adicionales que se deben proporcionar para definir completamente las construcciones y los parámetros Feature/Option, vea [ParameterDef](parameterdef.md) y [ParameterInit.](parameterinit.md) Por ejemplo, cada característica debe especificar su comportamiento de interfaz de usuario (IU), específicamente si se pueden seleccionar exactamente una o varias instancias de opción para cada característica a la vez. El documento Palabras clave de esquema de impresión define estas instancias de propiedad, donde deben aparecer en el documento PrintCapabilities y qué instancias de Value definidas en las palabras clave de esquema de impresión están disponibles.
+Para obtener una lista de instancias de propiedad adicionales que se deben proporcionar para definir completamente las construcciones y los parámetros Feature/Option, vea [ParameterDef](parameterdef.md) y [ParameterInit.](parameterinit.md) Por ejemplo, cada característica debe especificar su comportamiento de interfaz de usuario (UI), en concreto si se pueden seleccionar exactamente una o varias instancias de opción para cada característica a la vez. El documento Palabras clave de esquema de impresión define estas instancias de propiedad, donde deben aparecer en el documento PrintCapabilities y qué instancias de Value definidas en las palabras clave de esquema de impresión están disponibles.
 
-El proveedor PrintCapabilities es responsable de emitir el valor adecuado para todas las instancias de propiedad dependientes de la configuración. Por ejemplo, si la velocidad de impresión depende del modo de color y de la resolución utilizada, el proveedor PrintCapabilities debe tener en cuenta el modo de color y la configuración de resolución especificados en el PrintTicket proporcionado por el cliente y debe notificar el valor adecuado para la velocidad de impresión. Tenga en cuenta que todas las instancias de ScoredProperty deben tener un solo valor; su instancia de valor no puede cambiar cuando cambia la configuración del dispositivo.
+El proveedor PrintCapabilities es responsable de emitir el valor adecuado para todas las instancias de propiedad dependientes de la configuración. Por ejemplo, si la velocidad de impresión depende del modo de color y de la resolución utilizada, el proveedor PrintCapabilities debe tener en cuenta el modo de color y la configuración de resolución especificados en el PrintTicket proporcionado por el cliente y debe notificar el valor adecuado para la velocidad de impresión. Tenga en cuenta que cada instancia de ScoredProperty debe tener un solo valor; su instancia de valor no puede cambiar cuando cambia la configuración del dispositivo.
 
 Tenga en cuenta también que las instancias de propiedad definidas en las palabras clave de esquema de impresión deben aparecer en la ubicación especificada. No pueden aparecer en ubicaciones arbitrarias dentro de un documento PrintCapabilities. Las instancias de propiedad definidas de forma privada pueden aparecer en cualquier lugar, incluso como subpropiedades dentro de las instancias de propiedad definidas por el esquema.
 

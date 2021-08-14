@@ -3,7 +3,7 @@ title: Atributo CameraManufacturer
 description: El atributo CameraManufacturer es una cadena que representa al fabricante de la cámara.
 ms.assetid: 88c97ac6-159b-4927-8103-baefb09bdb62
 keywords:
-- CameraManufacturer Media Player de Windows
+- Atributo CameraManufacturer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,40 +12,40 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a8b9f93cb7e22b729702f80a2e6f057311ff8df
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2478e0baf788fd3d03448ce024b1f42961513c8a65920274807dabadc668e5b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581148"
 ---
 # <a name="cameramanufacturer-attribute"></a>Atributo CameraManufacturer
 
-El atributo **CameraManufacturer** es una cadena que representa al fabricante de la cámara.
+El **atributo CameraManufacturer** es una cadena que representa al fabricante de la cámara.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   Elementos de fotografía
+-   Elementos de fotos
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

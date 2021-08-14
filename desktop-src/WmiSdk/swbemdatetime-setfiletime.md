@@ -1,8 +1,8 @@
 ---
-description: Convierte una fecha en el formato de cadena FILETIME en el formato de fecha y hora de CIM.
+description: Convierte una fecha en el formato FILETIME de cadena al formato de fecha y hora CIM.
 ms.assetid: e375afda-5e94-46d6-b1ac-e801e0f4a620
 ms.tgt_platform: multiple
-title: Método SWbemDateTime. SetFileTime (Wbemdisp. h)
+title: Método SWbemDateTime.SetFileTime (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: ca3e36a284e3700e166e86f6786218bada8f369e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 138685ba4d6b63591bf460da3cdba219685f015d54789ca60a52660845b2e41a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117739480"
 ---
-# <a name="swbemdatetimesetfiletime-method"></a>SWbemDateTime. SetFileTime, método
+# <a name="swbemdatetimesetfiletime-method"></a>Método SWbemDateTime.SetFileTime
 
-El método **SetFileTime** del objeto [**SWbemDateTime**](swbemdatetime.md) convierte una fecha en el formato de cadena **FILETIME** al formato de [fecha y hora de CIM](date-and-time-format.md) .
+El **método SetFileTime** del objeto [**SWbemDateTime**](swbemdatetime.md) convierte una fecha en el formato **FILETIME** de cadena al [formato datetime cim.](date-and-time-format.md)
 
-El formato **FILETIME** es una estructura datetime de 64 bits que representa el número de unidades de 100-nanosegundos desde el comienzo del 1 de enero de 1601. Instrumental de administración de Windows (WMI) trata los valores de **FILETIME** como representaciones de cadena de números de bits 64 sin signo.
+El **formato FILETIME** es una estructura datetime de 64 bits que representa el número de unidades de 100 nanosegundos desde el principio del 1 de enero de 1601. Windows Instrumental de administración (WMI) trata los valores **FILETIME** como representaciones de cadena de números de 64 bits sin signo.
 
-Para ver la explicación de la sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener la explicación de la sintaxis, [consulte Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,17 +47,17 @@ SWbemDateTime.SetFileTime( _
 
 <dl> <dt>
 
-*strFileTime* \[ de\]
+*strFileTime* \[ En\]
 </dt> <dd>
 
-Valor de **FILETIME** que se usa para establecer el objeto.
+**Valor FILETIME** utilizado para establecer el objeto.
 
 </dd> <dt>
 
 *bIsLocal* \[ en, opcional\]
 </dt> <dd>
 
-Si es **true**, *strFileTime* se interpreta como una hora local. La propiedad hora universal coordinada (UTC) contiene la hora local convertida en el desplazamiento UTC correcto. Cuando *bIsLocal* es **false**, *strFileTime* se convierte directamente en un valor UTC con un desplazamiento de 0 (cero).
+Si **es TRUE,** *strFileTime* se interpreta como una hora local. La propiedad Hora universal coordinada (UTC) contiene la hora local convertida al desplazamiento UTC correcto. Cuando *bIsLocal* es **FALSE,** *strFileTime* se convierte directamente en un valor UTC con un desplazamiento de 0 (cero).
 
 </dd> </dl>
 
@@ -67,42 +67,42 @@ Este método no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Después de completar el método **SetFileTime** , el objeto [Err](/previous-versions//sbf5ze0e(v=vs.85)) puede contener el código de error de la lista siguiente.
+Después de completar el **método SetFileTime,** el [objeto Err](/previous-versions//sbf5ze0e(v=vs.85)) puede contener el código de error en la lista siguiente.
 
 <dl> <dt>
 
-**wbemErrInvalidSyntax** -2147749921 (0x80041021)
+**wbemErrInvalidSyntax:** 2147749921 (0x80041021)
 </dt> <dd>
 
-El formato de *strFileTime* no es válido.
+El formato *de strFileTime* no es válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Después de una llamada correcta a **SetFileTime**, el valor [**DateTime**](datetime.md) siempre se interpreta como un valor absoluto (**DateTime**) y [**IsInterval**](swbemdatetime-isinterval.md) se establece en **false**.
+Después de una llamada correcta a **SetFileTime,** el valor [**datetime**](datetime.md) siempre se interpreta como un valor absoluto (**datetime**) e [**IsInterval**](swbemdatetime-isinterval.md) se establece en **FALSE.**
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores de fecha y [**hora**](datetime.md) de CIM en el formato **FILETIME** o en el formato de **\_ fecha de VT** , vea [tareas de WMI: fechas y horas](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato de fecha y hora **de CIM,** consulte [formato de fecha y hora](date-and-time-format.md).
+Para obtener ejemplos de cómo usar el objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores [**DATETIME**](datetime.md) de CIM a y desde el formato **FILETIME** o el formato **VT \_ DATE,** vea [Wmi Tasks: Dates and Times](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato **DATETIME de** CIM, vea [Formato de fecha y hora](date-and-time-format.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
-| IID<br/>                      | \_ISWBEMDATETIME IID<br/>                                                          |
+| IID<br/>                      | IID \_ ISWbemDateTime<br/>                                                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -112,7 +112,7 @@ Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) p
 [**SWbemDateTime**](swbemdatetime.md)
 </dt> <dt>
 
-[**DATETIME**](datetime.md)
+[**Datetime**](datetime.md)
 </dt> </dl>
 
  

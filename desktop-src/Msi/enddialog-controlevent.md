@@ -1,34 +1,34 @@
 ---
-description: Este evento notifica al instalador que quite un cuadro de diálogo modal. En todos los casos, el instalador quita el cuadro de diálogo presente.
+description: Este evento notifica al instalador que quite un cuadro de diálogo modal. En todos los casos, el instalador quita el cuadro de diálogo actual.
 ms.assetid: 74a28696-6387-4d62-8955-4708ba5872bb
-title: EndDialog ControlEvent,
+title: EndDialog ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f08449bffe29093e32066e92e1b8fc739efa02d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0f6e61ab12f072e31d6e4efc5f3d2b27ef8629c933baad65fb101b1078ca1f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118378257"
 ---
-# <a name="enddialog-controlevent"></a>EndDialog ControlEvent,
+# <a name="enddialog-controlevent"></a>EndDialog ControlEvent
 
-Este evento notifica al instalador que quite un cuadro de diálogo modal. En todos los casos, el instalador quita el cuadro de diálogo presente.
+Este evento notifica al instalador que quite un cuadro de diálogo modal. En todos los casos, el instalador quita el cuadro de diálogo actual.
 
-Este evento puede ser publicado por un [control Pushbutton](pushbutton-control.md)o un [control SelectionTree](selectiontree-control.md). Este evento se debe crear en la [tabla ControlEvent,](controlevent-table.md).
+Este evento se puede publicar mediante un [control PushButton o](pushbutton-control.md)un [control SelectionTree](selectiontree-control.md). Este evento debe crearse en la [tabla ControlEvent](controlevent-table.md).
 
-Este ControlEvent, requiere que la interfaz de usuario se ejecute en el nivel de interfaz de usuario [*completo*](f-gly.md) . Este evento no funcionará con una [*interfaz*](r-gly.md) de usuario [*básica*](b-gly.md)o no reducida. Para obtener más información, consulte niveles de la [interfaz de usuario](user-interface-levels.md).
+Este control ControlEvent requiere que la interfaz de usuario se ejecute en el [*nivel completo de la interfaz de*](f-gly.md) usuario. Este evento no funcionará con una interfaz de usuario [*reducida o*](r-gly.md) una interfaz de [*usuario básica.*](b-gly.md) Para obtener información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
-En la tabla siguiente se muestra la acción del evento resultante de los distintos argumentos especificados en la [tabla ControlEvent,](controlevent-table.md).
+En la tabla siguiente se muestra la acción del evento resultante de distintos argumentos especificados en la [tabla ControlEvent](controlevent-table.md).
 
 
 
 | Argumento | Acción del instalador                                                                                                                                                             |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Salir     | La secuencia del asistente está cerrada y el control vuelve al instalador con el valor UserExit. Este argumento no se puede usar en un cuadro de diálogo que sea un elemento secundario de otro cuadro de diálogo. |
-| Volver a intentar    | La secuencia del asistente está cerrada y el control vuelve al instalador con el valor Suspend. Este argumento no se puede usar en un cuadro de diálogo que sea un elemento secundario de otro cuadro de diálogo.  |
-| Ignorar   | La secuencia del asistente está cerrada y el control vuelve al instalador con el valor terminado. Este argumento no se puede usar en un cuadro de diálogo que sea un elemento secundario de otro cuadro de diálogo. |
-| Valor devuelto   | El control vuelve al elemento primario del cuadro de diálogo actual, o si no hay ningún elemento primario, el control vuelve al instalador con el valor Success.                                 |
+| Salir     | La secuencia del asistente se cierra y el control vuelve al instalador con el valor UserExit. Este argumento no se puede usar en un cuadro de diálogo que sea un elemento secundario de otro cuadro de diálogo. |
+| Volver a intentar    | La secuencia del asistente se cierra y el control vuelve al instalador con el valor Suspender. Este argumento no se puede usar en un cuadro de diálogo que sea un elemento secundario de otro cuadro de diálogo.  |
+| Ignorar   | La secuencia del asistente se cierra y el control vuelve al instalador con el valor Finalizado. Este argumento no se puede usar en un cuadro de diálogo que sea un elemento secundario de otro cuadro de diálogo. |
+| Valor devuelto   | El control vuelve al elemento primario del cuadro de diálogo actual o, si no hay ningún elemento primario, el control vuelve al instalador con el valor Correcto.                                 |
 
 
 
@@ -36,21 +36,21 @@ En la tabla siguiente se muestra la acción del evento resultante de los distint
 
 ## <a name="published-by"></a>Publicado por
 
-Este ControlEvent, lo publica el instalador.
+El instalador publica este control ControlEvent.
 
 ## <a name="argument"></a>Argumento
 
-En los cuadros de diálogo normales, la columna argument de la [tabla ControlEvent,](controlevent-table.md) puede ser "Return", "Exit", "Retry" u "ignore".
+En los cuadros de diálogo normales, la columna Argument de la [tabla ControlEvent](controlevent-table.md) puede ser "Return", "Exit", "Retry" o "Ignore".
 
-En los cuadros de diálogo de error, la columna argument de la [tabla ControlEvent,](controlevent-table.md) puede ser ' ErrorOk ', ' ErrorCancel ', ' ErrorAbort ', ' ErrorRetry ', ' ErrorIgnore ', ' ErrorYes ' o ' ErrorNo '.
+En los cuadros de diálogo de error, la columna Argument de la [tabla ControlEvent](controlevent-table.md) puede ser "ErrorOk", "ErrorCancel", "ErrorAbort", "ErrorRetry", "ErrorIgnore", "ErrorYes" o "ErrorNo".
 
-## <a name="action-on-subscribers"></a>Acción en los suscriptores
+## <a name="action-on-subscribers"></a>Acción en suscriptores
 
 Ninguno.
 
 ## <a name="typical-use"></a>Uso típico
 
-Un control [Pushbutton](pushbutton-control.md) en un cuadro de diálogo modal está asociado a este evento en la tabla [ControlEvent,](controlevent-table.md) para cerrar un cuadro de diálogo.
+Un [control PushButton](pushbutton-control.md) de un cuadro de diálogo modal está asociado a este evento en la [tabla ControlEvent](controlevent-table.md) para cerrar un cuadro de diálogo.
 
  
 

@@ -1,29 +1,29 @@
 ---
-title: Devolución de llamada RPC y funciones de notificación
-description: Página de navegación de llamada a procedimiento remoto (RPC) para las funciones de devolución de llamada y notificación.
+title: Funciones de devolución de llamada y notificación de RPC
+description: Página de navegación llamada a procedimiento remoto (RPC) para funciones de devolución de llamada y notificación.
 ms.assetid: 63695358-5a34-4446-a896-4f0a25615cff
 keywords:
-- Llamadas a procedimientos remotos RPC, referencia, devolución de llamada y funciones de notificación
+- Llamada a procedimiento remoto RPC, funciones de referencia, devolución de llamada y notificación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a8d614c079d762cf740ff7eb449e3c05c932243
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a1e05fab4300724f43972098753806b0d56ba59023fe884d05ab83d054e02a44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118926562"
 ---
-# <a name="rpc-callback-and-notification-functions"></a>Devolución de llamada RPC y funciones de notificación
+# <a name="rpc-callback-and-notification-functions"></a>Funciones de devolución de llamada y notificación de RPC
 
 La lista siguiente contiene información sobre las funciones de devolución de llamada que las aplicaciones pueden usar para personalizar el comportamiento del entorno en tiempo de ejecución de RPC:
 
--   [**\_recuperación de claves de autenticación RPC \_ \_ \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_auth_key_retrieval_fn)
--   [**RPC \_ si la \_ devolución de llamada \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_if_callback_fn)
--   [**Devolucione de \_ \_ llamada de inactividad de grupo de interfaz RPC \_ \_ \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_interface_group_idle_callback_fn)
--   [**autorización de administración de RPC \_ \_ \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_mgmt_authorization_fn)
--   [**\_INQ de objeto RPC \_ \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_object_inq_fn)
--   [**\_rutina RPCNOTIFICATION**](/previous-versions/aa375808(v=vs.80))
+-   [**RPC \_ AUTH \_ KEY \_ RETRIEVAL \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_auth_key_retrieval_fn)
+-   [**RPC \_ IF \_ CALLBACK \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_if_callback_fn)
+-   [**FN \_ DE \_ \_ DEVOLUCIÓN DE LLAMADA INACTIVA \_ DEL GRUPO DE INTERFAZ \_ RPC**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_interface_group_idle_callback_fn)
+-   [**RPC \_ MGMT \_ AUTHORIZATION \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_mgmt_authorization_fn)
+-   [**RPC \_ OBJECT \_ INQ \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_object_inq_fn)
+-   [**RPCNOTIFICATION \_ ROUTINE**](/previous-versions/aa375808(v=vs.80))
 
- 
+ 
 
- 
+ 

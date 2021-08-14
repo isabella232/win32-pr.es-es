@@ -1,27 +1,27 @@
 ---
-title: Obtención de propiedades de cuentas
-description: El objeto Accounting es uno de los objetos de la colección de controladores de solicitud.
+title: Obtener propiedades de contabilidad
+description: El objeto de contabilidad es uno de los objetos de la colección Controladores de solicitudes.
 ms.assetid: eb5c8606-d3f0-4c33-9035-7b7b1369cb0d
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9911397c1de3521ccb5a275405416d8b88c1fa6f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 77390a6aa67e946de6d69dd3d1bc28a76907b7ad31b497d4921c7a2d7493c328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118361733"
 ---
-# <a name="obtaining-accounting-properties"></a>Obtención de propiedades de cuentas
+# <a name="obtaining-accounting-properties"></a>Obtener propiedades de contabilidad
 
 > [!Note]  
-> Se ha cambiado el nombre del servicio de autenticación de Internet (IAS) a partir de Windows Server 2008. El contenido de este tema se aplica a IAS y NPS. En todo el texto, NPS se usa para hacer referencia a todas las versiones del servicio, incluidas las versiones mencionadas originalmente como IAS.
+> El nombre del Servicio de autenticación de Internet (IAS) se ha cambiado a Servidor de directivas de red (NPS) a partir Windows Server 2008. El contenido de este tema se aplica a IAS y NPS. A lo largo del texto, NPS se usa para hacer referencia a todas las versiones del servicio, incluidas las versiones a las que se hizo referencia originalmente como IAS.
 
- 
+ 
 
-El objeto Accounting es uno de los objetos de la colección de controladores de solicitud. El valor de enumeración para la colección de controladores de solicitud es la propiedad de la **\_ \_ \_ colección RequestHandler de IAS**. El nombre del controlador para el objeto Accounting es "Microsoft Accounting".
+El objeto de contabilidad es uno de los objetos de la colección Controladores de solicitudes. El valor de enumeración de la colección de controladores de solicitudes **es PROPERTY \_ IAS \_ REQUESTHANDLERS \_ COLLECTION**. El nombre del controlador del objeto de contabilidad es "Microsoft Accounting".
 
-El código Visual Basic siguiente tiene acceso a las propiedades disponibles desde el controlador de objetos de contabilidad.
+El código Visual Basic acceso a las propiedades disponibles en el controlador de objetos de contabilidad.
 
 
 ```VB
@@ -37,34 +37,34 @@ vtTemp = sdoRequestHandler.GetProperty(PROPERTY_ACCOUNTING_LOG_OPEN_NEW_SIZE)
 
 
 
-Para obtener acceso a las propiedades de cuentas mediante C++, primero obtenga la colección de controladores de solicitud. La [recuperación de una colección](/windows/desktop/Nps/sdo-retrieving-a-collection) contiene código de C++ que muestra cómo obtener una colección. El valor de enumeración para la colección de controladores de solicitud es la propiedad de la **\_ \_ \_ colección RequestHandler de IAS**. (Los valores correspondientes a las distintas colecciones de NPS se enumeran mediante el tipo de enumeración [**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties) ).
+Para acceder a las propiedades de contabilidad mediante C++, obtenga primero la colección de controladores de solicitudes. Recuperar [una colección contiene](/windows/desktop/Nps/sdo-retrieving-a-collection) código de C++ que muestra cómo obtener una colección. El valor de enumeración de la colección de controladores de solicitudes **es PROPERTY \_ IAS \_ REQUESTHANDLERS \_ COLLECTION**. (El tipo de enumeración [**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties) enumera los valores correspondientes a las distintas colecciones NPS).
 
-La colección de controladores de solicitud contiene un objeto denominado "Microsoft Accounting". Recupere este objeto de la colección. La sección [recuperar un objeto de una colección](/windows/desktop/Nps/sdo-retrieving-an-object-from-a-collection) contiene código de C++ que muestra cómo obtener un objeto de una colección.
+La colección de controladores de solicitudes contiene un objeto denominado "Microsoft Accounting". Recupere este objeto de la colección. La sección [Recuperación de un objeto de una colección](/windows/desktop/Nps/sdo-retrieving-an-object-from-a-collection) contiene código de C++ que muestra cómo obtener un objeto de una colección.
 
-Una vez que tenga el objeto de contabilidad de Microsoft, obtenga una interfaz [**ISdo**](/windows/desktop/api/sdoias/nn-sdoias-isdo) para el objeto mediante [**IUnknown:: QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)). La sección [recuperar un SDO de usuarios](/windows/desktop/Nps/sdo-retrieving-a-user-sdo) contiene código de C++ que muestra cómo obtener una interfaz **ISdo** para un objeto. Después, puede usar el método [**ISdo:: GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty) para obtener los valores de propiedad para el objeto de contabilidad de Microsoft.
+Una vez que tenga el objeto Microsoft Accounting, obtenga una interfaz [**ISdo**](/windows/desktop/api/sdoias/nn-sdoias-isdo) para el objeto mediante [**IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)). La sección [Recuperación de un SDO de](/windows/desktop/Nps/sdo-retrieving-a-user-sdo) usuario contiene código de C++ que muestra cómo obtener una **interfaz ISdo** para un objeto . A continuación, puede usar [**el método ISdo::GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty) para obtener valores de propiedad para el objeto Microsoft Accounting.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Recuperación de una colección](/windows/desktop/Nps/sdo-retrieving-a-collection)
+[Recuperar una colección](/windows/desktop/Nps/sdo-retrieving-a-collection)
 </dt> <dt>
 
 [Recuperar un objeto de una colección](/windows/desktop/Nps/sdo-retrieving-an-object-from-a-collection)
 </dt> <dt>
 
-[Recuperación de un SDO de usuarios](/windows/desktop/Nps/sdo-retrieving-a-user-sdo)
+[Recuperar un SDO de usuario](/windows/desktop/Nps/sdo-retrieving-a-user-sdo)
 </dt> <dt>
 
 [**ISdo**](/windows/desktop/api/sdoias/nn-sdoias-isdo)
 </dt> <dt>
 
-[**IUnknown:: QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))
+[**IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))
 </dt> <dt>
 
 [**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: 'ByteAddressBuffer:: Load4 (uint) (función)'
-description: 'Obtiene cuatro valores. | ByteAddressBuffer:: Load4 (uint) (función)'
+title: Función ByteAddressBuffer::Load4(uint)
+description: Obtiene cuatro valores. | Función ByteAddressBuffer::Load4(uint)
 ms.assetid: bc74bf29-1c22-4e47-bafc-ecef194f54b8
 keywords:
-- Load4 de función HLSL
+- Función Load4 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 18ce27e7d02a414165aab169e40a6ab14cdd8c4c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a623c62ce9038d4e06cfbb952808aeb0530cb2e937c83578d9ef0e71c9b0a038
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118510005"
 ---
-# <a name="byteaddressbufferload4uint-function"></a>ByteAddressBuffer:: Load4 (uint) (función)
+# <a name="byteaddressbufferload4uint-function"></a>Función ByteAddressBuffer::Load4(uint)
 
 Obtiene cuatro valores.
 
@@ -36,7 +36,7 @@ uint4 Load4(
 
 <dl> <dt>
 
-*Dirección* \[ de de\]
+*dirección* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -51,13 +51,13 @@ Tipo: **uint4**
 
 Cuatro valores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -65,7 +65,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

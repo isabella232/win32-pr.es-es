@@ -1,21 +1,21 @@
 ---
-title: Enviar un comando
-description: Enviar un comando
+title: Envío de un comando
+description: Envío de un comando
 ms.assetid: 28c38f36-b6a7-44da-95e2-25b3dccefc84
 keywords:
-- mciSendString función)
+- Función mciSendString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e69536b167b8fde648c3f3743058542d74bd8647
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: aa2b5763ae93887da607cfba9e94f55a254d7bcd8b0413e40ab9dff45f922cf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801755"
 ---
-# <a name="sending-a-command"></a>Enviar un comando
+# <a name="sending-a-command"></a>Envío de un comando
 
-La función de ejemplo siguiente envía el comando [**Play**](play.md) con las marcas "from" y "to" mediante la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) .
+La siguiente función de ejemplo envía el [**comando play**](play.md) con las marcas "from" y "to" mediante la [**función mciSendString.**](/previous-versions//dd757161(v=vs.85))
 
 
 ```C++
@@ -49,6 +49,6 @@ BOOL PlayFromTo(LPTSTR lpstrAlias, DWORD dwFrom, DWORD dwTo)
 
 
 
- 
+ 
 
- 
+ 

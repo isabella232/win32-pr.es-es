@@ -1,11 +1,11 @@
 ---
-title: IWMPLibraryServices getLibraryByType, método
+title: Método IWMPLibraryServices getLibraryByType
 description: El método getLibraryByType devuelve una interfaz IWMPLibrary que representa la biblioteca que tiene el tipo y el índice especificados.
 ms.assetid: 2507c764-a2cf-42f9-ad44-eaf040b78891
 keywords:
-- método getLibraryByType de Windows Media Player
-- método getLibraryByType Windows Media Player, interfaz IWMPLibraryServices
-- Interfaz IWMPLibraryServices Windows Media Player, método getLibraryByType
+- Método getLibraryByType Reproductor de Windows Media
+- Método getLibraryByType Reproductor de Windows Media , interfaz IWMPLibraryServices
+- Interfaz IWMPLibraryServices Reproductor de Windows Media , método getLibraryByType
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d57fcc71f912fe1ee896ec893ea8f556eeb2277
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f83d74c8c03f8b08936c3693c77e211cd87a8b42c2d020c26ee5133406a2a042
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746213"
 ---
-# <a name="iwmplibraryservicesgetlibrarybytype-method"></a>IWMPLibraryServices:: getLibraryByType (método)
+# <a name="iwmplibraryservicesgetlibrarybytype-method"></a>IWMPLibraryServices::getLibraryByType (método)
 
-El método **getLibraryByType** devuelve una interfaz **IWMPLibrary** que representa la biblioteca que tiene el tipo y el índice especificados.
+El **método getLibraryByType** devuelve una **interfaz IWMPLibrary** que representa la biblioteca que tiene el tipo y el índice especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,41 +55,41 @@ Implements IWMPLibraryServices.getLibraryByType
 
 <dl> <dt>
 
-*wmplt* \[ de\]
+*wmplt* \[ En\]
 </dt> <dd>
 
-Un valor de la enumeración **WMPLib. WMPLibraryType** que especifica el tipo de biblioteca que se va a recuperar.
+Valor de la **enumeración WMPLib.WMPLibraryType** que especifica el tipo de biblioteca que se debe recuperar.
 
 </dd> <dt>
 
-*lIndex* \[ de\]
+*lIndex* \[ En\]
 </dt> <dd>
 
-**System. Int32** que es el índice de la biblioteca que se va a recuperar.
+**System.Int32 que** es el índice de la biblioteca que se va a recuperar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una interfaz **WMPLib. IWMPLibrary** para la biblioteca que se devuelve.
+Interfaz **WMPLib.IWMPLibrary** para la biblioteca que se devuelve.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo hay una biblioteca local y las bibliotecas de discos solo están disponibles en CDs de datos y DVDs que contienen contenido multimedia.
+Solo hay una biblioteca local y las bibliotecas de discos solo están disponibles en los CD y DVD de datos que contienen contenido multimedia.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

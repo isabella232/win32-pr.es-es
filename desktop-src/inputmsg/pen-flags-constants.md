@@ -1,6 +1,6 @@
 ---
 title: Marcas de lápiz
-description: Valores que pueden aparecer en el campo penFlags de la estructura POINTER_PEN_INFO.
+description: Valores que pueden aparecer en el campo penFlags de la POINTER_PEN_INFO estructura.
 ms.assetid: BC3CE568-4090-4451-B780-18530C988305
 topic_type:
 - apiref
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: d7c28beaf58b6fa96bb8dd82b2dd650b2a7d6950
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: acc1afb1d490a1831fdb1ecd5a090e457bae77ae2f08a1b94cabc81d12dbde9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482410"
 ---
 # <a name="pen-flags"></a>Marcas de lápiz
 
-Valores que pueden aparecer en el campo **penFlags** de la estructura [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) .
+Valores que pueden aparecer en el **campo penFlags** de la [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) estructura.
 
 <dl> <dt>
 
@@ -49,7 +49,7 @@ No hay ninguna marca de lápiz. Este es el valor predeterminado.
 
 
 
-Se presiona el botón de barril.
+Se presiona el botón de menú.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ Se presiona el botón de barril.
 
 
 
-Se invierte el lápiz.
+El lápiz se invierte.
 
 
 </dt> </dl> </dd> <dt>
@@ -84,15 +84,15 @@ Se presiona el botón de borrador.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
