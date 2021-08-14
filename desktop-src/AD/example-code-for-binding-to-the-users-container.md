@@ -1,22 +1,22 @@
 ---
-title: Código de ejemplo para enlazar con el contenedor del usuario
-description: En este tema se incluye un ejemplo de código que se enlazará al contenedor usuarios en el dominio actual y la interfaz devolverá e IADsContainer del contenedor.
+title: Código de ejemplo para enlazar al contenedor del usuario
+description: En este tema se incluye un ejemplo de código que se enlazará al contenedor de usuarios en el dominio actual y devolverá e IADsContainer interfaz para el contenedor.
 ms.assetid: 78524b05-f57a-4816-92eb-e37be74dd245
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, enlazar al contenedor del usuario
+- Active Directory ejemplos Active Directory , enlace al contenedor del usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8db1ccb3d2331c4ccef5bbf28f58fa5c046337c7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 21f270f1814f996e84b3fa57f9753219c957cb05cd7cf29a9622f4a64f3b907d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104077521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694568"
 ---
-# <a name="example-code-for-binding-to-the-users-container"></a>Código de ejemplo para enlazar con el contenedor del usuario
+# <a name="example-code-for-binding-to-the-users-container"></a>Código de ejemplo para enlazar al contenedor del usuario
 
-En el siguiente ejemplo de código de C++ se enlaza al contenedor usuarios en el dominio actual y se devuelve e interfaz [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) para el contenedor. Para obtener más información sobre el enlace a objetos conocidos, vea [enlazar a objetos de Well-Known mediante WKGUID](binding-to-well-known-objects-using-wkguid.md).
+El siguiente ejemplo de código de C++ se enlaza al contenedor de usuarios del dominio actual y devuelve e [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) interfaz para el contenedor. Para obtener más información sobre el enlace a objetos conocidos, vea [Enlace a objetos Well-Known mediante WKGUID.](binding-to-well-known-objects-using-wkguid.md)
 
 
 ```C++
@@ -100,6 +100,6 @@ HRESULT GetUsersContainer(IADsContainer **ppContainer)
 
 
 
- 
+ 
 
- 
+ 

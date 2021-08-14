@@ -1,19 +1,19 @@
 ---
-description: Se envía a la ventana más afectada después de cambiar el idioma de entrada de una aplicación. Debe realizar cualquier configuración específica de la aplicación y pasar el mensaje a la función DefWindowProc, que pasa el mensaje a todas las ventanas secundarias de primer nivel.
+description: Se envía a la ventana más afectada después de que se haya cambiado el idioma de entrada de una aplicación. Debe realizar cualquier configuración específica de la aplicación y pasar el mensaje a la función DefWindowProc, que pasa el mensaje a todas las ventanas secundarias de primer nivel.
 ms.assetid: 4d403b1d-f6f7-40d5-9bf5-6a9c4da0803c
-title: WM_INPUTLANGCHANGE mensaje (Winuser.h)
+title: Mensaje WM_INPUTLANGCHANGE (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7e2ceb943290fceab13bf6f22c3d9dafbac27a8
-ms.sourcegitcommit: 40dddb65cba5c5470631f1f4c78218edf7e515de
+ms.openlocfilehash: 72f56367045fe72a8288220e1aeef662e648d702c3b48ead23bf179142dff92c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "108332410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118436250"
 ---
-# <a name="wm_inputlangchange-message"></a>Mensaje \_ INPUTLANGCHANGE de WM
+# <a name="wm_inputlangchange-message"></a>Mensaje \_ DE WM INPUTLANGCHANGE
 
-Se envía a la ventana más afectada después de cambiar el idioma de entrada de una aplicación. Debe realizar cualquier configuración específica de la aplicación y pasar el mensaje a la función [**DefWindowProc,**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que pasa el mensaje a todas las ventanas secundarias de primer nivel. Estas ventanas secundarias pueden pasar el mensaje [**a DefWindowProc para**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que pase el mensaje a sus ventanas secundarias, y así sucesivamente.
+Se envía a la ventana más afectada después de que se haya cambiado el idioma de entrada de una aplicación. Debe realizar cualquier configuración específica de la aplicación y pasar el mensaje a la función [**DefWindowProc,**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que pasa el mensaje a todas las ventanas secundarias de primer nivel. Estas ventanas secundarias pueden pasar el mensaje [**a DefWindowProc para**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que pase el mensaje a sus ventanas secundarias, y así sucesivamente.
 
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
@@ -69,13 +69,13 @@ case WM_INPUTLANGCHANGE:
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
 | Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 **Referencia**
 

@@ -1,10 +1,10 @@
 ---
-title: Estructura de IP_NEXT_HOP_ADDRESS (RTM. h)
-description: La \_ estructura de \_ dirección de próximo salto IP \_ contiene la dirección del enrutador de próximo salto para una ruta IP.
+title: IP_NEXT_HOP_ADDRESS estructura (Rtm.h)
+description: La estructura IP \_ NEXT HOP ADDRESS contiene la dirección del enrutador del próximo salto para una ruta \_ \_ IP.
 ms.assetid: a97b3995-dfaa-4e53-be86-3ad46b8be691
 keywords:
-- IP_NEXT_HOP_ADDRESS de la estructura RAS
-- PIP_NEXT_HOP_ADDRESS de la estructura RAS
+- IP_NEXT_HOP_ADDRESS ras de estructura
+- PIP_NEXT_HOP_ADDRESS ras de estructura
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1818a49e7977dbb4dfa31ebac1dae7651adb8d45
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94f79b850c7d5f48e5f409e5380ad7345288187b8939b752b4f282b2274a99cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105651409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790969"
 ---
-# <a name="ip_next_hop_address-structure"></a>\_Estructura de dirección de próximo \_ salto IP \_
+# <a name="ip_next_hop_address-structure"></a>Estructura IP \_ NEXT \_ HOP \_ ADDRESS
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La estructura de **\_ dirección de próximo \_ salto \_ IP** contiene la dirección del enrutador de próximo salto para una ruta IP.
+La **estructura IP NEXT HOP \_ \_ \_ ADDRESS** contiene la dirección del enrutador del próximo salto para una ruta IP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,48 +47,48 @@ typedef struct _IP_NEXT_HOP_ADDRESS {
 **N \_ NetNumber**
 </dt> <dd>
 
-Especifica la dirección de red IP expresada como una dirección IP en orden de bytes de la máquina.
+Especifica la dirección de red IP expresada como una dirección IP en orden de bytes de máquina.
 
 </dd> <dt>
 
-**\_Máscara de máscara**
+**N \_ Máscaras de red**
 </dt> <dd>
 
-Especifica la máscara de red. Aplique esta máscara a la dirección IP para extraer la dirección de red. La máscara de red está en orden de bytes de la máquina.
+Especifica la máscara de red. Aplique esta máscara a la dirección IP para extraer la dirección de red. La máscara de red está en orden de bytes de máquina.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura de **\_ dirección de próximo \_ salto \_ IP** es una definición de tipo de la estructura de [**\_ red IP**](ip-network.md) . La definición de tipo está en RTM. h.
+La **estructura IP NEXT HOP \_ \_ \_ ADDRESS** es una definición de tipo de la [**estructura IP \_ NETWORK.**](ip-network.md) La definición de tipo está en Rtm.h.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
+[Estructuras de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**\_red IP**](ip-network.md)
+[**RED \_ IP**](ip-network.md)
 </dt> <dt>
 
-[**\_ruta IP de RTM \_**](rtm-ip-route.md)
+[**RTM \_ IP \_ ROUTE**](rtm-ip-route.md)
 </dt> </dl>
 
  

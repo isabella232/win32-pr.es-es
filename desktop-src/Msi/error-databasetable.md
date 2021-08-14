@@ -1,7 +1,7 @@
 ---
-description: La propiedad DatabaseTable de solo lectura del objeto error devuelve el nombre de la tabla en la base de datos que causó el error.
+description: La propiedad DatabaseTable de solo lectura del objeto Error devuelve el nombre de la tabla de la base de datos que produjo el error.
 ms.assetid: 38ff45ca-4bd6-43f3-88ad-db4077daeb77
-title: Propiedad error. DatabaseTable (Mergemod. h)
+title: Propiedad Error.DatabaseTable (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 8d7be883597d30059f6c949a800fe9803563c2b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9e52523b37c90de4c4592fdeb059e6269f4e05e240242e69e14f0be6d4d53a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118378176"
 ---
-# <a name="errordatabasetable-property"></a>Error. DatabaseTable (propiedad)
+# <a name="errordatabasetable-property"></a>Error.DatabaseTable, propiedad
 
-La propiedad **DatabaseTable** de solo lectura del objeto [**error**](error-object.md) devuelve el nombre de la tabla en la base de datos que causó el error.
+La propiedad **DatabaseTable** de solo lectura del [**objeto Error**](error-object.md) devuelve el nombre de la tabla de la base de datos que produjo el error.
 
 Esta propiedad es de solo lectura.
 
@@ -38,22 +38,22 @@ propVal = Error.DatabaseTable
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La colección está vacía si los valores no se aplican al tipo del error. Puede determinar el tipo de error mediante una llamada a la propiedad [**Type**](error-type.md) del objeto [**error**](error-object.md) .
+La colección está vacía si los valores no se aplican al tipo del error. Puede determinar el tipo de error llamando a [**la propiedad Type**](error-type.md) del objeto [**Error.**](error-object.md)
 
 ### <a name="c"></a>C++
 
-Consulte [**Get \_ DatabaseTable**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_databasetable) function.
+Vea get DatabaseTable function (Obtener [**\_ función DatabaseTable).**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_databasetable)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 1,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

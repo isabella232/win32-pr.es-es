@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CBEN_INSERTITEM (commctrl. h)
-description: Se envía cuando se inserta un nuevo elemento en el control. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: CBEN_INSERTITEM de notificación (Commctrl.h)
+description: Se envía cuando se ha insertado un nuevo elemento en el control . Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: caf60156-10d2-4cfb-91c4-def6ee99c471
 keywords:
-- CBEN_INSERTITEM controles de código de notificación de Windows
+- CBEN_INSERTITEM código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63ccd05ea75015479ef32415d920bbe639664ac2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a58c1f8b14f4983e2f7e7444a8110f0407220b0c5bc682cfc73f72bee078ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103804015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413671"
 ---
-# <a name="cben_insertitem-notification-code"></a>CBEN \_ código de notificación INSERTITEM
+# <a name="cben_insertitem-notification-code"></a>Código de \_ notificación INSERTITEM de CBEN
 
-Se envía cuando se inserta un nuevo elemento en el control. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Se envía cuando se ha insertado un nuevo elemento en el control . Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,17 +47,17 @@ Puntero a una estructura [**NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-com
 
 ## <a name="return-value"></a>Valor devuelto
 
-El procesamiento de la aplicación en este código de notificación debe devolver cero.
+La aplicación que procesa este código de notificación debe devolver cero.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

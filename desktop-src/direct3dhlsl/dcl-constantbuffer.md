@@ -1,6 +1,6 @@
 ---
-title: dcl_constantBuffer (SM4-ASM)
-description: DCL \_ constantBuffer (SM4-ASM)
+title: dcl_constantBuffer (sm4 - asm)
+description: dcl \_ constantBuffer (sm4 - asm)
 ms.assetid: 164fb2a4-8782-42f0-b4ba-1f87d9c7255d
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b2eeb9368af0121ee61fde5d106eb0f3b08e5acb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 437266c5a37f266a4f8847f09719380f436b6d9d38e8dee21b3258c79adb32b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104148999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117727269"
 ---
-# <a name="dcl_constantbuffer-sm4---asm"></a>DCL \_ constantBuffer (SM4-ASM)
+# <a name="dcl_constantbuffer-sm4---asm"></a>dcl \_ constantBuffer (sm4 - asm)
 
-Declara un búfer de constantes de sombreador.
+Declara un búfer constante de sombreador.
 
 
 
-| DCL \_ constantBuffer *cbN \[ tamaño \]*, *AccessPattern* |
+| dcl \_ constantBuffer *cbN \[ size \]*, *AccessPattern* |
 |----------------------------------------------------|
 
 
@@ -44,12 +44,12 @@ Declara un búfer de constantes de sombreador.
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="cbN_size_"></span><span id="cbn_size_"></span><span id="CBN_SIZE_"></span>CB<em>N [tamaño]</em><br/></td>
-<td>de Un búfer de constantes de sombreador, donde N es un entero que denota el número de registro de constantes y el tamaño es un entero que denota el número de elementos en el búfer.<br/></td>
+<td><span id="cbN_size_"></span><span id="cbn_size_"></span><span id="CBN_SIZE_"></span>cb<em>N[size]</em><br/></td>
+<td>[in] Un búfer constante de sombreador donde N es un entero que denota el número de registro de búfer constante y el tamaño es un entero que denota el número de elementos del búfer.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="AccessPattern"></span><span id="accesspattern"></span><span id="ACCESSPATTERN"></span><em>AccessPattern</em><br/></td>
-<td>de La forma en que el código del sombreador tendrá acceso al búfer, que es uno de los siguientes: <br/> 
+<td>[in] La forma en que el código del sombreador tendrá acceso al búfer, que es una de las siguientes: <br/> 
 <table>
 <thead>
 <tr class="header">
@@ -60,11 +60,11 @@ Declara un búfer de constantes de sombreador.
 <tbody>
 <tr class="odd">
 <td>immediateIndexed</td>
-<td>Indizar el búfer con un valor literal.</td>
+<td>Indexe el búfer con un valor literal.</td>
 </tr>
 <tr class="even">
 <td>dynamic_indexed</td>
-<td>Indexa el búfer con el resultado de una expresión evaluada.</td>
+<td>Indexe el búfer con el resultado de una expresión evaluada.</td>
 </tr>
 </tbody>
 </table>
@@ -90,11 +90,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar en la depuración de un sombreador en el ensamblado. no se puede crear un sombreador en lenguaje de ensamblado con el modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
-En este ejemplo se declara un búfer de constantes para Register cB0, que tiene 19 elementos. Se tiene acceso a estos elementos con un índice literal.
+En este ejemplo se declara un búfer constante para el registro cb0, que tiene 19 elementos. Se tiene acceso a estos elementos con un índice literal.
 
 
 ```
@@ -103,7 +103,7 @@ dcl_constantbuffer  cb0[19], immediateIndexed
 
 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -111,12 +111,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -126,7 +126,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

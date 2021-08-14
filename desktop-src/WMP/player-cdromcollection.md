@@ -1,9 +1,9 @@
 ---
-title: Player. cdromCollection
+title: Player.cdromCollection
 description: La propiedad cdromCollection recupera el objeto CdromCollection.
 ms.assetid: ca346033-eb0d-4568-b1a2-875b6cd71c6e
 keywords:
-- Media Player de Windows Player. cdromCollection
+- Player.cdromCollection Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,54 +14,54 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f62fd8088ba1bc9ce502c630e1ba64d868e11798
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd98fb94f840975c3cf2035a693f056a0bf291fdcf2d28081d96f8f4e1a407f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747660"
 ---
-# <a name="playercdromcollection"></a>Player. cdromCollection
+# <a name="playercdromcollection"></a>Player.cdromCollection
 
-La propiedad cdromCollection recupera el objeto **cdromCollection** .
+La propiedad cdromCollection recupera el **objeto CdromCollection.**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor* . **cdromCollection**
+*player* . **cdromCollection**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto **CdromCollection** de solo lectura.
+Esta propiedad es un objeto **CdromCollection de** solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto CdromCollection**](cdromcollection-object.md)
+[**CdromCollection (objeto)**](cdromcollection-object.md)
 </dt> <dt>
 
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

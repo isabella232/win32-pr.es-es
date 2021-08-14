@@ -1,23 +1,23 @@
 ---
-description: En los siguientes ejemplos de código se muestra la implementación de un controlador de eventos simple, el registro de la interfaz de eventos TAPI principal, la configuración del filtro de eventos y el registro de las notificaciones de llamada.
+description: En los ejemplos de código siguientes se muestra la implementación de un controlador de eventos simple, el registro de la interfaz de eventos TAPI principal, la configuración del filtro de eventos y el registro para las notificaciones de llamada.
 ms.assetid: e7662a26-d7b2-4bff-aa72-e38b58bc15df
-title: Registrar eventos
+title: Registro de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b0a554c2e1ea5c226aa4a3c432f3430a30a978e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f61e9c6229525443b81429d713a58b19bfbb97d52745677d18e0e1c96f21a787
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761182"
 ---
-# <a name="register-events"></a>Registrar eventos
+# <a name="register-events"></a>Registro de eventos
 
-En los siguientes ejemplos de código se muestra la implementación de un controlador de eventos simple, el registro de la interfaz de eventos TAPI principal, la configuración del filtro de eventos y el registro de las notificaciones de llamada.
+En los ejemplos de código siguientes se muestra la implementación de un controlador de eventos simple, el registro de la interfaz de eventos TAPI principal, la configuración del filtro de eventos y el registro para las notificaciones de llamada.
 
-El controlador de eventos mostrado es un ejemplo en lugar de un requisito. El objetivo principal es asegurarse de que el subproceso que recibe eventos realiza un procesamiento mínimo antes de pasar el trabajo a otro subproceso. Esto evita que el controlador de eventos se convierta en un problema de rendimiento en situaciones de alta carga de eventos.
+El controlador de eventos que se muestra es un ejemplo en lugar de un requisito. El objetivo principal es asegurarse de que el subproceso que recibe eventos realiza un procesamiento mínimo antes de pasar trabajo a otro subproceso. Esto evita que el controlador de eventos se convierta en un problema de rendimiento en situaciones de alta carga de eventos.
 
-Antes de usar este ejemplo de código, debe realizar las operaciones en [Initialize TAPI](initialize-tapi.md) y [seleccionar una dirección](select-an-address.md).
+Antes de usar este ejemplo de código, debe realizar las operaciones en [Inicializar TAPI](initialize-tapi.md) y [Seleccionar una dirección](select-an-address.md).
 
 > [!Note]  
 > Este ejemplo no tiene la comprobación de errores y las versiones adecuadas para el código de producción.
@@ -130,16 +130,16 @@ hr = gpTapi->RegisterCallNotifications(
 
 <dl> <dt>
 
-[**ITTAPIEventNotification:: Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)
+[**ITTAPIEventNotification::Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)
 </dt> <dt>
 
-[**\_evento TAPI**](/windows/desktop/api/Tapi3if/ne-tapi3if-tapi_event)
+[**EVENTO \_ TAPI**](/windows/desktop/api/Tapi3if/ne-tapi3if-tapi_event)
 </dt> <dt>
 
-[**ITTAPI::p UT \_ EventFilter**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-put_eventfilter)
+[**ITTAPI::put \_ EventFilter**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-put_eventfilter)
 </dt> <dt>
 
-[Constantes de TAPIMEDIATYPE \_](tapimediatype--constants.md)
+[Constantes TAPIMEDIATYPE \_](tapimediatype--constants.md)
 </dt> <dt>
 
 [**ITTAPI::RegisterCallNotifications**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-registercallnotifications)

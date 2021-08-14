@@ -1,9 +1,9 @@
 ---
-title: CheckAccessFullyMapped función)
-description: Determina si todos los valores de una operación de ejemplo, recopilación o carga han tenido acceso a mosaicos asignados en un recurso en mosaico.
+title: Función CheckAccessFullyMapped
+description: Determina si todos los valores de una operación sample, gather o load accedieron a iconos asignados en un recurso en mosaico.
 ms.assetid: 2CAB7770-143E-4E29-A57F-96C27021AC5F
 keywords:
-- CheckAccessFullyMapped de función HLSL
+- Función CheckAccessFullyMapped HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c7310e0ebac496fc8f5a56ba3843b7496b8ce7c7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8e7241fa5546edffb2b7c5ff36d2e43919e6d0b6fef9ff617c0fb63a674ffee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118516678"
 ---
-# <a name="checkaccessfullymapped-function"></a>CheckAccessFullyMapped función)
+# <a name="checkaccessfullymapped-function"></a>Función CheckAccessFullyMapped
 
-Determina si todos los valores de una operación de **ejemplo**, **recopilación** o **carga** han tenido acceso a mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features).
+Determina si todos los valores de una operación **Sample**, **Gather** o **Load** accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features)
 
 ## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 bool CheckAccessFullyMapped(
-  in uint_only status
+  in uint_only status
 );
 ```
 
@@ -36,12 +36,12 @@ bool CheckAccessFullyMapped(
 
 <dl> <dt>
 
-*Estado* \[ de de\]
+*status* \[ En\]
 </dt> <dd>
 
-Tipo: **\_ solo uint**
+Tipo: **solo \_ uint**
 
-Valor de estado que se devuelve de una operación de **ejemplo**, de **recopilación** o de **carga** . Dado que no puede tener acceso directamente a este valor de estado, debe pasarlo a **CheckAccessFullyMapped**.
+Valor de estado que se devuelve de una operación **Sample**, **Gather** o **Load.** Dado que no puede acceder directamente a este valor de estado, debe pasarlo a **CheckAccessFullyMapped**.
 
 </dd> </dl>
 
@@ -49,11 +49,11 @@ Valor de estado que se devuelve de una operación de **ejemplo**, de **recopilac
 
 Tipo: **bool**
 
-Devuelve un valor **booleano** que indica si todos los valores de una operación de **ejemplo**, **recopilación** o **carga** han tenido acceso a mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Devuelve **true** si todos los valores de la operación han tenido acceso a los mosaicos asignados; de lo contrario, devuelve **false** si se tomó algún valor de un mosaico sin asignar.
+Devuelve un **valor booleano** que indica si todos los valores de una operación **Sample**, **Gather** o **Load** accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Devuelve **TRUE** si todos los valores de la operación accedieron a iconos asignados; de lo contrario, **devuelve FALSE** si se tomaron valores de un icono no recortado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -61,31 +61,31 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de headerFieldsType
+title: headerFieldsType (tipo complejo)
 description: Define los elementos que especifican los campos de un encabezado de correo electrónico.
 ms.assetid: 1ad1b62d-5aca-4be4-b956-6f8c64761b2b
 keywords:
-- tipo complejo de headerFieldsType Programador de tareas
+- headerFieldsType de tipo complejo Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: edb783972217d0455eb2ee25fed31cf20e5b774b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c05b0e739a7aa75fb8e628de45cd929dd8c0b1e696ecef751c0fc8f08d926f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356367"
 ---
-# <a name="headerfieldstype-complex-type"></a>Tipo complejo de headerFieldsType
+# <a name="headerfieldstype-complex-type"></a>headerFieldsType (tipo complejo)
 
 Define los elementos que especifican los campos de un encabezado de correo electrónico.
 
@@ -50,10 +50,10 @@ Define los elementos que especifican los campos de un encabezado de correo elect
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

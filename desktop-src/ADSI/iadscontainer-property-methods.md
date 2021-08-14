@@ -1,10 +1,10 @@
 ---
-title: Métodos de propiedad IADsContainer (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsContainer obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información y una explicación general sobre los métodos de propiedad, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsContainer (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsContainer obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información y una explicación general sobre los métodos de propiedad, vea Métodos de propiedad de interfaz.
 ms.assetid: 74d348bf-7b7f-4971-ba03-f77940600674
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad de IADsContainer ADSI
+- Métodos de propiedad IADsContainer ADSI
 topic_type:
 - apiref
 api_name:
@@ -23,16 +23,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5196addda0d9ff89f8a4976f3197bbeeae07044
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 13515bcf90c926db839aad60d49599967ee0d24bedbe0deb4b7d1d21c3c016e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428090"
 ---
-# <a name="iadscontainer-property-methods"></a>Métodos de propiedad de IADsContainer
+# <a name="iadscontainer-property-methods"></a>Métodos de propiedad IADsContainer
 
-Los métodos de propiedad de la interfaz [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información y una explicación general sobre los métodos de propiedad, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información y una explicación general sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -41,14 +41,14 @@ Los métodos de propiedad de la interfaz [**IADsContainer**](/windows/desktop/ap
 **Recuento**
 </dt> <dd> <dl>
 
-Recupera el número de elementos del contenedor. Cuando se establece **Filter** , **Count** solo devuelve el número de elementos filtrados.
+Recupera el número de elementos del contenedor. Cuando **se** establece Filtro, **Recuento** devuelve solo el número de elementos filtrados.
 
 <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -66,14 +66,14 @@ HRESULT get_Count(
 **Filter**
 </dt> <dd> <dl>
 
-Recupera o establece el filtro que se usa para seleccionar las clases de objeto en una enumeración determinada. Se trata de una matriz de tipo Variant, donde cada elemento es el nombre de una clase de esquema. Si **Filter** no se establece o se establece en Empty, el enumerador recupera todos los objetos de todas las clases.
+Recupera o establece el filtro utilizado para seleccionar clases de objeto en una enumeración determinada. Se trata de una matriz variante, cuyo elemento es el nombre de una clase de esquema. Si **Filter** no está establecido o establecido en vacío, el enumerador recupera todos los objetos de todas las clases.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -94,14 +94,14 @@ HRESULT put_Filter(
 **Sugerencias**
 </dt> <dd> <dl>
 
-Matriz de variantes de cadenas **BSTR** . Cada elemento identifica el nombre de una propiedad que se encuentra en la definición del esquema. El parámetro *vHints* permite al cliente indicar qué atributos se van a cargar para cada objeto enumerado. Estos datos se pueden usar para optimizar el acceso a la red. Sin embargo, la implementación exacta es específica del proveedor y el proveedor de WinNT no la usa actualmente.
+Matriz variante de **cadenas BSTR.** Cada elemento identifica el nombre de una propiedad que se encuentra en la definición de esquema. El *parámetro vHints* permite al cliente indicar qué atributos se cargarán para cada objeto enumerado. Estos datos se pueden usar para optimizar el acceso a la red. Sin embargo, la implementación exacta es específica del proveedor y actualmente no la usa el proveedor WinNT.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -121,13 +121,13 @@ HRESULT put_Hints(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los procesos de enumeración en [**IADsContainer:: get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscontainer-get__newenum) y **IADsContainer: \_ : get** se realizan en los objetos contenidos en la memoria caché. Cuando un contenedor contiene un gran número de objetos, el rendimiento puede verse afectado. Para mejorar el rendimiento, desactive la memoria caché, configure un tamaño de página adecuado y use la interfaz [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) . Por esta razón, la propiedad **Get \_ Count** no se admite en el proveedor LDAP de Microsoft.
+Los procesos de enumeración [**en IADsContainer::get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscontainer-get__newenum) **e IADsContainer::get \_ Count** se realizan en los objetos contenidos en la memoria caché. Cuando un contenedor contiene un gran número de objetos, el rendimiento puede verse afectado. Para mejorar el rendimiento, desactive la caché, configure un tamaño de página adecuado y use la [**interfaz IDirectorySearch.**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) Por este motivo, la **propiedad \_ get Count** no se admite en el proveedor LDAP de Microsoft.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código Visual Basic se muestra cómo se pueden utilizar los métodos de propiedad de [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer) .
+En el Visual Basic ejemplo de código siguiente se muestra cómo se pueden usar los métodos de propiedad de [**IADsContainer.**](/windows/desktop/api/Iads/nn-iads-iadscontainer)
 
 
 ```VB
@@ -157,7 +157,7 @@ Cleanup:
 
 
 
-En el ejemplo de código de C++ siguiente se muestra cómo se pueden utilizar los métodos de propiedad de [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer) . Por motivos de brevedad, se omite la comprobación de errores.
+En el siguiente ejemplo de código de C++ se muestra cómo se pueden usar los métodos de propiedad de [**IADsContainer.**](/windows/desktop/api/Iads/nn-iads-iadscontainer) Por brevedad, se omite la comprobación de errores.
 
 
 ```C++
@@ -230,17 +230,17 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsContainer se define como 001677D0-FD16-11CE-ABC4-02608C9E7553<br/>        |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Convierte los caracteres en minúsculas de un búfer en caracteres en mayúsculas.
 ms.assetid: 63293fda-6f55-419a-b5b4-7a3ada31580c
-title: CharUpperBuffWrapW función)
+title: Función CharUpperBuffWrapW
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Shlwapi.dll
-ms.openlocfilehash: dacc5e7609ca7f91bf7c66651d7ba9bdd11ab688
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 288a119586e9f2e58172daaba33a8b9f27c791aa0005b5349f47cb0b2670a631
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861560"
 ---
-# <a name="charupperbuffwrapw-function"></a>CharUpperBuffWrapW función)
+# <a name="charupperbuffwrapw-function"></a>Función CharUpperBuffWrapW
 
-\[**CharUpperBuffWrapW** está disponible para su uso en Windows XP. Puede que no esté disponible en versiones posteriores. Debe usar [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) en su lugar.\]
+\[**CharUpperBuffWrapW** está disponible para su uso en Windows XP. Es posible que no esté disponible en versiones posteriores. Debe usar [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) en su lugar.\]
 
 Convierte los caracteres en minúsculas de un búfer en caracteres en mayúsculas. La función convierte los caracteres en su lugar.
 
 > [!Note]  
-> **CharUpperBuffWrapW** es un contenedor para la función **CharUpperBuffW** . Vea la página [**CharUpperBuff**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) para obtener más notas de uso.
+> **CharUpperBuffWrapW es** un contenedor para la **función CharUpperBuffW.** Consulte la [**página CharUpperBuff para**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) obtener más notas de uso.
 
  
 
@@ -47,21 +47,21 @@ DWORD CharUpperBuffWrapW(
 
 <dl> <dt>
 
-*PCH* \[ de\]
+*pch* \[ En\]
 </dt> <dd>
 
-Tipo: **LPWStr**
+Tipo: **LPWSTR**
 
-Puntero a un búfer que contiene uno o más caracteres Unicode que se van a procesar.
+Puntero a un búfer que contiene uno o varios caracteres Unicode que se procesarán.
 
 </dd> <dt>
 
-*cchLength* \[ de\]
+*cchLength* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Especifica el tamaño, en caracteres, del búfer al que apunta *PCH*.
+Especifica el tamaño, en caracteres, del búfer al que apunta *pch*.
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Tipo: **DWORD**
 
 Número de caracteres procesados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El método preferido es usar [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) junto con la capa de Microsoft para Unicode (MSLU).
 
@@ -81,15 +81,15 @@ Se debe llamar a **CharUpperBuffWrapW** directamente desde Shlwapi.dll, mediante
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shlwapi.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Shlwapi.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

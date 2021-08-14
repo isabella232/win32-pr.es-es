@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCube:: TextureCube GatherCmpRed'
-description: 'Muestras y comparan una textura y devuelven el componente rojo. | Métodos TextureCube:: TextureCube GatherCmpRed'
+title: Métodos TextureCube::TextureCube GatherCmpRed
+description: Muestrea y compara una textura y devuelve el componente rojo. | Métodos TextureCube::TextureCube GatherCmpRed
 ms.assetid: 614F9DD0-2A49-4F20-8967-3DD63D5B5F32
 keywords:
-- GatherCmpRed métodos HLSL
+- Métodos HLSL de GatherCmpRed
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 1c09c5131cf81a6739565f2beb4eec222649aadb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d19dade01510232c0c18603c0c5a8306c03d9e2ee1bf36591ed3849b5dcfeb0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722365"
 ---
-# <a name="texturecubegathercmpred-methods"></a>TextureCube:: GatherCmpRed (métodos)
+# <a name="texturecubegathercmpred-methods"></a>Métodos TextureCube::GatherCmpRed
 
-Muestras y comparan una textura y devuelven el componente rojo.
+Muestrea y compara una textura y devuelve el componente rojo.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,11 +29,11 @@ Muestras y comparan una textura y devuelven el componente rojo.
 
 | Método                                                                             | Descripción                                                                                                    |
 |:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpRed (S, Float, Float, uint)**](tcube-gathercmpred-s-float-float-uint-.md) | Muestras y comparan una textura y devuelven el componente rojo junto con el estado de la operación.<br/> |
+| [**GatherCmpRed(S,float,float,uint)**](tcube-gathercmpred-s-float-float-uint-.md) | Muestrea y compara una textura y devuelve el componente rojo junto con el estado de la operación.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

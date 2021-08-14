@@ -1,10 +1,10 @@
 ---
-title: Enumeración MPTHREAT_STATUS (MpClient. h)
+title: MPTHREAT_STATUS enumeración (MpClient.h)
 description: Posible estado de amenaza.
 ms.assetid: 64B57C8B-231B-4A2C-BF2E-45DB62B8350E
 keywords:
-- MPTHREAT_STATUS enumeración características de entorno heredado de Windows
-- PMPTHREAT_STATUS el puntero de enumeración características de entorno heredado de Windows
+- MPTHREAT_STATUS enumeración heredada de Windows environment
+- PMPTHREAT_STATUS puntero de enumeración heredados Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 978a152d6f14d7b3577ece0a2e8bd5a8ba741a3b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92d800cbfb0adbeb994586a69e38ac4a1ad2a8957091508b147bd582fef5233e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476267"
 ---
-# <a name="mpthreat_status-enumeration"></a>\_Enumeración de estado de MPTHREAT
+# <a name="mpthreat_status-enumeration"></a>Enumeración MPTHREAT \_ STATUS
 
 Posible estado de amenaza.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -53,54 +53,54 @@ typedef enum tagMPTHREAT_STATUS {
 
 <dl> <dt>
 
-<span id="MP_THREAT_STATUS_UNKNOWN"></span><span id="mp_threat_status_unknown"></span>**Estado de amenaza de MP \_ \_ \_ desconocido**
+<span id="MP_THREAT_STATUS_UNKNOWN"></span><span id="mp_threat_status_unknown"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ DESCONOCIDO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_DETECTED"></span><span id="mp_threat_status_detected"></span>**Estado de amenaza de MP \_ \_ \_ detectado**
+<span id="MP_THREAT_STATUS_DETECTED"></span><span id="mp_threat_status_detected"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ DETECTADO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_CLEANED"></span><span id="mp_threat_status_cleaned"></span>**Estado de la amenaza de MP \_ \_ \_ limpiado**
+<span id="MP_THREAT_STATUS_CLEANED"></span><span id="mp_threat_status_cleaned"></span>**ESTADO \_ DE AMENAZA DE MP \_ \_ LIMPIO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_QUARANTINED"></span><span id="mp_threat_status_quarantined"></span>**Estado de la amenaza de MP \_ \_ \_ en cuarentena**
+<span id="MP_THREAT_STATUS_QUARANTINED"></span><span id="mp_threat_status_quarantined"></span>**ESTADO DE \_ AMENAZA DE MP EN \_ \_ CUARENTENA**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_REMOVED"></span><span id="mp_threat_status_removed"></span>**Estado de la amenaza de MP \_ \_ \_ quitada**
+<span id="MP_THREAT_STATUS_REMOVED"></span><span id="mp_threat_status_removed"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ QUITADO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_ALLOWED"></span><span id="mp_threat_status_allowed"></span>**Estado de amenaza de MP \_ \_ \_ permitido**
+<span id="MP_THREAT_STATUS_ALLOWED"></span><span id="mp_threat_status_allowed"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ PERMITIDO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_BLOCKED"></span><span id="mp_threat_status_blocked"></span>**Estado de amenaza de MP \_ \_ \_ bloqueado**
+<span id="MP_THREAT_STATUS_BLOCKED"></span><span id="mp_threat_status_blocked"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ BLOQUEADO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_CLEAN_FAILED"></span><span id="mp_threat_status_clean_failed"></span>**\_error de \_ limpieza de estado de amenaza de MP \_ \_**
+<span id="MP_THREAT_STATUS_CLEAN_FAILED"></span><span id="mp_threat_status_clean_failed"></span>**ERROR DE \_ LIMPIEZA DEL ESTADO DE AMENAZA DEL \_ \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_QUARANTINE_FAILED"></span><span id="mp_threat_status_quarantine_failed"></span>**\_error de \_ cuarentena de estado de amenaza de MP \_ \_**
+<span id="MP_THREAT_STATUS_QUARANTINE_FAILED"></span><span id="mp_threat_status_quarantine_failed"></span>**ERROR DE \_ CUARENTENA DE ESTADO DE AMENAZA DE \_ \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_REMOVE_FAILED"></span><span id="mp_threat_status_remove_failed"></span>**\_ \_ \_ error al quitar el estado de la amenaza MP \_**
+<span id="MP_THREAT_STATUS_REMOVE_FAILED"></span><span id="mp_threat_status_remove_failed"></span>**ERROR AL \_ QUITAR EL ESTADO DE AMENAZA DEL \_ \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_ALLOW_FAILED"></span><span id="mp_threat_status_allow_failed"></span>**\_error de \_ permiso de estado \_ \_ de la amenaza MP**
+<span id="MP_THREAT_STATUS_ALLOW_FAILED"></span><span id="mp_threat_status_allow_failed"></span>**ERROR AL \_ PERMITIR EL ESTADO DE AMENAZA DEL \_ \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_ABANDONED"></span><span id="mp_threat_status_abandoned"></span>**Estado de la amenaza del módulo de administración \_ \_ \_ abandonado**
+<span id="MP_THREAT_STATUS_ABANDONED"></span><span id="mp_threat_status_abandoned"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ ABANDONADO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_BLOCK_FAILED"></span><span id="mp_threat_status_block_failed"></span>**error en el bloque de estado de \_ amenaza de MP \_ \_ \_**
+<span id="MP_THREAT_STATUS_BLOCK_FAILED"></span><span id="mp_threat_status_block_failed"></span>**ERROR EN \_ EL BLOQUE DE ESTADO DE AMENAZA DE \_ \_ \_ MP**
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

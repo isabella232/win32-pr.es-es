@@ -1,7 +1,7 @@
 ---
-description: La función SetNPPAddressFilterInBlob establece el filtro de dirección determinado en el BLOB.
+description: La función SetNPPAddressFilterInBlob establece el filtro de direcciones dado en blob.
 ms.assetid: bdd1482d-8be0-4999-9a7a-16b0400412fb
-title: Función SetNPPAddressFilterInBlob (Netmon. h)
+title: Función SetNPPAddressFilterInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 39e8a85599fa63b1320d707f648731a195dbb48e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da2119b30f690acf5deac46d43d9382e75c6caf1c2e9f41784a4b34f7f80e257
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363821"
 ---
-# <a name="setnppaddressfilterinblob-function"></a>SetNPPAddressFilterInBlob función)
+# <a name="setnppaddressfilterinblob-function"></a>Función SetNPPAddressFilterInBlob
 
-La función **SetNPPAddressFilterInBlob** establece el filtro de dirección determinado en el BLOB.
+La **función SetNPPAddressFilterInBlob** establece el filtro de direcciones dado en blob.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,41 +40,41 @@ DWORD SetNPPAddressFilterInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB.
 
 </dd> <dt>
 
-*pAddressTable* \[ de\]
+*pAddressTable* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**ADDRESSTABLE**](addresstable.md) que define la tabla de direcciones asignada por el usuario.
+Puntero a una [**estructura ADDRESSTABLE**](addresstable.md) que define la tabla de direcciones asignadas por el usuario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

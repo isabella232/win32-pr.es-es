@@ -1,15 +1,15 @@
 ---
 description: 'Evento InkOverlay.NewInAirPackets: se produce cuando se ve un paquete en el aire.'
 ms.assetid: 10dc1909-bfbc-4ea0-b77a-e33149205107
-title: Evento InkOverlay.NewInAirPackets (Msiguaut.h)
+title: Evento InkOverlay.NewInAirPackets (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f39e568941b1af0727ad9c8464913325409b4604
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7198fe2d105421654bfba037049e46a592d603bd94409350e97b794882ab4de2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219173"
 ---
 # <a name="inkoverlaynewinairpackets-event"></a>Evento InkOverlay.NewInAirPackets
 
@@ -42,7 +42,7 @@ Objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) qu
 *PacketCount* \[ En\]
 </dt> <dd>
 
-Número de paquetes en aire recibidos.
+Número de paquetes en el aire recibidos.
 
 </dd> <dt>
 
@@ -61,13 +61,13 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Se crea un paquete en el aire cuando un usuario mueve un lápiz cerca de la tableta y el cursor está dentro de la ventana del objeto del recopilador de entrada de lápiz o el usuario mueve un mouse dentro de la ventana asociada del objeto del recopilador de lápiz. [**Los eventos NewInAirPackets**](inkcollector-newinairpackets.md) se generan rápidamente y el controlador de eventos debe ser rápido o el rendimiento sufra.
+Se crea un paquete en el aire cuando un usuario mueve un lápiz cerca de la tableta y el cursor está dentro de la ventana del objeto del recopilador de entrada de lápiz o el usuario mueve un mouse dentro de la ventana asociada del objeto del recopilador de entrada de lápiz. [**Los eventos NewInAirPackets**](inkcollector-newinairpackets.md) se generan rápidamente y el controlador de eventos debe ser rápido o el rendimiento se puede ver afectado.
 
-Este método de evento se define en las interfaces de solo distribución \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ DE \_ DISPID ICENewInAirPackets.
+Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ DE DISPID \_ ICENewInAirPackets.
 
-El [**evento NewInAirPackets**](inkcollector-newinairpackets.md) se desencadena incluso cuando está en modo de selección o borrado, no solo al insertar entrada de lápiz. Esto requiere que supervise el modo de edición (del que es responsable de la configuración) y tenga en cuenta el modo antes de interpretar el evento. La ventaja de este requisito es una mayor libertad para innovar en la plataforma a través de un mayor conocimiento de los eventos de la plataforma.
+El [**evento NewInAirPackets**](inkcollector-newinairpackets.md) se desencadena incluso cuando está en modo de selección o borrado, no solo al insertar entrada manuscrita. Esto requiere que supervise el modo de edición (del que es responsable de la configuración) y tenga en cuenta el modo antes de interpretar el evento. La ventaja de este requisito es una mayor libertad para innovar en la plataforma a través de un mayor conocimiento de los eventos de la plataforma.
 
-Para establecer qué propiedades están contenidas en esta matriz, use la [**propiedad DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) del objeto de recopilador de lápiz. La matriz que devuelve *el parámetro PacketData* contiene los datos de esas propiedades.
+Para establecer qué propiedades están contenidas en esta matriz, use la [**propiedad DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) del objeto del recopilador de lápiz. La matriz que devuelve *el parámetro PacketData* contiene los datos de esas propiedades.
 
 > [!Note]  
 > Aunque puede modificar los datos del paquete, estas modificaciones no se conservan ni se usan.
@@ -80,9 +80,9 @@ Para establecer qué propiedades están contenidas en esta matriz, use la [**pro
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

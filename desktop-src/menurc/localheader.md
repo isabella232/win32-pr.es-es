@@ -1,9 +1,9 @@
 ---
-title: Estructura LOCALHEADER
-description: Contiene las coordenadas x e y de una zona activa asociada al cursor identificado por una estructura RESDIR. La definición de la estructura que se proporciona aquí solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+title: ESTRUCTURA LOCALHEADER
+description: Contiene las coordenadas x e y de una zona activa asociada al cursor identificado por una estructura RESDIR. La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
 ms.assetid: 8cf74040-8b8f-447e-a881-1bcf05b151e2
 keywords:
-- Menús de la estructura LOCALHEADER y otros recursos
+- Menús de estructura LOCALHEADER y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7aa2ee51e1a9e456398a42d8190781b5dbec8d14
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 52ec46b802b847b73c99cc81939531d8f9ec1a6a2e0addb4c928d5610ac5b80c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870323"
 ---
-# <a name="localheader-structure"></a>Estructura LOCALHEADER
+# <a name="localheader-structure"></a>ESTRUCTURA LOCALHEADER
 
-Contiene las coordenadas x e y de una zona activa asociada al cursor identificado por una estructura [**RESDIR**](resdir.md) . La definición de la estructura que se proporciona aquí solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+Contiene las coordenadas x e y de una zona activa asociada al cursor identificado por una [**estructura RESDIR.**](resdir.md) La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,41 +43,41 @@ typedef struct {
 **xHotSpot**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Coordenada x de la zona activa del cursor, en píxeles.
+Coordenada x de la zona de acceso directo del cursor, en píxeles.
 
 </dd> <dt>
 
 **yHotSpot**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Coordenada y de la zona activa del cursor, en píxeles.
+Coordenada y de la zona de acceso directo del cursor, en píxeles.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura **LOCALHEADER** es la primera de los datos que se escriben en el recurso de [ \_ cursor RT](/windows/desktop/menurc/resource-types) si una estructura [**RESDIR**](resdir.md) contiene información sobre un cursor.
+La **estructura LOCALHEADER** son los primeros datos escritos en el recurso [RT \_ CURSOR](/windows/desktop/menurc/resource-types) si una [**estructura RESDIR**](resdir.md) contiene información sobre un cursor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -90,7 +90,7 @@ La estructura **LOCALHEADER** es la primera de los datos que se escriben en el r
 [**RESDIR**](resdir.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Recursos](resources.md)

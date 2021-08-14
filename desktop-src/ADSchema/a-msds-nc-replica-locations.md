@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-NC-Replica-locations
-description: Una lista de servidores que son el conjunto de réplicas para el contexto de nomenclatura que no es de dominio correspondiente.
+title: Atributo ms-DS-NC-Replica-Locations
+description: Lista de servidores que son el conjunto de réplicas para el contexto de nomenclatura que no es de dominio correspondiente.
 ms.assetid: b0379bb6-feee-432a-b484-1a6c8100d027
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-NC-Replica-locations
-- atributo msDS-NC-réplica-locations esquema de AD
+- Esquema de AD del atributo ms-DS-NC-Replica-Locations
+- Esquema de AD del atributo msDS-NC-Replica-Locations
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4adc3d3ca3553c8e57cdc114eb045206c1501060
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b84a999920e23f23ffccd5283d25f79d55f94a14748d073359c6fd8b75bfc71f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684549"
 ---
-# <a name="ms-ds-nc-replica-locations-attribute"></a>atributo MS-DS-NC-Replica-locations
+# <a name="ms-ds-nc-replica-locations-attribute"></a>Atributo ms-DS-NC-Replica-Locations
 
-Una lista de servidores que son el conjunto de réplicas para el contexto de nomenclatura que no es de dominio correspondiente.
+Lista de servidores que son el conjunto de réplicas para el contexto de nomenclatura que no es de dominio correspondiente.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-NC-réplica-ubicaciones              |
-| Nombre para mostrar de LDAP | msDS-NC-réplica-ubicaciones               |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-NC-Replica-Locations              |
+| Ldap-Display-Name | msDS-NC-Replica-Locations               |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1661                 |
-| System-ID-GUID    | 97de9615-b537-46bc-ac0f-10720f3909f3    |
+| System-Id-Guid    | 97de9615-b537-46bc-ac0f-10720f3909f3    |
 | Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -43,7 +43,7 @@ Una lista de servidores que son el conjunto de réplicas para el contexto de nom
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -55,13 +55,13 @@ Una lista de servidores que son el conjunto de réplicas para el contexto de nom
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 1044                                       |
+| Id. de vínculo                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -70,19 +70,19 @@ Una lista de servidores que son el conjunto de réplicas para el contexto de nom
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 1044                                       |
+| Id. de vínculo                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -97,13 +97,13 @@ Una lista de servidores que son el conjunto de réplicas para el contexto de nom
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 1044                                       |
+| Id. de vínculo                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -118,13 +118,13 @@ Una lista de servidores que son el conjunto de réplicas para el contexto de nom
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 1044                                       |
+| Id. de vínculo                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -139,13 +139,13 @@ Una lista de servidores que son el conjunto de réplicas para el contexto de nom
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 1044                                       |
+| Id. de vínculo                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -160,13 +160,13 @@ Una lista de servidores que son el conjunto de réplicas para el contexto de nom
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | 1044                                       |
+| Id. de vínculo                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
+| Es de un solo valor       | False                                      |
 | Está indexado             | False                                      |
 | En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |

@@ -1,11 +1,11 @@
 ---
-title: ISearchResult ThumbnailState, método
-description: Reservado. | ISearchResult ThumbnailState, método
+title: Método ISearchResult ThumbnailState
+description: Reservado. | Método ISearchResult ThumbnailState
 ms.assetid: b91727a6-a193-4767-a8ff-05ac64f1f27f
 keywords:
-- Método ThumbnailState características del entorno heredado de Windows
-- Método ThumbnailState características de entorno heredado de Windows, interfaz ISearchResult
-- Interfaz ISearchResult características del entorno heredado de Windows, método ThumbnailState
+- Características heredadas del entorno de Windows ThumbnailState
+- Método ThumbnailState Legacy Windows Environment Features , interfaz ISearchResult
+- ISearchResult interface Legacy Windows Environment Features , ThumbnailState method
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 73d9220753081a6016f60eaad35ea6e116aed958
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6164445de7cd88f37877154e0f0c03845dfe3904e5af117ecd521c82907cbf4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118481089"
 ---
-# <a name="isearchresultthumbnailstate-method"></a>ISearchResult:: ThumbnailState (método)
+# <a name="isearchresultthumbnailstate-method"></a>ISearchResult::ThumbnailState (método)
 
 Este método no se implementa.
 

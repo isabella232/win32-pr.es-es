@@ -1,6 +1,6 @@
 ---
-title: Referencia del administrador de compresión de audio
-description: Referencia del administrador de compresión de audio
+title: Referencia del Administrador de compresión de audio
+description: Referencia del Administrador de compresión de audio
 ms.assetid: a4e234c7-4dd3-4269-90a5-5de2c8837c0f
 keywords:
 - Windows multimedia, referencia de ACM
@@ -8,27 +8,27 @@ keywords:
 - audio multimedia, referencia de ACM
 - audio, referencia de ACM)
 - Administrador de compresión de audio (ACM), referencia
-- ACM (Administrador de compresión de audio), referencia
+- ACM (administrador de compresión de audio), referencia
 - Referencia de ACM, acerca de
 - referencia de ACM, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d365b0a69ecd94a07811b24762aa4bffdc8c9f1
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 29729fa19e67fb4695d8e6eca986488735d9b4529d9479615665a9ba2b5f3360
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104533106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375802"
 ---
-# <a name="audio-compression-manager-reference"></a>Referencia del administrador de compresión de audio
+# <a name="audio-compression-manager-reference"></a>Referencia del Administrador de compresión de audio
 
-En esta sección se describen las funciones, las estructuras y los mensajes asociados a ACM. Estos elementos se agrupan de la siguiente manera.
+En esta sección se describen las funciones, las estructuras y los mensajes asociados al ACM. Estos elementos se agrupan como se muestra a continuación.
 
 ## <a name="drivers"></a>Controladores
 
 -   [**acmDriverAdd**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 -   [**acmDriverClose**](/windows/desktop/api/Msacm/nf-msacm-acmdriverclose)
--   [**ACMDRIVERDETAILS**](/windows/win32/api/msacm/ns-msacm-acmdriverdetails)
+-   [**ACMDRIVETAILS**](/windows/win32/api/msacm/ns-msacm-acmdriverdetails)
 -   [**acmDriverEnum**](/windows/desktop/api/Msacm/nf-msacm-acmdriverenum)
 -   [**acmDriverEnumCallback**](/windows/win32/api/msacm/nc-msacm-acmdriverenumcb)
 -   [**acmDriverID**](/windows/desktop/api/Msacm/nf-msacm-acmdriverid)
@@ -64,7 +64,7 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 ## <a name="messages"></a>error de Hadoop
 
 -   [**MM \_ ACM \_ FILTERCHOOSE**](mm-acm-filterchoose.md)
--   [**MM \_ ACM \_ FORMATCHOOSE**](mm-acm-formatchoose.md)
+-   [**FORMATO \_ MM \_ ACMCHOOSE**](mm-acm-formatchoose.md)
 
 ## <a name="streams"></a>Secuencias
 
@@ -91,6 +91,6 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 [Administrador de compresión de audio](audio-compression-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

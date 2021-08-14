@@ -1,45 +1,45 @@
 ---
-title: Para editar los metadatos con el escritor
-description: Para editar los metadatos con el escritor
+title: Para editar metadatos con el escritor
+description: Para editar metadatos con el escritor
 ms.assetid: 86badfe3-64bc-4285-a231-f6c0ebf4f262
 keywords:
-- SDK de Windows Media Format, edición de metadatos con el escritor
-- SDK de Windows Media Format, edición de metadatos
-- Advanced Systems Format (ASF), edición de metadatos con el sistema de escritura
-- ASF (formato de sistemas avanzados), edición de metadatos con el sistema de escritura
-- Advanced Systems Format (ASF), edición de metadatos
+- Windows SDK de formato multimedia, edición de metadatos con el escritor
+- Windows SDK de formato multimedia, edición de metadatos
+- Formato de sistemas avanzados (ASF), edición de metadatos con el escritor
+- ASF (formato de sistemas avanzados), edición de metadatos con el escritor
+- Formato de sistemas avanzados (ASF), edición de metadatos
 - ASF (formato de sistemas avanzados), edición de metadatos
-- metadatos, editar con el escritor
+- metadatos, edición con el escritor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f2823b266b51da366683ac0b5cf65e10debf1ad
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 3d09db09a2cd7dbc50130243e322085ab2113e76f71d8b6760bd602d16f29d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104420455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118197084"
 ---
-# <a name="to-edit-metadata-with-the-writer"></a>Para editar los metadatos con el escritor
+# <a name="to-edit-metadata-with-the-writer"></a>Para editar metadatos con el escritor
 
-Puede tener acceso a, directamente desde el escritor, los metadatos que entrarán en el encabezado del archivo. Llame al método **QueryInterface** de cualquier interfaz del objeto Writer para obtener un puntero a la interfaz [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) o [**IWMHeaderInfo2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2) . Después de tener un puntero a la interfaz adecuada, puede manipular los metadatos tal como lo haría si hubiera cargado el archivo en el objeto del editor de metadatos. Para obtener más información sobre la edición de metadatos, vea [trabajar con metadatos](working-with-metadata.md).
+Puede acceder, directamente desde el sistema de escritura, a los metadatos que irán al encabezado del archivo. Llame al **método QueryInterface** de cualquier interfaz del objeto writer para obtener un puntero a la [**interfaz IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) o [**IWMHeaderInfo2.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2) Después de tener un puntero a la interfaz adecuada, puede manipular los metadatos como lo haría si hubiera cargado el archivo en el objeto del editor de metadatos. Para obtener más información sobre cómo editar metadatos, vea [Trabajar con metadatos.](working-with-metadata.md)
 
-Debe realizar todos los cambios en los metadatos antes de llamar a [**IWMWriter:: BeginWriting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting).
+Debe realizar todos los cambios en los metadatos antes de llamar a [**IWMWriter::BeginWriting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting).
 
 > [!Note]  
-> Si establece los metadatos de un archivo, escribe el archivo y, a continuación, prepara para escribir un archivo nuevo sin liberar el escritor, algunos metadatos que se establecieron para el primer archivo permanecerán establecidos y se incluirán con los archivos siguientes. Al escribir varios archivos con la misma instancia del objeto escritor, tiene dos opciones: comprobar todos los metadatos antes de escribir cada archivo o solo escribir en los metadatos del escritor que se aplican a todos los archivos que está escribiendo.
+> Si establece metadatos para un archivo, escribe el archivo y, a continuación, se prepara para escribir un nuevo archivo sin liberar el sistema de escritura, algunos metadatos que se han establecido para el primer archivo permanecerán establecidos y se incluirán con los archivos posteriores. Al escribir varios archivos con la misma instancia del objeto de escritor, tiene dos opciones: comprobar todos los metadatos antes de escribir cada archivo o escribir solo en los metadatos del escritor que se aplican a todos los archivos que está escribiendo.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Escribir archivos ASF**](writing-asf-files.md)
+[**Escritura de archivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

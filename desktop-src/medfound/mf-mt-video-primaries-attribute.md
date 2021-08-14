@@ -1,64 +1,64 @@
 ---
-description: Especifica los elementos primarios de color para un tipo de medio de vídeo.
+description: Especifica los valores de color principal para un tipo de medio de vídeo.
 ms.assetid: 56f31c1a-b610-4da0-9df4-76e15add672c
-title: MF_MT_VIDEO_PRIMARIES atributo (mfapi. h)
+title: MF_MT_VIDEO_PRIMARIES atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6cdf26a3f49c7e2bb3aa0f48c52c9b283edd8cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44b4e1c99dc9a4f288ebab36d413f7eed7c74881e7c10d3c7e9a8a4fe3f0bcf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876715"
 ---
-# <a name="mf_mt_video_primaries-attribute"></a>\_ \_ Atributo primarios de vídeo MF MT \_
+# <a name="mf_mt_video_primaries-attribute"></a>Atributo \_ MF MT VIDEO \_ \_ PRIMARIES
 
-Especifica los elementos primarios de color para un tipo de medio de vídeo.
+Especifica los valores de color principal para un tipo de medio de vídeo.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de este atributo es un miembro de la enumeración [**MFVideoPrimaries**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideoprimaries) .
+El valor de este atributo es un miembro de la [**enumeración MFVideoPrimaries.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideoprimaries)
 
-La enumeración [**MFVideoPrimaries**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideoprimaries) identifica los primarios de color asociados a determinados estándares de vídeo comunes. Si el tipo de medio usa elementos primarios de color que no se identifican en la enumeración **MFVideoPrimaries** , establezca el atributo de [**\_ \_ \_ \_ primarios de vídeo personalizado MF MT**](mf-mt-custom-video-primaries-attribute.md) en lugar de este atributo.
+La [**enumeración MFVideoPrimaries**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideoprimaries) identifica las primarias de color asociadas a determinados estándares de vídeo comunes. Si el tipo de medio usa elementos de color principal que no se identifican en la enumeración **MFVideoPrimaries,** establezca el atributo [**MF MT CUSTOM VIDEO \_ \_ \_ \_ PRIMARIES**](mf-mt-custom-video-primaries-attribute.md) en lugar de este atributo.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> <dt>
 
-[Información de color ampliada](extended-color-information.md)
+[Información de color extendida](extended-color-information.md)
 </dt> </dl>
 
  

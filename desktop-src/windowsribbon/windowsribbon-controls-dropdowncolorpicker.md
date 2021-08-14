@@ -1,19 +1,19 @@
 ---
 title: Drop-Down Selector de colores
-description: El marco de la cinta de opciones de Windows proporciona un control Drop-Down Selector de colores que expone una variedad de configuraciones de color a través de un botón de división y un selector de colores desplegable personalizable.
+description: El marco Windows cinta de opciones proporciona un control Drop-Down Selector de colores especializado que expone una variedad de configuraciones de color a través de un botón de división y un selector de colores desplegable personalizable.
 ms.assetid: 65e1fc23-7ac0-4bb3-9359-28ce88acf356
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 366cc7eadaca23271d5b2afa43ec66235839694a
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 9e8104ba92d0be9d56607083508d7f30728a7f3a141839d74314561d392fb942
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118707672"
 ---
 # <a name="drop-down-color-picker"></a>Drop-Down Selector de colores
 
-El marco de la cinta de opciones de Windows proporciona un control Drop-Down Selector de colores que expone una variedad de configuraciones de color a través de un botón de división y un selector de colores desplegable personalizable.
+El marco Windows cinta de opciones proporciona un control Drop-Down Selector de colores especializado que expone una variedad de configuraciones de color a través de un botón de división y un selector de colores desplegable personalizable.
 
 -   [Introducción](#introduction)
 -   [marcado](#markup)
@@ -24,7 +24,7 @@ El marco de la cinta de opciones de Windows proporciona un control Drop-Down Sel
 
 ## <a name="introduction"></a>Introducción
 
-Mediante la emulación de la apariencia y la funcionalidad del selector de colores Microsoft Office, el marco de la cinta de opciones puede beneficiarse de la coherencia y familiaridad de una amplia gama de aplicaciones y contribuir a ello.
+Al emular la apariencia y la funcionalidad del selector de colores de Microsoft Office, el marco de la cinta de opciones puede beneficiarse de la coherencia y familiaridad de una amplia gama de aplicaciones y contribuir a ello.
 
 ## <a name="markup"></a>marcado
 
@@ -68,19 +68,19 @@ Al igual que todos los controles de la cinta de opciones, Drop-Down Selector de 
 </tr>
 <tr class="even">
 <td>CommandName</td>
-<td>Nombre de la declaración Command asociada. <br/></td>
+<td>Nombre de la declaración command asociada. <br/></td>
 </tr>
 <tr class="odd">
 <td>IsAutomaticColorButtonVisible</td>
-<td>Muestra (u oculta) el <strong>botón</strong> Automático.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor de <code>ThemeColors</code> o <code>StandardColors</code> .<br/></td>
+<td>Muestra (u oculta) el <strong>botón</strong> Automático.<br/> Válido solo cuando <em>ColorTemplate</em> tiene un valor de <code>ThemeColors</code> o <code>StandardColors</code> .<br/></td>
 </tr>
 <tr class="even">
 <td>IsNoColorButtonVisible</td>
-<td>Muestra (u oculta) el <strong>botón Sin</strong> color.<br/> Válido para todos los <em>valores de ColorTemplate.</em><br/></td>
+<td>Muestra (u oculta) el <strong>botón Sin</strong> color.<br/> Válido para todos <em>los valores de ColorTemplate.</em><br/></td>
 </tr>
 <tr class="odd">
 <td>RecentColorGridRows</td>
-<td>Número de filas de chip de color (o muestra) en el <strong>área Colores</strong> recientes.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor de <code>ThemeColors</code> .<br/></td>
+<td>Número de filas de chip de color (o muestra) en el <strong>área Colores</strong> recientes.<br/> Válido solo cuando <em>ColorTemplate</em> tiene un valor de <code>ThemeColors</code> .<br/></td>
 </tr>
 <tr class="even">
 <td>StandardColorGridRows</td>
@@ -88,7 +88,7 @@ Al igual que todos los controles de la cinta de opciones, Drop-Down Selector de 
 </tr>
 <tr class="odd">
 <td>ThemeColorGridRows</td>
-<td>Número de filas de chip de color (o muestra) en el área <strong>Colores del</strong> tema.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor de <code>ThemeColors</code> .<br/></td>
+<td>Número de filas de chip de color (o muestra) en el área <strong>Colores del</strong> tema.<br/> Válido solo cuando <em>ColorTemplate</em> tiene un valor de <code>ThemeColors</code> .<br/></td>
 </tr>
 </tbody>
 </table>
@@ -97,7 +97,7 @@ Al igual que todos los controles de la cinta de opciones, Drop-Down Selector de 
 
  
 
-En las siguientes capturas de pantalla se muestran los Drop-Down Selector de colores diseños predeterminados para las tres plantillas de color.
+En las capturas de pantalla siguientes se muestra el Drop-Down Selector de colores diseños predeterminados para las tres plantillas de color.
 
 
 
@@ -169,11 +169,11 @@ Como control especializado que admite la personalización, cualquier implementac
 
 ### <a name="properties"></a>Propiedades
 
-El marco de la cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el Drop-Down Selector de colores control .
+El marco de la cinta de opciones define una colección [de claves de propiedad](windowsribbon-reference-properties.md) para el control Drop-Down Selector de colores control .
 
-Normalmente, una propiedad Drop-Down Selector de colores se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) controla el evento de invalidación y las actualizaciones de propiedad definidas.
+Normalmente, una propiedad Drop-Down Selector de colores se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El evento de invalidación se controla y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación consulta un valor de propiedad actualizado, hasta que el marco requiere la propiedad . Por ejemplo, cuando se activa una pestaña y se muestra un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
+El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación ha consultado un valor de propiedad actualizado, hasta que el marco requiere la propiedad . Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
 
 > [!Note]  
 > En algunos casos, una propiedad se puede recuperar mediante el método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
@@ -200,7 +200,7 @@ En la tabla siguiente se enumeran las claves de propiedad asociadas al control D
 <tbody>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-automaticcolorlabel.md">UI_PKEY_AutomaticColorLabel</a></td>
-<td>Define la etiqueta del <strong>botón</strong> Color automático.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor de <code>ThemeColors</code> o <code>StandardColors</code> .<br/></td>
+<td>Define la etiqueta del <strong>botón Color</strong> automático.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor <code>ThemeColors</code> de o <code>StandardColors</code> .<br/></td>
 <td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="even">
@@ -225,32 +225,32 @@ En la tabla siguiente se enumeran las claves de propiedad asociadas al control D
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-label.md">UI_PKEY_Label</a></td>
-<td>Define la cadena de caracteres de una etiqueta de control.<br/></td>
+<td>Define la cadena de caracteres para una etiqueta de control.<br/></td>
 <td>Solo se puede actualizar a través de la invalidación.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-largehighcontrastimage.md">UI_PKEY_LargeHighContrastImage</a></td>
 <td>Define la imagen de contraste alto grande que se mostrará para un control.<br/></td>
-<td>Solo se puede actualizar a través de la invalidación.<br/> Para obtener más información sobre los formatos de imagen, vea Especificar recursos de imagen de cinta de <a href="windowsribbon-imageformats.md">opciones.</a><br/></td>
+<td>Solo se puede actualizar a través de la invalidación.<br/> Para obtener más información sobre los formatos de imagen, vea <a href="windowsribbon-imageformats.md">Especificar recursos de imagen de la cinta de opciones.</a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-largeimage.md">UI_PKEY_LargeImage</a></td>
 <td>Define la imagen grande que se mostrará para un control .<br/></td>
-<td>Solo se puede actualizar a través de la invalidación.<br/> Para obtener más información sobre los formatos de imagen, vea Especificar recursos de imagen de cinta de <a href="windowsribbon-imageformats.md">opciones.</a><br/></td>
+<td>Solo se puede actualizar a través de la invalidación.<br/> Para obtener más información sobre los formatos de imagen, vea <a href="windowsribbon-imageformats.md">Especificar recursos de imagen de la cinta de opciones.</a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-morecolorslabel.md">UI_PKEY_MoreColorsLabel</a></td>
-<td>Define la etiqueta del botón <strong>Más</strong> colores....<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor de <code>ThemeColors</code> o <code>StandardColors</code> .<br/></td>
+<td>Define la etiqueta para el <strong>botón Más</strong> colores....<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor <code>ThemeColors</code> de o <code>StandardColors</code> .<br/></td>
 <td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-nocolorlabel.md">UI_PKEY_NoColorLabel</a></td>
-<td>Define la etiqueta del botón <strong>Sin</strong> color.<br/> Válido para todos los <em>valores de ColorTemplate.</em><br/></td>
+<td>Define la etiqueta para el <strong>botón Sin</strong> color.<br/> Válido para todos <em>los valores de ColorTemplate.</em><br/></td>
 <td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-recentcolorscategorylabel.md">UI_PKEY_RecentColorsCategoryLabel</a></td>
-<td>Define la etiqueta de la <strong>categoría Colores</strong> recientes.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor de <code>ThemeColors</code> . Esta es la única plantilla que contiene categorías etiquetadas.<br/></td>
+<td>Define la etiqueta para la <strong>categoría Colores</strong> recientes.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor de <code>ThemeColors</code> . Esta es la única plantilla que contiene categorías etiquetadas.<br/></td>
 <td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="even">
@@ -293,7 +293,7 @@ Solo se usan las sugerencias de herramientas necesarias para etiquetar las muest
 <td>Define una matriz <a href="/windows/win32/gdi/colorref">de valores COLORREF</a> para las muestras de un Drop-Down Selector de colores.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor de <code>ThemeColors</code> . <br/>
 <blockquote>
 [!Note]<br />
-Se muestran los valores <a href="/windows/win32/gdi/colorref">COLORREF</a> de <em>la columna ThemeColorGridRows</em> <em>x</em> inicial de la matriz. Si la matriz define menos colores que el número de muestras declaradas en el marcado, se muestran espacios vacíos para los chips <code>ThemeColors</code> que faltan.
+Se muestran los valores <a href="/windows/win32/gdi/colorref">COLORREF</a> de <em>la columna ThemeColorGridRows</em> x <em>inicial</em> de la matriz. Si la matriz define menos colores que el número de muestras declaradas en el marcado, se muestran espacios vacíos para los chips <code>ThemeColors</code> que faltan.
 </blockquote>
 <br/></td>
 <td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
@@ -443,7 +443,7 @@ STDMETHODIMP DropDownColorPickerHandler::Execute(
 
 <dl> <dt>
 
-[Biblioteca de controles del marco de opciones de Windows](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controles del marco de opciones](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento de marcado DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)

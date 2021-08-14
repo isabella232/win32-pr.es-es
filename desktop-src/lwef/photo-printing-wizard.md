@@ -1,55 +1,55 @@
 ---
-title: Asistente para impresión fotográfica
-description: El Asistente para impresión de fotografías ayuda a los usuarios a imprimir fotos proporcionando una interfaz de asistente fácil de usar.
+title: Asistente para impresión de fotos
+description: El Asistente para impresión de fotos ayuda a los usuarios a imprimir fotos al proporcionar una interfaz de asistente fácil de usar.
 ms.assetid: 9cc2c7d4-a2aa-4abc-9c63-b091e044804f
 keywords:
-- Asistente para impresión fotográfica
-- IDropTarget, Asistente para impresión fotográfica
+- Asistente para impresión de fotos
+- IDropTarget,Asistente para impresión de fotos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 708f051f658739cebd08e4f8643e5dd7fc0c6f7f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 38199f7977e428f41cbc0560e0eab9ad2e106709579255ec8c3a1e74d7f7a402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118475457"
 ---
-# <a name="photo-printing-wizard"></a>Asistente para impresión fotográfica
+# <a name="photo-printing-wizard"></a>Asistente para impresión de fotos
 
-El Asistente para impresión de fotografías ayuda a los usuarios a imprimir fotos proporcionando una interfaz de asistente fácil de usar. El asistente permite al usuario especificar tamaños de impresión fotográfica y otras opciones de impresión y, a continuación, envía las fotos a la impresora. El asistente está diseñado para que se pueda invocar mediante programación por cualquier aplicación que desee ofrecer a los usuarios la posibilidad de imprimir fotografías y especificar el tamaño y otras opciones de impresión. El Asistente para impresión de fotografías está disponible en Windows XP y Windows Vista.
+El Asistente para impresión de fotos ayuda a los usuarios a imprimir fotos al proporcionar una interfaz de asistente fácil de usar. El asistente permite al usuario especificar tamaños de impresión de fotos y otras opciones de impresión y, a continuación, envía las fotos a la impresora. El asistente está diseñado para que cualquier aplicación que quiera ofrecer a los usuarios la capacidad de imprimir fotos y especificar el tamaño y otras opciones de impresión pueda invocarlo mediante programación. El Asistente para impresión de fotos está disponible en Windows XP y Windows Vista.
 
--   [Características proporcionadas por el Asistente para impresión fotográfica](#features-provided-by-the-photo-print-wizard)
--   [Formatos de archivo fotográfico admitidos](#supported-photo-file-formats)
--   [Inicio mediante programación del Asistente para impresión fotográfica](#programmatically-launching-the-photo-print-wizard)
+-   [Características proporcionadas por el Asistente para impresión de fotos](#features-provided-by-the-photo-print-wizard)
+-   [Formatos de archivo de fotos admitidos](#supported-photo-file-formats)
+-   [Iniciar el Asistente para impresión de fotos mediante programación](#programmatically-launching-the-photo-print-wizard)
 
-## <a name="features-provided-by-the-photo-print-wizard"></a>Características proporcionadas por el Asistente para impresión fotográfica
+## <a name="features-provided-by-the-photo-print-wizard"></a>Características proporcionadas por el Asistente para impresión de fotos
 
-El Asistente para impresión fotográfica ofrece varias opciones que pueden no estar disponibles en los cuadros de diálogo de impresora comunes, como las plantillas de diseño múltiple con dimensiones precisas. Las plantillas de diseño permiten a los usuarios hacer el uso más eficaz del espacio disponible en el papel de impresión fotográfica. Otras opciones que se pueden especificar o a las que se puede tener acceso a través del Asistente para impresión fotográfica incluyen:
+El Asistente para impresión de fotos ofrece varias opciones que pueden no estar disponibles en cuadros de diálogo de impresora comunes, como plantillas de varios diseños con dimensiones precisas. Las plantillas de diseño permiten a los usuarios hacer el uso más eficaz del espacio disponible en papel de impresión gráfica. Otras opciones a las que se puede especificar o acceder a través del Asistente para impresión de fotos incluyen:
 
--   Seleccionar una impresora de una lista de impresoras o destinos de impresión virtuales disponibles (por ejemplo, escritor de documentos XPS de Microsoft). En Windows Vista, pueden estar disponibles las siguientes opciones, en función de las capacidades de la impresora o del destino de impresión virtual:
-    -   Tamaño del papel. Por ejemplo, "Letter", "legal", "a3".
-    -   Calidad de impresión, en términos de resoluciones de puntos por pulgada (PPP) admitidas.
-    -   Tipo de papel. Por ejemplo, "Plain" o "satinada".
--   Inicio de las preferencias de impresión y las propiedades de una impresora determinada.
--   Establecer las **copias de cada imagen** (en Windows Vista) o el **número de veces que se usan** los valores del cuadro de número de cada imagen (en Windows XP).
--   Especificar una plantilla de diseño de impresión. Por ejemplo, **fotos de página completa** o **impresiones de Wallet**.
--   Seleccionar la opción **ajustar la imagen al marco** (solo disponible en Windows Vista).
--   Obtener una vista previa de la foto impresa con las opciones especificadas actualmente.
--   Obtener acceso a opciones de impresión avanzadas, como **enfocar para la impresión** y la **Administración del color** (solo disponible en Windows Vista).
+-   Seleccionar una impresora de una lista de impresoras disponibles o destinos de impresión virtual (por ejemplo, Escritor de documentos XPS de Microsoft). En Windows Vista, pueden estar disponibles las siguientes opciones, en función de las funcionalidades de la impresora o el destino de impresión virtual:
+    -   Tamaño del papel. Por ejemplo, "Letter", "Legal", "A3".
+    -   Calidad de impresión, en términos de resoluciones de puntos por pulgada (ppp) admitidas.
+    -   Tipo de papel. Por ejemplo, "Plain" o "Glossy".
+-   Iniciar las preferencias de impresión y las propiedades de una impresora determinada.
+-   Establecer las **copias de cada** imagen (en Windows Vista) o número de veces para usar cada imagen (en Windows XP) valores de cuadro de número. 
+-   Especificar una plantilla de diseño de impresión. Por ejemplo, **la foto de página completa** o Wallet **imprime**.
+-   Selección de la **opción Ajustar imagen a marco** (disponible solo Windows Vista).
+-   Vista previa de la foto impresa con las opciones especificadas actualmente.
+-   Acceso a opciones de impresión avanzadas, como **La corrección** para la impresión y la administración de colores **(disponible** Windows Vista).
 
-Cualquier aplicación puede beneficiarse de las características y la funcionalidad de impresión fotográfica que ofrece el Asistente para impresión fotográfica. Una aplicación puede pasar los archivos que se van a imprimir. A continuación, el Asistente para impresión fotográfica se encarga de preparar el archivo para imprimirlo en función de las opciones especificadas por el usuario y de enviar los archivos preparados a la impresora.
+Cualquier aplicación puede beneficiarse de las características y la funcionalidad de impresión de fotos que ofrece el Asistente para impresión de fotos. Una aplicación puede pasar los archivos que se imprimirán. A continuación, el Asistente para impresión de fotos se encarga de preparar el archivo para imprimirlo en función de las opciones especificadas por el usuario y envía los archivos preparados a la impresora.
 
-En la siguiente ilustración se muestra la interfaz del Asistente para impresión fotográfica en Windows Vista.
+En la ilustración siguiente se muestra la interfaz del Asistente para impresión de fotos Windows Vista
 
-![el Asistente para impresión fotográfica en Windows Vista](images/ppw-vista.png)
+![El Asistente para impresión de fotos en Windows Vista](images/ppw-vista.png)
 
-La siguiente ilustración muestra la interfaz del Asistente para impresión de fotografías en Windows XP
+En la ilustración siguiente se muestra la interfaz del Asistente para impresión de fotos Windows XP
 
-![el Asistente para impresión fotográfica en Windows XP](images/ppw-xp.png)
+![el Asistente para impresión de fotos en Windows XP](images/ppw-xp.png)
 
-## <a name="supported-photo-file-formats"></a>Formatos de archivo fotográfico admitidos
+## <a name="supported-photo-file-formats"></a>Formatos de archivo de fotos admitidos
 
-En Windows XP, el Asistente para impresión fotográfica admite todos los formatos de archivo de gráficos compatibles con Windows GDI+. Actualmente, estos formatos de archivo incluyen:
+En Windows XP, el Asistente para impresión de fotos admite todos los formatos de archivo de gráficos compatibles con Windows GDI+. Actualmente, estos formatos de archivo incluyen:
 
 -   Mapa de bits (BMP)
 -   Formato de intercambio de gráficos (GIF)
@@ -58,9 +58,9 @@ En Windows XP, el Asistente para impresión fotográfica admite todos los format
 -   Formato PNG (Portable Network Graphics)
 -   Tagged Image File Format (TIFF)
 
-Para obtener más información sobre los formatos de archivo de gráficos compatibles con GDI+, vea [tipos de mapas de bits](../gdiplus/-gdiplus-types-of-bitmaps-about.md).
+Para obtener más información sobre los formatos de archivo de gráficos admitidos por GDI+, vea [Tipos de mapas de bits.](../gdiplus/-gdiplus-types-of-bitmaps-about.md)
 
-En Windows Vista, el Asistente para impresión fotográfica admite cualquier formato de archivo de imagen para el que esté instalado un códec de Windows Imaging Component (WIC). WIC proporciona varios códecs estándar, entre los que se incluyen:
+En Windows Vista, el Asistente para impresión de fotos admite cualquier formato de archivo de imagen para el que esté instalado un códec Windows Imaging Component (WIC). WIC proporciona varios códecs estándar, entre los que se incluyen:
 
 -   Mapa de bits (BMP)
 -   GIF
@@ -68,13 +68,13 @@ En Windows Vista, el Asistente para impresión fotográfica admite cualquier for
 -   JPEG
 -   PNG
 -   TIFF
--   Formato de Windows Media Photo
+-   Windows Formato de foto multimedia
 
-Para obtener más información acerca de los códecs WIC y WIC, vea [Windows Imaging Component](https://msdn.microsoft.com/library/ms737408(VS.85).aspx)
+Para obtener más información sobre los códecs WIC y WIC, vea Windows Imaging Component (Componente [de creación de imágenes).](https://msdn.microsoft.com/library/ms737408(VS.85).aspx)
 
-## <a name="programmatically-launching-the-photo-print-wizard"></a>Inicio mediante programación del Asistente para impresión fotográfica
+## <a name="programmatically-launching-the-photo-print-wizard"></a>Iniciar el Asistente para impresión de fotos mediante programación
 
-Para invocar el Asistente para impresión de fotografías, llame a la interfaz [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) con el siguiente identificador de clase (CLSID):
+Para invocar al Asistente para impresión de fotos, llame a la [interfaz IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) con el siguiente identificador de clase (CLSID):
 
 
 ```
@@ -84,9 +84,9 @@ static const CLSID CLSID_PrintPhotosDropTarget =
 
 
 
-Los archivos que se van a procesar mediante el Asistente para impresión fotográfica se especifican en un objeto [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) .
+Los archivos que va a procesar el Asistente para impresión de fotos se especifican en un [objeto IDataObject.](/windows/win32/api/objidl/nn-objidl-idataobject)
 
-En el ejemplo de código siguiente se muestra cómo invocar el Asistente para impresión fotográfica.
+En el ejemplo de código siguiente se muestra cómo invocar el Asistente para impresión de fotos.
 
 
 ```
@@ -115,6 +115,6 @@ spDropTarget->Drop(pDataObject, MK_LBUTTON, pt, &dwEffect);}
 
 
 
- 
+ 
 
- 
+ 

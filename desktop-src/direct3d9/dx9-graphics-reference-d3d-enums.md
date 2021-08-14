@@ -4,18 +4,18 @@ ms.assetid: ae64eb17-63a8-44c5-8d41-e021c49f338a
 title: Enumeraciones de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47c06f727e66e51d73eb217f73923979d56de0ae
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 480b5530fbe00339d2f4faf39e9c0b8d83acd3075e01a459ae9ce26e4d4875c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523426"
 ---
 # <a name="direct3d-enumerations"></a>Enumeraciones de Direct3D
 
 En esta sección se describen los tipos enumerados de Direct3D.
 
--   [**\_Tipo D3DBACKBUFFER**](./d3dbackbuffer-type.md)
+-   [**TIPO D3DBACKBUFFER \_**](./d3dbackbuffer-type.md)
 -   [**D3DBASISTYPE**](./d3dbasistype.md)
 -   [**D3DBLEND**](./d3dblend.md)
 -   [**D3DBLENDOP**](./d3dblendop.md)
@@ -30,7 +30,7 @@ En esta sección se describen los tipos enumerados de Direct3D.
 
      
 
--   [**Caras de D3DCUBEMAP \_**](./d3dcubemap-faces.md)
+-   [**CARAS DE D3DCUBEMAP \_**](./d3dcubemap-faces.md)
 -   [**D3DCULL**](./d3dcull.md)
 -   [**D3DDEBUGMONITORTOKENS**](./d3ddebugmonitortokens.md)
 -   [**D3DDECLMETHOD**](./d3ddeclmethod.md)
@@ -53,14 +53,14 @@ En esta sección se describen los tipos enumerados de Direct3D.
 -   [D3DFORMAT](d3dformat.md)
 -   [**D3DLIGHTTYPE**](./d3dlighttype.md)
 -   [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md)
--   [**\_Tipo D3DMULTISAMPLE**](./d3dmultisample-type.md)
+-   [**TIPO D3DMULTISAMPLE \_**](./d3dmultisample-type.md)
 -   [**D3DPATCHEDGESTYLE**](./d3dpatchedgestyle.md)
 -   [**D3DPOOL**](./d3dpool.md)
 -   [**D3DPRIMITIVETYPE**](./d3dprimitivetype.md)
 -   [**D3DQUERYTYPE**](./d3dquerytype.md)
 -   [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md)
 -   [**D3DRESOURCETYPE**](./d3dresourcetype.md)
--   [**\_Tipo de textura D3DSAMPLER \_**](./d3dsampler-texture-type.md)
+-   [**TIPO DE TEXTURA D3DSAMPLER \_ \_**](./d3dsampler-texture-type.md)
 -   [**D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md)
 -   
 
@@ -74,7 +74,7 @@ En esta sección se describen los tipos enumerados de Direct3D.
 
 -   [**D3DSHADEMODE**](./d3dshademode.md)
 -   [**D3DSTATEBLOCKTYPE**](./d3dstateblocktype.md)
--   [**D3DSTENCILOP**](./d3dstencilop.md)
+-   [**D3DSTENCISTONE**](./d3dstencilop.md)
 -   [**D3DSWAPEFFECT**](./d3dswapeffect.md)
 -   [**D3DTEXTUREADDRESS**](./d3dtextureaddress.md)
 -   [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md)
@@ -84,7 +84,7 @@ En esta sección se describen los tipos enumerados de Direct3D.
 -   [**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md)
 -   [**D3DVERTEXBLENDFLAGS**](./d3dvertexblendflags.md)
 -   [**Valores devueltos de D3DXFERR**](./d3dxferr-return-values.md)
--   [**D3DZBUFFERTYPE**](./d3dzbuffertype.md)
+-   [**D3BUFFERTYPE**](./d3dzbuffertype.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

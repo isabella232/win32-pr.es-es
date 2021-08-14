@@ -4,12 +4,12 @@ ms.assetid: 61D2EA45-5E63-41BA-90D8-84B70C80E7A4
 title: Estándares web y compatibilidad de aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fcda917b3c03d04a2c3825e141b979c2c22b023
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3066e2933a5fab37a8ea00be2c5e437b8c51bec20c292797c2e07b19ab72290d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118328621"
 ---
 # <a name="web-standards-and-application-compatibility"></a>Estándares web y compatibilidad de aplicaciones
 

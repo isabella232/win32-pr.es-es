@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. Latitude.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.Latitude.
 ms.assetid: 0f8cea07-da96-4d2a-8444-6073b51e1236
-title: Directiva de metadatos de la foto System. GPS. Latitude
+title: Directiva de metadatos de fotos System.GPS.Latitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5320869c1e8fd0d4b17bb17da455fc939bf44b9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41dd1eb0ee21ab02eeb8c83d5ea84f28c07c2811929f2b8c973cace4a4a06fd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710629"
 ---
-# <a name="systemgpslatitude-photo-metadata-policy"></a>Directiva de metadatos de la foto System. GPS. Latitude
+# <a name="systemgpslatitude-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.Latitude
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. Latitude](../properties/props-system-gps-latitude.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.Latitude.](../properties/props-system-gps-latitude.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ GPS \_ Latitude
+Latitud gps de PKEY \_ \_
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,13 +27,13 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ Vector \| VT \_ R8
+VT \_ VECTOR \| VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se puede escribir escribiendo en System. GPS. LatitudeNumerator y System. GPS. LatitudeDenominator. No se puede escribir directamente. Se reconcilian los valores de los distintos esquemas.
+Este valor se puede escribir escribiendo en System.GPS.LatitudeNumerator y System.GPS.LatitudeDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -41,22 +41,22 @@ Este valor se puede escribir escribiendo en System. GPS. LatitudeNumerator y Sys
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 2} |             |
+| 1     | /app1/ifd/gps/{ushort=2} |             |
 | 2     | /xmp/exif:GPSLatitude    |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 2} |             |
+| 1     | /app1/ifd/gps/{ushort=2} |             |
 | 2     | /xmp/exif:GPSLatitude    |             |
 
 
@@ -67,9 +67,9 @@ Este valor se puede escribir escribiendo en System. GPS. LatitudeNumerator y Sys
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Path                     |
 |-------|--------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 2} |
+| 1     | /app1/ifd/gps/{ushort=2} |
 | 2     | /xmp/exif:gpslatitude    |
 
 
@@ -82,22 +82,22 @@ Este valor se puede escribir escribiendo en System. GPS. LatitudeNumerator y Sys
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Path                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 2}       |             |
+| 1     | /ifd/gps/{ushort=2}       |             |
 | 2     | /ifd/xmp/exif:GPSLatitude |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Path                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 2}       |             |
+| 1     | /ifd/gps/{ushort=2}       |             |
 | 2     | /ifd/xmp/exif:GPSLatitude |             |
 
 
@@ -108,9 +108,9 @@ Este valor se puede escribir escribiendo en System. GPS. LatitudeNumerator y Sys
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Path                      |
 |-------|---------------------------|
-| 1     | /IFD/GPS/{ushort = 2}       |
+| 1     | /ifd/gps/{ushort=2}       |
 | 2     | /ifd/xmp/exif:gpslatitude |
 
 
@@ -123,7 +123,7 @@ Este valor se puede escribir escribiendo en System. GPS. LatitudeNumerator y Sys
 
 <dl> <dt>
 
-[System. GPS. Latitude](../properties/props-system-gps-latitude.md)
+[System.GPS.Latitude](../properties/props-system-gps-latitude.md)
 </dt> </dl>
 
  

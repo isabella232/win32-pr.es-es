@@ -1,19 +1,19 @@
 ---
 description: En este ejemplo se muestra cómo inicializar una matriz de búferes de seguridad.
 ms.assetid: f8196a9c-786a-49a3-85a4-1bd5f414a653
-title: Código de ejemplo de SecBuffer y SecBufferDesc
+title: Código de ejemplo secBuffer y SecBufferDesc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7d28e885d6eec65c209caeda299b2f7e5f2ad3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b60b776dd85e29c3f91d2840849d18e48d100dada6037bff556074b1041bdb8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918452"
 ---
-# <a name="secbuffer-and-secbufferdesc-example-code"></a>Código de ejemplo de SecBuffer y SecBufferDesc
+# <a name="secbuffer-and-secbufferdesc-example-code"></a>Código de ejemplo secBuffer y SecBufferDesc
 
-En este ejemplo se muestra cómo inicializar una matriz de búferes de seguridad. Muestra los búferes de seguridad de entrada inicializados por el lado del servidor de una conexión para preparar una llamada a [**AcceptSecurityContext (general)**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext). Tenga en cuenta que el último búfer contiene el token de seguridad opaco recibido por el cliente y que la \_ marca ReadOnly SECBUFFER está establecida en [**SECBUFFER**](/windows/desktop/api/Sspi/ns-sspi-secbuffer).
+En este ejemplo se muestra cómo inicializar una matriz de búferes de seguridad. Muestra los búferes de seguridad de entrada inicializados por el lado servidor de una conexión para prepararse para una llamada a [**AcceptSecurityContext (General).**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext) Tenga en cuenta que el último búfer contiene el token de seguridad opaco recibido por el cliente y que la marca READONLY de SECBUFFER está \_ establecida en [**SecBuffer**](/windows/desktop/api/Sspi/ns-sspi-secbuffer).
 
 
 ```C++

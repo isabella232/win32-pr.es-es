@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_BREAK (mmsystem. h)
-description: El \_ comando de interrupción de MCI establece una tecla de interrupción para un dispositivo MCI. MCI admite este comando directamente en lugar de pasarlo al dispositivo. Cualquier aplicación MCI puede usar este comando.
+title: MCI_BREAK comando (Mmsystem.h)
+description: El comando BREAK de MCI \_ establece una clave de interrupción para un dispositivo MCI. MCI admite este comando directamente en lugar de pasarlo al dispositivo. Cualquier aplicación MCI puede usar este comando.
 ms.assetid: 127b5179-2838-4bde-8d0c-37a4cc87fa4d
 keywords:
-- Comando de MCI_BREAK de Windows multimedia
+- MCI_BREAK comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33b17e3796192344ef974fed1af7229d41746aaf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 07006ddfb38e1a57f6e08cb73d9b33021d139b9542245aec137e0969378140e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803976"
 ---
-# <a name="mci_break-command"></a>Comando de interrupción de MCI \_
+# <a name="mci_break-command"></a>Comando BREAK de MCI \_
 
-El \_ comando de interrupción de MCI establece una tecla de interrupción para un dispositivo MCI. MCI admite este comando directamente en lugar de pasarlo al dispositivo. Cualquier aplicación MCI puede usar este comando.
+El comando BREAK de MCI \_ establece una clave de interrupción para un dispositivo MCI. MCI admite este comando directamente en lugar de pasarlo al dispositivo. Cualquier aplicación MCI puede usar este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,47 +50,47 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-Las \_ notificaciones de MCI, espera de MCI \_ o, para dispositivos de grabadora de vídeo digital y vídeo (VCR), prueba de MCI \_ . Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI NOTIFY, MCI WAIT o, para dispositivos de grabación de vídeo digital y vídeo \_ \_ (VCR), MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpBreak"></span><span id="lpbreak"></span><span id="LPBREAK"></span>*lpBreak*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms de interrupción de MCI**](mci-break-parms.md) .
+Puntero a una [**estructura \_ MCI BREAK \_ PARMS.**](mci-break-parms.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es posible que tenga que presionar la tecla interrumpir varias veces para interrumpir una operación de espera. Al presionar la tecla interrumpir después de que se cancele un dispositivo, puede enviar la interrupción a una aplicación. Si una aplicación tiene una acción definida para el código de tecla virtual, puede responder accidentalmente a la interrupción. Por ejemplo, una aplicación que use VK \_ Cancel para una tecla de aceleración puede responder a la tecla Ctrl + Inter predeterminada si se presiona después de que se cancele la espera.
+Es posible que tenga que presionar la tecla de interrupción varias veces para interrumpir una operación de espera. Al presionar la tecla de interrupción después de cancelar una espera del dispositivo, se puede enviar la interrupción a una aplicación. Si una aplicación tiene una acción definida para el código de clave virtual, puede responder involuntariamente a la interrupción. Por ejemplo, una aplicación que usa VK CANCEL para una tecla de aceleración puede responder a la tecla CTRL+BREAK predeterminada si se presiona después de cancelar \_ una espera.
 
 Las siguientes marcas adicionales se aplican a todos los dispositivos:
 
 <dl> <dt>
 
-<span id="MCI_BREAK_HWND"></span><span id="mci_break_hwnd"></span>\_hWnd de interrupción de MCI \_
+<span id="MCI_BREAK_HWND"></span><span id="mci_break_hwnd"></span>MCI \_ BREAK \_ HWND
 </dt> <dd>
 
-El miembro **hwndBreak** de la estructura identificada por *lpBreak* contiene un identificador de ventana que debe ser la ventana actual para habilitar la detección de interrupciones para ese dispositivo MCI. Esta suele ser la ventana principal de la aplicación. Si se omite, MCI no comprueba el identificador de ventana de la ventana actual.
+El **miembro hwndBreak** de la estructura identificada por *lpBreak* contiene un identificador de ventana que debe ser la ventana actual para habilitar la detección de interrupción para ese dispositivo MCI. Esta suele ser la ventana principal de la aplicación. Si se omite, MCI no comprueba el identificador de ventana de la ventana actual.
 
 </dd> <dt>
 
-<span id="MCI_BREAK_KEY"></span><span id="mci_break_key"></span>\_tecla de interrupción de MCI \_
+<span id="MCI_BREAK_KEY"></span><span id="mci_break_key"></span>CLAVE DE \_ INTERRUPCIÓN DE MCI \_
 </dt> <dd>
 
-El miembro **nVirtKey** de la estructura identificada por *lpBreak* especifica el código de la clave virtual que se usa para la tecla interrumpir. De forma predeterminada, MCI asigna CTRL + INTER como tecla de salto. Esta marca es necesaria si \_ no se especifica la interrupción de MCI \_ .
+El **miembro nVirtKey** de la estructura identificada por *lpBreak* especifica el código de clave virtual usado para la clave de interrupción. De forma predeterminada, MCI asigna CTRL+BREAK como tecla de interrupción. Esta marca es necesaria si no se especifica MCI \_ BREAK \_ OFF.
 
 </dd> <dt>
 
-<span id="MCI_BREAK_OFF"></span><span id="mci_break_off"></span>interrupción de MCI \_ \_
+<span id="MCI_BREAK_OFF"></span><span id="mci_break_off"></span>INTERRUPCIÓN DE MCI \_ \_
 </dt> <dd>
 
 Deshabilita cualquier clave de interrupción existente para el dispositivo indicado.
@@ -101,22 +101,22 @@ Deshabilita cualquier clave de interrupción existente para el dispositivo indic
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

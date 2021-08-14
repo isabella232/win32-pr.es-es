@@ -7,16 +7,16 @@ MSHAttr:
 title: AdminRoamControl (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a92ba97fd2657b28d1c845598825aae648124d36
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: ec631626c937555ae24460be82bd5322a0ae63185922b5e09249526118b35c9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117882017"
 ---
 # <a name="span-idwwan_profile_v4element_1_adminroamcontrolspanmodemdmconfigprofileadminroamcontrol-v4"></a><span id="WWAN_profile_v4.element_1_AdminRoamControl"></span>ModemDMConfigProfile \/ AdminRoamControl (v4)
 
-Especifica si el perfil está controlado por itinerancia administrativa. Este elemento es nuevo para V4. El valor de este elemento es un valor de [**roamControlType**](simpletype-roamcontroltype.md) . Este es un elemento opcional; Si no se especifica ningún valor, **AllRoamAllowed** es el valor predeterminado.
+Especifica si el perfil se controla administrativamente. Este elemento es nuevo para v4. El valor de este elemento es [**un valor roamControlType.**](simpletype-roamcontroltype.md) Se trata de un elemento opcional; Si no se especifica ningún valor, **AllRoamAllowed** es el valor predeterminado.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -26,7 +26,7 @@ Especifica si el perfil está controlado por itinerancia administrativa. Este el
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<AdminRoamControl\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <AdminRoamControl>
@@ -62,8 +62,8 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>El elemento <strong>MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
-<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el elemento secundario <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p></td>
+<td><p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
+<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></td>

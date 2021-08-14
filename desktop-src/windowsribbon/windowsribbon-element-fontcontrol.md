@@ -3,7 +3,7 @@ title: Elemento FontControl
 description: Representa un control de fuente, que es un contenedor especializado de controles individuales dedicados a la manipulación de fuentes.
 ms.assetid: 98eddab5-28cb-4b9d-a788-ee28dd6055b1
 keywords:
-- Elemento FontControl de la cinta de opciones de Windows
+- Cinta de opciones del Windows FontControl
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 42c9d900c2af4f7f8ba26f5ac8dbbdc0d055668d
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 7c7b068246da9b26a4b3547e27abd1a9b60c8fd70de10e4edd2438463a156633
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202527"
 ---
 # <a name="fontcontrol-element"></a>Elemento FontControl
 
@@ -86,7 +86,7 @@ Los <strong>botones</strong> de alternancia Tachado y Subrayado se muestran de f
 </dd> <dt><span></span><span></span><strong></strong> (FontWithColor)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-fontwithcolor.png" alt="Screen shot of the FontControl element with the FontWithColor attribute set to true." /><br/> Establecer el <em>atributo FontType</em> en <code>FontWithColor</code> habilita la funcionalidad siguiente:<br/>
 <ul>
 <li><strong>Cuadro combinado familia</strong> de fuentes.</li>
-<li><strong>Cuadro combinado tamaño de</strong> fuente.</li>
+<li><strong>Cuadro combinado tamaño</strong> de fuente.</li>
 <li><strong>Aumentar la fuente y</strong> <strong>reducir el tamaño</strong> de fuente de los botones de incremento y decremento.</li>
 <li><p><strong>Botones</strong>de <strong>alternancia</strong>Negrita, <strong>Cursiva,</strong> <strong>Subrayado y Tachado.</strong></p>
 <blockquote>
@@ -105,7 +105,7 @@ Este control está oculto de forma predeterminada, pero se puede mostrar estable
 </dd> <dt><span></span><span></span><strong></strong> (RichFont)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-richfont.png" alt="Screen shot of the FontControl element with the RichFont attribute set to true." /><br/> Establecer el <em>atributo FontType</em> en <code>RichFont</code> habilita la funcionalidad siguiente:<br/>
 <ul>
 <li><strong>Cuadro combinado familia</strong> de fuentes.</li>
-<li><strong>Cuadro combinado tamaño de</strong> fuente.</li>
+<li><strong>Cuadro combinado tamaño</strong> de fuente.</li>
 <li><strong>Aumentar la fuente y</strong> <strong>reducir el tamaño</strong> de fuente de los botones de incremento y decremento.</li>
 <li><p><strong>Botones</strong>de <strong>alternancia</strong>Negrita, <strong>Cursiva,</strong> <strong>Subrayado y Tachado.</strong></p>
 <blockquote>
@@ -167,7 +167,7 @@ El resaltado de color solo está disponible desde <strong>un FontControl</strong
 <td>xs:positiveInteger<br/></td>
 <td>No<br/></td>
 <td>Tamaño máximo de punto que se mostrará.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Valor entero comprendido entre 1 y 9999, ambos incluidos.<br/> El valor predeterminado <strong>es 9999</strong>.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Valor entero comprendido entre 1 y 9999, ambos incluidos.<br/> El valor predeterminado <strong>es 9999.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinimumFontSize</strong><br/></td>
@@ -181,7 +181,7 @@ El resaltado de color solo está disponible desde <strong>un FontControl</strong
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores (0 y 1 no son válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Muestra solo las fuentes TrueType y OpenType. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Predeterminada. No se coloca ninguna restricción en el tipo de fuentes que se muestra.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Muestra solo fuentes TrueType y OpenType. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Predeterminada. No se coloca ninguna restricción en el tipo de fuentes que se muestra.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>ShowVerticalFonts</strong><br/></td>
@@ -193,10 +193,10 @@ El resaltado de color solo está disponible desde <strong>un FontControl</strong
 Las fuentes verticales van precedidas de un símbolo @ en la <strong>lista Familia de</strong> fuentes.
 </blockquote>
 <br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. Muestra las fuentes verticales establecidas en <strong>Mostrar en</strong> el panel de control <strong>Fuentes.</strong> <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Permite que una aplicación que no admite texto vertical oculte las fuentes verticales establecidas en <strong>Mostrar</strong> en el panel de control <strong>Fuentes.</strong><br/>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. Muestra las fuentes verticales establecidas en <strong>Mostrar en</strong> el panel <strong>de</strong> control Fuentes. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Permite que una aplicación que no admite texto vertical oculte las fuentes verticales establecidas en <strong>Mostrar</strong> en el panel <strong>de</strong> control Fuentes.<br/>
 <blockquote>
 [!Note]<br />
-En Windows Vista, el panel de control <strong>Fuentes</strong> no ofrece <strong>la funcionalidad Mostrar</strong> u <strong>ocultar.</strong> En este caso, el <em>atributo ShowVerticalFonts</em> debe establecerse en <code>False</code> .
+En Windows Vista, el panel de control <strong>Fuentes</strong> no ofrece <strong>la funcionalidad Mostrar</strong> u <strong>Ocultar.</strong> En este caso, el <em>atributo ShowVerticalFonts</em> debe establecerse en <code>False</code> .
 </blockquote>
 <br/> </dd> </dl></td>
 </tr>
@@ -225,17 +225,17 @@ No hay elementos secundarios.
 
 Opcional.
 
-Puede producirse como máximo una vez para cada [**elemento ControlGroup,**](windowsribbon-element-controlgroup.md) [**Group**](windowsribbon-element-group.md) [**o MenuGroup.**](windowsribbon-element-menugroup.md)
+Puede producirse como máximo una vez para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**Group**](windowsribbon-element-group.md) [**o MenuGroup.**](windowsribbon-element-menugroup.md)
 
 Los **atributos del comando FontControl** declarados en el marcado, como [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) o [**Command.TooltipTitle,**](windowsribbon-element-command-tooltiptitle.md)se reemplazan por los atributos de los controles individuales que componen **FontControl**.
 
-Cualquier intento de seleccionar una muestra de color del selector de colores de un [control de](windowsribbon-controls-fontcontrol.md) fuente puede producir una infracción de acceso si no hay ningún controlador de comandos asociado al control.
+Cualquier intento de seleccionar una muestra de color del selector de colores de un [control](windowsribbon-controls-fontcontrol.md) de fuentes puede producir una infracción de acceso si no hay ningún controlador de comandos asociado al control.
 
 ## <a name="examples"></a>Ejemplos
 
 En el ejemplo siguiente se muestra el marcado básico para los tres tipos de [Control de fuentes](windowsribbon-controls-fontcontrol.md).
 
-En esta sección de código se muestran las declaraciones del comando **FontControl,** cada una con una declaración [**de contenedor**](windowsribbon-element-group.md) group.
+En esta sección de código se muestran las declaraciones del comando **FontControl,** cada una con una [**declaración de**](windowsribbon-element-group.md) contenedor Group.
 
 
 ```XML
@@ -279,7 +279,7 @@ En esta sección de código se muestran las declaraciones del comando **FontCont
 
 
 
-En esta sección de código se muestran las **declaraciones de** control FontControl en las que cada **FontControl** y [**Group**](windowsribbon-element-group.md) se declaran en una sola pestaña.
+En esta sección de código se muestran las declaraciones de control **FontControl** en las que cada **FontControl** y [**Group**](windowsribbon-element-group.md) se declaran en una sola pestaña.
 
 
 ```XML
@@ -322,7 +322,7 @@ En esta sección de código se muestran las **declaraciones de** control FontCon
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

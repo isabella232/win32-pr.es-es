@@ -1,6 +1,6 @@
 ---
-title: Métodos de la propiedad IADsAccessControlList (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsAccessControlList obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsAccessControlList (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsAccessControlList obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: cb68bb61-4216-4f69-bea1-ab7f98937a27
 ms.tgt_platform: multiple
 keywords:
@@ -21,16 +21,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55763b7c52071ca5bfd0a875912941090b7992c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 29c42a005b89215a974fe0d546a1e87b23c78be25c33a1b494b172fa19bead94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428400"
 ---
 # <a name="iadsaccesscontrollist-property-methods"></a>Métodos de propiedad IADsAccessControlList
 
-Los métodos de propiedad de la interfaz [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -39,14 +39,14 @@ Los métodos de propiedad de la interfaz [**IADsAccessControlList**](/windows/de
 **AceCount**
 </dt> <dd> <dl>
 
-El número de entradas de control de acceso en la lista de control de acceso.
+Número de entradas de control de acceso de la lista de control de acceso.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -67,14 +67,14 @@ HRESULT put_AceCount(
 **AclRevision**
 </dt> <dd> <dl>
 
-El nivel de revisión de una lista de control de acceso. Este valor puede ser **la \_ revisión de ACL** o el DS de la **\_ revisión \_ de ACL**. Use **la \_ revisión \_ de ACL DS** si la ACL contiene una ACE específica del objeto. Todas las ACE de una ACL deben estar en el mismo nivel de revisión.
+Nivel de revisión de una lista de control de acceso. Este valor puede ser **ACL \_ REVISION o** ACL REVISION **\_ \_ DS.** Use **ACL \_ REVISION \_ DS si** la ACL contiene una ACE específica del objeto. Todas las ACE de una ACL deben estar en el mismo nivel de revisión.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -201,17 +201,17 @@ HRESULT ShowACEInACL(LPWSTR guestPath,LPWSTR user,LPWSTR passwd)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>        |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>        |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>  |
 | IID<br/>                      | IID \_ IADsAccessControlList se define como B7EE91CC-9BDD-11D0-852C-00C04FD8D503<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

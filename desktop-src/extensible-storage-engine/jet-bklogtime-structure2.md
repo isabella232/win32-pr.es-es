@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_BKLOGTIME'
-title: Estructura de JET_BKLOGTIME
+description: 'Más información sobre: JET_BKLOGTIME estructura'
+title: JET_BKLOGTIME estructura
 TOCTitle: JET_BKLOGTIME structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_BKLOGTIME
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_bklogtime(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b718254082095592f097097500d2690be320dd63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79a1ce202d504364075f0d71754fb1c9b7a70ff9627de910a47cd6d09cafe005
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475805"
 ---
-# <a name="jet_bklogtime-structure"></a>Estructura de JET_BKLOGTIME
+# <a name="jet_bklogtime-structure"></a>JET_BKLOGTIME estructura
 
-Describe la fecha y hora en que se realizó una copia de seguridad.
+Describe una fecha y hora en que se produjo una copia de seguridad.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,6 +64,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_BKLOGTIME](./jet-bklogtime-members.md)
+[JET_BKLOGTIME miembros](./jet-bklogtime-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

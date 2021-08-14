@@ -3,7 +3,7 @@ title: NM_NCHITTEST de notificación (rebar) (Commctrl.h)
 description: 'NM_NCHITTEST de notificación (rebar): enviado por un control rebar cuando el control recibe un mensaje \_ WM NCHITTEST. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.'
 ms.assetid: b345d83e-682d-4067-a783-689d64f9b7bc
 keywords:
-- NM_NCHITTEST de notificación (rebar) Controles de Windows
+- NM_NCHITTEST (rebar) notification code Windows Controls
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7935f1b3e990db55518c9d22537e8fb6db97962
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b5831ca9dbeda35c7757613cae1d31db921aa80f4b749d4c9407339a2531abcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410706"
 ---
 # <a name="nm_nchittest-rebar-notification-code"></a>Código \_ de notificación de NM NCHITTEST (rebar)
 
@@ -41,7 +41,7 @@ NM_NCHITTEST
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contiene información sobre el código de notificación. El **miembro dwItemSpec** contiene el índice de banda sobre el que se produjo el mensaje de la prueba de impacto, y el miembro **pt** contiene las coordenadas del mouse del mensaje de la prueba de impacto.
+Puntero a una [**estructura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contiene información sobre el código de notificación. El **miembro dwItemSpec** contiene el índice de banda sobre el que se produjo el mensaje de prueba de desconectación y el miembro **pt** contiene las coordenadas del mouse del mensaje de prueba de desconectación.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Devuelve cero para permitir que la barra de rebar realice el procesamiento prede
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Una cadena de regla del descriptor de protección contiene una lista secuencial de uno o más protectores.
+description: Una cadena de regla de descriptor de protección contiene una lista secuencial de uno o varios protectores.
 ms.assetid: FBFE2143-DC40-40F3-83CE-E6D8841F9C11
 title: Descriptores de protección
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11814df2af5bd9abee4260f4aadab5bb74c77a9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e99d4ec8de08ad2f657d2b3ac1992ce6e399ede277f8fde3e12f0732571b01a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907257"
 ---
 # <a name="protection-descriptors"></a>Descriptores de protección
 
-Una cadena de regla del descriptor de protección contiene una lista secuencial de uno o más protectores. Debe haber al menos un protector. Si hay más de uno, los protectores deben separarse en la cadena mediante **and** u **or**. Estos valores deben escribirse en mayúsculas. La sintaxis siguiente muestra el formato de cadena de un descriptor de protección.
+Una cadena de regla de descriptor de protección contiene una lista secuencial de uno o varios protectores. Debe haber al menos un protector. Si hay más de uno, los protectores deben estar separados en la cadena **por AND** o **OR**. Estos valores deben estar en mayúsculas. La sintaxis siguiente muestra el formato de cadena de un descriptor de protección.
 
 
 ```C++
@@ -102,38 +102,38 @@ Descriptor = [ Protector-or
 
 Los descriptores de protección se pueden definir actualmente para los siguientes tipos de autorización:
 
--   Un grupo de un bosque de Active Directory.
--   Un conjunto de credenciales Web.
+-   Un grupo en un Active Directory de datos.
+-   Conjunto de credenciales web.
 -   Un certificado en el almacén de certificados del usuario.
 
-Entre los ejemplos de cadenas de reglas de descriptor de protección para un grupo de Active Directory se incluyen los siguientes:
+Entre los ejemplos de cadenas de reglas de descriptor de protección para Active Directory grupo se incluyen los siguientes:
 
--   "SID = S-1-5-21-4392301 Y SID = S-1-5-21-3101812"
--   "SDDL = O:S-1-5-5-0-290724G: SYD: (A;; CCDC;;; S-1-5-5-0-290724) (A;;D C;;; WD) "
--   "LOCAL = usuario"
--   "LOCAL = equipo"
+-   "SID=S-1-5-21-4392301 AND SID=S-1-5-21-3101812"
+-   "SDDL=O:S-1-5-5-0-290724G:SYD:(A;; CCDC;;; S-1-5-5-0-290724)(A;;D C;;; WD)"
+-   "LOCAL=user"
+-   "LOCAL=machine"
 
-Entre los ejemplos de cadenas de reglas de descriptor de protección para un conjunto de credenciales Web se incluyen los siguientes:
+Entre los ejemplos de cadenas de reglas de descriptor de protección para un conjunto de credenciales web se incluyen los siguientes:
 
--   "Webcredentials = MyPasswordName"
--   "Webcredentials = MyPasswordName, myweb. com"
+-   "WEBCREDENTIALS=MyPasswordName"
+-   "WEBCREDENTIALS=MyPasswordName,myweb.com"
 
 Entre los ejemplos de cadenas de reglas de descriptor de protección para un certificado se incluyen los siguientes:
 
--   "CERTIFICAte = HashID: \_ hash SHA1 \_ del \_ certificado"
--   "CERTIFICAte = CertBlob: base64String"
+-   "CERTIFICATE=HashID:sha1 \_ hash \_ of \_ certificate"
+-   "CERTIFICATE=CertBlob:base64String"
 
-El descriptor de protección que especifique determina automáticamente qué proveedor de protección de claves se utiliza. Para obtener más información, consulte [proveedores de protección](protection-providers.md).
+El descriptor de protección que especifique determina automáticamente qué proveedor de protección de claves se usa. Para obtener más información, vea [Proveedores de protección.](protection-providers.md)
 
-Tenga en cuenta que el lado izquierdo del signo igual (=) debe ser **SID**, **SDDL**, **local**, **webcredentials** o **Certificate**. Estos valores no distinguen entre mayúsculas y minúsculas.
+Tenga en cuenta que el lado izquierdo del signo igual (=) debe ser **SID,** **SDDL,** **LOCAL,** **WEBCREDENTIALS** o **CERTIFICATE.** Estos valores no distinguen entre mayúsculas y minúsculas.
 
-Debe especificar una cadena de regla (o un nombre para mostrar asociado a una cadena de regla) cuando llame a la función [**NCryptCreateProtectionDescriptor**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcreateprotectiondescriptor) . Como alternativa, como las cadenas de reglas del descriptor de protección son bastante complicadas de usar y recordar, puede asociar un nombre para mostrar a la cadena de regla y registrar ambos mediante la función [**NCryptRegisterProtectionDescriptorName**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptregisterprotectiondescriptorname) . Después, puede usar el nombre para mostrar en **NCryptCreateProtectionDescriptor**.
+Debe especificar una cadena de regla (o un nombre para mostrar asociado a una cadena de regla) al llamar a la función [**NCryptCreateProtectionDescriptor.**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcreateprotectiondescriptor) Como alternativa, dado que las cadenas de reglas de descriptor de protección son algo complicadas de usar y recordar, puede asociar un nombre para mostrar a la cadena de regla y registrar ambos mediante la función [**NCryptRegisterProtectionDescriptorName.**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptregisterprotectiondescriptorname) A continuación, puede usar el nombre para mostrar **en NCryptCreateProtectionDescriptor**.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[DPAPI DE CNG](cng-dpapi.md)
+[CNG DPAPI](cng-dpapi.md)
 </dt> <dt>
 
 [Proveedores de protección](protection-providers.md)

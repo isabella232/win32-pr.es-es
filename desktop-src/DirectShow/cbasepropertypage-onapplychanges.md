@@ -1,7 +1,7 @@
 ---
-description: Se llama al método OnApplyChanges cuando el usuario aplica los cambios a la página de propiedades.
+description: Se llama al método OnApplyChanges cuando el usuario aplica cambios a la página de propiedades.
 ms.assetid: 15a55644-b7bf-4c72-8e26-18fc4fb714b9
-title: Método CBasePropertyPage. OnApplyChanges (Cprop. h)
+title: Método CBasePropertyPage.OnApplyChanges (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cbcea308a8daaa8b9fdf15be765dc5d3a0df182c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f822bed433af6e3fab0250e06a04911ee10187039036211974b046b32df6b7b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823111"
 ---
-# <a name="cbasepropertypageonapplychanges-method"></a>CBasePropertyPage. OnApplyChanges, método
+# <a name="cbasepropertypageonapplychanges-method"></a>Método CBasePropertyPage.OnApplyChanges
 
-`OnApplyChanges`Se llama al método cuando el usuario aplica los cambios a la página de propiedades.
+Se `OnApplyChanges` llama al método cuando el usuario aplica cambios a la página de propiedades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La implementación de la clase base devuelve S \_ correcto.
+La implementación de clase base devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBasePropertyPage:: Apply**](cbasepropertypage-apply.md) llama a `OnApplyChanges` si la marca [**\_ bDirty CBasePropertyPage:: m**](cbasepropertypage-m-bdirty.md) es **true**. Invalide `OnApplyChanges` para procesar los cambios y restablecer **m \_ bDirty** en **false**.
+El [**método CBasePropertyPage::Apply**](cbasepropertypage-apply.md) llama a si la marca `OnApplyChanges` [**CBasePropertyPage::m \_ bDirty**](cbasepropertypage-m-bdirty.md) es **TRUE.** Invalide `OnApplyChanges` para procesar los cambios y **\_ restablezca m bDirty** en **FALSE.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -67,16 +67,16 @@ HRESULT CMyProp::OnApplyChanges(void)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

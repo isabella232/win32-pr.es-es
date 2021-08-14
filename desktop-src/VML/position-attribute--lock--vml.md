@@ -1,26 +1,26 @@
 ---
-title: Position (atributo, Lock) (VML)
-description: Position (atributo, Lock) (VML)
+title: Atributo Position (Lock)(VML)
+description: Atributo Position (Lock)(VML)
 ms.assetid: 98079909-d48e-4da3-a7a9-d3db541b9910
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ab9059dd4bf7ca5a28ccd4afadbcd375d874548
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2f622a09cf8b34b890d8804ef555b6c5b77435112aea4cee72fe2a6b7a03c785
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475095"
 ---
-# <a name="position-attribute-lockvml"></a>Position (atributo, Lock) (VML)
+# <a name="position-attribute-lockvml"></a>Atributo Position (Lock)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si la posición de una forma está bloqueada en un editor. Lectura/escritura **VgTriState**.
+Determina si la posición de una forma está bloqueada en un editor. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,14 +28,14 @@ Determina si la posición de una forma está bloqueada en un editor. Lectura/esc
 
 **Sintaxis de etiquetas**
 
-<o: *elemento* position = " *expresión* " >
+<o: *element* position=" *expression* ">
 
 **Comentarios:**
 
-Si es **true**, la posición de la forma está bloqueada en el editor. El valor predeterminado es **False**.
+Si **es True**, la posición de la forma está bloqueada en el editor. El valor predeterminado es **False**.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

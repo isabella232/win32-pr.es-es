@@ -1,71 +1,71 @@
 ---
-title: Styles (patrón de control)
-description: Describe las directrices y convenciones para implementar IStylesProvider, incluida información sobre propiedades y métodos. El patrón de control de estilos se usa para describir un elemento de la interfaz de usuario que tiene un estilo, color de relleno, patrón de relleno o forma específicos.
+title: Patrón de control estilos
+description: Describe directrices y convenciones para implementar IStylesProvider, incluida información sobre propiedades y métodos. El patrón de control Estilos se usa para describir un elemento de interfaz de usuario que tiene un estilo, color de relleno, patrón de relleno o forma específicos.
 ms.assetid: 65125E07-70D4-48E5-B18D-E9D66ABC6FC0
 keywords:
-- Automatización de la interfaz de usuario, implementar el patrón de control de estilos
-- Automatización de la interfaz de usuario, patrón de control Styles
-- Automatización de la interfaz de usuario, IStylesProvider
+- Automatización de la interfaz de usuario,implementing Styles control pattern
+- Automatización de la interfaz de usuario,patrón de control Estilos
+- Automatización de la interfaz de usuario,IStylesProvider
 - IStylesProvider
-- implementar el patrón de control de estilos de UI Automation
-- Styles (patrón de control)
+- implementar el patrón de control Automatización de la interfaz de usuario estilos de aplicación
+- Patrón de control Estilos
 - patrones de control, IStylesProvider
-- patrones de control, implementar estilos de automatización de la interfaz de usuario
+- patrones de control, implementar Automatización de la interfaz de usuario estilos
 - patrones de control, estilos
-- interfaces, IStylesProvider
+- interfaces,IStylesProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 611e2f1979aaa4744ce3ff39965053f63399b2b9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a66e52a6829e592cc659d5ce47b51a09b6d8910d4bd2c41a1e03c9b661d027fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324093"
 ---
-# <a name="styles-control-pattern"></a>Styles (patrón de control)
+# <a name="styles-control-pattern"></a>Patrón de control estilos
 
-Describe las directrices y convenciones para implementar [**IStylesProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-istylesprovider), incluida información sobre propiedades y métodos. El patrón de control de **estilos** se usa para describir un elemento de la interfaz de usuario que tiene un estilo, color de relleno, patrón de relleno o forma específicos.
+Describe directrices y convenciones para implementar [**IStylesProvider,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-istylesprovider)incluida información sobre propiedades y métodos. El **patrón de** control Estilos se usa para describir un elemento de interfaz de usuario que tiene un estilo, color de relleno, patrón de relleno o forma específicos.
 
-El patrón de control de **estilos** es especialmente útil para describir los elementos de un documento, que suelen tener tales estilos. Los estilos suelen llevar información útil para los clientes con discapacidades. por ejemplo, un estilo puede describir una cadena determinada como título de un documento o un objeto de diagrama de flujo determinado como un rombo o un círculo. Para obtener ejemplos de controles que implementan este patrón de control, vea [tipos de control y sus patrones de control admitidos](uiauto-controlpatternmapping.md).
+El **patrón de** control Estilos es especialmente útil para describir los elementos de un documento, que con frecuencia tienen estos estilos. Los estilos suelen llevar información útil para los clientes con discapacidades. Por ejemplo, un estilo puede describir una cadena determinada como título de un documento o un determinado objeto de diagrama de flujo como un rombo o un círculo. Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y Sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Directrices y convenciones de implementación](#implementation-guidelines-and-conventions)
--   [Miembros requeridos para **IStylesProvider**](#required-members-for-istylesprovider)
+-   [Miembros necesarios para **IStylesProvider**](#required-members-for-istylesprovider)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="implementation-guidelines-and-conventions"></a>Directrices y convenciones de implementación
 
-Al implementar el patrón de control **styles** , tenga en cuenta las siguientes directrices y convenciones:
+Al implementar el patrón de control **Estilos,** tenga en cuenta las siguientes directrices y convenciones:
 
--   El archivo de encabezado UIAutomationClient. h define un conjunto de valores constantes con nombre que se utilizan para identificar varios estilos comunes. Para obtener más información, vea [**identificadores de estilo**](uiauto-style-identifiers.md).
--   Si usa el [**StyleId \_ personalizado**](uiauto-style-identifiers.md), debe implementar la propiedad [**IStylesProvider:: StyleName**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename) para permitir que los clientes detecten el nombre del estilo. No es necesario implementar la propiedad **StyleName** para un estilo estándar porque la automatización de la interfaz de usuario de Microsoft proporciona un nombre predeterminado, pero se puede implementar si es necesario reemplazar el nombre predeterminado.
--   Las demás propiedades del patrón de **estilos** son opcionales. el proveedor puede devolver [**UIA \_ E \_ NOTSUPPORTED**](uiauto-error-codes.md) para una propiedad que no se admite.
--   Los estilos de un intervalo de texto se pueden representar mediante los siguientes atributos de texto:
-    -   Al responder a una solicitud para el atributo de texto [**StyleId**](uiauto-textattribute-ids.md) , el intervalo de texto debe devolver uno de los identificadores de estilo descritos en [**identificadores de estilo**](uiauto-style-identifiers.md).
-    -   Si se usa [**StyleId \_ Custom**](uiauto-style-identifiers.md) , el intervalo de texto debe devolver un valor de cadena para el atributo de texto [**StyleName**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename) para permitir que los clientes detecten el nombre de estilo.
-    -   Un intervalo de texto que tiene varios estilos, como el encabezado y el texto normal, debe devolver la propiedad [**ReservedMixedAttributeValue**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiagetreservedmixedattributevalue) de automatización de la interfaz de usuario especial para las propiedades [**StyleId**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_styleid) y [**StyleName**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename) . Un cliente que recibe esta respuesta puede subdividir el intervalo de texto para encontrar dónde comienzan y terminan los estilos.
--   Las aplicaciones pueden usar una amplia variedad de estilos para describir objetos, pero la automatización de la interfaz de usuario solo representa los más comunes. Para representar atributos de estilo adicionales, como el color del borde, un proveedor puede devolver una lista de atributos adicionales en la propiedad [**ExtendedProperties**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-istylesprovider-get_extendedproperties) . Se trata básicamente de un contenedor de propiedades con un conjunto de propiedades extendidas, como "BorderColor = 0xFF0000;" BorderStyle = punteado ". Los valores de las propiedades extendidas pueden ser específicos de la aplicación.
+-   El archivo de encabezado UIAutomationClient.h define un conjunto de valores constantes con nombre que se usan para identificar varios estilos comunes. Para obtener más información, vea [**Identificadores de estilo**](uiauto-style-identifiers.md).
+-   Si usa [**StyleId \_ Personalizado,**](uiauto-style-identifiers.md)debe implementar la propiedad [**IStylesProvider::StyleName**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename) para permitir que los clientes detecten el nombre del estilo. No es necesario implementar la propiedad **StyleName** para un estilo estándar porque Microsoft Automatización de la interfaz de usuario proporciona un nombre predeterminado, pero puede implementarlo si necesita invalidar el nombre predeterminado.
+-   Las demás propiedades del patrón **Styles** son opcionales; el proveedor puede devolver [**UIA \_ E \_ NOTSUPPORTED para**](uiauto-error-codes.md) una propiedad que no se admite.
+-   Los estilos de un intervalo de texto se pueden representar a través de los siguientes atributos de texto:
+    -   Al responder a una solicitud para el atributo de texto [**StyleId,**](uiauto-textattribute-ids.md) el intervalo de texto debe devolver uno de los identificadores de estilo descritos en [**Identificadores de estilo**](uiauto-style-identifiers.md).
+    -   Si [**se usa StyleId \_ Custom,**](uiauto-style-identifiers.md) el intervalo de texto debe devolver un valor de cadena para el atributo de texto [**StyleName**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename) para permitir a los clientes detectar el nombre de estilo.
+    -   Un intervalo de texto que tenga varios estilos, como encabezado y texto normal, debe devolver la propiedad Automatización de la interfaz de usuario [**ReservedMixedAttributeValue**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiagetreservedmixedattributevalue) especial para las propiedades [**StyleId**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_styleid) y [**StyleName.**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename) Un cliente que recibe esta respuesta puede subdividir el intervalo de texto para encontrar dónde comienzan y terminan los estilos.
+-   Las aplicaciones pueden usar una amplia variedad de estilos para describir objetos, pero Automatización de la interfaz de usuario representa solo los más comunes. Para representar atributos de estilo adicionales, como el color del borde, un proveedor puede devolver una lista de atributos adicionales en la [**propiedad ExtendedProperties.**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-istylesprovider-get_extendedproperties) Básicamente se trata de un bolsa de propiedades con un conjunto de propiedades extendidas, como "BorderColor=0xFF0000; BorderStyle=dotted". Los valores de las propiedades extendidas pueden ser específicos de la aplicación.
 
-## <a name="required-members-for-istylesprovider"></a>Miembros requeridos para **IStylesProvider**
+## <a name="required-members-for-istylesprovider"></a>Miembros necesarios para **IStylesProvider**
 
-Las siguientes propiedades son necesarias para implementar la interfaz [**IStylesProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-istylesprovider) .
+Las siguientes propiedades son necesarias para implementar la [**interfaz IStylesProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-istylesprovider)
 
 
 
 | Miembros requeridos                                                            | Tipo de miembro | Notas |
 |-----------------------------------------------------------------------------|-------------|-------|
-| [**ExtendedProperties**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-istylesprovider-get_extendedproperties) | Propiedad    | None  |
-| [**Relleno**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillcolor)                       | Propiedad    | None  |
-| [**FillPatternColor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillpatterncolor)         | Propiedad    | None  |
-| [**FillPatternStyle**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillpatternstyle)         | Propiedad    | None  |
-| [**Forma**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_shape)                               | Propiedad    | None  |
-| [**StyleId**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_styleid)                           | Propiedad    | None  |
-| [**NombreEstilo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename)                       | Propiedad    | None  |
+| [**ExtendedProperties**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-istylesprovider-get_extendedproperties) | Propiedad    | Ninguno  |
+| [**FillColor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillcolor)                       | Propiedad    | Ninguno  |
+| [**FillPatternColor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillpatterncolor)         | Propiedad    | Ninguno  |
+| [**FillPatternStyle**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillpatternstyle)         | Propiedad    | Ninguno  |
+| [**Forma**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_shape)                               | Propiedad    | Ninguno  |
+| [**StyleId**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_styleid)                           | Propiedad    | Ninguno  |
+| [**NombreEstilo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename)                       | Propiedad    | Ninguno  |
 
 
 
- 
+ 
 
 Este patrón de control no tiene métodos o propiedades asociados.
 
@@ -82,6 +82,6 @@ Este patrón de control no tiene métodos o propiedades asociados.
 [Información general sobre el árbol de la UI Automation](uiauto-treeoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

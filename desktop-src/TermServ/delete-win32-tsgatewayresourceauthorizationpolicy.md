@@ -1,12 +1,12 @@
 ---
-title: Método Delete de la clase Win32_TSGatewayResourceAuthorizationPolicy
-description: Elimina la Directiva de autorización de recursos de Escritorio remoto actual (RD \ 160; RAP).
+title: Método Delete de la Win32_TSGatewayResourceAuthorizationPolicy clase
+description: Elimina la directiva de autorización Escritorio remoto recursos de escritorio remoto (RD \ 160; RAP).
 ms.assetid: cbabb997-63b8-4a4c-9e16-34f2638fca97
 ms.tgt_platform: multiple
 keywords:
 - Eliminar método Servicios de Escritorio remoto
-- Método Delete Servicios de Escritorio remoto, clase Win32_TSGatewayResourceAuthorizationPolicy
-- Clase Win32_TSGatewayResourceAuthorizationPolicy Servicios de Escritorio remoto, método Delete
+- Método Delete Servicios de Escritorio remoto , Win32_TSGatewayResourceAuthorizationPolicy clase
+- Win32_TSGatewayResourceAuthorizationPolicy clase Servicios de Escritorio remoto método , Delete
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 396a766fb307d1e8a912d614147a2bff2bd924c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ad39ebc5cf059575403a86cd790a6350ce520d8864fccc212f5be5a2ae3926b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513495"
 ---
-# <a name="delete-method-of-the-win32_tsgatewayresourceauthorizationpolicy-class"></a>Método Delete de la \_ clase Win32 TSGatewayResourceAuthorizationPolicy
+# <a name="delete-method-of-the-win32_tsgatewayresourceauthorizationpolicy-class"></a>Método Delete de la clase \_ TSGatewayResourceAuthorizationPolicy de Win32
 
-Elimina la Directiva de autorización de recursos de Escritorio remoto actual (RAP de RD).
+Elimina la directiva de autorización Escritorio remoto recursos de escritorio remoto (RD RAP).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,33 +43,33 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**\_TSGatewayResourceAuthorizationPolicy de Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: IWMPStringCollection2 isIdentical, método
-description: El método isIdentical devuelve un valor que indica si el objeto representado por la interfaz proporcionada es igual que el actual.
+title: IWMPStringCollection2 isIdentical (método)
+description: El método isIdentical devuelve un valor que indica si el objeto representado por la interfaz proporcionada es el mismo que el actual.
 ms.assetid: 826e7fd8-88f8-4a2a-9ca0-82a500099272
 keywords:
-- método isIdentical de Windows Media Player
-- método isIdentical Windows Media Player, interfaz IWMPStringCollection2
-- Interfaz IWMPStringCollection2 Windows Media Player, método isIdentical
+- Método isIdentical Reproductor de Windows Media
+- Método isIdentical Reproductor de Windows Media , interfaz IWMPStringCollection2
+- Interfaz IWMPStringCollection2 Reproductor de Windows Media , método isIdentical
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bb760dae213f28d44fbc707b4430cb151cfe578
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4576522c1b6d6834ded5e100a2618dcb45204f887420968a5828fdc5c9bd0fef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118330909"
 ---
-# <a name="iwmpstringcollection2isidentical-method"></a>IWMPStringCollection2:: isIdentical (método)
+# <a name="iwmpstringcollection2isidentical-method"></a>IWMPStringCollection2::isIdentical (método)
 
-El método **isIdentical** devuelve un valor que indica si el objeto representado por la interfaz proporcionada es igual que el actual.
+El **método isIdentical** devuelve un valor que indica si el objeto representado por la interfaz proporcionada es el mismo que el actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,34 +53,34 @@ Implements IWMPStringCollection2.isIdentical
 
 <dl> <dt>
 
-*pIWMPStringCollection2* \[ de\]
+*pIWMPStringCollection2* \[ En\]
 </dt> <dd>
 
-La interfaz **WMPLib. IWMPStringCollection2** que representa el objeto que se va a comparar con el actual.
+Interfaz **WMPLib.IWMPStringCollection2** que representa el objeto que se comparará con el actual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. Boolean** que es el resultado de la comparación. Un valor de **true** indica que los objetos de colección de cadenas son iguales.
+**System.Boolean** que es el resultado de la comparación. Un valor true **indica** que los objetos de colección de cadenas son los mismos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

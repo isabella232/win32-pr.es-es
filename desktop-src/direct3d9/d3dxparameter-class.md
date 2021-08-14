@@ -1,7 +1,7 @@
 ---
 description: Tipo del objeto.
 ms.assetid: ab405984-2ebc-4514-9400-bdb13676eda5
-title: Enumeración D3DXPARAMETER_CLASS (D3dx9shader. h)
+title: D3DXPARAMETER_CLASS enumeración (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: c42bfc9335c38de04ab484193a1e178a122f2210
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 10d786dbbb50c44519f4f6bb1239b9fd07dfadeb706c13eca588051a918103cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525244"
 ---
-# <a name="d3dxparameter_class-enumeration"></a>\_Enumeración de clases D3DXPARAMETER
+# <a name="d3dxparameter_class-enumeration"></a>Enumeración D3DXPARAMETER \_ CLASS
 
 Tipo del objeto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,52 +45,52 @@ typedef enum D3DXPARAMETER_CLASS {
 
 <dl> <dt>
 
-<span id="D3DXPC_SCALAR"></span><span id="d3dxpc_scalar"></span>**\_Escalar D3DXPC**
+<span id="D3DXPC_SCALAR"></span><span id="d3dxpc_scalar"></span>**D3DXPC \_ SCALAR**
 </dt> <dd>
 
-Constant es un valor escalar.
+La constante es escalar.
 
 </dd> <dt>
 
-<span id="D3DXPC_VECTOR"></span><span id="d3dxpc_vector"></span>**\_Vector D3DXPC**
+<span id="D3DXPC_VECTOR"></span><span id="d3dxpc_vector"></span>**D3DXPC \_ VECTOR**
 </dt> <dd>
 
-Constant es un vector.
+La constante es un vector.
 
 </dd> <dt>
 
-<span id="D3DXPC_MATRIX_ROWS"></span><span id="d3dxpc_matrix_rows"></span>**Filas de la \_ matriz D3DXPC \_**
+<span id="D3DXPC_MATRIX_ROWS"></span><span id="d3dxpc_matrix_rows"></span>**FILAS DE MATRIZ \_ \_ D3DXPC**
 </dt> <dd>
 
-Constant es una matriz principal de fila.
+Constante es una matriz principal de filas.
 
 </dd> <dt>
 
-<span id="D3DXPC_MATRIX_COLUMNS"></span><span id="d3dxpc_matrix_columns"></span>**Columnas de la \_ matriz D3DXPC \_**
+<span id="D3DXPC_MATRIX_COLUMNS"></span><span id="d3dxpc_matrix_columns"></span>**COLUMNAS DE MATRIZ \_ \_ D3DXPC**
 </dt> <dd>
 
-Constant es una matriz principal de columna.
+Constante es una matriz principal de columnas.
 
 </dd> <dt>
 
-<span id="D3DXPC_OBJECT"></span><span id="d3dxpc_object"></span>**\_Objeto D3DXPC**
+<span id="D3DXPC_OBJECT"></span><span id="d3dxpc_object"></span>**D3DXPC \_ OBJECT**
 </dt> <dd>
 
-Constant es una textura, un sombreador o una cadena.
+Constante es una textura, un sombreador o una cadena.
 
 </dd> <dt>
 
-<span id="D3DXPC_STRUCT"></span><span id="d3dxpc_struct"></span>**\_Struct D3DXPC**
+<span id="D3DXPC_STRUCT"></span><span id="d3dxpc_struct"></span>**D3DXPC \_ (STRUCT)**
 </dt> <dd>
 
-Constant es una estructura.
+Constante es una estructura .
 
 </dd> <dt>
 
-<span id="D3DXPC_FORCE_DWORD"></span><span id="d3dxpc_force_dword"></span>**D3DXPC \_ forzar \_ DWORD**
+<span id="D3DXPC_FORCE_DWORD"></span><span id="d3dxpc_force_dword"></span>**D3DXPC \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -100,15 +100,15 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> <dt>
 
 [**D3DXSHADER \_ TYPEINFO**](d3dxshader-typeinfo.md)

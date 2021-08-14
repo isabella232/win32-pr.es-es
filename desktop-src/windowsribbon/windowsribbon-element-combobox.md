@@ -3,7 +3,7 @@ title: Elemento ComboBox
 description: Representa un control Cuadro combinado.
 ms.assetid: d796e26b-44c2-4e11-b1a5-2ede5bcff676
 keywords:
-- Elemento ComboBox de la cinta de opciones de Windows
+- ComboBox, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 60ad8866b655be587e0c3d0f123d8bc59b6b8a21
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 60ee7a03d25508df45469577f4d4159b5db5f5190f188ca594b71f176d037526
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851199"
 ---
 # <a name="combobox-element"></a>Elemento ComboBox
 
@@ -149,17 +149,17 @@ Opcional.
 
 Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-Dado que **ComboBox** es exclusivamente una galería de elementos, no admite elementos Command. También es el único control de galería que no admite un espacio de comandos (una colección de comandos que se declaran en marcado y se muestran en la parte inferior de una galería de elementos o galería de comandos). Para obtener más información, [vea Trabajar con galerías](ribbon-controls-galleries.md).
+Dado que **ComboBox** es exclusivamente una galería de elementos, no admite elementos Command. También es el único control de galería que no admite un espacio de comandos (una colección de comandos que se declaran en el marcado y se enumeran en la parte inferior de una galería de elementos o galería de comandos). Para obtener más información, [vea Trabajar con galerías](ribbon-controls-galleries.md).
 
-En la captura de pantalla siguiente se muestra un control [Cuadro combinado de](windowsribbon-controls-combobox.md) cinta de opciones de Windows Live Movie Maker.
+En la siguiente captura de pantalla se muestra un control [Cuadro combinado de](windowsribbon-controls-combobox.md) cinta Windows Live Movie Maker.
 
-![captura de pantalla de un control combobox en la cinta de microsoft paint.](images/controls/combobox.png)
+![captura de pantalla de un control de cuadro combinado en la cinta de microsoft paint.](images/controls/combobox.png)
 
 ## <a name="examples"></a>Ejemplos
 
 En los ejemplos siguientes se muestra el marcado básico para **ComboBox**.
 
-En esta sección de código se muestran las [](windowsribbon-element-group.md) declaraciones del comando **ComboBox,** con un grupo asociado que actúa como contenedor primario para el **elemento ComboBox.**
+En esta sección de código se muestran las declaraciones del comando **ComboBox,** con un [**grupo**](windowsribbon-element-group.md) asociado que actúa como contenedor primario para el **elemento ComboBox.**
 
 
 ```XML
@@ -196,7 +196,7 @@ En esta sección de código se muestran las declaraciones de control **ComboBox.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

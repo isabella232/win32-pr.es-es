@@ -1,11 +1,11 @@
 ---
-title: IConfigAsfWriter GetCurrentProfile, método
+title: Método IConfigAsfWriter GetCurrentProfile
 description: El método GetCurrentProfile recupera el perfil definido por la aplicación.
 ms.assetid: 7f6e7085-982b-4234-b890-950efdcdb559
 keywords:
-- Método GetCurrentProfile formato de Windows Media
-- Método GetCurrentProfile formato de Windows Media, interfaz IConfigAsfWriter
-- Interfaz IConfigAsfWriter formato de Windows Media, método GetCurrentProfile
+- Formato multimedia de windows del método GetCurrentProfile
+- Método GetCurrentProfile windows Media Format , interfaz IConfigAsfWriter
+- IConfigAsfWriter interface windows Media Format , GetCurrentProfile (método)
 topic_type:
 - apiref
 api_name:
@@ -15,23 +15,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 88931d83674ffa84288b4bec10e3c9dba15c812a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9b7a07ed6ab5b94138c0c04d40782496535e0ae4a3eff0f443c89d7ccd0c4b1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105714397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118198386"
 ---
-# <a name="iconfigasfwritergetcurrentprofile-method"></a>IConfigAsfWriter:: GetCurrentProfile (método)
+# <a name="iconfigasfwritergetcurrentprofile-method"></a>IConfigAsfWriter::GetCurrentProfile (método)
 
-El método **GetCurrentProfile** recupera el perfil definido por la aplicación.
+El **método GetCurrentProfile** recupera el perfil definido por la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
 
 ```C++
 HRESULT GetCurrentProfile(
-  [out] IWMProfile **ppProfile
+  [out] IWMProfile **ppProfile
 );
 ```
 
@@ -41,28 +41,28 @@ HRESULT GetCurrentProfile(
 
 <dl> <dt>
 
-*ppProfile* \[ enuncia\]
+*ppProfile* \[ out\]
 </dt> <dd>
 
-Dirección de un puntero que recibe la interfaz [**IWMProfile**](iwmprofile.md) del perfil definido por la aplicación.
+Dirección de un puntero que recibe la [**interfaz IWMProfile**](iwmprofile.md) del perfil definido por la aplicación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un error, devuelve un código de error **HRESULT** .
+Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el método se ejecuta correctamente, el puntero **IWMProfile** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando termine de usarla.
+Si el método se realiza correctamente, el **puntero IWMProfile** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando haya terminado de usarlo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IConfigAsfWriter**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85))
+[**IConfigAsfWriter (Interfaz)**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b9dd185ba709aa4439deb98f92be3c8f2f456cea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 05b94094c897f4be55aea5d0de05a72e66b6c1eaa3b1adb3f9734d29bb78d80a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721698"
 ---
 # <a name="span-idvspixengineipipelinestagesrequest2spanipipelinestagesrequest2-interface"></a><span id="vspixengine.ipipelinestagesrequest2"></span>Interfaz IPipeLineStagesRequest2
 
-No se utiliza. Anteriormente, una solicitud de datos de fases de canalización.
+No se usa. Anteriormente, una solicitud de datos de fases de canalización.
 
 ## <a name="members"></a>Miembros
 
@@ -44,7 +44,7 @@ La **interfaz IPipeLineStagesRequest2** tiene estos métodos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

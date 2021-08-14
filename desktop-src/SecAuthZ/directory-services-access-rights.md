@@ -1,34 +1,34 @@
 ---
-description: Cada Active Directory objeto tiene un descriptor de seguridad asignado.
+description: Cada Active Directory objeto tiene asignado un descriptor de seguridad.
 ms.assetid: 2e4ed13f-f09e-43b4-9862-95a79c229f0c
 title: Derechos de acceso de servicios de directorio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f24e75db6733a8f5833e7f45ab5a52dafd67f5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 901c8eba5736750e0c91eb713993876c47858407110ca3c8ebc6ed8122e1b8d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913768"
 ---
 # <a name="directory-services-access-rights"></a>Derechos de acceso de servicios de directorio
 
-Cada Active Directory objeto tiene un [*descriptor de seguridad*](/windows/desktop/SecGloss/s-gly) asignado. Se puede establecer un conjunto de derechos de confianza específicos de los objetos de servicio de directorio dentro de estos descriptores de seguridad. Estos derechos se muestran en la tabla siguiente. Para obtener más información, vea [controlar derechos de acceso](/windows/desktop/AD/control-access-rights).
+Cada Active Directory objeto tiene asignado un [*descriptor*](/windows/desktop/SecGloss/s-gly) de seguridad. Se puede establecer un conjunto de derechos de administrador específicos de los objetos de servicio de directorio dentro de estos descriptores de seguridad. Estos derechos se enumeran en la tabla siguiente. Para obtener más información, vea [Controlar los derechos de acceso.](/windows/desktop/AD/control-access-rights)
 
 
 
 | Derechos                                | Significado                                                                                                                                                                                                                                                                                 |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ACTRL \_ DS \_ abierto<br/>            | Abra un objeto DS.<br/>                                                                                                                                                                                                                                                            |
-| ACTRL \_ DS \_ crear \_ secundario<br/>   | Cree un objeto DS secundario.<br/>                                                                                                                                                                                                                                                    |
-| ACTRL \_ DS \_ eliminar \_ secundario<br/>   | Elimine un objeto DS secundario.<br/>                                                                                                                                                                                                                                                    |
-| lista de ACTRL \_ DS \_<br/>            | Enumerar un objeto DS.<br/>                                                                                                                                                                                                                                                       |
-| ACTRL \_ DS \_ lectura \_ prop<br/>      | Leer las propiedades de un objeto DS.<br/>                                                                                                                                                                                                                                          |
-| PROP de escritura de ACTRL \_ DS \_ \_<br/>     | Escribir propiedades para un objeto DS.<br/>                                                                                                                                                                                                                                            |
-| ACTRL \_ DS \_ Self<br/>            | Acceso permitido solo después de que se realicen las comprobaciones de derechos validadas admitidas por el objeto. Esta marca se puede usar solo para realizar todas las comprobaciones de derechos validadas del objeto o se puede combinar con un identificador de un derecho específico validado para realizar solo esa comprobación.<br/> |
-| ACTRL \_ \_ árbol de eliminación de DS \_<br/>    | Elimina un árbol de objetos de DS.<br/>                                                                                                                                                                                                                                                 |
-| ACTRL \_ \_ objeto de lista de DS \_<br/>    | Muestra un árbol de objetos de DS.<br/>                                                                                                                                                                                                                                                   |
-| ACTRL \_ \_ acceso de control de DS \_<br/> | Acceso permitido solo después de que se realicen las comprobaciones de derechos extendidas admitidas por el objeto. Esta marca se puede usar solo para realizar todas las comprobaciones de derechos extendidos en el objeto o puede combinarse con un identificador de un derecho extendido específico para realizar solo esa comprobación.<br/>    |
+| ACTRL \_ DS \_ OPEN<br/>            | Abra un objeto DS.<br/>                                                                                                                                                                                                                                                            |
+| ACTRL \_ DS \_ CREATE \_ CHILD<br/>   | Cree un objeto DS secundario.<br/>                                                                                                                                                                                                                                                    |
+| ACTRL \_ DS \_ DELETE \_ CHILD<br/>   | Elimina un objeto DS secundario.<br/>                                                                                                                                                                                                                                                    |
+| ACTRL \_ DS \_ LIST<br/>            | Enumerar un objeto DS.<br/>                                                                                                                                                                                                                                                       |
+| ACTRL \_ DS \_ READ \_ PROP<br/>      | Lea las propiedades de un objeto DS.<br/>                                                                                                                                                                                                                                          |
+| ACTRL \_ DS \_ WRITE \_ PROP<br/>     | Escribir propiedades para un objeto DS.<br/>                                                                                                                                                                                                                                            |
+| ACTRL \_ DS \_ SELF<br/>            | Acceso permitido solo después de que se realicen comprobaciones de derechos validadas admitidas por el objeto. Esta marca se puede usar por sí sola para realizar todas las comprobaciones de derechos validados del objeto o se puede combinar con un identificador de un derecho validado específico para realizar solo esa comprobación.<br/> |
+| ÁRBOL DE ELIMINACIÓN DE ACTRL \_ DS \_ \_<br/>    | Elimine un árbol de objetos DS.<br/>                                                                                                                                                                                                                                                 |
+| ACTRL \_ DS \_ LIST \_ (OBJETO)<br/>    | Enumera un árbol de objetos DS.<br/>                                                                                                                                                                                                                                                   |
+| ACTRL \_ DS \_ CONTROL \_ ACCESS<br/> | Acceso permitido solo después de realizar comprobaciones de derechos extendidos admitidas por el objeto. Esta marca se puede usar por sí sola para realizar todas las comprobaciones de derechos extendidos en el objeto o se puede combinar con un identificador de un derecho extendido específico para realizar solo esa comprobación.<br/>    |
 
 
 

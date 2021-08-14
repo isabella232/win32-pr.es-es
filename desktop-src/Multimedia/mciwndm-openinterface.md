@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_OPENINTERFACE (VFW. h)
-description: El \_ mensaje OPENINTERFACE de MCIWNDM asocia el flujo de datos o el archivo asociado a la interfaz especificada a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndOpenInterface.
+title: MCIWNDM_OPENINTERFACE mensaje (Vfw.h)
+description: El mensaje MCIWNDM OPENINTERFACE asocia el flujo de datos o el archivo asociado a la interfaz especificada \_ a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndOpenInterface.
 ms.assetid: 73cbd637-d315-4b39-a978-2b72aed1f303
 keywords:
-- Mensaje de MCIWNDM_OPENINTERFACE de Windows multimedia
+- MCIWNDM_OPENINTERFACE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c40453f4d587429508a5aae19bc432fc46088ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83097ad6301dbfdb4636a8478c2df8e544207df334efd27fe9695f15e0693533
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373589"
 ---
-# <a name="mciwndm_openinterface-message"></a>MCIWNDM \_ OPENINTERFACE
+# <a name="mciwndm_openinterface-message"></a>Mensaje OPENINTERFACE de MCIWNDM \_
 
-El **mensaje \_ OPENINTERFACE de MCIWNDM** asocia el flujo de datos o el archivo asociado a la interfaz especificada a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndOpenInterface**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface) .
+El **mensaje MCIWNDM \_ OPENINTERFACE** asocia el flujo de datos o el archivo asociado a la interfaz especificada a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndOpenInterface.**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface)
 
 
 ```C++
@@ -38,30 +38,30 @@ lParam = (LPARAM) (LPUNKNOWN) pUnk;
 
 <dl> <dt>
 
-<span id="pUnk"></span><span id="punk"></span><span id="PUNK"></span>*pUnk*
+<span id="pUnk"></span><span id="punk"></span><span id="PUNK"></span>*Punk*
 </dt> <dd>
 
-Puntero a una interfaz IAVI que señala a un archivo o a un flujo de datos de un archivo.
+Puntero a una interfaz IAVI que apunta a un archivo o a un flujo de datos de un archivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
