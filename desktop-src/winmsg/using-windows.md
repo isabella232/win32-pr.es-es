@@ -1,32 +1,32 @@
 ---
-description: En los ejemplos de esta sección se describe cómo realizar tareas asociadas al uso de Windows.
+description: En los ejemplos de esta sección se describe cómo realizar tareas asociadas con el uso de ventanas.
 ms.assetid: 7695fb64-3918-4d9a-8cd8-01d20edd9c55
 title: Uso de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54bebe537f82de65efddc086ee457e1abe47a617
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75681987a4bc012618135f666b3ff973880b8129d2ad1ee896bcdbed266d179d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118436971"
 ---
 # <a name="using-windows"></a>Uso de Windows
 
-En los ejemplos de esta sección se describe cómo realizar las tareas siguientes:
+En los ejemplos de esta sección se describe cómo realizar las siguientes tareas:
 
 -   [Crear una ventana principal](#creating-a-main-window)
--   [Crear, enumerar y ajustar el tamaño de las ventanas secundarias](#creating-enumerating-and-sizing-child-windows)
+-   [Crear, enumerar y dimensionar elementos secundarios Windows](#creating-enumerating-and-sizing-child-windows)
 -   [Destruir una ventana](#destroying-a-window)
--   [Usar ventanas superpuestas](#using-layered-windows)
+-   [Uso de capas Windows](#using-layered-windows)
 
 ## <a name="creating-a-main-window"></a>Crear una ventana principal
 
-La primera ventana que crea una aplicación es normalmente la ventana principal. La ventana principal se crea mediante la función [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) , especificando la clase de ventana, el nombre de la ventana, los estilos de ventana, el tamaño, la posición, el identificador de menú, el identificador de instancia y los datos de creación. Una ventana principal pertenece a una clase de ventana definida por la aplicación, por lo que debe registrar la clase de ventana y proporcionar un procedimiento de ventana para la clase antes de crear la ventana principal.
+La primera ventana que crea una aplicación suele ser la ventana principal. La ventana principal se crea mediante la función [**CreateWindowEx,**](/windows/win32/api/winuser/nf-winuser-createwindowexa) especificando la clase de ventana, el nombre de la ventana, los estilos de ventana, el tamaño, la posición, el identificador de menú, el identificador de instancia y los datos de creación. Una ventana principal pertenece a una clase de ventana definida por la aplicación, por lo que debe registrar la clase de ventana y proporcionar un procedimiento de ventana para la clase antes de crear la ventana principal.
 
-Normalmente, la mayoría de las aplicaciones usan el estilo [**WS \_ OVERLAPPEDWINDOW**](window-styles.md) para crear la ventana principal. Este estilo proporciona a la ventana una barra de título, un menú ventana, un borde de ajuste de tamaño y botones minimizar y maximizar. La función [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) devuelve un identificador que identifica de forma única la ventana.
+La mayoría de las aplicaciones suelen usar [**el estilo \_ OVERLAPPEDWINDOW**](window-styles.md) de WS para crear la ventana principal. Este estilo proporciona a la ventana una barra de título, un menú de ventana, un borde de ajuste de tamaño y minimiza y maximiza los botones. La [**función CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) devuelve un identificador que identifica de forma única la ventana.
 
-En el ejemplo siguiente se crea una ventana principal que pertenece a una clase de ventana definida por la aplicación. El nombre de la ventana, la **ventana principal**, aparecerá en la barra de título de la ventana. Mediante la combinación de los estilos [**WS \_ VSCROLL**](window-styles.md) y **WS \_ HSCROLL** con el estilo **WS \_ OVERLAPPEDWINDOW** , la aplicación crea una ventana principal con barras de desplazamiento horizontal y vertical además de los componentes proporcionados por el estilo **WS \_ OVERLAPPEDWINDOW** . Las cuatro apariciones de la constante **\_ USEDEFAULT de CW** establecen el tamaño inicial y la posición de la ventana en los valores predeterminados definidos por el sistema. Al especificar **null** en lugar de un identificador de menú, la ventana tendrá el menú definido para la clase de ventana.
+En el ejemplo siguiente se crea una ventana principal que pertenece a una clase de ventana definida por la aplicación. El nombre de la **ventana, Ventana** principal, aparecerá en la barra de título de la ventana. Al combinar los estilos [**WS \_ VSCROLL**](window-styles.md) y **WS \_ HSCROLL** con el estilo **WS \_ OVERLAPPEDWINDOW,** la aplicación crea una ventana principal con barras de desplazamiento horizontal y vertical, además de los componentes proporcionados por el estilo **\_ OVERLAPPEDWINDOW de WS.** Las cuatro repeticiones de la **constante \_ CW USEDEFAULT** establecen el tamaño inicial y la posición de la ventana en los valores predeterminados definidos por el sistema. Al especificar **NULL en** lugar de un identificador de menú, la ventana tendrá el menú definido para la clase de ventana.
 
 
 ```
@@ -64,15 +64,15 @@ UpdateWindow(hwndMain);
 
 
 
-Observe que en el ejemplo anterior se llama a la función [**ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) después de crear la ventana principal. Esto se hace porque el sistema no muestra automáticamente la ventana principal después de crearla. Al pasar la marca **SW \_ SHOWDEFAULT** a **ShowWindow**, la aplicación permite que el programa que inició la aplicación establezca el estado de presentación inicial de la ventana principal. La función [**UpdateWindow**](/windows/win32/api/winuser/nf-winuser-updatewindow) envía la ventana su primer mensaje de [**\_ dibujo de WM**](../gdi/wm-paint.md) .
+Observe que en el ejemplo anterior se llama a [**la función ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) después de crear la ventana principal. Esto se hace porque el sistema no muestra automáticamente la ventana principal después de crearla. Al pasar la **marca \_ SW SHOWDEFAULT** a **ShowWindow,** la aplicación permite al programa que inició la aplicación establecer el estado de presentación inicial de la ventana principal. La [**función UpdateWindow**](/windows/win32/api/winuser/nf-winuser-updatewindow) envía a la ventana su primer [**mensaje WM \_ PAINT.**](../gdi/wm-paint.md)
 
-## <a name="creating-enumerating-and-sizing-child-windows"></a>Crear, enumerar y ajustar el tamaño de las ventanas secundarias
+## <a name="creating-enumerating-and-sizing-child-windows"></a>Crear, enumerar y dimensionar elementos secundarios Windows
 
-Puede dividir el área de cliente de una ventana en distintas áreas funcionales mediante el uso de ventanas secundarias. La creación de una ventana secundaria es como la creación de una ventana principal: se usa la función [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) . Para crear una ventana de una clase de ventana definida por la aplicación, debe registrar la clase de ventana y proporcionar un procedimiento de ventana antes de crear la ventana secundaria. Debe asignar a la ventana secundaria el [**estilo \_ secundario WS**](window-styles.md) y especificar una ventana primaria para la ventana secundaria al crearla.
+Puede dividir el área de cliente de una ventana en distintas áreas funcionales mediante ventanas secundarias. Crear una ventana secundaria es como crear una ventana principal: se usa [**la función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Para crear una ventana de una clase de ventana definida por la aplicación, debe registrar la clase de ventana y proporcionar un procedimiento de ventana antes de crear la ventana secundaria. Debe proporcionar a la ventana secundaria el estilo [**WS \_ CHILD**](window-styles.md) y especificar una ventana primaria para la ventana secundaria al crearla.
 
-En el ejemplo siguiente se divide el área cliente de la ventana principal de una aplicación en tres áreas funcionales mediante la creación de tres ventanas secundarias de igual tamaño. Cada ventana secundaria tiene el mismo alto que el área cliente de la ventana principal, pero cada una de ellas tiene un ancho de un tercio. La ventana principal crea las ventanas secundarias en respuesta al mensaje de [**\_ creación de WM**](wm-create.md) , que la ventana principal recibe durante su propio proceso de creación de ventanas. Dado que cada ventana secundaria tiene el estilo de [**\_ borde de WS**](window-styles.md) , cada una tiene un borde de línea fino. Además, dado que no se especifica el estilo **\_ visible de WS** , cada ventana secundaria está oculta inicialmente. Observe también que a cada ventana secundaria se le asigna un identificador de ventana secundaria.
+En el ejemplo siguiente se divide el área de cliente de la ventana principal de una aplicación en tres áreas funcionales mediante la creación de tres ventanas secundarias del mismo tamaño. Cada ventana secundaria tiene el mismo alto que el área cliente de la ventana principal, pero cada una tiene un tercio de su ancho. La ventana principal crea las ventanas secundarias en respuesta al mensaje [**\_ WM CREATE,**](wm-create.md) que la ventana principal recibe durante su propio proceso de creación de ventanas. Dado que cada ventana secundaria tiene el estilo BORDER de [**WS, \_**](window-styles.md) cada una tiene un borde de línea fina. Además, dado que no se especifica el estilo visible de **WS, \_** cada ventana secundaria se oculta inicialmente. Observe también que a cada ventana secundaria se le asigna un identificador de ventana secundaria.
 
-La ventana principal cambia el tamaño de las ventanas secundarias en respuesta al mensaje de [**\_ tamaño de WM**](wm-size.md) , que recibe la ventana principal cuando cambia el tamaño. En respuesta al **\_ tamaño de WM**, la ventana principal recupera las dimensiones de su área de cliente mediante la función [**GetClientRect**](/windows/win32/api/winuser/nf-winuser-getclientrect) y, a continuación, pasa las dimensiones a la función [**EnumChildWindows**](/windows/win32/api/winuser/nf-winuser-enumchildwindows) . **EnumChildWindows** pasa el identificador a cada ventana secundaria, a su vez, a la función de devolución de llamada [**EnumChildProc**](/previous-versions/windows/desktop/legacy/ms633493(v=vs.85)) definida por la aplicación. Esta función dimensiona y coloca cada ventana secundaria mediante una llamada a la función [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) . el tamaño y la posición se basan en las dimensiones del área cliente de la ventana principal y el identificador de la ventana secundaria. Después, **EnumChildProc** llama a la función [**ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) para que la ventana sea visible.
+La ventana principal cambia de tamaño y coloca las ventanas secundarias en respuesta al mensaje [**WM \_ SIZE,**](wm-size.md) que la ventana principal recibe cuando cambia su tamaño. En respuesta a **WM \_ SIZE,** la ventana principal recupera las dimensiones de su área cliente mediante la función [**GetClientRect**](/windows/win32/api/winuser/nf-winuser-getclientrect) y, a continuación, pasa las dimensiones a la función [**EnumChildWindows.**](/windows/win32/api/winuser/nf-winuser-enumchildwindows) **EnumChildWindows** pasa el identificador a cada ventana secundaria, a su vez, a la función de devolución de llamada [**EnumChildProc**](/previous-versions/windows/desktop/legacy/ms633493(v=vs.85)) definida por la aplicación. Esta función tamaños y posiciones de cada ventana secundaria mediante una llamada a [**la función MoveWindow;**](/windows/win32/api/winuser/nf-winuser-movewindow) el tamaño y la posición se basan en las dimensiones del área de cliente de la ventana principal y el identificador de la ventana secundaria. Después, **EnumChildProc llama** a [**la función ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) para que la ventana sea visible.
 
 
 ```
@@ -160,9 +160,9 @@ BOOL CALLBACK EnumChildProc(HWND hwndChild, LPARAM lParam)
 
 ## <a name="destroying-a-window"></a>Destruir una ventana
 
-Puede usar la función [**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) para destruir una ventana. Normalmente, una aplicación envía el mensaje de [**\_ cierre de WM**](wm-close.md) antes de destruir una ventana, con lo que la ventana tiene la oportunidad de solicitar confirmación al usuario antes de que se destruya la ventana. Una ventana que incluye un menú ventana recibe automáticamente el mensaje de **\_ cierre de WM** cuando el usuario hace clic en **cerrar** en el menú ventana. Si el usuario confirma que se debe destruir la ventana, la aplicación llama a **DestroyWindow**. El sistema envía el mensaje de [**\_ destrucción de WM**](wm-destroy.md) a la ventana después de quitarlo de la pantalla. En respuesta a **la \_ destrucción de WM**, la ventana guarda sus datos y libera todos los recursos que ha asignado. Una ventana principal finaliza su procesamiento de **WM \_ Destroy** mediante una llamada a la función [**PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage) para salir de la aplicación.
+Puede usar la [**función DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) para destruir una ventana. Normalmente, una aplicación envía el [**mensaje WM \_ CLOSE**](wm-close.md) antes de destruir una ventana, lo que ofrece a la ventana la oportunidad de solicitar confirmación al usuario antes de que se destruya la ventana. Una ventana que incluye un menú de ventana recibe automáticamente el mensaje **WM \_ CLOSE** cuando el usuario hace clic **en Cerrar en** el menú de la ventana. Si el usuario confirma que se debe destruir la ventana, la aplicación llama a **DestroyWindow**. El sistema envía el [**mensaje WM \_ DESTROY**](wm-destroy.md) a la ventana después de quitarlo de la pantalla. En respuesta a **WM \_ DESTROY,** la ventana guarda sus datos y libera los recursos que asignó. Una ventana principal concluye su procesamiento de **WM \_ DESTROY** llamando a la [**función PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage) para salir de la aplicación.
 
-En el ejemplo siguiente se muestra cómo solicitar confirmación del usuario antes de destruir una ventana. En respuesta a [**la \_ cierre de WM**](wm-close.md), en el ejemplo se muestra un cuadro de diálogo que contiene los botones **sí**, **no** y **Cancelar** . Si el usuario hace clic en **sí**, se llama a [**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) ; de lo contrario, no se destruye la ventana. Dado que la ventana que se va a destruir es una ventana principal, el ejemplo llama a [**PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage) en respuesta a [**WM \_ Destroy**](wm-destroy.md).
+En el ejemplo siguiente se muestra cómo solicitar confirmación del usuario antes de destruir una ventana. En respuesta a [**WM \_ CLOSE**](wm-close.md), en el ejemplo se muestra un cuadro de diálogo que contiene los botones **Sí,** **No** **y Cancelar.** Si el usuario hace clic **en Sí,** [**se llama a DestroyWindow;**](/windows/win32/api/winuser/nf-winuser-destroywindow) De lo contrario, la ventana no se destruye. Dado que la ventana que se está destruyendo es una ventana principal, en el ejemplo se llama a [**PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage) en respuesta a [**WM \_ DESTROY**](wm-destroy.md).
 
 
 ```
@@ -187,9 +187,9 @@ case WM_DESTROY:
 
 
 
-## <a name="using-layered-windows"></a>Usar ventanas superpuestas
+## <a name="using-layered-windows"></a>Uso de capas Windows
 
-Para que aparezca un cuadro de diálogo como ventana translúcida, primero debe crear el cuadro de diálogo como de costumbre. Después, en [**WM \_ INITDIALOG**](../dlgbox/wm-initdialog.md), establezca el bit en capas del estilo extendido de la ventana y llame a [**SetLayeredWindowAttributes**](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) con el valor alfa deseado. El código podría tener este aspecto:
+Para que un cuadro de diálogo se cree como una ventana translúcida, cree primero el diálogo como de costumbre. A continuación, en [**WM \_ INITDIALOG,**](../dlgbox/wm-initdialog.md)establezca el bit en capas del estilo extendido de la ventana y llame a [**SetLayeredWindowAttributes**](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) con el valor alfa deseado. El código podría tener este aspecto:
 
 
 ```
@@ -204,9 +204,9 @@ SetLayeredWindowAttributes(hwnd, 0, (255 * 70) / 100, LWA_ALPHA);
 
 
 
-Tenga en cuenta que el tercer parámetro de [**SetLayeredWindowAttributes**](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) es un valor comprendido entre 0 y 255, con 0 para que la ventana sea completamente transparente y 255 lo que lo convierte en totalmente opaca. Este parámetro imita el [**BLENDFUNCTION**](/windows/win32/api/wingdi/ns-wingdi-blendfunction) más versátil de la función [**AlphaBlend**](/windows/win32/api/wingdi/nf-wingdi-alphablend) .
+Tenga en cuenta que el tercer parámetro de [**SetLayeredWindowAttributes**](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) es un valor que oscila entre 0 y 255, con 0, lo que hace que la ventana sea completamente transparente y 255 lo haga completamente opaca. Este parámetro imita la [**BLENDFUNCTION más versátil**](/windows/win32/api/wingdi/ns-wingdi-blendfunction) de la función [**AlphaBlend.**](/windows/win32/api/wingdi/nf-wingdi-alphablend)
 
-Para que esta ventana vuelva a ser totalmente opaca, quite el bit por **\_ \_ capas de WS ex** llamando a [**SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga) y, a continuación, pida a la ventana que vuelva a dibujarse. Se desea quitar el bit para que el sistema sepa que puede liberar alguna memoria asociada a la disposición en capas y el redireccionamiento. El código podría tener este aspecto:
+Para volver a hacer que esta ventana sea completamente opaca, quite el bit **WS \_ EX \_ LAYERED** llamando a [**SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga) y, a continuación, pida a la ventana que vuelva a dibujar. Se desea quitar el bit para que el sistema sepa que puede liberar algo de memoria asociada con la capa y el redireccionamiento. El código podría tener este aspecto:
 
 
 ```
@@ -224,7 +224,7 @@ RedrawWindow(hwnd,
 
 
 
-Para usar las ventanas secundarias superpuestas, la aplicación tiene que declararse como compatible con Windows 8 en el manifiesto.
+Para usar ventanas secundarias en capas, la aplicación tiene que declararse como Windows 8 en el manifiesto.
 
  
 

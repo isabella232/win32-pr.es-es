@@ -1,9 +1,9 @@
 ---
-title: Mensaje DM_POINTERHITTEST
-description: Se envía a una ventana, cuando la entrada de puntero se detecta por primera vez, con el fin de determinar el destino de entrada más probable para la manipulación directa.
+title: DM_POINTERHITTEST mensaje
+description: Se envía a una ventana, cuando se detecta por primera vez la entrada de puntero, con el fin de determinar el destino de entrada más probable para la manipulación directa.
 ms.assetid: E4CE60F0-0C2A-440A-8F64-B070867A1572
 keywords:
-- Mensajes y notificaciones de entrada de mensajes de DM_POINTERHITTEST
+- DM_POINTERHITTEST mensajes de entrada y notificaciones
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 23efab4606f758acfffdd02fa4c53a729f1f4a99
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fda57a0c7084ae0c6ab85514244ed531a182108ec5dce7aae7794de2c38c903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482476"
 ---
-# <a name="dm_pointerhittest-message"></a>Mensaje DM_POINTERHITTEST
+# <a name="dm_pointerhittest-message"></a>DM_POINTERHITTEST mensaje
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Se envía a una ventana, cuando la entrada de puntero se detecta por primera vez, con el fin de determinar el destino de entrada más probable para la [manipulación directa](/previous-versions/windows/desktop/directmanipulation/direct-manipulation-portal).
+Se envía a una ventana, cuando se detecta por primera vez la entrada de puntero, con el fin de determinar el destino de entrada más probable para [la manipulación directa.](/previous-versions/windows/desktop/directmanipulation/direct-manipulation-portal)
 
-> \[! Aún\]  
-> Las aplicaciones de escritorio deben tener en cuenta los ppp. Si la aplicación no tiene en cuenta los PPP, las coordenadas de pantalla contenidas en los mensajes de puntero y las estructuras relacionadas podrían aparecer inexactas debido a la virtualización de PPP. La virtualización de PPP proporciona compatibilidad con el escalado automático a las aplicaciones que no reconocen los PPP y está activo de forma predeterminada (los usuarios pueden desactivarla). Para obtener más información, vea [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
+> \[! Importante\]  
+> Las aplicaciones de escritorio deben tener en cuenta los valores de PPP. Si la aplicación no es compatible con PPP, las coordenadas de pantalla contenidas en los mensajes de puntero y las estructuras relacionadas pueden parecer inexactas debido a la virtualización de PPP. La virtualización de PPP proporciona compatibilidad con el escalado automático a aplicaciones que no son compatibles con PPP y que están activas de forma predeterminada (los usuarios pueden desactivarla). Para obtener más información, consulte [Escritura de aplicaciones Win32 con valores altos de PPP.](/previous-versions//dd464660(v=vs.85))
 
  
 
@@ -65,15 +65,15 @@ NULL
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

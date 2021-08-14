@@ -1,18 +1,18 @@
 ---
-title: Propiedad RedirectClipboard de IMsRdpClientAdvancedSettings5
-description: Establece o recupera la configuración para la redirección del portapapeles.
+title: Propiedad IMsRdpClientAdvancedSettings5 RedirectClipboard
+description: Establece o recupera la configuración para el redireccionamiento del Portapapeles.
 ms.assetid: c653f593-9912-4ade-a0a3-70d9afac2ab1
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RedirectClipboard
-- Propiedad RedirectClipboard Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad RedirectClipboard
-- Propiedad RedirectClipboard Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad RedirectClipboard
-- Propiedad RedirectClipboard Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad RedirectClipboard
-- Propiedad RedirectClipboard Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad RedirectClipboard
+- Propiedad RedirectClipboard Servicios de Escritorio remoto
+- Interfaz redirectClipboard Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad RedirectClipboard
+- Propiedad RedirectClipboard Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad RedirectClipboard
+- Propiedad RedirectClipboard Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad RedirectClipboard
+- Propiedad RedirectClipboard Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad RedirectClipboard
 topic_type:
 - apiref
 api_name:
@@ -34,20 +34,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aba9950b8d602ca239d66364279a5876a432d04
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5847ef4ccb5798ea74cccecbcabbb04303df93f3cd9a8a6155cd94eabbc8a824
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352289"
 ---
-# <a name="imsrdpclientadvancedsettings5redirectclipboard-property"></a>IMsRdpClientAdvancedSettings5:: RedirectClipboard (propiedad)
+# <a name="imsrdpclientadvancedsettings5redirectclipboard-property"></a>Propiedad IMsRdpClientAdvancedSettings5::RedirectClipboard
 
-Establece o recupera la configuración para la redirección del portapapeles.
+Establece o recupera la configuración para el redireccionamiento del Portapapeles.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -64,13 +64,13 @@ HRESULT get_RedirectClipboard(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece el modo de redirección del portapapeles en **true** o **false**. Si se establece en **true**, se habilita el modo de redirección del portapapeles.
+Establece el modo de redireccionamiento del Portapapeles **en TRUE** o **FALSE.** Si se establece en **TRUE,** el modo de redirección del Portapapeles está habilitado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                   |
@@ -80,7 +80,7 @@ Establece el modo de redirección del portapapeles en **true** o **false**. Si s
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

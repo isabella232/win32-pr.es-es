@@ -1,7 +1,7 @@
 ---
-description: Recupera el factor de mezcla y el vértice afectados por una influencia del hueso especificada.
+description: Recupera el factor de mezcla y el vértice afectados por una influencia de póralo especificada.
 ms.assetid: bbed4766-e571-4a9e-b7e3-047052470cbe
-title: 'ID3DXSkinInfo:: GetBoneVertexInfluence (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::GetVertexInfluence (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6e3cb7c530ed72a65f9a3e8de6b0735b1a7ae5e4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8dfeff1f6c3e8fc7030fa33f8a23c89278a9dd2b1e59f043db7723eac7d32801
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801151"
 ---
-# <a name="id3dxskininfogetbonevertexinfluence-method"></a>ID3DXSkinInfo:: GetBoneVertexInfluence (método)
+# <a name="id3dxskininfogetbonevertexinfluence-method"></a>Método ID3DXSkinInfo::GetVertexInfluence
 
-Recupera el factor de mezcla y el vértice afectados por una influencia del hueso especificada.
+Recupera el factor de mezcla y el vértice afectados por una influencia de póralo especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,30 +43,30 @@ HRESULT GetBoneVertexInfluence(
 
 <dl> <dt>
 
-*boneNum* \[ de\]
+*ynum* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice del hueso. Debe estar comprendido entre 0 y el número de huesos.
+Índice de la estructura. Debe estar entre 0 y el número de esqueletos.
 
 </dd> <dt>
 
-*influenceNum* \[ de\]
+*influenceNum* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de la matriz de influencia del hueso especificado.
+Índice de la matriz de influencia del pórmico especificado.
 
 </dd> <dt>
 
 *pWeight* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero al factor de combinación influenciado por influenceNum.
+Puntero al factor de mezcla influenciado por influenceNum.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntero al factor de combinación influenciado por influenceNum.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero al vértice influido por influenceNum.
+Puntero al vértice influenciado por influenceNum.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntero al vértice influido por influenceNum.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -103,13 +103,13 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::SetBoneVertexInfluence**](id3dxskininfo--setbonevertexinfluence.md)
+[**ID3DXSkinInfo::SetVertexInfluence**](id3dxskininfo--setbonevertexinfluence.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::FindBoneVertexInfluenceIndex**](id3dxskininfo--findbonevertexinfluenceindex.md)
+[**ID3DXSkinInfo::FindVertexInfluenceIndex**](id3dxskininfo--findbonevertexinfluenceindex.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::GetBoneInfluence**](id3dxskininfo--getboneinfluence.md)
+[**ID3DXSkinInfo::GetIonalInfluence**](id3dxskininfo--getboneinfluence.md)
 </dt> </dl>
 
  

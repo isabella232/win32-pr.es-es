@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. columnOrder
-description: El atributo columnOrder especifica o recupera el orden de las columnas de la lista de reproducción.
+title: PLAYLIST.columnOrder
+description: El atributo columnOrder especifica o recupera el orden de las columnas de lista de reproducción.
 ms.assetid: 91a2e15b-1993-4666-98ef-b893df2b570c
 keywords:
-- Windows Media Player PLAYLIST. columnOrder
+- PLAYLIST.columnOrder Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ab1a64f40987faa7daa43e9e371c7fa5d75f24e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e4dca1e740edc3066c82369c01ffb3313500b886d698c03ccd44d1283dc7d48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118337130"
 ---
-# <a name="playlistcolumnorder"></a>PLAYLIST. columnOrder
+# <a name="playlistcolumnorder"></a>PLAYLIST.columnOrder
 
-El atributo **columnOrder** especifica o recupera el orden de las columnas de la lista de reproducción.
+El **atributo columnOrder** especifica o recupera el orden de las columnas de lista de reproducción.
 
 ``` syntax
         elementID.columnOrder
@@ -29,23 +29,23 @@ El atributo **columnOrder** especifica o recupera el orden de las columnas de la
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que especifica una lista delimitada por signos de punto y coma de los índices de columna de lista de reproducción. El valor predeterminado es "0; 1; 2; 3". Los puntos y comas iniciales y finales no deben estar presentes.
+Este atributo es una cadena de lectura y **escritura** que especifica una lista delimitada por punto y coma de índices de columna de lista de reproducción. El valor predeterminado es "0;1;2;3". Los puntos y coma iniciales y finales y los espacios no deben estar presentes.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

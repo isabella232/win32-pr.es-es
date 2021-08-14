@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaParam. TableClass12Name, campo'
-title: Campo VistaParam. TableClass12Name (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: Campo VistaParam.TableClass12Name'
+title: Campo VistaParam.TableClass12Name (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: TableClass12Name field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaParam.TableClass12Name
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam.tableclass12name(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4371ff587cf22a80b4b65eea136b65d2b5a4d9d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b266772b3ac3771d2b6ef6c669d0682fa5d61b97f8e04467bb9ca453908fd089
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118483999"
 ---
-# <a name="vistaparamtableclass12name-field"></a>VistaParam. TableClass12Name, campo
+# <a name="vistaparamtableclass12name-field"></a>Campo VistaParam.TableClass12Name
 
 Establezca el nombre asociado a la clase de tabla 12.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,8 +57,8 @@ public const JET_param TableClass12Name
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaParam](./vistaparam-class.md)
+[VistaParam (clase)](./vistaparam-class.md)
 
 [Miembros de VistaParam](./vistaparam-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

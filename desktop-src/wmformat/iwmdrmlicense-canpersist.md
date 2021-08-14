@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicense CanPersist (wmdrmsdk. h)
-description: El método CanPersist consulta si la licencia puede conservarse en un almacén de licencias local.
+title: Método IWMDRMLicense CanPersist (Wmdrmsdk.h)
+description: El método CanPersist consulta si la licencia se puede conservar en un almacén de licencias local.
 ms.assetid: 040b30d8-4e47-44a3-8b09-e81cc30e8a53
 keywords:
-- Método CanPersist formato de Windows Media
-- Método CanPersist formato de Windows Media, interfaz IWMDRMLicense
-- Interfaz IWMDRMLicense formato de Windows Media, método CanPersist
+- Método CanPersist windows Media Format
+- Método CanPersist windows Media Format , interfaz IWMDRMLicense
+- IWMDRMLicense interfaz windows Media Format , Método CanPersist
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a7772dac73b99443626b1eeec6f5e90851f92c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e174f0b7d48684e40cc5796d2ae95ec1bcaca99216c493c73609323daf276b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118701223"
 ---
-# <a name="iwmdrmlicensecanpersist-method"></a>IWMDRMLicense:: CanPersist (método)
+# <a name="iwmdrmlicensecanpersist-method"></a>IWMDRMLicense::CanPersist (método)
 
-El método **CanPersist** consulta si la licencia puede conservarse en un almacén de licencias local.
+El **método CanPersist** consulta si la licencia se puede conservar en un almacén de licencias local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ HRESULT CanPersist(
 
 <dl> <dt>
 
-*pfCanPersist* \[ enuncia\]
+*pfCanPersist* \[ out\]
 </dt> <dd>
 
-TRUE indica que la licencia puede conservarse.
+TRUE indica que la licencia se puede conservar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -73,7 +73,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

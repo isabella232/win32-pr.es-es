@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCube:: TextureCube SampleGrad'
-description: 'Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de ejemplo. | Métodos TextureCube:: TextureCube SampleGrad'
+title: Métodos TextureCube::TextureCube SampleGrad
+description: Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra. | Métodos TextureCube::TextureCube SampleGrad
 ms.assetid: 710A3049-53EF-4166-ABE3-CFA1DA90FB71
 keywords:
-- SampleGrad métodos HLSL
+- Métodos de SampleGrad HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 941fd0b4f0d69deb8dcdea95853ab5d81084af0e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fab8b2c5c247e8b37134d0cb99280ca7f974bb32cf32fea8d0af0969e632b29d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118505463"
 ---
-# <a name="texturecubesamplegrad-methods"></a>TextureCube:: SampleGrad (métodos)
+# <a name="texturecubesamplegrad-methods"></a>Métodos TextureCube::SampleGrad
 
-Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de ejemplo.
+Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,20 +29,20 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 
 | Método                                                                                                 | Descripción                                                                                                                                                                                                        |
 |:-------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleGrad (S, Float, Float, float)**](dx-graphics-hlsl-to-samplegrad.md)                              | Muestrea una textura, utilizando un degradado para influir en la forma en que se calcula la ubicación de ejemplo.<br/>                                                                                                             |
-| [**SampleGrad (S, Float, Float, Float, float)**](tcube-samplegrad-s-float-float-float-float-.md)           | Muestrea una textura, utilizando un degradado para influir en la forma en que se calcula la ubicación de ejemplo, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo.<br/>                                     |
-| [**SampleGrad (S, Float, Float, Float, Float, uint)**](tcube-samplegrad-s-float-float-float-float-uint-.md) | Muestrea una textura, utilizando un degradado para influir en la forma en que se calcula la ubicación de ejemplo, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo. Devuelve el estado de la operación.<br/> |
+| [**SampleGrad(S,float,float,float)**](dx-graphics-hlsl-to-samplegrad.md)                              | Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra.<br/>                                                                                                             |
+| [**SampleGrad(S,float,float,float,float,float)**](tcube-samplegrad-s-float-float-float-float-.md)           | Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.<br/>                                     |
+| [**SampleGrad(S,float,float,float,float,float,uint)**](tcube-samplegrad-s-float-float-float-float-uint-.md) | Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**TextureCube**](texturecube.md)
 </dt> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Método IFeedbackHubAppInfo::GetAumidFromAppListEntry: esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.'
+description: 'Método IFeedbackHubAppInfo::GetAumidFromAppListEntry: esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.'
 ms.assetid: F205911F-7AA3-464F-A408-3BF549E1112A
 title: IFeedbackHubAppInfo::GetAumidFromAppListEntry (método)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2da6b428db156ddf18483951701216942aebbeaf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ac5609ecee2be86f5cc3600147e90ebcd9087b181a02fcbf09a539d32d14b338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404551"
 ---
 # <a name="ifeedbackhubappinfogetaumidfromapplistentry-method"></a>IFeedbackHubAppInfo::GetAumidFromAppListEntry (método)
 
-Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.
+Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,17 +39,17 @@ virtual void GetAumidFromAppListEntry(
 
 <dl> <dt>
 
-*appListEntry* \[ en, opcional\]
+*appListEntry* \[ in, opcional\]
 </dt> <dd>
 
-Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.
+Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.
 
 </dd> <dt>
 
 *value* \[ out, opcional\]
 </dt> <dd>
 
-Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, se producirá un error en las llamadas a estas API en tiempo de ejecución.
+Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/> |
 
 
 

@@ -4,12 +4,12 @@ description: Con un vínculo, los usuarios pueden navegar a otra página, ventan
 ms.assetid: a23748e4-b2dd-4b9f-9a7c-ff6533922c8c
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 161313008612d04b5009942f82f662888d1ffd35
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 985e266428a57bae88cf30090bff97f45787faa1a116993958086547339d465c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118040180"
 ---
 # <a name="links"></a>Vínculos
 
@@ -49,7 +49,7 @@ Los [vínculos carecen de](glossary.md)asequibilidad, lo que significa que sus *
 
 Sorprendentemente, esta falta de asequibilidad suele ser una motivación para usar vínculos porque parecen tan ligeros, lo que reduce la complejidad visual de un diseño. Los vínculos eliminan el marco visualmente pesado que usan los [botones de comando](ctrl-command-buttons.md) y el borde que usan otros controles. Por ejemplo, aunque puede usar botones de comando para hacer que los comandos principales sea obvio, puede elegir vínculos para los comandos secundarios para desencentrrlos.
 
-El desafío consiste entonces en mantener suficientes pistas visuales para que los usuarios puedan reconocer los vínculos. La guía fundamental es que los usuarios deben ser capaces de reconocer los vínculos mediante inspección visual por sí solos, no deben tener que mantener el puntero sobre un objeto o hacer clic en él para determinar si se trata de **un vínculo**.
+El desafío es mantener suficientes pistas visuales para que los usuarios puedan reconocer los vínculos. La guía fundamental es que los usuarios deben ser capaces de reconocer los vínculos mediante inspección visual por sí solos, no deben tener que mantener el puntero sobre un objeto o hacer clic en él para determinar si se trata de **un vínculo**.
 
 Los usuarios pueden reconocer un vínculo solo [](vis-color.md) mediante inspección visual si el vínculo usa los colores del sistema de vínculos y al menos una de las siguientes pistas visuales:
 
@@ -95,7 +95,7 @@ Los vínculos tienen varios patrones funcionales:
 
 |    Uso                  |    Ejemplo   |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Vínculos de navegación**<br/> Vínculo que se usa para navegar a otra página o ventana. <br/>                                                      | Al hacer clic en el vínculo, se navega de forma local a otra página, como en una ventana o asistente del explorador. o muestra una nueva ventana. A diferencia de los vínculos de tareas, la navegación no inicia una tarea, sino que simplemente navega a otro lugar o continúa con una tarea que ya está en curso. La navegación implica seguridad porque el usuario siempre puede volver atrás.<br/> Titulares de noticias<br/> En este ejemplo, al hacer clic en el vínculo, se navega a la página Titulares de noticias.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Vínculos de navegación**<br/> Vínculo que se usa para navegar a otra página o ventana. <br/>                                                      | Al hacer clic en el vínculo, se navega de forma local a otra página, como en una ventana o asistente del explorador; o muestra una nueva ventana. A diferencia de los vínculos de tareas, la navegación no inicia una tarea, sino que simplemente navega a otro lugar o continúa con una tarea que ya está en curso. La navegación implica seguridad porque el usuario siempre puede volver atrás.<br/> Titulares de noticias<br/> En este ejemplo, al hacer clic en el vínculo, se navega a la página Titulares de noticias.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Vínculos de tareas**<br/> Vínculo que se usa para iniciar un nuevo comando. <br/>                                                                        | Al hacer clic en el vínculo, se ejecuta un comando inmediatamente o se muestra un cuadro de diálogo o una página para recopilar más entradas. A diferencia de los vínculos de navegación, los vínculos de tareas inician una nueva tarea en lugar de continuar con una tarea existente. Las tareas no implican que los usuarios de seguridad no puedan revertir al estado anterior con un comando Atrás. Los vínculos de tareas se llaman así para evitar confusiones con los [vínculos de comando](ctrl-command-links.md). <br/> Iniciar sesión<br/> En este ejemplo, al hacer clic en el vínculo se inicia un comando de inicio de sesión.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Vínculos a la Ayuda**<br/> Vínculo de texto que se usa para mostrar un tema de Ayuda. <br/>                                                                     | Al hacer clic en el vínculo se muestra un artículo de Ayuda en una ventana independiente.<br/> ¿Qué es una contraseña segura?<br/> En este ejemplo, al hacer clic en el vínculo se muestra una ventana de Ayuda con el tema dado.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Vínculos de definición**<br/> un vínculo de texto que se usa para mostrar una definición en una información cuando el usuario hace clic en el vínculo o mantiene el puntero sobre él. <br/> | Este patrón es útil para definir términos que es posible que los usuarios no conozcan sin agregar desorden en la pantalla.<br/> ![captura de pantalla de información que se muestra al mantener el mouse ](images/ctrl-links-image2.png)<br/> En este ejemplo, se muestra la definición de información sobre información. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -114,7 +114,7 @@ Los vínculos también tienen varios patrones de presentación:
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Vínculos de texto sin formato**<br/> solo constan de texto. <br/>                                      | esta presentación es la más flexible porque se puede usar en cualquier lugar, incluido [en línea](glossary.md).<br/> ![captura de pantalla del texto del vínculo azul ](images/ctrl-links-image7.png)<br/> En este ejemplo, el color del texto identifica claramente un vínculo en línea.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **Texto con vínculos de icono**<br/> texto con un icono anterior que indica su función.<br/> | Dado que el gráfico proporciona una indicación visual adicional de un vínculo, es más fácil reconocerlo como vínculo que un vínculo de texto sin formato que no esté subrayado. este patrón suele usar un icono de 16 x 16 píxeles.<br/> ![captura de pantalla de la lista de cuatro vínculos con iconos ](images/ctrl-links-image8.png)<br/> En este ejemplo, los iconos proporcionan una indicación visual adicional de un vínculo.<br/> ![captura de pantalla del comando play con triángulo pequeño ](images/ctrl-links-image9.png)<br/> En este ejemplo, el símbolo de reproducción triangular estándar indica que este texto es un comando.<br/>                                                                                                                                     |
-| **Vínculos de solo gráficos**<br/> consta solo de un gráfico.<br/>                               | Dada la falta de un vínculo de texto, no hay color de vínculo ni subrayado para indicar el vínculo. Estos vínculos dependen del diseño gráfico para sugerir clics o del texto dentro del gráfico que sugiere una acción cuando los usuarios hacen clic. Los vínculos solo gráficos a veces tienen un efecto de mouse sobre para indicar el vínculo. este enfoque ayuda, pero no se puede detectar mediante la inspección visual por sí solo.<br/> ![captura de pantalla del icono con el puntero del mouse de selección de vínculo ](images/ctrl-links-image10.png)<br/> En este ejemplo, la inspección visual no puede detectar el vínculo por sí solo.<br/> **Debido a sus posibles problemas de reconocimiento y localización, no se recomiendan vínculos de solo gráficos como la única manera de realizar una tarea.** <br/> |
+| **Vínculos de solo gráficos**<br/> consta solo de un gráfico.<br/>                               | Dada la falta de un vínculo de texto, no hay color de vínculo ni subrayado para indicar el vínculo. Estos vínculos dependen del diseño gráfico para sugerir clics, o del texto dentro del gráfico que sugiere una acción cuando los usuarios hacen clic. Los vínculos de solo gráfico a veces tienen un efecto de mouse sobre para indicar el vínculo. este enfoque ayuda, pero no se puede detectar mediante la inspección visual por sí solo.<br/> ![captura de pantalla del icono con el puntero del mouse de selección de vínculo ](images/ctrl-links-image10.png)<br/> En este ejemplo, la inspección visual no puede detectar el vínculo por sí solo.<br/> **Debido a sus posibles problemas de reconocimiento y localización, no se recomiendan vínculos de solo gráficos como la única manera de realizar una tarea.** <br/> |
 
 
 
@@ -129,7 +129,7 @@ Los vínculos también tienen varios patrones de presentación:
 ### <a name="color"></a>Color
 
 -   **Use los colores del sistema de temas o vínculos para los vínculos visitados y novistiados.** El significado de estos colores es coherente en todos los programas. Si, por cualquier motivo, a los usuarios no les gustan estos colores (quizás por motivos de accesibilidad), pueden cambiarlos ellos mismos.
--   **Para los vínculos de navegación, use colores diferentes para los vínculos visitados y novistidos.** Mantenga el historial de vínculos visitados solo mientras dure la instancia del programa. El color visitado es importante para indicar dónde han estado los usuarios, lo que impide que vuelvan a visitar involuntarlamente las mismas páginas varias veces.
+-   **Para los vínculos de navegación, use colores diferentes para los vínculos visitados y novistidos.** Mantenga el historial de vínculos visitados solo mientras dure la instancia del programa. El color visitado es importante para indicar dónde han estado los usuarios, lo que impide que vuelvan a visitar las mismas páginas de forma involuntarla varias veces.
 -   **Para otros tipos de vínculos, no use el color del vínculo visitado.** Por ejemplo, no hay suficiente valor para identificar comandos "visitados".
 -   **No colore el texto que no sea un vínculo porque los usuarios pueden suponer que es un vínculo.** Use negrita o un tono gris donde, de lo contrario, usaría texto coloreado.
 -   **Excepción:** puede usar texto coloreado si todos los vínculos están subrayados o colocados dentro de ubicaciones de comandos o navegación estándar.
@@ -156,7 +156,7 @@ Los vínculos también tienen varios patrones de presentación:
 
 ### <a name="text-with-icon-links"></a>Texto con vínculos de icono
 
--   **Use el icono de flecha solo para los vínculos de comandos.** Los vínculos normales no deben usar el icono de flecha a menos que se usen como sustituto de los vínculos [de comandos](ctrl-command-links.md) en Windows XP.
+-   **Use el icono de flecha solo para los vínculos de comandos.** Los vínculos normales no deben usar el icono de flecha a menos que se usen como sustituto de los vínculos [de](ctrl-command-links.md) comandos Windows XP.
 -   **Coloque el icono a la izquierda del texto.** El icono debe dirigirse visualmente al texto.
 
 **Correcto:**
@@ -179,7 +179,7 @@ En el ejemplo incorrecto, el icono no lleva al texto.
 
 -   **Asegúrese de que los vínculos de navegación no requieren compromiso.** Los usuarios siempre deben poder volver al estado inicial, ya sea usando Atrás para la navegación en el lugar o Cancelar para cerrar una nueva ventana.
 -   **Vínculo a contenido específico en lugar de contenido general.** Por ejemplo, es mejor vincular a la sección pertinente de un documento que vincular al principio.
--   **Use un vínculo solo si el material vinculado es pertinente, útil y no redundante.** El uso de restricciones en los vínculos de navegación no los usa solo porque puede.
+-   **Use un vínculo solo si el material vinculado es relevante, útil y no redundante.** El uso de restricciones en los vínculos de navegación no los usa solo porque puede.
 -   **Si un vínculo navega a un sitio externo, coloque** la dirección URL en la información para que los usuarios puedan determinar el destino del vínculo.
 -   **Vincule solo la primera aparición del texto del vínculo.** Los vínculos redundantes no son necesarios y pueden dificultar la lectura del texto.
 
@@ -201,7 +201,7 @@ En el ejemplo incorrecto, el icono no lleva al texto.
 
         En este ejemplo, el vínculo está en la instrucción en lugar de la primera aparición.
 
-    -   **Vincule a las repeticiones posteriores si están lejos de la primera.** Por ejemplo, puede vincular de forma redundante en distintas secciones dentro de un tema de Ayuda.
+    -   **Vincule a las repeticiones posteriores si están lejos de la primera.** Por ejemplo, puede vincular de forma redundante en secciones diferentes dentro de un tema de Ayuda.
 
 ### <a name="task-links"></a>Vínculos de tareas
 
@@ -209,7 +209,7 @@ En el ejemplo incorrecto, el icono no lleva al texto.
 
     **Correcto:**
 
-    Start
+    Inicio
 
     Stop
 
@@ -227,7 +227,7 @@ En el ejemplo incorrecto, el icono no lleva al texto.
 
     ![captura de pantalla del cuadro de diálogo con el comando de menú atenuado ](images/ctrl-links-image15.png)
 
-    En este ejemplo de Windows Update, se está realizando una actualización, por lo que el comando Buscar actualizaciones está deshabilitado en lugar de quitarse.
+    En este ejemplo de Windows update, se está realizando una actualización, por lo que el comando Buscar actualizaciones está deshabilitado en lugar de quitarse.
 
 ### <a name="link-infotips"></a>Información sobre vínculos
 
@@ -344,7 +344,7 @@ En el ejemplo incorrecto, el icono no lleva al texto.
 
     Impresión
 
-    Por el contrario, en este ejemplo, un vínculo de comando Imprimir imprime una sola copia de un documento en la impresora predeterminada sin ninguna interacción adicional del usuario.
+    Por el contrario, en este ejemplo, un vínculo de comando Imprimir imprime una sola copia de un documento en la impresora predeterminada sin ninguna interacción del usuario adicional.
 
     **El uso adecuado de puntos suspensivos** es importante para indicar que los usuarios pueden tomar más decisiones antes de realizar la tarea, o bien puede cancelar la tarea por completo. La indicación visual que ofrece un botón de puntos suspensivos permite a los usuarios explorar el software sin miedo.
 

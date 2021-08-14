@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTableLockedException'
-title: Constructor de EsentTableLockedException
+description: 'Más información sobre: Constructor EsentTableLockedException'
+title: Constructor EsentTableLockedException
 TOCTitle: 'EsentTableLockedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTableLockedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttablelockedexception.esenttablelockedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2f976e6a1cb7e3b92710c4f1db26dd4100132488
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5993cad3b66d197fd14ab9806ae1ce7ed1b29d85bf711a2ff72630e9a3642f41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103813950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118488875"
 ---
-# <a name="esenttablelockedexception-constructor"></a>Constructor de EsentTableLockedException
+# <a name="esenttablelockedexception-constructor"></a>Constructor EsentTableLockedException
 
 Inicializa una nueva instancia de la clase EsentTableLockedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentTableLockedException()
 
 [Miembros de EsentTableLockedException](./esenttablelockedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una solicitud de renovación de CMC que se muestra en formato ASN. 1. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud de renovación de CMC que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: acb0fdeb-3d7b-4598-bb7a-df97e200984b
-title: ASN de renovación codificada de CMC. 1
+title: ASN.1 con codificación de renovación de CMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faf54fa34afa0a0451095e6e96267cb8cf93856e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45ad8e39caa705900f61a9dfe289e65d5ad370e974c2de10f1a98a9a66281391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118902078"
 ---
-# <a name="cmc-renewal-encoded-asn1"></a>ASN de renovación codificada de CMC. 1
+# <a name="cmc-renewal-encoded-asn1"></a>ASN.1 con codificación de renovación de CMC
 
-El ejemplo siguiente contiene una solicitud de renovación de CMC que se muestra en formato ASN. 1. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud de renovación de CMC que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -21,7 +21,7 @@ RequestType=cmc
 RenewalCert=248f7d3c00000000086e
 ```
 
-La configuración especifica el tipo de solicitud (CMC) y el número de serie del certificado en el que se basa la solicitud. Esto genera el siguiente resultado.
+La configuración especifica el tipo de solicitud (CMC) y el número de serie del certificado en el que se basa la solicitud. Esto genera la salida siguiente.
 
 ``` syntax
 0000: 30 82 0b 04               ; SEQUENCE (b04 Bytes)

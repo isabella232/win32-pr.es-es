@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7bf1f0049ac474e7840753a8cfe05c972aa346c1
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: a4e9ae7dc0d8280c9b9823d77dcfe5968243a1ddebdaf78e76b03651ee465034
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983165"
 ---
 # <a name="while-statement"></a>while (Instrucción)
 
@@ -45,8 +45,8 @@ Parámetro opcional que controla cómo se compila la instrucción.
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | unroll(x)             | Desenrolle el bucle hasta que deje de ejecutarse. Opcionalmente, puede especificar el número máximo de veces que se puede ejecutar el bucle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | bucle                  | Use instrucciones de control de flujo en el sombreador compilado; no desenrolle el bucle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| fastopt               | Reduce el tiempo de compilación, pero genera optimizaciones menos agresivas. Si usa este atributo, el compilador no desenrollará bucles.<br/> Este atributo solo afecta a los destinos del modelo de sombreador que admiten [instrucciones de](dx-graphics-hlsl-break.md) interrupción. Este atributo está disponible en el modelo de sombreador [frente \_ a 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) y en el modelo [de sombreador 3](dx-graphics-hlsl-sm3.md) y versiones posteriores. Resulta especialmente útil en el modelo [de sombreador 4](dx-graphics-hlsl-sm4.md) y versiones posteriores cuando el compilador compila bucles. El compilador simula bucles de forma predeterminada para evaluar si puede deshacer su inscripción. Si no desea que el compilador desenrolle bucles, use este atributo para reducir el tiempo de compilación.<br/> |
-| permitir \_ condición \_ uav | Permite que una condición de terminación de bucle de sombreador de proceso se base en una lectura UAV. El bucle no debe contener intrínsecos de sincronización.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| fastopt               | Reduce el tiempo de compilación, pero genera optimizaciones menos agresivas. Si usa este atributo, el compilador no desenrollará bucles.<br/> Este atributo solo afecta a los destinos del modelo de sombreador que admiten [instrucciones de](dx-graphics-hlsl-break.md) interrupción. Este atributo está disponible en el modelo de sombreador [frente \_ a 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) y el [modelo de sombreador 3](dx-graphics-hlsl-sm3.md) y versiones posteriores. Es especialmente útil en el modelo [de sombreador 4](dx-graphics-hlsl-sm4.md) y versiones posteriores cuando el compilador compila bucles. El compilador simula bucles de forma predeterminada para evaluar si puede deshacer su inscripción. Si no desea que el compilador desrolle bucles, use este atributo para reducir el tiempo de compilación.<br/> |
+| permitir \_ condición \_ uav | Permite que una condición de terminación del bucle de sombreador de proceso se base en una lectura UAV. El bucle no debe contener intrínsecos de sincronización.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
 
@@ -68,11 +68,11 @@ Una o varias [instrucciones](dx-graphics-hlsl-statement-blocks.md).
 
 </dd> </dl>
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Control de flujo](dx-graphics-hlsl-flow-control.md)
+[Flow Control](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
  

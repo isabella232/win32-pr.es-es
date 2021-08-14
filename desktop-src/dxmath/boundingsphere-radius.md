@@ -1,17 +1,17 @@
 ---
 description: Radio de BoundingSphere.
 ms.assetid: baa212ac-81f6-4765-a484-f1a98c431474
-title: BoundingSphere. RADIUS (DirectXCollision. h)
+title: BoundingSphere.Radius (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2512406bc5e8815872f071ac5e99193cbc583d50
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eba7ef192b4417454df088a1dccb419c46ee0df3974937629cadc18ddf3c4b3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118502111"
 ---
-# <a name="boundingsphereradius"></a>BoundingSphere. RADIUS
+# <a name="boundingsphereradius"></a>LímiteSphere.Radius
 
 Radio de BoundingSphere.
 
@@ -23,24 +23,24 @@ public:
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|-----------------------------------------------------------------------------------------------|
-| Espacio de nombres<br/> | Usar DirectX.<br/>                                                                       |
-| Encabezado<br/>    | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Espacio de nombres<br/> | Use DirectX.<br/>                                                                       |
+| Header<br/>    | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

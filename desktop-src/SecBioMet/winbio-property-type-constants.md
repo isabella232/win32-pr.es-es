@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_PROPERTY_TYPE (Winbio. h)
-description: Especifique el origen de la información de la propiedad en la función WinBioGetProperty.
+title: WINBIO_PROPERTY_TYPE constantes (Winbio.h)
+description: Especifique el origen de la información de propiedad en la función WinBioGetProperty.
 ms.assetid: 82C54092-032B-4F32-820E-A1D4BB81ECCE
 topic_type:
 - apiref
@@ -15,20 +15,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f4a1420af18bfa4d2ba5d0457b22cd5f77e7b0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be7b7c17da736e117f099ec66dafc4ef2cfbba037f90a35f2522d7710cb3cef0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909363"
 ---
-# <a name="winbio_property_type-constants"></a>Constantes de tipo de \_ propiedad WINBIO \_
+# <a name="winbio_property_type-constants"></a>Constantes DE \_ TIPO \_ DE PROPIEDAD WINBIO
 
-Las constantes **de \_ \_ tipo de propiedad WINBIO** siguientes se pueden usar para especificar el origen de la información de la propiedad en la función [**WinBioGetProperty**](/windows/desktop/api/Winbio/nf-winbio-winbiogetproperty) .
+Las siguientes **constantes DE TIPO DE PROPIEDAD \_ \_ DE WINBIO** se pueden usar para especificar el origen de la información de propiedad en la [**función WinBioGetProperty.**](/windows/desktop/api/Winbio/nf-winbio-winbiogetproperty)
 
 <dl> <dt>
 
-<span id="WINBIO_PROPERTY_TYPE_SESSION"></span><span id="winbio_property_type_session"></span>**\_sesión de \_ tipo de propiedad WINBIO \_**
+<span id="WINBIO_PROPERTY_TYPE_SESSION"></span><span id="winbio_property_type_session"></span>**SESIÓN DE TIPO \_ DE \_ PROPIEDAD \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 
@@ -38,7 +38,7 @@ La propiedad se aplica a una sesión biométrica específica.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_PROPERTY_TYPE_TEMPLATE"></span><span id="winbio_property_type_template"></span>**\_plantilla de \_ tipo de propiedad WINBIO \_**
+<span id="WINBIO_PROPERTY_TYPE_TEMPLATE"></span><span id="winbio_property_type_template"></span>**PLANTILLA DE TIPO \_ DE \_ PROPIEDAD \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 
@@ -48,7 +48,7 @@ La propiedad se aplica a una plantilla biométrica específica.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_PROPERTY_TYPE_UNIT"></span><span id="winbio_property_type_unit"></span>**\_unidad de \_ tipo de propiedad WINBIO \_**
+<span id="WINBIO_PROPERTY_TYPE_UNIT"></span><span id="winbio_property_type_unit"></span>**UNIDAD DE TIPO \_ DE \_ PROPIEDAD \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 
@@ -58,12 +58,12 @@ La propiedad se aplica a una unidad biométrica específica.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_PROPERTY_TYPE_ACCOUNT"></span><span id="winbio_property_type_account"></span>**\_cuenta de \_ tipo de propiedad WINBIO \_**
+<span id="WINBIO_PROPERTY_TYPE_ACCOUNT"></span><span id="winbio_property_type_account"></span>**CUENTA DE TIPO \_ DE \_ PROPIEDAD \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 
 
-La propiedad se aplica a una cuenta de usuario específica que tenga una inscripción biométrica. Este valor se admite a partir de Windows 10.
+La propiedad se aplica a una cuenta de usuario específica que tiene una inscripción biométrica. Este valor se admite a partir de Windows 10.
 
 
 </dt> </dl> </dd> </dl>
@@ -74,9 +74,9 @@ La propiedad se aplica a una cuenta de usuario específica que tenga una inscrip
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>Winbio. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                |
+| Header<br/>                   | <dl> <dt>Winbio.h (incluir Winbio.h)</dt> </dl> |
 
 
 

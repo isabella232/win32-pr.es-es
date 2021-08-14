@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 022aa20fab0739b32aa75eb5f4bc575c0a8ad853
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 299246ef890015a6d7de465ecc7c00251a52432d276a87f3d5f336b63d563737
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986995"
 ---
 # <a name="d3dtransformstatetype-enumeration"></a>D3DTRANSFORMSTATETYPE (enumeración)
 
@@ -49,17 +49,17 @@ typedef enum D3DTRANSFORMSTATETYPE {
 
 <dl> <dt>
 
-<span id="D3DTS_VIEW"></span><span id="d3dts_view"></span>**VISTA \_ D3DTS**
+<span id="D3DTS_VIEW"></span><span id="d3dts_view"></span>**VISTA D3DTS \_**
 </dt> <dd>
 
-Identifica la matriz de transformación que se establece como la matriz de transformación de vista. El valor predeterminado es **NULL** (la matriz de identidad).
+Identifica la matriz de transformación que se va a establecer como la matriz de transformación de vista. El valor predeterminado es **NULL** (la matriz de identidad).
 
 </dd> <dt>
 
 <span id="D3DTS_PROJECTION"></span><span id="d3dts_projection"></span>**PROYECCIÓN DE \_ D3DTS**
 </dt> <dd>
 
-Identifica la matriz de transformación que se establece como matriz de transformación de proyección. El valor predeterminado es **NULL** (la matriz de identidad).
+Identifica la matriz de transformación que se va a establecer como la matriz de transformación de proyección. El valor predeterminado es **NULL** (la matriz de identidad).
 
 </dd> <dt>
 
@@ -151,7 +151,7 @@ Los estados de transformación del intervalo de 256 a 511 están reservados para
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

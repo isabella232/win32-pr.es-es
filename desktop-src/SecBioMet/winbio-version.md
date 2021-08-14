@@ -1,10 +1,10 @@
 ---
-title: Estructura de WINBIO_VERSION (Winbio \_ Types. h)
+title: WINBIO_VERSION estructura (Winbio \_ types.h)
 description: Contiene el número de versión de software de un componente de proveedor de servicios biométricos.
 ms.assetid: b9d08e10-00db-4f3f-9e27-6063aafa4151
 keywords:
-- Plataforma de biometría de Windows API de WINBIO_VERSION Structure
-- PWINBIO_VERSION de puntero de estructura Plataforma de biometría de Windows API
+- WINBIO_VERSION estructura Windows API de Marco biométrico
+- PWINBIO_VERSION puntero de estructura Windows API de Marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7d9cda802e89006ed49f6ec4b4e96c88602c511
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de81dd3da7f37e473a65caaf3e4cd52c8fd2f6732dced45f43245cb4e4c5c905
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909120"
 ---
-# <a name="winbio_version-structure"></a>Estructura de la versión de WINBIO \_
+# <a name="winbio_version-structure"></a>Estructura DE \_ VERSIÓN DE WINBIO
 
-La estructura de la **\_ versión WINBIO** contiene el número de versión de software de un componente de proveedor de servicios biométricos.
+La **estructura VERSIÓN \_ DE WINBIO** contiene el número de versión de software de un componente de proveedor de servicios biométricos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ typedef struct _WINBIO_VERSION {
 **MajorVersion**
 </dt> <dd>
 
-**DWORD** que contiene el número de versión principal.
+DWORD **que** contiene el número de versión principal.
 
 </dd> <dt>
 
 **MinorVersion**
 </dt> <dd>
 
-**DWORD** que contiene el número de versión secundaria.
+DWORD **que** contiene el número de versión secundaria.
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ typedef struct _WINBIO_VERSION {
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
@@ -75,10 +75,10 @@ typedef struct _WINBIO_VERSION {
 [Estructuras de aplicación cliente](client-application-structures.md)
 </dt> <dt>
 
-[**\_esquema BSP de WINBIO \_**](winbio-bsp-schema.md)
+[**ESQUEMA \_ BSP DE \_ WINBIO**](winbio-bsp-schema.md)
 </dt> <dt>
 
-[**esquema de la \_ unidad WINBIO \_**](winbio-unit-schema.md)
+[**ESQUEMA DE \_ UNIDAD \_ WINBIO**](winbio-unit-schema.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-description: Admite tanto firmas digitales como cifrado de datos. Se considera un proveedor de servicios criptográficos (CSP) de uso general.
+description: Admite firmas digitales y cifrado de datos. Se considera un proveedor de servicios criptográficos (CSP) de uso general.
 ms.assetid: da0b50ec-25a6-40dd-af83-73500b4a4c08
 title: PROV_RSA_AES
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1fa8d01e9fd212f2c39ab5615b12931738bc926
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 796ac0b77b91b9cffebc6f04ae3812b1bc25aabd885295e7dd3e1715bb4efc04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118901595"
 ---
-# <a name="prov_rsa_aes"></a>\_AES de RSA \_
+# <a name="prov_rsa_aes"></a>PROV \_ RSA \_ AES
 
-El \_ tipo de proveedor de RSA AES de Prov \_ es compatible con las [firmas digitales](digital-signatures.md) y el cifrado de datos. Se considera un [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) de uso general. El [*algoritmo de clave pública*](../secgloss/p-gly.md) RSA se utiliza para todas las operaciones de [*clave pública*](../secgloss/p-gly.md) .
+El tipo de proveedor \_ PROV RSA \_ AES admite firmas [digitales y](digital-signatures.md) cifrado de datos. Se considera un proveedor de servicios [*criptográficos*](../secgloss/c-gly.md) (CSP) de uso general. El algoritmo de [*clave pública RSA*](../secgloss/p-gly.md) se usa para todas las operaciones de [*clave*](../secgloss/p-gly.md) pública.
 
 ## <a name="algorithms-supported"></a>Algoritmos admitidos
 
-Para obtener descripciones de cada uno de estos algoritmos, vea el glosario.
+Para obtener descripciones de cada uno de estos algoritmos, consulte el glosario.
 
 
 
@@ -34,10 +34,10 @@ Para obtener descripciones de cada uno de estos algoritmos, vea el glosario.
 
 ## <a name="related-documentation"></a>Documentación relacionada
 
-Este tipo de proveedor está definido por Microsoft y RSA Data Security. Se describe en los siguientes documentos:
+Microsoft y RSA Data Security definen este tipo de proveedor. Se describe en los siguientes documentos:
 
--   *Guía del programador del proveedor de servicios criptográficos de Microsoft*, microsoft, 1996.
--   RSA Laboratories, estándares de criptografía de clave pública, RSA Data Security, noviembre de 1993.
+-   *Guía del programador del proveedor de servicios criptográficos de Microsoft,* Microsoft, 1996.
+-   Rsa Rsa, Public Key Cryptography Standards, RSA Data Security, noviembre de 1993.
 
 > [!Note]  
 > Es posible que estos recursos no estén disponibles en algunos idiomas y países o regiones.

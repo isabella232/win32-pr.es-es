@@ -1,10 +1,10 @@
 ---
-title: Función DsRestoreRegisterComplete (Ntdsbcli. h)
-description: Se llama para desbloquear un servidor Active Directory una vez completada una operación de restauración.
+title: Función DsRestoreRegisterComplete (Ntdsbcli.h)
+description: Se llama para desbloquear un Active Directory una vez completada una operación de restauración.
 ms.assetid: 781cd2ec-d2e2-4f3a-903d-feda4b871de5
 ms.tgt_platform: multiple
 keywords:
-- Active Directory de la función DsRestoreRegisterComplete
+- Función DsRestoreRegisterComplete Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff5e5e01b29281860dff59fbcd08a3b48ec66c4a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6b335f67ed4d392d189553f66655797e03121cbdee6ce19dffbd9803199f6c72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429933"
 ---
-# <a name="dsrestoreregistercomplete-function"></a>DsRestoreRegisterComplete función)
+# <a name="dsrestoreregistercomplete-function"></a>Función DsRestoreRegisterComplete
 
-\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, use [servicio de instantáneas de volumen (VSS)](../vss/volume-shadow-copy-service-overview.md) .\]
+\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. Use [Servicio de instantáneas de volumen (VSS) en](../vss/volume-shadow-copy-service-overview.md) su lugar.\]
 
-Se llama a la función **DsRestoreRegisterComplete** para desbloquear un servidor Active Directory una vez finalizada una operación de restauración. Esta función es equivalente a la función [**DsRestoreRegister**](dsrestoreregister.md) .
+Se **llama a la función DsRestoreRegisterComplete** para desbloquear un servidor Active Directory una vez completada una operación de restauración. Esta función es equivalente a la [**función DsRestoreRegister.**](dsrestoreregister.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,36 +44,36 @@ HRESULT DsRestoreRegisterComplete(
 
 <dl> <dt>
 
-*HBC* \[ de\]
+*hbc* \[ En\]
 </dt> <dd>
 
-Contiene el identificador de contexto de restauración obtenido con la función [**DsRestorePrepare**](dsrestoreprepare.md) .
+Contiene el identificador de contexto de restauración obtenido con la [**función DsRestorePrepare.**](dsrestoreprepare.md)
 
 </dd> <dt>
 
-*hrRestoreState* \[ de\]
+*hrRestoreState* \[ En\]
 </dt> <dd>
 
-Contiene el estado final de la operación de restauración. Este parámetro debe contener **S \_ OK** si la operación de restauración se realizó correctamente o un código de error en caso contrario.
+Contiene el estado final de la operación de restauración. Este parámetro debe contener **S \_ OK si** la operación de restauración se ha realizado correctamente o un código de error en caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ OK** si la función es correcta o un código de error de Win32 o RPC en caso contrario. En la lista siguiente se enumeran los posibles códigos de error.
+Devuelve **S \_ OK si** la función es correcta o un código de error de Win32 o RPC en caso contrario. En la lista siguiente se enumeran los códigos de error posibles.
 
 <dl> <dt>
 
-**ERROR de \_ acceso \_ denegado**
+**ERROR \_ DE ACCESO \_ DENEGADO**
 </dt> <dd>
 
-El autor de la llamada no dispone de los privilegios de acceso adecuados para llamar a esta función. La función [**DsSetAuthIdentity**](dssetauthidentity.md) se puede usar para establecer las credenciales que se usarán para las funciones de copia de seguridad y restauración.
+El autor de la llamada no tiene los privilegios de acceso adecuados para llamar a esta función. La [**función DsSetAuthIdentity**](dssetauthidentity.md) se puede usar para establecer las credenciales que se usarán para las funciones de copia de seguridad y restauración.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Antes de reiniciar el controlador de dominio, llame a esta función para proporcionar el estado de la operación de restauración. Si el estado no es correcto, el servicio de directorio no se iniciará hasta que se haya restaurado una base de datos válida. Esta función completa la operación de restauración y permite iniciar Active Directory Domain Services.
+Antes de reiniciar el controlador de dominio, llame a esta función para proporcionar el estado de la operación de restauración. Si el estado no es correcto, el servicio de directorio no se iniciará hasta que se restaure una base de datos válida. Esta función completa la operación de restauración y Active Directory Domain Services iniciar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Antes de reiniciar el controlador de dominio, llame a esta función para proporc
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Fin de compatibilidad de cliente<br/>    | No se admite ninguno<br/>                                                               |
 | Fin de compatibilidad de servidor<br/>    | No se admite ninguno<br/>                                                               |
-| Encabezado<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 
 
@@ -104,7 +104,7 @@ Antes de reiniciar el controlador de dominio, llame a esta función para proporc
 [**DsSetAuthIdentity**](dssetauthidentity.md)
 </dt> <dt>
 
-[Restauración de un servidor de Active Directory](restoring-an-active-directory-server.md)
+[Restaurar un servidor Active Directory servidor](restoring-an-active-directory-server.md)
 </dt> <dt>
 
 [Funciones de copia de seguridad de directorios](directory-backup-functions.md)

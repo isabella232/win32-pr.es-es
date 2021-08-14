@@ -1,6 +1,6 @@
 ---
-title: 'RWTexture1DArray:: Operator (función)'
-description: 'Devuelve una variable de recurso. | RWTexture1DArray:: Operator (función)'
+title: RWTexture1DArray::Operator (Función)
+description: Devuelve una variable de recurso. | RWTexture1DArray::Operator (Función)
 ms.assetid: 7047e670-dd78-4b73-8d80-5575e458f27c
 keywords:
 - Función de operador HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6f8623ab25b42f6865e401c5b263a1774206c752
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2e0735e3d9945d15c2f8473155612a40cbf652349eb531f089f5a4aa44451484
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509287"
 ---
-# <a name="rwtexture1darrayoperator--function"></a>RWTexture1DArray:: Operator (función)
+# <a name="rwtexture1darrayoperator--function"></a>RWTexture1DArray::Operator (Función)
 
 Devuelve una variable de recurso.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint2**
 
-Posición de índice. El primer componente contiene la coordenada x. El segundo componente indica el segmento de matriz deseado.
+Posición del índice. El primer componente contiene la coordenada x. El segundo componente indica el segmento de matriz deseado.
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Tipo: **R**
 
 Variable de recurso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -65,7 +65,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

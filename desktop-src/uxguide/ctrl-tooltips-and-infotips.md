@@ -1,22 +1,22 @@
 ---
 title: Información sobre herramientas e información
-description: Una información sobre herramientas es una pequeña ventana emergente que etiqueta el control sin etiqueta al que se apunta, como los controles de barra de herramientas sin etiqueta o los botones de comando.
+description: Una información sobre herramientas es una pequeña ventana emergente que etiqueta el control sin etiqueta al que se apunta, como los controles de la barra de herramientas sin etiqueta o los botones de comando.
 ms.assetid: 80979281-eefb-485a-b42f-7f9e05665357
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 8911c5a008d2de6cec2bd564fd786a23c670d633
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 4df7950529b2ac78c9d9bbf51c8996f17bcd985898a286f8d58e05db3b94d27e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118041291"
 ---
 # <a name="tooltips-and-infotips"></a>Información sobre herramientas e información
 
 > [!NOTE]
 > Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-Una información sobre herramientas es una pequeña ventana emergente que etiqueta el control sin etiqueta al que se apunta, como los controles de barra de herramientas sin etiqueta o los botones de comando.
+Una información sobre herramientas es una pequeña ventana emergente que etiqueta el control sin etiqueta al que se apunta, como los controles de la barra de herramientas sin etiqueta o los botones de comando.
 
 ![Captura de pantalla que muestra el botón de impresión con la información sobre herramientas "Imprimir (Ctrl+P)" mostrada.](images/ctrl-tooltips-and-infotips-image1.png)
 
@@ -24,7 +24,7 @@ Información sobre herramientas típica para un botón de la barra de herramient
 
 Dado que la información sobre herramientas ha demostrado ser tan útil, existe un control relacionado denominado información sobre herramientas, que proporciona texto más descriptivo de lo que es posible con la información sobre herramientas.
 
-Una información sobre información es una pequeña ventana emergente que describe de forma concisa el objeto al que se apunta, como descripciones de controles de barra de herramientas, iconos, gráficos, vínculos, objetos Explorador de Windows, elementos menú Inicio y botones de la barra de tareas. La información sobre información es una forma de controles [de divulgación progresiva,](ctrl-progressive-disclosure-controls.md)lo que elimina la necesidad de tener siempre texto descriptivo en la pantalla.
+Una información sobre información es una pequeña ventana emergente que describe de forma concisa el objeto al que se apunta, como descripciones de controles de barra de herramientas, iconos, gráficos, vínculos, objetos del Explorador de Windows, elementos menú Inicio y botones de la barra de tareas. La información sobre información es una forma de controles [de divulgación progresiva,](ctrl-progressive-disclosure-controls.md)lo que elimina la necesidad de tener siempre texto descriptivo en la pantalla.
 
 ![captura de pantalla del botón Compartir con información ](images/ctrl-tooltips-and-infotips-image2.png)
 
@@ -32,7 +32,7 @@ Información típica.
 
 Para los fines de este artículo, la información sobre herramientas y la información sobre herramientas se conocen colectivamente como sugerencias.
 
-Las sugerencias ayudan a los usuarios a comprender objetos desconocidos o desconocidos que no se describen directamente en la interfaz de usuario (UI). Se muestran automáticamente cuando los usuarios mantienen el puntero sobre un objeto y se quitan cuando los usuarios hacen clic en el control o mueven el mouse, o cuando se supera el tiempo de espera de la propina.
+Sugerencias que los usuarios comprendan objetos desconocidos o desconocidos que no se describen directamente en la interfaz de usuario (UI). Se muestran automáticamente cuando los usuarios mantienen el puntero sobre un objeto y se quitan cuando los usuarios hacen clic en el control o mueven el mouse, o cuando se supera el tiempo de espera de la propina.
 
 **Desarrolladores:** No hay ningún control infotip; La información sobre información se implementa con el control de información sobre herramientas. La distinción está en uso, no en implementación.
 
@@ -62,11 +62,11 @@ Cuando se usan correctamente, las sugerencias mejoran la comunicación con el us
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
-Las sugerencias son una manera eficaz de simplificar una interfaz de usuario. Proporcionan información que los usuarios necesitan cuando la necesitan, con un esfuerzo mínimo por su parte. Las sugerencias pueden ayudarle a usar el espacio de la pantalla de forma más eficaz y a reducir el desorden de la pantalla. Sin embargo, las sugerencias mal diseñadas pueden ser molestos, distraídas, poco útiles, abrumadoras o en el camino. Los siguientes conceptos de diseño están diseñados para mostrar la diferencia.
+Sugerencias son una manera eficaz de simplificar una interfaz de usuario. Proporcionan información que los usuarios necesitan cuando la necesitan, con un esfuerzo mínimo por su parte. Sugerencias puede ayudarle a usar el espacio de pantalla de forma más eficaz y reducir el desorden de la pantalla. Sin embargo, las sugerencias mal diseñadas pueden ser molestos, distraídas, poco útiles, abrumadoras o en el camino. Los siguientes conceptos de diseño están diseñados para mostrar la diferencia.
 
 ### <a name="discoverability"></a>Detectabilidad
 
-Las sugerencias se muestran automáticamente cuando los usuarios mantienen el puntero sobre un objeto durante un período de tiempo. Este mecanismo de retraso de tiempo hace que las sugerencias sea muy conveniente, pero también reduce su detectabilidad.
+Sugerencias se muestra automáticamente cuando los usuarios mantienen el puntero sobre un objeto durante un período de tiempo. Este mecanismo de retraso de tiempo hace que las sugerencias sea muy conveniente, pero también reduce su detectabilidad.
 
 Con el tiempo, los usuarios aprenden que determinados objetos estándar, como botones de barra de herramientas, botones gráficos, elementos de menú Inicio e iconos de área de notificación, tienen sugerencias, por lo que puede dar por hecho su detectabilidad.
 
@@ -74,7 +74,7 @@ Los usuarios tardan más tiempo en detectar sugerencias en lugares no estándar.
 
 Puede mejorar la detectabilidad mediante sugerencias de forma coherente, lo que a su vez fomenta la previsibilidad. Si proporciona sugerencias para algunos objetos, debe proporcionarlas para todos los objetos similares para los que es probable que los usuarios quieran obtener información complementaria. A veces, hacerlo puede ser complicado, ya que también debe asegurarse de que las sugerencias son útiles y no obvias.
 
-Si proporcionar sugerencias reconocibles y útiles de forma coherente demuestra ser un problema, considere la posibilidad de diseñar diseños alternativos, como etiquetas de control autoexplicativas o texto complementario en su lugar.
+Si proporcionar sugerencias reconocibles y coherentemente útiles demuestra ser un problema, considere la posibilidad de diseñar diseños alternativos, como etiquetas de control autoexplicativas o texto complementario en su lugar.
 
 ### <a name="appropriate-information"></a>Información adecuada
 
@@ -87,21 +87,21 @@ La información adecuada para las sugerencias tiene las siguientes característi
 
 ### <a name="appropriate-timeouts"></a>Tiempos de espera adecuados
 
-La presentación automática adecuada y la eliminación de sugerencias es fundamental para el objetivo de los usuarios de mantener el control de su entorno de interfaz de usuario. Las sugerencias tienen tres valores de tiempo de espera:
+La presentación automática adecuada y la eliminación de sugerencias es fundamental para el objetivo de los usuarios de mantener el control de su entorno de interfaz de usuario. Sugerencias tres valores de tiempo de espera:
 
--   **Inicial.** Hora a la que el puntero debe permanecer insalte para que aparezca la sugerencia. El tiempo predeterminado es 0,5 segundos.
+-   **Inicial.** Hora a la que el puntero debe permanecer insociada para que aparezca la sugerencia. El tiempo predeterminado es 0,5 segundos.
 -   **Volver a mostrar.** La hora en que el puntero debe permanecer insociz a medida que el puntero se mueve de un destino a otro. El tiempo predeterminado es 0,1 segundos.
 -   **Retiro.** La hora después de la cual se quita automáticamente la propina. El tiempo predeterminado es de 5 segundos.
 
-Tener valores iniciales demasiado cortos y volver a mostrar da como resultado una experiencia desaconsiva y perjudicial, ya que a menudo se mostrarían de forma involuntaria, mientras que los resultados demasiado largos hacen que las sugerencias no se noten como no responde o no se detectan. El tiempo de eliminación predeterminado funciona bien para el texto de sugerencia corta, como se usa en la información sobre herramientas. La información sobre información tiene texto más largo, por lo que necesitan tiempos de presentación más largos.
+Tener valores iniciales demasiado cortos y volver a mostrar da como resultado una experiencia desaconsiva y perjudicial, ya que a menudo se mostrarían de forma involuntaria, mientras que los resultados demasiado largos hacen que las sugerencias se sientan no respondes o no se detectan. El tiempo de eliminación predeterminado funciona bien para el texto de sugerencia corta, como se usa en la información sobre herramientas. La información sobre información tiene texto más largo, por lo que necesitan tiempos de presentación más largos.
 
 ### <a name="appropriate-placement"></a>Colocación adecuada
 
-Las sugerencias se deben colocar cerca del objeto al que se mantiene el puntero, normalmente en la cola o la cabeza del puntero, si es posible. Sin embargo, nunca se deben colocar de forma que interfiera con lo que hace el usuario ocultando el objeto de interés. Evitar este problema puede requerir que mueva la propina fuera del puntero pero adyacente al objeto . Esto no es un problema siempre y cuando la relación entre el objeto y su sugerencia sea clara. Asegúrese de que los usuarios no muevan el puntero solo para que las sugerencias del programa se vayan.
+Sugerencias debe colocarse cerca del objeto que se mantiene el puntero, normalmente en la cola o la cabeza del puntero, si es posible. Sin embargo, nunca se deben colocar de forma que interfiera con lo que hace el usuario ocultando el objeto de interés. Evitar este problema puede requerir que mueva la propina fuera del puntero pero adyacente al objeto . Esto no es un problema siempre y cuando la relación entre el objeto y su sugerencia sea clara. Asegúrese de que los usuarios no muevan el puntero solo para que las sugerencias del programa se vayan.
 
 ### <a name="accessibility"></a>Accesibilidad
 
-Las sugerencias tienen un efecto inusual en la accesibilidad. Aunque normalmente se desencadenan al mantener el puntero sobre un [](inter-accessibility.md) objeto, los lectores de pantalla controlan las sugerencias para los controles con acceso al teclado. Cuando se usa adecuadamente para información concisa, útil, estática y complementaria, las sugerencias pueden mejorar la accesibilidad general. De hecho, el patrón de sugerencia de texto alternativo es la manera preferida de hacer que los gráficos se puedan acceder. Sin embargo, cuando se usan de forma inapropiada, dañan la accesibilidad al dificultar la obtención de información importante o dinámica.
+Sugerencias tienen un efecto inusual en la accesibilidad. Aunque normalmente se desencadenan al mantener el puntero sobre un [](inter-accessibility.md) objeto, los lectores de pantalla controlan las sugerencias para los controles con acceso al teclado. Cuando se usa adecuadamente para información concisa, útil, estática y complementaria, las sugerencias pueden mejorar la accesibilidad general. De hecho, el patrón de sugerencia de texto alternativo es la manera preferida de hacer que los gráficos se puedan acceder. Sin embargo, cuando se usan de forma inapropiada, dañan la accesibilidad al dificultar la obtención de información importante o dinámica.
 
 Proporcione más de una manera de acceder a un control si ese control requiere una sugerencia que no tenga acceso al teclado.
 
@@ -115,7 +115,7 @@ Diseñe sugerencias reconocibles que muestren información concisa, útil, está
 
 ## <a name="usage-patterns"></a>Patrones de uso
 
-Las sugerencias tienen varios patrones de uso:
+Sugerencias varios patrones de uso:
 
 
 
@@ -147,7 +147,7 @@ Las sugerencias tienen varios patrones de uso:
 
 ### <a name="placement"></a>Selección de ubicación
 
--   **Evite cubrir el objeto con el que el usuario está a punto de ver o interactuar.** Coloque siempre la propina en el lado del objeto, incluso si eso requiere la separación entre el puntero y la propina. Cierta separación no es un problema siempre que la relación entre el objeto y su propina sea clara.
+-   **Evite cubrir el objeto con el que el usuario está a punto de ver o interactuar.** Coloque siempre la propina en el lado del objeto, incluso si eso requiere la separación entre el puntero y la propina. Alguna separación no es un problema siempre que la relación entre el objeto y su propina sea clara.
 
     -   **Excepción:** Información sobre herramientas de nombre completo que se usa en listas y árboles.
 
@@ -169,7 +169,7 @@ Las sugerencias tienen varios patrones de uso:
 
     ![captura de pantalla de información sobre texto revisado ](images/ctrl-tooltips-and-infotips-image24.png)
 
-    En el ejemplo correcto, el texto subyacente es mucho más útil que la sugerencia, por lo que la información se coloca fuera del camino.
+    En el ejemplo correcto, el texto subyacente es mucho más útil que la sugerencia, por lo que la información se coloca bien fuera del camino.
 
 -   **En el caso de las colecciones de elementos, evite cubrir el siguiente objeto con el que es probable que el usuario vea o interactúe.** En el caso de los elementos organizados horizontalmente, evite colocar sugerencias a la derecha. para los elementos organizados verticalmente, evite colocar sugerencias a continuación.
 
@@ -183,11 +183,11 @@ Las sugerencias tienen varios patrones de uso:
 
     En el ejemplo incorrecto, la sugerencia cubre el objeto con el que es más probable que el usuario interactúe a continuación.
 
--   **Para obtener sugerencias potencialmente distraídas (a menudo grandes), asegúrese de que la información sea útil para la mayoría de los usuarios.** Si ese no es el caso, puede hacer que las sugerencias de distraer son opcionales o incluso eliminarlas. De lo contrario, la mayoría de los usuarios tendrán que mover el puntero fuera del objeto de destino para deshacerse de la sugerencia.
+-   **Para obtener sugerencias potencialmente distraídas (a menudo grandes), asegúrese de que la información sea útil para la mayoría de los usuarios.** Si ese no es el caso, puede hacer que las sugerencias de distraer son opcionales o incluso eliminarlas. De lo contrario, la mayoría de los usuarios tendrán que alejar el puntero del objeto de destino para deshacerse de la sugerencia.
 
 ### <a name="tooltips"></a>Información sobre herramientas
 
--   **Use información sobre herramientas para proporcionar etiquetas para controles sin etiquetar.** Los controles que normalmente tienen información sobre herramientas son botones [de barra de](cmd-toolbars.md)herramientas, botones gráficos y controles de [divulgación progresiva.](ctrl-progressive-disclosure-controls.md) Los controles con avisos se consideran etiquetados, como cuadros [de texto](ctrl-text-boxes.md) y [cuadros combinados](/windows/desktop/uxguide/ctrl-drop). Todos los demás controles deben tener etiquetas explícitas.
+-   **Use información sobre herramientas para proporcionar etiquetas para controles sin etiquetar.** Los controles que normalmente tienen información sobre herramientas son botones de [barra](cmd-toolbars.md)de herramientas, botones gráficos y [controles de divulgación progresiva.](ctrl-progressive-disclosure-controls.md) Los controles con avisos se consideran etiquetados, como cuadros [de texto](ctrl-text-boxes.md) y [cuadros combinados.](/windows/desktop/uxguide/ctrl-drop) Todos los demás controles deben tener etiquetas explícitas.
 -   Use fragmentos de oraciones sin finalizar la puntuación.
 -   Use mayúsculas de estilo de frase.
     -   **Excepción:** Esta guía es nueva para Windows Vista. En el caso de las aplicaciones heredadas, puede usar mayúsculas y mayúsculas de estilo de título si es necesario para evitar mezclar estilos de mayúsculas y mayúsculas.
@@ -279,7 +279,7 @@ Las sugerencias tienen varios patrones de uso:
 
     ![captura de pantalla de información sobre herramientas: almacenar y reproducir música ](images/ctrl-tooltips-and-infotips-image37.png)
 
-    En el ejemplo incorrecto, la información comienza con un verbo genérico. El mejor ejemplo llega hasta el punto con verbos específicos, pero sigue utilizando las expresiones innecesarias "y otras" al final de la sugerencia.
+    En el ejemplo incorrecto, la información sobre la información comienza con un verbo genérico. El mejor ejemplo llega hasta el punto con verbos específicos, pero sigue utilizando las expresiones innecesarias "y otras" al final de la sugerencia.
 
 -   **No use lenguaje que suene a marketing.**
 
@@ -302,7 +302,7 @@ Las sugerencias tienen varios patrones de uso:
     En el ejemplo correcto, la información sobre información tiene sinónimos comunes.
 
 -   Use mayúsculas de estilo de frase.
--   **Desarrolladores:** El menú Inicio de información sobre la información procede del campo Comentario del elemento.
+-   **Desarrolladores:** El menú Inicio de información detallada procede del campo Comentario del elemento.
 
 ### <a name="quick-launch-tooltips"></a>inicio rápido información sobre herramientas
 
@@ -312,7 +312,7 @@ Las sugerencias tienen varios patrones de uso:
 
 ### <a name="control-panel-infotips"></a>Panel de control información detallada
 
--   Use Panel de control información general para describir de forma concisa las tareas Panel de control y el **hardware y el software configurados.**
+-   Use Panel de control información sobre herramientas para describir de forma concisa las Panel de control y el **hardware y el software configurados.**
 -   **Panel de control nombres e iconos deben tener información detallada.** Las tareas individuales no tienen información sobre herramientas.
 -   **Sea útil.** Céntrate en lo que pueden hacer los usuarios. No repita solo el nombre Panel de control elemento o úselo en la descripción.
 -   **Ser específico.** Evite verbos genéricos y frases como catch-all como y otro hardware. Si la información es importante, enumédala específicamente; De lo contrario, suponga que los usuarios entienden que no todo aparece en la información.
@@ -334,7 +334,7 @@ Las sugerencias tienen varios patrones de uso:
 
     Configure las opciones de conexión y visualización de Internet.
 
-    Ajuste la configuración de la visión, el oído y la movilidad.
+    Ajuste la configuración de la visión, la escucha y la movilidad.
 
 -   **Ir directamente al punto.** No use lenguaje que se aplique a Panel de control, como "Use to view and configure settings for the appearance and functionality of your...". o "Proporciona opciones para que..."
 -   No use lenguaje que suene a marketing.
@@ -343,7 +343,7 @@ Las sugerencias tienen varios patrones de uso:
 
     Punto de partida único para todas las necesidades de configuración del disco.
 
--   Dado que estas información se indexan para el cuadro de Panel de control búsqueda, describa los elementos mediante términos para los que es más probable que **los usuarios busquen.** Considere la posibilidad de usar sinónimos comunes para tareas y objetos populares.
+-   Dado que estas información se indexan para el cuadro de Panel de control búsqueda, describa los elementos con términos para los que es más probable que **los usuarios busquen.** Considere la posibilidad de usar sinónimos comunes para tareas y objetos populares.
 
     ![captura de pantalla de información sobre herramientas con tareas de controlador de juegos ](images/ctrl-tooltips-and-infotips-image43.png)
 
@@ -361,18 +361,18 @@ Las sugerencias tienen varios patrones de uso:
 
     ![captura de pantalla de información con detalles específicos ](images/ctrl-tooltips-and-infotips-image45.png)
 
-    En este ejemplo, la diferencia entre los dos elementos es más evidente debido a la propina.
+    En este ejemplo, la diferencia entre los dos elementos es más evidente debido a la sugerencia.
 
 ### <a name="icons"></a>Iconos
 
-A diferencia de las versiones anteriores de Windows, Windows Vista permite que las sugerencias tengan iconos.
+A diferencia de las versiones anteriores Windows, Windows Vista permite que las sugerencias tengan iconos.
 
 -   En el caso de la información sobre herramientas, no use iconos.
 -   Para obtener información, use iconos solo si ayudan en el reconocimiento o la comprensión, o proporcionan contexto. La mayoría de las sugerencias de información no deben tener iconos.
 
     ![captura de pantalla de información de volumen con icono de casco ](images/ctrl-tooltips-and-infotips-image46.png)
 
-    En este ejemplo, la información sobre información tiene un icono para ayudar a asociar el icono con su significado.
+    En este ejemplo, la información sobre información tiene un icono para ayudar a asociar el icono a su significado.
 
 -   El icono debe usar el [estilo Deer](vis-icons.md) y tener una apariencia discreta.
 
@@ -383,6 +383,6 @@ Para obtener instrucciones y ejemplos de iconos generales, vea [Iconos.](vis-ico
 Al hacer referencia a sugerencias:
 
 -   En programación y otra documentación técnica, consulte el tipo de sugerencia (información sobre herramientas o información sobre herramientas). En cualquier otro lugar, simplemente llámelo propina.
--   Las siguientes variaciones son incorrectas: información sobre herramientas, Información sobre herramientas e Información sobre herramientas.
+-   Las siguientes variaciones son incorrectas: información sobre herramientas, información sobre herramientas e información sobre herramientas.
 -   Para describir la interacción del usuario, mantenga el puntero sobre él.
 

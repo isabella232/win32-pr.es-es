@@ -1,11 +1,11 @@
 ---
-title: DownloadItem. resume (método)
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método resume reanuda la descarga.
+title: Método DownloadItem.resume
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método resume reanuda la descarga.
 ms.assetid: f58e4838-7b00-4485-90c6-ba5960a17699
 keywords:
-- reanudar el método Windows Media Player
-- método resume Windows Media Player, clase DownloadItem
-- Clase DownloadItem Windows Media Player, método resume
+- método resume Reproductor de Windows Media
+- método resume Reproductor de Windows Media , Clase DownloadItem
+- DownloadItem class Reproductor de Windows Media , resume (método)
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 870de9199731cf0031fa1df5eb36eb952f9566ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f83055ed3bc5a24016ea069482ff8625f48c48987ee5de2a1a4d15c905ba011c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340690"
 ---
-# <a name="downloaditemresume-method"></a>DownloadItem. resume (método)
+# <a name="downloaditemresume-method"></a>Método DownloadItem.resume
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **resume** reanuda la descarga.
+El **método resume** reanuda la descarga.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,29 +49,29 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **resume** no tiene ningún efecto en las descargas en tiempo real.
+El **método resume** no tiene ningún efecto en las descargas en tiempo real.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto DownloadItem**](downloaditem-object.md)
+[**DownloadItem (objeto)**](downloaditem-object.md)
 </dt> <dt>
 
-[**DownloadItem. PAUSE**](downloaditem-pause.md)
+[**DownloadItem.pause**](downloaditem-pause.md)
 </dt> </dl>
 
  

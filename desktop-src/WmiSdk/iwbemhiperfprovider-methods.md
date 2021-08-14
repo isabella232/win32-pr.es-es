@@ -2,19 +2,19 @@
 description: La interfaz IWbemHiPerfProvider expone los métodos siguientes.
 ms.assetid: 5853448A-CDF6-42C8-9B30-AC9F3275FD4B
 ms.tgt_platform: multiple
-title: IWbemHiPerfProvider (métodos)
+title: Métodos IWbemHiPerfProvider
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebf4e3ded69db36e9065f9397394b6c5e97a9e7f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f675a3e2e7307241878013588ff0df5a53f5c1598fe1d6f98a3a449fd135ab79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118317947"
 ---
-# <a name="iwbemhiperfprovider-methods"></a>IWbemHiPerfProvider (métodos)
+# <a name="iwbemhiperfprovider-methods"></a>Métodos IWbemHiPerfProvider
 
-La interfaz [**IWbemHiPerfProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemhiperfprovider) expone los métodos siguientes.
+La [**interfaz IWbemHiPerfProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemhiperfprovider) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. setCheckedState
-description: El método setCheckedState especifica que se comprueba el elemento indexado de la lista de reproducción.
+title: PLAYLIST.setCheckedState
+description: El método setCheckedState especifica que el elemento indexado de la lista de reproducción está activado.
 ms.assetid: ce5de21b-6354-485e-b6f7-f4d090c149f7
 keywords:
-- Windows Media Player de lista de reproducción. setCheckedState
+- PLAYLIST.setCheckedState Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a8c86459dcf590b1ff1e884a8aa671dc1bba78a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93e143f738197524e1555f18aedf84aa606626de645a98149c65507b71291cde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118336252"
 ---
-# <a name="playlistsetcheckedstate"></a>Lista de reproducción. setCheckedState
+# <a name="playlistsetcheckedstate"></a>PLAYLIST.setCheckedState
 
-El método **setCheckedState** especifica que se comprueba el elemento indexado de la lista de reproducción.
+El **método setCheckedState** especifica que el elemento indexado de la lista de reproducción está activado.
 
 ``` syntax
         elementID.setCheckedState(item)
@@ -32,10 +32,10 @@ El método **setCheckedState** especifica que se comprueba el elemento indexado 
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*movs*
+<span id="item"></span><span id="ITEM"></span>*Artículo*
 </dt> <dd>
 
-**Número** (**largo**) que indica el índice del elemento de lista de reproducción que se va a comprobar.
+**Number** ( long )**que** indica el índice del elemento de lista de reproducción que se va a comprobar.
 
 </dd> </dl>
 
@@ -43,30 +43,30 @@ El método **setCheckedState** especifica que se comprueba el elemento indexado 
 
 Este método devuelve un **valor booleano**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede establecer todos los elementos en el estado activado si especifica 1 en el parámetro *Item* .
+Puede establecer todos los elementos en el estado activado especificando 1 en el parámetro *item.*
 
-Este método se ha reemplazado por **setCheckedState2**, que admite listas de reproducción anidadas.
+Este método se ha reemplazado por **setCheckedState2,** que admite listas de reproducción anidadas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. setCheckedState2**](playlist-setcheckedstate2.md)
+[**PLAYLIST.setCheckedState2**](playlist-setcheckedstate2.md)
 </dt> </dl>
 
  

@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2a4a7f561dc0bf114a5824b1f8fe6d9547c327d5
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 92a300f292633e3d54264349e79491360c7017c38c62da60a953d36371189791
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118499516"
 ---
 # <a name="xmunibble4-constructors"></a>Constructores XMUNIBBLE4
 
@@ -56,7 +56,7 @@ Esto solo está disponible para el desarrollo basado en C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUNIBBLE</code> partir de una variable que contiene datos de componente en un formato <code>uint16_t</code> empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> a partir de una variable que contiene datos <code>uint16_t</code> de componente en un formato empaquetado. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUNIBBLE</code> partir de una variable que contiene datos de componentes en un formato <code>uint16_t</code> empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> a partir de una variable que contiene datos <code>uint16_t</code> de componente en un formato empaquetado. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -104,7 +104,7 @@ Este constructor solo está disponible en C++.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

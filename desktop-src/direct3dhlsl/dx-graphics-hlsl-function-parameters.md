@@ -1,6 +1,6 @@
 ---
-title: Argumentos de la función
-description: Una función toma uno o más argumentos de entrada; Use la siguiente sintaxis para declarar cada argumento.
+title: Argumentos de función
+description: Una función toma uno o varios argumentos de entrada; use la siguiente sintaxis para declarar cada argumento.
 ms.assetid: 80e0dbc8-26b7-4250-bb01-6856fc70f6b8
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,28 +9,28 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3ba35ad04b20b67e45550644e842d69209ca5088
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 7a2f2fdb656917ccf9dc57f06713fe01d77398d35776ac0c479b7d088281bc0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104420190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118514768"
 ---
-# <a name="function-arguments"></a>Argumentos de la función
+# <a name="function-arguments"></a>Argumentos de función
 
-Una función toma uno o más argumentos de entrada; Use la siguiente sintaxis para declarar cada argumento.
+Una función toma uno o varios argumentos de entrada; use la siguiente sintaxis para declarar cada argumento.
 
 
 
 |                                                                                             |
 |---------------------------------------------------------------------------------------------|
-| **\[InputModifier \] nombre de tipo \[ : semántico \] \[ InterpolationModifier \] \[ = inicializadores\]** |
+| **\[InputModifier \] Type Name \[ : Semantic \] \[ InterpolationModifier \] \[ = Initializers\]** |
 
 
 
  
 
-\[Nombre de tipo de modificador \] \[ : semántico \] \[ : modificador de interpolación \] \[ = inicializadores\]
+\[Nombre \] de tipo modificador : Semantic : \[ \] \[ Interpolation Modifier = \] \[ Initializer(s)\]
 
 Si hay varios argumentos de función, se separan mediante comas.
 
@@ -52,11 +52,11 @@ Si hay varios argumentos de función, se separan mediante comas.
 <tbody>
 <tr class="odd">
 <td><span id="InputModifier"></span><span id="inputmodifier"></span><span id="INPUTMODIFIER"></span><strong>InputModifier</strong><br/></td>
-<td>Término opcional que identifica un argumento como una entrada, una salida o ambas cosas.<br/> 
+<td>Término opcional que identifica un argumento como una entrada, una salida o ambos.<br/> 
 <table>
 <tbody>
 <tr class="odd">
-<td>Value</td>
+<td>Valor</td>
 <td>Descripción</td>
 </tr>
 <tr class="even">
@@ -79,28 +79,28 @@ Si hay varios argumentos de función, se separan mediante comas.
 </table>
 
 <p> </p>
-<p>Los parámetros siempre se pasan por valor. en indica que el valor del parámetro se debe copiar en desde la aplicación que realiza la llamada antes de que comience la función. out indica que el último valor del parámetro debe copiarse y devolverse a la aplicación que realiza la llamada cuando la función devuelve. Inout es una abreviatura para especificar ambos.</p>
-<p>Un valor uniforme procede de un registro constante; cada sombreador de vértices o invocación del sombreador de píxeles verá el mismo valor inicial para una variable uniforme. Las variables globales se tratan como si se declararan uniformes. En el caso de las funciones que no son de nivel superior, Uniform es sinónimo de <strong>en</strong>. Si no se especifica ningún uso de parámetro, se supone que el uso del parámetro está <strong>en</strong>.</p></td>
+<p>Los parámetros siempre se pasan por valor. en indica que el valor del parámetro debe copiarse en de la aplicación que realiza la llamada antes de que comience la función. out indica que se debe copiar el último valor del parámetro y devolverlo a la aplicación que realiza la llamada cuando se devuelve la función. inout es una forma abreviada para especificar ambos.</p>
+<p>Un valor uniforme procede de un registro constante; cada sombreador de vértices o invocación de sombreador de píxeles ve el mismo valor inicial para una variable uniforme. Las variables globales se tratan como si se declararon uniformes. Para las funciones que no son de nivel superior, uniform es sinónimo de <strong>en</strong>. Si no se especifica ningún uso de parámetros, se supone que el uso de parámetros está <strong>en</strong>.</p></td>
 </tr>
 <tr class="even">
-<td><p><span id="Type"></span><span id="type"></span><span id="TYPE"></span><strong>Automáticamente</strong></p></td>
-<td><p>El tipo de argumento; puede ser cualquier <a href="dx-graphics-hlsl-data-types.md">tipo</a>HLSL válido.</p></td>
+<td><p><span id="Type"></span><span id="type"></span><span id="TYPE"></span><strong>Tipo</strong></p></td>
+<td><p>El tipo de argumento; puede ser cualquier tipo HLSL <a href="dx-graphics-hlsl-data-types.md">válido.</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><span id="Name"></span><span id="name"></span><span id="NAME"></span><strong>Name</strong></p></td>
+<td><p><span id="Name"></span><span id="name"></span><span id="NAME"></span><strong>Nombre</strong></p></td>
 <td><p>Cadena ASCII que identifica de forma única el nombre de la función de sombreador.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="Semantic"></span><span id="semantic"></span><span id="SEMANTIC"></span><strong>Semántica</strong></p></td>
-<td><p>Cadena opcional que identifica el uso previsto de los datos (vea <a href="dx-graphics-hlsl-semantics.md">semántica (DirectX HLSL)</a>).</p></td>
+<td><p>Cadena opcional que identifica el uso previsto de los datos (vea <a href="dx-graphics-hlsl-semantics.md">Semantics (DirectX HLSL)</a>).</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="InterpolationModifier"></span><span id="interpolationmodifier"></span><span id="INTERPOLATIONMODIFIER"></span><strong>InterpolationModifier</strong></p></td>
-<td><p><a href="dx-graphics-hlsl-struct.md">Modificador de interpolación</a> opcional que permite a un sombreador determinar el método de interpolación. Un modificador de interpolación en un argumento de función solo se aplica a un argumento que se usa como entrada para una función de sombreador de píxeles.</p></td>
+<td><p>Modificador <a href="dx-graphics-hlsl-struct.md">de interpolación opcional</a> que permite a un sombreador determinar el método de interpolación. Un modificador de interpolación en un argumento de función solo se aplica a un argumento utilizado como entrada para una función de sombreador de píxeles.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="Initializers"></span><span id="initializers"></span><span id="INITIALIZERS"></span><strong>Inicializadores</strong></p></td>
-<td><p>Valores opcionales para la inicialización; se requieren varios valores para inicializar los tipos de datos de varios componentes.</p></td>
+<td><p>Valores opcionales para la inicialización; se requieren varios valores para inicializar tipos de datos de varios componentes.</p></td>
 </tr>
 </tbody>
 </table>
@@ -109,15 +109,15 @@ Si hay varios argumentos de función, se separan mediante comas.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los argumentos de función se enumeran en una lista de argumentos separados por comas en una declaración de función. Como en las funciones de C, cada argumento debe tener un nombre de parámetro y un tipo declarados; un argumento para una función HLSL puede incluir opcionalmente una semántica, un valor inicial y una entrada de sombreador de píxeles puede incluir un tipo de interpolación.
+Los argumentos de función se enumeran en una lista de argumentos separados por comas en una declaración de función. Al igual que en las funciones de C, cada argumento debe tener un nombre de parámetro y un tipo declarados; Opcionalmente, un argumento para una función HLSL puede incluir una semántica, un valor inicial y una entrada de sombreador de píxeles puede incluir un tipo de interpolación.
 
-El *tipo* de un argumento de función puede ser una estructura, que podría incluir un modificador de interpolación por miembro. Si el argumento de función también tiene un modificador de interpolación, el modificador de argumento de función reemplaza los modificadores de interpolación declarados en el tipo.
+El *tipo* de un argumento de función podría ser una estructura, que podría incluir un modificador de interpolación por miembro. Si el argumento de función también tiene un modificador de interpolación, el modificador de argumento de función invalida los modificadores de interpolación declarados dentro del tipo.
 
 ## <a name="examples"></a>Ejemplos
 
-En este ejemplo (del [ejemplo BasicHLSL10](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx)) se muestran entradas uniformes y no uniformes para una función de sombreador de vértices.
+En este ejemplo (del [ejemplo BasicHLSL10)](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx)se muestran entradas uniformes y no uniformes en una función de sombreador de vértices.
 
 
 ```
@@ -135,7 +135,7 @@ VS_OUTPUT RenderSceneVS(
 
 
 
-Este ejemplo (del [ejemplo ContentStreaming](https://msdn.microsoft.com/library/Ee416397(v=VS.85).aspx)) utiliza una estructura de entrada para pasar argumentos a una función de sombreador de píxeles.
+En este ejemplo (del [ejemplo ContentStreaming)](https://msdn.microsoft.com/library/Ee416397(v=VS.85).aspx)se usa una estructura de entrada para pasar argumentos a una función de sombreador de píxeles.
 
 
 ```

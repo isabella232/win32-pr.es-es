@@ -1,26 +1,26 @@
 ---
-title: Cómo recuperar datos de geometría extendiendo ID2D1SimplifiedGeometrySink
-description: Muestra cómo recuperar datos de geometría extendiendo la interfaz ID2D1SimplifiedGeometrySink.
+title: Cómo recuperar datos de geometría mediante la extensión de ID2D1SimplifiedGeometrySink
+description: Muestra cómo recuperar datos de geometría mediante la extensión de la interfaz ID2D1SimplifiedGeometrySink.
 ms.assetid: c6777b11-6d4e-409e-9c30-da1e060c9aca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ba3670eb8d0152cc1dae8fbcc164bd8a6167630
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8b9cd7e3f5e01b77c07e0082d3460b718a4363cf88288859b715369a94ca09bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003439"
 ---
-# <a name="how-to-retrieve-geometry-data-by-extending-id2d1simplifiedgeometrysink"></a>Cómo recuperar datos de geometría extendiendo ID2D1SimplifiedGeometrySink
+# <a name="how-to-retrieve-geometry-data-by-extending-id2d1simplifiedgeometrysink"></a>Cómo recuperar datos de geometría mediante la extensión de ID2D1SimplifiedGeometrySink
 
-Aunque un objeto [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) es inmutable, hay casos en los que es necesario manipular los datos de geometría en un objeto de geometría de trazado. Direct2D le permite hacerlo proporcionando una interfaz extensible denominada [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink). En la ilustración de concepto, en este tema se describe cómo extender esta interfaz para recuperar los datos de geometría de un objeto de geometría de trazado.
+Aunque un [**objeto ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) es inmutable, hay casos en los que es necesario manipular los datos de geometría en un objeto geometry de ruta de acceso. Direct2D le permite hacerlo proporcionando una interfaz extensible denominada [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink). Para la ilustración de concepto, en este tema se describe cómo extender esta interfaz para recuperar los datos de geometría de un objeto geometry de ruta de acceso.
 
 **Para extender la interfaz ID2D1SimplifiedGeometrySink**
 
 1.  Implemente una clase que herede de [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink).
-2.  Cree una instancia de esa clase y pásela a [**ID2D1Geometry:: simplifique**](id2d1geometry-simplify.md).
+2.  Cree una instancia de esa clase y pásala a [**ID2D1Geometry::Simplify**](id2d1geometry-simplify.md).
 
-En el ejemplo de código siguiente se muestra cómo implementar una clase denominada SpecializedSink que hereda de la interfaz [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) . En la ilustración simplicidad de concepto, el método **AddLines** extendido recupera los datos de geometría y los muestra en la ventana de la consola. puede personalizar este método para satisfacer sus necesidades de datos específicas.
+En el ejemplo de código siguiente se muestra cómo implementar una clase denominada SpecializedSink que hereda de la [**interfaz ID2D1SimplifiedGeometrySink.**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) Para simplificar la ilustración de concepto, el método **AddLines** extendido recupera los datos de geometría y, a continuación, los muestra en la ventana de consola. puede personalizar este método para satisfacer sus necesidades de datos específicas.
 
 
 ```C++
@@ -118,7 +118,7 @@ class SpecializedSink : public ID2D1SimplifiedGeometrySink
 
 
 
-A continuación, en el ejemplo se usa un conjunto de datos (182, 209), (211, 251), (251, 226), (392, 360) y (101, 360) para crear una geometría de trazado rellena (**m \_ pGeometry**) donde se pueden recuperar los datos.
+A continuación, el ejemplo usa un conjunto de datos (182, 209), (211, 251), (251, 226), (392, 360) y (101, 360) para crear una geometría de ruta de acceso rellena **(m \_ pGeometry)** donde se pueden recuperar los datos.
 
 
 ```C++
@@ -159,7 +159,7 @@ if(SUCCEEDED(hr))
 
 
 
-Por último, en el ejemplo se crea un objeto SpecializedSink y, a continuación, se llama al método [**ID2D1Geometry:: simplifique**](id2d1geometry-simplify.md) , pasando el objeto SpecializedSink y el parámetro de líneas de la [**\_ \_ \_ opción \_ de simplificación de geometría D2D1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_geometry_simplification_option) , que hace que las curvas se acoplen en segmentos de línea.
+Por último, en el ejemplo se crea un objeto SpecializedSink y, a continuación, se llama al método [**ID2D1Geometry::Simplify,**](id2d1geometry-simplify.md) pasando el objeto SpecializedSink y el parámetro [**\_ GEOMETRY \_ SIMPLIFICATION OPTION LINES \_ \_ de D2D1,**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_geometry_simplification_option) lo que hace que las curvas se aplanen en segmentos de línea.
 
 
 ```C++
@@ -196,7 +196,7 @@ Por último, en el ejemplo se crea un objeto SpecializedSink y, a continuación,
 
 El programa crea salidas como se muestra en la siguiente captura de pantalla.
 
-![captura de pantalla de una ventana de consola con salida sobre la adición y la recuperación de datos de geometría](images/specializedgeometrysink.png)
+![captura de pantalla de una ventana de consola con salida sobre cómo agregar y recuperar datos de geometría](images/specializedgeometrysink.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -205,6 +205,6 @@ El programa crea salidas como se muestra en la siguiente captura de pantalla.
 [Referencia de Direct2D](reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

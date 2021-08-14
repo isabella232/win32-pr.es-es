@@ -1,21 +1,21 @@
 ---
-description: Obtenga información sobre el parámetro PageMediaSizePSWidth. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro PageMediaSizePSWidth. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: a1a684ce-5615-4ff7-a7aa-5c9f786f84ed
 title: PageMediaSizePSWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfe678107d2a183ee0f0bf6ce290dfe230fa8cc2
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 125116e2dc1273f791822e73a057eede70784bfe4c9b3dfef15171b234ea7d85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118471038"
 ---
 # <a name="pagemediasizepswidth"></a>PageMediaSizePSWidth
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el ancho de la página a la dirección de orientación de la fuente (Especificación de formato de archivo de descripción de impresora [PostScript de referencia).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+Especifica el ancho de la página a la dirección de orientación de la fuente (Referencia [PostScript especificación](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)de formato de archivo de descripción de impresora ).
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -78,7 +78,7 @@ En la tabla siguiente se describen las características de las variables definid
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
-| Múltiple<br/>     | integer<br/> | 1<br/>               |
+| Varios<br/>     | integer<br/> | 1<br/>               |
 | UnitType<br/>     | string<br/>  | Micras<br/>         |
 
 
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de formato de archivo de descripción de impresora PostScript](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+[PostScript Especificación de formato de archivo de descripción de impresora](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 </dt> <dt>
 
 [Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)

@@ -3,22 +3,22 @@ title: Referencia de MCIWnd
 description: Referencia de MCIWnd
 ms.assetid: 11fba6bb-17f1-4fbe-b148-4755a3c6216a
 keywords:
-- MCI (media control Interface), referencia MCIWnd
+- MCI (interfaz de control multimedia), referencia de MCIWnd
 - Clase de ventana MCIWnd, referencia
 - Ventana de MCIWnd, referencia
 - Referencia de MCIWnd, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76333f38a5dec3edaadcae69777703ebea61296f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03249d5e0f0a0f4fef8110d878021437f7aee667085a0720a86de77c8cbdfe49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374370"
 ---
 # <a name="mciwnd-reference"></a>Referencia de MCIWnd
 
-En esta sección se describen las funciones, los mensajes y las macros asociados a la clase de ventana MCIWnd. Estos elementos se agrupan de la siguiente manera.
+En esta sección se describen las funciones, mensajes y macros asociados a la clase de ventana MCIWnd. Estos elementos se agrupan como se muestra a continuación.
 
 ## <a name="window-management"></a>Administración de ventanas
 
@@ -27,7 +27,7 @@ En esta sección se describen las funciones, los mensajes y las macros asociados
 -   [**MCIWndGetStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetstyles)
 -   [**MCIWndRegisterClass**](/windows/desktop/api/Vfw/nf-vfw-mciwndregisterclass)
 
-## <a name="file-and-device-management"></a>Administración de archivos y dispositivos
+## <a name="file-and-device-management"></a>Archivo y Administración de dispositivos
 
 -   [**MCIWndClose**](/windows/desktop/api/Vfw/nf-vfw-mciwndclose)
 -   [**MCIWndDestroy**](/windows/desktop/api/Vfw/nf-vfw-mciwnddestroy)
@@ -48,11 +48,11 @@ En esta sección se describen las funciones, los mensajes y las macros asociados
 -   [**MCIWndPlayTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto)
 -   [**MCIWndSetRepeat**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetrepeat)
 
-## <a name="recording"></a>Grabando
+## <a name="recording"></a>Grabación
 
 -   [**MCIWndRecord**](/windows/desktop/api/Vfw/nf-vfw-mciwndrecord)
 
-## <a name="positioning"></a>Posición
+## <a name="positioning"></a>Posicionamiento
 
 -   [**MCIWndEnd**](/windows/desktop/api/Vfw/nf-vfw-mciwndend)
 -   [**MCIWndGetEnd**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetend)
@@ -93,7 +93,7 @@ En esta sección se describen las funciones, los mensajes y las macros asociados
 -   [**MCIWndRealize**](/windows/desktop/api/Vfw/nf-vfw-mciwndrealize)
 -   [**MCIWndSetPalette**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetpalette)
 
-## <a name="event-and-error-notification"></a>Eventos y notificación de errores
+## <a name="event-and-error-notification"></a>Notificación de eventos y errores
 
 -   [**MCIWndGetError**](/windows/desktop/api/Vfw/nf-vfw-mciwndgeterror)
 -   [**MCIWNDM \_ NOTIFYERROR**](mciwndm-notifyerror.md)
@@ -127,7 +127,7 @@ En esta sección se describen las funciones, los mensajes y las macros asociados
 -   [**MCIWndCanSave**](/windows/desktop/api/Vfw/nf-vfw-mciwndcansave)
 -   [**MCIWndCanWindow**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanwindow)
 
-## <a name="mci-device-settings"></a>Configuración del dispositivo MCI
+## <a name="mci-device-settings"></a>MCI Device Configuración
 
 -   [**MCIWndGetAlias**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetalias)
 -   [**MCIWndGetDevice**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdevice)
@@ -135,7 +135,7 @@ En esta sección se describen las funciones, los mensajes y las macros asociados
 -   [**MCIWndGetFileName**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetfilename)
 -   [**MCIWndGetMode**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetmode)
 
-## <a name="mci-command-string-interface"></a>Interfaz de Command-String de MCI
+## <a name="mci-command-string-interface"></a>Interfaz de Command-String MCI
 
 -   [**MCIWndReturnString**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring)
 -   [**MCIWndSendString**](/windows/desktop/api/Vfw/nf-vfw-mciwndsendstring)
@@ -144,12 +144,12 @@ En esta sección se describen las funciones, los mensajes y las macros asociados
 
 <dl> <dt>
 
-[Clase de ventana MCIWnd](mciwnd-window-class.md)
+[Clase Window de MCIWnd](mciwnd-window-class.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

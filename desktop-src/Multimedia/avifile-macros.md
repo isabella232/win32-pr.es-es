@@ -1,25 +1,25 @@
 ---
-title: Macros AVIFile
-description: Macros AVIFile
+title: AVIFile Macros
+description: AVIFile Macros
 ms.assetid: 5544e706-89e9-46e8-8703-ad978e675bbf
 keywords:
-- Vídeo para Windows (VFW), macros AVIFile
-- VFW (vídeo para Windows), macros AVIFile
-- Macros AVIFile, referencia
+- Vídeo para Windows (VFW),macros AVIFile
+- VFW (vídeo para Windows),macros AVIFile
+- MACROS AVIFile,reference
 - Referencia de AVIFile, macros
-- referencia de AVIFile, macros
+- referencia de AVIFile,macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3963c8d937e8fabdaf9006d349a1ab6b1a103ab8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 25356bd7086a24ee82b2252e8a5d80b051680c431fd8b1b11e36afddcf5cf406
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375622"
 ---
-# <a name="avifile-macros"></a>Macros AVIFile
+# <a name="avifile-macros"></a>AVIFile Macros
 
-Las macros siguientes se usan con AVIFile.
+Las siguientes macros se usan con AVIFile.
 
 -   [**AVIStreamDataSize**](/windows/desktop/api/Vfw/nf-vfw-avistreamdatasize)
 -   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)
@@ -50,9 +50,9 @@ Las macros siguientes se usan con AVIFile.
 [Referencia de AVIFile](avifile-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

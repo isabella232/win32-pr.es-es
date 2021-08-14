@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para enumerar usuarios en un servidor miembro
-description: En este tema se incluyen ejemplos de código que enumeran usuarios en un servidor miembro.
+description: En este tema se incluyen ejemplos de código que enumeran los usuarios en un servidor miembro.
 ms.assetid: a856281a-7f84-44d0-9123-b27fda56e0ea
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, enumerar usuarios en un servidor miembro
+- Active Directory ejemplos Active Directory , enumeración de usuarios en un servidor miembro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b066e92ced26c58ef932025f4e818d87a907b30
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03064d2030cd84ea75c1225bc6592c33e5af5a20b2fe6946987d4ca7caf7497f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693704"
 ---
 # <a name="example-code-for-enumerating-users-on-a-member-server"></a>Código de ejemplo para enumerar usuarios en un servidor miembro
 
-En el siguiente ejemplo de código Visual Basic se enumeran todos los usuarios de un servidor miembro o Windows 2000 Professional.
+En el ejemplo Visual Basic código siguiente se enumeran todos los usuarios de un servidor miembro o Windows 2000 Professional.
 
 
 ```VB
@@ -73,7 +73,7 @@ End Sub
 
 
 
-En el siguiente ejemplo de código de C++ se enumeran todos los objetos de una clase especificada, como un usuario, y se muestran los miembros incluidos en cada objeto en un servidor miembro o Windows 2000 Professional.
+En el siguiente ejemplo de código de C++ se enumeran todos los objetos de una clase especificada, como un usuario, y se muestran los miembros contenidos en cada objeto en un servidor miembro o Windows 2000 Professional.
 
 
 ```C++
@@ -203,9 +203,9 @@ HRESULT ListObjectsWithWinNtProvider(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

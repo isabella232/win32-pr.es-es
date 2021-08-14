@@ -1,9 +1,9 @@
 ---
-title: Propiedad Ribbon. SizeDefinitions
-description: Representa un contenedor para plantillas de diseño personalizado de controles de la cinta de opciones.
+title: Propiedad Ribbon.SizeDefinitions
+description: Representa un contenedor para plantillas de diseño personalizadas de controles de cinta de opciones.
 ms.assetid: 1f5fcffc-7f2e-4763-b0a7-4e8f46534da8
 keywords:
-- Ribbon. SizeDefinitions (propiedad) cinta de Windows
+- Cinta de opciones de la propiedad Ribbon.SizeDefinitions Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b8ffe5a3339b0f32e493a1f7ddc33789526695e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24f3109c7e9f709267310415b48238b24050c7531bc0f784290876ab47706d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202261"
 ---
-# <a name="ribbonsizedefinitions-property"></a>Propiedad Ribbon. SizeDefinitions
+# <a name="ribbonsizedefinitions-property"></a>Propiedad Ribbon.SizeDefinitions
 
-Representa un contenedor para plantillas de diseño personalizado de controles de la cinta de opciones.
+Representa un contenedor para plantillas de diseño personalizadas de controles de cinta de opciones.
 
 ## <a name="usage"></a>Uso
 
@@ -55,11 +55,11 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**cinta**](windowsribbon-element-ribbon.md)de opciones.
+Puede producirse como máximo una vez para cada cinta [**de opciones.**](windowsribbon-element-ribbon.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -88,18 +88,18 @@ En el ejemplo de código siguiente se muestra una plantilla personalizada básic
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Personalización de una cinta a través de definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

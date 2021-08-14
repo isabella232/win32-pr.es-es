@@ -1,34 +1,34 @@
 ---
-description: Los dispositivos Direct3D pueden transformar las coordenadas de textura de los vértices aplicando una matriz 4x4.
+description: Los dispositivos Direct3D pueden transformar las coordenadas de textura de los vértices aplicando una matriz de 4x4.
 ms.assetid: f36439de-e37a-457c-9485-a435847eb01e
 title: Transformaciones de coordenadas de textura (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f45b8107f609348ae2367b1171ae7913797f4558
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 755af38c6c58fc2f19297b056e3e9f35ce2559a6a7a2d52e8a23c94f93f4fbaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984795"
 ---
 # <a name="texture-coordinate-transformations-direct3d-9"></a>Transformaciones de coordenadas de textura (Direct3D 9)
 
-Los dispositivos Direct3D pueden transformar las coordenadas de textura de los vértices aplicando una matriz 4x4. El sistema aplica las transformaciones a las coordenadas de textura de la misma manera que la geometría. Cualquier transformación (escala, rotación, traslación, proyección, cizalla o cualquier combinación de estos) se puede realizar con una matriz 4x4.
+Los dispositivos Direct3D pueden transformar las coordenadas de textura de los vértices aplicando una matriz de 4x4. El sistema aplica transformaciones a las coordenadas de textura de la misma manera que la geometría. Cualquier transformación (escala, rotación, traducción, proyección, cizalla o cualquier combinación de estas) se puede realizar con una matriz de 4x4.
 
 > [!Note]  
-> Direct3D no modifica los vértices transformados y iluminados. Como resultado, una aplicación que use vértices transformados y encendidos no puede usar Direct3D para transformar las coordenadas de textura de los vértices.
+> Direct3D no modifica los vértices transformados ni encendidos. Como resultado, una aplicación que usa vértices transformados e encendidos no puede usar Direct3D para transformar las coordenadas de textura de los vértices.
 
  
 
-Los dispositivos que admiten operaciones de transformación y luz aceleradas por hardware (dispositivo HAL T&L) también aceleran la transformación de coordenadas de textura. Cuando no está disponible la aceleración de hardware de las transformaciones, las optimizaciones específicas de la plataforma de la canalización de geometría de Direct3D se aplican a las transformaciones de coordenadas de textura.
+Los dispositivos que admiten operaciones de iluminación y transformación acelerada por hardware (T&L XSL Device) también aceleran la transformación de las coordenadas de textura. Cuando la aceleración de hardware de transformaciones no está disponible, las optimizaciones específicas de la plataforma en la canalización de geometría de Direct3D se aplican a las transformaciones de coordenadas de textura.
 
-Las transformaciones de coordenadas de textura son útiles para producir efectos especiales, a la vez que evitan la necesidad de modificar directamente las coordenadas de textura de la geometría. Puede usar matrices simples de traslación o rotación para animar las texturas de un objeto, o puede transformar las coordenadas de textura generadas automáticamente por Direct3D para simplificar y quizás acelerar los efectos avanzados, como las texturas proyectadas y la asignación dinámica de luz. Además, puede usar transformaciones de coordenadas de textura para reutilizar un único conjunto de coordenadas de textura para varios propósitos, en varias fases de textura.
+Las transformaciones de coordenadas de textura son útiles para producir efectos especiales, a la vez que evitan la necesidad de modificar directamente las coordenadas de textura de la geometría. Puede usar matrices de traslación o rotación simples para animar texturas en un objeto, o bien puede transformar las coordenadas de textura generadas automáticamente por Direct3D para simplificar y quizás acelerar los efectos avanzados, como las texturas proyectadas y la asignación de luz dinámica. Además, puede usar transformaciones de coordenadas de textura para reutilizar un único conjunto de coordenadas de textura para varios propósitos, en varias fases de textura.
 
-## <a name="setting-and-retrieving-texture-coordinate-transformations"></a>Establecimiento y recuperación de transformaciones de coordenadas de textura
+## <a name="setting-and-retrieving-texture-coordinate-transformations"></a>Establecer y recuperar transformaciones de coordenadas de textura
 
-Al igual que las matrices que usa la aplicación para la geometría, se establecen y recuperan las transformaciones de coordenadas de textura mediante una llamada a los métodos [**IDirect3DDevice9:: SetTransform**](/windows/desktop/api) y [**IDirect3DDevice9:: GetTransform**](/windows/desktop/api) . Estos métodos aceptan D3DTS \_ TEXTURE0 a través \_ de D3DTS TEXTURE7 miembros del tipo enumerado [**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md) para identificar las matrices de transformación para las fases de textura de 0 a 7, respectivamente.
+Al igual que las matrices que la aplicación usa para geometry, puede establecer y recuperar transformaciones de coordenadas de textura mediante una llamada a los métodos [**IDirect3DDevice9::SetTransform**](/windows/desktop/api) e [**IDirect3DDevice9::GetTransform.**](/windows/desktop/api) Estos métodos aceptan los miembros TEXTURE0 de D3DTS a D3DTS TEXTURE7 del tipo enumerado \_ \_ [**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md) para identificar las matrices de transformación para las fases de textura 0 a 7, respectivamente.
 
-El código siguiente establece una matriz que se aplica a las coordenadas de textura para la fase de textura 0.
+El código siguiente establece una matriz que se aplicará a las coordenadas de textura para la fase de textura 0.
 
 
 ```
@@ -45,9 +45,9 @@ d3dDevice->SetTransform( D3DTS_TEXTURE0, &matTrans );
 
 ## <a name="enabling-texture-coordinate-transformations"></a>Habilitar transformaciones de coordenadas de textura
 
-El \_ Estado de la fase de textura de D3DTSS TEXTURETRANSFORMFLAGS controla la aplicación de transformaciones de coordenadas de textura. Los valores de este estado de fase de textura se definen mediante el tipo enumerado [**D3DTEXTURETRANSFORMFLAGS**](./d3dtexturetransformflags.md) .
+El estado de la fase de textura TEXTURETRANSFORMFLAGS de D3DTSS controla la aplicación de transformaciones de coordenadas \_ de textura. El tipo enumerado [**D3DTEXTURETRANSFORMFLAGS**](./d3dtexturetransformflags.md) define los valores para este estado de fase de textura.
 
-Las transformaciones de coordenadas de textura se deshabilitan cuando D3DTSS \_ TEXTURETRANSFORMFLAGS se establece en D3DTTFF \_ Disable (el valor predeterminado). Suponiendo que las transformaciones de coordenadas de textura se habilitaron para la fase 0, el código siguiente las deshabilita.
+Las transformaciones de coordenadas de textura se deshabilitan cuando D3DTSS TEXTURETRANSFORMFLAGS se establece \_ en D3DTTFF \_ DISABLE (el valor predeterminado). Suponiendo que las transformaciones de coordenadas de textura se habilitaron para la fase 0, el código siguiente las deshabilita.
 
 
 ```
@@ -60,7 +60,7 @@ d3dDevice->SetTextureStageState( 0, D3DTSS_TEXTURETRANSFORMFLAGS,
 
 
 
-Los demás valores definidos en [**D3DTEXTURETRANSFORMFLAGS**](./d3dtexturetransformflags.md) se usan para habilitar las transformaciones de coordenadas de textura y para controlar cuántos elementos de coordenadas de textura resultantes se pasan al rasterizador. Por ejemplo, tome el código siguiente.
+Los demás valores definidos en [**D3DTEXTURETRANSFORMFLAGS**](./d3dtexturetransformflags.md) se usan para habilitar transformaciones de coordenadas de textura y para controlar cuántos elementos de coordenadas de textura resultantes se pasan al rasterizador. Por ejemplo, tome el código siguiente.
 
 
 ```
@@ -73,9 +73,9 @@ d3dDevice->SetTextureStageState( 0, D3DTSS_TEXTURETRANSFORMFLAGS,
 
 
 
-El \_ valor de COUNT2 de D3DTTFF indica al sistema que aplique el conjunto de matrices de transformación para la fase de textura 0 y, a continuación, pase los dos primeros elementos de las coordenadas de textura modificadas al rasterizador.
+El valor D3DTTFF COUNT2 indica al sistema que aplique el conjunto de matrices de transformación para la fase de textura 0 y, a continuación, pase los dos primeros elementos de las coordenadas de textura modificadas al \_ rasterizador.
 
-La \_ marca de transformación de textura proyectada D3DTTFF indica las coordenadas de una textura proyectada. Cuando se especifica esta marca, el rasterizador divide los elementos pasados en el último elemento. Tome el código siguiente, por ejemplo.
+La marca de transformación de textura D3DTTFF \_ PROJECTED indica las coordenadas de una textura proyectada. Cuando se especifica esta marca, el rasterizador divide los elementos pasados por el último elemento. Tome el código siguiente, por ejemplo.
 
 
 ```
@@ -88,7 +88,7 @@ d3dDevice->SetTextureStageState( 0, D3DTSS_TEXTURETRANSFORMFLAGS,
 
 
 
-Este ejemplo informa al sistema para que pase tres elementos de coordenadas de textura al rasterizador. El rasterizador divide los dos primeros elementos por el tercero, lo que genera las coordenadas de textura 2D necesarias para direccionar la textura.
+En este ejemplo se informa al sistema de que pase tres elementos de coordenadas de textura al rasterizador. El rasterizador divide los dos primeros elementos por el tercero, generando las coordenadas de textura 2D necesarias para abordar la textura.
 
 ## <a name="related-topics"></a>Temas relacionados
 

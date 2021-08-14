@@ -1,23 +1,23 @@
 ---
-description: El tipo de datos de cadena de bits se codifica en un tripledo TLV que comienza con un byte de etiqueta de 0x03.
+description: El tipo de datos BIT STRING se codifica en un triplete TLV que comienza con un byte tag de 0x03.
 ms.assetid: 7464dd20-5e79-4ca1-a6ae-9b706e9cb925
 title: CADENA DE BITS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 115ead46663b94d6db2d089f1fae2fd8c40a2ac7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 056616a22cf2e683e943afef9369ed4c885963174aff0e72dea6ef718ddbdf7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104551529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905070"
 ---
 # <a name="bit-string"></a>CADENA DE BITS
 
-El tipo de datos de **cadena de bits** se codifica en un tripledo TLV que comienza con un byte de **etiqueta** de 0x03. El campo de **valor** del trío TLV contiene un byte inicial que especifica el número de bits que quedan sin usar en el byte final del contenido. En el ejemplo siguiente, el campo de **longitud** se establece en 0x03 porque los tres bytes de contenido siguen y el byte inicial del campo de **valor** se establece en 0x04 porque hay cuatro bits no usados en el último byte de contenido. Los bits no usados se indican mediante la letra x.
+El **tipo de datos BIT STRING** se codifica en un triplete TLV que comienza con un byte **tag** de 0x03. El **campo** Valor del triplete TLV contiene un byte inicial que especifica el número de bits que quedan sin usar en el byte final del contenido. En el ejemplo  siguiente, el campo Longitud se establece en 0x03 porque siguen  tres bytes de contenido y el byte inicial del campo Valor se establece en 0x04 porque hay cuatro bits sin usar en el último byte de contenido. Cada bit no utilizado se indica mediante la letra x.
 
-![codificación der de tipo de datos de cadena de bits](images/der-tlv-bitstring.png)
+![codificación der del tipo de datos de cadena de bits](images/der-tlv-bitstring.png)
 
-En el ejemplo siguiente, adaptado del [tema \# ASN. 1 codificado de PKCS 10](pkcs--10-encoded-asn-1.md) , se muestra la firma codificada de una solicitud de \# certificado PKCS 10 de ejemplo. El primer byte contiene el valor de **etiqueta** para el tipo de datos de **cadena de bits** , 0x03. El segundo y tercer bytes contienen la longitud de la matriz de bytes. El bit 7 del segundo byte se establece en 1 porque hay más de 127 bytes de contenido. Los bits del 0 al 6 del segundo byte especifican el número de bytes de **longitud** final, en este caso uno. El tercer byte especifica el número de bytes de contenido, 0x81. El cuarto byte, 0x00, especifica el número de bits no utilizados que existen en el último byte de contenido. Tenga en cuenta que la firma está codificada en orden de bytes big-endian.
+En el ejemplo siguiente, adaptado del tema [PKCS \# 10 Encoded ASN.1,](pkcs--10-encoded-asn-1.md) se muestra la firma codificada de una solicitud de certificado PKCS \# 10 de ejemplo. El primer byte contiene el **valor tag** para el tipo de datos **BIT STRING,** 0x03. El segundo y tercer bytes contienen la longitud de la matriz de bytes. El bit 7 del segundo byte se establece en 1 porque hay más de 127 bytes de contenido. Los bits del 0 al 6 del segundo byte especifican el número de **bytes** de longitud final, en este caso uno. El tercer byte especifica el número de bytes de contenido, 0x81. El cuarto byte, 0x00, especifica el número de bits no usados que existen en el último byte de contenido. Tenga en cuenta que la firma está codificada en orden de bytes big-endian.
 
 ``` syntax
 0299:    03 81 81           ; BIT_STRING (81 Bytes)
@@ -36,13 +36,13 @@ En el ejemplo siguiente, adaptado del [tema \# ASN. 1 codificado de PKCS 10](pkc
 
 <dl> <dt>
 
-[Sistema de tipos ASN. 1](about-asn-1-type-system.md)
+[Sistema de tipos ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codificación DER de tipos ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codificación DER de tipos ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> <dt>
 
-[Bytes de valor y longitud codificados](about-encoded-length-and-value-bytes.md)
+[Bytes de longitud y valor codificados](about-encoded-length-and-value-bytes.md)
 </dt> </dl>
 
  

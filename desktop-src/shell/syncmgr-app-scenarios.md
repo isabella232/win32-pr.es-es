@@ -1,5 +1,5 @@
 ---
-description: Aplicaciones y servicios que pueden usar el administrador de sincronización.
+description: Aplicaciones y servicios que pueden usar Synchronization Manager.
 title: Escenarios de aplicación
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,21 +9,21 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 9d07cf09bbe8ad94935f19ce1ea2b63684f7fa2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e286f36b73df65b8144cdfc3440d80f3acf83ce3623436916e9344d5ead5ad0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451881"
 ---
 # <a name="application-scenarios"></a>Escenarios de aplicación
 
-Entre las aplicaciones y los servicios que pueden usar el administrador de sincronización se incluyen los siguientes:
+Entre las aplicaciones y servicios que pueden usar Synchronization Manager se incluyen los siguientes:
 
--   Microsoft Office aplicaciones que necesitan preparar archivos para su uso sin conexión.
--   Almacenamiento en caché del lado cliente que permite almacenar archivos en caché localmente.
--   Exploradores que pueden almacenar en caché las páginas HTML de forma local.
--   Programas de correo electrónico que pueden almacenar mensajes de correo electrónico en la caché local.
+-   Microsoft Office que necesitan preparar archivos para su uso sin conexión.
+-   Almacenamiento en caché del lado cliente que le permite almacenar en caché los archivos localmente.
+-   Exploradores que pueden almacenar en caché páginas HTML localmente.
+-   Programas de correo electrónico que pueden almacenar en caché los mensajes de correo electrónico localmente.
 -   Bases de datos que pueden almacenar información localmente.
 
  

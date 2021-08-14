@@ -6,18 +6,18 @@ keywords:
 - Windows multimedia, estructuras DrawDib
 - multimedia, estructuras DrawDib
 - Vídeo para Windows (VFW), estructuras DrawDib
-- VFW (vídeo para Windows), estructuras DrawDib
-- DrawDib, estructuras
-- Referencia de DrawDib, estructuras
-- referencia de DrawDib, estructuras
+- VFW (vídeo para Windows),estructuras DrawDib
+- DrawDib,structures
+- DrawDib reference,structures
+- referencia de DrawDib,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8e725b4a241780f3837d264a5ed2a7e9ee60406
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 08d020b40399a148a08243d6e547ee7ba35418a1d17e0b233bcaa5c3bd9bd545
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375192"
 ---
 # <a name="drawdib-structures"></a>Estructuras DrawDib
 
@@ -32,9 +32,9 @@ La siguiente estructura se usa con DrawDib.
 [Referencia de DrawDib](drawdib-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

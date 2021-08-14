@@ -1,19 +1,19 @@
 ---
-description: Especifica si el receptor de captura de muestra usa el reloj de presentación para programar ejemplos.
+description: Especifica si el receptor de captura de muestras usa el reloj de presentación para programar muestras.
 ms.assetid: 780ec4a6-8e14-4b81-9d50-82b2850c70ae
-title: MF_SAMPLEGRABBERSINK_IGNORE_CLOCK atributo (Mfidl. h)
+title: MF_SAMPLEGRABBERSINK_IGNORE_CLOCK atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ad5476779d958bdbf94af554d889dd8d174ca3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d757b02a060b4e598ff42d3bd8b9ad7f38af41143c807647aa6f2b8528677cf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474428"
 ---
-# <a name="mf_samplegrabbersink_ignore_clock-attribute"></a>MF \_ SAMPLEGRABBERSINK \_ omitir \_ atributo de reloj
+# <a name="mf_samplegrabbersink_ignore_clock-attribute"></a>Atributo \_ MF SAMPLEGRABBERSINK \_ IGNORE \_ CLOCK
 
-Especifica si el receptor de captura de muestra usa el reloj de presentación para programar ejemplos.
+Especifica si el receptor de captura de muestras usa el reloj de presentación para programar muestras.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,43 +21,43 @@ Especifica si el receptor de captura de muestra usa el reloj de presentación pa
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**a IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**a IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede establecer este atributo en el objeto de activación creado por la función [**MFCreateSampleGrabberSinkActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesamplegrabbersinkactivate) . Establezca el atributo antes de llamar al método [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) en el objeto de activación.
+Puede establecer este atributo en el objeto de activación creado por la [**función MFCreateSampleGrabberSinkActivate.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesamplegrabbersinkactivate) Establezca el atributo antes de llamar al [**método IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) en el objeto de activación.
 
-De forma predeterminada, cuando el receptor del captador de muestra recibe un ejemplo, espera hasta que el tiempo de presentación del ejemplo invoque la devolución de llamada de la aplicación. Si el \_ \_ atributo de reloj MF SAMPLEGRABBERSINK omitir \_ es distinto de cero, el receptor de captura de muestras omite el reloj de la presentación e invoca la devolución de llamada en cuanto recibe cada ejemplo.
+De forma predeterminada, cuando el receptor sample-grabber recibe una muestra, espera hasta el tiempo de presentación de la muestra para invocar la devolución de llamada de la aplicación. Si el atributo MF SAMPLEGRABBERSINK IGNORE CLOCK es distinto de cero, el receptor \_ \_ sample-grabber omite el reloj de presentación e invoca la devolución de llamada en cuanto recibe \_ cada muestra.
 
 Uso recomendado:
 
--   Si desea procesar los ejemplos lo más rápido posible, establezca este atributo en **true**.
--   Si desea que las llamadas al método de devolución de llamada se sincronicen con el reloj, no establezca este atributo o establézcalo en **false**. Puede obtener ejemplos ligeramente por encima del reloj, mientras sigue sincronizando, estableciendo el atributo de [**desplazamiento de \_ \_ \_ tiempo \_ de ejemplo MF SAMPLEGRABBERSINK**](mf-samplegrabbersink-sample-time-offset-attribute.md) .
+-   Si desea procesar ejemplos lo antes posible, establezca este atributo en **TRUE.**
+-   Si desea que las llamadas al método de devolución de llamada se sincronicen con el reloj, no establezca este atributo o establezca en **FALSE.** Puede obtener muestras ligeramente antes del reloj, mientras permanece sincronizado, estableciendo el atributo [**MF \_ SAMPLEGRABBERSINK \_ SAMPLE TIME \_ \_ OFFSET.**](mf-samplegrabbersink-sample-time-offset-attribute.md)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de Media Foundation](media-foundation-attributes.md)
+[Media Foundation atributos](media-foundation-attributes.md)
 </dt> </dl>
 
  

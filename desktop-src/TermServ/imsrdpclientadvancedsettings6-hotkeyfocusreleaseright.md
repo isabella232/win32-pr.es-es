@@ -1,16 +1,16 @@
 ---
-title: Propiedad HotKeyFocusReleaseRight de IMsRdpClientAdvancedSettings6
-description: Especifica el código de tecla virtual que se va a agregar a Ctrl + Alt para determinar el reemplazo de la tecla de cambio de teclas para Ctrl + Alt + flecha derecha.
+title: IMsRdpClientAdvancedSettings6 HotKeyFocusReleaseRight, propiedad
+description: Especifica el código de clave virtual que se agregará a Ctrl+Alt para determinar el reemplazo de teclas de acceso rápido para Ctrl+Alt+Flecha derecha.
 ms.assetid: 9AEEB712-E4C4-435E-A847-40C2B3A41C15
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad HotKeyFocusReleaseRight
-- Propiedad HotKeyFocusReleaseRight Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad HotKeyFocusReleaseRight
-- Propiedad HotKeyFocusReleaseRight Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad HotKeyFocusReleaseRight
-- Propiedad HotKeyFocusReleaseRight Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad HotKeyFocusReleaseRight
+- HotKeyFocusReleaseRight, propiedad Servicios de Escritorio remoto
+- Propiedad HotKeyFocusReleaseRight Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad HotKeyFocusReleaseRight
+- Propiedad HotKeyFocusReleaseRight Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad HotKeyFocusReleaseRight
+- Propiedad HotKeyFocusReleaseRight Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad HotKeyFocusReleaseRight
 topic_type:
 - apiref
 api_name:
@@ -29,20 +29,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2ce11df170b8b0a0a9a3f58a625955cecb41973
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c508dd3007db9da47d8680b67d210d5e541351cdab7078e1ee6447b078638c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352279"
 ---
-# <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseright-property"></a>IMsRdpClientAdvancedSettings6:: HotKeyFocusReleaseRight (propiedad)
+# <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseright-property"></a>IMsRdpClientAdvancedSettings6::HotKeyFocusReleaseRight, propiedad
 
-Especifica el código de tecla virtual que se va a agregar a Ctrl + Alt para determinar el reemplazo de la tecla de cambio de teclas para Ctrl + Alt + flecha derecha.
+Especifica el código de clave virtual que se agregará a Ctrl+Alt para determinar el reemplazo de teclas de acceso rápido para Ctrl+Alt+Flecha derecha.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -59,17 +59,17 @@ HRESULT get_HotKeyFocusReleaseRight(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo código de tecla virtual.
+Nuevo código de clave virtual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo es compatible con clientes Conexión a Escritorio remoto 6,1 y 7,0.
+Esta propiedad solo es compatible con Conexión a Escritorio remoto 6.1 y 7.0.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                   |
@@ -79,7 +79,7 @@ Esta propiedad solo es compatible con clientes Conexión a Escritorio remoto 6,1
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

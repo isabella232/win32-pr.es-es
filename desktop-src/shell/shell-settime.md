@@ -1,7 +1,7 @@
 ---
-description: Muestra el cuadro de diálogo Propiedades de fecha y hora. Este método tiene el mismo efecto que hacer clic con el botón derecho en el reloj en el área de estado de la barra de tareas y seleccionar ajustar fecha y hora.
+description: Muestra el cuadro de diálogo Propiedades de fecha y hora . Este método tiene el mismo efecto que hacer clic con el botón derecho en el reloj en el área de estado de la barra de tareas y seleccionar Ajustar fecha y hora.
 ms.assetid: 01694607-3fc2-4d0d-ba48-5bdbb40da000
-title: Método Shell. SetTime (Shldisp. h)
+title: Método Shell.SetTime (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b610effe87bd9e4ab33a6e8396e90f79e7bbbe9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cff10e89cfdc8ba038be2b619264c02b1c7b168d4ecb35cd625683f648121be6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452853"
 ---
-# <a name="shellsettime-method"></a>Shell. SetTime (método)
+# <a name="shellsettime-method"></a>Método Shell.SetTime
 
-Muestra el cuadro de diálogo **propiedades de fecha y hora** . Este método tiene el mismo efecto que hacer clic con el botón derecho en el reloj en el área de estado de la barra de tareas y seleccionar **Ajustar fecha y hora**.
+Muestra el cuadro **de diálogo Propiedades de fecha** y hora . Este método tiene el mismo efecto que hacer clic con el botón derecho en el reloj en el área de estado de la barra de tareas y seleccionar **Ajustar fecha y hora.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,9 +47,9 @@ Este método no tiene parámetros.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra **setTime** en uso. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra SetTime** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -65,7 +65,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -105,11 +105,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

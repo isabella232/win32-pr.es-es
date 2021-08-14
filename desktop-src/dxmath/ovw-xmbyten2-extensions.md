@@ -1,22 +1,22 @@
 ---
-description: XMBYTEN2 describe un vector 2D para almacenar valores normalizados y firmados como enteros de 8 bits con signo (1 byte).
+description: XMBYTEN2 describe un vector 2D para almacenar valores con signo y normalizados como enteros de 8 bits (1 byte) con signo.
 ms.assetid: da3c6c06-8dbb-4497-8e13-905ebf7eaa87
-title: Extensiones de XMBYTEN2
+title: Extensiones XMBYTEN2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80acc34478aef51ffa1554949aa6ec50c2ef9380
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a2772a296eea47b47d1292f6e796e9da3f44043fa751860a5bdff942f6a243d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501523"
 ---
-# <a name="xmbyten2-extensions"></a>Extensiones de XMBYTEN2
+# <a name="xmbyten2-extensions"></a>Extensiones XMBYTEN2
 
-[**XMBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyten2) describe un vector 2D para almacenar valores normalizados y firmados como enteros de 8 bits con signo (1 byte).
+[**XMBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyten2) describe un vector 2D para almacenar valores con signo y normalizados como enteros de 8 bits (1 byte) con signo.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 
