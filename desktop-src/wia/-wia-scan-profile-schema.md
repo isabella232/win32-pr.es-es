@@ -1,31 +1,31 @@
 ---
-description: El esquema del perfil de digitalización define un formato XML que se puede utilizar para almacenar las propiedades de los elementos de adquisición de imágenes de Windows (WIA), como escáneres y cámaras.
+description: El esquema de perfil de digitalización define un formato XML que se puede usar para almacenar las propiedades de los elementos de adquisición de imágenes de Windows (WIA), como escáneres y cámaras.
 ms.assetid: e0848db3-652a-45be-a18b-99b82420c586
-title: Esquema de análisis de perfil
+title: Esquema de perfil de examen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 331c52e933e1e6b771c477bdc8a38f1c5f749448
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81091e75269206b6b3b5a89f86c6f92da5c1d2080d90382ac6af48c6d1cc32ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208021"
 ---
-# <a name="scan-profile-schema"></a>Esquema de análisis de perfil
+# <a name="scan-profile-schema"></a>Esquema de perfil de examen
 
-El esquema del perfil de digitalización define un formato XML que se puede utilizar para almacenar las propiedades de los elementos de adquisición de imágenes de Windows (WIA), como escáneres y cámaras. Estos archivos persistentes permiten a las aplicaciones proporcionar análisis automáticos sin necesidad de que los usuarios recuerden la configuración de las propiedades de los elementos.
+El esquema de perfil de digitalización define un formato XML que se puede usar para almacenar las propiedades de los elementos de adquisición de imágenes de Windows (WIA), como escáneres y cámaras. Estos archivos persistentes permiten a las aplicaciones proporcionar análisis automático sin necesidad de que los usuarios recuerden la configuración de propiedades de los elementos.
 
-Cualquier dispositivo de [**IWiaItem2**](-wia-iwiaitem2.md) puede tener un perfil de digitalización. Sin embargo, los elementos de **IWiaItem2** de tipos de la \_ categoría WIA \_ Finished \_ File y WIA \_ Category \_ root no pueden tener perfiles.
+Cualquier [**dispositivo IWiaItem2**](-wia-iwiaitem2.md) puede tener un perfil de examen. Sin embargo, **los elementos IWiaItem2** de los tipos WIA CATEGORY FINISHED FILE y \_ \_ \_ WIA CATEGORY ROOT no pueden \_ tener \_ perfiles.
 
-Los perfiles de examen se crean y se administran a través de las interfaces [**IScanProfile**](-wia-iscanprofile.md), [**IScanProfileMgr**](-wia-iscanprofilemgr.md)y [**IScanProfileUI**](-wia-iscanprofileui.md) . Los usuarios de la aplicación pueden modificar los perfiles de maneras limitadas mediante el método [**IScanProfileUI:: ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) .
+Los perfiles de examen se crean y administran a través de las interfaces [**IScanProfile,**](-wia-iscanprofile.md) [**IScanProfileMgr**](-wia-iscanprofilemgr.md)e [**IScanProfileUI.**](-wia-iscanprofileui.md) Los usuarios de la aplicación pueden modificar perfiles de maneras limitadas mediante el [**método IScanProfileUI::ScanProfileDialog.**](-wia-iscanprofileui-scanprofiledialog.md)
 
-Todos los perfiles de examen tienen los siguientes elementos: `<ProfileGUID>, <DeviceID>, <ProfileName>, <WiaItem>` , y `<Properties>` . El perfil predeterminado de un dispositivo también tiene un `<Default>` elemento.
+Todos los perfiles de examen tienen los siguientes elementos: `<ProfileGUID>, <DeviceID>, <ProfileName>, <WiaItem>` , y `<Properties>` . El perfil predeterminado de un dispositivo también tiene un `<Default>` elemento .
 
-El `<ProfileGUID>` elemento y el `<DeviceID>` elemento no se pueden cambiar una vez creado el perfil de digitalización. `<ProfileName>`Se pueden modificar los valores del elemento y el `<WiaItem>` elemento. `<Default>`Se puede Agregar o eliminar el elemento. Esto se puede hacer mediante programación con los métodos [**IScanProfile:: setName**](-wia-iscanprofile-setname.md), [**IScanProfile:: SetItem**](-wia-iscanprofile-setitem.md)y [**IScanProfileMgr:: SetDefault**](-wia-iscanprofilemgr-setdefault.md) . Los usuarios también pueden cambiar estas propiedades a través del método [**IScanProfileUI:: ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) .
+El `<ProfileGUID>` elemento y el elemento no se pueden cambiar después de crear el perfil de `<DeviceID>` examen. Los valores del `<ProfileName>` elemento y del elemento se pueden `<WiaItem>` modificar. El `<Default>` elemento se puede agregar o eliminar. Esto se puede hacer mediante programación mediante los métodos [**IScanProfile::SetName**](-wia-iscanprofile-setname.md), [**IScanProfile::SetItem**](-wia-iscanprofile-setitem.md)e [**IScanProfileMgr::SetDefault.**](-wia-iscanprofilemgr-setdefault.md) Los usuarios también pueden cambiar estas propiedades mediante el [**método IScanProfileUI::ScanProfileDialog.**](-wia-iscanprofileui-scanprofiledialog.md)
 
-El `<Properties>` elemento contiene `<Property>` elementos secundarios. Úselos para agregar cualquier elemento WIA o propiedad de dispositivo al perfil. También puede desarrollar su propia imagen adquisiciones `<Property>` elementos secundarios. Esto hace que el esquema de Perfil de análisis sea extensible. (Para obtener más información sobre cómo extender el esquema, vea [definir propiedades personalizadas](-wia-defining-custom-properties.md), [**IScanProfile:: GetProperty**](-wia-iscanprofile-getproperty.md)y [**IScanProfile:: SetProperty**](-wia-iscanprofile-setproperty.md)).
+El `<Properties>` elemento contiene elementos `<Property>` secundarios. Úselos para agregar cualquier elemento de WIA o propiedad de dispositivo al perfil. También puede desarrollar sus propios hijos de `<Property>` imagen. Esto hace que el esquema de perfil de examen sea extensible. (Para obtener más información sobre cómo extender el esquema, vea [Definición](-wia-defining-custom-properties.md)de propiedades personalizadas , [**IScanProfile::GetProperty**](-wia-iscanprofile-getproperty.md)e [**IScanProfile::SetProperty).**](-wia-iscanprofile-setproperty.md)
 
-Este es el esquema de Perfil de examen completo. A continuación se muestra un perfil de ejemplo.
+Este es el esquema de perfil de examen completo. A continuación se muestra un perfil de ejemplo.
 
 
 ```
@@ -71,7 +71,7 @@ Este es el esquema de Perfil de examen completo. A continuación se muestra un p
 
 
 
-Haga clic en **Mostrar ejemplo** para ver un perfil de ejemplo.
+Haga **clic en Mostrar ejemplo** para ver un perfil de ejemplo.
 
 
 ```
@@ -117,16 +117,16 @@ Haga clic en **Mostrar ejemplo** para ver un perfil de ejemplo.
 **Referencia**
 </dt> <dt>
 
-[**IScanProfile:: GetProperty**](-wia-iscanprofile-getproperty.md)
+[**IScanProfile::GetProperty**](-wia-iscanprofile-getproperty.md)
 </dt> <dt>
 
-[**IScanProfile:: SetProperty**](-wia-iscanprofile-setproperty.md)
+[**IScanProfile::SetProperty**](-wia-iscanprofile-setproperty.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Constantes de propiedad de WIA](-wia-wia-property-constants.md)
+[Constantes de propiedad WIA](-wia-wia-property-constants.md)
 </dt> <dt>
 
 [Definir propiedades personalizadas](-wia-defining-custom-properties.md)

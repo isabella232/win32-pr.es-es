@@ -1,7 +1,7 @@
 ---
-description: 'El método FixMediaTimes2 redondea los valores de hora especificados al límite de fotogramas más cercano, según se define en la velocidad de fotogramas de salida. Este método es equivalente a IAMTimelineSrc:: FixMediaTimes, pero toma valores REFTIME.'
+description: El método FixMediaTimes2 redondea los valores de tiempo especificados al límite de fotogramas más cercano, tal como se define en la velocidad de fotogramas de salida. Este método es equivalente a IAMTimelineSrc::FixMediaTimes, pero toma valores REFTIME.
 ms.assetid: c51172ea-b5d7-4a2e-ace2-85e6e671c1e9
-title: 'IAMTimelineSrc:: FixMediaTimes2 (método) (QEDIT. h)'
+title: Método IAMTimelineSrc::FixMediaTimes2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 98e38b6c1ea4c49372a52a805920fa95ccf795f8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ceff01e17d82ed59e8d63811841e58e97323a9be4ec4c40b719bb655aac464e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118399625"
 ---
-# <a name="iamtimelinesrcfixmediatimes2-method"></a>IAMTimelineSrc:: FixMediaTimes2 (método)
+# <a name="iamtimelinesrcfixmediatimes2-method"></a>Método IAMTimelineSrc::FixMediaTimes2
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `FixMediaTimes2` método redondea los valores de hora especificados al límite de fotogramas más cercano, según se define en la velocidad de fotogramas de salida. Este método es equivalente a [**IAMTimelineSrc:: FixMediaTimes**](iamtimelinesrc-fixmediatimes.md), pero toma valores [**REFTIME**](reftime.md) .
+El método redondea los valores de tiempo especificados al límite de marco más cercano, tal como `FixMediaTimes2` se define en la velocidad de fotogramas de salida. Este método es equivalente a [**IAMTimelineSrc::FixMediaTimes**](iamtimelinesrc-fixmediatimes.md), pero toma [**valores REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ HRESULT FixMediaTimes2(
 
 <dl> <dt>
 
-*pStart* 
+*Pstart* 
 </dt> <dd>
 
 Puntero a una variable que contiene la hora de inicio, en segundos. Si la llamada se realiza correctamente, esta variable se establece en el tiempo redondeado.
@@ -56,23 +56,23 @@ Puntero a una variable que contiene la hora de inicio, en segundos. Si la llamad
 *pStop* 
 </dt> <dd>
 
-Puntero a una variable que contiene el tiempo de detención, en segundos. Si la llamada se realiza correctamente, esta variable se establece en el tiempo redondeado.
+Puntero a una variable que contiene la hora de detenerse, en segundos. Si la llamada se realiza correctamente, esta variable se establece en el tiempo redondeado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -82,16 +82,16 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineSrc**](iamtimelinesrc.md)
+[**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)

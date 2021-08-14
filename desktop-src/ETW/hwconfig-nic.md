@@ -1,7 +1,7 @@
 ---
-description: La \_ clase HWConfig NIC es la clase de tipo de evento para los eventos de configuración de tarjeta de interfaz de red. La siguiente sintaxis se simplifica desde el código MOF.
+description: La clase NIC HWConfig \_ es la clase de tipo de evento para los eventos de configuración de tarjetas de interfaz de red. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: e544a27b-17f8-402c-9c92-578cf2a38ca8
-title: HWConfig_NIC (clase)
+title: HWConfig_NIC clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: df3897c67ed65eeec5ace49dac1088ca35223a35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d9b82f8a97c1ca47734b5bb0a1db09167510978c53f86870df01f2acc59b2ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394729"
 ---
-# <a name="hwconfig_nic-class"></a>\_Clase HWConfig NIC
+# <a name="hwconfig_nic-class"></a>HwConfig \_ NIC (clase)
 
-La clase **HWConfig \_ NIC** es la clase de tipo de evento para los eventos de configuración de tarjeta de interfaz de red.
+La **clase \_ NIC HWConfig** es la clase de tipo de evento para los eventos de configuración de tarjetas de interfaz de red.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ La **clase \_ NIC HWConfig** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La clase **HWConfig \_ NIC** tiene estas propiedades.
+La **clase \_ NIC HWConfig** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -57,7 +57,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(1), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nombre de la tarjeta de interfaz de red.
@@ -68,14 +68,14 @@ Nombre de la tarjeta de interfaz de red.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Token de versión que crea un relleno de textura de procedimiento en efectos. Las funciones D3DXFillxxxTX usan esta macro.
+description: Token de versión que crea un relleno de textura de procedimientos en efectos. Las funciones D3DXFillxxxTX usan esta macro.
 ms.assetid: b11b6229-27a3-4813-9642-9e33bcd0da7a
-title: D3DXTX_VERSION (D3DX9Shader. h)
+title: D3DXTX_VERSION (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX9Shader.h
-ms.openlocfilehash: 05b034a48635e3a5a6d1a3dbdfbabd0fe2933b5c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1a343930f55323016895007f858a7fe188418eeab24b16859c2d773e39c9e73b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524106"
 ---
-# <a name="d3dxtx_version"></a>Versión de D3DXTX \_
+# <a name="d3dxtx_version"></a>D3DXTX \_ VERSIÓN
 
-Token de versión que crea un relleno de textura de procedimiento en efectos. Las funciones D3DXFillxxxTX usan esta macro.
+Token de versión que crea un relleno de textura de procedimientos en efectos. Las funciones D3DXFillxxxTX usan esta macro.
 
 ``` syntax
 #define D3DXTX_VERSION (_Major, _Minor) (('T' << 24) | ('X' << 16) | ((_Major) << 8) | (_Minor))
@@ -30,7 +30,7 @@ Token de versión que crea un relleno de textura de procedimiento en efectos. La
 
 ## <a name="return-value"></a>Valor devuelto
 
-La macro devuelve el token de versión de textura de procedimientos.
+La macro devuelve el token de versión de textura de procedimiento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,11 +38,11 @@ La macro devuelve el token de versión de textura de procedimientos.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX9Shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX9Shader.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

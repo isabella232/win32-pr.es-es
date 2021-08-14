@@ -1,7 +1,7 @@
 ---
 description: El método GetSmartRecompressFormat recupera el formato de compresión actual para la recompresión inteligente.
 ms.assetid: 2d420fe9-691d-4cc9-a8de-363a4be1b364
-title: 'IAMTimelineGroup:: GetSmartRecompressFormat (método) (QEDIT. h)'
+title: Método IAMTimelineGroup::GetSmartRecompressFormat (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8560bb9d8da6904cf74b62ffd238b234e9c74ed6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8d568bdf0446533df9391c1c0b30382b9a56ecdf0ed788d64c48c38ddf0684a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118400733"
 ---
-# <a name="iamtimelinegroupgetsmartrecompressformat-method"></a>IAMTimelineGroup:: GetSmartRecompressFormat (método)
+# <a name="iamtimelinegroupgetsmartrecompressformat-method"></a>Método IAMTimelineGroup::GetSmartRecompressFormat
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -48,19 +48,19 @@ HRESULT GetSmartRecompressFormat(
 *ppFormat* 
 </dt> <dd>
 
-Recibe un puntero a una estructura [**SCompFmt0**](scompfmt0.md) , convertido en un puntero a un valor Long. Si se produce un error en el método, el valor se establece en **null**.
+Recibe un puntero a una [**estructura SCompFmt0,**](scompfmt0.md) que se convierte como un puntero a un objeto long. Si se produce un error en el método , el valor se establece en **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la aplicación no ha establecido un formato de compresión inteligente (llamando a [**IAMTimelineGroup:: SetSmartRecompressFormat**](iamtimelinegroup-setsmartrecompressformat.md)), el formato devuelto por este método no será válido. Llame al método [**IAMTimelineGroup:: IsSmartRecompressFormatSet**](iamtimelinegroup-issmartrecompressformatset.md) para determinar si se ha establecido un formato de compresión.
+Si la aplicación no ha establecido un formato de compresión inteligente (llamando a [**IAMTimelineGroup::SetSmartRecompressFormat),**](iamtimelinegroup-setsmartrecompressformat.md)el formato devuelto por este método no será válido. Llame al [**método IAMTimelineGroup::IsSmartRecompressFormatSet**](iamtimelinegroup-issmartrecompressformatset.md) para determinar si se estableció un formato de compresión.
 
-Si el método se ejecuta correctamente, el llamador debe liberar el tipo de medio devuelto y eliminar la estructura [**SCompFmt0**](scompfmt0.md) :
+Si el método se realiza correctamente, el autor de la llamada debe liberar el tipo de medio devuelto y eliminar la [**estructura SCompFmt0:**](scompfmt0.md)
 
 
 ```C++
@@ -73,12 +73,12 @@ if (pFormat) {
 
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -88,16 +88,16 @@ if (pFormat) {
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineGroup**](iamtimelinegroup.md)
+[**IAMTimelineGroup (interfaz)**](iamtimelinegroup.md)
 </dt> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)

@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DMSArray:: Getdimensions ((función)'
-description: 'Devuelve las dimensiones del recurso. | Texture2DMSArray:: Getdimensions ((función)'
+title: Función Texture2DMSArray::GetDimensions
+description: Devuelve las dimensiones del recurso. | Función Texture2DMSArray::GetDimensions
 ms.assetid: 86d54e0d-f168-479f-b2af-f021b8994741
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e22a225178c2fa965ea842b8c86692d09b87168f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d6f9d4fc24cb1f8933bdb67796aebe3fe7d7406b114eea8a12f507c5f04591f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508431"
 ---
-# <a name="texture2dmsarraygetdimensions-function"></a>Texture2DMSArray:: Getdimensions ((función)
+# <a name="texture2dmsarraygetdimensions-function"></a>Función Texture2DMSArray::GetDimensions
 
 Devuelve las dimensiones del recurso.
 
@@ -39,39 +39,39 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Ancho* \[ de enuncia\]
+*Ancho* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El ancho del recurso, en textura.
+Ancho del recurso, en texturas.
 
 </dd> <dt>
 
-*Alto* \[ de enuncia\]
+*Alto* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El alto del recurso, en textura.
+Alto del recurso, en texturas.
 
 </dd> <dt>
 
-*Elementos* \[ de enuncia\]
+*Elementos* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Número de elementos de la matriz.
 
 </dd> <dt>
 
-*NumberOfSamples* \[ enuncia\]
+*NumberOfSamples* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El número de ubicaciones de ejemplo.
+Número de ubicaciones de ejemplo.
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ El número de ubicaciones de ejemplo.
 
 Nada
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -93,11 +93,11 @@ void GetDimensions(out float Width,
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -105,14 +105,14 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Texture2DMSArray](sm5-object-texture2dmsarray.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

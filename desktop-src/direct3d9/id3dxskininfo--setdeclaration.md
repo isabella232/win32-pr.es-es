@@ -1,7 +1,7 @@
 ---
-description: Establece la declaración de vértices.
+description: Establece la declaración de vértice.
 ms.assetid: cbb802ac-f0ba-41e6-8c67-a787982f975f
-title: 'ID3DXSkinInfo:: SetDeclaration (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::SetDeclaration (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 821801647ca1aee3deabe69d911bd1cab5f7eb4f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d7189abac9041e1abad67ea60558f5ec33714ae47d50225d362ad3bc09e6d1d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985265"
 ---
-# <a name="id3dxskininfosetdeclaration-method"></a>ID3DXSkinInfo:: SetDeclaration (método)
+# <a name="id3dxskininfosetdeclaration-method"></a>Método ID3DXSkinInfo::SetDeclaration
 
-Establece la declaración de vértices.
+Establece la declaración de vértice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetDeclaration(
 
 <dl> <dt>
 
-*pDeclaration* \[ de\]
+*pDeclaration* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Puntero a una matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) .
+Puntero a una matriz [**de elementos D3DVERTEXELEMENT9.**](d3dvertexelement9.md)
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a una matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,12 +61,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

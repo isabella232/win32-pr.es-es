@@ -1,7 +1,7 @@
 ---
-description: En Administrador de autorización, una operación es una función o método de bajo nivel de una aplicación.
+description: En el Administrador de autorización, una operación es una función o un método de bajo nivel de una aplicación.
 ms.assetid: 6b35d25e-150c-4760-b358-fa517a00dd79
-title: Definir operaciones en el script
+title: Definir operaciones en script
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ef1337bc8e5c44ccce25e3f6d87f7cf6240d2d2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bb93b9f4c39ddb4af0501711f1101d37459651015977e045c112cdaf742e51f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994455"
 ---
-# <a name="defining-operations-in-script"></a>Definir operaciones en el script
+# <a name="defining-operations-in-script"></a>Definir operaciones en script
 
-En Administrador de autorización, una operación es una función o método de bajo nivel de una aplicación. Estas operaciones se agrupan como tareas. Los usuarios de la aplicación solicitan permiso para completar tareas. Una operación se representa mediante un objeto [**IAzOperation**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) . Para obtener más información sobre las operaciones, vea [operaciones y tareas](operations-and-tasks.md).
+En el Administrador de autorización, una operación es una función o un método de bajo nivel de una aplicación. Estas operaciones se agrupan como tareas. Los usuarios de la aplicación solicitan permiso para completar tareas. Una operación se representa mediante un [**objeto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) Para obtener más información sobre las operaciones, [vea Operaciones y tareas.](operations-and-tasks.md)
 
-En el ejemplo siguiente se muestra cómo definir operaciones en un almacén de directivas de autorización. En el ejemplo se da por supuesto que hay un almacén de directivas XML denominado MyStore.xml en el directorio raíz de la unidad C y que este almacén contiene una aplicación denominada///Expense.
+En el ejemplo siguiente se muestra cómo definir operaciones en un almacén de directivas de autorización. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C y que este almacén contiene una aplicación denominada Expense.
 
 
 ```VB

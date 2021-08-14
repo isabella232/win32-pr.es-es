@@ -1,9 +1,9 @@
 ---
-title: Image. Source (propiedad)
-description: Representa la ruta de acceso al directorio de una imagen.
+title: Propiedad Image.Source
+description: Representa la ruta de acceso del directorio de una imagen.
 ms.assetid: 174a518a-e9a3-4461-a9a3-d61b62d2b718
 keywords:
-- Imagen. Source (propiedad) cinta de Windows
+- Image.Source, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ace2a907280a11c54452b54bfb6172539980e38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20612f0d25f914cb4c80ae77bb001a678af79e4605c3e1358ed7e33f6b19d805
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202410"
 ---
-# <a name="imagesource-property"></a>Image. Source (propiedad)
+# <a name="imagesource-property"></a>Propiedad Image.Source
 
-Representa la ruta de acceso al directorio de una imagen.
+Representa la ruta de acceso del directorio de una imagen.
 
 ## <a name="usage"></a>Uso
 
@@ -43,21 +43,21 @@ No hay elementos secundarios.
 
 | Elemento                                                 |
 |---------------------------------------------------------|
-| [**Impresión**](windowsribbon-element-image.md)<br/> |
+| [**Imagen**](windowsribbon-element-image.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**imagen**](windowsribbon-element-image.md).
+Puede producirse como máximo una vez para cada [**imagen**](windowsribbon-element-image.md).
 
-Este elemento contiene un valor de tipo *xs: anyURI* o cualquier secuencia de caracteres que representa un identificador uniforme de recursos (URI). El valor del URI es una ruta de acceso absoluta o relativa (en el archivo de marcado de la cinta de opciones) del directorio de un recurso de imagen de tipo Bitmap (BMP).
+Este elemento contiene un valor de tipo *xs:anyURI* o cualquier secuencia de caracteres que represente un identificador uniforme de recursos (URI). El valor uri es una ruta de acceso de directorio absoluta o relativa (con el archivo de marcado de la cinta) de un recurso de imagen de tipo bitmap (BMP).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el marcado necesario para declarar, a través de un conjunto de elementos de [**imagen**](windowsribbon-element-image.md) , una colección de recursos de imagen que están diseñados para admitir cuatro configuraciones de PPP de pantalla específicas. La propiedad **Image. Source** se usa para especificar la ruta de acceso al recurso de imagen.
+En el ejemplo de código siguiente se muestra el marcado necesario para declarar, a través de un conjunto de elementos [**Image,**](windowsribbon-element-image.md) una colección de recursos de imagen diseñados para admitir cuatro valores de ppp de pantalla específicos. La **propiedad Image.Source** se usa para especificar la ruta de acceso al recurso de imagen.
 
 
 ```C++
@@ -88,10 +88,10 @@ En el ejemplo de código siguiente se muestra el marcado necesario para declarar
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

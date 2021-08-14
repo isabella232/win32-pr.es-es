@@ -11,21 +11,21 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5ef68998e3e131223e6f64637cbccb4d5a5a3d9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cf8d547b9f7412cec956c19539a2919f9bdb8f62381f2b6643058a8984cdf81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978565"
 ---
 # <a name="xmxdecn4-constructors"></a>Constructores XMXDECN4
 
 Constructores expuestos por `XMXDECN4` .
 
-Construye instancias de la estructura [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) .
+Construye instancias de la [**estructura XMXDECN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -47,7 +47,7 @@ Construye instancias de la estructura [**XMXDECN4**](/windows/win32/api/directxp
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMXDECN4</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a>. <br/>
+<td style="text-align: left;">Constructor predeterminado para <code>XMXDECN4</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -56,7 +56,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(uint32_t)"><strong>XMXDECN4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMXDECN4</code> partir de una <code>uint32_t</code> variable que contiene los datos del componente en un formato empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de una <code>uint32_t</code> variable que contiene los datos del componente en un formato empaquetado. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMXDECN4</code> partir de una variable que contiene datos de componentes en un formato <code>uint32_t</code> empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de una variable que contiene datos <code>uint32_t</code> de componente en un formato empaquetado. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -64,8 +64,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMXDECN4</code> a partir de un argumento de matriz de cuatro elementos <code>float</code> . <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de un argumento de matriz de cuatro elementos <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const float*)</strong></a></td>
+<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMXDECN4</code> de un argumento de matriz de cuatro <code>float</code> elementos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de un argumento de matriz <code>float</code> de cuatro elementos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -73,8 +73,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(float_float_float_float)"><strong>XMXDECN4 (float, Float, Float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMXDECN4</code> a partir de cuatro argumentos normalizados <code>float</code> . <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de cuatro argumentos normalizados <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(float_float_float_float)"><strong>XMXDECN4 (float,float,float,float)</strong></a></td>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMXDECN4</code> partir de cuatro <code>float</code> argumentos normalizados. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de cuatro <code>float</code> argumentos normalizados. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -86,11 +86,11 @@ Este constructor solo está disponible en C++.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMXDECN4](ovw-xmxdecn4-extensions.md)
+[Extensiones XMXDECN4](ovw-xmxdecn4-extensions.md)
 </dt> <dt>
 
 **Referencia**

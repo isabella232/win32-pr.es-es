@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3CatmullRom (D3DX10Math.h): realiza una interpolación Catmull-Rom mediante los vectores 3D especificados.'
+description: 'Función D3DXVec3CatmullRom (D3DX10Math.h): realiza una interpolación Catmull-Rom, mediante los vectores 3D especificados.'
 ms.assetid: 324bd4b5-b0df-4dd3-b370-3c365c9f2db1
 title: Función D3DXVec3CatmullRom (D3DX10Math.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: a09d61e9c43624f441975eca1a131a82f8092587
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 89907a014d7f3729bf564410447a5832597bd1b42a7f59aad93082e79469b2bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989655"
 ---
 # <a name="d3dxvec3catmullrom-function-d3dx10mathh"></a>Función D3DXVec3CatmullRom (D3DX10Math.h)
 
@@ -49,7 +49,7 @@ D3DXVECTOR3* D3DXVec3CatmullRom(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a [**D3DXVECTOR3 que**](d3d10-d3dxvector3.md) es el resultado de la operación.
+Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-La Catmull-Rom spline se puede derivar de la spline Hermite estableciendo:
+El Catmull-Rom spline se puede derivar de la spline Hermite estableciendo:
 
 
 ```

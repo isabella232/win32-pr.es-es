@@ -1,21 +1,21 @@
 ---
-description: La tabla ModuleExclusion mantiene una lista de otros módulos de combinación que no son compatibles con la misma base de datos del instalador.
+description: La tabla ModuleExclusion mantiene una lista de otros módulos de combinación incompatibles en la misma base de datos del instalador.
 ms.assetid: c28d9afa-152c-43b5-9892-7a38fae8c593
-title: Tabla ModuleExclusion
+title: ModuleExclusion Table
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8fb4cc136937d5a01bd16a42c138532dd524ee1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 008d10e65d81b5668821e1a999cf08f5a10c55db3372a4b0230d560462a977c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104424008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996445"
 ---
-# <a name="moduleexclusion-table"></a>Tabla ModuleExclusion
+# <a name="moduleexclusion-table"></a>ModuleExclusion Table
 
-La tabla ModuleExclusion mantiene una lista de otros módulos de combinación que no son compatibles con la misma base de datos del instalador. Esta tabla permite que una herramienta de combinación o comprobación Compruebe que los módulos de mezcla conflictivos no se combinan en la base de datos del instalador del usuario. La herramienta comprueba mediante la referencia cruzada de esta tabla con la tabla ModuleSignature en la base de datos del instalador.
+La tabla ModuleExclusion mantiene una lista de otros módulos de combinación incompatibles en la misma base de datos del instalador. Esta tabla permite que una herramienta de combinación o comprobación compruebe que los módulos de mezcla en conflicto no se combinan en la base de datos del instalador del usuario. La herramienta comprueba haciendo referencia cruzada a esta tabla con la tabla ModuleSignature de la base de datos del instalador.
 
-La tabla ModuleExclusion tiene las columnas siguientes.
+La tabla ModuleExclusion tiene las siguientes columnas.
 
 
 
@@ -46,29 +46,29 @@ Identificador del módulo de combinación. Se trata de una clave externa en la [
 <span id="ModuleLanguage"></span><span id="modulelanguage"></span><span id="MODULELANGUAGE"></span>ModuleLanguage
 </dt> <dd>
 
-IDENTIFICADOR de idioma decimal del módulo de combinación en ModuleID. Se trata de una clave externa en la [tabla ModuleSignature](modulesignature-table.md).
+Identificador de idioma decimal del módulo de combinación en ModuleID. Se trata de una clave externa en la [tabla ModuleSignature](modulesignature-table.md).
 
 </dd> <dt>
 
 <span id="ExcludedID"></span><span id="excludedid"></span><span id="EXCLUDEDID"></span>ExcludedID
 </dt> <dd>
 
-Identificador de un módulo de combinación excluida.
+Identificador de un módulo de combinación excluido.
 
 </dd> <dt>
 
 <span id="ExcludedLanguage"></span><span id="excludedlanguage"></span><span id="EXCLUDEDLANGUAGE"></span>ExcludedLanguage
 </dt> <dd>
 
-IDENTIFICADOR de idioma numérico del módulo de combinación de ExcludedID. La columna ExcludedLanguage puede especificar el identificador de idioma de un solo idioma, por ejemplo, 1033 para Inglés de EE. UU., o especificar el identificador de idioma de un grupo de idiomas, como 9 para cualquier inglés. La columna ExcludedLanguage puede aceptar identificadores de idioma negativos. El significado del valor de la columna ExcludedLanguage es el siguiente.
+Id. de idioma numérico del módulo de combinación en ExcludedID. La columna ExcludedLanguage puede especificar el identificador de idioma de un solo idioma, como 1033 para inglés de EE. UU., o especificar el identificador de idioma de un grupo de idioma, como 9 para cualquier inglés. La columna ExcludedLanguage puede aceptar los id. de idioma negativos. El significado del valor de la columna ExcludedLanguage es el siguiente.
 
 
 
 | ExcludedLanguage | Significado                                                              |
 |------------------|----------------------------------------------------------------------|
-| >0           | Excluya los identificadores de idioma especificados por ExcludedLanguage.              |
-| = 0              | No excluya ningún ID. de idioma.                                             |
-| < 0           | Excluya todos los identificadores de idioma excepto los especificados por ExcludedLanguage. |
+| >0           | Excluya los ID de idioma especificados por ExcludedLanguage.              |
+| = 0              | No se excluyen los ID de idioma.                                             |
+| < 0           | Excluya todos los ID de idioma excepto los especificados por ExcludedLanguage. |
 
 
 
@@ -79,14 +79,14 @@ IDENTIFICADOR de idioma numérico del módulo de combinación de ExcludedID. La 
 <span id="ExcludedMinVersion"></span><span id="excludedminversion"></span><span id="EXCLUDEDMINVERSION"></span>ExcludedMinVersion
 </dt> <dd>
 
-Versión mínima excluida de un intervalo. Si el campo ExcludedMinVersion es null, se excluyen todas las versiones anteriores a ExcludedMaxVersion. Si ExcludedMinVersion y ExcludedMaxVersion son NULL, no hay ninguna exclusión basada en la versión.
+Versión mínima excluida de un intervalo. Si el campo ExcludedMinVersion es Null, se excluyen todas las versiones anteriores a ExcludedMaxVersion. Si ExcludedMinVersion y ExcludedMaxVersion son NULL, no hay ninguna exclusión basada en la versión.
 
 </dd> <dt>
 
 <span id="ExcludedMaxVersion"></span><span id="excludedmaxversion"></span><span id="EXCLUDEDMAXVERSION"></span>ExcludedMaxVersion
 </dt> <dd>
 
-Versión máxima excluida de un intervalo. Si el campo ExcludedMaxVersion es null, se excluyen todas las versiones posteriores a ExcludedMinVersion. Si ExcludedMinVersion y ExcludedMaxVersion son NULL, no hay ninguna exclusión basada en la versión.
+Versión máxima excluida de un intervalo. Si el campo ExcludedMaxVersion es Null, se excluyen todas las versiones posteriores a ExcludedMinVersion. Si ExcludedMinVersion y ExcludedMaxVersion son NULL, no hay ninguna exclusión basada en la versión.
 
 </dd> </dl>
 

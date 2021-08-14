@@ -1,22 +1,22 @@
 ---
-title: Código de ejemplo para usar una búsqueda VLV
-description: Este tema contiene ejemplos de código de C++ que se usan para realizar una búsqueda VLV.
+title: Código de ejemplo para usar una búsqueda de VLV
+description: Este tema contiene ejemplos de código de C++ que se usan para realizar una búsqueda de VLV.
 ms.assetid: 9bad8f71-80e3-446f-9be3-c00defbe1ea5
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para usar una búsqueda VLV
+- Código de ejemplo para usar una búsqueda de VLV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2049d0650728066789f23921caf697e8aaa9d988
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3e3714216e985ac4b45227fa1d9db10826d0fe1f32ab636a711fe98790647238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428438"
 ---
-# <a name="example-code-for-using-a-vlv-search"></a>Código de ejemplo para usar una búsqueda VLV
+# <a name="example-code-for-using-a-vlv-search"></a>Código de ejemplo para usar una búsqueda de VLV
 
-En los ejemplos de código siguientes se usan las búsquedas VLV para obtener los resultados de la búsqueda.
+En los ejemplos de código siguientes se usan búsquedas de VLV para obtener resultados de búsqueda.
 
 -   **GetVLVItemCount**
 -   **GetVLVItemText**
@@ -24,7 +24,7 @@ En los ejemplos de código siguientes se usan las búsquedas VLV para obtener lo
 
 ## <a name="utility-functions"></a>Funciones de la utilidad
 
-Los ejemplos de código siguientes se usan en las funciones de ejemplo de este tema.
+Las funciones de ejemplo de este tema usan los siguientes ejemplos de código.
 
 
 ```C++
@@ -114,7 +114,7 @@ int WideCharToLocal(LPTSTR pLocal, LPCWSTR pWide, DWORD dwChars)
 
 ## <a name="getvlvitemcount-example-function"></a>Función de ejemplo GetVLVItemCount
 
-En el ejemplo de código siguiente se muestra cómo usar una búsqueda VLV para obtener una estimación del número de elementos que resultarían de la búsqueda.
+En el ejemplo de código siguiente se muestra cómo usar una búsqueda de VLV para obtener una estimación del número de elementos resultantes de la búsqueda.
 
 
 ```C++
@@ -227,7 +227,7 @@ HRESULT GetVLVItemCount(IDirectorySearch *pSearch,
 
 ## <a name="getvlvitemtext-example-function"></a>Función de ejemplo GetVLVItemText
 
-En el ejemplo de código siguiente se muestra cómo utilizar una búsqueda VLV para obtener el texto de un elemento único basado en un índice.
+En el ejemplo de código siguiente se muestra cómo usar una búsqueda de VLV para obtener el texto de un solo elemento basado en un índice.
 
 
 ```C++
@@ -350,7 +350,7 @@ HRESULT GetVLVItemText(IDirectorySearch *pSearch,
 
 ## <a name="getvlvitemsbystring-example-function"></a>Función de ejemplo GetVLVItemsByString
 
-En el ejemplo de código siguiente se muestra cómo utilizar una búsqueda VLV para obtener el texto de un número especificado de elementos basándose en una cadena. En este ejemplo se agregarán los ordenaciones recuperados a un cuadro de lista.
+En el ejemplo de código siguiente se muestra cómo usar una búsqueda de VLV para obtener el texto de un número especificado de elementos basado en una cadena. En este ejemplo se agregarán las ordenaciones recuperadas a un cuadro de lista.
 
 
 ```C++
@@ -474,9 +474,9 @@ HRESULT GetVLVItemsByString(HWND hwndListbox,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica la marca de flujo de bits original en una secuencia de audio Dolby digital. Esta propiedad se aplica a los codificadores de audio Dolby digital. \\ Esta propiedad es de lectura/escritura.
+description: Especifica la marca de secuencia de bits original en una secuencia de audio de Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital. \\ Esta propiedad es de lectura y escritura.
 ms.assetid: 247bdd95-c432-462f-a57a-b5ab8a2e3c70
-title: Propiedad AVEncDDOriginalBitstream (Codecapi. h)
+title: Propiedad AVEncDOriginalBitstream (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 191bab3a6d6eea9d12def8f7eee4f1c0baac8347
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2d64669411f4ad8f340ab6a4203dc970938b3196f900aadefc780d510b3961d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000025"
 ---
 # <a name="avencddoriginalbitstream-property"></a>Propiedad AVEncDDOriginalBitstream
 
-Especifica la marca de flujo de bits original en una secuencia de audio Dolby digital. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+Especifica la marca de secuencia de bits original en una secuencia de audio de Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 
 \\
 
@@ -21,7 +21,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID de propiedad
 
@@ -31,22 +31,22 @@ Esta propiedad es de lectura y escritura.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

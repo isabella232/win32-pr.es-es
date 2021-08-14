@@ -1,17 +1,17 @@
 ---
 description: Constantes de recursos compartidos.
 ms.assetid: 91FD9AAC-D13F-499E-BC17-73F5D5E2FE91
-title: DXGI_SHARED_RESOURCE_RW (Dxgi1 \_ 2. h)
+title: DXGI_SHARED_RESOURCE_RW (Dxgi1 \_ 2.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb8ed91c399167919312e2086d547ca1efbd10c7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 670b0afd7d5393253224a6692cff3f0b48bc590d0888be633581575dff2b08f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984115"
 ---
-# <a name="dxgi_shared_resource_rw"></a>\_recurso compartido de DXGI \_ \_ RW
+# <a name="dxgi_shared_resource_rw"></a>DXGI \_ SHARED \_ RESOURCE \_ RW
 
 Constantes de recursos compartidos.
 
@@ -19,8 +19,8 @@ Constantes de recursos compartidos.
 
 | Constante o valor                                                                                                                                                                                                                                                       | Descripción                              |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
-| <span id="DXGI_SHARED_RESOURCE_READ"></span><span id="dxgi_shared_resource_read"></span><dl> <dt>**DXGI \_ \_ \_ Lectura de recurso compartido**</dt> <dt>0x80000000L</dt> </dl> | El recurso compartido es de solo lectura.<br/> |
-| <span id="DXGI_SHARED_RESOURCE_WRITE"></span><span id="dxgi_shared_resource_write"></span><dl> <dt>**DXGI \_ \_ \_ Escritura de recurso compartido**</dt> <dt>1</dt> </dl>        | El recurso compartido es grabable.<br/> |
+| <span id="DXGI_SHARED_RESOURCE_READ"></span><span id="dxgi_shared_resource_read"></span><dl> <dt>**DXGI \_ RECURSO \_ COMPARTIDO \_ READ**</dt> <dt>0x80000000L</dt> </dl> | El recurso compartido es de solo lectura.<br/> |
+| <span id="DXGI_SHARED_RESOURCE_WRITE"></span><span id="dxgi_shared_resource_write"></span><dl> <dt>**DXGI \_ ESCRITURA \_ DE \_ RECURSOS COMPARTIDOS**</dt> <dt>1</dt> </dl>        | El recurso compartido se puede escribir.<br/> |
 
 
 
@@ -30,15 +30,15 @@ Constantes de recursos compartidos.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dxgi1 \_ 2. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dxgi1 \_ 2.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Constantes de DXGI](d3d10-graphics-reference-dxgi-constants.md)
+[Constantes DXGI](d3d10-graphics-reference-dxgi-constants.md)
 </dt> </dl>
 
  

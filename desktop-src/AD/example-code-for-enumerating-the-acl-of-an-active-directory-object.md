@@ -4,21 +4,21 @@ description: Los ejemplos de código siguientes se pueden usar para enumerar la 
 ms.assetid: 3629ffde-c516-4566-8b40-a913b8355656
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para enumerar la ACL de un objeto de Active Directory AD
+- Código de ejemplo para enumerar la ACL de un Active Directory Object AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c30bdec125d0f7bbc40fe6903460165722a614
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17ff3a28b66b0217e2b10037ec5a6ebb817aec33780a5ad1ba4efa6092a3cbe5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190633"
 ---
 # <a name="example-code-for-enumerating-the-acl-of-an-object-in-active-directory-domain-services"></a>Código de ejemplo para enumerar la ACL de un objeto en Active Directory Domain Services
 
 Los ejemplos de código siguientes se pueden usar para enumerar la lista de control de acceso (ACL) de un objeto en Active Directory Domain Services.
 
-En el ejemplo de código siguiente se muestra una función que enumera los elementos de confianza de un objeto.
+En el ejemplo de código siguiente se muestra una función que enumera los administradores de confianza de un objeto .
 
 
 ```C++
@@ -171,7 +171,7 @@ HRESULT EnumAccessInfo(IADs *pads)
 
 
 
-En el ejemplo de código siguiente se muestra una función que enumera los elementos de confianza de un objeto.
+En el ejemplo de código siguiente se muestra una función que enumera los administradores de confianza de un objeto .
 
 
 ```VB
@@ -202,9 +202,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

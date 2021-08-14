@@ -1,27 +1,27 @@
 ---
-description: El instalador establece la propiedad CommonFilesFolder en la ruta de acceso completa de la carpeta de archivos comunes del usuario actual.
+description: El instalador establece la propiedad CommonFilesFolder en la ruta de acceso completa de la carpeta Common Files del usuario actual.
 ms.assetid: b5695525-52f8-46b6-bd67-9bd2fdc71e52
 title: Propiedad CommonFilesFolder
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d47d52419ffd080cabfb6cfd40cdf2dd27e3672
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 70c93b27d51f57e2948427c6e579e6b5f7405472bdda0ec8d7eaefe56eb5de6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118380118"
 ---
 # <a name="commonfilesfolder-property"></a>Propiedad CommonFilesFolder
 
-El instalador establece la propiedad **CommonFilesFolder** en la ruta de acceso completa de la carpeta de archivos comunes del usuario actual.
+El instalador establece la **propiedad CommonFilesFolder** en la ruta de acceso completa de la carpeta Common Files del usuario actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

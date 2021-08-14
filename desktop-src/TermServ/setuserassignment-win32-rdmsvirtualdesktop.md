@@ -1,12 +1,12 @@
 ---
-title: Método SetUserAssignment de la clase Win32_RDMSVirtualDesktop
+title: Método SetUserAssignment de la Win32_RDMSVirtualDesktop clase
 description: Asigna un escritorio virtual a un usuario.
 ms.assetid: 6a96ccb7-5d3d-4164-a0a3-286a700b414c
 ms.tgt_platform: multiple
 keywords:
 - Método SetUserAssignment Servicios de Escritorio remoto
-- Método SetUserAssignment Servicios de Escritorio remoto, clase Win32_RDMSVirtualDesktop
-- Win32_RDMSVirtualDesktop de clase Servicios de Escritorio remoto, método SetUserAssignment
+- Método SetUserAssignment Servicios de Escritorio remoto , Win32_RDMSVirtualDesktop clase
+- Win32_RDMSVirtualDesktop clase Servicios de Escritorio remoto , método SetUserAssignment
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f02e1cc935e344edd6a9c52016052e082e08d8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f38f87209ba8c8ebd82637f72cea2e798844e6081cd000f2161ee21681422e40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349416"
 ---
-# <a name="setuserassignment-method-of-the-win32_rdmsvirtualdesktop-class"></a>Método SetUserAssignment de la \_ clase RDMSVirtualDesktop de Win32
+# <a name="setuserassignment-method-of-the-win32_rdmsvirtualdesktop-class"></a>Método SetUserAssignment de la clase \_ RDMSVirtualDesktop de Win32
 
 Asigna un escritorio virtual a un usuario.
 
@@ -44,43 +44,43 @@ uint32 SetUserAssignment(
 
 <dl> <dt>
 
-*Nombre de usuario* \[ de\]
+*UserName* \[ En\]
 </dt> <dd>
 
 Nombre de usuario del usuario.
 
 </dd> <dt>
 
-*UserDomain* \[ de\]
+*UserDomain* \[ En\]
 </dt> <dd>
 
-El nombre de dominio del usuario.
+Nombre de dominio del usuario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
+[**RDMSVirtualDesktop de Win32 \_**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

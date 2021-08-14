@@ -1,9 +1,9 @@
 ---
-title: Error. errorCount
-description: La propiedad errorCount recupera el número de errores en la cola de errores.
+title: Error.errorCount
+description: La propiedad errorCount recupera el número de errores de la cola de errores.
 ms.assetid: 64d9bb0a-fcc4-401b-a7bd-529e1a517f3b
 keywords:
-- Error. errorCount Windows Media Player
+- Error.errorCount Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94848023d2cd331545f97d3bea6d92f2fcd4b49c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c99275930155724f47b77de4f85905b92de9d7a7eb612ab713d725a16c1239d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339807"
 ---
-# <a name="errorerrorcount"></a>Error. errorCount
+# <a name="errorerrorcount"></a>Error.errorCount
 
-La propiedad **errorCount** recupera el número de errores en la cola de errores.
+La **propiedad errorCount** recupera el número de errores de la cola de errores.
 
 ``` syntax
 player.error.errorCount
@@ -32,15 +32,15 @@ player.error.errorCount
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe establecer la *configuración*. **enableErrorDialogs** en false si elige mostrar mensajes de error personalizados.
+Debe establecer *Configuración*. **enableErrorDialogs en** false si decide mostrar mensajes de error personalizados.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se utiliza el *error*. **errorCount** en un controlador de eventos para avisar al usuario sobre el error más reciente en la cola de errores. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *error*. **errorCount** en un controlador de eventos para alertar al usuario sobre el error más reciente en la cola de errores. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -66,14 +66,14 @@ alert(errDesc);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

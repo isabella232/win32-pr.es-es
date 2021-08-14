@@ -1,12 +1,12 @@
 ---
-title: Propiedad TransportType de IMsRdpClientAdvancedSettings
+title: Propiedad IMsRdpClientAdvancedSettings TransportType
 description: Especifica el tipo de transporte utilizado por el cliente.
 ms.assetid: 752f5fbc-eb5a-48eb-8750-fc25c8a2f024
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad TransportType
-- Propiedad TransportType Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad TransportType
+- Propiedad TransportType Servicios de Escritorio remoto
+- Propiedad TransportType Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad TransportType
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0664e0c792725dc112baf786d63c5175eb450dcc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7829e39db819cf43e58856e4ea7ecd8d76621a78b9d45544a85034703e6ba9b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352980"
 ---
-# <a name="imsrdpclientadvancedsettingstransporttype-property"></a>IMsRdpClientAdvancedSettings:: TransportType (propiedad)
+# <a name="imsrdpclientadvancedsettingstransporttype-property"></a>IMsRdpClientAdvancedSettings::TransportType, propiedad
 
-Especifica el tipo de transporte utilizado por el cliente. El control ActiveX Escritorio remoto no usa esta propiedad.
+Especifica el tipo de transporte utilizado por el cliente. El control de Escritorio remoto ActiveX no usa esta propiedad.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,17 +49,17 @@ HRESULT get_TransportType(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece el tipo de transporte. Este método puede realizarse correctamente, pero el control ActiveX de Escritorio remoto nunca usa el valor establecido.
+Establece el tipo de transporte. Este método puede tener éxito, pero el control de Escritorio remoto ActiveX nunca usa el conjunto Escritorio remoto ActiveX valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                  |
@@ -69,7 +69,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

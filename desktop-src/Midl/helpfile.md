@@ -1,9 +1,9 @@
 ---
 title: helpfile (atributo)
-description: El atributo \ HelpFile \ establece el nombre del archivo de ayuda de una biblioteca de tipos. Todos los tipos de una biblioteca comparten el mismo archivo de ayuda.
+description: El atributo \ helpfile\ establece el nombre del archivo de Ayuda para una biblioteca de tipos. Todos los tipos de una biblioteca comparten el mismo archivo de Ayuda.
 ms.assetid: caa248b1-a1a7-4c36-886a-079a66a01907
 keywords:
-- atributo HelpFile (MIDL)
+- ATRIBUTO MIDL del archivo de ayuda
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0b4283b0285631a710af774d364a01b82c9d44b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1557d96f35913e5e1ed9b784bedfc430e6c4d77b65954583ca6923e4728af9a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103790023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384031"
 ---
 # <a name="helpfile-attribute"></a>helpfile (atributo)
 
-El atributo **\[ HelpFile \]** establece el nombre del archivo de ayuda de una biblioteca de tipos. Todos los tipos de una biblioteca comparten el mismo archivo de ayuda.
+El **\[ atributo \] helpfile** establece el nombre del archivo de Ayuda para una biblioteca de tipos. Todos los tipos de una biblioteca comparten el mismo archivo de Ayuda.
 
 ``` syntax
 [
@@ -39,7 +39,7 @@ library
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
 Especifica un número de identificación único universal para la [**biblioteca**](library.md).
@@ -53,7 +53,7 @@ Especifica el nombre del archivo que contiene el texto de ayuda.
 
 </dd> <dt>
 
-*opcional-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
 Especifica cero o más atributos que el compilador MIDL aplicará a la [**biblioteca**](library.md).
@@ -63,13 +63,13 @@ Especifica cero o más atributos que el compilador MIDL aplicará a la [**biblio
 *instrucciones de biblioteca* 
 </dt> <dd>
 
-Especifica una o más instrucciones MIDL que definen la interfaz de biblioteca.
+Especifica una o varias instrucciones MIDL que definen la interfaz de biblioteca.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use las funciones **GetDocumentation** en las interfaces **ITypeLib** y **ITypeInfo** para recuperar el nombre de archivo.
+Use las **funciones GetDocumentation** en las interfaces **ITypeLib** **e ITypeInfo** para recuperar el nombre de archivo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -90,10 +90,10 @@ library Hello
 
 <dl> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -102,6 +102,6 @@ library Hello
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

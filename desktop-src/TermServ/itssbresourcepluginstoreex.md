@@ -4,8 +4,8 @@ description: Expone métodos que permiten a los complementos de recursos almacen
 ms.assetid: 768a5a4e-8221-417a-ad65-9a213a176eca
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz ITsSbResourcePluginStoreEx
-- Servicios de Escritorio remoto de la interfaz ITsSbResourcePluginStoreEx, descrito
+- Interfaz ITsSbResourcePluginStoreEx Servicios de Escritorio remoto
+- Interfaz ITsSbResourcePluginStoreEx Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,28 +15,28 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a192b90f38d9b306c59f275d1fed3933d5cbd56a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 23c3ba6689f52d592d9c9799b6c7bec0acd58e1afcbc8e7a18e0cb9dbe6db98b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118351298"
 ---
 # <a name="itssbresourcepluginstoreex-interface"></a>Interfaz ITsSbResourcePluginStoreEx
 
 Expone métodos que permiten a los complementos de recursos almacenar objetos como sesiones y destinos. Estos métodos agregan, eliminan y consultan estos objetos.
 
-Esta interfaz solo está disponible en Windows Server 2012 R2 con [KB3091411](https://support.microsoft.com/kb/3091411) instalado. Los métodos [**AcquireTargetLock**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-acquiretargetlock) y [**ReleaseTargetLock**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-releasetargetlock) de la interfaz [**ITsSbResourcePluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcepluginstore) están disponibles a partir de Windows Server 2016.
+Esta interfaz solo está disponible en Windows Server 2012 R2 con [KB3091411](https://support.microsoft.com/kb/3091411) instalado. Los [**métodos AcquireTargetLock**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-acquiretargetlock) [**y ReleaseTargetLock**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-releasetargetlock) de [**la interfaz ITsSbResourcePluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcepluginstore) están disponibles a partir de Windows Server 2016.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITsSbResourcePluginStoreEx** hereda de [**ITsSbResourcePluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcepluginstore). **ITsSbResourcePluginStoreEx** también tiene estos tipos de miembros:
+La **interfaz ITsSbResourcePluginStoreEx** hereda de [**ITsSbResourcePluginStore.**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcepluginstore) **ITsSbResourcePluginStoreEx** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITsSbResourcePluginStoreEx** tiene estos métodos.
+La **interfaz ITsSbResourcePluginStoreEx** tiene estos métodos.
 
 
 
@@ -49,8 +49,8 @@ La interfaz **ITsSbResourcePluginStoreEx** tiene estos métodos.
 | [**DeleteTarget**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-deletetarget)                                                     | Elimina un destino.<br/>                                                                                    |
 | [**EnumerateEnvironments**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumerateenvironments)                                   | Devuelve una matriz que contiene los entornos presentes en el almacén del complemento de recursos.<br/>               |
 | [**EnumerateFarms**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratefarms)                                                 | Enumera todas las granjas de servidores que se han agregado al almacén del complemento de recursos.<br/>                         |
-| [**EnumerateSessions**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratesessions)                                           | Enumera un conjunto especificado de sesiones.<br/>                                                              |
-| [**EnumerateTargets**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratetargets)                                             | Devuelve una matriz que contiene los destinos especificados presentes en el almacén del complemento de recursos.<br/> |
+| [**EnumerateSessions**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratesessions)                                           | Enumera un conjunto de sesiones especificado.<br/>                                                              |
+| [**EnumerateTargets**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratetargets)                                             | Devuelve una matriz que contiene los destinos especificados que están presentes en el almacén del complemento de recursos.<br/> |
 | [**GetFarmProperty**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-getfarmproperty)                                               | Recupera una propiedad de una granja.<br/>                                                                      |
 | [**QueryEnvironment**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-queryenvironment)                                             | Devuelve el objeto de entorno especificado.<br/>                                                            |
 | [**QuerySessionBySessionId**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-querysessionbysessionid)                               | Devuelve el objeto de sesión que tiene el identificador de sesión especificado.<br/>                                        |
@@ -75,23 +75,23 @@ La interfaz **ITsSbResourcePluginStoreEx** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                             |
-| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                             |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                             |
+| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                             |
 | IID<br/>                      | IID \_ ITsSbResourcePluginStoreEx se define como 80b83ffd-625d-11e5-bea1-a0481c7e9064<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**ITsSbResourcePluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcepluginstore)
 </dt> <dt>
 
-[Interfaces de virtualización Escritorio remoto](remote-desktop-virtualization-interfaces.md)
+[Escritorio remoto interfaces de virtualización](remote-desktop-virtualization-interfaces.md)
 </dt> </dl>
 
  

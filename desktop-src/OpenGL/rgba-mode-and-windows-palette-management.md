@@ -1,36 +1,36 @@
 ---
-title: Modo RGBA y administración de la paleta de Windows
-description: Aunque la mayoría de las aplicaciones GDI suelen usar la indización de colores con las paletas lógicas, el modo RGBA suele ser preferible para las aplicaciones OpenGL. Funciona mejor que la asignación de colores para varios efectos, como el sombreado, la iluminación, la niebla y la asignación de textura.
+title: Modo RGBA y administración Windows paletas
+description: Aunque la mayoría de las aplicaciones GDI tienden a usar la indexación de colores con paletas lógicas, el modo RGBA suele ser preferible para las aplicaciones OpenGL. Funciona mejor que la asignación de colores para varios efectos, como sombreado, iluminación, sombra y asignación de textura.
 ms.assetid: 68c35173-e792-4770-9404-5503344f475b
 keywords:
-- OpenGL en Windows, modo RGBA
-- OpenGL en Windows, administración de paletas
-- Modo RGBA de OpenGL
+- OpenGL en Windows modo RGBA
+- OpenGL on Windows,palette management
+- OpenGL en modo RGBA
 - Administración de paletas OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2e04110d1dfe489a145a8de9bdc7c3d9b726acd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 53016764636cadd9fe85e0478905958788ca2557a308375bc8d6d9826462c6b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105665867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118932957"
 ---
-# <a name="rgba-mode-and-windows-palette-management"></a>Modo RGBA y administración de la paleta de Windows
+# <a name="rgba-mode-and-windows-palette-management"></a>Modo RGBA y administración Windows paletas
 
-Aunque la mayoría de las aplicaciones GDI suelen usar la indización de colores con las paletas lógicas, el modo RGBA suele ser preferible para las aplicaciones OpenGL. Funciona mejor que la asignación de colores para varios efectos, como el sombreado, la iluminación, la niebla y la asignación de textura.
+Aunque la mayoría de las aplicaciones GDI tienden a usar la indexación de colores con paletas lógicas, el modo RGBA suele ser preferible para las aplicaciones OpenGL. Funciona mejor que la asignación de colores para varios efectos, como sombreado, iluminación, sombra y asignación de textura.
 
-El modo RGBA usa valores de color rojo, verde y azul (R, G y B) que, juntos, especifican el color de cada píxel de la pantalla. Los valores R, G y B especifican la intensidad de cada color (rojo, verde y azul); los valores van desde 0,0 (menos intenso) hasta 1,0 (más intenso). El número de bits para cada componente varía en función del hardware utilizado (los 2, 3, 5, 6 y 8 bits son posibles). El color mostrado es el resultado de la suma de los tres valores de color. Si los tres valores son 0,0, el resultado es negro. Si los tres valores son todos 1,0, el resultado es blanco. Otros colores son el resultado de una combinación de valores de R, G y B que se encuentran entre 0 y 1,0. El bit A (alfa) no se usa para especificar el color.
+El modo RGBA usa valores de color rojo, verde y azul (R, G y B) que juntos especifican el color de cada píxel de la pantalla. Los valores R, G y B especifican la intensidad de cada color (rojo, verde y azul); los valores oscilan entre 0,0 (menos intensa) y 1,0 (la más intensa). El número de bits de cada componente varía en función del hardware usado (2, 3, 5, 6 y 8 bits son posibles). El color mostrado es el resultado de la suma de los tres valores de color. Si los tres valores son 0,0, el resultado es negro. Si los tres valores son todos 1,0, el resultado es blanco. Otros colores son el resultado de una combinación de valores de R, G y B que se encuentran entre 0 y 1,0. El bit A (alfa) no se usa para especificar el color.
 
-La pantalla Super VGA estándar usa las paletas con ocho bits de color por píxel. Los ocho bits se leen desde el búfer y se usan como índice en la paleta del sistema para obtener los valores R, G y B. Cuando se selecciona una paleta RGB y se realiza en un contexto de dispositivo, OpenGL puede representarse mediante el modo RGBA.
+La pantalla super VGA estándar usa paletas con ocho bits de color por píxel. Los ocho bits se leen del búfer y se usan como índice en la paleta del sistema para obtener los valores R, G y B. Cuando se selecciona una paleta RGB y se realiza en un contexto de dispositivo, OpenGL puede representarse mediante el modo RGBA.
 
-Dado que hay ocho bits de color por píxel, OpenGL enfatiza el uso de una paleta RGBA de tres a dos. "Tres-tres-dos" se refiere al modo en que el hardware o la paleta física controlan los datos de bit de color. Los de color rojo (R) y verde (G) se especifican mediante tres bits; el azul (B) se especifica mediante dos bits. Rojo es el bit menos significativo y azul es el bit más significativo.
+Dado que hay ocho bits de color por píxel, OpenGL resalta el uso de una paleta RGBA de tres a tres y dos. "Three-three-two" hace referencia a cómo la paleta física o de hardware controla los datos de bits de color. Rojo (R) y verde (G) se especifican cada uno por tres bits; blue (B) se especifica mediante dos bits. El rojo es el bit menos significativo y el azul es el bit más significativo.
 
-Los colores de la paleta lógica de la aplicación se determinan con estructuras [PALETTEENTRY](/previous-versions//dd162769(v=vs.85)) . Normalmente se crea una matriz de estructuras **PALETTEENTRY** para especificar la tabla de entrada de la paleta completa de la paleta lógica.
+Los colores de la paleta lógica de la aplicación se determinan con estructuras [PALETTEENTRY.](/previous-versions//dd162769(v=vs.85)) Normalmente se crea una matriz de estructuras **PALETTEENTRY** para especificar toda la tabla de entrada de paleta de la paleta lógica.
 
-## <a name="rgba-mode-palette-sample"></a>Ejemplo de paleta del modo RGBA
+## <a name="rgba-mode-palette-sample"></a>Ejemplo de paleta de modo RGBA
 
-En el fragmento de código siguiente se muestra cómo se puede crear una paleta RGBA de tres y dos.
+En el fragmento de código siguiente se muestra cómo puede crear una paleta RGBA de tres a tres y dos.
 
 
 ```C++
@@ -297,6 +297,6 @@ main(int argc, char *argv[])
 
 
 
- 
+ 
 
- 
+ 

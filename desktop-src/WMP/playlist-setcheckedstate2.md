@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. setCheckedState2
-description: El método setCheckedState2 establece el estado de activación del elemento con el índice especificado en el elemento de lista de reproducción.
+title: PLAYLIST.setCheckedState2
+description: El método setCheckedState2 establece el estado comprobado del elemento con el índice especificado en el elemento PLAYLIST.
 ms.assetid: 241221a3-810b-422d-8f73-25c5b5c82c70
 keywords:
-- Windows Media Player de lista de reproducción. setCheckedState2
+- LISTA DE REPRODUCCIÓN.setCheckedState2 Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 37cc9c821ae783e79d327e93b0c2f297fb75eab1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6b95cb332c5f5a9d86e6f49484b27c1ab5802f28b18195f610395a1c732e369
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118336224"
 ---
-# <a name="playlistsetcheckedstate2"></a>Lista de reproducción. setCheckedState2
+# <a name="playlistsetcheckedstate2"></a>PLAYLIST.setCheckedState2
 
-El método **setCheckedState2** establece el estado de activación del elemento con el índice especificado en el elemento de **lista de reproducción** .
+El **método setCheckedState2** establece el estado comprobado del elemento con el índice especificado en el elemento **PLAYLIST.**
 
 ``` syntax
         elementID.setCheckedState(item, checked)
@@ -32,17 +32,17 @@ El método **setCheckedState2** establece el estado de activación del elemento 
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*movs*
+<span id="item"></span><span id="ITEM"></span>*Artículo*
 </dt> <dd>
 
-**Número** (**largo**) que indica el índice del elemento de lista de reproducción que se va a activar o desactivar.
+**Number** ( long )**que** indica el índice del elemento de lista de reproducción que se va a comprobar o desactivar.
 
 </dd> <dt>
 
-<span id="checked"></span><span id="CHECKED"></span>*incorpora*
+<span id="checked"></span><span id="CHECKED"></span>*Comprobado*
 </dt> <dd>
 
-**Valor booleano** que indica si el elemento especificado debe comprobarse (true) o desactivado (false).
+**Valor** booleano que indica si el elemento especificado se va a comprobar (true) o no (false).
 
 </dd> </dl>
 
@@ -50,28 +50,28 @@ El método **setCheckedState2** establece el estado de activación del elemento 
 
 Este método devuelve un **valor booleano**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método puede trabajar con listas de reproducción anidadas y reemplaza al método **setCheckedState** , que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el parámetro *Item* .
+Este método puede trabajar con listas de reproducción anidadas y reemplaza el **método setCheckedState,** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el parámetro *item.*
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. setCheckedState**](playlist-setcheckedstate.md)
+[**PLAYLIST.setCheckedState**](playlist-setcheckedstate.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Los predicados de profundidad de carpeta controlan el ámbito de una búsqueda especificando una ruta de acceso y si se realiza un recorrido profundo o superficial.
+description: Los predicados de profundidad de carpeta controlan el ámbito de una búsqueda especificando una ruta de acceso y si se debe realizar un recorrido profundo o superficial.
 ms.assetid: 8eadbd42-3538-412e-9bf8-b2355d23437e
-title: Predicados de ámbito y directorio
+title: Predicados SCOPE y DIRECTORY
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2418b2149a5bf05bd000460c787b7f967856c5c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f221ba4048f1ab7f5096321cc00aed209acb5ca3e5616e6e6a4fbbc516dfc28b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462474"
 ---
-# <a name="scope-and-directory-predicates"></a>Predicados de ámbito y directorio
+# <a name="scope-and-directory-predicates"></a>Predicados SCOPE y DIRECTORY
 
-Los predicados de profundidad de carpeta controlan el ámbito de una búsqueda especificando una ruta de acceso y si se realiza un recorrido profundo o superficial. A continuación se muestra la sintaxis de los predicados de profundidad de la carpeta:
+Los predicados de profundidad de carpeta controlan el ámbito de una búsqueda especificando una ruta de acceso y si se debe realizar un recorrido profundo o superficial. A continuación se muestra la sintaxis de los predicados de profundidad de carpeta:
 
 
 ```
@@ -22,9 +22,9 @@ Los predicados de profundidad de carpeta controlan el ámbito de una búsqueda e
 
 
 
-El predicado va seguido de un signo igual. La ruta de acceso se incluye entre comillas simples y debe comenzar por un protocolo y dos puntos (por ejemplo, `file:` , `mapi:` o `csc:` ). El predicado de ámbito realiza un recorrido profundo de la ruta de acceso, incluidas todas las subcarpetas, mientras que el predicado de directorio realiza un recorrido superficial solo de la carpeta especificada. Al igual que otras restricciones de Lenguaje de consulta estructurado (SQL), puede especificar más de una restricción de profundidad de carpeta en una sola consulta.
+El predicado va seguido de un signo igual. La ruta de acceso se delimita entre comillas simples y debe comenzar con un protocolo y dos puntos (por ejemplo, `file:` `mapi:` , o `csc:` ). El predicado SCOPE realiza un recorrido profundo de la ruta de acceso, incluidas todas las subcarpetas, mientras que el predicado DIRECTORY realiza un recorrido superficial de solo la carpeta especificada. Al igual que Lenguaje de consulta estructurado restricciones de SQL , puede especificar más de una restricción de profundidad de carpeta en una sola consulta.
 
-Para consultar el catálogo local de un equipo remoto, incluya el nombre del equipo delante del catálogo y una ruta de acceso UNC (Convención de nomenclatura universal) en el equipo remoto en la cláusula SCOPE o DIRECTORY.
+Para consultar el catálogo local de un equipo remoto, incluya el nombre del equipo antes del catálogo y una ruta de acceso de convención de nomenclatura universal (UNC) en el equipo remoto en la cláusula SCOPE o DIRECTORY.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -43,10 +43,10 @@ SELECT System.ItemURL FROM SystemIndex WHERE SCOPE='mapi://{S-1-5-21-2117521111-
 
 
 
-En el primer ejemplo de ámbito se busca en la carpeta C: \\ files \\ Reports y en todas sus subcarpetas. En el ejemplo de directorio solo se buscan en la carpeta raíz los informes C: \\ archivos \\ .
+El primer ejemplo scope busca en la carpeta C: \\ Files Reports y en todas sus \\ subcarpetas. En el ejemplo DE DIRECTORIO solo se busca la carpeta raíz C: \\ Informes \\ de archivos.
 
 > [!Note]  
-> Las barras diagonales inversas del sistema de archivos ( \\ ) se convierten en una barra diagonal de estilo URL (a veces llamadas barras diagonales) (/).
+> Las barras diagonales inversas del sistema de archivos ( ) se convierten en una barra diagonal de estilo URL (a veces denominadas \\ barras diagonales) (/).
 
  
 
@@ -57,7 +57,7 @@ En el primer ejemplo de ámbito se busca en la carpeta C: \\ files \\ Reports y 
 **Referencia**
 </dt> <dt>
 
-[Cláusula FROM](-search-sql-from.md)
+[FROM (Cláusula)](-search-sql-from.md)
 </dt> <dt>
 
 [Cláusula WHERE](-search-sql-where.md)

@@ -1,11 +1,11 @@
 ---
-title: Print-Max-Y-extensión (atributo)
-description: La región de impresión vertical máxima.
+title: Atributo Print-Max-Y-Extent
+description: Región de impresión vertical máxima.
 ms.assetid: 9e146aca-54e0-47c9-8284-dcce23a1c795
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de extensión de impresión-Max-Y-
-- printMaxYExtent esquema de AD de atributos
+- Esquema de AD del atributo Print-Max-Y-Extent
+- PrintMaxYExtent attribute AD Schema (Esquema de AD del atributo printMaxYExtent)
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 207d81f12303408b082e70b599652ee281ffe458
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d5d6205ba74edfca7a0043f9a2f617b9067b66dfe74c56864e7dc775cefb691a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682183"
 ---
-# <a name="print-max-y-extent-attribute"></a>Print-Max-Y-extensión (atributo)
+# <a name="print-max-y-extent-attribute"></a>Atributo Print-Max-Y-Extent
 
-La región de impresión vertical máxima.
+Región de impresión vertical máxima.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Imprimir-Max-Y-extensión                   |
-| Nombre para mostrar de LDAP | printMaxYExtent                      |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Print-Max-Y-Extent                   |
+| Ldap-Display-Name | printMaxYExtent                      |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.278               |
-| System-ID-GUID    | ba305f70-47e3-11d0-a1a6-00c04fd930c9 |
+| System-Id-Guid    | ba305f70-47e3-11d0-a1a6-00c04fd930c9 |
 | Sintaxis            | [**Enumeración**](s-enumeration.md) |
 
 
@@ -55,13 +55,13 @@ La región de impresión vertical máxima.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ La región de impresión vertical máxima.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -97,13 +97,13 @@ La región de impresión vertical máxima.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -118,13 +118,13 @@ La región de impresión vertical máxima.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -139,13 +139,13 @@ La región de impresión vertical máxima.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -160,13 +160,13 @@ La región de impresión vertical máxima.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
+| Es de un solo valor       | True                                           |
 | Está indexado             | False                                          |
 | En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |

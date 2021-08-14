@@ -1,7 +1,7 @@
 ---
 description: Cree un token de número de versión del sombreador de vértices.
 ms.assetid: c3aa6b01-7949-4171-a8b5-2f453fd7a422
-title: Macro D3DVS_VERSION (D3d9types. h)
+title: D3DVS_VERSION macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 915d5b843287602c80572d739d8b369d8c301770
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 861295c9068bee9e40174d877a78628aa405b9cfa5d46414190fbb7b37904e89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527261"
 ---
-# <a name="d3dvs_version-macro"></a>D3DVS \_ versión (macro)
+# <a name="d3dvs_version-macro"></a>Macro D3DVS \_ VERSION
 
 Cree un token de número de versión del sombreador de vértices.
 
@@ -40,17 +40,17 @@ DWORD D3DVS_VERSION(
 
 <dl> <dt>
 
-*\_Principales* 
+*\_Principal* 
 </dt> <dd>
 
-Versión principal del sombreador de vértices. Vea la sección Comentarios para obtener los valores adecuados.
+La versión principal del sombreador de vértices. Consulte los comentarios para obtener los valores adecuados.
 
 </dd> <dt>
 
 *\_Minor* 
 </dt> <dd>
 
-Versión secundaria del sombreador de vértices. Vea la sección Comentarios para obtener los valores adecuados.
+Versión del sombreador de vértices secundaria. Consulte los comentarios para obtener los valores adecuados.
 
 </dd> </dl>
 
@@ -58,19 +58,19 @@ Versión secundaria del sombreador de vértices. Vea la sección Comentarios par
 
 Devuelve un valor DWORD que es una versión del sombreador de vértices.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Números de versión
 
-El número de versión es una combinación de la versión principal y los números de versión del sombreador de vértices secundarios. Los números válidos se muestran en la tabla.
+El número de versión es una combinación de la versión principal y los números de versión del sombreador de vértices menores. Los números válidos se muestran en la tabla.
 
 
 
 | Principal | Minor | Ejemplo             |
 |-------|-------|---------------------|
-| 1     | 1     | \_Versión de D3DVS (1,1) |
-| 2     | 0     | \_Versión de D3DVS (2,0) |
-| 3     | 0     | \_Versión de D3DVS (3, 0) |
+| 1     | 1     | D3DVS \_ VERSION(1,1) |
+| 2     | 0     | D3DVS \_ VERSION(2,0) |
+| 3     | 0     | D3DVS \_ VERSIÓN(3,0) |
 
 
 
@@ -82,11 +82,11 @@ El número de versión es una combinación de la versión principal y los númer
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

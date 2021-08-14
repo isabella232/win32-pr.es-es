@@ -1,10 +1,10 @@
 ---
-title: Método ID3DX11EffectRasterizerVariable GetRasterizerState (D3dx11effect. h)
-description: Obtiene un puntero a una interfaz de rasterizador.
+title: Método ID3DX11EffectRasterizerVariable GetRasterizerState (D3dx11effect.h)
+description: Obtiene un puntero a una interfaz rasterizadora.
 ms.assetid: 4b8515e0-b79a-4572-9142-07c50a8839b8
 keywords:
 - Método GetRasterizerState Direct3D 11
-- Método GetRasterizerState Direct3D 11, interfaz ID3DX11EffectRasterizerVariable
+- Método GetRasterizerState Direct3D 11 , interfaz ID3DX11EffectRasterizerVariable
 - Interfaz ID3DX11EffectRasterizerVariable Direct3D 11, método GetRasterizerState
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 972140a8f74a3e5a6728429faddacc253aaa6c9d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 94dbd6b45b14e8499fada4c1c5eb32b9bbd55b1dad843b05cf52a9318737cb9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045883"
 ---
-# <a name="id3dx11effectrasterizervariablegetrasterizerstate-method"></a>ID3DX11EffectRasterizerVariable:: GetRasterizerState (método)
+# <a name="id3dx11effectrasterizervariablegetrasterizerstate-method"></a>Método ID3DX11EffectRasterizerVariable::GetRasterizerState
 
-Obtiene un puntero a una interfaz de rasterizador.
+Obtiene un puntero a una interfaz rasterizadora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,9 +47,9 @@ HRESULT GetRasterizerState(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice en una matriz de interfaces de rasterizador. Si solo hay una interfaz de rasterización, use 0.
+Indexe en una matriz de interfaces de rasterizador. Si solo hay una interfaz de rasterizador, use 0.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
 
 Tipo: **[ **ID3D11RasterizerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rasterizerstate)\*\***
 
-La dirección de un puntero a una interfaz de rasterizador (vea [**ID3D11RasterizerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rasterizerstate)).
+Dirección de un puntero a una interfaz de rasterizador (vea [**ID3D11RasterizerState).**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rasterizerstate)
 
 </dd> </dl>
 
@@ -66,12 +66,12 @@ La dirección de un puntero a una interfaz de rasterizador (vea [**ID3D11Rasteri
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -81,8 +81,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

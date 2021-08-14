@@ -4,12 +4,12 @@ ms.assetid: b47e6b6c-19f1-4dfc-b119-d69329fb9e6a
 title: System.Message.SenderName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9b00a98864fa9ed2f0ec041e3a86c570dd549c5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: edee36e5116ba012c224c6e4173bf8ed0f03b12d4ff43f495ff3e92ee2dee938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118724673"
 ---
 # <a name="systemmessagesendername"></a>System.Message.SenderName
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

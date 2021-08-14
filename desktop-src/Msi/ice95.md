@@ -1,32 +1,32 @@
 ---
-description: ICE95 comprueba la tabla de control y la tabla BBControl para comprobar que los controles de la cartelera caben en todas las cartelera.
+description: ICE95 comprueba la tabla De control y la tabla BBControl para comprobar que los controles de la bolsa caben en todos los paneles.
 ms.assetid: 8ba73536-65a5-4658-846c-76356f16b81c
 title: ICE95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14144c7739dfcc1f1b5e66d92d8e6c1c46ed49fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8f0f7d44554385c33648036f314406971193afc079b5aa8e72cf595695797ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315265"
 ---
 # <a name="ice95"></a>ICE95
 
-ICE95 comprueba la tabla de [control](control-table.md) y la [tabla BBControl](bbcontrol-table.md) para comprobar que los controles de la cartelera caben en todas las cartelera.
+ICE95 comprueba la tabla [De control y](control-table.md) la tabla [BBControl](bbcontrol-table.md) para comprobar que los controles de la bolsa caben en todos los paneles.
 
 ## <a name="result"></a>Resultado
 
-Si se cumple alguna de las siguientes condiciones, el control de la cartelera no cabe en una cartelera. ICE95 expone las siguientes advertencias.
+Si se cumple alguna de las condiciones siguientes, un control de la ciudad no cabe en un panel. ICE95 publica las siguientes advertencias.
 
 
 
-| ADVERTENCIA de ICE95                                                                                                                                                                                                              | Descripción                                                                                |
+| Advertencia de ICE95                                                                                                                                                                                                              | Descripción                                                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de la cartelera de la tabla de control. La coordenada X supera el límite del ancho mínimo del control de la cartelera% s                   | La coordenada X del control está fuera del ancho de la cartelera.                          |
-| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de la cartelera de la tabla de control. La coordenada Y supera el límite de la altura del control de la cartelera mínima% s                  | La coordenada Y del control está debajo de la parte inferior de la cartelera.                           |
-| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de la cartelera de la tabla de control. La coordenada X y el ancho combinados juntos superan el ancho mínimo del control de la cartelera% s   | La coordenada X del control más el ancho del control está fuera del ancho de la cartelera. |
-| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de la cartelera de la tabla de control. La coordenada Y y el alto combinado juntos superan el alto del control de la cartelera mínimo% s | La coordenada Y del control más el alto del control está por debajo de la parte inferior de la cartelera. |
+| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada X supera el límite del ancho mínimo de control de la banda %s                   | La coordenada X del control está fuera del ancho del panel.                          |
+| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada Y supera el límite de la altura mínima del control de ciudad %s                  | La coordenada Y del control está debajo de la parte inferior del panel.                           |
+| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada X y el ancho combinados superan el ancho de control mínimo %s   | La coordenada X del control más el ancho del control está fuera del ancho del panel. |
+| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada Y y el alto combinados superan el alto mínimo del control de la ciudad %s. | La coordenada Y del control más el alto del control se encuentra debajo de la parte inferior del panel. |
 
 
 
@@ -49,8 +49,8 @@ Tabla de control (parcial) (parcial)
 
 | Control  | Tipo      | Ancho | Alto |
 |----------|-----------|-------|--------|
-| control1 | Valla | 300   | 100    |
-| Control2 | Valla | 100   | 300    |
+| control1 | Cartelera | 300   | 100    |
+| Control2 | Cartelera | 100   | 300    |
 
 
 
@@ -60,12 +60,12 @@ Tabla de control (parcial) (parcial)
 
 
 
-| Valla\_ | BBControl  | X   | Y   | Ancho | Alto |
+| Cartelera\_ | BBControl  | X   | Y   | Ancho | Alto |
 |-------------|------------|-----|-----|-------|--------|
-| billboard1  | bbcontrol1 | 200 | 0   | 100   | 100    |
-| billboard1  | bbcontrol2 | 0   | 200 | 100   | 100    |
-| billboard1  | bbcontrol3 | 50  | 0   | 100   | 50     |
-| billboard1  | bbcontrol4 | 0   | 50  | 50    | 100    |
+| yónctese1  | bbcontrol1 | 200 | 0   | 100   | 100    |
+| yónctese1  | bbcontrol2 | 0   | 200 | 100   | 100    |
+| yónctese1  | bbcontrol3 | 50  | 0   | 100   | 50     |
+| yónctese1  | bbcontrol4 | 0   | 50  | 50    | 100    |
 
 
 

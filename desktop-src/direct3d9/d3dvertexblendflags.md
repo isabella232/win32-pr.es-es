@@ -1,7 +1,7 @@
 ---
-description: Define las marcas que se usan para controlar el número o las matrices que el sistema aplica al realizar la combinación de vértices multimatrix.
+description: Define las marcas usadas para controlar el número o las matrices que aplica el sistema al realizar la combinación de vértices multimatrix.
 ms.assetid: 5314f455-ce5f-4ff5-81fc-d3dffc8705b7
-title: Enumeración D3DVERTEXBLENDFLAGS (D3D9Types. h)
+title: Enumeración D3DVERTEXBLENDFLAGS (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 0b4d22740a9ad06a9848dc7649d62ac06d37a056
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ecc7f99e26088ff03b626604279bffe5c64ddb82b95a6f6219b637b3fce5a59b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527309"
 ---
 # <a name="d3dvertexblendflags-enumeration"></a>Enumeración D3DVERTEXBLENDFLAGS
 
-Define las marcas que se usan para controlar el número o las matrices que el sistema aplica al realizar la combinación de vértices multimatrix.
+Define las marcas usadas para controlar el número o las matrices que aplica el sistema al realizar la combinación de vértices multimatrix.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,38 +44,38 @@ typedef enum D3DVERTEXBLENDFLAGS {
 
 <dl> <dt>
 
-<span id="D3DVBF_DISABLE"></span><span id="d3dvbf_disable"></span>**Deshabilitación de D3DVBF \_**
+<span id="D3DVBF_DISABLE"></span><span id="d3dvbf_disable"></span>**D3DVBF \_ DISABLE**
 </dt> <dd>
 
-Deshabilitar la fusión de vértices; Aplique solo la matriz universal establecida por la macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) , donde el valor de índice para el estado de transformación es 0.
+Deshabilitar la combinación de vértices; aplique solo la matriz mundial establecida por la macro [**\_ WORLDMATRIX de D3DTS,**](d3dts-worldmatrix.md) donde el valor del índice para el estado de transformación es 0.
 
 </dd> <dt>
 
 <span id="D3DVBF_1WEIGHTS"></span><span id="d3dvbf_1weights"></span>**D3DVBF \_ 1WEIGHTS**
 </dt> <dd>
 
-Habilite la fusión de vértices entre las dos matrices establecidas por la macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) , donde el valor de índice para los Estados de transformación es 0 y 1.
+Habilite la combinación de vértices entre las dos matrices establecidas por la macro [**\_ WORLDMATRIX de D3DTS,**](d3dts-worldmatrix.md) donde el valor de índice de los estados de transformación es 0 y 1.
 
 </dd> <dt>
 
-<span id="D3DVBF_2WEIGHTS"></span><span id="d3dvbf_2weights"></span>**D3DVBF \_ 2WEIGHTS**
+<span id="D3DVBF_2WEIGHTS"></span><span id="d3dvbf_2weights"></span>**D3DVBF \_ 2 PESOS**
 </dt> <dd>
 
-Habilite la fusión de vértices entre las tres matrices establecidas por la macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) , donde el valor de índice para los Estados de transformación es 0, 1 y 2.
+Habilite la combinación de vértices entre las tres matrices establecidas por la macro [**\_ WORLDMATRIX de D3DTS,**](d3dts-worldmatrix.md) donde el valor de índice de los estados de transformación es 0, 1 y 2.
 
 </dd> <dt>
 
 <span id="D3DVBF_3WEIGHTS"></span><span id="d3dvbf_3weights"></span>**D3DVBF \_ 3WEIGHTS**
 </dt> <dd>
 
-Habilite la fusión de vértices entre las cuatro matrices establecidas por la macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) , donde el valor de índice para los Estados de transformación es 0, 1, 2 y 3.
+Habilite la combinación de vértices entre las cuatro matrices establecidas por la macro [**\_ WORLDMATRIX de D3DTS,**](d3dts-worldmatrix.md) donde el valor de índice de los estados de transformación es 0, 1, 2 y 3.
 
 </dd> <dt>
 
-<span id="D3DVBF_TWEENING"></span><span id="d3dvbf_tweening"></span>**Intercalación de D3DVBF \_**
+<span id="D3DVBF_TWEENING"></span><span id="d3dvbf_tweening"></span>**INTERPOLACIÓN D3DVBF \_**
 </dt> <dd>
 
-La mezcla de vértices se realiza mediante el valor asignado a D3DRS \_ TWEENFACTOR.
+La combinación de vértices se realiza mediante el valor asignado a D3DRS \_ TWEENFACTOR.
 
 </dd> <dt>
 
@@ -86,11 +86,11 @@ Use una sola matriz con un peso de 1,0.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los miembros de este tipo se usan con el \_ Estado de representación de VERTEXBLEND de D3DRS.
+Los miembros de este tipo se usan con el estado de representación \_ VERTEXBLEND de D3DRS.
 
-La combinación de geometría (combinación de vértices multimatriz) requiere que la aplicación use un formato de vértice con pesos de fusión (beta) para cada vértice.
+La combinación de geometría (combinación de vértices multimatrix) requiere que la aplicación use un formato de vértice que tenga pesos de combinación (beta) para cada vértice.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,11 +98,11 @@ La combinación de geometría (combinación de vértices multimatriz) requiere q
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -112,10 +112,10 @@ La combinación de geometría (combinación de vértices multimatriz) requiere q
 [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md)
 </dt> <dt>
 
-[**D3DTS \_ World**](d3dts-world.md)
+[**D3DTS \_ WORLD**](d3dts-world.md)
 </dt> <dt>
 
-[**D3DTS \_ worlda**](d3dts-worldn.md)
+[**D3DTS \_ WORLDn**](d3dts-worldn.md)
 </dt> <dt>
 
 [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md)

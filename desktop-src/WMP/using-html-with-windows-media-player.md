@@ -1,84 +1,84 @@
 ---
-title: Usar HTML con Windows Media Player
-description: Usar HTML con Windows Media Player
+title: Uso de HTML con Reproductor de Windows Media
+description: Uso de HTML con Reproductor de Windows Media
 ms.assetid: 321d4396-511b-4f0d-9ee9-8bdddceedc0e
 keywords:
-- Media Player de Windows, HTML
-- Modelo de objetos de Windows Media Player, HTML
-- modelo de objetos, HTML
-- Control ActiveX de Windows Media Player, HTML para el modelo de objetos
-- Control ActiveX, HTML para el modelo de objetos
-- Control ActiveX móvil de Windows Media Player, HTML para el modelo de objetos
-- Windows Media Player Mobile, HTML para el modelo de objetos
-- HTML con Media Player de Windows
-- Incrustación de páginas web, HTML
-- incrustación, páginas web
+- Reproductor de Windows Media,HTML
+- Reproductor de Windows Media modelo de objetos,HTML
+- object model,HTML
+- Reproductor de Windows Media ActiveX control,HTML para el modelo de objetos
+- ActiveX control,HTML para el modelo de objetos
+- Reproductor de Windows Media Control de ActiveX móvil,HTML para el modelo de objetos
+- Reproductor de Windows Media Mobile,HTML para el modelo de objetos
+- HTML con Reproductor de Windows Media
+- Inserción de páginas web, HTML
+- embedding,Web pages
 - comandos de script
-- Volteo de URL
-- transmisión por secuencias multimedia enriquecida
+- Cambio de dirección URL
+- streaming multimedia enriquecido
 - compatibilidad de exploradores
-- Mostrar páginas web
+- mostrar páginas web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7cd96932573802d0a75f95a437b2c7284b3de44
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d72185dec8ae9a2119d8c3218478e7ebb5a2df4d7740b25c9f4ecc016aa392e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465925"
 ---
-# <a name="using-html-with-windows-media-player"></a>Usar HTML con Windows Media Player
+# <a name="using-html-with-windows-media-player"></a>Uso de HTML con Reproductor de Windows Media
 
-## <a name="overview"></a>Información general
+## <a name="overview"></a>Introducción
 
-Usar HTML con Windows Media Player es una forma excelente de combinar audio y vídeo con texto y gráficos. Puede incrustar el control Media Player de Windows en una página web si desea complementar el contenido estático o crear aplicaciones web con medios digitales. Si desea complementar los medios digitales con HTML, puede mostrar las páginas web en el modo completo del reproductor haciendo referencia a ellas en las listas de reproducción de metarchivos de Windows Media.
+El uso de HTML Reproductor de Windows Media es una excelente manera de combinar audio y vídeo con texto y gráficos. Puede insertar el control Reproductor de Windows Media en una página web si desea complementar el contenido estático o crear aplicaciones web con medios digitales. Si desea complementar los medios digitales con HTML, por otro lado, puede mostrar páginas web en el modo completo del Reproductor haciendo referencia a ellas en listas de reproducción de metarchivo de Windows Media.
 
-Si escribe programas personalizados que insertan el control de Media Player de Windows en modo remoto, también puede controlar las páginas web que se muestran en los distintos paneles del modo completo del reproductor cuando los usuarios desacoplan el control. Esto le permite conservar la continuidad entre los Estados acoplado y desacoplado.
+Si escribe programas personalizados que insertan el control Reproductor de Windows Media en modo remoto, también puede controlar las páginas web que se muestran en los distintos paneles del modo completo del Reproductor cuando los usuarios desacoplan el control. Esto le permite conservar la continuidad entre los estados acoplados y desacoplados.
 
-## <a name="web-embedding"></a>Incrustación Web
+## <a name="web-embedding"></a>Inserción web
 
-Puede usar el control Media Player de Windows como parte de una página web que cree. Vea [incrustar el Control Media Player de Windows en una página web](embedding-the-windows-media-player-control-in-a-web-page.md).
+Puede usar el control Reproductor de Windows Media como parte de una página web que cree. Vea [Insertar el control Reproductor de Windows Media en una página web](embedding-the-windows-media-player-control-in-a-web-page.md).
 
 ## <a name="script-commands-and-url-flipping"></a>Comandos de script y volteo de direcciones URL
 
-Los comandos de script son pares de texto/valor que se pueden insertar en los archivos multimedia digitales o en las secuencias. Puede usar comandos de script personalizados únicamente para desencadenar código de script y permitir que Windows Media Player Controle automáticamente otros comandos de script.
+Los comandos de script son pares de texto/valor que se pueden insertar en los archivos multimedia digitales o secuencias. Puede usar comandos de script personalizados únicamente para desencadenar código de script, al tiempo que Reproductor de Windows Media otros comandos de script automáticamente.
 
-Si tiene varias páginas web que acompañan a una presentación multimedia digital, los comandos de la secuencia de comandos de dirección URL pueden cambiar automáticamente la página en un marco mientras el control Media Player de Windows continúa reproduciendo medios digitales en otro marco. Esto se denomina volteo de URL y es una manera excelente de crear una presentación multimedia. Otros comandos de script controlados automáticamente permiten cambiar la reproducción a un archivo o secuencia de medios diferente, mostrar texto de subtítulos o desencadenar eventos como inserciones de anuncios definidas en una lista de reproducción de metarchivo de Windows Media.
+Cuando tiene varias páginas web que acompañan a una presentación de medios digitales, los comandos de script de dirección URL pueden cambiar automáticamente la página en un fotograma mientras el control Reproductor de Windows Media sigue reproduciendo medios digitales en otro marco. Esto se denomina volteo de dirección URL y es una excelente manera de crear una presentación de diapositivas multimedia. Otros comandos de script que se controlan automáticamente permiten cambiar la reproducción a otro archivo multimedia o secuencia, mostrar texto de subtítulos o desencadenar eventos como inserciones de anuncios definidas en una lista de reproducción de metarchivo multimedia de Windows.
 
-Para obtener más información sobre el volteo de direcciones URL, vea [crear Web-Based presentaciones](creating-web-based-presentations.md).
+Para obtener más información sobre el cambio de dirección URL, vea [Creating Web-Based Presentations](creating-web-based-presentations.md).
 
-## <a name="rich-media-streaming"></a>Transmisión por secuencias multimedia enriquecida
+## <a name="rich-media-streaming"></a>Rich Media Streaming
 
-El volteo de direcciones URL funciona mejor con páginas simples que se cargan rápidamente. Con páginas más complejas, se transfieren varios componentes individualmente, lo que dificulta la sincronización de la presentación de la página con los medios digitales. Para permitir presentaciones multimedia complejas, las páginas web se pueden agregar a una secuencia de medios y entregarse al reproductor de la misma manera que el audio y el vídeo. Esto le permite sincronizar los componentes de la presentación mucho más fácilmente, especialmente en las conexiones de baja velocidad.
+El cambio de dirección URL funciona mejor con páginas sencillas que se cargan rápidamente. Con páginas más complejas, varios componentes se transfieren individualmente, lo que dificulta la sincronización de la presentación de páginas con medios digitales. Para permitir presentaciones multimedia complejas, las páginas web se pueden agregar a una secuencia multimedia y entregarse al reproductor de la misma manera que el audio y el vídeo. Esto le permite sincronizar los componentes de la presentación mucho más fácilmente, especialmente en conexiones de baja velocidad.
 
-Para obtener más información sobre la transmisión por secuencias de multimedia enriquecida, consulte [creación de Web-Based presentaciones](creating-web-based-presentations.md).
+Para obtener más información sobre el streaming multimedia enriquecido, vea [Creating Web-Based Presentations](creating-web-based-presentations.md).
 
 ## <a name="browser-support"></a>Compatibilidad con exploradores
 
-Puede incrustar el control de Windows Media Player en Microsoft Internet Explorer, Firefox y Netscape Navigator, aunque el proceso es ligeramente diferente para cada uno. También puede crear páginas Web diseñadas para trabajar con los tres exploradores.
+Puede insertar el control Reproductor de Windows Media en Microsoft Internet Explorer, Firefox y Netscape Navigator, aunque el proceso es ligeramente diferente para cada uno. También puede crear páginas web diseñadas para trabajar con los tres exploradores.
 
-Con Internet Explorer y Firefox, se incrusta el control mediante el elemento de objeto HTML. Sin embargo, el navegador requiere un enfoque diferente porque no admite directamente los controles ActiveX. Con Navigator, se usa el elemento APPLET para insertar un applet Java especial en la página. Este applet controla la comunicación con el control ActiveX del reproductor.
+Con Internet Explorer y Firefox, puede insertar el control mediante el elemento HTML OBJECT. El navegador requiere un enfoque diferente, sin embargo, porque no admite directamente ActiveX controles. Con Navigator, se usa el elemento APPLET para insertar un applet especial de Java en la página. Este applet controla la comunicación con el control player ActiveX.
 
-Para obtener más información sobre la compatibilidad con Firefox, consulte [uso del control de Media Player de Windows con Firefox](using-the-windows-media-player-control-with-firefox.md).
+Para obtener más información sobre la compatibilidad con Firefox, consulte [Uso del Reproductor de Windows Media Control con Firefox.](using-the-windows-media-player-control-with-firefox.md)
 
-Para obtener más información acerca de la compatibilidad con Netscape Navigator, consulte [uso de Windows Media Player con netscape 7,1](using-windows-media-player-with-netscape-7-1.md).
+Para obtener más información sobre la compatibilidad con Netscape Navigator, consulte [Uso de Reproductor de Windows Media con Netscape 7.1.](using-windows-media-player-with-netscape-7-1.md)
 
 ## <a name="displaying-web-pages-in-the-full-mode-of-the-player"></a>Mostrar páginas web en el modo completo del reproductor
 
-Puede ampliar la funcionalidad de Windows Media Player o proporcionar una vista personalizada de la información que acompaña a los archivos multimedia digitales al mostrar las páginas web en el modo completo del reproductor. Esta es la característica HTMLView de los metaarchivos de Windows Media. Los metaarchivos proporcionan un gran control sobre el contenido de la lista de reproducción, lo que le permite realizar una transición sin problemas entre clips, insertar anuncios y mostrar imágenes fijas en Windows Media Player. Para mostrar las páginas web en el modo completo del reproductor, use el elemento PARAM para agregar referencias de URL a las entradas de la lista de reproducción o a todas las listas de reproducción.
+Puede ampliar la funcionalidad de Reproductor de Windows Media o proporcionar una vista personalizada de la información que acompaña a los medios digitales mediante la visualización de páginas web en el modo completo del Reproductor. Esta es la característica HTMLView de Windows metarchivos multimedia. Los metarchivos le dan un gran control sobre el contenido de la lista de reproducción, lo que le permite realizar una transición sin problemas entre clips, insertar anuncios y mostrar imágenes fijas en Reproductor de Windows Media. Para mostrar páginas web en el modo completo del reproductor, use el elemento PARAM para agregar referencias DE URL a las entradas de la lista de reproducción o a listas de reproducción enteras.
 
-Para obtener más información sobre el uso de páginas web en los metaarchivos, vea [Mostrar páginas web en Windows Media Player](displaying-web-pages-in-windows-media-player.md).
+Para obtener más información sobre el uso de páginas web en metarchivos, vea [Mostrar páginas web en Reproductor de Windows Media](displaying-web-pages-in-windows-media-player.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Acerca del modelo de objetos de Player**](about-the-player-object-model.md)
+[**Acerca del modelo de objetos del reproductor**](about-the-player-object-model.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

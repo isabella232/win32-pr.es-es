@@ -1,22 +1,22 @@
 ---
-description: La estructura XMINT4 expone los siguientes operadores.
+description: La estructura XMINT4 expone los operadores siguientes.
 ms.assetid: efb42dbb-30ea-426a-a281-b5b732085805
 title: Operadores XMINT4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9dd1e9b55e7d46e7edd0a2b210a630c61b375b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0ed1d34fec850e3586b388b564aab0893bd176c5561e3c5a729280cd677f768
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979595"
 ---
 # <a name="xmint4-operators"></a>Operadores XMINT4
 
-La estructura [**XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4) expone los siguientes operadores.
+La [**estructura XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4)
 
 | Métodos                                             | Descripción                                                                                                     |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxmath/nf-directxmath-xmint4-operator-assign)<br/> | Asigna los datos del componente de vector de una instancia de `XMINT4` a la instancia actual de `XMINT4` .<br/> |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmint4-operator-assign)<br/> | Asigna los datos del componente vectorial de una instancia de `XMINT4` a la instancia actual de `XMINT4` .<br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4)
 
 <dl> <dt>
 
-[Extensiones de XMINT4](ovw-xmint4-extensions.md)
+[Extensiones XMINT4](ovw-xmint4-extensions.md)
 </dt> <dt>
 
 **Referencia**

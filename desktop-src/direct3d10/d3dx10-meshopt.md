@@ -1,5 +1,5 @@
 ---
-description: 'D3DX10_MESHOPT enumeración: especifica el tipo de optimización de malla que se va a realizar.'
+description: 'D3DX10_MESHOPT enumeración : especifica el tipo de optimización de malla que se va a realizar.'
 ms.assetid: 20d1da8c-8c3d-4045-9a37-d534a8682716
 title: D3DX10_MESHOPT enumeración (D3DX10Mesh.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Mesh.h
-ms.openlocfilehash: 7b3085cf9970f2c1f6fe3748cc4db8f4fb2b2a78
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 193bf832f00c9812a515ae9b5c478f6baed637d87605e9f8d04349a12d79aac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989225"
 ---
 # <a name="d3dx10_meshopt-enumeration"></a>Enumeración D3DX10 \_ MESHOPT
 
@@ -48,35 +48,35 @@ typedef enum D3DX10_MESHOPT {
 <span id="D3DX10_MESHOPT_COMPACT"></span><span id="d3dx10_meshopt_compact"></span>**D3DX10 \_ MESHOPT \_ COMPACT**
 </dt> <dd>
 
-Reordena las caras para quitar los vértices y las caras que no se usan.
+Reordena las caras para quitar los vértices y las caras no usados.
 
 </dd> <dt>
 
 <span id="D3DX10_MESHOPT_ATTR_SORT"></span><span id="d3dx10_meshopt_attr_sort"></span>**D3DX10 \_ MESHOPT \_ ATTR \_ SORT**
 </dt> <dd>
 
-Reordena las caras para optimizar para menos cambios de estado de agrupación de atributos y mejorar el rendimiento de DrawSubset.
+Reordena las caras para optimizar para menos cambios de estado de agrupación de atributos y un rendimiento mejorado de DrawSubset.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_VERTEX_CACHE"></span><span id="d3dx10_meshopt_vertex_cache"></span>**CACHÉ DE VÉRTICES \_ DE MESHOPT D3DX10 \_ \_**
+<span id="D3DX10_MESHOPT_VERTEX_CACHE"></span><span id="d3dx10_meshopt_vertex_cache"></span>**D3DX10 \_ MESHOPT \_ VERTEX \_ CACHE**
 </dt> <dd>
 
 Reordena las caras para aumentar la tasa de aciertos de caché de las cachés de vértices.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_STRIP_REORDER"></span><span id="d3dx10_meshopt_strip_reorder"></span>**REORDENACIÓN DE \_ BANDAS DE MESHOPT D3DX10 \_ \_**
+<span id="D3DX10_MESHOPT_STRIP_REORDER"></span><span id="d3dx10_meshopt_strip_reorder"></span>**REORDENACIÓN DE \_ BANDAS DE MESHOPT \_ D3DX10 \_**
 </dt> <dd>
 
 Reordena las caras para maximizar la longitud de los triángulos adyacentes.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_IGNORE_VERTS"></span><span id="d3dx10_meshopt_ignore_verts"></span>**D3DX10 \_ MESHOPT \_ OMITIR \_ VERTS**
+<span id="D3DX10_MESHOPT_IGNORE_VERTS"></span><span id="d3dx10_meshopt_ignore_verts"></span>**D3DX10 \_ MESHOPT \_ IGNORE \_ VERTS**
 </dt> <dd>
 
-Optimice solo las caras; no optimice los vértices.
+Optimizar solo las caras; no optimice los vértices.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Durante la ordenación de atributos, no divida los vértices que se comparten en
 <span id="D3DX10_MESHOPT_DEVICE_INDEPENDENT"></span><span id="d3dx10_meshopt_device_independent"></span>**D3DX10 \_ MESHOPT \_ DEVICE \_ INDEPENDENT**
 </dt> <dd>
 
-Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un tamaño de caché de vértices predeterminado que funciona bien en hardware heredado.
+Afecta al tamaño de la caché de vértices. Con esta marca se especifica un tamaño de caché de vértices predeterminado que funciona bien en hardware heredado.
 
 </dd> </dl>
 
@@ -98,7 +98,7 @@ Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un 
 
 Las marcas de optimización D3DXMESHOPT \_ STRIPREORDER y D3DXMESHOPT \_ VERTEXCACHE son mutuamente excluyentes.
 
-La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH \_ VB SHARE en su \_ lugar, en D3DXMESH.
+La marca D3DXMESHOPT \_ SHAREVB se ha quitado de esta enumeración. Use D3DXMESH VB SHARE en su \_ \_ lugar, en D3DXMESH.
 
 ## <a name="requirements"></a>Requisitos
 

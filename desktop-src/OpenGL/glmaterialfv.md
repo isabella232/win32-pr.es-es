@@ -1,9 +1,9 @@
 ---
-title: función glMaterialfv (GL. h)
-description: La función glMaterialfv especifica los parámetros de material para el modelo de iluminación.
+title: Función glMaterialfv (Gl.h)
+description: La función glMaterialfv especifica parámetros de material para el modelo de iluminación.
 ms.assetid: cd357686-4d6f-49fd-a111-308b5485ac21
 keywords:
-- glMaterialfv (función) OpenGL
+- Función glMaterialfv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b44b200abe0588a657f770902a9a897329e1942a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05c4d8fc3f1e141f9913fe997da0b9982200f6be77edc5e4ef190970ee2fca87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118358953"
 ---
-# <a name="glmaterialfv-function"></a>glMaterialfv función)
+# <a name="glmaterialfv-function"></a>función glMaterialfv
 
-La función **glMaterialfv** especifica los parámetros de material para el modelo de iluminación.
+La **función glMaterialfv** especifica parámetros de material para el modelo de iluminación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,29 +42,29 @@ void WINAPI glMaterialfv(
 
 <dl> <dt>
 
-*Portada* 
+*Cara* 
 </dt> <dd>
 
-La cara o caras que se están actualizando. Debe ser uno de los siguientes: GL \_ Front, GL \_ back o GL \_ Front y GL \_ back.
+La cara o las caras que se están actualizando. Debe ser uno de los siguientes: GL \_ FRONT, GL \_ BACK o GL FRONT y GL \_ \_ BACK.
 
 </dd> <dt>
 
-*PName* 
+*pname* 
 </dt> <dd>
 
-Parámetro de material de la cara o caras que se están actualizando. Los parámetros que se pueden especificar mediante **glMaterialfv** y sus interpretaciones por la ecuación de iluminación son los siguientes.
+Parámetro material de la cara o caras que se están actualizando. Los parámetros que se pueden especificar mediante **glMaterialfv** y sus interpretaciones por la ecuación de iluminación son los siguientes.
 
 
 
-| Value                                                                                                                                                                                      | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Valor                                                                                                                                                                                      | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_AMBIENT"></span><span id="gl_ambient"></span><dl> <dt>**ambiente de contabilidad general \_**</dt> </dl>                                       | El parámetro params contiene cuatro valores de punto flotante que especifican la reflectancia RGBA ambiental del material. Los valores enteros se asignan linealmente de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a-1,0. Los valores de punto flotante se asignan directamente. Ninguno de los valores enteros ni de punto flotante está fijado. La reflexión ambiente predeterminada para los materiales de orientación frontal y hacia delante es (0,2, 0,2, 0,2, 1,0). <br/>    |
-| <span id="GL_DIFFUSE"></span><span id="gl_diffuse"></span><dl> <dt>**difusión en contab. \_**</dt> </dl>                                       | El parámetro params contiene cuatro valores de punto flotante que especifican la reflectancia RGBA difusa del material. Los valores enteros se asignan linealmente de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a-1,0. Los valores de punto flotante se asignan directamente. Ninguno de los valores enteros ni de punto flotante está fijado. La reflexión difusa predeterminada para los materiales de orientación frontal y hacia delante es (0,8, 0,8, 0,8, 1,0). <br/>    |
-| <span id="GL_SPECULAR"></span><span id="gl_specular"></span><dl> <dt>**\_especular GL**</dt> </dl>                                    | El parámetro params contiene cuatro valores de punto flotante que especifican la reflectancia de RGBA especular del material. Los valores enteros se asignan linealmente de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a-1,0. Los valores de punto flotante se asignan directamente. Ninguno de los valores enteros ni de punto flotante está fijado. La reflexión especular predeterminada para los materiales de orientación frontal y hacia delante es (0,0, 0,0, 0,0, 1,0). <br/>  |
-| <span id="GL_EMISSION"></span><span id="gl_emission"></span><dl> <dt>**emisión de contabilidad \_**</dt> </dl>                                    | El parámetro params contiene cuatro valores de punto flotante que especifican la intensidad clara emitida del RGBA del material. Los valores enteros se asignan linealmente de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a-1,0. Los valores de punto flotante se asignan directamente. Ninguno de los valores enteros ni de punto flotante está fijado. La intensidad de emisión predeterminada de los materiales orientados delante y hacia delante es (0,0, 0,0, 0,0, 1,0). <br/> |
-| <span id="GL_SHININESS"></span><span id="gl_shininess"></span><dl> <dt>**brillo de GL \_**</dt> </dl>                                 | El parámetro *param* es un valor entero único que especifica el exponente especular RGBA del material. Los valores enteros se asignan directamente. Solo se aceptan los valores del intervalo comprendido entre \[ 0 y 128 \] . El exponente especular predeterminado para el material orientado hacia delante y hacia atrás es 0. <br/>                                                                                                                                                                                                      |
-| <span id="GL_AMBIENT_AND_DIFFUSE"></span><span id="gl_ambient_and_diffuse"></span><dl> <dt>**\_ambiente de contabilidad general \_ y \_ difuso**</dt> </dl> | Equivalente a llamar a [**glMaterial**](glmaterial-functions.md) dos veces con los mismos valores de parámetro, una vez con el ambiente de contabilidad general \_ y otra con el difuso de contabilidad \_ . <br/>                                                                                                                                                                                                                                                                                                                                   |
-| <span id="GL_COLOR_INDEXES"></span><span id="gl_color_indexes"></span><dl> <dt>**\_índices de color de GL \_**</dt> </dl>                    | El parámetro params contiene tres valores de punto flotante que especifican los índices de color para ambiente, difusión y iluminación especular. Estos tres valores, y \_ el brillo de contabilidad, son los únicos valores de material usados por la ecuación de iluminación del modo de índice de color. Consulte [**glLightModel**](gllightmodel-functions.md) para obtener una explicación de la iluminación del índice de color.<br/>                                                                                                                                  |
+| <span id="GL_AMBIENT"></span><span id="gl_ambient"></span><dl> <dt>**GL \_ AMBIENT**</dt> </dl>                                       | El parámetro params contiene cuatro valores de punto flotante que especifican la reflectancia RGBA ambiente del material. Los valores enteros se asignan linealmente de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a -1,0. Los valores de punto flotante se asignan directamente. No se fijan valores enteros ni de punto flotante. La reflectancia ambiente predeterminada para los materiales orientados hacia delante y hacia atrás es (0,2, 0,2, 0,2, 1,0). <br/>    |
+| <span id="GL_DIFFUSE"></span><span id="gl_diffuse"></span><dl> <dt>**GL \_ DIFUSO**</dt> </dl>                                       | El parámetro params contiene cuatro valores de punto flotante que especifican la reflectancia RGBA difusa del material. Los valores enteros se asignan linealmente de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a -1,0. Los valores de punto flotante se asignan directamente. No se fijan valores enteros ni de punto flotante. La reflectancia difusa predeterminada para los materiales orientados hacia delante y hacia atrás es (0,8, 0,8, 0,8, 1,0). <br/>    |
+| <span id="GL_SPECULAR"></span><span id="gl_specular"></span><dl> <dt>**GL \_ SPECULAR**</dt> </dl>                                    | El parámetro params contiene cuatro valores de punto flotante que especifican la reflectancia RGBA especular del material. Los valores enteros se asignan linealmente de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a -1,0. Los valores de punto flotante se asignan directamente. No se fijan valores enteros ni de punto flotante. La reflectancia especular predeterminada para los materiales orientados hacia delante y hacia atrás es (0,0, 0,0, 0,0, 1,0). <br/>  |
+| <span id="GL_EMISSION"></span><span id="gl_emission"></span><dl> <dt>**EMISIÓN DE GL \_**</dt> </dl>                                    | El parámetro params contiene cuatro valores de punto flotante que especifican la intensidad de luz emitida RGBA del material. Los valores enteros se asignan linealmente de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a -1,0. Los valores de punto flotante se asignan directamente. No se fijan valores enteros ni de punto flotante. La intensidad de emisión predeterminada para los materiales orientados hacia delante y hacia atrás es (0,0, 0,0, 0,0, 1,0). <br/> |
+| <span id="GL_SHININESS"></span><span id="gl_shininess"></span><dl> <dt>**GL \_ GLINESS**</dt> </dl>                                 | El *parámetro param* es un valor entero único que especifica el exponente especular RGBA del material. Los valores enteros se asignan directamente. Solo se aceptan los valores \[ del intervalo 0, 128. \] El exponente especular predeterminado para los materiales orientados hacia delante y hacia atrás es 0. <br/>                                                                                                                                                                                                      |
+| <span id="GL_AMBIENT_AND_DIFFUSE"></span><span id="gl_ambient_and_diffuse"></span><dl> <dt>**AMBIENTE \_ Y \_ \_ DIFUSO DE GL**</dt> </dl> | Equivalente a llamar [**a glMaterial dos**](glmaterial-functions.md) veces con los mismos valores de parámetro, una con \_ GL AMBIENT y otra con GL \_ DIFFUSE. <br/>                                                                                                                                                                                                                                                                                                                                   |
+| <span id="GL_COLOR_INDEXES"></span><span id="gl_color_indexes"></span><dl> <dt>**ÍNDICES \_ DE COLOR \_ GL**</dt> </dl>                    | El parámetro params contiene tres valores de punto flotante que especifican los índices de color para la iluminación ambiental, difusa y especular. Estos tres valores, y GL GLTICOINESS, son los únicos valores materiales utilizados por la ecuación de iluminación \_ del modo de índice de color. Consulte [**glLightModel para**](gllightmodel-functions.md) obtener una explicación de la iluminación de índice de color.<br/>                                                                                                                                  |
 
 
 
@@ -75,7 +75,7 @@ Parámetro de material de la cara o caras que se están actualizando. Los parám
 *params* 
 </dt> <dd>
 
-Valor al que se establecerá el parámetro de brillo de contabilidad \_ .
+Valor en el que se establecerá el \_ parámetro GLCULEINESS.
 
 </dd> </dl>
 
@@ -91,22 +91,22 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                              | Significado                                                                       |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>  | Cualquiera de las *caras* o *PName* no era un valor aceptado.<br/>                |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl> | Se especificó un exponente especular fuera del intervalo de \[ 0, 128 \] .<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>  | Face *o* *pname* no era un valor aceptado.<br/>                |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl> | Se especificó un exponente especular fuera del \[ intervalo de 0, 128. \]<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**glMaterialfv**](glmaterialf.md) asigna valores a los parámetros de material. Hay dos conjuntos de parámetros de material coincidentes. Uno, el conjunto *frontal* , se usa para sombrear puntos, líneas, mapas de bits y todos los polígonos (cuando está deshabilitada la iluminación dos caras) o simplemente polígonos frontales (cuando está habilitada la iluminación de dos caras). El otro conjunto, *orientado hacia atrás*, se usa para sombrear polígonos de cara a la inversa solo cuando está habilitada la iluminación de dos caras. Consulte [**glLightModel**](gllightmodel-functions.md) para obtener más información sobre los cálculos de iluminación de una cara y dos caras.
+La [**función glMaterialfv**](glmaterialf.md) asigna valores a parámetros de material. Hay dos conjuntos coincidentes de parámetros de material. Uno,  el conjunto de orientación frontal, se usa para sombrear puntos, líneas, mapas de bits y todos los polígonos (cuando la iluminación de dos lados está deshabilitada) o simplemente los polígonos orientados al frente (cuando la iluminación de dos lados está habilitada). El otro conjunto, *orientado hacia atrás,* se usa para sombrear polígonos orientados hacia atrás solo cuando la iluminación de dos lados está habilitada. Consulte [**glLightModel para**](gllightmodel-functions.md) obtener más información sobre los cálculos de iluminación de uno y dos lados.
 
-La función [**glMaterialfv**](glmaterialf.md) toma tres argumentos. La primera, *cara*, especifica si se modificarán los materiales de la contabilidad general \_ , los materiales traseros de la contabilidad general o los materiales de la \_ \_ parte delantera y trasera del libro de contabilidad \_ \_ . La segunda, *PName*, especifica cuál de los diversos parámetros de uno o ambos conjuntos se modificarán. El *tercer parámetro especifica* el valor que se asignará al parámetro especificado.
+La [**función glMaterialfv**](glmaterialf.md) toma tres argumentos. La primera, *face*, especifica si se modificarán los materiales GL \_ FRONT, GL \_ BACK o GL FRONT Y \_ \_ \_ BACK. El segundo, *pname*, especifica cuál de varios parámetros de uno o ambos conjuntos se modificará. El tercer *parámetro, param*, especifica qué valor se asignará al parámetro especificado.
 
 Los parámetros de material se usan en la ecuación de iluminación que se aplica opcionalmente a cada vértice. La ecuación se describe en [**glLightModel**](gllightmodel-functions.md).
 
-Los parámetros de material se pueden actualizar en cualquier momento. En concreto, se puede llamar a [**glMaterialfv**](glmaterialf.md) entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md). Sin embargo, si solo se va a cambiar un parámetro de material por vértice, se prefiere [**glColorMaterial**](glcolormaterial.md) a **glMaterialfv**.
+Los parámetros de material se pueden actualizar en cualquier momento. En concreto, se puede llamar a [**glMaterialfv**](glmaterialf.md) entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). Si solo se va a cambiar un parámetro de material por vértice, se prefiere [**glColorMaterial**](glcolormaterial.md) sobre **glMaterialfv.**
 
-La siguiente función recupera información relacionada con [**glMaterialfv**](glmaterialf.md):
+La función siguiente recupera información relacionada con [**glMaterialfv**](glmaterialf.md):
 
 [**glGetMaterial**](glgetmaterial.md)
 
@@ -114,17 +114,17 @@ La siguiente función recupera información relacionada con [**glMaterialfv**](g
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

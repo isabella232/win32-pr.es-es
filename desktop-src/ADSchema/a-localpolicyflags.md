@@ -1,11 +1,11 @@
 ---
-title: Atributo local-Policy-Flags
-description: Marcas que determinan dónde recibe un equipo su Directiva. Referencia de la directiva local.
+title: Atributo Local-Policy-Flags
+description: Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Reference.
 ms.assetid: 1f2fa723-507a-4e27-a325-8bd6f6cb6bd6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo local-Policy-Flags
-- localPolicyFlags esquema de AD de atributos
+- Esquema de AD del atributo Local-Policy-Flags
+- esquema de AD del atributo localPolicyFlags
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc077fe793a523b41974280ada7e54b82335d733
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b03901c7caeec4107a00ac8f3ba4f18af8f281ce152612a62a82de61812262bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301855"
 ---
-# <a name="local-policy-flags-attribute"></a>Atributo local-Policy-Flags
+# <a name="local-policy-flags-attribute"></a>Atributo Local-Policy-Flags
 
-Marcas que determinan dónde recibe un equipo su Directiva. Referencia de la directiva local.
+Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Reference.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Marcas de directiva local                   |
-| Nombre para mostrar de LDAP | localPolicyFlags                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Local-Policy-Flags                   |
+| Ldap-Display-Name | localPolicyFlags                     |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.56                |
-| System-ID-GUID    | bf96799e-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf96799e-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,13 +55,13 @@ Marcas que determinan dónde recibe un equipo su Directiva. Referencia de la dir
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
+| Es de un solo valor       | True                                      |
 | Está indexado             | False                                     |
 | En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -76,13 +76,13 @@ Marcas que determinan dónde recibe un equipo su Directiva. Referencia de la dir
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
+| Es de un solo valor       | True                                      |
 | Está indexado             | False                                     |
 | En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -97,13 +97,13 @@ Marcas que determinan dónde recibe un equipo su Directiva. Referencia de la dir
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
+| Es de un solo valor       | True                                      |
 | Está indexado             | False                                     |
 | En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -118,13 +118,13 @@ Marcas que determinan dónde recibe un equipo su Directiva. Referencia de la dir
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
+| Es de un solo valor       | True                                      |
 | Está indexado             | False                                     |
 | En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -139,13 +139,13 @@ Marcas que determinan dónde recibe un equipo su Directiva. Referencia de la dir
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
+| Es de un solo valor       | True                                      |
 | Está indexado             | False                                     |
 | En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -160,13 +160,13 @@ Marcas que determinan dónde recibe un equipo su Directiva. Referencia de la dir
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
+| Es de un solo valor       | True                                      |
 | Está indexado             | False                                     |
 | En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |

@@ -1,12 +1,12 @@
 ---
-title: Método RdvSetupVMPermissions de la clase Win32_RdvhManagement
+title: Método RdvSetupVMPermissions de la Win32_RdvhManagement clase
 description: Establece los permisos en una máquina virtual para el usuario actual.
 ms.assetid: 6ac45983-d468-4a3b-875f-48717ba23ed0
 ms.tgt_platform: multiple
 keywords:
 - Método RdvSetupVMPermissions Servicios de Escritorio remoto
-- Método RdvSetupVMPermissions Servicios de Escritorio remoto, clase Win32_RdvhManagement
-- Win32_RdvhManagement de clase Servicios de Escritorio remoto, método RdvSetupVMPermissions
+- Método RdvSetupVMPermissions Servicios de Escritorio remoto , Win32_RdvhManagement clase
+- Win32_RdvhManagement clase Servicios de Escritorio remoto método , RdvSetupVMPermissions
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd8028a33bc772f9dd37f25a1dc22074baf771b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e6628e3ac1660c1f0c505e3d5349dd481c7c48b09a77aaedeac1352ecbaf4562
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988815"
 ---
-# <a name="rdvsetupvmpermissions-method-of-the-win32_rdvhmanagement-class"></a>Método RdvSetupVMPermissions de la \_ clase RdvhManagement de Win32
+# <a name="rdvsetupvmpermissions-method-of-the-win32_rdvhmanagement-class"></a>Método RdvSetupVMPermissions de la clase RdvhManagement de Win32 \_
 
 Establece los permisos en una máquina virtual para el usuario actual.
 
@@ -43,32 +43,32 @@ uint32 RdvSetupVMPermissions(
 
 <dl> <dt>
 
-*VmName* \[ de\]
+*VmName* \[ En\]
 </dt> <dd>
 
-Nombre de la máquina virtual en la que se van a establecer los permisos.
+Nombre de la máquina virtual en la que se establecerán los permisos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                             |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                   |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: El método Connect conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración sobre la conexión.
+description: El Conectar conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración sobre la conexión.
 ms.assetid: 48189b2b-9889-4bd8-8972-26005fb7c341
-title: 'IESP:: Connect (método) (Netmon. h)'
+title: Método IESP::Conectar (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 4fc9c88b0eb4671c61f268c5857dceba3dc500f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2095f25128e524b32b8ad8561ee85119537c32be5e61f77d5c72637396a2183
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365613"
 ---
-# <a name="iespconnect-method"></a>IESP:: Connect (método)
+# <a name="iespconnect-method"></a>IESP::Conectar método
 
-El método **Connect** conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración sobre la conexión.
+El **Conectar** conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración sobre la conexión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,39 +43,39 @@ HRESULT STDMETHODCALLTYPE Connect(
 
 <dl> <dt>
 
-*hInputBlob* \[ de\]
+*hInputBlob* \[ En\]
 </dt> <dd>
 
-Identificador del BLOB que especifica la NIC a la que se conecta el NPP y la información de configuración para esa conexión.
+Controle el BLOB que especifica la NIC a la que se conecta el NPP y la información de configuración de esa conexión.
 
 </dd> <dt>
 
-*StatusCallbackProc* \[ de\]
+*StatusCallbackProc* \[ En\]
 </dt> <dd>
 
-Dirección de la función de devolución de llamada del usuario, que recibe actualizaciones de estado, como los desencadenadores. Si no se utiliza una función de devolución de llamada, establezca este parámetro y el parámetro *UserContext* en **null**.
+Dirección de la función de devolución de llamada del usuario, que recibe actualizaciones de estado como desencadenadores. Si no se usa una función de devolución de llamada, establezca este parámetro y el *parámetro UserContext* en **NULL.**
 
 </dd> <dt>
 
-*UserContext* \[ de\]
+*UserContext* \[ En\]
 </dt> <dd>
 
-Valor que se pasa cuando se llama a la función de devolución de llamada del usuario. El valor de este parámetro suele ser HWND o un puntero ' this '. Si no se especifica una función de devolución de llamada, establezca este parámetro y el parámetro *StatusCallbackProc* en **null**.
+Valor pasado cuando se llama a la función de devolución de llamada del usuario. El valor de este parámetro suele ser HWND o un puntero "this". Si no se especifica una función de devolución de llamada, establezca este parámetro y el *parámetro StatusCallbackProc* en **NULL.**
 
 </dd> <dt>
 
-*hErrorBlob* \[ enuncia\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que contiene información de error adicional.
+Controlar un blob de error que contiene información de error adicional.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada interna **iesp:: configure** ):
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada **interna IESP::Configure):**
 
 
 
@@ -93,48 +93,48 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 <tbody>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_ALREADY_CONNECTED</strong></dt> </dl></td>
-<td>Esta instancia del objeto COM NPP ya está conectada a la red.<br/></td>
+<td>Esta instancia del objeto COM de NPP ya está conectada a la red.<br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt> </dl></td>
-<td>El BLOB de configuración está dañado. Este error se genera mediante la llamada a <strong>iesp:: configure</strong> .<br/></td>
+<td>El BLOB de configuración está dañado. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt> </dl></td>
-<td>Falta una entrada necesaria para realizar esta operación en el BLOB de entrada especificado por el parámetro <em>hInputBlob</em> . Este error puede ser generado por la llamada a <strong>iesp:: Connect</strong> o <strong>iesp:: configure</strong> . Observe el BLOB de error devuelto por <em>hErrorBlob</em> para determinar qué entrada no se encontró.<br/></td>
+<td>El BLOB de entrada especificado por el <em>parámetro hInputBlob</em> carece de una entrada necesaria para realizar esta operación. Este error puede generarse mediante la <strong>llamada IESP::Conectar</strong> <strong>o IESP::Configure.</strong> Mire el blob de error devuelto por <em>hErrorBlob para</em> determinar qué entrada no se encontró.<br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt> </dl></td>
-<td>No se ha llamado a la función <strong>CreateBlob</strong> . Este error se genera mediante la llamada a <strong>iesp:: configure</strong> .<br/></td>
+<td>No se ha llamado a la función <strong>CreateBlob.</strong> Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt> </dl></td>
-<td>La cadena no termina en NULL. Este error se genera mediante la llamada a <strong>iesp:: configure</strong> .<br/></td>
+<td>La cadena no termina en NULL. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt> </dl></td>
-<td>La parte del desencadenador del BLOB de entrada está dañada. Este error se genera mediante la llamada a <strong>iesp:: configure</strong> .<br/></td>
+<td>La parte del desencadenador del BLOB de entrada está dañada. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_INVALID_BLOB</strong></dt> </dl></td>
-<td>El objeto especificado en <em>hInputBlob</em> no es un BLOB. Este error se genera mediante la llamada a <strong>iesp:: configure</strong> .<br/></td>
+<td>El objeto especificado en <em>hInputBlob</em> no es un BLOB. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt> </dl></td>
-<td>No se estableció el directorio de captura predeterminado en el registro. Use la siguiente ruta de acceso para establecer el directorio de captura. <br/>
+<td>El directorio de captura predeterminado no se estableció en el Registro. Use la ruta de acceso siguiente para establecer el directorio de captura. <br/>
 <pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_OUT_OF_MEMORY</strong></dt> </dl></td>
-<td>La memoria necesaria para realizar esta operación no está disponible. Este error se genera mediante la llamada a <strong>iesp:: configure</strong> .<br/></td>
+<td>La memoria necesaria para realizar esta operación no está disponible. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_TIMEOUT</strong></dt> </dl></td>
-<td>La solicitud ha agotado el tiempo de espera. Este error se genera mediante la llamada a <strong>iesp:: configure</strong> .<br/></td>
+<td>Se ha pasado el tiempo de espera de la solicitud. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_UPLEVEL_BLOB</strong></dt> </dl></td>
-<td>El número de versión del BLOB especificado en <em>hInputBlob</em> es incorrecto. Este error se genera mediante la llamada a <strong>iesp:: configure</strong> .<br/></td>
+<td>El número de versión del BLOB especificado en <em>hInputBlob</em> es incorrecto. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 </tbody>
 </table>
@@ -143,21 +143,21 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se llama al método **Connect** , monitor de red llama automáticamente a **iesp:: configure** mediante el BLOB proporcionado por el parámetro *hInputBlob* . Tenga en cuenta que los códigos de error devueltos por la llamada a **iesp:: configure** se devuelven y se devuelven mediante la llamada a **iesp:: Connect** .
+Cuando se **llama Conectar** método , Monitor de red llama automáticamente a **IESP::Configure** mediante el BLOB proporcionado por el *parámetro hInputBlob.* Tenga en cuenta que los códigos de error devueltos por la llamada a **IESP::Configure** se devuelven y devuelven mediante la **llamada Conectar IESP::Conectar.**
 
-Se debe llamar a este método antes de poder iniciar la captura de fotogramas. Tenga en cuenta que cuando se conecta a la red mediante este método, debe seguir usando la interfaz **iesp** para capturar fotogramas.
+Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que cuando se conecta a la red mediante este método, debe seguir usando la **interfaz IESP** para capturar fotogramas.
 
-El BLOB de entrada especificado por *hInputBlob* se puede obtener llamando a **GetNPPBlobFromUI**, **GetNPPBlobTable** y **SelectNPPBlobFromTable**.
+El BLOB de entrada especificado por *hInputBlob* se puede obtener llamando a **GetNPPBlobFromUI,** **GetNPPBlobTable** y **SelectNPPBlobFromTable.**
 
-El BLOB de error devuelto por *hErrorBlob* contiene entradas que monitor de red no pudo comprender o encontrar en el BLOB de entrada especificado en *hInputBlob*. El BLOB de error devuelto contiene información de error que la aplicación puede usar para solucionar problemas. Por ejemplo, si \_ \_ se devuelve la entrada de BLOB NMERR \_ \_ \_ , la entrada que monitor de red no pudo encontrar se incluye en el BLOB de error devuelto.
+El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron comprender o encontrar en el BLOB de entrada especificado en *hInputBlob*. El blob de error devuelto contiene información de error que la aplicación puede usar para solucionar problemas. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada que no Monitor de red encuentra se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
 
 
 
 | Para información acerca de                          | Vea                                                                          |
 |------------------------------------------------|------------------------------------------------------------------------------|
-| Obtener el BLOB de entrada que representa una NIC | [Seleccionar una tarjeta de interfaz de red](selecting-a-network-interface-card.md) |
+| Obtención del BLOB de entrada que representa una NIC | [Selección de una tarjeta de interfaz de red](selecting-a-network-interface-card.md) |
 
 
 
@@ -167,29 +167,29 @@ El BLOB de error devuelto por *hErrorBlob* contiene entradas que monitor de red 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP:: configure](iesp-configure.md)
+[IESP::Configure](iesp-configure.md)
 </dt> <dt>
 
-[IESP::D Ulta](iesp-disconnect.md)
+[IESP::D isconnect](iesp-disconnect.md)
 </dt> <dt>
 
-[IESP:: Start](iesp-start.md)
+[IESP::Start](iesp-start.md)
 </dt> </dl>
 
  

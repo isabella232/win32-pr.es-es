@@ -1,7 +1,7 @@
 ---
-description: El método GetGenID recupera el identificador generado por el objeto. El identificador es un número reservado; las aplicaciones no deben utilizarla.
+description: El método GetGenID recupera el identificador generado del objeto. El identificador es un número reservado; las aplicaciones no deben usarla.
 ms.assetid: b71b9b52-589b-4f80-915f-4805b1b8e295
-title: 'IAMTimelineObj:: GetGenID (método) (QEDIT. h)'
+title: Método IAMTimelineObj::GetGenID (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e3497777d25c9a81d4334f1979ce33f351111ed4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c48e13167e947404d0975d9f2b3695faef2e284625a287360996b4d07226bb84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118400743"
 ---
-# <a name="iamtimelineobjgetgenid-method"></a>IAMTimelineObj:: GetGenID (método)
+# <a name="iamtimelineobjgetgenid-method"></a>IAMTimelineObj::GetGenID (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `GetGenID` método recupera el identificador generado del objeto. El identificador es un número reservado; las aplicaciones no deben utilizarla.
+El `GetGenID` método recupera el identificador generado del objeto. El identificador es un número reservado; las aplicaciones no deben usarla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,17 +54,17 @@ Recibe el identificador generado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,19 +74,19 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineObj**](iamtimelineobj.md)
+[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  
