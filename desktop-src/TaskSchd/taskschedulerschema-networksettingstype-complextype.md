@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de networkSettingsType
-description: Define los elementos que proporcionan los valores que el servicio Programador de tareas utiliza para obtener un perfil de red.
+title: tipo complejo networkSettingsType
+description: Define los elementos que proporcionan la configuración que el Programador de tareas utiliza para obtener un perfil de red.
 ms.assetid: e5df1dda-b691-47ff-a956-50ff1ce9c7cc
 keywords:
-- tipo complejo de networkSettingsType Programador de tareas
+- tipo complejo networkSettingsType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bb2a8389b1e1f368bedf03fa38dce9c8e262a401
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d9969e4e3827d926d8c295d4e1a3ce7b77550804eb4995a267a920a16871837f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758475"
 ---
-# <a name="networksettingstype-complex-type"></a>Tipo complejo de networkSettingsType
+# <a name="networksettingstype-complex-type"></a>tipo complejo networkSettingsType
 
-Define los elementos que proporcionan los valores que el servicio Programador de tareas utiliza para obtener un perfil de red.
+Define los elementos que proporcionan la configuración que el Programador de tareas utiliza para obtener un perfil de red.
 
 ``` syntax
 <xs:complexType name="networkSettingsType">
@@ -45,8 +45,8 @@ Define los elementos que proporcionan los valores que el servicio Programador de
 
 | Elemento                                                              | Tipo                                                        | Descripción                                                                                 |
 |----------------------------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**Sesión**](taskschedulerschema-id-networksettingstype-element.md)     | [**guidType**](taskschedulerschema-guidtype-simpletype.md) | Especifica un valor de GUID que identifica un perfil de red. <br/>                       |
-| [**Name**](taskschedulerschema-name-networksettingstype-element.md) | nonEmptyString                                              | Especifica el nombre de un perfil de red. El nombre se usa para fines de presentación. <br/> |
+| [**Id**](taskschedulerschema-id-networksettingstype-element.md)     | [**guidType**](taskschedulerschema-guidtype-simpletype.md) | Especifica un valor GUID que identifica un perfil de red. <br/>                       |
+| [**Nombre**](taskschedulerschema-name-networksettingstype-element.md) | nonEmptyString                                              | Especifica el nombre de un perfil de red. El nombre se usa con fines para mostrar. <br/> |
 
 
 
@@ -54,10 +54,10 @@ Define los elementos que proporcionan los valores que el servicio Programador de
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

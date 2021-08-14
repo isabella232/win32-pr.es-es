@@ -4,16 +4,16 @@ ms.assetid: AC5970A2-6F12-448D-A444-40020C5C2607
 title: Uso del receptor de sample grabber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 043f64d8fdc3ac3084d2c59be8917acbbd32dde5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 410d3a21faf132ee087660665dee0ae4118a2d16154e2080042f34eacbe4355b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871281"
 ---
 # <a name="using-the-sample-grabber-sink"></a>Uso del receptor de sample grabber
 
-El receptor de sample grabber es un receptor multimedia que reenvía los datos que recibe a una interfaz de devolución de llamada de aplicación.
+El receptor sample grabber es un receptor multimedia que reenvía los datos que recibe a una interfaz de devolución de llamada de aplicación.
 
 > [!Note]  
 > El [lector de](source-reader.md) origen es una alternativa al receptor de sample grabber y tiene un modelo de progamming más sencillo.
@@ -138,7 +138,7 @@ done:
 
 
 
-## <a name="4-run-the-media-session"></a>4. Ejecución de la sesión multimedia
+## <a name="4-run-the-media-session"></a>4. Ejecutar la sesión multimedia
 
 
 ```C++
@@ -589,7 +589,7 @@ STDMETHODIMP SampleGrabberCB::OnShutdown()
 [Sesión multimedia](media-session.md)
 </dt> <dt>
 
-[**IMFSampleGrabberSinkCallback**](/windows/desktop/api/mfidl/nn-mfidl-imfsamplegrabbersinkcallback)
+[**SAMPLESampleGrabberSinkCallback**](/windows/desktop/api/mfidl/nn-mfidl-imfsamplegrabbersinkcallback)
 </dt> </dl>
 
  

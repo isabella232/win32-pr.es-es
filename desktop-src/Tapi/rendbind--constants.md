@@ -1,25 +1,25 @@
 ---
-description: 'Las constantes RENDBIND son marcas usadas por el método ITDirectory:: BIND para indicar los tipos de autenticación proporcionados.'
+description: Las constantes RENDBIND son marcas que usa el método ITDirectory::Bind para indicar los tipos de autenticación proporcionados.
 ms.assetid: 27bcf36a-1826-4603-9821-22fcc5c1e186
-title: Constantes de RENDBIND_ (Rend. h)
+title: RENDBIND_ constantes (Rend.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: badd2a48b2ae0632e317522533c664d4f74a6c77
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c618ed2cf5d9dda4c2ee14b331e3603f8021e9c5f4755e38ecfb5929b5f45c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117760868"
 ---
-# <a name="rendbind_-constants"></a>Constantes de RENDBIND \_
+# <a name="rendbind_-constants"></a>Constantes RENDBIND \_
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-Las constantes RENDBIND son marcas usadas por el método [**ITDirectory:: Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind) para indicar los tipos de autenticación proporcionados.
+Las constantes RENDBIND son marcas que usa el método [**ITDirectory::Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind) para indicar los tipos de autenticación proporcionados.
 
 <dl> <dt>
 
-<span id="RENDBIND_AUTHENTICATE"></span><span id="rendbind_authenticate"></span>**autenticación de RENDBIND \_**
+<span id="RENDBIND_AUTHENTICATE"></span><span id="rendbind_authenticate"></span>**AUTENTICACIÓN DE RENDBIND \_**
 </dt> <dd> <dl> <dt>
 
  0x00000001
@@ -27,7 +27,7 @@ Las constantes RENDBIND son marcas usadas por el método [**ITDirectory:: Bind**
 
 
 
-Autenticar al usuario.
+Autenticación del usuario.
 
 
 </dt> </dl> </dd> <dt>
@@ -66,12 +66,12 @@ Use el nombre de usuario predeterminado.
 
 
 
-Usar contraseña predeterminada.
+Use la contraseña predeterminada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RENDBIND_DEFAULTCREDENTIALS"></span><span id="rendbind_defaultcredentials"></span>**RENDBIND \_ DEFAULTCREDENTIALS**
+<span id="RENDBIND_DEFAULTCREDENTIALS"></span><span id="rendbind_defaultcredentials"></span>**CREDENCIALES PREDETERMINADAS DE RENDBIND \_**
 </dt> <dd> <dl> <dt>
 
  0x0000000e
@@ -79,7 +79,7 @@ Usar contraseña predeterminada.
 
 
 
-Los tres elementos ORed anteriores juntos para mayor comodidad.
+Los tres anteriores ORed juntos para mayor comodidad.
 
 
 </dt> </dl> </dd> </dl>
@@ -88,21 +88,21 @@ Los tres elementos ORed anteriores juntos para mayor comodidad.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>Rend. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Rend.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**ITDirectory**](/windows/desktop/api/Rend/nn-rend-itdirectory)
 </dt> <dt>
 
-[**ITDirectory:: Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind)
+[**ITDirectory::Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind)
 </dt> </dl>
 
  

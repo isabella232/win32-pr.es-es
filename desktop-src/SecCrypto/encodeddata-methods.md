@@ -4,21 +4,21 @@ ms.assetid: 66A71386-64F6-413B-9C1F-5CC3CDB8E7EA
 title: Métodos EncodedData
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32d27564d7ba9be8f1c0a64601b2ca007c1e34df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a50e61f7c61ae07450e67fdcbc2343a71f141afd4afcbc1a615bbb747e08c6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766731"
 ---
 # <a name="encodeddata-methods"></a>Métodos EncodedData
 
-El objeto [**EncodedData**](encodeddata.md) expone los métodos siguientes.
+El [**objeto EncodedData**](encodeddata.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Método de descodificador**](encodeddata-decoder.md)
--   [**Format (método)**](encodeddata-format.md)
+-   [**Decoder (método)**](encodeddata-decoder.md)
+-   [**Método Format**](encodeddata-format.md)
 
  
 

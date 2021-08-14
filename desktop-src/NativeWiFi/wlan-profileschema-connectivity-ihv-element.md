@@ -1,7 +1,7 @@
 ---
 description: Contiene la configuración de conectividad relacionada con IHV. No está implementado actualmente.
 ms.assetid: d943e82a-8660-4df7-8f5c-42ed83f17313
-title: Elemento Connectivity (IHV)
+title: elemento connectivity (IHV)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 257addbcbd721e5930405e3954dcb348f367af93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 393a07df451c0a9e79f74f369a84bed5310d5efc6eae2186fe8da4844d3bb806
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797915"
 ---
-# <a name="connectivity-ihv-element"></a>Elemento Connectivity (IHV)
+# <a name="connectivity-ihv-element"></a>elemento connectivity (IHV)
 
-El elemento de conectividad (IHV) contiene la configuración de conectividad relacionada con IHV. No está implementado actualmente.
+El elemento connectivity (IHV) contiene la configuración de conectividad relacionada con IHV. No está implementado actualmente.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+**Windows XP con SP3 e API de LAN inalámbrica para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="connectivity"
@@ -40,20 +40,20 @@ El elemento de conectividad (IHV) contiene la configuración de conectividad rel
 </xs:element>
 ```
 
-El elemento está definido por el elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) .
+El elemento se define mediante el [**elemento IHV.**](wlan-profileschema-ihv-wlanprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

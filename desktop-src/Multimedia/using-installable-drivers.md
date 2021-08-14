@@ -1,27 +1,27 @@
 ---
-title: Usar controladores instalables
-description: Usar controladores instalables
+title: Uso de controladores instalables
+description: Uso de controladores instalables
 ms.assetid: 23680369-92f9-4558-aa95-f2f44734cece
 keywords:
-- Windows multimedia, controladores instalables
+- Windows controladores multimedia e instalables
 - multimedia, controladores instalables
-- Controladores instalables, acerca de
-- DriverProc función)
-- Controladores instalables, función DriverProc
-- Controladores instalables, ejemplos
+- controladores instalables, acerca de
+- Función DriverProc
+- controladores instalables, función DriverProc
+- controladores instalables, ejemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecd8573e017eb8bee9b8f1e6054fdd529b724335
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2316de4bce7c79ed1592b10a6e00e02bf6f4aa7a18d959ce2efe59d7c2cba254
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801195"
 ---
-# <a name="using-installable-drivers"></a>Usar controladores instalables
+# <a name="using-installable-drivers"></a>Uso de controladores instalables
 
-Puede usar controladores instalables para proporcionar a las aplicaciones o archivos dll una manera estándar de acceder a un dispositivo o un conjunto de rutinas útiles. En las secciones siguientes se muestra cómo crear un controlador instalable mediante una función [DriverProc](/windows/win32/api/mmiscapi/nc-mmiscapi-driverproc) y cómo abrir un controlador instalable y dirigirlo para llevar a cabo tareas útiles.
+Se usan controladores instalables para proporcionar a las aplicaciones o archivos DLL una manera estándar de acceder a un dispositivo o a un conjunto de rutinas útiles. En las secciones siguientes se muestra cómo crear un controlador instalable mediante una función [DriverProc](/windows/win32/api/mmiscapi/nc-mmiscapi-driverproc) y cómo abrir un controlador instalable y cómo dirigirlo para realizar tareas útiles.
 
- 
+ 
 
- 
+ 

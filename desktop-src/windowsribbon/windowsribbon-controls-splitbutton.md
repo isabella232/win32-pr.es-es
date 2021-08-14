@@ -1,46 +1,46 @@
 ---
 title: Botón de expansión
-description: El botón de expansión es un control compuesto con el que el usuario puede seleccionar un valor predeterminado enlazado a un botón primario o seleccionarlo en una lista de valores mutuamente excluyentes que se muestran en una lista desplegable enlazada a un botón secundario.
+description: El botón Dividir es un control compuesto con el que el usuario puede seleccionar un valor predeterminado enlazado a un botón principal, o seleccionar de una lista de valores mutuamente excluyentes que se muestran en una lista desplegable enlazada a un botón secundario.
 ms.assetid: 0939b3be-fa88-4864-8096-a664ab2e97b5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b78aa261eebb24404eeaf8b3fdad7f630331f58
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 9bc5d9554af8c580b5288a2f18eaef89a1d7e864bae628ebac59599f6b7f820f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105695782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202501"
 ---
 # <a name="split-button"></a>Botón de expansión
 
-El botón de expansión es un control compuesto con el que el usuario puede seleccionar un valor predeterminado enlazado a un botón primario o seleccionarlo en una lista de valores mutuamente excluyentes que se muestran en una lista desplegable enlazada a un botón secundario.
+El botón Dividir es un control compuesto con el que el usuario puede seleccionar un valor predeterminado enlazado a un botón principal, o seleccionar de una lista de valores mutuamente excluyentes que se muestran en una lista desplegable enlazada a un botón secundario.
 
 -   [Introducción](#introduction)
--   [Propiedades del botón de expansión](#split-button-properties)
+-   [Propiedades del botón Dividir](#split-button-properties)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introducción
 
-Este control es útil para exponer elementos estrechamente relacionados en los casos en los que un valor predeterminado obvio está disponible y donde los elementos individuales se pueden representar mediante una imagen, texto o ambos.
+Este control es útil para exponer elementos estrechamente relacionados en casos en los que hay un valor predeterminado obvio disponible y donde los elementos individuales se pueden representar mediante una imagen, texto o ambos.
 
-En la captura de pantalla siguiente se muestra el botón de expansión de la cinta de opciones.
+En la siguiente captura de pantalla se muestra el botón Dividir de la cinta de opciones.
 
 ![captura de pantalla de un control splitbutton en una cinta de opciones de ejemplo.](images/controls/splitbutton.png)
 
-## <a name="split-button-properties"></a>Propiedades del botón de expansión
+## <a name="split-button-properties"></a>Propiedades del botón Dividir
 
-El marco de cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el control de botón de expansión.
+El marco de la cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el control Botón de división.
 
-Normalmente, una propiedad de botón de expansión se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control a través de una llamada al método [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) . Se controla el evento de invalidación y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+Normalmente, una propiedad Split Button se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El evento de invalidación se controla y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-No se ejecuta el método de devolución de llamada [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) y la aplicación solicitó un valor de propiedad actualizado hasta que el marco de trabajo requiera la propiedad. Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
+El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación consulta un valor de propiedad actualizado, hasta que el marco requiere la propiedad . Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
 
 > [!Note]  
-> En algunos casos, una propiedad se puede recuperar a través del método [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) .
+> En algunos casos, una propiedad se puede recuperar mediante el método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-En la tabla siguiente se enumeran las claves de propiedad que están asociadas al control de botón de expansión.
+En la tabla siguiente se enumeran las claves de propiedad asociadas al control Botón de división.
 
 
 
@@ -58,10 +58,10 @@ En la tabla siguiente se enumeran las claves de propiedad que están asociadas a
 <tbody>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> y <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.<br/> Si todos los elementos secundarios están deshabilitados, el marco de trabajo establece <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> en false (0). De lo contrario, si se habilitan uno o más elementos secundarios, UI_PKEY_Enabled se establece en true (-1).
+<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br/> Si todos los elementos secundarios están deshabilitados, el marco <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> en false (0). De lo contrario, si uno o varios elementos secundarios están habilitados, UI_PKEY_Enabled se establece en true (-1).
 <blockquote>
 [!Important]<br />
-La propiedad <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> del control de botón de expansión debe invalidarse después de habilitar o deshabilitar uno o varios elementos secundarios. Esto garantiza que el marco de trabajo consulta el valor de propiedad actualizado y actualiza el estado del control de botón de expansión en la interfaz de usuario de la cinta de opciones.
+La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> del control Botón de división debe invalidarse después de habilitar o deshabilitar uno o varios elementos secundarios. Esto garantiza que el marco de trabajo consulta el valor de propiedad actualizado y actualiza el estado del control Botón de división en la interfaz de usuario de la cinta de opciones.
 </blockquote>
 <br/> <br/></td>
 </tr>
@@ -88,7 +88,7 @@ La propiedad <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_P
 
 <dl> <dt>
 
-[Biblioteca de controles de Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controles del marco de opciones](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento de marcado SplitButton**](windowsribbon-element-splitbutton.md)

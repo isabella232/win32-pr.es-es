@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se usan las funciones GetComputerName, GetUserName, GetSystemDirectory, GetWindowsDirectory y ExpandEnvironmentStrings para obtener información que describe la configuración del sistema.
+description: En el ejemplo siguiente se usan las funciones GetComputerName, GetUserName, GetSystemDirectory, GetWindowsDirectory y ExpandEnvironmentStrings para obtener información que describa la configuración del sistema.
 ms.assetid: 965bd14b-be93-4084-bce8-642f5704cef1
-title: Obtención de información del sistema
+title: Obtener Información del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 399cf2473358afed5cf870d379a147197945aedd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad25c4be03121d8139a3eeea253370bfcae20997736df109e0f116144f866ccb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764450"
 ---
-# <a name="getting-system-information"></a>Obtención de información del sistema
+# <a name="getting-system-information"></a>Obtener Información del sistema
 
-En el ejemplo siguiente se usan las funciones [**GetComputerName**](/windows/desktop/api/Winbase/nf-winbase-getcomputernamea), [**GetUserName**](/windows/desktop/api/Winbase/nf-winbase-getusernamea), [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya), [**GetWindowsDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)y [**ExpandEnvironmentStrings**](/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsa) para obtener información que describe la configuración del sistema.
+En el ejemplo siguiente se usan las funciones [**GetComputerName**](/windows/desktop/api/Winbase/nf-winbase-getcomputernamea), [**GetUserName**](/windows/desktop/api/Winbase/nf-winbase-getusernamea), [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya), [**GetWindowsDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)y [**ExpandEnvironmentStrings**](/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsa) para obtener información que describa la configuración del sistema.
 
 
 ```C++

@@ -1,5 +1,5 @@
 ---
-description: La función Extract extrae los archivos de un archivo. cab.
+description: La función Extract extrae archivos de un archivador.
 ms.assetid: c6a79d81-7adf-4b8e-a1ef-fec868f7fdbf
 title: Extraer función
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Cabinet.dll
-ms.openlocfilehash: 2e1096cdb7909f49fbcac7c32891210b25637c90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cbcb53aae008423ac56bb489d43f6fd78016a9b1f716be21390a6dfc1de00404
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162069"
 ---
 # <a name="extract-function"></a>Extraer función
 
 \[Esta función ya no se admite, por lo que no se puede garantizar su comportamiento.\]
 
-La función **Extract** extrae los archivos de un archivo. cab.
+La **función Extract** extrae archivos de un archivador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,49 +42,49 @@ HRESULT Extract(
 
 <dl> <dt>
 
-*PS* 
+*ps* 
 </dt> <dd>
 
-Puntero a una estructura de [**sesión**](session.md) que contiene información sobre la sesión actual.
+Puntero a una [**estructura SESSION**](session.md) que contiene información sobre la sesión actual.
 
 </dd> <dt>
 
 *lpCabName* 
 </dt> <dd>
 
-Puntero al nombre del archivo. cab del que se van a extraer los archivos.
+Puntero al nombre del gabinete del que se van a extraer los archivos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve **S \_ OK**; de lo contrario, devuelve un código de error.
+Si la función se realiza correctamente, devuelve **S \_ OK;** de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Cabinet.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**DeleteExtractedFiles**](deleteextractedfiles.md)
 </dt> <dt>
 
-[**Fun**](/windows/win32/api/fdi_fci_types/ns-fdi_fci_types-erf)
+[**Erf**](/windows/win32/api/fdi_fci_types/ns-fdi_fci_types-erf)
 </dt> <dt>
 
-[**SESIÓN**](session.md)
+[**Sesión**](session.md)
 </dt> </dl>
 
  

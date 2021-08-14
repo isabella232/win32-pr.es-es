@@ -3,8 +3,8 @@ title: Acerca de los aceleradores de teclado
 description: En este tema se deba a los aceleradores de teclado.
 ms.assetid: cbf7619d-289d-40c9-9a06-6ce47026d43f
 keywords:
-- Windows Interfaz de usuario,entrada de usuario
-- Windows Interfaz de usuario, aceleradores de teclado
+- Windows Interfaz de usuario,entrada del usuario
+- Windows Interfaz de usuario,aceleradores de teclado
 - entrada de usuario, aceleradores de teclado
 - captura de entrada de usuario, aceleradores de teclado
 - aceleradores de teclado
@@ -14,12 +14,12 @@ keywords:
 - tablas de aceleradores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88e97f0b4997d15d55601e571270276e7d7a3bd4
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 1b81240feb0ca21028c9d1813f4c8004e1c3bb932fe1ec8767e3719c26e7a5db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870741"
 ---
 # <a name="about-keyboard-accelerators"></a>Acerca de los aceleradores de teclado
 
@@ -35,13 +35,13 @@ En esta sección se tratan los temas siguientes.
 
 ## <a name="accelerator-tables"></a>Tablas de aceleradores
 
-Una tabla de aceleradores consta de una matriz de estructuras [**ACCEL,**](/windows/win32/api/winuser/ns-winuser-accel) cada una de las que define un acelerador individual. Cada **estructura ACCEL** incluye la siguiente información:
+Una tabla de aceleradores consta de una matriz de estructuras [**ACCEL,**](/windows/win32/api/winuser/ns-winuser-accel) cada una de las que define un acelerador individual. Cada **estructura accel** incluye la siguiente información:
 
 -   Combinación de pulsación de teclas del acelerador.
 -   Identificador del acelerador.
 -   Varias marcas. Esto incluye uno que especifica si el sistema va a proporcionar comentarios visuales resaltando el elemento de menú correspondiente, si existe, cuando se usa el acelerador.
 
-Para procesar pulsaciones de teclas de acelerador para un subproceso especificado, el desarrollador debe llamar a la función [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) en el bucle de mensajes asociado a la cola de mensajes del subproceso. La **función TranslateAccelerator supervisa** la entrada del teclado en la cola de mensajes, comprobando las combinaciones de teclas que coinciden con una entrada de la tabla de aceleradores. Cuando **TranslateAccelerator** encuentra una coincidencia, traduce la entrada de teclado (es decir, los mensajes [**WM \_ KEYUP**](/windows/desktop/inputdev/wm-keyup) y [**WM \_ KEYDOWN)**](/windows/desktop/inputdev/wm-keydown) en un mensaje [**WM \_ COMMAND**](wm-command.md) o [**WM \_ SYSCOMMAND**](wm-syscommand.md) y, a continuación, envía el mensaje al procedimiento de ventana de la ventana especificada. En la ilustración siguiente se muestra cómo se procesan los aceleradores.
+Para procesar pulsaciones de teclas de acelerador para un subproceso especificado, el desarrollador debe llamar a la función [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) en el bucle de mensajes asociado a la cola de mensajes del subproceso. La **función TranslateAccelerator supervisa** la entrada del teclado en la cola de mensajes, comprobando las combinaciones de teclas que coinciden con una entrada de la tabla de aceleradores. Cuando **TranslateAccelerator** encuentra una coincidencia, traduce la entrada de teclado (es decir, los mensajes [**\_ KEYUP**](/windows/desktop/inputdev/wm-keyup) y [**WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown) de WM) en un mensaje [**WM \_ COMMAND**](wm-command.md) o [**WM \_ SYSCOMMAND**](wm-syscommand.md) y, a continuación, envía el mensaje al procedimiento de ventana de la ventana especificada. En la ilustración siguiente se muestra cómo se procesan los aceleradores.
 
 ![modelo de procesamiento del acelerador de teclado](images/cskac-01.png)
 
@@ -77,13 +77,13 @@ Si una aplicación define un acelerador que también se define en la tabla del a
 |------------------|-------------------------------------------------------------------------------------------------------|
 | ALT+ESC          | Cambia a la siguiente aplicación.                                                                     |
 | ALT+F4           | Cierra una aplicación o una ventana.                                                                    |
-| ALT+GUIÓN       | Abre el **menú** Ventana de una ventana de documento.                                                      |
+| ALT+GUIÓN       | Abre el **menú Ventana** de una ventana de documento.                                                      |
 | ALT+PANTALLA DE IMPRESIÓN | Copia una imagen de la ventana activa en el Portapapeles.                                              |
 | ALT+Barra espaciadora     | Abre el **menú** Ventana de la ventana principal de la aplicación.                                          |
 | ALT+TAB          | Cambia a la siguiente aplicación.                                                                     |
 | CTRL+ESC         | Cambia al **menú** Inicio.                                                                       |
 | CTRL+F4          | Cierra el grupo activo o la ventana del documento.                                                           |
-| F1               | Inicia el archivo de ayuda de la aplicación, si existe uno.                                                    |
+| F1               | Inicia el archivo de ayuda de la aplicación, si existe alguno.                                                    |
 | PANTALLA DE IMPRESIÓN     | Copia una imagen en la pantalla en el Portapapeles.                                                     |
 | MAYÚS+ALT+TAB    | Cambia a la aplicación anterior. El usuario debe mantener presionada la tecla ALT+MAYÚS mientras presiona TAB. |
 
@@ -95,7 +95,7 @@ Si una aplicación define un acelerador que también se define en la tabla del a
 
 Usar un acelerador es lo mismo que elegir un elemento de menú: ambas acciones hacen que el sistema envíe un mensaje [**WM \_ COMMAND**](wm-command.md) o [**WM \_ SYSCOMMAND**](wm-syscommand.md) al procedimiento de ventana correspondiente. El **mensaje \_ WM COMMAND** incluye un identificador que el procedimiento de ventana examina para determinar el origen del mensaje. Si un acelerador generó el **mensaje \_ WM COMMAND,** el identificador es el del acelerador. De forma similar, si un elemento de menú generó el **mensaje \_ WM COMMAND,** el identificador es el del elemento de menú. Dado que un acelerador proporciona un acceso directo para elegir un comando de un menú, una aplicación normalmente asigna el mismo identificador al acelerador y al elemento de menú correspondiente.
 
-Una aplicación procesa un mensaje [**WM \_ COMMAND**](wm-command.md) del acelerador exactamente de la misma manera que el mensaje **WM COMMAND del elemento \_ de** menú correspondiente. Sin embargo, el **mensaje \_ WM COMMAND** contiene una marca que especifica si el mensaje se originó en un acelerador o un elemento de menú, en caso de que los aceleradores se deban procesar de forma diferente a sus elementos de menú correspondientes. El [**mensaje \_ SYSCOMMAND de WM**](wm-syscommand.md) no contiene esta marca.
+Una aplicación procesa un mensaje [**WM \_ COMMAND**](wm-command.md) del acelerador exactamente de la misma manera que el mensaje **WM COMMAND del elemento de \_ menú** correspondiente. Sin embargo, el mensaje **\_ WM COMMAND** contiene una marca que especifica si el mensaje se originó en un acelerador o un elemento de menú, en caso de que los aceleradores se deban procesar de forma diferente a sus elementos de menú correspondientes. El [**mensaje \_ SYSCOMMAND de WM**](wm-syscommand.md) no contiene esta marca.
 
 El identificador determina si un acelerador genera un mensaje [**\_ WM COMMAND**](wm-command.md) o WM [**\_ SYSCOMMAND.**](wm-syscommand.md) Si el identificador tiene el mismo valor que un elemento de menú en el menú Sistema, el acelerador genera un **mensaje \_ SYSCOMMAND de WM.** De lo contrario, el acelerador genera un **mensaje \_ WM COMMAND.**
 
@@ -103,14 +103,14 @@ Si un acelerador tiene el mismo identificador que un elemento de menú y el elem
 
 Cuando el usuario usa un acelerador que corresponde a un elemento de menú, el procedimiento de ventana recibe los mensajes [**WM \_ INITMENU**](wm-initmenu.md) y [**WM \_ INITMENUPOPUP**](wm-initmenupopup.md) como si el usuario hubiera seleccionado el elemento de menú. Para obtener información sobre cómo procesar estos mensajes, vea [Menús](menus.md).
 
-Un acelerador que se corresponda con un elemento de menú debe incluirse en el texto del elemento de menú.
+Un acelerador que se corresponde con un elemento de menú debe incluirse en el texto del elemento de menú.
 
 ## <a name="ui-state"></a>Estado de la interfaz de usuario
 
 Windows permite a las aplicaciones ocultar o mostrar varias características en su interfaz de usuario. Esta configuración se conoce como estado de la interfaz de usuario. El estado de la interfaz de usuario incluye la siguiente configuración:
 
 -   indicadores de foco (como rectángulos de foco en botones)
--   aceleradores de teclado (indicados por subrayados en etiquetas de control)
+-   aceleradores de teclado (indicados por subrayados en las etiquetas de control)
 
 Una ventana puede enviar mensajes para solicitar un cambio en el estado de la interfaz de usuario, puede consultar el estado de la interfaz de usuario o aplicar un determinado estado para sus ventanas secundarias. Estos mensajes son los siguientes.
 
@@ -128,9 +128,9 @@ Una ventana puede enviar mensajes para solicitar un cambio en el estado de la in
 
 De forma predeterminada, todas las ventanas secundarias de una ventana de nivel superior se crean con el mismo estado de interfaz de usuario que su elemento primario.
 
-El sistema controla el estado de la interfaz de usuario de los controles de los cuadros de diálogo. En la creación del cuadro de diálogo, el sistema inicializa el estado de la interfaz de usuario en consecuencia. Todos los controles secundarios heredan este estado. Una vez creado el cuadro de diálogo, el sistema supervisa las pulsaciones de tecla del usuario. Si la configuración del estado de la interfaz de usuario está oculta y el usuario navega con el teclado, el sistema actualiza el estado de la interfaz de usuario. Por ejemplo, si el usuario presiona la tecla Tab para mover el foco al siguiente control, el sistema llama a [**WM \_ CHANGEUISTATE**](wm-changeuistate.md) para que los indicadores de foco sean visibles. Si el usuario presiona la tecla Alt, el sistema llama a **WM \_ CHANGEUISTATE** para que los aceleradores de teclado sean visibles.
+El sistema controla el estado de la interfaz de usuario de los controles de los cuadros de diálogo. Al crear el cuadro de diálogo, el sistema inicializa el estado de la interfaz de usuario en consecuencia. Todos los controles secundarios heredan este estado. Una vez creado el cuadro de diálogo, el sistema supervisa las pulsaciones de tecla del usuario. Si la configuración del estado de la interfaz de usuario está oculta y el usuario navega con el teclado, el sistema actualiza el estado de la interfaz de usuario. Por ejemplo, si el usuario presiona la tecla Tab para mover el foco al siguiente control, el sistema llama a [**WM \_ CHANGEUISTATE**](wm-changeuistate.md) para que los indicadores de foco sean visibles. Si el usuario presiona la tecla Alt, el sistema llama a **WM \_ CHANGEUISTATE** para que los aceleradores de teclado sean visibles.
 
-Si un control admite la navegación entre los elementos de la interfaz de usuario que contiene, puede actualizar su propio estado de interfaz de usuario. El control puede llamar a [**WM \_ QUERYUISTATE para**](wm-queryuistate.md) recuperar y almacenar en caché el estado inicial de la interfaz de usuario. Cada vez que el control recibe un [**mensaje \_ UPDATEUISTATE**](wm-updateuistate.md) de WM, puede actualizar su estado de interfaz de usuario y enviar un [**mensaje \_ CHANGEUISTATE**](wm-changeuistate.md) de WM a su elemento primario. Cada ventana seguirá envíando el mensaje a su elemento primario hasta que llegue a la ventana de nivel superior. La ventana de nivel superior envía el **mensaje \_ UPDATEUISTATE** de WM a las ventanas del árbol de ventana. Si una ventana no pasa el mensaje **\_ CHANGEUISTATE** de WM, no alcanzará la ventana de nivel superior y el estado de la interfaz de usuario no se actualizará.
+Si un control admite la navegación entre los elementos de la interfaz de usuario que contiene, puede actualizar su propio estado de la interfaz de usuario. El control puede llamar a [**WM \_ QUERYUISTATE para**](wm-queryuistate.md) recuperar y almacenar en caché el estado inicial de la interfaz de usuario. Cada vez que el control recibe un [**mensaje \_ UPDATEUISTATE**](wm-updateuistate.md) de WM, puede actualizar su estado de la interfaz de usuario y enviar un mensaje [**\_ CHANGEUISTATE**](wm-changeuistate.md) de WM a su elemento primario. Cada ventana seguirá envíando el mensaje a su elemento primario hasta que llegue a la ventana de nivel superior. La ventana de nivel superior envía el **mensaje \_ UPDATEUISTATE de WM** a las ventanas del árbol de ventana. Si una ventana no pasa el mensaje **\_ CHANGEUISTATE** de WM, no alcanzará la ventana de nivel superior y el estado de la interfaz de usuario no se actualizará.
 
  
 

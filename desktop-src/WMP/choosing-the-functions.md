@@ -3,37 +3,37 @@ title: Elección de las funciones
 description: Elección de las funciones
 ms.assetid: ded3c578-5087-4e4f-bf21-2149cf72719d
 keywords:
-- Máscaras móviles de Windows Media Player, funciones para audio
+- Reproductor de Windows Media Máscaras móviles, funciones para audio
 - máscaras, funciones para audio
 - crear máscaras, funciones para audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a139dc21a7d10847a7920955988ec2b02fced0f3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 222a7a6b26b225b0c40e461833f731c477c84338c458f88074fd747c33a1e70e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119837"
 ---
 # <a name="choosing-the-functions"></a>Elección de las funciones
 
-La finalidad de esta máscara es proporcionar la funcionalidad básica para reproducir audio. Se usarán las siguientes funciones:
+El propósito de esta máscara es proporcionar funcionalidad básica para reproducir audio. Se usarán las siguientes funciones:
 
 
 
 | Función                     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PlayPause o PlayPauseStop\* | El inicio del elemento multimedia es de importancia primordial. Si va a crear una máscara para Windows Media Player 10 Mobile o posterior, debe utilizar PlayPauseStop. Si está trabajando con una versión anterior de Windows Media Player Mobile, debe usar PlayPause. Ambas funciones ofrecen la funcionalidad agregada de pausar, pero solo PlayPauseStop permite detener una difusión en directo cuando no está disponible la funcionalidad de pausa. |
-| Stop                         | Querrá agregar STOP para detener la reproducción del elemento. Si va a crear una máscara para Windows Media Player 10 Mobile o posterior, la función PlayPauseStop ya proporciona esta funcionalidad.                                                                                                                                                                                                                                          |
-| Siguientes                         | Si tiene una lista de reproducción, querrá poder elegir el elemento siguiente. Lo necesita para la navegación básica de los medios digitales.                                                                                                                                                                                                                                                                                                       |
-| Anterior                         | Aunque podría usar Next para desplazarse por la lista de reproducción hasta que llegó al principio, al agregar Prev, se facilitará que el usuario se desplace hacia atrás y hacia delante al navegar por la lista de reproducción.                                                                                                                                                                                                                                   |
-| VolumeUp o VolumeDown\*     | Querrá proporcionar al usuario la capacidad de activar o desactivar el volumen.                                                                                                                                                                                                                                                                                                                                                    |
+| PlayPause o PlayPauseStop\* | Iniciar el elemento multimedia es de gran importancia. Si va a crear una máscara para Reproductor de Windows Media 10 Mobile o posterior, debe usar PlayPauseStop. Si está trabajando con una versión anterior de Reproductor de Windows Media Mobile, debe usar PlayPause. Ambas funciones le dan la funcionalidad agregada de pausar, pero solo PlayPauseStop le permite detener una difusión en directo cuando la funcionalidad de pausa no está disponible. |
+| Stop                         | Querrá agregar Detener para dejar de reproducir el elemento. Si va a crear una máscara para Reproductor de Windows Media 10 Mobile o posterior, la función PlayPauseStop ya proporciona esta funcionalidad.                                                                                                                                                                                                                                          |
+| Siguientes                         | Si tiene una lista de reproducción, querrá poder elegir el siguiente elemento. Lo necesitará para la navegación básica de los medios digitales.                                                                                                                                                                                                                                                                                                       |
+| Anterior                         | Aunque podría usar Siguiente para recorrer la lista de reproducción hasta llegar al principio, agregar Prev facilita al usuario retroceder y avanzar al navegar por la lista de reproducción.                                                                                                                                                                                                                                   |
+| VolumeUp o VolumeDown\*     | Querrá proporcionar al usuario la capacidad de subir o bajar el volumen.                                                                                                                                                                                                                                                                                                                                                    |
 
 
 
- 
+ 
 
-\*Disponible para Windows Media Player 10 Mobile o posterior.
+\*Disponible para Reproductor de Windows Media 10 Mobile o posterior.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -42,9 +42,9 @@ La finalidad de esta máscara es proporcionar la funcionalidad básica para repr
 [**Guía de máscara**](skin-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

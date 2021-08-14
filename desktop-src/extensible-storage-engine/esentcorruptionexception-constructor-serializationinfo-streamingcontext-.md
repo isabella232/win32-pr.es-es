@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCorruptionException (SerializationInfo, StreamingContext)'
-title: Constructor EsentCorruptionException (SerializationInfo, StreamingContext)
+description: 'Más información sobre: Constructor EsentCorruptionException (SerializationInfo, StreamingContext)'
+title: EsentCorruptionException constructor (SerializationInfo, StreamingContext)
 TOCTitle: EsentCorruptionException constructor (SerializationInfo, StreamingContext)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCorruptionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcorruptionexception.esentcorruptionexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a0e80255d86ed6f953e4010541e98b794537f97a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45c967fbecf19149faedafc4a6188a14fb21ba825079c979e154dd366d0be66f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117713367"
 ---
-# <a name="esentcorruptionexception-constructor-serializationinfo-streamingcontext"></a>Constructor EsentCorruptionException (SerializationInfo, StreamingContext)
+# <a name="esentcorruptionexception-constructor-serializationinfo-streamingcontext"></a>EsentCorruptionException constructor (SerializationInfo, StreamingContext)
 
-Inicializa una nueva instancia de la clase EsentCorruptionException. Este constructor se utiliza para deserializar una excepción serializada.
+Inicializa una nueva instancia de la clase EsentCorruptionException. Este constructor se usa para deserializar una excepción serializada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,18 +59,18 @@ protected EsentCorruptionException(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Los datos necesarios para deserializar el objeto.
+    Datos necesarios para deserializar el objeto.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contexto de la deserialización.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -78,6 +78,6 @@ protected EsentCorruptionException(
 
 [Miembros de EsentCorruptionException](./esentcorruptionexception-members.md)
 
-[Sobrecarga EsentCorruptionException](./esentcorruptionexception-constructor.md)
+[Sobrecarga de EsentCorruptionException](./esentcorruptionexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

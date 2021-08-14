@@ -1,19 +1,19 @@
 ---
-description: La función ByteToStr convierte una matriz de valores de BYTE en una cadena de caracteres hexadecimales.
+description: La función ByteToStr convierte una matriz de valores BYTE en una cadena de caracteres hexadecimal.
 ms.assetid: b1320e0f-fb67-4ed8-af3c-8ca7f0145468
 title: ByteToStr
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f6a4284a9ac56db9e7d74d27206c98d4db1894d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e231756725a697d933699af970b164869a973aa9ddb8199467bb6a9941313625
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772970"
 ---
 # <a name="bytetostr"></a>ByteToStr
 
-La función **ByteToStr** convierte una matriz de valores de **byte** en una cadena de caracteres hexadecimales.
+La **función ByteToStr** convierte una matriz de valores **BYTE** en una cadena de caracteres hexadecimal.
 
 
 ```C++

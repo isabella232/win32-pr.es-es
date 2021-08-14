@@ -1,54 +1,54 @@
 ---
-description: Tareas generales necesarias para descodificar un mensaje con doble cifrado.
+description: Tareas generales necesarias para descodificar un mensaje sobres.
 ms.assetid: cb71ea3a-0edd-4d46-8088-a395fab89d2b
-title: Descodificar datos con doble cifrado
+title: Decoding Enveloped Data
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc1a0ba12e967f5a0cd56347c0839ce9fca40f02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99df9df80b2a4bc1e3c9d6894bc83624908468edb63f7d0283ee3dca1b50a147
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104550422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767819"
 ---
-# <a name="decoding-enveloped-data"></a>Descodificar datos con doble cifrado
+# <a name="decoding-enveloped-data"></a>Decoding Enveloped Data
 
-Las tareas generales necesarias para descodificar un mensaje con doble cifrado se muestran en la siguiente ilustración y se describen en la lista que lo sigue.
+Las tareas generales necesarias para descodificar un mensaje con sobres se muestran en la ilustración siguiente y se describen en la lista que sigue a él.
 
-![descodificar datos con doble cifrado](images/decemsg.png)
+![decoding envelopeding data](images/decemsg.png)
 
-La secuencia de eventos para descodificar los datos con sobres mediante la administración de claves de transporte de claves, como se describe en la ilustración anterior, es la siguiente:
+La secuencia de eventos para la decodificación de datos sobreados mediante la administración de claves de transporte de claves, como se muestra en la ilustración anterior, es la siguiente:
 
--   Se recupera un puntero al mensaje con [*doble cifrado*](../secgloss/d-gly.md) .
--   Se abre un [*almacén de certificados*](../secgloss/c-gly.md) .
--   En el mensaje, se recupera el identificador del destinatario (My ID).
+-   Se recupera un [*puntero*](../secgloss/d-gly.md) al mensaje con sobre digital.
+-   Se [*abre un almacén de*](../secgloss/c-gly.md) certificados.
+-   En el mensaje, se recupera el identificador de destinatario (Mi identificador).
 -   El identificador de destinatario se usa para recuperar el certificado.
--   Se recupera la [*clave privada*](../secgloss/p-gly.md) asociada a ese certificado.
--   La clave privada se usa para descifrar la clave [*simétrica*](../secgloss/s-gly.md) ([*sesión*](../secgloss/s-gly.md)).
+-   Se [*recupera la clave*](../secgloss/p-gly.md) privada asociada a ese certificado.
+-   La clave privada se usa para descifrar la [*clave simétrica*](../secgloss/s-gly.md) [*(sesión).*](../secgloss/s-gly.md)
 -   El algoritmo de cifrado se recupera del mensaje.
 -   Con la clave privada y el algoritmo de cifrado, se descifran los datos.
 
-En el procedimiento siguiente se usan funciones de mensaje de bajo nivel para realizar las tareas que se acaban de mostrar.
+En el procedimiento siguiente se usan funciones de mensaje de bajo nivel para realizar las tareas que acaba de enumerar.
 
-**Para descodificar un mensaje con doble cifrado**
+**Para descodificar un mensaje con sobre**
 
-1.  Obtiene un puntero al objeto binario codificado.
-2.  Llame a [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode), pasando los argumentos necesarios.
-3.  Llame a [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) una vez, pasando el identificador recuperado en el paso 2 y un puntero a los datos que se van a descodificar. Esto hace que se realicen las acciones adecuadas en el mensaje, en función del tipo de mensaje.
-4.  Llame a [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), pasando el identificador recuperado en el paso 2 y el \_ \_ parámetro de tipo CMSG para comprobar que el mensaje es del tipo de datos con doble cifrado.
-5.  Vuelva a llamar a [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), pasando \_ CMSG \_ parámetro de tipo de contenido interno \_ \_ para obtener el tipo de datos del [*contenido interno*](../secgloss/i-gly.md).
-6.  Si el tipo de datos de contenido interno son **datos**, continúe para descifrar y descodificar el contenido. De lo contrario, ejecute un procedimiento de descodificación apropiado para el tipo de datos de contenido.
-7.  Suponiendo que el tipo de contenido interno sea "Data", inicialice [**CMSG \_ Ctrl \_ descrypt \_ para**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_ctrl_decrypt_para) la estructura de datos y llame a [**CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol), pasando el \_ \_ descifrado de CMSG Ctrl y la dirección de la estructura. El contenido se descifrará.
-8.  Llame a [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), pasando \_ el parámetro de contenido CMSG \_ para obtener un puntero al objeto binario de datos de contenido descodificado (cadena de **bytes** ).
-9.  Llame a [**CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose) para cerrar el mensaje.
+1.  Obtenga un puntero al BLOB codificado.
+2.  Llame [**a CryptMsgOpenToDecode y**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode)pase los argumentos necesarios.
+3.  Llame [**a CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) una vez, pasando el identificador recuperado en el paso 2 y un puntero a los datos que se descodificarán. Esto hace que se tome las acciones adecuadas en el mensaje, en función del tipo de mensaje.
+4.  Llame [**a CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), pasando el identificador recuperado en el paso 2 y CMSG TYPE PARAM para comprobar que el mensaje es del tipo de datos con \_ \_ sobres.
+5.  Llame de [**nuevo a CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), pasando CMSG \_ INNER CONTENT TYPE \_ \_ \_ PARAM [](../secgloss/i-gly.md)para obtener el tipo de datos del contenido interno .
+6.  Si el tipo de datos de contenido interno **es de datos**, continúe para descifrar y descodificar el contenido. De lo contrario, ejecute un procedimiento de decoding adecuado para el tipo de datos de contenido.
+7.  Suponiendo que el tipo de contenido interno es "data", inicialice la estructura de datos [**CMSG \_ CTRL \_ DECRYPT \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_ctrl_decrypt_para) y llame a [**CryptMsgControl,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol)pasando CMSG CTRL DECRYPT y la dirección de la \_ \_ estructura. El contenido se descifrará.
+8.  Llame a [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam)y pase CMSG CONTENT PARAM para obtener un puntero al blob de datos de contenido descodificado \_ \_ **(cadena BYTE).**
+9.  Llame [**a CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose) para cerrar el mensaje.
 
-El resultado de este procedimiento es que el mensaje se descodifica y se descifra y se recupera un puntero al BLOB de datos de contenido.
+El resultado de este procedimiento es que el mensaje se descodifica y descifra y se recupera un puntero al blob de datos de contenido.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Programa C de ejemplo: codificar un mensaje con signo de cifrado](example-c-program-encoding-an-enveloped-signed-message.md)
+[Programa C de ejemplo: Codificación de un mensaje con sobres con firma](example-c-program-encoding-an-enveloped-signed-message.md)
 </dt> </dl>
 
  

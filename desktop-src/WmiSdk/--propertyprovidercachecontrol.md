@@ -2,7 +2,7 @@
 description: Controla la memoria caché cuando se descarga un proveedor de propiedades.
 ms.assetid: 8fc7de7a-889c-4d53-97ea-a676879de1d3
 ms.tgt_platform: multiple
-title: __PropertyProviderCacheControl (clase)
+title: __PropertyProviderCacheControl clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 1d153049a9635b4b77a1ad09ca0ee64835b9bcfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33edad107859328e9a81a6c77c3c02e29e2ee3aebbbe411ee20fb438e51517a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118110543"
 ---
 # <a name="__propertyprovidercachecontrol-class"></a>\_\_Clase PropertyProviderCacheControl
 
-La clase **\_ \_ PropertyProviderCacheControl** controla la memoria caché cuando se descarga un proveedor de propiedades. Esta clase solo existe en el \\ espacio de nombres raíz.
+La **\_ \_ clase PropertyProviderCacheControl controla** la memoria caché cuando se descarga un proveedor de propiedades. Esta clase solo existe en el espacio \\ de nombres raíz.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -39,38 +39,38 @@ class __PropertyProviderCacheControl
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ PropertyProviderCacheControl** tiene estos tipos de miembros:
+La **\_ \_ clase PropertyProviderCacheControl** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ PropertyProviderCacheControl** tiene estas propiedades.
+La **\_ \_ clase PropertyProviderCacheControl** tiene estas propiedades.
 
 <dl> <dt>
 
 **ClearAfter**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Intervalo de tiempo después de que WMI libera un proveedor de propiedades. La hora está en el formato de intervalo.
+Intervalo de tiempo después de que WMI libere un proveedor de propiedades. La hora está en formato de intervalo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **\_ \_ PropertyProviderCacheControl** se deriva de [**\_ \_ CacheControl**](--cachecontrol.md). Para obtener más información, vea [descargar un proveedor](unloading-a-provider.md).
+La **\_ \_ clase PropertyProviderCacheControl** se deriva de [**\_ \_ CacheControl**](--cachecontrol.md). Para obtener más información, [vea Descargar un proveedor](unloading-a-provider.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -78,7 +78,7 @@ La clase **\_ \_ PropertyProviderCacheControl** se deriva de [**\_ \_ CacheContr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

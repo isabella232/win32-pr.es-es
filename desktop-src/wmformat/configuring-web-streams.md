@@ -1,61 +1,61 @@
 ---
-title: Configuración de secuencias Web
-description: Configuración de secuencias Web
+title: Configuración de web Secuencias
+description: Configuración de web Secuencias
 ms.assetid: 1eeb6243-5095-4dba-994c-2083beda7b78
 keywords:
-- flujos, configurar secuencias Web
-- códecs, configurar secuencias Web
-- Flujos web, configurar
+- streams,configuring Web streams
+- codecs,configuring Web streams
+- Flujos web, configuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27c91c36788b858b2378ebf46b553f076c5ec490
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a8df1ced96a772a26b674fb47a30a8664d6431ff946328f45467554857b1ee4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199126"
 ---
-# <a name="configuring-web-streams"></a>Configuración de secuencias Web
+# <a name="configuring-web-streams"></a>Configuración de web Secuencias
 
-Las secuencias web son un tipo especializado de flujo de transferencia de archivos que se usa para proporcionar los archivos asociados a un sitio web en un único flujo. La configuración de la secuencia Web se resume en la tabla siguiente.
+Las secuencias web son un tipo especializado de flujo de transferencia de archivos que se usa para entregar los archivos asociados a un sitio web en una sola secuencia. La configuración del flujo web se resume en la tabla siguiente.
 
 
 
 | Configuración                                            | Descripción                                                                       |
 |----------------------------------------------------|-----------------------------------------------------------------------------------|
-| **Tipo de medio de WM \_ \_ . majortype**                      | Establézcalo en WMMEDIATYPE \_ FileTransfer.                                                 |
-| **Tipo de medio de WM \_ \_ . SubType**                        | Establezca en WMMEDIASUBTYPE \_ Webstream.                                                 |
-| **Tipo de medio de WM \_ \_ . bFixedSizeSamples**              | Establézcalo en false.                                                                     |
-| **Tipo de medio de WM \_ \_ . bTemporalCompression**           | Se establece en True.                                                                      |
-| **Tipo de medio de WM \_ \_ . lSampleSize**                    | Establecer en 0.                                                                         |
-| **Tipo de medio de WM \_ \_ . FormatType**                     | Establezca en WMFORMAT \_ Webstream.                                                       |
-| **Tipo de medio de WM \_ \_ . pUnk**                           | Se establece en **null**.                                                                  |
-| **Tipo de medio de WM \_ \_ . cbFormat**                       | Establézcalo en `sizeof(WMT_WEBSTREAM_FORMAT)`.                                            |
-| **Tipo de medio de WM \_ \_ . pbFormat**                       | Se establece en la dirección de una estructura **de \_ \_ formato de Webstream WMT** configurada correctamente. |
-| **\_Formato WEBstream de WMT \_ . cbSampleHeaderFixedData** | Establézcalo en `sizeof(WMT_WEBSTREAM_SAMPLE_HEADER)`.                                     |
-| **\_Formato WEBstream de WMT \_ . wVersion**                | establézcalo en 1.                                                                         |
-| **\_Formato WEBstream de WMT \_ . wreserved**               | Establecer en 0.                                                                         |
+| **WM \_ MEDIA \_ TYPE.majortype**                      | Se establece en WMMEDIATYPE \_ FileTransfer.                                                 |
+| **WM \_ MEDIA \_ TYPE.subtype**                        | Se establece en WMMEDIASUBTYPE \_ WebStream.                                                 |
+| **WM \_ MEDIA \_ TYPE.bFixedSizeSamples**              | Establezca en False.                                                                     |
+| **WM \_ MEDIA \_ TYPE.bComposiciónCompression**           | Establezca en True.                                                                      |
+| **WM \_ MEDIA \_ TYPE.lSampleSize**                    | Establecer en 0.                                                                         |
+| **WM \_ MEDIA \_ TYPE.formattype**                     | Establezca en WMFORMAT \_ WebStream.                                                       |
+| **WM \_ MEDIA \_ TYPE.pUnk**                           | Se establece en **NULL.**                                                                  |
+| **WM \_ MEDIA \_ TYPE.cbFormat**                       | Establézcalo en `sizeof(WMT_WEBSTREAM_FORMAT)`.                                            |
+| **WM \_ MEDIA \_ TYPE.pbFormat**                       | Se establece en la dirección de una estructura **DE FORMATO DE WMT \_ WEBSTREAM \_ configurada** correctamente. |
+| **WMT \_ WEBSTREAM \_ FORMAT.cbSampleHeaderFixedData** | Establézcalo en `sizeof(WMT_WEBSTREAM_SAMPLE_HEADER)`.                                     |
+| **WMT \_ WEBSTREAM \_ FORMAT.wVersion**                | establézcalo en 1.                                                                         |
+| **WMT \_ WEBSTREAM \_ FORMAT.wreserved**               | Establecer en 0.                                                                         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Configuración común para todos los flujos**](configuration-common-to-all-streams.md)
+[**Configuración común a todas las Secuencias**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
-[**Configuración de tipos de flujo arbitrarios**](configuring-arbitrary-stream-types.md)
+[**Configuración de tipos de secuencia arbitrarios**](configuring-arbitrary-stream-types.md)
 </dt> <dt>
 
-[**Secuencias Web**](web-streams.md)
+[**Web Secuencias**](web-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

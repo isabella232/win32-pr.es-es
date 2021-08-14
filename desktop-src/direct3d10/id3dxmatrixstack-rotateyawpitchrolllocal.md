@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 726a6d7092b95f53d17625f68884b92d347de3a6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 840e51c420d3c5241edc410233b03dd948c408dda7e81a1aba6d104066cd6fe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118301698"
 ---
 # <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h)
 
@@ -56,7 +56,7 @@ La yaw alrededor del eje Y en radianes.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-El tono alrededor del eje X en radianes.
+El paso alrededor del eje X en radianes.
 
 </dd> <dt>
 

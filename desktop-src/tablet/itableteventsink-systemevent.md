@@ -1,7 +1,7 @@
 ---
 description: Se produce cuando hay un evento del sistema disponible.
 ms.assetid: 3d9e98f0-b11e-4a65-a544-9e1998a80d5f
-title: 'ITabletEventSink:: SystemEvent (método)'
+title: ITabletEventSink::SystemEvent (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 71b5882fd9e19df43581e00cce55c2af5faa432b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d2e636b5e0b70d13ae33850518e744fbc9425bd65c20002a89b6d38e56dbc50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118041751"
 ---
-# <a name="itableteventsinksystemevent-method"></a>ITabletEventSink:: SystemEvent (método)
+# <a name="itableteventsinksystemevent-method"></a>ITabletEventSink::SystemEvent (método)
 
 Se produce cuando hay un evento del sistema disponible.
 
@@ -43,28 +43,28 @@ HRESULT SystemEvent(
 
 <dl> <dt>
 
-*TCID* \[ de\]
+*tcid* \[ En\]
 </dt> <dd>
 
-El identificador de la tableta.
+Identificador de la tableta.
 
 </dd> <dt>
 
-*CID* \[ en\]
+*cid* \[ en\]
 </dt> <dd>
 
 Identificador del lápiz óptico.
 
 </dd> <dt>
 
-*evento* \[ de de\]
+*evento* \[ En\]
 </dt> <dd>
 
 Código de evento del sistema.
 
 </dd> <dt>
 
-*EventData* \[ de\]
+*eventdata* \[ En\]
 </dt> <dd>
 
 Datos de eventos del sistema.
@@ -79,49 +79,49 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La lista siguiente contiene los valores válidos para el parámetro de evento.
 
--   SE \_ TAP
--   SE \_ \_ TAP doble
--   SE \_ \_ TAP derecho
--   SE ha \_ arrastrado
--   SE \_ arrastra a la derecha \_
--   SE \_ mantiene presionado \_ entrar
--   SE \_ mantiene presionado \_
--   SE \_ mantiene el mouse \_ Enter
--   mantener el \_ mouse en \_ salir
--   SE \_ hace clic con el botón \_
--   \_tecla se
--   \_tecla modificador \_ se
--   \_modo de gestos de se \_
--   \_cursor se
+-   \_SE Grifo
+-   \_SE DBL \_ TAP
+-   \_SE PULSAR \_ CON EL BOTÓN DERECHO
+-   \_SE Arrastre
+-   \_SE ARRASTRAR \_ A LA DERECHA
+-   \_SE MANTENER \_ PRESIONADA LA TECLA ENTRAR
+-   \_SE HOLD \_ LEAVE
+-   \_SE MANTENER EL \_ PUNTERO SOBRE ENTRAR
+-   \_SE MANTENER EL \_ MOUSE SOBRE SALIR
+-   \_SE MIDDLE \_ CLICK
+-   \_SE Clave
+-   \_SE TECLA \_ MODIFICADORA
+-   \_SE MODO \_ GESTO
+-   \_SE Cursor
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz ITabletEventSink**](itableteventsink.md)
+[**ITabletEventSink (interfaz)**](itableteventsink.md)
 </dt> </dl>
 
  

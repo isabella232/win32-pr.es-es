@@ -3,51 +3,51 @@ title: Elemento ITEM
 description: Elemento ITEM
 ms.assetid: e9791009-67d0-46f3-a69a-2520eaea21cd
 keywords:
-- Aspectos de Windows Media Player, elemento ITEM
-- Skins, elemento ITEM
+- Reproductor de Windows Media máscaras,elemento ITEM
+- skins,ITEM, elemento
 - Elemento ITEM
-- referencia de las máscaras, elemento ITEM
-- elementos, elemento
+- referencia de máscaras,elemento ITEM
+- elements,ITEM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91e9e692685dc41d17284611181d49de50bf4e32
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4e9f03d7ae7946e65c7535e504bb27d6de6fe46f9a96220f3285768e76360055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119324"
 ---
 # <a name="item-element"></a>Elemento ITEM
 
-El elemento **Item** representa un elemento de un cuadro de lista o de controles emergentes. Los elementos **Item** siempre son elementos secundarios de elementos **ListBox** o **popup** .
+El **elemento ITEM** representa un elemento en un cuadro de lista o controles emergentes. **Los elementos ITEM** siempre son elementos secundarios **de los elementos LISTBOX** **o POPUP.**
 
-El elemento **Item** admite los siguientes atributos.
+El **elemento ITEM** admite los atributos siguientes.
 
 
 
 | Atributo               | Descripción                                                                  |
 |-------------------------|------------------------------------------------------------------------------|
-| [value](item-value.md) | Especifica o recupera el texto que se muestra para un cuadro de lista o un elemento emergente. |
+| [value](item-value.md) | Especifica o recupera el texto que se muestra para un cuadro de lista o elemento emergente. |
 
 
 
- 
+ 
 
 > [!Note]  
-> Este elemento requiere Windows Media Player para Windows XP o posterior.
+> Este elemento requiere Reproductor de Windows Media para Windows XP o posterior.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de programación de máscara**](skin-programming-reference.md)
+[**Referencia de programación de máscaras**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

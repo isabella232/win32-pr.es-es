@@ -1,39 +1,39 @@
 ---
-description: Los usuarios de Windows pueden guardar las búsquedas como una carpeta de búsqueda generada por un archivo XML que almacena la consulta en un formulario que puede usar el subsistema de búsqueda de Windows.
+description: Windows usuarios pueden guardar las búsquedas como una carpeta de búsqueda generada por un archivo XML que almacena la consulta en un formulario que el subsistema de búsqueda Windows búsqueda.
 ms.assetid: 1c73e220-a999-4243-879c-ac7310151def
 title: Formato de archivo de búsqueda guardado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d19cf936f78b045814bf7cba31a123c40d61927a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 614eb357a82d2c70e068a9fa5258974423d755c48e779d5f5fe8be184a864d9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863728"
 ---
 # <a name="saved-search-file-format"></a>Formato de archivo de búsqueda guardado
 
-En Windows Vista y versiones posteriores, los usuarios pueden guardar las búsquedas como una carpeta de búsqueda generada por un archivo XML que almacena la consulta en un formulario que puede usar el subsistema de búsqueda de Windows. En este tema se describe el formato de archivo ( \* . Search-MS) e incluye las siguientes secciones:
+En Windows Vista y versiones posteriores, los usuarios pueden guardar búsquedas como una carpeta de búsqueda generada por un archivo XML que almacena la consulta en un formulario que puede usar el subsistema de búsqueda Windows búsqueda. En este tema se describe el formato de archivo \* (.search-ms) e incluye las secciones siguientes:
 
 - [Información general de las búsquedas guardadas](#overview-of-saved-searches)
 - [Elemento \<viewInfo>](/windows)
-  - [\<viewInfo> Sus](/windows)
+  - [\<viewInfo> Atributos](/windows)
   - [\<viewInfo> Elementos secundarios](/windows)
 - [Elemento \<query>](/windows)
   - [\<query> Elementos secundarios](/windows)
 - [Elemento \<properties>](/windows)
-- [Especificación completa del formato de archivo de MS Search](#full-specification-of-the-search-ms-file-format)
+- [Especificación completa del formato de archivo search-ms](#full-specification-of-the-search-ms-file-format)
 - [Ejemplos de búsquedas guardadas](#examples-of-saved-searches)
 
 ## <a name="overview-of-saved-searches"></a>Información general de las búsquedas guardadas
 
-Los usuarios pueden guardar una consulta de búsqueda como una carpeta de búsqueda, una carpeta virtual que se muestra en el explorador de Windows en la carpeta búsquedas. Al abrir una carpeta de búsqueda se ejecuta la búsqueda guardada y se muestran los resultados actualizados. El archivo de búsqueda guardado almacena la consulta en un formato en el que Windows Search puede actuar, especificando qué buscar, dónde buscar y cómo presentar los resultados.
+Los usuarios pueden guardar una consulta de búsqueda como una carpeta de búsqueda, una carpeta virtual que se muestra en Windows Explorer en la carpeta Búsquedas. Al abrir una carpeta de búsqueda, se ejecuta la búsqueda guardada y se muestran los resultados actualizados. El archivo de búsqueda guardado almacena la consulta en un formato en el que Windows search puede actuar, especificando qué buscar, dónde buscar y cómo presentar los resultados.
 
-La búsqueda guardada se genera a partir de un archivo XML ( \* . Search-MS) en la carpeta% userprofile% \\ búsquedas. Los datos se dividen en tres elementos principales en el archivo XML:
+La búsqueda guardada se genera a partir de un archivo XML \* (.search-ms) en la carpeta %userprofile% \\ Searches. Los datos se dividen en tres elementos principales del archivo XML:
 
-- \<viewInfo> Especifica la información de presentación
-- \<query> especifica (buscar información de consulta
-- \<properties> especifica las propiedades del \* propio archivo. Search-MS
+- \<viewInfo> especifica información de presentación
+- \<query> especifica (información de consulta de búsqueda)
+- \<properties> especifica las propiedades del \* propio archivo .search-ms.
 
 En el ejemplo siguiente se muestra la estructura de alto nivel de un archivo de búsqueda guardado.
 
@@ -58,7 +58,7 @@ En el ejemplo siguiente se muestra la estructura de alto nivel de un archivo de 
 
 ## <a name="viewinfo-element"></a>\<viewInfo> (Elemento)
 
-El \<viewInfo> elemento especifica cómo se presentan los resultados al usuario final. En el ejemplo siguiente se muestra la estructura del elemento.
+El \<viewInfo> elemento especifica cómo se presentan los resultados al usuario final. En el ejemplo siguiente se muestra la estructura del elemento .
 
 ```XML
 ...
@@ -97,14 +97,14 @@ El \<viewInfo> elemento especifica cómo se presentan los resultados al usuario 
 ...
 ```
 
-### <a name="viewinfo-attributes"></a>\<viewInfo> Sus
+### <a name="viewinfo-attributes"></a>\<viewInfo> Atributos
 
 En la tabla siguiente se describen los atributos del elemento \<viewInfo>:
 
 | Atributo     | Descripción                                                                     | Valores                     |
 |---------------|---------------------------------------------------------------------------------|----------------------------|
-| viewMode      | Especifica la vista de la carpeta.                                                      | \|Iconos de iconos de detalles \|  |
-| iconSize      | Controla el tamaño predeterminado de los iconos y las miniaturas de los elementos cuando no están apilados. | Entero entre 16 y 256 |
+| Viewmode      | Especifica la vista de carpeta.                                                      | Iconos de \| detalles Iconos \|  |
+| iconSize      | Controla el tamaño predeterminado de los iconos y miniaturas de los elementos cuando no se apilan. | Entero entre 16 y 256 |
 | stackIconSize | Solo para uso interno. No debe usarse.                                              | N/D                        |
 | DisplayName   | Solo para uso interno. No debe usarse.                                              | N/D                        |
 | autoListFlags | Solo para uso interno. No debe usarse.                                              | N/D                        |
@@ -113,20 +113,20 @@ En la tabla siguiente se describen los atributos del elemento \<viewInfo>:
 
 ### <a name="viewinfo-child-elements"></a>\<viewInfo> Elementos secundarios
 
-Los elementos secundarios del \<viewInfo> elemento especifican qué columnas aparecen en los resultados de búsqueda del explorador de Windows y cómo se agrupan y ordenan los resultados. Cada elemento secundario contiene un conjunto ordenado de columnas, identificado por nombres canónicos de propiedades del sistema (por ejemplo, System. DisplayName). Si no se define en el archivo de búsqueda guardado, los resultados de la búsqueda se presentan con un conjunto predeterminado de columnas adecuado para los tipos de archivo mostrados.
+Los elementos secundarios del elemento especifican qué columnas aparecen en los resultados de búsqueda del Explorador de Windows y cómo se agrupan \<viewInfo> y ordenan los resultados. Cada elemento secundario contiene un conjunto ordenado de columnas, identificado por nombres canónicos de propiedades del sistema (por ejemplo, System.DisplayName). Si no se definen en el archivo de búsqueda guardado, los resultados de la búsqueda se presentan con un conjunto predeterminado de columnas adecuado para los tipos de archivo mostrados.
 
 | Elemento               | Descripción                                                                                        | Valores                                                       |
 |-----------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| visibleColumns        | Especifica una lista ordenada de columnas para que aparezca en la vista de resultados. El usuario puede cambiar esta lista. | Cualquier propiedad del sistema.                                         |
+| visibleColumns        | Especifica una lista ordenada de columnas que aparecen en la vista de resultados. El usuario puede cambiar esta lista. | Cualquier propiedad del sistema.                                         |
 | frequentlyUsedColumns | Solo para uso interno. No debe usarse.                                                                 | N/D                                                          |
 | columnChooserColumns  | Solo para uso interno. No debe usarse.                                                                 | N/D                                                          |
-| groupBy               | Especifica una única propiedad del sistema por la que se van a agrupar los resultados. El usuario puede cambiar este valor.  | Cualquier propiedad del sistema.                                         |
+| Groupby               | Especifica una única propiedad del sistema por la que se agrupan los resultados. El usuario puede cambiar este valor.  | Cualquier propiedad del sistema.                                         |
 | sortList              | Especifica una lista ordenada de columnas por las que ordenar los resultados.                                       | Hasta cuatro propiedades del sistema. El usuario puede cambiar esta lista. |
 | stackList             | Solo para uso interno. No debe usarse.                                                                 | N/D                                                          |
 
 ## <a name="query-element"></a>\<query> (Elemento)
 
-El \<query> elemento especifica los atributos que definen cómo se consultan los resultados. En el ejemplo siguiente se muestra la estructura del elemento.
+El elemento especifica los atributos que definen cómo se consultan \<query> los resultados. En el ejemplo siguiente se muestra la estructura del elemento .
 
 ```XML
 ...
@@ -166,19 +166,19 @@ El \<query> elemento especifica los atributos que definen cómo se consultan los
 
 En la siguiente tabla se describen los elementos secundarios del elemento \<scope>.
 
-| Elemento    | Descripción                                                                                                               | Value                                                                                                                                                                                                                                                          |
+| Elemento    | Descripción                                                                                                               | Valor                                                                                                                                                                                                                                                          |
 |------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | providers  | Solo para uso interno. No debe usarse.                                                                                        | N/D                                                                                                                                                                                                                                                            |
 | Subconsultas | Solo para uso interno. No debe usarse.                                                                                        | N/D                                                                                                                                                                                                                                                            |
-| Ámbito      | Identifica las ubicaciones que se van a incluir o excluir en la búsqueda.                                                                 | Una ruta de acceso o un [identificador de carpeta conocido](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid) de la ubicación que se va a incluir o excluir. Este elemento también puede especificar si la búsqueda debe incluir o excluir las rutas de acceso secundarias (búsqueda superficial o profunda). |
-| kindList   | Identifica el tipo de archivos que se van a buscar.                                                                             | Cualquier valor System. Kind.                                                                                                                                                                                                                                         |
-| condiciones | Especifica reglas para filtrar los resultados. Por ejemplo, los resultados se pueden limitar a los mensajes de correo electrónico enviados por o a una persona determinada. | andCondition, orCondition, notCondition, leafCondition.                                                                                                                                                                                                        |
+| Ámbito      | Identifica las ubicaciones que se incluirán o excluirán en la búsqueda.                                                                 | Una ruta de acceso o [un identificador de carpeta conocido](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid) de la ubicación que se va a incluir o excluir. Este elemento también puede especificar si la búsqueda debe incluir o excluir rutas de acceso secundarias (una búsqueda superficial o profunda). |
+| kindList   | Identifica el tipo de archivo que se va a buscar.                                                                             | Cualquier valor System.Kind.                                                                                                                                                                                                                                         |
+| condiciones | Especifica reglas para filtrar los resultados. Por ejemplo, los resultados podrían limitarse a los correos electrónicos enviados por o a una persona determinada. | andCondition, orCondition, notCondition, leafCondition.                                                                                                                                                                                                        |
 
 ### <a name="scope-element"></a>\<scope> (Elemento)
 
-El \<scope> elemento identifica las ubicaciones que se van a incluir o excluir de la búsqueda. El \<scope> elemento debe contener al menos un \<include> elemento secundario presente y cero o más \<exclude> elementos. Las ubicaciones se pueden especificar como una ruta de acceso (se admiten las variables de entorno) o como un [identificador de carpeta conocido](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid). Además, se puede especificar que cada una de estas ubicaciones se busque en profundidad o superficial estableciendo no recursiva en "true" o "false" (el valor predeterminado es Recursive). Las partes de la lista de ubicaciones incluidas se pueden excluir especificando elementos exclude.
+El \<scope> elemento identifica las ubicaciones que se incluirán o excluirán de la búsqueda. El \<scope> elemento debe contener al menos un elemento secundario presente y cero o más \<include> \<exclude> elementos. Las ubicaciones se pueden especificar como una ruta de acceso (se admiten variables de entorno) o como un [identificador de carpeta conocido.](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid) Además, se puede especificar que cada una de estas ubicaciones se busque en profundidad o superficial estableciendo nonRecursive en "true" o "false" (el valor predeterminado es recursivo). Las partes de la lista de ubicaciones incluidas se pueden excluir especificando elementos exclude.
 
-A continuación se muestra un \<scope> elemento que buscará en la carpeta especial documentos, pero no en sus elementos secundarios, el volumen "e:" y sus elementos secundarios, pero no el directorio "e: \\ Windows" ni ninguno de sus elementos secundarios:
+A continuación se muestra un elemento que buscará la carpeta especial de documentos, pero no sus elementos secundarios, el volumen "E:" y sus elementos secundarios, pero no el directorio "E: windows" ni ninguno de sus elementos \<scope> \\ secundarios:
 
 ```XML
 ...
@@ -196,7 +196,7 @@ A continuación se muestra un \<scope> elemento que buscará en la carpeta espec
 
 ### <a name="kindlist-element"></a>\<kindList> (Elemento)
 
-Estos elementos definen la Unión del "tipo" de los elementos que deben aparecer en la biblioteca. Los valores válidos son:
+Estos elementos definen la unión del "tipo" de elementos que deben aparecer en la biblioteca. Los valores válidos son:
 
 - calendario
 - communication
@@ -205,11 +205,11 @@ Estos elementos definen la Unión del "tipo" de los elementos que deben aparecer
 - email
 - feed
 - folder
-- fin
+- Juego
 - instantmessage
-- diario
+- Diario
 - link
-- ésta
+- Película
 - music
 - nota
 - picture
@@ -218,15 +218,15 @@ Estos elementos definen la Unión del "tipo" de los elementos que deben aparecer
 - searchfolder
 - task
 - video
-- Historial de webhistory
+- webhistory
 - item
 - Otros
 
 ### <a name="conditions-element"></a>\<conditions> (Elemento)
 
-Las condiciones son filtros en los que se comparan los resultados de la búsqueda. Por ejemplo, puede filtrar los resultados que cumplen ciertos criterios, como el nombre del autor o el tamaño del archivo. El conjunto de condiciones se integra en un único árbol de condición con ramas AND y NOT lógicas.
+Las condiciones son filtros con los que se comparan los resultados de la búsqueda. Por ejemplo, puede filtrar los resultados que cumplan determinados criterios, como el nombre del autor o el tamaño del archivo. El conjunto de condiciones se basa en un único árbol de condiciones con bifurcaciones AND, OR y NOT lógicas.
 
-En el ejemplo siguiente se muestra la estructura del \<condition> elemento.
+En el ejemplo siguiente se muestra la estructura del \<condition> elemento .
 
 ```XML
 ...
@@ -247,16 +247,16 @@ El tipo de condición puede ser uno de los siguientes:
 
 | Tipo          | Descripción                                 | Atributos disponibles                               |
 |---------------|---------------------------------------------|----------------------------------------------------|
-| andCondition  | Conjunción de dos o más condiciones secundarias | N/D                                                |
-| orCondition   | Disyunción de dos de las condiciones secundarias | N/D                                                |
+| yCondition  | Conjunción de dos o más condiciones secundarias | N/D                                                |
+| orCondition   | Disyunción de dos condiciones secundarias más | N/D                                                |
 | notCondition  | Negación de una condición secundaria               | N/D                                                |
-| leafCondition | Compara una propiedad con el valor                | Property, propertyType, Operator, Value, ValueType |
+| leafCondition | Compara una propiedad con un valor                | property, propertyType, operator, value, valuetype |
 
 Los \<leafCondition> atributos del elemento identifican las propiedades y los valores con los que se filtran los resultados.
 
-### <a name="example-conditions-element"></a>Ejemplo: \<conditions> elemento
+### <a name="example-conditions-element"></a>Ejemplo: \<conditions> Elemento
 
-En el ejemplo siguiente se filtran los resultados de todos los elementos no leídos creados por John. Es decir, la propiedad System. IsRead es false y la cadena "John" aparece en las propiedades System. Author o System. ItemAuthors.
+En el ejemplo siguiente se filtran los resultados de todos los elementos no leídos creados por John. Es decir, la propiedad System.IsRead es false y la cadena "john" aparece en las propiedades System.Author o System.ItemAuthors.
 
 ```XML
 ...
@@ -299,11 +299,11 @@ En el ejemplo siguiente se filtran los resultados de todos los elementos no leí
 
 ## <a name="properties-element"></a>\<properties> (Elemento)
 
-El \<properties> elemento describe las propiedades de la búsqueda guardada. Los archivos de búsqueda guardados admiten cuatro propiedades: \<author> , \<kind> , \<description> y \<tags> . Solo son para uso interno.
+El \<properties> elemento describe las propiedades de la propia búsqueda guardada. Los archivos de búsqueda guardados admiten cuatro propiedades: \<author> \<kind> , , y \<description> \<tags> . Son solo para uso interno.
 
-## <a name="full-specification-of-the-search-ms-file-format"></a>Especificación completa del formato de archivo de MS Search
+## <a name="full-specification-of-the-search-ms-file-format"></a>Especificación completa del formato de archivo search-ms
 
-El siguiente es un ejemplo del código XML completo de un archivo de búsqueda guardado.
+A continuación se muestra un ejemplo del XML completo para un archivo de búsqueda guardado.
 
 ```XML
 <?xml version="1.0"?>
@@ -385,9 +385,9 @@ El siguiente es un ejemplo del código XML completo de un archivo de búsqueda g
 
 ## <a name="examples-of-saved-searches"></a>Ejemplos de búsquedas guardadas
 
-A continuación se muestran ejemplos de \* . Search-MS files.
+A continuación se muestran ejemplos \* de archivos .search-ms.
 
-### <a name="recent-documentssearch-ms"></a>Documentos recientes. Search-MS
+### <a name="recent-documentssearch-ms"></a>Documentos recientes.search-ms
 
 ```XML
 <?xml version="1.0"?>
@@ -412,7 +412,7 @@ A continuación se muestran ejemplos de \* . Search-MS files.
 </persistedQuery>
 ```
 
-### <a name="recent-musicsearch-ms"></a>Música reciente. Search-MS
+### <a name="recent-musicsearch-ms"></a>Recientes Música.search-ms
 
 ```XML
 <?xml version="1.0"?>
@@ -437,7 +437,7 @@ A continuación se muestran ejemplos de \* . Search-MS files.
 </persistedQuery>
 ```
 
-### <a name="recently-shared-by-mesearch-ms"></a>Compartidos recientemente por mí. Search-MS
+### <a name="recently-shared-by-mesearch-ms"></a>Compartido recientemente por Me.search-ms
 
 ```XML
 <?xml version="1.0"?>

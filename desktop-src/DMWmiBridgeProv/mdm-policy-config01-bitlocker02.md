@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_Config01_BitLocker02 (clase)
-description: La \_ clase Config01 de Bitlocker02 de directivas MDM \_ \_ representa las directivas de BitLocker disponibles.
+title: MDM_Policy_Config01_BitLocker02 clase
+description: La clase MDM \_ Policy \_ Config01 \_ Bitlocker02 representa las directivas de BitLocker disponibles.
 ms.assetid: 885df93f-41f5-4cf7-8bce-9b253b190e17
 keywords:
-- MDM_Policy_Config01_BitLocker02 (clase)
+- MDM_Policy_Config01_BitLocker02 clase
 - MDM_Policy_Config01_BitLocker02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 005c16365dfc227aff4c854e77b2a733a3c4ac70
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c77f8e5adf8094650138d310f639ea8649885b4a05d276e23bae1e58cb80470a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165406"
 ---
-# <a name="mdm_policy_config01_bitlocker02-class"></a>\_ \_ Clase BitLocker02 de Config01 de directivas MDM \_
+# <a name="mdm_policy_config01_bitlocker02-class"></a>Clase Mdm \_ Policy \_ Config01 \_ BitLocker02
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Config01 de \_ Bitlocker02 de directivas MDM** representa las directivas de BitLocker disponibles.
+La **clase MDM Policy \_ \_ Config01 \_ Bitlocker02 representa** las directivas de BitLocker disponibles.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_Config01_BitLocker02
 
 ## <a name="members"></a>Miembros
 
-La clase Config01 de la **\_ Directiva MDM \_ \_ BitLocker02** tiene estos tipos de miembros:
+La **clase MDM Policy \_ \_ Config01 \_ BitLocker02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Config01 de \_ BitLocker02 de directivas MDM** tiene estas propiedades.
+La **clase MDM Policy \_ \_ Config01 \_ BitLocker02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ La **clase \_ \_ Config01 de \_ BitLocker02 de directivas MDM** tiene estas prop
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -76,10 +76,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica el nombre del nodo primario. Para esta clase, la cadena es "BitLocker"
+Identifica el nombre del nodo primario. Para esta clase, la cadena es "BitLocker".
 
 </dd> <dt>
 
@@ -92,10 +92,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Config".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Config"
 
 </dd> </dl>
 
@@ -103,21 +103,21 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

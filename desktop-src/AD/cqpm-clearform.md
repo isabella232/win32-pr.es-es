@@ -1,10 +1,10 @@
 ---
-title: Mensaje de CQPM_CLEARFORM (Cmnquery. h)
-description: Se envía a la función de devolución de llamada CQPageProc de una consulta de la página de extensión cuando el contenido de la página debe restablecerse a los valores predeterminados.
+title: CQPM_CLEARFORM mensaje (Cmnquery.h)
+description: Se envía a la función de devolución de llamada CQPageProc de una consulta para la página de extensión cuando el contenido de la página se debe restablecer a los valores predeterminados.
 ms.assetid: 0fd3ec82-0566-43de-a7a1-4b6b76bf2050
 ms.tgt_platform: multiple
 keywords:
-- CQPM_CLEARFORM Active Directory de mensaje
+- CQPM_CLEARFORM mensaje Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94af3a31a29da4ce5740c4e326bbf1a8961f9f82
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f900542c631193057985ca70d81dbfa7d3e53c6602f81a69b4e61a7cd107641a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118021371"
 ---
-# <a name="cqpm_clearform-message"></a>CQPM \_ CLEARFORM
+# <a name="cqpm_clearform-message"></a>Mensaje CLEARFORM de CQPM \_
 
-El mensaje **CQPM \_ CLEARFORM** se envía a la función de devolución de llamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de una consulta de la página de extensión cuando el contenido de la página debe restablecerse a los valores predeterminados.
+El **mensaje \_ CLEARFORM de CQPM** se envía a la función de devolución de llamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de una consulta para la página de extensión cuando se debe restablecer el contenido de la página a los valores predeterminados.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,34 +33,34 @@ El mensaje **CQPM \_ CLEARFORM** se envía a la función de devolución de llama
 *wParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ correcto** si es correcto o un código de error **HRESULT** estándar en caso contrario.
+Devuelve **S OK si \_ se** realiza correctamente o un código de error **HRESULT** estándar en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Cmnquery. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Cmnquery.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

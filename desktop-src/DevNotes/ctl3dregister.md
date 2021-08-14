@@ -1,7 +1,7 @@
 ---
-description: Registra una aplicación como un cliente de CTL3D.
+description: Registra una aplicación como cliente de CTL3D.
 ms.assetid: 38a4a04a-6322-4eb8-b272-ae9b90f84e0f
-title: Ctl3dRegister función)
+title: Función Ctl3dRegister
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 4b855c162d9d5f1c43a15d1ebd7219da6f847f37
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f58236891b8a673102905e0ef0c108ac9da6e6192788abea9c6e79baf8acfcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162163"
 ---
-# <a name="ctl3dregister-function"></a>Ctl3dRegister función)
+# <a name="ctl3dregister-function"></a>Función Ctl3dRegister
 
-Registra una aplicación como un cliente de CTL3D.
+Registra una aplicación como cliente de CTL3D.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ BOOL Ctl3dRegister(
 
 <dl> <dt>
 
-*hinstApp* 
+*prendstApp* 
 </dt> <dd>
 
 Identificador de la aplicación que se va a registrar como cliente.
@@ -48,21 +48,21 @@ Identificador de la aplicación que se va a registrar como cliente.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si los efectos 3D están activos; de lo contrario, devuelve **false**.
+Devuelve **TRUE si** los efectos 3D están activos; de lo contrario, devuelve **FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación que usa CTL3D debe llamar a esta función en WinMain.
+Una aplicación que use CTL3D debe llamar a esta función en WinMain.
 
-los efectos 3D no están disponibles en los sistemas que tienen una resolución inferior a VGA.
+Los efectos 3D no están disponibles en sistemas con una resolución inferior a VGA.
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Ctl3d32.dll</dt> </dl> |
 

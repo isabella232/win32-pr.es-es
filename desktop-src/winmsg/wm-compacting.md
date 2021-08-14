@@ -1,24 +1,24 @@
 ---
-description: Se envía a todas las ventanas de nivel superior cuando el sistema detecta más del 12,5 por ciento de la hora del sistema durante un intervalo de 30 a 60 segundos en la compactación de la memoria. Esto indica que la memoria del sistema es baja.
+description: Se envía a todas las ventanas de nivel superior cuando el sistema detecta más del 12,5 % del tiempo del sistema durante un intervalo de entre 30 y 60 segundos que se está dedicando a compactar la memoria. Esto indica que la memoria del sistema es baja.
 ms.assetid: e8adc655-0252-4a43-8a62-b08e96f5744e
-title: Mensaje de WM_COMPACTING (Winuser. h)
+title: WM_COMPACTING mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fb94e77a1c6b27701b26ed4b7e6e01f326aaa40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 553662bccb223ed7fb987df5d2918e3d8d1c6ab95f125cbacbd50c1e2484c0c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200576"
 ---
-# <a name="wm_compacting-message"></a>\_Mensaje de compactación de WM
+# <a name="wm_compacting-message"></a>Mensaje \_ DE COMPACTACIÓN DE WM
 
-Se envía a todas las ventanas de nivel superior cuando el sistema detecta más del 12,5 por ciento de la hora del sistema durante un intervalo de 30 a 60 segundos en la compactación de la memoria. Esto indica que la memoria del sistema es baja.
+Se envía a todas las ventanas de nivel superior cuando el sistema detecta más del 12,5 % del tiempo del sistema durante un intervalo de entre 30 y 60 segundos que se está dedicando a compactar la memoria. Esto indica que la memoria del sistema es baja.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 > [!Note]  
-> Este mensaje se proporciona solo para ofrecer compatibilidad con aplicaciones basadas en Windows de 16 bits.
+> Este mensaje solo se proporciona por compatibilidad con aplicaciones basadas en Windows de 16 bits.
 
  
 
@@ -36,7 +36,7 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-La proporción de tiempo de la unidad central de procesamiento (CPU) empleada actualmente por el sistema que compacta la memoria en el tiempo de CPU empleado actualmente por el sistema que realiza otras operaciones. Por ejemplo, 0x8000 representa el 50 por ciento del tiempo de CPU empleado en compactar la memoria.
+La proporción de tiempo de unidad de procesamiento central (CPU) empleado actualmente por el sistema para compactar la memoria con el tiempo de CPU que el sistema dedica actualmente a realizar otras operaciones. Por ejemplo, 0x8000 representa el 50 por ciento del tiempo de CPU dedicado a compactar la memoria.
 
 </dd> <dt>
 
@@ -53,7 +53,7 @@ Tipo: **LRESULT**
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cuando una aplicación recibe este mensaje, debe liberar toda la memoria posible, teniendo en cuenta el nivel actual de actividad de la aplicación y el número total de aplicaciones que se ejecutan en el sistema.
 
@@ -61,19 +61,19 @@ Cuando una aplicación recibe este mensaje, debe liberar toda la memoria posible
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información general de Windows](windows.md)
+[Windows Visión general](windows.md)
 </dt> </dl>
 
  

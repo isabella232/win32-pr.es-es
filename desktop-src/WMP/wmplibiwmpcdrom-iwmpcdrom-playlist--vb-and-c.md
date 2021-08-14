@@ -1,11 +1,11 @@
 ---
-title: Propiedad de lista de reproducción IWMPCdrom
-description: La propiedad playlist obtiene una interfaz IWMPPlaylist que representa las pistas del CD que se encuentran actualmente en la unidad de CD o en las entradas de título de nivel de raíz de un DVD.
+title: Propiedad IWMPCdrom Playlist
+description: La propiedad Lista de reproducción obtiene una interfaz IWMPPlaylist que representa las pistas del CD actualmente en la unidad de CD o las entradas de título de nivel raíz de un DVD.
 ms.assetid: 09c3db45-6586-4a5b-b72c-77c64473bdd0
 keywords:
-- Propiedades de la lista de reproducción Windows Media Player
-- Propiedad de lista de reproducción Windows Media Player, interfaz IWMPCdrom
-- Interfaz IWMPCdrom Windows Media Player, propiedad playlist
+- Propiedad De lista de reproducción Reproductor de Windows Media
+- Propiedad playlist Reproductor de Windows Media interfaz , IWMPCdrom
+- Interfaz IWMPCdrom Reproductor de Windows Media propiedad , Lista de reproducción
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a386881c8416f4ea1881f3ccd68ee4291aa3fa84
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 988ff17e3716f01308957b3f5f247759fb3f18f639f7b279a8f00d7f6f9e2189
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116617"
 ---
-# <a name="iwmpcdromplaylist-property"></a>IWMPCdrom::P propiedad laylist
+# <a name="iwmpcdromplaylist-property"></a>Propiedad IWMPCdrom::P laylist
 
-La propiedad **playlist** obtiene una interfaz **IWMPPlaylist** que representa las pistas del CD que se encuentran actualmente en la unidad de CD o en las entradas de título de nivel de raíz de un DVD.
+La **propiedad Lista** de reproducción obtiene una interfaz **IWMPPlaylist** que representa las pistas del CD actualmente en la unidad de CD o las entradas de título de nivel raíz de un DVD.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,21 +46,21 @@ Public ReadOnly Property Playlist As IWMPPlaylist
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Una interfaz **WMPLib. IWMPPlaylist** .
+Interfaz **WMPLib.IWMPPlaylist.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, el contenido basado en DVD se organiza en títulos. Cada título contiene uno o varios capítulos. Cada DVD se crea de forma diferente, por lo que la forma de usar títulos y capítulos depende del autor del contenido.
+Normalmente, el contenido basado en DVD se organiza en títulos. Cada título contiene uno o varios capítulos. Cada DVD se ha escrito de forma diferente, por lo que la forma en que se usan los títulos y capítulos es el autor del contenido.
 
-En un DVD, esta propiedad obtiene una lista de reproducción que contiene como primer elemento una interfaz **IWMPMedia** denominada "DVD". Esta interfaz representa el medio DVD. Reproducir el elemento hace que el DVD se reproduzca desde el principio si es el primer juego después de insertar un DVD nuevo o reanudar la reproducción si el DVD es el mismo que el último DVD visualizado. Al establecer este elemento como el elemento actual durante la reproducción, el DVD se reproduce desde el principio.
+Para un DVD, esta propiedad obtiene una lista de reproducción que contiene como primer elemento una **interfaz IWMPMedia** denominada "DVD". Esta interfaz representa los medios de DVD. Al reproducir el elemento, el DVD se reproduce desde el principio si es la primera reproducción después de insertar un DVD nuevo o reanudar la reproducción si el DVD es el mismo que el último DVD visto. Al establecer este elemento como elemento actual durante la reproducción, el DVD se reproduce desde el principio.
 
-Los elementos adicionales (representados por las interfaces **IWMPMedia** ) de la lista de reproducción son títulos de DVD que se representan mediante listas de reproducción anidadas. Al establecer **IWMPControls. CurrentItem** en uno de estos elementos de lista de reproducción anidados, Windows Media Player establece automáticamente la lista de reproducción anidada como la lista de reproducción actual después de que comience la reproducción del capítulo. A continuación, puede usar las propiedades, los métodos y los eventos asociados de la interfaz **IWMPPlaylist** para trabajar con capítulos de DVD, que también son elementos de lista de reproducción.
+Los elementos adicionales (representados por interfaces **IWMPMedia)** en la lista de reproducción son títulos de DVD representados por listas de reproducción anidadas. Al establecer **IWMPControls.currentItem** en uno de estos elementos de lista de reproducción anidados, Reproductor de Windows Media establece automáticamente la lista de reproducción anidada como la lista de reproducción actual una vez que comienza la reproducción del capítulo. A continuación, puede usar las propiedades de la **interfaz IWMPPlaylist,** los métodos y los eventos asociados para trabajar con capítulos de DVD, que también son elementos de lista de reproducción.
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa la lista de **reproducción** para rellenar un cuadro de texto de varias líneas, denominado mi texto, con la lista de seguimiento del CD de audio que se encuentra en la primera unidad de CD. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa Lista** de reproducción para rellenar un cuadro de texto de varias líneas, denominado myText, con la lista de pistas del CD de audio actualmente en la primera unidad de CD. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -108,22 +108,22 @@ myText.Lines = trackList
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Interfaz IWMPCdrom (VB y C#)**](iwmpcdrom--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. currentItem (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)
+[**IWMPControls.currentItem (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPMedia (VB y C#)**](iwmpmedia--vb-and-c.md)
@@ -132,10 +132,10 @@ myText.Lines = trackList
 [**Interfaz IWMPPlaylist (VB y C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

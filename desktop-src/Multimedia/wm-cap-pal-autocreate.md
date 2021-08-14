@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_PAL_AUTOCREATE (VFW. h)
-description: El \_ mensaje de creación automática de Cap de WM Cap \_ \_ solicita que el vídeo de ejemplo del controlador de captura muestre fotogramas y cree automáticamente una nueva paleta. Puede enviar este mensaje explícitamente o mediante la macro capPaletteAuto.
+title: WM_CAP_PAL_AUTOCREATE mensaje (Vfw.h)
+description: El mensaje WM CAP PAL AUTOCREATE solicita que el controlador de captura muestree fotogramas de vídeo y \_ cree automáticamente una nueva \_ \_ paleta. Puede enviar este mensaje explícitamente o mediante la macro capPaletteAuto.
 ms.assetid: b94d245d-adf4-4fe0-b053-87109ef5fd2f
 keywords:
-- Mensaje de WM_CAP_PAL_AUTOCREATE de Windows multimedia
+- WM_CAP_PAL_AUTOCREATE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba70de46167121aa9a83959c6d9e202039f65cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a18d805ef394388de2265845f4e21bebb98d94391b851a60ed38d46e9872fecc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800645"
 ---
-# <a name="wm_cap_pal_autocreate-message"></a>Mensaje de creación de la \_ PAL de Cap de WM \_ \_
+# <a name="wm_cap_pal_autocreate-message"></a>Mensaje \_ WM CAP PAL \_ \_ AUTOCREATE
 
-El mensaje de creación automática de **Cap de WM \_ Cap \_ \_** solicita que el vídeo de ejemplo del controlador de captura muestre fotogramas y cree automáticamente una nueva paleta. Puede enviar este mensaje explícitamente o mediante la macro [**capPaletteAuto**](/windows/desktop/api/Vfw/nf-vfw-cappaletteauto) .
+El **mensaje WM CAP PAL \_ \_ \_ AUTOCREATE** solicita que el controlador de captura muestree fotogramas de vídeo y cree automáticamente una nueva paleta. Puede enviar este mensaje explícitamente o mediante la [**macro capPaletteAuto.**](/windows/desktop/api/Vfw/nf-vfw-cappaletteauto)
 
 
 ```C++
@@ -38,10 +38,10 @@ lParam = (LPARAM) (DWORD) (iColors);
 
 <dl> <dt>
 
-<span id="iFrames"></span><span id="iframes"></span><span id="IFRAMES"></span>*iFrames*
+<span id="iFrames"></span><span id="iframes"></span><span id="IFRAMES"></span>*Iframes*
 </dt> <dd>
 
-Número de fotogramas que se van a muestrear.
+Número de fotogramas para muestrear.
 
 </dd> <dt>
 
@@ -54,27 +54,27 @@ Número de colores de la paleta. El valor máximo de este parámetro es 256.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error con el mensaje de [**\_ error de devolución de \_ \_ llamada \_ de Cap de WM**](wm-cap-set-callback-error.md) , se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La secuencia de vídeo muestreada debe incluir todos los colores que desee en la paleta. Para obtener la mejor paleta, puede que tenga que mostrar la secuencia completa en lugar de una parte de ella.
+La secuencia de vídeo muestreada debe incluir todos los colores que desee en la paleta. Para obtener la mejor paleta, es posible que tenga que muestrear toda la secuencia en lugar de una parte de ella.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Un TSP usa estas constantes para identificar el resultado de una solicitud QoS (calidad de servicio).
+description: Un TSP usa estas constantes para identificar el resultado de una solicitud qos (calidad de servicio).
 ms.assetid: 617ddbf4-212f-4990-93c2-f38f04b035ab
-title: Constantes de LINEEQOSINFO_ (TSPI. h)
+title: LINEEQOSINFO_ constantes (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 423cc6172a1c6c87c1f3bb38929f727a15dad5c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c07a2d532e578b1f7df752cfd4930660d1d22dd4dd8406f0f8cc8bd61924bf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761398"
 ---
-# <a name="lineeqosinfo_-constants"></a>Constantes de LINEEQOSINFO \_
+# <a name="lineeqosinfo_-constants"></a>Constantes LINEEQOSINFO \_
 
-Un TSP usa estas constantes para identificar el resultado de una solicitud QoS (calidad de servicio).
+Un TSP usa estas constantes para identificar el resultado de una solicitud qos (calidad de servicio).
 
 <dl> <dt>
 
@@ -38,7 +38,7 @@ QoS no está disponible.
 
 
 
-No se pudo cumplir la solicitud QoS.
+No se pudo cumplir la solicitud de QoS.
 
 
 </dt> </dl> </dd> <dt>
@@ -73,10 +73,10 @@ Error de QoS no especificado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,2<br/>                                                      |
-| Encabezado<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
+| Header<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 

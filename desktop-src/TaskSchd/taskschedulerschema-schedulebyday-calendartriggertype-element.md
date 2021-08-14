@@ -3,8 +3,8 @@ title: Elemento ScheduleByDay (calendarTriggerType)
 description: Especifica una programación diaria.
 ms.assetid: 5a6097ce-a855-4b08-84c5-71f06343805e
 keywords:
-- Programador de tareas de desencadenador diario, elemento XML
-- Programador de tareas del elemento ScheduleByDay
+- daily trigger Programador de tareas , elemento XML
+- Elemento ScheduleByDay Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 614777ede63605dc7ed6936bda952c6071bda371
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f29cc4b702ba93aec44e3460279976f50c5563463accfb58b920ad79b757126a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131587"
 ---
 # <a name="schedulebyday-calendartriggertype-element"></a>Elemento ScheduleByDay (calendarTriggerType)
 
-Especifica una programación diaria. Por ejemplo, la tarea comienza a las 8:00 A.M. todos los días, cada día, cada tres días, etc.
+Especifica una programación diaria. Por ejemplo, la tarea se inicia a las 8:00 a. m. todos los días, cada dos días, cada tercer día, y así sucesivamente.
 
 ``` syntax
 <xs:element name="ScheduleByDay"
@@ -31,7 +31,7 @@ Especifica una programación diaria. Por ejemplo, la tarea comienza a las 8:00 A
  />
 ```
 
-El elemento **ScheduleByDay** se define mediante el tipo complejo de [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) .
+El **elemento ScheduleByDay** se define mediante el [**tipo complejo calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -39,7 +39,7 @@ El elemento **ScheduleByDay** se define mediante el tipo complejo de [**calendar
 
 | Elemento                                                                             | Derivado de                                                                       | Descripción                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica un desencadenador de día de la semana (DOW) diario, semanal, mensual o mensual.<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica un desencadenador diario, semanal, mensual o mensual del día de la semana (DOW).<br/> |
 
 
 
@@ -53,19 +53,19 @@ El elemento **ScheduleByDay** se define mediante el tipo complejo de [**calendar
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento secundario enumerado anteriormente está definido por los tipos de elemento complejo [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md) .
+Los tipos de elementos complejos [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md) definen el elemento secundario enumerado anteriormente.
 
-La hora del día en que se inicia la tarea se establece mediante el elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) .
+El elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) establece la hora del día en que se inicia la tarea.
 
-Para el desarrollo de scripting, se especifica un desencadenador diario mediante el objeto [**DailyTrigger**](weeklytrigger.md) .
+Para el desarrollo de scripting, se especifica un desencadenador diario mediante el [**objeto DailyTrigger.**](weeklytrigger.md)
 
-En el desarrollo de C++, se especifica un desencadenador diario mediante la interfaz [**IDailyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-idailytrigger) .
+Para el desarrollo de C++, se especifica un desencadenador diario mediante la [**interfaz IDailyTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-idailytrigger)
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define un desencadenador de calendario diario que inicia la tarea cada día.
+El código XML siguiente define un desencadenador de calendario diario que inicia la tarea todos los días.
 
 
 ```XML
@@ -80,24 +80,24 @@ En el código XML siguiente se define un desencadenador de calendario diario que
 
 
 
-Para obtener un ejemplo completo del XML de una tarea que especifica una programación diaria, vea [ejemplo de desencadenador diario (XML)](daily-trigger-example--xml-.md).
+Para obtener un ejemplo completo del XML para una tarea que especifica una programación diaria, vea Ejemplo de desencadenador [diario (XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

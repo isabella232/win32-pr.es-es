@@ -1,11 +1,11 @@
 ---
-title: Compatibilidad del proveedor con las interfaces ADSI
-description: En la tabla siguiente se muestra una breve descripción de las interfaces admitidas por los proveedores incluidos con ADSI para Windows 2000 y el cliente de DS.
+title: Compatibilidad del proveedor con interfaces ADSI
+description: En la tabla siguiente se muestra una breve descripción de las interfaces admitidas por los proveedores incluidos con ADSI para Windows 2000 y DS Client.
 ms.assetid: 8eb9a88c-cf18-4fe4-b256-1d6fcaf96c62
 ms.tgt_platform: multiple
 keywords:
-- Compatibilidad del proveedor con las interfaces ADSI ADSI
-- ADSI ADSI, proveedores de servicios, interfaces admitidas por cada proveedor
+- Compatibilidad del proveedor con ADSI interfaces ADSI
+- ADSI ADSI, proveedores de servicios e interfaces compatibles con cada proveedor
 - Compatibilidad del proveedor con IADsUser
 - Compatibilidad del proveedor con IADsComputer
 - Compatibilidad del proveedor con IADsComputerOperations
@@ -28,30 +28,30 @@ keywords:
 - Compatibilidad del proveedor con IADsPrintQueueOperations
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf12803929d96a61aac6603be2c528084c91693c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2c393cb8476830617a300f33eac741bd27b3cacbd686442dd4def5bf6c35526e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178834"
 ---
-# <a name="provider-support-of-adsi-interfaces"></a>Compatibilidad del proveedor con las interfaces ADSI
+# <a name="provider-support-of-adsi-interfaces"></a>Compatibilidad del proveedor con interfaces ADSI
 
-En la tabla siguiente se muestra una breve descripción de las interfaces admitidas por los proveedores incluidos con ADSI para Windows 2000 y el cliente de DS. Una entrada marcada con "Yes" indica que al menos un objeto ADSI del proveedor especificado admite la interfaz asociada. "No" indica que ningún objeto del proveedor admite la interfaz en esta versión. En el futuro, los proveedores proporcionados por el sistema pueden admitir actualmente interfaces no compatibles.
+En la tabla siguiente se muestra una breve descripción de las interfaces admitidas por los proveedores incluidos con ADSI para Windows 2000 y DS Client. Una entrada marcada con "Sí" indica que al menos un objeto ADSI del proveedor especificado admite la interfaz asociada. "No" indica que ningún objeto del proveedor admite la interfaz en esta versión. En el futuro, las interfaces actualmente no admitidas pueden ser compatibles con los proveedores proporcionados por el sistema.
 
-Para obtener más información acerca de los detalles de implementación específicos del proveedor ADSI, consulte:
+Para obtener más información sobre los detalles de implementación específicos del proveedor adsi, consulte:
 
--   [Proveedor LDAP de ADSI](adsi-ldap-provider.md)
--   [Proveedor WinNT de ADSI](adsi-winnt-provider.md)
+-   [Proveedor LDAP ADSI](adsi-ldap-provider.md)
+-   [Proveedor ADSI WinNT](adsi-winnt-provider.md)
 -   [ENRUTADOR ADSI](adsi-router.md)
 
-Para obtener más información sobre qué propiedad o método se admite para cada interfaz, haga clic en el nombre de la interfaz correspondiente en la primera columna de la tabla.
+Para obtener más información sobre qué propiedad o método se admite para cada interfaz, haga clic en el nombre de interfaz adecuado en la primera columna de la tabla.
 
 
 
-| Nombre de la interfaz                                                 | LDAP | WinNT |
+| Nombre de la interfaz                                                 | LDAP | Winnt |
 |----------------------------------------------------------------|------|-------|
-| [**IADs**](/windows/desktop/api/Iads/nn-iads-iads)                                           | Sí  | Sí   |
+| [**Iads**](/windows/desktop/api/Iads/nn-iads-iads)                                           | Sí  | Sí   |
 | [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)       | Sí  | No    |
 | [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)         | Sí  | No    |
 | [**IADsAcl**](/windows/desktop/api/Iads/nn-iads-iadsacl)                                     | No   | No    |
@@ -109,13 +109,13 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsuser"></a>Compatibilidad del proveedor con IADsUser
 
 
 
-| Propiedad                                                    | LDAP          | WinNT         |
+| Propiedad                                                    | LDAP          | Winnt         |
 |-------------------------------------------------------------|---------------|---------------|
 | [**AccountDisabled**](iadsuser-property-methods.md)        | Compatible     | Compatible     |
 | [**AccountExpirationDate**](iadsuser-property-methods.md)  | Compatible     | Compatible     |
@@ -125,28 +125,28 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | [**Descripción**](iadsuser-property-methods.md)            | Compatible     | Compatible     |
 | [**División**](iadsuser-property-methods.md)               | Compatible     | No compatible   |
 | [**EmailAddress**](iadsuser-property-methods.md)           | Compatible     | No compatible   |
-| [**EmployeeID**](iadsuser-property-methods.md)             | Compatible     | No compatible   |
+| [**Employeeid**](iadsuser-property-methods.md)             | Compatible     | No compatible   |
 | [**FaxNumber**](iadsuser-property-methods.md)              | Compatible     | No compatible   |
-| [**FirstName**](iadsuser-property-methods.md)              | Compatible     | No compatible   |
+| [**Nombre**](iadsuser-property-methods.md)              | Compatible     | No compatible   |
 | [**FullName**](iadsuser-property-methods.md)               | Compatible     | Compatible     |
 | [**GraceLoginsAllowed**](iadsuser-property-methods.md)     | No compatible | No compatible   |
 | [**GraceLoginsRemaining**](iadsuser-property-methods.md)   | No compatible | No compatible   |
 | [**HomeDirectory**](iadsuser-property-methods.md)          | Compatible     | Compatible     |
 | [**Página principal**](iadsuser-property-methods.md)               | Compatible     | No compatible   |
 | [**IsAccountLocked**](iadsuser-property-methods.md)        | Compatible     | Compatible     |
-| [**Lenguajes**](iadsuser-property-methods.md)              | No compatible | No compatible   |
+| [**Idiomas**](iadsuser-property-methods.md)              | No compatible | No compatible   |
 | [**LastFailedLogin**](iadsuser-property-methods.md)        | Compatible     | No compatible   |
 | [**LastLogin**](iadsuser-property-methods.md)              | Compatible     | Compatible     |
 | [**LastLogoff**](iadsuser-property-methods.md)             | Compatible     | Compatible     |
-| [**LastName**](iadsuser-property-methods.md)               | Compatible     | No compatible   |
+| [**Apellidos**](iadsuser-property-methods.md)               | Compatible     | No compatible   |
 | [**LoginHours**](iadsuser-property-methods.md)             | Compatible     | Compatible     |
 | [**LoginScript**](iadsuser-property-methods.md)            | Compatible     | Compatible     |
 | [**LoginWorkstations**](iadsuser-property-methods.md)      | Compatible     | Compatible     |
-| [**Manager**](iadsuser-property-methods.md)                | Compatible     | No compatible   |
+| [**director**](iadsuser-property-methods.md)                | Compatible     | No compatible   |
 | [**MaxLogins**](iadsuser-property-methods.md)              | No compatible   | No compatible   |
 | [**MaxStorage**](iadsuser-property-methods.md)             | Compatible     | Compatible     |
 | [**NamePrefix**](iadsuser-property-methods.md)             | Compatible     | No compatible   |
-| [**NameSuffix**](iadsuser-property-methods.md)             | Compatible     | No compatible   |
+| [**Sufijonombre**](iadsuser-property-methods.md)             | Compatible     | No compatible   |
 | [**OfficeLocations**](iadsuser-property-methods.md)        | Compatible     | No compatible   |
 | [**OtherName**](iadsuser-property-methods.md)              | Compatible     | No compatible   |
 | [**PasswordExpirationDate**](iadsuser-property-methods.md) | No compatible   | Compatible     |
@@ -163,27 +163,27 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | [**TelephoneMobile**](iadsuser-property-methods.md)        | Compatible     | No compatible   |
 | [**TelephoneNumber**](iadsuser-property-methods.md)        | Compatible     | No compatible   |
 | [**TelephonePager**](iadsuser-property-methods.md)         | Compatible     | No compatible   |
-| [**Title**](iadsuser-property-methods.md)                  | Compatible     | No compatible   |
+| [**Título**](iadsuser-property-methods.md)                  | Compatible     | No compatible   |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadscomputer"></a>Compatibilidad del proveedor con IADsComputer
 
 
 
-| Propiedades                                     | LDAP                    | WinNT       |
+| Propiedades                                     | LDAP                    | Winnt       |
 |------------------------------------------------|-------------------------|-------------|
 | [**ComputerID**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaz no admitida | No compatible |
 | [**Departamento**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaz no admitida | No compatible |
 | [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadscomputer)            | Interfaz no admitida | No compatible |
 | [**División**](/windows/desktop/api/Iads/nn-iads-iadscomputer)               | Interfaz no admitida | Compatible   |
-| [**Location**](/windows/desktop/api/Iads/nn-iads-iadscomputer)               | Interfaz no admitida | No compatible |
+| [**Ubicación**](/windows/desktop/api/Iads/nn-iads-iadscomputer)               | Interfaz no admitida | No compatible |
 | [**MemorySize**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaz no admitida | No compatible |
 | [**Modelo**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                  | Interfaz no admitida | No compatible |
 | [**NetAddresses**](/windows/desktop/api/Iads/nn-iads-iadscomputer)           | Interfaz no admitida | No compatible |
-| [**Identifica**](/windows/desktop/api/Iads/nn-iads-iadscomputer)        | Interfaz no admitida | Compatible   |
+| [**OperatingSystem**](/windows/desktop/api/Iads/nn-iads-iadscomputer)        | Interfaz no admitida | Compatible   |
 | [**OperatingSystemVersion**](/windows/desktop/api/Iads/nn-iads-iadscomputer) | Interfaz no admitida | Compatible   |
 | [**Propietario**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                  | Interfaz no admitida | Compatible   |
 | [**PrimaryUser**](/windows/desktop/api/Iads/nn-iads-iadscomputer)            | Interfaz no admitida | No compatible |
@@ -195,26 +195,26 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadscomputeroperations"></a>Compatibilidad del proveedor con IADsComputerOperations
 
 
 
-| Propiedad                                   | LDAP                    | WinNT           |
+| Propiedad                                   | LDAP                    | Winnt           |
 |--------------------------------------------|-------------------------|-----------------|
 | [**Apagado**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations) | Interfaz no admitida | No implementado |
-| [**Status**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)   | Interfaz no admitida | No implementado |
+| [**Estado**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)   | Interfaz no admitida | No implementado |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsdomain"></a>Compatibilidad del proveedor con IADsDomain
 
 
 
-| Propiedad                                         | LDAP                    | WinNT           |
+| Propiedad                                         | LDAP                    | Winnt           |
 |--------------------------------------------------|-------------------------|-----------------|
 | [**IsWorkgroup**](/windows/desktop/api/Iads/nn-iads-iadsdomain)                | Interfaz no admitida | No implementado |
 | [**MinPasswordLength**](/windows/desktop/api/Iads/nn-iads-iadsdomain)          | Interfaz no admitida | Compatible       |
@@ -228,43 +228,43 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsfileservice"></a>Compatibilidad del proveedor con IADsFileService
 
 
 
-| Propiedad                                | LDAP                    | WinNT     |
+| Propiedad                                | LDAP                    | Winnt     |
 |-----------------------------------------|-------------------------|-----------|
 | [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadsfileservice)  | Interfaz no admitida | Compatible |
 | [**MaxUserCount**](/windows/desktop/api/Iads/nn-iads-iadsfileservice) | Interfaz no admitida | Compatible |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsgroup"></a>Compatibilidad del proveedor con IADsGroup
 
 
 
-| Propiedad                         | LDAP      | WinNT     |
+| Propiedad                         | LDAP      | Winnt     |
 |----------------------------------|-----------|-----------|
 | [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadsgroup) | Compatible | Compatible |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsclass"></a>Compatibilidad del proveedor con IADsClass
 
 
 
-| Propiedad                                   | LDAP               | WinNT           |
+| Propiedad                                   | LDAP               | Winnt           |
 |--------------------------------------------|--------------------|-----------------|
 | [**PrimaryInterface**](/windows/desktop/api/Iads/nn-iads-iadsclass)      | Compatible          | Compatible       |
-| [**CLSID**](/windows/desktop/api/Iads/nn-iads-iadsclass)                 | Compatible          | Compatible       |
-| [**OID**](/windows/desktop/api/Iads/nn-iads-iadsclass)                   | Compatible          | Compatible       |
-| [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadsclass)              | Compatible          | Compatible       |
+| [**Clsid**](/windows/desktop/api/Iads/nn-iads-iadsclass)                 | Compatible          | Compatible       |
+| [**Oid**](/windows/desktop/api/Iads/nn-iads-iadsclass)                   | Compatible          | Compatible       |
+| [**Abstracto**](/windows/desktop/api/Iads/nn-iads-iadsclass)              | Compatible          | Compatible       |
 | [**Auxiliar**](/windows/desktop/api/Iads/nn-iads-iadsclass)             | Compatible          | Compatible       |
 | [**MandatoryProperties**](/windows/desktop/api/Iads/nn-iads-iadsclass)   | Compatible          | Compatible       |
 | [**OptionalProperties**](/windows/desktop/api/Iads/nn-iads-iadsclass)    | Compatible          | Compatible       |
@@ -276,108 +276,108 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | [**Contenedor**](/windows/desktop/api/Iads/nn-iads-iadsclass)             | Compatible con lectura | Compatible       |
 | [**HelpFileName**](/windows/desktop/api/Iads/nn-iads-iadsclass)          | Compatible          | Compatible       |
 | [**HelpFileContext**](/windows/desktop/api/Iads/nn-iads-iadsclass)       | Compatible          | Compatible       |
-| Método                                     | LDAP               | WinNT           |
+| Método                                     | LDAP               | Winnt           |
 | [**Calificadores**](/windows/desktop/api/Iads/nf-iads-iadsclass-qualifiers) | No implementado    | No implementado |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsproperty"></a>Compatibilidad del proveedor con IADsProperty
 
 
 
-| Propiedad                            | LDAP      | WinNT     |
+| Propiedad                            | LDAP      | Winnt     |
 |-------------------------------------|-----------|-----------|
-| [**OID**](/windows/desktop/api/Iads/nn-iads-iadsproperty)         | Compatible | Compatible |
-| [**Sintaxis**](/windows/desktop/api/Iads/nn-iads-iadsproperty)      | Compatible | Compatible |
+| [**Oid**](/windows/desktop/api/Iads/nn-iads-iadsproperty)         | Compatible | Compatible |
+| [**Syntax**](/windows/desktop/api/Iads/nn-iads-iadsproperty)      | Compatible | Compatible |
 | [**MaxRange**](/windows/desktop/api/Iads/nn-iads-iadsproperty)    | Compatible | Compatible |
 | [**MinRange**](/windows/desktop/api/Iads/nn-iads-iadsproperty)    | Compatible | Compatible |
-| [**Varios valores**](/windows/desktop/api/Iads/nn-iads-iadsproperty) | Compatible | Compatible |
+| [**Multivalor**](/windows/desktop/api/Iads/nn-iads-iadsproperty) | Compatible | Compatible |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadssyntax"></a>Compatibilidad del proveedor con IADsSyntax
 
 
 
-| Propiedad                              | LDAP      | WinNT     |
+| Propiedad                              | LDAP      | Winnt     |
 |---------------------------------------|-----------|-----------|
 | [**OleAutoDataType**](/windows/desktop/api/Iads/nn-iads-iadssyntax) | Compatible | Compatible |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadscontainer"></a>Compatibilidad del proveedor con IADsContainer
 
 
 
-| Propiedad                        | LDAP            | WinNT           |
+| Propiedad                        | LDAP            | Winnt           |
 |---------------------------------|-----------------|-----------------|
-| [**Contabiliza**](/windows/desktop/api/Iads/nn-iads-iadscontainer)  | No implementado | No implementado |
+| [**Contar**](/windows/desktop/api/Iads/nn-iads-iadscontainer)  | No implementado | No implementado |
 | [**Sugerencias**](/windows/desktop/api/Iads/nn-iads-iadscontainer)  | Compatible       | No implementado |
-| [**Filter**](/windows/desktop/api/Iads/nn-iads-iadscontainer) | Compatible       | Compatible       |
+| [**Filtrar**](/windows/desktop/api/Iads/nn-iads-iadscontainer) | Compatible       | Compatible       |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsnamespaces"></a>Compatibilidad del proveedor con IADsNamespaces
 
 
 
-| Propiedad                                   | LDAP      | WinNT     |
+| Propiedad                                   | LDAP      | Winnt     |
 |--------------------------------------------|-----------|-----------|
 | [**defaultContainer**](/windows/desktop/api/Iads/nn-iads-iadsnamespaces) | Compatible | Compatible |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsaccesscontrolentry"></a>Compatibilidad del proveedor con IADsAccessControlEntry
 
 
 
-| Propiedad                                              | LDAP      | WinNT       |
+| Propiedad                                              | LDAP      | Winnt       |
 |-------------------------------------------------------|-----------|-------------|
-| [**AccessMask**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Compatible | No compatible |
+| [**Máscara de acceso**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Compatible | No compatible |
 | [**AccessType**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Compatible | No compatible |
 | [**AccessFlags**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)         | Compatible | No compatible |
-| [**Marcas**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)               | Compatible | No compatible |
+| [**Banderas**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)               | Compatible | No compatible |
 | [**ObjectType**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Compatible | No compatible |
 | [**InheritedObjectType**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) | Compatible | No compatible |
-| [**Confianza**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)             | Compatible | No compatible |
+| [**Fideicomisario**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)             | Compatible | No compatible |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsaccesscontrollist"></a>Compatibilidad del proveedor con IADsAccessControlList
 
 
 
-| Propiedad                                                       | LDAP      | WinNT       |
+| Propiedad                                                       | LDAP      | Winnt       |
 |----------------------------------------------------------------|-----------|-------------|
 | [**AceCount**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)                      | Compatible | No compatible |
 | [**AceRevision**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)                   | Compatible | No compatible |
-| Método                                                         | LDAP      | WinNT       |
+| Método                                                         | LDAP      | Winnt       |
 | [**AddAce**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-addace)                 | Compatible | No compatible |
 | [**CopyAccessList**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-copyaccesslist) | Compatible | No compatible |
 | [**RemoveAce**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-removeace)           | Compatible | No compatible |
-| [**obtener \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-get__newenum)   | Compatible | No compatible |
+| [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-get__newenum)   | Compatible | No compatible |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadssecuritydescriptor"></a>Compatibilidad del proveedor con IADsSecurityDescriptor
 
 
 
-| Propiedad                                                                        | LDAP      | WinNT       |
+| Propiedad                                                                        | LDAP      | Winnt       |
 |---------------------------------------------------------------------------------|-----------|-------------|
 | [**Control**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                       | Compatible | No compatible |
 | [**DaclDefaulted**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                 | Compatible | No compatible |
@@ -388,65 +388,65 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | [**OwnerDefaulted**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                | Compatible | No compatible |
 | [**SaclDefaulted**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                 | Compatible | No compatible |
 | [**SystemAcl**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                     | Compatible | No compatible |
-| Método                                                                          | LDAP      | WinNT       |
+| Método                                                                          | LDAP      | Winnt       |
 | [**CopySecurityDescriptor**](/windows/desktop/api/Iads/nf-iads-iadssecuritydescriptor-copysecuritydescriptor) | Compatible | No compatible |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsobjectoptions"></a>Compatibilidad del proveedor con IADsObjectOptions
 
 
 
-| Método                                           | LDAP      | WinNT                   |
+| Método                                           | LDAP      | Winnt                   |
 |--------------------------------------------------|-----------|-------------------------|
-| [**GetOption (**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-getoption) | Compatible | Interfaz no admitida |
-| [**SetOption (**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-setoption) | Compatible | Interfaz no admitida |
+| [**GetOption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-getoption) | Compatible | No se admite la interfaz |
+| [**Setoption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-setoption) | Compatible | No se admite la interfaz |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadscollection"></a>Compatibilidad del proveedor con IADsCollection
 
 
 
-| Método                                                | LDAP                    | WinNT       |
+| Método                                                | LDAP                    | Winnt       |
 |-------------------------------------------------------|-------------------------|-------------|
-| [**Agréguela**](/windows/desktop/api/Iads/nf-iads-iadscollection-add)                     | Interfaz no admitida | No compatible |
-| [**obtener \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscollection-get__newenum) | Interfaz no admitida | Compatible   |
-| [**GetObject**](/windows/desktop/api/Iads/nf-iads-iadscollection-getobject)         | Interfaz no admitida | Compatible   |
-| [**Retirar**](/windows/desktop/api/Iads/nf-iads-iadscollection-remove)               | Interfaz no admitida | Compatible   |
+| [**Añadir**](/windows/desktop/api/Iads/nf-iads-iadscollection-add)                     | No se admite la interfaz | No compatible |
+| [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscollection-get__newenum) | No se admite la interfaz | Compatible   |
+| [**Getobject**](/windows/desktop/api/Iads/nf-iads-iadscollection-getobject)         | No se admite la interfaz | Compatible   |
+| [**Quitar**](/windows/desktop/api/Iads/nf-iads-iadscollection-remove)               | No se admite la interfaz | Compatible   |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsmembers"></a>Compatibilidad del proveedor con IADsMembers
 
 
 
-| Propiedad                                           | LDAP                                                      | WinNT       |
+| Propiedad                                           | LDAP                                                      | Winnt       |
 |----------------------------------------------------|-----------------------------------------------------------|-------------|
-| [**Contabiliza**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                       | Compatible con GroupCollection, pero no con UserCollection | No compatible |
-| [**Filter**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                      | Compatible                                                 | Compatible   |
-| Método                                             | LDAP                                                      | WinNT       |
-| [**obtener \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsmembers-get__newenum) | Compatible                                                 | Compatible   |
+| [**Contar**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                       | Compatible con GroupCollection, pero no con UserCollection | No compatible |
+| [**Filtrar**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                      | Compatible                                                 | Compatible   |
+| Método                                             | LDAP                                                      | Winnt       |
+| [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsmembers-get__newenum) | Compatible                                                 | Compatible   |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadspathname"></a>Compatibilidad del proveedor con IADsPathname
 
 
 
-| Propiedad                                                    | LDAP      | WinNT       |
+| Propiedad                                                    | LDAP      | Winnt       |
 |-------------------------------------------------------------|-----------|-------------|
 | [**EscapedMode**](/windows/desktop/api/Iads/nn-iads-iadspathname)                         | Compatible | Compatible   |
-| Método                                                      | LDAP      | WinNT       |
-| [**Conjunto**](/windows/desktop/api/Iads/nf-iads-iadspathname-set)                             | Compatible | Compatible   |
+| Método                                                      | LDAP      | Winnt       |
+| [**Establecer**](/windows/desktop/api/Iads/nf-iads-iadspathname-set)                             | Compatible | Compatible   |
 | [**SetDisplayType**](/windows/desktop/api/Iads/nf-iads-iadspathname-setdisplaytype)       | Compatible | Compatible   |
 | [**Recuperar**](/windows/desktop/api/Iads/nf-iads-iadspathname-retrieve)                   | Compatible | Compatible   |
 | [**GetNumElements**](/windows/desktop/api/Iads/nf-iads-iadspathname-getnumelements)       | Compatible | Compatible   |
@@ -457,21 +457,21 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsprintqueue"></a>Compatibilidad del proveedor con IADsPrintQueue
 
 
 
-| Propiedad                                     | LDAP        | WinNT       |
+| Propiedad                                     | LDAP        | Winnt       |
 |----------------------------------------------|-------------|-------------|
 | [**PrinterPath**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)        | Compatible   | No compatible |
 | [**Modelo**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)              | Compatible   | Compatible.  |
-| [**Tipo**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | No compatible | Compatible   |
+| [**Datatype**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | No compatible | Compatible   |
 | [**PrintProcessor**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)     | No compatible | Compatible   |
 | [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)        | Compatible   | Compatible   |
-| [**Location**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Compatible   | Compatible   |
-| [**StartTime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Compatible   | Compatible   |
+| [**Ubicación**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Compatible   | Compatible   |
+| [**Starttime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Compatible   | Compatible   |
 | [**UntilTime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Compatible   | Compatible   |
 | [**DefaultJobPriority**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue) | No compatible | Compatible   |
 | [**Priority**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Compatible   | Compatible   |
@@ -481,16 +481,16 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsprintqueueoperations"></a>Compatibilidad del proveedor con IADsPrintQueueOperations
 
 
 
-| Propiedad                                                | LDAP      | WinNT      |
+| Propiedad                                                | LDAP      | Winnt      |
 |---------------------------------------------------------|-----------|------------|
-| [**Status**](/windows/desktop/api/Iads/nn-iads-iadsprintqueueoperations)              | Compatible | Compatible  |
-| Método                                                  | LDAP      | WinNT      |
+| [**Estado**](/windows/desktop/api/Iads/nn-iads-iadsprintqueueoperations)              | Compatible | Compatible  |
+| Método                                                  | LDAP      | Winnt      |
 | [**Pausar**](/windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-pause)         | Compatible | Compatible. |
 | [**PrintJobs**](/windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-printjobs) | Compatible | Compatible  |
 | [**Purgar**](/windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-purge)         | Compatible | Compatible  |
@@ -498,11 +498,11 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

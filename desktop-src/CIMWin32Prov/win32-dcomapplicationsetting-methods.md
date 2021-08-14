@@ -1,18 +1,18 @@
 ---
-description: La \_ clase DCOMApplicationSetting de Win32 expone los métodos siguientes.
+description: La clase \_ DCOMApplicationSetting de Win32 expone los métodos siguientes.
 ms.assetid: E20E0998-B895-4137-B7F5-10F700A121FF
 ms.tgt_platform: multiple
-title: Métodos Win32_DCOMApplicationSetting
+title: Win32_DCOMApplicationSetting métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46de2d900de05b4ef7af56e1f87763662f769c2f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: af8ffd4f2a264c74409052921b0985a622f3097ab2adc17f51a2c09cc5da5288
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118172258"
 ---
-# <a name="win32_dcomapplicationsetting-methods"></a>\_Métodos DCOMApplicationSetting de Win32
+# <a name="win32_dcomapplicationsetting-methods"></a>Métodos \_ DCOMApplicationSetting de Win32
 
 La [**clase \_ DCOMApplicationSetting de Win32**](win32-dcomapplicationsetting.md) expone los métodos siguientes.
 

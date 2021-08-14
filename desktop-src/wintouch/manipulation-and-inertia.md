@@ -3,24 +3,24 @@ title: Manipulaciones e inercia
 description: Esta sección contiene temas relacionados con las manipulaciones y la inercia.
 ms.assetid: ba56fa56-c74f-47ac-a15c-ba82a0521995
 keywords:
-- Windows Touch, manipulaciones
-- Windows Touch, inercia
+- Windows Táctil, manipulaciones
+- Windows Táctil, inercia
 - manipulaciones, acerca de
 - inercia, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a55def8acb5f3dcf517ae90f4f220511e0650a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03d47661630fd0cc3f14125d1590816145d48a0f3485cedde68c76b52064eb4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199493"
 ---
 # <a name="manipulations-and-inertia"></a>Manipulaciones e inercia
 
 Esta sección contiene temas relacionados con las manipulaciones y la inercia.
 
-Esta sección consta de los siguientes temas.
+Esta sección consta de los temas siguientes.
 
 
 
@@ -31,7 +31,7 @@ Esta sección consta de los siguientes temas.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -40,9 +40,9 @@ Esta sección consta de los siguientes temas.
 [Guía de programación](programming-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

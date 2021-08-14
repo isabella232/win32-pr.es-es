@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_SAVERESTORE (commctrl. h)
-description: Envíe este mensaje para iniciar el guardado o la restauración de un estado de la barra de herramientas.
+title: TB_SAVERESTORE mensaje (Commctrl.h)
+description: Envíe este mensaje para iniciar la guardado o restauración de un estado de la barra de herramientas.
 ms.assetid: 59f51d07-cd08-4d6f-9d19-614064ba6f20
 keywords:
-- TB_SAVERESTORE controles de mensajes de Windows
+- TB_SAVERESTORE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e87e4ddbed87e81a88c8711c9931dcf95cf9e59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94d04c16fda40bf66736431a684398eddf313529c669cc6db9ec49fbaad4f6f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103904987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168035"
 ---
-# <a name="tb_saverestore-message"></a>\_Mensaje SAVERESTORE TB
+# <a name="tb_saverestore-message"></a>Mensaje \_ SAVERESTORE de TB
 
-Envíe este mensaje para iniciar el guardado o la restauración de un estado de la barra de herramientas.
+Envíe este mensaje para iniciar la guardado o restauración de un estado de la barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -34,14 +34,14 @@ Envíe este mensaje para iniciar el guardado o la restauración de un estado de 
 *wParam* 
 </dt> <dd>
 
-Marca guardar o restaurar. Si este parámetro es **true**, se guarda la información. Si es **false**, se restaura la información.
+Guardar o restaurar marca. Si este parámetro es **TRUE**, se guarda la información. Si es **FALSE**, se restaura la información.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TBSAVEPARAMS**](/windows/win32/api/commctrl/ns-commctrl-tbsaveparamsa) que especifica la clave del registro, la subclave y el nombre del valor de la información de estado de la barra de herramientas.
+Puntero a una [**estructura TBSAVEPARAMS**](/windows/win32/api/commctrl/ns-commctrl-tbsaveparamsa) que especifica la clave del Registro, la subclave y el nombre de valor para la información de estado de la barra de herramientas.
 
 </dd> </dl>
 
@@ -49,21 +49,21 @@ Puntero a una estructura [**TBSAVEPARAMS**](/windows/win32/api/commctrl/ns-commc
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para la versión 4,72 y anteriores, para usar este mensaje para guardar o restaurar una barra de herramientas, la ventana primaria del control de barra de herramientas debe implementar un controlador para el código de notificación [ \_ GETBUTTONINFO de TBN](tbn-getbuttoninfo.md) . La barra de herramientas emite esta notificación para recuperar información sobre cada botón a medida que se restaura.
+Para la versión 4.72 y anteriores, para usar este mensaje para guardar o restaurar una barra de herramientas, la ventana primaria del control de barra de herramientas debe implementar un controlador para el código de [notificación \_ GETBUTTONINFO de TBN.](tbn-getbuttoninfo.md) La barra de herramientas emite esta notificación para recuperar información sobre cada botón a medida que se restaura.
 
-La versión 5,80 incluye una nueva opción de guardar y restaurar. Al principio del proceso y, cuando se guarda o se restaura cada botón, la aplicación recibirá una notificación [TBN \_ Save](tbn-save.md) o [TBN \_ restore](tbn-restore.md) . Para usar esta opción, debe implementar controladores de notificación para proporcionar al shell la información de mapa de bits y de estado que necesita para guardar o restaurar correctamente el estado de la barra de herramientas.
+La versión 5.80 incluye una nueva opción de guardar o restaurar. Al principio del proceso y, a medida que se guarde o restaure cada botón, la aplicación recibirá una notificación [ \_ TBN SAVE](tbn-save.md) o [TBN \_ RESTORE.](tbn-restore.md) Para usar esta opción, debe implementar controladores de notificación para proporcionar al Shell la información de mapa de bits y estado que necesita para guardar o restaurar correctamente el estado de la barra de herramientas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TB \_ SAVERESTOREW** (Unicode) y **TB \_ SAVERESTOREA** (ANSI)<br/>             |
 
 

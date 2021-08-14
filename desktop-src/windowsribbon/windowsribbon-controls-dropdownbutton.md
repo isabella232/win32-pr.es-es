@@ -1,19 +1,19 @@
 ---
-title: Botón Drop-Down
-description: El botón Drop-Down está compuesto de un botón en el que, cuando se hace clic en él, se muestra una lista desplegable de elementos mutuamente excluyentes.
+title: Drop-Down botón de configuración
+description: El Drop-Down está formado por un botón que, al hacer clic en él, muestra una lista desplegable de elementos mutuamente excluyentes.
 ms.assetid: 41c5da07-43f7-4544-83be-248941cb8633
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e87e6a776dd705fe503e5e93ec601baf6cc2b3cf
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 66945384d7df3e3ba656f75baf0661001022fa762690dc9c3ffd819ff1096691
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "104359472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202561"
 ---
-# <a name="drop-down-button"></a>Botón Drop-Down
+# <a name="drop-down-button"></a>Drop-Down botón de configuración
 
-El botón Drop-Down está compuesto de un botón en el que, cuando se hace clic en él, se muestra una lista desplegable de elementos mutuamente excluyentes.
+El Drop-Down está formado por un botón que, al hacer clic en él, muestra una lista desplegable de elementos mutuamente excluyentes.
 
 -   [Detalles](#details)
 -   [Propiedades del botón desplegable](#drop-down-button-properties)
@@ -21,26 +21,26 @@ El botón Drop-Down está compuesto de un botón en el que, cuando se hace clic 
 
 ## <a name="details"></a>Detalles
 
-Este control es útil para exponer elementos estrechamente relacionados en los casos en los que no hay ningún valor predeterminado obvio disponible y donde los elementos individuales se pueden representar mediante una imagen, texto o ambos.
+Este control es útil para exponer elementos estrechamente relacionados en casos en los que no hay ningún valor predeterminado obvio disponible y donde los elementos individuales se pueden representar mediante una imagen, texto o ambos.
 
-La siguiente captura de pantalla muestra el botón Drop-Down de la cinta de opciones en una cinta de opciones de ejemplo.
+En la siguiente captura de pantalla se muestra el botón de Drop-Down en una cinta de opciones de ejemplo.
 
-![captura de pantalla de un control DropDownButton en una cinta de opciones de ejemplo.](images/controls/dropdownbutton.png)
+![captura de pantalla de un control dropdownbutton en una cinta de opciones de ejemplo.](images/controls/dropdownbutton.png)
 
-## <a name="drop-down-button-properties"></a>Drop-Down propiedades del botón
+## <a name="drop-down-button-properties"></a>propiedades Drop-Down botón de configuración
 
-El marco de cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el control de botón de Drop-Down.
+El marco de la cinta de opciones define una colección [de claves de propiedad](windowsribbon-reference-properties.md) para el Drop-Down control Button.
 
-Normalmente, una propiedad de botón de Drop-Down se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control a través de una llamada al método [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) . Se controla el evento de invalidación y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+Normalmente, una propiedad Drop-Down Button se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El evento de invalidación se controla y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-No se ejecuta el método de devolución de llamada [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) y la aplicación solicitó un valor de propiedad actualizado hasta que el marco de trabajo requiera la propiedad. Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
+El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación ha consultado un valor de propiedad actualizado, hasta que el marco requiere la propiedad . Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
 
 > [!Note]  
-> En algunos casos, una propiedad se puede recuperar a través del método [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) .
+> En algunos casos, una propiedad se puede recuperar mediante el método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-En la tabla siguiente se enumeran las claves de propiedad que están asociadas al control de botón de Drop-Down.
+En la tabla siguiente se enumeran las claves de propiedad asociadas al control Drop-Down control Button.
 
 
 
@@ -58,20 +58,20 @@ En la tabla siguiente se enumeran las claves de propiedad que están asociadas a
 <tbody>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-categories.md">UI_PKEY_Categories</a></td>
-<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> y <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> y <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.<br/> Si todos los elementos secundarios están deshabilitados, el marco de trabajo establece <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> en false (0). De lo contrario, si se habilitan uno o más elementos secundarios, UI_PKEY_Enabled se establece en true (-1).
+<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br/> Si todos los elementos secundarios están deshabilitados, el marco <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> en false (0). De lo contrario, si uno o varios elementos secundarios están habilitados, UI_PKEY_Enabled se establece en true (-1).
 <blockquote>
 [!Important]<br />
-La propiedad <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> para el control de botón Drop-Down debe invalidarse después de habilitar o deshabilitar uno o varios elementos secundarios. Esto garantiza que el marco de trabajo consulta el valor de propiedad actualizado y actualiza el estado del control de botón Drop-Down en la interfaz de usuario de la cinta de opciones.
+La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> propiedad del control Drop-Down Button debe invalidarse después de que uno o varios elementos secundarios estén habilitados o deshabilitados. Esto garantiza que el marco de trabajo consulta el valor de propiedad actualizado y actualiza el estado del control Drop-Down Button en la interfaz de usuario de la cinta de opciones.
 </blockquote>
 <br/> <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-itemssource.md">UI_PKEY_ItemsSource</a></td>
-<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> y <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a></td>
@@ -91,10 +91,10 @@ La propiedad <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_P
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-selecteditem.md">UI_PKEY_SelectedItem</a></td>
-<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> y <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.
+<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.
 <blockquote>
 [!Note]<br />
-Si el comando asociado al control se invalida mediante una llamada a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand"><strong>IUIFramework:: InvalidateUICommand</strong></a>, el marco consulta esta propiedad cuando <code>UI_INVALIDATIONS_VALUE</code> se pasa como el valor de <em>Flags</em>.
+Si el comando asociado al control se invalida mediante una llamada a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand"><strong>IUIFramework::InvalidateUICommand</strong></a>, el marco consulta esta propiedad cuando se pasa como el valor de <code>UI_INVALIDATIONS_VALUE</code> <em>las marcas</em>.
 </blockquote>
 <br/></td>
 </tr>
@@ -125,7 +125,7 @@ Si el comando asociado al control se invalida mediante una llamada a <a href="/w
 
 <dl> <dt>
 
-[Biblioteca de controles de Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controles del marco de opciones](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento de marcado DropDownButton**](windowsribbon-element-dropdownbutton.md)

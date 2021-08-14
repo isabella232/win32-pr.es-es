@@ -1,29 +1,29 @@
 ---
 title: DerivedTypeExample
-description: En este ejemplo se escriben y se leen los tipos derivados mediante las funciones auxiliares de C++ generadas por Wsutil. Vea \_ \_ \_ \_ asignación de campos de atributos de tipo WS para obtener más información sobre las descripciones de tipos derivados.
+description: En este ejemplo se escriben y se leen tipos derivados mediante funciones auxiliares de C++ generadas por Wsutil. Vea ASIGNACIÓN \_ DE CAMPOS DE ATRIBUTO DE TIPO \_ \_ \_ WS para obtener más información sobre las descripciones de tipos derivados.
 ms.assetid: 279663c0-8797-4f87-aaec-8cb8d4046a05
 keywords:
 - DerivedTypeExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 049f008b65be7404c9fdfe57ae98084c8b69167b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e4dbb9bc95a54dfc6315279c3ed9221122d35091d4b06c0bf815c67cb9377bf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105714155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118026228"
 ---
 # <a name="derivedtypeexample"></a>DerivedTypeExample
 
-En este ejemplo se escriben y se leen los tipos derivados mediante las funciones auxiliares de C++ generadas por Wsutil. Vea [**\_ asignación de \_ \_ campos de \_ atributos de tipo WS**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping) para obtener más información sobre las descripciones de tipos derivados.
+En este ejemplo se escriben y se leen tipos derivados mediante funciones auxiliares de C++ generadas por Wsutil. Vea [**ASIGNACIÓN \_ DE CAMPOS DE ATRIBUTO DE TIPO \_ \_ \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping) para obtener más información sobre las descripciones de tipos derivados.
 
--   [DerivedType. cpp](#derivedtypecpp)
--   [DerivedType. xsd](#derivedtypexsd)
+-   [DerivedType.cpp](#derivedtypecpp)
+-   [DerivedType.xsd](#derivedtypexsd)
 -   [Temas relacionados](#related-topics)
 
-## <a name="derivedtypecpp"></a>DerivedType. cpp
+## <a name="derivedtypecpp"></a>DerivedType.cpp
 
 
 ```C++
@@ -372,7 +372,7 @@ Exit:
 
 
 
-## <a name="derivedtypexsd"></a>DerivedType. xsd
+## <a name="derivedtypexsd"></a>DerivedType.xsd
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>
@@ -405,12 +405,12 @@ Exit:
 
 <dl> <dt>
 
-[**\_asignación de \_ campos de atributo de tipo WS \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping)
+[**ASIGNACIÓN DE \_ CAMPOS DE ATRIBUTO DE \_ \_ TIPO \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

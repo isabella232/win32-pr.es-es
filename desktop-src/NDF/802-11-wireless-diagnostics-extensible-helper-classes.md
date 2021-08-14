@@ -1,49 +1,49 @@
 ---
-title: 802,11 clases auxiliares extensibles de diagnóstico inalámbrico
-description: La infraestructura integrada de diagnósticos inalámbricos tiene dos puntos de extensión. Ayudante primario ClassPurposeRevised aplicación auxiliar extensible Wi-Fi (RNWF) Complementos de ClassDiagnosess relacionados con las extensiones de conectividad 802,11.
+title: 802.11 Clases auxiliares extensibles de diagnóstico inalámbrico
+description: La infraestructura de diagnóstico inalámbrica integrada tiene dos puntos de extensión. Clase auxiliar primariaPurposeRevised Native Wifi (RNWF) Clase auxiliar extensibleDiagnoses problemas relacionados con las extensiones de conectividad 802.11.
 ms.assetid: b54f836d-4fae-4e71-bf7b-af5a6e9e615c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bde49561c68044157c9d518571b8241c49dcf25
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: a3b7ac72cb42b12a96e5c57db0897a13d49d76370126e119ac2f5ed457d55c9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104533016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133450"
 ---
-# <a name="80211-wireless-diagnostics-extensible-helper-classes"></a>802,11 clases auxiliares extensibles de diagnóstico inalámbrico
+# <a name="80211-wireless-diagnostics-extensible-helper-classes"></a>802.11 Clases auxiliares extensibles de diagnóstico inalámbrico
 
-La infraestructura integrada de diagnósticos inalámbricos tiene dos puntos de extensión.
+La infraestructura de diagnóstico inalámbrica integrada tiene dos puntos de extensión.
 
 | Clase auxiliar primaria                                | Propósito                                                           |
 |----------------------------------------------------|-------------------------------------------------------------------|
-| Clase auxiliar extensible de WiFi nativo revisado (RNWF) | Diagnostica problemas relacionados con las extensiones de conectividad 802,11.       |
-| Clase auxiliar extensible L2Security                 | Diagnostica los problemas relacionados con las extensiones de protocolo de seguridad de nivel 2. |
+| Revised Native Wifi (RNWF) Extensible Helper Class | Diagnostica problemas relacionados con las extensiones de conectividad 802.11.       |
+| L2Security Extensible Helper Class                 | Diagnostica problemas relacionados con las extensiones del protocolo de seguridad de nivel 2. |
 
 
 
- 
+ 
 
 > [!Note]  
-> Una clase auxiliar de terceros debe registrarse en ambas clases auxiliares primarias para asegurarse de que se llama a la clase de terceros. Para obtener más información sobre el registro, vea [registrar extensiones de clase auxiliares de NDF](registering-ndf-helper-class-extensions.md).
+> Una clase auxiliar de terceros debe registrarse con ambas clases auxiliares primarias para asegurarse de que se llama a la clase de terceros. Para obtener más información sobre el registro, vea [Registering NDF Helper Class Extensions](registering-ndf-helper-class-extensions.md).
 
- 
+ 
 
-## <a name="rnwf-extensible-helper-class"></a>Clase auxiliar extensible RNWF
+## <a name="rnwf-extensible-helper-class"></a>RNWF Extensible Helper (clase auxiliar)
 
-Nombre de clase auxiliar principal
+Nombre de clase del asistente primario
 
 ``` syntax
 Parent = L"RNWF Extensible Helper Class";
 ```
 
-La clase auxiliar extensible de Wi-Fi nativa revisada (RNWF) es la principal de las clases auxiliares de terceros que diagnostican problemas relacionados con la extensión de los protocolos 802,11 usados por Wi-Fi nativo.
+La clase auxiliar extensible Revised Native Wifi (RNWF) es la principal para las clases auxiliares de terceros que diagnostican problemas relacionados con la extensión de los protocolos 802.11 usados por Native Wifi.
 
 Los dos atributos clave proporcionados por la clase auxiliar RNWF son el GUID de la interfaz donde se produjo el problema y el contexto de conexión.
 
--   GUID de la interfaz: este atributo se denomina "interface ID" y es de tipo **en \_ GUID**.
+-   GUID de interfaz: este atributo se denomina "Id. de interfaz" y es de tipo **AT \_ GUID**.
 
--   Contexto de conexión: este atributo se denomina ID. de red y es del tipo en la \_ cadena de octeto \_ . En realidad, esta cadena es un búfer de la \_ \_ estructura de identificador de WLAN WDIAG IHV \_ definida en Wlanihv. h. Esta estructura se define de la siguiente manera.
+-   Contexto de conexión: este atributo se denomina Id. de red y es de tipo AT \_ OCTET \_ STRING. Esta cadena es realmente un búfer de la estructura WDIAG \_ IHV \_ WLAN ID definida en \_ Wlanuyav.h. Esta estructura se define como se muestra a continuación.
 
     ``` syntax
 #define WDIAG_IHV_WLAN_ID_FLAG_SECURITY_ENABLED               0x00000001
@@ -60,39 +60,39 @@ Los dos atributos clave proporcionados por la clase auxiliar RNWF son el GUID de
     ```
 
 > [!Note]  
-> **WDIAG \_ La \_ seguridad del indicador de identificador de WLAN de IHV \_ \_ \_ \_ habilitada** es el único valor de **dwFlags** posible.
+> **WDIAG \_ IHV \_ WLAN ID FLAG SECURITY \_ \_ \_ \_ ENABLED** es el único valor **dwFlags** posible.
 
- 
+ 
 
-El atributo coincidente de la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que el tercero debe estar registrado en el registro. Diagnósticos inalámbricos consultará el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llama.
+El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que el tercero debe registrarse en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
 
-En la tabla siguiente se enumeran los atributos coincidentes de la clase auxiliar extensible RNWF.
+En la tabla siguiente se enumeran los atributos correspondientes para la clase auxiliar extensible RNWF.
 
 
 
-| Nombre          | Tipo    | Value                         |
+| Nombre          | Tipo    | Valor                         |
 |---------------|---------|-------------------------------|
-| DiagnosticsID | Registro \_ SZ | \[DiagnosticsID \_ \_ cadena GUID |
+| DiagnosticsID | REG \_ SZ | \[Cadena GUID de DiagnosticsID \_ \_ |
 
 
 
- 
+ 
 
-## <a name="l2security-extensible-helper-class"></a>Clase auxiliar extensible L2Security
+## <a name="l2security-extensible-helper-class"></a>L2Security Extensible Helper Class
 
-Nombre de clase auxiliar principal
+Nombre de clase del asistente primario
 
 ``` syntax
 Parent = L"Extensible L2Sec Helper Class";
 ```
 
-La clase auxiliar extensible de seguridad de nivel 2 (L2Security) es la principal de las clases auxiliares de terceros que diagnostican problemas relacionados con los servicios y módulos de software correspondientes que reemplazan la funcionalidad de seguridad de capa 2.
+La clase auxiliar extensible Seguridad de nivel 2 (L2Security) es la principal para las clases auxiliares de terceros que diagnostican problemas relacionados con los servicios y módulos de software correspondientes que reemplazan a la funcionalidad de seguridad de nivel 2.
 
-Los dos atributos clave proporcionados por la clase auxiliar de seguridad de capa 2 son el GUID de la interfaz donde se produjo el problema y el contexto de conexión.
+Los dos atributos clave proporcionados por la clase auxiliar de seguridad de nivel 2 son el GUID de la interfaz donde se produjo el problema y el contexto de conexión.
 
--   GUID de la interfaz: este atributo se denomina "interface ID" y es de tipo **en \_ GUID**.
+-   GUID de interfaz: este atributo se denomina "Id. de interfaz" y es de tipo **AT \_ GUID**.
 
--   Contexto de conexión: este atributo se denomina ID. de red y es del tipo en la \_ cadena de octeto \_ . En realidad, esta cadena es un búfer de la \_ \_ estructura de identificador de WLAN WDIAG IHV \_ definida en wlanihv. h. Esta estructura se define de la siguiente manera.
+-   Contexto de conexión: este atributo se denomina Id. de red y es de tipo AT \_ OCTET \_ STRING. Esta cadena es realmente un búfer de la estructura WDIAG \_ IHV \_ WLAN ID definida en \_ wlanuyav.h. Esta estructura se define como se muestra a continuación.
 
     ``` syntax
 #define WDIAG_IHV_WLAN_ID_FLAG_SECURITY_ENABLED               0x00000001
@@ -109,61 +109,61 @@ Los dos atributos clave proporcionados por la clase auxiliar de seguridad de cap
     ```
 
 > [!Note]  
-> **WDIAG \_ La \_ seguridad del indicador de identificador de WLAN de IHV \_ \_ \_ \_ habilitada** es el único valor de **dwFlags** posible.
+> **WDIAG \_ IHV \_ WLAN ID FLAG SECURITY \_ \_ \_ \_ ENABLED** es el único valor **dwFlags** posible.
 
- 
+ 
 
-El atributo coincidente de la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que el tercero debe estar registrado en el registro. Diagnósticos inalámbricos consultará el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llama.
+El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que el tercero debe registrarse en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
 
-En la tabla siguiente se enumeran los atributos coincidentes para la clase auxiliar extensible de seguridad de capa 2.
+En la tabla siguiente se enumeran los atributos correspondientes para la clase auxiliar extensible seguridad de capa 2.
 
 
 
-| Nombre          | Tipo    | Value                         |
+| Nombre          | Tipo    | Valor                         |
 |---------------|---------|-------------------------------|
-| DiagnosticsID | Registro \_ SZ | \[DiagnosticsID \_ \_ cadena GUID |
+| DiagnosticsID | REG \_ SZ | \[Cadena GUID de DiagnosticsID \_ \_ |
 
 
 
- 
+ 
 
-## <a name="matching-attributes"></a>Atributos coincidentes
+## <a name="matching-attributes"></a>Atributos de coincidencia
 
 **DiagnosticsID**
 
-802,11 el diagnóstico inalámbrico consultará el *DiagnosticsID* desde el servicio Wi-Fi nativo básico para averiguar si se ha instalado en la conexión cualquier extensión inalámbrica o módulo de seguridad de terceros. Los diagnósticos inalámbricos proporcionarán supuestos a estas clases auxiliares de terceros mediante *DiagnosticsID* como atributo coincidente. Cualquier clase de aplicación auxiliar de terceros debe incluirse en el paquete de controladores asociado e instalarse con él. El *DiagnosticsID* se definirá en el archivo INF del minipuerto como una clave del registro en la directiva [AddReg](https://msdn.microsoft.com/library/ms794514.aspx) .
+802.11 Diagnósticos inalámbricos consultará *diagnosticsID* desde el servicio Wi-Fi nativo principal para averiguar si hay extensiones inalámbricas de terceros o módulos de seguridad instalados e implicados en la conexión. A continuación, diagnósticos inalámbricos proporcionarán hipótesis a estas clases auxiliares de terceros mediante *DiagnosticsID* como atributo de coincidencia. Las clases auxiliares de terceros deben incluirse e instalarse con el paquete de controladores asociado. *DiagnosticsID se* definirá en el archivo INF de miniportador como una clave del Registro en la [directiva AddReg.](https://msdn.microsoft.com/library/ms794514.aspx)
 
 ``` syntax
 HKR,Ndi\IHVExtensions, DiagnosticsID,0, "<Diagnostics ID GUID>"
 ```
 
-Esta clave define el identificador de la clase auxiliar inalámbrica para el módulo de software de terceros. Esta clave es opcional para el marco de extensibilidad, pero es necesaria si la implementación incluye una clase auxiliar inalámbrica IHV que se conecta a NDF y puede diagnosticar problemas de conectividad relacionados con las extensiones de seguridad o inalámbricas de RNWF. Las clases auxiliares de diagnóstico de WLAN de MS consultarán este identificador desde el servicio de configuración automática inalámbrica cuando se instalen los módulos IHV y proporcionarán este identificador como el atributo de referencia o de coincidencia a NDF durante una sesión de diagnóstico para que NDF pueda llamar a la clase de aplicación auxiliar inalámbrica de terceros adecuada cuando sea necesario.
+Esta clave define el identificador de la clase auxiliar inalámbrica para el módulo de software de terceros. Esta clave es opcional para el marco de extensibilidad, pero es necesaria si la implementación incluye una clase auxiliar inalámbrica IHV que se conecta a NDF y puede diagnosticar problemas de conectividad relacionados con las extensiones inalámbricas o de seguridad RNWF. Las clases auxiliares de diagnóstico de MS WLAN consultarán este identificador desde el servicio de configuración automática inalámbrica cuando se instalen módulos IHV y proporcionarán este identificador como referencia o atributo correspondiente a NDF durante una sesión de diagnóstico para que NDF pueda llamar a la clase auxiliar inalámbrica de terceros adecuada cuando sea necesario.
 
-**\[DiagnosticsID \_ \_ cadena GUID\]**
+**\[Cadena GUID de DiagnosticsID \_ \_\]**
 
-Este valor debe ser una cadena con todas las letras mayúsculas. Por ejemplo, "{12345678-9ABC-DEF0-1234-56789ABCDEF0}".
+Este valor debe ser una cadena de todas las letras mayúsculas. Por ejemplo, "{12345678-9ABC-DEF0-1234-56789ABCDEF0}".
 
-## <a name="scope-of-80211-wireless-diagnostics-helper-classes"></a>Ámbito de las clases auxiliares de diagnóstico inalámbrico 802,11
+## <a name="scope-of-80211-wireless-diagnostics-helper-classes"></a>Ámbito de las clases auxiliares de diagnóstico inalámbrico 802.11
 
-802,11 las clases auxiliares de diagnóstico inalámbricos diagnostican actualmente problemas inalámbricos en las siguientes áreas.
+Las clases auxiliares de diagnóstico inalámbrico 802.11 actualmente diagnostican problemas inalámbricos en las áreas siguientes.
 
--   Los problemas de conectividad 802,11, entre los que se incluyen 802,11 Association, 802,11, la configuración de seguridad de 802,11 relativa a los estándares de 802,11 & protocolos admitidos de forma nativa en el sistema operativo y problemas de rendimiento.
--   Problemas de seguridad de nivel 2 con respecto a las configuraciones de 802.1 x y los problemas relacionados con la autenticación de nivel 2 mediante métodos que se admiten de forma nativa en Windows Vista y Windows Server 2008.
--   La configuración no coincide con la configuración de perfil entre el cliente y el punto de acceso, y los servicios y la infraestructura de red.
+-   Cualquier problema de conectividad 802.11, incluida la asociación 802.11, la autenticación 802.11, la configuración de seguridad 802.11 relacionada con los estándares 802.11 & protocolos admitidos de forma nativa en el sistema operativo y problemas de rendimiento.
+-   Problemas de seguridad de nivel 2 con respecto a las configuraciones 802.1x y cualquier problema relacionado con la autenticación de nivel 2 mediante los métodos admitidos de forma nativa en Windows Vista y Windows Server 2008.
+-   La configuración no coincide en la configuración de perfil entre el cliente y el punto de acceso o la infraestructura de red y los servicios.
 
-las clases auxiliares de diagnóstico inalámbrico 802,11 no diagnostican problemas inalámbricos en las siguientes áreas.
+Actualmente, las clases auxiliares de diagnóstico inalámbrico 802.11 no diagnostican problemas inalámbricos en las áreas siguientes.
 
--   Problemas relacionados con las extensiones de terceros 802,11, incluido cualquier configuración de perfil o controlador relacionada con estas extensiones.
+-   Problemas relacionados con las extensiones 802.11 de terceros, incluida cualquier configuración de perfil o controlador relacionada con estas extensiones.
 -   Problemas relacionados con métodos EAP de terceros.
--   Problemas con el controlador de minipuerto inalámbrico.
--   Cualquier problema relacionado con los estándares y el protocolo de seguridad 802,11 y nivel 2 que no se admiten de forma nativa.
--   Problemas de nivel de componente o del sistema que podrían afectar a la conectividad inalámbrica, como la administración de energía, el poco espacio en disco, las condiciones de memoria y los problemas de hardware.
+-   Problemas del controlador de minipuerto inalámbrico.
+-   Cualquier protocolo de seguridad 802.11 y nivel 2 o problemas relacionados con los estándares que no se admiten de forma nativa.
+-   Problemas de nivel de sistema o componente que podrían afectar a la conectividad inalámbrica, como la administración de energía, el poco espacio en disco, las condiciones de memoria y los problemas de hardware.
 
-Además, el diagnóstico inalámbrico 802,11 no analiza los casos de [**HighUtilization**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-highutilization) . Los problemas de rendimiento inalámbrico identificados se analizarán y se indicarán como casos de [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) .
+Además, 802.11 Diagnóstico inalámbrico no analiza los [**casos de HighUtilization.**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-highutilization) Los problemas de rendimiento inalámbrico identificados se analizarán y se notifican [**como casos lowhealth.**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth)
 
- 
+ 
 
- 
+ 
 
 
 

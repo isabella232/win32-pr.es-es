@@ -1,19 +1,19 @@
 ---
-description: Establece la fuente que un control va a utilizar al dibujar texto.
+description: Establece la fuente que va a usar un control al dibujar texto.
 ms.assetid: 7db6b8af-dbec-4c29-8bf7-d7e95d9813c3
-title: Mensaje de WM_SETFONT (Winuser. h)
+title: WM_SETFONT mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fc334e6b8c937759555c471f00ec56254a629c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 811bee30237a64955197588f87866d4a64af89edc640762ec16333839aee9220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104002024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199941"
 ---
-# <a name="wm_setfont-message"></a>Mensaje de WM \_ SETFONT
+# <a name="wm_setfont-message"></a>Mensaje \_ SETFONT de WM
 
-Establece la fuente que un control va a utilizar al dibujar texto.
+Establece la fuente que va a usar un control al dibujar texto.
 
 
 ```C++
@@ -29,14 +29,14 @@ Establece la fuente que un control va a utilizar al dibujar texto.
 *wParam* 
 </dt> <dd>
 
-Identificador de la fuente (**HFONT**). Si este parámetro es **null**, el control utiliza la fuente predeterminada del sistema para dibujar el texto.
+Identificador de la fuente (**HFONT**). Si este parámetro es **NULL,** el control usa la fuente predeterminada del sistema para dibujar texto.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-La palabra de orden inferior de *lParam* especifica si el control debe volver a dibujarse inmediatamente después de establecer la fuente. Si este parámetro es **true**, el control vuelve a dibujarse.
+La palabra de orden bajo *de lParam* especifica si el control se debe volver a dibujar inmediatamente después de establecer la fuente. Si este parámetro es **TRUE,** el control se vuelve a dibujar.
 
 </dd> </dl>
 
@@ -44,17 +44,17 @@ La palabra de orden inferior de *lParam* especifica si el control debe volver a 
 
 Tipo: **LRESULT**
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El mensaje de **WM \_ SETFONT** se aplica a todos los controles, no solo a los de los cuadros de diálogo.
+El **mensaje \_ SETFONT de WM** se aplica a todos los controles, no solo a los de los cuadros de diálogo.
 
-El mejor momento para que el propietario de un control de cuadro de diálogo establezca la fuente del control es cuando recibe el mensaje de [**\_ INITDIALOG de WM**](../dlgbox/wm-initdialog.md) . La aplicación debe llamar a la función [**DeleteObject**](/windows/win32/api/wingdi/nf-wingdi-deleteobject) para eliminar la fuente cuando ya no se necesite; por ejemplo, después de que destruya el control.
+El mejor momento para que el propietario de un control de cuadro de diálogo establezca la fuente del control es cuando recibe el mensaje [**WM \_ INITDIALOG.**](../dlgbox/wm-initdialog.md) La aplicación debe llamar a [**la función DeleteObject**](/windows/win32/api/wingdi/nf-wingdi-deleteobject) para eliminar la fuente cuando ya no sea necesaria; por ejemplo, después de destruir el control.
 
 El tamaño del control no cambia como resultado de recibir este mensaje. Para evitar el recorte de texto que no cabe dentro de los límites del control, la aplicación debe corregir el tamaño de la ventana de control antes de establecer la fuente.
 
-Cuando un cuadro de diálogo utiliza el estilo de [DS \_ SetFont](../dlgbox/about-dialog-boxes.md) para establecer el texto en sus controles, el sistema envía el mensaje de **WM \_ SetFont** al procedimiento del cuadro de diálogo antes de crear los controles. Una aplicación puede crear un cuadro de diálogo que contenga el estilo de DS \_ SETFONT mediante una llamada a cualquiera de las siguientes funciones:
+Cuando un cuadro de diálogo usa el estilo [ \_ SETFONT](../dlgbox/about-dialog-boxes.md) de DS para establecer el texto en sus controles, el sistema envía el mensaje **WM \_ SETFONT** al procedimiento del cuadro de diálogo antes de crear los controles. Una aplicación puede crear un cuadro de diálogo que contenga el estilo SETFONT de DS llamando a \_ cualquiera de las funciones siguientes:
 
 -   [**CreateDialogIndirect**](/windows/win32/api/winuser/nf-winuser-createdialogindirecta)
 -   [**CreateDialogIndirectParam**](/windows/win32/api/winuser/nf-winuser-createdialogindirectparama)
@@ -65,15 +65,15 @@ Cuando un cuadro de diálogo utiliza el estilo de [DS \_ SetFont](../dlgbox/abou
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -98,13 +98,13 @@ Cuando un cuadro de diálogo utiliza el estilo de [DS \_ SetFont](../dlgbox/abou
 [**MAKELPARAM**](/windows/win32/api/winuser/nf-winuser-makelparam)
 </dt> <dt>
 
-[**GETFONT de WM \_**](wm-getfont.md)
+[**WM \_ GETFONT**](wm-getfont.md)
 </dt> <dt>
 
-[**INITDIALOG de WM \_**](../dlgbox/wm-initdialog.md)
+[**WM \_ INITDIALOG**](../dlgbox/wm-initdialog.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Windows](windows.md)

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_SETSTATE (commctrl. h)
+title: TB_SETSTATE mensaje (Commctrl.h)
 description: Establece el estado del botón especificado en una barra de herramientas.
 ms.assetid: 68633b58-8d21-4931-b01f-32a66bda37b1
 keywords:
-- TB_SETSTATE controles de mensajes de Windows
+- TB_SETSTATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7aa46dc68d9af5559e580e697bf6893b15051cff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aa9ee112e4bbbe9c64ceab6205d67ecd6ae9653df97be55991be38eb5d181d3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167475"
 ---
-# <a name="tb_setstate-message"></a>Mensaje de TB \_ SETSTATE
+# <a name="tb_setstate-message"></a>Mensaje \_ SETSTATE de TB
 
 Establece el estado del botón especificado en una barra de herramientas.
 
@@ -39,23 +39,23 @@ Identificador de comando del botón.
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es una combinación de los valores que aparecen en [los Estados de los botones](toolbar-button-states.md)de la barra de herramientas. El valor de [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) debe ser cero.
+[**LOWORD es una combinación**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de valores enumerados en Estados [del botón de la](toolbar-button-states.md)barra de herramientas . [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,27 +1,27 @@
 ---
-description: Se utiliza para comprobar que un mensaje no se ha cambiado durante el tránsito.
+description: Se usa para comprobar que un mensaje no se ha cambiado durante el tránsito.
 ms.assetid: a4bb67fb-8217-4e76-b1bf-461ccd39f58a
-title: 'Programa C de ejemplo: crear un HMAC'
+title: 'Programa C de ejemplo: Creación de un HMAC'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a18da226c9e88d535b34fe9c319a042132749e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25d4f6a91025ed159e580cfcb9780527536a31f4f72ae54d5a821a328d45abec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765893"
 ---
-# <a name="example-c-program-creating-an-hmac"></a>Programa C de ejemplo: crear un HMAC
+# <a name="example-c-program-creating-an-hmac"></a>Programa C de ejemplo: Creación de un HMAC
 
-Normalmente, una suma de comprobación de autenticación de mensajes con hash (HMAC) se usa para comprobar que un mensaje no se ha cambiado durante el tránsito. Ambas partes del mensaje deben tener una clave secreta compartida. El remitente combina la clave y el mensaje en una cadena, crea un resumen de la cadena mediante un algoritmo como SHA-1 o MD5 y transmite el mensaje y la síntesis. El receptor combina la clave compartida con el mensaje, aplica el algoritmo adecuado y compara la síntesis obtenida con la que ha transmitido el remitente. Si los resúmenes son exactamente iguales, el mensaje no se ha alterado.
+Normalmente, se usa una suma de comprobación de autenticación de mensajes hash (HMAC) para comprobar que un mensaje no se ha cambiado durante el tránsito. Ambas partes del mensaje deben tener una clave secreta compartida. El remitente combina la clave y el mensaje en una cadena, crea una síntesis de la cadena mediante un algoritmo como SHA-1 o MD5 y transmite el mensaje y la síntesis. El receptor combina la clave compartida con el mensaje, aplica el algoritmo adecuado y compara el resumen obtenido con el transmitido por el remitente. Si los resúmenes son exactamente iguales, el mensaje no se alteró.
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
--   Adquirir un identificador a un [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) llamando a [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Adquirir un identificador para un proveedor [*de servicios criptográficos*](../secgloss/c-gly.md) mediante una [**llamada a CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
 -   Derivar una clave simétrica de una cadena de bytes mediante una llamada a [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash), [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)y [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
--   Usar la clave simétrica para crear un objeto hash HMAC llamando a [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) y [**CryptSetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam).
--   Aplicar un algoritmo hash a un mensaje mediante una llamada a [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
--   Recuperar el hash llamando a [**CryptGetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam).
+-   Uso de la clave simétrica para crear un objeto hash HMAC mediante una llamada a [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) y [**CryptSetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam).
+-   Aplica un algoritmo hash a un mensaje [**llamando a CryptHashData.**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)
+-   Recuperar el hash mediante una [**llamada a CryptGetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam).
 
 
 ```C++

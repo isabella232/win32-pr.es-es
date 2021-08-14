@@ -1,19 +1,19 @@
 ---
-description: Especifica la protección de HDCP High-Bandwidth Digital Content Protection (HDCP).
+description: Especifica hdcp High-Bandwidth protección Content Protection digital (HDCP).
 ms.assetid: 3C4B6E66-D68B-4BE9-A821-8F91EF28B70B
-title: MFPROTECTION_HDCP atributo (Mfidl. h)
+title: MFPROTECTION_HDCP atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5126bbab3c030a07cfee3d5b3a1f187079e1f869
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ed0f0412165f1376a298486894654b2282143113e05d99d3b167cbe8fcc8163
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872479"
 ---
-# <a name="mfprotection_hdcp-attribute"></a>\_Atributo MFPROTECTION HDCP
+# <a name="mfprotection_hdcp-attribute"></a>Atributo MFPROTECTION \_ HDCP
 
-Especifica la protección de HDCP High-Bandwidth Digital Content Protection (HDCP).
+Especifica hdcp High-Bandwidth protección Content Protection digital (HDCP).
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -23,19 +23,19 @@ Especifica la protección de HDCP High-Bandwidth Digital Content Protection (HDC
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

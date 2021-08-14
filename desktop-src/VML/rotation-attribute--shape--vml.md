@@ -1,26 +1,26 @@
 ---
-title: Atributo Rotation (forma) (VML)
-description: Atributo Rotation (forma) (VML)
+title: Atributo Rotation (Shape)(VML)
+description: Atributo Rotation (Shape)(VML)
 ms.assetid: e1a648a4-1e87-4bec-90b2-6d3a57c0dba0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f03b114c885cbeaf5392068e79cd7f63bbc1fc52
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d0f73b55b57a7b9d9d7f14cdae4ec71a38a1e38246a4430339db23f35a339430
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754140"
 ---
-# <a name="rotation-attribute-shapevml"></a>Atributo Rotation (forma) (VML)
+# <a name="rotation-attribute-shapevml"></a>Atributo Rotation (Shape)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define el ángulo en el que se gira una forma. Lectura/escritura [VgAngleInDegrees](msdn-online-vml-vgangleindegrees-data-type.md).
+Define el ángulo en el que se gira una forma. Lectura/escritura [DvangleInDegrees.](msdn-online-vml-vgangleindegrees-data-type.md)
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Define el ángulo en el que se gira una forma. Lectura/escritura [VgAngleInDegre
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "Rotation: *Expression* " >
+<v: *element* style="rotation: *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Rotation = "*expresión*"
+*element* .rotation="*expression*"
 
-*expresión* = de *elemento*. Rotation
+*expresión* = *elemento*.rotation
 
 **Comentarios:**
 
-El valor en grados puede ser positivo o negativo, y los valores mayores que 360 se pueden dividir en un círculo de 360 grados. Los ángulos positivos están a la derecha. El valor predeterminado es 0.
+El valor en grados puede ser positivo o negativo, y los valores mayores de 360 se modularizan a un círculo de 360 grados. Los ángulos positivos son en el sentido de las agujas del reloj. El valor predeterminado es 0.
 
-Tenga en cuenta que se cambia la posición de la forma después de la rotación para reflejar las nuevas coordenadas del cuadro de límite.
+Tenga en cuenta que la forma se cambia de posición después de la rotación para reflejar las nuevas coordenadas del cuadro de límite.
 
-Tenga en cuenta también que para el scripting, no se utiliza el atributo de **estilo** y ese **giro** se trata como un atributo directo de la forma.
+Tenga en cuenta también que para el scripting, no se usa el atributo **de** estilo y que **Rotation** se trata como un atributo directo de la forma.
 
-El atributo **Rotation** es similar al atributo **rotación** HTML estándar para los estilos.
+El **atributo Rotation** es similar al atributo de rotación HTML estándar para los estilos. 
 
 *Atributo estándar de VML*
 
@@ -63,8 +63,8 @@ El rectángulo se inclinará 45 grados.
 
 
 
-[Ejemplo del atributo Rotation](/previous-versions/bb264091(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo de rotación](/previous-versions/bb264091(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

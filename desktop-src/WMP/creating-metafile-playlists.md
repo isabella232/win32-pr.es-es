@@ -1,12 +1,12 @@
 ---
-title: Crear listas de reproducción de metarchivo
-description: Crear listas de reproducción de metarchivo
+title: Creación de listas de reproducción de metarchivo
+description: Creación de listas de reproducción de metarchivo
 ms.assetid: 0afe3aaa-bcd1-4060-8772-add50f3b6bac
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, crear
+- Windows Listas de reproducción de metarchivos multimedia, creación
 - listas de reproducción, crear
-- listas de reproducción de metarchivos, crear
-- crear listas de reproducción de metarchivo de Windows Media
+- listas de reproducción de metarchivo, crear
+- crear listas Windows de metarchivo multimedia
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -14,39 +14,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d4acff6452640c3f0b66219b765a931033b9f3a8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 765d8ab507c2ce502f1cad021696b0fc2ecfd110da8dfa95ccc84a43a8987561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750472"
 ---
-# <a name="creating-metafile-playlists"></a>Crear listas de reproducción de metarchivo
+# <a name="creating-metafile-playlists"></a>Creación de listas de reproducción de metarchivo
 
-Puede crear una lista de reproducción mediante cualquier editor de texto, como el Bloc de notas de Microsoft. Abra el editor de texto. Escriba las entradas de script que desea implementar. Una vez que haya terminado de escribir en el Bloc de notas, guarde el archivo con un nombre de archivo y una extensión de nombre de archivo apropiados. Para obtener más información acerca de las extensiones, consulte [instrucciones de extensión de metarchivo](metafile-extension-guidelines.md). Normalmente, el nombre de archivo es el nombre del archivo o secuencia de Windows Media seguido de una extensión de. Wax,. wvx o. ASX. Por ejemplo, si el contenido multimedia es un archivo de audio de Windows Media con la extensión. WMA, use la extensión. Wax al asignar un nombre a la lista de reproducción. Las listas de reproducción no deben incluir códigos de formato de un procesador de textos, como Microsoft Word. Para asegurarse de que no se incluyen códigos de formato en la lista de reproducción, guarde el archivo como texto sin formato o como archivo ASCII.
+Puede crear una lista de reproducción mediante cualquier editor de texto, como Microsoft Bloc de notas. Abra el editor de texto. Escriba las entradas de script que desea implementar. Cuando haya terminado de escribir en Bloc de notas, guarde el archivo con un nombre de archivo y una extensión de nombre de archivo adecuados. Para obtener más información sobre las extensiones, vea [Metafile Extension Guidelines](metafile-extension-guidelines.md). Normalmente, el nombre de archivo es el nombre del archivo o secuencia de Windows Media seguido de una extensión de .locución, .wvx o .asx. Por ejemplo, si el contenido multimedia es un archivo de audio multimedia Windows que tiene una extensión .wma, use la extensión .extension al asignar un nombre a la lista de reproducción. Las listas de reproducción no deben incluir ningún código de formato de un procesador de textos, como Microsoft Word. Para asegurarse de que no se incluyen códigos de formato en la lista de reproducción, guarde el archivo como un archivo ASCII o de texto sin formato.
 
 > [!Note]  
-> Los elementos y los atributos no distinguen mayúsculas de minúsculas. El texto que se utiliza en la lista de reproducción para definir un elemento o un atributo puede estar en mayúsculas o en minúsculas, o bien una combinación de ambos.
+> Los elementos y atributos no distinguen mayúsculas de minúsculas. El texto usado en la lista de reproducción para definir un elemento o atributo puede estar en mayúsculas o minúsculas, o bien una combinación de ambos.
 
- 
+ 
 
-Si un elemento no tiene elementos secundarios (los que modifican o están contenidos en otro elemento), se puede usar un carácter de barra diagonal (/) al final de la etiqueta de apertura, justo antes de la ' > ', en lugar de una etiqueta de cierre. Los elementos secundarios de un elemento deben aparecer entre la etiqueta de apertura y el cierre de ese elemento; de lo contrario, no son elementos secundarios de ese elemento y se omiten o causan un error en la sintaxis de la lista de reproducción.
+Si un elemento no tiene ningún elemento secundario (los que modifican o están contenidos dentro de otro elemento), se puede usar un carácter de barra diagonal única (/) al final de la etiqueta de apertura, justo antes del ">", en lugar de una etiqueta de cierre. Los elementos secundarios de un elemento deben aparecer entre la etiqueta de apertura y cierre de ese elemento; De lo contrario, no son elementos secundarios para ese elemento y se omiten o provocan un error en la sintaxis de la lista de reproducción.
 
-Los cuatro primeros caracteres de una lista de reproducción deben ser " &lt; ASX". El elemento **ASX** se usa en todas las listas de reproducción si su extensión es. Wax,. wvx o. ASX. Solo debe haber un elemento **ASX** por cada lista de reproducción. Este elemento identifica el archivo como una lista de reproducción de metarchivo de Windows Media. No especifica el tipo de lista de reproducción.
+Los cuatro primeros caracteres de una lista de reproducción deben ser &lt; "ASX". El **elemento ASX** se usa en todas las listas de reproducción, independientemente de si su extensión es .desenlace, .wvx o .asx. Solo debe haber un elemento **ASX** por lista de reproducción. Este elemento identifica el archivo como una lista de reproducción Windows metarchivo multimedia. No especifica el tipo de lista de reproducción.
 
-El elemento **ASX** tiene tres atributos posibles:
+El **elemento ASX** tiene tres atributos posibles:
 
 **VERSION**
 
-El atributo **version** es necesario y debe seguir inmediatamente después del elemento **ASX** , por ejemplo "<ASX version =" 3,0 " &gt; ". El número de versión actual es 3,0. Windows Media Player es compatible con todas las versiones anteriores. Los valores aceptables para el atributo **version** incluyen 3,0 y 3 (sin separador decimal).
+El **atributo VERSION** es necesario y debe seguir inmediatamente después del elemento **ASX,** por ejemplo, "<versión de ASX = "3.0" &gt; ". El número de versión actual es 3.0. Reproductor de Windows Media admite todas las versiones anteriores. Los valores aceptables para **el atributo VERSION** incluyen 3.0 y 3 (sin separador decimal).
 
 **PREVIEWMODE**
 
-El atributo **PREVIEWMODE** es opcional. Proporciona otro mecanismo para especificar cuánto tiempo se debe representar un clip. Si el valor del atributo **PREVIEWMODE** es Yes, Windows Media Player representará cada clip durante la duración especificada por el elemento **PREVIEWDURATION**. Cada clip puede tener un **PREVIEWDURATION** especificado.
+El **atributo PREVIEWMODE** es opcional. Proporciona otro mecanismo para especificar cuánto tiempo se va a representar un clip. Si el valor del atributo **PREVIEWMODE** es YES, Reproductor de Windows Media cada clip durante la duración especificada por el **elemento PREVIEWDURATION**. Cada clip puede tener **un valor PREVIEWDURATION** especificado.
 
 **BANNERBAR**
 
-El atributo **BANNERBAR** opcional define si el control de Media Player de Windows Reserva espacio para un gráfico de banner. (Use el elemento **banner** para especificar el gráfico que se va a mostrar). Si el valor de **BANNERBAR** es fijo, Windows Media Player reserva el espacio de banner para la presentación y para cada clip, independientemente de si la lista de reproducción del metarchivo especifica un banner para el programa o el clip. Esto hará que el tamaño de la ventana de Media Player de Windows sea el mismo (excepto cuando el tamaño del vídeo cambie) independientemente de la ausencia o la presencia de un gráfico de banner. Si el programa o el clip no tienen un encabezado asociado, el espacio reservado para uno es negro. Si el valor del atributo **BANNERBAR** es auto, Windows Media Player Reserva espacio para el banner solo cuando el programa o el clip incluye uno.
+El atributo **BANNERBAR** opcional define si el control Reproductor de Windows Media reserva espacio para un gráfico de banner. (Use el **elemento BANNER** para especificar el gráfico que se mostrará). Si el valor de **BANNERBAR** es FIXED, Reproductor de Windows Media reserva espacio para el banner para el show y para cada clip, si la lista de reproducción de metarchivo especifica un banner para el show o clip. Esto mantendrá el tamaño de la ventana de Reproductor de Windows Media igual (excepto cuando cambia el tamaño del vídeo) independientemente de la ausencia o la presencia de un gráfico de banner. Si el clip o la presentación no tienen un banner asociado, el espacio reservado para uno es negro. Si el valor del atributo **BANNERBAR** es AUTO, Reproductor de Windows Media reserva espacio para el banner solo cuando el clip o la presentación incluyen uno.
 
 
 ```XML
@@ -56,13 +56,13 @@ El atributo **BANNERBAR** opcional define si el control de Media Player de Windo
 
 
 
-Para obtener más información sobre los tres atributos del elemento **ASX** , vea la entrada de referencia para el [elemento ASX](asx-element.md).
+Para obtener más información sobre los tres atributos del **elemento ASX,** vea la entrada de referencia para el [elemento ASX](asx-element.md).
 
-Un elemento **ASX** contiene elementos secundarios **entry** que definen información sobre los archivos multimedia a los que se va a obtener acceso. Cada elemento **entry** debe contener un elemento **ref** que especifique la ruta de acceso al archivo multimedia que se va a transmitir. Debe haber al menos un elemento **entry** o **ENTRYREF** dentro de un elemento **ASX** .
+Un **elemento ASX** contiene **elementos secundarios ENTRY** que definen información sobre los archivos multimedia a los que se va a tener acceso. Cada **elemento ENTRY** debe contener un elemento **REF** que especifique la ruta de acceso al archivo multimedia que se va a transmitir. Debe haber al menos un **elemento ENTRY** **o ENTRYREF** dentro de un **elemento ASX.**
 
-Otros elementos definidos dentro del ámbito del elemento **ASX** , como **title** y **Author**, se asocian con los metadatos que muestra Windows Media Player.
+Otros elementos definidos dentro del ámbito del elemento **ASX,** como **TITLE** y **AUTHOR**, están asociados a los metadatos mostrados por Reproductor de Windows Media.
 
-Las listas de reproducción más sencillas se crean agregando varios elementos de **entrada** con un solo elemento **ref** a un metarchivo. Cada elemento de **entrada** de una lista de reproducción de metarchivo se representa en el orden en que aparece en el archivo como si el usuario hubiera abierto manualmente cada clip.
+Las listas de reproducción más sencillas se crean agregando varios **elementos ENTRY** con un único **elemento REF** a un metarchivo. Cada **elemento ENTRY** de una lista de reproducción de metarchivo se representa en el orden en que aparece en el archivo como si el usuario hubiera abierto manualmente cada clip.
 
 Código de ejemplo
 
@@ -86,12 +86,12 @@ Código de ejemplo
 
 
 
-Asegúrese de que la lista de reproducción funcione haciendo doble clic en él en el explorador de Windows. Windows Media Player debe abrir y comenzar a transmitir por secuencias el contenido multimedia. Una vez que haya confirmado que la lista de reproducción funciona, guárdela en el servidor web junto con las páginas web y vincúlela por medio de un elemento **href** o insértela en una página web mediante el elemento de **objeto** Windows Media Player.
+Asegúrese de que la lista de reproducción funciona haciendo doble clic en ella en Windows Explorador. Reproductor de Windows Media abrir y empezar a transmitir el contenido multimedia. Una vez que haya confirmado que la lista de reproducción funciona, guárdela en el servidor web junto con las páginas web y vincórela a ella mediante un **elemento HREF,** o insórrela en una página web mediante el elemento **Reproductor de Windows Media OBJECT.**
 
 Las secciones siguientes contienen más información:
 
--   [Anidar metaarchivos](nesting-metafiles.md)
--   [Usar páginas ASP para crear de forma dinámica listas de reproducción de metarchivos de Windows Media](using-asp-pages-to-dynamically-create-windows-media-metafile-playlists.md)
+-   [Anidamiento de metarchivos](nesting-metafiles.md)
+-   [Uso de asp pages para crear dinámicamente listas Windows de metarchivo multimedia](using-asp-pages-to-dynamically-create-windows-media-metafile-playlists.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -103,15 +103,15 @@ Las secciones siguientes contienen más información:
 [**Listas de reproducción de ejemplo**](example-playlists.md)
 </dt> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guía de metarchivo de Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guía de metarchivo multimedia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
