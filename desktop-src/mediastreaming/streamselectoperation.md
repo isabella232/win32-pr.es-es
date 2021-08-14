@@ -1,10 +1,10 @@
 ---
-title: Clase StreamSelectOperation
-description: Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por GetMuteAsync y proporciona un método que devuelve los resultados de la operación. | Clase StreamSelectOperation
+title: StreamSelectOperation (clase)
+description: Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por GetMuteAsync y proporciona un método que devuelve los resultados de la operación. | StreamSelectOperation (clase)
 ms.assetid: 681142B4-AECD-42D0-A2D4-494E69A29025
 keywords:
-- Clase StreamSelectOperation API de streaming de multimedia
-- Clase StreamSelectOperation API de streaming de multimedia, descrita
+- StreamSelectOperation class Media Streaming API
+- StreamSelectOperation class Media Streaming API , descrito
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a4a19ff2826f0f2ea3e5ef01841ce482d2f293a3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 161434aad9c4eb20960950ba2dd1979c9caaa2ccc5bbe3c2683ee3e4f839a0b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119461565"
 ---
-# <a name="streamselectoperation-class"></a>Clase StreamSelectOperation
+# <a name="streamselectoperation-class"></a>StreamSelectOperation (clase)
 
 Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetMuteAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getmuteasync) y proporciona un método que devuelve los resultados de la operación.
 
@@ -32,13 +32,13 @@ Registra un controlador de eventos que se invoca cuando se completa la operació
 
 ### <a name="methods"></a>Métodos
 
-La clase **StreamSelectOperation** tiene estos métodos.
+La **clase StreamSelectOperation** tiene estos métodos.
 
 
 
 | Método                                                 | Descripción                                                                                                                                       |
 |:-------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetResults**](streamselectoperation-getresults.md) | Devuelve los resultados de la operación asincrónica iniciada por [**SelectBestStreamAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)).<br/> |
+| [**GetResults**](streamselectoperation-getresults.md) | Devuelve los resultados de la operación asincrónica iniciada [**por SelectBestStreamAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)).<br/> |
 
 
 
@@ -46,13 +46,13 @@ La clase **StreamSelectOperation** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **StreamSelectOperation** tiene estas propiedades.
+La **clase StreamSelectOperation** tiene estas propiedades.
 
 
 
 | Propiedad                                                        | Tipo de acceso           | Descripción                                                                                                                                                                             |
 |:----------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Completed**](streamselectoperation-completed.md)<br/> | Lectura/escritura<br/> | Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**SelectBestStreamAsync**](/previous-versions/windows/desktop/legacy/hh829002(v=vs.85)) .<br/> |
+| [**Completed**](streamselectoperation-completed.md)<br/> | Lectura/escritura<br/> | Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**SelectBestStreamAsync.**](/previous-versions/windows/desktop/legacy/hh829002(v=vs.85))<br/> |
 
 
 

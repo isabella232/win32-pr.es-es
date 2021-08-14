@@ -1,6 +1,6 @@
 ---
 title: paso
-description: Compara dos valores, devolviendo 0 o 1 según el valor que sea mayor.
+description: Compara dos valores, devolviendo 0 o 1 en función del valor mayor.
 ms.assetid: 1c1c4ec4-ae97-42ce-99af-71903e0b5edf
 keywords:
 - paso HLSL
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f9c800e8d8c6f78386139f822f118163f3b431f5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 27fe6985a4dfb4e77f1052b421a6c46c617395f46b4484f046b33919a935613f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276515"
 ---
 # <a name="step"></a>paso
 
-Compara dos valores, devolviendo 0 o 1 según el valor que sea mayor.
+Compara dos valores, devolviendo 0 o 1 en función del valor mayor.
 
 
 
-| paso *RET* (*y*, *x*) |
+| *ret* step(*y*, *x*) |
 |----------------------|
 
 
@@ -39,8 +39,8 @@ Compara dos valores, devolviendo 0 o 1 según el valor que sea mayor.
 
 | Elemento                                                   | Descripción                                                   |
 |--------------------------------------------------------|---------------------------------------------------------------|
-| <span id="y"></span><span id="Y"></span>*sí*<br/> | \[en \] el primer valor de punto flotante que se va a comparar.<br/>  |
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el segundo valor de punto flotante que se va a comparar.<br/> |
+| <span id="y"></span><span id="Y"></span>*y*<br/> | \[en \] el primer valor de punto flotante que se comparará.<br/>  |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] el segundo valor de punto flotante que se comparará.<br/> |
 
 
 
@@ -48,27 +48,27 @@ Compara dos valores, devolviendo 0 o 1 según el valor que sea mayor.
 
 ## <a name="return-value"></a>Valor devuelto
 
-1 si el parámetro *x* es mayor o igual que el parámetro *y* ; de lo contrario, es 0.
+1 si el *parámetro x* es mayor o igual que el *parámetro y;* de lo contrario, 0.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función usa la siguiente fórmula: (*x*  >=  *y*)? 1:0. La función devuelve 0 o 1, dependiendo de si el parámetro *x* es mayor que el parámetro *y* . Para calcular una interpolación suave entre 0 y 1, use la función intrínseca de HLSL [**smoothstep (**](dx-graphics-hlsl-smoothstep.md) .
+Esta función usa la fórmula siguiente: (*x*  >=  *y*) ? 1 : 0. La función devuelve 0 o 1 en función de si el parámetro *x* es mayor que *el parámetro y.* Para calcular una interpolación suave entre 0 y 1, use la función intrínseca HLSL [**smoothstep.**](dx-graphics-hlsl-smoothstep.md)
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Name  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *y*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *x*   | igual que la entrada *y*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones como entrada *y* |
-| *direcc* | igual que la entrada *y*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones como entrada *y* |
+| *y*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *x*   | igual que la entrada *y*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *y* |
+| *Ret* | igual que la entrada *y*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *y* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -76,18 +76,18 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible                   |
 |------------------------------------------------------------------------------------|-----------------------------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí                         |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (vs \_ 1 \_ 1 y PS \_ 1 \_ 4) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | sí                         |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (frente \_ a \_ 1 1 y ps \_ 1 \_ 4) |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

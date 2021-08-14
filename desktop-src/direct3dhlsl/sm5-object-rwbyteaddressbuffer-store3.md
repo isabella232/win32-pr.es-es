@@ -1,9 +1,9 @@
 ---
-title: 'RWByteAddressBuffer:: Store3 (función)'
+title: FUNCIÓN RWByteAddressBuffer::Store3
 description: Establece tres valores.
 ms.assetid: eaf12b5a-c9c6-413a-9646-3d14e7825460
 keywords:
-- Store3 de función HLSL
+- Función HLSL de Store3
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fd27684c3adf506e086fb17f789272c6b263ab20
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: a752ada16db4800e6160ad7b1c2c0b480deee75ff760d0c7f270dac36d1cff51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104358375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790067"
 ---
-# <a name="store3-function"></a>Store3 función)
+# <a name="store3-function"></a>Función Store3
 
 Establece tres valores.
 
@@ -28,8 +28,8 @@ Establece tres valores.
 
 ``` syntax
 void Store3(
-  in uint address,
-  in uint3 values
+  in uint address,
+  in uint3 values
 );
 ```
 
@@ -37,7 +37,7 @@ void Store3(
 
 <dl> <dt>
 
-*Dirección* \[ de de\]
+*dirección* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,10 +46,10 @@ Dirección de entrada en bytes, que debe ser un múltiplo de 4.
 
 </dd> <dt>
 
-*valores* \[ de de\]
+*valores* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt3**
+Tipo: **uint3**
 
 Tres valores de entrada.
 
@@ -61,17 +61,17 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -83,9 +83,9 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,29 +1,29 @@
 ---
 title: Descriptores de parámetros
-description: Como se mencionó anteriormente, los descriptores de parámetros de estilo 8211, OI y \ 8211; existen.
+description: Como se mencionó anteriormente, \ 8211;Oi y \ 8211;Existen descriptores de parámetros de estilo Oif.
 ms.assetid: c2dad284-abe5-4b38-b3a6-3c7373fc5b84
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f6f8b19eb6632c4111547925151865b03b9adc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b4a13b052d49629333bd9cb121b4d1b661722cb3a7a69ad2a17d3e2740a0cd8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118927554"
 ---
 # <a name="parameter-descriptors"></a>Descriptores de parámetros
 
-Como se mencionó anteriormente, los descriptores de parámetros de estilo [**-OI**](/windows/desktop/Midl/-oi) y **-** transformated Style existen.
+Como se mencionó anteriormente, existen descriptores de parámetros de estilo [**–Oi**](/windows/desktop/Midl/-oi) y **–Oif.**
 
-## <a name="the-oi-parameter-descriptors"></a>Descriptores de parámetros – OI
+## <a name="the-oi-parameter-descriptors"></a>Descriptores de parámetros –Oi
 
-Los códigos auxiliares totalmente interpretados requieren información adicional para cada uno de los parámetros de una llamada RPC. Las descripciones de los parámetros de un procedimiento siguen inmediatamente después de la descripción del procedimiento.
+Los códigos auxiliares totalmente interpretados requieren información adicional para cada uno de los parámetros de una llamada RPC. Las descripciones de parámetros de un procedimiento siguen inmediatamente después de la descripción del procedimiento.
 
-[**Simple: OI**](/windows/desktop/Midl/-oi)
+[**Simple –Oi**](/windows/desktop/Midl/-oi)
 
 **Descriptores de parámetros**
 
-El formato de la descripción de un \[  \] parámetro de tipo simple in o Return es:
+El formato de la descripción de un \[ **parámetro de** tipo simple in \] o return es:
 
 ``` syntax
 FC_IN_PARAM_BASETYPE 
@@ -44,11 +44,11 @@ Donde el \_ tipo simple<1> es el token de FC que indica el tipo simple. Los cód
 53  FC_RETURN_PARAM_BASETYPE
 ```
 
-**Otro: OI**
+**Otros –Oi**
 
 **Descriptores de parámetros**
 
-El formato de la descripción de todos los demás tipos de parámetro es:
+El formato de la descripción de todos los demás tipos de parámetros es:
 
 ``` syntax
 param_direction<1> 
@@ -56,34 +56,34 @@ stack_size<1>
 type_offset<2>
 ```
 
-Donde la dirección del parámetro \_<1> campo para cada una de estas descripciones debe ser uno de los que se muestran en la tabla siguiente.
+Donde la dirección del<un campo> para cada una de estas descripciones debe ser uno de los que se muestran \_ en la tabla siguiente.
 
 
 
 | Hex | Marca                          | Significado                                                     |
 |-----|-------------------------------|-------------------------------------------------------------|
-| 4d  | FC \_ en \_ param                 | Parámetro in.                                            |
-| 50  | \_parámetro FC in \_ out \_            | Parámetro in/out.                                        |
-| 51  | \_parámetro de salida FC \_                | Parámetro Out.                                           |
-| 52  | \_parámetro de devolución de FC \_             | Valor devuelto de un procedimiento.                                   |
-| 4F  | FC \_ en \_ parámetro \_ no \_ disponible \_ inst. | En transmisión/REP como un parámetro para el que no se realiza ninguna liberación. |
+| 4d  | FC \_ IN \_ PARAM                 | Parámetro in.                                            |
+| 50  | FC \_ IN \_ OUT \_ PARAM            | Parámetro de entrada y salida.                                        |
+| 51  | FC \_ OUT \_ PARAM                | Parámetro Out.                                           |
+| 52  | FC \_ RETURN \_ PARAM             | Valor devuelto del procedimiento.                                   |
+| 4f  | FC \_ IN \_ PARAM \_ NO \_ FREE \_ INST | en xmit/rep como parámetro para el que no se realiza ninguna liberación. |
 
 
 
- 
+ 
 
-El \_ tamaño de la pila<1> es el tamaño del parámetro en la pila, expresado como el número de enteros que el parámetro ocupa en la pila.
+El tamaño de<1> es el tamaño del parámetro en la pila, expresado como el número de enteros que ocupa el \_ parámetro en la pila.
 
 > [!Note]  
-> El modo [**– OI**](/windows/desktop/Midl/-oi) no se admite en las plataformas de 64 bits.
+> El [**modo –Oi**](/windows/desktop/Midl/-oi) no se admite en plataformas de 64 bits.
 
- 
+ 
 
-El \_ desplazamiento de tipo<2> campo es el desplazamiento en la tabla de cadenas de formato de tipo, que indica el descriptor de tipos para el argumento.
+El desplazamiento de tipo<2> es el desplazamiento de la tabla de cadenas de formato de tipo, que indica el descriptor de \_ tipo para el argumento.
 
-## <a name="the-oif-parameter-descriptors"></a>Descriptores de parámetros – interfaces
+## <a name="the-oif-parameter-descriptors"></a>Descriptores de parámetros –Oif
 
-Hay dos formatos posibles para una descripción de parámetro, uno para los tipos base, otro para todos los demás tipos.
+Hay dos formatos posibles para una descripción de parámetro, uno para los tipos base y otro para todos los demás tipos.
 
 Tipos base:
 
@@ -102,9 +102,9 @@ stack_offset<2>
 type_offset<2>
 ```
 
-En \_ el desplazamiento de la pila<2> indica el desplazamiento en la pila de argumentos virtuales, en bytes. En el caso de los tipos base, el tipo de argumento lo proporciona directamente el carácter de formato correspondiente al tipo. Para otros tipos, el \_ campo desplazamiento de tipo<2> proporciona el desplazamiento en la tabla de cadenas de formato de tipo donde se encuentra el descriptor de tipos para el argumento.
+En ambos intervalos de<2> indica el desplazamiento en la pila \_ de argumentos virtuales, en bytes. Para los tipos base, el tipo de argumento se da directamente mediante el carácter de formato correspondiente al tipo. Para otros tipos, el desplazamiento de<campo 2> proporciona el desplazamiento en la tabla de cadenas de formato de tipo donde se encuentra el \_ descriptor de tipo para el argumento.
 
-El campo atributo de parámetro se define de la siguiente manera:
+El campo de atributo de parámetro se define de la siguiente manera:
 
 ``` syntax
 typedef struct
@@ -125,14 +125,14 @@ typedef struct
   } PARAM_ATTRIBUTES, *PPARAM_ATTRIBUTES;
 ```
 
--   El bit **MustSize** solo se establece si se debe ajustar el tamaño del parámetro.
--   El bit **MustFree** se establece si el servidor debe llamar a la rutina NdrFree del parámetro \* .
--   El bit **IsSimpleRef** se establece para un parámetro que es un puntero de referencia a cualquier otro puntero y que no tiene atributos de asignación. Para este tipo, el desplazamiento de tipo de la descripción del parámetro \_<> campo, excepto un puntero de referencia a un tipo base, proporciona el desplazamiento al tipo del campo de referencia; el puntero de referencia simplemente se omite.
--   El bit **IsDontCallFreeInst** se establece para ciertos representan \_ como parámetros cuyas rutinas de instancia gratuitas no deben llamarse.
--   Los bits **ServerAllocSize** son distintos de cero si el parámetro está \[ **fuera** \] , \[ **en** \] , o \[ **en,** un puntero \] a puntero o puntero a enum16, y se inicializará en la pila del intérprete del servidor, en lugar de usar una llamada a **I \_ RpcAllocate**. Si es distinto de cero, este valor se multiplica por 8 para obtener el número de bytes para el parámetro. Tenga en cuenta que esto significa que siempre se asignan al menos 8 bytes para un puntero.
--   El bit **IsBasetype** se establece para los tipos simples que se van a serializar mediante el bucle del intérprete principal [**– saliente**](/windows/desktop/Midl/-oi) . En concreto, un tipo simple con un atributo de intervalo en él no se marca como un tipo base para forzar el cálculo de referencias de rutina de intervalo mediante el envío mediante un \_ token de intervalo FC.
--   El bit **IsByValue** se establece para los tipos compuestos que se envían por valor, pero no se establece para los tipos simples, independientemente de si el argumento es un puntero. Los tipos compuestos para los que se establece son estructuras, uniones, [**transmitir \_ como**](/windows/desktop/Midl/transmit-as), [**representar \_ como**](/windows/desktop/Midl/represent-as), [**\_ serialización de cable**](/windows/desktop/Midl/wire-marshal) y SafeArray. En general, el bit se incorporó a la ventaja del bucle del intérprete principal en el intérprete [**– Oicf**](/windows/desktop/Midl/-oi) , para asegurarse de que los argumentos no simples (conocidos como argumentos de tipo compuesto) se desreferencian correctamente. Este bit nunca se usaba en versiones anteriores del intérprete.
+-   El **bit MustSize** solo se establece si se debe ajustar el tamaño del parámetro.
+-   El **bit MustFree** se establece si el servidor debe llamar a la rutina FreeFree del \* parámetro.
+-   El **bit IsSimpleRef** se establece para un parámetro que es un puntero de referencia a cualquier otro puntero que no sea otro puntero y que no tiene atributos asignados. Para este tipo, el campo de desplazamiento de tipo<> de la descripción del parámetro, excepto para un puntero de referencia a un tipo base, proporciona el desplazamiento al tipo del referenciador; el puntero de referencia simplemente se \_ omite.
+-   El **bit IsDontCallFreeInst** se establece para determinados representa como parámetros \_ cuyas rutinas de instancia libre no deben llamarse.
+-   Los bits **ServerAllocSize** son distintos de cero si el parámetro es out , en , o in, puntero al puntero o puntero \[  \] \[  \] \[  \] a enum16, **\_** y se inicializarán en la pila del intérprete del servidor, en lugar de usar una llamada a I RpcAllocate . Si es distinto de cero, este valor se multiplica por 8 para obtener el número de bytes del parámetro. Tenga en cuenta que esto significa que siempre se asignan al menos 8 bytes para un puntero.
+-   El **bit IsBasetype** se establece para los tipos simples que se serializan mediante el bucle del [**intérprete main –Oif.**](/windows/desktop/Midl/-oi) En concreto, un tipo simple con un atributo de intervalo en él no se marca como un tipo base para forzar la serialización rutinaria de intervalo mediante el envío mediante un token de FC \_ RANGE.
+-   El **bit IsByValue** se establece para los tipos compuestos que se envían por valor, pero no se establece para tipos simples, independientemente de si el argumento es un puntero. Los tipos compuestos para los que se establece son estructuras, uniones, transmitir como , representar como , [**\_ serialización**](/windows/desktop/Midl/wire-marshal) de cable y SAFEARRAY. [**\_**](/windows/desktop/Midl/transmit-as) [**\_**](/windows/desktop/Midl/represent-as) En general, el bit se introdujo en beneficio del bucle del intérprete principal en el intérprete [**–Oicf,**](/windows/desktop/Midl/-oi) para asegurarse de que los argumentos no simples (denominados argumentos de tipo compuesto) se desreferencian correctamente. Este bit nunca se usó en versiones anteriores del intérprete.
 
- 
+ 
 
- 
+ 

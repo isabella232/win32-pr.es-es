@@ -1,7 +1,7 @@
 ---
 description: El método EndRun cambia al modo detenido o en pausa.
 ms.assetid: 2c41262c-a809-4f3b-898c-02c0891dc6f8
-title: Método CCmdQueue. EndRun (Winutil. h)
+title: Método CCmdQueue.EndRun (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 367ef026402ff191ceb04657c21d6f3bd11ebe73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c5a20917c82ba26c941b063941e8667a3a30adce15176aed52362140a15ce90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757365"
 ---
-# <a name="ccmdqueueendrun-method"></a>CCmdQueue. EndRun, método
+# <a name="ccmdqueueendrun-method"></a>Método CCmdQueue.EndRun
 
 El `EndRun` método cambia al modo detenido o en pausa.
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** que depende de la implementación de.
+Devuelve un **valor HRESULT** que depende de la implementación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se conoce la asignación de tiempo entre la hora de la secuencia y el tiempo de presentación después de llamar a esta función miembro. Llame a la función miembro [**CCmdQueue:: Run**](ccmdqueue-run.md) para llevar a cabo esta asignación.
+La asignación de tiempo entre el tiempo de transmisión y el tiempo de presentación no se conoce después de llamar a esta función miembro. Llame a [**la función miembro CCmdQueue::Run**](ccmdqueue-run.md) para llevar a cabo esta asignación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,16 +54,16 @@ No se conoce la asignación de tiempo entre la hora de la secuencia y el tiempo 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

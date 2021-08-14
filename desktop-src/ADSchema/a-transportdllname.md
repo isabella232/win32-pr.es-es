@@ -1,11 +1,11 @@
 ---
-title: Transport-DLL-Name (atributo)
-description: Nombre del archivo DLL que va a administrar un transporte.
+title: Atributo Transport-DLL-Name
+description: Nombre del archivo DLL que administrará un transporte.
 ms.assetid: a6b078ec-8738-4c57-9d94-05a96dbc645b
 ms.tgt_platform: multiple
 keywords:
-- Transport-DLL-Name atributo AD Schema
-- transportDLLName esquema de AD de atributos
+- Esquema de AD del atributo Transport-DLL-Name
+- Esquema de AD del atributo transportDLLName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c118a2f7553c86de4b3c36b2904a3b7d75518a2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2520eb57be8b14f33314192cb6347d85ca3a0ad8a1fc1818b53e5da52099d33d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022013"
 ---
-# <a name="transport-dll-name-attribute"></a>Transport-DLL-Name (atributo)
+# <a name="transport-dll-name-attribute"></a>Atributo Transport-DLL-Name
 
-Nombre del archivo DLL que va a administrar un transporte.
+Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Transport-DLL-Name                          |
-| Nombre para mostrar de LDAP | transportDLLName                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| Ldap-Display-Name | transportDLLName                            |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema establece este valor.            |
 | Frecuencia de actualización  | Al conectar sitios.                      |
 | Attribute-Id      | 1.2.840.113556.1.4.789                      |
-| System-ID-GUID    | 26d97372-6070-11d1-a9c6-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 26d97372-6070-11d1-a9c6-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Nombre del archivo DLL que va a administrar un transporte.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,15 +54,15 @@ Nombre del archivo DLL que va a administrar un transporte.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -75,15 +75,15 @@ Nombre del archivo DLL que va a administrar un transporte.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -92,19 +92,19 @@ Nombre del archivo DLL que va a administrar un transporte.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -117,15 +117,15 @@ Nombre del archivo DLL que va a administrar un transporte.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -138,15 +138,15 @@ Nombre del archivo DLL que va a administrar un transporte.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -159,15 +159,15 @@ Nombre del archivo DLL que va a administrar un transporte.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -180,15 +180,15 @@ Nombre del archivo DLL que va a administrar un transporte.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |

@@ -1,9 +1,9 @@
 ---
-title: Command. LargeHighContrastImages (propiedad)
-description: Representa un contenedor de imágenes; en este caso, imágenes grandes para su uso con la configuración del sistema de alto contraste.
+title: Propiedad Command.LargeHighContrastImages
+description: Representa un contenedor de imágenes; En este caso, imágenes grandes para su uso con la configuración del sistema de contraste alto.
 ms.assetid: e25f207f-ac3f-4a5f-8104-c928b38a52a8
 keywords:
-- Command. LargeHighContrastImages (propiedad) cinta de Windows
+- Command.LargeHighContrastImages, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e94fc31e2113990a1862fab7288ffeefef787cff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d59c1e760565443c286969cc92b3b0c4a6b83a2513587f424ebcda366b1b8a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710515"
 ---
-# <a name="commandlargehighcontrastimages-property"></a>Command. LargeHighContrastImages (propiedad)
+# <a name="commandlargehighcontrastimages-property"></a>Propiedad Command.LargeHighContrastImages
 
-Representa un contenedor de imágenes; en este caso, imágenes grandes para su uso con la configuración del sistema de alto contraste.
+Representa un contenedor de imágenes; En este caso, imágenes grandes para su uso con la configuración del sistema de contraste alto.
 
 ## <a name="usage"></a>Uso
 
@@ -55,19 +55,19 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**comando**](windowsribbon-element-command.md).
+Puede producirse como máximo una vez para cada [**comando**](windowsribbon-element-command.md).
 
-Los recursos de imagen deben cumplir el formato de gráficos de mapa de bits estándar (BMP) usado en Windows.
+Los recursos de imagen deben cumplir el formato de gráfico estándar de mapa de bits (BMP) que se usa en Windows.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para [**splitButton**](windowsribbon-element-splitbutton.md) con un elemento [**MenuGroup**](windowsribbon-element-menugroup.md) .
+En el ejemplo siguiente se muestra el marcado básico para [**SplitButton**](windowsribbon-element-splitbutton.md) con un [**elemento MenuGroup.**](windowsribbon-element-menugroup.md)
 
-En esta sección de código se muestran las declaraciones de comandos [**splitButton**](windowsribbon-element-splitbutton.md) y [**MenuGroup**](windowsribbon-element-menugroup.md) con recursos grandes y pequeños de imagen de contraste alto. También se declara un [**Grupo**](windowsribbon-element-group.md) asociado que actúa como contenedor primario para el elemento **splitButton** .
+En esta sección de código se muestran las declaraciones de los comandos [**SplitButton**](windowsribbon-element-splitbutton.md) y [**MenuGroup**](windowsribbon-element-menugroup.md) con recursos de imagen de contraste alto grandes y pequeños. También se [**declara**](windowsribbon-element-group.md) un grupo asociado que actúa como contenedor primario para el elemento **SplitButton.**
 
 
 ```XML
@@ -115,18 +115,18 @@ En esta sección de código se muestran las declaraciones de comandos [**splitBu
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Especificar recursos de imagen de cinta](windowsribbon-imageformats.md)
+[Especificar recursos de imagen de cinta de opciones](windowsribbon-imageformats.md)
 </dt> <dt>
 
 [UI \_ PKEY \_ LargeHighContrastImage](windowsribbon-reference-properties-uipkey-largehighcontrastimage.md)

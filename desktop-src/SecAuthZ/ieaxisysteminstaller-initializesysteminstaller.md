@@ -1,7 +1,7 @@
 ---
 description: Instala el objeto ActiveX especificado.
 ms.assetid: c5d460d8-0df4-437a-a59e-707bf868a339
-title: 'IeAxiSystemInstaller:: InitializeSystemInstaller (método)'
+title: IeAxiSystemInstaller::InitializeSystemInstaller (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 874bee80e23051d5dfdd22e259395293ae532619
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9619557395ede0510e04378a03f2ded32fa7a9c829c8c6f40acdaf58b8e0fda2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414655"
 ---
-# <a name="ieaxisysteminstallerinitializesysteminstaller-method"></a>IeAxiSystemInstaller:: InitializeSystemInstaller (método)
+# <a name="ieaxisysteminstallerinitializesysteminstaller-method"></a>IeAxiSystemInstaller::InitializeSystemInstaller (método)
 
-El método **InitializeSystemInstaller** instala el objeto ActiveX especificado.
+El **método InitializeSystemInstaller** instala el objeto ActiveX especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,39 +41,39 @@ HRESULT InitializeSystemInstaller(
 
 <dl> <dt>
 
-*bstrUrl* \[ de\]
+*bstrUrl* \[ En\]
 </dt> <dd>
 
-Dirección URL del objeto ActiveX que se va a instalar.
+Dirección URL del objeto ActiveX instalar.
 
 </dd> <dt>
 
-*dwClientPID* \[ de\]
+*dwClientPID* \[ En\]
 </dt> <dd>
 
-IDENTIFICADOR de proceso del proceso que realiza la llamada.
+Identificador de proceso del proceso que realiza la llamada.
 
 </dd> <dt>
 
-*pCallback* \[ de\]
+*pCallback* \[ En\]
 </dt> <dd>
 
-Puntero a una instancia de la interfaz [**IeAxiServiceCallback**](ieaxiservicecallback.md) que comprueba si se permite instalar el objeto ActiveX.
+Puntero a una instancia de la interfaz [**IeAxiServiceCallback**](ieaxiservicecallback.md) que comprueba si el objeto ActiveX se puede instalar.
 
 </dd> <dt>
 
-*pbstrNonce* \[ enuncia\]
+*pbstrNonce* \[ out\]
 </dt> <dd>
 
-Contexto que se puede utilizar para compartir información de estado en llamadas a otros métodos utilizados para comprobar y descargar el objeto ActiveX.
+Contexto que se puede usar para compartir información de estado en llamadas a otros métodos usados para comprobar y descargar el ActiveX objeto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](/windows/desktop/SecCrypto/common-hresult-values).
+Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](/windows/desktop/SecCrypto/common-hresult-values).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,9 +81,9 @@ Si se produce un error en el método, devuelve un valor **HRESULT** que indica e
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ solo aplicaciones de escritorio\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
-| IID<br/>                      | IID \_ IeAxiSystemInstaller se define como a50ea6f8-4764-4299-B309-022b2a8b4d8d<br/>                   |
+| IID<br/>                      | IID \_ IeAxiSystemInstaller se define como a50ea6f8-4764-4299-b309-022b2a8b4d8d<br/>                   |
 
 
 

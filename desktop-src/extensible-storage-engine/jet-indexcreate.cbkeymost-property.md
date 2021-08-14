@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEXCREATE. cbKeyMost'
-title: Propiedad JET_INDEXCREATE. cbKeyMost
+description: 'Más información sobre: JET_INDEXCREATE.cbKeyMost'
+title: JET_INDEXCREATE.cbKeyMost, propiedad
 TOCTitle: 'cbKeyMost property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.cbKeyMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.cbkeymost(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 321704f88da59af33f4dab99d7d681fbcbd96e1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17908b19cba3ed047b98f4532982001019516d9b32e2799c29a6671cbd862fe7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119232685"
 ---
-# <a name="jet_indexcreatecbkeymost-property"></a>Propiedad JET_INDEXCREATE. cbKeyMost
+# <a name="jet_indexcreatecbkeymost-property"></a>JET_INDEXCREATE.cbKeyMost, propiedad
 
-Obtiene o establece el tamaño máximo permitido, en bytes, para las claves del índice. El tamaño máximo de clave compatible mínimo es JET_cbKeyMostMin (255), que es el tamaño de clave máximo heredado. El tamaño máximo de la clave depende del tamaño de página de la base de datos [DatabasePageSize](./jet-param-enumeration.md). El tamaño máximo de la clave se puede recuperar con [KeyMost](./systemparameters.keymost-property.md). Este parámetro se omite en Windows XP y Windows Server 2003. A diferencia de la API no administrada, **IndexKeyMost ()** (JET_bitIndexKeyMost) no es necesario, sino que se agregará automáticamente.
+Obtiene o establece el tamaño máximo permitido, en bytes, para las claves del índice. El tamaño máximo de clave mínimo admitido es JET_cbKeyMostMin (255), que es el tamaño de clave máximo heredado. El tamaño máximo de clave depende del tamaño de página de la base de [datos DatabasePageSize.](./jet-param-enumeration.md) El tamaño máximo de clave se puede recuperar con [KeyMost.](./systemparameters.keymost-property.md) Este parámetro se omite en Windows XP y Windows Server 2003. A diferencia de la API no administrada, **IndexKeyMost()** (JET_bitIndexKeyMost) no es necesario, se agregará automáticamente.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public int cbKeyMost { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXCREATE (clase)](./jet-indexcreate-class.md)
+[JET_INDEXCREATE clase](./jet-indexcreate-class.md)
 
-[Miembros de JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE miembros](./jet-indexcreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

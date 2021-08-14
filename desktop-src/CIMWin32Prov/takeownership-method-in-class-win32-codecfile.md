@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e52e5dafe5f0453861ddcddadf9f7115d17ee404
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 96997b7a29d4a7ca0ad586263bfe7846142963f7ba60e4bdf01a3991e3cfcbff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751695"
 ---
 # <a name="takeownership-method-of-the-win32_codecfile-class"></a>Método TakeOwnerShip de la clase CodecFile win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es realmente un directorio, **TakeOwnerShip** actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -91,7 +91,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 

@@ -5,7 +5,7 @@ ms.assetid: c0ad4402-dd63-499f-964c-0eada5665d1b
 keywords:
 - Propiedad GetTask Programador de tareas
 - Propiedad GetTask Programador de tareas , objeto TaskFolder
-- Objeto TaskFolder Programador de tareas , propiedad GetTask
+- Objeto TaskFolder Programador de tareas propiedad , GetTask
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b697b8fa2d0715dcf0282c5f32490bfccec79fec
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 8369c09ad62329fa583bfba1cf718a3543c565f3e3d41f1d20f88339e37c44ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253425"
 ---
 # <a name="taskfoldergettask-property"></a>Propiedad TaskFolder.GetTask
 
@@ -50,10 +50,10 @@ Tarea en la ubicación especificada. La tarea es un [**objeto RegisteredTask.**]
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

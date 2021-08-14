@@ -1,21 +1,21 @@
 ---
-title: RPC_NS_HANDLE (Rpcnsi. h)
-description: El tipo de datos \_ \_ identificador de RPC NS define un identificador de servicio de nombres.
+title: RPC_NS_HANDLE (Rpcnsi.h)
+description: El tipo de datos RPC \_ NS \_ HANDLE define un identificador de servicio de nombre.
 ms.assetid: d9c2a376-4972-4f16-aa8d-f0e43d5ddb8d
 keywords:
 - RPC_NS_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e72ee694e08be1b30a75dc1f5b986619043d592
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e7612671b03f507bc2e722520fa775e0e999d0f1456ebfcefa971bba27b65dbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118926289"
 ---
-# <a name="rpc_ns_handle"></a>identificador de RPC \_ NS \_
+# <a name="rpc_ns_handle"></a>IDENTIFICADOR \_ DE NS \_ RPC
 
-El tipo de **datos \_ \_ identificador de RPC NS** define un identificador de servicio de nombres.
+El tipo de **datos RPC \_ NS \_ HANDLE** define un identificador de servicio de nombre.
 
 
 ```C++
@@ -24,15 +24,15 @@ typedef void* RPC_NS_HANDLE;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un identificador de servicio de nombre es una variable opaca que contiene información que la biblioteca en tiempo de ejecución de RPC utiliza para devolver los siguientes datos de RPC desde la base de datos de nombre-servicio:
+Un identificador de servicio de nombre es una variable opaca que contiene información que la biblioteca en tiempo de ejecución rpc usa para devolver los siguientes datos RPC de la base de datos name-service:
 
 -   Identificadores de enlace de servidor
--   UUID de recursos ofrecidos por los miembros del perfil de servidor
+-   UUID de los recursos ofrecidos por los miembros del perfil de servidor
 -   Miembros del grupo
 
-El ámbito de un identificador de servicio de nombre es de una rutina "begin" a través de la rutina "Done" correspondiente.
+El ámbito de un identificador de servicio de nombre es de una rutina "Begin" a través de la rutina "Done" correspondiente.
 
 Las aplicaciones son responsables del control de simultaneidad de los identificadores de servicio de nombre entre subprocesos.
 
@@ -40,15 +40,15 @@ Las aplicaciones son responsables del control de simultaneidad de los identifica
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>Rpcnsi. h (incluir RPC. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rpcnsi.h (incluir Rpc.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

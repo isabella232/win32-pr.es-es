@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: a816fb5f-8320-4b63-a85d-dd4c59596ead
-ms.openlocfilehash: 50295d712e539c94f10a708674cea595a47ae4e0
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 26aadacec02ddca13da6a005ed70b27d1f0869ab8dbd159c553fc66fe19561bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117675845"
 ---
 # <a name="strrettostrn-function"></a>Función StrRetToStrN
 
@@ -84,7 +84,7 @@ Tipo: **BOOL**
 
 **TRUE** si se ha hecho **correctamente, FALSE** en caso de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
 > A partir Shell32.dll versión 5.0, llamar a esta función equivale a llamar a [**StrRetToBuf.**](/windows/desktop/api/Shlwapi/nf-shlwapi-strrettobufa)
@@ -93,17 +93,17 @@ Tipo: **BOOL**
 
 **StrRetToStrN** no se exporta por nombre. Para usarlo, debe usar [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) y solicitar ordinal 96 a Shell32.dll para obtener un puntero de función.
 
-Si el **miembro uType** de la estructura a la que apunta *pStrRet* se establece en **STRRET \_ WSTR**, el miembro **pOleStr** de esa estructura se liberará al devolverse.
+Si el **miembro uType** de la estructura a la que apunta *pStrRet* se establece en **STRRET \_ WSTR**, el **miembro pOleStr** de esa estructura se liberará al devolverse.
 
-Tenga en cuenta que esta función se exporta Shell32.dll en lugar de Shlwapi.dll. También se incluye en Shlobj.h en lugar de en Shlwapi.h.
+Tenga en cuenta que esta función se exporta desde Shell32.dll en lugar de Shlwapi.dll. También se incluye en Shlobj.h en lugar de en Shlwapi.h.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 

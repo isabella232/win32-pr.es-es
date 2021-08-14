@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1Factory CreateEllipseGeometry (D2d1. h)
-description: Crea un ID2D1EllipseGeometry.
+title: Métodos ID2D1Factory CreateVelopseGeometry (D2d1.h)
+description: Crea un id2D1Geometry.
 ms.assetid: 4c03bb0b-74fe-456a-aa26-5449d758c0ea
 keywords:
-- Métodos de CreateEllipseGeometry Direct2D
+- Métodos CreateVelopseGeometry de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: ca991732b9a80fd93e3df3c2b72493f5195ea0a0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 85026ad8459fdb2e7ef89c1d1a6b339d8e252188e27957e8848aaf02247d2694
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259125"
 ---
-# <a name="id2d1factorycreateellipsegeometry-methods"></a>ID2D1Factory:: CreateEllipseGeometry (métodos)
+# <a name="id2d1factorycreateellipsegeometry-methods"></a>Métodos ID2D1Factory::CreateVelopseGeometry
 
-Crea un [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry).
+Crea un [**objeto ID2D1VelopseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,14 +29,14 @@ Crea un [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipseg
 
 | Método                                                                                                                                                      | Descripción                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------|
-| [**CreateEllipseGeometry (D2D1 \_ ELLIPSE&, ID2D1EllipseGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry))  | Crea un [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry). <br/> |
-| [**CreateEllipseGeometry (D2D1 \_ , elipse \* , ID2D1EllipseGeometry \* \* )**](/previous-versions/windows/desktop/legacy/dd371265(v=vs.85)) | Crea un [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry). <br/> |
+| [**CreateVelopseGeometry(D2D1 \_ ELLIPSE&,ID2D1VelopseGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry))  | Crea un [**objeto ID2D1VelopseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) <br/> |
+| [**CreateVelopseGeometry(D2D1 \_ ELLIPSE \* ,ID2D1VelopseGeometry \* \* )**](/previous-versions/windows/desktop/legacy/dd371265(v=vs.85)) | Crea un [**objeto ID2D1VelopseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) <br/> |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-Lo siguiente crea dos objetos [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) y los combina con los distintos modos de combinación de geometría.
+A continuación se [**crean dos objetos ID2D1VelopseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) y se combinan mediante los distintos modos de combinación de geometría.
 
 
 ```C++
@@ -200,9 +200,9 @@ HRESULT DemoApp::CreateGeometryResources()
 
 
 
-Este código genera el resultado que se muestra en la siguiente ilustración.
+Este código genera la salida que se muestra en la ilustración siguiente.
 
-![Ilustración de dos elipses combinadas mediante cuatro modos de combinación de geometría (Union, Intersect, XOR y Exclude)](images/combine-modes.png)
+![ilustración de dos puntos suspensivos combinados mediante cuatro modos de combinación de geometría (unión, intersección, xor y exclusión)](images/combine-modes.png)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -210,8 +210,8 @@ Este código genera el resultado que se muestra en la siguiente ilustración.
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

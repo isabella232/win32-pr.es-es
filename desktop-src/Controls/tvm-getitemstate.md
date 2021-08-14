@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_GETITEMSTATE (commctrl. h)
-description: Recupera algunos o todos los atributos de estado de un elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la \_ macro GetItemState de TreeView.
+title: TVM_GETITEMSTATE mensaje (Commctrl.h)
+description: Recupera algunos o todos los atributos de estado de un elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ GetItemState.
 ms.assetid: 89aaaa82-2809-4e4e-a325-5666a57c5cbb
 keywords:
-- TVM_GETITEMSTATE controles de mensajes de Windows
+- TVM_GETITEMSTATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b851ff3845743c802a2a914a0f40d5d9eb65c6a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff562af5a97684caa3e5b17ab47d0f67f82a6789e2510cf1598a3189073fda81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119261265"
 ---
-# <a name="tvm_getitemstate-message"></a>\_Mensaje de GETITEMSTATE TVM
+# <a name="tvm_getitemstate-message"></a>Mensaje \_ GETITEMSTATE de TVM
 
-Recupera algunos o todos los atributos de estado de un elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetItemState de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitemstate) .
+Recupera algunos o todos los atributos de estado de un elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ GetItemState.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitemstate)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,13 +39,13 @@ Identificador del elemento.
 *lParam* 
 </dt> <dd>
 
-Máscara que se usa para especificar los Estados que se van a consultar. Es equivalente al miembro **stateMask** de [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa).
+Máscara usada para especificar los estados que se deben consultar. Es equivalente al miembro **stateMask** de [**TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **uint** con los bits de estado adecuados establecidos en **true**. Solo se establecerán los bits especificados por *lParam* y que sean **true** . Este valor es equivalente al miembro **State** de [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa).
+Devuelve un **valor UINT** con los bits de estado adecuados establecidos en **TRUE.** Solo se establecerán los bits especificados por *lParam* y que sean **TRUE.** Este valor es equivalente al miembro **de** estado de [**TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Devuelve un valor **uint** con los bits de estado adecuados establecidos en **tr
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

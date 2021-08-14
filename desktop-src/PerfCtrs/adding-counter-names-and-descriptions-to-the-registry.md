@@ -1,37 +1,37 @@
 ---
-description: Los nombres y descripciones de todos los objetos de rendimiento y sus contadores se almacenan en el registro.
+description: Los nombres y descripciones de todos los objetos de rendimiento y sus contadores se almacenan en el Registro.
 ms.assetid: 6fdaccb0-45bc-48f2-8f63-3df0bdf1dca4
 title: Adición de nombres y descripciones de contadores al registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e9d2c97ebe80a8ef2a8396ca42583cbad874859
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e58333e9694b9aa74ff1d5ade6a399aaa813e7735ea315be529587e813fec0fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794060"
 ---
 # <a name="adding-counter-names-and-descriptions-to-the-registry"></a>Adición de nombres y descripciones de contadores al registro
 
 > [!IMPORTANT]
-> Debido a las limitaciones de rendimiento y confiabilidad significativas, el método para proporcionar los datos del contador de rendimiento que se describen en este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda usar el método descrito en [proporcionar datos de contadores con la versión 2,0](providing-counter-data-using-version-2-0.md) para crear nuevos contadores de rendimiento y migrar los contadores de rendimiento existentes para usar ese método.
+> Debido a limitaciones significativas de rendimiento y confiabilidad, el método para proporcionar datos de contadores de rendimiento que describe este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda usar el método descrito en Proporcionar datos de contador mediante la versión [2.0 para](providing-counter-data-using-version-2-0.md) crear nuevos contadores de rendimiento y migrar los contadores de rendimiento existentes para usar ese método.
 
-Los nombres y descripciones de todos los objetos de rendimiento V1 y sus contadores deben estar instalados en el sistema. Para almacenar los nombres y las descripciones de los objetos y contadores de su [proveedor v1](providing-counter-data.md):
+Los nombres y descripciones de todos los objetos de rendimiento V1 y sus contadores deben estar instalados en el sistema. Para almacenar nombres y descripciones de los objetos y contadores del [proveedor V1:](providing-counter-data.md)
 
-- [Cree un archivo de encabezado. h](#creating-a-symbolic-constants-h-file) que contenga las constantes simbólicas de los desplazamientos de los objetos y contadores.
-- [Cree una inicialización (. INI)](#creating-an-initialization-ini-file) que contiene las cadenas.
-- Al instalar el componente, [ejecute la herramienta **LODCTR**](#running-the-lodctr-tool) para instalar los nombres y las descripciones en el registro.
-- Al desinstalar el componente, ejecute la herramienta Unlodctr para quitar los nombres y las descripciones del registro.
+- [Cree un archivo de encabezado .h](#creating-a-symbolic-constants-h-file) que contenga las constantes simbólicas para los desplazamientos de los objetos y contadores.
+- [Cree un archivo de inicialización (.INI)](#creating-an-initialization-ini-file) que contenga las cadenas.
+- Al instalar el componente, [ejecute la herramienta **lodctr**](#running-the-lodctr-tool) para instalar los nombres y descripciones en el registro.
+- Al desinstalar el componente, ejecute la herramienta unlodctr para quitar los nombres y descripciones del Registro.
 
-## <a name="creating-a-symbolic-constants-h-file"></a>Crear un archivo de constantes simbólicas (. h)
+## <a name="creating-a-symbolic-constants-h-file"></a>Creación de un archivo de constantes simbólicas (.h)
 
-Cree un archivo de encabezado. h que defina constantes (macros) para los desplazamientos a los objetos y contadores que proporciona el proveedor. El encabezado. h se usa como entrada para **LODCTR** durante la instalación del proveedor y el código de C/C++ del proveedor también puede utilizarlo.
+Cree un archivo de encabezado .h que defina constantes (macros) para los desplazamientos a los objetos y contadores que proporciona el proveedor. El encabezado .h se usa como entrada para **lodctr** durante la instalación del proveedor y también se puede usar en el código de C/C++ del proveedor.
 
-Los valores constantes deben ser consecutivos, incluso números que empiezan por cero. Agrupe las constantes por objetos (es decir, inicie cada grupo con el desplazamiento del objeto y, a continuación, siga con los desplazamientos de los contadores para ese objeto).
+Los valores constantes deben ser consecutivos, incluso números que empiezan por cero. Agrupa las constantes por objetos (es decir, inicia cada grupo con el desplazamiento del objeto y, a continuación, sigue con los desplazamientos de los contadores de ese objeto).
 
-Las constantes del encabezado determinan el orden en que se agregan los contadores al nombre y al texto de ayuda del registro. El proveedor utiliza los desplazamientos para determinar qué objeto se está consultando y los valores de índice que se van a utilizar al devolver los datos. Para obtener más información, consulte [implementación de OpenPerformanceData](implementing-openperformancedata.md).
+Las constantes del encabezado determinan el orden en que se agregan los contadores al nombre y al texto de ayuda en el Registro. El proveedor usa los desplazamientos para determinar qué objeto se consulta y los valores de índice que se usarán al devolver los datos. Para obtener más información, [vea Implementar OpenPerformanceData.](implementing-openperformancedata.md)
 
-A continuación se muestra un ejemplo de un archivo de constante simbólica, denominado contraoffsets. h, que se usa en el ejemplo de [creación de una DLL de extensión de rendimiento](creating-a-performance-extension-dll.md) .
+A continuación se muestra un ejemplo de un archivo constante simbólico, denominado CounterOffsets.h, que se usa en el ejemplo crear un [archivo DLL de extensión de](creating-a-performance-extension-dll.md) rendimiento.
 
 ```C++
 #ifndef OFFSETS_H
@@ -57,11 +57,11 @@ A continuación se muestra un ejemplo de un archivo de constante simbólica, den
 #endif // OFFSETS_H
 ```
 
-## <a name="creating-an-initialization-ini-file"></a>Crear una inicialización (. INI)
+## <a name="creating-an-initialization-ini-file"></a>Creación de un archivo de inicialización (.INI)
 
-La inicialización (. INI) contiene el nombre y las cadenas de ayuda de cada objeto y contador definido en el archivo de símbolos. El. El archivo INI se usa como entrada para **LODCTR** durante la instalación del proveedor.
+El archivo de inicialización (.INI) contiene el nombre y las cadenas de ayuda para cada objeto y contador definidos en el archivo de símbolos. El .INI se usa como entrada para **lodctr** durante la instalación del proveedor.
 
-El. El archivo INI se debe codificar como UTF-16LE (con marca de orden de bytes) y debe tener las siguientes secciones y claves:
+El .INI debe codificarse como UTF-16LE (con marca de orden de bytes) y debe tener las siguientes secciones y claves:
 
 ```ini
 [info]
@@ -80,55 +80,55 @@ trusted=(Unused)
 <symbol>_<langid>_HELP=Description
 ```
 
-### <a name="info-section"></a>sección [info]
+### <a name="info-section"></a>[info] sección
 
 La `[info]` sección contiene información general sobre el proveedor. Las claves de sección se definen de la siguiente manera:
 
 |Clave|Descripción
 |---|-----------
-|**DriverName**| Especifique el nombre de la clave de rendimiento del proveedor que se encuentra en el registro, en la `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services` clave. Para obtener información sobre la creación de esta clave, consulte [crear la clave de rendimiento de la aplicación](creating-the-applications-performance-key.md).
-|**SymbolFile**| Especifique el archivo de encabezado. h que contiene los valores simbólicos de los objetos y contadores del proveedor. Durante la instalación (al invocar **LODCTR**), el archivo de encabezado debe estar en el mismo directorio que. Archivo INI.
-|**Confiar**| Si incluye esta clave en la `[info]` sección, **LODCTR** agregará un valor del registro de código de validación de biblioteca a su clave de rendimiento con una firma binaria de la dll de rendimiento. Cuando PERFLIB llama a la DLL, compara la firma con el archivo DLL para determinar si se ha modificado el archivo DLL. Se omite el valor de la clave de **confianza** .
+|**DriverName**| Especifique el nombre de la clave de rendimiento del proveedor ubicada en el Registro bajo la `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services` clave. Para obtener información sobre cómo crear esta clave, vea [Creating the Application's Performance Key](creating-the-applications-performance-key.md).
+|**SymbolFile**| Especifique el archivo de encabezado .h que contiene valores simbólicos de los objetos y contadores del proveedor. Durante la instalación (al invocar **lodctr**), el archivo de encabezado debe estar en el mismo directorio que el .INI archivo.
+|**Confianza**| Si incluye esta clave en la sección `[info]` , **lodctr** agregará un valor del Registro de código de validación de biblioteca a la clave de rendimiento con una firma binaria del archivo DLL de rendimiento. Cuando PERFLIB llama al archivo DLL, compara la firma con el archivo DLL para determinar si el archivo DLL se ha modificado. Se omite el **valor de la** clave de confianza.
 
-Las `DriverName` `SymbolFile` claves y son necesarias.
+Las `DriverName` claves y son `SymbolFile` necesarias.
 
-### <a name="objects-section"></a>sección [objetos]
+### <a name="objects-section"></a>Sección [objects]
 
-En la `[objects]` sección se proporciona una lista de los objetos de rendimiento que admite el proveedor. Se utiliza para determinar si cada símbolo de la `[text]` sección hace referencia a un objeto o a un contador.
+En `[objects]` la sección se proporciona una lista de los objetos de rendimiento que admite el proveedor. Se usa para determinar si cada símbolo de la `[text]` sección hace referencia a un objeto o a un contador.
 
-Para cada objeto (CounterSet) admitido por el proveedor, agregue una clave denominada `<symbol>_<langid>_NAME=` a la `[objects]` sección, donde `<symbol>` es el nombre del objeto y `<langid>` es el identificador de idioma de uno de los idiomas admitidos. Se omite el valor.
+Para cada objeto (conjunto de contadores) admitido por el proveedor, agregue una clave denominada a la sección , donde es el nombre del objeto y es el identificador de idioma de uno de los `<symbol>_<langid>_NAME=` `[objects]` `<symbol>` `<langid>` idiomas admitidos. El valor se omite.
 
 > [!IMPORTANT]
-> La `[objects]` sección mejora el rendimiento del sistema. Aunque la sección objetos es opcional, siempre debe incluir esta sección en su. Archivo INI. Si incluye esta sección, solo se llama a la DLL de rendimiento si admite el objeto solicitado. Si no incluye la sección objetos, se llama a la DLL para cada consulta, ya que el sistema no sabe qué objetos admite el proveedor. Si no se incluye la sección Object, **LODCTR** genera un mensaje en el registro de eventos de la aplicación que indica que el objeto. El archivo INI no contiene una sección de objetos. El identificador de evento de este mensaje es 2000.
+> La `[objects]` sección mejora el rendimiento del sistema. Aunque la sección objects es opcional, siempre debe incluir esta sección en el .INI archivo. Si incluye esta sección, solo se llama al archivo DLL de rendimiento si admite el objeto solicitado. Si no incluye la sección de objetos, se llama al archivo DLL para cada consulta porque el sistema no sabe qué objetos admite el proveedor. Si no se incluye la sección de objeto, **lodctr** genera un mensaje en el registro de eventos de la aplicación que indica que el archivo .INI no contenía una sección de objetos. El identificador de evento de este mensaje es 2000.
 
-### <a name="languages-section"></a>sección [Languages]
+### <a name="languages-section"></a>[idiomas] sección
 
-`[languages]`En esta sección se proporciona una lista de los identificadores de idioma de cada lenguaje para los que el proveedor proporciona cadenas de nombre y ayuda. Todos los proveedores deben admitir `009` (Inglés).
+En la sección se proporciona una lista de los identificadores de idioma de cada idioma para el que el proveedor proporciona el nombre `[languages]` y las cadenas de ayuda. Todos los proveedores deben admitir `009` (inglés).
 
-Para cada idioma admitido, agregue una clave denominada `<langid>=` . El valor se omite, pero para fines de documentación el valor se establece normalmente en el nombre del idioma correspondiente, por ejemplo, `009=English` .
+Para cada idioma admitido, agregue una clave denominada `<langid>=` . El valor se omite, pero para fines de documentación, el valor normalmente se establece en el nombre del idioma correspondiente, por ejemplo, `009=English` .
 
-Para la mayoría de los lenguajes, debe usar el identificador de idioma principal. La lista completa de identificadores de idioma está en el archivo de encabezado Winnt. h, bajo el encabezado "ID. de idioma principal". Convierta el valor que se encuentra en Winnt. h en una secuencia de 3 dígitos hexadecimales quitando el `0x` prefijo y agregando los `0` dígitos iniciales hasta que la secuencia tenga 3 dígitos de longitud. Por ejemplo, para especificar cadenas en inglés (0x9), use 009. Para especificar cadenas italianas (0x10), use 010.
+Para la mayoría de los idiomas, debe usar el identificador de idioma principal. La lista completa de identificadores de idioma se encuentra en el archivo de encabezado Winnt.h, bajo el encabezado "Primary Language Ids" (Identificadores de idioma principal). Convierta el valor encontrado en Winnt.h en una secuencia de 3 dígitos hexadecimales quitando el prefijo y agregando dígitos iniciales hasta que la secuencia tiene 3 dígitos `0x` `0` de longitud. Por ejemplo, para especificar cadenas en inglés (0x9), use 009. Para especificar cadenas en italiano (0x10), use 010.
 
-Los idiomas chino y Portugués requieren los identificadores principal y de subidioma. Use 404, 804, 416 o 816 en lugar de 004 o 016.
+Los idiomas chino y portugués requieren los identificadores principal y subidioma. Use 404, 804, 416 o 816 en lugar de 004 o 016.
 
 ### <a name="text-section"></a>[texto] sección
 
-`[text]`En la sección se proporcionan el nombre y las cadenas de ayuda de los objetos y contadores.
+La `[text]` sección proporciona el nombre y las cadenas de ayuda para los objetos y contadores.
 
-Para cada objeto o contador, y para cada idioma admitido, debe proporcionar una clave de nombre (que contenga el nombre o la cadena de título para el objeto o el contador) y, opcionalmente, puede proporcionar una clave de ayuda (que contiene la descripción o la cadena de explicación del objeto o contador). Las claves deben denominarse `<symbol>_<langid>_NAME` y `<symbol>_<langid>_HELP` , donde `<symbol>` es la constante simbólica del objeto o contador (tal y como se define en el archivo. h constante simbólico) y `<langid>` es el identificador de idioma que se usa para esta cadena.
+Para cada objeto o contador, y para cada idioma admitido, debe proporcionar una clave NAME (que contiene el nombre o la cadena de título para el objeto o contador) y, opcionalmente, puede proporcionar una clave HELP (que contiene la cadena de descripción o explicación del objeto o contador). Las claves deben tener el nombre y , donde es la constante simbólica para el objeto o contador (como se define en el archivo .h de constante simbólica) y es el identificador de idioma utilizado para `<symbol>_<langid>_NAME` `<symbol>_<langid>_HELP` esta `<symbol>` `<langid>` cadena.
 
-Por ejemplo, las cadenas en inglés para un contador con símbolo `MY_COUNTER` se especifican como:
+Por ejemplo, las cadenas en inglés para un contador con símbolo `MY_COUNTER` se especificarían como:
 
 ```ini
 MY_COUNTER_009_NAME=My Counter
 MY_COUNTER_009_HELP=Description for My Counter.
 ```
 
-Las teclas de texto pueden aparecer en cualquier orden. Las cadenas de texto no deben contener caracteres de formato, como tabulaciones.
+Las claves de texto pueden aparecer en cualquier orden. Las cadenas de texto no deben contener caracteres de formato, como tabulaciones.
 
 ### <a name="example-ini-file"></a>Archivo INI de ejemplo
 
-A continuación se muestra un ejemplo de un archivo de inicialización que se usa en el ejemplo de [creación de un archivo dll de extensión de rendimiento](creating-a-performance-extension-dll.md) .
+A continuación se muestra un ejemplo de un archivo de inicialización que se usa en el ejemplo [de creación de un archivo DLL de extensión de](creating-a-performance-extension-dll.md) rendimiento.
 
 ```ini
 [info]
@@ -181,17 +181,17 @@ BYTES_SERVED_00C_NAME=Octets Servis
 BYTES_SERVED_00C_HELP=Le nombre d'octets servis du cache.
 ```
 
-## <a name="running-the-lodctr-tool"></a>Ejecutar la herramienta LODCTR
+## <a name="running-the-lodctr-tool"></a>Ejecución de la herramienta Lodctr
 
-Para cargar los nombres y las cadenas de ayuda definidas en su. Archivo INI (durante la instalación del proveedor), ejecute la herramienta **LODCTR** desde la carpeta que contiene el. Archivo INI y archivo de encabezado. La herramienta se incluye con el equipo. Debe ejecutar **LODCTR** con privilegios elevados. El parámetro de **LODCTR** es la ruta de acceso a. Archivo INI. Por ejemplo, `lodctr "C:\Program Files\MyCompany\MyProvider\MyProvider.ini"`.
+Para cargar los nombres y las cadenas de ayuda definidas en el archivo .INI (durante la instalación del proveedor), ejecute la herramienta **lodctr** desde la carpeta que contiene el archivo .INI y el archivo de encabezado. La herramienta se incluye con el equipo. Debe ejecutar **lodctr con** privilegios elevados. El parámetro para **lodctr** es la ruta de acceso al .INI archivo. Por ejemplo, `lodctr "C:\Program Files\MyCompany\MyProvider\MyProvider.ini"`.
 
-Para descargar los nombres y las cadenas de ayuda (durante la desinstalación), ejecute la herramienta **Unlodctr** . Debe ejecutar **Unlodctr** con privilegios elevados. El parámetro para **Unlodctr** es el drivername del proveedor (el nombre de la clave de rendimiento del proveedor). Por ejemplo, `unlodctr "MyProvider"`.
+Para descargar los nombres y las cadenas de ayuda (durante la desinstalación), ejecute **la herramienta unlodctr.** Debe ejecutar **unlodctr con** privilegios elevados. El parámetro para **unlodctr** es driverName del proveedor (el nombre de la clave de rendimiento del proveedor). Por ejemplo, `unlodctr "MyProvider"`.
 
-Antes de ejecutar **LODCTR**, asegúrese de que la aplicación tiene una entrada en la clave **servicios** . Para obtener más información, consulte [crear la clave de rendimiento de la aplicación](creating-the-applications-performance-key.md). Si la clave no existe, **LODCTR** no actualizará el registro con sus nombres y descripciones.
+Antes de **ejecutar lodctr,** asegúrese de que la aplicación tiene una entrada bajo la **clave Servicios.** Para más información, consulte [Creación de la clave de rendimiento de la aplicación.](creating-the-applications-performance-key.md) Si la clave no existe, **lodctr** no actualizará el registro con sus nombres y descripciones.
 
-Como alternativa a ejecutar **LODCTR**, puede llamar a [**LoadPerfCounterTextStrings**](/windows/win32/api/loadperf/nf-loadperf-loadperfcountertextstringsw) (definido en Loadperf. h) desde el programa de instalación para cargar las descripciones de los nombres de los contadores. Después, puede llamar a [**UnloadPerfCounterTextStrings**](/windows/win32/api/loadperf/nf-loadperf-unloadperfcountertextstringsw) durante la desinstalación.
+Como alternativa a ejecutar **lodctr,** puede llamar a [**LoadPerfCounterTextStrings**](/windows/win32/api/loadperf/nf-loadperf-loadperfcountertextstringsw) (definido en Loadperf.h) desde el programa de instalación para cargar las descripciones de los nombres de los contadores. A continuación, puede llamar [**a UnloadPerfCounterTextStrings**](/windows/win32/api/loadperf/nf-loadperf-unloadperfcountertextstringsw) durante la desinstalación.
 
-La utilidad **LODCTR** copia las cadenas de. En los **contadores** y los valores del registro de **ayuda** en las subclaves del lenguaje adecuado. Si la subclave del lenguaje correspondiente no existe, no se copian las cadenas para ese idioma. La utilidad también actualiza el **último contador** y el último valor de la **ayuda** . Los nombres y descripciones de los contadores de rendimiento se almacenan en la siguiente ubicación del registro.
+La **utilidad lodctr** copia las cadenas del archivo .INI en los valores del Registro **Counters** y **Help** en las subclaves de lenguaje adecuadas. Si la subclave de idioma correspondiente no existe, no se copian las cadenas de ese idioma. La utilidad también actualiza los valores **Last Counter (Último contador)** **y Last Help (Última** ayuda). Los nombres y descripciones de los contadores de rendimiento se almacenan en la siguiente ubicación del Registro.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -210,7 +210,7 @@ HKEY_LOCAL_MACHINE
                      Help = ...
 ```
 
-Además de agregar valores en la clave **Perflib** , la herramienta **LODCTR** también agrega los siguientes valores al nodo **servicios** de la aplicación. En la mayoría de los casos, la aplicación y el proveedor tendrán una relación uno a uno; sin embargo, es posible que un proveedor proporcione datos de contador para varias aplicaciones, por lo que la clave se basa en la aplicación y no en el proveedor.
+Además de agregar valores bajo la clave **PerfLib,** la herramienta **lodctr** también agrega los siguientes valores al nodo **Servicios** de la aplicación. En la mayoría de los casos, la aplicación y el proveedor tendrán una relación uno a uno. sin embargo, es posible que un proveedor proporcione datos de contador para varias aplicaciones, por lo que la clave se basa en la aplicación y no en el proveedor.
 
 ```
 HKEY_LOCAL_MACHINE

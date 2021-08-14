@@ -1,22 +1,22 @@
 ---
-title: Interfaces de Access Control Web Servicios de Escritorio remoto
-description: Admite la publicación de recursos específicos de usuario en Conexión de RemoteApp y Escritorio. Este control es un contenedor alrededor del cliente de Conexión a Escritorio remoto (MsTscAx.dll) y el proxy en tiempo de ejecución de conexiones de RemoteApp y escritorio (Tswbprxy.exe).
+title: Servicios de Escritorio remoto web Access Control web
+description: Admite la publicación de recursos específicos del usuario en Conexión de RemoteApp y Escritorio. Este control es un contenedor alrededor del cliente de Conexión a Escritorio remoto (MsTscAx.dll) y el proxy en tiempo de ejecución de Conexiones de Escritorio y RemoteApp (Tswbprxy.exe).
 ms.assetid: 69c03f60-11e0-454b-a661-e608e7ca7254
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto Servicios de Escritorio remoto, interfaces de control de acceso web
+- Servicios de Escritorio remoto Servicios de Escritorio remoto , interfaces de control de acceso web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02c30f7fbf0030cd62dff221586cf4d44c90f473
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a444aeebed6c4d35d92020c01c302d62c5861c5a1ec1e29d58183354b3c56bbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117940538"
 ---
-# <a name="remote-desktop-services-web-access-control-interfaces"></a>Interfaces de Access Control Web Servicios de Escritorio remoto
+# <a name="remote-desktop-services-web-access-control-interfaces"></a>Servicios de Escritorio remoto web Access Control web
 
-El Access Control Web Servicios de Escritorio remoto admite la publicación de recursos específicos del usuario en Conexión de RemoteApp y Escritorio. Este control es un contenedor alrededor del cliente de Conexión a Escritorio remoto (MsTscAx.dll) y el proxy en tiempo de ejecución de conexiones de RemoteApp y escritorio (Tswbprxy.exe).
+El Servicios de Escritorio remoto web Access Control admite la publicación de recursos específicos del usuario en Conexión de RemoteApp y Escritorio. Este control es un contenedor alrededor del cliente de Conexión a Escritorio remoto (MsTscAx.dll) y el proxy en tiempo de ejecución de Conexiones de Escritorio y RemoteApp (Tswbprxy.exe).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -25,14 +25,14 @@ El Access Control Web Servicios de Escritorio remoto admite la publicación de r
 [**IMsRdpClientShell2**](imsrdpclientshell2.md)
 </dt> <dd>
 
-Expone propiedades que inician el cliente de Conexión a Escritorio remoto desde Escritorio remoto Web Access (acceso web de escritorio remoto) o desde otros portales web.
+Expone las propiedades que inician Conexión a Escritorio remoto cliente desde Escritorio remoto Web Access (Acceso web de Escritorio remoto) o desde otros portales web.
 
 </dd> <dt>
 
 [**IMsRdpWorkspace**](imsrdpworkspace.md)
 </dt> <dd>
 
-Expone métodos que administran Conexión de RemoteApp y Escritorio las credenciales y las conexiones.
+Expone métodos que administran Conexión de RemoteApp y Escritorio credenciales y conexiones.
 
 </dd> <dt>
 
@@ -43,9 +43,9 @@ Expone un método que asocia Conexión de RemoteApp y Escritorio credenciales a 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

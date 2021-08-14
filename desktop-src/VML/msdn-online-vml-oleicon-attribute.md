@@ -4,23 +4,23 @@ description: Atributo OLEIcon de VML
 ms.assetid: 52a664c6-7424-4d1d-929b-fe9fb3fefb88
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5272acb80808b5cb29d3654643c56de52870a5e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b913b1ffa1d223b53b48a2d29855a9e7a8c5567b1732fc253681383be499a69d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119334225"
 ---
 # <a name="vml-oleicon-attribute"></a>Atributo OLEIcon de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si un objeto OLE se mostrará como un icono. Lectura/escritura **VgTriState**.
+Determina si un objeto OLE se mostrará como un icono. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,16 +28,16 @@ Determina si un objeto OLE se mostrará como un icono. Lectura/escritura **VgTri
 
 **Sintaxis de etiquetas**
 
-<v: *Element* o:oleicon = " *expresión* " >
+<v: *element* o:oleicon=" *expression* ">
 
 **Comentarios:**
 
-El valor predeterminado es **false**. Si es **true**, el objeto OLE se muestra como un icono.
+El valor predeterminado es **false**. Si **es True**, el objeto OLE se muestra como un icono.
 
-Este atributo lo usa Microsoft Office pero Microsoft Internet Explorer no lo usa.
+Microsoft Microsoft Office Internet Explorer usa este atributo.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

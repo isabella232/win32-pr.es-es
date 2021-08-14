@@ -1,66 +1,66 @@
 ---
-title: Trasladar código de fusión
-description: En la contabilidad de IRIS, al dibujar en los búferes frontal y posterior, la combinación se realiza mediante la lectura de uno de los búferes, la fusión con ese color y la posterior escritura del resultado en ambos búferes. En OpenGL, sin embargo, cada búfer se lee a su vez, se mezcla y se escribe.
+title: Porting Blending Code
+description: En IRIS GL, al dibujar en los búferes frontal y posterior, la combinación se realiza mediante la lectura de uno de los búferes, la combinación con ese color y, a continuación, la escritura del resultado en ambos búferes. Sin embargo, en OpenGL, cada búfer se lee a su vez, se combina y, a continuación, se escribe.
 ms.assetid: 18334c6b-586d-44a3-aa95-d10589ba99f4
 keywords:
-- Migración de la contabilidad de IRIS, fusión
-- portabilidad de IRIS GL, fusión
-- trasladar a OpenGL desde IRIS GL, fusión
-- Exportación de OpenGL desde IRIS GL, fusión
+- Porte de IRIS GL, combinación
+- porting from IRIS GL,blending
+- porting to OpenGL from IRIS GL,blending
+- Porte de OpenGL desde IRIS GL, blending
 - combinación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7956c675848f454b660126a7a17869295a827438
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13548a2f08821e4f80bf63230077f9a39540ba9b8a37763e7935d211ef0dcdc0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485915"
 ---
-# <a name="porting-blending-code"></a>Trasladar código de fusión
+# <a name="porting-blending-code"></a>Porting Blending Code
 
-En la contabilidad de IRIS, al dibujar en los búferes frontal y posterior, la combinación se realiza mediante la lectura de uno de los búferes, la fusión con ese color y la posterior escritura del resultado en ambos búferes. En OpenGL, sin embargo, cada búfer se lee a su vez, se mezcla y se escribe.
+En IRIS GL, al dibujar en los búferes frontal y posterior, la combinación se realiza mediante la lectura de uno de los búferes, la combinación con ese color y, a continuación, la escritura del resultado en ambos búferes. Sin embargo, en OpenGL, cada búfer se lee a su vez, se combina y, a continuación, se escribe.
 
-En la tabla siguiente se enumeran las funciones de fusión en GL de IRIS y sus funciones de OpenGL equivalentes.
+En la tabla siguiente se enumeran las funciones de combinación de IRIS GL y sus funciones OpenGL equivalentes.
 
 
 
-| Función de GL de IRIS  | Función OpenGL                            | Significado                     |
+| Función GL de IRIS  | Función OpenGL                            | Significado                     |
 |-------------------|--------------------------------------------|-----------------------------|
-|                   | [**glEnable**](glenable.md) (GL \_ Blend) | Activa la fusión.          |
-| **blendfunction** | [**glBlendFunc**](glblendfunc.md)         | Especifica una función de Blend. |
+|                   | [**glEnable**](glenable.md) ( GL \_ BLEND ) | Activa la combinación.          |
+| **blendfunction** | [**glBlendFunc**](glblendfunc.md)         | Especifica una función blend. |
 
 
 
- 
+ 
 
-La función **glBlendFunc** de OpenGL y la función **BLENDFUNCTION** de la contabilidad de iris son casi idénticas. En la tabla siguiente se enumeran los factores de mezcla de IRIS GL y sus equivalentes de OpenGL.
+La función **GlBlendFunc** de OpenGL y la función **blendfunction de** IRIS GL son casi idénticas. En la tabla siguiente se enumeran los factores de combinación de IRIS GL y sus equivalentes de OpenGL.
 
 
 
-| IRIS GL          | OpenGL                     | Notas             |
+| IRIS GL          | Opengl                     | Notas             |
 |------------------|----------------------------|-------------------|
-| BF \_ cero         | GL \_ cero                   |                   |
-| BF \_ uno          | GL \_ uno                    |                   |
-| SA de BF \_           | CC \_ src \_ alfa             |                   |
-| BF \_ MSA          | GL \_ uno \_ menos \_ src \_ Alpha |                   |
-| BF \_ da           | GL \_ DST \_ Alpha             |                   |
-| MDA de BF \_          | GL \_ uno \_ menos \_ DST \_ Alpha |                   |
-| BF \_ SC           | \_color de origen del libro de contabilidad \_             |                   |
-| BF \_ MSC          | GL \_ uno \_ menos \_ el \_ color src | Solo destino. |
-| BF \_ DC           | \_color de DST de GL \_             | Solo origen.      |
-| MDC de BF \_          | GL \_ uno \_ menos \_ el \_ color de DST | Solo origen.      |
-| \_MDA del mínimo \_ SA \_ de BF | libro de contabilidad \_ orig \_ alfa \_ saturado   |                   |
+| BF \_ ZERO         | GL \_ ZERO                   |                   |
+| BF \_ ONE          | GL \_ ONE                    |                   |
+| BF \_ SA           | GL \_ SRC \_ ALPHA             |                   |
+| BF \_ MSA          | GL \_ ONE \_ MENOS \_ SRC \_ ALPHA |                   |
+| BF \_ DA           | GL \_ DST \_ ALPHA             |                   |
+| MDA de \_ BF          | GL \_ ONE \_ MENOS \_ DST \_ ALPHA |                   |
+| BF \_ SC           | GL \_ SRC \_ COLOR             |                   |
+| MSC \_ de BF          | GL \_ ONE MENOS COLOR \_ \_ SRC \_ | Solo destino. |
+| Controlador de dominio de BF \_           | GL \_ DST \_ COLOR             | Solo origen.      |
+| MDC \_ de BF          | GL \_ ONE MENOS COLOR \_ \_ DST \_ | Solo origen.      |
+| BF \_ MIN \_ SA \_ MDA | SATURACIÓN ALFA de GL \_ SRC \_ \_   |                   |
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

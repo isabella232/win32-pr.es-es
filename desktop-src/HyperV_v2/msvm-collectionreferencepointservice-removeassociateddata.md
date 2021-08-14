@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 66a5cf068545f31f9919a9da60a1b09b32f78e4d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7352c00ead9647c887bf9901f8c159dae2883f77d6d263fcea39de0063b34a27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431515"
 ---
 # <a name="removeassociateddata-method-of-the-msvm_collectionreferencepointservice-class"></a>Método RemoveAssociatedData de la clase CollectionReferencePointService de Msvm \_
 
@@ -43,7 +43,7 @@ uint32 RemoveAssociatedData(
 *AffectedReferencePointCollection* \[ En\]
 </dt> <dd>
 
-Referencia a la colección de puntos de referencia del sistema virtual afectado.
+Referencia a la colección de puntos de referencia del sistema virtual afectada.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Si se realiza correctamente, devuelve 0 (sin error) o 4096 (trabajo iniciado); d
 **Estado no válido** (5)
 </dt> <dt>
 
-**Tipo no** válido (6)
+**Tipo no válido** (6)
 </dt> <dt>
 
 **DMTF reservado** (..)
@@ -97,9 +97,9 @@ Si se realiza correctamente, devuelve 0 (sin error) o 4096 (trabajo iniciado); d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -107,7 +107,7 @@ Si se realiza correctamente, devuelve 0 (sin error) o 4096 (trabajo iniciado); d
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 08a56e20-56cf-4ce1-a501-52f923f2bef2
 title: Directiva de grupo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8515997e912e3e60051b27ccf84a9f484cb5e2c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 778d63f2f0fd31e72e1d4b0aab37cd2c431cbe40de8378327a0030febcee6fa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117963093"
 ---
 # <a name="group-policy"></a>Directiva de grupo
 
@@ -17,7 +17,7 @@ ms.locfileid: "103908283"
 
 -   [Directiva de grupo](/previous-versions/windows/desktop/Policy/group-policy-start-page)
 -   [Consola de administración de directivas de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal)
--   [Biblioteca de clases de GPMC](/previous-versions//ee840126(v=vs.85))
+-   [Biblioteca de clases GPMC](/previous-versions//ee840126(v=vs.85))
 
  
 

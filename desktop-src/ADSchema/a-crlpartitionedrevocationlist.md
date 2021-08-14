@@ -1,11 +1,11 @@
 ---
-title: CRL-Particionad-revocación-atributo de lista
-description: Infraestructura de clave pública \ 8211; listas de revocación.
+title: Atributo CRL-Partitioned-Revocation-List
+description: Infraestructura de clave pública \ 8211;listas de revocación.
 ms.assetid: ecee7ee6-21e7-4861-a7f5-5e8e3579978a
 ms.tgt_platform: multiple
 keywords:
-- CRL-Particionad-revocación-esquema de AD de atributo de lista
-- cRLPartitionedRevocationList esquema de AD de atributos
+- Esquema de AD del atributo CRL-Partitioned-Revocation-List
+- cRLPartitionedRevocationList attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6c19629cab11e9e6e02069213487135bea4d2aa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 413f117b5c0fedfc5b9e0ed4d9e9a341209ec3997119e34981280b1aad8ceb7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706745"
 ---
-# <a name="crl-partitioned-revocation-list-attribute"></a>CRL-Particionad-revocación-atributo de lista
+# <a name="crl-partitioned-revocation-list-attribute"></a>Atributo CRL-Partitioned-Revocation-List
 
 Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | CRL con particiones-lista de revocación                       |
-| Nombre para mostrar de LDAP | cRLPartitionedRevocationList                          |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | CRL-Partitioned-Revocation-List                       |
+| Ldap-Display-Name | cRLPartitionedRevocationList                          |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.683                                |
-| System-ID-GUID    | 963d2731-48be-11d1-a9c3-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 963d2731-48be-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,20 +53,20 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 

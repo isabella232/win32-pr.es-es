@@ -1,19 +1,19 @@
 ---
-description: URI que representa el identificador de servicio.
+description: Uri que representa el identificador de servicio.
 ms.assetid: ef676f02-56a7-4b3a-9ca3-e7fa3c494ec7
 title: Elemento ServiceID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4c8b02fa8ecfa936aa658a1f18242e4f14eb0dd
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 0dc6ac1da57109f4f5671caf16a49b3a6174e7bfb63335d5ba15a548d7135990
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756745"
 ---
 # <a name="serviceid-element"></a>Elemento ServiceID
 
-URI que representa el identificador de servicio.
+Uri que representa el identificador de servicio.
 
 ## <a name="usage"></a>Uso
 
@@ -44,7 +44,7 @@ No hay elementos secundarios.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

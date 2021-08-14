@@ -1,10 +1,10 @@
 ---
-title: Estructura de TSMF_SUPPORT_DATA_IN
-description: Contiene información acerca de los formatos de medios. | Estructura de TSMF_SUPPORT_DATA_IN
+title: TSMF_SUPPORT_DATA_IN estructura
+description: Contiene información sobre los formatos multimedia. | TSMF_SUPPORT_DATA_IN estructura
 ms.assetid: cd1a8295-22b7-4d75-8325-94da4d7380d0
 ms.tgt_platform: multiple
 keywords:
-- Estructura de TSMF_SUPPORT_DATA_IN Servicios de Escritorio remoto
+- TSMF_SUPPORT_DATA_IN estructura Servicios de Escritorio remoto
 - PTSMF_SUPPORT_DATA_IN puntero de estructura Servicios de Escritorio remoto
 topic_type:
 - apiref
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2072363978cb0e70d64a09d855ed2861341e9cf0
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8ae90099b69494425344ff65b73090cce574b843cd1589572203a4786b38ff6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117755781"
 ---
-# <a name="tsmf_support_data_in-structure"></a>TSMF \_ admiten \_ datos \_ en la estructura
+# <a name="tsmf_support_data_in-structure"></a>TSMF \_ SUPPORT DATA IN \_ (ESTRUCTURA DE DATOS DE COMPATIBILIDAD DE TSMF) \_
 
-Contiene información acerca de los formatos de medios. El método [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) usa esta estructura durante las consultas **\_ \_ \_ \_ compatibles con el formato MF de la consulta Wrds** .
+Contiene información sobre los formatos multimedia. El método [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) usa esta estructura durante las consultas **\_ WRDS QUERY MF FORMAT \_ \_ \_ SUPPORT.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ La sesión.
 **numEntries**
 </dt> <dd>
 
-El número de estructuras en los datos de longitud variable.
+Número de estructuras en los datos de longitud variable.
 
 </dd> <dt>
 
@@ -68,21 +68,21 @@ Número variable de estructuras que contienen datos de formato multimedia.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>         |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty)
 </dt> <dt>
 
-[**TSMF \_ admite \_ NODEDATA \_ en**](tsmf-support-nodedata-in.md)
+[**COMPATIBILIDAD DE TSMF \_ \_ CON NODEDATA \_ EN**](tsmf-support-nodedata-in.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
 description: Nombre de cuenta
 ms.assetid: 1699c269-d653-4f62-8cef-e1f7d9250e0c
-title: System. Communication. AccountName
+title: System.Communication.AccountName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3587930980ea610b82850e559483db238811457
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09223f73c597592d12a69bc68af1602f1e76a1f0fbc84efed71787706714da27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119459754"
 ---
-# <a name="systemcommunicationaccountname"></a>System. Communication. AccountName
+# <a name="systemcommunicationaccountname"></a>System.Communication.AccountName
 
 Nombre de cuenta
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

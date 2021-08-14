@@ -1,5 +1,5 @@
 ---
-title: Error de vaciado de D1110
+title: Error de vaciado D1110
 ms.assetid: 44f122b0-08e3-4f63-a575-0f3619144823
 description: Error en una llamada de vaciado de un destino de representación
 keywords:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 721fb27e8cfd5e83f94b93079ee66e4a1c35992d
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 12d6a990d3d65c1a711825e6d45720f3df977ca78efb16c1d39bb9b2251c53b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758155"
 ---
 # <a name="d1110-flush-failure"></a>D1110: Error de vaciado
 
-Una llamada de vaciado por un recurso de destino de \[ *representación con error.* \] Etiquetas \[ *tag1*, *tag2* \] .
+Error al llamar a Flush de un recurso de destino de \[ *representación.* \] Etiquetas \[ *tag1,* *tag2* \] .
 
 ## <a name="placeholders"></a>Marcadores de posición
 
@@ -59,7 +59,7 @@ Segundo valor de etiqueta. Consulte [**SetTags para**](/windows/win32/api/d2d1/n
 
 ## <a name="examples"></a>Ejemplos
 
-**Ejemplo 1:** El código siguiente muestra que una llamada a draw está en un estado no válido. Para evitar el mensaje de advertencia, use [**SetAntialiasMode**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-setantialiasmode) para establecer D2D1 \_ ANTIALIAS MODE ANTIALIASED antes de una \_ llamada a \_ [**FillOpacityMask.**](id2d1rendertarget-fillopacitymask.md)
+**Ejemplo 1:** El código siguiente muestra que una llamada a draw está en un estado no válido. Para evitar el mensaje de advertencia, use [**SetAntialiasMode**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-setantialiasmode) para establecer D2D1 \_ ANTIALIAS \_ MODE \_ ANTIALIAS ANTIALIASED antes de una [**llamada FillOpacityMask.**](id2d1rendertarget-fillopacitymask.md)
 
 
 ```C++
@@ -122,11 +122,11 @@ DEBUG WARNING - A Flush call by a render target failed [88990001]. Tags [0, 0].
 
 ## <a name="possible-causes"></a>Causas posibles
 
-La [**llamada Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) puede producir un error por uno de estos dos motivos. Puede producirse un error porque se llamó al método fuera de la llamada [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)EndDraw o puede producirse un error porque se produjo un error en una de las operaciones de destino de representación que se han procesado desde la última llamada Flush o / [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) **EndDraw.**  Para corregir el problema, la aplicación debe determinar la causa del error y realizar la acción adecuada.
+La [**llamada Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) puede producir un error por uno de estos dos motivos. Puede producirse un error porque se llamó al método fuera de la llamada [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)EndDraw o puede producirse un error porque se produjo un error en una de las operaciones de destino de representación que se han procesado desde la última llamada flush o / [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) **enddraw.**  Para corregir el problema, la aplicación debe determinar la causa del error y realizar la acción adecuada.
 
 ## <a name="fixes"></a>Correcciones
 
-Hay muchas razones por las que una [**llamada de vaciado**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) podría producir un error. La aplicación debe determinar la causa del error y realizar la acción adecuada.
+Hay muchas razones por las que se puede producir un error [**en**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) una llamada de vaciado. La aplicación debe determinar la causa del error y realizar la acción adecuada.
 
  
 

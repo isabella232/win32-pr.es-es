@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXPRTCompBuffer::GetNumChannels: recupera el número de canales de color usados en la memoria para almacenar muestras.'
+description: 'Método ID3DXPRTCompBuffer::GetNumChannels: recupera el número de canales de color usados en la memoria para almacenar ejemplos.'
 ms.assetid: 8b033cda-feec-4e74-a4c4-ea44b5fb12c7
 title: Método ID3DXPRTCompBuffer::GetNumChannels (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9212528bec454a8d349c6249f851c3b021dceb00
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ef36ef0d48dc3e6d94abe15c4b37e1843130a6d6da1b1e6e6c543c551c850422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801483"
 ---
 # <a name="id3dxprtcompbuffergetnumchannels-method"></a>Método ID3DXPRTCompBuffer::GetNumChannels
 
-Recupera el número de canales de color usados en la memoria para almacenar muestras.
+Recupera el número de canales de color usados en memoria para almacenar ejemplos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Devuelve el número de canales de color usados en la memoria para almacenar muestras. Por lo general, el valor será 1 para representar los valores de luminosidad o 3 para representar valores RGB.
+Devuelve el número de canales de color usados en memoria para almacenar ejemplos. Por lo general, el valor será 1 para representar valores de luminosidad o 3 para representar valores RGB.
 
 ## <a name="remarks"></a>Observaciones
 

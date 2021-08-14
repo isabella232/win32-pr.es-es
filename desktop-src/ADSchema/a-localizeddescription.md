@@ -1,11 +1,11 @@
 ---
-title: Localized-Description atributo)
+title: Localized-Description atributo
 description: El identificador de localización y el nombre para mostrar de un objeto.
 ms.assetid: 22c0df15-8245-49c6-b5ca-57ac48b57c3a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Localized-Description
-- localizedDescription esquema de AD de atributos
+- Localized-Description esquema de AD de atributo
+- esquema de AD del atributo localizedDescription
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2270492258593c1e09128726b286539f8fc9ec4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c33bc2119a920140c45c831787e5810b8f481be036abb53c5bd165cdf3a111e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705835"
 ---
-# <a name="localized-description-attribute"></a>Localized-Description atributo)
+# <a name="localized-description-attribute"></a>Localized-Description atributo
 
 El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Localized-Description                       |
-| Nombre para mostrar de LDAP | localizedDescription                        |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | localizedDescription                        |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.817                      |
-| System-ID-GUID    | d9e18316-8939-11d1-aebc-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | d9e18316-8939-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,20 +53,20 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> |
 
 
 

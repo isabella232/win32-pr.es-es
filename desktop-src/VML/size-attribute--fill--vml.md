@@ -1,26 +1,26 @@
 ---
-title: Size (atributo, Fill) (VML)
-description: Size (atributo, Fill) (VML)
+title: Atributo Size (Fill)(VML)
+description: Atributo Size (Fill)(VML)
 ms.assetid: a84d2d81-0f6f-4011-867d-516225a314aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1eea5638d619853857499cc317517dfc5ffc762
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b26568151961fb2186f8cf49ae25d9f2835665b8fd52a96a4d3a79e954c50ec6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754150"
 ---
-# <a name="size-attribute-fillvml"></a>Size (atributo, Fill) (VML)
+# <a name="size-attribute-fillvml"></a>Atributo Size (Fill)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define el tamaño de la imagen para el relleno. Lectura/escritura [VgVector2D](msdn-online-vml-ivgvector2d-data-type.md) .
+Define el tamaño de la imagen para el relleno. Lectura/escritura [Dvvector2D](msdn-online-vml-ivgvector2d-data-type.md) .
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Define el tamaño de la imagen para el relleno. Lectura/escritura [VgVector2D](m
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* size = " *expresión* " >
+<v: *element* size=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . size = "*expresión * *"**
+*elemento* .size="*expression"".**
 
-*expresión* = de *elemento*. Size
+*expresión* = *element*.size
 
 **Comentarios:**
 
-El valor predeterminado es el tamaño de la imagen original. Los tamaños mayores que el shapewill muestran una versión ampliada pero recortada de la imagen.
+El valor predeterminado es el tamaño de la imagen original. Los tamaños mayores que la forma mostrarán una versión ampliada pero recortada de la imagen.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-Aunque el tamaño original de la imagen es de 50 a 50 puntos, se mostrará la imagen como una imagen de 10 por 10 en el centro del relleno.
+Aunque el tamaño original de la imagen es de 50 por 50 puntos, la imagen se mostrará como una imagen de 10 por 10 en el centro del relleno.
 
 
 ```HTML
@@ -59,6 +59,6 @@ Aunque el tamaño original de la imagen es de 50 a 50 puntos, se mostrará la im
 
 
 
- 
+ 
 
- 
+ 

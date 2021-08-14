@@ -1,23 +1,23 @@
 ---
-description: KTM define las siguientes máscaras de acceso a las transacciones que se van a usar al abrir una transacción.
+description: KTM define las siguientes máscaras de acceso a transacciones que se usarán al abrir una transacción.
 ms.assetid: 93ef3098-b3cc-4b24-ae82-1c10d937f14f
-title: Máscaras de acceso a transacciones (Winnt. h)
+title: Máscaras de acceso a transacciones (WinNT.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b815bcb04a97dbd059c85c6c615a7d607bf77ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faafcce45944e37418191254fc5a2b81d00d9248b27ea5e8753fe8e34a734754
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119520645"
 ---
 # <a name="transaction-access-masks"></a>Máscaras de acceso a transacciones
 
-KTM define las siguientes máscaras de acceso a las transacciones que se van a usar al abrir una transacción.
+KTM define las siguientes máscaras de acceso a transacciones que se usarán al abrir una transacción.
 
 <dl> <dt>
 
-<span id="TRANSACTION_QUERY_INFORMATION"></span><span id="transaction_query_information"></span>**\_información de consulta de transacción \_**
+<span id="TRANSACTION_QUERY_INFORMATION"></span><span id="transaction_query_information"></span>**INFORMACIÓN DE \_ CONSULTA DE \_ TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 0x000001
@@ -30,7 +30,7 @@ El autor de la llamada puede consultar la información de la transacción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_SET_INFORMATION"></span><span id="transaction_set_information"></span>**\_información del conjunto de transacciones \_**
+<span id="TRANSACTION_SET_INFORMATION"></span><span id="transaction_set_information"></span>**INFORMACIÓN DEL \_ CONJUNTO \_ DE TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 0x000002
@@ -43,7 +43,7 @@ El autor de la llamada puede establecer la información de la transacción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_ENLIST"></span><span id="transaction_enlist"></span>**inscripción de transacciones \_**
+<span id="TRANSACTION_ENLIST"></span><span id="transaction_enlist"></span>**TRANSACTION \_ ENLIST**
 </dt> <dd> <dl> <dt>
 
 0x000004
@@ -51,12 +51,12 @@ El autor de la llamada puede establecer la información de la transacción.
 
 
 
-El autor de la llamada puede darse de alta en esta transacción.
+El autor de la llamada puede alistarse en esta transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_COMMIT"></span><span id="transaction_commit"></span>**confirmación de transacción \_**
+<span id="TRANSACTION_COMMIT"></span><span id="transaction_commit"></span>**CONFIRMACIÓN DE \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x000008
@@ -69,7 +69,7 @@ El autor de la llamada puede confirmar esta transacción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_ROLLBACK"></span><span id="transaction_rollback"></span>**reversión de transacciones \_**
+<span id="TRANSACTION_ROLLBACK"></span><span id="transaction_rollback"></span>**REVERSIÓN \_ DE TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 0x000010
@@ -82,7 +82,7 @@ El autor de la llamada puede revertir esta transacción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_PROPAGATE"></span><span id="transaction_propagate"></span>**propagación de transacciones \_**
+<span id="TRANSACTION_PROPAGATE"></span><span id="transaction_propagate"></span>**PROPAGACIÓN \_ DE TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x000020
@@ -90,12 +90,12 @@ El autor de la llamada puede revertir esta transacción.
 
 
 
-El autor de la llamada puede propagar esta transacción a un administrador de recursos superior, como el Coordinador de transacciones distribuidas (DTC).
+El autor de la llamada puede propagar esta transacción a un administrador de recursos superior, como Coordinador de transacciones distribuidas (DTC).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_GENERIC_READ"></span><span id="transaction_generic_read"></span>**\_lectura genérica de transacción \_**
+<span id="TRANSACTION_GENERIC_READ"></span><span id="transaction_generic_read"></span>**LECTURA \_ GENÉRICA DE \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x120001
@@ -103,12 +103,12 @@ El autor de la llamada puede propagar esta transacción a un administrador de re
 
 
 
-El autor de la llamada tiene los siguientes privilegios: **\_ \_ lectura de derechos estándar**, **información de \_ consulta \_ de transacción** y **sincronización**.
+El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_ READ,** **TRANSACTION QUERY \_ \_ INFORMATION** y **SYNCHRONIZE.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_GENERIC_WRITE"></span><span id="transaction_generic_write"></span>**\_escritura genérica de transacción \_**
+<span id="TRANSACTION_GENERIC_WRITE"></span><span id="transaction_generic_write"></span>**ESCRITURA \_ GENÉRICA DE \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x12003E
@@ -116,12 +116,12 @@ El autor de la llamada tiene los siguientes privilegios: **\_ \_ lectura de dere
 
 
 
-El autor de la llamada tiene los privilegios siguientes: **\_ \_ escritura de derechos estándar**, **información de \_ conjunto \_ de transacciones**, **\_ confirmación de transacciones**, **\_ inscripción de transacciones**, **\_ reversión de transacciones**, **\_ propagación de transacciones** y **sincronización**.
+El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_ WRITE**, **TRANSACTION SET \_ \_ INFORMATION**, **TRANSACTION \_ COMMIT**, **TRANSACTION \_ ENLIST,** **TRANSACTION \_ ROLLBACK,** **TRANSACTION \_ PROPAGATE** y **SYNCHRONIZE.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_GENERIC_EXECUTE"></span><span id="transaction_generic_execute"></span>**\_ejecución genérica de transacción \_**
+<span id="TRANSACTION_GENERIC_EXECUTE"></span><span id="transaction_generic_execute"></span>**TRANSACTION \_ GENERIC \_ EXECUTE**
 </dt> <dd> <dl> <dt>
 
 0x120018
@@ -129,12 +129,12 @@ El autor de la llamada tiene los privilegios siguientes: **\_ \_ escritura de de
 
 
 
-El autor de la llamada tiene los siguientes privilegios: **\_ permisos estándar \_ Execute**, **\_ COMMIT TRANSACTION**, **\_ ROLLBACK TRANSACTION** y **SYNCHRONIZE**.
+El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_ EXECUTE,** **TRANSACTION \_ COMMIT,** **TRANSACTION \_ ROLLBACK** y **SYNCHRONIZE.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_ALL_ACCESS"></span><span id="transaction_all_access"></span>**\_acceso a todas las transacciones \_**
+<span id="TRANSACTION_ALL_ACCESS"></span><span id="transaction_all_access"></span>**TRANSACTION \_ ALL \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
 0x12003F
@@ -142,12 +142,12 @@ El autor de la llamada tiene los siguientes privilegios: **\_ permisos estándar
 
 
 
-El autor de la llamada tiene el siguiente privilegio: **\_ derechos estándar \_ necesarios**, **\_ \_ lectura genérica de transacción**, **\_ \_ escritura genérica de transacción** y **\_ \_ ejecución genérica de transacción**.
+El autor de la llamada tiene el privilegio siguiente: **STANDARD \_ RIGHTS \_ REQUIRED,** **TRANSACTION GENERIC \_ \_ READ,** **TRANSACTION GENERIC \_ \_ WRITE** y **TRANSACTION GENERIC \_ \_ EXECUTE**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_RESOURCE_MANAGER_RIGHTS"></span><span id="transaction_resource_manager_rights"></span>**\_derechos del \_ Administrador de recursos de transacciones \_**
+<span id="TRANSACTION_RESOURCE_MANAGER_RIGHTS"></span><span id="transaction_resource_manager_rights"></span>**DERECHOS DE \_ RESOURCE \_ MANAGER DE \_ TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 0x120037
@@ -155,24 +155,24 @@ El autor de la llamada tiene el siguiente privilegio: **\_ derechos estándar \_
 
 
 
-El autor de la llamada tiene los siguientes privilegios: **operación de \_ \_ lectura genérica de transacción**, **\_ \_ escritura de derechos estándar**, **\_ \_ información de conjunto de transacciones**, **\_ reversión de transacciones**, **\_ inscripción de transacciones**, **\_ propagación de transacciones** y **sincronización**.
+El autor de la llamada tiene los siguientes privilegios: **TRANSACTION \_ GENERIC \_ READ**, **STANDARD RIGHTS \_ \_ WRITE**, **TRANSACTION SET \_ \_ INFORMATION**, **TRANSACTION \_ ROLLBACK**, **TRANSACTION \_ ENLIST,** **TRANSACTION \_ PROPAGATE** y **SYNCHRONIZE**.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se recomienda que los administradores de recursos, cuando se da de alta en una transacción, especifiquen derechos de administrador de recursos de transacciones al abrir una transacción. **\_ \_ \_**
+Se recomienda que los administradores de recursos, al realizar la alta en una transacción, **especifiquen TRANSACTION \_ RESOURCE MANAGER \_ \_ RIGHTS** al abrir una transacción.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winnt. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
 
 
 

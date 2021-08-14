@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3045ea4ebe89656f1ffd76e231e8fc22e95c0b93
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dc9707d0abaa277bc3b276dc54c87b4ae57aa42214eee355906e6d9f0748f4ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697545"
 ---
 # <a name="cgenericlistcgenericlist-destructor"></a>Destructor CGenericList.~CGenericList
 
@@ -42,7 +42,7 @@ Método destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
@@ -51,7 +51,7 @@ Método destructor.
 
 <dl> <dt>
 
-[**CGenericList (Clase)**](cgenericlist.md)
+[**CGenericList (clase)**](cgenericlist.md)
 </dt> </dl>
 
  

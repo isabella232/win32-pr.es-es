@@ -1,9 +1,9 @@
 ---
-title: IdBiblioteca (atributo)
-description: El atributo IdBiblioteca es el identificador de la biblioteca a la que pertenece el elemento.
+title: Atributo LibraryID
+description: El atributo LibraryID es el identificador de la biblioteca a la que pertenece el elemento.
 ms.assetid: 680d9374-8729-4258-8672-b4b93b65e20a
 keywords:
-- IdBiblioteca Media Player de Windows de atributos
+- Atributo LibraryID Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,29 +12,29 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47ae9e5ad097bc188b8de1e76a09448c57aa9b83
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a011db4e18509761c232bcf5439e33445128ef77c50945f84662a7b7956f607f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119468225"
 ---
-# <a name="libraryid-attribute"></a>IdBiblioteca (atributo)
+# <a name="libraryid-attribute"></a>Atributo LibraryID
 
-El atributo **IdBiblioteca** es el identificador de la biblioteca a la que pertenece el elemento.
+El **atributo LibraryID** es el identificador de la biblioteca a la que pertenece el elemento.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [**Elementos de audio**](audio-item-attributes.md)
--   [**Elementos de fotografía**](photo-item-attributes.md)
+-   [**Elementos de fotos**](photo-item-attributes.md)
 -   [**Elementos de lista de reproducción**](playlist-attributes-ref.md)
 -   [**Elementos de vídeo**](video-item-attributes.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Un elemento multimedia puede pertenecer a la biblioteca local del usuario actual o puede pertenecer a una biblioteca que otro usuario ha puesto a disposición en la red doméstica o en Internet.
+Un elemento multimedia puede pertenecer a la biblioteca local del usuario actual o puede pertenecer a una biblioteca que otro usuario haya puesto a disposición de otro usuario en la red principal o en Internet.
 
-El valor de este atributo es el mismo que el valor devuelto por el método [**IWMPLibrary2:: getItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name) .
+El valor de este atributo es el mismo que el valor devuelto por el [**método IWMPLibrary2::getItemInfo.**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,7 +42,7 @@ El valor de este atributo es el mismo que el valor devuelto por el método [**IW
 
 | Requisito | Value |
 |--------------------|------------------------------------|
-| Versión<br/> | Windows Media Player 12<br/> |
+| Versión<br/> | Reproductor de Windows Media 12<br/> |
 
 
 
@@ -50,7 +50,7 @@ El valor de este atributo es el mismo que el valor devuelto por el método [**IW
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

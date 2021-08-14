@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_PCWSTR'
+description: 'Más información sobre: JET_PCWSTR'
 title: JET_PCWSTR
 TOCTitle: JET_PCWSTR
 ms:assetid: fef64bb9-c2e0-4cfb-8138-c98ae6f50952
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 51cd0dab17096fb8f7371a01ebabfca3abc595be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3958baa23228bdf32807cc4fdc07a471e625d553f57672e318a062038923b5af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473895"
 ---
 # <a name="jet_pcwstr"></a>JET_PCWSTR
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_pcwstr"></a>JET_PCWSTR
 
-El tipo de datos **JET_PCWSTR** contiene una cadena **Unicode** constante terminada en null (char \* ).
+El **JET_PCWSTR** de datos contiene una cadena Unicode constante terminada en **null** \* (char).
 
-**Windows Vista: JET_PCWSTR** se incorpora en Windows Vista.
+**Windows Vista: JET_PCWSTR** se presenta en Windows Vista.
 
 ```cpp
     typedef __nullterminated const WCHAR * JET_PCWSTR;
@@ -41,7 +41,7 @@ El tipo de datos **JET_PCWSTR** contiene una cadena **Unicode** constante termin
 
 JET_PCWSTR
 
-Cadena Unicode constante (Char) terminada en NULL \* .
+Cadena Unicode constante terminada en NULL \* (char).
 
 ### <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Cadena Unicode constante (Char) terminada en NULL \* .
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

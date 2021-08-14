@@ -1,5 +1,5 @@
 ---
-title: UI_ANIMATION_DIMENSION_UNKNOWN (UIAnimation. h)
+title: UI_ANIMATION_DIMENSION_UNKNOWN (UIAnimation.h)
 description: Indica que no se puede recuperar la dimensión solicitada.
 ms.assetid: DEDFEB69-B537-45AD-BFCB-193178414116
 topic_type:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6657090b069cd536c19e1a59372ee2049123cacf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5774351263c0a470004a21f4b5ed946221cecf4aa05ab5e01a39d17ed881870f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119418585"
 ---
-# <a name="ui_animation_dimension_unknown"></a>dimensión de animación de IU \_ \_ \_ desconocida
+# <a name="ui_animation_dimension_unknown"></a>DIMENSIÓN DE \_ ANIMACIÓN DE INTERFAZ DE USUARIO \_ \_ DESCONOCIDA
 
 Indica que no se puede recuperar la dimensión solicitada.
 
@@ -27,7 +27,7 @@ Indica que no se puede recuperar la dimensión solicitada.
 
 | Constante o valor                                                                                                                                                                                                                                                             | Descripción     |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------|
-| <span id="UI_ANIMATION_DIMENSION_UNKNOWN"></span><span id="ui_animation_dimension_unknown"></span><dl> <dt>**Interfaz de usuario \_ Dimensión de animación \_ \_ desconocida**</dt> <dt>-1</dt> </dl> | UINT<br/> |
+| <span id="UI_ANIMATION_DIMENSION_UNKNOWN"></span><span id="ui_animation_dimension_unknown"></span><dl> <dt>**Interfaz de usuario \_ DIMENSIÓN \_ DE \_ ANIMACIÓN DESCONOCIDA**</dt> <dt>-1</dt> </dl> | UINT<br/> |
 
 
 
@@ -37,10 +37,10 @@ Indica que no se puede recuperar la dimensión solicitada.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y actualización de plataforma solo para aplicaciones de escritorio de Windows 7 \[\]<br/>    |
+| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y Actualización de plataforma solo para Windows 7 \[ aplicaciones de escritorio\]<br/>    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
-| Encabezado<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ Indica que no se puede recuperar la dimensión solicitada.
 [Constantes](constants.md)
 </dt> <dt>
 
-[**IUIAnimationVariable2:: GetDimension (método)**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getdimension)
+[**IUIAnimationVariable2::GetDimension (Método)**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getdimension)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: El método ReinstallFeature del objeto Installer vuelve a instalar las características o corrige los problemas con las características instaladas.
+description: El método ReinstallFeature del objeto Installer reinstala las características o corrige los problemas con las características instaladas.
 ms.assetid: cfe2aef4-7742-49cd-b7a3-7d484e1f85e3
-title: Instalador. ReinstallFeature (método)
+title: Installer.ReinstallFeature (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a6bac008ee7121bbcb985b9a8ff5ba02df122266
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dfe4cb96ccac85fb5b94f3a2a8ec3dcca48f6fa4300a6bceb338b2ebbe01da22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118946291"
 ---
-# <a name="installerreinstallfeature-method"></a>Instalador. ReinstallFeature (método)
+# <a name="installerreinstallfeature-method"></a>Installer.ReinstallFeature (método)
 
-El método **ReinstallFeature** del objeto [**Installer**](installer-object.md) vuelve a instalar las características o corrige los problemas con las características instaladas.
+El **método ReinstallFeature** del objeto [**Installer**](installer-object.md) reinstala las características o corrige los problemas con las características instaladas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Especifica el código de producto del producto.
 *Característica* 
 </dt> <dd>
 
-Especifica la característica que se va a volver a instalar. La característica primaria o la característica secundaria de la característica especificada no se reinstalan. Para volver a instalar la característica primaria o secundaria, debe llamar al método **ReinstallFeature** para cada uno por separado o usar el método [**ReinstallProduct**](installer-reinstallproduct.md) .
+Especifica la característica que se va a volver a instalar. La característica primaria o secundaria de la característica especificada no se vuelve a instalar. Para volver a instalar la característica primaria o secundaria, debe llamar al método **ReinstallFeature** para cada una por separado o usar el [**método ReinstallProduct.**](installer-reinstallproduct.md)
 
 </dd> <dt>
 
@@ -62,18 +62,18 @@ Especifica el tipo de reinstalación. Este parámetro puede ser uno o varios de 
 
 
 
-| Value                                                                                                                                                                                                                                                                    | Significado                                                                           |
+| Valor                                                                                                                                                                                                                                                                    | Significado                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | <span id="msiReinstallModeFileMissing"></span><span id="msireinstallmodefilemissing"></span><span id="MSIREINSTALLMODEFILEMISSING"></span><dl> <dt>**msiReinstallModeFileMissing**</dt> </dl>                     | Vuelve a instalar solo si falta el archivo.<br/>                                |
-| <span id="msiReinstallModeFileOlderVersion"></span><span id="msireinstallmodefileolderversion"></span><span id="MSIREINSTALLMODEFILEOLDERVERSION"></span><dl> <dt>**msiReinstallModeFileOlderVersion**</dt> </dl> | Vuelve a instalar si falta el archivo o es una versión anterior.<br/>              |
-| <span id="msiReinstallModeFileEqualVersion"></span><span id="msireinstallmodefileequalversion"></span><span id="MSIREINSTALLMODEFILEEQUALVERSION"></span><dl> <dt>**msiReinstallModeFileEqualVersion**</dt> </dl> | Vuelve a instalar si falta el archivo o es una versión igual o anterior.<br/>     |
-| <span id="msiReinstallModeFileExact"></span><span id="msireinstallmodefileexact"></span><span id="MSIREINSTALLMODEFILEEXACT"></span><dl> <dt>**msiReinstallModeFileExact**</dt> </dl>                             | Vuelve a instalar si falta el archivo o no es una versión exacta.<br/>          |
-| <span id="msiReinstallModeFileVerify"></span><span id="msireinstallmodefileverify"></span><span id="MSIREINSTALLMODEFILEVERIFY"></span><dl> <dt>**msiReinstallModeFileVerify**</dt> </dl>                         | Comprueba los ejecutables de suma y vuelve a instalar si faltan o están dañados.<br/> |
+| <span id="msiReinstallModeFileOlderVersion"></span><span id="msireinstallmodefileolderversion"></span><span id="MSIREINSTALLMODEFILEOLDERVERSION"></span><dl> <dt>**msiReinstallModeFileOlderVersion**</dt> </dl> | Se vuelve a instalar si falta el archivo o si es una versión anterior.<br/>              |
+| <span id="msiReinstallModeFileEqualVersion"></span><span id="msireinstallmodefileequalversion"></span><span id="MSIREINSTALLMODEFILEEQUALVERSION"></span><dl> <dt>**msiReinstallModeFileEqualVersion**</dt> </dl> | Se vuelve a instalar si falta el archivo o si es una versión igual o anterior.<br/>     |
+| <span id="msiReinstallModeFileExact"></span><span id="msireinstallmodefileexact"></span><span id="MSIREINSTALLMODEFILEEXACT"></span><dl> <dt>**msiReinstallModeFileExact**</dt> </dl>                             | Se vuelve a instalar si falta el archivo o no es una versión exacta.<br/>          |
+| <span id="msiReinstallModeFileVerify"></span><span id="msireinstallmodefileverify"></span><span id="MSIREINSTALLMODEFILEVERIFY"></span><dl> <dt>**msiReinstallModeFileVerify**</dt> </dl>                         | Comprueba la suma de los ejecutables y vuelve a instalarlos si faltan o están dañados.<br/> |
 | <span id="msiReinstallModeFileReplace"></span><span id="msireinstallmodefilereplace"></span><span id="MSIREINSTALLMODEFILEREPLACE"></span><dl> <dt>**msiReinstallModeFileReplace**</dt> </dl>                     | Vuelve a instalar todos los archivos independientemente de la versión.<br/>                            |
-| <span id="msiReinstallModeUserData"></span><span id="msireinstallmodeuserdata"></span><span id="MSIREINSTALLMODEUSERDATA"></span><dl> <dt>**msiReinstallModeUserData**</dt> </dl>                                 | Garantiza que se requieren por las entradas del registro del usuario.<br/>                            |
-| <span id="msiReinstallModeMachineData"></span><span id="msireinstallmodemachinedata"></span><span id="MSIREINSTALLMODEMACHINEDATA"></span><dl> <dt>**msiReinstallModeMachineData**</dt> </dl>                     | Garantiza que se requieren por las entradas del registro del equipo.<br/>                         |
+| <span id="msiReinstallModeUserData"></span><span id="msireinstallmodeuserdata"></span><span id="MSIREINSTALLMODEUSERDATA"></span><dl> <dt>**msiReinstallModeUserData**</dt> </dl>                                 | Garantiza las entradas del Registro per=user necesarias.<br/>                            |
+| <span id="msiReinstallModeMachineData"></span><span id="msireinstallmodemachinedata"></span><span id="MSIREINSTALLMODEMACHINEDATA"></span><dl> <dt>**msiReinstallModeMachineData**</dt> </dl>                     | Garantiza las entradas del Registro per=machine necesarias.<br/>                         |
 | <span id="msiReinstallModeShortcut"></span><span id="msireinstallmodeshortcut"></span><span id="MSIREINSTALLMODESHORTCUT"></span><dl> <dt>**msiReinstallModeShortcut**</dt> </dl>                                 | Valida los accesos directos.<br/>                                                   |
-| <span id="msiReinstallModePackage"></span><span id="msireinstallmodepackage"></span><span id="MSIREINSTALLMODEPACKAGE"></span><dl> <dt>**msiReinstallModePackage**</dt> </dl>                                     | Usa el origen de la recaché para instalar el paquete.<br/>                        |
+| <span id="msiReinstallModePackage"></span><span id="msireinstallmodepackage"></span><span id="MSIREINSTALLMODEPACKAGE"></span><dl> <dt>**msiReinstallModePackage**</dt> </dl>                                     | Usa el origen de recache para instalar el paquete.<br/>                        |
 
 
 
@@ -89,15 +89,15 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

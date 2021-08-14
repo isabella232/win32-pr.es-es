@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. editButtonVisible
-description: El atributo editButtonVisible especifica o recupera un valor que indica si el botón Editar de la lista de reproducción está visible.
+title: PLAYLIST.editButtonVisible
+description: El atributo editButtonVisible especifica o recupera un valor que indica si el botón Editar lista de reproducción está visible.
 ms.assetid: 716e5484-b4b0-49a6-a778-ead1479fda54
 keywords:
-- Windows Media Player de lista de reproducción. editButtonVisible
+- PLAYLIST.editButtonVisible Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48534d9e933f5c0e304fe0bb743c048c765cc772
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8e22712e37f3fcd800677af0659673d9ca85d818b86b1efdf8f039f731b0306
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467745"
 ---
-# <a name="playlisteditbuttonvisible"></a>Lista de reproducción. editButtonVisible
+# <a name="playlisteditbuttonvisible"></a>PLAYLIST.editButtonVisible
 
-El atributo **editButtonVisible** especifica o recupera un valor que indica si el botón Editar de la lista de reproducción está visible.
+El **atributo editButtonVisible** especifica o recupera un valor que indica si el botón Editar lista de reproducción está visible.
 
 ``` syntax
         elementID.editButtonVisible
@@ -29,14 +29,14 @@ El atributo **editButtonVisible** especifica o recupera un valor que indica si e
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                       |
 |-------|---------------------------------------------------|
-| true  | El botón Editar lista de reproducción está visible.              |
-| false | Predeterminada. El botón Editar lista de reproducción no está visible. |
+| true  | El botón de edición de la lista de reproducción está visible.              |
+| false | Predeterminada. El botón de edición de la lista de reproducción no está visible. |
 
 
 
@@ -44,7 +44,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 ## <a name="remarks"></a>Observaciones
 
-Al establecer este atributo en true, el botón Editar de la lista de reproducción aparecerá en la esquina inferior izquierda del elemento de **lista de reproducción** . Al hacer clic en este botón, se muestra un menú de opciones que permiten al usuario editar, borrar, ordenar, abrir, guardar o copiar una lista de reproducción.
+Al establecer este atributo en true, el botón de edición de la lista de reproducción aparecerá en la esquina inferior izquierda del elemento **PLAYLIST.** Al hacer clic en este botón se muestra un menú de opciones que permite al usuario editar, borrar, ordenar, abrir, guardar o copiar una lista de reproducción.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Al establecer este atributo en true, el botón Editar de la lista de reproducci�
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 

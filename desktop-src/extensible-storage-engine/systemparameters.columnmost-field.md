@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. ColumnMost, campo'
-title: SystemParameters. ColumnMost, campo
+description: Más información sobre el campo SystemParameters.ColumnMost
+title: Campo SystemParameters.ColumnMost
 TOCTitle: ColumnMost field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.SystemParameters.ColumnMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.columnmost(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 16d7a6e4a96b5a01d259c1c73fb55c5df2a70dec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d5490dbbb6edb79f1aee8e2225cbde3d11041040acb4561976b7d4c8ae8f2ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119361025"
 ---
-# <a name="systemparameterscolumnmost-field"></a>SystemParameters. ColumnMost, campo
+# <a name="systemparameterscolumnmost-field"></a>Campo SystemParameters.ColumnMost
 
 Tamaño máximo de las columnas que no se JET_coltyp. LongBinary o JET_coltyp. LongText.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,6 +59,6 @@ public const int ColumnMost
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

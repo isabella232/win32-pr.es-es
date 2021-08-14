@@ -3,57 +3,57 @@ title: FileRepServiceExample
 description: FileRep recupera archivos de un servidor y los copia en un cliente.
 ms.assetid: 9f446999-8f10-4ce4-86eb-e9289e131733
 keywords:
-- Servicios Web de FileRepServiceExample para Windows
+- Servicios web FileRepServiceExample para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc230de8716566574dbe95b914d8ff22cbc2f75
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5a995dbb885631575aceedfeeb371440034558ecd40af9a1323a6edbc51e300c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963434"
 ---
 # <a name="filerepserviceexample"></a>FileRepServiceExample
 
-FileRep recupera archivos de un servidor y los copia en un cliente. Para ello, utiliza tres componentes: el servicio de servidor que se ejecuta en el equipo con el archivo de origen, el servicio de cliente que se ejecuta en el equipo donde se almacenará el archivo de destino y una herramienta de línea de comandos para controlar la copia. Los servicios de cliente y servidor ejecutan constantemente servicios web mientras el usuario inicia la herramienta de línea de comandos y se cierra después de una solicitud.
+FileRep recupera archivos de un servidor y los copia en un cliente. Para ello, emplea tres componentes: el servicio de servidor que se ejecuta en la máquina con el archivo de origen, el servicio de cliente que se ejecuta en la máquina donde se almacenará el archivo de destino y una herramienta de línea de comandos para controlar la copia. Los servicios cliente y servidor ejecutan constantemente servicios web mientras el usuario inicia la herramienta de línea de comandos y se cierra después de una solicitud.
 
-Este ejemplo muestra el uso del canal y la capa de serialización.
+En este ejemplo se muestra el uso del canal y la capa de serialización.
 
-Este es el servicio. La herramienta de línea de comandos se puede encontrar [aquí](filereptoolexample.md). El servicio tiene un cliente y un modo de servidor, donde el servidor envía archivos y el cliente recibe archivos.
+Este es el servicio. La herramienta de línea de comandos se puede [encontrar aquí.](filereptoolexample.md) El servicio tiene un cliente y un modo de servidor, donde el servidor envía archivos y el cliente recibe archivos.
 
 Los parámetros de la línea de comandos para el modo de cliente son los siguientes:
 
-**Cliente** *<Service Url>* deWsFileRepService.exe **\[ /reporting: <error/info/verbose>\] \[ /Encoding: <Text/Binary/MTOM>\] \[ /Connections: ***<number of connections>*** \]**
+**WsFileRepService.exe cliente** *<Service Url>* **\[ /reporting:<error/info/verbose>\] \[ /encoding:<text/binary/MTOM>\] \[ /connections:**_<number of connections>_*_\]_*
 
 <dl> <dt>
 
-<span id="Client"></span><span id="client"></span><span id="CLIENT"></span>Nº
+<span id="Client"></span><span id="client"></span><span id="CLIENT"></span>Cliente
 </dt> <dd>
 
-Obligatorio. Denota que el servicio se ejecuta como cliente.
+Obligatorio. Indica que el servicio se ejecuta como cliente.
 
 </dd> <dt>
 
 <span id="Service_Url"></span><span id="service_url"></span><span id="SERVICE_URL"></span>Dirección URL del servicio
 </dt> <dd>
 
-Obligatorio. Denota la dirección URL en la que el servicio realiza escuchas.
+Obligatorio. Indica la dirección URL en la que escucha el servicio.
 
 </dd> <dt>
 
 <span id="Encoding"></span><span id="encoding"></span><span id="ENCODING"></span>Codificación
 </dt> <dd>
 
-Opcional. Especifica la codificación utilizada al comunicarse con la herramienta de línea de comandos. Tenga en cuenta que la herramienta actual no admite la especificación de una codificación para esta transferencia, por lo que probablemente se producirá un error al cambiar esta configuración. La configuración está ahí para que la herramienta se pueda cambiar y extender independientemente del servidor.
+Opcional. Especifica la codificación utilizada al comunicarse con la herramienta de línea de comandos. Tenga en cuenta que la herramienta actual no admite la especificación de una codificación para esta transferencia, por lo que cambiar esta configuración probablemente producirá un error. La configuración está ahí para que la herramienta se pueda cambiar y extender independientemente del servidor.
 
 </dd> <dt>
 
-<span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Presentación
+<span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Informes
 </dt> <dd>
 
-Opcional. Habilita los informes de errores, información o de nivel detallado. El valor predeterminado es error. Los mensajes se imprimen en la consola.
+Opcional. Habilita los informes de nivel detallado, de información o de error. El valor predeterminado es error. Los mensajes se imprimen en la consola.
 
 </dd> <dt>
 
@@ -66,56 +66,56 @@ Opcional. Especifica el número máximo de solicitudes simultáneas que se proce
 
 Los parámetros de la línea de comandos para el modo de servidor son los siguientes:
 
-**Servidor** *<Service Url>* deWsFileRepService.exe **\[ /Reporting: <error/info/verbose>\] \[ /Encoding: <Text/Binary/MTOM>\] \[ /Connections: ***<number of connections>*** \] \[ /Chunk: ***<size of the payload per message in bytes>*** \]**
+**WsFileRepService.exe servidor** *<Service Url>* **\[ /reporting:<error/info/verbose>\] \[ /encoding:<text/binary/MTOM>\] \[ /connections:** _<number of connections>_ *_\] \[ /chunk:_*_<size of the payload per message in bytes>_*_\]_*
 
 <dl> <dt>
 
 <span id="Server"></span><span id="server"></span><span id="SERVER"></span>Servidor
 </dt> <dd>
 
-Obligatorio. Denota que el servicio se ejecuta como servidor de archivos.
+Obligatorio. Indica que el servicio se ejecuta como servidor de archivos.
 
 </dd> <dt>
 
-<span id="Chunk"></span><span id="chunk"></span><span id="CHUNK"></span>Paquete
+<span id="Chunk"></span><span id="chunk"></span><span id="CHUNK"></span>Trozo
 </dt> <dd>
 
-Opcional. Los archivos transferidos se dividen en fragmentos del tamaño especificado. Cada mensaje contiene un fragmento. El valor predeterminado es 32768 bytes.
+Opcional. Los archivos transferidos se divide en fragmentos del tamaño especificado. Cada mensaje contiene un fragmento. El valor predeterminado es 32768 bytes.
 
 </dd> </dl>
 
-Detalles de la implementación. Como este ejemplo se escribe en la capa del canal, debe realizar manualmente ciertas tareas que la capa de modelo de servicio podría realizar automáticamente. Una de estas tareas es la administración de canales. Para proporcionar una respuesta rápida a las solicitudes, siempre hay (hasta un límite) varios canales listos para aceptar solicitudes. Tener varios canales listos es más eficaz en el caso de varias solicitudes que tener un solo canal, ya que la creación de un canal lleva tiempo. Además, la reutilización del estado también mejora el rendimiento. Sapphire proporciona API para restablecer la mayor parte del estado y evitar tener que liberarla y volver a crearla. En este ejemplo se aprovecha esto al volver a utilizar el estado de canal y de solicitud siempre que sea posible y solo crear o destruir el estado cuando se pasan determinados umbrales. El código relacionado con la administración de canales se puede encontrar en CChannelManager.
+Detalles de implementación. Como este ejemplo se escribe en la capa de canal, tiene que realizar manualmente ciertas tareas que la capa del modelo de servicio podría realizar automáticamente. Una de estas tareas es la administración de canales. Para proporcionar una respuesta rápida a las solicitudes, siempre hay (hasta un límite) varios canales listos para aceptar solicitudes. Tener varios canales listos es más importante en el caso de varias solicitudes que tener solo un canal, ya que la creación de un canal tarda tiempo. Además, la reutilización del estado también mejora el rendimiento. Por su parte, La lonba proporciona API para restablecer la mayoría del estado a fin de evitar tener que liberarlo y volver a crearlo. Este ejemplo aprovecha esto al volver a usar el canal y el estado de solicitud siempre que sea posible y crear o destruir solo el estado cuando se pasan determinados umbrales. El código relacionado con la administración de canales se puede encontrar en CChannelManager.
 
-El bucle de procesamiento de mensajes principal se encuentra en CRequest. Esa clase contiene el estado independiente de la aplicación y los métodos necesarios para un bucle de procesamiento de mensajería de Sapphire asíncrono. El código específico de la aplicación está en CFileRepClient (servicio de cliente) y CFileRepServer (servicio de servidor). Ambas clases heredan de CFileRep, que contiene código genérico relacionado con el servicio.
+El bucle de procesamiento de mensajes principal está en CRequest. Esa clase contiene el estado independiente de la aplicación y los métodos necesarios para un bucle asincrónico de procesamiento de mensajería Deserción. El código específico de la aplicación está en CFileRepClient (servicio de cliente) y CFileRepServer (servicio de servidor). Ambas clases heredan de CFileRep, que contiene código genérico relacionado con el servicio.
 
-El ejemplo usa el serializador y realiza la serialización personalizada. La serialización personalizada se usa cuando se trabaja con grandes fragmentos de datos para minimizar el consumo de memoria al optimizar manualmente la asignación de memoria para el propósito específico. Como esto conduce a un código complejo de bajo nivel, la serialización manual solo debe realizarse cuando sea absolutamente necesario.
+El ejemplo usa el serializador y realiza la serialización personalizada. La serialización personalizada se usa cuando se trabaja con grandes fragmentos de datos para minimizar el consumo de memoria mediante la optimización manual de la asignación de memoria para el propósito específico. Como esto conduce a código complejo y de bajo nivel que realiza la serialización manual, solo debe realizarse cuando sea absolutamente necesario.
 
 Patrón de intercambio de mensajes:
 
--   El servicio de cliente obtiene un mensaje de solicitud de la herramienta de línea de comandos.
--   Si la solicitud es asincrónica, vuelva a enviar una confirmación inmediatamente.
--   El servicio de cliente envía una solicitud de información de archivo al servicio de servidor. Una solicitud de detección se denota mediante una posición de fragmento de-1.
--   El servicio servidor devuelve la información del archivo.
--   El servicio de cliente solicita los fragmentos individuales secuencialmente uno por uno del servidor. Los fragmentos se identifican por su posición dentro del archivo.
--   Repetir hasta que se complete la transferencia de archivos o se produzca un error.
--   Si la solicitud es un mensaje de envío correcto o de error de envío sincrónico a la herramienta de línea de comandos.
+-   El servicio cliente obtiene un mensaje de solicitud de la herramienta de línea de comandos.
+-   Si la solicitud es asincrónica, envíe una confirmación inmediatamente.
+-   El servicio cliente envía una solicitud de información de archivo al servicio de servidor. Una solicitud de detección se indica mediante una posición de fragmento de -1.
+-   El servicio de servidor devuelve la información del archivo.
+-   El servicio cliente solicita los fragmentos individuales secuencialmente uno por uno desde el servidor. Los fragmentos se identifican por su posición dentro del archivo.
+-   Repita la operación hasta que se complete la transferencia de archivos o se haya producido un error.
+-   Si la solicitud es sincrónica, envíe un mensaje de error o correcto a la herramienta de línea de comandos.
 
-Para las estructuras de datos individuales asociadas a cada mensaje, vea Common. h.
+Para ver las estructuras de datos individuales asociadas a cada mensaje, consulte common.h.
 
--   [Service. cpp](#servicecpp)
--   [Service. h](#serviceh)
--   [CChannelManager. cpp](#cchannelmanagercpp)
--   [CFileRep. cpp](#cfilerepcpp)
--   [CRequest. cpp](#crequestcpp)
--   [CFileRepClient. cpp](#cfilerepclientcpp)
--   [CFileRepServer. cpp](#cfilerepservercpp)
--   [Common. h](#commonh)
+-   [Service.cpp](#servicecpp)
+-   [Service.h](#serviceh)
+-   [CChannelManager.cpp](#cchannelmanagercpp)
+-   [CFileRep.cpp](#cfilerepcpp)
+-   [CRequest.cpp](#crequestcpp)
+-   [CFileRepClient.cpp](#cfilerepclientcpp)
+-   [CFileRepServer.cpp](#cfilerepservercpp)
+-   [common.h](#commonh)
 -   [FileRep.mc](#filerepmc)
--   [FileRep. RC](#filereprc)
+-   [FileRep.rc](#filereprc)
 -   [Archivo Make](#makefile)
 -   [Temas relacionados](#related-topics)
 
-## <a name="servicecpp"></a>Service. cpp
+## <a name="servicecpp"></a>Service.cpp
 
 
 ```C++
@@ -345,7 +345,7 @@ int __cdecl wmain(int argc, __in_ecount(argc) wchar_t **argv)
 
 
 
-## <a name="serviceh"></a>Service. h
+## <a name="serviceh"></a>Service.h
 
 
 ```C++
@@ -695,7 +695,7 @@ void CleanupChannel(WS_CHANNEL* channel);
 
 
 
-## <a name="cchannelmanagercpp"></a>CChannelManager. cpp
+## <a name="cchannelmanagercpp"></a>CChannelManager.cpp
 
 
 ```C++
@@ -971,7 +971,7 @@ void CChannelManager::WaitForCleanup()
 
 
 
-## <a name="cfilerepcpp"></a>CFileRep. cpp
+## <a name="cfilerepcpp"></a>CFileRep.cpp
 
 
 ```C++
@@ -1340,7 +1340,7 @@ HRESULT CFileRep::InitializeListener()
 
 
 
-## <a name="crequestcpp"></a>CRequest. cpp
+## <a name="crequestcpp"></a>CRequest.cpp
 
 
 ```C++
@@ -1906,7 +1906,7 @@ CRequest::~CRequest()
 
 
 
-## <a name="cfilerepclientcpp"></a>CFileRepClient. cpp
+## <a name="cfilerepclientcpp"></a>CFileRepClient.cpp
 
 
 ```C++
@@ -2574,7 +2574,7 @@ HRESULT CFileRepClient::SendUserResponse(CRequest* request, TRANSFER_RESULTS res
 
 
 
-## <a name="cfilerepservercpp"></a>CFileRepServer. cpp
+## <a name="cfilerepservercpp"></a>CFileRepServer.cpp
 
 
 ```C++
@@ -3602,7 +3602,7 @@ Failed to create file.
 .
 ```
 
-## <a name="filereprc"></a>FileRep. RC
+## <a name="filereprc"></a>FileRep.rc
 
 ``` syntax
 LANGUAGE 0x9,0x1
@@ -3649,9 +3649,9 @@ WsFileRepService.exe: Service.obj CFileRep.obj CFileRepServer.obj CFileRepClient
 [FileRepToolExample](filereptoolexample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

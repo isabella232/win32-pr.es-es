@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 8f4092baced94dcf222202ec5f12619c83a183bd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5e926de8c35f2db144bb244e842897c93581c61fc80e8139ac3bf71eb796fdff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817031"
 ---
 # <a name="ixml2dexreadxml-method"></a>IXml2Dex::ReadXML (método)
 
@@ -70,7 +70,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue Microsoft Windows SDK [Update para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

@@ -1,6 +1,6 @@
 ---
-title: 'Texture2DArray:: Gather (S, Float, int) (función)'
-description: 'Devuelve los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal. | Texture2DArray:: Gather (S, Float, int) (función)'
+title: Función Texture2DArray::Gather(S,float,int)
+description: Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Función Texture2DArray::Gather(S,float,int)
 ms.assetid: b0355158-01c8-45a1-bb5d-29a8c43b1685
 keywords:
 - Recopilación de la función HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 46866df18a0836b311443a3dd411d74dfa7fb126
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f684efa4cb597a640b78a2cdd08074d47fec3b4ec2f8a4a6fe6bcf993fd53ca3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119367805"
 ---
-# <a name="texture2darraygathersfloatint-function"></a>Texture2DArray:: Gather (S, Float, int) (función)
+# <a name="texture2darraygathersfloatint-function"></a>Función Texture2DArray::Gather(S,float,int)
 
-Devuelve los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,25 +41,25 @@ TemplateType Gather(
 *s* \[ en\]
 </dt> <dd>
 
-Tipo: **muestra**
+Tipo: **sampler**
 
-Índice de muestra de base cero.
+Índice de sampler de base cero.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float3**
 
-Coordenadas de ejemplo (u, v).
+Coordenadas de ejemplo (u,v).
 
 </dd> <dt>
 
-*desplazamiento* \[ de\]
+*desplazamiento* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
@@ -69,15 +69,15 @@ Desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 Tipo: **TemplateType**
 
-Un valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
+Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -85,11 +85,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Recopilar métodos](texture2darray-gather.md)
+[Recopilación de métodos](texture2darray-gather.md)
 </dt> <dt>
 
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)

@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se muestra el código del lado cliente RSA/Schannel típico para crear una clave maestra.
+description: En el ejemplo siguiente se muestra el código típico del lado cliente RSA/Schannel para crear una clave maestra.
 ms.assetid: 9ce4877f-e6e6-4b94-9503-092d2702b31f
-title: Código de cliente de RSA para crear la clave maestra
+title: Código de cliente RSA para crear la clave maestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2df39b3e09af928d60958279ea1edc98e5ae2249
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c110519938d7aa44bd4ba4af62e258d870d40652713de38f8f8fc7fa9308e5b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117974779"
 ---
-# <a name="rsa-client-code-for-creating-the-master-key"></a>Código de cliente de RSA para crear la clave maestra
+# <a name="rsa-client-code-for-creating-the-master-key"></a>Código de cliente RSA para crear la clave maestra
 
-En el ejemplo siguiente se muestra el código del lado cliente RSA/Schannel típico para crear una [*clave maestra*](../secgloss/m-gly.md).
+En el ejemplo siguiente se muestra el código típico del lado cliente RSA/Schannel para crear una [*clave maestra*](../secgloss/m-gly.md).
 
 
 ```C++

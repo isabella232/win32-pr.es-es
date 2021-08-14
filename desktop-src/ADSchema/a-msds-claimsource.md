@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Claim-Source
-description: Para un tipo de demanda, este atributo indica el origen del tipo de demanda. Por ejemplo, el origen puede ser Certificate.
+title: Atributo ms-DS-Claim-Source
+description: Para un tipo de notificación, este atributo indica el origen del tipo de notificación. Por ejemplo, el origen puede ser certificado.
 ms.assetid: ec6d8565-e628-47a4-be84-c07b12cd9aec
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Claim-Source
-- Esquema de AD de atributo msDS-ClaimSource
+- Esquema de AD del atributo ms-DS-Claim-Source
+- Esquema de AD del atributo msDS-ClaimSource
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90e8668d79e22107cd4338762340e55cc2a60af3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1727b0da2ef12a3ba17775fbb38e7569161d4fb282ba82df629771e988bfb402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804225"
 ---
-# <a name="ms-ds-claim-source-attribute"></a>atributo MS-DS-Claim-Source
+# <a name="ms-ds-claim-source-attribute"></a>Atributo ms-DS-Claim-Source
 
-Para un tipo de demanda, este atributo indica el origen del tipo de demanda. Por ejemplo, el origen puede ser Certificate.
+Para un tipo de notificación, este atributo indica el origen del tipo de notificación. Por ejemplo, el origen puede ser certificado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Origen de notificaciones de MS-DS-Claim                          |
-| Nombre para mostrar de LDAP | msDS-ClaimSource                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Claim-Source                          |
+| Ldap-Display-Name | msDS-ClaimSource                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2157                     |
-| System-ID-GUID    | fa32f2a6-f28b-47d0-bf91-663e8f910a72        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | fa32f2a6-f28b-47d0-bf91-663e8f910a72        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -48,20 +48,20 @@ Para un tipo de demanda, este atributo indica el origen del tipo de demanda. Por
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------|
-| Identificador de vínculo                | \-                                                      |
+| Id. de vínculo                | \-                                                      |
 | MAPI-Id                | \-                                                      |
-| System-Only            | False                                                   |
-| Tiene un único valor       | True                                                    |
-| Está indexado             | False                                                   |
-| En el catálogo global      | False                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                            |
+| System-Only            | Falso                                                   |
+| Es de un solo valor       | Verdadero                                                    |
+| Está indexado             | Falso                                                   |
+| En el catálogo global      | Falso                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Clases usadas en        | [**Tipo de notificaciones de MS-DS-Claim**](c-msds-claimtype.md)<br/> |
+| Clases usadas en        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> |
 
 
 

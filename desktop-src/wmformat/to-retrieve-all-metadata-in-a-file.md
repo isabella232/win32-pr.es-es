@@ -3,24 +3,24 @@ title: Para recuperar todos los metadatos de un archivo
 description: Para recuperar todos los metadatos de un archivo
 ms.assetid: c1de58d7-25a8-4416-9ee9-6ebe641ed640
 keywords:
-- SDK de Windows Media Format, recuperar metadatos
-- Advanced Systems Format (ASF), recuperar metadatos
-- ASF (formato de sistemas avanzados), recuperar metadatos
-- metadatos, recuperar todos
+- Windows SDK de formato multimedia, recuperación de metadatos
+- Formato de sistemas avanzados (ASF), recuperación de metadatos
+- ASF (formato de sistemas avanzados), recuperación de metadatos
+- metadata,retrieving all
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc5d63a27cd4455d8d39cebee894dfbfc8d5bf2c
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: fab81f151cbb661cc7769128e2d4371dd0b24869317d1888769ed66a60de86f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105676341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807475"
 ---
 # <a name="to-retrieve-all-metadata-in-a-file"></a>Para recuperar todos los metadatos de un archivo
 
-El siguiente ejemplo de código es una función que muestra todos los metadatos de un archivo. Para usar la función, debe pasar un puntero a la interfaz [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) de un objeto de editor de metadatos, un objeto de lector, un objeto de lector sincrónico o un objeto de escritor. También debe incluir el archivo de encabezado stdio. h en algún lugar del proyecto. Para obtener más información sobre cómo usar este ejemplo, vea [usar los ejemplos de código](using-the-code-examples.md).
+El ejemplo de código siguiente es una función que muestra todos los metadatos de un archivo. Para usar la función , debe pasar un puntero a la interfaz [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) de un objeto del editor de metadatos, un objeto lector, un objeto de lector sincrónico o un objeto de escritor. También debe incluir el archivo de encabezado Stdio.h en algún lugar del proyecto. Para obtener más información sobre cómo usar este ejemplo, vea [Usar los ejemplos de código](using-the-code-examples.md).
 
-Para mayor claridad, en este ejemplo no se muestran los valores de los atributos binarios y GUID. En el caso de los atributos binarios, debe comprobar si el nombre del atributo coincide con alguno de los atributos de metadatos complejos conocidos. Si lo hace, debe dar formato a la salida según la estructura utilizada para ese atributo. Del mismo modo, los valores de atributo GUID se pueden mostrar de varias maneras. Puede optar por mostrar cada miembro de la estructura de una en una o convertir la estructura en una cadena y mostrarla como un valor.
+Para mayor claridad, en este ejemplo no se muestran los valores de los atributos binarios y GUID. En el caso de los atributos binarios, debe comprobar si el nombre del atributo coincide con cualquiera de los atributos de metadatos complejos conocidos. Si es así, debe dar formato a la salida según la estructura usada para ese atributo. De forma similar, los valores de atributo GUID se pueden mostrar de varias maneras. Puede elegir mostrar cada miembro de la estructura de uno en uno o convertir la estructura en una cadena y mostrarla como un valor.
 
 
 ```C++
@@ -136,12 +136,12 @@ Exit:
 
 <dl> <dt>
 
-[**Recuperación de atributos de metadatos**](retrieving-metadata-attributes.md)
+[**Recuperar atributos de metadatos**](retrieving-metadata-attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

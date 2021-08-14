@@ -1,7 +1,7 @@
 ---
-description: Contiene un vector de inicialización (IV) para el cifrado de cifrado del modo Estándar de cifrado avanzado CTR (AES-CTR) de 128 bits.
+description: Contiene un vector de inicialización (IV) para el cifrado de bloques del modo CTR (AES-CTR) de 12 Estándar de cifrado avanzado 8 bits.
 ms.assetid: 2ee738c2-d56c-4a50-94b8-b7180918aa8c
-title: D3DAES_CTR_IV estructura (D3d9types. h)
+title: D3DAES_CTR_IV estructura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 6e0d543fb0e57ae34f181e7ff0f40a1a1f8222b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09535b432ff1af60ad33b622810d0d8a4d190cb81650214aa71b445ba3c22f4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974794"
 ---
-# <a name="d3daes_ctr_iv-structure"></a>\_Estructura D3DAES CTR \_ IV
+# <a name="d3daes_ctr_iv-structure"></a>Estructura de D3DAES \_ CTR \_ IV
 
-Contiene un vector de inicialización (IV) para el cifrado de cifrado del modo Estándar de cifrado avanzado CTR (AES-CTR) de 128 bits.
+Contiene un vector de inicialización (IV) para el cifrado de bloques del modo CTR (AES-CTR) de 12 Estándar de cifrado avanzado 8 bits.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,36 +43,36 @@ typedef struct _D3DAES_CTR_IV {
 **IV**
 </dt> <dd>
 
-El IV, en formato Big-Endian.
+El IV, en formato big-endian.
 
 </dd> <dt>
 
 **Recuento**
 </dt> <dd>
 
-Recuento de bloques, en formato Big-Endian.
+Recuento de bloques, en formato big-endian.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura **D3DAES \_ CTR \_ IV** y la estructura [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv) son equivalentes.
+La **estructura D3DAES \_ CTR \_ IV** y la [**estructura DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv) son equivalentes.
 
-Para obtener más información, consulte [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv).
+Para obtener más información, [**vea DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h (incluye d3d9. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>D3d9types.h (incluir D3d9.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

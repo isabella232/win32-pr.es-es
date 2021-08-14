@@ -1,30 +1,30 @@
 ---
-description: Tanto el proveedor base como el proveedor extendido pueden especificar el valor y la longitud del valor de sal que se va a utilizar. El proveedor base establece un valor Salt mediante el \_ valor del parámetro sal de KP. El proveedor base siempre establece once bytes de valor Salt.
+description: Tanto el proveedor base como el proveedor extendido pueden especificar el valor y la longitud del valor sal que se va a usar. El proveedor base establece un valor salt mediante el valor del \_ parámetro SALT de KP. El proveedor base siempre establece once bytes de valor salt.
 ms.assetid: ea56d064-b725-431f-b951-66167624e14b
-title: Especificar un valor Salt
+title: Especificar un valor salt
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9fc8aeea66c536db1c24d7ef3cf4fb9a05b543f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70d80ca64bc69cbcf0ed98d72b5b061616fc3cf641f3970d1533b094ef5687f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897950"
 ---
-# <a name="specifying-a-salt-value"></a>Especificar un valor Salt
+# <a name="specifying-a-salt-value"></a>Especificar un valor salt
 
-Tanto el proveedor base como el proveedor extendido pueden especificar el valor y la longitud del [*valor de sal*](../secgloss/s-gly.md) que se va a utilizar. El proveedor base establece un valor Salt mediante el \_ valor del parámetro sal de KP. El proveedor base siempre establece once bytes de valor Salt.
+Tanto el proveedor base como el proveedor extendido pueden especificar el valor y la longitud del [*valor sal*](../secgloss/s-gly.md) que se va a usar. El proveedor base establece un valor salt mediante el valor del \_ parámetro SALT de KP. El proveedor base siempre establece once bytes de valor salt.
 
-El proveedor mejorado establece el valor Salt llamando a [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) con el \_ valor de parámetro PK sal \_ ex especificado y con el parámetro *pbData* que apunta a una estructura de [**\_ \_ BLOB de tipo entero de cifrado**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) que contiene el valor Salt.
+El proveedor mejorado establece el valor salt llamando a [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) con el valor de parámetro SALT EX de KP especificado y con el parámetro pbData que apunta a una estructura \_ \_ [**CRYPT \_ INTEGER \_ BLOB**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85))  que contiene el valor salt.
 
 > [!Note]  
-> La longitud total de una [*clave simétrica*](../secgloss/s-gly.md) de proveedor mejorada y su valor Salt no puede ser superior a 128 bits.
+> La longitud total de una clave simétrica del proveedor [*mejorado y*](../secgloss/s-gly.md) su valor salt no puede ser superior a 128 bits.
 
  
 
-\_Se sigue proporcionando sal de KP para la compatibilidad con versiones anteriores con el proveedor base. Las aplicaciones más recientes deben usar el \_ valor del parámetro PK sal \_ ex.
+KP \_ SALT se sigue proporcionando para la compatibilidad con versiones anteriores con el proveedor base. Las aplicaciones más recientes deben usar el valor \_ del parámetro SALT EX de \_ KP.
 
-En el ejemplo siguiente se establece un valor Salt.
+En el ejemplo siguiente se establece un valor sal.
 
 
 ```C++

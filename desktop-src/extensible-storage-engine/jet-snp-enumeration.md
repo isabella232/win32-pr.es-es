@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_SNP'
-title: Enumeración JET_SNP
+description: 'Más información sobre: enumeración JET_SNP datos'
+title: JET_SNP enumeración
 TOCTitle: JET_SNP enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SNP
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snp(v=EXCHG.10)
@@ -36,19 +36,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 10061d0c00d90aa5ca4e0778cba046d2e6f62f4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a18858b7dba79c8e8d0d2a6ab51783ab0a602d595214895f1798b2ef0e084731
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979274"
 ---
-# <a name="jet_snp-enumeration"></a>Enumeración JET_SNP
+# <a name="jet_snp-enumeration"></a>JET_SNP enumeración
 
-El tipo de operación para el que se está informando de progreso.
+Tipo de operación para la que se notifica el progreso.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,7 +82,7 @@ public enum JET_SNP
 <tr class="even">
 <td></td>
 <td>Compacto</td>
-<td>La devolución de llamada es para desfragmentación de la base de datos.</td>
+<td>La devolución de llamada es para la desfragmentación de la base de datos.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -91,13 +91,13 @@ public enum JET_SNP
 </tr>
 <tr class="even">
 <td></td>
-<td>Copia de seguridad</td>
+<td>Backup</td>
 <td>La devolución de llamada es para las opciones de copia de seguridad.</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>Scrub</td>
-<td>La devolución de llamada es para el llenado de ceros de base de datos.</td>
+<td>fregar</td>
+<td>La devolución de llamada es para la puesta a cero de la base de datos.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -108,8 +108,8 @@ public enum JET_SNP
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

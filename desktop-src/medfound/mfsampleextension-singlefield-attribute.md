@@ -1,45 +1,45 @@
 ---
-description: Especifica si un ejemplo de vídeo contiene un solo campo o dos campos intercalados. Este atributo se aplica a los ejemplos de medios.
+description: Especifica si un ejemplo de vídeo contiene un solo campo o dos campos intercalados. Este atributo se aplica a los ejemplos multimedia.
 ms.assetid: 550619be-2042-4a2c-9ad2-728474835255
-title: MFSampleExtension_SingleField atributo (mfapi. h)
+title: MFSampleExtension_SingleField atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 217d7c43a9777982485ba350d259a59a518e26c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 747dbeebb9bcc8e773b59467f460b12645ed50ebfbddf5bbf6845119c2bba81d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462905"
 ---
-# <a name="mfsampleextension_singlefield-attribute"></a>\_Atributo SingleField de MFSampleExtension
+# <a name="mfsampleextension_singlefield-attribute"></a>Atributo MFSampleExtension \_ SingleField
 
-Especifica si un ejemplo de vídeo contiene un solo campo o dos campos intercalados. Este atributo se aplica a los ejemplos de medios.
+Especifica si un ejemplo de vídeo contiene un solo campo o dos campos intercalados. Este atributo se aplica a los ejemplos multimedia.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bool** almacenado como **UINT32**
+**BOOL almacenado** como **UINT32**
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Se aplica a
 
-[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**SAMPLESample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
 ## <a name="remarks"></a>Observaciones
 
-Si el valor es **true**, el ejemplo contiene un campo. Si el valor es **false** o el atributo no está establecido, el ejemplo contiene un marco completo. (Dos campos, si están entrelazados, o un marco progresivo).
+Si el valor es **TRUE**, el ejemplo contiene un campo. Si el valor es **FALSE** o el atributo no está establecido, el ejemplo contiene un marco completo. (Dos campos si están entrelazados o un marco progresiva).
 
-Si el tipo de medio es fotogramas progresivos o campos intercalados, este atributo debe ser **falso** o dejar sin establecer.
+Si el tipo de medio son fotogramas progresivas o campos intercalados, este atributo debe ser **FALSE** o dejar sin establecer.
 
-Si el tipo de medio es un campo único, este atributo debe ser **true**. Establezca el atributo [**MFSampleExtension \_ BottomFieldFirst**](mfsampleextension-bottomfieldfirst-attribute.md) en el ejemplo para indicar si es el campo superior o el campo inferior.
+Si el tipo de medio es un solo campo, este atributo debe ser **TRUE.** Establezca el [**atributo MFSampleExtension \_ BottomFieldFirst**](mfsampleextension-bottomfieldfirst-attribute.md) en el ejemplo para indicar si es el campo superior o el inferior.
 
-Actualmente, el representador de vídeo mejorado (EVR) no admite contenido que cambie entre fotogramas entrelazados y campos individuales.
+Actualmente, el representador de vídeo mejorado (EVR) no admite contenido que cambia entre fotogramas entrelazados y campos individuales.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -57,7 +57,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de ejemplo](sample-attributes.md)
