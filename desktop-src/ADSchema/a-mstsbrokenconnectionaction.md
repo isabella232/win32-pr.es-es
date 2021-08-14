@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Broked-Connection-Action
-description: Terminal Services acción de conexión interrumpida de sesión especifica la acción que se realizará cuando se alcance un límite de sesión Terminal Services.
+title: Atributo ms-TS-Broken-Connection-Action
+description: Acción de conexión rota de la sesión de Terminal Services especifica la acción que se debe realizar cuando se alcanza un límite de sesión de Terminal Services.
 ms.assetid: a3c1556d-2de7-4945-aa91-7ef8d0ac8cd0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de acción MS-TS-Broker-Connection
-- msTSBrokenConnectionAction esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Broken-Connection-Action
+- Esquema de AD del atributo msTSBrokenConnectionAction
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8b48beadd31964cbfe48dbe477a9463e16db77b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c7cf31e02a31b750a5d555f3357f28059196360c6f18e25c855a69ad8974243d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424780"
 ---
-# <a name="ms-ts-broken-connection-action-attribute"></a>atributo MS-TS-Broked-Connection-Action
+# <a name="ms-ts-broken-connection-action-attribute"></a>Atributo ms-TS-Broken-Connection-Action
 
-Terminal Services acción de conexión interrumpida de sesión especifica la acción que se realizará cuando se alcance un límite de sesión Terminal Services.
+Acción de conexión rota de la sesión de Terminal Services especifica la acción que se debe realizar cuando se alcanza un límite de sesión de Terminal Services.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-roto-Connection-Action       |
-| Nombre para mostrar de LDAP | msTSBrokenConnectionAction           |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-TS-Broken-Connection-Action       |
+| Ldap-Display-Name | msTSBrokenConnectionAction           |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1985              |
-| System-ID-GUID    | 1cf41bba-5604-463e-94d6-1a1287b72ca3 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 1cf41bba-5604-463e-94d6-1a1287b72ca3 |
+| Syntax            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -50,20 +50,20 @@ Terminal Services acción de conexión interrumpida de sesión especifica la acc
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -71,20 +71,20 @@ Terminal Services acción de conexión interrumpida de sesión especifica la acc
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ Terminal Services acción de conexión interrumpida de sesión especifica la acc
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

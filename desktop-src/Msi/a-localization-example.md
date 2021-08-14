@@ -1,29 +1,29 @@
 ---
-description: En este ejemplo se muestra cómo localizar el paquete Windows Installer descrito en un ejemplo de instalación. El paquete de instalación original se ha cambiado de una versión en inglés al idioma francés.
+description: En este ejemplo se muestra cómo encontrar el paquete Windows installer descrito en Un ejemplo de instalación. El paquete de instalación original se cambia de una versión de inglés a francés.
 ms.assetid: b14787fe-3179-47d7-8a15-da45987d613f
 title: Un ejemplo de localización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d5ae0b04e65383d665e2532d45f0cc2eed856a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4ef7ae0fdfa13ffa95956262250b0cb0c7db33c2b7ccd7741136d88b6727a2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382245"
 ---
 # <a name="a-localization-example"></a>Un ejemplo de localización
 
-En este ejemplo se muestra cómo localizar el paquete Windows Installer descrito en [un ejemplo de instalación](an-installation-example.md). El paquete de instalación original se ha cambiado de una versión en inglés al idioma francés.
+En este ejemplo se muestra cómo encontrar el paquete Windows Installer descrito en [Un ejemplo de instalación](an-installation-example.md). El paquete de instalación original se cambia de una versión de inglés a francés.
 
 El ejemplo de localización tiene las siguientes especificaciones:
 
 -   La interfaz de usuario de instalación de la aplicación MNP2000 debe cambiarse de inglés a francés.
--   La versión en francés de MNP2000 incluye Readme.txt y Help.txt archivos escritos en el idioma francés.
--   La versión en francés incluye una lista de los agentes de viaje en Francia que pueden proporcionar vales al terreno de estacionamiento rojo. Esta lista (proporcionada como un nuevo archivo, Fre.txt) no forma parte de la versión en inglés.
+-   La versión en francés de MNP2000 incluye archivos Readme.txt y Help.txt escritos en francés.
+-   La versión en francés incluye una lista de agentes de viajes en Francia que pueden proporcionar entradas a Red Park Arena. Esta lista (que se proporciona como un nuevo archivo, Fre.txt) no forma parte de la versión en inglés.
 
-El procedimiento general para localizar una instalación de se describe en la sección [localizar un paquete de Windows Installer](localizing-a-windows-installer-package.md).
+El procedimiento general para la localización de una instalación se describe en la sección [Localizing a Windows Installer Package](localizing-a-windows-installer-package.md).
 
-Copie la versión en Inglés de MNP2000.msi y todos los archivos de código fuente descritos en [planificación de la instalación](planning-the-installation.md) en una nueva carpeta. Cambie el nombre del MNP2000.msi en la carpeta a MNPFren.msi. En las secciones siguientes, modificará esta copia para localizar la aplicación en francés.
+Copie la versión en inglés de MNP2000.msi y todos los archivos de origen descritos en [Planeamiento](planning-the-installation.md) de la instalación en una carpeta nueva. Cambie el nombre de la MNP2000.msi de la carpeta a MNPFren.msi. En las secciones siguientes modificará esta copia para que la aplicación se localice en francés.
 
 [Continuar](checking-the-installation-database-code-page.md)
 

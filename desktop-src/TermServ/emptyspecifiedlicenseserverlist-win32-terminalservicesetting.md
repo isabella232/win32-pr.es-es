@@ -1,12 +1,12 @@
 ---
-title: Método EmptySpecifiedLicenseServerList de la clase Win32_TerminalServiceSetting
+title: Método EmptySpecifiedLicenseServerList de la Win32_TerminalServiceSetting clase
 description: Quita todos los servidores de licencias de la lista de servidores de licencias especificados.
 ms.assetid: de1633ca-3f0b-4540-8b45-44303a4e72fe
 ms.tgt_platform: multiple
 keywords:
 - Método EmptySpecifiedLicenseServerList Servicios de Escritorio remoto
-- Método EmptySpecifiedLicenseServerList Servicios de Escritorio remoto, clase Win32_TerminalServiceSetting
-- Win32_TerminalServiceSetting de clase Servicios de Escritorio remoto, método EmptySpecifiedLicenseServerList
+- Método EmptySpecifiedLicenseServerList Servicios de Escritorio remoto , Win32_TerminalServiceSetting clase
+- Win32_TerminalServiceSetting clase Servicios de Escritorio remoto método , EmptySpecifiedLicenseServerList
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1392c05618860f742a13140167e423b312e49b0a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 580287460e4d703f24c4186f6a98a0e69412736a8b621f8f58cc0dc5ec0179df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353988"
 ---
-# <a name="emptyspecifiedlicenseserverlist-method-of-the-win32_terminalservicesetting-class"></a>Método EmptySpecifiedLicenseServerList de la \_ clase TerminalServiceSetting de Win32
+# <a name="emptyspecifiedlicenseserverlist-method-of-the-win32_terminalservicesetting-class"></a>Método EmptySpecifiedLicenseServerList de la clase \_ TerminalServiceSetting de Win32
 
 Quita todos los servidores de licencias de la lista de servidores de licencias especificados.
 
@@ -43,27 +43,27 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
+[**TerminalServiceSetting de Win32 \_**](win32-terminalservicesetting.md)
 </dt> <dt>
 
 [**AddLSToSpecifiedLicenseServerList**](addlstospecifiedlicenseserverlist-win32-terminalservicesetting.md)

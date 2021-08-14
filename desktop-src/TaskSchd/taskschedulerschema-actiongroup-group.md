@@ -1,10 +1,10 @@
 ---
-title: Grupo actionGroup
+title: actionGroup Group
 description: Define el grupo de acciones que puede realizar una tarea.
 ms.assetid: a43ba021-4a40-4e2c-a57f-bd6ee17706ba
 keywords:
-- Programador de tareas de grupo actionGroup
-- Programador de tareas actionGroup
+- grupo actionGroup Programador de tareas
+- actionGroup Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af06598c6eca092f474467bea16a7d7b95a9563f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bcfd37187373e8bebdcc6b2af22323fd5475a6893791158b83b16c278752e420
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118357187"
 ---
-# <a name="actiongroup-group"></a>Grupo actionGroup
+# <a name="actiongroup-group"></a>actionGroup Group
 
 Define el grupo de acciones que puede realizar una tarea.
 
@@ -50,29 +50,29 @@ Define el grupo de acciones que puede realizar una tarea.
 
 | Elemento                                                                    | Tipo                                                                       | Descripción                                                             |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [**Controlador**](taskschedulerschema-comhandler-actiongroup-element.md)   | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md)   | Representa una acción que activa un controlador.<br/>                   |
-| [**Ejec**](taskschedulerschema-exec-actiongroup-element.md)               | [**execType**](taskschedulerschema-exectype-complextype.md)               | Representa una acción que ejecuta una operación de la línea de comandos.<br/> |
+| [**ComHandler**](taskschedulerschema-comhandler-actiongroup-element.md)   | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md)   | Representa una acción que llama a un controlador.<br/>                   |
+| [**Exec**](taskschedulerschema-exec-actiongroup-element.md)               | [**execType**](taskschedulerschema-exectype-complextype.md)               | Representa una acción que ejecuta una operación de línea de comandos.<br/> |
 | [**SendEmail**](taskschedulerschema-sendemail-actiongroup-element.md)     | [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md)     | Representa una acción que envía un mensaje de correo electrónico.<br/>            |
-| [**ShowMessage**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Representa una acción que muestra un cuadro de mensaje.<br/>               |
+| [**Showmessage**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Representa una acción que muestra un cuadro de mensaje.<br/>               |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML, los elementos definidos por este grupo son los elementos secundarios del elemento [**Actions**](taskschedulerschema-actions-tasktype-element.md) .
+Al leer o escribir XML, los elementos definidos por este grupo son los elementos secundarios del [**elemento**](taskschedulerschema-actions-tasktype-element.md) Actions.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,21 +4,21 @@ description: En este tema se incluye un ejemplo de código que lee la propiedad 
 ms.assetid: 4ea1ddc5-6f48-45d3-9763-7ef0e6e704e3
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, determinar el modo de operación
+- Active Directory ejemplos Active Directory , determinar el modo de operación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a059a750cf98efc066ac510c2c8acf58a65ab8c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a2bb4a7d00a61298ad8b9b29d9208a50023a6885360d31b14933f83a3102ab1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190778"
 ---
 # <a name="example-code-for-determining-the-operation-mode"></a>Código de ejemplo para determinar el modo de operación
 
-En este tema se incluye un ejemplo de código que lee la propiedad **ntMixedDomain** de un dominio y determina el modo de operación.
+En este tema se incluye un ejemplo de código que lee la **propiedad ntMixedDomain** de un dominio y determina el modo de operación.
 
-En el siguiente ejemplo de código de C++ se lee la propiedad **ntMixedDomain** de un dominio y se determina el modo de operación.
+En el siguiente ejemplo de código de C++ se lee **la propiedad ntMixedDomain** de un dominio y se determina el modo de operación.
 
 
 ```C++
@@ -59,7 +59,7 @@ return hr;
 
 
 
-En el siguiente ejemplo de código Visual Basic se lee la propiedad **ntMixedDomain** de un dominio y se determina el modo de operación.
+En el Visual Basic ejemplo de código siguiente se lee **la propiedad ntMixedDomain** de un dominio y se determina el modo de operación.
 
 
 ```VB
@@ -142,7 +142,7 @@ End Sub
 
 
 
-En el siguiente ejemplo de código Visual Basic Scripting Edition se lee la propiedad **ntMixedDomain** de un dominio y se determina el modo de operación.
+En el Visual Basic de código de Scripting Edition siguiente se lee **la propiedad ntMixedDomain** de un dominio y se determina el modo de operación.
 
 
 ```VB
@@ -217,9 +217,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

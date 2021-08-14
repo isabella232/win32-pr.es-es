@@ -3,30 +3,30 @@ title: Referencia de atributos de lista de reproducción
 description: Referencia de atributos de lista de reproducción
 ms.assetid: d163b6fd-a64f-4160-95cb-6ac1153f011b
 keywords:
-- Windows Media Player, atributos de lista de reproducción
-- Windows Media Player Mobile, atributos de lista de reproducción
-- Modelo de objetos de Windows Media Player, atributos de la lista de reproducción
+- Reproductor de Windows Media,atributos de lista de reproducción
+- Reproductor de Windows Media Móvil, atributos de lista de reproducción
+- Reproductor de Windows Media modelo de objetos, atributos de lista de reproducción
 - modelo de objetos, atributos de lista de reproducción
-- Control ActiveX, atributos de la lista de reproducción
-- Control ActiveX de Windows Media Player, atributos de lista de reproducción
-- Control ActiveX móvil de Windows Media Player, atributos de la lista de reproducción
-- Referencia del modelo de objetos, atributos de lista de reproducción
-- atributos, listas de reproducción
-- listas de reproducción, atributos
-- metarchivos, listas de reproducción, atributos
-- Listas de reproducción de metarchivos de Windows Media, atributos
+- ActiveX control,atributos de lista de reproducción
+- Reproductor de Windows Media ActiveX control,atributos de lista de reproducción
+- Reproductor de Windows Media Control de ActiveX móvil,atributos de lista de reproducción
+- referencia del modelo de objetos, atributos de lista de reproducción
+- attributes,playlists
+- playlists,attributes
+- listas de reproducción de metarchivo, atributos
+- Windows Listas de reproducción de metarchivo multimedia, atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28bff94922356a18994f5750acd7e4201915360d
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 8e9d9706ed062035de3bdcde175497f0e22cd735409b6834040f3d325ef4b066
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105705087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118337175"
 ---
 # <a name="playlist-attributes-reference"></a>Referencia de atributos de lista de reproducción
 
-Los siguientes atributos están disponibles para los elementos multimedia recuperados de la biblioteca mediante [**MediaCollection. getByAttribute ("mediatype", "lista de reproducción")**](/windows/desktop/WMP/mediacollection-getbyattribute).
+Los atributos siguientes están disponibles para los elementos multimedia recuperados de la biblioteca mediante [**MediaCollection.getByAttribute("MediaType", "playlist").**](/windows/desktop/WMP/mediacollection-getbyattribute)
 
 -   [**Atributo AcquisitionTime**](acquisitiontime-attribute.md)
 -   [**Atributo AlternateSourceURL**](alternatesourceurl-attribute.md)
@@ -35,31 +35,31 @@ Los siguientes atributos están disponibles para los elementos multimedia recupe
 -   [**Atributo DLNASourceURI**](dlnasourceuri-attribute.md)
 -   [**Atributo DTCPIPHost**](dtcpiphost-attribute.md)
 -   [**Atributo DTCPIPPort**](dtcpipport-attribute.md)
--   [**FileType (atributo)**](filetype-attribute.md)
--   [**IdBiblioteca (atributo)**](libraryid-attribute.md)
--   [**Atributo Nombrebiblioteca**](libraryname-attribute.md)
+-   [**Atributo FileType**](filetype-attribute.md)
+-   [**Atributo LibraryID**](libraryid-attribute.md)
+-   [**Atributo LibraryName**](libraryname-attribute.md)
 -   [**Atributo MediaContentTypes**](mediacontenttypes-attribute.md)
--   [**MediaType (atributo)**](mediatype-attribute.md)
+-   [**Atributo MediaType**](mediatype-attribute.md)
 -   [**Atributo SourceURL**](sourceurl-attribute.md)
--   **Sync01**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync02**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync03**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync04**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync05**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync06**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync07**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync08**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync09**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync10**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync11**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync12**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync13**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync14**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync15**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync16**. Consulte [**atributos de sincronización**](sync-attributes.md).
+-   **Sync01**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync02**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync03**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync04**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync05**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync06**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync07**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync08**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync09**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync10**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync11**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync12**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync13**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync14**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync15**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync16**. Vea [**Atributos de sincronización.**](sync-attributes.md)
 -   [**Atributo SyncOnly**](synconly-attribute.md)
 -   [**Atributo temporal**](temporary-attribute.md)
--   [**Atributo title**](title-attribute.md)
+-   [**Atributo Title**](title-attribute.md)
 -   [**Atributo TrackingID**](trackingid-attribute.md)
 -   [**Atributo UserCustom1**](usercustom1-attribute.md)
 -   [**Atributo UserCustom2**](usercustom2-attribute.md)
@@ -74,7 +74,7 @@ Los siguientes atributos están disponibles para los elementos multimedia recupe
 -   [**Atributo UserPlaycountWeekend**](userplaycountweekend-attribute.md)
 -   [**Atributo UserRating**](userrating-attribute.md)
 -   [**Atributo UserServiceRating**](userservicerating-attribute.md)
--   [**Atributo WM/categoría**](wm-category-attribute.md)
+-   [**Atributo WM/Category**](wm-category-attribute.md)
 -   [**Atributo WM/ContentDistributor**](wm-contentdistributor-attribute.md)
 -   [**Atributo WM/EncodingTime**](wm-encodingtime-attribute.md)
 -   [**Atributo WM/Genre**](wm-genre-attribute.md)
@@ -85,7 +85,7 @@ Los siguientes atributos están disponibles para los elementos multimedia recupe
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> <dt>
 
 [**MediaCollection.getByAttribute**](mediacollection-getbyattribute.md)

@@ -1,7 +1,7 @@
 ---
-description: El método KsQueryMediums recupera los medios admitidos por un PIN.
+description: El método KsQueryMediums recupera los medios admitidos por un pin.
 ms.assetid: 554bf968-6054-4f9d-95db-facf0444641f
-title: 'IKsPin:: KsQueryMediums (método) (ksproxy. h)'
+title: Método IKsPin::KsQueryMediums (Ksproxy.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: f037317b49bc54f5ea9db5b7a4ae039ec0a9970d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 33edb7cb2ca959080878f7ce735930ceec9d95dc2f829aef6d50f72d764f2f00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118398941"
 ---
-# <a name="ikspinksquerymediums-method"></a>IKsPin:: KsQueryMediums (método)
+# <a name="ikspinksquerymediums-method"></a>Método IKsPin::KsQueryMediums
 
-El `KsQueryMediums` método recupera los medios admitidos por un PIN.
+El `KsQueryMediums` método recupera los medios admitidos por un pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,24 +40,24 @@ HRESULT KsQueryMediums(
 
 <dl> <dt>
 
-*PPMI* \[ enuncia\]
+*ppmi* \[ out\]
 </dt> <dd>
 
-Dirección de un puntero a una estructura de [**\_ elementos KSMULTIPLE**](ksmultiple-item.md) .
+Dirección de un puntero a una [**estructura ITEM de KSMULTIPLE. \_**](ksmultiple-item.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un error, devuelve un código de error **HRESULT** .
+Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método devuelve una estructura de [**\_ elemento KSMULTIPLE**](ksmultiple-item.md) asignada por la tarea, seguida de cero o más estructuras [**REGPINMEDIUM**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) . El miembro **Count** de la estructura del **\_ elemento KSMULTIPLE** especifica el número de estructuras **REGPINMEDIUM** . Cada estructura **REGPINMEDIUM** define un medio admitido por el PIN.
+Este método devuelve una estructura [**KSMULTIPLE \_ ITEM**](ksmultiple-item.md) asignada por tareas, seguida de cero o más estructuras [**REGPINMEDIUM.**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) El **miembro Count** de la estructura **\_ ITEM de KSMULTIPLE** especifica el número de estructuras **REGPINMEDIUM.** Cada **estructura REGPINMEDIUM** define un medio admitido por el pin.
 
-El llamador debe liberar las estructuras devueltas mediante la función **CoTaskMemFree** .
+El autor de la llamada debe liberar las estructuras devueltas mediante **la función CoTaskMemFree.**
 
-Debe incluir KS. h antes de ksproxy. h.
+Debe incluir Ks.h antes que Ksproxy.h.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -107,23 +107,23 @@ HRESULT FindMatchingMedium(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Ksproxy. h</dt> </dl>    |
-| Biblioteca<br/>                  | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ksproxy.h</dt> </dl>    |
+| Biblioteca<br/>                  | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)
 </dt> <dt>
 
-[**Interfaz IKsPin**](ikspin.md)
+[**IKsPin (interfaz)**](ikspin.md)
 </dt> <dt>
 
 [Filtros de controlador de clase WDM](wdm-class-driver-filters.md)

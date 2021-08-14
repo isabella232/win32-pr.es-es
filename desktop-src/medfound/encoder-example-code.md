@@ -1,19 +1,19 @@
 ---
-description: En este tema se muestra código de ejemplo que contiene el codificador Windows Media Audio (WMA) en una clase de C++ denominada CWmaEncoder.
+description: En este tema se muestra código de ejemplo que encapsula el codificador Windows Media Audio (WMA) en una clase de C++ denominada CWmaEncoder.
 ms.assetid: 59bd5b6a-86fe-4d39-ab7c-9563ac1a8e94
 title: Código de ejemplo del codificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa38e779a7751c22f2c463999619e77e05ef09b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9acf77224b71618068cb42e0b46e15b1063ae333cb1ed3f147ef1ee85e1b4207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879439"
 ---
 # <a name="encoder-example-code"></a>Código de ejemplo del codificador
 
-En este tema se muestra código de ejemplo que contiene el codificador Windows Media Audio (WMA) en una clase de C++ denominada `CWmaEncoder` .
+En este tema se muestra algún código de ejemplo que encapsula el codificador Windows Media Audio (WMA) en una clase de C++ denominada `CWmaEncoder` .
 
 -   [Declaración de clase](#class-declaration)
 -   [Inicialización](#initialize)
@@ -28,9 +28,9 @@ En este tema se muestra código de ejemplo que contiene el codificador Windows M
 
 En varios temas se hace referencia a este código:
 
--   [Tutorial: escribir un archivo WMA con codificación CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
+-   [Tutorial: Escritura de un archivo WMA mediante la codificación CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 
-En Media Foundation, los codificadores se implementan como [transformaciones Media Foundation](media-foundation-transforms.md) (MFTs) y exponen la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) .
+En Media Foundation, los codificadores se implementan como [transformaciones](media-foundation-transforms.md) de Media Foundation (MTA) y exponen la [**interfaz DETRANSFORMTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
 ## <a name="class-declaration"></a>Declaración de clase
 
@@ -432,7 +432,7 @@ HRESULT CWmaEncoder::Drain()
 
 <dl> <dt>
 
-[Tutorial: escribir un archivo WMA con codificación CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
+[Tutorial: Escritura de un archivo WMA mediante la codificación CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 </dt> <dt>
 
 [Códecs de Windows Media](windows-media-codecs.md)

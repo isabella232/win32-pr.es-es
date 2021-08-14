@@ -1,21 +1,21 @@
 ---
-description: Un agente de Call Center es responsable de recibir y procesar las llamadas entrantes y, en ocasiones, realizar llamadas salientes a clientes o clientes potenciales.
+description: Un agente de centro de llamadas es responsable de recibir y procesar llamadas entrantes y, en ocasiones, realizar llamadas salientes a clientes o clientes potenciales.
 ms.assetid: 2dfd51b6-cdda-43cc-a30f-92ac41abf8d8
-title: Cliente del agente ACD
+title: Cliente del agente de ACD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70b4a315477829cca953676d6d2118f91cf23227
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec41203cd2cf37d67379c42911960950ffc106f4cdcaee87475f0de263193474
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117949310"
 ---
-# <a name="acd-agent-client"></a>Cliente del agente ACD
+# <a name="acd-agent-client"></a>Cliente del agente de ACD
 
-Un agente de Call Center es responsable de recibir y procesar las llamadas entrantes y, en ocasiones, realizar llamadas salientes a clientes o clientes potenciales. Una aplicación cliente del agente ACD proporciona comunicaciones con la aplicación de [proxy ACD](acd-proxy.md) , lo que proporciona información como, por ejemplo, si el agente está disponible para llamadas y qué tipos de llamadas puede controlar el agente. En el diagrama siguiente se muestra cómo los objetos TAPI se ven a un agente.
+Un agente de centro de llamadas es responsable de recibir y procesar llamadas entrantes y, en ocasiones, realizar llamadas salientes a clientes o clientes potenciales. Una aplicación cliente del agente de ACD proporciona comunicaciones con la aplicación de [proxy de ACD,](acd-proxy.md) proporcionando información como si el agente está disponible para las llamadas y qué tipos de llamadas puede controlar el agente. En el diagrama siguiente se muestra cómo los objetos TAPI miran a un agente.
 
-![agentes de TAPI y de centro de llamadas](images/cc-agvw.png)
+![tapi y agentes del centro de llamadas](images/cc-agvw.png)
 
  
 

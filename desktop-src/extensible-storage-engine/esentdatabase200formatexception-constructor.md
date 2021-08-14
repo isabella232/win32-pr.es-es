@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabase200FormatException'
-title: Constructor de EsentDatabase200FormatException
+description: 'Más información sobre: Constructor EsentDatabase200FormatException'
+title: Constructor EsentDatabase200FormatException
 TOCTitle: 'EsentDatabase200FormatException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabase200FormatException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabase200formatexception.esentdatabase200formatexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f1224969139a909f1e3f3023beac77fdf4ce92fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dec5dcb804ce16fec8715d00d8f41b2279ae7eec2d3bc027556ee923610e982b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118781838"
 ---
-# <a name="esentdatabase200formatexception-constructor"></a>Constructor de EsentDatabase200FormatException
+# <a name="esentdatabase200formatexception-constructor"></a>Constructor EsentDatabase200FormatException
 
 Inicializa una nueva instancia de la clase EsentDatabase200FormatException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDatabase200FormatException()
 public EsentDatabase200FormatException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDatabase200FormatException()
 
 [Miembros de EsentDatabase200FormatException](./esentdatabase200formatexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

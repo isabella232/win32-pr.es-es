@@ -1,7 +1,7 @@
 ---
-description: Cambiar los vértices afectados por los huesos.
+description: Cambiar qué vértices se ven influenciados por qué ramas.
 ms.assetid: b0d71f3e-9a2d-469d-808b-2fa768cf14b0
-title: 'ID3DX10SkinInfo:: RemapVertices (método) (D3DX10. h)'
+title: Método ID3DX10SkinInfo::RemapVertices (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cc51c912794135b456542bb9a8a779601681f393
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d73b9878a43ef876174561f16678f78787b15b88f423ecfb3f1765bd82c84630
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302481"
 ---
-# <a name="id3dx10skininforemapvertices-method"></a>ID3DX10SkinInfo:: RemapVertices (método)
+# <a name="id3dx10skininforemapvertices-method"></a>Método ID3DX10SkinInfo::RemapVertices
 
-Cambiar los vértices afectados por los huesos.
+Cambiar qué vértices se ven influenciados por qué ramas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT RemapVertices(
 
 <dl> <dt>
 
-*NewVertexCount* \[ de\]
+*NewVertexCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Nuevo número de vértices.
 
 </dd> <dt>
 
-*pVertexRemap* \[ de\]
+*pVertexRemap* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de índices de vértices, que describen la reasignación. Por ejemplo, suponga que SkinInfo contiene algunos vértices, de modo que bone0 se asigna a V0, bone1 a V1 y bone2 a V2, y se especifica array con 2, 1, 0 para pBoneRemap. Esto hará que bone0 se asigne a V2, bone1 a V1 y bone2 a v0.
+Puntero a una matriz de índices de vértices, que describen el remapping. Por ejemplo, diga que SkinInfo contiene algunos vértices, como que se asigna a la versión v0, a la 1 a la 1 y a la matriz con 2,1,0, y se especifica la matriz con 2,1,0 para pIqueRemap. Esto hará que cause que cause0 que se asigne a v2, a tanda1 a v1 y a 2 a v0.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a una matriz de índices de vértices, que describen la reasignación. P
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ OUTOFMEMORY o e \_ INVALIDARG.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser: E \_ OUTOFMEMORY o E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,19 +71,19 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

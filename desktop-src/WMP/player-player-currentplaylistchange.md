@@ -1,11 +1,11 @@
 ---
-title: Evento Player. CurrentPlaylistChange
-description: El evento CurrentPlaylistChange se produce cuando hay algún cambio en la lista de reproducción actual. | Evento Player. CurrentPlaylistChange
+title: Evento Player.CurrentPlaylistChange
+description: El evento CurrentPlaylistChange tiene lugar cuando algo cambia dentro de la lista de reproducción actual. | Evento Player.CurrentPlaylistChange
 ms.assetid: 5270373e-e401-40c6-bf8c-ef0557610372
 keywords:
-- Media Player CurrentPlaylistChange de eventos de Windows
-- Evento CurrentPlaylistChange de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento CurrentPlaylistChange
+- Evento CurrentPlaylistChange Reproductor de Windows Media
+- Evento CurrentPlaylistChange Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media evento , CurrentPlaylistChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4722db224285587198e3ddb021022ec5d8f2cea6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 672ff739e60efe73e1d30670dec5bc956f9fdd56506464b036add6f52cc6fc34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338151"
 ---
-# <a name="playercurrentplaylistchange-event"></a>Evento Player. CurrentPlaylistChange
+# <a name="playercurrentplaylistchange-event"></a>Evento Player.CurrentPlaylistChange
 
-El evento **CurrentPlaylistChange** se produce cuando hay algún cambio en la lista de reproducción actual.
+El **evento CurrentPlaylistChange** tiene lugar cuando algo cambia dentro de la lista de reproducción actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Player.CurrentPlaylistChange(
 *change* 
 </dt> <dd>
 
-**Número** (**largo**) que indica el tipo de cambio que se ha producido en la lista de reproducción. Vea el *reproductor*. Evento **PlaylistChange** para una tabla de valores posibles.
+**Número** (**long**) que indica qué tipo de cambio se ha producido en la lista de reproducción. Consulte el *reproductor*. **Evento PlaylistChange** para una tabla de valores posibles.
 
 </dd> </dl>
 
@@ -53,15 +53,15 @@ Player.CurrentPlaylistChange(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento no se produce cuando una lista de reproducción distinta se convierte en la lista de reproducción actual. Solo se produce cuando se produce un cambio en la lista de reproducción actual, como un elemento multimedia que se anexa a la lista de reproducción.
+Este evento no se produce cuando otra lista de reproducción se convierte en la lista de reproducción actual. Solo se produce cuando se produce un cambio dentro de la lista de reproducción actual, como un elemento multimedia que se anexa a la lista de reproducción.
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media, y se puede acceder o pasar a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se actualiza el texto de un elemento HTML DIV, denominado PlItems, para mostrar los nombres de los elementos multimedia de la lista de reproducción actual. El objeto **Player** se creó con ID = "Player".
+En el JScript siguiente se actualiza el texto de un elemento DIV HTML, denominado PlItems, para mostrar los nombres de los elementos multimedia en la lista de reproducción actual. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -93,24 +93,24 @@ En el siguiente ejemplo de JScript se actualiza el texto de un elemento HTML DIV
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. currentPlaylist**](player-currentplaylist.md)
+[**Player.currentPlaylist**](player-currentplaylist.md)
 </dt> <dt>
 
-[**Player. PlaylistChange**](player-player-playlistchange.md)
+[**Player.PlaylistChange**](player-player-playlistchange.md)
 </dt> </dl>
 
  

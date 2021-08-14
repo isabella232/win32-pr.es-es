@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de sendEmailType
-description: Define el tipo de acción que se usa para especificar que se enviará un correo electrónico cuando se ejecute una tarea. Este tipo define todos los elementos que se usan para modelar el mensaje de correo electrónico.
+title: Tipo complejo sendEmailType
+description: Define el tipo de acción utilizado para especificar que se enviará un correo electrónico cuando se ejecute una tarea. Este tipo define todos los elementos utilizados para modelar el mensaje de correo electrónico.
 ms.assetid: e384971f-e7e4-4206-9d15-9555dfcbac2f
 keywords:
-- tipo complejo de sendEmailType Programador de tareas
+- Tipo complejo sendEmailType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 959e0b8f03223eb23b7a7bec69ba9b2aeea66447
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0242700b2f22050741d9de175b7dae532cc5ef4bb2097fadb23799ce3b2f82b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356347"
 ---
-# <a name="sendemailtype-complex-type"></a>Tipo complejo de sendEmailType
+# <a name="sendemailtype-complex-type"></a>Tipo complejo sendEmailType
 
-Define el tipo de acción que se usa para especificar que se enviará un correo electrónico cuando se ejecute una tarea. Este tipo define todos los elementos que se usan para modelar el mensaje de correo electrónico.
+Define el tipo de acción utilizado para especificar que se enviará un correo electrónico cuando se ejecute una tarea. Este tipo define todos los elementos utilizados para modelar el mensaje de correo electrónico.
 
 ``` syntax
 <xs:complexType name="sendEmailType">
@@ -83,15 +83,15 @@ Define el tipo de acción que se usa para especificar que se enviará un correo 
 | Elemento                                                                        | Tipo                                                                         | Descripción                                                                                      |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | [**Datos adjuntos**](taskschedulerschema-attachments-sendemailtype-element.md)   | [**attachmentsType**](taskschedulerschema-attachmentstype-complextype.md)   | Especifica una lista de datos adjuntos en el mensaje de correo electrónico.<br/>                                 |
-| [**CCO**](taskschedulerschema-bcc-sendemailtype-element.md)                   | **string**                                                                   | Especifica las direcciones de correo electrónico utilizadas en la línea CCO de un mensaje de correo electrónico.<br/>               |
+| [**CCO**](taskschedulerschema-bcc-sendemailtype-element.md)                   | **string**                                                                   | Especifica las direcciones de correo electrónico usadas en la línea CCO de un mensaje de correo electrónico.<br/>               |
 | [**Cuerpo**](taskschedulerschema-body-sendemailtype-element.md)                 | **string**                                                                   | Especifica el texto en el cuerpo del mensaje de correo electrónico.<br/>                                  |
-| [**Correos**](taskschedulerschema-cc-sendemailtype-element.md)                     | **string**                                                                   | Especifica las direcciones de correo electrónico utilizadas en la línea CC de un mensaje de correo electrónico.<br/>                |
+| [**Cc**](taskschedulerschema-cc-sendemailtype-element.md)                     | **string**                                                                   | Especifica las direcciones de correo electrónico usadas en la línea CC de un mensaje de correo electrónico.<br/>                |
 | [**From**](taskschedulerschema-from-sendemailtype-element.md)                 | **string**                                                                   | Especifica la dirección de correo electrónico del remitente.<br/>                                            |
 | [**HeaderFields**](taskschedulerschema-headerfields-sendemailtype-element.md) | [**headerFieldsType**](taskschedulerschema-headerfieldstype-complextype.md) | Especifica los campos de encabezado y sus valores utilizados en el encabezado del mensaje de correo electrónico.<br/> |
 | [**ReplyTo**](taskschedulerschema-replyto-sendemailtype-element.md)           | **string**                                                                   | Especifica las direcciones de correo electrónico a las que se responde en el mensaje de correo electrónico.<br/>               |
-| [**Server**](taskschedulerschema-server-sendemailtype-element.md)             | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md)      | Especifica el servidor de correo electrónico que se usa para enviar el mensaje de correo electrónico. <br/>                           |
+| [**Servidor**](taskschedulerschema-server-sendemailtype-element.md)             | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md)      | Especifica el servidor de correo electrónico utilizado para enviar el mensaje de correo electrónico. <br/>                           |
 | [**Asunto**](taskschedulerschema-subject-sendemailtype-element.md)           | **string**                                                                   | Especifica el asunto del mensaje de correo electrónico.<br/>                                           |
-| [**En**](taskschedulerschema-to-sendemailtype-element.md)                     | **string**                                                                   | Especifica las direcciones de correo electrónico a las que se enviará el correo electrónico.<br/>                        |
+| [**Para**](taskschedulerschema-to-sendemailtype-element.md)                     | **string**                                                                   | Especifica las direcciones de correo electrónico a las que se enviará el correo electrónico.<br/>                        |
 
 
 
@@ -99,10 +99,10 @@ Define el tipo de acción que se usa para especificar que se enviará un correo 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

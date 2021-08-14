@@ -1,38 +1,38 @@
 ---
-description: Las API de prevención de pérdida de datos (DLP) de punto de conexión permiten a las aplicaciones notificar al sistema operativo antes y después de ciertas operaciones, como abrir o guardar un archivo.
-title: Prevención de pérdida de datos de punto de conexión
+description: Las API de prevención de pérdida de datos (DLP) del punto de conexión permiten a las aplicaciones notificar al sistema operativo antes y después de ciertas operaciones, como abrir o guardar un archivo.
+title: Prevención de pérdida de datos del punto de conexión
 ms.topic: article
 ms.date: 03/18/2021
-ms.openlocfilehash: 3b8576f9eadd0037eca56c0ba183ea1d1825679a
-ms.sourcegitcommit: 8b543a86e551cb5b4270a3cc3590ad0758fb6156
+ms.openlocfilehash: fcbe17d30addb86e37330b210d224720f9b50e525e2b8d41d07d349ea5819c2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107526085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479436"
 ---
-# <a name="endpoint-data-loss-prevention"></a>Prevención de pérdida de datos de punto de conexión
+# <a name="endpoint-data-loss-prevention"></a>Prevención de pérdida de datos del punto de conexión
 
-Windows 10 implementa mecanismos que ayudan a evitar la pérdida de datos de archivos confidenciales. Las API de prevención de pérdida de datos (DLP) de punto de conexión permiten a las aplicaciones notificar al sistema operativo antes y después de ciertas operaciones, como abrir o guardar un archivo. Estas notificaciones sirven como "sugerencias" que permiten al sistema optimizar las operaciones de pérdida de datos.
+Windows 10 implementa mecanismos que ayudan a evitar la pérdida de datos de archivos confidenciales. Las API de prevención de pérdida de datos (DLP) del punto de conexión permiten a las aplicaciones notificar al sistema operativo antes y después de ciertas operaciones, como abrir o guardar un archivo. Estas notificaciones sirven como "sugerencias" que permiten al sistema optimizar las operaciones de pérdida de datos.
 
 ## <a name="location-of-the-dlp-dll"></a>Ubicación del archivo DLL dlp
 
-Puesto que el archivo DLL DLP del punto de conexión no está incluido con el Windows SDK, las aplicaciones tendrán que cargar el archivo DLL manualmente en tiempo de ejecución. La ruta de acceso a la ubicación del archivo DLL se almacena en el Registro. En la tabla siguiente se enumeran las claves y los valores del Registro que almacenan esta información. Estas rutas de acceso se definen como constantes en la lista de código endpointdlp.h de ejemplo que se proporciona a continuación para mayor comodidad para los desarrolladores.
+Puesto que el archivo DLL dlp del punto de conexión no está incluido con el SDK de Windows, las aplicaciones detendrán que cargar el archivo DLL manualmente en tiempo de ejecución. La ruta de acceso a la ubicación del archivo DLL se almacena en el Registro. En la tabla siguiente se enumeran las claves y los valores del Registro que almacenan esta información. Estas rutas de acceso se definen como constantes en la lista de código endpointdlp.h de ejemplo que se proporciona a continuación para mayor comodidad para los desarrolladores.
 
-| Constante | Value | Descripción   |
+| Constante | Valor | Descripción   |
 |----------|-------|---------------|
-| ENDPOINTDLP_DLL_NAME | "EndpointDlp.dll" | Nombre del archivo DLL dlp de punto de conexión que proporciona la API |
-| ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY | "SOFTWARE \\ Microsoft \\ Windows Defender" | Windows Defender clave del Registro en HKLM donde se almacenan algunas configuraciones dlp de punto de conexión |
-| ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY | Valor de ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |  Ruta de acceso del Registro en clave HKLM desde la que se EndpointDlp.dll ubicación de instalación |
-| ENDPOINTDLP_DLL_INSTALL_LOCATION_REGVALUE | "InstallLocation" | Valor del Registro en ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY en el que se almacena EndpointDlp.dll ubicación de instalación del registro. |
+| ENDPOINTDLP_DLL_NAME | "EndpointDlp.dll" | El nombre del archivo DLL dlp de punto de conexión que proporciona la API |
+| ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY | "SOFTWARE \\ Microsoft \\ Windows Defender" | Windows Defender clave del Registro en HKLM donde se almacenan algunos valores de DLP de punto de conexión |
+| ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY | Valor de ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |  La ruta de acceso del Registro en clave HKLM desde la que EndpointDlp.dll la ubicación de instalación |
+| ENDPOINTDLP_DLL_INSTALL_LOCATION_REGVALUE | "InstallLocation" | Valor del Registro en ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY en el que se almacena EndpointDlp.dll ubicación de instalación |
 | ENDPOINTDLP_DLL_WOW64_X86_INSTALL_LOCATION_SUFFIX | "x86" | En plataformas x64, concatene este directorio para obtener la versión x86 de EndpointDlp.dll |
 
 ## <a name="check-if-endpoint-dlp-is-enabled"></a>Comprobación de si la DLP del punto de conexión está habilitada
 
 Para determinar si la DLP del punto de conexión está habilitada en el sistema, compruebe el siguiente valor de clave del Registro. 
 
-| Constante | Value | Descripción   |
+| Constante | Valor | Descripción   |
 |----------|-------|---------------|
-| ENDPOINTDLP_ENABLED_FLAG_REGKEY |  \\"Características" | Ruta de acceso a la clave de marca habilitada para DLP de punto de conexión en (HKLM) ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |
+| ENDPOINTDLP_ENABLED_FLAG_REGKEY |  " \\ Características" | Ruta de acceso a la clave de marca habilitada para DLP de punto de conexión en (HKLM) ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |
 | ENDPOINTDLP_ENABLED_FLAG_REGVALUE | "SenseDlpEnabled" | El valor del Registro en ENDPOINTDLP_ENABLED_FLAG_REGKEY que contiene la clave del Registro de marca habilitada para DLP
 
 ## <a name="endpoint-dlp-apis"></a>API DLP de punto de conexión
@@ -61,7 +61,7 @@ En las tablas siguientes se muestran las API proporcionadas por el archivo DLL d
 ### <a name="save-as-operations"></a>Guardar como operaciones
 | API | Descripción |
 |-----|-------------|
-| [DlpNotifyPreSaveAsDocument](endpointdlp-dlpnotifypresaveasdocument.md)                       | Proporciona al sistema información sobre un documento antes de iniciar una operación guardar como.                                  |
+| [DlpNotifyPreSaveAsDocument](endpointdlp-dlpnotifypresaveasdocument.md)                       | Proporciona al sistema información sobre un documento antes de iniciar una operación de guardar como.                                  |
 | [DlpNotifyPostSaveAsDocument](endpointdlp-dlpnotifypostsaveasdocument.md)                       | Proporciona al sistema información sobre un documento una vez completada la operación guardar como.                                  |
 
 
@@ -85,7 +85,7 @@ En las tablas siguientes se muestran las API proporcionadas por el archivo DLL d
 | [DlpNotifyPostPasteFromClipboard](endpointdlp-dlpnotifypostpastefromclipboard.md)                       | Proporciona al sistema información sobre un documento después de que se haya completado una operación de pegado del Portapapeles.                                  |
 | [DlpNotifyPostStashClipboard](endpointdlp-dlpnotifypoststashclipboard.md)                       | Proporciona al sistema información de estado una vez completada una operación de almacenamiento escalonado del Portapapeles.                                  |
 | [DlpNotifyPreStashClipboard](endpointdlp-dlpnotifyprestashclipboard.md)                       | Notifica al sistema antes de que se inicie una operación de almacenamiento escalonado del Portapapeles.                                  |
-| [DlpMustPasteFromSystemClipboard](endpointdlp-dlpmustpastefromsystemclipboard.md)                       | Determina si la aplicación debe extraer los datos del Portapapeles del sistema en lugar de tomarlo de su caché interna.                                  |
+| [DlpMustPasteFromSystemClipboard](endpointdlp-dlpmustpastefromsystemclipboard.md)                       | Determina si la aplicación debe extraer los datos del Portapapeles del sistema en lugar de tomar los datos de su caché interna.                                  |
 
 ### <a name="print-operations"></a>Operaciones de impresión
 
@@ -97,7 +97,7 @@ En las tablas siguientes se muestran las API proporcionadas por el archivo DLL d
 
 ## <a name="endpoint-dlp-example-header"></a>Encabezado de ejemplo dlp de punto de conexión
 
-Dado que el encabezado DLP del punto de conexión no se incluye en el Windows SDK, debe crear el archivo de encabezado usted mismo para obtener firmas de API que se usarán en la implementación. Para su comodidad, proporcionamos código de ejemplo que puede copiar y pegar en la aplicación. Además de las declaraciones de función, esta lista de código también define constantes útiles, como la información de control de versiones y las rutas de acceso de clave del Registro.
+Dado que el encabezado DLP del punto de conexión no está incluido en el SDK de Windows, debe crear el archivo de encabezado usted mismo para obtener firmas de API que se usarán en la implementación. Para su comodidad, proporcionamos código de ejemplo que puede copiar y pegar en la aplicación. Además de las declaraciones de función, esta lista de código también define constantes útiles, como la información de control de versiones y las rutas de acceso de clave del Registro.
 
 ```cpp
 //

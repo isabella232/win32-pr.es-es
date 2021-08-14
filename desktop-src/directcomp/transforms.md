@@ -4,17 +4,17 @@ description: En este tema se describe la compatibilidad de Microsoft DirectCompo
 ms.assetid: a0f41cc6-e848-4831-8063-609e17d9b4c6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 991e1205422864efdec82bbd4067b9c7662aaf29
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 6c8cc34975ab8304300a1523269808775107f4ce0554432da8c3c04a01f25881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504807"
 ---
 # <a name="transforms-directcomposition"></a>Transformaciones (DirectComposition)
 
 > [!NOTE]
-> Para las aplicaciones Windows 10, se recomienda usar las API Windows.UI.Composition en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 En este tema se describe la compatibilidad de Microsoft DirectComposition con transformaciones afín bidimensionales (2D) (lineales) y se describen los tipos de transformaciones que admite DirectComposition.
 
@@ -32,25 +32,25 @@ Este tema incluye las siguientes secciones:
 
 ## <a name="what-is-a-directcomposition-2d-transform"></a>¿Qué es una transformación 2D de DirectComposition?
 
-Una transformación 2D le permite modificar la posición, el tamaño o la naturaleza de un objeto visual en dos dimensiones moviendo el objeto visual a otra ubicación (traducción), lo hace más grande o más pequeño (escalado), lo convierte (rotación) o distorsiona su forma (sesgo).
+Una transformación 2D le permite modificar la posición, el tamaño o la naturaleza de un objeto visual en dos dimensiones moviendo el objeto visual a otra ubicación (traducción), convirtiéndolo en mayor o menor (escalado), girando (rotación) o distorsionando su forma (sesgo).
 
-Una transformación 2D se logra mediante la asignación de los puntos de un objeto visual de una posición a otra dentro del mismo espacio de coordenadas, o de un espacio de coordenadas a otro. Esta asignación se describe mediante una tabla de valores denominada matriz de transformación, definida como una colección de tres filas con tres columnas de valores de punto flotante, como se muestra en la tabla siguiente.
+Una transformación 2D se logra asignando los puntos de un objeto visual de una posición a otra dentro del mismo espacio de coordenadas, o de un espacio de coordenadas a otro. Esta asignación se describe mediante una tabla de valores denominada matriz de transformación, definida como una colección de tres filas con tres columnas de valores de punto flotante, como se muestra en la tabla siguiente.
 
 :::row:::
     :::column:::
         M11Default: 1.0<br/>
         M21Default: 0.0<br/>
-        M31OffsetX: 0,0
+        M31OffsetX: 0.0
     :::column-end:::
     :::column:::
         M12Default: 0.0<br/>
         M22Default: 1.0<br/>
-        M32OffsetY: 0,0
+        M32OffsetY: 0.0
     :::column-end:::
     :::column:::
         0,0<br/>
         0,0<br/>
-        1,0
+        1.0
     :::column-end:::
 :::row-end:::
 
@@ -60,17 +60,17 @@ La matriz de transformación para transformaciones 2D afínes es una matriz 3 po
     :::column:::
         M11Default: 1.0<br/>
         M21Default: 0.0<br/>
-        M31OffsetX: 0,0
+        M31OffsetX: 0.0
     :::column-end:::
     :::column:::
         M12Default: 0.0<br/>
         M22Default: 1.0<br/>
-        M32OffsetY: 0,0
+        M32OffsetY: 0.0
     :::column-end:::
 :::row-end:::
 
 > [!Note]  
-> DirectComposition no realiza ningún procesamiento especial al aplicar transformaciones 2D al contenido estéreo. Esto significa que el contenido 3D puede aparecer distorsionado cuando se le aplica una transformación 2D.
+> DirectComposition no realiza ningún procesamiento especial al aplicar transformaciones 2D al contenido estéreo. Esto significa que el contenido 3D puede parecer distorsionado cuando se le aplica una transformación 2D.
 
  
 
@@ -78,9 +78,9 @@ La matriz de transformación para transformaciones 2D afínes es una matriz 3 po
 
 DirectComposition usa un espacio de coordenadas 2D a la izquierda; Es decir, los valores positivos del eje X aumentan a la derecha y los valores positivos del eje Y aumentan hacia abajo. Los objetos visuales se sitúan en relación con el origen, que es el punto en el que el eje X y el eje Y se intersecan (0, 0), como se muestra en la ilustración siguiente.
 
-![los ejes X e Y de un espacio de coordenadas con la mano izquierda](images/coordinatespace.png)
+![los ejes X e Y de un espacio de coordenadas a la izquierda](images/coordinatespace.png)
 
-Al manipular valores en una matriz de transformación 3 por 2, puede girar, escalar, sesgar y traducir un objeto en dos dimensiones. Por ejemplo, si establece OffsetX en 100 y OffsetY en 200, mueva el objeto a la derecha 100 píxeles y 200 píxeles hacia abajo.
+Al manipular valores en una matriz de transformación 3 por 2, puede girar, escalar, sesgar y traducir un objeto en dos dimensiones. Por ejemplo, si establece OffsetX en 100 y OffsetY en 200, mueve el objeto a los 100 píxeles derecho y 200 píxeles hacia abajo.
 
 ## <a name="support-for-affine-2d-transforms"></a>Compatibilidad con transformaciones 2D afín
 
@@ -88,12 +88,12 @@ En la tabla siguiente se describen los tipos de transformaciones 2D afín compat
 
 
 
-| Transformación o interfaz                                                                               | Descripción                                                                                              | Ilustración                                                                                                                      |
+| Transformación/interfaz                                                                               | Descripción                                                                                              | Ilustración                                                                                                                      |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Rotate 2D [**idcompositionrotatetransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionrotatetransform) \[ newline\]          | girar un objeto visual por el ángulo especificado sobre el punto central especificado.                                 | ![ilustración de un cuadrado girado 45 grados en el sentido de las agujas del reloj sobre el centro del cuadrado original](images/rotate.png)               |
-| Escala de la nueva línea [**idcompositionscaletransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionscaletransform) \[ en 2D\]             | escalar un objeto visual por el factor especificado sobre el punto central especificado.                                 | ![ilustración de un cuadrado escalado al 130 por ciento](images/scale.png)                                                                  |
-| Sesgo 2D [**idcompositionpositionwtransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionskewtransform) \[ newline\]                | sesga un objeto visual por el ángulo especificado a lo largo del eje X y el eje Y, y alrededor del punto central especificado. | ![ilustración de un cuadrado sesgado a 30 grados en sentido contrario a las agujas del reloj desde el eje Y](images/skew.png)                                   |
-| Translate 2D [**idcompositiontranslatetransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositiontranslatetransform) \[ newline\] | cambiar la posición de un objeto visual en la dirección de los ejes X e Y.                               | ![ilustración de un cuadrado movido 20 unidades a lo largo del eje X positivo y 10 unidades a lo largo del eje Y positivo](images/translate.png) |
+| Escala de la nueva línea [**idcompositionscaletransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionscaletransform) \[ en 2D\]             | escalar un objeto visual por el factor especificado sobre el punto central especificado.                                 | ![ilustración de un 130 por ciento de escala cuadrada](images/scale.png)                                                                  |
+| Sesgo 2D [**idcompositionskewtransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionskewtransform) \[ newline\]                | sesga un objeto visual por el ángulo especificado a lo largo del eje X y el eje Y, y alrededor del punto central especificado. | ![ilustración de un cuadrado sesgado 30 grados en sentido contrario a las agujas del reloj desde el eje Y](images/skew.png)                                   |
+| Traducción de la nueva línea [**de idcompositiontranslatetransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositiontranslatetransform)en 2D \[\] | cambiar la posición de un objeto visual en la dirección del eje X y el eje Y.                               | ![ilustración de un cuadrado que movió 20 unidades a lo largo del eje X positivo y 10 unidades a lo largo del eje Y positivo](images/translate.png) |
 
 
 
@@ -105,15 +105,15 @@ La [**interfaz IDCompositionMatrixTransform**](/windows/win32/api/dcomp/nn-dcomp
 
 ## <a name="transform-groups"></a>Transformar grupos
 
-Puede usar grupos de transformación para combinar varias transformaciones en una. Un grupo de transformación define una colección de objetos de transformación cuyas matrices se multiplican juntas en el orden en que se especifican en la colección. A continuación, la matriz de transformación resultante se aplica al objeto visual. Un grupo de transformación genera el mismo resultado que aplicar cada transformación por separado.
+Puede usar grupos de transformación para combinar varias transformaciones en una. Un grupo de transformaciones define una colección de objetos de transformación cuyas matrices se multiplican juntas en el orden en que se especifican en la colección. A continuación, la matriz de transformación resultante se aplica al objeto visual. Un grupo de transformaciones genera el mismo resultado que aplicar cada transformación por separado.
 
-Tenga en cuenta que el orden de los objetos de transformación en un grupo de transformación es importante. Por ejemplo, si un objeto visual se gira primero, luego se escala y, a continuación, se traduce, el resultado es diferente de si el objeto visual se traduce primero, luego gira y, a continuación, se escala. DirectComposition siempre aplica las transformaciones a un objeto visual en el orden en que se especifican en la colección.
+Tenga en cuenta que el orden de los objetos de transformación en un grupo de transformación es importante. Por ejemplo, si un objeto visual se gira primero, después se escala y, a continuación, se traduce, el resultado es diferente de si el objeto visual se traduce primero, luego gira y, a continuación, se escala. DirectComposition siempre aplica las transformaciones a un objeto visual en el orden en que se especifican en la colección.
 
 Para crear un grupo de transformación, cree primero los objetos de transformación que desea incluir en el grupo y, a continuación, pase una matriz de punteros de objeto de transformación al [**método IDCompositionDevice::CreateTransformGroup.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtransformgroup) Después de crear un grupo de transformación, no puede agregar ni quitar ningún objeto de transformación. Sin embargo, puede modificar las propiedades de los objetos de transformación individuales de la colección y los cambios se reflejarán en la matriz de transformación resultante.
 
 ## <a name="transform-animation"></a>Animación de transformación
 
-Las propiedades de una transformación se pueden animar. Cuando se anima una propiedad, DirectComposition cambia el valor de la propiedad a lo largo del tiempo, en lugar de todos a la vez. Esto es especialmente útil al crear transiciones. Para obtener más información, vea [Animation](animation.md).
+Las propiedades de una transformación se pueden animar. Cuando se anima una propiedad, DirectComposition cambia el valor de la propiedad a lo largo del tiempo, en lugar de todo a la vez. Esto es especialmente útil al crear transiciones. Para obtener más información, vea [Animation](animation.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

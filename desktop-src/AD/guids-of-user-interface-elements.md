@@ -1,36 +1,36 @@
 ---
-title: GUID de los elementos de la interfaz de usuario
-description: En la tabla siguiente se muestra el identificador de clase, expresado como un GUID, para los objetos de interfaz de usuario implementados por un servicio de directorio.
+title: GUID de Interfaz de usuario elementos
+description: En la tabla siguiente se muestra el identificador de clase, expresado como GUID, para los objetos de interfaz de usuario implementados por un servicio de directorio.
 ms.assetid: df90cf6b-d68f-488f-8c36-a6b61b399fe2
 ms.tgt_platform: multiple
 keywords:
-- GUID de elementos de la interfaz de usuario de AD
+- GUID de Interfaz de usuario Elements AD
 - CLSID_DsFolderProperties
 - CLSID_DsPropertyPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc84c6a94fab2be8c6635437dd2f17900bda6047
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: ea94c964a85b052a6dbeb78db6d2976f0425a9bf36edf1e0792577a8b6b01c10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105656337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188659"
 ---
-# <a name="guids-of-user-interface-elements"></a>GUID de los elementos de la interfaz de usuario
+# <a name="guids-of-user-interface-elements"></a>GUID de Interfaz de usuario elementos
 
-En la tabla siguiente se muestra el identificador de clase, expresado como un GUID, para los objetos de interfaz de usuario implementados por un servicio de directorio.
+En la tabla siguiente se muestra el identificador de clase, expresado como GUID, para los objetos de interfaz de usuario implementados por un servicio de directorio.
 
 
 
 | Identificador de clase              | Descripción                                                                                                                                                                                                                                                                 |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CLSID \_ DsFolderProperties** | Reservado. Declarado en DSClient. h.                                                                                                                                                                                                                                           |
-| **CLSID \_ DsPropertyPages**    | Este objeto proporciona las interfaces [**IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit), [**IShellPropSheetExt**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellpropsheetext)y [**IContextMenu**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) para su uso con objetos de servicio de directorio proporcionados por el sistema. Declarado en DSClient. h. |
+| **CLSID \_ DsFolderProperties** | Reservado. Declarado en Dsclient.h.                                                                                                                                                                                                                                           |
+| **CLSID \_ DsPropertyPages**    | Este objeto proporciona las interfaces [**IShellExtInit,**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) [**IShellPropSheetExt**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellpropsheetext)e [**IContextMenu**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) para su uso con objetos de servicio de directorio proporcionados por el sistema. Declarado en Dsclient.h. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

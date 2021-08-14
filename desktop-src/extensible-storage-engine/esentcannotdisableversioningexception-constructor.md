@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCannotDisableVersioningException'
-title: Constructor de EsentCannotDisableVersioningException
+description: 'Más información sobre: Constructor EsentCannotDisableVersioningException'
+title: Constructor EsentCannotDisableVersioningException
 TOCTitle: 'EsentCannotDisableVersioningException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCannotDisableVersioningException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcannotdisableversioningexception.esentcannotdisableversioningexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 71061cb340168c7edbe1c495eec132061de31b34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6655a4c89f5321a2962c7afe4028df8a35c115013113271a0b3a70868d15c97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117715012"
 ---
-# <a name="esentcannotdisableversioningexception-constructor"></a>Constructor de EsentCannotDisableVersioningException
+# <a name="esentcannotdisableversioningexception-constructor"></a>Constructor EsentCannotDisableVersioningException
 
 Inicializa una nueva instancia de la clase EsentCannotDisableVersioningException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentCannotDisableVersioningException()
 
 [Miembros de EsentCannotDisableVersioningException](./esentcannotdisableversioningexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

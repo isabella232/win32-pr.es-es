@@ -4,23 +4,23 @@ description: Atributo de Margin-Top VML
 ms.assetid: bce0c575-918a-45ea-a068-cfb6f4a16b1a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a14b6f4743f04740fe3fdbac4cc1d03f7bbe0282
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1e42d86ba6e0fe05c2b0dff1f6d8bdabba0100fffee97d489fd59360cb8e13bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346401"
 ---
 # <a name="vml-margin-top-attribute"></a>Atributo de Margin-Top VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Especifica el borde superior del rectángulo que contiene la forma en relación con el delimitador de la forma. Lectura/escritura **Cadena**.
+Especifica el borde superior del rectángulo que contiene la forma en relación con el delimitador de forma. Lectura/escritura **Cadena**.
 
 **Se aplica a**
 
@@ -28,35 +28,35 @@ Especifica el borde superior del rectángulo que contiene la forma en relación 
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* margin-top = " *expresión* " >
+<v: *element* margin-top=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . margin-top = "*expresión*"
+*element* .margin-top="*expression*"
 
-*expresión* = de *elemento*. margin-top
+*expresión* = *elemento*.margin-top
 
 **Comentarios:**
 
-El atributo **margin-top** es similar al atributo **margin-top** de HTML estándar que se usa con las hojas de estilos.
+El **atributo Margin-Top** es similar al atributo estándar **margin-top** HTML que se usa con las hojas de estilos.
 
-Tenga en cuenta que se utiliza **marginTop** en lugar de **margin-top** para el scripting. Tenga en cuenta también que si la **posición** es **absoluta**, el margen no aparecerá para cambiar.
+Tenga en cuenta **que se usa margintop** en lugar **de margin-top** para scripting. Tenga en cuenta también que si **la posición** es **absoluta,** el margen no parecerá cambiar.
 
-Esta propiedad se utiliza en lugar de la **parte superior** para las formas de Microsoft Word y Microsoft Excel que están flotando en una posición relativa a un punto de anclaje.
+Esta propiedad se usa en lugar de **Top** para las formas Microsoft Word y Microsoft Excel que están flotantes en una posición relativa a un punto de anclaje.
 
 Estos valores incluyen:
 
 
 
-| Value      | Descripción                                                                                                                                                                                       |
+| Valor      | Descripción                                                                                                                                                                                       |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Automático       | Posición predeterminada de un elemento en el flujo de la página.                                                                                                                                           |
-| units      | Predeterminada. Número con un designador de unidades absolutas (cm, mm, PDA, PT, PC o PX) o un designador de unidades relativas (EM o ex). Si no se especifica ninguna unidad, se supone que se trata de píxeles (PX). El valor predeterminado es 0. |
+| Auto       | Posición predeterminada de un elemento en el flujo de la página.                                                                                                                                           |
+| units      | Predeterminada. Número con un designador de unidades absolutas (cm, mm, in, pt, pc o px) o un designador de unidades relativas (em o ex). Si no se da ninguna unidad, se suponen píxeles (px). El valor predeterminado es 0. |
 | percentage | Valor expresado como porcentaje del alto del objeto primario.                                                                                                                                    |
 
 
 
- 
+ 
 
 *Atributo estándar de VML*
 
@@ -77,8 +77,8 @@ El margen superior se establece en 25 píxeles.
 
 
 
-[Ejemplo de atributo margin-top](/previous-versions/bb264087(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo margin-top](/previous-versions/bb264087(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

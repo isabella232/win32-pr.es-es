@@ -1,34 +1,34 @@
 ---
 title: Funciones en Active Directory Domain Services
-description: A continuación se enumeran las categorías de funciones de Active Directory Domain Services.
+description: Las siguientes son categorías de funciones en Active Directory Domain Services.
 ms.assetid: 66b6558d-141f-4751-9989-a26801fc6725
 ms.tgt_platform: multiple
 keywords:
-- Active Directory de funciones AD
-- Active Directory, referencia, funciones
-- AD de funciones
+- Active Directory Functions AD
+- Active Directory, Referencia, Funciones
+- functions AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 364621e04d4375c091fda4335d2a33c84a7aad8a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d147b1cbc10f778d029883440f54e85adf8992fad590581f5e59e5a89792fc2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189174"
 ---
 # <a name="functions-in-active-directory-domain-services"></a>Funciones en Active Directory Domain Services
 
-A continuación se enumeran las categorías de funciones de Active Directory Domain Services:
+Las siguientes son categorías de funciones en Active Directory Domain Services:
 
 -   [Mostrar funciones en Active Directory Domain Services](display-functions-in-active-directory-domain-services.md)
--   [Funciones de la página de propiedades de MMC en Active Directory Domain Services](mmc-property-page-functions-in-active-directory-domain-services.md)
+-   [Funciones de la página de propiedades mmc en Active Directory Domain Services](mmc-property-page-functions-in-active-directory-domain-services.md)
 -   [Funciones de administración de replicación y controlador de dominio](dc-and-replication-management-functions.md)
 -   [Funciones del servicio de directorio](directory-service-functions.md)
 -   [Funciones de copia de seguridad de directorios](directory-backup-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

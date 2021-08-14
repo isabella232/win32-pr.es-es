@@ -1,11 +1,11 @@
 ---
-title: TaskVariables. GetInput, método
-description: En el caso de scripting, obtiene las variables de entrada para una tarea.
+title: Método TaskVariables.GetInput
+description: Para el scripting, obtiene las variables de entrada para una tarea.
 ms.assetid: 6e4cb7a2-5bd9-4384-8b9e-931b70018544
 keywords:
 - Método GetInput Programador de tareas
-- Método GetInput Programador de tareas, objeto TaskVariables
-- Programador de tareas de objeto TaskVariables, método GetInput
+- Método GetInput Programador de tareas , objeto TaskVariables
+- Objeto TaskVariables Programador de tareas método , GetInput
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: edeeeccbeb7b2a0695440f0620f9dd9d2dc92627
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea02f1ef9ed5a9e5a6fb9ef9fe63ca3430334d2746d405d8f6af05a0d1b4090b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118354741"
 ---
-# <a name="taskvariablesgetinput-method"></a>TaskVariables. GetInput, método
+# <a name="taskvariablesgetinput-method"></a>Método TaskVariables.GetInput
 
-En el caso de scripting, obtiene las variables de entrada para una tarea. Este método no se implementa.
+Para el scripting, obtiene las variables de entrada para una tarea. Este método no se implementa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ TaskVariables.GetInput( _
 
 <dl> <dt>
 
-*entrada* \[ de enuncia\]
+*entrada* \[ out\]
 </dt> <dd>
 
 Variables de entrada para una tarea.
@@ -57,16 +57,16 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

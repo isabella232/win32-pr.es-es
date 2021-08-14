@@ -4,16 +4,16 @@ ms.assetid: 92e9bce1-d58e-40a4-9721-832d7c3bc2b2
 title: Responsabilidades de los proveedores de PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70cc04137eacdd2395205b96233db3c53964bc02
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 146082452c00c89c70768f641faaea97fee997fe01a20c0d99842bc5b961bfbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470220"
 ---
 # <a name="responsibilities-of-printcapabilities-providers"></a>Responsabilidades de los proveedores de PrintCapabilities
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Los proveedores de PrintCapabilities deben admitir un conjunto mínimo de funcionalidades, que están implícitas en la interfaz del proveedor PrintTicket/PrintCapabilities. Esta funcionalidad se incluye a continuación.
 

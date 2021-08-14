@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TS-ManagingLS
-description: Terminal Services administrar el servidor de licencias.
+description: Terminal Services administra el servidor de licencias.
 ms.assetid: 657f005e-0f89-4df4-b0f8-00752827bece
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-TS-ManagingLS
-- msTSManagingLS esquema de AD de atributos
+- Esquema de AD del atributo msTSManagingLS
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75944922fc648d124d9e10f8039a1fd94c28841f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8c79a91032e6f34f3cc69b9d7f172d9e28c0e757c20bda14f651b8810f71138
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424123"
 ---
 # <a name="ms-ts-managingls-attribute"></a>Atributo MS-TS-ManagingLS
 
-Terminal Services administrar el servidor de licencias.
+Terminal Services administra el servidor de licencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-ManagingLS                            |
-| Nombre para mostrar de LDAP | msTSManagingLS                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msTSManagingLS                              |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1995                     |
-| System-ID-GUID    | f3bcc547-85b0-432c-9ac0-304506bf2c83        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f3bcc547-85b0-432c-9ac0-304506bf2c83        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -50,15 +50,15 @@ Terminal Services administrar el servidor de licencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -71,15 +71,15 @@ Terminal Services administrar el servidor de licencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -92,15 +92,15 @@ Terminal Services administrar el servidor de licencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |

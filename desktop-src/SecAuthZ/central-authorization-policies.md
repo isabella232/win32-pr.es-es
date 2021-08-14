@@ -1,28 +1,28 @@
 ---
-description: Una directiva de autorización central (CAP) recopila las reglas de autorización específicas (CAPRs) en una única directiva.
+description: Una directiva de autorización central (CAP) recopila las reglas de autorización específicas (CAPR) en una sola directiva.
 ms.assetid: E3E43D9F-6826-468A-86E9-AC8F9A381FD4
 title: Directivas de autorización central
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b890236b0dae0f8f8d51254def4e1607cc35894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0617f6bddb606d3c3fb3e5ccb6692c79c62a60f90de591b6ec3e04988db46f63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783229"
 ---
 # <a name="central-authorization-policies"></a>Directivas de autorización central
 
-Una directiva de autorización central (CAP) recopila las reglas de autorización específicas (CAPRs) en una única directiva. Para permitir la combinación de las reglas de autorización específicas (CAPRs) en la Directiva de autorización holística de la organización, se puede hacer referencia a CAPRs y aplicarla a un conjunto de recursos. Para ello, se recopilan varios (por referencia) en un extremo. Una vez definido un extremo, los administradores de recursos pueden distribuirlo para aplicar la Directiva de autorización de la organización a los recursos.
+Una directiva de autorización central (CAP) recopila las reglas de autorización específicas (CAPR) en una sola directiva. Para permitir que las reglas de autorización específicas (CAPR) se combinen en la directiva de autorización holística de la organización, se puede hacer referencia a las CAPR juntas y aplicarse a un conjunto de recursos. Para ello, se recopilan varios (por referencia) en un CAP. Una vez definido un CAP, los administradores de recursos pueden distribuirlo para aplicar la directiva de autorización de organizaciones a los recursos.
 
-Un extremo tiene los siguientes atributos:
+Un CAP tiene los siguientes atributos:
 
--   Colección de CAPRs: una lista de referencias a objetos CAPR existentes
--   Un identificador (SID)
+-   Colección de CAPR: una lista de referencias a objetos CAPR existentes
+-   Un identificador (Sid)
 -   Descripción
 -   Nombre
 
-Un extremo se evalúa durante la evaluación del acceso para los archivos y carpetas en los que un administrador lo habilita. Durante una llamada a [**AccessCheck**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) , la comprobación de Cap se combina lógicamente con la comprobación de la ACL discrecional; Esto significa que, para obtener acceso a un archivo al que se aplica el límite, un usuario debe tener acceso ambos según el CAP (su CAPRs asociado) y la ACL discrecional del archivo.
+Durante la evaluación de acceso, se evalúa un CAP para los archivos y carpetas en los que un administrador lo habilita. Durante una [**llamada a AccessCheck,**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) la comprobación cap se combina lógicamente con la comprobación de ACL discrecional. Esto significa que, para obtener acceso a un archivo al que se aplica el CAP, un usuario debe tener acceso tanto según el CAP (sus CAP Asociados) como la ACL discrecional en el archivo.
 
 CAP de ejemplo:
 
@@ -34,7 +34,7 @@ Policies=HBI-CAPE;RETENTION-CAPR
 
 ## <a name="cap-definition"></a>Definición de CAP
 
-Se crea un extremo y se edita en Active Directory mediante una nueva experiencia de usuario en ADAC (o PowerShell) que permite al administrador crear un CAP y especificar un conjunto de CAPRs que componen el límite.
+Se crea y edita un CAP en Active Directory mediante una nueva experiencia de usuario en ADAC (o PowerShell) que permite al administrador crear un CAP y especificar un conjunto de CAPR que lo conste.
 
  
 

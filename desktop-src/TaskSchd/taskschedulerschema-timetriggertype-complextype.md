@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6f44f0959a9f67e4bfee0b0ef5dd7f095ffbadce
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: c03ede1b87f3969d12256df16c0b05c109391876a12c256190966c8befc7f2fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355753"
 ---
 # <a name="timetriggertype-complex-type"></a>tipo complejo timeTriggerType
 
@@ -45,7 +45,7 @@ Define el tipo base para el [**elemento TimeTrigger.**](taskschedulerschema-time
 
 
 
-| Elemento                                                                        | Tipo     | Description                                                                                                                                                                                                                                 |
+| Elemento                                                                        | Tipo     | Descripción                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**RandomDelay**](taskschedulerschema-randomdelay-timetriggertype-element.md) | duration | Especifica el tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. El formato de esta cadena es `P<days>DT<hours>H<minutes>M<seconds>S` (por ejemplo, P2DT5S es un retraso de 2 días y 5 segundos). <br/> |
 
@@ -53,7 +53,7 @@ Define el tipo base para el [**elemento TimeTrigger.**](taskschedulerschema-time
 
 ## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que este elemento no agrega ningún elemento secundario a los definidos por el tipo complejo [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
+Tenga en cuenta que este elemento no agrega ningún elemento secundario a los definidos por el [**tipo complejo triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Tenga en cuenta que este elemento no agrega ningún elemento secundario a los de
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ Tenga en cuenta que este elemento no agrega ningún elemento secundario a los de
 
 <dl> <dt>
 
-[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
+[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TVN_ENDLABELEDIT (commctrl. h)
-description: Notifica a la ventana primaria de un control de vista de árbol sobre el final de la edición de etiquetas para un elemento. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TVN_ENDLABELEDIT de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de árbol el final de la edición de etiquetas de un elemento. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 82eb9fcd-de10-4efb-8501-78c5af5e089e
 keywords:
-- TVN_ENDLABELEDIT controles de código de notificación de Windows
+- TVN_ENDLABELEDIT código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c30d494ad90b3d55f85b1ad154aed0f814a1eec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 38be7b9fde4b96f3510cd59683ee9df471cc4d77342fe375d9b1818b8ae7da46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408205"
 ---
-# <a name="tvn_endlabeledit-notification-code"></a>Código de notificación de ENDLABELEDIT de TVN \_
+# <a name="tvn_endlabeledit-notification-code"></a>Código de notificación \_ ENDLABELEDIT de TVN
 
-Notifica a la ventana primaria de un control de vista de árbol sobre el final de la edición de etiquetas para un elemento. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de vista de árbol el final de la edición de etiquetas de un elemento. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,29 +43,29 @@ TVN_ENDLABELEDIT
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) . El **miembro** de esta estructura es una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) cuyos miembros **hItem**, **lParam** y **miembros pszText** contienen información válida sobre el elemento que se editó. Si se canceló la edición de la etiqueta, el miembro **miembros pszText** de la estructura **TVITEM** es **null**. de lo contrario, **miembros pszText** es la dirección del texto editado.
+Puntero a una [**estructura NMTVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) El **miembro** de elemento de esta estructura es una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) cuyos **miembros hItem**, **lParam** y **pszText** contienen información válida sobre el elemento que se editó. Si se canceló la edición de etiquetas, el **miembro pszText** de la **estructura TVITEM** es **NULL**; De lo contrario, **pszText** es la dirección del texto editado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el miembro **miembros pszText** no es **null**, devuelva **true** para establecer la etiqueta del elemento en el texto editado. Devuelve **false** para rechazar el texto editado y volver a la etiqueta original.
+Si el **miembro pszText** no es **NULL,** devuelve **TRUE** para establecer la etiqueta del elemento en el texto editado. Devuelve **FALSE** para rechazar el texto editado y revertir a la etiqueta original.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el miembro **miembros pszText** es **null**, se omite el valor devuelto.
+Si el **miembro pszText** es **NULL,** se omite el valor devuelto.
 
-Si especificó el \_ valor de LPSTR TEXTCALLBACK para este elemento y el miembro **miembros pszText** no es **null**, el \_ controlador TVN ENDLABELEDIT debe copiar el texto de **miembros pszText** en el almacenamiento local.
+Si especificó el valor LPSTR TEXTCALLBACK para este elemento y el miembro pszText no es NULL, el controlador ENDLABELEDIT de TVN debe copiar el texto de \_   \_ **pszText** en el almacenamiento local.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ ENDLABELEDITW** (Unicode) y **TVN \_ ENDLABELEDITA** (ANSI)<br/>         |
 
 

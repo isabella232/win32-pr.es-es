@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCannotDeleteTempTableException'
-title: Constructor de EsentCannotDeleteTempTableException
+description: 'Más información sobre: Constructor EsentCannotDeleteTempTableException'
+title: Constructor EsentCannotDeleteTempTableException
 TOCTitle: 'EsentCannotDeleteTempTableException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCannotDeleteTempTableException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcannotdeletetemptableexception.esentcannotdeletetemptableexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad71d97bb6f35f268b070829f3c0c4decc7ef00d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 314e0fe1d2c7b048ba6b2a2daaedd923678bbd69bc49cbdb5cc7dc2e72121a61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118783417"
 ---
-# <a name="esentcannotdeletetemptableexception-constructor"></a>Constructor de EsentCannotDeleteTempTableException
+# <a name="esentcannotdeletetemptableexception-constructor"></a>Constructor EsentCannotDeleteTempTableException
 
 Inicializa una nueva instancia de la clase EsentCannotDeleteTempTableException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCannotDeleteTempTableException()
 public EsentCannotDeleteTempTableException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCannotDeleteTempTableException()
 
 [Miembros de EsentCannotDeleteTempTableException](./esentcannotdeletetemptableexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

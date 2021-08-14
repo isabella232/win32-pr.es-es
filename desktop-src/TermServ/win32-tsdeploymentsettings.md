@@ -1,11 +1,11 @@
 ---
-title: Win32_TSDeploymentSettings (clase)
-description: Define la configuración predeterminada que utiliza el Administrador de RemoteApp al crear archivos de Protocolo de escritorio remoto (RDP).
+title: Win32_TSDeploymentSettings clase
+description: Define la configuración predeterminada que el Administrador de RemoteApp usa al crear archivos Protocolo de escritorio remoto (RDP).
 ms.assetid: b3eeef86-e6cb-40ea-99f8-200c5993f31e
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSDeploymentSettings clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSDeploymentSettings de clase, se describe
+- Win32_TSDeploymentSettings clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -39,16 +39,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f254363968099ab73c5f3f14f1f15ab8554f62a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a3f5b5cde779cbd9b8120fa648138611236935080f3517a28a6f19dcee8864b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349313"
 ---
-# <a name="win32_tsdeploymentsettings-class"></a>\_Clase Win32 TSDeploymentSettings
+# <a name="win32_tsdeploymentsettings-class"></a>Clase TSDeploymentSettings de Win32 \_
 
-Define la configuración predeterminada que utiliza el Administrador de RemoteApp al crear archivos de Protocolo de escritorio remoto (RDP). Esta configuración no afecta a ninguna aplicación o escritorio publicado.
+Define la configuración predeterminada que el Administrador de RemoteApp usa al crear archivos Protocolo de escritorio remoto (RDP). Esta configuración no afecta a las aplicaciones o escritorios publicados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -99,7 +99,7 @@ La **clase \_ TSDeploymentSettings de Win32** tiene estas propiedades.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Indica si se permite el suavizado de fuentes.
@@ -120,7 +120,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Fecha en la que expira el certificado. Este valor se almacena como un formato [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) de 64 bits.
@@ -140,13 +140,13 @@ Fecha en la que expira el certificado. Este valor se almacena como un formato [*
 **CertificateHash**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Huella digital del certificado que se usa para firmar los archivos RDP.
+Huella digital del certificado que se usa para firmar archivos RDP.
 
 </dd> <dt>
 
@@ -156,10 +156,10 @@ Huella digital del certificado que se usa para firmar los archivos RDP.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica a quién emite el certificado.
+Especifica quién emite el certificado.
 
 </dd> <dt>
 
@@ -169,7 +169,7 @@ Especifica a quién emite el certificado.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Especifica a quién se emite el certificado.
@@ -182,7 +182,7 @@ Especifica a quién se emite el certificado.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Profundidad de bits de color de la pantalla. Los valores posibles son 4, 8, 15, 16, 24 y 32.
@@ -195,10 +195,10 @@ Profundidad de bits de color de la pantalla. Los valores posibles son 4, 8, 15, 
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El contenido del archivo RDP que se corresponde con la configuración personalizada de RDP en Administrador de RemoteApp.
+Contenido del archivo RDP que se corresponde con el protocolo RDP personalizado Configuración en Administrador de RemoteApp.
 
 </dd> <dt>
 
@@ -208,10 +208,10 @@ El contenido del archivo RDP que se corresponde con la configuración personaliz
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El contenido del archivo RDP que corresponde a la configuración de implementación de Administrador de RemoteApp. Si se establece este valor, la configuración de implementación de RDP sustituye a la configuración predeterminada de esta clase. Por ejemplo, si establece la propiedad **GatewayAuthMode** en esta clase y establece la propiedad **DeploymentRDPSettings** , se omitirá la propiedad **GatewayAuthMode** de esta clase y se usará el valor **GatewayAuthMode** de **DeploymentRDPSettings** .
+Contenido del archivo RDP que corresponde a la configuración de implementación de Administrador de RemoteApp. Si se establece este valor, la configuración de implementación de RDP sustituye a la configuración predeterminada de esta clase. Por ejemplo, si establece la propiedad **GatewayAuthMode** en esta clase y establece la propiedad **DeploymentRDPSettings,** se omitirá la propiedad **GatewayAuthMode** de esta clase y se usará el valor **GatewayAuthMode** de **DeploymentRDPSettings.**
 
 </dd> <dt>
 
@@ -226,7 +226,7 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -236,10 +236,10 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El nombre del servidor host de sesión de escritorio remoto o el nombre de dominio completo (FQDN) de la granja de servidores host de sesión de escritorio remoto.
+El nombre del servidor host de sesión de Escritorio remoto o el nombre de dominio completo (FQDN) de la granja de servidores host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
@@ -249,10 +249,10 @@ El nombre del servidor host de sesión de escritorio remoto o el nombre de domin
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Método de autenticación de puerta de enlace de escritorio remoto. Los valores siguientes son posibles.
+El método de autenticación de puerta de enlace de Escritorio remoto. Los valores siguientes son posibles.
 
 <dt>
 
@@ -273,7 +273,7 @@ Tarjeta inteligente
 4
 </dt> <dd>
 
-Permitir al usuario seleccionar durante la conexión.
+Permitir que el usuario seleccione durante la conexión.
 
 </dd> </dl>
 
@@ -285,10 +285,10 @@ Permitir al usuario seleccionar durante la conexión.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Nombre del servidor de puerta de enlace de escritorio remoto que se va a usar.
+Nombre del servidor de puerta de enlace de Escritorio remoto que se usará.
 
 </dd> <dt>
 
@@ -298,38 +298,38 @@ Nombre del servidor de puerta de enlace de escritorio remoto que se va a usar.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si se debe usar un servidor de puerta de enlace de escritorio remoto para conectarse al servidor host de sesión de escritorio remoto de destino a través de un firewall. Los valores siguientes son posibles.
+Indica si se debe usar un servidor de puerta de enlace de Escritorio remoto para conectarse al servidor host de sesión de Escritorio remoto de destino a través de un firewall. Los valores siguientes son posibles.
 
 <dt>
 
 0
 </dt> <dd>
 
-No use un servidor de puerta de enlace de escritorio remoto.
+No use un servidor de puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Usar un servidor de puerta de enlace de escritorio remoto. Omitir el servidor de puerta de enlace de escritorio remoto para direcciones locales.
+Use un servidor de puerta de enlace de Escritorio remoto. Omita el servidor de puerta de enlace de Escritorio remoto para las direcciones locales.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Usar un servidor de puerta de enlace de escritorio remoto.
+Use un servidor de puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-Detectar automáticamente la configuración del servidor de puerta de enlace de escritorio remoto.
+Detectar automáticamente la configuración del servidor de puerta de enlace de Escritorio remoto.
 
 </dd> </dl>
 
@@ -341,10 +341,10 @@ Detectar automáticamente la configuración del servidor de puerta de enlace de 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Siempre que sea posible, use las mismas credenciales de usuario para el servidor de puerta de enlace de escritorio remoto y el servidor host de sesión de escritorio remoto.
+Cuando sea posible, use las mismas credenciales de usuario para el servidor de puerta de enlace de Escritorio remoto y el servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
@@ -354,28 +354,28 @@ Siempre que sea posible, use las mismas credenciales de usuario para el servidor
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si se debe utilizar un certificado para firmar los archivos RDP.
+Indica si se debe usar un certificado para firmar los archivos RDP.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -390,7 +390,7 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -400,10 +400,10 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Puerto RDP que se va a usar.
+Puerto RDP que se usará.
 
 </dd> <dt>
 
@@ -413,10 +413,10 @@ Puerto RDP que se va a usar.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica las opciones de redireccionamiento de dispositivos y recursos para las conexiones de RemoteApp. Las marcas de **RedirectionOptions** se pueden combinar. Los valores siguientes son posibles.
+Especifica las opciones de redireccionamiento de dispositivos y recursos para las conexiones de RemoteApp. Se pueden combinar **marcas para RedirectionOptions.** Los siguientes valores son posibles.
 
 <dt>
 
@@ -444,14 +444,14 @@ Redirigir impresoras.
 4
 </dt> <dd>
 
-Redirigir el portapapeles.
+Redirigir el Portapapeles.
 
 </dd> <dt>
 
 8
 </dt> <dd>
 
-Redireccionamiento de dispositivos Plug and Play admitidos.
+Redirección compatible con Plug and Play dispositivos.
 
 </dd> <dt>
 
@@ -472,7 +472,7 @@ Redirigir audio.
 64
 </dt> <dd>
 
-Redirija los puertos serie.
+Redirigir puertos serie.
 
 </dd> </dl>
 
@@ -484,10 +484,10 @@ Redirija los puertos serie.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si se requiere la autenticación del servidor.
+Indica si se debe requerir la autenticación del servidor.
 
 </dd> <dt>
 
@@ -503,15 +503,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -539,21 +539,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -573,23 +573,23 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si están habilitados varios monitores para el escritorio.
+Indica si hay varios monitores habilitados para el escritorio.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe ser miembro del grupo administradores para establecer las propiedades utilizando esta clase.
+Debe ser miembro del grupo Administradores para establecer propiedades mediante esta clase.
 
-Si **RequireServerAuth** está establecido en **true**, tenga en cuenta lo siguiente:
+Si **RequireServerAuth está** establecido en **TRUE,** tenga en cuenta lo siguiente:
 
--   Si el programa RemoteApp es para uso de la intranet y todos los equipos cliente ejecutan Windows Server 2008 o Windows Vista, no es necesario configurar el servidor host de sesión de escritorio remoto para que use un certificado SSL. En este caso, se usa la Autenticación a nivel de red.
--   Debe especificar el FQDN del servidor o la granja de servidores para el valor de la propiedad **FarmName** .
+-   Si el programa RemoteApp es para uso de intranet y todos los equipos cliente ejecutan Windows Server 2008 o Windows Vista, no es necesario configurar el servidor host de sesión de Escritorio remoto para que use un certificado SSL. En este caso, se usa la Autenticación a nivel de red.
+-   Debe especificar el FQDN del servidor o la granja de servidores para el valor de la **propiedad FarmName.**
 
-Para conectarse al espacio de nombres "CIMV2 \\ TerminalServices", el nivel de autenticación debe incluir privacidad de paquetes. En el caso de las llamadas de C/C++, se trata de un nivel de autenticación de **\_ \_ \_ \_ \_ privacidad de nivel** de autenticación de RPC C, que se puede establecer mediante la función com [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) . En el caso de las llamadas de Visual Basic y scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio de nombres "CIMV2 \\ TerminalServices", el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -600,18 +600,18 @@ Set objServices = GetObject( _
 
 
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Se instalan en el equipo cuando se agrega el rol asociado. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Se instalan en el equipo al agregar el rol asociado. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>Tsallow. mof</dt> </dl>  |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>Tsallow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Obtiene el período del conjunto de animaciones.
+description: Obtiene el período del conjunto de animación.
 ms.assetid: 0bb19ec1-c918-44b6-83b0-4fdbb4e1a485
-title: 'ID3DXAnimationSet:: GetPeriod (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationSet::GetPeriod (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f6eafbfe802afc8ff3084c49acf31addca66cef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d8e984d1593fbbd79561bbb15fb27b62a9961c1830c42465ed529f08c374e180
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118522334"
 ---
-# <a name="id3dxanimationsetgetperiod-method"></a>ID3DXAnimationSet:: GetPeriod (método)
+# <a name="id3dxanimationsetgetperiod-method"></a>Método ID3DXAnimationSet::GetPeriod
 
-Obtiene el período del conjunto de animaciones.
+Obtiene el período del conjunto de animación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Período del conjunto de animaciones.
+Punto del conjunto de animación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El período es el intervalo de tiempo en el que los fotogramas clave de la animación son válidos. En el caso de las animaciones de bucle, este es el período del bucle. La aplicación determina las unidades de tiempo en las que se especifican los fotogramas clave (por ejemplo, segundos).
+El período es el intervalo de tiempo durante el que los fotogramas clave de animación son válidos. Para las animaciones de bucle, este es el período del bucle. La aplicación determina las unidades de tiempo en las que se especifican los fotogramas clave (por ejemplo, segundos).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,12 +54,12 @@ El período es el intervalo de tiempo en el que los fotogramas clave de la anima
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

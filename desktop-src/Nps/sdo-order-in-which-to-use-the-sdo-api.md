@@ -1,32 +1,32 @@
 ---
-title: Orden en el que se va a usar la API SDO
-description: En las secciones siguientes se describe el orden en el que se llama a las diversas interfaces de SDO.
+title: Orden en el que se va a usar la API de SDO
+description: En las secciones siguientes se describe el orden en el que se debe llamar a las distintas interfaces SDO.
 ms.assetid: 77ec6ed1-fc29-4962-8939-3ab0160df1f8
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 224c24c890a8bbebd019cce9fd83d34a1cbe94ea
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f4ac505b6738946d3d140ecf9ec9018d9162e861372cef3ce90ef8c81e7f2ef9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118361591"
 ---
-# <a name="order-in-which-to-use-the-sdo-api"></a>Orden en el que se va a usar la API SDO
+# <a name="order-in-which-to-use-the-sdo-api"></a>Orden en el que se va a usar la API de SDO
 
-En las secciones siguientes se describe el orden en el que se llama a las diversas interfaces de SDO.
+En las secciones siguientes se describe el orden en el que se debe llamar a las distintas interfaces SDO.
 
--   [Obtener un SDO de máquinas](/windows/desktop/Nps/sdo-obtaining-a-machine-sdo)
--   [Asociar al equipo SDO](/windows/desktop/Nps/sdo-attaching-to-the-sdo-computer)
--   [Obtención del servicio y el usuario SDOs](/windows/desktop/Nps/sdo-obtaining-service-and-user-sdos)
+-   [Obtención de un SDO de máquina](/windows/desktop/Nps/sdo-obtaining-a-machine-sdo)
+-   [Adjuntar al equipo SDO](/windows/desktop/Nps/sdo-attaching-to-the-sdo-computer)
+-   [Obtención de SLO de servicio y usuario](/windows/desktop/Nps/sdo-obtaining-service-and-user-sdos)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Elementos de la API SDO](/windows/desktop/Nps/sdo-elements-of-the-sdo-api)
+[Elementos de la API de SDO](/windows/desktop/Nps/sdo-elements-of-the-sdo-api)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

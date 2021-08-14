@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_GET_MCI_DEVICE (VFW. h)
-description: El \_ mensaje Cap \_ de WM Get \_ MCI \_ Device recupera el nombre de un dispositivo MCI previamente establecido con el \_ \_ mensaje de \_ dispositivo MCI del conjunto de Cap de WM \_ . Puede enviar este mensaje explícitamente o mediante la macro capGetMCIDeviceName.
+title: WM_CAP_GET_MCI_DEVICE mensaje (Vfw.h)
+description: El mensaje GET MCI DEVICE de WM CAP recupera el nombre de un dispositivo MCI previamente establecido con el mensaje \_ \_ WM CAP SET \_ \_ \_ \_ \_ MCI \_ DEVICE. Puede enviar este mensaje explícitamente o mediante la macro capGetMCIDeviceName.
 ms.assetid: c5d7d955-ab6a-4959-b79e-9ff35a282ba2
 keywords:
-- Mensaje de WM_CAP_GET_MCI_DEVICE de Windows multimedia
+- WM_CAP_GET_MCI_DEVICE mensaje Windows multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0960ff9aa1366802611f444383212c4bcc45bcb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9471177693bfbd5646d93e8487395cdf330b8281a1f43fa00d79dc690e6d718
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104488963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800664"
 ---
-# <a name="wm_cap_get_mci_device-message"></a>\_Mensaje de \_ \_ dispositivo MCI de obtención de Cap de WM \_
+# <a name="wm_cap_get_mci_device-message"></a>Mensaje \_ GET \_ \_ MCI DEVICE \_ de WM CAP
 
-El **mensaje \_ Cap de WM \_ Get \_ MCI \_ Device** recupera el nombre de un dispositivo MCI previamente establecido con el mensaje de [**\_ \_ \_ \_ dispositivo MCI del conjunto de Cap de WM**](wm-cap-set-mci-device.md) . Puede enviar este mensaje explícitamente o mediante la macro [**capGetMCIDeviceName**](/windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename) .
+El **mensaje GET \_ \_ \_ MCI DEVICE \_ de WM CAP** recupera el nombre de un dispositivo MCI previamente establecido con el mensaje WM CAP SET [**\_ \_ \_ MCI \_ DEVICE.**](wm-cap-set-mci-device.md) Puede enviar este mensaje explícitamente o mediante la macro [**capGetMCIDeviceName.**](/windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename)
 
 
 ```C++
@@ -41,34 +41,34 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 <span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*wSize*
 </dt> <dd>
 
-Longitud, en bytes, del búfer al que se hace referencia en **szName**.
+Longitud, en bytes, del búfer al que hace referencia **szName.**
 
 </dd> <dt>
 
 <span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
 </dt> <dd>
 
-Puntero a una cadena terminada en null que contiene el nombre del dispositivo MCI.
+Puntero a una cadena terminada en NULL que contiene el nombre del dispositivo MCI.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
