@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. SimpleRating.
+description: Directiva de metadatos de fotos para la propiedad System.SimpleRating.
 ms.assetid: d932a251-f238-4582-a1c4-cf4855f26fb3
-title: Directiva de metadatos de la foto System. SimpleRating
+title: System.SimpleRating Photo Metadata Policy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63b91e41a0684c8e395992683e0a1d4fe43306a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38c65c9e49d7e905a4cefe890b6c5aab257250baa41171470666ba38b3fb5c96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709969"
 ---
-# <a name="systemsimplerating-photo-metadata-policy"></a>Directiva de metadatos de la foto System. SimpleRating
+# <a name="systemsimplerating-photo-metadata-policy"></a>System.SimpleRating Photo Metadata Policy
 
-La Directiva de metadatos de la fotografía para la propiedad [System. SimpleRating](../properties/props-system-simplerating.md) .
+Directiva de metadatos de fotos para [la propiedad System.SimpleRating.](../properties/props-system-simplerating.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ SimpleRating
 
@@ -27,17 +27,17 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI4
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
 Puede ser VT \_ UI1, VT \_ UI2 o VT \_ UI4. El valor entero puede oscilar entre 0 y 5.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,23 +45,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 18246} | ushort      |
-| 2     | /XMP/XMP: clasificación          | unicode     |
+| 1     | /app1/ifd/{ushort=18246} | ushort      |
+| 2     | /xmp/xmp:Rating          | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 18246} | ushort      |
-| 2     | /XMP/XMP: clasificación          | unicode     |
+| 1     | /app1/ifd/{ushort=18246} | ushort      |
+| 2     | /xmp/xmp:Rating          | unicode     |
 
 
 
@@ -71,10 +71,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Path                     |
 |-------|--------------------------|
-| 1     | /app1/IFD/{ushort = 18246} |
-| 2     | /XMP/XMP: clasificación          |
+| 1     | /app1/ifd/{ushort=18246} |
+| 2     | /xmp/xmp:rating          |
 
 
 
@@ -86,23 +86,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                | Formato de disco |
+| Pedido | Path                | Formato de disco |
 |-------|---------------------|-------------|
-| 1     | /IFD/{ushort = 18246} | ushort      |
-| 2     | /IFD/XMP/XMP: clasificación | unicode     |
+| 1     | /ifd/{ushort=18246} | ushort      |
+| 2     | /ifd/xmp/xmp:Rating | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                | Formato de disco |
+| Pedido | Path                | Formato de disco |
 |-------|---------------------|-------------|
-| 1     | /IFD/{ushort = 18246} | ushort      |
-| 2     | /IFD/XMP/XMP: clasificación | unicode     |
+| 1     | /ifd/{ushort=18246} | ushort      |
+| 2     | /ifd/xmp/xmp:Rating | unicode     |
 
 
 
@@ -112,10 +112,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                |
+| Pedido | Path                |
 |-------|---------------------|
-| 1     | /IFD/{ushort = 18246} |
-| 2     | /IFD/XMP/XMP: clasificación |
+| 1     | /ifd/{ushort=18246} |
+| 2     | /ifd/xmp/xmp:rating |
 
 
 
@@ -127,7 +127,7 @@ Se reconcilian los valores de los distintos esquemas.
 
 <dl> <dt>
 
-[System. SimpleRating](../properties/props-system-simplerating.md)
+[System.SimpleRating](../properties/props-system-simplerating.md)
 </dt> </dl>
 
  

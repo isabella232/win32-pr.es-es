@@ -1,41 +1,41 @@
 ---
-title: Secuencias de archivo (Windows Media Format 11 SDK)
-description: Secuencias de archivo
+title: File Secuencias (Windows Media Format 11 SDK)
+description: Archivo Secuencias
 ms.assetid: 6a4ad6ef-dc53-4d31-8de5-ce35c343244b
 keywords:
-- SDK de Windows Media Format, secuencias de archivo
-- Advanced Systems Format (ASF), secuencias de archivo
-- ASF (formato de sistemas avanzados), secuencias de archivo
-- Windows Media Format SDK, secuencias
-- Advanced Systems Format (ASF), streams
+- Windows SDK de formato multimedia, secuencias de archivo
+- Formato de sistemas avanzados (ASF), secuencias de archivos
+- ASF (formato de sistemas avanzados), secuencias de archivos
+- Windows SDK de formato multimedia, secuencias
+- Formato de sistemas avanzados (ASF), secuencias
 - ASF (formato de sistemas avanzados), secuencias
-- secuencias de archivo
+- secuencias de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2a850c938d9582bd128980ef59329a5d5aa6a08
-ms.sourcegitcommit: 40a1246849dba8ececf54c716b2794b99c96ad50
+ms.openlocfilehash: e7bc05663ab9f2d81ac94bd1483ac5bc22c903333a8e477cc94e88141ff671ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "103784781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118703913"
 ---
-# <a name="file-streams"></a>Secuencias de archivo
+# <a name="file-streams"></a>Archivo Secuencias
 
-Una secuencia de archivos contiene uno o varios archivos de datos. Al transferir información de archivo como una secuencia, debe adjuntar el nombre de archivo a cada ejemplo de la secuencia. Para obtener información acerca de cómo adjuntar información relacionada a los ejemplos, consulte [extensiones de unidad de datos](data-unit-extensions.md).
+Una secuencia de archivos contiene uno o varios archivos de datos. Al transferir información de archivo como una secuencia, debe adjuntar el nombre de archivo a cada ejemplo de la secuencia. Para obtener información sobre cómo adjuntar información relacionada a ejemplos, vea [Extensiones de unidad de datos](data-unit-extensions.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Flujos arbitrarios**](arbitrary-streams.md)
+[**Errores arbitrarios Secuencias**](arbitrary-streams.md)
 </dt> <dt>
 
-[**Configuración de secuencias de transferencia de archivos**](configuring-file-transfer-streams.md)
+[**Configuración de la transferencia de archivos Secuencias**](configuring-file-transfer-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

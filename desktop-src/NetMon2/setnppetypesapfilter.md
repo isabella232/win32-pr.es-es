@@ -1,7 +1,7 @@
 ---
-description: Establece el filtro del BLOB ETYPE/SAP.
+description: Establece el filtro BLOB Etype/Sap.
 ms.assetid: cd659c93-3415-4737-b848-936e80318544
-title: Función SetNPPEtypeSapFilter (Netmon. h)
+title: Función SetNPPEtypeSapFilter (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 14657536e09b65912afa1715c296663d8d1916b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30b2f6ffbefad955034f520162b6fdc44d80198d926f35443ce21fefd80ef5c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363831"
 ---
-# <a name="setnppetypesapfilter-function"></a>SetNPPEtypeSapFilter función)
+# <a name="setnppetypesapfilter-function"></a>Función SetNPPEtypeSapFilter
 
-La función **SetNPPEtypeSapFilter** establece el filtro del BLOB ETYPE/SAP.
+La **función SetNPPEtypeSapFilter** establece el filtro BLOB Etype/Sap.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,76 +45,76 @@ DWORD SetNPPEtypeSapFilter(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador del BLOB.
 
 </dd> <dt>
 
-*nSaps* \[ de\]
+*nSaps* \[ En\]
 </dt> <dd>
 
 Número de SAP.
 
 </dd> <dt>
 
-*nEtypes* \[ de\]
+*nEtypes* \[ En\]
 </dt> <dd>
 
-El número de ETYPE en la tabla ETYPE que se va a establecer.
+Número de Etypes de la tabla Etype que se va a establecer.
 
 </dd> <dt>
 
-*lpSapTable* \[ de\]
+*lpSapTable* \[ En\]
 </dt> <dd>
 
-Un puntero a la tabla de SAP que se establece.
+Puntero a la tabla de SAP que se establece.
 
 </dd> <dt>
 
-*lpEtypeTable* \[ de\]
+*lpEtypeTable* \[ En\]
 </dt> <dd>
 
-Puntero a la tabla ETYPE que se establece.
+Puntero a la tabla Etype que se establece.
 
 </dd> <dt>
 
-*FilterFlags* \[ de\]
+*FilterFlags* \[ En\]
 </dt> <dd>
 
 Marcas de filtro que se establecen.
 
 </dd> <dt>
 
-*hErrorBlob* \[ enuncia\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que especifica dónde se produjo el error (si existe) en el BLOB original.
+Identificador de un BLOB de error que especifica dónde se produjo el error (si lo hubiera) en el BLOB original.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

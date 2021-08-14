@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes de marcador de bits LINEADDRESSMODE describen varias maneras de identificar una dirección en un dispositivo de línea.
+description: Las constantes de marca de bits LINEADDRESSMODE \_ describen varias maneras de identificar una dirección en un dispositivo de línea.
 ms.assetid: f0f132a0-2e8e-478f-909b-c100aa360daa
-title: Constantes de LINEADDRESSMODE_ (TAPI. h)
+title: LINEADDRESSMODE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e5e926772c82a36865c7f3b95c1ca1321db5682
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4863b79c4527395f6ecb2d28c4d9ef718ff5a7fd99681185ba892bac2b4639ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761867"
 ---
-# <a name="lineaddressmode_-constants"></a>Constantes de LINEADDRESSMODE \_
+# <a name="lineaddressmode_-constants"></a>Constantes \_ LINEADDRESSMODE
 
-Las constantes de marcador de bits **LINEADDRESSMODE \_** describen varias maneras de identificar una dirección en un dispositivo de línea.
+Las constantes de marca de bits **LINEADDRESSMODE \_** describen varias maneras de identificar una dirección en un dispositivo de línea.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las constantes de marcador de bits **LINEADDRESSMODE \_** describen varias maner
 
 
 
-La dirección se especifica con un pequeño entero en el intervalo de 0 a *dwNumAddresses* menos uno, donde *dwNumAddresses* es el valor de las capacidades del dispositivo de la línea.
+La dirección se especifica con un pequeño entero en el intervalo de 0 a *dwNumAddresses* menos uno, donde *dwNumAddresses* es el valor de las funcionalidades del dispositivo de la línea.
 
 
 </dt> </dl> </dd> <dt>
@@ -37,20 +37,20 @@ La dirección se especifica a través de su número de teléfono.
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los 16 bits de orden superior se pueden asignar para extensiones específicas del dispositivo. Los 16 bits de orden inferior están reservados.
+Los 16 bits de orden alto se pueden asignar para extensiones específicas del dispositivo. Los 16 bits de orden inferior están reservados.
 
-Esta constante se utiliza para seleccionar una dirección en una línea en la que se origina una llamada. El modelo habitual seleccionaría la dirección por medio de su identificador de dirección. Los identificadores de dirección son el mecanismo que se usa para identificar direcciones en TAPI. Sin embargo, en algunos entornos, al efectuar una llamada, a menudo es más práctico identificar la dirección de origen de una llamada por el número de teléfono en lugar de por el identificador de dirección. Un ejemplo se encuentra en el posible modelado de un gran número de estaciones (de terceros) en el conmutador por medio de un dispositivo de línea con muchas direcciones. La línea representa el conjunto de todas las estaciones y cada estación se asigna a una dirección con su propio número de teléfono principal e identificador de dirección.
+Esta constante se usa para seleccionar una dirección en una línea en la que se va a originar una llamada. El modelo habitual seleccionaría la dirección por medio de su identificador de dirección. Los identificadores de dirección son el mecanismo que se usa para identificar direcciones a lo largo de TAPI. Sin embargo, en algunos entornos, al realizar una llamada, suele ser más práctico identificar la dirección de origen de una llamada por número de teléfono en lugar de por identificador de dirección. Un ejemplo es el posible modelado de un gran número de estaciones (de terceros) en el conmutador mediante un dispositivo de línea con muchas direcciones. La línea representa el conjunto de todas las estaciones y cada estación se asigna a una dirección con su propio número de teléfono principal y su identificador de dirección.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

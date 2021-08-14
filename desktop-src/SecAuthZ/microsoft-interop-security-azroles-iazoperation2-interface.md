@@ -1,7 +1,7 @@
 ---
 description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad de IAzOperation2.
 ms.assetid: 4cd47dfe-5760-423a-ab6b-141be0a37f62
-title: Interfaz Microsoft. Interop. Security. AzRoles. IAzOperation2
+title: Interfaz Microsoft.Interop.Security.AzRoles.IAzOperation2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -49,36 +49,36 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 821560468ca94a8291018d755837e3b2fc747919
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83133cf852b88efaada80e097215e75b7633df469bdf1fb9b2a6a94238b6bf82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117781036"
 ---
-# <a name="microsoftinteropsecurityazrolesiazoperation2-interface"></a>Interfaz Microsoft. Interop. Security. AzRoles. IAzOperation2
+# <a name="microsoftinteropsecurityazrolesiazoperation2-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzOperation2
 
-Los métodos y propiedades de contenedor de interoperabilidad **Microsoft. Interop. Security. Azroles. IAzOperation2** se documentan en la versión com del método o propiedad. Un vínculo a la documentación COM de correlación sigue cada nombre de miembro.
+Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzOperation2** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzOperation2** tiene estos tipos de miembros:
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzOperation2** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzOperation2** tiene estos métodos.
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzOperation2** tiene estos métodos.
 
 
 
 | Método                                                               | Descripción                                                                               |
 |:---------------------------------------------------------------------|:------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzOperation2. GetProperty**     | [**IAzOperation:: GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-getproperty)<br/>                  |
-| **Microsoft. Interop. Security. Azroles. IAzOperation2. RoleAssignments** | [**IAzOperation2:: RoleAssignments**](/windows/desktop/api/Azroles/nf-azroles-iazoperation2-roleassignments)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzOperation2. SetProperty**     | [**IAzOperation:: SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-setproperty)<br/>                  |
-| **Microsoft. Interop. Security. Azroles. IAzOperation2. submit**          | [**IAzOperation:: submit**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-submit)<br/>                            |
+| **Microsoft.Interop.Security.Azroles.IAzOperation2.GetProperty**     | [**IAzOperation::GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-getproperty)<br/>                  |
+| **Microsoft.Interop.Security.Azroles.IAzOperation2.RoleAssignments** | [**IAzOperation2::RoleAssignments**](/windows/desktop/api/Azroles/nf-azroles-iazoperation2-roleassignments)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzOperation2.SetProperty**     | [**IAzOperation::SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-setproperty)<br/>                  |
+| **Microsoft.Interop.Security.Azroles.IAzOperation2.Submit**          | [**IAzOperation::Submit**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-submit)<br/>                            |
 
 
 
@@ -86,17 +86,17 @@ La interfaz **Microsoft. Interop. Security. AzRoles. IAzOperation2** tiene estos
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzOperation2** tiene estas propiedades.
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzOperation2** tiene estas propiedades.
 
 
 
 | Propiedad                                                                        | Tipo de acceso           | Descripción                                                                                 |
 |:--------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzOperation2. ApplicationData**<br/> | Lectura/escritura<br/> | [**Propiedad ApplicationData de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_applicationdata)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzOperation2. Description**<br/>     | Lectura/escritura<br/> | [**Propiedad Description de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_description)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzOperation2.ApplicationData**<br/> | Lectura/escritura<br/> | [**Propiedad ApplicationData de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_applicationdata)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzOperation2.Description**<br/>     | Lectura/escritura<br/> | [**Propiedad Description de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_description)<br/>         |
 | **Microsoft.Interop.Security.Azroles.IAzOperation2.Name**<br/>            | Lectura/escritura<br/> | [**Propiedad Name de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_name)<br/>                       |
-| **Microsoft. Interop. Security. Azroles. IAzOperation2. OperationID**<br/>     | Lectura/escritura<br/> | [**Propiedad OperationID de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_operationid)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzOperation2. grabable**<br/>        | Solo lectura<br/>  | [**Propiedad de escritura de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_writable)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzOperation2.OperationID**<br/>     | Lectura/escritura<br/> | [**Propiedad OperationID de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_operationid)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzOperation2.Writable**<br/>        | Solo lectura<br/>  | [**Propiedad grabable de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_writable)<br/>               |
 
 
 
@@ -106,7 +106,7 @@ La interfaz **Microsoft. Interop. Security. AzRoles. IAzOperation2** tiene estas
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

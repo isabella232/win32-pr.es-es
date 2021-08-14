@@ -1,7 +1,7 @@
 ---
 description: Define un tipo de cadena para el perfil de banda ancha móvil.
 ms.assetid: a5c14c39-2731-44f0-9fd2-e78d900b66f0
-title: tipo simple de nameType (banda ancha móvil)
+title: tipo simple nameType (banda ancha móvil)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name:
 - nameType
 api_type:
 - Schema
-ms.openlocfilehash: d8c6032e17eaf2d067dc23030a7a6279bd41eafa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b07bfb62e23b0c82ef69bc924147675caad10d61258a5c49edc906c4b6bf2a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117881409"
 ---
-# <a name="nametype-simple-type-mobile-broadband"></a>tipo simple de nameType (banda ancha móvil)
+# <a name="nametype-simple-type-mobile-broadband"></a>tipo simple nameType (banda ancha móvil)
 
-El tipo simple **nameType** define un tipo de cadena para el perfil de banda ancha móvil. Esta cadena tiene al menos un carácter de longitud y una longitud máxima de 255 caracteres.
+El **tipo simple nameType** define un tipo de cadena para el perfil de banda ancha móvil. Esta cadena tiene al menos un carácter de longitud y un máximo de 255 caracteres.
 
 ``` syntax
 <xs:simpleType name="nameType">
@@ -41,9 +41,9 @@ El tipo simple **nameType** define un tipo de cadena para el perfil de banda anc
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

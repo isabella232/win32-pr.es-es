@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes de marcador de bits LINEDEVCAPFLAGS son una colección de valores booleanos que describen varias funcionalidades de dispositivo de línea.
+description: Las constantes de marca de bits LINEDEVCAPFLAGS son una colección de valores booleanos que \_ describen varias funcionalidades del dispositivo de línea.
 ms.assetid: 0c537488-9fb9-4961-bd0a-1937aefc0b08
-title: Constantes de LINEDEVCAPFLAGS_ (TAPI. h)
+title: LINEDEVCAPFLAGS_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffefca75c00fdf09b1886affbff7f0ea90bab6c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2d54acf1855bc09d9b2160e1ae681b25ff1de8ce310049fd4aabf4af6f8f2f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761722"
 ---
-# <a name="linedevcapflags_-constants"></a>Constantes de LINEDEVCAPFLAGS \_
+# <a name="linedevcapflags_-constants"></a>Constantes LINEDEVCAPFLAGS \_
 
-Las constantes de marcador de bits **LINEDEVCAPFLAGS \_** son una colección de valores booleanos que describen varias funcionalidades de dispositivo de línea.
+Las constantes de marca de bits **LINEDEVCAPFLAGS \_** son una colección de valores booleanos que describen varias funcionalidades del dispositivo de línea.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las constantes de marcador de bits **LINEDEVCAPFLAGS \_** son una colección de 
 
 
 
-Indica si se admiten los concentradores de llamadas en esta línea. Esta marca solo se expone a las aplicaciones que negocian una versión de TAPI de 3,0 o superior.
+Indica si se admiten centros de llamadas en esta línea. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 3.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ Indica si se admiten los concentradores de llamadas en esta línea. Esta marca s
 
 
 
-Indica si se admite el seguimiento del centro de llamadas en esta línea. Esta marca solo se expone a las aplicaciones que negocian una versión de TAPI de 3,0 o superior.
+Indica si se admite el seguimiento del centro de llamadas en esta línea. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 3.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,9 +42,9 @@ Indica si se admite el seguimiento del centro de llamadas en esta línea. Esta m
 
 
 
-Especifica lo que ocurre cuando se cierra una línea abierta mientras la aplicación tiene llamadas activas en la línea. Si **es true**, el proveedor de servicios quita (borra) todas las llamadas activas en la línea cuando la última aplicación que ha abierto la línea la cierra con [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose). Si **es false**, el proveedor de servicios no quita las llamadas activas en estos casos. En su lugar, las llamadas permanecen activas y bajo el control de dispositivos externos. Normalmente, un proveedor de servicios establece este bit en **false** si hay algún otro dispositivo que pueda mantener activa la llamada (por ejemplo, si una línea analógica tiene el equipo y el teléfono conectados ambos) se conectan directamente a ellos en una configuración de línea de entidad, el teléfono OffHook mantendrá la llamada activa automáticamente incluso después de que el equipo se apague.
+Especifica lo que sucede cuando se cierra una línea abierta mientras la aplicación tiene llamadas activas en la línea. Si **es TRUE,** el proveedor de servicios quita (borra) todas las llamadas activas en la línea cuando la última aplicación que ha abierto la línea la cierra [**con lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose). Si **es FALSE,** el proveedor de servicios no quitará las llamadas activas en estos casos. En su lugar, las llamadas permanecen activas y bajo control de dispositivos externos. Normalmente, un proveedor de servicios establece este bit en **FALSE** si hay algún otro dispositivo que pueda mantener activa la llamada; por ejemplo, si una línea análoga tiene el equipo y el teléfono establecidos ambos se conectan directamente a ellos en una configuración de línea de entidad, el teléfono dehook mantendrá activa automáticamente la llamada incluso después de que el equipo se apague.
 
-Las aplicaciones deben comprobar esta marca para determinar si se debe advertir al usuario (con un cuadro de diálogo de aceptar o cancelar) que las llamadas activas se perderán.
+Las aplicaciones deben comprobar esta marca para determinar si se debe advertir al usuario (con un cuadro de diálogo Aceptar/Cancelar) que se perderán las llamadas activas.
 
 
 </dt> </dl> </dd> <dt>
@@ -54,7 +54,7 @@ Las aplicaciones deben comprobar esta marca para determinar si se debe advertir 
 
 
 
-Especifica si se pueden realizar conferencias en las llamadas en diferentes direcciones de esta línea.
+Especifica si se pueden conferenciar llamadas en direcciones diferentes de esta línea.
 
 
 </dt> </dl> </dd> <dt>
@@ -76,12 +76,12 @@ Especifica si se pueden realizar conferencias en las llamadas en diferentes dire
 
 
 
-Estas marcas indican si se admite el modificador de cadena de marcado "$", "@" o "W" para un dispositivo de línea determinado. Es **true** si se admite el modificador; en caso contrario, **false**. El (solicitar al usuario que continúe el marcado) nunca es compatible con un dispositivo de línea. Estas marcas permiten a una aplicación determinar por adelantado qué modificadores darían lugar a la generación de un LINEERR. La aplicación tiene la opción de buscar previamente cadenas marcables para los caracteres no admitidos o de pasar la cadena "sin formato" de [**lineTranslateAddress**](/windows/desktop/api/Tapi/nf-tapi-linetranslateaddress) directamente al proveedor como parte de funciones como [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall) o [**lineales**](/windows/desktop/api/Tapi/nf-tapi-linedial) y permitir que la función genere un error para indicar que el modificador no admitido se produce en primer lugar en la cadena.
+Estas marcas indican si el modificador de cadena marcable "$", "@" o "W" es compatible con un dispositivo de línea determinado. Es **TRUE si** se admite el modificador ; de lo contrario, **FALSE**. El "?" (pedir al usuario que siga marcando) nunca es compatible con un dispositivo de línea. Estas marcas permiten a una aplicación determinar por adelantado qué modificadores darían lugar a la generación de lineerr. La aplicación tiene la opción de examinar previamente cadenas dialables para caracteres no admitidos o pasar la cadena "sin procesar" de [**lineTranslateAddress**](/windows/desktop/api/Tapi/nf-tapi-linetranslateaddress) directamente al proveedor como parte de funciones como [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall) o [**lineDial**](/windows/desktop/api/Tapi/nf-tapi-linedial) y permitir que la función genere un error para que le diga qué modificador no admitido se produce primero en la cadena.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVCAPFLAGS_HIGHLEVCOMP"></span><span id="linedevcapflags_highlevcomp"></span>**LINEDEVCAPFLAGS \_ HIGHLEVCOMP**
+<span id="LINEDEVCAPFLAGS_HIGHLEVCOMP"></span><span id="linedevcapflags_highlevcomp"></span>**LINEDEVCAPFLAGS \_ HIGHCOMP**
 </dt> <dd> <dl> <dt>
 
 
@@ -91,7 +91,7 @@ Especifica si se admiten elementos de información de compatibilidad de alto niv
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVCAPFLAGS_LOWLEVCOMP"></span><span id="linedevcapflags_lowlevcomp"></span>**LINEDEVCAPFLAGS \_ LOWLEVCOMP**
+<span id="LINEDEVCAPFLAGS_LOWLEVCOMP"></span><span id="linedevcapflags_lowlevcomp"></span>**LINEDEVCAPFLAGS \_ LOWCOMP**
 </dt> <dd> <dl> <dt>
 
 
@@ -106,7 +106,7 @@ Especifica si se admiten elementos de información de compatibilidad de bajo niv
 
 
 
-Especifica si las operaciones de control de medios están disponibles para las llamadas en esta línea.
+Especifica si las operaciones de control multimedia están disponibles para las llamadas en esta línea.
 
 
 </dt> </dl> </dd> <dt>
@@ -116,7 +116,7 @@ Especifica si las operaciones de control de medios están disponibles para las l
 
 
 
-Indica si un proveedor de servicios multimedia (MSP) está asociado a la línea. Esta marca solo se expone a las aplicaciones que negocian una versión de TAPI de 3,0 o superior.
+Indica si un proveedor de Media Service (MSP) está asociado a la línea. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 3.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -126,7 +126,7 @@ Indica si un proveedor de servicios multimedia (MSP) está asociado a la línea.
 
 
 
-Especifica si [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall), [**lineal**](/windows/desktop/api/Tapi/nf-tapi-linedial), [**TSPI \_ lineMakeCall**](/windows/win32/api/tspi/nf-tspi-tspi_linemakecall)o [**TSPI es \_**](/windows/win32/api/tspi/nf-tspi-tspi_linedial) capaz de tratar con varias direcciones a la vez (como para multiplexación inversa).
+Especifica si [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall), [**lineDial,**](/windows/desktop/api/Tapi/nf-tapi-linedial) [**TSPI \_ lineMakeCall**](/windows/win32/api/tspi/nf-tspi-tspi_linemakecall)o [**TSPI \_ lineDial**](/windows/win32/api/tspi/nf-tspi-tspi_linedial) puede tratar con varias direcciones a la vez (como para la multiplexación inversa).
 
 
 </dt> </dl> </dd> <dt>
@@ -136,34 +136,34 @@ Especifica si [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall)
 
 
 
-Indica si se han implementado [interfaces específicas del proveedor](./provider-specific-interfaces.md) . Esta marca solo se expone a las aplicaciones que negocian una versión de TAPI de 3,0 o superior.
+Indica si se [han implementado interfaces](./provider-specific-interfaces.md) específicas del proveedor. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 3.0 o posterior.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Sin extensibilidad. Todos los 32 bits están reservados.
+Sin extensibilidad. Los 32 bits están reservados.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose)
 </dt> <dt>
 
-[**Fino**](/windows/desktop/api/Tapi/nf-tapi-linedial)
+[**lineDial**](/windows/desktop/api/Tapi/nf-tapi-linedial)
 </dt> <dt>
 
 [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall)

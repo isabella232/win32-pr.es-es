@@ -1,21 +1,21 @@
 ---
 description: Se envía cuando una aplicación cambia el estado habilitado de una ventana.
 ms.assetid: df2cf953-121f-43bb-a06c-d10e445bfb5e
-title: Mensaje de WM_ENABLE (Winuser. h)
+title: WM_ENABLE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82bc83b84cbbf8e0c0145ef7d2730179cab54a23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e01477de7cf1b9052bba752929210a1bc7553445f81f971aec67d7b510653a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200486"
 ---
-# <a name="wm_enable-message"></a>\_Mensaje de habilitación de WM
+# <a name="wm_enable-message"></a>Mensaje \_ WM ENABLE
 
-Se envía cuando una aplicación cambia el estado habilitado de una ventana. Se envía a la ventana cuyo estado habilitado está cambiando. Este mensaje se envía antes de que se devuelva la función [**EnableWindow**](/windows/win32/api/winuser/nf-winuser-enablewindow) , pero después de que se haya cambiado el estado habilitado (bit de estilo [**WS \_ Disabled**](window-styles.md) ) de la ventana.
+Se envía cuando una aplicación cambia el estado habilitado de una ventana. Se envía a la ventana cuyo estado habilitado está cambiando. Este mensaje se envía antes de que se devuelva la función [**EnableWindow,**](/windows/win32/api/winuser/nf-winuser-enablewindow) pero después de que el estado habilitado (bit [**de estilo WS \_ DISABLED)**](window-styles.md) de la ventana haya cambiado.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,7 +31,7 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Indica si la ventana se ha habilitado o deshabilitado. Este parámetro es **true** si se ha habilitado la ventana o **false** si se ha deshabilitado la ventana.
+Indica si la ventana se ha habilitado o deshabilitado. Este parámetro es **TRUE** si la ventana se ha habilitado o **FALSE** si la ventana se ha deshabilitado.
 
 </dd> <dt>
 
@@ -52,15 +52,15 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 [**EnableWindow**](/windows/win32/api/winuser/nf-winuser-enablewindow)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Windows](windows.md)

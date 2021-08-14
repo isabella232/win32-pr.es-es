@@ -1,19 +1,19 @@
 ---
-description: Especifica el número de grupos de imágenes (GOP) entre los encabezados de secuencia. Esta propiedad se aplica a los codificadores de vídeo MPEG.
+description: Especifica el número de grupos de imágenes (GOP) entre encabezados de secuencia. Esta propiedad se aplica a los codificadores de vídeo MPEG.
 ms.assetid: 439be951-0185-4578-8b79-a5dfce254a68
-title: Propiedad AVEncMPVGOPSInSeq (Codecapi. h)
+title: Propiedad AVEncMPVGOPSInSeq (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b61414bd7389448e7ae43a52a065142fc40867f0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 61a4aba43159bc50509ee2ed045e2f5b2d277f7dff7011a3f959c3d1735a6f0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105666125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403757"
 ---
 # <a name="avencmpvgopsinseq-property"></a>Propiedad AVEncMPVGOPSInSeq
 
-Especifica el número de grupos de imágenes (GOP) entre los encabezados de secuencia. Esta propiedad se aplica a los codificadores de vídeo MPEG.
+Especifica el número de grupos de imágenes (GOP) entre encabezados de secuencia. Esta propiedad se aplica a los codificadores de vídeo MPEG.
 
 Esta propiedad es de lectura y escritura.
 
@@ -25,7 +25,7 @@ Esta propiedad es de lectura y escritura.
 
 **CODECAPI \_ AVEncMPVGOPSInSeq**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad es de lectura y escritura.
 
@@ -33,22 +33,22 @@ Esta propiedad es de lectura y escritura.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

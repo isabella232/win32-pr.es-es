@@ -4,12 +4,12 @@ ms.assetid: 9e5f3da6-346a-4eca-bc85-2755c569986d
 title: Compatibilidad con extensiones de MTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 898df3f1347af2ccc42a796b480156b6603b13ec
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: c16a80b640b50346f1724aec771d8ffd82de565f078e5b3e1d562c346e34973a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118193576"
 ---
 # <a name="supporting-mtp-extensions"></a>Compatibilidad con extensiones de MTP
 
@@ -25,7 +25,7 @@ El respondedor puede iniciar la comunicación independientemente del iniciador. 
 
 Para obtener una descripción completa de MTP, consulte la [especificación de MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip).
 
-## <a name="sending-mtp-commands"></a>Envío de comandos MTP
+## <a name="sending-mtp-commands"></a>Envío de comandos de MTP
 
 Las aplicaciones pueden enviar comandos MTP a un dispositivo invocando el [**método IPortableDevice::SendCommand.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand) El comando que se envía depende de si hay una fase de datos y de si los datos adjuntos se leen o escriben en el dispositivo. En la tabla siguiente se describen los tres posibles comandos de extensión MTP.
 
@@ -33,13 +33,13 @@ Tenga en cuenta que estos comandos son específicos de MTP; y, por lo tanto, sol
 
 
 
-| Comando  | Descripción  |
+| Get-Help  | Descripción  |
 |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**TRANSFERENCIA DE DATOS \_ FINALES \_ EXT DEL COMANDO WPD MTP \_ \_ \_ \_**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-end-data-transfer)                                      | Emite un comando MTP que indica la conclusión de una operación de lectura o escritura de datos.              |
+| [**TRANSFERENCIA DE DATOS \_ FINAL EXT DEL \_ COMANDO WPD MTP \_ \_ \_ \_**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-end-data-transfer)                                      | Emite un comando MTP que señala la conclusión de una operación de lectura o escritura de datos.              |
 | [**COMANDO WPD \_ \_ MTP \_ EXT EXECUTE COMMAND WITHOUT DATA \_ \_ \_ \_ \_ PHASE**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-without-data-phase)  | Emite un comando MTP sin una fase de datos correspondiente.                                         |
-| [**COMANDO WPD \_ \_ MTP EXT EXECUTE COMMAND WITH DATA TO WRITE (COMANDO MTP EXT EXECUTE DE WPD \_ \_ CON DATOS PARA \_ \_ \_ \_ \_ ESCRIBIR)**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-with-data-to-write) | Emite un comando MTP que va seguido de los datos adjuntos, que se escribirán en el dispositivo. |
-| [**COMANDO WPD \_ \_ MTP EXT EXECUTE COMMAND WITH DATA TO READ (COMANDO MTP EXT EXECUTE DE WPD \_ \_ CON DATOS PARA \_ \_ \_ \_ \_ LEER)**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-with-data-to-read)   | Emite un comando MTP seguido de los datos adjuntos, que se leen desde el dispositivo.       |
-| [**COMANDO WPD \_ \_ MTP \_ EXT READ \_ \_ DATA**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-read-data)                                                       | Emite un comando MTP que envía datos desde el dispositivo al equipo.                                  |
+| [**COMANDO WPD \_ \_ MTP EXT EXECUTE COMMAND WITH DATA TO WRITE (COMANDO MTP EXT EXECUTE DE WPD \_ \_ CON DATOS PARA \_ \_ \_ \_ \_ ESCRIBIR)**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-with-data-to-write) | Emite un comando MTP seguido de los datos adjuntos, que se escribirán en el dispositivo. |
+| [**COMANDO WPD MTP EXT EXECUTE COMMAND WITH DATA TO READ (COMANDO \_ \_ MTP EXT EXECUTE DE WPD \_ CON DATOS PARA \_ \_ \_ \_ \_ \_ LEER)**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-with-data-to-read)   | Emite un comando MTP seguido de los datos adjuntos, que se leen desde el dispositivo.       |
+| [**MTP EXT READ DATA DEL COMANDO \_ \_ WPD \_ \_ \_**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-read-data)                                                       | Emite un comando MTP que envía datos desde el dispositivo al equipo.                                  |
 | [**COMANDO WPD \_ \_ MTP \_ EXT WRITE \_ \_ DATA**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-write-data)                                                     | Emite un comando MTP que envía datos al dispositivo desde el equipo.                                  |
 
 

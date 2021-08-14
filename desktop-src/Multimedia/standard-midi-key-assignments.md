@@ -1,33 +1,33 @@
 ---
-title: Asignaciones de claves MIDI estándar
-description: Asignaciones de claves MIDI estándar
+title: Asignaciones de claves ESTÁNDAR DE MIDI
+description: Asignaciones de claves ESTÁNDAR DE MIDI
 ms.assetid: 9d3c5fe0-42bc-4101-9f5a-595e925ee7a5
 keywords:
-- crear archivos MIDI, asignaciones de clave estándar
-- asignaciones de claves MIDI estándar
-- Interfaz digital de instrumentos musicales (MIDI), asignaciones de claves estándar
-- MIDI (interfaz digital de instrumentos musicales), asignaciones de clave estándar
+- crear archivos MIDI, asignaciones de claves estándar
+- asignaciones de claves ESTÁNDAR DE MIDI
+- Interfaz digital de instrumentar música (MIDI), asignaciones de claves estándar
+- MIDI (Interfaz digital de instrumentar música), asignaciones de claves estándar
 - Asociación de fabricantes de MIDI (MMA)
 - MMA (Asociación de fabricantes de MIDI)
-- Especificación del modo MIDI general
+- Especificación general del modo MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aff9a70d791bd0a0812f2cbd78aaff13a9e4875
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3a825d44f3ec61d876828a804e22e10e691bb2c93cc0e11decd28e862491017f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801514"
 ---
-# <a name="standard-midi-key-assignments"></a>Asignaciones de claves MIDI estándar
+# <a name="standard-midi-key-assignments"></a>Asignaciones de claves ESTÁNDAR DE MIDI
 
-Las asignaciones de claves MIDI estándar para los instrumentos de percusión se basan en la especificación del modo MIDI MMA general. En la ilustración siguiente se muestran las asignaciones de clave estándar para los archivos MIDI creados para Windows.
+Las asignaciones de claves ESTÁNDAR DE MIDI para los instrumentos de sonido se basan en la especificación mma general del modo MIDI. En la ilustración siguiente se muestran las asignaciones de claves estándar para los archivos MIDI creados para Windows.
 
-![imagen de asignación de clave MIDI](images/pian-a01.gif)
+![imagen de asignación de clave de midi](images/pian-a01.gif)
 
- 
+ 
 
- 
+ 
 
 
 

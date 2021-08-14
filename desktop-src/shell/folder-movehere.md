@@ -1,7 +1,7 @@
 ---
 description: Mueve un elemento o elementos a esta carpeta.
 ms.assetid: 07723dc1-5d9d-4f32-ab18-52617b0988c4
-title: Método Folder. MoveHere (Shldisp. h)
+title: Método Folder.MoveHere (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: da6590d63f4a3c79252e25f3625c0ee75b146b6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb826d23a168d81d838341e96fa5e613f8b6f5261a3cda548a2be320acebbde8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458923"
 ---
-# <a name="foldermovehere-method"></a>Folder. MoveHere (método)
+# <a name="foldermovehere-method"></a>Método Folder.MoveHere
 
 Mueve un elemento o elementos a esta carpeta.
 
@@ -40,21 +40,21 @@ Folder.MoveHere(
 
 <dl> <dt>
 
-*vItem* \[ de\]
+*vItem* \[ En\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Elemento o elementos que se van a desplace. Puede ser una cadena que representa un nombre de archivo, un objeto [**carpeta**](folderitem.md) o un objeto [**FolderItems**](folderitems.md) .
+Elemento o elementos que se moverá. Puede ser una cadena que representa un nombre de archivo, un [**objeto FolderItem**](folderitem.md) o [**un objeto FolderItems.**](folderitems.md)
 
 </dd> <dt>
 
-*vOptions* \[ en, opcional\]
+*vOptions* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Opciones de la operación de movimiento. Este valor puede ser cero o una combinación de los siguientes valores. Estos valores se basan en marcas definidas para su uso con el miembro **fFlags** de la estructura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) de C++. Estas marcas no se definen como tales para Visual Basic, VBScript o JScript, por lo que debe definirlas usted mismo o usar sus equivalentes numéricos.
+Opciones para la operación de movimiento. Este valor puede ser cero o una combinación de los valores siguientes. Estos valores se basan en marcas definidas para su uso con el **miembro fFlags** de la estructura [**SHFILEOPSTRUCT de**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) C++. Estas marcas no se definen como tales para Visual Basic, VBScript o JScript, por lo que debe definirlas usted mismo o usar sus equivalentes numéricos.
 
 <dt>
 
@@ -76,7 +76,7 @@ No mostrar un cuadro de diálogo de progreso.
 
 </dt> <dd>
 
-Dé al archivo que opere con un nuevo nombre en una operación de movimiento, copia o cambio de nombre si ya existe un archivo con el nombre de destino.
+Asigne al archivo que se está operando con un nuevo nombre en una operación de movimiento, copia o cambio de nombre si ya existe un archivo con el nombre de destino.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Dé al archivo que opere con un nuevo nombre en una operación de movimiento, co
 
 </dt> <dd>
 
-Responda con "sí a todo" para cualquier cuadro de diálogo que se muestre.
+Responda con "Sí a todo" para cualquier cuadro de diálogo que se muestre.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Responda con "sí a todo" para cualquier cuadro de diálogo que se muestre.
 
 </dt> <dd>
 
-Si es posible, conserve la información de deshacer.
+Conserve la información de deshacer, si es posible.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Realice la operación en archivos solo si se especifica un nombre de archivo com
 
 </dt> <dd>
 
-Muestra un cuadro de diálogo de progreso pero no muestra los nombres de archivo.
+Mostrar un cuadro de diálogo de progreso, pero no mostrar los nombres de archivo.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Muestra un cuadro de diálogo de progreso pero no muestra los nombres de archivo
 
 </dt> <dd>
 
-No confirme la creación de un directorio nuevo si la operación requiere que se cree uno.
+No confirme la creación de un nuevo directorio si la operación requiere que se cree uno.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ No muestre una interfaz de usuario si se produce un error.
 
 </dt> <dd>
 
-[Versión 4,71.](versions.md) No copie los atributos de seguridad del archivo.
+[Versión 4.71.](versions.md) No copie los atributos de seguridad del archivo.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ No muestre una interfaz de usuario si se produce un error.
 
 </dt> <dd>
 
-Solo funciona en el directorio local. No opere de forma recursiva en subdirectorios.
+Solo funciona en el directorio local. No funcione de forma recursiva en subdirectorios.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Solo funciona en el directorio local. No opere de forma recursiva en subdirector
 
 </dt> <dd>
 
-[Versión 5,0.](versions.md) No mueva los archivos conectados como un grupo. Solo mueve los archivos especificados.
+[Versión 5.0.](versions.md) No mueva los archivos conectados como un grupo. Mueva solo los archivos especificados.
 
 </dd> </dl> </dd> </dl>
 
@@ -186,15 +186,15 @@ Este método no devuelve ningún valor.
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el método [**ParseName**](folder-parsename.md) no se implementa para la carpeta panel de control ( \_ controles CSIDL). Si intenta llamar a un método no implementado, se genera un error 0x800A01BD (decimal 445).
+> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se genera un error 0x800A01BD (decimal 445).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **MoveHere** para trasladar el archivo Temp.txt del directorio raíz de la unidad c a la \\ carpeta c: Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa MoveHere** para mover el archivo Temp.txt desde el directorio raíz de la unidad C a la carpeta Windows \\ C: . Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -217,7 +217,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -273,11 +273,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

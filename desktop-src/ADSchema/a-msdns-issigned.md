@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DNS-is-signed
+title: Atributo ms-DNS-Is-Signed
 description: Atributo que se usa para definir si la zona DNS está firmada o no.
 ms.assetid: 488661fd-1a3b-4b63-9ec6-d402f4318c59
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DNS-is-signed
-- msDN-IsSigned atributo AD Schema
+- Esquema de AD del atributo ms-DNS-Is-Signed
+- Esquema de AD del atributo msDNS-IsSigned
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 142fdda1a0c072159cdee1f21982099609472bfe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: daaabf907d75db04eb0c760e79cb48e37814141cdfa24bdc9513db5ee189ab7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427089"
 ---
-# <a name="ms-dns-is-signed-attribute"></a>atributo MS-DNS-is-signed
+# <a name="ms-dns-is-signed-attribute"></a>Atributo ms-DNS-Is-Signed
 
 Atributo que se usa para definir si la zona DNS está firmada o no.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-está firmado                     |
-| Nombre para mostrar de LDAP | msDN-IsSigned                       |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DNS-Is-Signed                     |
+| Ldap-Display-Name | msDNS-IsSigned                       |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2130              |
-| System-ID-GUID    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |
+| Syntax            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -48,15 +48,15 @@ Atributo que se usa para definir si la zona DNS está firmada o no.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |

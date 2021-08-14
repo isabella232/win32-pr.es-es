@@ -1,19 +1,19 @@
 ---
-description: La pendiente de la parte superior de BoundingFrustum.
+description: Pendiente de la parte superior de BoundingFrustum.
 ms.assetid: 66aa839f-6280-4788-8e48-947e4d27ffbd
-title: BoundingFrustum. geoslope (DirectXCollision. h)
+title: BoundingFrustum.TopSlope (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4c334de36d26fe81397cd8f8510036c75dcdc8b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66a8007ebe3980a9536a538d2ba2796d670e03882d4458e585034334932e23b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118502256"
 ---
-# <a name="boundingfrustumtopslope"></a>BoundingFrustum. Slope
+# <a name="boundingfrustumtopslope"></a>BoundingFrustum.TopSlope
 
-La pendiente de la parte superior de [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Pendiente de la parte superior de [**BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 
 
 ```C++
@@ -23,11 +23,11 @@ public:
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,11 +35,11 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

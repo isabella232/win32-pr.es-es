@@ -1,36 +1,36 @@
 ---
 title: Cómo crear barras de desplazamiento
-description: Al crear una ventana superpuesta, emergente o secundaria, puede Agregar barras de desplazamiento estándar mediante la función CreateWindowEx y especificando WS \_ HSCROLL, WS \_ VSCROLL o ambos estilos.
+description: Al crear una ventana superpuesta, emergente o secundaria, puede agregar barras de desplazamiento estándar mediante la función CreateWindowEx y especificando WS \_ HSCROLL, WS VSCROLL o ambos \_ estilos.
 ms.assetid: 58353030-DCF5-4368-9658-BB282B8B5EF0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06b27e3e6d9495492f46567633cc53b0f3f7c5bd
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: aec76c49d9f97e21626546a760d0e42a44b04c70db5790e0b80c08fcdee34412
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831757"
 ---
 # <a name="how-to-create-scroll-bars"></a>Cómo crear barras de desplazamiento
 
-Al crear una ventana superpuesta, emergente o secundaria, puede Agregar barras de desplazamiento estándar mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando WS \_ HSCROLL, WS \_ VSCROLL o ambos estilos.
+Al crear una ventana superpuesta, emergente o secundaria, puede agregar barras de desplazamiento estándar mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando WS \_ HSCROLL, WS VSCROLL o ambos \_ estilos.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="create-a-scroll-bar"></a>Crear una barra de desplazamiento
 
-En el ejemplo siguiente se crea una ventana con barras de desplazamiento horizontal y vertical estándar.
+En el ejemplo siguiente se crea una ventana con barras de desplazamiento horizontales y verticales estándar.
 
 
 ```C++
@@ -53,9 +53,9 @@ En el ejemplo siguiente se crea una ventana con barras de desplazamiento horizon
 
 
 
-Para procesar los mensajes de la barra de desplazamiento para estas barras de desplazamiento, debe incluir el código adecuado en el procedimiento de ventana principal.
+Para procesar los mensajes de la barra de desplazamiento de estas barras de desplazamiento, debe incluir el código adecuado en el procedimiento de la ventana principal.
 
-Puede usar la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para crear una barra de desplazamiento especificando la clase de ventana de la barra de desplazamiento. Esto crea una barra de desplazamiento horizontal o vertical, en función de si se especifica [**SBS \_ horizontal**](scroll-bar-control-styles.md) o [**SBS \_ Vert**](scroll-bar-control-styles.md) como estilo de ventana. También se puede especificar el tamaño de la barra de desplazamiento y su posición en relación con su ventana primaria.
+Puede usar la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para crear una barra de desplazamiento especificando la clase de ventana SCROLLBAR. Esto crea una barra de desplazamiento horizontal o vertical, dependiendo de si [**SBS \_ HORZ**](scroll-bar-control-styles.md) o [**SBS \_ VERT**](scroll-bar-control-styles.md) se especifica como estilo de ventana. También se puede especificar el tamaño de la barra de desplazamiento y su posición con respecto a su ventana primaria.
 
 En el ejemplo siguiente se crea una barra de desplazamiento horizontal que se coloca a lo largo de la parte inferior del área de cliente de la ventana primaria.
 
@@ -105,9 +105,9 @@ HWND CreateAHorizontalScrollBar(HWND hwndParent, int sbHeight)
 [Usar barras de desplazamiento](using-scroll-bars.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

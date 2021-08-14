@@ -1,19 +1,19 @@
 ---
 description: Especifica el identificador de hardware PnP-X del servicio.
 ms.assetid: aa4c935f-0d60-4603-ae96-d5cabdf9af00
-title: Elemento PnPXHardwareId
+title: PnPXHardwareId, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0ffc389ca6df363439dd6463b3f86ca756359e8
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 0d032974486d4bd43f0a699eba6b8f6b75598c49858eeedb09bae5d3e79b11e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118311520"
 ---
-# <a name="pnpxhardwareid-element"></a>Elemento PnPXHardwareId
+# <a name="pnpxhardwareid-element"></a>PnPXHardwareId, elemento
 
-Especifica el identificador de hardware PnP-X del servicio. PnP coincide con este elemento con las descripciones de hardware proporcionadas en la \[ sección PnpxDevice \] del archivo INF del dispositivo. En función de esta información, el servicio PnP selecciona y carga el controlador de dispositivo más adecuado.
+Especifica el identificador de hardware PnP-X del servicio. PnP coincide con este elemento con las descripciones de hardware proporcionadas en la \[ sección PnpxDevice del archivo INF del \] dispositivo. En función de esta información, el servicio PnP selecciona y carga el controlador de dispositivo más adecuado.
 
 ## <a name="usage"></a>Uso
 
@@ -47,7 +47,7 @@ Para especificar más de un identificador de hardware, separe los identificadore
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

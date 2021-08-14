@@ -1,7 +1,7 @@
 ---
-description: Indica una condición de error de DVD.
+description: Señala una condición de error de DVD.
 ms.assetid: 2cd3e0c4-e2b7-4aa1-9f3c-9003eabfb08a
-title: EC_DVD_ERROR (Dvdevcode. h)
+title: EC_DVD_ERROR (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 3b338889836bf78a334784ea66c0e346e9f6b672
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0afa9ce750016001ddbe054d8cb9a589a2c68d8856e8e4db5c59043eb881129
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820532"
 ---
-# <a name="ec_dvd_error"></a>\_error de DVD de EC \_
+# <a name="ec_dvd_error"></a>ERROR \_ DE DVD DE \_ EC
 
-Indica una condición de error de DVD.
+Señala una condición de error de DVD.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,20 +31,20 @@ Indica una condición de error de DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor **DWORD** que indica la condición de error. Miembro del tipo de datos de [**\_ error de DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) enumerado.
+**Valor DWORD** que indica la condición de error. Miembro del tipo [**de \_ datos enumerado ERROR**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) de DVD.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-El significado depende del valor de *lParam1*. Consulte [**\_ error de DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) para obtener más información.
+El significado depende del valor *de lParam1*. Consulte [**ERROR \_ DE DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) para obtener más información.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento se desencadena en todos los dominios.
+Este evento se genera en todos los dominios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,11 +52,11 @@ Este evento se desencadena en todos los dominios.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

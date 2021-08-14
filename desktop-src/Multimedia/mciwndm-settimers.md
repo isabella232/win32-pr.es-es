@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_SETTIMERS (VFW. h)
-description: El \_ mensaje MCIWNDM SETTIMERS establece los períodos de actualización usados por MCIWnd para actualizar la barra de control en la ventana MCIWnd, actualizar la información de posición que se muestra en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria.
+title: MCIWNDM_SETTIMERS mensaje (Vfw.h)
+description: El mensaje MCIWNDM SETTIMERS establece los períodos de actualización utilizados por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la \_ ventana primaria.
 ms.assetid: 06407c67-b620-4f80-9fe9-456cdf3d0666
 keywords:
-- Mensaje de MCIWNDM_SETTIMERS de Windows multimedia
+- MCIWNDM_SETTIMERS mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bba3fa2e474a15dc23deb9cdc6d00d148b8cd3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e9c17a131827459555ae51adc5d5bd48d98fabb88fc4c1f0dbbcd1eb3673466
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807565"
 ---
-# <a name="mciwndm_settimers-message"></a>MCIWNDM \_ SETTIMERS
+# <a name="mciwndm_settimers-message"></a>Mensaje DE MCIWNDM \_ SETTIMERS
 
-El mensaje **MCIWNDM \_ SETTIMERS** establece los períodos de actualización usados por MCIWnd para actualizar la barra de control en la ventana MCIWnd, actualizar la información de posición que se muestra en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetTimers**](/windows/desktop/api/Vfw/nf-vfw-mciwndsettimers) .
+El **mensaje MCIWNDM \_ SETTIMERS** establece los períodos de actualización utilizados por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetTimers.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsettimers)
 
 
 ```C++
@@ -38,37 +38,37 @@ lParam = (LPARAM) (UINT) inactive;
 
 <dl> <dt>
 
-<span id="active"></span><span id="ACTIVE"></span>*Active*
+<span id="active"></span><span id="ACTIVE"></span>*Activo*
 </dt> <dd>
 
-Período de actualización usado por MCIWnd cuando se trata de la ventana activa. El valor predeterminado es 500 milisegundos. El almacenamiento de este valor está limitado a 16 bits.
+Período de actualización utilizado por MCIWnd cuando es la ventana activa. El valor predeterminado es 500 milisegundos. Storage para este valor se limita a 16 bits.
 
 </dd> <dt>
 
-<span id="inactive"></span><span id="INACTIVE"></span>*inactiva*
+<span id="inactive"></span><span id="INACTIVE"></span>*Inactivo*
 </dt> <dd>
 
-Período de actualización usado por MCIWnd cuando se trata de la ventana inactiva. El valor predeterminado es 2000 milisegundos. El almacenamiento de este valor está limitado a 16 bits.
+Período de actualización utilizado por MCIWnd cuando es la ventana inactiva. El valor predeterminado es 2000 milisegundos. Storage para este valor se limita a 16 bits.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

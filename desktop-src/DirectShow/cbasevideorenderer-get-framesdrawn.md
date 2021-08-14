@@ -1,7 +1,7 @@
 ---
-description: El \_ método get FramesDrawn recupera la \_ variable miembro de m cFramesDrawn, y ofrece el número de fotogramas dibujados desde que se inició el streaming.
+description: El método get FramesDrawn recupera la variable miembro \_ m cFramesDrawn, lo que da el número de fotogramas dibujados desde que se \_ inició el streaming.
 ms.assetid: 486b5541-2952-47ce-944e-4efb8e5af9dd
-title: Método CBaseVideoRenderer.get_FramesDrawn (Renbase. h)
+title: CBaseVideoRenderer.get_FramesDrawn método (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec8254e06429022bf657322e98ab317475c82f90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65a7c698d129a3606f6ba75f856289ca2b4e15c438d3890eb0a97e4a198ee808
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822588"
 ---
-# <a name="cbasevideorendererget_framesdrawn-method"></a>CBaseVideoRenderer. Get \_ FramesDrawn (método)
+# <a name="cbasevideorendererget_framesdrawn-method"></a>CBaseVideoRenderer.get \_ FramesDrawn (método)
 
-El `get_FramesDrawn` método recupera la variable de miembro **m \_ cFramesDrawn** , lo que permite el número de fotogramas dibujados desde que se inició el streaming.
+El `get_FramesDrawn` método recupera la variable miembro m **\_ cFramesDrawn,** lo que da el número de fotogramas dibujados desde que se inició el streaming.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ Puntero al número de fotogramas dibujados.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método [**IQualProp:: get \_ FramesDrawn**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_framesdrawn) .
+Esta función miembro implementa el [**método IQualProp::get \_ FramesDrawn.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_framesdrawn)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,16 +63,16 @@ Esta función miembro implementa el método [**IQualProp:: get \_ FramesDrawn**]
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

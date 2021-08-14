@@ -1,30 +1,30 @@
 ---
-title: Codificación de Two-Pass
-description: Codificación de Two-Pass
+title: Two-Pass codificación
+description: Two-Pass codificación
 ms.assetid: 354cd0a5-9a64-4171-9604-694e60b382ad
 keywords:
-- Windows Media Format SDK, codificación de dos pasos
-- Windows Media Format SDK, codificación de paso 2
-- códecs, codificación de dos pasos
-- códecs, codificación de 2 pasos
-- codificación de dos pasos, acerca de
-- 2-paso de codificación, acerca de
+- Windows SDK de formato multimedia, codificación de dos pases
+- Windows SDK de formato multimedia, codificación de 2 pases
+- códecs, codificación de dos pases
+- códecs, codificación de 2 pases
+- codificación de dos pases, acerca de
+- Codificación de 2 pases, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6764f80857447e122c97c69683243a65da7e83b2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b6cd769049b5fa3869c844e00d9ee14cfae596b197d06d414b04a544d831bbeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845343"
 ---
-# <a name="two-pass-encoding"></a>Codificación de Two-Pass
+# <a name="two-pass-encoding"></a>Two-Pass codificación
 
-La codificación de dos pasos es un método de codificación disponible con algunos códecs, como el códec Windows Media Video 9. Cuando se usa la codificación de dos pasos, el códec procesa dos veces todos los ejemplos de la secuencia. En el primer paso, el códec recopila información sobre el contenido de la secuencia. En el segundo paso, el códec usa la información recopilada en el primer paso para optimizar el proceso de codificación de la secuencia.
+La codificación de dos pases es un método de codificación disponible con algunos códecs, como el códec Windows Media Video 9. Cuando se usa la codificación de dos pases, el códec procesa todas las muestras de la secuencia dos veces. En el primer paso, el códec recopila información sobre el contenido de la secuencia. En el segundo paso, el códec usa la información recopilada en el primer paso para optimizar el proceso de codificación de la secuencia.
 
-En el modo de codificación de velocidad de bits constante, los archivos codificados en dos fases suelen ser más eficaces que los archivos codificados en un solo paso. La VBR basada en la calidad, que es una pasada, genera una calidad más coherente que la VBR basada en la velocidad de bits, que es de dos pasos.
+En el modo de codificación Velocidad de bits constante, los archivos codificados en dos pases suelen ser más eficaces que los archivos codificados en un solo paso. El VBR basado en calidad, que es un paso, genera una calidad más coherente que la VBR basada en velocidad de bits, que es de dos pases.
 
-No se puede usar la codificación de dos pasos en secuencias en directo.
+No se puede usar la codificación de dos pases en secuencias en vivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -33,12 +33,12 @@ No se puede usar la codificación de dos pasos en secuencias en directo.
 [**Características del códec**](codec-features.md)
 </dt> <dt>
 
-[**Uso de la codificación de Two-Pass**](using-two-pass-encoding.md)
+[**Uso de Two-Pass codificación**](using-two-pass-encoding.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

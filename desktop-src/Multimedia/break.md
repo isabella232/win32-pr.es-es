@@ -1,9 +1,9 @@
 ---
-title: Break (comando)
-description: El comando break especifica una clave para anular un comando que se invocó mediante \ 0034; wait \ 0034; marcas. Este comando es un comando del sistema MCI; lo interpreta directamente MCI.
+title: comando break
+description: El comando break especifica una clave para anular un comando que se invocó mediante \ 0034;wait \ 0034; Bandera. Este comando es un comando del sistema MCI; MCI la interpreta directamente.
 ms.assetid: 959df85f-5020-4e37-952b-15ba5e6fb672
 keywords:
-- comando interrumpir Windows multimedia
+- comando break Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f727fb6cf375e09a260ee68f62eac83816ff5d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f99c8609b1364d374d91965816fde2d9c48b750d7bf0b3f6fb2957ed205a85a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375477"
 ---
-# <a name="break-command"></a>Break (comando)
+# <a name="break-command"></a>comando break
 
-El comando break especifica una clave para anular un comando que se invocó mediante la marca "Wait". Este comando es un comando del sistema MCI; lo interpreta directamente MCI.
+El comando break especifica una clave para anular un comando que se invocó mediante la marca "wait". Este comando es un comando del sistema MCI; MCI la interpreta directamente.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -53,9 +53,9 @@ Una de las marcas siguientes.
 
 
 
-| Value                 | Significado                                                                         |
+| Valor                 | Significado                                                                         |
 |-----------------------|---------------------------------------------------------------------------------|
-| en *código de tecla virtual* | Especifica la clave que anula un comando que se inició con la marca "Wait". |
+| en *el código de clave virtual* | Especifica la clave que anula un comando que se inició con la marca "wait". |
 | apagado                   | Deshabilita la clave de interrupción actual.                                                 |
 
 
@@ -67,21 +67,21 @@ Una de las marcas siguientes.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital y vídeo, también se puede especificar "prueba". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital y VCR, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la tecla interrumpir está habilitada y el usuario presiona la clave identificada por el código de clave virtual especificado en el parámetro *lpszVirtKey* , el dispositivo devuelve el control a la aplicación. Si es posible, el comando continúa la ejecución.
+Cuando se habilita la tecla de interrupción y el usuario presiona la tecla identificada por el código de clave virtual especificado en el parámetro *lpszVirtKey,* el dispositivo devuelve el control a la aplicación. Si es posible, el comando continúa la ejecución.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente comando establece F2 como tecla de interrupción para el dispositivo "de".
+El comando siguiente establece F2 como clave de interrupción para el dispositivo "mysound".
 
 ``` syntax
 break mysound on 113
@@ -91,21 +91,21 @@ break mysound on 113
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de solicitud de finalización de controlador. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de solicitud completa del controlador. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: c9c9be05-c1c6-4d77-a47a-44a61ebfcdc7
 title: Clase DriverCompleteRequest
 ms.topic: reference
@@ -15,18 +15,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 57cf49d0e37dc870c0eb46c31ef39e0d81689811
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ef20d7bf097c35e03e94ee9bb80e7fd74ad93d3f28830c66b155b3cacf400b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151636"
 ---
 # <a name="drivercompleterequest-class"></a>Clase DriverCompleteRequest
 
-Esta clase es la clase de tipo de evento para los eventos de solicitud de finalización de controlador.
+Esta clase es la clase de tipo de evento para los eventos de solicitud completa del controlador.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,61 +42,61 @@ class DriverCompleteRequest : DiskIo
 
 ## <a name="members"></a>Miembros
 
-La clase **DriverCompleteRequest** tiene estos tipos de miembros:
+La **clase DriverCompleteRequest** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **DriverCompleteRequest** tiene estas propiedades.
+La **clase DriverCompleteRequest** tiene estas propiedades.
 
 <dl> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Paquete de solicitud de e/s.
+Paquete de solicitud de E/S.
 
 </dd> <dt>
 
 **RoutineAddr**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Dirección de la función de controlador que se va a llamar.
+Dirección de la función de controlador a la que se llama.
 
 </dd> <dt>
 
 **UniqMatchId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los otros eventos del controlador, por ejemplo, el evento [**DriverCompleteRequestReturn**](drivercompleterequestreturn.md) .
+Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los demás eventos de controlador, por ejemplo, el [**evento DriverCompleteRequestReturn.**](drivercompleterequestreturn.md)
 
 </dd> </dl>
 
@@ -104,18 +104,18 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Desmontaje**](diskio.md)
+[**DiskIo**](diskio.md)
 </dt> </dl>
 
  

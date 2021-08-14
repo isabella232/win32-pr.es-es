@@ -1,7 +1,7 @@
 ---
-description: Una función de creador estático que puede crear un XamlUIPresenter para una superficie de representación en una aplicación de escritorio.
+description: Una función de creador estático que puede crear un elemento XamlUIPresenter para una superficie de representación en una aplicación de escritorio.
 ms.assetid: 3160E4C2-39D3-8FF5-ED37-78E645D1AC2E
-title: CreateXamlUIPresenter función)
+title: Función CreateXamlUIPresenter
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Windows.UI.Xaml.dll
-ms.openlocfilehash: f9561a179ec4501406e26cb2bbc38ea69b64b979
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 247d676e3e2c85404f96324b1d78e1cd6ec2ab2159092d9a66717b2653ee5a02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105719022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323446"
 ---
-# <a name="createxamluipresenter-function"></a>CreateXamlUIPresenter función)
+# <a name="createxamluipresenter-function"></a>Función CreateXamlUIPresenter
 
-Una función de creador estático que puede crear un [**XamlUIPresenter**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041) para una superficie de representación en una aplicación de escritorio.
+Una función de creador estático que puede crear un [**elemento XamlUIPresenter para**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041) una superficie de representación en una aplicación de escritorio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,29 +40,29 @@ Una función de creador estático que puede crear un [**XamlUIPresenter**](/uwp/
 
 <dl> <dt>
 
-*pPresentSite* \[ de\]
+*pPresentSite* \[ En\]
 </dt> <dd>
 
-Una interfaz de hospedaje existente. Consulte **IViewObjectPresentNotifySite** en la documentación de Internet Explorer.
+Interfaz de hospedaje existente. Consulte **IViewObjectPresentNotifySite en** Internet Explorer documentación.
 
 </dd> <dt>
 
-*ppPresenter* \[ enuncia\]
+*ppPresenter* \[ out\]
 </dt> <dd>
 
-La interfaz **\[ \] Exclusive** para un [**XamlUIPresenter**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041).
+Interfaz **\[ exclusiveto \]** para un [**elemento XamlUIPresenter.**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un **valor HRESULT** estándar, **es \_ correcto** para el éxito.
+Un **valor HResult** estándar, **S \_ OK** para que se haga correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La llamada a este método requiere un **DllImport** de Windows.UI.Xaml.dll.
+Llamar a este método requiere **un archivo DllImport** de Windows.UI.Xaml.dll.
 
-No se puede llamar a este método desde una aplicación de la tienda Windows.
+No se puede llamar a este método desde una Windows Store.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,12 +70,12 @@ No se puede llamar a este método desde una aplicación de la tienda Windows.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Windows. UI. Xaml-coretypes. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Windows.ui.xaml-coretypes.idl</dt> </dl> |
 | Archivo DLL<br/>    | <dl> <dt>Windows.UI.Xaml.dll</dt> </dl>           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

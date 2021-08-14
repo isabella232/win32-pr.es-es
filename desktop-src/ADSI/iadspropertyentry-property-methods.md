@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsPropertyEntry (iAds. h)
+title: Métodos de propiedad IADsPropertyEntry (Iads.h)
 description: Proporcione acceso a las siguientes propiedades.
 ms.assetid: 73b0f6d4-55db-46cf-a781-e10bc4fcf2db
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsPropertyEntry ADSI
+- AdsI de los métodos de propiedad IADsPropertyEntry
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01e82344b2b659395bb14c0500fde3214530e000
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16b4fd6459ff2aa0a93ea050fa8e5d2133c09484c697d17fab204762e8765039
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427658"
 ---
 # <a name="iadspropertyentry-property-methods"></a>Métodos de propiedad IADsPropertyEntry
 
-Los métodos de propiedad de la interfaz [**IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry) proporcionan acceso a las siguientes propiedades. Para obtener más información sobre los métodos de propiedad, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry) proporcionan acceso a las propiedades siguientes. Para obtener más información sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -45,14 +45,14 @@ Los métodos de propiedad de la interfaz [**IADsPropertyEntry**](/windows/deskto
 **ADsType**
 </dt> <dd> <dl>
 
-El tipo de datos de la propiedad **Name** . Los valores del tipo de datos se definen en la enumeración [**ADSTYPEENUM**](/windows/win32/api/iads/ne-iads-adstypeenum) .
+Tipo de datos de la **propiedad** Name. Los valores del tipo de datos se definen en la [**enumeración ADSTYPEENUM.**](/windows/win32/api/iads/ne-iads-adstypeenum)
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -73,14 +73,14 @@ HRESULT put_ADsType(
 **ControlCode**
 </dt> <dd> <dl>
 
-Constante que especifica la operación que se va a realizar en la propiedad con nombre. El valor se define en la enumeración de la enumeración de la [**\_ operación de propiedad \_ \_ ADS**](/windows/win32/api/iads/ne-iads-ads_property_operation_enum) .
+Constante que especifica la operación que se va a realizar en la propiedad con nombre. El valor se define en la [**enumeración ADS \_ PROPERTY OPERATION \_ \_ ENUM.**](/windows/win32/api/iads/ne-iads-ads_property_operation_enum)
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -105,7 +105,7 @@ Nombre de la entrada de propiedad. Este nombre debe corresponder al nombre de un
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -129,14 +129,14 @@ HRESULT put_Name(
 **Valores**
 </dt> <dd> <dl>
 
-Matriz de **tipo Variant** . Cada elemento de esta matriz representa un valor de la propiedad con nombre. Estos valores de propiedad se representan mediante objetos ADSI que implementan las interfaces [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) y [**IADsPropertyValue2**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2) . Por lo tanto, la matriz **Variant** contiene una matriz de punteros a la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) en los objetos ADSI que implementan las interfaces **IADsPropertyValue** y **IADsPropertyValue2** .
+Matriz **VARIANT.** Cada elemento de esta matriz representa un valor de la propiedad con nombre. Estos valores de propiedad se representan mediante objetos ADSI que implementan las [**interfaces IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) e [**IADsPropertyValue2.**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue2) Por lo tanto, la matriz **VARIANT** contiene una matriz de punteros a la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) en los objetos ADSI que implementan las **interfaces IADsPropertyValue** e **IADsPropertyValue2.**
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -156,9 +156,9 @@ HRESULT put_Values(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada método de propiedad admite los valores devueltos de **HRESULT** estándar, incluidos los que son \_ correctos. Para obtener más información sobre otros valores devueltos, consulte [códigos de error ADSI](adsi-error-codes.md).
+Cada método de propiedad admite los **valores devueltos HRESULT** estándar, incluido S \_ OK. Para obtener más información sobre otros valores devueltos, vea [AdsI Error Codes](adsi-error-codes.md).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -289,21 +289,21 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsPropertyEntry se define como 05792C8E-941F-11D0-8529-00C04FD8D503<br/>    |
+| IID<br/>                      | IID IADsPropertyEntry se define como \_ 05792C8E-941F-11D0-8529-00C04FD8D503<br/>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_ \_ enumeración de operación de propiedad ADS \_**](/windows/win32/api/iads/ne-iads-ads_property_operation_enum)
+[**ENUMERACIÓN \_ DE OPERACIÓN DE PROPIEDAD DE \_ \_ ADS**](/windows/win32/api/iads/ne-iads-ads_property_operation_enum)
 </dt> <dt>
 
 [Códigos de error ADSI](adsi-error-codes.md)

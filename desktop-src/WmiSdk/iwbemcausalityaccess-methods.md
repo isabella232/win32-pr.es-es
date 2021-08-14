@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos IWbemCausalityAccess
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 987bd634aed9bd93d4970a1ca3c80be798191695
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbac128087b361f7c7daba39fcaabcd33c1e16563d2abb0beabdc71023915274
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118318234"
 ---
 # <a name="iwbemcausalityaccess-methods"></a>Métodos IWbemCausalityAccess
 
-La interfaz [**IWbemCausalityAccess**](iwbemcausalityaccess.md) expone los métodos siguientes.
+La [**interfaz IWbemCausalityAccess**](iwbemcausalityaccess.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

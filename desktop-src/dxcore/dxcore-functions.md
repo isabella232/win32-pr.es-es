@@ -1,25 +1,25 @@
 ---
 title: Funciones de DXCore
-description: Las siguientes funciones libres se declaran en dxcore. h.
+description: Las siguientes funciones gratuitas se declaran en dxcore.h.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 33b0e6cf1c8b77ad64a85c4d602cf6a1231cdcbf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c140e967b26e2267497829e70d1124e6d46aa364ca56bfdfd03d8dc30c7db89f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105720149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118502596"
 ---
 # <a name="dxcore-functions"></a>Funciones de DXCore
 
-Las siguientes funciones libres se declaran en dxcore. h.
+Las siguientes funciones gratuitas se declaran en dxcore.h.
 
 ## <a name="in-this-section"></a>En esta sección
 
 | Tema | Descripción |
 |-|-|
-| [**DXCoreCreateAdapterFactory**](./dxcore/nf-dxcore-dxcorecreateadapterfactory.md) | Crea un generador de adaptadores de DXCore, que puede usar para generar más objetos DXCore. |
+| [**DXCoreCreateAdapterFactory**](./dxcore/nf-dxcore-dxcorecreateadapterfactory.md) | Crea un generador de adaptadores DXCore, que puede usar para generar más objetos DXCore. |
 
 ## <a name="related-topics"></a>Temas relacionados
 

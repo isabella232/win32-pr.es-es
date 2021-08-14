@@ -1,7 +1,7 @@
 ---
-description: Establezca los elementos de trabajo en el dispositivo una vez que hayan finalizado la carga y el procesamiento.
+description: Establezca los elementos de trabajo en el dispositivo una vez que terminen de cargarse y procesarse.
 ms.assetid: 67a9fcb2-3513-413d-ac3d-9988ef7b5a1f
-title: ID3DX10ThreadPump::P método rocessDeviceWorkItems (D3DX10. h)
+title: Método ID3DX10ThreadPump::P rocessDeviceWorkItems (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 88b98d68e4e0e47b2c8e7f9a2e095565c53e2561
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e7179cf285c056601d00df5126ba98aaa34f827cbcac15400166d8301dc143a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118301781"
 ---
-# <a name="id3dx10threadpumpprocessdeviceworkitems-method"></a>ID3DX10ThreadPump::P método rocessDeviceWorkItems
+# <a name="id3dx10threadpumpprocessdeviceworkitems-method"></a>Método ID3DX10ThreadPump::P rocessDeviceWorkItems
 
-Establezca los elementos de trabajo en el dispositivo una vez que hayan finalizado la carga y el procesamiento. Cuando el bombeo de subprocesos ha terminado de cargar y procesar un recurso o sombreador, lo mantendrá en una cola hasta que se llame a esta API, momento en que los elementos procesados se establecerán en el dispositivo. Esto resulta útil para controlar la cantidad de procesamiento que se emplea en los recursos de enlace al dispositivo para cada fotograma. Vea Notas.
+Establezca los elementos de trabajo en el dispositivo una vez que terminen de cargarse y procesarse. Cuando el bombeo de subprocesos haya terminado de cargar y procesar un recurso o sombreador, lo mantendrá en una cola hasta que se llame a esta API, momento en el que los elementos procesados se establecerán en el dispositivo. Esto es útil para controlar la cantidad de procesamiento que se dedica a enlazar recursos al dispositivo para cada fotograma. Vea Notas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT ProcessDeviceWorkItems(
 
 <dl> <dt>
 
-*iWorkItemCount* \[ de\]
+*iWorkItemCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de elementos de trabajo que se van a establecer en el dispositivo. ProcessDeviceObjectCreation creará como máximo objetos iWorkItemCount. Si no hay suficientes elementos de trabajo en la cola para procesar los objetos iWorkItemCount, ProcessDeviceObjectCreation creará tantos objetos de dispositivo como elementos haya en la cola.
+Número de elementos de trabajo que se establecerán en el dispositivo. ProcessDeviceObjectCreation creará como máximo objetos iWorkItemCount. Si no hay suficientes elementos de trabajo en la cola para procesar objetos iWorkItemCount, ProcessDeviceObjectCreation creará tantos objetos de dispositivo como elementos de la cola.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Número de elementos de trabajo que se van a establecer en el dispositivo. Proce
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Como ejemplo de cómo se puede usar esta API, supuesto que está llegando al final de un nivel del juego y desea comenzar a cargar previamente las texturas, los sombreadores y otros recursos para el siguiente nivel. El bombeo de subprocesos comenzará a cargar, descomprimir y procesar los recursos y los sombreadores en un subproceso independiente hasta que estén listos para su establecimiento en el dispositivo, momento en el que los dejará en una cola. Es posible que no quiera establecer todos los recursos y sombreadores en el dispositivo de una sola vez, ya que esto puede provocar que una temporal advertible se ralentice en el rendimiento del juego. Por lo tanto, se puede llamar a esta API una vez por fotograma para que solo se establezca un número pequeño de elementos de trabajo en el dispositivo en cada fotograma, con lo que se propagará la carga de trabajo de los recursos de enlace al dispositivo a través de varios fotogramas y se minimizará la posibilidad de que una observable se ralentice en el rendimiento del juego.
+Como ejemplo de cómo se podría usar esta API, diga que está cerca del final de un nivel del juego y que quiere empezar a cargar previamente las texturas, los sombreadores y otros recursos para el siguiente nivel. La bomba de subprocesos comenzará a cargar, descomprimir y procesar los recursos y sombreadores en un subproceso independiente hasta que estén listos para establecerse en el dispositivo, momento en el que los dejará en una cola. Es posible que no desee establecer todos los recursos y sombreadores en el dispositivo a la vez, ya que esto puede provocar una ralentización temporal reconocible en el rendimiento del juego. Por lo tanto, se podría llamar a esta API una vez por fotograma para que solo se establezca un número pequeño de elementos de trabajo en el dispositivo en cada fotograma, lo que propaga la carga de trabajo de los recursos de enlace al dispositivo en varios fotogramas y minimiza la posibilidad de una ralentización reconocible en el rendimiento del juego.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,19 +65,19 @@ Como ejemplo de cómo se puede usar esta API, supuesto que está llegando al fin
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10ThreadPump](id3dx10threadpump.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

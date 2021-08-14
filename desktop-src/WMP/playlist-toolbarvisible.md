@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. toolbarVisible
-description: El atributo toolbarVisible especifica o recupera un valor que indica si se muestra la barra de herramientas de la lista de reproducción.
+title: PLAYLIST.toolbarVisible
+description: El atributo toolbarVisible especifica o recupera un valor que indica si se muestra la barra de herramientas Lista de reproducción.
 ms.assetid: cf5d1d53-ed0a-4018-8b07-758d6790260e
 keywords:
-- Windows Media Player de lista de reproducción. toolbarVisible
+- PLAYLIST.toolbarVisible Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72bf2fae4f62facfde9284f00c580431d615c07f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc7a85dde2c3bb0a8ee7a6208e2eb84a6797dda7265a5181e10e92409add4d4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335687"
 ---
-# <a name="playlisttoolbarvisible"></a>Lista de reproducción. toolbarVisible
+# <a name="playlisttoolbarvisible"></a>PLAYLIST.toolbarVisible
 
-El atributo **toolbarVisible** especifica o recupera un valor que indica si se muestra la barra de herramientas de la lista de reproducción.
+El **atributo toolbarVisible** especifica o recupera un valor que indica si se muestra la barra de herramientas Lista de reproducción.
 
 ``` syntax
         elementID.toolbarVisible
@@ -29,23 +29,23 @@ El atributo **toolbarVisible** especifica o recupera un valor que indica si se m
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura. El valor predeterminado es false.
+Este atributo es un valor booleano de lectura **y escritura.** El valor predeterminado es false.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La barra de herramientas de la lista de reproducción proporciona elementos de la interfaz de usuario que facilitan el trabajo con listas de reproducción.
+La barra de herramientas Lista de reproducción proporciona elementos de interfaz de usuario que hacen que sea fácil trabajar con listas de reproducción.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------|
-| Versión<br/> | Windows Media Player 10<br/> |
+| Versión<br/> | Reproductor de Windows Media 10<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

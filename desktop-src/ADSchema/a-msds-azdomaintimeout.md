@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-Domain-timeout
-description: Tiempo, en milisegundos, después de que se detecte que un dominio es inaccesible y antes de que se vuelva a intentar el controlador de dominio.
+title: Atributo ms-DS-Az-Domain-Timeout
+description: Tiempo, en milisegundos, después de que se detecte que un dominio no es accesible y antes de que se vuelva a intentar el controlador de dominio.
 ms.assetid: b2523faa-7cf1-4325-a3fa-70c5f568adaa
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-AZ-Domain-timeout
-- Esquema de AD de atributo msDS-AzDomainTimeout
+- Esquema de AD del atributo ms-DS-Az-Domain-Timeout
+- Esquema de AD del atributo msDS-AzDomainTimeout
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dce6f457977de1124438fa4b54e4a84d1cb6d54e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3019f0942a536c34b654737e645f17c1387e1bfb203b6110d3289683f505e34e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426744"
 ---
-# <a name="ms-ds-az-domain-timeout-attribute"></a>atributo MS-DS-AZ-Domain-timeout
+# <a name="ms-ds-az-domain-timeout-attribute"></a>Atributo ms-DS-Az-Domain-Timeout
 
-Tiempo, en milisegundos, después de que se detecte que un dominio es inaccesible y antes de que se vuelva a intentar el controlador de dominio.
+Tiempo, en milisegundos, después de que se detecte que un dominio no es accesible y antes de que se vuelva a intentar el controlador de dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-AZ-Domain-timeout                 |
-| Nombre para mostrar de LDAP | msDS-AzDomainTimeout                    |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | Administrador de AzRoles                           |
+| CN                | ms-DS-Az-Domain-Timeout                 |
+| Ldap-Display-Name | msDS-AzDomainTimeout                    |
+| Size              | \-                                      |
+| Actualizar privilegios  | Administrador de AzRoles                           |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva. |
 | Attribute-Id      | 1.2.840.113556.1.4.1795                 |
-| System-ID-GUID    | 6448f56a-ca70-4e2e-b0af-d20e4ce653d0    |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)    |
+| System-Id-Guid    | 6448f56a-ca70-4e2e-b0af-d20e4ce653d0    |
+| Syntax            | [**Enumeración**](s-enumeration.md)    |
 
 
 
@@ -52,20 +52,20 @@ Tiempo, en milisegundos, después de que se detecte que un dominio es inaccesibl
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Tiempo, en milisegundos, después de que se detecte que un dominio es inaccesibl
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Tiempo, en milisegundos, después de que se detecte que un dominio es inaccesibl
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Tiempo, en milisegundos, después de que se detecte que un dominio es inaccesibl
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Tiempo, en milisegundos, después de que se detecte que un dominio es inaccesibl
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 

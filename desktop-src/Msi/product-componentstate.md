@@ -1,7 +1,7 @@
 ---
-description: La propiedad ComponentState es el estado de instalación del componente para la instancia de este producto. Esta propiedad llama a MsiQueryComponentState, con ProductCode, UserSid y el contexto del objeto.
+description: La propiedad ComponentState es el estado de instalación del componente para la instancia de este producto. Esta propiedad llama a MsiQueryComponentState, con ProductCode, UserSid y Context del objeto .
 ms.assetid: 2939048a-42a5-4ffb-868c-251c0f15e5ed
-title: Product. ComponentState (método)
+title: Método Product.ComponentState
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 240a854a899f46bf80703bbd6cfb6b1529848586
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2bc9c5c1f5325dc631f8866ba1a8c7d88ce18d624a2974974f4692bf4f7b067
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118376784"
 ---
-# <a name="productcomponentstate-method"></a>Product. ComponentState (método)
+# <a name="productcomponentstate-method"></a>Método Product.ComponentState
 
-La propiedad **ComponentState** es el estado de instalación del componente para la instancia de este producto.
+La **propiedad ComponentState** es el estado de instalación del componente para la instancia de este producto.
 
-Esta propiedad llama a [**MsiQueryComponentState**](/windows/desktop/api/Msi/nf-msi-msiquerycomponentstatea), con ProductCode, UserSid y el contexto del objeto. El GUID del identificador de componente se proporciona como un parámetro.
+Esta propiedad llama [**a MsiQueryComponentState**](/windows/desktop/api/Msi/nf-msi-msiquerycomponentstatea), con ProductCode, UserSid y Context del objeto . El GUID del identificador de componente se proporciona como parámetro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ Product.ComponentState(
 *Id* 
 </dt> <dd>
 
-GUID del código de componente del componente tal y como se encuentra en la columna ComponentID de la [tabla de componentes](component-table.md).
+GUID de código de componente del componente, tal como se encuentra en la columna ComponentID de la [tabla Component](component-table.md).
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ GUID del código de componente del componente tal y como se encuentra en la colu
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si la llamada se realiza correctamente, la propiedad contiene el valor como **DWORD**.
 
@@ -60,8 +60,8 @@ Si la llamada se realiza correctamente, la propiedad contiene el valor como **DW
 
 | State                | Significado                                            |
 |----------------------|----------------------------------------------------|
-| INSTALLSTATE \_ local  | El componente se instala localmente.                |
-| origen de INSTALLSTATE \_ | El componente se instala para ejecutarse desde el origen. |
+| INSTALLSTATE \_ LOCAL  | El componente se instala localmente.                |
+| INSTALLSTATE \_ SOURCE | El componente se instala para ejecutarse desde el origen. |
 
 
 
@@ -73,13 +73,13 @@ Si se produce un error en la llamada, la propiedad contiene un código de error 
 
 | Error                     | Significado                                                                                                            |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------|
-| ERROR de \_ acceso \_ denegado     | El proceso de llamada debe tener privilegios administrativos para obtener información de un usuario que no sea el usuario actual. |
-| ERROR \_ de \_ Configuración incorrecta | Los datos de configuración están dañados.                                                                                 |
-| ERROR \_ de \_ parámetro no válido | Se pasó un parámetro no válido a la función.                                                                   |
-| ERROR \_ correcto            | La función se completó correctamente.                                                                               |
-| ERROR \_ de \_ componente desconocido | El identificador de componente no identifica un componente conocido.                                                              |
-| ERROR \_ desconocido del \_ producto   | El código de producto no identifica un producto conocido.                                                                |
-| ERROR en la \_ función error \_   | Error interno inesperado.                                                                                    |
+| ERROR \_ DE ACCESO \_ DENEGADO     | El proceso de llamada debe tener privilegios administrativos para obtener información de un usuario distinto del usuario actual. |
+| ERROR \_ DE CONFIGURACIÓN NO \_ ACTIVA | Los datos de configuración están dañados.                                                                                 |
+| ERROR \_ PARÁMETRO NO \_ VÁLIDO | Se pasó un parámetro no válido a la función .                                                                   |
+| ERROR \_ CORRECTO            | La función se completó correctamente.                                                                               |
+| COMPONENTE DESCONOCIDO \_ DE \_ ERROR | El identificador de componente no identifica un componente conocido.                                                              |
+| ERROR \_ PRODUCTO \_ DESCONOCIDO   | El código de producto no identifica un producto conocido.                                                                |
+| ERROR \_ EN LA FUNCIÓN \_   | Error interno inesperado.                                                                                    |
 
 
 
@@ -89,25 +89,25 @@ Si se produce un error en la llamada, la propiedad contiene un código de error 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IProduct se define como 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-00000000046<br/>                                                                                                                                                                                                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Manuales**](product-object.md)
+[**Producto**](product-object.md)
 </dt> <dt>
 
 [**MsiQueryComponentState**](/windows/desktop/api/Msi/nf-msi-msiquerycomponentstatea)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

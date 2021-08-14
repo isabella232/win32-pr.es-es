@@ -4,23 +4,23 @@ description: Atributo de Margin-Right VML
 ms.assetid: 7b635bea-df3f-4a24-aa22-cfca95575599
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d5529257a0e21c8a8f8c7a1a2f8381c10a6e3b7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1a5569f4f89cbe5320cfc348f2e2929b986736412f4cb864a62dd4584bde43a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346463"
 ---
 # <a name="vml-margin-right-attribute"></a>Atributo de Margin-Right VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Especifica el borde derecho del rectángulo que contiene la forma en relación con el delimitador de la forma. Lectura/escritura **Cadena**.
+Especifica el borde derecho del rectángulo que contiene la forma en relación con el delimitador de forma. Lectura/escritura **Cadena**.
 
 **Se aplica a**
 
@@ -28,33 +28,33 @@ Especifica el borde derecho del rectángulo que contiene la forma en relación c
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "margin-right: *Expression* " >
+<v: *element* style="margin-right: *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Style. marginRight = "*expresión*"
+*element* .style.marginright="*expression*"
 
-*expresión* = de *Element*. Style. marginRight
+*expresión* = *elemento*.style.marginright
 
 **Comentarios:**
 
-El atributo **margin-right** es similar al atributo **margin-right de** HTML estándar que se usa con las hojas de estilos.
+El **atributo Margin-Right** es similar al atributo estándar **margin-right** HTML que se usa con las hojas de estilos.
 
-Tenga en cuenta que se usa **marginRight** en lugar de **margin-right** para scripting. Tenga en cuenta también que si la **posición** es **absoluta**, el margen no aparecerá para cambiar.
+Tenga en cuenta **que se usa marginright** en lugar **de margin-right** para el scripting. Tenga en cuenta también que si **la posición** es **absoluta,** el margen no parecerá cambiar.
 
 Estos valores incluyen:
 
 
 
-| Value      | Descripción                                                                                                                                                                                       |
+| Valor      | Descripción                                                                                                                                                                                       |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Automático       | Posición predeterminada de un elemento en el flujo de la página.                                                                                                                                           |
-| units      | Predeterminada. Número con un designador de unidades absolutas (cm, mm, PDA, PT, PC o PX) o un designador de unidades relativas (EM o ex). Si no se especifica ninguna unidad, se supone que se trata de píxeles (PX). El valor predeterminado es 0. |
+| Auto       | Posición predeterminada de un elemento en el flujo de la página.                                                                                                                                           |
+| units      | Predeterminada. Número con un designador de unidades absolutas (cm, mm, in, pt, pc o px) o un designador de unidades relativas (em o ex). Si no se da ninguna unidad, se suponen píxeles (px). El valor predeterminado es 0. |
 | percentage | Valor expresado como porcentaje del alto del objeto primario.                                                                                                                                    |
 
 
 
- 
+ 
 
 *Atributo estándar de VML*
 
@@ -75,8 +75,8 @@ El margen derecho se establece en 25 píxeles.
 
 
 
-[Ejemplo de atributo margin-right](/previous-versions/bb229677(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo margin-right](/previous-versions/bb229677(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

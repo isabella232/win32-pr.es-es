@@ -1,5 +1,5 @@
 ---
-description: 'Método GetErrorEx de la Msvm_ConcreteJob clase : recupera los objetos de error del trabajo, si existe alguno.'
+description: 'Método GetErrorEx de la clase Msvm_ConcreteJob : recupera los objetos de error del trabajo, si existe alguno.'
 ms.assetid: B4B4F60C-9221-4125-8D42-F0F1D32C3E79
 title: Método GetErrorEx de la Msvm_ConcreteJob clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 67abbd06fdaae9c23cca53f5516586f45216f20d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f0e6af7883ec5aa1b7c0a714b822c8a0d8fd4a33dcda32ab4772e0573d60d046
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149807"
 ---
 # <a name="geterrorex-method-of-the-msvm_concretejob-class"></a>Método GetErrorEx de la clase ConcreteJob de \_ Msvm
 
@@ -86,7 +86,7 @@ Este método devuelve uno de los valores siguientes.
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -94,7 +94,7 @@ Este método devuelve uno de los valores siguientes.
 
 ## <a name="remarks"></a>Comentarios
 
-El acceso a [**la clase \_ Msvm ConcreteJob**](msvm-concretejob.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+El acceso a [**la clase \_ ConcreteJob de Msvm**](msvm-concretejob.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ El acceso a [**la clase \_ Msvm ConcreteJob**](msvm-concretejob.md) podría esta
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

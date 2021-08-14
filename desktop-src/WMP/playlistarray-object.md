@@ -1,9 +1,9 @@
 ---
 title: Objeto PlaylistArray
-description: El objeto PlaylistArray proporciona una manera de tener acceso a las listas de reproducción por número de índice.
+description: El objeto PlaylistArray proporciona una manera de acceder a las listas de reproducción por número de índice.
 ms.assetid: 8a29f36c-9c7c-4bc7-9adb-b34cc4231d81
 keywords:
-- Objeto PlaylistArray Media Player de Windows
+- Objeto PlaylistArray Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,40 +13,40 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2660b991cdc2885377140f2b99a647285fc4008c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e062ed6b7dee583bb68771dee243fe7271d95ba2728184bf453e5e77f9d21a3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103903968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334990"
 ---
 # <a name="playlistarray-object"></a>Objeto PlaylistArray
 
-El objeto **PlaylistArray** proporciona una manera de tener acceso a las listas de reproducción por número de índice.
+El **objeto PlaylistArray** proporciona una manera de acceder a las listas de reproducción por número de índice.
 
-El objeto **PlaylistArray** admite la siguiente propiedad.
+El **objeto PlaylistArray** admite la propiedad siguiente.
 
 
 
 | Propiedad                         | Descripción                                              |
 |----------------------------------|----------------------------------------------------------|
-| [count](playlistarray-count.md) | Recupera el número de listas de reproducción de la matriz de la lista de reproducción. |
+| [count](playlistarray-count.md) | Recupera el número de listas de reproducción de la matriz de listas de reproducción. |
 
 
 
- 
+ 
 
-El objeto **PlaylistArray** admite el método siguiente.
+El **objeto PlaylistArray** admite el método siguiente.
 
 
 
 | Método                         | Descripción                                                              |
 |--------------------------------|--------------------------------------------------------------------------|
-| [item](playlistarray-item.md) | Recupera el objeto de [lista de reproducción](playlist-object.md) en el índice especificado. |
+| [item](playlistarray-item.md) | Recupera el objeto [Playlist](playlist-object.md) en el índice especificado. |
 
 
 
- 
+ 
 
 Se tiene acceso al objeto **PlaylistArray** a través de los métodos siguientes.
 
@@ -58,20 +58,20 @@ Se tiene acceso al objeto **PlaylistArray** a través de los métodos siguientes
 
 
 
- 
+ 
 
-Para fines de Ilustración, *reproductor*. *playlistCollection*. **getAll** se usa en las secciones de sintaxis de referencia.
+Para fines ilustrativos, el *reproductor*. *playlistCollection*. **getAll se** usa en las secciones de sintaxis de referencia.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Referencia del modelo de objetos para scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

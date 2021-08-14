@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. Settings
+title: EFFECTS.settings
 description: El método de configuración muestra la página de atributos de la visualización actual, si está presente.
 ms.assetid: d5c858d4-b5ee-4490-bc58-1fd38bd6a250
 keywords:
-- EFFECTs. Settings Windows Media Player
+- Effects.settings Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 511e7d4a2890c45e30d497280c3907c3517ee761
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 556bbc388cac62d69758c7047d43a1a9a56a1be30015ebdb3bcfc27212e429c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339970"
 ---
-# <a name="effectssettings"></a>EFFECTs. Settings
+# <a name="effectssettings"></a>EFFECTS.settings
 
-El método de **configuración** muestra la página de atributos de la visualización actual, si está presente.
+El **método de** configuración muestra la página de atributos de la visualización actual, si está presente.
 
 ``` syntax
         elementID.settings()
@@ -40,17 +40,17 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**EFFECTS, elemento**](effects-element.md)
 </dt> </dl>
 
  

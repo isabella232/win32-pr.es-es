@@ -1,9 +1,9 @@
 ---
 title: ClosedCaption.SAMILang
-description: La propiedad SAMILang especifica o recupera el idioma que se muestra para los subtítulos (CC).
+description: La propiedad SAMILang especifica o recupera el idioma que se muestra para los subtítulos.
 ms.assetid: 990fb180-cb37-4022-b236-03f5acfd3ad3
 keywords:
-- ClosedCaption. SAMILang Windows Media Player
+- ClosedCaption.SAMILang Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae99b9a164e29b4adeb2fd7b23a1b79945dcb26e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c423b041601a38e81b1c4e83c34c010edb3365a4eb7e05596038fa887818ba1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342290"
 ---
 # <a name="closedcaptionsamilang"></a>ClosedCaption.SAMILang
 
-La propiedad **SAMILang** especifica o recupera el idioma que se muestra para los subtítulos (CC).
+La **propiedad SAMILang** especifica o recupera el idioma que se muestra para los subtítulos.
 
 ``` syntax
 player.closedCaption.SAMILang
@@ -31,11 +31,11 @@ player.closedCaption.SAMILang
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de lectura/escritura.
+Esta propiedad es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un archivo SAMI puede contener texto para uno o varios idiomas. Los idiomas disponibles para subtítulos (CC) se definen entre las etiquetas <STYLE> y </STYLE> del archivo Sami. Un identificador de idioma se especifica con una cadena alfanumérica única precedida de un punto (.). El nombre especificado para un idioma puede ser cualquier cadena. Por ejemplo, se puede utilizar lo siguiente para definir el Inglés de EE. UU.:
+Un archivo SAMI puede contener texto para uno o varios idiomas. Los idiomas disponibles para los subtítulos se definen entre las <STYLE> etiquetas y </STYLE> del archivo SAMI. Un identificador de idioma se especifica con una cadena alfanumérica única precedida de un punto (.). El nombre especificado para un idioma puede ser cualquier cadena. Por ejemplo, se podría usar lo siguiente para definir el inglés de EE. UU.:
 
 
 ```
@@ -45,15 +45,15 @@ Un archivo SAMI puede contener texto para uno o varios idiomas. Los idiomas disp
 
 
 
-Si no se especifica ningún idioma SAMI, se usa de forma predeterminada el primer idioma definido en el archivo SAMI.
+Si no se especifica ningún lenguaje SAMI, se usa de forma predeterminada el primer idioma definido en el archivo SAMI.
 
-El valor que se pasa mediante *ClosedCaption*. **SAMILang** debe coincidir con el atributo **Name** del especificador de lenguaje.
+Valor que se pasa mediante *ClosedCaption.* **SAMILang debe** coincidir con **el atributo Name** del especificador de lenguaje.
 
-**Windows Media Player 10 Mobile:** Esta propiedad es de solo lectura y siempre devuelve una cadena vacía.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad es de solo lectura y siempre devuelve una cadena vacía.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *ClosedCaption*. **SAMILang** en un elemento Select de HTML para especificar el idioma de la leyenda cerrada. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se *usa ClosedCaption*. **SAMILang en** un elemento SELECT HTML para especificar el lenguaje de subtítulos. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -80,21 +80,21 @@ En el siguiente ejemplo de JScript se usa *ClosedCaption*. **SAMILang** en un el
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
-[**Objeto ClosedCaption**](closedcaption-object.md)
+[**ClosedCaption (objeto)**](closedcaption-object.md)
 </dt> </dl>
 
  

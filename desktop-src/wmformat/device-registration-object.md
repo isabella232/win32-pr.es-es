@@ -3,29 +3,29 @@ title: Objeto de registro de dispositivos
 description: Objeto de registro de dispositivos
 ms.assetid: 6a23b314-deec-47aa-b12e-cb8f4ff71fb6
 keywords:
-- SDK de Windows Media Format, objetos de registro de dispositivos
-- Advanced Systems Format (ASF), objetos de registro de dispositivos
+- Windows SDK de formato multimedia, objetos de registro de dispositivos
+- Formato de sistemas avanzados (ASF), objetos de registro de dispositivos
 - ASF (formato de sistemas avanzados), objetos de registro de dispositivos
-- objetos, objetos de registro de dispositivos
+- objects,device registration objects
 - objetos de registro de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67ba6b72637cf7ba439d0bb38109645742cda4ac
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 4594b17f6824e4e3a9e7690e5ea933e24670e9c8b5d95feb16e555f577f87f1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105695540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118433891"
 ---
 # <a name="device-registration-object"></a>Objeto de registro de dispositivos
 
-El objeto de registro de dispositivos administra la base de datos de registro de dispositivos. Esta base de datos almacena información acerca de los dispositivos de red, como reproductores de vídeo Set-Top, que están conectados al equipo cliente. El propósito principal de la base de datos de registro de dispositivos es administrar los dispositivos que usan el protocolo DRM 10 de Windows Media para dispositivos de red para recibir flujos de datos protegidos.
+El objeto de registro de dispositivos administra la base de datos de registro de dispositivos. Esta base de datos almacena información sobre los dispositivos de red, como los reproductores de vídeo establecidos, que están conectados al equipo cliente. El propósito principal de la base de datos de registro de dispositivos es administrar los dispositivos que usan el protocolo DRM 10 de Windows Media para dispositivos de red para recibir flujos de datos protegidos.
 
-Si la aplicación admite Windows Media DRM 10 para dispositivos de red, debe usar las interfaces de este objeto para registrar los dispositivos de red y para validar dichos dispositivos. También puede usar la base de datos de registro de dispositivos para almacenar información acerca de los dispositivos de red que no usan Windows Media DRM 10 para dispositivos de red, aunque no toda la información de la base de datos se aplicará a dichos dispositivos.
+Si la aplicación admite Windows Media DRM 10 para dispositivos de red, debe usar las interfaces de este objeto para registrar dispositivos de red y validar esos dispositivos. También puede usar la base de datos de registro de dispositivos para almacenar información sobre los dispositivos de red que no usan drm de medios de Windows 10 para dispositivos de red, aunque no toda la información de la base de datos se aplicará a dichos dispositivos.
 
-La función [**WMCreateDeviceRegistration**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatedeviceregistration) crea el objeto de registro de dispositivos, que establece un puntero a una interfaz **IWMDeviceRegistration** . Los otros métodos del objeto de registro de dispositivos se pueden obtener llamando al método **QueryInterface** .
+La función [**WMCreateDeviceRegistration**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatedeviceregistration) crea el objeto de registro del dispositivo, que establece un puntero a una **interfaz IWMDeviceRegistration.** Los demás métodos del objeto de registro de dispositivo se pueden obtener llamando al **método QueryInterface.**
 
-El objeto de registro de dispositivos admite las siguientes interfaces.
+El objeto de registro de dispositivos admite las interfaces siguientes.
 
 
 
@@ -37,19 +37,19 @@ El objeto de registro de dispositivos admite las siguientes interfaces.
 
 
 
- 
+ 
 
-La aplicación debe implementar la siguiente interfaz de devolución de llamada para poder usar los métodos de la interfaz **IWMProximityDetection** .
+La aplicación debe implementar la siguiente interfaz de devolución de llamada para poder usar los métodos de la **interfaz IWMProximityDetection.**
 
 
 
 | Interfaz                                      | Descripción                                                                |
 |------------------------------------------------|----------------------------------------------------------------------------|
-| [**IWMStatusCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback) | Recibe mensajes de estado de los procesos que se ejecutan en un subproceso independiente. |
+| [**IWMStatusCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback) | Recibe mensajes de estado de procesos que se ejecutan en un subproceso independiente. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -58,9 +58,9 @@ La aplicación debe implementar la siguiente interfaz de devolución de llamada 
 [**Objects**](objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

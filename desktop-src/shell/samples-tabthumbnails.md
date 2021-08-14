@@ -1,5 +1,5 @@
 ---
-description: Muestra cómo una aplicación puede exponer varios destinos de conmutador (como para las pestañas) en un taskband y cómo proporcionar sus miniaturas.
+description: Muestra cómo una aplicación puede exponer varios destinos switch (como para las pestañas) en una banda de tareas y cómo proporcionar sus miniaturas.
 title: Ejemplo de TabThumbnails
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 323604d104be3432a5fc251901c4308bfc989f90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: abfabc93947f5eb583c4178fa47b20468eb7eaf9a8f651c76baf0c1e1256311e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219781"
 ---
 # <a name="tabthumbnails-sample"></a>Ejemplo de TabThumbnails
 
-Muestra cómo una aplicación puede exponer varios destinos de conmutador (como para las pestañas) en un taskband y cómo proporcionar sus miniaturas.
+Muestra cómo una aplicación puede exponer varios destinos switch (como para las pestañas) en una banda de tareas y cómo proporcionar sus miniaturas.
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,7 +34,7 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows 7               |
-| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
 
 
 
@@ -42,7 +42,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                                             |
+| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo de TabThumbnails](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TabThumbnails) |
 
@@ -50,19 +50,19 @@ En este tema se incluyen las siguientes secciones.
 
 Para compilar el ejemplo desde el símbolo del sistema:
 
-1.  Abra la ventana del símbolo del sistema y navegue hasta el directorio del proyecto **TabThumbnails** .
+1.  Abra la ventana del símbolo del sistema y vaya al directorio del proyecto **TabThumbnails.**
 2.  Escriba `msbuild TabThumbnails.sln`.
 
-Para compilar el ejemplo mediante Microsoft Visual Studio (preferido):
+Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida):
 
-1.  Abra el explorador de Windows y navegue hasta el directorio del proyecto **TabThumbnails** .
-2.  Haga doble clic en el icono del archivo TabThumbnails. sln para abrir el proyecto en Visual Studio.
-3.  En el menú **compilar** , seleccione **compilar solución**.
+1.  Abra Windows explorador y vaya al directorio del proyecto **TabThumbnails.**
+2.  Haga doble clic en el icono del archivo TabThumbnails.sln para abrir el proyecto en Visual Studio.
+3.  En el menú **Compilar**, seleccione **Compilar solución**.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-1.  Navegue hasta el directorio que contiene el nuevo ejecutable, mediante el símbolo del sistema o el explorador de Windows.
-2.  En la línea de comandos, escriba `TabThumbnails.exe` . Como alternativa, en el explorador de Windows, haga doble clic en el icono de TabThumbnails.exe.
+1.  Vaya al directorio que contiene el nuevo ejecutable, mediante el símbolo del sistema o Windows Explorador.
+2.  En la línea de comandos, escriba `TabThumbnails.exe` . Como alternativa, en Windows Explorer haga doble clic en el icono de TabThumbnails.exe.
 
  
 

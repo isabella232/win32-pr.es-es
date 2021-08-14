@@ -1,11 +1,11 @@
 ---
-title: Método ISoftKbd CreateSoftKeyboardWindow (Softkbdc. h)
-description: El método ISoftKbd CreateSoftKeyboardWindow crea una ventana de teclado en pantalla.
+title: Método ISoftKbd CreateSoftKeyboardWindow (Softkbdc.h)
+description: El método CreateSoftKeyboardWindow de ISoftKbd crea una ventana de teclado flexible.
 ms.assetid: e9aa9d88-d0bb-407f-9b53-98c8747be5d3
 keywords:
-- Método CreateSoftKeyboardWindow marco de trabajo de servicios de texto
-- Método CreateSoftKeyboardWindow marco de trabajo de servicios de texto, interfaz ISoftKbd
-- ISoftKbd interface Text Services Framework, método CreateSoftKeyboardWindow
+- Método CreateSoftKeyboardWindow Text Services Framework
+- Método CreateSoftKeyboardWindow Text Services Framework , interfaz ISoftKbd
+- Interfaz ISoftKbd Text Services Framework , método CreateSoftKeyboardWindow
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e0ed6f9f91f335945d40dd0b995226a400965ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7953ce70385585349ee905f83e999fb2fc4d71402d2baada413452c729032cc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117952734"
 ---
-# <a name="isoftkbdcreatesoftkeyboardwindow-method"></a>ISoftKbd:: CreateSoftKeyboardWindow (método)
+# <a name="isoftkbdcreatesoftkeyboardwindow-method"></a>ISoftKbd::CreateSoftKeyboardWindow (método)
 
-El método **ISoftKbd:: CreateSoftKeyboardWindow** crea una ventana de teclado en pantalla.
+El **método ISoftKbd::CreateSoftKeyboardWindow** crea una ventana de teclado flexible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,45 +47,45 @@ HRESULT CreateSoftKeyboardWindow(
 
 <dl> <dt>
 
-*hOwner* \[ de\]
+*hOwner* \[ En\]
 </dt> <dd>
 
-Identificador de la ventana que va a contener el teclado en pantalla.
+Identificador de la ventana para contener el teclado flexible.
 
 </dd> <dt>
 
-*\_ Tipo de TitleBar* \[ en\]
+*Tipo de barra \_ de título* \[ en\]
 </dt> <dd>
 
-Tipo de barra de título de la ventana de teclado en pantalla. Los tipos posibles se definen mediante la enumeración de [**\_ tipo TITLEBAR**](titlebar-type.md) .
+Tipo de barra de título para la ventana de teclado flexible. La enumeración [**TITLEBAR \_ TYPE**](titlebar-type.md) define los tipos posibles.
 
 </dd> <dt>
 
-*xPos* \[ de\]
+*xPos* \[ En\]
 </dt> <dd>
 
-Posición x de la esquina superior izquierda de la ventana de teclado en pantalla.
+Posición x de la esquina superior izquierda de la ventana de teclado flexible.
 
 </dd> <dt>
 
-*yPos* \[ de\]
+*yPos* \[ En\]
 </dt> <dd>
 
-Posición y de la esquina superior izquierda de la ventana de teclado en pantalla.
+Posición y de la esquina superior izquierda de la ventana de teclado flexible.
 
 </dd> <dt>
 
-*ancho* \[ de de\]
+*width* \[ En\]
 </dt> <dd>
 
-Ancho de la ventana de teclado en pantalla.
+Ancho de la ventana de teclado flexible.
 
 </dd> <dt>
 
-*alto* \[ de de\]
+*alto* \[ En\]
 </dt> <dd>
 
-Alto de la ventana de teclado en pantalla.
+Alto de la ventana de teclado flexible.
 
 </dd> </dl>
 
@@ -95,10 +95,10 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Value                                                                                        | Descripción                                    |
+| Valor                                                                                        | Descripción                                    |
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Método realizado correctamente.<br/>          |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o más parámetros no son válidos.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Método realizado correctamente.<br/>          |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o varios parámetros no son válidos.<br/> |
 
 
 
@@ -108,18 +108,18 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Redistribuible<br/>          | TSF 1,0 en Windows 2000 Professional<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                        |
+| Header<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -135,7 +135,7 @@ Este método puede devolver uno de estos valores.
 [**ISoftKbd::ShowSoftKeyboard**](isoftkbd-showsoftkeyboard.md)
 </dt> <dt>
 
-[**tipo de TITLEBAR \_**](titlebar-type.md)
+[**TITLEBAR \_ TYPE**](titlebar-type.md)
 </dt> </dl>
 
  

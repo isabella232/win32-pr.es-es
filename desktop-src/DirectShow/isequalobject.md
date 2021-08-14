@@ -1,7 +1,7 @@
 ---
 description: La función IsEqualObject comprueba si dos interfaces están en el mismo objeto.
 ms.assetid: 51325e05-5a7f-4a80-a12e-2e7dedc028e2
-title: Función IsEqualObject (Wxutil. h)
+title: Función IsEqualObject (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e959d687d7d6b11dc6055daeda789e728d875d70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e385cf887dceddcdc470b908d46f59405f573ab47837b26f8453ce6154eb0d72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817464"
 ---
-# <a name="isequalobject-function"></a>IsEqualObject función)
+# <a name="isequalobject-function"></a>Función IsEqualObject
 
 La `IsEqualObject` función comprueba si dos interfaces están en el mismo objeto.
 
@@ -59,7 +59,7 @@ Puntero a la otra interfaz.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si las interfaces están ambas en el mismo objeto o **false** en caso contrario.
+Devuelve **TRUE** si las interfaces están en el mismo objeto o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,12 +67,12 @@ Devuelve **true** si las interfaces están ambas en el mismo objeto o **false** 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

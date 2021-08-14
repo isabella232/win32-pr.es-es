@@ -1,10 +1,10 @@
 ---
-title: Enumeración MPDETECTION_STATE (MpClient. h)
-description: El estado de la amenaza detectada actualmente.
+title: MPDETECTION_STATE enumeración (MpClient.h)
+description: Estado de la amenaza detectada actualmente.
 ms.assetid: 293771FF-A210-41D0-88A5-3B52ACAA9295
 keywords:
-- MPDETECTION_STATE enumeración características de entorno heredado de Windows
-- PMPDETECTION_STATE el puntero de enumeración características de entorno heredado de Windows
+- MPDETECTION_STATE enumeración heredada de Windows environment
+- PMPDETECTION_STATE puntero de enumeración heredado Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9265a15641d2072d87b33af2782f17974bf07be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0443e0c47eef4d4943d39bd671c28c19db0ff5e1fbe79e5af8d034603b1ab78d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883522"
 ---
-# <a name="mpdetection_state-enumeration"></a>\_Enumeración de estado de MPDETECTION
+# <a name="mpdetection_state-enumeration"></a>Enumeración MPDETECTION \_ STATE
 
-El estado de la amenaza detectada actualmente.
+Estado de la amenaza detectada actualmente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -47,52 +47,52 @@ typedef enum tagMPDETECTION_STATE {
 
 <dl> <dt>
 
-<span id="MPDETECTION_STATE_UNKNOWN"></span><span id="mpdetection_state_unknown"></span>**Estado de MPDETECTION \_ \_ desconocido**
+<span id="MPDETECTION_STATE_UNKNOWN"></span><span id="mpdetection_state_unknown"></span>**ESTADO DE MPDETECTION \_ \_ DESCONOCIDO**
 </dt> <dd>
 
 En un estado de error.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_ACTIVE"></span><span id="mpdetection_state_active"></span>**Estado de MPDETECTION \_ \_ activo**
+<span id="MPDETECTION_STATE_ACTIVE"></span><span id="mpdetection_state_active"></span>**ESTADO DE MPDETECTION \_ \_ ACTIVO**
 </dt> <dd>
 
 Amenaza activa.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_FINISHED"></span><span id="mpdetection_state_finished"></span>**Estado de MPDETECTION \_ \_ finalizado**
+<span id="MPDETECTION_STATE_FINISHED"></span><span id="mpdetection_state_finished"></span>**ESTADO DE MPDETECTION \_ \_ FINALIZADO**
 </dt> <dd>
 
-Pendiente 24 horas hasta que se desactive el movimiento.
+Pendiente de 24 horas a un traslado a borrado.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_ADDITIONAL_ACTIONS"></span><span id="mpdetection_state_additional_actions"></span>**\_ \_ acciones adicionales de estado de MPDETECTION \_**
+<span id="MPDETECTION_STATE_ADDITIONAL_ACTIONS"></span><span id="mpdetection_state_additional_actions"></span>**ACCIONES ADICIONALES DE \_ ESTADO DE \_ MPDETECTION \_**
 </dt> <dd>
 
-Acciones adicionales necesarias.
+Se requieren acciones adicionales.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_FAILED"></span><span id="mpdetection_state_failed"></span>**\_error de estado de MPDETECTION \_**
+<span id="MPDETECTION_STATE_FAILED"></span><span id="mpdetection_state_failed"></span>**ERROR DE ESTADO \_ DE \_ MPDETECTION**
 </dt> <dd>
 
-Error de corrección no crítico.
+Error de corrección no crítica.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_CRITICALLY_FAILED"></span><span id="mpdetection_state_critically_failed"></span>**Estado de MPDETECTION de \_ \_ \_ error crítico**
+<span id="MPDETECTION_STATE_CRITICALLY_FAILED"></span><span id="mpdetection_state_critically_failed"></span>**ERROR CRÍTICO EN \_ EL ESTADO DE \_ MPDETECTION \_**
 </dt> <dd>
 
-Error crítico en la corrección.
+Error de corrección crítica.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_CLEARED"></span><span id="mpdetection_state_cleared"></span>**Estado de MPDETECTION \_ \_ desactivado**
+<span id="MPDETECTION_STATE_CLEARED"></span><span id="mpdetection_state_cleared"></span>**ESTADO DE MPDETECTION \_ \_ BORRADO**
 </dt> <dd>
 
-La amenaza no se muestra en la consulta de estado, solo en el historial.
+La amenaza no aparece en la consulta de estado, solo en el historial.
 
 </dd> </dl>
 
@@ -100,11 +100,11 @@ La amenaza no se muestra en la consulta de estado, solo en el historial.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

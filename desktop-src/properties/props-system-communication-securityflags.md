@@ -1,17 +1,17 @@
 ---
 description: Marcas de seguridad asociadas al elemento para indicar si el elemento está cifrado, firmado o habilitado para DRM.
 ms.assetid: ff13a941-4e62-4c13-9c74-99b39fb031e1
-title: System. Communication. SecurityFlags
+title: System.Communication.SecurityFlags
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcff7ac4838f747fadd173b2a7637444b830cb9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b041191f0ca8d60c3cb4f0c102dcce0a8374dbe1ca9b7526dac558c7691fcaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118055715"
 ---
-# <a name="systemcommunicationsecurityflags"></a>System. Communication. SecurityFlags
+# <a name="systemcommunicationsecurityflags"></a>System.Communication.SecurityFlags
 
 Marcas de seguridad asociadas al elemento para indicar si el elemento está cifrado, firmado o habilitado para DRM.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Int32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

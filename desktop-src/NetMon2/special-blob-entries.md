@@ -1,19 +1,19 @@
 ---
-description: En los ejemplos siguientes se usa la función SetStringInBlob para crear entradas de BLOB especiales.
+description: En los ejemplos siguientes se usa la función SetStringInBlob para crear entradas blob especiales.
 ms.assetid: 4a921b0d-9934-48e2-8837-be0bd7b7fa7a
-title: Entradas de BLOB especiales
+title: Entradas blob especiales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cfc40029e0a0f88c2f7bd242881b0d750a5dfa1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0659fa05219dcc715c6c00b3d28635e2500f73e4e5bece72049ee43839a0820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363143"
 ---
-# <a name="special-blob-entries"></a>Entradas de BLOB especiales
+# <a name="special-blob-entries"></a>Entradas blob especiales
 
-En los ejemplos siguientes se usa la función [**SetStringInBlob**](setstringinblob.md) para crear entradas de BLOB especiales.
+En los ejemplos siguientes se usa [**la función SetStringInBlob**](setstringinblob.md) para crear entradas blob especiales.
 
 ## <a name="npp-name"></a>Nombre de NPP
 
@@ -26,7 +26,7 @@ SetStringInBlob(
    "My NPP Name"); 
 ```
 
-## <a name="npp-class-identifier"></a>NPP (identificador de clase)
+## <a name="npp-class-identifier"></a>Identificador de clase NPP
 
 ``` syntax
 SetClassIDInBlob(
@@ -48,7 +48,7 @@ SetStringInBlob(
    "MyGetNPPBlobs");
 ```
 
-## <a name="tree-root-name-for-finder-ui"></a>Nombre de raíz de árbol para la interfaz de usuario del Finder
+## <a name="tree-root-name-for-finder-ui"></a>Nombre raíz del árbol para la interfaz de usuario de Finder
 
 ``` syntax
 SetStringInBlob(
@@ -59,7 +59,7 @@ SetStringInBlob(
    "My Tree Root name");
 ```
 
-## <a name="display-string-for-finder-ui"></a>Mostrar cadena para la interfaz de usuario del Finder
+## <a name="display-string-for-finder-ui"></a>Mostrar cadena para la interfaz de usuario de Finder
 
 ``` syntax
 SetStringInBlob(
@@ -72,7 +72,7 @@ SetStringInBlob(
 
 ## <a name="interface-tags"></a>Etiquetas de interfaz
 
-En este ejemplo se incluyen todas las interfaces admitidas por NPP.
+En este ejemplo se incluyen todas las interfaces compatibles con el NPP.
 
 ``` syntax
 SetBoolInBlob(  

@@ -1,24 +1,24 @@
 ---
-description: El método GetButtonRect recupera el rectángulo para el botón especificado, en coordenadas de ventana.
+description: El método GetButtonRect recupera el rectángulo del botón especificado, en coordenadas de ventana.
 ms.assetid: 359e9483-d7ba-45b0-882b-5a4c56dc0350
-title: Método GetButtonRect
+title: GetButtonRect (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 752c90637ee58aaa862245b29536dc71ad8e9a1c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1ba62c70d0cd061e7aec01da286f49c79e19a3b63dfdd9e2c3de8230339be478
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118000240"
 ---
-# <a name="getbuttonrect-method"></a>Método GetButtonRect
+# <a name="getbuttonrect-method"></a>GetButtonRect (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
 
  
 
-El `GetButtonRect` método recupera el rectángulo para el botón especificado, en coordenadas de ventana.
+El método recupera el rectángulo del botón especificado, en coordenadas `GetButtonRect` de ventana.
 
 ``` syntax
 [ oButton = ] MSWebDVD.GetButtonRect(iButton)
@@ -28,26 +28,26 @@ El `GetButtonRect` método recupera el rectángulo para el botón especificado, 
 
 <dl> <dt>
 
-<span id="iButton"></span><span id="ibutton"></span><span id="IBUTTON"></span>*iButton*
+<span id="iButton"></span><span id="ibutton"></span><span id="IBUTTON"></span>*Ibutton*
 </dt> <dd>
 
-Especifica el número de botón como un entero.
+Especifica el número de botón como entero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un objeto [DVDRect](dvdrect-object.md) que define el rectángulo.
+Devuelve un [objeto DVDRect](dvdrect-object.md) que define el rectángulo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este método al implementar el control de mouse personalizado después de establecer [**DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) en **true**.
+Use este método al implementar el control personalizado del mouse después de establecer [**DisableAutoMouseProcessing en**](disableautomouseprocessing-property.md) **true.**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**ButtonsAvailable**](buttonsavailable-property.md)
+[**Botones Disponibles**](buttonsavailable-property.md)
 </dt> <dt>
 
 [**CurrentButton**](currentbutton-property.md)

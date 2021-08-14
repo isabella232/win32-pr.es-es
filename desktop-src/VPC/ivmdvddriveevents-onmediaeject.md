@@ -1,11 +1,11 @@
 ---
-title: Método IVMDVDDriveEvents OnMediaEject (VPCCOMInterfaces. h)
-description: Recibe la notificación de que se ha expulsado el medio de la unidad. | Método IVMDVDDriveEvents OnMediaEject (VPCCOMInterfaces. h)
+title: Método IVMDVDDriveEvents OnMediaEject (VPCCOMInterfaces.h)
+description: Recibe la notificación de que los medios se han expulsado de la unidad. | Método IVMDVDDriveEvents OnMediaEject (VPCCOMInterfaces.h)
 ms.assetid: ec90fbce-7123-4bfa-abab-300e916fa089
 keywords:
-- Método OnMediaEject Virtual PC
-- Método OnMediaEject Virtual PC, interfaz IVMDVDDriveEvents
-- Interfaz IVMDVDDriveEvents Virtual PC, método OnMediaEject
+- OnMediaEject, método Virtual PC
+- Método OnMediaEject De PC virtual, interfaz IVMDVDDriveEvents
+- IVMDVDDriveEvents interface Virtual PC , Método OnMediaEject
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b66091dcc6cc5ee28ab6e0cb3d58e3e647e41cb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6e2fbf9ffe589597e1baab7c0b503cf94384cfa540749cfe49e083286f743370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117753756"
 ---
-# <a name="ivmdvddriveeventsonmediaeject-method"></a>IVMDVDDriveEvents:: OnMediaEject (método)
+# <a name="ivmdvddriveeventsonmediaeject-method"></a>IVMDVDDriveEvents::OnMediaEject (método)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use el proveedor WMI de [Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recibe la notificación de que se ha expulsado el medio de la unidad.
+Recibe la notificación de que los medios se han expulsado de la unidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,37 +44,37 @@ HRESULT OnMediaEject(
 
 <dl> <dt>
 
-*mediaPath* \[ de\]
+*mediaPath* \[ En\]
 </dt> <dd>
 
-La letra de la unidad del host, o ruta de acceso, a la imagen ISO.
+La letra de unidad del host, o ruta de acceso, a la imagen ISO.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama a este método cuando se expulsa un medio (una imagen ISO o un disco de una unidad de host). El programa cliente debe implementar este método de interfaz para recibir la notificación del \_ evento VmDVDDriveEvent EJECT que se origina desde [**IVMDVDDrive**](ivmdvddrive.md).
+Se llama a este método cuando se expulsa un medio (una imagen ISO o un disco en una unidad host). El programa cliente debe implementar este método de interfaz para recibir la notificación del evento vmDVDDriveEvent OnEject que se \_ origina en [**IVMDVDDrive**](ivmdvddrive.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | DIID \_ IVMDVDDriveEvents se define como c2a7d8e9-e76c-4eb8-94f7-71a5122d249b<br/>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

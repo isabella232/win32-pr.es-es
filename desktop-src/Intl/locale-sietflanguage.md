@@ -1,19 +1,19 @@
 ---
-description: configuración regional \_ SIETFLANGUAGE
+description: CONFIGURACIÓN REGIONAL \_ SIETFLANGUAGE
 ms.assetid: b42d782a-a252-421b-b399-73ca47136313
 title: LOCALE_SIETFLANGUAGE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7293bafd58065cca0741efbc07962a5171e81b08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc69f1e925dd6fc538bc6fc3d2799e73596fbacc2900b86738455dddc7ceb49a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118391460"
 ---
-# <a name="locale_sietflanguage"></a>configuración regional \_ SIETFLANGUAGE
+# <a name="locale_sietflanguage"></a>CONFIGURACIÓN REGIONAL \_ SIETFLANGUAGE
 
-En desuso para Windows Vista y versiones posteriores. Lenguaje IETF.
+En desuso Windows Vista y versiones posteriores. Lenguaje IETF.
 
  
 

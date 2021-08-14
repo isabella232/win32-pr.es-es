@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Operations-for-AZ-Task-BL
-description: Vínculo hacia atrás desde Az-Operation a Az-Task objetos que se vinculan a él.
+title: Atributo ms-DS-Operations-For-Az-Task-BL
+description: Vínculo hacia atrás Az-Operation a Az-Task objetos que se vinculan a él.
 ms.assetid: e369c2bb-876d-4dc1-8c09-c9a60b958428
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Operations-for-AZ-Task-BL
-- Esquema de AD de atributo msDS-OperationsForAzTaskBL
+- Esquema de AD del atributo ms-DS-Operations-For-Az-Task-BL
+- Esquema de AD del atributo msDS-OperationsForAzTaskBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab3a30b95a9a4d85fd6575c94fb6c7ab6ef34db5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6c99863d405f3f1f171b193c14cf208028f4d4132dfd7811dda2222927104853
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683435"
 ---
-# <a name="ms-ds-operations-for-az-task-bl-attribute"></a>atributo MS-DS-Operations-for-AZ-Task-BL
+# <a name="ms-ds-operations-for-az-task-bl-attribute"></a>Atributo ms-DS-Operations-For-Az-Task-BL
 
-Vínculo hacia atrás desde Az-Operation a Az-Task objetos que se vinculan a él.
+Vínculo hacia atrás Az-Operation a Az-Task objetos que se vinculan a él.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-Operations-for-AZ-Task-BL         |
-| Nombre para mostrar de LDAP | msDS-OperationsForAzTaskBL              |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Operations-For-Az-Task-BL         |
+| Ldap-Display-Name | msDS-OperationsForAzTaskBL              |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | El sistema establece este valor.        |
 | Attribute-Id      | 1.2.840.113556.1.4.1809                 |
-| System-ID-GUID    | a637d211-5739-4ed1-89b2-88974548bc59    |
+| System-Id-Guid    | a637d211-5739-4ed1-89b2-88974548bc59    |
 | Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -54,13 +54,13 @@ Vínculo hacia atrás desde Az-Operation a Az-Task objetos que se vinculan a él
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2019                            |
+| Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,13 +75,13 @@ Vínculo hacia atrás desde Az-Operation a Az-Task objetos que se vinculan a él
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2019                            |
+| Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -96,13 +96,13 @@ Vínculo hacia atrás desde Az-Operation a Az-Task objetos que se vinculan a él
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2019                            |
+| Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -117,13 +117,13 @@ Vínculo hacia atrás desde Az-Operation a Az-Task objetos que se vinculan a él
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2019                            |
+| Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -138,13 +138,13 @@ Vínculo hacia atrás desde Az-Operation a Az-Task objetos que se vinculan a él
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2019                            |
+| Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
