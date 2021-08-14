@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método que se obtiene.
+description: Función de proxy para el método GetSize.
 ms.assetid: a9b7d01c-78d9-47b8-a373-a7c49f7bccfd
-title: IWICBitmapSource_GetSize_Proxy función)
+title: IWICBitmapSource_GetSize_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 978748125b7c7f643027077182b9136b577cb00c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a0892fea469180a0d06eded30e4459667513acbf66d56161d81788c1a17820f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118711656"
 ---
-# <a name="iwicbitmapsource_getsize_proxy-function"></a>\_ \_ Función de proxy de IWICBitmapSource
+# <a name="iwicbitmapsource_getsize_proxy-function"></a>Función de proxy GetSize de IWICBitmapSource \_ \_
 
-Función de proxy para el método que se [**obtiene**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize) .
+Función de proxy para el [**método GetSize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,38 +42,38 @@ HRESULT IWICBitmapSource_GetSize_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
-Puntero a este objeto [_ *IWICBitmapSource* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) .
+Puntero a este [**objeto IWICBitmapSource.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)
 
 </dd> <dt>
 
-*puiWidth* \[ enuncia\]
+*puiWidth* \[ out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
-Puntero que recibe el ancho en píxeles del mapa de bits.
+Puntero que recibe el ancho de píxel del mapa de bits.
 
 </dd> <dt>
 
-_puiHeight * \[ out\]
+*puiHeight* \[ out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
-Puntero que recibe el alto en píxeles del mapa de bits.
+Puntero que recibe el alto de píxeles del mapa de bits
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -83,9 +83,9 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

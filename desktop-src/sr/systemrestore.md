@@ -1,10 +1,10 @@
 ---
-title: Clase SystemRestore
+title: SystemRestore (clase)
 description: Proporciona métodos para deshabilitar y habilitar la supervisión, enumerar los puntos de restauración disponibles e iniciar una restauración en el sistema local.
 ms.assetid: 87216a56-6d40-44ea-a1ab-d43590b639a4
 keywords:
-- Restauración del sistema de la clase SystemRestore
-- SystemRestore (clase) restauración del sistema, descrito
+- SystemRestore class Restaurar sistema
+- Clase SystemRestore Restaurar sistema , descrito
 topic_type:
 - apiref
 api_name:
@@ -20,14 +20,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64d2b609a7a49a9b319c15745600aa54193350e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ca781f960f51c8f7804d56f3b2f5531517c3f16505f40dd48d442857fa58bf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967994"
 ---
-# <a name="systemrestore-class"></a>Clase SystemRestore
+# <a name="systemrestore-class"></a>SystemRestore (clase)
 
 Proporciona métodos para deshabilitar y habilitar la supervisión, enumerar los puntos de restauración disponibles e iniciar una restauración en el sistema local.
 
@@ -46,24 +46,24 @@ class SystemRestore
 
 ## <a name="members"></a>Miembros
 
-La clase **SystemRestore** tiene estos tipos de miembros:
+La **clase SystemRestore** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **SystemRestore** tiene estos métodos.
+La **clase SystemRestore** tiene estos métodos.
 
 
 
 | Método                                                             | Descripción                                                 |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|
 | [**CreateRestorePoint**](createrestorepoint-systemrestore.md)     | Crea un punto de restauración.<br/>                         |
-| [**Disable**](disable-systemrestore.md)                           | Deshabilita la supervisión en una unidad determinada.<br/>       |
+| [**Deshabilitar**](disable-systemrestore.md)                           | Deshabilita la supervisión en una unidad determinada.<br/>       |
 | [**Habilitar**](enable-systemrestore.md)                             | Habilita la supervisión en una unidad determinada.<br/>        |
 | [**GetLastRestoreStatus**](getlastrestorestatus-systemrestore.md) | Recupera el estado de la última restauración del sistema.<br/> |
-| [**Restaurar**](restore-systemrestore.md)                           | Inicia una restauración del sistema.<br/>                      |
+| [**Restauración**](restore-systemrestore.md)                           | Inicia una restauración del sistema.<br/>                      |
 
 
 
@@ -71,55 +71,55 @@ La clase **SystemRestore** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **SystemRestore** tiene estas propiedades.
+La **clase SystemRestore** tiene estas propiedades.
 
 <dl> <dt>
 
 **CreationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **Cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La hora a la que se produjo el cambio de estado.
+Hora a la que se produjo el cambio de estado.
 
 </dd> <dt>
 
 **Descripción**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **Cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La descripción que se va a mostrar para que el usuario pueda identificar fácilmente un punto de restauración. La longitud máxima de una cadena ANSI es MAX \_ desc. La longitud máxima de una cadena Unicode es MAX \_ DESC \_ W. Para obtener más información, vea [texto de descripción de punto de restauración](restore-point-description-text.md).
+Descripción que se va a mostrar para que el usuario pueda identificar fácilmente un punto de restauración. La longitud máxima de una cadena ANSI es MAX \_ DESC. La longitud máxima de una cadena Unicode es MAX \_ DESC \_ W. Para obtener más información, vea [Texto de descripción del punto de restauración.](restore-point-description-text.md)
 
 </dd> <dt>
 
 **EventType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Tipo del evento. Este miembro puede ser uno de los valores siguientes.
+Tipo del evento. Este miembro puede ser uno de los siguientes valores.
 
 
 
-| Value                                                                                                                                                                                                                                                           | Significado                                                                                                                                                                                         |
+| Valor                                                                                                                                                                                                                                                           | Significado                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BEGIN_NESTED_SYSTEM_CHANGE"></span><span id="begin_nested_system_change"></span><dl> <dt>**Inicio \_ de Cambio de \_ sistema \_ anidado**</dt> <dt>102</dt> </dl> | Ha empezado un cambio en el sistema. Una llamada subsiguiente anidada no crea un nuevo punto de restauración. <br/> Las llamadas subsiguientes deben usar END \_ Nested \_ System \_ Change, no end \_ System \_ Change.<br/> |
-| <span id="BEGIN_SYSTEM_CHANGE"></span><span id="begin_system_change"></span><dl> <dt>**Inicio \_ de \_Cambio del sistema**</dt> <dt>100</dt> </dl>                       | Ha empezado un cambio en el sistema.<br/>                                                                                                                                                           |
-| <span id="END_NESTED_SYSTEM_CHANGE"></span><span id="end_nested_system_change"></span><dl> <dt>**Fin \_ de Cambio de \_ sistema \_ anidado**</dt> <dt>103</dt> </dl>       | Ha finalizado un cambio de sistema.<br/>                                                                                                                                                           |
-| <span id="END_SYSTEM_CHANGE"></span><span id="end_system_change"></span><dl> <dt>**Fin \_ de \_Cambio del sistema**</dt> <dt>101</dt> </dl>                             | Ha finalizado un cambio de sistema.<br/>                                                                                                                                                           |
+| <span id="BEGIN_NESTED_SYSTEM_CHANGE"></span><span id="begin_nested_system_change"></span><dl> <dt>**BEGIN \_ CAMBIO \_ DEL \_ SISTEMA ANIDADO**</dt> <dt>102</dt> </dl> | Se ha iniciado un cambio en el sistema. Una llamada anidada posterior no crea un nuevo punto de restauración. <br/> Las llamadas posteriores deben usar END \_ NESTED \_ SYSTEM \_ CHANGE, no END SYSTEM \_ \_ CHANGE.<br/> |
+| <span id="BEGIN_SYSTEM_CHANGE"></span><span id="begin_system_change"></span><dl> <dt>**BEGIN \_ CAMBIO \_ DEL**</dt> <dt>SISTEMA 100</dt> </dl>                       | Se ha iniciado un cambio en el sistema.<br/>                                                                                                                                                           |
+| <span id="END_NESTED_SYSTEM_CHANGE"></span><span id="end_nested_system_change"></span><dl> <dt>**END \_ CAMBIO \_ DEL \_ SISTEMA ANIDADO**</dt> <dt>103</dt> </dl>       | Ha finalizado un cambio del sistema.<br/>                                                                                                                                                           |
+| <span id="END_SYSTEM_CHANGE"></span><span id="end_system_change"></span><dl> <dt>**END \_ CAMBIO \_ DEL**</dt> <dt>SISTEMA 101</dt> </dl>                             | Ha finalizado un cambio del sistema.<br/>                                                                                                                                                           |
 
 
 
@@ -130,23 +130,23 @@ Tipo del evento. Este miembro puede ser uno de los valores siguientes.
 **RestorePointType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El tipo de punto de restauración. Este miembro puede ser uno de los valores siguientes.
+Tipo de punto de restauración. Este miembro puede ser uno de los siguientes valores.
 
 
 
-| Value                                                                                                                                                                                                                                          | Significado                                                                                                                                                       |
+| Valor                                                                                                                                                                                                                                          | Significado                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="APPLICATION_INSTALL"></span><span id="application_install"></span><dl> <dt>**Aplicación \_ de INSTALAR**</dt> <dt>0</dt> </dl>         | Se ha instalado una aplicación.<br/>                                                                                                                 |
-| <span id="APPLICATION_UNINSTALL"></span><span id="application_uninstall"></span><dl> <dt>**Aplicación \_ de Desinstalar**</dt> <dt>1</dt> </dl>   | Se ha desinstalado una aplicación.<br/>                                                                                                               |
-| <span id="CANCELLED_OPERATION"></span><span id="cancelled_operation"></span><dl> <dt>**Cancelado \_ OPERACIÓN**</dt> <dt>13</dt> </dl>        | Una aplicación debe eliminar el punto de restauración que creó. Por ejemplo, una aplicación usaría esta marca cuando un usuario cancela una instalación. <br/> |
-| <span id="DEVICE_DRIVER_INSTALL"></span><span id="device_driver_install"></span><dl> <dt>**Dispositivo \_ de \_Instalación del controlador**</dt> <dt>10</dt> </dl> | Se ha instalado un controlador de dispositivo.<br/>                                                                                                                |
-| <span id="MODIFY_SETTINGS"></span><span id="modify_settings"></span><dl> <dt>**Modificar \_ CONFIGURACIÓN**</dt> <dt>12</dt> </dl>                    | Una aplicación tiene características agregadas o eliminadas.<br/>                                                                                                  |
+| <span id="APPLICATION_INSTALL"></span><span id="application_install"></span><dl> <dt>**APLICACIÓN \_ INSTALL**</dt> <dt>0</dt> </dl>         | Se ha instalado una aplicación.<br/>                                                                                                                 |
+| <span id="APPLICATION_UNINSTALL"></span><span id="application_uninstall"></span><dl> <dt>**APLICACIÓN \_ UNINSTALL**</dt> <dt>1</dt> </dl>   | Se ha desinstalado una aplicación.<br/>                                                                                                               |
+| <span id="CANCELLED_OPERATION"></span><span id="cancelled_operation"></span><dl> <dt>**CANCELLED \_ OPERACIÓN**</dt> <dt>13</dt> </dl>        | Una aplicación debe eliminar el punto de restauración que creó. Por ejemplo, una aplicación usaría esta marca cuando un usuario cancela una instalación. <br/> |
+| <span id="DEVICE_DRIVER_INSTALL"></span><span id="device_driver_install"></span><dl> <dt>**DISPOSITIVO \_ INSTALACIÓN \_ DEL CONTROLADOR**</dt> <dt>10</dt> </dl> | Se ha instalado un controlador de dispositivo.<br/>                                                                                                                |
+| <span id="MODIFY_SETTINGS"></span><span id="modify_settings"></span><dl> <dt>**MODIFY \_ CONFIGURACIÓN**</dt> <dt>12</dt> </dl>                    | Una aplicación ha tenido características agregadas o eliminadas.<br/>                                                                                                  |
 
 
 
@@ -157,26 +157,26 @@ El tipo de punto de restauración. Este miembro puede ser uno de los valores sig
 **SequenceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Número de secuencia del punto de restauración.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede obtener una lista de puntos de restauración mediante el método [**SWbemServices. instances**](/windows/desktop/WmiSdk/swbemservices-instancesof) para recuperar una colección de objetos **SystemRestore** . Puede usar las propiedades de clase para identificar el punto de restauración.
+Puede obtener una lista de puntos de restauración mediante el método [**SWbemServices.InstancesOf**](/windows/desktop/WmiSdk/swbemservices-instancesof) para recuperar una colección de **objetos SystemRestore.** Puede usar las propiedades de clase para identificar el punto de restauración.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente script de ejemplo se enumeran los puntos de restauración actuales.
+El siguiente script de ejemplo enumera los puntos de restauración actuales.
 
 
 ```VB
@@ -197,16 +197,16 @@ next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                       |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                         |
 | Espacio de nombres<br/>                | Raíz \\ predeterminada<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>MOF</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_OPERATION_TYPE (Winbio \_ Types. h)
-description: Especifique el tipo de operación asincrónica que se va a realizar.
+title: WINBIO_OPERATION_TYPE constantes (Winbio \_ types.h)
+description: Especifique el tipo de operación asincrónica que se está realizando.
 ms.assetid: D4ECEF91-BEC7-4A42-8808-F09F5C141180
 topic_type:
 - apiref
@@ -42,20 +42,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b83f32b9f98a24d0ed4d9995bf5fcb7eaa3a2b6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b39dd6e2656ad73623df9d6a92d514e90371bc3761563e5f24c41211680c2455
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909954"
 ---
-# <a name="winbio_operation_type-constants"></a>Constantes de tipo de \_ operación WINBIO \_
+# <a name="winbio_operation_type-constants"></a>Constantes DE \_ TIPO DE \_ OPERACIÓN WINBIO
 
-Las siguientes constantes pueden ser devueltas por el Plataforma de biometría de Windows en [**un \_ \_ resultado asincrónico de WINBIO**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) para especificar el tipo de operación asincrónica que se va a realizar.
+El marco biométrico de Windows puede devolver las siguientes constantes en un RESULTADO [**\_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) de WINBIO para especificar el tipo de operación asincrónica que se está realizando.
 
 <dl> <dt>
 
-<span id="WINBIO_OPERATION_NONE"></span><span id="winbio_operation_none"></span>**operación de WINBIO \_ \_ ninguna**
+<span id="WINBIO_OPERATION_NONE"></span><span id="winbio_operation_none"></span>**OPERACIÓN WINBIO \_ \_ NONE**
 </dt> <dd> <dl> <dt>
 
 0
@@ -68,7 +68,7 @@ No se ha identificado ninguna operación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_OPEN"></span><span id="winbio_operation_open"></span>**\_operación WINBIO \_ abierta**
+<span id="WINBIO_OPERATION_OPEN"></span><span id="winbio_operation_open"></span>**OPERACIÓN WINBIO \_ \_ ABIERTA**
 </dt> <dd> <dl> <dt>
 
 1
@@ -76,12 +76,12 @@ No se ha identificado ninguna operación.
 
 
 
-Se abrió una sesión biométrica. Para obtener más información, consulte [**WinBioAsyncOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncopensession).
+Se ha abierto una sesión biométrica. Para obtener más información, [**vea WinBioAsyncOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncopensession).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_CLOSE"></span><span id="winbio_operation_close"></span>**cierre de la \_ operación WINBIO \_**
+<span id="WINBIO_OPERATION_CLOSE"></span><span id="winbio_operation_close"></span>**OPERACIÓN \_ WINBIO \_ CLOSE**
 </dt> <dd> <dl> <dt>
 
 2
@@ -89,12 +89,12 @@ Se abrió una sesión biométrica. Para obtener más información, consulte [**W
 
 
 
-Se cerró una sesión biométrica. Para obtener más información, vea [**WinBioCloseSession**](/windows/desktop/api/Winbio/nf-winbio-winbioclosesession).
+Se cerró una sesión biométrica. Para obtener más información, [**vea WinBioCloseSession**](/windows/desktop/api/Winbio/nf-winbio-winbioclosesession).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_VERIFY"></span><span id="winbio_operation_verify"></span>**comprobación de la \_ operación WINBIO \_**
+<span id="WINBIO_OPERATION_VERIFY"></span><span id="winbio_operation_verify"></span>**COMPROBACIÓN DE \_ LA OPERACIÓN \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 3
@@ -102,12 +102,12 @@ Se cerró una sesión biométrica. Para obtener más información, vea [**WinBio
 
 
 
-Se ha comprobado un ejemplo biométrico con respecto a una identidad de usuario. Para obtener más información, vea [**WinBioVerify**](/windows/desktop/api/Winbio/nf-winbio-winbioverify).
+Se comprobó una muestra biométrica con una identidad de usuario. Para obtener más información, [**consulta WinBioVerify**](/windows/desktop/api/Winbio/nf-winbio-winbioverify).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_IDENTIFY"></span><span id="winbio_operation_identify"></span>**identificación de la \_ operación WINBIO \_**
+<span id="WINBIO_OPERATION_IDENTIFY"></span><span id="winbio_operation_identify"></span>**IDENTIFICACIÓN DE \_ LA OPERACIÓN \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 4
@@ -115,12 +115,12 @@ Se ha comprobado un ejemplo biométrico con respecto a una identidad de usuario.
 
 
 
-Se capturó un ejemplo biométrico y se comparaba con una plantilla existente. Para obtener más información, vea [**WinBioIdentify**](/windows/desktop/api/Winbio/nf-winbio-winbioidentify).
+Se capturó un ejemplo biométrico y se comparó con una plantilla existente. Para obtener más información, [**consulta WinBioIdentify.**](/windows/desktop/api/Winbio/nf-winbio-winbioidentify)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_LOCATE_SENSOR"></span><span id="winbio_operation_locate_sensor"></span>**\_operación WINBIO \_ Buscar \_ sensor**
+<span id="WINBIO_OPERATION_LOCATE_SENSOR"></span><span id="winbio_operation_locate_sensor"></span>**SENSOR DE \_ LOCALIZACIÓN DE \_ OPERACIÓN WINBIO \_**
 </dt> <dd> <dl> <dt>
 
 5
@@ -128,12 +128,12 @@ Se capturó un ejemplo biométrico y se comparaba con una plantilla existente. P
 
 
 
-Se recuperó el número de identificación de una unidad biométrica. Para obtener más información, vea [**WinBioLocateSensor**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensor).
+Se recuperó el número de identificador de una unidad biométrica. Para obtener más información, [**consulta WinBioLocateSensor**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensor).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENROLL_BEGIN"></span><span id="winbio_operation_enroll_begin"></span>**Inicio de la operación de WINBIO \_ \_ \_**
+<span id="WINBIO_OPERATION_ENROLL_BEGIN"></span><span id="winbio_operation_enroll_begin"></span>**WINBIO \_ OPERATION \_ ENROLL \_ BEGIN**
 </dt> <dd> <dl> <dt>
 
 6
@@ -141,12 +141,12 @@ Se recuperó el número de identificación de una unidad biométrica. Para obten
 
 
 
-Se inició una secuencia de inscripción biométrica. Para obtener más información, vea [**WinBioEnrollBegin**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollbegin).
+Se inició una secuencia de inscripción biométrica. Para obtener más información, [**consulta WinBioEnrollBegin.**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollbegin)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENROLL_CAPTURE"></span><span id="winbio_operation_enroll_capture"></span>**captura de la operación de WINBIO de \_ \_ inscripción \_**
+<span id="WINBIO_OPERATION_ENROLL_CAPTURE"></span><span id="winbio_operation_enroll_capture"></span>**WINBIO \_ OPERATION \_ ENROLL \_ CAPTURE**
 </dt> <dd> <dl> <dt>
 
 7
@@ -154,12 +154,12 @@ Se inició una secuencia de inscripción biométrica. Para obtener más informac
 
 
 
-Se ha capturado una muestra biométrica y se ha agregado a la plantilla. Para obtener más información, vea [**WinBioEnrollCapture**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcapture).
+Se capturó una muestra biométrica y se agregó a la plantilla. Para obtener más información, [**consulta WinBioEnrollCapture**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcapture).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENROLL_COMMIT"></span><span id="winbio_operation_enroll_commit"></span>**operación de inscripción de WINBIO de \_ \_ \_ confirmación**
+<span id="WINBIO_OPERATION_ENROLL_COMMIT"></span><span id="winbio_operation_enroll_commit"></span>**CONFIRMACIÓN DE \_ INSCRIPCIÓN \_ DE OPERACIÓN WINBIO \_**
 </dt> <dd> <dl> <dt>
 
 8
@@ -167,12 +167,12 @@ Se ha capturado una muestra biométrica y se ha agregado a la plantilla. Para ob
 
 
 
-Se finalizó una plantilla biométrica pendiente. Para obtener más información, vea [**WinBioEnrollCommit**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcommit).
+Se finalizó una plantilla biométrica pendiente. Para obtener más información, [**consulta WinBioEnrollCommit.**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcommit)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENROLL_DISCARD"></span><span id="winbio_operation_enroll_discard"></span>**descartar la operación de WINBIO \_ \_ \_**
+<span id="WINBIO_OPERATION_ENROLL_DISCARD"></span><span id="winbio_operation_enroll_discard"></span>**DESCARTE DE \_ INSCRIPCIÓN DE \_ OPERACIÓN WINBIO \_**
 </dt> <dd> <dl> <dt>
 
 9
@@ -180,12 +180,12 @@ Se finalizó una plantilla biométrica pendiente. Para obtener más información
 
 
 
-Se descartó una plantilla biométrica pendiente. Para obtener más información, vea [**WinBioEnrollDiscard**](/windows/desktop/api/Winbio/nf-winbio-winbioenrolldiscard).
+Se ha descartado una plantilla biométrica pendiente. Para obtener más información, [**consulta WinBioEnrollDiscard**](/windows/desktop/api/Winbio/nf-winbio-winbioenrolldiscard).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENUM_ENROLLMENTS"></span><span id="winbio_operation_enum_enrollments"></span>**\_ \_ inscripciones de enumeración de operación WINBIO \_**
+<span id="WINBIO_OPERATION_ENUM_ENROLLMENTS"></span><span id="winbio_operation_enum_enrollments"></span>**INSCRIPCIONES DE \_ \_ ENUMERACIÓN DE OPERACIONES WINBIO \_**
 </dt> <dd> <dl> <dt>
 
 10
@@ -193,12 +193,12 @@ Se descartó una plantilla biométrica pendiente. Para obtener más información
 
 
 
-Se enumeraron los subfactores de una plantilla determinada. Para obtener más información, vea [**WinBioEnumEnrollments**](/windows/desktop/api/Winbio/nf-winbio-winbioenumenrollments).
+Se enumeraron los subfactores de una plantilla determinada. Para obtener más información, [**consulta WinBioEnumEnrollments**](/windows/desktop/api/Winbio/nf-winbio-winbioenumenrollments).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_DELETE_TEMPLATE"></span><span id="winbio_operation_delete_template"></span>**WINBIO \_ operación \_ eliminar \_ plantilla**
+<span id="WINBIO_OPERATION_DELETE_TEMPLATE"></span><span id="winbio_operation_delete_template"></span>**PLANTILLA DE \_ ELIMINACIÓN DE \_ OPERACIÓN \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 11
@@ -206,12 +206,12 @@ Se enumeraron los subfactores de una plantilla determinada. Para obtener más in
 
 
 
-Se eliminó una plantilla biométrica del almacén. Para obtener más información, vea [**WinBioDeleteTemplate**](/windows/desktop/api/Winbio/nf-winbio-winbiodeletetemplate).
+Se eliminó una plantilla biométrica del almacén. Para obtener más información, [**vea WinBioDeleteTemplate**](/windows/desktop/api/Winbio/nf-winbio-winbiodeletetemplate).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_CAPTURE_SAMPLE"></span><span id="winbio_operation_capture_sample"></span>**\_ejemplo de \_ captura de operación de WINBIO \_**
+<span id="WINBIO_OPERATION_CAPTURE_SAMPLE"></span><span id="winbio_operation_capture_sample"></span>**EJEMPLO DE CAPTURA \_ DE OPERACIÓN \_ \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 12
@@ -219,12 +219,12 @@ Se eliminó una plantilla biométrica del almacén. Para obtener más informaci�
 
 
 
-Se capturó un ejemplo biométrico. Para obtener más información, vea [**WinBioCaptureSample**](/windows/desktop/api/Winbio/nf-winbio-winbiocapturesample).
+Se capturó una muestra biométrica. Para obtener más información, [**vea WinBioCaptureSample**](/windows/desktop/api/Winbio/nf-winbio-winbiocapturesample).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_GET_PROPERTY"></span><span id="winbio_operation_get_property"></span>**\_propiedad de operación \_ Get \_ de WINBIO**
+<span id="WINBIO_OPERATION_GET_PROPERTY"></span><span id="winbio_operation_get_property"></span>**WINBIO \_ OPERATION \_ GET \_ PROPERTY**
 </dt> <dd> <dl> <dt>
 
 13
@@ -232,12 +232,12 @@ Se capturó un ejemplo biométrico. Para obtener más información, vea [**WinBi
 
 
 
-Se recuperó una sesión biométrica, una unidad o una propiedad de plantilla. Para obtener más información, vea [**WinBioGetProperty**](/windows/desktop/api/Winbio/nf-winbio-winbiogetproperty).
+Se recuperó una sesión biométrica, una unidad o una propiedad de plantilla. Para obtener más información, [**vea WinBioGetProperty**](/windows/desktop/api/Winbio/nf-winbio-winbiogetproperty).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_SET_PROPERTY"></span><span id="winbio_operation_set_property"></span>**\_propiedad de \_ conjunto de operación WINBIO \_**
+<span id="WINBIO_OPERATION_SET_PROPERTY"></span><span id="winbio_operation_set_property"></span>**PROPIEDAD SET \_ DE OPERACIÓN \_ \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 14
@@ -245,12 +245,12 @@ Se recuperó una sesión biométrica, una unidad o una propiedad de plantilla. P
 
 
 
-Se estableció una sesión biométrica, una unidad, una plantilla o una propiedad de la cuenta. Para obtener más información, vea [**WinBioSetProperty**](/windows/desktop/api/winbio/nf-winbio-winbiosetproperty).
+Se estableció una sesión biométrica, una unidad, una plantilla o una propiedad de cuenta. Para obtener más información, [**vea WinBioSetProperty**](/windows/desktop/api/winbio/nf-winbio-winbiosetproperty).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_GET_EVENT"></span><span id="winbio_operation_get_event"></span>**\_ \_ evento get de operación WINBIO \_**
+<span id="WINBIO_OPERATION_GET_EVENT"></span><span id="winbio_operation_get_event"></span>**EVENTO GET \_ DE OPERACIÓN \_ WINBIO \_**
 </dt> <dd> <dl> <dt>
 
 15
@@ -258,12 +258,12 @@ Se estableció una sesión biométrica, una unidad, una plantilla o una propieda
 
 
 
-No se utiliza.
+No se usa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_LOCK_UNIT"></span><span id="winbio_operation_lock_unit"></span>**\_unidad de \_ bloqueo de operación de WINBIO \_**
+<span id="WINBIO_OPERATION_LOCK_UNIT"></span><span id="winbio_operation_lock_unit"></span>**UNIDAD DE BLOQUEO \_ DE \_ OPERACIÓN \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 16
@@ -271,12 +271,12 @@ No se utiliza.
 
 
 
-Una unidad biométrica se bloqueó para uso exclusivo de una sesión. Para obtener más información, vea [**WinBioLockUnit**](/windows/desktop/api/Winbio/nf-winbio-winbiolockunit).
+Una sesión bloqueó una unidad biométrica para su uso exclusivo. Para obtener más información, [**consulta WinBioLockUnit**](/windows/desktop/api/Winbio/nf-winbio-winbiolockunit).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_UNLOCK_UNIT"></span><span id="winbio_operation_unlock_unit"></span>**\_unidad de \_ desbloqueo de operación WINBIO \_**
+<span id="WINBIO_OPERATION_UNLOCK_UNIT"></span><span id="winbio_operation_unlock_unit"></span>**UNIDAD DE DESBLOQUEO \_ DE OPERACIÓN \_ \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 17
@@ -284,12 +284,12 @@ Una unidad biométrica se bloqueó para uso exclusivo de una sesión. Para obten
 
 
 
-Se liberó el bloqueo de sesión en una unidad biométrica. Para obtener más información, vea [**WinBioUnlockUnit**](/windows/desktop/api/Winbio/nf-winbio-winbiounlockunit).
+Se ha liberado el bloqueo de sesión en una unidad biométrica. Para obtener más información, [**consulta WinBioUnlockUnit.**](/windows/desktop/api/Winbio/nf-winbio-winbiounlockunit)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_CONTROL_UNIT"></span><span id="winbio_operation_control_unit"></span>**\_unidad de \_ control de operación WINBIO \_**
+<span id="WINBIO_OPERATION_CONTROL_UNIT"></span><span id="winbio_operation_control_unit"></span>**UNIDAD DE \_ CONTROL DE \_ OPERACIÓN \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 18
@@ -297,12 +297,12 @@ Se liberó el bloqueo de sesión en una unidad biométrica. Para obtener más in
 
 
 
-Las operaciones definidas por el proveedor se realizaron en una unidad de control. Para obtener más información, vea [**WinBioControlUnit**](/windows/desktop/api/Winbio/nf-winbio-winbiocontrolunit).
+Las operaciones definidas por el proveedor se realizaron en una unidad de control. Para obtener más información, [**consulta WinBioControlUnit**](/windows/desktop/api/Winbio/nf-winbio-winbiocontrolunit).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_CONTROL_UNIT_PRIVILEGED"></span><span id="winbio_operation_control_unit_privileged"></span>**\_privilegio de \_ unidad de control de operación WINBIO \_ \_**
+<span id="WINBIO_OPERATION_CONTROL_UNIT_PRIVILEGED"></span><span id="winbio_operation_control_unit_privileged"></span>**UNIDAD DE \_ CONTROL DE OPERACIONES WINBIO CON \_ \_ \_ PRIVILEGIOS**
 </dt> <dd> <dl> <dt>
 
 19
@@ -310,12 +310,12 @@ Las operaciones definidas por el proveedor se realizaron en una unidad de contro
 
 
 
-Las operaciones definidas por el proveedor con privilegios se realizaron en una unidad de control. Para obtener más información, vea [**WinBioControlUnitPrivileged**](/windows/desktop/api/Winbio/nf-winbio-winbiocontrolunitprivileged).
+Las operaciones definidas por el proveedor con privilegios se realizaron en una unidad de control. Para obtener más información, [**vea WinBioControlUnitPrivileged.**](/windows/desktop/api/Winbio/nf-winbio-winbiocontrolunitprivileged)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_OPEN_FRAMEWORK"></span><span id="winbio_operation_open_framework"></span>**\_ \_ marco abierto de la operación WINBIO \_**
+<span id="WINBIO_OPERATION_OPEN_FRAMEWORK"></span><span id="winbio_operation_open_framework"></span>**WINBIO \_ OPERATION \_ OPEN \_ FRAMEWORK**
 </dt> <dd> <dl> <dt>
 
 20
@@ -323,12 +323,12 @@ Las operaciones definidas por el proveedor con privilegios se realizaron en una 
 
 
 
-Se abrió un identificador del marco biométrico.
+Se ha abierto un identificador para el marco biométrico.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_CLOSE_FRAMEWORK"></span><span id="winbio_operation_close_framework"></span>**marco de cierre de la \_ operación WINBIO \_ \_**
+<span id="WINBIO_OPERATION_CLOSE_FRAMEWORK"></span><span id="winbio_operation_close_framework"></span>**MARCO DE \_ CIERRE DE OPERACIÓN \_ WINBIO \_**
 </dt> <dd> <dl> <dt>
 
 21
@@ -336,12 +336,12 @@ Se abrió un identificador del marco biométrico.
 
 
 
-Se cerró un identificador del marco biométrico. Para obtener más información, vea [**WinBioCloseFramework**](/windows/desktop/api/Winbio/nf-winbio-winbiocloseframework).
+Se cerró un identificador para el marco biométrico. Para obtener más información, [**vea WinBioCloseFramework.**](/windows/desktop/api/Winbio/nf-winbio-winbiocloseframework)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENUM_SERVICE_PROVIDERS"></span><span id="winbio_operation_enum_service_providers"></span>**\_proveedores de \_ servicios de enumeración de operaciones WINBIO \_ \_**
+<span id="WINBIO_OPERATION_ENUM_SERVICE_PROVIDERS"></span><span id="winbio_operation_enum_service_providers"></span>**PROVEEDORES DE \_ SERVICIOS DE ENUMERACIÓN DE OPERACIÓN \_ \_ \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 22
@@ -349,12 +349,12 @@ Se cerró un identificador del marco biométrico. Para obtener más información
 
 
 
-Se enumeraron los proveedores de servicios biométricos instalados. Para obtener más información, vea [**WinBioEnumServiceProviders**](/windows/desktop/api/Winbio/nf-winbio-winbioenumserviceproviders).
+Se enumeraron los proveedores de servicios biométricos instalados. Para obtener más información, [**vea WinBioEnumServiceProviders**](/windows/desktop/api/Winbio/nf-winbio-winbioenumserviceproviders).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENUM_BIOMETRIC_UNITS"></span><span id="winbio_operation_enum_biometric_units"></span>**WINBIO de \_ operación de \_ enumeración de \_ unidades biométricas \_**
+<span id="WINBIO_OPERATION_ENUM_BIOMETRIC_UNITS"></span><span id="winbio_operation_enum_biometric_units"></span>**UNIDADES \_ BIOMÉTRICAS DE WINBIO OPERATION \_ ENUM \_ \_**
 </dt> <dd> <dl> <dt>
 
 23
@@ -362,12 +362,12 @@ Se enumeraron los proveedores de servicios biométricos instalados. Para obtener
 
 
 
-Se enumeraron las unidades biométricas conectadas. Para obtener más información, vea [**WinBioAsyncEnumBiometricUnits**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncenumbiometricunits).
+Se enumeraron las unidades biométricas adjuntas. Para obtener más información, [**vea WinBioAsyncEnumBiometricUnits**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncenumbiometricunits).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENUM_DATABASES"></span><span id="winbio_operation_enum_databases"></span>**\_bases de \_ datos de enumeración de la operación WINBIO \_**
+<span id="WINBIO_OPERATION_ENUM_DATABASES"></span><span id="winbio_operation_enum_databases"></span>**BASES DE DATOS \_ DE ENUMERACIÓN DE OPERACIÓN \_ \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 24
@@ -375,12 +375,12 @@ Se enumeraron las unidades biométricas conectadas. Para obtener más informaci�
 
 
 
-Se enumeraron las bases de datos registradas. Para obtener más información, vea [**WinBioEnumDatabases**](/windows/desktop/api/Winbio/nf-winbio-winbioenumdatabases).
+Se enumeraron las bases de datos registradas. Para obtener más información, [**vea WinBioEnumDatabases**](/windows/desktop/api/Winbio/nf-winbio-winbioenumdatabases).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_UNIT_ARRIVAL"></span><span id="winbio_operation_unit_arrival"></span>**llegada de la \_ unidad de operación WINBIO \_ \_**
+<span id="WINBIO_OPERATION_UNIT_ARRIVAL"></span><span id="winbio_operation_unit_arrival"></span>**LLEGADA DE LA \_ UNIDAD DE OPERACIÓN DE \_ \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 25
@@ -388,12 +388,12 @@ Se enumeraron las bases de datos registradas. Para obtener más información, ve
 
 
 
-Se creó una unidad biométrica. Para obtener más información, vea [**WinBioAsyncMonitorFrameworkChanges**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncmonitorframeworkchanges).
+Se creó una unidad biométrica. Para obtener más información, [**vea WinBioAsyncMonitorFrameworkChanges**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncmonitorframeworkchanges).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_UNIT_REMOVAL"></span><span id="winbio_operation_unit_removal"></span>**eliminación de la \_ unidad de operación WINBIO \_ \_**
+<span id="WINBIO_OPERATION_UNIT_REMOVAL"></span><span id="winbio_operation_unit_removal"></span>**ELIMINACIÓN DE UNIDAD \_ DE \_ OPERACIÓN DE \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 26
@@ -401,12 +401,12 @@ Se creó una unidad biométrica. Para obtener más información, vea [**WinBioAs
 
 
 
-Se eliminó una unidad biométrica. Para obtener más información, vea [**WinBioAsyncMonitorFrameworkChanges**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncmonitorframeworkchanges).
+Se eliminó una unidad biométrica. Para obtener más información, [**vea WinBioAsyncMonitorFrameworkChanges**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncmonitorframeworkchanges).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_IDENTIFY_AND_RELEASE_TICKET"></span><span id="winbio_operation_identify_and_release_ticket"></span>**\_identificación de la operación WINBIO \_ y el \_ \_ vale de versión \_**
+<span id="WINBIO_OPERATION_IDENTIFY_AND_RELEASE_TICKET"></span><span id="winbio_operation_identify_and_release_ticket"></span>**IDENTIFICACIÓN Y VALE DE LANZAMIENTO DE LA \_ \_ OPERACIÓN \_ \_ \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 27
@@ -419,7 +419,7 @@ Reservado. Este valor se admite a partir de Windows 10.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_VERIFY_AND_RELEASE_TICKET"></span><span id="winbio_operation_verify_and_release_ticket"></span>**\_ \_ comprobación de operación \_ de WINBIO y \_ vale de versión \_**
+<span id="WINBIO_OPERATION_VERIFY_AND_RELEASE_TICKET"></span><span id="winbio_operation_verify_and_release_ticket"></span>**COMPROBACIÓN Y LANZAMIENTO \_ DE LA OPERACIÓN \_ WINBIO \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 28
@@ -432,7 +432,7 @@ Reservado. Este valor se admite a partir de Windows 10.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_MONITOR_PRESENCE"></span><span id="winbio_operation_monitor_presence"></span>**\_presencia del \_ monitor de operación WINBIO \_**
+<span id="WINBIO_OPERATION_MONITOR_PRESENCE"></span><span id="winbio_operation_monitor_presence"></span>**PRESENCIA DEL \_ MONITOR DE \_ OPERACIÓN \_ WINBIO**
 </dt> <dd> <dl> <dt>
 
 29
@@ -440,12 +440,12 @@ Reservado. Este valor se admite a partir de Windows 10.
 
 
 
-Se activó el mecanismo de reconocimiento facial o de supervisión de iris. Para obtener más información, vea [**WinBioMonitorPresence**](/windows/desktop/api/winbio/nf-winbio-winbiomonitorpresence). Este valor se admite a partir de Windows 10.
+Se ha activado el mecanismo de reconocimiento facial o supervisión de iris. Para obtener más información, [**vea WinBioMonitorPresence**](/windows/desktop/api/winbio/nf-winbio-winbiomonitorpresence). Este valor se admite a partir de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_OPERATION_ENROLL_SELECT"></span><span id="winbio_operation_enroll_select"></span>**\_operación de \_ inscripción de WINBIO \_**
+<span id="WINBIO_OPERATION_ENROLL_SELECT"></span><span id="winbio_operation_enroll_select"></span>**WINBIO \_ OPERATION \_ ENROLL \_ SELECT**
 </dt> <dd> <dl> <dt>
 
 30
@@ -453,7 +453,7 @@ Se activó el mecanismo de reconocimiento facial o de supervisión de iris. Para
 
 
 
-Un individuo de un grupo de individuos que están representados por los datos del búfer de ejemplo se ha especificado como el individuo que se va a inscribir. Para obtener más información, vea [**WinBioEnrollSelect**](/windows/desktop/api/winbio/nf-winbio-winbioenrollselect). Este valor se admite a partir de Windows 10.
+Se especificó un individuo de un grupo de individuos representados por datos en el búfer de ejemplo como el individuo que se inscribió. Para obtener más información, [**vea WinBioEnrollSelect**](/windows/desktop/api/winbio/nf-winbio-winbioenrollselect). Este valor se admite a partir de Windows 10.
 
 
 </dt> </dl> </dd> </dl>
@@ -464,9 +464,9 @@ Un individuo de un grupo de individuos que están representados por los datos de
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                                                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h para aplicaciones cliente o \_ adaptadores de Winbio. h para adaptadores)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                                                                                               |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluye Winbio.h para aplicaciones cliente o Adaptadores de \_ Winbio.h para adaptadores)</dt> </dl> |
 
 
 

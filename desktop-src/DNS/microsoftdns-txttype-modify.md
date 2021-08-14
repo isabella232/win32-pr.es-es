@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_TXTType
-description: El método Modify actualiza un registro de recursos de texto (TXT).
+title: Método Modify de la MicrosoftDNS_TXTType clase
+description: El método Modify actualiza un registro de recursos text (TXT).
 ms.assetid: af61057e-95be-4290-83da-a63f01ead476
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_TXTType clase
-- MicrosoftDNS_TXTType de clase DNS, Modify (método)
+- Modificación del DNS del método
+- Modificar el método DNS , MicrosoftDNS_TXTType clase
+- MicrosoftDNS_TXTType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 285dfb6d5323ca3775f981aecbf5a0170392cd3b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e565d4c48b048b4d72b11c939b644752cb14f1993c2810f127bb14f60bec929
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957304"
 ---
-# <a name="modify-method-of-the-microsoftdns_txttype-class"></a>Método Modify de la \_ clase MicrosoftDNS TXTType
+# <a name="modify-method-of-the-microsoftdns_txttype-class"></a>Método Modify de la clase TXTType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de texto (txt).
+El **método Modify** actualiza un registro de recursos text (TXT).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*DescriptiveText* \[ de\]
+*Texto descriptivo* \[ En\]
 </dt> <dd>
 
-Texto descriptivo, la semántica de que depende del dominio del propietario.
+Texto descriptivo, cuya semántica depende del dominio propietario.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Referencia al nuevo objeto.
@@ -69,34 +69,34 @@ Referencia al nuevo objeto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**MicrosoftDNS \_ TXTType**](microsoftdns-txttype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS TXTType**](microsoftdns-txttype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase TXTType de MicrosoftDNS \_**](microsoftdns-txttype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentMultiValuedColumnMustBeTaggedException'
-title: Constructor de EsentMultiValuedColumnMustBeTaggedException
+description: 'Más información sobre: Constructor EsentMultiValuedColumnMustBeTaggedException'
+title: Constructor EsentMultiValuedColumnMustBeTaggedException
 TOCTitle: 'EsentMultiValuedColumnMustBeTaggedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMultiValuedColumnMustBeTaggedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmultivaluedcolumnmustbetaggedexception.esentmultivaluedcolumnmustbetaggedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0824d46f488625f57e30577801e31a39a8838db1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35e41f1dfdc24af9a2442796461e987567e794b592d7428ce9bfcd44707f5b2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118775577"
 ---
-# <a name="esentmultivaluedcolumnmustbetaggedexception-constructor"></a>Constructor de EsentMultiValuedColumnMustBeTaggedException
+# <a name="esentmultivaluedcolumnmustbetaggedexception-constructor"></a>Constructor EsentMultiValuedColumnMustBeTaggedException
 
 Inicializa una nueva instancia de la clase EsentMultiValuedColumnMustBeTaggedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentMultiValuedColumnMustBeTaggedException()
 public EsentMultiValuedColumnMustBeTaggedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentMultiValuedColumnMustBeTaggedException()
 
 [Miembros de EsentMultiValuedColumnMustBeTaggedException](./esentmultivaluedcolumnmustbetaggedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

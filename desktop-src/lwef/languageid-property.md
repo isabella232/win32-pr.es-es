@@ -1,33 +1,33 @@
 ---
-title: LanguageID (propiedad)
-description: LanguageID (propiedad)
+title: Propiedad LanguageID
+description: Propiedad LanguageID
 ms.assetid: f57b0fa1-b3b8-49c8-b441-2a40e564d6ea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a7a10e6b16f9e35b223bada728871d253685538
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13af9f7a508732444be83fd56cce2fad6c7d7a5c148e196e2c466db102d2e6e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118748703"
 ---
-# <a name="languageid-property"></a>LanguageID (propiedad)
+# <a name="languageid-property"></a>Propiedad LanguageID
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
 Devuelve o establece el identificador de idioma del carácter.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-Caracteres del agente *. * * ** *  **("***CharacterID***"). LanguageID** \[  =  *LanguageID*\]
+*agent.:Characters* *  **("**_CharacterID_*_"). LanguageID_* \[  =  *LanguageID*\]
 
 
 
@@ -37,9 +37,9 @@ Descripción
 
 LanguageID
 
-Entero largo que especifica el identificador de idioma del carácter. El identificador de idioma (LANGID) de un carácter es un valor de 16 bits definido por Windows, que consta de un identificador de idioma principal y un identificador de idioma secundario. Los ejemplos siguientes son valores de idiomas admitidos por el agente de Microsoft. Para determinar el valor de otros lenguajes, consulte la *documentación del SDK* de la plataforma.
+Entero Long que especifica el identificador de idioma del carácter. El identificador de idioma (LANGID) de un carácter es un valor de 16 bits definido por Windows, que consta de un identificador de idioma principal y un identificador de idioma secundario. Los ejemplos siguientes son valores para los idiomas admitidos por Microsoft Agent. Para determinar el valor de otros lenguajes, consulte la documentación *del SDK de plataforma.*
 
- 
+ 
 
 Árabe
 
@@ -49,7 +49,7 @@ Italiano
 
 &H0410
 
- 
+ 
 
 Vasco
 
@@ -59,7 +59,7 @@ Japonés
 
 &H0411
 
- 
+ 
 
 Chino (simplificado)
 
@@ -69,7 +69,7 @@ Coreano
 
 &H0412
 
- 
+ 
 
 Chino (tradicional)
 
@@ -79,7 +79,7 @@ Noruego
 
 &H0414
 
- 
+ 
 
 Croata
 
@@ -89,7 +89,7 @@ Polaco
 
 &H0415
 
- 
+ 
 
 Checo
 
@@ -99,7 +99,7 @@ Portugués (Portugal)
 
 &H0816
 
- 
+ 
 
 Danés
 
@@ -109,7 +109,7 @@ Portugués (Brasil)
 
 &H0416
 
- 
+ 
 
 Neerlandés
 
@@ -119,7 +119,7 @@ Rumano
 
 &H0418
 
- 
+ 
 
 Inglés (Gran Bretaña)
 
@@ -129,7 +129,7 @@ Ruso
 
 &H0419
 
- 
+ 
 
 Inglés (EE.UU.)
 
@@ -139,7 +139,7 @@ Eslovaco
 
 &H041B
 
- 
+ 
 
 Finés
 
@@ -149,7 +149,7 @@ Esloveno
 
 &H0424
 
- 
+ 
 
 Francés
 
@@ -159,7 +159,7 @@ Español
 
 &H0C0A
 
- 
+ 
 
 Alemán
 
@@ -169,7 +169,7 @@ Sueco
 
 &H041D
 
- 
+ 
 
 Griego
 
@@ -179,7 +179,7 @@ Tailandés
 
 &H041E
 
- 
+ 
 
 Hebreo
 
@@ -189,47 +189,47 @@ Turco
 
 &H041F
 
- 
+ 
 
 Húngaro
 
 &H040E
 
- 
+ 
 
- 
+ 
 
 
 
- 
+ 
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Si no establece el **iddeidioma** para el carácter, su identificador de idioma será el identificador de idioma del sistema actual si se instala la dll de idioma correspondiente del agente; de lo contrario, el idioma del carácter será inglés (EE. UU.).
+Si no establece el valor de **LanguageID** para el carácter, su identificador de idioma será el identificador de idioma del sistema actual si está instalado el archivo DLL de idioma del Agente correspondiente; de lo contrario, el idioma del carácter será inglés (EE. UU.).
 
 Esta propiedad también determina el idioma del texto del globo de palabras, los comandos del menú emergente del carácter y el motor de reconocimiento de voz. También determina el idioma predeterminado para la salida de TTS.
 
-Si intenta establecer el **LanguageID** para un carácter y el archivo DLL del idioma del agente para ese idioma no está instalado o si no hay disponible una fuente de presentación para el ID. de idioma, el agente genera un error y se mantiene el valor **LanguageID** en la última configuración.
+Si intenta establecer **languageID** para un carácter y el archivo DLL de idioma del Agente para ese idioma no está instalado o no hay disponible una fuente de presentación para el identificador de idioma, el Agente genera un error y **LanguageID** permanece en su última configuración.
 
-Si se establece esta propiedad, no se produce un error si no hay ningún motor de voz coincidente para el idioma. Para determinar si hay un motor de voz compatible disponible para el **iddeidioma**, consulte [**SRModeID**](srmodeid-property.md) o [**TTSModeID**](ttsmodeid-property.md). Si no establece **LanguageID**, se establecerá en la configuración de ID. de idioma predeterminado del usuario.
+Al establecer esta propiedad no se genera un error si no hay motores de voz que coincidan con el idioma. Para determinar si hay un motor de voz compatible disponible para **LanguageID,** compruebe [**SRModeID**](srmodeid-property.md) o [**TTSModeID**](ttsmodeid-property.md). Si no establece **LanguageID,** se establecerá en la configuración predeterminada del identificador de idioma del usuario.
 
-Esta propiedad solo se aplica al uso de la aplicación cliente del carácter; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
+Esta propiedad solo se aplica al uso del carácter por parte de la aplicación cliente; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
 
 > [!Note]  
-> Si establece **LanguageID** en un idioma que admite texto bidireccional (como el árabe o el hebreo), pero el sistema que ejecuta la aplicación no tiene instalada la compatibilidad bidireccional, el texto del globo de palabras aparecerá en lugar lógico en lugar de mostrarse en orden.
+> Si establece **LanguageID** en un idioma que admita texto bidireccional (como árabe o hebreo), pero el sistema que ejecuta la aplicación no tiene instalada compatibilidad bidireccional, el texto del globo de palabras aparecerá en orden lógico en lugar de mostrarse.
 
- 
+ 
 
 ## <a name="see-also"></a>Consulte también
 
 [**Propiedad SRModeID**](srmodeid-property.md), [ **propiedad TTSModeID**](ttsmodeid-property.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

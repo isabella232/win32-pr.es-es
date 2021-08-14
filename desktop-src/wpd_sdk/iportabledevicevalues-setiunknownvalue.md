@@ -1,7 +1,7 @@
 ---
-description: El método SetIUnknownValue agrega un nuevo valor IUnknown (tipo VT \_ desconocido) o sobrescribe uno existente.
+description: El método SetIUnknownValue agrega un nuevo valor IUnknown (tipo VT UNKNOWN) o \_ sobrescribe uno existente.
 ms.assetid: 292adf45-439c-4aae-9b17-e4d9ed701eda
-title: 'IPortableDeviceValues:: SetIUnknownValue (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::SetIUnknownValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 2c3a27fe5ea89359884d70162000b5164b7c1aec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c4a7c8a77cfef505b2a507b6281b931eea7f09c4ea1fbc79e651e7f517593799
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697056"
 ---
-# <a name="iportabledevicevaluessetiunknownvalue-method"></a>IPortableDeviceValues:: SetIUnknownValue (método)
+# <a name="iportabledevicevaluessetiunknownvalue-method"></a>IPortableDeviceValues::SetIUnknownValue (Método)
 
-El método **SetIUnknownValue** agrega un nuevo valor **IUNKNOWN** (tipo VT \_ desconocido) o sobrescribe uno existente.
+El **método SetIUnknownValue** agrega un nuevo valor **IUnknown** (tipo VT UNKNOWN) o \_ sobrescribe uno existente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,29 +41,29 @@ HRESULT SetIUnknownValue(
 
 <dl> <dt>
 
-*clave* \[ de de\]
+*key* \[ En\]
 </dt> <dd>
 
-**REFPROPERTYKEY** que especifica el elemento que se va a crear o sobrescribir.
+**REFPROPERTYKEY que** especifica el elemento que se creará o sobrescribirá.
 
 </dd> <dt>
 
-*pValue* \[ de\]
+*pValue* \[ En\]
 </dt> <dd>
 
-Puntero a una interfaz **IUnknown** que especifica el nuevo valor. El SDK copia una referencia a la interfaz enviada y llama a **AddRef** en ella.
+Puntero a una **interfaz IUnknown** que especifica el nuevo valor. El SDK copia una referencia a la interfaz enviada y llama **a AddRef** en ella.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -71,7 +71,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="remarks"></a>Observaciones
 
-Si un valor existente tiene la misma clave que especifica el parámetro de *clave* , sobrescribe el valor existente sin ninguna advertencia. La memoria de clave existente se libera adecuadamente.
+Si un valor existente tiene la misma clave especificada por el parámetro *key,* sobrescribe el valor existente sin ninguna advertencia. La memoria de clave existente se libera correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Si un valor existente tiene la misma clave que especifica el parámetro de *clav
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Si un valor existente tiene la misma clave que especifica el parámetro de *clav
 
 <dl> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetIUnknownValue**](iportabledevicevalues-getiunknownvalue.md)

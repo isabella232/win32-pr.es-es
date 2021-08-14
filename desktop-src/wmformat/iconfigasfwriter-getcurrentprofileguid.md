@@ -1,11 +1,11 @@
 ---
-title: IConfigAsfWriter GetCurrentProfileGuid, método
-description: El método GetCurrentProfileGuid recupera el GUID actual del perfil del sistema de Windows Media.
+title: Método IConfigAsfWriter GetCurrentProfileGuid
+description: El método GetCurrentProfileGuid recupera el GUID Windows perfil del sistema multimedia actual.
 ms.assetid: e7a2ecc0-48d4-446c-852a-0d7677cbbe71
 keywords:
-- Método GetCurrentProfileGuid formato de Windows Media
-- Método GetCurrentProfileGuid formato de Windows Media, interfaz IConfigAsfWriter
-- Interfaz IConfigAsfWriter formato de Windows Media, método GetCurrentProfileGuid
+- Método GetCurrentProfileGuid windows Media Format
+- Método GetCurrentProfileGuid de windows Media Format, interfaz IConfigAsfWriter
+- IConfigAsfWriter interface windows Media Format , GetCurrentProfileGuid (método)
 topic_type:
 - apiref
 api_name:
@@ -15,23 +15,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 49282ed6ea33db8052e167568e5b5fa70cda9e01
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5ae1c626658509d4260f814550c053de7389b0aed45c9c583e0e059e390a24f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118433644"
 ---
-# <a name="iconfigasfwritergetcurrentprofileguid-method"></a>IConfigAsfWriter:: GetCurrentProfileGuid (método)
+# <a name="iconfigasfwritergetcurrentprofileguid-method"></a>IConfigAsfWriter::GetCurrentProfileGuid (método)
 
-El método **GetCurrentProfileGuid** recupera el GUID actual del perfil del sistema de Windows Media.
+El **método GetCurrentProfileGuid** recupera el GUID Windows perfil del sistema multimedia actual.
 
 ## <a name="syntax"></a>Sintaxis
 
 
 ```C++
 HRESULT GetCurrentProfileGuid(
-  [out] GUID *pProfileGuid
+  [out] GUID *pProfileGuid
 );
 ```
 
@@ -41,28 +41,28 @@ HRESULT GetCurrentProfileGuid(
 
 <dl> <dt>
 
-*pProfileGuid* \[ enuncia\]
+*pProfileGuid* \[ out\]
 </dt> <dd>
 
-Puntero a una variable de tipo **GUID** que identifica el perfil de sistema actual que usa el filtro.
+Puntero a una variable de tipo **GUID** que identifica el perfil del sistema actual utilizado por el filtro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un error, devuelve un código de error **HRESULT** .
+Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Este método no se utiliza con perfiles personalizados (incluidos todos los perfiles que incluyen secuencias que usan los códecs de vídeo y Windows Media Audio) porque todos estos perfiles se crean mediante aplicaciones y no tienen ningún identificador GUID. Si no se carga ningún perfil del sistema, *pProfileGuid* se establecerá en **null**.
+Este método no se usa con perfiles personalizados (incluidos todos los perfiles que incluyen secuencias que usan los códecs de audio y vídeo multimedia de Windows) porque todos estos perfiles los crean las aplicaciones y no tienen ningún identificador GUID. Si no se carga ningún perfil del sistema, *pProfileGuid* se establecerá en **NULL.**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Interfaz IConfigAsfWriter**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85))
+[**IConfigAsfWriter (Interfaz)**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

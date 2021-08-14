@@ -1,19 +1,19 @@
 ---
-description: Fecha y hora en que se importó el archivo a una base de datos de aplicación privada.
+description: Fecha y hora en que el archivo se importó en una base de datos de aplicación privada.
 ms.assetid: b859c2c9-0985-451c-be05-e17101bc2f3c
-title: System. DateImported
+title: System.DateImported
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19b33e8a4a915eca0673913b5e6ab766067d1689
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3078bd3be9784ad0f170afae0901a3db058da77894a27ba21438b32b3da82c18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118728993"
 ---
-# <a name="systemdateimported"></a>System. DateImported
+# <a name="systemdateimported"></a>System.DateImported
 
-Fecha y hora en que se importó el archivo a una base de datos de aplicación privada. Por ejemplo, esta propiedad se puede utilizar cuando se importa una foto en una base de datos de fotos. Esta propiedad no es igual que [System. DateAcquired](./props-system-dateacquired.md).
+Fecha y hora en que el archivo se importó en una base de datos de aplicación privada. Por ejemplo, esta propiedad se puede usar cuando se importa una foto en una base de datos de fotos. Esta propiedad no es la misma que [System.DateAcquired.](./props-system-dateacquired.md)
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,7 +46,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -61,7 +61,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -73,7 +73,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -91,7 +91,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

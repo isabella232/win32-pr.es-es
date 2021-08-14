@@ -1,5 +1,5 @@
 ---
-description: 'Estructura D3DXMATRIX (D3dx9math.h): matriz de 4x4 que contiene métodos y sobrecargas de operador.'
+description: 'Estructura D3DXMATRIX (D3dx9math.h): matriz de 4x4 que contiene métodos y sobrecargas de operadores.'
 ms.assetid: 0911088b-50cf-4c4a-996e-351386fc359b
 title: Estructura D3DXMATRIX (D3dx9math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: fad44c13f7b856270fe6475f9e099f6e1714e064
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7390b31aa2cc2c81d3d56656efb3c9ff3b6c1de81bf3e5d4de471fd1f7058553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525336"
 ---
 # <a name="d3dxmatrix-structure-d3dx9mathh"></a>Estructura D3DXMATRIX (D3dx9math.h)
 
-Matriz 4x4 que contiene métodos y sobrecargas de operador.
+Matriz 4x4 que contiene métodos y sobrecargas de operadores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Componente (i, j) de la matriz, donde i es el número de fila y j es el número 
 
 ## <a name="remarks"></a>Comentarios
 
-Los programadores de C no pueden usar la estructura D3DXMATRIX, deben usar la estructura [**D3DMATRIX.**](d3dmatrix.md) Los programadores de C++ pueden aprovechar los constructores sobrecargados y los operadores de asignación, unario y binario (incluida la igualdad).
+Los programadores de C no pueden usar la estructura D3DXMATRIX, deben usar la [**estructura D3DMATRIX.**](d3dmatrix.md) Los programadores de C++ pueden aprovechar los constructores sobrecargados y los operadores de asignación, unario y binario (incluida la igualdad).
 
 En D3DX, el \_ elemento 34 de una matriz de proyección no puede ser un número negativo. Si la aplicación necesita usar un valor negativo en esta ubicación, debe escalar toda la matriz de proyección en -1 en su lugar.
 

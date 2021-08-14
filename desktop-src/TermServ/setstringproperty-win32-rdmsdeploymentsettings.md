@@ -1,12 +1,12 @@
 ---
-title: Método SetStringProperty de la clase Win32_RDMSDeploymentSettings (CertEnroll. h)
+title: Método SetStringProperty de la Win32_RDMSDeploymentSettings (Certenroll.h)
 description: Actualiza una propiedad de cadena para la configuración de implementación de una colección de escritorios virtuales.
 ms.assetid: 500ab1cb-7336-47a8-adee-790976ea30fe
 ms.tgt_platform: multiple
 keywords:
 - Método SetStringProperty Servicios de Escritorio remoto
-- Método SetStringProperty Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método SetStringProperty
+- Método SetStringProperty Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto método , SetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 138f6d91ed428caabf8da69e3d958675f879dd15
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1001d5c723642357263a6029c3569eaa861f7dcf3689cc7d06b42e04ef461aa2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987505"
 ---
-# <a name="setstringproperty-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetStringProperty de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="setstringproperty-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetStringProperty de la clase RDMSDeploymentSettings de Win32 \_
 
 Actualiza una propiedad de cadena para la configuración de implementación de una colección de escritorios virtuales.
 
@@ -44,14 +44,14 @@ uint32 SetStringProperty(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-El alias de la colección de escritorios virtuales.
+Alias de la colección de escritorios virtuales.
 
 </dd> <dt>
 
-*Valor* \[ de de\]
+*Valor* \[ En\]
 </dt> <dd>
 
 Nuevo valor de propiedad.
@@ -62,22 +62,22 @@ Nuevo valor de propiedad.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| Encabezado<br/>                   | <dl> <dt>CertEnroll. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| Header<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

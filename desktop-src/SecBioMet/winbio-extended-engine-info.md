@@ -1,10 +1,10 @@
 ---
-title: Estructura de WINBIO_EXTENDED_ENGINE_INFO (Winbio \_ Types. h)
-description: Contiene información acerca de las capacidades y los requisitos de inscripción del adaptador de motor para una unidad biométrica.
+title: WINBIO_EXTENDED_ENGINE_INFO estructura (Winbio \_ types.h)
+description: Contiene información sobre las funcionalidades y los requisitos de inscripción del adaptador del motor para una unidad biométrica.
 ms.assetid: 83586E04-24CA-4A39-836F-C80DB1508C71
 keywords:
-- Plataforma de biometría de Windows API de WINBIO_EXTENDED_ENGINE_INFO Structure
-- PWINBIO_EXTENDED_ENGINE_INFO de puntero de estructura Plataforma de biometría de Windows API
+- WINBIO_EXTENDED_ENGINE_INFO estructura Windows API de marco biométrico
+- PWINBIO_EXTENDED_ENGINE_INFO puntero de estructura Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 829bd0423ab6add41b17f59d308aea850c5b2f42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df59b10400729150a13f2a8a5476c46507867777f71641a01ea0c08e064b4c40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910521"
 ---
-# <a name="winbio_extended_engine_info-structure"></a>WINBIO \_ \_ estructura de información del motor extendido \_
+# <a name="winbio_extended_engine_info-structure"></a>Estructura DE \_ INFORMACIÓN DEL MOTOR EXTENDIDO DE \_ \_ WINBIO
 
-Contiene información acerca de las capacidades y los requisitos de inscripción del adaptador de motor para una unidad biométrica.
+Contiene información sobre las funcionalidades y los requisitos de inscripción del adaptador del motor para una unidad biométrica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,21 +77,21 @@ typedef struct _WINBIO_EXTENDED_ENGINE_INFO {
 **GenericEngineCapabilities**
 </dt> <dd>
 
-Las capacidades genéricas del componente del motor que está conectado a una unidad biométrica específica.
+Funcionalidades genéricas del componente del motor que está conectado a una unidad biométrica específica.
 
 </dd> <dt>
 
 **Factor**
 </dt> <dd>
 
-El tipo de unidad biométrica para la que esta estructura contiene información sobre las capacidades y los requisitos de inscripción del adaptador de motor. Por ejemplo, si el valor del miembro **factor** es **WINBIO \_ Type \_ FINGERPRINT**, la estructura de **\_ \_ \_ información del motor extendido WINBIO** se aplica a un lector de huellas digitales y contiene la información pertinente en la estructura **específico. FINGERPRINT** .
+Tipo de unidad biométrica para la que esta estructura contiene información sobre las funcionalidades y los requisitos de inscripción del adaptador del motor. Por ejemplo, si el valor del miembro **Factor** es **WINBIO \_ TYPE \_ FINGERPRINT**, la estructura DE INFORMACIÓN DEL MOTOR EXTENDIDO DE **WINBIO \_ \_ \_** se aplica a un lector de huellas digitales y contiene la información pertinente en la estructura **Specifc.Fingerprint.**
 
 </dd> <dt>
 
-**Cuestión**
+**Específico**
 </dt> <dd>
 
-Información sobre las capacidades y los requisitos de inscripción del adaptador de motor para una unidad biométrica relacionada con un factor biométrico específico.
+Información sobre las funcionalidades y los requisitos de inscripción del adaptador del motor para una unidad biométrica relacionada con un factor biométrico específico.
 
 <dl> <dt>
 
@@ -102,10 +102,10 @@ Reservado. Debe ser cero.
 
 </dd> <dt>
 
-**FacialFeatures**
+**Características faciales**
 </dt> <dd>
 
-Información acerca de las capacidades y los requisitos de inscripción del adaptador de motor para una unidad biométrica relacionada con las características faciales.
+Información sobre las funcionalidades y los requisitos de inscripción del adaptador del motor para una unidad biométrica relacionada con las características faciales.
 
 <dl> <dt>
 
@@ -129,7 +129,7 @@ Reservado. Debe ser cero.
 **Huella digital**
 </dt> <dd>
 
-Información acerca de las capacidades y los requisitos de inscripción del adaptador de motor para una unidad biométrica relacionada con patrones de huellas digitales.
+Información sobre las funcionalidades y los requisitos de inscripción del adaptador del motor para una unidad biométrica relacionada con los patrones de huella digital.
 
 <dl> <dt>
 
@@ -143,56 +143,56 @@ Reservado. Debe ser cero.
 **EnrollmentRequirements**
 </dt> <dd>
 
-El número de buenos ejemplos necesarios para crear una nueva plantilla de huellas digitales.
+Número de buenos ejemplos necesarios para crear una nueva plantilla de huella digital.
 
 <dl> <dt>
 
 **GeneralSamples**
 </dt> <dd>
 
-El número total de buenos ejemplos necesarios para crear una nueva plantilla de huellas digitales.
+Número total de ejemplos buenos necesarios para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
 **Centro**
 </dt> <dd>
 
-El número de buenos ejemplos para el centro de la huella digital necesaria para crear una nueva plantilla de huellas digitales.
+Número de buenos ejemplos para el centro de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
-**Borde**
+**Topedge**
 </dt> <dd>
 
-El número de buenos ejemplos para el borde superior de la huella digital necesaria para crear una nueva plantilla de huellas digitales.
+Número de buenos ejemplos para el borde superior de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
 **BottomEdge**
 </dt> <dd>
 
-El número de buenos ejemplos para el borde inferior de la huella digital necesaria para crear una nueva plantilla de huellas digitales.
+Número de buenos ejemplos para el borde inferior de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
 **LeftEdge**
 </dt> <dd>
 
-El número de buenos ejemplos para el borde izquierdo de la huella digital necesaria para crear una nueva plantilla de huellas digitales.
+Número de buenos ejemplos para el borde izquierdo de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
 **RightEdge**
 </dt> <dd>
 
-El número de buenos ejemplos para el borde derecho de la huella digital necesaria para crear una nueva plantilla de huellas digitales.
+Número de buenos ejemplos para el borde derecho de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> </dl> </dd> </dl> </dd> <dt>
 
 **Iris**
 </dt> <dd>
 
-Información acerca de las capacidades y los requisitos de inscripción del adaptador de motor para una unidad biométrica relacionada con los patrones de iris.
+Información sobre las funcionalidades y los requisitos de inscripción del adaptador del motor para una unidad biométrica relacionada con los patrones de iris.
 
 <dl> <dt>
 
@@ -216,7 +216,7 @@ Reservado. Debe ser cero.
 **Voz**
 </dt> <dd>
 
-Información acerca de las capacidades y los requisitos de inscripción del adaptador de motor para una unidad biométrica relacionada con los patrones de voz.
+Información sobre las funcionalidades y los requisitos de inscripción del adaptador del motor para una unidad biométrica relacionada con los patrones de voz.
 
 <dl> <dt>
 
@@ -243,9 +243,9 @@ Reservado. Debe ser cero.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h para aplicaciones cliente o \_ adaptadores de Winbio. h para adaptadores)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluya Winbio.h para aplicaciones cliente o Adaptadores \_ de Winbio.h para adaptadores)</dt> </dl> |
 
 
 
@@ -253,10 +253,10 @@ Reservado. Debe ser cero.
 
 <dl> <dt>
 
-[**Constantes de capacidad de WINBIO \_**](winbio-capability-constants.md)
+[**Constantes DE FUNCIONALIDAD DE WINBIO \_**](winbio-capability-constants.md)
 </dt> <dt>
 
-[**WINBIO \_ constantes de \_ tipo biométrico**](winbio-biometric-type-constants.md)
+[**Constantes DE \_ TIPO BIOMETRIC DE WINBIO \_**](winbio-biometric-type-constants.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Enumeración SoHAttributeType (NapProtocol. h)
-description: Especifica el tipo de atributo almacenado en el objeto tipo-longitud-valor (TLV) del atributo.
+title: Enumeración SoHAttributeType (NapProtocol.h)
+description: Especifica el tipo de atributo almacenado en el objeto type-length-value (TLV) del atributo.
 ms.assetid: ba725bf1-1d0a-4489-b912-3e761557d772
 keywords:
-- NAP de enumeración de SoHAttributeType
+- NAP de enumeración SoHAttributeType
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db164bbedf2267aaa5941a21a56ccfd53e1e1646
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c3fabf3a8911274b912f3762dd07d0c64fc4111d22e372d1962a92221f1d068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939062"
 ---
 # <a name="sohattributetype-enumeration"></a>Enumeración SoHAttributeType
 
@@ -28,9 +28,9 @@ ms.locfileid: "104359796"
 
  
 
-La enumeración **SoHAttributeType** especifica el tipo de atributo almacenado en el objeto tipo-longitud-valor (TLV) del atributo.
+La **enumeración SoHAttributeType** especifica el tipo de atributo almacenado en el objeto type-length-value (TLV) del atributo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -62,21 +62,21 @@ typedef enum tagSoHAttributeType {
 <span id="sohAttributeTypeSystemHealthId"></span><span id="sohattributetypesystemhealthid"></span><span id="SOHATTRIBUTETYPESYSTEMHEALTHID"></span>**sohAttributeTypeSystemHealthId**
 </dt> <dd>
 
-Especifica el tipo de atributo de ID. de mantenimiento del sistema.
+Especifica el tipo de atributo de identificador de estado del sistema.
 
 </dd> <dt>
 
 <span id="sohAttributeTypeIpv4FixupServers"></span><span id="sohattributetypeipv4fixupservers"></span><span id="SOHATTRIBUTETYPEIPV4FIXUPSERVERS"></span>**sohAttributeTypeIpv4FixupServers**
 </dt> <dd>
 
-Especifica el tipo de atributo de servidor de corrección de IPv4.
+Especifica el tipo de atributo de servidor de corrección IPv4.
 
 </dd> <dt>
 
 <span id="sohAttributeTypeComplianceResultCodes"></span><span id="sohattributetypecomplianceresultcodes"></span><span id="SOHATTRIBUTETYPECOMPLIANCERESULTCODES"></span>**sohAttributeTypeComplianceResultCodes**
 </dt> <dd>
 
-Especifica el tipo de atributo de código de resultado de compatibilidad.
+Especifica el tipo de atributo de código de resultado de cumplimiento.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Especifica la hora del último tipo de atributo de actualización.
 <span id="sohAttributeTypeClientId"></span><span id="sohattributetypeclientid"></span><span id="SOHATTRIBUTETYPECLIENTID"></span>**sohAttributeTypeClientId**
 </dt> <dd>
 
-Especifica el tipo de atributo de ID. de cliente.
+Especifica el tipo de atributo id. de cliente.
 
 </dd> <dt>
 
@@ -118,28 +118,28 @@ Especifica el tipo de atributo de versión de software.
 <span id="sohAttributeTypeProductName"></span><span id="sohattributetypeproductname"></span><span id="SOHATTRIBUTETYPEPRODUCTNAME"></span>**sohAttributeTypeProductName**
 </dt> <dd>
 
-Especifica el tipo de atributo Product Name.
+Especifica el tipo de atributo de nombre de producto.
 
 </dd> <dt>
 
 <span id="sohAttributeTypeHealthClassStatus"></span><span id="sohattributetypehealthclassstatus"></span><span id="SOHATTRIBUTETYPEHEALTHCLASSSTATUS"></span>**sohAttributeTypeHealthClassStatus**
 </dt> <dd>
 
-Especifica el tipo de atributo de estado de clase de mantenimiento.
+Especifica el tipo de atributo de estado de la clase de mantenimiento.
 
 </dd> <dt>
 
 <span id="sohAttributeTypeSoHGenerationTime"></span><span id="sohattributetypesohgenerationtime"></span><span id="SOHATTRIBUTETYPESOHGENERATIONTIME"></span>**sohAttributeTypeSoHGenerationTime**
 </dt> <dd>
 
-Especifica la hora de generación del informe de tipo de atributo de mantenimiento.
+Especifica el tiempo de generación del tipo de atributo Statement of Health.
 
 </dd> <dt>
 
 <span id="sohAttributeTypeErrorCodes"></span><span id="sohattributetypeerrorcodes"></span><span id="SOHATTRIBUTETYPEERRORCODES"></span>**sohAttributeTypeErrorCodes**
 </dt> <dd>
 
-Especifica el tipo de atributo del código de error.
+Especifica el tipo de atributo de código de error.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Especifica el tipo de atributo de categoría de error.
 <span id="sohAttributeTypeIpv6FixupServers"></span><span id="sohattributetypeipv6fixupservers"></span><span id="SOHATTRIBUTETYPEIPV6FIXUPSERVERS"></span>**sohAttributeTypeIpv6FixupServers**
 </dt> <dd>
 
-Especifica el tipo de atributo de servidor de corrección de IPv6.
+Especifica el tipo de atributo de servidor de corrección IPv6.
 
 </dd> <dt>
 
@@ -164,11 +164,11 @@ Especifica el tipo de atributo de estado de aislamiento extendido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura [**SoHAttributeValue**](sohattributevalue-union.md) define los valores de atributo que corresponden a cada tipo de atributo.
+La [**estructura SoHAttributeValue**](sohattributevalue-union.md) define los valores de atributo que corresponden a cada tipo de atributo.
 
-Estos tipos de atributo los consume el sistema NAP:
+El sistema NAP consume estos tipos de atributos:
 
 -   sohAttributeTypeSystemHealthId
 -   sohAttributeTypeIpv4FixupServers
@@ -176,22 +176,22 @@ Estos tipos de atributo los consume el sistema NAP:
 -   sohAttributeTypeComplianceResultCodes
 -   sohAttributeTypeFailureCategory
 
-El resto de los tipos solo está pensado para guiar el uso por parte de los Sha y los SHV.
+El resto de los tipos solo están diseñados para guiar el uso de SHAs y SHV.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -201,7 +201,7 @@ El resto de los tipos solo está pensado para guiar el uso por parte de los Sha 
 [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute)
 </dt> <dt>
 
-[**SoH**](/windows/win32/api/naptypes/ns-naptypes-soh)
+[**Soh**](/windows/win32/api/naptypes/ns-naptypes-soh)
 </dt> <dt>
 
 [**INapSoHConstructor**](inapsohconstructor.md)

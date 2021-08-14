@@ -1,6 +1,6 @@
 ---
 description: Solicita información sobre un elemento de menú normal.
-title: Mensaje de SMC_GETINFO (shobjidl. h)
+title: SMC_GETINFO mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 07f35a64-eff0-48e8-a2fc-719ccf1eca18
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f60c1581ae7c4585de48eea943cc23b4d87fa4c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95f27905a59fd8ce7c84cfc1166b59cb38356934b3603b0cec7f56c2365a3984
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968114"
 ---
-# <a name="smc_getinfo-message"></a>\_Mensaje GetInfo de SMC
+# <a name="smc_getinfo-message"></a>Mensaje \_ GETINFO de SMC
 
 Solicita información sobre un elemento de menú normal.
 
@@ -40,28 +40,28 @@ SMC_GETINFO
 *psminfo* 
 </dt> <dd>
 
-Puntero a una estructura [**SMINFO**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-sminfo) . Rellene la estructura con la información adecuada y vuelva a \_ Aceptar.
+Puntero a una [**estructura SMINFO.**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-sminfo) Rellene la estructura con la información adecuada y devuelva S \_ OK.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

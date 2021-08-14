@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_LS'
-title: Estructura de JET_LS
+description: 'Más información sobre: estructura JET_LS datos'
+title: JET_LS estructura
 TOCTitle: JET_LS structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_LS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ls(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6d32c1a6815cfa7552fed0d8f1a01376ae0eacaa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fa85ea0f3117d6f4f9c0c9102f21f2fb1f626f8c115144998c1a4c94c300626
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765091"
 ---
-# <a name="jet_ls-structure"></a>Estructura de JET_LS
+# <a name="jet_ls-structure"></a>JET_LS estructura
 
-Almacenamiento local para un controlador ESENT. Usado por [JetGetLS (JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetgetls-method.md) y [JetSetLS (JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetsetls-method.md).
+Almacenamiento local para un identificador de ESENT. Usado por [JetGetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetgetls-method.md) y [JetSetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit).](./api.jetsetls-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,6 +61,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_LS](./jet-ls-members.md)
+[JET_LS miembros](./jet-ls-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

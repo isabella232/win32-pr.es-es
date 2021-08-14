@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2c506d2ad23003f93bbaea409cacc60b18c86534
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 91a57ec2eabbef2cd62fec8fa95fbf9d2da47a5bfcdb339bf30ed8da5b11c9ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118792934"
 ---
-# <a name="dcl_semantics-sm3---ps-asm"></a>semántica de dcl \_ (sm3 - ps asm)
+# <a name="dcl_semantics-sm3---ps-asm"></a>Semántica de dcl \_ (sm3 - ps asm)
 
 Declare la asociación entre la salida del sombreador de vértices y la entrada del sombreador de píxeles.
 
@@ -32,8 +32,8 @@ Donde:
 
 -   \_semántica: identifica el uso de datos previsto y puede ser cualquiera de los valores de [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (sin el prefijo D3DDECLUSAGE). \_ Además, se puede anexar un índice entero a la semántica para distinguir los parámetros que usan una semántica similar.
 -   \[\_[Centroide](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] es un modificador de instrucción opcional. Se admite en las instrucciones de uso de dcl que declaran los registros de entrada \_ y en las instrucciones de búsqueda de textura. El centroide se anexa sin espacio.
--   dst: registro de destino. Vea [ps \_ 3 \_ 0 Registers](dx9-graphics-reference-asm-ps-registers-ps-3-0.md).
--   máscara de escritura: el mismo registro de salida se puede declarar varias veces, cada vez con una máscara de escritura única (por lo que se puede aplicar una semántica diferente \_ a componentes individuales). Sin embargo, la misma semántica no se puede usar varias veces en una declaración. Esto significa que los vectores deben ser cuatro componentes o menos y no pueden pasar por los límites del registro de cuatro componentes (registros de salida individuales). Cuando se \_ usa la semántica psize, debe tener una máscara de escritura completa porque se considera escalar. Cuando se usa la semántica de posición, debe tener máscara de escritura completa porque se deben escribir \_ los cuatro componentes.
+-   dst: registro de destino. Consulte [ps \_ 3 \_ 0 Registers](dx9-graphics-reference-asm-ps-registers-ps-3-0.md).
+-   write mask: el mismo registro de salida se puede declarar varias veces, cada vez con una máscara de escritura única (por lo que se puede aplicar una semántica diferente \_ a componentes individuales). Sin embargo, la misma semántica no se puede usar varias veces en una declaración. Esto significa que los vectores deben ser cuatro componentes o menos y no pueden pasar por los límites de registro de cuatro componentes (registros de salida individuales). Cuando se \_ usa la semántica de psize, debe tener una máscara de escritura completa porque se considera escalar. Cuando se usa la semántica de posición, debe tener máscara de escritura completa porque se deben escribir \_ los cuatro componentes.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -41,7 +41,7 @@ Donde:
 
 | Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| dcl \_ usage            |      |      |      |      |      |      |       | x    | x     |
+| Uso \_ de dcl            |      |      |      |      |      |      |       | x    | x     |
 
 
 
@@ -85,7 +85,7 @@ texld r1, v1.zw, s1
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> <dt>
 
-[Ejemplo de antialias](https://msdn.microsoft.com/library/Ee415231(v=VS.85).aspx)
+[Ejemplo de suavizado de contorno](https://msdn.microsoft.com/library/Ee415231(v=VS.85).aspx)
 </dt> </dl>
 
  

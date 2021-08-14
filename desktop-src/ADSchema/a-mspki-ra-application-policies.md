@@ -1,11 +1,11 @@
 ---
-title: atributo MS-PKI-RA-Application-Policies
-description: OID de la Directiva de aplicación de RA necesario en las firmas de contador de la solicitud de certificado.
+title: Atributo ms-PKI-RA-Application-Policies
+description: El OID de directiva de aplicación de RA necesario en las firmas de contador de la solicitud de certificado.
 ms.assetid: 1ce61107-01aa-4a03-8a00-21890fb610d7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-PKI-RA-Application-Policies
-- Atributo mspki-RA-Application-Policies atributo AD Schema
+- Esquema de AD del atributo ms-PKI-RA-Application-Policies
+- Esquema de AD del atributo msPKI-RA-Application-Policies
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01aab7c8da5c6267efe954cac71dc8c9c98c18f4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cd982f4568d8d148c64930a9a7099dc5a48da2b542e8cf08c53905ad86ee6733
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104274571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960354"
 ---
-# <a name="ms-pki-ra-application-policies-attribute"></a>atributo MS-PKI-RA-Application-Policies
+# <a name="ms-pki-ra-application-policies-attribute"></a>Atributo ms-PKI-RA-Application-Policies
 
-OID de la Directiva de aplicación de RA necesario en las firmas de contador de la solicitud de certificado.
+El OID de directiva de aplicación de RA necesario en las firmas de contador de la solicitud de certificado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-RA-Application-Policies                                                             |
-| Nombre para mostrar de LDAP | Atributo mspki-RA-Application-Policies                                                              |
-| Tamaño              | \-                                                                                         |
-| Actualizar privilegio  | Administrador de empresa                                                                   |
-| Frecuencia de actualización  | Siempre que se crea una nueva plantilla o se editan los atributos de las plantillas existentes. |
+| CN                | ms-PKI-RA-Application-Policies                                                             |
+| Ldap-Display-Name | msPKI-RA-Application-Policies                                                              |
+| Size              | \-                                                                                         |
+| Actualizar privilegios  | Administrador de empresa                                                                   |
+| Frecuencia de actualización  | Cada vez que se crea una plantilla o se editan los atributos de una plantilla existente. |
 | Attribute-Id      | 1.2.840.113556.1.4.1675                                                                    |
-| System-ID-GUID    | 3c91fbbf-4773-4ccd-a87b-85d53e7bcf6a                                                       |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                |
+| System-Id-Guid    | 3c91fbbf-4773-4ccd-a87b-85d53e7bcf6a                                                       |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                |
 
 
 
@@ -52,20 +52,20 @@ OID de la Directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ OID de la Directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ OID de la Directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ OID de la Directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ OID de la Directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

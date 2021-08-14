@@ -1,19 +1,19 @@
 ---
-description: Se envía a la ventana primaria de un control o menú dibujado por el propietario cuando ha cambiado un aspecto visual del control o menú.
+description: Se envía a la ventana primaria de un menú o control dibujado por el propietario cuando ha cambiado un aspecto visual del control o menú.
 ms.assetid: 2515bbab-025f-4f00-8564-a732d68edea3
-title: Mensaje de DFM_WM_DRAWITEM (ShlObj. h)
+title: DFM_WM_DRAWITEM mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67255fea5c39bebc995e5c53d90378536b12921b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7190d445490b581967c8dda67e170eb5db5665dfa59302313d7af736b275944d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969474"
 ---
-# <a name="dfm_wm_drawitem-message"></a>Mensaje de DFM \_ WM \_ DRAWITEM
+# <a name="dfm_wm_drawitem-message"></a>Mensaje \_ DRAWITEM de WM DE DFM \_
 
-Se envía a la ventana primaria de un control o menú dibujado por el propietario cuando ha cambiado un aspecto visual del control o menú.
+Se envía a la ventana primaria de un menú o control dibujado por el propietario cuando ha cambiado un aspecto visual del control o menú.
 
 
 ```C++
@@ -32,39 +32,39 @@ DFM_WM_DRAWITEM
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-Identificador del control que envió el mensaje de **DFM \_ WM \_ DRAWITEM** . Si el mensaje se envió mediante un menú, este parámetro es cero.
+Identificador del control que envió el **mensaje \_ DFM WM \_ DRAWITEM.** Si un menú envió el mensaje, este parámetro es cero.
 
 </dd> <dt>
 
-*lpDrawItem* \[ enuncia\]
+*lpDrawItem* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [**drawitemstruct (**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) que contiene información sobre el elemento que se va a dibujar y el tipo de dibujo necesario.
+Puntero a una [**estructura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) que contiene información sobre el elemento que se va a dibujar y el tipo de dibujo necesario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si una aplicación procesa este mensaje, debe devolver **true**.
+Si una aplicación procesa este mensaje, debe devolver **TRUE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El miembro **del itemaction** de la estructura [**drawitemstruct (**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) especifica la operación de dibujo que una aplicación debe realizar.
+El **miembro itemAction** de la [**estructura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) especifica la operación de dibujo que debe realizar una aplicación.
 
-Antes de volver a procesar este mensaje, una aplicación debe asegurarse de que el contexto de dispositivo identificado por el miembro **HDC** de la estructura [**drawitemstruct (**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) está en el estado predeterminado.
+Antes de volver del procesamiento de este mensaje, una aplicación debe asegurarse de que el contexto de dispositivo identificado por el **miembro hDC** de la estructura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) está en el estado predeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_LGPOS. Equals (método, Object)'
-title: JET_LGPOS. Equals (método, Object)
+description: 'Más información sobre: JET_LGPOS. Método Equals (Object)'
+title: JET_LGPOS. Método Equals (Object)
 TOCTitle: Equals method (Object)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_LGPOS.Equals(System.Object)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_lgpos.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0263e0c83c5d757c1b5eef92da0fb1e9bcca927a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6471b0c436389f3a45e492f5f73271dca7c74ecc23b805ccd670416b090168aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765421"
 ---
-# <a name="jet_lgposequals-method-object"></a>JET_LGPOS. Equals (método, Object)
+# <a name="jet_lgposequals-method-object"></a>JET_LGPOS. Método Equals (Object)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Objeto que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LGPOS](./jet-lgpos-structure2.md)
+[JET_LGPOS estructura](./jet-lgpos-structure2.md)
 
-[Miembros de JET_LGPOS](./jet-lgpos-members.md)
+[JET_LGPOS miembros](./jet-lgpos-members.md)
 
-[Equals (sobrecarga)](./jet-lgpos.equals-method.md)
+[Sobrecarga igual a](./jet-lgpos.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,19 +1,19 @@
 ---
 title: Propiedades de conexión EAP-TLS
-description: Obtenga información acerca de las propiedades de conexión EAP-TLS. Vea un ejemplo que es una instancia del esquema heredado eaptlsconnectionpropertiesv1.
+description: Obtenga información sobre las propiedades de conexión EAP-TLS. Vea un ejemplo que es una instancia del esquema heredado eaptlsconnectionpropertiesv1.
 ms.assetid: 7d8e7771-5263-4187-bb9d-ec0d6c154b17
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbda4f345c0feedf6571f9f1c58f0193a876d2d1
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 8040c8860c99fa0a144a0903bde281045657425135545491f38958c34b3af05d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "103797116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118785272"
 ---
 # <a name="eap-tls-connection-properties"></a>Propiedades de conexión EAP-TLS
 
-Este ejemplo es una instancia del esquema heredado [eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md) .
+Este ejemplo es una instancia del esquema [heredado eaptlsconnectionpropertiesv1.](eaptlsconnectionpropertiesv1schema-schema.md)
 
 ``` syntax
   <?xml version="1.0" ?>
@@ -54,9 +54,9 @@ Este ejemplo es una instancia del esquema heredado [eaptlsconnectionpropertiesv1
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

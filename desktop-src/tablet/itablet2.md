@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: b402695aa278105ad57209f3ff33e66ccaf8c746
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0df1114f5808e5fd08a1a2dbe00ccfb451eaa7096c978d3f4d454e508c0a2fcd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717354"
 ---
 # <a name="itablet2-interface"></a>Interfaz ITablet2
 
@@ -27,19 +27,19 @@ Extiende la [**interfaz ITablet**](itablet.md).
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITablet2** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITablet2** también tiene estos tipos de miembros:
+La **interfaz ITablet2** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet2 también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITablet2** tiene estos métodos.
+La **interfaz ITablet2** tiene estos métodos.
 
 
 
 | Método                                          | Descripción                                                                                              |
 |:------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| [**GetDeviceKind**](itablet2-getdevicekind.md) | Devuelve el tipo de dispositivo de hardware que representa el objeto de tableta, como el mouse, el lápiz o la entrada táctil.<br/> |
+| [**GetDeviceKind**](itablet2-getdevicekind.md) | Devuelve el tipo de dispositivo de hardware que el objeto de tableta representa, como el mouse, el lápiz o la entrada táctil.<br/> |
 
 
 
@@ -47,11 +47,11 @@ La interfaz **ITablet2** tiene estos métodos.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta interfaz se presentó en Windows Vista.
+Esta interfaz se introdujo en Windows Vista.
 
-Los desarrolladores no deben utilizar esta interfaz.
+Los desarrolladores no deben usar esta interfaz.
 
-En el código siguiente se describe cómo se define la interfaz **ITablet2** .
+En el código siguiente se describe cómo se define la interfaz **ITablet2.**
 
 ``` syntax
 [
@@ -73,7 +73,7 @@ interface ITablet2 : IUnknown
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

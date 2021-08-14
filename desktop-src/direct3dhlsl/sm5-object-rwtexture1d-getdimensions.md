@@ -1,9 +1,9 @@
 ---
-title: 'RWTexture1D:: Getdimensions ((función)'
-description: 'Devuelve las dimensiones del recurso. | RWTexture1D:: Getdimensions ((función)'
+title: FUNCIÓN RWTexture1D::GetDimensions
+description: Devuelve las dimensiones del recurso. | FUNCIÓN RWTexture1D::GetDimensions
 ms.assetid: 1bbd53ed-9396-4e8e-b2f3-3bd85f6e1a90
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b65f0113ecf2c91786e45c35f5e8e832744bc952
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: eb779d071f471abe92b18ef456a2a016536a5231ccf327f8ebd175be8e5ff224
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509297"
 ---
-# <a name="rwtexture1dgetdimensions-function"></a>RWTexture1D:: Getdimensions ((función)
+# <a name="rwtexture1dgetdimensions-function"></a>FUNCIÓN RWTexture1D::GetDimensions
 
 Devuelve las dimensiones del recurso.
 
@@ -36,12 +36,12 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Ancho* \[ de enuncia\]
+*Ancho* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El ancho del recurso, en textura.
+Ancho del recurso, en texturas.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ El ancho del recurso, en textura.
 
 Nada
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -62,11 +62,11 @@ void GetDimensions(out float Width);
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -74,14 +74,14 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [RWTexture1D](sm5-object-rwtexture1d.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

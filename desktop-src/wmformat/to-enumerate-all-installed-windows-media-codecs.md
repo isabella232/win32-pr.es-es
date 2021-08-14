@@ -1,26 +1,26 @@
 ---
-title: Para enumerar todos los códecs de Windows Media instalados
-description: Para enumerar todos los códecs de Windows Media instalados
+title: Para enumerar todos los códecs multimedia Windows instalados
+description: Para enumerar todos los códecs multimedia Windows instalados
 ms.assetid: 651c8624-0b66-4d0e-a25f-6c4b1a94e849
 keywords:
-- secuencias, enumerar códecs de Windows Media instalados
-- códecs, enumeraciones
-- secuencias, índices de códecs
-- códecs, índices
+- streams,enumerating installed Windows Media codecs
+- codecs,enumerations
+- streams,codec indexes
+- codecs,indexes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6db9a35913dde13f563ee57d54ee5e7de87d82cc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b63f58f94cf36e18fcbaa31bb9cff0dd8b5ab4717cc88e6f05657c7a2c72b429
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105714235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118699817"
 ---
-# <a name="to-enumerate-all-installed-windows-media-codecs"></a>Para enumerar todos los códecs de Windows Media instalados
+# <a name="to-enumerate-all-installed-windows-media-codecs"></a>Para enumerar todos los códecs multimedia Windows instalados
 
-Las interfaces de información de códec utilizan índices de códec para identificar códecs individuales. Los códecs se indexan de forma independiente para audio y vídeo. Dentro de un tipo de códec, los índices van desde 0 hasta uno menos que el número de códecs de ese tipo.
+Todas las interfaces de información de códec usan índices de códec para identificar códecs individuales. Los códecs se indexa independientemente para audio y para vídeo. Dentro de un tipo de códec, los índices oscilan entre 0 y uno menos que el número de códecs de ese tipo.
 
-En el ejemplo de código siguiente se muestra cómo obtener el índice asociado a cada códec. Para compilar este código en la aplicación, incluya stdio. h.
+En el código de ejemplo siguiente se muestra cómo obtener el índice asociado a cada códec. Para compilar este código en la aplicación, incluya stdio.h.
 
 
 ```C++
@@ -148,12 +148,12 @@ HRESULT GetCodecNames(IWMCodecInfo3* pCodecInfo)
 
 <dl> <dt>
 
-[**Obtención de información de configuración de la secuencia de códecs**](getting-stream-configuration-information-from-codecs.md)
+[**Obtención de información de configuración de secuencias de códecs**](getting-stream-configuration-information-from-codecs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

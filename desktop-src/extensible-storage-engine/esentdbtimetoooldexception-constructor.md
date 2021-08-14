@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDbTimeTooOldException'
-title: Constructor de EsentDbTimeTooOldException
+description: 'Más información sobre: Constructor EsentDbTimeTooOldException'
+title: Constructor EsentDbTimeTooOldException
 TOCTitle: 'EsentDbTimeTooOldException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDbTimeTooOldException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdbtimetoooldexception.esentdbtimetoooldexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5dcc9d4e769379bd9b534120db8a1b9e29fade25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88d6e597d597a63456a1827862bb1d905d8b537b44277a01853629e8d4e1e2d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118779869"
 ---
-# <a name="esentdbtimetoooldexception-constructor"></a>Constructor de EsentDbTimeTooOldException
+# <a name="esentdbtimetoooldexception-constructor"></a>Constructor EsentDbTimeTooOldException
 
 Inicializa una nueva instancia de la clase EsentDbTimeTooOldException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDbTimeTooOldException()
 public EsentDbTimeTooOldException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDbTimeTooOldException()
 
 [Miembros de EsentDbTimeTooOldException](./esentdbtimetoooldexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

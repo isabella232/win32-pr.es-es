@@ -1,19 +1,19 @@
 ---
-description: Clase del programa que usa la cámara para establecer la exposición.
+description: Clase del programa utilizado por la cámara para establecer la exposición.
 ms.assetid: 81fbd968-935a-4600-9346-9c14d1eb3f12
-title: System. Photo. ProgramMode
+title: System.Photo.ProgramMode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2a6ba817d4722b97b28d0966233f8fdea1de7f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85651818feca3d7e3859533d9a8f30fbccc6df4e5c500ac194e5a1c979e58452
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723665"
 ---
-# <a name="systemphotoprogrammode"></a>System. Photo. ProgramMode
+# <a name="systemphotoprogrammode"></a>System.Photo.ProgramMode
 
-Clase del programa que usa la cámara para establecer la exposición.
+Clase del programa utilizado por la cámara para establecer la exposición.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -132,7 +132,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -147,7 +147,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -159,7 +159,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -177,7 +177,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

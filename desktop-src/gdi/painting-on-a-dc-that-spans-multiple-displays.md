@@ -1,19 +1,19 @@
 ---
-description: Para responder a un mensaje de dibujo de WM \_ , use código similar al siguiente.
+description: Para responder a un mensaje \_ WM PAINT, use código como el siguiente.
 ms.assetid: 682d9bc6-8d74-48c4-80fb-bae73d409a6b
 title: Pintar en un controlador de dominio que abarca varias pantallas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e5b1b85c8aab20b7ef2415c1d67188ecab7728c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 550279d003c7d32fc97923ea6ebe4c95364773e514a69e4c66bdb4b100784384
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118759486"
 ---
 # <a name="painting-on-a-dc-that-spans-multiple-displays"></a>Pintar en un controlador de dominio que abarca varias pantallas
 
-Para responder a un mensaje de **\_ dibujo de WM** , use código similar al siguiente.
+Para responder a un **mensaje \_ WM PAINT,** use código como el siguiente.
 
 
 ```C++
@@ -26,7 +26,7 @@ EndPaint(hwnd, &ps);
 
 
 
-Para pintar la mitad superior de una ventana, use código similar al siguiente.
+Para pintar la mitad superior de una ventana, use código como el siguiente.
 
 
 ```C++
@@ -39,7 +39,7 @@ ReleaseDC(hwnd, hdc);
 
 
 
-Para pintar toda la pantalla virtual de forma óptima para cada monitor, use código similar al siguiente.
+Para pintar toda la pantalla virtual de forma óptima para cada monitor, use código como el siguiente.
 
 
 ```C++

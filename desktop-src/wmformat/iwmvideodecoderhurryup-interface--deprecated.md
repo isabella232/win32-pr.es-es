@@ -1,9 +1,9 @@
 ---
-title: Interfaz IWMVideoDecoderHurryup (Wmcodecdsp. h)
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | Interfaz IWMVideoDecoderHurryup (Wmcodecdsp. h)
+title: Interfaz IWMVideoDecoderHurryup (Wmcodecdsp.h)
+description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Interfaz IWMVideoDecoderHurryup (Wmcodecdsp.h)
 ms.assetid: 15206194-f49c-444c-858c-20c0a82ead37
 keywords:
-- Interfaz IWMVideoDecoderHurryup formato de Windows Media
+- IWMVideoDecoderHurryup Interface windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acf5d5e64813834f336a563d405d01d69f962da8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a745bd0ddbfb44ceedf5e059740e015f0cc572c07e730752e84f1de22b028d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118700801"
 ---
-# <a name="iwmvideodecoderhurryup-interface"></a>Interfaz IWMVideoDecoderHurryup
+# <a name="iwmvideodecoderhurryup-interface"></a>IWMVideoDecoderHurryup (Interfaz)
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Para obtener la documentación actual sobre los códecs de Windows Media y los p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

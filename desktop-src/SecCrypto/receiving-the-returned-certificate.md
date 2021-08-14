@@ -1,7 +1,7 @@
 ---
 description: Explica cómo una aplicación recibe un certificado.
 ms.assetid: 7f87dcf5-b434-4f63-abcd-6873831d22bc
-title: Recibir el certificado devuelto
+title: Recepción del certificado devuelto
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 73853250c581e460360f5490defc0c94e76e5be3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb2efe504e2d09b3fae2b6d6293772bf67a3f038a5f9c43330707f541e2ba8f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900971"
 ---
-# <a name="receiving-the-returned-certificate"></a>Recibir el certificado devuelto
+# <a name="receiving-the-returned-certificate"></a>Recepción del certificado devuelto
 
-Cuando la entidad de certificación (CA) ha comprobado la información de identidad del solicitante y se ha asegurado de que el solicitante es el propietario de la clave privada y de que los datos sobre el solicitante son precisos, la entidad de certificación crea un certificado X. 509, lo firma, lo empaqueta con los demás certificados necesarios (como el propio certificado de la entidad de certificación) en un mensaje y envía el mensaje al solicitante. El mensaje puede ser un \# mensaje PKCS 7 o una respuesta CMC (las plantillas V2 dan como resultado una respuesta CMC).
+Cuando la entidad de certificación (CA) ha comprobado la información de identidad del solicitante y se ha asegurado de que el solicitante es el propietario de la clave privada y de que los datos sobre ese solicitante son precisos, la entidad de certificación crea un certificado X.509, lo firma y lo empaqueta con cualquier otro certificado necesario (por ejemplo, el propio certificado de la entidad de certificación) en un mensaje.  y envía el mensaje al solicitante. El mensaje puede ser un mensaje PKCS 7 o una respuesta de CMC (las plantillas V2 tienen como resultado \# una respuesta de CMC).
 
-La aplicación receptora pasa el mensaje al control de inscripción de certificados. Después, el control de inscripción de certificados abre el mensaje y extrae los certificados. Se muestra al usuario un cuadro de diálogo en el que se le pregunta si el usuario aceptará certificados autofirmados en el almacén "raíz". Si el usuario acepta el certificado raíz, el resto de los certificados (excepto el certificado del solicitante) se colocan en el almacén de "CA". El certificado del solicitante se coloca en el almacén de certificados especificado por el solicitante en la propiedad [**MyStoreName**](/windows/win32/api/xenroll/nf-xenroll-icenroll-get_mystorename) .
+La aplicación receptora pasa el mensaje al Control de inscripción de certificados. A continuación, el Control de inscripción de certificados abre el mensaje y extrae los certificados. Se le pide al usuario un cuadro de diálogo que le pregunte si aceptará certificados autofirmados en el almacén "Raíz". Si el usuario acepta el certificado raíz, el resto de los certificados (excepto el certificado del solicitante) se colocan en el almacén "CA". El certificado del solicitante se coloca en el almacén de certificados especificado por el solicitante en la [**propiedad MyStoreName.**](/windows/win32/api/xenroll/nf-xenroll-icenroll-get_mystorename)
 
-En el ejemplo siguiente se muestra cómo usar el Visual Basic Scripting Edition (VBScript) y HTML en una página web para recibir y almacenar los certificados devueltos.
+En el ejemplo siguiente se muestra cómo usar Visual Basic Scripting Edition (VBScript) y HTML en una página web para recibir y almacenar los certificados devueltos.
 
 
 ```VB

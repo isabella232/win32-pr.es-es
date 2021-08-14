@@ -1,7 +1,7 @@
 ---
 description: La función AddressToString convierte una dirección en una cadena.
 ms.assetid: 999a6142-1423-4006-a489-63895dd19ce3
-title: Función AddressToString (Netmon. h)
+title: Función AddressToString (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 0c7c659a05167055b18c36e5c6c36465538af483
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58c105fb8fa646fbffcc7d7d4a3f1dad3a9cd86e7bb6ef8cc426dc982873f720
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796375"
 ---
-# <a name="addresstostring-function"></a>AddressToString función)
+# <a name="addresstostring-function"></a>Función AddressToString
 
-La función **AddressToString** convierte una dirección en una cadena.
+La **función AddressToString** convierte una dirección en una cadena.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ LPSTR WINAPI AddressToString(
 
 <dl> <dt>
 
-*cadena* \[ enuncia\]
+*cadena* \[ out\]
 </dt> <dd>
 
 Cadena a la que se convierte la dirección.
 
 </dd> <dt>
 
-*lpAddress* \[ de\]
+*lpAddress* \[ En\]
 </dt> <dd>
 
 Dirección que se imprime.
@@ -62,12 +62,12 @@ El valor devuelto es un puntero a la cadena convertida.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Analizador. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Parser.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl>  |
 
 

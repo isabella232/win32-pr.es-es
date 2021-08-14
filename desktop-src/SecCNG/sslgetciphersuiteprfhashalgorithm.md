@@ -1,7 +1,7 @@
 ---
-description: 'Devuelve el identificador del algoritmo Cryptography API: Next Generation (CNG) del algoritmo hash que se usa para la función pseudoaleatorios (PRF) del Protocolo de seguridad de la capa de transporte (TLS) para el protocolo de entrada, el conjunto de cifrado y el tipo de clave.'
+description: 'Devuelve cryptography API: identificador de algoritmo de próxima generación (CNG) del algoritmo hash que se usa para la función pseudo aleatoria (PRF) del protocolo de seguridad de la capa de transporte (TLS) para el protocolo de entrada, el conjunto de cifrado y el tipo de clave.'
 ms.assetid: 8d20b2da-390e-458e-b122-f5ef3722ad87
-title: Función SslGetCipherSuitePRFHashAlgorithm (Sslprovider. h)
+title: Función SslGetCipherSuitePRFHashAlgorithm (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 452cb7b36b20697a95b2c2abae7d8cd3b4180050
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f328f5e4746d3a66f614e8ccbbfe66bbf3475b7f7a1a98a8a68c11df96412bf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906167"
 ---
-# <a name="sslgetciphersuiteprfhashalgorithm-function"></a>SslGetCipherSuitePRFHashAlgorithm función)
+# <a name="sslgetciphersuiteprfhashalgorithm-function"></a>Función SslGetCipherSuitePRFHashAlgorithm
 
-La función **SslGetCipherSuitePRFHashAlgorithm** devuelve el identificador del algoritmo Cryptography API: Next Generation (CNG) del [*algoritmo hash*](/windows/desktop/SecGloss/h-gly) que se usa para la [*función pseudoaleatorios*](/windows/desktop/SecGloss/p-gly) (PRF) del Protocolo de seguridad de la [*capa de transporte*](/windows/desktop/SecGloss/t-gly) (TLS) para el protocolo de entrada, el conjunto de cifrado y el tipo de clave.
+La función **SslGetCipherSuitePRFHashAlgorithm** devuelve cryptography API: identificador de algoritmo de próxima generación (CNG) del [*algoritmo hash*](/windows/desktop/SecGloss/h-gly) que se usa para la [*función pseudo*](/windows/desktop/SecGloss/p-gly) aleatoria (PRF) del protocolo de seguridad de la capa de transporte (TLS) para el protocolo de entrada, el conjunto de cifrado y el tipo de clave. [](/windows/desktop/SecGloss/t-gly)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,64 +44,64 @@ SECURITY_STATUS WINAPI SslGetCipherSuitePRFHashAlgorithm(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor de protocolo del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+El identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de seguridad (SSL).
 
 </dd> <dt>
 
-*dwProtocol* \[ de\]
+*dwProtocol* \[ En\]
 </dt> <dd>
 
-Uno de los valores del [**identificador de protocolo del proveedor de SSL de CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Uno de los valores [**de Identificador de protocolo de proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ de\]
+*dwCipherSuite* \[ En\]
 </dt> <dd>
 
-Uno de los valores del [**identificador del conjunto de cifrado del proveedor de SSL de CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Uno de los valores del identificador del conjunto de cifrado del proveedor SSL de [**CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwKeyType* \[ de\]
+*dwKeyType* \[ En\]
 </dt> <dd>
 
-Uno de los valores del [**identificador de tipo de clave del proveedor de SSL de CNG**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) . En el caso de los tipos de clave que no son [*criptografía de curva elíptica*](/windows/desktop/SecGloss/e-gly) (ECC), establezca este parámetro en cero.
+Uno de los valores de Identificador de tipo de clave del proveedor SSL de [**CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) Para los tipos de clave que no [*son criptografía de curva elíptica*](/windows/desktop/SecGloss/e-gly) (ECC), establezca este parámetro en cero.
 
 </dd> <dt>
 
-*szPRFHash* \[ enuncia\]
+*szPRFHash* \[ out\]
 </dt> <dd>
 
-Uno de los [**identificadores de algoritmo CNG**](cng-algorithm-identifiers.md) para el hash que se utilizará para el PRF de TLS.
+Uno de los [**identificadores de algoritmo CNG**](cng-algorithm-identifiers.md) para el hash que se usará para la PRF de TLS.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Este parámetro se reserva para uso futuro y debe establecerse en cero.
+Este parámetro está reservado para uso futuro y debe establecerse en cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                       | Descripción                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl>    | El parámetro *hSslProvider* contiene un puntero que no es válido.<br/>                |
-| <dl> <dt>**NTE \_ \_Parámetro no válido**</dt> <dt>0x80090027L</dt> </dl> | El parámetro *szPRFHash* se establece en **null**.<br/>                                     |
-| <dl> <dt>**NTE \_ 0x80090029L no \_ compatible**</dt> <dt></dt> </dl>     | La función seleccionada no se admite en la versión especificada de la interfaz.<br/> |
-| <dl> <dt>**NTE \_ \_Marcas no válidas**</dt> <dt>0x80090009L</dt> </dl>         | El parámetro *dwFlags* debe establecerse en cero.<br/>                                      |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | El *parámetro hSslProvider* contiene un puntero que no es válido.<br/>                |
+| <dl> <dt>**NTE \_ PARÁMETRO \_ NO VÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | El *parámetro szPRFHash* se establece en **NULL.**<br/>                                     |
+| <dl> <dt>**NTE \_ NO \_ SE ADMITE**</dt> <dt>0x80090029L</dt> </dl>     | La función seleccionada no se admite en la versión especificada de la interfaz.<br/> |
+| <dl> <dt>**NTE \_ BAD \_ FLAGS**</dt> <dt>0x80090009L</dt> </dl>         | El *parámetro dwFlags* debe establecerse en cero.<br/>                                      |
 
 
 
@@ -109,7 +109,7 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 ## <a name="remarks"></a>Observaciones
 
-Se llama a esta función **SslGetCipherSuitePRFHashAlgorithm** para las conversaciones TLS 1,2 o posteriores con el fin de consultar el algoritmo hash que se usará en el PRF de TLS.
+Se llama a esta función **SslGetCipherSuitePRFHashAlgorithm** para que las conversaciones de TLS 1.2 o posterior consulten el algoritmo hash que se usará en la PRF de TLS.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -117,9 +117,9 @@ Se llama a esta función **SslGetCipherSuitePRFHashAlgorithm** para las conversa
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

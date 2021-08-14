@@ -4,24 +4,24 @@ ms.assetid: 1ce56374-cfbf-4ee4-b942-8a7391911a38
 title: Metadatos de VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e718d3fb0290f8610944180c079e4d615124eb8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e69d0a40bbbce2d231573d187843c14bd83fea419a7024940d0fd618838500b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986585"
 ---
 # <a name="vss-metadata"></a>Metadatos de VSS
 
 Tanto los escritores como los solicitantes mantienen la información necesaria para una operación de copia de seguridad o restauración en sus propios documentos de metadatos.
 
-Estos documentos, el [*documento de metadatos de escritor*](vssgloss-w.md) y el [*documento de componentes de copia de seguridad*](vssgloss-b.md), respectivamente, se usan como base para la comunicación del escritor y el solicitante y la coordinación durante las actividades de copia de seguridad y restauración.
+Estos documentos, [](vssgloss-w.md) el documento de metadatos del escritor y el documento de componentes de copia de [*seguridad,*](vssgloss-b.md)respectivamente, se usan como base para la comunicación y coordinación entre escritores y solicitantes durante las actividades de copia de seguridad y restauración.
 
-Los metadatos se representan en formato XML con un esquema de propiedad. Los metadatos se pueden copiar en disco, en cinta o en cualquier otro dispositivo de almacenamiento masivo. Siempre debe guardarse en el medio de copia de seguridad durante una operación de copia de seguridad y tendrá que recuperarse de ese medio en el transcurso de una operación de restauración.
+Los metadatos se representan en formato XML mediante un esquema propietario. Los metadatos se pueden copiar en disco, cinta o cualquier otro dispositivo de almacenamiento masivo. Siempre debe guardarse en el medio de copia de seguridad durante una operación de copia de seguridad y deberá recuperarse de ese medio en el transcurso de una operación de restauración.
 
-**PRECAUCIÓN:** Los detalles específicos del formato y del esquema son solo para uso del sistema. Los desarrolladores no deben intentar modificar o usar directamente la representación XML de los metadatos.
+**Precaución:** Los detalles específicos del formato y el esquema son solo para uso del sistema. Los desarrolladores no deben intentar modificar ni usar directamente la representación XML de los metadatos.
 
-Los escritores y solicitantes se proporcionan con una variedad de métodos de consulta y de conjunto para obtener acceso y modificar los componentes de copia de seguridad y los documentos de metadatos del escritor:
+A los escritores y solicitantes se les proporciona una variedad de métodos de consulta y establecimiento para acceder y modificar los documentos componentes de copia de seguridad y metadatos del escritor:
 
 -   [Trabajar con el documento de metadatos del escritor](working-with-the-writer-metadata-document.md)
 -   [Trabajar con el documento componentes de copia de seguridad](working-with-the-backup-components-document.md)

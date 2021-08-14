@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnRequestLeaveFullScreen, método
-description: Se llama cuando el cliente solicita dejar el modo de pantalla completa y la propiedad IMsTscAdvancedSettings Put ContainerHandledFullScreen se ha \_ establecido en un valor distinto de cero.
+title: Método IMsTscAxEvents OnRequestLeaveFullScreen
+description: Se llama cuando el cliente solicita salir del modo de pantalla completa y la propiedad IMsTscAdvancedSettings put ContainerHandledFullScreen se ha establecido en un valor distinto \_ de cero.
 ms.assetid: db6ee012-8288-4360-98b2-12858ea65baa
 ms.tgt_platform: multiple
 keywords:
 - Método OnRequestLeaveFullScreen Servicios de Escritorio remoto
-- Método OnRequestLeaveFullScreen Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnRequestLeaveFullScreen
+- Método OnRequestLeaveFullScreen Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnRequestLeaveFullScreen
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e814d6153e32fdf4fa498a6630fc9ca2908510e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74f82cd71942f559039a175fdfff9319cae5ea35a73d4698760be4642a23c448
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757350"
 ---
-# <a name="imstscaxeventsonrequestleavefullscreen-method"></a>IMsTscAxEvents:: OnRequestLeaveFullScreen (método)
+# <a name="imstscaxeventsonrequestleavefullscreen-method"></a>IMsTscAxEvents::OnRequestLeaveFullScreen (método)
 
-Se llama cuando el cliente solicita dejar el modo de pantalla completa y la propiedad [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) se ha establecido en un valor distinto de cero.
+Se llama cuando el cliente solicita salir del modo de pantalla completa y la propiedad [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) se ha establecido en un valor distinto de cero.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el modo de pantalla completa controlado por contenedores, el contenedor debe dejar el modo de pantalla completa estándar en respuesta a este evento.
+En el modo de pantalla completa con control de contenedor, el contenedor debe dejar el modo de pantalla completa estándar en respuesta a este evento.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -65,7 +65,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

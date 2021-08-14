@@ -1,19 +1,19 @@
 ---
-description: Se trata de una secuencia que contiene los datos necesarios para representar la imagen de la cuenta de vídeo dinámica de un contacto.
+description: Se trata de una secuencia que contiene los datos necesarios para representar la imagen dinámica de la cuenta de vídeo de un contacto.
 ms.assetid: 28d5af8c-2b05-41e7-98ed-efc25466848c
-title: System. contact. AccountPictureDynamicVideo
+title: System.Contact.AccountPictureDynamicVideo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3c85af272828f6f6affc2c26e2a5a77cd06e1e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a91c8990cc9745694f3d405f8a6a6662d07c44ab0023241a1121079988ba755
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118730555"
 ---
-# <a name="systemcontactaccountpicturedynamicvideo"></a>System. contact. AccountPictureDynamicVideo
+# <a name="systemcontactaccountpicturedynamicvideo"></a>System.Contact.AccountPictureDynamicVideo
 
-Se trata de una secuencia que contiene los datos necesarios para representar la imagen de la cuenta de vídeo dinámica de un contacto.
+Se trata de una secuencia que contiene los datos necesarios para representar la imagen dinámica de la cuenta de vídeo de un contacto.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

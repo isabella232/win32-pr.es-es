@@ -1,7 +1,7 @@
 ---
-description: El método SourceListClearSource quita una red o un origen de dirección URL. Acepta el tipo, el tipo de origen y SourcePath, la ruta de acceso de origen, como parámetros que se van a quitar. Este método llama a MsiSourceListClearSource.
+description: El método SourceListClearSource quita un origen de red o dirección URL. Acepta Type, el tipo de origen y SourcePath, la ruta de acceso de origen, como parámetros que se quitarán. Este método llama a MsiSourceListClearSource.
 ms.assetid: a55676d4-795d-4ffe-8621-ef47c16a936c
-title: Product. SourceListClearSource (método)
+title: Método Product.SourceListClearSource
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 4988d0ba9003e087b6aeac58ae5587727067e01c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9adeb342aa47162905814979eb29853edd1c5bc660e3771f3beabb8a485c6060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118376698"
 ---
-# <a name="productsourcelistclearsource-method"></a>Product. SourceListClearSource (método)
+# <a name="productsourcelistclearsource-method"></a>Método Product.SourceListClearSource
 
-El método **SourceListClearSource** quita una red o un origen de dirección URL. Acepta el *tipo*, el tipo de origen y *SourcePath*, la ruta de acceso de origen, como parámetros que se van a quitar. Este método llama a [**MsiSourceListClearSource**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearsourcea).
+El **método SourceListClearSource** quita un origen de red o dirección URL. Acepta *Type*, el tipo de origen y *SourcePath*, la ruta de acceso de origen, como parámetros que se quitarán. Este método llama a [**MsiSourceListClearSource.**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearsourcea)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ Product.SourceListClearSource(
 *Tipo* 
 </dt> <dd>
 
-Tipo de origen que se va a quitar: MSISOURCETYPE \_ Network o MSISOURCETYPE \_ URL.
+Tipo de origen que se va a quitar: MSISOURCETYPE \_ NETWORK o MSISOURCETYPE \_ URL.
 
 </dd> <dt>
 
@@ -62,25 +62,25 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IProduct se define como 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Manuales**](product-object.md)
+[**Producto**](product-object.md)
 </dt> <dt>
 
 [**MsiSourceListClearSource**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearsourcea)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

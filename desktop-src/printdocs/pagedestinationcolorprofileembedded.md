@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre el parámetro PageDestinationColorProfileEmbedded. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el parámetro PageDestinationColorProfileEmbedded. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: b360f870-bfaa-4d4d-adce-17fcfc48b6a6
 title: PageDestinationColorProfileEmbedded
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05865636b6554873844a99b523f8c21fe2bfc1c7
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 8f1a66daa2ed8cc4db9cbcc390030dde05b034808f9326fee73f1fe28e3d91cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732648"
 ---
 # <a name="pagedestinationcolorprofileembedded"></a>PageDestinationColorProfileEmbedded
 
@@ -24,7 +24,7 @@ Especifica el perfil de color de destino incrustado.
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|----------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                  |
 | Prefijo de ámbito <br/> | Página<br/>                                          |
@@ -68,7 +68,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -85,7 +85,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

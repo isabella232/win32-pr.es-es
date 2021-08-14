@@ -1,31 +1,31 @@
 ---
-title: Convertir un contexto de representación en no actual
-description: Para desasociar un contexto de representación de un subproceso, conviértalo en no actual. Para ello, puede llamar a la función wglMakeCurrent con los parámetros establecidos en NULL. A continuación se muestra un ejemplo de esta tarea sencilla.
+title: Hacer que un contexto de representación no sea actual
+description: Para separar un contexto de representación de un subproceso, no lo haga actual. Para ello, llame a la función wglMakeCurrent con los parámetros establecidos en NULL. A continuación se muestra un ejemplo de esta tarea sencilla.
 ms.assetid: fe76e3d3-5480-448d-95aa-a5af0da309f3
 keywords:
 - OpenGL en Windows, contextos de representación
 - contextos de representación OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e12b3e0184a606faef7792b990d674054c5ddf07
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 914bbed6e2d595d23cfcf8dc38820efc18153f4433a2a48446090ec16818b671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937368"
 ---
-# <a name="making-a-rendering-context-not-current"></a>Convertir un contexto de representación en no actual
+# <a name="making-a-rendering-context-not-current"></a>Hacer que un contexto de representación no sea actual
 
-Para desasociar un contexto de representación de un subproceso, conviértalo en no actual. Para ello, puede llamar a la función [**wglMakeCurrent**](/windows/desktop/api/wingdi/nf-wingdi-wglmakecurrent) con los parámetros establecidos en **null**. A continuación se muestra un ejemplo de esta tarea sencilla.
+Para separar un contexto de representación de un subproceso, no lo haga actual. Para ello, llame a la [**función wglMakeCurrent**](/windows/desktop/api/wingdi/nf-wingdi-wglmakecurrent) con los parámetros establecidos en **NULL.** A continuación se muestra un ejemplo de esta tarea sencilla.
 
 ``` syntax
 // detach the current rendering context from the thread  
 wglMakeCurrent(NULL, NULL);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

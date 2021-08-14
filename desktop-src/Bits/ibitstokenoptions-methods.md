@@ -1,31 +1,31 @@
 ---
-title: Métodos IBitsTokenOptions
+title: Métodos de IBitsTokenOptions
 description: La interfaz IBitsTokenOptions expone los métodos siguientes.
 ms.assetid: 1C78E31B-0536-4319-A148-8ED9D0F698BB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f59438ffdb57420da803ac51e105125c872b99e0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cde7821d706f37b61d50a9344fff088fd27bac83651f863efba91df20aa33aa5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959324"
 ---
-# <a name="ibitstokenoptions-methods"></a>Métodos IBitsTokenOptions
+# <a name="ibitstokenoptions-methods"></a>Métodos de IBitsTokenOptions
 
-La interfaz [**IBitsTokenOptions**](/windows/desktop/api/Bits4_0/nn-bits4_0-ibitstokenoptions) expone los métodos siguientes.
+La [**interfaz IBitsTokenOptions**](/windows/desktop/api/Bits4_0/nn-bits4_0-ibitstokenoptions) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Método SetHelperTokenFlags**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertokenflags)
--   [**Método GetHelperTokenFlags**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-gethelpertokenflags)
--   [**Método SetHelperToken**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertoken)
+-   [**SetHelperTokenFlags (método)**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertokenflags)
+-   [**GetHelperTokenFlags (método)**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-gethelpertokenflags)
+-   [**SetHelperToken (método)**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertoken)
 -   [**Método ClearHelperToken**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-clearhelpertoken)
--   [**Método GetHelperTokenSid**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-gethelpertokensid)
+-   [**GetHelperTokenSid (método)**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-gethelpertokensid)
 
- 
+ 
 
- 
+ 
 
 
 

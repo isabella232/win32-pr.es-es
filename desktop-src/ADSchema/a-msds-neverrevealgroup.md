@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Never-Reveal-Group
-description: Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar en caché sus contraseñas en un RODC.
+title: Atributo ms-DS-Never-Reveal-Group
+description: Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar sus contraseñas en caché en un RODC.
 ms.assetid: 203a660b-503e-4cf1-a796-eac024629b3e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de grupo MS-DS-Never-Reveal
-- Esquema de AD de atributo msDS-NeverRevealGroup
+- Esquema de AD del atributo ms-DS-Never-Reveal-Group
+- Esquema de AD del atributo msDS-NeverRevealGroup
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1308fb1bc0818601a037e66b764e607c0a32532
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b5bfc5acfd6239df6369829b5ec848c41c9bcc3b212d44a9e9267aa16db42022
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684162"
 ---
-# <a name="ms-ds-never-reveal-group-attribute"></a>atributo MS-DS-Never-Reveal-Group
+# <a name="ms-ds-never-reveal-group-attribute"></a>Atributo ms-DS-Never-Reveal-Group
 
-Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar en caché sus contraseñas en un RODC.
+Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar sus contraseñas en caché en un RODC.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-Never-Reveal-Group                |
-| Nombre para mostrar de LDAP | msDS-NeverRevealGroup                   |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Never-Reveal-Group                |
+| Ldap-Display-Name | msDS-NeverRevealGroup                   |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1926                 |
-| System-ID-GUID    | 15585999-fd49-4d66-B25D-eeb96aba8174    |
+| System-Id-Guid    | 15585999-fd49-4d66-b25d-eeb96aba8174    |
 | Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -52,13 +52,13 @@ Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 2106                                                                               |
+| Id. de vínculo                | 2106                                                                               |
 | MAPI-Id                | \-                                                                                 |
 | System-Only            | False                                                                              |
-| Tiene un único valor       | False                                                                              |
+| Es de un solo valor       | False                                                                              |
 | Está indexado             | False                                                                              |
 | En el catálogo global      | False                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |
 | Search-Flags           | 0x00000000                                                                         |
@@ -73,13 +73,13 @@ Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 2106                                                                               |
+| Id. de vínculo                | 2106                                                                               |
 | MAPI-Id                | \-                                                                                 |
 | System-Only            | False                                                                              |
-| Tiene un único valor       | False                                                                              |
+| Es de un solo valor       | False                                                                              |
 | Está indexado             | False                                                                              |
 | En el catálogo global      | False                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |
 | Search-Flags           | 0x00000000                                                                         |
@@ -94,13 +94,13 @@ Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 2106                                                                               |
+| Id. de vínculo                | 2106                                                                               |
 | MAPI-Id                | \-                                                                                 |
 | System-Only            | False                                                                              |
-| Tiene un único valor       | False                                                                              |
+| Es de un solo valor       | False                                                                              |
 | Está indexado             | False                                                                              |
 | En el catálogo global      | False                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |
 | Search-Flags           | 0x00000000                                                                         |

@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene temas conceptuales y de procedimientos que describen los descodificadores de mapas de bits de Windows Imaging Component (WIC) que se usan en la descodificación de imágenes digitales.
+description: Esta sección contiene temas conceptuales y de procedimientos que describen los descodificadores de mapa de bits de Windows Imaging Component (WIC) que se usan para descodificar imágenes digitales.
 ms.assetid: a5d166f1-341b-496e-b63f-ecfae89032ff
-title: Descodificación de imágenes digitales
+title: Decoding Digital Images
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c1a5e83712d2163ce77f9f3b74ec3afedc46f85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a48614218d1d32c4fe2795d3115e01aa7859d8938270eaa0c11dd3d3b481e87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118711330"
 ---
-# <a name="decoding-digital-images"></a>Descodificación de imágenes digitales
+# <a name="decoding-digital-images"></a>Decoding Digital Images
 
-Esta sección contiene temas conceptuales y de procedimientos que describen los descodificadores de mapas de bits de Windows Imaging Component (WIC) que se usan en la descodificación de imágenes digitales.
+Esta sección contiene temas conceptuales y de procedimientos que describen los descodificadores de mapa de bits de Windows Imaging Component (WIC) que se usan para descodificar imágenes digitales.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,9 +21,9 @@ Esta sección contiene temas conceptuales y de procedimientos que describen los 
 
 | Tema                                                                     | Descripción                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Información general sobre descodificación](-wic-creating-decoder.md)<br/>                 | En el tema se presenta el descodificador de mapas de bits, un componente de códec WIC básico que se usa para descodificar archivos de imagen de una secuencia.<br/> |
-| [Información general sobre descodificación progresiva](-wic-progressive-decoding.md)<br/> | En este tema se presenta la descodificación progresiva y cómo usar la descodificación progresiva en las aplicaciones.<br/>               |
-| [Temas de procedimientos del descodificador](-wic-decoder-howto-portal.md)<br/>         | En los temas de esta sección se proporcionan ejemplos que muestran cómo realizar tareas relacionadas con el descodificador de mapas de bits.<br/>     |
+| [Información general sobre lacoding](-wic-creating-decoder.md)<br/>                 | En el tema se presenta el descodificador de mapa de bits, un componente de códec WIC básico que se usa para descodificar archivos de imagen de una secuencia.<br/> |
+| [Información general sobre la decodación progresiva](-wic-progressive-decoding.md)<br/> | En este tema se presenta la decodación progresiva y cómo usar la descodación progresiva en las aplicaciones.<br/>               |
+| [Temas de cómo descodificar](-wic-decoder-howto-portal.md)<br/>         | Los temas de esta sección proporcionan ejemplos que muestran cómo realizar tareas relacionadas con el descodificador de mapa de bits.<br/>     |
 
 
 

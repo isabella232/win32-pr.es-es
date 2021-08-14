@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Trust-Forest-Trust-info
-description: Contiene información de confianza de bosque (un BLOB binario) utilizada por el sistema para un objeto Trusted-Domain.
+title: Atributo ms-DS-Trust-Forest-Trust-Info
+description: Contiene información de confianza de bosque (un BLOB binario) que usa el sistema para un Trusted-Domain objeto.
 ms.assetid: 60944ff6-d2b1-4f53-8557-7d79a7d9df51
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Trust-Forest-Trust-info
-- Esquema de AD de atributo msDS-TrustForestTrustInfo
+- Esquema de AD del atributo ms-DS-Trust-Forest-Trust-Info
+- Esquema de AD del atributo msDS-TrustForestTrustInfo
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e259abaeae4d99b80b8ff6a390901f1c9f51e6a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ae350001aa616052c1f0358497364ecfbce55d40e91314c56100d12848efc0ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960574"
 ---
-# <a name="ms-ds-trust-forest-trust-info-attribute"></a>atributo MS-DS-Trust-Forest-Trust-info
+# <a name="ms-ds-trust-forest-trust-info-attribute"></a>Atributo ms-DS-Trust-Forest-Trust-Info
 
-Contiene información de confianza de bosque (un BLOB binario) utilizada por el sistema para un objeto Trusted-Domain.
+Contiene información de confianza de bosque (un BLOB binario) que usa el sistema para un Trusted-Domain objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------------------|
-| CN                | MS-DS-Trust-Forest-Trust-info                                                                                      |
-| Nombre para mostrar de LDAP | msDS-TrustForestTrustInfo                                                                                          |
-| Tamaño              | \-                                                                                                                 |
-| Actualizar privilegio  | \-                                                                                                                 |
-| Frecuencia de actualización  | Solo cuando se cambia la relación de confianza entre bosques. Esto puede ocurrir si cambia la topología de un bosque de confianza. |
+| CN                | ms-DS-Trust-Forest-Trust-Info                                                                                      |
+| Ldap-Display-Name | msDS-TrustForestTrustInfo                                                                                          |
+| Size              | \-                                                                                                                 |
+| Actualizar privilegios  | \-                                                                                                                 |
+| Frecuencia de actualización  | Solo cuando cambia la relación de confianza entre bosques. Esto puede ocurrir si cambia la topología de un bosque de confianza. |
 | Attribute-Id      | 1.2.840.113556.1.4.1702                                                                                            |
-| System-ID-GUID    | 29cc866e-49d3-4969-942e-1dbc0925d183                                                                               |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)                                                              |
+| System-Id-Guid    | 29cc866e-49d3-4969-942e-1dbc0925d183                                                                               |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)                                                              |
 
 
 
@@ -52,15 +52,15 @@ Contiene información de confianza de bosque (un BLOB binario) utilizada por el 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -73,15 +73,15 @@ Contiene información de confianza de bosque (un BLOB binario) utilizada por el 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -94,15 +94,15 @@ Contiene información de confianza de bosque (un BLOB binario) utilizada por el 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -115,15 +115,15 @@ Contiene información de confianza de bosque (un BLOB binario) utilizada por el 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -136,15 +136,15 @@ Contiene información de confianza de bosque (un BLOB binario) utilizada por el 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-FVE-KeyPackage
+title: Atributo ms-FVE-KeyPackage
 description: Contiene la clave de cifrado de BitLocker de un volumen protegida por la contraseña de recuperación correspondiente.
 ms.assetid: 5a8964e0-e128-4ac4-9cc9-67799af8ae55
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-FVE-KeyPackage
-- msFVE-KeyPackage atributo AD Schema
+- Esquema de AD del atributo ms-FVE-KeyPackage
+- Esquema de AD del atributo msFVE-KeyPackage
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1c9ffc5deb053ad7718a235ca5f6df79c78f51
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 370c088c3e06a520d63e42707de44bec90cfa63394de4b60ef178deecbbc8fc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682767"
 ---
-# <a name="ms-fve-keypackage-attribute"></a>atributo MS-FVE-KeyPackage
+# <a name="ms-fve-keypackage-attribute"></a>Atributo ms-FVE-KeyPackage
 
 Contiene la clave de cifrado de BitLocker de un volumen protegida por la contraseña de recuperación correspondiente.
 
@@ -29,13 +29,13 @@ Contiene la clave de cifrado de BitLocker de un volumen protegida por la contras
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-FVE-KeyPackage                                     |
-| Nombre para mostrar de LDAP | msFVE-KeyPackage                                      |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-FVE-KeyPackage                                     |
+| Ldap-Display-Name | msFVE-KeyPackage                                      |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1999                               |
-| System-ID-GUID    | 1fd55ea8-88a7-47dc-8129-0daa97186a54                  |
+| System-Id-Guid    | 1fd55ea8-88a7-47dc-8129-0daa97186a54                  |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -52,18 +52,18 @@ Contiene la clave de cifrado de BitLocker de un volumen protegida por la contras
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
+| Es de un solo valor       | True                                                                         |
 | Está indexado             | False                                                                        |
 | En el catálogo global      | False                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Contiene la clave de cifrado de BitLocker de un volumen protegida por la contras
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
+| Es de un solo valor       | True                                                                         |
 | Está indexado             | False                                                                        |
 | En el catálogo global      | False                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Contiene la clave de cifrado de BitLocker de un volumen protegida por la contras
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
+| Es de un solo valor       | True                                                                         |
 | Está indexado             | False                                                                        |
 | En el catálogo global      | False                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 

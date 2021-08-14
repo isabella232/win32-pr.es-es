@@ -1,21 +1,21 @@
 ---
-title: Cambios de código de bytes en SM 5.1
-description: SM 5.1 cambia el modo en que se declaran y se hace referencia a los registros de recursos en las instrucciones.
+title: Cambios en el código de bytes en SM5.1
+description: SM5.1 cambia la forma en que se declaran los registros de recursos y se hace referencia a ellos en las instrucciones.
 ms.assetid: ABECF705-67B8-4419-8D18-74B43B9DC3AF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d66db788b0012a1c3221e37d4c2dd4e41566c6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e93d7d8533bac3750e743166a9d64b687fc06f0fbf21931d44e7d83d462cf15a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794563"
 ---
-# <a name="bytecode-changes-in-sm51"></a>Cambios de código de bytes en SM 5.1
+# <a name="bytecode-changes-in-sm51"></a>Cambios en el código de bytes en SM5.1
 
-SM 5.1 cambia el modo en que se declaran y se hace referencia a los registros de recursos en las instrucciones.
+SM5.1 cambia la forma en que se declaran los registros de recursos y se hace referencia a ellos en las instrucciones.
 
-SM 5.1 pasa a declarar una "variable" de registro, de forma similar a como se hace para los registros de memoria compartida del grupo, que se muestra en el ejemplo siguiente:
+SM5.1 avanza hacia la declaración de un registro "variable", de forma similar a como se hace para los registros de memoria compartida de grupo, como se muestra en el ejemplo siguiente:
 
 ``` syntax
 Texture2D<float4> tex0          : register(t5,  space0);
@@ -84,36 +84,36 @@ ret
 // Approximately 12 instruction slots used
 ```
 
-Ahora cada intervalo de recursos del sombreador tiene un identificador (un nombre) en el código de bytes del sombreador. Por ejemplo, la matriz de texturas de Tex1 se convierte en ' t 1 ' en el código de bytes del sombreador. Asignar identificadores únicos a cada intervalo de recursos permite dos cosas:
+Ahora, cada intervalo de recursos del sombreador tiene un identificador (un nombre) en el código de bytes del sombreador. Por ejemplo, la matriz de texturas de texas1 se convierte en "t1" en el código de bytes del sombreador. La asignación de identificadores únicos a cada intervalo de recursos permite dos cosas:
 
--   Identifique de forma inequívoca qué intervalo de recursos (consulte DCL \_ Resource \_ texture2d) se está indizando en una instrucción (vea la instrucción de ejemplo).
--   Adjunte un conjunto de atributos a la declaración, por ejemplo, tipo de elemento, tamaño de intervalo, modo de operación de trama, etc.
+-   Identifique de forma inequívoca qué intervalo de recursos (consulte dcl resource texture2d) que se indexa en una instrucción \_ \_ (consulte la instrucción de ejemplo).
+-   Adjunte un conjunto de atributos a la declaración, por ejemplo, tipo de elemento, tamaño de paso, modo de operación de trama, etc.
 
-Tenga en cuenta que el identificador del intervalo no está relacionado con la declaración de límite inferior de HLSL.
+Tenga en cuenta que el identificador del intervalo no está relacionado con la declaración de límite inferior HLSL.
 
-El orden de los enlaces de recursos de reflexión y las instrucciones de declaración del sombreador es el mismo para ayudar a identificar la correspondencia entre las variables de HLSL y los ID. de código de bytes.
+El orden de los enlaces de recursos de reflexión y las instrucciones de declaración del sombreador es el mismo para ayudar a identificar la correspondencia entre variables HLSL e identificadores de código de bytes.
 
-Cada instrucción de declaración en SM 5.1 usa un operando 3D para definir: ID. de intervalo, límites inferior y superior. Se emite un token adicional para especificar el espacio de registro. También se pueden emitir otros tokens para transmitir propiedades adicionales del intervalo; por ejemplo, CBuffer o la instrucción de declaración de búfer estructurado emite el tamaño de la CBuffer o la estructura. Los detalles exactos de la codificación se pueden encontrar en d3d12TokenizedProgramFormat. h y D3D10ShaderBinary:: CShaderCodeParser.
+Cada instrucción de declaración de SM5.1 usa un operando 3D para definir: id. de intervalo, límites inferior y superior. Se emite un token adicional para especificar el espacio de registro. También se pueden emitir otros tokens para transmitir propiedades adicionales del intervalo, por ejemplo, la instrucción de declaración de búfer estructurado o de cbuffer emite el tamaño del cbuffer o la estructura. Los detalles exactos de la codificación se pueden encontrar en d3d12TokenizedProgramFormat.h y D3D10ShaderBinary::CShaderCodeParser.
 
-Las instrucciones de SM 5.1 no emitirán información adicional del operando de recursos como parte de la instrucción (como en SM 5.0). Esta información se mueve ahora a las instrucciones de declaración. En SM 5.0, instrucciones que indexan los recursos de recursos necesarios para describirse en tokens de código de operación extendidos, ya que la indización ofuscaba la asociación con la declaración. En SM 5.1, cada identificador (por ejemplo, ' t 1 ') está asociado de forma no ambigua a una única declaración que describe la información de recursos necesaria. Por lo tanto, los tokens de código de operación extendidos usados en las instrucciones para describir la información de recursos ya no se emiten.
+Las instrucciones SM5.1 no emitirán información adicional sobre operandos de recursos como parte de la instrucción (como en SM5.0). Esta información se mueve ahora a las instrucciones de declaración. En SM5.0, las instrucciones de indexación de recursos requerían que los atributos de recursos se describieron en tokens de código de operación extendidos, ya que la indexación ofuscaba la asociación a la declaración. En SM5.1, cada identificador (como "t1") está asociado inequívocamente a una única declaración que describe la información de recursos necesaria. Por lo tanto, ya no se emiten los tokens de código de operación extendidos que se usan en las instrucciones para describir la información de recursos.
 
-En las instrucciones que no son de declaración, un operando de recursos para muestreadores, SRVs y UAVs es un operando 2D. El primer índice es una constante literal que especifica el identificador del intervalo. El segundo índice representa el valor de linealización del índice. El valor se calcula en relación con el principio del espacio de registro correspondiente (no con respecto al principio del intervalo lógico) para correlacionar mejor con la firma raíz y reducir la carga del compilador de controladores para ajustar el índice.
+En las instrucciones que no son de declaración, un operando de recurso para muestreadores, SRV y UAV es un operando 2D. El primer índice es una constante literal que especifica el identificador de intervalo. El segundo índice representa el valor lineal del índice. El valor se calcula con respecto al principio del espacio de registro correspondiente (no relativo al principio del intervalo lógico) para correlacionar mejor con la firma raíz y reducir la carga del compilador del controlador de ajustar el índice.
 
-Un operando de recurso para CBVs es un operando 3D: el identificador literal del intervalo, el índice del CBuffer, el desplazamiento en la instancia concreta de CBuffer.
+Un operando de recurso para CBV es un operando 3D: identificador literal del intervalo, índice del cbuffer, desplazamiento en la instancia concreta de cbuffer.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Características del modelo de sombreador de HLSL 5,1 para Direct3D 12](hlsl-shader-model-5-1-features-for-direct3d-12.md)
+[Características del modelo de sombreador HLSL 5.1 para Direct3D 12](hlsl-shader-model-5-1-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo de sombreador 5,1](shader-model-5-1.md)
+[Modelo de sombreador 5.1](shader-model-5-1.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

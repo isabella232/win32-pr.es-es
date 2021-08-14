@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Behavior-version
-description: Este atributo se usa para realizar el seguimiento de la versión de comportamiento del bosque o del dominio. Es un número que se incrementa de forma continua que se usa para habilitar determinadas características de Active Directory.
+title: Atributo ms-DS-Behavior-Version
+description: Este atributo se usa para realizar un seguimiento de la versión de comportamiento del dominio o bosque. Es un número que aumenta de forma monónica y que se usa para habilitar determinadas Active Directory características.
 ms.assetid: 948c4777-11ed-4321-92e9-a0cf96a47fe6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Behavior-version
-- Esquema de AD de atributo msDS-Behavior-version
+- Esquema de AD del atributo ms-DS-Behavior-Version
+- Esquema de AD del atributo msDS-Behavior-Version
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d464d6f455e04f2366cb790a962eb85dcbe5180e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4990a20ce5074b0b7e141ef23ed1a87769864172a0814e3b79d70db4aec05d4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685261"
 ---
-# <a name="ms-ds-behavior-version-attribute"></a>atributo MS-DS-Behavior-version
+# <a name="ms-ds-behavior-version-attribute"></a>Atributo ms-DS-Behavior-Version
 
-Este atributo se usa para realizar el seguimiento de la versión de comportamiento del bosque o del dominio. Es un número que se incrementa de forma continua que se usa para habilitar determinadas características de Active Directory.
+Este atributo se usa para realizar un seguimiento de la versión de comportamiento del dominio o bosque. Es un número que aumenta de forma monónica y que se usa para habilitar determinadas Active Directory características.
 
 
 
 | Entrada | Value |
 |-------------------|------------------------------------------------|
-| CN                | MS-DS-Behavior-version                         |
-| Nombre para mostrar de LDAP | msDS-Behavior-version                          |
-| Tamaño              | \-                                             |
-| Actualizar privilegio  | El administrador del dominio establece este valor. |
+| CN                | ms-DS-Behavior-Version                         |
+| Ldap-Display-Name | msDS-Behavior-Version                          |
+| Size              | \-                                             |
+| Actualizar privilegios  | El administrador del dominio establece este valor. |
 | Frecuencia de actualización  | \-                                             |
 | Attribute-Id      | 1.2.840.113556.1.4.1459                        |
-| System-ID-GUID    | d31a8757-2447-4545-8081-3bb610cacbf2           |
+| System-Id-Guid    | d31a8757-2447-4545-8081-3bb610cacbf2           |
 | Sintaxis            | [**Enumeración**](s-enumeration.md)           |
 
 
@@ -43,7 +43,7 @@ Este atributo se usa para realizar el seguimiento de la versión de comportamien
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -55,39 +55,39 @@ Este atributo se usa para realizar el seguimiento de la versión de comportamien
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | True                                                                                                                                                                                           |
-| Tiene un único valor       | True                                                                                                                                                                                           |
+| Es de un solo valor       | True                                                                                                                                                                                           |
 | Está indexado             | False                                                                                                                                                                                          |
 | En el catálogo global      | False                                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                                     |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | True                                                                                                                                                                                           |
-| Tiene un único valor       | True                                                                                                                                                                                           |
+| Es de un solo valor       | True                                                                                                                                                                                           |
 | Está indexado             | False                                                                                                                                                                                          |
 | En el catálogo global      | False                                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                                     |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo se usa para realizar el seguimiento de la versión de comportamien
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | True                                                                                                                                                                                           |
-| Tiene un único valor       | True                                                                                                                                                                                           |
+| Es de un solo valor       | True                                                                                                                                                                                           |
 | Está indexado             | False                                                                                                                                                                                          |
 | En el catálogo global      | False                                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                                     |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Este atributo se usa para realizar el seguimiento de la versión de comportamien
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | True                                                                                                                                                                                           |
-| Tiene un único valor       | True                                                                                                                                                                                           |
+| Es de un solo valor       | True                                                                                                                                                                                           |
 | Está indexado             | False                                                                                                                                                                                          |
 | En el catálogo global      | False                                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                                     |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo se usa para realizar el seguimiento de la versión de comportamien
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | True                                                                                                                                                                                           |
-| Tiene un único valor       | True                                                                                                                                                                                           |
+| Es de un solo valor       | True                                                                                                                                                                                           |
 | Está indexado             | False                                                                                                                                                                                          |
 | En el catálogo global      | False                                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                                     |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo se usa para realizar el seguimiento de la versión de comportamien
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | True                                                                                                                                                                                           |
-| Tiene un único valor       | True                                                                                                                                                                                           |
+| Es de un solo valor       | True                                                                                                                                                                                           |
 | Está indexado             | False                                                                                                                                                                                          |
 | En el catálogo global      | False                                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                                     |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 

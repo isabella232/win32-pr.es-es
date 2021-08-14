@@ -1,6 +1,6 @@
 ---
-title: '\_ \_ modificadores de registro de origen de PS 1 4 para texld, texcrd'
-description: Dos \_ instrucciones de dirección de textura del sombreador de píxeles versión 1 4, texld-PS \_ 1 \_ 4 y texcrd-PS, tienen una sintaxis personalizada.
+title: ps \_ 1 \_ 4 source register modifiers for texld, texcrd
+description: Las instrucciones de dirección de textura de la versión 1 4 del sombreador de dos \_ píxeles, regld - ps \_ 1 4 y \_ texcrd - ps, tienen sintaxis personalizada.
 ms.assetid: bbc8074f-882e-4b67-ae4d-1641ceb7f3ad
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,37 +9,37 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: af2097ee682aec7da0ca36df9e4b465fb360f814
-ms.sourcegitcommit: b95a94ffffda33f9ebbdd41787c01866444b4cf4
+ms.openlocfilehash: 63a0cfd212767a0219af83d734d3562edacc84901098afcf77c786d8895f32d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "104149023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512881"
 ---
-# <a name="ps_1_4-source-register-modifiers-for-texld-texcrd"></a>\_ \_ modificadores de registro de origen de PS 1 4 para texld, texcrd
+# <a name="ps_1_4-source-register-modifiers-for-texld-texcrd"></a>ps \_ 1 \_ 4 source register modifiers for texld, texcrd
 
-Dos \_ instrucciones de dirección de textura del sombreador de píxeles versión 1 4, [texld-PS \_ 1 \_ 4](texld---ps-1-4.md) y [texcrd-PS](texcrd---ps.md), tienen una sintaxis personalizada. Estas instrucciones admiten su propio conjunto de modificadores de registro de origen, selectores de registro de origen y máscaras de escritura de registro de destino, como se muestra aquí.
+Las instrucciones de dirección de textura de la versión 1 4 del sombreador de dos \_ píxeles, [regld - ps \_ 1 \_ 4](texld---ps-1-4.md) y [texcrd - ps](texcrd---ps.md), tienen sintaxis personalizada. Estas instrucciones admiten su propio conjunto de modificadores de registro de origen, selectores de registro de origen y máscaras de escritura de registro de destino, como se muestra aquí.
 
-## <a name="source-register-modifiers-for-texld-and-texcrd"></a>Modificadores de registro de origen para texld y texcrd
+## <a name="source-register-modifiers-for-texld-and-texcrd"></a>Modificadores de registro de origen para regld y texcrd
 
-Estos modificadores proporcionan funcionalidad de división proyectada dividiendo los valores x e y por los valores z o w.
+Estos modificadores proporcionan funcionalidad de división projective dividiendo los valores x e y por los valores z o w.
 
 
 
 | Modificadores de registro de origen | Descripción                | Sintaxis       |
 |---------------------------|----------------------------|--------------|
-| \_DZ                      | Dividir componentes x, y por z | registrar \_ DZ |
-| \_db                      | Dividir componentes x, y por z | registrar \_ base de registros |
-| \_almacenamiento                      | Dividir componentes x, y en w | registrar \_ DW |
-| \_da                      | Dividir componentes x, y en w | registrar \_ da |
+| \_Dz                      | Dividir componentes x,y por z | register \_ register |
+| \_db                      | Dividir componentes x,y por z | register \_ db |
+| \_Dw                      | Dividir componentes x,y por w | register \_ dw |
+| \_da                      | Dividir componentes x,y por w | register \_ da |
 
 
 
- 
+ 
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-El \_ \_ modificador DZ o DB hace lo siguiente:
+El \_ modificador abstracto \_ o db hace lo siguiente:
 
 
 ```
@@ -51,7 +51,7 @@ w' is undefined
 
 
 
-El \_ \_ modificador DW o da hace lo siguiente:
+El \_ modificador dw o da hace lo \_ siguiente:
 
 
 ```
@@ -70,9 +70,9 @@ w' is undefined
 [Modificadores de registro de origen del sombreador de píxeles](dx9-graphics-reference-asm-ps-registers-modifiers-source.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

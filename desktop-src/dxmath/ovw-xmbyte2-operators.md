@@ -1,22 +1,22 @@
 ---
-description: La estructura XMBYTE2 expone los siguientes operadores.
+description: La estructura XMBYTE2 expone los operadores siguientes.
 ms.assetid: 402876b9-731e-4c30-b48f-bca67ed6dad1
 title: Operadores XMBYTE2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23d27dde34e06f1e8daffbbdb00f26eab2c71fc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a5a70b68c363638a60bfb84c05cb5f7ee79344f28a89d2f0b6ebcb5372467c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501651"
 ---
 # <a name="xmbyte2-operators"></a>Operadores XMBYTE2
 
-La estructura [**XMBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2) expone los siguientes operadores.
+La [**estructura XMBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles con C++.
+> Los operadores enumerados aquí solo están disponibles con C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxp
 
 | Métodos                                              | Descripción                                                                                                       |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmbyte2-operator-assign)<br/> | Asigna los datos del componente de vector de una instancia de `XMBYTE2` a la instancia actual de `XMBYTE2` .<br/> |
+| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmbyte2-operator-assign)<br/> | Asigna los datos del componente vectorial de una instancia de `XMBYTE2` a la instancia actual de `XMBYTE2` .<br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxp
 
 <dl> <dt>
 
-[Extensiones de XMBYTE2](ovw-xmbyte2-extensions.md)
+[Extensiones XMBYTE2](ovw-xmbyte2-extensions.md)
 </dt> <dt>
 
 **Referencia**

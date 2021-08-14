@@ -1,7 +1,7 @@
 ---
 description: Obtiene un puntero al grupo de parámetros compartidos.
 ms.assetid: 1e999fd5-76ef-43fa-8a77-ae6f2821f46d
-title: 'ID3DXEffect:: GetPool (método) (D3DX9Effect. h)'
+title: Método ID3DXEffect::GetPool (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 18a35e9bc0a596cb88da6d4c1faf10941fbce8a0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0220b2864d6c668c2d4fbb71925da6452f6cc8661d0d931a379969418dfe7e19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118521231"
 ---
-# <a name="id3dxeffectgetpool-method"></a>ID3DXEffect:: GetPool (método)
+# <a name="id3dxeffectgetpool-method"></a>Método ID3DXEffect::GetPool
 
 Obtiene un puntero al grupo de parámetros compartidos.
 
@@ -40,12 +40,12 @@ HRESULT GetPool(
 
 <dl> <dt>
 
-*ppPool* \[ enuncia\]
+*ppPool* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECTPOOL**](id3dxeffectpool.md)\***
 
-Puntero a un objeto [**ID3DXEffectPool**](id3dxeffectpool.md) .
+Puntero a un [**objeto ID3DXEffectPool.**](id3dxeffectpool.md)
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Puntero a un objeto [**ID3DXEffectPool**](id3dxeffectpool.md) .
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Este método siempre devuelve el valor S \_ correcto.
+Este método siempre devuelve el valor S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los grupos contienen parámetros compartidos entre efectos. Vea [clonación y uso compartido (Direct3D 9)](cloning-and-sharing.md).
+Los grupos contienen parámetros compartidos entre efectos. Vea [Clonación y uso compartido (Direct3D 9).](cloning-and-sharing.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,12 +65,12 @@ Los grupos contienen parámetros compartidos entre efectos. Vea [clonación y us
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

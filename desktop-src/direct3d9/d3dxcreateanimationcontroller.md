@@ -1,7 +1,7 @@
 ---
 description: Crea un objeto de controlador de animación.
 ms.assetid: 771e5966-ac1a-43c2-8e81-b6d573343ff0
-title: Función D3DXCreateAnimationController (D3dx9anim. h)
+title: Función D3DXCreateAnimationController (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a61b2c42a1eafa2ed28ac98c753588181a0ccf7a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0edda07aa5ae443a268bd5df50a154aa2a7f2ec9ca1873dc486e8e46532ae468
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526640"
 ---
-# <a name="d3dxcreateanimationcontroller-function"></a>D3DXCreateAnimationController función)
+# <a name="d3dxcreateanimationcontroller-function"></a>Función D3DXCreateAnimationController
 
 Crea un objeto de controlador de animación.
 
@@ -44,43 +44,43 @@ HRESULT D3DXCreateAnimationController(
 
 <dl> <dt>
 
-*MaxNumAnimationOutputs* \[ de\]
+*MaxNumAnimationOutputs* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número máximo de salidas de animación que el controlador puede admitir.
 
 </dd> <dt>
 
-*MaxNumAnimationSets* \[ de\]
+*MaxNumAnimationSets* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de conjuntos de animaciones que se pueden mezclar.
+Número máximo de conjuntos de animación que se pueden mezclar.
 
 </dd> <dt>
 
-*MaxNumTracks* \[ de\]
+*MaxNumTracks* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de conjuntos de animaciones que se pueden mezclar simultáneamente.
+Número máximo de conjuntos de animación que se pueden mezclar simultáneamente.
 
 </dd> <dt>
 
-*MaxNumEvents* \[ de\]
+*MaxNumEvents* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de eventos pendientes que el controlador admitirá.
+Número máximo de eventos pendientes que admitirá el controlador.
 
 </dd> <dt>
 
-*ppAnimController* \[ enuncia\]
+*ppAnimController* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
@@ -93,11 +93,11 @@ Puntero al objeto de controlador de animación creado. Vea [**ID3DXAnimationCont
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un controlador de animación controla un mezclador de animación. El controlador agrega métodos para modificar los parámetros de fusión a lo largo del tiempo para permitir transiciones suaves.
+Un controlador de animación controla un mezclador de animación. El controlador agrega métodos para modificar los parámetros de combinación a lo largo del tiempo para permitir transiciones sin problemas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,12 +105,12 @@ Un controlador de animación controla un mezclador de animación. El controlador
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
