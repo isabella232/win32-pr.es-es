@@ -4,16 +4,16 @@ ms.assetid: 242c19a7-179b-4fc0-a050-a1b598566a6b
 title: Función CryptUIDlgSelectCertificate
 ms.topic: reference
 ms.date: 05/29/2020
-ms.openlocfilehash: 8f015796671990491407d91cbd51761816c5434b
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: fb37eb664841331ce3f37e9ce37ca3ab9e5c0f92c254cff0896c6c682a9f2872
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117768168"
 ---
 # <a name="cryptuidlgselectcertificate-function"></a>Función CryptUIDlgSelectCertificate
 
-La **función CryptUIDlgSelectCertificate** muestra un cuadro de diálogo que permite a un usuario seleccionar un certificado.
+La **función CryptUIDlgSelectCertificate muestra** un cuadro de diálogo que permite a un usuario seleccionar un certificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,17 +47,17 @@ Si el **miembro dwFlags** de la estructura *pcsc* contiene la marca **CRYPTUI \_
 
 ## <a name="remarks"></a>Comentarios
 
-Si el **miembro dwFlags** de la estructura [**CRYPTUI \_ SELECTCERTIFICATE \_ STRUCT**](cryptui-selectcertificate-struct.md) se establece en **CRYPTUI \_ SELECTCERT \_ LEGACY,** se muestra el cuadro de diálogo heredado. De lo contrario, se muestra el cuadro de diálogo de selección de certificado actual.
+Si el **miembro dwFlags** de la estructura [**CRYPTUI \_ SELECTCERTIFICATE \_ STRUCT**](cryptui-selectcertificate-struct.md) está establecido en **CRYPTUI \_ SELECTCERT \_ LEGACY,** se muestra el cuadro de diálogo heredado. De lo contrario, se muestra el cuadro de diálogo de selección de certificado actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                              |
-| Finalización del soporte técnico<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows aplicaciones \[ de escritorio XP\]<br/>                                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                              |
+| Finalización del soporte técnico<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                       |
 | Biblioteca<br/>                  | <dl> <dt>Cryptui.lib</dt> </dl>            |
 | Archivo DLL<br/>                      | <dl> <dt>Cryptui.dll</dt> </dl>            |
 | Nombres Unicode y ANSI<br/>   | **CryptUIDlgSelectCertificateW** (Unicode) y **CryptUIDlgSelectCertificateA** (ANSI)<br/> |

@@ -1,7 +1,7 @@
 ---
-description: La función GetFrameFromFrameHandle devuelve un puntero a un marco de un identificador de marco.
+description: La función GetFrameFromFrameHandle devuelve un puntero a un marco desde un identificador de marco.
 ms.assetid: 790fe5fe-a857-4947-a471-d0538c0f0d61
-title: Función GetFrameFromFrameHandle (Netmon. h)
+title: Función GetFrameFromFrameHandle (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: ce8151b2f4c81c61dea5969ff52e9ddf2d6615a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56ee96fd04d4860648dac2ec6b20a537ba420beb070c8f9b7248d9e3b4acd184
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366549"
 ---
-# <a name="getframefromframehandle-function"></a>GetFrameFromFrameHandle función)
+# <a name="getframefromframehandle-function"></a>Función GetFrameFromFrameHandle
 
-La función **GetFrameFromFrameHandle** devuelve un puntero a un marco de un identificador de marco.
+La **función GetFrameFromFrameHandle** devuelve un puntero a un marco desde un identificador de marco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ ULPFRAME WINAPI GetFrameFromFrameHandle(
 
 <dl> <dt>
 
-*hFrame* \[ de\]
+*hFrame* \[ En\]
 </dt> <dd>
 
 Identificador del marco.
@@ -52,9 +52,9 @@ Si la función se realiza correctamente, el valor devuelto es un puntero al marc
 
 Si la función no se realiza correctamente, el valor devuelto es 0.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **GetFrameFromFrameHandle** recupera datos que las demás funciones auxiliares que monitor de red proporciona no pueden recuperar. Utilice las siguientes funciones siempre que sea posible.
+La **función GetFrameFromFrameHandle** recupera datos que no pueden recuperar las otras funciones auxiliares que Monitor de red proporciona. Use las siguientes funciones siempre que sea posible.
 
 <dl>
 
@@ -71,18 +71,18 @@ La función **GetFrameFromFrameHandle** recupera datos que las demás funciones 
 [**GetFrameTimeStamp**](getframetimestamp.md)  
 </dl>
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **GetFrameFromFrameHandle** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetFrameFromFrameHandle.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

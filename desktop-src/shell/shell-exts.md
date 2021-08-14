@@ -1,61 +1,61 @@
 ---
-description: En este conjunto de temas se explica cómo implementar los controladores de extensión que permiten modificar diversas acciones de Shell.
+description: En este conjunto de temas se describe cómo implementar los controladores de extensión que permiten modificar diversas acciones de Shell.
 ms.assetid: 794b6369-665f-49a9-a263-7c736c5ce8ac
 title: Trabajar con extensiones de Shell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbb696f4536cdb0fb6869be073771d431bd8d2de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 804b121ccf633b44574ae956b367143eebdaf7a2a3a8a9cc8400995522b4cbef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452861"
 ---
 # <a name="working-with-shell-extensions"></a>Trabajar con extensiones de Shell
 
-Las capacidades del shell se pueden extender con las entradas del registro y los archivos. ini. Aunque este enfoque para extender el Shell es sencillo y adecuado para muchos propósitos, es limitado. Por ejemplo, si usa el registro para especificar un icono personalizado para un tipo de archivo, aparecerá el mismo icono para cada archivo de ese tipo. La extensión del shell con el registro no le permite modificar el icono de los distintos miembros del tipo de archivo. Otros aspectos del shell, como la hoja de propiedades **propiedades** que se pueden mostrar cuando se hace clic con el botón derecho en un archivo, no se pueden modificar en absoluto con el registro.
+Las funcionalidades del Shell se pueden ampliar con entradas del Registro y .ini archivos. Aunque este enfoque para extender el Shell es sencillo y adecuado para muchos propósitos, es limitado. Por ejemplo, si usa el Registro para especificar un icono personalizado para un tipo de archivo, aparecerá el mismo icono para cada archivo de ese tipo. La extensión del Shell con el Registro no permite variar el icono de los distintos miembros del tipo de archivo. Otros aspectos del Shell,  como la hoja de propiedades Propiedades que se puede mostrar cuando se hace clic con el botón derecho en un archivo, no se pueden modificar en absoluto con el Registro.
 
-Un enfoque más eficaz y flexible para extender el Shell es implementar *controladores de extensión de Shell*. Estos controladores se pueden implementar para una serie de acciones que puede llevar a cabo el shell. Antes de realizar la acción, el shell consulta el controlador de extensión, lo que le otorga la oportunidad de modificar la acción. Un ejemplo común es un controlador de extensión de menú contextual. Si se implementa una para un tipo de archivo, se consultará cada vez que se haga clic con el botón derecho en uno de los archivos. A continuación, el controlador puede especificar elementos de menú adicionales cada archivo, en lugar de tener el mismo conjunto para todos los archivos de ese tipo de archivo.
+Un enfoque más eficaz y flexible para extender el shell es implementar controladores *de extensión de shell*. Estos controladores se pueden implementar para diversas acciones que el Shell puede realizar. Antes de realizar la acción, el Shell consulta al controlador de extensión, lo que le ofrece la oportunidad de modificar la acción. Un ejemplo común es un controlador de extensión de menú contextual. Si se implementa uno para un tipo de archivo, se consultará cada vez que se haga clic con el botón derecho en uno de los archivos. A continuación, el controlador puede especificar elementos de menú adicionales en función de cada archivo, en lugar de tener el mismo conjunto para todos los archivos de ese tipo de archivo.
 
-En este conjunto de temas se explica cómo implementar los controladores de extensión que permiten modificar diversas acciones de Shell. Los siguientes controladores se asocian a un tipo de archivo determinado y permiten especificar cada archivo de forma individual.
+En este conjunto de temas se describe cómo implementar los controladores de extensión que permiten modificar diversas acciones de Shell. Los siguientes controladores están asociados a un tipo de archivo determinado y permiten especificar archivos por archivo.
 
 
 
 | Controlador                                               | Descripción                                                                                                                                                                |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Controlador del menú contextual](context-menu-handlers.md)    | Se llama antes de que se muestre el menú contextual de un archivo. Permite agregar elementos al menú contextual de forma individual para cada archivo.                                               |
-| [Controlador de datos](how-to-create-data-handlers.md)       | Se le llama cuando se realiza una operación de arrastrar y colocar en objetos de Shell. Permite proporcionar formatos de Portapapeles adicionales al destino de colocación.                            |
-| [Quitar controlador](how-to-create-drop-handlers.md)       | Se llama cuando se arrastra un objeto de datos o se coloca en un archivo. Permite crear un archivo en un destino de colocación.                                                          |
-| [Controlador de iconos](how-to-create-icon-handlers.md)       | Se llama antes de que se muestre el icono de un archivo. Permite reemplazar el icono predeterminado del archivo con un icono personalizado en función de cada archivo.                                    |
-| [Controlador de la hoja de propiedades](propsheet-handlers.md)      | Se llama antes de que se muestre la hoja de propiedades de **propiedades** de un objeto. Permite agregar o reemplazar páginas.                                                              |
-| [**Controlador de imagen en miniatura**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) | Proporciona una imagen para representar el elemento.                                                                                                                                   |
+| [Controlador de menú contextual](context-menu-handlers.md)    | Se llama antes de que se muestre el menú contextual de un archivo. Permite agregar elementos al menú contextual archivo a archivo.                                               |
+| [Controlador de datos](how-to-create-data-handlers.md)       | Se llama cuando se realiza una operación de arrastrar y colocar en objetos de Shell. Permite proporcionar formatos de Portapapeles adicionales al destino de colocación.                            |
+| [Controlador de colocación](how-to-create-drop-handlers.md)       | Se llama cuando se arrastra o se descarta un objeto de datos en un archivo. Permite convertir un archivo en un destino de colocación.                                                          |
+| [Controlador de iconos](how-to-create-icon-handlers.md)       | Se llama antes de que se muestre el icono de un archivo. Permite reemplazar el icono predeterminado del archivo por un icono personalizado en función de cada archivo.                                    |
+| [Controlador de la hoja de propiedades](propsheet-handlers.md)      | Se llama antes de que se **muestre la hoja de** propiedades Propiedades de un objeto. Permite agregar o reemplazar páginas.                                                              |
+| [**Controlador de imágenes en miniatura**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) | Proporciona una imagen para representar el elemento.                                                                                                                                   |
 | [**Controlador de recuadro informativo**](/windows/win32/api/shlobj_core/nn-shlobj_core-iqueryinfo)                 | Proporciona texto emergente cuando el usuario mantiene el puntero del mouse sobre el objeto.                                                                                               |
-| [**Controlador de metadatos**](/windows/win32/api/propidl/nn-propidl-ipropertysetstorage)       | Proporciona acceso de lectura y escritura a los metadatos (propiedades) almacenados en un archivo. Se puede usar para ampliar la vista de detalles, recuadros informativos, la página de propiedades y las características de agrupación. |
+| [**Controlador de metadatos**](/windows/win32/api/propidl/nn-propidl-ipropertysetstorage)       | Proporciona acceso de lectura y escritura a los metadatos (propiedades) almacenados en un archivo. Se puede usar para ampliar la vista Detalles, la información sobre información, la página de propiedades y las características de agrupación. |
 
 
 
  
 
-Otros no están asociados a un tipo de archivo determinado, pero se les llama antes que algunas operaciones de Shell.
+Otros no están asociados a un tipo de archivo determinado, pero se llama a antes de algunas operaciones de Shell.
 
 
 
 | Controlador                                                            | Descripción                                                                                                                                  |
 |--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Controlador de columnas](../lwef/column-handlers.md)                             | Lo llama el explorador de Windows antes de mostrar la vista de detalles de una carpeta. Permite agregar columnas personalizadas a la vista de detalles.        |
-| [Copiar controlador de enlace](how-to-create-copy-hook-handlers.md)          | Se llama cuando una carpeta o un objeto de impresora está a punto de moverse, copiarse, eliminarse o cambiarse de nombre. Permite aprobar o vetar la operación.   |
-| [Controlador de arrastrar y colocar](context-menu-handlers.md)                 | Se le llama cuando se arrastra un archivo con el botón secundario del mouse. Permite modificar el menú contextual que se muestra.                     |
+| [Controlador de columnas](../lwef/column-handlers.md)                             | Lo llama Windows Explorer antes de mostrar la vista Detalles de una carpeta. Permite agregar columnas personalizadas a la vista Detalles.        |
+| [Controlador de enlace de copia](how-to-create-copy-hook-handlers.md)          | Se llama cuando se va a mover, copiar, eliminar o cambiar el nombre de una carpeta o un objeto de impresora. Permite aprobar o vetar la operación.   |
+| [Controlador de arrastrar y colocar](context-menu-handlers.md)                 | Se llama cuando se arrastra un archivo con el botón derecho del mouse. Permite modificar el menú contextual que se muestra.                     |
 | [Controlador de superposición de iconos](how-to-implement-icon-overlay-handlers.md) | Se llama antes de que se muestre el icono de un archivo. Permite especificar una superposición para el icono del archivo.                                          |
-| [Controlador de búsqueda](../lwef/search-handlers.md)                             | Se llama para iniciar un motor de búsqueda. Permite implementar un motor de búsqueda personalizado accesible desde el menú **Inicio** o el explorador de Windows. |
+| [Controlador de búsqueda](../lwef/search-handlers.md)                             | Se llama para iniciar un motor de búsqueda. Permite implementar un motor de búsqueda personalizado accesible desde el **menú** Inicio o Windows Explorador. |
 
 
 
  
 
-Los detalles sobre cómo implementar controladores de extensión específicos se tratan en las secciones anteriores. Para obtener una discusión de los problemas de implementación comunes a todos los controladores de extensión de Shell, vea estos temas:
+Los detalles de cómo implementar controladores de extensión específicos se tratan en las secciones enumeradas anteriormente. Para obtener información sobre los problemas de implementación que son comunes a todos los controladores de extensiones de Shell, consulte estos temas:
 
--   [Inicializar controladores de extensión de Shell](int-shell-exts.md)
--   [Registrando controladores de extensión de Shell](reg-shell-exts.md)
+-   [Inicialización de controladores de extensión de Shell](int-shell-exts.md)
+-   [Registro de controladores de extensión de Shell](reg-shell-exts.md)
 
  
 

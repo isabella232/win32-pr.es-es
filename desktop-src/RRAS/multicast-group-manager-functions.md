@@ -1,25 +1,25 @@
 ---
-title: Funciones de administrador de grupo de multidifusión
-description: Las siguientes funciones se usan para registrar con el administrador del grupo de multidifusión
+title: Funciones del Administrador de grupos de multidifusión
+description: Las siguientes funciones se usan para registrarse con el administrador de grupos de multidifusión
 ms.assetid: d4374ced-06ea-49dd-8f52-0d06612aa4c3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bbc3dbcfe24e63283907e5e68f211fd1f4cb6e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8d32ecaa5bc30aa9563ac15383cf17d9308c6c17b416b31a6c2b03b8b55d0710
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790398"
 ---
-# <a name="multicast-group-manager-functions"></a>Funciones de administrador de grupo de multidifusión
+# <a name="multicast-group-manager-functions"></a>Funciones del Administrador de grupos de multidifusión
 
-Las siguientes funciones se usan para registrar con el administrador del grupo de multidifusión:
+Las siguientes funciones se usan para registrarse con el administrador de grupos de multidifusión:
 
 [**MgmRegisterMProtocol**](/windows/desktop/api/Mgm/nf-mgm-mgmregistermprotocol)
 
 [**MgmDeRegisterMProtocol**](/windows/desktop/api/Mgm/nf-mgm-mgmderegistermprotocol)
 
-Las funciones siguientes se usan para administrar la propiedad de la interfaz:
+Las siguientes funciones se usan para administrar la propiedad de la interfaz:
 
 [**MgmGetProtocolOnInterface**](/windows/desktop/api/Mgm/nf-mgm-mgmgetprotocoloninterface)
 
@@ -27,13 +27,13 @@ Las funciones siguientes se usan para administrar la propiedad de la interfaz:
 
 [**MgmReleaseInterfaceOwnership**](/windows/desktop/api/Mgm/nf-mgm-mgmreleaseinterfaceownership)
 
-Las funciones siguientes se usan para administrar la pertenencia a grupos:
+Las siguientes funciones se usan para administrar la pertenencia a grupos:
 
 [**MgmAddGroupMembershipEntry**](/windows/desktop/api/Mgm/nf-mgm-mgmaddgroupmembershipentry)
 
 [**MgmDeleteGroupMembershipEntry**](/windows/desktop/api/Mgm/nf-mgm-mgmdeletegroupmembershipentry)
 
-Las siguientes funciones se usan para obtener entradas de reenvío de multidifusión (MFEs) y estadísticas de MFE:
+Las siguientes funciones se usan para obtener entradas de reenvío de multidifusión (MFE) y estadísticas de MFE:
 
 [**MgmGetFirstMfe**](/windows/desktop/api/Mgm/nf-mgm-mgmgetfirstmfe)
 
@@ -47,11 +47,11 @@ Las siguientes funciones se usan para obtener entradas de reenvío de multidifus
 
 [**MgmGetMfeStats**](/windows/desktop/api/Mgm/nf-mgm-mgmgetmfestats)
 
-La siguiente función se usa para modificar MFEs:
+La siguiente función se usa para modificar las MFE:
 
 [**MgmSetMfe**](/windows/desktop/api/Mgm/nf-mgm-mgmsetmfe)
 
-Las siguientes funciones se usan para obtener una lista de los grupos que se han unido:
+Las funciones siguientes se usan para obtener una lista de grupos que se han unido:
 
 [**MgmGroupEnumerationStart**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationstart)
 
@@ -59,9 +59,9 @@ Las siguientes funciones se usan para obtener una lista de los grupos que se han
 
 [**MgmGroupEnumerationEnd**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationend)
 
- 
+ 
 
- 
+ 
 
 
 

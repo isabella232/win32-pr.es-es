@@ -4,12 +4,12 @@ ms.assetid: 25A024AA-9A70-40A5-BF5E-452FD148D0D2
 title: Problemas de autenticación web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f996527c58b9620b8417ac3e6cdd6e0f61bd5217
-ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
+ms.openlocfilehash: 7c722aefa35849485d2c8958e17c654b5bb6477479ac1765e76e648fe15f9826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113353668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785878"
 ---
 # <a name="web-authentication-problems"></a>Problemas de autenticación web
 
@@ -21,14 +21,14 @@ En este tema se describen las sugerencias de solución de problemas para usar la
 
 ## <a name="operational-logs"></a>Registros operativos
 
-Con frecuencia, los registros operativos ayudan a determinar qué no está funcionando. Hay un canal de registro de eventos dedicado Microsoft-Windows-WebAuth Operational que permite a los desarrolladores de sitios web comprender cómo el Agente de autenticación web procesa sus páginas \\ web. Para habilitarlo, inicie eventvwr.exe y habilite el registro operativo en La aplicación y servicios \\ Microsoft \\ Windows \\ WebAuth. Además, el Agente de autenticación web anexa una cadena única a la cadena del agente de usuario para identificarse en el servidor web. La cadena es "MSAuthHost/1.0". Ten en cuenta que el número de versión podría cambiar en el futuro, por lo que no debes depender de dicho número de versión en tu código. A continuación se muestra un ejemplo de la cadena de agente de usuario completa:
+Con frecuencia, los registros operativos ayudan a determinar qué no está funcionando. Hay un canal de registro de eventos dedicado Microsoft-Windows-WebAuth Operational que permite a los desarrolladores de sitios web comprender cómo el Agente de autenticación web procesa sus páginas \\ web. Para habilitarlo, inicie eventvwr.exe y habilite el registro operativo en La aplicación y servicios \\ microsoft \\ Windows \\ WebAuth. Además, el Agente de autenticación web anexa una cadena única a la cadena del agente de usuario para identificarse en el servidor web. La cadena es "MSAuthHost/1.0". Ten en cuenta que el número de versión podría cambiar en el futuro, por lo que no debes depender de dicho número de versión en tu código. A continuación se muestra un ejemplo de la cadena de agente de usuario completa:
 
 `User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0; MSAuthHost/1.0)`
 
 Ejemplo de uso de registros operativos
 
 1.  Habilitar registros operativos
-2.  Ejecución de la aplicación social Contoso![visor de eventos que muestra los registros operativos webauth](images/wab-figure15.png)
+2.  Ejecución de una aplicación social de Contoso![visor de eventos que muestra los registros operativos webauth](images/wab-figure15.png)
 3.  Las entradas de registros generadas se pueden usar para comprender el comportamiento del Agente de autenticación web con más detalle. En este caso, pueden incluir:
     -   Navegación - iniciar: registra cuándo se inicia AuthHost y contiene información sobre las direcciones URL de inicio y terminación.
     -   ![ilustra los detalles de Inicio de navegación](images/wab-figure16.png)
@@ -44,7 +44,7 @@ El depurador web de Fiddler se puede usar con Windows 8 aplicaciones.
 
 1.  Dado que AuthHost se ejecuta en su propio contenedor de aplicaciones para darle la funcionalidad de red privada, debes establecer una clave del Registro: Editor del Registro de Windows 5.00
 
-    **HKEY \_ SOFTWARE \_ DE MÁQUINA** \\ **LOCAL** \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** Image File Execution \\ **Options** \\ **authhost.exe** \\ **EnablePrivateNetwork** = 00000001<dl> <dt>
+    **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft Windows** \\ **NT** \\ **CurrentVersion** Image File Execution \\ **Options** \\ **authhost.exe** \\ **EnablePrivateNetwork** = 00000001<dl> <dt>
 
                      Data type
 </dt> <dd>                     DWORD</dd> </dl>
@@ -71,7 +71,7 @@ El depurador web de Fiddler se puede usar con Windows 8 aplicaciones.
 
 3.  Agrega una regla de firewall para el tráfico entrante a Fiddler.
 
-Para obtener más información, vea [Blog sobre el uso del depurador web de Fiddler con Windows store.](/archive/blogs/fiddler/revisiting-fiddler-and-win8-immersive-applications)
+Para obtener más información, vea Blog sobre el uso del depurador [web de Fiddler con Windows store](/archive/blogs/fiddler/revisiting-fiddler-and-win8-immersive-applications).
 
 ## <a name="related-topics"></a>Temas relacionados
 

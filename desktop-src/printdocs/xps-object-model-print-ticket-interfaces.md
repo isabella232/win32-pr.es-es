@@ -1,25 +1,25 @@
 ---
-description: Esta interfaz IXpsOMPrintTicketResource de la API de documento XPS proporciona acceso a una solicitud de impresión existente y también a la capacidad de crear una solicitud de impresión en un OM XPS.
+description: Esta interfaz IXpsOMPrintTicketResource de la API de documentos XPS proporciona acceso a un vale de impresión existente y también la capacidad de crear un vale de impresión en una instancia de XPS OM.
 ms.assetid: 53c95da0-1601-4945-83a1-e3266d251aee
 title: Interfaces de vales de impresión de XPS OM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 646089455e7106b1be3716c0ccf0774be361f130
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: f629e716db7098f8f6999df758fd3b73e3f82b83308a3dd68d5f247d6cd709a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105717431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117867761"
 ---
 # <a name="xps-om-print-ticket-interfaces"></a>Interfaces de vales de impresión de XPS OM
 
-Esta interfaz [**IXpsOMPrintTicketResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource) de la API de documento XPS proporciona acceso a una solicitud de impresión existente y también a la capacidad de crear una solicitud de impresión en un OM XPS.
+Esta [**interfaz IXpsOMPrintTicketResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource) de la API de documentos XPS proporciona acceso a un vale de impresión existente y también la capacidad de crear un vale de impresión en una instancia de XPS OM.
 
-## <a name="print-ticket-resources"></a>Imprimir recursos de entradas
+## <a name="print-ticket-resources"></a>Imprimir recursos de vale
 
-La interfaz [**IXpsOMPrintTicketResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource) permite a un programa leer el contenido de una solicitud de impresión existente llamando al método **GetPrintTicketResource** de una interfaz que admite una solicitud de impresión. Se pueden agregar nuevos recursos de la solicitud de impresión a un elemento de documento mediante una llamada a **SetPrintTicketResource**.
+La [**interfaz IXpsOMPrintTicketResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource) permite a un programa leer el contenido de un vale de impresión existente llamando al método **GetPrintTicketResource** de una interfaz que admite un vale de impresión. Se pueden agregar nuevos recursos de vale de impresión a un elemento de documento mediante una llamada a **SetPrintTicketResource**.
 
-Hay tres niveles de vale de impresión, que especifican el ámbito de la solicitud de impresión. Los niveles de vale de impresión son: el nivel de trabajo (o paquete), el nivel de documento y el nivel de página. En la tabla siguiente se muestra la relación entre el nivel de entrada de impresión, la interfaz de OM de XPS correspondiente y los métodos utilizados para tener acceso al recurso de la solicitud de impresión.
+Hay tres niveles de vale de impresión, que especifican el ámbito del vale de impresión. Los niveles de vale de impresión son: el nivel de trabajo (o paquete), el nivel de documento y el nivel de página. En la tabla siguiente se muestra la relación entre el nivel de vale de impresión, la interfaz XPS OM correspondiente y los métodos usados para acceder al recurso de vale de impresión.
 
 | Imprimir nivel de vale | Interfaz                                                | Get (Método)                                                                      | Método Set                                                                      |
 |--------------------|----------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -31,15 +31,15 @@ Hay tres niveles de vale de impresión, que especifican el ámbito de la solicit
 
  
 
-## <a name="print-ticket-content"></a>Imprimir el contenido del vale
+## <a name="print-ticket-content"></a>Imprimir contenido de vale
 
-Se puede tener acceso al contenido de un recurso de la solicitud de impresión existente mediante la lectura de la secuencia asociada con el recurso. El método [**GetStream**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomprintticketresource-getstream) de la interfaz [**IXpsOMPrintTicketResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource) devuelve el puntero a una secuencia de solo lectura que contiene el contenido con formato XML de la solicitud de impresión. El formato del contenido del vale de impresión se describe en la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Se puede acceder al contenido de un recurso de vale de impresión existente leyendo desde la secuencia asociada al recurso. El [**método GetStream**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomprintticketresource-getstream) de la interfaz [**IXpsOMPrintTicketResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource) devuelve el puntero a una secuencia de solo lectura que contiene el contenido con formato XML del vale de impresión. El formato del contenido del vale de impresión se describe en [especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Se puede crear un nuevo recurso de solicitud de impresión mediante la creación de una nueva interfaz [**IXpsOMPrintTicketResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource) . Un vale de impresión con formato XML válido se escribe en una secuencia y se crea un URI de parte para identificar la parte de la solicitud de impresión. Para obtener más información sobre el contenido de una solicitud de impresión válida, consulte la [especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip). La secuencia y el URI de la parte se pasan como parámetros de la llamada a [**SetContent**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomprintticketresource-setcontent) para establecer el nuevo recurso de la solicitud de impresión y el recurso de la solicitud de impresión se agrega al elemento de documento correspondiente llamando al método **SetPrintTicketResource** mostrado en la tabla anterior.
+Se puede crear un nuevo recurso de vale de impresión mediante la creación de una nueva [**interfaz IXpsOMPrintTicketResource.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource) Se escribe un vale de impresión válido con formato XML en una secuencia y se crea un URI de parte para identificar el elemento del vale de impresión. Para obtener más información sobre el contenido de un vale de impresión válido, consulte [especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip). La secuencia y el URI de la parte se pasan como parámetros de la llamada [**a SetContent**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomprintticketresource-setcontent) para establecer el nuevo recurso de vale de impresión y el recurso de vale de impresión se agrega a la parte del documento correspondiente mediante una llamada al método **SetPrintTicketResource** que se muestra en la tabla anterior.
 
-## <a name="print-ticket-inheritance"></a>Herencia de entradas de impresión
+## <a name="print-ticket-inheritance"></a>Herencia de vales de impresión
 
-Los vales de impresión heredan las propiedades de las solicitudes de impresión con un ámbito mayor. Por ejemplo, un vale de impresión de nivel de documento hereda las propiedades de la solicitud de impresión de nivel de trabajo que está asociada a la secuencia de documentos del documento. Del mismo modo, un vale de impresión en el nivel de página hereda las propiedades de la solicitud de impresión de nivel de documento que está asociada con el documento de la página. En este proceso de herencia, las propiedades que se especifican en el vale de impresión de nivel inferior invalidan las propiedades correspondientes que, de lo contrario, se heredarían de la solicitud de impresión de nivel superior.
+Los vales de impresión heredan las propiedades de los vales de impresión con mayor ámbito. Por ejemplo, un vale de impresión de nivel de documento hereda las propiedades del vale de impresión de nivel de trabajo asociado a la secuencia de documentos del documento. Del mismo modo, un vale de impresión de nivel de página hereda las propiedades del vale de impresión de nivel de documento asociado al documento de la página. En este proceso de herencia, las propiedades especificadas en el vale de impresión de nivel inferior invalidan las propiedades correspondientes que, de lo contrario, se heredarán del vale de impresión de nivel superior.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,29 +1,29 @@
 ---
-title: Registrando para la notificación de cambios
-description: Un cliente puede registrarse para recibir notificaciones de cambios en la información de enrutamiento almacenada en el administrador de tablas de enrutamiento. Esta solicitud solo puede realizarse después de que un cliente se ha registrado con el administrador de tablas de enrutamiento.
+title: Registro para la notificación de cambio
+description: Un cliente puede registrarse para recibir una notificación de los cambios en la información de enrutamiento que se almacena en el administrador de tablas de enrutamiento. Esta solicitud solo se puede realizar después de que un cliente se haya registrado con el administrador de tablas de enrutamiento.
 ms.assetid: 90dc98eb-0d0b-4450-848b-c7cedab75a52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c3a98062fee73c481c1f47c32fa7eeb5465a112
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7049478a5be834b08b7bb17ad9ebfb0fdf70736837f27d53e7900bf7bfdc88dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788624"
 ---
-# <a name="registering-for-change-notification"></a>Registrando para la notificación de cambios
+# <a name="registering-for-change-notification"></a>Registro para la notificación de cambio
 
-Un cliente puede registrarse para recibir notificaciones de cambios en la información de enrutamiento almacenada en el administrador de tablas de enrutamiento. Esta solicitud solo puede realizarse después de que un cliente se ha registrado con el administrador de tablas de enrutamiento.
+Un cliente puede registrarse para recibir una notificación de los cambios en la información de enrutamiento que se almacena en el administrador de tablas de enrutamiento. Esta solicitud solo se puede realizar después de que un cliente se haya registrado con el administrador de tablas de enrutamiento.
 
-Para registrar la notificación de cambios, un cliente debe llamar a [**RtmRegisterForChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmregisterforchangenotification), especificando los tipos de cambios para los que el cliente debe recibir la notificación. Si se debe notificar al cliente el cambio a destinos específicos, el cliente llama a [**RtmMarkDestForChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmmarkdestforchangenotification) una vez para cada destino.
+Para registrarse para la notificación de cambios, un cliente debe llamar a [**RtmRegisterForChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmregisterforchangenotification), especificando los tipos de cambios para los que el cliente debe recibir la notificación. Si se debe notificar al cliente el cambio en destinos específicos, el cliente llama a [**RtmMarkDestForChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmmarkdestforchangenotification) una vez para cada destino.
 
-El cliente puede dejar de recibir notificaciones de cambios mediante una llamada a [**RtmDeregisterFromChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmderegisterfromchangenotification).
+El cliente puede dejar de recibir notificaciones de cambio llamando [**a RtmDeregisterFromChangeNotification.**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmderegisterfromchangenotification)
 
-Para ver el código de ejemplo que muestra cómo usar estas funciones, consulte [registrar para la notificación de cambios](register-for-change-notification.md).
+Para obtener código de ejemplo que muestra cómo usar estas funciones, vea [Register For Change Notification](register-for-change-notification.md).
 
- 
+ 
 
- 
+ 
 
 
 

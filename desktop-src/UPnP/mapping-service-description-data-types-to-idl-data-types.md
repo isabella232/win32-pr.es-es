@@ -1,28 +1,28 @@
 ---
-title: Asignar tipos de datos de descripción de servicio a tipos de datos IDL
-description: En la tabla siguiente se muestra la asignación de los tipos de datos XML especificados en una descripción del servicio a los tipos de datos correspondientes utilizados en IDL.
+title: Asignación de tipos de datos de descripción del servicio a tipos de datos IDL
+description: En la tabla siguiente se muestra la asignación de tipos de datos XML especificados en una descripción del servicio a los tipos de datos correspondientes usados en IDL.
 ms.assetid: eeb86177-8c3b-47f1-bbe1-f9aabd2dde76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6b5fac697c41f54279ecde7436900434895ff23
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 22a34a5ec9ee092091dc00c7cc420b4474a38d8cba0d41c2691943c7dcd5b35e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118347635"
 ---
-# <a name="mapping-service-description-data-types-to-idl-data-types"></a>Asignar tipos de datos de descripción de servicio a tipos de datos IDL
+# <a name="mapping-service-description-data-types-to-idl-data-types"></a>Asignación de tipos de datos de descripción del servicio a tipos de datos IDL
 
-En la tabla siguiente se muestra la asignación de los tipos de datos XML especificados en una descripción del servicio a los tipos de datos correspondientes utilizados en IDL.
+En la tabla siguiente se muestra la asignación de tipos de datos XML especificados en una descripción del servicio a los tipos de datos correspondientes usados en IDL.
 
 
 
-| Tipos de datos XML | IDL (tipo de datos)  |
+| Tipos de datos XML | Tipo de datos IDL  |
 |---------------|----------------|
 | bin.base64    | SAFEARRAY      |
 | bin.hex       | SAFEARRAY      |
-| boolean       | VARIANTE \_ bool  |
-| char          | WCHAR \_ t       |
+| boolean       | VARIANT \_ BOOL  |
+| char          | wchar \_ t       |
 | date          | DATE           |
 | dateTime      | DATE           |
 | dateTime.tz   | DATE           |
@@ -46,11 +46,11 @@ En la tabla siguiente se muestra la asignación de los tipos de datos XML especi
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: c6884cd3-a98a-431b-9bae-37880fa4cfa6
 title: Tareas de agrupación de aplicaciones COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7441ecce0b0566876934b71015df56d899f23a4e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: eed5f43c52a89737dd91253e3fc6f600c511c410657281597b82c1c8d69adb12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118308188"
 ---
 # <a name="com-application-pooling-tasks"></a>Tareas de agrupación de aplicaciones COM+
 
@@ -19,7 +19,7 @@ En los temas siguientes se proporcionan instrucciones paso a paso para usar la a
 
 | Tema                                                                                          | Descripción                                                                |
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Configuración de los valores de agrupación de aplicaciones COM+](configuring-com--application-pooling-values.md) | Describe cómo establecer los valores de agrupación de aplicaciones COM+ para la aplicación. |
+| [Configuración de valores de agrupación de aplicaciones COM+](configuring-com--application-pooling-values.md) | Describe cómo establecer valores de agrupación de aplicaciones COM+ para la aplicación. |
 
 
 

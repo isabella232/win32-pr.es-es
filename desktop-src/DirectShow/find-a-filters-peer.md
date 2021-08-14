@@ -1,21 +1,21 @@
 ---
-description: Buscar un elemento filters del mismo nivel
+description: Buscar un filtro del mismo nivel
 ms.assetid: 74d9fe65-f7f4-4971-9550-27884ac4146b
-title: Buscar un elemento filters del mismo nivel
+title: Buscar un filtro del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1717f6ad61ad7310fdaa11ea5baaab4dcb7f8011
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 60d2f20a7145d2365e7ee1ec261ea861ddc5fa1eb01d0c3b2503f6f53fa25815
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104079882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401769"
 ---
-# <a name="find-a-filters-peer"></a>Buscar un elemento filters del mismo nivel
+# <a name="find-a-filters-peer"></a>Buscar un filtro del mismo nivel
 
-Dado un filtro, puede recorrer el gráfico buscando los filtros a los que está conectado. Empiece por enumerar los PIN del filtro. Para cada pin, compruebe si ese pin está conectado a otro PIN. Si es así, consulte el otro PIN para su filtro propietario. Puede recorrer el gráfico en la dirección ascendente mediante la enumeración de los pin de entrada del filtro o en la dirección de nivel inferior mediante la enumeración de los pin de salida.
+Dado un filtro, puede recorrer el gráfico buscando los filtros a los que está conectado. Empiece por enumerar los pines del filtro. Para cada pin, compruebe si ese pin está conectado a otro pin. Si es así, consulte el otro pin para saber si es el filtro propietario. Puede recorrer el gráfico en la dirección ascendente enumerando los pines de entrada del filtro o en la dirección de bajada enumerando los pines de salida.
 
-La siguiente función realiza una búsqueda ascendente o descendente para un filtro conectado. Devuelve el primer filtro coincidente que encuentra:
+La siguiente función busca un filtro conectado en sentido ascendente o descendente. Devuelve el primer filtro de coincidencia que encuentra:
 
 
 ```C++
@@ -76,9 +76,9 @@ HRESULT GetNextFilter(
 
 
 
-La función llama a [**IBaseFilter:: EnumPins**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-enumpins) para enumerar los PIN del primer filtro. Para cada pin, llama a [**IPin:: QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) para comprobar si el PIN coincide con la dirección especificada (entrada o salida). Si es así, la función determina si ese pin está conectado a otro PIN, llamando al método [**IPin:: ConnectTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) . Por último, llama a [**IPin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) en el PIN conectado. Este método devuelve una estructura que contiene, entre otras cosas, un puntero al filtro propietario de ese pin. Este puntero se devuelve al autor de la llamada en el parámetro *ppNext* . El llamador debe liberar el puntero.
+La función llama [**a IBaseFilter::EnumPins**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-enumpins) para enumerar los pines del primer filtro. Para cada pin, llama a [**IPin::QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) para comprobar si el pin coincide con la dirección especificada (entrada o salida). Si es así, la función determina si ese pin está conectado a otro pin, llamando al [**método IPin::ConnectedTo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) Por último, llama a [**IPin::QueryPinInfo en**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) el pin conectado. Este método devuelve una estructura que contiene, entre otras cosas, un puntero al filtro propietario de ese pin. Este puntero se devuelve al autor de la llamada en el *parámetro ppNext.* El autor de la llamada debe liberar el puntero.
 
-En el código siguiente se muestra cómo llamar a esta función:
+El código siguiente muestra cómo llamar a esta función:
 
 
 ```C++
@@ -93,9 +93,9 @@ if (SUCCEEDED(GetNextFilter(pF, PINDIR_INPUT, &pUpstream)))
 
 
 
-Un filtro podría estar conectado a dos o más filtros en cualquier dirección. Por ejemplo, podría tratarse de un filtro divisor, con varios filtros de nivel inferior. O bien, podría ser un filtro MUX, con varios filtros ascendentes desde él. Por lo tanto, es posible que desee recopilar todos ellos en una lista.
+Un filtro puede estar conectado a dos o más filtros en cualquier dirección. Por ejemplo, podría ser un filtro divisor, con varios filtros de bajada a partir de él. O bien, podría ser un filtro mux, con varios filtros ascendentes a partir de él. Por lo tanto, es posible que quiera recopilar todos ellos en una lista.
 
-En el código siguiente se muestra una posible manera de implementar este tipo de función. Usa la clase [**CGenericList**](cgenericlist.md) de DirectShow; podría escribir una función equivalente con otra estructura de datos.
+El código siguiente muestra una posible manera de implementar este tipo de función. Usa la clase DirectShow [**CGenericList;**](cgenericlist.md) podría escribir una función equivalente mediante alguna otra estructura de datos.
 
 
 ```C++
@@ -178,7 +178,7 @@ void AddFilterUnique(CFilterList &FilterList, IBaseFilter *pNew)
 
 
 
-Para complicar en cierto modo, un filtro puede tener varias conexiones de PIN al mismo filtro. Para evitar poner duplicados en la lista, consulte cada puntero **IBaseFilter** para **IUnknown** y compare los punteros **IUnknown** . Por las reglas de COM, dos punteros de interfaz hacen referencia al mismo objeto solo si devuelven punteros **IUnknown** idénticos. En el ejemplo anterior, la función AddFilterUnique controla este detalle.
+Para complicar algo las cosas, un filtro puede tener varias conexiones de pin al mismo filtro. Para evitar colocar duplicados en la lista, consulte cada puntero **IBaseFilter** para **IUnknown** y compare los **punteros IUnknown.** Según las reglas de COM, dos punteros de interfaz hacen referencia al mismo objeto si y solo devuelven punteros **IUnknown** idénticos. En el ejemplo anterior, la función AddFilterUnique controla este detalle.
 
 En el ejemplo siguiente se muestra cómo usar la función GetPeerFilters:
 
@@ -204,7 +204,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[Técnicas generales de Graph-Building](general-graph-building-techniques.md)
+[Técnicas Graph-Building generales](general-graph-building-techniques.md)
 </dt> </dl>
 
  

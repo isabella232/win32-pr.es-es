@@ -1,26 +1,26 @@
 ---
-title: Propiedad BitmapVirtualCacheSize de IMsRdpClientAdvancedSettings
-description: Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se va a usar para el color de 8 bits por píxel.
+title: IMsRdpClientAdvancedSettings BitmapVirtualCacheSize, propiedad
+description: Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se usará para el color de 8 bits por píxel.
 ms.assetid: 4efcabd2-8671-40a3-ad12-af0b2b6e495a
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad BitmapVirtualCacheSize
-- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad BitmapVirtualCacheSize
-- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad BitmapVirtualCacheSize
-- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad BitmapVirtualCacheSize
-- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad BitmapVirtualCacheSize
-- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad BitmapVirtualCacheSize
-- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad BitmapVirtualCacheSize
-- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad BitmapVirtualCacheSize
-- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad BitmapVirtualCacheSize
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapVirtualCacheSize
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad BitmapVirtualCacheSize
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad BitmapVirtualCacheSize
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad BitmapVirtualCacheSize
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad BitmapVirtualCacheSize
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad BitmapVirtualCacheSize
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad BitmapVirtualCacheSize
+- Propiedad BitmapVirtualCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad BitmapVirtualCacheSize
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb652c0f235cf7438b49e68a544188ac4622acad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45ec0d02e71849af88212db733ee205cb26f8c72a5c67c00acaef528bf086423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353179"
 ---
-# <a name="imsrdpclientadvancedsettingsbitmapvirtualcachesize-property"></a>IMsRdpClientAdvancedSettings:: BitmapVirtualCacheSize (propiedad)
+# <a name="imsrdpclientadvancedsettingsbitmapvirtualcachesize-property"></a>IMsRdpClientAdvancedSettings::BitmapVirtualCacheSize, propiedad
 
-Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se va a usar para el color de 8 bits por píxel.
+Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se usará para el color de 8 bits por píxel.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -84,21 +84,21 @@ HRESULT get_BitmapVirtualCacheSize(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Nuevo tamaño de la memoria caché. Los valores válidos son de 1 a 32, ambos inclusive. Tenga en cuenta que el tamaño máximo de todos los archivos de caché virtual es 128 MB.
+Nuevo tamaño de caché. Los valores válidos son de 1 a 32 inclusive. Tenga en cuenta que el tamaño máximo de todos los archivos de caché virtual es de 128 MB.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                  |
@@ -108,7 +108,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
 title: CUSTOMSLIDER.positionImage
-description: El atributo positionImage especifica o recupera el mapa de imágenes que se usa para determinar la imagen de posición del archivo de imagen que se va a mostrar.
+description: El atributo positionImage especifica o recupera el mapa de imagen usado para determinar qué imagen de posición del archivo de imagen se va a mostrar.
 ms.assetid: 7e99dc21-ebba-438a-a983-190dbe429578
 keywords:
-- CUSTOMSLIDER. positionImage Windows Media Player
+- CUSTOMSLIDER.positionImage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dc92a9c263e2b450e64d526ccfc7976fdd6227a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 727601ceb7ed078e40a284ab291f2e182a4270682b5f1db104515e31d3dbe2ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750001"
 ---
 # <a name="customsliderpositionimage"></a>CUSTOMSLIDER.positionImage
 
-El atributo **positionImage** especifica o recupera el mapa de imágenes que se usa para determinar la imagen de posición del archivo de imagen que se va a mostrar.
+El **atributo positionImage** especifica o recupera el mapa de imagen usado para determinar qué imagen de posición del archivo de imagen se va a mostrar.
 
 ``` syntax
         elementID.positionImage
@@ -30,29 +30,29 @@ El atributo **positionImage** especifica o recupera el mapa de imágenes que se 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene el nombre de un archivo de imagen.
+Este atributo es una cadena de **lectura** y escritura que contiene el nombre de un archivo de imagen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo es obligatorio y debe especificarse.
+Este atributo es necesario y se debe especificar.
 
-No se muestra **positionImage** . En su lugar, actúa como un mapa que define las regiones en las que se hace clic de la imagen mostrada. La imagen mostrada es una de las subimágenes del archivo de imagen y representa el estado real del control deslizante. **PositionImage** incluye varias regiones de escala de grises iguales al número de estas subimágenes. Las subimágenes deben tener las mismas dimensiones que **positionImage** o el control deslizante personalizado no funcionará correctamente.
+No **se muestra positionImage.** En su lugar, actúa como un mapa que define las regiones en las que se puede hacer clic de la imagen mostrada. La imagen mostrada es una de las sub images del archivo de imagen y representa el estado real del control deslizante. **PositionImage incluye** un número de regiones de escala de grises igual al número de estas subimagenes. Las subimagenes deben tener las mismas dimensiones que **positionImage** o el control deslizante personalizado no funcionará correctamente.
 
-No se puede hacer clic en las regiones que no estén en escala de grises. Las regiones en las que se puede hacer clic deben establecerse en valores de color que se ajusten uniformemente por el espectro de la escala de grises de negro a blanco, con la primera región en negro puro y la última región en blanco puro. Los valores de color de cada región sucesiva deben incrementarse en un valor igual a 255 dividido entre el número total de regiones menos uno, y se redondea al número entero más próximo.
+No se podrá hacer clic en ninguna región que no esté en escala de grises. Las regiones en las que se puede hacer clic deben establecerse en valores de color que oscilan uniformemente entre el espectro de escala de grises de negro a blanco, siendo la primera región negra pura y la última región blanca pura. Los valores de color de cada región sucesiva se deben incrementar en un valor igual a 255 dividido entre el número total de regiones menos una, redondeando al número entero más cercano.
 
-Por ejemplo, si hay seis regiones, el incremento sería 51 (255 dividido entre 5) y los seis valores de escala de grises serían 0, 51, 102, 153, 204 y 255. Los valores de color hexadecimal para las seis regiones serían \# 000000, \# 333333, \# 666666, \# 999999, \# CCCCCC y \# FFFFFF.
+Por ejemplo, si hay seis regiones, el incremento sería 51 (255 dividido entre 5) y los seis valores de escala gris serían 0, 51, 102, 153, 204 y 255. Los valores de color hexadecimal de las seis regiones serían \# 000000, \# 333333, \# 666666, \# \# 999999,CCICCC y \# FFFFFF.
 
-De esta manera, las regiones tendrán una secuencia dictada por los valores de color de la escala gris y esta secuencia se corresponderá con la secuencia de subimágenes del archivo de imagen. Cuando se hace clic en una de las regiones, se muestra la subimagen correspondiente y el **valor** del control deslizante personalizado se actualiza en consecuencia.
+De esta manera, las regiones tendrán una secuencia dictada por sus valores de color de escala gris, y esta secuencia se corresponderá con la secuencia de sub images del archivo de imagen. Cuando se hace clic en una de las regiones,  se muestra la sub image correspondiente y el valor del control deslizante personalizado se actualiza en consecuencia.
 
-Los tipos de archivo de imagen admitidos son BMP, JPG, PNG y GIF (sin incluir los GIF animados).
+Los tipos de archivo de imagen admitidos son BMP, JPG, PNG y GIF (sin incluir GIF animados).
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente es un ejemplo de un control deslizante personalizado **positionImage**. La imagen correspondiente se muestra en la sección ejemplo de la propiedad **Image** .
+A continuación se muestra un ejemplo de un control deslizante **personalizado positionImage**. La imagen correspondiente se muestra en la sección de ejemplo de la **propiedad image.**
 
-![gráfico de positionimage de ejemplo](images/dialmap.png)
+![gráfico de imagen de posición de ejemplo](images/dialmap.png)
 
-En el código siguiente se muestra el uso de los atributos **CUSTOMSLIDER** .
+En el código siguiente se muestra el uso de **atributos CUSTOMSLIDER.**
 
 
 ```XML
@@ -138,20 +138,20 @@ En el código siguiente se muestra el uso de los atributos **CUSTOMSLIDER** .
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento CUSTOMSLIDER**](customslider-element.md)
 </dt> <dt>
 
-[**CUSTOMSLIDER. Image**](customslider-image.md)
+[**CUSTOMSLIDER.image**](customslider-image.md)
 </dt> </dl>
 
  

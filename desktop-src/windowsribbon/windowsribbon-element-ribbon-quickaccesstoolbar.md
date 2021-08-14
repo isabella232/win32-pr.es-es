@@ -1,9 +1,9 @@
 ---
-title: Propiedad Ribbon. QuickAccessToolbar
+title: Propiedad Ribbon.QuickAccessToolbar
 description: Representa un contenedor para la barra de herramientas de acceso rápido (QAT).
 ms.assetid: 8a873a48-4f8b-439d-acad-7da2081fbf40
 keywords:
-- Ribbon. QuickAccessToolbar (propiedad) cinta de Windows
+- Cinta de opciones de la propiedad Ribbon.QuickAccessToolbar Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad0e09b220bd60b60ccbb8ee05c2da9c4317ba78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83e1fa4cb5de43be2b7316d4ed1786c2a1325fa4468538e2ffea41d5d8c9ef0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202322"
 ---
-# <a name="ribbonquickaccesstoolbar-property"></a>Propiedad Ribbon. QuickAccessToolbar
+# <a name="ribbonquickaccesstoolbar-property"></a>Propiedad Ribbon.QuickAccessToolbar
 
 Representa un contenedor para la barra de herramientas de acceso rápido (QAT).
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                                           | Descripción                                    |
 |-----------------------------------------------------------------------------------|------------------------------------------------|
-| [**QuickAccessToolbar**](windowsribbon-element-quickaccesstoolbar.md)<br/> | Debe aparecer exactamente una vez<br/> <br/> |
+| [**QuickAccessToolbar**](windowsribbon-element-quickaccesstoolbar.md)<br/> | Debe producirse exactamente una vez<br/> <br/> |
 
 
 
@@ -55,15 +55,15 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Obligatorio.
 
-Puede producirse una o varias veces para cada [**cinta**](windowsribbon-element-ribbon.md)de opciones.
+Puede producirse una o varias veces para cada cinta [**de opciones.**](windowsribbon-element-ribbon.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el elemento **Ribbon. QuickAccessToolbar** .
+En el ejemplo siguiente se muestra el marcado básico para el **elemento Ribbon.QuickAccessToolbar.**
 
 
 ```XML
@@ -85,10 +85,10 @@ En el ejemplo siguiente se muestra el marcado básico para el elemento **Ribbon.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

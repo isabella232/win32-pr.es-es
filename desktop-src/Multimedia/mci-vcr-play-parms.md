@@ -1,9 +1,9 @@
 ---
-title: MCI_VCR_PLAY_PARMS estructura (VCR. h)
-description: La \_ estructura MCI VCR \_ Play \_ parms contiene parámetros para el comando de reproducción de MCI para los \_ grabadores de casete de vídeo.
+title: MCI_VCR_PLAY_PARMS estructura (Vcr.h)
+description: La estructura MCI VCR PLAY PARMS contiene parámetros para el \_ \_ comando \_ MCI PLAY para las \_ grabadoras de vídeo.
 ms.assetid: e180c203-3113-4fdb-bcf1-ea3e45e646e2
 keywords:
-- Estructura de MCI_VCR_PLAY_PARMS de Windows multimedia
+- MCI_VCR_PLAY_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae15eedc69accc88ef7a58a6d7ad435e872de7ea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f2e725ca3dc04fa13dd89aff0a5fbd60ede66f83154740803c98679eb77aec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374369"
 ---
-# <a name="mci_vcr_play_parms-structure"></a>\_Parms MCI VCR \_ Play \_ Structure
+# <a name="mci_vcr_play_parms-structure"></a>Estructura MCI \_ VCR \_ PLAY \_ PARMS
 
-La estructura **MCI \_ VCR \_ Play \_ parms** contiene parámetros para el comando de [**\_ reproducción de MCI**](mci-play.md) para los grabadores de casete de vídeo.
+La **estructura MCI \_ VCR PLAY \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ PLAY**](mci-play.md) para las grabadoras de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,32 +46,32 @@ typedef struct tagMCI_VCR_PLAY_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **dwFrom**
 </dt> <dd>
 
-Posición desde la que se va a reproducir.
+Posición desde la que se reproducirá.
 
 </dd> <dt>
 
 **dwTo**
 </dt> <dd>
 
-Posición en la que se va a reproducir.
+Posición en la que se reproducirá.
 
 </dd> <dt>
 
 **dwAt**
 </dt> <dd>
 
-Valor de tiempo que afecta al comando [**MCI \_ Play**](mci-play.md) o [**MCI \_ CUE**](mci-cue.md) . En el caso de [**MCI \_ Play**](mci-play-parms.md), es el momento en que comienza la reproducción. En el caso de **MCI \_**, es el momento en que el dispositivo señalado alcanza la posición proporcionada en **dwFrom**.
+Valor de hora que afecta al [**comando \_ MCI PLAY**](mci-play.md) o [**MCI \_ CUE.**](mci-cue.md) Para [**MCI \_ PLAY,**](mci-play-parms.md)es el momento en que comienza la reproducción. Para **MCI \_ CUE**, es la hora en que el dispositivo cued alcanza la posición dada en **dwFrom**.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las posiciones se especifican en el formato de hora actual.
 
@@ -81,28 +81,28 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VCR. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vcr.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_pista MCI**](mci-cue.md)
+[**MCI \_ CUE**](mci-cue.md)
 </dt> <dt>
 
-[**reproducción de MCI \_**](mci-play.md)
+[**MCI \_ PLAY**](mci-play.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

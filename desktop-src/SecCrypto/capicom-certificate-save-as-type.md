@@ -1,7 +1,7 @@
 ---
-description: Define el formato de un archivo que contiene información del certificado.
+description: Define el formato de un archivo que contiene información de certificado.
 ms.assetid: 417a6d1b-6329-418c-823c-d82b94207fd6
-title: Enumeración CAPICOM_CERTIFICATE_SAVE_AS_TYPE (CAPICOM. h)
+title: CAPICOM_CERTIFICATE_SAVE_AS_TYPE enumeración (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,40 +13,40 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 1e5365594a5a1cf1f06691c63b37c04f38530575
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2000bd582475a227fdb638649ee1a634e488a21a7c09d84dd6e21dafc5e9aa42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772646"
 ---
-# <a name="capicom_certificate_save_as_type-enumeration"></a>\_ \_ \_ Enumeración de tipo guardar certificado de CAPICOM \_
+# <a name="capicom_certificate_save_as_type-enumeration"></a>CAPICOM \_ CERTIFICATE SAVE AS TYPE \_ \_ \_ (enumeración)
 
-El tipo de enumeración de **certificado de CAPICOM de \_ \_ tipo "Save \_ as \_** " define el formato de un archivo que contiene información del certificado. CAPICOM 2,0 presentó este tipo de enumeración.
+El **tipo de enumeración CAPICOM \_ CERTIFICATE SAVE AS \_ \_ \_ TYPE** define el formato de un archivo que contiene información de certificado. CAPICOM 2.0 introdujo este tipo de enumeración.
 
 ## <a name="members"></a>Miembros
 
 
 
-| Miembro                                  | Descripción                                                                                                                                   | Value |
+| Miembro                                  | Descripción                                                                                                                                   | Valor |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| **el \_ certificado \_ de CAPICOM se guarda \_ como \_ pfx** | El archivo de salida se formateará como archivo PFX (PKCS 12) y también se guardarán las claves privadas asociadas que se puedan exportar.<br/> | 0     |
-| **\_certificado \_ de CAPICOM guardar \_ como \_ cer** | El archivo de salida se formateará como un archivo CER sin ninguna clave privada guardada.<br/>                                                        | 1     |
+| **CERTIFICADO CAPICOM \_ \_ GUARDAR COMO \_ \_ PFX** | El archivo de salida tendrá el formato de archivo PFX (PKCS 12) y también se guardarán las claves privadas asociadas que sean exportables.<br/> | 0     |
+| **CAPICOM \_ CERTIFICATE \_ SAVE \_ AS \_ CER** | El archivo de salida se formateará como un archivo CER sin claves privadas guardadas.<br/>                                                        | 1     |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**Certificate. Save**](certificate-save.md) usa el tipo de enumeración de **\_ \_ \_ \_ tipo guardar certificado de CAPICOM** .
+El método [**Certificate.Save**](certificate-save.md) usa el tipo de enumeración **CAPICOM \_ CERTIFICATE SAVE AS \_ \_ \_ TYPE.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Encabezado<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
+| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

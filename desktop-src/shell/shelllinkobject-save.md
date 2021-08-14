@@ -1,7 +1,7 @@
 ---
-description: Guarda todos los cambios realizados en el vínculo.
+description: Guarda todos los cambios en el vínculo.
 ms.assetid: 4c776c82-8eca-4c9b-9487-4a835affd2d8
-title: Método ShellLinkObject. Save (Shldisp. h)
+title: Método ShellLinkObject.Save (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 0283b839069464a1a059bd11ef52b522f7ec7072
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4d0d03b10aca45fadb5a0072eb94114103ab37d0c478c8a90241b5ab97ec36a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857174"
 ---
-# <a name="shelllinkobjectsave-method"></a>ShellLinkObject. Save (método)
+# <a name="shelllinkobjectsave-method"></a>Método ShellLinkObject.Save
 
-Guarda todos los cambios realizados en el vínculo.
+Guarda todos los cambios en el vínculo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,17 +42,17 @@ iRetVal = ShellLinkObject.Save(
 *sFile* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Valor de cadena que contiene la ruta de acceso completa del archivo donde se va a guardar la nueva información del vínculo. Si no se especifica ningún archivo, se utiliza el archivo actual.
+Valor de cadena que contiene la ruta de acceso completa del archivo donde se va a guardar la nueva información de vínculo. Si no se especifica ningún archivo, se usa el archivo actual.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -90,7 +90,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -170,13 +170,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo para aplicaciones de escritorio de Windows 2000 Professional con SP3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

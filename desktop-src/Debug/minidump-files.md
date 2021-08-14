@@ -1,25 +1,25 @@
 ---
-description: Las aplicaciones pueden generar archivos de minivolcado en modo usuario, que contienen un subconjunto útil de la información contenida en un archivo de volcado.
+description: Las aplicaciones pueden generar archivos de minivolca en modo de usuario, que contienen un subconjunto útil de la información contenida en un archivo de volcado de memoria.
 ms.assetid: c5de86a4-6dab-4408-8093-66117eb4de10
-title: Archivos de minivolcado
+title: Archivos de minivolfón
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58fcd57611cd0b6e5f4f5abdf8bc535f8222feb7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 412e719d54f34c9766981667be35990c37ae3511eaecc8836ceac0311a5105e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118406095"
 ---
-# <a name="minidump-files"></a>Archivos de minivolcado
+# <a name="minidump-files"></a>Archivos de minivolfón
 
-Las aplicaciones pueden generar archivos de minivolcado en modo usuario, que contienen un subconjunto útil de la información contenida en un archivo de volcado. Las aplicaciones pueden crear archivos de minivolcado de manera muy rápida y eficaz. Dado que los archivos de minivolcado son pequeños, se pueden enviar fácilmente a través de Internet a soporte técnico para la aplicación.
+Las aplicaciones pueden generar archivos de minivolca en modo de usuario, que contienen un subconjunto útil de la información contenida en un archivo de volcado de memoria. Las aplicaciones pueden crear archivos de minivolfón de forma muy rápida y eficaz. Dado que los archivos de minivolquete son pequeños, se pueden enviar fácilmente a través de Internet al soporte técnico de la aplicación.
 
-Un archivo de minivolcado no contiene tanta información como un archivo de volcado de memoria completo, pero contiene suficiente información para realizar operaciones de depuración básicas. Para leer un archivo de minivolcado, debe tener los archivos binarios y de símbolos disponibles para el depurador.
+Un archivo de minivolca no contiene tanta información como un archivo de volcado de memoria completo, pero contiene suficiente información para realizar operaciones de depuración básicas. Para leer un archivo de minivolumen, debe tener los archivos binarios y los archivos de símbolos disponibles para el depurador.
 
-Las versiones actuales de Microsoft Office y Microsoft Windows crean archivos de minivolcado con el fin de analizar los errores en los equipos de los clientes.
+Las versiones actuales de Microsoft Office y Microsoft Windows crear archivos de minivolumen con el fin de analizar los errores en los equipos de los clientes.
 
-Las siguientes funciones DbgHelp se utilizan con archivos de minivolcado.
+Las siguientes funciones dbgHelp se usan con archivos de minivolfón.
 
 <dl>
 

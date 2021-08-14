@@ -1,35 +1,35 @@
 ---
-title: Priorización de flujos
-description: Priorización de flujos
+title: Priorización de secuencias
+description: Priorización de secuencias
 ms.assetid: 6b3e9b03-62ef-422b-97ab-197d1cd15beb
 keywords:
-- Windows Media Format SDK, priorización de flujos
-- Advanced Systems Format (ASF), priorización de flujos
-- ASF (formato de sistemas avanzados), priorización de flujo
-- SDK de Windows Media Format, orden de prioridad para secuencias
-- Advanced Systems Format (ASF), orden de prioridad de las secuencias
-- ASF (formato de sistemas avanzados), orden de prioridad para flujos
-- flujos, priorización
+- Windows SDK de formato multimedia, priorización de secuencias
+- Formato de sistemas avanzados (ASF), priorización de secuencias
+- ASF (formato de sistemas avanzados), priorización de secuencias
+- Windows SDK de formato multimedia, orden de prioridad para secuencias
+- Formato de sistemas avanzados (ASF), orden de prioridad para secuencias
+- ASF (formato de sistemas avanzados), orden de prioridad para las secuencias
+- streams,prioritization
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abe1628ef050d393cd2d98e73708d5a9ad6c3be4
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 9fd34bab6a7957d7cbcdf97a78fc3d8be1f663d43ef1eb1ec8d4c575571ad0a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118197281"
 ---
-# <a name="stream-prioritization"></a>Priorización de flujos
+# <a name="stream-prioritization"></a>Priorización de secuencias
 
-Al crear un archivo ASF, puede especificar un orden de prioridad para sus flujos constituyentes. Si transmite por secuencias un archivo con prioridad y el ancho de banda disponible no es suficiente para ofrecer todas las secuencias, el lector quitará los flujos en orden de prioridad inverso. De este modo, puede garantizar que las secuencias más importantes del archivo no se quitarán debido a problemas de red.
+Al crear un archivo ASF, puede especificar un orden de prioridad para sus flujos constituyentes. Si transmite un archivo con prioridad y el ancho de banda disponible no es suficiente para entregar todas las secuencias, el lector quitará los flujos en orden de prioridad inversa. De este modo, puede garantizar que las secuencias más importantes del archivo no se descartarán debido a dificultades de red.
 
-La priorización de flujo se configura con un objeto de priorización de flujo y se agrega al perfil. Un perfil puede contener solo un objeto de priorización de flujo.
+La priorización de secuencias se configura con un objeto de priorización de secuencias y se agrega al perfil. Un perfil solo puede contener un objeto de priorización de secuencias.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Características de archivos ASF**](asf-file-features.md)
+[**Características del archivo ASF**](asf-file-features.md)
 </dt> <dt>
 
 [**IWMProfile3::CreateNewStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-createnewstreamprioritization)
@@ -44,15 +44,15 @@ La priorización de flujo se configura con un objeto de priorización de flujo y
 [**IWMProfile3::SetStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-setstreamprioritization)
 </dt> <dt>
 
-[**Interfaz IWMStreamPrioritization**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamprioritization)
+[**IWMStreamPrioritization (Interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamprioritization)
 </dt> <dt>
 
-[**Usar la priorización de flujos**](using-stream-prioritization.md)
+[**Uso de la priorización de secuencias**](using-stream-prioritization.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

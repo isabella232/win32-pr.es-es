@@ -1,25 +1,25 @@
 ---
-title: Notificaciones del control TrackBar
-description: Notificaciones del control TrackBar
+title: Notificaciones de control de la barra de seguimiento
+description: Notificaciones de control de la barra de seguimiento
 ms.assetid: 82c501b2-37a3-4e15-a9d9-e978f984a3ea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a2d9d63887c08a3578f6268a39701f99695abd5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d8a086f6d5502acaf1f8315e63236c7ac572e95c2d47227197c8d1e08784091d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118414837"
 ---
-# <a name="trackbar-control-notifications"></a>Notificaciones del control TrackBar
+# <a name="trackbar-control-notifications"></a>Notificaciones de control de la barra de seguimiento
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [NM \_ CUSTOMDRAW (TrackBar)](nm-customdraw-trackbar.md)
--   [NM \_ RELEASEDCAPTURE (TrackBar)](nm-releasedcapture-trackbar-.md)
+-   [NM \_ CUSTOMDRAW (barra de seguimiento)](nm-customdraw-trackbar.md)
+-   [NM \_ RELEASEDCAPTURE (barra de seguimiento)](nm-releasedcapture-trackbar-.md)
 -   [TRBN \_ THUMBPOSCHANGING](trbn-thumbposchanging.md)
--   [HSCROLL de WM \_](wm-hscroll.md)
--   [VSCROLL de WM \_](wm-vscroll.md)
+-   [WM \_ HSCROLL](wm-hscroll.md)
+-   [WM \_ VSCROLL](wm-vscroll.md)
 
  
 

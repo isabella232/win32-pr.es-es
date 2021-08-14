@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. playlistItemsVisible
-description: El atributo playlistItemsVisible especifica o recupera un valor que indica si el área de elementos de la lista de reproducción es visible.
+title: PLAYLIST.playlistItemsVisible
+description: El atributo playlistItemsVisible especifica o recupera un valor que indica si el área Elementos de lista de reproducción está visible.
 ms.assetid: 9335bd64-c692-4d11-9912-c611208fbc34
 keywords:
-- Windows Media Player de lista de reproducción. playlistItemsVisible
+- PLAYLIST.playlistItemsVisible Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 153b27dd8aaabfc12975ac122361b438711610e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 29cb8155a4424aa0d9b4c4ffa7fde17c8df569c966b0f6a998ac8f93cd4fc227
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118336713"
 ---
-# <a name="playlistplaylistitemsvisible"></a>Lista de reproducción. playlistItemsVisible
+# <a name="playlistplaylistitemsvisible"></a>PLAYLIST.playlistItemsVisible
 
-El atributo **playlistItemsVisible** especifica o recupera un valor que indica si el área de elementos de la lista de reproducción es visible.
+El **atributo playlistItemsVisible** especifica o recupera un valor que indica si el área Elementos de lista de reproducción está visible.
 
 ``` syntax
         elementID.playlistItemsVisible
@@ -29,34 +29,34 @@ El atributo **playlistItemsVisible** especifica o recupera un valor que indica s
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                              |
+| Valor | Descripción                              |
 |-------|------------------------------------------|
-| true  | Predeterminada. El área de elementos de lista de reproducción está visible. |
-| false | El área de elementos de lista de reproducción no es visible.      |
+| true  | Predeterminada. El área Elementos de lista de reproducción está visible. |
+| false | El área Elementos de lista de reproducción no está visible.      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El área elementos de lista de reproducción incluye los encabezados de columna, el contenido de las columnas y las barras de desplazamiento (si están presentes).
+El área Elementos de lista de reproducción incluye los encabezados de columna, el contenido de las columnas y las barras de desplazamiento (si están presentes).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,30 +1,30 @@
 ---
-description: En el ejemplo siguiente se crea e instala un motor de cadena de certificados no predeterminado. El motor de se usa para crear cadenas de certificados para cada uno de los certificados de un almacén de certificados.
+description: En el ejemplo siguiente se crea e instala un motor de cadena de certificados no predeterminado. El motor se usa para crear cadenas de certificados para cada uno de los certificados de un almacén de certificados.
 ms.assetid: 960f2bb9-130f-494f-9af0-0ab8ae3eb6e2
-title: 'Programa C de ejemplo: crear una cadena de certificados'
+title: 'Programa C de ejemplo: Crear una cadena de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1857540f16cddfa754a0765d273a944e9a4a9044
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59bbc8e447a23a950280cb4cb9b9f20e7a7d4d09bb2384de19ca510c403dedd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765569"
 ---
-# <a name="example-c-program-creating-a-certificate-chain"></a>Programa C de ejemplo: crear una cadena de certificados
+# <a name="example-c-program-creating-a-certificate-chain"></a>Programa C de ejemplo: Crear una cadena de certificados
 
-En el ejemplo siguiente se crea e instala un motor de cadena de certificados no predeterminado. El motor de se usa para crear cadenas de certificados para cada uno de los certificados de un [*almacén de certificados*](../secgloss/c-gly.md).
+En el ejemplo siguiente se crea e instala un motor de cadena de certificados no predeterminado. El motor se usa para compilar cadenas de certificados para cada uno de los certificados de un [*almacén de certificados.*](../secgloss/c-gly.md)
 
-En este ejemplo se muestran las siguientes tareas y funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Preparar la creación de un motor de cadena de certificados no predeterminado al declarar e inicializar una estructura de datos de [**\_ configuración del \_ motor \_ de cadena**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config) de certificados.
--   Crear el motor de búsqueda mediante [**CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
--   Uso de [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea) para abrir mi almacén del sistema.
--   Recuperación de todos los certificados del almacén abierto mediante [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) en un bucle.
--   Para cada certificado del almacén abierto, recuperando el nombre de sujeto del certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Creación de una cadena de certificados para cada certificado mediante [**CertGetCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatechain).
--   Crear un duplicado de la cadena de certificados mediante [**CertDuplicateCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatechain).
--   El uso de [**CertFreeCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatechain) para liberar cada cadena antes de que se compile la siguiente cadena.
+-   Preparar la creación de un motor de cadena de certificados no predeterminado declarando e inicializando una estructura de datos [**CERT \_ CHAIN ENGINE \_ \_ CONFIG.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config)
+-   Creación del motor de búsqueda [**mediante CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
+-   Uso [**de CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea) para abrir el almacén Mi sistema.
+-   Recuperar todos los certificados del almacén abierto mediante [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) en un bucle.
+-   Para cada certificado del almacén abierto, recuperando el nombre del firmante del certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Crear una cadena de certificados para cada certificado [**mediante CertGetCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatechain).
+-   Crear un duplicado de la cadena de certificados [**mediante CertDuplicateCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatechain).
+-   Usar [**CertFreeCertificateChain para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatechain) liberar cada cadena antes de que se construya la cadena siguiente.
 
 
 ```C++

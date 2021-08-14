@@ -1,7 +1,7 @@
 ---
-description: Establece la información de recursos compartidos DDE. Normalmente, esto se realiza después de la edición.
+description: Establece la información del recurso compartido de DDE. Esto suele hacerse después de la edición.
 ms.assetid: 002c73ce-7b35-4e8e-bb7e-0e1393b97ccc
-title: Función NDdeShareSetInfo (Nddeapi. h)
+title: Función NDdeShareSetInfo (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: cee7660a58e8f2747a800650b79db20f95504f87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ccfa8cc80f60477e8512ac43f0e93825642dd0603ee398e232bbb67d6979a4c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118481705"
 ---
-# <a name="nddesharesetinfo-function"></a>NDdeShareSetInfo función)
+# <a name="nddesharesetinfo-function"></a>Función NDdeShareSetInfo
 
-\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ no \_ implementado.\]
+\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Establece la información de recursos compartidos DDE. Normalmente, esto se realiza después de la edición.
+Establece la información del recurso compartido de DDE. Esto suele hacerse después de la edición.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,21 +48,21 @@ UINT NDdeShareSetInfo(
 
 <dl> <dt>
 
-*lpszServer* \[ de\]
+*lpszServer* \[ En\]
 </dt> <dd>
 
 Nombre del servidor cuyo DSDM se va a modificar.
 
 </dd> <dt>
 
-*lpszShareName* \[ de\]
+*lpszShareName* \[ En\]
 </dt> <dd>
 
-Nombre del nombre del recurso compartido cuya información se va a modificar. Este parámetro no puede ser **null**.
+Nombre del recurso compartido cuya información se va a modificar. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*nLevel* \[ de\]
+*nLevel* \[ En\]
 </dt> <dd>
 
 Nivel de información. Este parámetro debe ser 2.
@@ -72,50 +72,50 @@ Nivel de información. Este parámetro debe ser 2.
 *lpBuffer* \[in\]
 </dt> <dd>
 
-Puntero a la estructura [**NDDESHAREINFO**](nddeshareinfo-str.md) que especifica la información de recursos compartidos DDE que se va a almacenar en el DSDM. Actualmente, la información de los recursos compartidos DDE se modifica en su totalidad, es decir, no se realiza ninguna edición parcial. Este parámetro no puede ser **null**.
+Puntero a la [**estructura NDDESHAREINFO**](nddeshareinfo-str.md) que especifica la información del recurso compartido de DDE que se va a almacenar en DSDM. Actualmente, la información del recurso compartido de DDE se modifica en su totalidad, es decir, no se realizan modificaciones parciales. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*cBufSize* \[ de\]
+*cBufSize* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer de *lpBuffer* , en bytes.
+Tamaño del búfer *lpBuffer,* en bytes.
 
 </dd> <dt>
 
-*sParmNum* \[ de\]
+*sParmNum* \[ En\]
 </dt> <dd>
 
-Índice del parámetro que se va a modificar. La implementación actual no admite la modificación parcial; por lo tanto, este parámetro debe ser cero.
+Índice de parámetros que se va a modificar. La implementación actual no admite la modificación parcial; por lo tanto, este parámetro debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es NDDE \_ sin \_ error.
+Si la función se realiza correctamente, el valor devuelto es NDDE \_ NO \_ ERROR.
 
-Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto mediante una llamada a [**NDdeGetErrorString**](nddegeterrorstring.md).
+Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto llamando a [**NDdeGetErrorString**](nddegeterrorstring.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **NDdeShareSetInfoW** (Unicode) y **NDdeShareSetInfoA** (ANSI)<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información general de Intercambio dinámico de datos de red](network-dynamic-data-exchange.md)
+[Información general sobre datos dinámicos Exchange red](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funciones DDE de red](network-dde-functions.md)

@@ -1,11 +1,11 @@
 ---
-title: Evento Player. CurrentPlaylistItemAvailable
-description: El evento CurrentPlaylistItemAvailable se produce cuando la lista de reproducción actual está disponible. | Evento Player. CurrentPlaylistItemAvailable
+title: Evento Player.CurrentPlaylistItemAvailable
+description: El evento CurrentPlaylistItemAvailable tiene lugar cuando la lista de reproducción actual está disponible. | Evento Player.CurrentPlaylistItemAvailable
 ms.assetid: 4894e2fc-3464-413f-8abf-8b5e91899946
 keywords:
-- Media Player CurrentPlaylistItemAvailable de eventos de Windows
-- Evento CurrentPlaylistItemAvailable de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento CurrentPlaylistItemAvailable
+- Evento CurrentPlaylistItemAvailable Reproductor de Windows Media
+- Evento CurrentPlaylistItemAvailable Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media evento , CurrentPlaylistItemAvailable
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fe5809e50d572cfb8eb7a36220d083ec18a0a76
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1c4c2543f99d9bc645fa021d7dc5c94f66369b3c3151647dc4d575aab0a32f62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338141"
 ---
-# <a name="playercurrentplaylistitemavailable-event"></a>Evento Player. CurrentPlaylistItemAvailable
+# <a name="playercurrentplaylistitemavailable-event"></a>Evento Player.CurrentPlaylistItemAvailable
 
-El evento **CurrentPlaylistItemAvailable** se produce cuando la lista de reproducción actual está disponible.
+El **evento CurrentPlaylistItemAvailable** tiene lugar cuando la lista de reproducción actual está disponible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,33 +53,33 @@ Player.CurrentPlaylistItemAvailable(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El nombre de la lista de reproducción actual se puede usar para recuperar el objeto de **lista de reproducción** correspondiente mediante *PlaylistCollection*. método **getByName** .
+El nombre de la lista de reproducción actual se puede usar para recuperar el objeto **Playlist** correspondiente mediante *PlaylistCollection*. **Método getByName.**
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> <dt>
 
 [**PlaylistCollection.getByName**](playlistcollection-getbyname.md)

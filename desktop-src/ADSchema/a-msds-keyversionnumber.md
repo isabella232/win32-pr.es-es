@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-KeyVersionNumber
-description: El número de versión de Kerberos de la clave actual para esta cuenta. Este es un atributo construido.
+title: Atributo ms-DS-KeyVersionNumber
+description: Número de versión de Kerberos de la clave actual de esta cuenta. Se trata de un atributo construido.
 ms.assetid: 21bd40d9-df90-4f46-90e7-582e86eef760
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-KeyVersionNumber
-- Esquema de AD de atributo msDS-KeyVersionNumber
+- Esquema de AD del atributo ms-DS-KeyVersionNumber
+- Esquema de AD del atributo msDS-KeyVersionNumber
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6caa860b01b2cefc9509a234af62d6ea57487048
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 488edc2feed2b7a9e7b4974e60d67b4338ebc90e34a9f928be2cc38e207d2f2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425851"
 ---
-# <a name="ms-ds-keyversionnumber-attribute"></a>atributo MS-DS-KeyVersionNumber
+# <a name="ms-ds-keyversionnumber-attribute"></a>Atributo ms-DS-KeyVersionNumber
 
-El número de versión de Kerberos de la clave actual para esta cuenta. Este es un atributo construido.
+Número de versión de Kerberos de la clave actual de esta cuenta. Se trata de un atributo construido.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-KeyVersionNumber               |
-| Nombre para mostrar de LDAP | msDS-KeyVersionNumber                |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-KeyVersionNumber               |
+| Ldap-Display-Name | msDS-KeyVersionNumber                |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1782              |
-| System-ID-GUID    | c523e9c0-33b5-4ac8-8923-b57b927f42f6 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | c523e9c0-33b5-4ac8-8923-b57b927f42f6 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,15 +52,15 @@ El número de versión de Kerberos de la clave actual para esta cuenta. Este es 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | True                                                         |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Verdadero                                                         |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -73,15 +73,15 @@ El número de versión de Kerberos de la clave actual para esta cuenta. Este es 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | True                                                         |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Verdadero                                                         |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -94,15 +94,15 @@ El número de versión de Kerberos de la clave actual para esta cuenta. Este es 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | True                                                         |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Verdadero                                                         |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -115,15 +115,15 @@ El número de versión de Kerberos de la clave actual para esta cuenta. Este es 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | True                                                         |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Verdadero                                                         |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -136,15 +136,15 @@ El número de versión de Kerberos de la clave actual para esta cuenta. Este es 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | True                                                         |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Verdadero                                                         |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |

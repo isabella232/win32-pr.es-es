@@ -1,11 +1,11 @@
 ---
-title: IWMPNetwork setProxyBypassForLocal, método
-description: El método setProxyBypassForLocal especifica si el servidor proxy se omite si el servidor de origen está en una red local.
+title: Método IWMPNetwork setProxyBypassForLocal
+description: El método setProxyBypassForLocal especifica si se omite el servidor proxy si el servidor de origen está en una red local.
 ms.assetid: b308957a-0d7e-45be-8625-db198b276dad
 keywords:
-- método setProxyBypassForLocal de Windows Media Player
-- método setProxyBypassForLocal Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, método setProxyBypassForLocal
+- Método setProxyBypassForLocal Reproductor de Windows Media
+- Método setProxyBypassForLocal Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , método setProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f869125d43529a039804fe28c0f0dc493f481e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc751d05c87e780a2006e232d0b5d95e5d937e2719ad7e0c17ef6ac3d4b15333
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331148"
 ---
-# <a name="iwmpnetworksetproxybypassforlocal-method"></a>IWMPNetwork:: setProxyBypassForLocal (método)
+# <a name="iwmpnetworksetproxybypassforlocal-method"></a>IWMPNetwork::setProxyBypassForLocal (método)
 
-El método **setProxyBypassForLocal** especifica si el servidor proxy se omite si el servidor de origen está en una red local.
+El **método setProxyBypassForLocal** especifica si se omite el servidor proxy si el servidor de origen está en una red local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,17 +55,17 @@ Implements IWMPNetwork.setProxyBypassForLocal
 
 <dl> <dt>
 
-*bstrProtocol* \[ de\]
+*bstrProtocol* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**System.String que** es el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*fBypassForLocal* \[ de\]
+*fBypassForLocal* \[ En\]
 </dt> <dd>
 
-Valor **System. Boolean** que indica si se omite el servidor proxy.
+Valor **System.Boolean** que indica si se omite el servidor proxy.
 
 </dd> </dl>
 
@@ -73,15 +73,15 @@ Valor **System. Boolean** que indica si se omite el servidor proxy.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork. getProxySettings** es 2 (use la configuración manual).
+Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork.getProxySettings** sea 2 (use la configuración manual).
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **setProxyBypassForLocal** para especificar si se omite el servidor proxy de Windows Media Player, cuando se usa el protocolo MMS, si el servidor de origen está en una red local. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se usa **setProxyBypassForLocal para** especificar si se omite el servidor proxy Reproductor de Windows Media cuando se usa el protocolo MMS, si el servidor de origen está en una red local. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -164,25 +164,25 @@ End If
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxyBypassForLocal (VB y C#)**](iwmpnetwork-getproxybypassforlocal--vb-and-c.md)
+[**IWMPNetwork.getProxyBypassForLocal (VB y C#)**](iwmpnetwork-getproxybypassforlocal--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> </dl>
 
  

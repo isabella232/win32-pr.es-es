@@ -1,12 +1,12 @@
 ---
-title: Método ProvisioningEnumerateJobs de la clase Win32_RDMSVirtualDesktopCollection
-description: Enumera los trabajos de aprovisionamiento de escritorio virtual para este servicio.
+title: Método ProvisioningEnumerateJobs de la Win32_RDMSVirtualDesktopCollection clase
+description: Enumera los trabajos de aprovisionamiento de escritorios virtuales para este servicio.
 ms.assetid: 4bd2b03f-ba8c-483e-af09-270424f9b1ed
 ms.tgt_platform: multiple
 keywords:
 - Método ProvisioningEnumerateJobs Servicios de Escritorio remoto
-- Método ProvisioningEnumerateJobs Servicios de Escritorio remoto, clase Win32_RDMSVirtualDesktopCollection
-- Win32_RDMSVirtualDesktopCollection de clase Servicios de Escritorio remoto, método ProvisioningEnumerateJobs
+- Método ProvisioningEnumerateJobs Servicios de Escritorio remoto , Win32_RDMSVirtualDesktopCollection clase
+- Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto método , ProvisioningEnumerateJobs
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaa2b54a0599c2bbcaf6b0f9a9acb3ab3028389b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b24ef80acdb29c75327447f61db7dae1689a883f69c9e19ef199710de216fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118350227"
 ---
-# <a name="provisioningenumeratejobs-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método ProvisioningEnumerateJobs de la \_ clase RDMSVirtualDesktopCollection de Win32
+# <a name="provisioningenumeratejobs-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método ProvisioningEnumerateJobs de la clase \_ RDMSVirtualDesktopCollection de Win32
 
-Enumera los trabajos de aprovisionamiento de escritorio virtual para este servicio.
+Enumera los trabajos de aprovisionamiento de escritorios virtuales para este servicio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,10 +45,10 @@ uint32 ProvisioningEnumerateJobs(
 
 <dl> <dt>
 
-*JobType* \[ de\]
+*JobType* \[ En\]
 </dt> <dd>
 
-Entero que especifica el tipo de trabajo que se va a enumerar.
+Entero que especifica el tipo de trabajo que se enumerará.
 
 Este parámetro se puede establecer en uno de los siguientes valores:
 
@@ -68,43 +68,43 @@ Trabajos completados
 
 </dd> </dl> </dd> <dt>
 
-*CollectionAlias* \[ de\]
+*CollectionAlias* \[ En\]
 </dt> <dd>
 
-El alias de la colección de escritorios virtuales que se va a enumerar. El valor predeterminado de este parámetro es FALSE, que especifica que se deben enumerar todos los trabajos en ejecución.
+Alias de la colección de escritorios virtuales que se enumerará. El valor predeterminado de este parámetro es FALSE, que especifica que se van a enumerar todos los trabajos en ejecución.
 
 </dd> <dt>
 
-*JobGuids* \[ enuncia\]
+*JobGuids* \[ out\]
 </dt> <dd>
 
-Una matriz que contiene los **GUID** de los trabajos de aprovisionamiento que se van a enumerar.
+Matriz que contiene los **GUID de los** trabajos de aprovisionamiento que se enumerará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
+[**RDMSVirtualDesktopCollection de Win32 \_**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

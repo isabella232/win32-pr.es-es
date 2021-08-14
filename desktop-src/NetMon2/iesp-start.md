@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 6dd0d1159132e594b6d48ea6799da5846eeb626e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8023b9db00834b10fcce84510df5ccbafec0c7a2f6654ef73d71754e7c563044
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365585"
 ---
 # <a name="iespstart-method"></a>IESP::Start (método)
 
@@ -59,8 +59,8 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**CAPTURA DE NMERR \_ \_ EN PAUSA**</dt> </dl> | La captura está en pausa y debe detenerse antes de poder reiniciarse. Llame [a IESP::Stop](iesp-stop.md) para detener la captura.<br/> |
 | <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>       | La captura ya se ha iniciado.<br/>                                                                                             |
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>  | El NPP no está conectado a la red. Llame [a IESP::Connect](iesp-connect.md) para conectar el NPP a la red.<br/>          |
-| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>        | El NPP está conectado a la red, pero no con el [método IESP::Connect.](iesp-connect.md)<br/>                              |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>  | El NPP no está conectado a la red. Llame [a IESP::Conectar](iesp-connect.md) para conectar el NPP a la red.<br/>          |
+| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>        | El NPP está conectado a la red, pero no con el [método IESP::Conectar.](iesp-connect.md)<br/>                              |
 
 
 
@@ -68,12 +68,12 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
 ## <a name="remarks"></a>Comentarios
 
-La ubicación del [*archivo de captura*](c.md) se especifica en el Registro de Windows, pero puede usar Monitor de red para cambiar la ubicación del directorio.
+La ubicación del [*archivo de captura*](c.md) se especifica en el registro de Windows, pero puede usar Monitor de red para cambiar la ubicación del directorio.
 
 Al reiniciar la captura mediante los métodos IESP::Start e [IESP::Stop,](iesp-stop.md) debe llamar al método [IESP::Configure](iesp-configure.md) para volver a configurar la conexión cada vez que llame a IESP::Start para reiniciar la captura de datos. Al iniciar y detener la captura con estos tres métodos, se crea un nuevo archivo de captura cada vez que se inicia la captura.
 
 > [!Note]  
-> También puede iniciar y detener la captura mediante los métodos [IESP::P ause](iesp-pause.md) e [IESP::Resume.](iesp-resume.md) Cuando se usan estos dos métodos, los datos capturados se almacenan en el mismo archivo de captura.
+> También puede iniciar y detener la captura mediante los métodos [IESP::P ause](iesp-pause.md) [e IESP::Resume.](iesp-resume.md) Cuando se usan estos dos métodos, los datos capturados se almacenan en el mismo archivo de captura.
 
  
 
@@ -100,7 +100,7 @@ Al reiniciar la captura mediante los métodos IESP::Start e [IESP::Stop,](iesp-s
 [IESP::Configure](iesp-configure.md)
 </dt> <dt>
 
-[IESP::Connect](iesp-connect.md)
+[IESP::Conectar](iesp-connect.md)
 </dt> <dt>
 
 [IESP::P ause](iesp-pause.md)

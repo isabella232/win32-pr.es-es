@@ -4,8 +4,8 @@ description: Este atributo contiene información sobre cada objeto de tipo de cu
 ms.assetid: 00479b89-1d96-4ace-bbd8-053ca9e548b0
 ms.tgt_platform: multiple
 keywords:
-- SAM-Account-Type atributo AD Schema
-- sAMAccountType esquema de AD de atributos
+- Esquema de AD del atributo SAM-Account-Type
+- Esquema de AD del atributo sAMAccountType
 topic_type:
 - apiref
 api_name:
@@ -14,44 +14,44 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f51de46dac0faabcc248159f7dcabafcd6060725
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 132532af58eafa4950f049fb08ff7a4235cb49ac2b1f62fc832e308e7ab6d31c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423392"
 ---
 # <a name="sam-account-type-attribute"></a>Atributo SAM-Account-Type
 
-Este atributo contiene información sobre cada objeto de tipo de cuenta. Puede enumerar una lista de tipos de cuenta o puede usar la API Mostrar información para crear una lista. Dado que los equipos, las cuentas de usuario normales y las cuentas de confianza también se pueden enumerar como objetos de usuario, los valores de estas cuentas deben ser un intervalo contiguo.
+Este atributo contiene información sobre cada objeto de tipo de cuenta. Puede enumerar una lista de tipos de cuenta o puede usar Display Information API para crear una lista. Dado que los equipos, las cuentas de usuario normales y las cuentas de confianza también se pueden enumerar como objetos de usuario, los valores de estas cuentas deben ser un intervalo contiguo.
 
 Los valores posibles para este atributo son los siguientes:
 
--   \_Objeto de dominio Sam \_ 0X0
--   \_Objeto de Grupo SAM \_ 0x10000000
--   \_Objeto de \_ grupo de no seguridad Sam \_ \_ 0x10000001
--   \_Objeto de alias Sam \_ 0x20000000
--   \_Objeto de \_ alias de no seguridad Sam \_ \_ 0x20000001
--   \_Objeto de usuario Sam \_ 0x30000000
--   SAM \_ \_ 0x30000000 de cuenta de usuario normal \_
--   SAM \_ cuenta de equipo \_ 0x30000001
--   SAM de la \_ cuenta de confianza \_ 0x30000002
--   \_ \_ Grupo básico de la aplicación Sam \_
--   \_Grupo de consulta de aplicaciones Sam \_ \_ 0x40000001
--   \_Tipo de cuenta SAM \_ \_ máx.
+-   Sam \_ DOMAIN \_ OBJECT 0x0
+-   Sam \_ GROUP \_ OBJECT 0x10000000
+-   SAM \_ NON SECURITY GROUP OBJECT \_ \_ \_ 0x10000001
+-   OBJETO \_ DE ALIAS SAM \_ 0x20000000
+-   SAM \_ NON SECURITY ALIAS OBJECT \_ \_ \_ 0x20000001
+-   Sam \_ USER \_ OBJECT 0x30000000
+-   CUENTA DE USUARIO NORMAL DE SAM \_ \_ \_ 0x30000000
+-   CUENTA \_ DE MÁQUINA SAM \_ 0x30000001
+-   Cuenta \_ de CONFIANZA DE SAM \_ 0x30000002
+-   APLICACIÓN \_ SAM BASIC GROUP \_ \_ 0x40000000
+-   GRUPO \_ DE CONSULTAS DE APLICACIONES SAM \_ \_ 0x40000001
+-   TIPO \_ DE CUENTA SAM MAX \_ \_ 0x7fffffff
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
-| CN                | Tipo de cuenta SAM                                                |
-| Nombre para mostrar de LDAP | sAMAccountType                                                  |
-| Tamaño              | \-                                                              |
-| Actualizar privilegio  | El sistema establece este valor.                                |
-| Frecuencia de actualización  | Lo establece el sistema operativo cuando se crea el objeto. |
+| CN                | SAM-Account-Type                                                |
+| Ldap-Display-Name | sAMAccountType                                                  |
+| Size              | \-                                                              |
+| Actualizar privilegios  | El sistema establece este valor.                                |
+| Frecuencia de actualización  | El sistema operativo establece esto cuando se crea el objeto . |
 | Attribute-Id      | 1.2.840.113556.1.4.302                                          |
-| System-ID-GUID    | 6e7b626c-64f2-11d0-afd2-00c04fd930c9                            |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                            |
+| System-Id-Guid    | 6e7b626c-64f2-11d0-afd2-00c04fd930c9                            |
+| Syntax            | [**Enumeración**](s-enumeration.md)                            |
 
 
 
@@ -68,15 +68,15 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -89,15 +89,15 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -110,15 +110,15 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -131,15 +131,15 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -152,15 +152,15 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -173,15 +173,15 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |

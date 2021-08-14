@@ -1,17 +1,17 @@
 ---
 description: Especifica qué dispositivos de audio usa el DSP de captura de voz para capturar y representar audio.
 ms.assetid: 42b6b82b-ac64-4a07-956c-473dd57a128d
-title: Propiedad MFPKEY_WMAAECMA_DEVICE_INDEXES (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_DEVICE_INDEXES propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b377e4335e78e81c8e7d3c5a9a0c1d00b8f9bae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c4e9fd9eae8d53f1fa19bd8b55d94d292b9cd6cbf214b7a71a6473f1af647f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873007"
 ---
-# <a name="mfpkey_wmaaecma_device_indexes-property"></a>Propiedad de los índices de dispositivo de MFPKEY \_ WMAAECMA \_ \_
+# <a name="mfpkey_wmaaecma_device_indexes-property"></a>Propiedad MFPKEY \_ WMAAECMA \_ DEVICE \_ INDEXES
 
 Especifica qué dispositivos de audio usa el DSP de captura de voz para capturar y representar audio.
 
@@ -25,21 +25,21 @@ VT \_ I4
 
 ## <a name="default-value"></a>Valor predeterminado
 
-(-1,-1).
+(-1, -1).
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [DSP de captura de voz](voicecapturedmo.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Establezca esta propiedad si usa el DSP en modo de origen. El DSP omite esta propiedad en modo de filtro.
 
-El valor de la propiedad es una **palabra** de 2 16 bits empaquetada en un **DWORD**. Los 16 bits superiores especifican el dispositivo de representación de audio (normalmente un orador) y los 16 bits inferiores especifican el dispositivo de captura (normalmente un micrófono). Cada dispositivo se especifica como un índice en la recopilación de dispositivos de audio. Si el índice es-1, se usa el dispositivo predeterminado.
+El valor de la propiedad es dos word **de** 16 bits empaquetados en **un DWORD.** Los 16 bits superiores especifican el dispositivo de representación de audio (normalmente un altavoz) y los 16 bits inferiores especifican el dispositivo de captura (normalmente un micrófono). Cada dispositivo se especifica como un índice en la colección de dispositivos de audio. Si el índice es -1, se usa el dispositivo predeterminado.
 
-El índice del dispositivo corresponde al índice de la colección que se usa en la interfaz [**IMMDeviceCollection**](/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdevicecollection) . La aplicación debe reproducir la voz de un extremo a través del dispositivo de representación seleccionado. (La voz de extremo final es la voz de la persona en el otro extremo de la línea de teléfono, que se reproduce a través del altavoz en el equipo del usuario). Si el dispositivo de representación seleccionado no tiene un flujo activo, el DSP no puede procesar ningún resultado.
+El índice del dispositivo corresponde al índice de recopilación usado en la [**interfaz IMMDeviceCollection.**](/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdevicecollection) La aplicación debe reproducir la voz de extremo a través del dispositivo de representación seleccionado. (La voz de extremo a extremo es la voz de la persona en el otro extremo de la línea telefónica, que se reproduce a través del hablante en el equipo del usuario). Si el dispositivo de representación seleccionado no tiene una secuencia activa, el DSP no puede procesar ninguna salida.
 
-El valor predeterminado de esta propiedad es (-1,-1).
+El valor predeterminado de esta propiedad es (-1, -1).
 
 En el ejemplo siguiente se muestra cómo inicializar **PROPVARIANT** para esta propiedad.
 
@@ -64,19 +64,19 @@ varDeviceIndexes.lVal = (unsigned long)(iSpeakerIndex << 16) +
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [DSP de captura de voz](voicecapturedmo.md)

@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando el objeto InkOverlay o el control InkPicture han terminado de volver a dibujarse.
+description: Se produce cuando el objeto InkOverlay o el control InkPicture han completado el propio dibujo.
 ms.assetid: de3c69de-4a33-46e4-96e5-462805681bda
-title: Evento InkOverlay. pintado (Msinkaut. h)
+title: Evento InkOverlay.Painted (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3de0628679aa034b16a3562aa08cdbd1928653ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f433f18d5e94be1163be519f4ee33fbe0b8d08a2e33feadd363a8eb3a43a6b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104498076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118218947"
 ---
-# <a name="inkoverlaypainted-event"></a>InkOverlay. pintado (evento)
+# <a name="inkoverlaypainted-event"></a>Evento InkOverlay.Painted
 
-Se produce cuando el objeto [**InkOverlay**](inkoverlay-class.md) o el control [InkPicture](inkpicture-control-reference.md) han terminado de volver a dibujarse.
+Se produce cuando el [**objeto InkOverlay**](inkoverlay-class.md) o el control [InkPicture](inkpicture-control-reference.md) han completado el propio dibujo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -31,14 +31,14 @@ void Painted(
 
 <dl> <dt>
 
-*HDC* \[ de\]
+*hDC* \[ En\]
 </dt> <dd>
 
-Contexto de dispositivo en el que se produjo el evento.
+Contexto del dispositivo en el que se produjo el evento.
 
 </dd> <dt>
 
-*Rectángulo* \[ de\]
+*Rect* \[ En\]
 </dt> <dd>
 
 [**InkRectangle**](inkrectangle-class.md) que se ha repintado.
@@ -49,24 +49,24 @@ Contexto de dispositivo en el que se produjo el evento.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en las \_ \_ interfaces de solo envío IInkOverlayEvents y IInkPictureEvents (dispinterfaces) con un identificador de DISPID \_ IOEPainted.
+Este método de evento se define en las interfaces de solo envío \_ (dispinterfaces) de IInkOverlayEvents e IInkPictureEvents con un identificador de \_ DISPID \_ IOEPainted.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Enumera los atributos de los archivos de miembro en la sección CatalogFiles de un archivo de definición de catálogo (CDF).
 ms.assetid: 056a5186-a37c-4255-aaa5-4c6e60f5392e
-title: CryptCATCDFEnumAttributesWithCDFTag función)
+title: Función CryptCATCDFEnumAttributesWithCDFTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Wintrust.dll
-ms.openlocfilehash: bd3c5905c57d234d42cd89d18c2a141c4026250f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1bffd01865b524b0f06003a6a46b8f81542d7f6113f98db55202e08d8dd7ee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117768900"
 ---
-# <a name="cryptcatcdfenumattributeswithcdftag-function"></a>CryptCATCDFEnumAttributesWithCDFTag función)
+# <a name="cryptcatcdfenumattributeswithcdftag-function"></a>Función CryptCATCDFEnumAttributesWithCDFTag
 
-\[La función **CryptCATCDFEnumAttributesWithCDFTag** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
+\[La **función CryptCATCDFEnumAttributesWithCDFTag** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
 
-La función **CryptCATCDFEnumAttributesWithCDFTag** enumera los atributos de los archivos de miembro en la sección **CatalogFiles** de un archivo de definición de catálogo (CDF). [MakeCat](makecat.md)llama a **CryptCATCDFEnumAttributesWithCDFTag** .
+La **función CryptCATCDFEnumAttributesWithCDFTag** enumera los atributos de los archivos miembro en la sección **CatalogFiles** de un archivo de definición de catálogo (CDF). **MakeCat llama a CryptCATCDFEnumAttributesWithCDFTag.** [](makecat.md)
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mssign32.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mssign32.dll.
 
  
 
@@ -50,35 +50,35 @@ CRYPTCATATTRIBUTE* WINAPI CryptCATCDFEnumAttributesWithCDFTag(
 
 <dl> <dt>
 
-*pCDF* \[ de\]
+*pCDF* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**CRYPTCATCDF**](/windows/win32/api/mscat/ns-mscat-cryptcatcdf) .
+Puntero a una [**estructura CRYPTCATCDF.**](/windows/win32/api/mscat/ns-mscat-cryptcatcdf)
 
 </dd> <dt>
 
-*pwszMemberTag* \[ de\]
+*pwszMemberTag* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en **null** que identifica el miembro del archivo de catálogo.
+Puntero a una **cadena terminada** en NULL que identifica el miembro de archivo de catálogo.
 
 </dd> <dt>
 
-*pMember* \[ de\]
+*pMember* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**CRYPTCATMEMBER**](/windows/win32/api/mscat/ns-mscat-cryptcatmember) que contiene la información del miembro.
+Puntero a una [**estructura CRYPTCATMEMBER**](/windows/win32/api/mscat/ns-mscat-cryptcatmember) que contiene la información de miembro.
 
 </dd> <dt>
 
-*pPrevAttr* \[ de\]
+*pPrevAttr* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**CRYPTCATATTRIBUTE**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) para un atributo de miembro de archivo en el CDF al que apunta *pCDF*.
+Puntero a una estructura [**CRYPTCATATTRIBUTE para**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) un atributo de miembro de archivo en la CDF a la que apunta *pCDF*.
 
 </dd> <dt>
 
-*pfnParseError* \[ de\]
+*pfnParseError* \[ En\]
 </dt> <dd>
 
 Puntero a una función definida por el usuario para controlar los errores de análisis de archivos.
@@ -87,15 +87,15 @@ Puntero a una función definida por el usuario para controlar los errores de an�
 
 ## <a name="return-value"></a>Valor devuelto
 
-Cuando se realiza correctamente, esta función devuelve un puntero a una estructura [**CRYPTCATATTRIBUTE**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) . La función **CryptCATCDFEnumAttributesWithCDFTag** devuelve un puntero **null** si se produce un error.
+Si se completa correctamente, esta función devuelve un puntero a una [**estructura CRYPTCATATTRIBUTE.**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) La **función CryptCATCDFEnumAttributesWithCDFTag** devuelve un **puntero NULL** si se produce un error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, se llama a esta función en un bucle para enumerar todos los atributos de los miembros del archivo de catálogo en un CDF. Antes de entrar en el bucle, establezca *pPrevAttr* en **null**. La función devuelve un puntero al primer atributo. Establezca *pPrevAttr* en el valor devuelto de la función para las iteraciones posteriores del bucle.
+Normalmente se llama a esta función en un bucle para enumerar todos los atributos de miembro del archivo de catálogo en una CDF. Antes de entrar en el bucle, *establezca pPrevAttr en* **NULL.** La función devuelve un puntero al primer atributo. Establezca *pPrevAttr en* el valor devuelto de la función para las iteraciones posteriores del bucle.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra la secuencia correcta de asignaciones para el parámetro *pPrevAttr* ( `pAttr` ).
+En el ejemplo siguiente se muestra la secuencia correcta de asignaciones para el *parámetro pPrevAttr* ( `pAttr` ).
 
 
 ```C++
@@ -139,15 +139,15 @@ En el ejemplo siguiente se muestra la secuencia correcta de asignaciones para el
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Wintrust.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
