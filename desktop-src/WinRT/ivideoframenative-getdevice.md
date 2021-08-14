@@ -1,7 +1,7 @@
 ---
 description: Este método devuelve un dispositivo asociado a los datos de vídeo.
 ms.assetid: 9A61159B-C383-4770-AD8F-9F69F720E3E2
-title: 'IVideoFrameNative:: GetDevice (método)'
+title: IVideoFrameNative::GetDevice (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - windows.media.core.interop.h
-ms.openlocfilehash: d012ae79b1cb2c83e916dc74113cc3d0560da4c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f204cc0d44690a2b80c8642d590ef38510cebedbc00332720ec51529fe34ad2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323114"
 ---
-# <a name="ivideoframenativegetdevice-method"></a>IVideoFrameNative:: GetDevice (método)
+# <a name="ivideoframenativegetdevice-method"></a>IVideoFrameNative::GetDevice (método)
 
 Este método devuelve un dispositivo asociado a los datos de vídeo.
 
@@ -40,25 +40,25 @@ HRESULT GetDevice(
 
 <dl> <dt>
 
-*riid* \[ de\]
+*riid* \[ En\]
 </dt> <dd>
 
-IID del dispositivo que se va a recuperar.
+El IID del dispositivo que se recuperará.
 
 </dd> <dt>
 
-*PPV* \[ enuncia\]
+*ppv* \[ out\]
 </dt> <dd>
 
-Cuando este método se devuelve correctamente, contiene el puntero de dispositivo solicitado en el parámetro *riid* .
+Cuando este método se devuelve correctamente, contiene el puntero de dispositivo solicitado en *el parámetro riid.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto al finalizar correctamente.
+Devuelve S \_ OK cuando se completa correctamente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: Domain-Component atributo)
-description: Atributo de asignación de nombres para los objetos de dominio y DNS. Normalmente, se muestra como DC DomainName.
+title: Domain-Component atributo
+description: Atributo de nomenclatura para los objetos De dominio y DNS. Normalmente se muestra como dc DomainName.
 ms.assetid: 1d674af1-ed2f-4266-9704-8c6ed5a9bdd8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Domain-Component
-- Esquema de AD de atributo DC
+- Domain-Component esquema de AD del atributo
+- Esquema de AD del atributo dc
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a97a6958d51c6e0e29f70685b2624fb194d42e05
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fe93b6629ac176452edbe5cdf13bf35afa955890cde369273f87990034bcd3e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177781"
 ---
-# <a name="domain-component-attribute"></a>Domain-Component atributo)
+# <a name="domain-component-attribute"></a>Domain-Component atributo
 
-Atributo de asignación de nombres para los objetos de dominio y DNS. Normalmente se muestra como DC = DomainName.
+Atributo de nomenclatura para los objetos De dominio y DNS. Normalmente se muestra como dc=DomainName.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Domain-Component                            |
-| Nombre para mostrar de LDAP | dc                                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| Ldap-Display-Name | dc                                          |
+| Size              | \-                                          |
+| Privilegio actualizar  | Administrador de dominio                        |
 | Frecuencia de actualización  | Cuando se crea el dominio.                 |
 | Attribute-Id      | 0.9.2342.19200300.100.1.25                  |
-| System-ID-GUID    | 19195a55-6da0-11d0-afd3-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 19195a55-6da0-11d0-afd3-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Atributo de asignación de nombres para los objetos de dominio y DNS. Normalment
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,20 +54,20 @@ Atributo de asignación de nombres para los objetos de dominio y DNS. Normalment
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | False                                                                                                                   |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Falso                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
 
 
 
@@ -75,36 +75,36 @@ Atributo de asignación de nombres para los objetos de dominio y DNS. Normalment
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | False                                                                                                                   |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Falso                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | True                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Verdadero                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | 1                                     |
 | Range-Upper            | 255                                   |
 | Search-Flags           | 0x00000000                            |
@@ -117,20 +117,20 @@ Atributo de asignación de nombres para los objetos de dominio y DNS. Normalment
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | False                                                                                                                   |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Falso                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
 
 
 
@@ -138,20 +138,20 @@ Atributo de asignación de nombres para los objetos de dominio y DNS. Normalment
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | False                                                                                                                   |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Falso                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
 
 
 
@@ -159,20 +159,20 @@ Atributo de asignación de nombres para los objetos de dominio y DNS. Normalment
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | False                                                                                                                   |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Falso                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ Atributo de asignación de nombres para los objetos de dominio y DNS. Normalment
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | False                                                                                                                   |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Falso                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Domain**](c-domain.md)<br/> |
 
 
 

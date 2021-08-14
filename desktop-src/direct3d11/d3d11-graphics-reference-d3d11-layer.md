@@ -1,19 +1,19 @@
 ---
 title: Referencia de capas
-description: La API de Direct3D define varios elementos de la API de capa.
+description: La API de Direct3D define varios elementos de API de capa.
 ms.assetid: 6acca19e-92b1-46d3-b5cc-58d35686381c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e00e792f82b189a5a15b512257ae8c25a39fb63e
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d6d2cacf81caf5f701808a4ab6df0d6c6e41150b327e18c8e35ed0b2c1b277d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104359540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118300754"
 ---
 # <a name="layer-reference"></a>Referencia de capas
 
-La API de Direct3D define varios elementos de la API de capa.
+La API de Direct3D define varios elementos de API de capa.
 
 
 ## <a name="in-this-section"></a>En esta sección
@@ -22,8 +22,8 @@ La API de Direct3D define varios elementos de la API de capa.
 
 | Tema                                                                              | Descripción                                                                |
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Interfaces de capas](d3d11-graphics-reference-d3d11-layer-interfaces.md)<br/> | Esta sección contiene información sobre las interfaces de capas. <br/>  |
-| [Estructuras de capas](d3d11-graphics-reference-d3d11-layer-structures.md)<br/> | Esta sección contiene información sobre las estructuras de capas.<br/>   |
+| [Interfaces de capa](d3d11-graphics-reference-d3d11-layer-interfaces.md)<br/> | Esta sección contiene información sobre las interfaces de capa. <br/>  |
+| [Estructuras de capa](d3d11-graphics-reference-d3d11-layer-structures.md)<br/> | Esta sección contiene información sobre las estructuras de capa.<br/>   |
 | [Enumeraciones de capas](d3d11-graphics-reference-d3d11-layer-enums.md)<br/>    | Esta sección contiene información sobre las enumeraciones de capas.<br/> |
 
 

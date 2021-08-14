@@ -1,5 +1,5 @@
 ---
-description: Cree un procesador de datos asincrónico para un sombreador.
+description: Cree un procesador de datos asincrónicos para un sombreador.
 ms.assetid: e23290fa-ccd7-4703-ae6b-4fffe352875e
 title: Función D3DX10CreateAsyncCompilerProcessor (D3DX10Async.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: 1fa6a558efd56917832da3280df2aad4ac400def
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f5e7011d868b46196293f441d76d182156fb0ba1431227d6bf01212f8c809249
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303470"
 ---
-# <a name="d3dx10createasynccompilerprocessor-function"></a>D3DX10CreateAsyncCompilerProcessor función)
+# <a name="d3dx10createasynccompilerprocessor-function"></a>Función D3DX10CreateAsyncCompilerProcessor
 
-Cree un procesador de datos asincrónico para un sombreador.
+Cree un procesador de datos asincrónicos para un sombreador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ HRESULT D3DX10CreateAsyncCompilerProcessor(
 
 <dl> <dt>
 
-*pFileName* \[ de\]
+*pFileName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -57,84 +57,84 @@ Cadena que contiene el nombre de archivo del sombreador.
 
 </dd> <dt>
 
-*pDefines* \[ de\]
+*pDefines* \[ En\]
 </dt> <dd>
 
-Type: **constante [**de \_ sombreador \_**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \*** de tipo const
+Tipo: **const [**D3D \_ SHADER \_ MACRO**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
 
-Una matriz terminada en NULL de macros de sombreador (consulte la [**\_ \_ macro del sombreador D3D**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)); establezca este valor en **null** para no especificar macros.
+Matriz terminada en NULL de macros de sombreador (vea [**D3D \_ SHADER \_ MACRO**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)); establezca esta opción en **NULL** para no especificar macros.
 
 </dd> <dt>
 
-*pInclude* \[ de\]
+*pInclude* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Un puntero a una interfaz de inclusión (consulte la [**interfaz ID3D10Include**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))). Este parámetro puede ser **NULL**.
+Puntero a una interfaz include (vea [**ID3D10Include Interface**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))). Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
-*pFunctionName* \[ de\]
+*pFunctionName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nombre de la función del punto de entrada del sombreador en el que comienza la ejecución del sombreador. Al compilar un efecto, **D3DX10CreateAsyncCompilerProcessor** omite *pFunctionName*; se recomienda establecer *pFunctionName* en **null** porque es una buena práctica de programación establecer un parámetro de puntero en **null** si la función llamada no lo va a usar.
+Nombre de la función de punto de entrada del sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX10CreateAsyncCompilerProcessor** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo usará.
 
 </dd> <dt>
 
-*pProfile* \[ de\]
+*pProfile* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Una cadena que especifica el [Perfil del sombreador](../direct3dhlsl/dx-graphics-hlsl-models.md) o el modelo de sombreador.
+Cadena que especifica el perfil de [sombreador o](../direct3dhlsl/dx-graphics-hlsl-models.md) el modelo de sombreador.
 
 </dd> <dt>
 
-*Flags1* \[ de\]
+*Marcas1* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-[Marcas de compilación del sombreador](d3d10-shader.md).
+[Marcas de compilación de sombreador](d3d10-shader.md).
 
 </dd> <dt>
 
-*Flags2* \[ de\]
+*Marcas2* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-[Marcas de compilación de efectos](d3d10-graphics-reference-effect-constants.md). Al compilar un sombreador y no un archivo de efectos, **D3DX10CreateAsyncCompilerProcessor** omite *Flags2*; se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro de puntero en **null** si la función llamada no lo va a usar.
-
-</dd> <dt>
-
-*ppCompiledShader* \[ enuncia\]
-</dt> <dd>
-
-Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
-
-Dirección de un puntero al efecto compilado (vea la [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
+[Marcas de compilación de efecto](d3d10-graphics-reference-effect-constants.md). Al compilar un sombreador y no un archivo de efecto, **D3DX10CreateAsyncCompilerProcessor** omite *Flags2*; Se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función a la que se llama no lo usará.
 
 </dd> <dt>
 
-*ppErrorBuffer* \[ enuncia\]
+*ppCompiledShader* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Dirección de un puntero para compilar errores (vea la [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
+Dirección de un puntero al efecto compilado (vea [**Interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
 
 </dd> <dt>
 
-*ppDataProcessor* \[ enuncia\]
+*ppErrorBuffer* \[ out\]
+</dt> <dd>
+
+Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
+
+Dirección de un puntero para compilar errores (vea [**ID3D10Blob Interface**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
+
+</dd> <dt>
+
+*ppDataProcessor* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataProcessor**](id3dx10dataprocessor.md)\*\***
 
-Dirección de un puntero a un búfer que contiene el procesador de datos creado (vea la [**interfaz ID3DX10DataProcessor**](id3dx10dataprocessor.md)).
+Dirección de un puntero a un búfer que contiene el procesador de datos creado (vea [**ID3DX10DataProcessor Interface**](id3dx10dataprocessor.md)).
 
 </dd> </dl>
 
@@ -142,7 +142,7 @@ Dirección de un puntero a un búfer que contiene el procesador de datos creado 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -150,15 +150,15 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDbTimeTooNewException'
-title: Constructor de EsentDbTimeTooNewException
+description: 'Más información sobre: Constructor EsentDbTimeTooNewException'
+title: Constructor EsentDbTimeTooNewException
 TOCTitle: 'EsentDbTimeTooNewException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDbTimeTooNewException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdbtimetoonewexception.esentdbtimetoonewexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 023deb4d27d5708468df5495c29d31bb5365e9d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78c285d8b4a805cf2c6c3d4c9811a6518b81f45cec45e1d5de20a8e5907f0556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117712152"
 ---
-# <a name="esentdbtimetoonewexception-constructor"></a>Constructor de EsentDbTimeTooNewException
+# <a name="esentdbtimetoonewexception-constructor"></a>Constructor EsentDbTimeTooNewException
 
 Inicializa una nueva instancia de la clase EsentDbTimeTooNewException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentDbTimeTooNewException()
 
 [Miembros de EsentDbTimeTooNewException](./esentdbtimetoonewexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

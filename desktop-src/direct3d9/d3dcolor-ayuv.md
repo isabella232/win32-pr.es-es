@@ -1,7 +1,7 @@
 ---
-description: Inicializa un color con los valores (a, y, u, v).
+description: Inicializa un color con los valores (a, y, u,v).
 ms.assetid: 47b65aab-511a-44c1-ab94-973bc2da7e04
-title: Macro D3DCOLOR_AYUV (D3d9types. h)
+title: D3DCOLOR_AYUV macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 62a34e94fbdc6c47ed034a46bdae6e9b32a7c95d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5e1900bf0d400971786eb37dd5138154913562982e1a1e3221c8002ac51fbf2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118300319"
 ---
-# <a name="d3dcolor_ayuv-macro"></a>D3DCOLOR \_ AYUV (macro)
+# <a name="d3dcolor_ayuv-macro"></a>Macro D3DCOLOR \_ AYUV
 
-Inicializa un color con los valores (a, y, u, v).
+Inicializa un color con los valores (a, y, u,v).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,41 +42,41 @@ D3DCOLOR D3DCOLOR_AYUV(
 
 <dl> <dt>
 
-*un* 
+*Un* 
 </dt> <dd>
 
-Componente alfa del color. Este valor debe estar en el intervalo comprendido entre 0 y 255.
+Componente alfa del color. Este valor debe estar entre 0 y 255.
 
 </dd> <dt>
 
 *y* 
 </dt> <dd>
 
-Componente de luminancia del color. Este valor debe estar en el intervalo comprendido entre 0 y 255.
+Componente de luminosidad del color. Este valor debe estar entre 0 y 255.
 
 </dd> <dt>
 
 *u* 
 </dt> <dd>
 
-Brillo azul del color. Este valor debe estar en el intervalo comprendido entre 0 y 255.
+Brillo azul del color. Este valor debe estar entre 0 y 255.
 
 </dd> <dt>
 
-*v* 
+*V* 
 </dt> <dd>
 
-Brillo rojo del color. Este valor debe estar en el intervalo comprendido entre 0 y 255.
+Brillo rojo del color. Este valor debe estar entre 0 y 255.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de [D3DCOLOR](d3dcolor.md) que corresponde a los valores ARGB proporcionados.
+Devuelve el [valor D3DCOLOR](d3dcolor.md) que corresponde a los valores ARGB proporcionados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un color RGB se puede reducir a 16 bits por píxel mediante la conversión a las diferencias de luminancia y color con las ecuaciones siguientes:
+Un color RGB se puede reducir a 16 bits por píxel mediante la conversión a las diferencias de luminosidad y color con las siguientes ecuaciones:
 
 
 ```C++
@@ -93,18 +93,18 @@ v = red - luminance
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Macros](dx9-graphics-reference-d3d-macros.md)
 </dt> <dt>
 
-[**\_ARGB D3DCOLOR**](d3dcolor-argb.md)
+[**D3DCOLOR \_ ARGB**](d3dcolor-argb.md)
 </dt> <dt>
 
 [**D3DCOLOR \_ XYUV**](d3dcolor-xyuv.md)

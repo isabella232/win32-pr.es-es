@@ -1,7 +1,7 @@
 ---
-description: Borre todos los elementos de trabajo del bombeo de subprocesos.
+description: Borre todos los elementos de trabajo de la bomba de subprocesos.
 ms.assetid: d1682610-d81a-45cd-8c7f-2185d2d48b93
-title: ID3DX10ThreadPump::P método urgeAllItems (D3DX10. h)
+title: Método ID3DX10ThreadPump::P procesoAllItems (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 928122f3526fb369be09bc19407d866c6d313fbb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 96ff8e833e0c00c353072b6d34c7862b1093152183bc989cc889cd65140a5ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118301726"
 ---
-# <a name="id3dx10threadpumppurgeallitems-method"></a>ID3DX10ThreadPump::P método urgeAllItems
+# <a name="id3dx10threadpumppurgeallitems-method"></a>Método ID3DX10ThreadPump::P procesoAllItems
 
-Borre todos los elementos de trabajo del bombeo de subprocesos.
+Borre todos los elementos de trabajo de la bomba de subprocesos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,19 +50,19 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10ThreadPump](id3dx10threadpump.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

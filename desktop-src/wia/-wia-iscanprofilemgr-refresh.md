@@ -1,7 +1,7 @@
 ---
-description: Vuelve a enumerar todos los perfiles de digitalización en el sistema.
+description: Vuelve a enumerar todos los perfiles de examen del sistema.
 ms.assetid: f5e49645-e81a-4750-8ea5-f0c698a61752
-title: 'IScanProfileMgr:: Refresh (método) (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::Refresh (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: e4af44e95889abf35fe13e1669411513458a16c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bb343d310be3aa352c4777275c231f6264d6d25fe5ad88cde559995da915aa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208948"
 ---
-# <a name="iscanprofilemgrrefresh-method"></a>IScanProfileMgr:: Refresh (método)
+# <a name="iscanprofilemgrrefresh-method"></a>IScanProfileMgr::Refresh (Método)
 
-Vuelve a enumerar todos los perfiles de digitalización en el sistema.
+Vuelve a enumerar todos los perfiles de examen del sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,33 +41,33 @@ Este método no tiene parámetros.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este método cuando más de un objeto [**IScanProfileMgr**](-wia-iscanprofilemgr.md) pueda estar creando o eliminando perfiles al mismo tiempo.
+Use este método cuando más de un [**objeto IScanProfileMgr**](-wia-iscanprofilemgr.md) pueda crear o eliminar perfiles al mismo tiempo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

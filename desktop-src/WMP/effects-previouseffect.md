@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. previousEffect
+title: EFFECTS.previousEffect
 description: El método previousEffect muestra la visualización anterior, omitiendo los valores preestablecidos.
 ms.assetid: f1cfef29-0241-4028-b047-4f17bf0e9250
 keywords:
-- EFFECTs. previousEffect Windows Media Player
+- EFFECTS.previousEffect Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b5482e7c202d6d35f3a833b5bafc8a41dca38956
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a7e73ab00fa5092f4b67f659c30705a9e7b57a1a159d4a41017783c1f1ee91dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339980"
 ---
-# <a name="effectspreviouseffect"></a>EFFECTs. previousEffect
+# <a name="effectspreviouseffect"></a>EFFECTS.previousEffect
 
-El método **previousEffect** muestra la visualización anterior, omitiendo los valores preestablecidos.
+El **método previousEffect** muestra la visualización anterior, omitiendo los valores preestablecidos.
 
 ``` syntax
         elementID.previousEffect()
@@ -36,31 +36,31 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método muestra la visualización anterior en el orden de creación. Si la visualización actual es la primera en el orden de creación y si **allowAll** es false, la última visualización se hace actual.
+Este método muestra la visualización anterior en el orden de creación. Si la visualización actual es la primera en el orden de creación y **allowAll** es false, la última visualización se hace actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**EFFECTS, elemento**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. nextEffect**](effects-nexteffect.md)
+[**EFFECTS.nextEffect**](effects-nexteffect.md)
 </dt> <dt>
 
-[**EFFECTs. allowAll**](effects-allowall.md)
+[**EFFECTS.allowAll**](effects-allowall.md)
 </dt> </dl>
 
  

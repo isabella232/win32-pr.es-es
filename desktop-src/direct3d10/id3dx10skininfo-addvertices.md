@@ -1,7 +1,7 @@
 ---
-description: Asigne espacio para los vértices adicionales.
+description: Asigne espacio para vértices adicionales.
 ms.assetid: dd6445ea-4754-4ba3-a264-59295325ee08
-title: 'ID3DX10SkinInfo:: AddVertices (método) (D3DX10. h)'
+title: Método ID3DX10SkinInfo::AddVertices (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8f126b31c375e4e3463133960c5a1bcfbd995b62
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 232778cdec6c8ab1c4874c6dcef3cadb9b1492d12fe1d4d60d787a484a3425c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105653285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302471"
 ---
-# <a name="id3dx10skininfoaddvertices-method"></a>ID3DX10SkinInfo:: AddVertices (método)
+# <a name="id3dx10skininfoaddvertices-method"></a>Método ID3DX10SkinInfo::AddVertices
 
-Asigne espacio para los vértices adicionales.
+Asigne espacio para vértices adicionales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT AddVertices(
 
 <dl> <dt>
 
-*Recuento* \[ de\]
+*Recuento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vértices que se van a agregar.
+Número de vértices que se agregarán.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Número de vértices que se van a agregar.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si este método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ OUTOFMEMORY.
+Si este método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,19 +61,19 @@ Si este método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

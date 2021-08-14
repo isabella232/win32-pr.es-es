@@ -1,5 +1,5 @@
 ---
-description: La mayoría de las constantes de propiedades de adquisición de imágenes de Windows (WIA) se agrupan en un tipo de datos enumerado, WiaItemPropertyId para los autores de scripting.
+description: La mayoría de las Windows de propiedad de adquisición de imágenes (WIA) se agrupan en un tipo de datos enumerado, WiaItemPropertyId para los autores de scripting.
 ms.assetid: d0fd6bd1-c646-4ed8-a6b2-43b424af8288
 title: WiaItemPropertyId
 ms.topic: article
@@ -9,28 +9,28 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6ced5d213d68fa3c4386ecf6f05783bd303bad05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dedd11a35d52d19a4fcff4299dce688e8163ecd19d2bf9e4b49e19cb1997b293
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118207512"
 ---
 # <a name="wiaitempropertyid"></a>WiaItemPropertyId
 
-La mayoría de las constantes de propiedades de adquisición de imágenes de Windows (WIA) se agrupan en un tipo de datos enumerado, WiaItemPropertyId para los autores de scripting.
+La mayoría de las Windows de propiedad de adquisición de imágenes (WIA) se agrupan en un tipo de datos enumerado, WiaItemPropertyId para los autores de scripting.
 
-En la tabla siguiente se presenta la asignación entre las convenciones de nomenclatura utilizadas en scripting y C++. Por ejemplo, en el script, el prefijo "CameraDevice" se asigna al \_ prefijo "WIA DPC" para la constante de C++ correspondiente. En un ejemplo más concreto, la propiedad "CameraDeviceFlashMode" es equivalente a la \_ constante "modo Flash de DPC de WIA" de C++ \_ \_ . Vea los temas de constantes de propiedad correspondientes para obtener descripciones de cada propiedad. 
+En la tabla siguiente se presenta la asignación entre las convenciones de nomenclatura usadas en scripting y C++. Por ejemplo, en el script, el prefijo "CameraDevice" se asigna al prefijo "WIA \_ DPC" para la constante de C++ correspondiente. En un ejemplo más específico, la propiedad "CameraDeviceFlashMode" es equivalente a la constante "WIA \_ DPC FLASH MODE" de \_ \_ C++. Consulte los temas constantes de propiedad correspondientes para obtener descripciones de cada propiedad. 
 
 | Prefijo de script  | Tema de C++ (prefijo)                                                                    |
 |----------------|---------------------------------------------------------------------------------------|
-| Dispositivo         | [**Constantes de propiedad de dispositivo comunes (WIA \_ DPA)**](-wia-wiaitempropcommondevice.md)   |
-| CameraDevice   | [**Constantes de propiedades de dispositivo de cámara (DPC de WIA \_ )**](-wia-wiaitempropcameradevice.md)   |
-| ScannerDevice  | [**Constantes de propiedades de dispositivo de escáner (WIA \_ DP)**](-wia-wiaitempropscannerdevice.md) |
-| Videodispositivo    | [**Constantes de propiedad de dispositivo WIA de vídeo (WIA \_ DPV)**](-wia-wiaitempropvideodevice.md) |
-| Imagen        | [**Constantes comunes de propiedades de elementos WIA ( \_ IPA de WIA)**](-wia-wiaitempropcommonitem.md)   |
-| CameraPicture  | [**Constantes de propiedades de elementos de WIA de cámara ( \_ IPC IPC)**](-wia-wiaitempropcameraitem.md)   |
-| ScannerPicture | [**Constantes de propiedad del elemento WIA del escáner ( \_ direcciones IP de WIA)**](-wia-wiaitempropscanneritem.md) |
+| Dispositivo         | [**Constantes comunes de propiedad de dispositivo (WIA \_ DPA)**](-wia-wiaitempropcommondevice.md)   |
+| CameraDevice   | [**Constantes de propiedad de dispositivo de cámara (WIA \_ DPC)**](-wia-wiaitempropcameradevice.md)   |
+| ScannerDevice  | [**Constantes de propiedad del dispositivo del analizador (WIA \_ DPS)**](-wia-wiaitempropscannerdevice.md) |
+| VideoDevice    | [**Constantes de propiedad de dispositivo WIA de vídeo (WIA \_ DPV)**](-wia-wiaitempropvideodevice.md) |
+| Imagen        | [**Constantes comunes de propiedad de elemento de WIA (WIA \_ IPA)**](-wia-wiaitempropcommonitem.md)   |
+| CameraPicture  | [**Constantes de propiedad de elementos WIA de cámara (WIA \_ IPC)**](-wia-wiaitempropcameraitem.md)   |
+| ScannerPicture | [**Constantes de propiedad de elemento WIA del analizador \_ (WIA IPS)**](-wia-wiaitempropscanneritem.md) |
 
 
 

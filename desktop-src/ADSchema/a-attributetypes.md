@@ -1,11 +1,11 @@
 ---
-title: Attribute-Types atributo)
-description: Una propiedad con varios valores que contiene cadenas que representan cada atributo del esquema.
+title: Attribute-Types atributo
+description: Propiedad multivalor que contiene cadenas que representan cada atributo del esquema.
 ms.assetid: 37d48944-b573-4067-982c-2e57db040b54
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Attribute-Types
-- attributeTypes esquema de AD de atributos
+- Attribute-Types esquema de AD de atributo
+- AttributeTypes attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99f587f1704f7e2ea393279a8dbf0a20be10ef02
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8fc2e13bac48c208c08512b5fab2ae16523b92f763bfba18a1f474e3b7931350
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177953"
 ---
-# <a name="attribute-types-attribute"></a>Attribute-Types atributo)
+# <a name="attribute-types-attribute"></a>Attribute-Types atributo
 
-Una propiedad con varios valores que contiene cadenas que representan cada atributo del esquema.
+Propiedad multivalor que contiene cadenas que representan cada atributo del esquema.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Attribute-Types                             |
-| Nombre para mostrar de LDAP | attributeTypes                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de esquema                        |
+| Ldap-Display-Name | attributeTypes                              |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de esquemas                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 2.5.21.5                                    |
-| System-ID-GUID    | 9a7ad944-ca53-11d1-bbd0-0080c76670c0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 9a7ad944-ca53-11d1-bbd0-0080c76670c0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Una propiedad con varios valores que contiene cadenas que representan cada atrib
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,20 +54,20 @@ Una propiedad con varios valores que contiene cadenas que representan cada atrib
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -75,41 +75,41 @@ Una propiedad con varios valores que contiene cadenas que representan cada atrib
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ Una propiedad con varios valores que contiene cadenas que representan cada atrib
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -138,20 +138,20 @@ Una propiedad con varios valores que contiene cadenas que representan cada atrib
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -159,20 +159,20 @@ Una propiedad con varios valores que contiene cadenas que representan cada atrib
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ Una propiedad con varios valores que contiene cadenas que representan cada atrib
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 

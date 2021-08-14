@@ -3,21 +3,21 @@ description: El método Find busca en una cadena la primera coincidencia de una 
 audience: developer
 ms.assetid: 98a7c5ad-5bc7-4918-b978-45d2b439f250
 ms.tgt_platform: multiple
-title: 'CHString:: Find (método) (ChString. h)'
+title: Métodos CHString::Find (ChString.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 5996ca5c06e2101fad834ce2e37df31ee435fbb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7f326b202d107dc192683517508446b3c785266c675e5cf27d92577311d453a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118319999"
 ---
-# <a name="chstringfind-methods"></a>CHString:: Find (métodos)
+# <a name="chstringfind-methods"></a>Métodos CHString::Find
 
-\[La clase [**CHString**](chstring.md) forma parte del marco de trabajo del proveedor WMI, que ahora se considera en el estado final, y no habrá más desarrollo, mejoras o actualizaciones para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
+\[La [**clase CHString**](chstring.md) forma parte del marco de proveedores WMI que ahora se considera en estado final y no habrá más desarrollos, mejoras o actualizaciones disponibles para problemas no relacionados con la seguridad que afectan a estas bibliotecas. Las [API de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el nuevo desarrollo.\]
 
-El método **Find** busca en una cadena la primera coincidencia de una subcadena.
+El **método Find** busca en una cadena la primera coincidencia de una subcadena.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -25,8 +25,8 @@ El método **Find** busca en una cadena la primera coincidencia de una subcadena
 
 | Método                                          | Descripción                                             |
 |:------------------------------------------------|:--------------------------------------------------------|
-| [**Buscar (WCHAR)**](/windows/win32/api/chstring/nf-chstring-chstring-find(lpcwstr))     | Busca el **WSTR** en esta cadena.<br/>    |
-| [**Buscar (LPCWSTR)**](/windows/win32/api/chstring/nf-chstring-chstring-find(lpcwstr)) | Busca el **LPCWSTR** en esta cadena.<br/> |
+| [**Find(WCHAR)**](/windows/win32/api/chstring/nf-chstring-chstring-find(lpcwstr))     | Busca el **WSTR** en esta cadena.<br/>    |
+| [**Find(LPCWSTR)**](/windows/win32/api/chstring/nf-chstring-chstring-find(lpcwstr)) | Busca el **LPCWSTR** en esta cadena.<br/> |
 
 
 
@@ -34,12 +34,12 @@ El método **Find** busca en una cadena la primera coincidencia de una subcadena
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                                                                                |
-| Encabezado<br/>                   | <dl> <dt>ChString. h (incluye FwCommon. h)</dt> </dl>                                                    |
-| Biblioteca<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
+| Header<br/>                   | <dl> <dt>ChString.h (include FwCommon.h)</dt> </dl>                                                    |
+| Biblioteca<br/>                  | <dl> <dt>FrameDyn.lib</dt> </dl>                                                                       |
 | Archivo DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 
 

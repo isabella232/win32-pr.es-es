@@ -1,17 +1,17 @@
 ---
-description: Componentes de BLOB
+description: Componentes blob
 ms.assetid: 757cd311-f834-4017-a0da-ff3f4bc49e7e
-title: Componentes de BLOB
+title: Componentes blob
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bfdb9c1f336ad0cddc1798cc98083890096dd39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33bd9ab8389cdd49a266855106891a91fcfbd0b4f69c7d22b5855143b34f376c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118367487"
 ---
-# <a name="blob-components"></a>Componentes de BLOB
+# <a name="blob-components"></a>Componentes blob
 
 Un objeto binario grande (BLOB) incluye los siguientes componentes jerárquicos:
 
@@ -22,13 +22,13 @@ Un objeto binario grande (BLOB) incluye los siguientes componentes jerárquicos:
 
 ## <a name="textual-representation"></a>Representación textual
 
-Para mayor comodidad, los blobs aparecen en el formato propietario: Categoría: etiqueta: valor en el que aparecen cuando se guardan en un archivo. La estructura interna del BLOB es opaca porque representa punteros y tablas. Por ejemplo, esta es una entrada de un BLOB que se puede usar para configurar un NPP:
+Para mayor comodidad, los BLOB aparecen en el formato Owner:Category:Tag:Value en el que aparecen cuando se guardan en un archivo. La estructura interna del BLOB es opaca porque representa punteros y tablas. Por ejemplo, esta es una entrada de un BLOB que se puede usar para configurar un NPP:
 
 ``` syntax
 NPP:Configure:BufferSize=32768
 ```
 
-El propietario es NPP. La categoría es configure, la etiqueta es BufferSize y el valor es 32768.
+El propietario es NPP. La categoría es Configurar, la etiqueta es BufferSize y el valor es 32768.
 
  
 

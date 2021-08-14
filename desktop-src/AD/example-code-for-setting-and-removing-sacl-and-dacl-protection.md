@@ -1,24 +1,24 @@
 ---
 title: Código de ejemplo para establecer y quitar la protección SACL y DACL
-description: En este tema se incluye un ejemplo de código que se usa para establecer y quitar la protección SACL y DACL.
+description: En este tema se incluye un ejemplo de código que se usa para establecer y quitar la protección de SACL y DACL.
 ms.assetid: 1982ee9a-022a-4e5d-be9c-fab8894afa9e
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, establecer y quitar la protección SACL
+- Active Directory ejemplos Active Directory , establecer y quitar la protección sacl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28c77cb1da29aa650fe4559c3da27c6a00f59e98
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 6c3ed7c32ebdeb7408037e2e3fcff294f0750fb6a8dcd19837ee9154c65f0c66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105656342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190157"
 ---
 # <a name="example-code-for-setting-and-removing-sacl-and-dacl-protection"></a>Código de ejemplo para establecer y quitar la protección SACL y DACL
 
-En este tema se incluye un ejemplo de código que se usa para establecer y quitar la protección SACL y DACL.
+En este tema se incluye un ejemplo de código que se usa para establecer y quitar la protección de SACL y DACL.
 
-En el siguiente ejemplo de código de C y C++ se establece y se quitan los elementos **\_ \_ protegidos** de DACL y SACL **\_ \_ protegidos de se** en la propiedad [**IADsSecurityDescriptor. control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) de un descriptor de seguridad de objeto.
+El siguiente ejemplo de código de C y C++ establece y quita los elementos **\_ SE DACL \_ PROTECTED** y **SE \_ SACL \_ PROTECTED** de la propiedad [**IADsSecurityDescriptor.Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) de un descriptor de seguridad de objeto.
 
 
 ```C++
@@ -131,6 +131,6 @@ HRESULT SetSDInheritProtect(IADs *pObject, long lControl)
 
 
 
- 
+ 
 
- 
+ 

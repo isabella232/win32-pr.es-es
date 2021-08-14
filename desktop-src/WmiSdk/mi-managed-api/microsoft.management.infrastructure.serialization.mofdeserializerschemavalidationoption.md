@@ -38,12 +38,12 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: 18baf6fa3ab837a82d725b72b8b60e3b33b7175f
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 8892b145ebf03fdd995de8ef414394a79bb9b6b67514cde37a461003483534d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118317191"
 ---
 # <a name="mofdeserializerschemavalidationoption-enumeration"></a>Enumeración MofDeserializerSchemaValidationOption
 
@@ -76,7 +76,7 @@ Friend Enumeration MofDeserializerSchemaValidationOption
 |-|-|
 |Valor predeterminado|Especifica la validación de esquema predeterminada.|
 |Strict|Especifica la validación estricta del esquema.|
-|Suelto|Especifica la validación de esquema flexible.|
+|Suelto|Especifica la validación de esquemas flexibles.|
 |IgnorePropertyType|Especifica que la validación del esquema debe omitir los tipos de propiedad.|
 |Ignorar|Especifica que se debe omitir la validación del esquema.|
 

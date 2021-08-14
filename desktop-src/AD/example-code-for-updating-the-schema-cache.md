@@ -1,24 +1,24 @@
 ---
-title: Código de ejemplo para actualizar la caché de esquema
-description: Las siguientes funciones de C/C++ obtienen el nombre DNS del maestro de esquema (GetSchemaMasterDNSName) y actualizan la caché de esquema en el maestro de esquema (UpdateSchemaMasterCache).
+title: Código de ejemplo para actualizar la caché de esquemas
+description: Las siguientes funciones de C/C++ obtienen el nombre DNS del maestro de esquema (GetSchemaMasterDNSName) y actualizan la caché de esquemas en el maestro de esquema (UpdateSchemaMasterCache).
 ms.assetid: e955588d-a92c-4406-a197-bb8c36329f88
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para actualizar la caché de esquema AD
+- Código de ejemplo para actualizar la caché de esquemas de AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c9ebbf721bc8d3e960b02de14ac7f9179bf5787
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 267c0090a04e6831b395f566762c2d80526cfd754d367acda235f257eaf76195
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189796"
 ---
-# <a name="example-code-for-updating-the-schema-cache"></a>Código de ejemplo para actualizar la caché de esquema
+# <a name="example-code-for-updating-the-schema-cache"></a>Código de ejemplo para actualizar la caché de esquemas
 
-Las siguientes funciones de C/C++ obtienen el nombre DNS del maestro de esquema (GetSchemaMasterDNSName) y actualizan la caché de esquema en el maestro de esquema (UpdateSchemaMasterCache). Para usar estas funciones, llame a GetSchemaMasterDNSName para obtener el nombre DNS del maestro de esquema, pase el nombre DNS del maestro de esquema a UpdateSchemaMasterCache, llame a CoTaskMemFree en una cadena que contenga el nombre DNS del maestro del esquema.
+Las siguientes funciones de C/C++ obtienen el nombre DNS del maestro de esquema (GetSchemaMasterDNSName) y actualizan la caché de esquemas en el maestro de esquema (UpdateSchemaMasterCache). Para usar estas funciones, llame a GetSchemaMasterDNSName para obtener el nombre DNS maestro del esquema, pase el nombre DNS maestro de esquema a UpdateSchemaMasterCache y llame a CoTaskMemFree en la cadena que contiene el nombre DNS maestro del esquema.
 
-Para obtener más información, vea [actualizar la caché de esquema](updating-the-schema-cache.md).
+Para obtener más información, vea [Actualizar la caché de esquemas.](updating-the-schema-cache.md)
 
 
 ```C++
@@ -165,9 +165,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

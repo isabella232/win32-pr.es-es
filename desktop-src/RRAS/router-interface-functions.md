@@ -1,23 +1,23 @@
 ---
-title: Funciones de interfaz de enrutador
-description: Utilice las siguientes funciones para administrar interfaces en el enrutador.
+title: Funciones de la interfaz de enrutador
+description: Use las siguientes funciones para administrar interfaces en el enrutador.
 ms.assetid: e988753e-908a-4c42-aad3-dd9f641c90a9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3a5318eedfbc3a04c13549012fda3bd4d93b4d9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9bcaaf257e31623036a075c21da66d4665b3afe7e821f8f246f6a225e02b8272
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787841"
 ---
-# <a name="router-interface-functions"></a>Funciones de interfaz de enrutador
+# <a name="router-interface-functions"></a>Funciones de la interfaz de enrutador
 
-Utilice las siguientes funciones para administrar interfaces en el enrutador.
+Use las siguientes funciones para administrar interfaces en el enrutador.
 
 
 
-| Función de administración                                          | Función de configuración                                             |
+| Administration (Función)                                          | Función de configuración                                             |
 |------------------------------------------------------------------|--------------------------------------------------------------------|
 | [**MprAdminInterfaceCreate**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacecreate)       | [**MprConfigInterfaceCreate**](/windows/desktop/api/Mprapi/nf-mprapi-mprconfiginterfacecreate)       |
 | [**MprAdminInterfaceDelete**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacedelete)       | [**MprConfigInterfaceDelete**](/windows/desktop/api/Mprapi/nf-mprapi-mprconfiginterfacedelete)       |
@@ -28,17 +28,17 @@ Utilice las siguientes funciones para administrar interfaces en el enrutador.
 
 
 
- 
+ 
 
-Estas funciones afectan a las interfaces, no a los clientes que se ejecutan en las interfaces. Por esta razón, ninguna de las funciones requiere que el llamador especifique un transporte determinado (IP o IPX); Aunque los clientes (como los protocolos de enrutamiento) están asociados a transportes particulares, las propias interfaces no lo son.
+Estas funciones afectan a las propias interfaces, no a los clientes que se ejecutan en las interfaces. Por este motivo, ninguna de las funciones requiere que el autor de la llamada especifique un transporte determinado (IP o IPX); aunque los clientes (como los protocolos de enrutamiento) están asociados a transportes determinados, las interfaces no lo están.
 
-Estas funciones se controlan directamente mediante DIM. No usan los administradores de enrutadores.
+DIM controla estas funciones directamente. No usan los administradores de enrutadores.
 
-Las funciones [**MprAdminInterfaceCreate**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacecreate) y [**MprAdminInterfaceDelete**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacedelete) no pueden crear ni eliminar interfaces LAN. Solo pueden crear o eliminar interfaces de marcado a petición. Consulte [**\_ \_ tipo de interfaz de enrutador**](/windows/desktop/api/Mprapi/ne-mprapi-router_interface_type) para obtener una lista de tipos de interfaz.
+Las [**funciones MprAdminInterfaceCreate**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacecreate) y [**MprAdminInterfaceDelete**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacedelete) no pueden crear ni eliminar interfaces LAN. Solo pueden crear o eliminar interfaces de marcado a petición. Consulte [**TIPO DE INTERFAZ DE \_ \_ ENRUTADOR**](/windows/desktop/api/Mprapi/ne-mprapi-router_interface_type) para obtener una lista de tipos de interfaz.
 
- 
+ 
 
- 
+ 
 
 
 

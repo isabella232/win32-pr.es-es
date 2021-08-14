@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_STOP (VFW. h)
-description: El mensaje de detención del Cap de WM \_ \_ detiene la operación de captura. Puede enviar este mensaje explícitamente o mediante la macro capCaptureStop.
+title: WM_CAP_STOP mensaje (Vfw.h)
+description: El mensaje \_ WM CAP STOP detiene la operación de \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capCaptureStop.
 ms.assetid: 0fea82f5-f381-485a-82ae-b081b3a5e402
 keywords:
-- Mensaje de WM_CAP_STOP de Windows multimedia
+- WM_CAP_STOP mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ded89ea8999fa2b29f576a6d047f5147d492bc2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8bceac7a821a42227a388de6ebc2b9ea548156ec80d1e5baba7f1e1ad708002d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369334"
 ---
-# <a name="wm_cap_stop-message"></a>Mensaje de detención de \_ Cap de WM \_
+# <a name="wm_cap_stop-message"></a>Mensaje \_ STOP de WM CAP \_
 
-El mensaje de **\_ \_ detención del Cap de WM** detiene la operación de captura. Puede enviar este mensaje explícitamente o mediante la macro [**capCaptureStop**](/windows/desktop/api/Vfw/nf-vfw-capcapturestop) .
+El **mensaje WM CAP \_ \_ STOP** detiene la operación de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capCaptureStop.**](/windows/desktop/api/Vfw/nf-vfw-capcapturestop)
 
-En la captura de fotogramas del paso, los datos de la imagen que se recopilaron antes de que se enviara este mensaje se conservan en el archivo de captura. También se conserva una duración equivalente de los datos de audio en el archivo de captura si se ha habilitado la captura de audio.
+En la captura de fotogramas paso a paso, los datos de imagen recopilados antes de enviar este mensaje se conservan en el archivo de captura. También se conserva una duración equivalente de los datos de audio en el archivo de captura si se ha habilitado la captura de audio.
 
 
 ```C++
@@ -38,25 +38,25 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La operación de captura debe proporcionar el uso de este mensaje. Use el mensaje de [**\_ \_ anulación de Cap de WM**](wm-cap-abort.md) para abandonar la operación de captura actual.
+La operación de captura debe producir para usar este mensaje. Use el [**mensaje ABORT \_ \_ de WM CAP**](wm-cap-abort.md) para abandonar la operación de captura actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

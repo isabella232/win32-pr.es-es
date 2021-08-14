@@ -1,20 +1,20 @@
 ---
 title: Modificar el usuario no puede cambiar la contraseña (proveedor winNT)
-description: Obtenga información sobre cómo denegar a un usuario el permiso para cambiar una contraseña para el proveedor WinNT. Se puede conceder o denegar la capacidad de un usuario para cambiar su propia contraseña.
+description: Obtenga información sobre cómo denegar a un usuario el permiso para cambiar una contraseña para el proveedor winNT. Se puede conceder o denegar la capacidad de un usuario para cambiar su propia contraseña.
 ms.assetid: 071a817b-087e-49ee-af1a-6f190493cac0
 ms.tgt_platform: multiple
 keywords:
 - Modificar el usuario no puede cambiar la contraseña (proveedor winNT)
 - El usuario no puede cambiar la contraseña (proveedor winNT), modificar
-- ADSI del proveedor WinNT, ejemplos de administración de usuarios, usuario no puede cambiar contraseña, modificar
+- ADSI del proveedor WinNT, ejemplos de administración de usuarios,Usuario no puede cambiar contraseña, modificar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33510fa36285fa49a413b84d91e29f8d5a367622
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 6b510fb08172a178a454ee731110765844368ca78108047a7a5a738b78b6a196
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178969"
 ---
 # <a name="modifying-user-cannot-change-password-winnt-provider"></a>Modificar el usuario no puede cambiar la contraseña (proveedor winNT)
 

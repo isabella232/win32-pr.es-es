@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Operador ISA para consultas de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b4c063c99f50a57c8b22a5bbe7040aa3fe96ba5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b33c0bc4b78101a4b1e6a38997518fec543b9eb49e42b28cbb2500c321f56ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118318307"
 ---
 # <a name="isa-operator-for-data-queries"></a>Operador ISA para consultas de datos
 
@@ -25,11 +25,11 @@ SELECT * FROM Class WHERE EmbeddedProp ISA "ParentClass"
 
 
 
-El resultado incluye instancias de **clase** con objetos incrustados que se derivan de **ParentClass** en la propiedad **EmbeddedProp** . No todas las instancias del objeto de **clase** se derivan de **ParentClass**, pero el resultado devuelve los objetos incrustados que se derivan de **ParentClass**.
+El resultado incluye instancias de **Class que** tienen objetos incrustados que se derivan de **ParentClass** en la **propiedad EmbeddedProp.** No todas las instancias del **objeto Class** se derivan de **ParentClass**, pero el resultado devuelve los objetos incrustados que se derivan de **ParentClass**.
 
-Por ejemplo, en la siguiente consulta, **ClassA** incluye la propiedad **EmbeddedObj** débilmente tipada. La clase **ClassA** tiene diez instancias. Cinco de esas instancias tienen objetos incrustados con un tipo derivado de **ClassZ**. Los otros cinco tienen objetos incrustados de otros tipos.
+Por ejemplo, en la consulta siguiente, **ClassA** incluye la propiedad **EmbeddedObj** débilmente con tipo. La **clase ClassA** tiene diez instancias. Cinco de esas instancias tienen objetos incrustados con un tipo derivado de **ClassZ.** Los otros cinco tienen objetos incrustados de otros tipos.
 
-En el ejemplo siguiente se muestra la consulta que devuelve las cinco instancias, que incluyen los objetos que se derivan de **ClassZ**.
+En el ejemplo siguiente se muestra la consulta que devuelve las cinco instancias de , que incluyen los objetos derivados de **ClassZ**.
 
 
 ```sql

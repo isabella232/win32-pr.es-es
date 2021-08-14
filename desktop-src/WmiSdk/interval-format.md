@@ -1,20 +1,20 @@
 ---
-description: Define los intervalos de fecha y hora con un formato similar a la sintaxis de fecha y hora dividiendo la cadena en los campos de días, horas, minutos, segundos y microsegundos.
+description: Define intervalos de fecha y hora con un formato similar a la sintaxis de fecha y hora al dividir la cadena en los campos de días, horas, minutos, segundos y microsegundos.
 ms.assetid: 13a3ca74-e3e9-44d7-9254-e288eb70ae4c
 ms.tgt_platform: multiple
 title: Formato de intervalo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e10e13d5febbce22648ec76961269ab18b1c028a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30db455b6b39349b3da2f8328b22597d8b9c16c47387ba7f6b15d81e62ceb134
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118318541"
 ---
 # <a name="interval-format"></a>Formato de intervalo
 
-WMI define los intervalos de fecha y hora con un formato similar a la sintaxis de fecha y hora dividiendo la cadena en los campos de días, horas, minutos, segundos y microsegundos.
+WMI define intervalos de fecha y hora con un formato similar a la sintaxis de fecha y hora al dividir la cadena en los campos de días, horas, minutos, segundos y microsegundos.
 
 En el ejemplo siguiente se muestra el formato de un intervalo de fecha y hora.
 
@@ -22,25 +22,25 @@ En el ejemplo siguiente se muestra el formato de un intervalo de fecha y hora.
 ddddddddHHMMSS.mmmmmm:000
 ```
 
-En la tabla siguiente se muestran los campos del intervalo de fecha y hora.
+En la tabla siguiente se enumeran los campos del intervalo de fecha y hora.
 
 
 
 | Campo    | Descripción                                                                                                                                                                                                                                  |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| dddddddd | Ocho dígitos que representan un número de días (00000000 a 99999999).                                                                                                                                                                    |
+| dddddddd | Ocho dígitos que representan un número de días (de 00000000 a 99999999).                                                                                                                                                                    |
 | HH       | Hora de dos dígitos del día que usa el reloj de 24 horas (de 00 a 23).                                                                                                                                                                       |
 | MM       | Minuto de dos dígitos en la hora (de 00 a 59).                                                                                                                                                                                                |
 | SS       | Número de segundos de dos dígitos en el minuto (de 00 a 59).                                                                                                                                                                                   |
-| MMMMMM   | Número de seis dígitos de microsegundos en el segundo (000000 a 999999). No es necesario que la implementación admita la evaluación mediante este campo, pero este campo siempre debe estar presente para conservar la naturaleza de longitud fija de la cadena. |
+| Mmmmmm   | Número de microsegundos de seis dígitos en el segundo (de 000000 a 999999). La implementación no es necesaria para admitir la evaluación mediante este campo, pero este campo siempre debe estar presente para conservar la naturaleza de longitud fija de la cadena. |
 
 
 
  
 
-Los intervalos siempre tienen un ": 000" final como los cuatro últimos caracteres. Además, a diferencia de la fecha y la hora, no puede usar asteriscos para indicar campos no usados. Además, todas las propiedades de tipo [ \_ DateTime de CIM](cim-datetime.md) que representan intervalos deben marcarse con el calificador estándar de [subtipo](standard-wmi-qualifiers.md) , con el calificador establecido en "Interval".
+Los intervalos siempre tienen un ":000" final como los últimos cuatro caracteres. Además, a diferencia de la fecha y hora, no puede usar asteriscos para indicar campos no utilizados. Además, todas las propiedades de tipo [ \_ CIM DATETIME](cim-datetime.md) que representan intervalos deben marcarse con el calificador [estándar SubType,](standard-wmi-qualifiers.md) con el calificador establecido en "interval".
 
-La siguiente cadena representa un intervalo de 1 día, 12 horas, 0 minutos y 32 segundos.
+La cadena siguiente representa un intervalo de 1 día, 12 horas, 0 minutos y 32 segundos.
 
 ``` syntax
 00000001120032.000000:000
@@ -56,7 +56,7 @@ La siguiente cadena representa un intervalo de 1 día, 12 horas, 0 minutos y 32 
 [Acerca de WMI](about-wmi.md)
 </dt> <dt>
 
-[\_fecha y hora de CIM](cim-datetime.md)
+[CIM \_ DATETIME](cim-datetime.md)
 </dt> </dl>
 
  

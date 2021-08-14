@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método GetPreview.
 ms.assetid: 8251af14-68db-4e4a-a501-115e7bbd53cd
-title: IWICBitmapDecoder_GetPreview_Proxy función)
+title: IWICBitmapDecoder_GetPreview_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 0fc6808d94cdc1cdcdaf65e252107b939e12eeaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffcc09c7721cf56e0b0c799669475da61d8ae3720d98b650f02567fac2130381
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118207226"
 ---
-# <a name="iwicbitmapdecoder_getpreview_proxy-function"></a>IWICBitmapDecoder \_ GetPreview, \_ función de proxy
+# <a name="iwicbitmapdecoder_getpreview_proxy-function"></a>Función de \_ proxy GetPreview de IWICBitmapDecoder \_
 
-Función de proxy para el método [**GetPreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview) .
+Función de proxy para el [**método GetPreview.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT IWICBitmapDecoder_GetPreview_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) \** _
+Tipo: **[ **IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)\***
 
-Puntero a este objeto [_ *IWICBitmapDecoder* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) .
+Puntero a este [**objeto IWICBitmapDecoder.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 
 </dd> <dt>
 
-*ppIBitmapSource* \[ enuncia\]
+*ppIBitmapSource* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\*\***
 
-Un puntero que recibe un puntero al mapa de bits de vista previa si es compatible.
+Puntero que recibe un puntero al mapa de bits de vista previa si se admite.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Un puntero que recibe un puntero al mapa de bits de vista previa si es compatibl
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -71,11 +71,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

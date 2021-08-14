@@ -5,43 +5,43 @@ ms.assetid: f0100938-1702-4ef7-b20e-a0e8df224d18
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88c639b496a00f56a38a0f9f8e72b9d099e58c17
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 905dd9b5a250f9ab12397f851f79a8374c6847235acb34013972dea445f3622b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344224"
 ---
 # <a name="adding-an-event-source-to-a-collector-initiated-subscription"></a>Agregar un origen de eventos a una suscripción iniciada por el recopilador
 
-Para recibir un evento reenviado de una suscripción de eventos, puede crear una suscripción iniciada por el recopilador en el equipo local. Para obtener más información sobre cómo crear una suscripción iniciada por el recopilador, vea el ejemplo de código de C++ que se muestra en [creación de una suscripción del recopilador de eventos](creating-an-event-collector-subscription.md).
+Para recibir un evento reenviado de una suscripción de eventos, puede crear una suscripción iniciada por el recopilador en el equipo local. Para obtener más información sobre cómo crear una suscripción iniciada por el recopilador, vea el ejemplo de código de C++ que se muestra en [Creación de una suscripción del recopilador de eventos](creating-an-event-collector-subscription.md).
 
-Una vez creada una suscripción iniciada por el recopilador, puede Agregar orígenes de eventos a la suscripción. Debe agregar al menos un origen de eventos a una suscripción para recopilar eventos.
+Una vez creada una suscripción iniciada por el recopilador, puede agregar orígenes de eventos a la suscripción. Debe agregar al menos un origen de eventos a una suscripción para recopilar eventos.
 
 > [!Note]
 >
 > Puede usar este ejemplo de código para agregar un origen de eventos a una suscripción o puede escribir el siguiente comando en el símbolo del sistema:
 >
-> **wecutil SS** *SubscriptionName*  * */esa: * * * EventSourceAddress* **/AES/ese**
+> **wecutil ss** *SubscriptionName* **/esa:**_EventSourceAddress_ **/aes /ese**
 >
 > *EventSourceAddress* puede ser localhost para el equipo local o un nombre de dominio completo para un equipo remoto.
 
- 
+ 
 
-Para obtener más información sobre cómo agregar orígenes de eventos a una suscripción iniciada por el origen, consulte [configuración de una suscripción iniciada por un origen](setting-up-a-source-initiated-subscription.md).
+Para obtener más información sobre cómo agregar orígenes de eventos a una suscripción iniciada por el origen, vea [Configurar una suscripción iniciada por origen.](setting-up-a-source-initiated-subscription.md)
 
 Este ejemplo sigue una serie de pasos para agregar un origen de eventos a una suscripción iniciada por el recopilador.
 
 **Para agregar un origen de eventos a una suscripción iniciada por el recopilador**
 
-1.  Para abrir la suscripción existente, proporcione el nombre y los derechos de acceso de la suscripción como parámetros para la función [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obtener más información sobre los derechos de acceso, consulte [**constantes del recopilador de eventos de Windows**](windows-event-collector-constants.md).
-2.  Obtiene la matriz de orígenes de eventos de la suscripción mediante una llamada a la función [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) . Para obtener más información sobre las propiedades de suscripción que se pueden recuperar, consulte la enumeración de [**identificador de propiedad de suscripción de EC \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Agregue un nuevo origen de eventos a la matriz de orígenes de eventos de la suscripción mediante una llamada a la función [**EcInsertObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement) .
-4.  Establezca las propiedades de origen del evento llamando a la función [**EcSetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) . La propiedad **EcSubscriptionEventSourceAddress** se establece en una dirección para el equipo local (localhost) o en un nombre de dominio completo para un equipo remoto. Para obtener más información sobre las propiedades de origen de eventos que se pueden establecer, vea la enumeración ID. de **\_ propiedad de suscripción de \_ \_ EC** .
-5.  Guarde la suscripción mediante una llamada a la función [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-6.  Cierre la suscripción mediante una llamada a la función [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra la suscripción existente proporcionando el nombre de la suscripción y los derechos de acceso como parámetros para la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, vea Windows event collector constants (Constantes [**del recopilador de eventos).**](windows-event-collector-constants.md)
+2.  Obtenga la matriz de orígenes de eventos de la suscripción mediante una llamada a la [**función EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Para obtener más información sobre las propiedades de suscripción que se pueden recuperar, vea la [**\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+3.  Agregue un nuevo origen de eventos a la matriz de orígenes de eventos de la suscripción mediante una llamada a la [**función EcInsertObjectArrayElement.**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement)
+4.  Establezca las propiedades de origen del evento llamando a la [**función EcSetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) La **propiedad EcSubscriptionEventSourceAddress** se establece en una dirección para el equipo local (Localhost) o en un nombre de dominio completo para un equipo remoto. Para obtener más información sobre las propiedades de origen de eventos que se pueden establecer, vea la **\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID.**
+5.  Guarde la suscripción mediante una llamada a [**la función EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+6.  Cierre la suscripción mediante una llamada a la [**función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-En el ejemplo de código de C++ siguiente se muestra cómo agregar un origen de eventos a una suscripción iniciada por el recopilador:
+En el siguiente ejemplo de código de C++ se muestra cómo agregar un origen de eventos a una suscripción iniciada por el recopilador:
 
 
 ```C++
@@ -304,9 +304,9 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 [Creación de una suscripción del recopilador de eventos](creating-an-event-collector-subscription.md)
 </dt> <dt>
 
-[Referencia del recopilador de eventos de Windows](windows-event-collector-reference.md)
+[Windows Referencia del recopilador de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

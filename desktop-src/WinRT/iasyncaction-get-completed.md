@@ -1,7 +1,7 @@
 ---
 description: Obtiene el método al que se llama cuando se completa la acción asincrónica.
 ms.assetid: 5050BF84-F9E0-4B3E-9252-6C5C1060826E
-title: 'IAsyncAction:: get_Completed (método)'
+title: IAsyncAction::get_Completed método
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Windows.Foundation.idl
-ms.openlocfilehash: bc018912b2b4643cc4ef2f48cc76eb997a2627fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90e26947f0771490334ee731b25576759943c44cc47a9fda6681da9aa1f11fbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323447"
 ---
-# <a name="iasyncactionget_completed-method"></a>IAsyncAction:: get \_ completed (método)
+# <a name="iasyncactionget_completed-method"></a>IAsyncAction::get \_ Completed (método)
 
 Obtiene el método al que se llama cuando se completa la acción asincrónica.
 
@@ -39,12 +39,12 @@ HRESULT get_Completed(
 
 <dl> <dt>
 
-*controlador* \[ de enuncia\]
+*controlador* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **AsyncActionCompletedHandler**](asyncactioncompletedhandler.md)\*\***
 
-El método que controla la notificación de finalización.
+Método que controla la notificación de finalización.
 
 </dd> </dl>
 
@@ -52,21 +52,21 @@ El método que controla la notificación de finalización.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                    |
-| Encabezado<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Windows. Foundation.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

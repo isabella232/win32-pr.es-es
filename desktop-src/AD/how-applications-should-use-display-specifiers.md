@@ -1,35 +1,35 @@
 ---
-title: Cómo deben usar las aplicaciones los especificadores de presentación
-description: Para mostrar Dominio de Active Directory objetos de servicio, utilice especificadores de presentación para obtener los datos de presentación localizados de los objetos de clase y atributo.
+title: Cómo deben usar las aplicaciones los especificadores de visualización
+description: Para mostrar Dominio de Active Directory service, use especificadores de visualización para obtener datos de visualización localizados para objetos de clase y atributo.
 ms.assetid: 2ba62906-47ae-4aab-8cb1-a5734eae5984
 ms.tgt_platform: multiple
 keywords:
-- Cómo deben usar las aplicaciones los especificadores de presentación AD
-- especificadores de presentación AD, cómo las aplicaciones deben usar especificadores de presentación
+- Cómo las aplicaciones deben usar display Specifiers AD
+- display specifiers AD , how applications should use display specifiers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41f7045b03da282a9c64b216031e3da03a427268
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 12b2083b55a23ed3f0c1a82ba4524ba3f27445840da3d19812d26c7e05af92ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103797265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188264"
 ---
-# <a name="how-applications-should-use-display-specifiers"></a>Cómo deben usar las aplicaciones los especificadores de presentación
+# <a name="how-applications-should-use-display-specifiers"></a>Cómo deben usar las aplicaciones los especificadores de visualización
 
-Para mostrar Dominio de Active Directory objetos de servicio, utilice especificadores de presentación para obtener los datos de presentación localizados de los objetos de clase y atributo. Esto permite usar iconos y nombres para mostrar localizados y evitar la localización innecesaria de los datos para mostrar.
+Para mostrar Dominio de Active Directory service, use especificadores de visualización para obtener datos de visualización localizados para objetos de clase y atributo. Esto permite usar iconos y nombres para mostrar localizados y evita la localización innecesaria de los datos para mostrar.
 
-## <a name="display-names"></a>Nombres para mostrar
+## <a name="display-names"></a>Mostrar nombres
 
-Las propiedades **classDisplayName** y **attributeDisplayNames** de los objetos de especificador de presentación para la configuración regional adecuada deben usarse para obtener el texto para mostrar de los nombres de clase y atributo. No use las propiedades **CN**, **classDisplayName** o **LDAPDisplayName** de los objetos **ClassSchema** o **attributeSchema** para obtener etiquetas de texto de visualización porque estos valores no están localizados. Para obtener más información sobre cómo recuperar el texto localizado de un objeto de clase, vea el siguiente código de ejemplo.
+Las **propiedades classDisplayName** y **attributeDisplayNames** de los objetos especificadores para mostrar de la configuración regional adecuada deben usarse para obtener texto para mostrar para los nombres de clase y atributo. No use las propiedades **cn**, **classDisplayName** o **ldapDisplayName** de los objetos **classSchema** o **attributeSchema** para obtener etiquetas de texto para mostrar porque estos valores no están localizados. Para obtener más información sobre cómo recuperar texto localizado para un objeto de clase, vea el siguiente código de ejemplo.
 
 ## <a name="icons"></a>Iconos
 
-La propiedad **iconPath** de los objetos de especificador de presentación para la configuración regional adecuada debe usarse para obtener el icono que se va a mostrar para un objeto de clase. Para obtener más información, vea [iconos de clase](class-icons.md). Si no se especifica ningún icono localizado para un objeto de clase, se debe mostrar un icono predeterminado para el elemento.
+La **propiedad iconPath** de los objetos especificador de presentación para la configuración regional adecuada debe usarse para obtener el icono que se va a mostrar para un objeto de clase. Para obtener más información, vea [Iconos de clase](class-icons.md). Si no se especifica ningún icono localizado para un objeto de clase, se debe mostrar un icono predeterminado para el elemento.
 
 ## <a name="creating-new-objects"></a>Crear nuevos objetos
 
-Cuando sea posible, use los asistentes de creación de objetos adecuados para crear nuevos objetos. Para obtener más información, vea [invocación de los asistentes para creación desde la aplicación](invoking-creation-wizards-from-your-application.md).
+Cuando sea posible, use los asistentes de creación de objetos adecuados para crear nuevos objetos. Para obtener más información, [vea Invocar asistentes para creación desde la aplicación.](invoking-creation-wizards-from-your-application.md)
 
 
 En el ejemplo de código siguiente se muestra cómo obtener el texto para mostrar de una clase y un atributo de una clase.

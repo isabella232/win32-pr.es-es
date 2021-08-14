@@ -1,7 +1,7 @@
 ---
-description: 'En Windows 7, los dispositivos portátiles de Windows admiten los siguientes atributos para los eventos de un servicio de dispositivo. Estos atributos son devueltos por el método IPortableDeviceServiceCapabilities:: GetEventAttributes.'
+description: Para Windows 7, Windows Portable Devices admite los atributos siguientes para los eventos de un servicio de dispositivo. El método IPortableDeviceServiceCapabilities::GetEventAttributes devuelve estos atributos.
 ms.assetid: 2c71c3ec-842b-44f7-b127-5750883b33ba
-title: Atributos de evento (PortableDevice. h)
+title: Atributos de evento (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,25 +13,25 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 68a5964a4f64899d4aa116002b1feb14ce360498
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ee6fe335d5e3906a923dfe5c470142cdf36fb1e521c3498963e478369a9b251
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118193296"
 ---
-# <a name="event-attributes-portabledeviceh"></a>Atributos de evento (PortableDevice. h)
+# <a name="event-attributes-portabledeviceh"></a>Atributos de evento (PortableDevice.h)
 
-En Windows 7, los dispositivos portátiles de Windows admiten los siguientes atributos para los eventos de un servicio de dispositivo. Estos atributos son devueltos por el método [**IPortableDeviceServiceCapabilities:: GetEventAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-geteventattributes) .
+Para Windows 7, Windows Portable Devices admite los atributos siguientes para los eventos de un servicio de dispositivo. El método [**IPortableDeviceServiceCapabilities::GetEventAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-geteventattributes) devuelve estos atributos.
 
 
 
 
 | Atributo                             | VarType         | Descripción                                                                                                              |
 |---------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------|
-| **\_nombre del \_ atributo de evento WPD \_**       | **VT \_ LPWStr**  | Cadena que especifica el nombre descriptivo del script del evento. Los caracteres válidos son alfanuméricos a \[ -Za-z0-9 \] y ' \_ '. |
-| **\_Opciones del \_ atributo de evento WPD \_**    | **VT \_ desconocido** | [**IPortableDeviceValues**](iportabledevicevalues.md) que contiene las opciones de evento.                               |
-| **\_parámetros del \_ atributo de evento WPD \_** | **VT \_ desconocido** | [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) que contiene los parámetros de evento.              |
+| **NOMBRE DEL ATRIBUTO \_ DE \_ EVENTO \_ WPD**       | **VT \_ LPWSTR**  | Cadena que especifica el nombre descriptivo del script del evento. Los caracteres válidos son alfanuméricos \[ a-zA-Z0-9 \] y \_ ''. |
+| **OPCIONES DE ATRIBUTO \_ DE \_ EVENTO \_ WPD**    | **VT \_ UNKNOWN** | [**IPortableDeviceValues que**](iportabledevicevalues.md) contiene las opciones de evento.                               |
+| **PARÁMETROS DE ATRIBUTO \_ DE \_ EVENTO WPD \_** | **VT \_ UNKNOWN** | [**IPortableDeviceKeyCollection que**](iportabledevicekeycollection.md) contiene los parámetros del evento.              |
 
 
 
@@ -43,11 +43,11 @@ En Windows 7, los dispositivos portátiles de Windows admiten los siguientes atr
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TDN_NAVIGATED (commctrl. h)
-description: Enviado por un cuadro de diálogo de tarea cuando se ha producido la navegación. Este código de notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
+title: TDN_NAVIGATED de notificación (Commctrl.h)
+description: Enviado por un cuadro de diálogo de tarea cuando se ha producido la navegación. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
 ms.assetid: e7668ab3-3a11-4bf4-8cb4-067d3204fb3f
 keywords:
-- TDN_NAVIGATED controles de código de notificación de Windows
+- TDN_NAVIGATED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c9d8e9244889d7e55aad2b89f8ca4bb1c0bb1a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ee3daa29fa0f85db2dfb2a5991e0db9c9dba46938e69ad8d16153a97d400284
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166898"
 ---
-# <a name="tdn_navigated-notification-code"></a>TDN \_ código de notificación navegado
+# <a name="tdn_navigated-notification-code"></a>Código de notificación NAVIGATED de TDN \_
 
-Enviado por un cuadro de diálogo de tarea cuando se ha producido la navegación. Este código de notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) .
+Enviado por un cuadro de diálogo de tarea cuando se ha producido la navegación. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el [**método TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -61,11 +61,11 @@ Se omite el valor devuelto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

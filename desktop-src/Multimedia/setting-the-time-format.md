@@ -3,40 +3,40 @@ title: Establecer el formato de hora
 description: Establecer el formato de hora
 ms.assetid: c670d47e-30fc-4637-b468-b6a415605dca
 keywords:
-- MCI_SET mensaje de comando
+- MCI_SET de comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6bc48faa36fea49b0aba749476c998572ebf400
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 59eb5a9194f3f2598cd8f88fbefb3ea741f51eb9c25210deb6db69c54259e189
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118370894"
 ---
 # <a name="setting-the-time-format"></a>Establecer el formato de hora
 
-Use el mensaje del comando [**\_ set de MCI**](mci-set.md) junto con la estructura de [**parms de MCI \_ set \_**](mci-set-parms.md) para establecer el formato de hora para un dispositivo abierto. Establezca el miembro **dwTimeFormat** en una de las siguientes constantes.
+Use el [**mensaje de comando \_ MCI SET**](mci-set.md) junto con la estructura [**\_ MCI SET \_ PARMS**](mci-set-parms.md) para establecer el formato de hora de un dispositivo abierto. Establezca el **miembro dwTimeFormat** en una de las siguientes constantes.
 
 
 
 | Constante                   | Formato de hora                                          |
 |----------------------------|------------------------------------------------------|
-| \_bytes de formato de MCI \_         | Bytes (en archivos con formato PCM modulado de código \[ \] ) |
-| formato MCI en \_ \_ milisegundos  | Milisegundos                                         |
-| \_formato MCI \_ MSF           | Minuto/segundo/marco                                  |
-| \_ejemplos de formato de MCI \_       | Ejemplos                                              |
-| \_Formato MCI \_ SMPTE \_ 24     | SMPTE, 24 fotogramas                                      |
-| \_Formato MCI \_ SMPTE \_ 25     | SMPTE, 25 fotograma                                      |
-| \_Formato MCI \_ SMPTE \_ 30     | SMPTE, 30 fotogramas                                      |
-| \_Formato MCI \_ SMPTE \_ 30DROP | SMPTE, 30 fotogramas de colocación                                 |
-| \_formato MCI \_ TMSF          | Pista/minuto/segundo/marco                            |
-| \_ \_ formato \_ SONGPTR de MCI SEQ  | Puntero de canción MIDI                                    |
+| BYTES DE FORMATO MCI \_ \_         | Bytes (en archivos de formato PCM modular de código de \[ \] pulso) |
+| MILISEGUNDOS DE FORMATO MCI \_ \_  | Milisegundos                                         |
+| MCI \_ FORMAT \_ MSF           | Minuto/segundo/fotograma                                  |
+| EJEMPLOS DE FORMATO \_ MCI \_       | Ejemplos                                              |
+| MCI \_ FORMAT \_ SMPTE \_ 24     | SMPTE, 24 fotogramas                                      |
+| FORMATO MCI \_ \_ SMPTE \_ 25     | SMPTE, 25 fotogramas                                      |
+| FORMATO MCI \_ \_ SMPTE \_ 30     | SMPTE, 30 fotogramas                                      |
+| FORMATO MCI \_ \_ SMPTE \_ 30DROP | SMPTE, 30 fotogramas                                 |
+| \_TMSF CON \_ FORMATO MCI          | Seguimiento/minuto/segundo/fotograma                            |
+| FORMATO MCI \_ SEQ \_ \_ SONGPTR  | Puntero de canción DE MES                                    |
 
 
 
- 
+ 
 
-En el ejemplo siguiente se establece el formato de hora en milisegundos en el dispositivo especificado por la variable wDeviceID con la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .
+En el ejemplo siguiente se establece el formato de hora en milisegundos en el dispositivo especificado por la variable wDeviceID mediante la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++
@@ -61,6 +61,6 @@ else
 
 
 
- 
+ 
 
- 
+ 

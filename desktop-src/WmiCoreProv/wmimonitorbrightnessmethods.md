@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 36fe823703d5d5e4f1f6008d02c600828fe2b53f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 255cfa75ab892739ce211432ef81d32da4e1cbb3205e5467045e2d81f156d102
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118321367"
 ---
 # <a name="wmimonitorbrightnessmethods-class"></a>Clase WmiMonitorBrightnessMethods
 
-La clase WMI **WmiMonitorBrightnessMethods** contiene métodos que administran el brillo del monitor.
+La **clase WMI WmiMonitorBrightnessMethods** contiene métodos que administran el brillo del monitor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,20 +38,20 @@ class WmiMonitorBrightnessMethods
 
 ## <a name="members"></a>Miembros
 
-La clase **WmiMonitorBrightnessMethods** tiene estos tipos de miembros:
+La **clase WmiMonitorBrightnessMethods** tiene estos tipos de miembros:
 
 -   [Métodos](#wmimonitorbrightnessmethods-class)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **WmiMonitorBrightnessMethods** tiene estos métodos.
+La **clase WmiMonitorBrightnessMethods** tiene estos métodos.
 
 
 
 | Método                                                                                                         | Descripción                                                    |
 |:---------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------|
-| [**WmiRevertToPolicyBrightness**](wmireverttopolicybrightness-method-in-class-wmimonitorbrightnessmethods.md) | Vuelve a establecer el brillo en la configuración de directiva.<br/>     |
+| [**WmiRevertToPolicyBrightness**](wmireverttopolicybrightness-method-in-class-wmimonitorbrightnessmethods.md) | Establece el brillo de nuevo en la configuración de directiva.<br/>     |
 | [**WmiSetALSBrightness**](wmisetalsbrightness-method-in-class-wmimonitorbrightnessmethods.md)                 | Establece el valor de brillo del sensor de luz ambiente.<br/>     |
 | [**WmiSetALSBrightnessState**](wmisetalsbrightnessstate-method-in-class-wmimonitorbrightnessmethods.md)       | Controla el estado de brillo del sensor de luz ambiente.<br/> |
 | [**WmiSetBrightness**](wmisetbrightness-method-in-class-wmimonitorbrightnessmethods.md)                       | Establece el brillo del monitor.<br/>                        |
@@ -62,7 +62,7 @@ La clase **WmiMonitorBrightnessMethods** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **WmiMonitorBrightnessMethods** tiene estas propiedades.
+La **clase WmiMonitorBrightnessMethods** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -88,7 +88,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Nombre de la instancia de monitor específica.
@@ -99,17 +99,17 @@ Nombre de la instancia de monitor específica.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

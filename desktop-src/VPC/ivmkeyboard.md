@@ -1,10 +1,10 @@
 ---
-title: Interfaz IVMKeyboard (VPCCOMInterfaces. h)
-description: Controla el dispositivo de teclado dentro de una máquina virtual. El IVMKeyboard de una máquina virtual se puede recuperar mediante la propiedad de teclado IVMVirtualMachine.
+title: Interfaz IVMKeyboard (VPCCOMInterfaces.h)
+description: Controla el dispositivo de teclado dentro de una máquina virtual. El IVMKeyboard de una máquina virtual se puede recuperar mediante la propiedad IVMVirtualMachine Keyboard.
 ms.assetid: a64a23b6-3937-40c6-af9d-fb341c04fbf7
 keywords:
-- Interfaz IVMKeyboard Virtual PC
-- Interfaz IVMKeyboard Virtual PC, descripción
+- IVMKeyboard interface Virtual PC
+- IVMKeyboard interface Virtual PC , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,40 +15,40 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fce2ddddd00de509278760a22fe3ab464f27c1c8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7284c4e2bb164cd53c8a34357c881ed096f342ae2c2230422985fac4c1fdae9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344803"
 ---
-# <a name="ivmkeyboard-interface"></a>Interfaz IVMKeyboard
+# <a name="ivmkeyboard-interface"></a>IVMKeyboard (interfaz)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Controla el dispositivo de teclado dentro de una máquina virtual. El **IVMKeyboard** de una máquina virtual se puede recuperar mediante la propiedad [**IVMVirtualMachine:: Keyboard**](ivmvirtualmachine-keyboard.md) .
+Controla el dispositivo de teclado dentro de una máquina virtual. El **IVMKeyboard** de una máquina virtual se puede recuperar mediante la [**propiedad IVMVirtualMachine::Keyboard.**](ivmvirtualmachine-keyboard.md)
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IVMKeyboard** hereda de la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . **IVMKeyboard** también tiene estos tipos de miembros:
+La **interfaz IVMKeyboard** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **IVMKeyboard** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IVMKeyboard** tiene estos métodos.
+La **interfaz IVMKeyboard** tiene estos métodos.
 
 
 
 | Método                                                       | Descripción                                                                   |
 |:-------------------------------------------------------------|:------------------------------------------------------------------------------|
-| [**IsPressed**](ivmkeyboard-ispressed.md)                   | Determina si la tecla especificada está presionada.<br/>                      |
-| [**PressAndReleaseKey**](ivmkeyboard-pressandreleasekey.md) | Simula que se presiona una tecla y luego se libera.<br/>              |
-| [**PressKey**](ivmkeyboard-presskey.md)                     | Simula que se presiona una tecla.<br/>                                |
+| [**IsPressed**](ivmkeyboard-ispressed.md)                   | Determina si la clave especificada está abajo.<br/>                      |
+| [**PressAndReleaseKey**](ivmkeyboard-pressandreleasekey.md) | Simula una tecla presionada y luego liberada.<br/>              |
+| [**PressKey**](ivmkeyboard-presskey.md)                     | Simula una tecla presionada.<br/>                                |
 | [**ReleaseKey**](ivmkeyboard-releasekey.md)                 | Simula una clave que se va a liberar.<br/>                                    |
 | [**TypeAsciiText**](ivmkeyboard-typeasciitext.md)           | Simula una serie de claves ASCII que se escriben en el invitado.<br/>       |
-| [**TypeKeySequence**](ivmkeyboard-typekeysequence.md)       | Simula una lista delimitada por comas de las claves que se escriben en el invitado.<br/> |
+| [**TypeKeySequence**](ivmkeyboard-typekeysequence.md)       | Simula una lista delimitada por comas de claves que se escriben en el invitado.<br/> |
 
 
 
@@ -56,7 +56,7 @@ La interfaz **IVMKeyboard** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IVMKeyboard** tiene estas propiedades.
+La **interfaz IVMKeyboard** tiene estas propiedades.
 
 
 
@@ -68,32 +68,32 @@ La interfaz **IVMKeyboard** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las claves se pueden escribir en la máquina virtual de varias maneras. Para escribir una secuencia ASCII normal de caracteres, utilice el método [**TypeAsciiText**](ivmkeyboard-typeasciitext.md) . Si se requiere una mayor flexibilidad, **IVMKeyboard** tiene varios métodos que están diseñados para usarse con los códigos de tecla de la lista siguiente. El método [**TypeKeySequence**](ivmkeyboard-typekeysequence.md) puede aceptar una cadena delimitada por comas de códigos de tecla, que se presionarán y liberarán, en orden, dentro de la máquina virtual. Además de estos códigos de tecla, se pueden usar las palabras clave hacia arriba y hacia abajo para forzar que una clave se presione solamente o se libere. Las palabras clave UP y DOWN solo se aplican al código de tecla que sigue directamente a la palabra clave.
+Las claves se pueden escribir en la máquina virtual de varias maneras. Para escribir una secuencia ASCII normal de caracteres, use el [**método TypeAsciiText.**](ivmkeyboard-typeasciitext.md) Si se requiere mayor flexibilidad, **IVMKeyboard** tiene varios métodos diseñados para usarse con los códigos de clave de la lista siguiente. El [**método TypeKeySequence**](ivmkeyboard-typekeysequence.md) puede aceptar una cadena delimitada por comas de códigos de clave, que se presionarán y liberarán, en orden, dentro de la máquina virtual. Además de estos códigos de clave, las palabras clave UP y DOWN se pueden usar para forzar que una tecla solo se presione o solo se libera. Las palabras clave UP y DOWN solo se aplican al código de clave directamente después de la palabra clave .
 
-Para evitar que varios scripts, aplicaciones o usuarios intenten acceder simultáneamente al mismo dispositivo de teclado, establezca la propiedad [**HasExclusiveAccess**](ivmkeyboard-hasexclusiveaccess.md) en **true**. Si un proceso adquiere acceso exclusivo, cualquier intento por parte de otros procesos para enviar entradas al dispositivo de teclado se omitirá hasta que se libere el acceso exclusivo.
+Para evitar que varios scripts, aplicaciones o usuarios intenten acceder simultáneamente al mismo dispositivo de teclado, establezca la propiedad [**HasExclusiveAccess**](ivmkeyboard-hasexclusiveaccess.md) en **TRUE.** Si un proceso adquiere acceso exclusivo, los intentos de otros procesos de enviar entradas al dispositivo de teclado se omitirán hasta que se haya liberado el acceso exclusivo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMKeyboard se define como 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMKeyboard se define como \_ 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Interfaces de Windows Virtual PC](virtual-pc-interfaces.md)
+[Windows Virtual PC Interfaces](virtual-pc-interfaces.md)
 </dt> <dt>
 
 [Secuencias de claves](key-sequences.md)

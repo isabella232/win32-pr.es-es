@@ -1,11 +1,11 @@
 ---
-title: Controls. fastForward (método)
-description: El método fastForward inicia la reproducción rápida del elemento multimedia en la dirección de avance. | Controls. fastForward (método)
+title: Método Controls.fastForward
+description: El método fastForward inicia el juego rápido del elemento multimedia en la dirección hacia delante. | Método Controls.fastForward
 ms.assetid: 69cee803-f76b-4a8c-a2c2-1870665afaf9
 keywords:
-- método fastForward de Windows Media Player
-- método fastForward Windows Media Player, clase Controls
-- Clase Controls Windows Media Player, método fastForward
+- Método fastForward Reproductor de Windows Media
+- Método fastForward Reproductor de Windows Media , Clase Controls
+- Controla la clase Reproductor de Windows Media método , fastForward
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20d033b8b025955e57a9c3ebed00a6d7a92a666e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8b35c2a31c26259a12638d09c968b90ea42f93c692bf4c24af9dc987a6df3bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118341821"
 ---
-# <a name="controlsfastforward-method"></a>Controls. fastForward (método)
+# <a name="controlsfastforward-method"></a>Método Controls.fastForward
 
-El método **fastForward** inicia la reproducción rápida del elemento multimedia en la dirección de avance.
+El **método fastForward** inicia el juego rápido del elemento multimedia en la dirección hacia delante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,15 +44,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **fastForward** vuelve a reproducir el clip cinco veces la velocidad normal. Al invocar **fastForward** se cambia la *configuración*. propiedad **Rate** en 5,0. Si la **velocidad** se cambia posteriormente, o si se llama a **Play** o **Stop** , Windows Media Player dejará de reenviarse rápidamente.
+El **método fastForward** reproduce el clip a una velocidad cinco veces mayor que la normal. La invocación **de fastForward** cambia el *Configuración*. **propiedad** rate a 5,0. Si **posteriormente** se cambia la velocidad, o si se llama a **play** o **stop,** Reproductor de Windows Media el reenvío rápido.
 
-El método **fastForward** no funciona para las difusiones en vivo y determinados tipos de medios. Para determinar si puede avanzar rápidamente en un clip, llame a **isavailable**("Fastforward").
+El **método fastForward** no funciona para difusiones en directo y determinados tipos de medios. Para determinar si puede avanzar rápidamente en un clip, llame a **isAvailable**("FastForward").
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento de botón HTML que usa **fastForward** para iniciar la reproducción rápida del elemento multimedia. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **fastForward** para iniciar la reproducción rápida del elemento multimedia. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -73,30 +73,30 @@ En el ejemplo siguiente se crea un elemento de botón HTML que usa **fastForward
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Controls (objeto)**](controls-object.md)
+[**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Controls. isAvailable**](controls-isavailable.md)
+[**Controls.isAvailable**](controls-isavailable.md)
 </dt> <dt>
 
-[**Controls. Play**](controls-play.md)
+[**Controls.play**](controls-play.md)
 </dt> <dt>
 
-[**Controls. STOP**](controls-stop.md)
+[**Controls.stop**](controls-stop.md)
 </dt> <dt>
 
-[**Settings. rate**](settings-rate.md)
+[**Configuración.rate**](settings-rate.md)
 </dt> </dl>
 
  

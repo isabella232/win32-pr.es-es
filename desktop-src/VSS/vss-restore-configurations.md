@@ -1,36 +1,36 @@
 ---
-description: La restauración de archivos en un sistema en ejecución puede ser problemática. Es importante que las aplicaciones en ejecución (escritores) indiquen qué hacer cuando surjan dificultades durante las restauraciones, por ejemplo, si el archivo que se está restaurando está actualmente en uso.
+description: La restauración de archivos en un sistema en ejecución puede ser problemática. Es importante que las aplicaciones en ejecución (escritores) indiquen qué hacer cuando surgen dificultades durante las restauraciones, por ejemplo, si el archivo que se está restaurando está actualmente en uso.
 ms.assetid: 2cb963a8-7077-4419-96d8-cba0fd011e4f
 title: Configuraciones de restauración de VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f13acfc59f250a859e9c62f2df2e1b1b982608ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f48b3486128c6a91f601a89d697a4db9d8ab27fe9d3ac4cbef28dc870928d37d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344217"
 ---
 # <a name="vss-restore-configurations"></a>Configuraciones de restauración de VSS
 
-La restauración de archivos en un sistema en ejecución puede ser problemática. Es importante que las aplicaciones en ejecución (escritores) indiquen qué hacer cuando surjan dificultades durante las restauraciones, por ejemplo, si el archivo que se está restaurando está actualmente en uso.
+La restauración de archivos en un sistema en ejecución puede ser problemática. Es importante que las aplicaciones en ejecución (escritores) indiquen qué hacer cuando surgen dificultades durante las restauraciones, por ejemplo, si el archivo que se está restaurando está actualmente en uso.
 
-En VSS, los escritores tienen dos maneras complementarias de administrar restauraciones:[*métodos de restauración*](vssgloss-r.md) y destinos de [*restauración*](vssgloss-r.md).
+En VSS, los escritores tienen dos formas complementarias de administrar restauraciones: métodos [*de*](vssgloss-r.md) restauración y destinos [*de restauración.*](vssgloss-r.md)
 
-Además, los solicitantes pueden optar por restaurar archivos en ubicaciones previamente no especificadas y notificar a los escritores (consulte [**IVssBackupComponents:: AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget)).
+Además, los solicitantes pueden elegir restaurar archivos en ubicaciones no especificadas previamente y notificar a los escritores (vea [**IVssBackupComponents::AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget)).
 
-El método restore (también llama al destino de restauración original) se especifica mediante un escritor en el momento de la copia de seguridad y establece una definición para todo el escritor del método que se va a usar para restaurar todos sus componentes en el futuro. Todos los archivos y componentes administrados por un escritor comparten el mismo método de restauración.
+Un escritor especifica el método de restauración (también llamado destino de restauración original) en un momento de copia de seguridad y establece una definición de todo el escritor del método que se usará para restaurar todos sus componentes en el futuro. Todos los archivos y componentes administrados por un escritor comparten el mismo método de restauración.
 
-Los destinos de restauración permiten a los escritores cambiar el modo en que se restaurarán los componentes específicos en el momento de la restauración. A diferencia de los métodos de restauración, los destinos de restauración se definen para un conjunto de componentes.
+Los destinos de restauración permiten a los escritores cambiar cómo se van a restaurar componentes específicos en el momento de la restauración. A diferencia de los métodos de restauración, los destinos de restauración se definen para un conjunto de componentes.
 
-En los temas que se enumeran a continuación se muestra una explicación detallada del uso de los métodos de restauración y los destinos de restauración:
+Encontrará una explicación detallada del uso de los métodos de restauración y los destinos de restauración en los temas que se enumeran a continuación:
 
 -   [Estado de restauración de VSS](vss-restore-state.md)
 -   [Definición de los métodos de restauración de VSS](setting-vss-restore-methods.md)
--   [Establecimiento de destinos de restauración de VSS](setting-vss-restore-targets.md)
--   [Establecer opciones de restauración de VSS](setting-vss-restore-options.md)
+-   [Establecer destinos de restauración de VSS](setting-vss-restore-targets.md)
+-   [Establecer las opciones de restauración de VSS](setting-vss-restore-options.md)
 
-(Para obtener información sobre las restauraciones que no usan estos mecanismos, vea [restauraciones sin participación del escritor](restores-without-writer-participation.md)).
+(Para obtener información sobre las restauraciones que no usan estos mecanismos, vea [Restauraciones sin participación del escritor).](restores-without-writer-participation.md)
 
  
 

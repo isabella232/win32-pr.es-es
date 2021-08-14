@@ -1,9 +1,9 @@
 ---
 title: BUTTONGROUP.showBackground
-description: El atributo showBackground especifica o recupera un valor que indica si el BUTTONGROUP muestra solo los botones o muestra el mapa de bits completo especificado en el atributo de imagen.
+description: El atributo showBackground especifica o recupera un valor que indica si BUTTONGROUP muestra solo los botones o muestra el mapa de bits completo especificado en el atributo image.
 ms.assetid: 5c3fc873-937c-4dad-ac18-e7a37004ee1e
 keywords:
-- BUTTONGROUP. showBackground Windows Media Player
+- ButtonGROUP.showBackground Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31cc87260d4b0fca74d6063c757e6c3dae0db850
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb95b707fa7e14b00e86c5a65949ff9fba3ce3db32745116fa65ca4c53ac1998
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342678"
 ---
 # <a name="buttongroupshowbackground"></a>BUTTONGROUP.showBackground
 
-El atributo **showBackground** especifica o recupera un valor que indica si el **BUTTONGROUP** muestra solo los botones o muestra el mapa de bits completo especificado en el atributo de **imagen** .
+El **atributo showBackground** especifica o recupera un valor que indica si **BUTTONGROUP** muestra solo los botones o muestra el mapa de bits completo especificado en el **atributo image.**
 
 ``` syntax
         elementID.showBackground
@@ -29,24 +29,24 @@ El atributo **showBackground** especifica o recupera un valor que indica si el *
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                                                                                |
+| Valor | Descripción                                                                                |
 |-------|--------------------------------------------------------------------------------------------|
-| true  | Se muestran los botones y el área no ocupada por los botones se dibuja desde el mapa de bits de la imagen. |
+| true  | Se muestran los botones y el área no ocupada por los botones se dibuja desde el mapa de bits Imagen. |
 | false | Predeterminada. Solo se muestran los botones.                                                   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando **showBackground** es true, toda la **imagen** principal será visible.
+Cuando **showBackground** es true, toda la imagen **principal** estará visible.
 
-Cuando **showBackground** es false, solo se representarán las áreas correspondientes a los colores **mappingImage** asignados. En otras palabras, solo estarán visibles los **BUTTONELEMENTs** con sus **mappingColor** asignados.
+Cuando **showBackground** es false, solo se representarán las áreas correspondientes a los colores **mappingImage** asignados. En otras palabras, solo estarán visibles **buttonelements** con su **mappingColor** asignado.
 
 Si se especifica un valor no válido, se mantiene el estado anterior.
 
@@ -54,23 +54,23 @@ Si se especifica un valor no válido, se mantiene el estado anterior.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento BUTTONGROUP**](buttongroup-element.md)
 </dt> <dt>
 
-[**BUTTONELEMENT. mappingColor**](buttonelement-mappingcolor.md)
+[**BUTTONELEMENT.mappingColor**](buttonelement-mappingcolor.md)
 </dt> <dt>
 
-[**BUTTONGROUP. Image**](buttongroup-image.md)
+[**BUTTONGROUP.image**](buttongroup-image.md)
 </dt> <dt>
 
 [**BUTTONGROUP.mappingImage**](buttongroup-mappingimage.md)

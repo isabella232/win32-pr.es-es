@@ -1,20 +1,20 @@
 ---
-title: Cuadro de diálogo Selector de objetos interfaces
-description: La interfaz siguiente se utiliza con los cuadros de diálogo del selector de objetos.
+title: Interfaces del cuadro de diálogo Selector de objetos
+description: La siguiente interfaz se usa con los cuadros de diálogo del selector de objetos.
 ms.assetid: 99bd1cfe-34e8-4a76-b8a4-158246ebcea9
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4045146e41f4c9ce5a46df8a1846b9ca3c64f8ed
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eed02e201cad0ef650009be39786bfbf8d1e5dc278fcd71d29d6e635d8df0842
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118185505"
 ---
-# <a name="object-picker-dialog-box-interfaces"></a>Cuadro de diálogo Selector de objetos interfaces
+# <a name="object-picker-dialog-box-interfaces"></a>Interfaces del cuadro de diálogo Selector de objetos
 
-La interfaz siguiente se usa con los cuadros de diálogo del selector de objetos:
+La siguiente interfaz se usa con los cuadros de diálogo del selector de objetos:
 
 -   [**IDsObjectPicker**](/windows/desktop/api/Objsel/nn-objsel-idsobjectpicker)
 -   [**IDsObjectPickerCredentials**](/windows/desktop/api/Objsel/nn-objsel-idsobjectpickercredentials)
@@ -26,9 +26,9 @@ La interfaz siguiente se usa con los cuadros de diálogo del selector de objetos
 [Selector de objetos de directorio](directory-object-picker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

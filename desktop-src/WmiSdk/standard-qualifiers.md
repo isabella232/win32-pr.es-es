@@ -13,43 +13,43 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 710e93e53f9e414a44dc14ebafea426f5d7f9efd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67877cfc07a247d6b5e3309270d145bc64fbb814416fa4288c6e85ff2ad2e986
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118315141"
 ---
 # <a name="standard-qualifiers"></a>Calificadores estándar
 
-Todas las implementaciones compatibles con CIM deben controlar un conjunto estándar de calificadores. Cualquier objeto específico no tiene todos los calificadores enumerados. Normalmente, las clases de extensión proporcionan calificadores adicionales para facilitar el aprovisionamiento de instancias de clase y otras operaciones en la clase.
+Todas las implementaciones compatibles con CIM deben controlar un conjunto estándar de calificadores. Cualquier objeto específico no tiene todos los calificadores enumerados. Normalmente, las clases de extensión ofrecen calificadores adicionales para facilitar el aprovisionamiento de instancias de clase y otras operaciones en la clase.
 
-Es responsabilidad del proveedor aplicar los calificadores. WMI no aplica calificadores, pero solo los utiliza para informar al usuario sobre cómo se usa la propiedad.
+Es responsabilidad del proveedor aplicar los calificadores. WMI no aplica calificadores, pero solo los usa para informar al usuario sobre cómo se usa la propiedad .
 
 > [!Note]  
-> WMI es compatible con la especificación CIM 2,5.
+> WMI es compatible con la especificación CIM 2.5.
 
  
 
 Los calificadores tienen las siguientes limitaciones:
 
 -   No todos los calificadores estándar se pueden usar juntos.
--   No todos los calificadores se pueden aplicar a todas las construcciones, como Association o Reference. Estas limitaciones se identifican en la lista se aplica a.
--   Para una construcción determinada, como Association o Reference, el uso de los calificadores legales se puede restringir aún más porque algunos calificadores son mutuamente excluyentes, el uso de un calificador puede implicar algunas restricciones en el valor de otro, etc. Estas reglas de uso están documentadas.
--   Los calificadores válidos son heredados por entidades como propiedades, métodos, instancias o subclases únicamente, no por asociaciones ni referencias. Por ejemplo, las referencias no heredan el calificador **MaxLen** que se aplica a las propiedades.
+-   No todos los calificadores se pueden aplicar a todas las construcciones, como la asociación o la referencia. Estas limitaciones se identifican en la lista Se aplica a.
+-   Para una construcción determinada, como la asociación o referencia, el uso de los calificadores legales se puede restringir aún más porque algunos calificadores son mutuamente excluyentes, el uso de un calificador puede implicar algunas restricciones en el valor de otro, y así sucesivamente. Estas reglas de uso están documentadas.
+-   Las entidades como propiedades, métodos, instancias o subclases solo heredan los calificadores legales, no las asociaciones o referencias. Por ejemplo, las referencias no heredan el calificador **MaxLen** que se aplica a las propiedades.
 
 A continuación se enumeran los calificadores estándar de WMI.
 
 <dt>
 
-<span id="Abstract"></span><span id="abstract"></span><span id="ABSTRACT"></span>**Descripción**
+<span id="Abstract"></span><span id="abstract"></span><span id="ABSTRACT"></span>**Abstracto**
 </dt> <dd>
 
 Tipo de datos: **booleano**
 
-Se aplica a: clases, asociaciones, indicaciones
+Se aplica a: clases, asociaciones e indicaciones
 
-Indica si la clase es abstracta y solo sirve como base para las nuevas clases. El valor predeterminado es **false**. No se pueden crear instancias de clases abstractas. La ausencia de este calificador indica que la clase no es abstracta; por lo tanto, este calificador es necesario para todas las clases abstractas.
+Indica si la clase es abstracta y solo sirve como base para las clases nuevas. El valor predeterminado es **FALSE.** No se pueden crear instancias de clases abstractas. La ausencia de este calificador indica que la clase no es abstracta; por lo tanto, este calificador es necesario para todas las clases abstractas.
 
 </dd> <dt>
 
@@ -60,20 +60,20 @@ Tipo de datos: **booleano**
 
 Se aplica a: referencias
 
-Indica si la referencia es el componente primario de una asociación de agregación. El valor predeterminado es **false**.
+Indica si la referencia es el componente primario de una asociación de agregación. El valor predeterminado es **FALSE.**
 
-Uso: los **calificadores de agregación y** **agregado** se usan juntos la   **agregación** califica la asociación y **Aggregate** especifica la referencia primaria.
+Uso: los  **calificadores Agregación** y Agregado se usan juntos **Agregación** califica la asociación y **Agregado** especifica la referencia primaria.
 
 </dd> <dt>
 
-<span id="Aggregation"></span><span id="aggregation"></span><span id="AGGREGATION"></span>**Concentrado**
+<span id="Aggregation"></span><span id="aggregation"></span><span id="AGGREGATION"></span>**Agregación**
 </dt> <dd>
 
 Tipo de datos: **booleano**
 
 Se aplica a: asociaciones
 
-Indica si la asociación es una agregación. El valor predeterminado es **false**. Se utiliza con **Aggregate**. Este calificador es necesario para todas las asociaciones de agregación.
+Indica si la asociación es una agregación. El valor predeterminado es **FALSE.** Se usa con **agregado**. Este calificador es necesario para todas las asociaciones de agregación.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo de datos: **cadena**
 
 Se aplica a: propiedades, referencias, métodos
 
-Nombre alternativo para una propiedad o un método en el esquema. El valor predeterminado es **null**.
+Nombre alternativo para una propiedad o método en el esquema. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
@@ -99,24 +99,24 @@ Tipo de la matriz calificada.
 
 Los valores válidos son:
 
--   bolsa (valor predeterminado)
+-   bag (valor predeterminado)
 -   indizadas
 -   ordered
 
-Uso: aplique este tipo de calificador solo a las propiedades y los parámetros que son matrices (definidas mediante la sintaxis de paréntesis).
+Uso: aplique este tipo de calificador solo a las propiedades y parámetros que son matrices (definidas mediante la sintaxis de corchetes).
 
 </dd> <dt>
 
-<span id="BitMap"></span><span id="bitmap"></span><span id="BITMAP"></span>**MyBitmap**
+<span id="BitMap"></span><span id="bitmap"></span><span id="BITMAP"></span>**Bits**
 </dt> <dd>
 
 Tipo de datos: **matriz de cadenas**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Asignación de posiciones de bits significativas en las que cada posición significativa puede ser "ON" u "OFF". Cada bit "ON" se asigna a un valor correspondiente en la matriz **BitValues** . Al tener varios bits "ON", se indican varios valores simultáneos en la matriz **BitValues** . El valor predeterminado es **null**.
+Mapa de posiciones de bits significativas donde cada posición significativa puede ser "on" o "off". Cada bit "on" se asigna a un valor correspondiente en la **matriz BitValues.** Al tener varios bits "on", se indican varios valores simultáneos en **la matriz BitValues.** El valor predeterminado es **NULL.**
 
-Para obtener más información, consulte [Bitmap y BitValues](bitmap-and-bitvalues.md).
+Para obtener más información, [vea BitMap y BitValues.](bitmap-and-bitvalues.md)
 
 </dd> <dt>
 
@@ -127,9 +127,9 @@ Tipo de datos: **matriz de cadenas**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Traducción de un valor de posición de bits en una **cadena** asociada. El valor predeterminado es **null**.
+Traducción de un valor de posición de bits en una cadena **asociada.** El valor predeterminado es **NULL.**
 
-Para obtener más información, consulte [Bitmap y BitValues](bitmap-and-bitvalues.md).
+Para obtener más información, [vea BitMap y BitValues.](bitmap-and-bitvalues.md)
 
 </dd> <dt>
 
@@ -140,9 +140,9 @@ Tipo de datos: **booleano**
 
 Se aplica a: métodos
 
-Indica si el método crea instancias de. Estos métodos no están restringidos a actuar en una sola instancia o en una sola clase. Por ejemplo, un constructor puede crear instancias de asociación, así como instancias de la clase que define el constructor.
+Indica si el método crea instancias. Estos métodos no están restringidos a actuar en una sola instancia o en una sola clase. Por ejemplo, un constructor puede crear instancias de asociación, así como instancias de la clase que define el constructor.
 
-El calificador de **constructor** está pensado únicamente para información y no se espera que lo actúe el administrador de objetos. El administrador de objetos no tiene que llamar a métodos de constructor cuando se crea un objeto. Además, cuando se llama a un constructor, el administrador de objetos no tiene que invocar ningún método de constructor definido para cualquier clase primaria de la clase original. El valor predeterminado es **false**.
+El **calificador** Constructor solo está pensado para obtener información y no se espera que el administrador de objetos actúe sobre él. El administrador de objetos no tiene que llamar a métodos de constructor cuando se crea un objeto. Además, cuando se llama a un constructor, el administrador de objetos no tiene que invocar ningún método de constructor definido para ninguna clase primaria de la clase original. El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
@@ -153,9 +153,9 @@ Tipo de datos: **cadena**
 
 Se aplica a: clases
 
-Nombre del método por el que se crean las instancias de esta clase. El valor es "PutInstance" o el nombre de otro método que crea las instancias. El valor predeterminado es **null**.
+Nombre del método por el que se crean las instancias de esta clase. El valor es "PutInstance" o el nombre de otro método que crea las instancias. El valor predeterminado es **NULL.**
 
-Uso: este calificador solo se puede usar si el calificador **SupportsCreate** está presente.
+Uso: este calificador solo se puede usar si el **calificador SupportsCreate** está presente.
 
 </dd> <dt>
 
@@ -166,20 +166,20 @@ Tipo de datos: **cadena**
 
 Se aplica a: clases
 
-Nombre del método por el que se eliminan las instancias de esta clase. El valor es "DeleteInstance" o el nombre de otro método que elimina las instancias. El valor predeterminado es **null**.
+Nombre del método por el que se eliminan las instancias de esta clase. El valor es "DeleteInstance" o el nombre de otro método que elimina las instancias. El valor predeterminado es **NULL.**
 
 Uso: este calificador solo se puede usar si el calificador **SupportsDelete** está presente.
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
 Tipo de datos: **cadena**
 
-Se aplica a: any
+Se aplica a: cualquier
 
-Descripción de un elemento con nombre. El valor predeterminado es **null**.
+Descripción de un elemento con nombre. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
@@ -190,20 +190,20 @@ Tipo de datos: **booleano**
 
 Se aplica a: métodos
 
-Indica si el método elimina instancias. Los métodos que usan el calificador de **destructor** eliminan las instancias a las que se aplica el destructor y no están restringidas a actuar en una sola instancia o clase. Por ejemplo, un destructor podría eliminar las instancias de asociación, así como las instancias de la clase que define el destructor.
+Indica si el método elimina instancias. Los métodos que usan el calificador **Destructor** eliminan las instancias a las que se aplica el destructor y no están restringidos a actuar en una sola instancia o clase. Por ejemplo, un destructor podría eliminar instancias de asociación, así como instancias de la clase que define el destructor.
 
-El calificador de **destructor** está pensado únicamente para la información y no se espera que lo actúe el administrador de objetos. El administrador de objetos no tiene ninguna obligación de llamar a un método que tiene el calificador de **destructor** cuando se elimina una instancia. Además, cuando se llama a un destructor, el administrador de objetos no tiene que invocar los métodos de destructor definidos para cualquier clase primaria de la clase original. El valor predeterminado es **false**.
+El **calificador** Destructor solo está pensado para obtener información y no se espera que el administrador de objetos actúe sobre él. No hay ninguna obligación para que el administrador de objetos llame a un método que tenga el **calificador Destructor** cuando se elimina una instancia. Además, cuando se llama a un destructor, el administrador de objetos no tiene que invocar ningún método de destructor definido para ninguna clase primaria de la clase original. El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
-<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**Mostrar**
+<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**Displayname**
 </dt> <dd>
 
 Tipo de datos: **cadena**
 
-Se aplica a: any
+Se aplica a: cualquier
 
-Nombre que se muestra en la interfaz de usuario en lugar del nombre real del elemento. El valor predeterminado es **null**.
+Nombre que se muestra en la interfaz de usuario en lugar del nombre real del elemento. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
@@ -212,44 +212,44 @@ Nombre que se muestra en la interfaz de usuario en lugar del nombre real del ele
 
 Tipo de datos: **cadena**
 
-Se aplica a: any
+Se aplica a: cualquier
 
-El elemento de tipo de cadena calificado contiene una instancia incrustada. El valor de calificador especifica el nombre de una clase CIM en el mismo espacio de nombres que la clase propietaria del elemento calificado. La instancia incrustada es una instancia de la clase especificada, incluidas las instancias de sus subclases. El valor predeterminado es **null**.
+El elemento de tipo de cadena completo contiene una instancia incrustada. El valor del calificador especifica el nombre de una clase CIM en el mismo espacio de nombres que la clase propietaria del elemento completo. La instancia insertada es una instancia de la clase especificada, incluidas las instancias de sus subclases. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
-<span id="Gauge"></span><span id="gauge"></span><span id="GAUGE"></span>**Gálibo**
+<span id="Gauge"></span><span id="gauge"></span><span id="GAUGE"></span>**Calibre**
 </dt> <dd>
 
 Tipo de datos: **booleano**
 
-Se aplica a: any
+Se aplica a: cualquier
 
-Indica si la propiedad representa un entero no negativo, que puede aumentar o disminuir, pero nunca superar un valor máximo. El valor predeterminado es **false**.
+Indica si la propiedad representa un entero no negativo, que puede aumentar o disminuir, pero nunca superar un valor máximo. El valor predeterminado es **FALSE.**
 
-El valor máximo de la propiedad no puede ser mayor que 2 ^*n* -1. *N* puede ser 8, 16, 32 o 64, dependiendo del tipo de datos de la propiedad a la que se aplica este calificador. El valor de un medidor tiene su valor máximo siempre que la información que se está modelando sea mayor o igual que ese valor máximo. Si la información que se modela se reduce posteriormente por debajo del valor máximo, el medidor también se reduce. Este calificador solo es aplicable a las propiedades con un tipo de datos entero sin signo.
-
-</dd> <dt>
-
-<span id="In"></span><span id="in"></span><span id="IN"></span>**De**
-</dt> <dd>
-
-Tipo de datos: **booleano**
-
-Se aplica a: parámetros
-
-Indica si el parámetro se utiliza para pasar valores a un método. El valor predeterminado es **true**.
+El valor máximo de la propiedad no puede ser mayor que 2^*n* - 1. *N* puede ser 8, 16, 32 o 64, según el tipo de datos de la propiedad a la que se aplica este calificador. El valor de un medidor tiene su valor máximo siempre que la información que se va a modelar sea mayor o igual que ese valor máximo. Si la información que se va a modelar posteriormente disminuye por debajo del valor máximo, el medidor también disminuye. Este calificador solo es aplicable a las propiedades con un tipo de datos entero sin signo.
 
 </dd> <dt>
 
-<span id="In__Out"></span><span id="in__out"></span><span id="IN__OUT"></span>**In, out**
+<span id="In"></span><span id="in"></span><span id="IN"></span>**En**
 </dt> <dd>
 
 Tipo de datos: **booleano**
 
 Se aplica a: parámetros
 
-Indica si el parámetro es un parámetro de entrada y de salida.
+Indica si el parámetro se usa para pasar valores a un método. El valor predeterminado es **TRUE.**
+
+</dd> <dt>
+
+<span id="In__Out"></span><span id="in__out"></span><span id="IN__OUT"></span>**In, Out**
+</dt> <dd>
+
+Tipo de datos: **booleano**
+
+Se aplica a: parámetros
+
+Indica si el parámetro es un parámetro de entrada y salida.
 
 </dd> <dt>
 
@@ -260,16 +260,16 @@ Tipo de datos: **booleano**
 
 Se aplica a: propiedades, referencias
 
-Indica si la propiedad forma parte del identificador de espacio de nombres. Si hay más de una propiedad que tiene el calificador de [**clave**](key-qualifier.md) , todas estas propiedades forman colectivamente la clave (una clave compuesta). Cuando se toman juntas, las propiedades clave deben proporcionar una referencia única para cada instancia de clase. Si este calificador se coloca en una propiedad, solo se permite el valor **true** .
+Indica si la propiedad forma parte del identificador del espacio de nombres. Si más de una propiedad tiene el [**calificador Key,**](key-qualifier.md) todas estas propiedades forman colectivamente la clave (una clave compuesta). Cuando se toman juntas, las propiedades de clave deben proporcionar una referencia única para cada instancia de clase. Si este calificador se coloca en una propiedad, solo se permite el valor **TRUE.**
 
 </dd> <dt>
 
-<span id="Lazy"></span><span id="lazy"></span><span id="LAZY"></span>**Vago**
+<span id="Lazy"></span><span id="lazy"></span><span id="LAZY"></span>**Perezoso**
 </dt> <dd>
 
 Se aplica a: propiedades
 
-Indica que la propiedad utiliza muchos recursos para devolver y requiere mucha memoria y tiempo de procesador. WMI mejora el rendimiento de las consultas al no intentar devolver las propiedades marcadas con el calificador **Lazy** .
+Indica que la propiedad consume muchos recursos para devolver y requiere una gran cantidad de tiempo y memoria del procesador. WMI mejora el rendimiento de las consultas al no intentar devolver las propiedades marcadas con **el calificador Diferido.**
 
 </dd> <dt>
 
@@ -280,18 +280,18 @@ Tipo de datos: **matriz de cadenas**
 
 Se aplica a: clases, propiedades, asociaciones, indicaciones, referencias
 
-Conjunto de valores que indican una ruta de acceso a una ubicación donde puede encontrar más información sobre el origen de una propiedad, clase, Asociación, indicación o referencia. La cadena de asignación puede ser una ruta de acceso de directorio, una dirección URL, una clave del registro, un archivo de inclusión, una referencia a una clase CIM o algún otro formato. El valor predeterminado es **null**.
+Conjunto de valores que indican una ruta de acceso a una ubicación donde puede encontrar más información sobre el origen de una propiedad, clase, asociación, indicación o referencia. La cadena de asignación puede ser una ruta de acceso de directorio, una dirección URL, una clave del Registro, un archivo de include, una referencia a una clase CIM o algún otro formato. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
-<span id="Max"></span><span id="max"></span><span id="MAX"></span>**Máx.**
+<span id="Max"></span><span id="max"></span><span id="MAX"></span>**máximo**
 </dt> <dd>
 
 Tipo de datos: **int**
 
 Se aplica a: referencias
 
-Número máximo de valores que puede tener una referencia determinada para cada conjunto de valores de referencia de la asociación. El valor predeterminado es **null**. Por ejemplo, si una asociación relaciona una instancia con instancias B y debe haber como máximo una instancia para cada instancia B, la referencia a debe tener un máximo de un calificador.
+Número máximo de valores que puede tener una referencia determinada para cada conjunto de otros valores de referencia de la asociación. El valor predeterminado es **NULL.** Por ejemplo, si una asociación relaciona instancias A con instancias B y debe haber como máximo una instancia A para cada instancia B, la referencia a A debe tener un máximo de un calificador.
 
 </dd> <dt>
 
@@ -302,9 +302,9 @@ Tipo de datos: **int**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Longitud máxima (en caracteres) de un elemento de datos de **cadena** e indica la compatibilidad con matrices de longitud fija.
+Longitud máxima (en caracteres) de un elemento **de** datos de cadena e indica compatibilidad con matrices de longitud fija.
 
-Si se encuentra una matriz de longitud fija, el calificador **MaxLen** contiene la longitud fija encontrada durante el análisis. Si se encuentra una matriz de longitud variable, no se utiliza este calificador. **MaxLen** se utiliza para sugerir el número máximo de elementos que deben almacenarse en una matriz. Al invalidar el valor predeterminado, se puede especificar cualquier valor entero sin signo (**UInt32**). Un valor **null** (valor predeterminado) implica una longitud ilimitada.
+Si se encuentra una matriz de longitud fija, el calificador **MaxLen** contiene la longitud fija encontrada durante el análisis. Si se encuentra una matriz de longitud variable, no se usa este calificador. **MaxLen** se usa para sugerir el número máximo de elementos que se deben almacenar en una matriz. Al reemplazar el valor predeterminado, se puede especificar cualquier valor entero sin signo (**uint32**). Un valor NULL **(valor** predeterminado) implica una longitud ilimitada.
 
 </dd> <dt>
 
@@ -315,20 +315,20 @@ Tipo de datos: **int**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Valor máximo del objeto. El valor predeterminado es **null**.
+Valor máximo del objeto. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
-<span id="Min"></span><span id="min"></span><span id="MIN"></span>**Minuto**
+<span id="Min"></span><span id="min"></span><span id="MIN"></span>**Min**
 </dt> <dd>
 
 Tipo de datos: **int**
 
 Se aplica a: referencias
 
-Cardinalidad mínima de la referencia (el número mínimo de valores que puede tener una referencia determinada para cada conjunto de valores de referencia de la Asociación). El valor predeterminado es 0.
+Cardinalidad mínima de la referencia (el número mínimo de valores que puede tener una referencia determinada para cada conjunto de otros valores de referencia de la asociación). El valor predeterminado es 0.
 
-Por ejemplo, si una asociación relaciona una instancia con instancias de B y debe haber al menos una instancia de para cada instancia B, la referencia a debe tener como mínimo un calificador.
+Por ejemplo, si una asociación relaciona instancias A con instancias B y debe haber al menos una instancia A para cada instancia B, la referencia a A debe tener un mínimo de un calificador.
 
 </dd> <dt>
 
@@ -339,7 +339,7 @@ Tipo de datos: **int**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Indica el valor mínimo del objeto. El valor predeterminado es **null**.
+Indica el valor mínimo del objeto . El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
@@ -350,24 +350,24 @@ Tipo de datos: **matriz de cadenas**
 
 Se aplica a: propiedades
 
-Conjunto de valores que indican la correspondencia entre la propiedad de un objeto y otras propiedades del esquema CIM. El valor predeterminado es **null**.
+Conjunto de valores que indican la correspondencia entre la propiedad de un objeto y otras propiedades del esquema CIM. El valor predeterminado es **NULL.**
 
-Las propiedades de objeto se identifican con la sintaxis siguiente.
+Las propiedades de objeto se identifican mediante la sintaxis siguiente.
 
 <schema name> "\_" <class or association name> "." <property name>
 
 </dd> <dt>
 
-<span id="Nonlocal"></span><span id="nonlocal"></span><span id="NONLOCAL"></span>**No locales**
+<span id="Nonlocal"></span><span id="nonlocal"></span><span id="NONLOCAL"></span>**No local**
 </dt> <dd>
 
 Tipo de datos: **cadena**
 
 Se aplica a: referencias
 
-Ubicación de una instancia, cuyo valor es <*espacio*>://<*namespacehandle*> el valor predeterminado es **null**.
+Ubicación de una instancia de , cuyo valor es <*namespacetype*>://<*namespacehandle*> El valor predeterminado es **NULL.**
 
-Uso: este calificador no se puede usar con el calificador **NonlocalType** .
+Uso: este calificador no se puede usar con el **calificador NonlocalType.**
 
 </dd> <dt>
 
@@ -378,9 +378,9 @@ Tipo de datos: **cadena**
 
 Se aplica a: referencias
 
-Tipo de ubicación de una instancia. Su valor es <namespacetype> . El valor predeterminado es **null**.
+Tipo de ubicación de una instancia. Su valor es <namespacetype> . El valor predeterminado es **NULL.**
 
-Uso: este calificador no se puede usar con el calificador no **local** .
+Uso: este calificador no se puede usar con el **calificador Nonlocal.**
 
 </dd> <dt>
 
@@ -391,39 +391,39 @@ Tipo de datos: **cadena**
 
 Se aplica a: propiedades
 
-Valor que indica que la propiedad asociada es **null** (la propiedad no tiene un valor válido o significativo). El valor predeterminado es **null**.
+Valor que indica que la propiedad asociada es **NULL** (la propiedad no tiene un valor válido o significativo). El valor predeterminado es **NULL.**
 
-Las convenciones y restricciones que se usan para definir valores **null** son las mismas que las aplicables al calificador **ValueMap** . Nota: este calificador no se puede invalidar. No es razonable permitir que una subclase devuelva un valor **null** diferente al de la clase primaria.
+Las convenciones y restricciones usadas para definir **valores NULL** son las mismas que las aplicables al **calificador ValueMap.** Tenga en cuenta que este calificador no se puede invalidar. No es razonable permitir que una subclase devuelva un valor **NULL** diferente al de la clase primaria.
 
 </dd> <dt>
 
-<span id="Out"></span><span id="out"></span><span id="OUT"></span>**Enuncia**
+<span id="Out"></span><span id="out"></span><span id="OUT"></span>**Out (Salida)**
 </dt> <dd>
 
 Tipo de datos: **booleano**
 
 Se aplica a: parámetros
 
-Indica si el parámetro devuelve valores de un método. El valor predeterminado es **false**.
+Indica si el parámetro devuelve valores de un método. El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
-<span id="Override"></span><span id="override"></span><span id="OVERRIDE"></span>**Estima**
+<span id="Override"></span><span id="override"></span><span id="OVERRIDE"></span>**Anular**
 </dt> <dd>
 
 Tipo de datos: **cadena**
 
 Se aplica a: propiedades, métodos, referencias
 
-Clase primaria o construcción subordinada (propiedad, método o referencia) que es reemplazada por la propiedad, el método o la referencia del mismo nombre en la clase derivada. El valor predeterminado es **null**.
+Clase primaria o construcción subordinada (propiedad, método o referencia) que se reemplaza por la propiedad, el método o la referencia del mismo nombre en la clase derivada. El valor predeterminado es **NULL.**
 
 El formato es:
 
-\[<> de *clase* . \] < *construcción subordinada*>
+\[<*Clase>.* \] < *construcción subordinada*>
 
-Si se omite el nombre de clase, la invalidación se aplica a la construcción subordinada en la clase primaria en la jerarquía de clases.
+Si se omite el nombre de clase, la invalidación se aplica a la construcción subordinada en la clase primaria de la jerarquía de clases.
 
-Uso: el calificador de **invalidación** puede hacer referencia a construcciones basadas solo en el mismo metamodelo. No se permite cambiar el nombre o la firma de una construcción durante una operación de invalidación.
+Uso: el **calificador Override** solo puede hacer referencia a construcciones basadas en el mismo meta model. No se permite cambiar un nombre de construcción o una firma durante una operación de invalidación.
 
 </dd> <dt>
 
@@ -432,35 +432,35 @@ Uso: el calificador de **invalidación** puede hacer referencia a construcciones
 
 Se aplica a: clases
 
-Indica si el valor de propiedad en una subclase invalida el valor de una clase primaria. La implicación funcional es que, si realiza una consulta en la clase primaria, y si la cláusula **Where** incluye esta propiedad, el elemento primario debe devolver una instancia de con el valor invalidado. Como resultado, la administración de Windows ajusta la cláusula **Where** de la consulta enviada a la clase primaria para excluir las referencias a esta propiedad.
+Indica si el valor de propiedad de una subclase invalida el valor de una clase primaria. La implicación funcional es que, si realiza una consulta en la clase primaria y la cláusula **WHERE** incluye esta propiedad, el elemento primario debe devolver una instancia con el valor invalidado. Como resultado, Windows Management ajusta la cláusula **WHERE** de la consulta enviada a la clase primaria para excluir referencias a esta propiedad.
 
 </dd> <dt>
 
-<span id="Propagated"></span><span id="propagated"></span><span id="PROPAGATED"></span>**Propagan**
+<span id="Propagated"></span><span id="propagated"></span><span id="PROPAGATED"></span>**Propagado**
 </dt> <dd>
 
 Tipo de datos: **cadena**
 
 Se aplica a: propiedades
 
-Nombre de la clave que se va a propagar. El valor predeterminado es **null**.
+Nombre de la clave que se propaga. El valor predeterminado es **NULL.**
 
-El uso de este calificador supone la existencia de un solo calificador débil en una referencia que tiene la clase contenedora como su destino. La propiedad asociada debe tener el mismo valor que la propiedad denominada por el calificador de la clase en el otro lado de la Asociación débil. El formato es:
+El uso de este calificador supone la existencia de solo un calificador débil en una referencia que tiene la clase que lo contiene como destino. La propiedad asociada debe tener el mismo valor que la propiedad denominada por el calificador en la clase del otro lado de la asociación débil. El formato es:
 
-\[<> de *clase* . \] < *construcción subordinada*>
+\[<*Clase>.* \] < *construcción subordinada*>
 
-Uso: cuando se usa el calificador **propagado** , el calificador de [**clave**](key-qualifier.md) debe especificarse con un valor de **true**.
+Uso: cuando se **usa el calificador Propagated,** el [**calificador Key**](key-qualifier.md) debe especificarse con un valor de **TRUE.**
 
 </dd> <dt>
 
-<span id="Read"></span><span id="read"></span><span id="READ"></span>**Lectura**
+<span id="Read"></span><span id="read"></span><span id="READ"></span>**Leer**
 </dt> <dd>
 
 Tipo de datos: **booleano**
 
 Se aplica a: propiedades
 
-Indica si la propiedad es legible. El valor predeterminado es **true**.
+Indica si la propiedad es legible. El valor predeterminado es **TRUE.**
 
 </dd> <dt>
 
@@ -471,7 +471,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: propiedades
 
-Indica si se requiere un valor distinto de null para la propiedad. El valor predeterminado es **false**.
+Indica si se requiere un valor distinto de NULL para la propiedad . El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
@@ -482,9 +482,9 @@ Tipo de datos: **cadena**
 
 Se aplica a: clases, asociaciones, indicaciones, esquemas
 
-Número de revisión secundaria del objeto de esquema. El valor predeterminado es **null**.
+Número de revisión secundaria del objeto de esquema. El valor predeterminado es **NULL.**
 
-Uso: el calificador de **versión** debe estar presente para proporcionar el número de versión principal cuando se use el calificador de **revisión** .
+Uso: el **calificador Version** debe estar presente para proporcionar el número de versión principal cuando se usa **el** calificador revision.
 
 </dd> <dt>
 
@@ -495,35 +495,35 @@ Tipo de datos: **cadena**
 
 Se aplica a: propiedades, métodos
 
-Nombre del esquema en el que se define la característica. El valor predeterminado es **null**.
+Nombre del esquema en el que se define la característica. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
-<span id="Source"></span><span id="source"></span><span id="SOURCE"></span>**Fuentes**
+<span id="Source"></span><span id="source"></span><span id="SOURCE"></span>**Fuente**
 </dt> <dd>
 
 Tipo de datos: **cadena**
 
 Se aplica a: clases, asociaciones, indicaciones, referencias
 
-Ubicación de una instancia de. El valor predeterminado es **null**.
+Ubicación de una instancia. El valor predeterminado es **NULL.**
 
-El valor del calificador es <*espacio*>://<*namespacehandle*>.
+El valor del calificador es <*namespacetype*>://<*namespacehandle*>.
 
-Uso: el calificador de **origen** no se puede usar con el calificador **sourceType** .
+Uso: el **calificador Source** no se puede usar con el **calificador SourceType.**
 
 </dd> <dt>
 
-<span id="SourceType"></span><span id="sourcetype"></span><span id="SOURCETYPE"></span>**SourceType**
+<span id="SourceType"></span><span id="sourcetype"></span><span id="SOURCETYPE"></span>**Sourcetype**
 </dt> <dd>
 
 Tipo de datos: **cadena**
 
 Se aplica a: clases, asociaciones, indicaciones, referencias
 
-Tipo de ubicación de una instancia. El valor de este calificador es <*espacio*>. El valor predeterminado es **null**.
+Tipo de ubicación de una instancia. El valor de este calificador es <*namespacetype*>. El valor predeterminado es **NULL.**
 
-Uso: el calificador **sourceType** no se puede usar con el calificador de **origen** .
+Uso: el **calificador SourceType** no se puede usar con el **calificador Source.**
 
 </dd> <dt>
 
@@ -534,7 +534,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: clases
 
-Indica si la clase admite la creación de instancias de. El valor predeterminado es **false**.
+Indica si la clase admite la creación de instancias de . El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
@@ -545,7 +545,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: clases
 
-Indica si la clase admite la eliminación de instancias de. El valor predeterminado es **false**.
+Indica si la clase admite la eliminación de instancias. El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
@@ -556,7 +556,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: clases
 
-Indica si la clase admite la modificación (actualización) de instancias de. El valor predeterminado es **false**.
+Indica si la clase admite la modificación (actualización) de instancias. El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
@@ -567,24 +567,24 @@ Tipo de datos: **booleano**
 
 Se aplica a: clases
 
-Indica si la clase puede tener subclases. El valor predeterminado es **false**.
+Indica si la clase puede tener subclases. El valor predeterminado es **FALSE.**
 
 Si se declara una subclase, el compilador genera un error.
 
-Uso: este calificador no puede coexistir con el calificador **abstracto** . Si se especifican los calificadores de **terminal** y **abstractos** , el compilador genera un error.
+Uso: este calificador no puede coexistir con el **calificador Abstract.** Si se especifican **los calificadores Terminal** y **Abstract,** el compilador genera un error.
 
 </dd> <dt>
 
-<span id="Units"></span><span id="units"></span><span id="UNITS"></span>**Participa**
+<span id="Units"></span><span id="units"></span><span id="UNITS"></span>**Unidades**
 </dt> <dd>
 
 Tipo de datos: **cadena**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Tipo de unidad en la que se expresa el elemento de datos asociado. El valor predeterminado es **null**.
+Tipo de unidad en la que se expresa el elemento de datos asociado. El valor predeterminado es **NULL.**
 
-Por ejemplo, un elemento de datos de tamaño podría tener un valor de "bytes" para las **unidades**.
+Por ejemplo, un elemento de datos de tamaño podría tener un valor de "bytes" para **unidades**.
 
 </dd> <dt>
 
@@ -595,24 +595,24 @@ Tipo de datos: **matriz de cadenas**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Conjunto de valores permitidos para una propiedad, un tipo de valor devuelto de método o un parámetro de método. El valor predeterminado es **null**.
+Conjunto de valores permitidos para una propiedad, tipo de valor devuelto de método o parámetro de método. El valor predeterminado es **NULL.**
 
-Uso: este calificador se puede usar por sí solo o en combinación con el calificador de **valores** . Cuando se usa en combinación con el calificador de **valores** , la ubicación del valor en la matriz **ValueMap** proporciona la ubicación de la entrada correspondiente en la matriz de **valores** . Use el calificador **ValueMap** solo con valores de cadena y enteros. La sintaxis para representar un valor entero en la matriz de mapa de valores es dígito digit \[ + \| = \] \[ \* \] . El contenido, el número máximo de dígitos y el valor representado están restringidos por el tipo de la propiedad asociada. Por ejemplo, Uint8 no puede estar firmado, debe tener menos de cuatro dígitos y debe representar un valor inferior a 256.
+Uso: este calificador se puede usar solo o en combinación con el **calificador Values.** Cuando se usa en combinación con el calificador **Values,** la ubicación del valor en la matriz **ValueMap** proporciona la ubicación de la entrada correspondiente en la **matriz Values.** Use el **calificador ValueMap** solo con valores de cadena y enteros. La sintaxis para representar un valor entero en la matriz de asignación de valores es \[ + \| = \] el \[ \* dígito \] . El contenido, el número máximo de dígitos y el valor representado están restringidos por el tipo de la propiedad asociada. Por ejemplo, uint8 puede no estar firmado, debe tener menos de cuatro dígitos y debe representar un valor menor que 256.
 
 </dd> <dt>
 
-<span id="Values"></span><span id="values"></span><span id="VALUES"></span>**Valor**
+<span id="Values"></span><span id="values"></span><span id="VALUES"></span>**Valores**
 </dt> <dd>
 
 Tipo de datos: **matriz de cadenas**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Conjunto de valores que traducen un valor entero en una cadena asociada. El valor predeterminado es **null**.
+Conjunto de valores que traducen un valor entero en una cadena asociada. El valor predeterminado es **NULL.**
 
-Esta propiedad también especifica una matriz de valores de cadena que se va a asignar a una propiedad de enumeración. Este calificador se puede aplicar a una propiedad de entero o a una propiedad de cadena, y la asignación puede ser implícita o explícita. Si la asignación es implícita, los valores de propiedad de cadena o entero representan las posiciones ordinales en la matriz de **valores** . Si la asignación es explícita, la propiedad debe ser un entero y los valores de propiedad válidos se muestran en la matriz definida por el calificador **ValueMap** . Para obtener más información, consulte [asignación de valores](value-map.md).
+Esta propiedad también especifica una matriz de valores de cadena que se asignarán a una propiedad de enumeración. Este calificador se puede aplicar a una propiedad de entero o una propiedad de cadena, y la asignación puede ser implícita o explícita. Si la asignación es implícita, los valores de propiedad integer o string representan posiciones ordinales en la **matriz Values.** Si la asignación es explícita, la propiedad debe ser un entero y los valores de propiedad válidos se enumeran en la matriz definida por el **calificador ValueMap.** Para obtener más información, vea [Asignación de valores.](value-map.md)
 
-Si no hay ningún calificador **ValueMap** , la matriz **Values** está indizada (relativa a cero) mediante el valor de la propiedad asociada, el tipo de valor devuelto del método o el parámetro de método. Si hay un calificador **ValueMap** , el índice de valores se define mediante la ubicación del valor de propiedad en el mapa de valores.
+Si un **calificador ValueMap** no está presente, la matriz **Values** se indexa (relativa a cero) mediante el valor de la propiedad asociada, el tipo de valor devuelto del método o el parámetro de método. Si hay **un calificador ValueMap,** el índice de valores se define mediante la ubicación del valor de propiedad en el mapa de valores.
 
 </dd> <dt>
 
@@ -623,33 +623,33 @@ Tipo de datos: **cadena**
 
 Se aplica a: clases, esquemas, asociaciones, indicaciones
 
-Número de versión principal del objeto de esquema. El valor predeterminado es **null**. El número de versión se incrementa cuando se realizan cambios en el esquema que modifica la interfaz.
+Número de versión principal del objeto de esquema. El valor predeterminado es **NULL.** El número de versión se incrementa cuando se realizan cambios en el esquema que modifican la interfaz.
 
 </dd> <dt>
 
-<span id="Weak"></span><span id="weak"></span><span id="WEAK"></span>**Segura**
+<span id="Weak"></span><span id="weak"></span><span id="WEAK"></span>**Débil**
 </dt> <dd>
 
 Tipo de datos: **booleano**
 
 Se aplica a: referencias
 
-Indica si las claves de la clase a la que se hace referencia incluyen las claves de los otros participantes de la asociación. El valor predeterminado es **false**.
+Indica si las claves de la clase a la que se hace referencia incluyen las claves de los demás participantes de la asociación. El valor predeterminado es **FALSE.**
 
-Este calificador se utiliza cuando la identidad de la clase a la que se hace referencia depende de la identidad de los otros participantes de la asociación. No puede haber más de una referencia a una clase determinada. Las demás clases de la Asociación deben definir una clave. Las claves de las otras clases de la asociación se repiten en la clase a la que se hace referencia y se etiquetan con un calificador **propagado** .
+Este calificador se usa cuando la identidad de la clase a la que se hace referencia depende de la identidad de los demás participantes de la asociación. No puede haber más de una referencia a una clase determinada. Las demás clases de la asociación deben definir una clave. Las claves de las otras clases de la asociación se repiten en la clase a la que se hace referencia y se etiquetan con un **calificador Propagated.**
 
 </dd> <dt>
 
-<span id="Write"></span><span id="write"></span><span id="WRITE"></span>**Escribi**
+<span id="Write"></span><span id="write"></span><span id="WRITE"></span>**Escribir**
 </dt> <dd>
 
 Tipo de datos: **booleano**
 
 Se aplica a: propiedades
 
-Indica que las aplicaciones o los scripts pueden cambiar el valor de la propiedad. La cuenta que ejecuta la aplicación debe tener acceso al espacio de nombres que contiene las instancias de la clase. La implementación del proveedor también puede limitar el acceso a los datos del proveedor. Un valor de **true** indica que la propiedad es legible y grabable por los consumidores a los que se les permite el acceso mediante WMI y el proveedor. El valor predeterminado es **false**.
+Indica que las aplicaciones o scripts pueden cambiar el valor de propiedad. La cuenta que ejecuta la aplicación debe tener acceso al espacio de nombres que contiene instancias de la clase . La implementación del proveedor también puede limitar el acceso a los datos del proveedor. Un valor **TRUE indica** que los consumidores a los que WMI y el proveedor permiten el acceso a la propiedad son legibles y fáciles de escribir. El valor predeterminado es **FALSE.**
 
-Todavía es posible escribir en una propiedad que no tenga el calificador de **escritura** . La implementación del proveedor puede permitir que se modifiquen las propiedades de las clases del proveedor, tanto si el calificador de **escritura** está presente.
+Es posible que una propiedad que no tenga **el calificador Write** todavía se pueda escribir. La implementación del proveedor puede permitir que se cambien las propiedades de las clases de proveedor, independientemente de si el **calificador Write** está presente.
 
 </dd> <dt>
 
@@ -660,7 +660,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: propiedades
 
-Indica si la propiedad es grabable en la creación de la instancia. Este calificador se puede usar junto con el calificador **WriteAtCreate** . El valor predeterminado es **false**.
+Indica si la propiedad se puede escribir en la creación de la instancia. Este calificador se puede usar junto con el **calificador WriteAtCreate.** El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
@@ -671,33 +671,33 @@ Tipo de datos: **booleano**
 
 Se aplica a: propiedades
 
-Indica si la propiedad es grabable en la actualización de la instancia. Este calificador se puede usar junto con el calificador **WriteAtCreate** . El valor predeterminado es **false**.
+Indica si la propiedad se puede escribir en la actualización de la instancia. Este calificador se puede usar junto con el **calificador WriteAtCreate.** El valor predeterminado es **FALSE.**
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener más información sobre cómo recuperar calificadores, vea el ejemplo de código de PowerShell [Get-WmiClassMethodsAndWritableWmiProperties](https://Gallery.TechNet.Microsoft.Com/10670e14-4cf1-4ce5-99d0-fc4ca80dac2c) en la galería de TechNet.
+Para obtener más información sobre cómo recuperar calificadores, vea el ejemplo de código de PowerShell [Get-WmiClassMethodsAndWritableWmiProperties](https://Gallery.TechNet.Microsoft.Com/10670e14-4cf1-4ce5-99d0-fc4ca80dac2c) en la Galería de TechNet.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Calificadores WMI](wmi-qualifiers.md)
 </dt> <dt>
 
-[Adición de un calificador](adding-a-qualifier.md)
+[Agregar un calificador](adding-a-qualifier.md)
 </dt> </dl>
 
  

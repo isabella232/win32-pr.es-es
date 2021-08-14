@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 3e2954483da53c77ebef57f9cf2de104734caba2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9dafba8928d0c488c0ab4a5c50bbe632012c70d1cebcced3e1c970e029f1181a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303492"
 ---
 # <a name="d3dx10_attribute_range-structure"></a>Estructura D3DX10 \_ ATTRIBUTE \_ RANGE
 
@@ -100,9 +100,9 @@ Recuento de vértices.
 
 ## <a name="remarks"></a>Comentarios
 
-Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla no dibujando un identificador de atributo determinado (AttribId) al dibujar el marco.
+Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otros. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla sin dibujar un identificador de atributo determinado (AttribId) al dibujar el marco.
 
-El tipo LPD3DX ATTRIBUTE RANGE se define como un \_ puntero a la estructura \_ D3DX \_ ATTRIBUTE \_ RANGE.
+El tipo LPD3DX \_ ATTRIBUTE RANGE se define como un puntero a la estructura \_ D3DX \_ ATTRIBUTE \_ RANGE.
 
 
 ```

@@ -1,9 +1,9 @@
 ---
-title: unfreeze (comando)
-description: El comando unfreeze permite volver a habilitar la adquisición de vídeo en el búfer de fotogramas después de que el comando Freeze lo haya deshabilitado. Los dispositivos digitales-vídeo, VCR y superposición de vídeo reconocen este comando.
+title: comando unfreeze
+description: El comando unfreeze vuelve a deshabilitar la adquisición de vídeo en el búfer de fotogramas después de que el comando freeze lo haya deshabilitado. Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
 ms.assetid: ca90c299-2003-44cb-a879-4bc767480965
 keywords:
-- unfreeze (comando) multimedia de Windows
+- descongelar el comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 155ba6b65fb08411d8404920c8f3337d1bddbcb1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 88fe45b1346872483a4012c5f5d161dcd61020c64349fee254ae4bf337b4be8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118370815"
 ---
-# <a name="unfreeze-command"></a>unfreeze (comando)
+# <a name="unfreeze-command"></a>comando unfreeze
 
-El comando unfreeze permite volver a habilitar la adquisición de vídeo en el búfer de fotogramas después de que el comando [Freeze](freeze.md) lo haya deshabilitado. Los dispositivos digitales-vídeo, VCR y superposición de vídeo reconocen este comando.
+El comando unfreeze vuelve a deshabilitar la adquisición de vídeo en el búfer de fotogramas después de que el comando freeze lo [haya](freeze.md) deshabilitado. Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,29 +49,29 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszUnfreeze"></span><span id="lpszunfreeze"></span><span id="LPSZUNFREEZE"></span>*lpszUnfreeze*
 </dt> <dd>
 
-Marca para volver a habilitar la adquisición de vídeo en el búfer de fotogramas. En la tabla siguiente se enumeran los tipos de dispositivos que reconocen el comando **unfreeze** y las marcas usadas por cada tipo.
+Marca para volver a buscar la adquisición de vídeo en el búfer de fotogramas. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **unfreeze** y las marcas usadas por cada tipo.
 
 
 
-| Value        | Significado        |
+| Valor        | Significado        |
 |--------------|----------------|
-| digitalvideo | en el *rectángulo* |
-| overlay      | en el *rectángulo* |
-| vídeos          | salida de entrada   |
+| digitalvideo | en *rectángulo* |
+| overlay      | en *rectángulo* |
+| Vcr          | salida de entrada   |
 
 
 
  
 
-En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro **lpszUnfreeze** y su significado.
+En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro **lpszUnfreeze** y sus significados.
 
 
 
-| Value          | Significado                                                                                                                                                                                                                                                                                    |
+| Valor          | Significado                                                                                                                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en el *rectángulo* | Especifica la región en la que se volverá a habilitar la adquisición de vídeo. El rectángulo es relativo al origen del búfer de vídeo y se especifica como *x1 Y1 x2 Y2*. Las coordenadas *x1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *x2 Y2* especifican el ancho y el alto. |
-| input          | Libere la imagen de entrada.                                                                                                                                                                                                                                                                  |
-| output         | Libere la imagen de salida. Si no se especifica "Input" ni "Output", se asume "Output".                                                                                                                                                                                                  |
+| en *rectángulo* | Especifica la región en la que se volverá a habilitar la adquisición de vídeo. El rectángulo es relativo al origen del búfer de vídeo y se especifica como *X1 Y1 X2 Y2*. Las coordenadas *X1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2 Y2* especifican el ancho y el alto. |
+| input          | Descongele la imagen de entrada.                                                                                                                                                                                                                                                                  |
+| output         | Descongele la imagen de salida. Si no se da "entrada" ni "salida", se supone "salida".                                                                                                                                                                                                  |
 
 
 
@@ -82,17 +82,17 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital y vídeo, también se puede especificar "prueba". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital y VCR, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente comando libera una región del búfer de vídeo.
+El comando siguiente descongela una región del búfer de vídeo.
 
 ``` syntax
 unfreeze vboard at 10 20 90 165
@@ -102,24 +102,24 @@ unfreeze vboard at 10 20 90 165
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
-[Inmovilice](freeze.md)
+[Congelar](freeze.md)
 </dt> </dl>
 
  

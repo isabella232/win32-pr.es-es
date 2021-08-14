@@ -1,10 +1,10 @@
 ---
-title: Interfaz INapCertRelyingParty (NapCertRelyingParty. h)
-description: 'Certificado: los usuarios de confianza deben usar para comunicarse con el NapAgent.'
+title: Interfaz INapCertRelyingParty (NapCertRelyingParty.h)
+description: Los usuarios de confianza de certificados deben usar para comunicarse con NapAgent.
 ms.assetid: e5ae0f4d-24fa-4049-82d9-1c9baeb34e32
 keywords:
-- Interfaz INapCertRelyingParty NAP
-- Interfaz INapCertRelyingParty NAP, descripción
+- INapCertRelyingParty interface NAP
+- INapCertRelyingParty interface NAP , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,39 +15,39 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85b4439389c6ee65076f710bb6ea752c73a51ecd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d2a68c6ce910fa63588df1fa7bc1834f6ed537a2a2c9b85f24d383497a8d463
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118368614"
 ---
-# <a name="inapcertrelyingparty-interface"></a>Interfaz INapCertRelyingParty
+# <a name="inapcertrelyingparty-interface"></a>INapCertRelyingParty (interfaz)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-La interfaz **INapCertRelyingParty** proporciona métodos que los usuarios de confianza de certificados deben usar para comunicarse con NapAgent.
+La **interfaz INapCertRelyingParty** proporciona métodos que los usuarios que dependen de certificados deben usar para comunicarse con NapAgent.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **INapCertRelyingParty** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapCertRelyingParty** también tiene estos tipos de miembros:
+La **interfaz INapCertRelyingParty** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapCertRelyingParty** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **INapCertRelyingParty** tiene estos métodos.
+La **interfaz INapCertRelyingParty** tiene estos métodos.
 
 
 
 | Método                                                                                                        | Descripción                                                                     |
 |:--------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [**INapCertRelyingParty::GetSubscribedRelyingParties**](inapcertrelyingparty-getsubscribedrelyingparties.md) | Obtiene una lista de usuarios de confianza que se han suscrito.<br/>                 |
-| [**INapCertRelyingParty::SubscribeCertByGroup**](inapcertrelyingparty-subscribecertbygroup.md)               | Se suscribe a un servidor de certificados de mantenimiento ya registrado (HCS).<br/> |
-| [**INapCertRelyingParty::UnSubscribeCertByGroup**](inapcertrelyingparty-unsubscribecertbygroup.md)           | Cancela la suscripción de un servidor de HCS.<br/>                                     |
+| [**INapCertRelyingParty::SubscribeCertByGroup**](inapcertrelyingparty-subscribecertbygroup.md)               | Se suscribe a un servidor de certificados de estado (HCS) ya registrado.<br/> |
+| [**INapCertRelyingParty::UnSubscribeCertByGroup**](inapcertrelyingparty-unsubscribecertbygroup.md)           | Cancela la suscripción a un servidor HCS.<br/>                                     |
 
 
 
@@ -57,20 +57,20 @@ La interfaz **INapCertRelyingParty** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                               |
-| Encabezado<br/>                   | <dl> <dt>NapCertRelyingParty. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCertRelyingParty. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
+| Header<br/>                   | <dl> <dt>NapCertRelyingParty.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCertRelyingParty.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
 [Referencia de NAP](nap-reference.md)
