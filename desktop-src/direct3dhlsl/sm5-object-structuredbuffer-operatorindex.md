@@ -1,6 +1,6 @@
 ---
-title: 'StructuredBuffer:: Operator (función)'
-description: Devuelve una variable de recurso de solo lectura de un StructuredBuffer.
+title: StructuredBuffer::Operator (Función)
+description: Devuelve una variable de recurso de solo lectura de StructuredBuffer.
 ms.assetid: e2a1b0f7-f374-44a3-b567-8a2318e8b2b8
 keywords:
 - Función de operador HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f0d75bdfbcd3bfc560e896416f241f1291120d6
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: c852a56769df2179daf6055542c9ebf4724a353312e295daecd59af08163711c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104149812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509121"
 ---
-# <a name="structuredbufferoperator--function"></a>StructuredBuffer:: Operator (función)
+# <a name="structuredbufferoperator--function"></a>StructuredBuffer::Operator (Función)
 
-Devuelve una variable de recurso de solo lectura de un [**StructuredBuffer**](sm5-object-structuredbuffer.md).
+Devuelve una variable de recurso de solo lectura de [**structuredBuffer.**](sm5-object-structuredbuffer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Posición de índice.
+Posición del índice.
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Tipo: **R**
 
 Variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -65,7 +65,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

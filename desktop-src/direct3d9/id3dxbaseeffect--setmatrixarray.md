@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: ae603708be4b34c9aa12722fe282df470c85d476
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 58da45fe25618317c1826ad89f7138361d02fb67b00745dee73e08161f1656e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118522022"
 ---
 # <a name="id3dxbaseeffectsetmatrixarray-method"></a>Método ID3DXBaseEffect::SetMatrixArray
 
-Establece una matriz de matrices no transpuestas.
+Establece una matriz de matrices no transaccionadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Matriz de matrices no transpuestas. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
+Matriz de matrices no transaccionadas. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 

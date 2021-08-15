@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para la conexión TCP/IP de IPv4 y los eventos Accept. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para eventos de conexión y aceptación TCP/IP IPv4. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: a9b33ceb-7d50-4cd7-8224-0b2cf895b3b4
-title: TcpIp_TypeGroup2 (clase)
+title: TcpIp_TypeGroup2 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,18 +27,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 398b6b0e2b7e4684481f13f73bdd94ef4cd76829
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 316daec5b6bb186756f8597a63ee35d18125181b6575ae24c8ba8fae63f53d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814505"
 ---
-# <a name="tcpip_typegroup2-class"></a>\_Clase TypeGroup2 de TCPIP
+# <a name="tcpip_typegroup2-class"></a>Clase \_ TypeGroup2 de TcpIp
 
-Esta clase es la clase de tipo de evento para la conexión TCP/IP de IPv4 y los eventos Accept.
+Esta clase es la clase de tipo de evento para eventos de conexión y aceptación TCP/IP IPv4.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,33 +66,33 @@ class TcpIp_TypeGroup2 : TcpIp
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ TypeGroup2 de TCPIP** tiene estos tipos de miembros:
+La **clase \_ TypeGroup2** de TcpIp tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ TypeGroup2 de TCPIP** tiene estas propiedades.
+La **clase \_ TypeGroup2** de TcpIp tiene estas propiedades.
 
 <dl> <dt>
 
 **connid**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (15)**, **puntero**
+Calificadores: **WmiDataId(15)**, **Pointer**
 </dt> </dl>
 
-Un identificador de conexión único para correlacionar los eventos que pertenecen a la misma conexión.
+Identificador de conexión único para poner en correlación los eventos que pertenecen a la misma conexión.
 
 </dd> <dt>
 
-**daddr**
+**dr**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -101,7 +101,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (3)**, **extensión ("IPAddrV4")**
+Calificadores: **WmiDataId(3)**, **Extension("IPAddrV4")**
 </dt> </dl>
 
 Dirección IP de destino.
@@ -117,39 +117,39 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (5)**, **extensión ("puerto")**
+Calificadores: **WmiDataId(5)**, **Extension("Port")**
 </dt> </dl>
 
 Número de puerto de destino.
 
 </dd> <dt>
 
-**MSS**
+**Mss**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (7)**
+Calificadores: **WmiDataId(7)**
 </dt> </dl>
 
 Tamaño máximo del segmento.
 
 </dd> <dt>
 
-**ID**
+**Pid**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (1)**
+Calificadores: **WmiDataId(1)**
 </dt> </dl>
 
 Identificador del proceso asociado a la solicitud.
@@ -159,16 +159,16 @@ Identificador del proceso asociado a la solicitud.
 **rcvwin**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (11)**
+Calificadores: **WmiDataId(11)**
 </dt> </dl>
 
-Tamaño de la ventana de recepción de TCP.
+Tamaño de la ventana de recepción TCP.
 
 </dd> <dt>
 
@@ -181,26 +181,26 @@ Tipo de datos: **sint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (12)**
+Calificadores: **WmiDataId(12)**
 </dt> </dl>
 
-Factor de escala de la ventana de recepción de TCP.
+Factor de escalado de ventana de recepción TCP.
 
 </dd> <dt>
 
-**sackopt**
+**tabotón**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (8)**
+Calificadores: **WmiDataId(8)**
 </dt> </dl>
 
-Opción de confirmación selectiva (SACK) en el encabezado TCP.
+Opción confirmación selectiva (SOAP) en el encabezado TCP.
 
 </dd> <dt>
 
@@ -213,7 +213,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (4)**, **extensión ("IPAddrV4")**
+Calificadores: **WmiDataId(4)**, **Extension("IPAddrV4")**
 </dt> </dl>
 
 Dirección IP de origen.
@@ -223,13 +223,13 @@ Dirección IP de origen.
 **seqnum**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (14)**
+Calificadores: **WmiDataId(14)**
 </dt> </dl>
 
 Número de secuencia.
@@ -239,13 +239,13 @@ Número de secuencia.
 **size**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (2)**
+Calificadores: **WmiDataId(2)**
 </dt> </dl>
 
 Tamaño del paquete.
@@ -261,14 +261,14 @@ Tipo de datos: **sint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (13)**
+Calificadores: **WmiDataId(13)**
 </dt> </dl>
 
-Factor de escala de la ventana de envío TCP.
+Factor de escalado de ventana de envío TCP.
 
 </dd> <dt>
 
-**deportivo**
+**Deporte**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -277,7 +277,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (6)**, **extensión ("puerto")**
+Calificadores: **WmiDataId(6)**, **Extension("Port")**
 </dt> </dl>
 
 Número de puerto de origen.
@@ -287,32 +287,32 @@ Número de puerto de origen.
 **tsopt**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (9)**
+Calificadores: **WmiDataId(9)**
 </dt> </dl>
 
-Opción de marca de tiempo en el encabezado TCP.
+Opción Marca de tiempo en el encabezado TCP.
 
 </dd> <dt>
 
 **wsopt**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId (10)**
+Calificadores: **WmiDataId(10)**
 </dt> </dl>
 
-Opción de escala de ventana en el encabezado TCP.
+Opción Escala de ventana en el encabezado TCP.
 
 </dd> </dl>
 
@@ -320,18 +320,18 @@ Opción de escala de ventana en el encabezado TCP.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Luego**](tcpip.md)
+[**Tcpip**](tcpip.md)
 </dt> </dl>
 
  

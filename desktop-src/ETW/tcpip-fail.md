@@ -14,14 +14,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 897c42a1c2530d3e41d1f937d5d59356a2913e2b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cd637db3f509e8c23de764eb82cc35b49cb435a7772a14adbe2954d292696e55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814535"
 ---
-# <a name="tcpip_fail-class"></a>TcpIp \_ Fail (clase)
+# <a name="tcpip_fail-class"></a>Clase TcpIp \_ Fail
 
 Esta clase es la clase de tipo de evento para los eventos de error de TCP/IP.
 
@@ -59,7 +59,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Motivo del error. Puede ser uno de los códigos siguientes:
+Motivo del error. Puede ser uno de los siguientes códigos:
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ Motivo del error. Puede ser uno de los códigos siguientes:
 <span id="ERROR_OTHER"></span><span id="error_other"></span>**ERROR \_ OTHER** (5)
 </dt> <dt>
 
-<span id="ERROR_TIMEWAIT_ADDRESS_EXIST"></span><span id="error_timewait_address_exist"></span>**ERROR \_ TIMEWAIT \_ ADDRESS \_ EXIST** (6)
+<span id="ERROR_TIMEWAIT_ADDRESS_EXIST"></span><span id="error_timewait_address_exist"></span>**ERROR \_ LA DIRECCIÓN DE TIMEWAIT \_ \_ EXISTE** (6)
 </dt> </dl>
 
 </dd> <dt>
@@ -113,8 +113,8 @@ Identifica el protocolo. Puede ser uno de los siguientes valores:
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicenseManagement RestoreLicenses (wmdrmsdk. h)
-description: El método RestoreLicenses restaura las licencias de una copia de seguridad de licencias que se creó mediante una llamada al método BackupLicenses.
+title: Método IWMDRMLicenseManagement RestoreLicenses (Wmdrmsdk.h)
+description: El método RestoreLicenses restaura licencias a partir de una copia de seguridad de licencia que se creó mediante una llamada al método BackupLicenses.
 ms.assetid: 83e4b748-0f69-4a9e-b531-047c9a2be1fe
 keywords:
-- Método RestoreLicenses formato de Windows Media
-- Método RestoreLicenses formato de Windows Media, interfaz IWMDRMLicenseManagement
-- Interfaz IWMDRMLicenseManagement formato de Windows Media, método RestoreLicenses
+- Método RestoreLicenses windows Media Format
+- Método RestoreLicenses windows Media Format , IWMDRMLicenseManagement (interfaz)
+- IWMDRMLicenseManagement interface windows Media Format , RestoreLicenses method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb07f3989ff19faa723e4b1d1cd50dc4e269f219
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2a35fdd33df2387bb59dfac64f554dd8b5953fa3015afec6ca643725b9bd58f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117846943"
 ---
-# <a name="iwmdrmlicensemanagementrestorelicenses-method"></a>IWMDRMLicenseManagement:: RestoreLicenses (método)
+# <a name="iwmdrmlicensemanagementrestorelicenses-method"></a>IWMDRMLicenseManagement::RestoreLicenses (Método)
 
-El método **RestoreLicenses** restaura las licencias de una copia de seguridad de licencias que se creó mediante una llamada al método [**BackupLicenses**](iwmdrmlicensemanagement-backuplicenses.md) .
+El **método RestoreLicenses** restaura licencias a partir de una copia de seguridad de licencia que se creó mediante una llamada [**al método BackupLicenses.**](iwmdrmlicensemanagement-backuplicenses.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,48 +45,48 @@ HRESULT RestoreLicenses(
 
 <dl> <dt>
 
-*bstrBackupDirectory* \[ de\]
+*bstrBackupDirectory* \[ En\]
 </dt> <dd>
 
 Ruta de acceso UNC de la ubicación desde la que se restaurarán las licencias.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Marcas que especifican las opciones de restauración que se van a utilizar. La única marca admitida actualmente es la restauración de WMDRM \_ \_ individual, que configura el método para realizar una individualización como parte de la restauración, si es necesario.
+Marcas que especifican las opciones de restauración que se usarán. La única marca admitida actualmente es WMDRM RESTORE INDIVIDUALIZE, que configura el método para realizar la individualización como parte de la \_ \_ restauración, si es necesario.
 
 </dd> <dt>
 
-*ppunkCancelationCookie* \[ enuncia\]
+*piqueCancelationCookie* \[ out\]
 </dt> <dd>
 
-Puntero que recibe un puntero a la interfaz **IUnknown** de un objeto que identifica esta llamada asincrónica. Este puntero de interfaz se puede usar para cancelar la llamada asincrónica llamando al método [**IWMDRMEventGenerator:: CancelAsyncOperation**](iwmdrmeventgenerator-cancelasyncoperation.md) .
+Puntero que recibe un puntero a la **interfaz IUnknown** de un objeto que identifica esta llamada asincrónica. Este puntero de interfaz se puede usar para cancelar la llamada asincrónica llamando al método [**IWMDRMEventGenerator::CancelAsyncOperation.**](iwmdrmeventgenerator-cancelasyncoperation.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se ejecuta de forma asincrónica. Vuelve inmediatamente después de llamarlo y, a continuación, genera una serie de eventos **MEWMDRMLicenseRestoreProgress** seguidos de un evento **MEWMDRMLicenseRestoreCompleted** cuando se completa el procesamiento. El valor de cada uno de los eventos **MEWMDRMLicenseRestoreProgress** obtenidos mediante la llamada a **IMFMediaEvent:: GetValue** es un puntero **IUnknown** . Puede llamar al método **QueryInterface** de la interfaz **IUnknown** recuperada para obtener una instancia de la interfaz [**IWMDRMLicenseBackupRestoreStatus**](iwmdrmlicensebackuprestorestatus.md) .
+Este método se ejecuta de forma asincrónica. Devuelve inmediatamente después de llamarse y, a continuación, genera una serie de eventos **MEWMDRMLicenseRestoreProgress** seguidos de un evento **MEWMDRMLicenseRestoreCompleted** cuando se completa el procesamiento. El valor de cada uno de los eventos **MEWMDRMLicenseRestoreProgress obtenidos** mediante una llamada a **IMFMediaEvent::GetValue** es un **puntero IUnknown.** Puede llamar al **método QueryInterface** de la interfaz **IUnknown** recuperada para obtener una instancia de la [**interfaz IWMDRMLicenseBackupRestoreStatus.**](iwmdrmlicensebackuprestorestatus.md)
 
-Para obtener más información sobre el uso de los métodos asincrónicos de las API extendidas del cliente DRM de Windows Media, vea [usar el modelo de eventos de Media Foundation](using-the-media-foundation-model.md).
+Para obtener más información sobre el uso de los métodos asincrónicos de Windows MEDIA DRM Client Extended API, vea [Using the Media Foundation Event Model](using-the-media-foundation-model.md).
 
-La copia de seguridad puede estar en el equipo local o desde un equipo diferente.
+La copia de seguridad puede realizarse desde el equipo local o desde otro equipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,16 +94,16 @@ La copia de seguridad puede estar en el equipo local o desde un equipo diferente
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement (interfaz)**](iwmdrmlicensemanagement.md)
 </dt> </dl>
 
  

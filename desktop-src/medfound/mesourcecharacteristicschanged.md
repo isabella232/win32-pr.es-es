@@ -1,29 +1,29 @@
 ---
-description: Generado por un origen multimedia cuando cambian las características de los orígenes.
+description: Lo genera un origen multimedia cuando cambian las características de los orígenes.
 ms.assetid: df7bb9a3-5949-4a4a-8835-c5b1d01b5cb3
-title: Evento MESourceCharacteristicsChanged (Mfobjects. h)
+title: Evento MESourceCharacteristicsChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 659e9eea0352d131aac4959b2952e8426ae408a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd69be00727ec3f1f635b82fb6c8e29c4016959ced480be4e9de6b8a83cfe8cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877373"
 ---
 # <a name="mesourcecharacteristicschanged-event"></a>Evento MESourceCharacteristicsChanged
 
-Generado por un origen multimedia cuando cambian las características del origen.
+Lo genera un origen multimedia cuando cambian las características del origen.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
@@ -35,8 +35,8 @@ Para este evento, se definen los atributos siguientes.
 
 | Atributo                                                                                                   | Descripción                                                          |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [**\_características del \_ origen de eventos MF \_**](mf-event-source-characteristics-attribute.md)<br/>          | Nuevas características del origen multimedia.<br/> <br/>      |
-| [**\_características de origen de eventos MF \_ \_ \_ anteriores**](mf-event-source-characteristics-old-attribute.md)<br/> | Características anteriores del origen multimedia.<br/> <br/> |
+| [**CARACTERÍSTICAS DE \_ ORIGEN \_ DE EVENTOS MF \_**](mf-event-source-characteristics-attribute.md)<br/>          | Nuevas características del origen multimedia.<br/> <br/>      |
+| [**CARACTERÍSTICAS ANTIGUAS \_ DEL ORIGEN DE EVENTOS \_ \_ \_ MF**](mf-event-source-characteristics-old-attribute.md)<br/> | Características anteriores del origen de medios.<br/> <br/> |
 
 
 
@@ -44,22 +44,22 @@ Para este evento, se definen los atributos siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
 </dt> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

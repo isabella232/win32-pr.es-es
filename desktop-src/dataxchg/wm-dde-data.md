@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_DDE_DATA (DDE. h)
-description: Una aplicación de servidor Intercambio dinámico de datos (DDE) envía un \_ mensaje de datos de WM DDE \_ a una aplicación cliente DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de datos.
+title: WM_DDE_DATA (Dde.h)
+description: Una aplicación de servidor datos dinámicos Exchange (DDE) envía un mensaje WM DDE DATA a una aplicación cliente de DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de \_ \_ datos.
 ms.assetid: ed6a65d3-b2a3-45f2-9600-291ce2ec8c0a
 keywords:
-- Intercambio de datos de mensajes de WM_DDE_DATA
+- WM_DDE_DATA mensaje De datos Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f045ff07e01023e6535eb00dcb78400e4c9519a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0200737a9b25a123954498941ad117e5465f58f5313daa8caf90674751355ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736282"
 ---
-# <a name="wm_dde_data-message"></a>\_Mensaje de datos DDE de WM \_
+# <a name="wm_dde_data-message"></a>Mensaje \_ WM DDE \_ DATA
 
-Una aplicación de servidor Intercambio dinámico de datos (DDE) envía un mensaje de **\_ \_ datos de WM DDE** a una aplicación cliente DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de datos.
+Una aplicación de servidor datos dinámicos Exchange (DDE) envía un mensaje **WM \_ DDE \_ DATA** a una aplicación cliente DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de datos.
 
-Para enviar este mensaje, llame a la función [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con los parámetros siguientes.
+Para publicar este mensaje, llame a la [**función PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con los parámetros siguientes.
 
 
 ```C++
@@ -48,54 +48,54 @@ Identificador de la ventana del servidor que publica el mensaje.
 *lParam* 
 </dt> <dd>
 
-La palabra de orden inferior es un identificador de un objeto de memoria global que contiene una estructura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) con los datos e información adicional. El identificador se debe establecer en **null** si el servidor notifica al cliente que el valor del elemento de datos ha cambiado durante un vínculo de datos semiactivos. El cliente establece un vínculo en caliente mediante el envío de un mensaje de [**\_ \_ notificación de WM DDE**](wm-dde-advise.md) con el conjunto de bits **fDeferUpd** .
+La palabra de orden bajo es un identificador de un objeto de memoria global que contiene una estructura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) con los datos y la información adicional. El identificador debe establecerse en **NULL** si el servidor notifica al cliente que el valor del elemento de datos ha cambiado durante un vínculo de datos en caliente. El cliente que envía un mensaje [**DE \_ DDE \_ ADVISE de WM**](wm-dde-advise.md) con el conjunto de bits **fDeferUpd** establece un vínculo en caliente.
 
-La palabra de orden superior contiene un átomo que identifica el elemento de datos para el que se envían los datos o la notificación.
+La palabra de orden superior contiene un atom que identifica el elemento de datos para el que se envían los datos o la notificación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-### <a name="posting"></a>Config
+### <a name="posting"></a>Publicar
 
-La aplicación de servidor asigna el objeto de memoria global mediante la función [**GlobalAlloc**](/windows/desktop/api/winbase/nf-winbase-globalalloc) . Asigna el átomo mediante la función [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) .
+La aplicación de servidor asigna el objeto de memoria global mediante la [**función GlobalAlloc.**](/windows/desktop/api/winbase/nf-winbase-globalalloc) Asigna el atom mediante la [**función GlobalAddAtom.**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
 
-El servidor debe crear o reutilizar el parámetro *lParam* de **\_ \_ datos DDE de WM** llamando a la función [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o a la función [**ReuseDDElParam**](/windows/desktop/api/Dde/nf-dde-reuseddelparam) .
+El servidor debe crear o reutilizar el parámetro **wm \_ DDE \_ DATA** *lParam* llamando a la función [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o a la [**función ReuseDDElParam.**](/windows/desktop/api/Dde/nf-dde-reuseddelparam)
 
-Si la aplicación receptora (cliente) responde con un mensaje [**de \_ \_ confirmación DDE de WM**](wm-dde-ack.md) negativo, la aplicación de posting (servidor) debe eliminar el objeto de memoria global; de lo contrario, el cliente debe eliminar el objeto después de extraer su contenido mediante una llamada a la función [**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam) .
+Si la aplicación receptora (cliente) responde con un mensaje [**\_ DDE \_ ACK**](wm-dde-ack.md) de WM negativo, la aplicación de publicación (servidor) debe eliminar el objeto de memoria global; de lo contrario, el cliente debe eliminar el objeto después de extraer su contenido llamando a la función [**UnpackDDElParam.**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
 
-Si la aplicación de servidor establece el miembro **fRelease** de la estructura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) en **false**, el servidor es responsable de eliminar el objeto al recibir una confirmación positiva o negativa.
+Si la aplicación de servidor establece el miembro **fRelease** de la estructura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) en **FALSE,** el servidor es responsable de eliminar el objeto al recibir una confirmación positiva o negativa.
 
-La aplicación de servidor no debe establecer los miembros **fAckReq** y **fRelease** de la estructura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) en **false**. Si ambos miembros están establecidos en **false**, no es posible que el servidor determine Cuándo se debe eliminar el objeto.
+La aplicación de servidor no debe establecer los miembros **fAckReq** y **fRelease** de la [**estructura DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) en **FALSE.** Si ambos miembros se establecen en **FALSE,** es imposible que el servidor determine cuándo eliminar el objeto.
 
 ### <a name="receiving"></a>Recepción
 
-Si **fAckReq** es **true**, la aplicación cliente debe exponer el mensaje de [**\_ \_ confirmación de WM DDE**](wm-dde-ack.md) para responder positiva o negativamente. Al publicar **la \_ \_ confirmación de WM DDE**, el cliente puede volver a usar el átomo, o bien puede eliminarlo y crear uno nuevo.
+Si **fAckReq** es **TRUE,** la aplicación cliente debe publicar el mensaje [**wm \_ DDE \_ ACK**](wm-dde-ack.md) para responder de forma positiva o negativa. Al publicar **WM \_ DDE \_ ACK,** el cliente puede reutilizar el atom o puede eliminarlo y crear uno nuevo.
 
-El cliente debe crear o volver a usar el parámetro *lParam* de la [**\_ \_ confirmación de WM DDE**](wm-dde-ack.md) mediante una llamada a la función [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o a la función [**ReuseDDElParam**](/windows/desktop/api/Dde/nf-dde-reuseddelparam) .
+El cliente debe crear o reutilizar el parámetro [**wm \_ DDE \_ ACK**](wm-dde-ack.md) *lParam* llamando a la función [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o a la [**función ReuseDDElParam.**](/windows/desktop/api/Dde/nf-dde-reuseddelparam)
 
-Si **fAckReq** es **false**, la aplicación cliente debe eliminar el átomo.
+Si **fAckReq** es **FALSE,** la aplicación cliente debe eliminar el atom.
 
-Si la aplicación de publicación especifica el objeto de memoria global como **null**, la aplicación receptora puede solicitar al servidor que envíe los datos mediante la publicación de un mensaje de [**solicitud de \_ DDE \_ de WM**](wm-dde-request.md) .
+Si la aplicación de publicación especificó el objeto de memoria global como **NULL,** la aplicación receptora puede solicitar al servidor que envíe los datos mediante la publicación de un mensaje [**WM \_ DDE \_ REQUEST.**](wm-dde-request.md)
 
-Después de procesar un mensaje de **\_ \_ datos de DDE de WM** en el que el objeto de memoria global no es **null**, el cliente debe liberar el objeto, a menos que se cumpla una de las condiciones siguientes:
+Después de procesar un **mensaje WM \_ DDE \_ DATA** en el que el objeto de memoria global no es **NULL,** el cliente debe liberar el objeto, a menos que se cumple una de las condiciones siguientes:
 
--   El miembro **fRelease** es **false**.
--   El miembro **fRelease** es **true**, pero la aplicación cliente responde con un mensaje de [**\_ \_ confirmación DDE de WM**](wm-dde-ack.md) negativo.
+-   El **miembro fRelease** es **FALSE.**
+-   El **miembro fRelease** es **TRUE,** pero la aplicación cliente responde con un mensaje [**wm \_ DDE \_ ACK**](wm-dde-ack.md) negativo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>DDE. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dde.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -123,25 +123,25 @@ Después de procesar un mensaje de **\_ \_ datos de DDE de WM** en el que el obj
 [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage)
 </dt> <dt>
 
-[**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
+[**DesempaquetarDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
 </dt> <dt>
 
-[**\_confirmación de DDE de WM \_**](wm-dde-ack.md)
+[**WM \_ DDE \_ ACK**](wm-dde-ack.md)
 </dt> <dt>
 
-[**\_aviso de DDE de WM \_**](wm-dde-advise.md)
+[**WM \_ DDE \_ ADVISE**](wm-dde-advise.md)
 </dt> <dt>
 
-[**hiperdinámico de WM \_ \_**](wm-dde-poke.md)
+[**WM \_ DDE \_ POKE**](wm-dde-poke.md)
 </dt> <dt>
 
-[**\_solicitud de DDE de WM \_**](wm-dde-request.md)
+[**SOLICITUD \_ DE DDE DE \_ WM**](wm-dde-request.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Acerca de Intercambio dinámico de datos](about-dynamic-data-exchange.md)
+[Acerca de datos dinámicos Exchange](about-dynamic-data-exchange.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: La función SetNetworkInfoInBlob rellena la estructura NETWORKINFO del BLOB.
 ms.assetid: 1a511c26-2fa7-4fe4-a5a9-23188c59bc34
-title: Función SetNetworkInfoInBlob (Netmon. h)
+title: Función SetNetworkInfoInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: a0019bfaf802b5d4dc80d73e75affa3c50d95de1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb83fffc219cb7cc82b2b20d6672cef0b74a6cf108577126e4200a3342edaa2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364073"
 ---
-# <a name="setnetworkinfoinblob-function"></a>SetNetworkInfoInBlob función)
+# <a name="setnetworkinfoinblob-function"></a>Función SetNetworkInfoInBlob
 
-La función **SetNetworkInfoInBlob** rellena la estructura **NETWORKINFO** del BLOB.
+La **función SetNetworkInfoInBlob** rellena la **estructura NETWORKINFO** del BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,41 +40,41 @@ DWORD SetNetworkInfoInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB.
 
 </dd> <dt>
 
-*lpNetworkInfo* \[ de\]
+*lpNetworkInfo* \[ En\]
 </dt> <dd>
 
-Puntero a la estructura [NETWORKINFO](networkinfo.md) asignada por el usuario que la función rellena.
+Puntero a la estructura [NETWORKINFO](networkinfo.md) asignada por el usuario que rellena la función.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

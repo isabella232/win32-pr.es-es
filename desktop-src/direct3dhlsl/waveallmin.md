@@ -1,9 +1,9 @@
 ---
-title: WaveActiveMin función)
-description: Devuelve el valor mínimo de la expresión en todas las calles activas de la onda actual lo replica de nuevo en todas las calles activas.
+title: Función WaveActiveMin
+description: Devuelve el valor mínimo de la expresión en todos los calles activas de la onda actual y la replica de nuevo en todos los sentidos activos.
 ms.assetid: BA762C02-894C-4AF9-A226-C1E3AAC286FF
 keywords:
-- WaveActiveMin de función HLSL
+- Función WaveActiveMin HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 91555df354ab2b7ffc447a9422c4811ae23e6e0c
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: b97f2e58449e8b33270318f305a6fee87662a6aac4643b35152024366bf8b08b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721792"
 ---
-# <a name="waveactivemin-function"></a>WaveActiveMin función)
+# <a name="waveactivemin-function"></a>Función WaveActiveMin
 
-Devuelve el valor mínimo de la expresión en todas las calles activas de la onda actual lo replica de nuevo en todas las calles activas.
+Devuelve el valor mínimo de la expresión en todos los calles activas de la onda actual y la replica de nuevo en todos los sentidos activos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,11 +47,11 @@ La expresión que se va a evaluar.
 
 Valor mínimo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El orden de las operaciones es indefinido.
 
-Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del sombreador. 
+Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador. 
 
 
 
@@ -68,7 +68,7 @@ Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del
 
 <dl> <dt>
 
-[Información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modelo de sombreador 6](shader-model-6-0.md)

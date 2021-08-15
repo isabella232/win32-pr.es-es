@@ -1,9 +1,9 @@
 ---
-title: DDCCIGetTimingReport función)
+title: Función DDCCIGetTimingReport
 description: Obtiene las frecuencias de sincronización horizontal y vertical de un monitor.
 ms.assetid: d490cb89-082a-42a1-ac0a-335c929cd5d7
 keywords:
-- Configuración del monitor de función DDCCIGetTimingReport
+- Configuración del monitor de la función DDCCIGetTimingReport
 topic_type:
 - apiref
 api_name:
@@ -14,17 +14,17 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b87cb4269c2cdff2303bbe763905cb572acfbb7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 930149ebc2acfa69f479c889c6fa2c33acdfb3f528a67f83ee0bfbe7ab0467a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382368"
 ---
-# <a name="ddccigettimingreport-function"></a>DDCCIGetTimingReport función)
+# <a name="ddccigettimingreport-function"></a>Función DDCCIGetTimingReport
 
 > [!IMPORTANT]
-> La API de configuración de monitor usa esta función para tener acceso a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
+> La API de configuración de monitor usa esta función para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
 
  
 
@@ -46,43 +46,43 @@ NTSTATUS WINAPI DDCCIGetTimingReport(
 
 <dl> <dt>
 
-*hMonitor* \[ de\]
+*hMonitor* \[ En\]
 </dt> <dd>
 
 Identificador de un monitor físico.
 
 </dd> <dt>
 
-*PMTR* \[ enuncia\]
+*pmtr* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ \_ Informe de temporización de MC**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ns-lowlevelmonitorconfigurationapi-mc_timing_report) que recibe la información de control de tiempo.
+Puntero a una estructura [**MC \_ TIMING \_ REPORT**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ns-lowlevelmonitorconfigurationapi-mc_timing_report) que recibe la información de control de tiempo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve el **estado \_ correcto**. De lo contrario, devuelve un código de error **NTSTATUS** .
+Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones deben llamar a [**GetTimingReport**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-gettimingreport) en lugar de llamar a esta función.
+Las aplicaciones deben llamar [**a GetTimingReport en**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-gettimingreport) lugar de llamar a esta función.
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

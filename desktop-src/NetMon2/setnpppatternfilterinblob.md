@@ -1,7 +1,7 @@
 ---
-description: Establece el filtro de coincidencia de patrones de BLOB.
+description: Establece el filtro de coincidencia del patrón BLOB.
 ms.assetid: 44e7c67a-f430-4d68-bc7f-f6bbd5b9e5a9
-title: Función SetNPPPatternFilterInBlob (Netmon. h)
+title: Función SetNPPPatternFilterInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: b2e8989264a042368b37926bbb502f48ab2fb04b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a920d6ffc135855826719e31613119a27671e334d5a75ce7dba29c2b140816fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363756"
 ---
-# <a name="setnpppatternfilterinblob-function"></a>SetNPPPatternFilterInBlob función)
+# <a name="setnpppatternfilterinblob-function"></a>Función SetNPPPatternFilterInBlob
 
-La función **SetNPPPatternFilterInBlob** establece el filtro de coincidencia de patrones de BLOB.
+La **función SetNPPPatternFilterInBlob** establece el filtro de coincidencia del patrón BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,52 +41,52 @@ DWORD SetNPPPatternFilterInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador del BLOB.
 
 </dd> <dt>
 
-*pExpression* \[ de\]
+*pExpression* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [expresión](expression.md) que define la expresión de filtro que se va a establecer.
+Puntero a una estructura [EXPRESSION](expression.md) que define la expresión de filtro que se va a establecer.
 
 </dd> <dt>
 
-*hErrorBlob* \[ enuncia\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que especifica dónde se produjo el error (si existe) en el BLOB original.
+Identificador de un BLOB de error que especifica dónde en el BLOB original se produjo el error (si lo hubiera).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función **SetNPPPatternFilterInBlob** se ejecuta correctamente, el valor devuelto es NMERR \_ Success.
+Si la **función SetNPPPatternFilterInBlob** es correcta, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los datos del filtro de coincidencia de patrones almacenados en la categoría de **configuración** del BLOB.
+Los datos de filtro de coincidencia de patrones almacenados **en la categoría Config** del BLOB.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

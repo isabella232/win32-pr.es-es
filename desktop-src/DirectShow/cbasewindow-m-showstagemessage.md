@@ -1,7 +1,7 @@
 ---
-description: Mensaje privado que coloca la ventana en primer plano.
+description: Mensaje privado que pone la ventana en primer plano.
 ms.assetid: 88b28888-d729-4cf3-8b9d-618dbe150926
-title: 'Miembro CBaseWindow:: m_ShowStageMessage (Winutil. h)'
+title: CBaseWindow::m_ShowStageMessage miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ccf358eba577c0ee950f8628090a2f3024297fe3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37897747d9a144935055d734cbc02fdade611b3b1abbdddcc6efc25129f55279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822365"
 ---
-# <a name="cbasewindowm_showstagemessage-member"></a>Miembro ShowStageMessage CBaseWindow:: m \_
+# <a name="cbasewindowm_showstagemessage-member"></a>Miembro ShowStageMessage de CBaseWindow::m \_
 
-Mensaje privado que coloca la ventana en primer plano.
+Mensaje privado que pone la ventana en primer plano.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ UINT m_ShowStageMessage;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBaseWindow::D osetwindowforeground**](cbasewindow-dosetwindowforeground.md) envía este mensaje.
+El [**método CBaseWindow::D oSetWindowForeground**](cbasewindow-dosetwindowforeground.md) envía este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,16 +46,16 @@ El método [**CBaseWindow::D osetwindowforeground**](cbasewindow-dosetwindowfore
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

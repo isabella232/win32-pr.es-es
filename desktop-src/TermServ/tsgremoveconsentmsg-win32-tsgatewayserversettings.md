@@ -1,12 +1,12 @@
 ---
-title: Método TSGRemoveConsentMsg de la clase Win32_TSGatewayServerSettings
-description: Quita el mensaje administrativo del servidor de puerta de enlace. | Método TSGRemoveConsentMsg de la clase Win32_TSGatewayServerSettings
+title: Método TSGRemoveConsentMsg de la Win32_TSGatewayServerSettings clase
+description: Quita el mensaje administrativo del servidor de puerta de enlace. | Método TSGRemoveConsentMsg de la Win32_TSGatewayServerSettings clase
 ms.assetid: 626dc9ca-d6a1-48ab-84ec-cfccb8e720c2
 ms.tgt_platform: multiple
 keywords:
 - Método TSGRemoveConsentMsg Servicios de Escritorio remoto
-- Método TSGRemoveConsentMsg Servicios de Escritorio remoto, clase Win32_TSGatewayServerSettings
-- Win32_TSGatewayServerSettings de clase Servicios de Escritorio remoto, método TSGRemoveConsentMsg
+- Método TSGRemoveConsentMsg Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto , método TSGRemoveConsentMsg
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24cd002ebb1a953d25cf129b4e5f3b4174842199
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ee41bc88a653cd1529b94d2c939b77dd112591bd42e5f001e4fe5742bb3f92e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117755997"
 ---
-# <a name="tsgremoveconsentmsg-method-of-the-win32_tsgatewayserversettings-class"></a>Método TSGRemoveConsentMsg de la \_ clase TSGatewayServerSettings de Win32
+# <a name="tsgremoveconsentmsg-method-of-the-win32_tsgatewayserversettings-class"></a>Método TSGRemoveConsentMsg de la clase \_ TSGatewayServerSettings de Win32
 
 Quita el mensaje administrativo del servidor de puerta de enlace.
 
@@ -43,31 +43,31 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                        |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

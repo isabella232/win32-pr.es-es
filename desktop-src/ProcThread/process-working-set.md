@@ -4,18 +4,18 @@ ms.assetid: 6017ef59-d2e9-4245-a406-8965024dbb35
 title: Conjunto de trabajo de proceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aaded3d0b5f8c6ad552cc728c68ad0407391c343
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: a345df46f4d36e8400112c54492d7844c7a46b5d5ae125a3d9103db9cbcc18c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111549907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117793513"
 ---
 # <a name="process-working-set"></a>Conjunto de trabajo de proceso
 
 El *espacio de trabajo* de un programa es una colección de esas páginas de su espacio de direcciones virtuales a las que se ha hecho referencia recientemente. Incluye datos compartidos y privados. Los datos compartidos incluyen páginas que contienen todas las instrucciones que ejecuta la aplicación, incluidas las de los archivos DLL y los archivos DLL del sistema. A medida que aumenta el tamaño del espacio de trabajo, aumenta la demanda de memoria.
 
-Un proceso tiene un tamaño de espacio de trabajo mínimo asociado y un tamaño máximo del espacio de trabajo. Cada vez que se [**llama a CreateProcess,**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa)se reserva el tamaño mínimo del espacio de trabajo para el proceso. El administrador de memoria virtual intenta mantener suficiente memoria para el espacio de trabajo mínimo que residen cuando el proceso está activo, pero no conserva más del tamaño máximo.
+Un proceso tiene asociado un tamaño mínimo de espacio de trabajo y un tamaño máximo del espacio de trabajo. Cada vez que se [**llama a CreateProcess,**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa)se reserva el tamaño mínimo del espacio de trabajo para el proceso. El administrador de memoria virtual intenta mantener suficiente memoria para el espacio de trabajo mínimo que residen cuando el proceso está activo, pero no conserva más del tamaño máximo.
 
 Para obtener los tamaños mínimo y máximo solicitados del espacio de trabajo para la aplicación, llame a la [**función GetProcessWorkingSetSize.**](/windows/desktop/api/memoryapi/nf-memoryapi-getprocessworkingsetsize)
 

@@ -1,11 +1,11 @@
 ---
-title: 'RID: atributo de Grupo disponible'
+title: Atributo RID-Available-Pool
 description: Espacio desde el que se asignan los grupos de RID.
 ms.assetid: abb6218f-def2-4a38-964f-3f0ee6c6f917
 ms.tgt_platform: multiple
 keywords:
-- RID-available-Pool atributo AD Schema
-- rIDAvailablePool esquema de AD de atributos
+- Esquema de AD del atributo RID-Available-Pool
+- Esquema de AD del atributo rIDAvailablePool
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59faf801b7f6f70e92c55a1d2a27857ed6ecb0c9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: edb3a616d0c687b0dc5514b0dcf54ff5832ffc2a9175f99328bec025c8bde53f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104274589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423591"
 ---
-# <a name="rid-available-pool-attribute"></a>RID: atributo de Grupo disponible
+# <a name="rid-available-pool-attribute"></a>Atributo RID-Available-Pool
 
 Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | RID: Grupo de disponibilidad                   |
-| Nombre para mostrar de LDAP | rIDAvailablePool                     |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | Rid-Available-Pool                   |
+| Ldap-Display-Name | rIDAvailablePool                     |
+| Size              | 8 bytes                              |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.370               |
-| System-ID-GUID    | 66171888-8f3c-11d0-afda-00c04fd930c9 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 66171888-8f3c-11d0-afda-00c04fd930c9 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -53,20 +53,20 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**Administrador de RID**](c-ridmanager.md)<br/> |
+| Clases usadas en        | [**Rid-Manager**](c-ridmanager.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**Administrador de RID**](c-ridmanager.md)<br/> |
+| Clases usadas en        | [**Rid-Manager**](c-ridmanager.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**Administrador de RID**](c-ridmanager.md)<br/> |
+| Clases usadas en        | [**Rid-Manager**](c-ridmanager.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**Administrador de RID**](c-ridmanager.md)<br/> |
+| Clases usadas en        | [**Rid-Manager**](c-ridmanager.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**Administrador de RID**](c-ridmanager.md)<br/> |
+| Clases usadas en        | [**Rid-Manager**](c-ridmanager.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**Administrador de RID**](c-ridmanager.md)<br/> |
+| Clases usadas en        | [**Rid-Manager**](c-ridmanager.md)<br/> |
 
 
 

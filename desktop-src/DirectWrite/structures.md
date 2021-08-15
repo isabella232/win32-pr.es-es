@@ -1,19 +1,19 @@
 ---
-title: Estructuras de DirectWrite
+title: DirectWrite estructuras
 description: DirectWrite define las estructuras siguientes.
 ms.assetid: 348dd001-bad9-4f1a-a5f5-84b118a5e2d4
 keywords:
 - DirectWrite,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19f678be8e02c8afecd849673d97ae20f6b1a710
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: eaa3d4d98588e3585022bb0887c6224e29d67e0c0d011437526b33ff0bcf1334
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117815958"
 ---
-# <a name="directwrite-structures"></a>Estructuras de DirectWrite
+# <a name="directwrite-structures"></a>DirectWrite estructuras
 
 DirectWrite define las estructuras siguientes.
 
@@ -25,7 +25,7 @@ DirectWrite define las estructuras siguientes.
 | [**MÉTRICAS \_ DE DWRITE CARET \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_caret_metrics) | La [**estructura DWRITE \_ CARET \_ METRICS**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_caret_metrics) especifica las métricas para la colocación del elemento de inserción en una fuente. |
 | [**MÉTRICAS DE CLÚSTER DE DWRITE \_ \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_cluster_metrics) | Contiene información sobre un clúster de glifos. |
 | [**DWRITE \_ COLOR \_ F**](dwrite-color-f.md) | Describe los componentes rojo, verde, azul y alfa de un color. |
-| [**EJECUCIÓN DEL \_ GLIFO DE COLOR \_ DWRITE \_**](/windows/win32/api/DWrite_2/ns-dwrite_2-dwrite_color_glyph_run) | Contiene la información necesaria para que los representadores dibujen ejecuciones de glifo con información de color de glifo. |
+| [**EJECUCIÓN DEL GLIFO \_ \_ DE COLOR DWRITE \_**](/windows/win32/api/DWrite_2/ns-dwrite_2-dwrite_color_glyph_run) | Contiene la información necesaria para que los representadores dibujen ejecuciones de glifo con información de color de glifo. |
 | [**DWRITE \_ COLOR \_ GLYPH \_ RUN1**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_color_glyph_run1) | Representa una ejecución de glifo de color. El método IDWriteFactory4::TranslateColorGlyphRun devuelve una colección ordenada de ejecuciones de glifos de color de distintos tipos en función de lo que admita la fuente. |
 | [**FRAGMENTO DE \_ ARCHIVO DWRITE \_**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_file_fragment) | Representa un intervalo de bytes en un archivo de fuente. |
 | [**DWRITE_FONT_AXIS_RANGE**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_axis_range) | Representa el intervalo mínimo y máximo de los valores posibles para un eje de fuente. |
@@ -39,7 +39,7 @@ DirectWrite define las estructuras siguientes.
 | [**DESPLAZAMIENTO DEL \_ GLIFO DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_offset) | Ajuste opcional en la posición de un glifo. |
 | [**EJECUCIÓN DEL \_ GLIFO DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run) | Contiene la información necesaria para que los representadores dibujen ejecuciones de glifo. |
 | [**DESCRIPCIÓN DE EJECUCIÓN \_ DEL \_ GLIFO DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run_description) | Contiene propiedades adicionales relacionadas con las de [**DWRITE \_ GLYPH \_ RUN**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run). |
-| [**MÉTRICAS DE \_ PRUEBAS DE IMPACTO DE DWRITE \_ \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_hit_test_metrics) | Describe la región obtenida por una prueba de acceso. |
+| [**MÉTRICAS DE \_ PRUEBAS DE \_ IMPACTO DE DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_hit_test_metrics) | Describe la región obtenida por una prueba de acceso. |
 | [**MÉTRICAS \_ DE OBJETOS EN LÍNEA \_ DE DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_inline_object_metrics) | Contiene propiedades que describen la medida geométrica de un objeto en línea definido por la aplicación. |
 | [**OPORTUNIDAD DE \_ JUSTIFICACIÓN DE \_ DWRITE**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_justification_opportunity) | La [**estructura DWRITE \_ JUSTIFICATION \_ OPPORTUNITY**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_justification_opportunity) especifica la información de justificación por glifo. |
 | [**PUNTO DE \_ INTERRUPCIÓN DE LÍNEA \_ DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_breakpoint) | Características de punto de interrupción de línea de un carácter. |

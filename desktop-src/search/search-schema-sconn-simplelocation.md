@@ -1,21 +1,21 @@
 ---
-description: El <simpleLocation> elemento especifica la ubicación de los conectores de búsqueda basados en el sistema de archivos o en el controlador de protocolo. Este elemento tiene dos elementos secundarios y ningún atributo.
+description: El elemento especifica la ubicación de los conectores de búsqueda basados en el sistema de archivos <simpleLocation> o en el controlador de protocolos. Este elemento tiene dos elementos secundarios y ningún atributo.
 ms.assetid: 04ffc178-0a76-4870-a075-a2ecd31937a1
-title: Elemento simpleLocation (esquema del conector de búsqueda)
+title: elemento simpleLocation (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d12c17ace36314ceb180f14b6de0eb7a890a385b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82731c5a230f8dd12b9d73cafd75dfc7d3cdd66bf1e57120701ed3ca0ba54b07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117862466"
 ---
-# <a name="simplelocation-element-search-connector-schema"></a>Elemento simpleLocation (esquema del conector de búsqueda)
+# <a name="simplelocation-element-search-connector-schema"></a>elemento simpleLocation (esquema del conector de búsqueda)
 
-El <simpleLocation> elemento especifica la ubicación de los conectores de búsqueda basados en el sistema de archivos o en el controlador de protocolo. Este elemento tiene dos elementos secundarios y ningún atributo.
+El elemento especifica la ubicación de los conectores de búsqueda basados en el sistema de archivos <simpleLocation> o en el controlador de protocolos. Este elemento tiene dos elementos secundarios y ningún atributo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -45,16 +45,16 @@ El <simpleLocation> elemento especifica la ubicación de los conectores de búsq
 
 | Elemento primario                                                                                                   | Elementos secundarios                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Elemento searchConnectorDescriptionType (esquema del conector de búsqueda)](search-schema-searchconnectordescription.md) | [simpleLocation URL (elemento) (esquema del conector de búsqueda)](search-schema-sconn-url.md)                                                                                                                                                                                                                                |
-|                                                                                                                  | serializado: este elemento contiene la ShellLink con codificación Base64 que apunta a la ubicación definida en el <url> elemento. Windows 7 crea el ShellLink a partir del valor del <url> elemento y actualiza correctamente este campo en la primera carga de esta biblioteca, por lo que el autor debe dejarlo vacío. |
+| [Elemento searchConnectorDescriptionType (esquema del conector de búsqueda)](search-schema-searchconnectordescription.md) | [Elemento simpleLocation url (esquema del conector de búsqueda)](search-schema-sconn-url.md)                                                                                                                                                                                                                                |
+|                                                                                                                  | serialized: este elemento contiene el shellLink codificado en base64 que apunta a la ubicación definida en el <url> elemento . Windows 7 crea ShellLink a partir del valor del elemento y actualiza correctamente este campo en la primera carga de esta biblioteca, por lo que el autor debe dejarla <url> vacía. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este elemento se puede usar en lugar de <locationProvider> cuando la ubicación está en el sistema de archivos o el conector es un controlador de protocolo conocido (como MAPI:). Si <simpleLocation> está presente, no debe haber un <locationProvider> elemento. En el caso de los conectores de búsqueda de proveedores de servicios Web, use el [<locationProvider>](search-schema-sconn-locationprovider.md) elemento en su lugar.
+Este elemento se puede usar en lugar de cuando la ubicación está en el sistema de archivos o el conector es un controlador de <locationProvider> protocolo conocido (como mapi:). Si <simpleLocation> está presente, NO DEBE haber un <locationProvider> elemento . Para los conectores de búsqueda del proveedor de servicios web, use el [<locationProvider>](search-schema-sconn-locationprovider.md) elemento en su lugar.
 
 ## <a name="examples"></a>Ejemplos
 

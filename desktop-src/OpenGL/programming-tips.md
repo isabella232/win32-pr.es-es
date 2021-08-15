@@ -6,24 +6,24 @@ keywords:
 - OpenGL, sugerencias de programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07ccd12f7676b87fb7e3f1b61670944de5015bec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5120b5b8c695b2689dc3222dfc70a5faa5901165034e5691a9d9d540d97cecd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118358295"
 ---
 # <a name="programming-tips"></a>Sugerencias de programación
 
-En esta sección se enumeran algunas directrices de programación útiles. Estas sugerencias se basan en las intenciones de los diseñadores de OpenGL, no en la experiencia con aplicaciones e implementaciones reales. Esta sección contiene los temas siguientes:
+En esta sección se enumeran algunas directrices de programación útiles. Estas sugerencias se basan en las intenciones de los diseñadores de OpenGL, no en la experiencia con las aplicaciones e implementaciones reales. Esta sección contiene los temas siguientes:
 
--   [Sugerencias de corrección de OpenGL](opengl-correctness-tips.md)
--   [Sugerencias de rendimiento de OpenGL](opengl-performance-tips.md)
+-   [Corrección de OpenGL Sugerencias](opengl-correctness-tips.md)
+-   [Rendimiento de OpenGL Sugerencias](opengl-performance-tips.md)
 -   [Consideraciones de seguridad: OpenGL](security-considerations--opengl.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de SBM_GETPOS (Winuser. h)
-description: El \_ mensaje SBM GETPOS se envía para recuperar la posición actual del cuadro de desplazamiento de un control de barra de desplazamiento.
+title: SBM_GETPOS mensaje (Winuser.h)
+description: El mensaje GETPOS de SBM se envía para recuperar la posición actual del \_ cuadro de desplazamiento de un control de barra de desplazamiento.
 ms.assetid: 00344d93-f205-4cda-aa25-6dd065f41b6e
 keywords:
-- SBM_GETPOS controles de mensajes de Windows
+- SBM_GETPOS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d088fc790985e57928f1ab56cd42254b1a087dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0105b2c015614c9f064b2c97f60100c2240bd6588612d34b25546c7ced832bdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408898"
 ---
-# <a name="sbm_getpos-message"></a>\_Mensaje GETPOS SBM
+# <a name="sbm_getpos-message"></a>Mensaje \_ GETPOS de SBM
 
-El mensaje **SBM \_ GETPOS** se envía para recuperar la posición actual del cuadro de desplazamiento de un control de barra de desplazamiento. La posición actual es un valor relativo que depende del intervalo de desplazamiento actual. Por ejemplo, si el intervalo de desplazamiento es de 0 a 100 y el cuadro de desplazamiento está en el centro de la barra, la posición actual es 50.
+El **mensaje \_ GETPOS de SBM** se envía para recuperar la posición actual del cuadro de desplazamiento de un control de barra de desplazamiento. La posición actual es un valor relativo que depende del intervalo de desplazamiento actual. Por ejemplo, si el intervalo de desplazamiento es de 0 a 100 y el cuadro de desplazamiento está en el centro de la barra, la posición actual es 50.
 
-Las aplicaciones no deben enviar este mensaje directamente. En su lugar, deben utilizar la función [**GetScrollPos**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos) . Una ventana recibe este mensaje a través de su función [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Las aplicaciones que implementan un control de barra de desplazamiento personalizado deben responder a estos mensajes para que la función **GetScrollPos** funcione correctamente.
+Las aplicaciones no deben enviar este mensaje directamente. En su lugar, deben usar la [**función GetScrollPos.**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos) Una ventana recibe este mensaje a través de su [*función WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Las aplicaciones que implementan un control de barra de desplazamiento personalizado deben responder a estos mensajes para que la **función GetScrollPos** funcione correctamente.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -34,14 +34,14 @@ Las aplicaciones no deben enviar este mensaje directamente. En su lugar, deben u
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -53,15 +53,15 @@ El valor devuelto es la posición actual del cuadro de desplazamiento en la barr
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -71,10 +71,10 @@ El valor devuelto es la posición actual del cuadro de desplazamiento en la barr
 [**SBM \_ GETRANGE**](sbm-getrange.md)
 </dt> <dt>
 
-[**SBM \_ SETPOS**](sbm-setpos.md)
+[**SETPOS de SBM \_**](sbm-setpos.md)
 </dt> <dt>
 
-[**SBM \_ SetRange**](sbm-setrange.md)
+[**SETRANGE de SBM \_**](sbm-setrange.md)
 </dt> <dt>
 
 [**SBM \_ SETRANGEREDRAW**](sbm-setrangeredraw.md)

@@ -1,27 +1,27 @@
 ---
-title: Cómo recorrer el árbol de automatización de la interfaz de usuario
-description: Este tema contiene código de ejemplo que muestra cómo usar la interfaz IUIAutomationTreeWalker para recorrer y examinar los elementos del árbol de automatización de la interfaz de usuario de Microsoft.
+title: How to Walk the Automatización de la interfaz de usuario Tree
+description: Este tema contiene código de ejemplo que muestra cómo usar la interfaz IUIAutomationTreeWalker para recorrer y examinar los elementos del árbol de Automatización de la interfaz de usuario Microsoft.
 ms.assetid: 41ca783d-56d1-4ad5-8f07-c265ff2e07bd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ed5c6c1bec961d4f0df83687cd19eecba6ed179
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 16fe6539a24f271f5c1e8042b1be9933a77f1118b27730d510026de1852d7938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324453"
 ---
-# <a name="how-to-walk-the-ui-automation-tree"></a>Cómo recorrer el árbol de automatización de la interfaz de usuario
+# <a name="how-to-walk-the-ui-automation-tree"></a>How to Walk the Automatización de la interfaz de usuario Tree
 
-Este tema contiene código de ejemplo que muestra cómo usar la interfaz [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) para recorrer y examinar los elementos del árbol de automatización de la interfaz de usuario de Microsoft. Se tratan los temas siguientes:
+Este tema contiene código de ejemplo que muestra cómo usar la interfaz [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) para recorrer y examinar los elementos del árbol de Automatización de la interfaz de usuario Microsoft. Describe los temas siguientes:
 
 -   [Recorrer los descendientes de un elemento](#walking-through-descendants-of-an-element)
--   [Recorrer elementos antecesores](#walking-through-ancestor-elements)
+-   [Recorrer los elementos antecesores](#walking-through-ancestor-elements)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="walking-through-descendants-of-an-element"></a>Recorrer los descendientes de un elemento
 
-El siguiente ejemplo de código es una función recursiva que recorre todos los descendientes de un elemento de la interfaz de usuario y muestra sus tipos de control en una lista jerárquica.
+El ejemplo de código siguiente es una función recursiva que recorre todos los descendientes de un elemento de interfaz de usuario y muestra sus tipos de control en una lista jerárquica.
 
 
 ```C++
@@ -74,9 +74,9 @@ cleanup:
 
 
 
-## <a name="walking-through-ancestor-elements"></a>Recorrer elementos antecesores
+## <a name="walking-through-ancestor-elements"></a>Recorrer los elementos antecesores
 
-El siguiente ejemplo de código es una función que le guía a través de los antecesores de un elemento para identificar el elemento primario. Esto resulta útil cuando es necesario identificar la ventana primaria de un control. La función devuelve **null** para los elementos de nivel superior; es decir, los elementos cuyo elemento primario es el escritorio.
+El ejemplo de código siguiente es una función que recorre los antecesores de un elemento para identificar el elemento primario. Esto resulta útil cuando necesita identificar la ventana primaria de un control. La función devuelve **NULL para** los elementos de nivel superior; es decir, elementos cuyo elemento primario es el escritorio.
 
 
 ```C++
@@ -153,18 +153,18 @@ cleanup:
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Obtener elementos de UI Automation](uiauto-obtainingelements.md)
 </dt> <dt>
 
-[Temas de procedimientos para clientes de automatización de la interfaz de usuario](uiauto-howto-topics-for-uiautomation-clients.md)
+[Temas de ayuda para Automatización de la interfaz de usuario clientes](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

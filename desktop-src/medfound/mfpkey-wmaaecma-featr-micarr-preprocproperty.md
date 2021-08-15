@@ -1,74 +1,74 @@
 ---
-description: Especifica si el DSP de la captura de voz realiza el preprocesamiento de la matriz de micrófono.
+description: Especifica si el DSP de captura de voz realiza el preprocesamiento de la matriz de micrófonos.
 ms.assetid: 0f197165-e6e5-456b-9615-1edc8ada7bb5
-title: Propiedad MFPKEY_WMAAECMA_FEATR_MICARR_PREPROC (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_FEATR_MICARR_PREPROC (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f992d8d26ba547eb1b5d1eac470536a963209f56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ebbba5faeb1a1e70feb1ef6182d3ac2a397a52c4a56f27e767be93f4a3fff773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873019"
 ---
-# <a name="mfpkey_wmaaecma_featr_micarr_preproc-property"></a>MFPKEY \_ WMAAECMA \_ feat \_ MICARR \_ Preproc (propiedad)
+# <a name="mfpkey_wmaaecma_featr_micarr_preproc-property"></a>Propiedad PREPROC MICARR DE MFPKEY \_ WMAAECMA \_ \_ \_ FEATR
 
-Especifica si el DSP de la captura de voz realiza el preprocesamiento de la matriz de micrófono.
+Especifica si el DSP de captura de voz realiza el preprocesamiento de la matriz de micrófonos.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
-VT \_ bool
+VT \_ BOOL
 
 ## <a name="default-value"></a>Valor predeterminado
 
-VARIANTE \_ true
+VARIANT \_ TRUE
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [DSP de captura de voz](voicecapturedmo.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El preprocesamiento puede quitar los tonos estacionales que interfieren con el procesamiento, como un tono con un tono fijo.
+El preprocesamiento puede quitar los tonos fijos que interfieren con el procesamiento, como un tono con un tono fijo.
 
-Esta propiedad puede tener los valores siguientes.
+Esta propiedad puede tener los siguientes valores.
 
 
 
-| Value          | Descripción            |
+| Valor          | Descripción            |
 |----------------|------------------------|
-| VARIANTE \_ false | Deshabilitar el preprocesamiento. |
-| VARIANTE \_ true  | Habilite el preprocesamiento.  |
+| VARIANT \_ FALSE | Deshabilite el preprocesamiento. |
+| VARIANT \_ TRUE  | Habilite el preprocesamiento.  |
 
 
 
  
 
-El valor predeterminado de esta propiedad es VARIANT \_ true (Enabled). Antes de establecer esta propiedad, debe establecer la propiedad de [ \_ modo de \_ característica \_ MFPKEY WMAAECMA](mfpkey-wmaaecma-feature-modeproperty.md) en Variant \_ true.
+El valor predeterminado de esta propiedad es VARIANT \_ TRUE (habilitado). Antes de establecer esta propiedad, debe establecer la propiedad [MFPKEY \_ WMAAECMA \_ FEATURE \_ MODE](mfpkey-wmaaecma-feature-modeproperty.md) en VARIANT \_ TRUE.
 
-El DSP usa esta propiedad solo cuando está habilitado el procesamiento de la matriz de micrófono.
+El DSP usa esta propiedad solo cuando el procesamiento de la matriz de micrófonos está habilitado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [DSP de captura de voz](voicecapturedmo.md)

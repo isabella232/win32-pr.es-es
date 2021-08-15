@@ -1,7 +1,7 @@
 ---
 description: Contiene los argumentos de un vínculo.
 ms.assetid: 938db958-4b59-4dd6-ac56-f21db05ec989
-title: Propiedad ShellLinkObject. arguments (Shldisp. h)
+title: Propiedad ShellLinkObject.Arguments (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: c9b8a32eb4b935b5164ef91bf299777b36d7e53d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3124e76ec8ba46f3e8915ac24c080c3e28caad620f7de1d100eaa7bb2316d851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857596"
 ---
-# <a name="shelllinkobjectarguments-property"></a>ShellLinkObject. arguments (propiedad)
+# <a name="shelllinkobjectarguments-property"></a>Propiedad ShellLinkObject.Arguments
 
 Contiene los argumentos de un vínculo.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -42,9 +42,9 @@ argumentos del vínculo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usan **argumentos** para recuperar los argumentos de un vínculo a Internet Explorer que se encuentra en el menú Inicio del usuario. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Arguments** para recuperar los argumentos de un vínculo a Internet Explorer que se encuentra en el menú Inicio. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -85,7 +85,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -180,13 +180,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo para aplicaciones de escritorio de Windows 2000 Professional con SP3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

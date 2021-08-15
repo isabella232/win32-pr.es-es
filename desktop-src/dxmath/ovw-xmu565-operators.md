@@ -1,22 +1,22 @@
 ---
-description: La estructura XMU565 expone los siguientes operadores.
+description: La estructura XMU565 expone los operadores siguientes.
 ms.assetid: 38869bb0-5b02-4e5c-ba66-d842a39fe417
 title: Operadores XMU565
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9be671c3d5c8c5aed596103f38d973469c454868
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cf5bd4aa63a48c87870378505b0bf8ed3457710d4a6325c5eac02849585e07f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118500976"
 ---
 # <a name="xmu565-operators"></a>Operadores XMU565
 
-La estructura [**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565) expone los siguientes operadores.
+La [**estructura XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,8 +26,8 @@ La estructura [**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpack
 
 | Métodos                                                           | Descripción                                                                                                          |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [**Operator UInt16 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmu565-operatoruint16_t)<br/> | Devuelve una instancia de `uint16_t` que contiene los componentes de la `XMU555` instancia en un formato empaquetado. <br/> |
-| [**operador =**](xmu565-operator-eq.md)<br/>               | Asigna datos de componentes vectoriales a la instancia actual de `XMU565` . <br/>                                       |
+| [**operador uint16 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmu565-operatoruint16_t)<br/> | Devuelve una instancia de `uint16_t` que contiene los componentes de la instancia en un formato `XMU555` empaquetado. <br/> |
+| [**operator =**](xmu565-operator-eq.md)<br/>               | Asigna datos de componentes vectoriales a la instancia actual de `XMU565` . <br/>                                       |
 
 
 
@@ -37,7 +37,7 @@ La estructura [**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpack
 
 <dl> <dt>
 
-[Extensiones de XMU565](ovw-xmu565-extensions.md)
+[Extensiones XMU565](ovw-xmu565-extensions.md)
 </dt> <dt>
 
 **Referencia**

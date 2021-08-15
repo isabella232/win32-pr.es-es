@@ -1,11 +1,11 @@
 ---
-title: IWMPMedia isMemberOf, método
-description: El método isMemberOf devuelve un valor que indica si el elemento multimedia especificado es un miembro de la lista de reproducción especificada.
+title: IWMPMedia isMemberOf (método)
+description: El método isMemberOf devuelve un valor que indica si el elemento multimedia especificado es miembro de la lista de reproducción especificada.
 ms.assetid: 491e0dd5-38e5-47a5-9c94-f1d27d297f8d
 keywords:
-- método isMemberOf de Windows Media Player
-- método isMemberOf Windows Media Player, interfaz IWMPMedia
-- Interfaz IWMPMedia Windows Media Player, método isMemberOf
+- Método isMemberOf Reproductor de Windows Media
+- Método isMemberOf Reproductor de Windows Media , interfaz IWMPMedia
+- Interfaz IWMPMedia Reproductor de Windows Media método , isMemberOf
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f627e9b2f0e1c4b226dda13d280d521ad52df2ee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 485121f0ac9c4c441ff90e34b90ef5c9475c22995565b018d3f0e00dc5d94740
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746020"
 ---
-# <a name="iwmpmediaismemberof-method"></a>IWMPMedia:: isMemberOf (método)
+# <a name="iwmpmediaismemberof-method"></a>IWMPMedia::isMemberOf (método)
 
-El método **isMemberOf** devuelve un valor que indica si el elemento multimedia especificado es un miembro de la lista de reproducción especificada.
+El **método isMemberOf** devuelve un valor que indica si el elemento multimedia especificado es miembro de la lista de reproducción especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,26 +53,26 @@ Implements IWMPMedia.isMemberOf
 
 <dl> <dt>
 
-*pPlaylist* \[ de\]
+*pPlaylist* \[ En\]
 </dt> <dd>
 
-Una interfaz **WMPLib. IWMPPlaylist** .
+Interfaz **WMPLib.IWMPPlaylist.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor **System. Boolean** que indica si el elemento multimedia es un miembro de la lista de reproducción.
+Valor **System.Boolean** que indica si el elemento multimedia es miembro de la lista de reproducción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no puede comprobar las listas de reproducción recuperadas a través de la interfaz **IWMPMediaCollection** . Para probar si un elemento multimedia es miembro de una lista de reproducción con nombre determinada, recupere la colección de listas de reproducción con la propiedad **AxWindowsMediaPlayer. playlistCollection** . Una vez recuperada la colección, recupere la lista de reproducción individual llamando al método **IWMPPlaylistCollection. getByName** .
+Este método no puede comprobar las listas de reproducción recuperadas a través de **la interfaz IWMPMediaCollection.** Para probar si un elemento multimedia es miembro de una lista de reproducción con nombre determinada, recupere la colección de listas de reproducción con la propiedad **AxWindowsMediaPlayer.playlistCollection.** Una vez recuperada la colección, recupere la lista de reproducción individual llamando al **método IWMPPlaylistCollection.getByName.**
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **isMemberOf** para comprobar si el elemento multimedia actual es un miembro de la lista de reproducción denominada All Music. Si no es así, el elemento multimedia actual se anexa a la lista de reproducción. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa isMemberOf** para probar si el elemento multimedia actual es miembro de la lista de reproducción denominada All Música. Si no es así, el elemento multimedia actual se anexa a la lista de reproducción. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -110,19 +110,19 @@ End If
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. playlistCollection (VB y C#)**](axwmplib-axwindowsmediaplayer-playlistcollection--vb-and-c.md)
+[**AxWindowsMediaPlayer.playlistCollection (VB y C#)**](axwmplib-axwindowsmediaplayer-playlistcollection--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPMedia (VB y C#)**](iwmpmedia--vb-and-c.md)
@@ -131,7 +131,7 @@ End If
 [**Interfaz IWMPPlaylist (VB y C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. getByName (VB y C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
+[**IWMPPlaylistCollection.getByName (VB y C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
 </dt> </dl>
 
  

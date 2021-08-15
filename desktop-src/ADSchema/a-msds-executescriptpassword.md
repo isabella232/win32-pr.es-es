@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-ExecuteScriptPassword
-description: Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir ni leer desde mediante LDAP.
+title: Atributo ms-DS-ExecuteScriptPassword
+description: Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir ni leer mediante LDAP.
 ms.assetid: 381c3676-0a11-4e53-8093-f04dbf156250
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-ExecuteScriptPassword
-- Esquema de AD de atributo msDS-ExecuteScriptPassword
+- Esquema de AD del atributo ms-DS-ExecuteScriptPassword
+- Esquema de AD del atributo msDS-ExecuteScriptPassword
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f01ebb231404188235236442df1d4916814f0636
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: abd9381d58c533341539e0957f787e166572ec60d4009aa34f84a327ba3a34ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426758"
 ---
-# <a name="ms-ds-executescriptpassword-attribute"></a>atributo MS-DS-ExecuteScriptPassword
+# <a name="ms-ds-executescriptpassword-attribute"></a>Atributo ms-DS-ExecuteScriptPassword
 
-Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir ni leer desde mediante LDAP.
+Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir ni leer mediante LDAP.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DS-ExecuteScriptPassword                           |
-| Nombre para mostrar de LDAP | msDS-ExecuteScriptPassword                            |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | El sistema establece este valor.                      |
+| CN                | ms-DS-ExecuteScriptPassword                           |
+| Ldap-Display-Name | msDS-ExecuteScriptPassword                            |
+| Size              | \-                                                    |
+| Actualizar privilegios  | El sistema establece este valor.                      |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1783                               |
-| System-ID-GUID    | 9d054a5a-d187-46c1-9d85-42dfc44a56dd                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9d054a5a-d187-46c1-9d85-42dfc44a56dd                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -53,41 +53,41 @@ Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | True                                                          |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Verdadero                                                          |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | True                                                          |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Verdadero                                                          |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | True                                                          |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Verdadero                                                          |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | True                                                                                                    |
-| Tiene un único valor       | True                                                                                                    |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| System-Only            | Verdadero                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                    |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | True                                                                                                    |
-| Tiene un único valor       | True                                                                                                    |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| System-Only            | Verdadero                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                    |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                      |
+| Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | True                                                                                                    |
-| Tiene un único valor       | True                                                                                                    |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                            |
+| System-Only            | Verdadero                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                    |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Entre contenedores**](c-crossrefcontainer.md)<br/> |
 
 
 

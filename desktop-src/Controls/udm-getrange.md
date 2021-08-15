@@ -1,9 +1,9 @@
 ---
-title: Mensaje de UDM_GETRANGE (commctrl. h)
+title: UDM_GETRANGE mensaje (Commctrl.h)
 description: Recupera las posiciones mínima y máxima (intervalo) de un control de flechas.
 ms.assetid: fd42538a-8d96-4a9c-a1db-07c3e9afef84
 keywords:
-- UDM_GETRANGE controles de mensajes de Windows
+- UDM_GETRANGE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6fd8467ad4494bea92a4c1f9a68d675ef1471f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d13811f383886e0e4985eb3f2f5093eec53cb0745349a36ca133fa3de9656773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408105"
 ---
-# <a name="udm_getrange-message"></a>\_Mensaje GETRANGE UDM
+# <a name="udm_getrange-message"></a>Mensaje \_ GETRANGE de UDM
 
 Recupera las posiciones mínima y máxima (intervalo) de un control de flechas.
 
@@ -37,17 +37,17 @@ Recupera las posiciones mínima y máxima (intervalo) de un control de flechas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un valor de 32 bits que contiene las posiciones mínima y máxima. [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es la posición máxima del control y el valor de [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) es la posición mínima.
+El valor devuelto es un valor de 32 bits que contiene las posiciones mínima y máxima. [**LOWORD es**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) la posición máxima del control y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) es la posición mínima.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

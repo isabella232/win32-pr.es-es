@@ -1,9 +1,9 @@
 ---
-title: Reproductor. habilitado
-description: La propiedad Enabled especifica o recupera un valor que indica si el control Media Player de Windows está habilitado.
+title: Player.enabled
+description: La propiedad enabled especifica o recupera un valor que indica si el control Reproductor de Windows Media está habilitado.
 ms.assetid: 65fea4d2-3330-4cce-bdaf-fae00304271a
 keywords:
-- Player. Enabled Windows Media Player
+- Player.enabled Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,52 +14,52 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d002d1f1420d17d4b1a0b7dd3028b0f2dc0f6f7b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 804baa0dbb887cd389214c1c90e7a438e3529d7b7609cf3162091d2bf52cb17d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747600"
 ---
-# <a name="playerenabled"></a>Reproductor. habilitado
+# <a name="playerenabled"></a>Player.enabled
 
-La propiedad **Enabled** especifica o recupera un valor que indica si el control Media Player de Windows está habilitado.
+La **propiedad enabled** especifica o recupera un valor que indica si el control Reproductor de Windows Media está habilitado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor* . **habilitado**
+*player* . **habilitado**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **valor booleano** de lectura/escritura.
+Esta propiedad es un booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                                           |
+| Valor | Descripción                                           |
 |-------|-------------------------------------------------------|
-| true  | Predeterminada. El control Media Player de Windows está habilitado. |
-| false | El control Media Player de Windows está deshabilitado.         |
+| true  | Predeterminada. El control Reproductor de Windows Media está habilitado. |
+| false | El Reproductor de Windows Media está deshabilitado.         |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si **habilitada** es igual a false, durante las ventanas de reproducción de pantalla completa Media Player oculta los controles de usuario.
+Si **habilitado es** igual a false, durante la reproducción a pantalla completa Reproductor de Windows Media oculta los controles de usuario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

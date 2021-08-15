@@ -1,5 +1,5 @@
 ---
-description: Enumera o busca la primera o siguiente CTL en un almacén externo que coincida con los criterios especificados.
+description: Enumera o busca la primera CTL o la siguiente en un almacén externo que coincida con los criterios especificados.
 ms.assetid: 0b465e6e-fb5c-4621-a968-c2cdcab0ea15
 title: Función de devolución de llamada CertStoreProvFindCTL
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 9454f918c9cbc5b6f90642d46fbb33573b70457f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3064b42961196a7522fba6d08ac684aa4421b26727cdf229854351c777a4b56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117770014"
 ---
 # <a name="certstoreprovfindctl-callback-function"></a>Función de devolución de llamada CertStoreProvFindCTL
 
-La función de devolución de llamada **CertStoreProvFindCTL** enumera o encuentra la primera o siguiente [*CTL*](../secgloss/c-gly.md) en un [*almacén externo*](../secgloss/e-gly.md) que coincide con los criterios especificados.
+La función de devolución de llamada **CertStoreProvFindCTL** enumera o [](../secgloss/e-gly.md) busca la primera o la siguiente [*CTL*](../secgloss/c-gly.md) en un almacén externo que coincida con los criterios especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,74 +43,74 @@ BOOL WINAPI CertStoreProvFindCTL(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+**Identificador HCERTSTOREPROV** para un [*almacén de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pFindInfo* \[ de\]
+*pFindInfo* \[ En\]
 </dt> <dd>
 
-Un puntero a una estructura de [**\_ \_ \_ \_ información de Prov del almacén de certificados**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info) que contiene todos los parámetros pasados a [**CertFindCTLInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindctlinstore). .
+Puntero a una estructura FIND INFO de [**CERT \_ STORE \_ \_ \_ PROV**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info) que contiene todos los parámetros pasados a [**CertFindCTLInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindctlinstore). .
 
 </dd> <dt>
 
-*pPrevCtlContext* \[ de\]
+*pPrevCtlContext* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ contexto de CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context) de la última CTL encontrada. En la primera llamada a la función, este parámetro debe establecerse en **null**. En las llamadas posteriores, debe establecerse en el puntero devuelto en el parámetro *ppProvCTLContext* en la última llamada. La función de devolución de llamada libera un puntero no **nulo** que se pasa en este parámetro.
+Puntero a una [**estructura CTL \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context) de la última CTL encontrada. En la primera llamada a la función, este parámetro debe establecerse en **NULL.** En las llamadas posteriores, se debe establecer en el puntero devuelto en el *parámetro ppProvCTLContext* en la última llamada. La función **de** devolución de llamada libera un puntero que no es NULL pasado en este parámetro.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> <dt>
 
 *ppvStoreProvFindInfo* \[ in, out\]
 </dt> <dd>
 
-Un puntero a un puntero a un búfer para devolver la información del proveedor de almacenamiento. Opcionalmente, la devolución de llamada puede devolver un puntero a información interna de búsqueda en este parámetro. Después de la primera llamada, este parámetro se establece en el puntero devuelto por la llamada anterior a la función.
+Puntero a un puntero al búfer para devolver la información del proveedor de almacén. Opcionalmente, la devolución de llamada puede devolver un puntero a la información de la buscar interna en este parámetro. Después de la primera llamada, este parámetro se establece en el puntero devuelto por la llamada anterior a la función .
 
 </dd> <dt>
 
-*ppProvCtlContext* \[ enuncia\]
+*ppProvCtlContext* \[ out\]
 </dt> <dd>
 
-Si la búsqueda se realiza correctamente, se devuelve un puntero a la CTL encontrada en este parámetro.
+Si se encuentra correctamente, se devuelve un puntero a la CTL encontrada en este parámetro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la función se ejecuta correctamente o **false** si se produce un error.
+Devuelve **TRUE** si la función se realiza correctamente o **FALSE** si se produce un error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**información de la búsqueda de almacén de certificados \_ \_ \_ \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info)
+[**CERT \_ STORE \_ PROV \_ FIND \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info)
 </dt> <dt>
 
 [**CertFindCTLInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindctlinstore)
 </dt> <dt>
 
-[**\_contexto CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context)
+[**CONTEXTO DE \_ CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context)
 </dt> </dl>
 
  

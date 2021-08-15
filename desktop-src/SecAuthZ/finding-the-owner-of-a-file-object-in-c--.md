@@ -1,19 +1,19 @@
 ---
-description: Buscar e imprimir el nombre del propietario de un archivo.
+description: Busque e imprima el nombre del propietario de un archivo.
 ms.assetid: b0dbc785-58a7-4f39-ab39-b96abece5b93
 title: Buscar el propietario de un objeto de archivo en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5518617db099d3580ce0e82b5376df5f4f3eaf58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fa4b63de3f16629d3de2102521477ff8ed90e2ca5af8e858ebed63038be7cfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117781670"
 ---
 # <a name="finding-the-owner-of-a-file-object-in-c"></a>Buscar el propietario de un objeto de archivo en C++
 
-En el ejemplo siguiente se usan las funciones [**GetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-getsecurityinfo) y [**LookupAccountSid**](/windows/desktop/api/Winbase/nf-winbase-lookupaccountsida) para buscar e imprimir el nombre del propietario de un archivo. El archivo existe en el directorio de trabajo actual del servidor local.
+En el ejemplo siguiente se [**usan las funciones GetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-getsecurityinfo) y [**LookupAccountSid**](/windows/desktop/api/Winbase/nf-winbase-lookupaccountsida) para buscar e imprimir el nombre del propietario de un archivo. El archivo existe en el directorio de trabajo actual en el servidor local.
 
 
 ```C++

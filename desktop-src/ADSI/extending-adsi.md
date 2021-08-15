@@ -1,20 +1,20 @@
 ---
-title: Extender ADSI
+title: Extensión de ADSI
 description: Con el modelo de extensión ADSI, puede asociar una clase de directorio a su propio objeto COM.
 ms.assetid: bf9a324d-14eb-4eb9-a80d-b0431db3af26
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e597d4b2dd2cf6a3b4a81f1fff3515289418b9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 15e9f5bd316fc4703cf522e2c5facfd6c32c5236da191668f6ba38ae6a904f00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103772961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428458"
 ---
-# <a name="extending-adsi"></a>Extender ADSI
+# <a name="extending-adsi"></a>Extensión de ADSI
 
-Con el modelo de extensión ADSI, puede asociar una clase de directorio a su propio objeto COM. Desde el punto de vista del programador ADSI o del escritor de script, la extensión se convierte en una parte integral de ADSI. Por ejemplo, cuando un nuevo empleado se une a Fabrikam, el administrador de Windows NT creará un objeto de usuario en el directorio y el administrador de nóminas tendrá que configurar algunas entradas en los sistemas de recursos humanos para este usuario. Con una extensión ADSI, este proceso se puede simplificar en un solo script.
+Con el modelo de extensión ADSI, puede asociar una clase de directorio a su propio objeto COM. Desde la perspectiva de un programador adsi o un escritor de scripts, la extensión se convierte en una parte integral de ADSI. Por ejemplo, cuando un nuevo empleado se une a Fabrikam, el administrador de Windows NT creará un objeto de usuario en el directorio y el administrador de nóminas deberá configurar algunas entradas en los sistemas de recursos humanos para este usuario. Con una extensión ADSI, este proceso se puede simplificar en un solo script.
 
 
 ```VB
@@ -53,11 +53,11 @@ Debug.Print "User: " & usr.Name & "has been created"
 
 
 
-Para obtener más información, consulte [ADSI Extensions](adsi-extensions.md).
+Para obtener más información, vea [ADSI Extensions](adsi-extensions.md).
 
- 
+ 
 
- 
+ 
 
 
 

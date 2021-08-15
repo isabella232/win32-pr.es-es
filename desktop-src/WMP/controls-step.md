@@ -1,11 +1,11 @@
 ---
-title: Controls. Step (método)
-description: El método Step hace que el elemento multimedia de vídeo actual inmovilizar la reproducción en el fotograma siguiente o en el anterior.
+title: Método Controls.step
+description: El método step hace que el elemento multimedia de vídeo actual congele la reproducción en el fotograma siguiente o en el fotograma anterior.
 ms.assetid: f717c583-4073-45a9-b05d-7134d02724a4
 keywords:
-- método de paso de Windows Media Player
-- método Step Windows Media Player, clase Controls
-- Clase Controls Windows Media Player, método Step
+- step method Reproductor de Windows Media
+- step method Reproductor de Windows Media , Clase Controls
+- Clase Controls Reproductor de Windows Media , método step
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43fc50ea28bde95efef6e6261788fdcc62df6089
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4626ff80aee55ad6c22be7580a07ef2319afb6792a8c11b815d72af23b5727fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118839830"
 ---
-# <a name="controlsstep-method"></a>Controls. Step (método)
+# <a name="controlsstep-method"></a>Método Controls.step
 
-El método **Step** hace que el elemento multimedia de vídeo actual inmovilizar la reproducción en el fotograma siguiente o en el anterior.
+El **método step** hace que el elemento multimedia de vídeo actual congele la reproducción en el fotograma siguiente o en el fotograma anterior.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ Controls.step(
 
 <dl> <dt>
 
-*frameCount* \[ de\]
+*frameCount* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que indica el número de fotogramas que se van a pasar antes de la inmovilización. Debe establecerse actualmente en 1 o-1.
+**Number** ( long )**que** indica cuántos fotogramas se debe usar antes de inmovilizar. Actualmente debe establecerse en 1 o -1.
 
 </dd> </dl>
 
@@ -53,31 +53,31 @@ Controls.step(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método solo admite actualmente los parámetros 1 o-1, por lo que solo se puede ejecutar un fotograma cada vez.
+Actualmente, este método solo admite los parámetros 1 o -1, por lo que solo puede ir paso a paso un fotograma a la vez.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior.<br/>                           |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior.<br/>                           |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Controls (objeto)**](controls-object.md)
 </dt> <dt>
 
-[**Objeto de DVD**](dvd-object.md)
+[**Dvd (objeto)**](dvd-object.md)
 </dt> </dl>
 
  

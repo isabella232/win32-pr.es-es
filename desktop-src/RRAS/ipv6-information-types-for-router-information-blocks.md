@@ -4,12 +4,12 @@ description: Obtenga información sobre los tipos de información de IPv6 enumer
 ms.assetid: 58fa59e6-e0f3-4f04-9c57-585f1d496b31
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6902cab140c81c85025c59279091b719886205e
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: e9055edca52197512c471d28d7e8e0d765b9286b4734daf80fb5eee765defd25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790895"
 ---
 # <a name="ipv6-information-types-for-router-information-blocks"></a>Tipos de información IPv6 para bloques de información de enrutador
 

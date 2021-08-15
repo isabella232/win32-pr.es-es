@@ -1,7 +1,7 @@
 ---
-description: Obtiene el período de tiempo, en minutos, transcurrido desde la última actividad del usuario.
+description: Obtiene el período de tiempo, en minutos, desde la última actividad del usuario.
 ms.assetid: 2d1e68ad-6f65-4e64-afbf-505b2c9d3423
-title: GetIdleMinutes función)
+title: Función GetIdleMinutes
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Msidle.dll
-ms.openlocfilehash: da3064ea96eb8e9835ed1e9d2f564bf922d2f091
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d3397de5d792181958891eef9693d29b2d7d4e56f9bbc7f7e1cfef19171625b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404588"
 ---
-# <a name="getidleminutes-function"></a>GetIdleMinutes función)
+# <a name="getidleminutes-function"></a>Función GetIdleMinutes
 
-\[Esta función no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use la función **GetLastInputInfo** .\]
+\[Esta función no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use **la función GetLastInputInfo.**\]
 
-Obtiene el período de tiempo, en minutos, transcurrido desde la última actividad del usuario.
+Obtiene el período de tiempo, en minutos, desde la última actividad del usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,23 +50,23 @@ Este parámetro debe establecerse en cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el número de minutos transcurridos desde la última actividad del usuario.
+Devuelve el número de minutos desde la última actividad del usuario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) . Esta función no se exporta por nombre; Especifique el ordinal 8 al llamar a **GetProcAddress**.
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) Esta función no se exporta por nombre; especifique el ordinal 8 al llamar **a GetProcAddress**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|---------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Msidle.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

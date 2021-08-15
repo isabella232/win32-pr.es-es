@@ -1,21 +1,21 @@
 ---
 description: La sesión multimedia es un objeto que administra el flujo de datos en la canalización. Se puede usar para reproducir y codificar archivos.
 ms.assetid: dac99908-be90-415d-8837-2f97d573feb5
-title: Sesión de medios
+title: Sesión multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3df4597e5461788f990f620875bce946570ab97
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fd54b08b6fda774ac08db46122569c1559dc23eb04d766e6e082b7d010663713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105717387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877910"
 ---
-# <a name="media-session"></a>Sesión de medios
+# <a name="media-session"></a>Sesión multimedia
 
 La sesión multimedia es un objeto que administra el flujo de datos en la canalización. Se puede usar para reproducir y codificar archivos.
 
-En esta sección se describe la sesión multimedia desde un punto de vista de la arquitectura. Contiene las secciones siguientes:
+En esta sección se describe la sesión multimedia desde el punto de vista de la arquitectura. Contiene las secciones siguientes:
 
 
 
@@ -24,11 +24,11 @@ En esta sección se describe la sesión multimedia desde un punto de vista de la
 | [Acerca de la sesión multimedia](about-the-media-session.md)                                       | Proporciona información general sobre la sesión multimedia, cómo una aplicación puede crear la sesión multimedia y cómo la sesión multimedia administra el tiempo de presentación. |
 | [Topologías](topologies.md)                                                                 | Una topología es un objeto que representa el flujo de datos de la canalización.                                                                        |
 | [Eventos de sesión multimedia](media-session-events.md)                                             | Describe los eventos que una aplicación podría recibir de la sesión multimedia.                                                                   |
-| [Cómo controlar los Estados de la presentación](how-to-control-presentation-states.md)                 | Describe los controles de transporte de la sesión multimedia: reproducir, pausar y detener.                                                                           |
+| [Cómo controlar los estados de presentación](how-to-control-presentation-states.md)                 | Describe los controles de transporte de sesión multimedia: Reproducir, Pausar y Detener.                                                                           |
 | [Uso de orígenes multimedia con la sesión multimedia](using-media-sources-with-the-media-session.md) | Cómo usar orígenes multimedia con la sesión multimedia.                                                                                                 |
-| [Control de tasa](rate-control.md)                                                             | Describe cómo controlar la velocidad de reproducción.                                                                                                          |
-| [Administración de calidad de vídeo](video-quality-management.md)                                     | Describe las mejoras de la canalización de vídeo en Windows 7.                                                                                       |
-| [Sesión de medios de PMP](pmp-media-session.md)                                                   | Describe cómo crear la sesión multimedia dentro de un proceso de la ruta de acceso a medios protegidos (PMP).                                                           |
+| [Control de velocidad](rate-control.md)                                                             | Describe cómo controlar la velocidad de reproducción.                                                                                                          |
+| [Administración de calidad de vídeo](video-quality-management.md)                                     | Describe las mejoras en la canalización de vídeo en Windows 7.                                                                                       |
+| [Sesión multimedia de PMP](pmp-media-session.md)                                                   | Describe cómo crear la sesión multimedia dentro de un proceso de ruta de acceso multimedia protegida (PMP).                                                           |
 
 
 

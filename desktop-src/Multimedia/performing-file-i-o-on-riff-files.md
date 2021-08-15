@@ -1,29 +1,29 @@
 ---
-title: Realizar e/s de archivos en archivos RIFF
-description: Realizar e/s de archivos en archivos RIFF
+title: Realizar E/S de archivos en archivos RIFF
+description: Realizar E/S de archivos en archivos RIFF
 ms.assetid: 3ffc5975-7acb-4844-89b0-bf245b3bd316
 keywords:
-- e/s de archivos multimedia, archivos RIFF
-- e/s de archivos, archivos RIFF
-- entrada y salida (e/s), archivos RIFF
-- E/s (entrada y salida), archivos RIFF
+- E/S de archivos multimedia, archivos RIFF
+- E/S de archivo, archivos RIFF
+- entrada y salida (E/S), archivos RIFF
+- E/S (entrada y salida), archivos RIFF
 - formato de archivo de intercambio de recursos (RIFF)
 - RIFF (formato de archivo de intercambio de recursos)
-- RIFF E/S
-- e/s almacenada en búfer
-- Fragmento RIFF
+- E/S de RIFF
+- E/S en búfer
+- Fragmento de RIFF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5e13fd50d98ea8042bb143c135d839b9b570475
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6e099b49656e52fabed748ed397a12c3408a8325312c6c2457827a6b08725b48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372699"
 ---
-# <a name="performing-file-io-on-riff-files"></a>Realizar e/s de archivos en archivos RIFF
+# <a name="performing-file-io-on-riff-files"></a>Realizar E/S de archivos en archivos RIFF
 
-En el ejemplo siguiente se muestra cómo abrir un archivo RIFF para la e/s almacenada en búfer, así como cómo descender, Ascend y leer fragmentos "RIFF".
+En el ejemplo siguiente se muestra cómo abrir un archivo RIFF para la E/S en búfer, así como cómo bajar, subir y leer fragmentos de "RIFF".
 
 
 ```C++
@@ -151,9 +151,9 @@ void ReversePlay()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

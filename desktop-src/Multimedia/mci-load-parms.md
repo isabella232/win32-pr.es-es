@@ -1,9 +1,9 @@
 ---
-title: Estructura de MCI_LOAD_PARMS (mmsystem. h)
-description: La \_ estructura de parms de carga de MCI \_ contiene el nombre de archivo que se va a cargar para el \_ comando MCI Load.
+title: MCI_LOAD_PARMS estructura (Mmsystem.h)
+description: La estructura \_ MCI LOAD \_ PARMS contiene el nombre de archivo que se cargará para el comando LOAD \_ de MCI.
 ms.assetid: 371d11cc-44db-496b-b51a-66d7b919b794
 keywords:
-- Estructura de MCI_LOAD_PARMS de Windows multimedia
+- MCI_LOAD_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04697a52eb9f8bb33db6063eb47e791be674f1d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d52a5c875bbbfff6f94857bc7337a0cba1473571bfdb8edc8ccfa8f3f1a471fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375010"
 ---
-# <a name="mci_load_parms-structure"></a>\_Estructura parms de carga de MCI \_
+# <a name="mci_load_parms-structure"></a>Estructura \_ MCI LOAD \_ PARMS
 
-La estructura de **\_ \_ parms de carga de MCI** contiene el nombre de archivo que se va a cargar para el comando [**MCI \_ Load**](mci-load.md) .
+La **estructura \_ MCI LOAD \_ PARMS** contiene el nombre de archivo que se cargará para el [**comando LOAD \_ de MCI.**](mci-load.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,18 +44,18 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **lpfilename**
 </dt> <dd>
 
-Nombre del archivo que se va a cargar.
+Nombre del archivo que se cargará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -63,25 +63,25 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**carga de MCI \_**](mci-load.md)
+[**MCI \_ LOAD**](mci-load.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

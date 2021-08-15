@@ -1,15 +1,15 @@
 ---
-description: El método IsSubpictureStreamEnabled recupera un valor que indica si la secuencia de subimagen especificada está habilitada en el título actual.
+description: El método IsSubpictureStreamEnabled recupera un valor que indica si la secuencia de subpicture especificada está habilitada en el título actual.
 ms.assetid: c6436f77-ca94-464f-9336-f485f5d5d199
 title: Método IsSubpictureStreamEnabled
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 818b4ff18dac87ea3346a1a503764b2e5e9cd02a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bc982120b6a7a57d59d5213fc57b5ba3851d7d9d2f4c3e553fba97d3307d8bec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817052"
 ---
 # <a name="issubpicturestreamenabled-method"></a>Método IsSubpictureStreamEnabled
 
@@ -18,7 +18,7 @@ ms.locfileid: "103906778"
 
  
 
-El `IsSubpictureStreamEnabled` método recupera un valor que indica si la secuencia de subimagen especificada está habilitada en el título actual.
+El `IsSubpictureStreamEnabled` método recupera un valor que indica si la secuencia de subpicture especificada está habilitada en el título actual.
 
 ``` syntax
 [ bEnabled = ] MSWebDVD.IsSubpictureStreamEnabled(iStream)
@@ -28,17 +28,17 @@ El `IsSubpictureStreamEnabled` método recupera un valor que indica si la secuen
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Especifica el flujo de la subimagen como un entero.
+Especifica la secuencia de subimagen como un entero.
 
 
 
-| Value   | Descripción              |
+| Valor   | Descripción              |
 |---------|--------------------------|
-| de 0 a 31 | secuencia de subimagen        |
-| 63      | secuencia de velocidad de bits baja silenciada |
+| De 0 a 31 | secuencia de subpicture        |
+| 63      | secuencia de velocidad de bits baja muted |
 
 
 
@@ -50,9 +50,9 @@ Especifica el flujo de la subimagen como un entero.
 
 Devuelve un valor booleano que indica si la secuencia de audio especificada está disponible en el título actual. True significa que está disponible.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Aunque un disco puede contener hasta 32 secuencias de subimágenes, cada flujo no está necesariamente disponible para cada título. Compruebe siempre que haya un flujo disponible para un título antes de establecer la propiedad [**CurrentSubpictureStream**](currentsubpicturestream-property.md) .
+Aunque un disco puede contener hasta 32 secuencias de subimagen, cada secuencia no está necesariamente disponible para cada título. Compruebe siempre que una secuencia está disponible para un título antes de establecer la [**propiedad CurrentSubpictureStream.**](currentsubpicturestream-property.md)
 
  
 

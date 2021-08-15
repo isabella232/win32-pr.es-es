@@ -1,7 +1,7 @@
 ---
 description: Establece el estado de mantenimiento de una aplicación que se ejecuta en una máquina virtual.
 ms.assetid: 012190CA-9CBF-47B6-9C5D-F75D73B0499B
-title: 'IVmApplicationHealthMonitor:: SetApplicationState (método)'
+title: IVmApplicationHealthMonitor::SetApplicationState (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - VmApplicationHealthMonitor.idl
-ms.openlocfilehash: 8e6c64ecec827f6f75f382fbca7aadf8fc0c7dc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 785b5e6254bde84497f4fcf72d15b20ff16ccd7319ecc3631c0864b3e4992655
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118392360"
 ---
-# <a name="ivmapplicationhealthmonitorsetapplicationstate-method"></a>IVmApplicationHealthMonitor:: SetApplicationState (método)
+# <a name="ivmapplicationhealthmonitorsetapplicationstate-method"></a>IVmApplicationHealthMonitor::SetApplicationState (método)
 
 Establece el estado de mantenimiento de una aplicación que se ejecuta en una máquina virtual.
 
@@ -41,51 +41,51 @@ HRESULT SetApplicationState(
 
 <dl> <dt>
 
-*ID.* \[ en\]
+*Id.* \[ en\]
 </dt> <dd>
 
-Representación **BSTR** del **GUID** que identifica la aplicación. Es responsabilidad de la aplicación que llama a crear y mantener los identificadores que usa para las aplicaciones que se están supervisando.
+Representación **BSTR** del **GUID** que identifica la aplicación. Es responsabilidad de la aplicación que realiza la llamada crear y mantener los identificadores que usa para las aplicaciones que se supervisan.
 
 </dd> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
 Nombre para mostrar de la aplicación. Este nombre se usa en una entrada del registro de eventos informativos para el cambio de estado.
 
 </dd> <dt>
 
-*Estado* \[ de de\]
+*Estado* \[ En\]
 </dt> <dd>
 
-Un valor de la enumeración del [**\_ Estado**](application-state.md) de la aplicación que especifica el nuevo estado de mantenimiento de la aplicación.
+Valor de la [**enumeración APPLICATION \_ STATE**](application-state.md) que especifica el nuevo estado de mantenimiento de la aplicación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El estado de las aplicaciones que se ejecutan en la máquina virtual se refleja en el \[ valor de la propiedad OperationalStatus 1 \] de la clase [**MSVM \_ HeartbeatComponent**](msvm-heartbeatcomponent.md) .
+El estado de las aplicaciones que se ejecutan en la máquina virtual se refleja en el valor de la propiedad **OperationalStatus** 1 de \[ la clase \] [**\_ HeartbeatComponent de Msvm.**](msvm-heartbeatcomponent.md)
 
-Para usar este elemento de programación, los componentes de integración de Windows 8 deben estar instalados en la máquina virtual en la que se ejecuta la aplicación.
+Para usar este elemento de programación, Windows 8 componentes de integración deben instalarse en la máquina virtual en la que se ejecuta la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                      |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                                |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                      |
 | Versión<br/>                  | Componentes de integración para Windows 8<br/>                                                           |
-| IDL<br/>                      | <dl> <dt>VmApplicationHealthMonitor. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>VmApplicationHealthMonitor.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

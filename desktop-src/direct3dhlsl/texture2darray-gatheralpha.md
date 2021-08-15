@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Texture2DArray:: Texture2DArray GatherAlpha'
-description: Muestrea un Texture2DArray y devuelve el componente alfa.
+title: Métodos Texture2DArray::Texture2DArray GatherAlpha
+description: Muestrea un objeto Texture2DArray y devuelve el componente alfa.
 ms.assetid: 98f41243-e2d4-475b-ba28-8e9f660ddba6
 keywords:
-- GatherAlpha métodos HLSL
+- Métodos de GatherAlpha HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7b56a1145b79d20ee46555df7d2956503e9d202b
-ms.sourcegitcommit: 5724b38883e518ac565e1b266defa85ad0941bb2
+ms.openlocfilehash: 2e094d6505b2dd881468b68e0c689b0716b3828299390397dd5ae5fd6a17cd0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "104083536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722780"
 ---
-# <a name="texture2darraygatheralpha-methods"></a>Texture2DArray:: GatherAlpha (métodos)
+# <a name="texture2darraygatheralpha-methods"></a>Métodos Texture2DArray::GatherAlpha
 
-Devuelve los componentes alfa de los cuatro valores de textura de un [**Texture2DArray**](sm5-object-texture2darray.md)que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes alfa de los cuatro valores de textura de [**texture2DArray**](sm5-object-texture2darray.md)que se usarían en una operación de filtrado bi lineal.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,14 +29,14 @@ Devuelve los componentes alfa de los cuatro valores de textura de un [**Texture2
 
 | Método                                                                                                          | Descripción                                                                                                                                       |
 |:----------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherAlpha (S, Float, int)**](sm5-object-texture2darray-gatheralpha.md)                                        | Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.<br/>                                 |
-| [**GatherAlpha (S, Float, int, uint)**](t2darray-gatheralpha-s-float-int-uint-.md)                                  | Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
-| [**GatherAlpha (S, Float, INT2, INT2, INT2, INT2)**](t2darray-gatheralpha-s-float-int2-int2-int2-int2-.md)            | Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.<br/>                                 |
-| [**GatherAlpha (S, Float, INT2, INT2, INT2, INT2, uint)**](t2darray-gatheralpha-s-float-int2-int2-int2-int2-uint-.md)  | Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherAlpha(S,float,int)**](sm5-object-texture2darray-gatheralpha.md)                                        | Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
+| [**GatherAlpha(S,float,int,uint)**](t2darray-gatheralpha-s-float-int-uint-.md)                                  | Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherAlpha(S,float,int2,int2,int2,int2)**](t2darray-gatheralpha-s-float-int2-int2-int2-int2-.md)            | Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
+| [**GatherAlpha(S,float,int2,int2,int2,int2,uint)**](t2darray-gatheralpha-s-float-int2-int2-int2-int2-uint-.md)  | Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

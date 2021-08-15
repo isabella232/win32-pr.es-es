@@ -1,10 +1,10 @@
 ---
-title: Interfaz INapComponentConfig (NapCommon. h)
-description: Proporciona métodos de configuración del sistema NAP para los validadores de mantenimiento del sistema (SHV).
+title: Interfaz INapComponentConfig (NapCommon.h)
+description: Proporciona métodos de configuración del sistema NAP para validadores de estado del sistema (SHV).
 ms.assetid: 979b5c34-8efe-4c48-8236-53fbd25d4249
 keywords:
-- Interfaz INapComponentConfig NAP
-- Interfaz INapComponentConfig NAP, descripción
+- NAP de la interfaz INapComponentConfig
+- Interfaz NAP de INapComponentConfig, descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63a13ae74ba1de79803ff4a2d3716eec7fe934a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3d0a1c61b3681178089b0cda813155f3629caa233a7995d28cee22b1f65754ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800027"
 ---
 # <a name="inapcomponentconfig-interface"></a>Interfaz INapComponentConfig
 
@@ -29,58 +29,58 @@ ms.locfileid: "104422179"
 
  
 
-La interfaz **INapComponentConfig** proporciona métodos de configuración del sistema NAP para los validadores de mantenimiento del sistema (SHV).
+La **interfaz INapComponentConfig proporciona métodos** de configuración del sistema NAP para validadores de estado del sistema (SHV).
 
 > [!Note]  
-> [**INapComponentConfig2**](inapcomponentconfig2.md) y [**INapComponentConfig3**](inapcomponentconfig3.md) heredan todos los métodos de esta interfaz y deben usarse en su lugar.
+> [**INapComponentConfig2**](inapcomponentconfig2.md) e [**INapComponentConfig3**](inapcomponentconfig3.md) heredan todos los métodos de esta interfaz y se deben usar en su lugar.
 
  
 
 ## <a name="members"></a>Miembros
 
-La interfaz **INapComponentConfig** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapComponentConfig** también tiene estos tipos de miembros:
+La **interfaz INapComponentConfig** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapComponentConfig también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **INapComponentConfig** tiene estos métodos.
+La **interfaz INapComponentConfig** tiene estos métodos.
 
 
 
 | Método                                                                          | Descripción                                                                          |
 |:--------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [**INapComponentConfig:: GetConfig**](inapcomponentconfig-getconfig.md)         | Recupera la configuración del componente SHV.<br/>                                |
-| [**INapComponentConfig::InvokeUI**](inapcomponentconfig-invokeui.md)           | Inicia la interfaz de usuario personalizada para un componente de SHV.<br/>              |
-| [**INapComponentConfig::IsUISupported**](inapcomponentconfig-isuisupported.md) | Especifica si el componente de SHV admite una interfaz de usuario personalizada.<br/> |
+| [**INapComponentConfig::GetConfig**](inapcomponentconfig-getconfig.md)         | Recupera la configuración del componente SHV.<br/>                                |
+| [**INapComponentConfig::InvokeUI**](inapcomponentconfig-invokeui.md)           | Inicia la interfaz de usuario personalizada para un componente SHV.<br/>              |
+| [**INapComponentConfig::IsUISupported**](inapcomponentconfig-isuisupported.md) | Especifica si el componente SHV admite una interfaz de usuario personalizada.<br/> |
 | [**INapComponentConfig::SetConfig**](inapcomponentconfig-setconfig.md)         | Establece la configuración del componente SHV.<br/>                                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta interfaz no debe ser implementada por los agentes de mantenimiento del sistema (SHA) o los clientes de aplicación de cuarentena (QECs).
+Esta interfaz no debe implementarse por agentes de mantenimiento del sistema (SHA) ni clientes de cumplimiento de cuarentena (FC).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
 [Referencia de NAP](nap-reference.md)

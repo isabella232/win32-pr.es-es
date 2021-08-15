@@ -1,21 +1,21 @@
 ---
-title: Clasificar por capacidades de contenedor
-description: A menudo, los componentes requieren cierta funcionalidad del contenedor y no funcionarán con un contenedor que no proporcione la compatibilidad.
+title: Categorización por funcionalidades de contenedor
+description: Los componentes a menudo requieren cierta funcionalidad del contenedor y no funcionarán con un contenedor que no proporcione la compatibilidad.
 ms.assetid: 11002f3e-17de-4e05-a2df-0c9e6326846d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 987546c20ff77a40666bb74689466a15fab989a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 67811a40c2c1bbffd4529b3f7c885a0d3e2bea19bda04035ffb80b601c266807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118310892"
 ---
-# <a name="categorizing-by-container-capabilities"></a>Clasificar por capacidades de contenedor
+# <a name="categorizing-by-container-capabilities"></a>Categorización por funcionalidades de contenedor
 
-A menudo, los componentes requieren cierta funcionalidad del contenedor y no funcionarán con un contenedor que no proporcione la compatibilidad. La interfaz de usuario debe filtrar los componentes que requieren funcionalidad que el contenedor no admite. Para ello, los componentes se pueden clasificar por la funcionalidad de contenedor requerida.
+Los componentes a menudo requieren cierta funcionalidad del contenedor y no funcionarán con un contenedor que no proporcione la compatibilidad. La interfaz de usuario debe filtrar los componentes que requieren funcionalidad que el contenedor no admite. Para ello, los componentes se pueden clasificar por la funcionalidad de contenedor necesaria.
 
-Un ejemplo de componentes que requieren funcionalidad del contenedor y que no funcionan en contenedores que no admiten esa funcionalidad son controles OLE de marco sencillos. La categorización por funciones de contenedor se realiza mediante una clave del registro adicional dentro de la clave CLSID del componente:
+Un ejemplo de componentes que requieren funcionalidad del contenedor y no funcionan en contenedores que no admiten esa funcionalidad son controles OLE de marco simples. La categorización por funcionalidades de contenedor se realiza mediante una clave del Registro adicional dentro de la clave CLSID del componente:
 
 ``` syntax
 ;The CLSID for "Simple Frame Control" is {123456FF-ABCD-4321-0101-00000000000C}HKEY_CASSES_ROOT\CLSID\{12346FF-ABCD-4321-0101-00000000000C}\Implemented Categories
@@ -25,7 +25,7 @@ HKEY_CLASSES_ROOT\CLSID\{123456FF-ABCD-4321-0101-00000000000C}Required Categorie
  
 ```
 
-Como se muestra en este ejemplo, un componente puede pertenecer a categorías de componentes que indican la funcionalidad admitida, así como a las categorías de componentes que indican la funcionalidad requerida.
+Como se muestra en este ejemplo, un componente puede pertenecer a categorías de componentes que indican la funcionalidad admitida, así como a categorías de componentes que indican la funcionalidad necesaria.
 
 En el ejemplo siguiente, el control de botón es un control OLE genérico que no admite ninguna funcionalidad adicional. Funcionará en cualquier contenedor de controles OLE.
 
@@ -35,7 +35,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_Button...}\Implemented Categories\{...CATID_Co
  
 ```
 
-Compare el ejemplo anterior con el siguiente ejemplo en el que MyDBControl puede usar Visual Basic enlace de datos si el contenedor lo admite. Sin embargo, se ha definido para que funcione en contenedores que no admiten el enlace de datos de Visual Basic (quizás por otra API de base de datos):
+Compare el ejemplo anterior con el ejemplo siguiente en el que MyDBControl puede usar Visual Basic enlace de datos si el contenedor lo admite. Sin embargo, se ha definido para que funcione en contenedores que no admiten el enlace Visual Basic datos (quizás por una API de base de datos diferente):
 
 ``` syntax
 HKEY_CLASSES_ROOT\CLSID\{...CLSID_MyDBControl...}\Implemented Categories
@@ -44,7 +44,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_MyDBControl...}\Implemented Categories\{...CAT
  
 ```
 
-El control GroupBox es un control Frame simple. Se basa en el contenedor que implementa la interfaz [**ISimpleFrameSite**](/windows/desktop/api/OCIdl/nn-ocidl-isimpleframesite) y funcionará correctamente solo en estos contenedores:
+El control GroupBox es un control de marco simple. Se basa en el contenedor que implementa la [**interfaz ISimpleFrameSite**](/windows/desktop/api/OCIdl/nn-ocidl-isimpleframesite) y solo funcionará correctamente en estos contenedores:
 
 ``` syntax
 HKEY_CLASSES_ROOT\CLSID\{...CLSID_GroupBox...}\Implemented Categories
@@ -54,7 +54,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_GroupBox...}\Required Categories\{...CATID_Sim
  
 ```
 
-Un contenedor que admite Visual Basic controles enlazados a datos pero no admite controles de fotogramas simples especificaría \_ el control CATID y CATID \_ VBDatabound en la interfaz de usuario del control de inserción. La lista de controles que se muestran al usuario contiene el \_ botón CLSID y el CLSID \_ MyDBControl. \_No se mostraría el GroupBox de CLSID.
+Un contenedor que admite Visual Basic controles enlazados a datos, pero no admite controles de marco simples, especificaría CATID Control y CATID VBDatabound en la interfaz de usuario \_ \_ del control de inserción. La lista de controles que se muestran al usuario contendrá el botón CLSID \_ y CLSID \_ MyDBControl. No se mostraría GroupBox de \_ CLSID.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Un contenedor que admite Visual Basic controles enlazados a datos pero no admite
 [Asociar iconos a una categoría](associating-icons-with-a-category.md)
 </dt> <dt>
 
-[Categorización por funcionalidad de componentes](categorizing-by-component-capabilities.md)
+[Categorización por funcionalidades de componentes](categorizing-by-component-capabilities.md)
 </dt> <dt>
 
 [Clases y asociaciones predeterminadas](default-classes-and-associations.md)
@@ -75,9 +75,9 @@ Un contenedor que admite Visual Basic controles enlazados a datos pero no admite
 [Administrador de categorías de componentes](the-component-categories-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

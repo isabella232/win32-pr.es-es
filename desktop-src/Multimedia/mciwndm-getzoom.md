@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETZOOM (VFW. h)
-description: El \_ mensaje MCIWNDM GETZOOM recupera el valor de zoom actual usado por un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetZoom.
+title: MCIWNDM_GETZOOM mensaje (Vfw.h)
+description: El mensaje GETZOOM de MCIWNDM recupera el valor de zoom actual \_ que usa un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetZoom.
 ms.assetid: 92db8df2-515a-4616-a0f5-245d466ba379
 keywords:
-- Mensaje de MCIWNDM_GETZOOM de Windows multimedia
+- MCIWNDM_GETZOOM mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcb4ae1883787f1b86dcc17f2d4a3e0e0ee29ced
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 52c247230ffe6269f77b906d874a4cf82a21ed8d3388ffa18193417603e45fbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374146"
 ---
-# <a name="mciwndm_getzoom-message"></a>MCIWNDM \_ GETZOOM
+# <a name="mciwndm_getzoom-message"></a>Mensaje GETZOOM de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ GETZOOM** recupera el valor de zoom actual usado por un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetZoom**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetzoom) .
+El **mensaje \_ GETZOOM de MCIWNDM** recupera el valor de zoom actual que usa un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetZoom.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetzoom)
 
 
 ```C++
@@ -36,25 +36,25 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve los valores más recientes utilizados con [**MCIWNDM \_ SETZOOM**](mciwndm-setzoom.md).
+Devuelve los valores más recientes usados con [**MCIWNDM \_ SETZOOM.**](mciwndm-setzoom.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un valor devuelto de 100 indica que la imagen no se ha ampliado. Un valor de 200 indica que la imagen se amplía hasta el doble del tamaño original. Un valor de 50 indica que la imagen se reduce a la mitad de su tamaño original.
+Un valor devuelto de 100 indica que la imagen no está zoomed. Un valor de 200 indica que la imagen se amplía al doble de su tamaño original. Un valor de 50 indica que la imagen se reduce a la mitad de su tamaño original.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

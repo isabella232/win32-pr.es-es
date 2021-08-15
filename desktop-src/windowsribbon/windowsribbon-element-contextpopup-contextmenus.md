@@ -1,9 +1,9 @@
 ---
-title: Propiedad ContextPopup. ContextMenus
-description: Representa un contenedor de elementos ContextMenu.
+title: Propiedad ContextPopup.ContextMenus
+description: Representa un contenedor para los elementos ContextMenu.
 ms.assetid: 92633689-a892-421e-a5fb-e494f4cd1ea8
 keywords:
-- ContextPopup. ContextMenus (propiedad) cinta de Windows
+- Propiedad ContextPopup.ContextMenus Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12ef8ab053b9912f545c2aad931eb8ad9583ff62
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45641f1431726ec75c60be48683f19fb3139cbd9159baaed9def3b293a48772d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851021"
 ---
-# <a name="contextpopupcontextmenus-property"></a>Propiedad ContextPopup. ContextMenus
+# <a name="contextpopupcontextmenus-property"></a>Propiedad ContextPopup.ContextMenus
 
-Representa un contenedor de elementos [**ContextMenu**](windowsribbon-element-contextmenu.md) .
+Representa un contenedor para los [**elementos ContextMenu.**](windowsribbon-element-contextmenu.md)
 
 ## <a name="usage"></a>Uso
 
@@ -55,17 +55,17 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**ContextPopup**](windowsribbon-element-contextpopup.md).
+Puede producirse como máximo una vez para [**cada ContextPopup**](windowsribbon-element-contextpopup.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de una vista [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+En el ejemplo siguiente se muestra el marcado básico para una [**vista ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-En esta sección de código se muestra una declaración de control **ContextPopup. ContextMenus** .
+En esta sección de código se muestra una declaración de control **ContextPopup.ContextMenus.**
 
 
 ```XML
@@ -156,18 +156,18 @@ En esta sección de código se muestra una declaración de control **ContextPopu
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Control popup de contexto](windowsribbon-controls-contextpopup.md)
+[Control Popup de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

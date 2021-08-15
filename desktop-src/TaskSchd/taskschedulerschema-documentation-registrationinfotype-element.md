@@ -3,7 +3,7 @@ title: Elemento Documentation (registrationInfoType)
 description: Especifica cualquier documentación adicional para la tarea.
 ms.assetid: 5f0d2df3-4eef-430b-85a9-602bb29b85c7
 keywords:
-- Elemento Documentation Programador de tareas
+- Elemento documentation Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3407a6611886f867734dc7f32cd867a2930d3d2b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6cb8c2a78450fffa467ea659b55015f064310783ae21b067093de9473612fcc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356873"
 ---
 # <a name="documentation-registrationinfotype-element"></a>Elemento Documentation (registrationInfoType)
 
@@ -31,7 +31,7 @@ Especifica cualquier documentación adicional para la tarea.
  />
 ```
 
-El elemento **Documentation** se define mediante el tipo complejo [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) .
+El **tipo** complejo [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) define el elemento Documentation.
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -39,32 +39,32 @@ El elemento **Documentation** se define mediante el tipo complejo [**registratio
 
 | Elemento                                                                           | Derivado de                                                                         | Descripción                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica la información administrativa de la tarea, como el autor de la tarea y la fecha en que se registra la tarea.<br/> |
+| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica información administrativa sobre la tarea, como el autor de la tarea y la fecha en que se registra la tarea.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el caso de las aplicaciones de scripting, se especifica documentación de tarea adicional mediante el uso de la propiedad [**umentation deRegistrationInfo.Doc**](registrationinfo-documentation.md) .
+Para las aplicaciones de scripting, se especifica documentación de tareas adicional mediante el uso de [**laRegistrationInfo.Docpropiedad umentation.**](registrationinfo-documentation.md)
 
-En el caso de las aplicaciones de C++, se especifica documentación de tareas adicional mediante el uso de la propiedad [**IRegistrationInfo::D kumentace**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_documentation) .
+Para las aplicaciones de C++, se especifica documentación de tareas adicional mediante la [**propiedad IRegistrationInfo::D ocumentation.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_documentation)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

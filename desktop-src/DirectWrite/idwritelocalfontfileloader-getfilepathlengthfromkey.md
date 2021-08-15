@@ -1,11 +1,11 @@
 ---
-title: IDWriteLocalFontFileLoader GetFilePathLengthFromKey, método
+title: Método IDWriteLocalFontFileLoader GetFilePathLengthFromKey
 description: Obtiene la longitud de la ruta de acceso absoluta del archivo a partir de la clave de referencia del archivo de fuente.
 ms.assetid: bdd84d75-5a7a-448a-a52c-0f5997ab07b9
 keywords:
 - Método GetFilePathLengthFromKey de escritura directa
-- Método GetFilePathLengthFromKey de escritura directa, interfaz IDWriteLocalFontFileLoader
-- Interfaz IDWriteLocalFontFileLoader Direct Write, método GetFilePathLengthFromKey
+- Método GetFilePathLengthFromKey direct write , interfaz IDWriteLocalFontFileLoader
+- IdWriteLocalFontFileLoader interface Direct Write , GetFilePathLengthFromKey (método GetFilePathLengthFromKey)
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 091c3cd5f1e13c40d364a3db005793f1dd0bf5f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 587f432f006493097ec8262fcc2201e2c3b67abe7115c395332671ec35efeba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816356"
 ---
-# <a name="idwritelocalfontfileloadergetfilepathlengthfromkey-method"></a>IDWriteLocalFontFileLoader:: GetFilePathLengthFromKey (método)
+# <a name="idwritelocalfontfileloadergetfilepathlengthfromkey-method"></a>Método IDWriteLocalFontFileLoader::GetFilePathLengthFromKey
 
 Obtiene la longitud de la ruta de acceso absoluta del archivo a partir de la clave de referencia del archivo de fuente.
 
@@ -44,12 +44,12 @@ HRESULT GetFilePathLengthFromKey(
 
 <dl> <dt>
 
-*fontFileReferenceKey* \[ de\]
+*fontFileReferenceKey* \[ En\]
 </dt> <dd>
 
-Tipo: **const void \***
+Tipo: **const \* void**
 
-Clave de referencia del archivo de fuente que identifica de forma única el archivo de fuente local dentro del ámbito del cargador de fuentes que se está usando.
+Clave de referencia del archivo de fuente que identifica de forma única el archivo de fuente local dentro del ámbito del cargador de fuentes que se está utilizando.
 
 </dd> <dt>
 
@@ -58,16 +58,16 @@ Clave de referencia del archivo de fuente que identifica de forma única el arch
 
 Tipo: **UINT32**
 
-Tamaño de la clave de referencia del archivo de fuentes en bytes.
+Tamaño de la clave de referencia del archivo de fuente en bytes.
 
 </dd> <dt>
 
-*filePathLength* \[ enuncia\]
+*filePathLength* \[ out\]
 </dt> <dd>
 
 Tipo: **UINT32 \***
 
-Longitud de la cadena de ruta de acceso del archivo, sin incluir el carácter **nulo** terminado.
+Longitud de la cadena de ruta de acceso del archivo, sin incluir el carácter **NULL** terminado.
 
 </dd> </dl>
 
@@ -75,20 +75,20 @@ Longitud de la cadena de ruta de acceso del archivo, sin incluir el carácter **
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

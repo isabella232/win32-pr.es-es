@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 825112ec9a33ef176d5a69765837214249e33102
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 34302215cf0e773d7713f56233d38462071f1dde725a85478688cfb9ca2a4f45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365898"
 ---
 # <a name="idelaydcgetcontrolstate-method"></a>IDelaydC::GetControlState (método)
 
@@ -65,8 +65,8 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 | Código devuelto                                                                                          | Descripción                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IDelaydC::Connect](idelaydc-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ NO \_ RETRASADO**</dt> </dl>   | El NPP está conectado a la red, pero no con el [método IDelaydC::Connect.](idelaydc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IDelaydC::Conectar](idelaydc-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO \_ RETRASADO**</dt> </dl>   | El NPP está conectado a la red, pero no con [el método IDelaydC::Conectar.](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -76,7 +76,7 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 Se puede llamar a este método cada vez que el NPP se conecta a la red mediante la [interfaz IDelaydC.](idelaydc.md) Puede usar este método para averiguar si se está ejecutando una captura, si la captura está en pausa o si la captura se ha detenido pero el NPP no está desconectado.
 
-Los métodos usados para iniciar, pausar y detener la captura se enumeran en la lista Vea también a continuación.
+Los métodos usados para iniciar, pausar y detener la captura se enumeran en la lista Ver también a continuación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,7 +98,7 @@ Los métodos usados para iniciar, pausar y detener la captura se enumeran en la 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC::Connect](idelaydc-connect.md)
+[IDelaydC::Conectar](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::P ause](idelaydc-pause.md)
