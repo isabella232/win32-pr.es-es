@@ -4,16 +4,16 @@ ms.assetid: d06690e4-f592-4b17-a5f1-baec2accc8dd
 title: Emisión del comando GetNumObjects
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd68e571b6d7003262709050d442c64a4d2461fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3ece98e409ab4ee2774c4efdba0c84c06c60e373b5ed15aee77f5dee65d9101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194015"
 ---
 # <a name="issuing-the-getnumobjects-command"></a>Emisión del comando GetNumObjects
 
-En el ejemplo de esta sección se invoca el comando MTP de **GetNumObjects** . (Para obtener una descripción completa de este comando y sus parámetros, consulte la [especificación de MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip)).
+En el ejemplo de esta sección se invoca el **comando GetNumObjects** MTP. (Para obtener una descripción completa de este comando y sus parámetros, vea la [especificación de MTP).](https://www.usb.org/sites/default/files/MTPv1_1.zip)
 
 Antes de invocar este comando, primero debe configurar los parámetros del comando.
 
@@ -109,7 +109,7 @@ HRESULT SendGetNumObjects(IPortableDevice* pDevice)
 
 
 
-Una vez configurados los parámetros, la aplicación invoca el comando.
+Una vez configurados los parámetros, la aplicación invoca el comando .
 
 
 ```C++
@@ -187,7 +187,7 @@ Una vez que la aplicación invoca el comando, procesa la respuesta del controlad
 
 <dl> <dt>
 
-[Compatibilidad con extensiones MTP](supporting-mtp-extensions.md)
+[Compatibilidad con extensiones de MTP](supporting-mtp-extensions.md)
 </dt> </dl>
 
  

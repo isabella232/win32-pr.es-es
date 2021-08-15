@@ -1,11 +1,11 @@
 ---
-title: Método INapSystemHealthAgentBinding2 GetSystemIsolationInfoEx (NapSystemHealthAgent. h)
-description: Los Sha llaman para determinar el estado de aislamiento del sistema y el estado de aislamiento extendido.
+title: Método INapSystemHealthAgentBinding2 GetSystemIsolationInfoEx (NapSystemHealthAgent.h)
+description: Las SHA llaman a para determinar el estado de aislamiento del sistema y el estado de aislamiento extendido.
 ms.assetid: 237e5539-889c-457d-8db0-bf3379f28b85
 keywords:
-- Método GetSystemIsolationInfoEx NAP
-- Método GetSystemIsolationInfoEx NAP, interfaz INapSystemHealthAgentBinding2
-- Interfaz INapSystemHealthAgentBinding2 NAP, método GetSystemIsolationInfoEx
+- Método NAP de GetSystemIsolationInfoEx
+- Método NAP de GetSystemIsolationInfoEx, interfaz INapSystemHealthAgentBinding2
+- INapSystemHealthAgentBinding2 interface NAP , GetSystemIsolationInfoEx method
 topic_type:
 - apiref
 api_name:
@@ -16,24 +16,24 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2643d62afba1a35ebd96b8b39ea2fcf90397576
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ac81d00bb953ddf3ab415e90724adcca34b302d8cc268699d8f2a820e0f34ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118367833"
 ---
-# <a name="inapsystemhealthagentbinding2getsystemisolationinfoex-method"></a>INapSystemHealthAgentBinding2:: GetSystemIsolationInfoEx (método)
+# <a name="inapsystemhealthagentbinding2getsystemisolationinfoex-method"></a>INapSystemHealthAgentBinding2::GetSystemIsolationInfoEx (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-Sha llama al método **INapSystemHealthAgentBinding2:: GetSystemIsolationInfoEx** para determinar el estado de aislamiento del sistema y el estado de aislamiento extendido.
+Las SHA llaman al método **INapSystemHealthAgentBinding2::GetSystemIsolationInfoEx** para determinar el estado de aislamiento del sistema y el estado de aislamiento extendido.
 
 > [!Note]  
-> Use [**INapSystemHealthAgentBinding:: GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md) para determinar solo el estado de aislamiento del sistema.
+> Use [**INapSystemHealthAgentBinding::GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md) para determinar solo el estado de aislamiento del sistema.
 
  
 
@@ -53,17 +53,17 @@ HRESULT GetSystemIsolationInfoEx(
 
 <dl> <dt>
 
-*isolationInfo* \[ enuncia\]
+*isolationInfo* \[ out\]
 </dt> <dd>
 
-Un puntero a un puntero a una estructura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) que contiene el estado de aislamiento extendido del sistema para las conexiones conocidas. *isolationInfo* indica si el sistema está en un estado de acceso restringido, período de prueba o acceso no restringido, así como información de [**ExtendedIsolationState**](/windows/win32/api/naptypes/ne-naptypes-extendedisolationstate) .
+Puntero a un puntero a una estructura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) que contiene el estado de aislamiento extendido del sistema para las conexiones conocidas. *isolationInfo* indica si el sistema está en un estado de acceso restringido, sondeo o acceso sin restricciones, así como información [**de ExtendedIsolationState.**](/windows/win32/api/naptypes/ne-naptypes-extendedisolationstate)
 
 </dd> <dt>
 
-*unknownConnections* \[ enuncia\]
+*unknownConnections* \[ out\]
 </dt> <dd>
 
-Un puntero a un valor **booleano** que es **true** si alguna conexión tiene un estado desconocido y **false** en caso contrario.
+Puntero a un **bool que** es **TRUE** si alguna conexión está en un estado desconocido y **FALSE** en caso contrario.
 
 </dd> </dl>
 
@@ -75,37 +75,37 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                             | Descripción                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>                   | Operación realizada correctamente.<br/>                                                                                                |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>                   | Operación realizada correctamente.<br/>                                                                                                |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl>         | Error de permisos, acceso denegado.<br/>                                                                                   |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Límite de recursos del sistema, no se pudo realizar la operación.<br/>                                                             |
-| <dl> <dt>**NAP \_ E \_ no \_ inicializado**</dt> </dl> | SHA no se ha inicializado previamente.<br/>                                                                        |
-| <dl> <dt>**RPC \_ E \_ desconectado**</dt> </dl>     | NapAgent se ha detenido. Este objeto se recuperará automáticamente y se volverá a enlazar a NapAgent, una vez que se reinicie.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | El límite de recursos del sistema no pudo realizar la operación.<br/>                                                             |
+| <dl> <dt>**NAP \_ E \_ NO \_ INICIALIZADO**</dt> </dl> | Sha no se ha inicializado previamente.<br/>                                                                        |
+| <dl> <dt>**RPC \_ E \_ DESCONECTADO**</dt> </dl>     | NapAgent se ha detenido. Este objeto se recuperará automáticamente y se volverá a conectar a NapAgent, una vez que se reinicie.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-SHA debe liberar la estructura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) llamando a [**FreeIsolationInfoEx**](freeisolationinfoex.md).
+Sha debe liberar la estructura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) llamando [**a FreeIsolationInfoEx.**](freeisolationinfoex.md)
 
-SHA debe llamar a [**Initialize**](inapsystemhealthagentbinding-initialize-method.md) antes de llamar a este método o a cualquier otro método de la interfaz [**INapSystemHealthAgentBinding2**](inapsystemhealthagentbinding2.md) .
+Sha debe llamar a [**Initialize antes**](inapsystemhealthagentbinding-initialize-method.md) de llamar a este método o a cualquier otro método de la [**interfaz INapSystemHealthAgentBinding2.**](inapsystemhealthagentbinding2.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
+| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

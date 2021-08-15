@@ -1,112 +1,112 @@
 ---
-title: Crear el archivo de imagen principal
-description: Crear el archivo de imagen principal
+title: Creación del archivo de arte principal
+description: Creación del archivo de arte principal
 ms.assetid: 50099050-2ce8-4cbf-82b7-3018f6579bd2
 keywords:
-- crear máscaras, archivos de imagen principal
-- Aspectos de Windows Media Player, archivos de imagen
-- máscaras, archivos de imagen
-- archivos para máscaras, arte
-- archivos de imagen para máscaras, imágenes principales
-- Aspectos de Windows Media Player, imágenes principales
+- crear máscaras, archivos de arte primarios
+- Reproductor de Windows Media máscaras, archivos art
+- skins,art files
+- archivos para máscaras,art
+- archivos de arte para máscaras, imágenes principales
+- Reproductor de Windows Media máscaras,imágenes principales
 - máscaras, imágenes principales
 - imágenes principales en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9ceb92a5a87c1fc03ec7336a7ca5dd7814e4a1c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b21483e9b39692ad9eee7eb2cd7958f2fa70ddb7c2926877b84f3f537156bd55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104554130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118341536"
 ---
-# <a name="creating-the-primary-art-file"></a>Crear el archivo de imagen principal
+# <a name="creating-the-primary-art-file"></a>Creación del archivo de arte principal
 
-El archivo de imagen principal contendrá el arte que el usuario de la máscara ve en primer lugar. En este caso, creará imágenes en diferentes capas del programa de arte. El motivo del uso de capas es que se copiarán niveles específicos posteriormente para crear archivos de mapa y archivos de imagen alternativos.
+El archivo de arte principal contendrá el arte que el usuario de la máscara ve primero. En este caso, va a crear imágenes en diferentes capas del programa de arte. El motivo del uso de capas es que copiará capas específicas más adelante para crear archivos de mapa y archivos de arte alternativos.
 
-Para crear el archivo de imagen principal, creará las siguientes capas en el siguiente orden:
+Para crear el archivo de arte principal, creará las capas siguientes en el orden siguiente:
 
 Capa de fondo de máscara
 
-Este es el color que será transparente cuando se muestre la máscara. Cree una capa por primera vez, pero elija el color final de esta capa después de elegir un color para la capa de contenedor de máscara. Este color debe ser similar a, pero no igual que el de la capa de contenedor de máscara, para ocultar los efectos de suavizado de contorno.
+Este es el color que será transparente cuando se muestre la máscara. Cree primero una capa para esta, pero elija el color final de esta capa después de elegir un color para la capa de contenedor de máscaras. Este color debe ser similar a la capa de contenedor de máscaras, pero no igual a esta, para ocultar los efectos de suavizado de alias.
 
 Capa de contenedor de máscara
 
-Esta es la imagen que formará el contorno de la máscara y será lo que vea el usuario. También será el contenedor de los dos botones de este ejemplo. Considere la piel como un contenedor para los controles de interfaz de usuario, como botones, controles deslizantes, etc. En este ejemplo, el contenedor es un óvalo amarillo.
+Esta es la imagen que formará el contorno de la máscara y será lo que el usuario vea. También será el contenedor de los dos botones de este ejemplo. Piense en la máscara como un contenedor para los controles de la interfaz de usuario, como botones, controles deslizantes, entre otros. En este ejemplo, el contenedor es un óvalo amarillo.
 
-Capas de los botones Reproducir y cerrar
+Reproducir y cerrar capas de botón
 
-Estos son los dos controles de interfaz de usuario que utiliza este ejemplo. Los colocará en capas independientes para que pueda ajustarlos fácilmente o copiarlos más adelante.
+Estos son los dos controles de interfaz de usuario que usa este ejemplo. Las colocará en capas independientes para que pueda ajustarlas fácilmente o copiarlas más adelante.
 
-Antes de crear las capas, debe crear el archivo que contendrá las capas. Inicie Photoshop y cree un nuevo archivo de 100 píxeles de alto y 200 píxeles de ancho. El archivo que se usa para crear la imagen de este ejemplo se denomina tiny.psd y se incluye con el SDK.
+Antes de crear las capas, debe crear el archivo que contendrán las capas. Inicie Photoshop y cree un nuevo archivo de 100 píxeles de alto y 200 píxeles de ancho. El archivo que se usa para crear el arte de este ejemplo se tiny.psd y se incluye con el SDK.
 
-Todas las instrucciones se proporcionan en términos de Photoshop, pero cualquier otro programa de arte se puede usar para crear máscaras siempre que se pueda guardar en uno de los formatos de archivo admitidos por la Media Player de Windows (BMP, GIF, JPG y PNG). Encontrará más fácil la creación de máscaras si usa un programa artístico con capas, como Adobe Photoshop, Jasc Paint Shop Pro o Jedor viscosidad. Las capas son muy útiles porque las imágenes se deben alinear correctamente para la asignación de imágenes y la presentación de imágenes alternativas.
+Todas las instrucciones se proporcionan en términos de Photoshop, pero cualquier otro programa de arte se puede usar para crear máscaras, siempre y cuando se pueda guardar en uno de los formatos de archivo admitidos por Reproductor de Windows Media (BMP, GIF, JPG y PNG). Le será más fácil crear máscaras si usa un programa de arte que tiene capas, como Adobe Adobe Adobe, Jasc Paint Shop Pro o Jedor Secundo. Las capas son muy útiles porque las imágenes deben estar alineadas correctamente para la asignación de imágenes y la presentación de imágenes alternativas.
 
 ## <a name="skin-background-layer"></a>Capa de fondo de máscara
 
-Cree una nueva capa y asígnele el nombre "fondo de máscara". Se convertirá en el color de transparencia que definirá en el archivo de definición de máscara. Espere hasta que se elija el color del contenedor de máscara antes de rellenar el nivel de fondo de la máscara con un color específico.
+Cree una nueva capa y así mismo den el nombre "Fondo de máscara". Esto se convertirá en el color de transparencia que definirá en el archivo de definición de máscara. Espere hasta que se elija el color del contenedor de máscaras antes de rellenar la capa de fondo de la máscara con un color específico.
 
 ## <a name="skin-container-layer"></a>Capa de contenedor de máscara
 
-A continuación, cree una nueva capa y llámela "contenedor de máscara". Esto definirá los bordes de la máscara y será el contenedor de los botones.
+A continuación, cree una nueva capa y llámela "Contenedor de máscaras". Esto definirá los bordes de la máscara y será el contenedor de los botones.
 
-Elija un color de primer plano para la forma mediante los controles deslizantes de color Web. En este ejemplo, \# se ha elegido el color "DBDD11".
+Elija un color de primer plano para la forma mediante los controles deslizantes de color web. En este ejemplo, se eligió el color \# "DBDD11".
 
-A continuación, cree una forma ovalada. La manera más fácil es usar la herramienta eliptical marquesina y crear una selección ovalada. Cuando haya creado una selección de óvalo que tenga el tamaño y la forma que desee, rellene la selección con el color de primer plano y cancele la selección.
+A continuación, cree una forma ovalada. La manera más fácil es usar la herramienta Eliptical Marquee y crear una selección ovalada. Cuando haya creado una selección ovalada que sea el tamaño y la forma que desee, rellene la selección con el color de primer plano y cancele la selección.
 
-Por último, para que este aspecto sea un poco más interesante, aplique el efecto de capa de bisel y relieve con los valores predeterminados.
+Por último, para que este aspecto sea un poco más interesante, aplique el efecto de capa de Bisel y Relieve con los valores predeterminados.
 
-La capa de contenedor de máscara debe ser similar a la siguiente ilustración.
+La capa de contenedor de máscara debe tener un aspecto parecido al de la ilustración siguiente.
 
 ![capa de contenedor de máscara](images/g01cont.png)
 
 ## <a name="background-skin-color"></a>Color de máscara de fondo
 
-Ahora que ha elegido un color de primer plano para la forma de contenedor de máscara, puede elegir un color similar para la capa de fondo de la máscara. No desea el mismo color exacto o el contenedor de máscara también será transparente. De hecho, asegúrese de que no usa este color exacto en cualquier parte de la máscara, ni siquiera en fotografías, ya que, siempre que aparezca este color, aparecerá la imagen de escritorio en su lugar.
+Ahora que ha elegido un color de primer plano para la forma del contenedor de máscaras, puede elegir un color similar para la capa de fondo de la máscara. No quiere el mismo color exacto o el contenedor de máscaras también será transparente. De hecho, asegúrese de no usar este color exacto en ningún otro lugar de la máscara, incluso en fotografías, ya que siempre que aparezca este color, la imagen de escritorio aparecerá en su lugar.
 
-Desea un color cerca del color del contenedor de máscara para evitar efectos de suavizado de contorno. Por ejemplo, si tiene un fondo negro, algunos bits de negro pueden aparecer en torno al borde de la piel. Al elegir un color cerca del color del contenedor de máscara, los píxeles aislados que se muestran en el proceso de suavizado de contorno no se apreciarán.
+Quiere un color cercano al color del contenedor de máscaras para evitar efectos de suavizado de alias. Por ejemplo, si tiene un fondo negro, es posible que algunos bits de negro se muestren alrededor del borde de la máscara. Al elegir un color cercano al color del contenedor de máscaras, los píxeles perdidos que se muestren en el proceso de suavizado de alias pasarán desapercibidos.
 
-El suavizado de contorno es el proceso de suavizar los bordes de las formas inclinadas o curvas. Suavizado de contorno crea nuevos colores, para píxeles a lo largo de los bordes de una forma, que son una combinación del color de primer plano y el color de fondo. Algunos de estos colores, entre otros, pueden provocar que se pierdan los píxeles cuando el color de fondo se hace transparente.
+El suavizado de contorno es el proceso de suavizar los bordes de las formas inclinadas o curvadas. El suavizado de contorno crea nuevos colores, para píxeles a lo largo de los bordes de una forma, que son una mezcla del color de primer plano y el color de fondo. Algunos de estos colores entre ellos pueden hacer que se falte píxeles cuando el color de fondo se hace transparente.
 
-La capa de fondo de la máscara debe ser similar a la siguiente ilustración.
+La capa de fondo de la máscara debe tener un aspecto parecido al de la ilustración siguiente.
 
 ![capa de máscara de fondo](images/g01backg.png)
 
-## <a name="play-and-close-button-layers"></a>Capas de los botones Reproducir y cerrar
+## <a name="play-and-close-button-layers"></a>Reproducir y cerrar capas de botón
 
-Cree una nueva capa y asígnele el nombre "botón Cerrar". Con la herramienta de selección de marquesina eliptical, cree un círculo y colóquelo en el lado izquierdo de la imagen global. Active la visibilidad del archivo contenedor de máscara para ayudar a colocar la selección.
+Cree una nueva capa y así mismo den el nombre "Botón Cerrar". Con la herramienta de selección marquesina elíptica de nuevo, cree un círculo y posiciones en el lado izquierdo de la imagen general. Active la visibilidad del archivo de contenedor de máscaras para ayudar a colocar la selección.
 
-Cuando esté satisfecho con la selección de ubicación, rellene la selección con cualquier color (excepto el color del contenedor de máscara o el fondo de la máscara). En este ejemplo, se ha elegido un color púrpura. No es necesario recordar el número del color. A continuación, cancele la selección y aplique otro efecto de la capa de bisel y de relieve predeterminados. Si desea aplicar efectos que no son de capa al botón, haga una copia del original para su uso posterior en la asignación.
+Cuando esté satisfecho con la colocación, rellene la selección con cualquier color (excepto el color del contenedor de máscaras o el fondo de la máscara). En este ejemplo, se eligió un color púrpura. No es necesario recordar el número del color. A continuación, cancele la selección y aplique otro efecto de capa bisel y relieve predeterminado. Si desea aplicar efectos que no son de capa al botón, realice una copia del original para su uso posterior en la asignación.
 
-El botón Cerrar debe ser similar al de la siguiente ilustración.
+El botón Cerrar debe tener un aspecto parecido al de la ilustración siguiente.
 
 ![botón Cerrar](images/g01qbut.png)
 
-Cree una nueva capa y asígnele el nombre "botón reproducir". Utilice las mismas técnicas que hizo para el botón Cerrar, pero asígnele un color diferente. En este caso, se ha elegido un color de botón rosa, pero se puede usar cualquier color siempre que no sea el mismo color que el contenedor de máscara (porque se fusionaría en el contenedor) o el color de fondo de la máscara (porque se convertiría en transparente).
+Cree una nueva capa y así mismo den el nombre "Botón de reproducción". Use las mismas técnicas que hizo para el botón Cerrar, pero asíéntesle un color diferente. En este caso, se eligió un color de botón rosa, pero cualquier color se puede usar siempre que no sea el mismo color que el contenedor de máscara (porque se mezclaría en el contenedor) o el color de fondo de la máscara (porque se convertiría en transparente).
 
-El botón de reproducción debería tener un aspecto similar al de la siguiente ilustración.
+El botón Reproducir debe tener un aspecto parecido al de la ilustración siguiente.
 
-![botón reproducir](images/g01pbut.png)
+![botón de reproducción](images/g01pbut.png)
 
 ## <a name="combine-layers-and-save"></a>Combinar capas y guardar
 
-Ahora está listo para crear el archivo de imagen principal. Oculte todas las capas y, a continuación, muestre solo las siguientes capas, en este orden (de arriba abajo):
+Ya está listo para crear el archivo de arte principal. Oculte todas las capas y, a continuación, muestre solo las siguientes capas, en este orden (de arriba abajo):
 
 Botón de reproducción
 
 Botón Cerrar
 
-Contenedor de máscara
+Contenedor de máscaras
 
 Fondo de máscara
 
-Guarde en un archivo nuevo con el comando Guardar una copia del menú archivo. Seleccione la opción BMP en la parte guardar como del cuadro de diálogo guardar una copia y escriba un nombre de archivo al que se hará referencia más adelante en el archivo de definición de máscara. Idealmente, debe guardarlo en el mismo directorio que el archivo de definición de máscara. Por ejemplo, podría llamar a este background.bmp. Elija la configuración predeterminada y guarde el archivo.
+Guarde en un archivo nuevo mediante el comando Guardar una copia del menú Archivo. Seleccione la opción BMP en la parte Guardar como del cuadro de diálogo Guardar una copia y escriba un nombre de archivo al que haga referencia más adelante en el archivo de definición de máscara. Lo ideal es guardar esto en el mismo directorio que el archivo de definición de máscara. Por ejemplo, podría llamar a este background.bmp. Elija la configuración predeterminada y guarde el archivo.
 
-El archivo de imagen principal debe tener el siguiente aspecto:
+El archivo de arte principal debe tener este aspecto:
 
-![archivo de imagen principal](images/g01prime.png)
+![archivo de arte principal](images/g01prime.png)
 
-Usará este nombre de archivo como el valor del atributo **BackgroundImage** del elemento **View** en el archivo de definición de máscara.
+Usará este nombre de archivo como valor para el atributo **backgroundImage** del **elemento VIEW** en el archivo de definición de máscara.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -115,9 +115,9 @@ Usará este nombre de archivo como el valor del atributo **BackgroundImage** del
 [**Creación de la primera máscara**](building-your-first-skin.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

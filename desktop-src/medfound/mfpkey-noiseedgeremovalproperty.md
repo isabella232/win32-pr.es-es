@@ -1,19 +1,19 @@
 ---
-description: Especifica si el códec debe intentar detectar bordes de fotogramas ruidosos y quitarlos.
+description: Especifica si el códec debe intentar detectar bordes de marco ruidosos y quitarlos.
 ms.assetid: fdb4f3a8-1447-4e1e-a208-0f9b717f7626
-title: Propiedad MFPKEY_NOISEEDGEREMOVAL (Wmcodecdsp. h)
+title: MFPKEY_NOISEEDGEREMOVAL propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30acd92bae7693d0714e42d6b4f832a521557bf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 128ab89cd12c31186cf99e0c01454986bfe950a3d0a68b6196db6df205dea02a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242562"
 ---
-# <a name="mfpkey_noiseedgeremoval-property"></a>\_Propiedad NOISEEDGEREMOVAL de MFPKEY
+# <a name="mfpkey_noiseedgeremoval-property"></a>Propiedad \_ MFPKEY NOISEEDGEREMOVAL
 
-Especifica si el códec debe intentar detectar bordes de fotogramas ruidosos y quitarlos.
+Especifica si el códec debe intentar detectar bordes de marco ruidosos y quitarlos.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,35 +21,35 @@ g \_ wszWMVCNoiseEdgeRemoval
 
 ## <a name="data-type"></a>Tipo de datos
 
-VT \_ bool
+VT \_ BOOL
 
 ## <a name="default-value"></a>Valor predeterminado
 
-false
+FALSE
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un borde de marco ruidoso suele ser el intervalo de espacio en blanco (VBI) vertical de un fotograma de televisión de difusión. VBI son las 21 primeras líneas de análisis del fotograma de televisión. Estas líneas de análisis no contienen datos de vídeo, sino que contienen datos sobre la difusión. Cuando una tarjeta de captura graba una señal de televisión, el VBI normalmente se quita del fotograma. La detección y corrección de bordes ruidosos realizadas por el códec solo puede corregir un borde que tenga tres o menos líneas de ruido. Si el vídeo capturado contiene más de tres líneas ruidosos, hay un problema con el hardware que se usa para capturar el vídeo.
+Un borde de marco ruidoso suele ser los datos del intervalo de espacio en blanco vertical (VBI) de un fotograma de televisión de difusión. La VBI es las primeras 21 líneas de digitalización del marco de televisión. Estas líneas de examen no contienen datos de vídeo: contienen datos sobre la difusión. Cuando una tarjeta de captura registra una señal de televisión, la VBI normalmente se quita del marco. La detección y corrección de borde ruidosos realizadas por el códec solo puede corregir un borde que tenga tres o menos líneas de ruido. Si el vídeo capturado contiene más de tres líneas ruidosas, hay un problema con el hardware que se usa para capturar el vídeo.
 
-Si el códec está configurado para quitar bordes ruidosos, duplica líneas adyacentes al borde ruidoso para rellenar el fotograma.
+Si el códec se establece para quitar los bordes ruidosos, duplica las líneas adyacentes al borde ruidoso para rellenar el marco.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

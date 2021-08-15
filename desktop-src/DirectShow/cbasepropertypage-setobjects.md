@@ -1,7 +1,7 @@
 ---
-description: 'El método SetObjects proporciona punteros IUnknown para los objetos asociados a la página de propiedades. Este método implementa el método IPropertyPage:: SetObjects.'
+description: El método SetObjects proporciona punteros IUnknown para los objetos asociados a la página de propiedades. Este método implementa el método IPropertyPage::SetObjects.
 ms.assetid: 11ca1e70-772c-414e-9647-7e4c4084c0d3
-title: Método CBasePropertyPage. SetObjects (Cprop. h)
+title: Método CBasePropertyPage.SetObjects (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 197c5eb82de76fb5a5f606d8a161e853b0c1e8f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e5c29d1ddc646ef05faad2bc283887265e8b85109fcb679924d9a5641ef13fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823030"
 ---
-# <a name="cbasepropertypagesetobjects-method"></a>CBasePropertyPage. SetObjects, método
+# <a name="cbasepropertypagesetobjects-method"></a>Método CBasePropertyPage.SetObjects
 
-El `SetObjects` método proporciona punteros **IUnknown** para los objetos asociados a la página de propiedades. Este método implementa el método **IPropertyPage:: SetObjects** .
+El `SetObjects` método proporciona **punteros IUnknown** para los objetos asociados a la página de propiedades. Este método implementa el **método IPropertyPage::SetObjects.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,38 +46,38 @@ HRESULT SetObjects(
 *cObjects* 
 </dt> <dd>
 
-Especifica el número de punteros **IUnknown** en la matriz especificada por *ppUnk*.
+Especifica el número de punteros **IUnknown** en la matriz especificada por *ppUnk.*
 
 </dd> <dt>
 
 *ppUnk* 
 </dt> <dd>
 
-Especifica una matriz de punteros **IUnknown** .
+Especifica una matriz de **punteros IUnknown.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                  | Descripción                           |
 |----------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Correcto.<br/>                   |
-| <dl> <dt>**\_puntero E**</dt> </dl>    | Argumento de puntero **nulo** .<br/> |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Error inesperado.<br/>        |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Correcto.<br/>                   |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | **Argumento de** puntero NULL.<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Error inesperado.<br/>        |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Aunque *ppUnk* especifica una matriz de punteros **IUnknown** , la clase **CBasePropertyPage** está diseñada únicamente para admitir un objeto asociado. Si *cObjects* es mayor que 1, el método devuelve E \_ inesperado.
+Aunque *ppUnk especifica* una matriz de punteros **IUnknown,** la clase **CBasePropertyPage** está diseñada solo para admitir un objeto asociado. Si *cObjects* es mayor que 1, el método devuelve E \_ UNEXPECTED.
 
-Si *cObjects* es igual a 1, este método llama al método [**CBasePropertyPage:: alconnect**](cbasepropertypage-onconnect.md) . Si *cObjects* es igual a 0, este método llama al método [**CBasePropertyPage:: OnDisconnection**](cbasepropertypage-ondisconnect.md) . La clase derivada debe reemplazar ambos métodos; para obtener más información, vea los comentarios de estos métodos.
+Si *cObjects* es igual a 1, este método llama al [**método CBasePropertyPage::OnConnect.**](cbasepropertypage-onconnect.md) Si *cObjects* es igual a 0, este método llama al [**método CBasePropertyPage::OnDisconnect.**](cbasepropertypage-ondisconnect.md) La clase derivada debe invalidar ambos métodos; Para obtener más información, vea los comentarios de esos métodos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,16 +85,16 @@ Si *cObjects* es igual a 1, este método llama al método [**CBasePropertyPage::
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

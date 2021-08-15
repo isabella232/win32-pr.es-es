@@ -1,7 +1,7 @@
 ---
-description: 'El método GetPageInfo recupera información sobre la página de propiedades. Este método implementa el método IPropertyPage:: GetPageInfo.'
+description: El método GetPageInfo recupera información sobre la página de propiedades. Este método implementa el método IPropertyPage::GetPageInfo.
 ms.assetid: f2e04652-7c71-48b2-b964-4e07ac98d367
-title: Método CBasePropertyPage. GetPageInfo (Cprop. h)
+title: Método CBasePropertyPage.GetPageInfo (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 27faecf50381b098dfcbee34d1494e37c77a36ea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: badb0678faa85b70dfa848bba7538319b905feea440339e24285f3d64b59d61c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823165"
 ---
-# <a name="cbasepropertypagegetpageinfo-method"></a>CBasePropertyPage. GetPageInfo (método)
+# <a name="cbasepropertypagegetpageinfo-method"></a>Método CBasePropertyPage.GetPageInfo
 
-El `GetPageInfo` método recupera información sobre la página de propiedades. Este método implementa el método **IPropertyPage:: GetPageInfo** .
+El `GetPageInfo` método recupera información sobre la página de propiedades. Este método implementa el **método IPropertyPage::GetPageInfo.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,19 +45,19 @@ HRESULT GetPageInfo(
 *pPageInfo* 
 </dt> <dd>
 
-Puntero a una estructura **PROPPAGEINFO** asignada por el llamador.
+Puntero a una estructura **PROPPAGEINFO** asignada por el autor de la llamada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                   | Descripción                     |
 |-----------------------------------------------------------------------------------------------|---------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Correcto.<br/>             |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Correcto.<br/>             |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente.<br/> |
 
 
@@ -70,16 +70,16 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

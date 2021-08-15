@@ -1,11 +1,11 @@
 ---
-title: IBasicDevice UniqueDeviceName, método
-description: Recupera el nombre del dispositivo único (UDN).
+title: Método IBasicDevice UniqueDeviceName
+description: Recupera el nombre de dispositivo único (UDN) del dispositivo.
 ms.assetid: 393EFF96-69E1-4081-905D-D8CC47B5FC4A
 keywords:
-- Método UniqueDeviceName API de streaming de multimedia
-- Método UniqueDeviceName API de streaming de multimedia, interfaz IBasicDevice
-- Interfaz IBasicDevice API de streaming de multimedia, método UniqueDeviceName
+- Método UniqueDeviceName de Media Streaming API
+- Método UniqueDeviceName de Media Streaming API, interfaz IBasicDevice
+- IBasicDevice interface Media Streaming API , UniqueDeviceName (método)
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4b3103640fd49880dc5ae5ca881618ac1091de62
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7b70fbc2021cf717cdb49d8a222aa33ad4e9213f297364b81af065c3bbeaed99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972324"
 ---
-# <a name="ibasicdeviceuniquedevicename-method"></a>IBasicDevice:: UniqueDeviceName (método)
+# <a name="ibasicdeviceuniquedevicename-method"></a>IBasicDevice::UniqueDeviceName (método)
 
-Recupera el nombre del dispositivo único (UDN).
+Recupera el nombre de dispositivo único (UDN) del dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,28 +41,28 @@ HRESULT UniqueDeviceName(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
-Recibe un puntero a la UDN del modelo de dispositivo.
+Recibe un puntero al UDN del modelo del dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,15 +4,15 @@ description: En este tema se incluye un ejemplo de código que enumera todos los
 ms.assetid: d113d132-24cf-4319-826b-0d3d10e432f6
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, enumerar grupos locales
+- Active Directory ejemplos Active Directory , enumerando grupos locales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62b830c1c3ec60d393606e282ff4408647ec8d62
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 241c89bfdb491c7bee0d0876a4b9bf17e6cc836c98a2f80e6734ad6cdc6420ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103789549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190660"
 ---
 # <a name="example-code-for-enumerating-local-groups"></a>Código de ejemplo para enumerar grupos locales
 
@@ -145,7 +145,7 @@ HRESULT ListMembersWithWinNtProvider(LPWSTR pwszComputer,LPWSTR pwszClass, LPWST
 
 
 
-En el siguiente ejemplo de código Visual Basic se enumeran los grupos locales mediante las interfaces [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) e [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) .
+En el Visual Basic ejemplo de código siguiente se enumeran los grupos locales mediante las [**interfaces IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) [**e IADsGroup.**](/windows/desktop/api/iads/nn-iads-iadsgroup)
 
 
 ```VB
@@ -247,6 +247,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

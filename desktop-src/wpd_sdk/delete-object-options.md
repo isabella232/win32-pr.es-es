@@ -1,7 +1,7 @@
 ---
-description: El \_ tipo de \_ enumeración Delete Object Options describe las opciones admitidas por un dispositivo al eliminar un objeto.
+description: El tipo de enumeración DELETE OBJECT OPTIONS describe las opciones que admite un \_ dispositivo al eliminar un \_ objeto.
 ms.assetid: d0e46e77-d333-498f-b2f5-26be1461a116
-title: Enumeración DELETE_OBJECT_OPTIONS (PortableDevice. h)
+title: DELETE_OBJECT_OPTIONS enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 3a1fb8ce9a443c7cc93019804094dca84a635c40
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 018c47a383a4fcd95d25bd13b00628678c6fa4a71e608f82544429020ea3f2c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194889"
 ---
-# <a name="delete_object_options-enumeration"></a>ELIMINAR \_ la \_ enumeración de opciones de objeto
+# <a name="delete_object_options-enumeration"></a>DELETE \_ OBJECT \_ OPTIONS (enumeración)
 
-El tipo de enumeración **Delete \_ Object \_ Options** describe las opciones admitidas por un dispositivo al eliminar un objeto.
+El **tipo \_ de \_ enumeración DELETE OBJECT OPTIONS** describe las opciones que admite un dispositivo al eliminar un objeto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -40,23 +40,23 @@ typedef enum DELETE_OBJECT_OPTIONS {
 
 <dl> <dt>
 
-<span id="PORTABLE_DEVICE_DELETE_NO_RECURSION"></span><span id="portable_device_delete_no_recursion"></span>**\_eliminación de dispositivo portátil \_ \_ sin \_ recursividad**
+<span id="PORTABLE_DEVICE_DELETE_NO_RECURSION"></span><span id="portable_device_delete_no_recursion"></span>**ELIMINACIÓN \_ DE DISPOSITIVO PORTÁTIL SIN \_ \_ \_ RECURSIVIDAD**
 </dt> <dd>
 
-Elimine solo el objeto y genere un error si tiene elementos secundarios.
+Elimine solo el objeto y se producirá un error si tiene elementos secundarios.
 
 </dd> <dt>
 
-<span id="PORTABLE_DEVICE_DELETE_WITH_RECURSION"></span><span id="portable_device_delete_with_recursion"></span>**\_ \_ eliminación de dispositivos portátiles \_ con \_ recursividad**
+<span id="PORTABLE_DEVICE_DELETE_WITH_RECURSION"></span><span id="portable_device_delete_with_recursion"></span>**ELIMINACIÓN \_ DE \_ DISPOSITIVOS \_ \_ PORTÁTILES CON RECURSIVIDAD**
 </dt> <dd>
 
 Elimine el objeto y todos sus elementos secundarios.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación puede recuperar las opciones de eliminación que admite el dispositivo mediante una llamada a [**IPortableDeviceCapabilities:: GetCommandOptions**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getcommandoptions) para el comando de **eliminación de \_ \_ \_ \_ \_ objetos de administración de objetos de comandos de WPD** . Debe examinar el valor de la opción [](iportabledevicevaluescollection.md) compatible con el método de **\_ \_ \_ \_ \_ \_ eliminación recursiva de administración de objetos** de la opción de WPD que este método devuelve en un objeto IPortableDeviceValuesCollection.
+La aplicación puede recuperar las opciones de eliminación que admite el dispositivo llamando a [**IPortableDeviceCapabilities::GetCommandOptions**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getcommandoptions) para el comando **WPD \_ COMMAND OBJECT MANAGEMENT DELETE \_ \_ \_ \_ OBJECTS.** Debe examinar el valor de la opción **WPD \_ OPTION OBJECT MANAGEMENT \_ \_ \_ RECURSIVE \_ DELETE \_ SUPPORTED** que este método devuelve en un [**objeto IPortableDeviceValuesCollection.**](iportabledevicevaluescollection.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,11 +64,11 @@ La aplicación puede recuperar las opciones de eliminación que admite el dispos
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

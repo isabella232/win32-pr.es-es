@@ -1,19 +1,19 @@
 ---
-description: Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System. Music. Composer. esto es muy importante para ordenar correctamente los archivos de música en japonés que no se pueden ordenar correctamente de forma fonética (el orden esperado por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia oriental, como permitir que el usuario elimine artículos con fines de ordenación.
+description: Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System. Música. Composer. Esto es muy importante para la ordenación correcta de los archivos de música en japonés que no se pueden ordenar correctamente fonéticamente (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
 ms.assetid: f087cbd3-7d0e-48c8-8e59-383d6b47cb12
-title: System. Music. ComposerSortOverride
+title: Sistema. Música. ComposerSortOverride
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db97b28d685182b98cafdc95662e5da5f5615349
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98847c7c07964f230c0baab5055cb15894dcd435e1c45403276954601b1423a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970234"
 ---
-# <a name="systemmusiccomposersortoverride"></a>System. Music. ComposerSortOverride
+# <a name="systemmusiccomposersortoverride"></a>Sistema. Música. ComposerSortOverride
 
-Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System. Music. Composer. esto es muy importante para ordenar correctamente los archivos de música en japonés que no se pueden ordenar correctamente de forma fonética (el orden esperado por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia oriental, como permitir que el usuario elimine artículos con fines de ordenación.
+Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System. Música. Composer. Esto es muy importante para la ordenación correcta de los archivos de música en japonés que no se pueden ordenar correctamente fonéticamente (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

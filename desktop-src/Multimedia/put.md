@@ -1,9 +1,9 @@
 ---
-title: Put (comando)
-description: El comando Put define el área de la imagen de origen y la ventana de destino que se usan para la presentación. Los dispositivos de vídeo digital y de superposición reconocen este comando.
+title: Comando put
+description: El comando put define el área de la imagen de origen y la ventana de destino usadas para la presentación. Los dispositivos de superposición de vídeo digital y vídeo reconocen este comando.
 ms.assetid: 55fb7192-2083-45e7-a0bf-0d72a6320f91
 keywords:
-- poner comando en Windows multimedia
+- Comando put Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d22fb7c74c1ed469e609e7dcfdd3d36ba355cc5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08732b0ed55464fa1a288cc13a9ac19609b480644ffa4c9dfbeb140cedbbd3c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372384"
 ---
-# <a name="put-command"></a>Put (comando)
+# <a name="put-command"></a>Comando put
 
-El comando Put define el área de la imagen de origen y la ventana de destino que se usan para la presentación. Los dispositivos de vídeo digital y de superposición reconocen este comando.
+El comando put define el área de la imagen de origen y la ventana de destino usadas para la presentación. Los dispositivos de superposición de vídeo digital y vídeo reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,69 +49,69 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszRegions"></span><span id="lpszregions"></span><span id="LPSZREGIONS"></span>*lpszRegions*
 </dt> <dd>
 
-Marca para definir el área. En la tabla siguiente se enumeran los tipos de dispositivos que reconocen el comando Put y las marcas usadas por cada tipo.
+Marca para definir el área. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando put y las marcas usadas por cada tipo.
 
 
 
-| Value        | Significado                                                                                      | Significado                                                                                          |
+| Valor        | Significado                                                                                      | Significado                                                                                          |
 |--------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| digitalvideo | destino de destino *en el* marco del marco del rectángulo en el origen del *rectángulo* de origen en el *rectángulo* | vídeo en vídeo en la ventana de la ventana de *rectángulo* en la ventana de *rectángulo* cliente Window Client en *rectángulo* |
-| overlay      | destino de destino en el marco del marco del *rectángulo* en el *rectángulo*                             | vídeo de origen en vídeo en rectángulo *en el* rectángulo                                           |
+| digitalvideo | destino en el marco *del marco* del rectángulo en *el origen* del rectángulo en el *rectángulo* | vídeo de vídeo en la *ventana de* rectángulo en el *cliente* de ventana de cliente de la ventana de rectángulo en el *rectángulo* |
+| overlay      | destino en el *marco de* marco del rectángulo en el *rectángulo*                             | source source at *rectangle* video video at *rectangle*                                           |
 
 
 
  
 
-En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro **lpszRegions** y su significado.
+En la tabla siguiente se enumeran las marcas que se pueden especificar en el **parámetro lpszRegions** y sus significados.
 
 
 
-| Value                        | Significado                                                                                                                                                                                                                                                                                                                                               |
+| Valor                        | Significado                                                                                                                                                                                                                                                                                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | destination                  | Selecciona el área de cliente completa de la ventana de destino para mostrar los datos.                                                                                                                                                                                                                                                                         |
-| destino en el *rectángulo*   | Selecciona una parte del área de cliente de la ventana de destino que se usa para mostrar la imagen. Cuando se especifica un área de la ventana de presentación y el dispositivo admite la expansión, la imagen de origen se ajusta al desplazamiento y la extensión de destino.                                                                                                     |
+| destination at *rectangle*   | Selecciona una parte del área de cliente de la ventana de destino utilizada para mostrar la imagen. Cuando se especifica un área de la ventana de presentación y el dispositivo admite el ajuste, la imagen de origen se extiende hasta el desplazamiento y la extensión de destino.                                                                                                     |
 | frame                        | Selecciona todo el búfer de fotogramas para recibir las imágenes de vídeo entrantes.                                                                                                                                                                                                                                                                                 |
 | marco en *rectángulo*         | Selecciona una parte del búfer de fotogramas para recibir las imágenes de vídeo entrantes.                                                                                                                                                                                                                                                                           |
-| source                       | Selecciona toda la imagen que se va a mostrar en la ventana de destino.                                                                                                                                                                                                                                                                                       |
-| origen en el *rectángulo*        | Selecciona una parte de la imagen que se va a mostrar en la ventana de destino. Cuando se especifica un área de la imagen de origen y el dispositivo admite la expansión, la imagen de origen se ajusta al desplazamiento y la extensión de destino.                                                                                                                           |
-| video                        | Selecciona la imagen de vídeo entrante completa que se va a capturar en el búfer de fotogramas.                                                                                                                                                                                                                                                                               |
-| vídeo en *rectángulo*         | Selecciona una parte de la imagen de vídeo entrante para capturar en el búfer de fotogramas.                                                                                                                                                                                                                                                                         |
+| source                       | Selecciona toda la imagen para mostrarla en la ventana de destino.                                                                                                                                                                                                                                                                                       |
+| source at *rectangle*        | Selecciona una parte de la imagen que se mostrará en la ventana de destino. Cuando se especifica un área de la imagen de origen y el dispositivo admite el ajuste, la imagen de origen se extiende hasta el desplazamiento y la extensión de destino.                                                                                                                           |
+| video                        | Selecciona toda la imagen de vídeo entrante que se capturará en el búfer de fotogramas.                                                                                                                                                                                                                                                                               |
+| vídeo en *rectángulo*         | Selecciona una parte de la imagen de vídeo entrante que se capturará en el búfer de fotogramas.                                                                                                                                                                                                                                                                         |
 | periodo                       | Restaura el tamaño inicial de la ventana en la pantalla. Este comando también muestra la ventana.                                                                                                                                                                                                                                                               |
-| ventana en *rectángulo*        | Cambia el tamaño y la ubicación de la ventana de presentación. El rectángulo especificado es relativo a la ventana primaria de la ventana de presentación (normalmente el escritorio) si se ha usado la marca "secundario de estilo" para el comando [abrir](open.md) . Para cambiar la ubicación de la ventana sin cambiar su alto o ancho, especifique cero para el alto y el ancho. |
-| cliente de Windows                | Restaura el área cliente de la ventana.                                                                                                                                                                                                                                                                                                               |
+| ventana en *rectángulo*        | Cambia el tamaño y la ubicación de la ventana de presentación. El rectángulo especificado es relativo a la ventana primaria de la ventana para mostrar (normalmente el escritorio) si se ha usado la marca "elemento secundario de estilo" para el [comando](open.md) open. Para cambiar la ubicación de la ventana sin cambiar su alto o ancho, especifique cero para el alto y el ancho. |
+| cliente de ventana                | Restaura el área de cliente de la ventana.                                                                                                                                                                                                                                                                                                               |
 | cliente de ventana en *rectángulo* | Cambia el tamaño y la ubicación del área de cliente de la ventana. El rectángulo especificado es relativo a la ventana primaria de la ventana de cliente. Para cambiar la ubicación de la ventana sin cambiar su alto o ancho, especifique cero para el alto y el ancho.                                                                                      |
 
 
 
  
 
-Cuando una marca incluye un rectángulo, las coordenadas del rectángulo se relacionan con el origen de la ventana o el origen de la imagen, según corresponda, y se especifican como **x1 Y1 x2 Y2**. Las coordenadas **X1Y1** especifican la esquina superior izquierda y las coordenadas **X2Y2** especifican el ancho y el alto del rectángulo.
+Cuando una marca incluye un rectángulo, las coordenadas del rectángulo son relativas al origen de la ventana o al origen de la imagen, según corresponda, y se especifican como **X1 Y1 X2 Y2**. Las coordenadas **X1Y1 especifican** la esquina superior izquierda y las coordenadas **X2Y2** especifican el ancho y alto del rectángulo.
 
 </dd> <dt>
 
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital, también se puede especificar "Test". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El comando Put define uno o varios de los siguientes rectángulos cuando se trabaja con dispositivos de superposición de vídeo:
+El comando put define uno o varios de los rectángulos siguientes al trabajar con dispositivos de superposición de vídeo:
 
--   El rectángulo de vídeo define la región de la imagen de vídeo entrante que se va a capturar.
--   El rectángulo del marco define la región del búfer de fotogramas que recibe la imagen de vídeo entrante.
--   El rectángulo de origen define qué región del búfer de fotogramas se copia en el rectángulo de destino.
+-   El rectángulo de vídeo define la región de la imagen de vídeo entrante que se capturará.
+-   El rectángulo de marco define la región del búfer de fotogramas que recibe la imagen de vídeo entrante.
+-   El rectángulo de origen define qué región del búfer de marco se copia en el rectángulo de destino.
 -   El rectángulo de destino define la región del área de cliente de la ventana de presentación que recibe la imagen de vídeo.
 
-El rectángulo de vídeo está relacionado con el rectángulo del marco de la misma manera que el rectángulo de origen está relacionado con el rectángulo de destino. La expansión puede producirse desde el rectángulo del vídeo hasta el rectángulo del marco y desde el rectángulo de origen hasta el rectángulo de destino. No todos los dispositivos admiten la ampliación y la expansión debe estar habilitada (mediante el comando [set](set.md) ).
+El rectángulo de vídeo está relacionado con el rectángulo de marco de la misma manera que el rectángulo de origen está relacionado con el rectángulo de destino. El stretch puede producirse desde el rectángulo de vídeo hasta el rectángulo de marco y desde el rectángulo de origen hasta el rectángulo de destino. No todos los dispositivos admiten el ajuste, y el ajuste debe estar habilitado (mediante el [comando set).](set.md)
 
-El comando siguiente define tres regiones para el vídeo, el marco y el origen.
+El comando siguiente define tres regiones para el vídeo, el fotograma y el origen.
 
 ``` syntax
 put vboard video 120 120 200 200 frame 0 0 200 200 source 0 0 200 200
@@ -119,29 +119,29 @@ put vboard video 120 120 200 200 frame 0 0 200 200 source 0 0 200 200
 
 Las regiones de este ejemplo se definen de la siguiente manera:
 
--   Una región de 200 x 200 píxeles de los datos de vídeo entrantes, a partir de un origen de 120 píxeles desde la esquina superior izquierda, se capturará en el búfer de fotogramas.
--   Los datos de vídeo se colocarán en una región de 200 x 200 píxeles en la esquina superior izquierda del búfer de fotogramas.
--   Las transferencias se realizan desde la región 200-by 200-pixel en la esquina superior izquierda del búfer de fotogramas hasta la ventana de destino.
+-   Se capturará una región de 200 por 200 píxeles de los datos de vídeo entrantes, empezando en un origen de 120 píxeles desde la esquina superior izquierda, en el búfer de fotogramas.
+-   Los datos de vídeo se colocarán en una región de 200 por 200 píxeles en la esquina superior izquierda del búfer de fotogramas.
+-   Las transferencias se realizan desde la región de 200 por 200 píxeles en la esquina superior izquierda del búfer de fotogramas a la ventana de destino.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
 [open](open.md)

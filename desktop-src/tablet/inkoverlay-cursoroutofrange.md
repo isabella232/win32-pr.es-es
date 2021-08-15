@@ -4,12 +4,12 @@ ms.assetid: c696b2a9-dc47-4b73-a556-9bb222f5bf59
 title: Evento InkOverlay.CursorOutOfRange (Msplaceut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2a30bfde1e96edfa286e9afeac147dc141c4942
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5774b7f81b1a914dc14ca557db077a0dcf802b02333d8038d0a9194dfa100992
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219606"
 ---
 # <a name="inkoverlaycursoroutofrange-event"></a>Evento InkOverlay.CursorOutOfRange
 
@@ -43,7 +43,7 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ DE DISPID \_ ICECursorOutOfRange.
+Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ DE \_ DISPID ICECursorOutOfRange.
 
 El [**evento CursorOutOfRange**](inkcollector-cursoroutofrange.md) se desencadena incluso cuando está en modo de selección o borrado, no solo cuando está en modo de entrada manuscrita. Esto requiere que supervise el modo de edición (del que es responsable de la configuración) y tenga en cuenta el modo antes de interpretar el evento. La ventaja de este requisito es una mayor libertad para innovar en la plataforma a través de un mayor conocimiento de los eventos de la plataforma.
 
@@ -53,9 +53,9 @@ El [**evento CursorOutOfRange**](inkcollector-cursoroutofrange.md) se desencaden
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

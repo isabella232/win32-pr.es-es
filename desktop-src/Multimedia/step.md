@@ -1,9 +1,9 @@
 ---
-title: comando Step
-description: El comando Step le indica cómo reproducir una o más tramas hacia delante o hacia atrás. La acción predeterminada es avanzar un fotograma. Los dispositivos de vídeo digital-video, VCR y CAV-Format reconocen este comando.
+title: comando step
+description: El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos de vídeo en formato vídeo digital, VCR y CSV reconocen este comando.
 ms.assetid: 6017ace5-cde9-42a0-bb2f-f85d7847adc5
 keywords:
-- comando Step multimedia de Windows
+- Comando step Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6203d0b2d5dea401e8197e1261946955cd28618a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b804ac64c2641ba1eb43ba7019ae2668c04a7d8b07fbfd20ab7b8cb570d8fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118370835"
 ---
-# <a name="step-command"></a>comando Step
+# <a name="step-command"></a>comando step
 
-El comando Step le indica cómo reproducir una o más tramas hacia delante o hacia atrás. La acción predeterminada es avanzar un fotograma. Los dispositivos de vídeo digital-video, VCR y CAV-Format reconocen este comando.
+El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos de vídeo en formato vídeo digital, VCR y CSV reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,14 +49,14 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszStepFlags"></span><span id="lpszstepflags"></span><span id="LPSZSTEPFLAGS"></span>*lpszStepFlags*
 </dt> <dd>
 
-Una o ambas de las marcas siguientes.
+Una o las dos marcas siguientes.
 
 
 
-| Value       | Significado                                                                                                                  |
+| Valor       | Significado                                                                                                                  |
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
-| por *fotogramas* | Indica el número de fotogramas que se van a recorrer. Si especifica un valor de *fotogramas* negativos, no puede especificar la marca "REVERSE". |
-| reverse     | Desplazar los fotogramas en orden inverso.                                                                                              |
+| por *fotogramas* | Indica el número de fotogramas que se debe ir paso a paso. Si especifica un valor de *fotogramas negativos,* no puede especificar la marca "reverse". |
+| reverse     | Paso a paso inverso de los fotogramas.                                                                                              |
 
 
 
@@ -67,33 +67,33 @@ Una o ambas de las marcas siguientes.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital y vídeo, también se puede especificar "prueba". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital y VCR, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

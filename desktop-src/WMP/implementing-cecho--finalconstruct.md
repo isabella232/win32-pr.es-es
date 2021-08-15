@@ -3,26 +3,26 @@ title: Implementación de CEcho FinalConstruct
 description: Implementación de CEcho FinalConstruct
 ms.assetid: 149e99c5-9f57-4447-b520-39a6dd39fc86
 keywords:
-- Complementos de Windows Media Player, páginas de propiedades de ejemplo echo
-- complementos, páginas de propiedades de ejemplo echo
-- Complementos de procesamiento de señal digital, páginas de propiedades de ejemplo de eco
-- Complementos DSP, páginas de propiedades de ejemplo echo
-- Ejemplo de complemento de DSP de eco, páginas de propiedades
-- Ejemplo de complemento DSP de eco, método CEcho FinalConstruct
+- Reproductor de Windows Media complementos, páginas de propiedades de ejemplo de eco
+- complementos, páginas de propiedades de ejemplo de eco
+- complementos de procesamiento de señales digitales, páginas de propiedades de ejemplo de eco
+- Complementos DE DSP, páginas de propiedades de ejemplo de eco
+- Ejemplo de complemento DSP de eco, páginas de propiedades
+- Ejemplo de complemento DSP de eco, método FinalConstruct de CEcho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 876db9f2479644800c42354a041ad3b1909b526b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bbeceeb9c0a7622ada62e98000ad4bfbc2e3faf08c22439039160810771cde8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104148797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748152"
 ---
-# <a name="implementing-cechofinalconstruct"></a>Implementación de CEcho:: FinalConstruct
+# <a name="implementing-cechofinalconstruct"></a>Implementación de CEcho::FinalConstruct
 
-El método CEcho:: FinalConstruct se implementa en echo. cpp. Contiene código para leer los valores de propiedad del registro cuando Windows Media Player crea instancias del objeto de complemento DSP. Esto es importante porque permite que la configuración del usuario se mantenga entre las instancias del objeto, así como entre las sesiones. El código de ejemplo del Asistente para complementos proporciona implementación para leer una única propiedad del registro. Puede modificar este código para controlar la propiedad de tiempo de retraso y, a continuación, agregar código para leer el valor de propiedad de combinación húmeda.
+El método CEcho::FinalConstruct se implementa en Echo.cpp. Contiene código para leer los valores de propiedad del Registro cuando Reproductor de Windows Media crea una instancia del objeto de complemento DSP. Esto es importante porque permite que la configuración del usuario persista entre instancias del objeto, así como entre sesiones. El código de ejemplo del asistente para complementos proporciona implementación para leer una sola propiedad del Registro. Puede modificar este código para controlar la propiedad de tiempo de retraso y, a continuación, agregar código para leer el valor de la propiedad de combinación con mezcla.
 
-En el código de ejemplo siguiente se lee cada valor de propiedad del registro y se almacena cada en la variable miembro correcta:
+El código de ejemplo siguiente lee cada valor de propiedad del Registro y almacena cada uno en la variable miembro correcta:
 
 
 ```CSharp
@@ -57,18 +57,18 @@ return S_OK;
 
 
 
-Observe que el valor DWORD de la combinación húmeda se convierte en un valor de punto flotante. Tenga en cuenta también que el código calcula el valor correcto para m \_ fDryMix.
+Tenga en cuenta que el valor DWORD de la mezcla de mezcla con humedad se convierte en un valor de punto flotante. Tenga en cuenta también que el código calcula el valor correcto para m \_ fDryMix.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Modificar la página de propiedades de ejemplo echo**](modifying-the-echo-sample-property-page.md)
+[**Modificar la página de propiedades Echo Sample**](modifying-the-echo-sample-property-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

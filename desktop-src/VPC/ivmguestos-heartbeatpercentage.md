@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMGuestOS HeartbeatPercentage (VPCCOMInterfaces. h)
+title: Propiedad IVMGuestOS HeartbeatPercentage (VPCCOMInterfaces.h)
 description: Porcentaje de latidos esperados recibidos en el último minuto.
 ms.assetid: 456dd8ae-e946-429d-98aa-5773362fdd4e
 keywords:
-- Propiedad HeartbeatPercentage Virtual PC
-- Propiedad HeartbeatPercentage Virtual PC, interfaz IVMGuestOS
-- Interfaz IVMGuestOS Virtual PC, propiedad HeartbeatPercentage
+- HeartbeatPercentage, propiedad Virtual PC
+- Propiedad HeartbeatPercentage Virtual PC , interfaz IVMGuestOS
+- Interfaz IVMGuestOS Pc virtual, propiedad HeartbeatPercentage
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22d568ed85281e8940b69afd1c72e76e2f208a5a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d1415b9d59e28e5658dc5b54a1a6d118e0b12a77b3208978448afb2b336f313e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117753452"
 ---
-# <a name="ivmguestosheartbeatpercentage-property"></a>IVMGuestOS:: HeartbeatPercentage (propiedad)
+# <a name="ivmguestosheartbeatpercentage-property"></a>Propiedad IVMGuestOS::HeartbeatPercentage
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el porcentaje de latidos esperados recibidos en el último minuto.
 
@@ -53,35 +53,35 @@ Porcentaje de latidos esperados recibidos en el último minuto.
 
 | Nombre o valor                                                                                                                                                              | Significado                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                                 | La operación se realizó correctamente.<br/>                                                                                                            |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>                   | El parámetro es **null**.<br/>                                                                                                               |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl>           | La configuración es desconocida.<br/>                                                                                                            |
-| <dl> <dt>Máquina virtual \_ La \_ VM E \_ no \_ ejecuta</dt> <dt>0xA0040206</dt> </dl>      | La máquina virtual (VM) debe estar en ejecución para esta operación.<br/>                                                                             |
-| <dl> <dt>Máquina virtual \_ E/s \_ \_ no \_ DISP</dt> <dt>0xA0040504</dt> </dl> | La máquina virtual no se ha iniciado completamente, la característica componentes de integración no está instalada o la versión instalada no admite esta característica.<br/> |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>           | Se produjo un error inesperado.<br/>                                                                                                        |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                 | La operación se realizó correctamente.<br/>                                                                                                            |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                   | El parámetro es **NULL.**<br/>                                                                                                               |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl>           | La configuración es desconocida.<br/>                                                                                                            |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING</dt> <dt>0xA0040206</dt> </dl>      | La máquina virtual (VM) debe estar en ejecución para esta operación.<br/>                                                                             |
+| <dl> <dt>Máquina virtual \_ E \_ LAS \_ ADICIONES NO ESTÁN \_ DISPONIBLES</dt> <dt>0xA0040504</dt> </dl> | La máquina virtual no está totalmente arrancada, la característica de componentes de integración no está instalada o la versión instalada no admite esta característica.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>           | Se produjo un error inesperado.<br/>                                                                                                        |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los componentes de integración enviarán un latido periódico a Windows Virtual PC mientras se ejecuta el sistema operativo invitado. Si el sistema operativo invitado está muy cargado, es posible que Windows Virtual PC reciba menos latidos de lo esperado. Si el porcentaje de latido desciende a cero, es posible que el sistema operativo invitado no responda o se bloquee. La máquina virtual debe estar en ejecución (es decir, completamente arrancada y sin apagar) y los componentes de integración deben instalarse cuando se invoca esta propiedad.
+Los componentes de integración enviarán un latido periódico Windows equipo virtual mientras se ejecuta el sistema operativo invitado. Si el sistema operativo invitado está muy cargado, es posible que Windows Virtual PC reciba menos latidos de los esperados. Si el porcentaje de latidos cae a cero, es posible que el sistema operativo invitado no responda o se bloquea. La máquina virtual debe estar en ejecución (es decir, totalmente arrancada y no apagada) y los componentes de integración deben instalarse cuando se invoca esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS se define como 99fea0db-4880-499A-b6d8-73dff9bc91be<br/>                 |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMGuestOS se define como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

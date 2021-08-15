@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_SIGNATURE. Operador de desigualdad'
+description: 'Más información sobre: JET_SIGNATURE. Operador de desigualdad'
 title: JET_SIGNATURE. Operador de desigualdad
 TOCTitle: 'Inequality operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SIGNATURE.op_Inequality(Microsoft.Isam.Esent.Interop.JET_SIGNATURE,Microsoft.Isam.Esent.Interop.JET_SIGNATURE)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 646b97f37aea55ee3e9d1aa24e80b9d26ea82469
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b0741308777389787f299f377160431dbbd29ca51b368e477fde04dc54337f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253031"
 ---
 # <a name="jet_signatureinequality-operator"></a>JET_SIGNATURE. Operador de desigualdad
 
 Determina si dos instancias especificadas de JET_SIGNATURE no son iguales.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,29 +64,29 @@ public static bool operator !=(
 
 #### <a name="parameters"></a>Parámetros
 
-  - LHS  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SIGNATURE](./jet-signature-structure2.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SIGNATURE](./jet-signature-structure2.md)  
     
     Primera instancia que se va a comparar.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SIGNATURE](./jet-signature-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SIGNATURE](./jet-signature-structure2.md)  
     
     Segunda instancia que se va a comparar.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True si las dos instancias de no son iguales.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True si las dos instancias no son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_SIGNATURE](./jet-signature-structure2.md)
+[JET_SIGNATURE estructura](./jet-signature-structure2.md)
 
-[Miembros de JET_SIGNATURE](./jet-signature-members.md)
+[JET_SIGNATURE miembros](./jet-signature-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

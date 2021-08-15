@@ -1,6 +1,6 @@
 ---
-title: 'RWTexture3D:: Operator (función)'
-description: Devuelve una variable de recurso de un RWTexture3D.
+title: RWTexture3D::Operator (Función)
+description: Devuelve una variable de recurso de RWTexture3D.
 ms.assetid: 0b4ea895-ac34-49e5-80e6-74229c33bfe9
 keywords:
 - Función de operador HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e41ff4db387c4d0926083419082fd589005d96a6
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 8db7073ef20976ecb6c39839d5639a1f0fcfe1fad765c2cf9b0ecdf086622b9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104984127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509141"
 ---
-# <a name="rwtexture3doperator--function"></a>RWTexture3D:: Operator (función)
+# <a name="rwtexture3doperator--function"></a>RWTexture3D::Operator (Función)
 
-Devuelve una variable de recurso de un [**RWTexture3D**](sm5-object-rwtexture3d.md).
+Devuelve una variable de recurso de [**RWTexture3D.**](sm5-object-rwtexture3d.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt3**
+Tipo: **uint3**
 
-Posición de índice. Contiene las coordenadas (x, y, z).
+Posición del índice. Contiene las coordenadas (x, y, z).
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Tipo: **R**
 
 Variable de recurso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -65,7 +65,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

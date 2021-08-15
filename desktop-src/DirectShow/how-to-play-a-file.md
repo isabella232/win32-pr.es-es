@@ -4,26 +4,26 @@ ms.assetid: 3d8c5d06-8690-4298-a1d1-f21af35bcfd4
 title: Cómo reproducir un archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc84ef751db318354da36454e6a30fd2ce4bd8e7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b7d20a021ec5053746c279598d08117c6b25a5fe6a52946fed56f19eda3cafe1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104423084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401153"
 ---
 # <a name="how-to-play-a-file"></a>Cómo reproducir un archivo
 
-Este artículo está destinado a proporcionarle el tipo de programación de DirectShow. Presenta una sencilla aplicación de consola que reproduce un archivo de audio o vídeo. El programa tiene solo unas pocas líneas, pero muestra parte de la eficacia de la programación de DirectShow.
+Este artículo está pensado para ofrecer el tipo de programación DirectShow programación. Presenta una aplicación de consola sencilla que reproduce un archivo de audio o vídeo. El programa tiene solo unas pocas líneas de longitud, pero muestra parte de la capacidad de DirectShow programación.
 
-Como se describe [en el artículo Introducción a la programación de aplicaciones de DirectShow](introduction-to-directshow-application-programming.md) , una aplicación de DirectShow siempre realiza los mismos pasos básicos:
+Como se describe en el artículo Introducción a [DirectShow programación de](introduction-to-directshow-application-programming.md) aplicaciones, DirectShow aplicación siempre realiza los mismos pasos básicos:
 
-1.  Cree una instancia del [Administrador de gráficos de filtro](filter-graph-manager.md).
-2.  Use el administrador de gráficos de filtro para generar un gráfico de filtro.
-3.  Ejecute el gráfico, haciendo que los datos se muevan a través de los filtros.
+1.  Cree una instancia de [Filter Graph Manager](filter-graph-manager.md).
+2.  Use el Administrador de Graph filtros para crear un gráfico de filtros.
+3.  Ejecute el gráfico, lo que hace que los datos se muevan a través de los filtros.
 
-Para compilar y vincular el código de este tema, incluya el archivo de encabezado DShow. h y un vínculo al archivo de biblioteca estática strmiids. lib. Para obtener más información, consulte [Building DirectShow Applications](setting-up-the-build-environment.md).
+Para compilar y vincular el código de este tema, incluya el archivo de encabezado Dshow.h y el vínculo al archivo de biblioteca estática strmiids.lib. Para obtener más información, vea [Building DirectShow Applications](setting-up-the-build-environment.md).
 
-Para empezar, llame a [**CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) o a [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) para inicializar la biblioteca com:
+Para empezar, [**llame a CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) [**o CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) para inicializar la biblioteca COM:
 
 
 ```C++
@@ -36,9 +36,9 @@ if (FAILED(hr))
 
 
 
-Para simplificar las cosas, en este ejemplo se omite el valor devuelto, pero siempre debe comprobar el valor **HRESULT** de cualquier llamada al método.
+Para que todo sea sencillo, en este ejemplo se omite el valor devuelto, pero siempre se debe comprobar el **valor HRESULT** desde cualquier llamada de método.
 
-A continuación, llame a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el administrador de gráficos de filtro:
+A continuación, [**llame a CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el administrador Graph filtros:
 
 
 ```C++
@@ -49,14 +49,14 @@ HRESULT hr = CoCreateInstance(CLSID_FilterGraph, NULL,
 
 
 
-Como se muestra, el identificador de clase (CLSID) es CLSID \_ FilterGraph. El administrador de gráficos de filtro lo proporciona un archivo DLL en proceso, por lo que el contexto de ejecución es **CLSCTX \_ Inproc \_ Server**. DirectShow admite el modelo de subprocesamiento libre, por lo que también puede llamar a [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) con la marca de **coinit \_ multiproceso** .
+Como se muestra, el identificador de clase (CLSID) es CLSID \_ FilterGraph. El Administrador Graph filtro se proporciona mediante un archivo DLL en proceso, por lo que el contexto de ejecución es **CLSCTX \_ INPROC \_ SERVER**. DirectShow admite el modelo de subprocesamiento libre, por lo que también puede llamar a [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) con la marca **COINIT \_ MULTITHREADED.**
 
-La llamada a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) devuelve la interfaz [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) , que principalmente contiene métodos para generar el gráfico de filtro. En este ejemplo se necesitan otras dos interfaces:
+La llamada a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) devuelve la [**interfaz IGraphBuilder,**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) que contiene principalmente métodos para compilar el gráfico de filtro. Para este ejemplo se necesitan otras dos interfaces:
 
--   Streaming de controles [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) . Contiene métodos para detener e iniciar el gráfico.
--   [**IMediaEvent**](/windows/desktop/api/Control/nn-control-imediaevent) tiene métodos para obtener eventos del administrador de gráficos de filtro. En este ejemplo, la interfaz se usa para esperar a que se complete la reproducción.
+-   [**IMediaControl controla**](/windows/desktop/api/Control/nn-control-imediacontrol) el streaming. Contiene métodos para detener e iniciar el gráfico.
+-   [**IMediaEvent tiene**](/windows/desktop/api/Control/nn-control-imediaevent) métodos para obtener eventos de Filter Graph Manager. En este ejemplo, la interfaz se usa para esperar a que se complete la reproducción.
 
-Ambas interfaces las expone el administrador de gráficos de filtro. Use el puntero [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) devuelto para consultarlos:
+El Administrador de filtros Graph expone ambas interfaces. Use el puntero [**IGraphBuilder devuelto**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) para consultarlos:
 
 
 ```C++
@@ -68,7 +68,7 @@ hr = pGraph->QueryInterface(IID_IMediaEvent, (void **)&pEvent);
 
 
 
-Ahora puede crear el gráfico de filtro. Para la reproducción de archivos, esto se realiza mediante una única llamada al método:
+Ahora puede crear el gráfico de filtros. Para la reproducción de archivos, esto se realiza mediante una sola llamada de método:
 
 
 ```C++
@@ -77,9 +77,9 @@ hr = pGraph->RenderFile(L"C:\\Example.avi", NULL);
 
 
 
-El método [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) crea un gráfico de filtro que puede reproducir el archivo especificado. El primer parámetro es el nombre de archivo, representado como una cadena de caracteres anchos (de 2 bytes). El segundo parámetro está reservado y debe ser igual a **null**.
+El [**método IGraphBuilder::RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) compila un gráfico de filtro que puede reproducir el archivo especificado. El primer parámetro es el nombre de archivo, representado como una cadena de caracteres anchos (2 bytes). El segundo parámetro está reservado y debe ser **null.**
 
-Este método puede producir un error si el archivo especificado no existe o no se reconoce el formato del archivo. Sin embargo, suponiendo que el método se ejecuta correctamente, el gráfico de filtro ya está listo para la reproducción. Para ejecutar el gráfico, llame al método [**IMediaControl:: Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run) :
+Este método puede producir un error si el archivo especificado no existe o si no se reconoce el formato de archivo. Suponiendo que el método se realiza correctamente, sin embargo, el gráfico de filtros ya está listo para la reproducción. Para ejecutar el gráfico, llame al [**método IMediaControl::Run:**](/windows/desktop/api/Control/nf-control-imediacontrol-run)
 
 
 ```C++
@@ -88,7 +88,7 @@ hr = pControl->Run();
 
 
 
-Cuando se ejecuta el gráfico de filtro, los datos se mueven a través de los filtros y se representan como vídeo y audio. La reproducción se produce en un subproceso independiente. Puede esperar a que se complete la reproducción llamando al método [**IMediaEvent:: WaitForCompletion**](/windows/desktop/api/Control/nf-control-imediaevent-waitforcompletion) :
+Cuando se ejecuta el gráfico de filtros, los datos se mueven a través de los filtros y se representan como vídeo y audio. La reproducción se produce en un subproceso independiente. Puede esperar a que se complete la reproducción llamando al [**método IMediaEvent::WaitForCompletion:**](/windows/desktop/api/Control/nf-control-imediaevent-waitforcompletion)
 
 
 ```C++
@@ -98,9 +98,9 @@ pEvent->WaitForCompletion(INFINITE, &evCode);
 
 
 
-Este método se bloquea hasta que se realiza la reproducción del archivo o hasta que transcurre el intervalo de tiempo de espera especificado. El valor infinito significa que la aplicación se bloquea indefinidamente hasta que el archivo termina de reproducirse. Para obtener un ejemplo más realista del control de eventos, vea [responder a eventos](responding-to-events.md).
+Este método se bloquea hasta que se realiza la reproducción del archivo o hasta que transcurre el intervalo de tiempo de espera especificado. El valor INFINITE significa que la aplicación se bloquea indefinidamente hasta que se realiza la reproducción del archivo. Para obtener un ejemplo más realista del control de eventos, vea Responder a [eventos](responding-to-events.md).
 
-Una vez finalizada la aplicación, libere los punteros de interfaz y cierre la biblioteca COM:
+Cuando finalice la aplicación, suelte los punteros de interfaz y cierre la biblioteca COM:
 
 
 ```C++
@@ -114,7 +114,7 @@ CoUninitialize();
 
 ## <a name="example-code"></a>Código de ejemplo
 
-Este es el código completo para el ejemplo que se describe en este artículo:
+Este es el código completo del ejemplo descrito en este artículo:
 
 
 ```C++
@@ -174,7 +174,7 @@ void main(void)
 
 <dl> <dt>
 
-[Tareas básicas de DirectShow](basic-directshow-tasks.md)
+[Tareas DirectShow básicas](basic-directshow-tasks.md)
 </dt> </dl>
 
  

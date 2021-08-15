@@ -1,27 +1,27 @@
 ---
-description: Al establecer la propiedad ARPSYSTEMCOMPONENT en 1 mediante la línea de comandos o una transformación, se evita que la aplicación se muestre en la lista Agregar o quitar programas del panel de control.
+description: Establecer la propiedad ARPSYSTEMCOMPONENT en 1 mediante la línea de comandos o una transformación impide que la aplicación se muestre en la lista Agregar o quitar programas de Panel de control.
 ms.assetid: fa3510b4-c4de-4261-ae6c-4292b88432ef
 title: Propiedad ARPSYSTEMCOMPONENT
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd8dc3b03cca03cb663a597a891fc692b02842c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e3bded81f12cd6a6d1573d90b631a8aa29e29df2140dbc8edb20d2ef28841bdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118381370"
 ---
 # <a name="arpsystemcomponent-property"></a>Propiedad ARPSYSTEMCOMPONENT
 
-Al establecer la propiedad **ARPSYSTEMCOMPONENT** en 1 mediante la línea de comandos o una transformación, se evita que la aplicación se muestre en la lista **Agregar o quitar programas** del **Panel de control**.
+Establecer la **propiedad ARPSYSTEMCOMPONENT** en 1 mediante la línea de comandos  o una transformación impide que la aplicación se muestre en la lista Agregar o **quitar programas de Panel de control**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

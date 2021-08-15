@@ -1,9 +1,9 @@
 ---
-title: Función MpManagerStatusQuery (MpClient. h)
-description: Devuelve información de estado sobre los distintos componentes del administrador de protección contra malware de. | Función MpManagerStatusQuery (MpClient. h)
+title: Función MpManagerStatusQuery (MpClient.h)
+description: Devuelve información de estado sobre varios componentes del administrador de protección contra malware. | Función MpManagerStatusQuery (MpClient.h)
 ms.assetid: E993FD8B-A35D-41C1-9522-1B9F0BC10B3D
 keywords:
-- Función MpManagerStatusQuery características de entorno heredado de Windows
+- Función MpManagerStatusQuery Características heredadas del Windows entorno
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad2e28bab1794b53695872310a3a7cf5d088f1a1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9d05751f30e1579ef8b12e31a4f858469b1c997cf9c29d7643c0600a133840fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883380"
 ---
-# <a name="mpmanagerstatusquery-function"></a>MpManagerStatusQuery función)
+# <a name="mpmanagerstatusquery-function"></a>Función MpManagerStatusQuery
 
-\[**MpManagerStatusQuery** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [**MpManagerStatusQueryEx**](mpmanagerstatusqueryex.md).\]
+\[**MpManagerStatusQuery** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [**use MpManagerStatusQueryEx**](mpmanagerstatusqueryex.md).\]
 
-Devuelve información de estado sobre los distintos componentes del administrador de protección contra malware de.
+Devuelve información de estado sobre varios componentes del administrador de protección contra malware.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,21 +43,21 @@ HRESULT WINAPI MpManagerStatusQuery(
 
 <dl> <dt>
 
-*hMpHandle* \[ de\]
+*hMpHandle* \[ En\]
 </dt> <dd>
 
 Tipo: **MPHANDLE**
 
-Identificador de la interfaz del administrador de protección contra malware. La función [**MpManagerOpen**](mpmanageropen.md) devuelve este identificador.
+Controle la interfaz del administrador de protección contra malware. La función [**MpManagerOpen**](mpmanageropen.md) devuelve este identificador.
 
 </dd> <dt>
 
-*pStatusInfo* \[ enuncia\]
+*pStatusInfo* \[ out\]
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ info**
+Tipo: **PMPSTATUS \_ INFO**
 
-Puntero a una estructura que devuelve información de estado relativa a los últimos análisis, amenazas activas y distintos Estados de los componentes. Vea [**\_ información de MPSTATUS**](mpstatus-info.md).
+Puntero a una estructura que devuelve información de estado relacionada con los últimos exámenes, las amenazas activas y el estado de varios componentes. Vea [**MPSTATUS \_ INFO**](mpstatus-info.md).
 
 </dd> </dl>
 
@@ -65,37 +65,37 @@ Puntero a una estructura que devuelve información de estado relativa a los últ
 
 Tipo: **HRESULT**
 
-Si la función se ejecuta correctamente, el valor devuelto es **S \_ OK**. Se garantiza que esta llamada de función se realiza correctamente aunque no se esté ejecutando un servicio antimalware.
+Si la función se realiza correctamente, el valor devuelto es **S \_ OK**. Se garantiza que esta llamada de función se realiza correctamente incluso si no se está ejecutando un servicio AntiMalware.
 
-Si se produce un error en la función, el valor devuelto es un código **HRESULT** erróneo. El autor de la llamada puede usar la función [**MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
+Si se produce un error en la función, el valor devuelto es un **código HRESULT con** errores. El autor de la llamada puede usar [**la función MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**MpErrorMessageFormat**](mperrormessageformat.md)
 </dt> <dt>
 
-[**MpManagerOpen**](mpmanageropen.md)
+[**MpManagerAbrir**](mpmanageropen.md)
 </dt> <dt>
 
 [**MpManagerStatusQueryEx**](mpmanagerstatusqueryex.md)
 </dt> <dt>
 
-[**información de MPSTATUS \_**](mpstatus-info.md)
+[**INFORMACIÓN \_ DE MPSTATUS**](mpstatus-info.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método GetAuthor.
 ms.assetid: fb76009e-cc01-4dec-9403-04bf6b53db80
-title: IWICComponentInfo_GetAuthor_Proxy función)
+title: IWICComponentInfo_GetAuthor_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: f181a567ae4089870d324c7a7e0d67a34b965b5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c83d42f499c8f821f5b342f08749a2167aac9cc61334fe2fc2d9e9134b5e2b49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206676"
 ---
-# <a name="iwiccomponentinfo_getauthor_proxy-function"></a>IWICComponentInfo \_ GetAuthor \_ función proxy
+# <a name="iwiccomponentinfo_getauthor_proxy-function"></a>Función IWICComponentInfo \_ GetAuthor \_ Proxy
 
-Función de proxy para el método [**GetAuthor**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getauthor) .
+Función de proxy para el [**método GetAuthor.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getauthor)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,28 +43,28 @@ HRESULT IWICComponentInfo_GetAuthor_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+Tipo: **[ **IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)\***
 
-Puntero a este objeto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+Puntero a este [**objeto IWICComponentInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)
 
 </dd> <dt>
 
-*cchAuthor* \[ de\]
+*cchAuthor* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Tamaño del búfer de *wzAuthor* .
+Tamaño del búfer *wzAuthor.*
 
 </dd> <dt>
 
 *wzAuthor* \[ in, out\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Puntero que recibe el nombre del autor del componente.
 
@@ -72,10 +72,10 @@ La cadena devuelta es específica de la configuración regional, 1033 de forma p
 
 </dd> <dt>
 
-_pcchActual * \[ out\]
+*pcchActual* \[ out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Puntero que recibe la longitud real del nombre de los autores del componente.
 
@@ -83,9 +83,9 @@ Puntero que recibe la longitud real del nombre de los autores del componente.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -93,11 +93,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

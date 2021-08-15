@@ -1,17 +1,17 @@
 ---
 description: Habilita las optimizaciones estáticas en la canalización de vídeo.
 ms.assetid: 62fb3f0f-ab1f-4c61-8e7f-62908b947788
-title: MF_TOPOLOGY_STATIC_PLAYBACK_OPTIMIZATIONS atributo (Mfidl. h)
+title: MF_TOPOLOGY_STATIC_PLAYBACK_OPTIMIZATIONS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6f9f7d884c49078ca02571f8ba141f9a1e13589
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f01b22e5b7e972e9d1eb453f317e8db6a902e994e83d075cd791d9261aa6ed09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117691247"
 ---
-# <a name="mf_topology_static_playback_optimizations-attribute"></a>\_ \_ \_ Atributo de optimizaciones de reproducción estática \_ de topología MF
+# <a name="mf_topology_static_playback_optimizations-attribute"></a>Atributo \_ MF TOPOLOGY \_ STATIC PLAYBACK \_ \_ OPTIMIZATIONS
 
 Habilita las optimizaciones estáticas en la canalización de vídeo.
 
@@ -21,24 +21,24 @@ Habilita las optimizaciones estáticas en la canalización de vídeo.
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Se aplica a
 
 [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Establezca este atributo antes de cargar una topología. Si el atributo es **true**, el cargador de topología intenta optimizar la canalización antes de que se inicie la reproducción.
+Establezca este atributo antes de cargar una topología. Si el atributo es **TRUE,** el cargador de topologías intenta optimizar la canalización antes de que se inicie la reproducción.
 
-Si establece este atributo, también debe establecer los siguientes atributos:
+Si establece este atributo, también debe establecer los atributos siguientes:
 
--   [velocidad de reproducción de \_ topología MF \_ \_](mf-topology-playback-framerate.md)
--   [\_DiMS de reproducción de topologías \_ \_ máx \_ .](mf-topology-playback-max-dims.md)
+-   [VELOCIDAD \_ DE FOTOGRAMAS DE \_ REPRODUCCIÓN DE \_ TOPOLOGÍA MF](mf-topology-playback-framerate.md)
+-   [ATENUACIONES \_ MÁXIMAS DE \_ REPRODUCCIÓN DE \_ TOPOLOGÍA \_ DE MF](mf-topology-playback-max-dims.md)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -103,19 +103,19 @@ done:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de topología](topology-attributes.md)

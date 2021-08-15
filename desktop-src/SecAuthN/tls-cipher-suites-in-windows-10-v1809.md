@@ -3,37 +3,37 @@ description: Obtenga información sobre los conjuntos de cifrado TLS Windows 10 
 title: Conjuntos de cifrado TLS en Windows 10 v1809
 ms.topic: article
 ms.date: 10/09/2018
-ms.openlocfilehash: d69d62dc57212865ab1020288c47c3abcddd4f19
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: a9dc28faa3599305188b86effdb1d168c3b9defdd39c25aa15a75e8cfd7ebbe6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117786174"
 ---
 # <a name="tls-cipher-suites-in-windows-10-v1809"></a>Conjuntos de cifrado TLS en Windows 10 v1809
 
-Los conjuntos de cifrado solo se pueden negociar para las versiones TLS que los admiten. Siempre se prefiere la versión de TLS más alta admitida en el protocolo de enlace TLS.
+Los conjuntos de cifrado solo se pueden negociar para las versiones TLS que los admiten. Siempre se prefiere la versión más alta compatible de TLS en el protocolo de enlace TLS.
 
 La disponibilidad de los conjuntos de cifrado debe controlarse de una de estas dos maneras:
 
--   El orden de prioridad predeterminado se invalida cuando se configura una lista de prioridad. No se usarán los conjuntos de cifrado que no están en la lista de prioridades.
--   Permitido cuando la aplicación pasa SCH USE STRONG CRYPTO: el proveedor de Microsoft Schannel filtrará los conjuntos de cifrado débiles conocidos cuando la aplicación use la marca \_ \_ SCH USE STRONG \_ \_ \_ \_ CRYPTO. Rc4, DES, exportar y conjuntos de cifrado null se filtran.
+-   El orden de prioridad predeterminado se invalida cuando se configura una lista de prioridades. No se usarán los conjuntos de cifrado que no están en la lista de prioridades.
+-   Permitido cuando la aplicación pasa SCH USE STRONG CRYPTO: el proveedor de Microsoft Schannel filtrará los conjuntos de cifrado débiles conocidos cuando la aplicación use la marca \_ \_ SCH USE STRONG \_ \_ \_ \_ CRYPTO. Se filtran los conjuntos de cifrado RC4, DES, export y NULL.
 
 > [!IMPORTANT]
-> Se producirá un error en los servicios web HTTP/2 con conjuntos de cifrado no compatibles con HTTP/2. Para asegurarse de que los servicios web funcionan con clientes y exploradores HTTP/2, consulte Implementación de la ordenación de conjuntos de [cifrado personalizados.](https://support.microsoft.com/help/4032720/how-to-deploy-custom-cipher-suite-ordering-in-windows-server-2016)
+> Se producirá un error en los servicios web HTTP/2 con conjuntos de cifrado no compatibles con HTTP/2. Para asegurarse de que los servicios web funcionan con exploradores y clientes HTTP/2, consulte Implementación de la ordenación de conjuntos de [cifrado personalizados.](https://support.microsoft.com/help/4032720/how-to-deploy-custom-cipher-suite-ordering-in-windows-server-2016)
 
  
 
-El cumplimiento de FIPS se ha vuelto más complejo con la adición de curvas elípticas, lo que hace que la columna habilitada para el modo FIPS en versiones anteriores de esta tabla sea confusa. Por ejemplo, un conjunto de cifrado como TLS \_ ECDHE \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA256 solo es una queja de FIPS cuando se usan curvas elípticas NIST. Para averiguar qué combinaciones de curvas elípticas y conjuntos de cifrado se habilitarán en el modo FIPS, consulte la sección 3.3.1 de Directrices para la selección, configuración y uso de implementaciones [de TLS.]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf)
+El cumplimiento de FIPS se ha vuelto más complejo con la adición de curvas elípticas que hacen que la columna habilitada para el modo FIPS en versiones anteriores de esta tabla sea confusa. Por ejemplo, un conjunto de cifrado como TLS \_ ECDHE \_ RSA \_ WITH \_ AES \_ 128 \_ CBC SHA256 solo es \_ fips-queje al usar curvas elípticas NIST. Para averiguar qué combinaciones de curvas elípticas y conjuntos de cifrado se habilitarán en el modo FIPS, consulte la sección 3.3.1 de Directrices para la selección, configuración y uso de implementaciones [de TLS.]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf)
 
-Por Windows 10, versión 1809, los siguientes conjuntos de cifrado están habilitados y en este orden de prioridad de forma predeterminada mediante el proveedor de Microsoft Schannel:
+Por Windows 10, versión 1809, los siguientes conjuntos de cifrado están habilitados y en este orden de prioridad de forma predeterminada mediante el proveedor Schannel de Microsoft:
 
 
 
-| Cadena de conjunto de cifrado                                                                                 | Permitido por SCH \_ USE \_ STRONG \_ CRYPTO | Versiones del protocolo TLS/SSL                     |
+| Cadena del conjunto de cifrado                                                                                 | Permitido por SCH \_ USE \_ STRONG \_ CRYPTO | Versiones del protocolo TLS/SSL                     |
 |-----------------------------------------------------------------------------------------------------|-------------------------------------|-----------------------------------------------|
 | TLS \_ ECDHE \_ ECDSA \_ CON \_ AES \_ 256 \_ GCM \_ SHA384<br/>                                           | Sí<br/>                      | TLS 1.2<br/>                            |
-| TLS \_ ECDHE \_ ECDSA \_ WITH \_ AES \_ 128 \_ GCM \_ SHA256<br/>                                           | Sí<br/>                      | TLS 1.2<br/>                            |
+| TLS \_ ECDHE \_ ECDSA \_ CON \_ AES \_ 128 \_ GCM \_ SHA256<br/>                                           | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ ECDHE \_ RSA CON \_ \_ AES \_ 256 \_ GCM \_ SHA384<br/>                                             | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ ECDHE \_ RSA CON \_ \_ AES \_ 128 \_ GCM \_ SHA256<br/>                                             | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ DHE \_ RSA CON \_ \_ AES \_ 256 \_ GCM \_ SHA384<br/>                                               | Sí<br/>                      | TLS 1.2<br/>                            |
@@ -47,11 +47,11 @@ Por Windows 10, versión 1809, los siguientes conjuntos de cifrado están habili
 | TLS \_ ECDHE \_ RSA CON \_ \_ AES \_ 256 \_ CBC \_ SHA<br/>                                                | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ ECDHE \_ RSA CON \_ \_ AES \_ 128 \_ CBC \_ SHA<br/>                                                | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ RSA \_ CON \_ AES \_ 256 \_ GCM \_ SHA384<br/>                                                    | Sí<br/>                      | TLS 1.2<br/>                            |
-| TLS \_ RSA \_ WITH \_ AES \_ 128 \_ GCM \_ SHA256<br/>                                                    | Sí<br/>                      | TLS 1.2<br/>                            |
-| TLS \_ RSA \_ WITH \_ AES \_ 256 \_ CBC \_ SHA256<br/>                                                    | Sí<br/>                      | TLS 1.2<br/>                            |
-| TLS \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA256<br/>                                                    | Sí<br/>                      | TLS 1.2<br/>                            |
+| TLS \_ RSA \_ CON \_ AES \_ 128 \_ GCM \_ SHA256<br/>                                                    | Sí<br/>                      | TLS 1.2<br/>                            |
+| TLS \_ RSA \_ CON \_ AES \_ 256 \_ CBC \_ SHA256<br/>                                                    | Sí<br/>                      | TLS 1.2<br/>                            |
+| TLS \_ RSA \_ CON \_ AES \_ 128 \_ CBC \_ SHA256<br/>                                                    | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ RSA \_ CON \_ AES \_ 256 \_ CBC \_ SHA<br/>                                                       | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
-| TLS \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA<br/>                                                       | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
+| TLS \_ RSA \_ CON \_ AES \_ 128 \_ CBC \_ SHA<br/>                                                       | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ RSA \_ CON \_ 3DES \_ EDE \_ CBC \_ SHA<br/>                                                      | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ RSA \_ CON \_ \_ SHA256 NULL <br/> Solo se usa cuando la aplicación solicita explícitamente.<br/> | No<br/>                       | TLS 1.2<br/>                            |
 | TLS \_ RSA CON SHA \_ \_ \_ NULL <br/> Solo se usa cuando la aplicación solicita explícitamente.<br/>    | No<br/>                       | TLS 1.2, TLS 1.1, TLS 1.0, SSL 3.0<br/> |
@@ -60,11 +60,11 @@ Por Windows 10, versión 1809, los siguientes conjuntos de cifrado están habili
 
  
 
-El proveedor de Microsoft Schannel admite los siguientes conjuntos de cifrado, pero no está habilitado de forma predeterminada:
+El proveedor de Schannel de Microsoft admite los siguientes conjuntos de cifrado, pero no está habilitado de forma predeterminada:
 
 
 
-| Cadena de conjunto de cifrado                                                                               | Permitido por SCH \_ USE \_ STRONG \_ CRYPTO | Versiones del protocolo TLS/SSL                     |
+| Cadena del conjunto de cifrado                                                                               | Permitido por SCH \_ USE \_ STRONG \_ CRYPTO | Versiones del protocolo TLS/SSL                     |
 |---------------------------------------------------------------------------------------------------|-------------------------------------|-----------------------------------------------|
 | TLS \_ DHE \_ RSA CON \_ \_ AES \_ 256 \_ CBC \_ SHA<br/>                                                | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ DHE \_ RSA CON \_ \_ AES \_ 128 \_ CBC \_ SHA<br/>                                                | Sí<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
@@ -111,11 +111,11 @@ Los siguientes conjuntos de cifrado PSK están habilitados y en este orden de pr
 
 Para agregar conjuntos de cifrado, implemente una directiva de grupo o use los cmdlets TLS:
 
--   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > Red > Configuración de SSL con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
+-   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > Red > Configuración de SSL Configuración con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
 -   Para usar PowerShell, consulte [Cmdlets tls.](/powershell/module/tls/?view=win10-ps)
 
 > [!Note]  
-> Antes de Windows 10, las cadenas del conjunto de cifrado se anexaban con la curva elíptica para determinar la prioridad de la curva. Windows 10 admite una configuración de orden de prioridad de curva elíptica, por lo que el sufijo de curva elíptica no es necesario y se reemplaza por el nuevo orden de prioridad de curva elíptica, cuando se proporciona, para permitir que las organizaciones usen la directiva de grupo para configurar diferentes versiones de Windows con los mismos conjuntos de cifrado.
+> Antes de Windows 10, las cadenas del conjunto de cifrado se anexaban con la curva elíptica para determinar la prioridad de la curva. Windows 10 admite una configuración de orden de prioridad de curva elíptica para que el sufijo de curva elíptica no sea necesario y se invalide por el nuevo orden de prioridad de curva elíptica, cuando se proporciona, para permitir que las organizaciones usen la directiva de grupo para configurar diferentes versiones de Windows con los mismos conjuntos de cifrado.
 
  
 

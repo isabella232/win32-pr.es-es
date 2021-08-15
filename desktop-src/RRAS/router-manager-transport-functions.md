@@ -1,19 +1,19 @@
 ---
-title: Funciones del administrador de enrutadores (transporte)
-description: Utilice las siguientes funciones para administrar los administradores de enrutadores. Estas funciones también permiten que un programador Lea y escriba la información global para los administradores de enrutadores y la información global de los clientes de enrutador (por ejemplo, protocolos de enrutamiento).
+title: Funciones del Administrador de enrutadores (transporte)
+description: Use las siguientes funciones para administrar los administradores de enrutadores. Estas funciones también permiten a un desarrollador leer y escribir la información global de los administradores de enrutadores y la información global para los clientes de enrutador (como los protocolos de enrutamiento).
 ms.assetid: c1093241-604d-498d-a358-f8e8585b95cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a94ccc97f3f2dce90cde57853cfbed97f870e01b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1780f980972943f796c635a58829d9363a0ccd4e36d371306665f5d4d7ba8b5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787625"
 ---
-# <a name="router-manager-transport-functions"></a>Funciones del administrador de enrutadores (transporte)
+# <a name="router-manager-transport-functions"></a>Funciones del Administrador de enrutadores (transporte)
 
-Utilice las siguientes funciones para administrar los administradores de enrutadores. Estas funciones también permiten que un programador Lea y escriba la información global para los administradores de enrutadores y la información global de los clientes de enrutador (por ejemplo, protocolos de enrutamiento).
+Use las siguientes funciones para administrar los administradores de enrutadores. Estas funciones también permiten a un desarrollador leer y escribir la información global de los administradores de enrutadores y la información global para los clientes de enrutador (como los protocolos de enrutamiento).
 
 
 
@@ -28,11 +28,11 @@ Utilice las siguientes funciones para administrar los administradores de enrutad
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

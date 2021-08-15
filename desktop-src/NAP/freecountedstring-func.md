@@ -1,9 +1,9 @@
 ---
-title: Función FreeCountedString (NapUtil. h)
+title: Función FreeCountedString (NapUtil.h)
 description: Libera una estructura de datos CountedString.
 ms.assetid: d080d247-9339-474b-866e-b412e82dd35f
 keywords:
-- FreeCountedString función NAP
+- Función Nap de FreeCountedString
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f732a069d19d6b8948854bd1fe2e23be070aa23f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dff73bc3511f34c8d791c4daf784d57ad12cc343ee9ed5628dd92cc6f4e5fc16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118368885"
 ---
-# <a name="freecountedstring-function"></a>FreeCountedString función)
+# <a name="freecountedstring-function"></a>Función FreeCountedString
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-La función **FreeCountedString** libera una estructura de datos [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) .
+La **función FreeCountedString** libera una [**estructura de datos CountedString.**](/windows/win32/api/naptypes/ns-naptypes-countedstring)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,20 +45,20 @@ NAPAPI VOID WINAPI FreeCountedString(
 
 <dl> <dt>
 
-*countedString* \[ de\]
+*countedString* \[ En\]
 </dt> <dd>
 
-Puntero a la estructura de datos [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) que se va a liberar.
+Puntero a la estructura [**de datos CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) que se liberará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todas las interfaces COM que admite el sistema NAP usan reglas estándar de administración de memoria COM y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
+Todas las interfaces COM compatibles con el sistema NAP usan reglas de administración de memoria COM estándar y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
 
--   El autor de la llamada asigna y libera los parámetros **in** .
--   El destinatario asigna los parámetros **out** y el llamador los libera mediante **CoTaskMem**.
--   Los parámetros **in/out** son asignados por el autor de la llamada, liberados y reasignados por el destinatario y, en última instancia, liberados por el llamador, mediante **CoTaskMem**.
+-   **El** autor de la llamada asigna y libera los parámetros de .
+-   **El** destinatario asigna los parámetros out y el autor de la llamada lo libera **mediante CoTaskMem**.
+-   **El autor de** la llamada asigna los parámetros de entrada y salida, los libera y reasigna el destinatario y, en última instancia, los libera el autor de la llamada, mediante **CoTaskMem**.
 
 Todas las funciones NAP para liberar memoria también liberan todos los punteros incrustados.
 
@@ -66,16 +66,16 @@ Todas las funciones NAP para liberar memoria también liberan todos los punteros
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

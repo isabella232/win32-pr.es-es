@@ -1,60 +1,60 @@
 ---
-description: El descodificador de Windows Media Video 9 descodifica las secuencias de vídeo codificadas por el codificador Windows Media Video.
+description: El descodificador Windows Media Video 9 descodifica las secuencias de vídeo codificadas por Windows Media Video Encoder.
 ms.assetid: 08f68d1c-c226-4bf6-abd0-fce0f9ddbc05
-title: Descodificador de Windows Media Video 9 (Wmcodecdsp. h)
+title: Windows Descodificador de Vídeo multimedia 9 (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96d89e05f82ce503016a10d5591a23bc673d0db5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b251b46c94ef88283577dbd8268c3275d8ed6aab9321c98e115a42501e2729ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237267"
 ---
-# <a name="windows-media-video-9-decoder"></a>Descodificador de Windows Media Video 9
+# <a name="windows-media-video-9-decoder"></a>Windows Descodificador de Vídeo multimedia 9
 
-El descodificador de Windows Media Video 9 descodifica las secuencias de vídeo codificadas por el [**codificador Windows Media Video**](windowsmediavideo9encoder.md). El codificador y el descodificador admiten las cuatro categorías siguientes de vídeo codificado.
+El descodificador Windows Media Video 9 descodifica las secuencias de vídeo codificadas por [**Windows Media Video Encoder**](windowsmediavideo9encoder.md). El codificador y el descodificador admiten las cuatro categorías siguientes de vídeo codificado.
 
--   Perfil sencillo de Windows Media Video 9
--   Perfil principal de Windows Media Video 9
--   Perfil avanzado de Windows Media Video 9
--   Windows Media Video imagen 9,1
+-   Windows Perfil simple de Media Video 9
+-   Windows Perfil principal de Media Video 9
+-   Windows Perfil avanzado de Media Video 9
+-   Windows Imagen de Vídeo multimedia 9.1
 
 ## <a name="class-identifier"></a>Identificador de clase
 
-El identificador de clase (CLSID) del descodificador de Windows Media Video se representa mediante la constante **\_ CWMVDecMediaObject de CLSID**. Puede crear una instancia del descodificador de vídeo llamando a **CoCreateInstance**.
+El identificador de clase (CLSID) del descodificador Windows Media Video se representa mediante la constante **CLSID \_ CWMVDecMediaObject**. Puede crear una instancia del descodificador de vídeo llamando a **CoCreateInstance**.
 
 ## <a name="interfaces"></a>Interfaces
 
-Un objeto de descodificador de vídeo expone la interfaz [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) para que el objeto se pueda usar como un objeto multimedia de DirectX (DMO) y exponga la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para que el objeto pueda usarse como una transformación de Media Foundation (MFT).
+Un objeto descodificador de vídeo expone la interfaz [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) para que el objeto se pueda usar como objeto multimedia DirectX (DMO) y expone la interfaz [**DEFTRANSFORM**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para que el objeto se pueda usar como una transformación de Media Foundation (MFT).
 
-Un descodificador de vídeo se comporta como un DMO o una MFT en función de las interfaces que se obtienen y de la versión de Windows que se está ejecutando. En la tabla siguiente se muestran las condiciones en las que un descodificador de vídeo se comporta como DMO o MFT.
+Un descodificador de vídeo se comporta como un DMO o MFT en función de las interfaces que obtenga y la versión de Windows se esté ejecutando. En la tabla siguiente se muestran las condiciones en las que un descodificador de vídeo se comporta DMO o MFT.
 
 
 
 | Sistema operativo            | Comportamiento del descodificador                                                                                                                                                      |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows XP                  | Un descodificador de vídeo de Windows Media siempre se comporta como DMO.                                                                                                                |
-| Windows Vista y Windows 7 | De forma predeterminada, un descodificador de vídeo de Windows Media se comporta como un DMO. Si obtiene una interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) en un descodificador de vídeo, se comporta como una MFT. |
+| Windows XP                  | Un Windows de vídeo multimedia siempre se comporta como un DMO.                                                                                                                |
+| Windows Vista y Windows 7 | De forma predeterminada, un Windows de vídeo multimedia se comporta como un DMO. Si obtiene una interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) en un descodificador de vídeo, se comporta como MFT. |
 
 
 
  
 
-A partir de Windows 7, el descodificador de Windows Media Video implementa la interfaz [**IDMOQualityControl**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-idmoqualitycontrol) .
+A partir Windows 7, el descodificador Windows Media Video implementa la [**interfaz IDMOQualityControl.**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-idmoqualitycontrol)
 
 ## <a name="input-formats"></a>Formatos de entrada
 
-En la tabla siguiente se muestran los códigos de cuatro caracteres (FOURCCs) que corresponden a las categorías de entrada codificada admitidas por el descodificador de Windows Media Video.
+En la tabla siguiente se muestran los códigos de cuatro caracteres (FOURCC) que corresponden a las categorías de entrada codificada que admite el descodificador Windows Media Video.
 
 
 
 | Category                               | FOURCC                                   |
 |----------------------------------------|------------------------------------------|
-| Perfil sencillo de Windows Media Video 9   | "WMV3"                                   |
-| Perfil principal de Windows Media Video 9     | "WMV3"                                   |
-| Perfil avanzado de Windows Media Video 9 | "WVC1"                                   |
-| Windows Media Video imagen 9,1          | "WMVP" para 9,1, "WVP2" para la versión 2 de 9,1 |
+| Windows Perfil simple de Media Video 9   | "WMV3"                                   |
+| Windows Perfil principal de Media Video 9     | "WMV3"                                   |
+| Windows Perfil avanzado de Media Video 9 | "WVC1"                                   |
+| Windows Imagen de Vídeo multimedia 9.1          | "WMVP" para 9.1, "WVP2" para la versión 9.1 versión 2 |
 
 
 
@@ -62,7 +62,7 @@ En la tabla siguiente se muestran los códigos de cuatro caracteres (FOURCCs) qu
 
 ## <a name="output-formats"></a>Formatos de salida
 
-El descodificador de Windows Media Video admite los siguientes subtipos de medios de salida cuando actúa como DMO.
+El descodificador Windows Media Video admite los siguientes subtipos de medios de salida cuando actúa como un DMO.
 
 -   MEDIASUBTYPE \_ NV12
 -   MEDIASUBTYPE \_ YV12
@@ -76,7 +76,7 @@ El descodificador de Windows Media Video admite los siguientes subtipos de medio
 -   MEDIASUBTYPE \_ RGB555
 -   MEDIASUBTYPE \_ RGB8
 
-El descodificador de Windows Media Video admite los siguientes subtipos de medios de salida cuando actúa como MFT.
+El Windows de Media Video admite los siguientes subtipos de medios de salida cuando actúa como MFT.
 
 -   MFVideoFormat \_ NV12
 -   MFVideoFormat \_ YV12
@@ -92,7 +92,7 @@ El descodificador de Windows Media Video admite los siguientes subtipos de medio
 
 ## <a name="properties"></a>Propiedades
 
-El descodificador de Windows Media Video admite las siguientes propiedades.
+El descodificador Windows Media Video admite las siguientes propiedades.
 
 
 
@@ -110,21 +110,21 @@ El descodificador de Windows Media Video admite las siguientes propiedades.
 <tbody>
 <tr class="odd">
 <td><a href="mfpkey-decoder-deinterlacingproperty.md">MFPKEY_DECODER_DEINTERLACING</a></td>
-<td>Especifica si el códec descodifica fotogramas de vídeo entrelazados del flujo comprimido como tramas progresivas.<br/> <dl> Windows XP y versiones posteriores.<br />
+<td>Especifica si el códec descodifica fotogramas de vídeo entrelazados de la secuencia comprimida como fotogramas progresivas.<br/> <dl> Windows XP y versiones posteriores.<br />
 Perfil simple, perfil principal, perfil avanzado.<br />
 Lectura/escritura<br />
 </dl></td>
 </tr>
 <tr class="even">
 <td><a href="mfpkey-dxva-enabledproperty.md">MFPKEY_DXVA_ENABLED</a></td>
-<td>Especifica si el descodificador usará hardware de aceleración de vídeo de DirectX, si está disponible.<br/> <dl> Windows XP y versiones posteriores.<br />
+<td>Especifica si el descodificador usará el hardware de aceleración de vídeo de DirectX, si está disponible.<br/> <dl> Windows XP y versiones posteriores.<br />
 Perfil simple, perfil principal, perfil avanzado.<br />
 De solo escritura.<br />
 </dl></td>
 </tr>
 <tr class="odd">
 <td><a href="mfpkey-avdecvideoswpowerlevelproperty.md">MFPKEY_AVDecVideoSWPowerLevel</a></td>
-<td>Especifica el nivel de energía para el descodificador.<br/> <dl> Windows 7.<br />
+<td>Especifica el nivel de energía del descodificador.<br/> <dl> Windows 7.<br />
 Perfil simple, perfil principal, perfil avanzado, imagen.<br />
 Lectura/escritura<br />
 </dl></td>
@@ -161,10 +161,10 @@ De solo escritura.<br />
 <td><strong>g_wszWMVCNeedsDrain</strong></td>
 <td>Especifica si se debe purgar el descodificador.<br/> <dl> Windows 8<br />
 Solo lectura.<br />
-</dl> El tiempo de ejecución de Windows Media Format usa esta propiedad. El tipo de propiedad es <strong>VARIANT_BOOL</strong>. Si el valor es <strong>VARIANT_TRUE</strong>, el descodificador se debe purgar después de una discontinuidad. Para obtener más información acerca de cómo purgar una MFT, vea <a href="basic-mft-processing-model.md">modelo de procesamiento de MFT básico</a>.<br/>
+</dl> Esta propiedad la usa el tiempo de ejecución Windows formato multimedia. El tipo de propiedad <strong>es VARIANT_BOOL</strong>. Si el valor es <strong>VARIANT_TRUE</strong>, el descodificador debe purgarse después de una discontinuidad. Para obtener más información sobre cómo purgar un MFT, vea <a href="basic-mft-processing-model.md">Basic MFT Processing Model</a>.<br/>
 <blockquote>
 [!Note]<br />
-Para consultar esta propiedad, use la interfaz <a href="/windows/desktop/com/ipropertybag-and-ipersistpropertybag"><strong>IPropertyBag</strong></a> .
+Para consultar esta propiedad, use la <a href="/windows/desktop/com/ipropertybag-and-ipersistpropertybag"><strong>interfaz IPropertyBag.</strong></a>
 </blockquote>
 <br/></td>
 </tr>
@@ -175,18 +175,18 @@ Para consultar esta propiedad, use la interfaz <a href="/windows/desktop/com/ipr
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La resolución máxima permitida por el descodificador de Windows Media Video 9 es 4096x4096.
+La resolución máxima permitida por el descodificador Windows Media Video 9 es 4096 x 4096.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Remoto<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>    | <dl> <dt>Wmvdecod.dll</dt> </dl> |
 
 
@@ -195,10 +195,10 @@ La resolución máxima permitida por el descodificador de Windows Media Video 9 
 
 <dl> <dt>
 
-[Objetos Codec](codecobjects.md)
+[Objetos de códec](codecobjects.md)
 </dt> <dt>
 
-[Implementación de códecs](codecimplementation.md)
+[Implementación de códec](codecimplementation.md)
 </dt> </dl>
 
  

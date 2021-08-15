@@ -1,26 +1,26 @@
 ---
-description: Al inicializar un objeto IX500DistinguishedName con un nombre distintivo para identificar el sujeto de una solicitud de certificado, se crea una secuencia de notación de sintaxis abstracta (ASN. 1) con codificación reglas de codificación distinguida (DER).
+description: Al inicializar un objeto IX500DistinguishedName con un nombre distintivo para identificar el asunto de una solicitud de certificado, se crea una secuencia de notación de sintaxis abstracta (ASN.1) codificada en reglas de codificación distinguida (DER).
 ms.assetid: 58b05b59-2235-49bd-9543-45e786d62eaf
-title: Codificar un nombre de sujeto
+title: Codificación de un nombre de sujeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fa03d95497a600c3e61fdda53820fd7a9858c68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6dd8849bda237c174fb160c862da4399fa4a734dbc74b5e6f476e1c59d22d1fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117780084"
 ---
-# <a name="encoding-a-subject-name"></a>Codificar un nombre de sujeto
+# <a name="encoding-a-subject-name"></a>Codificación de un nombre de sujeto
 
-Al inicializar un objeto [**IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) con un nombre distintivo para identificar el sujeto de una solicitud de certificado, se crea una secuencia de notación de [*sintaxis abstracta*](/windows/desktop/SecGloss/a-gly) (ASN. 1) con codificación [*reglas de codificación distinguida*](/windows/desktop/SecGloss/d-gly) (der). Por ejemplo, supongamos que el nombre distintivo del sujeto consta de los siguientes nombres distintivos relativos (RDN):<dl> E =Administrator@jdomcsc.nttest.microsoft.com  
-CN = administrador  
-CN = usuarios  
-DC = jdomcsc  
-DC = nttest  
-DC = Microsoft  
-DC = com  
-PKCS #7 el tema sobre la </dl>The **IX500DistinguishedName** object creates the following DER-encoded (ASN.1) sequence. Notice that the sequence is encoded in reverse order. This example is derived from the<a href="pkcs--7-renewal-encoded-asn-1.md">renovación de ASN. 1</a> .
+Al inicializar un objeto [**IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) con un nombre distintivo para identificar el asunto de una solicitud de certificado, se crea una secuencia de notación de sintaxis abstracta codificada en [*reglas de codificación distinguida*](/windows/desktop/SecGloss/d-gly) (DER) (ASN.1). [](/windows/desktop/SecGloss/a-gly) Por ejemplo, suponga que el nombre distintivo del sujeto consta de los siguientes nombres distintivos relativos (RDN):<dl> E=Administrator@jdomcsc.nttest.microsoft.com  
+CN=Administrator  
+CN=Users  
+DC=jdomcsc  
+DC=nttest  
+DC=microsoft  
+DC=com  
+</dl>The **IX500DistinguishedName** object creates the following DER-encoded (ASN.1) sequence. Notice that the sequence is encoded in reverse order. This example is derived from the<a href="pkcs--7-renewal-encoded-asn-1.md">PKCS #7 de ASN.1</a> con codificación de renovación.
 
 ``` syntax
 0a0d: 30 81 c4          ; SEQUENCE (c4 Bytes)
@@ -84,7 +84,7 @@ PKCS #7 el tema sobre la </dl>The **IX500DistinguishedName** object creates the 
       |              ; "Administrator@jdomcsc.nttest.microsoft.com"
 ```
 
-Como se describe en [nombres de asunto](subject-names.md), cada RDN de un nombre distintivo consta de un conjunto de atributos y cada atributo contiene un identificador de [*objeto*](/windows/desktop/SecGloss/o-gly) (OID) y un valor. Para entender cómo el objeto [**IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) codifica un nombre distintivo, tenga en cuenta el nombre común CN = users.
+Como se describe [en](subject-names.md)Nombres de sujeto , cada RDN de un nombre distintivo consta de un conjunto de atributos y cada atributo contiene un identificador de objeto (OID) y un valor. [](/windows/desktop/SecGloss/o-gly) Para comprender cómo el [**objeto IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) codifica un nombre distintivo, considere el nombre común CN=Users.
 
 ``` syntax
 0a73: |  |  30 0c               ; SEQUENCE (c Bytes)
@@ -96,10 +96,10 @@ Como se describe en [nombres de asunto](subject-names.md), cada RDN de un nombre
       |  |           ; "Users"
 ```
 
-La sintaxis de transferencia DER de un objeto ASN. 1 siempre contiene un tipo, una longitud y un triple de valor, y cada campo del triple contiene uno o más bytes. Cuando se codifica, CN = users consta de un OID y un valor de cadena. La notación decimal con puntos del OID CN es 2.5.4.3 y el valor de la cadena es "Users". El valor de cadena se representa como un tipo de datos **PRINTABLE_STRING** . El valor de tipo numérico asociado a **OBJECT_ID** siempre es 0x06 y el tipo numérico asociado a **PRINTABLE_STRING** siempre es 0x13. La longitud del nombre común "Users" es 0x05 bytes. La longitud del OID es 0x03 bytes y su valor es 0x55 0x04 0x03.
+La sintaxis de transferencia DER de un objeto ASN.1 siempre contiene un triplete de tipo, longitud y valor, y cada campo del triplete contiene uno o varios bytes. Cuando se codifica, CN=Users consta de un OID y un valor de cadena. La notación decimal con puntos del OID cn es 2.5.4.3 y el valor de cadena es "Users". El valor de cadena se representa como un **PRINTABLE_STRING** de datos. El valor de tipo numérico asociado **a OBJECT_ID** siempre es 0x06  y el tipo numérico asociado a PRINTABLE_STRING siempre se 0x13. La longitud del nombre común "Users" es 0x05 bytes. La longitud del OID es 0x03 bytes y su valor es 0x55 0x04 0x03.
 
 > [!Note]  
-> Para convertir los dos primeros dígitos de la 2.5.4.3 del OID en el valor hexadecimal 0x55, multiplique el primer dígito del OID por 40 (2 x 40) y agregue el segundo dígito (5) antes de convertirlo a hexadecimal.
+> Para convertir los dos primeros dígitos del OID 2.5.4.3 en el valor hexadecimal 0x55, multiplique el primer dígito del OID por 40 (2 x 40) y agregue el segundo dígito (5) antes de convertir a hexadecimal.
 
  
 
@@ -107,7 +107,7 @@ La sintaxis de transferencia DER de un objeto ASN. 1 siempre contiene un tipo, u
 
 <dl> <dt>
 
-[\#ASN de renovación con codificación PKCS 7.1](pkcs--7-renewal-encoded-asn-1.md)
+[PKCS \# 7 Renewal Encoded ASN.1](pkcs--7-renewal-encoded-asn-1.md)
 </dt> <dt>
 
 [Solicitudes de ejemplo](sample-requests.md)

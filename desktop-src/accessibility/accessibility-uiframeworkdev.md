@@ -3,16 +3,16 @@ description: Obtenga información sobre el desarrollo de marcos de interfaz de u
 title: Desarrollo de marcos de interfaz de usuario accesibles para Windows
 ms.topic: article
 ms.date: 04/18/2019
-ms.openlocfilehash: d18881913b2a366f086e45473e0f67e57ead66a2
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 2f80221a8fbe1cb088307ba23ff686d1f70b4b61ea33d5133c43f1c662037cc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111988850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117737774"
 ---
 # <a name="developing-accessible-ui-frameworks-for-windows"></a>Desarrollo de marcos de interfaz de usuario accesibles para Windows
 
-Para que sean utilizables por tantas personas como sea posible, los marcos de interfaz de usuario creados para la plataforma Windows deben admitir características de accesibilidad que facilitan a las personas con discapacidades, preferencias personales o estilos de trabajo específicos usar correctamente sus dispositivos Windows.
+Para que sean utilizables por tantas personas como sea posible, los marcos de interfaz de usuario creados para la plataforma Windows deben admitir características de accesibilidad que facilitan que las personas con discapacidades, preferencias personales o estilos de trabajo específicos usen correctamente sus dispositivos Windows.
 
 En esta introducción se describe cómo crear un marco de interfaz de usuario que admita características como el acceso y la automatización mediante programación, la navegación y comandos del teclado, las opciones de color y tema y la personalización a través de la configuración del usuario.
 

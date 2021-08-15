@@ -1,29 +1,29 @@
 ---
-title: Recuperación de la unidad y el estado del disco
-description: Recuperación de la unidad y el estado del disco
+title: Recuperar el estado de la unidad y el disco
+description: Recuperar el estado de la unidad y el disco
 ms.assetid: 5e3e6107-d2bc-450c-a86e-5d3ef7b3092a
 keywords:
-- Windows Media Player, grabación de CD
-- Modelo de objetos de Windows Media Player, grabación de CD
+- Reproductor de Windows Media, cds
+- Reproductor de Windows Media de objetos, cds
 - modelo de objetos, grabación de CD
-- Control ActiveX de Windows Media Player, grabación de CD
-- Control ActiveX, grabación de CD
-- Control ActiveX móvil de Windows Media Player, grabación de CD
-- Windows Media Player Mobile, grabación de CD
-- Grabación de CD, recuperación de la unidad y el estado del disco
-- grabar CDs, recuperar el estado de unidades y discos
+- Reproductor de Windows Media ActiveX control, grabación de CD
+- ActiveX control, grabación de CD
+- Reproductor de Windows Media Control de ActiveX móvil, grabación de CD
+- Reproductor de Windows Media Móvil, grabación de CD
+- Cd-retriev,retrieving drive and disc status
+- cds de grabación, recuperación del estado de la unidad y del disco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3eab66581c336f642fd53b22f81949847d0a1c89
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 664315972158b4cf68e7f766f98be095a27d7fa8496f983305cc6baaafe784d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103904413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746277"
 ---
-# <a name="retrieving-the-drive-and-disc-status"></a>Recuperación de la unidad y el estado del disco
+# <a name="retrieving-the-drive-and-disc-status"></a>Recuperar el estado de la unidad y el disco
 
-Antes de iniciar una operación de grabación de CD, debe asegurarse de que la unidad de CD-ROM seleccionada sea compatible con la operación que desea realizar. Por ejemplo, debe comprobar que se puede borrar un CD antes de llamar a [IWMPCdromBurn:: Erase](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-erase). En el código siguiente se muestra un ejemplo del uso de [IWMPCdromBurn:: isavailable](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-isavailable) para determinar si se admite una operación:
+Antes de iniciar una operación de grabación de CD, debe asegurarse de que la unidad de CD-ROM seleccionada admite la operación que desea realizar. Por ejemplo, debe comprobar que un CD es capaz de borrarse antes de llamar a [IWMPCdromCollection::erase](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-erase). En el código siguiente se muestra un ejemplo del [uso de IWMPCdromAvailable::isAvailable](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-isavailable) para determinar si se admite una operación:
 
 
 ```C++
@@ -61,15 +61,15 @@ if (SUCCEEDED(hr))
 [**Iniciar el proceso de grabación**](starting-the-burn-process.md)
 </dt> <dt>
 
-[**Borrado de un CD regrabable**](erasing-a-rewritable-cd.md)
+[**Borrado de un CD reescrito**](erasing-a-rewritable-cd.md)
 </dt> <dt>
 
-[**Recuperación del estado de la grabación**](retrieving-the-burn-status.md)
+[**Recuperar el estado de la grabación**](retrieving-the-burn-status.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: endif-PS
-description: Marca el final de una... bloque else.
+title: endif - ps
+description: Marca el final de un elemento if... else block.
 ms.assetid: 3e20e86b-d050-45f5-8180-8c2ea81c60ba
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d8ace44a7d6df9b7a2e280db7d6f5ac68caa69ea
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 86612cf089dcaeaa26b136a3dd8c52d1e20b12f7f3850fc3a515838bf834e54c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104358463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512155"
 ---
-# <a name="endif---ps"></a>endif-PS
+# <a name="endif---ps"></a>endif - ps
 
-Marca el final [de una...](if-bool---ps.md) bloque [else](else---ps.md) .
+Marca el final de [un elemento if](if-bool---ps.md)... [else block.](else---ps.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
@@ -29,19 +29,19 @@ Marca el final [de una...](if-bool---ps.md) bloque [else](else---ps.md) .
 
 
 
- 
+ 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | endif                 |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -50,15 +50,15 @@ Marca el final [de una...](if-bool---ps.md) bloque [else](else---ps.md) .
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> <dt>
 
-[Si es bool-PS](if-bool---ps.md)
+[if bool - ps](if-bool---ps.md)
 </dt> <dt>
 
-[Else-PS](else---ps.md)
+[else - ps](else---ps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

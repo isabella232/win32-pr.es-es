@@ -1,9 +1,9 @@
 ---
 title: Función de devolución de llamada RasAdminGetIpAddressForUser
-description: La función RasAdminGetIpAddressForUser es una función definida por la aplicación que se exporta mediante un archivo DLL de administración de servidor RAS de terceros. RAS llama a esta función para obtener una dirección IP para el cliente remoto marcado.
+description: La función RasAdminGetIpAddressForUser es una función definida por la aplicación exportada por un archivo DLL de administración del servidor RAS de terceros. RAS llama a esta función para obtener una dirección IP para el cliente remoto de acceso telefónico.
 ms.assetid: ef553202-0adc-47d6-8630-74f276e9e2bd
 keywords:
-- Función de devolución de llamada RasAdminGetIpAddressForUser RAS
+- RasAdminGetIpAddressForUser función de devolución de llamada RAS
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,20 +11,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5951b702a32329c3969aa8a20b7e0f188c3b46e5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8b33dfe6532a6b4aa78d3a73e85460f407d1ebb212982ce1b815d7b74c31ed0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789002"
 ---
 # <a name="rasadmingetipaddressforuser-callback-function"></a>Función de devolución de llamada RasAdminGetIpAddressForUser
 
 No se admite esta función de devolución de llamada.
 
- 
+ 
 
- 
+ 
 
 
 

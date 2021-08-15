@@ -3,34 +3,34 @@ title: Características del códec
 description: Características del códec
 ms.assetid: e0bbdf75-2369-4080-ae8e-aabaa8401dcf
 keywords:
-- SDK de Windows Media Format, características de códecs
-- Windows Media Format SDK, características
-- códecs, características
+- Windows SDK de formato multimedia, características de códec
+- Windows SDK de formato multimedia, características
+- codecs,features
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e3623bcb6f338fe11bef3089705801dc3ea047
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e7546573077134d23f2115ce09088bcbb1027d6125a86b87faadb615e27730c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849166"
 ---
 # <a name="codec-features"></a>Características del códec
 
-El SDK de Windows Media Format se entrega con varios códecs de audio y vídeo. Puede usar los códecs que se proporcionan para comprimir y descomprimir contenido para satisfacer diversas necesidades. El códec que usa el escritor para comprimir los datos se especifica mediante la información de configuración de la secuencia en el perfil. La información del perfil se almacena en el encabezado del archivo creado por el escritor. A continuación, cuando el lector abre el archivo o el lector sincrónico, la información de perfil del encabezado identifica el códec necesario para descomprimir los datos.
+El SDK Windows Media Format se entrega con varios códecs de audio y vídeo. Puede usar los códecs proporcionados para comprimir y descomprimir contenido para satisfacer una variedad de necesidades. El códec que usa el escritor para comprimir los datos se especifica mediante la información de configuración de secuencias en el perfil. A continuación, la información del perfil se almacena en el encabezado del archivo creado por el escritor. A continuación, cuando el lector o el lector sincrónico abren el archivo, la información del perfil del encabezado identifica el códec necesario para descomprimir los datos.
 
-En esta sección se describen las características siguientes.
+En esta sección se de abordan las siguientes características.
 
 -   [Códecs admitidos](supported-codecs.md)
 -   [Codificación de velocidad de bits constante (CBR)](constant-bit-rate--cbr--encoding.md)
 -   [Codificación de velocidad de bits variable (VBR)](variable-bit-rate--vbr--encoding.md)
--   [Codificación de dos pasos](two-pass-encoding.md)
+-   [Codificación de dos pases](two-pass-encoding.md)
 -   [Compatibilidad con audio de alta resolución](high-resolution-audio-support.md)
--   [Audio con retraso bajo](low-delay-audio.md)
+-   [Audio de bajo retraso](low-delay-audio.md)
 -   [Salida de audio S/PDIF](s-pdif-audio-output.md)
 -   [Imagen de vídeo](video-image.md)
 -   [Plantillas de conformidad de dispositivos](device-conformance-templates.md)
--   [Configuración de complejidad de vídeo](video-complexity-settings.md)
+-   [Complejidad del vídeo Configuración](video-complexity-settings.md)
 -   [Interpolación de fotogramas](frame-interpolation.md)
 
 ## <a name="related-topics"></a>Temas relacionados
@@ -40,9 +40,9 @@ En esta sección se describen las características siguientes.
 [**Características**](features.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

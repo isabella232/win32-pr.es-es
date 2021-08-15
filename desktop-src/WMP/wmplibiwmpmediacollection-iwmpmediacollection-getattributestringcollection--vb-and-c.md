@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection getAttributeStringCollection, método
+title: Método IWMPMediaCollection getAttributeStringCollection
 description: El método getAttributeStringCollection devuelve una interfaz IWMPStringCollection que representa el conjunto de todos los valores de un atributo especificado dentro de un tipo de medio.
 ms.assetid: 5ac19c04-75db-4618-9c4e-b20e2f709024
 keywords:
-- método getAttributeStringCollection de Windows Media Player
-- método getAttributeStringCollection Windows Media Player, interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Windows Media Player, método getAttributeStringCollection
+- Método getAttributeStringCollection Reproductor de Windows Media
+- Método getAttributeStringCollection Reproductor de Windows Media , interfaz IWMPMediaCollection
+- Interfaz IWMPMediaCollection Reproductor de Windows Media , método getAttributeStringCollection
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bef25cd811890e82273fd5d634633e25e7ec460c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 508630ee8a377e1542f823c1afb21521206369aa3ce489c58afae47efa268880
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331947"
 ---
-# <a name="iwmpmediacollectiongetattributestringcollection-method"></a>IWMPMediaCollection:: getAttributeStringCollection (método)
+# <a name="iwmpmediacollectiongetattributestringcollection-method"></a>IWMPMediaCollection::getAttributeStringCollection (método)
 
-El método **getAttributeStringCollection** devuelve una interfaz **IWMPStringCollection** que representa el conjunto de todos los valores de un atributo especificado dentro de un tipo de medio.
+El **método getAttributeStringCollection** devuelve una interfaz **IWMPStringCollection** que representa el conjunto de todos los valores de un atributo especificado dentro de un tipo de medio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,33 +55,33 @@ Implements IWMPMediaCollection.getAttributeStringCollection
 
 <dl> <dt>
 
-*bstrAttribute* \[ de\]
+*bstrAttribute* \[ En\]
 </dt> <dd>
 
-**System. String** que es el atributo para el que se recuperan los valores.
+**System.String que** es el atributo para el que se recuperan los valores.
 
 </dd> <dt>
 
-*bstrMediaType* \[ de\]
+*bstrMediaType* \[ En\]
 </dt> <dd>
 
-**System. String** que es el tipo de archivo multimedia para el que se recuperan los valores.
+**System.String que** es el tipo de medio para el que se recuperan los valores.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una interfaz **WMPLib. IWMPStringCollection** para los valores recuperados.
+Interfaz **WMPLib.IWMPStringCollection** para los valores recuperados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Para obtener información sobre los atributos que admite Windows Media Player, vea la [referencia de atributo](attribute-reference.md).
+Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la [Referencia de atributos](attribute-reference.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **getAttributeStringCollection** para mostrar una lista de valores que corresponden a un atributo determinado para los elementos de audio de la colección de medios. Un cuadro de lista permite al usuario seleccionar un atributo, como artista, género o álbum, y un cuadro de texto de varias líneas muestra el resultado. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa getAttributeStringCollection para** mostrar una lista de valores que corresponden a un atributo determinado para los elementos de audio de la colección multimedia. Un cuadro de lista permite al usuario seleccionar un atributo, como Artist, Genre o Album, y un cuadro de texto de varias líneas muestra el resultado. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -157,15 +157,15 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

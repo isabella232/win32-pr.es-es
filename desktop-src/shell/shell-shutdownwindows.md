@@ -1,5 +1,5 @@
 ---
-description: 'Método Shell.ShutdownWindows: muestra el cuadro de diálogo Apagar Windows. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Apagar.'
+description: 'Método Shell.ShutdownWindows: muestra el cuadro de diálogo Cerrar Windows ventana. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Apagar.'
 ms.assetid: 6fa8e2e0-a58f-4837-89f5-898cece2d80a
 title: Método Shell.ShutdownWindows (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 2a3c0746caccb360f6f7f0156b72a57ed0a2d2b8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1e9149e42710541ef82d02ba4d55f1d9519741e078e06c60ab0d47c1209fa19f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857734"
 ---
 # <a name="shellshutdownwindows-method"></a>Método Shell.ShutdownWindows
 
-Muestra el **cuadro de diálogo Apagar Windows.** Esto es lo mismo que hacer clic en **el menú** Inicio y seleccionar **Apagar.**
+Muestra el **cuadro de diálogo Cerrar Windows** cierre. Esto es lo mismo que hacer clic en **el menú** Inicio y seleccionar **Apagar.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ Este método no tiene parámetros.
 
 En el ejemplo siguiente se **muestra ShutdownWindows** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -104,7 +104,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

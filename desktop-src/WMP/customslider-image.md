@@ -1,9 +1,9 @@
 ---
-title: CUSTOMSLIDER. Image
-description: El atributo Image especifica o recupera el nombre del archivo que contiene las imágenes correspondientes a los distintos Estados del control deslizante personalizado.
+title: CUSTOMSLIDER.image
+description: El atributo image especifica o recupera el nombre del archivo que contiene las imágenes correspondientes a los distintos estados del control deslizante personalizado.
 ms.assetid: 7db4f924-76af-4451-831c-1ed8ab1315ee
 keywords:
-- Media Player CUSTOMSLIDER. Image de Windows
+- CustomSLIDER.image Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f425ce138b2a11d2be834f39603ecc295c52c706
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f3b169bbdcac0e251a161c8e09f352caf460280b23e0198167a641721caa6c64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117936258"
 ---
-# <a name="customsliderimage"></a>CUSTOMSLIDER. Image
+# <a name="customsliderimage"></a>CUSTOMSLIDER.image
 
-El atributo **Image** especifica o recupera el nombre del archivo que contiene las imágenes correspondientes a los distintos Estados del control deslizante personalizado.
+El **atributo** image especifica o recupera el nombre del archivo que contiene las imágenes correspondientes a los distintos estados del control deslizante personalizado.
 
 ``` syntax
         elementID.image
@@ -29,33 +29,33 @@ El atributo **Image** especifica o recupera el nombre del archivo que contiene l
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene el nombre de un archivo de imagen.
+Este atributo es una cadena de **lectura** y escritura que contiene el nombre de un archivo de imagen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **Image** es obligatorio. Especifica un archivo de imagen que consta de una o más subimágenes, organizadas horizontal o verticalmente, que representan los distintos Estados del control deslizante personalizado. Cada subimagen debe tener las mismas dimensiones que **positionImage** o el control deslizante personalizado no funcionará correctamente. El alto o ancho de la imagen global debe ser, por tanto, un múltiplo par del alto o del ancho de **positionImage**.
+El **atributo image** es obligatorio. Especifica un archivo de imagen que consta de una o varias submágenes, organizadas horizontal o verticalmente, que representan los distintos estados del control deslizante personalizado. Cada sub image debe tener las mismas dimensiones que **positionImage** o el control deslizante personalizado no funcionará correctamente. Por lo tanto, el alto o ancho de la imagen general debe ser un múltiplo par del alto o ancho de **positionImage**.
 
-Los tipos de archivo de imagen admitidos son BMP, JPG, PNG y GIF (sin incluir los GIF animados).
+Los tipos de archivo de imagen admitidos son BMP, JPG, PNG y GIF (sin incluir GIF animados).
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente es un ejemplo de una imagen de control deslizante personalizado. El **positionImage** correspondiente se muestra en la sección ejemplo de la propiedad **positionImage** .
+A continuación se muestra un ejemplo de una imagen de control deslizante personalizada. La propiedad **positionImage** correspondiente se muestra en la sección de ejemplo de la **propiedad positionImage.**
 
-![imagen de customslider de ejemplo](images/dial.png)
+![imagen customslider de ejemplo](images/dial.png)
 
-El atributo **positionImage** también contiene un ejemplo de código que ilustra cómo se usan los atributos del elemento **CUSTOMSLIDER** .
+El **atributo positionImage** también contiene un ejemplo de código que ilustra cómo se usan los atributos del **elemento CUSTOMSLIDER.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

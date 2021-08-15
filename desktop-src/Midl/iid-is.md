@@ -1,9 +1,9 @@
 ---
 title: iid_is (atributo)
-description: El atributo \ IID \_ es \ Pointer especifica el IID de la interfaz com a la que apunta un puntero de interfaz.
+description: El atributo de puntero \ iid is\ especifica el IID de la interfaz COM a la que apunta \_ un puntero de interfaz.
 ms.assetid: 7fb5eb87-15d8-4717-b79a-e8a81f2f7293
 keywords:
-- iid_is el atributo MIDL
+- iid_is atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e94c6f46a6828e81817e45ff6eb6eb8245b00a61
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 74553fdb1e3020d49eca7dfdd219354a4690056c45126b3af208395117ade991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118383872"
 ---
-# <a name="iid_is-attribute"></a>el \_ atributo IID es
+# <a name="iid_is-attribute"></a>iid \_ es atributo
 
-El atributo **\[ IID \_ es \]** Pointer especifica el IID de la interfaz com a la que apunta un puntero de interfaz.
+El **\[ atributo de puntero iid \_ es \]** especifica el IID de la interfaz COM a la que apunta un puntero de interfaz.
 
 ``` syntax
 [ iid_is(limited-expression) ]
@@ -31,18 +31,18 @@ El atributo **\[ IID \_ es \]** Pointer especifica el IID de la interfaz com a l
 
 <dl> <dt>
 
-*Limited-Expression* 
+*limited-expression* 
 </dt> <dd>
 
-Especifica una expresión del lenguaje C. El compilador MIDL admite expresiones condicionales, expresiones lógicas, expresiones relacionales y expresiones aritméticas. MIDL no permite invocaciones de función en expresiones y no permite operadores de incremento y decremento.
+Especifica una expresión de lenguaje C. El compilador MIDL admite expresiones condicionales, expresiones lógicas, expresiones relacionales y expresiones aritméticas. MIDL no permite invocaciones de función en expresiones y no permite operadores de incremento y decremento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede usar **\[ IID \_ está \]** en listas de atributos para los parámetros de función y para los miembros de estructura o Unión. El código auxiliar usa el IID para determinar cómo calcular las referencias del puntero de interfaz. Esto resulta útil para un puntero de interfaz que se escribe como un parámetro de clase base.
+Puede usar **\[ iid \_ is en listas \]** de atributos para parámetros de función y para miembros de estructura o unión. Los códigos auxiliares usan el IID para determinar cómo serializar el puntero de interfaz. Esto es útil para un puntero de interfaz que se escribe como un parámetro de clase base.
 
-Los archivos que utilizan el **\[ IID \_ es \]** deben compilarse con el compilador MIDL en el modo predeterminado, que no usa el modificador [**/OSF**](-osf.md)
+Los archivos que usan **\[ el atributo iid \_ is \]** deben compilarse con el compilador MIDL en modo predeterminado, que no usa el [**modificador /osf.**](-osf.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -56,15 +56,15 @@ HRESULT    CreateInstance(
 
 <dl> <dt>
 
-[**objeto**](object.md)
+[**object**](object.md)
 </dt> <dt>
 
-[**uuid**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

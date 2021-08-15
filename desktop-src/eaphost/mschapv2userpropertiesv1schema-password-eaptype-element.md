@@ -1,6 +1,6 @@
 ---
-title: Password (EapType), elemento
-description: Obtenga información sobre el elemento Password (EapType). Este elemento identifica la contraseña del usuario o equipo que se autentica.
+title: Elemento Password (EapType)
+description: Obtenga información sobre el elemento Password (EapType). Este elemento identifica la contraseña del usuario o la máquina que se está autenticando.
 ms.assetid: d3ad95b8-2d98-420f-a680-a83b49ae2992
 keywords:
 - Elemento password EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6da29146be7ed2f0c17d7311f79921b44cd0929e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: cbbcb7b0acd372bbe71ee6d22f44a736948b145378f62f40820e3de53d77b875
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273204"
 ---
-# <a name="password-eaptype-element"></a>Password (EapType), elemento
+# <a name="password-eaptype-element"></a>Elemento Password (EapType)
 
-El elemento **password (EapType)** identifica la contraseña del usuario o equipo que se va a autenticar.
+El **elemento Password (EapType)** identifica la contraseña del usuario o la máquina que se autentica.
 
 ``` syntax
 <xs:element name="Password"
@@ -31,24 +31,24 @@ El elemento **password (EapType)** identifica la contraseña del usuario o equip
  />
 ```
 
-El elemento de **contraseña** se define mediante el elemento [**EapType**](mschapv2userpropertiesv1schema-eaptype-element.md) .
+El **elemento Password** se define mediante el elemento [**EapType.**](mschapv2userpropertiesv1schema-eaptype-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el elemento **password (EapType)** no está presente, el hash de contraseña se obtiene de Winlogon. Este elemento es opcional.
+Si el **elemento Password (EapType)** no está presente, el hash de contraseña se obtiene de winlogon. Este elemento es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ Si el elemento **password (EapType)** no está presente, el hash de contraseña 
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mschapv2userpropertiesv1](mschapv2userpropertiesv1schema-schema.md)
+[mschapv2userpropertiesv1 Schema](mschapv2userpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

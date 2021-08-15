@@ -1,7 +1,7 @@
 ---
 description: El método GetNextVTrack recupera la siguiente pista virtual después de una pista virtual especificada.
 ms.assetid: c43e6b16-a3e4-4407-b48d-b04c4bb66688
-title: 'IAMTimelineComp:: GetNextVTrack (método) (QEDIT. h)'
+title: Método IAMTimelineComp::GetNextVTrack (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0e5a4500c2b53703a13b509f112453e65c954f96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dbeaf5d7987f1baf2b3df9804c4abd3049c38042a29f4177f83abec6855140a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401056"
 ---
-# <a name="iamtimelinecompgetnextvtrack-method"></a>IAMTimelineComp:: GetNextVTrack (método)
+# <a name="iamtimelinecompgetnextvtrack-method"></a>IamTimelineComp::GetNextVTrack (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -49,32 +49,32 @@ HRESULT GetNextVTrack(
 *pVirtualTrack* 
 </dt> <dd>
 
-Puntero a la pista virtual anterior o **null** para recuperar la primera pista virtual de la composición.
+Puntero a la pista virtual anterior o **NULL para** recuperar la primera pista virtual de la composición.
 
 </dd> <dt>
 
-*ppNextVirtualTrack* \[ enuncia\]
+*ppNextVirtualTrack* \[ out\]
 </dt> <dd>
 
-Recibe un puntero a la interfaz [**IAMTimelineObj**](iamtimelineobj.md) de la siguiente pista virtual, en orden de prioridad.
+Recibe un puntero a la [**interfaz IAMTimelineObj**](iamtimelineobj.md) de la siguiente pista virtual, por orden de prioridad.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si el método recupera una pista virtual o s \_ false en caso contrario.
+Devuelve S OK si el método recupera una pista virtual o S FALSE en caso \_ \_ contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el método se ejecuta correctamente, la interfaz **IAMTimelineObj** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando termine de usarla.
+Si el método se realiza correctamente, la **interfaz IAMTimelineObj** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando haya terminado de usarlo.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,19 +84,19 @@ Si el método se ejecuta correctamente, la interfaz **IAMTimelineObj** que devue
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineComp**](iamtimelinecomp.md)
+[**IamTimelineComp (interfaz)**](iamtimelinecomp.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

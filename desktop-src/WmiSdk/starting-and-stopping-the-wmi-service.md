@@ -1,5 +1,5 @@
 ---
-description: WMI se ejecuta como un servicio con el nombre para mostrar &\# 0034; Instrumental de administración de Windows&\# 0034 y el nombre del servicio &\# 0034; winmgmt&\# 0034;.
+description: WMI se ejecuta como un servicio con el nombre para mostrar &\# 0034;Windows Management Instrumentation&0034; y el nombre del \# servicio &\# 0034;winmgmt&\# 0034;.
 ms.assetid: 8dff43bf-71d0-4d5a-91bc-6f474186d4ba
 ms.tgt_platform: multiple
 title: Iniciar y detener el servicio WMI
@@ -10,50 +10,50 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 54b820283aac089ad6191ee587e6beadea6dc030
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b22524d356bad5f23f4ca1cc8a3e7c68e69fd83f0dc38e64eba70bc1812436f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118315013"
 ---
 # <a name="starting-and-stopping-the-wmi-service"></a>Iniciar y detener el servicio WMI
 
-WMI se ejecuta como un servicio con el nombre para mostrar "Instrumental de administración de Windows" y el nombre de servicio "WinMgmt". WMI se ejecuta automáticamente al iniciar el sistema en la cuenta LocalSystem. Si WMI no se está ejecutando, se inicia automáticamente cuando la primera aplicación de administración o el script solicita la conexión a un espacio de nombres WMI.
+WMI se ejecuta como un servicio con el nombre para mostrar "Windows Management Instrumentation" y el nombre del servicio "winmgmt". WMI se ejecuta automáticamente al iniciar el sistema en la cuenta LocalSystem. Si WMI no se está ejecutando, se inicia automáticamente cuando la primera aplicación de administración o script solicita la conexión a un espacio de nombres WMI.
 
 Otros servicios dependen del servicio WMI, en función de la versión del sistema operativo que esté ejecutando el sistema.
 
-## <a name="starting-winmgmt-service"></a>Iniciando el servicio WinMgmt
+## <a name="starting-winmgmt-service"></a>Inicio del servicio Winmgmt
 
 En el procedimiento siguiente se describe cómo iniciar el servicio WMI.
 
-**Para iniciar el servicio WinMgmt**
+**Para iniciar el servicio Winmgmt**
 
-1.  En un símbolo del sistema, escriba **net** **Start** **WinMgmt** \[ */<switch>* \] .
+1.  En un símbolo del sistema, escriba **net** **start** **winmgmt** \[ */<switch>* \] .
 
-    Para obtener más información acerca de los modificadores que están disponibles, vea [WinMgmt](winmgmt.md). Use la cuenta predefinida Administrador o una cuenta en el grupo administradores que se ejecuta con permisos elevados para iniciar el servicio WMI. Para obtener más información, vea [control de cuentas de usuario y WMI](user-account-control-and-wmi.md).
+    Para obtener más información sobre los modificadores que están disponibles, vea [winmgmt](winmgmt.md). Use la cuenta de administrador integrada o una cuenta del grupo Administradores que se ejecuta con derechos elevados para iniciar el servicio WMI. Para obtener más información, vea [Control de cuentas de usuario y WMI.](user-account-control-and-wmi.md)
 
-2.  Otros servicios que dependen del servicio WMI, como el host de agente de SMS o el Firewall de Windows, no se reiniciarán automáticamente.
+2.  Otros servicios que dependen del servicio WMI, como el host del agente SMS o Windows Firewall, no se reiniciarán automáticamente.
 
-## <a name="stopping-winmgmt-service"></a>Deteniendo el servicio WinMgmt
+## <a name="stopping-winmgmt-service"></a>Detención del servicio Winmgmt
 
 En el procedimiento siguiente se describe cómo detener el servicio WMI.
 
-**Para detener el servicio WinMgmt**
+**Para detener el servicio Winmgmt**
 
-1.  En un símbolo del sistema, escriba **net stop WinMgmt**.
+1.  En un símbolo del sistema, escriba **net stop winmgmt**.
 
-2.  Otros servicios que dependen del servicio WMI también se detienen, como el host de agente de SMS o el Firewall de Windows.
+2.  Otros servicios que dependen del servicio WMI también se detienen, como el host del agente SMS o el firewall Windows sms.
 
 ## <a name="examples"></a>Ejemplos
 
-La galería de TechNet contiene el [script de vigilancia del servicio WMI](https://Gallery.TechNet.Microsoft.Com/WMI-service-watchdog-script-4fab1282), que describe cómo cerrar y reiniciar el servicio WinMgmt mediante programación con PowerShell.
+La Galería de TechNet contiene el script de monitor del servicio [WMI](https://Gallery.TechNet.Microsoft.Com/WMI-service-watchdog-script-4fab1282), que describe cómo apagar y reiniciar mediante programación el servicio winmgmt con PowerShell.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Uso de las herramientas de Command-Line WMI](using-the-wmi-command-line-tools.md)
+[Uso de wmi Command-Line herramientas](using-the-wmi-command-line-tools.md)
 </dt> </dl>
 
  

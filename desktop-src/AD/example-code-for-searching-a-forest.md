@@ -1,24 +1,24 @@
 ---
-title: Código de ejemplo para buscar en un bosque
+title: Código de ejemplo para buscar un bosque
 description: Este tema contiene código de ejemplo que busca en un bosque.
 ms.assetid: 56740e95-548a-4e84-ab2e-2bb7a51b7e1e
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, buscar en un bosque
+- Active Directory ejemplos Active Directory , buscar en un bosque
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6c2fb0cde0f42167b19141ad178ea80ff8795b8
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c92c71afeecebf96ba123e909ad408835de083b8d45cb259a7b371b8214cc5b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103789544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190292"
 ---
-# <a name="example-code-for-searching-a-forest"></a>Código de ejemplo para buscar en un bosque
+# <a name="example-code-for-searching-a-forest"></a>Código de ejemplo para buscar un bosque
 
 Este tema contiene código de ejemplo que busca en un bosque.
 
-El siguiente ejemplo de código de C/C++ enlaza con la raíz del catálogo global y enumera el objeto único, que es la raíz del bosque, para que se pueda usar para buscar en todo el bosque.
+En el siguiente ejemplo de código de C/C++ se enlaza a la raíz del catálogo global y se enumera el objeto único, que es la raíz del bosque, para que se pueda usar para buscar en todo el bosque.
 
 
 ```C++
@@ -32,9 +32,9 @@ Next
 
 
 
-El siguiente ejemplo de código de C/C++ contiene una función que devuelve un puntero [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) que se usa para buscar en todo el bosque.
+El siguiente ejemplo de código de C/C++ contiene una función que devuelve un [**puntero IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) usado para buscar en todo el bosque.
 
-La función realiza un enlace sin servidor a la raíz del catálogo global, enumera el elemento único, que es la raíz del bosque y se puede usar para buscar en todo el bosque, llama a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener un puntero de [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) al objeto y devuelve ese puntero para que el llamador lo use para buscar en el bosque.
+La función realiza un enlace sin servidor a la raíz del catálogo global, enumera el único elemento, que es la raíz del bosque y se puede usar para buscar en todo el bosque, llama a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener un puntero [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) al objeto y devuelve ese puntero para que lo use el autor de la llamada para buscar en el bosque.
 
 
 ```C++
@@ -98,6 +98,6 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 

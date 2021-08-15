@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMUSBDevice DeviceString (VPCCOMInterfaces. h)
+title: Propiedad IVMUSBDevice DeviceString (VPCCOMInterfaces.h)
 description: Recupera el nombre del dispositivo USB.
 ms.assetid: 2ae82e2a-b33a-4039-acdb-958b094b1045
 keywords:
-- Propiedad DeviceString Virtual PC
+- DeviceString, propiedad Virtual PC
 - Propiedad DeviceString Virtual PC, interfaz IVMUSBDevice
-- Interfaz IVMUSBDevice Virtual PC, propiedad DeviceString
+- INTERFAZ IVMUSBDispositivo Pc virtual, propiedad DeviceString
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88ed76f55f5b1218db70991f5917edf6d5b7b655
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efab8af122c0411ffaaca23302893ef2b354611e5c2d24fbd30e17eaa4782e8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117752564"
 ---
-# <a name="ivmusbdevicedevicestring-property"></a>IVMUSBDevice::D propiedad eviceString
+# <a name="ivmusbdevicedevicestring-property"></a>IVMUSBDevice::D eviceString
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el nombre del dispositivo USB.
 
@@ -53,8 +53,8 @@ Nombre del dispositivo USB.
 
 | Nombre o valor                                                                                                                                            | Significado                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>               | El método se completó correctamente.<br/> |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl> | El parámetro es **null**.<br/>         |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>               | El método se completó correctamente.<br/> |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl> | El parámetro es **NULL.**<br/>         |
 
 
 
@@ -62,18 +62,18 @@ Nombre del dispositivo USB.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMUSBDevice se define como 63C1258C-5721-4070-B86B-A6CE2AFEC0B3<br/>               |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMUSBDevice se define como \_ 63C1258C-5721-4070-B86B-A6CE2AFEC0B3<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

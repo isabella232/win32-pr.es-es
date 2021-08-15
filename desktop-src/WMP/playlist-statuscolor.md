@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. statusColor
-description: El atributo statusColor especifica o recupera el color de la línea de estado en el elemento de lista de reproducción.
+title: PLAYLIST.statusColor
+description: El atributo statusColor especifica o recupera el color de la línea de estado en el elemento PLAYLIST.
 ms.assetid: 31e32a69-1b77-42fe-9edc-45532ee51c27
 keywords:
-- Windows Media Player de lista de reproducción. statusColor
+- PLAYLIST.statusColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23df2ca06a196db032993de7a75fae61cbcda5df
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8363c8b466d2b6fe6cf8d0858256e3974fcb8f5ea34c73c724e13eb9008f56e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335668"
 ---
-# <a name="playliststatuscolor"></a>Lista de reproducción. statusColor
+# <a name="playliststatuscolor"></a>PLAYLIST.statusColor
 
-El atributo **statusColor** especifica o recupera el color de la línea de estado en el elemento de **lista de reproducción** .
+El **atributo statusColor** especifica o recupera el color de la línea de estado en el elemento **PLAYLIST.**
 
 ``` syntax
         elementID.statusColor
@@ -29,19 +29,19 @@ El atributo **statusColor** especifica o recupera el color de la línea de estad
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer. Tiene un valor predeterminado igual al valor del atributo **BackgroundColor** .
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. Tiene un valor predeterminado igual al valor del atributo **backgroundColor.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -51,7 +51,7 @@ Este atributo es una **cadena** de lectura/escritura que contiene cualquier valo
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. backgroundImage**](playlist-backgroundimage.md)
+[**PLAYLIST.backgroundImage**](playlist-backgroundimage.md)
 </dt> </dl>
 
  

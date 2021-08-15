@@ -1,20 +1,20 @@
 ---
-title: Código de ejemplo para establecer derechos para tipos específicos de objetos
+title: Código de ejemplo para establecer derechos en tipos específicos de objetos
 description: En el siguiente ejemplo de código de C/C++ se crea una ACE que asigna derechos heredados por el tipo de objeto especificado, pero que no son efectivos en el objeto actual.
 ms.assetid: c36ae0c8-40ad-4afd-8552-4de77f4463e2
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, establecer derechos en tipos específicos de objetos
+- Active Directory ejemplos Active Directory , establecer derechos para tipos específicos de objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ff598c8db6a48e07f48a3e846f54b75b2d39255
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3505751394adffe5b6d7ee6b689afada07e258af9128a95815ed46144d447ad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189806"
 ---
-# <a name="example-code-for-setting-rights-to-specific-types-of-objects"></a>Código de ejemplo para establecer derechos para tipos específicos de objetos
+# <a name="example-code-for-setting-rights-to-specific-types-of-objects"></a>Código de ejemplo para establecer derechos en tipos específicos de objetos
 
 En el siguiente ejemplo de código de C/C++ se crea una ACE que asigna derechos heredados por el tipo de objeto especificado, pero que no son efectivos en el objeto actual.
 
@@ -100,9 +100,9 @@ HRESULT CreateAceNoEffectiveInheritObject(
 
 
 
- 
+ 
 
- 
+ 
 
 
 
