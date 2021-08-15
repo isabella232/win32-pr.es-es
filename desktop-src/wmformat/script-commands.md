@@ -10,7 +10,7 @@ keywords:
 - Formato de sistemas avanzados (ASF), secuencias de script
 - ASF (formato de sistemas avanzados), secuencias de script
 - Windows SDK de formato multimedia, secuencias
-- Formato de sistemas avanzados (ASF), secuencias
+- Formato de sistemas avanzados (ASF),streams
 - ASF (formato de sistemas avanzados), secuencias
 - scripts, comandos
 - scripts,streams
@@ -25,13 +25,13 @@ ms.locfileid: "118197537"
 ---
 # <a name="script-commands"></a>Comandos de script
 
-Los comandos de script admitidos por el SDK Windows Media Format son pares de cadenas de nombre y valor simples. Por ejemplo, un comando de script común es "URL", que se usa en Reproductor de Windows Media y otras aplicaciones en reproducción para abrir páginas web. La otra mitad del par de script para el comando "URL" contiene un localizador uniforme de recursos (URL) válido, como `https://www.adatum.com` . Los objetos de este SDK no proporcionan compatibilidad con ningún comando específico; La aplicación debe incluir lógica para controlar los comandos que use. Puede usar los comandos admitidos por Reproductor de Windows Media mantener la compatibilidad con la mayoría de los reproductores.
+Los comandos de script admitidos por Windows SDK de formato multimedia son pares de cadenas de nombre y valor simples. Por ejemplo, un comando de script común es "URL", que se usa en Reproductor de Windows Media y otras aplicaciones que se reproducen para abrir páginas web. La otra mitad del par de script para el comando "URL" contiene un localizador uniforme de recursos (URL) válido, como `https://www.adatum.com` . Los objetos de este SDK no proporcionan compatibilidad con ningún comando específico; la aplicación debe incluir lógica para controlar los comandos que use. Puede usar los comandos admitidos por Reproductor de Windows Media mantener la compatibilidad con la mayoría de los reproductores.
 
-Los comandos de script se pueden entregar de una de estas dos maneras: en una secuencia de scripts o en el encabezado de archivo.
+Los comandos de script se pueden entregar de dos maneras: en una secuencia de scripts o en el encabezado de archivo.
 
 ## <a name="script-streams"></a>Script Secuencias
 
-Puede entregar comandos de script en su propia secuencia en un archivo ASF. Cada ejemplo de una secuencia de scripts contiene las dos cadenas del par nombre-valor. La ventaja de usar una secuencia de scripts es que los comandos se entregarán en el momento de presentación correcto.
+Puede entregar comandos de script en su propia secuencia en un archivo ASF. Cada ejemplo de una secuencia de scripts contiene las dos cadenas del par nombre-valor. La ventaja de usar una secuencia de scripts es que los comandos se entregarán en el momento correcto de la presentación.
 
 ## <a name="script-commands-in-the-file-header"></a>Comandos de script en el encabezado de archivo
 

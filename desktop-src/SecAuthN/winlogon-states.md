@@ -1,45 +1,45 @@
 ---
-description: Winlogon mantiene el estado de la estación de trabajo que usa GINA para determinar qué acciones de autenticación son necesarias.
+description: Winlogon mantiene el estado de la estación de trabajo que usa la GINA para determinar qué acciones de autenticación son necesarias.
 ms.assetid: e04175c4-bb43-4f76-8ceb-50282a1ebed0
 title: Estados de Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4d2e4ec690d6bdda15fb8e350969b36e01d5c68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fef22cdd172572b1d5032990abae929712dc0be29a926524520c7ce6f9bbfe69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104558342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118915063"
 ---
 # <a name="winlogon-states"></a>Estados de Winlogon
 
-[*Winlogon*](../secgloss/w-gly.md) mantiene el estado de la estación de trabajo que usa [*Gina*](../secgloss/g-gly.md) para determinar qué acciones de autenticación son necesarias.
+[*Winlogon mantiene*](../secgloss/w-gly.md) el estado de la estación de trabajo que usa [*la GINA*](../secgloss/g-gly.md) para determinar qué acciones de autenticación son necesarias.
 
-En cualquier momento, Winlogon está en uno de estos tres Estados:
+En cualquier momento, Winlogon se encuentra en uno de estos tres estados:
 
--   [Estado de cierre de sesión](#logged-off-state)
+-   [Estado de la sesión iniciada](#logged-off-state)
 -   [Estado de la sesión iniciada](#logged-on-state)
--   [Estado de estación de trabajo bloqueada](#workstation-locked-state)
+-   [Estado bloqueado de estación de trabajo](#workstation-locked-state)
 
-Estos tres Estados se muestran en la siguiente ilustración.
+Estos tres estados se muestran en la ilustración siguiente.
 
-![Estados de Winlogon](images/winlogonst.png)
+![estados winlogon](images/winlogonst.png)
 
-## <a name="logged-off-state"></a>Estado de Logged-Off
+## <a name="logged-off-state"></a>Logged-Off estado
 
-Cuando Winlogon está en el estado de cierre de sesión, se pide a los usuarios que se identifiquen y proporcionen información de autenticación. Si un usuario proporciona la información de la cuenta de usuario correcta y no hay restricciones que lo impidan, el usuario inicia sesión y se ejecuta un programa de Shell (como el explorador de Windows) en el escritorio de la aplicación. Winlogon cambia al estado de la sesión iniciada.
+Cuando Winlogon está en el estado de apagado, se pide a los usuarios que se identifiquen y proporcionen información de autenticación. Si un usuario proporciona la información correcta de la cuenta de usuario y ninguna restricción lo impide, el usuario inicia sesión y se ejecuta un programa de shell (como Windows Explorer) en el escritorio de la aplicación. Winlogon cambia al estado de la sesión iniciada.
 
-## <a name="logged-on-state"></a>Estado de Logged-On
+## <a name="logged-on-state"></a>Logged-On estado
 
-Cuando Winlogon está en el estado de la sesión iniciada, los usuarios pueden interactuar con el Shell, activar aplicaciones adicionales y realizar su trabajo. Desde el estado de inicio de sesión, los usuarios pueden detener todo el trabajo y cerrar la sesión, o bien bloquear sus estaciones de trabajo (lo que deja todo el trabajo en su lugar). Si el usuario decide cerrar sesión, Winlogon finalizará todos los procesos asociados a esa [*sesión de inicio*](../secgloss/l-gly.md) de sesión y la estación de trabajo estará disponible para otro usuario. Si, en su lugar, el usuario decide bloquear la estación de trabajo, Winlogon cambia al estado bloqueado de la estación de trabajo.
+Cuando Winlogon está en estado de sesión iniciada, los usuarios pueden interactuar con el shell, activar aplicaciones adicionales y realizar su trabajo. Desde el estado de inicio de sesión, los usuarios pueden detener todo el trabajo y cerrar la sesión, o bloquear sus estaciones de trabajo (dejando todo el trabajo en su lugar). Si el usuario decide cerrar sesión, Winlogon finalizará [](../secgloss/l-gly.md) todos los procesos asociados a esa sesión de inicio de sesión y la estación de trabajo estará disponible para otro usuario. Si, en su lugar, el usuario decide bloquear la estación de trabajo, Winlogon cambia al estado bloqueado por la estación de trabajo.
 
-## <a name="workstation-locked-state"></a>Estado de Workstation-Locked
+## <a name="workstation-locked-state"></a>Workstation-Locked estado
 
-Cuando Winlogon está en el estado de la estación de trabajo bloqueada, se muestra un escritorio seguro hasta que el usuario desbloquea la estación de trabajo proporcionando la misma información de identificación y autenticación que el usuario que inició sesión originalmente, o hasta que un administrador fuerza un cierre de sesión. Si la estación de trabajo está desbloqueada, se muestra el escritorio de la aplicación y se puede reanudar el trabajo. Sin embargo, si un administrador desbloquea la estación de trabajo (proporcionando la información de identificación y autenticación de una cuenta de administrador), los procesos del usuario que ha iniciado sesión se terminan y Winlogon cambia al estado de cierre de sesión.
+Cuando Winlogon está en estado bloqueado en la estación de trabajo, se muestra un escritorio seguro hasta que el usuario desbloquea la estación de trabajo proporcionando la misma información de identificación y autenticación que el usuario que inició sesión originalmente, o hasta que un administrador fuerza un cierre de sesión. Si la estación de trabajo está desbloqueada, se muestra el escritorio de la aplicación y se puede reanudar el trabajo. Sin embargo, si un administrador desbloquea la estación de trabajo (proporcionando la información de identificación y autenticación de una cuenta de administrador), los procesos del usuario que ha iniciado sesión finalizan y Winlogon cambia al estado de apagado.
 
-En cada uno de los Estados de Winlogon se pueden realizar varias acciones diferentes. Un archivo DLL de GINA puede implementar acciones que no forman parte del sistema operativo Windows estándar. Por ejemplo, un sistema de alta seguridad podría bloquear automáticamente una estación de trabajo cada 10 minutos y forzar a los usuarios a volver a autenticarse.
+Se pueden realizar varias acciones diferentes en cada uno de los estados de Winlogon. Un archivo DLL de GINA puede implementar acciones que no forman parte del sistema operativo Windows estándar. Por ejemplo, un sistema de alta seguridad podría bloquear automáticamente una estación de trabajo cada 10 minutos y forzar a los usuarios a que se vuelvan a autenticar.
 
-Para obtener información sobre la creación de escritorios y el registro de una [*secuencia de atención segura*](../secgloss/s-gly.md) (SAS), consulte [inicializar Winlogon](initializing-winlogon.md). Para obtener información acerca de las operaciones de tiempo de espera, vea el [cuadro de diálogo compatible tiempo de servicio operaciones de salida](supported-dialog-box-service-time-out-operations.md). Para obtener información acerca de cómo enviar mensajes a GINA mientras se muestra un cuadro de diálogo, vea [envío de mensajes a Gina](sending-messages-to-the-gina.md). Para obtener más información sobre las funciones de soporte, consulte [funciones de compatibilidad de Winlogon](authentication-functions.md).
+Para obtener información sobre cómo crear escritorios y registrar una secuencia de [*atención*](../secgloss/s-gly.md) segura (SAS), consulte [Inicialización de Winlogon.](initializing-winlogon.md) Para obtener información sobre las operaciones de tiempo de espera, vea Operaciones de tiempo de espera del servicio de cuadro de [diálogo admitidas.](supported-dialog-box-service-time-out-operations.md) Para obtener información sobre cómo enviar mensajes a la GINA mientras se muestra un cuadro de diálogo, vea Envío de [mensajes a la GINA](sending-messages-to-the-gina.md). Para obtener información sobre las funciones de soporte técnico, [consulte Funciones de soporte técnico de Winlogon.](authentication-functions.md)
 
  
 

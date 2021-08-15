@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETPALETTE (RichEdit. h)
-description: Cambia la paleta que un control Rich Edit utiliza para la ventana de presentación.
+title: EM_SETPALETTE mensaje (Richedit.h)
+description: Cambia la paleta que usa un control de edición enriquecido para su ventana de presentación.
 ms.assetid: c1dc0c24-eaf2-47a8-9bb1-59f37b206feb
 keywords:
-- EM_SETPALETTE controles de mensajes de Windows
+- EM_SETPALETTE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 026a0a85001818b6f69366e8dba80ef56a7a8f20
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93225a7a550f86bb8b32bf5939a8c7b7aa862ac96c8459bd6bcceb4c6b76e516
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831156"
 ---
-# <a name="em_setpalette-message"></a>\_Mensaje SETPALETTE em
+# <a name="em_setpalette-message"></a>Mensaje \_ SETPALETTE DE EM
 
-Cambia la paleta que un control Rich Edit utiliza para la ventana de presentación.
+Cambia la paleta que usa un control de edición enriquecido para su ventana de presentación.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,34 +32,34 @@ Cambia la paleta que un control Rich Edit utiliza para la ventana de presentaci�
 *wParam* 
 </dt> <dd>
 
-Identificador de la nueva paleta utilizada por el control Rich Edit.
+Controle la nueva paleta que usa el control de edición enriquecido.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se usa; debe ser cero.
+Este parámetro no se utiliza; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El control Rich Edit no comprueba si la nueva paleta es válida.
+El control rich edit no comprueba si la nueva paleta es válida.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Permite que un hueso existente afecte a un grupo de vértices y defina la influencia que tenga el hueso en cada vértice.
+description: Habilite un tejido existente para influir en un grupo de vértices y definir cuánta influencia tiene el pórtico en cada vértice.
 ms.assetid: 37ba97a8-ba40-4700-b8b8-fa7cc9118307
-title: 'ID3DX10SkinInfo:: AddBoneInfluences (método) (D3DX10. h)'
+title: Método ID3DX10SkinInfo::AddIonalInfluences (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8531d70e301b0583309817ac23a36762cacf563f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7f640481c664c51614a45ff10250a4c40d769a27d793868c4bec316c2cab9ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914351"
 ---
-# <a name="id3dx10skininfoaddboneinfluences-method"></a>ID3DX10SkinInfo:: AddBoneInfluences (método)
+# <a name="id3dx10skininfoaddboneinfluences-method"></a>Método ID3DX10SkinInfo::AddIonalInfluences
 
-Permite que un hueso existente afecte a un grupo de vértices y defina la influencia que tenga el hueso en cada vértice.
+Habilite un tejido existente para influir en un grupo de vértices y definir cuánta influencia tiene el pórtico en cada vértice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,39 +43,39 @@ HRESULT AddBoneInfluences(
 
 <dl> <dt>
 
-*BoneIndex* \[ de\]
+*Index deindex* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice que especifica un hueso existente. Debe estar comprendido entre 0 y el valor devuelto por [**ID3DX10SkinInfo:: GetNumBones**](id3dx10skininfo-getnumbones.md).
+Índice que especifica un pórmico existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
 
 </dd> <dt>
 
-*InfluenceCount* \[ de\]
+*InfluenceCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vértices que se van a agregar a la influencia del hueso.
+Número de vértices que se agregan a la influencia del tejido.
 
 </dd> <dt>
 
-*pIndices* \[ de\]
+*pIndices* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de índices de vértice. Cada miembro de esta matriz tiene un miembro correspondiente en pWeights, de modo que pIndices \[ i se \] corresponde con pWeights \[ i \] . El valor correspondiente en pWeights \[ \] determinará la cantidad de influencia que BoneIndex tendrá en el vértice indexado por pIndices \[ i \] . El tamaño de la matriz pIndices debe ser igual o mayor que InfluenceCount.
+Puntero a una matriz de índices de vértices. Cada miembro de esta matriz tiene un miembro correspondiente en pWeights, de modo que pIndices i corresponde a \[ \] pWeights \[ i \] . El valor correspondiente de pWeights i determina cuánta influencia tendráIndexIndex en el vértice indexado por \[ \] pIndices \[ i \] . El tamaño de la matriz pIndices debe ser igual o mayor que InfluenceCount.
 
 </dd> <dt>
 
-*pWeights* \[ de\]
+*pWeights* \[ En\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Puntero a una matriz de pesos del hueso. Cada miembro de esta matriz tiene un miembro correspondiente en pIndices, de modo que pWeights \[ i se \] corresponde con pIndices \[ i \] . Cada valor de pWeights se encuentra entre 0 y 1, y define la cantidad de influencia que tiene el hueso en cada vértice. El tamaño de pWeights debe ser igual o mayor que InfluenceCount.
+Puntero a una matriz de pesos de peso. Cada miembro de esta matriz tiene un miembro correspondiente en pIndices, de modo que pWeights i corresponde a \[ \] pIndices \[ i \] . Cada valor de pWeights está entre 0 y 1 y define la cantidad de influencia que tiene el pWeights sobre cada vértice. El tamaño de pWeights debe ser igual o mayor que InfluenceCount.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntero a una matriz de pesos del hueso. Cada miembro de esta matriz tiene un mi
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ INVALIDARG o e \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser: E \_ INVALIDARG o E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,19 +91,19 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

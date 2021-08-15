@@ -1,11 +1,11 @@
 ---
-title: PlaylistCollection. importPlaylist, método
-description: El método importPlaylist agrega una lista de reproducción estática a la biblioteca. | PlaylistCollection. importPlaylist, método
+title: Método PlaylistCollection.importPlaylist
+description: El método importPlaylist agrega una lista de reproducción estática a la biblioteca. | Método PlaylistCollection.importPlaylist
 ms.assetid: 0611ba42-fd8f-4fb9-9fbb-809a82775c2a
 keywords:
-- método importPlaylist de Windows Media Player
-- método importPlaylist de Windows Media Player, clase PlaylistCollection
-- Clase PlaylistCollection Windows Media Player, método importPlaylist
+- Método importPlaylist Reproductor de Windows Media
+- Método importPlaylist Reproductor de Windows Media , clase PlaylistCollection
+- Clase PlaylistCollection Reproductor de Windows Media , método importPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 736e9afa17f571428fada48660726b606268796a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f6c2a61b6603c0bfb38025548eaa4b0943bcdd1a5e81cb1ac27c17969fe87ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334847"
 ---
-# <a name="playlistcollectionimportplaylist-method"></a>PlaylistCollection. importPlaylist, método
+# <a name="playlistcollectionimportplaylist-method"></a>Método PlaylistCollection.importPlaylist
 
-El método **importPlaylist** agrega una lista de reproducción estática a la biblioteca.
+El **método importPlaylist** agrega una lista de reproducción estática a la biblioteca.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,68 +42,68 @@ retVal = PlaylistCollection.importPlaylist(
 
 <dl> <dt>
 
-*lista de reproducción* \[ de\]
+*lista de reproducción* \[ En\]
 </dt> <dd>
 
-Objeto de **lista de reproducción** que se va a agregar.
+**Objeto de** lista de reproducción que se va a agregar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve el objeto de la **lista de reproducción** que se agregó.
+Este método devuelve el objeto **Playlist** que se agregó.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las listas de reproducción que no contienen elementos multimedia no se pueden agregar a la biblioteca mediante este método. Para crear una lista de reproducción vacía en la biblioteca, use el método **reproducción** . A continuación, puede rellenar la lista de reproducción resultante con elementos multimedia mediante la *lista de reproducción*. **appendItem** o *lista de reproducción*. **insertItem**.
+Las listas de reproducción que no contienen elementos multimedia no se pueden agregar a la biblioteca mediante este método. Para crear una lista de reproducción vacía en la biblioteca, use el **método newPlaylist.** A continuación, puede rellenar la lista de reproducción resultante con elementos multimedia mediante Lista *de reproducción*. **appendItem o** *Lista de reproducción.* **insertItem**.
 
-Si pasa este método a una lista de reproducción automática, la consulta se ejecuta una vez y el resultado se agrega a la biblioteca como una lista de reproducción estática. Para agregar una lista de reproducción automática a la biblioteca y conservar su comportamiento automático, use *MediaCollection*. **Agregar**. Para obtener más información, vea [listas de reproducción estáticas y automáticas](static-and-auto-playlists.md).
+Si pasa este método a una lista de reproducción automática, la consulta se ejecuta una vez y el resultado se agrega a la biblioteca como una lista de reproducción estática. Para agregar una lista de reproducción automática a la biblioteca y conservar su comportamiento automático, use *MediaCollection*. **agregue**. Para obtener más información, vea [Listas de reproducción estáticas y automáticas.](static-and-auto-playlists.md)
 
-Para usar este método, se necesita acceso completo a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Administrar listas de reproducción**](managing-playlists.md)
+[**Administración de listas de reproducción**](managing-playlists.md)
 </dt> <dt>
 
 [**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**MediaCollection. Add**](mediacollection-add.md)
+[**MediaCollection.add**](mediacollection-add.md)
 </dt> <dt>
 
-[**Lista de reproducción. appendItem**](playlist-appenditem.md)
+[**Playlist.appendItem**](playlist-appenditem.md)
 </dt> <dt>
 
-[**Lista de reproducción. insertItem**](playlist-insertitem.md)
+[**Playlist.insertItem**](playlist-insertitem.md)
 </dt> <dt>
 
 [**Objeto PlaylistCollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**PlaylistCollection. reproducción**](playlistcollection-newplaylist.md)
+[**PlaylistCollection.newPlaylist**](playlistcollection-newplaylist.md)
 </dt> <dt>
 
-[**PlaylistCollection. Remove**](playlistcollection-remove.md)
+[**PlaylistCollection.remove**](playlistcollection-remove.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

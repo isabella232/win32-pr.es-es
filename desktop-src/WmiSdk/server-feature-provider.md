@@ -1,5 +1,5 @@
 ---
-description: A partir de Windows Server 2008, el proveedor de características de servidor proporciona información sobre las características de servidor que están instaladas en el servidor. Esta clase permite a los administradores inventariar y administrar sus roles y características de servidor.
+description: A partir Windows Server 2008, el proveedor de características de servidor proporciona información sobre qué características de servidor están instaladas en el servidor. Esta clase permite a los administradores inventariar y administrar sus roles y características de servidor.
 ms.assetid: f7932eaa-6730-4301-9809-32de9c1a20de
 ms.tgt_platform: multiple
 title: Proveedor de características de servidor
@@ -10,22 +10,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 73666dc810a40f33e3d35acb1b9d7ade5d2b021a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffdc79b66a51c82f00f2f8079aa332d6e60d2d7cb82b808b6a0ec3ca56c9f93e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117922983"
 ---
 # <a name="server-feature-provider"></a>Proveedor de características de servidor
 
-A partir de Windows Server 2008, el proveedor de características de servidor proporciona información sobre las características de servidor que están instaladas en el servidor. Esta clase permite a los administradores inventariar y administrar sus roles y características de servidor.
+A partir Windows Server 2008, el proveedor de características de servidor proporciona información sobre qué características de servidor están instaladas en el servidor. Esta clase permite a los administradores inventariar y administrar sus roles y características de servidor.
 
-Un rol de servidor se define como un grupo de componentes que proporcionan funciones para un área específica de funcionalidad, como impresión, archivos, control de dominio, etc. Los roles de servidor típicos son servidor de archivos, servidor de correo, servidor DNS, controlador de dominio, servidor de aplicaciones, etc.
+Un rol de servidor se define como un grupo de componentes que proporcionan funciones para un área específica de funcionalidad, como impresión, archivos, control de dominio, entre otros. Los roles de servidor típicos son Servidor de archivos, Servidor de correo, Servidor DNS, Controlador de dominio, Servidor de aplicaciones, entre otros.
 
-Si una empresa no ejecuta software de administración que informe de roles de servidor, como Microsoft Operations Manager con módulos de administración instalados, puede obtener esa información consultando la clase [**\_ ServerFeature de Win32**](win32-serverfeature.md) . La información de roles de servidor y características de los equipos remotos está disponible a través de las conexiones remotas WMI normales o mediante el servicio Administración remota de Windows (WinRM). Para obtener más información acerca de las conexiones remotas DCOM de WMI, consulte [conectarse a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md). Para obtener más información sobre las conexiones que usan el protocolo [*WS-Management*](/windows/desktop/WinRM/windows-remote-management-glossary) , vea [administración remota de Windows](/windows/desktop/WinRM/portal).
+Si una empresa no ejecuta software de administración que notifica roles de servidor, como Microsoft Operations Manager con módulos de administración instalados, puede obtener esa información consultando la clase [**\_ ServerFeature de Win32.**](win32-serverfeature.md) La información de características y roles de servidor de los equipos remotos está disponible a través de conexiones remotas WMI normales o mediante el Windows administración remota (WinRM). Para obtener más información sobre las conexiones DCOM wmi remotas, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md) Para obtener más información sobre las conexiones que usan [*el protocolo WS-Management,*](/windows/desktop/WinRM/windows-remote-management-glossary) [vea Windows Administración remota.](/windows/desktop/WinRM/portal)
 
-El proveedor de características de servidor de admite las siguientes clases WMI:
+El proveedor de características de servidor admite las siguientes clases WMI:
 
 -   [**Win32 \_ ServerFeature**](win32-serverfeature.md)
 

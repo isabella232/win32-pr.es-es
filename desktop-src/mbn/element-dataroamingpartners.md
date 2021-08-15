@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f6df58bc0765b5254645c45270f8145f5d10d422
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72b713907924a9d14227e879cc4a6cae907a20c4a86dc4336c7d6f23ecf7c40e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745116"
 ---
 # <a name="span-idwwan_profile_v4element_dataroamingpartnersspandataroamingpartners"></a><span id="WWAN_profile_v4.element_DataRoamingPartners"></span>DataRoamingPartners
 
-Especifica una lista de proveedores de red preferidos en itinerancia.
+Especifica una lista de proveedores de red preferidos al itinerancia.
 
-Para obtener más información, consulte la documentación del elemento [**DataRoamingPartners**](./schema-dataroamingpartners-mbnprofile-element.md) v1.
+Para más información, consulte la documentación del elemento [**DataRoamingPartners**](./schema-dataroamingpartners-mbnprofile-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -45,7 +45,7 @@ Para obtener más información, consulte la documentación del elemento [**DataR
 </DataRoamingPartners>
 ```
 
-### <a name="key"></a>Clave
+### <a name="key"></a>Key
 
 `+`   requerido (uno o varios)
 
@@ -72,7 +72,7 @@ Ninguno.
 <tr class="odd">
 <td><a href="element-provider.md">Proveedor</a></td>
 <td><p>Especifica un proveedor de red preferido en una lista de proveedores que se usarán en itinerancia.</p>
-<p>El valor de este elemento es una instancia del tipo complejo de <a href="../mbn/schema-providertype-complextype.md"><strong>providerType</strong></a> de v1.</p></td>
+<p>El valor de este elemento es una instancia del tipo complejo <a href="../mbn/schema-providertype-complextype.md"><strong>providerType</strong></a> v1.</p></td>
 </tr>
 </tbody>
 </table>
@@ -95,8 +95,8 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>El elemento <strong>MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
-<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el elemento secundario <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p></td>
+<td><p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
+<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p></td>
 </tr>
 </tbody>
 </table>

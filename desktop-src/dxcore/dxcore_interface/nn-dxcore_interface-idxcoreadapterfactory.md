@@ -1,20 +1,20 @@
 ---
 title: IDXCoreAdapterFactory
-description: La interfaz **IDXCoreAdapterFactory**   implementa métodos para generar objetos de enumeración del adaptador de DXCore y para recuperar los detalles.
+description: La **interfaz IDXCoreAdapterFactory** implementa métodos para generar objetos de enumeración del adaptador DXCore y para recuperar sus detalles.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: ee5c985899e1d810057a736c679e10f69ef88d06
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 44b61e4b575c06a02c6dd7b437958053a7e34016af0994af0148fa23d084cc61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118502495"
 ---
 # <a name="idxcoreadapterfactory-interface"></a>Interfaz IDXCoreAdapterFactory
 
-La interfaz **IDXCoreAdapterFactory**   implementa métodos para generar objetos de enumeración del adaptador de DXCore y para recuperar los detalles. **IDXCoreAdapterFactory** hereda de la interfaz [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) . Para obtener instrucciones de programación y ejemplos de código, vea [uso de DXCore para enumerar los adaptadores](../dxcore-enum-adapters.md).
+La **interfaz IDXCoreAdapterFactory** implementa métodos para generar objetos de enumeración del adaptador DXCore y para recuperar sus detalles. **IDXCoreAdapterFactory** hereda de la [interfaz IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown) Para obtener instrucciones de programación y ejemplos de código, vea [Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Referencia de DXCore](../dxcore-reference.md), [uso de DXCore para enumerar los adaptadores](../dxcore-enum-adapters.md)
+[Referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

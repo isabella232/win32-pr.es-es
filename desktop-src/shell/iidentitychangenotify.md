@@ -1,7 +1,7 @@
 ---
-description: Desusado. Proporciona una notificación de las modificaciones realizadas en las identidades de usuario en el sistema, así como las solicitudes de usuario para cambiar la identidad del usuario actual.
+description: Desusado. Proporciona notificaciones de modificaciones en las identidades de usuario en el sistema, así como solicitudes de usuario para cambiar la identidad de usuario actual.
 ms.assetid: 09903aa6-62bf-4820-9a09-79956d775441
-title: Interfaz IIdentityChangeNotify (Msident. h)
+title: Interfaz IIdentityChangeNotify (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,28 +13,28 @@ api_type:
 - COM
 api_location:
 - Msoe.dll
-ms.openlocfilehash: 4a217b2cfb046bfb9ae5546e015264f74d00b1d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4419f55b2fe4561a22035d962da5e3c271108d06fa417cfbed1b603c883e5b32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118721913"
 ---
-# <a name="iidentitychangenotify-interface"></a>Interfaz IIdentityChangeNotify
+# <a name="iidentitychangenotify-interface"></a>IIdentityChangeNotify (interfaz)
 
-\[La interfaz **IIdentityChangeNotify** está disponible para su uso en Windows 2000. En Windows XP, esta funcionalidad se ha sustituido por [las cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md), y puede modificarse o no estar disponible en las versiones posteriores.\]
+\[La **interfaz IIdentityChangeNotify** está disponible para su uso Windows 2000. En Windows XP, esta funcionalidad se ha reemplazado por cuentas de usuario con cambio rápido de usuario y [Escritorio remoto](fastuserswitching.md), y podría modificarse o no estar disponible en versiones posteriores.\]
 
-En desuso. Proporciona una notificación de las modificaciones realizadas en las identidades de usuario en el sistema, así como las solicitudes de usuario para cambiar la identidad del usuario actual.
+En desuso. Proporciona notificaciones de modificaciones en las identidades de usuario en el sistema, así como solicitudes de usuario para cambiar la identidad de usuario actual.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IIdentityChangeNotify** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IIdentityChangeNotify** también tiene estos tipos de miembros:
+La **interfaz IIdentityChangeNotify** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IIdentityChangeNotify** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IIdentityChangeNotify** tiene estos métodos.
+La **interfaz IIdentityChangeNotify** tiene estos métodos.
 
 
 
@@ -50,7 +50,7 @@ La interfaz **IIdentityChangeNotify** tiene estos métodos.
 
 ## <a name="remarks"></a>Observaciones
 
-Para implementar notificaciones, una interfaz derivada debe conectarse al [**IUserIdentityManager**](iuseridentitymanager.md) llamando a [**IConnectionPoint:: Advise**](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) y pasando un puntero a la interfaz.
+Para implementar notificaciones, una interfaz derivada debe conectarse a [**IUserIdentityManager**](iuseridentitymanager.md) llamando a [**IConnectionPoint::Advise**](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) y pasando un puntero a la interfaz .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ Para implementar notificaciones, una interfaz derivada debe conectarse al [**IUs
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msoe.dll</dt> </dl>    |
 
 

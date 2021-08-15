@@ -1,12 +1,12 @@
 ---
-title: Método EnableRequestSOH de la clase Win32_TSGatewayServerSettings
-description: EnableRequestSOH ya no está disponible.
+title: Método EnableRequestSATTRIBUTE de la Win32_TSGatewayServerSettings clase
+description: EnableRequestS ENABLE ya no está disponible.
 ms.assetid: 4feb7530-cced-4ead-a1fb-679b81442bb3
 ms.tgt_platform: multiple
 keywords:
-- Método EnableRequestSOH Servicios de Escritorio remoto
-- Método EnableRequestSOH Servicios de Escritorio remoto, clase Win32_TSGatewayServerSettings
-- Win32_TSGatewayServerSettings de clase Servicios de Escritorio remoto, método EnableRequestSOH
+- Método EnableRequestSREQUEST Servicios de Escritorio remoto
+- Método EnableRequestSATTRIBUTE Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto , método EnableRequestSATTRIBUTE
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a90ed6a3929b50d13a27ec559aab534f9e06f738
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 10e1a3e4b6cf1312dde4dfc23105a32f6667667496a9a7162ad1b34cf34b2aa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349159"
 ---
-# <a name="enablerequestsoh-method-of-the-win32_tsgatewayserversettings-class"></a>Método EnableRequestSOH de la \_ clase TSGatewayServerSettings de Win32
+# <a name="enablerequestsoh-method-of-the-win32_tsgatewayserversettings-class"></a>Método EnableRequestSUER de la clase \_ TSGatewayServerSettings de Win32
 
-\[El método **EnableRequestSOH** ya no está disponible a partir de Windows Server 2016.\]
+\[El **método EnableRequestSHH** ya no está disponible a Windows Server 2016.\]
 
-Habilita o deshabilita las solicitudes de un informe de mantenimiento (SoH).
+Habilita o deshabilita las solicitudes de una instrucción de mantenimiento (SoH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,39 +45,39 @@ uint32 EnableRequestSOH(
 
 <dl> <dt>
 
-*RequestSOH* \[ de\]
+*RequestSMIO* \[ En\]
 </dt> <dd>
 
-Especifique **true** para habilitar la característica o **false** para deshabilitarla.
+Especifique **TRUE** para habilitar la característica o **FALSE** para deshabilitarla.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                        |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                        |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

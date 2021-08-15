@@ -1,23 +1,23 @@
 ---
-title: continuec (SM4-ASM)
+title: continuec (sm4 - asm)
 description: Continúa la ejecución condicionalmente al principio del bucle actual.
 ms.assetid: 1A5B1951-CE1E-479C-AE0F-FC5FB93E0DE9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d480d8828f8f68af1f6a2ff4f52224041d5241df
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: d909c199dc0ceaa4e5498429f1ac3a136d3fb75d930e392d7f6fd8230e5b49b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104983843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117909062"
 ---
-# <a name="continuec-sm4---asm"></a>continuec (SM4-ASM)
+# <a name="continuec-sm4---asm"></a>continuec (sm4 - asm)
 
 Continúa la ejecución condicionalmente al principio del bucle actual.
 
 
 
-| continuec { \_ z \|\_NZ} src0. Select ( \_ componente) |
+| continuec{ \_ z\|\_Componente nz} src0.select \_ |
 |---------------------------------------------|
 
 
@@ -28,17 +28,17 @@ Continúa la ejecución condicionalmente al principio del bucle actual.
 
 | Término                                                            | Descripción                                                          |
 |-----------------------------------------------------------------|----------------------------------------------------------------------|
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el componente en el que se va a probar la condición.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El componente con el que se va a probar la condición.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**continuec** solo se puede usar dentro de un [bucle](loop--sm4---asm-.md) o [ENDLOOP](endloop--sm4---asm-.md).
+**continuec** solo se puede usar dentro de [un bucle](loop--sm4---asm-.md) [o endloop.](endloop--sm4---asm-.md)
 
-En el ejemplo siguiente se muestra cómo usar la instrucción **continuec** .
+En el ejemplo siguiente se muestra cómo usar la **instrucción continuec.**
 
 
 ```
@@ -59,7 +59,7 @@ En el ejemplo siguiente se muestra cómo usar la instrucción **continuec** .
 
 
 
-El formato de token contiene el desplazamiento de la instrucción de bucle correspondiente en el sombreador como una comodidad.
+El formato del token contiene el desplazamiento de la instrucción de bucle correspondiente en el sombreador por comodidad.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -73,7 +73,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -81,12 +81,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -96,7 +96,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

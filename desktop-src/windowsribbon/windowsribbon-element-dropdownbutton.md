@@ -3,7 +3,7 @@ title: Elemento DropDownButton
 description: Representa un control button Drop-Down estándar.
 ms.assetid: 41031be2-43bc-4f75-b37a-1dcecc1635e1
 keywords:
-- DropDownButton, elemento Windows cinta de opciones
+- Elemento DropDownButton Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -49,7 +49,7 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -58,7 +58,7 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Solo es válido <a href="windowsribbon-element-menugroup.md"><strong>si MenuGroup</strong></a> es el elemento primario.<br/> <br/>
+<td>Válido solo si <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> es el elemento primario.<br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena que contiene una lista separada por comas de enteros entre 0 y 31.<br/> El espacio en blanco es válido y se omite.<br/> Longitud máxima: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
@@ -108,21 +108,21 @@ Representa un control [de botón desplegable](windowsribbon-controls-dropdownbut
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Opcional o obligatorio, según el elemento primario.
+Opcional o obligatorio, en función del elemento primario.
 
 Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), **DropDownButton**, [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup,**](windowsribbon-element-menugroup.md) [**SplitButton**](windowsribbon-element-splitbutton.md) [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-**DropDownButton admite** [modos de aplicación](ribbon-applicationmodes.md) cuando se hospeda en la columna izquierda del menú de la aplicación.
+**DropDownButton admite** [los modos de](ribbon-applicationmodes.md) aplicación cuando se hospeda en la columna izquierda del menú aplicación.
 
-[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) y [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) no son elementos secundarios válidos de **DropDownButton** cuando **DropDownButton** es un descendiente de [**ApplicationMenu.**](windowsribbon-element-applicationmenu.md)
+[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) y [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) no son elementos secundarios válidos de **DropDownButton** cuando **DropDownButton** es un descendiente de [**ApplicationMenu**](windowsribbon-element-applicationmenu.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para **DropDownButton.**
+En el ejemplo siguiente se muestra el marcado básico para **DropDownButton**.
 
-En esta sección de código se muestran las declaraciones de **DropDownButton** Command, con un [**grupo**](windowsribbon-element-group.md) asociado que funciona como contenedor primario para el **elemento DropDownButton.**
+En esta sección de código se muestran las [](windowsribbon-element-group.md) declaraciones del comando **DropDownButton,** con un grupo asociado que funciona como contenedor primario para el **elemento DropDownButton.**
 
 
 ```XML
@@ -170,11 +170,11 @@ En esta sección de código se muestran las declaraciones de control **DropDownB
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Control Botón de lista desplegable](windowsribbon-controls-dropdownbutton.md)
+[Control De botón desplegable](windowsribbon-controls-dropdownbutton.md)
 </dt> <dt>
 
 [**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)

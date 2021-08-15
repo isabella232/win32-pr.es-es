@@ -1,7 +1,7 @@
 ---
-description: Una función de devolución de llamada que debe ser implementada por un usuario para establecer un sombreador de vértices.
+description: Función de devolución de llamada que debe implementar un usuario para establecer un sombreador de vértices.
 ms.assetid: 8f3d3be3-c073-441d-a318-6d2cd5e7aca5
-title: 'ID3DXEffectStateManager:: SetVertexShader (método) (D3DX9Effect. h)'
+title: Método ID3DXEffectStateManager::SetVertexShader (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 9fd25158f2aa6ab0a22d6226e8e709c3b498b0e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5f52daf5174608985b18140d2e6efde849f0bd6292c00584ece3453cca33ebf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118520927"
 ---
-# <a name="id3dxeffectstatemanagersetvertexshader-method"></a>ID3DXEffectStateManager:: SetVertexShader (método)
+# <a name="id3dxeffectstatemanagersetvertexshader-method"></a>Método ID3DXEffectStateManager::SetVertexShader
 
-Una función de devolución de llamada que debe ser implementada por un usuario para establecer un sombreador de vértices.
+Función de devolución de llamada que debe implementar un usuario para establecer un sombreador de vértices.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetVertexShader(
 
 <dl> <dt>
 
-*pShader* \[ de\]
+*pShader* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DVERTEXSHADER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexshader9)**
 
-Un puntero a un objeto de sombreador de vértices. Vea [**IDirect3DVertexShader9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexshader9).
+Puntero a un objeto de sombreador de vértices. Vea [**IDirect3DVertexShader9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexshader9)
 
 </dd> </dl>
 
@@ -53,10 +53,10 @@ Un puntero a un objeto de sombreador de vértices. Vea [**IDirect3DVertexShader9
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El método implementado por el usuario debe devolver S \_ correcto. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
+El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
 
--   Se producirá un error en el efecto durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9:: SetVertexShader**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshader)).
+-   Se producirá un error en el efecto [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   Se producirá un error en la llamada de estado de efecto dinámico (por [**ejemplo, IDirect3DDevice9::SetVertexShader).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshader)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,12 +64,12 @@ El método implementado por el usuario debe devolver S \_ correcto. Si se produc
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

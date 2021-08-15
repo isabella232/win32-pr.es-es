@@ -1,15 +1,15 @@
-- name: Prueba de posicionamiento táctil
+- name: Prueba de impacto táctil
   href: touch-hit-testing-portal.md
   items:
-    - name: Referencia de la prueba de posicionamiento táctil
+    - name: Referencia de touch hit testing
       href: touchhittest-reference.md
       items:
         - name: Constantes
           href: constants.md
           items:
-            - name: Comportamientos de la prueba de posicionamiento táctil
+            - name: Comportamientos de las pruebas de impacto táctil
               href: hit-testing-behaviors.md
-            - name: Puntuaciones de la prueba de posicionamiento táctil
+            - name: Puntuaciones de pruebas de impacto táctil
               href: hit-testing-scores.md
         - name: Functions
           href: functions.md

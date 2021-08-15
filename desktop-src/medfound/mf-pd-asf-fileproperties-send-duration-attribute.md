@@ -1,19 +1,19 @@
 ---
-description: Especifica el tiempo, en unidades de 100-nanosegundos, necesario para enviar un archivo de formato de sistema avanzado (ASF). La hora de envío de los paquetes es la hora a la que se debe entregar el paquete a través de la red. No es el tiempo de presentación del paquete.
+description: Especifica el tiempo, en unidades de 100 nanosegundos, necesario para enviar un archivo de formato de sistemas avanzados (ASF). Un tiempo de envío de paquetes es la hora a la que se debe entregar el paquete a través de la red. No es el tiempo de presentación del paquete.
 ms.assetid: 2bd427e2-106d-4997-86aa-fae221e429eb
-title: MF_PD_ASF_FILEPROPERTIES_SEND_DURATION atributo (Wmcontainer. h)
+title: MF_PD_ASF_FILEPROPERTIES_SEND_DURATION atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: deed3f78208a0f0c7e555e8113f05ac0800cdb97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce635cd02766a3c9ca8b0a0d327db93a4bcaaca76bccd6ae54fda726684ec641
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740947"
 ---
-# <a name="mf_pd_asf_fileproperties_send_duration-attribute"></a>MF \_ PD \_ ASF \_ FILEPROPERTIES \_ enviar \_ atributo Duration
+# <a name="mf_pd_asf_fileproperties_send_duration-attribute"></a>Atributo \_ \_ ASF \_ FILEPROPERTIES \_ SEND DURATION \_ de MF PD
 
-Especifica el tiempo, en unidades de 100-nanosegundos, necesario para enviar un archivo de formato de sistema avanzado (ASF). La hora de *envío* de un paquete es la hora a la que se debe entregar el paquete a través de la red. No es el tiempo de presentación del paquete.
+Especifica el tiempo, en unidades de 100 nanosegundos, necesario para enviar un archivo de formato de sistemas avanzados (ASF). La hora de envío *de un paquete* es la hora a la que se debe entregar el paquete a través de la red. No es el tiempo de presentación del paquete.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,9 +21,9 @@ Especifica el tiempo, en unidades de 100-nanosegundos, necesario para enviar un 
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se aplica a los descriptores de presentación para el contenido ASF.
+Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
-El método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera este atributo a partir de los metadatos ASF.
+El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera este atributo a partir de los metadatos de ASF.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ El método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/des
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -41,19 +41,19 @@ El método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/des
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Atributos de descriptor de presentación](presentation-descriptor-attributes.md)
+[Atributos del descriptor de presentación](presentation-descriptor-attributes.md)
 </dt> <dt>
 
 [Objeto de encabezado ASF](asf-file-structure.md)

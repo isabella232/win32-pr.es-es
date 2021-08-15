@@ -1,10 +1,10 @@
 ---
-title: MPSCAN_RESOURCES estructura (MpClient. h)
-description: Información de recursos pasada durante una operación de examen.
+title: MPSCAN_RESOURCES estructura (MpClient.h)
+description: Información de recursos que se pasa durante una operación de examen.
 ms.assetid: D97712A6-547D-44CC-B55D-039A5CCE20BF
 keywords:
-- MPSCAN_RESOURCES estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPSCAN_RESOURCES características de entorno heredado de Windows
+- MPSCAN_RESOURCES estructura heredada de Windows environment
+- PMPSCAN_RESOURCES puntero de estructura heredado Windows características del entorno
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69ee9ea259bca6bf66eb81fcd17b13d509d5a065
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd70b442e7179d516d2e9c60b81e6c52b0f696f5719a255871e8687773bf71ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747354"
 ---
-# <a name="mpscan_resources-structure"></a>\_Estructura de recursos MPSCAN
+# <a name="mpscan_resources-structure"></a>Estructura DE RECURSOS DE MPSCAN \_
 
-Información de recursos pasada durante una operación de examen.
+Información de recursos que se pasa durante una operación de examen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,11 +56,11 @@ Recuento de recursos.
 **pResourceList**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info**
+Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Matriz de recursos. Vea [**\_ información de MPRESOURCE**](mpresource-info.md).
+Matriz de recursos. Vea [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Matriz de recursos. Vea [**\_ información de MPRESOURCE**](mpresource-info.md).
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Matriz de recursos. Vea [**\_ información de MPRESOURCE**](mpresource-info.md).
 
 <dl> <dt>
 
-[**información de MPRESOURCE \_**](mpresource-info.md)
+[**MPRESOURCE \_ INFO**](mpresource-info.md)
 </dt> </dl>
 
  

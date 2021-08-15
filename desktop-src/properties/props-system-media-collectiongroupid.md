@@ -4,12 +4,12 @@ ms.assetid: 1ef5de55-2cf8-4ed3-ad79-25856058fb03
 title: System.Media.CollectionGroupID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2defac45f9a9a2e9d313511d1df494e746bcce9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cf6e01b21b1823bb5067612cc83e70ef378c3af09ae4de1a9fff23cdb972efa6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118725789"
 ---
 # <a name="systemmediacollectiongroupid"></a>System.Media.CollectionGroupID
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

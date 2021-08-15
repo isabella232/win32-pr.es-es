@@ -4,12 +4,12 @@ ms.assetid: 18715721-f1cd-40c7-a6b7-4bd911ff999d
 title: player.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5938c07b50da12c1765c34b8b89581991f977afe
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 63d4e4bb5d9e85d7b22c4e3c090926439dc31ccd44e59f9bacbbaf84b8e9548a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118737362"
 ---
 # <a name="playercpp"></a>player.cpp
 

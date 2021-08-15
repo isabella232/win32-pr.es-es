@@ -6,20 +6,20 @@
       items:
         - name: Modo de error
           href: error-mode.md
-        - name: Código de Last-Error
+        - name: Last-Error code
           href: last-error-code.md
-        - name: Notificar al usuario
+        - name: Notificación al usuario
           href: notifying-the-user.md
         - name: Tablas de mensajes
           href: message-tables.md
-        - name: Salida de aplicación fatal
+        - name: Salida irresíz de la aplicación
           href: fatal-application-exit.md
-        - name: Instrucciones de mensajes de error
+        - name: Instrucciones de mensaje de error
           href: error-message-guidelines.md
-    - name: Usar el control de errores
+    - name: Uso del control de errores
       href: using-error-handling.md
       items:
-        - name: Recuperar el código de Last-Error
+        - name: Recuperación del Last-Error código
           href: retrieving-the-last-error-code.md
     - name: Referencia de control de errores
       href: error-handling-reference.md
@@ -84,7 +84,7 @@
         - name: Códigos de error del sistema
           href: system-error-codes.md
           items:
-            - name: Descargar y usar la herramienta de búsqueda de errores de Microsoft
+            - name: Descarga y uso de la herramienta de búsqueda de errores de Microsoft
               href: system-error-code-lookup-tool.md
             - name: Códigos de error del sistema (0-499)
               href: system-error-codes--0-499-.md
@@ -114,33 +114,33 @@
       items:
         - name: Terminología de depuración
           href: debugging-terminology.md
-        - name: 'Compatibilidad de depuración de las funciones de proceso, subproceso y excepción'
+        - name: 'Compatibilidad de depuración desde funciones de proceso, subproceso y excepción'
           href: debug-support-from-process-thread-and-exception-functions.md
           items:
-            - name: Funciones de proceso para depuración
+            - name: Funciones de proceso para la depuración
               href: process-functions-for-debugging.md
-            - name: Funciones de subproceso para depuración
+            - name: Funciones de subproceso para la depuración
               href: thread-functions-for-debugging.md
             - name: Funciones de excepción para la depuración
               href: exception-handling-functions-for-debugging.md
-    - name: Usar la depuración básica
+    - name: Uso de la depuración básica
       href: using-basic-debugging.md
       items:
         - name: Configuración de la depuración automática
           href: configuring-automatic-debugging.md
-        - name: Crear un depurador básico
+        - name: Creación de un depurador básico
           href: creating-a-basic-debugger.md
           items:
-            - name: Depurar un proceso en ejecución
+            - name: Depuración de un proceso en ejecución
               href: debugging-a-running-process.md
-            - name: Escribir el bucle principal del depurador
+            - name: Escribir el bucle main del depurador
               href: writing-the-debugger-s-main-loop.md
-            - name: Comunicarse con el depurador
+            - name: Comunicación con el depurador
               href: communicating-with-the-debugger.md
     - name: Referencia de depuración
       href: debugging-reference.md
       items:
-        - name: Depurar eventos
+        - name: Eventos de depuración
           href: debugging-events.md
         - name: Funciones de depuración
           href: debugging-functions.md
@@ -163,7 +163,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-fatalexit
             - name: FlushInstructionCache
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-flushinstructioncache
-            - name: GetThreadContext (
+            - name: GetThreadContext
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getthreadcontext
             - name: GetThreadSelectorEntry
               href: /windows/desktop/api/WinBase/nf-winbase-getthreadselectorentry
@@ -173,7 +173,7 @@
               href: /windows/desktop/api/debugapi/nf-debugapi-outputdebugstringw
             - name: ReadProcessMemory
               href: /windows/desktop/api/memoryapi/nf-memoryapi-readprocessmemory
-            - name: SetThreadContext (
+            - name: SetThreadContext
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadcontext
             - name: WaitForDebugEvent
               href: /windows/desktop/api/debugapi/nf-debugapi-waitfordebugevent
@@ -222,7 +222,7 @@
               href: /windows/win32/api/WinNT/ns-winnt-wow64_floating_save_area
             - name: WOW64_LDT_ENTRY
               href: /windows/win32/api/WinNT/ns-winnt-wow64_ldt_entry
-- name: Depurar biblioteca de ayuda
+- name: Biblioteca de ayuda de depuración
   href: debug-help-library.md
   items:
     - name: Acerca de DbgHelp
@@ -241,9 +241,9 @@
               href: symbol-paths.md
             - name: Carga de símbolos
               href: symbol-loading.md
-            - name: Carga de símbolos diferidos
+            - name: Carga diferida de símbolos
               href: deferred-symbol-loading.md
-            - name: Nombres de símbolos representativos
+            - name: Nombres de símbolos decorados
               href: decorated-symbol-names.md
             - name: Buscar símbolos
               href: finding-symbols.md
@@ -254,34 +254,34 @@
         - name: '  Servidor de símbolos y almacenes de símbolos'
           href: symbol-servers-and-symbol-stores.md
           items:
-            - name: Usar SymSrv
+            - name: Uso de SymSrv
               href: using-symsrv.md
-            - name: Usar SymStore
+            - name: Uso de SymStore
               href: using-symstore.md
             - name: Usar otros almacenes de símbolos
               href: using-other-symbol-stores.md
-            - name: Opciones de Command-Line de SymStore
+            - name: Opciones de Command-Line SymStore
               href: symstore-command-line-options.md
-            - name: Servidor de símbolos y firewalls de Internet
+            - name: Firewalls de Internet y servidor de símbolos
               href: symbol-servers-and-internet-firewalls.md
-        - name: Archivos de minivolcado
+        - name: Archivos de minivolfón
           href: minidump-files.md
         - name: Servidor de origen
           href: source-server-and-source-indexing.md
         - name: Actualización de la compatibilidad para plataformas
           href: updated-platform-support.md
-    - name: Usar DbgHelp
+    - name: Uso de DbgHelp
       href: using-dbghelp.md
       items:
-        - name: Llamar a la biblioteca DbgHelp
+        - name: Llamada a la biblioteca DbgHelp
           href: calling-the-dbghelp-library.md
-        - name: Inicializar el controlador de símbolos
+        - name: Inicialización del controlador de símbolos
           href: initializing-the-symbol-handler.md
         - name: Cargar un módulo de símbolos
           href: loading-a-symbol-module.md
         - name: Obtener notificaciones
           href: getting-notifications.md
-        - name: Enumerar módulos de símbolos
+        - name: Enumeración de módulos de símbolos
           href: enumerating-symbol-modules.md
         - name: Enumerar símbolos
           href: enumerating-symbols.md
@@ -289,16 +289,16 @@
           href: retrieving-symbol-information-by-name.md
         - name: Recuperar información de símbolos por dirección
           href: retrieving-symbol-information-by-address.md
-        - name: Recuperar nombres de símbolos no representativos
+        - name: Recuperar nombres de símbolos no decorados
           href: retrieving-undecorated-symbol-names.md
         - name: Descargar un módulo de símbolos
           href: unloading-a-symbol-module.md
-        - name: Finalización del controlador de símbolos
+        - name: Terminación del controlador de símbolos
           href: terminating-the-symbol-handler.md
     - name: Referencia de DbgHelp
       href: dbghelp-reference.md
       items:
-        - name: Enumeraciones de DbgHelp
+        - name: Enumeraciones dbgHelp
           href: dbghelp-enumerations.md
           items:
             - name: IMAGEHLP_EXTENDED_OPTIONS
@@ -319,7 +319,7 @@
               href: /windows/win32/api/minidumpapiset/ne-minidumpapiset-module_write_flags
             - name: THREAD_WRITE_FLAGS
               href: /windows/win32/api/minidumpapiset/ne-minidumpapiset-thread_write_flags
-        - name: Funciones DbgHelp
+        - name: DbgHelp (Funciones)
           href: dbghelp-functions.md
           items:
             - name: EnumDirTree
@@ -584,7 +584,7 @@
               href: /windows/desktop/api/Dbghelp/nf-dbghelp-undecoratesymbolname
             - name: UnmapDebugInformation
               href: /windows/desktop/api/Dbghelp/nf-dbghelp-unmapdebuginformation
-        - name: Estructuras DbgHelp
+        - name: DbgHelp (estructuras)
           href: dbghelp-structures.md
           items:
             - name: _IMAGE_RUNTIME_FUNCTION_ENTRY
@@ -709,7 +709,7 @@
               href: /windows/win32/api/DbgHelp/ns-dbghelp-modload_cvmisc
             - name: MODLOAD_DATA
               href: /windows/win32/api/DbgHelp/ns-dbghelp-modload_data
-            - name: OMAP
+            - name: Omap
               href: /windows/win32/api/Dbghelp/ns-dbghelp-omap
             - name: SOURCEFILE
               href: /windows/win32/api/DbgHelp/ns-dbghelp-sourcefile
@@ -735,14 +735,14 @@
                   href: pe-format.md
                 - name: Funciones de acceso a imágenes
                   href: image-access-functions.md
-                - name: Funciones de integridad de la imagen ImageHlp
+                - name: Funciones de integridad de imagen de ImageHlp
                   href: image-integrity-functions.md
-                - name: Funciones de modificación de imagen de ImageHlp
+                - name: Funciones de modificación de imágenes imagehlp
                   href: image-modification-functions.md
             - name: Referencia de ImageHlp
               href: imagehlp-reference.md
               items:
-                - name: Funciones ImageHlp
+                - name: ImageHlp (Funciones)
                   href: imagehlp-functions.md
                   items:
                     - name: BindImage
@@ -795,7 +795,7 @@
                       href: /windows/desktop/api/Imagehlp/nf-imagehlp-updatedebuginfofile
                     - name: UpdateDebugInfoFileEx
                       href: /windows/desktop/api/Imagehlp/nf-imagehlp-updatedebuginfofileex
-                - name: ImageHlp (estructuras)
+                - name: Estructuras imageHlp
                   href: imagehlp-structures.md
                   items:
                     - name: IMAGE_COFF_SYMBOLS_HEADER
@@ -825,13 +825,13 @@
         - name: Control de excepciones
           href: exception-handling.md
           items:
-            - name: Envío de excepciones
+            - name: Distribución de excepciones
               href: exception-dispatching.md
             - name: Control de excepciones del depurador
               href: debugger-exception-handling.md
             - name: Excepciones de punto flotante
               href: floating-point-exceptions.md
-        - name: Control de excepciones basado en marcos
+        - name: Control de excepciones basado en fotogramas
           href: frame-based-exception-handling.md
         - name: Control de excepciones vectoriales
           href: vectored-exception-handling.md
@@ -840,23 +840,23 @@
         - name: Sintaxis del controlador
           href: handler-syntax.md
           items:
-            - name: Sintaxis de Exception-Handler
+            - name: Exception-Handler sintaxis
               href: exception-handler-syntax.md
-            - name: Sintaxis de Termination-Handler
+            - name: Termination-Handler sintaxis
               href: termination-handler-syntax.md
-    - name: Usar el control de excepciones estructurado
+    - name: Uso del control estructurado de excepciones
       href: using-structured-exception-handling.md
       items:
         - name: Usar un controlador de excepciones
           href: using-an-exception-handler.md
         - name: Usar un controlador de terminación
           href: using-a-termination-handler.md
-        - name: Usar un controlador de excepciones vectorizadas
+        - name: Usar un controlador de excepciones vectoriales
           href: using-a-vectored-exception-handler.md
-    - name: Referencia de control de excepciones estructurado
+    - name: Referencia de control estructurado de excepciones
       href: structured-exception-handling-reference.md
       items:
-        - name: Funciones de control de excepciones estructurado
+        - name: Funciones estructuradas de control de excepciones
           href: structured-exception-handling-functions.md
           items:
             - name: AbnormalTermination
@@ -899,7 +899,7 @@
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-unhandledexceptionfilter
             - name: VectoredHandler
               href: /windows/desktop/api/WinNT/nc-winnt-pvectored_exception_handler
-        - name: Estructuras de control de excepciones estructurado
+        - name: Estructuras estructuradas de control de excepciones
           href: structured-exception-handling-structures.md
           items:
             - name: EXCEPTION_POINTERS
@@ -909,7 +909,7 @@
 - name: Recorrido de cadena de espera
   href: wait-chain-traversal.md
   items:
-    - name: Usar WCT
+    - name: Uso de WCT
       href: using-wct.md
     - name: Referencia de WCT
       href: wct-reference.md
@@ -924,14 +924,14 @@
           href: /windows/desktop/api/Wct/nf-wct-registerwaitchaincomcallback
         - name: WAITCHAIN_NODE_INFO
           href: /windows/win32/api/Wct/ns-wct-waitchain_node_info
-        - name: PWAITCHAINCALLBACK
+        - name: PWACALLBACKAINCALLBACK
           href: /windows/desktop/api/wct/nc-wct-pwaitchaincallback
 - name: Intel AVX
   href: avx-support-portal.md
   items:
-    - name: Trabajar con el contexto XState
+    - name: Trabajar con contexto XState
       href: working-with-xstate-context.md
-    - name: AVX (funciones)
+    - name: Funciones de AVX
       href: avx-functions.md
       items:
         - name: CopyContext

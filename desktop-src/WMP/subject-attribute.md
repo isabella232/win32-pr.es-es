@@ -1,9 +1,9 @@
 ---
-title: Atributo de asunto
-description: El atributo de asunto es el asunto del elemento de fotografía.
+title: Atributo Subject
+description: El atributo Subject es el asunto del elemento de foto.
 ms.assetid: 6f6c3da3-77f0-4328-aa91-5c1368e48bd2
 keywords:
-- Atributo de asunto Media Player de Windows
+- Atributo subject Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,40 +12,40 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ec4cc3d19d533473d2113d829dbd60d72a7d92f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4db646909f103d0158796bd6739da7477392cc50377f007c6a058e8d8d1cea06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118831955"
 ---
-# <a name="subject-attribute"></a>Atributo de asunto
+# <a name="subject-attribute"></a>Atributo Subject
 
-El atributo de **asunto** es el asunto del elemento de fotografía.
+El **atributo Subject** es el asunto del elemento de foto.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Elementos de fotografía](photo-item-attributes.md)
+-   [Elementos de fotos](photo-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

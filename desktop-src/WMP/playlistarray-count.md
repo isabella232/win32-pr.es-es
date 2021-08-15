@@ -1,9 +1,9 @@
 ---
-title: PlaylistArray. Count
-description: La propiedad Count recupera el número de listas de reproducción de la matriz de la lista de reproducción.
+title: PlaylistArray.count
+description: La propiedad count recupera el número de listas de reproducción de la matriz de listas de reproducción.
 ms.assetid: 6409d089-d635-4dc1-8502-7bb65de0a01f
 keywords:
-- PlaylistArray. Count Windows Media Player
+- Lista de reproducciónArray.count Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,51 +14,51 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f15594a3fc612625e38bf92b443cb5c5e7d2d17
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ddcab2e970ab45a0479f5cafc38580b8db2f7f39d3b0350734a485be2c9b3059
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335494"
 ---
-# <a name="playlistarraycount"></a>PlaylistArray. Count
+# <a name="playlistarraycount"></a>PlaylistArray.count
 
-La propiedad **Count** recupera el número de listas de reproducción de la matriz de la lista de reproducción.
+La **propiedad count** recupera el número de listas de reproducción de la matriz de listas de reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-Player. playlistCollection. getAll (). Count
+player.playlistCollection.getAll().count
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto PlaylistArray**](playlistarray-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Crea un objeto de fuente para un dispositivo y fuente.
+description: Crea un objeto de fuente para un dispositivo y una fuente.
 ms.assetid: 3e65dfdc-9608-420c-9672-c38289d13ab1
-title: Función D3DXCreateFont (D3dx9core. h)
+title: Función D3DXCreateFont (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 488a400928ecc270612a307fbede971e02b43b25
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d9bac71e89657f4df176a1ee15e2dca0cda6e4a25b8c47560adc5cf26c982383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526159"
 ---
-# <a name="d3dxcreatefont-function"></a>D3DXCreateFont función)
+# <a name="d3dxcreatefont-function"></a>Función D3DXCreateFont
 
-Crea un objeto de fuente para un dispositivo y fuente.
+Crea un objeto de fuente para un dispositivo y una fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,61 +51,61 @@ HRESULT D3DXCreateFont(
 
 <dl> <dt>
 
-*pDevice* \[ de\]
+*pDevice* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntero a una interfaz [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , el dispositivo que se va a asociar al objeto de fuente.
+Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) el dispositivo que se va a asociar al objeto de fuente.
 
 </dd> <dt>
 
-*Alto* \[ de de\]
+*Alto* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)**
+Tipo: **[ **INT**](../winprog/windows-data-types.md)**
 
 Alto de los caracteres en unidades lógicas.
 
 </dd> <dt>
 
-*Ancho* \[ de de\]
+*Ancho* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Ancho de los caracteres de las unidades lógicas.
 
 </dd> <dt>
 
-*Peso* \[ de de\]
+*Peso* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Peso del tipo de letra. Un ejemplo está en negrita.
+Grosor del tipo de letra. Un ejemplo es negrita.
 
 </dd> <dt>
 
-*MipLevels* \[ de\]
+*MipLevels* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de niveles de mipmap.
+Número de niveles de mapa mip.
 
 </dd> <dt>
 
-*Cursiva* \[ de\]
+*Cursiva* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-True para la fuente cursiva; de lo contrario, false.
+True para la fuente cursiva; en caso contrario, false.
 
 </dd> <dt>
 
-*Juego de caracteres* \[ de\]
+*CharSet* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -114,48 +114,48 @@ Juego de caracteres de la fuente.
 
 </dd> <dt>
 
-*OutputPrecision* \[ de\]
+*OutputPrecision* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Especifica el modo en que Windows debe intentar hacer coincidir los tamaños de fuente y las características deseadas con las fuentes reales. Use \_ solo TT \_ \_ PRECIS por ejemplo para asegurarse de que siempre obtiene una fuente TrueType.
+Especifica cómo Windows debe intentar hacer coincidir los tamaños de fuente y las características deseados con las fuentes reales. Use OUT TT ONLY PRECIS por ejemplo, para asegurarse de que siempre \_ \_ obtiene una fuente \_ TrueType.
 
 </dd> <dt>
 
-*Calidad* \[ de de\]
+*Calidad* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Especifica el modo en que Windows debe coincidir con la fuente deseada con una fuente real. Solo se aplica a las fuentes de trama y no debe afectar a las fuentes TrueType.
+Especifica cómo debe Windows la fuente deseada con una fuente real. Solo se aplica a las fuentes de trama y no debe afectar a las fuentes TrueType.
 
 </dd> <dt>
 
-*PitchAndFamily* \[ de\]
+*PitchAndFamily* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de paso y familia.
+Índice de inclinación y familia.
 
 </dd> <dt>
 
-*pFacename* \[ de\]
+*pFacename* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Cadena que contiene el nombre del tipo de letra. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve como LPCSTR. Vea la sección Comentarios.
+Cadena que contiene el nombre del tipo de letra. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*ppFont* \[ enuncia\]
+*ppFont* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFONT**](id3dxfont.md)\***
 
-Devuelve un puntero a una interfaz [**ID3DXFont**](id3dxfont.md) que representa el objeto de fuente creado.
+Devuelve un puntero a una [**interfaz ID3DXFont,**](id3dxfont.md) que representa el objeto de fuente creado.
 
 </dd> </dl>
 
@@ -163,15 +163,15 @@ Devuelve un puntero a una interfaz [**ID3DXFont**](id3dxfont.md) que representa 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La creación de un objeto ID3DXFont requiere que el dispositivo admita el color de 32 bits.
+La creación de un objeto ID3DXFont requiere que el dispositivo admita un color de 32 bits.
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve como D3DXCreateFontW. De lo contrario, la llamada de función se resuelve como D3DXCreateFontA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXCreateFontW. De lo contrario, la llamada de función se resuelve en D3DXCreateFontA porque se usan cadenas ANSI.
 
-Si desea obtener más información sobre los parámetros de fuente, consulte [la fuente lógica](../gdi/creating-a-logical-font.md).
+Si desea obtener más información sobre los parámetros de fuente, vea [La fuente lógica](../gdi/creating-a-logical-font.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -179,16 +179,16 @@ Si desea obtener más información sobre los parámetros de fuente, consulte [la
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de De uso general](dx9-graphics-reference-d3dx-functions-general-purpose.md)
+[De uso general Functions](dx9-graphics-reference-d3dx-functions-general-purpose.md)
 </dt> </dl>
 
  

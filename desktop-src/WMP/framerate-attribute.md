@@ -1,9 +1,9 @@
 ---
-title: Velocidad de fotogramas (SDK de Windows Media Player)
-description: La velocidad de fotogramas es un valor decimal que especifica la velocidad de fotogramas (en fotogramas por segundo) de un archivo de vídeo.
+title: Atributo FrameRate (Reproductor de Windows Media SDK)
+description: FrameRate es un valor decimal que especifica la velocidad de fotogramas (en fotogramas por segundo) de un archivo de vídeo.
 ms.assetid: 9ca54620-f877-4934-8fda-e5ae31566128
 keywords:
-- Media Player de atributo de velocidad de fotogramas
+- Atributo FrameRate Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,40 +12,40 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e00b1a0e43de379a0a125b80304150b451c3b881
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0749c8f719557c97bb165f091e54729fd8dd198fb3737ff9f49f6152bf61e84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339149"
 ---
-# <a name="framerate-attribute"></a>Velocidad de fotogramas
+# <a name="framerate-attribute"></a>Atributo FrameRate
 
-La **velocidad** de fotogramas es un valor decimal que especifica la velocidad de fotogramas (en fotogramas por segundo) de un archivo de vídeo.
+**FrameRate es** un valor decimal que especifica la velocidad de fotogramas (en fotogramas por segundo) de un archivo de vídeo.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

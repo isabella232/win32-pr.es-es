@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: f4a63c7f4a479bfbe9dcb49f485ce0acb8db6486
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6d7915178001e2449d385484dc23d206a126734cbd1a5074facca8b97c760a06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525642"
 ---
 # <a name="d3dxintersectinfo-structure"></a>D3DXINTERSECTINFO (estructura)
 

@@ -1,10 +1,10 @@
-- name: Referencia de Windows Runtime C++
+- name: Windows Referencia de C++ en tiempo de ejecución
   href: reference.md
   items:
     - name: Tipos de datos
       href: data-types.md
       items:
-        - name: Tipos de datos base Windows Runtime
+        - name: Windows Tipos de datos base en tiempo de ejecución
           href: base-data-types.md
         - name: HSTRING
           href: hstring.md
@@ -84,9 +84,9 @@
           href: createxamluipresenter.md
         - name: DbgRaiseAssertionFailure
           href: /previous-versions//jj635749(v=vs.85)
-        - name: 'GetDXGIInterface (IDirect3DDevice ^, DXGI_TYPE * *)'
+        - name: 'GetDXGIInterface(IDirect3DDevice^, DXGI_TYPE**)'
           href: /windows/win32/api/windows.graphics.directx.direct3d11.interop/nf-windows-graphics-directx-direct3d11-interop-getdxgiinterface
-        - name: 'GetDXGIInterface (IDirect3DSurface ^, DXGI_TYPE * *)'
+        - name: 'GetDXGIInterface(IDirect3DSurface^, DXGI_TYPE**)'
           href: /windows/win32/api/windows.graphics.directx.direct3d11.interop/nf-windows-graphics-directx-direct3d11-interop-getdxgiinterface~r1
         - name: GetDXGIInterfaceFromObject
           href: /windows/win32/api/windows.graphics.directx.direct3d11.interop/nf-windows-graphics-directx-direct3d11-interop-getdxgiinterfacefromobject
@@ -134,11 +134,11 @@
           href: /windows/win32/api/roregistrationapi/nf-roregistrationapi-rogetactivatableclassregistration
         - name: RoGetActivationFactory
           href: /windows/win32/api/roapi/nf-roapi-rogetactivationfactory
-        - name: RoGetAgileReference
+        - name: RoGetEtoleReference
           href: /windows/win32/api/ComBaseApi/nf-combaseapi-rogetagilereference
-        - name: RoGetApartmentIdentifier
+        - name: RoGetGetGetIdentifier
           href: /windows/win32/api/roapi/nf-roapi-rogetapartmentidentifier
-        - name: RoGetBufferMarshaler
+        - name: RoGetBufferMarsbuffer
           href: /windows/win32/api/robuffer/nf-robuffer-rogetbuffermarshaler
         - name: RoGetErrorReportingFlags
           href: /windows/win32/api/roerrorapi/nf-roerrorapi-rogeterrorreportingflags
@@ -166,7 +166,7 @@
           href: /windows/win32/api/rometadataresolution/nf-rometadataresolution-roparsetypename
         - name: RoRegisterActivationFactories
           href: /windows/win32/api/roapi/nf-roapi-roregisteractivationfactories
-        - name: RoRegisterForApartmentShutdown
+        - name: RoRegisterForHutShutdown
           href: /windows/win32/api/roapi/nf-roapi-roregisterforapartmentshutdown
         - name: RoReportUnhandledError
           href: /windows/win32/api/roerrorapi/nf-roerrorapi-roreportunhandlederror
@@ -186,7 +186,7 @@
           href: /windows/win32/api/roerrorapi/nf-roerrorapi-rotransformerrorw
         - name: RoUninitialize
           href: /windows/win32/api/roapi/nf-roapi-rouninitialize
-        - name: RoUnregisterForApartmentShutdown
+        - name: RoUnregisterForHutShutdown
           href: /windows/win32/api/roapi/nf-roapi-rounregisterforapartmentshutdown
         - name: SetRestrictedErrorInfo
           href: /windows/win32/api/roerrorapi/nf-roerrorapi-setrestrictederrorinfo
@@ -236,11 +236,11 @@
         - name: IActivatableClassRegistration
           href: /windows/win32/api/activationregistration/nn-activationregistration-iactivatableclassregistration
           items:
-            - name: ActivatableClassId (método)
+            - name: Método ActivatableClassId
               href: /windows/win32/api/activationregistration/nf-activationregistration-iactivatableclassregistration-get_activatableclassid
             - name: Método ActivationType
               href: /windows/win32/api/activationregistration/nf-activationregistration-iactivatableclassregistration-get_activationtype
-            - name: Attributes (método)
+            - name: Método Attributes
               href: /windows/win32/api/activationregistration/nf-activationregistration-iactivatableclassregistration-get_attributes
             - name: Método RegisteredTrustLevel
               href: /windows/win32/api/activationregistration/nf-activationregistration-iactivatableclassregistration-get_registeredtrustlevel
@@ -256,7 +256,7 @@
           items:
             - name: Resolve (método)
               href: iagilereference-resolve.md
-        - name: IApartmentShutdown
+        - name: IHutShutdown
           href: /windows/win32/api/objidl/nn-objidl-iapartmentshutdown
           items:
             - name: Método OnUninitialize
@@ -269,11 +269,11 @@
         - name: IAsyncAction
           href: /windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction
           items:
-            - name: método get_Completed
+            - name: get_Completed método
               href: iasyncaction-get-completed.md
-            - name: método put_Completed
+            - name: put_Completed método
               href: iasyncaction-put-completed.md
-            - name: GetResults (método)
+            - name: Método GetResults
               href: iasyncaction-getresults.md
         - name: IAsyncActionProgressHandler<TProgress>
           href: /previous-versions//br205782(v=vs.85)
@@ -283,15 +283,15 @@
         - name: IAsyncActionWithProgress<TProgress>
           href: /previous-versions//br205784(v=vs.85)
           items:
-            - name: método get_Completed
+            - name: get_Completed método
               href: /previous-versions//br205788(v=vs.85)
-            - name: método put_Completed
+            - name: put_Completed método
               href: /previous-versions//br205790(v=vs.85)
-            - name: método get_Progress
+            - name: get_Progress método
               href: /previous-versions//br205789(v=vs.85)
-            - name: método put_Progress
+            - name: put_Progress método
               href: /previous-versions//br205791(v=vs.85)
-            - name: GetResults (método)
+            - name: Método GetResults
               href: /previous-versions//br205787(v=vs.85)
         - name: IAsyncActionWithProgressCompletedHandler<TProgress>
           href: /previous-versions//br205785(v=vs.85)
@@ -305,20 +305,20 @@
               href: /windows/win32/api/asyncinfo/nf-asyncinfo-iasyncinfo-cancel
             - name: Método Close
               href: /windows/win32/api/asyncinfo/nf-asyncinfo-iasyncinfo-close
-            - name: ErrorCode (propiedad)
+            - name: Propiedad ErrorCode
               href: /windows/win32/api/asyncinfo/nf-asyncinfo-iasyncinfo-get_errorcode
-            - name: ID (propiedad)
+            - name: Propiedad Id
               href: /windows/win32/api/asyncinfo/nf-asyncinfo-iasyncinfo-get_id
             - name: Propiedad Status
               href: /windows/win32/api/asyncinfo/nf-asyncinfo-iasyncinfo-get_status
         - name: IAsyncOperation<TResult>
           href: /previous-versions//br205802(v=vs.85)
           items:
-            - name: método get_Completed
+            - name: get_Completed método
               href: /previous-versions//br205816(v=vs.85)
-            - name: método put_Completed
+            - name: put_Completed método
               href: /previous-versions//br205817(v=vs.85)
-            - name: GetResults (método)
+            - name: Método GetResults
               href: /previous-versions//br205815(v=vs.85)
         - name: IAsyncOperationCompletedHandler<TResult>
           href: /previous-versions//br205803(v=vs.85)
@@ -333,15 +333,15 @@
         - name: IAsyncOperationWithProgress
           href: /previous-versions//br205807(v=vs.85)
           items:
-            - name: método get_Completed
+            - name: get_Completed método
               href: /previous-versions//br205811(v=vs.85)
-            - name: método put_Completed
+            - name: put_Completed método
               href: /previous-versions//br205813(v=vs.85)
-            - name: método get_Progress
+            - name: get_Progress método
               href: /previous-versions//br205812(v=vs.85)
-            - name: método put_Progress
+            - name: put_Progress método
               href: /previous-versions//br205814(v=vs.85)
-            - name: GetResults (método)
+            - name: Método GetResults
               href: /previous-versions//br205810(v=vs.85)
         - name: 'IAsyncOperationWithProgressCompletedHandler<TResult, TProgress>'
           href: /previous-versions//br205808(v=vs.85)
@@ -361,14 +361,14 @@
         - name: IBuffer
           href: /previous-versions//hh438362(v=vs.85)
           items:
-            - name: Propiedad capacity
+            - name: Propiedad Capacity
               href: /previous-versions//hh438363(v=vs.85)
             - name: Propiedad Length
               href: /previous-versions//hh438364(v=vs.85)
         - name: IBufferByteAccess
           href: /previous-versions//hh846267(v=vs.85)
           items:
-            - name: Buffer (método)
+            - name: Método buffer
               href: /previous-versions//hh846268(v=vs.85)
         - name: IClosable
           href: /windows/win32/api/windows.foundation/nn-windows-foundation-iclosable
@@ -388,28 +388,28 @@
         - name: ICoreApplication
           href: /previous-versions//hh438365(v=vs.85)
           items:
-            - name: método add_Resuming
+            - name: add_Resuming método
               href: /previous-versions//hh438375(v=vs.85)
-            - name: método remove_Resuming
+            - name: remove_Resuming método
               href: /previous-versions//hh438380(v=vs.85)
-            - name: método add_Suspending
+            - name: add_Suspending método
               href: /previous-versions//hh438376(v=vs.85)
-            - name: método remove_Suspending
+            - name: remove_Suspending método
               href: /previous-versions//hh438381(v=vs.85)
-            - name: método get_ID
+            - name: get_ID método
               href: /previous-versions//hh438378(v=vs.85)
-            - name: método get_Properties
+            - name: get_Properties método
               href: /previous-versions//hh438379(v=vs.85)
             - name: Método GetCurrentView
               href: /previous-versions//hh438377(v=vs.85)
         - name: ICoreApplicationExit
           href: /previous-versions//hh438366(v=vs.85)
           items:
-            - name: método add_Exiting
+            - name: add_Exiting método
               href: /previous-versions//hh438367(v=vs.85)
-            - name: método remove_Exiting
+            - name: remove_Exiting método
               href: /previous-versions//hh438369(v=vs.85)
-            - name: Exit (método)
+            - name: Método Exit
               href: /previous-versions//hh438368(v=vs.85)
         - name: ICoreApplicationInitialization
           href: /previous-versions//hh438370(v=vs.85)
@@ -421,12 +421,12 @@
           items:
             - name: Evento activado
               href: icoreapplicationview-activated.md
-            - name: CoreWindow (propiedad)
+            - name: 'CoreWindow, propiedad'
               href: /previous-versions//hh438374(v=vs.85)
         - name: ICoreImmersiveApplication
           href: /previous-versions//hh438382(v=vs.85)
           items:
-            - name: método get_Views
+            - name: get_Views método
               href: /previous-versions//hh438384(v=vs.85)
             - name: Método CreateNewView
               href: /previous-versions//hh438383(v=vs.85)
@@ -440,7 +440,7 @@
         - name: ICoreWindowInterop
           href: /windows/win32/api/corewindow/nn-corewindow-icorewindowinterop
           items:
-            - name: WindowHandle (propiedad)
+            - name: Propiedad WindowHandle
               href: /windows/win32/api/corewindow/nf-corewindow-icorewindowinterop-get_windowhandle
             - name: Propiedad MessageHandled
               href: /windows/win32/api/corewindow/nf-corewindow-icorewindowinterop-put_messagehandled
@@ -452,7 +452,7 @@
         - name: IDllServerActivatableClassRegistration
           href: /windows/win32/api/activationregistration/nn-activationregistration-idllserveractivatableclassregistration
           items:
-            - name: DllPath (método)
+            - name: Método DllPath
               href: /windows/win32/api/activationregistration/nf-activationregistration-idllserveractivatableclassregistration-get_dllpath
             - name: Método ThreadingType
               href: /windows/win32/api/activationregistration/nf-activationregistration-idllserveractivatableclassregistration-get_threadingtype
@@ -476,26 +476,26 @@
         - name: IExeServerRegistration
           href: /windows/win32/api/activationregistration/nn-activationregistration-iexeserverregistration
           items:
-            - name: ServerName (método)
+            - name: Método ServerName
               href: /windows/win32/api/activationregistration/nf-activationregistration-iexeserverregistration-get_servername
-            - name: ExePath (método)
+            - name: Método ExePath
               href: /windows/win32/api/activationregistration/nf-activationregistration-iexeserverregistration-get_exepath
-            - name: CommandLine (método)
+            - name: Método CommandLine
               href: /windows/win32/api/activationregistration/nf-activationregistration-iexeserverregistration-get_commandline
-            - name: AppUserModelId (método)
+            - name: Método AppUserModelId
               href: /windows/win32/api/activationregistration/nf-activationregistration-iexeserverregistration-get_appusermodelid
-            - name: IdentityType (método)
+            - name: Método IdentityType
               href: /windows/win32/api/activationregistration/nf-activationregistration-iexeserverregistration-get_identitytype
-            - name: Identity (método)
+            - name: Método de identidad
               href: /windows/win32/api/activationregistration/nf-activationregistration-iexeserverregistration-get_identity
-            - name: Instancing (método)
+            - name: Método de creación de instancias
               href: /windows/win32/api/activationregistration/nf-activationregistration-iexeserverregistration-get_instancing
             - name: Método Permissions
               href: /windows/win32/api/activationregistration/nf-activationregistration-iexeserverregistration-get_permissions
         - name: IFindReferenceTargetsCallback
           href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nn-windows-ui-xaml-hosting-referencetracker-ifindreferencetargetscallback
           items:
-            - name: Método FoundTrackerTarget
+            - name: FoundTrackerTarget (método)
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ifindreferencetargetscallback-foundtrackertarget
         - name: IInputPaneInterop
           href: /windows/win32/api/inputpaneinterop/nn-inputpaneinterop-iinputpaneinterop
@@ -505,7 +505,7 @@
         - name: IInputStream
           href: /previous-versions//hh438387(v=vs.85)
           items:
-            - name: ReadAsync (método)
+            - name: Método ReadAsync
               href: /previous-versions//hh438388(v=vs.85)
         - name: IInspectable
           href: /windows/win32/api/inspectable/nn-inspectable-iinspectable
@@ -524,18 +524,18 @@
         - name: IIterator<T>
           href: /previous-versions//br205827(v=vs.85)
           items:
-            - name: método get_Current
+            - name: get_Current método
               href: /previous-versions//br205828(v=vs.85)
-            - name: método get_HasCurrent
+            - name: get_HasCurrent método
               href: /previous-versions//br205829(v=vs.85)
             - name: MoveNext (método)
               href: /previous-versions//br205830(v=vs.85)
         - name: 'IKeyValuePair<K, V>'
           href: /previous-versions//br205831(v=vs.85)
           items:
-            - name: método get_Key
+            - name: get_Key método
               href: /previous-versions//br205832(v=vs.85)
-            - name: método get_Value
+            - name: get_Value método
               href: /previous-versions//br205833(v=vs.85)
         - name: ILanguageExceptionErrorInfo
           href: /windows/win32/api/restrictederrorinfo/nn-restrictederrorinfo-ilanguageexceptionerrorinfo
@@ -566,33 +566,33 @@
           items:
             - name: Clear (método)
               href: /previous-versions//br205843(v=vs.85)
-            - name: método get_Size
+            - name: get_Size método
               href: /previous-versions//br205845(v=vs.85)
-            - name: Método GetView (
+            - name: Método GetView
               href: /previous-versions//br205844(v=vs.85)
-            - name: Método Haskey (
+            - name: Método HasKey
               href: /previous-versions//br205846(v=vs.85)
             - name: Insert (método)
               href: /previous-versions//br205847(v=vs.85)
-            - name: Lookup (método)
+            - name: Método de búsqueda
               href: /previous-versions//br205848(v=vs.85)
             - name: Remove (método)
               href: /previous-versions//br205849(v=vs.85)
         - name: IMapChangedEventArgs<K>
           href: /previous-versions//br205835(v=vs.85)
           items:
-            - name: método get_CollectionChange
+            - name: get_CollectionChange método
               href: /previous-versions//br205836(v=vs.85)
-            - name: método get_Key
+            - name: get_Key método
               href: /previous-versions//br205837(v=vs.85)
         - name: 'IMapView<K, V>'
           href: /previous-versions//br205838(v=vs.85)
           items:
-            - name: método get_Size
+            - name: get_Size método
               href: /previous-versions//br205839(v=vs.85)
-            - name: Método Haskey (
+            - name: Método HasKey
               href: /previous-versions//br205840(v=vs.85)
-            - name: Lookup (método)
+            - name: Método de búsqueda
               href: /previous-versions//br205841(v=vs.85)
             - name: Split (método)
               href: /previous-versions//br205842(v=vs.85)
@@ -747,7 +747,7 @@
               href: /windows/win32/api/rometadataapi/nf-rometadataapi-imetadataimport-getparamprops
             - name: Método GetPermissionSetProps
               href: /windows/win32/api/rometadataapi/nf-rometadataapi-imetadataimport-getpermissionsetprops
-            - name: Método Getpinvokemap (
+            - name: GetPinvokeMap (método)
               href: /windows/win32/api/rometadataapi/nf-rometadataapi-imetadataimport-getpinvokemap
             - name: Método GetRVA
               href: /windows/win32/api/rometadataapi/nf-rometadataapi-imetadataimport-getrva
@@ -841,16 +841,16 @@
         - name: 'IObservableMap<K, V>'
           href: /previous-versions//br205851(v=vs.85)
           items:
-            - name: método add_MapChanged
+            - name: add_MapChanged método
               href: /previous-versions//br205852(v=vs.85)
-            - name: método remove_MapChanged
+            - name: remove_MapChanged método
               href: /previous-versions//br205853(v=vs.85)
         - name: IObservableVector<T>
           href: /previous-versions//br205854(v=vs.85)
           items:
-            - name: método add_VectorChanged
+            - name: add_VectorChanged método
               href: /previous-versions//br205855(v=vs.85)
-            - name: método remove_VectorChanged
+            - name: remove_VectorChanged método
               href: /previous-versions//br205856(v=vs.85)
         - name: IOplockBreakingHandler
           href: /windows/win32/api/windowsstoragecom/nn-windowsstoragecom-ioplockbreakinghandler
@@ -860,9 +860,9 @@
         - name: IOutputStream
           href: /previous-versions//hh438390(v=vs.85)
           items:
-            - name: WriteAsync (método)
+            - name: Método WriteAsync
               href: /previous-versions//hh438392(v=vs.85)
-            - name: FlushAsync (método)
+            - name: Método FlushAsync
               href: /previous-versions//hh438391(v=vs.85)
         - name: IPdfRendererNative
           href: /windows/win32/api/windows.data.pdf.interop/nn-windows-data-pdf-interop-ipdfrenderernative
@@ -921,7 +921,7 @@
         - name: IPropertyValue
           href: /windows/win32/api/windows.foundation/nn-windows-foundation-ipropertyvalue
           items:
-            - name: GetBoolean (método)
+            - name: Método GetBoolean
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getboolean
             - name: Método GetBooleanArray
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getbooleanarray
@@ -929,21 +929,21 @@
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getchar16
             - name: Método GetChar16Array
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getchar16array
-            - name: GetDateTime (método)
+            - name: Método GetDateTime
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getdatetime
             - name: Método GetDateTimeArray
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getdatetimearray
-            - name: GetDouble (método)
+            - name: Método GetDouble
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getdouble
             - name: Método GetDoubleArray
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getdoublearray
-            - name: GetGuid (método)
+            - name: Método GetGuid
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getguid
             - name: Método GetGuidArray
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getguidarray
             - name: Método GetInspectableArray
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getinspectablearray
-            - name: GetInt32 (método)
+            - name: Método GetInt32
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getint32
             - name: Método GetInt32Array
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvalue-getint32array
@@ -1038,7 +1038,7 @@
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvaluestatics-createsingle
             - name: Método CreateSingleArray
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvaluestatics-createsinglearray
-            - name: Método Create
+            - name: Método CreateSize
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvaluestatics-createsize
             - name: Método CreateSizeArray
               href: /windows/win32/api/windows.foundation/nf-windows-foundation-ipropertyvaluestatics-createsizearray
@@ -1079,19 +1079,19 @@
         - name: IReference<T>
           href: /previous-versions//br224583(v=vs.85)
           items:
-            - name: método get_Value
+            - name: get_Value método
               href: /previous-versions//br224586(v=vs.85)
         - name: IReferenceArray<T>
           href: /previous-versions//br224584(v=vs.85)
           items:
-            - name: método get_Value
+            - name: get_Value método
               href: /previous-versions//br224585(v=vs.85)
         - name: IReferenceTracker
           href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nn-windows-ui-xaml-hosting-referencetracker-ireferencetracker
           items:
             - name: Método ConnectFromTrackerSource
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetracker-connectfromtrackersource
-            - name: Método DisconnectFromTrackerSource
+            - name: DisconnectFromTrackerSource (método)
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetracker-disconnectfromtrackersource
             - name: Método FindTrackerTargets
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetracker-findtrackertargets
@@ -1112,18 +1112,18 @@
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackerhost-releasedisconnectedreferencesources
             - name: Método NotifyEndOfReferenceTrackingOnThread
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackerhost-notifyendofreferencetrackingonthread
-            - name: Método GetTrackerTarget
+            - name: GetTrackerTarget (método)
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackerhost-gettrackertarget
             - name: Método AddMemoryPressure
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackerhost-addmemorypressure
-            - name: Método RemoveMemoryPressure
+            - name: RemoveMemoryPressure (método)
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackerhost-removememorypressure
         - name: IReferenceTrackerManager
           href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nn-windows-ui-xaml-hosting-referencetracker-ireferencetrackermanager
           items:
             - name: Método ReferenceTrackingStarted
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackermanager-referencetrackingstarted
-            - name: Método FindTrackerTargetsCompleted
+            - name: FindTrackerTargetsCompleted (método)
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackermanager-findtrackertargetscompleted
             - name: Método ReferenceTrackingCompleted
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackermanager-referencetrackingcompleted
@@ -1136,7 +1136,7 @@
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackertarget-addreffromreferencetracker
             - name: Método ReleaseFromReferenceTracker
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackertarget-releasefromreferencetracker
-            - name: PEG (método)
+            - name: Método Peg
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackertarget-peg
             - name: Método Unpeg
               href: /windows/win32/api/windows.ui.xaml.hosting.referencetracker/nf-windows-ui-xaml-hosting-referencetracker-ireferencetrackertarget-unpeg
@@ -1182,7 +1182,7 @@
         - name: ISurfaceImageSourceNativeWithD2D
           href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nn-windows-ui-xaml-media-dxinterop-isurfaceimagesourcenativewithd2d
           items:
-            - name: BeginDraw (método)
+            - name: Método BeginDraw
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-isurfaceimagesourcenativewithd2d-begindraw
             - name: Método EndDraw
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-isurfaceimagesourcenativewithd2d-enddraw
@@ -1197,24 +1197,24 @@
           items:
             - name: Método SetDevice
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-isurfaceimagesourcenative-setdevice
-            - name: BeginDraw (método)
+            - name: Método BeginDraw
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-isurfaceimagesourcenative-begindraw
             - name: Método EndDraw
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-isurfaceimagesourcenative-enddraw
         - name: ISuspendingDeferral
           href: isuspendingdeferral.md
           items:
-            - name: Complete (método)
+            - name: Método Complete
               href: isuspendingdeferral-complete.md
         - name: ISuspendingEventArgs
           href: isuspendingeventargs.md
           items:
-            - name: Propiedad SuspendingOperation
+            - name: 'SuspendingOperation, propiedad'
               href: isuspendingeventargs-suspendingoperation.md
         - name: ISuspendingOperation
           href: isuspendingoperation.md
           items:
-            - name: Propiedad fecha límite
+            - name: Propiedad Deadline
               href: isuspendingoperation-deadline.md
             - name: Método GetDeferral
               href: isuspendingoperation-getdeferral.md
@@ -1257,35 +1257,35 @@
               href: /previous-versions//br224598(v=vs.85)
             - name: Clear (método)
               href: /previous-versions//br224599(v=vs.85)
-            - name: método get_Size
+            - name: get_Size método
               href: /previous-versions//br224602(v=vs.85)
-            - name: GetAt (método)
+            - name: Método GetAt
               href: /previous-versions//br224600(v=vs.85)
-            - name: Método GetView (
+            - name: Método GetView
               href: /previous-versions//br224601(v=vs.85)
             - name: IndexOf (método)
               href: /previous-versions//br224603(v=vs.85)
-            - name: Método Insertat (
+            - name: Método InsertAt
               href: /previous-versions//br224604(v=vs.85)
             - name: método RemoveAt
               href: /previous-versions//br224605(v=vs.85)
-            - name: Método Removeatend (
+            - name: Método RemoveAtEnd
               href: /previous-versions//br224606(v=vs.85)
             - name: Método SetAt
               href: /previous-versions//br224607(v=vs.85)
         - name: IVectorChangedEventArgs
           href: ivectorchangedeventargs.md
           items:
-            - name: método get_CollectionChange
+            - name: get_CollectionChange método
               href: ivectorchangedeventargs-get-collectionchange.md
-            - name: método get_Index
+            - name: get_Index método
               href: ivectorchangedeventargs-get-index.md
         - name: 'IVectorView<T> '
           href: /previous-versions//br224594(v=vs.85)
           items:
-            - name: método get_Size
+            - name: get_Size método
               href: /previous-versions//br224596(v=vs.85)
-            - name: GetAt (método)
+            - name: Método GetAt
               href: /previous-versions//br224595(v=vs.85)
             - name: IndexOf (método)
               href: /previous-versions//br224597(v=vs.85)
@@ -1308,7 +1308,7 @@
         - name: IVirtualSurfaceImageSourceNative
           href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nn-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative
           items:
-            - name: Invalidate (método)
+            - name: Invalidación del método
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-invalidate
             - name: Método GetUpdateRectCount
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-getupdaterectcount
@@ -1318,7 +1318,7 @@
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-getvisiblebounds
             - name: Método RegisterForUpdatesNeeded
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-registerforupdatesneeded
-            - name: Resize (método)
+            - name: Cambio de tamaño del método
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-resize
         - name: IVirtualSurfaceUpdatesCallbackNative
           href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nn-windows-ui-xaml-media-dxinterop-ivirtualsurfaceupdatescallbacknative
@@ -1382,7 +1382,7 @@
         - name: IRoMetaDataLocator
           href: /windows/win32/api/roparameterizediid/ns-roparameterizediid-irometadatalocator
           items:
-            - name: Locate (método)
+            - name: Método Locate
               href: /previous-versions//hh438405(v=vs.85)
         - name: Punto
           href: /windows/win32/api/windows.foundation/ns-windows-foundation-point
@@ -1392,7 +1392,7 @@
           href: /windows/win32/api/windows.foundation/ns-windows-foundation-rect
         - name: ServerInformation
           href: /windows/win32/api/combaseapi/ns-combaseapi-serverinformation
-        - name: Tamaño
+        - name: Size
           href: /windows/win32/api/windows.foundation/ns-windows-foundation-size
         - name: TextRange
           href: /previous-versions//dn302173(v=vs.85)

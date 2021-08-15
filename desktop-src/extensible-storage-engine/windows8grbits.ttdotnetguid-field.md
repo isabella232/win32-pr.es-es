@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows8Grbits. TTDotNetGuid, campo'
-title: Campo Windows8Grbits. TTDotNetGuid (Microsoft. ISAM. esent. Interop. Windows8)
+description: Más información sobre el campo Windows8Grbits.TTDotNetGuid
+title: Campo Windows8Grbits.TTDotNetGuid (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: TTDotNetGuid field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Grbits.TTDotNetGuid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8grbits.ttdotnetguid(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0e2d7b67e438b3e72f7df7db5bb381cec548c0fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2236ccb0f2901cf0bb124d3d5b421e8cf53d6c5fb471ead36df9b43c3179ea36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889232"
 ---
-# <a name="windows8grbitsttdotnetguid-field"></a>Windows8Grbits. TTDotNetGuid, campo
+# <a name="windows8grbitsttdotnetguid-field"></a>Campo Windows8Grbits.TTDotNetGuid
 
-Esta opción solicita que la tabla temporal ordene las columnas de tipo JET_coltypGUID según .NET Framework criterio de ordenación GUID.
+Esta opción solicita que la tabla temporal ordene columnas de tipo JET_coltypGUID según .NET Framework criterio de ordenación GUID.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,4 +61,4 @@ public const TempTableGrbit TTDotNetGuid
 
 [Miembros de Windows8Grbits](./windows8grbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

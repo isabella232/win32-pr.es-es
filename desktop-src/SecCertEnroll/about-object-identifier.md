@@ -1,29 +1,29 @@
 ---
-description: El tipo de datos del identificador de objeto se codifica en un tripledo TLV que comienza con un valor de etiqueta de 0x06.
+description: El tipo de datos OBJECT IDENTIFIER se codifica en un triplete TLV que comienza con un valor tag de 0x06.
 ms.assetid: 42c015c8-3de1-4482-bf27-b19c422b8cdb
 title: IDENTIFICADOR DE OBJETO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6cc81169968bfb3be5a49b0f30b8171cd904bf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b35c2bf64424fa158eef3c666743142d5ec5a65108e3def28c43194d2eaf5adc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903798"
 ---
 # <a name="object-identifier"></a>IDENTIFICADOR DE OBJETO
 
-El tipo de datos del **identificador de objeto** se codifica en un tripledo TLV que comienza con un valor de **etiqueta** de 0x06. Cada entero de un identificador de objeto decimal con puntos (OID) se codifica según las siguientes reglas:
+El **tipo de datos OBJECT IDENTIFIER** se codifica en un triplete TLV que comienza con un valor **tag** de 0x06. Cada entero de un identificador de objeto decimal punteado (OID) se codifica según las reglas siguientes:
 
 -   Los dos primeros nodos del OID se codifican en un solo byte. El primer nodo se multiplica por el decimal 40 y el resultado se agrega al valor del segundo nodo.
--   Los valores de nodo menores o iguales a 127 se codifican en un byte.
+-   Los valores de nodo menores o iguales que 127 se codifican en un byte.
 -   Los valores de nodo mayores o iguales que 128 se codifican en varios bytes. El bit 7 del byte situado más a la izquierda se establece en uno. Los bits del 0 al 6 de cada byte contienen el valor codificado.
 
-Estos puntos se muestran en la siguiente ilustración.
+Estos puntos se muestran en la ilustración siguiente.
 
-![codificación der del tipo de datos del identificador de objeto](images/der-tlv-oid.png)
+![Codificación der del tipo de datos de identificador de objeto](images/der-tlv-oid.png)
 
-En el ejemplo siguiente se muestra cómo el atributo **ClientID** se codifica en una solicitud de certificado.
+En el ejemplo siguiente se muestra cómo se codifica el atributo **ClientId** en una solicitud de certificado.
 
 ``` syntax
 06 09                                ; OBJECT_ID (9 Bytes)

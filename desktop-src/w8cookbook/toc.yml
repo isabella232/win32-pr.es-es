@@ -8,28 +8,28 @@
       items:
         - name: Cambios clave desde Windows 7 para garantizar la compatibilidad
           href: key-changes-since-windows-7-to-ensure-compatibility.md
-        - name: Cómo podemos asegurar la compatibilidad del ecosistema combinado
+        - name: Cómo podemos garantizar la compatibilidad del ecosistema combinado
           href: how-we-can-ensure-compatibility-of-the-combined-ecosystem.md
           items:
             - name: Comprobación de la versión de Windows
               href: windows-version-check.md
             - name: API sin documentar
               href: undocumented-apis.md
-            - name: Desarrollo de aplicaciones Plataforma universal de Windows (UWP)
+            - name: Desarrollo de aplicaciones Windows plataforma universal (UWP)
               href: develop-universal-windows-platform-apps.md
-            - name: La funcionalidad de la aplicación de escritorio se ve afectada si no se ejecuta en modo de ventana
+            - name: La funcionalidad de la aplicación de escritorio se afecta si no se ejecuta en modo de ventana
               href: modern-desktop-app-functionality-is-impacted-if-not-run-in-windowed-mode.md
             - name: Disponibilidad de los controladores de gráficos aplicables en Windows Update
               href: availability-of-applicable-graphics-drivers-on-windows-update.md
             - name: Migración del controlador de gráficos a Windows 10
               href: graphics-driver-migration-to-windows-10.md
-            - name: Controladores Bluetooth
+            - name: Bluetooth controladores
               href: bluetooth-drivers.md
-            - name: Las llamadas remotas al protocolo RPC de SAM están restringidas solo a los administradores locales
+            - name: Las llamadas remotas al protocolo RPC SAM están restringidas solo a los administradores locales
               href: remote-calls-to-the-sam-rpc-protocol-are-restricted-to-only-local-administrators.md
-            - name: Comprobaciones de kernel para controladores no firmados por WHQL
+            - name: Comprobaciones de kernel para controladores no firmados con WHQL
               href: kernel-checks-for-non-whql-signed-drivers.md
-            - name: Proveedores de compatibilidad con seguridad de terceros con Credential Guard
+            - name: Proveedores de soporte técnico de seguridad de terceros con Credential Guard
               href: third-party-security-support-providers-with-credential-guard.md
     - name: Windows 8.1
       href: windows-8-1.md
@@ -41,45 +41,45 @@
           items:
             - name: Cambios de versión del sistema operativo en Windows 8.1
               href: operating-system-version-changes-in-windows-8-1.md
-            - name: Componentes de Windows instalados a petición
+            - name: Windows componentes instalados a petición
               href: windows-components-installed-on-demand.md
-            - name: Comportamiento de reserva de fuente HTML
+            - name: Comportamiento de reserva de fuentes HTML
               href: html-font-fallback-behavior.md
-            - name: 'Windows 8.1 solo permite URI https, no URI http'
+            - name: 'Windows 8.1 solo permite los URI https, no los URI http'
               href: windows-8-1-allows-only-https-uris--not-http-uris.md
-            - name: Entrada MouseWheel para Windows 8.1
+            - name: Entrada de la rueda del mouse para Windows 8.1
               href: mousewheel-input-for-windows-8-1.md
-            - name: Dispositivos Touchpad de Windows Precision
+            - name: Windows táctiles de precisión
               href: windows-precision-touchpad-devices.md
-            - name: Alta resolución de PPP para aplicaciones de escritorio en Windows 8.1
+            - name: Valores altos de PPP para aplicaciones de escritorio en Windows 8.1
               href: high-dpi-for-desktop-apps-in-windows-8-1.md
-            - name: La interfaz de usuario perimetral se suprime en escenarios "in-in-in" e "inercia"
+            - name: La interfaz de usuario de Edge se suprime en escenarios de "entrada de entrada" e "inercia".
               href: edge-ui-is-suppressed-in--in-out-in--and--inertia--scenarios.md
-            - name: No se admite la llamada a ImmSetConversionStatus () o ImmGetConversionStatus () desde aplicaciones de la tienda Windows
+            - name: No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde Windows store
               href: calling-immsetconversionstatus---or-immgetconversionstatus---from-windows-store-apps-is-not-supported.md
             - name: Modelo de modo IME cambiado de por usuario a por subproceso
               href: ime-mode-model-changed-from-per-user-to-per-thread.md
-            - name: El IME de chino simplificado no admite las API del administrador de métodos de entrada
+            - name: Las API del administrador de métodos de entrada no son compatibles con IME chino simplificado
               href: input-method-manager-apis-are-not-supported-by-simplified-chinese-ime.md
-            - name: Algunos paneles de entrada del software IME de Asia Oriental ahora envían vKey
+            - name: Algunos paneles de entrada de software de IME de Asia Oriental ahora envían vKey
               href: some-east-asian-ime-software-input-panels-now-send-vkey.md
         - name: Nuevas características y mejoras
           href: new-features-and-enhancement-in-windows-8-1-and-windows-server-2012-r2.md
           items:
-            - name: Arranque de archivos de imagen de Windows (WimBoot)
+            - name: Windows Arranque de archivo de imagen (WimBoot)
               href: windows-image-file-boot--wimboot-.md
             - name: Proxy de aplicación web
               href: web-application-proxy.md
             - name: Seguimiento de los intervalos modificados de un archivo
               href: tracking-modified-ranges-of-a-file.md
-            - name: Archivos de marcadores de posición
+            - name: Archivos de marcador de posición
               href: placeholder-files.md
         - name: 'Herramientas, procedimientos recomendados e instrucciones'
           href: tools--best-practices--and-guidance-for-windows-8-1-preview-and-windows-server-2012-r2.md
           items:
             - name: "Herramienta de prueba de Microsoft\_Platform Ready"
               href: windows-server-app-certification-kit--sck-.md
-            - name: Guía de texto y fuentes internacionales
+            - name: Guía internacional de fuentes y texto
               href: international-text-and-font-guidance.md
             - name: Kit para la certificación de aplicaciones en Windows
               href: windows-app-certification-kit-for-windows-8-1-preview.md
@@ -91,62 +91,62 @@
           items:
             - name: Actualización de reglas de detección de aplicaciones de seguridad
               href: security-app-detection-rules-update.md
-            - name: Determinar el estado de la corrección de compatibilidad
+            - name: Determinar el estado de corrección de compatibilidad (shim)
               href: determining-shim-status.md
-            - name: Las aplicaciones de servidor deben poder ejecutarse sin el shell gráfico de servidor
+            - name: Las aplicaciones de servidor deben poder ejecutarse sin el Shell gráfico del servidor
               href: server-apps-must-be-able-to-run-without-the-server-graphical-shell.md
-            - name: Los componentes del servidor de servicio de datos remotos se quitan en Windows 8
+            - name: Los componentes del servidor de Servicio de datos remotos se quitan en Windows 8
               href: remote-data-service-server-components-are-removed-in-windows-8.md
-            - name: Modelo de tipo de archivo y asociaciones URI
+            - name: Tipo de archivo y modelo de asociaciones de URI
               href: file-type-and-protocol-associations-model.md
             - name: Moderador de la actividad del escritorio
               href: desktop-activity-moderator.md
-            - name: '.NET Framework 4,5 es el valor predeterminado y .NET Framework 3,5 es opcional'
+            - name: .NET Framework 4.5 es el valor predeterminado y .NET Framework 3.5 es opcional
               href: '-net-framework-4-5-is-default-and--net-framework-3-5-is-optional.md'
-            - name: Es posible que las aplicaciones de escritorio no estén visibles después de iniciar el explorador Web predeterminado o las aplicaciones de la tienda Windows
+            - name: Es posible que las aplicaciones de escritorio no sean visibles después de iniciar el explorador web predeterminado o Windows store.
               href: desktop-apps-may-not-be-visible-after-launching-the-default-web-browser.md
             - name: Modo de contraste alto
               href: high-contrast-mode.md
             - name: Manifiesto de aplicación (ejecutable)
               href: application--executable--manifest.md
-            - name: El modelo de presentación en cola está en desuso
+            - name: El modelo presente en cola está en desuso
               href: queued-present-model-is-being-deprecated.md
             - name: Escenarios de PCA para Windows 8
               href: pca-scenarios-for-windows-8.md
-            - name: Gadgets de escritorio quitados
+            - name: Desktop Gadgets Removed
               href: desktop-gadgets-removed.md
-            - name: Actualización de compatibilidad de disco Advanced Format (4K)
+            - name: Actualización de compatibilidad de disco de formato avanzado (4K)
               href: advanced-format--4k--disk-compatibility-update.md
             - name: Aprovisionamiento fino de LUN
               href: thin-provisioning-of-luns.md
-            - name: El almacenamiento mejorado ahora es opcional para WINPE y SKU de servidor
+            - name: El Storage mejorado ahora es opcional para WINPE y SKU de servidor
               href: enhanced-storage-is-now-optional-for-winpe-and-server-sku.md
-            - name: VDS está cambiando a la API de administración de almacenamiento de Windows
+            - name: VDS está transfiriendo a Windows Storage API de Administración
               href: vds-is-transitioning-to-wmiv2-based-windows-storage-management-api.md
-            - name: Interfaz de usuario de versiones anteriores quitada para volúmenes locales
+            - name: Se quitó la interfaz de usuario de versiones anteriores para volúmenes locales
               href: volume-shadow-copy-service-ui-removed.md
             - name: StorAHCI reemplaza a MSAHCI
               href: storahci-replaces-msahci.md
-            - name: Copias de seguridad y restauración de Windows 7 en desuso
+            - name: Windows 7 Copia de seguridad y restauración en desuso
               href: windows-7-backup-and-restore-deprecated.md
             - name: Transferencias de datos descargados
               href: offloaded-data-transfers.md
             - name: Administrador de ventanas de escritorio es Always On
               href: desktop-window-manager-is-always-on.md
-            - name: Direct2D no admite la representación de metaarchivos enriquecidos en Internet Explorer 9
+            - name: Direct2D no admite la representación en metarchivos enriquecidos en Internet Explorer 9
               href: direct2d-does-not-support-rendering-to-rich-metafiles-in-internet-explorer-9.md
-            - name: Cambios en la compatibilidad con hardware heredado de DX9
+            - name: Cambios en la compatibilidad con hardware heredado dx9
               href: changes-in-dx9-legacy-hardware-support.md
-            - name: MSAA no está disponible para las aplicaciones de la tienda Windows
+            - name: MSAA no está disponible para aplicaciones Windows Store
               href: msaa-is-not-available-to-appcontainer-apps.md
-            - name: 'El puerto 3 está en desuso para los controladores NDIS 6,30'
+            - name: El puerto 3 está en desuso para los controladores NDIS 6.30
               href: port-3-is-deprecated-for-ndis-6-30-drivers.md
         - name: Nuevas características y mejoras
           href: new-features-and-enhancements.md
           items:
             - name: Antimalware de inicio temprano
               href: secured-boot.md
-            - name: Requisitos de firma de la característica de arranque seguro para los controladores en modo kernel
+            - name: Requisitos de firma de características de arranque seguro para controladores en modo kernel
               href: secured-boot-signing-requirements-for-kernel-mode-drivers.md
             - name: Arranque medido
               href: measured-boot.md
@@ -156,24 +156,24 @@
               href: automatic-maintenance.md
             - name: Editores de métodos de entrada de terceros
               href: third-party-input-method-editors.md
-            - name: La nueva API permite que las aplicaciones envíen &quot; sugerencias para recortar y anular la asignación &quot; a medios de almacenamiento
+            - name: La nueva API permite a las aplicaciones enviar &quot; sugerencias TRIM y Unmap &quot; a Storage multimedia
               href: new-api-allows-apps-to-send--trim-and-unmap--hints-to-storage-media.md
-            - name: E/s de múltiples rutas admite ahora SRBs extendido
+            - name: E/S de múltiples rutas ahora admite SRB extendidas
               href: multipath-i-o-now-supports-extended-srbs.md
             - name: Sistema de archivos resistente a errores (ReFS)
               href: resilient-file-system--refs-.md
             - name: Compatibilidad con la API del servidor de archivos
               href: file-server-api-support.md
-            - name: Nueva característica de historial de archivos
+            - name: Nueva Historial de archivos de datos
               href: new-file-history-feature.md
-            - name: El sistema operativo controla ahora las unidades de disco ópticos de energía
+            - name: El sistema operativo ahora controla la potencia de las unidades de disco óptico
               href: operating-system-now-controls-power-to-optical-disk-drives.md
-            - name: 'Compatibilidad con USB 3,0'
+            - name: Compatibilidad con USB 3.0
               href: support-for-usb-3-0.md
         - name: 'Herramientas, procedimientos recomendados e instrucciones'
           href: tools--best-practices--and-guidance.md
           items:
             - name: Kit de herramientas de evaluación de Windows
               href: windows-assessment-toolkit.md
-            - name: Kit de certificación de hardware de Windows
+            - name: Windows Kit de certificación de hardware
               href: windows-hardware-certification-kit.md

@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. status.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.Status.
 ms.assetid: 74ea0384-3b1f-4d5e-8713-7b3936813a3a
-title: Directiva de metadatos de foto de System. GPS. status
+title: Directiva de metadatos de fotos System.GPS.Status
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dac08139a267052f8d6dd3dc463e2a2768309a41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a99237b9fe14d9adbc97dd5de95158a8aa714caaa4a0a8440d9f3798a2155d20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710520"
 ---
-# <a name="systemgpsstatus-photo-metadata-policy"></a>Directiva de metadatos de foto de System. GPS. status
+# <a name="systemgpsstatus-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.Status
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. status](../properties/props-system-gps-status.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.Status.](../properties/props-system-gps-status.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Estado de GPS de PKEY \_
+Estado de GPS de PKEY \_ \_
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,40 +27,40 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-\_Se prefiere VT LPWStr, pero \_ también se acepta VT LPSTR.
+Se \_ prefiere VT LPWSTR, pero también \_ se acepta VT LPSTR.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Se concilian los valores de esquemas diferentes.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 9} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=9} | ascii       |
 | 2     | /xmp/exif:GPSStatus      | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 9} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=9} | ascii       |
 | 2     | /xmp/exif:GPSStatus      | unicode     |
 
 
@@ -71,9 +71,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Path                     |
 |-------|--------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 9} |
+| 1     | /app1/ifd/gps/{ushort=9} |
 | 2     | /xmp/exif:gpsstatus      |
 
 
@@ -82,26 +82,26 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                    | Formato de disco |
+| Pedido | Path                    | Formato de disco |
 |-------|-------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 9}     | ascii       |
+| 1     | /ifd/gps/{ushort=9}     | ascii       |
 | 2     | /ifd/xmp/exif:GPSStatus | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                    | Formato de disco |
+| Pedido | Path                    | Formato de disco |
 |-------|-------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 9}     | ascii       |
+| 1     | /ifd/gps/{ushort=9}     | ascii       |
 | 2     | /ifd/xmp/exif:GPSStatus | unicode     |
 
 
@@ -112,9 +112,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                    |
+| Pedido | Path                    |
 |-------|-------------------------|
-| 1     | /IFD/GPS/{ushort = 9}     |
+| 1     | /ifd/gps/{ushort=9}     |
 | 2     | /ifd/xmp/exif:gpsstatus |
 
 
@@ -127,7 +127,7 @@ Se reconcilian los valores de los distintos esquemas.
 
 <dl> <dt>
 
-[System. GPS. status](../properties/props-system-gps-status.md)
+[System.GPS.Status](../properties/props-system-gps-status.md)
 </dt> </dl>
 
  

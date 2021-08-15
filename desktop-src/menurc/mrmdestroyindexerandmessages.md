@@ -1,9 +1,9 @@
 ---
-title: Función MrmDestroyIndexerAndMessages (MrmResourceIndexer. h)
-description: Libera los recursos de la máquina asociados a un indizador de recursos.
+title: Función MrmDestroyIndexerAndMessages (MrmResourceIndexer.h)
+description: Libera los recursos de la máquina asociados a un indexador de recursos.
 ms.assetid: AD770F40-BEDB-46C3-9527-DC46169C6193
 keywords:
-- Menús de la función MrmDestroyIndexerAndMessages y otros recursos
+- Menús y otros recursos de la función MrmDestroyIndexerAndMessages
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e351c4d9e43bbb094d9738a6fef1b90c657b01e7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a16dd8c03fdf4b89f734cf45c5ede0d2a55d377fae52e1a52139f82a0dcdf654
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118733665"
 ---
-# <a name="mrmdestroyindexerandmessages-function"></a>MrmDestroyIndexerAndMessages función)
+# <a name="mrmdestroyindexerandmessages-function"></a>Función MrmDestroyIndexerAndMessages
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información aquí proporcionada.\]
 
-Libera los recursos de la máquina asociados a un indizador de recursos. Destruye el identificador, libera el indizador y elimina todos los mensajes. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Libera los recursos de la máquina asociados a un indexador de recursos. Destruye el identificador, libera el indexador y elimina los mensajes. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de [paquetes (PRI) y sistemas de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,12 +42,12 @@ HRESULT HRESULT MrmDestroyIndexerAndMessages(
 
 <dl> <dt>
 
-*indexador* \[ de\]
+*indexador* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **MrmResourceIndexerHandle**](mrmresourceindexerhandle.md)**
 
-Identificador que identifica el indizador de recursos que se va a destruir.
+Identificador que identifica el indexador de recursos que se destruirá.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Identificador que identifica el indizador de recursos que se va a destruir.
 
 Tipo: **HRESULT**
 
-Es \_ correcto si la función se realizó correctamente; de lo contrario, es algún otro valor. Use las macros SUCCEEDED () o FAILed () (definidas en Winerror. h) para determinar si la operación se ha realizado correctamente o no.
+S \_ Ok si la función se ha hecho correctamente; de lo contrario, algún otro valor. Use las macros SUCCEEDED() o FAILED() (definidas en winerror.h) para determinar el éxito o el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,10 +63,10 @@ Es \_ correcto si la función se realizó correctamente; de lo contrario, es alg
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

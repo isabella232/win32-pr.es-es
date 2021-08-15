@@ -1,35 +1,35 @@
 ---
-title: Propiedades de IMsRdpPreferredRedirectionInfo
+title: Propiedades IMsRdpPreferredRedirectionInfo
 description: La interfaz IMsRdpPreferredRedirectionInfo expone las siguientes propiedades.
 ms.assetid: B06F7253-DAB6-4731-AB9F-B8388A2EC7B4
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47865c80c566e05dd5b103432f094e217e5702cb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e962868cfd0ede6c1781364cce4042d3ad39b953e56e7792fe6b28565923dd76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118351637"
 ---
-# <a name="imsrdppreferredredirectioninfo-properties"></a>Propiedades de IMsRdpPreferredRedirectionInfo
+# <a name="imsrdppreferredredirectioninfo-properties"></a>Propiedades IMsRdpPreferredRedirectionInfo
 
-La interfaz [**IMsRdpPreferredRedirectionInfo**](imsrdppreferredredirectioninfo.md) expone las siguientes propiedades.
+La [**interfaz IMsRdpPreferredRedirectionInfo**](imsrdppreferredredirectioninfo.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[**Propiedad UseRedirectionServerName**](imsrdppreferredredirectioninfo-useredirectionservername.md)
+[**UseRedirectionServerName, propiedad**](imsrdppreferredredirectioninfo-useredirectionservername.md)
 </dt> <dd>
 
-Obtiene y establece si se utiliza el nombre del servidor de redirección.
+Obtiene y establece si se debe usar el nombre del servidor de redireccionamiento.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

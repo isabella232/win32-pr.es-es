@@ -1,25 +1,25 @@
 ---
-description: Windows Installer puede instalar varios paquetes mediante el procesamiento de transacciones.
+description: Windows El instalador puede instalar varios paquetes mediante el procesamiento de transacciones.
 ms.assetid: c4a0f4d8-818d-4e60-908b-adaa2a54de95
-title: Instalaciones de Multiple-Package
+title: Multiple-Package instalaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65fa30893f353d6661a7f77fe23fe55b4c9b22c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36d525c2904d25fb06403f85914f2b04fce2ebc57f22801a2413b2f09ad1c396
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943416"
 ---
-# <a name="multiple-package-installations"></a>Instalaciones de Multiple-Package
+# <a name="multiple-package-installations"></a>Multiple-Package instalaciones
 
-Windows Installer puede instalar varios paquetes mediante el [*procesamiento de transacciones*](t-gly.md). Esta funcionalidad está disponible a partir de Windows Installer 4,5. El instalador instalará todos los paquetes que pertenecen a una transacción de varios paquetes o ninguno de los paquetes. Si no se pueden instalar correctamente todos los paquetes de la transacción, o si el usuario cancela la instalación, el Windows Installer puede revertir los cambios y restaurar el equipo a su estado original.
+Windows El instalador puede instalar varios paquetes mediante [*el procesamiento de transacciones.*](t-gly.md) Esta funcionalidad está disponible a partir de Windows Installer 4.5. El instalador instalará todos los paquetes que pertenecen a una transacción de varios paquetes o ninguno de los paquetes. Si todos los paquetes de la transacción no se pueden instalar correctamente, o si el usuario cancela la instalación, el instalador de Windows puede revertir los cambios y restaurar el equipo a su estado original.
 
-Un paquete de instalación de varios paquetes puede contener una [tabla MsiEmbeddedChainer](msiembeddedchainer-table.md) que hace referencia a una función definida por el usuario que usa las funciones [**MsiBeginTransaction**](/windows/desktop/api/Msi/nf-msi-msibegintransactiona), [**MsiJoinTransaction**](/windows/desktop/api/Msi/nf-msi-msijointransaction)y [**MsiEndTransaction**](/windows/desktop/api/Msi/nf-msi-msiendtransaction) .
+Un paquete de instalación de varios paquetes puede contener una tabla [MsiEmbeddedChainer](msiembeddedchainer-table.md) que hace referencia a una función definida por el usuario que usa las funciones [**MsiBeginTransaction,**](/windows/desktop/api/Msi/nf-msi-msibegintransactiona) [**MsiJoinTransaction**](/windows/desktop/api/Msi/nf-msi-msijointransaction)y [**MsiEndTransaction.**](/windows/desktop/api/Msi/nf-msi-msiendtransaction)
 
-En la [tabla MsiPackageCertificate](msipackagecertificate-table.md) se muestran los certificados de firma digital que se usan para comprobar la identidad de los paquetes de instalación que realizan una instalación de varios paquetes. Puede usar esta tabla para reducir el número de veces que la instalación de varios paquetes muestra un mensaje de [*control de cuentas de usuario*](u-gly.md) (UAC) que requiere una respuesta por parte de un administrador.
+En [la tabla MsiPackageCertificate se](msipackagecertificate-table.md) enumeran los certificados de firma digital que se usan para comprobar la identidad de los paquetes de instalación que hacen una instalación de varios paquetes. Puede usar esta tabla para reducir el número de veces que la instalación de varios paquetes muestra un mensaje de [*Control*](u-gly.md) de cuentas de usuario (UAC) que requiere una respuesta por parte de un administrador.
 
-Las siguientes funciones de Windows Installer pueden realizar cambios en el equipo del usuario cuando el Windows Installer instala, repara, actualiza o quita aplicaciones. A partir de Windows Installer 4,5, el instalador puede revertir los cambios realizados por estas funciones durante el [*procesamiento de transacciones*](t-gly.md) de una instalación de varios paquetes:
+Las siguientes Windows installer pueden realizar cambios en el equipo del usuario cuando el instalador de Windows instala, repara, actualiza o quita aplicaciones. A partir Windows Installer 4.5, el instalador puede revertir los [](t-gly.md) cambios realizados por estas funciones durante el procesamiento de transacciones de una instalación de varios paquetes:
 
 <dl>
 
@@ -42,11 +42,11 @@ Las siguientes funciones de Windows Installer pueden realizar cambios en el equi
 [**MsiRemovePatches**](/windows/desktop/api/Msi/nf-msi-msiremovepatchesa)  
 </dl>
 
-Existe una excepción si el Windows Installer encuentra un paquete que pertenece a una instalación de varios paquetes que contiene una acción [ForceReboot](forcereboot-action.md) o [ScheduleReboot](schedulereboot-action.md) . En este caso, Windows Installer no instala solo ese paquete. Se pueden instalar otros paquetes que pertenezcan a la instalación de varios paquetes que no contengan una acción ForceReboot o ScheduleReboot.
+Hay una excepción si el instalador de Windows encuentra un paquete que pertenece a una instalación de varios paquetes que contiene una [acción ForceReboot](forcereboot-action.md) o [ScheduleReboot.](schedulereboot-action.md) En este caso, Windows instalador no instala solo ese paquete. Se pueden instalar otros paquetes que pertenezcan a la instalación de varios paquetes, que no contengan una acción ForceReboot o ScheduleReboot.
 
-**[Windows Installer 4,0 y versiones anteriores](not-supported-in-windows-installer-4-0.md): * * no se admite el [*procesamiento de transacciones*](t-gly.md) de instalaciones de Windows Installer de varios paquetes. Estas versiones de los Windows Installer no pueden revertir la instalación de varios paquetes como una sola transacción.
+**[Windows Installer 4.0](not-supported-in-windows-installer-4-0.md)y versiones anteriores:[****](t-gly.md) No se admite el procesamiento de transacciones de varios paquetes Windows instalación del instalador. Estas versiones del instalador de Windows no pueden revertir la instalación de varios paquetes como una única transacción.
 
-**Windows Server 2008 R2 con el rol de [servicios de escritorio remoto](../termserv/terminal-services-portal.md) habilitado:** No compatible. Se produce un error en una instalación de varios paquetes mediante la [tabla MsiEmbeddedChainer](msiembeddedchainer-table.md) si está habilitado el rol [servicios de escritorio remoto](../termserv/terminal-services-portal.md) .
+**Windows Server 2008 R2 con el [Servicios de Escritorio remoto](../termserv/terminal-services-portal.md) habilitado:** No se admite. Se produce un error en una instalación de varios paquetes mediante la tabla [MsiEmbeddedChainer](msiembeddedchainer-table.md) [si el rol](../termserv/terminal-services-portal.md) Servicios de Escritorio remoto está habilitado.
 
  
 

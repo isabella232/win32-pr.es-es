@@ -1,32 +1,32 @@
 ---
-title: Cómo autentica un servicio de Windows Sockets un cliente
-description: Cuando un cliente se conecta al servicio de Windows Sockets, el servicio inicia sus operaciones para la secuencia de autenticación mutua, que se muestra en los siguientes ejemplos de código.
+title: Cómo un servicio Windows Sockets autentica un cliente
+description: Cuando un cliente se conecta al servicio Windows Sockets, el servicio comienza sus operaciones para la secuencia de autenticación mutua, que se muestra en los ejemplos de código siguientes.
 ms.assetid: 32f62fb9-41c6-4932-9b91-753174919707
 ms.tgt_platform: multiple
 keywords:
-- Cómo autentica un servicio de Windows Sockets un AD de cliente
+- Cómo un servicio Windows Sockets autentica un ad cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cad096ddfb9569d6289c1e775465232431c20ad6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c2975d356de011818514d6999f03d1998e066a4b8bdadd6eaba8835541e4b8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103995080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188527"
 ---
-# <a name="how-a-windows-sockets-service-authenticates-a-client"></a>Cómo autentica un servicio de Windows Sockets un cliente
+# <a name="how-a-windows-sockets-service-authenticates-a-client"></a>Cómo un servicio Windows Sockets autentica un cliente
 
-Cuando un cliente se conecta al servicio de Windows Sockets, el servicio inicia sus operaciones para la secuencia de autenticación mutua, que se muestra en los siguientes ejemplos de código.
+Cuando un cliente se conecta al servicio Windows Sockets, el servicio comienza sus operaciones para la secuencia de autenticación mutua, que se muestra en los ejemplos de código siguientes.
 
-La **rutina de autenticación utiliza** el identificador de socket para recibir el primer paquete de autenticación del cliente. El búfer del cliente se pasa a la función **GenServerContext** , que luego pasa el búfer al paquete de seguridad de SSPI para la autenticación. La autenticación de la **autenticación** envía la salida del paquete de seguridad al cliente. Este bucle se repite hasta que se produce un error en la autenticación o **GenServerContext** establece una marca que indica que la autenticación se realizó correctamente.
+La **rutina DoAuthentication** usa el identificador de socket para recibir el primer paquete de autenticación del cliente. El búfer de cliente se pasa a la **función GenServerContext,** que luego pasa el búfer al paquete de seguridad SSPI para la autenticación. **A continuación, DoAuthentication** devuelve la salida del paquete de seguridad al cliente. Este bucle se repite hasta que se produce un error en la autenticación **o GenServerContext** establece una marca que indica que la autenticación se ha correcto.
 
-**GenServerContext** llama a las siguientes funciones desde un paquete de seguridad de SSPI:
+**GenServerContext llama** a las siguientes funciones desde un paquete de seguridad SSPI:
 
 -   [**AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) extrae las credenciales de servicio del contexto de seguridad del servicio que se estableció cuando se inició el servicio.
--   [**AcceptSecurityContext**](../SecAuthN/acceptsecuritycontext--general.md) intenta realizar la autenticación mutua mediante las credenciales de servicio y los datos de autenticación recibidos del cliente. Para solicitar la autenticación mutua, la llamada **AcceptSecurityContext** debe especificar la \_ marca ASC req \_ Mutual \_ auth.
--   Si es necesario, se llama a [**CompleteAuthToken**](/windows/desktop/api/sspi/nf-sspi-completeauthtoken) para completar la operación de autenticación.
+-   [**AcceptSecurityContext intenta**](../SecAuthN/acceptsecuritycontext--general.md) realizar la autenticación mutua mediante las credenciales de servicio y los datos de autenticación recibidos del cliente. Para solicitar la autenticación mutua, **la llamada AcceptSecurityContext** debe especificar la marca ASC \_ REQ MUTUAL \_ \_ AUTH.
+-   [**Se llama a CompleteAuthToken,**](/windows/desktop/api/sspi/nf-sspi-completeauthtoken) si es necesario, para completar la operación de autenticación.
 
-En el ejemplo de código siguiente se usa el paquete Negotiate de la biblioteca Secur32.dll de paquetes de seguridad.
+En el ejemplo de código siguiente se usa el paquete negotiate de la biblioteca Secur32.dll de paquetes de seguridad.
 
 
 ```C++
@@ -206,6 +206,6 @@ return TRUE;
 
 
 
- 
+ 
 
- 
+ 

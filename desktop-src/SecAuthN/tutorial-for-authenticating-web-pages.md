@@ -1,30 +1,30 @@
 ---
-description: En este tutorial se resaltan los distintos aspectos que los desarrolladores web deben tener en cuenta al diseñar páginas para el flujo de autorización Web de Windows 8. En esta sección se muestra un flujo de autorización de dos páginas.
+description: En este tutorial se resaltan los distintos aspectos que deben interesar a los desarrolladores web al diseñar páginas para el flujo de autorización web Windows 8. En esta sección se muestra un flujo de autorización de dos páginas.
 ms.assetid: A26E09EF-6C7A-4F75-89A7-76086F63F3B1
 title: Tutorial para autenticar páginas web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1c6fc6482c5e6dfaf89a9fc9732783f5f088b4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c43e9caf6e08683fc375a7a0dc37ff711f19387b7de0cd68cb71cdf916702084
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118915577"
 ---
 # <a name="tutorial-for-authenticating-web-pages"></a>Tutorial para autenticar páginas web
 
-En este tutorial se resaltan los distintos aspectos que los desarrolladores web deben tener en cuenta al diseñar páginas para el flujo de autorización Web de Windows 8. En esta sección se muestra un flujo de autorización de dos páginas.
+En este tutorial se resaltan los distintos aspectos que deben interesar a los desarrolladores web al diseñar páginas para el flujo de autorización web Windows 8. En esta sección se muestra un flujo de autorización de dos páginas.
 
-**Objetivo:** El objetivo del ejemplo no es ser preceptivo en cuanto al diseño o diseño visual en el que cada proveedor tendrá un punto de vista único en, pero para llamar a algunas áreas que merece la pena invertir en para tener una experiencia de estilo de diseño de Microsoft de primera clase para Windows 8.
+**Objetivo:** El objetivo del ejemplo no es ser prescriptivo sobre el diseño o el diseño visual sobre el que cada proveedor tendrá ciertamente un punto de vista único, sino llamar a algunas áreas en las que merece la pena invertir para tener una experiencia de estilo de diseño Microsoft de primera clase para Windows 8.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para poder usar las API de agente de autenticación Web, necesita:
+Para usar las API del agente de autenticación web, necesita:
 
--   Windows 8 (solo x86 o AMD64)
--   Microsoft Internet Information Services (IIS) debe instalarse desde el panel de control en "programas y características" y con la opción "activar o desactivar las características de Windows".
+-   Windows 8 (solo x86 o amd64)
+-   Microsoft Internet Information Services (IIS) debe instalarse desde la Panel de control en "Programas y características" y mediante la opción "Activar o desactivar Windows características".
 
-**Tiempo total de finalización:** 2 minutos.
+**Tiempo total para completar:** 2 minutos.
 
 ## <a name="where-to-go-from-here"></a>Cómo continuar a partir de aquí
 
@@ -37,7 +37,7 @@ Siguiente [autenticación para páginas web](authentication-for-web-pages.md)
 [Consideraciones para el desarrollo de páginas web](considerations-for-the-web-page-development.md)
 </dt> <dt>
 
-[Aplicación de ejemplo del SDK del agente de autenticación Web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)
+[Aplicación de ejemplo del SDK del Agente de autenticación web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)
 </dt> <dt>
 
 [**Windows.Security.Authentication.Web**](/uwp/api/Windows.Security.Authentication.Web?view=winrt-19041)

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: a4279bef86d761ed0eb7d90ad3b8dee46e0f17f4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 95b5134a2c7f7411ffcf2860f8829225a7271089c824b4e4c8731de78ffa4a61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440807"
 ---
 # <a name="iwiadevmgr2selectdevicedlgid-method"></a>Método IWiaDevMgr2::SelectDeviceDlgID
 
@@ -47,7 +47,7 @@ HRESULT SelectDeviceDlgID(
 
 Tipo: **HWND**
 
-Especifica la ventana primaria del cuadro **de diálogo Seleccionar** dispositivo.
+Especifica la ventana primaria del cuadro de diálogo **Seleccionar** dispositivo.
 
 </dd> <dt>
 
@@ -118,9 +118,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método crea y muestra el cuadro **de** diálogo Seleccionar dispositivo para que el usuario pueda seleccionar un dispositivo WIA 2.0 para la adquisición de imágenes. Si un dispositivo se selecciona correctamente, el método **IWiaDevMgr2::SelectDeviceDlgID** pasa su cadena de identificador a la aplicación a través de su *parámetro pbstrDeviceID.*
+Este método crea y muestra el cuadro de diálogo **Seleccionar** dispositivo para que el usuario pueda seleccionar un dispositivo WIA 2.0 para la adquisición de imágenes. Si un dispositivo se selecciona correctamente, el método **IWiaDevMgr2::SelectDeviceDlgID** pasa su cadena de identificador a la aplicación a través de su *parámetro pbstrDeviceID.*
 
 La aplicación puede restringir los dispositivos que se muestran al usuario a tipos concretos especificando los tipos de dispositivo mediante el *parámetro lDeviceType.* Si solo un dispositivo cumple la especificación, **IWiaDevMgr2::SelectDeviceDlgID** no muestra el **cuadro de diálogo** Seleccionar dispositivo. En su lugar, pasa la cadena de identificador del dispositivo a la aplicación sin mostrar el cuadro de diálogo. Puede invalidar este comportamiento y forzar que **IWiaDevMgr2::SelectDeviceDlgID** muestre el cuadro de diálogo pasando WIA SELECT DEVICE NODEFAULT como valor para el parámetro \_ \_ \_ *lFlags.* Si más de un dispositivo WIA 2.0 coincide con la especificación, todos los dispositivos correspondientes se muestran en el cuadro de diálogo Seleccionardispositivo para que el usuario pueda elegir uno.
 
@@ -133,11 +133,11 @@ La aplicación puede restringir los dispositivos que se muestran al usuario a ti
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 

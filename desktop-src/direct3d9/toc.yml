@@ -1,7 +1,7 @@
 - name: Gráficos de Direct3D 9
   href: dx9-graphics.md
   items:
-    - name: Convertir a Direct3D 9
+    - name: Conversión a Direct3D 9
       href: converting-to-directx-9.md
     - name: Guía de programación para Direct3D 9
       href: dx9-graphics-programming-guide.md
@@ -14,19 +14,19 @@
             - name: Dispositivos Direct3D
               href: direct3d-devices.md
               items:
-                - name: Tipos de dispositivos
+                - name: Tipos de dispositivo
                   href: device-types.md
                 - name: Creación de un dispositivo
                   href: creating-a-device.md
-                - name: Modo de ventana de vs Full-Screen
+                - name: Modo de ventana frente Full-Screen ventana
                   href: windowed-vs-full-screen-mode.md
                 - name: Selección de un dispositivo
                   href: selecting-a-device.md
                 - name: Dispositivos perdidos
                   href: lost-devices.md
-                - name: Determinar la compatibilidad de hardware
+                - name: Determinar la compatibilidad con hardware
                   href: determining-hardware-support.md
-                - name: Procesando datos de vértices
+                - name: Procesamiento de datos de vértices
                   href: processing-vertex-data.md
                 - name: Elementos primitivos
                   href: primitives.md
@@ -35,54 +35,54 @@
                       href: point-lists.md
                     - name: Listas de líneas
                       href: line-lists.md
-                    - name: Bandas de líneas
+                    - name: Franjas de línea
                       href: line-strips.md
                     - name: Listas de triángulos
                       href: triangle-lists.md
-                    - name: Bandas de triángulo
+                    - name: Franjas de triángulos
                       href: triangle-strips.md
-                    - name: Ventiladores de triángulo
+                    - name: Triángulos de ventiladores
                       href: triangle-fans.md
                 - name: States
                   href: states.md
                   items:
-                    - name: Estado de guardado y restauración de bloques de estado
+                    - name: 'Estado: Guardar y restaurar estado de bloques de estado'
                       href: state-blocks-save-and-restore-state.md
                       items:
-                        - name: Guardar todos los Estados de los dispositivos con un StateBlock
+                        - name: Guardar todos los estados del dispositivo con un Bloque de estado
                           href: saving-all-device-states-with-a-stateblock.md
-                        - name: Guardar Estados de vértice con un StateBlock
+                        - name: Guardar estados de vértice con un StateBlock
                           href: saving-vertex-states-with-a-stateblock.md
-                        - name: Guardar el estado de los píxeles con un StateBlock
+                        - name: Guardar el estado de píxeles con un Bloque de estado
                           href: saving-pixel-states-with-a-stateblock.md
-                    - name: Estados de representación
+                    - name: Representar estados
                       href: render-states.md
                       items:
-                        - name: Estado de mezcla alfa
+                        - name: Estado de combinación alfa
                           href: alpha-blending-state.md
-                        - name: Estado de la prueba alfa
+                        - name: Estado de prueba alfa
                           href: alpha-testing-state.md
-                        - name: Estado de iluminación ambiente
+                        - name: Estado de iluminación ambiental
                           href: ambient-lighting-state.md
                         - name: Estado de suavizado de contorno
                           href: antialiasing-state.md
-                        - name: Estado de selección
+                        - name: Estado de la selección
                           href: culling-state.md
                         - name: Estado de almacenamiento en búfer de profundidad
                           href: depth-buffering-state.md
-                        - name: Estado de niebla
+                        - name: Estado de la infusión
                           href: fog-state.md
                         - name: Estado de iluminación
                           href: lighting-state.md
                         - name: Esquema y estado de relleno
                           href: outline-and-fill-state.md
-                        - name: Per-Vertex estado de color
+                        - name: Per-Vertex de color
                           href: per-vertex-color-state.md
                         - name: Estado de recorte primitivo
                           href: primitive-clipping-state.md
                         - name: Estado de sombreado
                           href: shading-state.md
-                        - name: Estado del búfer de estarcido
+                        - name: Estado del búfer de galería de símbolos
                           href: stencil-buffer-state.md
                         - name: Estado de ajuste de textura
                           href: texture-wrapping-state.md
@@ -93,30 +93,30 @@
               items:
                 - name: Propiedades de los recursos
                   href: resource-properties.md
-                - name: Manipular recursos
+                - name: Manipulación de recursos
                   href: manipulating-resources.md
-                - name: Bloquear recursos
+                - name: Bloqueo de recursos
                   href: locking-resources.md
                 - name: Relaciones de recursos
                   href: resource-relationships.md
                 - name: Administrar recursos
                   href: managing-resources.md
-                - name: Application-Managed de recursos y estrategias de asignación
+                - name: Application-Managed recursos y estrategias de asignación
                   href: application-managed-resources-and-allocation-strategies.md
                 - name: Búferes de vértices
                   href: vertex-buffers.md
                   items:
-                    - name: Crear un búfer de vértices
+                    - name: Creación de un búfer de vértices
                       href: creating-a-vertex-buffer.md
-                    - name: Acceder al contenido de un búfer de vértices
+                    - name: Acceso al contenido de un búfer de vértices
                       href: accessing-the-contents-of-a-vertex-buffer.md
                     - name: Representación desde un búfer de vértices
                       href: rendering-from-a-vertex-buffer.md
                     - name: Búferes de vértices FVF
                       href: fvf-vertex-buffers.md
-                    - name: Procesamiento de vértices de funciones fijas
+                    - name: Procesamiento de vértices de función fija
                       href: fixed-function-vertex-processing.md
-                    - name: Procesamiento de vértices programable
+                    - name: Procesamiento de vértices programables
                       href: programmable-vertex-processing.md
                     - name: Tipos de dispositivos y requisitos de procesamiento de vértices
                       href: device-types-and-vertex-processing-requirements.md
@@ -125,13 +125,13 @@
                       items:
                         - name: Asignación de códigos FVF a una declaración de Direct3D 9
                           href: mapping-fvf-codes-to-a-directx-9-declaration.md
-                        - name: Códigos FVF de funciones fijas
+                        - name: Códigos FVF de función fija
                           href: fixed-function-fvf-codes.md
-                        - name: Asignación entre declaraciones de D3D9 y D3D8
+                        - name: Asignación entre declaraciones D3D9 y D3D8
                           href: mapping-between-a-directx-9-declaration-and-directx-8.md
-                        - name: Asignación entre una declaración de Direct3D y códigos de FVF
+                        - name: Asignación entre una declaración de Direct3D y códigos FVF
                           href: mapping-between-a-directx-9-declaration-and-fvf-codes.md
-                        - name: Programar una o más secuencias
+                        - name: Programación de una o varias Secuencias
                           href: programming-one-or-more-streams.md
                 - name: Búferes de índice
                   href: index-buffers.md
@@ -140,22 +140,22 @@
               items:
                 - name: Sistemas de coordenadas
                   href: coordinate-systems.md
-                - name: Vectores normales de cara y vértice
+                - name: Vectores normales de caras y vértices
                   href: face-and-vertex-normal-vectors.md
                 - name: Reglas de rasterización
                   href: rasterization-rules.md
                 - name: Rectángulos
                   href: rectangles.md
-                - name: Interpolación triangular
+                - name: Interpolación de triángulos
                   href: triangle-interpolation.md
                 - name: 'Vectores, vértices y cuaterniones'
                   href: vectors--vertices--and-quaternions.md
             - name: Transformaciones
               href: transforms.md
               items:
-                - name: Transformación universal
+                - name: Transformación del mundo
                   href: world-transform.md
-                - name: Transformación de vista
+                - name: Visualización de la transformación
                   href: view-transform.md
                 - name: Transformación de proyección
                   href: projection-transform.md
@@ -166,26 +166,26 @@
               items:
                 - name: Tipos de luz
                   href: light-types.md
-                - name: Propiedades de la luz
+                - name: Propiedades ligeras
                   href: light-properties.md
                 - name: Matemáticas de iluminación
                   href: mathematics-of-lighting.md
                   items:
-                    - name: Iluminación ambiente
+                    - name: Iluminación ambiental
                       href: ambient-lighting.md
-                    - name: Luz difusa
+                    - name: Iluminación difusa
                       href: diffuse-lighting.md
                     - name: Iluminación especular
                       href: specular-lighting.md
-                    - name: Iluminación emisor
+                    - name: Iluminación emisiva
                       href: emissive-lighting.md
-                    - name: Transformaciones de espacio de cámara
+                    - name: Transformaciones del espacio de la cámara
                       href: camera-space-transformations.md
-                    - name: Atenuación y factor de Spotlight
+                    - name: Atenuación y factor spotlight
                       href: attenuation-and-spotlight-factor.md
                 - name: Materiales
                   href: materials.md
-            - name: Representación en Direct3D
+            - name: Representación de Direct3D
               href: direct3d-rendering.md
               items:
                 - name: Sombreado
@@ -193,7 +193,7 @@
                   items:
                     - name: Modos de sombreado
                       href: shading-modes.md
-                    - name: Comparar modos de sombreado
+                    - name: Comparación de modos de sombreado
                       href: comparing-shading-modes.md
                     - name: Establecer el modo de sombreado
                       href: setting-the-shading-mode.md
@@ -204,33 +204,33 @@
                       href: introduction-to-presenting-a-scene.md
                     - name: Varias vistas en modo de ventana
                       href: multiple-views-in-windowed-mode.md
-                    - name: Operaciones de Multiple-Monitor
+                    - name: Multiple-Monitor operations
                       href: multiple-monitor-operations.md
-                    - name: Manipular el búfer de profundidad
+                    - name: Manipulación del búfer de profundidad
                       href: manipulating-the-depth-buffer.md
                     - name: Acceso al búfer frontal de color
                       href: accessing-the-color-front-buffer.md
                 - name: Representación de primitivas
                   href: rendering-primitives.md
                   items:
-                    - name: Flujos de datos de vértices
+                    - name: Datos de vértices Secuencias
                       href: vertex-data-streams.md
                     - name: Establecer el origen de la secuencia
                       href: setting-the-stream-source.md
-                    - name: Representación de búferes de vértices y de índices
+                    - name: Representación a partir de búferes de vértices e índices
                       href: rendering-from-vertex-and-index-buffers.md
-                    - name: Representación de punteros de memoria de usuario
+                    - name: Representación a partir de punteros de memoria de usuario
                       href: rendering-from-user-memory-pointers.md
                 - name: Búferes de profundidad
                   href: depth-buffers.md
                   items:
-                    - name: Consulta de compatibilidad con el búfer de profundidad
+                    - name: Consulta de compatibilidad con búfer de profundidad
                       href: querying-for-depth-buffer-support.md
                     - name: Crear un búfer de profundidad
                       href: creating-a-depth-buffer.md
-                    - name: Habilitar el almacenamiento en búfer de profundidad
+                    - name: Habilitación del almacenamiento en búfer de profundidad
                       href: enabling-depth-buffering.md
-                    - name: Recuperación de un búfer de profundidad
+                    - name: Recuperar un búfer de profundidad
                       href: retrieving-a-depth-buffer.md
                     - name: Borrar búferes de profundidad
                       href: clearing-depth-buffers.md
@@ -240,67 +240,67 @@
                       href: changing-depth-buffer-comparison-functions.md
                 - name: Niebla
                   href: fog.md
-                - name: Combinación alfa
+                - name: Alpha Blending
                   href: alpha-blending.md
                   items:
                     - name: Vértice alfa
                       href: vertex-alpha.md
-                    - name: Alfa material
+                    - name: Alfa de material
                       href: material-alpha.md
-                    - name: Textura alfa
+                    - name: Alfa de textura
                       href: texture-alpha.md
-                    - name: Alfa de búfer de fotogramas
+                    - name: Búfer de fotogramas alfa
                       href: frame-buffer-alpha.md
-                    - name: Alfa de destino de representación
+                    - name: Destino de representación alfa
                       href: render-target-alpha.md
             - name: Superficies de Direct3D
               href: direct3d-surfaces.md
               items:
-                - name: Formatos de Surface
+                - name: Formatos de superficie
                   href: surface-formats.md
                 - name: ¿Qué es una cadena de intercambio?
                   href: what-is-a-swap-chain-.md
-                - name: Ancho frente a paso
+                - name: Ancho frente a tono
                   href: width-vs--pitch.md
                 - name: Voltear superficies
                   href: flipping-surfaces.md
-                - name: Retroceso y almacenamiento en búfer de páginas
+                - name: Volteo de página y almacenamiento en búfer de reserva
                   href: page-flipping-and-back-buffering.md
-                - name: Copiar a superficies
+                - name: Copiar en superficies
                   href: copying-to-surfaces.md
                 - name: Copiar superficies
                   href: copying-surfaces.md
-                - name: Acceso directo a la memoria de la superficie
+                - name: Acceso directo a la memoria de surface
                   href: accessing-surface-memory-directly.md
-                - name: Datos de la superficie privada
+                - name: Datos de superficie privada
                   href: private-surface-data.md
-                - name: Controles gamma
+                - name: Controles Gamma
                   href: gamma-controls.md
             - name: Texturas de Direct3D
               href: direct3d-textures.md
               items:
-                - name: Conceptos básicos de la texturización
+                - name: Conceptos básicos de texturing
                   href: basic-texturing-concepts.md
                   items:
                     - name: Modos de direccionamiento de textura
                       href: texture-addressing-modes.md
                       items:
-                        - name: Ajustar el modo de dirección de textura
+                        - name: Encapsular el modo de dirección de textura
                           href: wrap-texture-address-mode.md
                         - name: Modo de dirección de textura de reflejo
                           href: mirror-texture-address-mode.md
-                        - name: Modo de dirección de textura de abrazadera
+                        - name: Modo de dirección de textura de fijación
                           href: clamp-texture-address-mode.md
                         - name: Modo de dirección de textura de color de borde
                           href: border-color-texture-address-mode.md
-                    - name: Regiones desfasadas de textura
+                    - name: Regiones de textura desdesociadas
                       href: texture-dirty-regions.md
-                    - name: Paletas de texturas
+                    - name: Paletas de textura
                       href: texture-palettes.md
                 - name: Coordenadas de textura
                   href: texture-coordinates.md
                   items:
-                    - name: Asignación directa de textura a píxeles
+                    - name: Asignación directa de elementos de textura a píxeles
                       href: directly-mapping-texels-to-pixels.md
                     - name: Formatos de coordenadas de textura
                       href: texture-coordinate-formats.md
@@ -316,7 +316,7 @@
                 - name: Filtrado de textura
                   href: texture-filtering.md
                   items:
-                    - name: Muestreo de Nearest-Point
+                    - name: Nearest-Point muestreo
                       href: nearest-point-sampling.md
                     - name: Filtrado de textura lineal
                       href: linear-texture-filtering.md
@@ -324,70 +324,70 @@
                       href: bilinear-texture-filtering.md
                     - name: Anisotropic Texture Filtering
                       href: anisotropic-texture-filtering.md
-                    - name: Filtrado de texturas con mapas MIP
+                    - name: Filtrado de texturas con mapas Mip
                       href: texture-filtering-with-mipmaps.md
                 - name: Recursos de textura
                   href: texture-resources.md
                 - name: Ajuste de textura
                   href: texture-wrapping.md
-                - name: Combinación de texturas
+                - name: Mezcla de texturas
                   href: texture-blending.md
                   items:
-                    - name: Operaciones y argumentos de combinación de texturas
+                    - name: Operaciones y argumentos de mezcla de textura
                       href: texture-blending-operations-and-arguments.md
-                    - name: Asignar las texturas actuales
+                    - name: Asignación de las texturas actuales
                       href: assigning-the-current-textures.md
-                    - name: Crear fases de fusión
+                    - name: Crear fases de mezcla
                       href: creating-blending-stages.md
-                    - name: Mezcla de textura alfa
+                    - name: Combinación de textura alfa
                       href: alpha-texture-blending.md
-                    - name: Combinación de texturas de Multipass
+                    - name: Mezcla de textura multipass
                       href: multipass-texture-blending.md
                     - name: Asignación de luz con texturas
                       href: light-mapping-with-textures.md
                       items:
-                        - name: Mapas de luz monocroma
+                        - name: Luz monocromática Mapas
                           href: monochrome-light-maps.md
-                        - name: Mapas de luz de color
+                        - name: Color Light Mapas
                           href: color-light-maps.md
-                        - name: Mapas de luz especular
+                        - name: Specular Light Mapas
                           href: specular-light-maps.md
-                        - name: Mapas de luz difusos
+                        - name: Difuso de Mapas
                           href: diffuse-light-maps.md
-                - name: Generación automática de mapas MIP
+                - name: Generación automática de mapas Mip
                   href: automatic-generation-of-mipmaps.md
                 - name: Administración automática de texturas
                   href: automatic-texture-management.md
                 - name: Recursos de textura comprimidos
                   href: compressed-texture-resources.md
                   items:
-                    - name: Texturas alfa opacas y de 1 bit
+                    - name: Texturas opacas y alfa de 1 bit
                       href: opaque-and-1-bit-alpha-textures.md
                     - name: Texturas con canales alfa
                       href: textures-with-alpha-channels.md
                     - name: Formatos de textura comprimidos
                       href: compressed-texture-formats.md
-                    - name: Usar texturas comprimidas
+                    - name: Uso de texturas comprimidas
                       href: using-compressed-textures.md
-                - name: Consideraciones de hardware para la texturización
+                - name: Consideraciones de hardware para texturing
                   href: hardware-considerations-for-texturing.md
                 - name: Recursos de textura de volumen
                   href: volume-texture-resources.md
             - name: D3DX
               href: d3dx.md
               items:
-                - name: Compatibilidad con el dibujo de líneas en D3DX
+                - name: Compatibilidad con dibujos de línea en D3DX
                   href: line-drawing-support-in-d3dx.md
                 - name: Compatibilidad con funciones matemáticas en D3DX
                   href: math-function-support-in-d3dx.md
-                - name: Compatibilidad de malla en D3DX
+                - name: Compatibilidad con mallas en D3DX
                   href: mesh-support-in-d3dx.md
                 - name: Compatibilidad con texturas en D3DX
                   href: texture-support-in-d3dx.md
-            - name: Archivos X (heredado)
+            - name: Archivos X (heredados)
               href: x-files--legacy-.md
               items:
-                - name: Carga de un archivo X (heredado)
+                - name: Cargar un archivo X (heredado)
                   href: loading-an-x-file--legacy-.md
                 - name: Guardar en un archivo X (heredado)
                   href: saving-to-an-x-file--legacy-.md
@@ -414,62 +414,62 @@
                   href: tessellation.md
                 - name: Asignación de desplazamiento
                   href: displacement-mapping.md
-                - name: Combinación de geometría
+                - name: Mezcla de geometría
                   href: geometry-blending.md
                   items:
-                    - name: Usar la combinación de geometría
+                    - name: Uso de la combinación de geometría
                       href: using-geometry-blending.md
-                    - name: Fusión de vértices indexados
+                    - name: Mezcla de vértices indexados
                       href: indexed-vertex-blending.md
                       items:
-                        - name: Usar la combinación de vértices indizada
+                        - name: Uso de la combinación de vértices indexados
                           href: using-indexed-vertex-blending.md
                     - name: Interpolación de vértices
                       href: vertex-tweening.md
                       items:
-                        - name: Usar la interpolación de vértices
+                        - name: Uso de interpolación de vértices
                           href: using-vertex-tweening.md
-                - name: Higher-Order primitivas
+                - name: Higher-Order primitivos
                   href: higher-order-primitives.md
                   items:
-                    - name: Usar primitivas de Higher-Order
+                    - name: Usar Higher-Order primitivos
                       href: using-higher-order-primitives.md
                 - name: Sprites de punto
                   href: point-sprites.md
-                - name: Pilas de matrices
+                - name: Pilas de matriz
                   href: matrix-stacks.md
-                - name: Texturas de vértices en vs_3_0 (DirectX HLSL)
+                - name: Texturas de vértice en vs_3_0 (HLSL de DirectX)
                   href: vertex-textures-in-vs-3-0.md
             - name: Canalización de píxeles
               href: pixel-pipeline.md
               items:
-                - name: Prueba de tijera
+                - name: Prueba de deserción
                   href: scissor-test.md
-                - name: Tendencia de profundidad
+                - name: Sesgo de profundidad
                   href: depth-bias.md
-                - name: Técnicas de búfer de estarcido
+                - name: Técnicas de búfer de galería de símbolos
                   href: stencil-buffer-techniques.md
                   items:
                     - name: Composición
                       href: compositing.md
-                    - name: Marcas
+                    - name: Escalado
                       href: decaling.md
-                    - name: 'Resuelve, atenúa y deslizar rápidamente'
+                    - name: 'Desvanecimientos, atenuaciones y deslizamientos'
                       href: dissolves--fades--and-swipes.md
-                    - name: Contornos y siluetas
+                    - name: Contornos y sobresalciones
                       href: outlines-and-silhouettes.md
-                    - name: Two-Sided Galería de símbolos
+                    - name: Two-Sided galería de símbolos
                       href: two-sided-stencil.md
                 - name: Sombreado
                   href: shadowing.md
-                - name: Asignación de rugosidad
+                - name: Asignación de protuberancias
                   href: bump-mapping.md
                   items:
-                    - name: Formatos de píxeles de mapa de rugosidad
+                    - name: Formatos de píxeles de mapa de protuberancia
                       href: bump-map-pixel-formats.md
-                    - name: Fórmulas de asignación de rugosidad
+                    - name: Fórmulas de asignación de protuberancias
                       href: bump-mapping-formulas.md
-                    - name: Usar la asignación de rugosidad
+                    - name: Uso de la asignación de protuberancias
                       href: using-bump-mapping.md
                 - name: Asignación de entorno
                   href: environment-mapping.md
@@ -477,14 +477,14 @@
                     - name: Asignación de entorno cúbica
                       href: cubic-environment-mapping.md
                       items:
-                        - name: Crear superficies de mapa de entorno cúbicas
+                        - name: Creación de superficies de mapa de entorno cúbica
                           href: creating-cubic-environment-map-surfaces.md
-                    - name: Asignación de entorno esférico
+                    - name: Asignación de entorno esférica
                       href: spherical-environment-mapping.md
-                - name: Suavizado
+                - name: Antialiasing
                   href: antialiasing.md
                   items:
-                    - name: Suavizado de contorno Full-Scene
+                    - name: Full-Scene suavizado de contorno
                       href: full-scene-antialiasing.md
                     - name: Desenfoque de movimiento
                       href: motion-blur.md
@@ -495,50 +495,50 @@
             - name: Búfer de fotogramas
               href: frame-buffer.md
               items:
-                - name: Tipos de niebla
+                - name: Tipos de tipos de
                   href: fog-types.md
                   items:
-                    - name: Fórmulas de niebla
+                    - name: Fórmulas de fórmulas mágicas
                       href: fog-formulas.md
-                    - name: Parámetros de niebla
+                    - name: Parámetros de parámetros de
                       href: fog-parameters.md
-                    - name: Fusión de niebla
+                    - name: Blending de Blend
                       href: fog-blending.md
-                    - name: Color de niebla
+                    - name: Color de color de color de color
                       href: fog-color.md
-                    - name: Niebla de vértices
+                    - name: Vértice de vértice
                       href: vertex-fog.md
-                    - name: Niebla de píxeles
+                    - name: Píxeles de píxeles
                       href: pixel-fog.md
-                - name: Ejemplos de alfa
+                - name: Ejemplos alfa
                   href: alpha-examples.md
                   items:
-                    - name: Cartelera
+                    - name: Afición
                       href: billboarding.md
-                    - name: 'Nubes, humo y rastros de vapor'
+                    - name: 'Nubes, humo y pistas de Quesados'
                       href: clouds--smoke--and-vapor-trails.md
-                    - name: 'Incendios, destellos y explosiones'
+                    - name: 'Fire, Fires, and Explosions'
                       href: fire--flares--and-explosions.md
                 - name: Gamma
                   href: gamma.md
-            - name: Transferencia Radiance precalculada
+            - name: Transferencia de radiancia precalcalada
               href: precomputed-radiance-transfer.md
               items:
                 - name: Ecuaciones de PRT
                   href: prt-equations.md
-                - name: Representar PRT con texturas
+                - name: Representación de PRT con texturas
                   href: representing-prt-with-textures.md
-            - name: Iluminación de HDR
+            - name: Iluminación DE HDR
               href: hdr-lighting.md
-            - name: Generación de perfiles de llamadas de la API de Direct3D con precisión
+            - name: Generación precisa de perfiles de llamadas API de Direct3D
               href: accurately-profiling-direct3d-api-calls.md
-            - name: Establecimiento del estado del dispositivo en las canalizaciones de la función fija y del sombreador
+            - name: Establecer el estado del dispositivo en canalizaciones de sombreador de función fija
               href: setting-render-states-with-fixed-function-and-programmable-shader-pipeline.md
             - name: Consultas
               href: queries.md
-            - name: Dibujo eficaz de varias instancias de Geometry
+            - name: Dibujar de forma eficaz varias instancias de geometry
               href: efficiently-drawing-multiple-instances-of-geometry.md
-            - name: Usar UVAtlas
+            - name: Uso de UVAtlas
               href: using-uvatlas.md
         - name: Sugerencias de programación
           href: programming-tips.md
@@ -547,19 +547,19 @@
               href: asynchronous-notification.md
             - name: Errores internos del controlador
               href: driver-internal-errors.md
-            - name: Habilitar la información de depuración de Direct3D
+            - name: Habilitación de la información de depuración de Direct3D
               href: enabling-direct3d-debug-information.md
-            - name: De cabeza
+            - name: Multihead
               href: multihead.md
             - name: Problemas de multithreading
               href: multithreading-issues.md
             - name: Optimizaciones de rendimiento
               href: performance-optimizations.md
-            - name: Presentar varias vistas en modo de ventana
+            - name: Presentación de varias vistas en modo de ventana
               href: presenting-multiple-views-in-windowed-mode.md
             - name: Solución de problemas
               href: troubleshooting.md
-            - name: Trabajar con ventanas de dispositivos
+            - name: Trabajar con dispositivos Windows
               href: working-with-device-windows.md
             - name: Trabajar con controladores anteriores
               href: working-with-earlier-drivers.md
@@ -573,7 +573,7 @@
         - name: Referencia de Direct3D
           href: dx9-graphics-reference-d3d.md
           items:
-            - name: Interfaces de Direct3D
+            - name: Direct3D Interfaces
               href: dx9-graphics-reference-d3d-interfaces.md
               items:
                 - name: IDirect3D9
@@ -923,7 +923,7 @@
                   items:
                     - name: GetDesc
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-getdesc
-                    - name: Bloquear
+                    - name: Lock
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock
                     - name: Desbloquear
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-unlock
@@ -932,7 +932,7 @@
                   items:
                     - name: GetDevice
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dpixelshader9-getdevice
-                    - name: GetFunction (
+                    - name: GetFunction
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dpixelshader9-getfunction
                 - name: IDirect3DQuery9
                   href: /windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dquery9
@@ -954,13 +954,13 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-freeprivatedata
                     - name: GetDevice
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-getdevice
-                    - name: GetPriority (
+                    - name: GetPriority
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-getpriority
                     - name: GetPrivateData
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-getprivatedata
                     - name: GetType
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-gettype
-                    - name: Cargar previamente
+                    - name: Precarga
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-preload
                     - name: SetPriority
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-setpriority
@@ -1034,7 +1034,7 @@
                   items:
                     - name: GetDesc
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvertexbuffer9-getdesc
-                    - name: Bloquear
+                    - name: Lock
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvertexbuffer9-lock
                     - name: Desbloquear
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvertexbuffer9-unlock
@@ -1050,7 +1050,7 @@
                   items:
                     - name: GetDevice
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvertexshader9-getdevice
-                    - name: GetFunction (
+                    - name: GetFunction
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvertexshader9-getfunction
                 - name: IDirect3DVolume9
                   href: /windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dvolume9
@@ -1065,11 +1065,11 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-getdevice
                     - name: GetPrivateData
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-getprivatedata
-                    - name: Bloqueo
+                    - name: Caja
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-lockbox
                     - name: SetPrivateData
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-setprivatedata
-                    - name: Desliquidación
+                    - name: UnlockBox
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-unlockbox
                 - name: IDirect3DVolumeTexture9
                   href: /windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9
@@ -1080,9 +1080,9 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-getleveldesc
                     - name: GetVolumeLevel
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-getvolumelevel
-                    - name: Bloqueo
+                    - name: Caja
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-lockbox
-                    - name: Desliquidación
+                    - name: UnlockBox
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-unlockbox
             - name: Funciones de Direct3D
               href: dx9-graphics-reference-d3d-functions.md
@@ -1306,7 +1306,7 @@
                   href: d3dshademode.md
                 - name: D3DSTATEBLOCKTYPE
                   href: d3dstateblocktype.md
-                - name: D3DSTENCILOP
+                - name: D3DSTENCISTONE
                   href: d3dstencilop.md
                 - name: D3DSWAPEFFECT
                   href: d3dswapeffect.md
@@ -1324,7 +1324,7 @@
                   href: d3dtransformstatetype.md
                 - name: D3DVERTEXBLENDFLAGS
                   href: d3dvertexblendflags.md
-                - name: D3DZBUFFERTYPE
+                - name: D3BUFFERTYPE
                   href: d3dzbuffertype.md
             - name: Constantes de Direct3D
               href: dx9-graphics-reference-d3d-constants.md
@@ -1394,7 +1394,7 @@
         - name: Referencia de D3DX
           href: dx9-graphics-reference-d3dx.md
           items:
-            - name: Interfaces de D3DX
+            - name: D3DX Interfaces
               href: dx9-graphics-reference-d3dx-interfaces.md
               items:
                 - name: ID3DXAllocateHierarchy
@@ -1632,7 +1632,7 @@
                 - name: ID3DXFont
                   href: id3dxfont.md
                   items:
-                    - name: DrawText
+                    - name: Drawtext
                       href: id3dxfont--drawtext.md
                     - name: GetDC
                       href: id3dxfont--getdc.md
@@ -1836,7 +1836,7 @@
                       href: id3dxpatchmesh--optimize.md
                     - name: SetDisplaceParam
                       href: id3dxpatchmesh--setdisplaceparam.md
-                    - name: Dividirlas
+                    - name: Tesselate
                       href: id3dxpatchmesh--tessellate.md
                     - name: TessellateAdaptive
                       href: id3dxpatchmesh--tessellateadaptive.md
@@ -1929,13 +1929,13 @@
                       href: id3dxprtengine--computedirectlightingshgpu.md
                     - name: ComputeLDPRTCoeffs
                       href: id3dxprtengine--computeldprtcoeffs.md
-                    - name: No es un proceso
+                    - name: ComputeSS
                       href: id3dxprtengine--computess.md
                     - name: ComputeSSAdaptive
                       href: id3dxprtengine--computessadaptive.md
-                    - name: ComputeSurfSamplesBounce
+                    - name: ComputeSampleSamplesBounce
                       href: id3dxprtengine--computesurfsamplesbounce.md
-                    - name: ComputeSurfSamplesDirectSH
+                    - name: ComputeSamplesDirectSH
                       href: id3dxprtengine--computesurfsamplesdirectsh.md
                     - name: ComputeVolumeSamples
                       href: id3dxprtengine--computevolumesamples.md
@@ -1984,7 +1984,7 @@
                   items:
                     - name: BeginCube
                       href: id3dxrendertoenvmap--begincube.md
-                    - name: BeginHemisphere
+                    - name: Begin Begin Yaisphere
                       href: id3dxrendertoenvmap--beginhemisphere.md
                     - name: BeginParabolic
                       href: id3dxrendertoenvmap--beginparabolic.md
@@ -2041,15 +2041,15 @@
                       href: id3dxskininfo--converttoblendedmesh.md
                     - name: ConvertToIndexedBlendedMesh
                       href: id3dxskininfo--converttoindexedblendedmesh.md
-                    - name: FindBoneVertexInfluenceIndex
+                    - name: FindIonalVertexInfluenceIndex
                       href: id3dxskininfo--findbonevertexinfluenceindex.md
-                    - name: GetBoneInfluence
+                    - name: GetIonalInfluence
                       href: id3dxskininfo--getboneinfluence.md
-                    - name: GetBoneName
+                    - name: GetNameName
                       href: id3dxskininfo--getbonename.md
-                    - name: GetBoneOffsetMatrix
+                    - name: GetIonalOffsetMatrix
                       href: id3dxskininfo--getboneoffsetmatrix.md
-                    - name: GetBoneVertexInfluence
+                    - name: GetIonalVertexInfluence
                       href: id3dxskininfo--getbonevertexinfluence.md
                     - name: GetDeclaration
                       href: id3dxskininfo--getdeclaration.md
@@ -2059,27 +2059,27 @@
                       href: id3dxskininfo--getmaxfaceinfluences.md
                     - name: GetMaxVertexInfluences
                       href: id3dxskininfo--getmaxvertexinfluences.md
-                    - name: GetMinBoneInfluence
+                    - name: GetMinIonalInfluence
                       href: id3dxskininfo--getminboneinfluence.md
-                    - name: GetNumBoneInfluences
+                    - name: GetNumIonalInfluences
                       href: id3dxskininfo--getnumboneinfluences.md
-                    - name: GetNumBones
+                    - name: GetNumIonals
                       href: id3dxskininfo--getnumbones.md
-                    - name: Mapeo
+                    - name: Remap
                       href: id3dxskininfo--remap.md
-                    - name: SetBoneInfluence
+                    - name: SetIonalInfluence
                       href: id3dxskininfo--setboneinfluence.md
-                    - name: SetBoneName
+                    - name: SetNameName
                       href: id3dxskininfo--setbonename.md
-                    - name: SetBoneOffsetMatrix
+                    - name: SetIonalOffsetMatrix
                       href: id3dxskininfo--setboneoffsetmatrix.md
-                    - name: SetBoneVertexInfluence
+                    - name: SetIonalVertexInfluence
                       href: id3dxskininfo--setbonevertexinfluence.md
                     - name: SetDeclaration
                       href: id3dxskininfo--setdeclaration.md
                     - name: SetFVF
                       href: id3dxskininfo--setfvf.md
-                    - name: SetMinBoneInfluence
+                    - name: SetMinIonalInfluence
                       href: id3dxskininfo--setminboneinfluence.md
                     - name: UpdateSkinnedMesh
                       href: id3dxskininfo--updateskinnedmesh.md
@@ -2154,7 +2154,7 @@
                       href: id3dxtextureshader--getconstantelement.md
                     - name: GetDesc
                       href: id3dxtextureshader--getdesc.md
-                    - name: GetFunction (
+                    - name: GetFunction
                       href: id3dxtextureshader--getfunction.md
                     - name: SetBool
                       href: id3dxtextureshader--setbool.md
@@ -2188,7 +2188,7 @@
                       href: id3dxtextureshader--setvector.md
                     - name: SetVectorArray
                       href: id3dxtextureshader--setvectorarray.md
-            - name: Funciones de D3DX
+            - name: Funciones D3DX
               href: dx9-graphics-reference-d3dx-functions.md
               items:
                 - name: Funciones de animación
@@ -2218,7 +2218,7 @@
                       href: d3dxloadmeshhierarchyfromxinmemory.md
                     - name: D3DXSaveMeshHierarchyToFile
                       href: d3dxsavemeshhierarchytofile.md
-                - name: Funciones de De uso general
+                - name: De uso general Functions
                   href: dx9-graphics-reference-d3dx-functions-general-purpose.md
                   items:
                     - name: D3DXCheckVersion
@@ -2394,7 +2394,7 @@
                       href: d3dxquaternionsquadsetup.md
                     - name: D3DXQuaternionToAxisAngle
                       href: d3dxquaterniontoaxisangle.md
-                    - name: D3DXSHAdd
+                    - name: D3DXSHAgregue
                       href: d3dxshadd.md
                     - name: D3DXSHDot
                       href: d3dxshdot.md
@@ -2404,7 +2404,7 @@
                       href: d3dxshevaldirection.md
                     - name: D3DXSHEvalDirectionalLight
                       href: d3dxshevaldirectionallight.md
-                    - name: D3DXSHEvalHemisphereLight
+                    - name: D3DXSHEvalGraisphereLight
                       href: d3dxshevalhemispherelight.md
                     - name: D3DXSHEvalSphericalLight
                       href: d3dxshevalsphericallight.md
@@ -2418,7 +2418,7 @@
                       href: d3dxshrotatez.md
                     - name: D3DXSHScale
                       href: d3dxshscale.md
-                    - name: D3DXVec2Add
+                    - name: D3DXVec2Agregue
                       href: d3dxvec2add.md
                     - name: D3DXVec2BaryCentric
                       href: d3dxvec2barycentric.md
@@ -2458,7 +2458,7 @@
                       href: d3dxvec2transformnormal.md
                     - name: D3DXVec2TransformNormalArray
                       href: d3dxvec2transformnormalarray.md
-                    - name: D3DXVec3Add
+                    - name: D3DXVec3Agregue
                       href: d3dxvec3add.md
                     - name: D3DXVec3BaryCentric
                       href: d3dxvec3barycentric.md
@@ -2635,7 +2635,7 @@
                       href: d3dxvalidpatchmesh.md
                     - name: D3DXWeldVertices
                       href: d3dxweldvertices.md
-                - name: Funciones de transferencia Radiance precalculadas
+                - name: Funciones de transferencia de radiancia precalcaladas
                   href: dx9-graphics-reference-d3dx-functions-prt.md
                   items:
                     - name: D3DXCreatePRTBuffer
@@ -2660,7 +2660,7 @@
                       href: d3dxshprtcompsplitmeshsc.md
                     - name: D3DXSHPRTCompSuperCluster
                       href: d3dxshprtcompsupercluster.md
-                - name: Funciones del sombreador
+                - name: Funciones de sombreador
                   href: dx9-graphics-reference-d3dx-functions-shader.md
                   items:
                     - name: D3DXAssembleShader
@@ -2705,7 +2705,7 @@
                       href: d3dxpreprocessshaderfromfile.md
                     - name: D3DXPreprocessShaderFromResource
                       href: d3dxpreprocessshaderfromresource.md
-                - name: Funciones de dibujo de forma
+                - name: Funciones de dibujo de formas
                   href: dx9-graphics-reference-d3dx-functions-shape.md
                   items:
                     - name: D3DXCreateBox
@@ -2827,7 +2827,7 @@
                       href: d3dxsavevolumetofile.md
                     - name: D3DXSaveVolumeToFileInMemory
                       href: d3dxsavevolumetofileinmemory.md
-                - name: Funciones de UVAtlas
+                - name: Funciones UVAtlas
                   href: dx9-graphics-reference-d3dx-functions-uvatlas.md
                   items:
                     - name: D3DXUVAtlasCreate
@@ -2855,7 +2855,7 @@
                   href: lpd3dximtsignalcallback.md
                 - name: LPD3DXSHPRTSIMCB
                   href: lpd3dxshprtsimcb.md
-                - name: LPD3DXUVATLASCB
+                - name: LPD3DVATVATLASCB
                   href: lpd3dxuvatlascb.md
             - name: Macros
               href: dx9-graphics-reference-d3dx-macros.md
@@ -2870,18 +2870,18 @@
                   href: d3dxtoradian.md
                 - name: D3DXTX_VERSION
                   href: d3dxtx-version.md
-            - name: Estructuras de D3DX
+            - name: Estructuras D3DX
               href: dx9-graphics-reference-d3dx-structures.md
               items:
                 - name: D3DXATTRIBUTERANGE
                   href: d3dxattributerange.md
                 - name: D3DXATTRIBUTEWEIGHTS
                   href: d3dxattributeweights.md
-                - name: D3DXBONECOMBINATION
+                - name: D3DXDXCOMBINATION
                   href: d3dxbonecombination.md
                 - name: D3DXCOLOR
                   href: d3dxcolor.md
-                - name: Extensiones de D3DXCOLOR
+                - name: Extensiones D3DXCOLOR
                   href: d3dxcolor-extensions.md
                 - name: D3DXCONSTANTTABLE_DESC
                   href: d3dxconstanttable-desc.md
@@ -2891,7 +2891,7 @@
                   href: d3dxevent-desc.md
                 - name: D3DXFLOAT16
                   href: d3dxfloat16.md
-                - name: Extensiones de D3DXFLOAT16
+                - name: Extensiones D3DXFLOAT16
                   href: d3dxfloat16-extensions.md
                 - name: D3DXFONT_DESC
                   href: d3dxfont-desc.md
@@ -2913,7 +2913,7 @@
                   href: d3dxmatrix.md
                 - name: D3DXMATRIXA16
                   href: d3dxmatrixa16.md
-                - name: Extensiones de D3DXMATRIX
+                - name: Extensiones D3DXMATRIX
                   href: d3dxmatrix-extensions.md
                 - name: D3DXMESHCONTAINER
                   href: d3dxmeshcontainer.md
@@ -2923,11 +2923,11 @@
                   href: d3dxpatchinfo.md
                 - name: D3DXPLANE
                   href: d3dxplane.md
-                - name: Extensiones de D3DXPLANE
+                - name: Extensiones D3DXPLANE
                   href: d3dxplane-extensions.md
                 - name: D3DXQUATERNION
                   href: d3dxquaternion.md
-                - name: Extensiones de D3DXQUATERNION
+                - name: Extensiones D3DXQUATERNION
                   href: d3dxquaternion-extensions.md
                 - name: D3DXRTE_DESC
                   href: d3dxrte-desc.md
@@ -2951,19 +2951,19 @@
                   href: d3dxtrack-desc.md
                 - name: D3DXVECTOR2
                   href: d3dxvector2.md
-                - name: Extensiones de D3DXVECTOR2
+                - name: Extensiones D3DXVECTOR2
                   href: d3dxvector2-extensions.md
                 - name: D3DXVECTOR3
                   href: d3dxvector3.md
-                - name: Extensiones de D3DXVECTOR3
+                - name: Extensiones D3DXVECTOR3
                   href: d3dxvector3-extensions.md
                 - name: D3DXVECTOR4
                   href: d3dxvector4.md
-                - name: Extensiones de D3DXVECTOR4
+                - name: Extensiones D3DXVECTOR4
                   href: d3dxvector4-extensions.md
                 - name: D3DXWeldEpsilons
                   href: d3dxweldepsilons.md
-            - name: Enumeraciones de D3DX
+            - name: Enumeraciones D3DX
               href: dx9-graphics-reference-d3dx-enums.md
               items:
                 - name: D3DXCALLBACK_SEARCH_FLAGS
@@ -2980,7 +2980,7 @@
                   href: d3dxevent-type.md
                 - name: D3DXIMAGE_FILEFORMAT
                   href: d3dximage-fileformat.md
-                - name: MARCAS DE D3DXIMT
+                - name: MARCAS D3DXIMT
                   href: d3dximt-flags.md
                 - name: D3DXINCLUDE_TYPE
                   href: d3dxinclude-type.md
@@ -3014,13 +3014,13 @@
                   href: d3dxtangent.md
                 - name: D3DXTRANSITION_TYPE
                   href: d3dxtransition-type.md
-                - name: D3DXUVATLAS
+                - name: D3DVATVATLAS
                   href: d3dxuvatlas.md
                 - name: D3DXWELDEPSILONSFLAGS
                   href: d3dxweldepsilonsflags.md
                 - name: MAX_FVF_DECL_SIZE
                   href: max-fvf-decl-size.md
-            - name: Constantes de D3DX
+            - name: Constantes D3DX
               href: dx9-graphics-reference-d3dx-constants.md
               items:
                 - name: D3DX_CHANNEL
@@ -3029,16 +3029,16 @@
                   href: d3dx-filter.md
                 - name: D3DX_NORMALMAP
                   href: d3dx-normalmap.md
-                - name: Marcas de D3DXSHADER
+                - name: Marcas D3DXSHADER
                   href: d3dxshader-flags.md
                 - name: D3DXSPRITE
                   href: d3dxsprite.md
-                - name: Otras constantes de D3DX
+                - name: Otras constantes D3DX
                   href: other-d3dx-constants.md
-        - name: Referencia de efectos
+        - name: Referencia de efecto
           href: dx9-graphics-reference-effects.md
           items:
-            - name: Interfaces de efectos
+            - name: Interfaces de efecto
               href: dx9-graphics-reference-effects-interfaces.md
               items:
                 - name: ID3DXBaseEffect
@@ -3058,7 +3058,7 @@
                       href: id3dxbaseeffect--getfloat.md
                     - name: GetFloatArray
                       href: id3dxbaseeffect--getfloatarray.md
-                    - name: GetFunction (
+                    - name: GetFunction
                       href: id3dxbaseeffect--getfunction.md
                     - name: GetFunctionByName
                       href: id3dxbaseeffect--getfunctionbyname.md
@@ -3283,7 +3283,7 @@
                   href: d3dxcreateeffectpool.md
                 - name: D3DXDisassembleEffect
                   href: d3dxdisassembleeffect.md
-            - name: Estructuras de efectos
+            - name: Estructuras de efecto
               href: dx9-graphics-reference-effects-structures.md
               items:
                 - name: D3DXEFFECT_DESC
@@ -3318,7 +3318,7 @@
                   href: parameters.md
                 - name: Técnicas y pases
                   href: techniques-and-passes.md
-                - name: Sintaxis de la función Effect
+                - name: Sintaxis de función de efecto
                   href: functions.md
                 - name: Clonación y uso compartido
                   href: cloning-and-sharing.md
@@ -3332,14 +3332,14 @@
                   href: usages-and-literals.md
                 - name: Validación
                   href: validation.md
-            - name: Referencia de las anotaciones y semánticas estándar de DirectX
+            - name: Referencia de anotaciones y semánticas estándar de DirectX
               href: dx9-graphics-reference-effects-dxsas.md
               items:
                 - name: Parámetro global
                   href: global-parameter.md
                 - name: Enlace de datos
                   href: data-binding.md
-                - name: Anotación de interfaz de usuario
+                - name: Anotación de la interfaz de usuario
                   href: ui-annotation.md
                 - name: Anotación de inicialización de parámetros
                   href: parameter-initialization-annotation.md
@@ -3348,7 +3348,7 @@
         - name: Referencia de archivo X
           href: dx9-graphics-reference-d3dx-x-file.md
           items:
-            - name: Interfaces de archivo de D3DX X
+            - name: Interfaces de archivos D3DX X
               href: dx9-graphics-reference-d3dx-x-file-interfaces.md
               items:
                 - name: ID3DXFile
@@ -3379,7 +3379,7 @@
                       href: id3dxfiledata--gettype.md
                     - name: IsReference
                       href: id3dxfiledata--isreference.md
-                    - name: Bloquear
+                    - name: Lock
                       href: id3dxfiledata--lock.md
                     - name: Desbloquear
                       href: id3dxfiledata--unlock.md
@@ -3420,12 +3420,12 @@
                       href: id3dxfilesaveobject--getfile.md
                     - name: Guardar
                       href: id3dxfilesaveobject--save.md
-            - name: Funciones de archivo de D3DX X
+            - name: Funciones de archivo D3DX X
               href: dx9-graphics-reference-d3dx-x-file-functions.md
               items:
                 - name: D3DXFileCreate
                   href: d3dxfilecreate.md
-            - name: Estructuras de archivos de D3DX X
+            - name: Estructuras de archivo D3DX X
               href: dx9-graphics-reference-d3dx-x-file-structures.md
               items:
                 - name: D3DXF_FILELOADMEMORY
@@ -3434,7 +3434,7 @@
                   href: d3dxf-fileloadresource.md
                 - name: XFILECOMPRESSEDANIMATIONSET
                   href: xfilecompressedanimationset.md
-            - name: Constantes de archivo de D3DX X
+            - name: Constantes de archivo D3DX X
               href: dx9-graphics-reference-d3dx-x-file-constants.md
               items:
                 - name: D3DXF
@@ -3515,14 +3515,14 @@
               items:
                 - name: DirectXFileCreate
                   href: directxfilecreate.md
-            - name: Estructuras de archivos X
+            - name: Estructuras de archivo X
               href: dx9-graphics-reference-x-file-structures.md
               items:
                 - name: DXFILELOADMEMORY
                   href: dxfileloadmemory.md
                 - name: DXFILELOADRESOURCE
                   href: dxfileloadresource.md
-            - name: Constantes de DXFILE
+            - name: Constantes DXFILE
               href: dxfile.md
             - name: Valores devueltos
               href: dx9-graphics-reference-x-file-return-values.md
@@ -3532,7 +3532,7 @@
                 - name: Codificación binaria
                   href: binary-encoding.md
                   items:
-                    - name: Encabezado
+                    - name: Header
                       href: header.md
                     - name: Tokens
                       href: tokens.md
@@ -3553,7 +3553,7 @@
                       href: reserved-words--header--and-comments.md
                     - name: Plantillas
                       href: dx9-graphics-reference-x-file-textencoding-templates.md
-                    - name: Uso de comas y puntos y comas
+                    - name: Uso de comas y punto y coma
                       href: use-of-commas-and-semicolons.md
                 - name: Plantillas
                   href: dx9-graphics-reference-x-file-format-templates.md

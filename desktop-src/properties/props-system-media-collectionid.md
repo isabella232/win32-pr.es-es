@@ -4,12 +4,12 @@ ms.assetid: 8e404517-6406-4c53-81d5-b20cafbc393f
 title: System.Media.CollectionID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53c460e19906c72071d237dc1df15f038a5cf3a9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b02f343ca9b05d61ff963088e8f142fa848aee3b575a096d6a3af5fa865d33d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118725654"
 ---
 # <a name="systemmediacollectionid"></a>System.Media.CollectionID
 

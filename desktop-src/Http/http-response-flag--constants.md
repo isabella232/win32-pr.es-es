@@ -1,5 +1,5 @@
 ---
-title: Constantes de HTTP_RESPONSE_FLAG_ (http. h)
+title: HTTP_RESPONSE_FLAG_ constantes (Http.h)
 description: Defina las opciones para configurar las respuestas en la API del servidor HTTP.
 ms.assetid: bcb59457-fd22-4166-8a72-ba85209ec8c7
 topic_type:
@@ -12,27 +12,27 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96b7c34d453c1b9bbe45cf2c85ad268b414f3439
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3099012df5be9ed4a53d3072319be6dc47ede32b71567749c4668cd7870fee29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394413"
 ---
-# <a name="http_response_flag_-constants"></a>Constantes de la \_ marca de respuesta HTTP \_ \_
+# <a name="http_response_flag_-constants"></a>Constantes \_ HTTP RESPONSE \_ FLAG \_
 
-Las constantes de la **\_ \_ \_ marca de respuesta http** definen las opciones para configurar las respuestas en la API del servidor http.
+Las **constantes HTTP RESPONSE \_ \_ FLAG \_** definen opciones para configurar respuestas en la API del servidor HTTP.
 
-Estas constantes se utilizan en el miembro **Flags** de la estructura [**http \_ Response \_ v1**](/windows/desktop/api/Http/ns-http-http_response_v1) .
+Estas constantes se usan en el miembro **Flags** de la [**estructura HTTP RESPONSE \_ \_ V1.**](/windows/desktop/api/Http/ns-http-http_response_v1)
 
 <dl> <dt>
 
-<span id="HTTP_RESPONSE_FLAG_MULTIPLE_ENCODINGS_AVAILABLE"></span><span id="http_response_flag_multiple_encodings_available"></span>**\_marca de respuesta HTTP \_ \_ varias \_ codificaciones \_ disponibles**
+<span id="HTTP_RESPONSE_FLAG_MULTIPLE_ENCODINGS_AVAILABLE"></span><span id="http_response_flag_multiple_encodings_available"></span>**MARCA DE RESPUESTA HTTP \_ \_ VARIAS \_ \_ CODIFICACIONES \_ DISPONIBLES**
 </dt> <dd> <dl> <dt>
 
 
 
-Las codificaciones que no sean el formulario de identidad están disponibles para este recurso. Esta marca se omite si la aplicación no ha solicitado que se almacene en caché la respuesta. Se usa como una sugerencia a la API del servidor HTTP para la negociación de contenido cuando atiende desde la caché de respuesta del kernel.
+Las codificaciones que no sean el formulario de identidad están disponibles para este recurso. Esta marca se omite si la aplicación no ha solicitado que la respuesta se almacene en caché. Se usa como una sugerencia para la API del servidor HTTP para la negociación de contenido al servir desde la caché de respuestas del kernel.
 
 
 </dt> </dl> </dd> </dl>
@@ -41,22 +41,22 @@ Las codificaciones que no sean el formulario de identidad están disponibles par
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Http. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Http.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[API del servidor HTTP versión 2,0 constantes](http-server-api-version-2-0-constants.md)
+[Constantes de LA API del servidor HTTP versión 2.0](http-server-api-version-2-0-constants.md)
 </dt> <dt>
 
-[**\_Respuesta HTTP \_ v1**](/windows/desktop/api/Http/ns-http-http_response_v1)
+[**RESPUESTA \_ HTTP \_ V1**](/windows/desktop/api/Http/ns-http-http_response_v1)
 </dt> </dl>
 
  

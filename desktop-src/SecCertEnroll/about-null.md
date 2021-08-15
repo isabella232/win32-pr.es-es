@@ -1,23 +1,23 @@
 ---
-description: El valor NULL se codifica en un tríptico de TLV que comienza con un valor de etiqueta de 0x05, una longitud de 0x00 y ningún byte de valor, tal como se muestra en la siguiente ilustración.
+description: El valor NULL se codifica en un triplete TLV que comienza con un valor tag de 0x05, una longitud de 0x00 y ningún byte Value, como se muestra en la ilustración siguiente.
 ms.assetid: f712f84a-c4d3-41bb-b151-62b0f86046af
 title: "NULL"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6dec81fb2024899121ad4e2eb78aa54372a1b71
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9be83b4e57640fdee783214186a8a2135f3d7d14325a4b3235f80d729ef4b6e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105670097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903817"
 ---
 # <a name="null"></a>NULL
 
-El valor **null** se codifica en un tríptico de TLV que comienza con un valor de **etiqueta** de 0x05, una **longitud** de 0x00 y ningún byte de **valor** , tal como se muestra en la siguiente ilustración.
+El **valor NULL** se codifica en un triplete TLV que comienza con  un valor **tag** de 0x05, una longitud de 0x00 y ningún byte **Value,** como se muestra en la ilustración siguiente.
 
-![codificación der de tipo de datos null](images/der-tlv-null.png)
+![codificación der del tipo de datos NULL](images/der-tlv-null.png)
 
-En la quinta línea del siguiente ejemplo, que se adapta a partir del tema [ \# ASN. 1, con codificación PKCS 10](pkcs--10-encoded-asn-1.md) , se muestra un valor **null** codificado. El primer byte es 0x05 y el segundo byte es 0x00. No hay ningún byte de contenido.
+La quinta línea del ejemplo siguiente, adaptada del tema [PKCS \# 10 Encoded ASN.1,](pkcs--10-encoded-asn-1.md) muestra un valor **NULL** codificado. El primer byte es 0x05 y el segundo byte es 0x00. No hay ningún byte de contenido.
 
 ``` syntax
 30 81 9f                                ; SEQUENCE (9f Bytes)
@@ -46,10 +46,10 @@ En la quinta línea del siguiente ejemplo, que se adapta a partir del tema [ \# 
 
 <dl> <dt>
 
-[Sistema de tipos ASN. 1](about-asn-1-type-system.md)
+[Sistema de tipo ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codificación DER de tipos ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codificación DER de tipos ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

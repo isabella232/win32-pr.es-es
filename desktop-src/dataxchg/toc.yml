@@ -4,23 +4,23 @@
     - name: Portapapeles
       href: clipboard.md
       items:
-        - name: Información general del portapapeles
+        - name: Información general del Portapapeles
           href: clipboard-overviews.md
           items:
-            - name: Acerca del portapapeles
+            - name: Acerca del Portapapeles
               href: about-the-clipboard.md
-            - name: Formatos del portapapeles
+            - name: Formatos del Portapapeles
               href: clipboard-formats.md
-            - name: Formato del portapapeles HTML
+            - name: Formato del Portapapeles HTML
               href: html-clipboard-format.md
-            - name: Operaciones del portapapeles
+            - name: Operaciones del Portapapeles
               href: clipboard-operations.md
-            - name: Usar el portapapeles
+            - name: Uso del Portapapeles
               href: using-the-clipboard.md
-        - name: Referencia del portapapeles
+        - name: Referencia del Portapapeles
           href: clipboard-reference.md
           items:
-            - name: Funciones del portapapeles
+            - name: Funciones del Portapapeles
               href: clipboard-functions.md
               items:
                 - name: AddClipboardFormatListener
@@ -63,7 +63,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-setclipboarddata
                 - name: SetClipboardViewer
                   href: /windows/desktop/api/Winuser/nf-winuser-setclipboardviewer
-            - name: Mensajes del portapapeles
+            - name: Mensajes del Portapapeles
               href: clipboard-messages.md
               items:
                 - name: WM_CLEAR
@@ -74,7 +74,7 @@
                   href: wm-cut.md
                 - name: WM_PASTE
                   href: wm-paste.md
-            - name: Notificaciones del portapapeles
+            - name: Notificaciones del Portapapeles
               href: clipboard-notifications.md
               items:
                 - name: WM_ASKCBFORMATNAME
@@ -99,12 +99,12 @@
                   href: wm-sizeclipboard.md
                 - name: WM_VSCROLLCLIPBOARD
                   href: wm-vscrollclipboard.md
-            - name: Estructuras del portapapeles
+            - name: Estructuras del Portapapeles
               href: clipboard-structures.md
               items:
                 - name: METAFILEPICT
                   href: /windows/win32/api/Wingdi/ns-wingdi-metafilepict
-            - name: Formatos de Portapapeles estándar
+            - name: Formatos estándar del Portapapeles
               href: standard-clipboard-formats.md
     - name: Copia de datos
       href: data-copy.md
@@ -118,19 +118,19 @@
               href: wm-copydata.md
             - name: COPYDATASTRUCT
               href: /windows/win32/api/Winuser/ns-winuser-copydatastruct
-    - name: Intercambio dinámico de datos (DDE)
+    - name: datos dinámicos Exchange (DDE)
       href: dynamic-data-exchange.md
       items:
-        - name: Información general sobre el DDE
+        - name: Información general sobre DDE
           href: dynamic-data-exchange-overviews.md
           items:
-            - name: Acerca de Intercambio dinámico de datos
+            - name: Acerca de datos dinámicos Exchange
               href: about-dynamic-data-exchange.md
             - name: Acerca de las tablas Atom
               href: about-atom-tables.md
-            - name: Usar Intercambio dinámico de datos
+            - name: Uso de datos dinámicos Exchange
               href: using-dynamic-data-exchange.md
-        - name: Referencia DDE
+        - name: Referencia de DDE
           href: dynamic-data-exchange-reference.md
           items:
             - name: Funciones DDE
@@ -146,7 +146,7 @@
                   href: /windows/desktop/api/Dde/nf-dde-packddelparam
                 - name: ReuseDDElParam
                   href: /windows/desktop/api/Dde/nf-dde-reuseddelparam
-                - name: UnpackDDElParam
+                - name: DesempaquetarDDElParam
                   href: /windows/desktop/api/Dde/nf-dde-unpackddelparam
             - name: Mensajes DDE
               href: dynamic-data-exchange-messages.md
@@ -188,7 +188,7 @@
         - name: Referencia de Atom
           href: atoms-reference.md
           items:
-            - name: Funciones Atom
+            - name: Funciones atom
               href: atoms-functions.md
               items:
                 - name: AddAtom
@@ -211,15 +211,15 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-globalgetatomnamea
                 - name: InitAtomTable
                   href: /windows/desktop/api/Winbase/nf-winbase-initatomtable
-            - name: Macros Atom
+            - name: Atom Macros
               href: atoms-macros.md
               items:
                 - name: MAKEINTATOM
                   href: /windows/desktop/api/Winbase/nf-winbase-makeintatom
-    - name: Biblioteca de administración de Intercambio dinámico de datos (DDEML)
+    - name: datos dinámicos Exchange Management Library (DDEML)
       href: dynamic-data-exchange-management-library.md
       items:
-        - name: Información general de DDEML
+        - name: Información general sobre DDEML
           href: dynamic-data-exchange-management-library-overviews.md
           items:
             - name: Acerca de DDEML
@@ -242,7 +242,7 @@
             - name: Funciones DDEML
               href: dynamic-data-exchange-management-library-functions.md
               items:
-                - name: DdeAbandonTransaction
+                - name: DdeAbandoneTransaction
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeabandontransaction
                 - name: DdeAccessData
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeaccessdata
@@ -300,7 +300,7 @@
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeunaccessdata
                 - name: DdeUninitialize
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeuninitialize
-            - name: Transacciones de DDEML
+            - name: Transacciones DDEML
               href: dynamic-data-exchange-management-library-transactions.md
               items:
                 - name: XTYP_ADVDATA

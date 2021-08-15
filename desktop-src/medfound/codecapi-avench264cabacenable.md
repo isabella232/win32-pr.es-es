@@ -1,23 +1,23 @@
 ---
-description: Habilita o deshabilita CABAC (codificación aritmética binaria adaptable al contexto) para la codificación de entropía H. 264.
+description: Habilita o deshabilita CABAC (codificación aritmética binaria adaptable al contexto) para la codificación de entropía H.264.
 ms.assetid: E09DD142-A685-425E-94CD-A8E2EA73E869
-title: Propiedad CODECAPI_AVEncH264CABACEnable (Codecapi. h)
+title: CODECAPI_AVEncH264CABACEnable propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5db4a23377b79102165f0582d6a2ee47f53d8c1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c9c3099f5208b020a61a12e718788459130a1c121ba0634b3e259c439f44f53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744161"
 ---
-# <a name="codecapi_avench264cabacenable-property"></a>\_Propiedad AVEncH264CABACEnable de CODECAPI
+# <a name="codecapi_avench264cabacenable-property"></a>Propiedad CODECAPI \_ AVEncH264CABACEnable
 
-Habilita o deshabilita CABAC (codificación aritmética binaria adaptable al contexto) para la codificación de entropía H. 264.
+Habilita o deshabilita CABAC (codificación aritmética binaria adaptable al contexto) para la codificación de entropía H.264.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Variante \_ BOOL** (VT \_ bool)
+**VARIANT \_ BOOL** (VT \_ BOOL)
 
 ## <a name="property-guid"></a>GUID de propiedad
 
@@ -25,7 +25,7 @@ Habilita o deshabilita CABAC (codificación aritmética binaria adaptable al con
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si el valor es **Variant \_ true**, CABAC está habilitado.
+Si el valor es **VARIANT \_ TRUE,** CABAC está habilitado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ Si el valor es **Variant \_ true**, CABAC está habilitado.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Si el valor es **Variant \_ true**, CABAC está habilitado.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

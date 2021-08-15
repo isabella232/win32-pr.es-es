@@ -4,16 +4,16 @@ ms.assetid: 9565e874-5a8d-4b4b-a2a4-391e46922cc1
 title: DXGI
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b1e100d068d12f651c2602b29af75181607a038
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: fe67f0938ee68445174b6f75ddfc2bb86e7c1bdb618c5d8daa2158bae2946bf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118796619"
 ---
 # <a name="dxgi"></a>DXGI
 
-Microsoft Infraestructura de gráficos de DirectX (DXGI) controla la enumeración de adaptadores gráficos, la enumeración de modos de presentación, la selección de formatos de búfer, el uso compartido de recursos entre procesos (por ejemplo, entre aplicaciones y Administrador de ventanas de escritorio (DWM)) y la presentación de fotogramas representados en una ventana o monitor para su presentación.
+Microsoft Infraestructura de gráficos de DirectX (DXGI) controla la enumeración de adaptadores de gráficos, la enumeración de modos de presentación, la selección de formatos de búfer, el uso compartido de recursos entre procesos (por ejemplo, entre aplicaciones y Administrador de ventanas de escritorio (DWM)) y la presentación de fotogramas representados en una ventana o monitor para su presentación.
 
 Direct3D 10, Direct3D 11 y Direct3D 12 usan DXGI.
 
@@ -23,7 +23,7 @@ Este conjunto de documentación contiene información sobre la programación con
 
 
 
-| Requisito                                  | Valor                                                                                               |
+| Requisito                                  | Value                                                                                               |
 |-----------------------------------|------------------------------------------------------------------------------------------------|
 | Entornos de tiempo de ejecución compatibles    | <dl> <dt>Windows/C++</dt> </dl>         |
 | Idiomas de programación recomendados | C/C++                                                                                          |

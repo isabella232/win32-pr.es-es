@@ -1,11 +1,11 @@
 ---
-title: Propiedad ActiveBasicDevice LogicalNetworkInterface (PlayToDevice. h)
+title: Propiedad ActiveBasicDevice LogicalNetworkInterface (PlayToDevice.h)
 description: Obtiene el identificador de la interfaz de red lógica.
 ms.assetid: 47C2E0BE-D3E3-4A9F-9FC6-873882811506
 keywords:
-- Propiedad LogicalNetworkInterface API de streaming de multimedia
-- Propiedad LogicalNetworkInterface API de streaming de multimedia, interfaz ActiveBasicDevice
-- Interfaz ActiveBasicDevice API de streaming de multimedia, propiedad LogicalNetworkInterface
+- Propiedad LogicalNetworkInterface de Media Streaming API
+- Propiedad LogicalNetworkInterface Media Streaming API, interfaz ActiveBasicDevice
+- ActiveBasicDevice interface Media Streaming API , LogicalNetworkInterface property
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95a87f2951ea09a0bba3d56da50b8f77a9d4a980
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41ee3e2b23a43e29daf2438cee517220f895ad601607dbdc6a61497f8ef1afa7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736391"
 ---
-# <a name="activebasicdevicelogicalnetworkinterface-property"></a>ActiveBasicDevice:: LogicalNetworkInterface (propiedad)
+# <a name="activebasicdevicelogicalnetworkinterface-property"></a>Propiedad ActiveBasicDevice::LogicalNetworkInterface
 
 Obtiene el identificador de la interfaz de red lógica.
 
@@ -43,7 +43,7 @@ HRESULT get_LogicalNetworkInterface(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a un **GUID** que especifica el identificador de la interfaz de red lógica.
+Puntero a un **GUID** que especifica el identificador de la interfaz de red lógica.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,10 +51,10 @@ Un puntero a un **GUID** que especifica el identificador de la interfaz de red l
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: IWMPNetwork getProxySettings, método
-description: El método getProxySettings devuelve información sobre la configuración de proxy para un protocolo.
+title: Método IWMPNetwork getProxySettings
+description: El método getProxySettings devuelve información sobre la configuración de proxy de un protocolo.
 ms.assetid: eda4829a-4869-4557-8fe9-8061a1e0f586
 keywords:
-- método getProxySettings de Windows Media Player
-- método getProxySettings Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, método getProxySettings
+- Método getProxySettings Reproductor de Windows Media
+- Método getProxySettings Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media método , getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d970160c07c90e84585c87ed1abf740fbe3c6318
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e69c990b01ed885b80c96e3e36ad28c2793baf618fea68b0e20006390c2adeed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331645"
 ---
-# <a name="iwmpnetworkgetproxysettings-method"></a>IWMPNetwork:: getProxySettings (método)
+# <a name="iwmpnetworkgetproxysettings-method"></a>IWMPNetwork::getProxySettings (método)
 
-El método **getProxySettings** devuelve información sobre la configuración de proxy para un protocolo.
+El **método getProxySettings** devuelve información sobre la configuración de proxy de un protocolo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,37 +53,37 @@ Implements IWMPNetwork.getProxySettings
 
 <dl> <dt>
 
-*bstrProtocol* \[ de\]
+*bstrProtocol* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**System.String que** es el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. Int32** que es uno de los valores siguientes.
+**System.Int32** que es uno de los valores siguientes.
 
 
 
-| Value | Descripción                                                                      |
+| Valor | Descripción                                                                      |
 |-------|----------------------------------------------------------------------------------|
-| 0     | No se utiliza un servidor proxy.                                                |
-| 1     | Se está usando la configuración de proxy para el explorador actual (solo es válida para HTTP). |
+| 0     | No se usa un servidor proxy.                                                |
+| 1     | Se está utilizando la configuración de proxy para el explorador actual (válido solo para HTTP). |
 | 2     | Se usa la configuración de proxy especificada manualmente.                            |
-| 3     | La configuración de proxy se detecta automáticamente.                                      |
+| 3     | La configuración del proxy se detecta automáticamente.                                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Se produce un error en este método a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **getProxySettings** para mostrar un mensaje que proporciona información sobre la configuración de proxy actual del reproductor en una etiqueta. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa getProxySettings** para mostrar un mensaje, que proporciona información sobre la configuración de proxy actual del reproductor, en una etiqueta. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -150,22 +150,22 @@ End Select
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. setProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxysettings--vb-and-c.md)
+[**IWMPNetwork.setProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxysettings--vb-and-c.md)
 </dt> </dl>
 
  

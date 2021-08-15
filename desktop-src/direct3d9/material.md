@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\material.htm
 title: Material
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54c13d201152350a8a61950bb609f73cbdb2a3aa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 53d4dcb1cef7597ff7c02d16f1db311287511166c9259c89a0ea60a0c49fb7bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798972"
 ---
 # <a name="material"></a>Material
 
@@ -29,17 +29,17 @@ template Material
 
 Donde:
 
--   color faceColor. Una plantilla ColorRGBA. Vea [**ColorRGBA**](colorrgba.md).
--   exponente de color especular de material de energía.
--   specularColor: color especular de material. Una plantilla ColorRGB. Vea [**ColorRGB**](colorrgb.md).
--   emissiveColor: material emisor color. Una plantilla ColorRGB. Vea [**ColorRGB**](colorrgb.md).
+-   faceColor: color de cara. Una plantilla ColorRGBA. Vea [**ColorRGBA**](colorrgba.md).
+-   power: exponente de color especular de material.
+-   specularColor: color especular del material. Una plantilla ColorRGB. Consulte [**ColorRGB**](colorrgb.md).
+-   emissiveColor: color de material emissive. Una plantilla ColorRGB. Consulte [**ColorRGB**](colorrgb.md).
 
 > [!Note]  
 > El color ambiente requiere un componente alfa.
 
  
 
-[**TextureFilename**](texturefilename.md) es un objeto de datos opcional. Si este objeto no está presente, la superficie no tiene textura.
+[**TextureFilename es**](texturefilename.md) un objeto de datos opcional. Si este objeto no está presente, la cara no tiene texto.
 
 ## <a name="see-also"></a>Vea también
 
