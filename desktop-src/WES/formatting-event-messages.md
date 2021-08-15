@@ -1,30 +1,30 @@
 ---
-title: Dar formato a mensajes de eventos
-description: Un evento puede contener cadenas de mensajes localizadas que se pueden formatear para su presentación.
+title: Aplicar formato a los mensajes de eventos
+description: Un evento puede contener cadenas de mensaje localizadas a las que se puede dar formato para su presentación.
 ms.assetid: 31dd8276-1925-4a0e-9e2a-6966e8086238
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 314742838e5a756787385930e5122117b3a012c7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 119f7467ab36a46039c32c6ffb6f347ca4450966da5b69c1531ac1a966e0b7f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005295"
 ---
-# <a name="formatting-event-messages"></a>Dar formato a mensajes de eventos
+# <a name="formatting-event-messages"></a>Aplicar formato a los mensajes de eventos
 
-Un evento puede contener cadenas de mensajes localizadas que se pueden formatear para su presentación. Para obtener una cadena de mensaje del evento, llame a la función [**EvtFormatMessage**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) . Un evento puede contener las siguientes cadenas de mensaje:
+Un evento puede contener cadenas de mensaje localizadas a las que se puede dar formato para su presentación. Para obtener una cadena de mensaje del evento, llame a la [**función EvtFormatMessage.**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) Un evento puede contener las siguientes cadenas de mensaje:
 
 -   Cadena de mensaje para el propio evento.
 -   Cadena de mensaje que describe el valor de nivel asignado al evento.
 -   Cadena de mensaje que describe el valor de tarea asignado al evento.
--   Cadena de mensaje que describe el valor de OpCode asignado al evento.
+-   Cadena de mensaje que describe el valor de código de operación asignado al evento.
 -   Cadena de mensaje que describe los valores de palabra clave asignados al evento.
 -   Cadena de mensaje que describe el valor de canal asignado al evento.
 
-También puede usar [**EvtFormatMessage**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) para obtener la cadena de mensaje para el proveedor o una cadena XML que contiene el evento y todas las cadenas de mensaje.
+También puede usar [**EvtFormatMessage para**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) obtener la cadena de mensaje para el proveedor o una cadena XML que contiene el evento y todas las cadenas de mensaje.
 
-Además de obtener las cadenas de mensajes de los eventos que se consultan, también puede obtener las cadenas de mensajes de los metadatos del proveedor. Para obtener más información sobre cómo dar formato a un mensaje en función de un identificador de mensaje que se obtiene de los metadatos del proveedor, vea [obtener los metadatos de un proveedor](getting-a-provider-s-metadata-.md).
+Además de obtener las cadenas de mensaje de los eventos que consulta, también puede obtener las cadenas de mensaje de los metadatos del proveedor. Para obtener más información sobre cómo dar formato a un mensaje basado en un identificador de mensaje que obtiene de los metadatos del proveedor, vea Obtener los metadatos [de un proveedor.](getting-a-provider-s-metadata-.md)
 
 En el ejemplo siguiente se muestra cómo obtener las cadenas de mensaje de un evento.
 
@@ -218,9 +218,9 @@ LPWSTR GetMessageString(EVT_HANDLE hMetadata, EVT_HANDLE hEvent, EVT_FORMAT_MESS
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Evento Player. CurrentItemChange
-description: El evento CurrentItemChange se produce cuando cambia Controls. currentItem.
+title: Evento Player.CurrentItemChange
+description: El evento CurrentItemChange tiene lugar cuando cambia Controls.currentItem.
 ms.assetid: e6f68aeb-d7e7-460b-adc9-647f28c678a1
 keywords:
-- Media Player CurrentItemChange de eventos de Windows
-- Evento CurrentItemChange de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento CurrentItemChange
+- Evento CurrentItemChange Reproductor de Windows Media
+- Evento CurrentItemChange Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media evento , CurrentItemChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4c425184bf4b338177ec892ed5362c085dd8cb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5ed0ca3c8333c7261c8332bcc124c905c5540f5cdf0dbefe3f34f121eb901cc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338131"
 ---
-# <a name="playercurrentitemchange-event"></a>Evento Player. CurrentItemChange
+# <a name="playercurrentitemchange-event"></a>Evento Player.CurrentItemChange
 
-El evento **CurrentItemChange** se produce cuando hay *controles*. **CurrentItem** cambia.
+El **evento CurrentItemChange** tiene lugar cuando *controla*. **currentItem** changes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Este evento no devuelve un valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se muestra un controlador de eventos para el *reproductor*. evento **currentItemChange** . El objeto **Player** se creó con ID = "Player".
+En el JScript siguiente se muestra un controlador de eventos para el *reproductor*. **evento currentItemChange.** El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -68,18 +68,18 @@ En el siguiente ejemplo de JScript se muestra un controlador de eventos para el 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Controls. currentItem**](controls-currentitem.md)
+[**Controls.currentItem**](controls-currentitem.md)
 </dt> <dt>
 
 [**Objeto Player**](player-object.md)

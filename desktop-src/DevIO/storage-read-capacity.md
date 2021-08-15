@@ -1,7 +1,7 @@
 ---
-description: Contiene información sobre el tamaño de un dispositivo. Esto se devuelve desde el código de control de la capacidad de lectura de almacenamiento de IOCTL \_ \_ \_ .
+description: Contiene información sobre el tamaño de un dispositivo. Esto se devuelve desde el código de control CAPACIDAD DE LECTURA DE ALMACENAMIENTO \_ DE IOCTL. \_ \_
 ms.assetid: bd18f4b7-f87e-48f6-b7c2-68990beb8d36
-title: STORAGE_READ_CAPACITY estructura (Ntddstor. h)
+title: STORAGE_READ_CAPACITY estructura (Ntddstor.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Ntddstor.h
-ms.openlocfilehash: e57a9f4420b977598e15f9aae219c060665c9d0d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3a138f6594e241c96526ebf6955c61374aa0f48a5aa66f364ef82c1591b64594
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404976"
 ---
-# <a name="storage_read_capacity-structure"></a>Estructura de capacidad de \_ lectura de almacenamiento \_
+# <a name="storage_read_capacity-structure"></a>ESTRUCTURA \_ DE CAPACIDAD DE LECTURA DE \_ ALMACENAMIENTO
 
-Contiene información sobre el tamaño de un dispositivo. Esto se devuelve desde el código de control de la [**capacidad de lectura de almacenamiento de ioctl \_ \_ \_**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity) .
+Contiene información sobre el tamaño de un dispositivo. Esto se devuelve desde el código de control [**DE CAPACIDAD DE LECTURA DE ALMACENAMIENTO \_ \_ \_ DE IOCTL.**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,31 +74,31 @@ Número total de bloques en el disco.
 **DiskLength**
 </dt> <dd>
 
-El tamaño del disco en bytes.
+Tamaño del disco en bytes.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El archivo de encabezado Ntddstor. h está disponible en el kit de controladores de Windows (WDK).
+El archivo de encabezado Ntddstor.h está disponible en Windows Driver Kit (WDK).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008, Windows Server 2003 con SP1<br/>                          |
-| Encabezado<br/>                   | <dl> <dt>Ntddstor. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ntddstor.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_capacidad de \_ lectura de almacenamiento de ioctl \_**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
+[**CAPACIDAD DE \_ LECTURA DE ALMACENAMIENTO DE \_ \_ IOCTL**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: El siguiente código de ejemplo de VBScript muestra cómo se puede utilizar el control de inscripción de certificados con el objeto CCertRequest para crear y enviar una solicitud de certificado.
+description: El siguiente código de ejemplo de VBScript muestra cómo se puede usar el control de inscripción de certificados con el objeto CCertRequest para crear y enviar una solicitud de certificado.
 ms.assetid: be1bc66a-7bc5-4369-9344-168af53fdfb9
 title: Ejemplo de solicitud en VBScript
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 12e14507f0bb27e7bc8caba605158a70f5e08ac4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 039d771e7d07e0c86ed0b5b18842aaa3f6a3ec96c31341697857c586bae5e28b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900590"
 ---
 # <a name="request-sample-in-vbscript"></a>Ejemplo de solicitud en VBScript
 
-El siguiente código de ejemplo de VBScript muestra cómo se puede utilizar el control de inscripción de certificados con el objeto CCertRequest para crear y enviar una [*solicitud de certificado*](../secgloss/c-gly.md).
+El siguiente código de ejemplo de VBScript muestra cómo se puede usar el control de inscripción de certificados con el objeto CCertRequest para crear y enviar una [*solicitud de certificado*](../secgloss/c-gly.md).
 
 
 ```VB

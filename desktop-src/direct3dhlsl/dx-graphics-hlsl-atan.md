@@ -1,6 +1,6 @@
 ---
 title: atan
-description: Devuelve el arcotangente del valor especificado.
+description: Devuelve la arcotangente del valor especificado.
 ms.assetid: e3ce3ac3-1012-414f-a193-102208083e39
 keywords:
 - HLSL de atan
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 290ced1e5100e3bbc780fab6ab984deaca38528f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 69c3b51381318627dd5c3ce7b64fe405968c669418bdf743b5c56eaae535b0a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726405"
 ---
 # <a name="atan"></a>atan
 
-Devuelve el arcotangente del valor especificado.
+Devuelve la arcotangente del valor especificado.
 
 
 
-| *RET* atan (*x*) |
+| *ret* atan(*x*) |
 |-----------------|
 
 
@@ -39,7 +39,7 @@ Devuelve el arcotangente del valor especificado.
 
 | Elemento                                                   | Descripción                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor especificado.<br/> |
 
 
 
@@ -47,22 +47,22 @@ Devuelve el arcotangente del valor especificado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Arco tangente del parámetro *x* . Este valor está dentro del intervalo de-π/2 a π/2.
+Arcotangente del *parámetro x.* Este valor está dentro del intervalo de -π/2 a π/2.
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *direcc* | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *Ret* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -70,18 +70,18 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí       |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

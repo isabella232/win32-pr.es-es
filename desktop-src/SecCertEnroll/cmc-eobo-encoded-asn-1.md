@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una solicitud de inscripción CMC en nombre de (EOBO) que se muestra en el formato ASN. 1. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud de inscripción en nombre de (EOBO) de CMC que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf usado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: 6a339085-de9e-4854-9d17-b8586b0ef5a5
-title: ASN EOBO codificado de CMC. 1
+title: CMC EOBO Encoded ASN.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd486c5bda732cb7d2356fe2508df8b6d5eb753
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 184529ece39d22fc93e8bda889f92ce578dc3106bcf115d3abc43df11199bbda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118902041"
 ---
-# <a name="cmc-eobo-encoded-asn1"></a>ASN EOBO codificado de CMC. 1
+# <a name="cmc-eobo-encoded-asn1"></a>CMC EOBO Encoded ASN.1
 
-El ejemplo siguiente contiene una solicitud de inscripción CMC en nombre de (EOBO) que se muestra en el formato ASN. 1. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud de inscripción en nombre de (EOBO) de CMC que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf usado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -24,11 +24,11 @@ RequesterName=Domain\TargetUser
 CertificateTemplate=User
 ```
 
-Esta configuración genera el siguiente resultado de ejemplo. La configuración especifica el tipo de solicitud (CMC), el nombre de la entidad que solicita la inscripción y el nombre de la plantilla. La plantilla de usuario especifica que:
+Esta configuración genera la siguiente salida de ejemplo. La configuración especifica el tipo de solicitud (CMC), el nombre de la entidad que solicita la inscripción y el nombre de la plantilla. La plantilla Usuario especifica que:
 
--   La solicitud debe usar el proveedor de servicios criptográficos de base de Microsoft 1,0 o el proveedor de servicios criptográficos de Microsoft mejorado 1,0.
--   El nombre del firmante se debe crear a partir de Active Directory.
--   La solicitud incluye el nombre de la plantilla de certificado, el uso mejorado de clave (EKU) y las extensiones de uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación del cliente.
+-   La solicitud debe usar el proveedor criptográfico base de Microsoft 1.0 o el proveedor criptográfico mejorado de Microsoft 1.0.
+-   El nombre del sujeto debe crearse a partir Active Directory.
+-   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación de cliente.
 
 ``` syntax
 0000: 30 82 0c 45                ; SEQUENCE (c45 Bytes)

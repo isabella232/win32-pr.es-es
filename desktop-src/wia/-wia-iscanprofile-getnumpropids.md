@@ -1,7 +1,7 @@
 ---
-description: Obtiene el número de identificadores de propiedad de un perfil.
+description: Obtiene el número de identificaciónes de propiedad de un perfil.
 ms.assetid: fa587c8a-8d09-4dfc-938a-5ec8cc9265f5
-title: 'IScanProfile:: GetNumPropIDS (método) (Scanprofile. h)'
+title: Método IScanProfile::GetNumPropIDS (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: 13d8d276ca4b849fc1a2ae108369f84354d44361
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8193259844732b708e56ba5fb191bd9ed7f9bf8fac27609c256b4df9cc7ccb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441485"
 ---
-# <a name="iscanprofilegetnumpropids-method"></a>IScanProfile:: GetNumPropIDS (método)
+# <a name="iscanprofilegetnumpropids-method"></a>IScanProfile::GetNumPropIDS (método)
 
-Obtiene el número de identificadores de propiedad de un perfil.
+Obtiene el número de identificaciónes de propiedad de un perfil.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,42 +39,42 @@ HRESULT GetNumPropIDS(
 
 <dl> <dt>
 
-*número* \[ de enuncia\]
+*num* \[ out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
-El número de identificadores de propiedad en el perfil.
+Número de identificaciónes de propiedad en el perfil.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IScanProfile**](-wia-iscanprofile.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

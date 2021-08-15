@@ -1,28 +1,28 @@
 ---
-title: Código de ejemplo para recibir notificaciones de cambios
-description: En el ejemplo de código siguiente se muestra cómo usar el control de notificación de cambios de LDAP para recibir notificaciones de cambios en un objeto de Active Directory Domain Services.
+title: Código de ejemplo para recibir notificaciones de cambio
+description: En el ejemplo de código siguiente se muestra cómo usar el control de notificación de cambios LDAP para recibir notificaciones de cambios en un objeto Active Directory Domain Services.
 ms.assetid: e1d36d1c-ee50-4c2f-92f6-eee1dae1c5af
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, recibir notificaciones de cambios
+- Active Directory ejemplos Active Directory , recibir notificaciones de cambio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4edd1b5d6e91ee712e1586bee3b63fcd25ceaf95
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b1d0cbc3a6aeebf1e5e313993fcc060d78379e7aa1f806135f56b4c59926f9ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103995089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693143"
 ---
-# <a name="example-code-for-receiving-change-notifications"></a>Código de ejemplo para recibir notificaciones de cambios
+# <a name="example-code-for-receiving-change-notifications"></a>Código de ejemplo para recibir notificaciones de cambio
 
-En el ejemplo de código siguiente se muestra cómo usar el control de notificación de cambios de LDAP para recibir notificaciones de cambios en un objeto de Active Directory Domain Services. El ejemplo se registra para las notificaciones, lee el estado inicial del objeto y, a continuación, usa un bucle para esperar y procesar los cambios en el objeto.
+En el ejemplo de código siguiente se muestra cómo usar el control de notificación de cambios LDAP para recibir notificaciones de cambios en un objeto Active Directory Domain Services. En el ejemplo se registra para recibir notificaciones, se lee el estado inicial del objeto y, a continuación, se usa un bucle para esperar y procesar los cambios en el objeto.
 
-En primer lugar, el ejemplo de código llama a la función [**\_ \_ ext de búsqueda LDAP**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_search_ext) , que es una operación de búsqueda asincrónica que devuelve después de registrar una solicitud de notificación. En segundo lugar, después de configurar la solicitud de notificación, el ejemplo llama a la función de [**búsqueda LDAP, que es una \_ \_**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_search_s) operación de búsqueda sincrónica que lee el estado actual del objeto. En tercer lugar, el ejemplo utiliza un bucle que llama al \_ resultado de LDAP para esperar los resultados de la operación de búsqueda asincrónica. Cuando se devuelve la función de [**\_ resultado LDAP**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) , en el ejemplo se procesan los resultados de la búsqueda y se repite el bucle.
+En primer lugar, el ejemplo de código llama a la función [**\_ ldap search \_ ext,**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_search_ext) que es una operación de búsqueda asincrónica que se devuelve después de registrar una solicitud de notificación. En segundo lugar, después de configurar la solicitud de notificación, el ejemplo llama a la función [**\_ \_ s**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_search_s) de búsqueda ldap, que es una operación de búsqueda sincrónica que lee el estado actual del objeto. En tercer lugar, el ejemplo, usa un bucle que llama al resultado \_ ldap para esperar los resultados de la operación de búsqueda asincrónica. Cuando se [**devuelve la función \_ de**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) resultado ldap, el ejemplo procesa los resultados de la búsqueda y repite el bucle.
 
-Tenga en cuenta que si en el ejemplo se lee el estado actual y, a continuación, se configura la solicitud de notificación, habrá un período de tiempo durante el cual podrían producirse cambios antes de que se registrara la solicitud de notificación. Al leer el objeto después de configurar la solicitud de notificación, la ventana funciona en orden inverso: podría recibir notificaciones de los cambios que se produjeron antes de leer el estado inicial. Para controlar esto, en el ejemplo se almacena en caché el valor del atributo [**uSNChanged**](/windows/desktop/ADSchema/a-usnchanged) del objeto cuando lee el estado inicial del objeto. A continuación, cuando el [**\_ resultado LDAP**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) se devuelve con una notificación de cambio, en el ejemplo se compara el valor del atributo **uSNChanged** almacenado en caché con el valor notificado por el **\_ resultado LDAP**. Si el nuevo valor del atributo **uSNChanged** es menor o igual que el valor almacenado en caché, el ejemplo descarta los resultados porque indican un cambio que se produjo antes de la operación de lectura inicial.
+Tenga en cuenta que si el ejemplo lee el estado actual y, a continuación, configura la solicitud de notificación, habrá un período de tiempo durante el cual podrían producirse cambios antes de que se registrara la solicitud de notificación. Al leer el objeto después de configurar la solicitud de notificación, la ventana funciona a la inversa: podría recibir notificaciones de los cambios que se produjeron antes de leer el estado inicial. Para controlar esto, el ejemplo almacena en caché el valor del atributo [**uSNChanged**](/windows/desktop/ADSchema/a-usnchanged) del objeto cuando lee el estado inicial del objeto. A continuación, [**cuando el \_**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) resultado ldap vuelve con una notificación de cambio, el ejemplo compara el valor del atributo **uSNChanged** almacenado en caché con el valor notificado por el **resultado \_ ldap**. Si el nuevo valor del atributo **uSNChanged** es menor o igual que el valor almacenado en caché, en el ejemplo se descartan los resultados porque indican un cambio que se produjo antes de la operación de lectura inicial.
 
-En este ejemplo se realiza una búsqueda de nivel base que supervisa un solo objeto. Puede especificar el ámbito **de \_ ámbito \_ de LDAP ONELEVEL** para supervisar todos los objetos secundarios del objeto especificado. También puede modificar el código para registrar hasta cinco solicitudes de notificación y, a continuación, usar la función de [**\_ resultado LDAP**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) para esperar las notificaciones de cualquiera de las solicitudes. Recuerde que las solicitudes de notificación de cambios afectan al rendimiento del servidor. Para obtener más información sobre cómo mejorar el rendimiento, consulte [notificaciones de cambio en Active Directory Domain Services](change-notifications-in-active-directory-domain-services.md).
+En este ejemplo se realiza una búsqueda de nivel base que supervisa un único objeto. Puede especificar el ámbito **LDAP \_ SCOPE \_ ONELEVEL** para supervisar todos los objetos secundarios del objeto especificado. También puede modificar el código para registrar hasta cinco solicitudes de notificación y, a continuación, usar la función de resultado [**ldap \_**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) para esperar las notificaciones de cualquiera de las solicitudes. Recuerde que las solicitudes de notificación de cambio afectan al rendimiento del servidor. Para obtener más información sobre cómo mejorar el rendimiento, vea [Notificaciones de cambio en Active Directory Domain Services](change-notifications-in-active-directory-domain-services.md).
 
 
 ```C++
@@ -407,6 +407,6 @@ int wmain(int   cArgs,WCHAR  *pArgs[])
 
 
 
- 
+ 
 
- 
+ 

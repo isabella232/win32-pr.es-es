@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRecordFormatConversionFailedException'
-title: Constructor de EsentRecordFormatConversionFailedException
+description: 'Más información sobre: Constructor EsentRecordFormatConversionFailedException'
+title: Constructor EsentRecordFormatConversionFailedException
 TOCTitle: 'EsentRecordFormatConversionFailedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecordFormatConversionFailedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrecordformatconversionfailedexception.esentrecordformatconversionfailedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b3bc997d51b48ac51f6171ef5fda7ed3b1eb7b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98bac821bed9938e2bbbea2aa613823e2c0672ec0153adfaebe300aa4db92a46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118491340"
 ---
-# <a name="esentrecordformatconversionfailedexception-constructor"></a>Constructor de EsentRecordFormatConversionFailedException
+# <a name="esentrecordformatconversionfailedexception-constructor"></a>Constructor EsentRecordFormatConversionFailedException
 
 Inicializa una nueva instancia de la clase EsentRecordFormatConversionFailedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentRecordFormatConversionFailedException()
 
 [Miembros de EsentRecordFormatConversionFailedException](./esentrecordformatconversionfailedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

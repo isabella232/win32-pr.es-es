@@ -65,7 +65,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DXFERR \_ BADVALUE, D3DXFERR \_ PARSEERROR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El fragmento de código siguiente proporciona una llamada de ejemplo **a RegisterTemplates** y el contenido de ejemplo para el búfer al que **apunta pvData.**
 
@@ -126,7 +126,7 @@ Este método llama al [**método RegisterEnumTemplates**](id3dxfile--registerenu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

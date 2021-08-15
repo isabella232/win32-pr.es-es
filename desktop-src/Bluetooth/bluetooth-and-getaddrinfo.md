@@ -1,23 +1,23 @@
 ---
-title: Bluetooth y función getaddrinfo
-description: La función función getaddrinfo proporciona traducción desde el nombre de host a la dirección para los transportes basados en IP. Dado que la función función getaddrinfo es específica de los transportes basados en IP, se produce un error en los sockets Bluetooth.
+title: Bluetooth y getaddrinfo
+description: La función getaddrinfo proporciona la traducción del nombre de host a la dirección para los transportes basados en IP. Dado que la función getaddrinfo es específica de los transportes basados en IP, se produce un error en Bluetooth sockets.
 ms.assetid: e17d8542-d4bc-499c-bae4-1f41bff493c3
 keywords:
-- Bluetooth y función getaddrinfo Bluetooth
+- Bluetooth y getaddrinfo Bluetooth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96c2e62b83ac947b74479ff435b93914661aa8da
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: de9faea4cebf9eee183942da04f39dfae123feea4900483d27ae2d70d8cb5b82
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004535"
 ---
-# <a name="bluetooth-and-getaddrinfo"></a>Bluetooth y función getaddrinfo
+# <a name="bluetooth-and-getaddrinfo"></a>Bluetooth y getaddrinfo
 
-La función [**función getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) proporciona traducción desde el nombre de host a la dirección para los transportes basados en IP. Dado que la función **función getaddrinfo** es específica de los transportes basados en IP, se produce un error en los sockets Bluetooth.
+La [**función getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) proporciona la traducción del nombre de host a la dirección para los transportes basados en IP. Dado que **la función getaddrinfo** es específica de los transportes basados en IP, se produce un error en Bluetooth sockets.
 
-Para realizar la traducción desde el nombre de host a la dirección para los sockets de Bluetooth, use la función [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) con **\_ contenedores LUP** para consultar los dispositivos remotos y, a continuación, busque un nombre remoto coincidente específico y la dirección correspondiente.
+Para realizar la traducción del nombre de host a la dirección de los sockets de Bluetooth, use la función [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) con **LUP \_ CONTAINERS** para consultar dispositivos remotos y, a continuación, busque un nombre remoto correspondiente específico y la dirección correspondiente.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -32,6 +32,6 @@ Para realizar la traducción desde el nombre de host a la dirección para los so
 [**WSALookupServiceBegin**](/windows/desktop/api/winsock2/nf-winsock2-wsalookupservicebegina)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

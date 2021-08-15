@@ -1,6 +1,6 @@
 ---
-title: 'RWTexture2D:: Load (int) (función)'
-description: 'Lee los datos de textura. | RWTexture2D:: Load (int) (función)'
+title: Función RWTexture2D::Load(int)
+description: Lee los datos de textura. | Función RWTexture2D::Load(int)
 ms.assetid: AEBB9C78-BE4B-4121-93CC-EE03B9925CF0
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab5f8d755ad4af3127a0c238defc9f1c422061bc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 913cf8372cb08860db639a9ba10bed872648526e7c8850e2e101912fb9f1354e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118510922"
 ---
-# <a name="rwtexture2dloadint-function"></a>RWTexture2D:: Load (int) (función)
+# <a name="rwtexture2dloadint-function"></a>Función RWTexture2D::Load(int)
 
 Lee los datos de textura.
 
@@ -39,7 +39,7 @@ Lee los datos de textura.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,15 +52,15 @@ Ubicación de la textura.
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**RWTexture2D**](sm5-object-rwtexture2d.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto RWTexture2D.**](sm5-object-rwtexture2d.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -68,11 +68,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Cargar métodos](rwtexture2d-load.md)
+[Métodos de carga](rwtexture2d-load.md)
 </dt> </dl>
 
  

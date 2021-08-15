@@ -1,8 +1,8 @@
 ---
-description: Copia el archivo de entrada de directorio lógico o el directorio especificado en la ruta de acceso del objeto en la ubicación especificada por el parámetro de entrada.
+description: Copia el archivo o directorio de entrada del directorio lógico especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada.
 ms.assetid: 038e23d7-71db-4db6-8fb1-e84e972510c9
 ms.tgt_platform: multiple
-title: Método de copia de la clase Win32_Directory
+title: Método Copy de la clase Win32_Directory copia
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 25568167d9532303a7cbee794757bc674a378b39
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85a16d3e63ef46ad2c536103a4e462a3e830e17f56f83cdcf39bbad5a33ebb23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118419760"
 ---
-# <a name="copy-method-of-the-win32_directory-class"></a>Método de copia de la \_ clase de directorio Win32
+# <a name="copy-method-of-the-win32_directory-class"></a>Método copy de la clase Directory de \_ Win32
 
-El método **copiar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) copia el archivo de entrada de directorio lógico o el directorio especificado en la ruta de acceso del objeto en la ubicación especificada por el parámetro de entrada. No se admite una copia si se requiere sobrescribir un archivo lógico existente.
+El **método copy** wmi [class](/windows/desktop/WmiSdk/retrieving-a-class) copia el archivo o directorio de entrada del directorio lógico especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. No se admite una copia si se requiere sobrescribir un archivo lógico existente.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Nombre completo de la copia del archivo (o directorio). Ejemplo: c: \\ temp \\ n
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el archivo se ha copiado correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si el archivo se copió correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -146,19 +146,19 @@ Un parámetro especificado no es válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-A menudo es necesario copiar las carpetas de una ubicación a otra. Por ejemplo, puede copiar una carpeta de un servidor a otro para crear una copia de seguridad de esa carpeta. O bien, es posible que tenga una carpeta plantillas que deba copiarse en estaciones de trabajo de usuario o una carpeta de scripts que debe copiarse en todos los servidores DNS.
+Las carpetas a menudo deben copiarse de una ubicación a otra. Por ejemplo, puede copiar una carpeta de un servidor a otro para crear una copia de seguridad de esa carpeta. O bien, puede tener una carpeta de plantillas que debe copiarse en estaciones de trabajo de usuario o una carpeta de scripts que se debe copiar en todos los servidores DNS.
 
-El \_ método de copia de directorios de Win32 permite copiar una carpeta de una ubicación a otra, ya sea en el mismo equipo (por ejemplo, copiando una carpeta de la unidad C a la unidad D) o en un equipo remoto. Para copiar una carpeta, se devuelve una instancia de la carpeta que se va a copiar y, a continuación, se llama al método de copia, pasando como parámetro la ubicación de destino para la nueva copia de la carpeta. Por ejemplo, esta línea de código copia una carpeta en la carpeta scripts de la unidad F:
+El método De copia de directorio de Win32 permite copiar una carpeta de una ubicación a otra, ya sea en el mismo equipo (por ejemplo, copiando una carpeta de la unidad C a la unidad D) o en un \_ equipo remoto. Para copiar una carpeta, devuelve una instancia de la carpeta que se va a copiar y, a continuación, llama al método Copy, pasando como parámetro la ubicación de destino de la nueva copia de la carpeta. Por ejemplo, esta línea de código copia una carpeta en la carpeta Scripts de la unidad F:
 
 `objFolder.Copy("F:\Scripts")`
 
-WMI no sobrescribirá una carpeta existente al ejecutar el método de copia. Esto significa que se produce un error en la operación de copia si existe la carpeta de destino. Por ejemplo, supongamos que tiene una carpeta denominada scripts e intenta copiar esa carpeta en un recurso compartido remoto denominado \\ \\ archivo ATL-FS-01 \\ . Si ya existe una carpeta con el nombre scripts en ese recurso compartido, se produce un error en la operación de copia.
+WMI no sobrescribirá una carpeta existente al ejecutar el método Copy. Esto significa que se produce un error en la operación de copia si existe la carpeta de destino. Por ejemplo, suponga que tiene una carpeta denominada Scripts e intenta copiar esa carpeta en un recurso compartido remoto denominado \\ \\ atl-fs-01 \\ archive. Si ya existe una carpeta denominada Scripts en ese recurso compartido, se produce un error en la operación de copia.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de código siguientes, tomado de la [copia de una carpeta mediante WMI](https://Gallery.TechNet.Microsoft.Com/71b8f517-0240-42a2-be5c-e5a3921604d2), usa el método de copia para copiar la carpeta C: \\ scripts en D: \\ Archive.
+En el ejemplo de código siguiente, tomado de Copiar una carpeta mediante [WMI,](https://Gallery.TechNet.Microsoft.Com/71b8f517-0240-42a2-be5c-e5a3921604d2)se usa el método Copy para copiar la carpeta C: \\ Scripts en D: \\ Archive.
 
 
 ```VB
@@ -180,24 +180,24 @@ Next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directorio Win32**](win32-directory.md)
+[**Directorio \_ win32**](win32-directory.md)
 </dt> </dl>
 
  

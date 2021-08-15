@@ -1,5 +1,5 @@
 ---
-description: Devuelve un identificador a un contexto de dispositivo de visualización (DC) que tiene la fuente establecida en él.
+description: Devuelve un identificador a un contexto de dispositivo de presentación (DC) que tiene la fuente establecida en él.
 ms.assetid: 57510b89-980d-42bb-a7ab-a292680a6004
 title: Método ID3DX10Font::GetDC (D3DX10.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118303130"
 ---
 # <a name="id3dx10fontgetdc-method"></a>Método ID3DX10Font::GetDC
 
-Devuelve un identificador a un contexto de dispositivo de visualización (DC) que tiene la fuente establecida en él.
+Devuelve un identificador a un contexto de dispositivo de presentación (DC) que tiene la fuente establecida en él.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HDC**](../winprog/windows-data-types.md)**
 
-Identificador de un controlador de dominio de presentación.
+Identificador de un controlador de dominio para mostrar.
 
 ## <a name="requirements"></a>Requisitos
 

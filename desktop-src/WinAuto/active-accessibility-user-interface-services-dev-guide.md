@@ -1,28 +1,28 @@
 ---
-title: Active Accessibility guía del desarrollador de servicios de la interfaz de usuario
-description: 'En esta sección se tratan los temas siguientes:'
+title: Active Accessibility Interfaz de usuario Services Developer's Guide (Guía del desarrollador de Active Accessibility Interfaz de usuario Services)
+description: En esta sección se de tratan los temas siguientes
 ms.assetid: 91738bc9-0e33-4959-8f8a-ac4645e8511a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c463e65231094d10606743eea13b19be216a7bb7
-ms.sourcegitcommit: 85688bbfbe5b121bc05ddf112d54c23a469dfbc0
+ms.openlocfilehash: b97f214b70321ace5ccdbd78e724c37cb1717664a8d7fa621a59f2d847240862
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "105720113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118327045"
 ---
-# <a name="active-accessibility-user-interface-services-developers-guide"></a>Active Accessibility guía del desarrollador de servicios de la interfaz de usuario
+# <a name="active-accessibility-user-interface-services-developers-guide"></a>Active Accessibility Interfaz de usuario Services Developer's Guide (Guía del desarrollador de Active Accessibility Interfaz de usuario Services)
 
-En esta sección se tratan los temas siguientes:
+En esta sección se de tratan los temas siguientes:
 
--   [API de la interfaz de usuario](user-interface-apis.md)
--   [Llamar a Active Accessibility API](calling-active-accessibility-apis.md)
--   [Guía del desarrollador para clientes de Active Accessibility](developer-s-guide-for-active-accessibility-clients.md)
--   [Guía del desarrollador de servidores de Active Accessibility](developer-s-guide-for-active-accessibility-servers.md)
+-   [Interfaz de usuario API](user-interface-apis.md)
+-   [Llamada a Active Accessibility API](calling-active-accessibility-apis.md)
+-   [Guía del desarrollador para clientes Active Accessibility desarrolladores](developer-s-guide-for-active-accessibility-clients.md)
+-   [Guía del desarrollador para servidores Active Accessibility desarrolladores](developer-s-guide-for-active-accessibility-servers.md)
 
- 
+ 
 
- 
+ 
 
 
 

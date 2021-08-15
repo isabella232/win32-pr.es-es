@@ -24,7 +24,7 @@ En esta sección se tratan las API de Direct3D 12 declaradas en d3d12.h, incluid
 | [Funciones principales](direct3d-12-functions.md) | Las siguientes funciones se declaran en d3d12.h. |
 | [Estructuras principales](direct3d-12-structures.md) | Las estructuras siguientes se declaran en d3d12.h. |
 | [Enumeraciones básicas](direct3d-12-enumerations.md) | Las enumeraciones siguientes se declaran en d3d12.h. |
-| [Constantes principales](constants.md) | Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D12. |
+| [Constantes principales](constants.md) | Las siguientes constantes se declaran en d3d12.h, para su uso mediante un título D3D12. |
 
 ## <a name="related-topics"></a>Temas relacionados
 

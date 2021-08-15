@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidFilenameException'
-title: Constructor de EsentInvalidFilenameException
+description: 'Más información sobre: Constructor EsentInvalidFilenameException'
+title: Constructor EsentInvalidFilenameException
 TOCTitle: 'EsentInvalidFilenameException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidFilenameException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidfilenameexception.esentinvalidfilenameexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 14d7258c553e99491e114ea89db4a5379b619f3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f4e4a7115fe535f6796939fe002e2d951477f18b995b968d529a95318411901
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118494402"
 ---
-# <a name="esentinvalidfilenameexception-constructor"></a>Constructor de EsentInvalidFilenameException
+# <a name="esentinvalidfilenameexception-constructor"></a>Constructor EsentInvalidFilenameException
 
 Inicializa una nueva instancia de la clase EsentInvalidFilenameException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentInvalidFilenameException()
 
 [Miembros de EsentInvalidFilenameException](./esentinvalidfilenameexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

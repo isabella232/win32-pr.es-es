@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_SETNEXTTEXT (Prsht. h)
-description: Establece el texto del botón siguiente en un asistente. Puede enviar este mensaje explícitamente o mediante la macro PropSheet \_ SetNextText.
+title: PSM_SETNEXTTEXT mensaje (Prsht.h)
+description: Establece el texto del botón Siguiente en un asistente. Puede enviar este mensaje explícitamente o mediante la macro PropSheet \_ SetNextText.
 ms.assetid: 4608425e-1724-4d0b-b0f6-9fec147a85f6
 keywords:
-- PSM_SETNEXTTEXT controles de mensajes de Windows
+- PSM_SETNEXTTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d781a8d76fca5c1e74bcda452b6ab7e03a32aacc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3d177acb2f2c96e12f5dc4b460ee88149ad81f9b4f79cc3505f776d8f1f92551
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410085"
 ---
-# <a name="psm_setnexttext-message"></a>Mensaje de PSM \_ SETNEXTTEXT
+# <a name="psm_setnexttext-message"></a>Mensaje PSM \_ SETNEXTTEXT
 
-Establece el texto del botón **siguiente** en un asistente. Puede enviar este mensaje explícitamente o mediante la macro [**PropSheet \_ SetNextText**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setnexttext) .
+Establece el texto del botón **Siguiente** en un asistente. Puede enviar este mensaje explícitamente o mediante la macro [**PropSheet \_ SetNextText.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setnexttext)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -52,11 +52,11 @@ No hay ningún valor devuelto significativo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **PSM \_ SETNEXTTEXTW** (Unicode)<br/>                                         |
 
 

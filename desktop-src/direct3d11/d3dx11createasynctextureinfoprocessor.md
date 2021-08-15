@@ -29,7 +29,7 @@ ms.locfileid: "118536264"
 
  
 
-Cree un procesador de datos que se usará con un bombeo [**de subprocesos**](id3dx11threadpump.md).
+Cree un procesador de datos que se usará con una bomba [**de subprocesos**](id3dx11threadpump.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,7 +71,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta API crea una interfaz de procesador de datos; [**D3DX11CreateAsyncTextureProcessor crea**](d3dx11createasynctextureprocessor.md) la interfaz del procesador de datos y carga la textura.
 
@@ -92,7 +92,7 @@ En el caso de las aplicaciones de escritorio Win32, puede usar el Runtime de sim
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

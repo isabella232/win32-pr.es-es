@@ -1,19 +1,19 @@
 ---
-description: Indica la fecha y la hora en que se imprimió por última vez el documento. El nombre heredado es &\# 0034; DocLastPrinted&\# 0034;.
+description: Indica la fecha y hora en que se ha impreso por última vez el documento. El nombre heredado es &\# 0034;DocLastPrinted&\# 0034;.
 ms.assetid: 57a08471-04b2-4c1e-9212-b76f6ca631f8
 title: System.Document. DatePrinted
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c900a78782899c9e8b7497b8578d5bbdcab3898
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecb71e38416e845eff7283bfa44fc1ae8a75b7b9babe8927cb30a233ef9065c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466702"
 ---
 # <a name="systemdocumentdateprinted"></a>System.Document. DatePrinted
 
-Indica la fecha y la hora en que se imprimió por última vez el documento. El nombre heredado es "DocLastPrinted".
+Indica la fecha y hora en que se ha impreso por última vez el documento. El nombre heredado es "DocLastPrinted".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,9 +46,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'SystemConfig_V0_Services clase : esta clase es la clase de tipo de evento para los eventos de configuración de servicio.'
+description: 'SystemConfig_V0_Services clase : esta clase es la clase de tipo de evento para los eventos de configuración del servicio.'
 ms.assetid: 1e6c2061-f1a2-4253-a0c4-4b45b2feceda
 title: SystemConfig_V0_Services clase
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "118393794"
 ---
 # <a name="systemconfig_v0_services-class"></a>SystemConfig \_ V0 \_ Services (clase)
 
-Esta clase es la clase de tipo de evento para los eventos de configuración de servicio.
+Esta clase es la clase de tipo de evento para los eventos de configuración del servicio.
 
 La sintaxis siguiente se simplifica a partir del código MOF.
 

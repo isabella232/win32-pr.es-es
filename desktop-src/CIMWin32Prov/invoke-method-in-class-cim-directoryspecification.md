@@ -26,11 +26,11 @@ ms.locfileid: "118419309"
 El **método Invoke** de la clase Cim [**\_ DirectorySpecification**](cim-directoryspecification.md) evalúa una comprobación determinada. Los detalles sobre cómo el método evalúa una comprobación determinada en un contexto CIM se describen mediante las subclases [**cim \_ check**](cim-check.md) no abstractas. Este método se hereda de **CIM \_ Check**.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Devuelve un valor 0 si se realiza correctamente, un valor 1 si no se admite el m
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

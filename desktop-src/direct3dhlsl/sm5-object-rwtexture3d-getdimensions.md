@@ -1,9 +1,9 @@
 ---
-title: 'RWTexture3D:: Getdimensions ((función)'
-description: 'Devuelve las dimensiones del recurso. | RWTexture3D:: Getdimensions ((función)'
+title: Función RWTexture3D::GetDimensions
+description: Devuelve las dimensiones del recurso. | Función RWTexture3D::GetDimensions
 ms.assetid: ba70b955-1e80-4f27-84f1-fc9d26a1f1ab
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 499ab493851257030921e9d55f4873eef8726915
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2fcd1f5e5fb1ab87193c2946e68a8144f34a7275c9ad90e87e9cc7e960336e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509213"
 ---
-# <a name="rwtexture3dgetdimensions-function"></a>RWTexture3D:: Getdimensions ((función)
+# <a name="rwtexture3dgetdimensions-function"></a>Función RWTexture3D::GetDimensions
 
 Devuelve las dimensiones del recurso.
 
@@ -38,30 +38,30 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Ancho* \[ de enuncia\]
+*Ancho* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El ancho del recurso, en textura.
+Ancho del recurso, en texturas.
 
 </dd> <dt>
 
-*Alto* \[ de enuncia\]
+*Alto* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El alto del recurso, en textura.
+Alto del recurso, en texturas.
 
 </dd> <dt>
 
-*Nivel de detalle* \[ enuncia\]
+*Profundidad* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-La profundidad de recursos, en textura.
+Profundidad del recurso, en los elementos de textura.
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ La profundidad de recursos, en textura.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -86,11 +86,11 @@ void GetDimensions(out float Width,
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -98,14 +98,14 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [RWTexture3D](sm5-object-rwtexture3d.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

@@ -3,14 +3,14 @@ title: Compatibilidad con varios idiomas
 description: Compatibilidad con varios idiomas
 ms.assetid: f46efb7f-73d1-4f64-aa44-cb50170a2245
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, compatibilidad con varios idiomas
-- listas de reproducción de metarchivos, compatibilidad con varios idiomas
+- Windows Listas de reproducción de metarchivo multimedia, compatibilidad con varios idiomas
+- listas de reproducción de metarchivo, compatibilidad con varios idiomas
 - listas de reproducción, compatibilidad con varios idiomas
-- Listas de reproducción de metarchivos de Windows Media, compatibilidad con varios idiomas
-- listas de reproducción de metarchivos, compatibilidad con varios idiomas
+- Windows Listas de reproducción de metarchivo multimedia, compatibilidad con varios idiomas
+- listas de reproducción de metarchivo, compatibilidad con varios idiomas
 - listas de reproducción, compatibilidad con varios idiomas
-- Listas de reproducción de metarchivos de Windows Media, compatibilidad con idiomas
-- listas de reproducción de metarchivos, compatibilidad con idiomas
+- Windows Listas de reproducción de metarchivo multimedia, compatibilidad con idiomas
+- listas de reproducción de metarchivo, compatibilidad con idiomas
 - listas de reproducción, compatibilidad con idiomas
 - compatibilidad con varios idiomas
 - compatibilidad con varios lenguajes
@@ -22,19 +22,19 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d8855aeb798e4243182a6f82479289ccccbd97d8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a04fc9f3a1f6d481ad88e85323c7bdd253ddde7dd2f020de2ea42e77c83c4ea3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002075"
 ---
 # <a name="support-for-multiple-languages"></a>Compatibilidad con varios idiomas
 
-Windows Media Player 9 series o posterior admiten los metaarchivos de Windows Media creados con el juego de caracteres Unicode. Esto le permite incluir metadatos multilingües en la lista de reproducción de metarchivo. Las siguientes reglas rigen el uso de metadatos multilingües en los metaarchivos de Windows Media:
+Reproductor de Windows Media serie 9 o posterior admite metadatos Windows multimedia creados mediante el juego de caracteres Unicode. Esto le permite incluir metadatos multilingües en la lista de reproducción de metarchivo. Las reglas siguientes rigen el uso de metadatos multilingües en Windows metarchivos multimedia:
 
 -   Los caracteres se deben codificar mediante el esquema de codificación UTF-8.
--   La lista de reproducción del metarchivo debe incluir el **parámetro** siguiente en el nivel de lista de reproducción:
+-   La lista de reproducción de metarchivo debe incluir el **siguiente PARÁMETRO en** el nivel de lista de reproducción:
     ```XML
     <PARAM  NAME = "Encoding"  VALUE = "utf-8">
     
@@ -42,8 +42,8 @@ Windows Media Player 9 series o posterior admiten los metaarchivos de Windows Me
 
     
 
--   Solo Windows Media Player 9 series o versiones posteriores admiten esta funcionalidad.
--   Si la lista de reproducción del metarchivo no se guarda con la codificación UTF-8 y el elemento **param** correcto, se analizará con la página de códigos configuración regional predeterminada del sistema del equipo del usuario.
+-   Solo Reproductor de Windows Media serie 9 o posterior admite esta funcionalidad.
+-   Si la lista de reproducción de metarchivo no se guarda con codificación UTF-8 y el elemento **PARAM** correcto, se analizará mediante la página de códigos de configuración regional del sistema predeterminada del equipo del usuario.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -52,12 +52,12 @@ Windows Media Player 9 series o posterior admiten los metaarchivos de Windows Me
 [**Elemento PARAM**](param-element.md)
 </dt> <dt>
 
-[**Información general de los metaarchivos de Windows Media**](windows-media-metafiles-overview.md)
+[**Windows Introducción a los metarchivos multimedia**](windows-media-metafiles-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

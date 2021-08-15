@@ -1,6 +1,6 @@
 ---
-title: 'Texture2D:: Load (int, int, uint) (función)'
-description: 'Lee los datos de textura y devuelve el estado de la operación. | Texture2D:: Load (int, int, uint) (función)'
+title: Función Texture2D::Load(int,int,uint)
+description: Lee los datos de textura y devuelve el estado de la operación. | Función Texture2D::Load(int,int,uint)
 ms.assetid: 05A12BE2-4604-470B-9EE8-F03F51E6D254
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0c591b92b64641e169023f30663d8f5c6ef8a6c9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 890f49a0609367dcf91c91146f786568fdd83f0f207f7aa69d8dd7c4019b4d1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118507388"
 ---
-# <a name="texture2dloadintintuint-function"></a>Texture2D:: Load (int, int, uint) (función)
+# <a name="texture2dloadintintuint-function"></a>Función Texture2D::Load(int,int,uint)
 
 Lee los datos de textura y devuelve el estado de la operación.
 
@@ -41,7 +41,7 @@ Lee los datos de textura y devuelve el estado de la operación.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -50,7 +50,7 @@ Las coordenadas de textura.
 
 </dd> <dt>
 
-*Desplazamiento* \[ de\]
+*Desplazamiento* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -59,12 +59,12 @@ Desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se han tomado valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -72,13 +72,13 @@ Estado de la operación. No se puede tener acceso directamente al estado. en su 
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**Texture2D**](sm5-object-texture2d.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto Texture2D.**](sm5-object-texture2d.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Cargar métodos](texture2d-load.md)
+[Métodos de carga](texture2d-load.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
 title: Funciones para clientes
-description: En esta sección se describen las funciones de API usadas en las aplicaciones cliente de automatización de la interfaz de usuario de Microsoft.
+description: En esta sección se describen las funciones de API que se usan en Microsoft Automatización de la interfaz de usuario aplicaciones cliente.
 ms.assetid: abf28ebe-c902-4690-a445-d3e73214c41b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad63b78ee8419e4e095626e609db22127e84ba53
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 612283f20305e67302e243edd5e1c76d144e5c413989fdba382deb003b9fb024
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324716"
 ---
 # <a name="functions-for-clients"></a>Funciones para clientes
 
-En esta sección se describen las funciones de API usadas en las aplicaciones cliente de automatización de la interfaz de usuario de Microsoft.
+En esta sección se describen las funciones de API que se usan en Microsoft Automatización de la interfaz de usuario aplicaciones cliente.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,7 +21,7 @@ En esta sección se describen las funciones de API usadas en las aplicaciones cl
 
 | Función                                                                               | Descripción                                                                         |
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**UiaHasServerSideProvider**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiahasserversideprovider)<br/> | Determina si una ventana tiene una implementación del proveedor de automatización de la interfaz de usuario.<br/> |
+| [**UiaHasServerSideProvider**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiahasserversideprovider)<br/> | Determina si una ventana tiene una implementación Automatización de la interfaz de usuario proveedor de aplicaciones.<br/> |
 
 
 
@@ -31,7 +31,7 @@ En esta sección se describen las funciones de API usadas en las aplicaciones cl
 
 <dl> <dt>
 
-[Clientes de UI Automation](uiauto-entry-uiautoclientsforwin32apps.md)
+[Automatización de la interfaz de usuario clientes](uiauto-entry-uiautoclientsforwin32apps.md)
 </dt> </dl>
 
  

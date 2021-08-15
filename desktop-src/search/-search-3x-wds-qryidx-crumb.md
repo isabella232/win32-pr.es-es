@@ -13,24 +13,24 @@ ms.locfileid: "118463247"
 ---
 # <a name="crumb-argument-windows-search"></a>Argumento CRUMB (Windows Search)
 
-El argumento admite instrucciones de sintaxis de consulta avanzada (AQS) completa y es especialmente útil como medio para controlar el `crumb` ámbito de una búsqueda. Además de los valores de AQS, el argumento puede tomar un parámetro especial en Windows Vista y los parámetros y en XP, como se describe más adelante `crumb` `location` en este `kind` `store` tema.
+El argumento admite instrucciones de sintaxis de consulta avanzada (AQS) completa y es especialmente útil como medio de controlar el `crumb` ámbito de una búsqueda. Además de los argumentos de AQS, el argumento puede tomar un parámetro especial en Windows Vista y los parámetros y en XP, como se describe más adelante `crumb` `location` en este `kind` `store` tema.
 
 Este tema se organiza de la siguiente manera:
 
--   [Sintaxis de miga](#crumb-syntax)
+-   [Sintaxis de crumb](#crumb-syntax)
     -   [Ejemplos generales](#general-examples)
--   [Uso de miga con Vista (ubicación)](#using-crumb-with-vista-location)
+-   [Uso de crumb con Vista (ubicación)](#using-crumb-with-vista-location)
     -   [Ejemplos de Vista](#vista-examples)
     -   [Constantes para carpetas comunes](#constants-for-common-folders)
--   [Uso de miga con Windows XP (tipo y almacén)](#using-crumb-with-windows-xp-kind-and-store)
+-   [Uso de crumb con Windows XP (tipo y almacén)](#using-crumb-with-windows-xp-kind-and-store)
     -   [Ejemplos de XP](#xp-examples)
 -   [Temas relacionados](#related-topics)
 
  
 
-## <a name="crumb-syntax"></a>Sintaxis de miga
+## <a name="crumb-syntax"></a>Sintaxis de crumb
 
-La sintaxis de la miga es la siguiente:
+La sintaxis crumb es la siguiente:
 
 
 ```
@@ -54,13 +54,13 @@ crumb=location:c%3a%5cMyVacationPix,Vacation&
 
  
 
-## <a name="using-crumb-with-vista-location"></a>Uso de miga con Vista (ubicación)
+## <a name="using-crumb-with-vista-location"></a>Uso de crumb con Vista (ubicación)
 
-En el parámetro crumb, Windows Vista admite AQS completo y también la propiedad , que tiene una implementación especial disponible solo `location` en Windows Vista. Puede usar una cadena de AQS o la propiedad `location` dentro de un único parámetro crumb, pero no ambos. Si el parámetro crumb incluye AQS, se omite todo lo demás de ese parámetro de miga.
+En el parámetro crumb, Windows Vista admite AQS completo y también la propiedad , que tiene una implementación especial disponible solo `location` en Windows Vista. Puede usar una cadena de AQS o la propiedad dentro `location` de un único parámetro crumb, pero no ambos. Si el parámetro crumb incluye AQS, se omite todo lo demás en ese parámetro crumb.
 
-La `location` propiedad permite especificar una ruta de acceso para buscar. Windows Vista puede omitir el indexador y atravesar el directorio directamente si la ubicación está fuera del ámbito de rastreo del indexador. Por lo tanto, estas búsquedas pueden ser más lentas que las búsquedas que usan el indexador.
+La `location` propiedad permite especificar una ruta de acceso para buscar. Windows Vista puede omitir el indexador y recorrer el directorio directamente si la ubicación está fuera del ámbito de rastreo del indexador. Por lo tanto, estas búsquedas pueden ser más lentas que las búsquedas que usan el indexador.
 
-Cuando se especifica una `location` propiedad, se admiten dos parámetros adicionales y opcionales:
+Al especificar una `location` propiedad, se admiten dos parámetros adicionales y opcionales:
 
 
 
@@ -73,21 +73,21 @@ Cuando se especifica una `location` propiedad, se admiten dos parámetros adicio
 
  
 
-Para el ámbito de una búsqueda mediante el protocolo search-ms:, tiene distintas opciones en función del destino del ámbito.
+Para el ámbito de una búsqueda mediante el protocolo search-ms:, tiene diferentes opciones en función del destino del ámbito.
 
-Carpeta en un equipo local:
+Carpeta en una máquina local:
 
 -   Usar AQS (crumb=folder:<ruta de acceso con codificación URL>)
--   Uso del argumento location (crumb=location:<ruta de acceso codificada con url>)
+-   Uso del argumento location (crumb=location:<ruta de acceso con codificación URL>)
 
 Carpeta en una máquina o red remota:
 
--   Uso del argumento location (crumb=location:<ruta de acceso codificada con url>)
+-   Uso del argumento location (crumb=location:<ruta de acceso con codificación URL>)
 
 Carpeta a la que se accede a través de un controlador de protocolo UNC conocido:
 
 -   Use AQS (crumb=store: <UNC protocol handler name> )
--   Uso del argumento location (crumb=location:<ruta de acceso codificada con url>)
+-   Uso del argumento location (crumb=location:<ruta de acceso con codificación URL>)
 
 ### <a name="vista-examples"></a>Ejemplos de Vista
 
@@ -106,11 +106,11 @@ En el primer ejemplo se ejecuta una búsqueda de "vacaciones" a partir de la ubi
 
 En el segundo ejemplo se ejecuta una búsqueda en C: \\ Imágenes, pero no en C: \\ Imágenes \\ duplicadas.
 
-En el tercer ejemplo se ejecuta una búsqueda en C: Documentos, limitada a archivos con la \\ propiedad kind establecida en imágenes.
+En el tercer ejemplo se ejecuta una búsqueda en C: Documentos, limitado a archivos con la \\ propiedad kind establecida en imágenes.
 
 ### <a name="constants-for-common-folders"></a>Constantes para carpetas comunes
 
-Windows Vista permite el uso de valores [KNOWNFOLDERID](/previous-versions//bb762584(v=vs.85)) que proporcionan una manera única independiente del sistema de identificar carpetas especiales usadas con frecuencia por las aplicaciones, pero que pueden no tener el mismo nombre o ubicación en un sistema determinado. Por ejemplo, la carpeta del sistema puede ser "C: Windows" en un sistema y \\ "C: \\ Winnt" en otro. Antes de Windows Vista, [se usaban los CSIDL.](/windows/desktop/shell/csidl)
+Windows Vista permite el uso de valores [KNOWNFOLDERID](/previous-versions//bb762584(v=vs.85)) que proporcionan una manera única independiente del sistema de identificar las carpetas especiales usadas con frecuencia por las aplicaciones, pero que pueden no tener el mismo nombre o ubicación en ningún sistema determinado. Por ejemplo, la carpeta del sistema puede ser "C: Windows" en un sistema y \\ "C: \\ Winnt" en otro. Antes de Windows Vista, [se usaban los CSIDL.](/windows/desktop/shell/csidl)
 
 Use estas ubicaciones con esta sintaxis:
 
@@ -123,9 +123,9 @@ crumb=location:shell%3a<LocationName>&
 
  
 
-## <a name="using-crumb-with-windows-xp-kind-and-store"></a>Uso de miga con Windows XP (tipo y almacén)
+## <a name="using-crumb-with-windows-xp-kind-and-store"></a>Uso de crumb con Windows XP (tipo y almacén)
 
-Para Windows buscar en Windows XP (WDS 3.x), los términos "kind" y "store" de AQS tienen una implementación especial. Los valores "kind" son los mismos [que se usan en WDS 2.x.](../lwef/-search-2x-wds-perceivedtype.md) Los valores de "store" incluyen lo siguiente:
+Para Windows search en Windows XP (WDS 3.x), los términos "kind" y "store" de AQS tienen una implementación especial. Los valores "kind" son los mismos [que se usan en WDS 2.x.](../lwef/-search-2x-wds-perceivedtype.md) Los valores de "store" incluyen lo siguiente:
 
 -   Mapi
 -   archivo
@@ -142,7 +142,7 @@ search-ms:query=from:john&crumb=kind:communications&
 
 
 
-En el primer ejemplo se devuelven Outlook express de Microsoft de John con la etiqueta personalizada "Correo electrónico de OE". En el segundo ejemplo se ejecuta una búsqueda de cualquier comunicación de John.
+En el primer ejemplo se devuelven Outlook Express de Microsoft de John con la etiqueta personalizada "Correo electrónico de OE". En el segundo ejemplo se ejecuta una búsqueda de cualquier comunicación de John.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -160,7 +160,7 @@ En el primer ejemplo se devuelven Outlook express de Microsoft de John con la et
 [Argumento STACKEDBY](-search-3x-wds-qryidx-stackedby.md)
 </dt> <dt>
 
-[ARGUMENTO SUBQUERY](-search-3x-wds-qryidx-subquery.md)
+[Argumento SUBQUERY](-search-3x-wds-qryidx-subquery.md)
 </dt> </dl>
 
  

@@ -63,7 +63,7 @@ Elemento de pShaderVariable (si es una matriz) o 0 si no es aplicable.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 D3DX11 PASS SHADER DESC se usa con los métodos \_ \_ \_ [**ID3DX11EffectPass**](id3dx11effectpass.md) Get \* ShaderDesc.
 
@@ -79,7 +79,7 @@ Si se trata de una asignación de sombreador en línea, la interfaz devuelta ser
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

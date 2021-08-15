@@ -1,5 +1,5 @@
 ---
-description: El método Reset de la clase \_ Cim Fan solicita un restablecimiento del dispositivo lógico.
+description: El método Reset de la clase de ventilador CIM \_ solicita un restablecimiento del dispositivo lógico.
 ms.assetid: f7755cf6-cc16-4559-ac72-60d3a782f267
 ms.tgt_platform: multiple
 title: Método Reset de la CIM_Fan clase
@@ -26,7 +26,7 @@ ms.locfileid: "118419138"
 El **método Reset** de la clase Cim Fan solicita un \_ restablecimiento del dispositivo lógico. Este método se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

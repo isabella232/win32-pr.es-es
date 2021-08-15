@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_FONTCHANGED (commctrl. h)
-description: Lo envía un control de vista de lista cuando el control ha cambiado una fuente. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_FONTCHANGED de notificación (Commctrl.h)
+description: Enviado por un control de vista de lista cuando el control ha cambiado una fuente. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: ffa019b0-34be-4bb3-b9dd-c267545fec84
 keywords:
-- NM_FONTCHANGED controles de código de notificación de Windows
+- NM_FONTCHANGED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75003021f83276c953b5aa2cf0b812d20d60857b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5369b7719a02e28562f4e71aecffdd3680aa602b6154eac9cc8685bdbe2b2b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103904997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411154"
 ---
-# <a name="nm_fontchanged-notification-code"></a>Código de notificación de NM \_ FONTCHANGED
+# <a name="nm_fontchanged-notification-code"></a>Código \_ de notificación DE NM FONTCHANGED
 
-Lo envía un control de vista de lista cuando el control ha cambiado una fuente. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de vista de lista cuando el control ha cambiado una fuente. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_FONTCHANGED
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ El control omite el valor devuelto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

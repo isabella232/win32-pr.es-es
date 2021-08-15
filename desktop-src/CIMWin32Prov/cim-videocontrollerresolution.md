@@ -35,14 +35,14 @@ ms.locfileid: "118420382"
 
 La **clase CIM \_ VideoControllerResolution** representa los distintos modos de vídeo que puede admitir un controlador de vídeo. Los modos de vídeo se definen mediante las posibles resoluciones horizontales y verticales, la frecuencia de actualización, el modo de examen y el número de configuraciones de color compatibles con un controlador. Las resoluciones reales en uso son los valores especificados en el [**objeto \_ VideoController de CIM.**](cim-videocontroller.md)
 
-El hardware que no es compatible con Windows Display Driver Model (WDDM) devuelve valores de propiedad inexactos para las instancias de esta clase.
+El hardware que no es compatible con Windows modelo de controlador de visualización (WDDM) devuelve valores de propiedad inexactos para las instancias de esta clase.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -281,7 +281,7 @@ Resolución vertical del controlador, en píxeles.
 
 ## <a name="remarks"></a>Comentarios
 
-WMI implementa la **clase \_ CIM VideoControllerResolution.** La **clase \_ CIM VideoControllerResolution** es una clase dinámica.
+WMI implementa la **clase \_ Cim VideoControllerResolution.** La **clase \_ CIM VideoControllerResolution** es una clase dinámica.
 
 Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 

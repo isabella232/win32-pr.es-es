@@ -1,11 +1,11 @@
 ---
-title: IDWriteFontFace GetGdiCompatibleGlyphMetrics, método
-description: Obtiene las métricas del glifo en unidades de diseño de fuentes con los valores devueltos compatibles con lo que generará GDI.
+title: Método IDWriteFontFace GetGdiCompatibleGlyphMetrics
+description: Obtiene métricas de glifo en unidades de diseño de fuentes con los valores devueltos compatibles con lo que generaría GDI.
 ms.assetid: 7bda3916-6db3-4f56-b18c-288506c0b646
 keywords:
 - Método GetGdiCompatibleGlyphMetrics de escritura directa
-- Método GetGdiCompatibleGlyphMetrics de escritura directa, interfaz IDWriteFontFace
-- Interfaz IDWriteFontFace Direct Write, método GetGdiCompatibleGlyphMetrics
+- Método GetGdiCompatibleGlyphMetrics direct write , interfaz IDWriteFontFace
+- Método GetGdiCompatibleGlyphMetrics de la interfaz IDWriteFontFace
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a949edbdad2f25d748e5af64ebe408c79c7372b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd36fc09ff8161ba8fb72d3b55b9351b0a7d2a6bd3f3f11a71c15a8d9422f6c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816505"
 ---
-# <a name="idwritefontfacegetgdicompatibleglyphmetrics-method"></a>IDWriteFontFace:: GetGdiCompatibleGlyphMetrics (método)
+# <a name="idwritefontfacegetgdicompatibleglyphmetrics-method"></a>Método IDWriteFontFace::GetGdiCompatibleGlyphMetrics
 
-Obtiene las métricas del glifo en unidades de diseño de fuentes con los valores devueltos compatibles con lo que generará GDI.
+Obtiene métricas de glifo en unidades de diseño de fuentes con los valores devueltos compatibles con lo que generaría GDI.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,45 +52,45 @@ virtual HRESULT GetGdiCompatibleGlyphMetrics(
 *emSize* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Tamaño de lógic de la fuente en unidades DIP.
+Tamaño de la fuente en unidades DIP.
 
 </dd> <dt>
 
 *pixelsPerDip* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Número de píxeles físicos por DIP.
 
 </dd> <dt>
 
-*transformación* \[ de en, opcional\]
+*transformación* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **\* [**\_ matriz de DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) const**
+Tipo: **const [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
 
-Transformación opcional que se aplica a los glifos y sus posiciones. Esta transformación se aplica después del ajuste de escala especificado por el tamaño de fuente y *pixelsPerDip*.
+Una transformación opcional aplicada a los glifos y sus posiciones. Esta transformación se aplica después del escalado especificado por el tamaño de fuente y *pixelsPerDip*.
 
 </dd> <dt>
 
-*useGdiNatural* 
+*useGdiAtura* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Cuando se establece en **false**, las métricas son las mismas que las métricas del texto con alias de GDI. Cuando se establece en **true**, las métricas son las mismas que las métricas de texto que la GDI mide usando una fuente creada con **\_ \_ calidad natural de CLEARTYPE**.
+Cuando se establece en **FALSE,** las métricas son las mismas que las métricas del texto con alias GDI. Cuando se establece en **TRUE,** las métricas son las mismas que las métricas de texto medidas por GDI mediante una fuente creada con **CLEARTYPE \_ NATURAL \_ QUALITY**.
 
 </dd> <dt>
 
-*glyphIndices* \[ de\]
+*glyphIndices* \[ En\]
 </dt> <dd>
 
 Tipo: **const UINT16 \***
 
-Matriz de índices de glifo para la que se van a calcular las métricas.
+Matriz de índices de glifo para los que se calculan las métricas.
 
 </dd> <dt>
 
@@ -99,25 +99,25 @@ Matriz de índices de glifo para la que se van a calcular las métricas.
 
 Tipo: **UINT32**
 
-Número de elementos de la matriz *glyphIndices* .
+Número de elementos de la matriz *glyphIndices.*
 
 </dd> <dt>
 
-*glyphMetrics* \[ enuncia\]
+*glyphMetrics* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ métricas del glifo de DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics)\***
+Tipo: **[ **MÉTRICAS DE \_ GLIFO DE \_ DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics)\***
 
-Matriz de las estructuras de [**\_ \_ métricas del glifo de DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics) rellenadas por esta función. Las métricas están en unidades de diseño de fuentes.
+Matriz de estructuras [**DWRITE \_ GLYPH \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics) rellenadas por esta función. Las métricas están en unidades de diseño de fuentes.
 
 </dd> <dt>
 
 *isSideways* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Un valor BOOLEANO que indica si la fuente se usa en una ejecución lateral. Esto puede afectar a las métricas del glifo si la fuente tiene una simulación oblicuo porque la simulación oblicuo lateral difiere de la simulación oblicuo no lateral.
+Valor BOOL que indica si la fuente se usa en una ejecución lateral. Esto puede afectar a las métricas de glifo si la fuente tiene simulación oblicuo porque la simulación oblicua lateral difiere de la simulación oblicua no lateral.
 
 </dd> </dl>
 
@@ -125,20 +125,20 @@ Un valor BOOLEANO que indica si la fuente se usa en una ejecución lateral. Esto
 
 Tipo: **HRESULT**
 
-Código de error **HRESULT** estándar. Si alguno de los índices de glifos de entrada está fuera del intervalo de índices de glifo válido para la fuente actual, se devolverá **E \_ INVALIDARG** .
+Código de error **HRESULT** estándar. Si alguno de los índices de glifo de entrada está fuera del intervalo de índice de glifo válido para la cara de fuente actual, se devolverá **E \_ INVALIDARG.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

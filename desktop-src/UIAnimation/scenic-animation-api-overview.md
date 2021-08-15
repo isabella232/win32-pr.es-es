@@ -4,9 +4,9 @@ description: Esta información general proporciona una introducción a la Window
 ms.assetid: de1380c9-6801-4178-9281-a23af7d71d77
 keywords:
 - Windows Animation Windows Animation ,overview
-- objetos de administrador de animación Windows Animación ,descrito
-- variables de animación Windows animación , descrita
-- objetos de temporizador de animación Windows Animación ,descrito
+- objetos de administrador de animación Windows Animación , descrito
+- variables de animación Windows Animation ,described
+- objetos de temporizador de animación Windows Animación , descrito
 - timing system Windows Animation
 - duración contextual de Windows animación
 - velocidad de coincidencia Windows animación
@@ -91,7 +91,7 @@ La WINDOWS Animation API es una API basada en COM de un solo subproceso que prop
 -   Un objeto de temporizador, [**UIAnimationTimer,**](/previous-versions/windows/desktop/legacy/dd317021(v=vs.85))para determinar la hora actual y, opcionalmente, para impulsar la animación
 -   Enlaces de eventos para supervisar el estado y el progreso de la animación
 
-Para obtener la referencia completa de la API, [consulte Windows animation reference (Referencia de animación).](windows-animation-reference.md) Para obtener código de ejemplo, [vea Windows Animation Tasks](using-windows-animation.md) y Windows Animation [Samples](windows-animation-samples.md).
+Para obtener la referencia completa de la API, [consulte Windows Animation Reference](windows-animation-reference.md). Para obtener código de ejemplo, [vea Windows Animation Tasks](using-windows-animation.md) y Windows Animation [Samples](windows-animation-samples.md).
 
 ## <a name="configurations"></a>Configurations
 

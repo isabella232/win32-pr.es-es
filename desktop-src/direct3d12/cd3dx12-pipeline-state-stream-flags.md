@@ -68,11 +68,11 @@ Operador de asignación de copia.
 **operador D3D12 \_ PIPELINE \_ STATE \_ FLAGS() const**
 </dt> <dd>
 
-Conversión implícita en una [**estructura D3D12 \_ PIPELINE STATE \_ \_ FLAGS.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags)
+Conversión implícita a una [**estructura D3D12 \_ PIPELINE STATE \_ \_ FLAGS.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 CD3DX12 PIPELINE STATE STREAM FLAGS es una especialización typedef de la plantilla \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
@@ -95,7 +95,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_PIPELINE_STATE_FLAGS, D3D1
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

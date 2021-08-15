@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para crear una representación de cadena enlazable de un GUID
-description: El siguiente ejemplo de código se puede utilizar para devolver una representación de cadena de un GUID que se puede utilizar para enlazar con el objeto.
+description: El ejemplo de código siguiente se puede usar para devolver una representación de cadena de un GUID que se puede usar para enlazar al objeto .
 ms.assetid: e39a6994-4328-40f2-8cb5-8b1f971e50d8
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, crear una representación de cadena enlazable de un GUID
+- Active Directory ejemplos Active Directory , crear una representación de cadena enlazable de un GUID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af6614ebeaf1028452ba75c0fc5dbaffb364e1ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2baafefa712d8826b5fc9442e1da8aaeac54d58c1e491750b2d39ceb5ee88ae5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694288"
 ---
 # <a name="example-code-for-creating-a-bindable-string-representation-of-a-guid"></a>Código de ejemplo para crear una representación de cadena enlazable de un GUID
 
-El siguiente ejemplo de código se puede utilizar para devolver una representación de cadena de un GUID que se puede utilizar para enlazar con el objeto.
+El ejemplo de código siguiente se puede usar para devolver una representación de cadena de un GUID que se puede usar para enlazar al objeto .
 
 
 ```C++
@@ -84,9 +84,9 @@ HRESULT GUIDtoBindableString(LPGUID pGUID, LPWSTR *ppGUIDString)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

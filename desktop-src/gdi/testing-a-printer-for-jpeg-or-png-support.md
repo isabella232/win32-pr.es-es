@@ -1,21 +1,21 @@
 ---
-description: La función SetDIBitsToDevice usa datos de color de un DIB para establecer los píxeles del rectángulo especificado en el dispositivo que está asociado con el contexto de dispositivo de destino.
+description: La función SetDIBitsToDevice usa datos de color de una DIB para establecer los píxeles del rectángulo especificado en el dispositivo asociado al contexto del dispositivo de destino.
 ms.assetid: 7cbb2b7a-2d95-4352-9e75-aa814e8f01bd
-title: Probar una impresora para la compatibilidad con JPEG o PNG
+title: Probar una impresora para obtener compatibilidad con JPEG o PNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 151251a99d23913b2a515a36def6172c997ac31c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8a83671c8ca0e64395e58c2275f343413e9563996ff4372e19d2512bfc5b7e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117885737"
 ---
-# <a name="testing-a-printer-for-jpeg-or-png-support"></a>Probar una impresora para la compatibilidad con JPEG o PNG
+# <a name="testing-a-printer-for-jpeg-or-png-support"></a>Probar una impresora para obtener compatibilidad con JPEG o PNG
 
-La función [**SetDIBitsToDevice**](/windows/desktop/api/Wingdi/nf-wingdi-setdibitstodevice) usa datos de color de un DIB para establecer los píxeles del rectángulo especificado en el dispositivo que está asociado con el contexto de dispositivo de destino.
+La [**función SetDIBitsToDevice**](/windows/desktop/api/Wingdi/nf-wingdi-setdibitstodevice) usa datos de color de una DIB para establecer los píxeles del rectángulo especificado en el dispositivo asociado al contexto del dispositivo de destino.
 
-[**SetDIBitsToDevice**](/windows/desktop/api/Wingdi/nf-wingdi-setdibitstodevice) se extiende para permitir que se pase una imagen JPEG o PNG como imagen de origen.
+[**SetDIBitsToDevice**](/windows/desktop/api/Wingdi/nf-wingdi-setdibitstodevice) se extiende para permitir que una imagen JPEG o PNG se pase como la imagen de origen.
 
 Por ejemplo:
 

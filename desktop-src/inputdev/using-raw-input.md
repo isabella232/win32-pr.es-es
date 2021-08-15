@@ -1,41 +1,41 @@
 ---
 title: Uso de entrada sin procesar
-description: En esta sección se incluye código de ejemplo para tareas relacionadas con la entrada sin formato.
+description: En esta sección se incluye código de ejemplo para las tareas relacionadas con la entrada sin procesar.
 ms.assetid: e078e13c-06b8-4440-9d37-78c344b587e9
 keywords:
-- entrada de usuario, entrada sin formato
-- captura de entradas de usuario, entrada sin formato
-- entrada sin formato
-- lectura almacenada en búfer de entrada sin formato
-- lectura estándar de entrada sin formato
-- registrar entradas sin formato
-- lectura de entrada sin formato
-- entrada sin formato de joystick
+- entrada del usuario, entrada sin procesar
+- captura de la entrada del usuario, entrada sin procesar
+- entrada sin procesar
+- lectura en búfer de la entrada sin procesar
+- lectura estándar de la entrada sin procesar
+- registro de entrada sin formato
+- leer la entrada sin procesar
+- entrada sin procesar de raw
 - entrada sin procesar del panel de juego
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 637137481fd930214beb04d2c75a7a2921d8b5fa
-ms.sourcegitcommit: ae1241c7d27e0bd128dfa40ca0b4187728b2a9e0
+ms.openlocfilehash: ed7c020af77c20e191f0c71a2e89f66d13dddb9e85c3753ff1789e02729e0495
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "105719040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884312"
 ---
 # <a name="using-raw-input"></a>Uso de entrada sin procesar
 
 En esta sección se incluye código de ejemplo para los siguientes fines:
 
--   [Registro para entradas sin procesar](#registering-for-raw-input)
+-   [Registro para la entrada sin formato](#registering-for-raw-input)
     -   [Ejemplo 1](#example-1)
     -   [Ejemplo 2](#example-2)
--   [Realización de una lectura estándar de entrada sin formato](#performing-a-standard-read-of-raw-input)
--   [Realización de una lectura almacenada en búfer de entrada sin formato](#performing-a-buffered-read-of-raw-input)
+-   [Realizar una lectura estándar de la entrada sin procesar](#performing-a-standard-read-of-raw-input)
+-   [Realizar una lectura en búfer de la entrada sin procesar](#performing-a-buffered-read-of-raw-input)
 
-## <a name="registering-for-raw-input"></a>Registro para entradas sin procesar
+## <a name="registering-for-raw-input"></a>Registro para la entrada sin formato
 
 ### <a name="example-1"></a>Ejemplo 1
 
-En este ejemplo, una aplicación especifica la entrada sin formato de los dispositivos de juego (tanto paneles de juego como joysticks) y todos los dispositivos de la página uso de telefonía, excepto responder a las máquinas.
+En este ejemplo, una aplicación especifica la entrada sin procesar de los controladores de juego (tanto de las almohadillas de juego como de los baterías) y de todos los dispositivos de la página de uso de telefonía, excepto los equipos de respuesta.
 
 ```cpp
 RAWINPUTDEVICE Rid[4];
@@ -68,7 +68,7 @@ if (RegisterRawInputDevices(Rid, 4, sizeof(Rid[0])) == FALSE)
 
 ### <a name="example-2"></a>Ejemplo 2
 
-En este ejemplo, una aplicación desea la entrada sin formato del teclado y el mouse, pero quiere omitir [los mensajes de ventana del mouse y del](mouse-input-notifications.md) [teclado heredado](keyboard-input-notifications.md) (que provienen del mismo teclado y del mouse).
+En este ejemplo, una aplicación quiere una entrada sin [](keyboard-input-notifications.md) procesar del teclado y el mouse, pero quiere omitir los mensajes heredados de teclado y ventana [del mouse](mouse-input-notifications.md) (que proceden del mismo teclado y mouse).
 
 ```cpp
 RAWINPUTDEVICE Rid[2];
@@ -89,9 +89,9 @@ if (RegisterRawInputDevices(Rid, 2, sizeof(Rid[0])) == FALSE)
 }
 ```
 
-## <a name="performing-a-standard-read-of-raw-input"></a>Realización de una lectura estándar de entrada sin formato
+## <a name="performing-a-standard-read-of-raw-input"></a>Realizar una lectura estándar de la entrada sin procesar
 
-En este ejemplo se muestra cómo una aplicación realiza una lectura no almacenada en búfer (o estándar) de la entrada sin formato desde un teclado o un mouse Dispositivo de interfaz humana (HID) y, a continuación, imprime diversa información del dispositivo.
+En este ejemplo se muestra cómo una aplicación realiza una lectura sin búfer (o estándar) de la entrada sin procesar desde un teclado o un dispositivo de interfaz humana (HID) del mouse y, a continuación, imprime diversas información del dispositivo.
 
 ```cpp
 case WM_INPUT: 
@@ -151,9 +151,9 @@ case WM_INPUT:
 } 
 ```
 
-## <a name="performing-a-buffered-read-of-raw-input"></a>Realización de una lectura almacenada en búfer de entrada sin formato
+## <a name="performing-a-buffered-read-of-raw-input"></a>Realizar una lectura en búfer de la entrada sin procesar
 
-En este ejemplo se muestra cómo una aplicación realiza una lectura almacenada en búfer de entrada sin formato de una HID genérica.
+En este ejemplo se muestra cómo una aplicación realiza una lectura en búfer de la entrada sin procesar desde un HID genérico.
 
 ```cpp
 case MSG_GETRIBUFFER: // Private message

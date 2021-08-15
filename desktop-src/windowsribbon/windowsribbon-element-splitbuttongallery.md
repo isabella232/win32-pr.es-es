@@ -3,7 +3,7 @@ title: Elemento SplitButtonGallery
 description: Representa un control Split Button Gallery (Dividir galería de botones) con un menú desplegable basado en la galería.
 ms.assetid: 65b6af50-6d9a-4285-b2d9-26dfb904d0b8
 keywords:
-- SplitButtonGallery, elemento de la cinta de opciones de Windows
+- Elemento SplitButtonGallery Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f5f8767135b9472acba333b1cdfa6ab102e9b7f4
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: c28c2f87a1d8fb165f02ad71c96b38bcbb381bb3590bd9bff98b3feb364044bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850834"
 ---
 # <a name="splitbuttongallery-element"></a>Elemento SplitButtonGallery
 
@@ -122,7 +122,7 @@ Solo se aplica a galerías donde el valor del atributo <em>Type</em> es igual a 
 
 | Elemento                                                                                                 | Descripción                                        |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Button**](windowsribbon-element-button.md)<br/>                                               | Puede producirse una o varias veces<br/> <br/> |
+| [**Botón**](windowsribbon-element-button.md)<br/>                                               | Puede producirse una o varias veces<br/> <br/> |
 | [**Casilla**](windowsribbon-element-checkbox.md)<br/>                                           | Puede producirse una o varias veces<br/> <br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
 | [**SplitButtonGallery.MenuGroups**](windowsribbon-element-splitbuttongallery-menugroups.md)<br/> | Debe producirse exactamente una vez<br/> <br/>     |
@@ -246,7 +246,7 @@ En esta sección de código se muestran las declaraciones de control **SplitButt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

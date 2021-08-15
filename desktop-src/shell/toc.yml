@@ -1,14 +1,14 @@
-- name: Shell de Windows
+- name: Shell Windows
   href: shell-entry.md
   items:
     - name: Guía del desarrollador de Shell
       href: intro.md
       items:
-        - name: 'Consideraciones de seguridad: Shell de Microsoft Windows'
+        - name: 'Consideraciones de seguridad: Microsoft Windows Shell'
           href: sec-shell.md
-        - name: Instrucciones para implementar extensiones de In-Process
+        - name: Instrucciones para implementar extensiones In-Process de datos
           href: shell-and-managed-code.md
-        - name: Desarrollo con el explorador de Windows
+        - name: Desarrollo con Windows Explorer
           href: developing-with-windows-explorer.md
         - name: 'Versiones de DLL de Shell y Shlwapi '
           href: versions.md
@@ -24,28 +24,28 @@
                   href: fa-file-types.md
                 - name: Cómo elegir una extensión de tipo de archivo
                   href: how-to-choose-a-file-type-extension.md
-                - name: Cómo definir atributos de tipo de archivo
+                - name: Definición de atributos de tipo de archivo
                   href: how-to-define-file-type-attributes.md
-                - name: Cómo incluir una aplicación en el cuadro de diálogo Abrir con
+                - name: Cómo incluir una aplicación en el cuadro de diálogo Abrir con archivo
                   href: how-to-include-an-application-on-the-open-with-dialog-box.md
                 - name: Cómo excluir una aplicación del cuadro de diálogo Abrir con para tipos de archivo no asociados
                   href: how-to-exclude-an-application-from-the-open-with-dialog-box-for-unassociated-file-types.md
                 - name: Cómo funcionan las asociaciones de archivos
                   href: fa-how-work.md
-                - name: Vista de contenido por tipo de archivo o tipo
+                - name: Vista de contenido por tipo o tipo de archivo
                   href: prophand-content-view.md
                   items:
-                    - name: Cómo registrar un conjunto de vistas de contenido único de propiedades y patrones de diseño para el tipo de archivo o el elemento
+                    - name: Cómo registrar un conjunto de vistas de contenido único de propiedades y patrón de diseño para el tipo de archivo o elemento
                       href: register-a-unique-content-view-set-of-properties-and-layout-pattern-for-the-file-type-or-item.md
                 - name: Cómo registrar propiedades personalizadas y diseño para el tipo de archivo
                   href: how-to-register-custom-properties-and-layout-for-your-file-type.md
-                - name: Comprobador de tipo de archivo
+                - name: Comprobador de tipos de archivo
                   href: file-type-verifier.md
-                - name: Cómo usar el comprobador de tipo de archivo
+                - name: Cómo usar el comprobador de tipos de archivo
                   href: how-to-use-the-file-type-verifier.md
-                - name: Controladores de tipo de archivo
+                - name: Controladores de tipos de archivo
                   href: fa-file-extensions.md
-                - name: Identificadores de programación
+                - name: Identificadores mediante programación
                   href: fa-progids.md
                 - name: Cómo registrar un tipo de archivo para una nueva aplicación
                   href: how-to-register-a-file-type-for-a-new-application.md
@@ -56,58 +56,58 @@
             - name: Directrices para asociaciones de archivos y programas predeterminados
               href: appguide-fa-defpro.md
               items:
-                - name: Prácticas recomendadas para asociaciones de archivos
+                - name: Procedimientos recomendados para asociaciones de archivos
                   href: fa-best-practices.md
-                - name: Ejemplo de Asociación de archivos
+                - name: Ejemplo de asociación de archivos
                   href: fa-sample-scenarios.md
                 - name: Administración de aplicaciones predeterminadas
                   href: vista-managing-defaults.md
                 - name: Programas predeterminados
                   href: default-programs.md
-                - name: Establecer los valores predeterminados de acceso a programas y del equipo (SPAD)
+                - name: Establecer el acceso al programa y los valores predeterminados del equipo (SPAD)
                   href: cpl-setprogramaccess.md
-            - name: Trabajar con extensiones de Shell
+            - name: Trabajar con extensiones de shell
               href: shell-exts.md
               items:
-                - name: Inicializar controladores de extensión de Shell
+                - name: Inicialización de controladores de extensión de shell
                   href: int-shell-exts.md
-                - name: Registrando controladores de extensión de Shell
+                - name: Registro de controladores de extensión de shell
                   href: reg-shell-exts.md
-            - name: Menús contextuales y controladores de menú contextual
+            - name: Menús contextuales y controladores de menús contextuales
               href: context-menu.md
               items:
                 - name: Verbos y asociaciones de archivo
                   href: fa-verbs.md
                 - name: Elegir un método de menú contextual estático o dinámico
                   href: shortcut-choose-method.md
-                - name: Prácticas recomendadas para los controladores de menú contextual y varios verbos
+                - name: Procedimientos recomendados para controladores de menús contextuales y varios verbos
                   href: verbs-best-practices.md
-                - name: Crear controladores de menú contextual
+                - name: Creación de controladores de menús contextuales
                   href: context-menu-handlers.md
-                - name: Crear menús en cascada estáticos
+                - name: Crear menús estáticos en cascada
                   href: creating-static-cascading-menus.md
                   items:
-                    - name: Cómo crear menús en cascada con la entrada del registro subcomandos
+                    - name: Cómo crear menús en cascada con la entrada del Registro SubCommands
                       href: how-to--create-cascading-menus-with-the-subcommands-registry-entry.md
-                    - name: Cómo crear menús en cascada con la entrada del registro ExtendedSubCommandsKey
+                    - name: Cómo crear menús en cascada con la entrada del Registro ExtendedSubCommandsKey
                       href: how-to-create-cascading-menus-with-the-extendedsubcommandskey-registry-entry.md
                     - name: Cómo crear menús en cascada con la interfaz IExplorerCommand
                       href: how-to-create-cascading-menus-with-the-iexplorercommand-interface.md
-                - name: Cómo suprimir y controlar la visibilidad de los verbos
+                - name: Cómo suprimir y controlar la visibilidad de verbos
                   href: how-to-suppress-and-control-visibility.md
                 - name: Cómo emplear el modelo de selección de verbos
                   href: how-to-employ-the-verb-selection-model.md
                 - name: Cómo usar atributos de elemento
                   href: how-to-use-item-attributes.md
-                - name: Cómo implementar verbos personalizados para carpetas a través de Desktop.ini
+                - name: Cómo implementar verbos personalizados para carpetas mediante Desktop.ini
                   href: how-to-implement-custom-verbs-for-folders-through-desktop-ini.md
-                - name: Personalización de un menú contextual mediante verbos dinámicos
+                - name: Personalizar un menú contextual mediante verbos dinámicos
                   href: shortcut-menu-using-dynamic-verbs.md
                 - name: Cómo implementar la interfaz IContextMenu
                   href: how-to-implement-the-icontextmenu-interface.md
                 - name: Referencia del menú contextual
                   href: context-menu-reference.md
-            - name: Controladores de arrastrar y colocar y formato de Portapapeles personalizado
+            - name: Controladores de arrastrar y colocar y formato personalizado del Portapapeles
               href: drag-and-drop-handlers-and-custom-clipboard-format-bumper.md
               items:
                 - name: Cómo crear controladores de datos
@@ -117,21 +117,21 @@
             - name: Miniaturas e iconos
               href: thumbnails-and-icons-bumper.md
               items:
-                - name: Controladores en miniatura
+                - name: Controladores de miniaturas
                   href: thumbnail-providers.md
                   items:
-                    - name: Crear controladores de miniaturas
+                    - name: Compilar controladores de miniaturas
                       href: building-thumbnail-providers.md
-                    - name: Instrucciones de controlador de miniaturas
+                    - name: Instrucciones del controlador de miniaturas
                       href: thumbnail-provider-guidelines.md
-                - name: Iconos y superposiciones de iconos
+                - name: Superposiciones de iconos e iconos
                   href: icons-and-icon-overlays-bumper.md
                   items:
-                    - name: Personalizar iconos
+                    - name: Personalización de iconos
                       href: icon.md
-                    - name: Cómo asignar un icono personalizado a un tipo de archivo
+                    - name: Asignación de un icono personalizado a un tipo de archivo
                       href: how-to-assign-a-custom-icon-to-a-file-type.md
-                    - name: Cómo asignar un icono personalizado y una etiqueta a una letra de unidad
+                    - name: Asignación de un icono y una etiqueta personalizados a una letra de unidad
                       href: how-to-assign-a-custom-icon-and-label-to-a-drive-letter.md
                     - name: Cómo crear controladores de iconos
                       href: how-to-create-icon-handlers.md
@@ -139,25 +139,25 @@
                       href: how-to-implement-icon-overlay-handlers.md
                     - name: Cómo registrar controladores de superposición de iconos
                       href: how-to-register-icon-overlay-handlers.md
-            - name: Controladores de vista previa y host de vista previa de Shell
+            - name: Controladores de vista previa y host de vista previa del shell
               href: preview-handlers.md
               items:
-                - name: Crear controladores de vista previa
+                - name: Compilar controladores de vista previa
                   href: building-preview-handlers.md
                 - name: Cómo registrar un controlador de vista previa
                   href: how-to-register-a-preview-handler.md
-                - name: Instrucciones de controlador de vista previa
+                - name: Instrucciones del controlador de vista previa
                   href: preview-handler-guidelines.md
             - name: Controladores de hoja de propiedades
               href: propsheet-handlers.md
             - name: Cómo registrar e implementar un controlador de hoja de propiedades para un tipo de archivo
               href: how-to-register-and-implement-a-property-sheet-handler-for-a-file-type.md
-            - name: Cómo registrar e implementar un controlador de la hoja de propiedades para una aplicación del panel de control
+            - name: Cómo registrar e implementar un controlador de hoja de propiedades para una Panel de control aplicación
               href: how-to-register-and-implement-a-property-sheet-handler-for-a-control-panel-application.md
-        - name: Extensibilidad de Shell (creación de un origen de datos)
+        - name: Extensibilidad del shell (crear un origen de datos)
           href: shell-extensibility-bumper.md
           items:
-            - name: Crear objetos de origen de datos de Shell y extender el espacio de nombres de Shell
+            - name: Crear objetos de origen de datos de shell y extender el espacio de nombres del shell
               href: creating-shell-data-source-objects-and-extending-the-shell-namespace-bumper.md
               items:
                 - name: Introducción al espacio de nombres del shell
@@ -166,102 +166,102 @@
                   href: nse-works.md
                 - name: Creación de controladores de extensiones de shell
                   href: handlers.md
-                - name: Implementar interfaces de objeto de carpeta básicas
+                - name: Implementar interfaces básicas de objetos de carpeta
                   href: nse-implement.md
             - name: Especificar la ubicación de una extensión de espacio de nombres
               href: nse-junction.md
               items:
-                - name: Mostrar una vista de Self-Contained de una extensión de espacio de nombres
+                - name: Mostrar una vista Self-Contained de una extensión de espacio de nombres
                   href: nse-view.md
                 - name: Cómo mostrar una vista raíz de un archivo
                   href: how-to-display-a-rooted-view-of-a-file.md
-                - name: Cómo abrir una vista con raíz de un punto de unión a través del registro
+                - name: Cómo abrir una vista raíz de un punto de unión a través del Registro
                   href: how-to-use-a-junction-point-to-open-a-rooted-view.md
-                - name: Cómo abrir una vista con raíz de un punto de unión a través de un archivo de acceso directo
+                - name: Cómo abrir una vista raíz de un punto de unión a través de un archivo de acceso directo
                   href: how-to-use-a-shortcut-file-to-open-a-rooted-view.md
-            - name: Extender el explorador de Windows
+            - name: Extensión de Windows Explorer
               href: extending-explorer-bumper.md
               items:
-                - name: Conceptos comunes del explorador
+                - name: Conceptos comunes del Explorador
                   href: explorer-concepts.md
-                - name: Extender la cinta de opciones
+                - name: Ampliación de la cinta de opciones
                   href: extending-the-ribbon.md
-                - name: 'Crear barras del explorador personalizadas, bandas de herramientas y bandas del Departamento de soporte técnico'
+                - name: 'Creación de barras del Explorador personalizado, bandas de herramientas y bandas de escritorio'
                   href: band-objects.md
                 - name: Extender menús contextuales
                   href: context.md
-                - name: Integración de un proveedor de almacenamiento en la nube
+                - name: Integración de un proveedor de Storage nube
                   href: integrate-cloud-storage.md
-                - name: Cómo definir verbos extendidos
+                - name: Definición de verbos extendidos
                   href: how-to-define-extended-verbs.md
-                - name: Cómo asociar verbos con comandos DDE
+                - name: Asociación de verbos con comandos DDE
                   href: how-to-associate-verbs-with-dde-commands.md
                 - name: Cómo crear controladores de enlace de copia
                   href: how-to-create-copy-hook-handlers.md
-                - name: Cómo personalizar carpetas con Desktop.ini
+                - name: Personalización de carpetas con Desktop.ini
                   href: how-to-customize-folders-with-desktop-ini.md
-            - name: Extender el escritorio
+            - name: Extensión del escritorio
               href: extending-the-desktop-bumper.md
               items:
-                - name: Iconos de la aplicación de escritorio en la pantalla Inicio
+                - name: Iconos de aplicación de escritorio en la pantalla de inicio
                   href: desktop-app-tiles-on-the-start-screen.md
                 - name: Descripción de la barra de tareas
                   href: taskbar.md
                 - name: Cómo agregar accesos directos al menú Inicio
                   href: how-to-add-shortcuts-to-the-start-menu.md
-                - name: Extender la barra de tareas
+                - name: Extensión de la barra de tareas
                   href: taskbar-extensions.md
-                - name: Trabajar con identificadores de modelo de usuario de la aplicación (AppUserModelIDs)
+                - name: Trabajar con los id. de modelo de usuario de la aplicación (AppUserModelID)
                   href: appids.md
-                - name: Cómo excluir elementos del anclaje de la barra de tareas y listas recientes/frecuentes
+                - name: Cómo excluir elementos de la barra de tareas anclados y listas recientes o frecuentes
                   href: how-to-exclude-items-from-taskbar-pinning-and-recent-frequent-lists.md
-                - name: Administrar notificaciones y el área de notificación de la barra de tareas
+                - name: Administración de notificaciones y el área de notificación de la barra de tareas
                   href: notification-area.md
-                - name: 'Inicio rápido: envío de una notificación del sistema desde el escritorio'
+                - name: 'Inicio rápido: Envío de una notificación del sistema desde el escritorio'
                   href: quickstart-sending-desktop-toast.md
                 - name: Cómo habilitar las notificaciones del sistema del escritorio a través de AppUserModelID
                   href: enable-desktop-toast-with-appusermodelid.md
-                - name: Usar las barras de herramientas del escritorio de la aplicación
+                - name: Uso de barras de herramientas de Escritorio de aplicaciones
                   href: application-desktop-toolbars.md
-            - name: Usar el protocolo de búsqueda
+            - name: Uso del protocolo de búsqueda
               href: search-protocol.md
               items:
-                - name: Argumento de MIGAs de
+                - name: Argumento CRUMB
                   href: search-protocol-crumb.md
-                - name: Argumentos de identificador de configuración regional
+                - name: Argumentos del identificador de configuración regional
                   href: search-protocol-localeidentifiers.md
                 - name: Argumento STACKEDBY
                   href: search-protocol-stackedby.md
-                - name: Argumento de subconsulta
+                - name: ARGUMENTO SUBQUERY
                   href: search-protocol-subquery.md
-                - name: Argumento de sintaxis
+                - name: Argumento SYNTAX
                   href: search-protocol-syntaxargument.md
-            - name: Administrar referencias de subprocesos
+            - name: Administración de referencias de subprocesos
               href: managing-thread-references.md
             - name: Ejecución automática y reproducción automática
               href: autorun-and-autoplay-bumper.md
               items:
-                - name: Creación de una aplicación de CD-ROM habilitada para AutoRun
+                - name: Creación de una aplicación de CD-ROM habilitada para ejecución automática
                   href: autoplay.md
                   items:
-                    - name: Creación de una aplicación AutoRun-Enabled
+                    - name: Creación de una AutoRun-Enabled aplicación
                       href: autoplay-works.md
                     - name: Cómo implementar aplicaciones de inicio de ejecución automática
                       href: how-to-implement-autorun-startup-applications.md
-                    - name: Entradas Autorun. inf
+                    - name: Entradas autorun.inf
                       href: autorun-cmds.md
-                    - name: Habilitar y deshabilitar la ejecución automática
+                    - name: Habilitación y deshabilitación de autorun
                       href: autoplay-reg.md
                 - name: Uso de la reproducción automática de hardware
                   href: autorun2k-intro.md
                   items:
                     - name: Uso y configuración de la reproducción automática
                       href: autoplay2k-using.md
-                    - name: Asignación de un controlador de dispositivo a un dispositivo
+                    - name: Asignación de un controlador de dispositivos a un dispositivo
                       href: how-to-assign-a-device-handler-to-a-device.md
-                    - name: 'Cómo especificar un icono, etiqueta o controlador de dispositivo para un dispositivo mediante un grupo de dispositivos'
+                    - name: 'Cómo especificar un icono, una etiqueta o un controlador de dispositivos para un dispositivo mediante un grupo de dispositivos'
                       href: how-to-specify-an-icon--label--or-device-handler-for-a-device-using-a-device-group.md
-                    - name: 'Cómo especificar un icono, etiqueta o controlador de dispositivo para un dispositivo mediante una clase de dispositivo'
+                    - name: 'Cómo especificar un icono, una etiqueta o un controlador de dispositivos para un dispositivo mediante una clase de dispositivo'
                       href: how-to-specify-an-icon--label--or-device-handler-for-a-device-using-a-device-class.md
                     - name: Cómo evitar la reproducción automática de un componente
                       href: how-to-prevent-autoplay-for-a-component.md
@@ -271,32 +271,32 @@
                       href: how-to-use-autoplay-events-in-running-applications.md
                     - name: Cómo registrar un controlador de eventos
                       href: how-to-register-an-event-handler.md
-        - name: Implementar elementos del panel de control
+        - name: Implementación de Panel de control elementos
           href: control-panel-applications.md
           items:
             - name: Directrices de la experiencia de usuario
               href: user-experience-guidelines.md
-            - name: Registrar elementos del panel de control
+            - name: Registro de Panel de control elementos
               href: registering-control-panel-items.md
-            - name: Cómo registrar elementos del panel de control ejecutable
+            - name: Cómo registrar elementos ejecutables Panel de control aplicación
               href: how-to-register-an-executable-control-panel-item-registration-.md
-            - name: Cómo registrar elementos del panel de control DLL
+            - name: Registro de elementos Panel de control DLL
               href: how-to-register-dll-control-panel-item-registration-.md
-            - name: Usar CPLApplet
+            - name: Uso de CPLApplet
               href: using-cplapplet.md
-            - name: Procesamiento de mensajes del panel de control
+            - name: Panel de control de mensajes
               href: message-processing.md
-            - name: Ejecutar elementos del panel de control
+            - name: Ejecución de Panel de control elementos
               href: executing-control-panel-items.md
-            - name: Extender elementos del panel de control del sistema
+            - name: Extender elementos de Panel de control sistema
               href: extending-system-control-panel-items.md
-            - name: Asignar categorías del panel de control
+            - name: Asignación de Panel de control categorías
               href: assigning-control-panel-categories.md
-            - name: Crear vínculos de tarea que se pueden buscar para un elemento del panel de control
+            - name: Crear vínculos de tareas que se pueden buscar para un elemento Panel de control búsqueda
               href: creating-searchable-task-links.md
-            - name: Acceder al panel de control en modo seguro
+            - name: Acceso a la Panel de control en Caja fuerte modo
               href: accessing-the-cp-in-safe-mode-under-vista.md
-            - name: Nombres canónicos de los elementos del panel de control
+            - name: Nombres canónicos de Panel de control elementos
               href: controlpanel-canonical-names.md
         - name: Compatibilidad con aplicaciones de Shell
           href: application-support-bumper.md
@@ -306,16 +306,16 @@
             - name: Cuadros de diálogo
               href: dialogs-bumper.md
               items:
-                - name: Cuadro de diálogo de elementos comunes
+                - name: Cuadro de diálogo Elemento común
                   href: common-file-dialog.md
-                - name: Obtener el identificador de una carpeta
+                - name: Obtención del identificador de una carpeta
                   href: folder-id.md
-            - name: Bibliotecas de Windows
+            - name: Windows Bibliotecas
               href: library-ovw.md
               items:
                 - name: Acerca de las bibliotecas
                   href: library-leverage-to-manage-folders.md
-                - name: Usar bibliotecas en el programa
+                - name: Uso de bibliotecas en el programa
                   href: library-be-library-aware.md
             - name: Carpetas conocidas
               href: known-folders.md
@@ -326,28 +326,28 @@
                   href: how-to-extend-known-folders-with-custom-folders.md
                 - name: Carpetas conocidas predeterminadas en Windows
                   href: knownfolderid.md
-            - name: Administrar el sistema de archivos
+            - name: Administración del sistema de archivos
               href: manage.md
-            - name: Registrar un explorador de Internet o un cliente de correo electrónico con el menú Inicio de Windows
+            - name: Registro de un explorador de Internet o un cliente de correo electrónico con el Windows inicio
               href: start-menu-reg.md
-            - name: Registrar programas con tipos de cliente
+            - name: Registro de programas con tipos de cliente
               href: reg-middleware-apps.md
-            - name: Creación de un vínculo de Shell
+            - name: Creación de un vínculo de shell
               href: links.md
-            - name: Usar Autocompletar
+            - name: Uso de Autocompletar
               href: ac-ovw.md
-            - name: Cómo habilitar Autocompletar manualmente
+            - name: Cómo habilitar autocompletar manualmente
               href: how-to-enable-autocomplete-manually.md
-            - name: Transferir objetos de Shell con arrastrar y colocar y el portapapeles
+            - name: Transferencia de objetos de shell con arrastrar y colocar y el Portapapeles
               href: dragdrop.md
               items:
                 - name: Objeto de datos de shell
                   href: dataobject.md
-                - name: Formatos del portapapeles de Shell
+                - name: Formatos del Portapapeles de Shell
                   href: clipboard.md
                 - name: Control de escenarios de transferencia de datos de shell
                   href: datascenarios.md
-            - name: Objetos de Shell con scripts
+            - name: Objetos de shell que pueden incluirse en scripts
               href: scriptable-shell-objects-roadmap.md
             - name: Perfiles de usuario
               href: user-profiles.md
@@ -378,41 +378,41 @@
                   href: navigate.md
                 - name: Obtener información sobre el contenido de una carpeta (IShellFolder)
                   href: folder-info.md
-        - name: Temas de Shell heredados
+        - name: Temas de Shell heredado
           href: miscellaneous-topics-bumper.md
           items:
-            - name: Controlar la ayuda en línea
+            - name: Control de la Ayuda en línea
               href: handling-online-help.md
-            - name: Administrar impresoras
+            - name: Administración de impresoras
               href: print.md
             - name: Cuentas de usuario con cambio rápido de usuario y Escritorio remoto
               href: fastuserswitching.md
-            - name: Depurar el shell
+            - name: Depuración del shell
               href: debugging-with-the-shell.md
             - name: Centro de sincronización
               href: synchronization-center-bumper.md
               items:
-                - name: Desarrollar un controlador del centro de sincronización de Windows
+                - name: Desarrollar un controlador de Windows Centro de sincronización de datos
                   href: sync-center-handler.md
                 - name: administrador de sincronización
                   href: syncmgr-start-page.md
                   items:
-                    - name: Acerca del administrador de sincronización
+                    - name: Acerca del Administrador de sincronización
                       href: syncmgr-about.md
                     - name: Configuraciones de informática móvil
                       href: syncmgr-mobile-computing-configs.md
                     - name: Escenarios de aplicación
                       href: syncmgr-app-scenarios.md
-                    - name: Arquitectura del administrador de sincronización
+                    - name: Arquitectura de Synchronization Manager
                       href: syncmgr-architecture.md
-                    - name: Usar el administrador de sincronización desde un programa
+                    - name: Uso del Administrador de sincronización desde un programa
                       href: syncmgr-using-from-a-program.md
-                    - name: Referencia del administrador de sincronización
+                    - name: Referencia de Synchronization Manager
                       href: syncmgr-reference.md
-    - name: Referencia de Shell
+    - name: Referencia del shell
       href: shell-reference-bumper.md
       items:
-        - name: Clases de Shell
+        - name: Clases de shell
           href: classes.md
           items:
             - name: CCscSearchApiInterface
@@ -431,28 +431,28 @@
             - name: CItemIDFactory
               href: /windows/desktop/api/shidfact/nl-shidfact-citemidfactory
               items:
-                - name: Método SetItemAlloc
+                - name: SetItemAlloc (método)
                   href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-setitemalloc
                 - name: Método IsDelegateFolder
                   href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-isdelegatefolder
-                - name: Método GetPropertyStorage
+                - name: GetPropertyStorage (método)
                   href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-getpropertystorage
-                - name: Método GetDataFromIDList
+                - name: GetDataFromIDList (método)
                   href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-getdatafromidlist(pcuidlist_relative)
                 - name: Métodos GetPropertyFromIDList
                   href: citemidfactory-getpropertyfromidlist-methods.md
                   items:
-                    - name: Método GetPropertyFromIDList
+                    - name: GetPropertyFromIDList (método)
                       href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_propvariant)
-                    - name: Método GetPropertyFromIDList
+                    - name: GetPropertyFromIDList (método)
                       href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_pcwstr_variant)
-                    - name: Método GetPropertyFromIDList
+                    - name: GetPropertyFromIDList (método)
                       href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_refpropertykey_propvariant)
-                    - name: Método GetPropertyFromIDList
+                    - name: GetPropertyFromIDList (método)
                       href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-getpropertyfromidlist(pcuidlist_relative_refpropertykey_variant)
-                - name: Método GetPropertyStorageFromIDList
+                - name: GetPropertyStorageFromIDList (método)
                   href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-getpropertystoragefromidlist
-                - name: Método CreateItemID
+                - name: CreateItemID (método)
                   href: /windows/desktop/api/shidfact/nf-shidfact-citemidfactory-createitemid
             - name: VirtualDesktopManager
               href: virtualdesktopmanager.md
@@ -508,7 +508,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iactionprogress-querycancel
                 - name: ResetCancel
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iactionprogress-resetcancel
-                - name: UpdateProgress
+                - name: Updateprogress
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iactionprogress-updateprogress
                 - name: UpdateText
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iactionprogress-updatetext
@@ -610,13 +610,13 @@
             - name: IAppVisibility
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-iappvisibility
               items:
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iappvisibility-advise
                 - name: GetAppVisibilityOnMonitor
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iappvisibility-getappvisibilityonmonitor
                 - name: IsLauncherVisible
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iappvisibility-islaunchervisible
-                - name: No notificar
+                - name: Unadvise
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iappvisibility-unadvise
             - name: IAppVisibilityEvents
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-iappvisibilityevents
@@ -748,7 +748,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icategoryprovider-cancategorizeonscid
                 - name: CreateCategory
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icategoryprovider-createcategory
-                - name: EnumCategories
+                - name: Enumeraciones
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icategoryprovider-enumcategories
                 - name: GetCategoryForSCID
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icategoryprovider-getcategoryforscid
@@ -756,10 +756,10 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icategoryprovider-getcategoryname
                 - name: GetDefaultCategory
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icategoryprovider-getdefaultcategory
-            - name: ICDBurn
+            - name: ICD (Icd )Icd (Icd
               href: /windows/desktop/api/Shobjidl/nn-shobjidl-icdburn
               items:
-                - name: Burn
+                - name: Quemar
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-icdburn-burn
                 - name: GetRecorderDriveLetter
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-icdburn-getrecorderdriveletter
@@ -770,7 +770,7 @@
               items:
                 - name: GetColumnCount
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icolumnmanager-getcolumncount
-                - name: GetColumnInfo
+                - name: Getcolumninfo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icolumnmanager-getcolumninfo
                 - name: GetColumns
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icolumnmanager-getcolumns
@@ -851,7 +851,7 @@
               items:
                 - name: CalcIdealSize
                   href: /previous-versions/windows/desktop/legacy/bb776050(v=vs.85)
-                - name: DrawText
+                - name: Drawtext
                   href: /previous-versions/windows/desktop/legacy/bb776051(v=vs.85)
                 - name: GetCallback
                   href: /previous-versions/windows/desktop/legacy/bb776052(v=vs.85)
@@ -918,7 +918,7 @@
             - name: ICreatingProcess
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-icreatingprocess
               items:
-                - name: Método de creación
+                - name: Método OnCreating
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-icreatingprocess-oncreating
             - name: ICreateProcessInputs
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-icreateprocessinputs
@@ -940,7 +940,7 @@
             - name: ICredentialProvider
               href: /windows/desktop/api/Credentialprovider/nn-credentialprovider-icredentialprovider
               items:
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovider-advise
                 - name: GetCredentialAt
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovider-getcredentialat
@@ -954,12 +954,12 @@
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovider-setserialization
                 - name: SetUsageScenario
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovider-setusagescenario
-                - name: No notificar
+                - name: UnAdvise
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovider-unadvise
             - name: ICredentialProviderCredential
               href: /windows/desktop/api/Credentialprovider/nn-credentialprovider-icredentialprovidercredential
               items:
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovidercredential-advise
                 - name: CommandLinkClicked
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovidercredential-commandlinkclicked
@@ -991,7 +991,7 @@
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovidercredential-setselected
                 - name: SetStringValue
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovidercredential-setstringvalue
-                - name: No notificar
+                - name: UnAdvise
                   href: /windows/desktop/api/Credentialprovider/nf-credentialprovider-icredentialprovidercredential-unadvise
             - name: ICredentialProviderCredential2
               href: /windows/desktop/api/CredentialProvider/nn-credentialprovider-icredentialprovidercredential2
@@ -1055,7 +1055,7 @@
             - name: ICredentialProviderUser
               href: /windows/desktop/api/CredentialProvider/nn-credentialprovider-icredentialprovideruser
               items:
-                - name: Herramienta getsid
+                - name: GetSid
                   href: /windows/desktop/api/CredentialProvider/nf-credentialprovider-icredentialprovideruser-getsid
                 - name: GetProviderID
                   href: /windows/desktop/api/CredentialProvider/nf-credentialprovider-icredentialprovideruser-getproviderid
@@ -1111,7 +1111,7 @@
                   href: /windows/desktop/api/Shldisp/nf-shldisp-idataobjectasynccapability-endoperation
                 - name: GetAsyncMode
                   href: /windows/desktop/api/Shldisp/nf-shldisp-idataobjectasynccapability-getasyncmode
-                - name: Inoperación
+                - name: InOperation
                   href: /windows/desktop/api/Shldisp/nf-shldisp-idataobjectasynccapability-inoperation
                 - name: SetAsyncMode
                   href: /windows/desktop/api/Shldisp/nf-shldisp-idataobjectasynccapability-setasyncmode
@@ -1437,7 +1437,7 @@
             - name: IExplorerBrowser
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser
               items:
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-advise
                 - name: BrowseToIDList
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-browsetoidlist
@@ -1453,7 +1453,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-getoptions
                 - name: Inicialización
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-initialize
-                - name: RemoveAll
+                - name: Removeall
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-removeall
                 - name: SetEmptyText
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-setemptytext
@@ -1465,7 +1465,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-setpropertybag
                 - name: SetRect
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-setrect
-                - name: No notificar
+                - name: Unadvise
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorerbrowser-unadvise
             - name: IExplorerBrowserEvents
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowserevents
@@ -1538,19 +1538,19 @@
               items:
                 - name: AddPlace
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-addplace
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-advise
                 - name: ClearClientData
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-clearclientdata
                 - name: Cerrar
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-close
-                - name: Método getcurrentselection
+                - name: GetCurrentSelection
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-getcurrentselection
                 - name: GetFileName
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-getfilename
                 - name: GetFileTypeIndex
                   href: /previous-versions/windows/desktop/legacy/bb775958(v=vs.85)
-                - name: GetFolder
+                - name: Getfolder
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-getfolder
                 - name: GetOptions
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-getoptions
@@ -1580,7 +1580,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setoptions
                 - name: SetTitle
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-settitle
-                - name: No notificar
+                - name: Unadvise
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-unadvise
             - name: IFileDialog2
               href: /windows/desktop/api/Shobjidl/nn-shobjidl-ifiledialog2
@@ -1611,7 +1611,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogcustomize-addcontrolitem
                 - name: AddEditBox
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogcustomize-addeditbox
-                - name: AgregarMenú
+                - name: Agregarmenú
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogcustomize-addmenu
                 - name: AddPushButton
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogcustomize-addpushbutton
@@ -1619,7 +1619,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogcustomize-addradiobuttonlist
                 - name: AddSeparator
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogcustomize-addseparator
-                - name: Dtex
+                - name: AddText
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogcustomize-addtext
                 - name: EnableOpenDropDown
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogcustomize-enableopendropdown
@@ -1697,7 +1697,7 @@
             - name: IFileOperation
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperation
               items:
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifileoperation-advise
                 - name: ApplyPropertiesToItem
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifileoperation-applypropertiestoitem
@@ -1735,7 +1735,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifileoperation-setprogressmessage
                 - name: SetProperties
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifileoperation-setproperties
-                - name: No notificar
+                - name: Unadvise
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifileoperation-unadvise
             - name: IFileOperationProgressSink
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperationprogresssink
@@ -1770,7 +1770,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifileoperationprogresssink-resumetimer
                 - name: StartOperations
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifileoperationprogresssink-startoperations
-                - name: UpdateProgress
+                - name: Updateprogress
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifileoperationprogresssink-updateprogress
             - name: IFileSaveDialog
               href: /windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ifilesavedialog
@@ -1817,7 +1817,7 @@
             - name: IFileViewer
               href: /windows/desktop/shell/schema-library-iconreference
               items:
-                - name: Imprimir en
+                - name: PrintTo
                   href: /windows/desktop/shell/schema-library-islibrarypinned
                 - name: Mostrar
                   href: /windows/desktop/shell/search-protocol
@@ -1853,7 +1853,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifolderview-getdefaultspacing
                 - name: GetFocusedItem
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifolderview-getfocuseditem
-                - name: GetFolder
+                - name: Getfolder
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifolderview-getfolder
                 - name: GetItemPosition
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifolderview-getitemposition
@@ -1958,18 +1958,18 @@
             - name: IFrameworkInputPane
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-iframeworkinputpane
               items:
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iframeworkinputpane-advise
                 - name: AdviseWithHWND
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iframeworkinputpane-advisewithhwnd
                 - name: Ubicación
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iframeworkinputpane-location
-                - name: No notificar
+                - name: Unadvise
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iframeworkinputpane-unadvise
             - name: IFrameworkInputPaneHandler
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-iframeworkinputpanehandler
               items:
-                - name: Conde
+                - name: Escondiendo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iframeworkinputpanehandler-hiding
                 - name: Mostrando
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iframeworkinputpanehandler-showing
@@ -2132,7 +2132,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfoldermanager-folderidfromcsidl
                 - name: FolderIdToCsidl
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfoldermanager-folderidtocsidl
-                - name: GetFolder
+                - name: Getfolder
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfoldermanager-getfolder
                 - name: GetFolderByName
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfoldermanager-getfolderbyname
@@ -2216,7 +2216,7 @@
               items:
                 - name: GetNameAt
                   href: /windows/desktop/api/Propsys/nf-propsys-inamedpropertystore-getnameat
-                - name: Getnamecount (
+                - name: GetNameCount
                   href: /windows/desktop/api/Propsys/nf-propsys-inamedpropertystore-getnamecount
                 - name: GetNamedValue
                   href: /windows/desktop/api/Propsys/nf-propsys-inamedpropertystore-getnamedvalue
@@ -2292,7 +2292,7 @@
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-inamespacetreecontrolcustomdraw-itemprepaint
                 - name: PostPaint
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-inamespacetreecontrolcustomdraw-postpaint
-                - name: Prepintar
+                - name: PrePaint
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-inamespacetreecontrolcustomdraw-prepaint
             - name: INameSpaceTreeControlDropHandler
               href: /windows/desktop/api/Shobjidl/nn-shobjidl-inamespacetreecontroldrophandler
@@ -2386,7 +2386,7 @@
               items:
                 - name: GetExtension
                   href: /windows/desktop/api/shlobj/nf-shlobj-inewshortcuthooka-getextension
-                - name: GetFolder
+                - name: Getfolder
                   href: /windows/desktop/api/shlobj/nf-shlobj-inewshortcuthooka-getfolder
                 - name: GetName
                   href: /windows/desktop/api/shlobj/nf-shlobj-inewshortcuthooka-getname
@@ -2518,7 +2518,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ioperationsprogressdialog-stopprogressdialog
                 - name: UpdateLocations
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ioperationsprogressdialog-updatelocations
-                - name: UpdateProgress
+                - name: Updateprogress
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ioperationsprogressdialog-updateprogress
             - name: IPackageDebugSettings
               href: /windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ipackagedebugsettings
@@ -2615,11 +2615,11 @@
             - name: IPlaybackManager
               href: /previous-versions/windows/desktop/legacy/hh707033(v=vs.85)
               items:
-                - name: Informar
+                - name: consejo
                   href: /previous-versions/windows/desktop/legacy/hh707036(v=vs.85)
                 - name: ChangeSessionState
                   href: /previous-versions/windows/desktop/legacy/hh707037(v=vs.85)
-                - name: No notificar
+                - name: Unadvise
                   href: /previous-versions/windows/desktop/legacy/hh707038(v=vs.85)
             - name: IPlaybackManagerEvents
               href: /previous-versions/windows/desktop/legacy/hh707034(v=vs.85)
@@ -2629,7 +2629,7 @@
             - name: IPreviewHandler
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipreviewhandler
               items:
-                - name: Vista previa
+                - name: DoPreview
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandler-dopreview
                 - name: QueryFocus
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandler-queryfocus
@@ -2641,7 +2641,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandler-setwindow
                 - name: TranslateAccelerator
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandler-translateaccelerator
-                - name: Cárguelo
+                - name: Descargar
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandler-unload
             - name: IPreviewHandlerFrame
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipreviewhandlerframe
@@ -2655,7 +2655,7 @@
               items:
                 - name: SetBackgroundColor
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandlervisuals-setbackgroundcolor
-                - name: SetFont
+                - name: Setfont
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandlervisuals-setfont
                 - name: SetTextColor
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandlervisuals-settextcolor
@@ -2682,7 +2682,7 @@
                   href: iprivateidentitymanager2-destroyidentity.md
                 - name: GetDefaultIdentity
                   href: iprivateidentitymanager2-getdefaultidentity.md
-                - name: Inicios de sesión
+                - name: LogonAs
                   href: iprivateidentitymanager2-logonas.md
                 - name: SetDefaultIdentity
                   href: iprivateidentitymanager2-setdefaultidentity.md
@@ -2714,7 +2714,7 @@
                   href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iprogressdialog-startprogressdialog
                 - name: StopProgressDialog
                   href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iprogressdialog-stopprogressdialog
-                - name: Temporizador
+                - name: Timer
                   href: /windows/desktop/api/shlobj_core/nf-shlobj_core-iprogressdialog-timer
             - name: IPublishedApp
               href: /windows/desktop/api/Shappmgr/nn-shappmgr-ipublishedapp
@@ -2723,7 +2723,7 @@
                   href: /windows/desktop/api/Shappmgr/nf-shappmgr-ipublishedapp-getpublishedappinfo
                 - name: Instalar
                   href: /windows/desktop/api/Shappmgr/nf-shappmgr-ipublishedapp-install
-                - name: Anular
+                - name: Unschedule
                   href: /windows/desktop/api/Shappmgr/nf-shappmgr-ipublishedapp-unschedule
             - name: IPublishedApp2
               href: /windows/desktop/api/Shappmgr/nn-shappmgr-ipublishedapp2
@@ -2803,7 +2803,7 @@
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-iresultsfolder-addidlist
                 - name: AddItem
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-iresultsfolder-additem
-                - name: RemoveAll
+                - name: Removeall
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-iresultsfolder-removeall
                 - name: RemoveIDList
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-iresultsfolder-removeidlist
@@ -2812,7 +2812,7 @@
             - name: IRunnableTask
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-irunnabletask
               items:
-                - name: IsRunning (
+                - name: IsRunning
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-irunnabletask-isrunning
                 - name: Terminar
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-irunnabletask-kill
@@ -2940,7 +2940,7 @@
             - name: IShellChangeNotify
               href: /windows/desktop/api/shlobj_core/nn-shlobj_core-ishellchangenotify
               items:
-                - name: OnChange
+                - name: Onchange
                   href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellchangenotify-onchange
             - name: IShellDetails
               href: /windows/desktop/api/shlobj_core/nn-shlobj_core-ishelldetails
@@ -3094,7 +3094,7 @@
               items:
                 - name: GetOverlayInfo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishelliconoverlayidentifier-getoverlayinfo
-                - name: GetPriority (
+                - name: GetPriority
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishelliconoverlayidentifier-getpriority
                 - name: IsMemberOf
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishelliconoverlayidentifier-ismemberof
@@ -3138,7 +3138,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellitem2-getfiletime
                 - name: GetInt32
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellitem2-getint32
-                - name: GetProperty
+                - name: Getproperty
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellitem2-getproperty
                 - name: GetPropertyDescriptionList
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellitem2-getpropertydescriptionlist
@@ -3367,7 +3367,7 @@
               items:
                 - name: CreateViewWindow2
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellview2-createviewwindow2
-                - name: GetView (
+                - name: GetView
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellview2-getview
                 - name: HandleRename
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellview2-handlerename
@@ -3391,7 +3391,7 @@
                   href: /windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-item
                 - name: OnActivated
                   href: /windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-onactivated
-                - name: Creado
+                - name: OnCreated
                   href: /windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-oncreated
                 - name: OnNavigate
                   href: /windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-onnavigate
@@ -3461,7 +3461,7 @@
                   href: /windows/desktop/api/Syncmgr/nf-syncmgr-isyncmgrconflict-getconflictidinfo
                 - name: GetItemsArray
                   href: /windows/desktop/api/Syncmgr/nf-syncmgr-isyncmgrconflict-getitemsarray
-                - name: GetProperty
+                - name: Getproperty
                   href: /windows/desktop/api/Syncmgr/nf-syncmgr-isyncmgrconflict-getproperty
                 - name: GetResolutionHandler
                   href: /windows/desktop/api/Syncmgr/nf-syncmgr-isyncmgrconflict-getresolutionhandler
@@ -3665,7 +3665,7 @@
                   href: /windows/desktop/api/Syncmgr/nf-syncmgr-isyncmgrresolutionhandler-keepother
                 - name: KeepRecent
                   href: /windows/desktop/api/Syncmgr/nf-syncmgr-isyncmgrresolutionhandler-keeprecent
-                - name: QueryAbilities
+                - name: Capacidades de consulta
                   href: /windows/desktop/api/Syncmgr/nf-syncmgr-isyncmgrresolutionhandler-queryabilities
                 - name: RemoveFromSyncSet
                   href: /windows/desktop/api/Syncmgr/nf-syncmgr-isyncmgrresolutionhandler-removefromsyncset
@@ -3719,7 +3719,7 @@
                   href: /windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronize-setprogresscallback
                 - name: ShowError
                   href: /windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronize-showerror
-                - name: ShowProperties (
+                - name: ShowProperties
                   href: /windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronize-showproperties
                 - name: Sincronizar
                   href: /windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronize-synchronize
@@ -3877,7 +3877,7 @@
             - name: IThumbnailSettings
               href: /windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailsettings
               items:
-                - name: SetContext (
+                - name: SetContext
                   href: /windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailsettings-setcontext
             - name: IThumbnailStreamCache
               href: /windows/desktop/api/thumbnailstreamcache/nn-thumbnailstreamcache-ithumbnailstreamcache
@@ -3911,25 +3911,25 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransferadvisesink-propertyfailure
                 - name: SubStreamFailure
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransferadvisesink-substreamfailure
-                - name: UpdateProgress
+                - name: Updateprogress
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransferadvisesink-updateprogress
                 - name: UpdateTransferState
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransferadvisesink-updatetransferstate
             - name: ITransferDestination
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-itransferdestination
               items:
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransferdestination-advise
                 - name: CreateItem
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransferdestination-createitem
-                - name: No notificar
+                - name: Unadvise
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransferdestination-unadvise
             - name: ITransferMediumItem
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-itransfermediumitem
             - name: ITransferSource
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-itransfersource
               items:
-                - name: Informar
+                - name: consejo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransfersource-advise
                 - name: ApplyPropertiesToItem
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransfersource-applypropertiestoitem
@@ -3953,7 +3953,7 @@
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransfersource-renameitem
                 - name: SetProperties
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransfersource-setproperties
-                - name: No notificar
+                - name: Unadvise
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-itransfersource-unadvise
             - name: ITrayDeskBand
               href: /windows/desktop/api/Shobjidl/nn-shobjidl-itraydeskband
@@ -3989,7 +3989,7 @@
             - name: IUserNotification
               href: /windows/desktop/api/shobjidl_core/nn-shobjidl_core-iusernotification
               items:
-                - name: Reproducción
+                - name: Play Sound
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound
                 - name: SetBalloonInfo
                   href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-setballooninfo
@@ -4002,7 +4002,7 @@
             - name: IUserNotification2
               href: /windows/desktop/api/Shobjidl/nn-shobjidl-iusernotification2
               items:
-                - name: Reproducción
+                - name: Play Sound
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-iusernotification2-playsound
                 - name: SetBalloonInfo
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-iusernotification2-setballooninfo
@@ -4045,7 +4045,7 @@
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-ivisualproperties-getitemheight
                 - name: SetColor
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-ivisualproperties-setcolor
-                - name: SetFont
+                - name: Setfont
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-ivisualproperties-setfont
                 - name: SetItemHeight
                   href: /windows/desktop/api/Shobjidl/nf-shobjidl-ivisualproperties-setitemheight
@@ -4085,10 +4085,10 @@
                   href: taskcompletionclient-applytaskcompletion.md
                 - name: Método RevokeTaskCompletion
                   href: taskcompletionclient-revoketaskcompletion.md
-        - name: Funciones de Shell
+        - name: Funciones de shell
           href: functions.md
           items:
-            - name: Intsafe. h (funciones)
+            - name: Funciones intsafe.h
               href: intsafe-h-functions-bumper.md
               items:
                 - name: Funciones de conversión
@@ -4555,7 +4555,7 @@
                       href: /windows/desktop/api/intsafe/nf-intsafe-ssizetmult
                     - name: SSIZETSub
                       href: /windows/desktop/api/intsafe/nf-intsafe-ssizetsub
-                    - name: UInt8Add
+                    - name: UInt8Agregue
                       href: /windows/desktop/api/intsafe/nf-intsafe-uint8add
                     - name: UInt8Mult
                       href: /windows/desktop/api/intsafe/nf-intsafe-uint8mult
@@ -4623,7 +4623,7 @@
             - name: Funciones de ruta de acceso
               href: path-functions.md
               items:
-                - name: PathAllocCanonicalize
+                - name: PathAllocMentalnicalize
                   href: /windows/desktop/api/pathcch/nf-pathcch-pathalloccanonicalize
                 - name: PathAllocCombine
                   href: /windows/desktop/api/pathcch/nf-pathcch-pathalloccombine
@@ -4637,9 +4637,9 @@
                   href: /windows/desktop/api/pathcch/nf-pathcch-pathcchappend
                 - name: PathCchAppendEx
                   href: /windows/desktop/api/pathcch/nf-pathcch-pathcchappendex
-                - name: PathCchCanonicalize
+                - name: PathCchNtenicalize
                   href: /windows/desktop/api/pathcch/nf-pathcch-pathcchcanonicalize
-                - name: PathCchCanonicalizeEx
+                - name: PathCchNtenicalizeEx
                   href: /windows/desktop/api/pathcch/nf-pathcch-pathcchcanonicalizeex
                 - name: PathCchCombine
                   href: /windows/desktop/api/pathcch/nf-pathcch-pathcchcombine
@@ -4803,17 +4803,17 @@
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ilisequal
             - name: ILIsParent
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ilisparent
-            - name: ILNext (PCUIDLIST_RELATIVE)
+            - name: ILNext(PCUIDLIST_RELATIVE)
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ilnext
-            - name: ILNext (PUIDLIST_RELATIVE)
+            - name: ILNext(PUIDLIST_RELATIVE)
               href: /previous-versions/windows/desktop/legacy/bb776455(v=vs.85)
             - name: ILRemoveLastID
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ilremovelastid
             - name: ILSaveToStream
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ilsavetostream
-            - name: 'ILSkip (PCUIDLIST_RELATIVE, UINT)'
+            - name: 'ILSkip(PCUIDLIST_RELATIVE, UINT)'
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ilskip
-            - name: 'ILSkip (PUIDLIST_RELATIVE, UINT)'
+            - name: 'ILSkip(PUIDLIST_RELATIVE, UINT)'
               href: /previous-versions/windows/desktop/legacy/bb776459(v=vs.85)
             - name: InetIsOffline
               href: /windows/desktop/api/Intshcut/nf-intshcut-inetisoffline
@@ -5057,9 +5057,9 @@
               href: /windows/desktop/api/Intshcut/nf-intshcut-urlassociationdialoga
             - name: WinExecError
               href: /previous-versions/windows/desktop/legacy/bb762266(v=vs.85)
-            - name: Salga
+            - name: Winhelp
               href: /windows/desktop/api/Winuser/nf-winuser-winhelpa
-        - name: Funciones de devolución de llamada de Shell
+        - name: Funciones de devolución de llamada de shell
           href: callbacks.md
           items:
             - name: BFFCALLBACK
@@ -5074,7 +5074,7 @@
               href: /windows/desktop/api/commctrl/nc-commctrl-subclassproc
             - name: FM_UNDELETE_PROC
               href: undeletefile.md
-        - name: 'Constantes, enumeraciones y marcas de Shell'
+        - name: 'Constantes de shell, enumeraciones y marcas'
           href: consts-enums-flags.md
           items:
             - name: _SVGIO
@@ -5149,11 +5149,11 @@
               href: /windows/win32/api/Credentialprovider/ne-credentialprovider-credential_provider_usage_scenario
             - name: CSIDL
               href: csidl.md
-            - name: Marcas de CTF
+            - name: Marcas CTF
               href: ctf.md
             - name: DATAOBJ_GET_ITEM_FLAGS
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-dataobj_get_item_flags
-            - name: Indicadores del comando DBID
+            - name: Marcas de comandos DBID
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-tagdeskbandcid
             - name: DEF_SHARE_ID
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-def_share_id
@@ -5177,7 +5177,7 @@
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-explorer_browser_options
             - name: EXPLORERPANESTATE
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-_explorerpanestate
-            - name: FDAP
+            - name: PTP
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-fdap
             - name: FDE_OVERWRITE_RESPONSE
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-fde_overwrite_response
@@ -5231,7 +5231,7 @@
               href: /windows/desktop/api/Intshcut/ne-intshcut-mimeassociationdialog_in_flags
             - name: MONITOR_APP_VISIBILITY
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-monitor_app_visibility
-            - name: Constantes de MP_POPUPFLAGS
+            - name: MP_POPUPFLAGS constantes
               href: mp-popupflags.md
             - name: NET_STRING
               href: net-string.md
@@ -5247,17 +5247,17 @@
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-nwmf
             - name: PACKAGE_EXECUTION_STATE
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-package_execution_state
-            - name: PERCIBA
+            - name: Percibe
               href: /windows/win32/api/Shtypes/ne-shtypes-perceived
             - name: PUBAPPINFOFLAGS
               href: /windows/win32/api/shappmgr/ne-shappmgr-pubappinfoflags
             - name: QUERY_USER_NOTIFICATION_STATE
               href: /windows/desktop/api/Shellapi/ne-shellapi-query_user_notification_state
-            - name: Tipos de datos del registro
+            - name: Tipos de datos del Registro
               href: hkey-type.md
             - name: REGSAM
               href: regsam.md
-            - name: CONOCER
+            - name: Restricciones
               href: /windows/desktop/api/shlobj_core/ne-shlobj_core-restrictions
             - name: SCALE_CHANGE_FLAGS
               href: /windows/desktop/api/ShellScalingAPI/ne-shellscalingapi-scale_change_flags
@@ -5267,7 +5267,7 @@
               href: /windows/desktop/api/Shlwapi/ne-shlwapi-tagsfbs_flags
             - name: SFGAO
               href: sfgao.md
-            - name: PARTICIÓN
+            - name: Fragmento
               href: /windows/desktop/api/shlobj_core/ne-shlobj_core-shard
             - name: SHARE_ROLE
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-share_role
@@ -5297,7 +5297,7 @@
               href: /windows/desktop/api/Shlwapi/ne-shlwapi-shregenum_flags
             - name: SHSTOCKICONID
               href: /windows/desktop/api/Shellapi/ne-shellapi-shstockiconid
-            - name: SICHINTF
+            - name: SITFTF
               href: /windows/desktop/api/shobjidl_core/ne-shobjidl_core-_sichintf
             - name: SIGDN
               href: /windows/win32/api/shobjidl_core/ne-shobjidl_core-sigdn
@@ -5381,7 +5381,7 @@
               href: /windows/desktop/api/Shobjidl/ne-shobjidl-vpcolorflags
             - name: VPWATERMARKFLAGS
               href: /windows/desktop/api/Shobjidl/ne-shobjidl-vpwatermarkflags
-        - name: Funciones de la utilidad ligera de Shell
+        - name: Funciones de utilidad ligera de Shell
           href: shlwapi.md
           items:
             - name: Funciones de cadena
@@ -5435,7 +5435,7 @@
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-strcmpnia
                 - name: StrCmpNIC
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-strcmpnica
-                - name: StrCpy
+                - name: Strcpy
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-strcpyw
                 - name: StrCpyN
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-strcpynw
@@ -5506,7 +5506,7 @@
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-pathappenda
                 - name: PathBuildRoot
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-pathbuildroota
-                - name: PathCanonicalize
+                - name: PathCanicalize
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-pathcanonicalizea
                 - name: PathCombine
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-pathcombinea
@@ -5618,7 +5618,7 @@
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-shskipjunction
                 - name: UrlApplyScheme
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlapplyschemea
-                - name: UrlCanonicalize
+                - name: UrlNtenicalize
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlcanonicalizea
                 - name: UrlCombine
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlcombinea
@@ -5636,7 +5636,7 @@
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlgetparta
                 - name: UrlHash
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlhasha
-                - name: UrlIs
+                - name: Direcciones URL
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlisa
                 - name: UrlIsFileUrl
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlisfileurla
@@ -5648,14 +5648,14 @@
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlunescapea
                 - name: UrlUnescapeInPlace
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-urlunescapeinplace
-            - name: Funciones del registro
+            - name: Funciones del Registro
               href: shlwapi-reg.md
               items:
                 - name: AssocCreate
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-assoccreate
                 - name: AssocGetPerceivedType
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-assocgetperceivedtype
-                - name: AssocIsDangerous
+                - name: AssocIsDaous
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-associsdangerous
                 - name: AssocQueryKey
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-assocquerykeya
@@ -5723,7 +5723,7 @@
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-shregwriteusvaluea
                 - name: SHSetValue
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-shsetvaluea
-            - name: Funciones de la paleta de colores
+            - name: Funciones de paleta de colores
               href: shlwapi-palette.md
               items:
                 - name: ColorAdjustLuma
@@ -5745,7 +5745,7 @@
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-hashdata
                 - name: IsInternetESCEnabled
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-isinternetescenabled
-                - name: Archivos ISO
+                - name: Isos
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-isos
                 - name: IStream_Copy
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-istream_copy
@@ -5809,7 +5809,7 @@
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-shreleasethreadref
                 - name: SHSetThreadRef
                   href: /windows/desktop/api/Shlwapi/nf-shlwapi-shsetthreadref
-        - name: Macros de Shell
+        - name: Shell Macros
           href: macros.md
           items:
             - name: DEFINE_PROPERTYKEY
@@ -5828,7 +5828,7 @@
               href: /windows/desktop/api/Shellapi/nf-shellapi-netaddr_getallowtype
             - name: NetAddr_SetAllowType
               href: /windows/desktop/api/Shellapi/nf-shellapi-netaddr_setallowtype
-        - name: Notificaciones y mensajes de Shell
+        - name: Mensajes y notificaciones de shell
           href: messages.md
           items:
             - name: ABM_ACTIVATE
@@ -6065,7 +6065,7 @@
               href: wm-help.md
             - name: WM_TCARD
               href: wm-tcard.md
-        - name: Objetos de Shell para scripting y Microsoft Visual Basic
+        - name: Objetos de shell para scripting y Microsoft Visual Basic
           href: objects.md
           items:
             - name: DIDiskQuotaUser
@@ -6073,7 +6073,7 @@
               items:
                 - name: AccountContainerName
                   href: didiskquotauser-accountcontainername.md
-                - name: Estados
+                - name: AccountStatus
                   href: didiskquotauser-accountstatus.md
                 - name: DisplayName
                   href: didiskquotauser-displayname.md
@@ -6164,7 +6164,7 @@
                   href: folder-parentfolder.md
                 - name: ParseName
                   href: folder-parsename.md
-                - name: Title
+                - name: Título
                   href: folder-title.md
             - name: Carpeta2
               href: folder2-object.md
@@ -6179,12 +6179,12 @@
                   href: folder2-self.md
                 - name: Sincronizar
                   href: folder2-synchronize.md
-            - name: Carpeta
+            - name: FolderItem
               href: folderitem.md
               items:
                 - name: Application
                   href: folderitem-application.md
-                - name: GetFolder
+                - name: Getfolder
                   href: folderitem-getfolder.md
                 - name: GetLink
                   href: folderitem-getlink.md
@@ -6204,9 +6204,9 @@
                   href: folderitem-name.md
                 - name: Parent
                   href: folderitem-parent.md
-                - name: Ruta
+                - name: Ruta de acceso
                   href: folderitem-path.md
-                - name: Tamaño
+                - name: Size
                   href: folderitem-size.md
                 - name: Tipo
                   href: folderitem-type.md
@@ -6242,7 +6242,7 @@
               items:
                 - name: Application
                   href: folderitemverb-application.md
-                - name: DoIt
+                - name: Doit
                   href: folderitemverb-doit.md
                 - name: Nombre
                   href: folderitemverb-name.md
@@ -6272,7 +6272,7 @@
                   href: ishelldispatch-cascadewindows.md
                 - name: ControlPanelItem
                   href: ishelldispatch-controlpanelitem.md
-                - name: EjectPC
+                - name: DesalojónPC
                   href: ishelldispatch-ejectpc.md
                 - name: Explorar
                   href: ishelldispatch-explore.md
@@ -6286,7 +6286,7 @@
                   href: ishelldispatch-help.md
                 - name: MinimizeAll
                   href: ishelldispatch-minimizeall.md
-                - name: System.IO
+                - name: Nombres
                   href: ishelldispatch-namespace.md
                 - name: Abrir
                   href: ishelldispatch-open.md
@@ -6345,7 +6345,7 @@
                   href: ishelldispatch4-getsetting.md
                 - name: ToggleDesktop
                   href: ishelldispatch4-toggledesktop.md
-                - name: WindowsSecurity
+                - name: WindowsSeguridad
                   href: ishelldispatch4-windowssecurity.md
             - name: IShellDispatch5
               href: ishelldispatch5.md
@@ -6382,7 +6382,7 @@
                   href: shell-cascadewindows.md
                 - name: ControlPanelItem
                   href: shell-controlpanelitem.md
-                - name: EjectPC
+                - name: DesalojónPC
                   href: shell-ejectpc.md
                 - name: Explorar
                   href: shell-explore.md
@@ -6408,7 +6408,7 @@
                   href: shell-isservicerunning.md
                 - name: MinimizeAll
                   href: shell-minimizeall.md
-                - name: System.IO
+                - name: Nombres
                   href: shell-namespace.md
                 - name: Abrir
                   href: shell-open.md
@@ -6444,7 +6444,7 @@
                   href: shell-undominimizeall.md
                 - name: Windows
                   href: shell-windows.md
-                - name: WindowsSecurity
+                - name: WindowsSeguridad
                   href: shell-windowssecurity.md
                 - name: WindowSwitcher
                   href: shell-windowswitcher.md
@@ -6498,7 +6498,7 @@
                   href: shelllinkobject-geticonlocation.md
                 - name: Tecla de acceso rápido
                   href: shelllinkobject-hotkey.md
-                - name: Ruta
+                - name: Ruta de acceso
                   href: shelllinkobject-path.md
                 - name: Resolver
                   href: shelllinkobject-resolve.md
@@ -6506,7 +6506,7 @@
                   href: shelllinkobject-save.md
                 - name: SetIconLocation
                   href: shelllinkobject-seticonlocation.md
-                - name: Información showcommand
+                - name: ShowCommand
                   href: shelllinkobject-showcommand.md
                 - name: WorkingDirectory
                   href: shelllinkobject-workingdirectory.md
@@ -6547,12 +6547,12 @@
                   href: iwebwizardhost-setheadertext.md
                 - name: SetWizardButtons
                   href: iwebwizardhost-setwizardbuttons.md
-        - name: Objetos de Shell para C++
+        - name: Objetos de shell para C++
           href: objects-cpp.md
           items:
             - name: PublishingWizard
               href: /windows/desktop/shell/scriptable-shell-objects-roadmap
-        - name: Esquemas de Shell
+        - name: Esquemas de shell
           href: schemas.md
           items:
             - name: Esquema de descripción de biblioteca
@@ -6566,25 +6566,25 @@
                   href: schema-library-islibrarypinned.md
                 - name: Elemento libraryDescription (esquema de biblioteca)
                   href: schema-librarydescription.md
-                - name: 'Name (elemento, esquema de biblioteca)'
+                - name: elemento name (Esquema de biblioteca)
                   href: schema-library-name.md
-                - name: Elemento ownerSID (esquema de biblioteca)
+                - name: elemento ownerSID (esquema de biblioteca)
                   href: schema-library-ownersid.md
-                - name: 'Property (elemento, esquema de biblioteca)'
+                - name: elemento property (Esquema de biblioteca)
                   href: schema-library-property.md
-                - name: Elemento propertyStore (esquema de biblioteca)
+                - name: elemento propertyStore (esquema de biblioteca)
                   href: schema-library-propertystore.md
-                - name: Elemento searchConnectorDescription (esquema de biblioteca)
+                - name: elemento searchConnectorDescription (esquema de biblioteca)
                   href: schema-library-searchconnectordescription.md
-                - name: Elemento searchConnectorDescriptionList (esquema de biblioteca)
+                - name: elemento searchConnectorDescriptionList (esquema de biblioteca)
                   href: schema-library-searchconnectordescriptionlist.md
                 - name: Elemento templateInfo (esquema de biblioteca)
                   href: schema-library-templateinfo.md
-                - name: 'version (elemento, esquema de biblioteca)'
+                - name: elemento version (esquema de biblioteca)
                   href: schema-library-version.md
-            - name: Transferir esquema de manifiesto
+            - name: Esquema de manifiesto de transferencia
               href: manifest-schema.md
-        - name: Estructuras de Shell
+        - name: Estructuras de shell
           href: structures.md
           items:
             - name: AASHELLMENUFILENAME
@@ -6613,7 +6613,7 @@
               href: /windows/win32/api/shlobj_core/ns-shlobj_core-browseinfoa
             - name: CATEGORY_INFO
               href: /windows/desktop/api/shobjidl_core/ns-shobjidl_core-category_info
-            - name: PREPARADO
+            - name: Cida
               href: /windows/win32/api/shlobj_core/ns-shlobj_core-cida
             - name: CM_COLUMNINFO
               href: /windows/desktop/api/shobjidl_core/ns-shobjidl_core-cm_columninfo
@@ -6623,7 +6623,7 @@
               href: /windows/win32/api/Shobjidl_core/ns-shobjidl_core-cminvokecommandinfoex
             - name: COMDLG_FILTERSPEC
               href: /windows/win32/api/Shtypes/ns-shtypes-comdlg_filterspec
-            - name: PONE
+            - name: Componente
               href: /windows/win32/api/shlobj_core/ns-shlobj_core-component
             - name: COMPONENTSOPT
               href: /windows/win32/api/shlobj_core/ns-shlobj_core-componentsopt
@@ -6671,11 +6671,11 @@
               href: /windows/desktop/api/shlobj_core/ns-shlobj_core-exp_sz_link
             - name: EXT_BUTTON
               href: ext-button.md
-            - name: Extrasearch
+            - name: EXTRASEARCH
               href: /windows/desktop/api/shobjidl_core/ns-shobjidl_core-extrasearch
             - name: FILE_ATTRIBUTES_ARRAY
               href: /windows/desktop/api/shlobj_core/ns-shlobj_core-file_attributes_array
-            - name: SCRIPTO
+            - name: FILEDESCRIPTOR
               href: /windows/win32/api/shlobj_core/ns-shlobj_core-filedescriptora
             - name: FILEGROUPDESCRIPTOR
               href: /windows/win32/api/shlobj_core/ns-shlobj_core-filegroupdescriptora
@@ -6705,7 +6705,7 @@
               href: /windows/win32/api/shlobj_core/ns-shlobj_core-itemspacing
             - name: KNOWNFOLDER_DEFINITION
               href: /windows/desktop/api/Shobjidl_core/ns-shobjidl_core-knownfolder_definition
-            - name: NDPTECGDI
+            - name: LOGFONT
               href: /windows/win32/api/dimm/ns-dimm-logfonta
             - name: MRUINFO
               href: mruinfo.md
@@ -6733,7 +6733,7 @@
               href: /windows/win32/api/Shellapi/ns-shellapi-open_printer_props_infoa
             - name: OPENASINFO
               href: /windows/win32/api/shlobj_core/ns-shlobj_core-openasinfo
-            - name: SUPERPUESTA
+            - name: Comprometidos
               href: /windows/win32/api/Shobjidl/ns-shobjidl-overlapped
             - name: PARSEDURL
               href: /windows/win32/api/Shlwapi/ns-shlwapi-parsedurla
@@ -6795,7 +6795,7 @@
               href: /windows/win32/api/Shellapi/ns-shellapi-shfileopstructa
             - name: SHFOLDERCUSTOMSETTINGS
               href: /windows/desktop/api/shlobj_core/ns-shlobj_core-shfoldercustomsettings
-            - name: SHITEMID
+            - name: LUGAR DE LA INSOND
               href: /windows/win32/api/Shtypes/ns-shtypes-shitemid
             - name: SHNAMEMAPPING
               href: /windows/win32/api/Shellapi/ns-shellapi-shnamemappinga
@@ -6920,11 +6920,11 @@
           href: guidfromstring.md
         - name: ILLoadFromStream
           href: /windows/desktop/api/shlobj_core/nf-shlobj_core-illoadfromstream
-        - name: 'ILLoadFromStreamEx (IStream *, PIDLIST_ABSOLUTE*)'
+        - name: 'ILLoadFromStreamEx(IStream *, PIDLIST_ABSOLUTE*)'
           href: /windows/desktop/api/shlobj_core/nf-shlobj_core-illoadfromstreamex
-        - name: 'ILLoadFromStreamEx (IStream *, PIDLIST_RELATIVE*)'
+        - name: 'ILLoadFromStreamEx(IStream *, PIDLIST_RELATIVE*)'
           href: /previous-versions/windows/desktop/legacy/bb776452(v=vs.85)
-        - name: 'ILLoadFromStreamEx (IStream *, PITEMID_CHILD*)'
+        - name: 'ILLoadFromStreamEx(IStream *, PITEMID_CHILD*)'
           href: /previous-versions/windows/desktop/legacy/bb776453(v=vs.85)
         - name: IsCharAlphaNumericWrapW
           href: ischaralphanumericwrapw.md
@@ -7152,9 +7152,9 @@
           href: /windows/desktop/api/shlobj_core/nf-shlobj_core-writecabinetstate
         - name: Funciones de encapsulador SHLWAPI
           href: shlwapi-wrappers.md
-        - name: Fichero
+        - name: Fileopen
           href: /windows/desktop/shell/samples-namespacetreecontrol
-        - name: Tipos
+        - name: FileTypes
           href: /windows/desktop/shell/samples-nondefaultdropmenuverb
         - name: FolderItemsFDF
           href: /windows/desktop/shell/functions
@@ -7326,7 +7326,7 @@
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-oncommand
             - name: OnCreate
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-oncreate
-            - name: Destruir
+            - name: OnDestroy
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-ondestroy
             - name: OnFrameWindowActivateBS
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-onframewindowactivatebs
@@ -7334,7 +7334,7 @@
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-onnotify
             - name: OnSetFocus
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-onsetfocus
-            - name: Tamaño
+            - name: OnSize
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-onsize
             - name: PutBaseBrowserData
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-putbasebrowserdata
@@ -7360,7 +7360,7 @@
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-v_maytranslateaccelerator
             - name: v_ShowHideChildWindows
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-v_showhidechildwindows
-            - name: WndProcBS
+            - name: WndProcbs
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-wndprocbs
         - name: IBrowserService3
           href: /windows/desktop/api/Shdeprecated/nn-shdeprecated-ibrowserservice3
@@ -7386,7 +7386,7 @@
         - name: IColumnProvider
           href: /windows/desktop/api/shlobj/nn-shlobj-icolumnprovider
           items:
-            - name: GetColumnInfo
+            - name: Getcolumninfo
               href: /windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-getcolumninfo
             - name: GetItemData
               href: /windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-getitemdata
@@ -7486,7 +7486,7 @@
           items:
             - name: FindCIE4ConnectionPoint
               href: /windows/desktop/api/shdeprecated/nf-shdeprecated-iexpdispsupport-findconnectionpoint
-            - name: Invocar
+            - name: OnInvoke
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-iexpdispsupport-oninvoke
             - name: OnTranslateAccelerator
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-iexpdispsupport-ontranslateaccelerator
@@ -7495,7 +7495,7 @@
           items:
             - name: FindCIE4ConnectionPoint
               href: /windows/desktop/api/Shdeprecated/nf-shdeprecated-iexpdispsupportxp-findcie4connectionpoint
-            - name: Invocar
+            - name: OnInvoke
               href: /windows/desktop/api/shdeprecated/nf-shdeprecated-iexpdispsupportxp-oninvoke
             - name: OnTranslateAccelerator
               href: /windows/desktop/api/shdeprecated/nf-shdeprecated-iexpdispsupportxp-ontranslateaccelerator
@@ -7569,7 +7569,7 @@
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-addobject
             - name: Método ArrangeGrid
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-arrangegrid
-            - name: AutoArrange (método)
+            - name: Método AutoArrange
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-autoarrange
             - name: Método GetArrangeParam
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-getarrangeparam
@@ -7597,7 +7597,7 @@
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-moveicons
             - name: Método QuerySupport
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-querysupport
-            - name: Rearrange (método)
+            - name: Reorganizar método
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-rearrange
             - name: Método RefreshObject
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-refreshobject
@@ -7609,7 +7609,7 @@
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-setautomationobject
             - name: Método SetCallback
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-setcallback
-            - name: SetClipboard (método)
+            - name: Método SetClipboard
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-setclipboard
             - name: Método SetItemPos
               href: /windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-setitempos
@@ -7639,11 +7639,11 @@
           items:
             - name: Método CloneFrame
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-cloneframe
-            - name: Decode (método)
+            - name: Método Decode
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-decode
             - name: Método DiscardEdit
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-discardedit
-            - name: DisplayName (método)
+            - name: Método DisplayName
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-displayname
             - name: Draw (método)
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-draw
@@ -7681,7 +7681,7 @@
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-isvector
             - name: Método NextFrame
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-nextframe
-            - name: NextPage (método)
+            - name: Método NextPage
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-nextpage
             - name: Método PrevPage
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-prevpage
@@ -7691,7 +7691,7 @@
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-replaceframe
             - name: Rotate (método)
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-rotate
-            - name: Scale (método)
+            - name: Método scale
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-scale
             - name: Método SelectPage
               href: /windows/desktop/api/Shimgdata/nf-shimgdata-ishellimagedata-selectpage
@@ -7724,7 +7724,7 @@
               href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishelltaskscheduler-counttasks
             - name: Método RemoveTasks
               href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishelltaskscheduler-removetasks
-            - name: Status (método)
+            - name: Método status
               href: /windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishelltaskscheduler-status
         - name: IShellTaskScheduler2
           href: /previous-versions/windows/desktop/legacy/bb774852(v=vs.85)
@@ -7746,7 +7746,7 @@
               href: /previous-versions/windows/desktop/isync-schedule/bb774683(v=vs.85)
             - name: Método GetConnection
               href: /previous-versions/windows/desktop/isync-schedule/bb774684(v=vs.85)
-            - name: GetFlags (método)
+            - name: Método GetFlags
               href: /previous-versions/windows/desktop/isync-schedule/bb774685(v=vs.85)
             - name: Método GetITask
               href: /previous-versions/windows/desktop/isync-schedule/bb774686(v=vs.85)
@@ -7770,7 +7770,7 @@
               href: /previous-versions/windows/desktop/isync-schedule/bb774698(v=vs.85)
             - name: Método SetConnection
               href: /previous-versions/windows/desktop/isync-schedule/bb760788(v=vs.85)
-            - name: SetFlags (método)
+            - name: Método SetFlags
               href: /previous-versions/windows/desktop/isync-schedule/bb760790(v=vs.85)
             - name: Método SetItemCheck
               href: /previous-versions/windows/desktop/isync-schedule/bb760792(v=vs.85)
@@ -7789,7 +7789,7 @@
               href: /previous-versions/windows/desktop/isync-schedule-mgr/bb774674(v=vs.85)
             - name: Método OpenSchedule
               href: /previous-versions/windows/desktop/isync-schedule-mgr/bb774676(v=vs.85)
-            - name: Método RemoveSchedule
+            - name: RemoveSchedule (método)
               href: /previous-versions/windows/desktop/isync-schedule-mgr/bb774678(v=vs.85)
         - name: IThumbnailCapture
           href: /windows/desktop/api/shlobj/nn-shlobj-ithumbnailcapture
@@ -7877,12 +7877,12 @@
           href: sfvm-setisfv.md
         - name: SFVM_THISIDLIST
           href: sfvm-thisidlist.md
-    - name: Ejemplos de Shell
+    - name: Ejemplos de shell
       href: samples-entry.md
       items:
         - name: Ejemplo de asistentes de Aero
           href: samples-aerowizards.md
-        - name: Ejemplo de propiedad de ventana ID. de modelo de usuario (AppID)
+        - name: Ejemplo de propiedad de ventana Id. de modelo de usuario de aplicación (AppID)
           href: samples-appusermodelidwindowproperty.md
         - name: Ejemplo de lista de accesos directos automática
           href: samples-automaticjumplist.md

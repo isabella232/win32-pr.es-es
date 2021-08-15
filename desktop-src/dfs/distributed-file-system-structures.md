@@ -1,5 +1,5 @@
 ---
-description: A continuación se muestra la Sistema de archivos distribuido DFS
+description: A continuación se muestra Sistema de archivos distribuido estructuras DFS
 ms.assetid: f55ad3c0-0457-4d5a-a7d3-8eff744d573d
 title: Sistema de archivos distribuido estructuras
 ms.topic: article
@@ -22,7 +22,7 @@ Estas son las estructuras Sistema de archivos distribuido (DFS):
 [**DFS_GET_PKT_ENTRY_STATE_ARG**](/windows/win32/api/lmdfs/ns-lmdfs-dfs_get_pkt_entry_state_arg)
 </dt> <dd>
 
-Búfer de entrada usado con el [**FSCTL_DFS_GET_PKT_ENTRY_STATE**](fsctl-dfs-get-pkt-entry-state.md) de control
+Búfer de entrada usado con el [**FSCTL_DFS_GET_PKT_ENTRY_STATE**](fsctl-dfs-get-pkt-entry-state.md) de control de entrada
 </dd> <dt>
 
 [_DFS_INFO_1 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_1)
@@ -33,49 +33,49 @@ Contiene el nombre de una raíz Sistema de archivos distribuido (DFS) o vínculo
 
 [_DFS_INFO_2 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_2)
 </dt> <dd>
-Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o vínculo. Esta estructura contiene el nombre, el estado y el número de destinos DFS para la raíz o el vínculo.
+Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o un vínculo. Esta estructura contiene el nombre, el estado y el número de destinos DFS para la raíz o el vínculo.
 
 </dd> <dt>
 
 [_DFS_INFO_3 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_3)
 </dt> <dd>
-Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o vínculo. Esta estructura contiene el nombre, el estado, el número de destinos DFS e información sobre cada destino de la raíz o el vínculo.
+Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o un vínculo. Esta estructura contiene el nombre, el estado, el número de destinos DFS e información sobre cada destino de la raíz o vínculo.
 
 </dd> <dt>
 
 [_DFS_INFO_4 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_4)
 </dt> <dd>
-Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o vínculo. Esta estructura contiene el nombre, el estado, **el GUID,** el tiempo de espera, el número de destinos y la información sobre cada destino de la raíz o el vínculo.
+Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o un vínculo. Esta estructura contiene el nombre, el estado, **el GUID,** el tiempo de espera, el número de destinos y la información sobre cada destino de la raíz o vínculo.
 
 </dd> <dt>
 
 [_DFS_INFO_5 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_5)
 </dt> <dd>
-Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o vínculo. Esta estructura contiene el nombre, el estado, **el GUID,** el tiempo de espera, las propiedades namespace/root/link, el tamaño de los metadatos y el número de destinos para la raíz o el vínculo.
+Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o un vínculo. Esta estructura contiene el nombre, el estado, **el GUID,** el tiempo de espera, las propiedades namespace/root/link, el tamaño de los metadatos y el número de destinos para la raíz o el vínculo.
 
 </dd> <dt>
 
 [_DFS_INFO_6 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_6)
 </dt> <dd>
-Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o vínculo. Esta estructura contiene el nombre, el estado, **el GUID,** el tiempo de espera, las propiedades de espacio de nombres, raíz o vínculo, el tamaño de los metadatos, el número de destinos y la información sobre cada destino de la raíz o vínculo.
+Contiene información sobre una raíz Sistema de archivos distribuido (DFS) o un vínculo. Esta estructura contiene el nombre, el estado, **el GUID,** el tiempo de espera, las propiedades de espacio de nombres, raíz o vínculo, el tamaño de los metadatos, el número de destinos y la información sobre cada destino de la raíz o vínculo.
 
 </dd> <dt>
 
 [_DFS_INFO_7 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_7)
 </dt> <dd>
-Contiene información sobre un espacio de nombres DFS. Esta estructura contiene el GUID de **versión para** los metadatos del espacio de nombres .
+Contiene información sobre un espacio de nombres DFS. Esta estructura contiene el **GUID de versión para** los metadatos del espacio de nombres .
 
 </dd> <dt>
 
 [_DFS_INFO_8 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_8)
 </dt> <dd>
-Contiene el nombre, el estado, **el GUID,** el tiempo de espera, las marcas de propiedad, el tamaño de los metadatos, la información de destino DFS y el descriptor de seguridad del punto de reanidad de vínculo para una raíz o vínculo.
+Contiene el nombre, el estado, **el GUID,** el tiempo de espera, las marcas de propiedad, el tamaño de los metadatos, la información de destino DFS y el descriptor de seguridad del punto de reanción de vínculos para una raíz o vínculo.
 
 </dd> <dt>
 
 [_DFS_INFO_9 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_9)
 </dt> <dd>
-Contiene el nombre, el estado, **el GUID,** el tiempo de espera, las marcas de propiedad, el tamaño de los metadatos, la información de destino DFS, el descriptor de seguridad del punto de reanidad de vínculo y una lista de destinos DFS para una raíz o vínculo.
+Contiene el nombre, el estado, **el GUID,** el tiempo de espera, las marcas de propiedad, el tamaño de los metadatos, la información de destino DFS, el descriptor de seguridad del punto de reanción de vínculos y una lista de destinos DFS para una raíz o vínculo.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Contiene la versión de metadatos DFS y las funcionalidades de un espacio de nom
 
 [_DFS_INFO_100 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_100)
 </dt> <dd>
-Contiene un comentario asociado a una raíz Sistema de archivos distribuido (DFS) o vínculo.
+Contiene un comentario asociado a una raíz Sistema de archivos distribuido (DFS) o un vínculo.
 
 </dd> <dt>
 
@@ -129,19 +129,19 @@ Contiene el estado de almacenamiento y la prioridad de un destino raíz DFS o un
 
 [_DFS_INFO_107 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_107)
 </dt> <dd>
-Contiene información sobre una raíz o vínculo DFS, incluidos el comentario, el estado, el tiempo de espera, las marcas de propiedad y el descriptor de seguridad del punto de reanción de vínculo.
+Contiene información sobre una raíz o vínculo DFS, incluidos el comentario, el estado, el tiempo de espera, las marcas de propiedad y el descriptor de seguridad del punto de reanción de vínculos.
 
 </dd> <dt>
 
 [_DFS_INFO_150 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_150)
 </dt> <dd>
-Contiene el descriptor de seguridad para el punto de reanlabción de un vínculo DFS.
+Contiene el descriptor de seguridad para el punto de rean aproximado de un vínculo DFS.
 
 </dd> <dt>
 
 [_DFS_INFO_200 estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_info_200)
 </dt> <dd>
-Contiene el nombre de un espacio de nombres basado Sistema de archivos distribuido dominio (DFS).
+Contiene el nombre de un espacio de nombres Sistema de archivos distribuido basado en dominio (DFS).
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Contiene el nombre y el tipo (basado en dominio o independiente) de un espacio d
 
 [_DFS_STORAGE_INFO estructura](/windows/desktop/api/lmdfs/ns-lmdfs-dfs_storage_info)
 </dt> <dd>
-Contiene información sobre un destino raíz o de vínculo DFS en un espacio de nombres DFS o desde la memoria caché mantenida por el cliente DFS.
+Contiene información sobre una raíz DFS o un destino de vínculo en un espacio de nombres DFS o desde la memoria caché mantenida por el cliente DFS.
 
 </dd> <dt>
 

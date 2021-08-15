@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentQuotaException'
-title: Constructor de EsentQuotaException
+description: 'Más información sobre: Constructor de EsentQuotaException'
+title: Constructor EsentQuotaException
 TOCTitle: 'EsentQuotaException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentQuotaException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentquotaexception.esentquotaexception(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 2a6b6c75f10ed44650d4c565f4a9d831c465a6b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d55293b45c32d976f045e657d9e055fe5ad5c8c81311d4fdc560c3283807dd8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118491734"
 ---
-# <a name="esentquotaexception-constructor"></a>Constructor de EsentQuotaException
+# <a name="esentquotaexception-constructor"></a>Constructor EsentQuotaException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -39,12 +39,12 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn319648(v=exchg.10).md">EsentQuotaException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa una nueva instancia de la clase EsentQuotaException. Este constructor se utiliza para deserializar una excepción serializada.</td>
+<td><a href="dn319648(v=exchg.10).md">EsentQuotaException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa una nueva instancia de la clase EsentQuotaException. Este constructor se usa para deserializar una excepción serializada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn319867(v=exchg.10).md">EsentQuotaException (cadena, JET_err)</a></td>
+<td><a href="dn319867(v=exchg.10).md">EsentQuotaException(String, JET_err)</a></td>
 <td>Inicializa una nueva instancia de la clase EsentQuotaException.</td>
 </tr>
 </tbody>
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de EsentQuotaException](./esentquotaexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

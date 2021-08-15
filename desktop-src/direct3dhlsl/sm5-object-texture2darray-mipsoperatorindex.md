@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DArray:: MIPS. Operador (función)'
-description: 'Devuelve una variable de recurso de solo lectura. | Texture2DArray:: MIPS. Operador (función)'
+title: Texture2DArray::mips. Función de operador
+description: Devuelve una variable de recurso de solo lectura. | Texture2DArray::mips. Función de operador
 ms.assetid: 66639bf6-74dd-4c69-9cc1-74cc9314de57
 keywords:
-- MIPS. Función de operador HLSL
+- Mips. Función de operador HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 17f24dd54768f3583f508527b7e03f72399bf98e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f5dff48f721e45ef7853c125b1d7d0d32d5cb311a3dbc3b31d4100f3038a8fdc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724596"
 ---
-# <a name="texture2darraymipsoperator----function"></a>Texture2DArray:: MIPS. Operador (función)
+# <a name="texture2darraymipsoperator----function"></a>Texture2DArray::mips. Función de operador
 
 Devuelve una variable de recurso de solo lectura.
 
@@ -37,21 +37,21 @@ R mips.Operator[][](
 
 <dl> <dt>
 
-*mipSlice* \[ de\]
+*mipSlice* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Índice del segmento MIP.
+Índice del segmento mip.
 
 </dd> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt3**
+Tipo: **uint3**
 
-Posición de índice. Los componentes primero y segundo contienen las coordenadas (x, y). El tercer componente indica el segmento de matriz deseado.
+Posición del índice. El primer y segundo componentes contienen las coordenadas (x, y). El tercer componente indica el segmento de matriz deseado.
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Posición de índice. Los componentes primero y segundo contienen las coordenada
 
 Tipo: **R**
 
-Variable de recurso de solo lectura.
+Una variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="usage-example"></a>Ejemplo de uso
 
@@ -76,11 +76,11 @@ float4 f = tex.mips[mip][pos_xy_and_array];
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -88,14 +88,14 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Texture2DArray](sm5-object-texture2darray.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

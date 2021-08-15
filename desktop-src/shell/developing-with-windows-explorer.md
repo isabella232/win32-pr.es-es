@@ -1,28 +1,28 @@
 ---
-description: El explorador de Windows es una eficaz aplicación de exploración y administración de recursos.
+description: Windows Explorer es una aplicación eficaz de exploración y administración de recursos.
 ms.assetid: 879CE652-EDC0-4a14-925E-C83763133BE5
-title: Desarrollo con el explorador de Windows
+title: Desarrollo con Windows Explorer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b7b68d48f2d1becea23311847a5ce41b3776321
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22d00b513b3ee73c30b100cb4236d2c9fb327e1f9557d12ba86738ee9e910ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118460193"
 ---
-# <a name="developing-with-windows-explorer"></a>Desarrollo con el explorador de Windows
+# <a name="developing-with-windows-explorer"></a>Desarrollo con Windows Explorer
 
-El explorador de Windows es una eficaz aplicación de exploración y administración de recursos. Se puede tener acceso al explorador de Windows como un todo integrado a través de Explorer.exe o la interfaz [**IExplorerBrowser**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser) . El explorador de Windows (Explorer.exe) se puede generar como un proceso independiente mediante [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) o una función similar.
+Windows Explorer es una aplicación eficaz de exploración y administración de recursos. Windows Se puede acceder al Explorador como un conjunto integrado a través Explorer.exe o la [**interfaz IExplorerBrowser.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser) Windows El Explorador (Explorer.exe) se puede generar como un proceso independiente mediante [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) o una función similar.
 
 > [!Note]  
-> Las opciones de línea de comandos para Explorer.exe se documentan en el sitio de soporte técnico de Microsoft Windows en el artículo [Explorador de windows Command-Line opciones](https://support.microsoft.com/kb/152457).
+> Las opciones de línea de comandos Explorer.exe se documentan en el sitio de soporte técnico de Microsoft Windows en el artículo Windows [Explorer Command-Line Opciones de .](https://support.microsoft.com/kb/152457)
 
  
 
-Las ventanas de explorador abiertas se pueden detectar y programar mediante [**IShellWindows**](/windows/desktop/api/Exdisp/nn-exdisp-ishellwindows) (CLSID \_ ShellWindows) y se pueden crear nuevas instancias del explorador de Windows mediante [**IWebBrowser2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127(v=vs.85)) (CLSID \_ ShellBrowserWindow).
+Las ventanas abiertas del explorador se pueden detectar y programar mediante [**IShellWindows**](/windows/desktop/api/Exdisp/nn-exdisp-ishellwindows) (CLSID ShellWindows) y se pueden crear nuevas instancias de Windows Explorer mediante \_ [**IWebBrowser2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127(v=vs.85)) (CLSID \_ ShellBrowserWindow).
 
-En el ejemplo de código siguiente se muestra cómo se puede usar el modelo de automatización del explorador de Windows para crear y detectar ventanas del explorador que se están ejecutando.
+En el ejemplo de código siguiente se muestra cómo se puede usar el modelo de automatización Windows Explorer para crear y detectar ventanas del explorador que se están ejecutando.
 
 
 ```
@@ -225,31 +225,31 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 
 
-El área cliente del explorador de Windows se puede hospedar mediante la interfaz [IExplorerBrowser](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser) . El cliente del explorador de Windows y los controles de árbol de espacios de nombres son componentes estándar de Windows Vista y versiones posteriores. Los desarrolladores pueden reutilizar las interfaces como componentes de compilación. Un uso común de estos controles es crear exploradores personalizados adecuados para el dominio del problema.
+El Windows cliente del Explorador de aplicaciones se puede hospedar mediante la [interfaz IExplorerBrowser.](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser) El cliente Windows Explorer y los controles de árbol de espacio de nombres son componentes estándar de Windows Vista y versiones posteriores. Los desarrolladores pueden reutilizar las interfaces como componentes de creación. Un uso común de estos controles es crear exploradores personalizados adecuados para el dominio del problema.
 
-Los controles del explorador de Windows se clasifican en las siguientes categorías funcionales:
+Los controles de Windows Explorer se clasifican en las siguientes categorías funcionales:
 
 -   [Controles de navegación](#navigation-controls)
 -   [Controles de comando](#command-controls)
--   [Propiedades y controles de vista previa](#property-and-preview-controls)
--   [Filtrar y ver controles](#filtering-and-view-controls)
--   [ListView (control)](#listview-control)
+-   [Controles de propiedad y vista previa](#property-and-preview-controls)
+-   [Filtrado y controles de vista](#filtering-and-view-controls)
+-   [Listview Control](#listview-control)
 
 ## <a name="navigation-controls"></a>Controles de navegación
 
-Los controles de navegación ayudan a los usuarios a determinar el contexto y navegar por el espacio de dominio lógico asociado, denominado pagespace. Por ejemplo, pagespace para el explorador de Windows es el espacio de nombres del shell. Pagespaces se componen de cero o más páginas.
+Los controles de navegación ayudan a los usuarios a determinar el contexto y navegar por el espacio de dominio lógico asociado, denominado espacio de páginas. Por ejemplo, el espacio de páginas de Windows Explorer es el espacio de nombres shell. Los espacios de página se componen de cero o más páginas.
 
-En la tabla siguiente se enumeran y describen los controles de navegación disponibles en el explorador de Windows en Windows Vista y sistemas operativos posteriores.
+En la tabla siguiente se enumeran y describen los controles de navegación disponibles en Windows Explorer en Windows Vista y sistemas operativos posteriores.
 
 
 
 | Control de navegación               | Descripción                                                                                                                                                                                |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Barra de direcciones (control de ruta de navegación) | Muestra la dirección de la página actual en pagespace. Se puede hacer clic en los botones de navegación para desplazarse a cualquier antecesor en el pagespace. Los usuarios también pueden escribir direcciones URL y rutas de acceso para navegar. |
-| Árbol de carpetas                      | Proporciona una nueva versión de un control de árbol, optimizada para pagespacess grandes.                                                                                                                  |
-| Viajes                           | Habilita la navegación relativa a través de botones de estilo Web como **atrás** y **adelante**.                                                                                                    |
-| Title                            | Muestra el nombre y el contexto del explorador actual.                                                                                                                                            |
-| Pagespace                        | Muestra la rama actual de pagespace. Las páginas se pueden ordenar por criterios diferentes. Los usuarios pueden hacer clic en una página para ir a ella.                                                        |
+| Barra de direcciones (control ruta de navegación) | Muestra la dirección de la página actual en el espacio de páginas. Se puede hacer clic en los botones de ruta de navegación para navegar a cualquier antecesor en el espacio de páginas. Los usuarios también pueden escribir direcciones URL y rutas de acceso para navegar. |
+| Árbol de carpetas                      | Proporciona una nueva versión de un control de árbol, optimizada para espacios de página grandes.                                                                                                                  |
+| Viajes                           | Habilita la navegación relativa a través de botones de estilo web como **Atrás** y **Adelante.**                                                                                                    |
+| Título                            | Muestra el nombre y el contexto actuales del explorador.                                                                                                                                            |
+| Espacio de páginas                        | Muestra la rama actual del espacio de páginas. Las páginas se pueden ordenar por criterios diferentes. Los usuarios pueden hacer clic en una página para ir a ella.                                                        |
 
 
 
@@ -257,70 +257,70 @@ En la tabla siguiente se enumeran y describen los controles de navegación dispo
 
 ## <a name="command-controls"></a>Controles de comando
 
-Los controles de comandos anuncian las características y la funcionalidad del explorador de Windows a los usuarios. Estos controles realizan acciones generales o acciones específicas de un elemento o elementos seleccionados.
+Los controles de comandos anuncian a los usuarios las características y funcionalidades Windows Explorer. Estos controles realizan acciones generales o acciones específicas de un elemento o elementos seleccionados.
 
 
 
 | Control de comandos | Descripción                                                                                                                                                                                        |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Barra de herramientas         | Muestra botones para los comandos de uso frecuente (una nueva versión de una barra de herramientas de comandos). Entre las opciones de personalización se incluyen botones desplegables, botones de expansión, texto descriptivo opcional y un área de desbordamiento. |
-| Imagen prominente            | Aparece como un único control personalizado y opcional en el centro de la barra de herramientas. Representa el comando principal del contexto actual.                                                             |
+| Barra de herramientas         | Muestra los botones de los comandos usados habitualmente (una nueva versión de una barra de herramientas de comandos). Las opciones de personalización incluyen botones desplegables, botones de división, texto descriptivo opcional y un área de desbordamiento. |
+| Imagen prominente            | Aparece como un control único, opcional y personalizado en el centro de la barra de herramientas. Representa el comando principal para el contexto actual.                                                             |
 | Barra de menús        | Presenta comandos a través de menús.                                                                                                                                                                   |
-| Menú contextual    | Muestra un subconjunto de comandos disponibles contextualmente relevante que se muestran como resultado de hacer clic con el botón secundario en un elemento.                                                                               |
+| Menú contextual    | Enumera un subconjunto pertinente contextualmente de los comandos disponibles que se muestran como resultado de hacer clic con el botón derecho en un elemento.                                                                               |
 
 
 
  
 
-## <a name="property-and-preview-controls"></a>Propiedades y controles de vista previa
+## <a name="property-and-preview-controls"></a>Controles de propiedad y vista previa
 
-Los controles de propiedades y de vista previa se utilizan para obtener una vista previa de los elementos, así como para ver y editar las propiedades de los elementos.
+Los controles de propiedad y vista previa se usan para obtener una vista previa de los elementos y para ver y editar las propiedades de los elementos.
 
 
 
 | Control    | Descripción                                                                                                                                                                                                                                        |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vista previa    | Muestra una vista previa del elemento seleccionado, como una miniatura o un icono dinámico.                                                                                                                                                                       |
-| Propiedades | Muestra las propiedades del elemento seleccionado. En el caso de las selecciones múltiples, se muestra un resumen de las propiedades del grupo de elementos seleccionado. En el caso de una selección nula, muestra un resumen de las propiedades de la página actual (contenido del control ListView). |
+| Vista previa    | Muestra una vista previa del elemento seleccionado, como una miniatura o un icono en directo.                                                                                                                                                                       |
+| Propiedades | Muestra las propiedades del elemento seleccionado. Para varias selecciones, muestra un resumen de las propiedades del grupo de elementos seleccionado. Para una selección nula, muestra un resumen de las propiedades de la página actual (contenido de la vista de lista). |
 
 
 
  
 
-## <a name="filtering-and-view-controls"></a>Filtrar y ver controles
+## <a name="filtering-and-view-controls"></a>Filtrado y visualización de controles
 
-Los controles de filtro y vista se usan para manipular el conjunto de elementos de ListView y para cambiar la presentación de los elementos en el control ListView.
+Los controles de filtrado y vista se usan para manipular el conjunto de elementos de la vista de lista y para cambiar la presentación de los elementos en la vista de lista.
 
 
 
 | Control   | Descripción                                                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------|
-| Filter    | Filtra u organiza los elementos de un control ListView basándose en las propiedades enumeradas como columnas. Al hacer clic en una columna, se ordena por esa propiedad. |
-| Wordwheel | Filtra de forma dinámica e incremental los elementos mostrados en un control ListView en función de una cadena de texto de entrada.                      |
-| Ver      | Permite al usuario cambiar el modo de vista de un control ListView. Se puede usar un control deslizante para determinar el tamaño de los iconos.                |
+| Filter    | Filtra u organiza elementos en una vista de lista en función de las propiedades enumeradas como columnas. Al hacer clic en una columna, se ordena por esa propiedad. |
+| Rueda de palabras | Filtra dinámica e incrementalmente los elementos mostrados en una vista de lista en función de una cadena de texto de entrada.                      |
+| Ver      | Permite al usuario cambiar el modo de vista de un control listview. Se puede usar un control deslizante para determinar el tamaño del icono.                |
 
 
 
  
 
-## <a name="listview-control"></a>ListView (control)
+## <a name="listview-control"></a>Listview Control
 
-El control ListView se usa para ver un conjunto de elementos en uno de los cuatro modos de vista: detalles, mosaicos, iconos o panorama. El control ListView también permite al usuario seleccionar y activar uno o más elementos.
+El control listview se usa para ver un conjunto de elementos en uno de los cuatro modos de vista: detalles, iconos, iconos o panorama. El control listview también permite al usuario seleccionar y activar uno o varios elementos.
 
 > [!Caution]  
-> Aunque algunos de estos controles tienen nombres y/o funcionalidad similar a los controles estándar de Windows Presentation Foundation (WPF) que se encuentran en el espacio de nombres System. Windows. Controls, son clases distintas.
+> Aunque algunos de estos controles tienen nombres o funcionalidades similares a los controles Windows Presentation Foundation estándar (WPF) que se encuentran en el sistema. Windows. Controla el espacio de nombres, son clases distintas.
 
  
 
-Estos controles independientes funcionan en gran medida a través de eventos generados por la interacción del usuario o por los propios controles. En la tabla siguiente se muestran las tres categorías de eventos principales.
+Estos controles independientes funcionan conjuntamente en gran medida a través de eventos generados por la interacción del usuario o por los propios controles. En la tabla siguiente se muestran las tres categorías de eventos principales.
 
 
 
 | Categoría de eventos | Ejemplo                                                       |
 |----------------|---------------------------------------------------------------|
 | Navegación     | Pasar de una página a otra.                               |
-| Selección      | Cambiar la selección actual en el control ListView.               |
-| Ver cambio    | Cambiar el orden de presentación o el modo de vista en el control ListView. |
+| Número de selección      | Cambiar la selección actual en la vista de lista.               |
+| Ver cambio    | Cambiar el orden de presentación o el modo de vista en la vista de lista. |
 
 
 

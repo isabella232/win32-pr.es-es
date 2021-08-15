@@ -1,5 +1,5 @@
 ---
-description: La asociación PackagedComponent de CIM representa una relación explícita en la que un componente normalmente está contenido por un paquete físico, como un \_ chasis o una tarjeta.
+description: La asociación PackagedComponent de CIM representa una relación explícita en la que un componente suele estar contenido por un paquete físico, como un \_ chasis o una tarjeta.
 ms.assetid: ef0cdbc4-41ee-4517-92ca-61cfcbe64c36
 ms.tgt_platform: multiple
 title: CIM_PackagedComponent clase
@@ -28,7 +28,7 @@ ms.locfileid: "118422035"
 
 La **\_ asociación PackagedComponent** de CIM representa una relación explícita en la que un componente normalmente está contenido por un paquete físico, como un chasis o una tarjeta.
 
-**Nota**  Un componente se puede quitar de su paquete de contenido (es decir, la propiedad **booleana** extraíble es TRUE o no insertarse aún **en él).** Por lo tanto, es posible que un componente no siempre esté asociado a un contenedor.
+**Nota**  Un componente se puede quitar de su paquete de contenido (es decir, la propiedad **booleana** extraíble es TRUE o no insertarse **aún en él).** Por lo tanto, es posible que un componente no siempre esté asociado a un contenedor.
 
 > [!IMPORTANT]
 > Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
@@ -110,7 +110,7 @@ Un [**elemento \_ PhysicalComponent de CIM**](cim-physicalcomponent.md) que desc
 
 ## <a name="remarks"></a>Comentarios
 
-La **clase \_ CIM PackagedComponent** se deriva del [**contenedor CIM \_**](cim-container.md).
+La **clase \_ Cim PackagedComponent** se deriva del [**contenedor CIM \_**](cim-container.md).
 
 WMI no implementa esta clase.
 

@@ -1,48 +1,48 @@
 ---
-title: Importación de la licencia y el material de clave
-description: Importación de la licencia y el material de clave
+title: Importar material de clave y licencia
+description: Importar material de clave y licencia
 ms.assetid: 72ce5901-3e5b-4339-b695-592895ac6bfe
 keywords:
-- SDK de Windows Media Format, importación de DRM
-- SDK de Windows Media Format, importar
-- SDK de Windows Media Format, licencias
-- Administración de derechos digitales (DRM), importar
-- DRM (administración de derechos digitales), importar
-- Administración de derechos digitales (DRM), licencias
+- Windows SDK de formato multimedia, importación de DRM
+- Windows SDK de formato multimedia, importación
+- Windows SDK de formato multimedia, licencias
+- digital rights management (DRM),import
+- DRM (administración de derechos digitales),importar
+- administración de derechos digitales (DRM), licencias
 - DRM (administración de derechos digitales), licencias
-- Administración de derechos digitales (DRM), material de clave
-- DRM (administración de derechos digitales), material de clave
-- API extendidas del cliente DRM, importar
+- digital rights management (DRM), material clave
+- DRM (administración de derechos digitales), material clave
+- API extendidas de cliente DRM, importar
 - API extendidas de cliente, importar
-- API extendidas del cliente DRM, licencias
-- API extendidas del cliente, licencias
-- API extendidas del cliente DRM, material de clave
+- API extendidas de cliente DRM, licencias
+- API extendidas de cliente, licencias
+- API extendidas de cliente DRM, material clave
 - API extendidas de cliente, material de clave
-- licencias, importar
+- licenses,importing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a142d0087916a45b6dd8661b67f7e42eaed245c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4c9852102ab282c983488c2e5c35b7187bf0daccb62d347c312d1afb343b60f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118702509"
 ---
-# <a name="importing-license-and-key-material"></a>Importación de la licencia y el material de clave
+# <a name="importing-license-and-key-material"></a>Importar material de clave y licencia
 
-Si tiene contenido multimedia que se cifró mediante un sistema de protección de contenido de terceros y desea importar la licencia y el material de clave en DRM de Windows Media, siga estos pasos:
+Si tiene contenido multimedia cifrado mediante un sistema de protección de contenido de terceros y desea importar la licencia y el material de clave en Windows Media DRM, siga estos pasos:
 
-1.  Recupere la colección de certificados de la máquina DRM de Windows Media llamando al método [**IWMDRMSecurity:: GetMachineCertificate**](iwmdrmsecurity-getmachinecertificate.md) .
-2.  Analice la colección de certificados, asegurándose de que se firmó correctamente y se valide a una clave pública raíz conocida de Microsoft. La colección de certificados se ajusta al esquema XMR. Para obtener más información, consulte [Building a XMR License](building-an-xmr-license.md).
-3.  Opcional: Extraiga la lista de revocación llamando al método [**IWMDRMSecurity:: GetRevocationData**](iwmdrmsecurity-getrevocationdata.md) .
-4.  Opcional: Asegúrese de que no se revoca ningún certificado de la colección. Para obtener más información, consulte Comprobación de la [revocación de certificados](checking-certificate-revocation.md).
-5.  Genere una licencia en el formato XMR que represente los requisitos de la Directiva para el contenido de importación y contenga el material de clave DRM de Windows Media adecuado. Para obtener más información, vea el tema [Building a XMR License](building-an-xmr-license.md).
-6.  Pase la licencia de XMR al sistema DRM de Windows Media para su procesamiento, mediante el método [**IWMDRMLicenseManagement:: StoreLicense**](iwmdrmlicensemanagement-storelicense.md) .
+1.  Recupere la Windows de certificados de máquina DRM multimedia mediante una llamada [**al método IWMDRMSecurity::GetMachineCertificate.**](iwmdrmsecurity-getmachinecertificate.md)
+2.  Analice la colección de certificados, asegurándose de que está firmada correctamente y se valida con una clave pública raíz de Microsoft conocida. La colección de certificados se ajusta al esquema XMR. Para obtener más información, vea [Building an XMR License](building-an-xmr-license.md).
+3.  Opcional: extraiga la lista de revocación llamando al [**método IWMDRMSecurity::GetRevocationData.**](iwmdrmsecurity-getrevocationdata.md)
+4.  Opcional: se asegura de que no se revoca ningún certificado de la colección. Para obtener más información, vea [Comprobar la revocación de certificados.](checking-certificate-revocation.md)
+5.  Genere una licencia en el formato XMR que represente los requisitos de directiva para el contenido de importación y contenga el material de clave DRM Windows multimedia adecuado. Para obtener más información, vea el tema [Building an XMR License](building-an-xmr-license.md).
+6.  Pase la licencia XMR al sistema DRM de Windows Media para su procesamiento mediante el método [**IWMDRMLicenseManagement::StoreLicense.**](iwmdrmlicensemanagement-storelicense.md)
 
 > [!Note]  
-> Los detalles sobre el esquema XMR se le proporcionarán al conceder licencias de DRM de Windows Media.
+> Se le proporcionarán detalles sobre el esquema XMR cuando tenga licencia Windows DRM de media.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -51,15 +51,15 @@ Si tiene contenido multimedia que se cifró mediante un sistema de protección d
 [**Comprobación de la revocación de certificados**](checking-certificate-revocation.md)
 </dt> <dt>
 
-[**Creación de una licencia de XMR**](building-an-xmr-license.md)
+[**Creación de una licencia XMR**](building-an-xmr-license.md)
 </dt> <dt>
 
 [**Importación de DRM**](drm-import.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

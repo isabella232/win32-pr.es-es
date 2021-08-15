@@ -4,23 +4,23 @@ description: Atributo de ganancia de VML
 ms.assetid: 2ac034ff-f3dd-4e98-ad9d-4d9cdad28f3c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5675503def2f48d4c5fbf7154f0d0d05b2fe417d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cc7b72f1588608f4988731111583e758b0207080eb3e02768a45b58c39071b18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057833"
 ---
 # <a name="vml-gain-attribute"></a>Atributo de ganancia de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define la intensidad de todos los colores de una imagen. Lectura/escritura **VgNumber**.
+Define la intensidad de todos los colores de una imagen. Lectura/escritura **Numbernumber .**
 
 **Se aplica a**
 
@@ -28,17 +28,17 @@ Define la intensidad de todos los colores de una imagen. Lectura/escritura **VgN
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* ganancia = " *expresión* " >
+<v: *element* gain=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . beneficio = "*expresión*"
+*element* .gain="*expression*"
 
-*expresión* = de *elemento*. ganancia
+*expresión* = *elemento*.gain
 
 **Comentarios:**
 
-Este atributo define la luminosidad del color blanco, lo que afecta a todos los demás colores. Los valores oscilan entre 0 y infinito. El valor predeterminado es 1,0. Un valor de 0 no muestra ninguna imagen. Los valores mayores que 1 aclaran la imagen y los valores inferiores a 1 hacen que la imagen parezca Grayer.
+Este atributo define lo brillante que es el color blanco, lo que afecta a todos los demás colores. Los valores van de 0 a infinito. El valor predeterminado es 1,0. Un valor de 0 no muestra ninguna imagen. Los valores mayores que 1 a claro la imagen y los valores inferiores a 1 hacen que la imagen parezca más gris.
 
 Este atributo se puede usar para crear efectos interesantes.
 
@@ -46,7 +46,7 @@ Este atributo se puede usar para crear efectos interesantes.
 
 **Ejemplo**
 
-La imagen se mostrará con todos los colores que tienden a atenuar.
+La imagen se mostrará con todos los colores que tienden a gris.
 
 
 ```HTML
@@ -63,6 +63,6 @@ La imagen se mostrará con todos los colores que tienden a atenuar.
 
 
 
- 
+ 
 
- 
+ 

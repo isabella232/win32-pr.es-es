@@ -30,7 +30,7 @@ struct CUSTOMVERTEX {
 
 
 
-Para crear un búfer de vértices que contiene cuatro estructuras CUSTOMVERTEX, especifique \[ 4 \* sizeof(CUSTOMVERTEX) \] para el parámetro *Length.*
+Para crear un búfer de vértices para contener cuatro estructuras CUSTOMVERTEX, especifique \[ 4 \* sizeof(CUSTOMVERTEX) \] para el parámetro *Length.*
 
 El segundo parámetro es un conjunto de controles de uso. Entre otras cosas, su valor determina si el búfer de vértices es capaz de contener información de recorte (en forma de marcas de recorte) para los vértices que existen fuera del área de visualización. Para crear un búfer de vértices que no pueda contener marcas de recorte, incluya la marca D3DUSAGE \_ DONOTCLIP para el *parámetro Usage.* La marca D3DUSAGE DONOTCLIP solo se aplica si también indica que el búfer de vértices contendrá vértices transformados: la marca \_ D3DFVF XYZRHW se incluye en el \_ *parámetro FVF.* El [**método IDirect3DDevice9::CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) omite la marca DONOTCLIP D3DUSAGE si se indica que el búfer contendrá vértices sin convertir (la marca \_ XYZ D3DFVF). \_ Las marcas de recorte ocupan memoria adicional, lo que hace que un búfer de vértices con capacidad de recorte sea ligeramente mayor que un búfer de vértices que no pueda contener marcas de recorte. Dado que estos recursos se asignan cuando se crea el búfer de vértices, debe solicitar un búfer de vértices compatible con recortes con antelación.
 

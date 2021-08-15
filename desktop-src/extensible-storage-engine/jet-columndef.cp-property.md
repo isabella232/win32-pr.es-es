@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_COLUMNDEF. CP (propiedad)'
-title: JET_COLUMNDEF. CP (propiedad)
+description: 'Más información sobre: JET_COLUMNDEF.cp'
+title: JET_COLUMNDEF.cp, propiedad
 TOCTitle: 'cp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF.cp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columndef.cp(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: df383b212105a4b871f0c44d341d6113abf94d42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d82fea1a486d7e4797e2a359b6290e7c845f346e9ea8dc02843d6be57747edc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487085"
 ---
-# <a name="jet_columndefcp-property"></a>JET_COLUMNDEF. CP (propiedad)
+# <a name="jet_columndefcp-property"></a>JET_COLUMNDEF.cp, propiedad
 
 Obtiene o establece la página de códigos de la columna. Esto solo es significativo para las columnas de tipo [Text](./jet-coltyp-enumeration.md) y [LongText](./jet-coltyp-enumeration.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_CP cp { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_CP](./jet-cp-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_CP](./jet-cp-enumeration.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNDEF (clase)](./jet-columndef-class.md)
+[JET_COLUMNDEF clase](./jet-columndef-class.md)
 
-[Miembros de JET_COLUMNDEF](./jet-columndef-members.md)
+[JET_COLUMNDEF miembros](./jet-columndef-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

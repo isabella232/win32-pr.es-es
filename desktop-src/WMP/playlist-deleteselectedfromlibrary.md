@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. deleteSelectedFromLibrary
+title: PLAYLIST.deleteSelectedFromLibrary
 description: El método deleteSelectedFromLibrary elimina el elemento seleccionado de la lista de reproducción y de la biblioteca.
 ms.assetid: 04775d62-91dc-4c08-a864-0301fbc1995f
 keywords:
-- Windows Media Player de lista de reproducción. deleteSelectedFromLibrary
+- PLAYLIST.deleteSelectedFromLibrary Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d08699edfb7811503a1df8fcc2c622e234a0aaaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 489525b96ddff6fc68cfaeac8749bf400e5ff5ad674f111aef6a37f3d98bec3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747087"
 ---
-# <a name="playlistdeleteselectedfromlibrary"></a>Lista de reproducción. deleteSelectedFromLibrary
+# <a name="playlistdeleteselectedfromlibrary"></a>PLAYLIST.deleteSelectedFromLibrary
 
-El método **deleteSelectedFromLibrary** elimina el elemento seleccionado de la lista de reproducción y de la biblioteca.
+El **método deleteSelectedFromLibrary** elimina el elemento seleccionado de la lista de reproducción y de la biblioteca.
 
 ``` syntax
         elementID.deleteSelectedFromLibrary()
@@ -40,20 +40,20 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. deleteSelected**](playlist-deleteselected.md)
+[**PLAYLIST.deleteSelected**](playlist-deleteselected.md)
 </dt> </dl>
 
  
