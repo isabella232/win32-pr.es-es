@@ -3,7 +3,7 @@ title: TBM_SETPOS mensaje (Commctrl.h)
 description: 'TBM_SETPOS mensaje: establece la posición lógica actual del control deslizante en una barra de seguimiento.'
 ms.assetid: df6c4e5d-2847-419d-82b5-334d53bb6ba1
 keywords:
-- TBM_SETPOS de mensajes controles de Windows
+- TBM_SETPOS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f10e05a677119f18489d0eb9eebc4528d3ad115
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3ccd1cb35f8cde672c51baafe5623291e5449f90aa118eb36cb12152fe155385
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078049"
 ---
 # <a name="tbm_setpos-message"></a>Mensaje TBM \_ SETPOS
 
@@ -39,7 +39,7 @@ Volver a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a d
 *lParam* 
 </dt> <dd>
 
-Nueva posición lógica del control deslizante. Las posiciones lógicas válidas son los valores enteros del intervalo de posiciones del control deslizante mínimo al máximo de la barra de seguimiento. Si este valor está fuera del intervalo máximo y mínimo del control, la posición se establece en el valor máximo o mínimo.
+Nueva posición lógica del control deslizante. Las posiciones lógicas válidas son los valores enteros del intervalo de posiciones del control deslizante mínimo a máximo de la barra de seguimiento. Si este valor está fuera del intervalo máximo y mínimo del control, la posición se establece en el valor máximo o mínimo.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ No de devuelve ningún valor.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

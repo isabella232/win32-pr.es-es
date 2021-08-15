@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. DestBearingRef.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.DestBearingRef.
 ms.assetid: d1c8b3cc-ed52-43ca-a0ba-045a2c5fe274
-title: Directiva de metadatos de la foto System. GPS. DestBearingRef
+title: Directiva de metadatos de fotos System.GPS.DestBearingRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f00d3083459fe365fc54e81dc485ddd26887a46
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26ee4b984d0a759769b80be76b53499690673c7ec630c759aa0371b53ea9368f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087856"
 ---
-# <a name="systemgpsdestbearingref-photo-metadata-policy"></a>Directiva de metadatos de la foto System. GPS. DestBearingRef
+# <a name="systemgpsdestbearingref-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.DestBearingRef
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. DestBearingRef](../properties/props-system-gps-destbearingref.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.DestBearingRef.](../properties/props-system-gps-destbearingref.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ GPS \_ DestBearingRef
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
@@ -37,30 +37,30 @@ String.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                        | Formato de disco |
+| Pedido | Ruta de acceso                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 23}   | ascii       |
+| 1     | /app1/ifd/gps/{ushort=23}   | ascii       |
 | 2     | /xmp/exif:GPSDestBearingRef | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                        | Formato de disco |
+| Pedido | Ruta de acceso                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 23}   | ascii       |
+| 1     | /app1/ifd/gps/{ushort=23}   | ascii       |
 | 2     | /xmp/exif:GPSDestBearingRef | unicode     |
 
 
@@ -71,9 +71,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                        |
+| Pedido | Ruta de acceso                        |
 |-------|-----------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 23}   |
+| 1     | /app1/ifd/gps/{ushort=23}   |
 | 2     | /xmp/exif:gpsdestbearingref |
 
 
@@ -82,26 +82,26 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                            | Formato de disco |
+| Pedido | Ruta de acceso                            | Formato de disco |
 |-------|---------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 23}            | ascii       |
+| 1     | /ifd/gps/{ushort=23}            | ascii       |
 | 2     | /ifd/xmp/exif:GPSDestBearingRef | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                            | Formato de disco |
+| Pedido | Ruta de acceso                            | Formato de disco |
 |-------|---------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 23}            | ascii       |
+| 1     | /ifd/gps/{ushort=23}            | ascii       |
 | 2     | /ifd/xmp/exif:GPSDestBearingRef | unicode     |
 
 
@@ -114,20 +114,20 @@ Se reconcilian los valores de los distintos esquemas.
 
 | orden | path                            |
 |-------|---------------------------------|
-| 1     | /IFD/GPS/{ushort = 23}            |
+| 1     | /ifd/gps/{ushort=23}            |
 | 2     | /ifd/xmp/exif:gpsdestbearingref |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. DestBearingRef](../properties/props-system-gps-destbearingref.md)
+[System.GPS.DestBearingRef](../properties/props-system-gps-destbearingref.md)
 </dt> </dl>
 
  

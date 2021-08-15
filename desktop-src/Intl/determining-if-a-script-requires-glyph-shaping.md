@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se llama a ScriptGetProperties para averiguar si el script de cada uno de los elementos sucesivos requiere el modelado de glifos.
+description: En el ejemplo siguiente se llama a ScriptGetProperties para averiguar si el script de cada uno de los elementos sucesivos requiere la forma de glifo.
 ms.assetid: 75c5946b-de38-48d9-a5e2-1e0b2dc9f3c7
-title: Determinar si un script requiere la forma de glifos
+title: Determinar si un script requiere dar forma al glifo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62eb20fb0335c5779352f15221653dad0c5320c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9feadb1a82564fe03db6e03511449c7942b519ba7d63e5898b04d7b9c27cf2ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068265"
 ---
-# <a name="determining-if-a-script-requires-glyph-shaping"></a>Determinar si un script requiere la forma de glifos
+# <a name="determining-if-a-script-requires-glyph-shaping"></a>Determinar si un script requiere dar forma al glifo
 
-En el ejemplo siguiente se llama a [**ScriptGetProperties**](/windows/desktop/api/Usp10/nf-usp10-scriptgetproperties) para averiguar si el script de cada uno de [los elementos](uniscribe-glossary.md) sucesivos requiere el modelado de glifos.
+En el ejemplo siguiente se [**llama a ScriptGetProperties**](/windows/desktop/api/Usp10/nf-usp10-scriptgetproperties) para averiguar si el script de cada uno de los elementos [sucesivos](uniscribe-glossary.md) requiere la forma de glifo.
 
 
 ```C++
@@ -62,7 +62,7 @@ if (hResult == 0) {
 
 <dl> <dt>
 
-[Usar Uniscribe](using-uniscribe.md)
+[Uso de Uniscribe](using-uniscribe.md)
 </dt> </dl>
 
  

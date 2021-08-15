@@ -1,6 +1,6 @@
 ---
-title: M3x3-vs
-description: Multiplica un vector de tres componentes por una matriz de 3x3. | M3x3-vs
+title: 'm3x3: vs'
+description: 'Multiplica un vector de tres componentes por una matriz de 3x3. | m3x3: vs'
 ms.assetid: 6a749ed0-097d-4354-bc70-fbcd879eafab
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e75cdb4b098b92ea358c32e40b3948c7ac73e0cf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 11c1caa682751c3c4d112efd07643233e9cac91392c9e3bb9c575b1f89f5b53f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104424268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562065"
 ---
-# <a name="m3x3---vs"></a>M3x3-vs
+# <a name="m3x3---vs"></a>m3x3: vs
 
 Multiplica un vector de tres componentes por una matriz de 3x3.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| M3x3 DST, src0, SRC1 |
+| m3x3 dst, src0, src1 |
 |----------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino. El resultado es un vector de tres componentes.
+-   dst es el registro de destino. El resultado es un vector de tres componentes.
 -   src0 es un registro de origen que representa un vector de tres componentes.
--   SRC1 es un registro de origen que representa una matriz de 3x3, que corresponde al primer de 3 registros consecutivos.
+-   src1 es un registro de origen que representa una matriz 3x3, que corresponde al primero de tres registros consecutivos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | m3x3                   | x    | x    | x    | x     | x    | x     |
 
@@ -49,9 +49,9 @@ Multiplica un vector de tres componentes por una matriz de 3x3.
 
  
 
-La máscara XYZ es necesaria para el registro de destino. Los modificadores Negate y swizzle se permiten para src0, pero no para SRC1.
+La máscara xyz es necesaria para el registro de destino. Se permiten modificadores negate y swzzle para src0, pero no para src1.
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```
@@ -62,9 +62,9 @@ dest.z = (src0.x * src3.x) + (src0.y * src3.y) + (src0.z * src3.z);
 
 
 
-El vector de entrada se encuentra en el registro src0. La matriz de 3x3 de entrada está en el registro SRC1 y los dos registros más altos siguientes, como se muestra en la siguiente expansión. Se genera un resultado 3D, lo que no afecta al otro elemento del registro de destino (dest. w).
+El vector de entrada está en el registro src0. La matriz de entrada 3x3 está en el registro src1 y los dos registros superiores siguientes, como se muestra en la expansión siguiente. Se genera un resultado 3D, lo que deja el otro elemento del registro de destino (dest.w) no afectado.
 
-Esta operación se utiliza normalmente para transformar vectores normales durante los cálculos de iluminación. Esta instrucción se implementa como un par de productos DOT como se muestra a continuación.
+Esta operación se usa normalmente para transformar vectores normales durante los cálculos de iluminación. Esta instrucción se implementa como un par de productos de punto, como se muestra a continuación.
 
 
 ```

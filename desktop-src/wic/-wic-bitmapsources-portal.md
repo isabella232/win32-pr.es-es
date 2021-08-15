@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene temas conceptuales y de procedimientos que describen los orígenes de mapas de bits de Windows Imaging Component (WIC) y cómo manipularlos.
+description: Esta sección contiene temas conceptuales y de procedimientos que describen Windows de mapa de bits del componente de creación de imágenes (WIC) y cómo manipularlos.
 ms.assetid: 7c1a0b67-5bb8-4436-8d47-335439d3ff59
-title: Manipular mapas de bits
+title: Manipulación de mapas de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f62da613f99577b59306e6fdeeb181d4c90b970b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15454766d33d028ec1237db09f34b7313bdd6f2c6ba6584eaee5dbae43881a93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088367"
 ---
-# <a name="manipulating-bitmaps"></a>Manipular mapas de bits
+# <a name="manipulating-bitmaps"></a>Manipulación de mapas de bits
 
-Esta sección contiene temas conceptuales y de procedimientos que describen los orígenes de mapas de bits de Windows Imaging Component (WIC) y cómo manipularlos.
+Esta sección contiene temas conceptuales y de procedimientos que describen Windows de mapa de bits del componente de creación de imágenes (WIC) y cómo manipularlos.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,8 +21,8 @@ Esta sección contiene temas conceptuales y de procedimientos que describen los 
 
 | Tema                                                                          | Descripción                                                                                                                                 |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Información general sobre orígenes de mapas de bits](-wic-bitmapsources.md)<br/>                   | En este tema se presentan los orígenes de mapas de bits, un componente de WIC básico que representa los píxeles de mapa de bits de una imagen.<br/>                        |
-| [Temas de procedimientos de orígenes de mapas de bits](-wic-bitmapsources-howto-portal.md)<br/> | En los temas de esta sección se proporcionan ejemplos que muestran las tareas relacionadas con [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource).<br/> |
+| [Información general sobre orígenes de mapa de bits](-wic-bitmapsources.md)<br/>                   | En este tema se presentan los orígenes de mapa de bits, un componente wic básico que representa los píxeles de mapa de bits de una imagen.<br/>                        |
+| [Temas de ayuda de orígenes de mapa de bits](-wic-bitmapsources-howto-portal.md)<br/> | Los temas de esta sección proporcionan ejemplos que muestran las tareas relacionadas con [**IWICBitmapSource.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)<br/> |
 
 
 

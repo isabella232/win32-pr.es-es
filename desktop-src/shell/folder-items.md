@@ -1,7 +1,7 @@
 ---
-description: Recupera un objeto FolderItems que representa la colección de elementos de la carpeta.
+description: Recupera un objeto FolderItems que representa la colección de elementos de la carpeta .
 ms.assetid: ef2965ec-c8ab-4108-8e5e-b4fd5370521a
-title: Método Folder. items (Shldisp. h)
+title: Método Folder.Items (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: c3cfa0fcd2d8e2e51a67a362b33af34abf5b1427
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e698c74cd8cc04265ef75e01062f8aa05171f660f5cf5eb7253d04d3397ed984
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093139"
 ---
-# <a name="folderitems-method"></a>Folder. items (método)
+# <a name="folderitems-method"></a>Método Folder.Items
 
-Recupera un objeto [**FolderItems**](folderitems.md) que representa la colección de elementos de la carpeta.
+Recupera un [**objeto FolderItems**](folderitems.md) que representa la colección de elementos de la carpeta .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,20 +41,20 @@ Este método no tiene parámetros.
 
 Tipo: **[ **FolderItems**](folderitems.md)\*\***
 
-Una referencia de objeto al objeto [**FolderItems**](folderitems.md) .
+Referencia de objeto al [**objeto FolderItems.**](folderitems.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el método [**ParseName**](folder-parsename.md) no se implementa para la carpeta panel de control ( \_ controles CSIDL). Si intenta llamar a un método no implementado, se genera un error 0x800A01BD (decimal 445).
+> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se 0x800A01BD error (decimal 445).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usan **elementos** para determinar el número de elementos de la \\ carpeta C: Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Items** para determinar el número de elementos de la carpeta C: \\ Windows. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -81,7 +81,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -149,13 +149,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

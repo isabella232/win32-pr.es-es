@@ -1,7 +1,7 @@
 ---
 description: Crea un objeto ID3DXTextureGutterHelper a partir de una malla de entrada y datos de textura.
 ms.assetid: 1696fc3d-5b35-48cc-a79b-c0d4ed44e420
-title: Función D3DXCreateTextureGutterHelper (D3DX9Mesh. h)
+title: Función D3DXCreateTextureGutterHelper (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8957649f3cef6ea67932579918163613160ee993
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e62f89911199497abfd905376f272121c6c5a9996ec5685e556453bc378e65e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045143"
 ---
-# <a name="d3dxcreatetexturegutterhelper-function"></a>D3DXCreateTextureGutterHelper función)
+# <a name="d3dxcreatetexturegutterhelper-function"></a>Función D3DXCreateTextureGutterHelper
 
-Crea un objeto [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) a partir de una malla de entrada y datos de textura.
+Crea un [**objeto ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) a partir de una malla de entrada y datos de textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,39 +44,39 @@ HRESULT D3DXCreateTextureGutterHelper(
 
 <dl> <dt>
 
-*Ancho* \[ de de\]
+*Ancho* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Ancho de la textura, en píxeles.
 
 </dd> <dt>
 
-*Alto* \[ de de\]
+*Alto* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Alto de la textura, en píxeles.
 
 </dd> <dt>
 
-*pmesh* \[ de\]
+*pMesh* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a un objeto de malla [**ID3DXMesh**](id3dxmesh.md) de entrada.
+Puntero a un objeto de [**malla ID3DXMesh**](id3dxmesh.md) de entrada.
 
 </dd> <dt>
 
-*GutterSize* \[ de\]
+*GutterSize* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Número de textura por el que se va a obtener el muestreo de la textura y se creará la región de medianil. Debe ser al menos 1.
+Número de elementos de textura por los que se muestrea en exceso la textura y se crea la región de medianía. Debe ser al menos 1.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Número de textura por el que se va a obtener el muestreo de la textura y se cre
 
 Tipo: **[ **LPD3DXTEXTUREGUTTERHELPER**](id3dxtexturegutterhelper.md)\***
 
-Puntero a un objeto [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) que se va a crear.
+Puntero a un [**objeto ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) que se va a crear.
 
 </dd> </dl>
 
@@ -93,9 +93,9 @@ Puntero a un objeto [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de estos: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use [**D3DXConcatenateMeshes**](d3dxconcatenatemeshes.md) para transformar una escena en nuevas coordenadas.
 
@@ -105,16 +105,16 @@ Use [**D3DXConcatenateMeshes**](d3dxconcatenatemeshes.md) para transformar una e
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de transferencia Radiance precalculadas](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funciones de transferencia de radiancia precalcaladas](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> </dl>
 
  

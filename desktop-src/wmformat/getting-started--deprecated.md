@@ -1,9 +1,9 @@
 ---
-title: Introducción con el SDK de Windows Media Format (desusado)
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | Introducción
+title: Tareas iniciales con Windows SDK de formato multimedia (en desuso)
+description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Tareas iniciales
 ms.assetid: dfbae491-1041-4153-ba19-214465f5d641
 keywords:
-- Introducción formato de Windows Media
+- Tareas iniciales windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b06e22022ff993e6f4cfe27a45b4aa2d04fecb23
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: dfbaf05e0b6558840e872b62fccc1b442ed55fddb21cf4d46e77416b38b74b92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105700444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591215"
 ---
 # <a name="getting-started"></a>Introducción
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
 
  
 

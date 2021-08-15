@@ -1,6 +1,6 @@
 ---
-title: 'Texture3D:: Operator (función)'
-description: 'Devuelve una variable de recurso de solo lectura. | Texture3D:: Operator (función)'
+title: Función Texture3D::Operator
+description: Devuelve una variable de recurso de solo lectura. | Función Texture3D::Operator
 ms.assetid: d7e27778-6a96-47f8-a58a-1966452adf04
 keywords:
 - Función de operador HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5c3bb3718094ee859d1e33a046fde7016973a0aa
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d701e5f9ba46d17c305fda0a936700e10a1348440e55c913537f2a2d00a5c57c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985705"
 ---
-# <a name="texture3doperator--function"></a>Texture3D:: Operator (función)
+# <a name="texture3doperator--function"></a>Función Texture3D::Operator
 
 Devuelve una variable de recurso de solo lectura.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt3**
+Tipo: **uint3**
 
-Posición de índice. Contiene las coordenadas (x, y, z).
+Posición del índice. Contiene las coordenadas (x, y, z).
 
 </dd> </dl>
 
@@ -51,15 +51,15 @@ Tipo: **R**
 
 Variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método siempre tiene acceso al primer nivel de MIP. Para especificar otros niveles de MIP, use el [**operador \[ \] \[ \] MIP.**](sm5-object-texture3d-mipsoperatorindex.md) en su lugar.
+Este método siempre tiene acceso al primer nivel de mip. Para especificar otros niveles de mip, use [**el operador \[ \] \[ \] mip.operator**](sm5-object-texture3d-mipsoperatorindex.md) en su lugar.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -67,7 +67,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

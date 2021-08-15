@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 58c0ce661bb428c699127fd9b07ad67ab0b5ee7f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2bfc626434674643834a25dec7e87532bcded26567b393ce673916c56b66f13a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095055"
 ---
 # <a name="span-idvspixengineexperimenttypespanexperimenttype-enumeration"></a><span id="vspixengine.experimenttype"></span>Enumeración EXPERIMENTTYPE
 
@@ -43,7 +43,7 @@ ms.locfileid: "108097413"
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

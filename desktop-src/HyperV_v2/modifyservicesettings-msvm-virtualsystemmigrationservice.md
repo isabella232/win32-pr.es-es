@@ -63,7 +63,7 @@ Este método devuelve uno de los valores siguientes.
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método activados: trabajo iniciado** (4096)
+**Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -93,7 +93,7 @@ Este método devuelve uno de los valores siguientes.
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está** disponible (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)

@@ -4,7 +4,7 @@ description: Fecha en que se creó este objeto. Este valor se replica y se encue
 ms.assetid: d66084f0-5a82-4a8c-86ee-7e41887d9b90
 ms.tgt_platform: multiple
 keywords:
-- When-Created esquema de AD de atributo
+- When-Created esquema de AD del atributo
 - whenCreated attribute AD Schema
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ Fecha en que se creó este objeto. Este valor se replica y se encuentra en el ca
 | CN                | When-Created                                                  |
 | Ldap-Display-Name | whenCreated                                                   |
 | Size              | 8 bytes                                                       |
-| Actualizar privilegios  | El sistema establece este valor.                              |
+| Privilegio actualizar  | El sistema establece este valor.                              |
 | Frecuencia de actualización  | Cuando se crea el objeto .                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.2                                          |
 | System-Id-Guid    | bf967a78-0de6-11d0-a285-00aa003049e2                          |

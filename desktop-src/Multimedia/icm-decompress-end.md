@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DECOMPRESS_END (VFW. h)
-description: El mensaje final de descompresión de ICM \_ \_ notifica a un controlador de descompresión de vídeo que finalice la descompresión y libere los recursos asignados para la descompresión. Puede enviar este mensaje explícitamente o mediante la macro ICDecompressEnd.
+title: ICM_DECOMPRESS_END mensaje (Vfw.h)
+description: El ICM end de DECOMPRESS notifica a un controlador de descompresión de vídeo que finalice la descompresión y los recursos gratuitos asignados para \_ \_ la descompresión. Puede enviar este mensaje explícitamente o mediante la macro ICDecompressEnd.
 ms.assetid: 16ce2424-9606-455f-afbd-84326457538e
 keywords:
-- Mensaje de ICM_DECOMPRESS_END de Windows multimedia
+- ICM_DECOMPRESS_END mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e25155755b6bfbb893905e6facad890dbf98f175
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0c877afac3db0e4cf4d7c476ca3806d2acd15bdf72764549b2958490574a4f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691165"
 ---
-# <a name="icm_decompress_end-message"></a>Descomprime el \_ \_ mensaje final de ICM
+# <a name="icm_decompress_end-message"></a>\_ICM MENSAJE FINAL DE \_ DECOMPRESS
 
-El **mensaje \_ \_ final** de descompresión de ICM notifica a un controlador de descompresión de vídeo que finalice la descompresión y libere los recursos asignados para la descompresión. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) .
+El **ICM END de \_ DECOMPRESS \_** notifica a un controlador de descompresión de vídeo que finalice la descompresión y los recursos gratuitos asignados para la descompresión. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
 
 
 ```C++
@@ -36,27 +36,27 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si es correcto o un error en caso contrario.
+Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El controlador debe liberar todos los recursos asignados para el mensaje de [**\_ \_ Inicio de descomprimir ICM**](icm-decompress-begin.md) .
+El controlador debe liberar todos los recursos asignados para [**el ICM BEGIN de \_ DECOMPRESS. \_**](icm-decompress-begin.md)
 
-[**ICM \_ La instrucción DESCOMPRIMIr \_ Begin**](icm-decompress-begin.md) y **ICM \_ uncompre \_ End** no se anidan. Si el controlador recibe **el \_ \_ Inicio** de la descompresión ICM antes de que se detenga la descompresión con el **\_ \_ fin de descomprimir ICM**, debe reiniciar la descompresión con nuevos parámetros.
+[**ICM \_ DECOMPRESS \_ BEGIN y**](icm-decompress-begin.md) ICM END de **\_ DECOMPRESS \_** no anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con ICM **\_ DECOMPRESS \_ END,** debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

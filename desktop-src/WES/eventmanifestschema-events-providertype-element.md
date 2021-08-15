@@ -1,9 +1,9 @@
 ---
-title: Events (ProviderType) (elemento)
+title: elemento events (ProviderType)
 description: Contiene una lista de los eventos que define el proveedor.
 ms.assetid: e6d0b70d-cd44-41f6-820b-b2f39577b282
 keywords:
-- Events, elemento EventLog
+- elemento events EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: de830101452d610bd96c68494446f01fed9a835f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec3dfbf469d41da2597c2635b3cb7c0442e103e75327f9c2d636d879519b961c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055983"
 ---
-# <a name="events-providertype-element"></a>Events (ProviderType) (elemento)
+# <a name="events-providertype-element"></a>elemento events (ProviderType)
 
 Contiene una lista de los eventos que define el proveedor.
 
@@ -30,27 +30,27 @@ Contiene una lista de los eventos que define el proveedor.
  />
 ```
 
-El elemento **Events** se define mediante el tipo complejo de [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+El **tipo** complejo ProviderType define el [**elemento events.**](eventmanifestschema-providertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**proveedor (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

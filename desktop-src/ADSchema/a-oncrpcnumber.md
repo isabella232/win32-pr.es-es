@@ -1,10 +1,10 @@
 ---
-title: atributo oncRpcNumber
-description: Contiene parte de la asignación RPC y almacena el número de RPC para las RPC de UNIX.
+title: Atributo oncRpcNumber
+description: Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
 ms.assetid: c824d740-5c68-4fce-93f3-01ac52b47e5b
 ms.tgt_platform: multiple
 keywords:
-- oncRpcNumber esquema de AD de atributos
+- Esquema de AD del atributo oncRpcNumber
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2394395f7be9a9f5f9dfe1fd312dcf4f8957c4d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0ea1416fb950a4b666be16f8848cc89d4c63bd4108e41a5e55a0450f8622d59e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442175"
 ---
-# <a name="oncrpcnumber-attribute"></a>atributo oncRpcNumber
+# <a name="oncrpcnumber-attribute"></a>Atributo oncRpcNumber
 
-Contiene parte de la asignación RPC y almacena el número de RPC para las RPC de UNIX.
+Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | oncRpcNumber                         |
-| Nombre para mostrar de LDAP | oncRpcNumber                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | oncRpcNumber                         |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.18                     |
-| System-ID-GUID    | 966825f5-01d9-4a5c-a011-d15ae84efa55 |
+| System-Id-Guid    | 966825f5-01d9-4a5c-a011-d15ae84efa55 |
 | Sintaxis            | [**Enumeración**](s-enumeration.md) |
 
 
@@ -52,13 +52,13 @@ Contiene parte de la asignación RPC y almacena el número de RPC para las RPC d
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -73,13 +73,13 @@ Contiene parte de la asignación RPC y almacena el número de RPC para las RPC d
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -94,13 +94,13 @@ Contiene parte de la asignación RPC y almacena el número de RPC para las RPC d
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -115,13 +115,13 @@ Contiene parte de la asignación RPC y almacena el número de RPC para las RPC d
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |

@@ -1,6 +1,6 @@
 ---
-title: Enumeración DODownloadState
-description: Especifica el identificador del estado de descarga actual, que forma parte de la estructura de **DO_DOWNLOAD_STATUS** .
+title: DODownloadState (enumeración)
+description: Especifica el identificador del estado de descarga actual, que forma parte de la **DO_DOWNLOAD_STATUS** actual.
 keywords:
 - Enumeración DODownloadState, DODownloadState
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/02/2019
-ms.openlocfilehash: 4fb882a26d20de3094aa46763d6e1538ccf0c643
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5df8f7b20c8cff3b905acec9852b26c9a5ee360645fddb1bec22990a8bb9daba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047143"
 ---
-# <a name="dodownloadstate-enumeration"></a>Enumeración DODownloadState
+# <a name="dodownloadstate-enumeration"></a>DODownloadState (enumeración)
 
-La enumeración **DODownloadState** especifica el identificador del estado de descarga actual, que forma parte de la estructura de **DO_DOWNLOAD_STATUS** .
+La **enumeración DODownloadState** especifica el identificador del estado de descarga actual, que forma parte de la **estructura DO_DOWNLOAD_STATUS** datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,10 +43,10 @@ typedef enum _DODownloadState
 
 | Requisito | Value |
 |-|-|
-| DODownloadState_Created | Se ha creado el objeto de descarga, pero aún no se ha iniciado. |
+| DODownloadState_Created | El objeto de descarga se ha creado, pero aún no se ha iniciado. |
 | DODownloadState_Transferring | La descarga está en curso. |
-| DODownloadState_Transferred | La descarga se transfiere y puede volver a empezar descargando otra parte del archivo. |
-| DODownloadState_Finalized | La descarga se ha finalizado y no se puede volver a iniciar. |
+| DODownloadState_Transferred | La descarga se transfiere y se puede iniciar de nuevo mediante la descarga de otra parte del archivo. |
+| DODownloadState_Finalized | La descarga se ha finalizado y no se puede iniciar de nuevo. |
 | DODownloadState_Aborted | Se anuló la descarga. |
 | DODownloadState_Paused | La descarga se ha pausado a petición o debido a un error transitorio. |
 
@@ -54,6 +54,6 @@ typedef enum _DODownloadState
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | DeliveryOptimizationDownloadTypes. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | DeliveryOptimizationDownloadTypes.h |

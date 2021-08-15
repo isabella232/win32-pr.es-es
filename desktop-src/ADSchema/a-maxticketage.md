@@ -1,11 +1,11 @@
 ---
-title: Atributo Max-ticket-Age
-description: Este atributo determina el tiempo máximo, en horas, que se puede usar el vale de concesión de vales (TGT) de un usuario para la autenticación Kerberos.
+title: Atributo Max-Ticket-Age
+description: Este atributo determina la cantidad máxima de tiempo, en horas, que se puede usar el vale de concesión de vales (TGT) de un usuario para la autenticación Kerberos.
 ms.assetid: 54ab0f2b-31eb-45d7-9a43-e70dc78136b5
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo Max-ticket-Age
-- maxTicketAge esquema de AD de atributos
+- Esquema de AD del atributo Max-Ticket-Age
+- Esquema de AD del atributo maxTicketAge
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83d68bca2f8dd87d37be7215e26f549424cd32b9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9c876bbab2b60d655464129d0a59aeda110f78d8e2514866a3bcf28a859cb3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301015"
 ---
-# <a name="max-ticket-age-attribute"></a>Atributo Max-ticket-Age
+# <a name="max-ticket-age-attribute"></a>Atributo Max-Ticket-Age
 
-Este atributo determina el tiempo máximo, en horas, que se puede usar el vale de concesión de vales (TGT) de un usuario para la autenticación Kerberos. Cuando expire el TGT de un usuario, se debe solicitar uno nuevo o se debe renovar el existente. De forma predeterminada, este valor se establece en 10 horas en el dominio predeterminado directiva de grupo objeto (GPO).
+Este atributo determina la cantidad máxima de tiempo, en horas, que se puede usar el vale de concesión de vales (TGT) de un usuario para la autenticación Kerberos. Cuando expira el TGT de un usuario, se debe solicitar uno nuevo o se debe renovar el existente. De forma predeterminada, esta configuración se establece en 10 horas en el objeto de directiva de grupo predeterminado (GPO).
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Max-ticket-Age                       |
-| Nombre para mostrar de LDAP | maxTicketAge                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Max-Ticket-Age                       |
+| Ldap-Display-Name | maxTicketAge                         |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.77                |
-| System-ID-GUID    | bf9679be-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679be-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,13 +55,13 @@ Este atributo determina el tiempo máximo, en horas, que se puede usar el vale d
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -76,13 +76,13 @@ Este atributo determina el tiempo máximo, en horas, que se puede usar el vale d
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -97,13 +97,13 @@ Este atributo determina el tiempo máximo, en horas, que se puede usar el vale d
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -118,13 +118,13 @@ Este atributo determina el tiempo máximo, en horas, que se puede usar el vale d
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -139,13 +139,13 @@ Este atributo determina el tiempo máximo, en horas, que se puede usar el vale d
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -160,13 +160,13 @@ Este atributo determina el tiempo máximo, en horas, que se puede usar el vale d
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
+| Es de un solo valor       | True                                               |
 | Está indexado             | False                                              |
 | En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

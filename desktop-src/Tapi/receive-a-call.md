@@ -1,23 +1,23 @@
 ---
-description: En el ejemplo de código siguiente se muestra cómo controlar las nuevas notificaciones de llamada, como buscar o crear los terminales adecuados para representar el medio.
+description: En el ejemplo de código siguiente se muestra el control de nuevas notificaciones de llamada, como buscar o crear terminales adecuados para representar los medios.
 ms.assetid: 77f6e1b5-b60e-4e8d-b747-7eceae8b0611
 title: Recibir una llamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6a78ebf5b77569f8468a8b2c0a30217f4f7430e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9e4ce02ec11a1373d16b9b9ebd0fba29313b1d532175894c6fd1b12a38e2bf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060473"
 ---
 # <a name="receive-a-call"></a>Recibir una llamada
 
-En el ejemplo de código siguiente se muestra cómo controlar las nuevas notificaciones de llamada, como buscar o crear los terminales adecuados para representar el medio. Este ejemplo es una parte de la instrucción switch que una aplicación debe implementar para el control de eventos. El propio código puede estar incluido en la implementación de [**ITTAPIEventNotification:: Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event), o el método de **evento** puede publicar un mensaje en un subproceso de trabajo que contenga el modificador.
+En el ejemplo de código siguiente se muestra el control de nuevas notificaciones de llamada, como buscar o crear terminales adecuados para representar los medios. Este ejemplo es una parte de la instrucción switch que una aplicación debe implementar para el control de eventos. El propio código puede estar contenido en la implementación de [**ITTAPIEventNotification::Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)o el método **Event** puede publicar un mensaje en un subproceso de trabajo que contiene el modificador.
 
-Antes de usar este ejemplo de código, debe realizar las operaciones en [Initialize TAPI](initialize-tapi.md), [seleccionar una dirección](select-an-address.md)y [registrar eventos](register-events.md).
+Antes de usar este ejemplo de código, debe realizar las operaciones en [Inicializar TAPI,](initialize-tapi.md) [Seleccionar una dirección](select-an-address.md)y Registrar [eventos](register-events.md).
 
-Además, debe realizar las operaciones que se muestran en [seleccionar un terminal](select-a-terminal.md) después de la recuperación de los punteros de la interfaz [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) y [**ITAddress**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddress) .
+Además, debe realizar las operaciones que se muestran en Seleccionar un [terminal](select-a-terminal.md) después de la recuperación de los punteros de interfaz [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) e [**ITAddress.**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddress)
 
 > [!Note]  
 > Este ejemplo no tiene la comprobación de errores y las versiones adecuadas para el código de producción.

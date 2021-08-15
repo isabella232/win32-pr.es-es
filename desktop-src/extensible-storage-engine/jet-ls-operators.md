@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: operadores de JET_LS'
-title: Operadores de JET_LS
+description: 'Más información sobre: operadores JET_LS datos'
+title: JET_LS operadores
 TOCTitle: JET_LS operators
 ms:assetid: 35b69244-b6a8-50df-f442-6096bc5a5aa5
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh577889(v=EXCHG.10)
 ms:contentKeyID: 39511163
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 368afcd06ef890f5be8f29e32d2f949d571ac159
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d90ce22e56e178f227112023fbd6c2552f97d0ccbedb4c4f9b118fca21224369
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104563513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093605"
 ---
-# <a name="jet_ls-operators"></a>Operadores de JET_LS
+# <a name="jet_ls-operators"></a>JET_LS operadores
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_LS](./jet-ls-structure.md) expone los siguientes miembros.
+El [JET_LS](./jet-ls-structure.md) muestra los miembros siguientes.
 
 ## <a name="operators"></a>Operadores
 
@@ -48,10 +48,10 @@ El tipo de [JET_LS](./jet-ls-structure.md) expone los siguientes miembros.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LS](./jet-ls-structure.md)
+[JET_LS estructura](./jet-ls-structure.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,22 +1,22 @@
 ---
-description: La estructura XMUINT4 expone los siguientes operadores.
+description: La estructura XMUINT4 expone los operadores siguientes.
 ms.assetid: 2488e70d-01dd-4d98-840e-35eca28ac10b
 title: Operadores XMUINT4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 818b836fa006b3c50b819073895ea1daf9a4f21d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c6082036d4146dc4651a697e0a6c92023a800fa5b37a058839d03ddf019fbe9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984865"
 ---
 # <a name="xmuint4-operators"></a>Operadores XMUINT4
 
-La estructura [**XMUINT4**](/windows/win32/api/directxmath/ns-directxmath-xmuint4) expone los siguientes operadores.
+La [**estructura XMUINT4**](/windows/win32/api/directxmath/ns-directxmath-xmuint4) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMUINT4**](/windows/win32/api/directxmath/ns-directxmath-xmuint
 
 | Métodos                                              | Descripción                                                                                                       |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxmath/nf-directxmath-xmuint4-operator-assign)<br/> | Asigna los datos del componente de vector de una instancia de `XMUINT4` a la instancia actual de `XMUINT4` .<br/> |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmuint4-operator-assign)<br/> | Asigna los datos del componente vectorial de una instancia de `XMUINT4` a la instancia actual de `XMUINT4` .<br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMUINT4**](/windows/win32/api/directxmath/ns-directxmath-xmuint
 
 <dl> <dt>
 
-[Extensiones de XMUINT4](ovw-xmuint4-extensions.md)
+[Extensiones XMUINT4](ovw-xmuint4-extensions.md)
 </dt> <dt>
 
 **Referencia**

@@ -1,25 +1,25 @@
 ---
-description: La función OpenPerformanceData de los archivos dll de rendimiento toma un argumento de cadena como entrada.
+description: La función OpenPerformanceData de archivos DLL de rendimiento toma un argumento de cadena como entrada.
 ms.assetid: 8ec0ea45-5789-4801-b486-555779a7303e
-title: Crear otras entradas del registro
+title: Crear otras entradas del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dfc3b46ce642069210df5112eb41cac9a038797
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5ad9fe960713a481ba5a9b8f4b73e11bdbdd4d9fe9474b04b994e373ce8e1bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683975"
 ---
-# <a name="creating-other-registry-entries"></a>Crear otras entradas del registro
+# <a name="creating-other-registry-entries"></a>Crear otras entradas del Registro
 
-La función [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) de la dll de rendimiento toma un argumento de cadena como entrada. Para proporcionar una cadena de entrada a la función abierta, incluya una clave de **vinculación** en la clave de **servicios** . La clave de **vinculación** contiene un valor de **exportación** . Establezca los datos de valor para **exportar** a la cadena de entrada que desea pasar a la función abierta. El tipo de datos de **Export** es **reg \_ multi \_ SZ**.
+La función [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) del archivo DLL de rendimiento toma un argumento de cadena como entrada. Para proporcionar una cadena de entrada a la función abierta, incluya una **clave de vinculación** en la **clave de** servicios. La **clave Linkage** contiene un **valor export.** Establezca los datos de valor de **Exportar** en la cadena de entrada que desea pasar a la función abierta. El tipo de datos **de Export** es REG **MULTI \_ \_ SZ.**
 
-Si no se define **Export** (la **exportación** es opcional), el sistema pasa **null** a la función [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) .
+Si **Export** no está definido **(export** es opcional), el sistema pasa **NULL** a la [**función OpenPerformanceData.**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85))
 
-Normalmente, si más de una aplicación comparte el mismo archivo DLL de rendimiento, cada aplicación incluye una clave de **vinculación** y un valor de **exportación** para proporcionar el contexto en el que la aplicación llama a la dll.
+Normalmente, si más de una aplicación comparte el  mismo archivo  DLL de rendimiento, cada aplicación incluye una clave de vinculación y un valor de exportación para proporcionar el contexto en el que la aplicación llama al archivo DLL.
 
-A continuación se muestran las entradas del registro:
+A continuación se muestran las entradas del Registro:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -38,7 +38,7 @@ HKEY_LOCAL_MACHINE
                   Library = perfctrs.dll
 ```
 
-De forma predeterminada, las funciones [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) y [**CollectPerformanceData**](/windows/win32/api/winperf/nc-winperf-pm_collect_proc) del archivo dll de rendimiento deben volver en 10.000 milisegundos. De lo contrario, el sistema no utiliza los datos devueltos por el archivo DLL. La aplicación puede aumentar o disminuir el valor de tiempo de espera especificando un tiempo de espera de **apertura** o el valor del registro de **tiempo de espera de recopilación** bajo su clave de **rendimiento** , tal como se muestra en el ejemplo siguiente.
+De forma predeterminada, las funciones [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) y [**CollectPerformanceData**](/windows/win32/api/winperf/nc-winperf-pm_collect_proc) de la DLL de rendimiento deben devolver en un plazo de 10 000 milisegundos. Si no es así, el sistema no usa los datos que devuelve el archivo DLL. La aplicación puede aumentar o disminuir el valor  de tiempo de  espera especificando un valor del Registro Tiempo de espera de apertura o Recopilar tiempo de espera en su clave de rendimiento, como se muestra en el ejemplo siguiente. 
 
 ```
 HKEY_LOCAL_MACHINE
@@ -51,7 +51,7 @@ HKEY_LOCAL_MACHINE
                   Collect Timeout = Timeout value for your collect function, in milliseconds
 ```
 
-Para obtener los datos de rendimiento de algunas aplicaciones (las que devuelven contadores mediante la función [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) ), es necesario usar la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) para abrir el dispositivo asociado a la aplicación. En este caso, el nombre especificado en **CreateFile** también debe instalarse en el nodo dispositivos dos del registro, como se muestra aquí:
+Para obtener los datos de rendimiento de algunas aplicaciones (aquellas que devuelven contadores mediante la función [**DeviceIoControl),**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) es necesario usar la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) para abrir el dispositivo asociado a la aplicación. En este caso, el nombre especificado en **CreateFile** también debe instalarse en el nodo Dispositivos DOS del Registro, como se muestra aquí:
 
 ```
 HKEY_LOCAL_MACHINE

@@ -51,7 +51,7 @@ Método destructor.
 
 <dl> <dt>
 
-[**CGenericList (clase)**](cgenericlist.md)
+[**CGenericList (Clase)**](cgenericlist.md)
 </dt> </dl>
 
  

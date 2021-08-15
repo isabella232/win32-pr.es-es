@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETOPTIONS (RichEdit. h)
-description: Recupera opciones enriquecidas de control de edición.
+title: EM_GETOPTIONS mensaje (Richedit.h)
+description: Recupera opciones de control de edición enriquecciones.
 ms.assetid: 183f0fed-8666-4ed5-ac48-362c818378d2
 keywords:
-- EM_GETOPTIONS controles de mensajes de Windows
+- EM_GETOPTIONS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b31af3663331b63553fc262fc9bdbd5613c5768
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cba85b5fe3ffd47763d25b9ca13bf10f6202a6876e25d300f66d9af3852edd5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019523"
 ---
-# <a name="em_getoptions-message"></a>\_Mensaje GETOPTIONS em
+# <a name="em_getoptions-message"></a>Mensaje \_ EM GETOPTIONS
 
-Recupera opciones enriquecidas de control de edición.
+Recupera opciones de control de edición enriquecciones.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,38 +32,38 @@ Recupera opciones enriquecidas de control de edición.
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje devuelve una combinación de los valores de marca de la opción actual descritos en el mensaje [**\_ SETOPTIONS em**](em-setoptions.md) .
+Este mensaje devuelve una combinación de los valores de marca de opción actuales descritos en el [**mensaje \_ EM SETOPTIONS.**](em-setoptions.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_SETOPTIONS em**](em-setoptions.md)
+[**EM \_ SETOPTIONS**](em-setoptions.md)
 </dt> </dl>
 
  

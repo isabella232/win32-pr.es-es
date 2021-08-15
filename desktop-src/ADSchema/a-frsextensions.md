@@ -1,11 +1,11 @@
 ---
-title: FRS-Extensions atributo)
-description: Datos binarios usados por la replicación de archivos.
+title: FRS-Extensions atributo
+description: Datos binarios utilizados por la replicación de archivos.
 ms.assetid: 8384f097-533c-49b6-898b-f4120dcfc3fd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de FRS-Extensions
-- fRSExtensions esquema de AD de atributos
+- FRS-Extensions esquema de AD de atributo
+- Esquema de AD del atributo fRSExtensions
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 010677958b7d03841ca465db7bfd17e38aa4e003
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 03201ebe200b8525203c5ad9f1afbee0065639dd3b47e4a3dc94b58da9538217
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119306665"
 ---
-# <a name="frs-extensions-attribute"></a>FRS-Extensions atributo)
+# <a name="frs-extensions-attribute"></a>FRS-Extensions atributo
 
-Datos binarios usados por la replicación de archivos.
+Datos binarios utilizados por la replicación de archivos.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | FRS-Extensions                                        |
-| Nombre para mostrar de LDAP | fRSExtensions                                         |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | El sistema establece este valor.                      |
+| Ldap-Display-Name | fRSExtensions                                         |
+| Size              | \-                                                    |
+| Actualizar privilegios  | El sistema establece este valor.                      |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.536                                |
-| System-ID-GUID    | 52458020-ca6a-11d0-AFFF-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 52458020-ca6a-11d0-afff-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Datos binarios usados por la replicación de archivos.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                      |
 | System-Only            | False                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                                                                                                                                                                                    |
 | Está indexado             | False                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 65536                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: configuración**](c-ntfrssettings.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Configuración**](c-ntfrssettings.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Datos binarios usados por la replicación de archivos.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                      |
 | System-Only            | False                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                                                                                                                                                                                    |
 | Está indexado             | False                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 65536                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: configuración**](c-ntfrssettings.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Configuración**](c-ntfrssettings.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Datos binarios usados por la replicación de archivos.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                      |
 | System-Only            | False                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                                                                                                                                                                                    |
 | Está indexado             | False                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 65536                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: configuración**](c-ntfrssettings.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Configuración**](c-ntfrssettings.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Datos binarios usados por la replicación de archivos.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                      |
 | System-Only            | False                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                                                                                                                                                                                    |
 | Está indexado             | False                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 65536                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: configuración**](c-ntfrssettings.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Configuración**](c-ntfrssettings.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Datos binarios usados por la replicación de archivos.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                      |
 | System-Only            | False                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                                                                                                                                                                                    |
 | Está indexado             | False                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 65536                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: configuración**](c-ntfrssettings.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Configuración**](c-ntfrssettings.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Datos binarios usados por la replicación de archivos.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                      |
 | System-Only            | False                                                                                                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                                                                                                                                                                                    |
 | Está indexado             | False                                                                                                                                                                                                                                                                                   |
 | En el catálogo global      | False                                                                                                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 65536                                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                              |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: configuración**](c-ntfrssettings.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Configuración**](c-ntfrssettings.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 

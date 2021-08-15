@@ -276,7 +276,7 @@
                 - name: MicrosoftDNS_Cache
                   href: microsoftdns-cache.md
                   items:
-                    - name: ClearCache (método)
+                    - name: Método ClearCache
                       href: microsoftdns-cache-clearcache.md
                     - name: GetDistinguishedName (método)
                       href: microsoftdns-cache-getdistinguishedname.md
@@ -320,7 +320,7 @@
                       href: microsoftdns-zone-resetsecondaries.md
                     - name: Método ResumeZone
                       href: microsoftdns-zone-resumezone.md
-                    - name: ReloadZone (método)
+                    - name: Método ReloadZone
                       href: microsoftdns-zone-reloadzone.md
                     - name: Método UpdateFromDS
                       href: microsoftdns-zone-updatefromds.md

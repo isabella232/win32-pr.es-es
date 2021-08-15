@@ -1,27 +1,27 @@
 ---
-title: Para establecer la configuración de entrada
-description: Para establecer la configuración de entrada
+title: Para establecer la entrada Configuración
+description: Para establecer la entrada Configuración
 ms.assetid: 288801a7-793f-43bd-9c5a-f9e1bd86ecc3
 keywords:
-- Advanced Systems Format (ASF), configuración de entrada
+- Formato de sistemas avanzados (ASF), configuración de entrada
 - ASF (formato de sistemas avanzados), configuración de entrada
 - perfiles, configuración de entrada
 - códecs, configuración de entrada
-- flujos, configuración de entrada
+- streams,input settings
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e7b2db64a7346cc8b9d46c48f0add79dafcac95
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 5df5b10ea6bd15ad083b26a61af037527f00576eaa6b7e1fa795ea1591417ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103994957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447025"
 ---
-# <a name="to-set-input-settings"></a>Para establecer la configuración de entrada
+# <a name="to-set-input-settings"></a>Para establecer la entrada Configuración
 
-La estructura de [**\_ \_ tipo de medio de WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) define las propiedades básicas de los medios de entrada y de secuencia. En el caso de los formatos de entrada, la aplicación establece la información de tipo de medio. En el caso de los formatos de secuencia, la información de tipo de medio se establece en el perfil que se asigna al escritor. Algunas propiedades son independientes del tipo de medio y se deben establecer para una entrada antes de comenzar la escritura. Estas propiedades son características de códec y escritor que son independientes del tipo de secuencia y deben establecerse después de que el perfil se haya asignado en el escritor, pero antes de que empiece la escritura.
+Las propiedades básicas de los medios de entrada y los medios de secuencia se definen mediante la [**estructura WM \_ MEDIA \_ TYPE.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) Para los formatos de entrada, la aplicación establece la información del tipo de medio. Para los formatos de secuencia, la información del tipo de medio se establece en el perfil que asigna al escritor. Algunas propiedades son independientes del tipo de medio y se deben establecer para una entrada antes de comenzar la escritura. Estas propiedades son características de códec y escritor que son independientes del tipo de secuencia y deben establecerse después de asignar el perfil en el escritor, pero antes de comenzar la escritura.
 
-Establecer una configuración de entrada requiere una llamada a [**IWMWriterAdvanced2:: SetInputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced2-setinputsetting). También puede comprobar el valor actual de una configuración con una llamada a [**IWMWriterAdvanced2:: GetInputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced2-getinputsetting).
+Establecer una configuración de entrada requiere una llamada a [**IWMWriterAdvanced2::SetInputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced2-setinputsetting). También puede comprobar el valor actual de una configuración con una llamada a [**IWMWriterAdvanced2::GetInputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced2-getinputsetting).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -30,15 +30,15 @@ Establecer una configuración de entrada requiere una llamada a [**IWMWriterAdva
 [**Para el uso de perfiles con Writer**](to-use-profiles-with-the-writer.md)
 </dt> <dt>
 
-[**Escribir archivos ASF**](writing-asf-files.md)
+[**Escritura de archivos ASF**](writing-asf-files.md)
 </dt> <dt>
 
-[**Escribir secuencias de imagen**](writing-image-streams.md)
+[**Escribir imágenes Secuencias**](writing-image-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,7 +9,7 @@
         - name: Crear propiedades personalizadas.
           href: building-property-handlers-property-schemas.md
           items:
-            - name: Descripción del esquema de descripción de propiedad
+            - name: Descripción del esquema de descripción de propiedades
               href: propdesc-schema-entry.md
         - name: Implementar controladores de propiedades
           href: building-property-handlers.md
@@ -66,9 +66,9 @@
                   href: props-system-calendar-isrecurring.md
                 - name: System.Calendar.Location
                   href: props-system-calendar-location.md
-                - name: System.Calendar.OptionalAttpeteAddresses
+                - name: System.Calendar.OptionalAttataeAddresses
                   href: props-system-calendar-optionalattendeeaddresses.md
-                - name: System.Calendar.OptionalAttattatteNames
+                - name: System.Calendar.OptionalAttataeNames
                   href: props-system-calendar-optionalattendeenames.md
                 - name: System.Calendar.OrganizerAddress
                   href: props-system-calendar-organizeraddress.md
@@ -76,9 +76,9 @@
                   href: props-system-calendar-organizername.md
                 - name: System.Calendar.ReminderTime
                   href: props-system-calendar-remindertime.md
-                - name: System.Calendar.RequiredAttpeteAddresses
+                - name: System.Calendar.RequiredAttataeAddresses
                   href: props-system-calendar-requiredattendeeaddresses.md
-                - name: System.Calendar.RequiredAttpeteNames
+                - name: System.Calendar.RequiredAttataeNames
                   href: props-system-calendar-requiredattendeenames.md
                 - name: System.Calendar.Resources
                   href: props-system-calendar-resources.md
@@ -847,7 +847,7 @@
                   href: props-system-devices-aep-bluetooth-cod-services-positioning.md
                 - name: System.Devices.Aep. Bluetooth. Cod.Services.Rendering
                   href: props-system-devices-aep-bluetooth-cod-services-rendering.md
-                - name: System.Devices.Aep. Bluetooth. Cod.Services.Telefonía
+                - name: System.Devices.Aep. Bluetooth. Cod.Services.Telephony
                   href: props-system-devices-aep-bluetooth-cod-services-telephony.md
                 - name: System.Devices.Aep. Bluetooth. Le.AddressType
                   href: props-system-devices-aep-bluetooth-le-addresstype.md
@@ -1159,7 +1159,7 @@
                   href: props-system-devices-storagefreespacepercent.md
                 - name: System.Devices.TextMessages
                   href: props-system-devices-textmessages.md
-                - name: System.Devices.Correo electrónico
+                - name: System.Devices.Buzón
                   href: props-system-devices-voicemail.md
                 - name: System.Devices.WiaDeviceType
                   href: props-system-devices-wiadevicetype.md
@@ -1477,7 +1477,7 @@
                   href: props-system-layoutpattern-contentviewmodeforbrowse.md
                 - name: System.LayoutPattern.ContentViewModeForSearch
                   href: props-system-layoutpattern-contentviewmodeforsearch.md
-            - name: Link
+            - name: Vínculo
               href: link-bumper.md
               items:
                 - name: System.History.SelectionCount
@@ -2079,7 +2079,7 @@
                   href: props-system-supplemental-albumid.md
                 - name: System.Supplemental.ResourceId
                   href: props-system-supplemental-resourceid.md
-            - name: Sincronización
+            - name: Sync
               href: sync-bumper.md
               items:
                 - name: System.Sync.Comments
@@ -2226,7 +2226,7 @@
             - name: IPropertyChangeArray
               href: /windows/desktop/api/Propsys/nn-propsys-ipropertychangearray
               items:
-                - name: Anexar
+                - name: Append
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertychangearray-append
                 - name: AppendOrReplace
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertychangearray-appendorreplace
@@ -2249,7 +2249,7 @@
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-formatfordisplay
                 - name: GetAggregationType
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getaggregationtype
-                - name: GetÓniconicalName
+                - name: GetCanonicalName
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getcanonicalname
                 - name: GetColumnState
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getcolumnstate
@@ -2283,7 +2283,7 @@
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-gettypeflags
                 - name: GetViewFlags
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getviewflags
-                - name: IsValueÓniconical
+                - name: IsValueCanonical
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-isvaluecanonical
             - name: IPropertyDescription2
               href: /windows/desktop/api/Propsys/nn-propsys-ipropertydescription2
@@ -2409,7 +2409,7 @@
               items:
                 - name: FormatForDisplay
                   href: /windows/desktop/api/Shobjidl_core/nf-shobjidl_core-ipropertyui-formatfordisplay
-                - name: GetÓniconicalName
+                - name: GetCanonicalName
                   href: /previous-versions/windows/desktop/legacy/dd758076(v=vs.85)
                 - name: GetDefaultWidth
                   href: /windows/desktop/api/Shobjidl_core/nf-shobjidl_core-ipropertyui-getdefaultwidth
@@ -2426,7 +2426,7 @@
         - name: Functions
           href: functions.md
           items:
-            - name: Funciones del bolsa de propiedades
+            - name: Funciones de bolsa de propiedades
               href: property-bag-functions.md
               items:
                 - name: PSPropertyBag_Delete

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_COPY (Winuser. h)
-description: Una aplicación envía el mensaje de copia de WM \_ a un control de edición o un cuadro combinado para copiar la selección actual en el portapapeles en \_ formato de texto CF.
+title: WM_COPY mensaje (Winuser.h)
+description: Una aplicación envía el mensaje WM COPY a un control de edición o a un cuadro combinado para copiar la selección actual en el Portapapeles \_ en formato CF \_ TEXT.
 ms.assetid: dcac3ad3-1e70-4b71-accd-261587224e60
 keywords:
-- Intercambio de datos de mensajes de WM_COPY
+- WM_COPY mensaje Data Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b298248d75b1d25d1bfef8347347fe2f1a6c7916
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: 2d7774b1e2d52cbe21b8636bcaa1c695f9f49b319280ebc89c74fd652533066b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "105707574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096755"
 ---
-# <a name="wm_copy-message"></a>Mensaje de copia de WM \_
+# <a name="wm_copy-message"></a>Mensaje COPY de WM \_
 
-Una aplicación envía el mensaje de **\_ copia de WM** a un control de edición o un cuadro combinado para copiar la selección actual en el portapapeles en formato de [**\_ texto CF**](standard-clipboard-formats.md) .
+Una aplicación envía el **mensaje WM \_ COPY** a un control de edición o a un cuadro combinado para copiar la selección actual en el Portapapeles en [**formato CF \_ TEXT.**](standard-clipboard-formats.md)
 
 
 ```C++
@@ -39,57 +39,57 @@ Una aplicación envía el mensaje de **\_ copia de WM** a un control de edición
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto; de lo contrario, es cero.
+Devuelve un valor distinto de cero si se ejecuta correctamente; de lo contrario, cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se envía a un cuadro combinado, el mensaje de **\_ copia de WM** se controla mediante su control de edición. Este mensaje no tiene ningún efecto cuando se envía a un cuadro combinado con el estilo [**CBS \_ DROPDOWNLIST**](../controls/combo-box-styles.md) .
+Cuando se envía a un cuadro combinado, su control de edición controla el mensaje COPY de **WM. \_** Este mensaje no tiene ningún efecto cuando se envía a un cuadro combinado con el estilo [**\_ DROPDOWNLIST de CBS.**](../controls/combo-box-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**\_borrado de WM**](wm-clear.md)
+[**WM \_ CLEAR**](wm-clear.md)
 </dt> <dt>
 
-[**cortar de WM \_**](wm-cut.md)
+[**WM \_ CUT**](wm-cut.md)
 </dt> <dt>
 
-[**pegar de WM \_**](wm-paste.md)
+[**WM \_ PASTE**](wm-paste.md)
 </dt> <dt>
 
-[**deshacer de WM \_**](/windows/desktop/Controls/wm-undo)
+[**WM \_ UNDO**](/windows/desktop/Controls/wm-undo)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Portapapeles](clipboard.md)

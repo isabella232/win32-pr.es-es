@@ -1,10 +1,10 @@
 ---
-title: Abandon-Replication derecha extendida
+title: Abandon-Replication derecho extendido
 description: Derecho extendido necesario para cancelar una sincronización de replicación.
 ms.assetid: 74a2d95a-08d9-43f7-9fe2-ce0eb4930344
 ms.tgt_platform: multiple
 keywords:
-- Abandon-Replication esquema de AD derecho extendido
+- Abandon-Replication de AD derecho extendido
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ca3fd17940fccc285f208e96e591ba85da4a814
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ae50f123b279335e13fd1ed9fbc249d9fa8deb1fd88579c1a466c12f3694379
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021723"
 ---
-# <a name="abandon-replication-extended-right"></a>Abandon-Replication derecha extendida
+# <a name="abandon-replication-extended-right"></a>Abandon-Replication derecho extendido
 
 Derecho extendido necesario para cancelar una sincronización de replicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | Abandon-Replication                  |
 | Display-Name | Abandonar replicación                  |
@@ -42,10 +42,10 @@ Derecho extendido necesario para cancelar una sincronización de replicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 30                                       |
+| Localization-Display-ID | 30                                       |
 
 
 

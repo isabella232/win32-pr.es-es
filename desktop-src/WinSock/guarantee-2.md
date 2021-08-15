@@ -1,19 +1,19 @@
 ---
-description: Ya no se utiliza la enumeración garantía de Windows Sockets. Para obtener información sobre la implementación de Windows de calidad de servicio y la API asociada, consulte calidad de servicio (QoS) en el kit de desarrollo de software (SDK) de la plataforma.
+description: Ya no Windows enumeración GUARANTEE de sockets. Para obtener información sobre Windows implementación de calidad de servicio y la API asociada, consulte Calidad de servicio (QoS) en Platform Software Development Kit (SDK).
 ms.assetid: 103e236f-79d7-4d8d-b23e-0cfe40fbd055
-title: Garanti
+title: Garantizar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56065a9416b654e831d249d01ff3b5ed29fec10c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3379466c81f8c0ccfbc3483615582f76e322bbf4084b28efd9b1768ad289cbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051663"
 ---
-# <a name="guarantee"></a>Garanti
+# <a name="guarantee"></a>Garantizar
 
-Ya no se utiliza la enumeración **garantía** de Windows Sockets. Para obtener información sobre la implementación de Windows de calidad de servicio y la API asociada, consulte [calidad de servicio (QoS)](/previous-versions/windows/desktop/qos/qos-start-page) en el kit de desarrollo de software (SDK) de la plataforma.
+Ya no Windows **enumeración GUARANTEE** de sockets. Para obtener información sobre Windows implementación de calidad de servicio y la API asociada, consulte Calidad de servicio [(QoS)](/previous-versions/windows/desktop/qos/qos-start-page) en el Kit de desarrollo de software de plataforma (SDK).
 
  
 

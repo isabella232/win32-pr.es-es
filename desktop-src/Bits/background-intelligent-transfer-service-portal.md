@@ -11,21 +11,21 @@ keywords:
 - carga de archivos BITS
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: 9483e297e8b48ad6466846c7eceb8d53b57d3278
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 66bc9af5231454ef63d8c74f9e500baaeb7c8cec9dbdd694943a3809da4a391d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588735"
 ---
 # <a name="background-intelligent-transfer-service"></a>Servicio de transferencia inteligente en segundo plano
 
 ## <a name="purpose"></a>Propósito
 
-Servicio de transferencia inteligente en segundo plano (BITS) los programadores y administradores del sistema usan para descargar o cargar archivos en servidores web HTTP y recursos compartidos de archivos SMB. BITS tendrá en cuenta el costo de la transferencia, así como el uso de la red para que el trabajo en primer plano del usuario tenga el menor impacto posible. BITS también controla las interupciones de red, pausando y reanudando automáticamente las transferencias, incluso después de un reinicio. BITS incluye cmdlets de PowerShell para crear y administrar transferencias, así como la utilidad de línea de comandos BitsAdmin.
+Servicio de transferencia inteligente en segundo plano (BITS) lo usan programadores y administradores del sistema para descargar o cargar archivos en servidores web HTTP y recursos compartidos de archivos SMB. BITS tendrá en cuenta el costo de la transferencia, así como el uso de la red para que el trabajo en primer plano del usuario tenga el menor impacto posible. BITS también controla las interupciones de red, pausando y reanudando automáticamente las transferencias, incluso después de un reinicio. BITS incluye cmdlets de PowerShell para crear y administrar transferencias, así como la utilidad de línea de comandos BitsAdmin.
 
 > [!Note]  
-> Windows puede usar BITS para descargar actualizaciones en el sistema local. Si es un usuario final que busca maneras de solucionar problemas de la instalación de BITS, consulte [Corrección de Windows Update problemas.](https://support.microsoft.com/help/10164/fix-windows-update-errors) 
+> BITS puede ser utilizado por Windows descargar actualizaciones en el sistema local. Si es un usuario final que busca maneras de solucionar problemas de la instalación de BITS, consulte [Corrección Windows problemas de actualización.](https://support.microsoft.com/help/10164/fix-windows-update-errors) 
  
 
 ## <a name="where-applicable"></a>Donde sea aplicable
@@ -40,7 +40,7 @@ Use BITS para las aplicaciones que necesitan:
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-BITS es una interfaz COM diseñada para desarrolladores de C y C++ que también pueden usar los desarrolladores de .NET. Los desarrolladores de UWP deben usar la API [Windows.Networking.BackgroundTransfer](/uwp/api/Windows.Networking.BackgroundTransfer) y no la API de BITS.
+BITS es una interfaz COM diseñada para desarrolladores de C y C++ que también pueden usar los desarrolladores de .NET. Los desarrolladores de UWP deben [usar el Windows. API Networking.BackgroundTransfer](/uwp/api/Windows.Networking.BackgroundTransfer) y no la API de BITS.
 
 ## <a name="bits-versions"></a>Versiones de BITS
 
@@ -70,7 +70,7 @@ Los siguientes son recursos adicionales.
 |    Recurso         |    Descripción                                                                                                                                     |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | DLL de referencia de .NET   | Para obtener información sobre el uso de BITS desde .NET mediante archivos DLL de referencia, vea Llamar a [BITS desde .NET mediante archivos DLL de referencia.](/windows/desktop/Bits/bits-dot-net)      |
-| Contenedor de .NET   | Para otros contenedores de .NET para BITS, puede buscar [en nuget](https://www.nuget.org/packages?q=Tags%3A%22BITS%22) proyectos etiquetados con la etiqueta BITS.        |
+| Contenedor de .NET   | Para otros contenedores de .NET para BITS, puede buscar [en NuGet](https://www.nuget.org/packages?q=Tags%3A%22BITS%22) proyectos etiquetados con la etiqueta BITS.        |
 
 
 

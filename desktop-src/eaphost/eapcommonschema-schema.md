@@ -1,6 +1,6 @@
 ---
 title: Esquema eapcommon
-description: Obtenga información sobre el esquema eapcommon, que define el elemento de esquema EapMethodType. Vea recursos adicionales para los elementos de esquema y los tipos complejos.
+description: Obtenga información sobre el esquema eapcommon, que define el elemento de esquema EapMethodType. Ver recursos adicionales para elementos de esquema y tipos complejos.
 ms.assetid: ab7d1228-8472-49c9-85be-36c189470af7
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,19 +9,19 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5ee6865703603305f057eef8cc477c7ddb7d38ff
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 0ef00b95d978277790958c5d1945b810ae366f1dc4bd6e408accc3151d69f040
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105714442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561855"
 ---
 # <a name="eapcommon-schema"></a>Esquema eapcommon
 
 El esquema eapcommon define el elemento de esquema EapMethodType.
 
--   [Elementos de esquema eapcommon](eapcommonschema-elements.md)
--   [Tipos complejos de esquema de eapcommon](eapcommonschema-complex-types.md)
+-   [elementos de esquema eapcommon](eapcommonschema-elements.md)
+-   [Tipos complejos de esquema eapcommon](eapcommonschema-complex-types.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -30,9 +30,9 @@ El esquema eapcommon define el elemento de esquema EapMethodType.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

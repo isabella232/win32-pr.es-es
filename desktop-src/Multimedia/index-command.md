@@ -1,9 +1,9 @@
 ---
-title: index (comando)
+title: comando index
 description: El comando index controla la presentación en pantalla de un VCR. Los dispositivos VCR reconocen este comando.
 ms.assetid: 16066acf-37aa-4bff-b97e-5eb2420ac3c4
 keywords:
-- comando de índice multimedia de Windows
+- comando index Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da652b1a7a48dffd9850c435345fcfcb11c2e674
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9044ce01db5f35354390fd8d09cc085416202f670c8378a2e1a10311b12ab94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690555"
 ---
-# <a name="index-command"></a>index (comando)
+# <a name="index-command"></a>comando index
 
 El comando index controla la presentación en pantalla de un VCR. Los dispositivos VCR reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -53,10 +53,10 @@ Una de las marcas siguientes.
 
 
 
-| Value | Significado                                                                                                                  |
+| Valor | Significado                                                                                                                  |
 |-------|--------------------------------------------------------------------------------------------------------------------------|
-| apagado   | Desactiva la presentación en pantalla.                                                                                         |
-| on    | Activa la presentación en pantalla. El elemento que se va a mostrar se especifica mediante la marca "índice" del comando [set](set.md) . |
+| apagado   | Desactiva la pantalla en pantalla.                                                                                         |
+| en    | Activa la pantalla en pantalla. El elemento que se va a mostrar se especifica mediante la marca "index" del [comando set.](set.md) |
 
 
 
@@ -67,33 +67,33 @@ Una de las marcas siguientes.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o "Test". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o "test". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
 [set](set.md)

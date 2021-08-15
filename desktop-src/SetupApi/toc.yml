@@ -4,7 +4,7 @@
     - name: Información general
       href: overview.md
       items:
-        - name: Instalación de aplicaciones
+        - name: Configuración de aplicaciones
           href: setup-applications.md
           items:
             - name: Acerca de los archivos INF
@@ -14,44 +14,44 @@
               items:
                 - name: Creación de un archivo INF
                   href: authoring-an-inf-file.md
-                - name: Ejemplo de sección de instalación de INF
+                - name: Ejemplo de la sección de instalación de INF
                   href: inf-install-section-example.md
                 - name: Ejemplo de secciones SourceDisksNames y SourceDisksFiles de INF
                   href: inf-sourcedisksnames-and-sourcedisksfiles-sections-example.md
-                - name: Abrir y cerrar un archivo INF
+                - name: Apertura y cierre de un archivo INF
                   href: opening-and-closing-an-inf-file.md
                 - name: Recuperar información de un archivo INF
                   href: retrieving-information-from-an-inf-file.md
                 - name: Instalación desde un archivo INF
                   href: installing-from-an-inf-file.md
-                - name: Especificación de un descriptor de seguridad de un archivo INF
+                - name: Especificar un descriptor de seguridad a partir de un archivo INF
                   href: specifying-a-security-descriptor-from-an-inf-file.md
             - name: Referencia de archivo INF
               href: inf-file-reference.md
               items:
-                - name: Funciones de configuración de archivos INF
+                - name: Funciones de instalación de archivos INF
                   href: inf-file-setup-functions.md
                 - name: Identificador de un archivo INF
                   href: handle-to-an-inf-file.md
-                - name: Estructuras de archivos INF
+                - name: Estructuras de archivo INF
                   href: inf-file-structures.md
                 - name: Notificaciones de archivo INF
                   href: inf-file-notifications.md
-        - name: Comparaciones de versión de archivo
+        - name: Comparaciones de versiones de archivo
           href: file-version-comparisons.md
         - name: Solicitud de disco y control de errores
           href: disk-prompting-and-error-handling.md
           items:
             - name: Acerca de la solicitud de disco y el control de errores
               href: about-disk-prompting-and-error-handling.md
-            - name: Usar la solicitud de disco y el control de errores
+            - name: Uso de solicitudes de disco y control de errores
               href: using-disk-prompting-and-error-handling.md
               items:
-                - name: Solicitar un disco
+                - name: Pedir un disco
                   href: prompting-for-a-disk.md
                 - name: Tratamiento de errores
                   href: error-handling.md
-            - name: Solicitud de disco y referencia de control de errores
+            - name: Referencia de solicitudes de disco y control de errores
               href: disk-prompting-and-error-handling-reference.md
               items:
                 - name: Funciones de solicitud de disco y control de errores
@@ -66,18 +66,18 @@
                   href: order-of-queue-commitment.md
                 - name: Notificaciones de cola
                   href: queue-notifications.md
-            - name: Usar colas de archivos
+            - name: Uso de colas de archivos
               href: using-file-queues.md
               items:
                 - name: Abrir y cerrar una cola
                   href: opening-and-closing-a-queue.md
-                - name: Archivos de colas
+                - name: Archivos en cola
                   href: queuing-files.md
-                - name: Poner en cola una sección de INF
+                - name: Cola de una sección INF
                   href: queuing-an-inf-section.md
                 - name: Confirmar una cola
                   href: committing-a-queue.md
-                - name: Invalidación de la ruta de la plataforma
+                - name: Invalidación de la ruta de acceso de la plataforma
                   href: platform-path-override.md
             - name: Referencia de cola de archivos
               href: file-queue-reference.md
@@ -94,7 +94,7 @@
             - name: Referencia de rutina de devolución de llamada de cola predeterminada
               href: default-queue-callback-routine-reference.md
               items:
-                - name: Funciones de rutina de devolución de llamada de cola predeterminada
+                - name: Funciones de rutina de devolución de llamada de cola predeterminadas
                   href: default-queue-callback-routine-functions.md
             - name: Acerca de la rutina de devolución de llamada de cola predeterminada
               href: about-the-default-queue-callback-routine.md
@@ -104,42 +104,42 @@
             - name: Usar la rutina de devolución de llamada de cola predeterminada
               href: using-the-default-queue-callback-routine.md
               items:
-                - name: Inicialización y finalización del contexto de devolución de llamada
+                - name: Inicialización y terminación del contexto de devolución de llamada
                   href: initializing-and-terminating-the-callback-context.md
-                - name: Llamar a la rutina de devolución de llamada de cola predeterminada
+                - name: Llamada a la rutina de devolución de llamada de cola predeterminada
                   href: calling-the-default-queue-callback-routine.md
-        - name: Archivos. cab (API de instalación)
+        - name: Archivos archivadores (API de instalación)
           href: cabinet-files--setup-api-.md
           items:
-            - name: Acerca de los archivos. cab
+            - name: Acerca de los archivos archivadores
               href: about-cabinet-files.md
-            - name: Uso de archivos. cab
+            - name: Uso de archivos archivadores
               href: using-cabinet-files.md
               items:
-                - name: Extraer archivos de los archivadores
+                - name: Extracción de archivos de gabinetes
                   href: extracting-files-from-cabinets.md
-                - name: Crear una rutina de devolución de llamada de archivador
+                - name: Crear una rutina de devolución de llamada de gabinete
                   href: creating-a-cabinet-callback-routine.md
-            - name: Referencia del archivo. cab
+            - name: Referencia de archivo de archivador
               href: cabinet-file-reference.md
               items:
-                - name: Estructuras de archivos. cab
+                - name: Estructuras de archivo de archivador
                   href: cabinet-file-structures.md
-                - name: Funciones de archivo. cab
+                - name: Funciones de archivo de archivador
                   href: cabinet-file-functions.md
-                - name: Notificaciones de archivo. cab
+                - name: Notificaciones de archivo de archivo de archivado
                   href: cabinet-file-notifications.md
-        - name: Lista de orígenes MRU
+        - name: Lista de orígenes de MRU
           href: mru-source-list.md
           items:
-            - name: Acerca de la lista de orígenes MRU
+            - name: Acerca de la lista de orígenes de MRU
               href: about-the-mru-source-list.md
-            - name: Usar la lista de origen de MRU
+            - name: Uso de la lista de orígenes de MRU
               href: using-the-mru-source-list.md
-            - name: Referencia de lista de orígenes MRU
+            - name: Referencia de la lista de orígenes de MRU
               href: mru-source-list-reference.md
               items:
-                - name: Funciones de origen MRU
+                - name: Funciones de origen de MRU
                   href: mru-source-functions.md
         - name: Registro de archivos
           href: file-log.md
@@ -153,34 +153,34 @@
               items:
                 - name: Funciones de registro de archivos
                   href: file-log-functions.md
-        - name: Lista de Disk-Space
+        - name: Disk-Space lista
           href: disk-space-list.md
           items:
-            - name: Acerca de la lista de Disk-Space
+            - name: Acerca de la Disk-Space lista
               href: about-the-disk-space-list.md
-            - name: Uso de la lista de Disk-Space
+            - name: Uso de la Disk-Space lista de Disk-Space datos
               href: using-the-disk-space-list.md
-            - name: Referencia de lista de Disk-Space
+            - name: Disk-Space de lista de aplicaciones
               href: disk-space-list-reference.md
               items:
-                - name: Tipos de datos de lista de Disk-Space
+                - name: Disk-Space enumeración de tipos de datos
                   href: disk-space-list-data-types.md
-                - name: Funciones de lista de Disk-Space
+                - name: Disk-Space list (Funciones)
                   href: disk-space-list-functions.md
-    - name: Crear aplicaciones de instalación
+    - name: Creación de aplicaciones de instalación
       href: creating-setup-applications.md
       items:
         - name: Abrir el archivo INF
           href: opening-the-inf-file.md
-        - name: Extracción de información de archivos del archivo INF
+        - name: Extracción de información de archivo del archivo INF
           href: extracting-file-information-from-the-inf-file.md
-        - name: Recopilar información de configuración del usuario
+        - name: Recopilación de información de configuración del usuario
           href: gathering-setup-information-from-the-user.md
-        - name: Creación de una cola y operaciones de archivo de colas
+        - name: Crear una cola y poner en cola operaciones de archivo
           href: creating-a-queue-and-queuing-file-operations.md
-        - name: Confirmar la cola
+        - name: Confirmación de la cola
           href: committing-the-queue.md
-        - name: Actualizando información del registro
+        - name: Actualización de la información del Registro
           href: updating-registry-information.md
         - name: Cerrar la cola de archivos y el archivo INF
           href: closing-the-file-queue-and-inf-file.md
@@ -386,7 +386,7 @@
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupuninstalloeminfa
             - name: SetupVerifyInfFile
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupverifyinffilea
-        - name: Estructuras (API de instalación)
+        - name: Estructuras (API de configuración)
           href: structures--setup-api-.md
           items:
             - name: CABINET_INFO
@@ -472,5 +472,5 @@
               href: spfilenotify-targetnewer.md
         - name: Códigos de error (API de instalación)
           href: error-codes--setup-api-.md
-        - name: Ejecutar y RunOnce claves del registro
+        - name: Claves del Registro Run y RunOnce
           href: run-and-runonce-registry-keys.md

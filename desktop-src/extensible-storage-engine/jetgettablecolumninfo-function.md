@@ -63,7 +63,7 @@ Nombre de la columna para la que se va a capturar información.
 
 *pvResult*
 
-Puntero a un búfer que recibirá la información. El tipo del búfer depende de *InfoLevel.* El autor de la llamada debe configurarse para alinear el búfer correctamente.
+Puntero a un búfer que recibirá la información. El tipo del búfer depende de *InfoLevel.* El autor de la llamada debe estar configurado para alinear el búfer correctamente.
 
 *cbMax*
 
@@ -93,7 +93,7 @@ Se pueden establecer las siguientes opciones para este parámetro:
 <tbody>
 <tr class="odd">
 <td><p>JET_ColInfo</p></td>
-<td><p><em>pvResult</em> se interpreta como una <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a>y los campos de la <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> estructura se rellenan correctamente. JET_ColInfo y JET_ColInfoByColid recuperan la misma información.</p></td>
+<td><p><em>pvResult</em> se interpreta como un <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a>y los campos de la <a href="gg294130(v=exchg.10).md">estructura JET_COLUMNDEF</a> se rellenan correctamente. JET_ColInfo y JET_ColInfoByColid recuperan la misma información.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_ColInfoBase</p></td>
@@ -101,15 +101,15 @@ Se pueden establecer las siguientes opciones para este parámetro:
 </tr>
 <tr class="odd">
 <td><p>JET_ColInfoByColid</p></td>
-<td><p><em>pvResult</em> se interpreta como un <a href="gg294130(v=exchg.10).md">valor JET_COLUMNDEF</a>, salvo que <em>infoLevel</em> indica que la columna solicitada (<em>szColumName</em>) no es el nombre de la columna de cadena, sino un puntero a un <a href="gg294104(v=exchg.10).md">JET_COLUMNID</a>. JET_ColInfo y JET_ColInfoByColid recuperan la misma información.</p></td>
+<td><p><em>pvResult</em> se interpreta como un JET_COLUMNDEF <a href="gg294130(v=exchg.10).md">,</a>excepto que <em>infoLevel</em> indica que la columna solicitada (<em>szColumName</em>) no es el nombre de la columna de cadena, sino un puntero a <a href="gg294104(v=exchg.10).md">un JET_COLUMNID</a>. JET_ColInfo y JET_ColInfoByColid recuperan la misma información.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_ColInfoList</p></td>
-<td><p><em>pvResult</em> se interpreta como una <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a> estructura. Si esta función se realiza correctamente, la estructura se rellena con los valores adecuados. Se abre una tabla temporal y se identifica mediante el <em>miembro tableid</em> <a href="gg269228(v=exchg.10).md">de JET_COLUMNLIST</a>. La tabla debe cerrarse con <a href="gg294087(v=exchg.10).md">JetCloseTable.</a> Si se produce un error en esta función, la estructura contiene datos no definidos.</p></td>
+<td><p><em>pvResult</em> se interpreta como una <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a> estructura. Si esta función se realiza correctamente, la estructura se rellena con los valores adecuados. Se abre una tabla temporal y se identifica mediante el <em>miembro tableid</em> <a href="gg269228(v=exchg.10).md">de JET_COLUMNLIST</a>. La tabla debe cerrarse <a href="gg294087(v=exchg.10).md">con JetCloseTable.</a> Si se produce un error en esta función, la estructura contiene datos no definidos.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_ColInfoListCompact</p></td>
-<td><p><em>pvResult</em> se interpreta como una <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a> estructura. Si esta función se realiza correctamente, la estructura se rellena con los valores adecuados. Se abre una tabla temporal y se identifica mediante el <em>miembro tableid</em> <a href="gg269228(v=exchg.10).md">de JET_COLUMNLIST</a>. La tabla debe cerrarse con <a href="gg294087(v=exchg.10).md">JetCloseTable.</a> Si se produce un error en esta función, la estructura contiene datos no definidos.</p></td>
+<td><p><em>pvResult</em> se interpreta como una <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a> estructura. Si esta función se realiza correctamente, la estructura se rellena con los valores adecuados. Se abre una tabla temporal y se identifica mediante el <em>miembro tableid</em> <a href="gg269228(v=exchg.10).md">de JET_COLUMNLIST</a>. La tabla debe cerrarse <a href="gg294087(v=exchg.10).md">con JetCloseTable.</a> Si se produce un error en esta función, la estructura contiene datos no definidos.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_ColInfoListSortColumnid</p></td>
@@ -126,13 +126,13 @@ Se pueden establecer las siguientes opciones para este parámetro:
 </tr>
 <tr class="odd">
 <td><p>JET_ColInfoGrbitNonDerivedColumnsOnly</p></td>
-<td><p>Solo se devuelven columnas no derivadas (si la tabla se deriva de una plantilla).</p>
+<td><p>Devolver solo columnas no derivadas (si la tabla se deriva de una plantilla).</p>
 <p>Este valor puede estar lógicamente o en <em>infoLevel</em>, cuando el <em>InfoLevel</em> base se JET_ColInfoList.</p>
 <p><strong>Windows Vista:</strong> Este valor se introduce en Windows Vista.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_ColInfoGrbitMinimalInfo</p></td>
-<td><p>Solo devuelve el nombre de columna y el id. de columna de cada columna.</p>
+<td><p>Devuelve solo el nombre de columna y el columnid de cada columna.</p>
 <p>Este valor puede estar lógicamente o en <em>infoLevel</em>, cuando el <em>InfoLevel</em> base se JET_ColInfoList.</p>
 <p><strong>Windows Vista:</strong> Este valor se introduce en Windows Vista.</p></td>
 </tr>
@@ -148,7 +148,7 @@ Se pueden establecer las siguientes opciones para este parámetro:
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores ese, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -172,7 +172,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 </tr>
 <tr class="odd">
 <td><p>JET_errFeatureNotAvailable</p></td>
-<td><p>Se <em>especificó un infoLevel</em> no bueno.</p></td>
+<td><p>Se <em>especificó un InfoLevel</em> no bueno.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidName</p></td>
@@ -186,7 +186,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 <td><p>JET_errInvalidParameter</p></td>
 <td><p>Este error se puede devolver si:</p>
 <ul>
-<li><p>Se <em>especificó un infoLevel</em> no bueno.</p></li>
+<li><p>Se <em>especificó un InfoLevel</em> no bueno.</p></li>
 <li><p>Se pasó <em>un valor NULL szTableName.</em></p></li>
 <li><p>El búfer es demasiado pequeño.</p></li>
 </ul></td>
@@ -201,9 +201,9 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
   - **JetGetTableColumnInfo** identifica una tabla por *tableid*.
 
-  - [JetGetColumnInfo identifica](./jetgetcolumninfo-function.md) una tabla mediante la combinación *dbid* y *szTableName.*
+  - [JetGetColumnInfo identifica](./jetgetcolumninfo-function.md) una tabla mediante la *combinación dbid* y *szTableName.*
 
-Al recuperar datos con JET_ColInfoList, JET_ColInfoListSortColumnid o JET_ColInfoListCompact, se abrirá una tabla temporal. La tabla temporal contiene datos y la [JET_COLUMNLIST](./jet-columnlist-structure.md) contiene información suficiente para recorrer la tabla temporal. La tabla temporal debe cerrarse [con JetCloseTable.](./jetclosetable-function.md)
+Al recuperar datos con JET_ColInfoList, JET_ColInfoListSortColumnid o JET_ColInfoListCompact, se abrirá una tabla temporal. La tabla temporal contiene datos y la [estructura JET_COLUMNLIST](./jet-columnlist-structure.md) contiene información suficiente para recorrer la tabla temporal. La tabla temporal debe cerrarse [con JetCloseTable.](./jetclosetable-function.md)
 
 #### <a name="requirements"></a>Requisitos
 
@@ -235,7 +235,7 @@ Al recuperar datos con JET_ColInfoList, JET_ColInfoListSortColumnid o JET_ColInf
 </tr>
 <tr class="even">
 <td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JetGetTableColumnInfoW</strong> (Unicode) y <strong>JetGetTableColumnInfoA</strong> (ANSI).</p></td>
+<td><p>Se implementa <strong>como JetGetTableColumnInfoW</strong> (Unicode) y <strong>JetGetTableColumnInfoA</strong> (ANSI).</p></td>
 </tr>
 </tbody>
 </table>
@@ -243,7 +243,7 @@ Al recuperar datos con JET_ColInfoList, JET_ColInfoListSortColumnid o JET_ColInf
 
 #### <a name="see-also"></a>Consulte también
 
-[Errores extensibles Storage motor de instalación](./extensible-storage-engine-errors.md)  
+[Errores extensibles Storage motor de ejecución](./extensible-storage-engine-errors.md)  
 [Parámetros de control de errores](./error-handling-parameters.md)  
 [JET_COLUMNBASE](./jet-columnbase-structure.md)  
 [JET_COLUMNDEF](./jet-columndef-structure.md)  

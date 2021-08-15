@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_User_Result01_Education02 (clase)
-description: La \_ clase Result01 de usuario de directiva de MDM \_ \_ \_ Education02 representa las directivas de educación.
+title: MDM_Policy_User_Result01_Education02 clase
+description: La clase Mdm \_ Policy \_ User \_ Result01 \_ Education02 representa las directivas de educación.
 ms.assetid: 34dcc478-5f39-4e1a-908b-46cbbf2ff4fd
 keywords:
-- MDM_Policy_User_Result01_Education02 (clase)
+- MDM_Policy_User_Result01_Education02 clase
 - MDM_Policy_User_Result01_Education02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ce82ae1131287ec04c77e084e822609a0e0ab07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5b9b71c66d53a2bbcc502102b1eec7c409c8525a61942d45145ce157ebe3e73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077059"
 ---
-# <a name="mdm_policy_user_result01_education02-class"></a>\_Clase Education02 de usuario de directiva MDM \_ \_ Result01 \_
+# <a name="mdm_policy_user_result01_education02-class"></a>Clase Mdm \_ Policy \_ User \_ Result01 \_ Education02
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La \_ clase Result01 de usuario de directiva de MDM \_ \_ \_ Education02 representa las directivas de educación.
+La clase Mdm \_ Policy \_ User \_ Result01 \_ Education02 representa las directivas de educación.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -48,13 +48,13 @@ class MDM_Policy_User_Result01_Education02
 
 ## <a name="members"></a>Miembros
 
-La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ Education02** tiene estos tipos de miembros:
+La **clase Mdm Policy User \_ \_ \_ Result01 \_ Education02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ Education02** tiene estas propiedades.
+La **clase Mdm Policy User \_ \_ \_ Result01 \_ Education02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -64,7 +64,7 @@ La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ Education02** tie
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -78,7 +78,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -92,7 +92,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -103,7 +103,7 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -114,7 +114,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -123,12 +123,12 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

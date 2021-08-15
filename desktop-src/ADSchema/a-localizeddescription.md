@@ -4,7 +4,7 @@ description: El identificador de localización y el nombre para mostrar de un ob
 ms.assetid: 22c0df15-8245-49c6-b5ca-57ac48b57c3a
 ms.tgt_platform: multiple
 keywords:
-- Localized-Description esquema de AD de atributo
+- Localized-Description esquema de AD del atributo
 - esquema de AD del atributo localizedDescription
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ El identificador de localización y el nombre para mostrar de un objeto.
 | CN                | Localized-Description                       |
 | Ldap-Display-Name | localizedDescription                        |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.817                      |
 | System-Id-Guid    | d9e18316-8939-11d1-aebc-0000f80367c1        |

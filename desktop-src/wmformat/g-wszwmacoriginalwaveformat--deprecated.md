@@ -1,9 +1,9 @@
 ---
-title: g_wszWMACOriginalWaveFormat (Wmcodecdsp. h)
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | g_wszWMACOriginalWaveFormat (Wmcodecdsp. h)
+title: g_wszWMACOriginalWaveFormat (Wmcodecdsp.h)
+description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | g_wszWMACOriginalWaveFormat (Wmcodecdsp.h)
 ms.assetid: 5d4f727c-c58c-4d66-8140-469cb24b3b0e
 keywords:
-- g_wszWMACOriginalWaveFormat formato de Windows Media
+- g_wszWMACOriginalWaveFormat windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6561be1384d895ac42e4420ebe22bcd5c8d03df7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e9af9499588870bf23008d6ac99b7ac57c7c4f321046968c23108804a3b24f12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447375"
 ---
 # <a name="g_wszwmacoriginalwaveformat"></a>g \_ wszWMACOriginalWaveFormat
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Para obtener la documentación actual sobre los códecs de Windows Media y los p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

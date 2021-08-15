@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectUnorderedAccessViewVariable GetUnorderedAccessView (D3dx11effect. h)
-description: Obtiene una vista de acceso sin ordenar.
+title: Método ID3DX11EffectUnorderedAccessViewVariable GetUnorderedAccessView (D3dx11effect.h)
+description: Obtenga una vista unordered-access-view.
 ms.assetid: 46f61c4f-b3ee-4058-99b9-a43ca6944fb2
 keywords:
 - Método GetUnorderedAccessView Direct3D 11
-- Método GetUnorderedAccessView Direct3D 11, interfaz ID3DX11EffectUnorderedAccessViewVariable
-- Interfaz ID3DX11EffectUnorderedAccessViewVariable Direct3D 11, método GetUnorderedAccessView
+- Método GetUnorderedAccessView Direct3D 11 , interfaz ID3DX11EffectUnorderedAccessViewVariable
+- Interfaz ID3DX11EffectUnorderedAccessViewVariable Direct3D 11 , Método GetUnorderedAccessView
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7743d15c2380ff4e38bdcae1d38bbd8905cbccda
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 02ccb890d7f03a2066cb7e01633f057e821e34c74521e1bba37f9694ba72a194
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676785"
 ---
-# <a name="id3dx11effectunorderedaccessviewvariablegetunorderedaccessview-method"></a>ID3DX11EffectUnorderedAccessViewVariable:: GetUnorderedAccessView (método)
+# <a name="id3dx11effectunorderedaccessviewvariablegetunorderedaccessview-method"></a>Método ID3DX11EffectUnorderedAccessViewVariable::GetUnorderedAccessView
 
-Obtiene una vista de acceso sin ordenar.
+Obtenga una vista unordered-access-view.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ HRESULT GetUnorderedAccessView(
 
 Tipo: **[ **ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview)\*\***
 
-Puntero a un puntero [**ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview) que se establecerá en la devolución.
+Puntero a un [**puntero ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview) que se establecerá en la devolución.
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Puntero a un puntero [**ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,12 +71,12 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

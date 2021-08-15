@@ -26,7 +26,7 @@ ms.locfileid: "119694015"
 ---
 # <a name="mdm_policy_user_config01_printers02-class"></a>Clase Mdm \_ Policy \_ User \_ Config01 \_ Printers02
 
-\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 La clase MDM \_ Policy \_ User \_ Config01 \_ Printers02 representa las directivas de impresora disponibles.
 
@@ -65,7 +65,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -79,12 +79,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
 
-[Usuario PointAndPrintRestrictions \_](/windows/client-management/mdm/policy-csp-printers#printers-pointandprintrestrictions-user)
+[PointAndPrintRestrictions \_ (usuario)](/windows/client-management/mdm/policy-csp-printers#printers-pointandprintrestrictions-user)
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**

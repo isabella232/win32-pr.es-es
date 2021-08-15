@@ -1,6 +1,6 @@
 ---
-title: UI_ANIMATION_SECONDS_EVENTUALLY (UIAnimation. h)
-description: Indica que la animación de Windows puede retrasar el inicio programado de un guión gráfico en tanto tiempo como sea necesario para evitar conflictos de programación.
+title: UI_ANIMATION_SECONDS_EVENTUALLY (UIAnimation.h)
+description: Indica que Windows animación puede retrasar el inicio programado de un guión gráfico durante tanto tiempo como sea necesario para evitar conflictos de programación.
 ms.assetid: 9971A612-69D7-49AB-8865-B8F29C4CD4C8
 topic_type:
 - apiref
@@ -12,22 +12,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22448287599707b10de147224047525745b072c2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 066bfdc879edf234209532080d23ca3fe813b9218cebc7fba99710bc1ca61acf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058172"
 ---
-# <a name="ui_animation_seconds_eventually"></a>\_segundos de animación de la interfaz de usuario \_ \_
+# <a name="ui_animation_seconds_eventually"></a>FINALMENTE, \_ LOS SEGUNDOS DE ANIMACIÓN DE LA INTERFAZ DE \_ \_ USUARIO
 
-Indica que la animación de Windows puede retrasar el inicio programado de un guión gráfico en tanto tiempo como sea necesario para evitar conflictos de programación.
+Indica que Windows animación puede retrasar el inicio programado de un guión gráfico durante tanto tiempo como sea necesario para evitar conflictos de programación.
 
 
 
 | Constante o valor                                                                                                                                                                                                                                                                  | Descripción                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------|
-| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <dt>**Interfaz de usuario \_ Segundos de animación \_ \_ finalmente**</dt> <dt>-1,0</dt> </dl> | \_segundos de animación de IU \_<br/> |
+| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <dt>**Interfaz de usuario \_ SEGUNDOS \_ DE \_ ANIMACIÓN FINALMENTE**</dt> <dt>-1,0</dt> </dl> | SEGUNDOS DE \_ ANIMACIÓN DE LA INTERFAZ DE \_ USUARIO<br/> |
 
 
 
@@ -35,16 +35,16 @@ Indica que la animación de Windows puede retrasar el inicio programado de un gu
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y actualización de plataforma solo para aplicaciones de escritorio de Windows 7 \[\]<br/>    |
+| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y Actualización de plataforma solo para Windows 7 \[ aplicaciones de escritorio\]<br/>    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
-| Encabezado<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

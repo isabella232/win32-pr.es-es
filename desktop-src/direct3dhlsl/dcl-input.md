@@ -1,6 +1,6 @@
 ---
-title: dcl_input (SM4-ASM)
-description: '\_entrada de DCL (SM4-ASM)'
+title: dcl_input (sm4 - asm)
+description: entrada dcl \_ (sm4 - asm)
 ms.assetid: 13456f2a-ee6c-42da-a9fe-670ab0fcbddf
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 400a1d47b6e0f9d82ec662553c36629deb4b1f0b
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3242c2f1e753407d239057fdc4af0a6f04d6d83a66e2a22ffb1be929583c21c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104996981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986745"
 ---
-# <a name="dcl_input-sm4---asm"></a>\_entrada de DCL (SM4-ASM)
+# <a name="dcl_input-sm4---asm"></a>entrada dcl \_ (sm4 - asm)
 
 Declara un registro de entrada de sombreador.
 
 
 
-| \_entrada de DCL v *N \[ . Mask \] \[ , \] interpolationMode* |
+| dcl \_ input v N *\[ .mask , \] \[ interpolationMode \]* |
 |-------------------------------------------------|
 
 
@@ -44,22 +44,22 @@ Declara un registro de entrada de sombreador.
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="vN_.mask_"></span><span id="vn_.mask_"></span><span id="VN_.MASK_"></span>v<em>N [. Mask]</em><br/></td>
-<td>de Un registro de datos de vértice. <br/>
+<td><span id="vN_.mask_"></span><span id="vn_.mask_"></span><span id="VN_.MASK_"></span>v<em>N[.mask]</em><br/></td>
+<td>[in] Registro de datos de vértice. <br/>
 <ul>
 <li><em>N</em> es un entero que identifica el número de registro.</li>
-<li><em>[. Mask]</em> es una máscara de componente opcional (. xyzw) que especifica cuál de los componentes de registro se va a usar.</li>
+<li><em>[.mask] es</em> una máscara de componente opcional (.xyzw) que especifica cuál de los componentes de registro se va a usar.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><span id="interpolationMode"></span><span id="interpolationmode"></span><span id="INTERPOLATIONMODE"></span><em>interpolationMode</em><br/></td>
-<td>[in] Opcional. El modo de interpolación, que solo se admite en los registros de entrada del sombreador de píxeles. Puede ser uno de los siguientes valores: <br/>
+<td>[in] Opcional. Modo de interpolación, que solo se respeta en los registros de entrada del sombreador de píxeles. Puede ser uno de los siguientes valores: <br/>
 <ul>
-<li>constante: no se interpola entre los valores de registro.</li>
-<li>lineal: interpolación lineal entre valores de registro.</li>
-<li>linearCentroid: igual que lineal, pero centroide en el muestreo múltiple.</li>
+<li>constant: no interpola entre los valores de registro.</li>
+<li>linear: interpola linealmente entre los valores de registro.</li>
+<li>linearCentroid: igual que lineal pero centroide fija al multimuestreo.</li>
 <li>linearNoperspective: igual que lineal pero sin corrección de perspectiva.</li>
-<li>linearNoperspectiveCentroid: igual que lineal, centroide se fija al muestreo múltiple, sin corrección de perspectiva.</li>
+<li>linearNoperspectiveCentroid: igual que lineal, centroide con fijación cuando se multimuestreo, sin corrección de perspectiva.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -71,9 +71,9 @@ Declara un registro de entrada de sombreador.
 
 ### <a name="interpolation-notes"></a>Notas de interpolación
 
-De forma predeterminada, los atributos de vértice se interpolan desde un centro de píxeles al realizar el suavizado de contorno de muestreo. Si no se trata de un centro de píxeles, se extrapola un atributo a un centro de píxeles antes de la interpolación.
+De forma predeterminada, los atributos de vértice se interpolan desde un centro de píxeles al realizar suavizado de contorno de múltiples muestras. Si no se cubre un centro de píxeles, un atributo se extrapola a un centro de píxeles antes de la interpolación.
 
-En el caso de un píxel que no esté totalmente cubierto o de un atributo que no cubra un centro de píxeles, puede especificar el muestreo centroide, que fuerza el muestreo para que se produzca en algún lugar dentro del área cubierta del píxel. Dado que se aplica una máscara de ejemplo (si se usa) antes de que se calcule centroide, cualquier ubicación de ejemplo enmascarada por la máscara de ejemplo no se puede elegir como una ubicación de centroide.
+Para un píxel que no está totalmente cubierto o un atributo que no cubre un centro de píxeles, puede especificar el muestreo de centroide que obliga a que el muestreo se produzca en algún lugar dentro del área cubierta del píxel. Dado que se aplica una máscara de ejemplo (si se usa) antes de calcular el centroide, no se puede elegir ninguna ubicación de ejemplo enmascarada por la máscara de ejemplo como ubicación de centroide.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -87,13 +87,13 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Para identificar la entrada como un valor del sistema, use [DCL \_ Input \_ SV (SM4-ASM)](dcl-input-sv.md).
+Para identificar la entrada como un valor del sistema, use [dcl \_ input sv \_ (sm4 - asm).](dcl-input-sv.md)
 
-Esta instrucción se incluye para ayudar en la depuración de un sombreador en el ensamblado. no se puede crear un sombreador en lenguaje de ensamblado con el modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
-Estos son algunos ejemplos.
+A continuación se muestran algunos ejemplos.
 
 
 ```
@@ -104,7 +104,7 @@ dcl_input v0.x, linearCentroid
 
 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -112,12 +112,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -127,7 +127,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -1,13 +1,13 @@
-- name: Multimedia de Windows
+- name: Windows Multimedia
   href: windows-multimedia-start-page.md
   items:
-    - name: MCI
+    - name: Mci
       href: mci.md
       items:
         - name: Acerca de MCI
           href: about-mci.md
           items:
-            - name: Mensajes y cadenas de comandos MCI
+            - name: Mensajes y cadenas de comandos de MCI
               href: mci-command-strings-and-messages.md
               items:
                 - name: Cadenas de comandos
@@ -16,16 +16,16 @@
                   href: command-messages.md
             - name: Clasificaciones de comandos MCI
               href: classifications-of-mci-commands.md
-            - name: 'Funciones MCI, macros y mensajes'
+            - name: 'Funciones, macros y mensajes de MCI'
               href: mci-functions-macros-and-messages.md
-            - name: 'Marcas wait, Notify y test'
+            - name: 'Las marcas Wait, Notify y Test'
               href: the-wait-notify-and-test-flags.md
               items:
-                - name: Marca de espera
+                - name: La marca wait
                   href: the-wait-flag.md
-                - name: Marca de notificación
+                - name: La marca Notify
                   href: the-notify-flag.md
-                - name: Marca de prueba
+                - name: La marca de prueba
                   href: the-test-flag.md
             - name: Métodos abreviados de comandos y variaciones
               href: command-shortcuts-and-variations.md
@@ -34,28 +34,28 @@
               items:
                 - name: Control de dispositivos
                   href: device-control.md
-                - name: Reproducir y colocar
+                - name: Reproducción y posicionamiento
                   href: playback-and-positioning.md
-                - name: Tipos de dispositivos
+                - name: Tipos de dispositivo
                   href: device-types.md
                 - name: Nombres de dispositivo
                   href: device-names.md
-                - name: Compatibilidad con controladores para comandos MCI
+                - name: Compatibilidad del controlador con comandos MCI
                   href: driver-support-for-mci-commands.md
                 - name: Comportamiento predeterminado de los controladores
                   href: default-behavior-of-drivers.md
             - name: Trabajar con dispositivos MCI
               href: working-with-mci-devices.md
               items:
-                - name: Apertura de un dispositivo
+                - name: Abrir un dispositivo
                   href: opening-a-device.md
-                - name: Recuperación de información acerca de un dispositivo
+                - name: Recuperar información sobre un dispositivo
                   href: retrieving-information-about-a-device.md
-                - name: Obtención de información del sistema MCI
+                - name: Obtención de MCI Información del sistema
                   href: obtaining-mci-system-information.md
                 - name: Reproducir un dispositivo
                   href: playing-a-device.md
-                - name: Grabando
+                - name: Grabación
                   href: recording.md
                 - name: 'Detener, pausar y reanudar un dispositivo'
                   href: stopping-pausing-and-resuming-a-device.md
@@ -66,29 +66,29 @@
               items:
                 - name: MCIAVI
                   href: mciavi.md
-                - name: Servicios de VCR
+                - name: VCR Services
                   href: vcr-services.md
-            - name: Device-Specific conjuntos de comandos
+            - name: Device-Specific de comandos
               href: device-specific-command-sets.md
               items:
                 - name: Conjunto de comandos de audio de CD
                   href: cd-audio-command-set.md
                 - name: Digital-Video conjunto de comandos
                   href: digital-video-command-set.md
-                - name: Conjunto de comandos del secuenciador de MIDI
+                - name: Conjunto de comandos de secuenciador de MIDI
                   href: midi-sequencer-command-set.md
-                - name: Conjunto de comandos VCR
+                - name: Conjunto de comandos vcr
                   href: vcr-command-set.md
-                - name: Conjunto de comandos VideoDisc
+                - name: Conjunto de comandos videodisc
                   href: videodisc-command-set.md
                 - name: Video-Overlay conjunto de comandos
                   href: video-overlay-command-set.md
                 - name: Waveform-Audio conjunto de comandos
                   href: waveform-audio-command-set.md
-        - name: Uso de cadenas de comandos MCI
+        - name: Uso de cadenas de comandos de MCI
           href: using-mci-command-strings.md
           items:
-            - name: Enviar un comando
+            - name: Envío de un comando
               href: sending-a-command.md
             - name: Abrir varios archivos AVI
               href: opening-multiple-avi-files.md
@@ -101,17 +101,17 @@
           items:
             - name: Cerrar todos los dispositivos MCI usados por una aplicación
               href: closing-all-mci-devices-used-by-an-application.md
-            - name: Apertura de un dispositivo sencillo mediante el nombre del dispositivo
+            - name: Abrir un dispositivo simple mediante el nombre del dispositivo
               href: opening-a-simple-device-by-using-the-device-name.md
-            - name: Apertura de un dispositivo sencillo mediante el Device-Type constante
+            - name: Abrir un dispositivo simple mediante la Device-Type constante
               href: opening-a-simple-device-by-using-the-device-type-constant.md
-            - name: Apertura de un dispositivo compuesto con el nombre de archivo
+            - name: Abrir un dispositivo compuesto mediante el nombre de archivo
               href: opening-a-compound-device-by-using-the-filename.md
-            - name: Comprobando el dispositivo de salida
+            - name: Comprobación del dispositivo de salida
               href: verifying-the-output-device.md
             - name: Control de errores de MCI
               href: handling-mci-errors.md
-            - name: Reproducir un archivo de Waveform-Audio
+            - name: Reproducción de un Waveform-Audio archivo
               href: playing-a-waveform-audio-file.md
             - name: Reproducir un archivo MIDI
               href: playing-a-midi-file.md
@@ -124,7 +124,7 @@
                   href: opening-the-playback-window.md
                 - name: Configuración de la ventana de reproducción
                   href: setting-up-the-playback-window.md
-                - name: Reproducir el archivo AVI
+                - name: Reproducción del archivo AVI
                   href: playing-the-avi-file.md
             - name: Cambiar la posición actual
               href: changing-the-current-position.md
@@ -132,45 +132,45 @@
               href: setting-the-time-format.md
             - name: Cambiar la sincronización del secuenciador
               href: changing-sequencer-synchronization.md
-            - name: Usar la marca de MCI_NOTIFY
+            - name: Uso de MCI_NOTIFY flag
               href: using-the-mci-notify-flag.md
             - name: Recuperar información sobre una película
               href: retrieving-information-about-a-movie.md
-            - name: Recuperación de la información de Track-Specific de CD
+            - name: Recuperación de información de disco Track-Specific Compact
               href: retrieving-compact-disc-track-specific-information.md
-            - name: Grabar con un dispositivo Waveform-Audio
+            - name: Grabación con un Waveform-Audio remoto
               href: recording-with-a-waveform-audio-device.md
         - name: Referencia de MCI
           href: mci-reference.md
           items:
-            - name: Funciones MCI
+            - name: Funciones de MCI
               href: mci-functions.md
             - name: Estructuras de MCI
               href: mci-structures.md
             - name: Mensajes de MCI
               href: mci-messages.md
-            - name: Macros MCI
+            - name: MCI Macros
               href: mci-macros.md
-            - name: Comandos MCI
+            - name: Comandos de MCI
               href: mci-commands.md
-            - name: Cadenas de comandos MCI
+            - name: Cadenas de comandos de MCI
               href: mci-command-strings.md
-    - name: Clase de ventana MCIWnd
+    - name: Clase Window de MCIWnd
       href: mciwnd-window-class.md
       items:
-        - name: Acerca de la clase de ventana MCIWnd
+        - name: Acerca de la clase window MCIWnd
           href: about-the-mciwnd-window-class.md
           items:
-            - name: Interfaz de usuario de la ventana MCIWnd
+            - name: Ventana de MCIWnd Interfaz de usuario
               href: mciwnd-window-user-interface.md
             - name: Reproducción multimedia
               href: multimedia-playback.md
               items:
                 - name: Agregar User-Controlled reproducción
                   href: adding-user-controlled-playback.md
-                - name: Automatizar la reproducción
+                - name: Automatización de la reproducción
                   href: automating-playback.md
-                - name: Usar estilos de ventana para cambiar la ventana de MCIWnd
+                - name: Usar estilos de ventana para cambiar la ventana MCIWnd
                   href: using-window-styles-to-change-the-mciwnd-window.md
                 - name: Permitir al usuario especificar dispositivos y archivos
                   href: allowing-the-user-to-specify-devices-and-files.md
@@ -179,11 +179,11 @@
               items:
                 - name: Determinar y cambiar la posición actual
                   href: determining-and-changing-the-current-position.md
-                - name: 'Iniciar, pausar y reanudar la reproducción'
+                - name: 'Inicio, pausa y reanudación de la reproducción'
                   href: starting-pausing-and-resuming-playback.md
-                - name: Definir el ámbito de reproducción
+                - name: Definición del ámbito de reproducción
                   href: defining-playback-scope.md
-                - name: Invertir reproducción
+                - name: Invertir la reproducción
                   href: reversing-playback.md
                 - name: Reproducción en bucle
                   href: looping-playback.md
@@ -191,20 +191,20 @@
               href: multimedia-recording.md
             - name: Guardar contenido grabado
               href: saving-recorded-content.md
-            - name: Mejoras en la reproducción
+            - name: Mejoras de reproducción
               href: playback-enhancements.md
               items:
-                - name: Especificar formatos de hora
+                - name: Especificar formatos de tiempo
                   href: specifying-time-formats.md
                 - name: 'Ajustar la velocidad, el volumen y el zoom'
                   href: adjusting-speed--volume--and-zoom.md
-                - name: Proporcionar controles para recortar y ajustar imágenes
+                - name: Proporcionar controles para recortar y extender imágenes
                   href: providing-controls-for-cropping-and-stretching-images.md
-                - name: Usar las paletas MCIWnd
+                - name: Uso de paletas MCIWnd
                   href: using-mciwnd-palettes.md
                 - name: Proporcionar actualizaciones de estado
                   href: providing-status-updates.md
-                - name: Usar una interfaz de varios documentos
+                - name: Uso de una interfaz de varios documentos
                   href: using-a-multiple-document-interface.md
             - name: Mensajes de error y notificaciones
               href: error-messages-and-notifications.md
@@ -215,26 +215,26 @@
                   href: communication-with-mci-devices.md
                 - name: Funcionalidades del dispositivo MCI
                   href: mci-device-capabilities.md
-        - name: Usar la clase de ventana MCIWnd
+        - name: Uso de la clase Window de MCIWnd
           href: using-the-mciwnd-window-class.md
           items:
             - name: Crear una ventana de MCIWnd
               href: creating-an-mciwnd-window.md
-            - name: Automatizar la reproducción de MCIWnd
+            - name: Automatización de la reproducción para MCIWnd
               href: automating-playback-for-mciwnd.md
             - name: Pausar y reanudar la reproducción
               href: pausing-and-resuming-playback.md
             - name: Limitar el ámbito de reproducción
               href: limiting-the-playback-scope.md
-            - name: Grabar con controles MCIWnd
+            - name: Grabación con controles MCIWnd
               href: recording-with-mciwnd-controls.md
             - name: Personalización del proceso de grabación
               href: customizing-the-recording-process.md
             - name: Recortar una imagen
               href: cropping-an-image.md
-            - name: Ajustar una imagen
+            - name: Stretching an Image
               href: stretching-an-image.md
-            - name: Ajustar una imagen y una ventana
+            - name: Stretching an Image and Window
               href: stretching-an-image-and-window.md
         - name: Referencia de MCIWnd
           href: mciwnd-reference.md
@@ -243,53 +243,53 @@
               href: mciwnd-functions.md
             - name: Mensajes MCIWnd
               href: mciwnd-messages.md
-            - name: Macros MCIWnd
+            - name: MCIWnd Macros
               href: mciwnd-macros.md
-    - name: Audio multimedia
+    - name: Multimedia Audio
       href: multimedia-audio.md
       items:
         - name: Administrador de compresión de audio
           href: audio-compression-manager.md
           items:
-            - name: Acerca del administrador de compresión de audio
+            - name: Acerca del Administrador de compresión de audio
               href: about-the-audio-compression-manager.md
               items:
-                - name: Asignación de dispositivos Waveform-Audio
+                - name: Asignación de Waveform-Audio dispositivos
                   href: mapping-waveform-audio-devices.md
-                - name: Cómo funciona el administrador de compresión de audio
+                - name: Funcionamiento del Administrador de compresión de audio
                   href: how-the-audio-compression-manager-works.md
-                - name: Funciones y estructuras del administrador de compresión de audio
+                - name: Funciones y estructuras del Administrador de compresión de audio
                   href: audio-compression-manager-functions-and-structures.md
                 - name: Funciones llamadas por el sistema
                   href: functions-called-by-the-system.md
-            - name: Usar el administrador de compresión de audio
+            - name: Uso del Administrador de compresión de audio
               href: using-the-audio-compression-manager.md
               items:
                 - name: Recuperar una cadena que describe un filtro
                   href: retrieving-a-string-that-describes-a-filter.md
                 - name: Generar un cuadro de diálogo para seleccionar un filtro
                   href: producing-a-dialog-box-for-selecting-a-filter.md
-                - name: Generar un cuadro de diálogo para seleccionar un tipo de formato específico
+                - name: Generar un cuadro de diálogo para seleccionar un tipo específico de formato
                   href: producing-a-dialog-box-for-selecting-a-specific-type-of-format.md
                 - name: Generar un cuadro de diálogo para seleccionar formatos restringidos
                   href: producing-a-dialog-box-for-selecting-restricted-formats.md
                 - name: Generar un cuadro de diálogo para seleccionar un formato para guardar
                   href: producing-a-dialog-box-for-selecting-a-format-for-saving.md
-                - name: Generar un cuadro de diálogo para seleccionar un formato para la grabación
+                - name: Generar un cuadro de diálogo para seleccionar un formato de grabación
                   href: producing-a-dialog-box-for-selecting-a-format-for-recording.md
                 - name: Convertir datos de un formato a otro
                   href: converting-data-from-one-format-to-another.md
-                - name: Conversión de formato multipaso
+                - name: Conversión de formato de varios pasos
                   href: multistep-format-conversion.md
                 - name: Buscar un formato específico
                   href: finding-a-specific-format.md
-                - name: Búsqueda de un controlador específico
+                - name: Buscar un controlador específico
                   href: finding-a-specific-driver.md
                 - name: Agregar controladores dentro de una aplicación
                   href: adding-drivers-within-an-application.md
                 - name: Generar un formato no estándar
                   href: generating-a-nonstandard-format.md
-            - name: Referencia del administrador de compresión de audio
+            - name: Referencia del Administrador de compresión de audio
               href: audio-compression-manager-reference.md
               items:
                 - name: Funciones de compresión de audio
@@ -304,14 +304,14 @@
             - name: Acerca de los mezcladores de audio
               href: about-audio-mixers.md
               items:
-                - name: Arquitectura de mezclador
+                - name: Mixer Arquitectura
                   href: mixer-architecture.md
                 - name: Tipos de controles
                   href: control-types.md
                   items:
-                    - name: Controles personalizados del mezclador de audio
+                    - name: Controles personalizados Mixer audio
                       href: audio-mixer-custom-controls.md
-                    - name: Atenua
+                    - name: Faders
                       href: faders.md
                     - name: Listas
                       href: lists.md
@@ -321,13 +321,13 @@
                       href: numbers.md
                     - name: Controles deslizantes
                       href: sliders.md
-                    - name: Conmutadores
+                    - name: Modificadores
                       href: switches.md
                     - name: Controles de tiempo
                       href: time-controls.md
-                - name: Consultas de dispositivos de mezclador
+                - name: Mixer Consultas de dispositivos
                   href: mixer-device-queries.md
-                - name: Abrir y cerrar dispositivos de mezclador
+                - name: Apertura y cierre de Mixer dispositivos
                   href: opening-and-closing-mixer-devices.md
                 - name: Servicios de devolución de llamada de ventana
                   href: window-callback-services.md
@@ -335,14 +335,14 @@
                   href: audio-line-and-control-queries.md
                 - name: Mezcladores de audio en Windows Vista
                   href: audio-mixers-in-windows-vista.md
-            - name: Referencia del mezclador de audio
+            - name: Referencia de Mixer audio
               href: audio-mixer-reference.md
               items:
-                - name: Funciones del mezclador de audio
+                - name: Funciones de Mixer audio
                   href: audio-mixer-functions.md
-                - name: Estructuras de mezclador de audio
+                - name: Estructuras de Mixer audio
                   href: audio-mixer-structures.md
-                - name: Mensajes de mezclador de audio
+                - name: Mensajes de Mixer audio
                   href: audio-mixer-messages.md
         - name: Interfaz digital de instrumentos digitales (MIDI)
           href: musical-instrument-digital-interface--midi.md
@@ -350,26 +350,26 @@
             - name: Acerca de MIDI
               href: about-midi.md
               items:
-                - name: El asignador MIDI
+                - name: Asignador de MIDI
                   href: the-midi-mapper.md
                   items:
-                    - name: El asignador de MIDI y Windows
+                    - name: El asignador y el Windows
                       href: the-midi-mapper-and-windows.md
-                    - name: Arquitectura del asignador MIDI
+                    - name: Arquitectura del asignador de MIDI
                       href: the-midi-mapper-architecture.md
-                    - name: Asignación de canal
+                    - name: Mapa de canal
                       href: the-channel-map.md
-                    - name: Mapas de revisiones
+                    - name: Aplicación de Mapas
                       href: patch-maps.md
-                    - name: El volumen escalar
+                    - name: Escalar de volumen
                       href: the-volume-scalar.md
-                    - name: Mapas de claves
+                    - name: Clave Mapas
                       href: key-maps.md
-                    - name: Resumen de mapas y mensajes MIDI
+                    - name: Resumen de mensajes Mapas y MIDI
                       href: summary-of-maps-and-midi-messages.md
-                - name: Media control Interface (MCI)
+                - name: Interfaz de control multimedia (MCI)
                   href: media-control-interface--mci.md
-                - name: Búferes de secuencia
+                - name: Búferes de flujo
                   href: stream-buffers.md
                   items:
                     - name: Formato de búfer de secuencia
@@ -378,130 +378,130 @@
                       href: timing-information.md
                     - name: Tipos de eventos MIDI
                       href: midi-event-types.md
-                    - name: Flujos MIDI
+                    - name: Secuencias DE MIDI
                       href: midi-streams.md
-                - name: Servicios MIDI
+                - name: Servicios DE MIDI
                   href: midi-services.md
                   items:
                     - name: Consulta de dispositivos MIDI
                       href: querying-midi-devices.md
-                    - name: Abrir y cerrar controladores de dispositivos
+                    - name: Apertura y cierre de controladores de dispositivos
                       href: opening-and-closing-device-drivers.md
-                    - name: Asignación y preparación de bloques de datos MIDI
+                    - name: Asignación y preparación de bloques de datos DE MIDI
                       href: allocating-and-preparing-midi-data-blocks.md
-                    - name: Administrar bloques de datos MIDI
+                    - name: Administración de bloques de datos DE MIDI
                       href: managing-midi-data-blocks.md
-                    - name: Solicitar formatos de hora
+                    - name: Solicitar formatos de tiempo
                       href: requesting-time-formats.md
-                    - name: Control de errores con funciones MIDI
+                    - name: Control de errores con funciones de MIDI
                       href: handling-errors-with-midi-functions.md
                 - name: Reproducir archivos MIDI
                   href: playing-midi-files.md
                   items:
-                    - name: Tipos de datos de salida MIDI
+                    - name: Tipos de datos de salida DE MIDI
                       href: midi-output-data-types.md
-                    - name: Consulta de dispositivos de salida MIDI
+                    - name: Consulta de dispositivos de salida de MIDI
                       href: querying-midi-output-devices.md
-                    - name: Abrir dispositivos de salida MIDI
+                    - name: Apertura de dispositivos de salida DE MIDI
                       href: opening-midi-output-devices.md
                     - name: Envío de mensajes MIDI con búferes de secuencia
                       href: sending-midi-messages-with-stream-buffers.md
-                    - name: Envío de mensajes MIDI individuales
+                    - name: Envío de mensajes INDIVIDUALES DE MIDI
                       href: sending-individual-midi-messages.md
-                    - name: Envío de mensajes de System-Exclusive
+                    - name: Envío de System-Exclusive mensajes
                       href: sending-system-exclusive-messages.md
-                    - name: Usar una ventana o subproceso para administrar la reproducción almacenada en búfer
+                    - name: Usar una ventana o un subproceso para administrar la reproducción en búfer
                       href: using-a-window-or-thread-to-manage-buffered-playback.md
-                    - name: Usar una función de devolución de llamada para administrar la reproducción almacenada en búfer
+                    - name: Usar una función de devolución de llamada para administrar la reproducción en búfer
                       href: using-a-callback-function-to-manage-buffered-playback.md
-                    - name: Usar una devolución de llamada de evento para administrar la reproducción almacenada en búfer
+                    - name: Usar una devolución de llamada de eventos para administrar la reproducción en búfer
                       href: using-an-callback-to-manage-buffered-playback.md
-                    - name: Restablecimiento de la salida MIDI
+                    - name: Restablecimiento de la salida DE MIDI
                       href: resetting-midi-output.md
-                    - name: Cambiar el volumen del sintetizador MIDI interno
+                    - name: Cambiar el volumen interno del síntesis DE MIDI
                       href: changing-internal-midi-synthesizer-volume.md
-                    - name: Carga previa de revisiones con sintetizadores MIDI internos
+                    - name: Precarga de revisiones con síntesis INTERNA DE MIDI
                       href: preloading-patches-with-internal-midi-synthesizers.md
                 - name: Grabación de audio MIDI
                   href: recording-midi-audio.md
                   items:
-                    - name: Tipos de datos de entrada MIDI
+                    - name: Tipos de datos de entrada DE MIDI
                       href: midi-input-data-types.md
-                    - name: Consulta de dispositivos de entrada MIDI
+                    - name: Consulta de dispositivos de entrada DE LÍNEA
                       href: querying-midi-input-devices.md
-                    - name: Apertura de dispositivos de entrada MIDI
+                    - name: Apertura de dispositivos de entrada DE LÍNEA
                       href: opening-midi-input-devices.md
                     - name: Administración de la grabación de MIDI
                       href: managing-midi-recording.md
                     - name: Administración de MIDI a través de
                       href: managing-midi-thru.md
-                    - name: Recibir mensajes de Time-Stamped MIDI
+                    - name: Recepción Time-Stamped mensajes DE MIDI
                       href: receiving-time-stamped-midi-messages.md
-                    - name: Recibir mensajes de Running-Status
+                    - name: Recepción de Running-Status mensajes
                       href: receiving-running-status-messages.md
-                - name: Procesamiento de datos MIDI de dos orígenes MIDI
+                - name: Procesamiento de datos DE MIDI de dos orígenes DE MIDI
                   href: processing-midi-data-from-two-midi-sources.md
                 - name: Crear archivos MIDI
                   href: creating-midi-files.md
                   items:
-                    - name: Instrucciones de creación para archivos MIDI
+                    - name: Directrices de creación para archivos MIDI
                       href: authoring-guidelines-for-midi-files.md
-                    - name: Asignaciones estándar de revisión MIDI
+                    - name: Asignaciones de revisiones ESTÁNDAR DE MIDI
                       href: standard-midi-patch-assignments.md
                     - name: Asignaciones de claves MIDI estándar
                       href: standard-midi-key-assignments.md
             - name: Uso de MIDI
               href: using-midi.md
               items:
-                - name: Usar el secuenciador MIDI de MCI
+                - name: Uso del secuenciador de MCI MIDI
                   href: using-the-mci-midi-sequencer.md
                   items:
                     - name: Recuperar el tipo de división de secuencia
                       href: retrieving-the-sequence-division-type.md
-                    - name: Consultar y establecer el tempo
+                    - name: Consulta y establecimiento del tempo
                       href: querying-and-setting-the-tempo.md
-                - name: Uso de midiOutShortMsg para enviar mensajes MIDI individuales
+                - name: Uso de midiOutShortMsg para enviar mensajes INDIVIDUALES DE MIDI
                   href: using-midioutshortmsg-to-send-individual-midi-messages.md
             - name: Referencia MIDI
               href: midi-reference.md
               items:
-                - name: Funciones MIDI
+                - name: Funciones DE MIDI
                   href: midi-functions.md
-                - name: Estructuras MIDI
+                - name: Estructuras DE MIDI
                   href: midi-structures.md
-                - name: Mensajes MIDI
+                - name: Mensajes DE MIDI
                   href: midi-messages.md
-                - name: Macros MIDI
+                - name: MIDI Macros
                   href: midi-macros.md
-                - name: Tipos MIDI
+                - name: Tipos DE MIDI
                   href: midi-types.md
-        - name: Audio de onda
+        - name: Audio de forma de onda
           href: waveform-audio.md
           items:
-            - name: Acerca del audio de onda
+            - name: Acerca del audio de forma de onda
               href: about-waveform-audio.md
               items:
                 - name: Reproducción de audio simple
                   href: simple-audio-playback.md
                   items:
-                    - name: La función PlaySound
+                    - name: La función Play Sound
                       href: the-playsound-function.md
                       items:
-                        - name: Usar PlaySound para reproducir archivos de Waveform-Audio
+                        - name: Uso de Play Sound para reproducir Waveform-Audio archivos
                           href: using-playsound-to-play-waveform-audio-files.md
-                        - name: Usar PlaySound para reproducir sonidos
+                        - name: Uso de Play Sound para sonidos de bucle
                           href: using-playsound-to-loop-sounds.md
-                        - name: Usar PlaySound para reproducir sonidos del sistema
+                        - name: Uso de Play Sound para reproducir sonidos del sistema
                           href: using-playsound-to-play-system-sounds.md
-                - name: Interfaz Waveform-Audio
+                - name: Waveform-Audio interfaz
                   href: waveform-audio-interface.md
                   items:
                     - name: Dispositivos y tipos de datos
                       href: devices-and-data-types.md
-                    - name: Reproducir archivos Waveform-Audio
+                    - name: Reproducir Waveform-Audio archivos
                       href: playing-waveform-audio-files.md
                       items:
-                        - name: Uso de mensajes de ventana para administrar Waveform-Audio la reproducción
+                        - name: Uso de mensajes de ventana para administrar Waveform-Audio reproducción
                           href: using-window-messages-to-manage-waveform-audio-playback.md
                         - name: Recuperar la posición de reproducción actual
                           href: retrieving-the-current-playback-position.md
@@ -509,75 +509,75 @@
                           href: stopping-pausing-and-restarting-playback.md
                         - name: Reproducción en bucle
                           href: looping-playback-wav.md
-                        - name: Cambiar el volumen de la reproducción de Waveform-Audio
+                        - name: Cambiar el volumen de la Waveform-Audio reproducción
                           href: changing-the-volume-of-waveform-audio-playback.md
-                        - name: Cambiar la velocidad de reproducción y el tono
+                        - name: Cambiar el tono y la velocidad de reproducción
                           href: changing-pitch-and-playback-rate.md
-                    - name: Grabación de audio de onda
+                    - name: Grabación de audio de forma de onda
                       href: recording-waveform-audio.md
                       items:
-                        - name: Waveform-Audio tipos de datos de entrada
+                        - name: Waveform-Audio de datos de entrada
                           href: waveform-audio-input-data-types.md
-                        - name: Consulta de dispositivos de entrada Waveform-Audio
+                        - name: Consulta de Waveform-Audio dispositivos de entrada
                           href: querying-waveform-audio-input-devices.md
                         - name: Apertura de Waveform-Audio dispositivos de entrada
                           href: opening-waveform-audio-input-devices.md
-                        - name: Administración de la grabación de Waveform-Audio
+                        - name: Administración de Waveform-Audio grabación
                           href: managing-waveform-audio-recording.md
-                        - name: Uso de mensajes de ventana para administrar la grabación de Waveform-Audio
+                        - name: Uso de mensajes de ventana para administrar Waveform-Audio grabación
                           href: using-window-messages-to-manage-waveform-audio-recording.md
                 - name: Interfaz de audio auxiliar
                   href: auxiliary-audio-interface.md
                   items:
-                    - name: Consultar dispositivos de audio auxiliares
+                    - name: Consulta de dispositivos de audio auxiliares
                       href: querying-auxiliary-audio-devices.md
-                    - name: Cambiar el volumen de Audio-Devices auxiliares
+                    - name: Cambiar el volumen de auxiliares Audio-Devices
                       href: changing-the-volume-of-auxiliary-audio-devices.md
                 - name: Bloques de datos de audio
                   href: audio-data-blocks.md
                   items:
                     - name: Usar una función de devolución de llamada para procesar mensajes de controlador
                       href: using-a-callback-function-to-process-driver-messages.md
-                    - name: Usar una devolución de llamada de evento para procesar mensajes de controlador
+                    - name: Usar una devolución de llamada de eventos para procesar mensajes del controlador
                       href: using-an-callback-to-process-driver-messages.md
-                    - name: Usar una ventana o un subproceso para procesar mensajes de controlador
+                    - name: Usar una ventana o un subproceso para procesar mensajes del controlador
                       href: using-a-window-or-thread-to-process-driver-messages.md
-                    - name: Administrar bloques de datos mediante sondeo
+                    - name: Administración de bloques de datos mediante sondeo
                       href: managing-data-blocks-by-polling.md
                 - name: Control de errores con funciones de audio
                   href: handling-errors-with-audio-functions.md
-            - name: Uso de la interonda y el audio auxiliar
+            - name: Usar forma de onda y audio auxiliar
               href: using-waveform-and-auxiliary-audio.md
               items:
-                - name: Reproducir recursos de WAVE
+                - name: Reproducción de recursos wave
                   href: playing-wave-resources.md
-                - name: Usar la estructura WAVEFORMATEX
+                - name: Usar la estructura DESATEX
                   href: using-the-waveformatex-structure.md
                 - name: Determinar la compatibilidad con formatos no estándar
                   href: determining-nonstandard-format-support.md
-                - name: Ejemplo de escritura de datos de la creación de perfiles
+                - name: Ejemplo de escritura de datos de forma de onda
                   href: example-of-writing-waveform-data.md
-                - name: Procesar el mensaje de MM_WOM_DONE
+                - name: Procesamiento del MM_WOM_DONE mensaje
                   href: processing-the-mm-wom-done-message.md
             - name: Referencia de audio de forma de onda
               href: waveform-audio-reference.md
               items:
-                - name: Funciones de la función de onda
+                - name: Funciones de forma de onda
                   href: waveform-functions.md
-                - name: Estructuras de onda
+                - name: Estructuras de forma de onda
                   href: waveform-structures.md
-                - name: Mensajes de onda
+                - name: Mensajes de forma de onda
                   href: waveform-messages.md
     - name: Entrada multimedia
       href: multimedia-input.md
       items:
-        - name: E/s de archivos multimedia
+        - name: E/S de archivos multimedia
           href: multimedia-file-i-o.md
           items:
-            - name: Acerca de la e/s de archivos multimedia
+            - name: Acerca de la E/S de archivos multimedia
               href: about-multimedia-file-i-o.md
               items:
-                - name: Servicios de e/s de archivos multimedia
+                - name: Servicios de E/S de archivos multimedia
                   href: multimedia-file-i-o-services.md
                   items:
                     - name: Servicios básicos
@@ -588,80 +588,80 @@
                       href: resource-interchange-file-format-services.md
                     - name: Servicios personalizados
                       href: custom-services.md
-            - name: Usar e/s de archivos multimedia
+            - name: Uso de E/S de archivos multimedia
               href: using-multimedia-file-i-o.md
               items:
                 - name: Abrir un archivo con mmioOpen
                   href: opening-a-file-with-mmioopen.md
                 - name: Crear y eliminar un archivo
                   href: creating-and-deleting-a-file.md
-                - name: Buscar en una nueva posición en un archivo
+                - name: Buscar una nueva posición en un archivo
                   href: seeking-to-a-new-position-in-a-file.md
-                - name: Cambiar el tamaño del búfer de e/s
+                - name: Cambiar el tamaño del búfer de E/S
                   href: changing-the-i-o-buffer-size.md
-                - name: Obtener acceso a un búfer de e/s de archivos
+                - name: Acceso a un búfer de E/S de archivo
                   href: accessing-a-file-i-o-buffer.md
-                - name: Generar códigos de Four-Character
+                - name: Generar códigos Four-Character datos
                   href: generating-four-character-codes.md
-                - name: Crear un fragmento RIFF
+                - name: Crear un fragmento de RIFF
                   href: creating-a-riff-chunk.md
-                - name: Buscar un fragmento RIFF
+                - name: Búsqueda de un fragmento de RIFF
                   href: searching-for-a-riff-chunk.md
-                - name: Buscar un subfragmento
+                - name: Búsqueda de un subchunk
                   href: searching-for-a-subchunk.md
-                - name: Realizar e/s de archivos en archivos RIFF
+                - name: Realizar E/S de archivos en archivos RIFF
                   href: performing-file-i-o-on-riff-files.md
-                - name: Realizar e/s de archivos de memoria
+                - name: Realización de E/S de archivos de memoria
                   href: performing-memory-file-i-o.md
-                - name: Instalación de procedimientos de e/s personalizados
+                - name: Instalación de procedimientos de E/S personalizados
                   href: installing-custom-i-o-procedures.md
-                - name: Compartir un procedimiento de e/s con otras aplicaciones
+                - name: Uso compartido de un procedimiento de E/S con otras aplicaciones
                   href: sharing-an-i-o-procedure-with-other-applications.md
-            - name: Referencia de e/s de archivos multimedia
+            - name: Referencia de E/S de archivos multimedia
               href: multimedia-file-i-o-reference.md
               items:
-                - name: Funciones de e/s de archivos multimedia
+                - name: Funciones de E/S de archivos multimedia
                   href: multimedia-file-i-o-functions.md
-                - name: Estructuras de e/s de archivos multimedia
+                - name: Estructuras de E/S de archivos multimedia
                   href: multimedia-file-i-o-structures.md
-                - name: Mensajes de e/s de archivos multimedia
+                - name: Mensajes de E/S de archivos multimedia
                   href: multimedia-file-i-o-messages.md
         - name: Joysticks
           href: joysticks.md
           items:
-            - name: Acerca de los joysticks
+            - name: Acerca de los contrabandos
               href: about-joysticks.md
               items:
-                - name: Funcionalidades del joystick
+                - name: Funcionalidades de Capacidades de Capacidades
                   href: joystick-capabilities.md
-                - name: Posición del joystick
+                - name: Posición de posición
                   href: joystick-position.md
-                - name: Notificaciones de joystick
+                - name: Notificaciones de notificación de notificación
                   href: joystick-notifications.md
                   items:
-                    - name: Notificaciones de Time-Based
+                    - name: Time-Based notificaciones
                       href: time-based-notifications.md
-                    - name: Notificaciones de Event-Based
+                    - name: Event-Based notificaciones
                       href: event-based-notifications.md
-                    - name: Mensajes de notificación de joystick
+                    - name: Mensajes de notificación de notificaciones de notificaciones
                       href: joystick-notification-messages.md
-            - name: Usar joysticks
+            - name: Uso de Contrabandos
               href: using-joysticks.md
               items:
-                - name: Obtención de las capacidades del controlador
+                - name: Obtención de las funcionalidades del controlador
                   href: getting-the-driver-capabilities.md
-                - name: Captura de entradas de joystick
+                - name: Captura de entrada de entradas
                   href: capturing-joystick-input.md
-                - name: Procesamiento de mensajes de joystick
+                - name: Procesamiento de mensajes de mensajes
                   href: processing-joystick-messages.md
-            - name: Referencia de joystick
+            - name: Referencia de los puertos
               href: joystick-reference.md
               items:
-                - name: Funciones de joystick multimedia
+                - name: Funciones multimedia de multimedia
                   href: multimedia-joystick-functions.md
-                - name: Estructuras de joystick multimedia
+                - name: Estructuras multimedia
                   href: multimedia-joystick-structures.md
-                - name: Mensajes de joystick multimedia
+                - name: Mensajes multimedia multimedia
                   href: multimedia-joystick-messages.md
         - name: Temporizadores multimedia
           href: multimedia-timers.md
@@ -671,18 +671,18 @@
               items:
                 - name: Obtener la hora del sistema
                   href: obtaining-the-system-time.md
-                - name: Resolución del temporizador
+                - name: Resolución de temporizador
                   href: timer-resolution.md
                 - name: Operaciones de eventos de temporizador
                   href: timer-operations.md
-            - name: Usar temporizadores multimedia
+            - name: Uso de temporizadores multimedia
               href: using-multimedia-timers.md
               items:
                 - name: Obtener y establecer la resolución del temporizador
                   href: obtaining-and-setting-timer-resolution.md
                 - name: Iniciar un evento de temporizador único
                   href: starting-a-single-timer.md
-                - name: Escribir una función de devolución de llamada del temporizador
+                - name: Escribir una función de devolución de llamada de temporizador
                   href: writing-a-timer-callback-function.md
                 - name: Cancelar un evento de temporizador
                   href: canceling-a-timer-event.md
@@ -696,7 +696,7 @@
     - name: Vídeo para Windows
       href: video-for-windows.md
       items:
-        - name: Funciones y macros de AVIFile
+        - name: Funciones y macros AVIFile
           href: avifile-functions-and-macros.md
           items:
             - name: Acerca de las funciones y macros de AVIFile
@@ -704,80 +704,80 @@
               items:
                 - name: Tipos de datos de función y valores devueltos
                   href: function-data-types-and-return-values.md
-                - name: Operaciones de AVIFile
+                - name: Operaciones AVIFile
                   href: avifile-operations.md
                   items:
                     - name: Abrir y cerrar archivos
                       href: opening-and-closing-files.md
-                    - name: Leer de un archivo
+                    - name: Lectura desde un archivo
                       href: reading-from-a-file.md
                     - name: Escribir en un archivo
                       href: writing-to-a-file.md
-                    - name: Usar el Portapapeles con archivos AVI
+                    - name: Uso del Portapapeles con archivos AVI
                       href: using-the-clipboard-with-avi-files.md
                 - name: Operaciones con secuencias
                   href: stream-operations.md
                   items:
-                    - name: Abrir y cerrar secuencias
+                    - name: Apertura y cierre de Secuencias
                       href: opening-and-closing-streams.md
-                    - name: Leer de una secuencia
+                    - name: Lectura desde un flujo
                       href: reading-from-a-stream.md
-                    - name: Trabajar con datos de vídeo comprimidos en un flujo
+                    - name: Trabajar con datos de vídeo comprimidos en una secuencia
                       href: working-with-compressed-video-data-in-a-stream.md
-                    - name: Crear un archivo a partir de secuencias existentes
+                    - name: Crear un archivo a partir de un Secuencias
                       href: creating-a-file-from-existing-streams.md
-                    - name: Escribir secuencias en un archivo
+                    - name: Escribir Secuencias en un archivo
                       href: writing-streams-to-a-file.md
-                    - name: Colocar en secuencias
+                    - name: Posicionamiento en Secuencias
                       href: positioning-in-streams.md
-                    - name: Crear secuencias temporales
+                    - name: Creación de una Secuencias
                       href: creating-temporary-streams.md
-                    - name: Editar secuencias
+                    - name: Edición de Secuencias
                       href: editing-streams.md
-            - name: Usar las funciones y macros de AVIFile
+            - name: Uso de macros y funciones AVIFile
               href: using-avifile-functions-and-macros.md
               items:
                 - name: Abrir un archivo AVI
                   href: opening-an-avi-file.md
-                - name: Abrir secuencias en un archivo AVI y cerrar el archivo
+                - name: Abrir Secuencias en un archivo AVI y cerrar el archivo
                   href: opening-streams-in-an-avi-file-and-closing-the-file.md
-                - name: Lectura de secuencias desde un archivo AVI
+                - name: Lectura Secuencias desde un archivo AVI
                   href: reading-streams-from-an-avi-file.md
-                - name: Leer de un flujo y escribir en otro
+                - name: Lectura de una secuencia y escritura en otra
                   href: reading-from-one-stream-and-writing-to-another.md
-                - name: Usar las funciones de edición y colocar un archivo en el portapapeles
+                - name: Usar las funciones de edición y colocar un archivo en el Portapapeles
                   href: using-the-editing-functions-and-putting-a-file-on-the-clipboard.md
             - name: Referencia de AVIFile
               href: avifile-reference.md
               items:
-                - name: Funciones de AVIFile
+                - name: Funciones AVIFile
                   href: avifile-functions.md
                 - name: Estructuras AVIFile
                   href: avifile-structures.md
-                - name: Macros AVIFile
+                - name: AVIFile Macros
                   href: avifile-macros.md
         - name: Administrador de compresión de vídeo
           href: video-compression-manager.md
           items:
-            - name: Acerca del administrador de compresión de vídeo
+            - name: Acerca del Administrador de compresión de vídeo
               href: about-the-video-compression-manager.md
               items:
-                - name: VCM (arquitectura)
+                - name: Arquitectura de VCM
                   href: vcm-architecture.md
-                - name: 'Entradas del sistema para compresores, descompresores y representadores'
+                - name: 'Entradas del sistema para descompresión, descompresión y representadores'
                   href: system-entries-for-compressors-decompressors-and-renderers.md
-                - name: VCM servicios
+                - name: Servicios de VCM
                   href: vcm-services.md
                   items:
-                    - name: Aspectos básicos del compresor y el descompresor
+                    - name: Conceptos básicos de la descompresión y el descompresión
                       href: compressor-and-decompressor-basics.md
-                    - name: User-Selected compresores
+                    - name: User-Selected Descuados
                       href: user-selected-compressors.md
-                    - name: Instalación y descompresor del compresor y descompresor
+                    - name: Instalación y eliminación de descomprimir y descomprimir
                       href: compressor-and-decompressor-installation-and-removal.md
-                    - name: Configuración del compresor y descompresor
+                    - name: Configuración de descompresión y descompresión
                       href: compressor-and-decompressor-configuration.md
-                    - name: Obtener información acerca de los compresores y descompresores
+                    - name: Obtención de información sobre los descomprimores y los descompresores
                       href: getting-information-about-compressors-and-decompressors.md
                     - name: Single-Image compresión
                       href: single-image-compression.md
@@ -785,40 +785,40 @@
                       href: sequence-compression.md
                     - name: Image-Data compresión
                       href: image-data-compression.md
-                    - name: Descompresión de Single-Image
+                    - name: Single-Image descompresión
                       href: single-image-decompression.md
-                    - name: Descompresión de Image-Data
+                    - name: Image-Data descompresión
                       href: image-data-decompression.md
-                    - name: Supervisar el progreso de los compresores y descompresores
+                    - name: Supervisar el progreso de los descompresores y descomprimir
                       href: monitoring-the-progress-of-compressors-and-decompressors.md
-                    - name: Capacidades de dibujo de hardware
+                    - name: Funcionalidades de dibujo de hardware
                       href: hardware-drawing-capabilities.md
-            - name: Usar el administrador de compresión de vídeo
+            - name: Uso del Administrador de compresión de vídeo
               href: using-the-video-compression-manager.md
               items:
-                - name: Buscar y abrir compresores y descompresores
+                - name: Búsqueda y apertura de descomprimores y descompresión
                   href: locating-and-opening-compressors-and-decompressors.md
-                - name: Instalar compresores y descompresores
+                - name: Instalación de decompresores y descompresión
                   href: installing-compressors-and-decompressors.md
-                - name: Configuración de compresores y descompresores
+                - name: Configuración de descompresión y descompresión
                   href: configuring-compressors-and-decompressors.md
-                - name: Obtener información acerca de los compresores y descompresores
+                - name: Obtener información sobre los descomprimores y los descomprimir
                   href: obtaining-information-about-compressors-and-decompressors.md
-                - name: Determinar el formato de salida de un compresor
+                - name: Determinar el formato de salida de un resalte
                   href: determining-a-compressors-output-format.md
                 - name: Comprimir datos
                   href: compressing-data.md
-                - name: Determinar el formato de salida de un descompresor
+                - name: Determinar el formato de salida de un descomprimidor
                   href: determining-a-decompressors-output-format.md
-                - name: Descomprimir datos
+                - name: Descompresión de datos
                   href: decompressing-data.md
                 - name: Determinar si un controlador puede controlar el formato de entrada
                   href: determining-if-a-driver-can-handle-the-input-format.md
-                - name: Preparar la creación de datos
+                - name: Preparación para dibujar datos
                   href: preparing-to-draw-data.md
                 - name: Dibujar datos
                   href: drawing-data.md
-                - name: Progreso del compresor y descompresor de supervisión
+                - name: Supervisión del progreso de la supervisión y el descompresión
                   href: monitoring-compressor-and-decompressor-progress.md
             - name: Referencia del administrador de compresión de vídeo
               href: video-compression-manager-reference.md
@@ -839,23 +839,23 @@
               items:
                 - name: 'Captura de vídeo: un enfoque mínimo'
                   href: video-capture--a-minimal-approach.md
-                - name: Opciones de captura básicas
+                - name: Opciones básicas de captura
                   href: basic-capture-options.md
                   items:
                     - name: Velocidad de captura
                       href: capture-rate.md
-                    - name: Captura de claves finalizando
+                    - name: Captura de finalización de claves
                       href: keys-ending-capture.md
                     - name: Límite de tiempo
                       href: time-limit.md
-                - name: Capturar ventanas
+                - name: Capturar Windows
                   href: capture-windows.md
                   items:
-                    - name: Crear una ventana de captura de AVICap
+                    - name: Creación de una ventana de captura de AVICap
                       href: creating-an-avicap-capture-window.md
-                    - name: Conectar una ventana de captura a un controlador de captura
+                    - name: Conexión de una ventana de captura a un controlador de captura
                       href: connecting-a-capture-window-to-a-capture-driver.md
-                    - name: Interacción de la ventana de Parent-Child
+                    - name: Parent-Child interacción de ventana
                       href: parent-child-window-interaction.md
                     - name: Estado de la ventana de captura
                       href: capture-window-status.md
@@ -870,52 +870,52 @@
                       href: preview-and-overlay-modes.md
                     - name: Formato de vídeo
                       href: video-format.md
-                    - name: Configuración de captura de vídeo
+                    - name: Captura de vídeo Configuración
                       href: video-capture-settings.md
                     - name: Formato de audio
                       href: audio-format.md
                 - name: Capturar archivos y búferes
                   href: capture-file-and-buffers.md
                   items:
-                    - name: Nombre de archivo de captura
+                    - name: Captura de nombre de archivo
                       href: capture-filename.md
-                    - name: Guardar los datos capturados en un archivo nuevo
+                    - name: Guardar los datos capturados en un nuevo archivo
                       href: saving-captured-data-to-a-new-file.md
-                    - name: Asignación previa de espacio en disco para el archivo de captura
+                    - name: Asignación previa del espacio en disco para el archivo de captura
                       href: disk-space-preallocation-for-the-capture-file.md
                     - name: Tamaño de índice
                       href: index-size.md
-                    - name: Granularidad de fragmentos de audio y vídeo
+                    - name: Granularidad de fragmentos de vídeo y audio
                       href: video-and-audio-chunk-granularity.md
                     - name: Búferes de vídeo
                       href: video-buffers.md
                     - name: Búferes de audio
                       href: audio-buffers.md
-                - name: Variaciones de captura
+                - name: Capturar variaciones
                   href: capture-variations.md
                   items:
-                    - name: Captura de fotogramas manual
+                    - name: Captura manual de fotogramas
                       href: manual-frame-capture.md
-                    - name: Still-Image captura
+                    - name: Still-Image capture
                       href: still-image-capture.md
-                    - name: Capturar sin usar Disk Storage
+                    - name: Capturar sin usar discos Storage
                       href: capture-without-using-disk-storage.md
                     - name: Captura de streaming desde un dispositivo MCI
                       href: streaming-capture-from-an-mci-device.md
-                - name: Opciones de captura avanzadas
+                - name: Opciones avanzadas de captura
                   href: advanced-capture-options.md
                   items:
                     - name: Medición de la calidad del vídeo
                       href: measuring-video-quality.md
-                    - name: User-Initiated captura
+                    - name: User-Initiated capture
                       href: user-initiated-capture.md
                     - name: Trabajar con paletas
                       href: working-with-palettes.md
-                    - name: Incrustar fragmentos de información en un archivo AVI
+                    - name: Insertar fragmentos de información en un archivo AVI
                       href: embedding-information-chunks-in-an-avi-file.md
                     - name: Mensajes de datos de usuario
                       href: user-data-messages.md
-                - name: Funciones de devolución de llamada AVICap
+                - name: Funciones de devolución de llamada de AVICap
                   href: avicap-callback-functions.md
                   items:
                     - name: Control de captura preciso
@@ -934,16 +934,16 @@
                       href: yield-callback-functions.md
                     - name: Deshabilitar funciones de devolución de llamada
                       href: disabling-callback-functions.md
-            - name: Uso de la captura de vídeo
+            - name: Uso de captura de vídeo
               href: using-video-capture.md
               items:
                 - name: Crear una ventana de captura
                   href: creating-a-capture-window.md
                 - name: Conexión a un controlador de captura
                   href: connecting-to-a-capture-driver.md
-                - name: Enumerar controladores de captura instalados
+                - name: Enumerar los controladores de captura instalados
                   href: enumerating-installed-capture-drivers.md
-                - name: Obtención de las capacidades de un controlador de captura
+                - name: Obtener las funcionalidades de un controlador de captura
                   href: obtaining-the-capabilities-of-a-capture-driver.md
                 - name: Obtener el estado de una ventana de captura
                   href: obtaining-the-status-of-a-capture-window.md
@@ -951,19 +951,19 @@
                   href: displaying-dialog-boxes-to-set-video-characteristics.md
                 - name: Obtener y establecer el formato de vídeo
                   href: obtaining-and-setting-the-video-format.md
-                - name: Obtener una vista previa del vídeo
+                - name: Vista previa del vídeo
                   href: previewing-video.md
                 - name: Habilitación de la superposición de vídeo
                   href: enabling-video-overlay.md
-                - name: Asignar nombre al archivo de captura
+                - name: Asignar un nombre al archivo de captura
                   href: naming-the-capture-file.md
-                - name: Formatear la captura de audio
+                - name: Aplicación de formato a la captura de audio
                   href: formatting-audio-capture.md
                 - name: Cambiar una configuración de captura de vídeo
                   href: changing-a-video-capture-setting.md
-                - name: Capturar datos
+                - name: Captura de datos
                   href: capturing-data.md
-                - name: Adición de un fragmento de información
+                - name: Agregar un fragmento de información
                   href: adding-an-information-chunk.md
                 - name: Agregar funciones de devolución de llamada a una aplicación
                   href: adding-callback-functions-to-an-application.md
@@ -971,7 +971,7 @@
                   href: creating-a-status-callback-function.md
                 - name: Crear una función de devolución de llamada de error
                   href: creating-an-error-callback-function.md
-                - name: Crear una función de devolución de llamada de fotograma
+                - name: Crear una función de devolución de llamada de marco
                   href: creating-a-frame-callback-function.md
             - name: Referencia de captura de vídeo
               href: video-capture-reference.md
@@ -984,13 +984,13 @@
                   href: video-capture-messages.md
                 - name: Macros de captura de vídeo
                   href: video-capture-macros.md
-        - name: Controladores personalizados de archivos y secuencias
+        - name: Controladores de archivos y secuencias personalizados
           href: custom-file-and-stream-handlers.md
           items:
             - name: Acerca de los controladores de archivos y secuencias personalizados
               href: about-custom-file-and-stream-handlers.md
               items:
-                - name: Arquitectura de controlador
+                - name: Arquitectura del controlador
                   href: handler-architecture.md
                 - name: Conceptos de programación de C++ y OLE
                   href: c---and-ole-programming-concepts.md
@@ -1001,56 +1001,56 @@
                       href: the-scope-resolution-operator-in-c.md
                     - name: Tablas de funciones virtuales
                       href: virtual-function-tables.md
-                    - name: Modelo de objetos de componentes OLE
+                    - name: El modelo de objetos de componente OLE
                       href: the-ole-component-object-model.md
-                - name: Interfaces IAVIStream y IAVIFile
+                - name: Interfaces IAVIStream e IAVIFile
                   href: iavistream-and-iavifile-interfaces.md
                 - name: Instalación del controlador de archivos y secuencias
                   href: file-and-stream-handler-installation.md
-            - name: Usar controladores de archivos y de secuencias personalizados
+            - name: Uso de controladores de archivos y secuencias personalizados
               href: using-custom-file-and-stream-handlers.md
               items:
-                - name: Crear un controlador de archivo o secuencia
+                - name: Crear un controlador de archivos o secuencias
                   href: creating-a-file-or-stream-handler.md
-                - name: Crear una tabla de función virtual para un controlador de flujo
+                - name: Crear una tabla de funciones virtuales para un controlador de secuencias
                   href: creating-a-virtual-function-table-for-a-stream-handler.md
                 - name: Crear un puntero de objeto
                   href: creating-an-object-pointer.md
                 - name: Obtener la dirección de una tabla de función virtual
                   href: obtaining-the-address-of-a-virtual-function-table.md
-                - name: Crear una instancia de File-Handler en un archivo DLL
+                - name: Creación de una File-Handler en un archivo DLL
                   href: creating-a-file-handler-instance-in-a-dll.md
-                - name: Determinar la interfaz que admite un objeto
+                - name: Determinar qué interfaz admite un objeto
                   href: determining-which-interface-an-object-supports.md
-                - name: Incrementar el recuento de referencias del controlador
+                - name: Incrementar el recuento de referencias de controlador
                   href: incrementing-the-handler-reference-count.md
-                - name: Eliminar un objeto
+                - name: Eliminación de un objeto
                   href: deleting-an-object.md
-            - name: Referencia del controlador de archivos y secuencias personalizados
+            - name: Referencia del controlador de secuencias y archivos personalizados
               href: custom-file-and-stream-handler-reference.md
               items:
-                - name: Funciones de controlador de archivos y secuencias personalizadas
+                - name: Funciones de controlador de secuencias y archivos personalizados
                   href: custom-file-and-stream-handler-functions.md
-                - name: Interfaces de controlador de archivos y secuencias personalizadas
+                - name: Interfaces personalizadas de controlador de archivos y secuencias
                   href: custom-file-and-stream-handler-interfaces.md
         - name: DrawDib
           href: drawdib.md
           items:
-            - name: Acerca de las funciones de DrawDib
+            - name: Acerca de las funciones DrawDib
               href: about-the-drawdib-functions.md
               items:
-                - name: Operaciones de DrawDib
+                - name: Operaciones DrawDib
                   href: drawdib-operations.md
                 - name: Representación de imágenes
                   href: image-rendering.md
                   items:
                     - name: Secuencias de imágenes
                       href: sequences-of-images.md
-                    - name: Las paletas
+                    - name: Paletas
                       href: palettes.md
                     - name: Control de tiempo
                       href: timing.md
-            - name: Usar DrawDib
+            - name: Uso de DrawDib
               href: using-drawdib.md
               items:
                 - name: Agregar controladores de mensajes de paleta
@@ -1062,16 +1062,16 @@
             - name: Referencia de DrawDib
               href: drawdib-reference.md
               items:
-                - name: Funciones de DrawDib
+                - name: Funciones DrawDib
                   href: drawdib-functions.md
                 - name: Estructuras DrawDib
                   href: drawdib-structures.md
-                - name: Macros DrawDib
+                - name: DrawDib Macros
                   href: drawdib-macros.md
     - name: Apéndice multimedia
       href: multimedia-appendix.md
       items:
-        - name: Especificaciones del equipo multimedia
+        - name: Especificaciones de pc multimedia
           href: multimedia-pc-specifications.md
           items:
             - name: Especificación de nivel 1
@@ -1079,7 +1079,7 @@
               items:
                 - name: Recursos del sistema de nivel 1
                   href: level-1-system-resources.md
-                - name: Almacenamiento óptico de nivel 1
+                - name: Nivel 1 De Storage
                   href: level-1-optical-storage.md
                 - name: Requisitos de audio de nivel 1
                   href: level-1-audio-requirements.md
@@ -1088,16 +1088,16 @@
               items:
                 - name: Recursos del sistema de nivel 2
                   href: level-2-system-resources.md
-                - name: Almacenamiento óptico de nivel 2
+                - name: 'Nivel 2: Storage'
                   href: level-2-optical-storage.md
                 - name: Requisitos de audio de nivel 2
                   href: level-2-audio-requirements.md
-        - name: Identificadores de fabricante e producto
+        - name: Identificadores de fabricante y producto
           href: manufacturer-and-product-identifiers.md
           items:
             - name: Identificadores de fabricante
               href: manufacturer-identifiers.md
-            - name: Identificadores de producto de Microsoft Corporation
+            - name: Microsoft Corporation identificadores de producto
               href: microsoft-corporation-product-identifiers.md
             - name: Controladores del sistema de sonido de Microsoft Windows
               href: microsoft-windows-sound-system-drivers.md
@@ -1109,7 +1109,7 @@
             - name: Acerca de los controladores instalables
               href: about-installable-drivers.md
               items:
-                - name: Formato del controlador instalable
+                - name: Formato de controlador instalable
                   href: installable-driver-format.md
                   items:
                     - name: Mensajes de controlador
@@ -1122,21 +1122,21 @@
                       href: installation.md
                     - name: Funciones de devolución de llamada
                       href: callback-functions.md
-                    - name: Archivo de Module-Definition de unidad instalable
+                    - name: Archivo de Module-Definition unidad instalable
                       href: installable-drive-module-definition-file.md
                 - name: Mensajes y funciones de controlador instalables
                   href: installable-driver-functions-and-messages.md
-            - name: Usar controladores instalables
+            - name: Uso de controladores instalables
               href: using-installable-drivers.md
               items:
-                - name: Creación de una función DriverProc
+                - name: Crear una función DriverProc
                   href: creating-a-driverproc-function.md
                 - name: Configuración de un controlador instalable
                   href: configuring-an-installable-driver.md
             - name: Referencia del controlador instalable
               href: installable-driver-reference.md
               items:
-                - name: Funciones del controlador instalables
+                - name: Funciones de controlador instalables
                   href: installable-driver-functions.md
                   items:
                     - name: CloseDriver
@@ -1486,23 +1486,23 @@
               href: /windows/desktop/api/Vfw/nf-vfw-icsetstatusproc
             - name: IOProc
               href: /previous-versions//dd757098(v=vs.85)
-            - name: joyConfigChanged
+            - name: configureConfigChanged
               href: /windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged
-            - name: joyGetDevCaps
+            - name: ygetDevCaps
               href: /previous-versions//dd757105(v=vs.85)
-            - name: joyGetNumDevs
+            - name: ygetNumDevs
               href: /previous-versions//dd757106(v=vs.85)
-            - name: joyGetPos
+            - name: supergetPos
               href: /previous-versions//dd757107(v=vs.85)
-            - name: joyGetPosEx
+            - name: ygetPosEx
               href: /previous-versions//dd757108(v=vs.85)
-            - name: joyGetThreshold
+            - name: ygetThreshold
               href: /previous-versions//dd757109(v=vs.85)
-            - name: joyReleaseCapture
+            - name: captureReleaseCapture
               href: /previous-versions//dd757113(v=vs.85)
-            - name: joySetCapture
+            - name: captureSetCapture
               href: /previous-versions//dd757114(v=vs.85)
-            - name: joySetThreshold
+            - name: ysetThreshold
               href: /previous-versions//dd757115(v=vs.85)
             - name: LPTIMECALLBACK
               href: /previous-versions//ff728861(v=vs.85)
@@ -1680,7 +1680,7 @@
               href: /windows/desktop/api/Mmddk/nf-mmddk-mmtaskyield
             - name: MyStatusProc
               href: /previous-versions//dd743620(v=vs.85)
-            - name: Reproducción
+            - name: PlaySound
               href: /previous-versions//dd743680(v=vs.85)
             - name: sndOpenSound
               href: /windows/desktop/api/mmiscapi/nf-mmiscapi-sndopensound
@@ -1768,7 +1768,7 @@
               href: /previous-versions//dd743870(v=vs.85)
             - name: waveOutRestart
               href: /previous-versions//dd743871(v=vs.85)
-            - name: waveOutSetPitch
+            - name: waveOutSetPjunto
               href: /previous-versions//dd743872(v=vs.85)
             - name: waveOutSetPlaybackRate
               href: /previous-versions//dd743873(v=vs.85)
@@ -1781,7 +1781,7 @@
         - name: Estructuras multimedia
           href: multimedia-structures.md
           items:
-            - name: ACMDRIVERDETAILS
+            - name: ACMDRIVETAILS
               href: /windows/desktop/api/Msacm/ns-msacm-acmdriverdetails
             - name: ACMFILTERCHOOSE
               href: /windows/desktop/api/Msacm/ns-msacm-acmfilterchoose
@@ -1837,11 +1837,11 @@
               href: /windows/desktop/api/Vfw/ns-vfw-icopen
             - name: ICSETSTATUSPROC
               href: /windows/desktop/api/Vfw/ns-vfw-icsetstatusproc
-            - name: JOYCAPS
+            - name: ASÍNCAPS
               href: /previous-versions//dd757103(v=vs.85)
-            - name: JOYINFO
+            - name: INFOINFO
               href: /previous-versions//dd757110(v=vs.85)
-            - name: JOYINFOEX
+            - name: INFOEXINFOEX
               href: /previous-versions//dd757112(v=vs.85)
             - name: MCI_BREAK_PARMS
               href: mci-break-parms.md
@@ -1977,7 +1977,7 @@
               href: mci-wave-open-parms.md
             - name: MCI_WAVE_SET_PARMS
               href: mci-wave-set-parms.md
-            - name: MIDIEVENT
+            - name: EVENTO DE MIDI
               href: /previous-versions//dd798448(v=vs.85)
             - name: MIDIHDR
               href: /previous-versions//dd798449(v=vs.85)
@@ -2025,7 +2025,7 @@
               href: /windows/win32/api/Mmreg/ns-mmreg-wavefilter
             - name: WAVEFORMAT
               href: /windows/desktop/api/mmeapi/ns-mmeapi-waveformat
-            - name: WAVEFORMATEX
+            - name: FORMA DE ONDAATEX
               href: /previous-versions//dd757713(v=vs.85)
             - name: WAVEFORMATEXTENSIBLE
               href: /windows/desktop/api/mmreg/ns-mmreg-waveformatextensible
@@ -2035,7 +2035,7 @@
               href: /previous-versions//dd743839(v=vs.85)
             - name: WAVEOUTCAPS
               href: /previous-versions//dd743855(v=vs.85)
-        - name: Macros multimedia
+        - name: Multimedia Macros
           href: multimedia-macros.md
           items:
             - name: AVIStreamDataSize
@@ -2220,7 +2220,7 @@
               href: /windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize
             - name: ICDecompressGetPalette
               href: /windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette
-            - name: ICDecompressOpen
+            - name: ICDecompressAbrir
               href: /windows/desktop/api/Vfw/nf-vfw-icdecompressopen
             - name: ICDecompressQuery
               href: /windows/desktop/api/Vfw/nf-vfw-icdecompressquery
@@ -2270,7 +2270,7 @@
               href: /windows/desktop/api/Vfw/nf-vfw-icqueryconfigure
             - name: ICSetState
               href: /windows/desktop/api/Vfw/nf-vfw-icsetstate
-            - name: max
+            - name: máx.
               href: max.md
             - name: MCI_HMS_HOUR
               href: mci-hms-hour.md
@@ -2440,7 +2440,7 @@
               href: /previous-versions//dd798441(v=vs.85)
             - name: MEVT_EVENTTYPE
               href: /previous-versions//dd798442(v=vs.85)
-            - name: min.
+            - name: mín.
               href: min.md
             - name: mmioFOURCC
               href: /windows/desktop/api/vfw/nf-vfw-mmiofourcc
@@ -2871,75 +2871,75 @@
               href: wom-done.md
             - name: WOM_OPEN
               href: wom-open.md
-        - name: Interfaces multimedia
+        - name: Multimedia Interfaces
           href: multimedia-interfaces.md
           items:
             - name: IAVIEditStream
               href: /windows/desktop/api/Vfw/nn-vfw-iavieditstream
               items:
-                - name: 'IAVIEditStream:: Clone'
+                - name: 'IAVIEditStream::Clone'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-clone
-                - name: 'IAVIEditStream:: Copy'
+                - name: 'IAVIEditStream::Copy'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-copy
-                - name: 'IAVIEditStream:: Cut'
+                - name: 'IAVIEditStream::Cut'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-cut
-                - name: 'IAVIEditStream::P pegar'
+                - name: 'IAVIEditStream::P aste'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-paste
-                - name: 'IAVIEditStream:: SetInfo'
+                - name: 'IAVIEditStream::SetInfo'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavieditstream-setinfo
             - name: IAVIFile
               href: /windows/desktop/api/Vfw/nn-vfw-iavifile
               items:
-                - name: 'IAVIFile:: CreateStream ('
+                - name: 'IAVIFile::CreateStream'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavifile-createstream
                 - name: 'IAVIFile::EndRecord'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavifile-endrecord
-                - name: 'IAVIFile:: GetStream'
+                - name: 'IAVIFile::GetStream'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavifile-getstream
-                - name: 'IAVIFile:: info'
+                - name: 'IAVIFile::Info'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavifile-info
-                - name: 'IAVIFile:: ReadData'
+                - name: 'IAVIFile::ReadData'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavifile-readdata
-                - name: 'IAVIFile:: WriteData'
+                - name: 'IAVIFile::WriteData'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavifile-writedata
             - name: IAVIStream
               href: /windows/desktop/api/Vfw/nn-vfw-iavistream
               items:
-                - name: 'IAVIStream:: Create'
+                - name: 'IAVIStream::Create'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-create
-                - name: 'IAVIStream::D iminar'
+                - name: 'IAVIStream::D elete'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-delete
-                - name: 'IAVIStream:: info'
+                - name: 'IAVIStream::Info'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-info
                 - name: 'IAVIStream::FindSample'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-findsample
-                - name: 'IAVIStream:: Read'
+                - name: 'IAVIStream::Read'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-read
-                - name: 'IAVIStream:: ReadData'
+                - name: 'IAVIStream::ReadData'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-readdata
                 - name: 'IAVIStream::ReadFormat'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-readformat
                 - name: 'IAVIStream::SetFormat'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-setformat
-                - name: 'IAVIStream:: Write'
+                - name: 'IAVIStream::Write'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-write
-                - name: 'IAVIStream:: WriteData'
+                - name: 'IAVIStream::WriteData'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistream-writedata
             - name: IAVIStreaming
               href: /windows/desktop/api/Vfw/nn-vfw-iavistreaming
               items:
-                - name: 'IAVIStreaming:: Begin'
+                - name: 'IAVIStreaming::Begin'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistreaming-begin
-                - name: 'IAVIStreaming:: end'
+                - name: 'IAVIStreaming::End'
                   href: /windows/desktop/api/Vfw/nf-vfw-iavistreaming-end
             - name: IGetFrame
               href: /windows/desktop/api/Vfw/nn-vfw-igetframe
               items:
-                - name: 'IGetFrame:: Begin'
+                - name: 'IGetFrame::Begin'
                   href: /windows/desktop/api/Vfw/nf-vfw-igetframe-begin
-                - name: 'IGetFrame:: end'
+                - name: 'IGetFrame::End'
                   href: /windows/desktop/api/Vfw/nf-vfw-igetframe-end
-                - name: 'IGetFrame:: GetFrame'
+                - name: 'IGetFrame::GetFrame'
                   href: /windows/desktop/api/Vfw/nf-vfw-igetframe-getframe
                 - name: 'IGetFrame::SetFormat'
                   href: /windows/desktop/api/Vfw/nf-vfw-igetframe-setformat
@@ -3055,7 +3055,7 @@
               href: copy.md
             - name: cue
               href: cue.md
-            - name: cut
+            - name: Cortar
               href: cut.md
             - name: delete
               href: delete.md
@@ -3075,19 +3075,19 @@
               href: mark.md
             - name: monitor
               href: monitor.md
-            - name: abrir
+            - name: abierto
               href: open.md
             - name: pegar
               href: paste.md
             - name: pause
               href: pause.md
-            - name: reproducción
+            - name: Jugar
               href: play.md
             - name: put
               href: put.md
             - name: calidad
               href: quality.md
-            - name: alcanzar
+            - name: darse cuenta de
               href: realize.md
             - name: registro
               href: record.md
@@ -3099,7 +3099,7 @@
               href: resume.md
             - name: Guardar
               href: save.md
-            - name: desean
+            - name: Buscar
               href: seek.md
             - name: set
               href: set.md
@@ -3113,7 +3113,7 @@
               href: setvideo.md
             - name: signal
               href: signal.md
-            - name: bucle
+            - name: giro
               href: spin.md
             - name: status
               href: status.md
@@ -3121,15 +3121,15 @@
               href: step.md
             - name: stop
               href: stop.md
-            - name: sysinfo
+            - name: Sysinfo
               href: sysinfo.md
             - name: deshacer
               href: undo.md
-            - name: liberar
+            - name: Descongelar
               href: unfreeze.md
             - name: update
               href: update.md
-            - name: ', donde'
+            - name: where
               href: where.md
             - name: periodo
               href: window.md
@@ -3140,7 +3140,7 @@
               href: keyarray.md
             - name: PATCHARRAY
               href: patcharray.md
-        - name: Constantes de multimedia
+        - name: Constantes multimedia
           href: multimedia-constants.md
           items:
             - name: Tipos de dispositivos MCI
@@ -3152,11 +3152,11 @@
                   href: general-mci-errors.md
                 - name: Errores de mciSendString
                   href: mcisendstring-errors.md
-                - name: Errores de Digital-Video
+                - name: Digital-Video errores
                   href: digital-video-errors.md
                 - name: Errores del secuenciador
                   href: sequencer-errors.md
-                - name: Errores de Waveform-Audio
+                - name: Waveform-Audio errores
                   href: waveform-audio-errors.md
     - name: Glosario multimedia
       href: multimedia.md
