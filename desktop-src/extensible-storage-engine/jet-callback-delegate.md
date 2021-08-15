@@ -37,7 +37,7 @@ ms.locfileid: "118487311"
 ---
 # <a name="jet_callback-delegate"></a>JET_CALLBACK delegado
 
-Una función de devolución de llamada multiuso utilizada por el motor de base de datos para informar a la aplicación de un evento que implica notificaciones de estado de cursor y desfragmentación en línea.
+Función de devolución de llamada multipropósito utilizada por el motor de base de datos para informar a la aplicación de un evento que implica notificaciones de estado de cursor y desfragmentación en línea.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -78,7 +78,7 @@ public delegate JET_err JET_CALLBACK(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión para la que se realiza la devolución de llamada.
+    Sesión para la que se realiza la devolución de llamada.
 
 <!-- end list -->
 

@@ -1,5 +1,5 @@
 ---
-description: Acceda a la descripción del vértice que se pasa a D3DX10CreateMesh. La descripción del vértice describe el diseño de los búferes de vértice de la malla.
+description: Acceda a la descripción del vértice pasada a D3DX10CreateMesh. La descripción del vértice describe el diseño de los búferes de vértices de la malla.
 ms.assetid: e4a4a98a-e131-414c-ad98-21288ff0c61b
 title: Método ID3DX10Mesh::GetVertexDescription (D3DX10.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118540231"
 ---
 # <a name="id3dx10meshgetvertexdescription-method"></a>Método ID3DX10Mesh::GetVertexDescription
 
-Acceda a la descripción del vértice pasada a [**D3DX10CreateMesh.**](d3d10-d3dx10createmesh.md) La descripción del vértice describe el diseño de los búferes de vértice de la malla.
+Acceda a la descripción del vértice pasada [**a D3DX10CreateMesh.**](d3d10-d3dx10createmesh.md) La descripción del vértice describe el diseño de los búferes de vértices de la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,7 +76,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Di
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

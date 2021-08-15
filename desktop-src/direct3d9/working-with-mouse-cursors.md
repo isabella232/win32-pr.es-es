@@ -13,7 +13,7 @@ ms.locfileid: "118518923"
 ---
 # <a name="working-with-mouse-cursors-direct3d-9"></a>Trabajar con cursores del mouse (Direct3D 9)
 
-Los métodos de cursor del mouse permiten a la aplicación especificar un cursor de color proporcionando una superficie que contiene una imagen. El sistema garantizará que este cursor se actualice a la mitad de la velocidad de visualización o más si la velocidad de fotogramas de la aplicación es lenta. Sin embargo, el cursor nunca se actualizará con más frecuencia que la frecuencia de actualización de pantalla.
+Los métodos de cursor del mouse permiten a la aplicación especificar un cursor de color proporcionando una superficie que contiene una imagen. El sistema garantizará que este cursor se actualizará a la mitad de la velocidad de visualización o más si la velocidad de fotogramas de la aplicación es lenta. Sin embargo, el cursor nunca se actualizará con más frecuencia que la frecuencia de actualización de pantalla.
 
 La posición del cursor del mouse está asociada al cursor del sistema, que se escala correctamente para la resolución espacial del modo de presentación actual, pero la aplicación puede moverla explícitamente. Esto es análogo al comportamiento de la API win32: cursor del mouse del sistema admitido. Para obtener más información sobre cómo usar un cursor del mouse en la aplicación Direct3D, consulte los siguientes temas de referencia.
 

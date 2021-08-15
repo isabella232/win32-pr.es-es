@@ -1,5 +1,5 @@
 ---
-description: Los objetos de interfaz de usuario solo admiten un identificador por objeto. Los procesos no pueden heredar ni duplicar identificadores en objetos de usuario. Los procesos de una sesión no pueden hacer referencia a un identificador de usuario en otra sesión.
+description: Los objetos de interfaz de usuario solo admiten un identificador por objeto. Los procesos no pueden heredar ni duplicar identificadores a objetos de usuario. Los procesos de una sesión no pueden hacer referencia a un identificador de usuario en otra sesión.
 ms.assetid: 07edc049-26d9-4f42-a5e7-e1f4c8435a6c
 title: Objetos de usuario
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118884335"
 ---
 # <a name="user-objects"></a>Objetos de usuario
 
-Los objetos de interfaz de usuario solo admiten un identificador por objeto. Los procesos no pueden heredar ni duplicar identificadores en objetos de usuario. Los procesos de una sesión no pueden hacer referencia a un identificador de usuario en otra sesión.
+Los objetos de interfaz de usuario solo admiten un identificador por objeto. Los procesos no pueden heredar ni duplicar identificadores a objetos de usuario. Los procesos de una sesión no pueden hacer referencia a un identificador de usuario en otra sesión.
 
 Hay un límite teórico de 65 536 identificadores de usuario por sesión. Sin embargo, el número máximo de identificadores de usuario que se pueden abrir por sesión suele ser menor, ya que se ve afectado por la memoria disponible. También hay un límite predeterminado por proceso de identificadores de usuario. Para cambiar este límite, establezca el siguiente valor del Registro:
 
@@ -35,9 +35,9 @@ En la siguiente ilustración, la aplicación destruye el objeto de ventana. La [
 
 ![destruir un objeto de ventana](images/cshob-02.png)
 
-## <a name="managing-user-objects"></a>Administrar objetos de usuario
+## <a name="managing-user-objects"></a>Administración de objetos de usuario
 
-En la tabla siguiente se enumeran los objetos de usuario, junto con las funciones creador y destructor de cada objeto. Las funciones de creador crean el objeto y un identificador de objeto o simplemente devuelven el identificador de objeto existente. Las funciones destructoras quitan el objeto de la memoria, lo que invalida el identificador del objeto.
+En la tabla siguiente se enumeran los objetos de usuario, junto con las funciones creador y destructor de cada objeto. Las funciones del creador crean el objeto y un identificador de objeto o simplemente devuelven el identificador de objeto existente. Las funciones destructoras quitan el objeto de la memoria, lo que invalida el identificador del objeto.
 
 
 

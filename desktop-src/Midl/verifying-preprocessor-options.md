@@ -1,27 +1,27 @@
 ---
-title: Comprobar las opciones del preprocesador
-description: El compilador MIDL invoca implícitamente el preprocesador y no muestra los modificadores del preprocesador.
+title: Comprobación de las opciones del preprocesador
+description: El compilador MIDL invoca implícitamente el preprocesador y no muestra sus modificadores de preprocesador.
 ms.assetid: 2f402af4-18d7-480c-a8d2-d16f402ef87a
 keywords:
-- MIDL del compilador MIDL, comprobar las opciones del preprocesador
+- MIDL del compilador MIDL, comprobar las opciones de preprocesador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19a047980c9f2f9dc8deffdcf85de767e4dc8705
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: acb9f5055623a44e88ed57b5ed0cadd0034c6962e160a081c7a55a9a51ca9e13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382778"
 ---
-# <a name="verifying-preprocessor-options"></a>Comprobar las opciones del preprocesador
+# <a name="verifying-preprocessor-options"></a>Comprobación de las opciones del preprocesador
 
-El compilador MIDL invoca implícitamente el preprocesador y no muestra los modificadores del preprocesador. En ausencia del modificador [**\_ /CPP**](-cpp-opt.md) de MIDL, la línea de comandos del preprocesador se compone de todos los modificadores [**/I**](-i.md), [**/d**](-d.md) y [**/U**](-u.md) utilizados en la línea de comandos de MIDL, así como los modificadores **/e** y [**/nologo**](-nologo.md) . Para ver los modificadores pasados al preprocesador, use el modificador [**/CONFIRM**](-confirm.md) del compilador.
+El compilador MIDL invoca implícitamente el preprocesador y no muestra sus modificadores de preprocesador. En ausencia del modificador [**/cpp \_ opt**](-cpp-opt.md) de MIDL, la línea de comandos del preprocesador se compone de todos los modificadores [**/I,**](-i.md) [**/D**](-d.md) y [**/U**](-u.md) usados en la línea de comandos de MIDL, así como modificadores **/E** y [**/nologo.**](-nologo.md) Para ver los modificadores pasados al preprocesador, use el modificador [**/confirm del**](-confirm.md) compilador.
 
-Por ejemplo, la línea siguiente
+Por ejemplo, la siguiente línea
 
-**midl.exe-D \_ Win32 \_ WinNT = 0x501-robuste-DNTENV = 1-ID: \\ NT \\ Public \\ SDK \\ Inc-CONFIRM-Oicf-env Win32-out x86 stub. idl**
+**midl.exe -D \_ WIN32 \_ WINNT=0x501 -robust -DNTENV=1 -Id: \\ nt public sdk inc \\ \\ \\ -confirm -Oicf -env win32 -out x86 stub.idl**
 
-genera el siguiente resultado:
+genera la siguiente salida:
 
 ``` syntax
 32 bit arguments
@@ -58,9 +58,9 @@ E -nologo
                   Zp -  8
 ```
 
- 
+ 
 
- 
+ 
 
 
 

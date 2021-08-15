@@ -1,6 +1,6 @@
 ---
 title: Procesamiento de reservas
-description: El administrador del sistema realiza reservas para partes del espacio de nombres url y se colocan en el almacén de reservas persistente.
+description: Las reservas de partes del espacio de nombres de dirección URL las realiza el administrador del sistema y se colocan en el almacén de reservas persistente.
 ms.assetid: deab6323-d114-463b-a0e7-acd173149b63
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118393767"
 ---
 # <a name="processing-reservations"></a>Procesamiento de reservas
 
-El administrador del sistema realiza reservas para partes del espacio de nombres url y se colocan en el almacén de reservas persistente. La raíz del espacio de nombres de dirección URL para HTTP es propiedad del administrador del sistema. Para todos los valores de host y puerto, siempre se asumen las dos reservas siguientes en la raíz del espacio **de nombres relativeUri.**
+Las reservas de partes del espacio de nombres de dirección URL las realiza el administrador del sistema y se colocan en el almacén de reservas persistente. La raíz del espacio de nombres de dirección URL para HTTP es propiedad del administrador del sistema. Para todos los valores de host y puerto, siempre se asumen las dos reservas siguientes en la raíz del espacio **de nombres relativeUri.**
 
 
 
@@ -26,7 +26,7 @@ El administrador del sistema realiza reservas para partes del espacio de nombres
 
  
 
-No se pueden quitar estas reservas implícitas. Sin embargo, es posible delegar reservas raíz explícitas a otros usuarios. Las reservas como las siguientes crearían dichas delegaciones:
+Estas reservas implícitas no se pueden quitar. Sin embargo, es posible delegar reservas raíz explícitas a otros usuarios. Las reservas como las siguientes crearían estas delegaciones:
 
 
 

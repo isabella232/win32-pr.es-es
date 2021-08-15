@@ -1,10 +1,10 @@
 ---
-title: TLSLicenseEnumNext función)
-description: Continúa desde una llamada anterior a la función TLSLicenseEnumBegin y devuelve la siguiente licencia que se instala en un servidor de licencias Escritorio remoto que coincide con los criterios de búsqueda.
+title: Función TLSLicenseEnumNext
+description: Continúa desde una llamada anterior a la función TLSLicenseEnumBegin y devuelve la siguiente licencia instalada en un servidor de licencias de Escritorio remoto que coincida con los criterios de búsqueda.
 ms.assetid: 6932289b-b59c-493c-8dbc-03c0662e921e
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la función TLSLicenseEnumNext
+- Función TLSLicenseEnumNext Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c13b0a3137258015fe311c49b2cc9b999e3a13f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 945c0afb931770a36049342f32c71613bd8fb1a0a9b16142c1ffbc6a67ccc288
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986805"
 ---
-# <a name="tlslicenseenumnext-function"></a>TLSLicenseEnumNext función)
+# <a name="tlslicenseenumnext-function"></a>Función TLSLicenseEnumNext
 
-Continúa desde una llamada anterior a la función [**TLSLicenseEnumBegin**](tlslicenseenumbegin.md) y devuelve la siguiente licencia que se instala en un servidor de licencias escritorio remoto que coincide con los criterios de búsqueda.
+Continúa desde una llamada anterior a la función [**TLSLicenseEnumBegin**](tlslicenseenumbegin.md) y devuelve la siguiente licencia instalada en un servidor de licencias de Escritorio remoto que coincida con los criterios de búsqueda.
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
 
  
 
@@ -48,21 +48,21 @@ DWORD WINAPI TLSLicenseEnumNext(
 
 <dl> <dt>
 
-*hHandle* \[ de\]
+*hHandle* \[ En\]
 </dt> <dd>
 
-Identificador de un servidor de licencias de Escritorio remoto. Especifique un identificador abierto por la función [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Identificador de un Escritorio remoto de licencias. Especifique un identificador abierto por la [**función TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*lpLicense* \[ de\]
+*lpLicense* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**LSLicense**](lslicense.md) que recibe la siguiente licencia que coincide con los criterios de búsqueda.
+Puntero a una [**estructura LSLicense**](lslicense.md) que recibe la siguiente licencia que coincide con los criterios de búsqueda.
 
 </dd> <dt>
 
-*pdwErrCode* \[ enuncia\]
+*pdwErrCode* \[ out\]
 </dt> <dd>
 
 Puntero a una variable que recibe uno de los siguientes códigos de error en la devolución.
@@ -71,7 +71,7 @@ Puntero a una variable que recibe uno de los siguientes códigos de error en la 
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ correcto** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
@@ -82,7 +82,7 @@ La llamada se realiza correctamente.
 
 <span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>
 
-<span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>**LSERVER \_ \_No he \_ más \_ datos** (4001)
+<span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>**LSERVER \_ NO \_ TENGO \_ MÁS \_ DATOS** (4001)
 
 
 </dt> <dd>
@@ -93,7 +93,7 @@ No hay más licencias que coincidan con los criterios de búsqueda.
 
 <span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>
 
-<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ E \_ \_ error interno** (5001)
+<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ E \_ ERROR \_ INTERNO** (5001)
 
 
 </dt> <dd>
@@ -104,18 +104,18 @@ Error interno en el servidor de licencias.
 
 <span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>
 
-<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ \_ secuencia no válida** (5006)
+<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ SECUENCIA \_ NO VÁLIDA** (5006)
 
 
 </dt> <dd>
 
-La secuencia de llamada no era válida. Debe llamar a la función [**TLSLicenseEnumBegin ()**](tlslicenseenumbegin.md) antes de este.
+La secuencia de llamada no era válida. Debe llamar a [**la función TLSLicenseEnumBegin()**](tlslicenseenumbegin.md) antes de esto.
 
 </dd> <dt>
 
 <span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>
 
-<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ E \_ servidor \_ ocupado** (5007)
+<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ E \_ SERVER \_ BUSY** (5007)
 
 
 </dt> <dd>
@@ -131,24 +131,24 @@ El servidor de licencias está demasiado ocupado para procesar la solicitud.
 
 </dt> <dd>
 
-No se puede procesar la solicitud porque no hay memoria suficiente.
+No se puede procesar la solicitud debido a una memoria insuficiente.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve los siguientes posibles valores devueltos.
+Esta función devuelve los siguientes valores devueltos posibles.
 
 <dl> <dt>
 
-**RPC \_ S \_ correcto**
+**RPC \_ S \_ OK**
 </dt> <dd>
 
-La llamada se realizó correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
+La llamada se ha realiza correctamente. Compruebe el valor del *parámetro pdwErrCode* para obtener el código de retorno de la llamada.
 
 </dd> <dt>
 
-**\_ \_ argumento no válido de RPC S \_**
+**ARGUMENTO \_ RPC S NO \_ \_ VÁLIDO**
 </dt> <dd>
 
 El argumento no era válido.
@@ -159,7 +159,7 @@ El argumento no era válido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -167,7 +167,7 @@ El argumento no era válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

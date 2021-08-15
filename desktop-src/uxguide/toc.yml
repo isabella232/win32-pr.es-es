@@ -1,9 +1,9 @@
 - name: Conceptos básicos de diseño
   href: designprinciples.md
   items:
-    - name: Cómo diseñar una gran experiencia de usuario
+    - name: Cómo diseñar una experiencia de usuario excelente
       href: how-to-design-desktop-ux.md
-    - name: Lista de comprobación de experiencia
+    - name: Lista de comprobación de experiencia de usuario
       href: top-violations.md
 - name: Directrices
   href: guidelines.md
@@ -19,7 +19,7 @@
           href: ctrl-command-buttons.md
         - name: Vínculos de comandos
           href: ctrl-command-links.md
-        - name: Listas desplegables & cuadros combinados
+        - name: Listas desplegables de & combinados
           href: ctrl-drop.md
         - name: Cuadros de grupo
           href: ctrl-group-boxes.md
@@ -39,7 +39,7 @@
           href: ctrl-search-boxes.md
         - name: Controles deslizantes
           href: ctrl-sliders.md
-        - name: Controles de número
+        - name: Controles de giro
           href: ctrl-spin-controls.md
         - name: Barras de estado
           href: ctrl-status-bars.md
@@ -47,7 +47,7 @@
           href: ctrl-tabs.md
         - name: Cuadros de texto
           href: ctrl-text-boxes.md
-        - name: Información sobre herramientas y recuadros informativos
+        - name: Información sobre herramientas e información
           href: ctrl-tooltips-and-infotips.md
         - name: Vistas de árbol
           href: ctrl-tree-views.md
@@ -63,11 +63,11 @@
     - name: Texto
       href: text.md
       items:
-        - name: Texto de la interfaz de usuario
+        - name: Interfaz de usuario text
           href: text-ui.md
         - name: Estilo y tono
           href: text-style-tone.md
-    - name: Mensajes
+    - name: error de Hadoop
       href: messages.md
       items:
         - name: mensajes de error
@@ -104,7 +104,7 @@
           href: win-common-dlg.md
         - name: Asistentes
           href: win-wizards.md
-        - name: Ventanas de propiedades
+        - name: Propiedades Windows
           href: win-property-win.md
     - name: Objetos visuales
       href: visuals.md
@@ -128,9 +128,9 @@
     - name: Experiencias
       href: experiences.md
       items:
-        - name: Personalización de marca de software
+        - name: Personal de marca de software
           href: exper-branding.md
-        - name: Configurar
+        - name: Configuración
           href: exper-setup.md
         - name: Primera experiencia
           href: exper-first-exper.md

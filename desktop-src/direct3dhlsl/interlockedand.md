@@ -1,9 +1,9 @@
 ---
-title: Función InterlockedAnd (referencia hlsl)
-description: Realiza un atómico garantizado y .
+title: Función InterlockedAnd (referencia HLSL)
+description: Realiza un atomic garantizado y .
 ms.assetid: 7dc5185a-ea37-493d-975d-dbb803c886d3
 keywords:
-- Función HlSL de InterlockedAnd
+- Función HLSL de InterlockedAnd
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118511335"
 ---
-# <a name="interlockedand-function-hlsl-reference"></a>Función InterlockedAnd (referencia hlsl)
+# <a name="interlockedand-function-hlsl-reference"></a>Función InterlockedAnd (referencia HLSL)
 
-Realiza un atómico garantizado y .
+Realiza un atomic garantizado y .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Valor de entrada.
 
 </dd> <dt>
 
-*valor \_ de salida* \[ original\]
+*valor \_ original de* \[ salida\]
 </dt> <dd>
 
 Tipo: **T**
@@ -71,7 +71,7 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta operación solo se puede realizar en recursos con tipo int o uint y variables de memoria compartida. Hay dos usos posibles para esta función. La primera es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza un atómico y de valor en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza una operación atómica y de valor en la ubicación del recurso a la que hace referencia dest. La función sobrecargada tiene una variable de salida adicional que se establecerá en el valor original de dest. Esta operación sobrecargada solo está disponible cuando R es legible y grabable.
+Esta operación solo se puede realizar en recursos con tipo int o uint y variables de memoria compartida. Hay dos usos posibles para esta función. La primera es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza un atómico y de valor en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza una operación atómica y de valor en la ubicación del recurso a la que hace referencia dest. La función sobrecargada tiene una variable de salida adicional que se establecerá en el valor original de dest. Esta operación sobrecargada solo está disponible cuando R es legible y se puede escribir.
 
 ### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -81,7 +81,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
 
 
 
@@ -106,7 +106,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

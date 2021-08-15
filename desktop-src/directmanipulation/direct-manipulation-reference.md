@@ -21,7 +21,7 @@ Los temas de esta sección proporcionan las especificaciones de referencia para 
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Constantes de manipulación directa**](direct-manipulation-constants.md)<br/>   | En esta sección se proporcionan las especificaciones de referencia [para las constantes de manipulación](direct-manipulation-portal.md) directa.<br/>                           |
 | [GUID de manipulación directa](direct-manipulation-guids.md)<br/>               | Los siguientes [GUID de clase de](direct-manipulation-portal.md) manipulación directa se definen en DirectManipulation.idl.<br/>                            |
-| [Enumeraciones de manipulación directa](direct-manipulation-enumerations.md)<br/> | Los temas contenidos en esta sección proporcionan las especificaciones de referencia para las [enumeraciones de manipulación](direct-manipulation-portal.md) directa.<br/> |
+| [Enumeraciones de manipulación directa](direct-manipulation-enumerations.md)<br/> | Los temas contenidos en esta sección proporcionan las especificaciones de referencia para [las enumeraciones de manipulación](direct-manipulation-portal.md) directa.<br/> |
 | [Interfaces de manipulación directa](direct-manipulation-interfaces.md)<br/>     | Los temas contenidos en esta sección proporcionan las especificaciones de referencia para las interfaces [de manipulación](direct-manipulation-portal.md) directa. <br/>  |
 
 ## <a name="related-topics"></a>Temas relacionados

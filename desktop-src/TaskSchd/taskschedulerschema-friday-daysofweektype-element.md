@@ -1,9 +1,9 @@
 ---
-title: Friday (daysOfWeekType), elemento
+title: Elemento Friday (daysOfWeekType)
 description: Especifica que la tarea se ejecuta el viernes.
 ms.assetid: bff85911-d354-4954-8c69-7b6f2ca312d3
 keywords:
-- Friday, elemento Programador de tareas
+- Elemento Friday Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 951142e7e925ea71ef1f833be4421351aaea3b35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 587bfec264065ad3287cb9e37c4705b8e45df0d4dce1aa858e97dc7ecfe5bb5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991245"
 ---
-# <a name="friday-daysofweektype-element"></a>Friday (daysOfWeekType), elemento
+# <a name="friday-daysofweektype-element"></a>Elemento Friday (daysOfWeekType)
 
 Especifica que la tarea se ejecuta el viernes.
 
@@ -30,7 +30,7 @@ Especifica que la tarea se ejecuta el viernes.
 </xs:element>
 ```
 
-El elemento **Friday** se define mediante el tipo complejo [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) .
+El tipo complejo [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) define el elemento **Friday.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,14 +38,14 @@ El elemento **Friday** se define mediante el tipo complejo [**daysOfWeekType**](
 
 | Elemento                                                                                                                  | Derivado de                                                             | Descripción                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica los días de la semana en los que se ejecuta la tarea para una programación mensual de día de la semana.<br/> |
+| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica los días de la semana en los que se ejecuta la tarea para una programación mensual del día de la semana.<br/> |
 | [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica los días de la semana en los que se ejecuta la tarea para una programación semanal.<br/>              |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un calendario de día de la semana que inicia una tarea el viernes.
+El siguiente XML define un calendario de día de la semana que inicia una tarea el viernes.
 
 
 ```XML
@@ -60,18 +60,18 @@ El siguiente código XML define un calendario de día de la semana que inicia un
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -36,7 +36,7 @@ uint4 Load4(
 
 <dl> <dt>
 
-*dirección* \[ En\]
+*address* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**

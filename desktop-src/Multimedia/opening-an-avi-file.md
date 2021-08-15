@@ -16,7 +16,7 @@ ms.locfileid: "118373264"
 ---
 # <a name="opening-an-avi-file"></a>Abrir un archivo AVI
 
-En el ejemplo siguiente se inicializa la biblioteca AVIFile mediante la función [**AVIFileInit**](/windows/desktop/api/Vfw/nf-vfw-avifileinit) y se abre un archivo AVI mediante la [**función AVIFileOpen.**](/windows/desktop/api/Vfw/nf-vfw-avifileopen) La función usa un controlador de archivos predeterminado.
+En el ejemplo siguiente se inicializa la biblioteca AVIFile mediante la [**función AVIFileInit**](/windows/desktop/api/Vfw/nf-vfw-avifileinit) y se abre un archivo AVI mediante la [**función AVIFileOpen.**](/windows/desktop/api/Vfw/nf-vfw-avifileopen) La función usa un controlador de archivos predeterminado.
 
 
 ```C++

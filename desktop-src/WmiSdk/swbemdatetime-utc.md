@@ -26,9 +26,9 @@ ms.locfileid: "118314698"
 ---
 # <a name="swbemdatetimeutc-property"></a>Propiedad SWbemDateTime.UTC
 
-La **propiedad UTC** del objeto [**SWbemDateTime**](swbemdatetime.md) obtiene o establece la representación de las horas universales coordinadas (UTC) del **valor datetime.** UTC es la hora establecida por el Estándar de hora mundial. UTC ha reemplazado a la hora media de Greenwich (GMT). Un valor UTC con un desplazamiento de cero es el mismo que GMT con un desplazamiento de cero. El número con firma debe estar en el intervalo de -720 a 720 o se devuelve el error **wbemErrValueOutOfRange.**
+La **propiedad UTC** del objeto [**SWbemDateTime**](swbemdatetime.md) obtiene o establece la representación de las horas universales coordinadas (UTC) del **valor datetime.** UTC es la hora establecida por el Estándar de hora mundial. UTC ha reemplazado a la hora media de Greenwich (GMT). Un valor UTC con un desplazamiento de cero es igual que GMT con un desplazamiento de cero. El número con firma debe estar en el intervalo de -720 a 720 o se devuelve el error **wbemErrValueOutOfRange.**
 
-Para obtener una explicación de esta sintaxis, consulte [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de lectura y escritura.
 
@@ -58,7 +58,7 @@ El valor no estaba en el intervalo de -720 a 720.
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener ejemplos de cómo usar el objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores [**DATETIME**](datetime.md) de CIM a y desde el formato **FILETIME** o el formato **VT \_ DATE,** vea [Wmi Tasks: Dates and Times](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato **DATETIME de** CIM, vea [Formato de fecha y hora](date-and-time-format.md).
+Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores [**DATETIME**](datetime.md) de CIM a y desde el formato **FILETIME** o el formato **VT \_ DATE,** vea [Tareas wmi:](wmi-tasks--dates-and-times.md)fechas y horas. Para obtener una descripción del formato **CIM DATETIME,** vea [Formato de fecha y hora](date-and-time-format.md).
 
 ## <a name="requirements"></a>Requisitos
 

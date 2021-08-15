@@ -1,21 +1,21 @@
 ---
-title: Usar VBScript
-description: Usar VBScript
+title: Uso de VBScript
+description: Uso de VBScript
 ms.assetid: a078eb60-aa12-42ea-850c-7b845fc8037c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 691ed6bf520c83e4b679bb174274abb984eaa2f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7afa94bd5b3576e80cf8a0c17857bbb0902bd254e95113d87ae9d1d1fca1e38b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975505"
 ---
-# <a name="using-vbscript"></a>Usar VBScript
+# <a name="using-vbscript"></a>Uso de VBScript
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-VBScript es un lenguaje de programación incluido en Microsoft Internet Explorer. Para otros exploradores, póngase en contacto con el proveedor para obtener soporte técnico. Se recomienda el uso de VBScript 2,0 (o posterior) con el agente. Aunque las versiones anteriores de VBScript pueden funcionar con el agente, carecen de ciertas funciones que es posible que quiera usar. Puede descargar VBScript 2,0 y obtener más información sobre VBScript en el sitio de descargas de Microsoft y en el sitio de Microsoft VBScript.
+VBScript es un lenguaje de programación incluido con Microsoft Internet Explorer. Para otros exploradores, póngase en contacto con su proveedor para obtener soporte técnico. Se recomienda usar VBScript 2.0 (o posterior) con el Agente . Aunque las versiones anteriores de VBScript pueden funcionar con el Agente , carecen de ciertas funciones que puede que desee usar. Puede descargar VBScript 2.0 y obtener más información sobre VBScript en el sitio de descargas de Microsoft y en el sitio de Microsoft VBScript.
 
 Para programar Microsoft Agent desde VBScript, use el código HTML <SCRIPT> tags. To access the programming interface, use the name of control you assign in the <OBJECT> tag, followed by the subobject (if any), the name of the method or property, and any parameters or values supported by the method or property:
 
@@ -24,7 +24,7 @@ agent[.object].Method parameter, [parameter]
 agent[.object].Property = value
 ```
 
-En el caso de los eventos, incluya el nombre del control seguido del nombre del evento y cualquier parámetro:
+Para los eventos, incluya el nombre del control seguido del nombre del evento y cualquier parámetro:
 
 ``` syntax
 Sub agent_event (ByVal parameter[,ByVal parameter])
@@ -32,7 +32,7 @@ statements
 End Sub
 ```
 
-También puede especificar un controlador de eventos mediante el <SCRIPT> tag's **For...Event** syntax:
+También puede especificar un controlador de eventos mediante <SCRIPT> tag's **For...Event** syntax:
 
 ``` syntax
 <SCRIPT LANGUAGE=VBScript For=agent Event=event[(parameter[,parameter])]>
@@ -40,9 +40,9 @@ statements
 </SCRIPT>
 ```
 
-Aunque Microsoft Internet Explorer es compatible con esta última sintaxis, no todos los exploradores. Por compatibilidad, use solo la sintaxis anterior para los eventos.
+Aunque Microsoft Internet Explorer admite esta última sintaxis, no todos los exploradores sí. Por compatibilidad, use solo la sintaxis anterior para los eventos.
 
-Con VBScript (2,0 o posterior), puede comprobar si el agente de Microsoft está instalado intentando crear el objeto y comprobando si existe. En el ejemplo siguiente se muestra cómo comprobar el control de agente sin desencadenar una descarga automática del control (como sucedería si incluyó una <OBJECT> etiqueta para el control en la página):
+Con VBScript (2.0 o posterior), puede comprobar si Microsoft Agent está instalado intentando crear el objeto y comprobando si existe. En el ejemplo siguiente se muestra cómo buscar el control Agente sin desencadenar una descarga automática del control (como sucedería si incluyera una etiqueta para el control en <OBJECT> la página):
 
 ``` syntax
 <!-- WARNING - This code requires VBScript 2.0.
@@ -77,9 +77,9 @@ End Function
 </SCRIPT>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

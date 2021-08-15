@@ -21,7 +21,7 @@ Al instalar el Kit de desarrollo de software de plataforma (SDK), se instalan au
 -   Archivos de Ayuda de referencia rpc
 -   La **utilidad uuidgen**
 
-Al instalar Windows, se instalan los siguientes elementos:
+Al instalar Windows, se instala lo siguiente:
 
 -   Archivos DLL en tiempo de ejecución de RPC
 -   Localizador de Microsoft (no se admite en Windows Vista y versiones posteriores)

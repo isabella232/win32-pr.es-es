@@ -26,7 +26,7 @@ ms.locfileid: "118430027"
 ---
 # <a name="dsisntdsonline-function"></a>Función DsIsNTDSOnline
 
-\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. A partir Windows Vista, use [Servicio de instantáneas de volumen (VSS) en](../vss/volume-shadow-copy-service-overview.md) su lugar.\]
+\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. A partir de Windows Vista, use [Servicio de instantáneas de volumen (VSS) en](../vss/volume-shadow-copy-service-overview.md) su lugar.\]
 
 La **función DsIsNTDSOnline** determina si Active Directory Domain Services están en línea en el servidor especificado.
 
@@ -62,11 +62,11 @@ Puntero al **valor BOOL** que recibe el resultado. Recibe **TRUE** si el servici
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ OK si** la función es correcta o un código de error en caso contrario. En la lista siguiente se enumeran los códigos de error posibles.
+Devuelve **S \_ OK si** la función se realiza correctamente o un código de error en caso contrario. En la lista siguiente se enumeran los posibles códigos de error.
 
 <dl> <dt>
 
-**ERROR \_ DE ACCESO \_ DENEGADO**
+**ACCESO DE ERROR \_ \_ DENEGADO**
 </dt> <dd>
 
 El autor de la llamada no tiene los privilegios de acceso adecuados para llamar a esta función. La [**función DsSetAuthIdentity**](dssetauthidentity.md) se puede usar para establecer las credenciales que se usarán para las funciones de copia de seguridad y restauración.
@@ -87,17 +87,17 @@ Se llama a la función [**DsIsNTDSOnline**](dsisntdsonline.md) de forma remota o
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a esta función antes de llamar a cualquiera de las funciones de copia de seguridad o restauración de directorios. El directorio debe estar en línea para realizar una copia de seguridad. El directorio debe estar sin conexión para realizar una restauración.
+Llame a esta función antes de llamar a cualquiera de las funciones de copia de seguridad o restauración del directorio. El directorio debe estar en línea para realizar una copia de seguridad. El directorio debe estar sin conexión para realizar una restauración.
 
-Esta función solo se puede llamar desde un controlador de dominio que también sea el servidor de destino especificado en *szServerName*. No se puede llamar a esta función de forma remota.
+Solo se puede llamar a esta función desde un controlador de dominio que también sea el servidor de destino especificado en *szServerName*. No se puede llamar a esta función de forma remota.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -108,7 +108,7 @@ Esta función solo se puede llamar desde un controlador de dominio que también 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

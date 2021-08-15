@@ -1,17 +1,17 @@
-- name: Información del sistema de Windows
+- name: Windows Información del sistema
   href: windows-system-information.md
   items:
     - name: Identificadores y objetos
       href: handles-and-objects.md
       items:
-        - name: Acerca de los identificadores y objetos
+        - name: Acerca de identificadores y objetos
           href: about-handles-and-objects.md
           items:
             - name: Administrador de objetos
               href: object-manager.md
             - name: Interfaz de objeto
               href: object-interface.md
-            - name: Solucionar limitaciones
+            - name: Control de limitaciones
               href: handle-limitations.md
             - name: Controlar la herencia
               href: handle-inheritance.md
@@ -22,12 +22,12 @@
               href: user-objects.md
             - name: Objetos de GDI
               href: gdi-objects.md
-            - name: Objetos de kernel
+            - name: Objetos kernel
               href: kernel-objects.md
-        - name: Referencia de identificador y objeto
+        - name: Identificador y referencia de objetos
           href: handle-and-object-reference.md
           items:
-            - name: Funciones de identificador y de objeto
+            - name: Funciones de identificador y objeto
               href: handle-and-object-functions.md
               items:
                 - name: CloseHandle
@@ -43,51 +43,51 @@
     - name: Registro
       href: registry.md
       items:
-        - name: Acerca del registro
+        - name: Acerca del Registro
           href: about-the-registry.md
           items:
-            - name: Estructura del registro
+            - name: Estructura del Registro
               href: structure-of-the-registry.md
-            - name: Espacio de almacenamiento del registro
+            - name: Espacio de Storage registro
               href: registry-storage-space.md
             - name: Claves predefinidas
               href: predefined-keys.md
               items:
-                - name: Clave de HKEY_CLASSES_ROOT
+                - name: HKEY_CLASSES_ROOT clave
                   href: hkey-classes-root-key.md
                 - name: Vista combinada de HKEY_CLASSES_ROOT
                   href: merged-view-of-hkey-classes-root.md
-            - name: Subárboles del registro
+            - name: Subárboles del Registro
               href: registry-hives.md
             - name: Categorías de datos
               href: categories-of-data.md
-            - name: 'Abrir, crear y cerrar claves'
+            - name: 'Apertura, creación y cierre de claves'
               href: opening-creating-and-closing-keys.md
-            - name: Escribir y eliminar datos del registro
+            - name: Escritura y eliminación de datos del Registro
               href: writing-and-deleting-registry-data.md
-            - name: Recuperar datos del registro
+            - name: Recuperar datos del Registro
               href: retrieving-data-from-the-registry.md
-            - name: Archivos de registro
+            - name: Archivos del Registro
               href: registry-files.md
-            - name: Seguridad y derechos de acceso de la clave del registro
+            - name: Derechos de acceso y seguridad de la clave del Registro
               href: registry-key-security-and-access-rights.md
-            - name: Datos de aplicación de 32 bits y de 64 bits en el registro
+            - name: Datos de aplicación de 32 y 64 bits en el Registro
               href: 32-bit-and-64-bit-application-data-in-the-registry.md
             - name: Virtualización del registro
               href: registry-virtualization.md
-        - name: Usar el registro
+        - name: Uso del Registro
           href: using-the-registry.md
           items:
-            - name: Enumerar subclaves del registro
+            - name: Enumeración de subclaves del Registro
               href: enumerating-registry-subkeys.md
-            - name: Eliminar una clave con subclaves
+            - name: Eliminación de una clave con subclaves
               href: deleting-a-key-with-subkeys.md
-            - name: Determinar el tamaño del registro
+            - name: Determinar el tamaño del Registro
               href: determining-the-registry-size.md
-        - name: Referencia del registro
+        - name: Referencia del Registro
           href: registry-reference.md
           items:
-            - name: Funciones del registro
+            - name: Funciones del Registro
               href: registry-functions.md
               items:
                 - name: GetPrivateProfileInt
@@ -128,7 +128,7 @@
                   href: /windows/desktop/api/Winreg/nf-winreg-regdeletekeyvaluea
                 - name: RegDeleteTree
                   href: /windows/desktop/api/Winreg/nf-winreg-regdeletetreea
-                - name: Error en regdeletevalue
+                - name: RegDeleteValue
                   href: /windows/desktop/api/Winreg/nf-winreg-regdeletevaluea
                 - name: RegDisablePredefinedCache
                   href: /windows/desktop/api/Winreg/nf-winreg-regdisablepredefinedcache
@@ -204,19 +204,19 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-writeprofilesectiona
                 - name: WriteProfileString
                   href: /windows/desktop/api/Winbase/nf-winbase-writeprofilestringa
-            - name: Estructuras del registro
+            - name: Estructuras del Registro
               href: registry-structures.md
               items:
-                - name: PREVALECIENTE
+                - name: Valent
                   href: /windows/win32/api/winreg/ns-winreg-valenta
-            - name: Límites de tamaño de elementos del registro
+            - name: Límites de tamaño de elemento del Registro
               href: registry-element-size-limits.md
-            - name: Tipos de valor del registro
+            - name: Tipos de valor del Registro
               href: registry-value-types.md
     - name: Información del sistema
       href: system-information.md
       items:
-        - name: 'Información del sistema, acerca de'
+        - name: Acerca de Información del sistema
           href: about-system-information.md
           items:
             - name: Hardware Configuration (Configuración de hardware)
@@ -227,29 +227,29 @@
               href: operating-system-version.md
             - name: Configuración del sistema operativo
               href: operating-system-configuration.md
-        - name: Uso de la información del sistema
+        - name: Uso de Información del sistema
           href: using-system-information.md
           items:
-            - name: Acceder a la información de SMBIOS desde una aplicación universal de Windows
+            - name: Acceso a información de SMBIOS desde una aplicación de Windows universal
               href: access-smbios-information-from-a-universal-windows-app.md
-            - name: Acceder a las variables de firmware UEFI desde una aplicación universal de Windows
+            - name: Acceso a variables de firmware UEFI desde una aplicación de Windows universal
               href: access-uefi-firmware-variables-from-a-universal-windows-app.md
-            - name: Obtención de información del sistema
+            - name: Obtener Información del sistema
               href: getting-system-information.md
             - name: Obtener la versión del sistema
               href: getting-the-system-version.md
-            - name: Comprobando la versión del sistema
+            - name: Comprobación de la versión del sistema
               href: verifying-the-system-version.md
             - name: Detección de un conjunto de productos
               href: detecting-a-product-suite.md
-            - name: Obtención de información de hardware
+            - name: Obtener información de hardware
               href: getting-hardware-information.md
             - name: Destino de la aplicación para Windows
               href: targeting-your-application-at-windows-8-1.md
-        - name: Referencia de información del sistema
+        - name: Información del sistema Referencia
           href: system-information-reference.md
           items:
-            - name: Funciones de información del sistema
+            - name: Información del sistema Funciones
               href: system-information-functions.md
               items:
                 - name: ApiSetQueryApiSetPresence
@@ -286,7 +286,7 @@
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya
                 - name: GetSystemFirmwareTable
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable
-                - name: GetSystemInfo
+                - name: Getsysteminfo
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsysteminfo
                 - name: GetSystemRegistryQuota
                   href: /windows/desktop/api/Winbase/nf-winbase-getsystemregistryquota
@@ -334,7 +334,7 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa
                 - name: VerSetConditionMask
                   href: /windows/desktop/api/Winnt/nf-winnt-versetconditionmask
-                - name: Funciones auxiliares de versión
+                - name: Funciones del asistente de versiones
                   href: version-helper-apis.md
                   items:
                     - name: IsWindows10OrGreater
@@ -367,7 +367,7 @@
                       href: /windows/desktop/api/VersionHelpers/nf-versionhelpers-iswindowsversionorgreater
                 - name: ZwQuerySystemInformation
                   href: zwquerysysteminformation.md
-            - name: Estructuras de información del sistema
+            - name: Información del sistema Estructuras
               href: system-information-structures.md
               items:
                 - name: HW_PROFILE_INFO
@@ -378,12 +378,12 @@
                   href: /windows/win32/api/Winnt/ns-winnt-osversioninfoexa
                 - name: SYSTEM_INFO
                   href: /windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info
-            - name: Macros de información del sistema
+            - name: Información del sistema Macros
               href: system-information-macros.md
               items:
                 - name: VER_SET_CONDITION
                   href: /windows/desktop/api/Winnt/nf-winnt-ver_set_condition
-            - name: Tipos de enumeración de información del sistema
+            - name: Información del sistema Tipos de enumeración
               href: system-information-enumeration-types.md
               items:
                 - name: COMPUTER_NAME_FORMAT
@@ -392,12 +392,12 @@
                   href: /windows/desktop/api/Secext/ne-secext-extended_name_format
                 - name: FIRMWARE_TYPE
                   href: /windows/win32/api/Winnt/ne-winnt-firmware_type
-            - name: Constantes del equipo de archivos de imagen
+            - name: Constantes de la máquina de archivos de imagen
               href: image-file-machine-constants.md
-    - name: Hora
+    - name: Time
       href: time.md
       items:
-        - name: Acerca del tiempo
+        - name: Ya era hora
           href: about-time.md
           items:
             - name: Hora del sistema
@@ -410,30 +410,30 @@
               href: ms-dos-date-and-time.md
             - name: Hora de Windows
               href: windows-time.md
-            - name: Tiempo de interrupción
+            - name: Hora de interrupción
               href: interrupt-time.md
-        - name: Con tiempo
+        - name: Uso del tiempo
           href: using-time.md
           items:
-            - name: Recuperación del tiempo de Last-Write
+            - name: Recuperación de la Last-Write tiempo
               href: retrieving-the-last-write-time.md
             - name: Cambiar una hora de archivo a la hora actual
               href: changing-a-file-time-to-the-current-time.md
-            - name: Convertir un valor de time_t en una hora de archivo
+            - name: Convertir un valor time_t en una hora de archivo
               href: converting-a-time-t-value-to-a-file-time.md
             - name: Adquisición de marcas de tiempo de alta resolución
               href: acquiring-high-resolution-time-stamps.md
         - name: Referencia de tiempo
           href: time-reference.md
           items:
-            - name: Funciones Time
+            - name: Funciones de tiempo
               href: time-functions.md
               items:
                 - name: CompareFileTime
                   href: /windows/desktop/api/FileAPI/nf-fileapi-comparefiletime
-                - name: ConvertAuxiliaryCounterToPerformanceCounter
+                - name: ConvertCountiliaryCounterToPerformanceCounter
                   href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-convertauxiliarycountertoperformancecounter
-                - name: ConvertPerformanceCounterToAuxiliaryCounter
+                - name: ConvertPerformanceCounterToCountiliaryCounter
                   href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-convertperformancecountertoauxiliarycounter
                 - name: DosDateTimeToFileTime
                   href: /windows/desktop/api/Winbase/nf-winbase-dosdatetimetofiletime
@@ -465,7 +465,7 @@
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimepreciseasfiletime
                 - name: GetSystemTimes
                   href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getsystemtimes
-                - name: GetTickCount
+                - name: Gettickcount
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-gettickcount
                 - name: GetTickCount64
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-gettickcount64
@@ -477,7 +477,7 @@
                   href: /windows/desktop/api/FileAPI/nf-fileapi-localfiletimetofiletime
                 - name: NtQuerySystemTime
                   href: /windows/desktop/api/Winternl/nf-winternl-ntquerysystemtime
-                - name: QueryAuxiliaryCounterFrequency
+                - name: QueryQliliaryCounterFrequency
                   href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryauxiliarycounterfrequency
                 - name: QueryInterruptTime
                   href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime
@@ -536,14 +536,14 @@
       items:
         - name: Creación de un proveedor de hora
           href: creating-a-time-provider.md
-        - name: Registrar un proveedor de hora
+        - name: Registro de un proveedor de hora
           href: registering-a-time-provider.md
-        - name: Proveedor de tiempo de ejemplo
+        - name: Proveedor de hora de ejemplo
           href: sample-time-provider.md
         - name: Referencia del proveedor de hora
           href: time-provider-reference.md
           items:
-            - name: Funciones de proveedor de hora
+            - name: Funciones del proveedor de hora
               href: time-provider-functions.md
               items:
                 - name: AlertSamplesAvailFunc

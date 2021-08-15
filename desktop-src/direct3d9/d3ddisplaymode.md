@@ -1,7 +1,7 @@
 ---
 description: Describe el modo de presentación.
 ms.assetid: e83c03ee-2067-45c9-8fd8-8c4db5558df4
-title: Estructura D3DDISPLAYMODE (D3D9Types. h)
+title: Estructura D3DDISPLAYMODE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 8bf73899742f02a9682a3a27319768db894fd682
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9879a9711466d3fb5f6aa4117a9aaf3b8a10fe13886cffa8d7ee9b81c00b0b00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987485"
 ---
-# <a name="d3ddisplaymode-structure"></a>Estructura D3DDISPLAYMODE
+# <a name="d3ddisplaymode-structure"></a>D3DDISPLAYMODE (estructura)
 
 Describe el modo de presentación.
 
@@ -45,18 +45,18 @@ typedef struct D3DDISPLAYMODE {
 **Width**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Ancho de la pantalla, en píxeles.
+Ancho de pantalla, en píxeles.
 
 </dd> <dt>
 
 **Height**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -64,10 +64,10 @@ Alto de la pantalla, en píxeles.
 
 </dd> <dt>
 
-**Frecuencia**
+**RefreshRate**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -82,7 +82,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Miembro del tipo enumerado [D3DFORMAT](d3dformat.md) , que describe el formato de superficie del modo de presentación.
+Miembro del tipo [enumerado D3DFORMAT,](d3dformat.md) que describe el formato de superficie del modo de presentación.
 
 </dd> </dl>
 
@@ -92,11 +92,11 @@ Miembro del tipo enumerado [D3DFORMAT](d3dformat.md) , que describe el formato d
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

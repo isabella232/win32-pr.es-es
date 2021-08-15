@@ -1,6 +1,6 @@
 ---
 title: Atributo msSFU-30-Aliases
-description: Contiene parte del mapa de correo de NIS.
+description: Contiene parte del mapa de correo nis.
 ms.assetid: 8562d872-3447-45cb-bb8a-250ac57d7add
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118424985"
 ---
 # <a name="mssfu-30-aliases-attribute"></a>Atributo msSFU-30-Aliases
 
-Contiene parte del mapa de correo de NIS.
+Contiene parte del mapa de correo nis.
 
 
 
@@ -32,7 +32,7 @@ Contiene parte del mapa de correo de NIS.
 | CN                | msSFU-30-Aliases                     |
 | Ldap-Display-Name | msSFU30Aliases                       |
 | Size              | \-                                   |
-| Actualizar privilegios  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.323          |
 | System-Id-Guid    | 20ebf171-c69a-4c31-b29d-dcb837d8912d |

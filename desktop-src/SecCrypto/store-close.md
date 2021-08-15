@@ -1,7 +1,7 @@
 ---
 description: Cierra un almacén de certificados abierto.
 ms.assetid: 14db819a-b220-47d4-9030-72157e0e5019
-title: Store. Close (método)
+title: Método Store.Close
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 2e3deb127ec8b19d9ec5c625f07cfaa2685b776c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e0310db88b29fea18756ecaf7a2dc142097c3a6e53dfff5892acdaf4030b9b00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897930"
 ---
-# <a name="storeclose-method"></a>Store. Close (método)
+# <a name="storeclose-method"></a>Método Store.Close
 
-\[El método **Close** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En su lugar, use la [**clase X509Store**](/previous-versions/windows/embedded/hh424027(v=msdn.10)) en el espacio de nombres [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[El **método Close** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use [**la clase X509Store**](/previous-versions/windows/embedded/hh424027(v=msdn.10)) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-El método **Close** cierra un almacén de [*certificados*](../secgloss/c-gly.md)abierto.
+El **método Close** cierra un almacén de certificados [*abierto.*](../secgloss/c-gly.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,32 +43,32 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Después de llamar al método **Close** , se destruye el objeto [**Store**](store.md) .
+Después de llamar al método **Close,** [**se**](store.md) destruye el objeto Store.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,1 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.1 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Store**](store.md)
+[**Tienda**](store.md)
 </dt> <dt>
 
-[**Objetos de criptografía**](cryptography-objects.md)
+[**Objetos criptografía**](cryptography-objects.md)
 </dt> <dt>
 
-[**Ábra**](store-open.md)
+[**Abierto**](store-open.md)
 </dt> </dl>
 
  

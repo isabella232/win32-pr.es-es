@@ -4,7 +4,7 @@ description: Los métodos de la interfaz IADsLocality leen y escriben las propie
 ms.assetid: 5d1cea40-62fb-49d4-857f-4563e9db7f51
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propiedad IADsLocality
+- AdsI de métodos de propiedad IADsLocality
 topic_type:
 - apiref
 api_name:

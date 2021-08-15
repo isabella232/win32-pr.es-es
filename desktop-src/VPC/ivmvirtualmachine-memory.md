@@ -4,8 +4,8 @@ description: Cantidad de memoria física en la máquina virtual, en megabytes.
 ms.assetid: 1a1d4cc7-a537-49f0-981f-0b72eca9013e
 keywords:
 - Propiedad de memoria Virtual PC
-- Propiedad de memoria Virtual PC , IVMVirtualMachine (interfaz)
-- IVMVirtualMachine interface Virtual PC , Propiedad Memory
+- Propiedad de memoria Virtual PC, interfaz IVMVirtualMachine
+- Interfaz IVMVirtualMachine Pc virtual, propiedad Memory
 topic_type:
 - apiref
 api_name:
@@ -27,7 +27,7 @@ ms.locfileid: "118344669"
 ---
 # <a name="ivmvirtualmachinememory-property"></a>IVMVirtualMachine::Memory, propiedad
 
-\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use el proveedor WMI de [Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera y establece la cantidad de memoria física de la máquina virtual, en megabytes.
 
@@ -60,9 +60,9 @@ Especifica la cantidad de memoria física, en megabytes.
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                            | La operación se realizó correctamente.<br/>                  |
 | <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>              | El parámetro es **NULL.**<br/>                     |
-| <dl> <dt>E \_ INVALIDARG</dt> <dt>0x80000003</dt> </dl>           | El parámetro no es válido o está fuera del intervalo.<br/> |
+| <dl> <dt>E \_ Invalidarg</dt> <dt>0x80000003</dt> </dl>           | El parámetro no es válido o está fuera del intervalo.<br/> |
 | <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl>      | La configuración es desconocida.<br/>                  |
-| <dl> <dt>Máquina virtual \_ E \_ PREF \_ NOT \_ FOUND</dt> <dt>0xA0040300</dt> </dl> | No se encontró la preferencia.<br/>                  |
+| <dl> <dt>Máquina virtual \_ E \_ NO SE ENCONTRÓ \_ LA \_ </dt> <dt>0XA0040300</dt> </dl> | No se encontró la preferencia.<br/>                  |
 | <dl> <dt>Máquina virtual \_ E \_ PREF \_ VM \_ ACTIVE</dt> <dt>0xA0040302</dt> </dl> | La máquina virtual se ejecuta o se guarda.<br/>       |
 | <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>      | Se produjo un error inesperado.<br/>              |
 

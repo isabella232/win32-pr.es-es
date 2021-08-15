@@ -3,7 +3,7 @@ title: Tipo simple QNameList
 description: Define una lista de nombres completos.
 ms.assetid: 727d87a0-82f5-44fa-a841-4c2445f78063
 keywords:
-- QNameList de tipo simple EventLog
+- EventLog de tipo simple QNameList
 topic_type:
 - apiref
 api_name:

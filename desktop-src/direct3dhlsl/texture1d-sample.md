@@ -21,7 +21,7 @@ ms.locfileid: "118505725"
 ---
 # <a name="texture1dsample-methods"></a>Métodos Texture1D::Sample
 
-Muestrea [**un objeto Texture1D.**](sm5-object-texture1d.md)
+Muestrea un [**objeto Texture1D.**](sm5-object-texture1d.md)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 

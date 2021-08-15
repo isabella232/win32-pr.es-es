@@ -1,6 +1,6 @@
 ---
-title: Otros ejemplos de máscara
-description: Otros ejemplos de máscara
+title: Otras muestras de máscara
+description: Otras muestras de máscara
 ms.assetid: 72eaa417-d7ce-4521-9289-17f392146ec9
 keywords:
 - crear máscaras,ejemplos de código
@@ -18,9 +18,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118338359"
 ---
-# <a name="other-skin-samples"></a>Otros ejemplos de máscara
+# <a name="other-skin-samples"></a>Otras muestras de máscara
 
-Para ver ejemplos de máscaras  de trabajo completas, haga clic en el botón Inicio, seleccione Programas **y,** **a** continuación, Windows Media , Windows SDK de **Media y, a** continuación, haga clic en Player SDK samples (Ejemplos del SDK del **reproductor).** Primero debe instalar el SDK Reproductor de Windows Media para usar los ejemplos.
+Para ver ejemplos de máscaras  de trabajo completas, haga clic en el botón Inicio y, a continuación, seleccione Programas **y,** a continuación, Windows **Media**, Windows SDK de **Media y, a** continuación, haga clic en Player SDK samples (Ejemplos del SDK **del reproductor).** Primero debe instalar el SDK Reproductor de Windows Media para usar los ejemplos.
 
 ## <a name="related-topics"></a>Temas relacionados
 

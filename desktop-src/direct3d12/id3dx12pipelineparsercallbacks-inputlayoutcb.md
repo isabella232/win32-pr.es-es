@@ -48,7 +48,7 @@ void InputLayoutCb(
 
 Tipo: **const [**D3D12 \_ INPUT LAYOUT \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_input_layout_desc)**
 
-Detalles del subobjeto de diseño de entrada que se analiza desde un flujo de estado de canalización.
+Detalles del subobjeto de diseño de entrada que se analiza desde una secuencia de estado de canalización.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ No devuelve nada.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

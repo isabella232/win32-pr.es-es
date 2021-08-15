@@ -1,11 +1,11 @@
 ---
-title: FRS-Service-Command (atributo)
-description: Cadena Unicode que un administrador puede establecer para pasar un comando a cada miembro del conjunto de réplicas. No se utiliza.
+title: Atributo FRS-Service-Command
+description: Cadena Unicode que un administrador puede establecer para pasar un comando a cada miembro del conjunto de réplicas. No se usa.
 ms.assetid: 9d8b6fd1-9040-42d2-816c-86fed4d54c41
 ms.tgt_platform: multiple
 keywords:
-- 'FRS: atributo Service-Command de AD Schema'
-- fRSServiceCommand esquema de AD de atributos
+- Esquema de AD del atributo FRS-Service-Command
+- Esquema de AD del atributo fRSServiceCommand
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa982bce6ef46765df7f9709a213919c9dfc8527
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9590e367c345995decff0901dd478cc5229176abbbcd708d6fc796ee3aa1bd69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961504"
 ---
-# <a name="frs-service-command-attribute"></a>FRS-Service-Command (atributo)
+# <a name="frs-service-command-attribute"></a>Atributo FRS-Service-Command
 
-Cadena Unicode que un administrador puede establecer para pasar un comando a cada miembro del conjunto de réplicas. No se utiliza.
+Cadena Unicode que un administrador puede establecer para pasar un comando a cada miembro del conjunto de réplicas. No se usa.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | FRS-Service-Command                         |
-| Nombre para mostrar de LDAP | fRSServiceCommand                           |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | fRSServiceCommand                           |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.500                      |
-| System-ID-GUID    | ddac0cee-af8f-11d0-afeb-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ddac0cee-af8f-11d0-afeb-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,20 +53,20 @@ Cadena Unicode que un administrador puede establecer para pasar un comando a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Cadena Unicode que un administrador puede establecer para pasar un comando a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Cadena Unicode que un administrador puede establecer para pasar un comando a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Cadena Unicode que un administrador puede establecer para pasar un comando a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Cadena Unicode que un administrador puede establecer para pasar un comando a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Cadena Unicode que un administrador puede establecer para pasar un comando a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 

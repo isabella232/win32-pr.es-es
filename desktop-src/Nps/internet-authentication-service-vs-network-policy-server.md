@@ -52,7 +52,7 @@ Además, NPS contiene un conjunto de nuevas características que amplían las fu
 <ul>
 <li>Expiración de la directiva.</li>
 <li>Versión del sistema operativo.</li>
-<li>Acceda a la dirección IP del cliente.</li>
+<li>Acceso a la dirección IP del cliente.</li>
 <li>Directivas de mantenimiento.</li>
 <li>Tipos de EAP permitidos.</li>
 <li>Hcap.</li>
@@ -95,11 +95,11 @@ NPS, a través de NAP, interopera con CISCO NAC.<br/> IAS no admite NAP.<br/></t
 </tr>
 <tr class="odd">
 <td>Se ha actualizado el scripting de línea de comandos <a href="/previous-versions/windows/it-pro/windows-server-2003/cc785383(v=ws.10)">con Netsh</a>.<br/></td>
-<td>NPS admite la interfaz de línea de comandos &quot; nps de &quot; Netsh. &quot;Netsh nps contiene nuevos comandos que permiten &quot; configurar completamente NPS, incluidas las características de NAP.<br/> IAS admite la interfaz &quot; de la línea de comandos aaaa de &quot; Netsh.<br/></td>
+<td>NPS admite la interfaz de línea de comandos &quot; nps de &quot; Netsh. &quot;Netsh nps &quot; contiene nuevos comandos que permiten configurar completamente NPS, incluidas las características de NAP.<br/> IAS admite la interfaz &quot; de la línea de comandos aaaa de &quot; Netsh.<br/></td>
 </tr>
 <tr class="even">
 <td>Aislamiento de directivas<br/></td>
-<td>NPS habilita la implementación del aislamiento de directiva estableciendo el origen de la directiva de red. Se pueden configurar directivas que solo son aplicables a un tipo DE NAS predeterminado.<br/> IAS no admite el aislamiento de directivas.<br/></td>
+<td>NPS habilita la implementación del aislamiento de directiva estableciendo el origen de la directiva de red. Se pueden configurar directivas que solo son aplicables a un tipo NAS predeterminado.<br/> IAS no admite el aislamiento de directivas.<br/></td>
 </tr>
 </tbody>
 </table>

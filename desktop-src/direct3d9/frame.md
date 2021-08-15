@@ -1,7 +1,7 @@
 ---
-description: Define un marco de coordenadas o &\# 0034;frame de reference.&\# 0034; La plantilla Frame está abierta y puede contener cualquier objeto. Las funciones de carga de malla D3DX reconocen las instancias de plantilla Mesh, FrameTransformMatrix y Frame como objetos secundarios al cargar una instancia de Frame.
+description: Define un marco de coordenadas o &\# 0034;marco de reference.&\# 0034; La plantilla Marco está abierta y puede contener cualquier objeto. Las funciones de carga de malla D3DX reconocen las instancias de plantilla Mesh, FrameTransformMatrix y Frame como objetos secundarios al cargar una instancia de Frame.
 ms.assetid: vs|directx_sdk|~\frame.htm
-title: Fotograma (gráficos de Direct3D 9)
+title: Marco (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ff77cc6f4618b3ded3afc9453c12a96b115ec4bfe0f90cb83a92826378212c83
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118523038"
 ---
-# <a name="frame-direct3d-9-graphics"></a>Fotograma (gráficos de Direct3D 9)
+# <a name="frame-direct3d-9-graphics"></a>Marco (gráficos de Direct3D 9)
 
-Define un marco de coordenadas o "marco de referencia". La plantilla Frame está abierta y puede contener cualquier objeto. Las funciones de carga de malla D3DX reconocen las instancias de plantilla [**Mesh,**](mesh.md) [**FrameTransformMatrix**](frametransformmatrix.md)y **Frame** como objetos secundarios al cargar una **instancia de Frame.**
+Define un marco de coordenadas o "marco de referencia". La plantilla Marco está abierta y puede contener cualquier objeto. Las funciones de carga de malla D3DX reconocen las instancias de plantilla [**Mesh,**](mesh.md) [**FrameTransformMatrix**](frametransformmatrix.md)y **Frame** como objetos secundarios al cargar una **instancia de Frame.**
 
 ``` syntax
 template Frame

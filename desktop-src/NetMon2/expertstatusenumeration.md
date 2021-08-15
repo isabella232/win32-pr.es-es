@@ -1,7 +1,7 @@
 ---
-description: La enumeración EXPERTSTATUSENUMERATION contiene valores de estado. Lo usa el miembro status de la estructura EXPERTSTATUS y el parámetro status en ExpertIndicateStatus.
+description: La enumeración EXPERTSTATUSENUMERATION contiene valores de estado. Lo usa el miembro Status de la estructura EXPERTSTATUS y el parámetro Status de ExpertIndicateStatus.
 ms.assetid: 217dce5a-3698-45a9-bb13-8379bcbdd762
-title: Enumeración EXPERTSTATUSENUMERATION (Netmon. h)
+title: ENUMERACIÓN EXPERTSTATUSENUMERATION (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: b634d4dad2e024c3c995216b5af7de23b14b7da0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee0729deab566717457f03af27a7e31de8cdf8f1b78f9a5f97b3c3ff406641fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795798"
 ---
-# <a name="expertstatusenumeration-enumeration"></a>Enumeración EXPERTSTATUSENUMERATION
+# <a name="expertstatusenumeration-enumeration"></a>ENUMERACIÓN EXPERTSTATUSENUMERATION
 
-La enumeración **EXPERTSTATUSENUMERATION** contiene valores de estado. Lo usa el miembro **status** de la estructura [EXPERTSTATUS](expertstatus.md) y el parámetro *status* en [ExpertIndicateStatus](expertindicatestatus.md).
+La **enumeración EXPERTSTATUSENUMERATION** contiene valores de estado. Lo usa el miembro **Status de** la [estructura EXPERTSTATUS](expertstatus.md) y el *parámetro Status* [de ExpertIndicateStatus](expertindicatestatus.md).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,45 +44,45 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="EXPERTSTATUS_INACTIVE"></span><span id="expertstatus_inactive"></span>**EXPERTSTATUS \_ INactivo**
+<span id="EXPERTSTATUS_INACTIVE"></span><span id="expertstatus_inactive"></span>**EXPERTSTATUS \_ INACTIVE**
 </dt> <dd>
 
-El experto nunca comenzó.
+El experto nunca empezó.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_STARTING"></span><span id="expertstatus_starting"></span>**Inicio de EXPERTSTATUS \_**
+<span id="EXPERTSTATUS_STARTING"></span><span id="expertstatus_starting"></span>**INICIO \_ DE EXPERTSTATUS**
 </dt> <dd>
 
-Se está iniciando el experto.
+El experto se está iniciando.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_RUNNING"></span><span id="expertstatus_running"></span>**EXPERTSTATUS en \_ ejecución**
+<span id="EXPERTSTATUS_RUNNING"></span><span id="expertstatus_running"></span>**EJECUCIÓN \_ DE EXPERTSTATUS**
 </dt> <dd>
 
 El experto se ejecuta con normalidad.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_PROBLEM"></span><span id="expertstatus_problem"></span>**problema de EXPERTSTATUS \_**
+<span id="EXPERTSTATUS_PROBLEM"></span><span id="expertstatus_problem"></span>**PROBLEMA \_ DE EXPERTSTATUS**
 </dt> <dd>
 
-Un problema especificado en el *subestado* detuvo el experto.
+Un problema especificado en *SubStatus detuvo* al experto.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_ABORTED"></span><span id="expertstatus_aborted"></span>**EXPERTSTATUS \_ anulado**
+<span id="EXPERTSTATUS_ABORTED"></span><span id="expertstatus_aborted"></span>**EXPERTSTATUS \_ ABORTED**
 </dt> <dd>
 
-Monitor de red detuvo el experto.
+Monitor de red detuvo al experto.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_DONE"></span><span id="expertstatus_done"></span>**EXPERTSTATUS \_ completado**
+<span id="EXPERTSTATUS_DONE"></span><span id="expertstatus_done"></span>**EXPERTSTATUS \_ DONE**
 </dt> <dd>
 
-El experto ha finalizado correctamente.
+El experto finalizó correctamente.
 
 </dd> </dl>
 
@@ -90,11 +90,11 @@ El experto ha finalizado correctamente.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

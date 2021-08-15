@@ -48,13 +48,13 @@ Donde:
 
  
 
--   El [registro del contador de](dx9-graphics-reference-asm-ps-registers-loop-counter.md) bucles (aL) contiene el número de bucles actual y se puede usar para el direccionamiento relativo en el registro de [color](dx9-graphics-reference-asm-ps-registers-input-color.md) de entrada (v ) dentro del bloque \# de bucle.
+-   El [registro de contadores](dx9-graphics-reference-asm-ps-registers-loop-counter.md) de bucles (aL) contiene el número de bucles actual y se puede usar para el direccionamiento relativo en el registro de [color](dx9-graphics-reference-asm-ps-registers-input-color.md) de entrada (v ) dentro del bloque \# de bucle.
 -   i \# .x especifica el recuento de iteraciones. El intervalo legal es \[ 0, 255 \] . Tenga en cuenta que esta instrucción no incrementa ni disminuye el valor de i \# .x.
 -   i .y especifica el valor inicial del registro del contador de \# bucles (aL). [](dx9-graphics-reference-asm-ps-registers-loop-counter.md) El intervalo legal es \[ 0, 255 \] . Tenga en cuenta que esta instrucción no incrementa ni disminuye el valor de i \# .y.
 -   i \# .z especifica el tamaño del paso o el intervalo. El intervalo legal es \[ -128, 127 \] .
 -   El bloque de bucle no usa i \# .w y debe ser 0.
 -   Los bloques de bucle pueden estar anidados. Vea [Flow control de datos](dx9-graphics-reference-asm-ps-instructions-flow-control.md).
--   Cuando está anidado, el valor del registro de [contadores](dx9-graphics-reference-asm-ps-registers-loop-counter.md) de bucles (aL) hace referencia al bloque de bucle de encierre inmediato.
+-   Cuando se anida, el valor del registro de [contador](dx9-graphics-reference-asm-ps-registers-loop-counter.md) de bucles (aL) hace referencia al bloque de bucle de encierre inmediato.
 -   Los bloques de bucle pueden estar completamente dentro de un bloque if \* o rodearse completamente. No se permite ningún estrango.
 
 ## <a name="example"></a>Ejemplo

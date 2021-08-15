@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de cambio de contexto. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de cambio de contexto. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 3f9f84d0-18a9-493c-b104-8236b2bd8404
-title: Clase CSwitch
+title: CSwitch (clase)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,18 +24,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 91004ca276140271e8d73c3fc226e83c4e03d1fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09efeac38babb057621cb6f25d14d3a631c12242e91982ae3ab9e79570416be5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118395351"
 ---
-# <a name="cswitch-class"></a>Clase CSwitch
+# <a name="cswitch-class"></a>CSwitch (clase)
 
 Esta clase es la clase de tipo de evento para los eventos de cambio de contexto.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,26 +60,26 @@ class CSwitch : Thread_V2
 
 ## <a name="members"></a>Miembros
 
-La clase **CSwitch** tiene estos tipos de miembros:
+La **clase CSwitch** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CSwitch** tiene estas propiedades.
+La **clase CSwitch** tiene estas propiedades.
 
 <dl> <dt>
 
 **NewThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), Format ("x")
+Calificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Nuevo identificador de subproceso después del modificador.
@@ -95,23 +95,23 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Prioridad del subproceso nuevo.
+Prioridad de subproceso del nuevo subproceso.
 
 </dd> <dt>
 
 **NewThreadWaitTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (11), formato ("x")
+Calificadores: WmiDataId(11), Format("x")
 </dt> </dl>
 
 Tiempo de espera para el nuevo subproceso.
@@ -121,16 +121,16 @@ Tiempo de espera para el nuevo subproceso.
 **OldThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), Format ("x")
+Calificadores: WmiDataId(2), Format("x")
 </dt> </dl>
 
-IDENTIFICADOR de subproceso anterior.
+Identificador de subproceso anterior.
 
 </dd> <dt>
 
@@ -143,10 +143,10 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
-Prioridad de subproceso del subproceso anterior.
+Prioridad del subproceso anterior.
 
 </dd> <dt>
 
@@ -159,10 +159,10 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (9)
+Calificadores: WmiDataId(9)
 </dt> </dl>
 
-Estado del subproceso anterior. A continuación se muestran los posibles valores de estado:
+Estado del subproceso anterior. Estos son los valores de estado posibles:
 
 | Estado | Descripción                                   |
 |-------|-----------------------------------------------|
@@ -190,7 +190,7 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (10), formato ("x")
+Calificadores: WmiDataId(10), Format("x")
 </dt> </dl>
 
 Tiempo de espera ideal del subproceso anterior.
@@ -206,15 +206,15 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8)
+Calificadores: WmiDataId(8)
 </dt> </dl>
 
-Modo de espera del subproceso anterior. Los posibles valores son los siguientes:
+Modo de espera para el subproceso anterior. Los posibles valores son los siguientes:
 
 | Estado | Descripción |
 |-------|-------------|
 | 0     | KernelMode  |
-| 1     | En modo usuario    |
+| 1     | UserMode    |
 
 
 
@@ -231,16 +231,16 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7)
+Calificadores: WmiDataId(7)
 </dt> </dl>
 
-Razón de espera del subproceso anterior. Los posibles valores son los siguientes:
+Motivo de espera del subproceso anterior. Los posibles valores son los siguientes:
 
 | Estado | Descripción       |
 |-------|-------------------|
 | 0     | Ejecutivo         |
 | 1     | FreePage          |
-| 2     | Pagein.            |
+| 2     | PageIn            |
 | 3     | PoolAllocation    |
 | 4     | DelayExecution    |
 | 5     | Suspended         |
@@ -286,29 +286,29 @@ Razón de espera del subproceso anterior. Los posibles valores son los siguiente
 **PreviousCState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5)
+Calificadores: WmiDataId(5)
 </dt> </dl>
 
-Índice del estado de C que el procesador utilizó por última vez. Un valor de 0 representa el estado de inactividad más claro con valores más altos que representan los Estados C más profundos.
+Índice del estado C que usó por última vez el procesador. Un valor de 0 representa el estado de inactividad más claro con valores más altos que representan estados C más profundos.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (12)
+Calificadores: WmiDataId(12)
 </dt> </dl>
 
 Reservado.
@@ -324,33 +324,33 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6)
+Calificadores: WmiDataId(6)
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estos eventos producen un gran volumen de eventos.
+Estos eventos generan un gran volumen de eventos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Conversaciones**](thread.md)
+[**Hilo**](thread.md)
 </dt> <dt>
 
 [**Subproceso \_ V2**](thread-v2.md)

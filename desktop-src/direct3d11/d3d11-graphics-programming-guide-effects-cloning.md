@@ -15,7 +15,7 @@ ms.locfileid: "118538009"
 
 La clonación de un efecto crea una segunda copia casi idéntica del efecto. Vea el siguiente calificador único para obtener una explicación de por qué no es exacto. Una segunda copia de un efecto es útil cuando se desea usar el marco de efectos en varios subprocesos, ya que el tiempo de ejecución del efecto no es seguro para subprocesos para mantener un alto rendimiento.
 
-Puesto que los contextos de dispositivo también no son seguros para subprocesos, los distintos subprocesos deben pasar distintos contextos de dispositivo al método ID3DX11EffectPass::Apply.
+Puesto que los contextos de dispositivo también no son seguros para subprocesos, los subprocesos diferentes deben pasar contextos de dispositivo diferentes al método ID3DX11EffectPass::Apply.
 
 Un efecto se puede clonar con la sintaxis siguiente:
 
@@ -30,9 +30,9 @@ HRESULT hr = pEffect->CloneEffect( Flags, &pClonedEffect );
 
 En el ejemplo anterior, la copia clonada encapsulará el mismo estado que el efecto original, independientemente del estado en el que se encuentra el efecto original. En concreto:
 
-1.  Si pEffect está optimizado, se optimiza el efecto pCloned
+1.  Si pEffect está optimizado, se optimiza pCloned Effect.
 2.  Si pEffect tiene algunas variables administradas por el usuario, pCloned Effect tendrá las mismas variables administradas por el usuario (consulte la descripción única a continuación).
-3.  Las actualizaciones de variables pendientes (hasta que se aplique el estado del dispositivo Aplicar actualizaciones de llamada) en pEffect estarán pendientes en pClonedEffect.
+3.  Las actualizaciones de variables pendientes (hasta que una llamada a Apply actualice el estado del dispositivo) en pEffect estarán pendientes en pClonedEffect.
 
 Los siguientes objetos de dispositivo Direct3D 11 son inmutables o nunca actualizados por el marco de efectos, por lo que el efecto clonado apuntará a los mismos objetos que el efecto original:
 
@@ -42,14 +42,14 @@ Los siguientes objetos de dispositivo Direct3D 11 son inmutables o nunca actuali
 4.  Texturas (sin incluir búferes de textura)
 5.  Vistas de acceso no ordenado
 
-Los siguientes objetos de dispositivo Direct3D 11 son inmutables y modificados por el tiempo de ejecución del efecto (a menos que el usuario lo administra o solo en un efecto clonado); Se crean nuevas copias de estos objetos cuando no son únicos:
+Los siguientes objetos de dispositivo Direct3D 11 son inmutables y modificados por el tiempo de ejecución del efecto (a menos que sea administrado por el usuario o único en un efecto clonado); Se crean nuevas copias de estos objetos cuando no son únicas:
 
 1.  Búferes constantes
 2.  Búferes de textura
 
 ## <a name="single-constant-buffers-and-texture-buffers"></a>Búferes constantes únicos y búferes de textura
 
-Tenga en cuenta que esta explicación se aplica tanto a los búferes constantes como a las texturas, pero se supone que los búferes constantes son más fáciles de leer.
+Tenga en cuenta que esta explicación se aplica tanto a los búferes constantes como a las texturas, pero los búferes constantes se asumen para facilitar la lectura.
 
 Puede haber casos en los que un búfer constante solo se actualice mediante un subproceso, pero el estado del dispositivo establecido por los efectos clonados usará estos datos. Por ejemplo, el efecto principal puede actualizar el mundo y ver matrices a las que se hace referencia desde sombreadores en efectos clonados que no cambian el mundo y ven matrices. En estos casos, los efectos clonados deben hacer referencia al búfer constante actual en lugar de volver a crear uno.
 
@@ -58,7 +58,7 @@ Hay dos maneras de lograr este resultado deseado:
 1.  Use ID3DX11EffectConstantBuffer::SetConstantBuffer en el efecto clonado para que sea administrado por el usuario.
 2.  Marque el búfer constante como "único" en el código HLSL, lo que obliga al tiempo de ejecución del efecto a tratarse como administrado por el usuario después de la clonación.
 
-Hay dos diferencias entre los dos métodos anteriores. En primer lugar, en el método 1, se creará un nuevo ID3D11Buffer y el usuario antes de llamar a SetConstantBuffer. Además, después de llamar a UndoSetConstantBuffer en el efecto clonado, la variable del método 1 apuntará al búfer recién creado (cuyos efectos se actualizarán en Aplicar), mientras que la variable del método 2 seguirá apuntando al búfer original (no lo actualizará en Aplicar).
+Hay dos diferencias entre los dos métodos anteriores. En primer lugar, en el método 1, se creará un nuevo ID3D11Buffer y se creará un usuario antes de llamar a SetConstantBuffer. Además, después de llamar a UndoSetConstantBuffer en el efecto clonado, la variable del método 1 apuntará al búfer recién creado (cuyos efectos se actualizarán en Aplicar), mientras que la variable del método 2 seguirá apuntando al búfer original (no a actualizarlo en Aplicar).
 
 Vea el ejemplo siguiente en HLSL:
 

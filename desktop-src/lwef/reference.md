@@ -1,19 +1,19 @@
 ---
 title: Referencia (interfaz del servidor de Microsoft Agent)
-description: En este tema de referencia se describen los objetos de la interfaz del servidor de Microsoft Agent. Microsoft Agent está en desuso a partir de Windows 7.
+description: En este tema de referencia se describen los objetos de la interfaz del servidor del agente de Microsoft. Microsoft Agent está en desuso a partir Windows 7.
 ms.assetid: vs|msagent|~\paface_83s5.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9e6e88e80b2a780e7a4ce57eea3d7e3e06c3c66
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0941f36d6764a7b3468123a435e9ae1b58f77ba049bae29cca288175ae80cae5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975815"
 ---
 # <a name="reference-microsoft-agent-server-interface"></a>Referencia (interfaz del servidor de Microsoft Agent)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 Esta referencia contiene las interfaces siguientes:
 

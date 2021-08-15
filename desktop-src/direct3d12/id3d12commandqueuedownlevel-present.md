@@ -1,6 +1,6 @@
 ---
-title: Método ID3D12CommandQueueDownlevel::P resent
-description: Copia el contenido de un recurso de Texture2D de Direct3D 12 en una ventana. | Método ID3D12CommandQueueDownlevel::P resent
+title: Id3D12CommandQueueDownlevel::P resent (método)
+description: Copia el contenido de un recurso de Direct3D 12 Texture2D en una ventana. | Id3D12CommandQueueDownlevel::P resent (método)
 keywords:
 - Método Present
 - Método present, interfaz ID3D12CommandQueueDownlevel
@@ -23,9 +23,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118529135"
 ---
-# <a name="id3d12commandqueuedownlevelpresent-method"></a>Método ID3D12CommandQueueDownlevel::P resent
+# <a name="id3d12commandqueuedownlevelpresent-method"></a>Id3D12CommandQueueDownlevel::P resent (método)
 
-Copia el contenido de un recurso de Texture2D de Direct3D 12 en una ventana.
+Copia el contenido de un recurso de Direct3D 12 Texture2D en una ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -84,8 +84,8 @@ Devuelve **S_OK** correcto o, de lo contrario, un HRESULT con error.
 | Encabezado | d3d12downlevel.h |
 | Archivo DLL    | D3D12.dll (solo Windows 7) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 * [ID3D12CommandQueueDownlevel](id3d12commandqueuedownlevel.md)
 * [Direct3D 12 en interfaces de Windows 7](direct3d-12on7-interfaces.md)
-* [Direct3D 12 en Windows 7 (d3d12downlevel.h)](direct3d-12on7-reference.md)
+* [Direct3D 12 en Windows referencia 7 (d3d12downlevel.h)](direct3d-12on7-reference.md)
 * [Direct3D 12 en Windows 7](https://devblogs.microsoft.com/directx/porting-directx-12-games-to-windows-7/)

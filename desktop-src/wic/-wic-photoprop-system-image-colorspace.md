@@ -37,15 +37,15 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se concilian los valores de esquemas diferentes.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido | Path                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
 | 1     | /app1/ifd/exif/{ushort=40961} | ushort      |
 | 2     | /xmp/exif:ColorSpace          | unicode     |
@@ -58,7 +58,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Path                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
 | 1     | /app1/ifd/exif/{ushort=40961} | ushort      |
 | 2     | /xmp/exif:ColorSpace          | unicode     |
@@ -71,7 +71,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Path                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
 | 1     | /app1/ifd/exif/{ushort=40961} |
 | 2     | /xmp/exif:colorspace          |
@@ -82,11 +82,11 @@ Se concilian los valores de esquemas diferentes.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /ifd/exif/{ushort=40961} | ushort      |
 | 2     | /ifd/xmp/exif:ColorSpace | unicode     |
@@ -99,7 +99,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /ifd/exif/{ushort=40961} | ushort      |
 | 2     | /ifd/xmp/exif:ColorSpace | unicode     |
@@ -112,7 +112,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Path                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
 | 1     | /ifd/exif/{ushort=40961} |
 | 2     | /ifd/xmp/exif:colorspace |
@@ -121,7 +121,7 @@ Se concilian los valores de esquemas diferentes.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 

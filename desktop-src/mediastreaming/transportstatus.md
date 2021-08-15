@@ -46,7 +46,7 @@ typedef enum TransportStatus {
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconocido**
 </dt> <dd>
 
-Estado de dispositivo erróneo.
+Estado erróneo del dispositivo.
 
 </dd> <dt>
 

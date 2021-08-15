@@ -48,7 +48,7 @@ void FlagsCb(
 
 Tipo: **[ **MARCAS DE ESTADO DE CANALIZACIÓN D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags)**
 
-Detalles del subobjeto flags que se analiza desde una secuencia de estado de canalización.
+Detalles de los subobjetos de marcas que se analizan desde una secuencia de estado de canalización.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ No devuelve nada.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

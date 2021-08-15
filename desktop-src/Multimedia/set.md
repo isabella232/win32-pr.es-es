@@ -3,7 +3,7 @@ title: Comando set
 description: El comando set establece la configuración de control para el dispositivo. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc, superposición de vídeo y audio de onda reconocen este comando.
 ms.assetid: 1ec4d84e-372a-4b6d-b694-f5afb41f90b2
 keywords:
-- Comando set Windows Multimedia
+- comando set Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118371017"
 # <a name="set-command"></a>Comando set
 
 > [!NOTE]
-> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusario.  Dentro de este documento, hay referencias a la palabra "subordinada". La Guía de estilo de Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa dentro de los comandos. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se modifica en los comandos, corregiremos este documento para que esté alineado.
+> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusario.  Dentro de este documento, hay referencias a la palabra "subordinada". La Guía de estilo de Microsoft [para Bias-Free Comunicaciones](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en los comandos. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se modifica en los comandos, corregiremos este documento para que esté alineado.
 
 
 El comando set establece la configuración de control para el dispositivo. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc, superposición de vídeo y audio de onda reconocen este comando.
@@ -75,7 +75,7 @@ Marca para establecer la configuración del control. En la tabla siguiente se en
 <td><ul>
 <li>audio todo desactivado</li>
 <li>audio todo en</li>
-<li>audio apagado</li>
+<li>audio dejado desactivado</li>
 <li>audio a la izquierda en</li>
 <li>audio desactivado</li>
 <li>audio a la derecha en</li>
@@ -91,7 +91,7 @@ Marca para establecer la configuración del control. En la tabla siguiente se en
 <td><ul>
 <li>audio todo desactivado</li>
 <li>audio todo en</li>
-<li>audio apagado</li>
+<li>audio dejado desactivado</li>
 <li>audio a la izquierda en</li>
 <li>audio desactivado</li>
 <li>audio a la derecha en</li>
@@ -113,7 +113,7 @@ Marca para establecer la configuración del control. En la tabla siguiente se en
 <td><ul>
 <li>audio todo desactivado</li>
 <li>audio todo en</li>
-<li>audio apagado</li>
+<li>audio dejado desactivado</li>
 <li>audio a la izquierda en</li>
 <li>audio desactivado</li>
 <li>audio a la derecha en</li>
@@ -128,13 +128,13 @@ Marca para establecer la configuración del control. En la tabla siguiente se en
 <td><ul>
 <li>audio todo desactivado</li>
 <li>audio todo en</li>
-<li>audio apagado</li>
+<li>audio dejado desactivado</li>
 <li>audio a la izquierda en</li>
 <li>audio desactivado</li>
 <li>audio a la derecha en</li>
 <li>puerta cerrada</li>
 <li>puerta abierta</li>
-<li>master MIDI</li>
+<li>MASTER MIDI</li>
 <li>master none</li>
 <li>master SMPTE</li>
 <li>tiempo de <em>desplazamiento</em></li>
@@ -147,7 +147,7 @@ Marca para establecer la configuración del control. En la tabla siguiente se en
 <li>slave SMPTE</li>
 <li>tempo <em>tempo_value</em></li>
 <li>milisegundos de formato de tiempo</li>
-<li>time format SMPTE <em>fps</em></li>
+<li>fps de SMPTE de formato <em>de hora</em></li>
 <li>time format SMPTE 30 drop</li>
 <li>puntero de canción de formato de tiempo</li>
 </ul></td>
@@ -159,7 +159,7 @@ Marca para establecer la configuración del control. En la tabla siguiente se en
 <li>ensamblado del registro desactivado</li>
 <li>audio todo desactivado</li>
 <li>audio todo en</li>
-<li>audio apagado</li>
+<li>audio dejado desactivado</li>
 <li>audio a la izquierda en</li>
 <li>audio desactivado</li>
 <li>audio a la derecha en</li>
@@ -304,28 +304,28 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 <td>Establece los canales para reproducir y grabar. El archivo se guarda en este formato.</td>
 </tr>
 <tr class="even">
-<td>hora <em>del reloj</em></td>
+<td>hora del <em>reloj</em></td>
 <td>Establece la hora del reloj externo en <em>time.</em> El formato se especifica como un entero largo sin signo.</td>
 </tr>
 <tr class="odd">
 <td>formato de contador</td>
-<td>Establezca el formato de hora para el contador, tal como lo devuelve el <a href="status.md">contador de</a> &quot; estado &quot; . Para obtener información sobre los tipos aplicables, vea el <strong>comando set</strong> &quot; time &quot; format.</td>
+<td>Establezca el formato de hora del contador, tal como lo devuelve el <a href="status.md">contador de</a> &quot; estado &quot; . Para obtener información sobre los tipos aplicables, vea el <strong>comando set</strong> &quot; time &quot; format.</td>
 </tr>
 <tr class="even">
 <td>valor <em>del contador</em></td>
-<td>Establece el contador vcr en el valor especificado. El valor debe especificarse en el formato de contador actual. Para obtener más información, vea el <strong>comando set</strong> &quot; counter &quot; format.</td>
+<td>Establece el contador VCR en el valor especificado. El valor debe especificarse en el formato de contador actual. Para obtener más información, vea el <strong>comando set</strong> &quot; counter &quot; format.</td>
 </tr>
 <tr class="odd">
 <td>puerta cerrada</td>
-<td>Retrae la bandeja y cierra la puerta, si es posible. En el caso de los VCR, carga la cinta automáticamente.</td>
+<td>Retira la bandeja y cierra la puerta, si es posible. En el caso de los VCR, carga la cinta automáticamente.</td>
 </tr>
 <tr class="even">
 <td>puerta abierta</td>
-<td>Abre la puerta y expulsa la bandeja o la cinta, si es posible.</td>
+<td>Abre la puerta y expulsa la bandeja o cinta, si es posible.</td>
 </tr>
 <tr class="odd">
-<td>formato de <em>archivo</em></td>
-<td>Especifica un formato de archivo que se usa para <a href="save.md">los comandos de</a> guardado <a href="capture.md">o</a> captura. Si se omite, esto podría tener como valor predeterminado un formato definido por el controlador de dispositivo. Si el formato de archivo especificado entra en conflicto con el algoritmo y la calidad seleccionados actualmente, se cambian a los valores predeterminados para el formato de archivo. Se definen los siguientes formatos de archivo:
+<td>formato <em>de</em> archivo</td>
+<td>Especifica un formato de archivo que se usa para los comandos <a href="save.md">save</a> <a href="capture.md">o capture.</a> Si se omite, esto podría tener como valor predeterminado un formato definido por el controlador de dispositivo. Si el formato de archivo especificado entra en conflicto con el algoritmo y la calidad seleccionados actualmente, se cambian a los valores predeterminados para el formato de archivo. Se definen los siguientes formatos de archivo:
 <ul>
 <li>avi: especifica el formato AVI.</li>
 <li>avss: especifica el formato avSS.</li>
@@ -346,7 +346,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 <td>Establece el tipo de formato para reproducir y grabar. El archivo se guarda en este formato.</td>
 </tr>
 <tr class="even">
-<td>código de tiempo de índice <br/> contador de índice <br/> index date <br/> tiempo de índice <br/></td>
+<td>código de tiempo del índice <br/> contador de índice <br/> index date <br/> tiempo de índice <br/></td>
 <td>Establece la pantalla de presentación actual en el VCR.</td>
 </tr>
 <tr class="odd">
@@ -359,19 +359,19 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="odd">
 <td>master midi</td>
-<td>Establece el secuenciador MIDI como origen de sincronización. Los datos de sincronización se envían en formato MIDI. El secuenciador MCISEQ no admite esta marca.</td>
+<td>Establece el secuenciador de MIDI como origen de sincronización. Los datos de sincronización se envían en formato MIDI. El secuenciador MCISEQ no admite esta marca.</td>
 </tr>
 <tr class="even">
 <td>master none</td>
-<td>Impide que el secuenciador MIDI envíe datos de sincronización. El secuenciador MCISEQ no admite esta marca.</td>
+<td>Impide que el secuenciador de MIDI envíe datos de sincronización. El secuenciador MCISEQ no admite esta marca.</td>
 </tr>
 <tr class="odd">
 <td>master smpte</td>
-<td>Establece el secuenciador MIDI como origen de sincronización. Los datos de sincronización se envían en formato SMPTE (Society of Motion Picture and Tv Engineers). El secuenciador MCISEQ no admite esta marca.</td>
+<td>Establece el secuenciador de MIDI como origen de sincronización. Los datos de sincronización se envían en formato SMPTE (Society of Motion Picture and Tv Engineers). El secuenciador MCISEQ no admite esta marca.</td>
 </tr>
 <tr class="even">
 <td>tiempo de <em>desplazamiento</em></td>
-<td>Establece el tiempo de desplazamiento <em>de</em>SMPTE. El desplazamiento es la hora inicial de una secuencia basada en SMPTE. La <em>hora</em> se expresa como <em>hh</em>: <em>mm</em>: <em>ss</em>: <em>ff</em>, donde <em>hh</em> es horas, <em>mm</em> es minutos, <em>ss</em> es segundos y <em>ff</em> es marcos.</td>
+<td>Establece el tiempo de desplazamiento <em>de</em>SMPTE. El desplazamiento es la hora inicial de una secuencia basada en SMPTE. El <em>tiempo</em> se expresa como <em>hh</em>: <em>mm</em>: <em>ss</em>: <em>ff</em>, donde <em>hh</em> es horas, <em>mm</em> es minutos, <em>ss</em> es segundos y <em>ff</em> es fotogramas.</td>
 </tr>
 <tr class="odd">
 <td>entero <em>de salida</em></td>
@@ -382,12 +382,12 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 <td>Establece la duración máxima, en milisegundos, de un <a href="pause.md">comando de</a> pausa. Un <em>valor de</em> tiempo de espera de cero indica que no se agotará el tiempo de espera.</td>
 </tr>
 <tr class="odd">
-<td>duración de <em>postroll</em></td>
-<td>Establece la longitud, en el formato de hora actual, necesaria <strong></strong> para detener el transporte de VCR cuando se emite un comando <a href="stop.md">stop</a> o pause.</td>
+<td>duración de la duración del <em>postroll</em></td>
+<td>Establece la longitud, en el formato de hora actual, <a href="stop.md"></a> necesaria <strong></strong> para interrumpir el transporte de VCR cuando se emite un comando de detenerse o pausar.</td>
 </tr>
 <tr class="even">
 <td>asignador de puertos</td>
-<td>Establece el asignador de MIDI como el puerto que recibe los mensajes DE MIDI. Se produce un error en este comando si otra aplicación usa el asignador de MIDI o un puerto que necesita.</td>
+<td>Establece el asignador de MIDI como puerto que recibe los mensajes DE MIDI. Se produce un error en este comando si otra aplicación está utilizando el asignador DE LÍNEA O un puerto que necesita.</td>
 </tr>
 <tr class="odd">
 <td>puerto ninguno</td>
@@ -395,7 +395,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="even">
 <td>puerto <em>port_number</em></td>
-<td>Establece el puerto MIDI que recibe los mensajes DE MIDI. Se produce un error en este comando si otra aplicación usa el puerto que está intentando abrir.</td>
+<td>Establece el puerto MIDI que recibe los mensajes DE MIDI. Se produce un error en este comando si otra aplicación está utilizando el puerto que está intentando abrir.</td>
 </tr>
 <tr class="odd">
 <td>encendido <br/> apagado <br/></td>
@@ -406,7 +406,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 <td>Establece la longitud, en el formato de hora actual, necesaria para estabilizar la salida de VCR.</td>
 </tr>
 <tr class="odd">
-<td>SP de formato de registro <br/> LP de formato de registro <br/> EP con formato de registro <br/></td>
+<td>SP de formato de registro <br/> LP de formato de registro <br/> EP de formato de registro <br/></td>
 <td>Establece el modo de grabación de VCR en SP para reproducción estándar, EP para reproducción extendida o LP para reproducción larga. Estos valores no están diseñados para ser específicos de VHS. Se asignan a tres modos adecuados con otros formatos de cinta. Por ejemplo, SP se asigna a la grabación más rápida y de mayor calidad.</td>
 </tr>
 <tr class="even">
@@ -415,7 +415,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="odd">
 <td>buscar exactamente en<br/> buscar exactamente desactivado <br/></td>
-<td>Selecciona uno de los dos modos de búsqueda. Con &quot; seek exactamente en , seek siempre se &quot; moverá al marco especificado. Con &quot; seek exactamente &quot; desactivado, seek se moverá al fotograma clave más cercano antes del marco especificado.</td>
+<td>Selecciona uno de los dos modos de búsqueda. Con &quot; seek exactamente en , seek siempre se &quot; moverá al marco especificado. Con &quot; la búsqueda exactamente &quot; desactivada, seek se moverá al fotograma clave más cercano antes del marco especificado.</td>
 </tr>
 <tr class="even">
 <td>archivo subordinado</td>
@@ -476,15 +476,15 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="odd">
 <td>time format smpte 24<br/> time format smpte 25<br/> time format smpte 30<br/></td>
-<td>Establece el formato de hora en una velocidad de fotogramas SMPTE. Para los VCR, establece el formato de hora en hh:mm:ss:ff, donde los valores legales son de 00:00:00:00 a 23:59:59:xx, y xx es uno menos que los fotogramas por segundo especificados por el número 24, 25 o 30 como se especifica en la marca. En la entrada, dos puntos (:) son necesarios para separar los componentes. Las unidades menos significativas se pueden omitir si son 00; Por ejemplo, 02:00 es igual que 02:00:00:00. Todos los comandos que usan valores de posición asumirán el formato SMPTE.<br/> El archivo de secuencia establece el formato predeterminado en PPQN o SMPTE.<br/></td>
+<td>Establece el formato de hora en una velocidad de fotogramas SMPTE. Para los VCR, establece el formato de hora en hh:mm:ss:ff, donde los valores legales son de 00:00:00:00 a 23:59:59:xx, y xx es uno menor que los fotogramas por segundo especificados por el número 24, 25 o 30 como se especifica en la marca. En la entrada, dos puntos (:) son necesarios para separar los componentes. Las unidades menos significativas se pueden omitir si son 00; Por ejemplo, 02:00 es igual que 02:00:00:00. Todos los comandos que usan valores de posición asumirán el formato SMPTE.<br/> El archivo de secuencia establece el formato predeterminado en PPQN o SMPTE.<br/></td>
 </tr>
 <tr class="even">
 <td>time format smpte 30 drop</td>
-<td>Establece el formato de hora en SMPTE 30 drop frame rate (Velocidad de fotogramas de colocación de SMPTE 30). En el caso de los VCR, igual que SMPTE 30, salvo que ciertas posiciones de código de tiempo se descartan del formato para que las posiciones de código de tiempo registradas para cada fotograma (con una velocidad de fotogramas de TERA de 29,97 fps) se correspondan con el tiempo real (a 30 fps). Las posiciones de código de tiempo que se descartan son las siguientes: dos cada minuto, en el minuto, para los nueve primeros de cada diez minutos de contenido grabado. Por ejemplo, a las 01:04:59:29, la siguiente posición del código de tiempo sería 01:05:00:02, no 01:05:00:00. Todos los comandos que usan valores de posición asumirán el formato SMPTE.<br/> El archivo de secuencia establece el formato predeterminado en PPQN o SMPTE.<br/></td>
+<td>Establece el formato de hora en SMPTE 30 drop frame rate (Velocidad de fotogramas de colocación de SMPTE 30). En el caso de los VCR, igual que SMPTE 30, salvo que ciertas posiciones de código de tiempo se descartan del formato para que las posiciones de código de tiempo registradas para cada fotograma (con la velocidad de fotogramas TIME de 29,97 fps) se correspondan con el tiempo real (a 30 fps). Las posiciones de código de tiempo que se descartan son las siguientes: dos cada minuto, en el minuto, para los nueve primeros de cada diez minutos de contenido grabado. Por ejemplo, a las 01:04:59:29, la siguiente posición del código de tiempo sería 01:05:00:02, no 01:05:00:00. Todos los comandos que usan valores de posición asumirán el formato SMPTE.<br/> El archivo de secuencia establece el formato predeterminado en PPQN o SMPTE.<br/></td>
 </tr>
 <tr class="odd">
 <td>puntero de canción de formato de tiempo</td>
-<td>Establece el formato de hora en el puntero de canción (notas decimosexta). Todos los comandos que usan valores de posición asumirán unidades de puntero de canción. Esta marca solo es válida para una secuencia de tipo de división PPQN.</td>
+<td>Establece el formato de hora en puntero de canción (notas decimosexta). Todos los comandos que usan valores de posición asumirán unidades de puntero de canción. Esta marca solo es válida para una secuencia de tipo de división PPQN.</td>
 </tr>
 <tr class="even">
 <td>formato de hora tmsf</td>

@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3922dd71b70ace579fa4b5f2318776779afdfa4e
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: cf55584aafd5c73ee3ec2b756b59054e8aabaaf4cf5974a09dd11d3b4f40b655
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504193"
 ---
-# <a name="cdn_typechange-notification-code"></a>Código de notificación TYPECHANGE de CDN \_
+# <a name="cdn_typechange-notification-code"></a>\_CDN Código de notificación TYPECHANGE
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
 Enviado por un cuadro de **diálogo** Abrir o Guardar **como** de estilo explorador cuando el usuario selecciona un nuevo tipo de archivo en el cuadro combinado tipos de archivo.
 
@@ -53,7 +53,7 @@ Este parámetro no se utiliza.
 
 Puntero a una [**estructura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 
-La [**estructura OFNOTIFY contiene**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cuyo** miembro de código indica el mensaje de **notificación \_ TYPECHANGE de la red CDN.**
+La [**estructura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contiene una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cuyo** miembro de código indica el CDN **de notificación \_ TYPECHANGE.**
 
 La [**estructura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) también contiene un puntero a una estructura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) cuyo **miembro nFilterIndex** indica el índice basado en uno del filtro de tipo de archivo recién seleccionado.
 
@@ -71,7 +71,7 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

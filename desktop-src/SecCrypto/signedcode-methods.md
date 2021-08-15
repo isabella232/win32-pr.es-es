@@ -4,16 +4,16 @@ ms.assetid: FC721B46-0128-4D52-9351-6E69BA64A8CF
 title: Métodos SignedCode
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 967259b4eaaa0cb0c14570ba3b2f6f05c59bf5f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b09d00da3db5db2458639bf7d5cf927c90d1a3dbdae62889c80f69fb04f96333
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117974202"
 ---
 # <a name="signedcode-methods"></a>Métodos SignedCode
 
-El objeto [**SignedCode**](signedcode.md) expone los métodos siguientes.
+El [**objeto SignedCode**](signedcode.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

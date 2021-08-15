@@ -5,21 +5,21 @@ ms.assetid: 25f12a2e-00a2-42a8-afd3-81efcd94da94
 ms.tgt_platform: multiple
 keywords:
 - Propiedad LoadBalanceInfo Servicios de Escritorio remoto
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad LoadBalanceInfo
-- Interfaz de propiedad LoadBalanceInfo Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings2
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
-- Propiedad LoadBalanceInfo Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Propiedad LoadBalanceInfo Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad LoadBalanceInfo
 topic_type:
 - apiref
@@ -61,7 +61,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118353044"
 ---
-# <a name="imsrdpclientadvancedsettingsloadbalanceinfo-property"></a>Propiedad IMsRdpClientAdvancedSettings::LoadBalanceInfo
+# <a name="imsrdpclientadvancedsettingsloadbalanceinfo-property"></a>IMsRdpClientAdvancedSettings::LoadBalanceInfo, propiedad
 
 Especifica la cookie de equilibrio de carga que se colocará en el paquete de solicitud de conexión X.224 en la secuencia de conexión del protocolo de servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto).
 
@@ -84,7 +84,7 @@ HRESULT get_LoadBalanceInfo(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Puntero a la nueva cookie. Para más información, consulte la sección comentarios.
+Puntero a la nueva cookie. Para obtener más información, vea la sección comentarios.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -104,9 +104,9 @@ Por ejemplo, la cookie usada para acceder a la dirección IP de 172.31.249.216, 
 
 **Cookie: msts=3640205228.15629.0000 \\ r \\ n**
 
-Los cuatro últimos ceros son opcionales y están reservados. El separador decimal final es necesario, al igual que el retorno de carro final y el recorrido de línea. La longitud de la cadena, en caracteres, debe ser un múltiplo par de 2, por lo que debe agregar un espacio si es necesario.
+Los cuatro ceros finales son opcionales y están reservados. El separador decimal final es necesario, al igual que el retorno de carro final y el recorrido de línea. La longitud de la cadena, en caracteres, debe ser un múltiplo par de 2, por lo que debe agregar un espacio si es necesario.
 
-Si no se proporciona ninguna cookie, el valor predeterminado **es Cookie: mstshash=**_UserName_*_\\ r \\ n_*.
+Si no se proporciona ninguna cookie, el valor predeterminado es **Cookie: mstshash=**_UserName_*_\\ r \\ n_*.
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 

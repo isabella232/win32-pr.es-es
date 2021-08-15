@@ -1,5 +1,5 @@
 ---
-description: La propiedad Module de solo lectura del objeto Dependency devuelve el ModuleID del módulo que requiere la cadena actual en forma de BSTR. ModuleID es la misma forma que se usa en la tabla ModuleSignature.
+description: La propiedad Module de solo lectura del objeto dependency devuelve el ModuleID del módulo que requiere la cadena actual en forma de BSTR. ModuleID es la misma forma que se usa en la tabla ModuleSignature.
 ms.assetid: 22aae1b6-59b6-4842-9523-d1e064511380
 title: Propiedad Dependency.Module (Mergemod.h)
 ms.topic: reference
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118378894"
 ---
-# <a name="dependencymodule-property"></a>Dependency.Module, propiedad
+# <a name="dependencymodule-property"></a>Propiedad Dependency.Module
 
-La propiedad **Module** de solo lectura del objeto [**dependency**](dependency-object.md) devuelve el ModuleID del módulo requerido por la cadena actual en forma de **BSTR**. ModuleID es la misma forma que se usa en [la tabla ModuleSignature](modulesignature-table.md).
+La propiedad **Module** de solo lectura del objeto [**Dependency**](dependency-object.md) devuelve el ModuleID del módulo requerido por la cadena actual en forma de **BSTR.** ModuleID es la misma forma que se usa en [la tabla ModuleSignature](modulesignature-table.md).
 
 Esta propiedad es de solo lectura.
 
@@ -40,7 +40,7 @@ propVal = Dependency.Module
 
 ## <a name="c"></a>C++
 
-Consulte el [**método get \_ \_ Module de IMsmDependency.**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_module)
+Consulte el [**método IMsmDependency \_ get \_ Module.**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_module)
 
 ## <a name="requirements"></a>Requisitos
 

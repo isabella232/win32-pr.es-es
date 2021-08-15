@@ -1,5 +1,5 @@
 ---
-description: La propiedad NewEnum de Recipients recupera una interfaz IEnumVARIANT en un objeto que se puede usar \_ para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).
+description: La propiedad NewEnum de Recipients recupera una interfaz IEnumVARIANT en un objeto que se puede usar para \_ enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).
 ms.assetid: affdc695-b78c-48b5-b66d-5f94e1a86ff2
 title: Recipients._NewEnum propiedad
 ms.topic: reference
@@ -26,7 +26,7 @@ ms.locfileid: "118900755"
 
 La **\_ propiedad NewEnum** recupera una [**interfaz IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) en un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -39,7 +39,7 @@ Recipients._NewEnum As IUnknown
 
 Interfaz [**IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad se usa automáticamente internamente cuando se usa la construcción `For Each In` en Visual Basic Scripting Edition (VBScript).
 
@@ -47,14 +47,14 @@ Esta propiedad se usa automáticamente internamente cuando se usa la construcci�
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

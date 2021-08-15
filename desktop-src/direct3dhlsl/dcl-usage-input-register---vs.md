@@ -20,7 +20,7 @@ ms.locfileid: "118792827"
 
 Declare la asociación entre el uso de un elemento de vértice y un índice de uso para un registro de entrada del sombreador de vértices.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 dcl \_ usage \[ index \_ \] v\#
 
@@ -34,7 +34,7 @@ Donde:
 -   usage \_ index es un índice entero opcional entre 0 y 15. Modifica los datos de uso. El índice coincide con el índice de uso en una declaración de vértice. Vea [Declaración de vértices (Direct3D 9).](/windows/desktop/direct3d9/vertex-declaration) El índice se anexa al valor de uso (dcl \_ usage ) sin espacio. Si no se proporciona, se supone que es 0.
 -   v \# es un registro de [entrada.](dx9-graphics-reference-asm-vs-registers-input.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Default-local-Policy-Attribute (atributo)
-description: Referencia a un objeto de directiva que define la directiva local para el objeto host.
+title: Atributo Default-Local-Policy-Object
+description: Referencia a un objeto Policy que define la directiva local para el objeto host.
 ms.assetid: baed2be8-db3e-458f-a6da-2fa522b95d29
 ms.tgt_platform: multiple
 keywords:
-- 'Default-local-Policy: atributo de objeto esquema de AD'
-- defaultLocalPolicyObject esquema de AD de atributos
+- Esquema de AD del atributo Default-Local-Policy-Object
+- Esquema de AD del atributo defaultLocalPolicyObject
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c2bfc4797dbda7aff5e2fadec16de8b87854824
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a192cdc16c7c0c9099e352d5f9a66152c077ee867572528b404b2584f54eeb6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961754"
 ---
-# <a name="default-local-policy-object-attribute"></a>Default-local-Policy-Attribute (atributo)
+# <a name="default-local-policy-object-attribute"></a>Atributo Default-Local-Policy-Object
 
-Referencia a un objeto de directiva que define la directiva local para el objeto host.
+Referencia a un objeto Policy que define la directiva local para el objeto host.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Default-local-Policy-Object             |
-| Nombre para mostrar de LDAP | defaultLocalPolicyObject                |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Default-Local-Policy-Object             |
+| Ldap-Display-Name | defaultLocalPolicyObject                |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.57                   |
-| System-ID-GUID    | bf96799f-0de6-11d0-a285-00aa003049e2    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | bf96799f-0de6-11d0-a285-00aa003049e2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,20 +53,20 @@ Referencia a un objeto de directiva que define la directiva local para el objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
-| System-Only            | False                                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                                      |
-| Está indexado             | False                                                                                                                                     |
-| En el catálogo global      | False                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                              |
+| System-Only            | Falso                                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Referencia a un objeto de directiva que define la directiva local para el objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
-| System-Only            | False                                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                                      |
-| Está indexado             | False                                                                                                                                     |
-| En el catálogo global      | False                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                              |
+| System-Only            | Falso                                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Referencia a un objeto de directiva que define la directiva local para el objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
-| System-Only            | False                                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                                      |
-| Está indexado             | False                                                                                                                                     |
-| En el catálogo global      | False                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                              |
+| System-Only            | Falso                                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Referencia a un objeto de directiva que define la directiva local para el objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
-| System-Only            | False                                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                                      |
-| Está indexado             | False                                                                                                                                     |
-| En el catálogo global      | False                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                              |
+| System-Only            | Falso                                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Referencia a un objeto de directiva que define la directiva local para el objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
-| System-Only            | False                                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                                      |
-| Está indexado             | False                                                                                                                                     |
-| En el catálogo global      | False                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                              |
+| System-Only            | Falso                                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Referencia a un objeto de directiva que define la directiva local para el objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
-| System-Only            | False                                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                                      |
-| Está indexado             | False                                                                                                                                     |
-| En el catálogo global      | False                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                              |
+| System-Only            | Falso                                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

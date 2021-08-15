@@ -17,18 +17,18 @@ Los componentes de CRM se pueden instalar en una aplicación de servidor COM+ o 
 
 Si los componentes de CRM se instalan en una aplicación de biblioteca, están disponibles para más de una aplicación de servidor. Si se instalan en una aplicación de servidor específica, solo están disponibles para esa aplicación de servidor específica.
 
-Para habilitar el uso de un CRM en una aplicación de servidor, siga estos pasos:
+Para habilitar el uso de crm en una aplicación de servidor, siga estos pasos:
 
 1.  En Servicios de componentes, en la página de propiedades de la aplicación de servidor, haga clic en **la pestaña** Avanzadas.
 
-2.  Seleccione la **opción Habilitar administradores de recursos de** compensación para esa aplicación de servidor. Si no se selecciona esta opción, se producirá un error al intentar usar un CRM dentro de esta aplicación de servidor.
+2.  Seleccione la **opción Habilitar administradores de recursos de** compensación para esa aplicación de servidor. Si no se selecciona esta opción, se producirá un error al intentar usar crm dentro de esta aplicación de servidor.
 
     > [!Note]  
-    > Si se instala en una aplicación de biblioteca, no es necesario seleccionar la opción Habilitar administradores de recursos de compensación para esa aplicación de biblioteca, pero esta opción debe seleccionarse para la aplicación de servidor en la que está previsto que se ejecute CRM. 
+    > Si se instala en una aplicación de biblioteca, no es necesario seleccionar la opción Habilitar administradores de recursos de compensación para esa aplicación de biblioteca, pero esta opción debe seleccionarse para la aplicación de servidor en la que crm está diseñado para ejecutarse. 
 
      
 
-Se recomienda que los componentes De trabajo de CRM y Compensador de CRM para un CRM específico se instalen en la misma aplicación.
+Se recomienda instalar los componentes crm worker y CRM Compensator para un CRM específico en la misma aplicación.
 
 La configuración recomendada para los componentes de CRM es la siguiente.
 
@@ -37,14 +37,14 @@ La configuración recomendada para los componentes de CRM es la siguiente.
 | Componente           | Configuración                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------|
 | **CRM Worker**      | transaction = requiredsync = yesJIT = yesthreading model = Both (or threading model = Apartment)     |
-| **Compensador de CRM** | transaction = disabledsync = disabledJIT = nothreading model = Both (or threading model = Apartment) |
+| **CRM Compensator** | transaction = disabledsync = disabledJIT = nothreading model = Both (o threading model = Apartment) |
 
 
 
  
 
 > [!Note]  
-> Los componentes que usan CRM deben especificar explícitamente un modelo de subprocesos cuando se registran. El valor predeterminado, "Main Thread Apartment", no se admite. Los dos únicos modelos de subprocesamiento admitidos son Apartment y Both.
+> Los componentes que usan CRM deben especificar explícitamente un modelo de subprocesos cuando se registran. El valor predeterminado, "Main Thread Apartment", no se admite. Los dos únicos modelos de subprocesos admitidos son Apartment y Both.
 
  
 
