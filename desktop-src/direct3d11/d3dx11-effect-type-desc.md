@@ -1,9 +1,9 @@
 ---
-title: D3DX11_EFFECT_TYPE_DESC estructura (D3dx11effect. h)
+title: D3DX11_EFFECT_TYPE_DESC estructura (D3dx11effect.h)
 description: Describe un tipo de variable de efecto.
 ms.assetid: bf2aa5b7-c68c-42bb-ae70-2fe16f8669a4
 keywords:
-- D3DX11_EFFECT_TYPE_DESC estructura de Direct3D 11
+- D3DX11_EFFECT_TYPE_DESC estructura direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae0f4e8af391fed5717f47bb4b80398129cb98ce
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc045b40105a698c9d051de791991c49d2b6d0dd4672d50f344e8781999dd5c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989965"
 ---
-# <a name="d3dx11_effect_type_desc-structure"></a>Tipo de efecto de D3DX11 ( \_ \_ \_ estructura DESC)
+# <a name="d3dx11_effect_type_desc-structure"></a>D3DX11 \_ EFFECT \_ TYPE \_ DESC (Estructura DESC)
 
 Describe un tipo de variable de efecto.
 
@@ -56,36 +56,36 @@ Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Nombre del tipo, por ejemplo "FLOAT4" o "@ struct".
+Nombre del tipo, por ejemplo"float4" o "MyStruct".
 
 </dd> <dt>
 
 **Clase**
 </dt> <dd>
 
-Tipo: **[ **D3D10 \_ clase de \_ variable \_ de sombreador**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_class)**
+Tipo: **[ **D3D10 \_ SHADER \_ VARIABLE \_ CLASS**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_class)**
 
 </dd> <dd>
 
-La clase variable (consulte [**\_ \_ \_ clase de variable de sombreador D3D10**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_class)).
+La clase variable (vea [**D3D10 \_ SHADER \_ VARIABLE \_ CLASS**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_class)).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **D3D10 \_ tipo de \_ variable \_ de sombreador**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_type)**
+Tipo: **[ **TIPO DE \_ \_ VARIABLE \_ DE SOMBREADOR D3D10**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_type)**
 
 </dd> <dd>
 
-El tipo de variable (vea [**D3D10 (tipo de \_ \_ variable \_ de sombreador**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_type)).
+Tipo de variable (vea [**D3D10 \_ SHADER \_ VARIABLE \_ TYPE**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_type)).
 
 </dd> <dt>
 
 **Elementos**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -96,7 +96,7 @@ Número de elementos de este tipo (0 si no es una matriz).
 **Miembros**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -107,61 +107,61 @@ Número de miembros (0 si no es una estructura).
 **Filas**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de filas de este tipo (0 si no es un primitivo numérico).
+Número de filas de este tipo (0 si no es una primitiva numérica).
 
 </dd> <dt>
 
 **Columnas**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de columnas de este tipo (0 si no es un primitivo numérico).
+Número de columnas de este tipo (0 si no es una primitiva numérica).
 
 </dd> <dt>
 
 **PackedSize**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de bytes necesarios para representar este tipo de datos, cuando está estrechamente empaquetado.
+Número de bytes necesarios para representar este tipo de datos, cuando se empaquetan estrechamente.
 
 </dd> <dt>
 
 **UnpackedSize**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de bytes ocupado por este tipo de datos, cuando se dispone en un búfer de constantes.
+Número de bytes ocupados por este tipo de datos, cuando se dispone en un búfer constante.
 
 </dd> <dt>
 
-**STRI**
+**Paso**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de bytes que se van a buscar entre los elementos, cuando se disponen en un búfer de constantes.
+Número de bytes que se buscarán entre elementos, cuando se dispone en un búfer constante.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-\_ \_ Tipo de efecto D3DX11 \_ desc se usa con [ **ID3DX11EffectType:: GetDesc**](id3dx11effecttype-getdesc.md)
+D3DX11 \_ EFFECT \_ TYPE \_ DESC se usa [ **con ID3DX11EffectType::GetDesc**](id3dx11effecttype-getdesc.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -169,15 +169,15 @@ Número de bytes que se van a buscar entre los elementos, cuando se disponen en 
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx11effect. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx11effect.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Effects 11 estructuras](d3d11-graphics-reference-effects11-structures.md)
+[Estructuras de efectos 11](d3d11-graphics-reference-effects11-structures.md)
 </dt> </dl>
 
  

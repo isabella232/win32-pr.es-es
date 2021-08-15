@@ -1,10 +1,10 @@
 ---
-title: SystemMonitor. GetLogViewRange, método
+title: Método SystemMonitor.GetLogViewRange
 description: Recupera la fecha de inicio utilizada para recuperar los valores de contador de los archivos de registro.
 ms.assetid: c74c3a5b-d2ec-43d8-b715-e399f42e8ae5
 keywords:
 - Método GetLogViewRange SysMon
-- Método GetLogViewRange SysMon, objeto SystemMonitor
+- Método GetLogViewRange SysMon , objeto SystemMonitor
 - Objeto SystemMonitor SysMon, método GetLogViewRange
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d494a5861ff9c0d2c076abe2bdad749d21653500
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3233dd57327734669631fc57b31bfb85578621991f34c1b1c414a69697b82048
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882431"
 ---
-# <a name="systemmonitorgetlogviewrange-method"></a>SystemMonitor. GetLogViewRange, método
+# <a name="systemmonitorgetlogviewrange-method"></a>Método SystemMonitor.GetLogViewRange
 
 Recupera la fecha de inicio utilizada para recuperar los valores de contador de los archivos de registro.
 
@@ -43,17 +43,17 @@ SystemMonitor.GetLogViewRange( _
 
 <dl> <dt>
 
-*StartTime* \[ enuncia\]
+*StartTime* \[ out\]
 </dt> <dd>
 
-Fecha de inicio utilizada para recuperar los valores de contador de los archivos de registro.
+Fecha de inicio utilizada para recuperar valores de contador de los archivos de registro.
 
 </dd> <dt>
 
-*StopTime* \[ enuncia\]
+*StopTime* \[ out\]
 </dt> <dd>
 
-Fecha de finalización utilizada para recuperar los valores de contador de los archivos de registro.
+Fecha de finalización utilizada para recuperar valores de contador de los archivos de registro.
 
 </dd> </dl>
 
@@ -61,29 +61,29 @@ Fecha de finalización utilizada para recuperar los valores de contador de los a
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-SYSMON recupera los valores de los contadores de los archivos de registro que se encuentran dentro de las fechas de inicio y de finalización, en su interior.
+SYSMON recupera los valores de contador de los archivos de registro que se encuentran dentro de las fechas de inicio y de detenerse, ambos incluidos.
 
-El uso de este método es igual que el acceso a las propiedades [**SystemMonitor. LogViewStart**](systemmonitor-logviewstart.md) y [**SystemMonitor. LogViewStop**](systemmonitor-logviewstop.md) .
+El uso de este método es igual que el acceso a [**las propiedades SystemMonitor.LogViewStart**](systemmonitor-logviewstart.md) y [**SystemMonitor.LogViewStop.**](systemmonitor-logviewstop.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> <dt>
 
 [**SystemMonitor.SetLogViewRange**](systemmonitor-setlogviewrange.md)

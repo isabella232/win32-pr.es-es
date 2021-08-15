@@ -1,11 +1,11 @@
 ---
-title: Propiedad de ruta de acceso LogFileItem
+title: Propiedad LogFileItem Path
 description: Recupera la ruta de acceso del archivo de registro.
 ms.assetid: 948d28d6-0445-4452-ad39-9981f99d3bf6
 keywords:
-- Propiedad de ruta de acceso SysMon
-- Propiedad de ruta de acceso SysMon, interfaz LogFileItem
-- Interfaz LogFileItem SysMon, propiedad path
+- Propiedad De ruta de acceso SysMon
+- Propiedad Path SysMon , interfaz LogFileItem
+- Interfaz LogFileItem SysMon, propiedad Path
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d503df9f3c992e66ee822690bf417ee54fdda3f6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fca514cb88f60aef7b04605e6d6c2177c7fd3f89ce354cb2e530ec57398a6bd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105666047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883241"
 ---
-# <a name="logfileitempath-property"></a>LogFileItem::P propiedad gistro
+# <a name="logfileitempath-property"></a>LogFileItem::P ath propiedad
 
 Recupera la ruta de acceso del archivo de registro.
 
@@ -47,22 +47,22 @@ Ruta de acceso del archivo de registro.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**LogFileItem**](logfileitem.md)
 </dt> <dt>
 
-Logfiles. Add
+LogFiles.Add
 </dt> </dl>
 
  

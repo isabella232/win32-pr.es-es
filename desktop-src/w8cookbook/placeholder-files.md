@@ -1,47 +1,47 @@
 ---
-title: Archivos de marcadores de posición
-description: Archivos de marcadores de posición
+title: Archivos de marcador de posición
+description: Archivos de marcador de posición
 ms.assetid: E14655DA-CEA0-4106-B882-C9E9116FC234
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93c15037b0daec7a6521a299b6c4587c956e0be3
-ms.sourcegitcommit: 46376be61d3fa308f9b1a06d7e2fa122a39755af
+ms.openlocfilehash: a8891fef6c7fc54a66c093507b1831ab7cc6525ea96d685d06cf6fa8d9ded1e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "105665883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119452505"
 ---
-# <a name="placeholder-files"></a>Archivos de marcadores de posición
+# <a name="placeholder-files"></a>Archivos de marcador de posición
 
 ## <a name="platform"></a>Plataforma
 
-**Clientes-** Windows 8.1  
+**Clientes:** Windows 8.1  
 **Servidores:** Windows Server 2012 R2  
 
 ## <a name="description"></a>Descripción
 
-Los archivos de marcadores de posición permiten a los usuarios ver y administrar archivos de OneDrive de Microsoft independientemente de la conectividad. Los archivos de marcadores de posición representan el espacio de nombres de OneDrive, incluso cuando los archivos no se almacenan en caché localmente. Contienen metadatos de archivo e imágenes en miniatura de las fotos.
+Los archivos de marcador de posición permiten a los usuarios ver y administrar Microsoft OneDrive archivos, independientemente de la conectividad. Los archivos de marcador de posición representan OneDrive espacio de nombres, incluso cuando los archivos no se almacenan en caché localmente. Contienen metadatos de archivo e imágenes en miniatura de fotos.
 
 ## <a name="manifestation"></a>Manifestación
 
-Para los usuarios finales y desarrolladores, los archivos de marcadores de posición tienen el mismo aspecto y comportamiento que los archivos locales.
+Para los usuarios finales y desarrolladores, los archivos de marcador de posición parecen y se comportan casi igual que los archivos locales.
 
-Si la aplicación usa el cuadro de diálogo de archivo común para enumerar el sistema de archivos, la aplicación no se verá afectada. Cuando el usuario intente abrir el archivo desde el cuadro de diálogo común/File, se descargará el contenido del archivo y se pasará a la aplicación.
+Si la aplicación usa el cuadro de diálogo Archivo común para enumerar el sistema de archivos, la aplicación no se verá afectada. Cuando el usuario intente abrir el archivo desde el cuadro de diálogo /file común, el contenido del archivo se descargará y se pasará a la aplicación.
 
-Si la aplicación accede directamente al sistema de archivos, la aplicación puede aprovechar los archivos de marcador de posición siguiendo las instrucciones que se indican a continuación.
+Si la aplicación accede directamente al sistema de archivos, la aplicación puede aprovechar los archivos de marcador de posición mediante las instrucciones siguientes.
 
 ## <a name="solution"></a>Solución
 
--   Los marcadores de posición están ocultos por Convención en función de los atributos
--   Identificar los marcadores de posición mediante el ID. de etiqueta de reanálisis e e/s volver a \_ analizar el \_ archivo de etiqueta \_ \_
+-   Los marcadores de posición se ocultan por convención en función de los atributos
+-   Identificación de marcadores de posición mediante id. de etiqueta de reantiqueta \_ E/S REPARSE \_ TAG FILE \_ \_ PLACEHOLDER
 
-Use el modelo de datos de Shell para un comportamiento sin problemas:
+Use el modelo de datos de shell para un comportamiento sin problemas:
 
--   Usar SHCreateItemFromParsingName () para crear un elemento de Shell
--   Enlazar a la secuencia mediante IShellItem:: BindToHandler ( \_ secuencia BHID)
--   Controlador de propiedad de usuario para el acceso a propiedades (IShellItem2:: GetPropertyHandler)
--   Thumbnailhandler de Shell de usuario para obtener imágenes en miniatura de marcadores de posición
--   Especifique SupportedProtocols = \* en su implementación de verbo si el verbo se enlaza a la secuencia a través de BindToHandler
+-   Uso de SHCreateItemFromParsingName() para crear un elemento de shell
+-   Enlazar a la secuencia mediante IShellItem::BindToHandler(STREAM \_ DESUSDAID)
+-   Controlador de propiedades de usuario para el acceso a propiedades (IShellItem2::GetPropertyHandler)
+-   ThumbnailHandler del shell de usuario para obtener imágenes en miniatura para marcadores de posición
+-   Especifique SupportedProtocols= en la implementación del verbo si el verbo se enlaza \* a la secuencia a través de BindToHandler.
 
 
 ```
@@ -69,9 +69,9 @@ bool IsFilePlaceholder(_In_PCWSTR filePath)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

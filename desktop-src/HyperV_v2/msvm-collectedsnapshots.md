@@ -1,7 +1,7 @@
 ---
-description: Asocia el \_ SnapshotCollection MSVM a los objetos MSVM \_ VirtualSystemSettingData incluidos.
+description: Asocia Msvm \_ SnapshotCollection a los objetos Msvm \_ VirtualSystemSettingData contenidos.
 ms.assetid: 21005e8a-0bc6-4ea7-8f6f-d79803b43bc0
-title: Msvm_CollectedSnapshots (clase)
+title: Msvm_CollectedSnapshots clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9c89e7c7390cc1f2cc0c3217fca93e3f2d2d01ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e5a1007516e5b8b7d827f0a96e1fd7fd5541cba2277111830605971c6d8a101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119427125"
 ---
-# <a name="msvm_collectedsnapshots-class"></a>MSVM \_ CollectedSnapshots (clase)
+# <a name="msvm_collectedsnapshots-class"></a>Clase Msvm \_ CollectedSnapshots
 
-Asocia el [**\_ SnapshotCollection MSVM**](msvm-snapshotcollection.md) a los objetos [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) incluidos.
+Asocia [**Msvm \_ SnapshotCollection a**](msvm-snapshotcollection.md) los objetos [**Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) contenidos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,45 +41,45 @@ class Msvm_CollectedSnapshots : CIM_CollectedMSEs
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ CollectedSnapshots** tiene estos tipos de miembros:
+La **clase Msvm \_ CollectedSnapshots** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ CollectedSnapshots** tiene estas propiedades.
+La **clase Msvm \_ CollectedSnapshots** tiene estas propiedades.
 
 <dl> <dt>
 
 **Colección**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ SnapshotCollection**
+Tipo de datos: **Msvm \_ SnapshotCollection**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
+Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
 </dt> </dl>
 
-Objeto de agrupación o contenedor de [**MSVM \_ SnapshotCollection**](msvm-snapshotcollection.md) que representa la colección.
+Una [**agrupación \_ SnapshotCollection de Msvm**](msvm-snapshotcollection.md) o un objeto "bag" que representa la colección.
 
 </dd> <dt>
 
-**Member**
+**Miembro**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ VirtualSystemSettingData**
+Tipo de datos: **Msvm \_ VirtualSystemSettingData**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("miembro")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Member")
 </dt> </dl>
 
-[**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que contiene los miembros de la colección.
+[**Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que contiene los miembros de la colección.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) 
 
 <dl> <dt>
 
-[**\_COLLECTEDMSES CIM**](cim-collectedmses.md)
+[**CIM \_ CollectedMSEs**](cim-collectedmses.md)
 </dt> </dl>
 
  

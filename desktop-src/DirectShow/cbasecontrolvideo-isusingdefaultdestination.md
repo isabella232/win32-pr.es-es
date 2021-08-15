@@ -1,7 +1,7 @@
 ---
 description: El método IsUsingDefaultDestination determina si el representador usa la ventana de destino predeterminada.
 ms.assetid: 0b956575-4cf0-4f1f-9223-bb1ec3ae8b10
-title: Método CBaseControlVideo. IsUsingDefaultDestination (Ctlutil. h)
+title: Método CBaseControlVideo.IsUsingDefaultDestination (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 88168442cf741e5997c2b66fc4b83bf8205e694f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf254ec89cc6804af86c98abaaa0c53ae5f76a25766391529ca4de85bee7d084
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955224"
 ---
-# <a name="cbasecontrolvideoisusingdefaultdestination-method"></a>CBaseControlVideo. IsUsingDefaultDestination, método
+# <a name="cbasecontrolvideoisusingdefaultdestination-method"></a>Método CBaseControlVideo.IsUsingDefaultDestination
 
-El `IsUsingDefaultDestination` método determina si el representador utiliza la ventana de destino predeterminada.
+El `IsUsingDefaultDestination` método determina si el representador usa la ventana de destino predeterminada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto si se usa el destino predeterminado; de lo contrario, devuelve s \_ false.
+Devuelve S \_ OK si se usa el destino predeterminado; de lo contrario, devuelve S \_ FALSE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,16 +50,16 @@ Devuelve S \_ correcto si se usa el destino predeterminado; de lo contrario, dev
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

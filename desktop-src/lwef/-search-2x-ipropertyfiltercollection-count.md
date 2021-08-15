@@ -1,11 +1,11 @@
 ---
-title: Propiedad de recuento de IPropertyFilterCollection (WdsSharedIDL. h)
+title: Propiedad IPropertyFilterCollection Count (WdsSharedIDL.h)
 description: Número de filtros de la colección.
 ms.assetid: 9d656f06-eb1d-4cc6-9096-252f0fc65ae2
 keywords:
-- Propiedad Count características de entorno de Windows heredadas
-- Propiedad Count características de entorno heredado de Windows, interfaz IPropertyFilterCollection
-- Interfaz IPropertyFilterCollection características del entorno heredado de Windows, propiedad Count
+- Características heredadas del entorno de Windows count
+- Count property Legacy Windows Environment Features , IPropertyFilterCollection (Interfaz IPropertyFilterCollection)
+- IPropertyFilterCollection interface Legacy Windows Environment Features , Count property
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f258a2ca8089cecb8e2e15fbe7e9e92ce1ed3468
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb24af3aaa73034d2685de35974989bf371aaae79284cbb8120ccffbe41a76cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451075"
 ---
-# <a name="ipropertyfiltercollectioncount-property"></a>IPropertyFilterCollection:: Count (propiedad)
+# <a name="ipropertyfiltercollectioncount-property"></a>IPropertyFilterCollection::Count, propiedad
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
 Número de filtros de la colección.
 
@@ -46,7 +46,7 @@ HRESULT get_Count(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Devuelve un puntero al número de filtros de la colección.
+devuelve un puntero al número de filtros de la colección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,10 +54,10 @@ Devuelve un puntero al número de filtros de la colección.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

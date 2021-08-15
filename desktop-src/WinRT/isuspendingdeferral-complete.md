@@ -1,7 +1,7 @@
 ---
-description: Notifica al sistema que la aplicación ha guardado sus datos y está listo para su suspensión.
+description: Notifica al sistema que la aplicación ha guardado sus datos y está lista para suspenderse.
 ms.assetid: 5C79AFBA-34E6-4C0B-95A0-731E10D8A17A
-title: 'Método ISuspendingDeferral:: Complete (Windows. ApplicationModel. h)'
+title: Método ISuspendingDeferral::Complete (Windows. ApplicationModel.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Windows.ApplicationModel.h
-ms.openlocfilehash: 62febd5fac6aab4a0c5ddd7e6a70fa0e3c3f78ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fb16ae67ad5dcd9324c176a39a0dc9e566638ed960443496a0d556990bd8717
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464405"
 ---
-# <a name="isuspendingdeferralcomplete-method"></a>ISuspendingDeferral:: Complete (método)
+# <a name="isuspendingdeferralcomplete-method"></a>ISuspendingDeferral::Complete (Método)
 
-Notifica al sistema que la aplicación ha guardado sus datos y está listo para su suspensión.
+Notifica al sistema que la aplicación ha guardado sus datos y está lista para suspenderse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,8 +49,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Encabezado<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Windows. ApplicationModel. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Windows. ApplicationModel.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Windows. ApplicationModel.idl</dt> </dl> |
 
 
 

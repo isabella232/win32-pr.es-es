@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 0a0126266fc33dca030abad65ccf9f0d35f6e195
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 81c2ba3a56ba9c09a2ce7b23bcad1a83880e61256402c291b5aebde9988218c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428675"
 ---
 # <a name="iamfilterdatacreatefilterdata-method"></a>IamFilterData::CreateFilterData (método)
 
@@ -27,9 +27,9 @@ ms.locfileid: "111989460"
 
  
 
-El `CreateFilterData` método crea datos binarios del Registro para un filtro. Estos datos se pueden escribir en el Registro como una subclave REG BINARY denominada FilterData, bajo la clave \_ CLSID del filtro.
+El `CreateFilterData` método crea datos binarios del Registro para un filtro. Estos datos se pueden escribir en el Registro como una subclave REG BINARY denominada FilterData, bajo la \_ clave CLSID del filtro.
 
-Normalmente no hay ninguna razón para que una aplicación llame a este método. El [**método IFilterMapper2::RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automáticamente los datos binarios y los agrega a la ubicación correcta del Registro. Para obtener más información, [vea Cómo registrar filtros de DirectShow.](how-to-register-directshow-filters.md)
+Normalmente no hay ninguna razón para que una aplicación llame a este método. El [**método IFilterMapper2::RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automáticamente los datos binarios y los agrega a la ubicación correcta del Registro. Para obtener más información, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,10 +73,10 @@ Puntero a una variable que recibe el tamaño de los datos binarios, en bytes.
 
 Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El encabezado Fil \_ data.h se encuentra en el directorio [Ejemplo del](mapper-sample.md) asignador en la Windows SDK.
+> El encabezado Fil \_ data.h se encuentra en el directorio [Mapper Sample](mapper-sample.md) (Ejemplo del asignador) en Windows SDK.
 
  
 
@@ -95,7 +95,7 @@ Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error
 
 <dl> <dt>
 
-[**IamFilterData (interfaz)**](iamfilterdata.md)
+[**IAMFilterData (interfaz)**](iamfilterdata.md)
 </dt> </dl>
 
  

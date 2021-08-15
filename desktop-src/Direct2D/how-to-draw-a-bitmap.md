@@ -1,23 +1,23 @@
 ---
-title: Cómo dibujar un mapa de bits
+title: Dibujar un mapa de bits
 description: Muestra cómo representar mapas de bits con Direct2D.
 ms.assetid: 9c6fc8b1-47ba-46fa-b812-2636cd8ff2b4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbfa13b75b4fe34ce6ff2b80598fac35f8483a2f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6c76fb3a956d20f83f4de8beb8431295c86b84cf7e6908fb311ed16ea1ceefa0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259234"
 ---
-# <a name="how-to-draw-a-bitmap"></a>Cómo dibujar un mapa de bits
+# <a name="how-to-draw-a-bitmap"></a>Dibujar un mapa de bits
 
-Para representar un mapa de bits, use el método [**ID2D1RenderTarget::D rawbitmap**](id2d1rendertarget-drawbitmap.md) . En el ejemplo siguiente se muestra cómo usar el método **DrawBitmap** para dibujar un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap). Crea la salida que se muestra en la siguiente ilustración.
+Para representar un mapa de bits, use [**el método ID2D1RenderTarget::D rawBitmap.**](id2d1rendertarget-drawbitmap.md) En el ejemplo siguiente se muestra cómo usar el **método DrawBitmap** para dibujar un [**id2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap). Crea la salida que se muestra en la ilustración siguiente.
 
-![Ilustración de un mapa de bits original y mapas de bits resultantes con diferentes configuraciones y transformaciones de opacidad](images/drawbitmapexample.png)
+![ilustración de un mapa de bits original y mapas de bits resultantes con diferentes configuraciones de opacidad y transformaciones](images/drawbitmapexample.png)
 
-En primer lugar, cree un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap). En el ejemplo siguiente se carga un mapa de bits desde el archivo de recursos de la aplicación y se almacena como *m \_ pBitmap*. (Para ver cómo `LoadResourceBitmap` se implementa el método, consulte [Cómo cargar un mapa de bits desde un recurso](how-to-load-a-bitmap-from-a-resource.md)).
+En primer lugar, cree [**un id2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap). En el ejemplo siguiente se carga un mapa de bits del archivo de recursos de la aplicación y se almacena como *m \_ pBitmap*. (Para ver cómo `LoadResourceBitmap` se implementa el método, consulte Cómo cargar un mapa de bits desde un [recurso).](how-to-load-a-bitmap-from-a-resource.md)
 
 
 ```C++
@@ -35,9 +35,9 @@ hr = LoadResourceBitmap(
 
 
 
-Cree el [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) en el mismo método en el que creó el destino de representación que va a usar para dibujar el mapa de bits y libere el mapa de bits cuando se libere el destino de representación.
+Cree [**id2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) en el mismo método donde creó el destino de representación que usará para dibujar el mapa de bits y suelte el mapa de bits cuando se libere el destino de representación.
 
-Una vez creado el mapa de bits, representarlo. En el ejemplo siguiente se usa el método [**DrawBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawbitmap(id2d1bitmap_constd2d1_rect_f_float_d2d1_bitmap_interpolation_mode_constd2d1_rect_f)) para representar un mapa de bits varias veces con diferentes valores de tamaño y opacidad.
+Una vez creado el mapa de bits, represente el mapa de bits. En el ejemplo siguiente se usa [**el método DrawBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawbitmap(id2d1bitmap_constd2d1_rect_f_float_d2d1_bitmap_interpolation_mode_constd2d1_rect_f)) para representar un mapa de bits varias veces con diferentes valores de tamaño y opacidad.
 
 
 ```C++
@@ -175,7 +175,7 @@ HRESULT DrawBitmapExample::OnRender()
 
 
 
-El método [**DrawBitmap**](id2d1rendertarget-drawbitmap.md) no devuelve un código de error si se produce un error. Para determinar si una operación de dibujo (como **DrawBitmap**) produjo un error, compruebe el resultado devuelto por el método [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) , como se muestra en el ejemplo siguiente.
+El [**método DrawBitmap**](id2d1rendertarget-drawbitmap.md) no devuelve un código de error si se produce un error. Para determinar si se ha producido un error en una operación de dibujo (como **DrawBitmap),** compruebe el resultado devuelto por el método [**ID2D1RenderTarget::EndDraw,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) como se muestra en el ejemplo siguiente.
 
 
 ```C++
@@ -199,6 +199,6 @@ El código se ha omitido en este ejemplo.
 [Cómo cargar un mapa de bits desde un recurso](how-to-load-a-bitmap-from-a-resource.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

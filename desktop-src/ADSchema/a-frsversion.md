@@ -1,11 +1,11 @@
 ---
-title: FRS-Version atributo)
-description: El número de versión y la fecha de compilación.
+title: FRS-Version atributo
+description: Número de versión y fecha de compilación.
 ms.assetid: 13109bfc-ac34-461e-a649-c4811c8fc488
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de FRS-Version
-- fRSVersion esquema de AD de atributos
+- FRS-Version esquema de AD del atributo
+- Esquema de AD del atributo fRSVersion
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e33c0081de5d8be2ef6fc68f089a789ca8879028
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 122dcb90f895f98dd42c6f2db2638cdbc495297b09c31a1a50aa0683ca4b6925
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323355"
 ---
-# <a name="frs-version-attribute"></a>FRS-Version atributo)
+# <a name="frs-version-attribute"></a>FRS-Version atributo
 
-El número de versión y la fecha de compilación.
+Número de versión y fecha de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | FRS-Version                                 |
-| Nombre para mostrar de LDAP | fRSVersion                                  |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | fRSVersion                                  |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.882                      |
-| System-ID-GUID    | 2a132585-9373-11d1-aebc-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2a132585-9373-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,20 +53,20 @@ El número de versión y la fecha de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ El número de versión y la fecha de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El número de versión y la fecha de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El número de versión y la fecha de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ El número de versión y la fecha de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ El número de versión y la fecha de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**NTFRS-suscripciones**](c-ntfrssubscriptions.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 

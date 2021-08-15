@@ -1,7 +1,7 @@
 ---
-description: Obtiene un identificador para el cuadro de diálogo que muestra los mensajes de error y proporciona uno o varios botones para continuar, cancelar o anular la aplicación.
+description: Obtiene un identificador del cuadro de diálogo que muestra los mensajes de error y proporciona uno o varios botones para continuar, cancelar o anular la aplicación.
 ms.assetid: 54deac2e-a395-45dc-b9f9-ecf8140fd9d7
-title: 'IWiaAppErrorHandler:: GetWindow (método) (WIA. h)'
+title: Método IWiaAppErrorHandler::GetWindow (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 89a3b2bf87d99c767ab3bea46a27c8a53fab7825
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bac7ba2f2f9d394218d851f9bbe7939168c2abbc7df5fb8c57a52f29fa6e2b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105716057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965764"
 ---
-# <a name="iwiaapperrorhandlergetwindow-method"></a>IWiaAppErrorHandler:: GetWindow (método)
+# <a name="iwiaapperrorhandlergetwindow-method"></a>IWiaAppErrorHandler::GetWindow (método)
 
-Obtiene un identificador para el cuadro de diálogo que muestra los mensajes de error y proporciona uno o varios botones para continuar, cancelar o anular la aplicación.
+Obtiene un identificador del cuadro de diálogo que muestra los mensajes de error y proporciona uno o varios botones para continuar, cancelar o anular la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GetWindow(
 
 <dl> <dt>
 
-*phwnd* \[ enuncia\]
+*phwnd* \[ out\]
 </dt> <dd>
 
-Tipo: **hWnd \** _
+Tipo: **HWND\***
 
-HWND usado por el controlador de errores de la aplicación, el controlador de errores del controlador y los cuadros de diálogo de mensajes de dispositivo predeterminados (error e informativo). El valor de salida puede ser _ * NULL * *.
+HWND usado por el controlador de errores de la aplicación, el controlador de errores del controlador y el controlador de errores predeterminado para los cuadros de diálogo de mensajes de dispositivo (tanto de error como informativos). El valor de salida puede ser **NULL.**
 
 </dd> </dl>
 
@@ -53,23 +53,23 @@ HWND usado por el controlador de errores de la aplicación, el controlador de er
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-*phwnd* apunta a la ventana pasada en [**ReportStatus**](-wia-iwiaerrorhandler-reportstatus.md) por el proxy de adquisición de imágenes de Windows (WIA) 2,0. Esta ventana debe ser válida mientras dure la transferencia de datos.
+*phwnd apunta* a la ventana pasada a [**ReportStatus**](-wia-iwiaerrorhandler-reportstatus.md) por el proxy Windows Image Acquisition (WIA) 2.0. Esta ventana debe seguir siendo válida mientras dure la transferencia de datos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

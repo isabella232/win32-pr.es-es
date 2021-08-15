@@ -1,7 +1,7 @@
 ---
-description: Marca que especifica si se está llevando a cabo una nueva paleta. En las compilaciones de depuración, el valor es TRUE mientras la paleta está cambiando y FALSE en caso contrario. Esta variable no se utiliza en las compilaciones comerciales.
+description: Marca que especifica si se va a realizar una nueva paleta. En las compilaciones de depuración, el valor es TRUE mientras la paleta cambia y FALSE en caso contrario. Esta variable no se usa en las compilaciones comerciales.
 ms.assetid: 3aba880d-fa22-4745-a2b3-6701c808c4e3
-title: 'Miembro CBaseWindow:: m_bRealizing (Winutil. h)'
+title: CBaseWindow::m_bRealizing miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1eee652d310ca786b7a732fd4de2b23f0dd088fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bdb03ebf573b781a8e21486217e76cd67d158b14ed762985573e6c07b847f185
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954594"
 ---
-# <a name="cbasewindowm_brealizing-member"></a>Miembro bRealizing CBaseWindow:: m \_
+# <a name="cbasewindowm_brealizing-member"></a>Miembro CBaseWindow::m \_ bRealizing
 
-Marca que especifica si se está llevando a cabo una nueva paleta. En las compilaciones de depuración, el valor es **true** mientras la paleta está cambiando y **false** en caso contrario. Esta variable no se utiliza en las compilaciones comerciales.
+Marca que especifica si se va a realizar una nueva paleta. En las compilaciones de depuración, el valor es **TRUE** mientras la paleta cambia y **FALSE en** caso contrario. Esta variable no se usa en las compilaciones comerciales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ BYTE m_bRealizing;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

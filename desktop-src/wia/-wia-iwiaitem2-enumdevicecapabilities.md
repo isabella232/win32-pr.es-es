@@ -1,7 +1,7 @@
 ---
-description: Crea un enumerador que se usa para determinar los comandos y eventos que admite un dispositivo de adquisición de imágenes de Windows (WIA) 2,0.
+description: Crea un enumerador que se usa para determinar los comandos y eventos que admite un dispositivo Windows Image Acquisition (WIA) 2.0.
 ms.assetid: 9efb758d-a5d6-41c7-b318-2897274ccbc0
-title: 'IWiaItem2:: EnumDeviceCapabilities (método) (WIA. h)'
+title: Método IWiaItem2::EnumDeviceCapabilities (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 3e771aa636b42d9cd7e4024a1684ebe3edf02eeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6748966beaa3bf16f668c4b8b0de60a4302ebcf514f06a3d588999d5faebaf3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450465"
 ---
-# <a name="iwiaitem2enumdevicecapabilities-method"></a>IWiaItem2:: EnumDeviceCapabilities (método)
+# <a name="iwiaitem2enumdevicecapabilities-method"></a>IWiaItem2::EnumDeviceCapabilities (método)
 
-Crea un enumerador que se usa para determinar los comandos y eventos que admite un dispositivo de adquisición de imágenes de Windows (WIA) 2,0.
+Crea un enumerador que se usa para determinar los comandos y eventos que admite un dispositivo Windows Image Acquisition (WIA) 2.0.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,18 +40,18 @@ HRESULT EnumDeviceCapabilities(
 
 <dl> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Especifica una marca que selecciona el tipo de funcionalidad que se va a enumerar. Es uno de los valores siguientes.
+Especifica una marca que selecciona el tipo de funcionalidades que se enumerará. Es uno de los siguientes valores.
 
 <dt>
 
 <span id="WIA_DEVICE_COMMANDS"></span><span id="wia_device_commands"></span>
 
-<span id="WIA_DEVICE_COMMANDS"></span><span id="wia_device_commands"></span>**\_comandos de dispositivo WIA \_**
+<span id="WIA_DEVICE_COMMANDS"></span><span id="wia_device_commands"></span>**COMANDOS DE \_ DISPOSITIVO \_ WIA**
 
 
 </dt> <dd>
@@ -62,7 +62,7 @@ Enumerar comandos de dispositivo.
 
 <span id="WIA_DEVICE_EVENTS"></span><span id="wia_device_events"></span>
 
-<span id="WIA_DEVICE_EVENTS"></span><span id="wia_device_events"></span>**\_eventos de dispositivo WIA \_**
+<span id="WIA_DEVICE_EVENTS"></span><span id="wia_device_events"></span>**EVENTOS DE \_ DISPOSITIVO \_ WIA**
 
 
 </dt> <dd>
@@ -71,12 +71,12 @@ Enumerar eventos de dispositivo.
 
 </dd> </dl> </dd> <dt>
 
-*ppIEnumWIA \_ DISP \_* . de desarrollo \[\]
+*ppIEnumWIA \_ DEV \_ CAPS* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **IEnumWIA \_ dev \_ caps**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps)\*\***
+Tipo: **[ **IEnumWIA \_ DEV \_ CAPS**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps)\*\***
 
-Recibe un puntero a la interfaz [**IEnumWIA \_ dev \_ caps**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps) creada por este método.
+Recibe un puntero a la [**interfaz \_ \_ CAPS de IEnumWIA DEV**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps) creada por este método.
 
 </dd> </dl>
 
@@ -84,15 +84,15 @@ Recibe un puntero a la interfaz [**IEnumWIA \_ dev \_ caps**](/windows/desktop/a
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Este método se usa para crear un objeto de enumerador para obtener el conjunto de comandos y eventos que admite un dispositivo WIA 2,0. El parámetro *lFlags* se usa para especificar los tipos de funcionalidades de dispositivo que se van a enumerar. El método **IWiaItem2:: EnumDeviceCapabilities** almacena la dirección de la interfaz del objeto enumerador en el parámetro *ppIEnumWIA \_ dev \_ caps* .
+Este método se usa para crear un objeto enumerador para obtener el conjunto de comandos y eventos que admite un dispositivo WIA 2.0. El *parámetro lFlags* se usa para especificar qué tipos de funcionalidades de dispositivo se deben enumerar. El **método IWiaItem2::EnumDeviceCapabilities** almacena la dirección de la interfaz del objeto enumerador en el parámetro *PPIEnumWIA \_ DEV \_ CAPS.*
 
-Solo se puede llamar a este método en el elemento raíz de los objetos [**IWiaItem2**](-wia-iwiaitem2.md) de un árbol de dispositivos.
+Solo se puede llamar a este método en el elemento raíz de [**objetos IWiaItem2**](-wia-iwiaitem2.md) de un árbol de dispositivos.
 
-Las aplicaciones deben llamar al método [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del parámetro *ppIEnumWIA \_ dev \_ caps* .
+Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del parámetro *ppIEnumWIA \_ DEV \_ CAPS.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,10 +100,10 @@ Las aplicaciones deben llamar al método [IUnknown:: Release](/windows/win32/api
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

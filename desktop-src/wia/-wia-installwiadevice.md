@@ -1,7 +1,7 @@
 ---
-description: La función InstallWiaDevice instala un dispositivo de adquisición de imágenes de Windows (WIA) como dispositivo raíz enumerado. Puede mostrar una advertencia de seguridad si algún archivo o Coinstalador de instalación no está firmado digitalmente y es de confianza.
+description: La función InstallWiaDevice instala un Windows adquisición de imágenes (WIA) como dispositivo enumerado raíz. Puede aparecer una advertencia de seguridad si algún archivo o coinstalador de instalación no está firmado digitalmente y es de confianza.
 ms.assetid: c7de27f5-5994-4fce-a6ec-6e7cfae2e591
-title: Función InstallWiaDevice (WIA. h)
+title: Función InstallWiaDevice (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 62060d538b4b51fe22e10df09093f1f7f8c26a1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10006e234c9a76054a77fb64f89a31d9a21e394066bcc98813912bad9f804e1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965844"
 ---
-# <a name="installwiadevice-function"></a>InstallWiaDevice función)
+# <a name="installwiadevice-function"></a>Función InstallWiaDevice
 
-La función **InstallWiaDevice** instala un dispositivo de adquisición de imágenes de Windows (WIA) como dispositivo raíz enumerado. Puede mostrar una advertencia de seguridad si algún archivo o Coinstalador de instalación no está firmado digitalmente y es de confianza.
+La **función InstallWiaDevice** instala un Windows adquisición de imágenes (WIA) como dispositivo enumerado raíz. Puede aparecer una advertencia de seguridad si algún archivo o coinstalador de instalación no está firmado digitalmente y es de confianza.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ DWORD WINAPI InstallWiaDevice(
 
 <dl> <dt>
 
-*pWiaDeviceInstall* \[ de\]
+*pWiaDeviceInstall* \[ En\]
 </dt> <dd>
 
-Tipo: **PWIADEVICEINSTALL \** _
+Tipo: **PWIADEVICEINSTALL \***
 
-Puntero a una estructura WIADEVICEINSTALL. El miembro _szFriendlyName * de la estructura se debe establecer en el dispositivo FriendlyName real.
+Puntero a una estructura WIADEVICEINSTALL. El *miembro szFriendlyName* de la estructura debe establecerse en el dispositivo FriendlyName real.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a una estructura WIADEVICEINSTALL. El miembro _szFriendlyName * de la es
 
 Tipo: **DWORD**
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
 Si se produce un error en la función, devuelve un código de error de Win32.
 
@@ -61,12 +61,12 @@ Si se produce un error en la función, devuelve un código de error de Win32.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

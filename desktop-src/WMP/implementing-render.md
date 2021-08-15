@@ -1,6 +1,6 @@
 ---
-title: Implementación de render
-description: Implementación de render
+title: Implementación de Render
+description: Implementación de Render
 ms.assetid: 9b3a64f6-6803-457c-8e63-e8a799089e18
 keywords:
 - visualizaciones, eventos con tiempo
@@ -9,64 +9,64 @@ keywords:
 - visualizaciones personalizadas, función Render
 - visualizaciones, función RenderWindow
 - visualizaciones personalizadas, función RenderWindow
-- Función render, parámetros
-- RenderWindow función)
+- Render function,parameters
+- Función RenderWindow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99db0a96a07c361d18de579fb0235befa11838c8
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 5af44299c8a8e34c8f63844dc7d2c143f1d85e0b622c50dd246ea12571d94af8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390695"
 ---
-# <a name="implementing-render"></a>Implementación de render
+# <a name="implementing-render"></a>Implementación de Render
 
-La forma más sencilla de pensar en la programación de la visualización es que está creando un controlador para un evento con hora. A intervalos específicos, Windows Media Player toma una instantánea de los datos de audio que se reproducen y proporciona los datos de la instantánea a la visualización cargada actualmente. Esto es similar a la programación controlada por eventos y forma parte del modelo de programación de Microsoft Windows. Escribirá código y esperará a que lo llame un evento determinado.
+La manera más fácil de pensar en la programación de visualizaciones es crear un controlador para un evento con tiempo. A intervalos específicos, Reproductor de Windows Media toma una instantánea de los datos de audio que reproduce y proporciona los datos de la instantánea a la visualización cargada actualmente. Esto es similar a la programación controlada por eventos y forma parte del modelo de programación de Microsoft Windows. Escriba código y espere a que un evento determinado lo llame.
 
-Si el código es una implementación de la función [IWMPEffects:: Render](/previous-versions/windows/desktop/api/effects/nf-effects-iwmpeffects-render) para la representación en modo sin ventanas, recibe los parámetros siguientes:
-
-*TimedLevel*
-
-Se trata de una estructura que define los datos de audio que el código va a analizar. La estructura se compone de dos matrices. La primera matriz se basa en la información de frecuencia y contiene una instantánea del espectro de audio dividida en porciones de 1024. Cada celda de la matriz contiene un valor comprendido entre 0 y 255. La primera celda comienza en 20 Hz y en el último 22050 Hz. La matriz es bidimensional para representar audio estéreo. La segunda matriz se basa en la información de la forma de onda y se corresponde con la potencia de audio, donde la onda más fuerte es, cuanto mayor sea el valor. La matriz de la forma de onda es una instantánea granular de los últimos 1024 segmentos de energía de audio tomados en intervalos de tiempo muy pequeños. Esta matriz también es bidimensional para representar audio estéreo.
-
-*CÁMARAS*
-
-Se trata de un identificador de Microsoft Windows para un contexto de dispositivo. Esto proporciona una manera de identificar la superficie de dibujo en Windows. No es necesario crearlo, solo tiene que usarlo para llamadas específicas de funciones de dibujo.
-
-*RECT*
-
-Se trata de un rectángulo de Microsoft Windows que define el tamaño de una superficie de dibujo. Se trata de un rectángulo sencillo con cuatro propiedades: **izquierda**, **derecha**, **superior** e **inferior**. Los valores reales son proporcionados por Windows Media Player para que pueda determinar cómo el usuario o el desarrollador de máscaras ha ajustado el tamaño de la ventana en la que se va a dibujar. También determina la posición en la HDC en la que se supone que se debe representar el efecto.
-
-Si el código es una implementación de la función **IWMPEffects2:: RenderWindowed** para la representación en una ventana, recibe los parámetros siguientes:
+Si el código es una implementación de la función [IWMPEffects::Render](/previous-versions/windows/desktop/api/effects/nf-effects-iwmpeffects-render) para la representación en modo sin ventanas, recibe los parámetros siguientes:
 
 *TimedLevel*
 
-Esta es la misma información que recibe la función de **representación** .
+Se trata de una estructura que define los datos de audio que analizará el código. La estructura se compone de dos matrices. La primera matriz se basa en la información de frecuencia y contiene una instantánea del espectro de audio dividido en 1024 partes. Cada celda de la matriz contiene un valor de 0 a 255. La primera celda comienza a 20 Hz y la última a 22050 Hz. La matriz es bidimensional para representar audio estéreo. La segunda matriz se basa en la información de forma de onda y corresponde a la potencia de audio, donde cuanto más fuerte sea la onda, mayor será el valor. La matriz de formas de onda es una instantánea granular de los últimos 1024 segmentos de potencia de audio tomados a intervalos de tiempo muy pequeños. Esta matriz también es bidimensional para representar audio estéreo.
+
+*Hdc*
+
+Se trata de un identificador Windows Microsoft para un contexto de dispositivo. Esto proporciona una manera de identificar la superficie de dibujo que se va a Windows. No es necesario crearlo, solo tiene que usarlo para llamadas de función de dibujo específicas.
+
+*Rect*
+
+Se trata de un rectángulo Windows microsoft que define el tamaño de una superficie de dibujo. Se trata de un rectángulo simple con cuatro propiedades: **izquierda,** **derecha,** **superior** e **inferior.** Los valores reales se proporcionan mediante Reproductor de Windows Media para que pueda determinar cómo el usuario o el desarrollador de máscaras ha dimensionado la ventana en la que va a dibujar. También determina la posición en el HDC en la que se supone que se representará el efecto.
+
+Si el código es una implementación de la función **IWMPEffects2::RenderWindowed** para la representación en una ventana, recibe los parámetros siguientes:
+
+*TimedLevel*
+
+Se trata de la misma información que recibe **la función Render.**
 
 *fRequiredRender*
 
-El parámetro *fRequiredRender* le informa de que la visualización debe volver a dibujarse, por ejemplo, cuando se arrastra otra ventana sobre ella. Cuando este valor es false, puede omitir el código de representación de forma segura si el elemento multimedia actual está detenido o en pausa. Esto le permite evitar consumir ciclos de CPU innecesariamente.
+El *parámetro fRequiredRender* le informa de que la visualización debe volver a dibujarse, por ejemplo, cuando se arrastra otra ventana sobre ella. Cuando este valor es false, puede omitir de forma segura el código de representación si el elemento multimedia actual está detenido o en pausa. Esto le permite evitar consumir ciclos de CPU innecesariamente.
 
-El complemento de ejemplo generado por el Asistente para complementos no proporciona una implementación personalizada para **RenderWindowed**. En su lugar, el código de complemento de ejemplo recupera el contexto de dispositivo de la ventana primaria proporcionada por Windows Media Player en [IWMPEffects2:: Create](/previous-versions/windows/desktop/api/effects/nf-effects-iwmpeffects2-create), recupera las dimensiones de la ventana primaria como una estructura Rect y, a continuación, llama a a través de para **representar** mediante el contexto de dispositivo, el Rect y el puntero de nivel de tiempo de **RenderWindowed**.
+El complemento de ejemplo generado por el Asistente para complementos no proporciona una implementación personalizada para **RenderWindowed**. En su lugar, el código de complemento de ejemplo recupera el contexto del dispositivo de la ventana primaria proporcionada por Reproductor de Windows Media en [IWMPEffects2::Create](/previous-versions/windows/desktop/api/effects/nf-effects-iwmpeffects2-create), recupera las dimensiones de la ventana primaria como una estructura RECT y, a continuación, llama a a **Render** mediante el contexto del dispositivo, rect y el puntero de nivel de tiempo de **RenderWindowed.**
 
-En las secciones siguientes se proporciona más información acerca de la implementación de **Render**:
+En las secciones siguientes se proporciona más información sobre cómo implementar **Render**:
 
--   [Usar niveles de tiempo](using-timed-levels.md)
--   [Usar contextos de dispositivo](using-device-contexts.md)
+-   [Uso de niveles con tiempo](using-timed-levels.md)
+-   [Uso de contextos de dispositivo](using-device-contexts.md)
 -   [Usar rectángulos](using-rectangles.md)
--   [Código de representación de ejemplo](sample-render-code.md)
+-   [Ejemplo de código de representación](sample-render-code.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Implementar el código**](implementing-your-code.md)
+[**Implementación del código**](implementing-your-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

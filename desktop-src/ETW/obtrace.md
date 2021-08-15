@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ca89f58df9f5dd741da5b1fb8572b153c956cd43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8cf30fe0c7b028c819477bcf0c66c2b674fc588286916be1cd1fd1a6b207770d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119328755"
 ---
 # <a name="obtrace-class"></a>Clase ObTrace
 
@@ -36,21 +36,21 @@ class ObTrace : MSNT_SystemTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **ObTrace** no define ningún miembro.
+La **clase ObTrace** no define ningún miembro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para habilitar el seguimiento de eventos del administrador de objetos, llame a la función [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) con el parámetro *InformationClass* igual al valor de enumeración de la [**clase de \_ información \_ de seguimiento**](/windows/win32/api/evntrace/ne-evntrace-trace_query_info_class) **TraceSystemTraceEnableFlagsInfo** y el miembro **EnableFlags** de la estructura de [**propiedades de \_ seguimiento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) es igual al **identificador de rendimiento \_ OB \_** (0x80000040).
+Para habilitar el seguimiento de eventos del administrador de objetos, llame a la función [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) con el parámetro *InformationClass* igual al valor de enumeración [**TRACE INFO \_ \_ CLASS**](/windows/win32/api/evntrace/ne-evntrace-trace_query_info_class) **TraceSystemTraceEnableFlagsInfo** y al miembro **EnableFlags** de la estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) igual a **PERF OB \_ \_ HANDLE** (0x80000040).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 
 
 

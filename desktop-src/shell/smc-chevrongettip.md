@@ -1,19 +1,19 @@
 ---
-description: Solicita el título y el texto de un recuadro informativo de comillas angulares para el elemento especificado por la estructura SMDATA correspondiente.
+description: Solicita el título y el texto de una información de contenido adicional para el elemento especificado por la estructura SMDATA adjunta.
 ms.assetid: 7bce4079-994c-4eb0-ab86-9044701d85a1
-title: Mensaje de SMC_CHEVRONGETTIP (shobjidl. h)
+title: SMC_CHEVRONGETTIP mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 118056627d19990648e81b69aa355f3df99ec286
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e64636994743d4b13a96fe75947fb515c4dbd3edcc94e6dee0fa85efb8bc9d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968244"
 ---
-# <a name="smc_chevrongettip-message"></a>Mensaje de CHEVRONGETTIP de SMC \_
+# <a name="smc_chevrongettip-message"></a>Mensaje SMC \_ CHEVRONGETTIP
 
-Solicita el título y el texto de un recuadro informativo de comillas angulares para el elemento especificado por la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) correspondiente.
+Solicita el título y el texto de una información de contenido adicional para el elemento especificado por la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) adjunta.
 
 
 ```C++
@@ -32,35 +32,35 @@ SMC_CHEVRONGETTIP
 *pwszTipTitle* 
 </dt> <dd>
 
-Un puntero a un búfer que recibe una cadena Unicode terminada en **null** que contiene el título del recuadro informativo. Esta cadena no debe tener más de \_ caracteres de ruta de acceso máxima, incluido el carácter **nulo** de terminación.
+Puntero a un búfer que recibe una cadena Unicode terminada en **NULL** que contiene el título de la información. Esta cadena no debe tener más de max \_ path, incluido el carácter **NULL final.**
 
 </dd> <dt>
 
 *pwszTipText* 
 </dt> <dd>
 
-Un puntero a un búfer que recibe una cadena Unicode terminada en **null** que contiene el texto del recuadro informativo. Esta cadena no debe tener más de \_ caracteres de ruta de acceso máxima, incluido el carácter **nulo** de terminación.
+Puntero a un búfer que recibe una cadena Unicode terminada en **NULL** que contiene el texto de la información. Esta cadena no debe tener más de max \_ path, incluido el carácter **NULL final.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

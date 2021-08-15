@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-netgroup-atributo de usuario en dominio
-description: Contiene parte del mapa de netgroup que representa las cadenas calculadas, como \ 0034; dominio de usuario \ 0034;.
+title: Atributo msSFU-30-Netgroup-User-At-Domain
+description: Contiene parte del mapa de netgroup que representa cadenas calculadas, como \ 0034;dominio de usuario \ 0034;.
 ms.assetid: a43f9c88-eb95-4096-9085-b6af044eeb04
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-netgroup-esquema de AD de atributo de usuario en dominio
-- msSFU30NetgroupUserAtDomain esquema de AD de atributos
+- msSFU-30-Netgroup-User-At-Domain attribute AD Schema
+- Esquema de AD del atributo msSFU30NetgroupUserAtDomain
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f0239464fb6262ae8778f00af165c928d4dfe6f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a9ab6f81ca24977291a9f2326ab07afc9710f2e079af08eed9a306d82aebb08c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119542365"
 ---
-# <a name="mssfu-30-netgroup-user-at-domain-attribute"></a>msSFU-30-netgroup-atributo de usuario en dominio
+# <a name="mssfu-30-netgroup-user-at-domain-attribute"></a>Atributo msSFU-30-Netgroup-User-At-Domain
 
-Contiene parte del mapa de netgroup que representa las cadenas calculadas, como " user@domain ".
+Contiene parte del mapa de netgroup que representa cadenas calculadas, como " user@domain ".
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | msSFU-30-netgroup-usuario en dominio     |
-| Nombre para mostrar de LDAP | msSFU30NetgroupUserAtDomain          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | msSFU-30-Netgroup-User-At-Domain     |
+| Ldap-Display-Name | msSFU30NetgroupUserAtDomain          |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.349          |
-| System-ID-GUID    | a9e84eed-e630-4b67-b4b3-cad2a82d345e |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | a9e84eed-e630-4b67-b4b3-cad2a82d345e |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -51,15 +51,15 @@ Contiene parte del mapa de netgroup que representa las cadenas calculadas, como 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | True                                            |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Verdadero                                            |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |
@@ -72,15 +72,15 @@ Contiene parte del mapa de netgroup que representa las cadenas calculadas, como 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | True                                            |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Verdadero                                            |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |
@@ -93,15 +93,15 @@ Contiene parte del mapa de netgroup que representa las cadenas calculadas, como 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | True                                            |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Verdadero                                            |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |
@@ -114,15 +114,15 @@ Contiene parte del mapa de netgroup que representa las cadenas calculadas, como 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | True                                            |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Verdadero                                            |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |

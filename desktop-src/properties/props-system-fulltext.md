@@ -1,19 +1,19 @@
 ---
-description: Esta propiedad se usa para especificar términos de búsqueda que se deben aplicar lo más ampliamente posible a todas las propiedades válidas para los orígenes de datos que se están buscando. No debe emitirse desde un origen de datos.
+description: Esta propiedad se usa para especificar términos de búsqueda que se deben aplicar lo más ampliamente posible en todas las propiedades válidas para los orígenes de datos que se buscan. No se debe emitir desde un origen de datos.
 ms.assetid: 16b751ab-b349-430c-9a58-a46a02f6c30b
-title: System. FullText
+title: System.FullText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ee8cc0c7cb099e989cda9c0e11500112853b7ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 210edcd0d0ce3ce4f2eb8c9fac328abfec7f7a200746399078cec7fa95e7cb12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970434"
 ---
-# <a name="systemfulltext"></a>System. FullText
+# <a name="systemfulltext"></a>System.FullText
 
-Esta propiedad se usa para especificar términos de búsqueda que se deben aplicar lo más ampliamente posible a todas las propiedades válidas para los orígenes de datos que se están buscando. No debe emitirse desde un origen de datos.
+Esta propiedad se usa para especificar términos de búsqueda que se deben aplicar lo más ampliamente posible en todas las propiedades válidas para los orígenes de datos que se buscan. No se debe emitir desde un origen de datos.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de desencadenador de arranque (XML)
-description: En el código XML de este ejemplo se define una tarea que inicia el Bloc de notas al arrancar el sistema.
+description: El código XML de este ejemplo define una tarea que Bloc de notas cuando se arranca el sistema.
 ms.assetid: 6dd7155c-6163-4408-9cef-c313134beeb0
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a8f9f5ea10f92979b0798b12a6225f8ba74a38ee
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: 75b4c9628da5ef56ec006faf9d7301661dfd0f76894ebb4f5f37cc1035d40f75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104358613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118860324"
 ---
 # <a name="boot-trigger-example-xml"></a>Ejemplo de desencadenador de arranque (XML)
 
-En el código XML de este ejemplo se define una tarea que inicia el Bloc de notas al arrancar el sistema.
+El código XML de este ejemplo define una tarea que Bloc de notas cuando se arranca el sistema.
 
-Para registrar una tarea que se define en XML, puede usar la función [**ITaskFolder:: RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. RegisterTask**](taskfolder-registertask.md) para scripting) o la herramienta de línea de comandos Schtasks.exe. Si usa la herramienta Schtasks.exe (que se encuentra en el directorio C: \\ Windows \\ system32), puede usar el siguiente comando para registrar la tarea: **Schtasks/Create/XML** *<path to the XML file containing the task definition>* **/TN** *<task name>* .
+Para registrar una tarea definida en XML, puede usar la función [**ITaskFolder::RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder.RegisterTask**](taskfolder-registertask.md) para scripting) o la herramienta de línea de comandos Schtasks.exe de comandos. Si usa la herramienta Schtasks.exe (ubicada en el directorio C: Windows System32), puede usar el siguiente comando para registrar la \\ \\ tarea: **schtasks /create /XML** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
 
-## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>Para definir una tarea para iniciar el Bloc de notas en el arranque del sistema
+## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>Para definir una tarea para iniciar Bloc de notas en el arranque del sistema
 
-En el ejemplo de XML siguiente se muestra cómo definir una tarea con una única acción de ejecución (iniciando el Bloc de notas), un único desencadenador de arranque que inicia la tarea cuando se arranca el sistema y otras opciones de configuración de tareas que afectan al modo en que la tarea la controla el Programador de tareas.
+En el ejemplo XML siguiente se muestra cómo definir una tarea con una sola acción de ejecución (a partir de Bloc de notas), un único desencadenador de arranque que inicia la tarea cuando se arranca el sistema y otras configuraciones de tareas que afectan a la forma en que el Programador de tareas controla la Programador de tareas.
 
 
 ```XML
@@ -71,25 +71,25 @@ the system is booted.
 
 ## <a name="taskscheduler-schema-elements"></a>Elementos de esquema TaskScheduler
 
-Estos son algunos elementos importantes que se deben tener en cuenta al usar este ejemplo.
+Estos son algunos elementos importantes que debe tener en cuenta al usar este ejemplo.
 
--   [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md): contiene información de registro sobre la tarea.
--   [**Desencadenadores**](taskschedulerschema-triggers-tasktype-element.md): define el desencadenador que inicia la tarea.
--   [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md): define el desencadenador de arranque. En este caso, solo se usan dos elementos secundarios: los límites inicial y final que especifican Cuándo se activa y desactiva el desencadenador.
--   [**Principal**](taskschedulerschema-principal-principaltype-element.md): define el contexto de seguridad en el que se ejecuta una tarea.
--   [**Configuración**](taskschedulerschema-settings-tasktype-element.md): define la configuración de la tarea que utiliza el programador de tareas para realizar la tarea.
--   [**Acciones**](taskschedulerschema-actions-tasktype-element.md): define las acciones que realiza la tarea. En este caso, se ejecuta el Bloc de notas.
+-   [**RegistrationInfo:**](taskschedulerschema-registrationinfo-tasktype-element.md)contiene información de registro sobre la tarea.
+-   [**Desencadenadores:**](taskschedulerschema-triggers-tasktype-element.md)define el desencadenador que inicia la tarea.
+-   [**BootTrigger:**](taskschedulerschema-boottrigger-triggergroup-element.md)define el desencadenador de arranque. En este caso, solo se usan dos elementos secundarios: los límites inicial y final que especifican cuándo se activa y desactiva el desencadenador.
+-   [**Entidad**](taskschedulerschema-principal-principaltype-element.md)de seguridad: define el contexto de seguridad en el que se ejecuta una tarea.
+-   [**Configuración:**](taskschedulerschema-settings-tasktype-element.md)define la configuración de la tarea que el Programador de tareas usa para realizar la tarea.
+-   [**Acciones:**](taskschedulerschema-actions-tasktype-element.md)define las acciones que realiza la tarea. En este caso, se ejecuta Bloc de notas.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso de la Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

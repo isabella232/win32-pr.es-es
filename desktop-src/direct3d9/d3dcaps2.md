@@ -1,15 +1,15 @@
 ---
-description: Consulte una lista de marcas de funcionalidad del controlador D3DCAPS2. Incluye las definiciones, valores y descripciones con vínculos a las API.
+description: Consulte una lista de marcas de funcionalidad del controlador D3DCAPS2. Incluye las definiciones, los valores y las descripciones con vínculos a las API.
 ms.assetid: 0c0c65fc-f953-4379-a6d0-6ce447a0c183
 title: D3DCAPS2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2266073c2d803f9bf11f4a3548078c0d34e5f78
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 9fc58f0e249a90a325631123ce7b8e43d4149a7244e7b2032c489c0999137ea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989125"
 ---
 # <a name="d3dcaps2"></a>D3DCAPS2
 

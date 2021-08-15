@@ -1,11 +1,11 @@
 ---
-title: 'IPSec: atributo de tipo de datos'
-description: El atributo IPSec-Data-Type es solo para uso interno.
+title: Atributo Ipsec-Data-Type
+description: El atributo Ipsec-Data-Type es solo para uso interno.
 ms.assetid: 1e03c13d-6d8d-42c2-bba4-9c86e5aba5e1
 ms.tgt_platform: multiple
 keywords:
-- 'IPSec: esquema de AD de atributos de tipo de datos'
-- ipsecDataType esquema de AD de atributos
+- Esquema de AD del atributo Ipsec-Data-Type
+- Esquema de AD del atributo ipsecDataType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91b39c28e36e14c2dc4026361527dccbc479617d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e55e66561811adceece14f6a975ac5fad6807ac71e826a67910b6420346efee3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322605"
 ---
-# <a name="ipsec-data-type-attribute"></a>IPSec: atributo de tipo de datos
+# <a name="ipsec-data-type-attribute"></a>Atributo Ipsec-Data-Type
 
-El atributo **IPSec-Data-Type** es solo para uso interno.
+El **atributo Ipsec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | IPSec-tipo de datos                      |
-| Nombre para mostrar de LDAP | ipsecDataType                        |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Ipsec-Data-Type                      |
+| Ldap-Display-Name | ipsecDataType                        |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.622               |
-| System-ID-GUID    | b40ff81e-427a-11d1-a9c2-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | b40ff81e-427a-11d1-a9c2-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,20 +53,20 @@ El atributo **IPSec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**IPSec: base**](c-ipsecbase.md)<br/> |
+| Clases usadas en        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ El atributo **IPSec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**IPSec: base**](c-ipsecbase.md)<br/> |
+| Clases usadas en        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El atributo **IPSec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**IPSec: base**](c-ipsecbase.md)<br/> |
+| Clases usadas en        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El atributo **IPSec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**IPSec: base**](c-ipsecbase.md)<br/> |
+| Clases usadas en        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ El atributo **IPSec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**IPSec: base**](c-ipsecbase.md)<br/> |
+| Clases usadas en        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ El atributo **IPSec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**IPSec: base**](c-ipsecbase.md)<br/> |
+| Clases usadas en        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 

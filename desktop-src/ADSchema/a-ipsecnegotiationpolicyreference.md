@@ -1,11 +1,11 @@
 ---
-title: Atributo IPSec-negociación-Directiva-referencia
-description: El atributo IPSec-negociación-Policy-Reference solo es para uso interno.
+title: Atributo Ipsec-Negotiation-Policy-Reference
+description: El atributo Ipsec-Negotiation-Policy-Reference es solo para uso interno.
 ms.assetid: d30d8817-0661-430a-939d-f91072585807
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de referencia de directiva de negociación de IPSec
-- ipsecNegotiationPolicyReference esquema de AD de atributos
+- Esquema de AD del atributo Ipsec-Negotiation-Policy-Reference
+- Esquema de AD del atributo ipsecNegotiationPolicyReference
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81b0fa5ca8d564b02e27aa5c9dfbcb7f3a90d78e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bdc01325dc0c63116aacf68be696ea6db523a24749870e99a7693a17ebae07bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322505"
 ---
-# <a name="ipsec-negotiation-policy-reference-attribute"></a>Atributo IPSec-negociación-Directiva-referencia
+# <a name="ipsec-negotiation-policy-reference-attribute"></a>Atributo Ipsec-Negotiation-Policy-Reference
 
-El atributo **IPSec-negociación-Policy-Reference** solo es para uso interno.
+El **atributo Ipsec-Negotiation-Policy-Reference** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Referencia de la Directiva de negociación de IPSec      |
-| Nombre para mostrar de LDAP | ipsecNegotiationPolicyReference         |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Ipsec-Negotiation-Policy-Reference      |
+| Ldap-Display-Name | ipsecNegotiationPolicyReference         |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.628                  |
-| System-ID-GUID    | b40ff822-427a-11d1-a9c2-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | b40ff822-427a-11d1-a9c2-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,20 +53,20 @@ El atributo **IPSec-negociación-Policy-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Clases usadas en        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ El atributo **IPSec-negociación-Policy-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Clases usadas en        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El atributo **IPSec-negociación-Policy-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Clases usadas en        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El atributo **IPSec-negociación-Policy-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Clases usadas en        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ El atributo **IPSec-negociación-Policy-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Clases usadas en        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ El atributo **IPSec-negociación-Policy-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Clases usadas en        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 

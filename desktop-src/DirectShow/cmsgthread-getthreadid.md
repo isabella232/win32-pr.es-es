@@ -1,7 +1,7 @@
 ---
 description: Recupera el identificador del subproceso.
 ms.assetid: c2b25342-841a-46cb-862c-01761fc60363
-title: Método CMsgThread. GetThreadID (Msgthrd. h)
+title: Método CMsgThread.GetThreadID (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0819810b9b7589fc5272c0e79f87fc2f34325f5e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f3b0837a7f050f09794b06e490f45012e0704e187b02668cd2af2a5bf8edf34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119214105"
 ---
-# <a name="cmsgthreadgetthreadid-method"></a>CMsgThread. GetThreadID, método
+# <a name="cmsgthreadgetthreadid-method"></a>Método CMsgThread.GetThreadID
 
 Recupera el identificador del subproceso.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el miembro de datos privado del **\_ ThreadId de m** .
+Devuelve el **miembro de datos privado m \_ ThreadId.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -54,8 +54,8 @@ Esta función devuelve el identificador de Microsoft Win32 para el subproceso de
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Msgthrd. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Msgthrd.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Esta función devuelve el identificador de Microsoft Win32 para el subproceso de
 
 <dl> <dt>
 
-[**Clase CMsgThread**](cmsgthread.md)
+[**CMsgThread (clase)**](cmsgthread.md)
 </dt> </dl>
 
  

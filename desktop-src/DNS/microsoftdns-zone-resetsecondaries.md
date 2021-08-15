@@ -1,11 +1,11 @@
 ---
-title: Método ResetSecondaries de la clase MicrosoftDNS_Zone
+title: Método ResetSecondaries de la MicrosoftDNS_Zone clase
 description: El método ResetSecondaries restablece las direcciones IP de los servidores DNS secundarios de la zona.
 ms.assetid: b9a47714-f180-40cf-831a-f59e804a4ca2
 keywords:
-- ResetSecondaries el método DNS
-- Método ResetSecondaries DNS, clase MicrosoftDNS_Zone
-- MicrosoftDNS_Zone de clase DNS, método ResetSecondaries
+- ResetSecondaries method DNS
+- ResetSecondaries method DNS , MicrosoftDNS_Zone class
+- MicrosoftDNS_Zone clase DNS , método ResetSecondaries
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a78d65b2153782c38d6d91d34f642860e896ed1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5ab3737bc8143f712560e5ea253237c97da4e2401b98886428642210805ca586
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957294"
 ---
-# <a name="resetsecondaries-method-of-the-microsoftdns_zone-class"></a>Método ResetSecondaries de la \_ clase de zona MicrosoftDNS
+# <a name="resetsecondaries-method-of-the-microsoftdns_zone-class"></a>Método ResetSecondaries de la clase Zone de MicrosoftDNS \_
 
-El método **ResetSecondaries** restablece las direcciones IP de los servidores DNS secundarios de la zona.
+El **método ResetSecondaries** restablece las direcciones IP de los servidores DNS secundarios de la zona.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,47 +46,47 @@ void ResetSecondaries(
 
 <dl> <dt>
 
-*SecondaryServers* \[ de\]
+*SecondaryServers* \[ En\]
 </dt> <dd>
 
-Matriz de direcciones IP para los servidores DNS secundarios.
+Matriz de direcciones IP para servidores DNS secundarios.
 
 </dd> <dt>
 
-*SecureSecondaries* \[ de\]
+*SecureSecondaries* \[ En\]
 </dt> <dd>
 
 Especifica la seguridad que se va a aplicar y debe ser una de las siguientes:
 
--   ZONA \_ SECSECURE \_ sin \_ seguridad
--   \_solo zona SECSECURE \_ NS \_
--   \_ \_ solo lista de SECSECURE de zona \_
--   ZONA \_ SECSECURE \_ no \_ XFR
+-   ZONA \_ SECSECURE \_ NO \_ SECURITY
+-   ZONE \_ SECSECURE \_ NS \_ ONLY
+-   ZONE \_ SECSECURE \_ LIST \_ ONLY
+-   ZONA \_ SECSECURE \_ NO \_ XFR
 
 </dd> <dt>
 
-*NotifyServers* \[ de\]
+*NotifyServers* \[ En\]
 </dt> <dd>
 
-Dirección IP de los servidores DNS a los que se notificará cuando cambie la zona.
+Dirección IP de los servidores DNS que se notificarán cuando cambie la zona.
 
 </dd> <dt>
 
-*Notificar* \[ a de\]
+*Notificar* \[ En\]
 </dt> <dd>
 
-Configuración de notificación y debe ser uno de los siguientes:
+La configuración de notificación y debe ser una de las siguientes:
 
--   notificación de zona \_ \_ desactivada
--   ZONA de \_ notificación de \_ todos los \_ secundarios
--   \_solo lista de notificaciones de zona \_ \_
+-   ZONE \_ NOTIFY \_ OFF
+-   NOTIFICACIÓN \_ DE ZONA A TODAS LAS \_ \_ SECUNDARIAS
+-   ZONE NOTIFY LIST ONLY (SOLO \_ LISTA DE NOTIFICACIONES DE \_ \_ ZONA)
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-RR de tipo [**la \_ zona MicrosoftDNS**](microsoftdns-zone.md).
+RR de tipo [**MicrosoftDNS \_ Zone**](microsoftdns-zone.md).
 
 </dd> </dl>
 
@@ -98,50 +98,50 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Zona MicrosoftDNS**](microsoftdns-zone.md)
+[**Zona MicrosoftDNS \_**](microsoftdns-zone.md)
 </dt> <dt>
 
-[**Método AgeAllRecords de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-ageallrecords.md)
+[**Método AgeAllRecords de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-ageallrecords.md)
 </dt> <dt>
 
-[**Método ChangeZoneType de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-changezonetype.md)
+[**Método ChangeZoneType de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-changezonetype.md)
 </dt> <dt>
 
-[**Método CreateZone de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-createzone.md)
+[**Método CreateZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-createzone.md)
 </dt> <dt>
 
-[**Método ForceRefresh de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-forcerefresh.md)
+[**Método ForceRefresh de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-forcerefresh.md)
 </dt> <dt>
 
-[**Método GetDistinguishedName de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-getdistinguishedname.md)
+[**Método GetDistinguishedName de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-getdistinguishedname.md)
 </dt> <dt>
 
-[**Método PauseZone de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-pausezone.md)
+[**Método PauseZone de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-pausezone.md)
 </dt> <dt>
 
-[**Método ReloadZone de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-reloadzone.md)
+[**Método ReloadZone de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-reloadzone.md)
 </dt> <dt>
 
-[**Método ResumeZone de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-resumezone.md)
+[**Método ResumeZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-resumezone.md)
 </dt> <dt>
 
-[**Método UpdateFromDS de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-updatefromds.md)
+[**Método UpdateFromDS de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-updatefromds.md)
 </dt> <dt>
 
-[**Método WriteBackZone de la \_ clase de zona MicrosoftDNS**](microsoftdns-zone-writebackzone.md)
+[**Método WriteBackZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-writebackzone.md)
 </dt> </dl>
 
  

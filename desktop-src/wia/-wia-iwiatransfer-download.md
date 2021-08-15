@@ -1,7 +1,7 @@
 ---
-description: Inicia una descarga de datos en el autor de la llamada.
+description: Inicia una descarga de datos al autor de la llamada.
 ms.assetid: e639fabb-2c13-4009-affa-1c2b06c0d4c8
-title: IWiaTransfer::D método scargar (WIA. h)
+title: Método IWiaTransfer::D ownload (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 2863915b850588d4db018693d9081ed2907d644a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 039b7dd4579419bac744a07bbc6ddd55c4b0b2e2e713340bf256fdb95d8fc071
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450215"
 ---
-# <a name="iwiatransferdownload-method"></a>IWiaTransfer::D método scargar
+# <a name="iwiatransferdownload-method"></a>Método IWiaTransfer::D ownload
 
-Inicia una descarga de datos en el autor de la llamada.
+Inicia una descarga de datos al autor de la llamada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT Download(
 
 <dl> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
 Actualmente no se usa. Debe establecerse como cero.
 
 </dd> <dt>
 
-*pIWiaTransferCallback* \[ de\]
+*pIWiaTransferCallback* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWiaTransferCallback**](-wia-iwiatransfercallback.md) \** _
+Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Especifica un puntero a la interfaz [_ *IWiaTransferCallback* *](-wia-iwiatransfercallback.md) del llamador.
+Especifica un puntero a la interfaz [**IWiaTransferCallback**](-wia-iwiatransfercallback.md) del autor de la llamada.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Especifica un puntero a la interfaz [_ *IWiaTransferCallback* *](-wia-iwiatransf
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Si se descarga una carpeta, también se transfieren todos los elementos secundarios de dicha carpeta. Cada elemento se transfiere en una secuencia independiente.
+Si se descarga una carpeta, también se transfieren todos los elementos secundarios de esa carpeta. Cada elemento se transfiere en una secuencia independiente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,11 +75,11 @@ Si se descarga una carpeta, también se transfieren todos los elementos secundar
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

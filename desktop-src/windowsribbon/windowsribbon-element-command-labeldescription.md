@@ -1,9 +1,9 @@
 ---
-title: Command. LabelDescription (propiedad)
+title: Propiedad Command.LabelDescription
 description: Representa una descripción de etiqueta.
 ms.assetid: 6c683e9e-0742-466e-9fdd-3d29f8ccb9ff
 keywords:
-- Command. LabelDescription (propiedad) cinta de Windows
+- Command.LabelDescription, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f748425b4c8363feee737d18c750b3a1d91121b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9051b4f645744416f290906559e054405726f36f9616e8f38f3cfbae357137dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964214"
 ---
-# <a name="commandlabeldescription-property"></a>Command. LabelDescription (propiedad)
+# <a name="commandlabeldescription-property"></a>Propiedad Command.LabelDescription
 
 Representa una descripción de etiqueta.
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                   | Descripción                                   |
 |-----------------------------------------------------------|-----------------------------------------------|
-| [**String@**](windowsribbon-element-string.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
+| [**String**](windowsribbon-element-string.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -55,33 +55,33 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**comando**](windowsribbon-element-command.md).
+Puede producirse como máximo una vez para cada [**comando**](windowsribbon-element-command.md).
 
-**Command. LabelDescription** puede contener un valor de *tipo XS: String* restringido a cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.
+**Command.LabelDescription puede** contener un valor de tipo *xs:string* restringido a cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.
 
 > [!Note]  
-> Use la referencia de caracteres XML del juego de caracteres universal (UCS) `&#xA;` para especificar un salto de línea.
+> Use la referencia de caracteres XML de juego de caracteres universales (UCS) `&#xA;` para especificar un salto de línea.
 
  
 
-La longitud máxima es sin límite.
+La longitud máxima es sin enlazar.
 
-Si no se proporciona ningún valor para **Command. LabelDescription**, se requiere el elemento secundario [**String**](windowsribbon-element-string.md) .
+Si no se proporciona ningún valor para **Command.LabelDescription,** [**se**](windowsribbon-element-string.md) requiere el elemento secundario String.
 
 > [!Note]  
-> Si **Command. LabelDescription** contiene un valor y un elemento secundario de [**cadena**](windowsribbon-element-string.md) , la **cadena** tiene prioridad.
+> Si **Command.LabelDescription contiene** un valor y un elemento secundario [**String,**](windowsribbon-element-string.md) **String** tiene prioridad.
 
  
 
-**Command. LabelDescription** solo admite la alineación izquierda.
+**Command.LabelDescription solo** admite la alineación izquierda.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un manifiesto de comandos del Portapapeles con varias declaraciones **Command. LabelDescription** .
+En el ejemplo siguiente se muestra un manifiesto de comandos del Portapapeles con varias **declaraciones Command.LabelDescription.**
 
 
 ```XML
@@ -153,14 +153,14 @@ En el ejemplo siguiente se muestra un manifiesto de comandos del Portapapeles co
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

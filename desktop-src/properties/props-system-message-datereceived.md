@@ -1,19 +1,19 @@
 ---
-description: Fecha y hora en que se recibió la comunicación.
+description: Fecha y hora en que se recibió una comunicación.
 ms.assetid: de222d2f-1825-45a5-b899-45b4c2ab6f2c
-title: System. Message. DateReceived
+title: System.Message.DateReceived
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c87f45974dcf474926241dd6d1dbe239a07b575
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0eaaf947ca7643ff96a2a27d001405f335a8be3d17fce9c46df4e90185b23b5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970304"
 ---
-# <a name="systemmessagedatereceived"></a>System. Message. DateReceived
+# <a name="systemmessagedatereceived"></a>System.Message.DateReceived
 
-Fecha y hora en que se recibió la comunicación.
+Fecha y hora en que se recibió una comunicación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,9 +46,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

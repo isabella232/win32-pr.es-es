@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI DriverForDevice Association de Win32 relaciona una instancia de impresora con una instancia del controlador de impresora.
+description: La clase WMI de asociación DriverForDevice de Win32 relaciona una instancia \_ de impresora con una instancia de controlador de impresora.
 ms.assetid: 56ff74b2-31ba-4d8e-b389-9f962932aa03
 ms.tgt_platform: multiple
-title: Win32_DriverForDevice (clase)
+title: Win32_DriverForDevice clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b5fb384eed80c6a614af448477c50be3204d3080
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f55025c84b8ab7e7114f5a1746d84f8fbdb6b0a7dfe952abfe84efb980430881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546325"
 ---
-# <a name="win32_driverfordevice-class"></a>\_Clase Win32 DriverForDevice
+# <a name="win32_driverfordevice-class"></a>Clase DriverForDevice de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ DriverForDevice** Association de Win32 relaciona una instancia de impresora con una instancia del controlador de impresora.
+La clase WMI **de asociación \_ DriverForDevice** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona una instancia de impresora con una instancia de controlador de impresora.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -54,19 +54,19 @@ La **clase \_ DriverForDevice de Win32** tiene estas propiedades.
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ impresora Win32**
+Tipo de datos: **Impresora Win32 \_**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Referencia a la instancia de la [**\_ impresora Win32**](win32-printer.md) que representa la impresora.
+Referencia a la [**instancia de Impresora Win32 \_**](win32-printer.md) que representa la impresora.
 
-Esta propiedad se hereda de [**la \_ dependencia CIM**](cim-dependency.md).
+Esta propiedad se hereda de la [**dependencia \_ CIM**](cim-dependency.md).
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Win32 \_ PrinterDriver**
@@ -75,35 +75,35 @@ Tipo de datos: **Win32 \_ PrinterDriver**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia a la instancia de [**Win32 \_ PrinterDriver**](win32-printerdriver.md) que representa el controlador de impresora para la impresora.
+Referencia a la [**instancia de Win32 \_ PrinterDriver**](win32-printerdriver.md) que representa el controlador de impresora para la impresora.
 
-Esta propiedad se hereda de [**la \_ dependencia CIM**](cim-dependency.md).
+Esta propiedad se hereda de la [**dependencia \_ CIM**](cim-dependency.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ DriverForDevice de Win32** se deriva de la [**\_ dependencia CIM**](cim-dependency.md).
+La **clase \_ DriverForDevice de Win32** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

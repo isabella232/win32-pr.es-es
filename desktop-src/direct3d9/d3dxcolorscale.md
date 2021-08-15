@@ -1,7 +1,7 @@
 ---
 description: Escala un valor de color.
 ms.assetid: 35e8adee-7ce5-4db5-8276-f0e408748e78
-title: Función D3DXColorScale (D3dx9math. h)
+title: Función D3DXColorScale (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 74020f302a26162df1e42cb4c9f020af3f64e59c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 95ae2ea24547f566a6da014f408dbfbce5be3112a61688f69e125e91d6085493
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119241425"
 ---
-# <a name="d3dxcolorscale-function"></a>D3DXColorScale función)
+# <a name="d3dxcolorscale-function"></a>Función D3DXColorScale
 
 Escala un valor de color.
 
@@ -47,25 +47,25 @@ D3DXCOLOR* D3DXColorScale(
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntero a una estructura [**D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación.
+Puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*PC* \[ de de\]
+*pC* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntero a una estructura de [**D3DXCOLOR**](d3dxcolor.md) de origen.
+Puntero a una estructura [**D3DXCOLOR de**](d3dxcolor.md) origen.
 
 </dd> <dt>
 
 *s* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de escala. Escala el color y lo trata como un vector 4D. No hay ningún límite en el valor de s. Si es 1, el color resultante es el color original.
+Factor de escala. Escala el color y lo trata como un vector 4D. No hay límites en el valor de s. Si s es 1, el color resultante es el color original.
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Factor de escala. Escala el color y lo trata como un vector 4D. No hay ningún l
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Esta función devuelve un puntero a una estructura [**D3DXCOLOR**](d3dxcolor.md) que es el valor de color escalado.
+Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el valor de color escalado.
 
 ## <a name="remarks"></a>Observaciones
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro pOut. De esta manera, la función **D3DXColorScale** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXColorScale** se puede usar como parámetro para otra función.
 
-Esta función calcula el valor de color escalado multiplicando los componentes de color de la estructura [**D3DXCOLOR**](d3dxcolor.md) por el factor de escala especificado, tal y como se muestra en el ejemplo siguiente.
+Esta función calcula el valor de color escalado multiplicando los componentes de color de la estructura [**D3DXCOLOR**](d3dxcolor.md) por el factor de escala especificado, como se muestra en el ejemplo siguiente.
 
 
 ```
@@ -94,8 +94,8 @@ pOut->r = pC->r * s;
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

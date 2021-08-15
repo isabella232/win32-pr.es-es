@@ -1,18 +1,18 @@
 ---
-title: Propiedad RedirectDevices de IMsRdpClientAdvancedSettings5
+title: Propiedad IMsRdpClientAdvancedSettings5 RedirectDevices
 description: Establece o recupera la configuración para la redirección de dispositivos.
 ms.assetid: bf989ca0-5c79-4a73-a32b-51ef97ca0dff
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RedirectDevices
-- Propiedad RedirectDevices Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad RedirectDevices
-- Propiedad RedirectDevices Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad RedirectDevices
-- Propiedad RedirectDevices Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad RedirectDevices
-- Propiedad RedirectDevices Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad RedirectDevices
+- Propiedad RedirectDevices Servicios de Escritorio remoto
+- Propiedad RedirectDevices Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad RedirectDevices
+- Propiedad RedirectDevices Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad RedirectDevices
+- Propiedad RedirectDevices Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad RedirectDevices
+- Propiedad RedirectDevices Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad RedirectDevices
 topic_type:
 - apiref
 api_name:
@@ -34,20 +34,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab1eec96b5d4fde20add891cc742c76c14ebe7ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be6e72c5441b7eaa79b7bfeceb4e910b09041b72fb90dc58a54abda73baf9109
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118855333"
 ---
-# <a name="imsrdpclientadvancedsettings5redirectdevices-property"></a>IMsRdpClientAdvancedSettings5:: RedirectDevices (propiedad)
+# <a name="imsrdpclientadvancedsettings5redirectdevices-property"></a>IMsRdpClientAdvancedSettings5::RedirectDevices, propiedad
 
 Establece o recupera la configuración para la redirección de dispositivos.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -64,13 +64,13 @@ HRESULT get_RedirectDevices(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece el modo de redireccionamiento de dispositivos en **true** o **false**. Si se establece en **true**, se habilita el modo de redirección de dispositivos.
+Establece el modo de redireccionamiento del dispositivo **en TRUE** o **FALSE.** Si se establece en **TRUE,** el modo de redireccionamiento de dispositivos está habilitado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                   |
@@ -80,7 +80,7 @@ Establece el modo de redireccionamiento de dispositivos en **true** o **false**.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

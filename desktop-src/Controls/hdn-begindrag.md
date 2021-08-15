@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de HDN_BEGINDRAG (commctrl. h)
-description: Lo envía un control de encabezado cuando se ha iniciado una operación de arrastre en uno de sus elementos. Este código de notificación solo lo envían los controles de encabezado que se establecen en el estilo de la de HDS \_ . Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: HDN_BEGINDRAG de notificación (Commctrl.h)
+description: Enviado por un control de encabezado cuando se ha iniciado una operación de arrastre en uno de sus elementos. Este código de notificación solo se envía mediante controles de encabezado que están establecidos en el estilo \_ DRAGDROP de HDS. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 3dfb7a7c-d783-48e0-ba92-8144104f163a
 keywords:
-- HDN_BEGINDRAG controles de código de notificación de Windows
+- HDN_BEGINDRAG código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6b4af8e662a8a9891e9a81535de987337567f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ae1ab3f8ac24b5521fab1afc5313503867e575906e851acf4d4fdbe90fe787d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544695"
 ---
-# <a name="hdn_begindrag-notification-code"></a>Código de notificación de BEGINDRAG de HDN \_
+# <a name="hdn_begindrag-notification-code"></a>Código de notificación \_ BEGINDRAG de HDN
 
-Lo envía un control de encabezado cuando se ha iniciado una operación de arrastre en uno de sus elementos. Este código de notificación solo lo envían los controles de encabezado que se establecen en el estilo de la de [**HDS \_**](header-control-styles.md) . Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de encabezado cuando se ha iniciado una operación de arrastre en uno de sus elementos. Este código de notificación solo se envía mediante controles de encabezado que están establecidos en el [**estilo \_ DRAGDROP de HDS.**](header-control-styles.md) Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,21 +47,21 @@ Puntero a una estructura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para permitir que el control de encabezado Administre automáticamente las operaciones de arrastrar y colocar, devuelva **false**. Si el propietario del control realiza manualmente una reordenación de arrastrar y colocar, devuelve **true**.
+Para permitir que el control de encabezado administre automáticamente las operaciones de arrastrar y colocar, devuelva **FALSE.** Si el propietario del control realiza manualmente la reordenación de arrastrar y colocar, devuelva **TRUE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un control de encabezado tiene como valor predeterminado la administración automática de la reordenación de arrastrar y colocar. Devolver **true** para indicar que la administración de arrastrar y colocar externa (manual) permite que el propietario del control proporcione servicios personalizados como parte del proceso de arrastrar y colocar.
+De forma predeterminada, un control de encabezado administra automáticamente la reordenación de arrastrar y colocar. Devolver **TRUE** para indicar la administración externa (manual) de arrastrar y colocar permite al propietario del control proporcionar servicios personalizados como parte del proceso de arrastrar y colocar.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

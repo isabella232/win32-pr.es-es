@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_LGPOS. Propiedad HasValue'
+description: 'Más información sobre: JET_LGPOS. Propiedad HasValue'
 title: JET_LGPOS. Propiedad HasValue
 TOCTitle: 'HasValue property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_LGPOS.HasValue
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 325617524478973b15f2633141770732aa3941cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0c736e7a42374780c4b9c75bd88585329aef0b72f63d55c6c053aebe132dba5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119401455"
 ---
 # <a name="jet_lgposhasvalue-property"></a>JET_LGPOS. Propiedad HasValue
 
-Obtiene un valor que indica si la posición del registro es NULL.
+Obtiene un valor que indica si esta posición del registro es null.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,18 +58,18 @@ public bool HasValue { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 #### <a name="implements"></a>Implementaciones
 
-[INullableJetStruct. HasValue](./inullablejetstruct.hasvalue-property.md)  
+[INullableJetStruct.HasValue](./inullablejetstruct.hasvalue-property.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LGPOS](./jet-lgpos-structure2.md)
+[JET_LGPOS estructura](./jet-lgpos-structure2.md)
 
-[Miembros de JET_LGPOS](./jet-lgpos-members.md)
+[JET_LGPOS miembros](./jet-lgpos-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

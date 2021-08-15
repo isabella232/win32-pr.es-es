@@ -1,15 +1,15 @@
 ---
 description: Especifica si el codificador genera encabezados de extensión de imagen. Esta propiedad se aplica a los codificadores de vídeo MPEG.
 ms.assetid: fea39283-53b1-4af1-b048-18fad6d56ec7
-title: Propiedad AVEncMPVGenerateHeaderPicExt (Codecapi. h)
+title: Propiedad AVEncMPVGenerateHeaderPicExt (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b599663a89e65f371c6020e83babcd4f6f17387
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cd0aa1c2713586770f6f5f1cf40799fcea260194f61a60b3e16f3226dabd729f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105659260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540875"
 ---
 # <a name="avencmpvgenerateheaderpicext-property"></a>Propiedad AVEncMPVGenerateHeaderPicExt
 
@@ -19,36 +19,36 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID de propiedad
 
 **CODECAPI \_ AVEncMPVGenerateHeaderPicExt**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor es **Variant \_ true**, el codificador genera encabezados de extensión de imagen.
+Si el valor es **VARIANT \_ TRUE,** el codificador genera encabezados de extensión de imagen.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

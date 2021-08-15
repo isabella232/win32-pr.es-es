@@ -1,7 +1,7 @@
 ---
-description: Construye patrones de bits que se usan para identificar formatos de coordenadas de textura dentro de una descripción de FVF. Los resultados de estas macros se pueden combinar en una descripción de FVF mediante el operador OR.
+description: Construye patrones de bits que se usan para identificar formatos de coordenadas de textura dentro de una descripción de FVF. Los resultados de estas macros se pueden combinar dentro de una descripción de FVF mediante el operador OR.
 ms.assetid: c3076d7c-7935-40ee-b513-7ff6551a535f
-title: D3DFVF_TEXCOORDSIZEN (D3d9types. h)
+title: D3DFVF_TEXCOORDSIZEN (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 58288667954e3414aa3d8ae1550e02e7216ffb4e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f5a39827f94f0415d6235797489f6e18c5fb515a5e5c36c0f26153b7ba8303ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988915"
 ---
 # <a name="d3dfvf_texcoordsizen"></a>D3DFVF \_ TEXCOORDSIZEN
 
-Construye patrones de bits que se usan para identificar formatos de coordenadas de textura dentro de una descripción de FVF. Los resultados de estas macros se pueden combinar en una descripción de FVF mediante el operador OR.
+Construye patrones de bits que se usan para identificar formatos de coordenadas de textura dentro de una descripción de FVF. Los resultados de estas macros se pueden combinar dentro de una descripción de FVF mediante el operador OR.
 
 ``` syntax
 #define D3DFVF_TEXCOORDSIZEN(CoordIndex) 
@@ -38,15 +38,15 @@ Construye patrones de bits que se usan para identificar formatos de coordenadas 
 
 | Parámetro                                                                                                    | Descripción                                                                                                                              |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="CoordIndex"></span><span id="coordindex"></span><span id="COORDINDEX"></span>CoordIndex<br/> | Valor que identifica el conjunto de coordenadas de textura en el que se aplica el tamaño de la coordenada de textura (1-, 2-, 3-o 4Dimensional). <br/> |
+| <span id="CoordIndex"></span><span id="coordindex"></span><span id="COORDINDEX"></span>CoordIndex<br/> | Valor que identifica el conjunto de coordenadas de textura al que se aplica el tamaño de la coordenada de textura (1-, 2-, 3-, o 4Dimensional). <br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las macros de **D3DFVF \_ TEXCOORDSIZEN** usan las siguientes constantes.
+Las macros **D3DFVF \_ TEXCOORDSIZEN** usan las siguientes constantes.
 
 
 ```C++
@@ -58,7 +58,7 @@ Las macros de **D3DFVF \_ TEXCOORDSIZEN** usan las siguientes constantes.
 
 
 
-La descripción de FVF siguiente identifica un formato de vértice que tiene una posición; un normal; colores difusos y especulares; y dos conjuntos de coordenadas de textura. El primer conjunto de coordenadas de textura incluye un elemento único y el segundo conjunto incluye dos elementos:
+La siguiente descripción de FVF identifica un formato de vértice que tiene una posición; un normal; colores difusos y especulares; y dos conjuntos de coordenadas de textura. El primer conjunto de coordenadas de textura incluye un solo elemento y el segundo conjunto incluye dos elementos:
 
 
 ```C++
@@ -78,11 +78,11 @@ DWORD dwFVF = D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

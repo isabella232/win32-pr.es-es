@@ -1,10 +1,10 @@
 ---
-title: Colección counters (Isysmon. h)
-description: Utilice esta clase para administrar la colección de objetos de tipo de elemento. Para recuperar este objeto, llame a SystemMonitor. Counters.
+title: Colección de contadores (Isysmon.h)
+description: Use esta clase para administrar la colección de objetos CounterItem. Para recuperar este objeto, llame a SystemMonitor.Counters.
 ms.assetid: 01542569-3fee-440a-8722-db377380b73c
 keywords:
-- Colección de contadores SysMon
-- Colección de contadores SysMon, descripción
+- SysMon de la colección de contadores
+- Colección de contadores SysMon , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,36 +15,36 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbcbf8da93f13dce2ce2a290adeab9394ee8addb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8349c1425450491c3fc658f6ac1ac3c5fcf75d3e617a92f6e34b91f2f5802e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105666048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883342"
 ---
-# <a name="counters-collection"></a>Colección de contadores
+# <a name="counters-collection"></a>Recopilación de contadores
 
-Utilice esta clase para administrar la colección de objetos de tipo de [**elemento**](counteritem.md) .
+Use esta clase para administrar la colección de [**objetos CounterItem.**](counteritem.md)
 
-Para recuperar este objeto, llame a [**SystemMonitor. counters**](systemmonitor-counters.md).
+Para recuperar este objeto, llame [**a SystemMonitor.Counters**](systemmonitor-counters.md).
 
 ## <a name="members"></a>Miembros
 
-La colección **counters** tiene estos tipos de miembros:
+La **colección Counters** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La colección **counters** tiene estos métodos.
+La **colección Counters** tiene estos métodos.
 
 
 
 | Método                            | Descripción                                                                           |
 |:----------------------------------|:--------------------------------------------------------------------------------------|
-| [**Agréguela**](counters-add.md)       | Agrega una instancia de un [**elemento de objeto**](counteritem.md) a la colección.<br/>      |
-| [**Retirar**](counters-remove.md) | Quita una instancia de un [**objeto**](counteritem.md) de la colección.<br/> |
+| [**Añadir**](counters-add.md)       | Agrega una [**instancia counterItem**](counteritem.md) a la colección.<br/>      |
+| [**Quitar**](counters-remove.md) | Quita una [**instancia counterItem**](counteritem.md) de la colección.<br/> |
 
 
 
@@ -52,35 +52,35 @@ La colección **counters** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La colección **counters** tiene estas propiedades.
+La **colección Counters** tiene estas propiedades.
 
 
 
 | Propiedad                                   | Descripción                                                                                         |
 |:-------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| [**Contabiliza**](counters-count.md)<br/> | Recupera el número de instancias de los [**Contraelementos**](counteritem.md) de la colección.<br/>  |
-| [**Elemento**](counters-item.md)<br/>   | Recupera la instancia de un [**elemento de objeto**](counteritem.md) especificado de la colección.<br/> |
+| [**Count**](counters-count.md)<br/> | Recupera el número de [**instancias CounterItem**](counteritem.md) de la colección.<br/>  |
+| [**Elemento**](counters-item.md)<br/>   | Recupera la instancia de [**CounterItem especificada**](counteritem.md) de la colección.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El objeto **counters** es la propiedad predeterminada del objeto [**SystemMonitor**](systemmonitor.md) .
+El **objeto Counters** es la propiedad predeterminada del [**objeto SystemMonitor.**](systemmonitor.md)
 
-Agregue a esta colección los contadores que desea representar en un gráfico. SYSMON recupera los valores del contador desde el sistema o desde un archivo de registro, en función del [**origen de datos**](systemmonitor-datasourcetype.md) que especifique.
+Agregue a esta colección los contadores que desea representar como gráficos. SYSMON recupera los valores del contador del sistema o de un archivo de registro en función del origen [**de datos**](systemmonitor-datasourcetype.md) que especifique.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Isysmon. h</dt> </dl>  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Isysmon.h</dt> </dl>  |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

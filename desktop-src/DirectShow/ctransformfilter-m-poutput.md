@@ -1,7 +1,7 @@
 ---
-description: Puntero al pin de salida.
+description: Puntero a la patilla de salida.
 ms.assetid: 78ad7c38-8259-4005-9542-5ac375305940
-title: 'Miembro CTransformFilter:: m_pOutput (Transfrm. h)'
+title: Miembro CTransformFilter::m_pOutput (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8ff6d29030e39a3e68f3fc85b1bfbcfaf1b28785
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 661f03c9431834a24386cace80a0b197007bd9ffe464325bbe08321916e3545f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953544"
 ---
-# <a name="ctransformfilterm_poutput-member"></a>Miembro pOutput CTransformFilter:: m \_
+# <a name="ctransformfilterm_poutput-member"></a>Miembro CTransformFilter::m \_ pOutput
 
-Puntero al pin de salida.
+Puntero a la patilla de salida.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ CTransformOutputPin *m_pOutput;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

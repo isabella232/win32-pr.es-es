@@ -1,21 +1,21 @@
 ---
-description: En el ejemplo siguiente se intenta cambiar la DACL de un objeto de archivo tomando la propiedad de ese objeto.
+description: En el ejemplo siguiente se intenta cambiar la DACL de un objeto de archivo tomando posesión de ese objeto.
 ms.assetid: 0b309ac9-177d-425f-8b78-71fe73e41979
 title: Tomar posesión de objetos en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae43c28cb55193d43a15ed08f5905defded3dc2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0fba581c449309dcfbfaeba6ca207b58f26f966088e43b99717bbd4fb89323f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119413305"
 ---
 # <a name="taking-object-ownership-in-c"></a>Tomar posesión de objetos en C++
 
-En el ejemplo siguiente se intenta cambiar la DACL de un objeto de archivo tomando la propiedad de ese objeto. Esto solo se realizará correctamente si el autor de la llamada tiene \_ acceso de DAC de escritura al objeto o es el propietario del objeto. Si se produce un error en el intento inicial de cambiar DACL, un administrador puede tomar posesión del objeto. Para otorgar la propiedad del administrador, el ejemplo habilita \_ el \_ privilegio de nombre de propiedad se \_ en el [*token de acceso*](/windows/desktop/SecGloss/a-gly)del llamador y hace que el grupo de administradores del sistema local sea el propietario del objeto. Si el autor de la llamada es miembro del grupo de administradores, el código podrá cambiar la DACL del objeto.
+En el ejemplo siguiente se intenta cambiar la DACL de un objeto de archivo tomando posesión de ese objeto. Esto solo se realizará correctamente si el autor de la llamada tiene acceso \_ DE DAC DE ESCRITURA al objeto o es el propietario del objeto. Si se produce un error en el intento inicial de cambiar la DACL, un administrador puede tomar posesión del objeto. Para proporcionar la propiedad del administrador, el ejemplo habilita el privilegio SE TAKE OWNERSHIP NAME en el token de acceso del autor de la llamada y hace que el grupo Administradores del sistema local sea el propietario \_ \_ del \_ objeto. [](/windows/desktop/SecGloss/a-gly) Si el autor de la llamada es miembro del grupo Administradores, el código podrá cambiar la DACL del objeto.
 
-Para habilitar y deshabilitar los privilegios, en este ejemplo se usa la función de ejemplo SetPrivilege que se describe en [habilitar y deshabilitar privilegios en C++](enabling-and-disabling-privileges-in-c--.md).
+Para habilitar y deshabilitar privilegios, en este ejemplo se usa la función de ejemplo SetPrivilege descrita en Habilitación y deshabilitación de [privilegios en C++.](enabling-and-disabling-privileges-in-c--.md)
 
 
 ```C++

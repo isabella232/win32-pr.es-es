@@ -1,11 +1,11 @@
 ---
-title: Propiedad GetITem de IPropertyFilterCollection (WdsSharedIDL. h)
+title: Propiedad GetITem de IPropertyFilterCollection (WdsSharedIDL.h)
 description: Devuelve un filtro específico dentro de la colección.
 ms.assetid: 72a35d98-b2d8-4dfb-84a7-365a3778fc85
 keywords:
-- Propiedad GetITem características de entorno de Windows heredado
-- Propiedad GetITem características de entorno heredado de Windows, interfaz IPropertyFilterCollection
-- Interfaz IPropertyFilterCollection características del entorno heredado de Windows, propiedad GetITem
+- Características heredadas del entorno de Windows GetITem
+- Propiedad GetITem Heredada de Windows environment , interfaz IPropertyFilterCollection
+- IPropertyFilterCollection interface Legacy Windows Environment Features , GetITem property
 topic_type:
 - apiref
 api_name:
@@ -18,17 +18,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8027bf175efc615c1324f55229c7e307a123c39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7436e1fe10c26621f3cf4480be7db9710f80906bea18084a2e775e563db4dd8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451094"
 ---
-# <a name="ipropertyfiltercollectiongetitem-property"></a>IPropertyFilterCollection:: GetITem (propiedad)
+# <a name="ipropertyfiltercollectiongetitem-property"></a>IPropertyFilterCollection::GetITem, propiedad
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
 Devuelve un filtro específico dentro de la colección.
 
@@ -59,10 +59,10 @@ Establece la dirección del filtro.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

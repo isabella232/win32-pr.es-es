@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Source-Object-DN
-description: Contiene la representación de cadena del nombre distintivo del objeto de otro bosque que corresponde a este objeto.
+title: Atributo ms-DS-Source-Object-DN
+description: Contiene la representación de cadena del nombre distintivo del objeto en otro bosque que corresponde a este objeto.
 ms.assetid: 2955c6ed-068a-47bb-aabc-e335f5ad7709
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-Source-Object-DN
-- Esquema de AD de atributo msDS-SourceObjectDN
+- Esquema de AD del atributo ms-DS-Source-Object-DN
+- Esquema de AD del atributo msDS-SourceObjectDN
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9853dd37ead84e638f9ccb5e928b6d86bc9f5ab
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d47c347edf85cf5d5db330ed14a97bad7464571e74469d3c06608d20e544397a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544435"
 ---
-# <a name="ms-ds-source-object-dn-attribute"></a>atributo MS-DS-Source-Object-DN
+# <a name="ms-ds-source-object-dn-attribute"></a>Atributo ms-DS-Source-Object-DN
 
-Contiene la representación de cadena del nombre distintivo del objeto de otro bosque que corresponde a este objeto.
+Contiene la representación de cadena del nombre distintivo del objeto en otro bosque que corresponde a este objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-Source-Object-DN                      |
-| Nombre para mostrar de LDAP | msDS-SourceObjectDN                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Source-Object-DN                      |
+| Ldap-Display-Name | msDS-SourceObjectDN                         |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1879                     |
-| System-ID-GUID    | 773e93af-d3b4-48d4-b3f9-06457602d3d0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 773e93af-d3b4-48d4-b3f9-06457602d3d0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,15 +51,15 @@ Contiene la representación de cadena del nombre distintivo del objeto de otro b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 10240        |
 | Search-Flags           | 0x00000000   |
@@ -72,15 +72,15 @@ Contiene la representación de cadena del nombre distintivo del objeto de otro b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 10240        |
 | Search-Flags           | 0x00000000   |
@@ -93,15 +93,15 @@ Contiene la representación de cadena del nombre distintivo del objeto de otro b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 10240        |
 | Search-Flags           | 0x00000000   |
@@ -114,15 +114,15 @@ Contiene la representación de cadena del nombre distintivo del objeto de otro b
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 10240        |
 | Search-Flags           | 0x00000000   |

@@ -1,17 +1,17 @@
 ---
 description: Dirección de mensajería instantánea del contacto.
 ms.assetid: 6a82d888-244e-4cb1-acfe-57da73cd0bc2
-title: System. contact. IMAddress
+title: System.Contact.IMAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b577dc93b894c21c64cf783aab1bc12d19731a73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cdf5f71a78c792b07fa25b1ba1fbc15acf8b77fda03d68cc997b05177f1829e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554215"
 ---
-# <a name="systemcontactimaddress"></a>System. contact. IMAddress
+# <a name="systemcontactimaddress"></a>System.Contact.IMAddress
 
 Dirección de mensajería instantánea del contacto.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

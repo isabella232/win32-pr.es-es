@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_VideoHead clase : solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_VideoHead: solicita un cambio de estado.'
 ms.assetid: c780c162-3352-4f13-a84a-26eb99f9d380
 title: Método RequestStateChange de la Msvm_VideoHead clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 71b5022ac8b567d318dadad558561c7d23603017
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7ae3688db038e7e4a643b390dd1d1e3ba8b9b6580920690b92d260d670911020
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119340415"
 ---
-# <a name="requeststatechange-method-of-the-msvm_videohead-class"></a>Método RequestStateChange de la clase \_ VideoHead de Msvm
+# <a name="requeststatechange-method-of-the-msvm_videohead-class"></a>Método RequestStateChange de la clase VideoHead de Msvm \_
 
 Solicita un cambio de estado.
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecimiento** (11)
+**Restablecer** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -128,7 +128,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ objeto ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 

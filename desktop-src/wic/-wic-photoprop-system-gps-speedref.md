@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. SpeedRef.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.SpeedRef.
 ms.assetid: 45fea6be-1e63-4244-a93d-d446e315ddd4
-title: Directiva de metadatos de la foto System. GPS. SpeedRef
+title: Directiva de metadatos de fotos System.GPS.SpeedRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c454a016dd77345c0a85e0ca3df1ae52694bd81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c7b60a0c8decaf5ecc30f9017a0aadc61bb9fe4814240fb7ab2e022d6a2873f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549495"
 ---
-# <a name="systemgpsspeedref-photo-metadata-policy"></a>Directiva de metadatos de la foto System. GPS. SpeedRef
+# <a name="systemgpsspeedref-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.SpeedRef
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. SpeedRef](../properties/props-system-gps-speedref.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.SpeedRef.](../properties/props-system-gps-speedref.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ GPS \_ SpeedRef
 
@@ -27,40 +27,40 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-\_Se prefiere VT LPWStr, pero \_ también se acepta VT LPSTR.
+Se \_ prefiere VT LPWSTR, pero también \_ se acepta VT LPSTR.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 12} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=12} | ascii       |
 | 2     | /xmp/exif:GPSSpeedRef     | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 12} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=12} | ascii       |
 | 2     | /xmp/exif:GPSSpeedRef     | unicode     |
 
 
@@ -71,9 +71,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 12} |             |
+| 1     | /app1/ifd/gps/{ushort=12} |             |
 | 2     | /xmp/exif:gpsspeedref     |             |
 
 
@@ -82,26 +82,26 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                      |         |
+| Pedido | Ruta de acceso                      |         |
 |-------|---------------------------|---------|
-| 1     | /IFD/GPS/{ushort = 12}      | ascii   |
+| 1     | /ifd/gps/{ushort=12}      | ascii   |
 | 2     | /ifd/xmp/exif:GPSSpeedRef | unicode |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 12}      | ascii       |
+| 1     | /ifd/gps/{ushort=12}      | ascii       |
 | 2     | /ifd/xmp/exif:GPSSpeedRef | unicode     |
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
-| 1     | /IFD/GPS/{ushort = 12}      |
+| 1     | /ifd/gps/{ushort=12}      |
 | 2     | /ifd/xmp/exif:gpsspeedref |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. SpeedRef](../properties/props-system-gps-speedref.md)
+[System.GPS.SpeedRef](../properties/props-system-gps-speedref.md)
 </dt> </dl>
 
  

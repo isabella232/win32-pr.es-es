@@ -1,7 +1,7 @@
 ---
 description: Anima la malla y avanza el tiempo de animación global en una cantidad especificada.
 ms.assetid: a822d92a-c301-4289-b67b-1df99808c79d
-title: 'ID3DXAnimationController:: AdvanceTime (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::AdvanceTime (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 848e1f8aadd302b9194168e92b2b0abe732a2c2f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6c11a3b356fb0f09cc3372db3ccebd824b4dc8290ff586eed9de3b9fa2ea13ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987965"
 ---
-# <a name="id3dxanimationcontrolleradvancetime-method"></a>ID3DXAnimationController:: AdvanceTime (método)
+# <a name="id3dxanimationcontrolleradvancetime-method"></a>Método ID3DXAnimationController::AdvanceTime
 
 Anima la malla y avanza el tiempo de animación global en una cantidad especificada.
 
@@ -41,16 +41,16 @@ HRESULT AdvanceTime(
 
 <dl> <dt>
 
-*TimeDelta* \[ de\]
+*TimeDelta* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 Cantidad, en segundos, por la que se va a avanzar el tiempo de animación global. El valor de TimeDelta debe ser no negativo o cero.
 
 </dd> <dt>
 
-*pCallbackHandler* \[ de\]
+*pCallbackHandler* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCALLBACKHANDLER**](id3dxanimationcallbackhandler.md)**
@@ -63,7 +63,7 @@ Puntero a una interfaz de controlador de devolución de llamada de animación de
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,45 +1,45 @@
 ---
-title: Grabar y ver eventos de TraceLogging
-description: Grabe eventos de TraceLogging con la grabadora de rendimiento de Windows (WPR) y verlos con el analizador de rendimiento de Windows (WPA).
+title: Registrar y ver eventos de seguimiento
+description: Registre los eventos tracelogging con Windows Performance Recorder (WPR) y véalos con Windows Analizador de rendimiento (WPA).
 ms.assetid: 906589FA-F48D-4105-9E56-1EC8B86542FB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09be054d274fc2c2c62635cc7bf12e8cf8acdef3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 25c77c1a1759988252f57c1ec54dca77cffaa21832878ead6ba8a827df3329fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966549"
 ---
-# <a name="record-and-view-tracelogging-events"></a>Grabar y ver eventos de TraceLogging
+# <a name="record-and-view-tracelogging-events"></a>Registrar y ver eventos de seguimiento
 
-Grabe eventos de TraceLogging con la grabadora de rendimiento de Windows (WPR) y verlos con el analizador de rendimiento de Windows (WPA).
+Registre los eventos tracelogging con Windows Performance Recorder (WPR) y véalos con Windows Analizador de rendimiento (WPA).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   Windows 10
--   La versión de Windows 10 de la grabadora de rendimiento de Windows (WPR) y la versión de Windows 10 del analizador de rendimiento de Windows (WPA) que forma parte de Windows® Assessment and Deployment Kit (Windows ADK).
+-   Windows 10
+-   La versión Windows 10 de Windows Performance Recorder (WPR) y la versión Windows 10 de Windows Analizador de rendimiento (WPA) que forma parte del kit de evaluación e implementación de Windows® (Windows ADK).
 
 > [!IMPORTANT]
-> Los seguimientos capturados con TraceLogging deben capturarse con la versión de Windows 10 de la grabadora de rendimiento de Windows y verse con la versión de Windows 10 del analizador de rendimiento de Windows. Si no puede capturar o descodificar los eventos, compruebe que está usando la versión de Windows 10 de las herramientas.
+> Los seguimientos capturados con TraceLogging deben capturarse con la versión Windows 10 de Windows Performance Recorder y visualizarse con la versión Windows 10 de Windows Analizador de rendimiento. Si no puede capturar o descodificar los eventos, compruebe que está usando la Windows 10 de las herramientas.
 
- 
+ 
 
-### <a name="1-capture-trace-data-with-wpr"></a>1. capturar datos de seguimiento con WPR
+### <a name="1-capture-trace-data-with-wpr"></a>1. Captura de datos de seguimiento con WPR
 
-Para capturar un seguimiento en Windows Phone, consulte capturar eventos TraceLogging en Windows Phone siguiente.
+Para capturar un seguimiento en Windows Phone, vea Capturar eventos tracelogging en Windows Phone a continuación.
 
-Cree un perfil de grabadora de rendimiento de Windows (. wprp) para poder usar WPR para capturar los eventos de Tracelogging.
+Cree un Windows de grabadora de rendimiento (.wprp) para que pueda usar WPR para capturar los eventos de seguimiento.
 
-**Cree un. Archivo WPRP**
+**Cree un . Archivo WPRP**
 
-1.  Use el siguiente ejemplo de WPRP con el ejemplo de código nativo en el [Inicio rápido de TraceLogging C/C++](tracelogging-native-quick-start.md) o el ejemplo administrado en el [Inicio rápido administrado de TraceLogging](tracelogging-managed-quick-start.md). Si va a registrar eventos de su propio proveedor, reemplace las `TODO` secciones por los valores adecuados para el proveedor.
+1.  Use el siguiente ejemplo de WPRP con el ejemplo de código nativo en el Inicio rápido [C/C++](tracelogging-native-quick-start.md) de TraceLogging o el ejemplo administrado en la instancia administrada de [TraceLogging Inicio rápido](tracelogging-managed-quick-start.md). Si va a registrar eventos de su propio proveedor, reemplace las secciones `TODO` por los valores adecuados para el proveedor.
 
-    > \[! Aún\]  
+    > \[! Importante\]  
 
-     
+     
 
-    Si usa la guía de inicio rápido de C/C++ de TraceLogging, especifique el GUID del proveedor en el `Name` atributo del `<EventProvider>` elemento. Por ejemplo: `<EventProvider Id="EventProvider_SimpleTraceLoggingProvider" Name="3970F9cf-2c0c-4f11-b1cc-e3a1e9958833" />`. Si usa el inicio rápido TraceLogging administrado, especifique el nombre del proveedor precedido por ' \* ' en el `Name` atributo del `<EventProvider />` elemento. Por ejemplo, `<EventProvider Name="*SimpleTraceLoggingProvider" />`.
+    Si usa el inicio rápido tracelogging de C/C++, especifique el GUID del proveedor en `Name` el atributo del elemento `<EventProvider>` . Por ejemplo: `<EventProvider Id="EventProvider_SimpleTraceLoggingProvider" Name="3970F9cf-2c0c-4f11-b1cc-e3a1e9958833" />`. Si usa el inicio rápido tracelogging administrado, especifique el nombre del proveedor precedido por ' ' en el \* `Name` atributo del elemento `<EventProvider />` . Por ejemplo, `<EventProvider Name="*SimpleTraceLoggingProvider" />`.
 
     Archivo WPRP de ejemplo.
 
@@ -89,83 +89,83 @@ Cree un perfil de grabadora de rendimiento de Windows (. wprp) para poder usar W
 
     
 
-2.  Guarde el archivo con un. Extensión de nombre de archivo WPRP.
-3.  Inicie la captura mediante la ventana del símbolo del sistema con permisos elevados (ejecutar como administrador).
+2.  Guarde el archivo con un . Extensión de nombre de archivo WPRP.
+3.  Inicie la captura mediante WPR desde una ventana del símbolo del sistema con privilegios elevados (ejecutar como administrador).
 
-    **<path to wpr>\\wpr.exe-Start GeneralProfile-Start TraceLoggingProvider. wprp**
+    **<path to wpr>\\wpr.exe -start GeneralProfile -start TraceLoggingProvider.wprp**
 
-    > \[! Tip\]  
-    > En lo que respecta a la generación de perfiles general, también puede agregar **– Start GeneralProfile** a la línea de comandos wpr.exe para capturar eventos del sistema junto con los eventos del proveedor. Si solo desea recopilar los eventos, omita **-Start GeneralProfile**.
+    > \[! Propina\]  
+    > Para fines generales de generación de perfiles, también puede agregar **–start GeneralProfile** a la línea de comandos de wpr.exe para capturar eventos del sistema junto con los eventos del proveedor. Si solo desea recopilar los eventos, omita **-start GeneralProfile**.
 
-     
+     
 
 4.  Ejecute la aplicación que contiene los eventos.
 5.  Detenga la captura de seguimiento.
 
-    **<path to wpr>\\wpr.exe-STOP TraceCaptureFile. ETL Description**
+    **<path to wpr>\\wpr.exe -stop TraceCaptureFile.etl description**
 
-    > \[! Tip\]  
-    > Si agregó **– Start GeneralProfile** para recopilar eventos del sistema, agregue **-Stop GeneralProfile** a la **wpr.exe** línea de comandos anterior.
+    > \[! Propina\]  
+    > Si ha agregado **–start GeneralProfile para** recopilar eventos del sistema, agregue **-stop GeneralProfile** a lawpr.exe **línea** de comandos anterior.
 
-     
+     
 
-### <a name="2-capture-tracelogging-events-on-windows-phone"></a>2. capturar eventos TraceLogging en Windows Phone
+### <a name="2-capture-tracelogging-events-on-windows-phone"></a>2. Capturar eventos tracelogging en Windows Phone
 
 <span id="capturephone"></span><span id="CAPTUREPHONE"></span>
 
 1.  Inicie tracelog para capturar eventos del proveedor.
 
-    **cmdd tracelog-Start test-f c: \\ Test. ETL-GUID \# providerguid**
+    **cmdd tracelog -start test -f c: \\ test.etl \# -guid providerguid**
 
 2.  Ejecute el escenario de prueba para registrar eventos.
-3.  Detener captura de seguimiento.
+3.  Detenga la captura de seguimiento.
 
-    **cmdd tracelog-detener prueba**
+    **cmdd tracelog -stop test**
 
-4.  Combinar los resultados del seguimiento del sistema con los resultados del seguimiento.
+4.  Combine los resultados de seguimiento del sistema con los resultados de seguimiento.
 
-    **cmdd xperf-Merge c: \\ Test. ETL c: \\ testmerged. ETL**
+    **cmdd xperf -merge c: \\ test.etl c: \\ testmerged.etl**
 
 5.  Recupere el archivo de registro combinado.
 
-    **GetD c: \\ testmerged. ETL**
+    **getd c: \\ testmerged.etl**
 
-### <a name="3-view-tracelogging-data-using-windows-performance-analyzer"></a>3. ver los datos de TraceLogging con el analizador de rendimiento de Windows.
+### <a name="3-view-tracelogging-data-using-windows-performance-analyzer"></a>3. Vea los datos de TraceLogging mediante Windows Analizador de rendimiento.
 
-WPA es actualmente el único visor que se puede usar para ver los archivos de seguimiento de TraceLogging (. ETL).
+WPA es actualmente el único visor que puede usar para ver los archivos de seguimiento de seguimiento (.etl).
 
 1.  Inicie WPA.
 
-    **<path to wpr>\\wpa.exe traceLoggingResults. ETL**
+    **<path to wpr>\\wpa.exe traceLoggingResults.etl**
 
-2.  Cargue el archivo de seguimiento (. ETL) que especificó en el comando wpa.exe anterior, por ejemplo, traceLoggingResults. ETL.
-3.  Vea los eventos del proveedor. En el explorador de gráficos de WPA, expanda **actividad del sistema**.
-4.  Haga doble clic en el panel **eventos genéricos** para ver los eventos en el panel **análisis** .
+2.  Cargue el archivo de seguimiento (.etl) que especificó en el wpa.exe anterior, por ejemplo, traceLoggingResults.etl.
+3.  Ver los eventos del proveedor. En el Explorador de Graph WPA, expanda **Actividad del sistema**.
+4.  Haga doble clic en el **panel Eventos** genéricos para ver los eventos en el **panel** Análisis.
 
     ![expandir eventos genéricos](images/expandsystemactivity.png)
 
-5.  En el panel análisis, busque los eventos de su proveedor para comprobar que TraceLogging funciona.
+5.  En el panel Análisis, busque los eventos del proveedor para comprobar que TraceLogging funciona.
 
-    En la columna **nombre del proveedor** de la tabla **eventos genéricos** , busque y seleccione la fila con el nombre del proveedor.
+    En la **columna Nombre del proveedor** de la tabla **Eventos** genéricos, busque y seleccione la fila con el nombre del proveedor.
 
-    Si tiene varios proveedores para ordenar, haga clic en el encabezado de columna para ordenar por nombre de columna, lo que puede facilitar la búsqueda de su proveedor.
+    Si tiene varios proveedores para ordenar, haga clic en el encabezado de columna para ordenar por nombre de columna, lo que puede facilitar la búsqueda del proveedor.
 
-    Cuando encuentre el proveedor, haga clic con el botón derecho en el nombre y seleccione **filtro para** seleccionar.
+    Cuando encuentre el proveedor, haga clic con el botón derecho en el nombre y seleccione **Filtrar por Selección.**
 
-    ![filtrar la selección al proveedor](images/filtertoselection.png)
+    ![selección de filtro al proveedor](images/filtertoselection.png)
 
-    El evento para SimpleTraceLoggingProvider y su valor aparecerán en el panel inferior de la ventana de análisis. Expanda el nombre del proveedor para ver los eventos.
+    El evento de SimpleTraceLoggingProvider y su valor aparecerá en el panel inferior de la ventana Análisis. Expanda el nombre del proveedor para ver los eventos.
 
     ![ver el evento desde simpletraceloggingprovider](images/eventview.png)
 
-    Para obtener más información acerca del uso de WPA, consulte [analizador de rendimiento de Windows](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
+    Para obtener más información sobre el uso de WPA, [vea Windows Analizador de rendimiento](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
 
 ## <a name="summary-and-next-steps"></a>Resumen y pasos siguientes
 
-El proceso de grabación y visualización de eventos ETW mediante WPR y WPA se aplica igualmente a los eventos TraceLogging.
+El proceso de grabación y visualización de eventos ETW mediante WPR y WPA se aplica igualmente bien a los eventos tracelogging.
 
-Vea [ejemplos de C/C++ Tracelogging](tracelogging-c-cpp-tracelogging-examples.md) para obtener ejemplos adicionales de Tracelogging.
+Vea [Ejemplos de seguimiento de C/C++ para](tracelogging-c-cpp-tracelogging-examples.md) obtener ejemplos de seguimiento adicionales.
 
- 
+ 
 
- 
+ 

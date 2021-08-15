@@ -1,7 +1,7 @@
 ---
-description: La clase que representa los valores configurados para un VirtualSystemCollection de MSVM \_ .
+description: Clase que representa los valores configurados para Msvm \_ VirtualSystemCollection.
 ms.assetid: 6592a551-e80a-4bf5-8808-c859cb6c2b4f
-title: Msvm_CollectionSettingData (clase)
+title: Msvm_CollectionSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 916fd0126994eefaf4cf5b5c515bea2d43977851
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25866c69397bd7d4cedd7f988998028132768dd12995b6afdf959aa841c2f438
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119252574"
 ---
-# <a name="msvm_collectionsettingdata-class"></a>MSVM \_ CollectionSettingData (clase)
+# <a name="msvm_collectionsettingdata-class"></a>Clase \_ CollectionSettingData de Msvm
 
-La clase que representa los valores configurados para un [**\_ VirtualSystemCollection de MSVM**](msvm-virtualsystemcollection.md).
+Clase que representa los valores configurados para [**un objeto \_ VirtualSystemCollection de Msvm.**](msvm-virtualsystemcollection.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -37,7 +37,7 @@ class Msvm_CollectionSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ CollectionSettingData** no define ningún miembro.
+La **clase \_ CollectionSettingData de Msvm** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,10 +45,10 @@ La clase **MSVM \_ CollectionSettingData** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -57,7 +57,7 @@ La clase **MSVM \_ CollectionSettingData** no define ningún miembro.
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  
