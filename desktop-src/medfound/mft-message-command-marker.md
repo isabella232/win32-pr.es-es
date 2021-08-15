@@ -1,56 +1,56 @@
 ---
-description: Marca un punto en la secuencia. Este mensaje se aplica solo a MFTs asincrónicos.
+description: Marca un punto en la secuencia. Este mensaje solo se aplica a las MTA asincrónicas.
 ms.assetid: eae1d066-64af-45e2-b8bb-eddf9147ad8b
-title: MFT_MESSAGE_COMMAND_MARKER (Mftransform. h)
+title: MFT_MESSAGE_COMMAND_MARKER (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3802cb94c9183d4f392fbcedcf48c0c01071298e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc55a96ae9680b37d83ec776c66848ed04f4a30b62d1d0378035c88823d2c19d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872175"
 ---
-# <a name="mft_message_command_marker"></a>\_marcador de \_ comando de mensaje de MFT \_
+# <a name="mft_message_command_marker"></a>MARCADOR DE COMANDO \_ DE MENSAJE \_ \_ MFT
 
-Marca un punto en la secuencia. Este mensaje se aplica solo a [MFTs asincrónicos](asynchronous-mfts.md).
+Marca un punto en la secuencia. Este mensaje solo se aplica a [las MTA asincrónicas.](asynchronous-mfts.md)
 
-## <a name="message-parameter"></a>Parámetro de mensaje
+## <a name="message-parameter"></a>Parámetro message
 
-Un valor arbitrario. La MFT devuelve el valor al cliente en el evento [METransformMarker](metransformmarker.md) .
+Valor arbitrario. MFT devuelve el valor al cliente en el [evento METransformMarker.](metransformmarker.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para enviar este mensaje, llame a [**IMFTransform::P rocessmessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage).
+Para enviar este mensaje, llame [**a IMFTransform::P rocessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage).
 
-La MFT responde a este mensaje a continuación:
+El MFT responde a este mensaje como sigue:
 
-1.  La MFT genera tantos ejemplos de salida como los datos de entrada existentes, y envía un evento [METransformHaveOutput](metransformhaveoutput.md) para cada ejemplo de salida.
-2.  Una vez generada la salida, el MFT envía un evento [METransformMarker](metransformmarker.md) . Este evento se debe enviar después de todos los eventos [METransformHaveOutput](metransformhaveoutput.md) .
+1.  El MFT genera tantos ejemplos de salida como sea posible a partir de los datos de entrada existentes, enviando un [evento METransformTransformTransformOutput](metransformhaveoutput.md) para cada ejemplo de salida.
+2.  Una vez generada toda la salida, MFT envía un [evento METransformMarker.](metransformmarker.md) Este evento debe enviarse después de todos los [eventos METransformTransformTransformOutput.](metransformhaveoutput.md)
 
-No es necesario que el cliente envíe este mensaje y debe enviar este mensaje solo a MFTs asincrónicos. Un MFT sincrónico no enviará un evento [METransformMarker](metransformmarker.md) en respuesta a este mensaje.
+El cliente no es necesario para enviar este mensaje y debe enviar este mensaje solo a las MTA asincrónicas. Un MFT sincrónico no enviará un [evento METransformMarker](metransformmarker.md) en respuesta a este mensaje.
 
 ### <a name="implementation"></a>Implementación
 
-Los MFTs asincrónicos deben responder a este mensaje tal y como se describe. Los MFTs sincrónicos deben omitir este mensaje.
+Las MTA asincrónicas deben responder a este mensaje como se describe. Las MTA sincrónicas deben omitir este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_tipo de mensaje de MFT \_**](/windows/desktop/api/mftransform/ne-mftransform-mft_message_type)
+[**TIPO DE MENSAJE \_ \_ MFT**](/windows/desktop/api/mftransform/ne-mftransform-mft_message_type)
 </dt> </dl>
 
  

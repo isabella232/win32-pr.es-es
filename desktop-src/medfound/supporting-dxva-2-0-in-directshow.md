@@ -1,31 +1,31 @@
 ---
-description: En este tema se describe cómo admitir la aceleración de vídeo de DirectX (DXVA) 2,0 en un filtro de descodificador de DirectShow.
+description: En este tema se describe cómo admitir DirectX Video Acceleration (DXVA) 2.0 en un filtro DirectShow descodificador.
 ms.assetid: 40deaddb-bb17-4a34-8294-5c7dc8a8a457
-title: Compatibilidad con DXVA 2,0 en DirectShow
+title: Compatibilidad con DXVA 2.0 en DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dda956b60d4905c2392e1a50bd62ee8421b944b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58631a407e42c0561ebee0ad2b3187e248fc2d25dc0bdf4e98ed0219d8dae916
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118238088"
 ---
-# <a name="supporting-dxva-20-in-directshow"></a>Compatibilidad con DXVA 2,0 en DirectShow
+# <a name="supporting-dxva-20-in-directshow"></a>Compatibilidad con DXVA 2.0 en DirectShow
 
-En este tema se describe cómo admitir la aceleración de vídeo de DirectX (DXVA) 2,0 en un filtro de descodificador de DirectShow. En concreto, describe la comunicación entre el descodificador y el representador de vídeo. En este tema no se describe cómo implementar la descodificación de DXVA.
+En este tema se describe cómo admitir DirectX Video Acceleration (DXVA) 2.0 en un filtro DirectShow descodificador. En concreto, describe la comunicación entre el descodificador y el representador de vídeo. En este tema no se describe cómo implementar la decodificación de DXVA.
 
 -   [Requisitos previos](#prerequisites)
 -   [Notas de migración](#migration-notes)
 -   [Buscar una configuración de descodificador](#finding-a-decoder-configuration)
--   [Notificar al representador de vídeo](#notifying-the-video-renderer)
+-   [Notificación al representador de vídeo](#notifying-the-video-renderer)
 -   [Asignación de búferes sin comprimir](#allocating-uncompressed-buffers)
 -   [Descodificación](#decoding)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-En este tema se da por supuesto que está familiarizado con la escritura de filtros de DirectShow. Para obtener más información, vea el tema [Writing DirectShow filters](../directshow/writing-directshow-filters.md) en la documentación del SDK de DirectShow. En los ejemplos de código de este tema se supone que el filtro del descodificador se deriva de la clase [**CTransformFilter**](../directshow/ctransformfilter.md) , con la siguiente definición de clase:
+En este tema se da por supuesto que está familiarizado con la escritura de DirectShow filtros. Para obtener más información, vea el tema [Writing DirectShow Filters (Escribir filtros de DirectShow](../directshow/writing-directshow-filters.md) SDK). En los ejemplos de código de este tema se supone que el filtro de descodificador se deriva de la [**clase CTransformFilter,**](../directshow/ctransformfilter.md) con la siguiente definición de clase:
 
 
 ```C++
@@ -73,54 +73,54 @@ private:
 
 
 
-En el resto de este tema, el término *descodificador* hace referencia al filtro del descodificador, que recibe vídeo comprimido y genera vídeo sin comprimir. El término *dispositivo descodificador* hace referencia a un acelerador de vídeo de hardware implementado por el controlador de gráficos.
+En el resto de este tema, el término *descodificador* hace referencia al filtro de descodificador, que recibe vídeo comprimido y genera vídeo sin comprimir. El término *dispositivo descodificador* hace referencia a un acelerador de vídeo de hardware implementado por el controlador de gráficos.
 
-Estos son los pasos básicos que un filtro de descodificador debe realizar para admitir DXVA 2,0:
+Estos son los pasos básicos que debe realizar un filtro de descodificador para admitir DXVA 2.0:
 
-1.  Negocie un tipo de medio.
-2.  Busque una configuración de descodificador de DXVA.
-3.  Notifique al representador de vídeo que el descodificador usa la descodificación de DXVA.
+1.  Negociar un tipo de medio.
+2.  Busque una configuración de descodificador DXVA.
+3.  Notifique al representador de vídeo que el descodificador usa la descodificación DXVA.
 4.  Proporcione un asignador personalizado que asigne superficies de Direct3D.
 
 Estos pasos se describen con más detalle en el resto de este tema.
 
 ## <a name="migration-notes"></a>Notas de migración
 
-Si va a migrar desde DXVA 1,0, debe tener en cuenta algunas diferencias significativas entre las dos versiones:
+Si va a migrar desde DXVA 1.0, debe tener en cuenta algunas diferencias significativas entre las dos versiones:
 
--   DXVA 2,0 no usa las interfaces [**IAMVideoAccelerator**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoaccelerator) y [**IAMVideoAcceleratorNotify**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoacceleratornotify) , porque el descodificador puede acceder a las API de DXVA 2,0 directamente a través de la interfaz [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder) .
--   Durante la negociación del tipo de medio, el descodificador no utiliza un GUID de aceleración de vídeo como subtipo. En su lugar, el subtipo es simplemente el formato de vídeo sin comprimir (como NV12), al igual que con la descodificación de software.
--   Ha cambiado el procedimiento para configurar el acelerador. En DXVA 1,0, el descodificador llama a **Execute** con una estructura de **DXVA \_ ConfigPictureDecode** para configurar accerlator. En DXVA 2,0, el descodificador usa la interfaz [**IDirectXVideoDecoderService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) , como se describe en la sección siguiente.
+-   DXVA 2.0 no usa las interfaces [**IAMVideoAccelerator**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoaccelerator) y [**IAMVideoAcceleratorNotify,**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoacceleratornotify) ya que el descodificador puede acceder a las API de DXVA 2.0 directamente a través de la interfaz [**IDirectXVideoDecoder.**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder)
+-   Durante la negociación del tipo de medio, el descodificador no usa un GUID de aceleración de vídeo como subtipo. En su lugar, el subtipo es simplemente el formato de vídeo sin comprimir (por ejemplo, NV12), como con la decodificación de software.
+-   El procedimiento para configurar el acelerador ha cambiado. En DXVA 1.0, el descodificador llama a **Execute** con una estructura **\_ ConfigPictureDecode** de DXVA para configurar el accerlator. En DXVA 2.0, el descodificador usa la interfaz [**IDirectXVideoDecoderService,**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) como se describe en la sección siguiente.
 -   El descodificador asigna los búferes sin comprimir. El representador de vídeo ya no los asigna.
--   En lugar de llamar a [**IAMVideoAccelerator::D isplayframe**](/previous-versions/windows/desktop/api/videoacc/nf-videoacc-iamvideoaccelerator-displayframe) para mostrar el fotograma descodificado, el descodificador entrega el fotograma al representador llamando a [**IMemInputPin:: Receive**](/windows/win32/api/strmif/nf-strmif-imeminputpin-receive), como con la descodificación de software.
--   El descodificador ya no es responsable de comprobar cuándo los búferes de datos son seguros para las actualizaciones. Por lo tanto, DXVA 2,0 no tiene ningún método equivalente a [**IAMVideoAccelerator:: QueryRenderStatus**](/previous-versions/windows/desktop/api/videoacc/nf-videoacc-iamvideoaccelerator-queryrenderstatus).
--   El representador de vídeo realiza la combinación de subimágenes mediante las API del procesador de vídeo de DXVA 2.0. Los descodificadores que proporcionan subimágenes (por ejemplo, descodificadores de DVD) deben enviar datos de subimagen en un PIN de salida independiente.
+-   En lugar de llamar [**a IAMVideoAccelerator::D isplayFrame**](/previous-versions/windows/desktop/api/videoacc/nf-videoacc-iamvideoaccelerator-displayframe) para mostrar el marco descodificado, el descodificador entrega el fotograma al representador mediante una llamada a [**IMemInputPin::Receive**](/windows/win32/api/strmif/nf-strmif-imeminputpin-receive), como con la descodificación de software.
+-   El descodificador ya no es responsable de comprobar cuándo los búferes de datos son seguros para las actualizaciones. Por lo tanto, DXVA 2.0 no tiene ningún método equivalente a [**IAMVideoAccelerator::QueryRenderStatus**](/previous-versions/windows/desktop/api/videoacc/nf-videoacc-iamvideoaccelerator-queryrenderstatus).
+-   La combinación de subimagen se realiza mediante el representador de vídeo, mediante las API del procesador de vídeo DXVA2.0. Los descodificadores que proporcionan subapictures (por ejemplo, descodificadores de DVD) deben enviar datos de subpicture en un pin de salida independiente.
 
-En el caso de las operaciones de descodificación, DXVA 2,0 utiliza las mismas estructuras de datos que DXVA 1,0.
+Para las operaciones decoding, DXVA 2.0 usa las mismas estructuras de datos que DXVA 1.0.
 
-El filtro de representador de vídeo mejorado (EVR) admite DXVA 2,0. Los filtros de representador de combinación de vídeo (VMR-7 y VMR-9) solo admiten DXVA 1,0.
+El filtro de representador de vídeo mejorado (EVR) admite DXVA 2.0. Los filtros de representador de mezcla de vídeo (VMR-7 y VMR-9) solo admiten DXVA 1.0.
 
 ## <a name="finding-a-decoder-configuration"></a>Buscar una configuración de descodificador
 
-Después de que el descodificador negocie el tipo de medio de salida, debe encontrar una configuración compatible para el dispositivo descodificador de DXVA. Puede realizar este paso dentro del método [**CBaseOutputPin:: CompleteConnect**](../directshow/cbaseoutputpin-completeconnect.md) del terminal de salida. Este paso garantiza que el controlador de gráficos admita las capacidades que necesita el descodificador antes de que el descodificador se confirme para usar DXVA.
+Una vez que el descodificador negocia el tipo de medio de salida, debe encontrar una configuración compatible para el dispositivo descodificador DXVA. Puede realizar este paso dentro del método [**CBaseOutputPin::CompleteConnect**](../directshow/cbaseoutputpin-completeconnect.md) del pin de salida. Este paso garantiza que el controlador de gráficos admite las funcionalidades necesarias para el descodificador, antes de que el descodificador se confirme en el uso de DXVA.
 
 Para buscar una configuración para el dispositivo descodificador, haga lo siguiente:
 
-1.  Consulte el PIN de entrada del representador para la interfaz [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice) .
-2.  Llame a [**IMFGetService:: GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) para obtener un puntero a la interfaz [**IDirect3DDeviceManager9**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9) . El GUID del servicio es el \_ servicio de aceleración de vídeo Mr \_ \_ .
-3.  Llame a [**IDirect3DDeviceManager9:: OpenDeviceHandle**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-opendevicehandle) para obtener un identificador para el dispositivo Direct3D del representador.
-4.  Llame a [**IDirect3DDeviceManager9:: GetVideoService**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-getvideoservice) y pase el identificador del dispositivo. Este método devuelve un puntero a la interfaz [**IDirectXVideoDecoderService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) .
-5.  Llame a [**IDirectXVideoDecoderService:: GetDecoderDeviceGuids**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-getdecoderdeviceguids). Este método devuelve una matriz de GUID de dispositivo de descodificador.
-6.  Recorra en iteración la matriz de GUID del descodificador para buscar los que admite el filtro del descodificador. Por ejemplo, para un descodificador MPEG-2, buscará **DXVA2 \_ ModeMPEG2 \_ MOCOMP**, **DXVA2 \_ ModeMPEG2 \_ IDCT** o **DXVA2 \_ \_** ModeMPEG2 VLD.
+1.  Consulte el pin de entrada del representador para la [**interfaz IMFGetService.**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice)
+2.  Llame [**a IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) para obtener un puntero a la [**interfaz IDirect3DDeviceManager9.**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9) El GUID del servicio es MR \_ VIDEO \_ ACCELERATION \_ SERVICE.
+3.  Llame a [**IDirect3DDeviceManager9::OpenDeviceHandle**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-opendevicehandle) para obtener un identificador para el dispositivo Direct3D del representador.
+4.  Llame [**a IDirect3DDeviceManager9::GetVideoService**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-getvideoservice) y pase el identificador del dispositivo. Este método devuelve un puntero a la [**interfaz IDirectXVideoDecoderService.**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice)
+5.  Llame [**a IDirectXVideoDecoderService::GetDecoderDeviceGuids**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-getdecoderdeviceguids). Este método devuelve una matriz de GUID de dispositivo descodificador.
+6.  Recorrer en bucle la matriz de GUID de descodificador para buscar los que admite el filtro de descodificador. Por ejemplo, para un descodificador MPEG-2, buscaría **DXVA2 \_ ModeMPEG2 \_ MOCOMP,** **DXVA2 \_ ModeMPEG2 \_ IDCT** o **DXVA2 \_ ModeMPEG2 \_ VLD**.
 
-7.  Cuando encuentre un GUID de dispositivo descodificador candidato, pase el GUID al método [**IDirectXVideoDecoderService:: GetDecoderRenderTargets**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-getdecoderrendertargets) . Este método devuelve una matriz de formatos de destino de representación, especificados como valores de **D3DFORMAT** .
-8.  Recorra los formatos de destino de representación y busque uno que coincida con el formato de salida. Normalmente, un dispositivo descodificador admite un solo formato de destino de representación. El filtro del descodificador debe conectarse al representador mediante este subtipo. En la primera llamada a [**CompleteConnect**](../directshow/cbaseoutputpin-completeconnect.md), el descodificador puede determinar el formato del destino de representación y, a continuación, devolver este formato como un tipo de salida preferido.
+7.  Cuando encuentre un GUID de dispositivo descodificador candidato, pase el GUID al método [**IDirectXVideoDecoderService::GetDecoderRenderTargets.**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-getdecoderrendertargets) Este método devuelve una matriz de formatos de destino de representación, especificados como **valores D3DFORMAT.**
+8.  Recorrer en bucle los formatos de destino de representación y buscar uno que coincida con el formato de salida. Normalmente, un dispositivo descodificador admite un único formato de destino de representación. El filtro de descodificador debe conectarse al representador mediante este subtipo. En la primera llamada a [**CompleteConnect**](../directshow/cbaseoutputpin-completeconnect.md), el descodificador puede degradar el formato de destino de representación y, a continuación, devolver este formato como un tipo de salida preferido.
 
-9.  Llame a [**IDirectXVideoDecoderService:: GetDecoderConfigurations**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-getdecoderconfigurations). Pase el mismo GUID del dispositivo descodificador, junto con una [**estructura \_ videodesc DXVA2**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videodesc) que describe el formato propuesto. El método devuelve una matriz de estructuras [**DXVA2 \_ ConfigPictureDecode**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_configpicturedecode) . Cada estructura describe una posible configuración para el dispositivo descodificador.
+9.  Llame [**a IDirectXVideoDecoderService::GetDecoderConfigurations**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-getdecoderconfigurations). Pase el mismo GUID de dispositivo descodificador, junto con una [**estructura \_ DxVA2 VideoDesc**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videodesc) que describe el formato propuesto. El método devuelve una matriz de [**estructuras \_ ConfigPictureDecode de DXVA2.**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_configpicturedecode) Cada estructura describe una posible configuración para el dispositivo descodificador.
 
 10. Suponiendo que los pasos anteriores son correctos, almacene el identificador del dispositivo Direct3D, el GUID del dispositivo descodificador y la estructura de configuración. El filtro usará esta información para crear el dispositivo descodificador.
 
-En el código siguiente se muestra cómo buscar una configuración de descodificador.
+El código siguiente muestra cómo buscar una configuración de descodificador.
 
 
 ```C++
@@ -313,7 +313,7 @@ HRESULT CDecoder::FindDecoderConfiguration(
 
 
 
-Dado que este ejemplo es genérico, parte de la lógica se ha colocado en funciones auxiliares que deben ser implementadas por el descodificador. En el código siguiente se muestran las declaraciones de estas funciones:
+Dado que este ejemplo es genérico, parte de la lógica se ha colocado en funciones auxiliares que tendría que implementar el descodificador. En el código siguiente se muestran las declaraciones de estas funciones:
 
 
 ```C++
@@ -329,16 +329,16 @@ void FillInVideoDescription(DXVA2_VideoDesc *pDesc);
 
 
 
-## <a name="notifying-the-video-renderer"></a>Notificar al representador de vídeo
+## <a name="notifying-the-video-renderer"></a>Notificación al representador de vídeo
 
-Si el descodificador encuentra una configuración de descodificador, el siguiente paso es notificar al representador de vídeo que el descodificador usará la aceleración de hardware. Puede realizar este paso dentro del método [**CompleteConnect**](../directshow/cbaseoutputpin-completeconnect.md) . Este paso debe realizarse antes de que se seleccione allocator, porque afecta al modo en que se selecciona allocator.
+Si el descodificador encuentra una configuración de descodificador, el siguiente paso es notificar al representador de vídeo que el descodificador usará la aceleración de hardware. Puede realizar este paso dentro del [**método CompleteConnect.**](../directshow/cbaseoutputpin-completeconnect.md) Este paso debe producirse antes de seleccionar el asignador, ya que afecta a cómo se selecciona el asignador.
 
-1.  Consulte el PIN de entrada del representador para la interfaz [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice) .
-2.  Llame a [**IMFGetService:: GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) para obtener un puntero a la interfaz [**IDirectXVideoMemoryConfiguration**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideomemoryconfiguration) . El GUID del servicio es el **\_ servicio de \_ aceleración \_ de vídeo Mr**.
-3.  Llame a [**IDirectXVideoMemoryConfiguration:: GetAvailableSurfaceTypeByIndex**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideomemoryconfiguration-getavailablesurfacetypebyindex) en un bucle, incrementando la variable *dwTypeIndex* desde cero. Detenga cuando el método devuelva el valor **DXVA2 \_ SurfaceType \_ DecoderRenderTarget** en el parámetro *pdwType* . Este paso garantiza que el representador de vídeo admita la descodificación acelerada por hardware. Este paso siempre se realizará correctamente para el filtro EVR.
-4.  Si el paso anterior se realizó correctamente, llame a [**IDirectXVideoMemoryConfiguration:: SetSurfaceType**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideomemoryconfiguration-setsurfacetype) con el valor DXVA2 \_ SurfaceType \_ DecoderRenderTarget. Al llamar a **SetSurfaceType** con este valor, el representador de vídeo se coloca en el modo DXVA. Cuando el representador de vídeo está en este modo, el descodificador debe proporcionar su propio asignador.
+1.  Consulte el pin de entrada del representador para la [**interfaz IMFGetService.**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice)
+2.  Llame [**a IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) para obtener un puntero a la [**interfaz IDirectXVideoMemoryConfiguration.**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideomemoryconfiguration) El GUID del servicio es **MR \_ VIDEO ACCELERATION \_ \_ SERVICE**.
+3.  Llame a [**IDirectXVideoMemoryConfiguration::GetAvailableSurfaceTypeByIndex**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideomemoryconfiguration-getavailablesurfacetypebyindex) en un bucle, lo que incrementa la variable *dwTypeIndex* de cero. Se detiene cuando el método devuelve el valor **DXVA2 \_ SurfaceType \_ DecoderRenderTarget** en el *parámetro pdwType.* Este paso garantiza que el representador de vídeo admite lacodización acelerada por hardware. Este paso siempre se realizará correctamente para el filtro EVR.
+4.  Si el paso anterior se ha hecho correctamente, llame a [**IDirectXVideoMemoryConfiguration::SetSurfaceType**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideomemoryconfiguration-setsurfacetype) con el valor DXVA2 \_ SurfaceType \_ DecoderRenderTarget. Al **llamar a SetSurfaceType** con este valor, el representador de vídeo se pone en modo DXVA. Cuando el representador de vídeo está en este modo, el descodificador debe proporcionar su propio asignador.
 
-En el código siguiente se muestra cómo notificar al representador de vídeo.
+El código siguiente muestra cómo notificar al representador de vídeo.
 
 
 ```C++
@@ -390,25 +390,25 @@ HRESULT CDecoder::SetEVRForDXVA2(IPin *pPin)
 
 
 
-Si el descodificador encuentra una configuración válida y notifica correctamente al representador de vídeo, el descodificador puede usar DXVA para la descodificación. El descodificador debe implementar un asignador personalizado para su PIN de salida, tal y como se describe en la sección siguiente.
+Si el descodificador encuentra una configuración válida y notifica correctamente al representador de vídeo, el descodificador puede usar DXVA para descodificar. El descodificador debe implementar un asignador personalizado para su pin de salida, como se describe en la sección siguiente.
 
 ## <a name="allocating-uncompressed-buffers"></a>Asignación de búferes sin comprimir
 
-En DXVA 2,0, el descodificador es responsable de asignar las superficies de Direct3D que se usarán como búferes de vídeo sin comprimir. Por lo tanto, el descodificador debe implementar un asignador personalizado que creará las superficies. Los ejemplos de medios proporcionados por este asignador conservarán los punteros a las superficies de Direct3D. EVR recupera un puntero a la superficie llamando a [**IMFGetService:: GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en el ejemplo multimedia. El identificador de servicio es **el \_ \_ servicio de búfer Mr**.
+En DXVA 2.0, el descodificador es responsable de asignar superficies de Direct3D para usarlas como búferes de vídeo sin comprimir. Por lo tanto, el descodificador debe implementar un asignador personalizado que creará las superficies. Los ejemplos de medios proporcionados por este asignador contendrán punteros a las superficies de Direct3D. El EVR recupera un puntero a la superficie mediante una llamada [**a IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en el ejemplo multimedia. El identificador de servicio es **MR \_ BUFFER \_ SERVICE.**
 
 Para proporcionar el asignador personalizado, realice los pasos siguientes:
 
-1.  Defina una clase para los ejemplos de medios. Esta clase se puede derivar de la clase [**CMediaSample**](../directshow/cmediasample.md) . Dentro de esta clase, haga lo siguiente:
+1.  Defina una clase para los ejemplos multimedia. Esta clase puede derivar de la [**clase CMediaSample.**](../directshow/cmediasample.md) Dentro de esta clase, haga lo siguiente:
     -   Almacene un puntero a la superficie de Direct3D.
-    -   Implemente la interfaz [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice) . En el método [**GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) , si el GUID del servicio es el **\_ \_ servicio de búfer Mr**, consulte la superficie de Direct3D para la interfaz solicitada. De lo contrario, **GetService** puede devolver el **\_ servicio MF E \_ no compatible \_**.
-    -   Invalide el método [**CMediaSample:: GetPointer**](../directshow/cmediasample-getpointer.md) para devolver E \_ NOTIMPL.
-2.  Defina una clase para el asignador. El asignador puede derivar de la clase [**CBaseAllocator**](../directshow/cbaseallocator.md) . Dentro de esta clase, haga lo siguiente.
-    -   Invalide el método [**CBaseAllocator:: Alloc**](../directshow/cbaseallocator-alloc.md) . Dentro de este método, llame a [**IDirectXVideoAccelerationService:: CreateSurface**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoaccelerationservice-createsurface) para crear las superficies. (La interfaz [**IDirectXVideoDecoderService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) hereda este método de [**IDirectXVideoAccelerationService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoaccelerationservice)).
-    -   Invalide el método [**CBaseAllocator:: Free**](../directshow/cbaseallocator-free.md) para liberar las superficies.
-3.  En el PIN de salida del filtro, invalide el método [**CBaseOutputPin:: InitAllocator**](../directshow/cbaseoutputpin-initallocator.md) . Dentro de este método, cree una instancia de su asignador personalizado.
-4.  En el filtro, implemente el método [**CTransformFilter::D ecidebuffersize**](../directshow/ctransformfilter-decidebuffersize.md) . El parámetro *pProperties* indica el número de superficies que requiere EVR. Agregue a este valor el número de superficies que el descodificador requiere y llame a [**IMemAllocator:: SetProperties**](/windows/win32/api/strmif/nf-strmif-imemallocator-setproperties) en el asignador.
+    -   Implemente [**la interfaz IMFGetService.**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice) En el [**método GetService,**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) si el GUID del servicio es **MR BUFFER \_ \_ SERVICE,** consulte la superficie de Direct3D para la interfaz solicitada. De lo contrario, **GetService** puede devolver **MF E \_ \_ UNSUPPORTED \_ SERVICE**.
+    -   Invalide [**el método CMediaSample::GetPointer**](../directshow/cmediasample-getpointer.md) para devolver E \_ NOTIMPL.
+2.  Defina una clase para el asignador. El asignador puede derivar de la [**clase CBaseAllocator.**](../directshow/cbaseallocator.md) Dentro de esta clase, haga lo siguiente.
+    -   Invalide [**el método CBaseAllocator::Alloc.**](../directshow/cbaseallocator-alloc.md) Dentro de este método, llame [**a IDirectXVideoAccelerationService::CreateSurface**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoaccelerationservice-createsurface) para crear las superficies. (La [**interfaz IDirectXVideoDecoderService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) hereda este método de [**IDirectXVideoAccelerationService).**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoaccelerationservice)
+    -   Invalide [**el método CBaseAllocator::Free**](../directshow/cbaseallocator-free.md) para liberar las superficies.
+3.  En el pin de salida del filtro, invalide el [**método CBaseOutputPin::InitAllocator.**](../directshow/cbaseoutputpin-initallocator.md) Dentro de este método, cree una instancia del asignador personalizado.
+4.  En el filtro, implemente el [**método CTransformFilter::D ecideBufferSize.**](../directshow/ctransformfilter-decidebuffersize.md) El *parámetro pProperties* indica el número de superficies que requiere la EVR. Agregue a este valor el número de superficies que requiere el descodificador y llame a [**IMemAllocator::SetProperties**](/windows/win32/api/strmif/nf-strmif-imemallocator-setproperties) en el asignador.
 
-En el código siguiente se muestra cómo implementar la clase de ejemplo multimedia:
+El código siguiente muestra cómo implementar la clase de ejemplo multimedia:
 
 
 ```C++
@@ -502,7 +502,7 @@ private:
 
 
 
-En el código siguiente se muestra cómo implementar el método [**Alloc**](../directshow/cbaseallocator-alloc.md) en el asignador.
+El código siguiente muestra cómo implementar el [**método Alloc**](../directshow/cbaseallocator-alloc.md) en el asignador.
 
 
 ```C++
@@ -591,7 +591,7 @@ HRESULT CDecoderAllocator::Alloc()
 
 
 
-Este es el código para el método [**Free**](../directshow/cbaseallocator-free.md) :
+Este es el código del [**método Free:**](../directshow/cbaseallocator-free.md)
 
 
 ```C++
@@ -623,40 +623,40 @@ void CDecoderAllocator::Free()
 
 
 
-Para obtener más información sobre la implementación de asignadores personalizados, vea el tema [proporcionar un asignador personalizado](../directshow/providing-a-custom-allocator.md) en la documentación del SDK de DirectShow.
+Para obtener más información sobre la implementación de asignadores personalizados, vea el tema [Proporcionar un](../directshow/providing-a-custom-allocator.md) asignador personalizado en la documentación DirectShow SDK.
 
 ## <a name="decoding"></a>Descodificación
 
-Para crear el dispositivo descodificador, llame a [**IDirectXVideoDecoderService:: CreateVideoDecoder**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-createvideodecoder). El método devuelve un puntero a la interfaz [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder) del dispositivo descodificador.
+Para crear el dispositivo descodificador, llame [**a IDirectXVideoDecoderService::CreateVideoDecoder**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-createvideodecoder). El método devuelve un puntero a la [**interfaz IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder) del dispositivo descodificador.
 
-En cada fotograma, llame a [**IDirect3DDeviceManager9:: TestDevice**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-testdevice) para probar el identificador del dispositivo. Si el dispositivo ha cambiado, el método devuelve DXVA2 \_ E \_ nuevo \_ dispositivo de vídeo \_ . Si esto ocurre, haga lo siguiente:
+En cada fotograma, llame a [**IDirect3DDeviceManager9::TestDevice**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-testdevice) para probar el identificador del dispositivo. Si el dispositivo ha cambiado, el método devuelve DXVA2 \_ E \_ NEW VIDEO \_ \_ DEVICE. Si esto ocurre, haga lo siguiente:
 
-1.  Cierre el identificador del dispositivo mediante una llamada a [**IDirect3DDeviceManager9:: CloseDeviceHandle**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-closedevicehandle).
-2.  Libere los punteros [**IDirectXVideoDecoderService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) y [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder) .
+1.  Cierre el identificador del dispositivo mediante una [**llamada a IDirect3DDeviceManager9::CloseDeviceHandle**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-closedevicehandle).
+2.  Libere los [**punteros IDirectXVideoDecoderService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice) [**e IDirectXVideoDecoder.**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder)
 3.  Abra un nuevo identificador de dispositivo.
-4.  Negocie una nueva configuración del descodificador, como se describe en la sección [buscar una configuración de descodificador](#finding-a-decoder-configuration).
+4.  Negocie una nueva configuración de descodificador, como se describe en la sección [Búsqueda de una configuración de descodificador.](#finding-a-decoder-configuration)
 5.  Cree un nuevo dispositivo descodificador.
 
-Suponiendo que el identificador del dispositivo es válido, el proceso de descodificación funciona de la siguiente manera:
+Suponiendo que el identificador del dispositivo es válido, el proceso de descodización funciona de la siguiente manera:
 
-1.  Llame a [**IDirectXVideoDecoder:: BeginFrame**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-beginframe).
+1.  Llame [**a IDirectXVideoDecoder::BeginFrame**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-beginframe).
 2.  Haga lo siguiente una o varias veces:
-    1.  Llame a [**IDirectXVideoDecoder:: getBuffer**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-getbuffer) para obtener un búfer del descodificador de DXVA.
+    1.  Llame [**a IDirectXVideoDecoder::GetBuffer**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-getbuffer) para obtener un búfer de descodificador DXVA.
     2.  Rellene el búfer.
-    3.  Llame a [**IDirectXVideoDecoder:: ReleaseBuffer**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-releasebuffer).
-3.  Llame a [**IDirectXVideoDecoder:: Execute**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute) para realizar las operaciones de descodificación en el marco.
+    3.  Llame [**a IDirectXVideoDecoder::ReleaseBuffer**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-releasebuffer).
+3.  Llame [**a IDirectXVideoDecoder::Execute**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute) para realizar las operaciones de descodificación en el marco.
 
-DXVA 2,0 utiliza las mismas estructuras de datos que DXVA 1,0 para las operaciones de descodificación. En el conjunto original de perfiles de DXVA (para H. 261, H. 263 y MPEG-2), estas estructuras de datos se describen en la [especificación de DXVA 1,0](/windows-hardware/drivers/display/directx-video-acceleration).
+DXVA 2.0 usa las mismas estructuras de datos que DXVA 1.0 para las operaciones de decodificación. Para el conjunto original de perfiles dxva (para H.261, H.263 y MPEG-2), estas estructuras de datos se describen en la especificación [DXVA 1.0](/windows-hardware/drivers/display/directx-video-acceleration).
 
-Dentro de cada par de llamadas de ejecución de [**BeginFrame**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-beginframe) / [](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute) , puede llamar a [**getBuffer**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-getbuffer) varias veces, pero solo una vez para cada tipo de búfer de DXVA. Si se llama dos veces con el mismo tipo de búfer, se sobrescribirán los datos.
+Dentro de cada par de [**llamadas BeginFrame**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-beginframe)Execute, puede llamar a GetBuffer varias veces, pero solo una vez para / [](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute) cada tipo de búfer DXVA. [](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-getbuffer) Si lo llama dos veces con el mismo tipo de búfer, sobrescribirá los datos.
 
-Después de llamar a [**Execute**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute), llame a [**IMemInputPin:: Receive**](/windows/win32/api/strmif/nf-strmif-imeminputpin-receive) para enviar el fotograma al representador de vídeo, como con la descodificación de software. El método **Receive** es asincrónico; una vez que devuelve, el descodificador puede continuar descodificando el fotograma siguiente. El controlador de pantalla impide que los comandos de descodificación sobrescriban el búfer mientras el búfer está en uso. El descodificador no debe reutilizar una superficie para descodificar otro fotograma hasta que el representador haya lanzado el ejemplo. Cuando el representador libera el ejemplo, el asignador vuelve a colocar el ejemplo en su grupo de ejemplos disponibles. Para obtener el siguiente ejemplo disponible, llame a [**CBaseOutputPin:: GetDeliveryBuffer**](../directshow/cbaseoutputpin-getdeliverybuffer.md), que a su vez llama a [**IMemAllocator:: getBuffer**](/windows/win32/api/strmif/nf-strmif-imemallocator-getbuffer). Para obtener más información, vea el tema [información general sobre el flujo de datos en DirectShow](../directshow/overview-of-data-flow-in-directshow.md) en la documentación de DirectShow.
+Después de [**llamar a Execute**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute), llame a [**IMemInputPin::Receive**](/windows/win32/api/strmif/nf-strmif-imeminputpin-receive) para entregar el fotograma al representador de vídeo, como con lacoding de software. El **método Receive** es asincrónico; después de que vuelva, el descodificador puede seguir descodificando el fotograma siguiente. El controlador para mostrar evita que los comandos de decoding sobrescriban el búfer mientras el búfer está en uso. El descodificador no debe reutilizar una superficie para descodificar otro marco hasta que el representador haya publicado el ejemplo. Cuando el representador libera el ejemplo, el asignador vuelve a poner el ejemplo en su grupo de ejemplos disponibles. Para obtener el siguiente ejemplo disponible, llame a [**CBaseOutputPin::GetDeliveryBuffer**](../directshow/cbaseoutputpin-getdeliverybuffer.md), que a su vez llama a [**IMemAllocator::GetBuffer**](/windows/win32/api/strmif/nf-strmif-imemallocator-getbuffer). Para obtener más información, vea el tema [Overview of Data Flow in DirectShow](../directshow/overview-of-data-flow-in-directshow.md) en la documentación DirectShow datos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Aceleración de vídeo de DirectX 2,0](directx-video-acceleration-2-0.md)
+[Aceleración de vídeo de DirectX 2.0](directx-video-acceleration-2-0.md)
 </dt> </dl>
 
  

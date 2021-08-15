@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: constructor EsentPermissionDeniedException'
+description: 'Más información sobre: Constructor EsentPermissionDeniedException'
 title: Constructor de EsentPermissionDeniedException
 TOCTitle: 'EsentPermissionDeniedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentPermissionDeniedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f0587c195fb07f734b48d1e977b1b842e2dc13fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f6d0dd2728cecea5579dd10d9d87c1452ddc9d875da5b91d733dd7c98877cfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118261031"
 ---
 # <a name="esentpermissiondeniedexception-constructor"></a>Constructor de EsentPermissionDeniedException
 
 Inicializa una nueva instancia de la clase EsentPermissionDeniedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentPermissionDeniedException()
 
 [Miembros de EsentPermissionDeniedException](./esentpermissiondeniedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

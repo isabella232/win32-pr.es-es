@@ -1,10 +1,10 @@
 ---
-title: Derecho de replicación de solo lectura-secreto extendido de sincronización
-description: Derecho de replicación de solo lectura-secreto extendido de sincronización
+title: Derecho extendido de solo lectura-replicación-sincronización de secretos
+description: Derecho extendido de solo lectura-replicación-sincronización de secretos
 ms.assetid: fd20326f-2276-42e7-8d54-f71c6dee1e6e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD derecho extendido de sincronización de solo lectura-secreto-replicación
+- Esquema de AD derecho extendido de solo lectura-replicación-sincronización de secretos
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a72d1c81681bd8b06bf18959c6f678d8fc8523f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5be26ee5c36027b6d0baa41966a4d24d715ce0f6e443f92ad5fb2914c4998bf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118174689"
 ---
-# <a name="read-only-replication-secret-synchronization-extended-right"></a>Derecho de replicación de solo lectura-secreto extendido de sincronización
+# <a name="read-only-replication-secret-synchronization-extended-right"></a>Derecho extendido de solo lectura-replicación-sincronización de secretos
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|----------------------------------------------|
-| CN           | Replicación de solo lectura-secreto-sincronización |
-| Display-Name | Sincronización de secreto de replicación de solo lectura |
+| CN           | Replicación de solo lectura-sincronización de secretos |
+| Display-Name | Sincronización de secretos de replicación de solo lectura |
 | Rights-GUID  | 1131f6ae-9c07-11d1-f79f-00c04fc2dcd2         |
 
 
@@ -42,10 +42,10 @@ ms.locfileid: "104493498"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 73                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 73                                                                                                                               |
 
 
 
@@ -53,10 +53,10 @@ ms.locfileid: "104493498"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 73                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 73                                                                                                                               |
 
 
 
@@ -64,10 +64,10 @@ ms.locfileid: "104493498"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 73                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 73                                                                                                                               |
 
 
 

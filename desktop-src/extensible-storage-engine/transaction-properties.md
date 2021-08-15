@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: propiedades de transacción'
+description: 'Más información sobre: Propiedades de transacción'
 title: Propiedades de transacción
 TOCTitle: Transaction properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.Transaction
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.tran
 ms:contentKeyID: 55104169
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 04a90f27c1376829ab4dce3ce9c7f33bd48f6e37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfcc2de9539831bc7c1662c5a95f2ade86d8eed3ba9385666102a7aea209e5c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118070786"
 ---
 # <a name="transaction-properties"></a>Propiedades de transacción
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [transacción](./transaction-class.md) expone los siguientes miembros.
+El [tipo Transaction](./transaction-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 
@@ -35,12 +35,12 @@ El tipo de [transacción](./transaction-class.md) expone los siguientes miembros
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propiedad protegida" alt="Protected property" /></td>
 <td><a href="dn350578(v=exchg.10).md">HasResource</a></td>
-<td>Obtiene un valor que indica si el recurso subyacente está asignado actualmente. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource</a>).</td>
+<td>Obtiene un valor que indica si el recurso subyacente está asignado actualmente. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351180(v=exchg.10).md">IsInTransaction</a></td>
-<td>Obtiene un valor que indica si este objeto se encuentra actualmente en una transacción.</td>
+<td>Obtiene un valor que indica si este objeto está actualmente en una transacción.</td>
 </tr>
 </tbody>
 </table>
@@ -48,10 +48,10 @@ El tipo de [transacción](./transaction-class.md) expone los siguientes miembros
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Transaction, clase](./transaction-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

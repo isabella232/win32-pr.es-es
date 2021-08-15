@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método API. JetUpdate (JET_SESID, JET_TABLEID, byte, Int32, Int32)'
-title: Método API. JetUpdate (JET_SESID, JET_TABLEID, byte, Int32, Int32)
+description: 'Más información sobre: Método Api.JetUpdate (JET_SESID, JET_TABLEID, Byte, Int32, Int32)'
+title: Método Api.JetUpdate (JET_SESID, JET_TABLEID, Byte , Int32, Int32)
 TOCTitle: JetUpdate method (JET_SESID, JET_TABLEID, Byte , Int32, Int32)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetUpdate(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Byte[],System.Int32,System.Int32@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetupdate(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2c85e424fc9b672944801da3d03cbaff0ca48017
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bf9130715d35fb26b226a2b378f0eba2a853b742ee0a88319ed35f3a121f480
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902472"
 ---
-# <a name="apijetupdate-method-jet_sesid-jet_tableid-byte--int32-int32"></a>Método API. JetUpdate (JET_SESID, JET_TABLEID, byte, Int32, Int32)
+# <a name="apijetupdate-method-jet_sesid-jet_tableid-byte--int32-int32"></a>Método Api.JetUpdate (JET_SESID, JET_TABLEID, Byte , Int32, Int32)
 
-La función JetUpdate realiza una operación de actualización que incluye la inserción de una nueva fila en una tabla o la actualización de una fila existente. La eliminación de una fila de tabla se realiza mediante una llamada a [JetDelete (JET_SESID, JET_TABLEID)](./api.jetdelete-method.md).
+La función JetUpdate realiza una operación de actualización, incluida la inserción de una nueva fila en una tabla o la actualización de una fila existente. La eliminación de una fila de tabla se realiza mediante una llamada [a JetDelete(JET_SESID, JET_TABLEID).](./api.jetdelete-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,50 +67,50 @@ public static void JetUpdate(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que inició la actualización.
+    Sesión que inició la actualización.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a actualizar. Se debe preparar una actualización.
+    Cursor que se actualizará. Se debe preparar una actualización.
 
 <!-- end list -->
 
   - marcador  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
     Devuelve el marcador del registro actualizado. Puede ser NULL.
 
 <!-- end list -->
 
   - bookmarkSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Tamaño del búfer del marcador.
 
 <!-- end list -->
 
   - actualBookmarkSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Devuelve el tamaño real del marcador.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-JetUpdate es el último paso para realizar una inserción o una actualización. La actualización se inicia llamando a [JetPrepareUpdate (JET_SESID, JET_TABLEID, JET_prep)](./api.jetprepareupdate-method.md) y llamando a [JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, \[ \] , Int32, SetColumnGrbit, JET_SETINFO)](./api.jetsetcolumn-method-jet-sesid-jet-tableid-jet-columnid-byte-int32-setcolumngrbit-jet-setinfo-.md) una o varias veces para establecer el estado del registro. Por último, se llama a JetUpdate (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32) para completar la operación de actualización. Los índices solo se actualizan mediante JetUpdate o y no durante JetSetColumn.
+JetUpdate es el último paso para realizar una inserción o una actualización. La actualización se inicia llamando a [JetPrepareUpdate(JET_SESID, JET_TABLEID, JET_prep)](./api.jetprepareupdate-method.md) y, a continuación, llamando a [JetSetColumn(JET_SESID, JET_TABLEID, JET_COLUMNID, \[ \] , Int32, SetColumnGrbit, JET_SETINFO)](./api.jetsetcolumn-method-jet-sesid-jet-tableid-jet-columnid-byte-int32-setcolumngrbit-jet-setinfo-.md) una o varias veces para establecer el estado del registro. Por último, se llama a JetUpdate(JET_SESID, JET_TABLEID, \[ \] , Int32, Int32) para completar la operación de actualización. Los índices solo se actualizan mediante JetUpdate o no durante JetSetColumn.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Sobrecarga JetUpdate](./api.jetupdate-method.md)
+[Sobrecarga de JetUpdate](./api.jetupdate-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

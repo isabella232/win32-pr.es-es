@@ -1,7 +1,7 @@
 ---
-description: Evento que tiene lugar cuando se conecta un nuevo dispositivo de hardware de adquisición de imágenes de Windows (WIA).
+description: Evento que tiene lugar cuando se conecta Windows nuevo dispositivo de hardware de adquisición de imágenes (WIA).
 ms.assetid: 327a29b8-581c-41b5-bea7-068bec95e653
-title: Evento WIA. OnDeviceConnected
+title: Evento Wia.OnDeviceConnected
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 952b738e8afa0850bd67bab1206382e96419513c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d878cc663cc9f7ea1422e2dc2cad10e652296a48ef597cf699fe5eb3af99e49b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118209552"
 ---
-# <a name="wiaondeviceconnected-event"></a>Evento WIA. OnDeviceConnected
+# <a name="wiaondeviceconnected-event"></a>Evento Wia.OnDeviceConnected
 
-Evento que tiene lugar cuando se conecta un nuevo dispositivo de hardware de adquisición de imágenes de Windows (WIA).
+Evento que tiene lugar cuando se conecta Windows nuevo dispositivo de hardware de adquisición de imágenes (WIA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,21 +50,21 @@ Cadena que contiene el identificador del dispositivo conectado.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-WIA notifica al script o a la aplicación cada vez que se conecta un nuevo dispositivo de hardware al equipo. Implemente la \_ subrutina objWia **OnDeviceConnected ()** para permitir que el script o la aplicación respondan a la conexión del dispositivo.
+WIA notifica al script o a la aplicación cada vez que se conecta un nuevo dispositivo de hardware al equipo. Implemente **la subrutina objWia** \_ **OnDeviceConnected()** para permitir que el script o la aplicación respondan a la conexión del dispositivo.
 
-Por ejemplo, puede que desee un script para actualizar la recopilación de [**dispositivos**](-wia-iwia-devices.md) cuando se instala un nuevo dispositivo.
+Por ejemplo, es posible que desee que un script actualice la colección [**Dispositivos**](-wia-iwia-devices.md) cuando se instala un nuevo dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

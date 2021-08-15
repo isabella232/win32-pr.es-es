@@ -1,7 +1,7 @@
 ---
-description: Escala todos los ejemplos asociados a una submalla determinada. El método es útil para calcular la dispersión de subsuperficies.
+description: Escala todos los ejemplos asociados a una submesh determinada. El método es útil para calcular la dispersión de subsuperficie.
 ms.assetid: abb9ca6a-5fc2-4986-8a38-29998fe5e537
-title: 'ID3DXPRTEngine:: ScaleMeshChunk (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::ScaleMeshChunk (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f688a5175e7b50c33dd93d06a4f988a14c062c86
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a42046678ef0b44f011c8440cd3456dc9ff236ec0f7a280b4650b49aa53c10d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729589"
 ---
-# <a name="id3dxprtenginescalemeshchunk-method"></a>ID3DXPRTEngine:: ScaleMeshChunk (método)
+# <a name="id3dxprtenginescalemeshchunk-method"></a>Método ID3DXPRTEngine::ScaleMeshChunk
 
-Escala todos los ejemplos asociados a una submalla determinada. El método es útil para calcular la dispersión de subsuperficies.
+Escala todos los ejemplos asociados a una submesh determinada. El método es útil para calcular la dispersión de subsuperficie.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,21 +42,21 @@ HRESULT ScaleMeshChunk(
 
 <dl> <dt>
 
-*uMeshChunk* \[ de\]
+*uMeshChunk* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ubicación de la malla en la que se inician los ejemplos de escalado.
+Ubicación en la malla en la que se empiezan a escalar los ejemplos.
 
 </dd> <dt>
 
-*fScale* \[ de\]
+*fScale* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor por el que se multiplica cada vector de la submalla.
+Valor por el que se va a multiplicar cada vector de la submesh.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Valor por el que se multiplica cada vector de la submalla.
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) para recibir ejemplos de escalado en la submalla.
+Puntero a un [**objeto ID3DXPRTBuffer**](id3dxprtbuffer.md) para recibir muestras reescaladas en el submesh.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) para recibir ejemplo
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,12 +81,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

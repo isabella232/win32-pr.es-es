@@ -1,31 +1,31 @@
 ---
-description: Los tipos de contadores del algoritmo de longitud de cola aumentan el número de elementos de una cola en cada intervalo de muestra según se especifica en la propiedad de frecuencia adecuada&\# 8212; Frequency \_ PerfTime, etc.
+description: Los tipos de contadores de algoritmos de longitud de cola incrementan el número de elementos de una cola en cada intervalo de muestra según lo especificado por la propiedad frequency adecuada&\# 8212; Frequency \_ PerfTime, y así sucesivamente.
 ms.assetid: 514b1a79-ed9d-4ec6-a6ea-b3490291ce18
 ms.tgt_platform: multiple
-title: Tipos de contador del algoritmo de longitud de cola
+title: Tipos de contadores de algoritmo de longitud de cola
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06665c2fb8fca014c7d722f0ea22cf7e86833ab0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9fd3019e9a5e7150402266fd206d3f460f3d0ae3b07f4c6c7d51e82473e9dda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118316542"
 ---
-# <a name="queue-length-algorithm-counter-types"></a>Tipos de contador del algoritmo de longitud de cola
+# <a name="queue-length-algorithm-counter-types"></a>Tipos de contadores de algoritmo de longitud de cola
 
-Los tipos de contadores del algoritmo de longitud de cola aumentan el número de elementos de una cola en cada intervalo de muestra según lo especificado por la frecuencia de propiedad de frecuencia adecuada \_ PerfTime, etc. El resultado cocido divide el número de muestras para generar la longitud media de la cola.
+Los tipos de contadores de algoritmos de longitud de cola incrementan el número de elementos de una cola en cada intervalo de muestra según lo especificado por la propiedad frequency adecuada Frequency \_ PerfTime, y así sucesivamente. El resultado preparado divide por el número de muestras para generar la longitud media de la cola.
 
-Un ejemplo es la propiedad **AvgDiskQueueLength** en el [**PerfRawData de Win32 de Win32 \_ \_ \_**](./retrieving-raw-and-formatted-performance-data.md) que usa el \_ tipo de \_ contador Perf \_ QUEUELEN \_ Type.
+Un ejemplo es la propiedad **AvgDiskQueueLength** del disco lógico [**\_ PerfRawData \_ PerfDisk \_ de Win32**](./retrieving-raw-and-formatted-performance-data.md) que usa el tipo de contador \_ PERF COUNTER \_ 100NS \_ QUEUELEN \_ TYPE.
 
 
 
-| Contratipo (constante)                                                                                                 | Descripción                                                                                                                                                                                                       |
+| CounterType (Constante)                                                                                                 | Descripción                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Rendimiento \_ de COUNTER \_ QUEUELEN \_ TYPE](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10))decimal 4523008<br/>            | Promedio de longitud de una cola a un recurso a lo largo del tiempo. Muestra la diferencia entre las longitudes de cola observadas durante los dos últimos intervalos de muestra, dividida por la duración del intervalo.                       |
-| [Rendimiento \_ de COUNTER \_ Large \_ QUEUELEN \_ Type](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10))decimal 4523264<br/>     | Promedio de longitud de una cola a un recurso a lo largo del tiempo. Los contadores de este tipo muestran la diferencia entre las longitudes de cola observadas durante los dos últimos intervalos de muestra, dividida por la duración del intervalo. |
-| [Rendimiento \_ de CONTADOR de \_ 100 NS \_ QUEUELEN \_ tipo](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10))decimal 5571840<br/>     | Promedio de longitud de una cola a un recurso a lo largo del tiempo en unidades de 100 nanosegundos.                                                                                                                                        |
-| [Rendimiento \_ de COUNTER \_ obj \_ Time \_ QUEUELEN \_ Type](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10))decimal 6620416<br/> | Hora en la que un objeto está en una cola.                                                                                                                                                                                     |
+| [PERF \_ COUNTER \_ QUEUELEN \_ TYPE Decimal](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10))4523008<br/>            | Longitud media de una cola a un recurso a lo largo del tiempo. Muestra la diferencia entre las longitudes de cola observadas durante los dos últimos intervalos de muestra, dividida por la duración del intervalo.                       |
+| [PERF \_ COUNTER \_ LARGE \_ QUEUELEN TYPE \_ Decimal](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10))4523264<br/>     | Longitud media de una cola a un recurso a lo largo del tiempo. Los contadores de este tipo muestran la diferencia entre las longitudes de cola observadas durante los dos últimos intervalos de muestra, dividida por la duración del intervalo. |
+| [PERF \_ COUNTER \_ 100NS \_ QUEUELEN \_ TYPE Decimal](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10))5571840<br/>     | Longitud media de una cola a un recurso a lo largo del tiempo en unidades de 100 nanosegundos.                                                                                                                                        |
+| [PERF \_ COUNTER \_ OBJ \_ TIME \_ QUEUELEN TYPE \_ Decimal](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10))6620416<br/> | Hora en que un objeto está en una cola.                                                                                                                                                                                     |
 
 
 
@@ -35,7 +35,7 @@ Un ejemplo es la propiedad **AvgDiskQueueLength** en el [**PerfRawData de Win32 
 
 <dl> <dt>
 
-[Tipos de contador de rendimiento de WMI](wmi-performance-counter-types.md)
+[Tipos de contadores de rendimiento wmi](wmi-performance-counter-types.md)
 </dt> </dl>
 
  

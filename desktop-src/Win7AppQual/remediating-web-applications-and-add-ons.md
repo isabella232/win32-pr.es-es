@@ -4,12 +4,12 @@ ms.assetid: 36255598-C96B-428A-AB87-D0ED140FA6FD
 title: Corrección de problemas de compatibilidad en aplicaciones web y Add-Ons
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f612847491c64820c93f643dce86f9aa854f637
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 45e8ec69c11498f98a58cac4736bd60a0fcd86437392f2cb60c38959749ebe0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118329620"
 ---
 # <a name="fixing-compatibility-issues-in-web-applications-and-add-ons"></a>Corrección de problemas de compatibilidad en aplicaciones web y Add-Ons
 
@@ -19,8 +19,8 @@ En las secciones siguientes se describe cómo actualizar aplicaciones web y comp
 
 | Tema                                                                                                                                   | Descripción                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Corregir problemas de compatibilidad en aplicaciones web mediante Vista de compatibilidad](remediating-web-applications-with-compatibility-view.md) | Describe los pasos básicos de mitigación y cómo planear la compatibilidad futura de aplicaciones mientras se abordan los problemas ahora. |
-| [Corrección de problemas de compatibilidad de instalación de ActiveX para usuarios estándar](remediating-activex-installation-for-standard-users.md)          | Proporciona sugerencias para abordar la instalación de ActiveX.                                                                      |
+| [Corrección de problemas de compatibilidad en aplicaciones web mediante Vista de compatibilidad](remediating-web-applications-with-compatibility-view.md) | Describe los pasos básicos de mitigación y cómo planear la compatibilidad futura de aplicaciones mientras se abordan los problemas ahora. |
+| [Corrección ActiveX problemas de compatibilidad de instalación de aplicaciones para usuarios estándar](remediating-activex-installation-for-standard-users.md)          | Proporciona sugerencias para solucionar ActiveX instalación.                                                                      |
 | [Representación y cambios de diseño](rendering-and-layout-changes.md)                                                                        | Describe los cambios de representación y diseño en las versiones más recientes de Windows Internet Explorer.                                         |
 | [Vectores de versión](version-vectors.md)                                                                                                  | Describe los vectores de versión para Internet Explorer versiones.                                                                  |
 | [Cadena del agente de usuario](user-agent-string.md)                                                                                              | Describe la cadena del agente de usuario para Internet Explorer.                                                                         |

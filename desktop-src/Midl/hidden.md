@@ -1,9 +1,9 @@
 ---
 title: hidden (atributo)
-description: El atributo \ Hidden \ indica que el elemento existe pero no debe mostrarse en un explorador orientado al usuario.
+description: El atributo \ hidden\ indica que el elemento existe, pero no debe mostrarse en un explorador orientado al usuario.
 ms.assetid: bf1f9270-fb93-4421-804e-d56e2c863bbd
 keywords:
-- MIDL de atributo oculto
+- atributo oculto MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1718351ef84199b60ba720ed2f3569cfa78a0a50
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a907a608376d9ad13f97427bd7a941b99221a0f14a6fa9fe35944ced10770b66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105651356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384050"
 ---
 # <a name="hidden-attribute"></a>hidden (atributo)
 
-El atributo **\[ Hidden \]** indica que el elemento existe pero no debe mostrarse en un explorador orientado al usuario.
+El **\[ atributo \]** oculto indica que el elemento existe, pero no debe mostrarse en un explorador orientado al usuario.
 
 ``` syntax
 [
@@ -40,35 +40,35 @@ element element-name
 
 <dl> <dt>
 
-*otros: atributos* 
+*otros atributos* 
 </dt> <dd>
 
-Cero o más atributos de MIDL opcionales.
+Cero o más atributos MIDL opcionales.
 
 </dd> <dt>
 
-*Element* 
+*Elemento* 
 </dt> <dd>
 
-Una de las siguientes directivas: [**CoClass**](coclass.md), [**dispinterface**](dispinterface.md), [**interface**](interface.md)o [**Library**](library.md).
+Una de las directivas siguientes: [**coclase**](coclass.md), [**dispinterface,**](dispinterface.md) [**interfaz**](interface.md)o [**biblioteca**](library.md).
 
 </dd> <dt>
 
-*nombre del elemento* 
+*element-name* 
 </dt> <dd>
 
-El nombre que otros componentes de software pueden usar para delimitar el elemento actual.
+Nombre que otros componentes de software pueden usar para delinear el elemento actual.
 
 </dd> <dt>
 
-*Figura* 
+*Definiciones* 
 </dt> <dd>
 
-Especifica las instrucciones que componen la definición del elemento.
+Especifica las instrucciones que son la definición del elemento.
 
 </dd> <dt>
 
-*tipo de función* 
+*function-type* 
 </dt> <dd>
 
 Tipo de valor devuelto de la función.
@@ -78,22 +78,22 @@ Tipo de valor devuelto de la función.
 *nombre-de-la-función* 
 </dt> <dd>
 
-Nombre que se usa para invocar la función.
+Nombre utilizado para invocar la función.
 
 </dd> <dt>
 
-*opcional-parameter-list* 
+*optional-parameter-list* 
 </dt> <dd>
 
 Cero o más parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **\[ Hidden \]** permite quitar miembros de la interfaz (mediante la protección del uso adicional) y mantener la compatibilidad con el código existente. Puede usar el atributo **\[ Hidden \]** en las propiedades, los métodos y las instrucciones [**CoClass**](coclass.md), [**dispinterface**](dispinterface.md), [**interface**](interface.md)y [**Library**](library.md) .
+El **\[ atributo \]** oculto permite quitar miembros de la interfaz (al protegerlos para que no se usen más) al tiempo que se mantiene la compatibilidad con el código existente. Puede usar el atributo **\[ oculto en propiedades, \]** métodos y las instrucciones de biblioteca , [**dispinterface**](dispinterface.md), [**interface**](interface.md) [**y de**](library.md) la [**coclase**](coclass.md).
 
-Cuando se especifica para una biblioteca, el atributo **\[ Hidden \]** evita que se muestre toda la biblioteca. Este uso está diseñado para emplearlo con controles. Los hosts deben crear una biblioteca de tipos que ajuste el control con propiedades extendidas.
+Cuando se especifica para una biblioteca, el **\[ atributo oculto \]** impide que se muestre toda la biblioteca. Este uso está diseñado para emplearlo con controles. Los hosts deben crear una biblioteca de tipos que ajuste el control con propiedades extendidas.
 
 ### <a name="flags"></a>Marcas
 
@@ -123,7 +123,7 @@ library HiddenLib
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
 [**coclase**](coclass.md)
@@ -132,18 +132,18 @@ library HiddenLib
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

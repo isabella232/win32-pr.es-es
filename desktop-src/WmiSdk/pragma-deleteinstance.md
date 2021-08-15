@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 10d4c735f1e59533b57ae1814cfb8e36b2c1ad76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29739f1d95cf5c8352c2b7822dbc3da7777f41f69fc5086631e0069c3b832623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118316857"
 ---
 # <a name="pragma-deleteinstance"></a>pragma deleteinstance
 
-El comando **pragma deleteinstance** elimina una instancia existente de una clase del repositorio.
+El **comando pragma deleteinstance** elimina una instancia existente de una clase del repositorio.
 
 A continuación se describe la sintaxis de este comando:
 
@@ -33,16 +33,16 @@ A continuación se describe la sintaxis de este comando:
 
 
 
-*InstanceID* es un identificador único de la instancia que el compilador MOF elimina del espacio de nombres actual.
+*InstanceId* es un identificador único de la instancia que el compilador de MOF elimina del espacio de nombres actual.
 
-La *\[ marca \]* debe ser uno de los argumentos siguientes.
+*\[ La \]* marca debe ser uno de los argumentos siguientes.
 
 
 
 | Marca   | Descripción                                                                                                  |
 |--------|--------------------------------------------------------------------------------------------------------------|
-| no superada   | Hace que el compilador MOF salga de un mensaje de error si la clase aún no existe en el repositorio. |
-| nofail | Hace que el compilador MOF continúe aunque la clase no exista todavía.                                |
+| no superada   | Hace que el compilador MOF se cierre con un mensaje de error si la clase aún no existe en el repositorio. |
+| nofail | Hace que el compilador MOF continúe incluso si la clase aún no existe.                                |
 
 
 
@@ -65,14 +65,14 @@ En el ejemplo siguiente se muestra cómo usar este comando.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

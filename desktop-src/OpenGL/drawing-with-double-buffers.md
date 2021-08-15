@@ -1,22 +1,22 @@
 ---
-title: Dibujar con búferes dobles
+title: Dibujo con búferes dobles
 description: Los búferes dobles suavizan la transición entre una imagen y otra en la pantalla.
 ms.assetid: 10801cc7-d26c-4bfd-95c0-f352a1c7a1f5
 keywords:
 - OpenGL en Windows, búferes dobles
-- búferes dobles OpenGL
+- Double buffers OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbe52d427467b2a6e460ea56a9e72e580ea6f97d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 133a6e0794eb903215411016aeff14e3426854dcddc3a60bcfb2ba318481bee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118361395"
 ---
-# <a name="drawing-with-double-buffers"></a>Dibujar con búferes dobles
+# <a name="drawing-with-double-buffers"></a>Dibujo con búferes dobles
 
-Los búferes dobles suavizan la transición entre una imagen y otra en la pantalla. Normalmente, los búferes de intercambio se incluyen al final de una secuencia de comandos de dibujo. De forma predeterminada, la implementación de Microsoft de OpenGL en Windows dibuja en el búfer fuera de pantalla; una vez finalizado el dibujo, se llama a la función [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers) para copiar el búfer de la pantalla en el búfer en pantalla. El siguiente ejemplo de código se prepara para dibujar, llama a una función de dibujo y, a continuación, copia la imagen completada en la pantalla si el almacenamiento en búfer doble está disponible.
+Los búferes dobles suavizan la transición entre una imagen y otra en la pantalla. El intercambio de búferes normalmente se produce al final de una secuencia de comandos de dibujo. De forma predeterminada, la implementación de Microsoft de OpenGL Windows dibuja en el búfer fuera de la pantalla; Una vez completado el dibujo, llame a la [**función SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers) para copiar el búfer fuera de pantalla en el búfer en pantalla. El ejemplo de código siguiente se prepara para dibujar, llama a una función de dibujo y, a continuación, copia la imagen completada en la pantalla si el almacenamiento en búfer doble está disponible.
 
 
 ```C++
@@ -40,7 +40,7 @@ void myRedraw(void)
 
 
 
-En el ejemplo de código siguiente se obtiene un contexto de dispositivo de ventana, se representa una escena, se copia la imagen en la pantalla (para mostrar la representación) y, a continuación, se libera el contexto del dispositivo.
+El ejemplo de código siguiente obtiene un contexto de dispositivo de ventana, representa una escena, copia la imagen en la pantalla (para mostrar la representación) y, a continuación, libera el contexto del dispositivo.
 
 
 ```C++
@@ -52,9 +52,9 @@ ReleaseDC(hWnd, hdc);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

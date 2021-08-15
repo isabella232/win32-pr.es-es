@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. comment.
+description: Directiva de metadatos de fotos para la propiedad System.Comment.
 ms.assetid: 02a6ac18-ad69-4880-a267-8330d648c0d9
-title: Directiva de metadatos de la foto System. Comment
+title: Directiva de metadatos de fotos System.Comment
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db9d7526e05a72b073ac32bd8286a621b33ee62a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45b3511e0a459a2b652b29828060be6f0a92a36639aef63d4fa087e54ec9d80b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205634"
 ---
-# <a name="systemcomment-photo-metadata-policy"></a>Directiva de metadatos de la foto System. Comment
+# <a name="systemcomment-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Comment
 
-La Directiva de metadatos de la fotografía para la propiedad [System. Comment](../properties/props-system-comment.md) .
+Directiva de metadatos de fotos para la [propiedad System.Comment.](../properties/props-system-comment.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Comentario PKEY
+Comentario \_ PKEY
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,41 +27,41 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-VT \_ LPWStr o VT \_ LPSTR
+VT \_ LPWSTR o VT \_ LPSTR
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Se concilian los valores de esquemas diferentes.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                                | Formato de disco    |
+| Pedido | Ruta de acceso                                | Formato de disco    |
 |-------|-------------------------------------|----------------|
-| 1     | /app1/IFD/{ushort = 40092}            | \_bytes Unicode |
-| 2     | /app1/IFD/{ushort = 37510}            | unicode        |
-| 3     | /XMP/ <xmpalt> Exif: UserComment | unicode        |
+| 1     | /app1/ifd/{ushort=40092}            | bytes \_ unicode |
+| 2     | /app1/ifd/{ushort=37510}            | unicode        |
+| 3     | /xmp/ <xmpalt> exif:UserComment | unicode        |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco    |
+| Pedido | Ruta de acceso                     | Formato de disco    |
 |-------|--------------------------|----------------|
-| 1     | /app1/IFD/{ushort = 40092} | \_bytes Unicode |
+| 1     | /app1/ifd/{ushort=40092} | bytes \_ unicode |
 
 
 
@@ -71,10 +71,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
-| 1     | /app1/IFD/{ushort = 40092}      |
-| 2     | /app1/IFD/Exif/{ushort = 37510} |
+| 1     | /app1/ifd/{ushort=40092}      |
+| 2     | /app1/ifd/exif/{ushort=37510} |
 | 3     | /xmp/exif:UserComment         |
 
 
@@ -83,27 +83,27 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policy"></a>Directiva TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                                    | Formato de disco    |
+| Pedido | Ruta de acceso                                    | Formato de disco    |
 |-------|-----------------------------------------|----------------|
-| 1     | /IFD/{ushort = 40092}                     | \_bytes Unicode |
-| 2     | /IFD/{ushort = 37510}                     | unicode        |
-| 3     | /IFD/XMP/ <xmpalt> Exif: UserComment | unicode        |
+| 1     | /ifd/{ushort=40092}                     | bytes \_ unicode |
+| 2     | /ifd/{ushort=37510}                     | unicode        |
+| 3     | /ifd/xmp/ <xmpalt> exif:UserComment | unicode        |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                | Formato de disco    |
+| Pedido | Ruta de acceso                | Formato de disco    |
 |-------|---------------------|----------------|
-| 1     | /IFD/{ushort = 40092} | \_bytes Unicode |
+| 1     | /ifd/{ushort=40092} | bytes \_ unicode |
 
 
 
@@ -113,23 +113,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
-| 1     | /IFD/{ushort = 40092}       |
-| 2     | /IFD/{ushort = 37510}       |
+| 1     | /ifd/{ushort=40092}       |
+| 2     | /ifd/{ushort=37510}       |
 | 3     | /ifd/xmp/exif:UserComment |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Comment](../properties/props-system-comment.md)
+[System.Comment](../properties/props-system-comment.md)
 </dt> </dl>
 
  

@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para establecer permisos en operaciones de objetos secundarios
-description: En el siguiente ejemplo de código de C y C++ se crea una ACE que asigna los derechos de creación de los objetos de usuario al administrador de confianza especificado.
+description: En el siguiente ejemplo de código de C y C++ se crea una ACE que asigna derechos de creación para objetos de usuario al administrador de confianza especificado.
 ms.assetid: 51010092-fa85-4f9c-8869-97fed30acc7f
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, establecer permisos en operaciones de objetos secundarios
+- Active Directory ejemplos Active Directory , establecer permisos en operaciones de objetos secundarios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7db12576aa9b5ba151ced08a98452759cc67e8bb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e53c2862ea645030af2ffb1f69e35c53f765588959dec945a31b8f6d6ce8ef6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190093"
 ---
 # <a name="example-code-for-setting-permissions-on-child-object-operations"></a>Código de ejemplo para establecer permisos en operaciones de objetos secundarios
 
-En el siguiente ejemplo de código de C y C++ se crea una ACE que asigna los derechos de creación de los objetos de usuario al administrador de confianza especificado.
+En el siguiente ejemplo de código de C y C++ se crea una ACE que asigna derechos de creación para objetos de usuario al administrador de confianza especificado.
 
 
 ```C++
@@ -129,9 +129,9 @@ HRESULT CreateAceCreateUsers(LPWSTR pwszTrustee, BOOL fAllowed, IDispatch **ppDi
 
 
 
- 
+ 
 
- 
+ 
 
 
 

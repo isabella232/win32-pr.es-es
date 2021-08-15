@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_KEYUP (Winuser. h)
-description: Se envía a la ventana con el foco de teclado cuando se suelta una tecla que no es del sistema. Una clave no del sistema es una tecla que se presiona cuando no se presiona la tecla ALT o una tecla del teclado presionada cuando una ventana tiene el foco de teclado.
+title: WM_KEYUP mensaje (Winuser.h)
+description: Se publica en la ventana con el foco del teclado cuando se libera una tecla que no es del sistema. Una tecla no del sistema es una tecla que se presiona cuando no se presiona la tecla ALT o una tecla de teclado que se presiona cuando una ventana tiene el foco del teclado.
 ms.assetid: 67d9d82d-fab0-4aec-a337-7a9cb2b0b586
 keywords:
-- Entrada de mouse y teclado de mensaje de WM_KEYUP
+- WM_KEYUP entrada de teclado y mouse
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28aa02dd73f1706bb12ae30825f50241be7bb0d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc23b941f232007a781ca160538f28d864f818639df47a180de472f54cd89a8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247827"
 ---
-# <a name="wm_keyup-message"></a>\_Mensaje KEYUP de WM
+# <a name="wm_keyup-message"></a>Mensaje \_ DE WM KEYUP
 
-Se envía a la ventana con el foco de teclado cuando se suelta una tecla que no es del sistema. Una clave no del sistema es una tecla que se presiona cuando *no* se presiona la tecla Alt o una tecla del teclado presionada cuando una ventana tiene el foco de teclado.
+Se publica en la ventana con el foco del teclado cuando se libera una tecla que no es del sistema. Una tecla no del sistema es una tecla  que se presiona cuando no se presiona la tecla ALT o una tecla de teclado que se presiona cuando una ventana tiene el foco del teclado.
 
 
 ```C++
@@ -39,28 +39,28 @@ Se envía a la ventana con el foco de teclado cuando se suelta una tecla que no 
 *wParam* 
 </dt> <dd>
 
-Código de tecla virtual de la clave que no es del sistema. Consulte [códigos de tecla virtual](virtual-key-codes.md).
+Código de clave virtual de la clave no del sistema. Consulte [Códigos de clave virtual](virtual-key-codes.md).
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-El número de repeticiones, el código de digitalización, la marca de clave extendida, el código de contexto, la marca de estado de clave anterior y la marca de estado de transición, tal y como se muestra en la tabla siguiente.
+El recuento de repeticiones, el código de examen, la marca de clave extendida, el código de contexto, la marca de estado de clave anterior y la marca de estado de transición, como se muestra en la tabla siguiente.
 
 
 
 | Bits  | Significado                                                                                                                                                                                                          |
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0-15  | Número de repeticiones del mensaje actual. El valor es el número de veces que se repite la pulsación de tecla como resultado del usuario que mantiene presionada la tecla. El número de repeticiones es siempre 1 para un mensaje de **\_ KEYUP de WM** . |
-| 16-23 | Código de recorrido. El valor depende del OEM.                                                                                                                                                                     |
-| 24    | Indica si la clave es una clave extendida, como las teclas ALT y CTRL de la derecha, que aparecen en un teclado mejorado de clave de 101 o 102. El valor es 1 si es una clave extendida; de lo contrario, es 0.         |
-| 25-28 | Sector No use.                                                                                                                                                                                            |
-| 29    | Código de contexto. El valor siempre es 0 para un mensaje de **\_ KEYUP de WM** .                                                                                                                                             |
-| 30    | Estado de la clave anterior. El valor es siempre 1 para un mensaje de **\_ KEYUP de WM** .                                                                                                                                       |
-| 31    | Estado de transición. El valor es siempre 1 para un mensaje de **\_ KEYUP de WM** .                                                                                                                                         |
+| 0-15  | Recuento de repeticiones para el mensaje actual. El valor es el número de veces que se autorepeta la pulsación de tecla como resultado de que el usuario mantiene presionada la tecla. El recuento de repeticiones siempre es 1 para un **mensaje \_ WM KEYUP.** |
+| 16-23 | Código de examen. El valor depende del OEM.                                                                                                                                                                     |
+| 24    | Indica si la tecla es una tecla extendida, como las teclas ALT y CTRL de la derecha que aparecen en un teclado mejorado de 101 o 102 teclas. El valor es 1 si es una clave extendida; de lo contrario, es 0.         |
+| 25-28 | Reservado; no se usan.                                                                                                                                                                                            |
+| 29    | Código de contexto. El valor siempre es 0 para un **mensaje \_ WM KEYUP.**                                                                                                                                             |
+| 30    | Estado de la clave anterior. El valor siempre es 1 para un **mensaje \_ WM KEYUP.**                                                                                                                                       |
+| 31    | Estado de transición. El valor siempre es 1 para un **mensaje \_ WM KEYUP.**                                                                                                                                         |
 
-Para obtener más información, consulte [marcas de mensajes de pulsación de teclas](about-keyboard-input.md#keystroke-message-flags).
+Para obtener más información, vea [Marcas de mensajes de pulsación de teclas](about-keyboard-input.md#keystroke-message-flags).
  
 
 </dd> </dl>
@@ -69,27 +69,27 @@ Para obtener más información, consulte [marcas de mensajes de pulsación de te
 
 Una aplicación debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) envía un mensaje de [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) a la ventana de nivel superior si se liberó la tecla F10 o la tecla Alt. El parámetro *wParam* del mensaje se establece en SC \_ KEYMENU.
+La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) envía un mensaje [**\_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) de WM a la ventana de nivel superior si se ha liberado la tecla F10 o la tecla ALT. El *parámetro wParam* del mensaje se establece en SC \_ KEYMENU.
 
-Para los teclados mejorados de la tecla 101 y 102, las teclas extendidas son las teclas ALT y CTRL correctas de la sección principal del teclado. las teclas INS, SUPR, Inicio, fin, Re Pág, Av Pág y flecha en los clústeres a la izquierda del teclado numérico. y la división (/) y escriba las teclas en el teclado numérico. Otros teclados pueden admitir el bit extendido-Key en el parámetro *lParam* .
+Para los teclados mejorados de 101 y 102 teclas, las teclas extendidas son las teclas ALT y CTRL derechas en la sección principal del teclado. las teclas de dirección INS, DEL, HOME, END, PAGE UP, PAGE DOWN y en los clústeres situados a la izquierda del teclado numérico. y las claves divide (/) y ENTRAR en el teclado numérico. Otros teclados pueden admitir el bit de tecla extendida en el *parámetro lParam.*
 
-Las aplicaciones deben pasar *wParam* a [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) sin modificarlo.
+Las aplicaciones deben *pasar wParam* [**a TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) sin modificarlo en absoluto.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -102,13 +102,13 @@ Las aplicaciones deben pasar *wParam* a [**TranslateMessage**](/windows/desktop/
 [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage)
 </dt> <dt>
 
-[**KEYDOWN de WM \_**](wm-keydown.md)
+[**WM \_ KEYDOWN**](wm-keydown.md)
 </dt> <dt>
 
-[**SYSCOMMAND de WM \_**](/windows/desktop/menurc/wm-syscommand)
+[**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Entrada de teclado](keyboard-input.md)

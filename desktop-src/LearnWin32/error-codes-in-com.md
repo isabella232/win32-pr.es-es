@@ -4,12 +4,12 @@ description: Códigos de error en COM
 ms.assetid: ed430863-f416-4611-81b4-0c31d819944a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 733cbe0799a22b0f0c01ee9cb226ad7e0b8660da
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e6dd61208c9ae825999ec0dec024a8cc492b81cae426b1cc4143d694034204d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118388293"
 ---
 # <a name="error-codes-in-com"></a>Códigos de error en COM
 
@@ -41,7 +41,7 @@ else
 
 
 
-A veces resulta más conveniente probar la condición inversa. La [**macro FAILED**](/windows/desktop/api/winerror/nf-winerror-failed) hace lo contrario que [**SUCCEEDED.**](/windows/desktop/api/winerror/nf-winerror-succeeded) Devuelve **TRUE para** un código de error y **FALSE para** un código correcto.
+A veces resulta más cómodo probar la condición inversa. La [**macro FAILED**](/windows/desktop/api/winerror/nf-winerror-failed) hace lo contrario que [**SUCCEEDED.**](/windows/desktop/api/winerror/nf-winerror-succeeded) Devuelve **TRUE para** un código de error y **FALSE para** un código correcto.
 
 
 ```C++
@@ -60,7 +60,7 @@ else
 
 
 
-Más adelante en este módulo, se verán algunos consejos prácticos sobre cómo estructurar el código para controlar los errores COM. (Consulte [Control de errores en COM).](error-handling-in-com.md)
+Más adelante en este módulo, se verán algunos consejos prácticos sobre cómo estructurar el código para controlar los errores COM. (Vea [Control de errores en COM).](error-handling-in-com.md)
 
 ## <a name="next"></a>Siguientes
 

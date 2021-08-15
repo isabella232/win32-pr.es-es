@@ -1,19 +1,19 @@
 ---
 title: IDXCoreAdapter::GetFactory
-description: Recupera un puntero de interfaz [IDXCoreAdapterFactory](./nn-dxcore_interface-idxcoreadapterfactory.md) al objeto de generador de adaptadores DXCore. | IDXCoreAdapter::GetFactory
+description: Recupera un puntero de [interfaz IDXCoreAdapterFactory](./nn-dxcore_interface-idxcoreadapterfactory.md) al objeto de generador del adaptador DXCore. | IDXCoreAdapter::GetFactory
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 1ac3e7fccd39b9b03ecb7016494a610519d26afa
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 759960875f67acefabf9f4207a9ea38150757b0b2bbec673e6feed3b0c197ee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118279468"
 ---
-# <a name="idxcoreadaptergetfactory-method"></a>IDXCoreAdapter:: GetFactory (método)
+# <a name="idxcoreadaptergetfactory-method"></a>IDXCoreAdapter::GetFactory (método)
 
-Recupera un puntero de interfaz [IDXCoreAdapterFactory](./nn-dxcore_interface-idxcoreadapterfactory.md) al objeto de generador de adaptadores DXCore. Para obtener instrucciones de programación y ejemplos de código, vea [uso de DXCore para enumerar los adaptadores](../dxcore-enum-adapters.md).
+Recupera un puntero de [interfaz IDXCoreAdapterFactory](./nn-dxcore_interface-idxcoreadapterfactory.md) al objeto de generador del adaptador DXCore. Para obtener instrucciones de programación y ejemplos de código, vea [Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,29 +33,29 @@ HRESULT GetFactory(_COM_Outptr_ T** ppvFactory);
 
 Tipo: **REFIID**
 
-Referencia al identificador único global (GUID) de la interfaz que desea que se devuelva en *ppvFactory*. Se espera que sea el identificador de interfaz (IID) de [IDXCoreAdapterFactory](./nn-dxcore_interface-idxcoreadapterfactory.md).
+Referencia al identificador único global (GUID) de la interfaz que desea que se devuelva en *ppvFactory.* Se espera que sea el identificador de interfaz (IID) de [IDXCoreAdapterFactory.](./nn-dxcore_interface-idxcoreadapterfactory.md)
 
 ### <a name="ppvfactory-out"></a>ppvFactory [out]
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
-Dirección de un puntero a una interfaz con el IID especificado en el parámetro *riid* . Si la devolución es correcta, *\* ppvFactory* (la dirección desreferenciada) contiene un puntero al objeto de generador de adaptadores DXCore existente. Antes de devolver, la función incrementa el recuento de referencias en la interfaz [IDXCoreAdapterFactory](./nn-dxcore_interface-idxcoreadapterfactory.md) del objeto de generador.
+Dirección de un puntero a una interfaz con el IID especificado en el *parámetro riid.* Tras la devolución correcta, *\* ppvFactory* (la dirección desreferenciada) contiene un puntero al objeto de generador del adaptador DXCore existente. Antes de devolver, la función incrementa el recuento de referencias en la [interfaz IDXCoreAdapterFactory](./nn-dxcore_interface-idxcoreadapterfactory.md) del objeto de generador.
 
 ## <a name="returns"></a>Devoluciones
 
 Tipo: **[HRESULT](../../com/structure-of-com-error-codes.md)**
 
-Si la función se ejecuta correctamente, devuelve **S_OK**. De lo contrario, devuelve un [código de error](../../com/com-error-codes-10.md) [**HRESULT**](../../com/structure-of-com-error-codes.md) .
+Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, devuelve un [**código de**](../../com/structure-of-com-error-codes.md) error [HRESULT](../../com/com-error-codes-10.md).
 
 |Valor devuelto|Descripción|
 |-|-|
 |E_NOINTERFACE|Se proporcionó un valor no válido para *riid*.|
-|E_POINTER|`nullptr` se proporcionó para *ppvFactory*.|
+|E_POINTER|`nullptr`se proporcionó para *ppvFactory.*|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Durante el tiempo que existe una referencia en una interfaz [IDXCoreAdapterFactory](./nn-dxcore_interface-idxcoreadapterfactory.md) , una interfaz [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md) o una interfaz [IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md) , las llamadas adicionales a [DXCoreCreateAdapterFactory](../dxcore/nf-dxcore-dxcorecreateadapterfactory.md), [IDXCoreAdapterList:: GetFactory](./nf-dxcore_interface-idxcoreadapterlist-getfactory.md)o [IDXCoreAdapter:: GetFactory]() devolverán punteros al mismo objeto, lo que aumentará el recuento de referencias de la interfaz **IDXCoreAdapterFactory** .
+Durante el tiempo que existe una referencia en una interfaz [IDXCoreAdapterFactory,](./nn-dxcore_interface-idxcoreadapterfactory.md) una interfaz [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md) o una interfaz [IDXCoreAdapter,](./nn-dxcore_interface-idxcoreadapter.md) las llamadas adicionales a [DXCoreCreateAdapterFactory](../dxcore/nf-dxcore-dxcorecreateadapterfactory.md), [IDXCoreAdapterList::GetFactory](./nf-dxcore_interface-idxcoreadapterlist-getfactory.md)o [IDXCoreAdapter::GetFactory]() devolverán punteros al mismo objeto, lo que aumenta el recuento de referencias de la interfaz **IDXCoreAdapterFactory.**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [DXCore Reference](../dxcore-reference.md), [using DXCore to Enumerate Adapters](../dxcore-enum-adapters.md)
+[IDXCoreAdapter,](./nn-dxcore_interface-idxcoreadapter.md) [referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

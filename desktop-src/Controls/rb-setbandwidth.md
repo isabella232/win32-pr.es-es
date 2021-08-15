@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_SETBANDWIDTH (commctrl. h)
+title: RB_SETBANDWIDTH mensaje (Commctrl.h)
 description: Establece el ancho de una banda acoplada.
 ms.assetid: dca9dfe9-3e5a-40bb-8de7-a296e6be7d06
 keywords:
-- RB_SETBANDWIDTH controles de mensajes de Windows
+- RB_SETBANDWIDTH controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 790f42ab977cfc0554c9a0eca737d541e001b6c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bcc30b8cd4cdb3a9d6f5e6123ec46df6565a0ccb19d3920fe67c50a57cd15fd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409185"
 ---
-# <a name="rb_setbandwidth-message"></a>Mensaje de SETBANDWIDTH de RB \_
+# <a name="rb_setbandwidth-message"></a>Mensaje \_ SETBANDWIDTH de RB
 
 Establece el ancho de una banda acoplada.
 
@@ -45,17 +45,17 @@ Nuevo ancho en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si se estableció el valor y **false** en caso contrario.
+Devuelve **TRUE si** el valor se estableció y **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

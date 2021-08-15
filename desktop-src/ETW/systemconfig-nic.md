@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de tarjeta de interfaz de red. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de configuración de tarjetas de interfaz de red. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 66b2c116-810e-489d-ad5e-f9c09902005b
-title: SystemConfig_NIC (clase)
+title: SystemConfig_NIC clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 63d522eee993f0766554eb9bc4fb09d842e9cd8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 822e8404137eee9731bbfcee9f5d9f4495609078c4251b53269371dd4904cea7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393821"
 ---
-# <a name="systemconfig_nic-class"></a>\_Clase SystemConfig NIC
+# <a name="systemconfig_nic-class"></a>Clase NIC SystemConfig \_
 
-Esta clase es la clase de tipo de evento para los eventos de configuración de tarjeta de interfaz de red.
+Esta clase es la clase de tipo de evento para los eventos de configuración de tarjetas de interfaz de red.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ La **clase \_ NIC SystemConfig** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La clase **SystemConfig \_ NIC** tiene estas propiedades.
+La **clase \_ NIC SystemConfig** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -69,10 +69,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(7), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Direcciones IP que se van a usar en la consulta de servidores DNS. La lista de direcciones está delimitada por comas.
+Direcciones IP que se usarán para consultar servidores DNS. La lista de direcciones está delimitada por comas.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(6), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Direcciones IP asociadas a la tarjeta de interfaz de red. La lista de direcciones está delimitada por comas.
@@ -95,32 +95,32 @@ Direcciones IP asociadas a la tarjeta de interfaz de red. La lista de direccione
 Ipv4Index
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Índice de adaptador para NIC IPv4. El índice del adaptador puede cambiar cuando un adaptador está deshabilitado y habilitado, o en otras circunstancias, y no debe considerarse persistente.
+Índice del adaptador para la NIC IPv4. El índice del adaptador puede cambiar cuando un adaptador está deshabilitado y habilitado, o en otras circunstancias, y no debe considerarse persistente.
 
 </dd> <dt>
 
 Ipv6Index
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
-Índice de adaptador para NIC IPv6. El índice del adaptador puede cambiar cuando un adaptador está deshabilitado y habilitado, o en otras circunstancias, y no debe considerarse persistente.
+Índice del adaptador para la NIC IPv6. El índice del adaptador puede cambiar cuando un adaptador está deshabilitado y habilitado, o en otras circunstancias, y no debe considerarse persistente.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Descripción del adaptador.
@@ -143,13 +143,13 @@ Descripción del adaptador.
 PhysicalAddr
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), Format ("x")
+Calificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Dirección de hardware del adaptador.
@@ -159,16 +159,16 @@ Dirección de hardware del adaptador.
 PhysicalAddrLen
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
-Longitud de la dirección de hardware para el adaptador.
+Longitud de la dirección de hardware del adaptador.
 
 </dd> </dl>
 
@@ -176,14 +176,14 @@ Longitud de la dirección de hardware para el adaptador.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

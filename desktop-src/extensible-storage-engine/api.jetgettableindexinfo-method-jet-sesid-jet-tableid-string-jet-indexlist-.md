@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método API. JetGetTableIndexInfo (JET_SESID, JET_TABLEID, cadena, JET_INDEXLIST)'
-title: Método API. JetGetTableIndexInfo (JET_SESID, JET_TABLEID, cadena, JET_INDEXLIST)
+description: 'Más información sobre: Método Api.JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, JET_INDEXLIST)'
+title: Método Api.JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, JET_INDEXLIST)
 TOCTitle: JetGetTableIndexInfo method (JET_SESID, JET_TABLEID, String, JET_INDEXLIST)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetTableIndexInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,Microsoft.Isam.Esent.Interop.JET_INDEXLIST@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgettableindexinfo(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5a39fba54463f7a55fd6a8521f5c905da4afb4e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fcdc0916d09bbe2dfa9e44ec4bdc0fa3bae8e0dda2148f327ca62f28c131b8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272328"
 ---
-# <a name="apijetgettableindexinfo-method-jet_sesid-jet_tableid-string-jet_indexlist"></a>Método API. JetGetTableIndexInfo (JET_SESID, JET_TABLEID, cadena, JET_INDEXLIST)
+# <a name="apijetgettableindexinfo-method-jet_sesid-jet_tableid-string-jet_indexlist"></a>Método Api.JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, JET_INDEXLIST)
 
-**Nota: esta API ya está obsoleta.**
+**NOTA: Esta API ahora está obsoleta.**
 
-Recupera información acerca de los índices de una tabla.
+Recupera información sobre los índices de una tabla.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,39 +68,39 @@ public static void JetGetTableIndexInfo(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla de la que se va a recuperar información de índice.
+    Tabla sobre la que se recupera la información de índice.
 
 <!-- end list -->
 
-  - IndexName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+  - indexname  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Este parámetro se ignora.
 
 <!-- end list -->
 
   - indexlist  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INDEXLIST](./jet-indexlist-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXLIST](./jet-indexlist-class.md)  
     
-    Se rellena con información acerca de los índices de la tabla.
+    Rellenado con información sobre los índices de la tabla.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Sobrecarga JetGetTableIndexInfo](./api.jetgettableindexinfo-method.md)
+[Sobrecarga de JetGetTableIndexInfo](./api.jetgettableindexinfo-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -5,17 +5,17 @@
       href: what-s-new-in-wer.md
     - name: Acerca de WER
       href: about-wer.md
-    - name: Usar WER
+    - name: Uso de WER
       href: using-wer.md
       items:
-        - name: Recopilación de volcados de User-Mode
+        - name: Recopilación de User-Mode volcados de memoria
           href: collecting-user-mode-dumps.md
     - name: Referencia de WER
       href: wer-reference.md
       items:
-        - name: Códigos de error de WER
+        - name: Códigos de error wer
           href: wer-error-codes.md
-        - name: Funciones WER
+        - name: Funciones wer
           href: wer-functions.md
           items:
             - name: AddERExcludedApplication

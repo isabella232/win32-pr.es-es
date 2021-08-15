@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c54905f35d673aee692efa6569eaddc6d18fc716
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 463ad617f93e6dd4a7b858c38b9aa816e85ea233ebc94acf5549a376642d2ff7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105717506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720293"
 ---
 # <a name="servervalidation-eaptype-element-tls"></a>Elemento ServerValidation (EapType) (TLS)
 
-El elemento **ServerValidation (EapType)** contiene información sobre cómo realizar la validación del servidor.
+El **elemento ServerValidation (EapType)** contiene información sobre cómo realizar la validación del servidor.
 
 ``` syntax
 <xs:element name="ServerValidation"
@@ -31,24 +31,24 @@ El elemento **ServerValidation (EapType)** contiene información sobre cómo rea
  />
 ```
 
-El elemento **ServerValidation** se define mediante el elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+El **elemento ServerValidation** se define mediante el [**elemento EapType.**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **ServerValidation** es opcional.
+El **elemento ServerValidation** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ El elemento **ServerValidation** es opcional.
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
+[Eaptlsconnectionpropertiesv1 Schema Elements](eaptlsconnectionpropertiesv1schema-elements.md)
 </dt> </dl>
 
  

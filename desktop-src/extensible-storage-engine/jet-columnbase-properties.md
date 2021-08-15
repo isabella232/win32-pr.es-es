@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: JET_COLUMNBASE propiedades'
-title: Propiedades de JET_COLUMNBASE
+description: 'Más información sobre: JET_COLUMNBASE propiedades'
+title: JET_COLUMNBASE propiedades
 TOCTitle: JET_COLUMNBASE properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_COLUMNBASE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnbase_properties(v=EXCHG.10)
 ms:contentKeyID: 55103379
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cc308c4e46a2ff173561aca227f8e0fb0031e5bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b0e67aa46f8099f7935c1912768953f7b552abf59815e6743477d0fd15830a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104563987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118255145"
 ---
-# <a name="jet_columnbase-properties"></a>Propiedades de JET_COLUMNBASE
+# <a name="jet_columnbase-properties"></a>JET_COLUMNBASE propiedades
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_COLUMNBASE](./jet-columnbase-class.md) expone los siguientes miembros.
+El [JET_COLUMNBASE](./jet-columnbase-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -35,7 +35,7 @@ El tipo de [JET_COLUMNBASE](./jet-columnbase-class.md) expone los siguientes mie
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335065(v=exchg.10).md">cbMax</a></td>
-<td>Obtiene la longitud máxima de la columna. Esto solo es significativo para las columnas de tipo <a href="hh577895(v=exchg.10).md">Text</a>, <a href="hh577895(v=exchg.10).md">LongText</a>, <a href="hh577895(v=exchg.10).md">Binary</a> y <a href="hh577895(v=exchg.10).md">LongBinary</a>.</td>
+<td>Obtiene la longitud máxima de la columna. Esto solo es significativo para las columnas de tipo <a href="hh577895(v=exchg.10).md">Text</a>, <a href="hh577895(v=exchg.10).md">LongText</a>, <a href="hh577895(v=exchg.10).md">Binary</a> <a href="hh577895(v=exchg.10).md">y LongBinary</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -60,7 +60,7 @@ El tipo de [JET_COLUMNBASE](./jet-columnbase-class.md) expone los siguientes mie
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335067(v=exchg.10).md">szBaseColumnName</a></td>
-<td>Obtiene el nombre de la columna en la tabla de plantilla.</td>
+<td>Obtiene el nombre de la columna en la tabla de plantillas.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -73,10 +73,10 @@ El tipo de [JET_COLUMNBASE](./jet-columnbase-class.md) expone los siguientes mie
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNBASE (clase)](./jet-columnbase-class.md)
+[JET_COLUMNBASE clase](./jet-columnbase-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

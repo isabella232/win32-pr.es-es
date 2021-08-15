@@ -1,7 +1,7 @@
 ---
 description: Recupera el estado de clave de una clave.
 ms.assetid: 4AEB732D-274E-42BB-AA97-9E4D30B81338
-title: Método IsKeyPressed de la clase Msvm_Keyboard
+title: Método IsKeyPressed de la Msvm_Keyboard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 44af7a3dc82c0d4d20a2e4c6aff21f7a47837490
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb8b4e2da0a6f1cd3c30e3d65404ecf308c71e88483e322193497216586b20b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118392448"
 ---
-# <a name="iskeypressed-method-of-the-msvm_keyboard-class"></a>Método IsKeyPressed de la \_ clase de teclado MSVM
+# <a name="iskeypressed-method-of-the-msvm_keyboard-class"></a>Método IsKeyPressed de la clase Msvm \_ Keyboard
 
 Recupera el estado de clave de una clave.
 
@@ -40,29 +40,29 @@ uint32 IsKeyPressed(
 
 <dl> <dt>
 
-*KeyCode* \[ de\]
+*keyCode* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Código de tecla virtual de la clave que se va a consultar. Para obtener la lista de códigos de tecla virtual, consulte [**códigos de tecla virtual**](../inputdev/virtual-key-codes.md).
+Código de clave virtual de la clave que se consulta. Para obtener la lista de códigos de clave virtual, vea [**Códigos de clave virtual**](../inputdev/virtual-key-codes.md).
 
 </dd> <dt>
 
-*keyState* \[ enuncia\]
+*keyState* \[ out\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-El estado actual de la clave. Un valor **true** significa que la tecla está inactiva.
+Estado actual hacia abajo de la clave. Un **valor True** significa que la clave está abajo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Un valor devuelto de cero indica que se ha realizado correctamente. Un valor distinto de cero indica un error al consultar el estado de la clave.
+Un valor devuelto de cero indica que se ha correcto. Un valor distinto de cero indica un error al consultar el estado de la clave.
 
 <dl> <dt>
 
@@ -81,16 +81,16 @@ Un valor devuelto de cero indica que se ha realizado correctamente. Un valor dis
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -99,40 +99,40 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **IsKeyPressed** siempre devolverá **false** para **el \_ menú VK** (18), el **\_ control VK** (17) y el **\_ desplazamiento de VK** (16) porque no son claves reales en un teclado. Estos códigos de tecla virtual siempre se asignan a **VK \_ LMENU** (164), **VK \_ LCONTROL** (162) y **VK \_ LSHIFT** (160), respectivamente, por los métodos [**PressKey**](presskey-msvm-keyboard.md) y [**ReleaseKey**](releasekey-msvm-keyboard.md) .
+El **método IsKeyPressed** siempre devolverá **False** para el menú de **VK \_** (18), **\_ VK CONTROL** (17) y **VK \_ MAYÚS** (16) porque no son claves reales en un teclado. Estos códigos de clave virtual siempre se asignan a **VK \_ LMENU** (164), **VK \_ LCONTROL** (162) y **VK \_ LSHIFT** (160), respectivamente, mediante los métodos [**PressKey**](presskey-msvm-keyboard.md) y [**ReleaseKey.**](releasekey-msvm-keyboard.md)
 
-El acceso a la clase de [**\_ teclado MSVM**](msvm-keyboard.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase Msvm \_ Keyboard**](msvm-keyboard.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Teclado MSVM**](msvm-keyboard.md)
+[**Teclado de \_ Msvm**](msvm-keyboard.md)
 </dt> <dt>
 
-[**Códigos de tecla virtual**](../inputdev/virtual-key-codes.md)
+[**Códigos de clave virtual**](../inputdev/virtual-key-codes.md)
 </dt> </dl>
 
  

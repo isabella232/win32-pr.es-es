@@ -3,7 +3,7 @@ title: Métodos IDCompositionSaturationEffect SetSaturation
 description: Establece la saturación de la imagen.
 ms.assetid: 2f92086f-51e1-ceda-a79f-a053d85a2502
 keywords:
-- Métodos SetSaturation DirectComposition
+- Métodos setSaturation DirectComposition
 topic_type:
 - apiref
 api_type:
@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 09bea22c73ea1cea34884473408f2ec45a74449c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: caced66849600be95bacde373730317c5e42c1cd4efd03a95c91e1ccea5a1c26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281542"
 ---
-# <a name="idcompositionsaturationeffectsetsaturation-methods"></a>IDCompositionSaturationEffect:: SetSaturation (métodos)
+# <a name="idcompositionsaturationeffectsetsaturation-methods"></a>Métodos IDCompositionSaturationEffect::SetSaturation
 
 Establece la saturación de la imagen.
 
@@ -34,7 +34,7 @@ Establece la saturación de la imagen.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,37 +1,37 @@
 ---
-description: Las nubes, humo y rastros de vapor se pueden crear mediante una extensión de la técnica de la cartelera.
+description: Las nubes, el humo y los pistas de humo se pueden crear mediante una extensión de la técnica de alabar.
 ms.assetid: c5607327-de46-4241-a01a-4adfe0bbf6fb
-title: Nubes, humo y rastros de vapor (Direct3D 9)
+title: Nubes, humo y pistas de Quesada (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f60bce89e23b2b2aab7affbb6947cab4d11c33ed
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 09da27ec1ba8f6ad8beb3c9a847226ffe63f1059c0b28dfe71e0d0582d56645f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104564331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118097170"
 ---
-# <a name="clouds-smoke-and-vapor-trails-direct3d-9"></a>Nubes, humo y rastros de vapor (Direct3D 9)
+# <a name="clouds-smoke-and-vapor-trails-direct3d-9"></a>Nubes, humo y pistas de Quesada (Direct3D 9)
 
-Las nubes, humo y rastros de vapor se pueden crear mediante una extensión de la técnica de la cartelera. Vea la [cartelera (Direct3D 9)](billboarding.md). Al girar la cartelera en dos ejes en lugar de uno, la aplicación puede permitir al usuario ver una cartelera desde cualquier ángulo. Normalmente, una aplicación gira la cartelera en los ejes horizontal y vertical.
+Las nubes, el humo y los pistas de humo se pueden crear mediante una extensión de la técnica de alabar. Vea [Sobresaliendo (Direct3D 9).](billboarding.md) Al girar la rueda en dos ejes en lugar de uno, la aplicación puede permitir que el usuario vea un móvil desde cualquier ángulo. Normalmente, una aplicación gira el ángulo en los ejes horizontal y vertical.
 
-Para crear una nube sencilla, la aplicación puede girar un primitivo rectangular en uno o dos ejes para que el primitivo enfrente al usuario. Una textura similar a la nube se puede aplicar a la primitiva con transparencia. Para obtener más información sobre cómo aplicar texturas transparentes a primitivos, vea [Texture blending (Direct3D 9)](texture-blending.md). Puede animar la nube aplicando una serie de texturas a lo largo del tiempo.
+Para crear una nube simple, la aplicación puede girar una primitiva rectangular en uno o dos ejes para que la primitiva se enfrenta al usuario. Después, se puede aplicar una textura de tipo nube a la primitiva con transparencia. Para obtener más información sobre cómo aplicar texturas transparentes a primitivas, vea [Mezcla de texturas (Direct3D 9).](texture-blending.md) Puede animar la nube aplicando una serie de texturas a lo largo del tiempo.
 
-Una aplicación puede crear nubes más complejas formando un grupo de primitivas. Cada parte de la nube es un primitivo rectangular. Los primitivos se pueden moverse de forma independiente a lo largo del tiempo para dar la apariencia de una niebla dinámica. En la ilustración siguiente se muestra este concepto.
+Una aplicación puede crear nubes más complejas formándolos a partir de un grupo de primitivas. Cada parte de la nube es una primitiva rectangular. Las primitivas se pueden mover de forma independiente a lo largo del tiempo para dar la apariencia de una bruma dinámica. En la ilustración siguiente se muestra este concepto.
 
-![Ilustración de primitivas que forman nubes más complejas](images/cloud.png)
+![ilustración de primitivas que forman nubes más complejas](images/cloud.png)
 
-La apariencia del humo se muestra de manera similar a las nubes. Normalmente requiere varias cartelera, como nubes complejas. El humo normalmente Billows y aumenta con el tiempo, por lo que las cartelera que conforman el humo deben moverse en consecuencia. Es posible que tenga que agregar más cartelera a medida que la ciruela aumenta y se dispersa.
+La apariencia del humo se muestra de forma similar a las nubes. Normalmente, requiere varios paneles, como nubes complejas. Normalmente, el humo se factura y aumenta con el tiempo, por lo que las estaciones que lo hacen deben moverse en consecuencia. Es posible que tenga que agregar más paneles a medida que el ciruelo aumenta y se dispersa.
 
-Un rastro de vapor es una ciruela de humo que no aumenta. Sin embargo, al igual que un humo, se dispersa con el tiempo. En la ilustración siguiente se muestra la técnica de uso de las cartelera para simular una pista de vapor.
+Una pista de humo es una ciruela de humo que no aumenta. Sin embargo, al igual que un humo, se dispersa con el tiempo. En la ilustración siguiente se muestra la técnica de uso de los yedores para simular una pista de recorrido.
 
-![Ilustración de las cartelera que simulan un rastro de vapor](images/vapor.png)
+![ilustración de las grandes pantallas que simulan una pista de música](images/vapor.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ejemplos de alfa](alpha-examples.md)
+[Ejemplos alfa](alpha-examples.md)
 </dt> </dl>
 
  

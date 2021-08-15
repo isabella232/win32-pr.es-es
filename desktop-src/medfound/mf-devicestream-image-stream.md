@@ -1,51 +1,51 @@
 ---
-description: Especifica si una secuencia de un origen de captura de vídeo es una secuencia de imagen fija.
+description: Especifica si una secuencia de un origen de captura de vídeo es una secuencia de imágenes fijas.
 ms.assetid: 52251A45-3603-41C7-A869-7F6319BD337F
-title: MF_DEVICESTREAM_IMAGE_STREAM atributo (Mfidl. h)
+title: MF_DEVICESTREAM_IMAGE_STREAM atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 382ce587574d6ec46509a460dfb964e23dd416d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a42ec0ea6ac8f89c7b35e5ae137c92aaf62006b9b06be689bb7203626f36b7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118244768"
 ---
-# <a name="mf_devicestream_image_stream-attribute"></a>\_Atributo de \_ secuencia de imagen MF DEVICESTREAM \_
+# <a name="mf_devicestream_image_stream-attribute"></a>Atributo \_ MF DEVICESTREAM \_ IMAGE \_ STREAM
 
-Especifica si una secuencia de un origen de captura de vídeo es una secuencia de imagen fija.
+Especifica si una secuencia de un origen de captura de vídeo es una secuencia de imágenes fijas.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bool** almacenado como **UINT32**
+**BOOL almacenado** como **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Algunas cámaras de vídeo exponen una secuencia de imágenes fijas que produce imágenes de alta resolución. El flujo de imágenes puede generar imágenes sin comprimir o imágenes JPEG. Si la cámara tiene un flujo de imagen, el origen de medios del dispositivo de captura establece este atributo en **true** en el flujo de imagen.
+Algunas cámaras de vídeo exponen una secuencia de imágenes fijas que genera imágenes de alta resolución. El flujo de imagen puede generar imágenes sin comprimir o imágenes JPEG. Si la cámara tiene una secuencia de imágenes, el origen multimedia del dispositivo de captura establece este atributo en **TRUE** en el flujo de imagen.
 
 Para obtener este atributo, haga lo siguiente:
 
-1.  Consulte el origen de los medios para la interfaz [**IMFMediaSourceEx**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourceex) .
-2.  Llame a [**IMFMediaSourceEx:: GetStreamAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-getstreamattributes) para obtener un puntero [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) para la secuencia.
-3.  Llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) para obtener el atributo.
+1.  Consulte el origen de medios para la [**interfaz IMFMediaSourceEx.**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourceex)
+2.  Llame [**a IMFMediaSourceEx::GetStreamAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-getstreamattributes) para obtener un puntero [**DEATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) para la secuencia.
+3.  Llame [**aATTRIBUTEAttributes::GetUINT32 para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) obtener el atributo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

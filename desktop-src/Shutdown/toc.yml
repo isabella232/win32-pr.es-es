@@ -1,32 +1,32 @@
 - name: Cierre del sistema
   href: system-shutdown.md
   items:
-    - name: Cambios de apagado de Windows Vista
+    - name: Cambios de apagado para Windows Vista
       href: shutdown-changes-for-windows-vista.md
-    - name: Acerca del cierre del sistema
+    - name: Acerca del apagado del sistema
       href: about-system-shutdown.md
       items:
-        - name: Cerrando sesión
+        - name: Cerrar sesión
           href: logging-off.md
-        - name: Apagar
+        - name: Cerrando
           href: shutting-down.md
         - name: Rastreador de eventos de apagado
           href: shutdown-event-tracker.md
-    - name: Usar cierre del sistema
+    - name: Uso del apagado del sistema
       href: using-system-shutdown.md
       items:
         - name: Cómo apagar el sistema
           href: how-to-shut-down-the-system.md
         - name: Cómo cerrar la sesión del usuario actual
           href: how-to-log-off-the-current-user.md
-        - name: Cómo bloquear la estación de trabajo
+        - name: Bloqueo de la estación de trabajo
           href: how-to-lock-the-workstation.md
-        - name: Mostrar el cuadro de diálogo de apagado
+        - name: Mostrar el cuadro de diálogo Apagar
           href: displaying-the-shutdown-dialog-box.md
     - name: Referencia de apagado del sistema
       href: system-shutdown-reference.md
       items:
-        - name: Funciones de cierre del sistema
+        - name: Funciones de apagado del sistema
           href: system-shutdown-functions.md
           items:
             - name: AbortSystemShutdown
@@ -49,12 +49,12 @@
               href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasondestroy
             - name: ShutdownBlockReasonQuery
               href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasonquery
-        - name: Mensajes de cierre del sistema
+        - name: Mensajes de apagado del sistema
           href: system-shutdown-messages.md
           items:
             - name: WM_ENDSESSION
               href: wm-endsession.md
             - name: WM_QUERYENDSESSION
               href: wm-queryendsession.md
-        - name: Códigos de motivo de cierre del sistema
+        - name: Códigos de motivo de apagado del sistema
           href: system-shutdown-reason-codes.md

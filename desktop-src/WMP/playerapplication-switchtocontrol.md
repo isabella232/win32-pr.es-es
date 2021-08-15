@@ -1,11 +1,11 @@
 ---
-title: PlayerApplication. switchToControl, método
-description: El método switchToControl cambia un control de Windows Media Player remoto al estado acoplado.
+title: Método PlayerApplication.switchToControl
+description: El método switchToControl cambia un control Reproductor de Windows Media remoto al estado acoplado.
 ms.assetid: 3c321b8f-8208-4c55-8872-38626d8ef9c9
 keywords:
-- método switchToControl de Windows Media Player
-- método switchToControl de Windows Media Player, clase PlayerApplication
-- Clase PlayerApplication Windows Media Player, método switchToControl
+- Método switchToControl Reproductor de Windows Media
+- Método switchToControl Reproductor de Windows Media , clase PlayerApplication
+- Clase PlayerApplication Reproductor de Windows Media , método switchToControl
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e175c586631bcdf4345a421270521595332c51d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 759040ccb54d5dd32df83811f9878418dbe0a1108719eac4e3b7467b9b3c76f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747219"
 ---
-# <a name="playerapplicationswitchtocontrol-method"></a>PlayerApplication. switchToControl, método
+# <a name="playerapplicationswitchtocontrol-method"></a>Método PlayerApplication.switchToControl
 
-El método **switchToControl** cambia un control de Windows Media Player remoto al estado acoplado.
+El **método switchToControl** cambia un control Reproductor de Windows Media remoto al estado acoplado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,24 +44,24 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método solo se usa cuando la comunicación remota de Windows Media Player el control.
+Este método solo se usa al controlar el Reproductor de Windows Media remoto.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de envío y recepción de IPv4 de UDP/IP. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de envío y recepción udp/IP IPv4. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: f04e0b4c-6a2b-4452-9bdf-38c08b487863
-title: UdpIp_TypeGroup1 (clase)
+title: UdpIp_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 8d977841cbfe9a88d14056d77a9b943f4d5d4a3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7a34d459cd4d9cefc4abbf08a97367309b4d90b31c63148159f57fccf6646c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393654"
 ---
-# <a name="udpip_typegroup1-class"></a>UdpIp \_ TypeGroup1 (clase)
+# <a name="udpip_typegroup1-class"></a>Clase \_ UdpIp TypeGroup1
 
-Esta clase es la clase de tipo de evento para los eventos de envío y recepción de IPv4 de UDP/IP.
+Esta clase es la clase de tipo de evento para los eventos de envío y recepción udp/IP IPv4.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,33 +52,33 @@ class UdpIp_TypeGroup1 : UdpIp
 
 ## <a name="members"></a>Miembros
 
-La clase **UdpIp \_ TypeGroup1** tiene estos tipos de miembros:
+La **clase UdpIp \_ TypeGroup1** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **UdpIp \_ TypeGroup1** tiene estas propiedades.
+La **clase UdpIp \_ TypeGroup1** tiene estas propiedades.
 
 <dl> <dt>
 
 connid
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8), puntero
+Calificadores: WmiDataId(8), Pointer
 </dt> </dl>
 
-Un identificador de conexión único para correlacionar los eventos que pertenecen a la misma conexión.
+Identificador de conexión único para poner en correlación los eventos que pertenecen a la misma conexión.
 
 </dd> <dt>
 
-daddr
+dr
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -87,7 +87,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), extensión ("IPAddrV4")
+Calificadores: WmiDataId(3), Extension("IPAddrV4")
 </dt> </dl>
 
 Dirección IP de destino.
@@ -103,7 +103,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), extensión ("puerto")
+Calificadores: WmiDataId(5), Extension("Port")
 </dt> </dl>
 
 Número de puerto de destino.
@@ -113,13 +113,13 @@ Número de puerto de destino.
 PID
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
 Identificador del proceso asociado a la solicitud.
@@ -135,7 +135,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), extensión ("IPAddrV4")
+Calificadores: WmiDataId(4), Extension("IPAddrV4")
 </dt> </dl>
 
 Dirección IP de origen.
@@ -145,13 +145,13 @@ Dirección IP de origen.
 seqnum
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7)
+Calificadores: WmiDataId(7)
 </dt> </dl>
 
 Número de secuencia.
@@ -161,20 +161,20 @@ Número de secuencia.
 tamaño
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
 Tamaño del paquete.
 
 </dd> <dt>
 
-deportivo
+Deporte
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **objeto**
@@ -183,7 +183,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), extensión ("puerto")
+Calificadores: WmiDataId(6), Extension("Port")
 </dt> </dl>
 
 Número de puerto de origen.
@@ -194,14 +194,14 @@ Número de puerto de origen.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

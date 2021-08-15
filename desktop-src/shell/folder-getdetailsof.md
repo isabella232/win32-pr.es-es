@@ -1,7 +1,7 @@
 ---
-description: Recupera los detalles sobre un elemento de una carpeta. Por ejemplo, su tamaño, tipo o la hora de la última modificación.
+description: Recupera detalles sobre un elemento de una carpeta. Por ejemplo, su tamaño, tipo o la hora de su última modificación.
 ms.assetid: d2fe4550-f171-40d9-8bce-065b61826997
-title: Método Folder. GetDetailsOf (ShlObj \_ Core. h)
+title: Método Folder.GetDetailsOf (Shlobj \_ core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 3ab89f00f254778a2417644d894f1e9e81eb43cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c703150069bc839f2d20024c0de8f3197fba09c5c3571e3de818dec3f3d6737c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860333"
 ---
-# <a name="foldergetdetailsof-method"></a>Folder. GetDetailsOf (método)
+# <a name="foldergetdetailsof-method"></a>Método Folder.GetDetailsOf
 
-Recupera los detalles sobre un elemento de una carpeta. Por ejemplo, su tamaño, tipo o la hora de la última modificación.
+Recupera detalles sobre un elemento de una carpeta. Por ejemplo, su tamaño, tipo o la hora de su última modificación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ retVal = Folder.GetDetailsOf(
 *vItem* 
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Elemento para el que se va a recuperar la información. Debe ser un objeto [**carpeta**](folderitem.md) .
+Elemento para el que se va a recuperar la información. Debe ser un [**objeto FolderItem.**](folderitem.md)
 
 </dd> <dt>
 
 *iColumn* 
 </dt> <dd>
 
-Tipo: **Integer**
+Tipo: **Entero**
 
 Valor **entero** que especifica la información que se va a recuperar. La información disponible para un elemento depende de la carpeta en la que se muestra. Este valor corresponde al número de columna de base cero que se muestra en una vista de Shell. Para un elemento del sistema de archivos, puede ser uno de los siguientes valores:
 
@@ -98,7 +98,7 @@ Recupera el tipo del elemento.
 
 </dt> <dd>
 
-Recupera la fecha y la hora en que se modificó el elemento por última vez.
+Recupera la fecha y hora en que se modificó por última vez el elemento.
 
 </dd> <dt>
 
@@ -120,28 +120,28 @@ Recupera los atributos del elemento.
 
 </dt> <dd>
 
-Recupera la información de información sobre herramientas para el elemento.
+Recupera la información de información del elemento.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[**BSTR**](/previous-versions/windows/desktop/automat/bstr) \** _
+Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)\***
 
-Cadena que contiene los detalles recuperados.
+Cadena que contiene el detalle recuperado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el método [_ *ParseName* *](folder-parsename.md) no está implementado para la carpeta panel de control ( \_ controles CSIDL). Si intenta llamar a un método no implementado, se genera un error 0x800A01BD (decimal 445).
+> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se 0x800A01BD error (decimal 445).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **GetDetailsOf** para recuperar el tipo del archivo denominado Clock.avi. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa GetDetailsOf** para recuperar el tipo del archivo denominado Clock.avi. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -170,7 +170,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -238,13 +238,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>ShlObj \_ Core. h (incluye Shldisp. h)</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj \_ core.h (incluir Shldisp.h)</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: DRM_LICENSE_STATE_DATA estructura (Drmexternals. h)
-description: La estructura de datos de estado de la \_ licencia DRM \_ \_ contiene información de licencia sobre un derecho DRM especificado.
+title: DRM_LICENSE_STATE_DATA estructura (Drternals.h)
+description: La estructura \_ DRM LICENSE STATE DATA contiene información de licencia sobre un derecho DRM \_ \_ especificado.
 ms.assetid: 5ca577b5-d28b-4e36-8af7-6fae4300d464
 keywords:
-- DRM_LICENSE_STATE_DATA estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- DRM_LICENSE_STATE_DATA windows Media Format de estructura
+- estructura windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bb63bce02a52aefcf1f3351fe34ab008996aa0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e6703481dc1d3608a8bf08ab2bbd216db4a9ecdc91bd4604d2b9de7d7de4fa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848538"
 ---
-# <a name="drm_license_state_data-structure-drmexternalsh"></a>DRM_LICENSE_STATE_DATA estructura (Drmexternals. h)
+# <a name="drm_license_state_data-structure-drmexternalsh"></a>DRM_LICENSE_STATE_DATA estructura (Drternals.h)
 
-La estructura de datos de estado de la **\_ licencia \_ \_ DRM** contiene información de [*licencia*](wmformat-glossary.md) sobre un derecho [*DRM*](wmformat-glossary.md) especificado.
+La **estructura DRM LICENSE STATE \_ \_ \_ DATA** contiene [*información de*](wmformat-glossary.md) licencia sobre un derecho [*DRM*](wmformat-glossary.md) especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,50 +57,50 @@ Número de secuencia al que se aplica la licencia. Debe ser 0, lo que indica que
 **dwCategory**
 </dt> <dd>
 
-Categoría de cadena que se va a mostrar. Consulte [**\_ categoría de \_ estado \_ de licencia de DRM**](drm-license-state-category.md) para ver los valores posibles y su significado.
+Categoría de cadena que se va a mostrar. Consulte [**DRM LICENSE STATE CATEGORY \_ \_ \_ (CATEGORÍA DE ESTADO DE LICENCIA**](drm-license-state-category.md) DE DRM) para ver los valores posibles y su significado.
 
 </dd> <dt>
 
 **dwNumCounts**
 </dt> <dd>
 
-Número de elementos proporcionados en **dwCount**. Normalmente, este valor es 0 o 1.
+Número de elementos proporcionados en **dwCount**. Este valor suele ser 0 o 1.
 
 </dd> <dt>
 
 **dwCount \[ 4\]**
 </dt> <dd>
 
-Una matriz de 0 o 1 o más **DWORD** s que representan el número de veces que se puede realizar la acción especificada en **dwCategory** . Vea Notas.
+Matriz de 0 o 1 o más **DWORD** que representan el número de veces que se puede realizar la acción especificada en **dwCategory.** Vea Notas.
 
 </dd> <dt>
 
 **dwNumDates**
 </dt> <dd>
 
-Número de elementos proporcionados en **fecha y hora**. Normalmente no se usan más de dos fechas, por ejemplo, con una licencia válida de una fecha hasta otra.
+Número de elementos proporcionados en **datetime.** Normalmente no se usan más de dos fechas, por ejemplo, con una licencia válida desde una fecha hasta otra.
 
 </dd> <dt>
 
-**fecha y hora \[ 4\]**
+**datetime \[ 4\]**
 </dt> <dd>
 
-Una matriz de una o varias estructuras FILETIME que representan una o más fechas de la licencia. El significado de una fecha determinada depende del valor de **dwCategory**.
+Matriz de una o varias estructuras FILETIME que representan una o varias fechas de la licencia. El significado de una fecha determinada depende del valor de **dwCategory**.
 
 </dd> <dt>
 
 **dwVague**
 </dt> <dd>
 
-Cero o más de los siguientes marcadores combinados con **una operación OR** bit a bit:
+Cero o más de las marcas siguientes combinadas con un OR bit a **bit:**
 
 
 
 | Marca                                    | Descripción                                                                                                                                           |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| datos de estado de licencia de DRM \_ \_ \_ \_ imprecisos        | Si se establece, puede haber más licencias que se apliquen al contenido.                                                                                         |
-| Estado de la licencia de DRM \_ \_ datos de \_ \_ OPL \_ presente | Si se establece, la licencia incluye los niveles de protección de salida (OPLs) que deben recuperarse y comprobarse con el destino de la salida de la aplicación. |
-| datos de estado de licencia de DRM \_ \_ \_ \_ SAP \_ presentes | Si se establece, el contenido se debe entregar mediante la ruta de acceso de audio segura (SAP).                                                                                  |
+| DRM \_ LICENSE STATE DATA \_ \_ \_ IMPRECISO        | Si se establece, puede haber más licencias que se apliquen al contenido.                                                                                         |
+| OPL \_ DE DATOS DE ESTADO DE LICENCIA DRM \_ \_ \_ \_ PRESENTE | Si se establece, la licencia incluye los niveles de protección de salida (OPL) que se deben recuperar y comprobar en el destino de la salida de la aplicación. |
+| DRM \_ LICENSE \_ STATE \_ DATA \_ SAP \_ PRESENT | Si se establece, el contenido debe entregarse mediante la ruta de acceso de audio segura (SAP).                                                                                  |
 
 
 
@@ -108,38 +108,38 @@ Cero o más de los siguientes marcadores combinados con **una operación OR** bi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se devuelve (encapsulada en una estructura de [**\_ datos de \_ estado \_**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) de la licencia de WM) de una llamada a [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty) cuando se especifica una de las propiedades de estado de licencia de DRM. Estas propiedades son:
+Esta estructura se devuelve (encapsulada en una estructura [**WM \_ LICENSE STATE \_ \_ DATA)**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) desde una llamada a [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty) cuando se especifica una de las propiedades de estado de licencia de DRM. Estas propiedades son:
 
--   [**\_Reproducción de LICENSESTATE DRM \_**](drm-licensestate-playback.md)
--   [**\_CopyToCD LICENSESTATE \_ DRM**](drm-licensestate-copytocd.md)
--   [**\_CopyToSDMIDevice LICENSESTATE \_ DRM**](drm-licensestate-copytosdmidevice.md)
--   [**\_CopyToNonSDMIDevice LICENSESTATE \_ DRM**](drm-licensestate-copytononsdmidevice.md)
--   [**\_CollaborativePlay LICENSESTATE \_ DRM**](drm-licensestate-collaborativeplay.md)
--   [**\_Copia de LicenseState de DRM \_**](drm-licensestate-copy.md)
--   [**\_PlaylistBurn LICENSESTATE \_ DRM**](drm-licensestate-playlistburn.md)
+-   [**DRM \_ LicenseState \_ Playback**](drm-licensestate-playback.md)
+-   [**DRM \_ LicenseState \_ CopyToCD**](drm-licensestate-copytocd.md)
+-   [**DRM \_ LicenseState \_ CopyToSDMIDevice**](drm-licensestate-copytosdmidevice.md)
+-   [**DRM \_ LicenseState \_ CopyToNonSDMIDevice**](drm-licensestate-copytononsdmidevice.md)
+-   [**DRM \_ LicenseState \_ CollaborativePlay**](drm-licensestate-collaborativeplay.md)
+-   [**Copia \_ de LicenseState de DRM \_**](drm-licensestate-copy.md)
+-   [**Lista \_ de reproducción de DRM LicenseState \_**](drm-licensestate-playlistburn.md)
 
-Si **dwCategory** es **el \_ \_ \_ \_ recuento de Estados \_ de licencias de DRM de WM desde \_ hasta,** la matriz de **DateTime** normalmente contendrá dos fechas, una fecha "desde" y una fecha "hasta". También se pueden especificar dos pares de fecha para crear licencias más complejas.
+Si **dwCategory** es **WM DRM LICENSE STATE COUNT FROM \_ \_ \_ \_ \_ \_ UNTIL,** la matriz **datetime** normalmente contendrá dos fechas, una fecha "from" y una fecha "until". También se pueden especificar dos pares de fechas para crear licencias más complejas.
 
-Los elementos de la matriz **dwCount** se corresponden con las fechas o intervalos de fechas especificados en la matriz **DateTime** . Si **dwCategory** es **el \_ \_ \_ \_ recuento de Estados \_ de licencias de DRM de WM desde \_ hasta** y **fecha y hora** contiene un par de fechas, **dwCount** contendrá un elemento. Si **DateTime** contiene dos pares de fecha (cuatro elementos), **dwCount** debe contener dos elementos, uno para cada par de fechas.
+Los elementos de la **matriz dwCount** corresponden a las fechas o intervalos de fechas especificados en la **matriz datetime.** Si **dwCategory** es **WM DRM LICENSE STATE COUNT FROM \_ \_ \_ \_ \_ \_ UNTIL** y **datetime** contiene un par de fechas, **dwCount** contendrá un elemento. Si **datetime contiene** dos pares de fecha (cuatro elementos), **dwCount** debe contener dos elementos, uno para cada par de fechas.
 
-En algunos casos, es posible que los usuarios hayan emitido más de una licencia para un archivo. Por ejemplo, podrían haber adquirido una licencia que permitía cinco jugadas hasta el final del mes y, posteriormente, adquirió una segunda licencia para derechos ilimitados. En tal caso, la marca de \_ datos de estado de la licencia DRM \_ \_ \_ se establece en **dwVague** ( `dwVague & DRM_LICENSE_STATE_DATA_VAGUE != 0` ) y el componente DRM usará un algoritmo para determinar el conjunto de derechos más probable que se haya aplicado. Cuando expire una licencia, el componente DRM examinará las licencias restantes y así sucesivamente hasta que hayan expirado todas las licencias.
+En algunos casos, es posible que a los usuarios se le haya emitido más de una licencia para un archivo. Por ejemplo, podrían haber adquirido una licencia que permitió cinco juegos hasta el final del mes y, posteriormente, adquirir una segunda licencia para derechos ilimitados. En tal caso, la marca DRM LICENSE STATE DATA ALGORITHM se establece en \_ \_ \_ \_ **dwVague** ( ) y el componente DRM usará un algoritmo para determinar el conjunto más probable de derechos que se han `dwVague & DRM_LICENSE_STATE_DATA_VAGUE != 0` aplicado. Cuando una licencia expira, el componente DRM examinará las licencias restantes, y así sucesivamente hasta que todas las licencias expiren.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                      |
-| Versión<br/>                  | SDK de Windows Media Format 7 o versiones posteriores del SDK<br/>                       |
-| Encabezado<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Versión<br/>                  | Windows SDK de formato multimedia 7 o versiones posteriores del SDK<br/>                       |
+| Header<br/>                   | <dl> <dt>Drternals.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: EsentErrorException. error (propiedad)'
-title: EsentErrorException. error (propiedad)
+description: 'Más información sobre: Propiedad EsentErrorException.Error'
+title: Propiedad EsentErrorException.Error
 TOCTitle: 'Error property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentErrorException.Error
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenterrorexception.error(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e777886ed95ea72a02626f7eb91724123a495f24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db54808d630ccbb976f36325a176a2da416bb236da25dc40ded2b029a3bb81a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118269966"
 ---
-# <a name="esenterrorexceptionerror-property"></a>EsentErrorException. error (propiedad)
+# <a name="esenterrorexceptionerror-property"></a>Propiedad EsentErrorException.Error
 
-Obtiene el error de esent subyacente para esta excepción.
+Obtiene el error subyacente de Esent para esta excepción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,9 +58,9 @@ public JET_err Error { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -68,4 +68,4 @@ Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)
 
 [Miembros de EsentErrorException](./esenterrorexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

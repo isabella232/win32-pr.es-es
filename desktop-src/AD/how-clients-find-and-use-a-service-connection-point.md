@@ -1,26 +1,26 @@
 ---
-title: Cómo buscan y utilizan los clientes un punto de conexión de servicio
+title: Cómo los clientes encuentran y usan un punto de conexión de servicio
 description: En el ejemplo de código siguiente se muestra cómo una aplicación cliente busca un punto de conexión de servicio (SCP) en el catálogo global.
 ms.assetid: d3163c22-22fe-4606-8cad-6f3a87f8fc36
 ms.tgt_platform: multiple
 keywords:
-- puntos de conexión de servicio AD, cómo los clientes buscan y usan
+- puntos de conexión de servicio de AD, cómo los clientes encuentran y usan
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edf75a0002f9351903ed1c5eca79f498cb4a078d
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 184034085ed673df873f346b1cee78051e05641931de3b770f9a17a3d0d8eba0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104487434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188200"
 ---
-# <a name="how-clients-find-and-use-a-service-connection-point"></a>Cómo buscan y utilizan los clientes un punto de conexión de servicio
+# <a name="how-clients-find-and-use-a-service-connection-point"></a>Cómo los clientes encuentran y usan un punto de conexión de servicio
 
-En el ejemplo de código siguiente se muestra cómo una aplicación cliente busca un punto de conexión de servicio (SCP) en el catálogo global. En este ejemplo de código, la aplicación cliente tiene una cadena GUID codificada de forma rígida que identifica el servicio. El instalador del servicio almacenó la misma cadena de GUID que uno de los valores del atributo de **palabras clave** de varios valores de SCP.
+En el ejemplo de código siguiente se muestra cómo una aplicación cliente busca un punto de conexión de servicio (SCP) en el catálogo global. En este ejemplo de código, la aplicación cliente tiene una cadena GUID codificada de forma fuerte que identifica el servicio. El instalador de servicio almacenaba la misma cadena GUID que uno de los valores del atributo de palabras clave de varios **valores** SCP.
 
-Este ejemplo consta de dos rutinas. La rutina **GetGC** recupera un puntero de [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para un catálogo global (GC). La rutina **ScpLocate** usa los métodos **IDirectorySearch** para buscar en el GC.
+Este ejemplo consta de dos rutinas. La **rutina GetGC** recupera un puntero [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para un catálogo global (GC). La **rutina ScpLocate** usa los métodos **IDirectorySearch** para buscar en el GC.
 
-El GC contiene una réplica parcial de cada objeto del bosque, pero no contiene todos los atributos de SCP que requiere el cliente. En primer lugar, el cliente debe buscar en el GC para buscar el SCP y recuperar su DN. Después, el cliente usa el DN del SCP para enlazar con un puntero [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) en el SCP. Después, el cliente llama al método [**IDirectoryObject:: GetObjectAttributes**](/windows/desktop/api/iads/nf-iads-idirectoryobject-getobjectattributes) para recuperar el resto de los atributos.
+El GC contiene una réplica parcial de todos los objetos del bosque, pero no contiene todos los atributos de SCP que requiere el cliente. En primer lugar, el cliente debe buscar el GC para encontrar el SCP y recuperar su DN. A continuación, el cliente usa el DN del SCP para enlazar a un [**puntero IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) en el SCP. A continuación, el cliente llama [**al método IDirectoryObject::GetObjectAttributes**](/windows/desktop/api/iads/nf-iads-idirectoryobject-getobjectattributes) para recuperar el resto de los atributos.
 
 
 ```C++
@@ -292,6 +292,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: La función GetFrameSrcAddressOffset devuelve el desplazamiento de la dirección de origen de los marcos.
+description: La función GetFrameSrcAddressOffset devuelve el desplazamiento de la dirección de origen de los fotogramas.
 ms.assetid: 1c5408d7-cf66-4887-93ee-134c0b8c5eff
-title: Función GetFrameSrcAddressOffset (Netmon. h)
+title: Función GetFrameSrcAddressOffset (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: f7310c0ac2c6f402c37537100cc8060fef9eedd1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c8c2315b53d336a06a73e63019daee842439f65aa53e3fb7d34d4944dcab9cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366099"
 ---
-# <a name="getframesrcaddressoffset-function"></a>GetFrameSrcAddressOffset función)
+# <a name="getframesrcaddressoffset-function"></a>Función GetFrameSrcAddressOffset
 
-La función **GetFrameSrcAddressOffset** devuelve el desplazamiento de la dirección de origen del marco.
+La **función GetFrameSrcAddressOffset** devuelve el desplazamiento de la dirección de origen del marco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,27 +53,27 @@ Identificador del marco.
 
 Tipo de dirección de origen. El valor del parámetro puede ser uno de los siguientes:
 
--   tipo de dirección \_ \_ Ethernet
--   tipo de dirección \_ \_ IP
--   tipo de dirección \_ \_ IPX
--   tipo de dirección \_ \_ TOKENRING
--   tipo de dirección \_ \_ FDDI
--   tipo de dirección \_ \_ XNS
--   tipo de dirección \_ \_ IP Vines \_
--   tipo de dirección \_ \_ ATM
+-   TIPO \_ DE \_ DIRECCIÓN ETHERNET
+-   DIRECCIÓN \_ IP DE TIPO \_
+-   TIPO \_ DE \_ DIRECCIÓN IPX
+-   TOKENRING \_ DE TIPO \_ DE DIRECCIÓN
+-   TIPO \_ DE \_ DIRECCIÓN FDDI
+-   TIPO \_ DE \_ DIRECCIÓN XNS
+-   TIPO \_ DE DIRECCIÓN IP DE LA \_ DIRECCION \_
+-   ADDRESS \_ TYPE \_ ATM
 
 </dd> <dt>
 
 *AddressLength* 
 </dt> <dd>
 
-Puntero a un **valor DWORD**, que, en la devolución, contiene la longitud de la dirección, en bytes.
+Puntero a **un DWORD**, que, a la vuelta, contiene la longitud de la dirección, en bytes.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es el desplazamiento de la dirección de origen.
+Si la función se realiza correctamente, el valor devuelto es el desplazamiento a la dirección de origen.
 
 Si la función no se realiza correctamente, el valor devuelto es menos uno (-1).
 
@@ -81,12 +81,12 @@ Si la función no se realiza correctamente, el valor devuelto es menos uno (-1).
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

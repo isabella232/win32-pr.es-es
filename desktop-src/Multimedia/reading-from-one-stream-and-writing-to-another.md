@@ -1,19 +1,19 @@
 ---
-title: Leer de un flujo y escribir en otro
-description: Leer de un flujo y escribir en otro
+title: Lectura de una secuencia y escritura en otra
+description: Lectura de una secuencia y escritura en otra
 ms.assetid: 035a8862-9a0f-49d2-a060-5131ff2b7887
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72b217dbfd0b88962b037c2822dbc7095bc87a83
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 466b0cd6bb0622716de30b873ef93a96da2042babf43de26a3fceff15b4bb664
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371602"
 ---
-# <a name="reading-from-one-stream-and-writing-to-another"></a>Leer de un flujo y escribir en otro
+# <a name="reading-from-one-stream-and-writing-to-another"></a>Lectura de una secuencia y escritura en otra
 
-En el ejemplo siguiente se leen los datos de una secuencia, se hace algo con los datos y se escriben los datos comprimidos en una secuencia de un archivo nuevo.
+En el ejemplo siguiente se leen datos de una secuencia, se hace algo con los datos y se escriben los datos comprimidos en una secuencia de un nuevo archivo.
 
 
 ```C++
@@ -107,9 +107,9 @@ void SaveSmall(PAVISTREAM ps, LPSTR lpFilename)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

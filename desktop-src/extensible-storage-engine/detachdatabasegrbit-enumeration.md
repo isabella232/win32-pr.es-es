@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración DetachDatabaseGrbit'
-title: Enumeración DetachDatabaseGrbit
+description: 'Más información sobre: Enumeración DetachDatabaseGrbit'
+title: DetachDatabaseGrbit (enumeración)
 TOCTitle: DetachDatabaseGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DetachDatabaseGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.detachdatabasegrbit(v=EXCHG.10)
@@ -32,21 +32,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8e67962420ee0179571da8262f17ea5279f59016
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 707066beb3deb6574e5fdcadc6ab367287bef17ce167e9a03472f5ece37f92c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117716526"
 ---
-# <a name="detachdatabasegrbit-enumeration"></a>Enumeración DetachDatabaseGrbit
+# <a name="detachdatabasegrbit-enumeration"></a>DetachDatabaseGrbit (enumeración)
 
-Opciones para [JetDetachDatabase2 (JET_SESID, String, DetachDatabaseGrbit)](./api.jetdetachdatabase2-method.md).
+Opciones de [JetDetachDatabase2(JET_SESID, String, DetachDatabaseGrbit)](./api.jetdetachdatabase2-method.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,30 +76,30 @@ public enum DetachDatabaseGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ForceDetach</td>
-<td><strong>Obsoleto.</strong> Si se usa ForceDetach, se devolverá <a href="dn350463(v=exchg.10).md">EsentForceDetachNotAllowedException</a> .</td>
+<td><strong>Obsoleto.</strong> Si se usa ForceDetach, se devolverá <a href="dn350463(v=exchg.10).md">EsentForceDetachNotAllowedException.</a></td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>Cierre</td>
-<td><strong>Obsoleto.</strong> Cierre ya no se usa.</td>
+<td>ForceClose</td>
+<td><strong>Obsoleto.</strong> ForceClose ya no se usa.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ForceCloseAndDetach</td>
-<td><strong>Obsoleto.</strong> Si se usa ForceCloseAndDetach, se devolverá <a href="dn350463(v=exchg.10).md">EsentForceDetachNotAllowedException</a> .</td>
+<td><strong>Obsoleto.</strong> Si se usa ForceCloseAndDetach, se devolverá <a href="dn350463(v=exchg.10).md">EsentForceDetachNotAllowedException.</a></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

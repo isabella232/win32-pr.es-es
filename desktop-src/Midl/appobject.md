@@ -1,9 +1,9 @@
 ---
 title: appobject (atributo)
-description: El atributo \ appobject \ identifica la coclase como un objeto de aplicación, que está asociado a una aplicación EXE completa.
+description: El atributo \ appobject\ identifica la coclase como un objeto de aplicación, que está asociado a una aplicación EXE completa.
 ms.assetid: f4fcdf55-7431-4d66-8a46-f741c52fbe56
 keywords:
-- appobject (atributo) MIDL
+- atributo appobject MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0d937d4a83306bc0c29f3c8c806bc043febec6a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f54cbe8d5c1c7a573216ae9cb55075ba3b3766d0d8c7898233be9364488131e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117808337"
 ---
 # <a name="appobject-attribute"></a>appobject (atributo)
 
-El atributo **\[ appobject \]** identifica la [**coclase**](coclass.md) como un objeto de aplicación, que está asociado a una aplicación exe completa.
+El **\[ atributo \] appobject** identifica la [**coclase**](coclass.md) como un objeto de aplicación, que está asociado a una aplicación EXE completa.
 
 ``` syntax
 [
@@ -39,17 +39,17 @@ coclass classname
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
 Especifica un número de identificación único universal para la [**coclase**](coclass.md).
 
 </dd> <dt>
 
-*coclass-Attribute-List* 
+*coclass-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la instrucción [**CoClass**](coclass.md) . Los atributos **de coclase** permitidos son [**\[ HelpString \]**](helpstring.md), [**\[ HelpContext \]**](helpcontext.md), con [**\[ licencia \]**](licensed.md), [**\[ versión \]**](version.md), [**\[ control \]**](control.md)y [**\[ oculto \]**](hidden.md).
+Especifica cero o más atributos que se aplican a la [**instrucción de la coclase.**](coclass.md) Los atributos **de la coclase** permitidos [**\[ son helpstring, \]**](helpstring.md) [**\[ helpcontext, \]**](helpcontext.md) [**\[ licensed, \]**](licensed.md) [**\[ version, \]**](version.md) [**\[ control \]**](control.md)y [**\[ hidden. \]**](hidden.md)
 
 </dd> <dt>
 
@@ -60,16 +60,16 @@ Especifica el nombre por el que se conoce el objeto de componente en la bibliote
 
 </dd> <dt>
 
-*definición de coclase* 
+*definición de la coclase* 
 </dt> <dd>
 
-Especifica las instrucciones que componen la definición de [**coclase**](coclass.md) .
+Especifica las instrucciones que son la definición [**de la coclase.**](coclass.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **\[ appobject \]** también indica que las funciones y propiedades de la [**coclase**](coclass.md) están disponibles globalmente en la biblioteca de tipos actual.
+El **\[ atributo \] appobject** también indica que las funciones y propiedades de la [**coclase**](coclass.md) están disponibles globalmente en la biblioteca de tipos actual.
 
 La representación typeflag para este atributo es TYPEFLAG \_ FAPPOBJECT
 
@@ -95,7 +95,7 @@ coclass Hello
 [**coclase**](coclass.md)
 </dt> <dt>
 
-[**control**](control.md)
+[**Control**](control.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
@@ -107,16 +107,16 @@ coclass Hello
 [**helpcontext**](helpcontext.md)
 </dt> <dt>
 
-[**plusvalía**](hidden.md)
+[**Oculto**](hidden.md)
 </dt> <dt>
 
-[**bajo**](licensed.md)
+[**Licencia**](licensed.md)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
@@ -125,6 +125,6 @@ coclass Hello
 [**Versión**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,25 +4,25 @@ ms.assetid: ffe663ce-3e9a-4dfc-8904-6f055332c119
 title: Ejemplo de lista de reproducción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f83d05762385d0de43a5d7f2bcd73cda2c6e2d51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e5cad2ef96c76512947a5b74e7eac54e3ad5787218e625f30fea5b8e5164177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118239132"
 ---
 # <a name="playlist-sample"></a>Ejemplo de lista de reproducción
 
-Muestra cómo utilizar Microsoft Media Foundation para reproducir una secuencia de archivos de audio en una lista de reproducción. En el ejemplo se usa el [origen del secuenciador](sequencer-source.md) para crear y administrar la lista de reproducción.
+Muestra cómo usar Microsoft Media Foundation reproducir una secuencia de archivos de audio en una lista de reproducción. En el ejemplo se usa [sequencer Source para](sequencer-source.md) crear y administrar la lista de reproducción.
 
 > [!Note]  
-> Este ejemplo ya no se incluye en el SDK de.
+> Este ejemplo ya no se incluye en el SDK.
 
  
 
-## <a name="apis-demonstrated"></a>API mostradas
+## <a name="apis-demonstrated"></a>API demostradas
 
-Este ejemplo muestra las siguientes interfaces de Media Foundation:
+En este ejemplo se muestran las siguientes Media Foundation interfaces:
 
 -   [**IMFMediaSourceTopologyProvider**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider)
 -   [**IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession)
@@ -30,14 +30,14 @@ Este ejemplo muestra las siguientes interfaces de Media Foundation:
 
 ## <a name="usage"></a>Uso
 
-El ejemplo de lista de reproducción crea una aplicación de Windows.
+El ejemplo de lista de reproducción compila una Windows aplicación.
 
--   Para crear una nueva lista de reproducción, seleccione **Agregar a lista de reproducción** en el menú **archivo** . En el cuadro de diálogo **Abrir archivo** , seleccione uno o más archivos de audio. Los archivos se agregan a la lista de reproducción.
--   Para reproducir la secuencia, haga clic en **reproducir**.
--   Para pausar el segmento actual, haga clic en **pausar**.
--   Para detener el segmento actual, haga clic en **detener**.
--   Para ir a un archivo, haga doble clic en el elemento en la lista de reproducción.
--   Para eliminar un archivo de la lista de reproducción, seleccione el elemento en la lista de reproducción. A continuación, seleccione **quitar de la lista de reproducción** en el menú **archivo** .
+-   Para crear una nueva lista de reproducción, seleccione Agregar a lista **de reproducción** en el **menú** Archivo. En el **cuadro de diálogo Abrir** archivo, seleccione uno o varios archivos de audio. Los archivos se agregan a la lista de reproducción.
+-   Para reproducir la secuencia, haga clic **en Reproducir**.
+-   Para pausar el segmento actual, haga clic **en Pausar**.
+-   Para detener el segmento actual, haga clic **en Detener**.
+-   Para ir directamente a un archivo, haga doble clic en el elemento de la lista de reproducción.
+-   Para eliminar un archivo de la lista de reproducción, seleccione el elemento de la lista de reproducción. A **continuación, seleccione Quitar de la lista de** reproducción en el **menú** Archivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ El ejemplo de lista de reproducción crea una aplicación de Windows.
 
 | Producto                                                        | Versión   |
 |----------------------------------------------------------------|-----------|
-| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
+| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
 
 
 
@@ -57,9 +57,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Location                                                     | Ruta de acceso/URL                                                   |
+| Location                                                     | Ruta de acceso o dirección URL                                                   |
 |--------------------------------------------------------------|------------------------------------------------------------|
-| [Windows SDK](https://www.microsoft.com/download/details.aspx?id=8279) | *Raíz* \\ del SDK Ejemplo \\ de \\ lista de reproducción multimedia mediafoundation \\ |
+| [Windows SDK](https://www.microsoft.com/download/details.aspx?id=8279) | *Raíz del SDK* \\ Lista de \\ reproducción \\ de mediafoundation multimedia de \\ ejemplos |
 
 
 
@@ -69,7 +69,7 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 <dl> <dt>
 
-[Ejemplo de BasicPlayback](/previous-versions//bb970475(v=vs.85))
+[Ejemplo de reproducción básica](/previous-versions//bb970475(v=vs.85))
 </dt> <dt>
 
 [Muestras de SDK de Media Foundation](media-foundation-sdk-samples.md)

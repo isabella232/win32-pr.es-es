@@ -1,51 +1,51 @@
 ---
-title: Crear un complemento de la interfaz de usuario para Windows Media Player 10 Mobile
-description: Crear un complemento de la interfaz de usuario para Windows Media Player 10 Mobile
+title: Creación de Interfaz de usuario complemento para Reproductor de Windows Media 10 Mobile
+description: Creación de Interfaz de usuario complemento para Reproductor de Windows Media 10 Mobile
 ms.assetid: 050418b7-d99c-49ab-8ce6-6511b194ffe6
 keywords:
-- Windows Media Player Mobile, Complementos
-- Windows Media Player Mobile, Complementos de la interfaz de usuario
-- Complementos móviles de Windows Media Player
+- Reproductor de Windows Media Móvil, complementos
+- Reproductor de Windows Media Dispositivos móviles, complementos de interfaz de usuario
+- Reproductor de Windows Media Complementos móviles
 - complementos, interfaz de usuario
-- complementos, Windows Media Player Mobile
-- Complementos de la interfaz de usuario, Windows Media Player Mobile
-- Complementos de la interfaz de usuario, Windows Media Player Mobile
+- complementos, Reproductor de Windows Media Mobile
+- complementos de interfaz de usuario, Reproductor de Windows Media Mobile
+- Complementos de interfaz de usuario, Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d649ef1d8ed1b8fb1e1b54dc7eed106f798b1ad
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40f75d18303953464dc7d16be14daeb60ffd34167507dc6344499cc8b0f3a97d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750482"
 ---
-# <a name="creating-a-user-interface-plug-in-for-windows-media-player-10-mobile"></a>Crear un complemento de la interfaz de usuario para Windows Media Player 10 Mobile
+# <a name="creating-a-user-interface-plug-in-for-windows-media-player-10-mobile"></a>Creación de Interfaz de usuario complemento para Reproductor de Windows Media 10 Mobile
 
-Windows Media Player 10 Mobile usa el mismo modelo de complemento de interfaz de usuario que el Media Player de Windows de escritorio. Sin embargo, Windows Media Player 10 Mobile solo puede interactuar con complementos de la interfaz de usuario de fondo. Debido a los modelos de complementos similares, las mismas llamadas de API que se aplican a los complementos de la interfaz de usuario en segundo plano en el escritorio también se aplican a los complementos de la interfaz de usuario en segundo plano en un dispositivo móvil de Windows.
+Reproductor de Windows Media 10 Mobile usa el mismo modelo de complemento de interfaz de usuario que el equipo de Reproductor de Windows Media. Sin embargo, Reproductor de Windows Media 10 Mobile solo puede interactuar con complementos de interfaz de usuario en segundo plano. Debido a los modelos de complemento similares, las mismas llamadas API que se aplican a los complementos de interfaz de usuario en segundo plano en el escritorio también se aplican a los complementos de interfaz de usuario en segundo plano en un dispositivo Windows Mobile.
 
-En las secciones siguientes se describe cómo crear un complemento de la interfaz de usuario de fondo mediante el código generado por el asistente desde el Asistente para complementos de Windows Media Player.
+En las secciones siguientes se describe cómo crear un complemento de interfaz de usuario en segundo plano mediante el código generado por el asistente Reproductor de Windows Media complemento.
 
 
 
 | Sección                                                                | Descripción                                                                                                                                            |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Introducción](getting-started.md)                                 | Describe lo que necesita instalar y cómo usar el Asistente para complementos de Media Player de Windows para ayudar a automatizar la creación de un complemento de interfaz de usuario en segundo plano.    |
-| [Modificar el código generado por el asistente](modifying-wizard-generated-code.md) | Describe lo que necesita modificar a partir del código generado por el asistente creado en la sección anterior para que funcione con Windows Media Player 10 Mobile. |
+| [Introducción](getting-started.md)                                 | Describe lo que necesita instalar y cómo usar el Asistente para complementos de Reproductor de Windows Media para ayudar a automatizar la creación de un complemento de interfaz de usuario en segundo plano.    |
+| [Modificar código generado por el asistente](modifying-wizard-generated-code.md) | Describe lo que necesita modificar del código generado por el asistente creado en la sección anterior para que funcione con Reproductor de Windows Media 10 Mobile. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Guía de programación de complementos de la interfaz de usuario**](user-interface-plug-ins-programming-guide.md)
+[**Interfaz de usuario de programación de complementos de Interfaz de usuario**](user-interface-plug-ins-programming-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
