@@ -1,21 +1,21 @@
 ---
-title: Apertura de un dispositivo sencillo mediante el nombre del dispositivo
-description: Apertura de un dispositivo sencillo mediante el nombre del dispositivo
+title: Apertura de un dispositivo simple mediante el nombre del dispositivo
+description: Apertura de un dispositivo simple mediante el nombre del dispositivo
 ms.assetid: 9e116499-2094-40e1-b2bc-3e3b8281a472
 keywords:
-- mciSendCommand función)
+- Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f84a852a18da3edb4431308259bacf38623bce3
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 15d186451717a056188d6fc990188c7e73fcf34cf1339b0787f7cec6e7573557
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802332"
 ---
-# <a name="opening-a-simple-device-by-using-the-device-name"></a>Apertura de un dispositivo sencillo mediante el nombre del dispositivo
+# <a name="opening-a-simple-device-by-using-the-device-name"></a>Apertura de un dispositivo simple mediante el nombre del dispositivo
 
-En el ejemplo siguiente se abre un dispositivo de audio de CD especificando el nombre del dispositivo mediante la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .
+En el ejemplo siguiente se abre un dispositivo de audio de CD especificando el nombre del dispositivo mediante la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++
@@ -41,6 +41,6 @@ wDeviceID = mciOpenParms.wDeviceID;
 
 
 
- 
+ 
 
- 
+ 

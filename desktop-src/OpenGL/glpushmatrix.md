@@ -1,9 +1,9 @@
 ---
-title: función glPushMatrix (GL. h)
-description: Las funciones glPushMatrix y glPopMatrix envían y extraen la pila de matriz actual. | función glPushMatrix (GL. h)
+title: Función glPushMatrix (Gl.h)
+description: Las funciones glPushMatrix y glPopMatrix insertan y devuelven la pila de matriz actual. | Función glPushMatrix (Gl.h)
 ms.assetid: 97d8e644-50bb-4130-b6b7-d87df4468e73
 keywords:
-- glPushMatrix (función) OpenGL
+- Función glPushMatrix OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee62b03e221f44db829a7167d642a766af8e129c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a0d6af41bb02c82a28b667a2b5ad62d942c036c7f744a68fa9bb79188e26ae8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795140"
 ---
-# <a name="glpushmatrix-function"></a>glPushMatrix función)
+# <a name="glpushmatrix-function"></a>Función glPushMatrix
 
-Las funciones **glPushMatrix** y [**glPopMatrix**](glpopmatrix.md) envían y extraen la pila de matriz actual.
+Las **funciones glPushMatrix** [**y glPopMatrix**](glpopmatrix.md) insertan y devuelven la pila de matriz actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Es un error insertar una pila de matriz completa o extraer una pila de matriz que contenga una sola matriz. En cualquier caso, se establece la marca de error y no se realiza ningún otro cambio en el estado de OpenGL.
+Es un error insertar una pila de matriz completa o sacar una pila de matriz que contiene solo una matriz. En cualquier caso, se establece la marca de error y no se realiza ningún otro cambio en el estado OpenGL.
 
 La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códigos de error.
 
@@ -52,54 +52,54 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**desbordamiento de la pila de GL \_ \_**</dt> </dl>    | Se llamó a la función mientras la pila de matriz actual estaba llena.<br/>                                                           |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**GL \_ STACK \_ OVERFLOW**</dt> </dl>    | Se llamó a la función mientras la pila de matriz actual estaba llena.<br/>                                                           |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Hay una pila de matrices para cada uno de los modos de matriz. En \_ el modo GL MODELVIEW, la profundidad de la pila es al menos 32. En los otros dos modos, \_ proyección GL y \_ textura GL, la profundidad es al menos 2. La matriz actual en cualquier modo es la matriz de la parte superior de la pila para ese modo.
+Hay una pila de matrices para cada uno de los modos de matriz. En el \_ modo MODELVIEW de GL, la profundidad de la pila es al menos 32. En los otros dos modos, GL \_ PROJECTION y GL \_ TEXTURE, la profundidad es al menos 2. La matriz actual en cualquier modo es la matriz en la parte superior de la pila para ese modo.
 
-La función **glPushMatrix** empuja hacia abajo la pila de la matriz actual, duplicando la matriz actual. Es decir, después de una llamada a **glPushMatrix** , la matriz de la parte superior de la pila es idéntica a la que se encuentra debajo de ella. La función **glPopMatrix** extrae la pila de matriz actual, reemplazando la matriz actual por la que se encuentra debajo en la pila. Inicialmente, cada una de las pilas contiene una matriz, una matriz de identidad.
+La **función glPushMatrix** inserta la pila de matriz actual en una, duplicando la matriz actual. Es decir, después de una **llamada a glPushMatrix,** la matriz de la parte superior de la pila es idéntica a la que está debajo de ella. La **función glPopMatrix** muestra la pila de matriz actual, reemplazando la matriz actual por la que hay debajo en la pila. Inicialmente, cada una de las pilas contiene una matriz, una matriz de identidad.
 
-Las siguientes funciones recuperan información relacionada con **glPushMatrix** y **glPopMatrix**:
+Las siguientes funciones recuperan información relacionada **con glPushMatrix** y **glPopMatrix**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el \_ modo de matriz de contabilidad de argumentos \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MATRIX \_ MODE
 
-**glGet** con el argumento \_ MODELVIEW \_ matriz de contabilidad
+**glGet con** el argumento GL \_ MODELVIEW \_ MATRIX
 
-**glGet** con el argumento \_ matriz de proyección de contabilidad \_
+**glGet con** el argumento GL \_ PROJECTION \_ MATRIX
 
-**glGet** con el argumento \_ matriz de textura de GL \_
+**glGet con** el argumento GL \_ TEXTURE \_ MATRIX
 
-**glGet** con el argumento GL MODELVIEW de la \_ \_ pila \_
+**glGet con** el argumento GL \_ MODELVIEW \_ STACK \_ DEPTH
 
-**glGet** con el argumento \_ profundidad de la pila de proyección GL \_ \_
+**glGet con** el argumento GL \_ PROJECTION STACK \_ \_ DEPTH
 
-**glGet** con el argumento \_ profundidad de la pila de textura de contabilidad \_ \_
+**glGet con** el argumento GL \_ TEXTURE STACK \_ \_ DEPTH
 
-**glGet** con el argumento GL \_ Max MODELVIEW de la \_ \_ pila \_
+**glGet con** el argumento GL \_ MAX \_ MODELVIEW STACK \_ \_ DEPTH
 
-**glGet** con el argumento \_ profundidad de la \_ pila de proyección Max \_ \_
+**glGet con** el argumento GL \_ MAX PROJECTION STACK \_ \_ \_ DEPTH
 
-**glGet** con el argumento \_ profundidad máxima de la \_ pila de textura de \_ GL \_
+**glGet con** el argumento GL \_ MAX TEXTURE STACK \_ \_ \_ DEPTH
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: EQUALIZERSETTINGS. Speaker
-description: El atributo Speakers especifica o recupera el número de índice del tamaño actual del altavoz.
+title: EQUALIZERSETTINGS.speakerSize
+description: El atributo speakerSize especifica o recupera el número de índice del tamaño actual del hablante.
 ms.assetid: 454d07bf-49cd-48a5-9724-6415a925367a
 keywords:
-- EQUALIZERSETTINGS. pone en altavoz Windows Media Player
+- EQUALIZERSETTINGS.speakerSize Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26dc49af55e96d3ef8de4e8a4567b3a4296ca214
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46d289a89a22e8c10cf669e9b55fc304826acb3ce0f72468f725e7d5fae0dfc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748653"
 ---
-# <a name="equalizersettingsspeakersize"></a>EQUALIZERSETTINGS. Speaker
+# <a name="equalizersettingsspeakersize"></a>EQUALIZERSETTINGS.speakerSize
 
-El atributo **Speakers** especifica o recupera el número de índice del tamaño actual del altavoz.
+El **atributo speakerSize** especifica o recupera el número de índice del tamaño actual del hablante.
 
 ``` syntax
         elementID.speakerSize
@@ -29,23 +29,23 @@ El atributo **Speakers** especifica o recupera el número de índice del tamaño
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (Long) que contiene uno de los valores siguientes.
+Este atributo es un número de **lectura** y escritura (long) que contiene uno de los valores siguientes.
 
 
 
-| Value | Descripción                              |
+| Valor | Descripción                              |
 |-------|------------------------------------------|
-| 0     | Los altavoces actuales son auriculares.     |
-| 1     | Los altavoces actuales tienen un tamaño normal. |
+| 0     | Los hablantes actuales son auriculares.     |
+| 1     | Los hablantes actuales tienen un tamaño normal. |
 | 2     | Los altavoces actuales son grandes.          |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El nombre descriptivo del tamaño del altavoz se puede recuperar mediante el atributo **currentSpeakerName** .
+El nombre descriptivo del tamaño del altavoz se puede recuperar mediante el **atributo currentSpeakerName.**
 
 Este atributo se omite si **enhancedAudio** está establecido en false.
 
@@ -53,13 +53,13 @@ Este atributo se omite si **enhancedAudio** está establecido en false.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

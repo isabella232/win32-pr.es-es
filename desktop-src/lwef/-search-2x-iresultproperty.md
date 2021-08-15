@@ -1,10 +1,10 @@
 ---
-title: Interfaz IResultProperty (WdsSharedIDL. h)
-description: Expone las propiedades de los resultados.
+title: Interfaz IResultProperty (WdsSharedIDL.h)
+description: Expone las propiedades de resultado.
 ms.assetid: 58d8c516-47c6-4cae-b46c-5127baf3054d
 keywords:
-- Interfaz IResultProperty características del entorno heredado de Windows
-- Interfaz IResultProperty características del entorno heredado de Windows, descritas
+- Características heredadas del entorno de Windows IResultProperty
+- IResultProperty interface Legacy Windows Environment Features , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,30 +15,30 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 716c0b3998171731dea5f976afc266fe81b2c613
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efba214aaaadec2cfad52db02f9f4f18d289b0b3ee9df37ee60295d5499241e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754588"
 ---
 # <a name="iresultproperty-interface"></a>Interfaz IResultProperty
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use Windows [Search API](../search/-search-reference-entry-page.md) en su lugar. 
 
-Expone las propiedades de los resultados.
+Expone las propiedades de resultado.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IResultProperty** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IResultProperty** también tiene estos tipos de miembros:
+La **interfaz IResultProperty** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IResultProperty** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IResultProperty** tiene estos métodos.
+La **interfaz IResultProperty** tiene estos métodos.
 
 
 
@@ -53,37 +53,37 @@ La interfaz **IResultProperty** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IResultProperty** tiene estas propiedades.
+La **interfaz IResultProperty** tiene estas propiedades.
 
 
 
 | Propiedad                                                                   | Tipo de acceso          | Descripción                                           |
 |:---------------------------------------------------------------------------|:---------------------|:------------------------------------------------------|
-| [**Tipo**](-search-2x-iresultproperty-datatype.md)<br/>         | Solo lectura<br/> | Un tipo de datos de propiedades. <br/>                   |
+| [**Datatype**](-search-2x-iresultproperty-datatype.md)<br/>         | Solo lectura<br/> | Tipo de datos properties. <br/>                   |
 | [**DisplayName**](-search-2x-iresultproperty-displayname.md)<br/>   | Solo lectura<br/> | Nombre para mostrar localizado de la propiedad. <br/>   |
-| [**DisplayState**](-search-2x-iresultproperty-displaystate.md)<br/> | Solo lectura<br/> | Visability de la propiedad. <br/>               |
-| [**Diversas**](-search-2x-iresultproperty-hint.md)<br/>                 | Solo lectura<br/> | Valor especial que se usa para ayudar a la recuperación de datos. <br/> |
-| [**IndexColumn**](-search-2x-iresultproperty-indexcolumn.md)<br/>   | Solo lectura<br/> | Nombre de la columna de propiedades en el índice. <br/>      |
+| [**DisplayState**](-search-2x-iresultproperty-displaystate.md)<br/> | Solo lectura<br/> | Visibilidad de la propiedad. <br/>               |
+| [**Pista**](-search-2x-iresultproperty-hint.md)<br/>                 | Solo lectura<br/> | Valor especial que se usa para ayudar a la recuperación de datos. <br/> |
+| [**IndexColumn**](-search-2x-iresultproperty-indexcolumn.md)<br/>   | Solo lectura<br/> | Nombre de la columna Propiedades en el índice. <br/>      |
 | [**UID**](-search-2x-iresultproperty-uid.md)<br/>                   | Solo lectura<br/> | Identificador único de la propiedad. <br/>       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estas son las propiedades de los elementos devueltos.
+Estos son los elementos que devuelven propiedades.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Búsqueda en el escritorio de Windows (WDS) 3,0<br/>                                               |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio sp1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 3.0<br/>                                               |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

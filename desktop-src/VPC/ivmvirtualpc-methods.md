@@ -28,16 +28,16 @@ La [**interfaz IVMVirtualPC**](ivmvirtualpc.md) expone los métodos siguientes.
 -   [**FindVirtualMachine (método)**](ivmvirtualpc-findvirtualmachine.md)
 -   [**FindVirtualNetwork (método)**](ivmvirtualpc-findvirtualnetwork.md)
 -   [**GetConfigurationValue (método)**](ivmvirtualpc-getconfigurationvalue.md)
--   [**Método GetDVDFiles**](ivmvirtualpc-getdvdfiles.md)
+-   [**GetDVDFiles (método)**](ivmvirtualpc-getdvdfiles.md)
 -   [**GetFstonepyDiskFiles (método)**](ivmvirtualpc-getfloppydiskfiles.md)
 -   [**GetFstonepyDiskImageType (método)**](ivmvirtualpc-getfloppydiskimagetype.md)
 -   [**GetHardDisk (método)**](ivmvirtualpc-getharddisk.md)
 -   [**GetHardDiskFiles (método)**](ivmvirtualpc-getharddiskfiles.md)
 -   [**GetVirtualMachineFiles (método)**](ivmvirtualpc-getvirtualmachinefiles.md)
--   [**Método RegisterVirtualMachine**](ivmvirtualpc-registervirtualmachine.md)
+-   [**RegisterVirtualMachine (método)**](ivmvirtualpc-registervirtualmachine.md)
 -   [**RemoveConfigurationValue (método)**](ivmvirtualpc-removeconfigurationvalue.md)
 -   [**Método SetConfigurationValue**](ivmvirtualpc-setconfigurationvalue.md)
--   [**Método UnregisterVirtualMachine**](ivmvirtualpc-unregistervirtualmachine.md)
+-   [**UnregisterVirtualMachine (método)**](ivmvirtualpc-unregistervirtualmachine.md)
 
  
 

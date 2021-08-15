@@ -1,6 +1,6 @@
 ---
-title: Connection (conexiones) (elemento)
-description: Define cada valor de configuración y lo asocia a un nombre. El elemento de conexión es opcional.
+title: Elemento Connection (Connections)
+description: Define cada valor de configuración y lo asocia a un nombre. El elemento Connection es opcional.
 ms.assetid: 913263ab-0e0e-4213-947b-7bca9ba0697e
 keywords:
 - Elemento de conexión EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5aabc29a7fe5122a7f7571750b97ebccb38158d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6948675f7910c46cb2b5db4285ce0df795fa057f275ce29b7f4c664b14c4ce1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498375"
 ---
-# <a name="connection-connections-element"></a>Connection (conexiones) (elemento)
+# <a name="connection-connections-element"></a>Elemento Connection (Connections)
 
-El elemento de **conexión (conexiones)** define cada opción de configuración y la asocia a un nombre. El elemento de **conexión** es opcional.
+El **elemento Connection (Connections)** define cada valor de configuración y lo asocia a un nombre. El **elemento Connection** es opcional.
 
 ``` syntax
 <xs:element name="Connection">
@@ -41,7 +41,7 @@ El elemento de **conexión (conexiones)** define cada opción de configuración 
 </xs:element>
 ```
 
-El elemento de **conexión** se define mediante [**el elemento**](eapconnectionpropertiesv1schema-connections-element.md) Connections.
+El **elemento Connection** se define mediante el elemento [**Connections.**](eapconnectionpropertiesv1schema-connections-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -49,8 +49,8 @@ El elemento de **conexión** se define mediante [**el elemento**](eapconnectionp
 
 | Elemento                                                                 | Tipo   | Descripción                                                                                                             |
 |-------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------|
-| [**Participante**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica el elemento de configuración de EAP.<br/>                                                                    |
-| [**Name**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Captura el nombre de la conexión que se está definiendo y ayuda en la identificación de varias conexiones. <br/> |
+| [**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica el elemento de configuración de EAP.<br/>                                                                    |
+| [**Nombre**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Captura el nombre de la conexión que se está definiendo, lo que ayuda a identificar varias conexiones. <br/> |
 
 
 
@@ -58,14 +58,14 @@ El elemento de **conexión** se define mediante [**el elemento**](eapconnectionp
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ El elemento de **conexión** se define mediante [**el elemento**](eapconnectionp
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
+[esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

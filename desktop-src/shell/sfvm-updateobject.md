@@ -1,5 +1,5 @@
 ---
-description: Actualiza un objeto pasando un puntero a una matriz de dos punteros a listas de identificadores de elemento (PIDL). Usado por el mensaje \_ SHShellFolderView.
+description: Actualiza un objeto pasando un puntero a una matriz de dos punteros a listas de identificadores de elemento (PIDL). Lo usa shshellfolderview \_ message.
 title: SFVM_UPDATEOBJECT mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -22,7 +22,7 @@ ms.locfileid: "118452857"
 ---
 # <a name="sfvm_updateobject-message"></a>Mensaje \_ UPDATEOBJECT de SFVM
 
-Actualiza un objeto pasando un puntero a una matriz de dos punteros a listas de identificadores de elemento (PIDL). Utilizado por [**el mensaje SHShellFolderView \_**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message).
+Actualiza un objeto pasando un puntero a una matriz de dos punteros a listas de identificadores de elemento (PIDL). Usado por [**el mensaje SHShellFolderView \_**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message).
 
 
 ```C++
@@ -43,23 +43,23 @@ Actualiza un objeto pasando un puntero a una matriz de dos punteros a listas de 
 *pppdl* \[ En\]
 </dt> <dd>
 
-Dirección de una matriz de dos PIDL. El primer PIDL es el PIDL antiguo. La segunda es una copia del PIDL anterior con información actualizada. El control sobre la duración de la copia pertenece a la vista después de completar correctamente esta llamada.
+Dirección de una matriz de dos PIDL. El primer PIDL es el PIDL antiguo. La segunda es una copia del PIDL antiguo con información actualizada. El control sobre la duración de la copia pertenece a la vista después de completar correctamente esta llamada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador de listview del objeto actualizado si la actualización se ha realizado correctamente; de lo contrario, devuelve -1.
+Devuelve el identificador de listview del objeto actualizado si la actualización se ha realizado correctamente. de lo contrario, devuelve -1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la actualización no se ha actualizado correctamente, el autor de la llamada debe liberar la memoria.
+Si la actualización no se realiza correctamente, el autor de la llamada debe liberar la memoria.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

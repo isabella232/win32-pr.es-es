@@ -1,19 +1,19 @@
 ---
-description: El \_ mensaje line GROUPSTATUS se envía cuando cambia el estado de un grupo ACD en un controlador de agente para el que la aplicación tiene actualmente una línea abierta. Este mensaje se genera mediante la función lineProxyMessage.
+description: El mensaje LINE GROUPSTATUS se envía cuando cambia el estado de un grupo de ACD en un controlador de agente para el que la aplicación tiene actualmente \_ una línea abierta. Este mensaje se genera mediante la función lineProxyMessage.
 ms.assetid: 1f3210fe-a7c8-4cfa-8e36-3a88e93d68bb
-title: Mensaje de LINE_GROUPSTATUS (TAPI. h)
+title: LINE_GROUPSTATUS mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22fec7c4701ee7140c02cede1901ef7998e5b60d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 62c70ba4badd27b4d42774549b4778bd77dda13f0ae7245ee6852c2b3afab164
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761948"
 ---
-# <a name="line_groupstatus-message"></a>Mensaje de línea \_ GROUPSTATUS
+# <a name="line_groupstatus-message"></a>Mensaje \_ LINE GROUPSTATUS
 
-El mensaje **line \_ GROUPSTATUS** se envía cuando cambia el estado de un grupo ACD en un controlador de agente para el que la aplicación tiene actualmente una línea abierta. Este mensaje se genera mediante la función [**lineProxyMessage**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage) .
+El **mensaje \_ LINE GROUPSTATUS se** envía cuando cambia el estado de un grupo de ACD en un controlador de agente para el que la aplicación tiene actualmente una línea abierta. Este mensaje se genera mediante la [**función lineProxyMessage.**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage)
 
 
 ```C++
@@ -29,7 +29,7 @@ El mensaje **line \_ GROUPSTATUS** se envía cuando cambia el estado de un grupo
 *dwDevice* 
 </dt> <dd>
 
-Identificador de la aplicación para el dispositivo de línea. Esto se relaciona con el controlador del agente.
+Identificador de la aplicación al dispositivo de línea. Esto se relaciona con el controlador del agente.
 
 </dd> <dt>
 
@@ -50,7 +50,7 @@ Reservado. Establecer en cero.
 *dwParam2* 
 </dt> <dd>
 
-Especifica el estado del grupo que ha cambiado. La aplicación puede invocar [**lineGetGroupList**](/windows/desktop/api/Tapi/nf-tapi-linegetgrouplista) para determinar los cambios en los grupos disponibles. El parámetro *dwParam2* es una o varias de las [**\_ constantes LINEGROUPSTATUS**](linegroupstatus--constants.md).
+Especifica el estado del grupo que ha cambiado. La aplicación puede invocar [**lineGetGroupList para**](/windows/desktop/api/Tapi/nf-tapi-linegetgrouplista) determinar los cambios en los grupos disponibles. El *parámetro dwParam2* es una o varias de las [**constantes LINEGROUPSTATUS \_**](linegroupstatus--constants.md).
 
 </dd> <dt>
 
@@ -65,14 +65,14 @@ Reservado. Establecer en cero.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,2<br/>                                                      |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,7 +13,7 @@ ms.locfileid: "118388052"
 ---
 # <a name="module-3-windows-graphics"></a>Módulo 3. Windows Gráficos
 
-[El módulo 1](your-first-windows-program.md) de esta serie mostró cómo crear una ventana en blanco. [El módulo 2](module-2--using-com-in-your-windows-program.md) realizó un pequeño desviado a través del modelo de objetos componentes (COM), que es la base de muchas de las API de Windows modernas. Ahora es el momento de agregar gráficos a la ventana en blanco que creamos en el módulo 1.
+[El módulo 1](your-first-windows-program.md) de esta serie mostró cómo crear una ventana en blanco. [El módulo 2](module-2--using-com-in-your-windows-program.md) realizó un ligero desviado por el modelo de objetos componentes (COM), que es la base de muchas de las API Windows modernas. Ahora es el momento de agregar gráficos a la ventana en blanco que creamos en el módulo 1.
 
 Este módulo comienza con una introducción general de la arquitectura Windows gráficos. A continuación, nos fijamos en Direct2D, una API de gráficos eficaz que se introdujo en Windows 7.
 

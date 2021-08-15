@@ -4,12 +4,12 @@ ms.assetid: df6c69a7-6eb0-4662-a3aa-f3f895b42cbc
 title: Método IsAudioStreamEnabled
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c92df59479e5729c392eb25b6c6c075a52b4835b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a2131376346f2a0311fc5acd8e0051292a12fb0145b44226363c7d891a5ef3c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817480"
 ---
 # <a name="isaudiostreamenabled-method"></a>Método IsAudioStreamEnabled
 
@@ -28,10 +28,10 @@ El `IsAudioStreamEnabled` método recupera un valor que indica si la secuencia d
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Especifica la secuencia de audio como un valor entero comprendido entre 0 y 7.
+Especifica la secuencia de audio como un valor entero de 0 a 7.
 
 </dd> </dl>
 
@@ -39,9 +39,9 @@ Especifica la secuencia de audio como un valor entero comprendido entre 0 y 7.
 
 Devuelve un valor booleano que indica si la secuencia de audio especificada está disponible para el título actual. True significa que está disponible.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Aunque un disco puede contener hasta ocho flujos de audio independientes, cada flujo no está necesariamente disponible para cada título. Por ejemplo, un título de película principal podría tener tres flujos de audio para inglés, español y japonés, pero el título "próxima atracciones" podría tener solo una secuencia de audio en inglés. Compruebe siempre que haya un flujo disponible para un título antes de establecer la propiedad [**CurrentAudioStream**](currentaudiostream-property.md) .
+Aunque un disco puede contener hasta ocho secuencias de audio independientes, cada secuencia no está necesariamente disponible para cada título. Por ejemplo, un título de película principal podría tener tres secuencias de audio para inglés, español y japonés, pero el título "Próximas carreras" podría tener solo una secuencia de audio en inglés. Compruebe siempre que una secuencia está disponible para un título antes de establecer la [**propiedad CurrentAudioStream.**](currentaudiostream-property.md)
 
  
 

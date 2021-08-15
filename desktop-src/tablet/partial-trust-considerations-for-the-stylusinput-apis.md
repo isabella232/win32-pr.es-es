@@ -13,7 +13,7 @@ ms.locfileid: "118449355"
 ---
 # <a name="partial-trust-considerations-for-the-stylusinput-api"></a>Consideraciones de confianza parcial para StylusInput API
 
-[**RealTimeStylus**](realtimestylus-class.md) que toma el parámetro *handle* requiere los permisos [UIPermissionWindow.AllWindows](/dotnet/api/system.security.permissions.uipermissionwindow?view=dotnet-plat-ext-3.1&preserve-view=true) y [SecurityPermissionFlag.UnmanagedCode,](/previous-versions/windows/) además de los permisos requeridos por el constructor que toma el *parámetro attachedControl.*
+[**RealTimeStylus**](realtimestylus-class.md) que toma el parámetro *handle* requiere los permisos [UIPermissionWindow.AllWindows](/dotnet/api/system.security.permissions.uipermissionwindow?view=dotnet-plat-ext-3.1&preserve-view=true) y [SecurityPermissionFlag.UnmanagedCode,](/previous-versions/windows/) además de los permisos requeridos por el constructor que toma el parámetro *attachedControl.*
 
 Para obtener más información sobre los problemas de seguridad y confianza, vea [Seguridad y confianza.](security-and-trust.md)
 

@@ -1,23 +1,23 @@
 ---
 description: La interfaz IX509CertificateRequestCmc expone las siguientes propiedades.
 ms.assetid: 3D084301-273C-490F-9946-BA8F6DE7ABFA
-title: Propiedades de IX509CertificateRequestCmc
+title: Propiedades ix509CertificateRequestCmc
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cae99af5078a4cf3cd3365d1cdd614f4c54f997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2801c1f13f18f53025b2b72b2aa8c052ed610562d457418907e6d499cd620462
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117776625"
 ---
-# <a name="ix509certificaterequestcmc-properties"></a>Propiedades de IX509CertificateRequestCmc
+# <a name="ix509certificaterequestcmc-properties"></a>Propiedades ix509CertificateRequestCmc
 
-La interfaz [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) expone las siguientes propiedades.
+La [**interfaz IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Propiedad ArchivePrivateKey**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_archiveprivatekey)
+-   [**ArchivePrivateKey, propiedad**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_archiveprivatekey)
 -   [**Propiedad CriticalExtensions**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_criticalextensions)
 -   [**Propiedad CryptAttributes**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_cryptattributes)
 -   [**Propiedad EncryptedKeyHash**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptedkeyhash)
@@ -25,7 +25,7 @@ La interfaz [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-
 -   [**Propiedad EncryptionStrength**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptionstrength)
 -   [**Propiedad KeyArchivalCertificate**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_keyarchivalcertificate)
 -   [**Propiedad NameValuePairs**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_namevaluepairs)
--   [**Propiedad NullSigned**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_nullsigned)
+-   [**NullSigned (propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_nullsigned)
 -   [**Propiedad SenderNonce**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_sendernonce)
 -   [**Propiedad SignatureInformation**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_signatureinformation)
 -   [**Propiedad SignerCertificates**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_signercertificates)

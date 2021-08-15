@@ -1,9 +1,9 @@
 ---
-title: RAS_PPP_PROJECTION_RESULT estructura (rassapi. h)
-description: La \_ estructura del \_ resultado de la proyección PPP \_ de Ras se utiliza para notificar los resultados de las distintas operaciones de proyección de PPP para un puerto.
+title: RAS_PPP_PROJECTION_RESULT estructura (Rassapi.h)
+description: La estructura RAS PPP PROJECTION RESULT se usa para notificar los resultados de las distintas operaciones de \_ \_ \_ proyección PPP para un puerto.
 ms.assetid: 061b1b51-4b6f-4127-8ee5-8a1913a2aa99
 keywords:
-- RAS_PPP_PROJECTION_RESULT de la estructura RAS
+- RAS_PPP_PROJECTION_RESULT ras de estructura
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a9aa3aef828249b5c72f9e7cdd1bd3b69c96832
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ce1bb82b34490f8a1f3734225cbde1e761c575a2019a30db7790bfc7fa3c169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789589"
 ---
-# <a name="ras_ppp_projection_result-structure"></a>Estructura del resultado de la \_ proyección PPP de Ras \_ \_
+# <a name="ras_ppp_projection_result-structure"></a>Estructura DE \_ \_ RESULTADOS DE PROYECCIÓN DE RAS PPP \_
 
-\[La estructura del resultado de la **\_ \_ proyección \_ PPP de Ras** no es compatible con Windows Vista.\]
+\[La **estructura RAS PPP PROJECTION \_ \_ \_ RESULT** no se admite a Windows Vista.\]
 
-La estructura del resultado de la **\_ \_ proyección \_ PPP de Ras** se utiliza para notificar los resultados de las distintas operaciones de proyección de PPP para un puerto.
+La **estructura RAS PPP PROJECTION \_ \_ \_ RESULT** se usa para notificar los resultados de las distintas operaciones de proyección PPP para un puerto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,72 +48,72 @@ typedef struct _RAS_PPP_PROJECTION_RESULT {
 **nbf**
 </dt> <dd>
 
-Una estructura de [**\_ \_ \_ resultado PPP NBFCP de Ras**](ras-ppp-nbfcp-result-str.md) que informa del resultado de una operación de proyección de PPP NetBEUI Framer (NBF).
+Estructura [**RAS \_ PPP \_ NBFCP \_ RESULT**](ras-ppp-nbfcp-result-str.md) que informa del resultado de una operación de proyección ppp NetBEUI Framer (NBF).
 
 </dd> <dt>
 
-**intelectual**
+**Ip**
 </dt> <dd>
 
-Una estructura de [**\_ \_ \_ resultados de PPP de PPP de Ras**](ras-ppp-ipcp-result-str.md) que informa del resultado de una operación de proyección del Protocolo de Internet (IP) de PPP.
+Estructura [**RAS \_ PPP \_ IPCP \_ RESULT**](ras-ppp-ipcp-result-str.md) que informa del resultado de una operación de proyección del Protocolo de Internet (IP) de PPP.
 
 </dd> <dt>
 
-**requerir**
+**Ipx**
 </dt> <dd>
 
-Una estructura de [**\_ \_ \_ resultado de IPXCP PPP de Ras**](ras-ppp-ipxcp-result-str.md) que informa del resultado de una operación de proyección de intercambio de paquetes en la red (IPX) de PPP.
+Estructura [**DE \_ \_ RESULTADOs DE IPXCP \_ de PPP ras**](ras-ppp-ipxcp-result-str.md) que informa del resultado de una operación de proyección de paquetes de trabajo Exchange de trabajo de PPP (IPX).
 
 </dd> <dt>
 
 **at**
 </dt> <dd>
 
-Una estructura de [**\_ \_ \_ resultado PPP ATCP de Ras**](ras-ppp-atcp-result-str.md) .
+Estructura [**RAS \_ PPP \_ ATCP \_ RESULT.**](ras-ppp-atcp-result-str.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura notifica los resultados de proyección para los protocolos NetBEUI, TCP/IP y IPX. Cada estructura PPP tiene un miembro **dwError** que indica si la otra información de la estructura es válida. Si **dwError** NO es un \_ error, la otra información es válida. Si **dwError** es uno de los códigos de error de Winerror. h o Raserror. h, la otra información no es válida.
+Esta estructura informa de los resultados de proyección para los protocolos NetBEUI, TCP/IP e IPX. Cada estructura PPP tiene un **miembro dwError** que indica si la otra información de la estructura es válida. Si **dwError** es NO \_ ERROR, la otra información es válida. Si **dwError** es uno de los códigos de error de Winerror.h o Raserror.h, la otra información no es válida.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Introducción al servicio de acceso remoto (RAS)](about-remote-access-service.md)
+[Introducción al Servicio de acceso remoto (RAS)](about-remote-access-service.md)
 </dt> <dt>
 
 [Estructuras de administración del servidor RAS](ras-server-administration-structures.md)
 </dt> <dt>
 
-[**\_Puerto ras \_ 1**](ras-port-1-str.md)
+[**PUERTO \_ \_ RAS 1**](ras-port-1-str.md)
 </dt> <dt>
 
-[**\_resultado de PPP \_ ATCP \_ de Ras**](ras-ppp-atcp-result-str.md)
+[**RESULTADO \_ DE \_ ATCP de RAS PPP \_**](ras-ppp-atcp-result-str.md)
 </dt> <dt>
 
-[**resultado de PPP de PPP de RAS \_ \_ \_**](ras-ppp-ipcp-result-str.md)
+[**RESULTADO \_ DE \_ IPCP DE RAS PPP \_**](ras-ppp-ipcp-result-str.md)
 </dt> <dt>
 
-[**\_resultado de \_ IPXCP de PPP de Ras \_**](ras-ppp-ipxcp-result-str.md)
+[**RAS \_ PPP \_ IPXCP \_ RESULT**](ras-ppp-ipxcp-result-str.md)
 </dt> <dt>
 
-[**\_resultado de \_ NBFCP de PPP de Ras \_**](ras-ppp-nbfcp-result-str.md)
+[**RESULTADO \_ DE RAS PPP \_ \_ NBFCP**](ras-ppp-nbfcp-result-str.md)
 </dt> <dt>
 
 [**RasAdminPortGetInfo**](rasadminportgetinfo.md)

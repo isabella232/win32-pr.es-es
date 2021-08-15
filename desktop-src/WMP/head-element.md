@@ -3,7 +3,7 @@ title: elemento head
 description: El elemento principal contiene metadatos que se aplican a toda la lista de reproducción.
 ms.assetid: 9554c84a-34af-4492-964a-4b262cd7c4a4
 keywords:
-- Elemento head Reproductor de Windows Media
+- elemento head Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:

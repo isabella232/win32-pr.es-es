@@ -3,7 +3,7 @@ title: EFFECTS.nextEffect
 description: El método nextEffect muestra el primer valor preestablecido de la siguiente visualización, omitiendo los valores preestablecidos que intervienen.
 ms.assetid: dedd8e8b-2337-46f5-91a8-43ef54c86012
 keywords:
-- EFFECTS.nextEffect Reproductor de Windows Media
+- Effects.nextEffect Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -54,7 +54,7 @@ Este método muestra el primer valor preestablecido de la siguiente visualizaci�
 
 <dl> <dt>
 
-[**EFFECTS, elemento**](effects-element.md)
+[**ELEMENTO EFFECTS**](effects-element.md)
 </dt> <dt>
 
 [**EFFECTS.allowAll**](effects-allowall.md)

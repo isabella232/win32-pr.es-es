@@ -1,27 +1,27 @@
-- name: Marco de la cinta de opciones de Windows
+- name: Windows Marco de la cinta de opciones
   href: '-uiplat-windowsribbon-entry.md'
   items:
     - name: Información general sobre el marco de opciones
       href: windowsribbon-overviews-entry.md
       items:
-        - name: Presentación del marco de la cinta de opciones de Windows
+        - name: Presentación del marco de Windows cinta de opciones
           href: windowsribbon-introduction.md
-        - name: Declarar comandos y controles con marcado de cinta
+        - name: Declarar comandos y controles con marcado de cinta de opciones
           href: windowsribbon-schema.md
-    - name: Guías para desarrolladores de Ribbon Framework
+    - name: Guías para desarrolladores del marco de opciones
       href: windowsribbon-guides-entry.md
       items:
-        - name: Creación de una aplicación de cinta de opciones
+        - name: Crear una aplicación de cinta de opciones
           href: windowsribbon-stepbystep.md
-        - name: Migración al marco de la cinta de opciones de Windows
+        - name: Migración al marco de Windows cinta de opciones
           href: ribbon-migration.md
-        - name: Descripción de los comandos y controles
+        - name: Descripción de comandos y controles
           href: windowsribbon-commandscontrols.md
         - name: Escuchar eventos de la cinta de opciones
           href: listening-for-ribbon-events.md
         - name: Especificar recursos de imagen de cinta de opciones
           href: windowsribbon-imageformats.md
-        - name: Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado
+        - name: Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado
           href: windowsribbon-templates.md
         - name: Trabajar con galerías
           href: ribbon-controls-galleries.md
@@ -33,7 +33,7 @@
           href: ribbon-color.md
         - name: Mostrar la cinta de opciones
           href: ribbon-visibility.md
-        - name: Conservación del estado de la cinta de opciones
+        - name: Estado de la cinta de opciones persistente
           href: ribbon-statepersistence.md
         - name: Compilación del marcado de la cinta de opciones
           href: windowsribbon-intentcl.md
@@ -60,7 +60,7 @@
           href: windowsribbon-controls-dropdowngallery.md
         - name: Control de fuentes
           href: windowsribbon-controls-fontcontrol.md
-        - name: Grupo
+        - name: Group (Grupo)
           href: windowsribbon-controls-group.md
         - name: Botón Ayuda
           href: windowsribbon-controls-helpbutton.md
@@ -161,7 +161,7 @@
                       href: windowsribbon-element-ribbon-quickaccesstoolbar.md
                     - name: SizeDefinitions
                       href: windowsribbon-element-ribbon-sizedefinitions.md
-                    - name: Tabulaciones
+                    - name: Pestañas
                       href: windowsribbon-element-ribbon-tabs.md
             - name: Controles
               href: windowsribbon-reference-elements-control.md
@@ -194,7 +194,7 @@
                       href: windowsribbon-element-dropdowngallery-menulayout.md
                 - name: FontControl
                   href: windowsribbon-element-fontcontrol.md
-                - name: Grupo
+                - name: Group (Grupo)
                   href: windowsribbon-element-group.md
                 - name: HelpButton
                   href: windowsribbon-element-helpbutton.md
@@ -265,7 +265,7 @@
                   href: windowsribbon-element-flowmenulayout.md
                 - name: GroupSizeDefinition
                   href: windowsribbon-element-groupsizedefinition.md
-                - name: Row
+                - name: Fila
                   href: windowsribbon-element-row.md
                 - name: Escala
                   href: windowsribbon-element-scale.md
@@ -336,7 +336,7 @@
             - name: IUICollection
               href: /windows/desktop/api/Uiribbon/nn-uiribbon-iuicollection
               items:
-                - name: Sumar
+                - name: Agregar
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuicollection-add
                 - name: Borrar
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuicollection-clear
@@ -587,9 +587,9 @@
     - name: Ejemplos del marco de opciones
       href: windowsribbon-samples-entry.md
       items:
-        - name: Ejemplo simpleribbon
+        - name: Ejemplo simpleRibbon
           href: windowsribbon-sample1.md
-        - name: Ejemplo ContextPopup
+        - name: Ejemplo contextPopup
           href: windowsribbon-contextpopupsample.md
         - name: Ejemplo de DropDownColorPicker
           href: windowsribbon-dropdowncolorpickersample.md

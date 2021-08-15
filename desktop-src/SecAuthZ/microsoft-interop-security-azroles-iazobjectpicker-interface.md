@@ -1,7 +1,7 @@
 ---
 description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad de IAzObjectPicker.
 ms.assetid: 8b3db64c-0772-4810-96bf-6c9334c9bc4c
-title: Interfaz Microsoft. Interop. Security. AzRoles. IAzObjectPicker
+title: Interfaz Microsoft.Interop.Security.AzRoles.IAzObjectPicker
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,33 +19,33 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 0581cda6e52ad25ec0eb6d5315ea7d26c54a5ddb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7151a581dc16bae375a027397dd5736df97497f2fb8553f1d5e0045279f93583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117781063"
 ---
-# <a name="microsoftinteropsecurityazrolesiazobjectpicker-interface"></a>Interfaz Microsoft. Interop. Security. AzRoles. IAzObjectPicker
+# <a name="microsoftinteropsecurityazrolesiazobjectpicker-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzObjectPicker
 
-Los métodos y propiedades de contenedor de interoperabilidad **Microsoft. Interop. Security. Azroles. IAzObjectPicker** se documentan en la versión com del método o propiedad. Un vínculo a la documentación COM de correlación sigue cada nombre de miembro.
+Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzObjectPicker** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzObjectPicker** tiene estos tipos de miembros:
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzObjectPicker** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzObjectPicker** tiene estos métodos.
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzObjectPicker** tiene estos métodos.
 
 
 
 | Método                                                               | Descripción                                                                               |
 |:---------------------------------------------------------------------|:------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzObjectPicker. GetPrincipals** | [**IAzObjectPicker::GetPrincipals**](/windows/desktop/api/Azroles/nf-azroles-iazobjectpicker-getprincipals)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzObjectPicker.GetPrincipals** | [**IAzObjectPicker::GetPrincipals**](/windows/desktop/api/Azroles/nf-azroles-iazobjectpicker-getprincipals)<br/> |
 
 
 
@@ -53,7 +53,7 @@ La interfaz **Microsoft. Interop. Security. AzRoles. IAzObjectPicker** tiene est
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzObjectPicker** tiene estas propiedades.
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzObjectPicker** tiene estas propiedades.
 
 
 
@@ -69,7 +69,7 @@ La interfaz **Microsoft. Interop. Security. AzRoles. IAzObjectPicker** tiene est
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

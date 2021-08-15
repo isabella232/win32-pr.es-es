@@ -1,10 +1,10 @@
 ---
-title: MPSTATUS_INFO estructura (MpClient. h)
-description: Información de estado para el administrador de protección contra malware de.
+title: MPSTATUS_INFO estructura (MpClient.h)
+description: Información de estado del administrador de protección contra malware.
 ms.assetid: 614F14EC-64CC-4E3F-8A89-42AA1E0DC95D
 keywords:
-- MPSTATUS_INFO estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPSTATUS_INFO características de entorno heredado de Windows
+- MPSTATUS_INFO estructura heredada de Windows environment
+- PMPSTATUS_INFO puntero de estructura heredado de Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efe31981f819d85d13457553beb1ce3c869b98bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb93bd15fe05955c9e8d87828d4b94b08e3d577659c629b52b3f908cb045ba3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883306"
 ---
-# <a name="mpstatus_info-structure"></a>Estructura de información de MPSTATUS \_
+# <a name="mpstatus_info-structure"></a>Estructura DE INFORMACIÓN DE MPSTATUS \_
 
-Información de estado para el administrador de protección contra malware de.
+Información de estado del administrador de protección contra malware.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,73 +54,73 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Estado general del producto. Se trata de una combinación de marcas de bits de la [**\_ marca MPSTATUS**](mpstatus-flag.md).
+Estado general del producto. Se trata de una combinación de marcas de bits de [**MPSTATUS \_ FLAG**](mpstatus-flag.md).
 
 </dd> <dt>
 
 **LastQuickScan**
 </dt> <dd>
 
-Tipo: **[ **\_ resultado de MPSCAN**](mpscan-result.md)**
+Tipo: **[ **MPSCAN \_ RESULT**](mpscan-result.md)**
 
 </dd> <dd>
 
-Resultados del último examen por parte del administrador de protección contra malware de. Vea [**el \_ resultado de MPSCAN**](mpscan-result.md).
+Resultados del último examen por parte del administrador de protección contra malware. Vea [**MPSCAN \_ RESULT**](mpscan-result.md).
 
 </dd> <dt>
 
 **LastFullScan**
 </dt> <dd>
 
-Tipo: **[ **\_ resultado de MPSCAN**](mpscan-result.md)**
+Tipo: **[ **MPSCAN \_ RESULT**](mpscan-result.md)**
 
 </dd> <dd>
 
-Resultados del último examen completo por parte del administrador de protección contra malware. Vea [**el \_ resultado de MPSCAN**](mpscan-result.md).
+Resultados del último examen completo por parte del administrador de protección contra malware. Vea [**MPSCAN \_ RESULT**](mpscan-result.md).
 
 </dd> <dt>
 
 **ThreatStats**
 </dt> <dd>
 
-Tipo: **[ **\_ estadísticas de MPTHREAT**](mpthreat-stats.md)**
+Tipo: **[ **MPTHREAT \_ STATS**](mpthreat-stats.md)**
 
 </dd> <dd>
 
-Estadísticas de amenazas activas. Consulte [**\_ estadísticas de MPTHREAT**](mpthreat-stats.md).
+Estadísticas de amenazas activas. Vea [**MPTHREAT \_ STATS**](mpthreat-stats.md).
 
 </dd> <dt>
 
 **ThreatState**
 </dt> <dd>
 
-Type: **[**MPTHREAT \_ stats \_ Data**](mpthreat-stats-data.md) \[ MP \_ Threat \_ STAT \_ Max \_ Value + 1\]**
+Tipo: **[**MPTHREAT \_ STATS \_ DATA**](mpthreat-stats-data.md) \[ MP THREAT STAT MAX \_ \_ \_ \_ VALUE+1\]**
 
 </dd> <dd>
 
-Datos adicionales de estadísticas de amenazas, como el número de amenazas. Consulte [**\_ \_ datos de estadísticas de MPTHREAT**](mpthreat-stats-data.md).
+Datos de estadísticas de amenazas adicionales, como el número de amenazas. Vea [**DATOS DE ESTADÍSTICAS DE MPTHREAT \_ \_**](mpthreat-stats-data.md).
 
 </dd> <dt>
 
 **Componente**
 </dt> <dd>
 
-Tipo: **[**MPCOMPONENT \_ status**](mpcomponent-status.md) \[ MPCOMPONENT \_ MAXVALUE + 1\]**
+Tipo: **[**MPCOMPONENT \_ STATUS**](mpcomponent-status.md) \[ MPCOMPONENT \_ MAXVALUE+1\]**
 
 </dd> <dd>
 
-Una matriz de Estados para varios componentes. Use un valor de la enumeración [**MPCOMPONENT \_ ID**](mpcomponent-id.md) como un índice en la matriz.
+Matriz de estados para varios componentes. Use un valor de la [**enumeración MPCOMPONENT \_ ID**](mpcomponent-id.md) como índice en la matriz.
 
 </dd> <dt>
 
 **ProductExpirationTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ENTERO \_ ULARGE**
 
 </dd> <dd>
 
-Marca de tiempo de expiración del producto en UNC. Esto solo es válido si se ha establecido el estado de expiración.
+Marca de tiempo de expiración del producto en UNC. Esto solo es válido si se establece el estado de expiración.
 
 </dd> </dl>
 
@@ -128,34 +128,34 @@ Marca de tiempo de expiración del producto en UNC. Esto solo es válido si se h
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**identificador de MPCOMPONENT \_**](mpcomponent-id.md)
+[**Id. de \_ MPCOMPONENT**](mpcomponent-id.md)
 </dt> <dt>
 
-[**Estado de MPCOMPONENT \_**](mpcomponent-status.md)
+[**ESTADO \_ DE MPCOMPONENT**](mpcomponent-status.md)
 </dt> <dt>
 
-[**resultado de MPSCAN \_**](mpscan-result.md)
+[**MPSCAN \_ RESULT**](mpscan-result.md)
 </dt> <dt>
 
-[**\_marca MPSTATUS**](mpstatus-flag.md)
+[**MARCA \_ MPSTATUS**](mpstatus-flag.md)
 </dt> <dt>
 
-[**estadísticas de MPTHREAT \_**](mpthreat-stats.md)
+[**ESTADÍSTICAS DE MPTHREAT \_**](mpthreat-stats.md)
 </dt> <dt>
 
-[**datos de estadísticas de MPTHREAT \_ \_**](mpthreat-stats-data.md)
+[**DATOS DE \_ ESTADÍSTICAS DE MPTHREAT \_**](mpthreat-stats-data.md)
 </dt> </dl>
 
  

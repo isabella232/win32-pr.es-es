@@ -1,7 +1,7 @@
 ---
 description: Simula una serie de caracteres con tipo.
 ms.assetid: 5D4C9F27-84AA-4131-A9A3-2C72DB2E8909
-title: Método TypeText de la clase Msvm_Keyboard
+title: Método TypeText de la Msvm_Keyboard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 37e8227a545975a6193be63a8bd363e10e9805f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d56bc65bba5728c95521a53a51ad77f34b710d3cddcb987f5209d28619870f34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118391634"
 ---
-# <a name="typetext-method-of-the-msvm_keyboard-class"></a>Método TypeText de la \_ clase de teclado MSVM
+# <a name="typetext-method-of-the-msvm_keyboard-class"></a>Método TypeText de la clase Msvm \_ Keyboard
 
-Simula una serie de caracteres con tipo. Esto es equivalente a llamar a [**PressKey**](presskey-msvm-keyboard.md) seguido de [**ReleaseKey**](releasekey-msvm-keyboard.md) para cada carácter de la cadena.
+Simula una serie de caracteres con tipo. Esto equivale a llamar [**a PressKey**](presskey-msvm-keyboard.md) seguido de [**ReleaseKey**](releasekey-msvm-keyboard.md) para cada carácter de la cadena.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,19 +39,19 @@ uint32 TypeText(
 
 <dl> <dt>
 
-*asciiText* \[ de\]
+*asciiText* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-La serie de caracteres ASCII o Unicode que se van a escribir. La longitud máxima de esta cadena depende del tipo de caracteres de la cadena.
+Serie de caracteres ASCII o Unicode que se escriben. La longitud máxima de esta cadena depende del tipo de caracteres de la cadena.
 
 
 
-| Tipo de cadena        | Número máximo de caracteres                                                               |
+| Tipo de cadena        | Caracteres máximos                                                               |
 |--------------------|----------------------------------------------------------------------------------|
 | ASCII<br/>   | 512<br/>                                                                   |
-| Unicode<br/> | de 256 a 512, dependiendo del número de pares suplentes de la cadena.<br/> |
+| Unicode<br/> | De 256 a 512, dependiendo del número de pares suplentes de la cadena.<br/> |
 
 
 
@@ -61,9 +61,9 @@ La serie de caracteres ASCII o Unicode que se van a escribir. La longitud máxim
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Un valor devuelto de cero indica que se ha realizado correctamente. Un valor devuelto de uno indica un error causado por caracteres no traducibles en la cadena de entrada. Los demás valores distintos de cero indican un error al modificar el estado de la clave.
+Un valor devuelto de cero indica que el resultado es correcto. Un valor devuelto de uno indica un error causado por caracteres no transaccionables en la cadena de entrada. Todos los demás valores distintos de cero indican un error al modificar el estado de la clave.
 
 <dl> <dt>
 
@@ -82,16 +82,16 @@ Un valor devuelto de cero indica que se ha realizado correctamente. Un valor dev
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -100,19 +100,19 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase de [**\_ teclado MSVM**](msvm-keyboard.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase Msvm \_ Keyboard**](msvm-keyboard.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se simula el texto escrito. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+En el siguiente ejemplo de C# se simula escribir texto. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -191,7 +191,7 @@ namespace HyperVSamples
 
 
 
-En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se simula el texto escrito.
+En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se simula escribir texto.
 
 
 ```VB
@@ -326,21 +326,21 @@ End Function
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Teclado MSVM**](msvm-keyboard.md)
+[**Teclado de \_ Msvm**](msvm-keyboard.md)
 </dt> </dl>
 
  

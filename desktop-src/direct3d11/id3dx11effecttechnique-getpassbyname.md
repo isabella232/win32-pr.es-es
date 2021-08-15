@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectTechnique GetPassByName (D3dx11effect. h)
-description: Obtiene un paso por nombre.
+title: Método ID3DX11EffectTechnique GetPassByName (D3dx11effect.h)
+description: Obtenga un pase por nombre.
 ms.assetid: 07c7502e-2af9-4898-8cd4-106d6814fb85
 keywords:
 - Método GetPassByName Direct3D 11
-- Método GetPassByName Direct3D 11, interfaz ID3DX11EffectTechnique
-- Interfaz ID3DX11EffectTechnique Direct3D 11, método GetPassByName
+- Método GetPassByName Direct3D 11 , interfaz ID3DX11EffectTechnique
+- Interfaz ID3DX11EffectTechnique Direct3D 11 , método GetPassByName
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e84bbe9b954efff12e458ee6172665118a7b8ede
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dfad489fe6c4eda8ea417a9f272bcc0a7d4035eb04bc675cf599e4f5381234db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118532367"
 ---
-# <a name="id3dx11effecttechniquegetpassbyname-method"></a>ID3DX11EffectTechnique:: GetPassByName (método)
+# <a name="id3dx11effecttechniquegetpassbyname-method"></a>Método ID3DX11EffectTechnique::GetPassByName
 
-Obtiene un paso por nombre.
+Obtenga un pase por nombre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,14 +56,14 @@ Nombre del paso.
 
 Tipo: **[ **ID3DX11EffectPass**](id3dx11effectpass.md)\***
 
-Un puntero a un [**ID3DX11EffectPass**](id3dx11effectpass.md).
+Puntero a [**id3DX11EffectPass.**](id3dx11effectpass.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una técnica contiene uno o más pasos; obtener un paso mediante un nombre o un índice.
+Una técnica contiene uno o varios pases; obtener un paso mediante un nombre o un índice.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,12 +73,12 @@ Una técnica contiene uno o más pasos; obtener un paso mediante un nombre o un 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

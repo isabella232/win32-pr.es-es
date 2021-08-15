@@ -1,7 +1,7 @@
 ---
-description: Identificador del contexto de dispositivo de la ventana.
+description: Controlar el contexto del dispositivo de la ventana.
 ms.assetid: a9fa4340-f20f-44a4-b553-052fe5c3e0e6
-title: 'Miembro CBaseWindow:: m_hdc (Winutil. h)'
+title: CBaseWindow::m_hdc miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1e6bb2661af96ab4c32f97d56856c5420dab4c0a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0cd5f994f43a1b96be2ce19b0e7d38b0416286e4d39b4f89a425e5468737de47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822500"
 ---
-# <a name="cbasewindowm_hdc-member"></a>Miembro HDC de CBaseWindow:: m \_
+# <a name="cbasewindowm_hdc-member"></a>Miembro hdc CBaseWindow::m \_
 
-Identificador del contexto de dispositivo de la ventana.
+Controlar el contexto del dispositivo de la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ HDC m_hdc;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

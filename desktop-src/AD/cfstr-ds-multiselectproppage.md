@@ -1,6 +1,6 @@
 ---
 title: CFSTR_DS_MULTISELECTPROPPAGE
-description: El \_ formato del \_ portapapeles de CFSTR DS MULTISELECTPROPPAGE proporciona un identificador de memoria global (hglobal) que contiene una cadena Unicode terminada en NULL.
+description: El formato del \_ Portapapeles CFSTR DS MULTISELECTPROPPAGE proporciona un identificador de memoria \_ global (HGLOBAL) que contiene una cadena Unicode terminada en NULL.
 ms.assetid: cff8d696-b947-4cc2-a3b2-5b69f388957b
 ms.tgt_platform: multiple
 topic_type:
@@ -11,12 +11,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50c56927b615616bf9fab822cd96d5170237967e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3bd62a35d3feb105b08000ec131616ee7c811c86e90bd8cc27158a14c1f72e4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118023683"
 ---
 # <a name="cfstr_ds_multiselectproppage"></a>CFSTR \_ DS \_ MULTISELECTPROPPAGE
 
@@ -30,10 +30,10 @@ ms.locfileid: "103996232"
 
 
 
-El formato del portapapeles de **CFSTR \_ DS \_ MULTISELECTPROPPAGE** proporciona un identificador de memoria global (**HGLOBAL**) que contiene una cadena Unicode terminada en null que contiene un nombre único que se utiliza para crear el objeto de notificación para una extensión de la hoja de propiedades de selección múltiple.
+El formato del Portapapeles **\_ \_ MULTISELECTPROPPAGE de CFSTR DS** proporciona un identificador de memoria global **(HGLOBAL)** que contiene una cadena Unicode terminada en NULL que contiene un nombre único que se usa para crear el objeto de notificación para una extensión de hoja de propiedades de selección múltiple.
 
 > [!Note]  
-> Este valor de formato del portapapeles no está definido en un archivo de encabezado publicado. Para usar este valor de formato del portapapeles, debe definirlo en el formato exacto que se muestra.
+> Este valor de formato del Portapapeles no está definido en un archivo de encabezado publicado. Para usar este valor de formato del Portapapeles, debe definirlo usted mismo en el formato exacto que se muestra.
 
  
 
@@ -44,18 +44,18 @@ El formato del portapapeles de **CFSTR \_ DS \_ MULTISELECTPROPPAGE** proporcion
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Implementación de la página de propiedades de objeto COM](implementing-the-property-page-com-object.md)
+[Implementar el objeto COM de la página de propiedades](implementing-the-property-page-com-object.md)
 </dt> </dl>
 
  

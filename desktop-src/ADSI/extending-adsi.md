@@ -14,7 +14,7 @@ ms.locfileid: "118428458"
 ---
 # <a name="extending-adsi"></a>Extensión de ADSI
 
-Con el modelo de extensión ADSI, puede asociar una clase de directorio a su propio objeto COM. Desde la perspectiva de un programador adsi o un escritor de scripts, la extensión se convierte en una parte integral de ADSI. Por ejemplo, cuando un nuevo empleado se une a Fabrikam, el administrador de Windows NT creará un objeto de usuario en el directorio y el administrador de nóminas deberá configurar algunas entradas en los sistemas de recursos humanos para este usuario. Con una extensión ADSI, este proceso se puede simplificar en un solo script.
+Con el modelo de extensión ADSI, puede asociar una clase de directorio a su propio objeto COM. Desde la perspectiva de un programador adsi o escritor de scripts, la extensión se convierte en una parte integral de ADSI. Por ejemplo, cuando un nuevo empleado se une a Fabrikam, el administrador de Windows NT creará un objeto de usuario en el directorio y el administrador de nóminas deberá configurar algunas entradas en los sistemas de recursos humanos para este usuario. Con una extensión ADSI, este proceso se puede simplificar en un solo script.
 
 
 ```VB

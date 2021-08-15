@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: c5daab49-4ed5-439b-b1b7-a87f70c379f0
-ms.openlocfilehash: c4195acedbd696679a2deea2f4d6e268717566d1
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a8aba636910735e9baa0bd3ebbcf846ecf69a2174b56372a387b541c92e59732
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860397"
 ---
-# <a name="fmevent_toolbarload-message"></a>MENSAJE DE DESCARGA \_ DE LA BARRA DE HERRAMIENTAS DE FMEVENT
+# <a name="fmevent_toolbarload-message"></a>FMEVENT \_ TOOLBARLOAD message
 
 Se envía a un archivo DLL de extensión cuando el Administrador de archivos carga su barra de herramientas. Este mensaje permite que un archivo DLL de extensión agregue un botón a la barra de herramientas del Administrador de archivos.
 
@@ -40,13 +40,13 @@ Dirección de una estructura [**\_ TOOLBARLOAD de FMS.**](fms-toolbarload.md) Si
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un archivo DLL de extensión debe devolver **TRUE** para agregar el botón a la barra de herramientas. Si el archivo DLL devuelve **FALSE,** el Administrador de archivos no agrega el botón.
+Un archivo DLL de extensión debe devolver **TRUE** para agregar el botón a la barra de herramientas. Si el archivo DLL devuelve **FALSE**, el Administrador de archivos no agrega el botón .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |

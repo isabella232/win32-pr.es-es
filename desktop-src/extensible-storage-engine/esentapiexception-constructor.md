@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentApiException'
-title: Constructor de EsentApiException
+description: 'Más información sobre: Constructor de EsentApiException'
+title: Constructor EsentApiException
 TOCTitle: 'EsentApiException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentApiException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentapiexception.esentapiexception(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 442facd9bec7c56e90738c95e1feb7fbc8f34b3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ceb80ee7778389e9dc79b732fba73d8c986483f160822492b05a6a26630a9fa5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117716113"
 ---
-# <a name="esentapiexception-constructor"></a>Constructor de EsentApiException
+# <a name="esentapiexception-constructor"></a>Constructor EsentApiException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -39,12 +39,12 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn274003(v=exchg.10).md">EsentApiException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa una nueva instancia de la clase EsentApiException. Este constructor se utiliza para deserializar una excepción serializada.</td>
+<td><a href="dn274003(v=exchg.10).md">EsentApiException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa una nueva instancia de la clase EsentApiException. Este constructor se usa para deserializar una excepción serializada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn274002(v=exchg.10).md">EsentApiException (cadena, JET_err)</a></td>
+<td><a href="dn274002(v=exchg.10).md">EsentApiException(String, JET_err)</a></td>
 <td>Inicializa una nueva instancia de la clase EsentApiException.</td>
 </tr>
 </tbody>
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de EsentApiException](./esentapiexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

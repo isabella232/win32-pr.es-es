@@ -1,7 +1,7 @@
 ---
 description: Definición de tipo para la estructura REGFILTERPINS.
 ms.assetid: ac734feb-6adc-4a26-95d4-ba24c12db783
-title: Estructura de AMOVIESETUP_PIN
+title: AMOVIESETUP_PIN estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,22 +12,22 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e8c0c6137bcf0d967b4bfcacddfca17bd8455d06
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e3ad5b551f446d002037d9c3ecb41a492210ff70c876d2bfe1f8b811156f6f7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104080041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118001918"
 ---
-# <a name="amoviesetup_pin-structure"></a>AMOVIESETUP \_ estructura de PIN
+# <a name="amoviesetup_pin-structure"></a>Estructura de PIN de AMOVIESETUP \_
 
-Definición de tipo para la estructura [**REGFILTERPINS**](/windows/desktop/api/strmif/ns-strmif-regfilterpins) .
+Definición de tipo para [**la estructura REGFILTERPINS.**](/windows/desktop/api/strmif/ns-strmif-regfilterpins)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de DirectShow](directshow-structures.md)
+[DirectShow Estructuras](directshow-structures.md)
 </dt> </dl>
 
  

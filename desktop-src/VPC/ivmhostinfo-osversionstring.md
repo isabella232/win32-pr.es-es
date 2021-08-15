@@ -4,8 +4,8 @@ description: Recupera la versión del sistema operativo que se ejecuta en el equ
 ms.assetid: ac3a162a-d3e6-420d-ac26-d77f1c9646a6
 keywords:
 - OSVersionString, propiedad Virtual PC
-- Propiedad OSVersionString De PC virtual, interfaz IVMHostInfo
-- IVMHostInfo interface Virtual PC , propiedad OSVersionString
+- Propiedad OSVersionString virtual PC , interfaz IVMHostInfo
+- Interfaz IVMHostInfo pc virtual , propiedad OSVersionString
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118345553"
 ---
-# <a name="ivmhostinfoosversionstring-property"></a>IVMHostInfo::OSVersionString, propiedad
+# <a name="ivmhostinfoosversionstring-property"></a>Propiedad IVMHostInfo::OSVersionString
 
 \[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
@@ -65,7 +65,7 @@ La versión del sistema operativo.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |

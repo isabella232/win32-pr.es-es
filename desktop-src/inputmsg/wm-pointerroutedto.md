@@ -1,9 +1,9 @@
 ---
-title: Mensaje WM_POINTERROUTEDTO
-description: Se envía cuando la entrada de puntero continua, para un identificador de puntero existente, realiza la transición de un proceso a otro en el contenido configurado para el encadenamiento entre procesos (AddContentWithCrossProcessChaining).
+title: WM_POINTERROUTEDTO mensaje
+description: Se envía cuando la entrada de puntero en curso, para un identificador de puntero existente, pasa de un proceso a otro a través del contenido configurado para el encadenamiento entre procesos (AddContentWithCrossProcessChaining).
 ms.assetid: 163E2C31-4E29-4CBA-B079-1963D4762D7B
 keywords:
-- Mensajes y notificaciones de entrada de mensajes de WM_POINTERROUTEDTO
+- WM_POINTERROUTEDTO mensajes de entrada y notificaciones
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 7658aeef77a0f7e19f2449213e9332b4e60c9450
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9b7de7dd1affb9100a29613e3b4186d3d5bdaa32d853e683579fdcc62e7f981f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117695626"
 ---
-# <a name="wm_pointerroutedto-message"></a>Mensaje WM_POINTERROUTEDTO
+# <a name="wm_pointerroutedto-message"></a>WM_POINTERROUTEDTO mensaje
 
-Se envía cuando la entrada de puntero continua, para un identificador de puntero existente, realiza la transición de un proceso a otro en el contenido configurado para el encadenamiento entre procesos ([**AddContentWithCrossProcessChaining**](/windows/win32/api/directmanipulation/nf-directmanipulation-idirectmanipulationcompositor2-addcontentwithcrossprocesschaining)).
+Se envía cuando la entrada de puntero en curso, para un identificador de puntero existente, pasa de un proceso a otro a través del contenido configurado para el encadenamiento entre procesos ([**AddContentWithCrossProcessChaining**](/windows/win32/api/directmanipulation/nf-directmanipulation-idirectmanipulationcompositor2-addcontentwithcrossprocesschaining)).
 
 Este mensaje se envía al proceso que no recibe actualmente la entrada de puntero.
 
@@ -56,25 +56,25 @@ Sin usar.
 
 NULL
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje no se envía cuando se envía un mensaje de [**WM_POINTERDOWN**](wm-pointerdown.md) para un nuevo identificador de puntero en un proceso diferente.
+Este mensaje no se envía cuando se [**publica WM_POINTERDOWN**](wm-pointerdown.md) mensaje para un nuevo identificador de puntero en un proceso diferente.
 
-No se envía un mensaje de [**WM_POINTERDOWN**](wm-pointerdown.md) si se publica primero un mensaje **WM_POINTERROUTEDTO** .
+No [**WM_POINTERDOWN**](wm-pointerdown.md) se envía un mensaje de WM_POINTERROUTEDTO **se** publica primero.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

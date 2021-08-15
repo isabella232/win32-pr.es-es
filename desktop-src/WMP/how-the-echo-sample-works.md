@@ -31,12 +31,12 @@ Una vez que existe el búfer de retraso y Reproductor de Windows Media ha asigna
 
 1.  Escriba un bucle que permita el procesamiento de cada muestra de audio en el búfer de entrada.
 2.  Recuperar un ejemplo del búfer de entrada. A continuación, mueva el puntero de búfer de entrada hacia delante al ejemplo siguiente para prepararse para la siguiente iteración del bucle.
-3.  Recuperar un ejemplo del búfer de retraso.
+3.  Recupere un ejemplo del búfer de retraso.
 4.  Copie el ejemplo del búfer de entrada en la misma ubicación del búfer de retraso del que se recuperó la última muestra de retraso.
 5.  Mueva el puntero de búfer de retraso hacia delante al ejemplo siguiente. Si el puntero se mueve más allá del final del búfer, muévolo al extremo del búfer.
 6.  Combine el ejemplo del búfer de entrada con el ejemplo del búfer de retraso.
 7.  Copie el resultado en el búfer de salida. A continuación, mueva el puntero del búfer de salida hacia delante a la unidad siguiente para prepararse para la siguiente iteración del bucle.
-8.  Repita la repetición hasta que se procese todas las muestras.
+8.  Repita el proceso hasta que se procese todos los ejemplos.
 
 Cuando se copia un ejemplo de entrada recuperado en el paso 2 en el búfer de retraso en el paso 4, permanece allí hasta que el puntero móvil atraviesa cada muestra en el búfer de retraso y, por último, vuelve a la misma posición. Dado que el tamaño del búfer de retraso está diseñado para corresponder al tiempo de retraso, el tiempo transcurrido entre la muestra que se copia en el búfer de retraso y la muestra que se recupera una vez más es igual al retraso especificado (más cualquier latencia introducida por el procesamiento real).
 

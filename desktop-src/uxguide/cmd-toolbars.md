@@ -22,7 +22,7 @@ Las barras de herramientas son una manera de agrupar comandos para un acceso efi
 
 Algunas barras de herramientas típicas.
 
-**Use barras de herramientas además de o en lugar de barras de menús.** Las barras de herramientas pueden ser más eficaces que las barras de menú porque son directas (siempre se muestran en lugar de mostrarse al hacer clic con el mouse), inmediatas (en lugar de requerir entrada adicional) y contienen los comandos usados con más frecuencia (en lugar de una lista completa). A diferencia de las barras de menús, las barras de herramientas no tienen que ser completas ni explicativas simplemente rápidas, cómodas y eficaces.
+**Use barras de herramientas además de o en lugar de barras de menús.** Las barras de herramientas pueden ser más eficaces que las barras de menús porque son directas (siempre se muestran en lugar de mostrarse al hacer clic con el mouse), inmediatas (en lugar de requerir una entrada adicional) y contienen los comandos usados con más frecuencia (en lugar de una lista completa). A diferencia de las barras de menús, las barras de herramientas no tienen que ser completas ni explicativas simplemente rápidas, cómodas y eficaces.
 
 Algunas barras de herramientas son personalizables, lo que permite a los usuarios agregar o quitar barras de herramientas, cambiar su tamaño y ubicación e incluso cambiar su contenido. Algunos tipos de barras de herramientas se pueden desacoplar, lo que da lugar a una ventana de paleta. Para obtener más información sobre las variedades de barras de herramientas, vea [Patrones de uso](#usage-patterns) en este artículo.
 
@@ -39,9 +39,9 @@ Para decidirte, intenta responder a estas preguntas:
 -   **¿Hay un pequeño número de comandos usados con frecuencia?** Las barras de herramientas no pueden controlar tantos comandos como barras de menús, por lo que funcionan mejor como una manera de acceder eficazmente a un pequeño número de comandos usados con frecuencia.
 -   **¿La mayoría de los comandos son inmediatos?** Es decir, ¿son principalmente comandos que no requieren entrada adicional? Para ser eficientes, las barras de herramientas deben tener una sensación directa e inmediata. Si no es así, las barras de menús son más adecuadas para los comandos que requieren entrada adicional.
 -   **¿Se pueden presentar la mayoría de los comandos directamente?** Es decir, ¿los usuarios interactúan con ellos con un solo clic? Aunque algunos comandos se pueden presentar mediante botones de menú, la presentación de la mayoría de los comandos de esta manera vulnera la eficacia de la barra de herramientas, lo que hace que una barra de menús sea una mejor opción.
--   **¿Los comandos están bien representados por iconos?** Los botones de la barra de herramientas normalmente se representan mediante iconos en lugar de etiquetas de texto (aunque algunos botones de barra de herramientas usan ambos), mientras que los comandos de menú se representan mediante su texto. Si los iconos de comandos no son de alta calidad y no se explican por sí solos, una barra de menús puede ser una mejor opción.
+-   **¿Los comandos están bien representados por iconos?** Los botones de la barra de herramientas normalmente se representan mediante iconos en lugar de etiquetas de texto (aunque algunos botones de la barra de herramientas usan ambos), mientras que los comandos de menú se representan mediante su texto. Si los iconos de comandos no son de alta calidad y no se explican por sí solos, una barra de menús puede ser una mejor opción.
 
-Si el programa tiene una barra de herramientas sin barra de menús y la mayoría de los comandos son accesibles indirectamente a través de botones de menú y botones de [división,](ctrl-command-buttons.md)esta barra de herramientas es básicamente una barra de menús. En su [lugar, aplique el](cmd-menus.md) patrón de menús de la barra de herramientas en las directrices de menús.
+Si el programa tiene una barra de herramientas sin barra de menús y la mayoría de los comandos son accesibles indirectamente a través de botones de menú y botones de [división,](ctrl-command-buttons.md)esta barra de herramientas es básicamente una barra de menús. En su lugar, aplique el patrón [de menús de](cmd-menus.md) la barra de herramientas en las directrices de menús.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
@@ -105,7 +105,7 @@ No se trata de un pequeño cambio. La eliminación de la barra de menús cambia 
 
     ![captura de pantalla de las opciones de la barra de herramientas y del comando de impresión ](images/cmd-toolbars-image7.png)
 
-    En este ejemplo, el botón imprimir de la barra de herramientas Windows Galería de fotos un comando Imprimir que muestra el cuadro de diálogo Imprimir.
+    En este ejemplo, el botón imprimir de la barra Windows Galería de fotos tiene un comando Imprimir que muestra el cuadro de diálogo Imprimir.
 
 -   **Franqueza.** Para ahorrar espacio y evitar el desorden, los comandos usados con menos frecuencia se pueden mover a los botones de menú, lo que los hace menos directos.
 
@@ -119,7 +119,7 @@ Desde el teclado, el acceso a las barras de herramientas es bastante diferente d
 
 La accesibilidad presenta un desafío aquí: aunque las barras de herramientas son más fáciles para los usuarios del mouse, son menos accesibles para los usuarios del teclado. Esto no es un problema si hay una barra de menús y una barra de herramientas, pero es si la barra de menús se quita u oculta.
 
-Por motivos de accesibilidad, prefiere conservar la barra de menús en lugar de quitarla por completo en favor de una barra de herramientas. Si debe elegir entre quitar la barra de menús y ocultarla simplemente, prefiere ocultarla.
+Por motivos de accesibilidad, prefiere conservar la barra de menús en lugar de quitarla completamente en favor de una barra de herramientas. Si debe elegir entre quitar la barra de menús y ocultarla simplemente, prefiere ocultarla.
 
 ## <a name="usage-patterns"></a>Patrones de uso
 
@@ -146,7 +146,7 @@ Las barras de herramientas tienen estos estilos:
 |   Estilo                                                                                                                                     | Ejemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Iconos sin etiquetar**<br/> una o varias filas de pequeños botones de icono sin etiquetar. <br/>                                           | use este estilo si hay demasiados botones para etiquetar o si el programa se usa con frecuencia. con este estilo, los programas con funcionalidad compleja pueden tener varias filas y, por lo tanto, este es el único estilo que debe personalizarse. con este estilo, algunos botones de comando se pueden etiquetar si se usan con frecuencia. <br/> ![captura de pantalla de la barra de herramientas con iconos pequeños sin etiquetar ](images/cmd-toolbars-image14.png)<br/> Barra de herramientas de iconos sin etiquetar de WordPad.<br/> |
-| **Iconos grandes sin etiquetar**<br/> una sola fila de botones de iconos grandes sin etiquetar. <br/>                                         | use este estilo para utilidades sencillas que tienen iconos fácilmente reconocibles y que normalmente se ejecutan en ventanas pequeñas. <br/> ![captura de pantalla de la barra de herramientas con iconos grandes sin etiquetar ](images/cmd-toolbars-image15.png)<br/> ![captura de pantalla de la barra de herramientas con iconos grandes ](images/cmd-toolbars-image16.png)<br/> Barras de herramientas de iconos grandes sin etiquetar de Windows Live Messenger y el Windows Herramienta Recortes.<br/>                                                                       |
+| **Iconos grandes sin etiquetar**<br/> una sola fila de botones de iconos grandes sin etiquetar. <br/>                                         | use este estilo para utilidades sencillas que tienen iconos fácilmente reconocibles y que normalmente se ejecutan en ventanas pequeñas. <br/> ![captura de pantalla de la barra de herramientas con iconos grandes sin etiquetar ](images/cmd-toolbars-image15.png)<br/> ![captura de pantalla de la barra de herramientas con iconos grandes ](images/cmd-toolbars-image16.png)<br/> Barras de herramientas de iconos grandes sin etiquetar Windows Live Messenger y el Windows Herramienta Recortes.<br/>                                                                       |
 | **Iconos etiquetados**<br/> una sola fila de iconos pequeños etiquetados. <br/>                                                          | use este estilo si hay pocos comandos o el programa no se usa con frecuencia. este estilo siempre tiene una sola fila. <br/> ![captura de pantalla de la barra de herramientas con iconos etiquetados ](images/cmd-toolbars-image8.png)<br/> Una barra de herramientas de iconos etiquetados Windows Explorer.<br/>                                                                                                                                                                                                               |
 | **Barras de herramientas parciales**<br/> una fila parcial de iconos pequeños que se usa para ahorrar espacio cuando no es necesaria una barra de herramientas completa. <br/>       | use este estilo para ventanas con botones de navegación, un cuadro de búsqueda o pestañas para eliminar el peso innecesario en la parte superior de la ventana. <br/> ![captura de pantalla de la barra de menús, la barra de herramientas y la barra de favoritos ](images/cmd-toolbars-image17.png)<br/> Las barras de herramientas parciales se pueden combinar con botones de navegación, un cuadro de búsqueda o pestañas.<br/>                                                                                                                                                  |
 | **Barras de herramientas parciales grandes**<br/> una fila parcial de iconos grandes que se usa para ahorrar espacio cuando no es necesaria una barra de herramientas completa. <br/> | use este estilo para utilidades sencillas que tienen botones de navegación o un cuadro de búsqueda para eliminar el peso innecesario en la parte superior de la ventana. <br/> ![captura de pantalla de una barra de herramientas parcial grande ](images/cmd-toolbars-image18.png)<br/> Una barra de herramientas parcial grande de Windows Defender.<br/>                                                                                                                                                                                         |
@@ -161,7 +161,7 @@ Por último, los controles de la barra de herramientas tienen varios patrones de
 
 |     Uso                                                                                                                 |     Ejemplo                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Botones de icono de comando**<br/> Al hacer clic en un botón de comando se inicia una acción inmediata. <br/>                                                                                                 | ![captura de pantalla de una barra de herramientas con iconos etiquetados ](images/cmd-toolbars-image19.png)<br/> Ejemplos de botones de comandos de icono Windows fax y examen.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Botones de icono de comando**<br/> Al hacer clic en un botón de comando se inicia una acción inmediata. <br/>                                                                                                 | ![captura de pantalla de una barra de herramientas con iconos etiquetados ](images/cmd-toolbars-image19.png)<br/> Ejemplos de botones de comandos de icono Windows fax y digitalización.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Botones de icono de modo**<br/> Al hacer clic en un botón de modo, se entra en el modo seleccionado. <br/>                                                                                                            | ![captura de pantalla de una barra de herramientas vertical ](images/cmd-toolbars-image20.png)<br/> Ejemplos de botones de modo Windows Paint.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **Botones de icono de propiedad**<br/> El estado de un botón de propiedad refleja el estado de los objetos seleccionados actualmente, si los hay. Al hacer clic en el botón, se aplica el cambio a los objetos seleccionados. <br/> | ![captura de pantalla de iconos de formato y texto seleccionado ](images/cmd-toolbars-image21.png)<br/> Ejemplos de botones de propiedad Microsoft Word.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Botones de iconos con etiqueta**<br/> un botón de comando o un botón de propiedad etiquetados con un icono y una etiqueta de texto. <br/>                                                                               | Estos botones se usan para los botones de la barra de herramientas usados con frecuencia cuyo icono no es lo suficientemente explicativo. también se usan en barras de herramientas que tienen tan pocos botones que cada botón puede tener una etiqueta de texto. <br/> ![Captura de pantalla que muestra la barra de herramientas con iconos etiquetados para los botones usados con más frecuencia. ](images/cmd-toolbars-image22.png)<br/> Una barra de herramientas con sus botones usados con más frecuencia etiquetados.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -247,7 +247,7 @@ Por último, los controles de la barra de herramientas tienen varios patrones de
 
     ![captura de pantalla de la barra de herramientas con algunos iconos etiquetados ](images/cmd-toolbars-image33.png)
 
-    La Windows de herramientas Fax y Examen tiene pocos comandos, por lo que la mejor versión etiqueta las más importantes.
+    La Windows de herramientas Fax y examen tiene pocos comandos, por lo que la mejor versión etiqueta los más importantes.
 
 -   No coloque comandos en los menús de la barra de herramientas que también estén directamente en la barra de herramientas.
 
@@ -261,7 +261,7 @@ Por último, los controles de la barra de herramientas tienen varios patrones de
 
 -   **Organice los comandos dentro de una barra de herramientas en grupos relacionados.**
 -   **Coloque primero los grupos usados con más frecuencia. Dentro de un grupo, coloque los comandos en su orden lógico.** En general, los comandos deben tener un flujo lógico para que sea fácil de encontrar, a la vez que los comandos usados con más frecuencia aparecen primero. Hacerlo es más eficaz, especialmente si hay desbordamiento.
--   **Use divisores de grupo solo si los comandos entre grupos están débilmente acoplados.** Si lo hace, las agrupaciones son obvias y los comandos son más fáciles de encontrar.
+-   **Use divisores de grupo solo si los comandos de los grupos están débilmente acoplados.** Esto hace que las agrupaciones sean obvias y los comandos sean más fáciles de encontrar.
 
     ![Captura de pantalla que muestra una barra de herramientas con iconos bien organizados mediante divisores de grupo.](images/cmd-toolbars-image35.png)
 
@@ -287,17 +287,17 @@ Por último, los controles de la barra de herramientas tienen varios patrones de
 
     ![captura de pantalla de la barra de favoritos y comandos ocultos ](images/cmd-toolbars-image39.png)
 
-    El botón de contenido adicional de desbordamiento indica que no se muestran todos los comandos, pero podría haber más con un mejor diseño.
+    El botón de contenido adicional de desbordamiento indica que no se muestran todos los comandos, pero muchos de ellos podrían tener un mejor diseño.
 
--   **Asegúrese de que los comandos usados con más frecuencia son accesibles directamente desde la barra de herramientas (es decir, sin desbordamiento) en tamaños de ventana pequeños.** Si es necesario, reordene los comandos, mueva los comandos usados con menos frecuencia a los botones de menú o a los botones de división, o incluso quítelos completamente de la barra de herramientas. Si esto sigue siendo un problema, replantee su elección de estilo de barra de herramientas.
+-   **Asegúrese de que los comandos usados con más frecuencia son accesibles directamente desde la barra de herramientas (es decir, no en desbordamiento) en tamaños de ventana pequeños.** Si es necesario, reordene los comandos, mueva los comandos usados con menos frecuencia a botones de menú o botones de división, o incluso quítelos completamente de la barra de herramientas. Si esto sigue siendo un problema, replantee su elección de estilo de barra de herramientas.
 
 ### <a name="hiding-menu-bars"></a>Ocultar barras de menús
 
-Por lo general, las barras de herramientas funcionan muy bien junto con las barras de menús, ya que tener ambas permite que cada una de ellas se centre en sus puntos fuertes sin poner en peligro.
+Por lo general, las barras de herramientas funcionan muy bien junto con las barras de menús, ya que tener ambas permite que cada una se centre en sus puntos fuertes sin poner en peligro.
 
 -   Oculte la barra de menús de forma predeterminada si el diseño de la barra de herramientas hace que tenga una barra de menús redundante.
--   Oculte la barra de menús en lugar de quitarla por completo, ya que las barras de menús son más accesibles para los usuarios del teclado.
--   Para restaurar la barra de menús, proporcione una opción de marca de verificación Barra de menús en la categoría de menú Ver (para barras de herramientas principales) o Herramientas (para barras de herramientas secundarias). Para obtener más información, vea [Menú estándar y botones de división](#standard-menu-and-split-buttons).
+-   Oculte la barra de menús en lugar de quitarla por completo, ya que las barras de menú son más accesibles para los usuarios del teclado.
+-   Para restaurar la barra de menús, proporcione una opción de marca de verificación Barra de menús en la categoría de menú Ver (para barras de herramientas principales) o Herramientas (para barras de herramientas secundarias). Para obtener más información, vea [Menú estándar y Botones de división.](#standard-menu-and-split-buttons)
 -   Muestre la barra de menús cuando los usuarios presionen la tecla Alt y establezca el foco de entrada en la primera categoría de menú.
 
 ### <a name="interaction"></a>Interacción
@@ -306,7 +306,7 @@ Por lo general, las barras de herramientas funcionan muy bien junto con las barr
 
     ![captura de pantalla de una información sobre información que describe un botón ](images/cmd-toolbars-image40.png)
 
-    En este ejemplo se muestran los distintos estados de presentación.
+    En este ejemplo se muestran los distintos estados de visualización.
 
 -   A la izquierda, haga clic en:
     -   Para los botones de comando, interactúe con el control de la forma habitual.
@@ -316,17 +316,17 @@ Por lo general, las barras de herramientas funcionan muy bien junto con las barr
 
         En este ejemplo, el puntero se cambia para mostrar el modo de interacción del mouse.
 
-    -   En el caso de los botones de propiedad y las listas desplegables, muestre el control para reflejar el estado de los objetos seleccionados actualmente, si los hay. En la interacción, actualice el estado del control y aplique el cambio a los objetos seleccionados. Si no se selecciona nada, no haga nada.
+    -   En el caso de los botones de propiedad y las listas desplegables, muestre el control para reflejar el estado de los objetos seleccionados actualmente, si los hay. Al interactuar, actualice el estado del control y aplique el cambio a los objetos seleccionados. Si no se selecciona nada, no haga nada.
 
--   En el doble clic izquierdo, realice la misma acción que un solo clic izquierdo.
-    -   **Excepción:** En raras ocasiones, un comando de barra de herramientas se puede usar de forma más eficaz de forma modal. En tales casos, use el doble clic para alternar el modo.
+-   A la izquierda, haga doble clic, realice la misma acción que un solo clic izquierdo.
+    -   **Excepción:** En raras ocasiones, un comando de barra de herramientas se puede usar de forma más eficaz de forma modal. En tales casos, use doble clic para alternar el modo.
 
         ![captura de pantalla de información que muestra las funciones del botón ](images/cmd-toolbars-image42.png)
 
         En este ejemplo, al hacer doble clic en el comando Dar formato al escritor, entra en un modo en el que todos los clics posteriores aplican el formato. Los usuarios pueden salir del modo haciendo clic con un solo clic a la izquierda.
 
 -   Al hacer clic con el botón derecho:
-    -   En el caso de las barras de herramientas personalizables, muestre el menú contextual para personalizar la barra de herramientas. Muestre el menú al hacer clic con el botón derecho en el mouse hacia abajo, no hacia arriba.
+    -   Para las barras de herramientas personalizables, muestre el menú contextual para personalizar la barra de herramientas. Muestra el menú al hacer clic con el botón derecho en el mouse hacia abajo, no hacia arriba.
     -   Para otras barras de herramientas, no haga nada.
 
 ### <a name="icons"></a>Iconos
@@ -337,12 +337,12 @@ Por lo general, las barras de herramientas funcionan muy bien junto con las barr
 
     Las listas desplegables no necesitan iconos, pero sí todos los demás controles de la barra de herramientas.
 
-    **Excepción:** Windows barras de herramientas de estilo 7 usan iconos solo para los comandos cuyos iconos son conocidos; De lo contrario, usan etiquetas de texto sin iconos. Esto mejora la claridad de las etiquetas, pero requiere más espacio.
+    **Excepción:** Windows barras de herramientas de estilo 7 usan iconos solo para los comandos cuyos iconos son conocidos; de lo contrario, usan etiquetas de texto sin iconos. Esto mejora la claridad de las etiquetas, pero requiere más espacio.
 
 -   **Asegúrese de que los iconos de la barra de herramientas estén claramente visibles en el color de fondo de la barra de herramientas.** Evalúe siempre los iconos de la barra de herramientas en contexto y en modo de contraste alto.
--   **Elija diseños de icono que comuniquen claramente su propósito, especialmente para los comandos usados con más frecuencia.** Las barras de herramientas bien diseñadas necesitan iconos que se explican por sí solos porque los usuarios no pueden encontrar comandos de forma eficaz con su información sobre herramientas. Sin embargo, las barras de herramientas siguen funcionando bien si los iconos de algunos comandos usados con menos frecuencia no se explican por sí solos.
+-   **Elija diseños de iconos que comuniquen claramente su propósito, especialmente para los comandos usados con más frecuencia.** Las barras de herramientas bien diseñadas necesitan iconos que se explican por sí solos, ya que los usuarios no pueden encontrar comandos de forma eficaz con su información sobre herramientas. Sin embargo, las barras de herramientas siguen funcionando bien si los iconos de algunos comandos usados con menos frecuencia no se explican por sí solos.
 -   **Elija iconos que sean reconocibles y distintivos, especialmente para los comandos usados con más frecuencia.** Asegúrese de que los iconos tienen formas y colores distintivos. Esto ayuda a los usuarios a encontrar los comandos rápidamente aunque no recuerden el símbolo de icono.
--   **Asegúrese de que los iconos de la barra de herramientas se ajustan a las directrices de los iconos de estilo aerórmico.**
+-   **Asegúrese de que los iconos de la barra de herramientas se ajustan a las directrices de icono de estilo Avión.**
 
 Para obtener más información y ejemplos, vea [Iconos](vis-icons.md).
 
@@ -352,7 +352,7 @@ Si usa botones de menú y botones de división en una barra de herramientas, int
 
 **Barras de herramientas principales**
 
-Estos comandos reflejan los comandos que se encuentran en las barras de menú estándar, por lo que solo se deben usar para las barras de herramientas principales. Esta lista muestra las etiquetas de botón (y el tipo) con su orden y separadores, teclas de método abreviado y puntos suspensivos. **Tenga en cuenta que el comando para mostrar y ocultar la barra de menús está en el menú Ver.**
+Estos comandos reflejan los comandos que se encuentran en las barras de menú estándar, por lo que solo se deben usar para las barras de herramientas principales. Esta lista muestra las etiquetas de botón (y el tipo) con sus separadores y orden, teclas de método abreviado y puntos suspensivos. **Tenga en cuenta que el comando para mostrar y ocultar la barra de menús está en el menú Ver.**
 
 <dl> Archivo <dl> NewCtrl+N  
 Abierto... Ctrl+O  
@@ -468,7 +468,7 @@ Sin embargo, si un comando no puede tener efecto inmediatamente, no se requieren
 
 ![captura de pantalla de la barra de herramientas, el comando y la información sobre herramientas ](images/cmd-toolbars-image48.png)
 
-El comando Configuración compartido no tiene puntos suspensivos porque no puede tener efecto inmediatamente.
+El comando Sharing Configuración no tiene puntos suspensivos porque no puede tener efecto inmediatamente.
 
 Dado que las barras de herramientas se muestran constantemente y el espacio es premium, los puntos suspensivos se deben usar con **poca frecuencia.**
 
@@ -535,7 +535,7 @@ Tamaño y espaciado recomendados para las barras de herramientas estándar.
     -   Acerca de
     -   Avanzado
     -   Pantalla completa
-    -   New
+    -   Nuevo
     -   Opciones
     -   Propiedades
 -   **Use verbos específicos.** Evite verbos genéricos y poco útiles, como Cambiar y administrar.

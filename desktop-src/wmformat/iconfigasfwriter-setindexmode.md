@@ -1,10 +1,10 @@
 ---
 title: Método IConfigAsfWriter SetIndexMode
-description: El método SetIndexMode permite a la aplicación controlar si el archivo se indexa temporalmente.
+description: El método SetIndexMode permite a la aplicación controlar si el archivo se indexará temporalmente.
 ms.assetid: 104e29f4-a1e5-4e26-a9ef-52ef52d6f5b2
 keywords:
 - Formato multimedia de windows del método SetIndexMode
-- Método SetIndexMode windows Media Format, interfaz IConfigAsfWriter
+- Método SetIndexMode windows Media Format , interfaz IConfigAsfWriter
 - IConfigAsfWriter interface windows Media Format , SetIndexMode (método)
 topic_type:
 - apiref
@@ -22,9 +22,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118433632"
 ---
-# <a name="iconfigasfwritersetindexmode-method"></a>IConfigAsfWriter::SetIndexMode (método)
+# <a name="iconfigasfwritersetindexmode-method"></a>IConfigAsfWriter::SetIndexMode (Método)
 
-El **método SetIndexMode** permite a la aplicación controlar si el archivo se indexa temporalmente.
+El **método SetIndexMode** permite a la aplicación controlar si el archivo se indexará temporalmente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,11 +52,11 @@ Variable de tipo **BOOL**; **TRUE** especifica que el archivo se indexará tempo
 
 Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, [WM ASF Writer](wm-asf-writer-filter.md) crea archivos ASF indexados temporalmente. Realiza la indexación cuando se detiene el gráfico. Puede deshabilitar este comportamiento si desea realizar su propia indexación basada en fotogramas como paso posterior al procesamiento. Para crear un archivo indexado por fotogramas, llame a **SetIndexMode**(FALSE), cree el archivo y, a continuación, use los métodos del SDK de formato multimedia de Windows directamente para crear un índice basado en fotogramas para el archivo.
+De forma predeterminada, [WM ASF Writer](wm-asf-writer-filter.md) crea archivos ASF indexados temporalmente. Realiza la indexación cuando se detiene el gráfico. Puede deshabilitar este comportamiento si desea realizar su propia indexación basada en fotogramas como un paso posterior al procesamiento. Para crear un archivo indexado por fotogramas, llame a **SetIndexMode**(FALSE), cree el archivo y, a continuación, use los métodos del SDK de formato multimedia de Windows directamente para crear un índice basado en fotogramas para el archivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

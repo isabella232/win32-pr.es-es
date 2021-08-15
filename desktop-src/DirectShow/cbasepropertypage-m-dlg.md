@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m Dlg contiene un identificador para la ventana de cuadro de diálogo. Esta variable miembro se inicializa cuando la ventana de cuadro de diálogo procesa el mensaje de INITDIALOG de WM \_ .
+description: La variable \_ miembro m Dlg contiene un identificador para la ventana de diálogo. Esta variable miembro se inicializa cuando la ventana de diálogo procesa el mensaje WM \_ INITDIALOG.
 ms.assetid: e10ea37e-064a-4832-abda-57b4fad23168
-title: 'Miembro CBasePropertyPage:: m_Dlg (Cprop. h)'
+title: CBasePropertyPage::m_Dlg miembro (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4ca26036bc9b16cc98158643caf91e4a233143e9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d7485582360a122fcfe483c227eac3d401d6e19cc147e2f90d16176b7bc8c3bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823138"
 ---
-# <a name="cbasepropertypagem_dlg-member"></a>Miembro CBasePropertyPage:: m \_ Dlg
+# <a name="cbasepropertypagem_dlg-member"></a>Miembro Dlg CBasePropertyPage::m \_
 
-La `m_Dlg` variable miembro contiene un identificador para la ventana de cuadro de diálogo. Esta variable miembro se inicializa cuando la ventana de cuadro de diálogo procesa el mensaje de INITDIALOG de WM \_ .
+La `m_Dlg` variable miembro contiene un identificador para la ventana de diálogo. Esta variable miembro se inicializa cuando la ventana de diálogo procesa el mensaje WM \_ INITDIALOG.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ HWND m_Dlg;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

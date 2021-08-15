@@ -30,7 +30,7 @@ Máscara de bits que determina la categoría de eventos que se escriben en el ca
  />
 ```
 
-El **elemento keywords** se define mediante el [**tipo complejo ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
+El **elemento keywords** se define mediante el tipo complejo [**ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 

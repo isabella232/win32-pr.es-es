@@ -1,6 +1,6 @@
 ---
 title: HTTP_RESPONSE_FLAG_ constantes (Http.h)
-description: Defina las opciones para configurar las respuestas en la API del servidor HTTP.
+description: Defina opciones para configurar respuestas en la API del servidor HTTP.
 ms.assetid: bcb59457-fd22-4166-8a72-ba85209ec8c7
 topic_type:
 - apiref
@@ -27,12 +27,12 @@ Estas constantes se usan en el miembro **Flags** de la [**estructura HTTP RESPON
 
 <dl> <dt>
 
-<span id="HTTP_RESPONSE_FLAG_MULTIPLE_ENCODINGS_AVAILABLE"></span><span id="http_response_flag_multiple_encodings_available"></span>**MARCA DE RESPUESTA HTTP \_ \_ VARIAS \_ \_ CODIFICACIONES \_ DISPONIBLES**
+<span id="HTTP_RESPONSE_FLAG_MULTIPLE_ENCODINGS_AVAILABLE"></span><span id="http_response_flag_multiple_encodings_available"></span>**MARCAS DE RESPUESTA HTTP \_ \_ CON VARIAS \_ \_ \_ CODIFICACIONES DISPONIBLES**
 </dt> <dd> <dl> <dt>
 
 
 
-Las codificaciones que no sean el formulario de identidad están disponibles para este recurso. Esta marca se omite si la aplicación no ha solicitado que la respuesta se almacene en caché. Se usa como una sugerencia para la API del servidor HTTP para la negociación de contenido al servir desde la caché de respuestas del kernel.
+Hay codificaciones distintas del formulario de identidad disponibles para este recurso. Esta marca se omite si la aplicación no ha solicitado que la respuesta se almacene en caché. Se usa como sugerencia para la API del servidor HTTP para la negociación de contenido al servir desde la caché de respuestas del kernel.
 
 
 </dt> </dl> </dd> </dl>
@@ -53,7 +53,7 @@ Las codificaciones que no sean el formulario de identidad están disponibles par
 
 <dl> <dt>
 
-[Constantes de LA API del servidor HTTP versión 2.0](http-server-api-version-2-0-constants.md)
+[Constantes de API de servidor HTTP versión 2.0](http-server-api-version-2-0-constants.md)
 </dt> <dt>
 
 [**RESPUESTA \_ HTTP \_ V1**](/windows/desktop/api/Http/ns-http-http_response_v1)

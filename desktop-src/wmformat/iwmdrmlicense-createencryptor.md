@@ -1,11 +1,11 @@
 ---
 title: Método CreateEncryptor de IWMDRMLicense (Wmdrmsdk.h)
-description: El método CreateEncryptor crea un objeto de cifrado mediante la configuración de la licencia actual.
+description: El método CreateEncryptor crea un objeto de cifrado con la configuración de la licencia actual.
 ms.assetid: 570ba898-e846-4981-8ea8-ce16f2dad68a
 keywords:
-- Método CreateEncryptor windows Media Format
-- Método CreateEncryptor windows Media Format , IWMDRMLicense (interfaz)
-- IWMDRMLicense interface windows Media Format , CreateEncryptor method
+- CreateEncryptor method windows Media Format
+- Método CreateEncryptor windows Media Format , interfaz IWMDRMLicense
+- IWMDRMLicense interfaz windows Media Format , CreateEncryptor (método)
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118433664"
 ---
 # <a name="iwmdrmlicensecreateencryptor-method"></a>IWMDRMLicense::CreateEncryptor (método)
 
-El **método CreateEncryptor** crea un objeto de cifrado mediante la configuración de la licencia actual.
+El **método CreateEncryptor** crea un objeto de cifrado con la configuración de la licencia actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT CreateEncryptor(
 *ppEncryptor* \[ out\]
 </dt> <dd>
 
-Recibe un puntero a [**la interfaz IWMDRMEncrypt**](iwmdrmencrypt.md) del objeto recién creado.
+Recibe un puntero a la [**interfaz IWMDRMEncrypt**](iwmdrmencrypt.md) del objeto recién creado.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 | Código devuelto                                                                                                | Descripción                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM \_ RIV \_ TOO \_ SMALL**</dt> </dl> | Se necesita una lista de revocación de contenido actualizada.<br/> |
+| <dl> <dt>**NS \_ E \_ DRM \_ RIV DEMASIADO \_ \_ PEQUEÑO**</dt> </dl> | Se necesita una lista de revocación de contenido actualizada.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | El método se ha llevado a cabo de forma correcta.<br/>                         |
 
 
@@ -78,14 +78,14 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**CreateDecryptor**](iwmdrmlicense-createdecryptor.md)
 </dt> <dt>
 
-[**IWMDRMLicense (Interfaz)**](iwmdrmlicense.md)
+[**Interfaz IWMDRMLicense**](iwmdrmlicense.md)
 </dt> </dl>
 
  

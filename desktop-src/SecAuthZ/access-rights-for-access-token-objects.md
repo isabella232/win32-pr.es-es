@@ -4,12 +4,12 @@ ms.assetid: 5f710fd8-33de-47c0-a8b2-baf3008c4ed7
 title: Derechos de acceso para Access-Token objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 469081d2caa4e5ff7c9b7c55b4c09c31cff1acac
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: 5ac3145aef5fcf3a20f2569ac02df0de0638c2be1f42f5e1a74785d8ae1aedb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785480"
 ---
 # <a name="access-rights-for-access-token-objects"></a>Derechos de acceso para Access-Token objetos
 
@@ -29,16 +29,16 @@ Los siguientes son derechos de acceso válidos para los objetos de token de acce
     |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | TOKEN \_ ADJUST \_ DEFAULT    | Necesario para cambiar el propietario predeterminado, el grupo principal o la DACL de un token de acceso.                                                                                                                                                                                                  |
     | GRUPOS \_ DE AJUSTE DE \_ TOKEN     | Necesario para ajustar los atributos de los grupos en un token de acceso.                                                                                                                                                                                                               |
-    | PRIVILEGIOS \_ DE \_ AJUSTE DE TOKEN | Necesario para habilitar o deshabilitar los privilegios en un token de acceso.                                                                                                                                                                                                                  |
-    | TOKEN \_ ADJUST \_ SESSIONID  | Necesario para ajustar el identificador de sesión de un token de acceso. Se requiere el privilegio SE \_ TCB \_ NAME.                                                                                                                                                                                    |
-    | TOKEN \_ ASSIGN \_ PRIMARY    | Necesario para adjuntar un [*token principal*](/windows/desktop/SecGloss/p-gly) a un [*proceso*](/windows/desktop/SecGloss/p-gly). El privilegio SE \_ ASSIGNPRIMARYTOKEN \_ NAME también es necesario para realizar esta tarea. |
+    | PRIVILEGIOS \_ DE AJUSTE \_ DE TOKEN | Necesario para habilitar o deshabilitar los privilegios en un token de acceso.                                                                                                                                                                                                                  |
+    | TOKEN \_ ADJUST \_ SESSIONID  | Necesario para ajustar el identificador de sesión de un token de acceso. Se SE \_ el privilegio TCB \_ NAME.                                                                                                                                                                                    |
+    | TOKEN \_ ASSIGN \_ PRIMARY    | Necesario para adjuntar un [*token principal*](/windows/desktop/SecGloss/p-gly) a un [*proceso*](/windows/desktop/SecGloss/p-gly). También SE \_ el privilegio ASSIGNPRIMARYTOKEN \_ NAME para realizar esta tarea. |
     | TOKEN \_ DUPLICADO          | Necesario para duplicar un token de acceso.                                                                                                                                                                                                                                            |
     | TOKEN \_ EXECUTE            | Igual que STANDARD \_ RIGHTS \_ EXECUTE.                                                                                                                                                                                                                                                |
-    | \_SUPLANTACIÓN DE TOKEN        | Necesario para adjuntar un token de acceso de suplantación a un proceso.                                                                                                                                                                                                                    |
+    | TOKEN \_ IMPERSONATE        | Necesario para adjuntar un token de acceso de suplantación a un proceso.                                                                                                                                                                                                                    |
     | CONSULTA DE \_ TOKEN              | Necesario para consultar un token de acceso.                                                                                                                                                                                                                                                |
     | ORIGEN DE \_ CONSULTA \_ DE TOKEN      | Necesario para consultar el origen de un token de acceso.                                                                                                                                                                                                                                  |
-    | LECTURA DEL \_ TOKEN               | Combina STANDARD \_ RIGHTS READ y TOKEN \_ \_ QUERY.                                                                                                                                                                                                                                 |
-    | ESCRITURA DE \_ TOKENS              | Combina STANDARD \_ RIGHTS \_ WRITE, TOKEN ADJUST \_ \_ PRIVILEGES, TOKEN \_ ADJUST GROUPS y TOKEN ADJUST \_ \_ \_ DEFAULT.                                                                                                                                                                   |
+    | LECTURA DE \_ TOKEN               | Combina STANDARD \_ RIGHTS READ y TOKEN \_ \_ QUERY.                                                                                                                                                                                                                                 |
+    | ESCRITURA DE \_ TOKEN              | Combina STANDARD \_ RIGHTS \_ WRITE, TOKEN ADJUST \_ \_ PRIVILEGES, TOKEN \_ ADJUST GROUPS y TOKEN ADJUST \_ \_ \_ DEFAULT.                                                                                                                                                                   |
     | TOKEN \_ ALL \_ ACCESS        | Combina todos los derechos de acceso posibles para un token.                                                                                                                                                                                                                                  |
 
     

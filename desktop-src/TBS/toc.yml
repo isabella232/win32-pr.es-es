@@ -17,7 +17,7 @@
     - name: Referencia de TBS
       href: tbs-reference.md
       items:
-        - name: Tipos de datos de TBS
+        - name: Tipos de datos TBS
           href: tbs-data-types.md
         - name: Funciones de TBS
           href: tbs-functions.md
@@ -48,7 +48,7 @@
               href: /windows/desktop/api/Tbs/nf-tbs-tbsip_submit_command
         - name: Códigos de retorno de TBS
           href: tbs-return-codes.md
-        - name: Estructuras TBS
+        - name: Estructuras de TBS
           href: tbs-structures.md
           items:
             - name: TBS_CONTEXT_PARAMS

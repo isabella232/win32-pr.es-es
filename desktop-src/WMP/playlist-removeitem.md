@@ -4,8 +4,8 @@ description: El método removeItem quita el elemento especificado de la lista de
 ms.assetid: 294ba4fb-967b-4a03-b0c5-6e9c15db3bff
 keywords:
 - Método removeItem Reproductor de Windows Media
-- método removeItem Reproductor de Windows Media , clase Playlist
-- Clase playlist Reproductor de Windows Media , método removeItem
+- Método removeItem Reproductor de Windows Media , clase Playlist
+- Clase playlist Reproductor de Windows Media método , removeItem
 topic_type:
 - apiref
 api_name:
@@ -55,9 +55,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Si el elemento quitado es la pista que se está reproduciendo actualmente (*Player*.**currentMedia**), la reproducción se detiene y el siguiente elemento de la lista de reproducción se convierte en el actual. Si no hay ningún elemento siguiente, se usa el elemento anterior o si no hay ningún otro elemento, *player*. **currentMedia** se establece en **NULL.**
+Si el elemento quitado es la pista que se está reproduciendo actualmente *(Player*.**currentMedia**), la reproducción se detiene y el siguiente elemento de la lista de reproducción se convierte en el actual. Si no hay ningún elemento siguiente, se usa el elemento anterior, o si no hay ningún otro elemento, *player*. **currentMedia** se establece en **NULL.**
 
-Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 

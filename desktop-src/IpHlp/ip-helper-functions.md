@@ -218,7 +218,7 @@ Estas funciones solo se definen en Windows Server 2003.
 -   [**NotifyTeredoPortChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyteredoportchange)
 -   [**NotifyStableUnicastIpAddressTable**](/windows/win32/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 
-## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo de control de transmisión (TCP) y Protocolo de datagramas de usuario (UDP)
+## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo de control de transmisión (TCP) y protocolo de datagramas de usuario (UDP)
 
 -   [**GetExtendedTcpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedtcptable)
 -   [**GetExtendedUdpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedudptable)
@@ -247,7 +247,7 @@ Estas funciones solo se definen en Windows Server 2003.
 ## <a name="deprecated-apis"></a>Interfaces API desusadas
 
 > [!Note]  
-> Estas funciones están en desuso y Microsoft no las admite.
+> Estas funciones están en desuso y No son compatibles con Microsoft.
 
 -   [**AllocateAndGetTcpExTableFromStack**](/windows/win32/api/Iphlpapi/nf-iphlpapi-allocateandgettcpextablefromstack)
 -   [**AllocateAndGetUdpExTableFromStack**](/windows/win32/api/Iphlpapi/nf-iphlpapi-allocateandgetudpextablefromstack)

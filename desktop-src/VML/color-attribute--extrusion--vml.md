@@ -1,6 +1,6 @@
 ---
-title: Atributo color (extrusión)(VML)
-description: Atributo color (extrusión)(VML)
+title: Atributo de color (extrusión)(VML)
+description: Atributo de color (extrusión)(VML)
 ms.assetid: 52ee2210-5e32-4e01-9af7-b511e43f987a
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118347311"
 ---
-# <a name="color-attribute-extrusionvml"></a>Atributo color (extrusión)(VML)
+# <a name="color-attribute-extrusionvml"></a>Atributo de color (extrusión)(VML)
 
 En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
@@ -20,7 +20,7 @@ En este tema se describe VML, una característica que está en desuso a partir W
 
  
 
-Define el color de las caras de extrusión. Lectura/escritura **DvColor**.
+Define el color de las caras de la extrusión. Lectura/escritura **DvColor**.
 
 **Se aplica a**
 

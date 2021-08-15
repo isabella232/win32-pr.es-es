@@ -27,7 +27,7 @@ El **modificador /win32** dirige al compilador MIDL a generar archivos de códig
 midl /win32
 ```
 
-## <a name="switch-options"></a>Opciones de cambio
+## <a name="switch-options"></a>Cambiar opciones
 
 Este modificador no tiene parámetros.
 

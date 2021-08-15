@@ -14,7 +14,7 @@ ms.locfileid: "118462796"
 # <a name="querying-interfaces"></a>Consultar interfaces
 
 
-Esta Windows de referencia de Search consta de las siguientes interfaces de consulta:
+Esta Windows de referencia de search consta de las siguientes interfaces de consulta:
 
 [**ICondition**](/windows/desktop/api/Structuredquerycondition/nn-structuredquerycondition-icondition)
 

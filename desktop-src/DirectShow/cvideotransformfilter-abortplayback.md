@@ -1,7 +1,7 @@
 ---
-description: El método AbortPlayback se usa para indicar un error de streaming. Envía un \_ evento ERRORABORT de EC al administrador de gráficos de filtro y envía una notificación de final de secuencia de nivel inferior.
+description: El método AbortPlayback se usa para señalar un error de streaming. Envía un evento EC ERRORABORT al Administrador de filtros Graph y envía una notificación de fin de flujo \_ de bajada.
 ms.assetid: b48ec72f-d220-4b27-98fc-88eaa4f663eb
-title: Método CVideoTransformFilter. AbortPlayback (Vtrans. h)
+title: Método CVideoTransformFilter.AbortPlayback (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 952987dec315408920e92d79003480a01640d14e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6560e7ce704423bfecc519c709c2c08733fe90a2346324f9e1282571530293ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821940"
 ---
-# <a name="cvideotransformfilterabortplayback-method"></a>CVideoTransformFilter. AbortPlayback, método
+# <a name="cvideotransformfilterabortplayback-method"></a>Método CVideoTransformFilter.AbortPlayback
 
-El `AbortPlayback` método se usa para indicar un error de streaming. Envía un evento [**\_ ERRORABORT de EC**](ec-errorabort.md) al administrador de gráficos de filtro y envía una notificación de final de secuencia de nivel inferior.
+El `AbortPlayback` método se usa para señalar un error de streaming. Envía un evento [**\_ EC ERRORABORT**](ec-errorabort.md) al Administrador de filtros Graph y envía una notificación de fin de flujo de bajada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT AbortPlayback(
 *h* 
 </dt> <dd>
 
-Valor **HRESULT** de la operación en la que se produjo un error. Este valor se usa como el primer parámetro de evento para el \_ evento ERRORABORT de EC.
+**Valor HRESULT** de la operación que ha dado error. Este valor se usa como primer parámetro de evento para el evento \_ EC ERRORABORT.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor del parámetro *HR* .
+Devuelve el valor del *parámetro hr.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,16 +59,16 @@ Devuelve el valor del parámetro *HR* .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Vtrans. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Vtrans.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CVideoTransformFilter**](cvideotransformfilter.md)
+[**CVideoTransformFilter (clase)**](cvideotransformfilter.md)
 </dt> </dl>
 
  

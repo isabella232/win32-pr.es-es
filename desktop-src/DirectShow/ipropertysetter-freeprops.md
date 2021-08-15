@@ -50,21 +50,21 @@ void FreeProps(
 *cParams* \[ En\]
 </dt> <dd>
 
-Número de elementos de la *matriz paParam.*
+Número de elementos de la matriz *paParam.*
 
 </dd> <dt>
 
 *paParam* \[ En\]
 </dt> <dd>
 
-Puntero a una matriz de [**estructuras \_ PARAM DE COLOR.**](dexter-param.md)
+Puntero a una matriz de [**estructuras DE PARAM DE TIPO \_ ASÍN.**](dexter-param.md)
 
 </dd> <dt>
 
 *paValue* \[ En\]
 </dt> <dd>
 
-Puntero a una matriz de [**estructuras VALUE \_ DE COLOR.**](dexter-value.md)
+Puntero a una matriz de [**estructuras VALUE DE TIPO \_ ASÍN.**](dexter-value.md)
 
 </dd> </dl>
 
@@ -102,7 +102,7 @@ Este método no devuelve ningún valor.
 [**IPropertySetter (interfaz)**](ipropertysetter.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

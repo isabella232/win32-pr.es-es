@@ -1,27 +1,27 @@
 ---
-description: En el ejemplo siguiente se muestra el uso de las funciones VirtualAlloc y VirtualFree para reservar y confirmar la memoria según sea necesario para una matriz dinámica.
+description: En el ejemplo siguiente se muestra el uso de las funciones VirtualAlloc y VirtualFree para reservar y confirmar memoria según sea necesario para una matriz dinámica.
 ms.assetid: f46bd57d-7684-4a08-8ac7-de204aecb207
-title: Reservar y confirmar memoria
+title: Reserva y confirmación de memoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66ff5853d01561454265e1ee2102fbf6ebd9bb04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 615f3c4321dc432b5ef83a841cea12215563e7d103443512a4d3b2c553849540
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118386283"
 ---
-# <a name="reserving-and-committing-memory"></a>Reservar y confirmar memoria
+# <a name="reserving-and-committing-memory"></a>Reserva y confirmación de memoria
 
-En el ejemplo siguiente se muestra el uso de las funciones [**VirtualAlloc**](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) y [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) para reservar y confirmar la memoria según sea necesario para una matriz dinámica. En primer lugar, se llama a **VirtualAlloc** para reservar un bloque de páginas con **null** especificado como parámetro de dirección base, obligando al sistema a determinar la ubicación del bloque. Más adelante, se llama a **VirtualAlloc** siempre que es necesario confirmar una página de esta región reservada y se especifica la dirección base de la página siguiente que se va a confirmar.
+En el ejemplo siguiente se muestra el uso de las funciones [**VirtualAlloc**](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) y [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) para reservar y confirmar memoria según sea necesario para una matriz dinámica. En primer lugar, se llama a **VirtualAlloc** para reservar un bloque de páginas con **NULL** especificado como parámetro de dirección base, lo que obliga al sistema a determinar la ubicación del bloque. Más adelante, se llama a **VirtualAlloc** siempre que sea necesario confirmar una página de esta región reservada y se especifica la dirección base de la página siguiente que se va a confirmar.
 
-En el ejemplo se usa la sintaxis de control de excepciones estructurado para confirmar páginas de la región reservada. Siempre que se produce una excepción de error de página durante la ejecución del bloque **\_ \_ try** , se ejecuta la función de filtro en la expresión que precede al bloque **\_ \_ Except** . Si la función de filtro puede asignar otra página, la ejecución continúa en el bloque **\_ \_ try** en el punto donde se produjo la excepción. De lo contrario, se ejecuta el controlador de excepciones en el bloque **\_ \_ Except** . Para obtener más información, vea [control de excepciones estructurado](../debug/structured-exception-handling.md).
+En el ejemplo se usa la sintaxis estructurada de control de excepciones para confirmar páginas de la región reservada. Cada vez que se produce una excepción de error de página durante la ejecución del bloque **\_ \_ try,** se ejecuta la función de filtro de la expresión anterior al bloque **\_ \_ except.** Si la función de filtro puede asignar otra página, la ejecución continúa en el **\_ \_ bloque try** en el punto donde se produjo la excepción. De lo contrario, se ejecuta el controlador de excepciones en el bloque **\_ \_ except.** Para obtener más información, vea [Control estructurado de excepciones.](../debug/structured-exception-handling.md)
 
-Como alternativa a la asignación dinámica, el proceso puede simplemente confirmar toda la región en lugar de reservarla únicamente. Ambos métodos dan lugar al mismo uso de memoria física porque las páginas confirmadas no consumen almacenamiento físico hasta que se accede a ellas por primera vez. La ventaja de la asignación dinámica es que minimiza el número total de páginas confirmadas en el sistema. En el caso de las asignaciones muy grandes, la confirmación previa de una asignación completa puede hacer que el sistema se quede sin páginas confirmables, lo que provoca errores de asignación de memoria virtual.
+Como alternativa a la asignación dinámica, el proceso puede confirmar simplemente toda la región en lugar de reservarla únicamente. Ambos métodos tienen como resultado el mismo uso de memoria física porque las páginas confirmadas no consumen ningún almacenamiento físico hasta que se accede por primera vez a ellas. La ventaja de la asignación dinámica es que minimiza el número total de páginas confirmadas en el sistema. En el caso de asignaciones muy grandes, confirmar previamente una asignación completa puede hacer que el sistema se queme de las páginas confirmables, lo que da lugar a errores de asignación de memoria virtual.
 
-La función [**ExitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) del bloque **\_ \_ Except** libera automáticamente las asignaciones de memoria virtual, por lo que no es necesario liberar explícitamente las páginas cuando el programa finaliza a través de esta ruta de acceso de ejecución. La función [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) libera las páginas reservadas y confirmadas si el programa se compila con el control de excepciones deshabilitado. Esta función usa **la \_ versión de MEM** para anular la confirmación y liberar toda la región de las páginas reservadas y confirmadas.
+La [**función ExitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) del bloque **\_ \_ except** libera automáticamente asignaciones de memoria virtual, por lo que no es necesario liberar explícitamente las páginas cuando el programa finaliza a través de esta ruta de acceso de ejecución. La [**función VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) libera las páginas reservadas y confirmadas si el programa se ha creado con el control de excepciones deshabilitado. Esta función usa **MEM \_ RELEASE para** desa confirmar y liberar toda la región de las páginas reservadas y confirmadas.
 
-En el siguiente ejemplo de C++ se muestra la asignación de memoria dinámica mediante un controlador de excepciones estructurado.
+En el siguiente ejemplo de C++ se muestra la asignación dinámica de memoria mediante un controlador de excepciones estructurado.
 
 
 ```C++

@@ -5,7 +5,7 @@ ms.assetid: 1cc8f26d-ccd5-49ba-a2b3-0adfe9b51b11
 keywords:
 - Evento MediaCollectionChange Reproductor de Windows Media
 - Evento MediaCollectionChange Reproductor de Windows Media , clase Player
-- Clase player Reproductor de Windows Media evento , MediaCollectionChange
+- Clase de reproductor Reproductor de Windows Media evento , MediaCollectionChange
 topic_type:
 - apiref
 api_name:

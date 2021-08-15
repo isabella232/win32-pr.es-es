@@ -1,5 +1,5 @@
 ---
-description: Evalúa una expresión en compilaciones de depuración y venta al por menor. En las compilaciones de depuración, muestra un mensaje de diagnóstico si la expresión es FALSE.
+description: Evalúa una expresión en compilaciones de depuración y comercial. En las compilaciones de depuración, muestra un mensaje de diagnóstico si la expresión es FALSE.
 ms.assetid: 259a3d30-0b20-4430-8b74-83ec619576ae
 title: EXECUTE_ASSERT macro (Wxdebug.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118401805"
 ---
 # <a name="execute_assert-macro"></a>Execute \_ ASSERT macro
 
-Evalúa una expresión en compilaciones de depuración y venta al por menor. En las compilaciones de depuración, muestra un mensaje de diagnóstico si la expresión es **FALSE.**
+Evalúa una expresión en compilaciones de depuración y comercial. En las compilaciones de depuración, muestra un mensaje de diagnóstico si la expresión es **FALSE.**
 
 ## <a name="syntax"></a>Sintaxis
 

@@ -4,7 +4,7 @@ description: EnableRequestS ENABLE ya no está disponible.
 ms.assetid: 4feb7530-cced-4ead-a1fb-679b81442bb3
 ms.tgt_platform: multiple
 keywords:
-- Método EnableRequestSREQUEST Servicios de Escritorio remoto
+- Método EnableRequestSHH Servicios de Escritorio remoto
 - Método EnableRequestSATTRIBUTE Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
 - Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto , método EnableRequestSATTRIBUTE
 topic_type:
@@ -45,7 +45,7 @@ uint32 EnableRequestSOH(
 
 <dl> <dt>
 
-*RequestSMIO* \[ En\]
+*RequestSHH* \[ En\]
 </dt> <dd>
 
 Especifique **TRUE** para habilitar la característica o **FALSE** para deshabilitarla.
@@ -54,13 +54,13 @@ Especifique **TRUE** para habilitar la característica o **FALSE** para deshabil
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentarios
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,7 +81,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
+[**TSGatewayServerSettings de Win32 \_**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

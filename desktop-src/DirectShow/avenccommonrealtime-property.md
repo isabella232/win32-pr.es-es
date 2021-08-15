@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118403895"
 ---
-# <a name="avenccommonrealtime-property"></a>Propiedad AVEncCommonRealTime
+# <a name="avenccommonrealtime-property"></a>AvEncCommonRealTime, propiedad
 
 Especifica si la aplicación requiere un rendimiento de codificación en tiempo real.
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="remarks"></a>Comentarios
 
-Para especificar que la codificación debe realizarse en tiempo real, establezca esta propiedad en **VARIANT \_ TRUE.** Los códecs también pueden devolver esta propiedad como una funcionalidad.
+Para especificar que la codificación se debe realizar en tiempo real, establezca esta propiedad en **VARIANT \_ TRUE.** Los códecs también pueden devolver esta propiedad como una funcionalidad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Para especificar que la codificación debe realizarse en tiempo real, establezca
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
 | Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 

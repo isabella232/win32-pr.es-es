@@ -1,7 +1,7 @@
 ---
-description: Extiende el objeto IShellDispatch con una variedad de nuevas funciones.
+description: Extiende el objeto IShellDispatch con una variedad de funcionalidades nuevas.
 ms.assetid: 74687929-0777-479b-9853-2b0cf4b6adc9
-title: Objeto IShellDispatch2 (Shldisp. h)
+title: Objeto IShellDispatch2 (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,40 +13,40 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 79d3abbed038e09f2e73c62e5e3d9b16545e8f60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 481e64c00ced458be05255af451206a42d449c42d157794dfd1077cf2dda278a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118721095"
 ---
 # <a name="ishelldispatch2-object"></a>Objeto IShellDispatch2
 
-Extiende el objeto [**IShellDispatch**](ishelldispatch.md) con una variedad de nuevas funciones.
+Extiende el [**objeto IShellDispatch**](ishelldispatch.md) con una variedad de funcionalidades nuevas.
 
 > [!Note]  
-> **IShellDispatch2** se implementa y se obtiene acceso a él a través del objeto de [**Shell**](shell.md) .
+> **IShellDispatch2** se implementa y se accede a través del [**objeto Shell.**](shell.md)
 
  
 
 ## <a name="members"></a>Miembros
 
-El objeto **IShellDispatch2** tiene estos tipos de miembros:
+El **objeto IShellDispatch2** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **IShellDispatch2** tiene estos métodos.
+El **objeto IShellDispatch2** tiene estos métodos.
 
 
 
 | Método                                                               | Descripción                                                                        |
 |:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
 | [**CanStartStopService**](ishelldispatch2-canstartstopservice.md)   | Determina si el usuario actual puede iniciar y detener el servicio con nombre.<br/>    |
-| [**FindPrinter**](ishelldispatch2-findprinter.md)                   | Muestra el cuadro de diálogo **Buscar impresora** .<br/>                               |
+| [**FindPrinter**](ishelldispatch2-findprinter.md)                   | Muestra el **cuadro de diálogo Buscar** impresora.<br/>                               |
 | [**GetSystemInformation**](ishelldispatch2-getsysteminformation.md) | Recupera información del sistema.<br/>                                           |
-| [**IsRestricted**](ishelldispatch2-isrestricted.md)                 | Recupera el valor de restricción de un grupo del registro.<br/>              |
+| [**IsRestricted**](ishelldispatch2-isrestricted.md)                 | Recupera la configuración de restricción de un grupo del Registro.<br/>              |
 | [**IsServiceRunning**](ishelldispatch2-isservicerunning.md)         | Devuelve un valor que indica si se está ejecutando un servicio determinado.<br/> |
 | [**ServiceStart**](ishelldispatch2-servicestart.md)                 | Inicia un servicio con nombre.<br/>                                                 |
 | [**ServiceStop**](ishelldispatch2-servicestop.md)                   | Detiene un servicio con nombre.<br/>                                                  |
@@ -59,7 +59,7 @@ El objeto **IShellDispatch2** tiene estos métodos.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener una explicación de los servicios de Windows, consulte la documentación de los [servicios](../services/services.md) .
+Para obtener una explicación de Windows servicios, consulte la [documentación de](../services/services.md) servicios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,11 +67,11 @@ Para obtener una explicación de los servicios de Windows, consulte la documenta
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Para obtener una explicación de los servicios de Windows, consulte la documenta
 [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[**Objeto de Shell**](shell.md)
+[**Objeto Shell**](shell.md)
 </dt> <dt>
 
 [**IShellDispatch**](ishelldispatch.md)

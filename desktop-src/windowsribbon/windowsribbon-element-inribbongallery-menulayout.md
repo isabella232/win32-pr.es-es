@@ -1,9 +1,9 @@
 ---
-title: Propiedad InRibbonGallery. MenuLayout
-description: Representa un contenedor para los diseños del menú desplegable de la galería de In-Ribbon.
+title: Propiedad InRibbonGallery.MenuLayout
+description: Representa un contenedor para los diseños In-Ribbon menú desplegable de la Galería de aplicaciones.
 ms.assetid: 89e0eb39-2790-4571-a661-ab3ebafbb13f
 keywords:
-- InRibbonGallery. MenuLayout (propiedad) cinta de Windows
+- Propiedad InRibbonGallery.MenuLayout Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d2fc5e0eab5d8dbc35cd9cb3be96e5d5d351416
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f3748e35280972f115ae22792f28847df675b3aafe8ac91d29d930c9fd15bca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850778"
 ---
-# <a name="inribbongallerymenulayout-property"></a>Propiedad InRibbonGallery. MenuLayout
+# <a name="inribbongallerymenulayout-property"></a>Propiedad InRibbonGallery.MenuLayout
 
-Representa un contenedor para los diseños de menú desplegable [de la galería de la cinta de](windowsribbon-controls-inribbongallery.md) opciones.
+Representa un contenedor para los [diseños de](windowsribbon-controls-inribbongallery.md) menú desplegable de la Galería de la cinta de opciones.
 
 ## <a name="usage"></a>Uso
 
@@ -41,8 +41,8 @@ No hay atributos.
 
 | Elemento                                                                           | Descripción                                    |
 |-----------------------------------------------------------------------------------|------------------------------------------------|
-| [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)<br/>         | Debe aparecer exactamente una vez<br/> <br/> |
-| [**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md)<br/> | Debe aparecer exactamente una vez<br/> <br/> |
+| [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)<br/>         | Debe producirse exactamente una vez<br/> <br/> |
+| [**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md)<br/> | Debe producirse exactamente una vez<br/> <br/> |
 
 
 
@@ -56,22 +56,22 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede aparecer como máximo una vez por cada elemento [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) .
+Puede producirse como máximo una vez para cada [**elemento InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
 
 > [!Note]  
-> Se permite un máximo de un elemento secundario ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
+> Se permite un máximo de un elemento secundario ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de la [Galería de la cinta de](windowsribbon-controls-inribbongallery.md)opciones.
+En el ejemplo siguiente se muestra el marcado básico para la [Galería en cinta de opciones](windowsribbon-controls-inribbongallery.md).
 
-En esta sección de código se muestra la declaración de control **InRibbonGallery. MenuLayout** .
+En esta sección de código se muestra la declaración de control **InRibbonGallery.MenuLayout.**
 
 
 ```XML
@@ -106,18 +106,18 @@ En esta sección de código se muestra la declaración de control **InRibbonGall
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Control de la galería de la cinta de opciones](windowsribbon-controls-inribbongallery.md)
+[Control de la Galería en la cinta de opciones](windowsribbon-controls-inribbongallery.md)
 </dt> <dt>
 
 [Trabajar con galerías](ribbon-controls-galleries.md)
