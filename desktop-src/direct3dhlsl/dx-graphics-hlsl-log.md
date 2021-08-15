@@ -3,7 +3,7 @@ title: log
 description: Devuelve el logaritmo base-e del valor especificado.
 ms.assetid: 443e7aa7-7219-40ad-aafc-4bce09c8f596
 keywords:
-- log HLSL
+- LOG HLSL
 topic_type:
 - apiref
 api_name:

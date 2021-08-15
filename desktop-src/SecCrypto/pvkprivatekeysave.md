@@ -78,7 +78,7 @@ Entero largo para el tipo de clave. Los valores posibles **incluyen AT \_ KEYEXC
 *hwndOwner* \[ En\]
 </dt> <dd>
 
-Si se requiere una contraseña para cifrar la clave privada, este parámetro es un identificador para el elemento primario del cuadro de diálogo. de lo contrario, es **NULL.**
+Si se requiere una contraseña para cifrar la clave privada, este parámetro es un identificador para el elemento primario del cuadro de diálogo; de lo contrario, es **NULL.**
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Si se ha hecho correctamente, esta función **devuelve TRUE**. La **función Pvk
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |

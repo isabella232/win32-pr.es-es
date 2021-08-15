@@ -1,5 +1,5 @@
 ---
-description: El archivo VBScript WiUseXfm.vbs se proporciona en los componentes Windows SDK para Windows instaladores. En este ejemplo se muestra cómo se puede usar el script para aplicar una transformación a una base de datos Windows installer.
+description: El archivo VBScript WiUseXfm.vbs se proporciona en los componentes del SDK de Windows para Windows instaladores. En este ejemplo se muestra cómo se puede usar el script para aplicar una transformación a una base de datos Windows installer.
 ms.assetid: e647388e-5211-463d-9e3e-b502af01fc0c
 title: Aplicar una transformación
 ms.topic: article
@@ -22,9 +22,9 @@ En el ejemplo se muestra el uso de
 -   [**Método ApplyTransform**](database-applytransform.md)
 -   [**Método Commit**](database-commit.md) del objeto [ **Database**](database-object.md)
 
-Necesitará la versión CScript.exe o WScript.exe de Windows host de script para usar este ejemplo. Para usar CScript.exe para ejecutar este ejemplo, escriba una línea de comandos en el símbolo del sistema con la sintaxis siguiente. Se muestra ayuda si el primer argumento es /? o si se especifican demasiado pocos argumentos. Para redirigir la salida a un archivo, finalice la línea de comandos con VBS > \[ *ruta de acceso al archivo* \] . El ejemplo devuelve un valor de 0 para correcto, 1 si se invoca la ayuda y 2 si se produce un error en el script.
+Necesitará la versión CScript.exe o WScript.exe host de script Windows usar este ejemplo. Para usar CScript.exe para ejecutar este ejemplo, escriba una línea de comandos en el símbolo del sistema con la sintaxis siguiente. Se muestra ayuda si el primer argumento es /? o si se especifican demasiado pocos argumentos. Para redirigir la salida a un archivo, finalice la línea de comandos con VBS > \[ *ruta de acceso al archivo* \] . El ejemplo devuelve un valor de 0 para correcto, 1 si se invoca la ayuda y 2 si se produce un error en el script.
 
-**cscript WiUseXfm.vbs ruta de \[ acceso a la base de datos original para transformar las opciones de \] \[ \] \[ archivo\]**
+**cscript WiUseXfm.vbs ruta de acceso a la base de \[ datos original para transformar las opciones de \] \[ \] \[ archivo\]**
 
 Especifique la ruta de acceso a la base Windows de datos del instalador. Especifique la ruta de acceso al archivo de transformación. Si se omite la ruta de acceso al archivo de transformación, solo se comparan las dos bases de datos. El tercer argumento es un valor numérico opcional que especifica un conjunto de condiciones de error que se van a suprimir. Agregue estos valores juntos para suprimir varias condiciones.
 
@@ -43,7 +43,7 @@ Especifique la ruta de acceso a la base Windows de datos del instalador. Especif
 
  
 
-Para obtener ejemplos de scripting adicionales, [Windows Ejemplos de scripting del instalador .](windows-installer-scripting-examples.md) Para obtener utilidades de ejemplo que no requieren Windows host de script, [vea Windows Herramientas de](windows-installer-development-tools.md)desarrollo del instalador .
+Para obtener ejemplos de scripting adicionales, [Windows Ejemplos de scripting del instalador de .](windows-installer-scripting-examples.md) Para obtener utilidades de ejemplo que no requieren Windows host de script, [vea Windows Herramientas de](windows-installer-development-tools.md)desarrollo del instalador .
 
  
 

@@ -1,6 +1,6 @@
 ---
 title: Atributo Partial-Attribute-Set
-description: Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GCs). Atributo del objeto NC de réplica parcial. Define el conjunto de atributos presentes en un NC de réplica parcial determinado.
+description: Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GCs). Atributo del objeto NC de réplica parcial. Define el conjunto de atributos presentes en una NC de réplica parcial determinada.
 ms.assetid: 2840d2b7-e186-4ef2-9107-f1e5c0c2f760
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "119325455"
 ---
 # <a name="partial-attribute-set-attribute"></a>Atributo Partial-Attribute-Set
 
-Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GCs). Atributo del objeto NC de réplica parcial. Define el conjunto de atributos presentes en un NC de réplica parcial determinado.
+Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GCs). Atributo del objeto NC de réplica parcial. Define el conjunto de atributos presentes en una NC de réplica parcial determinada.
 
 
 
@@ -32,7 +32,7 @@ Realiza un seguimiento del estado de replicación interno de las réplicas parci
 | CN                | Partial-Attribute-Set                                 |
 | Ldap-Display-Name | partialAttributeSet                                   |
 | Size              | \-                                                    |
-| Privilegio actualizar  | El sistema establece este valor.                      |
+| Actualizar privilegios  | El sistema establece este valor.                      |
 | Frecuencia de actualización  | Durante la replicación                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.640                                |
 | System-Id-Guid    | 19405b9e-3cfa-11d1-a9c0-0000f80367c1                  |

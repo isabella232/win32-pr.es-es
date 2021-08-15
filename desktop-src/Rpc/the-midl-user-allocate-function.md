@@ -1,35 +1,35 @@
 ---
-title: La función midl_user_allocate
-description: La \_ \_ función de asignación de usuarios de MIDL es un procedimiento que deben proporcionar los desarrolladores de aplicaciones RPC.
+title: La midl_user_allocate función
+description: La función midl user allocate es un procedimiento que deben proporcionar los desarrolladores \_ \_ de aplicaciones RPC.
 ms.assetid: 3def405c-da05-4cce-9dc4-499864a0de6e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12b2e3196de79992f5856b7117b25f05ad782d26
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: eb8e064fc16a303660be96a4a3c47aa361c4616f54a8cb825c1fce5334543fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924254"
 ---
-# <a name="the-midl_user_allocate-function"></a>Función de \_ asignación de usuarios de MIDL \_
+# <a name="the-midl_user_allocate-function"></a>La función midl \_ user \_ allocate
 
-La función de **\_ \_ asignación de usuarios de MIDL** es un procedimiento que deben proporcionar los desarrolladores de aplicaciones RPC. Asigna memoria para el código auxiliar RPC y las rutinas de biblioteca. La función de **\_ \_ asignación de usuarios de MIDL** debe coincidir con el prototipo siguiente:
+La **función midl \_ user \_ allocate** es un procedimiento que deben proporcionar los desarrolladores de aplicaciones RPC. Asigna memoria para los códigos auxiliares de RPC y las rutinas de biblioteca. La **función midl \_ user \_ allocate** debe coincidir con el siguiente prototipo:
 
 ``` syntax
 void __RPC_FAR * __RPC_USER midl_user_allocate (size_t cBytes);
 ```
 
-El parámetro *cBytes* especifica el número de bytes que se van a asignar. Las aplicaciones cliente y las aplicaciones de servidor deben implementar la función de **\_ \_ asignación de usuarios de MIDL** a menos que esté compilando en modo de compatibilidad de OSF (/OSF). Las aplicaciones y los códigos auxiliares generados llaman de forma directa o indirecta a los **\_ \_ usuarios de MIDL** para administrar los objetos asignados. Por ejemplo:
+El *parámetro cBytes* especifica el número de bytes que se asignarán. Tanto las aplicaciones cliente como las aplicaciones de servidor deben implementar la función de asignación de usuario **midl \_ \_** a menos que se esté compilando en modo de compatibilidad con OSF (/osf). Las aplicaciones y los códigos auxiliares generados llaman al usuario **midl \_ \_ allocate** directa o indirectamente para administrar objetos asignados. Por ejemplo:
 
--   Las aplicaciones de cliente y servidor llaman a la **\_ \_ asignación de usuarios de MIDL** para asignar memoria para la aplicación, como cuando se crea un nuevo nodo en un árbol o lista vinculada.
--   El código auxiliar del servidor llama a la **\_ \_ asignación de usuarios de MIDL** al calcular las referencias de los datos en el espacio de direcciones del servidor.
--   El código auxiliar de cliente llama a la **\_ \_ asignación de usuario de MIDL** al quitar las referencias de datos del servidor al que hace referencia un puntero de \[ salida \] . Tenga en cuenta que para \[ \] \[ \] los punteros in, out y \[ Unique \] , el código auxiliar de cliente llama a la **asignación de \_ usuario \_ de MIDL** solo si el \[ valor de \] puntero único era null en la entrada y cambia a un valor distinto de NULL durante la llamada. Si el \[ puntero único no \] era null en la entrada, el código auxiliar del cliente escribe los datos asociados en la memoria existente.
+-   Las aplicaciones cliente y servidor llaman a **midl \_ user \_ allocate** para asignar memoria para la aplicación, por ejemplo, al crear un nuevo nodo en un árbol o una lista vinculada.
+-   El código auxiliar del servidor llama **a midl \_ user \_ allocate** al desmarque los datos en el espacio de direcciones del servidor.
+-   El código auxiliar de cliente llama a **midl \_ user \_ allocate** al desmarque los datos del servidor al que hace referencia un \[ puntero \] out. Tenga en cuenta que para en \[ \] , out y \[ \] \[ \] punteros únicos, **\_ \_** \[ \] el código auxiliar de cliente llama a midl user allocate solo si el valor de puntero único era NULL en la entrada y cambia a un valor distinto de NULL durante la llamada. Si el puntero único no era NULL en la entrada, el código auxiliar del cliente \[ \] escribe los datos asociados en la memoria existente.
 
-Si **el \_ usuario \_** de la asignación de MIDL no puede asignar memoria, debe devolver un puntero nulo.
+Si **la \_ asignación de usuario \_ midl** no puede asignar memoria, debe devolver un puntero nulo.
 
-La función de **\_ \_ asignación de usuarios de MIDL** debe devolver un puntero alineado de 8 bytes.
+La **función midl \_ user \_ allocate** debe devolver un puntero alineado de 8 bytes.
 
-Por ejemplo, los programas de ejemplo que se proporcionan con el kit de desarrollo de software (SDK) de la plataforma implementan **MIDL \_ User \_ alloca** en términos de la función de C [**malloc**](pointers-and-memory-allocation.md):
+Por ejemplo, los programas de ejemplo proporcionados con el Kit de desarrollo de software de plataforma (SDK) implementan la asignación de usuario **midl \_ \_** en términos de la función de C [**malloc**](pointers-and-memory-allocation.md):
 
 
 ```C++
@@ -42,10 +42,10 @@ void __RPC_FAR * __RPC_USER midl_user_allocate(size_t cBytes)
 
 
 > [!Note]  
-> Si el paquete RpcSs está habilitado (por ejemplo, como resultado de usar el \[ atributo [**enable \_ allocate**](/windows/desktop/Midl/enable-allocate) \] ), use [**RpcSmAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcsmallocate) para asignar memoria en el lado servidor. Para obtener información adicional sobre cómo \[ **Habilitar la \_ asignación** \] , vea [referencia de MIDL](/windows/desktop/Midl/midl-language-reference).
+> Si el paquete RpcSs está habilitado (por ejemplo, como resultado de usar el atributo \[ [**enable \_ allocate),**](/windows/desktop/Midl/enable-allocate) \] use [**RpcSmAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcsmallocate) para asignar memoria en el lado servidor. Para obtener información adicional sobre \[ **cómo habilitar la \_ asignación,** \] vea [MidL Reference](/windows/desktop/Midl/midl-language-reference).
 
- 
+ 
 
- 
+ 
 
- 
+ 

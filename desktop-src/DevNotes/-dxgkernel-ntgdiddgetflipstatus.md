@@ -1,7 +1,7 @@
 ---
 description: Determina si se ha producido el volteo solicitado más recientemente en una superficie.
 ms.assetid: 4489e259-b22d-4e72-807a-5290401f0331
-title: Función NtGdiDdGetFlipStatus (Ntgdi. h)
+title: Función NtGdiDdGetFlipStatus (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 49ef59fd110c315b3111252084a3c60ddf4cd598
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e309d5bdda6e6c18145a36902bd8b4927fab7c11bf314f88571c4f0de4b7dc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956344"
 ---
-# <a name="ntgdiddgetflipstatus-function"></a>NtGdiDdGetFlipStatus función)
+# <a name="ntgdiddgetflipstatus-function"></a>Función NtGdiDdGetFlipStatus
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios en el sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
 Determina si se ha producido el volteo solicitado más recientemente en una superficie.
 
@@ -45,30 +45,30 @@ DWORD APIENTRY NtGdiDdGetFlipStatus(
 
 <dl> <dt>
 
-*hSurface* \[ de\]
+*hSurface* \[ En\]
 </dt> <dd>
 
-Identificador de una [estructura \_ \_ local](https://msdn.microsoft.com/library/ms793861.aspx) de la superficie de DD que describe la superficie cuyo estado de volteo se está consultando.
+Identificador de una [estructura LOCAL de DD \_ SURFACE \_ ](https://msdn.microsoft.com/library/ms793861.aspx) que describe la superficie cuyo estado de volteo se está consultando.
 
 </dd> <dt>
 
 *puGetFlipStatusData* \[ in, out\]
 </dt> <dd>
 
-Puntero a una estructura [DD \_ GETFLIPSTATUSDATA](https://msdn.microsoft.com/library/ms793859.aspx) que contiene la información necesaria para realizar la consulta Flip status.
+Puntero a una [estructura \_ GETFLIPSTATUSDATA](https://msdn.microsoft.com/library/ms793859.aspx) de DD que contiene la información necesaria para realizar la consulta de estado de volteo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**NtGdiDdGetFlipStatus** devuelve uno de los siguientes códigos de devolución de llamada.
+**NtGdiDdGetFlipStatus devuelve** uno de los siguientes códigos de devolución de llamada.
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_controlador DDHAL \_ controlado**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ Aceptar, DirectDraw o Direct3D continúa con la función. De lo contrario, DirectDraw o Direct3D devuelve el código de error proporcionado por el controlador y anula la función.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED del controlador DDHAL \_**</dt> </dl> | El controlador no tiene ningún comentario en la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D informa de una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido ejecutando la implementación independiente de dispositivos DirectDraw o Direct3D.<br/> |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ correcto, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ NO CONTROLADA**</dt> </dl> | El controlador no tiene ningún comentario sobre la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D notifica una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido mediante la ejecución de la implementación independiente del dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -78,19 +78,19 @@ Puntero a una estructura [DD \_ GETFLIPSTATUSDATA](https://msdn.microsoft.com/li
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

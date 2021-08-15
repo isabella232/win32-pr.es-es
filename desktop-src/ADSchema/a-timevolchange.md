@@ -4,8 +4,8 @@ description: Este atributo indica la última vez que se cambió un archivo en el
 ms.assetid: e0a985fb-1b50-457e-80db-e71ab5570c51
 ms.tgt_platform: multiple
 keywords:
-- Schema-Vol-Change atributo AD Schema
-- timeVolChange esquema de AD de atributos
+- Esquema de AD del atributo Time-Vol-Change
+- TimeVolChange attribute AD Schema (Esquema de AD del atributo timeVolChange)
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 315715996e685949f35f7088fff5368b95c5ba54
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c4db9a1eb7a7c42d72557368a88353a5fb36c073fbc41136bb83c5546f3fb527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081349"
 ---
 # <a name="time-vol-change-attribute"></a>Atributo Time-Vol-Change
 
@@ -27,16 +27,16 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Tiempo-Vol-cambio                      |
-| Nombre para mostrar de LDAP | timeVolChange                        |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Cambio de volumen de tiempo                      |
+| Ldap-Display-Name | timeVolChange                        |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.502               |
-| System-ID-GUID    | ddac0cf0-af8f-11d0-afeb-00c04fd930c9 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | ddac0cf0-af8f-11d0-afeb-00c04fd930c9 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -53,20 +53,20 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

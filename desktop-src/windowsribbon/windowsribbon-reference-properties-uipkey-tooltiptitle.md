@@ -25,7 +25,7 @@ propertyDescription
       type = VT_LPWSTR
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La interfaz de usuario PKEY TooltipTitle la usa una aplicación para consultar la información sobre herramientas de \_ pestañas, grupos, botones, elementos de la galería y otros controles \_ de la cinta de opciones.
 

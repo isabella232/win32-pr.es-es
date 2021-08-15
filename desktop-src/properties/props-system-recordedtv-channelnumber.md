@@ -1,19 +1,19 @@
 ---
-description: Canales de TV grabados. Por ejemplo, 42, 5, 53.
+description: Los canales de televisión grabados. Por ejemplo, 42, 5, 53.
 ms.assetid: daa738a0-b4db-4b8d-bd88-6ae66c10f7d1
-title: System. RecordedTV. ChannelNumber
+title: System.RecordedTV.ChannelNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33066e2c40c6f4535a2164e3ad4ad8a51ba4ddc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88247588b665d93b369211efee2f6c0f807873752477f19a13a907b7067838c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969914"
 ---
-# <a name="systemrecordedtvchannelnumber"></a>System. RecordedTV. ChannelNumber
+# <a name="systemrecordedtvchannelnumber"></a>System.RecordedTV.ChannelNumber
 
-Canales de TV grabados. Por ejemplo, 42, 5, 53.
+Los canales de televisión grabados. Por ejemplo, 42, 5, 53.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -44,9 +44,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -61,7 +61,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -73,7 +73,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -91,7 +91,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: El objeto de configuración expone las siguientes propiedades.
+description: El Configuración objeto expone las siguientes propiedades.
 ms.assetid: 4BB369DC-B310-49B6-A117-DD778CCD9902
-title: Propiedades de configuración
+title: Configuración Propiedades
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ed80642cb22752b9da00147c0d4ca8059c8a29c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 458f4f35b485b2610112df4855196ce2a7b4cc276078c0d1da9bb6bffb758464
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900345"
 ---
-# <a name="settings-properties"></a>Propiedades de configuración
+# <a name="settings-properties"></a>Configuración Propiedades
 
-El objeto de [**configuración**](settings.md) expone las siguientes propiedades.
+El [**Configuración**](settings.md) objeto expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 

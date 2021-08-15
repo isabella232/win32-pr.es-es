@@ -1,9 +1,9 @@
 ---
 title: atributo switch
-description: La palabra clave switch selecciona el discriminante de una Unión encapsulada \_ .
+description: La palabra clave switch selecciona el discriminador para una unión \_ encapsulada.
 ms.assetid: 66179b68-852f-4943-9105-e9fb310f3c2e
 keywords:
-- atributo de modificador MIDL
+- atributo switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cdf9342789d5603a3b64d778bd60364eebde50e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 422b52a339a83cbaf59a9d65c0ed0e4e7e41533dcbf0be962147327145588a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103994733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013553"
 ---
 # <a name="switch-attribute"></a>atributo switch
 
-La palabra clave **Switch** selecciona el discriminante de una [**\_ Unión encapsulada**](encapsulated-unions.md).
+La palabra clave **switch** selecciona el discriminador para una [**unión \_ encapsulada.**](encapsulated-unions.md)
 
 ``` syntax
 switch (switch-type switch-name)
@@ -31,17 +31,17 @@ switch (switch-type switch-name)
 
 <dl> <dt>
 
-*tipo de conmutador* 
+*switch-type* 
 </dt> <dd>
 
-Especifica un tipo [**int**](int.md), [**Char**](-char.md), [**enum**](enum.md) o un identificador que se resuelve en uno de estos tipos.
+Especifica un [**tipo int**](int.md), [**char,**](-char.md) [**enum**](enum.md) o un identificador que se resuelve en uno de estos tipos.
 
 </dd> <dt>
 
-*cambiar nombre* 
+*switch-name* 
 </dt> <dd>
 
-Especifica el nombre de la variable de tipo *Switch-Type* que actúa como discriminante de Unión.
+Especifica el nombre de la variable de tipo *switch-type* que actúa como discriminador de unión.
 
 </dd> </dl>
 
@@ -75,21 +75,21 @@ typedef struct _S1_TYPE
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[Uniones no encapsuladas](nonencapsulated-unions.md)
+[Uniones no superadas](nonencapsulated-unions.md)
 </dt> <dt>
 
-[**el modificador \_ es**](switch-is.md)
+[**switch \_ es**](switch-is.md)
 </dt> <dt>
 
-[**tipo de conmutador \_**](switch-type.md)
+[**tipo \_ de conmutador**](switch-type.md)
 </dt> <dt>
 
 [**Unión**](union.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CTLCOLORLISTBOX (Winuser. h)
-description: Se envía a la ventana primaria de un cuadro de lista antes de que el sistema dibuje el cuadro de lista. Al responder a este mensaje, la ventana primaria puede establecer los colores de texto y de fondo del cuadro de lista utilizando el identificador de contexto de dispositivo de pantalla especificado.
+title: WM_CTLCOLORLISTBOX mensaje (Winuser.h)
+description: Se envía a la ventana primaria de un cuadro de lista antes de que el sistema dibuje el cuadro de lista. Al responder a este mensaje, la ventana primaria puede establecer el texto y los colores de fondo del cuadro de lista mediante el identificador de contexto del dispositivo para mostrar especificado.
 ms.assetid: e128e77f-e966-44c4-9f0e-efcf421b6c82
 keywords:
-- WM_CTLCOLORLISTBOX controles de mensajes de Windows
+- WM_CTLCOLORLISTBOX controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e949af76bd05aa9ad3a3e720c89be33cfe76ed8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1713c7251dfe837d5796b708fa5b77f0aa5e372c031c251199cb871dbd7c5608
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077669"
 ---
-# <a name="wm_ctlcolorlistbox-message"></a>Mensaje de CTLCOLORLISTBOX de WM \_
+# <a name="wm_ctlcolorlistbox-message"></a>Mensaje \_ CTLCOLORLISTBOX de WM
 
-Se envía a la ventana primaria de un cuadro de lista antes de que el sistema dibuje el cuadro de lista. Al responder a este mensaje, la ventana primaria puede establecer los colores de texto y de fondo del cuadro de lista utilizando el identificador de contexto de dispositivo de pantalla especificado.
+Se envía a la ventana primaria de un cuadro de lista antes de que el sistema dibuje el cuadro de lista. Al responder a este mensaje, la ventana primaria puede establecer el texto y los colores de fondo del cuadro de lista mediante el identificador de contexto del dispositivo para mostrar especificado.
 
 
 ```C++
@@ -42,7 +42,7 @@ WM_CTLCOLORLISTBOX
 *wParam* 
 </dt> <dd>
 
-Identificador del contexto de dispositivo para el cuadro de lista.
+Identificador del contexto del dispositivo para el cuadro de lista.
 
 </dd> <dt>
 
@@ -55,29 +55,29 @@ Identificador del cuadro de lista.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si una aplicación procesa este mensaje, debe devolver un identificador a un pincel. El sistema utiliza el pincel para pintar el fondo del cuadro de lista.
+Si una aplicación procesa este mensaje, debe devolver un identificador a un pincel. El sistema usa el pincel para pintar el fondo del cuadro de lista.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) selecciona los colores predeterminados del sistema para el cuadro de lista.
+De forma predeterminada, [**la función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) selecciona los colores predeterminados del sistema para el cuadro de lista.
 
-El mensaje de **\_ CTLCOLORLISTBOX de WM** nunca se envía entre subprocesos. Solo se envía dentro de un subproceso.
+El **mensaje \_ WM CTLCOLORLISTBOX** nunca se envía entre subprocesos. Solo se envía dentro de un subproceso.
 
-Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado a **int \_ ptr** y devolver el valor directamente. Si el procedimiento del cuadro de diálogo devuelve **false**, se realiza el control de mensajes predeterminado. Se omite el valor de **DWL \_ MSGRESULT** establecido por la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) .
+Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado en **int \_ PTR** y devolver el valor directamente. Si el procedimiento del cuadro de diálogo **devuelve FALSE,** se realiza el control de mensajes predeterminado. Se omite el valor **\_ MSGRESULT** de DWL establecido por la función [**SetWindowLong.**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -87,7 +87,7 @@ Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir 
 [**RealizePalette**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette)
 </dt> <dt>
 
-[**SelectPalette**](/windows/desktop/api/wingdi/nf-wingdi-selectpalette)
+[**SeleccionarPalette**](/windows/desktop/api/wingdi/nf-wingdi-selectpalette)
 </dt> <dt>
 
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)

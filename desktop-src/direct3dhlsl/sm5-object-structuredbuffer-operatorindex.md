@@ -1,6 +1,6 @@
 ---
 title: StructuredBuffer::Operator (Función)
-description: Devuelve una variable de recurso de solo lectura de StructuredBuffer.
+description: Devuelve una variable de recurso de solo lectura de structuredBuffer.
 ms.assetid: e2a1b0f7-f374-44a3-b567-8a2318e8b2b8
 keywords:
 - Función de operador HLSL
@@ -72,7 +72,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 [StructuredBuffer](sm5-object-structuredbuffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

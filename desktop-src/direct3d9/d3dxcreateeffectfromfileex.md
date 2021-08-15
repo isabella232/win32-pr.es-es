@@ -71,7 +71,7 @@ Puntero al nombre de archivo. Este parámetro admite cadenas Unicode y ANSI. Vea
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matriz opcional terminada en NULL de definiciones de macro de preprocesador. Vea [**D3DXMACRO.**](d3dxmacro.md)
+Matriz opcional terminada en NULL de definiciones de macros de preprocesador. Vea [**D3DXMACRO**](d3dxmacro.md).
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Cadena de parámetros de efecto que el sistema de efectos omitirá. La cadena de
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Si *pSrcFile contiene* un efecto de texto, las marcas pueden ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo contrario, *pSrcFile* contiene un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
+Si *pSrcFile contiene* un efecto de texto, flags puede ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo contrario, *pSrcFile* contiene un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ Devuelve un puntero a un búfer que contiene el efecto compilado. Vea [**ID3DXEf
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Devuelve un puntero a un búfer que contiene una lista de errores de compilación. Vea [**ID3DXBuffer.**](id3dxbuffer.md)
+Devuelve un puntero a un búfer que contiene una lista de errores de compilación. Vea [**ID3DXBuffer**](id3dxbuffer.md).
 
 </dd> </dl>
 
@@ -137,18 +137,18 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función es una versión extendida de [**D3DXCreateEffectFromFile**](d3dxcreateeffectfromfile.md) que permite a una aplicación especificar qué constantes de efecto administrará la aplicación. El sistema de efectos omite una constante administrada por la aplicación. Es decir, la aplicación es responsable de inicializar la constante, así como de guardar y restaurar su estado siempre que corresponda.
+Esta función es una versión extendida de [**D3DXCreateEffectFromFile**](d3dxcreateeffectfromfile.md) que permite a una aplicación especificar qué constantes de efecto administrará la aplicación. El sistema de efectos omite una constante administrada por la aplicación. Es decir, la aplicación es responsable de inicializar la constante, así como de guardar y restaurar su estado siempre que sea necesario.
 
 Esta función comprueba cada constante de pSkipConstants para ver lo siguiente:
 
 -   Está enlazado a un registro constante.
 -   Solo se usa en el código del sombreador HLSL.
 
-Si se denomina una constante en la cadena que no está presente en el efecto, se omite.
+Si una constante se denomina en la cadena que no está presente en el efecto, se omite.
 
-Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve en LPCSTR.
+Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve como LPCSTR.
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXCreateEffectFromFileW. De lo contrario, la llamada de función se resuelve en D3DXCreateEffectFromFileA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXCreateEffectFromFileW. De lo contrario, la llamada de función se resuelve en D3DXCreateEffectFromFileA porque se usan cadenas ANSI.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,23 +1,23 @@
 ---
-description: La \_ clase de bastidor CIM expone los métodos siguientes.
+description: La clase CIM \_ Rack expone los métodos siguientes.
 ms.assetid: 0828BF9E-D374-4FF4-B6D9-C1492CE108E3
 ms.tgt_platform: multiple
-title: Métodos CIM_Rack
+title: CIM_Rack métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 994540d8dc337d712a0e33881a83f068a7b3c434
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a422ac043b9744cec9236e8337c2c519ba19d09080d0b248a3bdf47a8d45f64d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080309"
 ---
-# <a name="cim_rack-methods"></a>\_Métodos del bastidor CIM
+# <a name="cim_rack-methods"></a>Métodos \_ de bastidor CIM
 
-La clase de [**\_ bastidor CIM**](cim-rack.md) expone los métodos siguientes.
+La [**clase CIM \_ Rack**](cim-rack.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

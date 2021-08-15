@@ -51,14 +51,14 @@ Identificador del BLOB.
 *pExpression* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [EXPRESSION](expression.md) que define la expresión de filtro que se va a establecer.
+Puntero a una [estructura EXPRESSION](expression.md) que define la expresión de filtro que se va a establecer.
 
 </dd> <dt>
 
 *hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que especifica dónde en el BLOB original se produjo el error (si lo hubiera).
+Identificador de un BLOB de error que especifica dónde se produjo el error (si lo hubiera) en el BLOB original.
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 ## <a name="remarks"></a>Comentarios
 
-Los datos de filtro de coincidencia de patrones almacenados **en la categoría Config** del BLOB.
+Los datos de filtro de coincidencia de patrón almacenados **en la categoría Config** del BLOB.
 
 ## <a name="requirements"></a>Requisitos
 

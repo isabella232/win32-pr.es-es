@@ -1,11 +1,11 @@
 ---
-title: Método INapServerManagement RegisterSystemHealthValidator (NapServerManagement. h)
-description: Registra un SHV.
+title: Método INapServerManagement RegisterSystemHealthValidator (NapServerManagement.h)
+description: Registra una SHV.
 ms.assetid: 23f147d5-3c4e-48ca-940a-c4350ad6ecb3
 keywords:
-- Método RegisterSystemHealthValidator NAP
-- Método RegisterSystemHealthValidator NAP, interfaz INapServerManagement
-- Interfaz INapServerManagement NAP, método RegisterSystemHealthValidator
+- Método NAP de RegisterSystemHealthValidator
+- Método NAP de RegisterSystemHealthValidator, interfaz INapServerManagement
+- INapServerManagement interface NAP , RegisterSystemHealthValidator method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2abd8d42da196caa804a8919c6425fda9fcb950c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bdb5dc93c5bb927ffb25df20f37e5b2c30560153efb006f3c91bf7e97efec360
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012573"
 ---
-# <a name="inapservermanagementregistersystemhealthvalidator-method"></a>INapServerManagement:: RegisterSystemHealthValidator (método)
+# <a name="inapservermanagementregistersystemhealthvalidator-method"></a>Método INapServerManagement::RegisterSystemHealthValidator
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapServerManagement:: RegisterSystemHealthValidator** registra un SHV.
+El **método INapServerManagement::RegisterSystemHealthValidator** registra una SHV.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,17 +48,17 @@ HRESULT RegisterSystemHealthValidator(
 
 <dl> <dt>
 
-*validador* \[ de\]
+*Validador* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**NapComponentRegistrationInfo**](/windows/win32/api/naptypes/ns-naptypes-napcomponentregistrationinfo) que contiene la información de registro de SHV.
+Puntero a una [**estructura NapComponentRegistrationInfo**](/windows/win32/api/naptypes/ns-naptypes-napcomponentregistrationinfo) que contiene la información de registro de SHV.
 
 </dd> <dt>
 
-*validatorClsid* \[ de\]
+*validatorClsid* \[ En\]
 </dt> <dd>
 
-Puntero al CLSID de la clase COM que implementa la interfaz [**INapSystemHealthValidator**](inapsystemhealthvalidator.md) .
+Puntero al CLSID de la clase COM que implementa la [**interfaz INapSystemHealthValidator.**](inapsystemhealthvalidator.md)
 
 </dd> </dl>
 
@@ -70,10 +70,10 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                            | Descripción                                                        |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>                  | Operación realizada correctamente.<br/>                                    |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>                  | Operación realizada correctamente.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl>        | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
-| <dl> <dt>**\_ \_ identificador conflictivo de NAP \_ E**</dt> </dl> | El ID. de SHV ya está registrado.<br/>                           |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | El límite de recursos del sistema no pudo realizar la operación.<br/> |
+| <dl> <dt>**NAP \_ E \_ CONFLICTING \_ ID**</dt> </dl> | El identificador de SHV ya está registrado.<br/>                           |
 
 
 
@@ -83,17 +83,17 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                               |
-| Encabezado<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
+| Header<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

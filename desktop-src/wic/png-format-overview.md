@@ -1,19 +1,19 @@
 ---
-description: En este tema se proporciona información sobre el códec PNG nativo disponible a través Windows Imaging Component (WIC).
+description: En este tema se proporciona información sobre el códec PNG nativo disponible a través de Windows Imaging Component (WIC).
 ms.assetid: 703217EA-70C8-4F86-B8DF-95468C78C8DA
 title: Información general sobre el formato PNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bb00b7530a22fcdbcce112053431ace5e553383
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 4f3d74282f8c14fd94b3661430402a808b04ceb9cf0a061a1648f7a912af5636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086759"
 ---
 # <a name="png-format-overview"></a>Información general sobre el formato PNG
 
-En este tema se proporciona información sobre el códec PNG nativo disponible a través Windows Imaging Component (WIC).
+En este tema se proporciona información sobre el códec PNG nativo disponible a través de Windows Imaging Component (WIC).
 
 ## <a name="codec-identity"></a>Identidad de códec
 
@@ -52,7 +52,7 @@ A partir de Windows 8 WIC proporciona un descodificador PNG adicional
 
 ## <a name="encoding"></a>Encoding
 
-La API de codificación wic está diseñada para ser independiente del códec y la codificación de imágenes para códecs habilitados para WIC es básicamente la misma. Para más información sobre la codificación de imágenes mediante la API de WIC, consulte Información general [sobre codificación.](-wic-creating-encoder.md)
+La API de codificación wic está diseñada para ser independiente del códec y la codificación de imágenes para códecs habilitados para WIC es básicamente la misma. Para obtener más información sobre la codificación de imágenes mediante la API de WIC, vea Información general [sobre codificación.](-wic-creating-encoder.md)
 
 ### <a name="encoder-options"></a>Opciones del codificador
 

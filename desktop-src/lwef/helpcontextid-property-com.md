@@ -13,7 +13,7 @@ ms.locfileid: "118478712"
 ---
 # <a name="helpcontextid-property-command-object"></a>Propiedad HelpContextID (objeto Command)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Devuelve o establece un número de contexto asociado para el [**objeto Command.*
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agent.***Caracteres("**_CharacterID_*_"). Commands(""). HelpContextID_ *  \[  =  *Number*\]
+*agent.***Characters("**_CharacterID_*_"). Commands(""). HelpContextID_ *  \[  =  *Number*\]
 
 
 
@@ -43,18 +43,18 @@ Devuelve o establece un número de contexto asociado para el [**objeto Command.*
 
 ## <a name="remarks"></a>Comentarios
 
-Si ha creado un archivo de Ayuda de Windows para la aplicación y ha establecido la propiedad [**HelpFile**](helpfile-property.md) del carácter en el archivo, el Agente llama automáticamente a help cuando [**HelpModeOn**](helpmodeon-property.md) está establecido en **True** y el usuario selecciona el comando. Si establece un número de contexto en [**HelpContextID,**](helpcontextid-property.md)el Agente llama a la Ayuda y busca el tema identificado por el número de contexto actual. El número de contexto actual es el valor de **HelpContextID** para el comando.
+Si ha creado un archivo de Ayuda de Windows para la aplicación y ha establecido la propiedad [**HelpFile**](helpfile-property.md) del carácter en el archivo, el Agente llama automáticamente a la Ayuda cuando [**HelpModeOn**](helpmodeon-property.md) está establecido en **True** y el usuario selecciona el comando. Si establece un número de contexto en [**HelpContextID,**](helpcontextid-property.md)el Agente llama a la Ayuda y busca el tema identificado por el número de contexto actual. El número de contexto actual es el valor **de HelpContextID** para el comando.
 
 Esta propiedad solo se aplica al uso del carácter por parte de la aplicación cliente; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
 
 > [!Note]  
-> La compilación de un archivo de Ayuda requiere microsoft Windows compilador de Ayuda.
+> La compilación de un archivo de Ayuda requiere el compilador Windows Ayuda de Microsoft.
 
  
 
 ## <a name="see-also"></a>Consulte también
 
-[**HelpFile, propiedad**](helpfile-property.md)
+[**Propiedad HelpFile**](helpfile-property.md)
 
 
  

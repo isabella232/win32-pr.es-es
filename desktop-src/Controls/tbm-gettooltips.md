@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_GETTOOLTIPS (commctrl. h)
-description: Recupera el identificador del control de información sobre herramientas asignado a TrackBar, si existe.
+title: TBM_GETTOOLTIPS mensaje (Commctrl.h)
+description: Recupera el identificador del control de información sobre herramientas asignado a la barra de seguimiento, si lo hay.
 ms.assetid: 30efef12-1aec-4635-94a7-1843db404c4f
 keywords:
-- TBM_GETTOOLTIPS controles de mensajes de Windows
+- TBM_GETTOOLTIPS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e02b0b757b1aabfef2c9df2e80ca9f96542ba4a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c97c94ab3a696f5967f724e76d2d8702a01275bedc06ad7c13907d57710a078
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078069"
 ---
-# <a name="tbm_gettooltips-message"></a>TBM \_ GETTOOLTIPS
+# <a name="tbm_gettooltips-message"></a>Mensaje \_ GETTOOLTIPS de TBM
 
-Recupera el identificador del control de información sobre herramientas asignado a TrackBar, si existe.
+Recupera el identificador del control de información sobre herramientas asignado a la barra de seguimiento, si lo hay.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,17 +37,17 @@ Recupera el identificador del control de información sobre herramientas asignad
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador del control de información sobre herramientas asignado a TrackBar o **null** si la información sobre herramientas no está en uso. Si el control TrackBar no usa el estilo [**de \_ información sobre herramientas de TBS**](trackbar-control-styles.md) , el valor devuelto es **null**.
+Devuelve el identificador al control de información sobre herramientas asignado a la barra de seguimiento o **NULL** si la información sobre herramientas no está en uso. Si el control trackbar no usa el estilo [**TBS \_ TOOLTIPS,**](trackbar-control-styles.md) el valor devuelto es **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -18,10 +18,10 @@ ms.locfileid: "118341257"
 ---
 # <a name="creating-the-region-file"></a>Creación del archivo de región
 
-Querrá crear un archivo de región que muestre las áreas que responden a las pulsaciones. Simplemente puede copiar las capas base de cada elemento en una nueva capa y colorearlas para que se correspondan con los números de color que usará en el archivo de definición de máscara. Asegúrese de que las imágenes que cree en esta capa sean sólidas y de que no se aplique ningún efecto. Probablemente querrá anotar los números de color de cada imagen. Puede obtener los números de color del cuadro de texto de Photoshop Selector de colores. Quiere los números RGB, que son tres números decimales. Cada número oscila entre 0 y 255. Por ejemplo, un rojo sólido sería 255, 0, 0.
+Querrá crear un archivo de región que muestre las áreas que responden a las pulsaciones. Simplemente puede copiar las capas base de cada elemento en una capa nueva y colorearlas para que se correspondan con los números de color que usará en el archivo de definición de máscara. Asegúrese de que las imágenes que cree en esta capa sean sólidas y que no se aplique ningún efecto. Probablemente querrá anotar los números de color de cada imagen. Puede obtener los números de color en el cuadro de Selector de colores. Quiere los números RGB, que son tres números decimales. Cada número oscila entre 0 y 255. Por ejemplo, un rojo sólido sería 255, 0, 0.
 
 > [!Note]  
-> Los archivos de región no se usan Reproductor de Windows Media 10 máscaras móviles porque los tipos de botón no se admiten en Reproductor de Windows Media 10 Mobile o versiones posteriores.
+> Los archivos de región no se usan en Reproductor de Windows Media 10 máscaras móviles porque los tipos de botón no se admiten en Reproductor de Windows Media 10 Mobile o versiones posteriores.
 
  
 

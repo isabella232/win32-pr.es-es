@@ -41,7 +41,7 @@ Se envía a una ventana para asociar una tecla de acceso activa a la ventana. Cu
 
 La palabra de orden bajo especifica el código de clave virtual que se asociará a la ventana.
 
-La palabra de orden superior puede ser uno o varios de los siguientes valores de CommCtrl.h.
+La palabra de orden superior puede ser uno o varios de los valores siguientes de CommCtrl.h.
 
 Si *se establece wParam* en **NULL,** se quita la tecla de acceso activa asociada a una ventana.
 
@@ -75,9 +75,9 @@ El valor devuelto es uno de los siguientes.
 
 | Valor devuelto                                                                  | Descripción                                                                             |
 |-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| <dl> <dt>-1</dt> </dl> | La función no se realiza correctamente; la tecla de acceso no es válida.<br/>                        |
-| <dl> <dt>0</dt> </dl>  | La función no se realiza correctamente; la ventana no es válida.<br/>                         |
-| <dl> <dt>1</dt> </dl>  | La función se realiza correctamente y ninguna otra ventana tiene la misma tecla de acceso.<br/>        |
+| <dl> <dt>-1</dt> </dl> | La función no es correcta; la tecla de acceso no es válida.<br/>                        |
+| <dl> <dt>0</dt> </dl>  | La función no es correcta; la ventana no es válida.<br/>                         |
+| <dl> <dt>1</dt> </dl>  | La función se realiza correctamente y ninguna otra ventana tiene la misma clave activa.<br/>        |
 | <dl> <dt>2</dt> </dl>  | La función se realiza correctamente, pero otra ventana ya tiene la misma tecla de acceso.<br/> |
 
 
@@ -86,15 +86,15 @@ El valor devuelto es uno de los siguientes.
 
 ## <a name="remarks"></a>Comentarios
 
-Una tecla de acceso activa no se puede asociar a una ventana secundaria.
+No se puede asociar una tecla de acceso activa a una ventana secundaria.
 
-**VK \_ ESCAPE,** **VK \_ SPACE** y **VK \_ TAB** son teclas de acceso rápido no válidas.
+**VK \_ ESCAPE,** **VK \_ SPACE y** **VK \_ TAB** son teclas de acceso rápido no válidas.
 
-Cuando el usuario presiona la tecla de acceso rápido, el sistema genera un mensaje [**\_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) wm con *wParam* igual a **SC \_ HOTKEY** y *lParam* igual al identificador de la ventana. Si este mensaje se pasa [**a DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca), el sistema llevará el último elemento emergente activo de la ventana (si existe) o la propia ventana (si no hay ninguna ventana emergente) al primer plano.
+Cuando el usuario presiona la tecla de acceso rápido, el sistema genera un mensaje [**\_ SYSCOMMAND wm**](/windows/desktop/menurc/wm-syscommand) con *wParam* igual a **SC \_ HOTKEY** y *lParam* igual al identificador de la ventana. Si este mensaje se pasa a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca), el sistema llevará el último elemento emergente activo de la ventana (si existe) o la propia ventana (si no hay ninguna ventana emergente) al primer plano.
 
-Una ventana solo puede tener una tecla de acceso. Si la ventana ya tiene una tecla de acceso activa asociada, la nueva tecla de acceso activa reemplaza a la antigua. Si más de una ventana tiene la misma tecla de acceso rápido, la ventana activada por la tecla de acceso rápido es aleatoria.
+Una ventana solo puede tener una tecla de acceso activa. Si la ventana ya tiene asociada una tecla de acceso activa, la nueva tecla de acceso activa reemplaza a la antigua. Si más de una ventana tiene la misma tecla de acceso rápido, la ventana activada por la tecla de acceso rápido es aleatoria.
 
-Estas teclas de acceso rápido no están relacionadas con las teclas de acceso rápido establecidas [**por RegisterHotKey**](/windows/win32/api/winuser/nf-winuser-registerhotkey).
+Estas teclas de acceso rápido no están relacionadas con las teclas de acceso rápido establecidas [**por RegisterHotKey.**](/windows/win32/api/winuser/nf-winuser-registerhotkey)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,7 +1,7 @@
 ---
-description: Se produce cuando el IInkAnalyzer mueve un trazo de un objeto IContextNode a otro.
+description: Se produce cuando IInkAnalyzer mueve un trazo de un objeto IContextNode a otro.
 ms.assetid: a90214af-c3ea-4e2a-94b4-bb5746a2b476
-title: 'Evento _IAnalysisProxyEvents:: StrokeReparented (IACom. h)'
+title: _IAnalysisProxyEvents::StrokeReparented (Evento IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: a587acb6534641d5d64981ab25247b0e23e4f347
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 1e9262eb7b4ce2b323669eeb084abb597b5fe00488df90fc5fde0b2876b7e953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105707589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967874"
 ---
-# <a name="_ianalysisproxyeventsstrokereparented-event"></a>\_Evento IAnalysisProxyEvents:: StrokeReparented
+# <a name="_ianalysisproxyeventsstrokereparented-event"></a>\_Evento IAnalysisProxyEvents::StrokeReparented
 
-Se produce cuando el [**IInkAnalyzer**](iinkanalyzer.md) mueve un trazo de un objeto [**IContextNode**](icontextnode.md) a otro.
+Se produce cuando [**IInkAnalyzer**](iinkanalyzer.md) mueve un trazo de un [**objeto IContextNode**](icontextnode.md) a otro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ HRESULT StrokeReparented(
 
 <dl> <dt>
 
-*pInkAnalyzer* \[ de\]
+*pInkAnalyzer* \[ En\]
 </dt> <dd>
 
-El objeto [**IInkAnalyzer**](iinkanalyzer.md) que mueve el trazo.
+Objeto [**IInkAnalyzer**](iinkanalyzer.md) que mueve el trazo.
 
 </dd> <dt>
 
-*lStrokeIdToMove* \[ de\]
+*lStrokeIdToMove* \[ En\]
 </dt> <dd>
 
-Identificador del trazo que se va a desplace.
+Identificador del trazo que se moverá.
 
 </dd> <dt>
 
-*pSourceContextNode* \[ de\]
+*pSourceContextNode* \[ En\]
 </dt> <dd>
 
 Objeto [**IContextNode**](icontextnode.md) desde el que se mueve el trazo.
 
 </dd> <dt>
 
-*pDestinationContextNode* \[ de\]
+*pDestinationContextNode* \[ En\]
 </dt> <dd>
 
 Objeto [**IContextNode**](icontextnode.md) al que se mueve el trazo.
@@ -72,28 +72,28 @@ Objeto [**IContextNode**](icontextnode.md) al que se mueve el trazo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice este evento cuando la aplicación mantiene su propia estructura de datos, que está sincronizada con la de [**IInkAnalyzer**](iinkanalyzer.md). Este evento se produce durante la fase de conciliación del análisis de tinta o en respuesta a un método **IInkAnalyzer** que mueve los datos de trazo de un [**IContextNode**](icontextnode.md) a otro.
+Use este evento cuando la aplicación mantenga su propia estructura de datos, que se sincroniza con la de [**IInkAnalyzer**](iinkanalyzer.md). Este evento se produce durante la fase de conciliación del análisis de entrada de lápiz o en respuesta a un método **IInkAnalyzer** que mueve los datos de trazo de un [**IContextNode**](icontextnode.md) a otro.
 
-Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [proxy de datos con análisis de tinta](data-proxy-with-ink-analysis.md).
+Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -106,13 +106,13 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: Analyze (método)**](iinkanalyzer-analyze.md)
+[**IInkAnalyzer::Analyze (Método)**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

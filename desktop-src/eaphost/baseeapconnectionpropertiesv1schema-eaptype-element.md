@@ -39,7 +39,7 @@ El **elemento EapType** es abstracto; cada método debe definir y usar un elemen
 
 
 
-| Rol | Versión mínima del sistema operativo admitida |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
 | Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

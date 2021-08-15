@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método EnvironmentVariables Servicios de Escritorio remoto
 - Método EnvironmentVariables Servicios de Escritorio remoto , Win32_TSExpandEnvironmentVariables clase
-- Win32_TSExpandEnvironmentVariables clase Servicios de Escritorio remoto método , EnvironmentVariables
+- Win32_TSExpandEnvironmentVariables clase Servicios de Escritorio remoto , Método EnvironmentVariables
 topic_type:
 - apiref
 api_name:
@@ -62,7 +62,7 @@ Cadena con las variables de entorno expandida.
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>Tsallow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 

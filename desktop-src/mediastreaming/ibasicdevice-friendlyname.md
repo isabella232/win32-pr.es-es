@@ -4,8 +4,8 @@ description: Recupera el nombre descriptivo del dispositivo.
 ms.assetid: 693806E1-CA66-457D-A25B-D79064776965
 keywords:
 - Método FriendlyName de Media Streaming API
-- Media Streaming API del método FriendlyName , interfaz IBasicDevice
-- IBasicDevice interface Media Streaming API , friendlyName (método)
+- Media Streaming API del método FriendlyName, interfaz IBasicDevice
+- IBasicDevice interface Media Streaming API , FriendlyName (método)
 topic_type:
 - apiref
 api_name:
@@ -62,7 +62,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

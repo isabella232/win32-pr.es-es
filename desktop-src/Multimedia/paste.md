@@ -1,6 +1,6 @@
 ---
 title: comando paste
-description: El comando pegar copia el contenido del Portapapeles en el área de trabajo. Los dispositivos de vídeo digital reconocen este comando.
+description: El comando paste copia el contenido del Portapapeles en el área de trabajo. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: c09418e1-2535-40d1-8912-e5ece91ee673
 keywords:
 - comando paste Windows Multimedia
@@ -21,7 +21,7 @@ ms.locfileid: "118373220"
 ---
 # <a name="paste-command"></a>comando paste
 
-El comando pegar copia el contenido del Portapapeles en el área de trabajo. Los dispositivos de vídeo digital reconocen este comando.
+El comando paste copia el contenido del Portapapeles en el área de trabajo. Los dispositivos de vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -60,7 +60,7 @@ Una o varias de las marcas siguientes.
 | insert                | Especifica que los datos se insertan en el área de trabajo. Los datos después del punto de inserción se mueven hacia delante en el área de trabajo para hacer espacio. Este es el valor predeterminado.                                                                                                                                                                                                                                                                                                                                                    |
 | sobrescribir             | Especifica que los datos se copian en el área de trabajo escribiendo sobre los datos existentes después del punto de inserción. Las marcas "insert" y "overwrite" afectan a si los fotogramas se destruyen o se mueven durante la operación de pegado, no a cómo se pegan los datos dentro de cada fotograma.                                                                                                                                                                                                                                              |
 | para *colocar*         | Especifica la posición en el área de trabajo en la que se pegan los datos. Si se omite, el valor predeterminado es la posición actual.                                                                                                                                                                                                                                                                                                                                                                                                    |
-| secuencia de *vídeo* | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando . Si solo existe una secuencia de vídeo en el Portapapeles, los datos de vídeo se pegan en la secuencia *designada.* Si existe más de una secuencia de vídeo en el Portapapeles, la *secuencia* indica el número inicial de las secuencias de secuencia. Si usa esta marca y también quiere pegar audio, también debe usar la marca "secuencia de audio". (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegan y conservan sus números de secuencia originales). |
+| secuencia de *vídeo* | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando . Si solo existe una secuencia de vídeo en el Portapapeles, los datos de vídeo se pegan en la secuencia *designada.* Si hay más de una secuencia de vídeo en el Portapapeles, la *secuencia* indica el número inicial de las secuencias de secuencia. Si usa esta marca y también quiere pegar audio, también debe usar la marca "secuencia de audio". (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegan y conservan sus números de secuencia originales). |
 
 
 
@@ -77,11 +77,11 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
-No hay señales en los datos copiados del Portapapeles. El cambio se convierte en permanente solo cuando los datos se guardan explícitamente; sin embargo, la reproducción actúa como si se hubieran agregado los datos.
+No hay señales presentes en los datos copiados del Portapapeles. El cambio se convierte en permanente solo cuando los datos se guardan explícitamente; sin embargo, la reproducción actúa como si se hubieran agregado los datos.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -11,21 +11,21 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 494036c2d0b42dbcc2938f7edcc1516608376766
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e2865b6b685d432cec4cd7f9e74d05b3579116881a4885f36edac9135691b82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984655"
 ---
 # <a name="xmdec4-constructors"></a>Constructores XMDEC4
 
 Constructores expuestos por `XMDEC4` .
 
-Construye instancias de la estructura [**XMDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4) .
+Construye instancias de la [**estructura XMDEC4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -47,7 +47,7 @@ Construye instancias de la estructura [**XMDEC4**](/windows/win32/api/directxpac
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdec4-xmdec4(uint32_t)"><strong>XMDEC4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMDEC4</code> partir de una <code>uint32_t</code> variable que contiene los datos del componente en un formato empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> a partir de una <code>uint32_t</code> variable que contiene los datos del componente en un formato empaquetado. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMDEC4</code> partir de una variable que contiene datos de componentes en un formato <code>uint32_t</code> empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> a partir de una variable que contiene datos <code>uint32_t</code> de componente en un formato empaquetado. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -55,8 +55,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdec4-xmdec4(constfloat)"><strong>XMDEC4 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMDEC4</code> a partir de un argumento de matriz de cuatro elementos <code>float</code> .<br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> a partir de un argumento de matriz de cuatro elementos <code>float</code> .<br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdec4-xmdec4(constfloat)"><strong>XMDEC4 (const float*)</strong></a></td>
+<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMDEC4</code> de un argumento de matriz de cuatro <code>float</code> elementos.<br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> a partir de un argumento de matriz <code>float</code> de cuatro elementos.<br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -64,8 +64,8 @@ Este constructor solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdec4-xmdec4(float_float_float_float)"><strong>XMDEC4 (float, Float, Float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMDEC4</code> a partir de cuatro <code>float</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> a partir de cuatro <code>float</code> argumentos. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdec4-xmdec4(float_float_float_float)"><strong>XMDEC4 (float,float,float,float)</strong></a></td>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMDEC4</code> partir de <code>float</code> cuatro argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> a partir de <code>float</code> cuatro argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -74,7 +74,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdec4-xmdec4(constfloat)"><strong>XMDEC4 ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMDEC4</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> . <br/>
+<td style="text-align: left;">Constructor predeterminado para <code>XMDEC4</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -86,11 +86,11 @@ Este constructor solo está disponible en C++.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMDEC4](ovw-xmdec4-extensions.md)
+[Extensiones XMDEC4](ovw-xmdec4-extensions.md)
 </dt> <dt>
 
 **Referencia**

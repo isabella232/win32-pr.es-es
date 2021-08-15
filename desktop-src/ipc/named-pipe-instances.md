@@ -23,7 +23,7 @@ Hay tres estrategias básicas para el mantenimiento de varias instancias de cana
 
 El servidor de canalización multiproceso es más fácil de escribir, ya que el subproceso de cada instancia controla las comunicaciones para un cliente de canalización única. El sistema asigna tiempo de procesador a cada subproceso según sea necesario. Pero cada subproceso usa recursos del sistema, lo que es una desventaja para un servidor de canalización que controla un gran número de clientes.
 
-Con un servidor de un solo subproceso, es más fácil coordinar las operaciones que afectan a varios clientes y es más fácil proteger los recursos compartidos frente al acceso simultáneo por parte de varios clientes. El desafío de un servidor de un solo subproceso es que requiere coordinación de operaciones superpuestas para asignar tiempo de procesador para controlar las necesidades simultáneas de los clientes.
+Con un servidor de un solo subproceso, es más fácil coordinar las operaciones que afectan a varios clientes y es más fácil proteger los recursos compartidos del acceso simultáneo por parte de varios clientes. El desafío de un servidor de un solo subproceso es que requiere coordinación de operaciones superpuestas para asignar tiempo de procesador para controlar las necesidades simultáneas de los clientes.
 
  
 

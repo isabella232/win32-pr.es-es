@@ -1,7 +1,7 @@
 ---
-description: Agrega un objeto de certificado a un almacén de certificados abierto.
+description: Agrega un objeto Certificate a un almacén de certificados abierto.
 ms.assetid: 787b8a41-dcdb-4b5b-a1fd-f5424300361b
-title: Store. Add (método)
+title: Método Store.Add
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 6d217c784fa5f994e88ee2de78f2e1944091d724
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f90d95184fd789530831628cb6e121e32ce258d4541769c47926d2fb46eb710c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897940"
 ---
-# <a name="storeadd-method"></a>Store. Add (método)
+# <a name="storeadd-method"></a>Método Store.Add
 
-\[El método **Add** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En su lugar, use la [**clase X509Store**](/previous-versions/windows/embedded/hh424027(v=msdn.10)) en el espacio de nombres [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[El **método Add** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use [**la clase X509Store**](/previous-versions/windows/embedded/hh424027(v=msdn.10)) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-El método **Add** agrega un objeto de [**certificado**](certificate.md) a un [*almacén de certificados*](../secgloss/c-gly.md)abierto. Este método solo se puede usar con un almacén que se ha abierto con permisos de lectura y escritura.
+El **método Add** agrega un objeto [**Certificate**](certificate.md) a un almacén de [*certificados abierto.*](../secgloss/c-gly.md) Este método solo se puede usar con un almacén que se ha abierto con permiso de lectura y escritura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ Store.Add( _
 
 <dl> <dt>
 
-*Certificado* \[ de de\]
+*Certificado* \[ En\]
 </dt> <dd>
 
-Expresión que se resuelve como un objeto de [**certificado**](certificate.md) que se va a agregar al almacén.
+Expresión que se resuelve en un [**objeto Certificate**](certificate.md) que se va a agregar al almacén.
 
 </dd> </dl>
 
@@ -52,36 +52,36 @@ Expresión que se resuelve como un objeto de [**certificado**](certificate.md) q
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!IMPORTANT]
-> Cuando se llama a este método en un almacén del sistema desde un script Web, el script debe tener acceso a los certificados digitales en el equipo local. Si permite que el script tenga acceso a los certificados digitales, el sitio web desde el que se ejecuta el script también obtendrá acceso a cualquier información personal almacenada en los certificados. La primera vez que se llama a este método desde un dominio determinado, se genera un cuadro de diálogo en el que el usuario debe indicar si se debe permitir el acceso a los certificados.
+> Cuando se llama a este método en un almacén del sistema desde un script web, el script debe tener acceso a los certificados digitales en el equipo local. Si permite que el script acceda a los certificados digitales, el sitio web desde el que se ejecuta el script también obtendrá acceso a cualquier información personal almacenada en los certificados. La primera vez que se llama a este método desde un dominio determinado, se genera un cuadro de diálogo en el que el usuario debe indicar si se debe permitir el acceso a los certificados.
 
  
 
-Si el almacén no está abierto en modo de lectura/escritura, este método produce un error. Aunque este método se puede utilizar con almacenes de memoria, los cambios realizados en un almacén de memoria no se conservan cuando se cierra el almacén.
+Si el almacén no está abierto en modo de lectura y escritura, se produce un error en este método. Aunque este método se puede usar con almacenes de memoria, los cambios realizados en un almacén de memoria no se conservan cuando se cierra el almacén.
 
-Si el certificado que se va a agregar al almacén es el mismo que el que ya existe, el método **Add** elimina el certificado existente del almacén y, a continuación, agrega el nuevo certificado. El nuevo certificado hereda las propiedades del certificado existente.
+Si el certificado que se agrega al almacén es el mismo que el que ya existe, el método **Add** elimina el certificado existente del almacén y, a continuación, agrega el nuevo certificado. El nuevo certificado hereda las propiedades del certificado existente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Store**](store.md)
+[**Tienda**](store.md)
 </dt> <dt>
 
-[**Objetos de criptografía**](cryptography-objects.md)
+[**Objetos criptografía**](cryptography-objects.md)
 </dt> </dl>
 
  

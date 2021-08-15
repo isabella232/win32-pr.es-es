@@ -1,7 +1,7 @@
 ---
-description: Describe una tabla Huffman de DC JPEG.
+description: Describe una tabla JPEG DC huffman.
 ms.assetid: 9D6C18C3-F75C-41E0-9EFA-E882E89DE713
-title: DXGI_JPEG_DC_HUFFMAN_TABLE estructura (Dxgitype. h)
+title: DXGI_JPEG_DC_HUFFMAN_TABLE estructura (Dxgitype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dxgitype.h
-ms.openlocfilehash: b2f5f73f7c6def745b987818b9ec30fb3e2752e2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b431bbccb66bcb24e068229493ef87f2ac96736161bb306609ac4dd479dfb7cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987125"
 ---
-# <a name="dxgi_jpeg_dc_huffman_table-structure"></a>\_Estructura de \_ \_ tabla HUFFMAN de DC JPEG de DXGI \_
+# <a name="dxgi_jpeg_dc_huffman_table-structure"></a>Estructura DE \_ TABLA \_ \_ HUFFMAN DE DC DE \_ DXGI JPEG
 
-Describe una tabla Huffman de DC JPEG.
+Describe una tabla JPEG DC huffman.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ typedef struct DXGI_JPEG_DC_HUFFMAN_TABLE {
 **CodeCounts**
 </dt> <dd>
 
-El número de códigos para cada longitud de código.
+Número de códigos para cada longitud de código.
 
 </dd> <dt>
 
 **CodeValues**
 </dt> <dd>
 
-Valores de código de Huffman, en orden de aumento de la longitud del código.
+Los valores de código de Huffman, en orden de aumentar la longitud del código.
 
 </dd> </dl>
 
@@ -60,15 +60,15 @@ Valores de código de Huffman, en orden de aumento de la longitud del código.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dxgitype. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dxgitype.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de DXGI](d3d10-graphics-reference-dxgi-structures.md)
+[Estructuras DXGI](d3d10-graphics-reference-dxgi-structures.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Propiedad SystemMonitor. BackColor
+title: Propiedad SystemMonitor.BackColor
 description: Recupera o establece el color de fondo del gráfico y las vistas de informe.
 ms.assetid: bc6bd2c0-8114-4525-ae4a-f0a508affa1e
 keywords:
 - Propiedad BackColor SysMon
-- Propiedad BackColor SysMon, clase SystemMonitor
+- Propiedad BackColor SysMon , clase SystemMonitor
 - Clase SystemMonitor SysMon, propiedad BackColor
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eecbdf6ceaf9938a1b5a607a67410ddc6d05438b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb01c28b7e8eebe476416934a4d89dee461e0ed5c2ccf6e968b4db0c38178e1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882961"
 ---
-# <a name="systemmonitorbackcolor-property"></a>Propiedad SystemMonitor. BackColor
+# <a name="systemmonitorbackcolor-property"></a>Propiedad SystemMonitor.BackColor
 
 Recupera o establece el color de fondo del gráfico y las vistas de informe.
 
@@ -42,33 +42,33 @@ Property BackColor As stdole.OLE_COLOR
 
 Color de fondo del gráfico y las vistas de informe.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de una propiedad de ambiente. El valor de esta propiedad viene determinado por el contenedor. Establecer el valor de esta propiedad puede afectar a la ilusión del control y el contenedor como una sola aplicación.
+Se trata de una propiedad ambiente. El contenedor determina el valor de esta propiedad. Establecer el valor de esta propiedad podría afectar a la impresión de que el control y el contenedor son una sola aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> <dt>
 
 [**SystemMonitor.BackColorCtl**](systemmonitor-backcolorctl.md)
 </dt> <dt>
 
-[**SystemMonitor. ForeColor**](systemmonitor-forecolor.md)
+[**SystemMonitor.ForeColor**](systemmonitor-forecolor.md)
 </dt> </dl>
 
  

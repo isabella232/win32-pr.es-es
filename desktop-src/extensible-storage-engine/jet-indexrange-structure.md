@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_INDEXRANGE'
-title: Estructura de JET_INDEXRANGE
+description: 'Más información sobre: JET_INDEXRANGE estructura'
+title: JET_INDEXRANGE estructura
 TOCTitle: JET_INDEXRANGE Structure
 ms:assetid: 8e437f7d-1e21-4a0b-a5a5-1c78235a4f80
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269335(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ecbd8151be8ef278fc1bddc12323f41abd05b09e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5b68e7ebf6df39757ab39947201b945e35a3ece85518a3cb202525033cdd214
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118485603"
 ---
-# <a name="jet_indexrange-structure"></a>Estructura de JET_INDEXRANGE
+# <a name="jet_indexrange-structure"></a>JET_INDEXRANGE estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_indexrange-structure"></a>Estructura de JET_INDEXRANGE
+## <a name="jet_indexrange-structure"></a>JET_INDEXRANGE estructura
 
-La estructura **JET_INDEXRANGE** identifica un intervalo de índice cuando se usa con la función [JetIntersectIndexes](./jetintersectindexes-function.md) .
+La **JET_INDEXRANGE** identifica un intervalo de índice cuando se usa con la [función JetIntersectIndexes.](./jetintersectindexes-function.md)
 
 ```cpp
     typedef struct {
@@ -45,13 +45,13 @@ La estructura **JET_INDEXRANGE** identifica un intervalo de índice cuando se us
 
 Tamaño, en bytes, del **JET_INDEXRANGE**.
 
-**TABLEID**
+**tableid**
 
-Un cursor que previamente tenía un intervalo de índice establecido con [JetSetIndexRange](./jetsetindexrange-function.md).
+Cursor que anteriormente tenía un intervalo de índice establecido [con JetSetIndexRange](./jetsetindexrange-function.md).
 
 **grbit**
 
-Máscara de código formada por exactamente uno de los siguientes elementos.
+Máscara de bits formada exactamente por una de las siguientes.
 
 <table>
 <colgroup>
@@ -60,14 +60,14 @@ Máscara de código formada por exactamente uno de los siguientes elementos.
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Value</p></th>
+<th><p>Valor</p></th>
 <th><p>Significado</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>JET_bitRecordInIndex</p></td>
-<td><p>Especifica que el intervalo de índice se debe tratar normalmente.</p></td>
+<td><p>Especifica que el intervalo de índice se debe tratar con normalidad.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitRecordNotInIndex</p></td>
@@ -77,9 +77,9 @@ Máscara de código formada por exactamente uno de los siguientes elementos.
 </table>
 
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Cada estructura de **JET_INDEXRANGE** que se pasa a [JetIntersectIndexes](./jetintersectindexes-function.md) representa un intervalo de índice, que se intersectará con la llamada a la API. El cursor que se proporciona en **JET_INDEXRANGE** debe tener un intervalo de índices válido establecido en él, con una llamada correcta a [JetSetIndexRange](./jetsetindexrange-function.md).
+Cada **JET_INDEXRANGE** estructura que se pasa a [JetIntersectIndexes](./jetintersectindexes-function.md) representa un intervalo de índice, que se intersecrá con la llamada API. El cursor que se da en **JET_INDEXRANGE** debe tener un intervalo de índice válido establecido en él, con una llamada correcta a [JetSetIndexRange](./jetsetindexrange-function.md).
 
 ### <a name="requirements"></a>Requisitos
 
@@ -94,12 +94,12 @@ Cada estructura de **JET_INDEXRANGE** que se pasa a [JetIntersectIndexes](./jeti
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

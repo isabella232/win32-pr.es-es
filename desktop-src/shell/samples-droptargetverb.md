@@ -36,10 +36,10 @@ En este ejemplo se muestra cómo implementar un verbo de Shell mediante el méto
 
 
 
-| Product                                | Versión mínima del producto |
+| Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
-| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
 
 
 
@@ -47,7 +47,7 @@ En este ejemplo se muestra cómo implementar un verbo de Shell mediante el méto
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Location      | Dirección URL de ruta de acceso                                                                                             |
+| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo de DropTargetVerb](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/DropTargetVerb) |
 

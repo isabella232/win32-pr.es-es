@@ -1,55 +1,55 @@
 ---
-description: Notifica a una transformación de Media Foundation (MFT) que la primera muestra está a punto de procesarse.
+description: Notifica a una Media Foundation transformación de datos (MFT) que el primer ejemplo está a punto de procesarse.
 ms.assetid: 579df695-02c4-4332-b1b4-c7bd9da50c0f
-title: MFT_MESSAGE_NOTIFY_START_OF_STREAM (Mftransform. h)
+title: MFT_MESSAGE_NOTIFY_START_OF_STREAM (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe0edefdecdf75afbe14c851f33e9726400e490d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20ed40d9d3514dfa6223d4e20f2eb411caec497e16f2e97c456f16e14442c407
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973034"
 ---
-# <a name="mft_message_notify_start_of_stream"></a>el \_ mensaje \_ de MFT notifica el \_ Inicio \_ de la \_ secuencia
+# <a name="mft_message_notify_start_of_stream"></a>MENSAJE MFT \_ \_ NOTIFY START OF \_ \_ \_ STREAM
 
-Notifica a una transformación de Media Foundation (MFT) que la primera muestra está a punto de procesarse.
+Notifica a una Media Foundation transformación de datos (MFT) que el primer ejemplo está a punto de procesarse.
 
-## <a name="message-parameter"></a>Parámetro de mensaje
+## <a name="message-parameter"></a>Parámetro message
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para enviar este mensaje, llame a [**IMFTransform::P rocessmessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage).
+Para enviar este mensaje, llame [**a IMFTransform::P rocessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage).
 
-En el caso de MFTs sincrónicos, es opcional enviar este mensaje.
+En el caso de las MTA sincrónicas, es opcional enviar este mensaje.
 
-En el caso de MFTs asincrónico, el cliente debe enviar este mensaje.
+En el caso de las MTA asincrónicas, el cliente debe enviar este mensaje.
 
 ### <a name="implementation"></a>Implementación
 
-No es necesario un MFT sincrónico para responder al mensaje.
+No se requiere un MFT sincrónico para responder al mensaje.
 
-Un MFT asincrónico debe implementar este mensaje, tal y como se describe en [MFTs asincrónico](asynchronous-mfts.md).
+Un MFT asincrónico debe implementar este mensaje, como se describe en [MTA asincrónicos.](asynchronous-mfts.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_tipo de mensaje de MFT \_**](/windows/desktop/api/mftransform/ne-mftransform-mft_message_type)
+[**TIPO DE \_ MENSAJE \_ MFT**](/windows/desktop/api/mftransform/ne-mftransform-mft_message_type)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TVN_BEGINDRAG (commctrl. h)
-description: Notifica a la ventana primaria de un control de vista de árbol que se está iniciando una operación de arrastrar y colocar que implique el botón primario del mouse. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TVN_BEGINDRAG de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de árbol que se está iniciando una operación de arrastrar y colocar que implica el botón izquierdo del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: e118354a-329e-424c-b137-78342cc00957
 keywords:
-- TVN_BEGINDRAG controles de código de notificación de Windows
+- TVN_BEGINDRAG código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08f47f55a5e2eae552f64234a8e43ef0961f38c7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 95952ee42dfe8eb8dd1a46c66dcd452f41cbc9723fa175c2a0d1fc75056c31ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957924"
 ---
-# <a name="tvn_begindrag-notification-code"></a>Código de notificación de BEGINDRAG de TVN \_
+# <a name="tvn_begindrag-notification-code"></a>Código de notificación \_ BEGINDRAG de TVN
 
-Notifica a la ventana primaria de un control de vista de árbol que se está iniciando una operación de arrastrar y colocar que implique el botón primario del mouse. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de vista de árbol que se está iniciando una operación de arrastrar y colocar que implica el botón izquierdo del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ TVN_BEGINDRAG
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) . El miembro **itemNew** es una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que contiene información válida sobre el elemento que se está arrastrando en los miembros **hItem**, **State** y **lParam** . El miembro **ptDrag** especifica las coordenadas de pantalla actuales del mouse.
+Puntero a una [**estructura NMTREEVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) El **miembro itemNew** es una [**estructura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que contiene información válida sobre el elemento que se arrastra en los **miembros hItem**, **state** y **lParam.** El **miembro ptDrag** especifica las coordenadas de pantalla actuales del mouse.
 
 </dd> </dl>
 
@@ -51,19 +51,19 @@ Puntero a una estructura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-commctr
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un control de vista de árbol con el [**estilo \_ DISABLEDRAGDROP de TV**](tree-view-control-window-styles.md) no envía este código de notificación.
+Un control de vista de árbol que tenga el estilo [**TVS \_ DISABLEDRAGDROP**](tree-view-control-window-styles.md) no envía este código de notificación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ BEGINDRAGW** (Unicode) y **TVN \_ BEGINDRAGA** (ANSI)<br/>               |
 
 

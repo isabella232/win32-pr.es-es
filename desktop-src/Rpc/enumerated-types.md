@@ -1,19 +1,19 @@
 ---
 title: Tipos enumerados (RPC)
-description: La declaración de enumeración no se convierte en instrucciones \ define como se hace en algunos compiladores DCE, pero se reproduce como una declaración de enumeración en lenguaje C en el archivo de encabezado generado.
+description: La declaración de enumeración no se traduce en instrucciones \ define como lo están algunos compiladores de DCE, pero se reproduce como una declaración de enumeración en lenguaje C en el archivo de encabezado generado.
 ms.assetid: dc38d3a2-cc6a-467f-a497-2a7abec07573
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0dee1d9a5415867f252c1738a638b602ebd91fa
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f6844f7d84f2b2ff7b5925429fa751979accb73cc711265a2cc44046607ff5ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104488669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118930402"
 ---
 # <a name="enumerated-types-rpc"></a>Tipos enumerados (RPC)
 
-La declaración de [**enumeración**](/windows/desktop/Midl/enum) no se convierte en instrucciones de **\# definición** tal y como se hace en algunos compiladores DCE, pero se reproduce como una declaración de **enumeración** en lenguaje C en el archivo de encabezado generado.
+La [**declaración de**](/windows/desktop/Midl/enum) enumeración no se traduce en instrucciones **\# define** como lo están algunos compiladores de DCE, pero se reproduce como una declaración de enumeración **en** lenguaje C en el archivo de encabezado generado.
 
  
 

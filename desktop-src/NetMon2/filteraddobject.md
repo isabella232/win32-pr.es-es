@@ -1,7 +1,7 @@
 ---
-description: La función FilterAddObject agrega un solo objeto a un filtro de presentación.
+description: La función FilterAddObject agrega un único objeto a un filtro de visualización.
 ms.assetid: 796216f4-a407-4a8c-98b3-8c3761d91913
-title: Función FilterAddObject (Netmon. h)
+title: Función FilterAddObject (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 7fc6c41a675bfe560c060e271e4f9f48f88cd58c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c7d814efbbc77816836d437161390b1e2af60e8bbf4932322dcbd606920be5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118938738"
 ---
-# <a name="filteraddobject-function"></a>FilterAddObject función)
+# <a name="filteraddobject-function"></a>Función FilterAddObject
 
-La función **FilterAddObject** agrega un solo objeto a un [*filtro de presentación*](d.md).
+La **función FilterAddObject** agrega un único objeto a un [*filtro de visualización.*](d.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,58 +40,58 @@ DWORD WINAPI FilterAddObject(
 
 <dl> <dt>
 
-*hFilter* \[ de\]
+*hFilter* \[ En\]
 </dt> <dd>
 
-Identificador del filtro de presentación.
+Controle el filtro de visualización.
 
 </dd> <dt>
 
-*lpFilterObject* \[ enuncia\]
+*lpFilterObject* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [FILTEROBJECT](filterobject.md) que define el objeto que se va a agregar al filtro. Cada objeto puede ser un operador, un valor o una propiedad.
+Puntero a una [estructura FILTEROBJECT](filterobject.md) que define el objeto que se va a agregar al filtro. Cada objeto puede ser un operador, un valor o una propiedad.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un código de error.
+Si la función no se realiza correctamente, el valor devuelto es un código de error.
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                  |
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ parámetro no válido \_**</dt> </dl> | El parámetro *hFilter* tiene un valor no válido.<br/>                     |
-| <dl> <dt>**NMERR \_ \_ de \_ memoria insuficiente**</dt> </dl>    | Monitor de red no tiene suficiente memoria para crear el objeto.<br/> |
+| <dl> <dt>**NMERR \_ INVALID \_ PARAMETER**</dt> </dl> | El *parámetro hFilter* tiene un valor no válido.<br/>                     |
+| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE LA \_ MEMORIA**</dt> </dl>    | Monitor de red no tiene suficiente memoria para crear el objeto.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **FilterAddObject** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función FilterAddObject.**
 
-Se llama a la función **FilterAddObject** cada vez que se agrega un objeto de filtro al filtro de presentación. El filtro de visualización es una pila de objetos postfijo que puede ser un operador, un valor o una propiedad.
+Se **llama a la función FilterAddObject** cada vez que se agrega un objeto de filtro al filtro de visualización. El filtro de presentación es una pila de postfijo de objetos que pueden ser un operador, un valor o una propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: MCI_LOAD_PARMS estructura (Mmsystem.h)
-description: La estructura \_ MCI LOAD \_ PARMS contiene el nombre de archivo que se cargará para el comando LOAD \_ de MCI.
+description: La estructura \_ MCI LOAD \_ PARMS contiene el nombre de archivo que se cargará para el comando \_ LOAD de MCI.
 ms.assetid: 371d11cc-44db-496b-b51a-66d7b919b794
 keywords:
 - MCI_LOAD_PARMS estructura Windows Multimedia
@@ -44,7 +44,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 

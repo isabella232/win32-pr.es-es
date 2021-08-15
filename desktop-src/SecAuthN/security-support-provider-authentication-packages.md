@@ -1,23 +1,23 @@
 ---
-description: El sistema operativo Windows admite la autenticación mediante paquetes de seguridad que funcionan como proveedores de compatibilidad de seguridad y como paquetes de autenticación.
+description: El Windows operativo admite la autenticación mediante paquetes de seguridad que funcionan como proveedores de soporte técnico de seguridad y como paquetes de autenticación.
 ms.assetid: f40060be-fad2-4008-b981-727199d71581
-title: Paquetes de autenticación/proveedor de compatibilidad de seguridad
+title: Proveedores de compatibilidad de seguridad/paquetes de autenticación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4e7020f2d03b55631ee152cccc201791b645347
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a62f634d0571eab43652485f8ca1313f78fd157ca202d5d78369552db648de9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918344"
 ---
-# <a name="security-support-providerauthentication-packages"></a>Paquetes de autenticación/proveedor de compatibilidad de seguridad
+# <a name="security-support-providerauthentication-packages"></a>Proveedores de compatibilidad de seguridad/paquetes de autenticación
 
-El sistema operativo Windows admite la autenticación mediante [*paquetes de seguridad*](../secgloss/s-gly.md) que funcionan como proveedores de compatibilidad de [*seguridad*](../secgloss/s-gly.md) y como paquetes de [*autenticación*](../secgloss/a-gly.md). Los paquetes de seguridad proporcionan los servicios de soporte del proceso de inicio de sesión de un paquete de autenticación de Windows y también proporcionan servicios de autenticación a las aplicaciones implementando un conjunto de funciones que se asignan a la [interfaz del proveedor de compatibilidad para seguridad](sspi.md) (SSPI).
+El Windows operativo admite la [](../secgloss/s-gly.md) autenticación mediante paquetes de seguridad que funcionan como proveedores de soporte técnico de seguridad [*y*](../secgloss/s-gly.md) como paquetes [*de autenticación*](../secgloss/a-gly.md). Los paquetes de seguridad proporcionan los servicios de compatibilidad del proceso de inicio de sesión de un [](sspi.md) paquete de autenticación de Windows y también proporcionan servicios de autenticación a las aplicaciones mediante la implementación de un conjunto de funciones que están asignadas a la interfaz del proveedor de compatibilidad de seguridad (SSPI).
 
-Un paquete de seguridad que funciona como un paquete de autenticación e implementa la funcionalidad requerida por [*SSPI*](../secgloss/s-gly.md) se denomina proveedor de compatibilidad para seguridad/paquete de autenticación (SSP/AP).
+Un paquete de seguridad que funciona como paquete de autenticación e implementa la funcionalidad requerida por [*SSPI*](../secgloss/s-gly.md) se denomina proveedor de compatibilidad de seguridad/paquete de autenticación (SSP/AP).
 
-Para obtener más información acerca de los paquetes de seguridad, consulte [paquetes SSP proporcionados por Microsoft](ssp-packages-provided-by-microsoft.md). Para obtener información sobre el desarrollo de SSP o AP personalizados, consulte [paquetes de seguridad personalizados](custom-security-packages.md).
+Para obtener más información sobre los paquetes de seguridad, vea [Paquetes SSP proporcionados por Microsoft](ssp-packages-provided-by-microsoft.md). Para obtener información sobre el desarrollo de SSP/AP personalizados, vea [Paquetes de seguridad personalizados.](custom-security-packages.md)
 
  
 

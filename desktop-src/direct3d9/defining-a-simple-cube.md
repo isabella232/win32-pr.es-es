@@ -1,19 +1,19 @@
 ---
-description: El siguiente archivo define un cubo simple que tiene cuatro lados rojos y dos lados verdes. En este archivo, se usa la información opcional para agregar información al objeto de datos definido por la plantilla de malla.
+description: El archivo siguiente define un cubo simple que tiene cuatro lados rojos y dos verdes. En este archivo, se usa información opcional para agregar información al objeto de datos definido por la plantilla Mesh.
 ms.assetid: 310981bf-3536-43dd-ad7c-40ab6c8ef6c4
 title: Definir un cubo simple (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9d92d1b97a16e3a26f58281f9621282d3bdc487
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c0c6aa0705af27f1ea4926fc8f5bf5d2a838036c695188b1ef824395622882be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988323"
 ---
 # <a name="defining-a-simple-cube-direct3d-9"></a>Definir un cubo simple (Direct3D 9)
 
-El siguiente archivo define un cubo simple que tiene cuatro lados rojos y dos lados verdes. En este archivo, se usa la información opcional para agregar información al objeto de datos definido por la plantilla de [**malla**](mesh.md) .
+El archivo siguiente define un cubo simple que tiene cuatro lados rojos y dos verdes. En este archivo, se usa información opcional para agregar información al objeto de datos definido por la [**plantilla Mesh.**](mesh.md)
 
 
 ```
@@ -122,7 +122,7 @@ MeshTextureCoords {
 
 <dl> <dt>
 
-[Archivos X (heredado)](x-files--legacy-.md)
+[Archivos X (heredados)](x-files--legacy-.md)
 </dt> </dl>
 
  

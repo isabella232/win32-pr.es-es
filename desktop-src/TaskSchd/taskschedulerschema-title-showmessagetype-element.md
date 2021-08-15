@@ -44,7 +44,7 @@ El tipo complejo [**showMessageType**](taskschedulerschema-showmessagetype-compl
 
 ## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, [**vea Propiedad Title de IShowMessageAction.**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title)
+Para el desarrollo de C++, [**vea Propiedad Title de IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title).
 
 Para el desarrollo de scripts, [**vea ShowMessageAction.Title**](showmessageaction-title.md).
 

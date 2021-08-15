@@ -49,7 +49,7 @@ Contexto del dispositivo en el que se produjo el evento.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método de evento se define en las interfaces **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de DISPID \_ IOEPainted.
 
@@ -57,7 +57,7 @@ Este método de evento se define en las interfaces **\_ IInkOverlayEvents** e **
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
@@ -66,7 +66,7 @@ Este método de evento se define en las interfaces **\_ IInkOverlayEvents** e **
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

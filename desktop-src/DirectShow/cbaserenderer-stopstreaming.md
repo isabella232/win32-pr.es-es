@@ -1,7 +1,7 @@
 ---
-description: El método StopStreaming detiene la transmisión por secuencias cuando el filtro sale del estado de ejecución.
+description: El método StopStreaming detiene el streaming cuando el filtro deja de funcionar.
 ms.assetid: 465dde15-adec-46da-b8c8-56743e0cbd29
-title: Método CBaseRenderer. StopStreaming (Renbase. h)
+title: Método CBaseRenderer.StopStreaming (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dfd943de6a53383d7505fa9e884dcc152da6e5f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 097ad9fd1548b709f7eb74a3e468c34c3b18a73621720e249a3c626c252c898d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016803"
 ---
-# <a name="cbaserendererstopstreaming-method"></a>CBaseRenderer. StopStreaming, método
+# <a name="cbaserendererstopstreaming-method"></a>Método CBaseRenderer.StopStreaming
 
-El `StopStreaming` método detiene la transmisión por secuencias cuando el filtro sale del estado de ejecución.
+El `StopStreaming` método detiene el streaming cuando el filtro sale del estado en ejecución.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama al método [**CBaseRenderer:: OnStopStreaming**](cbaserenderer-onstopstreaming.md) . Ese método no hace nada en la clase base, pero la clase derivada puede invalidarlo.
+Este método llama al [**método CBaseRenderer::OnStopStreaming.**](cbaserenderer-onstopstreaming.md) Ese método no hace nada en la clase base, pero la clase derivada puede invalidarla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,16 +54,16 @@ Este método llama al método [**CBaseRenderer:: OnStopStreaming**](cbaserendere
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  
