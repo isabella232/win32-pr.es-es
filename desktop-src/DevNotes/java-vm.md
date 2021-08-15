@@ -4,19 +4,19 @@ ms.assetid: 911B2CEC-A787-48C8-A520-3B283E36FD7A
 title: Máquina virtual Java
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9f598c6b6bcafd517d11e65b0e74d17c5b1ad16
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8ec998b0aaf07a90d25d81574944c648f43f2bbd395fd8fc9b3fe31b7fcd52a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955774"
 ---
 # <a name="java-vm"></a>Máquina virtual Java
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**DownloadJavaEX**](downloadjavaex.md)
--   [**confianza de JAVA \_**](/windows/desktop/api/Capi/ns-capi-java_trust)
+-   [**DescargarJavaEX**](downloadjavaex.md)
+-   [**CONFIANZA DE JAVA \_**](/windows/desktop/api/Capi/ns-capi-java_trust)
 -   [**NotifyBrowserShutdown**](notifybrowsershutdown.md)
 -   [**ShowJavaConsole**](showjavaconsole.md)
 

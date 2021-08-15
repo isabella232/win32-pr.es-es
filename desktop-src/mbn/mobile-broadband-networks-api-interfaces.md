@@ -1,19 +1,19 @@
 ---
-description: La API de banda ancha móvil define y usa las siguientes interfaces.
+description: Mobile Broadband API define y usa las interfaces siguientes.
 ms.assetid: db6c9635-16f9-4266-9d0e-daeb58fac588
-title: Interfaces de API de banda ancha móvil
+title: Interfaces de LA API de banda ancha móvil
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d822fbbe095b31fac5bc3cdfc881c929e73ca33f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f620ad34b0b1af953f0e387ebddd41987d38696f5c17ddac82b3528ce031bd23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975295"
 ---
-# <a name="mobile-broadband-api-interfaces"></a>Interfaces de API de banda ancha móvil
+# <a name="mobile-broadband-api-interfaces"></a>Interfaces de LA API de banda ancha móvil
 
-La API de banda ancha móvil define y usa las siguientes interfaces.
+Mobile Broadband API define y usa las interfaces siguientes.
 
 -   [**IMbnConnection**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnection)
 -   [**IMbnConnectionContext**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectioncontext)
@@ -33,8 +33,8 @@ La API de banda ancha móvil define y usa las siguientes interfaces.
 -   [**IMbnInterfaceEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfaceevents)
 -   [**IMbnInterfaceManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager)
 -   [**IMbnInterfaceManagerEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanagerevents)
--   [**IMbnMultiCarrier**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnmulticarrier)
--   [**IMbnMultiCarrierEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnmulticarrierevents)
+-   [**IMbnMultiCarmultiCarmulti**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnmulticarrier)
+-   [**IMbnMultiCar descriptorEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnmulticarrierevents)
 -   [**IMbnPin**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnpin)
 -   [**IMbnPinEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnpinevents)
 -   [**IMbnPinManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnpinmanager)

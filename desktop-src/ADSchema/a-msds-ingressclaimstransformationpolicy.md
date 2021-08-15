@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Ingress-Claims-Transformation-Policy
-description: Este es un vínculo a un objeto de directiva de transformación de notificaciones para las notificaciones de entrada (notificaciones que entran en este bosque) desde el dominio de confianza.
+title: Atributo ms-DS-Ingress-Claims-Transformation-Policy
+description: Se trata de un vínculo a un objeto de directiva de transformación notificaciones para las notificaciones de entrada (notificaciones que entran en este bosque) desde el dominio de confianza.
 ms.assetid: 67f87782-85ed-41bb-a60d-f6c11fcda80e
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-Ingress-Claims-Transformation-esquema de AD de atributo de Directiva
-- Esquema de AD de atributo msDS-IngressClaimsTransformationPolicy
+- ms-DS-Ingress-Claims-Transformation-Policy attribute AD Schema
+- msDS-IngressClaimsTransformationPolicy attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e50e3c187a4cb3b2a465257b408a1f5603c756ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 52d631e2f342302f8089a43a329ac3982cf7874b46ab0f60d3e4399855f573e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960754"
 ---
-# <a name="ms-ds-ingress-claims-transformation-policy-attribute"></a>atributo MS-DS-Ingress-Claims-Transformation-Policy
+# <a name="ms-ds-ingress-claims-transformation-policy-attribute"></a>Atributo ms-DS-Ingress-Claims-Transformation-Policy
 
-Este es un vínculo a un objeto de directiva de transformación de notificaciones para las notificaciones de entrada (notificaciones que entran en este bosque) desde el dominio de confianza. Esto solo es aplicable a una confianza entre bosques de salida o bidireccional. Si este vínculo está ausente, se quitan todas las notificaciones de entrada.
+Se trata de un vínculo a un objeto de directiva de transformación notificaciones para las notificaciones de entrada (notificaciones que entran en este bosque) desde el dominio de confianza. Esto solo es aplicable a una relación de confianza entre bosques saliente o bidireccional. Si este vínculo no está presente, se descartan todas las notificaciones de entrada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------------|
-| CN                | MS-DS-Ingress-Claims-Transformation-Policy |
-| Nombre para mostrar de LDAP | msDS-IngressClaimsTransformationPolicy     |
-| Tamaño              | \-                                         |
-| Actualizar privilegio  | \-                                         |
+| CN                | ms-DS-Ingress-Claims-Transformation-Policy |
+| Ldap-Display-Name | msDS-IngressClaimsTransformationPolicy     |
+| Size              | \-                                         |
+| Actualizar privilegios  | \-                                         |
 | Frecuencia de actualización  | \-                                         |
 | Attribute-Id      | 1.2.840.113556.1.4.2191                    |
-| System-ID-GUID    | 86284c08-0c6e-1540-8b15-75147d23d20d       |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md)    |
+| System-Id-Guid    | 86284c08-0c6e-1540-8b15-75147d23d20d       |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)    |
 
 
 
@@ -48,15 +48,15 @@ Este es un vínculo a un objeto de directiva de transformación de notificacione
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | 2190                                                 |
+| Id. de vínculo                | 2190                                                 |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

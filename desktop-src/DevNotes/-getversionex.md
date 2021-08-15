@@ -1,7 +1,7 @@
 ---
-description: Obtiene información acerca de la versión del sistema operativo.
+description: Obtiene información sobre la versión del sistema operativo.
 ms.assetid: 1af2c320-6e0b-4692-858b-a2c921ed7ce7
-title: _GetVersionEx función)
+title: _GetVersionEx función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: dd4b33bee4a5f1c2a72ef7494176fe2979b4a7cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e3047edfaf2dabe591172dd3ca292f41aeefa90774231b417f5405e3aeb18c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956294"
 ---
-# <a name="_getversionex-function"></a>\_GetVersionEx (función)
+# <a name="_getversionex-function"></a>\_Función GetVersionEx
 
-\[Esta función es un contenedor de la función **GetVersionEx** . Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar a **GetVersionEx** directamente.\]
+\[Esta función es un contenedor sobre la **función GetVersionEx.** Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar **directamente a GetVersionEx.**\]
 
-Obtiene información acerca de la versión del sistema operativo. Vea [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa).
+Obtiene información sobre la versión del sistema operativo. Vea [**GetVersionEx.**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,13 +49,13 @@ BOOL _GetVersionEx(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Msmdun80.dll; </dt> <dt>Sqlunirl.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

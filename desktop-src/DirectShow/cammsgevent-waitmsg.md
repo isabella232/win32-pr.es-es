@@ -1,7 +1,7 @@
 ---
-description: El método WaitMsg espera a que se señale el evento y envía los mensajes enviados.
+description: El método WaitMsg espera a que se señale el evento, mientras se envían los mensajes enviados.
 ms.assetid: 5cab98ca-f9f3-4c7c-9ce2-8e16109d8fbb
-title: Método CAMMsgEvent. WaitMsg (Wxutil. h)
+title: Método CAMMsgEvent.WaitMsg (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9622e962f130a082a5c1206367f4850cebb6ce02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 94a2169d9938a8c2ff8a1961eee0895fefd7cc8a2dd487a4193d8053d27d98ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955454"
 ---
-# <a name="cammsgeventwaitmsg-method"></a>CAMMsgEvent. WaitMsg, método
+# <a name="cammsgeventwaitmsg-method"></a>Método CAMMsgEvent.WaitMsg
 
-El `WaitMsg` método espera a que se señale el evento y envía los mensajes enviados.
+El `WaitMsg` método espera a que se señale el evento, mientras se envían los mensajes enviados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,19 +45,19 @@ BOOL WaitMsg(
 *dwTimeOut* 
 </dt> <dd>
 
-Valor opcional de tiempo de espera, en milisegundos.
+Valor de tiempo de espera opcional, en milisegundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el evento está señalado, o **false** si se ha producido el tiempo de espera.
+Devuelve **TRUE** si se señala el evento o **FALSE** si se ha producido el tiempo de espera.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama a la función PeekMessage para procesar los mensajes. Llame a este método en lugar de [**CAMEvent:: wait**](camevent-wait.md) si el subproceso necesita procesar mensajes mientras espera un evento. Si el subproceso no procesa los mensajes y otro subproceso envía un mensaje, podría producirse un interbloqueo.
+Este método llama a la función PeekMessage para procesar mensajes. Llame a este método en lugar de [**a CAMEvent::Wait**](camevent-wait.md) si el subproceso necesita procesar mensajes mientras espera un evento. Si el subproceso no procesa mensajes y otro subproceso envía un mensaje, podría producirse un interbloqueo.
 
-Por ejemplo, suponga que crea un subproceso y, a continuación, se bloquea hasta que se inicializa el subproceso. Si el subproceso envía un mensaje a la ventana mediante una llamada a la función SendMessage, se producirá un interbloqueo. Esto se debe a que SendMessage no devuelve ningún resultado hasta que se haya procesado el mensaje. La llamada a WaitMsg permite que la llamada SendMessage devuelva, lo que impide el interbloqueo.
+Por ejemplo, suponga que crea un subproceso y, a continuación, bloquea hasta que se inicializa el subproceso. Si el subproceso envía un mensaje a la ventana mediante una llamada a la función SendMessage, se produciría un interbloqueo. Esto se debe a que SendMessage no devuelve hasta que se ha procesado el mensaje. Llamar a WaitMsg permite que se devuelva la llamada SendMessage, lo que evita el interbloqueo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,16 +65,16 @@ Por ejemplo, suponga que crea un subproceso y, a continuación, se bloquea hasta
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CAMMsgEvent**](cammsgevent.md)
+[**CLASE CAMMsgEvent**](cammsgevent.md)
 </dt> </dl>
 
  

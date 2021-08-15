@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXCompileShaderFromResource: compila un archivo de sombreador.'
+description: 'Función D3DXCompileShaderFromResource: compile un archivo de sombreador.'
 ms.assetid: e944ae61-0c27-4795-8381-0ec9b3d8c3f4
 title: Función D3DXCompileShaderFromResource (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: de94754004cc42bcc6914d9513588a71a1a593dd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b137419394f422dba08a4580d8e126361d97a78b747551e0305bb0a248312177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988685"
 ---
 # <a name="d3dxcompileshaderfromresource-function"></a>Función D3DXCompileShaderFromResource
 
@@ -77,7 +77,7 @@ Puntero a una cadena que especifica el nombre del recurso.
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matriz **terminada en NULL** opcional de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
+Matriz **opcional terminada** en NULL de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Puntero a un perfil de sombreador que determina el conjunto de instrucciones del
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**

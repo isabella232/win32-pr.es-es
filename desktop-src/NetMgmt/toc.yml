@@ -6,16 +6,16 @@
     - name: Acerca de la administración de redes
       href: about-network-management.md
       items:
-        - name: Grupos de funciones de administración de red
+        - name: Grupos de funciones de administración de redes
           href: network-management-function-groups.md
           items:
             - name: Funciones de alerta
               href: alert-functions.md
-            - name: Funciones de ApiBuffer
+            - name: Funciones apiBuffer
               href: apibuffer-functions.md
             - name: Funciones del servicio de directorio
               href: directory-service-functions.md
-            - name: Funciones Get
+            - name: Obtener funciones
               href: get-functions.md
             - name: Funciones de grupo
               href: group-functions.md
@@ -25,17 +25,17 @@
               href: message-functions.md
             - name: Funciones de NetFile
               href: netfile-functions.md
-            - name: Funciones de utilidad remota
+            - name: Funciones de la utilidad remota
               href: remote-utility-functions.md
             - name: Funciones de programación
               href: schedule-functions.md
-            - name: Funciones de servidor
+            - name: Funciones del servidor
               href: server-functions.md
             - name: Funciones de transporte de servidor y estación de trabajo
               href: server-and-workstation-transport-functions.md
             - name: Funciones de sesión
               href: session-functions.md
-            - name: Funciones de uso compartido
+            - name: Funciones de recurso compartido
               href: share-functions.md
             - name: Usar funciones
               href: use-functions.md
@@ -45,21 +45,21 @@
               href: user-modal-functions.md
             - name: Funciones de usuario de estación de trabajo y estación de trabajo
               href: workstation-and-workstation-user-functions.md
-        - name: Requisitos de seguridad de la función de administración de red
+        - name: Requisitos de seguridad de la función de administración de redes
           href: security-requirements-for-the-network-management-functions.md
           items:
-            - name: Requisitos para las funciones de administración de redes en controladores de Dominio de Active Directory
+            - name: Requisitos para las funciones de administración de redes en Dominio de Active Directory controladores
               href: requirements-for-network-management-functions-on-active-directory-domain-controllers.md
             - name: Requisitos para las funciones de administración de redes en servidores y estaciones de trabajo
               href: requirements-for-network-management-functions-on-servers-and-workstations.md
-        - name: Asignación de interfaces ADSI a las funciones de administración de red
+        - name: Asignación de interfaces ADSI a las funciones de administración de redes
           href: mapping-adsi-interfaces-to-the-network-management-functions.md
-        - name: Datos de administración de red
+        - name: Datos de administración de redes
           href: network-management-data.md
           items:
-            - name: Búferes de función de administración de red
+            - name: Búferes de funciones de administración de red
               href: network-management-function-buffers.md
-            - name: Longitudes de búfer de funciones de administración de red
+            - name: Longitudes del búfer de la función de administración de redes
               href: network-management-function-buffer-lengths.md
             - name: Alineación de datos de API
               href: api-data-alignment.md
@@ -73,29 +73,29 @@
               href: nls-support.md
             - name: Informes de errores de parámetros
               href: parameter-error-reporting.md
-            - name: Errores de asignación de búfer de RPC
+            - name: Errores de asignación de búfer RPC
               href: rpc-buffer-allocation-errors.md
             - name: Campos de información obsoletos
               href: obsolete-information-fields.md
-    - name: Uso de la administración de redes
+    - name: Uso de administración de redes
       href: using-network-management.md
       items:
         - name: Buscar el nombre completo de un usuario
           href: looking-up-a-users-full-name.md
         - name: Forzar a un usuario a cambiar la contraseña de inicio de sesión
           href: forcing-a-user-to-change-the-logon-password.md
-        - name: Cambiar elementos de información de usuario
+        - name: Cambiar elementos de la información del usuario
           href: changing-elements-of-user-information.md
-        - name: Creación de una nueva cuenta de equipo
+        - name: Crear una nueva cuenta de equipo
           href: creating-a-new-computer-account.md
-        - name: Creación de un grupo local y adición de un usuario
+        - name: Crear un grupo local y agregar un usuario
           href: creating-a-local-group-and-adding-a-user.md
-        - name: Buscar texto para números de códigos de error
+        - name: Buscar texto para números de código de error
           href: looking-up-text-for-error-code-numbers.md
     - name: Referencia de administración de redes
       href: network-management-reference.md
       items:
-        - name: Enumeraciones de administración de red
+        - name: Enumeraciones de administración de redes
           href: network-management-enumerations.md
           items:
             - name: DSREG_JOIN_TYPE
@@ -105,7 +105,7 @@
           items:
             - name: GetNetScheduleAccountInformation
               href: /windows/desktop/api/AtAcct/nf-atacct-getnetscheduleaccountinformation
-            - name: NetAccessAdd
+            - name: NetAccessAgregue
               href: /windows/desktop/api/lmaccess/nf-lmaccess-netaccessadd
             - name: NetAccessCheck
               href: /previous-versions/windows/desktop/legacy/aa370291(v=vs.85)
@@ -331,7 +331,7 @@
               href: /windows/desktop/api/Lmwksta/nf-lmwksta-netwkstausersetinfo
             - name: SetNetScheduleAccountInformation
               href: /windows/desktop/api/AtAcct/nf-atacct-setnetscheduleaccountinformation
-        - name: Estructuras de administración de red
+        - name: Estructuras de administración de redes
           href: network-management-structures.md
           items:
             - name: ADMIN_OTHER_INFO
@@ -402,7 +402,7 @@
               href: /windows/win32/api/Lmaccess/ns-lmaccess-net_validate_persisted_fields
             - name: NETSETUP_PROVISIONING_PARAMS
               href: /windows/win32/api/Lmjoin/ns-lmjoin-netsetup_provisioning_params
-            - name: Definiciones IDL de unión a dominio sin conexión
+            - name: Definiciones de IDL de unión a un dominio sin conexión
               href: ./odj-idl.md
             - name: ODJ_BLOB
               href: ./odj-odj_blob.md
@@ -646,7 +646,7 @@
               href: /windows/win32/api/Lmwksta/ns-lmwksta-wksta_user_info_1
             - name: WKSTA_USER_INFO_1101
               href: /windows/win32/api/Lmwksta/ns-lmwksta-wksta_user_info_1101
-        - name: Macros de administración de red
+        - name: Macros de administración de redes
           href: network-management-macros.md
           items:
             - name: ALERT_OTHER_INFO

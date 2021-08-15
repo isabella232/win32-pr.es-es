@@ -1,28 +1,28 @@
 ---
-description: Puede localizar propiedades estáticas mediante el uso de mapas de valores parciales.
+description: Puede encontrar propiedades estáticas mediante asignaciones de valores parciales.
 ms.assetid: 67e91454-c065-4ab2-a373-245c9392c71c
 ms.tgt_platform: multiple
-title: Localizar propiedades estáticas
+title: Localización de propiedades estáticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecaba200b7880991d349c6e0c0196c88ffa54b11
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 4c51999c68a05e8d7b8cf3fd8c5218bc171931303d86a50c04f32c5d80efb308
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104362832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050733"
 ---
-# <a name="localizing-static-properties"></a>Localizar propiedades estáticas
+# <a name="localizing-static-properties"></a>Localización de propiedades estáticas
 
-Puede localizar propiedades estáticas mediante el uso de mapas de valores parciales.
+Puede encontrar propiedades estáticas mediante asignaciones de valores parciales.
 
 En el procedimiento siguiente se describe cómo se pueden localizar las propiedades estáticas mediante mapas de valores parciales con expresiones regulares.
 
-**Para usar asignaciones de valores para localizar propiedades estáticas**
+**Para usar asignaciones de valores para localización de propiedades estáticas**
 
-1.  Cree un archivo MOF maestro (Mastervm. mof).
+1.  Cree un archivo MOF maestro (Mastervm.mof).
 
-    El siguiente ejemplo de código se puede usar para crear un archivo MOF maestro (Mastervm. mof).
+    El ejemplo de código siguiente se puede usar para crear un archivo MOF maestro (Mastervm.mof).
 
     ```syntax
     [Locale(0x409)]
@@ -36,17 +36,17 @@ En el procedimiento siguiente se describe cómo se pueden localizar las propieda
     };
     ```
 
-2.  Cree las versiones independientes del idioma y específicas del idioma del archivo MOF.
+2.  Cree las versiones neutras del idioma y específicas del idioma del archivo MOF.
 
-    Escriba el siguiente comando en un símbolo del sistema para crear versiones independientes del idioma y del idioma del archivo MOF.
+    Escriba el siguiente comando en un símbolo del sistema para crear las versiones neutras del lenguaje y específicas del lenguaje del archivo MOF.
 
     ```syntax
     mofcomp -MOF:LnVm.mof -MFL:LsVm.mfl -Amendment:MS_409 MasterVm.mof
     ```
 
-    El compilador MOF genera los archivos MOF específicos del idioma y del idioma independiente, LnVm. mof y LsVm. mfl. Los valores de Inglés de Estados Unidos de la propiedad [numbers](numbers.md) se colocan en el archivo. MFL para el espacio de nombres American English.
+    El compilador de MOF genera los archivos MOF específicos y neutrales del lenguaje, LnVm.mof y LsVm.mfl. Los valores de inglés estadounidense para la [propiedad Numbers](numbers.md) se colocan en el archivo .mfl para el espacio de nombres inglés de Estados Unidos.
 
-    En el ejemplo de código siguiente se muestra el contenido del archivo LsVm. mfl.
+    En el ejemplo de código siguiente se muestra el contenido del archivo LsVm.mfl.
 
     ```syntax
     #pragma namespace("\\\\.\\root\\default")
@@ -71,7 +71,7 @@ En el procedimiento siguiente se describe cómo se pueden localizar las propieda
     Mofcomp LsVm.mfl
     ```
 
-4.  Localizar el archivo MFL para otras configuraciones regionales.
+4.  Localice el archivo MFL para otras configuraciones regionales.
 
     En el ejemplo de código siguiente se muestra el contenido de un archivo MFL para el espacio de nombres francés.
 
@@ -90,9 +90,9 @@ En el procedimiento siguiente se describe cómo se pueden localizar las propieda
     };
     ```
 
-El resultado neto es que el nombre para mostrar y el valor de la propiedad [numbers](numbers.md) dependen de la configuración regional del usuario que ha iniciado sesión. Si el usuario especifica una configuración regional que no se ha proporcionado, los datos del calificador predeterminado proceden del espacio de nombres inglés (MS \_ 409).
+El resultado neto es que tanto el nombre para mostrar como el valor de la propiedad [Numbers](numbers.md) dependen de la configuración regional del usuario que ha iniciado sesión. Si el usuario especifica una configuración regional que no se ha proporcionado, los datos de calificador predeterminados proceden del espacio de nombres inglés (ms \_ 409).
 
-La implicación de este diseño es que cada valor de cadena se utiliza como identificador de búsqueda, que no se puede localizar. Al definir este esquema, debe asegurarse de que el valor que el proveedor coloca es independiente de la configuración regional.
+La implicación de este diseño es que cada valor de cadena se usa como identificador de búsqueda, que no se puede localizar. Al definir este esquema, debe asegurarse de que el valor que coloca el proveedor es independiente de la configuración regional.
 
 > [!Note]  
 > WMI no proporciona actualmente compatibilidad en tiempo de ejecución para asignar valores a cadenas definidas por calificadores. La interpretación de la sintaxis sugerida es responsabilidad de la aplicación.

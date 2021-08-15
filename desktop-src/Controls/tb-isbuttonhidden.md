@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_ISBUTTONHIDDEN (commctrl. h)
-description: Determina si el botón especificado de una barra de herramientas está oculto.
+title: TB_ISBUTTONHIDDEN mensaje (Commctrl.h)
+description: Determina si el botón especificado en una barra de herramientas está oculto.
 ms.assetid: 3372a64f-8209-4e3f-a6a9-8fe2e7e87ff2
 keywords:
-- TB_ISBUTTONHIDDEN controles de mensajes de Windows
+- TB_ISBUTTONHIDDEN controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db36f289a05fecfb2a0795965820324a9ce68057
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a1fac4fa28daa876b273d71e4cf80bf5e76fce8fe01c0a5517dc63fb31b4273e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078239"
 ---
-# <a name="tb_isbuttonhidden-message"></a>\_Mensaje ISBUTTONHIDDEN TB
+# <a name="tb_isbuttonhidden-message"></a>Mensaje \_ ISBUTTONHIDDEN de TB
 
-Determina si el botón especificado de una barra de herramientas está oculto.
+Determina si el botón especificado en una barra de herramientas está oculto.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,11 +47,11 @@ Devuelve un valor distinto de cero si el botón está oculto o cero en caso cont
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

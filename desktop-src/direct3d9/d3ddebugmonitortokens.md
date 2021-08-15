@@ -1,7 +1,7 @@
 ---
 description: Define los tokens del monitor de depuración.
 ms.assetid: c0df4c9f-a232-45cf-b543-e95ee84a4a8d
-title: Enumeración D3DDEBUGMONITORTOKENS (D3D9Types. h)
+title: Enumeración D3DDEBUGMONITORTOKENS (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 82c3ecfa7d197e1ab912dbafe0d26fcb2281e605
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ed64939714c3ee69fb30e56afe23e52e780405287c898e138ee86822f1c5e0b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989075"
 ---
-# <a name="d3ddebugmonitortokens-enumeration"></a>Enumeración D3DDEBUGMONITORTOKENS
+# <a name="d3ddebugmonitortokens-enumeration"></a>D3DDEBUGMONITORTOKENS (enumeración)
 
 Define los tokens del monitor de depuración.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,30 +41,30 @@ typedef enum D3DDEBUGMONITORTOKENS {
 
 <dl> <dt>
 
-<span id="D3DDMT_ENABLE"></span><span id="d3ddmt_enable"></span>**\_Habilitación de D3DDMT**
+<span id="D3DDMT_ENABLE"></span><span id="d3ddmt_enable"></span>**D3DDMT \_ ENABLE**
 </dt> <dd>
 
 Habilite el monitor de depuración.
 
 </dd> <dt>
 
-<span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**Deshabilitación de D3DDMT \_**
+<span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**D3DDMT \_ DISABLE**
 </dt> <dd>
 
 Deshabilite el monitor de depuración.
 
 </dd> <dt>
 
-<span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT \_ forzar \_ DWORD**
+<span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores de este tipo enumerado se usan en el estado de representación de D3DRS \_ DEBUGMONITORTOKEN y solo son relevantes para las compilaciones de depuración.
+El estado de representación debugMONITORTOKEN de D3DRS usa los valores de este tipo enumerado y solo son pertinentes para \_ las compilaciones de depuración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,11 +72,11 @@ Los valores de este tipo enumerado se usan en el estado de representación de D3
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

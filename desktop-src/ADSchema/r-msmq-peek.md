@@ -1,10 +1,10 @@
 ---
-title: MSMQ-PEEK extendido derecho
-description: Permite inspeccionar mensajes en la cola.
+title: msmq-Peek extendido a la derecha
+description: Permite inspeccionar los mensajes de la cola.
 ms.assetid: bcf23dbe-79bf-441d-a795-f1a57451bba3
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-inspeccionar el esquema de AD derecho extendido
+- msmq-Peek extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cacbebb19f6e45b7f4d797ef63f9a7c72c3a6eef
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e67c3e3a2b5b0f198a21805d47aedb07567005f4e15b3bcaf53cd58b51c97cb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081159"
 ---
-# <a name="msmq-peek-extended-right"></a>MSMQ-PEEK extendido derecho
+# <a name="msmq-peek-extended-right"></a>msmq-Peek extendido a la derecha
 
-Permite inspeccionar mensajes en la cola.
+Permite inspeccionar los mensajes de la cola.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | MSMQ-PEEK                            |
+| CN           | msmq-Peek                            |
 | Display-Name | Inspección de mensajes                         |
 | Rights-GUID  | 06bd3201-df3e-11d1-9c86-006008764d0e |
 
@@ -47,10 +47,10 @@ Permite inspeccionar mensajes en la cola.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 43                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 43                                           |
 
 
 
@@ -58,10 +58,10 @@ Permite inspeccionar mensajes en la cola.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 43                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 43                                           |
 
 
 
@@ -69,10 +69,10 @@ Permite inspeccionar mensajes en la cola.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 43                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 43                                           |
 
 
 
@@ -80,10 +80,10 @@ Permite inspeccionar mensajes en la cola.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 43                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 43                                           |
 
 
 
@@ -91,10 +91,10 @@ Permite inspeccionar mensajes en la cola.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 43                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 43                                           |
 
 
 
@@ -102,10 +102,10 @@ Permite inspeccionar mensajes en la cola.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 43                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 43                                           |
 
 
 

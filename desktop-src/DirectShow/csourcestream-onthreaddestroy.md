@@ -1,7 +1,7 @@
 ---
 description: Se llama al método OnThreadDestroy cuando el subproceso de streaming está a punto de salir.
 ms.assetid: a484b6d2-bce6-4a42-9176-2a6ce374e28b
-title: CSourceStream. OnThreadDestroy (método) (Source. h)
+title: Método CSourceStream.OnThreadDestroy (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3e7377ce11955d7121a33311d390464e042b98f5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b71bd7ff9da79ed42ad7d36ff176a60687ca5fd0edcd6003d77c20084adc1b84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953704"
 ---
-# <a name="csourcestreamonthreaddestroy-method"></a>CSourceStream. OnThreadDestroy, método
+# <a name="csourcestreamonthreaddestroy-method"></a>Método CSourceStream.OnThreadDestroy
 
-`OnThreadDestroy`Se llama al método cuando el subproceso de streaming está a punto de salir.
+Se `OnThreadDestroy` llama al método cuando el subproceso de streaming está a punto de salir.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El procedimiento de subproceso, [**CSourceStream:: ThreadProc**](csourcestream-threadproc.md), llama a este método antes de salir. El método no hace nada en la clase base; está disponible para que la clase derivada se invalide. Si la clase derivada devuelve un código de error, el subproceso se cierra con un error.
+El procedimiento de subproceso, [**CSourceStream::ThreadProc**](csourcestream-threadproc.md), llama a este método antes de salir. El método no hace nada en la clase base; está disponible para que la clase derivada invalide. Si la clase derivada devuelve un código de error, el subproceso se cierra con un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,16 +54,16 @@ El procedimiento de subproceso, [**CSourceStream:: ThreadProc**](csourcestream-t
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

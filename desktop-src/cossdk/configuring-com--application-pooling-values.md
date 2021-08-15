@@ -1,38 +1,38 @@
 ---
-description: Puede usar las instrucciones siguientes para configurar los valores de agrupación de aplicaciones COM+ para la aplicación COM+.
+description: Puede usar las siguientes instrucciones para configurar los valores de agrupación de aplicaciones COM+ para la aplicación COM+.
 ms.assetid: faba5cb7-745e-4fdf-a3e0-62132da4a843
-title: Configuración de los valores de agrupación de aplicaciones COM+
+title: Configuración de valores de agrupación de aplicaciones COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98922699fff7af7146250bdb504a1f46be08718e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 25d3407cd644b68cfc3ef279a9e67603aa1dc2db85302b22dbf0c6ae7219fd3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128977"
 ---
-# <a name="configuring-com-application-pooling-values"></a>Configuración de los valores de agrupación de aplicaciones COM+
+# <a name="configuring-com-application-pooling-values"></a>Configuración de valores de agrupación de aplicaciones COM+
 
-Puede usar las instrucciones siguientes para configurar los valores de agrupación de aplicaciones COM+ para la aplicación COM+.
+Puede usar las siguientes instrucciones para configurar los valores de agrupación de aplicaciones COM+ para la aplicación COM+.
 
 > [!Note]  
 > Las aplicaciones de biblioteca tienen las propiedades de reciclaje y agrupación de su proceso de host.
 
  
 
-## <a name="component-services-administrative-tool"></a>Herramienta administrativa Servicios de componentes
+## <a name="component-services-administrative-tool"></a>Herramienta administrativa de servicios de componentes
 
 Para configurar la agrupación de aplicaciones COM+ para una aplicación COM+, siga estos pasos:
 
-1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, haga clic con el botón secundario en la aplicación COM+ que desea agrupar y, a continuación, haga clic en **propiedades**.
+1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, haga clic con el botón derecho en la aplicación COM+ que quiera agrupar y, a continuación, haga clic en **Propiedades**.
 
-2.  En la pestaña **agrupación & reciclaje** , en **agrupación de aplicaciones**, especifique un valor para **tamaño del grupo**, en función del número de instancias de la aplicación que desea que se ejecuten.
+2.  En la pestaña **Agrupación & reciclaje,** en Agrupación de aplicaciones **,** escriba un valor para Tamaño de grupo **,** en función del número de instancias de la aplicación que quiera tener en ejecución.
 
-3.  Haga clic en **OK**.
+3.  Haga clic en **Aceptar**.
 
 ## <a name="visual-basic"></a>Visual Basic
 
-La siguiente función de Visual Basic muestra cómo establecer el valor de agrupación de aplicaciones COM+ (representado por su propiedad ConcurrentApps) para cualquier aplicación de servidor COM+ que elija. Para usarlo desde Visual Basic, agregue una referencia a la biblioteca de tipos de administración de COM+.
+La siguiente función de Visual Basic muestra cómo puede establecer el valor de agrupación de aplicaciones COM+ (representado por su propiedad ConcurrentApps) para cualquier aplicación de servidor COM+ que elija. Para usarlo desde Visual Basic, agregue una referencia a la biblioteca de tipos de administrador de COM+.
 
 
 ```VB
@@ -78,7 +78,7 @@ End Function
 
 
 
-Para usar la función, proporcione un valor de cadena para el nombre de la aplicación de servidor COM+ y un valor entero para la configuración de agrupación de aplicaciones deseada. En el siguiente código de Visual Basic se muestra cómo establecer el valor de agrupación de aplicaciones en 15 para la aplicación denominada "mi aplicación":
+Para usar la función , proporcione un valor de cadena para el nombre de aplicación del servidor COM+ y un valor entero para la configuración de agrupación de aplicaciones deseada. En el Visual Basic siguiente se muestra cómo establecer el valor de agrupación de aplicaciones en 15 para la aplicación denominada "MyApplication":
 
 
 ```VB
@@ -94,7 +94,7 @@ End Sub
 
 ## <a name="cc"></a>C/C++
 
-La siguiente función de C++ muestra cómo puede establecer el valor de agrupación de aplicaciones COM+ (representado por su propiedad ConcurrentApps) para cualquier aplicación de servidor COM+ que elija. El método ErrorDescription se describe en [interpretar los códigos de error](interpreting-error-codes.md).
+La siguiente función de C++ muestra cómo puede establecer el valor de agrupación de aplicaciones COM+ (representado por su propiedad ConcurrentApps) para cualquier aplicación de servidor COM+ que elija. El método ErrorDescription se describe en [Interpretación de códigos de error](interpreting-error-codes.md).
 
 
 ```C++
@@ -214,7 +214,7 @@ catch(HRESULT hr) {  // Replace with specific error handling.
 
 
 
-Para usar la función, proporcione un valor de cadena para el nombre de la aplicación de servidor COM+ y un valor entero para la configuración de agrupación de aplicaciones deseada. En el código de C++ siguiente se muestra cómo establecer el valor de agrupación de aplicaciones en 15 para la aplicación denominada "mi aplicación":
+Para usar la función , proporcione un valor de cadena para el nombre de aplicación del servidor COM+ y un valor entero para la configuración de agrupación de aplicaciones deseada. El siguiente código de C++ muestra cómo establecer el valor de agrupación de aplicaciones en 15 para la aplicación denominada "MyApplication":
 
 ``` syntax
 #define _WIN32_DCOM  // To use CoInitializeEx()

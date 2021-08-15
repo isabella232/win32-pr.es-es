@@ -1,7 +1,7 @@
 ---
-description: El método AddBefore inserta una lista antes de la posición especificada. Este método usa los parámetros ' pos ' y ' plist '.
+description: El método AddBefore inserta una lista antes de la posición especificada. Este método usa los parámetros "pos" y "pList".
 ms.assetid: 0fdb2a59-d9de-4dbb-8536-8e10726201d0
-title: 'Método CGenericList. AddBefore (Wxlist. h): parámetros de pos y plist'
+title: 'Método CGenericList.AddBefore (Wxlist.h): pos, pList parameters'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b6aa6aa71b1738a815beee9cdc7c0f47118eb27f
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 6f05d67477bb7e6c89eddfe0a68ad47d83760762fc68cddf6f73c731886f88d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103821586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697455"
 ---
-# <a name="cgenericlistaddbefore-method-wxlisth---pos-plist-parameters"></a>Método CGenericList. AddBefore (Wxlist. h): parámetros de pos y plist
+# <a name="cgenericlistaddbefore-method-wxlisth---pos-plist-parameters"></a>Método CGenericList.AddBefore (Wxlist.h): pos, pList parameters
 
 El `AddBefore` método inserta una lista antes de la posición especificada.
 
@@ -46,33 +46,33 @@ BOOL AddBefore(
 *pos* 
 </dt> <dd>
 
-Posición en la que se va a insertar la lista. La lista se inserta antes de esta posición.
+Posición para insertar la lista. La lista se inserta antes de esta posición.
 
 </dd> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
-Puntero a la lista que se va a insertar.
+Puntero a la lista que se insertará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true si es** correcto. De lo contrario, devuelve **false**.
+Devuelve **TRUE si** se realiza correctamente. De lo contrario, **devuelve FALSE**.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |-|-|
-| Encabezado | Wxlist. h (incluir streams. h) |
-| Biblioteca| Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado | Wxlist.h (incluir Secuencias.h) |
+| Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (Clase)**](cgenericlist.md)
 </dt> </dl>
 
  

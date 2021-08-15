@@ -1,6 +1,6 @@
 ---
-title: mova-vs
-description: Mueva los datos desde un registro de punto flotante al registro de direcciones, a0.
+title: mova- vs
+description: Mueva los datos de un registro de punto flotante al registro de direcciones, a0.
 ms.assetid: 929a0670-f337-4d6d-a7e7-d285e7dc8ae1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,50 +9,50 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9ac29bf0d74b4eb2cb6cb86bdf6b070cf56823eb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: dec849009ee47b4aaef1bc3766e2b141a8a6ccf5e17b16a370c6ea8284eaf957
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104983898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986335"
 ---
-# <a name="mova---vs"></a>mova-vs
+# <a name="mova---vs"></a>mova- vs
 
-Mueva los datos desde un registro de punto flotante al [registro de direcciones](dx9-graphics-reference-asm-vs-registers-address.md), a0.
+Mueva los datos de un registro de punto flotante al registro [de direcciones](dx9-graphics-reference-asm-vs-registers-address.md), a0.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| mova DST, src |
+| mova dst, src |
 |---------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST debe ser el [registro de direcciones](dx9-graphics-reference-asm-vs-registers-address.md), a0.
+-   dst debe ser address [register](dx9-graphics-reference-asm-vs-registers-address.md), a0.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| mova                   |      | x    | x    | x     | x    | x     |
+| Mova                   |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Mueve los datos de punto flotante a un registro entero. Los valores se convierten del punto flotante utilizando el redondeo al más próximo.
+Mueve los datos de punto flotante a un registro entero. Los valores se convierten de punto flotante mediante el redondeo al más cercano.
 
 El registro de direcciones es el único registro de destino permitido.
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```
@@ -69,7 +69,7 @@ else
 
 
 
-En el caso de las versiones 2 \_ x y posteriores, el registro de direcciones es un vector de componente. Por lo tanto, se permite cualquier máscara de escritura.
+Para las versiones 2 \_ x y posteriores, el registro de direcciones es un vector de componente. Por lo tanto, se permite cualquier máscara de escritura.
 
 
 ```
@@ -85,9 +85,9 @@ mova a0.xz, r0
 [Instrucciones del sombreador de vértices](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

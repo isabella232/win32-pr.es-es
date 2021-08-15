@@ -1,7 +1,7 @@
 ---
-description: GetOrdinal no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
+description: GetOrdinal no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use Cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: 20b1c1d0-b09f-43a8-9026-9cdbac28c108
-title: 'IUserIdentity2:: GetOrdinal (método) (Msident. h)'
+title: Método IUserIdentity2::GetOrdinal (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: f5a7e875e92342363722858b3ac714171cb547b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5453a083a1db23e042d24c3da4cd2948ff70f813fcc9026a00324eade467918
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968974"
 ---
-# <a name="iuseridentity2getordinal-method"></a>IUserIdentity2:: GetOrdinal (método)
+# <a name="iuseridentity2getordinal-method"></a>IUserIdentity2::GetOrdinal (método)
 
-\[**GetOrdinal** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md).\]
+\[**GetOrdinal no** se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [use cuentas de usuario con cambio rápido de usuario y Escritorio remoto](fastuserswitching.md).\]
 
 Obtiene el número ordinal de esta identidad.
 
@@ -41,12 +41,12 @@ HRESULT GetOrdinal(
 
 <dl> <dt>
 
-*dwOrdinal* \[ enuncia\]
+*dwOrdinal* \[ out\]
 </dt> <dd>
 
-Tipo: **DWORD \** _
+Tipo: **DWORD \***
 
-Un puntero a un valor _ *DWORD** que recibe el número ordinal de esta identidad.
+Puntero a un **valor DWORD** que recibe el número ordinal de esta identidad.
 
 </dd> </dl>
 
@@ -54,29 +54,29 @@ Un puntero a un valor _ *DWORD** que recibe el número ordinal de esta identidad
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El ordinal determina el orden de las identidades en la lista de identidades, pero puede que no se conserven en las distintas operaciones de las identidades. Para obtener un valor único para una identidad, llame a [**GetCookie**](iuseridentity-getcookie.md).
+El ordinal determina el orden de las identidades en la lista de identidades, pero puede que no se conserve a lo largo de las operaciones en las identidades. Para obtener un valor único para una identidad, llame a [**GetCookie**](iuseridentity-getcookie.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows 2000 Server<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

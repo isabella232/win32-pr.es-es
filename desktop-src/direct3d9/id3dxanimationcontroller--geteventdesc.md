@@ -1,7 +1,7 @@
 ---
 description: Obtiene una descripción de un evento de animación especificado.
 ms.assetid: 7fb3def5-8df2-458d-b68e-5d540fd0a738
-title: 'ID3DXAnimationController:: GetEventDesc (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::GetEventDesc (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9f717c032358dd921be2df1c8a84d1aa02a7a93a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bc113788a8eb6b64accfcba8c58dd3a3512e17601ec02ce5dd33349628c69212
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987945"
 ---
-# <a name="id3dxanimationcontrollergeteventdesc-method"></a>ID3DXAnimationController:: GetEventDesc (método)
+# <a name="id3dxanimationcontrollergeteventdesc-method"></a>Método ID3DXAnimationController::GetEventDesc
 
 Obtiene una descripción de un evento de animación especificado.
 
@@ -41,21 +41,21 @@ HRESULT GetEventDesc(
 
 <dl> <dt>
 
-*hEvent* \[ de\]
+*hEvent* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Identificador de evento de un evento de animación que se va a describir.
+Identificador de evento para un evento de animación que se describe.
 
 </dd> <dt>
 
-*pDesc* \[ enuncia\]
+*pDesc* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEVENT \_ DESC**](d3dxevent-desc.md)**
 
-Puntero a una [**estructura \_ DESC de D3DXEVENT**](d3dxevent-desc.md) que contiene una descripción del evento de animación.
+Puntero a una [**estructura \_ DESC D3DXEVENT**](d3dxevent-desc.md) que contiene una descripción del evento de animación.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a una [**estructura \_ DESC de D3DXEVENT**](d3dxevent-desc.md) que conti
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

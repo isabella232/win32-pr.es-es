@@ -1,27 +1,27 @@
 ---
 title: AsyncAdd3ImplicitExample
-description: En este ejemplo se muestra la implementación de una función asincrónica compleja mediante WsAsyncExecute.
+description: En este ejemplo se muestra cómo implementar una función asincrónica compleja mediante WsAsyncExecute.
 ms.assetid: f84de03f-ecfb-494e-9a1d-a96d399a41c0
 keywords:
-- Servicios Web de AsyncAdd3ImplicitExample para Windows
+- AsyncAdd3ImplicitExample Web Services for Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20f6654d1db938d6b52ea4e3c02b307bd29d7277
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 16c833f7120cf357c88ebe8a3c6d0e1cb1d45899125f6df5d66ab4b96fd52d0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963444"
 ---
 # <a name="asyncadd3implicitexample"></a>AsyncAdd3ImplicitExample
 
-En este ejemplo se muestra la implementación de una función asincrónica compleja mediante [**WsAsyncExecute**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute).
+En este ejemplo se muestra cómo implementar una función asincrónica compleja [**mediante WsAsyncExecute.**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute)
 
-En el ejemplo se implementa una función asincrónica ' AddThree ' que agrega tres enteros juntos mediante la compilación de una función Add existente que puede agregar dos enteros de forma asincrónica.
+En el ejemplo se implementa una función asincrónica "AddThree" que agrega tres enteros juntos mediante la creación de una función Add existente que puede agregar dos enteros de forma asincrónica.
 
-## <a name="asyncadd3implicitcpp"></a>AsyncAdd3Implicit. cpp
+## <a name="asyncadd3implicitcpp"></a>AsyncAdd3Implicit.cpp
 
 
 ```C++
@@ -328,9 +328,9 @@ int __cdecl wmain(int argc, __in_ecount(argc) wchar_t **argv)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

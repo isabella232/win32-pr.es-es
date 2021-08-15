@@ -1,60 +1,60 @@
 ---
-description: Dado que en muchos casos podrá depurar solo una parte de la funcionalidad de los componentes dentro del entorno de Microsoft Visual Basic, habrá situaciones en las que necesitará depurar componentes compilados con Visual Basic una vez que se hayan compilado. Como el entorno de Visual Basic no lo habilita, en su lugar debe usar el entorno de Microsoft Visual C++.
+description: Dado que en muchos casos solo podrá depurar una parte de la funcionalidad de los componentes en el entorno de Microsoft Visual Basic, habrá situaciones en las que deberá depurar los componentes compilados con Visual Basic una vez compilados. Como el Visual Basic no lo habilita, en su lugar debe usar el Microsoft Visual C++ de trabajo.
 ms.assetid: a58c5884-3c2d-4699-8b19-277003912dfd
-title: Depurar componentes Visual Basic compilados
+title: Depuración de componentes Visual Basic compilados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07b32a39f0f1c50e1da4c9534b40658838361225
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2eac784808602d3554e4610e70a8d8a22ef2ca1594062599ec6acd43db68b98a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128787"
 ---
-# <a name="debugging-compiled-visual-basic-components"></a>Depurar componentes Visual Basic compilados
+# <a name="debugging-compiled-visual-basic-components"></a>Depuración de componentes Visual Basic compilados
 
-Dado que en muchos casos solo podrá depurar una parte de la funcionalidad del componente en el entorno de Microsoft Visual Basic, habrá situaciones en las que necesitará depurar los componentes compilados con Visual Basic una vez que se hayan compilado. Como el entorno de Visual Basic no lo habilita, en su lugar debe usar el entorno de Microsoft Visual C++.
+Dado que en muchos casos solo podrá depurar una parte de la funcionalidad del componente dentro del entorno de Microsoft Visual Basic, habrá situaciones en las que deberá depurar los componentes compilados con Visual Basic después de que se hayan compilado. Como el Visual Basic no lo habilita, en su lugar debe usar el Microsoft Visual C++ de trabajo.
 
-**Para depurar un componente de Visual Basic en el entorno de Visual C++**
+**Para depurar un componente Visual Basic en el Visual C++ de depuración**
 
-1.  En Visual Basic 6,0, abra el proyecto de Visual Basic que desea depurar.
+1.  En Visual Basic 6.0, abra el Visual Basic proyecto que desea depurar.
 
-2.  En el menú **archivo** , haga clic en **crear YourProject.dll**.
+2.  En el **menú Archivo** , haga clic en **Crear YourProject.dll**.
 
-3.  En el cuadro de diálogo **crear proyecto** , haga clic en **Opciones**.
+3.  En el cuadro **de diálogo Crear Project,** haga clic en **Opciones**.
 
-4.  En el cuadro de diálogo **propiedades del proyecto** , en la pestaña **compilar** , haga clic en **compilar en código nativo** y **sin optimización** y seleccione la casilla **crear información de depuración simbólica** .
+4.  En el **cuadro Project propiedades,**  en la  pestaña Compilar ,  haga clic en Compilar en código nativo y sin optimización y active la casilla Crear información de **depuración** simbólica.
 
-5.  Haga clic en **Aceptar** y, a continuación, haga clic en **Aceptar** de nuevo para compilar el proyecto.
+5.  Haga **clic en Aceptar** y, a continuación, en **Aceptar** de nuevo para compilar el proyecto.
 
-6.  Mueva la DLL compilada a la ubicación donde se instalan normalmente las aplicaciones COM+.
+6.  Mueva el archivo DLL compilado a la ubicación donde normalmente se instalan las aplicaciones COM+.
 
     > [!Note]  
-    > Si no mueve el archivo DLL, es posible que reciba un mensaje de error que le informa de que no se pudo encontrar la información de depuración simbólica de la DLL. Si tiene problemas para que el depurador se detenga en los puntos de interrupción del componente, confirme que el archivo DLL está en el directorio de paquetes estándar, elimine el componente de su paquete y vuelva a agregar el componente.
+    > Si no mueve el archivo DLL, puede recibir un mensaje de error que le informa de que no se pudo encontrar información de depuración simbólica para el archivo DLL. Si tiene problemas para que el depurador se detenga en los puntos de interrupción del componente, confirme que el archivo DLL está en el directorio de paquetes estándar, elimine el componente de su paquete y vuelva a agregar el componente.
 
      
 
 7.  Inicie Visual C++.
 
-8.  En el menú **archivo** , haga clic en **abrir área de trabajo**.
+8.  En el menú **Archivo ,** haga clic en Abrir área **de trabajo.**
 
-9.  En el cuadro de diálogo **abrir área de trabajo** , establezca **archivos de tipo** en **todos los archivos ( \* . \* )**, seleccione el componente compilado y haga clic en **abrir**.
+9.  En el **cuadro de diálogo Abrir** área de trabajo, establezca **Archivos** de tipo en Todos los **archivos( \* . \* )**, seleccione el componente compilado y haga clic **en Abrir**.
 
-10. En el menú **archivo** , haga clic en **abrir** (no **abrir área de trabajo**) y abra el módulo de Visual Basic (. Bas), el formulario (. FRM) o la clase (. CLS) que desea depurar.
+10. En  el menú Archivo, haga clic en Abrir **(no** Abrir área de **trabajo)** y abra el módulo de Visual Basic (.bas), el formulario (.frm) o la clase (.cls) que desea depurar.
 
-11. En el menú **proyecto** , haga clic en **configuración**.
+11. En el menú **Project,** haga clic **Configuración**.
 
-12. En el cuadro de diálogo **configuración del proyecto** , en la pestaña **depurar** , seleccione **General** en el cuadro **categoría** .
+12. En el **Project Configuración** de diálogo, en la **pestaña Depurar** , seleccione **General** en el **cuadro** Categoría .
 
-13. En el cuadro **ejecutable para sesión de depuración** , escriba la ruta de acceso completa de Dllhost.exe, seguido de un argumento que especifique el ID. de proceso de la aplicación com+ que contiene el componente. Encontrará el identificador de proceso en la pestaña **General** del cuadro de diálogo **propiedades** de la aplicación com+. A continuación se encuentra un ejemplo: C: \\ WinNT \\ system32 \\Dllhost.exe/ProcessId: { <processID> }.
+13. En el **cuadro Ejecutable** para la sesión de depuración, escriba la ruta de acceso completa para Dllhost.exe, seguida de un argumento que especifique el identificador de proceso de la aplicación COM+ que contiene el componente. Encontrará el identificador de proceso en la **pestaña** General  del cuadro de diálogo Propiedades de la aplicación COM+. A continuación se muestra un ejemplo: C: \\ Winnt \\ System32 \\Dllhost.exe /ProcessID:{ <processID> }.
 
-14. Haga clic en **OK**.
+14. Haga clic en **Aceptar**.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Compatibilidad con la depuración de Visual Basic COM+ en contraste con MTS](com--visual-basic-debugging-support-contrasted-with-mts.md)
+[Compatibilidad con la depuración de Visual Basic COM+ contrastada con MTS](com--visual-basic-debugging-support-contrasted-with-mts.md)
 </dt> <dt>
 
 [Depuración en el IDE de Visual Basic](debugging-in-the-visual-basic-ide.md)

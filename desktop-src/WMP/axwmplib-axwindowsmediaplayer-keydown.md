@@ -54,7 +54,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **propiedad nKeyCode** especifica una clave física. En las tablas siguientes se muestran los valores posibles de las teclas principales en un teclado estándar.
 
@@ -62,7 +62,7 @@ Valores de las claves principales.
 
 
 
-| Key                     | Value   |
+| Clave                     | Valor   |
 |-------------------------|---------|
 | A-Z                     | 65-90   |
 | 0-9                     | 48-56   |
@@ -88,7 +88,7 @@ Valores de las teclas de panel numérico.
 
 
 
-| Key               | Value  |
+| Clave               | Valor  |
 |-------------------|--------|
 | 0-9               | 96-105 |
 | BLOQUEO NUM          | 144    |
@@ -107,7 +107,7 @@ Valores de las teclas de navegación.
 
 
 
-| Key         | Value |
+| Clave         | Valor |
 |-------------|-------|
 | INSERT      | 45    |
 | Delete      | 46    |
@@ -128,7 +128,7 @@ Valores de las teclas de navegación.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
@@ -136,7 +136,7 @@ Valores de las teclas de navegación.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

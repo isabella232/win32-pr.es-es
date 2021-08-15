@@ -1,7 +1,7 @@
 ---
-description: La propiedad ConfigurableItems de solo lectura del objeto Merge devuelve una colección de objetos ConfigurableItem, cada uno de los cuales representa una sola fila de la tabla ModuleConfiguration.
+description: La propiedad ConfigurableItems de solo lectura del objeto Merge devuelve una colección De objetos ConfigurableItem, cada uno de los cuales representa una sola fila de la tabla ModuleConfiguration.
 ms.assetid: 4d1a64f7-fbd0-4358-8911-112e43f1be4a
-title: Merge.Configpropiedad urableItems (Mergemod. h)
+title: Merge.Configpropiedad urableItems (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 9224aa1cd649971894d78371369b16c6b377cbcc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 179594ba7fe7691edb9abe1f72d104742fe9bc9e3a4a23b728ad8607b94c444a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013043"
 ---
 # <a name="mergeconfigurableitems-property"></a>Merge.Configpropiedad urableItems
 
-La propiedad **ConfigurableItems** de solo lectura del objeto [**Merge**](merge-object.md) devuelve una colección de objetos [**ConfigurableItem**](configurableitem-object.md) , cada uno de los cuales representa una sola fila de la [tabla ModuleConfiguration](moduleconfiguration-table.md). Semánticamente, cada interfaz del enumerador representa un elemento que puede ser configurado por el consumidor del módulo. La colección es una colección de solo lectura e implementa las interfaces de colección estándar de solo lectura de Item (), Count () y \_ NewEnum (). El enumerador **IEnumMsmConfigItems** implementa Next (), SKIP (), RESET () y Clone () con la semántica estándar.
+La propiedad **ConfigurableItems** de solo lectura del objeto [**Merge**](merge-object.md) devuelve una colección De objetos [**ConfigurableItem,**](configurableitem-object.md) cada uno de los cuales representa una sola fila de la [tabla ModuleConfiguration](moduleconfiguration-table.md). Semánticamente, cada interfaz del enumerador representa un elemento que puede configurar el consumidor del módulo. La colección es una colección de solo lectura e implementa las interfaces de colección de solo lectura estándar de Item(), Count() y \_ NewEnum(). El **enumerador IEnumMsmConfigItems** implementa Next(), Skip(), Reset() y Clone() con la semántica estándar.
 
 Esta propiedad es de solo lectura.
 
@@ -40,16 +40,16 @@ propVal = Merge.ConfigurableItems
 
 ## <a name="c"></a>C++
 
-Consulte [**Get \_ ConfigurableItems**](/windows/desktop/api/Mergemod/nf-mergemod-imsmmerge2-get_configurableitems) function.
+Consulte get ConfigurableItems function (Obtener [**\_ función ConfigurableItems).**](/windows/desktop/api/Mergemod/nf-mergemod-imsmmerge2-get_configurableitems)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 2,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

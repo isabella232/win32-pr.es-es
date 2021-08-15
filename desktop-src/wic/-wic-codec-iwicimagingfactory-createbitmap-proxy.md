@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método CreateBitmap.
 ms.assetid: 5647521b-231d-4819-97ab-4dfb5f796211
-title: IWICImagingFactory_CreateBitmap_Proxy función)
+title: IWICImagingFactory_CreateBitmap_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 56684de0280ae27bf2ec1e900bd718faec4733fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 978946b5c22d8e4cb3427dbf27e5bb745efde259b48811a2b2a82e3721108184
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965204"
 ---
-# <a name="iwicimagingfactory_createbitmap_proxy-function"></a>IWICImagingFactory \_ CreateBitmap \_ función proxy
+# <a name="iwicimagingfactory_createbitmap_proxy-function"></a>Función IWICImagingFactory \_ CreateBitmap \_ Proxy
 
-Función de proxy para el método [**CreateBitmap**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmap) .
+Función de proxy para el [**método CreateBitmap.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmap)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,32 +45,32 @@ HRESULT IWICImagingFactory_CreateBitmap_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ de\]
+*pFactory* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_uiWidth * \[ en\]
+*uiWidth* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Ancho del nuevo mapa de bits.
 
 </dd> <dt>
 
-*uiHeight* \[ de\]
+*uiHeight* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Alto del nuevo mapa de bits.
 
 </dd> <dt>
 
-*PixelFormat* \[ de\]
+*pixelFormat* \[ En\]
 </dt> <dd>
 
 Tipo: **REFWICPixelFormatGUID**
@@ -79,16 +79,16 @@ Formato de píxel del nuevo mapa de bits.
 
 </dd> <dt>
 
-*opción* \[ de de\]
+*opción* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapCreateCacheOption**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapcreatecacheoption)**
 
-Opciones de creación de la memoria caché del nuevo mapa de bits.
+Opciones de creación de caché del nuevo mapa de bits.
 
 </dd> <dt>
 
-*ppIBitmap* \[ enuncia\]
+*ppIBitmap* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)\*\***
@@ -101,7 +101,7 @@ Puntero que recibe un puntero al nuevo mapa de bits.
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -109,11 +109,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

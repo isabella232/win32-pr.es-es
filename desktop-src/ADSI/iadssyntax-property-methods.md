@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsSyntax (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsSyntax obtienen o establecen las propiedades enumeradas en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsSyntax (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsSyntax obtienen o establecen las propiedades enumeradas en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea Métodos de propiedad de interfaz.
 ms.assetid: a216a55d-63eb-4fdf-a67f-8d4b5eb74262
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsSyntax ADSI
+- ADSI de métodos de propiedad IADsSyntax
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7a41c84efb4f48171913156823e18a301236290
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c193bba78bfe215d37bdfdedf5d45bd73f1a85606b3dab6e5a3c233cece8db18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961904"
 ---
 # <a name="iadssyntax-property-methods"></a>Métodos de propiedad IADsSyntax
 
-Los métodos de propiedad de la interfaz [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax) obtienen o establecen las propiedades enumeradas en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax) obtienen o establecen las propiedades enumeradas en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -36,29 +36,29 @@ Los métodos de propiedad de la interfaz [**IADsSyntax**](/windows/desktop/api/I
 **OleAutoDataType**
 </dt> <dd> <dl>
 
-Recupera y establece un valor de **tipo Long** que contiene el valor de la constante **VT \_ XXX** para el tipo de datos de Automation que representa esta sintaxis.
+Recupera y establece un **valor LONG** que contiene el valor de la constante **VT \_ xxx** para el tipo de datos automation que representa esta sintaxis.
 
-Active Directory admite las siguientes constantes **VT \_ XXX** para el tipo de datos de Automation que representa esta sintaxis:
+Active Directory admite las siguientes **constantes XXX \_ de VT** para el tipo de datos automation que representa esta sintaxis:
 
--   **VT \_ BOOL** bool
--   **VT \_ BSTR BSTR**
+-   **VT \_ BOOL** BOOL
+-   **VT \_ BSTR** BSTR
 -   **VT \_ BSTRT** BSTRT
--   **VT \_ moneda CY**
--   **VT \_ Fecha de fecha**
--   **VT \_** **null** vacío
--   **VT \_ ERROR** no válido
--   **VT \_ De i2** corto
--   **VT \_ I4** Long
+-   **VT \_ CY** CURRENCY
+-   **VT \_ DATE** Date
+-   **VT \_ EMPTY** **NULL**
+-   **VT \_ ERROR** No válido
+-   **VT \_ I2** short
+-   **VT \_ I4** long
 -   **VT \_ R4** real
--   **VT \_ R8** doble
--   **VT \_ UI1** byte
+-   **VT \_ R8** double
+-   **VT \_ UI1** BYTE
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -78,13 +78,13 @@ HRESULT put_OleAutoDataType(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una matriz de bytes sin signo, la **matriz VT \_ UI1** \| **VT \_** podría significar que el proveedor ha asignado una sintaxis que no se puede asignar a un tipo virtual de automatización.
+Una matriz de bytes sin signo, **VT \_ UI1** VT ARRAY podría significar que el proveedor ha asignado una sintaxis que no se puede asignar a un tipo virtual de \| **\_** Automation.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se examina la sintaxis del atributo **OperatingSystemVersion** de un equipo en una red a través del proveedor de Winnt. La sintaxis del resultado es una cadena.
+En el ejemplo de código siguiente se examina la sintaxis del atributo **OperatingSystemVersion** de un equipo en una red a través del proveedor WinNT. La sintaxis del resultado es una cadena.
 
 
 ```VB
@@ -116,7 +116,7 @@ Cleanup:
 
 
 
-En el ejemplo de código siguiente se examina la sintaxis del atributo **OperatingSystemVersion** de un equipo en una red a través del proveedor de Winnt. La sintaxis del resultado es una cadena. Por motivos de brevedad, se omite la comprobación de errores.
+En el ejemplo de código siguiente se examina la sintaxis del atributo **OperatingSystemVersion** de un equipo en una red a través del proveedor WinNT. La sintaxis del resultado es una cadena. Por brevedad, se omite la comprobación de errores.
 
 
 ```C++
@@ -198,17 +198,17 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsSyntax se define como C8F93DD2-4AE0-11cf-9E73-00AA004A5691<br/>           |
+| IID<br/>                      | IID \_ IADsSyntax se define como C8F93DD2-4AE0-11CF-9E73-00AA004A5691<br/>           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

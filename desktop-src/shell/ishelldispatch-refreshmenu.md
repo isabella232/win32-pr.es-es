@@ -1,5 +1,5 @@
 ---
-description: Obtenga información sobre el método IShellDispatch.RefreshMenu, que actualiza el contenido de la menú Inicio. Solo se usa con sistemas anteriores a Windows XP.
+description: Obtenga información sobre el método IShellDispatch.RefreshMenu, que actualiza el contenido de la menú Inicio. Se usa solo con sistemas anteriores a Windows XP.
 ms.assetid: D36FA5A0-AF03-4627-86E0-869BF1440958
 title: Método IShellDispatch.RefreshMenu (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d9e1a3c326cfa79c7b754cc8a364e649cf2c9931
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ac5bb37f5880011fcabcfcc0e923196857694012a547b0391326a9fe5d8424f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969064"
 ---
 # <a name="ishelldispatchrefreshmenu-method"></a>Método IShellDispatch.RefreshMenu
 
-Actualiza el contenido del **menú** Inicio. Solo se usa con sistemas anteriores a Windows XP.
+Actualiza el contenido del **menú** Inicio. Se usa solo con sistemas anteriores a Windows XP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,17 +55,17 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método se implementa y se accede a través del [**método Shell.TrayProperties.**](shell-trayproperties.md)
 
-La funcionalidad **que proporciona RefreshMenu** se controla automáticamente en Windows XP o versiones posteriores. No llame a este método en Windows XP o versiones posteriores.
+La funcionalidad que **proporciona RefreshMenu** se controla automáticamente en Windows XP o posterior. No llame a este método en Windows XP o posterior.
 
 ## <a name="examples"></a>Ejemplos
 
 En los ejemplos siguientes se muestra el uso **de RefreshMenu** en JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -121,7 +121,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

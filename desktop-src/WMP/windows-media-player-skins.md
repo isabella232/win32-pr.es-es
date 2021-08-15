@@ -1,51 +1,51 @@
 ---
-title: Máscaras de Windows Media Player
-description: Máscaras de Windows Media Player
+title: Reproductor de Windows Media Pieles
+description: Reproductor de Windows Media Pieles
 ms.assetid: 0cd23497-9a47-4391-a2c1-0e3102dcc1d2
 keywords:
-- Media Player de Windows, máscaras
-- Aspectos de Windows Media Player, acerca de
-- aspectos, acerca de
+- Reproductor de Windows Media,máscaras
+- Reproductor de Windows Media máscaras, acerca de
+- máscaras, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e649a3a3708a04af5c21d059c3f06b5badc815d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 862ae6a4169fd829c77fbd2cf35828e3907af2b71c4f4cbd1862a404e87abcd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053983"
 ---
-# <a name="windows-media-player-skins"></a>Máscaras de Windows Media Player
+# <a name="windows-media-player-skins"></a>Reproductor de Windows Media Pieles
 
-Windows Media Player proporciona una plataforma de programación para crear máscaras personalizadas. Las máscaras son conjuntos de scripts, gráficos y archivos de texto que se pueden combinar para crear una nueva apariencia para Windows Media Player. Con las máscaras, puede cambiar no solo la apariencia de Windows Media Player, sino cómo funciona. No solo donde se encuentran los botones y su aspecto, pero lo que hacen, dados los límites de la tecnología subyacente de Windows Media Player Core.
+Reproductor de Windows Media proporciona una plataforma de programación para crear máscaras personalizadas. Las máscaras son conjuntos de scripts, imágenes, medios y archivos de texto que se pueden combinar para crear una nueva apariencia para Reproductor de Windows Media. Con las máscaras, puede cambiar no solo la forma Reproductor de Windows Media, sino también cómo funciona. No solo dónde están los botones y su aspecto, sino también lo que hacen, dados los límites de la tecnología Reproductor de Windows Media núcleo subyacente.
 
-La tecnología de máscara es muy diferente de otros tipos de programación. esencialmente, se mezclará la programación y la imagen en las partes iguales. No es necesario ser un programador experto (no es mucho más de lo que ya sabe si ha creado páginas web y ha hecho algo sencillo), ni tampoco tiene que ser un artista (siempre y cuando pueda utilizar una aplicación de edición de gráficos). Va a usar XML (similar a HTML), Microsoft JScript y cualquier programa de imagen que elija.
+La tecnología de máscara es muy diferente de otros tipos de programación. básicamente, combinará la programación y el arte en partes iguales. No es necesario ser un programador experto (no mucho más de lo que ya sabe si ha creado páginas web y ha realizado algunos scripts sencillos), ni necesita ser un intérprete (siempre y cuando pueda usar una aplicación de edición de gráficos). Va a usar XML (similar a HTML), Microsoft JScript y los programas de arte que elija.
 
-La documentación de las máscaras contiene las cuatro secciones siguientes.
+La documentación de máscaras contiene las cuatro secciones siguientes.
 
 
 
 | Sección                                                                    | Descripción                                                                                                                                                                                                                                                                                            |
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Acerca de las máscaras](about-skins.md)                                             | Describe la teoría de las máscaras en términos abstractos. Es aconsejable examinar esta sección como mínimo, ya que la tecnología de máscara es tan distinta de la de otros tipos de programación. En esta sección se indica el motivo y el funcionamiento de las cosas, pero solo se explican los detalles.                                             |
-| [Guía de creación de máscaras](skin-creation-guide.md)                             | Explica lo que debe hacer para crear una máscara. Probablemente querrá leer esta sección porque cubre los detalles de la creación de máscaras simples y, a continuación, máscaras más complicadas que usan elementos de máscara concretos. En esta sección también se incluyen tutoriales sobre la creación de la imagen necesaria para crear máscaras. |
-| [Referencia de programación de máscara](skin-programming-reference.md)               | Contiene entradas de referencia para todos los elementos y atributos admitidos por las máscaras. Lea los temas que explican la funcionalidad que desea usar.                                                                                                                                                    |
-| [Máscaras móviles de Windows Media Player](windows-media-player-mobile-skins.md) | Proporciona información completa para crear máscaras para Windows Media Player Mobile.                                                                                                                                                                                                                      |
+| [Acerca de las máscaras](about-skins.md)                                             | Describe la teoría de las máscaras en términos abstractos. Se recomienda examinar al menos esta sección porque la tecnología de máscara es muy diferente de otros tipos de programación. En esta sección se indica por qué y cómo funcionan las cosas, pero solo se despeda los detalles.                                             |
+| [Guía de creación de máscaras](skin-creation-guide.md)                             | Explica lo que debe hacer para crear una máscara. Probablemente quiera leer esta sección porque trata los detalles de la creación de máscaras simples y, a continuación, máscaras más complicadas que usan elementos de máscara determinados. En esta sección también se incluyen tutoriales sobre la creación del arte necesario para crear máscaras. |
+| [Referencia de programación de máscaras](skin-programming-reference.md)               | Contiene entradas de referencia para cada elemento y atributo admitidos por máscaras. Lea los temas que explican la funcionalidad que desea usar.                                                                                                                                                    |
+| [Reproductor de Windows Media Máscaras móviles](windows-media-player-mobile-skins.md) | Proporciona información completa para crear máscaras para Reproductor de Windows Media Mobile.                                                                                                                                                                                                                      |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**SDK de Media Player de Windows**](windows-media-player-sdk.md)
+[**Reproductor de Windows Media Sdk**](windows-media-player-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

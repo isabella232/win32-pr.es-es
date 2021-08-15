@@ -1,19 +1,19 @@
-- name: Herramientas para gráficos de DirectX
+- name: Herramientas para gráficos DirectX
   href: dx-graphics-tools.md
   items:
-    - name: Depuración remota de aplicaciones de DirectX
+    - name: Depuración remota de aplicaciones DirectX
       href: debugging-directx-apps-remotely.md
-    - name: Herramienta de Effect-Compiler
+    - name: Effect-Compiler tool
       href: fxc.md
       items:
-        - name: Sintaxis
+        - name: Syntax
           href: dx-graphics-tools-fxc-syntax.md
         - name: Compilación sin conexión
           href: dx-graphics-tools-fxc-using.md
-    - name: Referencia de la interfaz de captura de diagnóstico de Direct3D
+    - name: Referencia de la interfaz de captura de diagnósticos de Direct3D
       href: vspixengine-reference.md
       items:
-        - name: Interfaces de la interfaz de captura de diagnóstico de Direct3D
+        - name: Interfaces de interfaz de captura de diagnósticos de Direct3D
           href: vspixengine-interfaces.md
           items:
             - name: INewFramesCallback
@@ -216,7 +216,7 @@
             - name: IRunActionCallback
               href: irunactioncallback.md
               items:
-                - name: Objeto requestresult
+                - name: RequestResult
                   href: irunactioncallback-requestresult-iunknown-ptr.md
             - name: IRunActionRequest
               href: irunactionrequest.md
@@ -437,7 +437,7 @@
               href: ipixenginesingleton.md
             - name: IPixEngineWin10
               href: ipixenginewin10.md
-        - name: Estructuras de interfaz de captura de diagnóstico de Direct3D
+        - name: Estructuras de interfaz de captura de diagnósticos de Direct3D
           href: vspixengine-structures.md
           items:
             - name: ResourcePair
@@ -480,23 +480,23 @@
               href: meshdatabufferlayoutentry.md
             - name: DebugShaderRequestInfo
               href: debugshaderrequestinfo.md
-            - name: PixEngineInt4
+            - name: PomEngineInt4
               href: pixengineint4.md
-            - name: PixEnginePoint4D
+            - name: PixelEnginePoint4D
               href: pixenginepoint4d.md
-            - name: PixEngineChannelDesc
+            - name: PixelEngineChannelDesc
               href: pixenginechanneldesc.md
-            - name: PixEngineTextureFormatDesc
+            - name: PixelEngineTextureFormatDesc
               href: pixenginetextureformatdesc.md
-            - name: PixEngineTextureDescriptor
+            - name: PixelEngineTextureDescriptor
               href: pixenginetexturedescriptor.md
-            - name: PixEngineTextureSliceDescriptor
+            - name: PixelEngineTextureSliceDescriptor
               href: pixenginetextureslicedescriptor.md
-            - name: PixEngineTextureSliceIndex
+            - name: PixelEngineTextureSliceIndex
               href: pixenginetexturesliceindex.md
-            - name: PixEngineHistogram
+            - name: PixelEngineHistogram
               href: pixenginehistogram.md
-        - name: Enumeraciones de la interfaz de captura de diagnóstico de Direct3D
+        - name: Enumeraciones de interfaz de captura de diagnósticos de Direct3D
           href: vspixengine-enumerations.md
           items:
             - name: Xml_Resource_Ids
@@ -509,7 +509,7 @@
               href: remotecommandtype.md
             - name: CallbackCommandType
               href: callbackcommandtype.md
-            - name: PixPipeResponse
+            - name: PixelPipeResponse
               href: pixpiperesponse.md
             - name: REMOTINGVERSION
               href: remotingversion.md
@@ -523,7 +523,7 @@
               href: objectstatetype.md
             - name: OBJECTTABLECOLUMNID
               href: objecttablecolumnid.md
-            - name: FASES
+            - name: PIPELINESTAGES
               href: pipelinestages.md
             - name: CHECKSUMALGORITHM
               href: checksumalgorithm.md

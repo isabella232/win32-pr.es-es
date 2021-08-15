@@ -1,10 +1,10 @@
 ---
-title: Derecho de aplicación-grupo-Directiva extendida
-description: Derecho extendido utilizado por el motor de directiva de grupo para determinar si un GPO se aplica a un usuario o equipo.
+title: Derecho extendido Aplicar directiva de grupo
+description: Derecho extendido usado por directiva de grupo motor para determinar si un GPO se aplica a un usuario o equipo.
 ms.assetid: f6b09ecc-0fcd-409b-adeb-a8744f811427
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD derecho de aplicación de la Directiva de grupo de aplicación
+- Apply-Group-Policy extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e7ee574b10a9bb4579cd3ac0f9366aeb28ed5a1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08d93d77253f9bb0e45ab40acdd91efecc286d94bb982cb350f99161a5f5fb1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959514"
 ---
-# <a name="apply-group-policy-extended-right"></a>Derecho de aplicación-grupo-Directiva extendida
+# <a name="apply-group-policy-extended-right"></a>Derecho extendido Aplicar directiva de grupo
 
-Derecho extendido utilizado por el motor de directiva de grupo para determinar si un GPO se aplica a un usuario o equipo.
+Derecho extendido usado por directiva de grupo motor para determinar si un GPO se aplica a un usuario o equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Aplicar: Directiva de grupo                   |
+| CN           | Aplicar directiva de grupo                   |
 | Display-Name | Aplicar directiva de grupo                   |
 | Rights-GUID  | edacfd8f-ffb3-11d1-b41d-00a0c968f939 |
 
@@ -47,10 +47,10 @@ Derecho extendido utilizado por el motor de directiva de grupo para determinar s
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
-| Localización: ID. de presentación | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -58,10 +58,10 @@ Derecho extendido utilizado por el motor de directiva de grupo para determinar s
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
-| Localización: ID. de presentación | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -69,10 +69,10 @@ Derecho extendido utilizado por el motor de directiva de grupo para determinar s
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
-| Localización: ID. de presentación | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -80,10 +80,10 @@ Derecho extendido utilizado por el motor de directiva de grupo para determinar s
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
-| Localización: ID. de presentación | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -91,10 +91,10 @@ Derecho extendido utilizado por el motor de directiva de grupo para determinar s
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
-| Localización: ID. de presentación | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -102,10 +102,10 @@ Derecho extendido utilizado por el motor de directiva de grupo para determinar s
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
-| Localización: ID. de presentación | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 

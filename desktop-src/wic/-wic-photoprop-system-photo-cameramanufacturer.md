@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. CameraManufacturer.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.CameraManufacturer.
 ms.assetid: 6710161c-4835-4385-9d4c-566acc000925
-title: Directiva de metadatos de la foto de System. Photo. CameraManufacturer
+title: System.Photo.CameraManufacturer Photo Metadata Policy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd1d2765b6c787b7d7ad421300f1c3492669830b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37744420babedf6b398cdf3ab9007c3895c09d33b9254221b5ba4760ab917a0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087091"
 ---
-# <a name="systemphotocameramanufacturer-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. Photo. CameraManufacturer
+# <a name="systemphotocameramanufacturer-photo-metadata-policy"></a>System.Photo.CameraManufacturer Photo Metadata Policy
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md) .
+Directiva de metadatos de fotos [para la propiedad System.Photo.CameraManufacturer.](../properties/props-system-photo-cameramanufacturer.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Photo \_ CameraManufacturer
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
@@ -37,7 +37,7 @@ String.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,25 +45,25 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                   | Formato de disco |
+| Pedido | Ruta de acceso                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 271} | ascii       |
-| 2     | /XMP/TIFF: make         | unicode     |
-| 3     | /XMP/TIFF: make         | unicode     |
+| 1     | /app1/ifd/{ushort=271} | ascii       |
+| 2     | /xmp/tiff:Make         | unicode     |
+| 3     | /xmp/tiff:make         | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                   | Formato de disco |
+| Pedido | Ruta de acceso                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 271} | ascii       |
-| 2     | /XMP/TIFF: make         | unicode     |
-| 3     | /XMP/TIFF: make         | unicode     |
+| 1     | /app1/ifd/{ushort=271} | ascii       |
+| 2     | /xmp/tiff:Make         | unicode     |
+| 3     | /xmp/tiff:make         | unicode     |
 
 
 
@@ -73,11 +73,11 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                   |
+| Pedido | Ruta de acceso                   |
 |-------|------------------------|
-| 1     | /app1/IFD/{ushort = 271} |
-| 2     | /XMP/TIFF: make         |
-| 3     | /XMP/TIFF: make         |
+| 1     | /app1/ifd/{ushort=271} |
+| 2     | /xmp/tiff:Make         |
+| 3     | /xmp/tiff:make         |
 
 
 
@@ -89,25 +89,25 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta               | Formato de disco |
+| Pedido | Ruta de acceso               | Formato de disco |
 |-------|--------------------|-------------|
-| 1     | /IFD/{ushort = 271}  | ascii       |
-| 2     | /IFD/XMP/TIFF: make | unicode     |
-| 3     | /IFD/XMP/TIFF: make | unicode     |
+| 1     | /ifd/{ushort=271}  | ascii       |
+| 2     | /ifd/xmp/tiff:Make | unicode     |
+| 3     | /ifd/xmp/tiff:make | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta               | Formato de disco |
+| Pedido | Ruta de acceso               | Formato de disco |
 |-------|--------------------|-------------|
-| 1     | /IFD/{ushort = 271}  | ascii       |
-| 2     | /IFD/XMP/TIFF: make | unicode     |
-| 3     | /IFD/XMP/TIFF: make | unicode     |
+| 1     | /ifd/{ushort=271}  | ascii       |
+| 2     | /ifd/xmp/tiff:Make | unicode     |
+| 3     | /ifd/xmp/tiff:make | unicode     |
 
 
 
@@ -117,23 +117,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta               |
+| Pedido | Ruta de acceso               |
 |-------|--------------------|
-| 1     | /IFD/{ushort = 271}  |
-| 2     | /IFD/XMP/TIFF: make |
-| 3     | /IFD/XMP/TIFF: make |
+| 1     | /ifd/{ushort=271}  |
+| 2     | /ifd/xmp/tiff:Make |
+| 3     | /ifd/xmp/tiff:make |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md)
+[System.Photo.CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md)
 </dt> </dl>
 
  

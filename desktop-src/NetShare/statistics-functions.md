@@ -1,31 +1,31 @@
 ---
-description: El sistema operativo Windows acumula un conjunto de estadísticas de funcionamiento para estaciones de trabajo y servidores desde el momento en que se inicia el servicio de estación de trabajo o servidor.
+description: El Windows operativo acumula un conjunto de estadísticas de funcionamiento para estaciones de trabajo y servidores desde el momento en que se inicia la estación de trabajo o el servicio de servidor.
 ms.assetid: 4e0217bf-7550-40a2-b47c-8e898a586005
 title: Funciones de estadísticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce62e12f3c4894ba86ff5e5aaaa38801d272195c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2261f0c4f8f8249b401e658759827d6471d3ac47b6eb10df769ad5f37d8ce7af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063595"
 ---
 # <a name="statistics-functions"></a>Funciones de estadísticas
 
-El sistema operativo Windows acumula un conjunto de estadísticas de funcionamiento para estaciones de trabajo y servidores desde el momento en que se inicia el servicio de estación de trabajo o servidor. Para recuperar estas estadísticas, puede llamar a la siguiente función de estadísticas de administración de redes.
+El Windows operativo acumula un conjunto de estadísticas de funcionamiento para estaciones de trabajo y servidores desde el momento en que se inicia la estación de trabajo o el servicio de servidor. Para recuperar estas estadísticas, puede llamar a la siguiente función de estadísticas de administración de red.
 
 
 
 | Función                                     | Descripción                                                                                 |
 |----------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**NetStatisticsGet**](/windows/desktop/api/Lmstats/nf-lmstats-netstatisticsget) | Recupera las estadísticas de funcionamiento de un servicio. admite los servicios de estación de trabajo y servidor. |
+| [**NetStatisticsGet**](/windows/desktop/api/Lmstats/nf-lmstats-netstatisticsget) | Recupera las estadísticas operativas de un servicio; admite los servicios de estación de trabajo y servidor. |
 
 
 
  
 
-La función **NetStatisticsGet** devuelve una estructura de la [**estación de trabajo de STAT \_ \_ 0**](/windows/win32/api/lmstats/ns-lmstats-stat_workstation_0-r1) cuando se solicitan estadísticas de la estación de trabajo; la función devuelve una estructura de [**\_ servidor \_**](/windows/desktop/api/Lmstats/ns-lmstats-stat_server_0) de estadísticas cuando se solicitan estadísticas del servidor.
+La **función NetStatisticsGet** devuelve una estructura [**STAT WORKSTATION \_ \_ 0**](/windows/win32/api/lmstats/ns-lmstats-stat_workstation_0-r1) cuando se solicitan estadísticas de estación de trabajo; la función devuelve una estructura [**STAT SERVER \_ \_ 0**](/windows/desktop/api/Lmstats/ns-lmstats-stat_server_0) cuando se solicitan estadísticas de servidor.
 
  
 

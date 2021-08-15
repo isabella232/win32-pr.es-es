@@ -1,7 +1,7 @@
 ---
 description: El método GetSourceRect recupera el rectángulo de origen actual.
 ms.assetid: e9ca091f-3fd7-4e42-90e9-b7831dd488a9
-title: Método CDrawImage. GetSourceRect (Winutil. h)
+title: Método CDrawImage.GetSourceRect (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8a2188a183794b94a5d6d05ac237f91dbcb5d6dd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 81d7de629ec89fe31296a9efd10df3d4895f53a7dc67db58bfde77be8a75a82f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697895"
 ---
-# <a name="cdrawimagegetsourcerect-method"></a>CDrawImage. GetSourceRect, método
+# <a name="cdrawimagegetsourcerect-method"></a>Método CDrawImage.GetSourceRect
 
 El `GetSourceRect` método recupera el rectángulo de origen actual.
 
@@ -45,7 +45,7 @@ void GetSourceRect(
 *pSourceRect* 
 </dt> <dd>
 
-Puntero a una estructura **Rect** que recibe el rectángulo de origen.
+Puntero a una **estructura RECT** que recibe el rectángulo de origen.
 
 </dd> </dl>
 
@@ -59,16 +59,16 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> </dl>
 
  

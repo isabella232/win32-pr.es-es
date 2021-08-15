@@ -1,31 +1,31 @@
 ---
-description: Especifica el identificador de proveedor para un Microsoft Media Foundation basado en hardware.
+description: Especifica el identificador de proveedor de una aplicación basada en hardware Microsoft Media Foundation.
 ms.assetid: AA31639F-EF70-4454-AC61-60755CAA684A
-title: MFT_ENUM_HARDWARE_VENDOR_ID_Attribute atributo)
+title: MFT_ENUM_HARDWARE_VENDOR_ID_Attribute atributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c4d92585936e52cbb0b9b65201a5de0d3a02b9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cff3a93abed968a26f8eead5be6a7d1872b9d4556b0d163632992cbcc21b1acd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973104"
 ---
-# <a name="mft_enum_hardware_vendor_id_attribute-attribute"></a>\_Atributo de \_ \_ atributo de identificador de proveedor de hardware de \_ enumeración MFT \_
+# <a name="mft_enum_hardware_vendor_id_attribute-attribute"></a>Atributo MFT \_ ENUM \_ HARDWARE VENDOR ID \_ \_ \_ Attribute
 
-Especifica el identificador de proveedor para una transformación de Microsoft Media Foundation basado en hardware (MFT).
+Especifica el identificador de proveedor para una transformación de Microsoft Media Foundation hardware (MFT).
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WCHAR \** _
+**Wchar\***
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [_ *IMFAttributes:: GetString* *](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Para establecer este atributo, llame a [**IMFAttributes:: setString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo es informativo y opcional.
 
@@ -33,25 +33,25 @@ Este atributo es informativo y opcional.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                          |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                          |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Mftransform.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[MFTs de hardware](hardware-mfts.md)
+[Hardware MFTs](hardware-mfts.md)
 </dt> <dt>
 
-[Atributos de transformación](transform-attributes.md)
+[Transformar atributos](transform-attributes.md)
 </dt> </dl>
 
  

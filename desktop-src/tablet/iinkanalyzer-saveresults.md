@@ -1,7 +1,7 @@
 ---
-description: Guarda todos los resultados de análisis de un IInkAnalyzer.
+description: Guarda todos los resultados del análisis de un IInkAnalyzer.
 ms.assetid: 538eb781-d831-475b-ba09-271d71f6a6bf
-title: 'IInkAnalyzer:: SaveResults (método) (IACom. h)'
+title: Método IInkAnalyzer::SaveResults (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: a07351662512ad3234dfe6847cd8c4300bd035e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 216f238776cf88a24d10f57671aa4f03c71d07962ff480d5b219653a5c9d338e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091995"
 ---
-# <a name="iinkanalyzersaveresults-method"></a>IInkAnalyzer:: SaveResults (método)
+# <a name="iinkanalyzersaveresults-method"></a>IInkAnalyzer::SaveResults (método)
 
-Guarda todos los resultados de análisis de un [**IInkAnalyzer**](iinkanalyzer.md).
+Guarda todos los resultados del análisis de [**un IInkAnalyzer.**](iinkanalyzer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,68 +40,68 @@ HRESULT SaveResults(
 
 <dl> <dt>
 
-*pulSerializedDataSize* \[ enuncia\]
+*pulSerializedDataSize* \[ out\]
 </dt> <dd>
 
-Número de bytes de *ppbSerializedData*.
+Número de bytes de *ppbSerializedData.*
 
 </dd> <dt>
 
-*ppbSerializedData* \[ enuncia\]
+*ppbSerializedData* \[ out\]
 </dt> <dd>
 
-Una matriz que contiene los resultados del análisis guardado.
+Matriz que contiene los resultados del análisis guardados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, use [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar la memoria de \* *ppbSerializedData* cuando ya no necesite la información.
 
  
 
-Este método guarda todos los resultados del análisis actual, que incluyen la sugerencia de análisis actual y los nodos de reconocedor personalizados (vea [**IContextNode:: GetType**](icontextnode-gettype.md)). Este método no guarda ningún dato de trazo. Es responsabilidad de la aplicación sincronizar los resultados del análisis y los trazos correspondientes si guarda los datos.
+Este método guarda todos los resultados de análisis actuales, que incluyen la sugerencia de análisis actual y los nodos de reconocedor personalizados (vea [**IContextNode::GetType**](icontextnode-gettype.md)). Este método no guarda ningún dato de trazo. Es responsabilidad de la aplicación sincronizar los resultados del análisis y los trazos correspondientes si conserva los datos.
 
-Este método devuelve un código de error cuando se rellena parcialmente un objeto [**IContextNode**](icontextnode.md) que se va a guardar (vea [**IContextNode:: GetPartiallyPopulated**](icontextnode-getpartiallypopulated.md)).
+Este método devuelve un código de error cuando un objeto [**IContextNode**](icontextnode.md) que se va a guardar se rellena parcialmente (vea [**IContextNode::GetPartiallyPopulated).**](icontextnode-getpartiallypopulated.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: LoadResults (método)**](iinkanalyzer-loadresults.md)
+[**IInkAnalyzer::LoadResults (Método)**](iinkanalyzer-loadresults.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: SaveResultsForNodes (método)**](iinkanalyzer-saveresultsfornodes.md)
+[**IInkAnalyzer::SaveResultsForNodes (Método)**](iinkanalyzer-saveresultsfornodes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: SaveResultsForStrokes (método)**](iinkanalyzer-saveresultsforstrokes.md)
+[**IInkAnalyzer::SaveResultsForStrokes (Método)**](iinkanalyzer-saveresultsforstrokes.md)
 </dt> <dt>
 
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

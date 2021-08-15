@@ -1,9 +1,9 @@
 ---
-title: 'Texture3D:: Getdimensions ((función)'
-description: 'Devuelve las dimensiones del recurso. | Texture3D:: Getdimensions ((función)'
+title: Función Texture3D::GetDimensions
+description: Devuelve las dimensiones del recurso. | Función Texture3D::GetDimensions
 ms.assetid: 4a08f14f-7489-4ed1-bf94-4f63f1002eab
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a700e0ff065e5f4758241ee0c8252965209a21f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8a7dd6248b7b6effc08e510ea56da6426c41dc54418bf7ee5da8cdc3c9ad965a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985715"
 ---
-# <a name="texture3dgetdimensions-function"></a>Texture3D:: Getdimensions ((función)
+# <a name="texture3dgetdimensions-function"></a>Función Texture3D::GetDimensions
 
 Devuelve las dimensiones del recurso.
 
@@ -40,48 +40,48 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ de\]
+*MipLevel* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Opcional. Nivel de mipmap (debe especificarse si se usa *NumberOfLevels* ).
+Opcional. Nivel de mapa mip (se debe especificar si *se usa NumberOfLevels).*
 
 </dd> <dt>
 
-*Ancho* \[ de enuncia\]
+*Ancho* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El ancho del recurso, en textura.
+Ancho del recurso, en texturas.
 
 </dd> <dt>
 
-*Alto* \[ de enuncia\]
+*Alto* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El alto del recurso, en textura.
+Alto del recurso, en texturas.
 
 </dd> <dt>
 
-*Nivel de detalle* \[ enuncia\]
+*Profundidad* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-La profundidad de recursos, en textura.
+Profundidad del recurso, en los elementos de textura.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ enuncia\]
+*NumberOfLevels* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El número de niveles de mipmap (requiere también *MipLevel* ).
+El número de niveles de mapa mip *(también requiere MipLevel).*
 
 </dd> </dl>
 
@@ -89,7 +89,7 @@ El número de niveles de mipmap (requiere también *MipLevel* ).
 
 Nada
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -118,11 +118,11 @@ void GetDimensions(out float Width,
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -130,14 +130,14 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Texture3D](sm5-object-texture3d.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

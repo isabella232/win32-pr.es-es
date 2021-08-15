@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_RCLICK (barra de herramientas) (commctrl. h)
-description: Se envía por un control de barra de herramientas cuando el usuario hace clic en la barra de herramientas con el botón secundario del mouse. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_RCLICK de notificación (barra de herramientas) (Commctrl.h)
+description: Enviado por un control de barra de herramientas cuando el usuario hace clic en la barra de herramientas con el botón derecho del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: e9d2d871-e922-444d-a76c-e73f249ed410
 keywords:
-- Código de notificación de NM_RCLICK (barra de herramientas) controles de Windows
+- NM_RCLICK código de notificación (barra de herramientas) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6464c30a031aa55aef94bccd3ab852720fb14403
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 52fde315a3c68712c58b7e9466c351c6ac9a9117710ee6f285bd9ba9521ba56f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958074"
 ---
-# <a name="nm_rclick-toolbar-notification-code"></a>NM \_ RCLICK (barra de herramientas) código de notificación
+# <a name="nm_rclick-toolbar-notification-code"></a>Código de notificación de NM \_ RCLICK (barra de herramientas)
 
-Se envía por un control de barra de herramientas cuando el usuario hace clic en la barra de herramientas con el botón secundario del mouse. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de barra de herramientas cuando el usuario hace clic en la barra de herramientas con el botón derecho del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,23 +41,23 @@ NM_RCLICK
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contiene información sobre este código de notificación. Si se hizo clic con el mouse en un elemento de la barra de herramientas, el miembro **dwItemSpec** contiene el identificador del elemento y el miembro **dwItemData** contiene los datos del elemento. Si se hizo clic con el mouse en un separador o en un espacio en blanco en la barra de herramientas, el miembro **dwItemSpec** contendrá-1.
+Puntero a una [**estructura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contiene información sobre este código de notificación. Si se hizo clic con el mouse en un elemento de la barra de herramientas, el **miembro dwItemSpec** contiene el identificador del elemento y el **miembro dwItemData** contiene los datos del elemento. Si se hizo clic con el mouse en un separador o un espacio en blanco en la barra de herramientas, el **miembro dwItemSpec** contendrá -1.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **false** para permitir que el control de barra de herramientas realice el procesamiento predeterminado del evento, o bien **true** para evitar que el control procese el evento.
+Devuelve **FALSE** para permitir que el control de la barra de herramientas realice el procesamiento predeterminado del evento o **TRUE** para evitar que el control procese el evento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

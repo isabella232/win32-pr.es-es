@@ -1,11 +1,11 @@
 ---
 title: Atributo MSMQ-Sign-Certificates
-description: Este atributo contiene una serie de certificados. Un usuario puede generar un certificado por equipo. Para cada certificado, también se mantiene un resumen.
+description: Este atributo contiene varios certificados. Un usuario puede generar un certificado por equipo. Para cada certificado también se mantiene un resumen.
 ms.assetid: 70e182c7-3544-43d7-b27a-6e8d03bd2d47
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MSMQ-Sign-Certificates
-- mSMQSignCertificates esquema de AD de atributos
+- Esquema de AD del atributo mSMQSignCertificates
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd7e81cf145ac249b78e0a3e20be657df68b4af
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 89ee82a5a2bf64acc315dfb535ca6897261ef0cb26f5e249a8c8593cc492b53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081749"
 ---
 # <a name="msmq-sign-certificates-attribute"></a>Atributo MSMQ-Sign-Certificates
 
-Este atributo contiene una serie de certificados. Un usuario puede generar un certificado por equipo. Para cada certificado, también se mantiene un resumen.
+Este atributo contiene varios certificados. Un usuario puede generar un certificado por equipo. Para cada certificado también se mantiene un resumen.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| CN                | Certificados de firma MSMQ                                                                 |
-| Nombre para mostrar de LDAP | mSMQSignCertificates                                                                   |
-| Tamaño              | El tipo de atributo es un BLOB, el tamaño no es limitado y los datos se mantienen en nuestro propio formato. |
-| Actualizar privilegio  | \-                                                                                     |
+| CN                | MSMQ-Sign-Certificates                                                                 |
+| Ldap-Display-Name | mSMQSignCertificates                                                                   |
+| Size              | El tipo de atributo es un BLOB, el tamaño no está limitado y los datos se mantienen en nuestro propio formato. |
+| Privilegio actualizar  | \-                                                                                     |
 | Frecuencia de actualización  | \-                                                                                     |
 | Attribute-Id      | 1.2.840.113556.1.4.947                                                                 |
-| System-ID-GUID    | 9a0dc33b-c100-11d1-bbc5-0080c76670c0                                                   |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)                                  |
+| System-Id-Guid    | 9a0dc33b-c100-11d1-miento5-0080c76670c0                                                   |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)                                  |
 
 
 
@@ -53,20 +53,20 @@ Este atributo contiene una serie de certificados. Un usuario puede generar un ce
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | True                                                                                          |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                          |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Este atributo contiene una serie de certificados. Un usuario puede generar un ce
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | True                                                                                          |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                          |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Este atributo contiene una serie de certificados. Un usuario puede generar un ce
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | True                                                                                          |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                          |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo contiene una serie de certificados. Un usuario puede generar un ce
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | True                                                                                          |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                          |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Este atributo contiene una serie de certificados. Un usuario puede generar un ce
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | True                                                                                          |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                          |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Este atributo contiene una serie de certificados. Un usuario puede generar un ce
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | True                                                                                          |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                          |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 

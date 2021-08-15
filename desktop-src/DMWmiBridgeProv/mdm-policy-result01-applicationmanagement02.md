@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_Result01_ApplicationManagement02 (clase)
-description: La \_ clase Result01 de ApplicationManagement02 de directivas MDM \_ \_ representa las directivas de administración de aplicaciones disponibles. \_ \_ \_ La clase ApplicationManagement02 de RESULT01 de directivas MDM representa las directivas de administración de aplicaciones disponibles.
+title: MDM_Policy_Result01_ApplicationManagement02 clase
+description: La clase \_ \_ \_ ApplicationManagement02 de MDM Policy Result01 representa las directivas de administración de aplicaciones disponibles. La \_ clase \_ ApplicationManagement02 de MDM Policy Result01 \_ representa las directivas de administración de aplicaciones disponibles.
 ms.assetid: 141614e4-b2b1-49d9-879c-f6f86bee070c
 keywords:
-- MDM_Policy_Result01_ApplicationManagement02 (clase)
+- MDM_Policy_Result01_ApplicationManagement02 clase
 - MDM_Policy_Result01_ApplicationManagement02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 477e4e58216c912aa14ec17b8e5879643e3de83f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85f9794e52cd0969855c1e7e9be64ff0849e05fb6e0bc2667a9cfa4196963fbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587955"
 ---
-# <a name="mdm_policy_result01_applicationmanagement02-class"></a>\_ \_ Clase ApplicationManagement02 de Result01 de directivas MDM \_
+# <a name="mdm_policy_result01_applicationmanagement02-class"></a>Clase \_ \_ \_ ApplicationManagement02 de Mdm Policy Result01
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Result01 de \_ ApplicationManagement02 de directivas MDM** representa las directivas de administración de aplicaciones disponibles.
+La **clase \_ \_ \_ ApplicationManagement02 de MDM Policy Result01** representa las directivas de administración de aplicaciones disponibles.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -53,13 +53,13 @@ class MDM_Policy_Result01_ApplicationManagement02
 
 ## <a name="members"></a>Miembros
 
-La clase Result01 de la **\_ Directiva MDM \_ \_ ApplicationManagement02** tiene estos tipos de miembros:
+La **clase \_ \_ \_ ApplicationManagement02 de MDM Policy Result01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Result01 de \_ ApplicationManagement02 de directivas MDM** tiene estas propiedades.
+La **clase \_ \_ \_ ApplicationManagement02 de MDM Policy Result01** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ La **clase \_ \_ Result01 de \_ ApplicationManagement02 de directivas MDM** tien
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -80,7 +80,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -91,7 +91,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -102,7 +102,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -113,7 +113,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -124,7 +124,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -157,7 +157,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Result".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Result"
 
 </dd> <dt>
 
@@ -167,7 +167,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -178,7 +178,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -187,21 +187,21 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | DMMap de MDM raíz de \\ CIMv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | DMMap \\ \\ de MDM de CIMv2 \\ raíz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

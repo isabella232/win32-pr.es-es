@@ -1,36 +1,36 @@
 ---
-description: El descodificador de vídeo MPEG4 parte 2 descodifica secuencias de vídeo codificadas según el estándar MPEG4 parte 2.
+description: El descodificador MPEG4 Part 2 Video descodifica secuencias de vídeo codificadas según el estándar MPEG4 Parte 2.
 ms.assetid: 56e32d3c-9bd0-41fe-bb22-e4ff37b7cc5c
-title: Descodificador de vídeo MPEG-4 parte 2 (Wmcodecdsp. h)
+title: Descodificador de vídeo MPEG-4, parte 2 (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 777e6144684c799eb58f75afd4811ccc8871a46b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 847e5be8c506e534c42962ecf6b0037a2ecb2f184c9c47fa92981fa32fd55422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973024"
 ---
-# <a name="mpeg-4-part-2-video-decoder"></a>Descodificador de vídeo MPEG-4 parte 2
+# <a name="mpeg-4-part-2-video-decoder"></a>Descodificador de vídeo MPEG-4, parte 2
 
-El descodificador de vídeo MPEG4 parte 2 descodifica secuencias de vídeo codificadas según el estándar MPEG4 parte 2.
+El descodificador MPEG4 Part 2 Video descodifica secuencias de vídeo codificadas según el estándar MPEG4 Parte 2.
 
-Puede crear una instancia del descodificador de vídeo MPEG4 Part 2 llamando a **CoCreateInstance**. Para crear una instancia del descodificador que se comporta como un objeto multimedia de DirectX (DMO), use el identificador de clase **CLSID \_ CMpeg4sDecMediaObject**. Para crear un Istance del descodificador que se comporta como una transformación de Media Foundation (MFT), use el identificador de clase **CLSID \_ CMpeg4sDecMFT**.
+Puede crear una instancia del descodificador mpeg4, parte 2, vídeo llamando **a CoCreateInstance**. Para crear una instancia del descodificador que se comporta como un objeto multimedia DirectX (DMO), use el identificador de clase **CLSID \_ CMpeg4sDecMediaObject**. Para crear una posición del descodificador que se comporte como una transformación de Media Foundation (MFT), use el identificador de clase **CLSID \_ CMpeg4sDecMFT**.
 
 ## <a name="input-types"></a>Tipos de entrada
 
-El descodificador de vídeo MPEG4 parte 2 admite los siguientes tipos de medios de entrada.
+El descodificador MPEG4 Part 2 Video admite los siguientes tipos de medios de entrada.
 
 -   MEDIASUBTYPE \_ M4S2
 -   MEDIASUBTYPE \_ m4s2
 -   MEDIASUBTYPE \_ MP4V
--   MEDIASUBTYPE \_ MP4V
--   MEDIASUBTYPE \_ MP4 (desusado)
--   MEDIASUBTYPE \_ MP4 (desusado)
+-   MEDIASUBTYPE \_ mp4v
+-   MEDIASUBTYPE \_ MP4S (en desuso)
+-   MEDIASUBTYPE \_ mp4s (en desuso)
 
 ## <a name="output-types"></a>Tipos de salida
 
-El descodificador de vídeo MPEG4 parte 2 admite los siguientes subtipos de medios de salida cuando actúa como DMO.
+El descodificador MPEG4 Part 2 Video admite los siguientes subtipos de medios de salida cuando actúa como DMO.
 
 -   MEDIASUBTYPE \_ YV12
 -   MEDIASUBTYPE \_ NV12
@@ -44,83 +44,83 @@ El descodificador de vídeo MPEG4 parte 2 admite los siguientes subtipos de medi
 -   MEDIASUBTYPE \_ RGB555
 -   MEDIASUBTYPE \_ RGB8
 
-El descodificador de vídeo MPEG4 parte 2 admite los siguientes subtipos de medios de salida cuando actúa como MFT.
+El descodificador de vídeo MPEG4, parte 2, admite los siguientes subtipos de medios de salida cuando actúa como MFT.
 
 -   MEDIASUBTYPE \_ NV12
 -   MEDIASUBTYPE \_ YV12
 
 ## <a name="formats"></a>Formatos
 
-El descodificador de vídeo MPEG4 parte 2 acepta los siguientes formatos.
+El descodificador de vídeo MPEG4, parte 2, acepta los siguientes formatos.
 
 -   [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader)
--   [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) (VIH2)
+-   [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) (2)
 -   [**MFVideoInfo**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoinfo)
--   [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) (solo se usa la parte VIH2 del encabezado).
+-   [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) (solo se usa la parte del encabezado MPEG2).
 
-## <a name="interfaces-for-the-dmo"></a>Interfaces para DMO
+## <a name="interfaces-for-the-dmo"></a>Interfaces para el DMO
 
-Si crea una instancia del descodificador de vídeo MPEG4 Part 2 como DMO, el descodificador expone las siguientes interfaces.
+Si crea una instancia del descodificador MPEG4 Part 2 Video como DMO, el descodificador expone las interfaces siguientes.
 
 -   [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject)
 -   [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi)
 
-Puede obtener una interfaz [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) llamando a **CoCreateInstance** y puede obtener una interfaz [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) llamando a **QueryInterface**.
+Puede obtener una [**interfaz IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) llamando a **CoCreateInstance** y puede obtener una interfaz [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) llamando a **QueryInterface**.
 
 ## <a name="interfaces-for-the-mft"></a>Interfaces para MFT
 
-Si crea una instancia del descodificador de vídeo MPEG2 parte 2 como MFT, el descodificador expone las siguientes interfaces.
+Si crea una instancia del descodificador MPEG2 Part 2 Video como MFT, el descodificador expone las interfaces siguientes.
 
 -   [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
--   [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
+-   [**ATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 -   [**IMFQualityAdvise**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise)
 -   [**IMFQualityAdvise2**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise2)
 -   [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol)
 -   [**IMFRateSupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport)
 
-Puede obtener un puntero a la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) llamando a **CoCreateInstance** y puede obtener un puntero a la interfaz [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) llamando a [**IMFTransform:: GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes). Puede obtener un puntero a la interfaz [**IMFQualityAdvise**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise) o [**IMFQualityAdvise2**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise2) llamando a **QueryInterface** en MFT. Puede obtener un puntero a la interfaz [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) o [**IMFRateSupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport) llamando a [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) y pasando el servicio de control de **\_ tasa MF \_ \_** del identificador de servicio.
+Puede obtener un puntero a la interfaz [**DETRANSFORMTRANSFORM**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) mediante una llamada a **CoCreateInstance** y puede obtener un puntero a la interfaz [**DEATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) mediante una llamada a [**IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes). Puede obtener un puntero a la interfaz [**IMFQualityAdvise**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise) o [**ASEQUALITYAdvise2**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise2) llamando a **QueryInterface** en el MFT. Puede obtener un puntero a la interfaz [**MFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) o [**ASERATESupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport) llamando a [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) y pasando el identificador de servicio **MF RATE CONTROL \_ \_ \_ SERVICE**.
 
 ## <a name="profiles-and-levels"></a>Perfiles y niveles
 
-La especificación MPEG4 define varios perfiles, cada uno de los cuales especifica las herramientas que un codificador puede utilizar para generar una secuencia codificada. El descodificador de vídeo MPEG4 "part2 admite dos de estos perfiles: perfil visual simple y perfil simple avanzado. En otras palabras, el descodificador de vídeo MPEG4 parte 2 puede descodificar flujos codificados según el perfil visual simple o el perfil simple avanzado.
+La especificación MPEG4 define varios perfiles, cada uno de los cuales especifica las herramientas que un codificador puede usar para generar una secuencia codificada. El descodificador de vídeo MPEG4 Part2 admite dos de esos perfiles: Perfil visual simple y Perfil simple avanzado. En otras palabras, el descodificador MPEG4 Part 2 Video puede descodificar secuencias codificadas según el perfil visual simple o el perfil simple avanzado.
 
-El perfil visual simple admite la transmisión básica de vídeo de velocidad de bits baja en modo progresivo. Solo admite imágenes intra y de predicción. También admite el modo de encabezado corto, que es compatible con versiones anteriores del perfil de línea base H. 263. A partir de Windows 10, el descodificador de vídeo MPEG-4 parte 2 también admite H. 263v2 (H. 263 +), que admite tamaños de imagen personalizados.
+El perfil visual simple admite la transmisión básica de vídeo de velocidad de bits baja en modo progresiva. Solo admite imágenes dentro de y predicción. También admite el modo de encabezado corto, que es compatible con versiones anteriores con el perfil de línea base H.263. A partir Windows 10, el descodificador de vídeo MPEG-4, parte 2, también admite H.263v2 (H.263+), que admite tamaños de imagen personalizados.
 
-El perfil simple avanzado es compatible con todas las herramientas del perfil visual simple y, además, admite vídeo entrelazado, fotogramas B, compensación de movimiento de PEL, tablas de cuantificación adicionales y compensación de movimiento global.
+El perfil simple avanzado admite todas las herramientas del perfil visual simple y, además, admite vídeo entrelazado, fotogramas B, compensación de movimiento de trimestre, tablas de cuantificación adicionales y compensación de movimiento global.
 
 La especificación MPEG4 también define varios niveles, cada uno de los cuales especifica restricciones en el flujo de salida generado por un codificador.
 
-En la tabla siguiente se muestran los perfiles y niveles, junto con las resoluciones típicas, que admite el descodificador de vídeo MPEG4 Part 2.
+En la tabla siguiente se muestran los perfiles y niveles, junto con las resoluciones típicas, compatibles con el descodificador mpeg4, parte 2, vídeo.
 
 
 
 | Perfil         | Nivel | Resolución típica |
 |-----------------|-------|--------------------|
-| Objetos visuales simples   | 0     | 176 x 144          |
-| Objetos visuales simples   | 1     | 176 x 144          |
-| Objetos visuales simples   | 2     | 352 x 288          |
-| Objetos visuales simples   | 3     | 352 x 288          |
+| Simple Visual   | 0     | 176 x 144          |
+| Simple Visual   | 1     | 176 x 144          |
+| Simple Visual   | 2     | 352 x 288          |
+| Simple Visual   | 3     | 352 x 288          |
 | SimpleVisual    | 4a    | 640 x 480          |
-| Objetos visuales simples   | 5     | 720 x 576          |
-| Avanzado simple | 0     | 176 x 144          |
-| Avanzado simple | 1     | 176 x 144          |
-| Avanzado simple | 2     | 352 x 288          |
-| Avanzado simple | 3     | 352 x 288          |
-| Avanzado simple | 3b    | 352 x 288          |
-| Avanzado simple | 4     | 352 x 756          |
-| Avanzado simple | 5     | 720 x 576          |
+| Simple Visual   | 5     | 720 x 576          |
+| Advanced Simple | 0     | 176 x 144          |
+| Advanced Simple | 1     | 176 x 144          |
+| Advanced Simple | 2     | 352 x 288          |
+| Advanced Simple | 3     | 352 x 288          |
+| Advanced Simple | 3b    | 352 x 288          |
+| Advanced Simple | 4     | 352 x 756          |
+| Advanced Simple | 5     | 720 x 576          |
 
 
 
  
 
-Para obtener más información acerca de los perfiles y los niveles, consulte la especificación MPEG4 parte 2 (ISO/IEC 14496-2): tecnología de la información: codificación de objetos de audio visual, parte 2: visual.
+Para obtener más información sobre los perfiles y niveles, vea la especificación MPEG4 Parte 2 (ISO/IEC 14496-2): Tecnología de la información-- Codificación de objetos audio visuales -- Parte 2: Visual.
 
 ## <a name="decoder-properties"></a>Propiedades del descodificador
 
-Para establecer las propiedades en el descodificador de vídeo MPEG4 parte 2, use la interfaz [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) o la interfaz [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Para establecer propiedades en el descodificador MPEG4 Part 2 Video, use la [**interfaz ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) o [**la interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-El descodificador de vídeo MPEG4 parte 2 admite las siguientes propiedades.
+El descodificador MPEG4 Part 2 Video admite las siguientes propiedades.
 
 
 
@@ -154,28 +154,28 @@ De solo escritura.<br />
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los identificadores únicos globales (GUID) para los subtipos multimedia RGB difieren en función de si un descodificador actúa como un DMO o una MFT. Los GUID para los subtipos de medios que no son RGB son los mismos, independientemente de si un descodificador actúa como un DMO o una MFT. Para obtener información sobre los GUID que representan subtipos de medios, consulte [tipos de medios](media-types.md).
+Los identificadores únicos globales (GUID) de los subtipos de medios RGB difieren en función de si un descodificador actúa como DMO o MFT. Los GUID de los subtipos multimedia no RGB son los mismos, independientemente de si un descodificador actúa como DMO o MFT. Para obtener información sobre los GUID que representan subtipos de medios, vea [Tipos de medios](media-types.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MP4SDecd.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Objetos Codec](codecobjects.md)
+[Objetos de códec](codecobjects.md)
 </dt> </dl>
 
  

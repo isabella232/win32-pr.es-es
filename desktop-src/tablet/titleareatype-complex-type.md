@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que contiene información de posición y de límites para el título de una nota.
+description: Define el tipo que contiene información de posición y límites para el título en una nota.
 ms.assetid: 45beca78-b88d-414b-90d5-8e7a0ee9cbed
-title: Tipo complejo de TitleAreaType
+title: Tipo complejo TitleAreaType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 4def6948860e11673970986925d2b665da2efe25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2602339c9285eaac5da806fa0a08f498c0f8f631db30626f342a5bead7cc79ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966744"
 ---
-# <a name="titleareatype-complex-type"></a>Tipo complejo de TitleAreaType
+# <a name="titleareatype-complex-type"></a>Tipo complejo TitleAreaType
 
-Define el tipo que contiene información de posición y de límites para el título de una nota.
+Define el tipo que contiene información de posición y límites para el título en una nota.
 
 ``` syntax
 <xs:complexType name="TitleAreaType" />
@@ -31,9 +31,9 @@ Define el tipo que contiene información de posición y de límites para el tít
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

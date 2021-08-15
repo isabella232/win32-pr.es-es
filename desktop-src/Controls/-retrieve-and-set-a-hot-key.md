@@ -1,37 +1,37 @@
 ---
-title: Cómo recuperar y establecer una tecla de acceso rápido
-description: En este tema se muestra cómo recuperar o establecer la combinación de teclas de un control de tecla de acceso rápido.
+title: Cómo recuperar y establecer una clave de acceso
+description: En este tema se muestra cómo recuperar o establecer la combinación de claves para un control de tecla de acceso remoto.
 ms.assetid: F3643196-F847-4EE4-97ED-75AF52D4FF8D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d453433917c211bc787f70a5d9344f1a477858e
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: fac5d0bab71fea11fe3d2aba23405f6d7ee7fb1ed8c78f2578f034ae9c84cad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105656443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079499"
 ---
-# <a name="how-to-retrieve-and-set-a-hot-key"></a>Cómo recuperar y establecer una tecla de acceso rápido
+# <a name="how-to-retrieve-and-set-a-hot-key"></a>Cómo recuperar y establecer una clave de acceso
 
-En este tema se muestra cómo recuperar o establecer la combinación de teclas de un control de tecla de acceso rápido. El mensaje [**HKM \_ SETHOTKEY**](hkm-sethotkey.md) permite a una aplicación establecer la combinación de teclas de acceso rápido para un control de tecla de acceso rápido. Las aplicaciones usan el mensaje [**HKM \_ GETHOTKEY**](hkm-gethotkey.md) para recuperar el código de tecla virtual y los marcadores modificadores de la tecla de acceso rápido que el usuario elige.
+En este tema se muestra cómo recuperar o establecer la combinación de claves para un control de tecla de acceso remoto. El [**mensaje \_ SETHOTKEY**](hkm-sethotkey.md) de HKM permite a una aplicación establecer la combinación de teclas de acceso rápido para un control de tecla de acceso rápido. Las aplicaciones usan [**el mensaje \_ GETHOTKEY**](hkm-gethotkey.md) de HKM para recuperar el código de clave virtual y las marcas modificadoras de la clave de acceso rápido elegida por el usuario.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Use el mensaje [**HKM \_ GETHOTKEY**](hkm-gethotkey.md) para recuperar el código de tecla virtual y las teclas modificadoras que describen una tecla de acceso rápido elegida por el usuario. Use el [**mensaje \_ SETHOTKEY de HKM**](hkm-sethotkey.md) para establecer los valores de una tecla de acceso rápido.
+Use el [**mensaje \_ GETHOTKEY**](hkm-gethotkey.md) de HKM para recuperar el código de clave virtual y las teclas modificadoras que describen una clave de acceso rápido elegida por el usuario. Use el [**mensaje \_ SETHOTKEY**](hkm-sethotkey.md) de HKM para establecer esos valores para una clave de acceso rápido.
 
-En el siguiente ejemplo de código de C++, la función definida por la aplicación utiliza el mensaje [**\_ GETHOTKEY de HKM**](hkm-gethotkey.md) para recuperar una combinación de teclas de un control de tecla de acceso rápido y, a continuación, usa el mensaje de [**\_ SETHOTKEY de WM**](/windows/desktop/inputdev/wm-sethotkey) para establecer una tecla de acceso rápido global. Tenga en cuenta que no puede establecer una tecla de acceso rápido global para una ventana que tenga el estilo de ventana [**\_ secundaria de WS**](/windows/desktop/winmsg/window-styles) .
+En el siguiente ejemplo de código de C++, la función definida por la aplicación usa el mensaje [**\_ GETHOTKEY**](hkm-gethotkey.md) de HKM para recuperar una combinación de claves de un control de tecla de acceso rápido y, a continuación, usa el mensaje [**\_ SETHOTKEY**](/windows/desktop/inputdev/wm-sethotkey) de WM para establecer una tecla de acceso rápido global. Tenga en cuenta que no puede establecer una tecla de acceso activa global para una ventana que tenga el estilo [**de ventana WS \_ CHILD.**](/windows/desktop/winmsg/window-styles)
 
 
 
@@ -62,13 +62,13 @@ BOOL WINAPI ProcessHotkey(HWND hwndHot, HWND hwndMain)
 
 <dl> <dt>
 
-[Referencia de control de teclas de acceso rápido](bumper-hot-key-hot-key-control-reference.md)
+[Referencia de control de clave rápida](bumper-hot-key-hot-key-control-reference.md)
 </dt> <dt>
 
-[Acerca de los controles de tecla de acceso rápido](hot-key-controls.md)
+[Acerca de los controles de tecla de acceso](hot-key-controls.md)
 </dt> <dt>
 
-[Usar controles de tecla de acceso rápido](using-hot-key-controls.md)
+[Uso de controles de tecla de acceso](using-hot-key-controls.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-Object-GUID
-description: El identificador único y portátil de los objetos de AzMan
+title: Atributo ms-DS-Az-Object-Guid
+description: Identificador único y portátil de los objetos AzMan
 ms.assetid: c4ea0e1a-92bc-4fd1-b3de-9631a5c4e30a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-AZ-Object-GUID
-- Esquema de AD de atributo msDS-AzObjectGuid
+- Esquema de AD del atributo ms-DS-Az-Object-Guid
+- Esquema de AD del atributo msDS-AzObjectGuid
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4641ba25202dfc74df799635969e24a8d9c9df30
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 479035e6246558a5efc60f4e2600832b08ab8111303d1fc5beb96439874f21f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960894"
 ---
-# <a name="ms-ds-az-object-guid-attribute"></a>atributo MS-DS-AZ-Object-GUID
+# <a name="ms-ds-az-object-guid-attribute"></a>Atributo ms-DS-Az-Object-Guid
 
-El identificador único y portátil de los objetos de AzMan
+Identificador único y portátil de los objetos AzMan
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DS-AZ-Object-GUID                                  |
-| Nombre para mostrar de LDAP | msDS-AzObjectGuid                                     |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-DS-Az-Object-Guid                                  |
+| Ldap-Display-Name | msDS-AzObjectGuid                                     |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1949                               |
-| System-ID-GUID    | 8491e548-6c38-4365-a732-af041569b02c                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 8491e548-6c38-4365-a732-af041569b02c                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,20 +50,20 @@ El identificador único y portátil de los objetos de AzMan
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
-| System-Only            | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| Está indexado             | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                                               |
+| System-Only            | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Está indexado             | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                               |
 | Range-Lower            | 16                                                                                                                                                                                                                                                                                                                                                                                         |
 | Range-Upper            | 16                                                                                                                                                                                                                                                                                                                                                                                         |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                                                 |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> [**MS-DS-AZ-Operation**](c-msds-azoperation.md)<br/> [**MS-DS-AZ-role**](c-msds-azrole.md)<br/> [**MS-DS-AZ-Scope**](c-msds-azscope.md)<br/> [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> [**ms-DS-Az-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -71,20 +71,20 @@ El identificador único y portátil de los objetos de AzMan
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
-| System-Only            | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| Está indexado             | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                                               |
+| System-Only            | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Está indexado             | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                               |
 | Range-Lower            | 16                                                                                                                                                                                                                                                                                                                                                                                         |
 | Range-Upper            | 16                                                                                                                                                                                                                                                                                                                                                                                         |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                                                 |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> [**MS-DS-AZ-Operation**](c-msds-azoperation.md)<br/> [**MS-DS-AZ-role**](c-msds-azrole.md)<br/> [**MS-DS-AZ-Scope**](c-msds-azscope.md)<br/> [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> [**ms-DS-Az-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -92,20 +92,20 @@ El identificador único y portátil de los objetos de AzMan
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
-| System-Only            | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| Está indexado             | True                                                                                                                                                                                                                                                                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                                               |
+| System-Only            | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Está indexado             | Verdadero                                                                                                                                                                                                                                                                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                               |
 | Range-Lower            | 16                                                                                                                                                                                                                                                                                                                                                                                         |
 | Range-Upper            | 16                                                                                                                                                                                                                                                                                                                                                                                         |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                                                 |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> [**MS-DS-AZ-Operation**](c-msds-azoperation.md)<br/> [**MS-DS-AZ-role**](c-msds-azrole.md)<br/> [**MS-DS-AZ-Scope**](c-msds-azscope.md)<br/> [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> [**ms-DS-Az-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 

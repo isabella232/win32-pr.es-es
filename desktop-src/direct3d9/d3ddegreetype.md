@@ -1,7 +1,7 @@
 ---
 description: Define el grado de las variables de la ecuación que describe una curva.
 ms.assetid: 52a9c57e-a48d-4d8a-a208-97a3d09e7abf
-title: Enumeración D3DDEGREETYPE (D3D9Types. h)
+title: Enumeración D3DDEGREETYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 773ef3a8dd8fc5f4657119c2021c5723e54a3bd7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6daacc007438903d3f003a19038b4ea6909814e3a5d024d3df6daa95a0c60602
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989055"
 ---
-# <a name="d3ddegreetype-enumeration"></a>Enumeración D3DDEGREETYPE
+# <a name="d3ddegreetype-enumeration"></a>D3DDEGREETYPE (enumeración)
 
 Define el grado de las variables de la ecuación que describe una curva.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,44 +43,44 @@ typedef enum D3DDEGREETYPE {
 
 <dl> <dt>
 
-<span id="D3DDEGREE_LINEAR"></span><span id="d3ddegree_linear"></span>**\_Lineal D3DDEGREE**
+<span id="D3DDEGREE_LINEAR"></span><span id="d3ddegree_linear"></span>**D3DDEGREE \_ LINEAR**
 </dt> <dd>
 
 La curva se describe mediante variables de primer orden.
 
 </dd> <dt>
 
-<span id="D3DDEGREE_QUADRATIC"></span><span id="d3ddegree_quadratic"></span>**D3DDEGREE \_ cuadrático**
+<span id="D3DDEGREE_QUADRATIC"></span><span id="d3ddegree_quadratic"></span>**D3DDEGREE \_ QUADRATIC**
 </dt> <dd>
 
 La curva se describe mediante variables de segundo orden.
 
 </dd> <dt>
 
-<span id="D3DDEGREE_CUBIC"></span><span id="d3ddegree_cubic"></span>**D3DDEGREE \_ cúbico**
+<span id="D3DDEGREE_CUBIC"></span><span id="d3ddegree_cubic"></span>**D3DDEGREE \_ CUBIC**
 </dt> <dd>
 
 La curva se describe mediante variables de tercer orden.
 
 </dd> <dt>
 
-<span id="D3DDEGREE_QUINTIC"></span><span id="d3ddegree_quintic"></span>**D3DDEGREE \_ quintal**
+<span id="D3DDEGREE_QUINTIC"></span><span id="d3ddegree_quintic"></span>**D3DDEGREE \_ QUITIC**
 </dt> <dd>
 
 La curva se describe mediante variables de cuarto orden.
 
 </dd> <dt>
 
-<span id="D3DCULL_FORCE_DWORD"></span><span id="d3dcull_force_dword"></span>**D3DCULL \_ forzar \_ DWORD**
+<span id="D3DCULL_FORCE_DWORD"></span><span id="d3dcull_force_dword"></span>**D3DCULL \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores de esta enumeración se utilizan para describir las curvas usadas por las revisiones de rectángulo y triángulo. Para obtener más información, vea D3DRS \_ CULLMODE.
+Los valores de esta enumeración se usan para describir las curvas usadas por las revisiones de rectángulos y triángulos. Para obtener más información, vea D3DRS \_ CULLMODE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,11 +88,11 @@ Los valores de esta enumeración se utilizan para describir las curvas usadas po
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

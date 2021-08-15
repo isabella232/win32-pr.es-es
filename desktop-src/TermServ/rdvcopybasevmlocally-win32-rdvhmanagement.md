@@ -1,12 +1,12 @@
 ---
-title: Método RdvCopyBaseVmLocally de la clase Win32_RdvhManagement
+title: Método RdvCopyBaseVmLocally de la Win32_RdvhManagement clase
 description: Copia una máquina virtual base local en un servidor host de virtualización de escritorio remoto (RDV) especificado.
 ms.assetid: 13c0c629-42c6-4689-9740-f13f31688e42
 ms.tgt_platform: multiple
 keywords:
 - Método RdvCopyBaseVmLocally Servicios de Escritorio remoto
-- Método RdvCopyBaseVmLocally Servicios de Escritorio remoto, clase Win32_RdvhManagement
-- Win32_RdvhManagement de clase Servicios de Escritorio remoto, método RdvCopyBaseVmLocally
+- Método RdvCopyBaseVmLocally Servicios de Escritorio remoto , Win32_RdvhManagement clase
+- Win32_RdvhManagement clase Servicios de Escritorio remoto , método RdvCopyBaseVmLocally
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d96e01038a4b41edcf32a6a5a9b353403fa6021
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 76c260f8e9b659ac6e1316fc699ab832174a4aa0d0c24df26daecf5a4895ccd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118852630"
 ---
-# <a name="rdvcopybasevmlocally-method-of-the-win32_rdvhmanagement-class"></a>Método RdvCopyBaseVmLocally de la \_ clase RdvhManagement de Win32
+# <a name="rdvcopybasevmlocally-method-of-the-win32_rdvhmanagement-class"></a>Método RdvCopyBaseVmLocally de la clase RdvhManagement de Win32 \_
 
 Copia una máquina virtual base local en un servidor host de virtualización de escritorio remoto (RDV) especificado.
 
@@ -45,46 +45,46 @@ uint32 RdvCopyBaseVmLocally(
 
 <dl> <dt>
 
-*BaseVmLocation* \[ de\]
+*BaseVmLocation* \[ En\]
 </dt> <dd>
 
-La ubicación de la máquina virtual base.
+Ubicación de la máquina virtual base.
 
 </dd> <dt>
 
-*FarmName* \[ de\]
+*FarmName* \[ En\]
 </dt> <dd>
 
-Nombre de la granja de host en la que se va a copiar.
+Nombre de la granja de servidores host en la que se copiará.
 
 </dd> <dt>
 
-*GoldCacheLocation* \[ de\]
+*GoldCacheLocation* \[ En\]
 </dt> <dd>
 
-La ubicación de caché Gold.
+Ubicación de la caché gold.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                             |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                   |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
