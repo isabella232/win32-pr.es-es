@@ -1,25 +1,25 @@
 ---
-title: Código de ejemplo para buscar un servidor host de partición de directorio de aplicaciones
-description: En este tema se incluye un ejemplo de código que ubica un servidor host de partición de directorio de aplicaciones.
+title: Código de ejemplo para buscar un servidor host de partición de directorio de aplicación
+description: En este tema se incluye un ejemplo de código que busca un servidor host de partición de directorio de aplicación.
 ms.assetid: c161323b-13ce-4986-8b24-b459009ff53c
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para buscar un servidor host de partición de directorio de aplicaciones AD
-- Partición de directorio de aplicaciones AD, código de ejemplo para buscar un servidor host de partición de directorio de aplicaciones
+- Código de ejemplo para buscar un servidor host de partición de directorio de aplicación AD
+- Application Directory Partition AD , código de ejemplo para buscar un servidor host de partición de directorio de aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa82c91573e0ce00017fe93b8e8713f50ab7b26c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03d7a218acf3608c18587b7d9b9c82779f17fd6eb251608a86d99d8acb3b7bd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693604"
 ---
-# <a name="example-code-for-locating-an-application-directory-partition-host-server"></a>Código de ejemplo para buscar un servidor host de partición de directorio de aplicaciones
+# <a name="example-code-for-locating-an-application-directory-partition-host-server"></a>Código de ejemplo para buscar un servidor host de partición de directorio de aplicación
 
-En este tema se incluye un ejemplo de código que ubica un servidor host de partición de directorio de aplicaciones.
+En este tema se incluye un ejemplo de código que busca un servidor host de partición de directorio de aplicación.
 
-En el siguiente ejemplo de código de C/C++ se muestra cómo utilizar la función [**DsGetDcName**](/windows/desktop/api/DsGetDC/nf-dsgetdc-dsgetdcnamea) para buscar un controlador de dominio que hospede una réplica de una partición de directorio de aplicaciones. En este ejemplo de código también se muestra cómo usar la función [**DsCrackNames**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dscracknamesa) para convertir el nombre distintivo de una partición de directorio de aplicaciones en un nombre DNS.
+En el siguiente ejemplo de código de C/C++ se muestra cómo usar la función [**DsGetDcName**](/windows/desktop/api/DsGetDC/nf-dsgetdc-dsgetdcnamea) para buscar un controlador de dominio que hospeda una réplica de una partición de directorio de aplicación. En este ejemplo de código también se muestra cómo usar la función [**DsCrackNames**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dscracknamesa) para convertir el nombre distintivo de una partición de directorio de aplicación en un nombre DNS.
 
 
 ```C++
@@ -131,9 +131,9 @@ DWORD PrintDCFromAppPartition(LPCTSTR pszAppPartitionDN)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

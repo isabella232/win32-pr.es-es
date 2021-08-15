@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM PhysicalCapacity es una clase abstracta que representa los requisitos mínimo y máximo de un elemento físico y su capacidad para admitir distintos tipos de hardware.
+description: La clase PhysicalCapacity de CIM es una clase abstracta que representa los requisitos mínimos y máximos de un elemento físico y su capacidad para admitir diferentes \_ tipos de hardware.
 ms.assetid: e422aec0-1830-464e-ac52-2911652165a2
 ms.tgt_platform: multiple
-title: CIM_PhysicalCapacity (clase)
+title: CIM_PhysicalCapacity clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,23 +17,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 50f928f69d34600c0f90865a4df44a5d7697fc89
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 78574fc7acc8e4b96be745d5eb2d00d2715d1ba3a570dd514be1ba0a3a706581
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118678367"
 ---
-# <a name="cim_physicalcapacity-class"></a>\_Clase PhysicalCapacity de CIM
+# <a name="cim_physicalcapacity-class"></a>\_Cim PhysicalCapacity (clase)
 
-La clase **CIM \_ PhysicalCapacity** es una clase abstracta que representa los requisitos mínimo y máximo de un elemento físico y su capacidad para admitir distintos tipos de hardware. Por ejemplo, los requisitos de memoria mínima y máxima se pueden modelar como una subclase de **\_ PhysicalCapacity de CIM**.
+La **clase \_ PhysicalCapacity de CIM** es una clase abstracta que representa los requisitos mínimos y máximos de un elemento físico y su capacidad para admitir diferentes tipos de hardware. Por ejemplo, los requisitos mínimos y máximos de memoria se pueden modelar como una subclase de **CIM \_ PhysicalCapacity**.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,13 +49,13 @@ class CIM_PhysicalCapacity
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ PhysicalCapacity** tiene estos tipos de miembros:
+La **clase \_ PhysicalCapacity de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ PhysicalCapacity** tiene estas propiedades.
+La **clase \_ PhysicalCapacity de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -100,7 +100,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se 
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,8 +118,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

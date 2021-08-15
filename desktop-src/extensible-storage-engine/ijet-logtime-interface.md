@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: interfaz IJET_LOGTIME'
-title: Interfaz IJET_LOGTIME
+description: 'Más información sobre: IJET_LOGTIME interfaz'
+title: IJET_LOGTIME interfaz
 TOCTitle: IJET_LOGTIME interface
 ms:assetid: T:Microsoft.Isam.Esent.Interop.IJET_LOGTIME
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.ijet_logtime(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4ef18ecc8dbc72bd2675ced72c4ad4277f4aabc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c32547b0785172ea73e58403e06e2e632752eae397559c504ab7f492c54dd971
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980685"
 ---
-# <a name="ijet_logtime-interface"></a>Interfaz IJET_LOGTIME
+# <a name="ijet_logtime-interface"></a>IJET_LOGTIME interfaz
 
 Interfaz para métodos comunes entre JET_LOGTIME y JET_BKLOGTIME.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,6 +56,6 @@ public interface IJET_LOGTIME : INullableJetStruct
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de IJET_LOGTIME](./ijet-logtime-members.md)
+[IJET_LOGTIME miembros](./ijet-logtime-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

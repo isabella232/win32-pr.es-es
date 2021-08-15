@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHAdd (D3dx9math.h): agrega dos vectores de armónica esférica (SH); en otras palabras, pOut \[ i \] = pA i + \[ \] pB i \[ \] .'
+description: 'Función D3DXSHAdd (D3dx9math.h): agrega dos vectores armónicos esféricos (SH); en otras palabras, pOut \[ i \] = pA i + \[ \] pB i \[ \] .'
 ms.assetid: 12775c90-ed9d-4931-a449-2571816dd079
 title: Función D3DXSHAdd (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7333d1803b9f7ea7b056ff78ffd053bd6086184b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bc61777ecd44fa1d48bb2b105f856ab13f62efdf8dd33c7e64c84afa12c6e88e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524228"
 ---
 # <a name="d3dxshadd-function-d3dx9mathh"></a>Función D3DXSHAdd (D3dx9math.h)
 
@@ -57,7 +57,7 @@ Puntero a coeficientes de salida sh. La evaluación genera coeficientes order-to
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de base precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

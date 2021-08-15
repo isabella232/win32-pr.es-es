@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCubeArray:: TextureCubeArray SampleCmp'
-description: 'Muestrea una textura con un valor de comparación para rechazar ejemplos. | Métodos TextureCubeArray:: TextureCubeArray SampleCmp'
+title: Métodos TextureCubeArray::TextureCubeArray SampleCmp
+description: Muestrea una textura con un valor de comparación para rechazar muestras. | Métodos TextureCubeArray::TextureCubeArray SampleCmp
 ms.assetid: 62B5C163-9FB8-4567-B63F-34234C938874
 keywords:
-- SampleCmp métodos HLSL
+- Métodos HLSL de SampleCmp
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7bf2366d9cd4e86c3141e5bc247f2dc03a6f7c76
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7efe4beb49706779c68ee5d70837526295d8ebe5c860b976630923d303a00a51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786273"
 ---
-# <a name="texturecubearraysamplecmp-methods"></a>TextureCubeArray:: SampleCmp (métodos)
+# <a name="texturecubearraysamplecmp-methods"></a>Métodos TextureCubeArray::SampleCmp
 
-Muestrea una textura con un valor de comparación para rechazar ejemplos.
+Muestrea una textura con un valor de comparación para rechazar muestras.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,9 +29,9 @@ Muestrea una textura con un valor de comparación para rechazar ejemplos.
 
 | Método                                                                                        | Descripción                                                                                                                                                                           |
 |:----------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleCmp (S, Float, float)**](dx-graphics-hlsl-to-samplecmp.md)                             | Muestrea una textura con un valor de comparación para rechazar ejemplos.<br/>                                                                                                             |
-| [**SampleCmp (S, Float, Float, float)**](tcubearray-samplecmp-s-float-float-float-.md)           | Muestrea una textura, utilizando un valor de comparación para rechazar muestras, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en.<br/>                                     |
-| [**SampleCmp (S, Float, Float, Float, uint)**](tcubearray-samplecmp-s-float-float-float-uint-.md) | Muestrea una textura, utilizando un valor de comparación para rechazar muestras, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en. Devuelve el estado de la operación.<br/> |
+| [**SampleCmp(S,float,float)**](dx-graphics-hlsl-to-samplecmp.md)                             | Muestrea una textura con un valor de comparación para rechazar muestras.<br/>                                                                                                             |
+| [**SampleCmp(S,float,float,float)**](tcubearray-samplecmp-s-float-float-float-.md)           | Muestrea una textura con un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.<br/>                                     |
+| [**SampleCmp(S,float,float,float,uint)**](tcubearray-samplecmp-s-float-float-float-uint-.md) | Muestrea una textura con un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Muestrea una textura con un valor de comparación para rechazar ejemplos.
 [**TextureCubeArray**](texturecubearray.md)
 </dt> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

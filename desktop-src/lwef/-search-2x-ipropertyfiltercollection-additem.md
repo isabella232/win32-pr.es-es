@@ -1,11 +1,11 @@
 ---
-title: Propiedad IPropertyFilterCollection AddItem (WdsSharedIDL. h)
+title: Propiedad AddItem de IPropertyFilterCollection (WdsSharedIDL.h)
 description: Agrega un nuevo filtro a la colección.
 ms.assetid: 01078e7a-811a-4dfb-b122-4801f39413d8
 keywords:
-- Propiedad AddItem características de entorno de Windows heredadas
-- Propiedad AddItem características de entorno de Windows heredadas, interfaz IPropertyFilterCollection
-- Interfaz IPropertyFilterCollection características del entorno heredado de Windows, propiedad AddItem
+- Características heredadas del entorno de Windows addItem
+- Propiedades addItem heredadas Windows environment features , IPropertyFilterCollection (interfaz)
+- IPropertyFilterCollection interface Legacy Windows Environment Features , AddItem property
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b199f0e696f75fb5549b274ac888989f7a723b48
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aeafec95549fefa244dff6ff44ad9110150ae1b410e38b423a0a31f09cf54194
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118755452"
 ---
-# <a name="ipropertyfiltercollectionadditem-property"></a>IPropertyFilterCollection:: AddItem (propiedad)
+# <a name="ipropertyfiltercollectionadditem-property"></a>IPropertyFilterCollection::AddItem, propiedad
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
 Agrega un nuevo filtro a la colección.
 
@@ -46,18 +46,18 @@ HRESULT get_AddItem(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Devuelve un puntero a la dirección para el nuevo filtro.
+devuelve un puntero a la dirección del nuevo filtro.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

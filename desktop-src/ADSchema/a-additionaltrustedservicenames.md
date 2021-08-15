@@ -1,11 +1,11 @@
 ---
-title: Atributo de nombre de servicio de confianza adicional
-description: Una lista de los servicios del dominio en los que se puede confiar. No se usa en AD.
+title: Atributo Additional-Trusted-Service-Names
+description: Lista de servicios del dominio de confianza. NO lo usa AD.
 ms.assetid: 0c574a99-4036-408b-807c-b4b3394624c7
 ms.tgt_platform: multiple
 keywords:
-- Atributo de nombre de servicio de nombres de servicio de confianza adicional
-- additionalTrustedServiceNames esquema de AD de atributos
+- Esquema de AD del atributo Additional-Trusted-Service-Names
+- Esquema de AD del atributo additionalTrustedServiceNames
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8066190082cfe0f1bbb8825768ad135090a7a4f8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4b4174643c27a6b4eac47bafb161aab4e48931c092ca7a8342b5ab7bfe2fada2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689181"
 ---
-# <a name="additional-trusted-service-names-attribute"></a>Atributo de nombre de servicio de confianza adicional
+# <a name="additional-trusted-service-names-attribute"></a>Atributo Additional-Trusted-Service-Names
 
-Una lista de los servicios del dominio en los que se puede confiar. No se usa en AD.
+Lista de servicios del dominio de confianza. NO lo usa AD.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Nombres de servicio de confianza adicionales            |
-| Nombre para mostrar de LDAP | additionalTrustedServiceNames               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Additional-Trusted-Service-Names            |
+| Ldap-Display-Name | additionalTrustedServiceNames               |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.889                      |
-| System-ID-GUID    | 032160be-9824-11d1-aec0-0000f80367c1        |
+| System-Id-Guid    | 032160be-9824-11d1-aec0-0000f80367c1        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ Una lista de los servicios del dominio en los que se puede confiar. No se usa en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
+| Es de un solo valor       | False                                                |
 | Está indexado             | False                                                |
 | En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -76,13 +76,13 @@ Una lista de los servicios del dominio en los que se puede confiar. No se usa en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
+| Es de un solo valor       | False                                                |
 | Está indexado             | False                                                |
 | En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -97,13 +97,13 @@ Una lista de los servicios del dominio en los que se puede confiar. No se usa en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
+| Es de un solo valor       | False                                                |
 | Está indexado             | False                                                |
 | En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -118,13 +118,13 @@ Una lista de los servicios del dominio en los que se puede confiar. No se usa en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
+| Es de un solo valor       | False                                                |
 | Está indexado             | False                                                |
 | En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -139,13 +139,13 @@ Una lista de los servicios del dominio en los que se puede confiar. No se usa en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
+| Es de un solo valor       | False                                                |
 | Está indexado             | False                                                |
 | En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -160,13 +160,13 @@ Una lista de los servicios del dominio en los que se puede confiar. No se usa en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
+| Es de un solo valor       | False                                                |
 | Está indexado             | False                                                |
 | En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

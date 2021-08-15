@@ -1,6 +1,6 @@
 ---
-title: Identificadores integrados del módulo de creación de claves (Fwpmu. h)
-description: Los identificadores de los módulos de creación de claves integrados en la plataforma de filtrado de Windows (WFP) se representan mediante un GUID.
+title: Identificadores de módulo de claves integrados (Fwpmu.h)
+description: Los identificadores de los módulos de clave integrados en Windows Filtering Platform (WFP) se representan mediante un GUID.
 ms.assetid: ba3aaf0f-5524-4d61-bb74-e4714b11b2a9
 topic_type:
 - apiref
@@ -14,52 +14,52 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9e6feb726a62de02130d64cef27cd9078395b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b978832d65ab930f172c205144ba352f028c486d4d04c6f680ee963c6cf2ae2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951344"
 ---
-# <a name="built-in-keying-module-identifiers"></a>Identificadores de módulo de incrustación integrados
+# <a name="built-in-keying-module-identifiers"></a>Identificadores de módulo de claves integrados
 
-Los identificadores de los módulos de creación de claves integrados en la plataforma de filtrado de Windows (WFP) se representan mediante un GUID.
+Los identificadores de los módulos de clave integrados en Windows Filtering Platform (WFP) se representan mediante un GUID.
 
-Estos identificadores se definen como se indica a continuación.
+Estos identificadores se definen como se muestra a continuación.
 
 <dl> <dt>
 
-<span id="FWPM_KEYING_MODULE_IKE"></span><span id="fwpm_keying_module_ike"></span>**\_módulo de generación de claves FWPM \_ \_ IKE**
+<span id="FWPM_KEYING_MODULE_IKE"></span><span id="fwpm_keying_module_ike"></span>**FWPM \_ KEYING \_ MODULE \_ IKE**
 </dt> <dd> <dl> <dt>
 
 
 
-Módulo de creación de claves de Intercambio de claves por red (IKE).
+Módulo de Exchange claves de Internet Key Exchange (IKE).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_KEYING_MODULE_IKEV2"></span><span id="fwpm_keying_module_ikev2"></span>**\_Módulo de generación de claves FWPM \_ \_ IKEV2**
+<span id="FWPM_KEYING_MODULE_IKEV2"></span><span id="fwpm_keying_module_ikev2"></span>**FWPM \_ KEYING \_ MODULE \_ IKEV2**
 </dt> <dd> <dl> <dt>
 
 
 
-Módulo de creación de claves de Intercambio de claves por red versión 2 (IKEv2).
+Clave de Internet Exchange versión 2 (IKEv2) del módulo de claves.
 
 > [!Note]  
-> Solo está disponible en Windows Server 2008 R2 y Windows 7.
+> Disponible solo en Windows Server 2008 R2 y Windows 7.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_KEYING_MODULE_AUTHIP"></span><span id="fwpm_keying_module_authip"></span>**\_módulo de generación de claves FWPM \_ \_ AUTHIP**
+<span id="FWPM_KEYING_MODULE_AUTHIP"></span><span id="fwpm_keying_module_authip"></span>**FWPM \_ KEYING \_ MODULE \_ AUTHIP**
 </dt> <dd> <dl> <dt>
 
 
 
-Módulo de creación de claves de AuthIP.
+Módulo de claves AuthIP.
 
 
 </dt> </dl> </dd> </dl>
@@ -68,11 +68,11 @@ Módulo de creación de claves de AuthIP.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 

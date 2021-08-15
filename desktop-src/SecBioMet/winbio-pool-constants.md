@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_POOL (Winbio \_ Types. h)
-description: Especifique el tipo de grupo de unidades biométricas que se va a usar en la sesión.
+title: WINBIO_POOL constantes (Winbio \_ types.h)
+description: Especifique el tipo de grupo de unidades biométricas que se usará en la sesión.
 ms.assetid: e6e49b95-981a-477d-9889-ea132db5b387
 topic_type:
 - apiref
@@ -15,25 +15,25 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7af1ec8d5692a390bb91ecb63736bd94efb2e85
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fefc43bb9dc4cefbde1ce5622853a3ba2cfae498ff2f8f81e97417e306641db9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909802"
 ---
-# <a name="winbio_pool-constants"></a>Constantes de grupo de WINBIO \_
+# <a name="winbio_pool-constants"></a>Constantes \_ de WINBIO POOL
 
-Se pueden usar las siguientes constantes en la función [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para especificar el tipo de grupo de unidades biométricas que se va a usar en la sesión.
+Las siguientes constantes se pueden usar en la función [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para especificar el tipo de grupo de unidades biométricas que se usará en la sesión.
 
 
 
 | Constante                                                                                                                                                                                  | Descripción                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| <span id="WINBIO_POOL_UNKNOWN"></span><span id="winbio_pool_unknown"></span><dl> <dt>**Grupo de WINBIO \_ \_ desconocido**</dt> </dl>          | No se conoce el tipo de grupo.<br/>                                                         |
-| <span id="WINBIO_POOL_SYSTEM"></span><span id="winbio_pool_system"></span><dl> <dt>**\_sistema de grupo de WINBIO \_**</dt> </dl>             | Especifica una colección compartida de unidades biométricas administradas por el proveedor de servicios.<br/> |
-| <span id="WINBIO_POOL_PRIVATE"></span><span id="winbio_pool_private"></span><dl> <dt>**Grupo de WINBIO \_ \_ privado**</dt> </dl>          | Especifica una colección de unidades biométricas administradas por el autor de la llamada.<br/>         |
-| <span id="WINBIO_POOL_UNASSIGNED"></span><span id="winbio_pool_unassigned"></span><dl> <dt>**Grupo de WINBIO \_ \_ sin asignar**</dt> </dl> | Reservado.<br/>                                                                         |
+| <span id="WINBIO_POOL_UNKNOWN"></span><span id="winbio_pool_unknown"></span><dl> <dt>**GRUPO WINBIO \_ \_ DESCONOCIDO**</dt> </dl>          | El tipo de grupo es desconocido.<br/>                                                         |
+| <span id="WINBIO_POOL_SYSTEM"></span><span id="winbio_pool_system"></span><dl> <dt>**SISTEMA DE \_ GRUPO WINBIO \_**</dt> </dl>             | Especifica una colección compartida de unidades biométricas administradas por el proveedor de servicios.<br/> |
+| <span id="WINBIO_POOL_PRIVATE"></span><span id="winbio_pool_private"></span><dl> <dt>**WINBIO \_ POOL \_ PRIVATE**</dt> </dl>          | Especifica una colección de unidades biométricas administradas por el autor de la llamada.<br/>         |
+| <span id="WINBIO_POOL_UNASSIGNED"></span><span id="winbio_pool_unassigned"></span><dl> <dt>**GRUPO DE WINBIO \_ \_ SIN FIRMA**</dt> </dl> | Reservado.<br/>                                                                         |
 
 
 
@@ -43,9 +43,9 @@ Se pueden usar las siguientes constantes en la función [**WinBioOpenSession**](
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

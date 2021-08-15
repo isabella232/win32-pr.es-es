@@ -1,20 +1,20 @@
 ---
 Description: El valor COLORREF se usa para especificar un color RGB.
 ms.assetid: b87d3de2-7a13-44ef-8253-c6851a75fa54
-title: COLORREF (WINDEF. h)
+title: COLORREF (Windef.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: 6836cfcc1b18d0b20d5e347fb83206551b27de06
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3e51b2a906af5939a5c7a8753e5fcc4fbcfae64590e62bcb6df1da2c2bd8426d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104998881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118761898"
 ---
 # <a name="colorref"></a>COLORREF
 
-El valor COLORREF se usa para especificar un color [RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) .
+El valor COLORREF se usa para especificar un color [RGB.](/windows/desktop/api/Wingdi/nf-wingdi-rgb)
 
 
 ```C++
@@ -24,15 +24,15 @@ typedef DWORD* LPCOLORREF;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al especificar un color [RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) explícito, el valor de **COLORREF** tiene el formato hexadecimal siguiente:
+Al especificar un color [RGB explícito,](/windows/desktop/api/Wingdi/nf-wingdi-rgb) el **valor COLORREF** tiene el formato hexadecimal siguiente:
 
 `0x00bbggrr`
 
-El byte de orden inferior contiene un valor para la intensidad relativa de rojo; el segundo byte contiene un valor para Green; y el tercer byte contiene un valor para Blue. El byte de orden superior debe ser cero. El valor máximo de un solo byte es 0xFF.
+El byte de orden bajo contiene un valor para la intensidad relativa de rojo; el segundo byte contiene un valor para verde; y el tercer byte contiene un valor para blue. El byte de orden superior debe ser cero. El valor máximo de un solo byte es 0xFF.
 
-Para crear un valor de color **COLORREF** , use la macro [RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) . Para extraer los valores individuales de los componentes rojo, verde y azul de un valor de color, use las macros [**GetRValue**](/windows/desktop/api/Wingdi/nf-wingdi-getrvalue), [GetGValue](/windows/desktop/api/Wingdi/nf-wingdi-getgvalue)y [GetBValue](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue) , respectivamente.
+Para crear un valor de color **COLORREF,** use la [macro RGB.](/windows/desktop/api/Wingdi/nf-wingdi-rgb) Para extraer los valores individuales de los componentes rojo, verde y azul de un valor de color, use las macros [**GetRValue**](/windows/desktop/api/Wingdi/nf-wingdi-getrvalue), [GetGValue](/windows/desktop/api/Wingdi/nf-wingdi-getgvalue)y [GetBValue,](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue) respectivamente.
 
 ## <a name="example"></a>Ejemplo
 
@@ -45,21 +45,21 @@ const COLORREF rgbBlack =  0x00000000;
 const COLORREF rgbWhite =  0x00FFFFFF;
 ```
 
-Ejemplo de [ejemplos clásicos de Windows](https://github.com/microsoft/Windows-classic-samples) en github.
+Ejemplo de [Windows ejemplos clásicos](https://github.com/microsoft/Windows-classic-samples) en GitHub.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                    |
-| Encabezado<br/>                   | <dl> <dt>WINDEF. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Windef.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

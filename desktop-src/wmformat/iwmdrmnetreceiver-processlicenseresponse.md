@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMNetReceiver ProcessLicenseResponse (wmdrmsdk. h)
-description: El método ProcessLicenseResponse procesa la respuesta de la licencia enviada por el transmisor en respuesta a un desafío de licencia.
+title: Método IWMDRMNetReceiver ProcessLicenseResponse (Wmdrmsdk.h)
+description: El método ProcessLicenseResponse procesa la respuesta de licencia que envía el transmisor en respuesta a un desafío de licencia.
 ms.assetid: b6d04651-746b-474e-8a02-6b7cbee9db46
 keywords:
-- Método ProcessLicenseResponse formato de Windows Media
-- Método ProcessLicenseResponse formato de Windows Media, interfaz IWMDRMNetReceiver
-- Interfaz IWMDRMNetReceiver formato de Windows Media, método ProcessLicenseResponse
+- Formato multimedia de windows del método ProcessLicenseResponse
+- Método ProcessLicenseResponse windows Media Format , IWMDRMNetReceiver (interfaz)
+- IWMDRMNetReceiver interface windows Media Format , ProcessLicenseResponse method
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45a09ebab81b71e21b9ef922423a7bbe67b20596
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb7ba84c7bf58091bb17500b0d35390062710a79a9a32b939ac8b9517cbcfaba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118700829"
 ---
-# <a name="iwmdrmnetreceiverprocesslicenseresponse-method"></a>IWMDRMNetReceiver::P método rocessLicenseResponse
+# <a name="iwmdrmnetreceiverprocesslicenseresponse-method"></a>Método IWMDRMNetReceiver::P rocessLicenseResponse
 
-El método **ProcessLicenseResponse** procesa la respuesta de la licencia enviada por el transmisor en respuesta a un desafío de licencia.
+El **método ProcessLicenseResponse** procesa la respuesta de licencia que envía el transmisor en respuesta a un desafío de licencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,44 +45,44 @@ HRESULT ProcessLicenseResponse(
 
 <dl> <dt>
 
-*pbLicenseResponse* \[ de\]
+*pbLicenseResponse* \[ En\]
 </dt> <dd>
 
 Respuesta de licencia recibida del transmisor.
 
 </dd> <dt>
 
-*cbLicenseResponse* \[ de\]
+*cbLicenseResponse* \[ En\]
 </dt> <dd>
 
 Tamaño de la respuesta en bytes.
 
 </dd> <dt>
 
-*ppbWMDRMNetLicenseRepresentation* \[ enuncia\]
+*ppbWMDRMNetLicenseRepresentation* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe la dirección de la representación de la licencia interna para la licencia incluida en el mensaje de respuesta de la licencia. Cuando termine con estos datos, debe liberar la memoria mediante una llamada a **CoTaskMemFree**. Este parámetro se puede establecer en **null** si no se necesita la representación de la licencia.
+Dirección de una variable que recibe la dirección de la representación de licencia interna de la licencia contenida en el mensaje de respuesta de licencia. Cuando termine con estos datos, debe liberar la memoria mediante una llamada **a CoTaskMemFree**. Este parámetro se puede establecer en **NULL si** no se necesita la representación de licencia.
 
 </dd> <dt>
 
-*pcbWMDRMNetLicenseRepresentation* \[ enuncia\]
+*pwWMDRMNetLicenseRepresentation* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe el tamaño de la representación de la licencia. Debe establecerse en **null** si *ppbWMDRMNetLicenseRepresentation* es **null**.
+Dirección de una variable que recibe el tamaño de la representación de licencia. Debe establecerse en **NULL** si *ppbWMDRMNetLicenseRepresentation* es **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                                | Descripción                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM \_ RIV \_ demasiado \_ pequeño**</dt> </dl> | Se necesita una lista de revocación de contenido actualizada.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>                       | El método se ha llevado a cabo de forma correcta.<br/>                         |
+| <dl> <dt>**NS \_ E \_ DRM \_ RIV \_ TOO \_ SMALL**</dt> </dl> | Se necesita una lista de revocación de contenido actualizada.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | El método se ha llevado a cabo de forma correcta.<br/>                         |
 
 
 
@@ -98,7 +98,7 @@ La respuesta de licencia procesada mediante este método debe corresponder al ú
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ La respuesta de licencia procesada mediante este método debe corresponder al ú
 
 <dl> <dt>
 
-[**Interfaz IWMDRMNetReceiver**](iwmdrmnetreceiver.md)
+[**IWMDRMNetReceiver (interfaz)**](iwmdrmnetreceiver.md)
 </dt> <dt>
 
 [**IWMDRMNetReceiver::GetLicenseChallenge**](iwmdrmnetreceiver-getlicensechallenge.md)

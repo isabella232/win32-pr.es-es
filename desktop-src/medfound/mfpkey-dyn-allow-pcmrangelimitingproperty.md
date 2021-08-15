@@ -1,27 +1,27 @@
 ---
-description: Especifica si el codificador utiliza la limitación de intervalo PCM.
+description: Especifica si el codificador usa la limitación de intervalos de PCM.
 ms.assetid: 00427337-8f5a-41c9-a303-378a37be1913
-title: Propiedad MFPKEY_DYN_ALLOW_PCMRANGELIMITING (Wmcodecdsp. h)
+title: MFPKEY_DYN_ALLOW_PCMRANGELIMITING propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40c9c3e9dbae3bf0637614602832cf9b08e23a58
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da5f6d44b9e75188ba3611b2af78c6c35bf8f40f98a587891a1e9c9206d72ebf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738229"
 ---
-# <a name="mfpkey_dyn_allow_pcmrangelimiting-property"></a>\_Propiedad PCMRANGELIMITING de MFPKEY DYN \_ permitida \_
+# <a name="mfpkey_dyn_allow_pcmrangelimiting-property"></a>Propiedad MFPKEY \_ DYN \_ ALLOW \_ PCMRANGELIMITING
 
-Especifica si el codificador utiliza la limitación de intervalo PCM. Lectura y escritura.
+Especifica si el codificador usa la limitación de intervalos de PCM. Lectura y escritura.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
-**VT \_ bool**
+**VT \_ BOOL**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,8 +29,8 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -38,7 +38,7 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Agregar funciones de devolución de llamada a una aplicación
 ms.assetid: b7bde1be-b229-4e00-8906-22d7dcf9ea04
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d4f5f3dc43227f92305032decaf917bf521d95b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6dcd72b1a95a416398f482b90d7cd15cd80e1698a66a4b1c482bc92fc523ab2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941833"
 ---
 # <a name="adding-callback-functions-to-an-application"></a>Agregar funciones de devolución de llamada a una aplicación
 
@@ -20,7 +20,7 @@ Una aplicación puede registrar funciones de devolución de llamada con la venta
 -   Los búferes de audio y fotogramas de vídeo están disponibles
 -   La aplicación debe producir durante la captura de streaming
 
-En el ejemplo siguiente se crea una ventana de captura y se registran las funciones de devolución de llamada de estado, de error, de secuencia de vídeo y de intervalo en el bucle de procesamiento de mensajes de una aplicación. También incluye una instrucción de ejemplo para deshabilitar una función de devolución de llamada. En los ejemplos siguientes se muestran las funciones de estado simple, error y devolución de llamada de fotograma.
+En el ejemplo siguiente se crea una ventana de captura y se registran las funciones de estado, error, secuencia de vídeo y devolución de llamada de fotogramas en el bucle de procesamiento de mensajes de una aplicación. También incluye una instrucción de ejemplo para deshabilitar una función de devolución de llamada. Los ejemplos posteriores muestran funciones simples de estado, error y devolución de llamada de marco.
 
 
 ```C++
@@ -77,12 +77,12 @@ case WM_CLOSE:
 
 <dl> <dt>
 
-[Uso de la captura de vídeo](using-video-capture.md)
+[Uso de captura de vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

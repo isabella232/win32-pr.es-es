@@ -1,19 +1,19 @@
 ---
-description: Recibir y entregar ejemplos
+description: Recepción y entrega de ejemplos
 ms.assetid: 92954b40-1424-4dee-997c-fc41089b7fa5
-title: Recibir y entregar ejemplos
+title: Recepción y entrega de ejemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a364743e0dfc201d419a61fa4c88bde686976d6b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e507cb3e20a8fd08c891cca5143f8bbf8c9d4f9a90bad27dc201dd43c43283e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952154"
 ---
-# <a name="receiving-and-delivering-samples"></a>Recibir y entregar ejemplos
+# <a name="receiving-and-delivering-samples"></a>Recepción y entrega de ejemplos
 
-En el siguiente pseudocódigo se muestra cómo implementar el método **IMemInput:: Receive** :
+El pseudocódigo siguiente muestra cómo implementar el **método IMemInput::Receive:**
 
 
 ```C++
@@ -44,9 +44,9 @@ HRESULT CMyInputPin::Receive(IMediaSample *pSample)
 
 
 
-El método **Receive** contiene el bloqueo de streaming, no el bloqueo Filter. Es posible que el filtro tenga que esperar en algún evento antes de que pueda procesar los datos, que se muestran aquí mediante la llamada a **WaitForSingleObject**. No todos los filtros deberán hacerlo. El método [**CBaseInputPin:: Receive**](cbaseinputpin-receive.md) comprueba algunas condiciones generales de streaming. Devuelve \_ \_ el estado VFW E incorrecto \_ si se detiene el filtro, es \_ false si se está vaciando el filtro, etc. Cualquier código de retorno distinto de S \_ OK indica que el método **Receive** debe volver inmediatamente y no procesar el ejemplo.
+El **método Receive** contiene el bloqueo de streaming, no el bloqueo de filtro. Es posible que el filtro tenga que esperar en algún evento para poder procesar los datos, que se muestra aquí mediante la llamada a **WaitForSingleObject**. No todos los filtros tendrán que hacerlo. El [**método CBaseInputPin::Receive**](cbaseinputpin-receive.md) comprueba algunas condiciones generales de streaming. Devuelve VFW E WRONG STATE si se detiene el filtro, S FALSE si el filtro se \_ \_ \_ \_ vacía, etc. Cualquier código de retorno distinto de S \_ OK indica que el método **Receive** debe devolverse inmediatamente y no procesar el ejemplo.
 
-Una vez procesado el ejemplo, entréguelo al filtro de bajada llamando a [**CBaseOutputPin::D Eliver**](cbaseoutputpin-deliver.md). Este método auxiliar llama a **IMemInputPin:: Receive** en el PIN de entrada de nivel inferior. Un filtro puede proporcionar ejemplos a varios PIN.
+Una vez procesado el ejemplo, puede entregarlo al filtro de bajada mediante una llamada a [**CBaseOutputPin::D eliver**](cbaseoutputpin-deliver.md). Este método auxiliar llama **a IMemInputPin::Receive en** el pin de entrada de bajada. Un filtro podría entregar muestras a varios pines.
 
  
 

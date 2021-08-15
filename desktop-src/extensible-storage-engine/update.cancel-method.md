@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método Update. Cancel'
-title: Update. Cancel (método)
+description: Más información sobre el método Update.Cancel
+title: Método Update.Cancel
 TOCTitle: 'Cancel method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.Cancel
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.cancel(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 235e743270c554122cbb5662a7ba253963bcae6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d24a4ac4fa5559433c6ee24279045ed3c3dbd29a6e3dfba680545fe71fb4bd39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978175"
 ---
-# <a name="updatecancel-method"></a>Update. Cancel (método)
+# <a name="updatecancel-method"></a>Método Update.Cancel
 
 Cancele la actualización.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,8 +57,8 @@ public void Cancel()
 
 #### <a name="reference"></a>Referencia
 
-[Update (clase)](./update-class.md)
+[Actualizar clase](./update-class.md)
 
 [Actualizar miembros](./update-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

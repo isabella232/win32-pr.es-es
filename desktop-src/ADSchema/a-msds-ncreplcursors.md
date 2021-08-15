@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-NC-REPL-cursor
-description: Una lista de asociados de replicación pasados y presentes, y cómo se encuentran los actuales con cada uno de ellos.
+title: Atributo ms-DS-NC-Repl-Cursors
+description: Una lista de asociados de replicación pasados y presentes, y qué tan actuales estamos con cada uno de ellos.
 ms.assetid: febe8614-b68a-4001-b6ae-dae3fe6eb25f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-DS-NC-REPL-cursor
-- Esquema de AD de atributo msDS-NCReplCursors
+- Esquema de AD del atributo ms-DS-NC-Repl-Cursors
+- Esquema de AD del atributo msDS-NCReplCursors
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 555a09520079df624fffb2cb3cb3aa34b81502c2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f9c362e6938437d4fcc02b3d3965aa222d9e855d041492f9ea9eb1247b4fda8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684335"
 ---
-# <a name="ms-ds-nc-repl-cursors-attribute"></a>atributo MS-DS-NC-REPL-cursor
+# <a name="ms-ds-nc-repl-cursors-attribute"></a>Atributo ms-DS-NC-Repl-Cursors
 
-Una lista de asociados de replicación pasados y presentes, y cómo se encuentran los actuales con cada uno de ellos.
+Una lista de asociados de replicación pasados y presentes, y qué tan actuales estamos con cada uno de ellos.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-NC-REPL-cursores                       |
-| Nombre para mostrar de LDAP | msDS-NCReplCursors                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | ms-DS-NC-Repl-Cursors                       |
+| Ldap-Display-Name | msDS-NCReplCursors                          |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema establece este valor.            |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1704                     |
-| System-ID-GUID    | 8a167ce4-f9e8-47eb-8d78-f7fe80abb2cc        |
+| System-Id-Guid    | 8a167ce4-f9e8-47eb-8d78-f7fe80abb2cc        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -43,7 +43,7 @@ Una lista de asociados de replicación pasados y presentes, y cómo se encuentra
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -55,13 +55,13 @@ Una lista de asociados de replicación pasados y presentes, y cómo se encuentra
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | False                           |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -70,19 +70,19 @@ Una lista de asociados de replicación pasados y presentes, y cómo se encuentra
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | False                           |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Una lista de asociados de replicación pasados y presentes, y cómo se encuentra
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | False                           |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -118,13 +118,13 @@ Una lista de asociados de replicación pasados y presentes, y cómo se encuentra
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | False                           |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Una lista de asociados de replicación pasados y presentes, y cómo se encuentra
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | False                           |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Una lista de asociados de replicación pasados y presentes, y cómo se encuentra
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | False                           |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

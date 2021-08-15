@@ -1,17 +1,17 @@
 ---
 description: Tipo MIME.
 ms.assetid: 9f8f42f8-af90-4f2d-a58c-f892139e86b7
-title: System. MIMEType
+title: System.MIMEType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3db5ced29df603f8e5a5d04011f8d5ff99dc876
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 808e947cf877999896fd5a0fc14e85237957ab805ecf143a4c16159345b97a19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118724512"
 ---
-# <a name="systemmimetype"></a>System. MIMEType
+# <a name="systemmimetype"></a>System.MIMEType
 
 Tipo MIME.
 
@@ -32,11 +32,11 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Por ejemplo, un archivo EML tendría un valor [System. MIMEType]() de `message/rfc822` .
+Por ejemplo, un archivo EML tendría un [valor System.MIMEType]() de `message/rfc822` .
 
-En el caso de los archivos multimedia que son compatibles con varios tipos MIME, esta propiedad puede tener un sesgo hacia indicar un tipo MIME que es adecuado para Digital Living Network Alliance (DLNA).
+En el caso de los archivos multimedia que son compatibles con varios tipos MIME, esta propiedad puede tener un sesgo hacia la indicación de un tipo MIME adecuado para Digital Living Network Alliance (DLNA).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -51,7 +51,7 @@ En el caso de los archivos multimedia que son compatibles con varios tipos MIME,
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -63,7 +63,7 @@ En el caso de los archivos multimedia que son compatibles con varios tipos MIME,
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -81,7 +81,7 @@ En el caso de los archivos multimedia que son compatibles con varios tipos MIME,
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Devuelve un declarador de un código de formato de vértice flexible (FVF).
+description: Devuelve un declarador a partir de un código de formato de vértice flexible (FVF).
 ms.assetid: 0272239c-0873-4a5c-b046-541f4ba603f4
-title: Función D3DXDeclaratorFromFVF (D3DX9Mesh. h)
+title: Función D3DXDeclaratorFromFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: de5360c7f9bd28d4c97184f985f06e48ca0002d1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cd7122ccad0e2f12821892c49a08348ffd6cd9d171cc652e5f2f05853fe61e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526187"
 ---
-# <a name="d3dxdeclaratorfromfvf-function"></a>D3DXDeclaratorFromFVF función)
+# <a name="d3dxdeclaratorfromfvf-function"></a>Función D3DXDeclaratorFromFVF
 
-Devuelve un declarador de un código de formato de vértice flexible (FVF).
+Devuelve un declarador a partir de un código de formato de vértice flexible (FVF).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT D3DXDeclaratorFromFVF(
 
 <dl> <dt>
 
-*FVF* \[ de\]
+*FVF* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de [D3DFVF](d3dfvf.md) que describe el FVF desde el que se va a generar la matriz declaradora devuelta.
+Combinación de [D3DFVF](d3dfvf.md) que describe la FVF a partir de la cual se va a generar la matriz declarator devuelta.
 
 </dd> <dt>
 
-*Declaración* \[ de in, out\]
+*Declaración* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describe el formato de vértice de los vértices de malla. El límite superior de esta matriz de declarador es el [**tamaño máximo de \_ FVF \_ decl \_**](./max-fvf-decl-size.md).
+Matriz de [**elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describen el formato de vértice de los vértices de malla. El límite superior de esta matriz declarativa es [**MAX \_ FVF \_ DECL \_ SIZE.**](./max-fvf-decl-size.md)
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describe e
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DXERR \_ INVALIDMESH.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DXERR \_ INVALIDMESH.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

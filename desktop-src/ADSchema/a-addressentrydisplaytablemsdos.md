@@ -1,11 +1,11 @@
 ---
-title: Address-entry-display-Table-atributo MSDOS
-description: La tabla de visualización de MAPI para una entrada de dirección para el cliente de MSDOS.
+title: Atributo Address-Entry-Display-Table-MSDOS
+description: La tabla de presentación de MAPI para una entrada de dirección para el cliente MSDOS.
 ms.assetid: 61377f8c-728d-43ee-8e84-c6b5638d5e1e
 ms.tgt_platform: multiple
 keywords:
-- Address-entry-display-Table-atributo MSDOS esquema de AD
-- addressEntryDisplayTableMSDOS esquema de AD de atributos
+- Esquema de AD del atributo Address-Entry-Display-Table-MSDOS
+- Esquema de AD del atributo addressEntryDisplayTableMSDOS
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25fbb7d84615c79067f5295ac552a13cbbb6a90a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 386c5388116a32193ef8a75e3821fd4312d7a70ba5ce073e1886673589b149a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688695"
 ---
-# <a name="address-entry-display-table-msdos-attribute"></a>Address-entry-display-Table-atributo MSDOS
+# <a name="address-entry-display-table-msdos-attribute"></a>Atributo Address-Entry-Display-Table-MSDOS
 
-La tabla de visualización de MAPI para una entrada de dirección para el cliente de MSDOS.
+La tabla de presentación de MAPI para una entrada de dirección para el cliente MSDOS.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | Address-entry-display-Table-MSDOS                     |
-| Nombre para mostrar de LDAP | addressEntryDisplayTableMSDOS                         |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Address-Entry-Display-Table-MSDOS                     |
+| Ldap-Display-Name | addressEntryDisplayTableMSDOS                         |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.400                                |
-| System-ID-GUID    | 5fd42462-1262-11d0-a060-00aa006c33ed                  |
+| System-Id-Guid    | 5fd42462-1262-11d0-a060-00aa006c33ed                  |
 | Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,13 +55,13 @@ La tabla de visualización de MAPI para una entrada de dirección para el client
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -76,13 +76,13 @@ La tabla de visualización de MAPI para una entrada de dirección para el client
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -97,13 +97,13 @@ La tabla de visualización de MAPI para una entrada de dirección para el client
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -118,13 +118,13 @@ La tabla de visualización de MAPI para una entrada de dirección para el client
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -139,13 +139,13 @@ La tabla de visualización de MAPI para una entrada de dirección para el client
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -160,13 +160,13 @@ La tabla de visualización de MAPI para una entrada de dirección para el client
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |

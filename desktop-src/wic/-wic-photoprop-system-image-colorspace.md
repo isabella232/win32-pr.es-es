@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. Image. ColorSpace.
+description: Directiva de metadatos de fotos para la propiedad System.Image.ColorSpace.
 ms.assetid: 10770f16-8db2-4719-bce3-452f578002ec
-title: Directiva de metadatos de la foto de System. Image. ColorSpace
+title: Directiva de metadatos de fotos System.Image.ColorSpace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b6ef2003d05fa19b958b28950f71ec2d5f73027
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85c7d7c9134a8bd93a12ba6cfb6bd8605e228cb6b745ad4401a94f91a2ba9ff9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710425"
 ---
-# <a name="systemimagecolorspace-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. Image. ColorSpace
+# <a name="systemimagecolorspace-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Image.ColorSpace
 
-La Directiva de metadatos de la fotografía para la propiedad [System. Image. ColorSpace](../properties/props-system-image-colorspace.md) .
+Directiva de metadatos de fotos para [la propiedad System.Image.ColorSpace.](../properties/props-system-image-colorspace.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Image \_ ColorSpace
 
@@ -27,7 +27,7 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI2
 
@@ -37,30 +37,30 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Se concilian los valores de esquemas diferentes.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Path                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 40961} | ushort      |
+| 1     | /app1/ifd/exif/{ushort=40961} | ushort      |
 | 2     | /xmp/exif:ColorSpace          | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Path                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 40961} | ushort      |
+| 1     | /app1/ifd/exif/{ushort=40961} | ushort      |
 | 2     | /xmp/exif:ColorSpace          | unicode     |
 
 
@@ -71,9 +71,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Path                          |
 |-------|-------------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 40961} |
+| 1     | /app1/ifd/exif/{ushort=40961} |
 | 2     | /xmp/exif:colorspace          |
 
 
@@ -82,26 +82,26 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 40961} | ushort      |
+| 1     | /ifd/exif/{ushort=40961} | ushort      |
 | 2     | /ifd/xmp/exif:ColorSpace | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 40961} | ushort      |
+| 1     | /ifd/exif/{ushort=40961} | ushort      |
 | 2     | /ifd/xmp/exif:ColorSpace | unicode     |
 
 
@@ -112,9 +112,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Path                     |
 |-------|--------------------------|
-| 1     | /IFD/Exif/{ushort = 40961} |
+| 1     | /ifd/exif/{ushort=40961} |
 | 2     | /ifd/xmp/exif:colorspace |
 
 
@@ -127,7 +127,7 @@ Se reconcilian los valores de los distintos esquemas.
 
 <dl> <dt>
 
-[System. Image. ColorSpace](../properties/props-system-image-colorspace.md)
+[System.Image.ColorSpace](../properties/props-system-image-colorspace.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
 title: API de implementación del paquete
-description: Obtenga información sobre la API de implementación de paquetes, que puede usar para instalar, actualizar y desinstalar paquetes de aplicaciones en el sistema. Cada paquete de aplicación contiene los archivos que componen una aplicación de Windows y un archivo de manifiesto que describe el software para Windows.
+description: Obtenga información sobre la API de implementación de paquetes, que puede usar para instalar, actualizar y desinstalar paquetes de aplicaciones en el sistema. Cada paquete de aplicación contiene los archivos que constituyen Windows aplicación y un archivo de manifiesto que describe el software que se va a Windows.
 ms.assetid: E2D408E1-6048-4D15-8BF4-69FF6ACF7BD2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14a7559739d721781101fad804ebb040333c71c9
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b5bc1c9fc44487ff2244bee9b27d1ba26677468a2113536763b86e254a23f689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105704931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118814061"
 ---
 # <a name="package-deployment-api"></a>API de implementación del paquete
 
-Obtenga información sobre la API de implementación de paquetes, que puede usar para instalar, actualizar y desinstalar paquetes de aplicaciones en el sistema. Cada paquete de aplicación contiene los archivos que componen una aplicación de Windows y un archivo de manifiesto que describe el software para Windows.
+Obtenga información sobre la API de implementación de paquetes, que puede usar para instalar, actualizar y desinstalar paquetes de aplicaciones en el sistema. Cada paquete de aplicación contiene los archivos que constituyen Windows aplicación y un archivo de manifiesto que describe el software que se va a Windows.
 
 ## <a name="windows-runtime-reference"></a>Referencia de Windows Runtime
 
@@ -26,19 +26,19 @@ Obtenga información sobre la API de implementación de paquetes, que puede usar
 **Ejemplos**
 </dt> <dt>
 
-[Agregar ejemplo de paquete de aplicación (AddPackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerAddPackage)
+[Ejemplo de adición de paquete de aplicación (AddPackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerAddPackage)
 </dt> <dt>
 
-[Ejemplo de enumeración de paquetes de aplicaciones (FindPackages)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackages)
+[Ejemplo de enumeración de paquetes de aplicación (FindPackages)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackages)
 </dt> <dt>
 
 [Enumerar paquetes de aplicación por nombre y ejemplo de publicador (FindPackagesByNameAndPublisher)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByNameAndPublisher)
 </dt> <dt>
 
-[Ejemplo de enumeración de paquetes de aplicaciones por SID de usuario (FindPackagesByUserSecurityId)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByUserSecurityIda)
+[Enumerar paquetes de aplicación por ejemplo de SID de usuario (FindPackagesByUserSecurityId)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByUserSecurityIda)
 </dt> <dt>
 
-[Quitar el ejemplo de paquete de aplicación (RemovePackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerRemovePackage)
+[Ejemplo de eliminación del paquete de aplicación (RemovePackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerRemovePackage)
 </dt> <dt>
 
 **Conceptos**
@@ -62,6 +62,6 @@ Obtenga información sobre la API de implementación de paquetes, que puede usar
 [API de consulta de paquetes](functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

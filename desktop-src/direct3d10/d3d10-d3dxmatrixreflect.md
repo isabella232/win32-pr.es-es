@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f96224c881dcd5db2cc1c356003ab96e8a626900
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c744c529025e0bfa1a619d41cc3e564c2be3203887b1ebbbbe047542ccce3370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118810040"
 ---
 # <a name="d3dxmatrixreflect-function-d3dx10mathh"></a>Función D3DXMatrixReflect (D3DX10Math.h)
 
@@ -69,9 +69,9 @@ Puntero a una estructura D3DXMATRIX que refleja el sistema de coordenadas sobre 
 
 Esta función normaliza la ecuación del plano antes de crear la matriz reflejada.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixReflect se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixReflect se puede usar como parámetro para otra función.
 
-Esta función usa la siguiente fórmula para calcular la matriz devuelta.
+Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 ```

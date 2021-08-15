@@ -1,9 +1,9 @@
 ---
 title: usesgetlasterror (atributo)
-description: El atributo \ usesgetlasterror \ indica al llamador que puede llamar a GetLastError para recuperar el código de error.
+description: El atributo \ usesgetlasterror\ indica al autor de la llamada que puede llamar a GetLastError para recuperar el código de error.
 ms.assetid: 8e9ab8b5-f446-4aab-bb40-b6f78799e18e
 keywords:
-- usesgetlasterror (atributo) MIDL
+- atributo usesgetlasterror MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0f403430f70fde71696ec2a35a34161f08bada9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 239486792eb218d51c305f9955331e90c6c165586153dab167f2e19d3a0324e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103790005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641040"
 ---
 # <a name="usesgetlasterror-attribute"></a>usesgetlasterror (atributo)
 
-El atributo **\[ \] usesgetlasterror** señala al llamador que puede llamar a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar el código de error.
+El **\[ atributo usesgetlasterror \]** indica al autor de la llamada que puede llamar a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar el código de error.
 
 ``` syntax
 [
@@ -37,49 +37,49 @@ module module-name
 
 <dl> <dt>
 
-*module: atributos* 
+*module-attributes* 
 </dt> <dd>
 
-Cero o más atributos de MIDL que se aplicarán al [**módulo**](module.md).
+Cero o más atributos MIDL que se aplicarán al [**módulo**](module.md).
 
 </dd> <dt>
 
-*nombre del módulo* 
+*module-name* 
 </dt> <dd>
 
 Nombre del identificador del [**módulo**](module.md).
 
 </dd> <dt>
 
-*identificador de entrada* 
+*entry-id* 
 </dt> <dd>
 
-Especifica el punto de entrada del módulo, el nombre de la función o el número de identificación de entero.
+Especifica el punto de entrada del módulo: nombre de función o número de identificación de enteros.
 
 </dd> <dt>
 
-*otros: atributos* 
+*otros atributos* 
 </dt> <dd>
 
-Cero o más atributos de MIDL que se aplicarán al procedimiento remoto.
+Cero o más atributos MIDL que se aplicarán al procedimiento remoto.
 
 </dd> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
-El tipo de datos que el procedimiento remoto devolverá tras su finalización.
+Tipo de los datos que devolverá el procedimiento remoto tras la finalización.
 
 </dd> <dt>
 
 *nombre-de-la-función* 
 </dt> <dd>
 
-Nombre del procedimiento remoto tal y como se define en el archivo IDL.
+Nombre del procedimiento remoto tal como se define en el archivo IDL.
 
 </dd> <dt>
 
-*lista de parámetros* 
+*param-list* 
 </dt> <dd>
 
 Cero o más parámetros para el procedimiento remoto.
@@ -88,7 +88,7 @@ Cero o más parámetros para el procedimiento remoto.
 
 ## <a name="remarks"></a>Observaciones
 
-El atributo **\[ \] usesgetlasterror** se puede establecer en un punto de entrada del módulo, si ese punto de entrada utiliza la función de Windows [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para devolver los códigos de error. El atributo indica al llamador que, si se produce un error al llamar a esa función, el autor de la llamada puede llamar a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar el código de error.
+El **\[ atributo \] usesgetlasterror** se puede establecer en un punto de entrada de módulo, si ese punto de entrada usa la función [**Windows SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para devolver códigos de error. El atributo indica al autor de la llamada que, si se produce un error al llamar a esa función, el autor de la llamada puede llamar a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar el código de error.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -120,9 +120,9 @@ module MyModule
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

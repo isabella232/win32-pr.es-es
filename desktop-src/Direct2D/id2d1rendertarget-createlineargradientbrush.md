@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1RenderTarget CreateLinearGradientBrush (D2d1. h)
-description: Crea un objeto ID2D1LinearGradientBrush para dibujar áreas con un degradado lineal.
+title: Métodos ID2D1RenderTarget CreateLinearGradientBrush (D2d1.h)
+description: Crea un objeto ID2D1LinearGradientBrush para pintar áreas con un degradado lineal.
 ms.assetid: dc07113f-ff93-4b0f-8328-02dd481dccb0
 keywords:
-- Métodos de CreateLinearGradientBrush Direct2D
+- Métodos CreateLinearGradientBrush de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 428fcb44ddf50af7b3e78c28e359430bceee2f79
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 74e3ba102b24b330f176189a66eae7ac9cd74ece194900f3d8997675bf486641
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966875"
 ---
-# <a name="id2d1rendertargetcreatelineargradientbrush-methods"></a>ID2D1RenderTarget:: CreateLinearGradientBrush (métodos)
+# <a name="id2d1rendertargetcreatelineargradientbrush-methods"></a>Métodos ID2D1RenderTarget::CreateLinearGradientBrush
 
-Crea un objeto [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) para dibujar áreas con un degradado lineal.
+Crea un [**objeto ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) para pintar áreas con un degradado lineal.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,15 +29,15 @@ Crea un objeto [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id
 
 | Método                                                                                                                                                                                                                       | Descripción                                                                                                                                                                      |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateLinearGradientBrush (D2D1 \_ \_ \_ propiedades de pincel de degradado lineal \_&, ID2D1GradientStopCollection \* , ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush))                            | Crea un [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) que contiene los delimitadores de degradado especificados, no tiene ninguna transformación y tiene una opacidad base de 1,0. <br/> |
-| [**CreateLinearGradientBrush (D2D1 \_ \_ propiedades de \_ pincel de degradado lineal \_&, \_ propiedades del pincel de D2D1 \_&, ID2D1GradientStopCollection \* , ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush))   | Crea un [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) que contiene los delimitadores de degradado especificados y tiene la transformación y la opacidad base especificadas. <br/> |
-| [**CreateLinearGradientBrush ( \_ \_ \_ propiedades del pincel de degradado lineal \_ de D2D1 \* , \_ propiedades del pincel de D2D1 \_ \* , ID2D1GradientStopCollection \* , ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush)) | Crea un [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) que contiene los delimitadores de degradado especificados y tiene la transformación y la opacidad base especificadas. <br/> |
+| [**CreateLinearGradientBrush(D2D1 \_ LINEAR GRADIENT BRUSH PROPERTIES \_ \_ \_&,ID2D1GradientStopCollection \* ,ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush))                            | Crea un [**objeto ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) que contiene los delimitadores de degradado especificados, no tiene ninguna transformación y tiene una opacidad base de 1,0. <br/> |
+| [**CreateLinearGradientBrush(D2D1 \_ LINEAR GRADIENT BRUSH PROPERTIES \_ \_ \_&,D2D1 \_ BRUSH PROPERTIES \_&,ID2D1GradientStopCollection \* ,ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush))   | Crea un [**objeto ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) que contiene los delimitadores de degradado especificados y tiene la transformación y opacidad base especificadas. <br/> |
+| [**CreateLinearGradientBrush(D2D1 \_ LINEAR GRADIENT BRUSH PROPERTIES \_ \_ \_ \* ,D2D1 \_ BRUSH PROPERTIES \_ \* ,ID2D1GradientStopCollection \* ,ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush)) | Crea un [**objeto ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) que contiene los delimitadores de degradado especificados y tiene la transformación y opacidad base especificadas. <br/> |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver un ejemplo en el que se muestra cómo crear una colección de delimitadores de degradado y cómo usarla para definir un degradado lineal, vea [Cómo crear un pincel de degradado lineal](how-to-create-a-linear-gradient-brush.md).
+Para obtener un ejemplo en el que se muestra cómo crear una colección de detenciones de degradado y usarla para definir un degradado lineal, vea [How to Create a Linear Gradient Brush](how-to-create-a-linear-gradient-brush.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,13 +45,13 @@ Para ver un ejemplo en el que se muestra cómo crear una colección de delimitad
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_OBJECTLIST miembros'
-title: Miembros de JET_OBJECTLIST
+description: 'Más información sobre: JET_OBJECTLIST miembros'
+title: JET_OBJECTLIST miembros
 TOCTitle: JET_OBJECTLIST members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_OBJECTLIST
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectlist_members(v=EXCHG.10)
 ms:contentKeyID: 55103765
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 00151423255a6b937a74fe4cd6cc6fcec0b484b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b91f29bdfe3688cd0ce732237d73cb6c2bd21987a61b37fa64c23649309583a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104552006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766001"
 ---
-# <a name="jet_objectlist-members"></a>Miembros de JET_OBJECTLIST
+# <a name="jet_objectlist-members"></a>JET_OBJECTLIST miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Información acerca de una tabla temporal que contiene información sobre todas las tablas de una base de datos determinada.
+Información sobre una tabla temporal que contiene información sobre todas las tablas de una base de datos determinada.
 
-El tipo de [JET_OBJECTLIST](./jet-objectlist-class.md) expone los siguientes miembros.
+El [JET_OBJECTLIST](./jet-objectlist-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -69,12 +69,12 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335210(v=exchg.10).md">columnidflags</a></td>
-<td>Obtiene el columnid de la columna de la tabla temporal que almacena las marcas de tabla (por ejemplo, la marca de la tabla del sistema).</td>
+<td>Obtiene el columnid de la columna de la tabla temporal que almacena las marcas de tabla (por ejemplo, la marca de tabla del sistema).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335211(v=exchg.10).md">columnidgrbit</a></td>
-<td>Obtiene el columnid de la columna de la tabla temporal que almacena el grbits que se usa cuando se creó la tabla.</td>
+<td>Obtiene el columnid de la columna de la tabla temporal que almacena los bits grbits usados cuando se creó la tabla.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -93,8 +93,8 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn335218(v=exchg.10).md">TABLEID</a></td>
-<td>Obtiene TABLEID de la tabla temporal. Debe cerrarse cuando la tabla ya no se necesite.</td>
+<td><a href="dn335218(v=exchg.10).md">tableid</a></td>
+<td>Obtiene el tableid de la tabla temporal. Debe cerrarse cuando la tabla ya no sea necesaria.</td>
 </tr>
 </tbody>
 </table>
@@ -120,7 +120,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -130,7 +130,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -141,7 +141,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335216(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn335206(v=exchg.10).md">JET_OBJECTLIST</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el objeto <a href="dn335206(v=exchg.10).md">JET_OBJECTLIST</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -153,6 +153,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_OBJECTLIST (clase)](./jet-objectlist-class.md)
+[JET_OBJECTLIST clase](./jet-objectlist-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_SPACEHINTS. cbMaxExtent'
-title: Propiedad JET_SPACEHINTS. cbMaxExtent
+description: 'Más información sobre: JET_SPACEHINTS.cbMaxExtent'
+title: JET_SPACEHINTS.cbMaxExtent, propiedad
 TOCTitle: 'cbMaxExtent property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SPACEHINTS.cbMaxExtent
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_spacehints.cbmaxextent(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8d95ada63fc6269dce6e21c4a7f3db04d1732a7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a73ada68d58b8c971393ddcbdf807aa40d45a40d5dfd6fc849bf88249269bc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979255"
 ---
-# <a name="jet_spacehintscbmaxextent-property"></a>Propiedad JET_SPACEHINTS. cbMaxExtent
+# <a name="jet_spacehintscbmaxextent-property"></a>JET_SPACEHINTS.cbMaxExtent, propiedad
 
-Obtiene o establece el valor que establece el límite superior de ulGrowth. Este valor se encuentra en bytes.
+Obtiene o establece el valor que establece el límite máximo de ulGrowth. Este valor está en bytes.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int cbMaxExtent { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_SPACEHINTS (clase)](./jet-spacehints-class.md)
+[JET_SPACEHINTS clase](./jet-spacehints-class.md)
 
-[Miembros de JET_SPACEHINTS](./jet-spacehints-members.md)
+[JET_SPACEHINTS miembros](./jet-spacehints-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

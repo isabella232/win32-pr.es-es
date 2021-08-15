@@ -1,7 +1,7 @@
 ---
-description: Cifra un único paquete de protocolo de Capa de sockets seguros (SSL).
+description: Cifra un único paquete Capa de sockets seguros protocolo de seguridad (SSL).
 ms.assetid: 1002158b-1a4f-4461-978f-b221ef6332e0
-title: Función SslEncryptPacket (Sslprovider. h)
+title: Función SslEncryptPacket (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: e839b37e839fd09d5df5f9902474b7ce7c4c74a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74c489cae777b6ca7ac93020fb80ab198622fae97640c09cbd99544c2dafa4e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906667"
 ---
-# <a name="sslencryptpacket-function"></a>SslEncryptPacket función)
+# <a name="sslencryptpacket-function"></a>Función SslEncryptPacket
 
-La función **SslEncryptPacket** cifra un único paquete de [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+La **función SslEncryptPacket** cifra un único [*Capa de sockets seguros de protocolo de cifrado*](/windows/desktop/SecGloss/s-gly) (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,10 +48,10 @@ SECURITY_STATUS WINAPI SslEncryptPacket(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor del protocolo SSL.
+Identificador de la instancia del proveedor de protocolo SSL.
 
 </dd> <dt>
 
@@ -62,60 +62,60 @@ Identificador de la clave que se usa para cifrar el paquete.
 
 </dd> <dt>
 
-*pbInput* \[ de\]
+*pbInput* \[ En\]
 </dt> <dd>
 
-Un puntero al búfer que contiene el paquete que se va a cifrar.
+Puntero al búfer que contiene el paquete que se va a cifrar.
 
 </dd> <dt>
 
-*cbInput* \[ de\]
+*cbInput* \[ En\]
 </dt> <dd>
 
-La longitud, en bytes, del búfer *pbInput* .
+Longitud, en bytes, del *búfer pbInput.*
 
 </dd> <dt>
 
-*pbOutput* \[ enuncia\]
+*pbOutput* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer para recibir el paquete cifrado.
+Puntero a un búfer para recibir el paquete cifrado.
 
 </dd> <dt>
 
-*cbOutput* \[ de\]
+*cbOutput* \[ En\]
 </dt> <dd>
 
-La longitud, bytes, del búfer *pbOutput* .
+Longitud, bytes, del *búfer pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ enuncia\]
+*pwResult* \[ out\]
 </dt> <dd>
 
-Número de bytes escritos en el búfer de *pbOutput* .
+Número de bytes escritos en el *búfer pbOutput.*
 
 </dd> <dt>
 
-*SequenceNumber* \[ de\]
+*SequenceNumber* \[ En\]
 </dt> <dd>
 
-El número de secuencia que corresponde a este paquete.
+Número de secuencia que corresponde a este paquete.
 
 </dd> <dt>
 
-*dwContentType* \[ de\]
+*dwContentType* \[ En\]
 </dt> <dd>
 
-El tipo de contenido que corresponde a este paquete, que especifica el protocolo de nivel superior que se usa para procesar el paquete delimitado.
+Tipo de contenido que corresponde a este paquete, que especifica el protocolo de nivel superior utilizado para procesar el paquete incluido.
 
 
 
 | Value                                                                                                                                                                                                                                           | Significado                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| <span id="CT_CHANGE_CIPHER_SPEC"></span><span id="ct_change_cipher_spec"></span><dl> <dt>**CT \_ CAMBIAR \_ \_ especificación de cifrado**</dt> <dt>20</dt> </dl> | Indica un cambio en la estrategia de cifrado.<br/>                         |
+| <span id="CT_CHANGE_CIPHER_SPEC"></span><span id="ct_change_cipher_spec"></span><dl> <dt>**CT \_ CAMBIAR \_ LA \_ ESPECIFICACIÓN**</dt> <dt>DE CIFRADO 20</dt> </dl> | Indica un cambio en la estrategia de cifrado.<br/>                         |
 | <span id="CT_ALERT"></span><span id="ct_alert"></span><dl> <dt>**CT \_ ALERTA**</dt> <dt>21</dt> </dl>                                          | Indica que el paquete incluido contiene una alerta.<br/>                 |
-| <span id="CT_HANDSHAKE"></span><span id="ct_handshake"></span><dl> <dt>**CT \_ Protocolo de enlace**</dt> <dt>22</dt> </dl>                              | Indica que el paquete incluido es parte del Protocolo de enlace.<br/> |
+| <span id="CT_HANDSHAKE"></span><span id="ct_handshake"></span><dl> <dt>**CT \_ PROTOCOLO DE ENLACE**</dt> <dt>22</dt> </dl>                              | Indica que el paquete incluido forma parte del protocolo de protocolo de enlace.<br/> |
 | <span id="CT_APPLICATIONDATA"></span><span id="ct_applicationdata"></span><dl> <dt>**CT \_ APPLICATIONDATA**</dt> <dt>23</dt> </dl>            | Indica que el paquete contiene datos de la aplicación.<br/>                  |
 
 
@@ -124,7 +124,7 @@ El tipo de contenido que corresponde a este paquete, que especifica el protocolo
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -133,17 +133,17 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                    | Descripción                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
 
 
 
@@ -155,9 +155,9 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

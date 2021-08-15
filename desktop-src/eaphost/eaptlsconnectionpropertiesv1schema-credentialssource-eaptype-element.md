@@ -1,6 +1,6 @@
 ---
 title: Elemento CredentialsSource (EapType)
-description: Obtenga información sobre el elemento CredentialsSource (EapType). Este elemento contiene información acerca de la ubicación del certificado EAP-TLS.
+description: Obtenga información sobre el elemento CredentialsSource (EapType). Este elemento contiene información sobre la ubicación del certificado EAP-TLS.
 ms.assetid: 6ef48e5e-7c71-472f-ab01-0a43a97ecd96
 keywords:
 - Elemento CredentialsSource EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d68eccf44b7e2c248e366d8e3d8f05f4e7dd4774
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 3d3591caf2a2e6a51099afb9a823c64bf49af32a6c6726771d8a24a24968b485
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105705029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984115"
 ---
 # <a name="credentialssource-eaptype-element"></a>Elemento CredentialsSource (EapType)
 
-El elemento **CredentialsSource (EapType)** contiene información sobre la ubicación del certificado EAP-TLS.
+El **elemento CredentialsSource (EapType)** contiene información sobre la ubicación del certificado EAP-TLS.
 
 ``` syntax
 <xs:element name="CredentialsSource"
@@ -31,24 +31,24 @@ El elemento **CredentialsSource (EapType)** contiene información sobre la ubica
  />
 ```
 
-El elemento **CredentialsSource** se define mediante el elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+El **elemento CredentialsSource** se define mediante el [**elemento EapType.**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **CredentialSource** es opcional.
+El **elemento CredentialSource** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

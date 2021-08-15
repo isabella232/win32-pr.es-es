@@ -1,9 +1,9 @@
 ---
 title: Atributo id
-description: El atributo \ ID \ especifica un DISPID para una función miembro (ya sea una propiedad o un método, en una interfaz o dispinterface).
+description: El atributo \ id\ especifica un DISPID para una función miembro (ya sea una propiedad o un método, en una interfaz o dispinterface).
 ms.assetid: 6f1be049-81b4-4aa2-a893-5dd79bb4d63c
 keywords:
-- identificador del atributo MIDL
+- atributo id MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07c57d8ea818bbd7b8fd5bd35816e6b7227eb917
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0a4d783265ebfcf9dca454c80c39031dc0c37dfb63a8749b4d0e6299a510d91a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643071"
 ---
 # <a name="id-attribute"></a>Atributo id
 
-El atributo **\[ ID \]** especifica un DISPID para una función miembro (ya sea una propiedad o un método, en una interfaz o dispinterface).
+El **\[ atributo id \]** especifica un DISPID para una función miembro (ya sea una propiedad o un método, en una interfaz o dispinterface).
 
 ``` syntax
 [id(id-num) [,optional-attribute-list]] return-type function-name(optional-parameter-list)
@@ -31,21 +31,21 @@ El atributo **\[ ID \]** especifica un DISPID para una función miembro (ya sea 
 
 <dl> <dt>
 
-*identificador: número* 
+*id-num* 
 </dt> <dd>
 
 DISPID para la función.
 
 </dd> <dt>
 
-*opcional-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de cero o más atributos de la interfaz de MIDL.
+Especifica una lista de cero o más atributos de interfaz MIDL.
 
 </dd> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
@@ -59,7 +59,7 @@ Especifica el nombre de la función en el archivo IDL.
 
 </dd> <dt>
 
-*opcional-parameter-list* 
+*optional-parameter-list* 
 </dt> <dd>
 
 Cero o más parámetros de función.
@@ -68,11 +68,11 @@ Cero o más parámetros de función.
 
 ## <a name="remarks"></a>Observaciones
 
-Utilice el atributo **\[ \] ID** cuando desee asignar un DISPID estándar (como el \_ valor de DISPID, el DISPID NEWENUM, \_ etc.) a un método o propiedad, o al implementar su propio **IDispatch:: Invoke** en lugar de delegar en **DispInvoke** / **ITypeInfo:: Invoke**.
+Use el atributo **\[ id \]** cuando desee asignar un DISPID estándar (como DISPID VALUE, DISPID NEWENUM, etc.) a un método o propiedad, o cuando implemente su propio \_ \_ **IDispatch::Invoke** en lugar de delegar a **DispInvoke** / **ITypeInfo::Invoke**.
 
-Si no utiliza el atributo **\[ ID \]** en una interfaz, el compilador MIDL le asignará un DispId. Sin embargo, cuando se especifica una dispinterface mediante propiedades y métodos, se debe especificar un DISPID para cada propiedad y método.
+Si no usa el atributo **\[ id \]** en una interfaz, el compilador MIDL le asignará un DISPID. Sin embargo, cuando se especifica una interfaz dispinterface mediante propiedades y métodos, debe especificar un DISPID para cada propiedad y método.
 
-El *identificador-NUM* es un valor entero positivo de 32 bits. Los identificadores negativos se reservan para su uso con la automatización.
+*Id-num es* un valor entero positivo de 32 bits. Los ID negativos están reservados para que los use Automation.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -91,13 +91,13 @@ interface IKnown : IUnknown
 
 <dl> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -106,6 +106,6 @@ interface IKnown : IUnknown
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

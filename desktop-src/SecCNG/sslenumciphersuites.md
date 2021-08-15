@@ -1,7 +1,7 @@
 ---
-description: Enumera los conjuntos de cifrado admitidos por un proveedor de protocolo de protocolo Capa de sockets seguros (SSL).
+description: Enumera los conjuntos de cifrado admitidos por un proveedor Capa de sockets seguros protocolo de cifrado (SSL).
 ms.assetid: c12bc422-71c9-44f4-abf7-76902b19d3bd
-title: Función SslEnumCipherSuites (Sslprovider. h)
+title: Función SslEnumCipherSuites (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 8991842f38f3d3dc3d721cd30ebfb857ad20308a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d9fb40bf6bfebff6d0659640dfb68b718586ac822c8a779a56de300b8d55b73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906697"
 ---
-# <a name="sslenumciphersuites-function"></a>SslEnumCipherSuites función)
+# <a name="sslenumciphersuites-function"></a>Función SslEnumCipherSuites
 
-La función **SslEnumCipherSuites** enumera los conjuntos de cifrado admitidos por un proveedor de protocolo de [*Protocolo capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+La **función SslEnumCipherSuites** enumera los conjuntos de cifrado admitidos por un [*proveedor*](/windows/desktop/SecGloss/s-gly) Capa de sockets seguros protocolo de cifrado (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,31 +43,31 @@ SECURITY_STATUS WINAPI SslEnumCipherSuites(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
 Identificador de la instancia del proveedor del protocolo SSL.
 
 </dd> <dt>
 
-*hPrivateKey* \[ en, opcional\]
+*hPrivateKey* \[ in, opcional\]
 </dt> <dd>
 
-Identificador de una [*clave privada*](/windows/desktop/SecGloss/p-gly). Cuando se especifica una clave privada, **SslEnumCipherSuites** enumera los conjuntos de cifrado que son compatibles con la clave privada. Por ejemplo, si la clave privada es una clave DSS, solo \_ se devuelven los conjuntos de cifrado de DSS DHE. Si la clave privada es una clave RSA, pero no admite operaciones de descifrado sin procesar, no se devuelven los conjuntos de cifrado de SSL2.
+Identificador de una [*clave privada.*](/windows/desktop/SecGloss/p-gly) Cuando se especifica una clave privada, **SslEnumCipherSuites** enumera los conjuntos de cifrado que son compatibles con la clave privada. Por ejemplo, si la clave privada es una clave DSS, solo se devuelven los conjuntos de cifrado \_ DSS DHE. Si la clave privada es una clave RSA, pero no admite operaciones de descifrado sin procesar, no se devuelven los conjuntos de cifrado SSL2.
 
-Establezca este parámetro en **null** cuando no especifique una clave privada.
+Establezca este parámetro en **NULL** cuando no se especifique una clave privada.
 
 > [!Note]  
-> Un identificador *hPrivateKey* se obtiene mediante una llamada a la función [**SslOpenPrivateKey**](sslopenprivatekey.md) . No se admiten los identificadores obtenidos de la función [**NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) .
+> Se *obtiene un identificador hPrivateKey* llamando a la función [**SslOpenPrivateKey.**](sslopenprivatekey.md) No se admiten los identificadores obtenidos de la función [**NCryptOpenKey.**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey)
 
  
 
 </dd> <dt>
 
-*ppCipherSuite* \[ enuncia\]
+*ppCipherSuite* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ \_ \_ conjunto de cifrado SSL de NCRYPT**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**) para recibir la dirección del siguiente conjunto de cifrado de la lista.
+Puntero a una estructura [**NCRYPT \_ SSL CIPHER \_ \_ SUITE**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**) para recibir la dirección del siguiente conjunto de cifrado de la lista.
 
 </dd> <dt>
 
@@ -76,13 +76,13 @@ Puntero a una estructura [**de \_ \_ \_ conjunto de cifrado SSL de NCRYPT**](htt
 
 Puntero a un búfer que indica la posición actual en la lista de conjuntos de cifrado.
 
-Establezca el puntero en **null** en la primera llamada a **SslEnumCipherSuites**. En cada llamada subsiguiente, pase el valor sin modificar de nuevo a **SslEnumCipherSuites**.
+Establezca el puntero en **NULL en** la primera llamada a **SslEnumCipherSuites.** En cada llamada posterior, vuelva a pasar el valor sin modificar a **SslEnumCipherSuites.**
 
-Cuando no hay más conjuntos de cifrado disponibles, debe liberar *ppEnumState* llamando a la función [**SslFreeBuffer**](sslfreebuffer.md) .
+Cuando no haya más conjuntos de cifrado disponibles, debe liberar *ppEnumState* llamando a la [**función SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -91,19 +91,19 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                    | Descripción                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**NTE \_ NO hay \_ memoria**</dt> <dt>0x8009000EL</dt> </dl>      | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/>                     |
-| <dl> <dt>**NTE \_ NO hay \_ más \_ elementos**</dt> <dt>0x8009002AL</dt> </dl> | No se admite ningún conjunto de cifrado adicional.<br/>                    |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>      | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/>                     |
+| <dl> <dt>**NTE \_ NO \_ MORE \_ ITEMS**</dt> <dt>0x8009002AL</dt> </dl> | No se admiten conjuntos de cifrado adicionales.<br/>                    |
 
 
 
@@ -111,7 +111,7 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para enumerar todos los conjuntos de cifrado admitidos por el proveedor SSL, llame a la función **SslEnumCipherSuites** en un bucle hasta que NTE no se devuelvan **\_ \_ más \_ elementos** .
+Para enumerar todos los conjuntos de cifrado admitidos por el proveedor SSL, llame a la función **SslEnumCipherSuites** en un bucle hasta que **se devuelva NTE \_ NO MORE \_ \_ ITEMS.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -119,10 +119,10 @@ Para enumerar todos los conjuntos de cifrado admitidos por el proveedor SSL, lla
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Ncrypt. lib</dt> </dl>    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Ncrypt.lib</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 
@@ -131,7 +131,7 @@ Para enumerar todos los conjuntos de cifrado admitidos por el proveedor SSL, lla
 
 <dl> <dt>
 
-[**\_conjunto de \_ cifrado SSL de NCRYPT \_**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**)
+[**CONJUNTO DE CIFRADO SSL NCRYPT \_ \_ \_**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**)
 </dt> </dl>
 
  

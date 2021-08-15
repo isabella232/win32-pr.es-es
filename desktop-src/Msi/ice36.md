@@ -1,31 +1,31 @@
 ---
-description: ICE36 valida que cada icono de la tabla de iconos aparece al menos una vez en la propiedad ARPPRODUCTICON o en las tablas Class, ProgId o Shortcut.
+description: ICE36 valida que cada icono de la tabla Icono aparece al menos una vez en la propiedad ARPPRODUCTICON o en las tablas Class, ProgId o Shortcut.
 ms.assetid: d502c0a9-17e5-467a-8b02-8b254e77b96b
 title: ICE36
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7f24eebc1b591edde418c59b6765d7ee91a00dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97c3d951e90ac9f3dc46a564757c1a1d5a1737bf054740e3109a26c8c7b91055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635308"
 ---
 # <a name="ice36"></a>ICE36
 
-ICE36 valida que cada icono de la tabla de iconos aparece al menos una vez en la propiedad [**ARPPRODUCTICON**](arpproducticon.md) o en las tablas [Class](class-table.md), [ProgID](progid-table.md)o [Shortcut](shortcut-table.md) .
+ICE36 valida que todos los iconos de la tabla Icono aparecen al menos una vez en la [**propiedad ARPPRODUCTICON**](arpproducticon.md) o en las tablas [Class](class-table.md), [ProgId](progid-table.md) [o Shortcut.](shortcut-table.md)
 
-Durante el anuncio, el instalador instala todos los iconos que aparecen en la [tabla de iconos](icon-table.md) en el equipo del usuario. Tener iconos sin usar en la tabla de iconos no impide que la instalación se ejecute, pero sí aumenta innecesariamente el tamaño del archivo. msi y la hora y el espacio necesarios para anunciar una característica.
+Durante el anuncio, el instalador instala todos los iconos enumerados en la [tabla Icono](icon-table.md) en el equipo del usuario. Tener iconos sin usar en la tabla Icono no impide que la instalación se ejecute, pero aumenta innecesariamente el tamaño del archivo .msi y el tiempo y el espacio necesarios para anunciar una característica.
 
-Si no se hace referencia a un icono en la propiedad o la tabla y no se proporciona ninguna interfaz de usuario para crear una referencia en tiempo de ejecución, debe quitar el icono para lograr un mejor rendimiento.
+Si no se hace referencia a un icono en la propiedad o tabla y no se proporciona ninguna interfaz de usuario para crear una referencia en tiempo de ejecución, debe quitar el icono para lograr un mejor rendimiento.
 
 ## <a name="result"></a>Resultado
 
-ICE36 envía un mensaje si hay un icono en la tabla de iconos al que no se hace referencia en las tablas [Class](class-table.md), [ProgID](progid-table.md)o [Shortcut](shortcut-table.md) y si no se proporciona ninguna interfaz de usuario para crear dicha referencia en tiempo de ejecución.
+ICE36 publica un mensaje si hay un icono en la tabla Icono al [](shortcut-table.md) que no se hace referencia en las tablas Clase [,](class-table.md) [ProgId](progid-table.md)o Acceso directo y si no se proporciona ninguna interfaz de usuario para crear dicha referencia en tiempo de ejecución.
 
 ## <a name="example"></a>Ejemplo
 
-ICE36 notifica el siguiente error para el ejemplo que se muestra.
+ICE36 notifica el siguiente error para el ejemplo mostrado.
 
 ``` syntax
 Icon Bloat. Icon Icon4 is not used in the Class, Shortcut, or ProgID table. This adversely affects performance.
@@ -35,12 +35,12 @@ Icon Bloat. Icon Icon4 is not used in the Class, Shortcut, or ProgID table. This
 
 
 
-| Nombre  | Datos     |
+| Nombre  | data     |
 |-------|----------|
-| Icon1 | Control1 |
-| Icon2 | Control2 |
-| Icon3 | Control3 |
-| Icon4 | Control4 |
+| Icono1 | Control1 |
+| Icono2 | Control2 |
+| Icono3 | Control3 |
+| Icono4 | Control4 |
 
 
 
@@ -70,13 +70,13 @@ Icon Bloat. Icon Icon4 is not used in the Class, Shortcut, or ProgID table. This
 
  
 
-[Tabla de acceso directo](shortcut-table.md) (parcial)
+[Tabla de métodos abreviados](shortcut-table.md) (parcial)
 
 
 
 | Acceso directo  | Icono\_ |
 |-----------|--------|
-| Shortcut1 | Icon2  |
+| Acceso directo1 | Icono2  |
 
 
 

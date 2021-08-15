@@ -1,9 +1,9 @@
 ---
-title: Propiedad SplitButtonGallery. MenuLayout
-description: Representa un contenedor para los diseños de menú desplegable de la galería de botones de expansión.
+title: Propiedad SplitButtonGallery.MenuLayout
+description: Representa un contenedor para los diseños de menú desplegable de la Galería de botones divididos.
 ms.assetid: 4bebdff6-16ea-4cf3-adc7-9b86ea200e81
 keywords:
-- SplitButtonGallery. MenuLayout (propiedad) cinta de Windows
+- Propiedad SplitButtonGallery.MenuLayout Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04428c14b5e47795da47e5c03970610cd08a6e8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f40cf184d6122fc40041cfb77953bba2b7950d9d1a957d99aae659633ee5c194
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118706903"
 ---
-# <a name="splitbuttongallerymenulayout-property"></a>Propiedad SplitButtonGallery. MenuLayout
+# <a name="splitbuttongallerymenulayout-property"></a>Propiedad SplitButtonGallery.MenuLayout
 
-Representa un contenedor para los diseños de menú desplegable de la [Galería de botones de expansión](windowsribbon-controls-splitbuttongallery.md) .
+Representa un contenedor para los [diseños](windowsribbon-controls-splitbuttongallery.md) de menú desplegable de la Galería de botones divididos.
 
 ## <a name="usage"></a>Uso
 
@@ -41,8 +41,8 @@ No hay atributos.
 
 | Elemento                                                                           | Descripción                                    |
 |-----------------------------------------------------------------------------------|------------------------------------------------|
-| [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)<br/>         | Debe aparecer exactamente una vez<br/> <br/> |
-| [**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md)<br/> | Debe aparecer exactamente una vez<br/> <br/> |
+| [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)<br/>         | Debe producirse exactamente una vez<br/> <br/> |
+| [**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md)<br/> | Debe producirse exactamente una vez<br/> <br/> |
 
 
 
@@ -60,18 +60,18 @@ No hay atributos.
 
 Opcional.
 
-Puede aparecer como máximo una vez por cada elemento [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Puede producirse como máximo una vez para cada [**elemento SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 > [!Note]  
-> Se permite un máximo de un elemento secundario ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
+> Se permite un máximo de un elemento secundario ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de la [Galería de botones de división](windowsribbon-controls-splitbuttongallery.md).
+En el ejemplo siguiente se muestra el marcado básico para la Galería [de botones de división](windowsribbon-controls-splitbuttongallery.md).
 
-En esta sección de código se muestra la declaración de control **SplitButtonGallery. MenuLayout** .
+En esta sección de código se muestra la declaración de control **SplitButtonGallery.MenuLayout.**
 
 
 ```XML
@@ -104,8 +104,8 @@ En esta sección de código se muestra la declaración de control **SplitButtonG
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -113,7 +113,7 @@ En esta sección de código se muestra la declaración de control **SplitButtonG
 
 <dl> <dt>
 
-[Control Galería de botones de expansión](windowsribbon-controls-splitbuttongallery.md)
+[Control Split Button Gallery (Galería de botones de división)](windowsribbon-controls-splitbuttongallery.md)
 </dt> <dt>
 
 [Trabajar con galerías](ribbon-controls-galleries.md)

@@ -1,19 +1,19 @@
 ---
-description: Cadena que indica el estado de inicio de sesión de un usuario de una identidad.
+description: Cadena que indica el estado de inicio de sesión del usuario de una identidad.
 ms.assetid: 8B12E452-790D-4924-98E7-9368CC525674
-title: System. Identity. LogonStatusString
+title: System.Identity.LogonStatusString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d96439afc20a97c4834aa168e0d33699605998c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74a431148c18eefa54cf5cef7fdd23919c3be6d999e88cd0974694a05db44307
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726744"
 ---
-# <a name="systemidentitylogonstatusstring"></a>System. Identity. LogonStatusString
+# <a name="systemidentitylogonstatusstring"></a>System.Identity.LogonStatusString
 
-Cadena que indica el estado de inicio de sesión de un usuario de una identidad.
+Cadena que indica el estado de inicio de sesión del usuario de una identidad.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

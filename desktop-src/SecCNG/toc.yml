@@ -1,4 +1,4 @@
-- name: 'Cryptography API: próxima generación'
+- name: 'Cryptography API: Next Generation'
   href: cng-portal.md
   items:
     - name: Acerca de CNG
@@ -8,11 +8,11 @@
           href: cng-features.md
         - name: Primitivos criptográficos
           href: cryptographic-primitives.md
-        - name: Almacenamiento y recuperación de claves
+        - name: Clave Storage recuperación
           href: key-storage-and-retrieval.md
         - name: Importación y exportación de claves
           href: key-import-and-export.md
-        - name: DPAPI DE CNG
+        - name: CNG DPAPI
           href: cng-dpapi.md
           items:
             - name: Proveedores de protección
@@ -21,29 +21,29 @@
               href: protection-descriptors.md
             - name: Formato de datos protegidos
               href: protected-data-format.md
-    - name: Usar CNG
+    - name: Uso de CNG
       href: using-cng.md
       items:
-        - name: Usar las características de configuración de criptografía de CNG
+        - name: Uso de las características de configuración de criptografía de CNG
           href: using-the-cryptography-configuration-features-of-cng.md
-        - name: Programación de CNG típica
+        - name: Programación típica de CNG
           href: typical-cng-programming.md
           items:
-            - name: Crear un hash con CNG
+            - name: Creación de un hash con CNG
               href: creating-a-hash-with-cng.md
-            - name: Firmar datos con CNG
+            - name: Firma de datos con CNG
               href: signing-data-with-cng.md
-            - name: Cifrar datos con CNG
+            - name: Cifrado de datos con CNG
               href: encrypting-data-with-cng.md
     - name: Referencia de CNG
       href: cng-reference.md
       items:
-        - name: Constantes de CNG
+        - name: Constantes CNG
           href: cng-constants.md
           items:
             - name: Curvas elípticas con nombre CNG
               href: cng-named-elliptic-curves.md
-            - name: Manipuladores del algoritmo CNG
+            - name: Pseudo-identificadores del algoritmo CNG
               href: cng-algorithm-pseudo-handles.md
             - name: Identificadores de algoritmo CNG
               href: cng-algorithm-identifiers.md
@@ -51,9 +51,9 @@
               href: cng-dpapi-constants.md
             - name: Identificadores de interfaz CNG
               href: cng-interface-identifiers.md
-            - name: Identificadores de propiedad primitiva de criptografía
+            - name: Identificadores de propiedad primitivos de criptografía
               href: cng-property-identifiers.md
-            - name: Identificadores de propiedad de almacenamiento de claves
+            - name: Identificadores de Storage clave
               href: key-storage-property-identifiers.md
         - name: Funciones de configuración criptográfica de CNG
           href: cng-cryptographic-configuration-functions.md
@@ -90,7 +90,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptquerycontextfunctionproperty
             - name: BCryptQueryProviderRegistration
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptqueryproviderregistration
-            - name: BCryptRegisterConfigChangeNotify (identificador *)
+            - name: BCryptRegisterConfigChangeNotify(HANDLE*)
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptregisterconfigchangenotify
             - name: BCryptRegisterConfigChangeNotify(PRKEVENT)
               href: /windows/desktop/api/bcrypt/nf-bcrypt-bcryptregisterconfigchangenotify
@@ -100,7 +100,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptresolveproviders
             - name: BCryptSetContextFunctionProperty
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsetcontextfunctionproperty
-            - name: BCryptUnregisterConfigChangeNotify (HANDLE)
+            - name: BCryptUnregisterConfigChangeNotify(HANDLE)
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptunregisterconfigchangenotify
             - name: BCryptUnregisterConfigChangeNotify(PRKEVENT)
               href: /windows/desktop/api/bcrypt/nf-bcrypt-bcryptunregisterconfigchangenotify
@@ -167,7 +167,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsignhash
             - name: BCryptVerifySignature
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptverifysignature
-        - name: Funciones DPAPI de CNG
+        - name: Funciones de DPAPI de CNG
           href: cng-dpapi-functions.md
           items:
             - name: NCryptCreateProtectionDescriptor
@@ -207,7 +207,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcrypt_init_auth_mode_info
             - name: SystemPrng
               href: systemprng.md
-        - name: Funciones de almacenamiento de claves CNG
+        - name: Funciones de clave Storage CNG
           href: cng-key-storage-functions.md
           items:
             - name: NCryptCreateClaim
@@ -264,7 +264,7 @@
               href: /windows/desktop/api/ncrypt/nf-ncrypt-ncryptverifyclaim
             - name: NCryptVerifySignature
               href: /windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature
-        - name: Funciones de proveedor de SSL de CNG
+        - name: Funciones del proveedor SSL de CNG
           href: cng-ssl-provider-functions.md
           items:
             - name: SslChangeNotify
@@ -348,7 +348,7 @@
               href: /windows/desktop/api/tokenbinding/nf-tokenbinding-tokenbindinggetkeytypesserver
             - name: TokenBindingVerifyMessage
               href: /windows/desktop/api/tokenbinding/nf-tokenbinding-tokenbindingverifymessage
-        - name: Estructuras CNG
+        - name: Estructuras de CNG
           href: cng-structures.md
           items:
             - name: BCRYPT_ALGORITHM_IDENTIFIER
@@ -451,7 +451,7 @@
               href: /windows/desktop/api/tokenbinding/ns-tokenbinding-tokenbinding_result_data
             - name: TOKENBINDING_RESULT_LIST
               href: /windows/desktop/api/tokenbinding/ns-tokenbinding-tokenbinding_result_list
-        - name: Enumeraciones de CNG
+        - name: Enumeraciones CNG
           href: cng-enumerations.md
           items:
             - name: BCRYPT_HASH_OPERATION_TYPE

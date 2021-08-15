@@ -1,38 +1,38 @@
 ---
-description: La acción CostFinalize finaliza el proceso de costo de instalación interna Iniciado por la acción CostInitialize.
+description: La acción CostFinalize finaliza el proceso de costo de instalación interno iniciado por la acción CostInitialize.
 ms.assetid: ae69ad03-5acc-4a62-ba71-3a4e477d34ab
 title: Acción CostFinalize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72a5423f1050f9c9d755d33e492b9b65cfcaa08b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24f6b8fb49218925d3f517a9d198a638bc9dff5a1184beef24a487de0112830f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118638359"
 ---
 # <a name="costfinalize-action"></a>Acción CostFinalize
 
-La acción CostFinalize finaliza el proceso de [*costo*](c-gly.md) de instalación interna Iniciado por la acción [CostInitialize](costinitialize-action.md) .
+La acción CostFinalize finaliza el proceso de [*costo*](c-gly.md) de instalación interno iniciado por la [acción CostInitialize.](costinitialize-action.md)
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-Cualquier acción estándar o [personalizada](custom-actions.md) que afecte a los costos se debe secuenciar antes de la acción [CostInitialize](costinitialize-action.md) . Llame a la acción [FileCost](filecost-action.md) inmediatamente después de la acción CostInitialize y, a continuación, llame a la acción CostFinalize para que todos los cálculos de costos finales estén disponibles para el instalador a través de la tabla de [componentes](component-table.md) .
+Las acciones estándar [o personalizadas que](custom-actions.md) afecten a los costos deben secuenciarse antes de [la acción CostInitialize.](costinitialize-action.md) Llame a [la acción FileCost](filecost-action.md) inmediatamente después de la acción CostInitialize y, a continuación, llame a la acción CostFinalize para que todos los cálculos de costos finales estén disponibles para el instalador a través de la [tabla Component.](component-table.md)
 
-La acción CostFinalize se debe ejecutar antes de iniciar cualquier secuencia de interfaz de usuario que permita al usuario ver o modificar los directorios o las selecciones de las tablas de [características](feature-table.md) .
+La acción CostFinalize debe ejecutarse antes de iniciar cualquier secuencia [](feature-table.md) de interfaz de usuario que permita al usuario ver o modificar directorios o selecciones de tabla de características.
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
-No hay mensajes ActionData.
+No hay ningún mensaje ActionData.
 
 ## <a name="remarks"></a>Observaciones
 
-La acción CostFinalize consulta la tabla de [condiciones](condition-table.md) para determinar qué características están programadas para instalarse. El costo se realiza para cada componente de la tabla de [componentes](component-table.md) .
+La acción CostFinalize consulta la [tabla Condición](condition-table.md) para determinar qué características están programadas para instalarse. El costo se realiza para cada componente de la [tabla](component-table.md) Component.
 
-La acción CostFinalize también comprueba que se puedan escribir todos los directorios de destino antes de permitir que continúe la instalación.
+La acción CostFinalize también comprueba que todos los directorios de destino se pueden escribir antes de permitir que continúe la instalación.
 
 > [!Note]  
-> Durante una [instalación administrativa](administrative-installation.md), CostFinalize establece todas las características para la instalación, excepto las características que tienen 0 creado en la columna LEVEL de la [tabla de características](feature-table.md).
+> Durante una [instalación administrativa,](administrative-installation.md)CostFinalize establece todas las características para la instalación, excepto las características que tienen 0 en la columna Nivel de la [tabla Característica](feature-table.md).
 
  
 

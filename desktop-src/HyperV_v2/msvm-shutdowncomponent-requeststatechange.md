@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_ShutdownComponent: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_ShutdownComponent clase : solicita un cambio de estado.'
 ms.assetid: bb1dea51-f9d6-4edc-8044-53380cc4d32e
 title: Método RequestStateChange de la Msvm_ShutdownComponent clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 71237715f08e3775ff4c61660a789e000e4f5a5d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 88c567a0035db7bcf4788d013c7e123e4e58cb05eefb231c96c425e92e4701a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950414"
 ---
 # <a name="requeststatechange-method-of-the-msvm_shutdowncomponent-class"></a>Método RequestStateChange de la clase ShutdownComponent de Msvm \_
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -137,7 +137,7 @@ Puede contener una referencia a la instancia de ConcreteJob creada para realizar
 
 Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar timeoutPeriod. Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
 
-Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno "Use Of Timeout Parameter Not Supported" (No se admite el parámetro de tiempo de espera).
+Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno "Use Of Timeout Parameter Not Supported" (Uso del parámetro de tiempo de espera no admitido).
 
 </dd> </dl>
 

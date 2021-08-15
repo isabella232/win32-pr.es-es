@@ -1,9 +1,9 @@
 ---
-title: Elemento version (SystemPropertiesType)
+title: Elemento Version (SystemPropertiesType)
 description: Contiene el número de versión de la definición del evento.
 ms.assetid: c257cf21-296d-4dae-bfc8-e7899da40526
 keywords:
-- Elemento de versión EventLog
+- Elemento Version EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e1ae5273054c1c3c06926d3b4d5a9bd9ced1aeb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e5ca784def3389ed29b913358f97eddc631e0659aa60846be748ea3b5738759a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587282"
 ---
-# <a name="version-systempropertiestype-element"></a>Elemento version (SystemPropertiesType)
+# <a name="version-systempropertiestype-element"></a>Elemento Version (SystemPropertiesType)
 
 Contiene el número de versión de la definición del evento.
 
@@ -30,7 +30,7 @@ Contiene el número de versión de la definición del evento.
  />
 ```
 
-El elemento **version** se define mediante el tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El tipo complejo **SystemPropertiesType** define el [**elemento Version.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,19 +38,19 @@ El elemento **version** se define mediante el tipo complejo [**SystemPropertiesT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

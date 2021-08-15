@@ -1,7 +1,7 @@
 ---
 description: Agregue un objeto de nivel superior antes de la jerarquía de fotogramas.
 ms.assetid: ab4bfc3e-58eb-4de6-b080-8b3392b801bf
-title: 'ID3DXSaveUserData:: AddTopLevelDataObjectsPre (método) (D3dx9anim. h)'
+title: Método ID3DXSaveUserData::AddTopLevelDataObjectsPre (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d0194c8c9c6806f96cbe75394e6650ca3e7dc74b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 52052a24c34c99260a68cd5cdeaa7487e6b71c086ac30922a06de241de8319ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105670259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801178"
 ---
-# <a name="id3dxsaveuserdataaddtopleveldataobjectspre-method"></a>ID3DXSaveUserData:: AddTopLevelDataObjectsPre (método)
+# <a name="id3dxsaveuserdataaddtopleveldataobjectspre-method"></a>Método ID3DXSaveUserData::AddTopLevelDataObjectsPre
 
 Agregue un objeto de nivel superior antes de la jerarquía de fotogramas.
 
@@ -40,12 +40,12 @@ HRESULT AddTopLevelDataObjectsPre(
 
 <dl> <dt>
 
-*pXofSave* \[ de\]
+*pXofSave* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFILESAVEOBJECT**](id3dxfilesaveobject.md)**
 
-Puntero a un archivo. x guarda el objeto. Use este puntero para llamar a [**IDirectXFileSaveObject:: CreateDataObject**](idirectxfilesaveobject--createdataobject.md) para crear el objeto de datos que se va a guardar. A continuación, llame a [**IDirectXFileSaveObject:: savedata**](idirectxfilesaveobject--savedata.md) para guardar los datos.
+Puntero a un objeto de guardado de archivo .x. Use este puntero para llamar a [**IDirectXFileSaveObject::CreateDataObject**](idirectxfilesaveobject--createdataobject.md) para crear el objeto de datos que se va a guardar. A [**continuación, llame a IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md) para guardar los datos.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a un archivo. x guarda el objeto. Use este puntero para llamar a [**IDir
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Un programador de aplicaciones implementa los valores devueltos de este método. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para que devuelva un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md), ya que esto hará que [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) también produzca un error y devuelva el error.
+Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md), ya que esto hará que [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) también devuelva el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Un programador de aplicaciones implementa los valores devueltos de este método.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos IWbemStatusCodeText
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9233ddfb0471fc761222e4892967ccead2aeb551
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d2ae56e4516ebc8e77a2bf76253b710dab75f82c41f846da26fb408bd025263
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103909973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555939"
 ---
 # <a name="iwbemstatuscodetext-methods"></a>Métodos IWbemStatusCodeText
 
-La interfaz [**IWbemStatusCodeText**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemstatuscodetext) expone los métodos siguientes.
+La [**interfaz IWbemStatusCodeText**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemstatuscodetext) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

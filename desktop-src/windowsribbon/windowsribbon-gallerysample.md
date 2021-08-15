@@ -1,19 +1,19 @@
 ---
 title: Ejemplo de galería
-description: En este ejemplo de código se muestra el marcado y el código necesarios para usar los distintos tipos de controles de galería incluidos en el marco de Windows cinta de opciones.
+description: En este ejemplo de código se muestra el marcado y el código necesarios para usar los distintos tipos de controles de galería incluidos en el marco de Windows ribbon.
 ms.assetid: 1a462f4e-e75a-40cf-9c52-0bad0a645d57
 ms.topic: article
 ms.date: 07/13/2021
-ms.openlocfilehash: ef776a8a1a8eadf9ee41cf9964066cc612a9f9a1
-ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
+ms.openlocfilehash: 8c62e8955e737ac78ee5543c0a12febc5436bacd7f9d739bc9af02bacd555d2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113691754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118706711"
 ---
 # <a name="gallery-sample"></a>Ejemplo de galería
 
-En este ejemplo de código se muestra el marcado y el código necesarios para usar los distintos tipos de controles de galería incluidos en el marco de Windows cinta de opciones. El ejemplo incluye código que se puede usar para rellenar dinámicamente elementos en las galerías y controlar eventos de vista previa de la Galería especiales que admiten la interfaz de usuario orientada a resultados.
+En este ejemplo de código se muestra el marcado y el código necesarios para usar los distintos tipos de controles de galería incluidos en el marco de Windows ribbon. El ejemplo incluye código que se puede usar para rellenar dinámicamente elementos en las galerías y controlar eventos de vista previa de la Galería especiales que admiten la interfaz de usuario orientada a resultados.
 
 - [Uso](#usage)
   - [Compilar el ejemplo](#building-the-sample)
@@ -24,7 +24,7 @@ En este ejemplo de código se muestra el marcado y el código necesarios para us
 
 ## <a name="usage"></a>Uso
 
-Los ejemplos Windows marco de la cinta de opciones se pueden descargar como proyectos de Microsoft Visual Studio independientes desde el Centro de descarga de [Microsoft](https://www.microsoft.com/download/details.aspx?id=9620) o instalarse como parte del Kit de desarrollo de [software (SDK)](https://developer.microsoft.com/windows/downloads/sdk-archive/)de Windows .
+Los ejemplos Windows marco de la cinta de opciones se pueden descargar como proyectos de Microsoft Visual Studio independientes desde el Centro de descarga de [Microsoft](https://www.microsoft.com/download/details.aspx?id=9620) o instalarse como parte del Kit de desarrollo de [software (SDK)](https://developer.microsoft.com/windows/downloads/sdk-archive/)de Windows.
 
 - Windows Kit de desarrollo de software (SDK) (ruta de instalación estándar): %ProgramFiles% SDK de Microsoft Windows número de versión \\ \\ Ejemplos \\ \[ \] \\ \\ winui \\ WindowsRibbon \\ Gallery
 
@@ -40,19 +40,19 @@ Para compilar el ejemplo en Microsoft Visual Studio, cargue la solución de ejem
 
 ### <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para ejecutar el ejemplo desde la ventana de comandos del entorno de compilación, ejecute los archivos .exe en la carpeta Bin Debug o Bin Release contenida en la carpeta \\ \\ de origen de ejemplo.
+Para ejecutar el ejemplo desde la ventana de comandos del entorno de compilación, ejecute los archivos .exe en la carpeta Bin Debug o Bin Release contenida en la \\ carpeta de origen de \\ ejemplo.
 
 Para ejecutar el ejemplo compilado con depuración en Visual Studio, presione F5.
 
-## <a name="support"></a>Compatibilidad
+## <a name="support"></a>Soporte técnico
 
-El [foro Windows desarrollo de la cinta](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de opciones está disponible para analizar temas y hacer preguntas relacionadas con el desarrollo de Windows de cinta de opciones.
+El [foro Windows desarrollo de la cinta de](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) opciones está disponible para analizar temas y hacer preguntas relacionadas con el desarrollo de Windows de cinta de opciones.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 7<br/> Windows Vista con Service Pack 2 (SP2) y [actualización de plataforma para Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
 | Servidor mínimo compatible | Windows Server 2008 R2<br/> Windows Server 2008 con SP2 y actualización de plataforma [para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
@@ -65,7 +65,7 @@ El [foro Windows desarrollo de la cinta](https://social.msdn.microsoft.com/Forum
  
 
 > [!Note]  
-> La actualización de plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) y la actualización de plataforma para Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) son conjuntos de bibliotecas en tiempo de ejecución que permiten a los desarrolladores dirigir aplicaciones de la cinta de opciones de Windows a Windows Vista y Windows Server 2008. Las actualizaciones de la plataforma estarán disponibles para todos los Windows Vista y Windows Server 2008 a través de Windows Update. Las aplicaciones de terceros que requieren Actualización de plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) o Actualización de plataforma para Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) pueden hacer que Windows Update detecte si está instalada la actualización necesaria; Si no es así, Windows Update la descargará e instalará en segundo plano.
+> La actualización de plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) y la actualización de plataforma para Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) son conjuntos de bibliotecas en tiempo de ejecución que permiten a los desarrolladores dirigir aplicaciones de la cinta de opciones de Windows a Windows Vista y Windows Server 2008. Las actualizaciones de la plataforma estarán disponibles para todos los Windows Vista y Windows Server 2008 a través de Windows Update. Las aplicaciones de terceros que requieren actualización de plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) o actualización de plataforma para Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) pueden hacer que Windows Update detecte si está instalada la actualización necesaria; Si no es así, Windows update lo descargará e instalará en segundo plano.
 
  
 

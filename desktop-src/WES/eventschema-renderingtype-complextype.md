@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de RenderingInfoType
+title: Tipo complejo RenderingInfoType
 description: Define los mensajes representados para el evento.
 ms.assetid: 85a4cfc6-6277-4af8-af4e-cae3bd3aac13
 keywords:
-- RenderingInfoType tipo complejo EventLog
+- Tipo complejo EventLog renderingInfoType
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d0e4224ec9b90e84cbacbf5ede852763edd8e4f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d4a70c8bc97abc3dea7cd04e9ce491b64cb62dcc892fcde318d69dcdc996e2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588468"
 ---
-# <a name="renderinginfotype-complex-type"></a>Tipo complejo de RenderingInfoType
+# <a name="renderinginfotype-complex-type"></a>Tipo complejo RenderingInfoType
 
 Define los mensajes representados para el evento.
 
@@ -87,14 +87,14 @@ Define los mensajes representados para el evento.
 
 | Elemento                                                             | Tipo   | Descripción                                                                   |
 |---------------------------------------------------------------------|--------|-------------------------------------------------------------------------------|
-| [**Channel**](eventschema-task-renderingtype-element.md)           | string | Cadena de mensaje representada del canal especificado en el evento.<br/> |
-| [**Palabra clave**](eventschema-keyword-keywords-element.md)             | string | Cadena de mensaje representada de una palabra clave especificada en el evento.<br/>   |
-| [**Palabras clave**](eventschema-keywords-renderingtype-element.md)      |        | Una lista de palabras clave representadas.<br/>                                       |
-| [**Dosis**](eventschema-level-renderingtype-element.md)            | string | Cadena de mensaje representada del nivel especificado en el evento.<br/>   |
-| [**Message**](eventschema-message-renderingtype-element.md)        | string | Cadena de mensaje presentada del evento.<br/>                          |
-| [**Código de operación**](eventschema-opcode-renderingtype-element.md)          | string | Cadena de mensaje representada del código de operación especificado en el evento.<br/>  |
-| [**Proveedor**](eventschema-publisher-renderinginfotype-element.md) | string | Cadena de mensaje representada para el proveedor.<br/>                      |
-| [**Tarea**](eventschema-task-renderingtype-element.md)              | string | Cadena de mensaje representada de la tarea especificada en el evento.<br/>    |
+| [**Channel**](eventschema-task-renderingtype-element.md)           | string | Cadena de mensaje representado del canal especificado en el evento.<br/> |
+| [**Palabra clave**](eventschema-keyword-keywords-element.md)             | string | Cadena de mensaje representado de una palabra clave especificada en el evento .<br/>   |
+| [**Palabras clave**](eventschema-keywords-renderingtype-element.md)      |        | Lista de palabras clave representados.<br/>                                       |
+| [**Nivel**](eventschema-level-renderingtype-element.md)            | string | Cadena de mensaje representado del nivel especificado en el evento.<br/>   |
+| [**Message**](eventschema-message-renderingtype-element.md)        | string | Cadena de mensaje representado del evento.<br/>                          |
+| [**Código de operación**](eventschema-opcode-renderingtype-element.md)          | string | Cadena de mensaje representado del código de operación especificado en el evento.<br/>  |
+| [**Proveedor**](eventschema-publisher-renderinginfotype-element.md) | string | Cadena de mensaje representado para el proveedor.<br/>                      |
+| [**Tarea**](eventschema-task-renderingtype-element.md)              | string | Cadena de mensaje representado de la tarea especificada en el evento .<br/>    |
 
 
 
@@ -104,13 +104,13 @@ Define los mensajes representados para el evento.
 
 | Nombre    | Tipo     | Descripción                                                                                                      |
 |---------|----------|------------------------------------------------------------------------------------------------------------------|
-| Referencia cultural | language | El nombre de idioma (por ejemplo, en-US) que identifica la configuración regional que se usa para representar las cadenas de mensaje.<br/> |
+| culture | language | Nombre de idioma (por ejemplo, en-US) que identifica la configuración regional usada para representar las cadenas de mensaje.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo los eventos recopilados mediante el servicio [recopilador de eventos de Windows](/windows/desktop/WEC/windows-event-collector) contendrán esta sección.
+Solo los eventos que se han recopilado mediante [el Windows recopilador](/windows/desktop/WEC/windows-event-collector) de eventos contendrán esta sección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,8 +118,8 @@ Solo los eventos recopilados mediante el servicio [recopilador de eventos de Win
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

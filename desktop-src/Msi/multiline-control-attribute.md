@@ -1,25 +1,25 @@
 ---
-description: Si este bit se establece en un control de edición, el instalador crea un control de edición de varias líneas con una barra de desplazamiento vertical.
+description: Si este bit se establece en un control Editar, el instalador crea un control de edición de varias líneas con una barra de desplazamiento vertical.
 ms.assetid: cbdbe088-9cf1-4af8-a5f7-072faee7f34e
-title: Atributo de control Multiline
+title: Atributo de control multilínea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 936bc4b3901293e950690e878a0f86229bb03b4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 474bf8a9b765f402924a554c9da064a8c60a01f6af910a3fd24c81d377978a93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943436"
 ---
-# <a name="multiline-control-attribute"></a>Atributo de control Multiline
+# <a name="multiline-control-attribute"></a>Atributo de control multilínea
 
-Si este bit se establece en un [control de edición](edit-control.md), el instalador crea un control de edición de varias líneas con una barra de desplazamiento vertical.
+Si este bit se establece en un [control Editar](edit-control.md), el instalador crea un control de edición de varias líneas con una barra de desplazamiento vertical.
 
 Si no se establece este bit, especifica que se muestra un control de edición normal.
 
 ## <a name="valid-controls"></a>Controles válidos
 
-[Control de edición](edit-control.md).
+[Edite el control](edit-control.md).
 
 
 
@@ -31,11 +31,11 @@ Si no se establece este bit, especifica que se muestra un control de edición no
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para establecer este atributo en un control, incluya el bit de varias líneas en la columna Attributes del registro del control en la [tabla de control](control-table.md).
+Para establecer este atributo en un control , incluya el bit MultiLine en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
-Vea [controles y](controls.md) [atributos de control](control-attributes.md) .
+Vea [Controles y atributos](control-attributes.md) de [control.](controls.md)
 
  
 

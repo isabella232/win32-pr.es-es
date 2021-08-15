@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseAlreadyRunningMaintenanceException'
-title: Constructor de EsentDatabaseAlreadyRunningMaintenanceException
+description: 'Más información sobre: Constructor EsentDatabaseAlreadyRunningMaintenanceException'
+title: Constructor EsentDatabaseAlreadyRunningMaintenanceException
 TOCTitle: 'EsentDatabaseAlreadyRunningMaintenanceException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseAlreadyRunningMaintenanceException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabasealreadyrunningmaintenanceexception.esentdatabasealreadyrunningmaintenanceexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8466c2df8ec18eb51e8292e8573d92331c2d73b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13c27f0f88c2e5e43cd651e29fdeb1faeb7ebeb1a8acd1f06d74e69cf1034119
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118781808"
 ---
-# <a name="esentdatabasealreadyrunningmaintenanceexception-constructor"></a>Constructor de EsentDatabaseAlreadyRunningMaintenanceException
+# <a name="esentdatabasealreadyrunningmaintenanceexception-constructor"></a>Constructor EsentDatabaseAlreadyRunningMaintenanceException
 
 Inicializa una nueva instancia de la clase EsentDatabaseAlreadyRunningMaintenanceException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDatabaseAlreadyRunningMaintenanceException()
 public EsentDatabaseAlreadyRunningMaintenanceException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDatabaseAlreadyRunningMaintenanceException()
 
 [Miembros de EsentDatabaseAlreadyRunningMaintenanceException](./esentdatabasealreadyrunningmaintenanceexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

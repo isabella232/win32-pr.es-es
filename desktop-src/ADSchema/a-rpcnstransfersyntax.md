@@ -1,11 +1,11 @@
 ---
-title: atributo RPC-NS-transfer-syntax
-description: UUID de la sintaxis de transferencia compatible con la entrada actual.
+title: atributo rpc-Ns-Transfer-Syntax
+description: UUID de la sintaxis de transferencia admitida por la entrada actual.
 ms.assetid: e40beedb-68f3-4af9-89a8-268c90693082
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de sintaxis de RPC-NS-Transfer
-- rpcNsTransferSyntax esquema de AD de atributos
+- Rpc-Ns-Transfer-Syntax attribute AD Schema (Esquema de AD del atributo rpc-Ns-Transfer-Syntax)
+- RpcNsTransferSyntax attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbd980b89461fabfde0d96465cdbac2210dd4580
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ba9d638919686b29f592ebed91a409a768f15104c2d9135ca7725f856d697d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681554"
 ---
-# <a name="rpc-ns-transfer-syntax-attribute"></a>atributo RPC-NS-transfer-syntax
+# <a name="rpc-ns-transfer-syntax-attribute"></a>atributo rpc-Ns-Transfer-Syntax
 
-UUID de la sintaxis de transferencia compatible con la entrada actual.
+UUID de la sintaxis de transferencia admitida por la entrada actual.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Sintaxis de RPC-NS-Transfer-                      |
-| Nombre para mostrar de LDAP | rpcNsTransferSyntax                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | rpc-Ns-Transfer-Syntax                      |
+| Ldap-Display-Name | rpcNsTransferSyntax                         |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.314                      |
-| System-ID-GUID    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
+| System-Id-Guid    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,18 +55,18 @@ UUID de la sintaxis de transferencia compatible con la entrada actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
+| Es de un solo valor       | True                                                        |
 | Está indexado             | True                                                        |
 | En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ UUID de la sintaxis de transferencia compatible con la entrada actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
+| Es de un solo valor       | True                                                        |
 | Está indexado             | True                                                        |
 | En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ UUID de la sintaxis de transferencia compatible con la entrada actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
+| Es de un solo valor       | True                                                        |
 | Está indexado             | True                                                        |
 | En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ UUID de la sintaxis de transferencia compatible con la entrada actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
+| Es de un solo valor       | True                                                        |
 | Está indexado             | True                                                        |
 | En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ UUID de la sintaxis de transferencia compatible con la entrada actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
+| Es de un solo valor       | True                                                        |
 | Está indexado             | True                                                        |
 | En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ UUID de la sintaxis de transferencia compatible con la entrada actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
+| Es de un solo valor       | True                                                        |
 | Está indexado             | True                                                        |
 | En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 

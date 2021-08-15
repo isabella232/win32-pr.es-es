@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_LOGTIME. ToDateTime (método)'
-title: JET_LOGTIME. ToDateTime (método)
+description: 'Más información sobre: JET_LOGTIME. Método ToDateTime'
+title: JET_LOGTIME. Método ToDateTime
 TOCTitle: 'ToDateTime method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_LOGTIME.ToDateTime
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_logtime.todatetime(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 14d427d1c7e4a6f37c27677ed9617d92eb8ff644
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: add66724ff34b3871462eef129dc6efd549159b39243a19565d4ca40d2f05b04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979855"
 ---
-# <a name="jet_logtimetodatetime-method"></a>JET_LOGTIME. ToDateTime (método)
+# <a name="jet_logtimetodatetime-method"></a>JET_LOGTIME. Método ToDateTime
 
-Generar una representación de fecha y hora de este JET_LOGTIME.
+Genere una representación DateTime de este JET_LOGTIME.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,19 +56,19 @@ public Nullable<DateTime> ToDateTime()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Nullable](/dotnet/api/system.nullable-1)\<[DateTime](/dotnet/api/system.datetime)\>  
-Un valor de tipo DateTime que representa el JET_LOGTIME. Si el JET_LOGTIME es null, se devuelve NULL.  
+Tipo: [System.Nullable](/dotnet/api/system.nullable-1)\<[DateTime](/dotnet/api/system.datetime)\>  
+Un valor DateTime que representa el JET_LOGTIME. Si el JET_LOGTIME es NULL, se devuelve null.  
 
 #### <a name="implements"></a>Implementaciones
 
-[IJET_LOGTIME. ToDateTime ()](./ijet-logtime.todatetime-method.md)  
+[IJET_LOGTIME. ToDateTime()](./ijet-logtime.todatetime-method.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LOGTIME](./jet-logtime-structure2.md)
+[JET_LOGTIME estructura](./jet-logtime-structure2.md)
 
-[Miembros de JET_LOGTIME](./jet-logtime-members.md)
+[JET_LOGTIME miembros](./jet-logtime-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

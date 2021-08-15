@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_ENUMCOLUMN. cbData'
-title: Propiedad JET_ENUMCOLUMN. cbData
+description: 'Más información sobre: JET_ENUMCOLUMN.cbData'
+title: JET_ENUMCOLUMN.cbData, propiedad
 TOCTitle: 'cbData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.cbData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn.cbdata(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b38d6c8433cc9792ebdd7e04e72027c6e1477e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8a1674c4b4c47d6f6a1fa07b06806cd5202db95eb789e499485936ba438dcec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766011"
 ---
-# <a name="jet_enumcolumncbdata-property"></a>Propiedad JET_ENUMCOLUMN. cbData
+# <a name="jet_enumcolumncbdata-property"></a>JET_ENUMCOLUMN.cbData, propiedad
 
-Obtiene el tamaño del valor que se enumeró para la columna. Este miembro solo se utiliza si el valor de [Err](./jet-enumcolumn.err-property.md) es igual a [ColumnSingleValue](./jet-wrn-enumeration.md).
+Obtiene el tamaño del valor que se enumeró para la columna. Este miembro solo se usa si [err](./jet-enumcolumn.err-property.md) es igual a [ColumnSingleValue.](./jet-wrn-enumeration.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public int cbData { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMN (clase)](./jet-enumcolumn-class.md)
+[JET_ENUMCOLUMN clase](./jet-enumcolumn-class.md)
 
-[Miembros de JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN miembros](./jet-enumcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
