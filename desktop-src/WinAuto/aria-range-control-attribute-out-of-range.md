@@ -25,7 +25,7 @@ Error
 
 ## <a name="description"></a>Descripción
 
-Este error se aplica a los elementos que tienen un [**rol**](https://developer.mozilla.org/docs/Web/HTML/Reference) (implícito o explícito) igual a **la** barra de progreso, **el control deslizante** o el botón de **número**.
+Este error se aplica a los elementos que tienen un [**rol**](https://developer.mozilla.org/docs/Web/HTML/Reference) (implícito o explícito) igual a **progressbar**, **slider** o **spinbutton**.
 
 Este error indica que el valor [**aria-valuenow**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) expuesto no está en el intervalo definido por los atributos [**aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) y [**aria-valuemax.**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)
 

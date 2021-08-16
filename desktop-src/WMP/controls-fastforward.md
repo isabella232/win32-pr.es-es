@@ -1,11 +1,11 @@
 ---
 title: Método Controls.fastForward
-description: El método fastForward inicia el juego rápido del elemento multimedia en la dirección hacia delante. | Método Controls.fastForward
+description: El método fastForward inicia la reproducción rápida del elemento multimedia en la dirección hacia delante. | Controls.fastForward (método)
 ms.assetid: 69cee803-f76b-4a8c-a2c2-1870665afaf9
 keywords:
 - Método fastForward Reproductor de Windows Media
-- Método fastForward Reproductor de Windows Media , Clase Controls
-- Controla la clase Reproductor de Windows Media método , fastForward
+- Método fastForward Reproductor de Windows Media , clase Controls
+- Clase Controls Reproductor de Windows Media , método fastForward
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118341821"
 ---
 # <a name="controlsfastforward-method"></a>Método Controls.fastForward
 
-El **método fastForward** inicia el juego rápido del elemento multimedia en la dirección hacia delante.
+El **método fastForward** inicia la reproducción rápida del elemento multimedia en la dirección hacia delante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,9 +46,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-El **método fastForward** reproduce el clip a una velocidad cinco veces mayor que la normal. La invocación **de fastForward** cambia el *Configuración*. **propiedad** rate a 5,0. Si **posteriormente** se cambia la velocidad, o si se llama a **play** o **stop,** Reproductor de Windows Media el reenvío rápido.
+El **método fastForward** reproduce el clip cinco veces la velocidad normal. La invocación **de fastForward** cambia el *Configuración*. **propiedad** rate a 5,0. Si **posteriormente** se cambia la velocidad, o si se llama a **play** o **stop,** Reproductor de Windows Media el reenvío rápido.
 
-El **método fastForward** no funciona para difusiones en directo y determinados tipos de medios. Para determinar si puede avanzar rápidamente en un clip, llame a **isAvailable**("FastForward").
+El **método fastForward** no funciona para difusión en vivo y determinados tipos de medios. Para determinar si puede avanzar rápidamente en un clip, llame a **isAvailable**("FastForward").
 
 ## <a name="examples"></a>Ejemplos
 
@@ -84,7 +84,7 @@ En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **fastForward** 
 
 <dl> <dt>
 
-[**Objeto Controls**](controls-object.md)
+[**Controls (objeto)**](controls-object.md)
 </dt> <dt>
 
 [**Controls.isAvailable**](controls-isavailable.md)

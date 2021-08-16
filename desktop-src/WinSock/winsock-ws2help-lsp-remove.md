@@ -1,5 +1,5 @@
 ---
-description: Evento de cambio del catálogo de Winsock para una operación de eliminación del proveedor de servicios por capas (LSP).
+description: Evento de cambio del catálogo de Winsock para una operación de eliminación del proveedor de servicios en capas (LSP).
 ms.assetid: 86FF17F7-8CCF-4A03-899F-42BFACDF3F54
 title: WINSOCK_WS2HELP_LSP_REMOVE evento
 ms.topic: reference
@@ -22,11 +22,11 @@ ms.locfileid: "118321597"
 # <a name="winsock_ws2help_lsp_remove-event"></a>Evento WINSOCK \_ WS2HELP \_ LSP \_ REMOVE
 
 > [!Note]  
-> Los proveedores de servicios por capas están en desuso. A partir de Windows 8 y Windows Server 2012, use [Windows de filtrado.](../fwp/windows-filtering-platform-start-page.md)
+> Los proveedores de servicios por capas están en desuso. A partir de Windows 8 y Windows Server 2012, use [Windows filtering platform](../fwp/windows-filtering-platform-start-page.md).
 
  
 
-El **evento WINSOCK \_ WS2HELP \_ LSP \_ REMOVE** es un evento de cambio de catálogo de Winsock para una operación de eliminación del proveedor de servicios en capas (LSP).
+El **evento WINSOCK \_ WS2HELP \_ LSP \_ REMOVE** es un evento de cambio del catálogo de Winsock para una operación de eliminación del proveedor de servicios en capas (LSP).
 
 
 ```C++
@@ -42,14 +42,14 @@ const EVENT_DESCRIPTOR WINSOCK_WS2HELP_LSP_REMOVE = {0x2, 0x0, 0x10, 0x0, 0x0, 0
 *Nombre de LSP* 
 </dt> <dd>
 
-Nombre del LSP obtenido del miembro **szProtocol** de la estructura [**\_ INFO de WSAPROTOCOL**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) para el LSP que se va a quitar.
+Nombre del LSP obtenido del miembro **szProtocol** de la estructura [**INFO de WSAPROTOCOL \_**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) para el LSP que se va a quitar.
 
 </dd> <dt>
 
 *Catálogo* 
 </dt> <dd>
 
-Catálogo de Winsock (32 o 64 bits) donde se quita el LSP. Se trata de un valor entero que es 32 o 64.
+Catálogo winsock (32 o 64 bits) donde se quita el LSP. Se trata de un valor entero que es 32 o 64.
 
 </dd> <dt>
 
@@ -63,14 +63,14 @@ Nombre de archivo del módulo de la aplicación que realiza la llamada de elimin
 *GUID* 
 </dt> <dd>
 
-Valor GUID del proveedor de transporte Winsock del que se va a quitar el LSP.
+Valor GUID del proveedor de transporte winsock del que se va a quitar el LSP.
 
 </dd> <dt>
 
 *Categoría* 
 </dt> <dd>
 
-Miembro **dwCatalogEntryId de** la [**estructura INFO de WSAPROTOCOL \_**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) para el LSP que se va a quitar.
+Miembro **dwCatalogEntryId** de la [**estructura INFO \_ de WSAPROTOCOL**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) para el LSP que se va a quitar.
 
 </dd> </dl>
 

@@ -28,7 +28,7 @@ Los siguientes elementos de la biblioteca de administración de MTS actual se ca
 -   El paquete del sistema ahora se denomina Aplicación del sistema.
 -   El paquete Utilities ahora se denomina UTILIDADES COM+.
 -   La propiedad IsSystem existe en la colección [**Components**](components.md) de MTSAdmin, pero devolverá "NotImpl" cuando esté activada y no se guardará si se establece.
--   La colección [**Components**](components.md) ya no admite la propiedad PackageName. Para averiguar el nombre del paquete, ahora deberá obtener packageID y, a continuación, buscar el paquete correspondiente en la colección Packages.
+-   La colección Components ya no [](components.md) admite la propiedad PackageName. Para averiguar el nombre del paquete, ahora deberá obtener packageID y, a continuación, buscar el paquete correspondiente en la colección Packages.
 -   Las siguientes propiedades ya no existen en la [**colección InterfacesForComponent:**](interfacesforcomponent.md)
     -   **ProxyCLSID**
     -   **ProxyDLL**

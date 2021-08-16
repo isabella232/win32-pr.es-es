@@ -67,7 +67,7 @@ Es decir, para calcular cada elemento c *ij*, haga lo siguiente:
 2.  Multiplique cada par de elementos de la fila y columna: la primera entrada de fila por la primera entrada de columna, la segunda entrada de fila por la segunda entrada de columna, etc.
 3.  Sumar el resultado.
 
-Este es un ejemplo de multiplicar una matriz (2 × 2) por una matriz (2 × 3).
+Este es un ejemplo de multiplicación de una matriz (2 × 2) por una matriz (2 × 3).
 
 ![multiplicación de matriz.](images/matrix03.png)
 
@@ -216,13 +216,13 @@ Longitud de la línea (0,0) a P. También el radio del círculo de rotación.
 </dd> </dl>
 
 > [!Note]  
-> En este diagrama se usa el sistema de coordenadas estándar que se usa en la geometría, donde apunta hacia arriba el eje Y positivo. Direct2D usa el Windows coordenadas, donde el eje Y positivo apunta hacia abajo.
+> En este diagrama se usa el sistema de coordenadas estándar que se usa en la geometría, donde el eje Y positivo apunta hacia arriba. Direct2D usa el Windows coordenadas, donde el eje Y positivo apunta hacia abajo.
 
  
 
 El ángulo entre el eje X y la línea (0,0) a P' es А + Θ. Las siguientes identidades se mantienen:
 
-<dl> x = R cos Y  
+<dl> x = R cos  
 y = R sin Y  
 x' = R cos(Θ + Θ)  
 y' = R sin(Θ+ Θ)  
@@ -230,13 +230,13 @@ y' = R sin(Θ+ Θ)
 
 Ahora, resuelva x' e y' en términos de Θ. Por las fórmulas de adición trigonométricas:
 
-<dl> x' = R(cosntesA – sinAsin) = Rcos YcosA – IosNSinS  
-y' = R(sinAcosA + cosАsin): Iosn Ycos Y + Rcos YSinS  
+<dl> x' = R(cos YcosA – sinАsin): Rcos YcosA – IosNSinS  
+y' = R(sinАcos + cosАsin): Iosn Ycos Y + Rcos YSinS  
 </dl>
 
 Sustituyendo, se obtiene lo siguiente:
 
-<dl> x' = xcos – ysin):  
+<dl> x' = xcos – ysinΘ  
 y' = xsin( + ycos)  
 </dl>
 
@@ -264,7 +264,7 @@ Ahora vuelva a conectar esta ecuación a la matriz de transformación con la fó
 
 La transformación de sesgo se define mediante cuatro parámetros:
 
--   ): la cantidad que se sesga a lo largo del eje X, medida como un ángulo del eje Y.
+-   ): la cantidad que se sesga a lo largo del eje X, medida como un ángulo desde el eje Y.
 -   ): la cantidad que se sesga a lo largo del eje Y, medida como un ángulo desde el eje X.
 -   (*px*, *py*): las coordenadas x e y del punto sobre el que se realiza la asimetría.
 
@@ -279,7 +279,7 @@ El punto transformado es:
 
 o de forma equivalente:
 
-<dl> P' = (*x* + (*y* – *py*)tanA, *y* + (*x* – *px*)tanA)
+<dl> P' = (*x* + (*y* – *py*)tan, *y* + (*x* – *px*)tanA)
 </dl>
 
 Para ver cómo funciona esta transformación, considere cada componente individualmente. El parámetro Θ mueve cada punto de la dirección x en una cantidad igual a tan/. En el diagrama siguiente se muestra la relación entre Θ y el sesgo del eje X.
@@ -302,9 +302,9 @@ Por último, los parámetros *px* *y py* desplazan el punto central de la asimet
 
 ## <a name="representing-transforms-in-direct2d"></a>Representación de transformaciones en Direct2D
 
-Todas las transformaciones de Direct2D son transformaciones afín. Direct2D no admite transformaciones no afín. Las transformaciones se representan mediante la estructura [**D2D1 \_ MATRIX \_ 3X2 \_ F.**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) Esta estructura define una matriz de 3 × 2. Dado que la tercera columna de una transformación afín es siempre la misma (0, 0, 1 ) y porque Direct2D no admite transformaciones no afín, no es necesario especificar toda la \[ \] matriz de 3 × 3. Internamente, Direct2D usa 3 × 3 matrices para calcular las transformaciones.
+Todas las transformaciones de Direct2D son transformaciones afín. Direct2D no admite transformaciones no afín. Las transformaciones se representan mediante la [**estructura D2D1 \_ MATRIX \_ 3X2 \_ F.**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) Esta estructura define una matriz de 3 × 2. Dado que la tercera columna de una transformación afín es siempre la misma (0, 0, 1 ) y porque Direct2D no admite transformaciones no afín, no es necesario especificar toda la \[ \] matriz de 3 × 3. Internamente, Direct2D usa 3 × 3 matrices para calcular las transformaciones.
 
-Los miembros de [**D2D1 \_ MATRIX \_ 3X2 \_ F**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) se denominan según su posición de índice: **\_ el miembro 11** es elemento (1,1), el **\_ miembro 12** es elemento (1,2), etc. Aunque puede inicializar los miembros de la estructura directamente, se recomienda usar la [**clase D2D1::Matrix3x2F.**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) Esta clase hereda **D2D1 \_ MATRIX \_ 3X2 \_ F** y proporciona métodos auxiliares para crear cualquiera de las transformaciones afín básicas. La clase también define [**el \* operador ()**](/windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-operator-mult) para componer dos o más transformaciones, como se describe en [Aplicar transformaciones en Direct2D.](applying-transforms-in-direct2d.md)
+Los miembros de [**D2D1 \_ MATRIX \_ 3X2 \_ F**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) se denominan según su posición de índice: **\_ el miembro 11** es elemento (1,1), el **\_ miembro 12** es elemento (1,2), etc. Aunque puede inicializar los miembros de la estructura directamente, se recomienda usar la [**clase D2D1::Matrix3x2F.**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) Esta clase hereda **D2D1 \_ MATRIX \_ 3X2 \_ F** y proporciona métodos auxiliares para crear cualquiera de las transformaciones afín básicas. La clase también define [**el \* operador ()**](/windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-operator-mult) para componer dos o más transformaciones, como se describe en Aplicar transformaciones [en Direct2D.](applying-transforms-in-direct2d.md)
 
 ## <a name="next"></a>Siguientes
 

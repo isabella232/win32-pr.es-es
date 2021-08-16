@@ -1,6 +1,6 @@
 ---
 title: Atributo ms-DS-Never-Reveal-Group
-description: Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar sus contraseñas en caché en un RODC.
+description: Se usa con RODC para definir qué usuarios, equipos y grupos no pueden tener sus contraseñas almacenadas en caché en un RODC.
 ms.assetid: 203a660b-503e-4cf1-a796-eac024629b3e
 ms.tgt_platform: multiple
 keywords:
@@ -23,20 +23,20 @@ ms.locfileid: "118684162"
 ---
 # <a name="ms-ds-never-reveal-group-attribute"></a>Atributo ms-DS-Never-Reveal-Group
 
-Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar sus contraseñas en caché en un RODC.
+Se usa con RODC para definir qué usuarios, equipos y grupos no pueden tener sus contraseñas almacenadas en caché en un RODC.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-Never-Reveal-Group                |
 | Ldap-Display-Name | msDS-NeverRevealGroup                   |
 | Size              | \-                                      |
-| Actualizar privilegios  | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1926                 |
 | System-Id-Guid    | 15585999-fd49-4d66-b25d-eeb96aba8174    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -50,14 +50,14 @@ Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------|
 | Id. de vínculo                | 2106                                                                               |
 | MAPI-Id                | \-                                                                                 |
-| System-Only            | False                                                                              |
-| Es de un solo valor       | False                                                                              |
-| Está indexado             | False                                                                              |
-| En el catálogo global      | False                                                                              |
+| System-Only            | Falso                                                                              |
+| Es de un solo valor       | Falso                                                                              |
+| Está indexado             | Falso                                                                              |
+| En el catálogo global      | Falso                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |
@@ -71,14 +71,14 @@ Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------|
 | Id. de vínculo                | 2106                                                                               |
 | MAPI-Id                | \-                                                                                 |
-| System-Only            | False                                                                              |
-| Es de un solo valor       | False                                                                              |
-| Está indexado             | False                                                                              |
-| En el catálogo global      | False                                                                              |
+| System-Only            | Falso                                                                              |
+| Es de un solo valor       | Falso                                                                              |
+| Está indexado             | Falso                                                                              |
+| En el catálogo global      | Falso                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |
@@ -92,14 +92,14 @@ Se usa con RODC para definir qué usuarios, equipos y grupos no pueden almacenar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------|
 | Id. de vínculo                | 2106                                                                               |
 | MAPI-Id                | \-                                                                                 |
-| System-Only            | False                                                                              |
-| Es de un solo valor       | False                                                                              |
-| Está indexado             | False                                                                              |
-| En el catálogo global      | False                                                                              |
+| System-Only            | Falso                                                                              |
+| Es de un solo valor       | Falso                                                                              |
+| Está indexado             | Falso                                                                              |
+| En el catálogo global      | Falso                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |

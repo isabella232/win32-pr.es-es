@@ -77,7 +77,7 @@ public static void JetGetRecordSize(
   - tableid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se usará para la llamada API. El cursor debe estar situado en un registro o tener preparada una actualización.
+    Cursor que se usará para la llamada API. El cursor debe colocarse en un registro o tener preparada una actualización.
 
 <!-- end list -->
 

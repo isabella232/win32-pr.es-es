@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_COLUMNBASE. Equals (método JET_COLUMNBASE)'
-title: JET_COLUMNBASE. Equals (método JET_COLUMNBASE)
+description: 'Más información sobre: JET_COLUMNBASE. Método Equals (JET_COLUMNBASE)'
+title: JET_COLUMNBASE. Método Equals (JET_COLUMNBASE)
 TOCTitle: Equals method (JET_COLUMNBASE)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_COLUMNBASE.Equals(Microsoft.Isam.Esent.Interop.JET_COLUMNBASE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnbase.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ada65f03966ebd5f0bf7142d3953117734c2f3cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b53b0b89428434b7c9da4ef9462843f928bd410cb16c39014a203abec2bf873a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487193"
 ---
-# <a name="jet_columnbaseequals-method-jet_columnbase"></a>JET_COLUMNBASE. Equals (método JET_COLUMNBASE)
+# <a name="jet_columnbaseequals-method-jet_columnbase"></a>JET_COLUMNBASE. Método Equals (JET_COLUMNBASE)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - Otros  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNBASE](./jet-columnbase-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNBASE](./jet-columnbase-class.md)  
     
     Instancia de que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 #### <a name="implements"></a>Implementaciones
 
-[IEquatable \<T\> . Es igual a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNBASE (clase)](./jet-columnbase-class.md)
+[JET_COLUMNBASE clase](./jet-columnbase-class.md)
 
-[Miembros de JET_COLUMNBASE](./jet-columnbase-members.md)
+[JET_COLUMNBASE miembros](./jet-columnbase-members.md)
 
-[Equals (sobrecarga)](./jet-columnbase.equals-method.md)
+[Sobrecarga igual a](./jet-columnbase.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

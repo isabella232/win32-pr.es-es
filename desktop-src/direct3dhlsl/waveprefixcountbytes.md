@@ -1,9 +1,9 @@
 ---
-title: WavePrefixCountBits función)
-description: Devuelve la suma de todas las variables Booleanas especificadas establecidas en true en todas las calles activas con índices más pequeños que la calle actual.
+title: Función WavePrefixCountBits
+description: Devuelve la suma de todas las variables booleanas especificadas establecidas en true en todos los canales activos con índices menores que el actual.
 ms.assetid: AEC9AFD7-6478-4397-B531-73990D30AA48
 keywords:
-- WavePrefixCountBits de función HLSL
+- Función HLSL de WavePrefixCountBits
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 72f35df1e463ff89441938e4cae19a890821baf9
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 048b63d24e87d97f0e0223083a91694c0471b9e38ad21afbc487c02d711d720d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504681"
 ---
-# <a name="waveprefixcountbits-function"></a>WavePrefixCountBits función)
+# <a name="waveprefixcountbits-function"></a>Función WavePrefixCountBits
 
-Devuelve la suma de todas las variables Booleanas especificadas establecidas en true en todas las calles activas con índices más pequeños que la calle actual.
+Devuelve la suma de todas las variables booleanas especificadas establecidas en true en todos los canales activos con índices menores que el actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,17 +42,17 @@ uint WavePrefixCountBits(
 *bBit* 
 </dt> <dd>
 
-Variables Booleanas especificadas.
+Variables booleanas especificadas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La suma de todas las variables Booleanas especificadas establecidas en true en todas las calles activas con índices más pequeños que la calle actual.
+Suma de todas las variables booleanas especificadas establecidas en true en todos los canales activos con índices menores que el actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del sombreador. 
+Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador. 
 
 
 
@@ -60,7 +60,7 @@ Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del
 
 ## <a name="examples"></a>Ejemplos
 
-En el código siguiente se describe cómo implementar una escritura compactada en una secuencia ordenada en la que el número de elementos escritos por Lane sea 1 o 0.
+En el código siguiente se describe cómo implementar una escritura compactada en una secuencia ordenada donde el número de elementos escritos por cada calle es 1 o 0.
 
 ``` syntax
 bool bDoesThisLaneHaveAnAppendItem = <expr>;
@@ -80,11 +80,11 @@ appendOffset += laneAppendOffset; // and add in the offset for this lane
 buffer[appendOffset] = myData; // write to the offset location for this lane
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modelo de sombreador 6](shader-model-6-0.md)

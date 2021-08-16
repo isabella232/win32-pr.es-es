@@ -1,7 +1,7 @@
 ---
-description: Se produce cuando el usuario ha generado el lápiz óptico desde la superficie del digitalizador de Tablet PC.
+description: Se produce cuando el usuario ha elevado el lápiz óptico de la superficie del digitalizador de tabletas.
 ms.assetid: 34dc7e6b-101a-4edd-8c3c-9aafb85cf58b
-title: 'ITabletEventSink:: CursorUp (método)'
+title: ITabletEventSink::CursorUp (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 5e163fd01933ad0fc1a11429e77b37163655f39b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 586f18750e832bad653a3df92d14efb41b39547ee532913ac52c986a9b5e137c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712135"
 ---
-# <a name="itableteventsinkcursorup-method"></a>ITabletEventSink:: CursorUp (método)
+# <a name="itableteventsinkcursorup-method"></a>ITabletEventSink::CursorUp (método)
 
-Se produce cuando el usuario ha generado el lápiz óptico desde la superficie del digitalizador de Tablet PC.
+Se produce cuando el usuario ha elevado el lápiz óptico de la superficie del digitalizador de tabletas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,62 +44,62 @@ HRESULT CursorUp(
 
 <dl> <dt>
 
-*TCID* \[ de\]
+*tcid* \[ En\]
 </dt> <dd>
 
-El identificador de la tableta.
+Identificador de la tableta.
 
 </dd> <dt>
 
-*CID* \[ en\]
+*cid* \[ en\]
 </dt> <dd>
 
 Identificador del lápiz óptico.
 
 </dd> <dt>
 
-*nSerialNumber* \[ de\]
+*nSerialNumber* \[ En\]
 </dt> <dd>
 
 Número de serie del lápiz óptico.
 
 </dd> <dt>
 
-*cbPkt* \[ de\]
+*cbPkt* \[ En\]
 </dt> <dd>
 
-El número de bytes de un paquete de datos del lápiz óptico.
+Número de bytes de un paquete de datos de lápiz óptico.
 
 </dd> <dt>
 
-*pbPkt* \[ de\]
+*pbPkt* \[ En\]
 </dt> <dd>
 
-Los datos del lápiz óptico que indican la ubicación en la que se ha levantado el lápiz óptico de la tableta.
+Los datos del lápiz óptico que indican la ubicación en la que se ha lifted el lápiz óptico de la tableta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz ITabletEventSink**](itableteventsink.md)
+[**ITabletEventSink (interfaz)**](itableteventsink.md)
 </dt> </dl>
 
  

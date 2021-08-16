@@ -29,14 +29,14 @@ El **atributo playlistItemsVisible** especifica o recupera un valor que indica s
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un valor booleano de lectura **y escritura.**
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
 | Valor | Descripción                              |
 |-------|------------------------------------------|
-| true  | Predeterminada. El área Elementos de lista de reproducción está visible. |
-| false | El área Elementos de lista de reproducción no está visible.      |
+| true  | Predeterminada. El área elementos de lista de reproducción está visible. |
+| false | El área elementos de lista de reproducción no está visible.      |
 
 
 
@@ -60,7 +60,7 @@ El área Elementos de lista de reproducción incluye los encabezados de columna,
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

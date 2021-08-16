@@ -15,7 +15,7 @@ ms.locfileid: "118377346"
 
 Los componentes del Kit de desarrollo de software Windows Installer se incluyen en el Kit de desarrollo de software (SDK) de Microsoft Windows. El SDK de Windows incluye componentes redistribuibles, documentación, herramienta de validación de base de datos del instalador, editor de tablas de base de datos, esquema de base de datos, herramientas de desarrollo, herramientas de Visual Basic Scripting Edition (VBScript), productos de ejemplo y ejemplos de código.
 
-Para la página de descarga del SDK Windows, consulte [Microsoft Windows Software Development Kit (SDK) .](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+Para obtener la página de descarga del SDK Windows, consulte [Microsoft Windows Software Development Kit (SDK) .](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
 
 ## <a name="related-topics"></a>Temas relacionados
 

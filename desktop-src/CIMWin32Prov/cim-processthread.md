@@ -28,7 +28,7 @@ ms.locfileid: "118421899"
 La **clase \_ ProcessThread** de CIM representa un vínculo entre un proceso y los subprocesos que se ejecutan en el contexto del proceso.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -60,7 +60,7 @@ La **clase \_ ProcessThread** de CIM tiene estas propiedades.
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Proceso CIM \_**
+Tipo de datos: **Proceso \_ CIM**
 </dt> <dt>
 
 Tipo de acceso: solo lectura

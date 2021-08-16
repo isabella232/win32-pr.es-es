@@ -12,7 +12,7 @@ keywords:
 - movimiento panorámico con un solo dedo
 - movimiento panorámico, con un solo dedo
 - movimiento panorámico, comentarios de límites
-- barras de desplazamiento, movimiento panorámico con un solo dedo
+- barras de desplazamiento, desplazamiento panorámico con un solo dedo
 - gestos, movimiento panorámico con un solo dedo
 - barras de desplazamiento, deshabilitar
 - flicks,disabling
@@ -32,7 +32,7 @@ ms.locfileid: "118435448"
 
 Si compila una aplicación que tiene como destino Windows Touch, proporciona automáticamente compatibilidad básica de movimiento panorámico. Sin embargo, puede usar el mensaje [**WM \_ GESTURE**](wm-gesture.md) para proporcionar compatibilidad mejorada con el movimiento panorámico con un solo dedo.
 
-## <a name="overview"></a>Introducción
+## <a name="overview"></a>Información general
 
 Para mejorar la experiencia de movimiento panorámico con un solo dedo, siga estos pasos, como se explica en las secciones posteriores de este tema:
 
@@ -42,13 +42,13 @@ Para mejorar la experiencia de movimiento panorámico con un solo dedo, siga est
 
 ## <a name="create-an-application-with-scroll-bars-and-with-flicks-disabled"></a>Creación de una aplicación con barras de desplazamiento y con gestos deshabilitados
 
-Antes de comenzar, debe crear una aplicación con barras de desplazamiento. En la [sección Compatibilidad heredada para el movimiento panorámico con barras de desplazamiento](legacy-support-for-panning-with-scrollbars.md) se explica este proceso. Si desea empezar con el contenido de ejemplo, vaya a esa sección y cree una aplicación con barras de desplazamiento y, a continuación, deshabilite los gestos. Si ya tiene una aplicación con barras de desplazamiento en funcionamiento, deshabilite los gestos como se describe en esa sección.
+Antes de comenzar, debe crear una aplicación con barras de desplazamiento. En la [sección Legacy Support for Panning with Scrollbars](legacy-support-for-panning-with-scrollbars.md) (Compatibilidad heredada para el movimiento panorámico con barras de desplazamiento) se explica este proceso. Si desea empezar con el contenido de ejemplo, vaya a esa sección y cree una aplicación con barras de desplazamiento y, a continuación, deshabilite los gestos. Si ya tiene una aplicación con barras de desplazamiento en funcionamiento, deshabilite los gestos como se describe en esa sección.
 
 ## <a name="add-custom-panning-support-for-gesture-pan-messages"></a>Agregar compatibilidad de movimiento panorámico personalizado para mensajes de desplazamiento panorámico de gestos
 
-Para admitir mensajes de movimiento de panorámica, debe controlarlos en el **método WndProc.** Los mensajes de gesto se usan para determinar las diferencias horizontales y verticales de los mensajes de desplazamiento horizontal. Las diferencias se usan para actualizar el objeto de barra de desplazamiento, que actualiza la interfaz de usuario.
+Para admitir mensajes de movimiento de panorámica, debe controlarlos en el **método WndProc.** Los mensajes de gesto se usan para determinar los deltas horizontales y verticales de los mensajes de desplazamiento horizontal. Las diferencias se usan para actualizar el objeto de barra de desplazamiento, que actualiza la interfaz de usuario.
 
-En primer lugar, actualice Windows configuración de versión del archivo targetver.h para habilitar Windows Touch. El código siguiente muestra las distintas Windows de versión que deben reemplazar a las de targetver.h.
+En primer lugar, actualice Windows configuración de la versión del archivo targetver.h para habilitar Windows Touch. En el código siguiente se muestran los Windows configuración de la versión que deben reemplazar a los de targetver.h.
 
 
 ```C++
@@ -72,7 +72,7 @@ A continuación, agregue el archivo UXTheme.h al proyecto y agregue la bibliotec
 
 
 
-A continuación, agregue las siguientes variables a la parte superior de **la función WndProc.** Se usarán en cálculos para el movimiento panorámico.
+A continuación, agregue las siguientes variables a la parte superior de la **función WndProc.** Se usarán en cálculos para el movimiento panorámico.
 
 
 ```C++
@@ -87,7 +87,7 @@ GESTUREINFO gi;
 
 
 
-A continuación, agregue el controlador para el mensaje [**\_ WM GESTURE**](wm-gesture.md) para que las barras de desplazamiento se actualicen con diferencias basadas en gestos de movimiento panorámico. Esto le proporciona un control mucho más preciso del movimiento panorámico.
+A continuación, agregue el controlador para el mensaje [**WM \_ GESTURE**](wm-gesture.md) para que las barras de desplazamiento se actualicen con diferencias basadas en gestos de desplazamiento panorámico. Esto le proporciona un control mucho más preciso del movimiento panorámico.
 
 El código siguiente obtiene la estructura [**GESTUREINFO**](/windows/win32/api/winuser/ns-winuser-gestureinfo) de *lParam,* guarda la última coordenada y de la estructura y determina el cambio de posición para actualizar el objeto de barra de desplazamiento. El código siguiente debe colocarse en la **instrucción switch de WndProc.**
 
@@ -160,11 +160,11 @@ El código siguiente obtiene la estructura [**GESTUREINFO**](/windows/win32/api/
 
 
 
-Ahora, cuando realice el gesto de desplazamiento horizontal en la ventana, verá el desplazamiento de texto con inercia. En este punto, es posible que desee cambiar el texto para que tenga más líneas para que pueda explorar el movimiento panorámico de secciones grandes de texto.
+Ahora, cuando realice el gesto de panorámica en la ventana, verá el desplazamiento de texto con inercia. En este punto, es posible que desee cambiar el texto para que tenga más líneas para que pueda explorar el movimiento panorámico de secciones grandes de texto.
 
 ## <a name="boundary-feedback-in-wndproc"></a>Comentarios de límites en WndProc
 
-Los comentarios de límites son un tipo de comentarios visuales que se dan a los usuarios cuando llegan al final de un área que se puede desplazar. La aplicación la desencadena cuando se alcanza un límite. En la implementación de ejemplo anterior del mensaje [**WM \_ GESTURE,**](wm-gesture.md) la condición final del caso WM GESTURE se usa para probar que se ha alcanzado el final de una región que se puede `(si.nPos == si.yPos)` **\_** desplazar. Las variables siguientes se usan para realizar un seguimiento de los valores y probar los errores.
+Los comentarios de límites son un tipo de comentarios visuales que se dan a los usuarios cuando llegan al final de un área que se puede desplazar. La aplicación la desencadena cuando se alcanza un límite. En la implementación de ejemplo anterior del mensaje [**WM \_ GESTURE,**](wm-gesture.md) la condición final del caso WM GESTURE se usa para probar que se ha alcanzado el final de una región que se puede `(si.nPos == si.yPos)` **\_** desplazar. Las siguientes variables se usan para realizar un seguimiento de los valores y probar los errores.
 
 
 ```C++

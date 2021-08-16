@@ -1,7 +1,7 @@
 ---
-description: Convierte una cadena hexadecimal en una cadena empaquetada como binaria.
+description: Convierte una cadena hexadecimal en una cadena empaquetada binariamente.
 ms.assetid: 1f5fabf3-0729-44f8-bda7-a10b98c6e933
-title: Utilities. HexToBinary (método)
+title: Método Utilities.HexToBinary
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 79276f206cebc0490bff0ba9d44810bed83bce70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c44290a38d041acf17dfe1a9e3e274674d9d5c15091cfa5767e6974e72bb2b71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118896391"
 ---
-# <a name="utilitieshextobinary-method"></a>Utilities. HexToBinary (método)
+# <a name="utilitieshextobinary-method"></a>Método Utilities.HexToBinary
 
-\[El método **HexToBinary** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos.\]
+\[El **método HexToBinary** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos.\]
 
-El método **HexToBinary** convierte una cadena hexadecimal en una cadena empaquetada como binaria.
+El **método HexToBinary** convierte una cadena hexadecimal en una cadena empaquetada binariamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,33 +41,33 @@ Utilities.HexToBinary( _
 
 <dl> <dt>
 
-*HexString* \[ de\]
+*HexString* \[ En\]
 </dt> <dd>
 
-Cadena hexadecimal que se va a convertir en una cadena empaquetada como binaria.
+Cadena hexadecimal que se va a convertir en una cadena empaquetada binariamente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Cadena empaquetada como binaria que es equivalente a la cadena hexadecimal especificada.
+Cadena empaquetada binariamente equivalente a la cadena hexadecimal especificada.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Sectores públicos**](utilities.md)
+[**Utilidades**](utilities.md)
 </dt> </dl>
 
  

@@ -23,7 +23,7 @@ La cláusula WHERE especifica las condiciones que determinan si un documento se 
 
 
 
-El alias <grupo de> parte de la cláusula simplifica las consultas complejas mediante la asignación de un alias a un grupo de \_ una o varias columnas. Esto puede mejorar la legibilidad de consultas complejas que buscan la misma información en varias columnas especificadas por direcciones URL. Para obtener más información sobre los alias de grupo, [vea WITH -- AS Group Alias Predicate](-search-sql-with-as.md).
+El alias <grupo> parte de la cláusula simplifica las consultas complejas asignando un alias a un grupo de una o \_ varias columnas. Esto puede mejorar la legibilidad de las consultas complejas que buscan la misma información en varias columnas especificadas por las direcciones URL. Para obtener más información sobre los alias de grupo, [vea WITH -- AS Group Alias Predicate](-search-sql-with-as.md).
 
 La parte de la cláusula WHERE es uno o varios predicados de búsqueda que especifican criterios <search condition> de coincidencia para la búsqueda. Los predicados de búsqueda son expresiones que declaran algún hecho sobre algún valor.
 
@@ -61,7 +61,7 @@ Los operadores lógicos del mismo tipo son asociativos y no hay ningún orden de
 
 En consultas complejas, es posible que quiera hacer más énfasis en las coincidencias en algunas columnas que en otras. Por ejemplo, al buscar documentos que analicen el "diseño de software", es más probable que buscar el término de búsqueda en el título del documento sea una buena coincidencia que buscar las palabras individuales en el texto del documento. Para influir en la clasificación de documentos de esta manera, el lenguaje de consulta de Microsoft Windows Search admite la ponderación de las condiciones de búsqueda. Para obtener más información sobre la ponderación de columnas, vea [CONTAINS Predicate](-search-sql-contains.md) y [FREETEXT Predicate](-search-sql-freetext.md).
 
-Hay tres grupos de predicados de búsqueda en Windows Search: búsquedas de texto completo, texto no completo y profundidad de carpeta. Los predicados de búsqueda de texto completo suelen coincidir con el significado del contenido, el título y otras columnas, y admiten la coincidencia lingüística (por ejemplo, formas de palabras alternativas, frases y búsqueda de proximidad). En cambio, los predicados de búsqueda que no son de texto completo coinciden con el valor de las columnas especificadas y no incluyen ningún procesamiento lingüístico especial, pero en varios casos ofrecen coincidencia de patrones basados en caracteres. Los predicados de profundidad de carpeta restringen el ámbito de búsqueda a una ruta de acceso especificada.
+Hay tres grupos de predicados de búsqueda en Windows Search: búsquedas de texto completo, texto no completo y profundidad de carpeta. Los predicados de búsqueda de texto completo suelen coincidir con el significado del contenido, el título y otras columnas, y admiten la coincidencia lingüística (por ejemplo, formularios de palabras alternativos, frases y búsqueda de proximidad). En cambio, los predicados de búsqueda que no son de texto completo coinciden con el valor de las columnas especificadas y no incluyen ningún procesamiento lingüístico especial, pero en varios casos ofrecen coincidencia de patrones basados en caracteres. Los predicados de profundidad de carpeta restringen el ámbito de búsqueda a una ruta de acceso especificada.
 
 > [!Note]  
 > Si la consulta devuelve un documento porque un predicado de texto no completo se evalúa como **TRUE** para ese documento, el valor de rango se calcula como 1000. El uso [de la función rank coercion](-search-sql-rankby.md) puede modificar el valor de rango.
@@ -74,7 +74,7 @@ En las tablas siguientes se describen los predicados de búsqueda de profundidad
 
 | Predicado de texto completo                  | Descripción                                                                                                                                                                                                                                                      |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CONTAINS](-search-sql-contains.md) | Admite búsquedas complejas de términos en columnas de texto del documento (por ejemplo, título o contenido). Puede buscar formas inflectadas de los términos de búsqueda, probar la proximidad de los términos y realizar comparaciones lógicas. Los términos de búsqueda pueden incluir caracteres comodín. |
+| [CONTAINS](-search-sql-contains.md) | Admite búsquedas complejas de términos en columnas de texto del documento (por ejemplo, título o contenido). Puede buscar formas detalladas de los términos de búsqueda, probar la proximidad de los términos y realizar comparaciones lógicas. Los términos de búsqueda pueden incluir caracteres comodín. |
 | [FREETEXT](-search-sql-freetext.md) | Busca documentos que coincidan con el significado de la frase de búsqueda. Las palabras relacionadas y frases similares coincidirán, con la columna rank calculada en función de la coincidencia del documento con la frase de búsqueda. Los términos de búsqueda no pueden incluir caracteres comodín.  |
 
 
@@ -86,7 +86,7 @@ En las tablas siguientes se describen los predicados de búsqueda de profundidad
 | Predicado de texto no completo                                                    | Descripción                                                                                                                                                                           |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [LIKE](-search-sql-like.md)                                               | Los valores de columna se comparan mediante la coincidencia de patrones simples con caracteres comodín.                                                                                                    |
-| [Comparación de valores literales](-search-sql-literalvaluecomparison.md)         | Los valores de columna se comparan con los valores de cadena, fecha, marca de tiempo, numéricos y otros valores literales. Este predicado admite igualdad y desigualdades, como mayor que y menor que. |
+| [Comparación de valores literales](-search-sql-literalvaluecomparison.md)         | Los valores de columna se comparan con valores de cadena, fecha, marca de tiempo, numéricos y otros valores literales. Este predicado admite igualdad y desigualdades, como mayor que y menor que. |
 | [Comparaciones multivalor (ARRAY)](-search-sql-multivaluedcomparisons.md) | Las columnas multivalor se comparan con una matriz de literales de varios valores.                                                                                                             |
 | [NULL](-search-sql-null.md)                                               | Los valores de columna que no están definidos para el documento se pueden detectar mediante el predicado **NULL.**                                                                                    |
 
@@ -125,7 +125,7 @@ Para obtener ejemplos de la cláusula WHERE, vea los temas de predicado individu
 [FROM (Cláusula)](-search-sql-from.md)
 </dt> <dt>
 
-[Información general sobre la sintaxis de SQL búsqueda](-search-sql-ovwofsearchquery.md)
+[Información general de la sintaxis de SQL búsqueda](-search-sql-ovwofsearchquery.md)
 </dt> <dt>
 
 [WITH : predicado de alias de grupo de AS](-search-sql-with-as.md)

@@ -1,7 +1,7 @@
 ---
-description: Usa la huella digital de certificado proporcionada para obtener la clave derivada y desbloquear el volumen cifrado.
+description: Usa la huella digital del certificado proporcionada para obtener la clave derivada y desbloquear el volumen cifrado.
 ms.assetid: 41c25d17-db1b-427e-907b-a547483927e0
-title: Método UnlockWithCertificateThumbprint de la clase Win32_EncryptableVolume
+title: Método UnlockWithCertificateThumbprint de la Win32_EncryptableVolume clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 5955334b6c147feea43d5e0a2c83a8e00050d900
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ccf4a68f999bee1d32d8025759eb9625371b18fc5028b54e68e62df544bbd7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891371"
 ---
-# <a name="unlockwithcertificatethumbprint-method-of-the-win32_encryptablevolume-class"></a>Método UnlockWithCertificateThumbprint de la \_ clase EncryptableVolume de Win32
+# <a name="unlockwithcertificatethumbprint-method-of-the-win32_encryptablevolume-class"></a>Método UnlockWithCertificateThumbprint de la clase EncryptableVolume de Win32 \_
 
-El método **UnlockWithCertificateThumbprint** de la [**clase \_ EncryptableVolume de Win32**](win32-encryptablevolume.md) usa la huella digital de [*certificado*](../secgloss/c-gly.md) proporcionada para obtener la clave derivada y desbloquear el volumen cifrado.
+El **método UnlockWithCertificateThumbprint** de la clase [**\_ EncryptableVolume de Win32**](win32-encryptablevolume.md) usa la huella digital del certificado proporcionada para obtener la clave derivada y desbloquear el volumen cifrado. [](../secgloss/c-gly.md)
 
 > [!Note]  
-> Si el disco es compatible con el cifrado de hardware, esta función establece el estado de la banda en "desbloqueado" "
+> Si el disco admite el cifrado de hardware, esta función establece el estado de la banda en "desbloqueado""
 
  
 
@@ -45,39 +45,39 @@ uint32 UnlockWithCertificateThumbprint(
 
 <dl> <dt>
 
-*CertThumbprint* \[ de\]
+*CertThumbprint* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Se acepta un valor de huella digital de 0 y se produce una búsqueda del certificado adecuado en el almacén local. Si se encuentra un solo certificado de BitLocker, la búsqueda se realizará correctamente. Si no se encuentra ninguno o más de un certificado, se produce un error en el método.
+Se acepta un valor de huella digital de 0 y se produce una búsqueda en el almacén local para el certificado adecuado. Si se encuentra un único certificado de BitLocker, la búsqueda se realiza correctamente. Si no se encuentra ninguno o más de un certificado, se produce un error en el método .
 
 </dd> <dt>
 
-*Código PIN* \[ de\]
+*PIN* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Cadena de identificación personal especificada por el usuario. Esta cadena debe estar formada por una secuencia de 4 a 20 dígitos. Esta cadena se usa para autenticar de forma silenciosa el [*proveedor de almacenamiento de claves*](../secgloss/k-gly.md) (KSP) cuando se usa con una [*tarjeta inteligente*](../secgloss/s-gly.md).
+Cadena de identificación personal especificada por el usuario. Esta cadena debe constar de una secuencia de 4 a 20 dígitos. Esta cadena se usa para autenticar de forma silenciosa el proveedor [*de almacenamiento de*](../secgloss/k-gly.md) claves (KSP) cuando se usa con una tarjeta [*inteligente*](../secgloss/s-gly.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Este método devuelve uno de los siguientes códigos u otro código de error si se produce un error.
+Este método devuelve uno de los códigos siguientes u otro código de error si se produce un error.
 
 
 
 | Código o valor devuelto                                                                                                                                                                            | Descripción                                                                                                                                                                                                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl>                                            | Método realizado correctamente.<br/>                                                                                                                                                                                                                                    |
-| <dl> <dt>**FVE \_ E \_ no \_ activada**</dt> <dt>2150694920 (0x80310008)</dt> </dl>           | BitLocker no está habilitado en el volumen. Agregue un protector de clave para habilitar BitLocker. <br/>                                                                                                                                                                             |
-| <dl> <dt>**FVE \_ E \_ error de \_ autenticación**</dt> <dt>2150694951 (0x80310027)</dt> </dl>   | No se puede desbloquear el volumen con la información proporcionada. <br/>                                                                                                                                                                                             |
-| <dl> <dt>**FVE \_ \_ \_ No \_ se encontró el protector E**</dt> <dt>2150694963 (0x80310033)</dt> </dl>    | El protector de clave proporcionado no existe en el volumen. Debe especificar otro protector de clave.<br/>                                                                                                                                                                |
-| <dl> <dt>**FVE \_ Error de E \_ PRIVATEKEY \_ auth \_**</dt> <dt>2150695060 (0x80310094)</dt> </dl> | No se pudo autorizar la [*clave privada*](../secgloss/p-gly.md) asociada al certificado especificado. No se proporcionó la autorización de clave privada o la autorización proporcionada no era válida.<br/> |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                                            | Método realizado correctamente.<br/>                                                                                                                                                                                                                                    |
+| <dl> <dt>**FVE \_ E \_ NOT \_ ACTIVATED**</dt> <dt>2150694920 (0x80310008)</dt> </dl>           | BitLocker no está habilitado en el volumen. Agregue un protector de clave para habilitar BitLocker. <br/>                                                                                                                                                                             |
+| <dl> <dt>**FVE \_ E \_ ERROR \_ DE AUTENTICACIÓN**</dt> 2150694951 <dt>(0x80310027)</dt> </dl>   | El volumen no se puede desbloquear mediante la información proporcionada. <br/>                                                                                                                                                                                             |
+| <dl> <dt>**FVE \_ E \_ PROTECTOR \_ NO \_ ENCONTRADO**</dt> <dt>2150694963 (0x80310033)</dt> </dl>    | El protector de clave proporcionado no existe en el volumen. Debe escribir otro protector de clave.<br/>                                                                                                                                                                |
+| <dl> <dt>**FVE \_ E \_ PRIVATEKEY \_ AUTH \_ FAILED**</dt> <dt>2150695060 (0x80310094)</dt> </dl> | No [*se pudo*](../secgloss/p-gly.md) autorizar la clave privada asociada al certificado especificado. No se proporcionó la autorización de clave privada o la autorización proporcionada no era válida.<br/> |
 
 
 
@@ -87,16 +87,16 @@ Este método devuelve uno de los siguientes códigos u otro código de error si 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones Windows 7 Enterprise, Windows 7 Ultimate \[ Desktop\]<br/>                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\MicrosoftVolumeEncryption de \\ seguridad de cimv2 raíz \\<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise, Windows 7 aplicaciones de \[ escritorio Ultimate\]<br/>                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

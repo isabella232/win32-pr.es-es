@@ -25,15 +25,15 @@ ms.locfileid: "118433881"
 ---
 # <a name="guid-values"></a>Valores GUID
 
-En las secciones siguientes se enumeran los valores GUID que se usan en Windows SDK de formato multimedia y las constantes globales que se usan para representarlos.
+En las secciones siguientes se enumeran los valores GUID usados en el SDK Windows Media Format y las constantes globales que se usan para representarlos.
 
 
 
 | Sección                                                  | Descripción                                                                                                               |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | [Identificadores de interfaz](interface-identifiers.md)       | Enumera los valores GUID y las constantes asociadas para las interfaces admitidas por el SDK Windows Media Format.              |
-| [Identificadores de tipo de medio](media-type-identifiers.md)     | Enumera los valores GUID y las constantes asociadas para los tipos de medios admitidos por Windows SDK de formato multimedia.             |
-| [Tipos de exclusión mutua](mutual-exclusion-types.md)     | Enumera los valores GUID y las constantes asociadas para los tipos de exclusión mutua admitidos por Windows SDK de formato multimedia.  |
+| [Identificadores de tipo de medio](media-type-identifiers.md)     | Enumera los valores GUID y las constantes asociadas para los tipos de medios admitidos por el SDK Windows Media Format.             |
+| [Tipos de exclusión mutua](mutual-exclusion-types.md)     | Enumera los valores GUID y las constantes asociadas para los tipos de exclusión mutua admitidos por el SDK Windows Media Format.  |
 | [Tipos de uso compartido de ancho de banda](bandwidth-sharing-types.md)   | Enumera los valores GUID y las constantes asociadas para los tipos de uso compartido de ancho de banda admitidos por Windows SDK de formato multimedia. |
 | [Tipos de categoría de marca de agua](watermark-category-types.md) | Enumera los valores GUID y las constantes asociadas que identifican las marcas de agua DMO categorías.                                 |
 

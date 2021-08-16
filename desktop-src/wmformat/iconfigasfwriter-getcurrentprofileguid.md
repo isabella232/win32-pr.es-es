@@ -1,10 +1,10 @@
 ---
-title: Método IConfigAsfWriter GetCurrentProfileGuid
+title: IConfigAsfWriter GetCurrentProfileGuid (método)
 description: El método GetCurrentProfileGuid recupera el GUID Windows perfil del sistema multimedia actual.
 ms.assetid: e7a2ecc0-48d4-446c-852a-0d7677cbbe71
 keywords:
 - Método GetCurrentProfileGuid windows Media Format
-- Método GetCurrentProfileGuid de windows Media Format, interfaz IConfigAsfWriter
+- Método GetCurrentProfileGuid windows Media Format, interfaz IConfigAsfWriter
 - IConfigAsfWriter interface windows Media Format , GetCurrentProfileGuid (método)
 topic_type:
 - apiref
@@ -52,11 +52,11 @@ Puntero a una variable de tipo **GUID** que identifica el perfil del sistema act
 
 Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método no se usa con perfiles personalizados (incluidos todos los perfiles que incluyen secuencias que usan los códecs de audio y vídeo multimedia de Windows) porque todos estos perfiles los crean las aplicaciones y no tienen ningún identificador GUID. Si no se carga ningún perfil del sistema, *pProfileGuid* se establecerá en **NULL.**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

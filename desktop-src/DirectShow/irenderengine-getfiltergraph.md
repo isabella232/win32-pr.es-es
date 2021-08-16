@@ -28,7 +28,7 @@ ms.locfileid: "118397586"
 
  
 
-El método recupera el gráfico de filtro que ha construido el `GetFilterGraph` motor de representación, si lo hay.
+El método recupera el gráfico de filtro que ha construido `GetFilterGraph` el motor de representación, si lo hay.
 
 ## <a name="syntax"></a>Sintaxis
 

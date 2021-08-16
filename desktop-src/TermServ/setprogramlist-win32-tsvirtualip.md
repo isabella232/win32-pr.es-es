@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método SetProgramList Servicios de Escritorio remoto
 - Método SetProgramList Servicios de Escritorio remoto , Win32_TSVirtualIP clase
-- Win32_TSVirtualIP clase Servicios de Escritorio remoto método , SetProgramList
+- Win32_TSVirtualIP clase Servicios de Escritorio remoto , método SetProgramList
 topic_type:
 - apiref
 api_name:
@@ -48,7 +48,7 @@ unint32 SetProgramList(
 
 Tipo: **\[ \] cadena**
 
-Matriz de cadenas que contienen la ruta de acceso y los nombres de archivo de los programas que usan la virtualización ip.
+Matriz de cadenas que contienen la ruta de acceso y los nombres de archivo de los programas que usan la virtualización de IP.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 

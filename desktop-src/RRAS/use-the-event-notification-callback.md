@@ -1,28 +1,28 @@
 ---
 title: Usar la devolución de llamada de notificación de eventos
-description: En el procedimiento siguiente se describen los pasos que el cliente debe usar para recibir mensajes de notificación de cambios de la \_ devolución de llamada de evento RTM \_ . En el código de ejemplo siguiente se muestra cómo implementar el procedimiento.
+description: En el procedimiento siguiente se describen los pasos que el cliente debe usar para recibir mensajes de notificación de cambios de la devolución de llamada \_ DE EVENTOS \_ RTM. El código de ejemplo siguiente muestra cómo implementar el procedimiento.
 ms.assetid: e079c585-6457-4c2c-82bd-e95d233c4aa6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85a650a762600c254979aaea974379b4021d0d73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a524c162aed66fec2112c3d0aeb61743b94c2eee131a10f935dba876a480baae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127825"
 ---
 # <a name="use-the-event-notification-callback"></a>Usar la devolución de llamada de notificación de eventos
 
-En el procedimiento siguiente se describen los pasos que el cliente debe usar para recibir mensajes de notificación de cambios de la \_ devolución de llamada de evento RTM \_ . En el código de ejemplo siguiente se muestra cómo implementar el procedimiento.
+En el procedimiento siguiente se describen los pasos que el cliente debe usar para recibir mensajes de notificación de cambios de la devolución de llamada \_ DE EVENTOS \_ RTM. El código de ejemplo siguiente muestra cómo implementar el procedimiento.
 
-**Recuperación de los mensajes de notificación de cambios**
+**Cómo recuperar los mensajes de notificación de cambios**
 
-1.  Llame a [**RtmGetChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) para recuperar un conjunto de cambios.
-2.  Procesa los cambios.
-3.  Libere los destinos mediante [**RtmReleaseChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleasechangeddests).
-4.  Repita los pasos 1, 2 y 3 hasta que [**RtmGetChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) devuelva el error \_ no \_ más \_ elementos.
+1.  Llame [**a RtmGetChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) para recuperar un conjunto de cambios.
+2.  Procese los cambios.
+3.  Libere los destinos [**mediante RtmReleaseChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleasechangeddests).
+4.  Repita los pasos 1, 2 y 3 hasta [**que RtmGetChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) devuelva ERROR \_ NO MORE \_ \_ ITEMS.
 
-En el código de ejemplo siguiente se muestra cómo procesar una devolución de llamada de [**\_ devolución de \_ llamada de evento RTM**](/windows/win32/api/rtmv2/nc-rtmv2-_event_callback) recibida desde el administrador de tablas de enrutamiento.
+En el código de ejemplo siguiente se muestra cómo procesar una devolución de llamada de [**\_ \_ devolución**](/windows/win32/api/rtmv2/nc-rtmv2-_event_callback) de llamada de EVENTO RTM recibida del administrador de tablas de enrutamiento.
 
 
 ```C++
@@ -217,9 +217,9 @@ EntityEventCallback (
 
 
 
- 
+ 
 
- 
+ 
 
 
 

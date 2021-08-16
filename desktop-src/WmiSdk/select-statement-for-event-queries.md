@@ -25,7 +25,7 @@ SELECT * FROM EventClass
 
 
 
-Cuando un consumidor envía una consulta, es una solicitud para recibir una notificación de todas las repeticiones del evento representado por **EventClass**. Esta solicitud incluye una solicitud de notificación sobre todas las propiedades del sistema de eventos y no del sistema. Cuando un proveedor de eventos envía una consulta, registra la compatibilidad para generar notificaciones cuando se produce un evento representado **por EventClass.**
+Cuando un consumidor envía una consulta, es una solicitud para recibir una notificación de todas las apariciones del evento representado por **EventClass**. Esta solicitud incluye una solicitud de notificación sobre todas las propiedades del sistema de eventos y no del sistema. Cuando un proveedor de eventos envía una consulta, registra la compatibilidad para generar notificaciones cuando se produce un evento representado **por EventClass.**
 
 Los consumidores pueden especificar propiedades individuales en lugar del asterisco ( \* ) en la instrucción SELECT.
 
@@ -58,7 +58,7 @@ SELECT targetInstance.Name FROM __InstanceCreationEvent within 2
 
 
 
-Si una propiedad del sistema no es relevante para una consulta específica, contiene **NULL.** Por ejemplo, el valor de la propiedad **\_ \_ del sistema RELPATH** es **NULL para** todas las consultas de eventos.
+Si una propiedad del sistema no es relevante para una consulta específica, contiene **NULL.** Por ejemplo, el valor de la propiedad del sistema **\_ \_ RELPATH** es **NULL para** todas las consultas de eventos.
 
 Las siguientes propiedades del sistema contienen **NULL para** las consultas de eventos:
 
@@ -68,9 +68,9 @@ Las siguientes propiedades del sistema contienen **NULL para** las consultas de 
 \_\_Servidor  
 </dl>
 
-Para obtener más información, vea [Referencia de propiedades del sistema WMI](wmi-system-properties.md).
+Para obtener más información, vea [Referencia de propiedades del sistema WMI.](wmi-system-properties.md)
 
-Todas las consultas de eventos pueden incluir una cláusula [WHERE](where-clause.md)opcional, pero los consumidores usan principalmente las cláusulas WHERE para especificar filtrado adicional. Se recomienda encarecidamente que los consumidores siempre especifiquen una cláusula WHERE. El costo de una consulta compleja es mínimo en comparación con el costo de entregar y procesar notificaciones innecesarios.
+Todas las consultas de eventos pueden incluir una cláusula [WHERE](where-clause.md)opcional, pero los consumidores usan principalmente las cláusulas WHERE para especificar un filtrado adicional. Se recomienda encarecidamente que los consumidores siempre especifiquen una cláusula WHERE. El costo de una consulta compleja es mínimo en comparación con el costo de entregar y procesar notificaciones innecesarios.
 
 En el ejemplo siguiente se muestra una consulta que solicita notificaciones de todos los eventos de modificación de instancias que afectan a la clase hipotética **EmailEvent**.
 
@@ -92,11 +92,11 @@ SELECT * FROM EmailEvent WHERE EmailImportance > 3
 
 
 
-Tenga en cuenta que WMI puede rechazar una consulta por varios motivos. Por ejemplo, la consulta puede ser demasiado compleja o con un uso intensivo de recursos para la evaluación. Cuando esto ocurre, WMI devuelve códigos de error específicos, como **WBEM \_ E INVALID \_ \_ QUERY**.
+Tenga en cuenta que WMI puede rechazar una consulta por varios motivos. Por ejemplo, la consulta puede ser demasiado compleja o con un uso intensivo de recursos para la evaluación. Cuando esto sucede, WMI devuelve códigos de error específicos, como **WBEM \_ E INVALID \_ \_ QUERY**.
 
 Las propiedades de los objetos incrustados se pueden usar en la cláusula WHERE.
 
-En el ejemplo siguiente se muestra cómo consultar objetos donde la propiedad **TargetInstance** de la clase del sistema [**\_ \_ InstanceModificationEvent**](--instancemodificationevent.md) es un objeto [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) incrustado y **FreeSpace** es una propiedad de **Win32 \_ LogicalDisk.**
+En el ejemplo siguiente se muestra cómo consultar objetos donde la propiedad **TargetInstance** de la clase del sistema [**\_ \_ InstanceModificationEvent**](--instancemodificationevent.md) es un objeto [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) incrustado y **FreeSpace** es una propiedad de **Win32 \_ LogicalDisk**.
 
 
 ```sql
@@ -109,7 +109,7 @@ SELECT * FROM __InstanceModificationEvent WITHIN 600
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de VBScript Monitor creation event for [specific process name](https://Gallery.TechNet.Microsoft.Com/52716121-f386-49de-86cd-46ca54d1714f) on TechNet (Supervisar el evento de creación del nombre de proceso específico en TechNet) usa la instrucción SELECT para supervisar los eventos de creación de instancias wmi para el proceso Win32, filtrando por un nombre de proceso \_ específico.
+El ejemplo de VBScript monitor creation event for [specific process name](https://Gallery.TechNet.Microsoft.Com/52716121-f386-49de-86cd-46ca54d1714f) on TechNet usa la instrucción SELECT para supervisar los eventos de creación de instancias WMI para el proceso Win32, filtrando por un nombre de proceso \_ específico.
 
  
 

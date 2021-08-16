@@ -32,7 +32,7 @@ En este tema se incluyen las siguientes secciones.
 
 La descodificación progresiva proporciona la capacidad de descodificar y representar incrementalmente partes de una imagen antes de que la imagen completa haya terminado de descargarse. Esta característica mejora en gran medida la experiencia del usuario al ver imágenes desde Internet, ya que el usuario no tiene que esperar a que se descargue toda la imagen antes de que pueda comenzar la decodificación. Los usuarios pueden ver una vista previa de la imagen con los datos disponibles mucho antes de que se descargue toda la imagen. Esta característica es esencial para cualquier aplicación que se utilice para ver imágenes desde Internet o desde orígenes de datos con ancho de banda limitado.
 
-El Windows Imaging Component (WIC) de Windows 7 admite la codificación progresiva de formatos de imagen populares, como JPEG, PNG y GIF. WIC también admite cualquier códec que no sea de Microsoft habilitado para WIC que implemente la decodificación progresiva. La codificación progresiva no se admite en la versión actual de WIC. En este tema se describe la decodación progresiva en Windows 7 y el procedimiento para habilitar la descodación progresiva en las aplicaciones.
+El Windows Imaging Component (WIC) de Windows 7 admite la codificación progresiva de formatos de imagen populares, como JPEG, PNG y GIF. WIC también admite cualquier códec que no sea de Microsoft habilitado para WIC que implemente la decodificación progresiva. La codificación progresiva no se admite en la versión actual de WIC. En este tema se describe la descodación progresiva en Windows 7 y el procedimiento para habilitar la decodificación progresiva en las aplicaciones.
 
 ## <a name="what-is-progressive-decoding"></a>¿Qué es la decodación progresiva?
 
@@ -46,9 +46,9 @@ Las imágenes deben codificarse específicamente para implementar la descodifica
 
 ## <a name="progressive-decoding-support-in-windows-7"></a>Compatibilidad con la decodificación progresiva en Windows 7
 
-Windows 7 proporciona códecs integrados que admiten la codificación progresiva para formatos de imagen JPEG, PNG y GIF. Cada uno de estos Windows 7 códecs realizan varias pasadas de decodificación en una imagen. Cada paso corresponde a un nivel y una parte determinados de la imagen descodificada, lo que finalmente conduce a una imagen totalmente descodificada.
+Windows 7 proporciona códecs integrados que admiten la codificación progresiva para formatos de imagen JPEG, PNG y GIF. Cada uno de Windows 7 códecs realizan varias pasadas de decodificación en una imagen. Cada paso corresponde a un nivel y una parte determinados de la imagen descodificada, lo que finalmente conduce a una imagen totalmente descodificada.
 
-Cada formato de imagen controla la descodación progresiva de una manera diferente. En la tabla siguiente se proporciona información sobre el número de niveles progresivas y el método de decoding admitido por Windows 7 formatos de decodificación progresiva. 
+Cada formato de imagen controla la descodación progresiva de una manera diferente. En la tabla siguiente se proporciona información sobre el número de niveles progresivas y el método de decoding admitido por los Windows 7 formatos de decodificación progresiva. 
 
 | Formato de imágenes | Número de niveles progresivas admitidos | Método de decodificación progresiva |
 |--------------|----------------------------------------|-----------------------------|
@@ -97,24 +97,24 @@ Los archivos de imagen PNG proporcionan siete niveles progresivas para la decodi
 
  
 
-En la tabla anterior, puede determinar los píxeles que se descodificarán con cada paso del descodificador. A diferencia del códec GIF Windows 7, el códec PNG Windows 7 replica el píxel más a la izquierda disponible en una línea de examen para rellenar píxeles vacíos.
+En la tabla anterior, puede determinar los píxeles que se descodificarán con cada paso del descodificador. A diferencia del Windows 7 códec GIF, el códec PNG Windows 7 replica el píxel más disponible de la izquierda en una línea de examen para rellenar píxeles vacíos.
 
-En las imágenes siguientes se muestra un ejemplo del códec de Windows 7 PNG en tres niveles progresivas.
+Las imágenes siguientes muestran un ejemplo del códec de Windows 7 PNG progresiva en tres niveles progresivas.
 
-![ejemplos de lacodación progresiva de png](graphics/PNG_Progressive_Comparison.jpg)
+![ejemplos de lacoding progresiva png](graphics/PNG_Progressive_Comparison.jpg)
 
-La imagen de la parte superior izquierda muestra una imagen PNG descodificada en el nivel progresiva 0. La imagen de la parte superior derecha muestra la misma imagen PNG descodificada en el nivel 3 progresiva. La imagen inferior muestra la misma imagen totalmente descodificada después de 7 niveles progresivas.
+La imagen de la parte superior izquierda muestra una imagen PNG descodificada en el nivel 0 progresiva. La imagen de la parte superior derecha muestra la misma imagen PNG descodificada en el nivel 3 progresiva. La imagen inferior muestra la misma imagen totalmente descodificada después de 7 niveles progresivas.
 
 ### <a name="gif-progressive-decoding"></a>Decodación progresiva de GIF
 
-Los archivos de imagen GIF proporcionan cuatro niveles progresivas para lacodización, como se describe en la especificación GIF. Cada paso rellena determinadas filas dentro de una imagen, lo que genera una imagen completa después del cuarto paso. En la tabla siguiente de la especificación GIF se muestra qué líneas de examen se descodifican mediante cada paso del descodificador. 
+Los archivos de imagen GIF proporcionan cuatro niveles progresivas para la decodificación, como se describe en la especificación GIF. Cada paso rellena determinadas filas dentro de una imagen, generando una imagen completa después del cuarto paso. En la tabla siguiente de la especificación GIF se muestran las líneas de examen descodificadas por cada paso del descodificador. 
 
-| Número de nivel/número de paso | Examinar líneas rellenadas   | Inicio de la línea de examen |
+| Número de nivel/número de paso | Análisis de líneas rellenadas   | Inicio de la línea de examen |
 |---------------------------|------------------------|--------------------|
-| 1                         | Cada octavo análisis de línea | 0                  |
-| 2                         | Cada octavo análisis de línea | 4                  |
+| 1                         | Cada ocho línea de examen | 0                  |
+| 2                         | Cada ocho línea de examen | 4                  |
 | 3                         | Cada cuarta línea de examen | 2                  |
-| 4                         | Línea de examen por segundo | 1                  |
+| 4                         | Línea de cada segundo de examen | 1                  |
 
 
 
@@ -124,7 +124,7 @@ Aunque los códecs pueden especificar el contenido de píxeles vacíos en cualqu
 
 ## <a name="progressive-decoding-in-applications"></a>Decoding progresiva en aplicaciones
 
-La interfaz de decoding progresiva principal es [**la interfaz IWICProgressiveLevelControl.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) Para obtener una referencia a la interfaz , consulte un marco de imagen ([**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)) para **IWICProgressiveLevelControl**. A continuación, se puede acceder a los métodos progresivas desde la interfaz .
+La interfaz decoding progresiva principal es la [**interfaz IWICProgressiveLevelControl.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) Para obtener una referencia a la interfaz , consulte un marco de imagen ([**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)) para **IWICProgressiveLevelControl**. A continuación, se puede acceder a los métodos progresivas desde la interfaz .
 
 El código siguiente proporciona un ejemplo para usar la codificación progresiva en aplicaciones.
 
@@ -163,11 +163,11 @@ if (pProgressive)
 
 
 
-El código anterior proporciona la funcionalidad básica necesaria para implementar la codificación progresiva en la mayoría de las aplicaciones. Con el código, se puede acceder a los niveles progresivas a medida que los datos de píxeles de imagen están disponibles. La [**función SetCurrentLevel**](/windows/desktop/api/Wincodec/nf-wincodec-iwicprogressivelevelcontrol-setcurrentlevel) bloquea la ejecución hasta que el nivel que se solicita está disponible.
+El código anterior proporciona la funcionalidad básica necesaria para implementar la codificación progresiva en la mayoría de las aplicaciones. Con el código, se puede acceder a los niveles progresivas a medida que los datos de píxeles de imagen estén disponibles. La [**función SetCurrentLevel**](/windows/desktop/api/Wincodec/nf-wincodec-iwicprogressivelevelcontrol-setcurrentlevel) bloquea la ejecución hasta que el nivel que se solicita está disponible.
 
 ## <a name="custom-codec-support-for-progressive-decoding"></a>Compatibilidad con códecs personalizados para lacodización progresiva
 
-Los desarrolladores de códecs pueden optar por implementar [**IWICProgressiveLevelControl**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) si sus formatos de imagen admiten la decodificación progresiva. La compatibilidad con la decodificación progresiva no es un requisito para la detección y el arbitraje por parte de WIC. Sin embargo, la descodación progresiva mejora en gran medida la experiencia del usuario y, si es posible, se debe tener en cuenta la implementación.
+Los desarrolladores de códecs pueden optar por implementar [**IWICProgressiveLevelControl**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) si sus formatos de imagen admiten la decodificación progresiva. La compatibilidad con la descodación progresiva no es un requisito para la detección y el arbitraje de WIC. Sin embargo, la descodación progresiva mejora en gran medida la experiencia del usuario y la implementación debe tenerse en cuenta si es posible.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -176,7 +176,7 @@ Los desarrolladores de códecs pueden optar por implementar [**IWICProgressiveLe
 **Conceptual**
 </dt> <dt>
 
-[Windows Información general sobre componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 **Otros recursos**

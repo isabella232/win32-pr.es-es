@@ -19,7 +19,7 @@ En Microsoft Active Accessibility terminología, hay objetos *accesibles y* *ele
 
 -   [Objetos accesibles](accessible-objects.md)
 -   [Elementos simples](simple-elements.md)
--   [Cómo se usan los IDs secundarios en los parámetros](how-child-ids-are-used-in-parameters.md)
+-   [Cómo se usan los iDs secundarios en los parámetros](how-child-ids-are-used-in-parameters.md)
 -   [Elementos Interfaz de usuario personalizados](custom-user-interface-elements.md)
 -   [Interfaces duales: IAccessible e IDispatch](dual-interfaces--iaccessible-and-idispatch.md)
 -   [Elementos de Interfaz de usuario proporcionados por el sistema](system-provided-user-interface-elements.md)

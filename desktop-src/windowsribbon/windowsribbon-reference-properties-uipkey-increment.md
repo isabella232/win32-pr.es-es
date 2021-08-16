@@ -25,7 +25,7 @@ propertyDescription
       type = VT_DECIMAL
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El incremento PKEY de la interfaz de usuario lo usa una aplicación para consultar cuánto aumenta o disminuye el valor del campo de edición del control Spinner cuando se hace clic en el botón de incremento o \_ \_ decremento. [](windowsribbon-controls-spinner.md)
 

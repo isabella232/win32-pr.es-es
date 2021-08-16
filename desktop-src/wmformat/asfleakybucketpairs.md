@@ -31,7 +31,7 @@ g \_ wszASFLeakyBucketPairs
 
 **BINARIO DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo tiene el formato siguiente:
 
@@ -43,9 +43,9 @@ struct
 };
 ```
 
-Donde *wReserved debe* ser igual a cero y *bucket* es una matriz de estructuras [**WM \_ LEAKY BUCKET \_ \_ PAIR.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_leaky_bucket_pair) La matriz debe contener al menos dos entradas, pero puede ser mayor. El objeto reader usa este atributo para determinar la cantidad de contenido que se va a almacenar en búfer antes de la reproducción.
+Donde *wReserved debe* ser igual a cero y *bucket* es una matriz de estructuras [**WM \_ LEAKY BUCKET \_ \_ PAIR.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_leaky_bucket_pair) La matriz debe contener al menos dos entradas, pero puede ser mayor. El objeto reader usa este atributo para determinar la cantidad de contenido que se almacenará en búfer antes de la reproducción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

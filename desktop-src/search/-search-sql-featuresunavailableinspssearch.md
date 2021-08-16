@@ -1,47 +1,47 @@
 ---
 description: El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con tablas o índices definidos por el usuario.
 ms.assetid: e81c436e-3a33-4b00-9860-9a54bc0eebbf
-title: Características de SQL no disponibles en Microsoft Search
+title: SQL Características no disponibles en Microsoft Windows Search
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20cf0e082a10a7775ca2d880be6153b7d99b6bc7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66adb175aa7fae799e0ad9b69916415f12c94ee984d276b5a2238ebb19ec2f06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716125"
 ---
-# <a name="sql-features-unavailable-in-microsoft-windows-search"></a>Características de SQL no disponibles en Microsoft Search
+# <a name="sql-features-unavailable-in-microsoft-windows-search"></a>SQL Características no disponibles en Microsoft Windows Search
 
-El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con tablas o índices definidos por el usuario. Por este motivo, no se aplican muchas de las instrucciones SQL estándar y las características de sintaxis. A continuación se muestra una lista de las características de SQL más importantes que no se admiten en Windows Search.
+El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con tablas o índices definidos por el usuario. Por este problema, no se aplican muchas instrucciones SQL estándar y características de sintaxis. A continuación se muestra una lista de las características SQL más importantes que no se admiten en Windows Search.
 
 
--   Instrucciones por lotes
--   Coalesce ( \_ función de tabla)
--   CONVERT (función) (usar en su lugar las funciones de conversión)
+-   Instrucciones BATCH
+-   Función COALESCE \_ TABLE
+-   Función CONVERT (use en su lugar las funciones CAST)
 -   CREATE VIEW, instrucción
 -   Lenguaje de definición de datos
--   DATASOURCE (instrucción)
+-   Instrucción DATASOURCE
 -   Formatos de fecha y hora distintos de la marca de fecha y hora ISO
 -   Instrucción DELETE
 -   GRANT, instrucción
 -   Esquema de información
 -   Instrucción INSERT
 -   OLE DB tipos de datos
--   Expresiones regulares de SQL estándar (use Contains o LIKE en su lugar)
--   Parámetros para consultas SQL
+-   SQL expresiones regulares estándar (use CONTAINS o LIKE en su lugar)
+-   Parámetros para SQL consultas
 -   Comparación de columnas relacionales
--   Encabezado de ID. de revisión
+-   Encabezado de identificador de revisión
 -   REVOKE, instrucción
--   Alias de ámbito o números de revisión
--   SELECCIONAR todo (quita los duplicados automáticamente)
+-   Alias scope o números de revisión
+-   SELECT ALL (quita los duplicados automáticamente)
 -   Procedimientos almacenados
 -   Expansión de documentos estructurados
 -   UNION ALL
 -   Palabra clave UNKNOWN
 -   Instrucción UPDATE
 
-Windows Search no admite palabras irrelevantes y de sinónimos.
+Windows La búsqueda no admite el diccionario de sinónimos ni las palabras ruido.
 
  
 

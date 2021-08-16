@@ -1,5 +1,5 @@
 ---
-description: La propiedad Derivation del objeto SWbemObject contiene una matriz de cadenas que describen la jerarquía de derivación de clases para la instancia a la que \_ se hace referencia.
+description: La propiedad Derivation del objeto SWbemObject contiene una matriz de cadenas que describen la jerarquía de derivación de clases para la instancia a la \_ que se hace referencia.
 ms.assetid: 8a4daab0-7d10-4a37-aacd-1f3f499b859a
 ms.tgt_platform: multiple
 title: SWbemObject.Derivation_ propiedad (Wbemdisp.h)

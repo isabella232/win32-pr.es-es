@@ -25,9 +25,9 @@ propertyDescription
       type = VT_VECTOR | VT_UI4
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación usa ui PKEY ThemeColors para consultar los valores de la muestra de color de \_ \_ una clase [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
+Una aplicación usa ui PKEY ThemeColors para consultar los valores de la muestra de \_ \_ color de [**dropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
 
 Cada [valor COLORREF](../gdi/colorref.md) corresponde a una muestra de color en [**un elemento DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) donde se especifica como el valor `ThemeColors` del atributo **ColorTemplate.**
 

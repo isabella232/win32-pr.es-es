@@ -14,7 +14,7 @@ ms.locfileid: "118353887"
 ---
 # <a name="general-programming-guidelines"></a>Directrices generales de programación
 
-En las secciones siguientes se proporcionan directrices generales para desarrollar aplicaciones en un Servicios de Escritorio remoto de trabajo.
+En las secciones siguientes se proporcionan instrucciones generales para desarrollar aplicaciones en Servicios de Escritorio remoto entorno.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,14 +23,14 @@ En las secciones siguientes se proporcionan directrices generales para desarroll
 [Capa de compatibilidad de aplicaciones](application-compatibility-layer.md)
 </dt> <dd>
 
-Para ejecutar aplicaciones heredadas en un entorno Servicios de Escritorio remoto, puede usar el Servicios de Escritorio remoto compatibilidad de aplicaciones.
+Para ejecutar aplicaciones heredadas en un Servicios de Escritorio remoto de aplicaciones, puede usar el Servicios de Escritorio remoto compatibilidad de aplicaciones.
 
 </dd> <dt>
 
 [Directrices de aplicación cliente/servidor](client-server-application-guidelines.md)
 </dt> <dd>
 
-Las aplicaciones cliente/servidor no deben asumir que una sola conexión de equipo es equivalente a una sesión de usuario único.
+Las aplicaciones cliente/servidor no deben suponer que una conexión de equipo único es equivalente a una sesión de usuario único.
 
 </dd> <dt>
 

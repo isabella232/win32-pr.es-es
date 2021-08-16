@@ -19,7 +19,7 @@ ms.locfileid: "118463900"
 
 | Tema                                                                                                  | Descripción                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [System.DescriptionID](./props-system-descriptionid.md)<br/>                               | Contenido de una [**estructura SHDESCRIPTIONID,**](/windows/win32/api/shlobj_core/ns-shlobj_core-shdescriptionid) representada como un búfer de bytes.<br/> |
+| [System.DescriptionID](./props-system-descriptionid.md)<br/>                               | El contenido de una [**estructura SHDESCRIPTIONID,**](/windows/win32/api/shlobj_core/ns-shlobj_core-shdescriptionid) representada como un búfer de bytes.<br/> |
 | [System.InternalName](./props-system-internalname.md)<br/>                                 | Nombre de un archivo .exe o .dll como se almacena en una sección de recursos dentro de ese archivo.<br/>                                |
 | [System.LibraryLocationsCount](props-system-librarylocationscount.md)<br/>                      | Indica el número de ubicaciones de biblioteca.<br/>                                                                       |
 | [System.Link.TargetSFGAOFlagsStrings](./props-system-link-targetsfgaoflagsstrings.md)<br/> | Expresa las marcas SFGAO de un vínculo como valores de cadena y se usa como optimización de consultas.<br/>                       |
@@ -27,7 +27,7 @@ ms.locfileid: "118463900"
 | [System.NamespaceCLSID](./props-system-namespaceclsid.md)<br/>                             | CLSID de la extensión de espacio de nombres para un elemento, el objeto que implementa IShellFolder para este elemento.<br/>        |
 | [System.Shell.SFGAOFlagsStrings](./props-system-shell-sfgaoflagsstrings.md)<br/>           | Expresa las marcas SFGAO como valores de cadena y se usa como optimización de consultas.<br/>                                 |
 | [System.StatusBarSelectedItemCount](props-system-statusbarselecteditemcount.md)<br/>            | Recuento de elementos seleccionados en la vista y tamaño total estimado.<br/>                                            |
-| [System.StatusBarViewItemCount](props-system-statusbarviewitemcount.md)<br/>                    | Recuento de elementos de la vista y tamaño total estimado.<br/>                                                     |
+| [System.StatusBarViewItemCount](props-system-statusbarviewitemcount.md)<br/>                    | El recuento de elementos de la vista y el tamaño total estimado.<br/>                                                     |
 
 
 

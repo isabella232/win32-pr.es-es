@@ -67,21 +67,21 @@ Si el carácter no es alfanumérico, el valor devuelto es cero. Para obtener inf
 
 **IsCharAlphaNumericWrapW** proporciona la capacidad de usar cadenas Unicode en sistemas operativos anteriores a Windows XP. El método preferido es usar [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) junto con la capa de Microsoft para Unicode (MSLU).
 
-Se debe llamar a **IsCharAlphaNumericWrapW** directamente desde Shlwapi.dll, mediante el ordinal 28.
+**Se debe llamar a IsCharAlphaNumericWrapW** directamente desde Shlwapi.dll, mediante el ordinal 28.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Shlwapi.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

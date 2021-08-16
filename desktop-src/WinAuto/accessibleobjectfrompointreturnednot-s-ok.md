@@ -23,7 +23,7 @@ Advertencia
 
 ## <a name="description"></a>Descripción
 
-[**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint) no deseó S \_ OK según lo previsto para las coordenadas dadas.
+[**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint) no deseó S \_ OK como se esperaba para las coordenadas dadas.
 
 ## <a name="possible-causes"></a>Causas posibles
 

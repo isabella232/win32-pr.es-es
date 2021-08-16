@@ -1,5 +1,5 @@
 ---
-description: Establece la información del recurso compartido de DDE. Esto suele hacerse después de la edición.
+description: Establece la información del recurso compartido de DDE. Normalmente, esto se hace después de la edición.
 ms.assetid: 002c73ce-7b35-4e8e-bb7e-0e1393b97ccc
 title: Función NDdeShareSetInfo (Nddeapi.h)
 ms.topic: reference
@@ -26,7 +26,7 @@ ms.locfileid: "118481705"
 
 \[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Establece la información del recurso compartido de DDE. Esto suele hacerse después de la edición.
+Establece la información del recurso compartido de DDE. Normalmente, esto se hace después de la edición.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,7 +72,7 @@ Nivel de información. Este parámetro debe ser 2.
 *lpBuffer* \[in\]
 </dt> <dd>
 
-Puntero a la [**estructura NDDESHAREINFO**](nddeshareinfo-str.md) que especifica la información del recurso compartido de DDE que se va a almacenar en DSDM. Actualmente, la información del recurso compartido de DDE se modifica en su totalidad, es decir, no se realizan modificaciones parciales. Este parámetro no puede ser **NULL.**
+Puntero a la [**estructura NDDESHAREINFO**](nddeshareinfo-str.md) que especifica la información del recurso compartido de DDE que se va a almacenar en DSDM. Actualmente, la información del recurso compartido de DDE se modifica como un todo, es decir, no se realizan modificaciones parciales. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 

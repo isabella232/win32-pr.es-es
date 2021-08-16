@@ -80,7 +80,7 @@ Puntero a una interfaz include (vea [**ID3D10Include Interface**](/previous-vers
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nombre de la función de punto de entrada del sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX10CreateAsyncCompilerProcessor** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo usará.
+Nombre de la función de punto de entrada de sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX10CreateAsyncCompilerProcessor** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo usará.
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Cadena que especifica el perfil de [sombreador o](../direct3dhlsl/dx-graphics-hl
 
 </dd> <dt>
 
-*Marcas1* \[ En\]
+*Flags1* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
@@ -102,12 +102,12 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dt>
 
-*Marcas2* \[ En\]
+*Flags2* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-[Marcas de compilación de efecto](d3d10-graphics-reference-effect-constants.md). Al compilar un sombreador y no un archivo de efecto, **D3DX10CreateAsyncCompilerProcessor** omite *Flags2*; Se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función a la que se llama no lo usará.
+[Marcas de compilación de efecto](d3d10-graphics-reference-effect-constants.md). Al compilar un sombreador y no un archivo de efecto, **D3DX10CreateAsyncCompilerProcessor** omite *Flags2*; Se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo usará.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ Dirección de un puntero al efecto compilado (vea [**Interfaz ID3D10Blob**](/win
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Dirección de un puntero para compilar errores (vea [**ID3D10Blob Interface**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
+Dirección de un puntero para compilar errores (vea [**Interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Di
 
 <dl> <dt>
 
-[De uso general functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

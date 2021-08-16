@@ -1,5 +1,5 @@
 ---
-title: Asignación de tipos de datos de descripción del servicio a tipos de datos IDL
+title: Asignación de tipos de datos de descripción de servicio a tipos de datos IDL
 description: En la tabla siguiente se muestra la asignación de tipos de datos XML especificados en una descripción del servicio a los tipos de datos correspondientes usados en IDL.
 ms.assetid: eeb86177-8c3b-47f1-bbe1-f9aabd2dde76
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118347635"
 ---
-# <a name="mapping-service-description-data-types-to-idl-data-types"></a>Asignación de tipos de datos de descripción del servicio a tipos de datos IDL
+# <a name="mapping-service-description-data-types-to-idl-data-types"></a>Asignación de tipos de datos de descripción de servicio a tipos de datos IDL
 
 En la tabla siguiente se muestra la asignación de tipos de datos XML especificados en una descripción del servicio a los tipos de datos correspondientes usados en IDL.
 

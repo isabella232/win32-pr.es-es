@@ -45,7 +45,7 @@ HRESULT Begin(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Marcas que controlan cómo se dibujarán los sprites. Consulte [**D3DX10 \_ SPRITE \_ FLAG**](d3dx10-sprite-flag.md).
+Marcas que controlan cómo se dibujarán los sprites. Vea [**D3DX10 \_ SPRITE \_ FLAG**](d3dx10-sprite-flag.md).
 
 </dd> </dl>
 

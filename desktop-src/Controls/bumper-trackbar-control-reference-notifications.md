@@ -1,6 +1,6 @@
 ---
-title: Notificaciones de control de la barra de seguimiento
-description: Notificaciones de control de la barra de seguimiento
+title: Notificaciones de control de barra de seguimiento
+description: Notificaciones de control de barra de seguimiento
 ms.assetid: 82c501b2-37a3-4e15-a9d9-e978f984a3ea
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118414837"
 ---
-# <a name="trackbar-control-notifications"></a>Notificaciones de control de la barra de seguimiento
+# <a name="trackbar-control-notifications"></a>Notificaciones de control de barra de seguimiento
 
 ## <a name="in-this-section"></a>En esta sección
 

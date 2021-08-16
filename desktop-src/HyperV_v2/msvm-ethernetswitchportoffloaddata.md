@@ -1,7 +1,7 @@
 ---
 description: Representa los datos de estado de la característica de descarga de puertos.
 ms.assetid: 1117b9e4-cff7-4c9e-bf5e-74499297e84e
-title: Msvm_EthernetSwitchPortOffloadData (clase)
+title: Msvm_EthernetSwitchPortOffloadData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -38,18 +38,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: fd60e98c8df12b539bb51c60b34e7931b762dc03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6e2de8571d665dc86393708b2afcf73fc4885f0b4de26624daafcdccff995b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105670028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681485"
 ---
-# <a name="msvm_ethernetswitchportoffloaddata-class"></a>MSVM \_ EthernetSwitchPortOffloadData (clase)
+# <a name="msvm_ethernetswitchportoffloaddata-class"></a>Clase Msvm \_ EthernetSwitchPortOffloadData
 
 Representa los datos de estado de la característica de descarga de puertos.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -87,13 +87,13 @@ class Msvm_EthernetSwitchPortOffloadData : Msvm_EthernetPortData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortOffloadData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortOffloadData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortOffloadData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortOffloadData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -106,7 +106,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "estado de la característica de descarga de puertos del conmutador Ethernet".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Estado de la característica de descarga del puerto de conmutador Ethernet".
 
 </dd> <dt>
 
@@ -119,10 +119,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Nombre de la subclase utilizada en la creación de esta instancia de datos de puerto. Esta propiedad se hereda de [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md)y siempre se establece en "MSVM \_ EthernetSwitchPortOffloadData".
+Nombre de la subclase usada en la creación de esta instancia de datos de puerto. Esta propiedad se hereda de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)y siempre se establece en "Msvm \_ EthernetSwitchPortOffloadData".
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "representa los datos de estado de la característica de descarga de puertos".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Representa los datos de estado de la característica de descarga de puerto".
 
 </dd> <dt>
 
@@ -148,14 +148,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito. Esta propiedad se hereda de [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md)y siempre se establece en "MSVM \_ EthernetSwitchPort".
+Nombre de clase de creación del sistema de ámbito. Esta propiedad se hereda de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)y siempre se establece en "Msvm \_ EthernetSwitchPort".
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -164,10 +164,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (64)
+Calificadores: **Key**, **MaxLen** ( 64 )
 </dt> </dl>
 
-El ID. de dispositivo del puerto que limita esta instancia de datos del puerto. Esta propiedad se hereda de [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md).
+Id. de dispositivo del puerto que tiene como ámbito esta instancia de datos de puerto. Esta propiedad se hereda de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "estado de la característica de descarga de puertos del conmutador Ethernet".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Estado de la característica de descarga del puerto de conmutador Ethernet".
 
 </dd> <dt>
 
@@ -193,42 +193,42 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IovOffloadUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-El uso de la descarga actual de la virtualización de e/s (IOV).
+La virtualización de E/S actual (IOV) descarga el uso.
 
 </dd> <dt>
 
 **IovQueuePairUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Número actual de pares de colas utilizados por el puerto.
+Número actual de pares de cola que usa el puerto.
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ Número actual de pares de colas utilizados por el puerto.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -251,32 +251,32 @@ Indica si la ruta de acceso de datos de VF de IOV está activa.
 **IovVfId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Identificador del FV de IOV actual que está asignado al puerto. Es válido si **IovOffloadUsage** no es cero.
+Identificador de VF de IOV actual que se asigna al puerto. Esto es válido si **IovOffloadUsage** no es cero.
 
 </dd> <dt>
 
 **IpsecCurrentOffloadSaCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-El número actual de ranuras de descarga de la Asociación de seguridad (SA) en uso en el puerto.
+El número actual de ranuras de descarga de asociación de seguridad (SA) en uso en el puerto.
 
 </dd> <dt>
 
@@ -289,10 +289,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Cadena que identifica de forma única esta instancia de datos de puerto en el ámbito del modificador y el puerto. Esta propiedad se hereda de [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md).
+Cadena que identifica de forma única esta instancia de datos de puerto dentro del ámbito del conmutador y el puerto. Esta propiedad se hereda de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
 
 </dd> <dt>
 
@@ -305,10 +305,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito. Esta propiedad se hereda de [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md)y siempre se establece en "MSVM \_ VirtualEthernetSwitch".
+Nombre de clase de creación del sistema de ámbito. Esta propiedad se hereda de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)y siempre se establece en "Msvm \_ VirtualEthernetSwitch".
 
 </dd> <dt>
 
@@ -321,10 +321,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-El nombre del conmutador virtual que limita esta instancia de datos de puerto. Esta propiedad se hereda de [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md).
+Nombre del conmutador virtual que tiene como ámbito esta instancia de datos de puerto. Esta propiedad se hereda de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
 
 </dd> <dt>
 
@@ -343,7 +343,7 @@ Calificadores: **WmiDataId** (9), **InterfaceVersion** (2), **InterfaceRevision*
 Indica si VMMQ está activo.
 
 > [!Note]  
-> Esta propiedad se agregó en la versión 1703 de Windows 10.
+> Esta propiedad se agregó en Windows 10, versión 1703.
 
  
 
@@ -352,7 +352,7 @@ Indica si VMMQ está activo.
 **VmmqQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -361,10 +361,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (10), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica cuántas colas se utilizan para VRSS/VMMQ.
+Indica cuántas colas se usan para VRSS/VMMQ.
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10, versión 1703 y Windows Server 2016.
+> Esta propiedad se agregó en Windows 10 versión 1703 y Windows Server 2016.
 
  
 
@@ -373,32 +373,32 @@ Indica cuántas colas se utilizan para VRSS/VMMQ.
 **VMQId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Identificador de la cola de máquina virtual actual asignado al puerto. Es válido si **VMQOffloadUsage** no es cero.
+Identificador de cola de máquina virtual actual que se asigna al puerto. Esto es válido si **VMQOffloadUsage** no es cero.
 
 </dd> <dt>
 
 **VMQOffloadUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-El uso de la descarga actual de la cola de máquinas virtuales (VMQ).
+La cola de máquina virtual (VMQ) actual descarga el uso.
 
 </dd> <dt>
 
@@ -417,7 +417,7 @@ Calificadores: **WmiDataId** (8), **InterfaceVersion** (2), **InterfaceRevision*
 Indica si vRSS está activo.
 
 > [!Note]  
-> Esta propiedad se agregó en la versión 1703 de Windows 10.
+> Esta propiedad se agregó en Windows 10 versión 1703.
 
  
 
@@ -435,10 +435,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (13), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si la CPU VMQ primaria está excluida de la tabla de indirección VRSS/VMMQ.
+Indica si la CPU de VMQ principal se excluye de la tabla de direccionamiento indirecto de VRSS/VMMQ.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -456,10 +456,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (14), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si se produce la propagación de VRSS/VMMQ del lado del host, independientemente de la configuración de RSS de la NIC virtual.
+Indica si se produce la propagación de VRSS/VMMQ del lado host, independientemente de la configuración RSS de la NIC virtual.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -468,7 +468,7 @@ Indica si se produce la propagación de VRSS/VMMQ del lado del host, independien
 **VrssMinQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -480,7 +480,7 @@ Calificadores: **WmiDataId** (11), **InterfaceVersion** (3), **InterfaceRevision
 Indica el número mínimo de colas usadas para VRSS/VMMQ.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -489,7 +489,7 @@ Indica el número mínimo de colas usadas para VRSS/VMMQ.
 **VrssQueueSchedulingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -498,10 +498,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (12), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica cómo se dirigen las colas de VRSS/VMMQ a diferentes procesadores de host.
+Indica cómo las colas VRSS/VMMQ se dirige a distintos procesadores de host.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -510,7 +510,7 @@ Indica cómo se dirigen las colas de VRSS/VMMQ a diferentes procesadores de host
 **VrssVmbusChannelAffinityPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -519,10 +519,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (15), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica cómo se afinidad con los canales de Vmbus para hospedar procesadores.
+Indica cómo se asocian los canales de Vmbus a los procesadores de host.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -532,12 +532,12 @@ Indica cómo se afinidad con los canales de Vmbus para hospedar procesadores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

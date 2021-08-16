@@ -15,12 +15,12 @@ ms.locfileid: "118387518"
 
 Una aplicación de guión gráfica de usuario debe responder a eventos del usuario y del sistema operativo.
 
-- **Los eventos del usuario incluyen** todas las formas en que alguien puede interactuar con el programa: clics del mouse, trazos de teclas, gestos de pantalla táctil, y así sucesivamente.
-- **Los eventos del sistema operativo incluyen** cualquier cosa "fuera" del programa que pueda afectar al comportamiento del programa. Por ejemplo, el usuario podría conectar un nuevo dispositivo de hardware o Windows podría entrar en un estado de energía inferior (suspensión o hibernación).
+- **Los eventos del usuario incluyen** todas las formas en que alguien puede interactuar con el programa: clics del mouse, trazos de teclas, gestos de pantalla táctil, entre otras.
+- **Los eventos del sistema operativo incluyen** cualquier "fuera" del programa que pueda afectar al comportamiento del programa. Por ejemplo, el usuario podría conectar un nuevo dispositivo de hardware o Windows podría entrar en un estado de energía inferior (suspensión o hibernación).
 
 Estos eventos pueden producirse en cualquier momento mientras se ejecuta el programa, en casi cualquier orden. ¿Cómo se estructura un programa cuyo flujo de ejecución no se puede predecir de antemano?
 
-Para resolver este problema, Windows un modelo de paso de mensajes. El sistema operativo se comunica con la ventana de la aplicación al pasarle mensajes. Un mensaje es simplemente un código numérico que designa un evento determinado. Por ejemplo, si el usuario presiona el botón primario del mouse, la ventana recibe un mensaje que tiene el siguiente código de mensaje.
+Para resolver este problema, Windows un modelo de paso de mensajes. El sistema operativo se comunica con la ventana de la aplicación al pasarle mensajes. Un mensaje es simplemente un código numérico que designa un evento determinado. Por ejemplo, si el usuario presiona el botón izquierdo del mouse, la ventana recibe un mensaje que tiene el siguiente código de mensaje.
 
 ```C++
 #define WM_LBUTTONDOWN    0x0201
@@ -32,7 +32,7 @@ Para pasar un mensaje a una ventana, el sistema operativo llama al procedimiento
 
 ## <a name="the-message-loop"></a>El bucle de mensajes
 
-Una aplicación recibirá miles de mensajes mientras se ejecuta. (Tenga en cuenta que cada pulsación de tecla y clic con el botón del mouse genera un mensaje). Además, una aplicación puede tener varias ventanas, cada una con su propio procedimiento de ventana. ¿Cómo recibe el programa todos estos mensajes y los entrega al procedimiento de ventana correcto? La aplicación necesita un bucle para recuperar los mensajes y enviarlos a las ventanas correctas.
+Una aplicación recibirá miles de mensajes mientras se ejecuta. (Tenga en cuenta que cada pulsación de tecla y clic del botón del mouse genera un mensaje). Además, una aplicación puede tener varias ventanas, cada una con su propio procedimiento de ventana. ¿Cómo recibe el programa todos estos mensajes y los entrega al procedimiento de ventana correcto? La aplicación necesita un bucle para recuperar los mensajes y enviarlos a las ventanas correctas.
 
 Para cada subproceso que crea una ventana, el sistema operativo crea una cola para los mensajes de ventana. Esta cola contiene mensajes para todas las ventanas que se crean en ese subproceso. La propia cola está oculta del programa. No se puede manipular la cola directamente. Sin embargo, puede extraer un mensaje de la cola llamando a la [**función GetMessage.**](/windows/desktop/api/winuser/nf-winuser-getmessage)
 
@@ -43,7 +43,7 @@ GetMessage(&msg, NULL, 0, 0);
 
 Esta función quita el primer mensaje del principio de la cola. Si la cola está vacía, la función se bloquea hasta que se pone en cola otro mensaje. El hecho de [**que los bloques GetMessage**](/windows/desktop/api/winuser/nf-winuser-getmessage) no hagan que el programa deje de responder. Si no hay ningún mensaje, no hay nada que hacer para el programa. Si tiene que realizar el procesamiento en segundo plano, puede crear subprocesos adicionales que sigan en ejecución mientras **GetMessage** espera otro mensaje. (Vea [Evitar cuellos de botella en el procedimiento de la ventana).](writing-the-window-procedure.md)
 
-El primer parámetro de [**GetMessage**](/windows/desktop/api/winuser/nf-winuser-getmessage) es la dirección de una [**estructura MSG.**](/windows/win32/api/winuser/ns-winuser-msg) Si la función se realiza correctamente, rellena la estructura **MSG** con información sobre el mensaje. Esto incluye la ventana de destino y el código del mensaje. Los otros tres parámetros permiten filtrar qué mensajes se obtienen de la cola. En casi todos los casos, establecerá estos parámetros en cero.
+El primer parámetro de [**GetMessage**](/windows/desktop/api/winuser/nf-winuser-getmessage) es la dirección de una [**estructura MSG.**](/windows/win32/api/winuser/ns-winuser-msg) Si la función se realiza correctamente, rellena la estructura **MSG** con información sobre el mensaje. Esto incluye la ventana de destino y el código del mensaje. Los otros tres parámetros permiten filtrar los mensajes que se obtienen de la cola. En casi todos los casos, establecerá estos parámetros en cero.
 
 Aunque la [**estructura MSG**](/windows/win32/api/winuser/ns-winuser-msg) contiene información sobre el mensaje, casi nunca examinará esta estructura directamente. En su lugar, la pasará directamente a otras dos funciones.
 
@@ -52,13 +52,13 @@ TranslateMessage(&msg);
 DispatchMessage(&msg);
 ```
 
-La [**función TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) está relacionada con la entrada de teclado. Convierte las pulsaciones de tecla (tecla abajo, tecla arriba) en caracteres. En realidad, no es necesario saber cómo funciona esta función. Simplemente recuerde llamarlo antes [**de DispatchMessage**](/windows/desktop/api/winuser/nf-winuser-dispatchmessage). El vínculo a la documentación de MSDN le dará más información, si tiene curiosidad.
+La [**función TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) está relacionada con la entrada de teclado. Convierte las pulsaciones de tecla (tecla abajo, tecla arriba) en caracteres. No es necesario saber realmente cómo funciona esta función. simplemente recuerde llamarlo antes [**de DispatchMessage**](/windows/desktop/api/winuser/nf-winuser-dispatchmessage). El vínculo a la documentación de MSDN le dará más información, si tiene curiosidad.
 
 La [**función DispatchMessage**](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) indica al sistema operativo que llame al procedimiento de ventana de la ventana que es el destino del mensaje. En otras palabras, el sistema operativo busca el identificador de ventana en su tabla de ventanas, busca el puntero de función asociado a la ventana e invoca la función.
 
 Por ejemplo, supongamos que el usuario presiona el botón izquierdo del mouse. Esto provoca una cadena de eventos:
 
-1. El sistema operativo coloca un mensaje [**\_ WM LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown) en la cola de mensajes.
+1. El sistema operativo coloca un [**mensaje \_ WM LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown) en la cola de mensajes.
 2. El programa llama a la [**función GetMessage.**](/windows/desktop/api/winuser/nf-winuser-getmessage)
 3. [**GetMessage**](/windows/desktop/api/winuser/nf-winuser-getmessage) extrae el mensaje [**\_ WM LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown) de la cola y rellena la [**estructura MSG.**](/windows/win32/api/winuser/ns-winuser-msg)
 4. El programa llama a [**las funciones TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) [**y DispatchMessage.**](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)

@@ -29,7 +29,7 @@ El **atributo showBackground** especifica o recupera un valor que indica si **BU
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un valor booleano de lectura **y escritura.**
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
@@ -46,7 +46,7 @@ Este atributo es un valor booleano de lectura **y escritura.**
 
 Cuando **showBackground** es true, toda la imagen **principal** estará visible.
 
-Cuando **showBackground** es false, solo se representarán las áreas correspondientes a los colores **mappingImage** asignados. En otras palabras, solo estarán visibles **buttonelements** con su **mappingColor** asignado.
+Cuando **showBackground** es false, solo se representarán las áreas correspondientes a **mappingImage** colors asignadas. En otras palabras, solo **estarán visibles los BUTTONELEMENTs** con **su mappingColor** asignado.
 
 Si se especifica un valor no válido, se mantiene el estado anterior.
 

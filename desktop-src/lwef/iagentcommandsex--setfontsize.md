@@ -4,16 +4,16 @@ description: IAgentCommandsEx SetFontSize
 ms.assetid: 095f78d2-ef91-4880-ad49-dd9a94f02891
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19bb9a638141dc3cebe683748500510ea848a664
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b92319178f2fbceb7b2e0cad9bdb35b740ebeaf108f864edb84b4413353e85e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477207"
 ---
 # <a name="iagentcommandsexsetfontsize"></a>IAgentCommandsEx::SetFontSize
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT SetFontSize(
@@ -23,7 +23,7 @@ HRESULT SetFontSize(
 
 Establece el tamaño de la fuente que se muestra en el menú emergente del carácter.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
@@ -34,15 +34,15 @@ Tamaño de la fuente.
 
 </dd> </dl>
 
-Esta propiedad determina el tamaño en puntos de la fuente usada para mostrar texto en el menú emergente del carácter cuando la aplicación cliente es de entrada-activa. El valor predeterminado de la configuración de fuente se basa en el valor de fuente de menú para la configuración de identificador de idioma del carácter, o bien, si no está establecido, es la configuración de idioma predeterminado del usuario. Si no es de entrada-activo, el texto de la [**leyenda**](caption-property.md) de [**comandos**](/windows/desktop/lwef/the-command-object) de la aplicación cliente aparece en el tamaño de punto especificado para el cliente de entrada-activo.
+Esta propiedad determina el tamaño de punto de la fuente utilizada para mostrar texto en el menú emergente del carácter cuando la aplicación cliente está activa en la entrada. El valor predeterminado de la configuración de fuente se basa en la configuración de fuente del menú para la configuración del identificador de idioma del carácter o, si no se establece, la configuración de idioma predeterminada del usuario. Si no es input-active, [](/windows/desktop/lwef/the-command-object) [](caption-property.md) el texto del título de comando de la aplicación cliente aparece en el tamaño de punto especificado para el cliente activo de entrada.
 
-Esta propiedad solo se aplica al uso de la aplicación cliente del carácter; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
+Esta propiedad solo se aplica al uso del carácter por parte de la aplicación cliente; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
 
 ## <a name="see-also"></a>Consulte también
 
-[**IAgentCommandsEx:: GetFontSize**](iagentcommandsex--getfontsize.md), [**IAgentCommandsEx:: GetFontName**](iagentcommandsex--getfontname.md), [**IAgentCommandsEx:: SetFontName**](iagentcommandsex--setfontname.md)
+[**IAgentCommandsEx::GetFontSize**](iagentcommandsex--getfontsize.md), [**IAgentCommandsEx::GetFontName**](iagentcommandsex--getfontname.md), [**IAgentCommandsEx::SetFontName**](iagentcommandsex--setfontname.md)
 
 
- 
+ 
 
- 
+ 

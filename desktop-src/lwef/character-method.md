@@ -13,7 +13,7 @@ ms.locfileid: "118480632"
 ---
 # <a name="character-method"></a>Character (método)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -33,10 +33,10 @@ Devuelve un [**objeto Character**](/windows/desktop/lwef/the-characters-object) 
 
 ## <a name="remarks"></a>Comentarios
 
-Puede usar este método para tener acceso a los [**métodos**](/windows/desktop/lwef/the-characters-object) y propiedades de un objeto Character.
+Puede usar este método para acceder [**a**](/windows/desktop/lwef/the-characters-object) los métodos y propiedades de un objeto Character.
 
 > [!Note]  
-> Este método puede ser necesario para algunos lenguajes de programación que no admiten colecciones. No es necesario para VBScript o Visual Basic. Para obtener más información sobre cómo especificar métodos [**Character,**](/windows/desktop/lwef/the-characters-object) vea Character Object Methods.
+> Este método puede ser necesario para algunos lenguajes de programación que no admiten colecciones. No es necesario para VBScript o Visual Basic. Para obtener más información sobre cómo especificar [**métodos Character,**](/windows/desktop/lwef/the-characters-object) vea Character Object Methods.
 
  
 

@@ -7,20 +7,20 @@ keywords:
 - interfaces de extensión ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 388030306e8cb04a409bacfa1a008d58766a9712
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 54ef7aa0bd780ce729555e3500b0d3a984c4cb74512bbcbfb7f56fdf7120d24d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023553"
 ---
 # <a name="extension-interfaces"></a>Interfaces de extensión
 
-En esta sección se describe la interfaz [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension) y sus métodos.
+En esta sección se describe [**la interfaz IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension) y sus métodos.
 
- 
+ 
 
- 
+ 
 
 
 

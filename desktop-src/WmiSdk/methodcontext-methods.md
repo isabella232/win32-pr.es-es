@@ -14,7 +14,7 @@ ms.locfileid: "118317443"
 ---
 # <a name="methodcontext-methods"></a>Métodos MethodContext
 
-\[La [**clase MethodContext**](/windows/desktop/api/MethodCo/nl-methodco-methodcontext) forma parte del marco de proveedores WMI que ahora se considera en estado final y no habrá más desarrollos, mejoras o actualizaciones disponibles para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
+\[La [**clase MethodContext**](/windows/desktop/api/MethodCo/nl-methodco-methodcontext) forma parte del marco de proveedores WMI que ahora se considera en estado final y no habrá más desarrollos, mejoras o actualizaciones disponibles para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el nuevo desarrollo.\]
 
 La [**clase MethodContext**](/windows/desktop/api/MethodCo/nl-methodco-methodcontext) expone los métodos siguientes.
 

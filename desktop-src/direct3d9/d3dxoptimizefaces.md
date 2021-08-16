@@ -1,5 +1,5 @@
 ---
-description: Genera una nueva distribución de caras optimizada para una lista de triángulos.
+description: Genera un remapping de caras optimizado para una lista de triángulos.
 ms.assetid: 428c2af8-43e7-4cf7-8b9b-04ba5cff82c8
 title: Función D3DXOptimizeFaces (D3DX9Mesh.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118525234"
 ---
 # <a name="d3dxoptimizefaces-function"></a>Función D3DXOptimizeFaces
 
-Genera una nueva distribución de caras optimizada para una lista de triángulos.
+Genera un remapping de caras optimizado para una lista de triángulos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -97,7 +97,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-El procedimiento de optimización de esta función es funcionalmente equivalente a llamar a [**ID3DXMesh::Optimize**](id3dxmesh--optimize.md) con la marca D3DXMESHOPT DEVICEINDEPENDENT, pero esta función hace un uso más eficaz de las cachés de \_ vértices.
+El procedimiento de optimización de esta función es funcionalmente equivalente a llamar a [**ID3DXMesh::Optimize**](id3dxmesh--optimize.md) con la marca DEVICEINDEPENDENT de D3DXMESHOPT, pero esta función hace un uso más eficaz de las cachés de \_ vértices.
 
 ## <a name="requirements"></a>Requisitos
 

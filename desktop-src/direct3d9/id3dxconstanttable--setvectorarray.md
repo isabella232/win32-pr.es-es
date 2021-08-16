@@ -57,7 +57,7 @@ Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes vectoriales. Vea [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
+Identificador único de la matriz de constantes vectoriales. Vea [D3DXHANDLE.](dx9-graphics-reference-effects-constants.md)
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Número de vectores de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 

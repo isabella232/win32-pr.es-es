@@ -1,5 +1,5 @@
 ---
-description: Indica si el contexto de la tableta está en la parte superior del enlace.
+description: Indica si el contexto de la tableta está en el enlace superior.
 ms.assetid: b4aaee47-3d77-49cd-9600-f41764b9fb85
 title: ITabletContextP::IsTopMostHook (método)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118449808"
 ---
 # <a name="itabletcontextpistopmosthook-method"></a>ITabletContextP::IsTopMostHook (método)
 
-Indica si el contexto de la tableta está en la parte superior del enlace.
+Indica si el contexto de la tableta está en el enlace superior.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,15 +57,15 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

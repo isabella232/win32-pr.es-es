@@ -22,7 +22,7 @@ Las instrucciones de dirección de textura de la versión 1 4 del sombreador de 
 
 ## <a name="source-register-modifiers-for-texld-and-texcrd"></a>Modificadores de registro de origen para regld y texcrd
 
-Estos modificadores proporcionan funcionalidad de división projective dividiendo los valores x e y por los valores z o w.
+Estos modificadores proporcionan funcionalidad de división projective dividiendo los valores x e y entre los valores z o w.
 
 
 

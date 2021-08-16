@@ -21,18 +21,18 @@ En el componente de proveedor de ejemplo, se puede encontrar un ejemplo de una i
 | Método                                           | Descripción                                                                                                         |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | **CPropertyCache::addproperty**                  | Extienda la caché de propiedades agregando una nueva.                                                                      |
-| **CPropertyCache::updateproperty**               | Busque la propiedad , libre su contenido y use nuevos valores en su lugar; a continuación, marque la caché modificada para esta propiedad. |
+| **CPropertyCache::updateproperty**               | Busque la propiedad , libre su contenido y use valores nuevos en su lugar. a continuación, marque la caché cambiada para esta propiedad. |
 | **CPropertyCache::findproperty**                 | Busque esta propiedad por nombre; guardar su índice.                                                                      |
 | **CPropertyCache::getproperty**                  | Busque la propiedad en la memoria caché si está disponible; de lo contrario, llame **a GetInfo**. Establezca el índice y copie los nuevos valores.  |
 | **CPropertyCache::p utproperty**                  | Busque la propiedad . Liberar lo que había allí y colocar nuevos valores.                                                       |
 | **CPropertyCache::CPropertyCache**               | Constructor estándar.                                                                                               |
 | **CPropertyCache::~CPropertyCache**              | Destructor estándar.                                                                                                |
 | **CPropertyCache::createpropertycache**          | Cree la memoria caché.                                                                                                   |
-| **CPropertyCache::unboundgetproperty**           | Busque la propiedad en la memoria caché y esta establezca en estos valores.                                                          |
-| **CPropertyCache::SampleDSMarshallProperties**   | Serializar los datos y los valores de las propiedades.                                                                                   |
+| **CPropertyCache::unboundgetproperty**           | Busque la propiedad en la memoria caché y esta establezca esta propiedad en estos valores.                                                          |
+| **CPropertyCache::SampleDSMarshallProperties**   | Serializar valores y datos de propiedad.                                                                                   |
 | **CPropertyCache::marshallproperty**             | Serializar una propiedad.                                                                                                 |
-| **CPropertyCache::SampleDSUnMarshallProperties** | Datos y valores de la propiedad Unmarshal.                                                                                 |
-| **CPropertyCache::unmarshallproperty**           | Desmarshal una propiedad.                                                                                               |
+| **CPropertyCache::SampleDSUnMarshallProperties** | Desmarshal property data and values( Desmarshal property data and values).                                                                                 |
+| **CPropertyCache::unmarshallproperty**           | Desmarshal a property.                                                                                               |
 
 
 

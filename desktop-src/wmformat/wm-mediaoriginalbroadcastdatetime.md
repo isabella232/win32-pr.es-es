@@ -29,13 +29,13 @@ g \_ wszWMMediaOriginalBroadcastDateTime
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE \_ TIPO \_ WMT**
+**CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo se usa para la difusión de televisión o radio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -95,7 +95,7 @@ if (SUCCEEDED(GetNextFilter(pF, PINDIR_INPUT, &pUpstream)))
 
 Un filtro puede estar conectado a dos o más filtros en cualquier dirección. Por ejemplo, podría ser un filtro divisor, con varios filtros de bajada a partir de él. O bien, podría ser un filtro mux, con varios filtros ascendentes a partir de él. Por lo tanto, es posible que quiera recopilar todos ellos en una lista.
 
-El código siguiente muestra una posible manera de implementar este tipo de función. Usa la clase DirectShow [**CGenericList;**](cgenericlist.md) podría escribir una función equivalente mediante alguna otra estructura de datos.
+El código siguiente muestra una posible manera de implementar este tipo de función. Usa la clase [**DirectShow CGenericList;**](cgenericlist.md) podría escribir una función equivalente mediante alguna otra estructura de datos.
 
 
 ```C++

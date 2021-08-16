@@ -57,7 +57,7 @@ Este método siempre devuelve el valor S \_ OK.
 
 ## <a name="remarks"></a>Comentarios
 
-Los grupos contienen parámetros compartidos entre efectos. Vea [Clonación y uso compartido (Direct3D 9).](cloning-and-sharing.md)
+Los grupos contienen parámetros compartidos entre efectos. Consulte [Clonación y uso compartido (Direct3D 9).](cloning-and-sharing.md)
 
 ## <a name="requirements"></a>Requisitos
 

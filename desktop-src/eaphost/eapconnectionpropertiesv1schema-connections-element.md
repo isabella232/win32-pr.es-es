@@ -3,7 +3,7 @@ title: Elemento Connections
 description: Obtenga información sobre el elemento Connections. Este elemento recopila y contiene cero o más elementos Connection.
 ms.assetid: 2c199338-892f-4d8c-bf33-4a19f362de3e
 keywords:
-- Elemento Connections EAPHost
+- Elemento CONNECTIONS EAPHost
 topic_type:
 - apiref
 api_name:
@@ -70,7 +70,7 @@ El **elemento Connections** no se usa con métodos heredados a través de las AP
 
 
 
-| Rol | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
 | Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
@@ -84,7 +84,7 @@ El **elemento Connections** no se usa con métodos heredados a través de las AP
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
+[esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

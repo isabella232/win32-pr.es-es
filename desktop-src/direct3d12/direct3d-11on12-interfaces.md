@@ -19,7 +19,7 @@ Estas interfaces siguientes se declaran en d3d11on12.h.
 | Tema | Descripción |
 |-|-|
 | [**ID3D11On12Device**](/windows/win32/api/d3d11on12/nn-d3d11on12-id3d11on12device) | Controla la creación, ajuste y liberación de recursos D3D11 para Direct3D 11on12. |
-| [**ID3D11On12Device1**](/windows/win32/api/d3d11on12/nn-d3d11on12-id3d11on12device1) | Permite una mejor interoperabilidad con un componente que podría entregarse a un dispositivo Direct3D 11, pero que quiere aprovechar Direct3D 12 en su lugar. |
+| [**ID3D11On12Device1**](/windows/win32/api/d3d11on12/nn-d3d11on12-id3d11on12device1) | Permite una mejor interoperabilidad con un componente al que se podría entregar un dispositivo Direct3D 11, pero que quiere aprovechar Direct3D 12 en su lugar. |
 | [**ID3D11On12Device2**](/windows/win32/api/d3d11on12/nn-d3d11on12-id3d11on12device2) | Permite tomar los recursos creados a través de las API de Direct3D 11 y usarlos en Direct3D 12. Esta interfaz amplía [ID3D11On12Device1](/windows/win32/api/d3d11on12/nn-d3d11on12-id3d11on12device1). |
 
 ## <a name="related-topics"></a>Temas relacionados

@@ -1,6 +1,6 @@
 ---
-description: Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
-title: IShellFolderViewType (interfaz)
+description: Expone métodos que permiten a una carpeta de Shell admitir vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
+title: Interfaz IShellFolderViewType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9b597f6b-ef27-4fa1-ad00-e131dbd979e7
-ms.openlocfilehash: f3ccb4073d59e0ebe9b840bd6f8f592f463e1e46
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 30722e32a555b386e166e5525e0d4361dbe9d9bc6a58051e4727c661ebe49073
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714125"
 ---
-# <a name="ishellfolderviewtype-interface"></a>IShellFolderViewType (interfaz)
+# <a name="ishellfolderviewtype-interface"></a>Interfaz IShellFolderViewType
 
-Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
+Expone métodos que permiten a una carpeta de Shell admitir vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IShellFolderViewType** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IShellFolderViewType** también tiene estos tipos de miembros:
 
@@ -39,7 +39,7 @@ La **interfaz IShellFolderViewType** tiene estos métodos.
 | Método                                                                      | Descripción                                                                                                                                                          |
 |:----------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**EnumViews**](ishellfolderviewtype-enumviews.md)                         | Recupera un enumerador que devolverá un PIDL para cada vista extendida.<br/>                                                                                |
-| [**GetDefaultViewName**](ishellfolderviewtype-getdefaultviewname.md)       | Obtiene el nombre de la vista predeterminada. Llame [**a IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar los nombres de las otras vistas.<br/> |
+| [**GetDefaultViewName**](ishellfolderviewtype-getdefaultviewname.md)       | Obtiene el nombre de la vista predeterminada. Llame [**a IShellFolder::GetDisplayNameOf para**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) recuperar los nombres de las otras vistas.<br/> |
 | [**GetViewTypeProperties**](ishellfolderviewtype-getviewtypeproperties.md) | Obtiene las propiedades de la vista.<br/>                                                                                                                          |
 | [**TranslateViewPidl**](ishellfolderviewtype-translateviewpidl.md)         | Reconstruye un PIDL de una representación jerárquica de la carpeta Shell en una representación diferente.<br/>                                             |
 
@@ -47,7 +47,7 @@ La **interfaz IShellFolderViewType** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este enumerador devuelve PIDL que son carpetas ocultas especiales en el nivel superior de la carpeta Shell, que de lo contrario no se enumeran. La vista predeterminada es la que la carpeta shell muestra con normalidad.
 
@@ -95,7 +95,7 @@ DECLARE_INTERFACE_IID_(IShellFolderViewType, IUnknown, "49422C1E-1C03-11d2-8DAB-
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |

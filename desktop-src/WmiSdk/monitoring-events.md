@@ -86,15 +86,15 @@ En el procedimiento siguiente se describe cómo crear un consumidor de eventos t
 
 3.  Defina la consulta de eventos que desea usar.
 
-    Para obtener algunos tipos de datos de rendimiento, puede que tenga que usar clases proporcionadas por proveedores de alto rendimiento. Para obtener más información, vea [Monitoring Performance Data](monitoring-performance-data.md), Determining the Type of Event To [Receive](determining-the-type-of-event-to-receive.md)y [Querying with WQL](querying-with-wql.md).
+    Para obtener algunos tipos de datos de rendimiento, puede que tenga que usar las clases proporcionadas por proveedores de alto rendimiento. Para obtener más información, vea [Monitoring Performance Data](monitoring-performance-data.md), Determining the Type of Event To [Receive](determining-the-type-of-event-to-receive.md)y [Querying with WQL](querying-with-wql.md).
 
 4.  Decida realizar una llamada asincrónica o una llamada semisincronosa y elija el método de API.
 
     Las llamadas asincrónicas permiten evitar la sobrecarga del sondeo de datos. Sin embargo, las llamadas semisincronosas proporcionan un rendimiento similar con mayor seguridad. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
-5.  Realice la llamada a método asincrónico o semisincronoso e incluya una consulta de eventos como parámetro *strQuery.*
+5.  Realice la llamada al método asincrónico o semisincronoso e incluya una consulta de eventos como parámetro *strQuery.*
 
-    Para las aplicaciones de C++, llame a los métodos siguientes:
+    En el caso de las aplicaciones de C++, llame a los métodos siguientes:
 
     -   [**IWbemServices::ExecNotificationQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationquery)
     -   [**IWbemServices::ExecNotificationQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationqueryasync)
@@ -168,7 +168,7 @@ En la lista siguiente se identifican los elementos necesarios para crear un cons
 
 Para obtener más información, vea [Recepción de eventos en todo momento.](--filtertoconsumerbinding.md)
 
-WMI proporciona varios consumidores permanentes. Las clases de consumidor y el objeto COM que contiene el código están preinstalados. Por ejemplo, puede crear y configurar una instancia de la clase [**ActiveScriptEventConsumer**](activescripteventconsumer.md) para ejecutar un script cuando se produce un evento. Para obtener más información, [vea Supervisión y respuesta a eventos con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md) Para obtener un ejemplo del uso **de ActiveScriptEventConsumer,** vea [Ejecutar un script basado en un evento](running-a-script-based-on-an-event.md).
+WMI proporciona varios consumidores permanentes. Las clases de consumidor y el objeto COM que contiene el código están preinstalados. Por ejemplo, puede crear y configurar una instancia de la clase [**ActiveScriptEventConsumer**](activescripteventconsumer.md) para ejecutar un script cuando se produce un evento. Para obtener más información, [vea Supervisión y respuesta a eventos con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md) Para obtener un ejemplo del uso **de ActiveScriptEventConsumer, vea** [Ejecutar un script basado en un evento](running-a-script-based-on-an-event.md).
 
 En el procedimiento siguiente se describe cómo crear un consumidor de eventos permanente.
 
@@ -176,10 +176,10 @@ En el procedimiento siguiente se describe cómo crear un consumidor de eventos p
 
 1.  [Registre el proveedor de eventos](registering-a-provider.md) con el espacio de nombres que está usando.
 
-    Algunos proveedores de eventos solo pueden usar un espacio de nombres específico. Por ejemplo, [**\_ \_ InstanceCreationEvent**](--instancecreationevent.md) es un evento intrínseco que es compatible con el proveedor [win32](/windows/desktop/CIMWin32Prov/win32-provider) y está registrado de forma predeterminada con el espacio de nombres \\ \\ cimv2 raíz.
+    Algunos proveedores de eventos solo pueden usar un espacio de nombres específico. Por ejemplo, [**\_ \_ InstanceCreationEvent**](--instancecreationevent.md) es un evento intrínseco que es compatible con el proveedor [de Win32](/windows/desktop/CIMWin32Prov/win32-provider) y está registrado de forma predeterminada con el espacio de nombres \\ \\ cimv2 raíz.
 
     > [!Note]  
-    > Puede usar la propiedad **EventNamespace** de [**\_ \_ EventFilter**](--eventfilter.md) que se usa en el registro para crear una suscripción entre espacios de nombres. Para obtener más información, vea Implementar suscripciones de eventos [permanentes entre espacios de nombres.](implementing-cross-namespace-permanent-event-subscriptions.md)
+    > Puede usar la propiedad **EventNamespace** del [**\_ \_ objeto EventFilter**](--eventfilter.md) que se usa en el registro para crear una suscripción entre espacios de nombres. Para obtener más información, vea Implementar suscripciones de eventos [permanentes entre espacios de nombres.](implementing-cross-namespace-permanent-event-subscriptions.md)
 
      
 
@@ -192,11 +192,11 @@ En el procedimiento siguiente se describe cómo crear un consumidor de eventos p
     Las clases de consumidor de eventos se derivan de la [**\_ \_ clase EventConsumer**](--eventconsumer.md). Establezca las propiedades que requiere la instancia del consumidor de eventos.
 
 4.  Registre el consumidor con COM mediante la **utilidad regsvr32.**
-5.  Cree una instancia de la clase de filtro de eventos [**\_ \_ EventFilter**](--eventfilter.md).
+5.  Cree una instancia de la clase de filtro de eventos [**\_ \_ EventFilter.**](--eventfilter.md)
 
     Establezca los campos necesarios para la instancia de filtro de eventos. Los campos necesarios para [**\_ \_ EventFilter**](--eventfilter.md) son **Name**, **QueryLanguage** y **Query**. La **propiedad Name** puede ser cualquier nombre único para una instancia de esta clase. La **propiedad QueryLanguage** siempre se establece en "WQL". La **propiedad Query** es una cadena que contiene una consulta de eventos. Se genera un evento cuando se produce un error en la consulta de un consumidor de eventos permanente. El origen del evento es WinMgmt, el identificador de evento es 10 y el tipo de evento es Error.
 
-6.  Cree una instancia de la [**\_ \_ clase FilterToConsumerBinding para**](--filtertoconsumerbinding.md) asociar un consumidor de eventos lógicos a un filtro de eventos.
+6.  Cree una instancia de la [**\_ \_ clase FilterToConsumerBinding para**](--filtertoconsumerbinding.md) asociar un consumidor de eventos lógico a un filtro de eventos.
 
     WMI usa una asociación para buscar el consumidor de eventos asociado al evento que coincide con los criterios especificados en el filtro de eventos. WMI usa el proveedor de consumidores de eventos para buscar la aplicación de consumidor de eventos permanente que se debe iniciar.
 

@@ -13,7 +13,7 @@ ms.locfileid: "118307342"
 ---
 # <a name="creating-xml-web-services"></a>Creación de servicios web XML
 
-Cualquier aplicación COM+ se puede exponer como un servicio web XML. A continuación, se puede llamar a los métodos de las interfaces predeterminadas de los componentes configurados por las aplicaciones (componentes del catálogo com+ de servidores) de forma remota. Puede usar la herramienta administrativa Servicios de componentes para crear un directorio raíz virtual de IIS desde el que se puede llamar a los métodos de componente mediante SOAP.
+Cualquier aplicación COM+ se puede exponer como un servicio web XML. A continuación, se puede llamar a los métodos de las interfaces predeterminadas de los componentes configurados por las aplicaciones (componentes del catálogo COM+ de servidores) de forma remota. Puede usar la herramienta administrativa Servicios de componentes para crear un directorio raíz virtual de IIS desde el que se puede llamar a los métodos de componente mediante SOAP.
 
 > [!Note]  
 > El .NET Framework debe instalarse en el equipo para exponer una aplicación COM+ como un servicio web XML.
@@ -22,7 +22,7 @@ Cualquier aplicación COM+ se puede exponer como un servicio web XML. A continua
 
 **Para exponer una aplicación COM+ como un servicio web XML**
 
-1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, en **Servicios** de componentes , abra la carpeta **Aplicaciones COM+** asociada al equipo que desea administrar.
+1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, en Servicios de componentes **,** abra la carpeta **Aplicaciones COM+** asociada al equipo que desea administrar.
 
 2.  Haga clic con el botón derecho en la aplicación que desea exponer como servicio web XML y elija **Propiedades.**
 

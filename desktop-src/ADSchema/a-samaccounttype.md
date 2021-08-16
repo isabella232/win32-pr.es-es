@@ -34,7 +34,7 @@ Los valores posibles para este atributo son los siguientes:
 -   SAM \_ NON SECURITY ALIAS OBJECT \_ \_ \_ 0x20000001
 -   Sam \_ USER \_ OBJECT 0x30000000
 -   CUENTA DE USUARIO NORMAL DE SAM \_ \_ \_ 0x30000000
--   CUENTA \_ DE MÁQUINA SAM \_ 0x30000001
+-   Cuenta \_ de MÁQUINA SAM \_ 0x30000001
 -   Cuenta \_ de CONFIANZA DE SAM \_ 0x30000002
 -   APLICACIÓN \_ SAM BASIC GROUP \_ \_ 0x40000000
 -   GRUPO \_ DE CONSULTAS DE APLICACIONES SAM \_ \_ 0x40000001

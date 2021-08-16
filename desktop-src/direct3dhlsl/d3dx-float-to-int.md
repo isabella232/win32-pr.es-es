@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118516668"
 ---
-# <a name="d3dx_float_to_int-function"></a>Función D3DX \_ FLOAT \_ to \_ INT
+# <a name="d3dx_float_to_int-function"></a>Función D3DX \_ FLOAT \_ a \_ INT
 
 Convierte un valor FLOAT en INT.
 
@@ -54,7 +54,7 @@ Valor de escala.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor FLOAT convertido
+El valor FLOAT convertido
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Valor FLOAT convertido
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar DXGI \_ FORMAT In-Place edición de imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  
