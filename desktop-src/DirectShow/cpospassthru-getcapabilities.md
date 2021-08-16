@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c21838d3df72d52255d0a2e35dd0b7d34ef55411
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b3f9c47022ece0305e3111fe21f365544ed495cfe3c1343b908309f801a1a0b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073549"
 ---
 # <a name="cpospassthrugetcapabilities-method"></a>Método CPosPassThru.GetCapabilities
 
@@ -45,7 +45,7 @@ HRESULT GetCapabilities(
 *pCapabilities* 
 </dt> <dd>
 
-Puntero a una variable que recibe una combinación bit a bit de marcas [**\_ AM SEEKING SEEKING \_ \_ CAPABILITIES.**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities)
+Puntero a una variable que recibe una combinación bit a bit de marcas [**AM \_ SEEKING SEEKING \_ \_ CAPABILITIES.**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities)
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Devuelve el **valor HRESULT** del pin conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

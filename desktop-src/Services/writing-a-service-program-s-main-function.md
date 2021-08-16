@@ -1,19 +1,19 @@
 ---
-description: El siguiente ejemplo se puede usar como punto de entrada para un programa de servicio que admite un servicio único.
+description: El ejemplo siguiente se puede usar como punto de entrada para un programa de servicio que admite un único servicio.
 ms.assetid: 7fdfc20a-9148-4ae1-8101-7a387c0d0edc
 title: Escritura de una función principal de programas de servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83aa743bfabbeafa2e05818c5bb068a949dce807
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d82e3c519650957f4f27b00ff54864f558cafba3db960f30c0dd20517328f1c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117966616"
 ---
 # <a name="writing-a-service-programs-main-function"></a>Escribir la función principal de un programa de servicio
 
-La función **principal** de un [programa de servicio](service-programs.md) llama a la función [**StartServiceCtrlDispatcher**](/windows/desktop/api/Winsvc/nf-winsvc-startservicectrldispatchera) para conectarse al administrador de [control de servicios](service-control-manager.md) (SCM) e iniciar el subproceso del distribuidor de control. Los bucles de subprocesos de distribuidor esperan las solicitudes de control de entrada para los servicios especificados en la tabla de envío. Este subproceso devuelve cuando hay un error o cuando todos los servicios del proceso han terminado. Una vez finalizados todos los servicios en el proceso, el SCM envía una solicitud de control al subproceso de distribuidor para indicarle que salga. A continuación, este subproceso vuelve de la llamada a **StartServiceCtrlDispatcher** y el proceso puede finalizar.
+La **función** principal de un programa de servicio llama [a](service-programs.md) la función [**StartServiceCtrlDispatcher**](/windows/desktop/api/Winsvc/nf-winsvc-startservicectrldispatchera) para conectarse al administrador de [control](service-control-manager.md) de servicios (SCM) e iniciar el subproceso del distribuidor de control. El subproceso del distribuidor se recorre en bucle, a la espera de las solicitudes de control entrantes para los servicios especificados en la tabla de distribución. Este subproceso devuelve cuando se produce un error o cuando todos los servicios del proceso han finalizado. Cuando todos los servicios del proceso han finalizado, el SCM envía una solicitud de control al subproceso del distribuidor que le pide que se cierre. A continuación, este subproceso devuelve de **la llamada a StartServiceCtrlDispatcher** y el proceso puede finalizar.
 
 En este ejemplo se usan las siguientes definiciones globales.
 
@@ -28,9 +28,9 @@ HANDLE                  ghSvcStopEvent = NULL;
 
 
 
-El siguiente ejemplo se puede usar como punto de entrada para un programa de servicio que admite un servicio único. Si el programa de servicio admite varios servicios, agregue los nombres de los servicios adicionales a la tabla de envío para que los pueda supervisar el subproceso de distribuidor.
+El ejemplo siguiente se puede usar como punto de entrada para un programa de servicio que admite un único servicio. Si el programa de servicio admite varios servicios, agregue los nombres de los servicios adicionales a la tabla de distribución para que el subproceso del distribuidor pueda supervisarlos.
 
-La \_ función tmain es el punto de entrada. La función SvcReportEvent escribe mensajes informativos y errores en el registro de eventos. Para obtener información sobre cómo escribir la función SvcMain, vea [escribir una función ServiceMain](writing-a-servicemain-function.md). Para obtener más información acerca de la función SvcInstall, consulte [instalación de un servicio](installing-a-service.md). Para obtener información sobre cómo escribir la función SvcCtrlHandler, vea [escribir una función de controlador de control](writing-a-control-handler-function.md). Para obtener el servicio de ejemplo completo, incluido el origen de la función SvcReportEvent, vea [SVC. cpp](svc-cpp.md).
+La \_ función tmain es el punto de entrada. La función SvcReportEvent escribe mensajes informativos y errores en el registro de eventos. Para obtener información sobre cómo escribir la función SvcMain, vea [Writing a ServiceMain Function](writing-a-servicemain-function.md). Para obtener más información sobre la función SvcInstall, vea [Installing a Service](installing-a-service.md). Para obtener información sobre cómo escribir la función SvcCtrlHandler, vea [Escribir una función de controlador de control](writing-a-control-handler-function.md). Para obtener el servicio de ejemplo completo, incluido el origen de la función SvcReportEvent, vea [Svc.cpp](svc-cpp.md).
 
 
 ```C++
@@ -75,7 +75,7 @@ int __cdecl _tmain(int argc, TCHAR *argv[])
 
 
 
-A continuación se muestra un ejemplo. h de ejemplo tal y como lo generó el compilador de mensajes. Para obtener más información, vea [sample.MC](sample-mc.md).
+A continuación se muestra un ejemplo de Sample.h generado por el compilador de mensajes. Para obtener más información, [vea Sample.mc](sample-mc.md).
 
 ``` syntax
  // The following are message definitions.
@@ -141,7 +141,7 @@ A continuación se muestra un ejemplo. h de ejemplo tal y como lo generó el com
 [Punto de entrada de servicio](service-entry-point.md)
 </dt> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

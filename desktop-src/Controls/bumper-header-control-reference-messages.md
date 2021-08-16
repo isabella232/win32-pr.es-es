@@ -4,12 +4,12 @@ description: Mensajes de control de encabezado
 ms.assetid: 77743235-fba5-472c-8a86-065e280c6eeb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35ab0845e3287ca20b0a91dbf3258d9660d7a796
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d9b33a3981465d7d100a0df6a920d16a21cd2d9b7478468fd30254b5c0a8fb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916805"
 ---
 # <a name="header-control-messages"></a>Mensajes de control de encabezado
 
@@ -17,12 +17,12 @@ ms.locfileid: "104280156"
 
 -   [**HDM \_ CLEARFILTER**](hdm-clearfilter.md)
 -   [**HDM \_ CREATEDRAGIMAGE**](hdm-createdragimage.md)
--   [**HDM \_ DELETEITEM**](hdm-deleteitem.md)
+-   [**DELETEITEM de HDM \_**](hdm-deleteitem.md)
 -   [**HDM \_ EDITFILTER**](hdm-editfilter.md)
 -   [**HDM \_ GETBITMAPMARGIN**](hdm-getbitmapmargin.md)
 -   [**HDM \_ GETFOCUSEDITEM**](hdm-getfocuseditem.md)
 -   [**HDM \_ GETIMAGELIST**](hdm-getimagelist.md)
--   [**\_GETITEM HDM**](hdm-getitem.md)
+-   [**HDM \_ GETITEM**](hdm-getitem.md)
 -   [**HDM \_ GETITEMCOUNT**](hdm-getitemcount.md)
 -   [**HDM \_ GETITEMDROPDOWNRECT**](hdm-getitemdropdownrect.md)
 -   [**HDM \_ GETITEMRECT**](hdm-getitemrect.md)
@@ -30,8 +30,8 @@ ms.locfileid: "104280156"
 -   [**HDM \_ GETOVERFLOWRECT**](hdm-getoverflowrect.md)
 -   [**HDM \_ GETUNICODEFORMAT**](hdm-getunicodeformat.md)
 -   [**HDM \_ HITTEST**](hdm-hittest.md)
--   [**HDM \_ INSERTITEM**](hdm-insertitem.md)
--   [**diseño de HDM \_**](hdm-layout.md)
+-   [**INSERTITEM de HDM \_**](hdm-insertitem.md)
+-   [**DISEÑO DE \_ HDM**](hdm-layout.md)
 -   [**HDM \_ ORDERTOINDEX**](hdm-ordertoindex.md)
 -   [**HDM \_ SETBITMAPMARGIN**](hdm-setbitmapmargin.md)
 -   [**HDM \_ SETFILTERCHANGETIMEOUT**](hdm-setfilterchangetimeout.md)

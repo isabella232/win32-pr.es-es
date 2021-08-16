@@ -1,21 +1,21 @@
 ---
-title: Constantes de control de pestaña
-description: Constantes de control de pestaña
+title: Constantes de control de tabulación
+description: Constantes de control de tabulación
 ms.assetid: aa1b49c3-cebd-44e1-be83-b4bbe8b18885
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0baa84b42c790042b030cbe28b506bb3280f6fe5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2963dc947d3c5570ad37e33096a24c82745f4dd016e1403cce2f005c9ae52465
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105653199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119969480"
 ---
-# <a name="tab-control-constants"></a>Constantes de control de pestaña
+# <a name="tab-control-constants"></a>Constantes de control de tabulación
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Estados de elemento de control de pestaña](tab-control-item-states.md)
+-   [Estados de los elementos de control tab](tab-control-item-states.md)
 -   [Estilos de control de pestaña](tab-control-styles.md)
 
  

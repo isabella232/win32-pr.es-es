@@ -6,7 +6,7 @@ keywords:
 - Reproductor de Windows Media, crear un control ActiveX mediante programación
 - Reproductor de Windows Media de objetos, crear un control ActiveX mediante programación
 - modelo de objetos, crear ActiveX control mediante programación
-- Reproductor de Windows Media Móvil, creación de ActiveX mediante programación
+- Reproductor de Windows Media Mobile,creating ActiveX control mediante programación
 - Reproductor de Windows Media ActiveX control, crear mediante programación
 - Reproductor de Windows Media Control de ActiveX móvil, creación mediante programación
 - ActiveX control, crear mediante programación
@@ -22,7 +22,7 @@ ms.locfileid: "118340968"
 ---
 # <a name="creating-the-windows-media-player-control-programmatically"></a>Crear el control Reproductor de Windows Media mediante programación
 
-Al agregar el control Reproductor de Windows Media a un formulario desde el Cuadro de herramientas, se crea un objeto de la clase **AxWMPLib.AxWindowsMediaPlayer.** Esta clase contenedora proporciona al reproductor toda la funcionalidad de un control ActiveX, incluido el acceso a las propiedades de la interfaz de usuario, como **Ubicación** y **Tamaño.**
+Al agregar el control Reproductor de Windows Media a un formulario desde el Cuadro de herramientas, se crea un objeto de la clase **AxWMPLib.AxWindowsMediaPlayer.** Esta clase contenedora proporciona al reproductor toda la funcionalidad de un control ActiveX, incluido el acceso a propiedades de interfaz de usuario como **Ubicación** y **Tamaño**.
 
 Si no necesita las propiedades expuestas por **AxWindowsMediaPlayer** o si la aplicación no tiene una interfaz gráfica de usuario, puede crear un control Player mediante programación. En este caso, se crea un objeto de la **clase WMPLib.WindowsMediaPlayer.**
 

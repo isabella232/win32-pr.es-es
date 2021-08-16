@@ -1,7 +1,7 @@
 ---
-description: Crea y agrega un nuevo recurso compartido DDE al administrador de bases de datos de recursos compartidos DDE (DSDM).
+description: Crea y agrega un nuevo recurso compartido DDE al administrador de bases de datos de recursos compartidos de DDE (DSDM).
 ms.assetid: c9814919-412e-4f13-98cc-373b69545734
-title: Función NDdeShareAdd (Nddeapi. h)
+title: Función NDdeShareAdd (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 282ff7ed3e1564044591966fb4233b2eda1d3227
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a02381fad8412c7ada0c337c21e633ffa6793887a720ec504f1dfa3d78d9ede
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602145"
 ---
-# <a name="nddeshareadd-function"></a>NDdeShareAdd función)
+# <a name="nddeshareadd-function"></a>Función NDdeShareAdd
 
-\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ no \_ implementado.\]
+\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Crea y agrega un nuevo recurso compartido DDE al administrador de bases de datos de recursos compartidos DDE (DSDM).
+Crea y agrega un nuevo recurso compartido DDE al administrador de bases de datos de recursos compartidos de DDE (DSDM).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,71 +47,71 @@ UINT NDdeShareAdd(
 
 <dl> <dt>
 
-*lpszServer* \[ de\]
+*lpszServer* \[ En\]
 </dt> <dd>
 
 Nombre del servidor cuyo DSDM se va a modificar.
 
 </dd> <dt>
 
-*nLevel* \[ de\]
+*nLevel* \[ En\]
 </dt> <dd>
 
 Nivel de información. Este parámetro debe ser 2.
 
 </dd> <dt>
 
-*pSD* \[ de\]
+*pSD* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ descriptores de seguridad**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que se va a asociar a este recurso compartido y en la que se realizarán las comprobaciones de acceso en los inicios posteriores a este recurso compartido. Este parámetro puede ser **null**, en cuyo caso el DSDM crea un descriptor de seguridad predeterminado que concede "control total" al propietario y "lectura y vinculación" a todos los usuarios.
+Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que se va a asociar a este recurso compartido y con la que se realizarán comprobaciones de acceso en los inicios posteriores de este recurso compartido. Este parámetro puede ser **NULL,** en cuyo caso DSDM crea un descriptor de seguridad predeterminado que concede "Control total" al propietario y "Leer y vincular" a todo el mundo.
 
 </dd> <dt>
 
 *lpBuffer* \[in\]
 </dt> <dd>
 
-Puntero a la estructura [**NDDESHAREINFO**](nddeshareinfo-str.md) que define la lista ApplicationTopic asociada al recurso compartido DDE que se está creando, así como otros parámetros. Este parámetro no puede ser **null**.
+Puntero a la estructura [**NDDESHAREINFO**](nddeshareinfo-str.md) que define la lista ApplicationTopic asociada al recurso compartido DDE que se va a crear, así como a otros parámetros. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*cBufSize* \[ de\]
+*cBufSize* \[ En\]
 </dt> <dd>
 
-Tamaño de la estructura *lpBuffer* , en bytes. Este parámetro no puede ser cero.
+Tamaño de la estructura *lpBuffer,* en bytes. Este parámetro no puede ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es NDDE \_ sin \_ error.
+Si la función se realiza correctamente, el valor devuelto es NDDE \_ NO \_ ERROR.
 
-Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto mediante una llamada a [**NDdeGetErrorString**](nddegeterrorstring.md).
+Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto llamando a [**NDdeGetErrorString**](nddegeterrorstring.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para que un cliente pueda conectarse al recurso compartido DDE, debe ser de confianza con [**NDdeSetTrustedShare**](nddesettrustedshare.md).
+Para que un cliente pueda conectarse al recurso compartido de DDE, debe ser de confianza con [**NDdeSetTrustedShare**](nddesettrustedshare.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **NDdeShareAddW** (Unicode) y **NDdeShareAddA** (ANSI)<br/>                    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información general de Intercambio dinámico de datos de red](network-dynamic-data-exchange.md)
+[Información general sobre datos dinámicos Exchange red](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funciones DDE de red](network-dde-functions.md)

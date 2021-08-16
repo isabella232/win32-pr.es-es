@@ -49,14 +49,14 @@ El **objeto Qualifiers** tiene estas propiedades.
 | Propiedad                                           | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
 |:---------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](qualifiers-newenum.md)<br/> | Solo lectura<br/> | Recupera una [**interfaz IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Count**](qualifiers-count.md)<br/>       | Solo lectura<br/> | Recupera el número de calificadores de la colección.<br/>                                                                                                                                                                |
+| [**Contar**](qualifiers-count.md)<br/>       | Solo lectura<br/> | Recupera el número de calificadores de la colección.<br/>                                                                                                                                                                |
 | [**Elemento**](qualifiers-item.md)<br/>         | Solo lectura<br/> | Recupera un objeto [**Qualifier**](qualifier.md) que representa el calificador indexado de la colección. Esta es la propiedad predeterminada.<br/>                                                                             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No se puede crear el objeto **Qualifiers.**
 
@@ -66,7 +66,7 @@ La propiedad de objeto CAPICOM [**PolicyInformation.Qualifiers**](policyinformat
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Header<br/>          | <dl> <dt>Iads.h</dt> </dl>      |

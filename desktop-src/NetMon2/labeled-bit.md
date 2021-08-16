@@ -51,7 +51,7 @@ Número BIT del par BIT de etiqueta. Los valores oscilan entre 0 y 255. Establez
 **LabelOff**
 </dt> <dd>
 
-Cadena o etiqueta que se muestra cuando el BIT especificado en **BitNumber** es igual a cero. Por ejemplo, una posible etiqueta es "Bit OFF".
+Cadena o etiqueta que se muestra cuando bit especificado en **BitNumber** es igual a cero. Por ejemplo, una posible etiqueta es "Bit OFF".
 
 </dd> <dt>
 
@@ -64,9 +64,9 @@ Cadena o etiqueta que se muestra cuando el BIT especificado en **BitNumber** es 
 
 ## <a name="remarks"></a>Comentarios
 
-Se usa una **matriz de estructuras LABELED \_ BIT** para definir un conjunto de pares BIT de etiqueta. Se especifica un puntero a la matriz en el **miembro lpLabeledBit** de la [estructura SET.](set.md) Los pares se usan cuando se desea mostrar una etiqueta en función de la configuración de cada BIT. Normalmente, este tipo de conjunto se usa para indicar el valor ON u OFF de los BIT.
+Se usa una **matriz de estructuras \_ LABELED BIT** para definir un conjunto de pares BIT de etiqueta. Se especifica un puntero a la matriz en el **miembro lpLabeledBit** de la [estructura SET.](set.md) Los pares se usan cuando se desea mostrar una etiqueta basada en el valor de cada BIT. Normalmente, este tipo de conjunto se usa para indicar el valor ON u OFF de los BIT.
 
-Cuando se especifica un conjunto de BITS, Monitor de red muestra solo los BI incluidos en la matriz de **estructuras SET.** No se muestran los BIT que no están en la **estructura SET.**
+Cuando se especifica un conjunto DE BITS, Monitor de red muestra solo los BI incluidos en la matriz de **estructuras SET.** No se muestran los BIT que no están en la **estructura SET.**
 
 ## <a name="requirements"></a>Requisitos
 

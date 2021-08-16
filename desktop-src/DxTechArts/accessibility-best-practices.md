@@ -1,233 +1,233 @@
 ---
-title: Creación de justificaciones de negocio y consideraciones de diseño de juegos de vídeo accesibles
-description: Este artículo está destinado a los desarrolladores y productores de contenido de juegos que quieren alcanzar el mercado de la comunidad de accesibilidad mediante la adición de características de accesibilidad básicas para ayudar a las personas con discapacidades o discapacidades.
+title: Hacer que los juegos de vídeo puedan acceder a justificaciones empresariales y consideraciones de diseño
+description: Este artículo está para desarrolladores y productores de contenido de juegos que desean llegar al mercado de la comunidad de accesibilidad mediante la adición de características de accesibilidad básicas para ayudar a las personas con discapacidades o discapacidades.
 ms.assetid: 95580b75-fb8e-b8a9-2137-40d6c60ae35d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74499068877a400a94eb0ca32c2a1aff4bcf6c6d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 686258873176c99f1942cff915c072d1c1290f6a8b2411130d7e701322d4e4e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051225"
 ---
-# <a name="making-video-games-accessible-business-justifications-and-design-considerations"></a>Acceso a juegos de vídeo: justificaciones de negocio y consideraciones de diseño
+# <a name="making-video-games-accessible-business-justifications-and-design-considerations"></a>Hacer que los juegos de vídeo se puedan acceder: justificaciones empresariales y consideraciones de diseño
 
-Los editores y desarrolladores de juegos adoran centrarse en las características que obtendrán los títulos de la comunidad de juegos estándar, como los gráficos y el audio. Pero hay otra audiencia, ansioso por participar también en estos juegos. Estos jugadores proceden de la comunidad de accesibilidad a una comunidad de personas con discapacidades, así como a aquellos que están preocupados por su bienestar.
+A los anunciantes y desarrolladores de juegos les encanta centrarse en las características que tendrán sus títulos observados por la comunidad de juegos estándar, como gráficos y audio. Pero hay otro público, con muchas ansias de participar también en estos juegos. Estos jugadores proceden de la comunidad de accesibilidad, una comunidad de personas con discapacidades, así como de aquellos a los que les interesa su bienestar.
 
-Este artículo está destinado a los desarrolladores y productores de contenido de juegos que quieren alcanzar el mercado de la comunidad de accesibilidad mediante la adición de características de accesibilidad básicas para ayudar a las personas con discapacidades o discapacidades. Se tratarán los siguientes temas:
+Este artículo está para desarrolladores y productores de contenido de juegos que desean llegar al mercado de la comunidad de accesibilidad mediante la adición de características de accesibilidad básicas para ayudar a las personas con discapacidades o discapacidades. Se tratarán los temas siguientes:
 
--   [¿Qué es la accesibilidad?](#what-is-accessibility)
+-   [¿Qué es accesibilidad?](#what-is-accessibility)
 -   [¿Por qué es importante la accesibilidad?](#why-is-accessibility-important)
--   [El estado de accesibilidad en el sector de juegos](#the-state-of-accessibility-in-the-games-industry)
+-   [El estado de accesibilidad en el sector de los juegos](#the-state-of-accessibility-in-the-games-industry)
 -   [La necesidad de juegos accesibles](#the-need-for-accessible-games)
 -   [Discapacidades visuales](#visual-impairments)
--   [Impedimentos auditivos](#auditory-impairments)
--   [Dificultades de movilidad](#mobility-impairments)
--   [Discapacidades vocales](#vocal-impairments)
+-   [Discapacidades auditivas](#auditory-impairments)
+-   [Discapacidades de movilidad](#mobility-impairments)
+-   [Discapacidades auditivas](#vocal-impairments)
 -   [Conclusión](#conclusion)
 -   [Más recursos](#more-resources)
 
 ## <a name="what-is-accessibility"></a>¿Qué es la accesibilidad?
 
-A menudo, cuando los usuarios piensan en la accesibilidad, piensan cosas como rampas para sillas de sillas y subtítulos (CC) en televisión. Esto se debe a que estos tipos de características de accesibilidad destacan y son utilizados por los que tienen discapacidades obvias. Sin embargo, las características de accesibilidad no están diseñadas solo para aquellas con las discapacidades más graves. Entre los usuarios de equipos de EE. UU. de 18 a 64 años anteriores, es probable que el 57% (74,2 millones) se beneficie del uso de tecnología accesible debido a las discapacidades y las discapacidades que pueden afectar al uso del equipo. ("[El mercado de la tecnología accesible: la amplia gama de capacidades y su impacto en el uso del equipo](https://www.microsoft.com/enable/research/phase1.aspx)", Microsoft Corporation. La capacidad de activar un volumen de payphone permite a los usuarios con pérdida de audición leve usarlos. Un raíl de mano en un vuelo de escaleras permite a una persona con discapacidad de movilidad aumentar su escala más fácilmente.
+A menudo, cuando la gente piensa en accesibilidad, piensa en cosas como rampas de rampas de rampa y subtítulos en televisión. Esto se debe a que estos tipos de características de accesibilidad destacan y las usan las personas con discapacidades obvias. Sin embargo, las características de accesibilidad no están diseñadas solo para aquellos con las discapacidades más graves. Entre los usuarios de equipos de Estados Unidos que oscilan entre 18 y 64 años, el 57 % (74,2 millones) es probable que se beneficie del uso de tecnología accesible debido a discapacidades y discapacidades que pueden afectar al uso del equipo. ("[The Market for Accessible Technology: The Wide Range of Abilities and Its Impact on Computer Use](https://www.microsoft.com/enable/research/phase1.aspx)," Microsoft Corporation) La capacidad de activar el volumen de un teléfono de pago permite que las personas con pérdida auditiva con problemas auditivas las usen. Un raíl de mano en un vuelo de transporte permite a una persona con discapacidades de movilidad escalarlas más fácilmente.
 
-A veces, las características normales de un producto acaban siendo características que pueden ayudar a las personas con discapacidades. Por ejemplo, alguien con discapacidades visuales puede usar la configuración de contraste de un televisor para que la pantalla resulte más fácil de ver. Una persona con la enfermedad de Parkinson puede usar un marcado táctil para que sea más fácil realizar una llamada telefónica.
+A veces, las características normales de un producto terminan siendo características que pueden ayudar a las personas con discapacidades. Por ejemplo, alguien con discapacidad visual puede usar la configuración de contraste en un televisor para facilitar la visualización de la pantalla. Una persona con la enfermedad de Asíns puede usar una marcación táctil para facilitar la realización de una llamada telefónica.
 
-Las características de accesibilidad suelen ofrecer servicio a uno de los cinco tipos de discapacidades:
+Por lo general, las características de accesibilidad tienden a atender uno de los cinco tipos de discapacidades:
 
--   Visión: ceguera, incapacidad para distinguir colores, visión borrosa, etc.
--   Audición, dificultada y sordera.
--   Problemas de voz y voz, diferencias de lenguaje.
--   Movilidad: muñeca, ARM, pierna y discapacidades.
--   Dificultades de aprendizaje cognitivo y desafíos de razonamiento, incluida la dislexia.
+-   Visión: ceja, incapacidad de distinguir colores, visión desenfoque, y así sucesivamente.
+-   Oído: dificultad auditiva y desaconsuración.
+-   Voz: discapacidades de voz, diferencias de idioma.
+-   Movilidad: discapacidades en los brazos, las manos y las manos.
+-   Cognitive: Learning discapacidades y desafíos de razonamiento, incluidos los problemas de dislación.
 
-En el contexto de los juegos de vídeo, agregar accesibilidad significa que se puede usar un título para un usuario con una de estas discapacidades.
+En el contexto de los juegos de vídeo, agregar accesibilidad significa hacer que un título se pueda usar para alguien con una de estas discapacidades.
 
 ## <a name="why-is-accessibility-important"></a>¿Por qué es importante la accesibilidad?
 
-Hay razones sociales y financieras por las que los desarrolladores de juegos deben pensar en que los productos estén accesibles.
+Hay motivos sociales y financieros por los que los desarrolladores de juegos deben pensar en hacer que sus productos sean accesibles.
 
-En el caso de los niños y jóvenes que tienen discapacidades que van desde leves a graves, los juegos de vídeo pueden ofrecer una serie de ventajas. Los investigadores de la Universidad Jesuit University han descubierto recientemente que la reproducción de juegos deportivos o la lucha contra juegos permite distraer a niños y jóvenes que padecen dolor crónicos (el diario de Edmonton, el 13 de febrero de 2006). Además, se ha demostrado que los juegos de vídeo ayudan a los niños a orientarse de forma más eficaz y con menos efectos secundarios que Tranquilizers (la prensa asociada, 19 de diciembre de 2004). Los juegos se usan incluso para el tratamiento de cáncer; ejercicio, que es fundamental para la recuperación después de Chemotherapy, se ha alentado en el uso de juegos como la revolución de baile de baile (c) cuando los niños rechazan la participación en otras formas de actividad física.
+En el caso de los niños y adultos pequeños que tienen discapacidades que van desde niños hasta graves, los juegos de vídeo pueden ofrecer una serie de ventajas. Recientemente, los investigadores de la Universidad Wheeling Periodico han descubierto que jugar a juegos deportivos o juegos de guerra ayuda a distraer a los niños y adultos pequeños que sufren un cuadro de enfermedad (The Edmonton Journal, 13 de febrero de 2006). Además, se ha demostrado que los juegos de vídeo ayudan a los niños a tener que hacer frente a la cáncer de forma más eficaz y con menos efectos secundarios que los que se usaron (The Associated Press, 19 de diciembre de 2004). Incluso se usan juegos para el tratamiento del cáncer. El ejercicio, de vital importancia para la recuperación después de la recuperación, se ha fomentado mediante el uso de juegos como La revolución de la música(c) cuando los niños rechazan participar en otras formas de actividad física.
 
-Además, permitir que las personas con discapacidades (especialmente hijos) participen en actividades que la mayoría de las personas disfrutan y llevan a cabo para concesiones pueden ayudar a reducir el dolor emocional y la sensación de ser un outsider.
+Además, permitir que las personas con discapacidades (especialmente los niños) participen en actividades que la mayoría de los individuos disfruten y den por hecho pueden ayudar a reducir el sentimiento emocional y el sentimiento de ser un individuo externo.
 
-Los motivos sociales no son los únicos motivos por los que los desarrolladores de juegos deben introducir características de accesibilidad en sus títulos. Las características de accesibilidad pueden aumentar las ventas al animar a las personas con discapacidades para que compren un título accesible. El aumento de las ventas también puede proviene de los jugadores que desean admitir una empresa que admita la comunidad de accesibilidad. Y, por último, el P.R. positivo desde los medios, así como los grupos de apoyo de accesibilidad proporciona publicidad gratuita.
+Las razones sociales no son las únicas razones por las que los desarrolladores de juegos deben incluir características de accesibilidad en sus títulos. Las características de accesibilidad pueden aumentar las ventas animando a las personas con discapacidades a comprar un título accesible. El aumento de las ventas también puede deber a los jugadores que desean dar soporte técnico a una empresa que admita la comunidad de accesibilidad. Y, por último, el archivo P.R positivo. desde los medios, así como los grupos de incidencia de accesibilidad, proporciona publicidad gratuita.
 
-La demanda de accesibilidad seguirá creciendo a medida que la población de juegos envejece. A medida que las personas crecen más, las dificultades leves pueden ser más graves. Además, es probable que las personas desarrollen nuevas dificultades y discapacidades a medida que envejecen. La adición de características de accesibilidad básicas a los títulos puede ayudar a los editores y desarrolladores a obtener ingresos de estos clientes.
+La demanda de accesibilidad seguirá creciendo a medida que crezca la población de juegos. A medida que las personas crecen, las discapacidades pueden ser más graves. Además, es probable que las personas desarrollen nuevas dificultades y discapacidades a medida que van a la edad. Agregar características de accesibilidad básicas a los títulos puede ayudar a los anunciantes y desarrolladores a seguir sacando ingresos de estos clientes.
 
-## <a name="the-state-of-accessibility-in-the-games-industry"></a>El estado de accesibilidad en el sector de juegos
+## <a name="the-state-of-accessibility-in-the-games-industry"></a>El estado de accesibilidad en el sector de los juegos
 
-Para la mayoría de los juegos, la accesibilidad de los juegos de vídeo tiene una prioridad baja. Uno de los motivos se debe a una falta de conocimiento entre los desarrolladores sobre problemas de accesibilidad: los desarrolladores que no están deshabilitados podrían no tener en cuenta las formas en que pueden hacer que un título sea más accesible para las personas con discapacidades o discapacidades.
+Para la mayoría del sector de los juegos, la accesibilidad en los juegos de vídeo es una prioridad baja. Una razón es debido a la falta de conocimiento entre los desarrolladores sobre los problemas de accesibilidad: es posible que los desarrolladores que no están deshabilitados no sean conscientes de las formas en que pueden hacer que un título sea más accesible para personas con discapacidades o discapacidades.
 
-Otro motivo es que los desarrolladores tienen una cantidad de tiempo y recursos limitados. Los análisis de costos y beneficios suelen concluir que los problemas de accesibilidad no merecen la atención y la inversión de la industria de juegos debido a suposiciones como:
+Otro motivo es que los desarrolladores tienen cantidades limitadas de tiempo y recursos. Los análisis de costo-beneficio a menudo concluyen que los problemas de accesibilidad no merecen la atención y la inversión del sector de juegos debido a supuestos como:
 
--   El costo de la implementación de características de accesibilidad no merece la pena.
--   No hay un público ancho para que merezca la pena desarrollar el desarrollo de accesibilidad.
+-   El costo de implementar características de accesibilidad no merece la pena.
+-   No hay un público suficientemente amplio para hacer que el desarrollo de accesibilidad valga la pena.
 
-Estas suposiciones son defectuosas. El hecho de que los juegos sean accesibles es bien merece la pena la inversión.
+Estas suposiciones son erróneas. Hacer que los juegos se puedan acceder merece la pena la inversión.
 
 ## <a name="the-need-for-accessible-games"></a>La necesidad de juegos accesibles
 
-En 2003, Microsoft Corporation, Forrester Research, Inc., ha realizado un estudio exhaustivo para medir el mercado actual y potencial de la tecnología accesible en el Estados Unidos y comprender cómo se usa la tecnología accesible hoy en día. El estudio determinó que el 57% de los usuarios del equipo es probable o muy probable que se beneficien del uso de la tecnología accesible. Y la demanda futura de accesibilidad solo está prevista para crecer ("[tecnología accesible en informática: examinar el reconocimiento, el uso y el potencial futuro](https://www.microsoft.com/enable/research/phase2.aspx)", Microsoft Corporation).
+En 2003, Microsoft Corporation encargó a Forrester Research, Inc., que realizara un estudio completo para medir el mercado actual y potencial de tecnología accesible en la Estados Unidos y comprender cómo se usa la tecnología accesible en la actualidad. El estudio determinó que el 57 % de los usuarios de equipos es probable o muy probable que se beneficien del uso de tecnología accesible. Y la demanda futura de accesibilidad solo está proyectada para crecer ("Tecnología accesible en computación: examen del[conocimiento,](https://www.microsoft.com/enable/research/phase2.aspx)el uso y el potencial futuro", Microsoft Corporation).
 
-**Figura 1. Crecimiento previsto en número de usuarios de tecnología accesible de 2003 a 2010**
+**Figura 1. Crecimiento previsto en el número de usuarios de tecnología accesible de 2003 a 2010**
 
-![crecimiento previsto en número de usuarios de tecnología accesible de 2003 a 2010](images/accessibility-growth.gif)
+![crecimiento previsto en el número de usuarios de tecnología accesibles de 2003 a 2010](images/accessibility-growth.gif)
 
-El estudio también determinó que el uso de las características de accesibilidad no se restringió a personas con discapacidades. Entre los usuarios del equipo que utilizan opciones y utilidades de accesibilidad integradas:
+El estudio también determinó que el uso de características de accesibilidad no estaba restringido a las personas con discapacidades. Entre los usuarios de equipos que usan utilidades y opciones de accesibilidad integradas:
 
--   32% no tiene discapacidades o discapacidades.
--   68% tienen una discapacidad o deficiencia leves o graves.
+-   El 32 % no tiene discapacidad ni discapacidad.
+-   El 68 % tiene discapacidades o discapacidades graves o auditivas.
 
-La observación empírica sugiere que esto no es solo una tendencia limitada a los equipos. Las características de accesibilidad suelen ser usadas por personas sin ninguna discapacidad solo para mejorar su experiencia de juego. Por ejemplo, un jugador podría compensar una discapacidad temporal (como un control roto), problemas ambientales (como el ruido de fondo) u otros factores de importancia.
+La observación empírica sugiere que esto no es solo una tendencia limitada a los equipos. Las características de accesibilidad suelen ser usadas por personas sin discapacidades solo para mejorar su experiencia de juego. Por ejemplo, un jugador podría estar compensando una discapacidad temporal (por ejemplo, un dedo roto), problemas ambientales (como ruido de fondo) u otros factores situacionales.
 
-Dado el posible aumento en el uso de la tecnología de accesibilidad, es fundamental educar a la administración, a los diseñadores, a los desarrolladores y a los evaluadores. Muchas empresas buscan maneras de expandirse en nuevos mercados fuera del demográfica 18-32 macho. Mientras que los publicadores Mull sobre cómo convencer a un poco de Suzy para jugar a juegos o abuela y Grandpa para recoger un controlador, existe un mercado compuesto por personas que quieren experimentar de forma desesperada para jugar a juegos convencionales que están desapercibidos. Los posibles ingresos que se obtienen de una cantidad relativamente pequeña de esfuerzo que proporciona características de accesibilidad básicas en un título es muy tangible.
+Dado el posible aumento en el uso de la tecnología de accesibilidad, es fundamental formar a la administración, diseñadores, desarrolladores y evaluadores. Muchas empresas buscan formas de expandirse a nuevos mercados fuera de la población de 18 a 32 hombres. Mientras los editores se desvía sobre cómo intentar que un poco suzy jugara a juegos o a Lanja y a los niños para elegir un controlador, hay un mercado compuesto por personas que quieren jugar a juegos convencionales que pasa desapercibido. Los ingresos potenciales que se pueden obtener de una cantidad relativamente pequeña de esfuerzo que proporcionan características básicas de accesibilidad en un título son muy tangibles.
 
-La inclusión de características de accesibilidad básicas en un título puede aumentar las ventas a través de un "efecto de Domino", por ejemplo, al llegar a los jugadores que normalmente no pueden reproducir el título o que tendrían una experiencia significativamente disminuida. Al llegar a estos jugadores, también se pone en contacto con la comunidad de accesibilidad (que se conoce para un uso compartido rápido de la información sobre productos accesibles y su lealtad compatibilidad con empresas que fomentan la accesibilidad). Por extensión, las empresas que adoptan un rol activo en esta comunidad se benefician de la exposición positiva de los medios.
+La inclusión de características básicas de accesibilidad en un título puede aumentar las ventas a través de un "efecto dominó", por ejemplo, al llegar a los jugadores que normalmente no podrían reproducir el título o tendrían su experiencia significativamente reducida. Al llegar a estos jugadores, también se llega a la comunidad de accesibilidad (que es conocida por el uso compartido rápido de información sobre productos accesibles y su apoyo inefioso a las empresas que promueven la accesibilidad). Por extensión, las empresas que desempeñan un papel activo en esta comunidad se benefician de la exposición positiva a los medios.
 
-Al no incluir las características de accesibilidad, corre el riesgo de posibles boycotts y demandas, y la pérdida de ventas resultante. Muchos distribuidores y líneas aéreas han sido demandados por falta de accesibilidad y en el sector tecnológico, the Blind Community boycotted Internet Explorer 4 para su falta de accesibilidad.
+Al no incluir las características de accesibilidad, corre el riesgo de posibles robos y daños, así como la pérdida de ventas resultante. Muchos minoristas y líneas aéreas han sido demandados por falta de accesibilidad y, en el sector tecnológico, la comunidad invidente Internet Explorer 4 por su falta de accesibilidad.
 
-A continuación se muestran diferentes categorías de discapacidades. Cada categoría incluye algunas sugerencias relativamente fáciles de implementar que pueden hacer que un título sea accesible a un público más amplio.
+A continuación se muestran diferentes categorías de discapacidades. Cada categoría incluye algunas sugerencias relativamente fáciles de implementar que pueden hacer que un título sea accesible para un público más amplio.
 
 ## <a name="visual-impairments"></a>Discapacidades visuales
 
-*"Mi presentación iba seguida de una breve sesión de preguntas y respuestas, y se produjo un momento notable en el que uno de los empleados hizo una pregunta sobre la accesibilidad en \[ nuestros \] juegos... Este personal antiguo de 28 años es un jugador de Avid que solía jugar \[ \] con un gran círculo de amigos. No obstante, dado que se trata de una invidente de color, es difícil que le digamos a los buenos chicos de los malos y el juego finalmente se hizo demasiado frustrante. Cuando la nueva versión... llegó y no \[ hemos \] solucionado el problema, y sus amigos decidieron comprar el juego de un competidor en su lugar. "un ejecutivo del sector anónimo*
+*"Mi presentación fue seguida de una sesión de preguntas y respuestas activa, y se produjo un momento importante cuando uno de los empleados hizo una pregunta sobre la accesibilidad en \[ nuestros \] juegos... este empleado de 28 años es un jugador ávido que solía jugar a nuestro juego con un amplio \[ \] círculo de amigos. Sin embargo, como es daltónico, fue difícil para él contarle a los buenos desde la mala suerte y el juego finalmente se volvió demasiado frustrante. Cuando la nueva versión... salió y no hemos corregido el problema, él y sus amigos han decidido comprar el juego de un competidor en su \[ lugar". Un ejecutivo anónimo \] del sector*
 
-El término "discapacidad visual" suele tener en cuenta a alguien que es completamente ciego. Sin embargo, se empieza a saber que el 8,7% del rellenado macho se ve afectado por algún nivel de daltonismo ("[¿Cómo heredan colorblindness? ¿Con qué frecuencia?](https://www.webexhibits.org/causesofcolor/2C.mdl), "WebExhibits.org). Otro 1,2% de las personas se ven afectados por formas más graves de discapacidad visual ("[información de discapacidad: hoja de hechos](https://nichcy.org/disability/specific/visualimpairment)de discapacidades visuales", centro de difusión nacional para niños con discapacidades). Esto significa que casi uno de los diez jugadores potenciales tienen problemas que afectan a su vista, lo que puede afectar a su experiencia de juegos.
+El término "discapacidad visual" suele recordar a alguien que está completamente invidente. Sin embargo, es sorprendente saber que el 8,7 % de la población varonil se ve afectado por algún nivel de celo de color (" ¿Cómo heredan las personas la[coloración? ¿Con qué frecuencia?](https://www.webexhibits.org/causesofcolor/2C.mdl)," WebExhibits.org). Otro 1,2 % de las personas se ven afectadas por formas más graves de discapacidad visual ("Información de[discapacidad:](https://nichcy.org/disability/specific/visualimpairment)Hoja de hechos de discapacidades visuales", Centro nacional de difusión para niños con discapacidades). Esto significa que casi uno de cada diez jugadores potenciales tienen problemas que afectan a su visión que pueden afectar a su experiencia de juego.
 
-Para ayudarle a entender los problemas de discapacidad visual, Imagine que:
+Para ayudarle a comprender los problemas de discapacidad visual, imagine que:
 
 
 
-| Es un jugador      | Y está en este escenario                                                                                                                                                                         |
+| You Are A Gamer      | Y está en este escenario.                                                                                                                                                                         |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Con visión normal   | Es brillante y soleado, por lo que no se pueden ver objetos oscuros en la pantalla. <br/> Tiene un televisor antiguo para que no pueda ver objetos pequeños y texto debido a una mala calidad de imagen. <br/> |
-| Con visión dispares | Algunos textos de juego son tan pequeños que no se pueden leer. <br/> Tiene colores ciegos, por lo que no sabe qué botón presionar cuando el juego le indica que presione el botón rojo. <br/>                   |
+| Con visión normal   | Es brillante y soleado, por lo que no puede ver objetos oscuros en la pantalla. <br/> Tiene un conjunto de televisión antiguo para que no pueda ver objetos pequeños y texto debido a la mala calidad de la imagen. <br/> |
+| Con discapacidad visual | Algún texto del juego es tan pequeño que no se puede leer. <br/> No tiene colores, por lo que no sabe qué botón presionar cuando el juego le indique que presione el botón rojo. <br/>                   |
 
 
 
  
 
-Con unos sencillos pasos y características, puede resolver estos problemas y mejorar la experiencia de juegos para ambos jugadores con visión y jugadores normales con discapacidades visuales.
+Con unos pocos pasos y características sencillos, puede solucionar estos problemas y mejorar la experiencia de juego tanto para los jugadores con visión normal como para los jugadores con discapacidad visual.
 
-1.  Títulos de prueba en televisores en blanco y negro. Tenga en cuenta las instancias en las que los elementos, los reproductores, los objetivos y los comandos no se pueden distinguir y ajustar la paleta de colores en consecuencia.
-2.  Ofrezca a los jugadores una opción para aumentar el tamaño del texto en la pantalla. También proporcionan la capacidad de cambiar la velocidad de desplazamiento del texto. Es importante recordar que la experiencia de la consola es de 10 metros, no la experiencia de juegos de dos pies que se usan muchos desarrolladores de equipos. Incluso en el caso de los jugadores sin problemas de visión, la interfaz de usuario y el texto pequeños pueden resultar difíciles de leer a larga distancia.
-3.  Proporcionar características de texto a voz que pueden enviar voz a todo el texto del juego, incluidos los menús del juego que realizan el seguimiento de los botones. Permite al usuario controlar la velocidad, el paso y el sexo de la voz. Para ayudar a evitar que la conversión de texto a voz esté desordenada por otros ruidos de juego, proporcione a los usuarios la capacidad de ajustar el volumen de voz, ruido ambiente, sonidos de juegos activos y música. Además, incluya la opción para reproducir sonidos distintos al realizar la transición a través de los elementos de menú y los botones.
-4.  Por último, proporcione a los jugadores la opción de cambiar la configuración del brillo y el contraste en el juego. Proporcionar a los usuarios la capacidad de elegir sus propias combinaciones de colores personalizadas para que los colores de texto, de fondo y de HUD se puedan configurar para adaptarse a las necesidades de un individuo.
+1.  Títulos de prueba en televisión en blanco y negro. Tenga en cuenta las instancias en las que los elementos, los reproductores, los objetivos y los comandos no se pueden distinguir y ajustar la paleta de colores en consecuencia.
+2.  Dar a los jugadores una opción para aumentar el tamaño del texto en su pantalla. También proporciona la capacidad de cambiar la velocidad de desplazamiento del texto. Es importante recordar que la experiencia de consola es de 10 pies, no la experiencia de juegos de dos pies a la que están acostumbrados muchos desarrolladores de PC. Incluso para los jugadores sin problemas de visión, la interfaz de usuario y el texto pequeños pueden ser difíciles de leer a largas distancias.
+3.  Proporcione características de texto a voz que puedan dar voz a todo el texto del juego, incluidos los menús de juego que realicen un seguimiento del foco en los botones. Permitir al usuario controlar la velocidad, el tono y el sexo de la voz. Para ayudar a evitar que otros ruidos del juego se queme el texto a voz, dé a los usuarios la capacidad de ajustar el volumen de voz, el ruido ambiente, los sonidos activos del juego y la música. Además, incluya la opción de reproducir sonidos distintos al realizar la transición a través de elementos de menú y botones.
+4.  Por último, dé a los jugadores la opción de cambiar la configuración de brillo y contraste en el juego. Proporcione a los usuarios la capacidad de elegir sus propios esquemas de color personalizados para que los colores de texto, fondo y HUD se puedan configurar de forma personalizada para satisfacer las necesidades de un individuo.
 
-## <a name="auditory-impairments"></a>Impedimentos auditivos
+## <a name="auditory-impairments"></a>Discapacidades auditivas
 
-*"Las recuerdos de Half-Life devuelven a Haunt, ya que otro Halo tecnológico tecnológico \[ \] no es útil para el jugador sordo... Esperamos que no haya Pray. eso es si Halo 2 ve la luz del día en la que se incluirá el título completo. "www.DeafGamers.com*
+*"Memorias de Half-Life volver a desaconsecharnos, ya que otro halo tecnológico inutilizado para \[ el jugador de juegos de personas \] sordas... Esperemos que no haya ninguna excepción. que si Halo 2 ve alguna vez la luz del día que estará totalmente subtítulo", www.DeafGamers.com*
 
-La siguiente forma más frecuente de las discapacidades que pueden afectar a la reproducción de juegos son las dificultades auditivas. Solo en Estados Unidos, más de 28 millones personas se ven afectadas por algún tipo de discapacidad auditiva. Aunque las dificultades auditivas suelen estar relacionadas con la edad, 17 de cada 1.000 secundarios de la edad de 18 se ven afectadas por un incumplimiento de la audición ("[estadísticas sobre trastornos auditivos, infecciones de oído y sordera](https://www.nidcd.nih.gov/health/statistics/pages/hearing.aspx)", "Instituto Nacional sobre sordera y otros trastornos de comunicación). Cuando se considera que los jugadores de hoy en día se obtienen más antiguos y pierden su audiencia a una tarifa cada vez mayor, queda claro que la demanda de accesibilidad de audio solo crecerá.
+La siguiente forma más frecuente de discapacidades que puede afectar al juego son las discapacidades auditivas. Solo en Estados Unidos, más de 28 millones de personas se ven afectadas por algún tipo de discapacidad auditiva. Aunque las discapacidades auditivas suelen estar asociadas a la edad, 17 de cada 1000 niños menores de 18 años se ven afectados por una discapacidad auditiva ("Estadísticas sobre los[síntomas auditivas,](https://www.nidcd.nih.gov/health/statistics/pages/hearing.aspx)las cánceres de oído y la sordera", "National Institute on Deafness and Other Communication Estadistas"). Cuando se considera que los jugadores de hoy en día son mayores y pierden la audiencia a una velocidad cada vez mayor, está claro que la demanda de accesibilidad de audio solo aumentará.
 
-Para ayudarle a comprender los problemas de deficiencias auditivas, Imagine que:
+Para ayudarle a comprender los problemas de discapacidad auditiva, imagine que:
 
 
 
-| Es un jugador           | Y está en este escenario                                                                                                                                                                                                                                                            |
+| You Are A Gamer           | Y está en este escenario.                                                                                                                                                                                                                                                            |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Con audición normal       | No desea molestar a ningún usuario para que juegue con el sonido silenciado, pero no puede reproducir el juego porque las direcciones solo se proporcionan en audio. <br/>                                                                                                                               |
-| Con deficiencias auditivas | Está jugando en una parte de alta intensidad, pero no puede indicar que está bajo su incendio porque no puede oír las tomas de la pistola.<br/> El juego tiene una gran cantidad de ruido ambiente y no puede oír las instrucciones verbales que le hayan proporcionado. <br/>                                                     |
-| Personas sordas               | El comentario de audio es tan Soft, no se puede oír, ni siquiera en un salón tranquilo. <br/> Todos sus objetivos se le conceden en audio y no puede determinar lo que debe hacer. <br/> Todos los guiones se proporcionan verbalmente y no se pueden seguir. <br/> |
+| Con una audiencia normal       | No quiere molestar a nadie, por lo que se reproduce con el sonido silenciado, pero no se puede reproducir el juego porque las direcciones solo se dan en audio. <br/>                                                                                                                               |
+| Con una discapacidad auditiva | Está juegos en una gran parte, pero no puede saber que está bajo el incendio porque no puede escuchar los impactos de las revólveres.<br/> El juego tiene mucho ruido ambiental y no se pueden escuchar las instrucciones verbales que se le han dado. <br/>                                                     |
+| Quién es deaf               | El comentario de audio es tan suave que no se puede escuchar, ni siquiera en una sala silenciosa. <br/> Todos los objetivos se le han dado en audio y no puede determinar lo que se supone que debe hacer. <br/> Toda la historia se da verbalmente y no se puede seguir. <br/> |
 
 
 
  
 
-Con algo de trabajo relativamente pequeño, puede hacer que el juego sea útil y divertido para los jugadores con una audiencia normal y para los jugadores que tengan una discapacidad auditiva.
+Con un trabajo relativamente pequeño, puede hacer que el juego sea fácil de usar y disfrute para los jugadores con una audiencia normal y para los jugadores que tienen una discapacidad auditiva.
 
-1.  Cierre todos los cuadros de diálogo de subtítulos. Esto incluye contenido y animaciones en el juego. Dé al jugador la posibilidad de activar y desactivar estos subtítulos.
-2.  Cuando un efecto sonoro ofrezca información vital, proporcione también un mecanismo de texto o de la medida táctil (vibración) para los comentarios. Por ejemplo, si normalmente una bomba del juego realiza un ruido más rápido cerca de su explosión, proporcione un indicador visual (por ejemplo, una barra de tiempo) que también permita que el jugador sepa cuánto tiempo queda antes de la explosión.
-3.  Si su juego admite la reproducción en línea, proporcione a los jugadores la opción de enviar mensajes de texto, así como usar su voz para entregar información entre los miembros del equipo y otros jugadores en línea. Los auriculares no son útiles para los usuarios que no pueden escuchar y, más o más, los jugadores están pensando en jugar con otras personas con las que pueden comunicarse y establecer una estrategia en línea.
+1.  Cierre el título de todos los cuadros de diálogo. Esto incluye contenido en el juego y juegos. Dé al jugador la capacidad de activar y desactivar estos títulos.
+2.  Cuando un efecto de sonido proporcione información vital, proporcione también un mecanismo textual o táctil (vibración) para los comentarios. Por ejemplo, si normalmente una bomba en el juego hace un ruido de pitido más rápido cerca de su explosión, proporcione un indicador visual (como una barra de tiempo) que también permita al jugador saber cuánto tiempo queda antes de la explosión.
+3.  Si el juego admite el juego en línea, dé a los jugadores la opción de enviar mensajes de texto, así como de usar su voz para entregar información entre los miembros del equipo y otros jugadores en línea. Un casco no es útil para un individuo que no puede escuchar y, cada vez más, los jugadores buscan jugar con otras personas con las que puedan comunicarse y estratega en línea.
 
-## <a name="mobility-impairments"></a>Dificultades de movilidad
+## <a name="mobility-impairments"></a>Discapacidades de movilidad
 
-*"Los videojuegos ofrecen a las personas con discapacidades la oportunidad de volver a conectarse con sus compañeros y capacidades que se han perdido o que nunca han tenido. Mi experiencia personal proviene de Paralyzed con una edad de 14 años y de visitar el centro de recreo en el hospital y el único interés que tuve que salir de mi depresión era jugar el sistema Videogame. He perdido mi interés rápidamente cuando aprendí no puedo jugar... Robert Florio*
+*"Los juegos de vídeo ofrecen a las personas con discapacidades la oportunidad de volver a conectarse con sus compañeros y capacidades que se han perdido o nunca han tenido. Mi experiencia personal proviene de estar paralizada a la edad de 14 años y visitar el centro sanitario en el hospital y el único interés que tenía para salir de mi bienestar era reproducir el sistema de juegos de vídeo. He perdido rápidamente el interés cuando he aprendido que no podía reproducirlos..." Robert Suso*
 
-Los problemas de movilidad son quizás el más difícil de las distintas discapacidades para obtener estadísticas en firme. Esto se debe principalmente al hecho de que estas discapacidades pueden estar causadas por enfermedades, trastornos neurológicas, pérdida de extremidades/dígitos, Paralysis, etc., cada una de las cuales puede tener un grado diferente de impacto en la experiencia del jugador de vídeo. Estas discapacidades pueden ser congenitals o pueden producirse después de la vida.
+Las discapacidades de movilidad son quizás la más difícil de las distintas discapacidades para obtener estadísticas firmes. Esto se debe principalmente al hecho de que estas discapacidades pueden deberse a una enfermedad, a una pérdida de dedos o dígitos, a una paralación, etc., que cada una de ellas puede tener un grado de impacto variable en la experiencia de un jugador de vídeo. Estas discapacidades pueden ser congélicas o pueden producirse más adelante en la vida.
 
-Para ayudarle a comprender los problemas de deficiencias auditivas, Imagine que:
+Para ayudarle a comprender los problemas de discapacidad auditiva, imagine que:
 
 
 
-| Es un jugador                                 | Y está en este escenario                                                                                                                                                                                                                                                                                     |
+| You Are A Gamer                                 | Y está en este escenario.                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sin discapacidad de movilidad                     | El dispositivo de juego tiene tantos botones, es decir, el jugador ocasional está intimidado y no desea aprender a usarlo. <br/>                                                                                                                                                                          |
-| Con un desemparejamiento de movilidad temporal            | Tiene un control de posición rota para que no pueda usar el stick en el controlador. <br/> Tiene una pierna rota, por lo que no puede usar el panel de baile para un título de baile.<br/>                                                                                                                                     |
-| Con un discapacidad de movilidad permanente y grave | Ha perdido una ARM para que no pueda usar un controlador de dos manos. <br/> Tiene la enfermedad de Parkinson, las manos agitando y eso hace que desencadene accidentalmente botones en el controlador. <br/> Está desparalyzedndo del cuello, por lo que no puede usar un dispositivo de juego estándar en absoluto. <br/> |
+| Sin discapacidades de movilidad                     | El controlador de juegos tiene tantos botones que usted (como jugador ocasional) está muy desanudado y no quiere aprender a usarlo. <br/>                                                                                                                                                                          |
+| Con una discapacidad de movilidad temporal            | Tiene un dedo índice roto, por lo que no puede usar la huella digital en el controlador. <br/> Tiene una pie roto, por lo que no puede usar la pista de música para un título de pie.<br/>                                                                                                                                     |
+| Con una discapacidad de movilidad permanente y grave | Ha perdido un brazo, por lo que no puede usar un controlador con dos manos. <br/> Tiene la enfermedad de Asín, las manos se agite y eso hace que se desencadene accidentalmente botones en el controlador. <br/> Está paralizado desde el cuello hacia abajo, por lo que no puede usar un controlador de juego estándar. <br/> |
 
 
 
  
 
-Pensar en acomodar a todos estos jugadores es desafiante, pero hay algunas cosas fáciles que puede tener en cuenta al desarrollar sus juegos.
+Pensar en acomodar a todos estos jugadores es un reto, pero hay algunas cosas fáciles que puede tener en cuenta al desarrollar sus juegos.
 
-1.  Minimizar el uso del botón usar y pensar más sobre las interfaces de menú para los comandos. Esto es especialmente útil para las personas que pueden faltar dígitos o una mano. También es útil para los usuarios de Paralyzed que usan controladores personalizados.
-2.  Permita a los jugadores personalizar la configuración del controlador y la sensibilidad del botón o el stick. Esto permitirá que los usuarios que tienen problemas con los conocimientos del motor personalicen el controlador para minimizar el impacto que tiene su discapacidad en la reproducción del juego. También permite una mejor compatibilidad con los controladores personalizados para personas con discapacidades.
-3.  Si el juego emplea un tipo específico de periférico (almohadilla de baile, pistola ligero, etc.), permita que otros controladores realicen las mismas funciones. Por ejemplo, un juego como baile baile revolución (c) permite que las personas con restricción de silla de las sillas jueguen junto con sus amigos mediante el uso de un controlador de mantenidos de forma habitual.
+1.  Minimice el uso del botón y piense más en las interfaces de menú para los comandos. Esto es especialmente útil para las personas a las que les pueden faltar dígitos o una mano. También es útil para las personas paralizada que usan controladores personalizados.
+2.  Permitir a los jugadores personalizar la configuración del controlador y la confidencialidad de los botones y los botones. Esto permitirá a las personas que tienen problemas de habilidades motoras finas personalizar el controlador para minimizar el impacto que su discapacidad tiene en el juego. También permite una mejor compatibilidad de controladores personalizados para personas con discapacidades.
+3.  Si el juego usa un tipo específico de periférico (pista de juegos, revólver, etc.), permita que otros controladores realicen las mismas funciones. Por ejemplo, un juego como Dance Dance Revolution(c) permite incluso a los individuos con restricciones de accesibilidad jugar junto con sus amigos mediante el uso de un controlador de mano normal.
 
-## <a name="vocal-impairments"></a>Discapacidades vocales
+## <a name="vocal-impairments"></a>Discapacidades auditivas
 
-Los impedimentos vocales constituyen un porcentaje relativamente pequeño de la comunidad de discapacidades. Las estadísticas específicas son difíciles de ver, pero la evidencia muestra que la mayoría de las deficiencias vocales están vinculadas a otras discapacidades (como el motor o las dificultades auditivas). Sin embargo, a medida que más editores de juegos empiecen a explorar el uso de conferencias de voz y reconocimiento de voz en sus títulos, las personas con discapacidades vocales comenzarán a ver la calidad de la experiencia de juegos. Para contrarrestar esto, hay características de accesibilidad básicas que se pueden implementar.
+Las discapacidades auditivas son un porcentaje relativamente pequeño de la comunidad de discapacidades. Es difícil obtener estadísticas específicas, pero la evidencia muestra que la mayoría de las discapacidades auditivas están vinculadas a otras discapacidades (como discapacidades motoras o auditivas). Sin embargo, a medida que más publicadores de juegos empiecen a explorar el uso de la conferencia de voz y el reconocimiento de voz en sus títulos, las personas con discapacidades auditivas comenzarán a ver la calidad de su experiencia de juego en declive. Para hacer frente a esto, hay características de accesibilidad básicas que se pueden implementar.
 
-Para ayudarle a comprender los problemas de deficiencias auditivas, Imagine que:
+Para ayudarle a comprender los problemas de discapacidad auditiva, imagine que:
 
 
 
-| Es un jugador             | Y está en este escenario                                                                                                                                                                                                                                           |
+| You Are A Gamer             | Y está en este escenario.                                                                                                                                                                                                                                           |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sin discapacidad vocálica    | Está jugando un juego que requiere comandos orales para controlar los caracteres y no puede jugar porque no tiene micrófono. <br/> Está jugando tarde por la noche y no desea molestar a nadie para que no pueda usar su Communicator. <br/> |
-| Quién tiene deficiencias de voz | Está jugando un juego que requiere comandos de voz para controlar los caracteres y no puede jugar porque el juego no reconoce lo que está diciendo.                                                                                                               |
-| Quién no puede hablar      | El juego que está reproduciendo requiere una entrada de voz para que no pueda jugar. <br/> El juego en línea que está reproduciendo le espera que coordine la estrategia a través de Communicator para que no pueda jugar de manera eficaz. <br/>                                               |
+| Sin discapacidad auditiva    | Está haciendo un juego que requiere comandos hablados para controlar los caracteres y no puede jugar porque no tiene un micrófono. <br/> Está tocando tarde por la noche y no quiere inquietar a nadie para que no pueda usar su comunicador. <br/> |
+| Quién tiene un problema de voz | Está haciendo un juego que requiere comandos hablados para controlar los caracteres y no puede jugar porque el juego no puede reconocer lo que dice.                                                                                                               |
+| Quién no puede hablar      | El juego que está reproduciendo requiere entrada de voz para que no pueda jugar. <br/> El juego en línea que está reproduciendo espera que coordine la estrategia a través del comunicador para que no pueda jugar de forma eficaz. <br/>                                               |
 
 
 
  
 
-Afortunadamente, hay algunas correcciones fáciles que pueden hacer que el juego sea útil y agradable para estos jugadores.
+Afortunadamente, hay algunas correcciones sencillas que pueden hacer que el juego sea fácil de usar y que sea divertido para estos jugadores.
 
-1.  Si un juego usa el reconocimiento de voz, proporcione a los jugadores una opción para elegir los comandos de una combinación de botones o menús.
-2.  Si su título también es compatible con el multijugador en línea, proporcione a los jugadores la opción de una macro personalizable con mensajes de texto o (incluso mejor para los que tienen dificultades auditivas). Proporcionar compatibilidad con el teclado para el chat también es una opción.
+1.  Si un juego usa el reconocimiento de voz, proporcione a los jugadores una opción para elegir comandos en una combinación de menús o botones.
+2.  Si el título también admite el modo multijugador en línea, dé a los jugadores la opción de una macro personalizable con mensajes de audio o mensajes de texto (incluso mejores para aquellos con discapacidades auditivas). Proporcionar compatibilidad con el teclado para el chat también es una opción.
 
 ## <a name="conclusion"></a>Conclusión
 
-Llegados a este punto, es posible que esté pensando que no podría dar cabida a todos estos jugadores en todos estos escenarios. Y, incluso si va a implementar cada sugerencia en este documento, no puede asegurarse de que un título sea completamente accesible para todos. Pero siguiendo estas directrices de accesibilidad, puede hacer que su título sea mucho más atractivo para la comunidad de accesibilidad. Y que solo pueden aumentar las ventas.
+En este punto, es posible que piense que no podría dar cabida a todos estos jugadores en todos estos escenarios. E incluso si fuera a implementar todas las sugerencias de este documento, no podía asegurarse de que un título fuera completamente accesible para todos. Pero si sigue estas directrices de accesibilidad, puede hacer que su título sea mucho más atractivo para la comunidad de accesibilidad. Y eso solo puede aumentar las ventas.
 
-Para que un título sea más accesible, los desarrolladores y publicadores deben buscar personas con distintos tipos de discapacidades para la prueba de facilidad de uso de sus juegos. Este enfoque proporciona información de primera mano sobre si un juego es accesible para una audiencia determinada. Como ventaja adicional, tener diversos recursos de desarrollo y pruebas puede ofrecer información adicional que puede mejorar la reproducción de juegos para todos los jugadores. Lo más importante es que participe en la comunidad de accesibilidad y conozca a estos posibles clientes. Sostenga una caza de juego para su título en un centro de servicios de sordos local, hospital de niños o centro de veteranos. Anime a los desarrolladores y evaluadores a realizar voluntarios con las organizaciones locales que trabajan con personas con discapacidades, tomar una clase de lenguaje de firma o registrarse en los boletines relacionados con la accesibilidad para que se mantengan al día de la comunidad. Solicite comentarios sobre títulos anteriores de los jugadores deshabilitados en escuelas y institutos locales.
+Para que un título sea más accesible, los desarrolladores y publicadores deben buscar personas con varios tipos de discapacidades para probar su uso. Este enfoque proporciona información de primera mano sobre si un juego es accesible o no para un público determinado. Como ventaja adicional, tener diversos recursos de desarrollo y pruebas puede ofrecer información adicional que puede mejorar el juego para todos los jugadores. Lo más importante es atraer a la comunidad de accesibilidad y conocer a estos clientes potenciales. Mantenga un bash de juego para su título en un centro de servicios para personas con discapacidades locales, un hospital para niños o un centro de mayores. Animar a los desarrolladores y evaluadores a participar con organizaciones locales que trabajan con personas con discapacidades, a tomar una clase de lenguaje de signos o a suscribirse a boletines relacionados con la accesibilidad para mantenerse al día con la comunidad. Solicite comentarios sobre los títulos anteriores de los jugadores deshabilitados en escuelas y escuelas locales.
 
-Nadie me gusta sentir un outsider. Mediante la inclusión de la comunidad de accesibilidad en las pruebas y el diseño del juego, podrá comercializar su título a una audiencia mucho más amplia y hacer lo adecuado para la comunidad y la línea.
+A nadie le gusta sentirse un outsider. Al incluir la comunidad de accesibilidad en las pruebas y el diseño de juegos, podrá comercializar su título a un público mucho más amplio y hacer lo correcto para la comunidad y sus resultados.
 
 ## <a name="more-resources"></a>Más recursos
 
-Hay una serie de recursos web disponibles que tratan sobre la accesibilidad de los juegos de vídeo, así como varias empresas que se centran en los jugadores deshabilitados. Además, se puede contactar con el grupo de tecnología accesible en Microsoft con preguntas de accesibilidad relacionadas con el equipo en: ablecat@microsoft.com . Las preguntas de accesibilidad relacionadas con la Xbox se pueden enviar a: xaccess@microsoft.com .
+Hay una serie de recursos web disponibles que analizan la accesibilidad de los juegos de vídeo, así como varias empresas que se centran en los jugadores deshabilitados. Además, el grupo de tecnología accesible de Microsoft puede ponerse en contacto con preguntas de accesibilidad relacionadas con el equipo en: ablecat@microsoft.com . Las preguntas de accesibilidad relacionadas con Xbox se pueden enviar a: xaccess@microsoft.com .
 
 Sitios de discapacidad general:
 
--   [Accesibilidad del juego](https://www.game-accessibility.com/)
+-   [Accesibilidad de juegos](https://www.game-accessibility.com/)
 -   [Sitio de accesibilidad de Microsoft](https://www.microsoft.com/enable/)
 -   [Accesibilidad](/previous-versions/windows/internet-explorer/ie-developer/accessibility/gg701968(v=vs.85))
 
-Sitios de discapacidades auditivas:
+Sitios de discapacidad auditiva:
 
 -   [DeafGamers.com](https://www.deafgamers.com/)
--   [La biblioteca de recursos sordos](https://www.deaflibrary.org/)
+-   [La biblioteca de recursos de deaf](https://www.deaflibrary.org/)
 
-Sitios de discapacidades visuales:
+Sitios con discapacidad visual:
 
--   [Instituto de ojos nacionales](https://www.nei.nih.gov/)
+-   [National Eye Institute](https://www.nei.nih.gov/)
 -   [Vischeck](https://www.vischeck.com/)
 -   [WebExhibits.org](https://www.webexhibits.org/causesofcolor/2.mdl)
 
-Sitios de discapacidad de movilidad:
+Sitios con discapacidades de movilidad:
 
 -   [RobertFlorio.com](https://www.robertflorio.com/games)
 -   [WebAIM](https://webaim.org/articles/motor/)
 
-Sitios de discapacidad de voz:
+Sitios con discapacidades de voz:
 
--   [American Speech-Language-auditivo Association](https://www.asha.org/public/speech/)
+-   [American Speech-Language-Hearing Association](https://www.asha.org/public/speech/)
 
  
 

@@ -52,7 +52,7 @@ Este método devuelve un **valor booleano**.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método puede trabajar con listas de reproducción anidadas y reemplaza el **método setCheckedState,** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el parámetro *item.*
+Este método puede trabajar con listas de reproducción anidadas y reemplaza el **método setCheckedState,** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el *parámetro item.*
 
 ## <a name="requirements"></a>Requisitos
 

@@ -17,9 +17,9 @@ Una *curva* es una región delimitada por la intersección de una elipse y un se
 
 ![ilustración de una elipse, en la que se muestran dos radiales, un secant y un desenlazador](images/csfsh-02.png)
 
-Al llamar [**a Desenlace**](/windows/win32/api/wingdi/nf-wingdi-chord), una aplicación proporciona las coordenadas de las esquinas superior izquierda e inferior derecha del rectángulo delimitador de la elipse, así como las coordenadas de dos puntos que definen dos radiales. Un radial es una línea dibujada desde el centro del rectángulo delimitador de una elipse hasta un punto de la elipse.
+Al llamar [**a Desenlace,**](/windows/win32/api/wingdi/nf-wingdi-chord)una aplicación proporciona las coordenadas de las esquinas superior izquierda e inferior derecha del rectángulo delimitador de la elipse, así como las coordenadas de dos puntos que definen dos radiales. Un radial es una línea dibujada desde el centro del rectángulo delimitador de una elipse hasta un punto de la elipse.
 
-Cuando el sistema dibuja la parte curva del desenlazado, lo hace usando la dirección del arco actual para el contexto de dispositivo especificado. La dirección del arco predeterminada es en sentido contrario a las agujas del reloj. Puede hacer que la aplicación restablezca la dirección del arco mediante una llamada a la [**función SetDirection.**](/windows/desktop/api/Wingdi/nf-wingdi-setarcdirection)
+Cuando el sistema dibuja la parte curva del desenlazado, lo hace usando la dirección del arco actual para el contexto de dispositivo especificado. La dirección de arco predeterminada es en sentido contrario a las agujas del reloj. Puede hacer que la aplicación restablezca la dirección del arco mediante una llamada a la [**función SetDirection.**](/windows/desktop/api/Wingdi/nf-wingdi-setarcdirection)
 
  
 

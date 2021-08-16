@@ -1,5 +1,5 @@
 ---
-description: Proporciona acceso a los reconocedores de escritura a mano para su uso con análisis de lápiz.
+description: Proporciona acceso a reconocedores de escritura a mano para su uso con el análisis de entrada de lápiz.
 ms.assetid: de536cca-889e-413e-a6f7-c2229a77c801
 title: Interfaz IInkAnalysisRecognizer (IACom.h)
 ms.topic: reference
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119350885"
 ---
-# <a name="iinkanalysisrecognizer-interface"></a>Interfaz IInkAnalysisRecognizer
+# <a name="iinkanalysisrecognizer-interface"></a>IInkAnalysisRecognizer (interfaz)
 
-Proporciona acceso a los reconocedores de escritura a mano para su uso con análisis de lápiz.
+Proporciona acceso a reconocedores de escritura a mano para su uso con el análisis de entrada de lápiz.
 
 ## <a name="members"></a>Miembros
 
@@ -38,9 +38,9 @@ La **interfaz IInkAnalysisRecognizer** tiene estos métodos.
 
 | Método                                                                          | Descripción                                                                                                                    |
 |:--------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
-| [**GetCapabilities**](iinkanalysisrecognizer-getcapabilities.md)               | Recupera las funciones del reconocedor.<br/>                                                                       |
+| [**GetCapabilities**](iinkanalysisrecognizer-getcapabilities.md)               | Recupera las funcionalidades del reconocedor.<br/>                                                                       |
 | [**GetGuid**](iinkanalysisrecognizer-getguid.md)                               | Recupera el identificador único global (GUID) del reconocedor.<br/>                                                  |
-| [**GetLanguages**](iinkanalysisrecognizer-getlanguages.md)                     | Recupera los identificadores de las configuraciones regionales que **admite IInkAnalysisRecognizer.**<br/>                            |
+| [**GetLanguages**](iinkanalysisrecognizer-getlanguages.md)                     | Recupera los identificadores de las configuraciones regionales que **admite este IInkAnalysisRecognizer.**<br/>                            |
 | [**GetName**](iinkanalysisrecognizer-getname.md)                               | Recupera el nombre del reconocedor.<br/>                                                                               |
 | [**GetSupportedProperties**](iinkanalysisrecognizer-getsupportedproperties.md) | Recupera los identificadores únicos globales (GUID) de las propiedades que **admite este IInkAnalysisRecognizer.**<br/> |
 | [**GetVendor**](iinkanalysisrecognizer-getvendor.md)                           | Recupera el nombre de proveedor de **IInkAnalysisRecognizer.**<br/>                                                        |
@@ -51,9 +51,9 @@ La **interfaz IInkAnalysisRecognizer** tiene estos métodos.
 
 ## <a name="remarks"></a>Comentarios
 
-Un reconocedor tiene atributos y propiedades específicos que le permiten realizar el reconocimiento. Las propiedades de un reconocedor deben determinarse antes de que se pueda producir el reconocimiento. Los tipos de propiedades que admite un reconocedor determinan los tipos de reconocimiento que puede realizar. Por ejemplo, si un reconocedor no admite escritura a mano cursiva, devuelve resultados inexactos cuando un usuario escribe en cursive.
+Un reconocedor tiene atributos y propiedades específicos que le permiten realizar el reconocimiento. Las propiedades de un reconocedor deben determinarse antes de que se pueda producir el reconocimiento. Los tipos de propiedades que admite un reconocedor determinan los tipos de reconocimiento que puede realizar. Por ejemplo, si un reconocedor no admite escritura a mano cursiva, devuelve resultados inexactos cuando un usuario escribe en cursiva.
 
-Un reconocedor también tiene una funcionalidad integrada que administra automáticamente muchos aspectos de la escritura a mano. Por ejemplo, determina las métricas de las líneas en las que se dibujan los trazos. Puede devolver el número de línea de un trazo, pero nunca es necesario especificar cómo se determinan esas métricas de línea debido a la funcionalidad integrada del reconocedor.
+Un reconocedor también tiene funcionalidad integrada que administra automáticamente muchos aspectos de la escritura a mano. Por ejemplo, determina las métricas de las líneas en las que se dibujan los trazos. Puede devolver el número de línea de un trazo, pero nunca es necesario especificar cómo se determinan esas métricas de línea debido a la funcionalidad integrada del reconocedor.
 
 [**IInkAnalyzer**](iinkanalyzer.md) mantiene una lista de reconocedores disponibles. Para acceder a esta lista, use el método [**IInkAnalyzer::GetInkAnalysisRecognizersByPriority .**](iinkanalyzer-getinkanalysisrecognizersbypriority.md)
 

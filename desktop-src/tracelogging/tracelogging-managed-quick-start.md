@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido administrada de TraceLogging
-description: En la siguiente sección se describen los pasos básicos necesarios para agregar TraceLogging a código administrado.
+title: Seguimiento de registros administrados Inicio rápido
+description: En la sección siguiente se describen los pasos básicos necesarios para agregar TraceLogging al código administrado.
 ms.assetid: E144214D-8DCC-4263-8232-9F468C1A3CC0
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,24 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7108dfc094f3183950dd94e5398263f4bf7cfd5c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: be29e4a1bd6721b8f53dbe2394be3552ca4845143cf948f130ef55e11881b518
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589245"
 ---
-# <a name="tracelogging-managed-quick-start"></a>Inicio rápido administrada de TraceLogging
+# <a name="tracelogging-managed-quick-start"></a>Seguimiento de registros administrados Inicio rápido
 
-En la siguiente sección se describen los pasos básicos necesarios para agregar TraceLogging a código administrado.
+En la sección siguiente se describen los pasos básicos necesarios para agregar TraceLogging al código administrado.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   Windows 10
+-   Windows 10
 
-### <a name="simpletraceloggingexamplecs"></a>SimpleTraceLoggingExample. CS
+### <a name="simpletraceloggingexamplecs"></a>SimpleTraceLoggingExample.cs
 
-En este ejemplo se muestra cómo registrar eventos Tracelogging sin necesidad de crear manualmente un archivo XML de manifiesto de instrumentación independiente.
+En este ejemplo se muestra cómo registrar eventos de seguimiento sin necesidad de crear manualmente un archivo XML de manifiesto de instrumentación independiente.
 
 
 ```CSharp
@@ -61,7 +61,7 @@ namespace SimpleTraceLoggingExample
 
 ### <a name="create-the-eventsource"></a>Creación de EventSource
 
-Antes de poder registrar eventos, debe crear una instancia de la clase EventSource. El primer parámetro de constructor identifica el nombre de este proveedor. El proveedor se registra automáticamente como se muestra en el ejemplo.
+Para poder registrar eventos, debe crear una instancia de la clase EventSource. El primer parámetro de constructor identifica el nombre de este proveedor. El proveedor se registra automáticamente, como se muestra en el ejemplo.
 
 
 ```CSharp
@@ -72,9 +72,9 @@ Antes de poder registrar eventos, debe crear una instancia de la clase EventSour
 
 La instancia es estática porque solo debe haber una instancia de un proveedor específico en la aplicación a la vez.
 
-### <a name="log-tracelogging-events"></a>Registrar eventos de Tracelogging
+### <a name="log-tracelogging-events"></a>Registrar eventos de registro de seguimiento
 
-Una vez creado el proveedor, el siguiente código del ejemplo anterior registra un evento simple.
+Una vez creado el proveedor, el código siguiente del ejemplo anterior registra un evento simple.
 
 
 ```CSharp
@@ -85,7 +85,7 @@ Una vez creado el proveedor, el siguiente código del ejemplo anterior registra 
 
 ### <a name="log-structured-event-payload-data"></a>Registrar datos de carga de eventos estructurados
 
-Puede definir los datos de carga estructurada que se registran con el evento. Proporcione datos de carga estructurada como un tipo anónimo o como una instancia de una clase que se haya anotado con el `[EventData]` atributo, tal como se muestra en el ejemplo siguiente.
+Puede definir datos de carga estructurados que se registran con el evento . Proporcione datos de carga estructurados como un tipo anónimo o como una instancia de una clase que se ha anotado con el atributo , como se muestra `[EventData]` en el ejemplo siguiente.
 
 
 ```CSharp
@@ -97,7 +97,7 @@ Puede definir los datos de carga estructurada que se registran con el evento. Pr
 
 
 
-Debe agregar el `[EventData]` atributo a las clases de carga de evento que defina como se muestra a continuación.
+Debe agregar el atributo a `[EventData]` las clases de carga de eventos que defina como se muestra a continuación.
 
 
 ```CSharp
@@ -111,17 +111,17 @@ Debe agregar el `[EventData]` atributo a las clases de carga de evento que defin
 
 
 
-El atributo reemplaza la necesidad de crear manualmente un archivo de manifiesto para describir los datos de evento. Ahora todo lo que tiene que hacer es pasar una instancia de la clase al método EventSource. Write () para registrar el evento y los datos de carga correspondientes.
+El atributo reemplaza la necesidad de crear manualmente un archivo de manifiesto para describir los datos del evento. Ahora todo lo que tiene que hacer es pasar una instancia de la clase al método EventSource.Write() para registrar el evento y los datos de carga correspondientes.
 
 ## <a name="summary-and-next-steps"></a>Resumen y pasos siguientes
 
-Consulte [registro y visualización de eventos TraceLogging](tracelogging-record-and-display-tracelogging-events.md) para obtener información sobre cómo capturar y ver datos de TraceLogging con las versiones internas más recientes de las herramientas de rendimiento de Windows (WPT).
+Vea [Registrar y mostrar eventos de](tracelogging-record-and-display-tracelogging-events.md) seguimiento para obtener información sobre cómo capturar y ver datos de TraceLogging mediante las versiones internas más recientes de Windows Performance Tools (WPT).
 
-Consulte [ejemplos de Tracelogging de .net](tracelogging-net-examples.md) para obtener más ejemplos de Tracelogging administrados.
+Consulte [Ejemplos de registro de seguimiento de .NET](tracelogging-net-examples.md) para obtener más ejemplos administrados de TraceLogging.
 
- 
+ 
 
- 
+ 
 
 
 

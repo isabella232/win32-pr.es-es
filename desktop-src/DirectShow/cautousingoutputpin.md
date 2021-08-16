@@ -1,7 +1,7 @@
 ---
-description: La clase CAutoUsingOutputPin obtiene y libera el acceso a un objeto CDynamicOutputPin.
+description: La clase CAutoUsingOutputPin obtiene y libera acceso a un objeto CDynamicOutputPin.
 ms.assetid: 4ded5d18-4b14-4574-ad1f-73b886a51fac
-title: Clase CAutoUsingOutputPin (Amfilter. h)
+title: CAutoUsingOutputPin (clase, Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b664267ce2ff0dbbeeba8bc74708c9c67e185ae4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 141c65507a0d983a2b4531b93617ed741e7403b8b2a5ead9c196f78dcf61acdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955384"
 ---
-# <a name="cautousingoutputpin-class"></a>Clase CAutoUsingOutputPin
+# <a name="cautousingoutputpin-class"></a>CAutoUsingOutputPin (clase)
 
-La clase **CAutoUsingOutputPin** obtiene y libera el acceso a un objeto [**CDynamicOutputPin**](cdynamicoutputpin.md) .
+La **clase CAutoUsingOutputPin** obtiene y libera acceso a un objeto [**CDynamicOutputPin.**](cdynamicoutputpin.md)
 
 **CAutoUsingOutputPin** tiene estos tipos de miembros:
 
@@ -33,16 +33,16 @@ La clase **CAutoUsingOutputPin** obtiene y libera el acceso a un objeto [**CDyna
 
 | Métodos públicos                                                           | Descripción                                              |
 |--------------------------------------------------------------------------|----------------------------------------------------------|
-| [**CAutoUsingOutputPin**](cautousingoutputpin-cautousingoutputpin.md)   | Método de constructor. Obtiene acceso al punto de conexión especificado. |
-| [**~ CAutoUsingOutputPin**](cautousingoutputpin--cautousingoutputpin.md) | Método de destructor. Obtiene acceso al punto de conexión especificado.  |
+| [**CAutoUsingOutputPin**](cautousingoutputpin-cautousingoutputpin.md)   | Método constructor. Obtiene acceso al pin especificado. |
+| [**~CAutoUsingOutputPin**](cautousingoutputpin--cautousingoutputpin.md) | Método destructor. Obtiene acceso al pin especificado.  |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se llama a determinados métodos en [**CDynamicOutputPin**](cdynamicoutputpin.md), el autor de la llamada debe obtener acceso al pin y, a continuación, liberar ese acceso. Para obtener acceso, el llamador usa el método [**CDynamicOutputPin:: StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) . Para liberar el acceso, llama al método [**CDynamicOutputPin:: StopUsingOutputPin**](cdynamicoutputpin-stopusingoutputpin.md) . La clase **CAutoUsingOutputPin** es una clase auxiliar que controla estas tareas en sus métodos de constructor y destructor. En el ejemplo de código siguiente se muestra cómo utilizar esta clase:
+Cuando se llama a determinados métodos en [**CDynamicOutputPin,**](cdynamicoutputpin.md)el autor de la llamada debe obtener acceso al pin y, a continuación, liberar ese acceso. Para obtener acceso, el autor de la llamada usa [**el método CDynamicOutputPin::StartUsingOutputPin.**](cdynamicoutputpin-startusingoutputpin.md) Para liberar el acceso, llama al [**método CDynamicOutputPin::StopUsingOutputPin.**](cdynamicoutputpin-stopusingoutputpin.md) La **clase CAutoUsingOutputPin es** una clase auxiliar que controla estas tareas en sus métodos de constructor y destructor. En el ejemplo de código siguiente se muestra cómo usar esta clase:
 
 
 ```
@@ -77,12 +77,12 @@ HRESULT hr = S_OK;  // Important! Initialize to S_OK.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

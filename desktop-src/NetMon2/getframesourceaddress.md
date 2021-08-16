@@ -52,7 +52,7 @@ Identificador del marco al que se va a obtener un puntero.
 *lpAddress* 
 </dt> <dd>
 
-Búfer devuelto que almacena la dirección de origen del marco.
+Búfer de retorno que almacena la dirección de origen del marco.
 
 </dd> <dt>
 
@@ -66,14 +66,14 @@ Tipo de dirección que se busca, como ADDRESS \_ TYPE ETHERNET o ADDRESS TYPE \_
 *Marcas* 
 </dt> <dd>
 
-Marcas usadas para modificar los datos devueltos de la dirección de origen.
+Marcas usadas para modificar los datos de dirección de origen devueltos.
 
 
 
 | Valor                                                                                                                                                                                                           | Significado                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <span id="ADDRESSTYPE_FLAGS_NORMALIZE"></span><span id="addresstype_flags_normalize"></span><dl> <dt>**NORMALIZACIÓN DE \_ LAS MARCAS ADDRESSTYPE \_**</dt> </dl>        | Cancela el enrutamiento y los BIT de grupo.<br/>                   |
-| <span id="ADDRESSTYPE_FLAGS_BIT_REVERSE"></span><span id="addresstype_flags_bit_reverse"></span><dl> <dt>**ADDRESSTYPE \_ MARCA BIT \_ \_ REVERSE**</dt> </dl> | Convierte las direcciones de red de anillo de token de vuelta a la normalidad.<br/> |
+| <span id="ADDRESSTYPE_FLAGS_NORMALIZE"></span><span id="addresstype_flags_normalize"></span><dl> <dt>**NORMALIZACIÓN DE \_ MARCAS DE TIPO DE \_ DIRECCIÓN**</dt> </dl>        | Cancela el enrutamiento y los BIT de grupo.<br/>                   |
+| <span id="ADDRESSTYPE_FLAGS_BIT_REVERSE"></span><span id="addresstype_flags_bit_reverse"></span><dl> <dt>**MARCAS DE TIPO \_ DE DIRECCIÓN \_ BIT \_ INVERSO**</dt> </dl> | Convierte las direcciones de red del anillo de token de vuelta a la normalidad.<br/> |
 
 
 
@@ -83,7 +83,7 @@ Marcas usadas para modificar los datos devueltos de la dirección de origen.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el *valor lpAddress* es válido y el valor devuelto es BHERR \_ SUCCESS.
+Si la función se realiza correctamente, el valor *lpAddress* es válido y el valor devuelto es BHERR \_ SUCCESS.
 
 Si la función no se realiza correctamente, el valor devuelto es un código de error.
 
@@ -100,7 +100,7 @@ Si la función no se realiza correctamente, el valor devuelto es un código de e
 
 ## <a name="remarks"></a>Comentarios
 
-Se permite un tipo **de dirección de TIPO DE DIRECCIÓN FIND \_ \_ \_ HIGHEST.** Cuando se usa este tipo de dirección, la función busca la dirección IPX, XNS, IP o HEXADECIMALS antes de devolver la dirección ETHERNET, TOKENRING o FDDI. Este enfoque es útil para los protocolos y entornos en los que se pueden multiplexación dos NIC en una sola dirección de servidor.
+Se permite un tipo **de dirección de TIPO DE DIRECCIÓN FIND \_ \_ \_ HIGHEST.** Cuando se usa este tipo de dirección, la función busca la dirección IP DE IPX, XNS, IP o SARS antes de devolver la dirección ETHERNET, TOKENRING o FDDI. Este enfoque es útil para protocolos y entornos en los que se pueden multiplexadas dos NIC en una única dirección de servidor.
 
 ## <a name="requirements"></a>Requisitos
 

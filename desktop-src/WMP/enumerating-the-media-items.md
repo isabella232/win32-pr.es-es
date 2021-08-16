@@ -3,31 +3,31 @@ title: Enumerar los elementos multimedia
 description: Enumerar los elementos multimedia
 ms.assetid: 1819b4c3-57ae-48fc-8a01-b699b5802b64
 keywords:
-- Windows Media Player, listas de reproducción de sincronización
-- Modelo de objetos de Windows Media Player, listas de reproducción de sincronización
+- Reproductor de Windows Media,listas de reproducción de sincronización
+- Reproductor de Windows Media de objetos, listas de reproducción de sincronización
 - modelo de objetos, listas de reproducción de sincronización
-- Windows Media Player Mobile, listas de reproducción de sincronización
-- Control ActiveX de Windows Media Player, listas de reproducción de sincronización
-- Control ActiveX móvil de Windows Media Player, listas de reproducción de sincronización
-- Control ActiveX, listas de reproducción de sincronización
+- Reproductor de Windows Media Móvil, listas de reproducción de sincronización
+- Reproductor de Windows Media ActiveX control, listas de reproducción de sincronización
+- Reproductor de Windows Media Control de ActiveX móviles, listas de reproducción de sincronización
+- ActiveX control, listas de reproducción de sincronización
 - listas de reproducción, sincronización
-- listas de reproducción de metarchivos, sincronización
-- Listas de reproducción de metarchivos de Windows Media, sincronización
+- listas de reproducción de metarchivo, sincronización
+- Windows Listas de reproducción de metarchivo multimedia, sincronización
 - listas de reproducción de sincronización, enumeración
-- dispositivos portátiles, enumeración
+- dispositivos portátiles, enumerar
 - enumeraciones, listas de reproducción de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8e07148ed6978355056febfb2ad920e4b1380a3
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 96f6afd6c209f96edd011b6b5829af07583057bd9220c61015d8e8ffa9fe4bfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105695545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650915"
 ---
 # <a name="enumerating-the-media-items"></a>Enumerar los elementos multimedia
 
-En el código siguiente se muestran los elementos multimedia contenidos en una lista de reproducción individual. Este código se ejecuta cuando el usuario hace clic en una lista de reproducción en el control ListView identificado por IDC \_ PLVIEW.
+El código siguiente muestra los elementos multimedia contenidos en una lista de reproducción individual. Este código se ejecuta cuando el usuario hace clic en una lista de reproducción en el control ListView identificado por IDC \_ PLVIEW.
 
 
 ```C++
@@ -147,24 +147,24 @@ STDMETHODIMP CSyncSettings::ShowMedia(long lIndex)
 
 
 
-Para la implementación de la función GetPartnershipSyncState, vea [determinar el estado de sincronización](determining-playlist-synchronization-state.md)de la lista de reproducción.
+Para la implementación de la función GetPartnershipSyncState, vea Determinar el estado de sincronización de la lista [de reproducción.](determining-playlist-synchronization-state.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Interfaz IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
+[**IWMPMedia (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
 </dt> <dt>
 
-[**Interfaz IWMPPlaylist**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
+[**IWMPPlaylist (Interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
 </dt> <dt>
 
-[**Administrar listas de reproducción de sincronización**](managing-synchronization-playlists.md)
+[**Administración de listas de reproducción de sincronización**](managing-synchronization-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

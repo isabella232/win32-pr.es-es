@@ -4,23 +4,23 @@ ms.assetid: 05bdf19a-644e-4592-9601-5bc430bdc763
 title: Transición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa3c91ee201569c8a28e6cc2ac0eb80abf85474d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e578cc980a8a01aba4f4f241c7ea1d1ab03f89ec30d666fc26c7c1fa6d6c922e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072259"
 ---
 # <a name="transition"></a>Transición
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El objeto de transición crea una transición de vídeo entre las pistas o las composiciones. Para crear este objeto, llame al método [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) .
+El objeto de transición crea una transición de vídeo entre pistas o composiciones. Para crear este objeto, llame al [**método IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
 
-El objeto de transición expone las siguientes interfaces:
+El objeto de transición expone las interfaces siguientes:
 
 -   [**IAMTimelineObj**](iamtimelineobj.md)
 -   [**IAMTimelineSplittable**](iamtimelinesplittable.md)

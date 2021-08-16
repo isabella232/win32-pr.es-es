@@ -3,13 +3,13 @@ title: Tipos VML básicos
 description: En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Migre las páginas web y las aplicaciones que se basan en VML a SVG u otros estándares ampliamente admitidos.
 ms.assetid: 07c17e7b-5ac4-4a8d-a468-559307408d5b
 keywords:
-- Lenguaje de marcado de vectores (VML), tipos básicos
-- VML (Lenguaje de marcado de vectores), tipos básicos
+- Lenguaje de marcado de vectores (VML),tipos básicos
+- VML (Lenguaje de marcado de vectores),tipos básicos
 - gráficos vectoriales, tipos de VML básicos
 - Lenguaje de marcado de vectores (VML),types
 - VML (Lenguaje de marcado de vectores),types
 - gráficos vectoriales, tipos de VML
-- tipos de VML básicos
+- tipos básicos de VML
 - tipo booleano
 - fraction type
 - Tipo de ordinate
@@ -75,7 +75,7 @@ Esta propuesta usa un pequeño número de tipos básicos, enumerados en la tabla
 | [Coordinar](#ordinate) |                   | Entero de 30 bits más signo   | Parte de una coordenada (por ejemplo, en una ruta de acceso ), los valores definidos por coord.                                |
 | [length](#length)     |                   | [Emú](#length)             | Longitud física, como el ancho de una línea o el tamaño de una fuente.                                |
 | [Medida](#measure)   |                   | EMU o número 2 6          | Una longitud física, incluido un número de píxeles de dispositivo, o una fracción de alguna otra cantidad. |
-| [angle](#angle)       |                   | degrees 2 6                | Ángulo; positivo es en el sentido de las agujas del reloj.                                                                     |
+| [angle](#angle)       |                   | grados 2 6                | Ángulo; positivo es en el sentido de las agujas del reloj.                                                                     |
 | [color](#color)       | [c](#color)       | complejas                    | Elemento que permite derivar un color.                                                        |
 | [Fuente](#font)         | [Fuente](#font)     | complejas                    | Descripción de una fuente.                                                                             |
 | [bitmap](#bitmap)     | [bitmap](#bitmap) | href                       | Referencia a un archivo de imagen externo.                                                             |
@@ -85,9 +85,9 @@ Esta propuesta usa un pequeño número de tipos básicos, enumerados en la tabla
 
  
 
-La "representación fundamental" es la representación de mayor precisión que la propuesta requiere que se mantenga una implementación conforme. los datos se perderán si la implementación no puede representar los datos con la precisión necesaria. Los tipos de color, fuente y vector corresponden a elementos que a su vez tienen estructura; en cierto sentido, no son tipos básicos; sin embargo, es conveniente tratarlos como tal dentro de esta propuesta.
+La "representación fundamental" es la representación de mayor precisión que la propuesta requiere que se mantenga una implementación conforme. Los datos se perderán si la implementación no puede representar los datos con la precisión necesaria. Los tipos de color, fuente y vector corresponden a elementos que tienen estructura; en cierto sentido, no son tipos básicos; sin embargo, es conveniente tratarlos como tal dentro de esta propuesta.
 
-Cada tipo básico no complejo tiene un elemento asociado con el mismo nombre. Estos nombres de elemento están reservados y no se pueden usar para ningún otro propósito dentro de las extensiones, incluso si el uso está dentro de un elemento de extensión onview="skip". Por este motivo, es posible que una implementación que encuentre XML desconocido proporcione un almacenamiento interno eficaz del XML desconocido, siempre y cuando los valores estén incluidos en los elementos de "tipo".
+Cada tipo básico no complejo tiene un elemento asociado con el mismo nombre. Estos nombres de elemento están reservados y no se pueden usar para ningún otro propósito dentro de las extensiones, incluso si el uso está dentro de un elemento de extensión onview="skip". Por este motivo, es posible que una implementación que encuentre XML desconocido proporcione un almacenamiento interno eficaz del XML desconocido siempre y cuando los valores estén incluidos en los elementos "type".
 
 
 ```HTML
@@ -97,9 +97,9 @@ Cada tipo básico no complejo tiene un elemento asociado con el mismo nombre. Es
 
 
 
-En el primer ejemplo anterior, la cadena "1.578" debe almacenarse como una secuencia de caracteres (la implementación no sabe si es una cadena o un número); En el segundo ejemplo, el elemento fraction indica que el contenido es un número, por lo que se puede convertir a la representación de fracción de alta precisión.
+En el primer ejemplo anterior, la cadena "1.578" debe almacenarse como una secuencia de caracteres (la implementación no sabe si es una cadena o un número); En el segundo ejemplo, el elemento fraction indica que el contenido es un número, por lo que se puede convertir en la representación de fracción de alta precisión.
 
-Los tipos complejos (incluido el mapa de bits) tienen nombres de elementos asociados que se usan para delimitar el valor. Esto simplifica el análisis al garantizar que las tareas de análisis más complejas están asociadas a etiquetas de elementos únicos.
+Los tipos complejos (incluido el mapa de bits) tienen nombres de elementos asociados que se usan para delimitar el valor. Esto simplifica el análisis al garantizar que las tareas de análisis más complejas están asociadas a etiquetas de elemento únicas.
 
 [![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
@@ -153,11 +153,11 @@ Todos los valores numéricos (es decir, valores de cantidades sin dimensiones) d
 
 
 
-Una cantidad con el sufijo f debe ser un número entero; No se permiten números fraccionales. El entero resultante debe ser representable como un número con signo de complemento de 32 bits 2; por lo tanto, el intervalo efectivo de la representación es 32768 (de hecho, menor que 32768 y mayor o igual que -32768).
+Una cantidad con el sufijo f debe ser un número entero; No se permiten números fraccionales. El entero resultante debe ser representable como un número con signo de complemento de 32 bits 2; Por lo tanto, el intervalo efectivo de la representación es 32768 (de hecho, menor que 32768 y mayor o igual que -32768).
 
 Se requiere una implementación conforme para conservar los valores que se expresan como valores f. Los valores representados como números decimales se pueden convertir en un valor f y almacenarse de esa manera. Una aplicación puede registrar valores generados internamente en cualquier unidad adecuada. sin embargo, un valor leído de un documento existente debe mantenerse con la precisión original completa o debe convertirse en un valor f.
 
-Si la implementación no puede hacerlo, debe advertir al usuario de que se pueden perder datos. (Es aceptable emitir este tipo de advertencia una vez cuando se encuentran por primera vez los datos generados externamente).
+Si la implementación no puede hacerlo, debe advertir al usuario de que se pueden perder datos. (Es aceptable emitir esta advertencia una vez cuando se encuentran por primera vez los datos generados externamente).
 
 Cuando un valor decimal se convierte al formato f, la implementación puede usar cualquier modo de redondeo aritmético; sin embargo, un número entero debe convertirse exactamente al formato f. Se recomienda que las implementaciones se conviertan redondeando a menos infinito y que la conversión siempre sea exacta.
 
@@ -173,9 +173,9 @@ ordinate
 
 
 
-Las unidades del sistema de coordenadas establecidas por coord son de algún tipo nominal, lo que se conoce como ordinate. Se trata de una medida de longitud, pero solo se usa en relación con el rectángulo que establece coord. Cualquier valor de ordinate de tipo se escalará mediante los valores *w* y *h* del coord y la relación resultante usada para establecer una medida real en el dispositivo de salida.
+Las unidades del sistema de coordenadas establecido por coord son de algún tipo nominal, lo que se conoce como ordinate. Se trata de una medida de longitud, pero solo se usa en relación con el rectángulo que establece coord. Cualquier valor de ordinate de tipo se escalará mediante los valores *w* y *h* del coord y la relación resultante utilizada para establecer una medida real en el dispositivo de salida.
 
-Una implementación conforme debe ser capaz de controlar valores de ordinación de hasta 30 bits más signo (es decir, un entero de 31 bits con signo, no un entero de 32 bits con signo). Sin embargo, se recomienda que las implementaciones intenten generar coordenadas para la ruta de acceso y elementos similares que tienen aproximadamente 16 bits de precisión. Esto minimizará la posibilidad de subdesbordar o desbordarse en una implementación no conforme.
+Una implementación conforme debe ser capaz de controlar valores de ordinación de hasta 30 bits más signo (es decir, un entero de 31 bits con signo, no un entero de 32 bits con signo). Sin embargo, se recomienda que las implementaciones intenten generar coordenadas para la ruta de acceso y elementos similares que tengan aproximadamente 16 bits de precisión. Esto minimizará la posibilidad de subdesbordar o desbordarse en una implementación no conforme.
 
 Los valores de ordinate siempre son enteros. Es posible que un separador decimal no aparezca en un valor de tipo ordinate. No se puede anexar ningún especificador de unidad a valores de tipo ordinate.
 
@@ -197,7 +197,7 @@ Se permiten todos los [calificadores de unidad CSS1](https://www.w3.org/pub/WWW/
 
 
 
-| Número de EMUs | Número por pulgada | Número por milímetro | Descripción             |
+| Número de EME | Número por pulgada | Número por milímetro | Descripción             |
 |----------------|-----------------|-----------------------|-------------------------|
 | 360            |                 | 0,01                  | Win32 HIMETRIC          |
 | 12700          | 72              |                       | "point"                 |
@@ -208,19 +208,19 @@ Se permiten todos los [calificadores de unidad CSS1](https://www.w3.org/pub/WWW/
 
  
 
-No se permiten números fraccionales de EMU. Cualquier medida debe ser representable como un número entero de 32 bits con firma de UNIDADES EMUs , lo que limita la magnitud de una medida a 2348 pulgadas, aproximadamente 59 metros o 65 pulgadas. Dado que las medidas siempre hacen referencia al tamaño de una representación en un dispositivo de salida de tamaño nominal de pantalla o página, siempre estarán dentro de este intervalo.
+No se permiten números fraccionario de EME. Cualquier medida debe ser representable como un número entero de EME con firma de 32 bits (esto limita la magnitud de una medida a 2348 pulgadas), aproximadamente 59 metros o 65 metros. Dado que las medidas siempre hacen referencia al tamaño de una representación en un dispositivo de salida nominalmente de pantalla o de tamaño de página, siempre estarán dentro de este intervalo.
 
-Sin embargo, tenga en cuenta que la representación no es adecuada para las medidas del mundo real y que donde se registran (por ejemplo, para registrar el tamaño real de una ruta de acceso), se debe usar alguna otra representación.
+Sin embargo, tenga en cuenta que la representación no es adecuada para las medidas del mundo real y que, cuando se registran (por ejemplo, para registrar el tamaño real de una ruta de acceso), se debe usar otra representación.
 
-Se requiere una implementación conforme para conservar los valores que son números exactos de EMUs. Los valores representados de cualquier otra manera se pueden convertir en un valor de EMU y almacenarse de esa manera. Una aplicación puede registrar valores generados internamente en cualquier unidad adecuada. sin embargo, un valor leído de un documento existente debe mantenerse con la precisión original completa o debe convertirse en un valor de EMU.
+Se requiere una implementación conforme para conservar los valores que son números exactos de EME. Los valores representados de cualquier otra manera se pueden convertir en un valor de EMU y almacenarse de esa manera. Una aplicación puede registrar valores generados internamente en cualquier unidad adecuada. sin embargo, un valor leído de un documento existente debe mantenerse con la precisión original completa o debe convertirse en un valor de EMU.
 
-Si la implementación no puede hacerlo, debe advertir al usuario de que se pueden perder datos. (Es aceptable emitir este tipo de advertencia una vez cuando se encuentran por primera vez los datos generados externamente).
+Si la implementación no puede hacerlo, debe advertir al usuario de que se pueden perder datos. (Es aceptable emitir esta advertencia una vez cuando se encuentran por primera vez los datos generados externamente).
 
 En la práctica, las longitudes físicas se usan para relativamente pocas medidas en esta propuesta. Los datos que normalmente son más importantes son los datos de ruta de acceso y se codifican en el sistema de coordenadas definido, por forma, por coord.
 
 ### <a name="alternative-representations"></a>Representaciones alternativas
 
-CSS1 define las representaciones de longitud estándar de [HTML.](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) Las unidades relativas, a excepción del píxel, no son significativas en el contexto en el que se usan las longitudes en esta propuesta y no se deben usar. Si el documento registra el tamaño de píxel previsto (destino), esto define la traducción de píxeles en EMU; De lo contrario, se debe usar el valor predeterminado de 90 ppp definido por [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units)
+CSS1 define las representaciones de longitud estándar [de HTML.](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) Las unidades relativas, a excepción del píxel, no son significativas en el contexto en el que se usan las longitudes en esta propuesta y no se deben usar. Si el documento registra el tamaño de píxel previsto (destino), esto define la traducción de píxeles en EMU; De lo contrario, se debe usar el valor predeterminado de 90 ppp definido por [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units)
 
 A excepción de emu, cualquier valor se puede dar como una fracción decimal. Cuando un valor decimal se convierte en EMU, la implementación puede usar cualquier modo de redondeo aritmético. (La única manera de que una aplicación de creación garantice un resultado determinado es especificarlo en emu).
 
@@ -238,11 +238,11 @@ measure
 
 
 
-Una medida es una cantidad que puede ser una [longitud o](#length) una [fracción](#fraction). Esto se parece mucho a las medidas de longitud HTML y CSS, que en muchos casos pueden ser medidas físicas o porcentajes de alguna otra cantidad. Si no se especifica ningún especificador de unidad, se debe suponer que el valor es una fracción decimal (por lo tanto, este comportamiento se hereda de fraction, no de length).
+Una medida es una cantidad que puede ser una [longitud o](#length) una [fracción](#fraction). Esto se parece estrechamente a las medidas de longitud HTML y CSS, que pueden, en muchos casos, ser medidas físicas o porcentajes de alguna otra cantidad. Si no se especifica ningún especificador de unidad, se debe suponer que el valor es una fracción decimal (por lo tanto, este comportamiento se hereda de fraction, no de length).
 
-A diferencia de la longitud, un valor de píxel tiene un significado definido por el contexto, por lo que la conversión a emu normalmente es inapropiada. Hay tres representaciones fundamentales posibles que la implementación debe mantener (es decir, una representación no se puede convertir en otra sin pérdida de información).
+A diferencia de la longitud, un valor de píxel tiene un significado definido por el contexto, por lo que la conversión a emu normalmente no es apropiada. Hay tres representaciones fundamentales posibles que la implementación debe mantener (es decir, una representación no se puede convertir en otra sin pérdida de información).
 
-1.  Se debe mantener un valor fraccionado en el formato [de fracción](#fraction) (un valor "f").
+1.  Se debe mantener un valor fraccionrio en formato [de](#fraction) fracción (un valor "f").
 2.  Se debe mantener una longitud física en EMU.
 3.  Un valor de píxel debe mantenerse como un número entero de píxeles.
 
@@ -268,7 +268,7 @@ La representación fundamental de un ángulo es un número de grados múltiplo p
 
 Una implementación puede usar cualquier intervalo para ángulos y se permite normalizar un ángulo (por ejemplo, de -180 a +180 o de 0 a 360). No es necesario que las implementaciones sean coherentes; sin embargo, la representación integral de un ángulo no debe superar el intervalo de un entero de 32 bits con signo.
 
-El sufijo fd se usa para identificar esta representación de un ángulo (fracciones de grado). Tenga en cuenta que esto se distingue del sufijo f para una fracción sin dimensión, aunque se pueden usar aritméticas idénticas para admitirla. El valor predeterminado de un valor angular es grados simples, es decir, un valor sin escalar. También se puede señalar con el sufijo " " (el símbolo de grado); Sin embargo, el uso de esto depende de tener una codificación de documento adecuada; por lo tanto, el sufijo deg también se define en grados medios. El conjunto completo de posibles bastas es el siguiente.
+El sufijo fd se usa para identificar esta representación de un ángulo (grado fraccional). Tenga en cuenta que esto se distingue del sufijo f para una fracción sin dimensión, aunque se pueden usar aritméticas idénticas para admitirla. El valor predeterminado de un valor angular es grados simples, es decir, un valor sin escalar. También se puede señalar con el sufijo " " (el símbolo de grado); Sin embargo, el uso de esto depende de tener una codificación de documento adecuada; por lo tanto, el sufijo deg también se define en grados medios. El conjunto completo de posibles bastas es el siguiente.
 
 
 
@@ -346,7 +346,7 @@ En las definiciones de XPointer, el origen de ubicación es el elemento que cont
 | fillBack         | ancestor(1,shape)<br/> child(1, fill)<br/> child(1, back)<br/> child(1, color)<br/> | 1     | Color de fondo del relleno de forma.                                                                                                                                   |
 | line             | ancestor(1,shape)<br/> child(1, line)<br/> child(1, color)<br/>                           | 1     | Color de línea de primer plano de la forma.                                                                                                                                   |
 | lineBack         | ancestor(1,shape)<br/> child(1, line)<br/> child(1,back) <br/> child(1, color)<br/> | 1     | Color de línea de fondo de la forma.                                                                                                                                   |
-| lineOrFill       | línea, relleno                                                                                                  | 1     | Valor de línea si no tiene el valor predeterminado; de lo contrario, el valor de relleno. Esto devuelve eficazmente el color que está en el borde de la forma.                                           |
+| lineOrFill       | line, fill                                                                                                  | 1     | Valor de línea si no tiene el valor predeterminado; de lo contrario, el valor de relleno. Esto devuelve eficazmente el color que está en el borde de la forma.                                           |
 | fillThenLine     | fill, line                                                                                                  | 1     | Valor de relleno si no tiene el valor predeterminado; de lo contrario, el valor de línea. Esto devuelve de forma eficaz el color de la forma principal (si la forma no se rellena, el resultado será el color de línea).   |
 | shadow           | antecesor(1,forma)<br/> child(1, shadow)<br/> child(1, color)<br/>                         | 2     | Color de la sombra (se trata de una característica de nivel 2).                                                                                                                      |
 | scheme           | Consulte a continuación                                                                                                   | 1     | Color de esquema del esquema definido para el documento; vea a continuación.                                                                                                       |
@@ -466,7 +466,7 @@ Esta etiqueta permite definir hasta ocho colores de esquema. Los colores no defi
 | 1     | scheme.text       | Texto y líneas                | Color del texto asociado a una forma y color de línea estándar.                                                      |
 | 2     | scheme.shadow     | Shadows                       | Color de sombra estándar: el color que se usa normalmente para las sombras de forma.                                                     |
 | 3     | scheme.title      | Texto del título                    | Color que se va a usar para el título o el texto del título.                                                                              |
-| 4     | scheme.fill       | Llena                         | Color de relleno estándar: el color que se usa normalmente para rellenar las formas.                                                          |
+| 4     | scheme.fill       | Llena                         | Color de relleno estándar: el color que normalmente se usa para rellenar las formas.                                                          |
 | 5     | scheme.accent     | Acento                        | Color "resaltado" normal que se usa para resaltar un elemento importante de un gráfico.                                             |
 | 6     | scheme.hyperlink  | Acento e hipervínculo          | Resaltar el color usado para los hipervínculos. Se puede usar para otros fines en los que el color denota un vínculo a otra información. |
 | 7     | scheme.followed   | Hipervínculo acentuable y seguido | Resaltar el color de los hipervínculos seguidos; también adecuado para vínculos "hacia atrás".                                         |
@@ -485,7 +485,7 @@ Los colores de esquema no participan en el esquema predeterminado si no se espec
 
 A veces, las aplicaciones registran colores en función de la configuración del sistema operativo dentro de los gráficos. Normalmente, son transitorios y no es necesario escribir; las definiciones desystemcolor existen únicamente para admitir esto. Un color del sistema se introduce definiendo una etiqueta adecuada en un nuevo espacio de nombres e insertando la información adecuada en el contenido del elemento.
 
-Esta propuesta define dicha etiqueta para codificar los colores Windows interfaz de usuario definidos en el archivo de encabezado winuser.h.
+Esta propuesta define este tipo de etiqueta para codificar los colores Windows interfaz de usuario definidos en el archivo de encabezado winuser.h.
 
 
 ```HTML
@@ -509,7 +509,7 @@ pure
 
 
 
-Si el elemento aparece en un valor de color, es una sugerencia de que el color no debe aproximarse <pure/> a un patrón de dither. Se trata de una característica de nivel 1 y una implementación conforme no necesita respetarla. La designación es importante para los gráficos que se muestran en dispositivos de resolución media, como las pantallas de vídeo, donde las características pequeñas (como las líneas) pueden provocar un alias con colores entrelazados. En dispositivos como las impresoras, que normalmente difir todos los colores excepto los pocos colores totalmente saturados, el dithering suele ser lo suficientemente bueno como para evitar este problema.
+Si el elemento aparece en un valor de color, es una sugerencia de que un patrón de dither no debe aproximar <pure/> el color. Se trata de una característica de nivel 1 y una implementación conforme no necesita respetarla. La designación es importante para los gráficos que se muestran en dispositivos de resolución media, como las pantallas de vídeo, donde las características pequeñas (como las líneas) pueden provocar un alias con colores entrelazados. En dispositivos como las impresoras, que normalmente difir todos los colores excepto los pocos colores totalmente saturados, el dithering suele ser lo suficientemente bueno como para evitar este problema.
 
 [![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
@@ -646,7 +646,7 @@ El atributo de comportamiento se puede usar para indicar cómo debe controlarse 
 | Token    | Descripción                                                                                                                                                                                                                                                                             |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Separado | Marca el mapa de bits como una entidad independiente, que no debe considerarse una parte integral del documento. El mapa de bits no debe conservarse con el documento. Si se copia el documento, no se debe copiar el mapa de bits; si se mueve el documento, el mapa de bits no se debe mover con él. |
-| original | El atributo title identifica la ubicación original del mapa de bits como una dirección URL; de lo contrario, no se especifica el significado del título.                                                                                                                                                          |
+| original | El atributo title identifica la ubicación original del mapa de bits como una dirección URL; De lo contrario, no se especifica el significado del título.                                                                                                                                                          |
 
 
 
@@ -654,7 +654,7 @@ El atributo de comportamiento se puede usar para indicar cómo debe controlarse 
 
 Estos valores son sugerencias sobre el comportamiento esperado. La opción independiente hace referencia al comportamiento de los datos a los que hace referencia href. Si se dan datos independientes y originales, se espera que la aplicación ignore el URI href y vuelva a generar el mapa de bits a partir de los datos originales. Si solo se da original, se espera que la aplicación use el URI href para encontrar el mapa de bits, pero puede dar al usuario la opción de volver a generarlo.
 
-Es válido hacer que el URI de href y el atributo title sea el mismo valor (léxico): esto es adecuado si el mapa de bits al que se hace referencia no se "almacena con" el documento. Se pretende (aunque no es necesario) que href se utilice para la propia copia del mapa de bits del documento (que se puede eliminar si se eliminan las formas de referencia) y que ese título se utilice para indicar una copia compartida. Por lo tanto, si ambos contienen el mismo valor, no hay ninguna copia específica del documento.
+Es válido hacer que el URI de href y el atributo title sea el mismo valor (léxico): esto es adecuado si el mapa de bits al que se hace referencia no está "almacenado con" el documento. Se pretende (aunque no es necesario) que href se utilice para la propia copia del mapa de bits del documento (que se puede eliminar si se eliminan las formas de referencia) y que ese título se utilice para indicar una copia compartida. Por lo tanto, si ambos contienen el mismo valor, no hay ninguna copia específica del documento.
 
 Las aplicaciones pueden pasar por alto la sugerencia si no encaja con el modelo de almacenamiento real de los datos XML.
 
@@ -664,18 +664,18 @@ Las aplicaciones pueden pasar por alto la sugerencia si no encaja con el modelo 
 
 En el contexto de esta propuesta, los datos externos son invariablemente un mapa de bits o un archivo que se usa para generar un mapa de bits. En el nivel de representación 0, no es necesario que se admite ningún formato de mapa de bits externo; las rutas de acceso solo se pueden rellenar con colores sólidos. Para representar el conjunto completo de rellenos de nivel 1 de representación, es necesario que se admiten mapas de bits. El nivel de representación 1 incluye (solo) los siguientes formatos:
 
-1.  JFIF, es decir, datos de formato ISO/IEC 10918 insertados dentro de un archivo con el encabezado JFIF (que se puede considerar como un marcador APP0 determinado después del creador de SOI) e incluyendo (solo) el intervalo de formatos JPEG admitidos por el código IJG v6.
+1.  JFIF, es decir, datos de formato ISO/IEC 10918 insertados dentro de un archivo con el encabezado JFIF (que se puede considerar un marcador APP0 determinado después del creador de SOI) e incluyendo (solo) el intervalo de formatos JPEG admitidos por el código IJG v6.
 2.  PNG, tal como se define en la especificación png versión 1.0.
 
 El nivel de representación 2 también incluye compatibilidad con lo siguiente:
 
--   GIF, tal como se define en la especificación GIF publicada por CompuServ en 1987 (normalmente denominada "GIF87a"). GIF89a también debe ser compatible en este nivel, sujeto a la restricción de que los datos no deben contener ningún bloque de extensión que necesite interpretación para mostrar el mapa de bits distinto de las extensiones de control de gráficoscon un requisito para la entrada del usuario o un tiempo de retraso. Esto permite incluir comentarios, pero no la extensión de texto sin formato. Una aplicación puede insertar extensiones de aplicación (0x21, 0xFF) pero, con la terminología de esta propuesta, solo deben contener datos de edición, no de representación.
+-   GIF, tal como se define en la especificación GIF publicada por CompuServ en 1987 (normalmente denominada "GIF87a"). GIF89a también debe ser compatible en este nivel, sujeto a la restricción de que los datos no deben contener ningún bloque de extensión que necesite interpretación para mostrar el mapa de bits distinto de las extensiones de control de gráficoscon un requisito para la entrada del usuario o un tiempo de retraso. Esto permite incluir comentarios, pero no la extensión de texto sin formato. Una aplicación puede insertar extensiones de aplicación (0x21, 0xFF) pero, con la terminología de esta propuesta, solo deben contener datos de edición, no representación.
 
 Cualquier otro formato de datos usado en el gráfico obliga a que el gráfico tenga al menos el nivel de edición 3 y, posiblemente, el nivel 3 (si los datos son necesarios para representar el gráfico). Se recomienda que una aplicación publique los formatos que admite. Por ejemplo, Microsoft Office admite los siguientes formatos adicionales de forma nativa y, por tanto, puede escribir datos de edición en este formato:
 
 1.  WMF: Windows metarchivo (formato Win 3.1)
 2.  EMF: Windows metarchivo "mejorado" (formato Win32)
-3.  CSV: Mac OS quickdraw DEL ARCHIVO DE LA APLICACIÓN (todas las versiones, pero sin registros QuickTime u otras extensiones)
+3.  CSV: Mac OS archivo DE RÁPIDA DE QuickDraw (todas las versiones, pero sin registros QuickTime u otras extensiones)
 4.  BMP: formato Windows archivo de mapa de bits, "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 y BITMAPV5
 
 [![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)

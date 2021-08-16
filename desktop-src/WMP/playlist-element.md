@@ -21,7 +21,7 @@ ms.locfileid: "118336751"
 
 El **elemento PLAYLIST** proporciona una manera de organizar los elementos multimedia en una lista para facilitar la manipulación mediante los siguientes atributos y métodos. Los elementos **DE LISTA DE** REPRODUCCIÓN predefinidos también se proporcionan para mayor comodidad. Las columnas personalizadas se pueden especificar para una lista de reproducción mediante la **inclusión de elementos COLUMN** como elementos secundarios del **elemento PLAYLIST.**
 
-El **elemento PLAYLIST** admite los atributos siguientes.
+El **elemento PLAYLIST** admite los siguientes atributos.
 
 
 
@@ -80,17 +80,17 @@ El **elemento PLAYLIST** admite los métodos siguientes.
 | [copy](playlist-copy.md)                                           | Comienza una operación de copia desde el CD.                                                                                      |
 | [deleteSelected](playlist-deleteselected.md)                       | Elimina el elemento seleccionado de la lista de reproducción.                                                                              |
 | [deleteSelectedFromLibrary](playlist-deleteselectedfromlibrary.md) | Elimina el elemento seleccionado de la lista de reproducción y de la biblioteca.                                                         |
-| [getNextCheckedItem](playlist-getnextcheckeditem.md)               | Recupera el índice del siguiente elemento activado en la lista de reproducción que sigue al índice especificado.                               |
-| [getNextCheckedItem2](playlist-getnextcheckeditem2.md)             | Recupera el índice del siguiente elemento activado en la lista de reproducción que sigue al índice especificado. Funciona con listas de reproducción anidadas.  |
-| [getNextSelectedItem](playlist-getnextselecteditem.md)             | Recupera el índice del siguiente elemento seleccionado en la lista de reproducción que sigue al índice especificado.                              |
-| [getNextSelectedItem2](playlist-getnextselecteditem2.md)           | Recupera el índice del siguiente elemento seleccionado en la lista de reproducción que sigue al índice especificado. Funciona con listas de reproducción anidadas. |
+| [getNextCheckedItem](playlist-getnextcheckeditem.md)               | Recupera el índice del siguiente elemento activado en la lista de reproducción después del índice especificado.                               |
+| [getNextCheckedItem2](playlist-getnextcheckeditem2.md)             | Recupera el índice del siguiente elemento activado en la lista de reproducción después del índice especificado. Funciona con listas de reproducción anidadas.  |
+| [getNextSelectedItem](playlist-getnextselecteditem.md)             | Recupera el índice del siguiente elemento seleccionado en la lista de reproducción después del índice especificado.                              |
+| [getNextSelectedItem2](playlist-getnextselecteditem2.md)           | Recupera el índice del siguiente elemento seleccionado en la lista de reproducción después del índice especificado. Funciona con listas de reproducción anidadas. |
 | [moveSelectedDown](playlist-moveselecteddown.md)                   | Mueve el elemento seleccionado hacia abajo una posición de la lista.                                                                    |
 | [moveSelectedUp](playlist-moveselectedup.md)                       | Mueve el elemento seleccionado hacia arriba una posición de la lista.                                                                      |
-| [setCheckedState](playlist-setcheckedstate.md)                     | Especifica que el elemento indizado de la lista de reproducción está activado.                                                               |
+| [setCheckedState](playlist-setcheckedstate.md)                     | Especifica que el elemento indexado de la lista de reproducción está activado.                                                               |
 | [setCheckedState2](playlist-setcheckedstate2.md)                   | Establece el estado comprobado del elemento con el índice especificado en el elemento **PLAYLIST.** Funciona con listas de reproducción anidadas.     |
 | [setColumnResizeMode](playlist-setcolumnresizemode.md)             | Especifica el tamaño de las columnas indizadas.                                                                            |
 | [setColumnWidth](playlist-setcolumnwidth.md)                       | Especifica el ancho de columna y cambia el modo de cambio de tamaño de la columna a "wmpcrmFixed".                                    |
-| [setSelectedState](playlist-setselectedstate.md)                   | Especifica que el elemento indizado de la lista de reproducción está seleccionado.                                                              |
+| [setSelectedState](playlist-setselectedstate.md)                   | Especifica que el elemento indexado de la lista de reproducción está seleccionado.                                                              |
 | [setSelectedState2](playlist-setselectedstate2.md)                 | Establece el estado seleccionado del elemento con el índice especificado en el elemento **PLAYLIST.** Funciona con listas de reproducción anidadas.    |
 | [sortColumn](playlist-sortcolumn.md)                               | Ordena los datos de la columna especificada.                                                                                   |
 
@@ -98,15 +98,15 @@ El **elemento PLAYLIST** admite los métodos siguientes.
 
  
 
-El **elemento PLAYLIST** admite los atributos de ambiente y puede implementar los controladores de eventos de ambiente, excepto donde se indica. Para obtener más información, vea [Atributos ambientales](ambient-attributes.md) y [controladores de eventos de ambiente.](ambient-event-handlers.md)
+El **elemento PLAYLIST** admite los atributos ambientales y puede implementar los controladores de eventos ambientales, excepto donde se indica. Para obtener más información, vea [Atributos de ambiente](ambient-attributes.md) y Controladores de eventos [ambientales.](ambient-event-handlers.md)
 
-Las listas de reproducción predefinidas son elementos **DE LISTA DE REPRODUCCIÓN** normales con varias configuraciones de atributos comunes especificadas de forma predeterminada. Están disponibles las siguientes listas de reproducción predefinidas.
+Las listas de reproducción predefinidas son elementos **de lista de reproducción** normales con varias configuraciones de atributos comunes especificadas de forma predeterminada. Están disponibles las siguientes listas de reproducción predefinidas.
 
 
 
 | LISTA DE REPRODUCCIÓN predefinida                      | Descripción                                                       |
 |------------------------------------------|-------------------------------------------------------------------|
-| [DROPDOWNPLAYLIST](dropdownplaylist.md) | Lista de reproducción **desplegable** sin elementos visibles.                   |
+| [LISTA DESPLEGABLEPLAYLIST](dropdownplaylist.md) | Lista de reproducción **desplegable** sin elementos visibles.                   |
 | [ITEMSPLAYLIST](itemsplaylist.md)       | Lista de reproducción **desplegable** sin elementos ni encabezados de columna visibles. |
 
 

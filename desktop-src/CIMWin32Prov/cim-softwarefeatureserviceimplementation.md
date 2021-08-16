@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM SoftwareFeatureServiceImplementation representa una asociación entre un servicio y cómo se implementa en el software.
+description: La clase CIM SoftwareFeatureServiceImplementation representa una asociación entre un servicio y cómo \_ se implementa en el software.
 ms.assetid: fa80cc91-8dd7-4726-a24a-5c4dfa3e786b
 ms.tgt_platform: multiple
-title: CIM_SoftwareFeatureServiceImplementation (clase)
+title: CIM_SoftwareFeatureServiceImplementation clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dc521de933a4567c0760495880baf9251a774938
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b89be16ac5b462d9a4b10441699c6c160a91bd3ef5222b2a7cd642413c4c2081
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919205"
 ---
-# <a name="cim_softwarefeatureserviceimplementation-class"></a>\_Clase SoftwareFeatureServiceImplementation de CIM
+# <a name="cim_softwarefeatureserviceimplementation-class"></a>Cim \_ SoftwareFeatureServiceImplementation (clase)
 
-La clase **CIM \_ SoftwareFeatureServiceImplementation** representa una asociación entre un servicio y cómo se implementa en el software. Un servicio puede ser proporcionado por más de una característica de software, que funciona conjuntamente entre sí. Además, una característica de software puede proporcionar más de un servicio. Cuando hay varias características de software asociadas a un único servicio, se supone que los elementos funcionan conjuntamente para proporcionar el servicio. Si existen implementaciones diferentes de un servicio, cada implementación produciría instancias individuales del objeto de servicio. Las instancias individuales tendrían asociaciones con las implementaciones únicas.
+La **\_ clase CIM SoftwareFeatureServiceImplementation** representa una asociación entre un servicio y cómo se implementa en el software. Un servicio se puede proporcionar mediante más de una característica de software, que funciona conjuntamente entre sí. Además, una característica de software puede proporcionar más de un servicio. Cuando varias características de software están asociadas a un único servicio, se supone que los elementos funcionan juntos para proporcionar el servicio. Si existen implementaciones diferentes de un servicio, cada implementación produciría instancias individuales del objeto de servicio. Las instancias individuales tendrían entonces asociaciones con las implementaciones únicas.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,13 +47,13 @@ class CIM_SoftwareFeatureServiceImplementation : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ SoftwareFeatureServiceImplementation** tiene estos tipos de miembros:
+La **\_ clase CIM SoftwareFeatureServiceImplementation** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ SoftwareFeatureServiceImplementation** tiene estas propiedades.
+La **clase \_ CIM SoftwareFeatureServiceImplementation** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,56 +66,56 @@ Tipo de datos: **CIM \_ SoftwareFeature**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ SoftwareFeature de CIM**](cim-softwarefeature.md) que describe la característica de software antecedente.
+Cim [**\_ SoftwareFeature que**](cim-softwarefeature.md) describe la característica de software anterior.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ servicio CIM**
+Tipo de datos: **Servicio CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")
+Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")
 </dt> </dl>
 
-Un [**\_ servicio CIM**](cim-service.md) que describe el servicio dependiente.
+Un [**servicio CIM \_**](cim-service.md) que describe el servicio dependiente.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ SoftwareFeatureServiceImplementation** se deriva de [**la \_ dependencia CIM**](cim-dependency.md).
+La **clase \_ CIM SoftwareFeatureServiceImplementation** se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

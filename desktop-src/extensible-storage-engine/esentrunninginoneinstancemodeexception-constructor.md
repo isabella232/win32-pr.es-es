@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRunningInOneInstanceModeException'
-title: Constructor de EsentRunningInOneInstanceModeException
+description: 'Más información sobre: Constructor EsentRunningInOneInstanceModeException'
+title: Constructor EsentRunningInOneInstanceModeException
 TOCTitle: 'EsentRunningInOneInstanceModeException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRunningInOneInstanceModeException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrunninginoneinstancemodeexception.esentrunninginoneinstancemodeexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 71e6210f1395f0f213d7b44ae81417609c30b40c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a4d482aaafc75f8d109b6332d3051a020f3d32616430aa01913fe72db111ca0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981815"
 ---
-# <a name="esentrunninginoneinstancemodeexception-constructor"></a>Constructor de EsentRunningInOneInstanceModeException
+# <a name="esentrunninginoneinstancemodeexception-constructor"></a>Constructor EsentRunningInOneInstanceModeException
 
 Inicializa una nueva instancia de la clase EsentRunningInOneInstanceModeException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentRunningInOneInstanceModeException()
 
 [Miembros de EsentRunningInOneInstanceModeException](./esentrunninginoneinstancemodeexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

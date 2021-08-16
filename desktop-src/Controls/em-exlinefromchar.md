@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_EXLINEFROMCHAR (RichEdit. h)
-description: Determina qué línea contiene el carácter especificado en un control Rich Edit.
+title: EM_EXLINEFROMCHAR mensaje (Richedit.h)
+description: Determina qué línea contiene el carácter especificado en un control de edición enriquecido.
 ms.assetid: 497482fb-9640-4063-a9f5-e0691b65225d
 keywords:
-- EM_EXLINEFROMCHAR controles de mensajes de Windows
+- EM_EXLINEFROMCHAR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce904725c5dc63732bae07cfaa95b41558db11d7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c41f5fbe540a4d765a48292d4ffd5b4af5849681dd1a82f4512b79348a6249d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915645"
 ---
-# <a name="em_exlinefromchar-message"></a>\_Mensaje EXLINEFROMCHAR em
+# <a name="em_exlinefromchar-message"></a>Mensaje \_ EM EXLINEFROMCHAR
 
-Determina qué línea contiene el carácter especificado en un control Rich Edit.
+Determina qué línea contiene el carácter especificado en un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Determina qué línea contiene el carácter especificado en un control Rich Edit
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se usa; debe ser cero.
+Este parámetro no se utiliza; debe ser cero.
 
 </dd> <dt>
 
@@ -51,11 +51,11 @@ Este mensaje devuelve el índice de base cero de la línea.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

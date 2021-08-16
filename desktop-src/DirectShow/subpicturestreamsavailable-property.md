@@ -4,12 +4,12 @@ ms.assetid: 6a6d9d15-2f56-47fc-a7bb-2cf33f384f41
 title: Propiedad SubpictureStreamsAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e34f780a726966580a72d87b6f7900bb73c1a85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2349cb696c1f6d363fefb6a6e90a662fa7c3233b3b0aefcb57d381a604f41832
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633445"
 ---
 # <a name="subpicturestreamsavailable-property"></a>Propiedad SubpictureStreamsAvailable
 
@@ -26,11 +26,11 @@ La `SubpictureStreamsAvailable` propiedad recupera el número de secuencias de s
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el número de flujos disponibles como un entero.
+Devuelve el número de secuencias disponibles como un entero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado. Para consultar cada secuencia para su atributo Language, llame primero a este método para obtener el límite superior.
+Esta propiedad es de solo lectura sin ningún valor predeterminado. Para consultar su atributo de lenguaje en cada secuencia, primero llame a este método para obtener el límite superior.
 
 La numeración de secuencias es de base cero.
 

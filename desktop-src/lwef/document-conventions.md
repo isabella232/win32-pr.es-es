@@ -4,42 +4,42 @@ description: Convenciones del documento
 ms.assetid: 63ff3427-6a91-4968-ad8d-f8b56c3587a8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90b30e0b535dbfee8265163c11750092c6f84d33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3ce19cbf9927915df1985c5511bb13b52d8e99a94a038a67251aebcb873e6ecc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104148810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601615"
 ---
 # <a name="document-conventions"></a>Convenciones del documento
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-En esta documentación se utilizan las siguientes convenciones tipográficas:
+En esta documentación se usan las siguientes convenciones tipográficas:
 
 
 
 | Convención                       | Descripción                                                                    |
 |----------------------------------|--------------------------------------------------------------------------------|
-| **Sub, visible, Caption**        | Las palabras en negrita con la letra inicial en mayúscula indican palabras clave.               |
-| *agente, cadena, ahora*             | Las palabras en cursiva indican marcadores de posición para la información proporcionada.                 |
-| ENTRAR, F1                        | Las palabras en mayúsculas indican nombres de archivo, nombres de clave y secuencias de teclas. |
+| **Sub, Visible, Caption**        | Las palabras en negrita con letras iniciales en mayúsculas indican palabras clave.               |
+| *agent, String, Now*             | Las palabras en cursiva indican marcadores de posición para la información que proporcione.                 |
+| ENTER, F1                        | Las palabras con todas las letras mayúsculas indican nombres de archivo, nombres de clave y secuencias de claves. |
 | `Agent1.Commands.Enabled = True` | El texto de esta fuente indica ejemplos de código.                                       |
-| `' This is a comment`            | Un apóstrofo ( `'` ) indica un Comentario de código.                                  |
-| `Agent1.Commands.Add "Test1", _` | Un espacio y un carácter de subrayado ( \_ ) continúan una línea de código.                       |
-| `[words or expression]`          | Los elementos incluidos entre corchetes son opcionales.                                     |
-| `This | That`                    | Una barra vertical indica una opción entre dos o más elementos.                   |
-| *directivas*                          | La palabra "Agent" en cursiva representa el nombre del control de agente que se utiliza.  |
+| `' This is a comment`            | Un apóstrofo ( `'` ) indica un comentario de código.                                  |
+| `Agent1.Commands.Add "Test1", _` | Un espacio y un carácter de subrayado ( \_ ) continúa una línea de código.                       |
+| `[words or expression]`          | Los elementos entre corchetes son opcionales.                                     |
+| `This | That`                    | Una barra vertical indica una elección entre dos o más elementos.                   |
+| *Agente*                          | La palabra "agent" en cursiva representa el nombre del control de agente que se usa.  |
 
 
 
- 
+ 
 
-Las descripciones de las interfaces de programación de este documento siguen las convenciones de Microsoft VBScript. Sin embargo, también deben ser aplicables a otros lenguajes.
+Las descripciones de las interfaces de programación de este documento siguen las convenciones de Microsoft VBScript. Sin embargo, también deben ser aplicables con carácter general a otros idiomas.
 
- 
+ 
 
- 
+ 
 
 
 

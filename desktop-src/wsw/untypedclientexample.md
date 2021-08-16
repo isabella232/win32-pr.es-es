@@ -1,6 +1,6 @@
 ---
 title: UnTypedClientExample
-description: Revise un ejemplo de cliente sin tipo que usa la API de servicios web de Windows (WWSAPI). En este ejemplo se muestra un cliente HTTP que envía mensajes de solicitud-respuesta.
+description: Revise un ejemplo de cliente sin tipo que usa Windows Web Services API (WWSAPI). En este ejemplo se muestra un cliente HTTP que envía mensajes de solicitud-respuesta.
 ms.assetid: ea6d8696-fd43-4d3c-bfec-3602658a08a7
 keywords:
 - UnTypedClientExample Native-Web-Services
@@ -8,12 +8,12 @@ keywords:
 - Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d66e1fcb2a26ddb0f55aa87f0aa6c4a3ace3a945
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 72c7a7148705eba20485c852ea7dcaa45e820e1efb06af067dc8a64ac1cf251a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109815"
 ---
 # <a name="untypedclientexample"></a>UnTypedClientExample
 

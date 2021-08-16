@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_CLEARTICS (commctrl. h)
-description: Quita las marcas de graduación actuales de una barra de aumento. Este mensaje no quita la primera y última marca de graduación, creadas automáticamente por la barra de aumento.
+title: TBM_CLEARTICS mensaje (Commctrl.h)
+description: Quita las marcas de graduación actuales de una barra de seguimiento. Este mensaje no quita la primera y la última marca de graduación, que la barra de seguimiento crea automáticamente.
 ms.assetid: 2830497c-2cf0-4068-810c-c05d4e0abb8b
 keywords:
-- TBM_CLEARTICS controles de mensajes de Windows
+- TBM_CLEARTICS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a1ecb4f9f931c976b2542a1f263fc069f1eca10
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9390fc45c5b96a7b85d3b1b366e34d24c3b4bf0bc60ec066ead28357bcec1439
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046775"
 ---
-# <a name="tbm_cleartics-message"></a>TBM \_ CLEARTICS
+# <a name="tbm_cleartics-message"></a>Mensaje \_ CLEARTICS de TBM
 
-Quita las marcas de graduación actuales de una barra de aumento. Este mensaje no quita la primera y última marca de graduación, creadas automáticamente por la barra de aumento.
+Quita las marcas de graduación actuales de una barra de seguimiento. Este mensaje no quita la primera y la última marca de graduación, que la barra de seguimiento crea automáticamente.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Quita las marcas de graduación actuales de una barra de aumento. Este mensaje n
 *wParam* 
 </dt> <dd>
 
-Volver a dibujar el marcador. Si este parámetro es **true**, la barra de aumento se vuelve a dibujar una vez que se han desactivado las marcas de graduación. Si este parámetro es **false**, el mensaje borra las marcas de graduación pero no vuelve a dibujar la barra de aumento.
+Vuelva a dibujar la marca. Si este parámetro es **TRUE**, la barra de seguimiento se vuelve a dibujar después de borrar las marcas de graduación. Si este parámetro es **FALSE,** el mensaje borra las marcas de graduación, pero no vuelve a dibujar la barra de seguimiento.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -19,11 +19,11 @@ Microsoft Active Accessibility es una tecnología basada en el modelo de objetos
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-Mediante el uso Microsoft Active Accessibility y los procedimientos de diseño accesibles, los desarrolladores pueden hacer que las aplicaciones que se ejecutan en Windows sea más accesible para muchas personas con discapacidades de visión, oído o movimiento.
+Mediante el Microsoft Active Accessibility y los procedimientos de diseño accesibles, los desarrolladores pueden hacer que las aplicaciones que se ejecutan en Windows sea más accesible para muchas personas con discapacidades de visión, de oído o de movimiento.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Microsoft Active Accessibility está diseñado principalmente para desarrolladores de C, C++ y Microsoft Visual Basic desarrollo. En general, los desarrolladores necesitan un nivel moderado de comprensión sobre objetos COM e interfaces, así como sobre Unicode.
+Microsoft Active Accessibility está diseñado principalmente para desarrolladores de C, C++ y Microsoft Visual Basic. En general, los desarrolladores necesitan un nivel moderado de comprensión sobre objetos COM e interfaces, así como sobre Unicode.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
@@ -39,7 +39,7 @@ La compatibilidad total con Microsoft Active Accessibility está integrada en Wi
 | [Información general técnica](technical-overview.md)<br/>           | Información general sobre Microsoft Active Accessibility tecnología.<br/>                                                                                                             |
 | [Guía del desarrollador de C/C++](c-c---developer-s-guide.md)<br/> | Información sobre cómo Microsoft Active Accessibility desde la perspectiva de un desarrollador de aplicaciones de C o C++. Trata los problemas específicos de los desarrolladores de cliente y servidor.<br/>  |
 | [Referencia de C/C++](c-c---reference.md)<br/>                 | Documentación de referencia sobre Microsoft Active Accessibility API para desarrolladores de C/C++.<br/>                                                                                       |
-| [Ejemplos](samples.md)<br/>                                 | Programas de ejemplo que muestran cómo usar la API Microsoft Active Accessibility.<br/>                                                                                              |
+| [Ejemplos](samples.md)<br/>                                 | Programas de ejemplo que muestran cómo usar Microsoft Active Accessibility API.<br/>                                                                                              |
 | [Apéndices](appendixes.md)<br/>                           | Material de referencia adicional para Microsoft Active Accessibility cliente y servidor y Visual Basic desarrolladores.<br/>                                                       |
 
 

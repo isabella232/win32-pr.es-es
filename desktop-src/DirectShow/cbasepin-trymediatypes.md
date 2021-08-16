@@ -1,7 +1,7 @@
 ---
-description: Dada una lista de tipos de medios, el método TryMediaTypes intenta completar una conexión con uno de esos tipos.
+description: Dada una lista de tipos de medios, el método TryMediaTypes intenta completar una conexión mediante uno de esos tipos.
 ms.assetid: cc437e44-bc59-494e-8669-7f539353a794
-title: Método CBasePin. TryMediaTypes (Amfilter. h)
+title: Método CBasePin.TryMediaTypes (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 19b8da39d07b8aae9401bdc6ccf2eecb5d3a1e88
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a4d4e33ca339c1ade344bb2ca9531bea381d14b4381773673b07e522437e90a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108625"
 ---
-# <a name="cbasepintrymediatypes-method"></a>CBasePin. TryMediaTypes, método
+# <a name="cbasepintrymediatypes-method"></a>Método CBasePin.TryMediaTypes
 
-Dada una lista de tipos de medios, el `TryMediaTypes` método intenta completar una conexión mediante uno de esos tipos.
+Dada una lista de tipos de medios, `TryMediaTypes` el método intenta completar una conexión mediante uno de esos tipos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,44 +47,44 @@ virtual HRESULT TryMediaTypes(
 *pReceivePin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN receptor.
+Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin receptor.
 
 </dd> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que limita los posibles tipos de medios, o **null**.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que limita los posibles tipos multimedia, o **NULL.**
 
 </dd> <dt>
 
 *pEnum* 
 </dt> <dd>
 
-Puntero a una interfaz [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) , que se usa para enumerar la lista de tipos de medios.
+Puntero a una [**interfaz IEnumMediaTypes,**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) que se usa para enumerar la lista de tipos de medios.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los de la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla siguiente.
 
 
 
 | Código devuelto                                                                                                  | Descripción                                       |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                         | Correcto.<br/>                               |
-| <dl> <dt>**VFW \_ E \_ no \_ hay \_ tipos aceptables**</dt> </dl> | No se encontró un tipo de medio aceptable.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                         | Correcto.<br/>                               |
+| <dl> <dt>**VFW \_ E NO HAY TIPOS \_ \_ \_ ACEPTABLES**</dt> </dl> | No se encontró un tipo de medio aceptable.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para cada tipo de medio devuelto por la interfaz **IEnumMediaTypes** , este método intenta una conexión llamando al método [**CBasePin:: AttemptConnection**](cbasepin-attemptconnection.md) .
+Para cada tipo de medio devuelto por la interfaz **IEnumMediaTypes,** este método intenta una conexión llamando al [**método CBasePin::AttemptConnection.**](cbasepin-attemptconnection.md)
 
-Si el parámetro *PMT* no es **null**, el PIN omite los tipos de medios que no coinciden con este tipo. El parámetro *PMT* puede especificar un tipo de medio parcial. Un tipo de medio parcial tiene un valor de GUID \_ null para el tipo principal, el subtipo o el formato. El \_ valor null de GUID coincide con cualquier tipo, similar a un valor "comodín".
+Si el *parámetro pmt* no es **NULL,** el pin omite los tipos de medios que no coinciden con este tipo. El *parámetro pmt* puede especificar un tipo de medio parcial. Un tipo de medio parcial tiene un valor de GUID \_ NULL para el tipo principal, el subtipo o el formato. El valor \_ NULL de GUID coincide con cualquier tipo, similar a un valor de "carácter comodín".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,16 +92,16 @@ Si el parámetro *PMT* no es **null**, el PIN omite los tipos de medios que no c
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

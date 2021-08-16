@@ -37,21 +37,21 @@ propVal = Installer.FileAttributes
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Ruta de acceso necesaria al archivo o carpeta. Una ruta de acceso parcial supone el directorio actual.
+Ruta de acceso necesaria al archivo o carpeta. Una ruta de acceso parcial asume el directorio actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **propiedad FileAttributes** devuelve los valores siguientes.
 
 
 
-| Atributo file              | Value      | Value |
+| Atributo de archivo              | Valor      | Valor |
 |-----------------------------|------------|-------|
 | FILE\_ATTRIBUTE\_READONLY   | 0x00000001 | 1     |
 | FILE\_ATTRIBUTE\_HIDDEN     | 0x00000002 | 2     |
 | FILE\_ATTRIBUTE\_SYSTEM     | 0x00000004 | 4     |
 | FILE\_ATTRIBUTE\_DIRECTORY  | 0x00000010 | 16    |
-| FILE \_ ATTRIBUTE \_ TEMPORARY  | 0x00000100 | 256   |
+| ATRIBUTO \_ DE \_ ARCHIVO TEMPORAL  | 0x00000100 | 256   |
 | FILE\_ATTRIBUTE\_COMPRESSED | 0x00000800 | 2048  |
 | FILE\_ATTRIBUTE\_OFFLINE    | 0x00001000 | 4096  |
 
@@ -65,12 +65,12 @@ Devuelve –1 si el archivo o carpeta no existe o no es accesible.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Header<br/>  | <dl> <dt>Windows.storage.h</dt> </dl>                                                                                                                                                            |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

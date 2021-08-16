@@ -17,9 +17,9 @@ ms.locfileid: "118361466"
 En las secciones siguientes se proporciona código de ejemplo para realizar tareas específicas mediante la API de SDO.
 
 -   [Agregar un cliente](/windows/desktop/Nps/sdo-adding-a-client)
--   [Cambiar el acceso telefónico Configuración](/windows/desktop/Nps/sdo-changing-dial-in-settings)
+-   [Cambio del acceso telefónico Configuración](/windows/desktop/Nps/sdo-changing-dial-in-settings)
 -   [Creación de una directiva de solicitud de conexión](/windows/desktop/Nps/sdo-creating-a-connection-request-policy)
--   [Enumerar perfiles, directivas y clientes](/windows/desktop/Nps/sdo-listing-profiles-policies-and-clients)
+-   [Enumeración de perfiles, directivas y clientes](/windows/desktop/Nps/sdo-listing-profiles-policies-and-clients)
 -   [Obtener propiedades de contabilidad](/windows/desktop/Nps/sdo-obtaining-accounting-properties)
 -   [Procesamiento de dominios y manipulación de atributos](/windows/desktop/Nps/sdo-realms-processing-and-attribute-manipulation)
 

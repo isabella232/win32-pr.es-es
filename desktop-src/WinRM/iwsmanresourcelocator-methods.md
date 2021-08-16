@@ -5,27 +5,27 @@ ms.assetid: 22302ADA-A3E6-4317-9423-7BC90A5C1610
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 722e56bdfc8e0759eec87cbba4f4aa7a6d39caeb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f8f4fce69ca4247f28ee476989be3e4d52d984f7f574dc3cb8616ce0134821fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103772696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743350"
 ---
 # <a name="iwsmanresourcelocator-methods"></a>Métodos IWSManResourceLocator
 
-La interfaz [**IWSManResourceLocator**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanresourcelocator) expone los métodos siguientes.
+La [**interfaz IWSManResourceLocator**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanresourcelocator) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Método AddOption**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addoption)
--   [**Método AddSelector**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addselector)
+-   [**AddOption (método)**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addoption)
+-   [**AddSelector (método)**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addselector)
 -   [**Método ClearOptions**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearoptions)
 -   [**Método ClearSelectors**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearselectors)
 
- 
+ 
 
- 
+ 
 
 
 

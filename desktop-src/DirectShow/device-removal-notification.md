@@ -1,21 +1,21 @@
 ---
-description: Notificación de eliminación de dispositivo
+description: Notificación de eliminación de dispositivos
 ms.assetid: 0b96231a-f990-4c1c-8d00-cafeb3985ab3
-title: Notificación de eliminación de dispositivo
+title: Notificación de eliminación de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93c84fa280e0adbc1d0eec9043fbb2f1446487f0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f3cc73aba6ad02eb1dfba095b6f45b9fa6c067c51dbe165f4ded86141dae1c66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103998039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052025"
 ---
-# <a name="device-removal-notification"></a>Notificación de eliminación de dispositivo
+# <a name="device-removal-notification"></a>Notificación de eliminación de dispositivos
 
-Si el usuario quita un Plug and Play dispositivo que estaba usando el gráfico, el administrador de gráficos de filtros envía un evento de [**\_ \_ pérdida de dispositivo EC**](ec-device-lost.md) . Si el dispositivo vuelve a estar disponible, el administrador de gráficos de filtros expone otro evento de **dispositivo de EC \_ \_ perdido** . Sin embargo, el estado anterior del filtro de captura ya no es válido. La aplicación debe volver a generar el gráfico para usar el dispositivo.
+Si el usuario quita un dispositivo Plug and Play que usaba el grafo, el administrador de gráficos de filtro publica un evento [**\_ EC DEVICE \_ LOST.**](ec-device-lost.md) Si el dispositivo vuelve a estar disponible, el administrador de gráficos de filtros publica otro **evento EC \_ DEVICE \_ LOST.** Sin embargo, el estado anterior del filtro de captura ya no es válido. La aplicación debe recompilar el gráfico para usar el dispositivo.
 
-DirectShow no envía ningún evento cuando se conecta un nuevo dispositivo. Para saber cuándo está disponible un nuevo dispositivo, la aplicación puede supervisar los mensajes de la ventana de WM \_ DEVICECHANGE. Para obtener más información, vea "administración de dispositivos" en la documentación de Platform SDK.
+DirectShow no envía ningún evento cuando un nuevo dispositivo está conectado. Para obtener información sobre cuándo está disponible un nuevo dispositivo, la aplicación puede supervisar los mensajes de la ventana WM \_ DEVICECHANGE. Para más información, consulte "Administración de dispositivos" en la documentación de Platform SDK.
 
 ## <a name="related-topics"></a>Temas relacionados
 

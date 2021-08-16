@@ -4,22 +4,22 @@ ms.assetid: 9c80cf59-054f-49b6-9456-ed5e091cbfaf
 title: Conjunto de propiedades de transporte de dispositivos externos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85e38217af21ea1839d7c9207a4922bcff00d63a
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 6ef7db31dfe80fae0178aa329ce7e3c6cd55d3a6acbef7fd5a8ccda07943bef4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685675"
 ---
 # <a name="external-device-transport-property-set"></a>Conjunto de propiedades de transporte de dispositivos externos
 
-Este conjunto de propiedades controla el transporte de datos hacia y desde un dispositivo externo. En la mayoría de los casos, las aplicaciones no deben usar directamente este conjunto de propiedades. Use la [**interfaz IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport) en su lugar.
+Este conjunto de propiedades controla el transporte de datos hacia y desde un dispositivo externo. En la mayoría de los casos, las aplicaciones no deben usar este conjunto de propiedades directamente. En su [**lugar, use la interfaz IAMExtTransport.**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)
 
-En la tabla siguiente se enumeran las propiedades que son relevantes para las aplicaciones en modo de usuario. Para obtener una descripción completa de este conjunto de propiedades, consulte el DDK del Kit de desarrollo de controladores de Microsoft Windows.
+En la tabla siguiente se enumeran las propiedades que son relevantes para las aplicaciones en modo de usuario. Para obtener una descripción completa de este conjunto de propiedades, consulte el DDK de Microsoft Windows Driver Development Kit.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------|---------------------------|
 | GUID del conjunto de propiedades | TRANSPORTE EXT DE PROPSETID \_ \_ |
 
@@ -32,7 +32,7 @@ En la tabla siguiente se enumeran las propiedades que son relevantes para las ap
 | Id. de propiedad                                                                           | Descripción                                  |
 |---------------------------------------------------------------------------------------|----------------------------------------------|
 | [**KSPROPERTY \_ EXTXPORT \_ ATN \_ SEARCH**](ksproperty-extxport-atn-search.md)           | Busca un número de seguimiento absoluto (ATN). |
-| [**BÚSQUEDA DE CÓDIGO \_ DE TIEMPO DE EXTXPORT \_ DE KSPROPERTY \_**](ksproperty-extxport-timecode-search.md) | Busca un código de hora.                    |
+| [**KSPROPERTY \_ EXTXPORT \_ TIMECODE \_ SEARCH**](ksproperty-extxport-timecode-search.md) | Busca un código de hora.                    |
 
 
 

@@ -75,7 +75,7 @@ Controlar un blob de error que contiene información de error adicional.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada **interna IESP::Configure):**
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada **interna IESP::Configure):**
 
 
 
@@ -101,7 +101,7 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt> </dl></td>
-<td>El BLOB de entrada especificado por el <em>parámetro hInputBlob</em> carece de una entrada necesaria para realizar esta operación. Este error puede generarse mediante la <strong>llamada IESP::Conectar</strong> <strong>o IESP::Configure.</strong> Mire el blob de error devuelto por <em>hErrorBlob para</em> determinar qué entrada no se encontró.<br/></td>
+<td>El BLOB de entrada especificado por el <em>parámetro hInputBlob</em> carece de una entrada necesaria para realizar esta operación. Este error puede generarse mediante la <strong>llamada IESP::Conectar</strong> <strong>o IESP::Configure.</strong> Mire el blob de error devuelto por <em>hErrorBlob</em> para determinar qué entrada no se encontró.<br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt> </dl></td>
@@ -130,7 +130,7 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_TIMEOUT</strong></dt> </dl></td>
-<td>Se ha pasado el tiempo de espera de la solicitud. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
+<td>Se ha producido un tiempo de espera de la solicitud. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_UPLEVEL_BLOB</strong></dt> </dl></td>
@@ -145,13 +145,13 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando se **llama Conectar** método , Monitor de red llama automáticamente a **IESP::Configure** mediante el BLOB proporcionado por el *parámetro hInputBlob.* Tenga en cuenta que los códigos de error devueltos por la llamada a **IESP::Configure** se devuelven y devuelven mediante la **llamada Conectar IESP::Conectar.**
+Cuando se **Conectar** al método Monitor de red, llama automáticamente a **IESP::Configure** mediante el BLOB proporcionado por el *parámetro hInputBlob.* Tenga en cuenta que los códigos de error devueltos por la llamada a **IESP::Configure** se devuelven y devuelve la **llamada ASEP::Conectar** llamada.
 
-Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que cuando se conecta a la red mediante este método, debe seguir usando la **interfaz IESP** para capturar fotogramas.
+Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que al conectarse a la red mediante este método, debe seguir usando la **interfaz IESP** para capturar fotogramas.
 
 El BLOB de entrada especificado por *hInputBlob* se puede obtener llamando a **GetNPPBlobFromUI,** **GetNPPBlobTable** y **SelectNPPBlobFromTable.**
 
-El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron comprender o encontrar en el BLOB de entrada especificado en *hInputBlob*. El blob de error devuelto contiene información de error que la aplicación puede usar para solucionar problemas. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada que no Monitor de red encuentra se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
+El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron entender ni encontrar en el BLOB de entrada especificado en *hInputBlob*. El BLOB de error devuelto contiene información de error que la aplicación puede usar para solucionar problemas. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada que Monitor de red no se pudo encontrar se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
 
 
 

@@ -26,7 +26,7 @@ ms.locfileid: "119433295"
 ---
 # <a name="mdm_secureassessment-class"></a>Clase \_ SecureAssessment de MDM
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información aquí proporcionada.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 La **clase \_ SecureAssessment de MDM** se usa para proporcionar información de configuración para el explorador de evaluación segura.
 
@@ -151,7 +151,7 @@ Tipo de acceso: lectura y escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |

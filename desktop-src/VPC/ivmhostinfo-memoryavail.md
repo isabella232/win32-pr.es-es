@@ -4,8 +4,8 @@ description: Recupera la cantidad de memoria física disponible en el equipo hos
 ms.assetid: cb593d02-cdb9-40f6-b57f-72fc3278f1bb
 keywords:
 - MemoryAvail, propiedad Virtual PC
-- Propiedad MemoryAvail Virtual PC , interfaz IVMHostInfo
-- Interfaz IVMHostInfo pc virtual, propiedad MemoryAvail
+- Propiedad MemoryAvail Virtual PC, interfaz IVMHostInfo
+- IVMHostInfo interface Virtual PC , MemoryAvail property
 topic_type:
 - apiref
 api_name:
@@ -45,7 +45,7 @@ HRESULT get_MemoryAvail(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Memoria física disponible, en megabytes. Este valor es una **VARIANTE de** tipo VT \_ DECIMAL.
+La memoria física disponible, en megabytes. Este valor es una **VARIANTE de** tipo VT \_ DECIMAL.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -65,7 +65,7 @@ Memoria física disponible, en megabytes. Este valor es una **VARIANTE de** tipo
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |

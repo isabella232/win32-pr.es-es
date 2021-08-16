@@ -1,7 +1,7 @@
 ---
 description: Especifica si el codificador debe habilitar la codificación S/PDIF en tiempo real.
 ms.assetid: 36ac925b-d68b-4c39-9033-2c0a058125b5
-title: MFPKEY_WMAENC_RTSPDIF propiedad (Wmcodecdsp.h)
+title: MFPKEY_WMAENC_RTSPDIF (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 296c02dfe67a945d5c1649bf524c3be3e01425a8b7885b702d044aece7b0bcf7

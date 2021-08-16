@@ -56,7 +56,7 @@ Puntero al búfer definido por la aplicación que se usa para devolver el modo.
 
 Devuelve un entero correspondiente a la constante MCI que define el modo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si la cadena terminada en NULL que describe el modo es mayor que el búfer, se trunca.
 
@@ -66,10 +66,10 @@ No todos los dispositivos pueden funcionar en todos los modo. Por ejemplo, el di
 
 | Modo de funcionamiento | Constante MCI          |
 |----------------|-----------------------|
-| no está listo      | MODO MCI \_ \_ NO \_ LISTO |
+| no está listo      | EL MODO MCI \_ \_ NO ESTÁ \_ LISTO |
 | abierto           | MODO MCI \_ \_ ABIERTO       |
 | en pausa         | PAUSA DEL MODO MCI \_ \_      |
-| reproducción        | REPRODUCCIÓN EN MODO MCI \_ \_       |
+| reproducción        | REPRODUCCIÓN EN \_ MODO \_ MCI       |
 | grabación      | REGISTRO DEL MODO MCI \_ \_     |
 | buscar        | MCI \_ MODE \_ SEEK       |
 | stopped        | MCI \_ MODE \_ STOP       |
@@ -82,7 +82,7 @@ No todos los dispositivos pueden funcionar en todos los modo. Por ejemplo, el di
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -90,7 +90,7 @@ No todos los dispositivos pueden funcionar en todos los modo. Por ejemplo, el di
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

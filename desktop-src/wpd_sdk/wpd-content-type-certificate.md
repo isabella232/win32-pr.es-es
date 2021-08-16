@@ -1,19 +1,19 @@
 ---
-description: '\_certificado de \_ tipo de contenido de WPD \_'
+description: CERTIFICADO DE TIPO \_ DE \_ CONTENIDO \_ WPD
 ms.assetid: 5fcaf17b-f583-4ba7-aec3-cdb02dbf3bbc
 title: WPD_CONTENT_TYPE_CERTIFICATE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bde0ff631cd8eed28226d1e374d84e65d9756b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bade52d6a1f066b00826d5ef79f28db19c8e24b88dd1eeafb8052855196d3b3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109865"
 ---
-# <a name="wpd_content_type_certificate"></a>\_certificado de \_ tipo de contenido de WPD \_
+# <a name="wpd_content_type_certificate"></a>CERTIFICADO DE TIPO \_ DE \_ CONTENIDO \_ WPD
 
-Un objeto que describe su tipo como \_ certificado de tipo de contenido de WPD \_ \_ representa un certificado utilizado para la autenticación.
+Un objeto que describe su tipo como WPD \_ CONTENT TYPE CERTIFICATE representa un certificado usado para la \_ \_ autenticación.
 
 Este tipo de objeto admite las siguientes propiedades.
 
@@ -21,29 +21,29 @@ Este tipo de objeto admite las siguientes propiedades.
 
 | Nombre de la propiedad                                                                                                         | Obligatorio u opcional                                                  |
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [\_identificador de objeto de WPD \_](object-properties.md)                                                                | Obligatorio.                                                             |
-| [\_ \_ ID. primario del objeto WPD \_](object-properties.md)                                                 | Obligatorio.                                                             |
-| [\_nombre del objeto WPD \_](object-properties.md)                                                            | Es obligatorio si el objeto representa un archivo.                             |
-| [\_ \_ \_ identificador único persistente del objeto WPD \_](object-properties.md)                          | Obligatorio.                                                             |
-| [\_formato de objeto WPD \_](object-properties.md)                                                        | Obligatorio.                                                             |
-| [\_tipo de \_ contenido del objeto WPD \_](object-properties.md)                                           | Obligatorio.                                                             |
-| [\_objeto WPD \_ ISHIDDEN](object-properties.md)                                                    | Es obligatorio si el objeto está oculto.                                     |
-| [\_objeto WPD \_ ISSYSTEM](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema). |
-| [\_tamaño del objeto WPD \_](object-properties.md)                                                            | Obligatorio si el objeto tiene al menos un recurso.                     |
-| [\_nombre de \_ \_ archivo original del objeto \_ WPD](object-properties.md)                              | Es obligatorio si el objeto representa un archivo.                             |
-| [\_objeto WPD \_ no \_ consumible](object-properties.md)                                       | Se recomienda si el objeto no está diseñado para su consumo por parte del dispositivo. |
-| [\_referencias a objetos de WPD \_](object-properties.md)                                                | Obligatorio si el objeto tiene referencias a otros objetos.               |
-| [\_palabras clave del objeto WPD \_](object-properties.md)                                                    | Opcional.                                                             |
-| [\_identificador de \_ sincronización del objeto WPD \_](object-properties.md)                                                     | Opcional.                                                             |
-| [el \_ objeto \_ WPD \_ está \_ protegido con DRM](object-properties.md)                                  | Obligatorio si el objeto está protegido por la tecnología DRM.                |
-| [\_fecha de objeto WPD \_ \_ creada](object-properties.md)                                           | Opcional.                                                             |
-| [\_fecha del objeto WPD \_ \_ modificada](object-properties.md)                                         | Se recomienda su uso.                                                          |
-| [\_fecha del objeto WPD \_ \_ creado](object-properties.md)                                         | Opcional.                                                             |
-| [\_ \_ referencias inversas de objetos de WPD \_](object-properties.md)                                     | Se recomienda si otro objeto hace referencia al objeto.            |
-| [\_identificador de \_ \_ objeto funcional \_ del contenedor de objetos de \_ WPD](object-properties.md)     | Opcional.                                                             |
-| [el \_ objeto WPD \_ genera \_ miniaturas \_ desde el \_ recurso](object-properties.md) | Opcional.                                                             |
-| [el \_ objeto WPD \_ puede \_ eliminar](object-properties.md)                                               | Obligatorio si el objeto se puede eliminar.                                |
-| [\_ \_ configuración regional de idioma del objeto WPD \_](object-properties.md)                                                                | Opcional.                                                             |
+| [IDENTIFICADOR DE OBJETO \_ \_ WPD](object-properties.md)                                                                | Obligatorio.                                                             |
+| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Obligatorio.                                                             |
+| [NOMBRE DE OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto representa un archivo.                             |
+| [IDENTIFICADOR ÚNICO \_ PERSISTENTE \_ DEL OBJETO \_ \_ WPD](object-properties.md)                          | Obligatorio.                                                             |
+| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Obligatorio.                                                             |
+| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Obligatorio.                                                             |
+| [\_ISHIDDEN DEL \_ OBJETO WPD](object-properties.md)                                                    | Obligatorio si el objeto está oculto.                                     |
+| [ISSYSTEM DEL \_ OBJETO \_ WPD](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema). |
+| [TAMAÑO DEL OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto tiene al menos un recurso.                     |
+| [NOMBRE DE ARCHIVO \_ \_ ORIGINAL DEL OBJETO \_ \_ WPD](object-properties.md)                              | Obligatorio si el objeto representa un archivo.                             |
+| [OBJETO WPD \_ \_ NO \_ CONSUMIBLE](object-properties.md)                                       | Se recomienda si el objeto no está pensado para el consumo por parte del dispositivo. |
+| [REFERENCIAS A OBJETOS \_ \_ WPD](object-properties.md)                                                | Obligatorio si el objeto tiene referencias a otros objetos.               |
+| [PALABRAS CLAVE DE \_ OBJETO \_ WPD](object-properties.md)                                                    | Opcional.                                                             |
+| [IDENTIFICADOR DE SINCRONIZACIÓN \_ DE \_ OBJETOS \_ WPD](object-properties.md)                                                     | Opcional.                                                             |
+| [EL OBJETO \_ WPD \_ ESTÁ PROTEGIDO CON \_ \_ DRM](object-properties.md)                                  | Obligatorio si el objeto está protegido por la tecnología DRM.                |
+| [FECHA DE \_ CREACIÓN DEL OBJETO \_ \_ WPD](object-properties.md)                                           | Opcional.                                                             |
+| [FECHA DE \_ MODIFICACIÓN DEL OBJETO \_ \_ WPD](object-properties.md)                                         | Se recomienda su uso.                                                          |
+| [FECHA DE \_ CREACIÓN DEL OBJETO \_ \_ WPD](object-properties.md)                                         | Opcional.                                                             |
+| [REFERENCIAS ATRÁS DE \_ OBJETOS WPD \_ \_](object-properties.md)                                     | Se recomienda si otro objeto hace referencia al objeto.            |
+| [IDENTIFICADOR DE OBJETO \_ FUNCIONAL DEL CONTENEDOR DE OBJETOS \_ \_ \_ \_ WPD](object-properties.md)     | Opcional.                                                             |
+| [OBJETO WPD \_ \_ GENERACIÓN \_ DE \_ MINIATURAS A PARTIR DEL \_ RECURSO](object-properties.md) | Opcional.                                                             |
+| [EL OBJETO \_ WPD \_ PUEDE \_ ELIMINAR](object-properties.md)                                               | Obligatorio si se puede eliminar el objeto.                                |
+| [CONFIGURACIÓN REGIONAL DEL \_ \_ LENGUAJE DE OBJETOS \_ WPD](object-properties.md)                                                                | Opcional.                                                             |
 
 
 
@@ -57,7 +57,7 @@ Estos objetos suelen incluir los siguientes recursos.
 
 | Nombre de recurso                                          | Obligatorio u opcional | Descripción        |
 |--------------------------------------------------------|----------------------|--------------------|
-| [**\_valor predeterminado del recurso WPD \_**](wpd-resource-default.md) | Obligatorio.            | Contiene los datos. |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md) | Obligatorio.            | Contiene los datos. |
 
 
 

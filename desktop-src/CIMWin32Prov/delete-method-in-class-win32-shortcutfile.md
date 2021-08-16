@@ -1,8 +1,8 @@
 ---
-description: El método Delete WMI Class elimina el archivo de método abreviado lógico (o directorio) especificado en la ruta de acceso del objeto.
+description: El método eliminar clase WMI elimina el archivo de acceso directo lógico (o directorio) especificado en la ruta de acceso del objeto.
 ms.assetid: 4059eca3-44d9-48a7-b69f-e9598f939266
 ms.tgt_platform: multiple
-title: Método Delete de la clase Win32_ShortcutFile
+title: Método Delete de la Win32_ShortcutFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 46ad2ffcd768603d90c86a8d4751e76268a9e919
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b6eed363a10be0f56fa72146e5029ac60e68dd77d596d5fbc58bb7261d18b179
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080109"
 ---
-# <a name="delete-method-of-the-win32_shortcutfile-class"></a>Método Delete de la \_ clase Win32 ShortcutFile
+# <a name="delete-method-of-the-win32_shortcutfile-class"></a>Método Delete de la clase ShortcutFile de Win32 \_
 
-El método **Delete** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) elimina el archivo de método abreviado lógico (o directorio) especificado en la ruta de acceso del objeto.
+El **método eliminar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina el archivo de acceso directo lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -141,17 +141,17 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

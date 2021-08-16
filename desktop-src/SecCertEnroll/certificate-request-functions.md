@@ -50,13 +50,13 @@ La CertEnroll.dll no implementa directamente la funcionalidad para escribir una 
 
 ## <a name="createfilerequestwstr"></a>createFileRequestWStr
 
-La [**función createFileRequestWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-createfilerequestwstr) de Xenroll.dll crea una solicitud de certificado PKCS \# 7, PKCS 10 o CMC y la guarda \# en un archivo.
+La [**función createFileRequestWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-createfilerequestwstr) de Xenroll.dll crea una solicitud de certificado PKCS \# 7, PKCS 10 o CMC y la guarda en \# un archivo.
 
 La CertEnroll.dll no implementa directamente la funcionalidad para escribir una solicitud en un archivo. Sin embargo, puede recuperar una solicitud de certificado llamando a la propiedad [**RawData**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_rawdata) en el objeto [**IX509CertificateRequest**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequest) y creando una función personalizada para copiar el valor en un archivo.
 
 ## <a name="createpkcs10wstr"></a>createPKCS10WStr
 
-La [**función createPKCS10WStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-createpkcs10wstr) de Xenroll.dll crea una solicitud de certificado PKCS \# 10 y la copia en una matriz de bytes.
+La [**función createPKCS10WStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-createpkcs10wstr) de Xenroll.dll crea una solicitud de certificado PKCS 10 y la \# copia en una matriz de bytes.
 
 Puede usar un objeto [**IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) para inicializar una solicitud PKCS 10 desde una solicitud existente, un certificado existente, una clave privada, una clave pública o una \# plantilla. [](/windows/desktop/SecGloss/p-gly) [](/windows/desktop/SecGloss/p-gly)
 

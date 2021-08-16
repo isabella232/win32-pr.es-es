@@ -1,5 +1,5 @@
 ---
-title: Propiedad IMsRdpClientAdvancedSettings TransportType
+title: IMsRdpClientAdvancedSettings TransportType, propiedad
 description: Especifica el tipo de transporte utilizado por el cliente.
 ms.assetid: 752f5fbc-eb5a-48eb-8750-fc25c8a2f024
 ms.tgt_platform: multiple
@@ -49,7 +49,7 @@ HRESULT get_TransportType(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece el tipo de transporte. Este método puede tener éxito, pero el control de Escritorio remoto ActiveX nunca usa el conjunto Escritorio remoto ActiveX valor.
+Establece el tipo de transporte. Este método puede tener éxito, pero el control de Escritorio remoto ActiveX nunca usa el conjunto de valores.
 
 ## <a name="remarks"></a>Comentarios
 

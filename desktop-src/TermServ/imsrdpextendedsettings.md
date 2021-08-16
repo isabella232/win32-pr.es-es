@@ -1,11 +1,11 @@
 ---
-title: Interfaz IMsRdpExtendedSettings
-description: Se utiliza para establecer y recuperar propiedades con nombre para el control de cliente.
+title: IMsRdpExtendedSettings (interfaz)
+description: Se usa para establecer y recuperar propiedades con nombre para el control de cliente.
 ms.assetid: b78eebc1-e514-4201-becf-770ee4a15187
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz IMsRdpExtendedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpExtendedSettings, descrito
+- Interfaz IMsRdpExtendedSettings Servicios de Escritorio remoto
+- Interfaz IMsRdpExtendedSettings Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,26 +16,26 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57dd61a399176f70b66b46b6180d0e10756780f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16ec34087b7bb6e943029cb6051a91b30d1ba5e40f01f6cb620735ceb0d14e46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058903"
 ---
-# <a name="imsrdpextendedsettings-interface"></a>Interfaz IMsRdpExtendedSettings
+# <a name="imsrdpextendedsettings-interface"></a>IMsRdpExtendedSettings (interfaz)
 
-Se utiliza para establecer y recuperar propiedades con nombre para el control de cliente.
+Se usa para establecer y recuperar propiedades con nombre para el control de cliente.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMsRdpExtendedSettings** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IMsRdpExtendedSettings** también tiene estos tipos de miembros:
+La **interfaz IMsRdpExtendedSettings** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IMsRdpExtendedSettings** también tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IMsRdpExtendedSettings** tiene estas propiedades.
+La **interfaz IMsRdpExtendedSettings** tiene estas propiedades.
 
 
 
@@ -51,7 +51,7 @@ La interfaz **IMsRdpExtendedSettings** tiene estas propiedades.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                                                                                                                                                                                                                                                                                                                                       |
