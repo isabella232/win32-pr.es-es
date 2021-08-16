@@ -1,6 +1,6 @@
 ---
-title: descodificar atributo
-description: El atributo \ decode \ ACF especifica que un procedimiento o un tipo necesita compatibilidad de deserialización.
+title: atributo de descodificación
+description: El atributo \ decode\ ACF especifica que un procedimiento o un tipo necesita compatibilidad con la deserialización.
 ms.assetid: 78cd855f-6731-4ef8-9097-e8da5a9b3bdc
 keywords:
 - descodificar el atributo MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dca24b3a601b9fcafd8d78a0194b6b986813f38c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 30c70c821906bcfa4dedb8dbe87aab882866a4f21b7d561b16d3613f9041e0f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384737"
 ---
-# <a name="decode-attribute"></a>descodificar atributo
+# <a name="decode-attribute"></a>atributo de descodificación
 
-El atributo **\[ Decode \]** ACF especifica que un procedimiento o un tipo necesita compatibilidad de deserialización.
+El **\[ atributo \]** ACF de descodificación especifica que un procedimiento o un tipo necesitan compatibilidad con la deserialización.
 
 ``` syntax
 [ 
@@ -42,64 +42,64 @@ typedef [decode [ , type-attribute-list] ] type-name;
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica otros atributos que se aplican a la interfaz en conjunto.
+Especifica otros atributos que se aplican a la interfaz en su conjunto.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Especifica el nombre de la interfaz.
 
 </dd> <dt>
 
-*definición de interfaz* 
+*interface-definition* 
 </dt> <dd>
 
-Especifica las instrucciones IDL que forman la definición de la interfaz.
+Especifica instrucciones IDL que forman la definición de la interfaz .
 
 </dd> <dt>
 
-*OP-Attribute-List* 
+*op-attribute-list* 
 </dt> <dd>
 
-Especifica otros atributos operativos que se aplican al procedimiento como **\[** [**encode**](encode.md) **\]** .
+Especifica otros atributos operativos que se aplican al procedimiento, como **\[** [**codificar**](encode.md) **\]** .
 
 </dd> <dt>
 
-*proc: nombre* 
+*proc-name* 
 </dt> <dd>
 
 Especifica el nombre del procedimiento.
 
 </dd> <dt>
 
-*lista de atributos de tipo* 
+*type-attribute-list* 
 </dt> <dd>
 
-Especifica otros atributos, como **\[** [**encode**](encode.md) **\]** y **\[** [**allocate**](allocate.md) **\]** .
+Especifica otros atributos, como **\[** [**codificar y**](encode.md) **\]** **\[** [**asignar**](allocate.md) **\]** .
 
 </dd> <dt>
 
-*nombre de tipo* 
+*type-name* 
 </dt> <dd>
 
 Especifica un tipo definido en el archivo IDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **\[ Decode \]** hace que el compilador MIDL genere código que una aplicación puede utilizar para recuperar datos serializados de un búfer. El **\[** atributo [**encode**](encode.md) **\]** proporciona compatibilidad de serialización y genera el código para serializar los datos en un búfer.
+El **\[ atributo \] de descodificación** hace que el compilador MIDL genere código que una aplicación puede usar para recuperar datos serializados de un búfer. El **\[** [**atributo de codificación**](encode.md) **\]** proporciona compatibilidad con la serialización, generando el código para serializar los datos en un búfer.
 
-Use los **\[** atributos [**encode**](encode.md) **\]** y **\[ Decode \]** en un ACF para generar código de serialización para los procedimientos o tipos definidos en el archivo IDL de una interfaz. Cuando se usa como atributo de interfaz, **\[ descodificar \]** se aplica a todos los tipos y procedimientos definidos en el archivo IDL. Cuando se usa como atributo de tipo, **\[ descodificar \]** solo se aplica al tipo especificado. Cuando se usa como atributo operativo, **\[ descodificar \]** solo se aplica a ese procedimiento.
+Use los **\[** [**atributos de**](encode.md) **\]** **\[ \]** codificación y descodificación de un ACF para generar código de serialización para procedimientos o tipos definidos en el archivo IDL de una interfaz. Cuando se usa como atributo de interfaz, **\[ la descodificación \]** se aplica a todos los tipos y procedimientos definidos en el archivo IDL. Cuando se usa como atributo de tipo, **\[ la descodificación \]** solo se aplica al tipo especificado. Cuando se usa como atributo operativo, **\[ la descodificación \]** solo se aplica a ese procedimiento.
 
-Para obtener más información sobre el uso de esta compatibilidad de serialización, vea [servicios de serialización](/windows/desktop/Rpc/serialization-services) y **\[** [**codificación**](encode.md) **\]** .
+Para obtener más información sobre el uso de esta compatibilidad con la serialización, vea [Servicios de serialización](/windows/desktop/Rpc/serialization-services) y **\[** [**codificación de**](encode.md) **\]** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -109,9 +109,9 @@ Para obtener más información sobre el uso de esta compatibilidad de serializac
 [**allocate**](allocate.md)
 </dt> <dt>
 
-[**codificar**](encode.md)
+[**Codificar**](encode.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

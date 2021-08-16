@@ -1,9 +1,9 @@
 ---
-title: función glColorMaterial (GL. h)
-description: La función glColorMaterial hace que un color material realice un seguimiento del color actual.
+title: Función glColorMaterial (Gl.h)
+description: La función glColorMaterial hace que un color de material realice un seguimiento del color actual.
 ms.assetid: 6dbef2c2-f902-4f25-8a87-9e3d710dd807
 keywords:
-- glColorMaterial (función) OpenGL
+- Función glColorMaterial OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d32823eaa82e6a260790dd6fa23747f2b4228649
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55cc846cfbc400d2372186f9af4a09db08e5ad769d1e8fec5f5f6f757e1ff447
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118360476"
 ---
-# <a name="glcolormaterial-function"></a>glColorMaterial función)
+# <a name="glcolormaterial-function"></a>Función glColorMaterial
 
-La función **glColorMaterial** hace que un color material realice un seguimiento del color actual.
+La **función glColorMaterial** hace que un color de material realice un seguimiento del color actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,17 +41,17 @@ void WINAPI glColorMaterial(
 
 <dl> <dt>
 
-*Portada* 
+*Cara* 
 </dt> <dd>
 
-Especifica si los parámetros de material delantero, trasero o ambos deben realizar un seguimiento del color actual. Los valores aceptados son el \_ front-end de contab \_ \_ \_ \_ . El valor predeterminado es GL \_ Front \_ y \_ back.
+Especifica si los parámetros front, back o front y back material deben realizar un seguimiento del color actual. Los valores aceptados son GL \_ FRONT, GL \_ BACK y GL FRONT AND \_ \_ \_ BACK. El valor predeterminado es GL \_ FRONT \_ AND \_ BACK.
 
 </dd> <dt>
 
 *mode* 
 </dt> <dd>
 
-Especifica cuál de los diversos parámetros de material realiza un seguimiento del color actual. Los valores aceptados son \_ emisión de contabilidad, ambiente de contabilidad general \_ , difusión de contab \_ \_ \_ \_ \_ . El valor predeterminado es \_ ambiente \_ de contabilidad y \_ difuso.
+Especifica cuál de varios parámetros de material realiza un seguimiento del color actual. Los valores aceptados \_ son GL EMISSION, GL \_ AMBIENT, GL \_ DIFUSO, GL \_ SPECULAR y GL AMBIENT AND \_ \_ \_ DIFFUSE. El valor predeterminado es GL \_ AMBIENT \_ AND \_ DIFFUSE.
 
 </dd> </dl>
 
@@ -67,40 +67,40 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | la *esfera* o el *modo* no era un valor aceptado.<br/>                                                                                |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *face* o *mode* no era un valor aceptado.<br/>                                                                                |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glColorMaterial** especifica qué parámetros de material hacen un seguimiento del color actual. Cuando se habilita \_ el material de color GL \_ , para cada uno de los materiales especificados por la *esfera*, el parámetro de material o los parámetros especificados por el *modo* realizan el seguimiento del color actual en todo momento. Habilitar y deshabilitar \_ \_ el material de color de GL con las funciones [**glEnable**](glenable.md) y [**glDisable**](gldisable.md), que se llama con el material de \_ color GL \_ como su argumento. De forma predeterminada, el \_ material de color GL \_ está deshabilitado.
+La **función glColorMaterial** especifica qué parámetros de material realiza un seguimiento del color actual. Al habilitar GL COLOR MATERIAL, para cada uno de los materiales o materiales especificados por la cara , el parámetro de material o los parámetros especificados por el modo realizarán un seguimiento del \_ color actual en todo \_ momento.   Habilite y deshabilite GL COLOR MATERIAL con las funciones \_ \_ [**glEnable**](glenable.md) y [**glDisable**](gldisable.md), a las que se llama con \_ GL COLOR MATERIAL como \_ argumento. De forma predeterminada, GL \_ COLOR \_ MATERIAL está deshabilitado.
 
-Con **glColorMaterial**, puede cambiar un subconjunto de parámetros de material para cada vértice usando solo la función [**glColor**](glcolor-functions.md) , sin llamar a [**glMaterial**](glmaterial-functions.md). Si va a especificar solo este tipo de subconjunto de parámetros para cada vértice, es mejor hacerlo con **glColorMaterial** que con **glMaterial**.
+Con **glColorMaterial,** puede cambiar un subconjunto de parámetros de material para cada vértice usando solo la función [**glColor,**](glcolor-functions.md) sin llamar a [**glMaterial**](glmaterial-functions.md). Si va a especificar solo este subconjunto de parámetros para cada vértice, es mejor hacerlo con **glColorMaterial** que con **glMaterial.**
 
-Las siguientes funciones recuperan información relacionada con **glColorMaterial**:
+Las siguientes funciones recuperan información relacionada **con glColorMaterial**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el \_ parámetro de \_ material de color GL de argument \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ COLOR \_ MATERIAL \_ PARAMETER
 
-**glGet** con el argumento del \_ material de color de GL \_ \_
+**glGet** con el argumento GL \_ COLOR \_ MATERIAL \_ FACE
 
-[**glIsEnabled**](glisenabled.md) con el argumento \_ material de color GL \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ COLOR \_ MATERIAL
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

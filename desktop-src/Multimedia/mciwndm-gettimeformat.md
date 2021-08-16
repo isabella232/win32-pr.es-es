@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETTIMEFORMAT (VFW. h)
-description: El \_ mensaje MCIWNDM GETTIMEFORMAT recupera el formato de hora actual de un dispositivo MCI en dos formatos como un valor numérico y como una cadena. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetTimeFormat.
+title: MCIWNDM_GETTIMEFORMAT mensaje (Vfw.h)
+description: El mensaje GETTIMEFORMAT de MCIWNDM recupera el formato de hora actual de un dispositivo MCI en dos formas como un valor numérico y \_ como una cadena. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetTimeFormat.
 ms.assetid: 01844872-5444-4f3b-92a3-64f80b94d3a0
 keywords:
-- Mensaje de MCIWNDM_GETTIMEFORMAT de Windows multimedia
+- MCIWNDM_GETTIMEFORMAT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a09f969c009ff23bc0951ed2efbc0dbf7aa95dda
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3badb7c7722db6444d3bd928535790876e0a128e69e50323cea3fe39c2dd987a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117985913"
 ---
-# <a name="mciwndm_gettimeformat-message"></a>MCIWNDM \_ GETTIMEFORMAT
+# <a name="mciwndm_gettimeformat-message"></a>Mensaje GETTIMEFORMAT de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ GETTIMEFORMAT** recupera el formato de hora actual de un dispositivo MCI en dos formatos: como valor numérico y como cadena. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetTimeFormat**](/windows/desktop/api/Vfw/nf-vfw-mciwndgettimeformat) .
+El **mensaje \_ GETTIMEFORMAT de MCIWNDM** recupera el formato de hora actual de un dispositivo MCI de dos formas: como un valor numérico y como una cadena. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetTimeFormat.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgettimeformat)
 
 
 ```C++
@@ -38,45 +38,45 @@ lParam = (LPARAM) (LPSTR) lp;
 
 <dl> <dt>
 
-<span id="len"></span><span id="LEN"></span>*terminado*
+<span id="len"></span><span id="LEN"></span>*Len*
 </dt> <dd>
 
 Tamaño, en bytes, del búfer.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntero a un búfer que va a contener la forma de cadena terminada en NULL del formato de hora.
+Puntero a un búfer que contiene la forma de cadena terminada en NULL del formato de hora.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un entero que corresponde a la constante de MCI que define el formato de hora.
+Devuelve un entero correspondiente a la constante MCI que define el formato de hora.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la cadena de formato de hora es mayor que el búfer de retorno, MCIWnd trunca la cadena.
+Si la cadena de formato de hora es mayor que el búfer devuelto, MCIWnd trunca la cadena.
 
 Un dispositivo MCI puede admitir uno o varios de los siguientes formatos de hora.
 
 
 
-| Formato de hora                      | MCI (constante)               |
+| Formato de hora                      | Constante MCI               |
 |----------------------------------|----------------------------|
-| Bytes                            | \_bytes de formato de MCI \_         |
-| Imágenes                           | \_marcos de formato MCI \_        |
-| Horas, minutos, segundos          | \_formato MCI \_ HMS           |
-| Milisegundos                     | formato MCI en \_ \_ milisegundos  |
-| Minutos, segundos, fotogramas         | \_formato MCI \_ MSF           |
-| Ejemplos                          | \_ejemplos de formato de MCI \_       |
-| SMPTE 24                         | \_Formato MCI \_ SMPTE \_ 24     |
-| SMPTE 25                         | \_Formato MCI \_ SMPTE \_ 25     |
-| Eliminación SMPTE 30                    | \_Formato MCI \_ SMPTE \_ 30DROP |
-| SMPTE 30 (no Drop)              | \_Formato MCI \_ SMPTE \_ 30     |
-| Pistas, minutos, segundos, fotogramas | \_formato MCI \_ TMSF          |
+| Bytes                            | BYTES DE FORMATO MCI \_ \_         |
+| Marcos                           | MARCOS DE \_ FORMATO MCI \_        |
+| Horas, minutos, segundos          | MCI \_ FORMAT \_ HMS           |
+| Milisegundos                     | MILISEGUNDOS DE FORMATO MCI \_ \_  |
+| Minutos, segundos, fotogramas         | MCI \_ FORMAT \_ MSF           |
+| Ejemplos                          | EJEMPLOS DE FORMATO \_ MCI \_       |
+| SMPTE 24                         | MCI \_ FORMAT \_ SMPTE \_ 24     |
+| SMPTE 25                         | MCI \_ FORMAT \_ SMPTE \_ 25     |
+| SMPTE 30 drop                    | MCI \_ FORMAT \_ SMPTE \_ 30DROP |
+| SMPTE 30 (sin colocar)              | MCI \_ FORMAT \_ SMPTE \_ 30     |
+| Seguimientos, minutos, segundos, fotogramas | \_TMSF CON \_ FORMATO MCI          |
 
 
 
@@ -86,15 +86,15 @@ Un dispositivo MCI puede admitir uno o varios de los siguientes formatos de hora
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

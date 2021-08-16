@@ -50,7 +50,7 @@ Para obtener un ejemplo de cómo usar esta propiedad, vea [A Simple Civic Addres
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                  |
 
 

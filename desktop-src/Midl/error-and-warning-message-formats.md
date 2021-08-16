@@ -15,7 +15,7 @@ ms.locfileid: "118384421"
 ---
 # <a name="error-and-warning-message-formats"></a>Formatos de mensaje de error y advertencia
 
-Los errores de línea de comandos aparecen en el formato siguiente:
+Los errores de la línea de comandos aparecen en el formato siguiente:
 
 ``` syntax
 Command line error : MIDLnnnn: <error text> 
@@ -40,7 +40,7 @@ Los errores en tiempo de compilación aparecen en el formato siguiente:
 [optional context information] :
 ```
 
-La información de contexto opcional hace referencia al contexto en el que se produjo el error. Se genera cuando el compilador MIDL detecta un error durante el análisis semántico de firmas de tipo y procedimiento. El compilador MIDL informa de esta información para ayudarle a encontrar rápidamente el error en el archivo IDL.
+La información de contexto opcional hace referencia al contexto en el que se produjo el error. Se genera cuando el compilador midl detecta un error durante el análisis semántico de las firmas de tipo y procedimiento. El compilador MIDL informa de esta información para ayudarle a encontrar rápidamente el error en el archivo IDL.
 
 Los mensajes de error del sistema aparecen en el formato siguiente:
 
@@ -49,7 +49,7 @@ Los mensajes de error del sistema aparecen en el formato siguiente:
 "Unexpected internal compiler problem. Try to find a workaround."
 ```
 
-Este mensaje se genera mediante un error inesperado. El número de error hexadecimal es un identificador de error del sistema Windows XP, Windows 2000, Windows NT, Windows 98 o Windows 95. Puede encontrar información adicional en Winerror.h o Ntstatus.h. Para obtener más información sobre cómo trabajar en torno a las condiciones que provocaron este error, vea el texto del error del [compilador](compiler-errors.md) MIDL9008.
+Este mensaje se genera mediante un error inesperado. El número de error hexadecimal es Windows XP, Windows 2000, Windows NT, Windows 98 o Windows identificador de error del sistema 95. Puede encontrar información adicional en Winerror.h o Ntstatus.h. Para obtener más información sobre cómo trabajar en torno a las condiciones que provocaron este error, vea el texto del [error](compiler-errors.md) del compilador MIDL9008.
 
  
 

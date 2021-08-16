@@ -1,7 +1,7 @@
 ---
-description: El \_ método de luminancia Put especifica el valor de luminancia en el que se va a especificar la clave. Esta propiedad solo se aplica cuando el tipo de clave es DXTKEY \_ luminancia.
+description: El método \_ put Luminance especifica el valor de luminosidad en el que se va a claver. Esta propiedad solo se aplica cuando el tipo de clave es DXTKEY \_ LUMINANCE.
 ms.assetid: 3e255423-1724-49fe-b1a1-49bc1d5fa6ae
-title: 'IDxtKey: método de ut_Luminance de:p (QEDIT. h)'
+title: Método IDxtKey::p ut_Luminance (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 100f2352b88e9aae2f31ce969302f4bee0905f27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae51fe72220355cb6e206ea437f547a0a8ca2d77633195debeb364f17e7f136f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819388"
 ---
-# <a name="idxtkeyput_luminance-method"></a>IDxtKey: método de luminancia de:p UT \_
+# <a name="idxtkeyput_luminance-method"></a>Método IDxtKey::p ut \_ Luminance
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `put_Luminance` método especifica el valor de luminancia en el que se va a hacer la tecla. Esta propiedad solo se aplica cuando el tipo de clave es DXTKEY \_ luminancia.
+El `put_Luminance` método especifica el valor de luminosidad en el que se va a claver. Esta propiedad solo se aplica cuando el tipo de clave es DXTKEY \_ LUMINANCE.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,26 +45,26 @@ HRESULT put_Luminance(
 
 <dl> <dt>
 
-*newVal* \[ de\]
+*newVal* \[ En\]
 </dt> <dd>
 
-Valor de luminancia en el que se va a hacer la tecla. El intervalo válido es de 0 a 100.
+Valor de luminosidad en el que se va a claver. El intervalo válido es de 0 a 100.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,19 +74,19 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IDxtKey**](idxtkey.md)
+[**IDxtKey (interfaz)**](idxtkey.md)
 </dt> <dt>
 
-[**IDxtKey::p \_ KeyType**](idxtkey-put-keytype.md)
+[**IDxtKey::put \_ KeyType**](idxtkey-put-keytype.md)
 </dt> </dl>
 
  

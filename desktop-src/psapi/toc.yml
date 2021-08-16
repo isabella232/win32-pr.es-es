@@ -4,26 +4,26 @@
     - name: Acerca de PSAPI
       href: about-psapi.md
       items:
-        - name: Información del proceso
+        - name: Procesar información
           href: process-information.md
         - name: Información de módulos
           href: module-information.md
         - name: Información del controlador de dispositivo
           href: device-driver-information.md
-        - name: Información de uso de memoria de proceso
+        - name: Procesar información de uso de memoria
           href: process-memory-usage-information.md
-        - name: Información del espacio de trabajo
+        - name: Información del conjunto de trabajo
           href: working-set-information.md
-        - name: Memory-Mapped información de archivo
+        - name: Memory-Mapped de archivos
           href: memory-mapped-file-information.md
-    - name: Usar PSAPI
+    - name: Uso de PSAPI
       href: using-psapi.md
       items:
         - name: Enumerar todos los procesos
           href: enumerating-all-processes.md
         - name: Enumerar todos los módulos de un proceso
           href: enumerating-all-modules-for-a-process.md
-        - name: Enumerar todos los controladores de dispositivos en el sistema
+        - name: Enumerar todos los controladores de dispositivo en el sistema
           href: enumerating-all-device-drivers-in-the-system.md
         - name: Recopilar información de uso de memoria para un proceso
           href: collecting-memory-usage-information-for-a-process.md
@@ -75,7 +75,7 @@
               href: /windows/desktop/api/Psapi/nf-psapi-queryworkingset
             - name: QueryWorkingSetEx
               href: /windows/desktop/api/Psapi/nf-psapi-queryworkingsetex
-        - name: Estructuras de PSAPI
+        - name: Estructuras psapi
           href: psapi-structures.md
           items:
             - name: ENUM_PAGE_FILE_INFORMATION

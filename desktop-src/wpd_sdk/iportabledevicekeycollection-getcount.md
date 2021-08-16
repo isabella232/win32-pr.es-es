@@ -87,7 +87,7 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperar eventos de se
 [Recuperación de eventos de servicio admitidos](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recuperar métodos de servicio admitidos](retrieving-supported-methods.md)
+[Recuperación de métodos de servicio admitidos](retrieving-supported-methods.md)
 </dt> </dl>
 
  

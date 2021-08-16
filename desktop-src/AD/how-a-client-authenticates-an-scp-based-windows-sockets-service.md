@@ -1,22 +1,22 @@
 ---
-title: Cómo un cliente autentica un servicio de Windows Sockets basado en SCP
-description: En este tema se muestra el código que utiliza una aplicación cliente para crear un SPN para un servicio.
+title: Cómo autentica un cliente un servicio de sockets Windows SCP
+description: En este tema se muestra el código que usa una aplicación cliente para crear un SPN para un servicio.
 ms.assetid: b5ef79c6-e321-435c-b3de-817fdea8836a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38471f48d8c80d0795b7176b95df0029d42325ac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40d35ad62e05ab925d2dedc10506ddb339c2aafd188487f2e1591713189f451a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188669"
 ---
-# <a name="how-a-client-authenticates-an-scp-based-windows-sockets-service"></a>Cómo un cliente autentica un servicio de Windows Sockets basado en SCP
+# <a name="how-a-client-authenticates-an-scp-based-windows-sockets-service"></a>Cómo autentica un cliente un servicio de sockets Windows SCP
 
-En este tema se muestra el código que utiliza una aplicación cliente para crear un SPN para un servicio. El cliente enlaza con el punto de conexión de servicio (SCP) del servicio para recuperar los datos necesarios para conectarse al servicio. El SCP también contiene datos que el cliente puede usar para crear el SPN del servicio. Para obtener más información y un ejemplo de código que se enlaza al SCP y recupera las propiedades necesarias, vea [cómo los clientes buscan y usan un punto de conexión de servicio](how-clients-find-and-use-a-service-connection-point.md).
+En este tema se muestra el código que usa una aplicación cliente para crear un SPN para un servicio. El cliente se enlaza al punto de conexión de servicio (SCP) del servicio para recuperar los datos necesarios para conectarse al servicio. El SCP también contiene datos que el cliente puede usar para crear el SPN del servicio. Para obtener más información y un ejemplo de código que se enlaza al SCP y recupera las propiedades necesarias, vea [How Clients Find and Use a Service Connection Point](how-clients-find-and-use-a-service-connection-point.md).
 
-En este tema también se muestra cómo un cliente utiliza un paquete de seguridad SSPI y el SPN del servicio para establecer una conexión autenticada mutuamente con el servicio de Windows Sockets. Tenga en cuenta que este código es casi idéntico al código requerido en Microsoft Windows NT 4,0 y versiones anteriores solo para autenticar el cliente en el servidor. La única diferencia es que el cliente debe proporcionar el SPN y especificar la \_ marca de autenticación de solicitud mutua de ISC \_ \_ .
+En este tema también se muestra cómo un cliente usa un paquete de seguridad SSPI y el SPN del servicio para establecer una conexión autenticada mutuamente con el servicio Windows Sockets. Tenga en cuenta que este código es casi idéntico al código necesario en Microsoft Windows NT 4.0 y versiones anteriores solo para autenticar el cliente en el servidor. La única diferencia es que el cliente debe proporcionar el SPN y especificar la marca ISC \_ REQ \_ MUTUAL \_ AUTH.
 
 ## <a name="client-code-to-make-an-spn-for-a-service"></a>Código de cliente para crear un SPN para un servicio
 
@@ -58,13 +58,13 @@ if (!DoAuthentication (sockServer, szSpn)) {
 
 ## <a name="client-code-to-authenticate-the-service"></a>Código de cliente para autenticar el servicio
 
-Este ejemplo de código consta de dos rutinas: **enauthentication** y **GenClientContext**. Después de llamar a [**DsMakeSpn**](/windows/desktop/api/Dsparse/nf-dsparse-dsmakespna) para crear un SPN para el servicio, el cliente pasa el SPN a la rutina de **autenticación** , que llama a **GenClientContext** para generar el búfer inicial que se va a enviar al servicio. La **autenticación de autenticación** utiliza el identificador de socket para enviar el búfer y recibir la respuesta del servicio pasada al paquete SSPI mediante otra llamada a **GenClientContext**. Este bucle se repite hasta que se produce un error en la autenticación o **GenClientContext** establece una marca que indica que la autenticación se realizó correctamente.
+Este ejemplo de código consta de dos rutinas: **DoAuthentication** y **GenClientContext.** Después de llamar a [**DsMakeSpn**](/windows/desktop/api/Dsparse/nf-dsparse-dsmakespna) para crear un SPN para el servicio, el cliente pasa el SPN a la rutina **DoAuthentication,** que llama a **GenClientContext** para generar el búfer inicial que se va a enviar al servicio. **DoAuthentication** usa el identificador de socket para enviar el búfer y recibir la respuesta del servicio pasada al paquete SSPI mediante otra llamada a **GenClientContext**. Este bucle se repite hasta que se produce un error en la autenticación **o GenClientContext** establece una marca que indica que la autenticación se ha hecho correctamente.
 
-La rutina **GenClientContext** interactúa con el paquete SSPI para generar los datos de autenticación que se van a enviar al servicio y procesar los datos recibidos del servicio. Los componentes clave de los datos de autenticación proporcionados por el cliente incluyen:
+La **rutina GenClientContext** interactúa con el paquete SSPI para generar los datos de autenticación que se enviarán al servicio y procesar los datos recibidos del servicio. Los componentes clave de los datos de autenticación proporcionados por el cliente incluyen:
 
--   Nombre de la entidad de seguridad de servicio que identifica las credenciales que el servicio debe autenticar.
--   Las credenciales del cliente. La función [**AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) del paquete de seguridad extrae estas credenciales del contexto de seguridad del cliente que se establece en el inicio de sesión.
--   Para solicitar la autenticación mutua, el cliente debe especificar la \_ marca de autenticación mutua de REQ de ISC \_ \_ cuando llama a la función [**InitializeSecurityContext**](../SecAuthN/initializesecuritycontext--general.md) durante la rutina **GenClientContext** .
+-   Nombre de entidad de seguridad de servicio que identifica las credenciales que el servicio debe autenticar.
+-   Las credenciales del cliente. La [**función AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) del paquete de seguridad extrae estas credenciales del contexto de seguridad del cliente establecido en el inicio de sesión.
+-   Para solicitar la autenticación mutua, el cliente debe especificar la marca ISC REQ MUTUAL AUTH cuando llama a la función InitializeSecurityContext durante la \_ \_ rutina \_ **GenClientContext.** [](../SecAuthN/initializesecuritycontext--general.md)
 
 
 ```C++
@@ -266,9 +266,9 @@ return TRUE;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

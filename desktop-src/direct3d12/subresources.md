@@ -1,67 +1,67 @@
 ---
 title: Subrecursos (gráficos de Direct3D 12)
-description: Describe cómo un recurso se divide en Subrecursos y cómo hacer referencia a un único, varios o un segmento de Subrecursos.
+description: Describe cómo un recurso se divide en subrecursos y cómo hacer referencia a un único, varios o segmentos de subrecursos.
 ms.assetid: C4F92F8A-DBF0-412B-8707-CC4C1BF2D88F
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e8fa8ea0d48fea7ee8e192d9dcf1fe5e3d22423
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: b2fc4478e71bbafb8a21897f838ee8091592024a4e3c761280911e395f8ae491
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104549128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117912010"
 ---
 # <a name="subresources-direct3d-12-graphics"></a>Subrecursos (gráficos de Direct3D 12)
 
-Describe cómo un recurso se divide en Subrecursos y cómo hacer referencia a un único, varios o un segmento de Subrecursos.
+Describe cómo un recurso se divide en subrecursos y cómo hacer referencia a un único, varios o segmentos de subrecursos.
 
 -   [Subrecursos de ejemplo](#example-subresources)
-    -   [Indexación de Subrecursos](#subresource-indexing)
-    -   [Segmento MIP](#mip-slice)
+    -   [Indexación de subrecursos](#subresource-indexing)
+    -   [Segmento mip](#mip-slice)
     -   [Segmento de matriz](#array-slice)
     -   [Segmento de plano](#plane-slice)
-    -   [Varios Subrecursos](#multiple-subresources)
--   [API de subrecurso](#subresource-apis)
+    -   [Varios subrecursos](#multiple-subresources)
+-   [API de subrecursos](#subresource-apis)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="example-subresources"></a>Subrecursos de ejemplo
 
-Si un recurso contiene un búfer, simplemente contiene un subrecurso con un índice de 0. Si el recurso contiene una textura (o matriz de textura), la referencia a los Subrecursos es más compleja.
+Si un recurso contiene un búfer, simplemente contiene un subrecurso con un índice de 0. Si el recurso contiene una textura (o una matriz de texturas), la referencia a los subrecursos es más compleja.
 
-Algunas API acceden a un recurso completo (como el método [**ID3D12GraphicsCommandList:: CopyResource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copyresource) ), mientras que otras acceden a una parte de un recurso (por ejemplo, el método [**ID3D12Resource:: ReadFromSubresource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-readfromsubresource) ). Los métodos que tienen acceso a una parte de un recurso suelen usar una descripción de la vista (como la estructura SRV de la [**\_ \_ matriz \_ D3D12 TEX2D**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv) ) para especificar los Subrecursos a los que se va a tener acceso. Consulte la sección [API de subrecurso](#subresource-apis) para obtener una lista completa.
+Algunas API acceden a un recurso completo (como el método [**ID3D12GraphicsCommandList::CopyResource), otras**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copyresource) acceden a una parte de un recurso (por ejemplo, el método [**ID3D12Resource::ReadFromSubresource).**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-readfromsubresource) Los métodos que acceden a una parte de un recurso suelen usar una descripción de vista (como la estructura [**SRV D3D12 \_ TEXAS2D \_ ARRAY) \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv) para especificar los subrecursos a los que se va a acceder. Consulte la sección [API de subrecursos](#subresource-apis) para obtener una lista completa.
 
-### <a name="subresource-indexing"></a>Indexación de Subrecursos
+### <a name="subresource-indexing"></a>Indexación de subrecursos
 
-Para indexar un subrecurso determinado, los niveles de MIP se indexan primero a medida que cada entrada de la matriz está indizada.
+Para indexar un subrecurso determinado, los niveles de mip se indexa primero a medida que se indexa cada entrada de matriz.
 
-![indexación de Subrecursos](images/subresource-index.png)
+![indexación de subrecursos](images/subresource-index.png)
 
-### <a name="mip-slice"></a>Segmento MIP
+### <a name="mip-slice"></a>Segmento mip
 
-Un segmento de MIP incluye un nivel de mipmap para cada textura de una matriz, como se muestra en la siguiente imagen.
+Un segmento mip incluye un nivel de mapa mip para cada textura de una matriz, como se muestra en la siguiente imagen.
 
-![Subrecursos MIP slices](images/subresource-mip-slice.png)
+![segmentos mip de subrecurso](images/subresource-mip-slice.png)
 
 ### <a name="array-slice"></a>Segmento de matriz
 
-Dada una matriz de texturas, cada textura con los mapas MIP, un segmento de matriz incluye una textura y todos sus niveles de MIP, tal como se muestra en la siguiente imagen.
+Dada una matriz de texturas, cada textura con mapas mip, un segmento de matriz incluye una textura y todos sus niveles de mip, como se muestra en la siguiente imagen.
 
-![segmentos de la matriz de Subrecursos](images/subresource-array-slices.png)
+![segmentos de matriz de subrecursos](images/subresource-array-slices.png)
 
 ### <a name="plane-slice"></a>Segmento de plano
 
-Normalmente, los formatos planos no se usan para almacenar datos RGBA, pero en los casos en los que es (quizás 24 BPP datos RGB), un plano podría representar la imagen roja, una verde y una imagen azul. Aunque un plano no es necesariamente un color, se pueden combinar dos o más colores en un plano. Normalmente, se usan datos planos más para los datos YCbCr y Depth-Stencil submuestreados. Depth-Stencil es el único formato que admite totalmente los mapas MIP, las matrices y varios planos (a menudo, el plano 0 para la profundidad y el plano 1 para la galería de símbolos).
+Normalmente, los formatos planas no se usan para almacenar datos RGBA, pero en los casos en los que se encuentran (quizás 24 bpp datos RGB), un plano podría representar la imagen roja, una la verde y otra la imagen azul. Sin embargo, un plano no es necesariamente un color, dos o más colores se podrían combinar en un plano. Normalmente, los datos planas se usan para los datos YCbCr y Depth-Stencil sub sampled. Depth-Stencil es el único formato que admite completamente mapas mip, matrices y varios planos (a menudo, plano 0 para Profundidad y plano 1 para galería de símbolos).
 
-A continuación se muestra la indexación de Subrecursos para una matriz de dos Depth-Stencil imágenes, cada una con tres niveles de MIP.
+A continuación se muestra la indexación de subrecursos para una matriz de dos Depth-Stencil imágenes, cada una con tres niveles de mip.
 
-![indexación de estarcido de profundidad](images/depth-stencil-indexing.png)
+![indexación de galería de símbolos de profundidad](images/depth-stencil-indexing.png)
 
-La submuestreada YCbCr admite matrices y tiene planos, pero no admite los mapas MIP. Las imágenes de YCbCr tienen dos planos, uno para la luminancia (Y) que el ojo humano es más sensible, y otro para la crominancia (ambos CB y CR, intercalados) que el ojo humano es menos sensible. Este formato habilita la compresión de los valores de crominancia para comprimir una imagen sin que afecte a la luminancia, y es un formato de compresión de vídeo común por esa razón, aunque se usa para comprimir imágenes fijas. La imagen siguiente muestra el formato NV12, teniendo en cuenta que la crominancia se ha comprimido a un cuarto de la resolución de la luminancia, lo que significa que el ancho de cada plano es idéntico y el plano de crominancia es la mitad del alto del plano de luminancia. Los planos se indexarían como Subrecursos de una manera idéntica al Depth-Stencil ejemplo anterior.
+YCbCr con sub sampled admite matrices y tiene planos, pero no admite mapas mip. Las imágenes de YCbCr tienen dos planos, uno para la luminosidad (Y) a la que el ojo humano es más sensible y otro para la chrominance (cb y cr, intercalada) a la que el ojo humano es menos sensible. Este formato permite la compresión de los valores de chrominance para comprimir una imagen sin afectar a la luminosidad, y es un formato de compresión de vídeo común por ese motivo, aunque se usa para comprimir imágenes fijas. En la imagen siguiente se muestra el formato NV12, y se indica que la chrominance se comprimió a un cuarto de la resolución de la luminosidad, lo que significa que el ancho de cada plano es idéntico y que el plano de chrominance es la mitad de la altura del plano de luminosidad. Los planos se indexarán como subrecursos de forma idéntica a la Depth-Stencil ejemplo anterior.
 
 ![el formato nv12](images/ycbcr.png)
 
-Los formatos planos existían en Direct3D 11, pero los planos individuales no se pudieron direccionar individualmente, por ejemplo, para las operaciones de copia o asignación. Esto se ha cambiado en Direct3D 12 para que cada plano reciba su propio identificador de subrecurso. Compare los dos métodos siguientes para calcular el identificador del subrecurso.
+Los formatos planas existían en Direct3D 11, pero los planos individuales no se podían abordar individualmente, por ejemplo, para las operaciones de copia o asignación. Esto se cambió en Direct3D 12 para que cada plano recibiera su propio identificador de subrecurso. Compare los dos métodos siguientes para calcular el identificador de subrecurso.
 
 Direct3D 11
 
@@ -81,81 +81,81 @@ inline UINT D3D12CalcSubresource( UINT MipSlice, UINT ArraySlice, UINT PlaneSlic
 }
 ```
 
-La mayoría del hardware supone que la memoria para el plano N siempre se asigna inmediatamente después del plano N-1.
+La mayoría del hardware supone que la memoria del plano N siempre se asigna inmediatamente después del plano N-1.
 
-Una alternativa al uso de Subrecursos es que una aplicación podría asignar un recurso completamente independiente por plano. En este caso, la aplicación entiende que los datos son planos y utiliza varios recursos para representarlos.
+Una alternativa al uso de subrecursos es que una aplicación podría asignar un recurso completamente independiente por plano. En este caso, la aplicación entiende que los datos son planas y usa varios recursos para representarlo.
 
-### <a name="multiple-subresources"></a>Varios Subrecursos
+### <a name="multiple-subresources"></a>Varios subrecursos
 
-Una vista de recursos del sombreador puede seleccionar cualquier región rectangular de Subrecursos, mediante uno de los segmentos descritos anteriormente y el uso prudente de los campos en las estructuras de la vista (como [**D3D12 \_ TEX2D \_ array \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv)), tal como se muestra en la imagen.
+Una vista de recursos de sombreador puede seleccionar cualquier región rectangular de subrecursos, mediante uno de los segmentos descritos anteriormente y un uso judioso de los campos de las estructuras de vista (como [**D3D12 \_ TEXAS2D \_ ARRAY \_ SRV),**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv)como se muestra en la imagen.
 
-![selección de varios recursos](images/subresource-multiple.png)
+![selección de varios subrecursos](images/subresource-multiple.png)
 
-Una vista de destino de representación solo puede utilizar un solo subrecurso o segmento MIP y no puede incluir Subrecursos de más de un segmento de MIP. Es decir, cada textura de una vista de representación-destino debe tener el mismo tamaño. Una vista de recursos de sombreador puede seleccionar cualquier región rectangular de Subrecursos, tal como se muestra en la imagen.
+Una vista de destino de representación solo puede usar un único segmento de subrecurso o mip y no puede incluir subrecursos de más de un segmento mip. Es decir, todas las texturas de una vista de destino de representación deben tener el mismo tamaño. Una vista de sombreador y recurso puede seleccionar cualquier región rectangular de subrecursos, como se muestra en la imagen.
 
-## <a name="subresource-apis"></a>API de subrecurso
+## <a name="subresource-apis"></a>API de subrecursos
 
-Las siguientes API hacen referencia y funcionan con Subrecursos:
+Las siguientes API hacen referencia a los subcursos y funcionan con estos:
 
 Enumeraciones:
 
--   [**\_Tipo de \_ copia de textura D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_copy_type)
+-   [**TIPO DE COPIA DE TEXTURA D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_copy_type)
 
-Las siguientes estructuras contienen índices de *PlaneSlice* , la mayoría de ellos contienen índices de *MipSlice* .
+Las estructuras siguientes contienen *índices PlaneSlice,* la mayoría de *ellos índices MipSlice.*
 
--   [**D3D12 \_ TEX2D \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_rtv)
--   [**D3D12 \_ TEX2D \_ matriz \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_rtv)
--   [**D3D12 \_ TEX2D \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_srv)
--   [**D3D12 \_ TEX2D \_ array \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv)
--   [**D3D12 \_ TEX2D \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_uav)
--   [**D3D12 \_ TEX2D \_ array \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_uav)
+-   [**D3D12 \_ TEXAS2D \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_rtv)
+-   [**D3D12 \_ TEXAS2D \_ ARRAY \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_rtv)
+-   [**D3D12 \_ TEXAS2D \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_srv)
+-   [**D3D12 \_ TEXAS2D \_ ARRAY \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv)
+-   [**D3D12 \_ TEXAS2D \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_uav)
+-   [**D3D12 \_ TEXAS2D \_ ARRAY \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_uav)
 
-Las siguientes estructuras contienen índices de *ArraySlice* , la mayoría de ellos contienen índices de *MipSlice* .
+Las estructuras siguientes contienen *índices ArraySlice,* la mayoría de *ellos índices MipSlice.*
 
--   [**D3D12 \_ TEX1D \_ array \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_dsv)
--   [**D3D12 \_ TEX2D \_ array \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_dsv)
--   [**D3D12 \_ TEX2DMS \_ array \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2dms_array_dsv)
--   [**D3D12 \_ TEX1D \_ matriz \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_rtv)
--   [**D3D12 \_ TEX2D \_ matriz \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_rtv)
--   [**D3D12 \_ TEX2DMS \_ matriz \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2dms_array_rtv)
--   [**D3D12 \_ TEX1D \_ array \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_srv)
--   [**D3D12 \_ TEX2D \_ array \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv)
--   [**D3D12 \_ TEX2DMS \_ array \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2dms_array_srv)
--   [**D3D12 \_ TEX1D \_ array \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_uav)
--   [**D3D12 \_ TEX2D \_ array \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_uav)
+-   [**D3D12 \_ TEXAS1D \_ ARRAY \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_dsv)
+-   [**D3D12 \_ TEXAS2D \_ ARRAY \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_dsv)
+-   [**D3D12 \_ TEXAS2DMS \_ ARRAY \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2dms_array_dsv)
+-   [**D3D12 \_ TEXAS1D \_ ARRAY \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_rtv)
+-   [**D3D12 \_ TEXAS2D \_ ARRAY \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_rtv)
+-   [**D3D12 \_ TEXAS2DMS \_ ARRAY \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2dms_array_rtv)
+-   [**D3D12 \_ TEXAS1D \_ ARRAY \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_srv)
+-   [**D3D12 \_ TEXAS2D \_ ARRAY \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv)
+-   [**D3D12 \_ TEXAS2DMS \_ ARRAY \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2dms_array_srv)
+-   [**D3D12 \_ TEXAS1D \_ ARRAY \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_uav)
+-   [**D3D12 \_ TEXAS2D \_ ARRAY \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_uav)
 
-Las siguientes estructuras contienen índices *MipSlice* , pero no *ArraySlice* ni *PlaneSlice* índices.
+Las estructuras siguientes contienen *índices MipSlice,* pero no *índices ArraySlice* ni *PlaneSlice.*
 
--   [**D3D12 \_ TEX1D \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_dsv)
--   [**D3D12 \_ TEX2D \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_dsv)
--   [**D3D12 \_ TEX1D \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_rtv)
--   [**D3D12 \_ TEX3D \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex3d_rtv)
--   [**D3D12 \_ TEX1D \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_uav)
--   [**D3D12 \_ TEX3D \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex3d_uav)
+-   [**D3D12 \_ TEXAS1D \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_dsv)
+-   [**D3D12 \_ TEXAS2D \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_dsv)
+-   [**D3D12 \_ TEXAS1D \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_rtv)
+-   [**D3D12 \_ TEXAS3D \_ RTV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex3d_rtv)
+-   [**D3D12 \_ TEXAS1D \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_uav)
+-   [**D3D12 \_ TEXAS3D \_ UAV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex3d_uav)
 
-Las siguientes estructuras también hacen referencia a Subrecursos:
+Las estructuras siguientes también hacen referencia a los subrecursos:
 
--   [**D3D12 \_ Descartar \_ región**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_discard_region) : una estructura que se utiliza como preparación para descartar un recurso.
--   [**D3D12 \_ \_ \_ Superficie de subrecurso colocada**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_placed_subresource_footprint) : agrega un desplazamiento a un recurso a la superficie básica.
--   [**D3D12 \_ \_ \_ Barrera de transición de recursos**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_transition_barrier) : describe la transición de Subrecursos entre distintos usos (recursos del sombreador, destino de representación, etc.).
--   [**D3D12 \_ \_Datos de subrecurso**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) : los datos del subrecurso incluyen los datos en sí y el paso de la fila y del segmento.
--   [**D3D12 \_ \_Superficie de subrecurso**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint) : una superficie incluye el formato, el ancho, el alto, la profundidad y el tono de fila del subrecurso.
--   [**D3D12 \_ \_Información de subrecurso**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_info) : contiene el desplazamiento, el paso de fila y el tono de profundidad del subrecurso.
--   [**D3D12 \_ \_Mosaico de Subrecursos**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_tiling) : describe un volumen de Subrecursos en mosaico (consulte [los recursos en mosaico del volumen](volume-tiled-resources.md)).
--   [**D3D12 \_ \_ \_ Ubicación de copia de textura**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_texture_copy_location) : describe una parte de una textura con el fin de copiar.
--   [**D3D12 \_ Coordenada \_ de \_ recursos en mosaico**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate) : describe las coordenadas de un recurso en mosaico.
+-   [**D3D12 \_ DISCARD \_ REGION:**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_discard_region) estructura que se usa como preparación para descartar un recurso.
+-   [**D3D12 \_ PLACED \_ SUBRESOURCE \_ FOOTPRINT :**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_placed_subresource_footprint) agrega un desplazamiento en un recurso a la superficie básica.
+-   [**D3D12 \_ BARRERA \_ DE \_ TRANSICIÓN DE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_transition_barrier) RECURSOS: describe la transición de los subrecursos entre distintos usos (recurso de sombreador, destino de representación, etc.).
+-   [**D3D12 \_ SUBRESOURCE \_ DATA:**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) los datos de subrecurso incluyen los propios datos y el tono de fila y segmento.
+-   [**D3D12 \_ SUBRESOURCE \_ FOOTPRINT :**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint) una superficie incluye el formato, el ancho, el alto, la profundidad y el tono de fila del subrecurso.
+-   [**D3D12 \_ SUBRESOURCE \_ INFO**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_info) : contiene el desplazamiento, el tono de fila y el tono de profundidad del subrecurso.
+-   [**D3D12 \_ SUBRESOURCE \_ TILING:**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_tiling) describe un volumen de subrecursos en mosaico (consulte [Recursos en mosaico de volumen).](volume-tiled-resources.md)
+-   [**D3D12 \_ TEXTURE \_ COPY \_ LOCATION**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_texture_copy_location) : describe una parte de una textura con el fin de copiar.
+-   [**D3D12 \_ \_COORDENADA \_ DE RECURSOS EN**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate) MOSAICO: describe las coordenadas de un recurso en mosaico.
 
 Métodos:
 
--   [**ID3D12Device:: GetCopyableFootprints**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getcopyablefootprints) : obtiene información sobre un recurso, para permitir que se realice una copia.
--   [**ID3D12Device:: GetResourceTiling**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getresourcetiling) : obtiene información sobre cómo un recurso en mosaico se divide en mosaicos.
--   [**ID3D12GraphicsCommandList:: ResolveSubresource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resolvesubresource) : copia un subrecurso de muestreo múltiple en un subrecurso de muestreo no múltiple.
--   [**ID3D12Resource:: Map**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) : devuelve un puntero a los datos especificados en el recurso y deniega el acceso de la GPU al subrecurso.
--   [**ID3D12Resource:: ReadFromSubresource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-readfromsubresource) : copia datos de un subrecurso o de una región rectangular de un subrecurso.
--   [**ID3D12Resource::**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) desasignar: desasigna el intervalo de memoria especificado y invalida el puntero al recurso. Restablece el acceso de la GPU al subrecurso.
--   [**ID3D12Resource:: WriteToSubresource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-writetosubresource) : copia datos en un subrecurso o en una región rectangular de un subrecurso.
+-   [**ID3D12Device::GetCopyableFootprints:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getcopyablefootprints) obtiene información sobre un recurso para permitir que se haga una copia.
+-   [**ID3D12Device::GetResourceTiling:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getresourcetiling) obtiene información sobre cómo un recurso en mosaico se divide en iconos.
+-   [**ID3D12GraphicsCommandList::ResolveSubresource:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resolvesubresource) copia un subrecurso de varias muestras en un subrecurso no con varias muestras.
+-   [**ID3D12Resource::Map:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) devuelve un puntero a los datos especificados en el recurso y deniega el acceso de GPU al subrecurso.
+-   [**ID3D12Resource::ReadFromSubresource:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-readfromsubresource) copia datos de un subrecurso o de una región rectangular de un subrecurso.
+-   [**ID3D12Resource::Unmap**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap) : desmapa el intervalo de memoria especificado e invalida el puntero al recurso. Restablece el acceso de GPU al subrecurso.
+-   [**ID3D12Resource::WriteToSubresource:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-writetosubresource) copia los datos en un subrecurso o en una región rectangular de un subrecurso.
 
-Las texturas deben estar en el estado de [**recurso de D3D12 estado \_ \_ \_ común**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states) de acceso de CPU a través de [**WriteToSubresource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-writetosubresource) y [**ReadFromSubresource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-readfromsubresource) para ser legales, pero no los búferes. El acceso de CPU a un recurso se realiza normalmente a través de [**asignación de asignación**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) / [](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap).
+Las texturas deben estar en el estado [**D3D12 \_ RESOURCE \_ STATE \_ COMMON**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states) para que el acceso de CPU a través de [**WriteToSubresource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-writetosubresource) y [**ReadFromSubresource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-readfromsubresource) sea legal, pero los búferes no. El acceso de LA CPU a un recurso normalmente se realiza a través [**de Asignar**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map) / [**unmap**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-unmap).
 
 ## <a name="related-topics"></a>Temas relacionados
 

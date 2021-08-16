@@ -27,7 +27,7 @@ El **modificador \_ de clase /enum** permite el uso de la construcción **de cla
 midlrt /enum_class 
 ```
 
-## <a name="switch-options"></a>Opciones de cambio
+## <a name="switch-options"></a>Cambiar opciones
 
 Este modificador no tiene parámetros.
 

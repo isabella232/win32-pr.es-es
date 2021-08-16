@@ -1,19 +1,19 @@
 ---
-title: Usar una interfaz COM
-description: Usar una interfaz COM
+title: Uso de una interfaz COM
+description: Uso de una interfaz COM
 ms.assetid: 44e1aeac-585c-4856-8c4d-1adb5b307b74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78b5d402079debf5e0a565c6b91136605cec50fb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40ddf507be3a71d3b00f99574b2153dafd21a6558ee20fa5c3f2108675bf9b24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118308947"
 ---
-# <a name="using-a-com-interface"></a>Usar una interfaz COM
+# <a name="using-a-com-interface"></a>Uso de una interfaz COM
 
-El código de cliente es el usuario de la interfaz COM. Para usar cualquier interfaz COM, personalizada o estándar, un cliente debe conocer su IID. En el ejemplo siguiente, el controlador que llama a CustomRpt le pasa el nombre del objeto que se convierte en un formato de caracteres anchos. El nombre del objeto se alimenta a [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-objbase-createfilemoniker) para que se pueda crear un moniker de archivo y el cliente pueda enlazar con el objeto en ejecución. Una vez que el objeto se está ejecutando, CustomRpt puede tener acceso a un puntero a una interfaz en el proxy o código auxiliar estándar, como [**IPersistFile**](/windows/desktop/api/ObjIdl/nn-objidl-ipersistfile), o a la interfaz personalizada, ICustomInterface.
+El código de cliente es el usuario de la interfaz COM. Para usar cualquier interfaz COM, personalizada o estándar, un cliente debe conocer su IID. En el ejemplo siguiente, el controlador que llama a CustomRpt le pasa el nombre del objeto que se convierte a un formato de caracteres anchos. El nombre del objeto se introduce en [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-objbase-createfilemoniker) para que se pueda crear un moniker de archivo y el cliente pueda enlazarse al objeto en ejecución. Una vez que se ejecuta el objeto, CustomRpt puede acceder a un puntero a una interfaz del proxy o código auxiliar estándar, como [**IPersistFile,**](/windows/desktop/api/ObjIdl/nn-objidl-ipersistfile)o a la interfaz personalizada, ICustomInterface.
 
 
 ```C++
@@ -93,9 +93,9 @@ void CustomRpt(char *pszObject)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

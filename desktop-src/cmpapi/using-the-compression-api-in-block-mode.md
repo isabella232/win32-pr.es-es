@@ -1,31 +1,31 @@
 ---
-description: En el ejemplo siguiente se muestra cómo usar la API de compresión en modo de bloqueo.
+description: En el ejemplo siguiente se muestra cómo usar compression API en modo de bloque.
 ms.assetid: 7483BCE4-3B85-4659-98E3-670D2F7EE52D
-title: Uso de la API de compresión en modo de bloqueo
+title: Uso de compression API en modo de bloque
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ddd1ecaec03d332262ffb24462e73a9fcb789d2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b4b739c1496b43f64f8ceab4312602e9b98f7faebbb29317998a93e8f27b6883
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117737460"
 ---
-# <a name="using-the-compression-api-in-block-mode"></a>Uso de la API de compresión en modo de bloqueo
+# <a name="using-the-compression-api-in-block-mode"></a>Uso de compression API en modo de bloque
 
-En el ejemplo siguiente se muestra cómo usar la API de compresión en modo de bloqueo. Para generar un compresor o descompresor mediante el modo de bloqueo, la aplicación debe incluir la marca **compress \_ raw** cuando llama a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). El modo de bloqueo permite al desarrollador controlar el tamaño de bloque, pero la aplicación requiere más trabajo.
+En el ejemplo siguiente se muestra cómo usar compression API en modo de bloque. Para generar un descompresión o un descompresión mediante el modo de bloque, la aplicación debe incluir la marca **COMPRESS \_ RAW** cuando llama a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). El modo de bloque permite al desarrollador controlar el tamaño del bloque, pero requiere que la aplicación haga más trabajo.
 
-El modo de bloqueo producirá un error si el tamaño del búfer de entrada es mayor que el tamaño de bloque interno del algoritmo de compresión. El tamaño de bloque interno es de 32 KB para MSZIP y 1 GB para los algoritmos de compresión XPRESS. El tamaño de bloque interno para LZMS es configurable hasta 64 GB con un aumento de uso de memoria correspondiente. El valor del parámetro *UncompressedBufferSize* de [**descomprimir**](/windows/desktop/api/compressapi/nf-compressapi-decompress) debe ser exactamente igual al tamaño original de los datos sin comprimir y no solo al tamaño del búfer de salida. Esto significa que la aplicación tendrá que especificar el tamaño de bloque y guardar el tamaño original exacto de los datos sin comprimir para su uso por el descompresor. El tamaño del búfer comprimido no se guarda automáticamente y la aplicación también necesita guardarlo para la descompresión.
+Se producirá un error en el modo de bloque si el tamaño del búfer de entrada es mayor que el tamaño de bloque interno del algoritmo de compresión. El tamaño de bloque interno es de 32 KB para MSZIP y de 1 GB para los algoritmos de compresión XPRESS. El tamaño de bloque interno para LZMS se puede configurar hasta 64 GB con un aumento correspondiente en el uso de memoria. El valor del *parámetro UncompressedBufferSize* [**de Decompress**](/windows/desktop/api/compressapi/nf-compressapi-decompress) debe ser exactamente igual al tamaño original de los datos sin comprimir y no solo al tamaño del búfer de salida. Esto significa que la aplicación tendrá que especificar el tamaño del bloque y guardar el tamaño original exacto de los datos sin comprimir para que lo use el descomprimidor. El tamaño del búfer comprimido no se guarda automáticamente y la aplicación también debe guardarlo para descomprimirlo.
 
-En la mayoría de los casos, se recomienda el modo de búfer porque divide automáticamente el búfer de entrada en bloques de un tamaño adecuado para el algoritmo de compresión seleccionado y almacena el tamaño de búfer sin comprimir en el búfer comprimido. Para obtener información sobre cómo usar el modo de búfer, consulte [uso de la API de compresión en modo de búfer](using-the-compression-api-in-buffer-mode.md).
+El modo de búfer se recomienda en la mayoría de los casos porque divide automáticamente el búfer de entrada en bloques de un tamaño adecuado para que el algoritmo de compresión seleccionado almacena el tamaño de búfer sin comprimir en el búfer comprimido. Para obtener información sobre cómo usar el modo de búfer, consulte [Uso de la API de compresión en modo de búfer.](using-the-compression-api-in-buffer-mode.md)
 
-Las aplicaciones que usan el modo de búfer o de bloque tienen la opción de especificar una rutina de asignación de memoria personalizada en su llamada a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor).
+Las aplicaciones que usan el modo de búfer o bloque tienen la opción de especificar una rutina de asignación de memoria personalizada en su llamada a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) [**o CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor).
 
-**Windows 8 y Windows Server 2012:** Para usar el siguiente código de ejemplo, debe ejecutar Windows 8 o Windows Server 2012 y tener "compressapi. h" y "cabinet.dll" y un vínculo a "Cabinet. lib".
+**Windows 8 y Windows Server 2012:** Para usar el código de ejemplo siguiente, debe ejecutar Windows 8 o Windows Server 2012 y tener "compressapi.h" y "cabinet.dll" y un vínculo a "Cabinet.lib".
 
-A continuación se muestra el uso de la API de compresión en modo de bloqueo para comprimir un archivo mediante el algoritmo de compresión LZMS y una rutina de asignación de memoria personalizada. La aplicación debe incluir la marca **compress \_ raw** para usar la API de compresión en modo de bloqueo. En primer lugar, la aplicación llama a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) con el **algoritmo de compresión \_ \_ LZMS** \| **compress \_ raw** para generar el compresor. El parámetro *AllocationRoutines* especifica la rutina de asignación de memoria. A continuación, la aplicación establece el tamaño de bloque para el compresor mediante [**SetCompressorInformation**](/windows/desktop/api/compressapi/nf-compressapi-setcompressorinformation).
+A continuación se muestra cómo usar compression API en modo de bloque para comprimir un archivo mediante el algoritmo de compresión LZMS y una rutina de asignación de memoria personalizada. La aplicación debe incluir la **marca COMPRESS \_ RAW** para usar compression API en modo de bloque. En primer lugar, la [**aplicación llama a CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) con **COMPRESS ALGORITHM \_ \_ LZMS** \| **COMPRESS RAW \_ para** generar el compresión. El *parámetro AllocationRoutines* especifica la rutina de asignación de memoria. A continuación, la aplicación establece el tamaño de bloque para el objeto con [**SetCompressorInformation.**](/windows/desktop/api/compressapi/nf-compressapi-setcompressorinformation)
 
-La aplicación realiza llamadas repetidas para [**comprimir**](/windows/desktop/api/compressapi/nf-compressapi-compress) el bloque de datos por bloque. La aplicación escribe el tamaño de bloque sin comprimir, el tamaño de bloque comprimido y los datos comprimidos en el búfer de salida.
+La aplicación realiza llamadas repetidas [**a Compress para**](/windows/desktop/api/compressapi/nf-compressapi-compress) comprimir el bloque de datos por bloque. La aplicación escribe el tamaño de bloque sin comprimir, el tamaño de bloque comprimido y los datos comprimidos en el búfer de salida.
 
 
 ```C++
@@ -358,7 +358,7 @@ done:
 
 
 
-A continuación se muestra la descompresión de archivos con la API de compresión en modo de bloqueo.
+A continuación se muestra la descompresión de archivos mediante compression API en modo de bloque.
 
 
 ```C++
@@ -648,9 +648,9 @@ done:
 
 
 
-Una aplicación que usa el modo de búfer o de bloque tiene la opción de personalizar la asignación de memoria que usa la API de compresión cuando llama a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). En el modo de bloqueo, la aplicación debe controlar la información del bloque de compresión, como el tamaño de los datos comprimidos y el tamaño de los datos sin comprimir; de lo contrario, [**descomprimir**](/windows/desktop/api/compressapi/nf-compressapi-decompress) no podrá descomprimir la información.
+Una aplicación que usa el modo de búfer o bloque tiene la opción de personalizar la asignación de memoria que usa compression API cuando llama a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) [**o CreateDecompressor.**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) En el modo de bloque, la aplicación debe controlar la información de bloques de compresión, como el tamaño de los datos comprimidos y el tamaño de los datos sin comprimir; de lo contrario, [**la descompresión**](/windows/desktop/api/compressapi/nf-compressapi-decompress) no podrá descomprimir la información.
 
-En el fragmento de código siguiente se muestra una rutina de asignación personalizada simple.
+El fragmento de código siguiente muestra una rutina de asignación personalizada simple.
 
 
 ```C++

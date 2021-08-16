@@ -3,26 +3,26 @@ title: Para configurar el indexador
 description: Para configurar el indexador
 ms.assetid: 0e28e8dd-1586-45e6-8a08-5245d465d068
 keywords:
-- SDK de Windows Media Format, configurar indexadores
-- Advanced Systems Format (ASF), configurar indexadores
-- ASF (formato de sistemas avanzados), configurar indexadores
-- índices, configurar indexadores
+- Windows SDK de formato multimedia, configuración de indexadores
+- Formato de sistemas avanzados (ASF), configuración de indexadores
+- ASF (formato de sistemas avanzados), configuración de indexadores
+- indexes,configuring indexers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 618316e22b13ca05ff0fc1bbfb6b4583e79ca858
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: da5a624a4ed9ae749559a1908e3809500bf8aece2b29b8ad406769c5f639e547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104420295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845631"
 ---
 # <a name="to-configure-the-indexer"></a>Para configurar el indexador
 
-Puede configurar el indexador antes de usarlo para indizar un archivo ASF. Cada secuencia del archivo puede configurarse por separado, o bien puede establecer la misma configuración para todos los flujos.
+Puede configurar el indexador antes de usarlo para indexar un archivo ASF. Cada secuencia del archivo se puede configurar por separado o puede establecer la misma configuración para todas las secuencias.
 
-Si está configurando varias transmisiones para la indexación en un archivo, debe configurarlas todas y, a continuación, comenzar la indexación. Si configura e indexa una secuencia y, a continuación, configura otra secuencia en el mismo archivo, si vuelve a iniciar el indexador, se eliminará el primer índice. Esto es para cumplir con el formato de archivo ASF.
+Si va a configurar varios reenvía para la indexación en un archivo, debe configurarlos todos y, a continuación, comenzar la indexación. Si configura e indexa una secuencia y, a continuación, configura otra secuencia en el mismo archivo, al volver a iniciar el indexador se eliminará el primer índice. Esto es para cumplir con el formato de archivo ASF.
 
-En el código siguiente se muestra cómo configurar el indizador. El código presupone que el archivo que se va a indexar tiene dos flujos: el primero es una secuencia de audio que no necesita indexarse y el segundo es una secuencia de vídeo. Este código solo muestra cómo configurar el indizador. Para indexar un archivo, debe seguir los pasos que se describen en [para indizar un archivo ASF](to-index-an-asf-file.md).
+El código siguiente muestra cómo configurar el indexador. El código supone que el archivo que se va a indexar tiene dos secuencias: la primera es una secuencia de audio que no es necesario indexar y la segunda es una secuencia de vídeo. Este código solo muestra cómo configurar el indexador. Para indexar un archivo, debe seguir los pasos presentados en [Para indexar un archivo ASF](to-index-an-asf-file.md).
 
 
 ```C++
@@ -65,15 +65,15 @@ pMyIndexer = NULL;
 
 
 > [!Note]  
-> El tipo de índice predeterminado es WMT es el \_ \_ \_ punto limpio más cercano \_ . Aunque puede establecer el tipo de índice en otros valores, al hacerlo se reducirá el rendimiento de búsqueda.
+> El tipo de índice predeterminado es WMT \_ IT \_ NEAREST CLEAN \_ \_ POINT. Aunque puede establecer el tipo de índice en otros valores, al hacerlo se degradará el rendimiento de búsqueda.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**IWMIndexer2:: configure**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer2-configure)
+[**IWMIndexer2::Configure**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer2-configure)
 </dt> <dt>
 
 [**Para indexar un archivo ASF**](to-index-an-asf-file.md)
@@ -85,9 +85,9 @@ pMyIndexer = NULL;
 [**Trabajar con índices**](working-with-indexes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

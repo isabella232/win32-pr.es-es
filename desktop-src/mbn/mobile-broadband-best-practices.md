@@ -1,27 +1,27 @@
 ---
-description: Al trabajar con la API de banda ancha móvil, se debe usar el siguiente conjunto de prácticas recomendadas para lograr el mejor rendimiento posible.
+description: Al trabajar con Mobile Broadband API, se debe usar el siguiente conjunto de procedimientos recomendados para lograr el mejor rendimiento posible.
 ms.assetid: 523e3ea4-1d4e-45d1-bc24-93aa2fb14390
-title: Procedimientos recomendados de API de banda ancha móvil
+title: Procedimientos recomendados de mobile broadband API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 399c2ebc40a357eac9686bc3c2c9f471e3b853f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3a6c1e236a61dd2a5321be2edb7a68156f904605bd8a1da5fc169ea8b70e464
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117881659"
 ---
-# <a name="mobile-broadband-api-best-practices"></a>Procedimientos recomendados de API de banda ancha móvil
+# <a name="mobile-broadband-api-best-practices"></a>Procedimientos recomendados de mobile broadband API
 
-Al trabajar con la API de banda ancha móvil, se debe usar el siguiente conjunto de prácticas recomendadas para lograr el mejor rendimiento posible.
+Al trabajar con Mobile Broadband API, se debe usar el siguiente conjunto de procedimientos recomendados para lograr el mejor rendimiento posible.
 
 ## <a name="do-not-cache-functional-objects"></a>No almacenar en caché objetos funcionales
 
-Los objetos funcionales, como [**IMbnInterface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) y otros, se obtienen de los objetos de administrador, como [**IMbnInterfaceManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager), mediante el método de enumeración en el objeto de administrador correspondiente. No almacene en caché estos objetos funcionales, ya que los objetos funcionales almacenados en caché contienen datos obsoletos. Las operaciones sincrónicas realizadas en estos objetos funcionales devolverán los mismos datos hasta que se obtengan de nuevo los objetos funcionales.
+Los objetos funcionales, como [**IMbnInterface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) y otros, se obtienen de objetos de administrador, como [**IMbnInterfaceManager,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager)mediante el método de enumeración en el objeto de administrador correspondiente. No almacene en caché estos objetos funcionales, ya que los objetos funcionales almacenados en caché contienen datos obsoletos. Las operaciones sincrónicas realizadas en estos objetos funcionales devolverán los mismos datos hasta que se obtengan de nuevo los objetos funcionales.
 
-En su lugar, almacene en caché los objetos de administrador y obtenga los objetos funcionales del objeto de administrador mediante el método de enumeración en el objeto de administrador correspondiente de nuevo para obtener los datos más recientes.
+En su lugar, almacenar en caché los objetos de administrador y obtener los objetos funcionales del objeto de administrador mediante el método de enumeración en el objeto de administrador correspondiente de nuevo para obtener los datos más recientes.
 
-En el ejemplo de código siguiente se muestra la manera adecuada de almacenar en memoria caché los objetos de administrador.
+En el ejemplo de código siguiente se muestra la manera adecuada de almacenar en caché objetos de administrador.
 
 
 ```C++
@@ -120,29 +120,29 @@ int main()
 
 
 
-## <a name="handle-all-notifications"></a>Control de todas las notificaciones
+## <a name="handle-all-notifications"></a>Controlar todas las notificaciones
 
-Siga y controle todas las notificaciones, incluso si la aplicación no la desencadena. Esto es necesario para mantener la interfaz de usuario sincronizada con el estado real del dispositivo.
+Siga y controle todas las notificaciones, incluso si la aplicación no las desencadena. Esto es necesario para mantener la interfaz de usuario sincronizada con el estado real del dispositivo.
 
-Puede haber más de un administrador de conexiones que se ejecute en un equipo. La interfaz de usuario de la interfaz de red disponible de vista nativa proporcionada por Windows 7 es un administrador de conexiones. Cualquier otro administrador de conexiones debe responder a todas las notificaciones para permanecer sincronizando la interfaz de usuario nativa de Windows. Un usuario puede optar por realizar alguna operación en uno de los administradores de conexiones, lo que puede dar lugar a un cambio de estado del dispositivo de banda ancha móvil. Sin embargo, otros administradores de conexiones deben permanecer actualizados para indicar correctamente el estado modificado del dispositivo.
+Puede haber más de un administrador de conexiones en ejecución en un equipo. La interfaz de usuario nativa ver la interfaz de red disponible proporcionada por Windows 7 es un administrador de conexiones. Los demás administradores de conexiones deben responder a todas las notificaciones para permanecer sincronizados con Windows interfaz de usuario nativa. Un usuario puede optar por realizar alguna operación en uno de los administradores de conexión, lo que puede dar lugar a un cambio de estado del dispositivo de banda ancha móvil. Sin embargo, otros administradores de conexiones deben permanecer actualizados para indicar correctamente el estado modificado del dispositivo.
 
-Por ejemplo, si realiza una conexión mediante uno de los administradores de conexiones, cambiará el estado del dispositivo de disponible a conectado. Este cambio debe estar visible para los administradores de conexión que no iniciaron esta acción. Todos los administradores de conexión que tienen una interfaz de usuario que indica el estado de conexión del dispositivo, deben escuchar y controlar las notificaciones de estado de conexión para actualizar correctamente su interfaz de usuario.
+Por ejemplo, realizar una conexión mediante uno de los administradores de conexión cambiará el estado del dispositivo de disponible a conectado. Este cambio debe ser visible para los administradores de conexiones que no iniciaron esta acción. Todos los administradores de conexiones que tienen una interfaz de usuario que indica el estado de conexión del dispositivo deben escuchar y controlar las notificaciones de estado de conexión para actualizar correctamente su interfaz de usuario.
 
-## <a name="sending-and-receiving-bytes"></a>Envío y recepción de bytes
+## <a name="sending-and-receiving-bytes"></a>Bytes de envío y recepción
 
-Use las funciones auxiliares de IP [GetlfEntry](/windows/win32/api/iphlpapi/nf-iphlpapi-getifentry) y [GetlfEntry2](/windows/win32/api/netioapi/nf-netioapi-getifentry2) para enviar y recibir bytes.
+Use las funciones del asistente de IP [GetlfEntry](/windows/win32/api/iphlpapi/nf-iphlpapi-getifentry) y [GetlfEntry2 para](/windows/win32/api/netioapi/nf-netioapi-getifentry2) enviar y recibir bytes.
 
-## <a name="using-the-pin-unblock-api"></a>Uso de la API de PIN desbloqueado
+## <a name="using-the-pin-unblock-api"></a>Uso de la API Desbloqueo de pin
 
-Una aplicación cliente de llamada debe elevarse para poder invocar correctamente [**IMbnPin:: unblock**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-unblock). Este método es la única parte de la API de banda ancha móvil que requiere privilegios de administrador o NCO. Para obtener más información, vea [una descripción del grupo operadores de configuración de red]( https://support.microsoft.com/kb/297938/en-us) .
+Una aplicación cliente que realiza la llamada debe tener privilegios elevados para invocar [**correctamente IMbnPin::Unblock**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-unblock). Este método es la única parte de Mobile Broadband API que requiere privilegios de administrador o NCO. Vea [Una descripción del grupo de operadores de configuración de red]( https://support.microsoft.com/kb/297938/en-us) para obtener más información.
 
-## <a name="working-with-safearrays"></a>Trabajar con SafeArray
+## <a name="working-with-safearrays"></a>Trabajar con SafeArrays
 
--   Use ZeroMemory () antes de tener acceso a los elementos de un SafeArray.
+-   Use ZeroMemory() antes de acceder a los elementos de una safeArray.
 
--   No Compruebe los índices de una SafeArray. Pueden ser negativos.
+-   No compruebe los índices de SafeArray. Pueden ser negativas.
 
-En el ejemplo de código siguiente se muestra cómo administrar correctamente una SafeArray.
+En el ejemplo de código siguiente se muestra cómo controlar correctamente safeArray.
 
 
 ```C++

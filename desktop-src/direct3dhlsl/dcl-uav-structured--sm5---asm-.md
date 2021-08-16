@@ -1,23 +1,23 @@
 ---
-title: dcl_uav_structured (SM5-ASM)
-description: Declare una vista de acceso desordenado (UAV) para su uso por parte de un sombreador. | dcl_uav_structured (SM5-ASM)
+title: dcl_uav_structured (sm5 - asm)
+description: Declare una vista de acceso no ordenado (UAV) para que la use un sombreador. | dcl_uav_structured (sm5 - asm)
 ms.assetid: 40D6B8F7-8A41-4EFE-A8A3-44A646B4D43B
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dc02396f4837a095506e736d81ea8c00eb0669f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b398dc8b59db6d8fc3a64effdf3cd93b56664881c4c7024a185ad6a212b9fb4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726803"
 ---
-# <a name="dcl_uav_structured-sm5---asm"></a>DCL \_ UAV \_ estructurado (SM5-ASM)
+# <a name="dcl_uav_structured-sm5---asm"></a>dcl \_ uav \_ structured (sm5 - asm)
 
-Declare una vista de acceso desordenado (UAV) para su uso por parte de un sombreador.
+Declare una vista de acceso no ordenado (UAV) para que la use un sombreador.
 
 
 
-| DCL \_ UAV \_ Structured \[ \_ GLC \] dstUAV, structByteStride |
+| dcl \_ uav \_ structured \[ \_ glc \] dstUAV, structByteStride |
 |--------------------------------------------------------|
 
 
@@ -28,33 +28,33 @@ Declare una vista de acceso desordenado (UAV) para su uso por parte de un sombre
 
 | Elemento                                                                                                                                   | Descripción                                           |
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/>                                         | \[en \] UAV.<br/>                            |
-| <span id="structByteStride"></span><span id="structbytestride"></span><span id="STRUCTBYTESTRIDE"></span>*structByteStride*<br/> | \[en \] el tamaño de la estructura, en bytes.<br/> |
+| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/>                                         | \[en \] el UAV.<br/>                            |
+| <span id="structByteStride"></span><span id="structbytestride"></span><span id="STRUCTBYTESTRIDE"></span>*structByteStride*<br/> | \[en \] Tamaño de la estructura en bytes.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-*dstUAV* es un \# registro u declarado como una referencia a un UnorderedAccessView de un búfer estructurado con el intervalo especificado que se debe enlazar a la ranura UAV \# en la API.
+*dstUAV* es un registro u declarado como una referencia a UnorderedAccessView de un búfer estructurado con el paso especificado que debe enlazarse a la ranura UAV en la \# \# API.
 
-El contenido de la estructura no tiene ningún tipo; las operaciones realizadas en la memoria pueden interpretar implícitamente los datos como si tuvieran un tipo.
+El contenido de la estructura no tiene ningún tipo; Las operaciones realizadas en la memoria pueden interpretar implícitamente que los datos tienen un tipo.
 
-*structByteStride* es el tamaño de la estructura, en bytes, del búfer que se está declarando. Este valor debe ser mayor que cero. *structByteStride* es de tipo uint y debe ser un múltiplo de 4.
+*structByteStride* es el tamaño de la estructura en bytes en el búfer que se va a declarar. Este valor debe ser mayor que cero. *structByteStride* es de tipo uint y debe ser un múltiplo de 4.
 
-Las instrucciones que hacen referencia a una u estructurada \# toman una dirección 2D, donde el primer componente selecciona \[ struct \] , y el segundo componente selecciona \[ desplazamiento dentro de la estructura, en bytes alineados \] .
+Las instrucciones que hacen referencia a una u estructurada toman una dirección 2D, donde el primer componente elige struct y el segundo componente elige el desplazamiento dentro de \# \[ struct, en bytes \] \[ \] alineados.
 
-La \_ marca GLC significa "Globally coherente". La ausencia de \_ GLC significa que el UAV se declara solo como "coherente con el grupo" en el sombreador de cálculo o "localmente coherente" en una invocación del sombreador de un solo píxel.
+La \_ marca glc significa "globalmente coherente". La ausencia de glc significa que el UAV se declara solo como "coherente de grupo" en el sombreador de proceso o "coherente localmente" en una invocación de sombreador de un \_ solo píxel.
 
-La \_ marca OPC es el contador de conservar el orden. Indica que, si un UAV está enlazado a \# la ranura (u \# ), se debe haber creado con la marca de contador. Esto significa que las operaciones de consumo [atómico de IMM \_ \_ ](imm-atomic-alloc--sm5---asm-.md) o del [IMM \_ \_ atómico de IMM](imm-atomic-consume--sm5---asm-.md) en el sombreador manipulan un contador cuyos valores se pueden usar en el sombreador como una referencia permanente a una ubicación en el UAV. Los datos no se pueden reordenar una vez que el sombreador ha finalizado.
+La \_ marca opc es el contador de conservación del orden. Indica que si un UAV está enlazado a la ranura (u ), se debe haber \# creado con la marca \# COUNTER. Esto significa que las operaciones [imm \_ atomic \_ alloc](imm-atomic-alloc--sm5---asm-.md) o [imm \_ atomic \_ ](imm-atomic-consume--sm5---asm-.md) consumen en el sombreador un contador cuyos valores se pueden usar en el sombreador como referencia permanente a una ubicación en el UAV. Los datos no se pueden reordenar una vez que el sombreador ha terminado.
 
-La ausencia de la \_ marca OPC significa que si el sombreador usa[la \_ \_ asignación atómica de IMM](imm-atomic-alloc--sm5---asm-.md) o las instrucciones de [ \_ \_ consumo atómico de IMM](imm-atomic-consume--sm5---asm-.md) y un UAV está enlazado a la ranura \# (u), se debe haber creado con la marca append, que proporciona un contador que no garantiza que el orden se conserva después de la invocación del sombreador.
+La ausencia de la marca opc significa que si el sombreador usa instrucciones de uso atómico de imm o de atribución atómica de \_ [ \_ \_ imm](imm-atomic-alloc--sm5---asm-.md) y un UAV está enlazado a la ranura (u), [ \_ \_ ](imm-atomic-consume--sm5---asm-.md) debe haber sido creado con la marca APPEND, que proporciona un contador que no garantiza que el orden se conserve después de la invocación del \# sombreador.
 
-Si la \_ marca OPC no está presente y el sombreador no contiene las instrucciones de uso de la [ \_ \_ asignación atómica de IMM](imm-atomic-alloc--sm5---asm-.md) o de [IMM \_ Atomic \_ ](imm-atomic-consume--sm5---asm-.md) , se permite que se haya creado un UAV enlazado a \# la ranura (u) con la marca de contador (el contador pasará a no usarse por este sombreador), sin marca (ningún contador), pero no con la marca de anexado.
+Si la marca opc no está presente y el sombreador no contiene instrucciones de consumo atómico de imm o de ala atómica de \_ [ \_ \_ imm,](imm-atomic-alloc--sm5---asm-.md) [ \_ \_ ](imm-atomic-consume--sm5---asm-.md) se permite que se haya creado un UAV enlazado a la ranura (u) con la marca COUNTER (el contador no se utilizará en este sombreador), ninguna marca (sin contador), pero no con la \# marca APPEND.
 
 > [!Note]  
-> CS \_ 4 \_ 0 y CS \_ 4 \_ 1 admiten la **\_ TGSM \_ de DCL**, pero no la de [DCL \_ TGSM \_ raw](dcl-tgsm-raw--sm5---asm-.md).
+> cs \_ 4 \_ 0 y cs \_ 4 \_ 1 **admiten dcl \_ tgsm \_ estructurado,** pero no [dcl \_ tgsm \_ raw.](dcl-tgsm-raw--sm5---asm-.md)
 
  
 
@@ -62,7 +62,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -70,11 +70,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Dado que UAVs están disponibles en todas las fases del sombreador para Direct3D 11,1, esta instrucción se aplica a todas las fases del sombreador para el tiempo de ejecución de Direct3D 11,1, que está disponible a partir de Windows 8.
+Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, esta instrucción se aplica a todas las fases del sombreador para el entorno de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -82,27 +82,27 @@ Dado que UAVs están disponibles en todas las fases del sombreador para Direct3D
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
  
 
 > [!Note]  
-> Esta instrucción es compatible con CS \_ 4 \_ 0 y CS \_ 4 \_ 1.
+> Esta instrucción se admite en cs \_ 4 \_ 0 y cs \_ 4 \_ 1.
 
  
 
@@ -110,7 +110,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

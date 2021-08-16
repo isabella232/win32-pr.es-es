@@ -1,7 +1,7 @@
 ---
 description: 'Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h): gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
 ms.assetid: da023816-5176-460d-ab6b-909b89cc46cd
-title: Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h)
+title: Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118301698"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h)
+# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3DX10.h)
 
 Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
 

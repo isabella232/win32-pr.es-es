@@ -1,5 +1,5 @@
 ---
-description: 'Método Shell.ExplorerPolicy: obtiene el valor de una directiva de Internet Explorer Windows especificada.'
+description: 'Método Shell.ExplorerPolicy: obtiene el valor de una directiva de Windows Internet Explorer especificada.'
 ms.assetid: 47E17F6A-ED43-44cd-AF77-A6E49865E1B5
 title: Método Shell.ExplorerPolicy (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 765e1dc46edbe5a27292c5d8ff940e29b269f8dc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 78a0e601e8093358ef05f259586726e840982d1a97d428b8453f26ecb878a4c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857937"
 ---
 # <a name="shellexplorerpolicy-method"></a>Método Shell.ExplorerPolicy
 
-Obtiene el valor de una directiva de windows Internet Explorer especificada.
+Obtiene el valor de una directiva Windows Internet Explorer especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,13 +76,13 @@ Valor asociado al nombre de directiva especificado.
 
 Los administradores de red pueden controlar y administrar el entorno informático de sus usuarios estableciendo directivas.
 
-El nombre de valor especificado debe estar dentro de la subclave **HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Si el nombre del valor no existe, el método devuelve **null**.
+El nombre de valor especificado debe estar dentro de la subclave **HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **Explorador de directivas CurrentVersion.** \\  \\  Si el nombre del valor no existe, el método devuelve **null**.
 
 ## <a name="examples"></a>Ejemplos
 
 En los ejemplos siguientes se muestra el uso adecuado de **ExplorerPolicy** para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -142,9 +142,9 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 

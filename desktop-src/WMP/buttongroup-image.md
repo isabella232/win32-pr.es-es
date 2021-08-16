@@ -1,9 +1,9 @@
 ---
-title: BUTTONGROUP. Image
-description: El atributo Image especifica o recupera el nombre de la imagen que representa los botones de un BUTTONGROUP.
+title: BUTTONGROUP.image
+description: El atributo image especifica o recupera el nombre de la imagen que representa los botones de un BUTTONGROUP.
 ms.assetid: dad50a1e-d147-4e0f-b5d6-8cbfeef32438
 keywords:
-- Media Player BUTTONGROUP. Image de Windows
+- Buttongroup.image Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fa395edc149671ad05a38a5ff7c77053b6e3d82
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2fcd8d76bd217087b6b948cec3216efc2bbc6c9845e9c18b5a7619d292232b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342638"
 ---
-# <a name="buttongroupimage"></a>BUTTONGROUP. Image
+# <a name="buttongroupimage"></a>BUTTONGROUP.image
 
-El atributo **Image** especifica o recupera el nombre de la imagen que representa los botones de un **BUTTONGROUP**.
+El **atributo** image especifica o recupera el nombre de la imagen que representa los botones de **buttongroup.**
 
 ``` syntax
         elementID.image
@@ -29,27 +29,27 @@ El atributo **Image** especifica o recupera el nombre de la imagen que represent
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura.
+Este atributo es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los formatos de imagen admitidos son BMP, JPG, PNG y GIF. Si la imagen es un archivo BMP de 8 bits, sus valores de matiz y saturación se pueden cambiar dinámicamente con los atributos **hueShift** y **saturación** .
+Los formatos de imagen admitidos son BMP, JPG, PNG y GIF. Si la imagen es un archivo BMP de 8 bits, sus valores de matiz y saturación se pueden cambiar dinámicamente mediante los atributos **hueShift** y **saturación.**
 
-Si la imagen del control es mayor que la región definida, se recortará la imagen.
+Si la imagen del control es mayor que la región definida, la imagen se recortará.
 
-Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la imagen roja x).
+Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la imagen red-x).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -59,7 +59,7 @@ Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la ima
 [**BUTTONGROUP.hueShift**](buttongroup-hueshift.md)
 </dt> <dt>
 
-[**BUTTONGROUP. saturación**](buttongroup-saturation.md)
+[**BUTTONGROUP.saturation**](buttongroup-saturation.md)
 </dt> </dl>
 
  

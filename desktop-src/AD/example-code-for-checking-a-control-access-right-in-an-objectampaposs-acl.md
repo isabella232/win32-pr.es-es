@@ -1,22 +1,22 @@
 ---
-title: Código de ejemplo para comprobar el derecho de acceso de un control en la ACL de un objeto
-description: El siguiente ejemplo se puede usar para comprobar que el usuario que ha iniciado la sesión actual tiene permisos para un derecho de acceso de control en el objeto especificado.
+title: Código de ejemplo para comprobar un derecho de acceso de control en la ACL de un objeto
+description: El ejemplo siguiente se puede usar para comprobar que el usuario que ha iniciado sesión actualmente tiene permisos para un derecho de acceso de control en el objeto especificado.
 ms.assetid: 360320b8-32bd-4141-924b-25833a2761c8
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para comprobar el derecho de acceso de un control en la ACL de un objeto
+- Código de ejemplo para comprobar un derecho de acceso de control en la ACL de un objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b95054a7f21f1b9e96a7e6e0b723718598e8012
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d67428c9ff0c4558c71c39e53d411cea35958a8b8e6f1cc1207b7e4efae90d59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191217"
 ---
-# <a name="example-code-for-checking-a-control-access-right-in-an-objects-acl"></a>Código de ejemplo para comprobar el derecho de acceso de un control en la ACL de un objeto
+# <a name="example-code-for-checking-a-control-access-right-in-an-objects-acl"></a>Código de ejemplo para comprobar un derecho de acceso de control en la ACL de un objeto
 
-El siguiente ejemplo se puede usar para comprobar que el usuario que ha iniciado la sesión actual tiene permisos para un derecho de acceso de control en el objeto especificado.
+El ejemplo siguiente se puede usar para comprobar que el usuario que ha iniciado sesión actualmente tiene permisos para un derecho de acceso de control en el objeto especificado.
 
 
 ```C++
@@ -224,9 +224,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

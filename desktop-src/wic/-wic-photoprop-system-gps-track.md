@@ -33,11 +33,11 @@ VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se genera a partir de System.GPS.TrackNumerator y System.GPS.TrackDenominator. No se puede escribir directamente. Se concilian los valores de esquemas diferentes.
+Este valor se genera a partir de System.GPS.TrackNumerator y System.GPS.TrackDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
@@ -78,7 +78,7 @@ Este valor se genera a partir de System.GPS.TrackNumerator y System.GPS.TrackDen
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 

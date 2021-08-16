@@ -1,5 +1,5 @@
 ---
-description: La cantidad máxima de memoria física admitida por Microsoft Windows oscila entre 2 GB y 2 TB, dependiendo de la versión de Windows.
+description: La cantidad máxima de memoria física compatible con Microsoft Windows oscila entre 2 GB y 2 TB, dependiendo de la versión de Windows.
 ms.assetid: 5e8fca7a-b85f-4bbd-80c1-e580a815fdce
 title: Espacio de direcciones virtuales y Storage
 ms.topic: article

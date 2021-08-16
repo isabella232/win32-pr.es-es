@@ -40,7 +40,7 @@ keywords:
 - Out, palabra clave HLSL
 - Palabra clave Pass, HLSL
 - PixelShader, palabra clave HLSL
-- Palabra clave de HLSL precisa
+- Precisión, palabra clave HLSL
 - Point, palabra clave HLSL
 - RasterizerState, palabra clave HLSL
 - RenderTargetView, palabra clave HLSL
@@ -53,7 +53,7 @@ keywords:
 - SamplerCUBE, palabra clave HLSL
 - Sampler_State, palabra clave HLSL
 - SamplerComparisonState, palabra clave HLSL
-- Palabra clave HLSL compartida
+- Palabra clave SHARED, HLSL
 - Stateblock, palabra clave HLSL
 - Stateblock_state, palabra clave HLSL
 - Static, palabra clave HLSL
@@ -90,12 +90,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 017647104d7cb7a71b400390a307a633666bc100
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: b6c3e52f03ac283af0dd89a67caeb46d884f47c7587917966cc3a89869fc5e8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726665"
 ---
 # <a name="keywords"></a>Palabras clave
 
@@ -104,7 +104,7 @@ El Lenguaje de sombreador de alto nivel (HLSL) de Microsoft reconoce las palabra
 - [**AppendStructuredBuffer**](sm5-object-appendstructuredbuffer.md), asm, asm \_ fragment
 - BlendState, [bool,](dx-graphics-hlsl-scalar.md) [break](dx-graphics-hlsl-break.md), [**Buffer**](dx-graphics-hlsl-buffer.md), [**ByteAddressBuffer**](sm5-object-byteaddressbuffer.md)
 - case, [cbuffer](dx-graphics-hlsl-constants.md), [centroid](dx-graphics-hlsl-struct.md), [class](overviews-direct3d-11-hlsl-dynamic-linking-class.md), [column \_ major](dx-graphics-hlsl-variable-syntax.md), [compile](dx-graphics-hlsl-shader.md), [**compile \_ fragment**](fragment-declaration-syntax.md), **CompileShader**, const, [continue](dx-graphics-hlsl-continue.md), ComputeShader, [**ConsumeStructuredBuffer**](sm5-object-consumestructuredbuffer.md)
-- default, DepthStencilState, DepthStencilView, [discard](dx-graphics-hlsl-discard.md), [do](dx-graphics-hlsl-do.md), [double](dx-graphics-hlsl-scalar.md), [DomainShader,](dx-graphics-hlsl-shader.md)dword
+- default, DepthStencilState, DepthStencilView, [discard](dx-graphics-hlsl-discard.md), [do](dx-graphics-hlsl-do.md), [double](dx-graphics-hlsl-scalar.md), [DomainShader](dx-graphics-hlsl-shader.md), dword
 - [else](dx-graphics-hlsl-if.md), [export](#export), [extern](dx-graphics-hlsl-variable-syntax.md)
 - false, [float](dx-graphics-hlsl-scalar.md), [para](dx-graphics-hlsl-for.md), fxgroup
 - [GeometryShader](dx-graphics-hlsl-shader.md), [groupshared](dx-graphics-hlsl-variable-syntax.md)
@@ -117,12 +117,12 @@ El Lenguaje de sombreador de alto nivel (HLSL) de Microsoft reconoce las palabra
 - [**packoffset**](dx-graphics-hlsl-variable-packoffset.md), pass, [pixelfragment](fragment-declaration-syntax.md), [PixelShader](dx-graphics-hlsl-shader.md), [point](dx-graphics-hlsl-geometry-shader.md), [PointStream](dx-graphics-hlsl-so-type.md), [precise](dx-graphics-hlsl-variable-syntax.md)
 - RasterizerState, RenderTargetView, [](dx-graphics-hlsl-return.md)return , [register](dx-graphics-hlsl-variable-register.md), row [ \_ major](dx-graphics-hlsl-variable-syntax.md), [**RWBuffer**](sm5-object-rwbuffer.md), [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md), [**RWStructuredBuffer**](sm5-object-rwstructuredbuffer.md), [**RWTexture1D**](sm5-object-rwtexture1d.md), [**RWTexture1DArray**](sm5-object-rwtexture1darray.md), [**RWTexture2D**](sm5-object-rwtexture2d.md), [**RWTexture2DArray**](sm5-object-rwtexture2darray.md), [**RWTexture3D**](sm5-object-rwtexture3d.md)
 - [sample](dx-graphics-hlsl-struct.md), [sampler, SamplerState, SamplerComparisonState](dx-graphics-hlsl-sampler.md), [shared](dx-graphics-hlsl-variable-syntax.md), [snorm](dx-graphics-hlsl-scalar.md), stateblock, stateblock \_ state, static, [string](dx-graphics-hlsl-scalar.md), [struct](dx-graphics-hlsl-struct.md), [switch](dx-graphics-hlsl-switch.md), [**StructuredBuffer**](sm5-object-structuredbuffer.md)
-- [tbuffer](dx-graphics-hlsl-constants.md), technique, [technique10](/windows/desktop/direct3d10/d3d10-effect-technique-syntax), [technique11](/windows/desktop/direct3d10/d3d10-effect-technique-syntax), [texture](dx-graphics-hlsl-texture.md), [Texture1D](sm5-object-texture1d.md), [Texture1DArray](sm5-object-texture1darray.md), [Texture2D](sm5-object-texture2d.md), [Texture2DArray](sm5-object-texture2darray.md), [Texture2DMS](sm5-object-texture2dms.md), [Texture2DMSArray](sm5-object-texture2dmsarray.md), [Texture3D](sm5-object-texture3d.md), [TextureCube](dx-graphics-hlsl-to-type.md), [TextureCubeArray](dx-graphics-hlsl-to-type.md), true, [typedef](dx-graphics-hlsl-user-defined.md), [triangle, triangleadj](dx-graphics-hlsl-geometry-shader.md), [TriangleStream](dx-graphics-hlsl-so-type.md)
-- [uint,](dx-graphics-hlsl-scalar.md) [uniform](dx-graphics-hlsl-function-parameters.md), [unorm](dx-graphics-hlsl-scalar.md), unsigned
+- [tbuffer](dx-graphics-hlsl-constants.md), technique, [technique10](/windows/desktop/direct3d10/d3d10-effect-technique-syntax), [technique11](/windows/desktop/direct3d10/d3d10-effect-technique-syntax), [texture](dx-graphics-hlsl-texture.md), [Texture1D](sm5-object-texture1d.md), [Texture1DArray](sm5-object-texture1darray.md), [Texture2D](sm5-object-texture2d.md) [, Texture2DArray](sm5-object-texture2darray.md), [Texture2DMS](sm5-object-texture2dms.md), [Texture2DMSArray](sm5-object-texture2dmsarray.md), [Texture3D](sm5-object-texture3d.md), [TextureCube](dx-graphics-hlsl-to-type.md), [TextureCubeArray](dx-graphics-hlsl-to-type.md), true, [typedef](dx-graphics-hlsl-user-defined.md), [triangle, triangleadj](dx-graphics-hlsl-geometry-shader.md), [TriangleStream](dx-graphics-hlsl-so-type.md)
+- [uint,](dx-graphics-hlsl-scalar.md) [uniform](dx-graphics-hlsl-function-parameters.md), [unorm,](dx-graphics-hlsl-scalar.md)unsigned
 - [vector](dx-graphics-hlsl-vector.md), [vertexfragment](fragment-declaration-syntax.md), [VertexShader](dx-graphics-hlsl-shader.md), void, [volatile](dx-graphics-hlsl-variable-syntax.md)
 - [while](dx-graphics-hlsl-while.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Estos tipos numéricos tienen expansiones de palabras clave escalares, vectoriales y de matriz:
 

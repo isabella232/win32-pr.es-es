@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de KeywordListType
-description: Define una lista de palabras clave que clasifican eventos. | Tipo complejo de KeywordListType
+title: Tipo complejo KeywordListType
+description: Define una lista de palabras clave que clasifican eventos. | Tipo complejo KeywordListType
 ms.assetid: 7aeb5ca1-b23f-40f5-a77b-894deaf9c6bb
 keywords:
-- KeywordListType tipo complejo EventLog
+- Registro de eventos de tipo complejo KeywordListType
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7132e2e85015aaf9d38adbd6278ea4d3e1296446
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: da027136deed48a97b2ea9384bc37a1a45d00650d90b8fd855ea8226e58583aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118343652"
 ---
-# <a name="keywordlisttype-complex-type"></a>Tipo complejo de KeywordListType
+# <a name="keywordlisttype-complex-type"></a>Tipo complejo KeywordListType
 
 Define una lista de palabras clave que clasifican eventos.
 
@@ -42,7 +42,7 @@ Define una lista de palabras clave que clasifican eventos.
 
 | Elemento                                                                | Tipo                                                               | Descripción                                                                                                  |
 |------------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [**palabra clave**](eventmanifestschema-keyword-keywordlisttype-element.md) | [**KeywordType**](eventmanifestschema-keywordtype-complextype.md) | Define una palabra clave que identifica una categoría de eventos. Puede especificar un máximo de 48 palabras clave.<br/> |
+| [**Palabra clave**](eventmanifestschema-keyword-keywordlisttype-element.md) | [**KeywordType**](eventmanifestschema-keywordtype-complextype.md) | Define una palabra clave que identifica una categoría de eventos. Puede especificar un máximo de 48 palabras clave.<br/> |
 
 
 
@@ -50,10 +50,10 @@ Define una lista de palabras clave que clasifican eventos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

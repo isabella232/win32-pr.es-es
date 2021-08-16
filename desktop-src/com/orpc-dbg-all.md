@@ -167,7 +167,7 @@ El propósito de este miembro cambia para cada una de las notificaciones siguien
 
 [**ClientNotify:**](iorpcdebugnotify-clientnotify.md) **el HRESULT** de la última RPC.
 
-[**ServerGetBufferSize:**](iorpcdebugnotify-servergetbuffersize.md)el número de bytes que el depurador del cliente transmitirá al depurador del servidor. Si es cero, no es necesario transmitir ninguna información.
+[**ServerGetBufferSize:**](iorpcdebugnotify-servergetbuffersize.md)el número de bytes que el depurador de cliente transmitirá al depurador del servidor. Si es cero, no es necesario transmitir ninguna información.
 
 > [!Note]
 >
@@ -180,7 +180,7 @@ El propósito de este miembro cambia para cada una de las notificaciones siguien
 **pvBuffer**
 </dt> <dd>
 
-Puntero a una estructura [**BUFFER \_ de DBG \_ ORPC**](orpc-dbg-buffer.md) que contiene la información de depuración con referencia RPC. Es indefinido si **cbBuffer** es cero.
+Puntero a una estructura [**BUFFER \_ de DBG \_ DE ORPC**](orpc-dbg-buffer.md) que contiene la información de depuración con referencia RPC. Es indefinido si **cbBuffer** es cero.
 
 > [!Note]
 >

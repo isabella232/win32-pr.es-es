@@ -1,6 +1,6 @@
 ---
 title: in_line atributo
-description: La palabra clave IDL de DCE \_ en línea no se admite en RPC de Microsoft.
+description: La palabra clave IDL de DCE en \_ línea no se admite en RPC de Microsoft.
 ms.assetid: 11ef8a9f-e358-4a38-bae2-fcd998f7fb76
 keywords:
 - in_line atributo MIDL

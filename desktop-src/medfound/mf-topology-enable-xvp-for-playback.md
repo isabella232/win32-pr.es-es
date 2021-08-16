@@ -1,57 +1,57 @@
 ---
-description: Especifica si el cargador de topología habilita el procesador de vídeo de transcodificación (XVP). en el caso de las conversiones, habilitar la conversión de color acelerado de hardware.
-title: MF_TOPOLOGY_ENABLE_XVP_FOR_PLAYBACK atributo (Mfidl. h)
+description: Especifica si el cargador de topologías habilita el procesador de vídeo transcodificador (XVP). para conversiones, habilitando la conversión de color acelerada por hardware.
+title: MF_TOPOLOGY_ENABLE_XVP_FOR_PLAYBACK atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 02/22/2021
-ms.openlocfilehash: e36841db57e8343248ef5e369915d4bc357815bb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3f315463ce1719617c5a48066401219f4b971f0a555cadf2af43b055a2b0e9a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105721409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875745"
 ---
-# <a name="mf_topology_enable_xvp_for_playback-attribute"></a>\_Topología MF \_ habilitar \_ XVP para el \_ atributo de \_ reproducción
+# <a name="mf_topology_enable_xvp_for_playback-attribute"></a>ATRIBUTO \_ ENABLE \_ \_ XVP \_ FOR \_ PLAYBACK DE LA TOPOLOGÍA MF
 
-Especifica si el cargador de topología habilita el procesador de vídeo de transcodificación (XVP). en el caso de las conversiones, habilitar la conversión de color acelerado de hardware.
+Especifica si el cargador de topologías habilita el procesador de vídeo transcodificador (XVP). para conversiones, habilitando la conversión de color acelerada por hardware.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bool** almacenado como **UINT32**
+**BOOL almacenado** como **UINT32**
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Se aplica a
 
 [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se establece este atributo, el cargador de topología incorporará el procesador de vídeo, si es necesario, durante la resolución de topología no transcodificada. Cuando se usa la topología para compilar su propio [IMFTopology](/windows/win32/api/mfidl/nn-mfidl-imftopology) , este atributo indica al cargador que use XVP para las conversiones en lugar del convertidor de color heredado, lo que permite la conversión de color acelerado de hardware. el convertidor de colores heredado es solo software.
+Si se establece este atributo, el cargador de topologías extraerá el procesador de vídeo, si es necesario, durante la resolución de la topología sin transcodificación. Cuando se usa la topología para crear su propio [ELEMENTO DETOPOLOGY,](/windows/win32/api/mfidl/nn-mfidl-imftopology) este atributo indica al cargador que use XVP para las conversiones en lugar del convertidor de colores heredado, lo que permite la conversión de color acelerada por hardware. el convertidor de colores heredado es de solo software.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Administrador de dispositivos de Direct3D](direct3d-device-manager.md)
+[Direct3D Administrador de dispositivos](direct3d-device-manager.md)
 </dt> <dt>
 
 [Atributos de topología](topology-attributes.md)
