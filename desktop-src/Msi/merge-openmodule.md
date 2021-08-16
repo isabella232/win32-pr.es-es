@@ -1,5 +1,5 @@
 ---
-description: El método OpenModule del objeto Merge abre un módulo de combinación Windows Installer en modo de solo lectura. Se debe abrir un módulo para poder combinarlo con una base de datos de instalación.
+description: El método OpenModule del objeto Merge abre un módulo de Windows installer en modo de solo lectura. Se debe abrir un módulo para poder combinarlo con una base de datos de instalación.
 ms.assetid: fc976899-2c39-4314-b2fb-417e0dfc53b9
 title: Método Merge.OpenModule (Mergemod.h)
 ms.topic: reference
@@ -59,7 +59,7 @@ Identificador de idioma válido (LANGID).
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función abre el módulo merge en modo de solo lectura y excluye que otros programas escriban en el módulo merge hasta que se llame [**al método CloseModule.**](merge-closemodule.md)
 
@@ -73,7 +73,7 @@ Consulte [**Función OpenModule.**](/windows/win32/api/mergemod/nf-mergemod-imsm
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
 | Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |

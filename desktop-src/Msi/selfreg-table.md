@@ -19,7 +19,7 @@ La tabla SelfReg tiene las columnas siguientes.
 
 
 
-| Columna | Tipo                         | Key | Nullable |
+| Columna | Tipo                         | Clave | Nullable |
 |--------|------------------------------|-----|----------|
 | Archivo\_ | [Identificador](identifier.md) | Y   | N        |
 | Coste   | [Entero](integer.md)       | N   | Y        |
@@ -46,20 +46,20 @@ Costo de registrar el módulo en bytes. Debe ser un número no negativo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se recomienda encarecidamente a los autores de paquetes de instalación que no utilicen el registro propio. En su lugar, deben registrar módulos mediante la creación de una o varias tablas proporcionadas por el instalador para este propósito. Para obtener más información, vea [Grupo de tablas del Registro](registry-tables-group.md). Muchas de las ventajas de tener un servicio de instalador central se pierden con el registro automático porque las rutinas de registro automático tienden a ocultar información de configuración crítica. Entre los motivos para evitar el registro propio se incluyen:
 
--   La reversión de una instalación con módulos autoregistrados no se puede realizar de forma segura mediante [**DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) porque no hay ninguna manera de saber si otra característica o aplicación usa las claves autoregistradas.
--   La capacidad de usar anuncios se reduce si el registro del servidor de extensión o clase se realiza dentro de rutinas de registro propio.
--   El instalador controla automáticamente las claves HKCR en las tablas del Registro para las instalaciones por usuario o por máquina. Actualmente, las rutinas [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) no admiten la noción de clave HKCR por usuario.
--   Si varios usuarios usan una aplicación auto registrada en el mismo equipo, cada usuario debe instalar la aplicación la primera vez que la ejecute. De lo contrario, el instalador no puede determinar fácilmente que existen las claves del Registro HKCU adecuadas.
--   Se puede denegar el acceso a [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) a recursos de red como bibliotecas de tipos si un componente se especifica como run-from-source y se muestra en la tabla SelfReg. Esto puede hacer que la instalación del componente no se pueda realizar durante una instalación administrativa.
--   Los archivos DLL de registro propio son más susceptibles a errores de codificación porque el nuevo código necesario para [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) es normalmente diferente para cada archivo DLL. En su lugar, use las tablas del Registro de la base de datos para aprovechar el código existente proporcionado por el instalador.
--   A veces, los archivos DLL de registro propio pueden vincularse a archivos DLL auxiliares que no están presentes o que son una versión incorrecta. Por el contrario, el instalador puede registrar los archivos DLL mediante las tablas del Registro sin dependencia del estado actual del sistema.
+-   La reversión de una instalación con módulos registrados automáticamente no se puede realizar de forma segura mediante [**DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) porque no hay ninguna manera de saber si otra característica o aplicación usa las claves autoregistadas.
+-   La capacidad de usar anuncios se reduce si el registro del servidor de clases o extensiones se realiza dentro de rutinas de registro propio.
+-   El instalador controla automáticamente las claves HKCR en las tablas del Registro para instalaciones por usuario o por máquina. Actualmente, las rutinas [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) no admiten la noción de una clave HKCR por usuario.
+-   Si varios usuarios usan una aplicación registrada automáticamente en el mismo equipo, cada usuario debe instalar la aplicación la primera vez que la ejecute. De lo contrario, el instalador no puede determinar fácilmente que existen las claves del Registro HKCU adecuadas.
+-   Se puede denegar el acceso a [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) a recursos de red, como bibliotecas de tipos, si un componente se especifica como run-from-source y aparece en la tabla SelfReg. Esto puede hacer que la instalación del componente no se pueda realizar durante una instalación administrativa.
+-   Los archivos DLL de registro propio son más susceptibles a los errores de codificación porque el nuevo código necesario para [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) es normalmente diferente para cada archivo DLL. En su lugar, use las tablas del Registro de la base de datos para aprovechar el código existente proporcionado por el instalador.
+-   A veces, los archivos DLL de registro propio pueden vincularse a archivos DLL auxiliares que no están presentes o tienen una versión incorrecta. Por el contrario, el instalador puede registrar los archivos DLL mediante las tablas del Registro sin dependencia del estado actual del sistema.
 
 > [!Note]  
-> No se puede especificar el orden en el que el instalador registra o anula el registro de los archivos DLL autoregistros mediante las acciones [SelfRegModules](selfregmodules-action.md) y [SelfUnRegModules.](selfunregmodules-action.md) Vea [Especificar el orden de registro propio.](specifying-the-order-of-self-registration.md)
+> No se puede especificar el orden en el que el instalador registra o anula el registro de los archivos DLL de registro automático mediante las acciones [SelfRegModules](selfregmodules-action.md) y [SelfUnRegModules.](selfunregmodules-action.md) Vea [Especificar el orden de registro propio.](specifying-the-order-of-self-registration.md)
 
  
 

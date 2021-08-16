@@ -17,7 +17,7 @@ Windows El instalador puede optimizar la aplicación de revisiones para reducir 
 
 **Windows Installer 2.0:** No se admite. Para las versiones de Windows Installer publicadas antes de Windows Installer 3.0, la aplicación de revisiones ejecuta una instalación de reparación completa de la aplicación, lo que puede tardar mucho más tiempo.
 
-**Windows Installer 3.0 y versiones posteriores:** El proceso de aplicación de revisiones solo cambia las partes de una aplicación que se modifican mediante una revisión.
+**Windows Installer 3.0 y versiones posteriores:** El proceso de aplicación de revisiones solo cambia las partes de una aplicación modificadas por una revisión.
 
 **Windows Installer 3.1 y versiones posteriores:** A partir de Windows Installer 3.1, la optimización de revisiones requiere que todas las revisiones de la transacción tengan la propiedad OptimizedInstallMode establecida en 1 (uno) en la tabla [MsiPatchMetadata](msipatchmetadata-table.md).
 

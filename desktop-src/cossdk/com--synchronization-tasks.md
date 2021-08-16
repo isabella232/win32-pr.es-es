@@ -19,7 +19,7 @@ En los temas siguientes de esta sección se proporcionan instrucciones paso a pa
 
 | Tema                                                                                         | Descripción                                                                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Establecimiento del atributo de sincronización](setting-the-synchronization-attribute.md)<br/> | Instrucciones paso a paso para establecer el atributo de sincronización de COM+.<br/> |
+| [Establecimiento del atributo de sincronización](setting-the-synchronization-attribute.md)<br/> | Instrucciones paso a paso para establecer el atributo de sincronización com+.<br/> |
 
 
 

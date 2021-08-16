@@ -1,9 +1,9 @@
 ---
-title: 'RWByteAddressBuffer:: Load3 (uint, uint) (función)'
+title: Función RWByteAddressBuffer::Load3(uint,uint)
 description: Obtiene tres valores y devuelve el estado de la operación.
 ms.assetid: EBCCDAF3-69B9-4132-85EC-82759F292811
 keywords:
-- Load3 de función HLSL
+- Función Load3 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8451abe17c3ff74a1906828b3570dc6ee98782f1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 91d4a90094d93705e17c9087583974ef8f9d76e1878cb0c5aa8dab21dc82e073
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118791227"
 ---
-# <a name="load3uintuint-function"></a>Load3 (uint, uint) (función)
+# <a name="load3uintuint-function"></a>Función Load3(uint,uint)
 
 Obtiene tres valores y devuelve el estado de la operación.
 
@@ -29,8 +29,8 @@ Obtiene tres valores y devuelve el estado de la operación.
 
 ``` syntax
 uint3 Load3(
-  in  uint Location,
-  out uint Status
+  in  uint Location,
+  out uint Status
 );
 ```
 
@@ -40,7 +40,7 @@ uint3 Load3(
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -49,34 +49,34 @@ Ubicación del búfer.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt3**
+Tipo: **uint3**
 
 Tres valores.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -85,6 +85,6 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Métodos Load3](rwbyteaddressbuffer-load3.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

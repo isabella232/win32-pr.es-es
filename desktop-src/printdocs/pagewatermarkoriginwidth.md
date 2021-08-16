@@ -4,16 +4,16 @@ ms.assetid: e1bea06b-11b9-4652-915a-deb563ad59f8
 title: PageWatermarkOriginWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bffe6457496972231877af2a51e03bc5109083d0
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 57533d7d7322eedf586c86bfbfd28a82b9cc143aedd7c6318c6c1f6ecb36451f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731915"
 ---
 # <a name="pagewatermarkoriginwidth"></a>PageWatermarkOriginWidth
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el origen de una marca de agua relativa al origen de PageImageableSize.
 
@@ -24,7 +24,7 @@ Especifica el origen de una marca de agua relativa al origen de PageImageableSiz
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefijo de ámbito <br/> | Página<br/>                            |
@@ -71,13 +71,13 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                                                                  |
+| Propiedad                | xsi:type           | Value                                                                  |
 |-------------------------|--------------------|------------------------------------------------------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>                                                  |
 | DefaultValue<br/> | integer<br/> | no definido<br/>                                                   |
 | MaxValue<br/>     | integer<br/> | Valor de PageImageableSize: ExtentWidth menor o igual que<br/> |
 | MinValue<br/>     | integer<br/> | 0<br/>                                                           |
-| Múltiple<br/>     | integer<br/> | 1<br/>                                                           |
+| Varios<br/>     | integer<br/> | 1<br/>                                                           |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/>                                             |
 | UnitType<br/>     | string<br/>  | Micras<br/>                                                     |
 

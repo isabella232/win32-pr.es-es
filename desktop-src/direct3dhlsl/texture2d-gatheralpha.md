@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Texture2D:: Texture2D GatherAlpha'
-description: Muestrea un Texture2D y devuelve el componente alfa.
+title: Métodos Texture2D::Texture2D GatherAlpha
+description: Muestrea un objeto Texture2D y devuelve el componente alfa.
 ms.assetid: b67727e4-a876-4ec8-b991-99ee710e4304
 keywords:
-- GatherAlpha métodos HLSL
+- Métodos de GatherAlpha HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 5124246b573cd8e8a1e381b68622cbe4d2c8f528
-ms.sourcegitcommit: 5724b38883e518ac565e1b266defa85ad0941bb2
+ms.openlocfilehash: 5814a192e9d6572c438382fe6f3bf9ada9c3af8b5c2404caf2216336c0cf4f0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "104986163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118787537"
 ---
-# <a name="texture2dgatheralpha-methods"></a>Texture2D:: GatherAlpha (métodos)
+# <a name="texture2dgatheralpha-methods"></a>Métodos Texture2D::GatherAlpha
 
-Muestrea un [**Texture2D**](sm5-object-texture2d.md) y devuelve el componente alfa.
+Muestrea [**un objeto Texture2D**](sm5-object-texture2d.md) y devuelve el componente alfa.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,10 +29,10 @@ Muestrea un [**Texture2D**](sm5-object-texture2d.md) y devuelve el componente al
 
 | Método                                                                                                     | Descripción                                                                                                                                       |
 |:-----------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherAlpha (S, Float, int)**](sm5-object-texture2d-gatheralpha.md)                                        | Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.<br/>                                 |
-| [**GatherAlpha (S, Float, int, uint)**](t2d-gatheralpha-s-float-int-uint-.md)                                  | Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
-| [**GatherAlpha (S, Float, INT2, INT2, INT2, INT2)**](t2d-gatheralpha-s-float-int2-int2-int2-int2-.md)            | Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.<br/>                                 |
-| [**GatherAlpha (S, Float, INT2, INT2, INT2, INT2, uint)**](t2d-gatheralpha-s-float-int2-int2-int2-int2-uint-.md)  | Devuelve los componentes alfa de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherAlpha(S,float,int)**](sm5-object-texture2d-gatheralpha.md)                                        | Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
+| [**GatherAlpha(S,float,int,uint)**](t2d-gatheralpha-s-float-int-uint-.md)                                  | Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherAlpha(S,float,int2,int2,int2,int2,int2)**](t2d-gatheralpha-s-float-int2-int2-int2-int2-.md)            | Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
+| [**GatherAlpha(S,float,int2,int2,int2,int2,uint)**](t2d-gatheralpha-s-float-int2-int2-int2-int2-uint-.md)  | Devuelve los componentes alfa de los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos.<br/> |
 
 
 

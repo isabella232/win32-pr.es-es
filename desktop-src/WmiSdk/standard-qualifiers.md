@@ -22,7 +22,7 @@ ms.locfileid: "118315141"
 ---
 # <a name="standard-qualifiers"></a>Calificadores estándar
 
-Todas las implementaciones compatibles con CIM deben controlar un conjunto estándar de calificadores. Cualquier objeto específico no tiene todos los calificadores enumerados. Normalmente, las clases de extensión ofrecen calificadores adicionales para facilitar el aprovisionamiento de instancias de clase y otras operaciones en la clase.
+Todas las implementaciones compatibles con CIM deben controlar un conjunto estándar de calificadores. Cualquier objeto específico no tiene todos los calificadores enumerados. Normalmente, las clases de extensión suministran calificadores adicionales para facilitar el aprovisionamiento de instancias de clase y otras operaciones en la clase.
 
 Es responsabilidad del proveedor aplicar los calificadores. WMI no aplica calificadores, pero solo los usa para informar al usuario sobre cómo se usa la propiedad .
 
@@ -34,9 +34,9 @@ Es responsabilidad del proveedor aplicar los calificadores. WMI no aplica califi
 Los calificadores tienen las siguientes limitaciones:
 
 -   No todos los calificadores estándar se pueden usar juntos.
--   No todos los calificadores se pueden aplicar a todas las construcciones, como la asociación o la referencia. Estas limitaciones se identifican en la lista Se aplica a.
--   Para una construcción determinada, como la asociación o referencia, el uso de los calificadores legales se puede restringir aún más porque algunos calificadores son mutuamente excluyentes, el uso de un calificador puede implicar algunas restricciones en el valor de otro, y así sucesivamente. Estas reglas de uso están documentadas.
--   Las entidades como propiedades, métodos, instancias o subclases solo heredan los calificadores legales, no las asociaciones o referencias. Por ejemplo, las referencias no heredan el calificador **MaxLen** que se aplica a las propiedades.
+-   No todos los calificadores se pueden aplicar a todas las construcciones, como la asociación o la referencia. Estas limitaciones se identifican en la lista Se aplica a .
+-   Para una construcción determinada, como asociación o referencia, el uso de los calificadores legales se puede restringir aún más porque algunos calificadores son mutuamente excluyentes, el uso de un calificador puede implicar algunas restricciones en el valor de otro, y así sucesivamente. Estas reglas de uso están documentadas.
+-   Las entidades como propiedades, métodos, instancias o subclases solo heredan calificadores legales, no asociaciones o referencias. Por ejemplo, las referencias no heredan el calificador **MaxLen** que se aplica a las propiedades.
 
 A continuación se enumeran los calificadores estándar de WMI.
 
@@ -62,7 +62,7 @@ Se aplica a: referencias
 
 Indica si la referencia es el componente primario de una asociación de agregación. El valor predeterminado es **FALSE.**
 
-Uso: los  **calificadores Agregación** y Agregado se usan juntos **Agregación** califica la asociación y **Agregado** especifica la referencia primaria.
+Uso: los **calificadores Aggregation** y **Aggregate** se usan juntos   **Agregación** califica la asociación y **Aggregate** especifica la referencia primaria.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: asociaciones
 
-Indica si la asociación es una agregación. El valor predeterminado es **FALSE.** Se usa con **agregado**. Este calificador es necesario para todas las asociaciones de agregación.
+Indica si la asociación es una agregación. El valor predeterminado es **FALSE.** Se usa con **Aggregate**. Este calificador es necesario para todas las asociaciones de agregación.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo de datos: **cadena**
 
 Se aplica a: propiedades, referencias, métodos
 
-Nombre alternativo para una propiedad o método en el esquema. El valor predeterminado es **NULL.**
+Nombre alternativo de una propiedad o método en el esquema. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
@@ -140,9 +140,9 @@ Tipo de datos: **booleano**
 
 Se aplica a: métodos
 
-Indica si el método crea instancias. Estos métodos no están restringidos a actuar en una sola instancia o en una sola clase. Por ejemplo, un constructor puede crear instancias de asociación, así como instancias de la clase que define el constructor.
+Indica si el método crea instancias de . Estos métodos no están restringidos a actuar en una sola instancia o una sola clase. Por ejemplo, un constructor puede crear instancias de asociación, así como instancias de la clase que define el constructor.
 
-El **calificador** Constructor solo está pensado para obtener información y no se espera que el administrador de objetos actúe sobre él. El administrador de objetos no tiene que llamar a métodos de constructor cuando se crea un objeto. Además, cuando se llama a un constructor, el administrador de objetos no tiene que invocar ningún método de constructor definido para ninguna clase primaria de la clase original. El valor predeterminado es **FALSE.**
+El **calificador** Constructor solo está pensado para obtener información y no se espera que el administrador de objetos actúe sobre él. El administrador de objetos no tiene que llamar a métodos de constructor cuando se crea un objeto . Además, cuando se llama a un constructor, el administrador de objetos no tiene que invocar ningún método de constructor definido para ninguna clase primaria de la clase original. El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
@@ -153,9 +153,9 @@ Tipo de datos: **cadena**
 
 Se aplica a: clases
 
-Nombre del método por el que se crean las instancias de esta clase. El valor es "PutInstance" o el nombre de otro método que crea las instancias. El valor predeterminado es **NULL.**
+Nombre del método por el que se crean instancias de esta clase. El valor es "PutInstance" o el nombre de otro método que crea las instancias. El valor predeterminado es **NULL.**
 
-Uso: este calificador solo se puede usar si el **calificador SupportsCreate** está presente.
+Uso: este calificador solo se puede usar si el calificador **SupportsCreate** está presente.
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Uso: este calificador solo se puede usar si el calificador **SupportsDelete** es
 
 Tipo de datos: **cadena**
 
-Se aplica a: cualquier
+Se aplica a: any
 
 Descripción de un elemento con nombre. El valor predeterminado es **NULL.**
 
@@ -339,7 +339,7 @@ Tipo de datos: **int**
 
 Se aplica a: propiedades, métodos, parámetros
 
-Indica el valor mínimo del objeto . El valor predeterminado es **NULL.**
+Indica el valor mínimo del objeto. El valor predeterminado es **NULL.**
 
 </dd> <dt>
 
@@ -380,7 +380,7 @@ Se aplica a: referencias
 
 Tipo de ubicación de una instancia. Su valor es <namespacetype> . El valor predeterminado es **NULL.**
 
-Uso: este calificador no se puede usar con el **calificador Nonlocal.**
+Uso: este calificador no se puede usar con el **calificador no** local.
 
 </dd> <dt>
 
@@ -397,7 +397,7 @@ Las convenciones y restricciones usadas para definir **valores NULL** son las mi
 
 </dd> <dt>
 
-<span id="Out"></span><span id="out"></span><span id="OUT"></span>**Out (Salida)**
+<span id="Out"></span><span id="out"></span><span id="OUT"></span>**Salida**
 </dt> <dd>
 
 Tipo de datos: **booleano**
@@ -445,11 +445,11 @@ Se aplica a: propiedades
 
 Nombre de la clave que se propaga. El valor predeterminado es **NULL.**
 
-El uso de este calificador supone la existencia de solo un calificador débil en una referencia que tiene la clase que lo contiene como destino. La propiedad asociada debe tener el mismo valor que la propiedad denominada por el calificador en la clase del otro lado de la asociación débil. El formato es:
+El uso de este calificador supone la existencia de solo un calificador débil en una referencia que tiene la clase que contiene como destino. La propiedad asociada debe tener el mismo valor que la propiedad denominada por el calificador en la clase del otro lado de la asociación débil. El formato es:
 
 \[<*Clase>.* \] < *construcción subordinada*>
 
-Uso: cuando se **usa el calificador Propagated,** el [**calificador Key**](key-qualifier.md) debe especificarse con un valor de **TRUE.**
+Uso: cuando se **usa el calificador Propagated,** el [**calificador key**](key-qualifier.md) debe especificarse con un valor de **TRUE.**
 
 </dd> <dt>
 
@@ -482,9 +482,9 @@ Tipo de datos: **cadena**
 
 Se aplica a: clases, asociaciones, indicaciones, esquemas
 
-Número de revisión secundaria del objeto de esquema. El valor predeterminado es **NULL.**
+Número de revisión menor del objeto de esquema. El valor predeterminado es **NULL.**
 
-Uso: el **calificador Version** debe estar presente para proporcionar el número de versión principal cuando se usa **el** calificador revision.
+Uso: el **calificador** de versión debe estar presente para proporcionar el número de versión principal cuando se usa **el** calificador de revisión.
 
 </dd> <dt>
 
@@ -534,7 +534,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: clases
 
-Indica si la clase admite la creación de instancias de . El valor predeterminado es **FALSE.**
+Indica si la clase admite la creación de instancias. El valor predeterminado es **FALSE.**
 
 </dd> <dt>
 
@@ -571,7 +571,7 @@ Indica si la clase puede tener subclases. El valor predeterminado es **FALSE.**
 
 Si se declara una subclase, el compilador genera un error.
 
-Uso: este calificador no puede coexistir con el **calificador Abstract.** Si se especifican **los calificadores Terminal** y **Abstract,** el compilador genera un error.
+Uso: este calificador no puede coexistir con el **calificador abstracto.** Si se especifican **los calificadores Terminal** y **Abstract,** el compilador genera un error.
 
 </dd> <dt>
 
@@ -597,7 +597,7 @@ Se aplica a: propiedades, métodos, parámetros
 
 Conjunto de valores permitidos para una propiedad, tipo de valor devuelto de método o parámetro de método. El valor predeterminado es **NULL.**
 
-Uso: este calificador se puede usar solo o en combinación con el **calificador Values.** Cuando se usa en combinación con el calificador **Values,** la ubicación del valor en la matriz **ValueMap** proporciona la ubicación de la entrada correspondiente en la **matriz Values.** Use el **calificador ValueMap** solo con valores de cadena y enteros. La sintaxis para representar un valor entero en la matriz de asignación de valores es \[ + \| = \] el \[ \* dígito \] . El contenido, el número máximo de dígitos y el valor representado están restringidos por el tipo de la propiedad asociada. Por ejemplo, uint8 puede no estar firmado, debe tener menos de cuatro dígitos y debe representar un valor menor que 256.
+Uso: este calificador se puede usar solo o en combinación con el **calificador Valores.** Cuando se usa en combinación con el calificador **Values,** la ubicación del valor en la matriz **ValueMap** proporciona la ubicación de la entrada correspondiente en la **matriz Values.** Use el **calificador ValueMap** solo con valores de cadena y enteros. La sintaxis para representar un valor entero en la matriz de asignación de valores es \[ + \| = \] el \[ \* dígito \] . El contenido, el número máximo de dígitos y el valor representado están restringidos por el tipo de la propiedad asociada. Por ejemplo, uint8 puede no estar firmado, debe tener menos de cuatro dígitos y debe representar un valor menor que 256.
 
 </dd> <dt>
 
@@ -649,7 +649,7 @@ Se aplica a: propiedades
 
 Indica que las aplicaciones o scripts pueden cambiar el valor de propiedad. La cuenta que ejecuta la aplicación debe tener acceso al espacio de nombres que contiene instancias de la clase . La implementación del proveedor también puede limitar el acceso a los datos del proveedor. Un valor **TRUE indica** que los consumidores a los que WMI y el proveedor permiten el acceso a la propiedad son legibles y fáciles de escribir. El valor predeterminado es **FALSE.**
 
-Es posible que una propiedad que no tenga **el calificador Write** todavía se pueda escribir. La implementación del proveedor puede permitir que se cambien las propiedades de las clases de proveedor, independientemente de si el **calificador Write** está presente.
+Es posible que una propiedad que no tenga **el calificador Write** todavía pueda escribirse. La implementación del proveedor puede permitir que se cambien las propiedades de las clases de proveedor, independientemente de si el **calificador Write** está presente.
 
 </dd> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: El método Clone del objeto SWbemLastError devuelve un nuevo objeto que es \_ un clon del objeto SWbemLastError actual.
+description: El método Clone del objeto SWbemLastError devuelve un nuevo objeto que es un clon del objeto \_ SWbemLastError actual.
 ms.assetid: 577be060-309f-40a2-a4db-c0a477c21f11
 ms.tgt_platform: multiple
 title: SWbemLastError.Clone_ método (Wbemdisp.h)
@@ -76,9 +76,9 @@ No hay suficiente memoria para completar la operación.
 
 ## <a name="remarks"></a>Comentarios
 
-Use el **método Clone \_** para duplicar una definición o instancia de clase. Este método es útil cuando necesita hacer una copia de seguridad de la copia original del objeto mientras modifica una nueva copia. Además, use este método para crear muchas instancias nuevas a partir de una única instancia de origen. Por ejemplo, use [**SWbemObject.SpawnInstance \_**](swbemobject-spawninstance-.md) para crear una instancia inicial única y **use SWbemLastError.Clone \_** para generar 100 copias de la instancia rápidamente. Posteriormente, puede modificar los objetos y dar valores específicos a cada objeto.
+Use el **método Clone \_** para duplicar una definición o instancia de clase. Este método es útil cuando necesita realizar una copia de seguridad de la copia original del objeto mientras modifica una nueva copia. Además, use este método para crear muchas instancias nuevas a partir de una única instancia de origen. Por ejemplo, use [**SWbemObject.SpawnInstance \_**](swbemobject-spawninstance-.md) para crear una instancia inicial única y **use SWbemLastError.Clone \_** para generar 100 copias de la instancia rápidamente. Posteriormente, puede modificar los objetos, dando valores específicos a cada objeto.
 
-No es posible usar este método para convertir una definición de clase en una instancia o convertir una instancia en una definición de clase.
+No es posible usar este método para convertir una definición de clase en una instancia o para convertir una instancia en una definición de clase.
 
 ## <a name="requirements"></a>Requisitos
 

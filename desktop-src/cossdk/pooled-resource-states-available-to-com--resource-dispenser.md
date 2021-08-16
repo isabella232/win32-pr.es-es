@@ -15,13 +15,13 @@ ms.locfileid: "118305624"
 
 En cualquier momento, un recurso está en uso o no en uso y se ha inscrito o no en una transacción. Esto produce cuatro posibles estados de recursos, como se indica a continuación:
 
--   **Recursos del inventario no publicado.** Un recurso que no está en uso por un objeto y que no está inscrito en una transacción está en un inventario no inscrito. Hay un recurso en el inventario general disponible para la asignación.
+-   **Recursos del inventario no publicado.** Un recurso que no está en uso por un objeto y no está inscrito en una transacción está en un inventario no inscrito. Hay un recurso en el inventario general disponible para la asignación.
 
 -   **Recursos del inventario inscrito.** Un recurso que no está en uso por un objeto pero que está inscrito en una transacción está en el inventario inscrito. Este recurso solo está disponible para su asignación a objetos que se ejecutan en la misma transacción. Un recurso pasa del inventario inscrito al inventario no inscrito cuando COM+ notifica al administrador del dispensador que la transacción se ha completado.
 
 -   **Recursos en uso no publicado.** Si un recurso se asigna a un objeto y la instancia no se ejecuta en una transacción o el dispensador de recursos ha identificado el recurso como no transaccional, este recurso está en uso no publicado.
 
--   **Recursos en uso inscrito.** Si se asigna un recurso a un objeto, la instancia se ejecuta en una transacción y el dispensador de recursos ha dado de alta correctamente el recurso en la transacción, este recurso se encuentra en uso dado de alta.
+-   **Recursos en uso inscrito.** Si un recurso se asigna a un objeto, la instancia se ejecuta en una transacción y el dispensador de recursos ha dado de alta correctamente el recurso en la transacción, este recurso se encuentra en uso dado de alta.
 
 ## <a name="related-topics"></a>Temas relacionados
 

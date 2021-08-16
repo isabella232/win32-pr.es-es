@@ -1,11 +1,11 @@
 ---
-title: DownloadCollection. Item (método)
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método Item recupera un objeto de descarga pendiente.
+title: DownloadCollection.item (método)
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método item recupera un objeto de descarga pendiente.
 ms.assetid: a79db9db-e80c-48db-aee6-9bd8f77a7dff
 keywords:
-- método de elemento Media Player de Windows
-- método de elemento Windows Media Player, clase DownloadCollection
-- Clase DownloadCollection Windows Media Player, método Item
+- item method Reproductor de Windows Media
+- item method Reproductor de Windows Media , DownloadCollection (clase)
+- DownloadCollection class Reproductor de Windows Media , item method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d57db60a776c71d9ff16eceb1584c79a125bbf46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a82a903236038c2f0372786137eec48ad5c5f502d7fd614eb8944f3f4684aea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997045"
 ---
-# <a name="downloadcollectionitem-method"></a>DownloadCollection. Item (método)
+# <a name="downloadcollectionitem-method"></a>DownloadCollection.item (método)
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **Item** recupera un objeto de descarga pendiente.
+El **método item** recupera un objeto de descarga pendiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,40 +47,40 @@ retVal = DownloadCollection.item(
 
 <dl> <dt>
 
-*Itemid* \[ de\]
+*itemId* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que especifica el índice del **DownloadItem** que se va a recuperar.
+**Number** (**long**) que especifica el índice del **elemento DownloadItem** que se recuperará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un objeto **DownloadItem** .
+Este método devuelve un **objeto DownloadItem.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de *itemID* está basado en cero.
+El *valor itemID* es de base cero.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/>                                  |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto DownloadCollection**](downloadcollection-object.md)
+[**DownloadCollection (objeto)**](downloadcollection-object.md)
 </dt> <dt>
 
-[**Objeto DownloadItem**](downloaditem-object.md)
+[**DownloadItem (objeto)**](downloaditem-object.md)
 </dt> </dl>
 
  

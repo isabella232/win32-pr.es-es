@@ -1,7 +1,7 @@
 ---
 description: Abre un identificador para una clave privada.
 ms.assetid: 2406be2c-121c-4475-b193-d370a88641da
-title: Función SslOpenPrivateKey (Sslprovider. h)
+title: Función SslOpenPrivateKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 6fd5c10ce6385e377c72d21f4557d27d2345737d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bab1451ada84576ee33623dfdaa7d8dcad189e6d4ef8050b0b79fafaba11b49c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905654"
 ---
-# <a name="sslopenprivatekey-function"></a>SslOpenPrivateKey función)
+# <a name="sslopenprivatekey-function"></a>Función SslOpenPrivateKey
 
-La función **SslOpenPrivateKey** abre un identificador para una [*clave privada*](/windows/desktop/SecGloss/p-gly).
+La **función SslOpenPrivateKey** abre un identificador para una [*clave privada.*](/windows/desktop/SecGloss/p-gly)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ SECURITY_STATUS WINAPI SslOpenPrivateKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor de protocolo del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros protocolo*](/windows/desktop/SecGloss/s-gly) de seguridad (SSL).
 
 </dd> <dt>
 
-*phPrivateKey* \[ enuncia\]
+*phPrivateKey* \[ out\]
 </dt> <dd>
 
-Dirección de un búfer en el que se va a escribir el identificador de la clave privada.
+Dirección de un búfer en el que se va a escribir el identificador en la clave privada.
 
-Cuando haya terminado de usar la clave, debe liberar *phPrivateKey* llamando a la función [**SslFreeObject**](sslfreeobject.md) .
+Cuando haya terminado de usar la clave, debe liberar *phPrivateKey* llamando a la [**función SslFreeObject.**](sslfreeobject.md)
 
 </dd> <dt>
 
-*pCertContext* \[ de\]
+*pCertContext* \[ En\]
 </dt> <dd>
 
 Dirección del certificado del que se va a obtener la clave privada.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -74,19 +74,19 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                       | Descripción                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**NTE \_ NO hay \_ memoria**</dt> <dt>0x8009000EL</dt> </dl>         | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl>    | El identificador de *hSslProvider* no es válido.<br/>                       |
-| <dl> <dt>**NTE \_ \_Parámetro no válido**</dt> <dt>0x80090027L</dt> </dl> | El parámetro *phPrivateKey* o *pCertContext* es **null**.<br/>   |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | El *identificador hSslProvider* no es válido.<br/>                       |
+| <dl> <dt>**NTE \_ PARÁMETRO \_ NO VÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | El *parámetro phPrivateKey* *o pCertContext* es **NULL.**<br/>   |
 
 
 
@@ -94,7 +94,7 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 ## <a name="remarks"></a>Observaciones
 
-La clave privada obtenida forma parte de un [*par de claves pública y privada*](/windows/desktop/SecGloss/p-gly) dentro de un [*certificado*](/windows/desktop/SecGloss/c-gly). Esta función simplemente extrae la clave privada del certificado especificado por el parámetro *pCertContext* .
+La clave privada obtenida forma parte de un [*par de claves*](/windows/desktop/SecGloss/p-gly) pública y privada dentro de un [*certificado*](/windows/desktop/SecGloss/c-gly). Esta función simplemente extrae la clave privada del certificado especificado por el *parámetro pCertContext.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,9 +102,9 @@ La clave privada obtenida forma parte de un [*par de claves pública y privada*]
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

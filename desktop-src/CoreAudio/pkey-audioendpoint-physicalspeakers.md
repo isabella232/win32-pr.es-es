@@ -13,10 +13,10 @@ ms.locfileid: "118406421"
 ---
 # <a name="pkey_audioendpoint_physicalspeakers"></a>PKEY \_ AudioEndpoint \_ PhysicalSpeakers
 
-La **propiedad PKEY \_ AudioEndpoint \_ PhysicalSpeakers** especifica la máscara de configuración de canal para el dispositivo de punto de conexión de audio. La máscara indica la configuración física de un conjunto de hablantes y especifica la asignación de canales a los hablantes. Para obtener más información sobre las máscaras de configuración de canal, vea lo siguiente:
+La **propiedad PKEY \_ AudioEndpoint \_ PhysicalSpeakers** especifica la máscara de configuración de canal para el dispositivo de punto de conexión de audio. La máscara indica la configuración física de un conjunto de oradores y especifica la asignación de canales a los hablantes. Para obtener más información sobre las máscaras de configuración de canal, vea lo siguiente:
 
-1.  La descripción de la propiedad KSPROPERTY \_ AUDIO CHANNEL CONFIG en la documentación Windows \_ \_ DDK.
-2.  Las white paper tituladas "Audio Driver Support for Home Speaker Configurations" (Compatibilidad del controlador de audio para configuraciones de altavoz de home speaker) en audio [device technologies for Windows](https://www.microsoft.com/whdc/device/audio/default.mspx) website (Tecnologías de dispositivos de audio para Windows sitio web).
+1.  Descripción de la propiedad KSPROPERTY \_ AUDIO CHANNEL CONFIG en la documentación Windows \_ \_ DDK.
+2.  Las white paper tituladas "Audio Driver Support for Home Speaker Configurations" (Compatibilidad del controlador de audio para configuraciones de altavoz de home Speaker) en el sitio web de [Audio Device Technologies for Windows.](https://www.microsoft.com/whdc/device/audio/default.mspx)
 
 El **miembro vt** de la estructura **PROPVARIANT** se establece en VT \_ UI4.
 

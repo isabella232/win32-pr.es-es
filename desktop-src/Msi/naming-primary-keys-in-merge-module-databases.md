@@ -19,15 +19,15 @@ Los nombres de las claves principales de una base de datos de módulos de combin
 -   [Tabla de extensiones](extension-table.md)
 -   [Tabla de iconos](icon-table.md)
 -   [Tabla de verbos](verb-table.md)
--   [Tabla ProgId](progid-table.md)
+-   [ProgId (tabla)](progid-table.md)
 
 Por ejemplo, no use para la clave principal de la tabla MIME porque este es el tipo MIME y aplicar el procedimiento de nomenclatura cambiaría su significado. En estos casos, los conflictos de nombres dependen del significado de que los datos sean únicos entre módulos.
 
 El nombre de una clave principal en un módulo de combinación debe constar de un nombre legible anexado a una cadena realizada a partir del GUID del módulo de mezcla. Cada módulo de combinación debe tener su [*propio GUID.*](g-gly.md) El GUID del módulo de mezcla también debe crearse en la propiedad [**Resumen**](revision-number-summary.md) del número de revisión del módulo de combinación. Los desarrolladores pueden crear GUID mediante una utilidad como GUIDGEN.
 
-En el procedimiento siguiente se describe cómo generar una clave de base de datos principal que cumpla la convención de nomenclatura estándar. Aplique el siguiente procedimiento solo a las tablas en las que la clave principal no es datos que se están instalando.
+En el procedimiento siguiente se describe cómo generar una clave de base de datos principal que cumpla la convención de nomenclatura estándar. Aplique el procedimiento siguiente solo a las tablas en las que la clave principal no es datos que se están instalando.
 
-**Para nombrar una clave principal de un registro de tabla en un módulo de combinación**
+**Para dar nombre a una clave principal de un registro de tabla en un módulo de combinación**
 
 1.  Cree la parte legible del nombre de la clave principal. Elija un nombre legible que identifique este registro, por ejemplo, MyRowEntry.
 2.  Genere u obtenga el GUID del módulo de combinación. Tenga en cuenta que todos los GUID deben crearse en mayúsculas. Para obtener más información sobre los GUID, vea [GUID.](guid.md) El siguiente es un ejemplo de un GUID: {880DE2F0-CDD8-11D1-A849-006097ABDE17}. En los pasos siguientes se modifica en una cadena de caracteres que se debe anexar a cada nombre de clave principal del módulo de combinación.

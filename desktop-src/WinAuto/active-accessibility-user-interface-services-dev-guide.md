@@ -17,8 +17,8 @@ En esta sección se de tratan los temas siguientes:
 
 -   [Interfaz de usuario API](user-interface-apis.md)
 -   [Llamada a Active Accessibility API](calling-active-accessibility-apis.md)
--   [Guía del desarrollador para clientes Active Accessibility desarrolladores](developer-s-guide-for-active-accessibility-clients.md)
--   [Guía del desarrollador para servidores Active Accessibility desarrolladores](developer-s-guide-for-active-accessibility-servers.md)
+-   [Guía del desarrollador para Active Accessibility clientes](developer-s-guide-for-active-accessibility-clients.md)
+-   [Guía del desarrollador para servidores de Active Accessibility web](developer-s-guide-for-active-accessibility-servers.md)
 
  
 

@@ -3,37 +3,37 @@ title: Ejemplos (RPC)
 description: Ejemplos que muestran los conceptos de llamada a procedimiento remoto (RPC).
 ms.assetid: d5db3085-6df0-4539-a605-d60055f4f4ec
 keywords:
-- RPC (llamada a procedimiento remoto), ejemplos
+- Llamada a procedimiento remoto RPC , ejemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85e6a814d78afbfc7fefa979c890cbbb8c3d4ce0
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: e75dca3866e325a4f10eb446d209b834b62ff0407e7edd19f92ec70ac700df85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105676527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118930054"
 ---
 # <a name="examples-rpc"></a>Ejemplos (RPC)
 
-El kit de desarrollo de software (SDK) de la plataforma incluye ejemplos que muestran una variedad de conceptos de llamada a procedimiento remoto (RPC), como se indica a continuación:
+Platform Software Development Kit (SDK) incluye ejemplos que muestran una variedad de conceptos de llamada a procedimiento remoto (RPC), como se muestra a continuación:
 
--   ASYNCRPC muestra la estructura de una aplicación RPC que usa llamadas a procedimientos remotos asincrónicas. También muestra varios métodos de notificación de la finalización de la llamada.
+-   ASYNCRPC muestra la estructura de una aplicación RPC que usa llamadas a procedimientos remotos asincrónicos. También muestra varios métodos de notificación de la finalización de la llamada.
 -   CLUUID muestra el uso del UUID de objeto de cliente para permitir que un cliente seleccione entre varias implementaciones de un procedimiento remoto.
--   El directorio de datos contiene cuatro programas: DUNION ilustra uniones discriminadas (no encapsuladas); Inout muestra los parámetros [ \[ in \] ](../midl/in.md), [ \[ out \] ](../midl/out-idl.md) ; REPAS muestra el atributo [representated \_ as](/windows/desktop/Midl/represent-as) ; TRANSMISIÓN muestra el atributo [transmitir \_ como](/windows/desktop/Midl/transmit-as) .
--   DYNEPT muestra una aplicación cliente que administra su conexión con el servidor a través de extremos dinámicos.
--   El directorio FILEREP contiene cuatro ejemplos que muestran cómo los desarrolladores pueden escribir un servicio simple de replicación de archivos, un servicio de replicación de archivos de varios usuarios, un servicio que admite características de seguridad y un servicio que usa canalizaciones asincrónicas de RPC.
--   El directorio HANDles contiene tres programas, AUTO, CXHNDL, USRDEF, que muestran el [ \_ identificador automático](/windows/desktop/Midl/auto-handle), el \[ identificador de contexto \_ y los \] identificadores genéricos (definidos por el usuario), respectivamente.
--   HELLO es una implementación de cliente/servidor de "Hello, World".
--   El directorio PICKLE contiene dos programas: PICKLP muestra la serialización del procedimiento de datos; La lista desplegable muestra la serialización del tipo de datos; ambos programas usan los atributos de [ \[ codificación \] ](../midl/encode.md) y [ \[ descodificación \] ](../midl/decode.md) .
--   CANALIZAciones muestra el uso del constructor de tipo de canalización.
+-   El directorio DATA contiene cuatro programas: DUNION ilustra las uniones discriminadas (no superadas); INOUT muestra en [ \[ los parámetros \] ](../midl/in.md), [ \[ out; \] ](../midl/out-idl.md) REPAS muestra la representación [ \_ como](/windows/desktop/Midl/represent-as) atributo; XMIT muestra la [transmisión \_ como](/windows/desktop/Midl/transmit-as) atributo.
+-   D SMTPPT muestra una aplicación cliente que administra su conexión al servidor a través de puntos de conexión dinámicos.
+-   El directorio FILEREP contiene cuatro ejemplos que ilustran cómo los desarrolladores pueden escribir un servicio de replicación de archivos simple, un servicio de replicación de archivos multiusutivo, un servicio que admite características de seguridad y un servicio que usa canalizaciones asincrónicas RPC.
+-   El directorio HANDLES contiene tres programas, AUTO, CXHNDL y USRDEF, que muestran el identificador automático [, \_ ](/windows/desktop/Midl/auto-handle)el identificador de contexto y los identificadores genéricos (definidos por \[ el \_ \] usuario), respectivamente.
+-   HELLO es una implementación de cliente/servidor de "Hello, world".
+-   El directorio PICKLE contiene dos programas: PICKLP muestra la serialización de procedimientos de datos; PICKLT muestra la serialización de tipos de datos; ambos programas usan [ \[ los atributos de \] codificación](../midl/encode.md) [ \[ y descodificación. \] ](../midl/decode.md)
+-   PIPES muestra el uso del constructor de tipo de canalización.
 -   RPCSVC muestra la implementación de un servicio con RPC.
--   STROUT muestra cómo asignar memoria en un servidor para un objeto bidimensional (una matriz de punteros) y devolverla al cliente como un \[ \] parámetro de solo salida. Después, el cliente libera la memoria. Esta técnica permite al código auxiliar llamar al servidor sin conocer de antemano la cantidad de datos que se devolverá.
+-   STROUT muestra cómo asignar memoria en un servidor para un objeto bidimensional (una matriz de punteros) y pasarla de vuelta al cliente como un parámetro \[ \] out -only. A continuación, el cliente libera la memoria. Esta técnica permite que el código auxiliar llame al servidor sin saber de antemano cuántos datos se devolverán.
 
-    Este programa también permite al usuario compilar para Unicode o ANSI.
+    Este programa también permite al usuario compilar para UNICODE o ANSI.
 
-Todos los archivos de código fuente y los archivos make de estos programas se encuentran en el SDK de la plataforma.
+Todos los archivos de origen y archivos Make de estos programas se encuentran en el SDK de plataforma.
 
-Para obtener ejemplos básicos de desarrollo de aplicaciones RPC y más sencillos, consulte los temas del [tutorial](tutorial.md) .
+Para ver el desarrollo básico de aplicaciones RPC y ejemplos más sencillos, consulte los [temas del tutorial.](tutorial.md)
 
  
 

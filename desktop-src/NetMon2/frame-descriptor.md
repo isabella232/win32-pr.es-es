@@ -1,7 +1,7 @@
 ---
-description: La estructura de descriptores de fotogramas \_ proporciona información descriptiva sobre fotogramas sin formato.
+description: La estructura \_ FRAME DESCRIPTOR proporciona información descriptiva sobre los fotogramas sin procesar.
 ms.assetid: f2fc256e-8e64-49c1-b2ad-ef656762d5c7
-title: Estructura de FRAME_DESCRIPTOR (Netmon. h)
+title: FRAME_DESCRIPTOR estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: c327ce1568eec07aabe3334013dae8b720ab7446
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e675c07eae46096878e7c0aa71b53ba5bf22194e82ad8cc5aa5b6070d7e27e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118938576"
 ---
-# <a name="frame_descriptor-structure"></a>\_Estructura de descriptor de marco
+# <a name="frame_descriptor-structure"></a>Estructura \_ DEL DESCRIPTOR DE MARCO
 
-La estructura de **\_ descriptores de fotogramas** proporciona información descriptiva sobre fotogramas sin formato.
+La **estructura \_ FRAME DESCRIPTOR** proporciona información descriptiva sobre los fotogramas sin procesar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,14 +51,14 @@ typedef struct _FRAME_DESCRIPTOR {
 **FramePointer**
 </dt> <dd>
 
-Puntero a los datos del marco.
+Puntero a los datos de marco.
 
 </dd> <dt>
 
-**Indicaciones**
+**Timestamp**
 </dt> <dd>
 
-Hora del sistema, en microsegundos, en que se capturó el fotograma. Este tiempo se usa normalmente para determinar el intervalo entre las veces que se capturaron dos fotogramas.
+Hora del sistema, en microsegundos, cuando se capturó el fotograma. Esta hora se usa normalmente para determinar el intervalo entre las veces que se capturaron dos fotogramas.
 
 </dd> <dt>
 
@@ -72,18 +72,18 @@ Longitud del marco.
 **nBytesAvail**
 </dt> <dd>
 
-Longitud de fotograma real copiada.
+Longitud real del fotograma copiada.
 
 </dd> <dt>
 
-**ETYPE**
+**Etype**
 </dt> <dd>
 
-ETYPE nombre.
+Nombre del tipo E.
 
 </dd> <dt>
 
-**SAP**
+**Sap**
 </dt> <dd>
 
 Valor de SAP.
@@ -93,28 +93,28 @@ Valor de SAP.
 **LowProtocol**
 </dt> <dd>
 
-Índice de protocolo encontrado.
+Índice del protocolo encontrado.
 
 </dd> <dt>
 
 **LowProtocolOffset**
 </dt> <dd>
 
-Desplazamiento a los datos de protocolo obtenidos de **LowProtocol**.
+Desplazamiento a los datos de protocolo obtenidos **de LowProtocol.**
 
 </dd> <dt>
 
 **HighPort**
 </dt> <dd>
 
-Puerto del protocolo alto identificado en **LowProtocol**.
+Puerto de protocolo alto identificado en **LowProtocol**.
 
 </dd> <dt>
 
 **HighProtocolOffset**
 </dt> <dd>
 
-Desplazamiento a los datos de protocolo obtenidos de **HighPort**.
+Desplazamiento a los datos de protocolo obtenidos **de HighPort.**
 
 </dd> </dl>
 
@@ -122,11 +122,11 @@ Desplazamiento a los datos de protocolo obtenidos de **HighPort**.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Valor absoluto
-description: Toma el valor absoluto de un operando de origen utilizado en una operación aritmética.
+description: Tome el valor absoluto de un operando de origen utilizado en una operación aritmética.
 ms.assetid: FD2ACE91-0AF6-43E8-80C5-849488E39BEF
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,42 +9,42 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 27ceefa2c4b4ee2eb890b0692a33266e89a18cfb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 904ff3bb89e71a95a1c88851426ba283987ba6b96f336c91dd443794ee5e143d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104358507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118795414"
 ---
 # <a name="absolute-value"></a>Valor absoluto
 
-Toma el valor absoluto de un operando de origen utilizado en una operación aritmética.
+Tome el valor absoluto de un operando de origen utilizado en una operación aritmética.
 
 
 
-| \_ABS |
+| \_Abs |
 |-------|
 
 
 
- 
+ 
 
-Este modificador se usa solo para las instrucciones y el punto flotante de precisión sencilla y doble. El modificador **\_ ABS** fuerza el signo de los números en el operando de origen Positive, incluidos los valores INF.
+Este modificador solo se usa para instrucciones y punto flotante de precisión sencilla y doble. El **\_ modificador abs** fuerza el signo de los números en el positivo del operando de origen, incluidos los valores INF.
 
-Al aplicar **\_ ABS** en Nan, se conservan Nan, aunque el patrón de bits Nan determinado que Results no está definido.
+La aplicación **\_ de abs** en NaN conserva NaN, aunque no se define el patrón de bits NaN determinado que da como resultado.
 
-Cuando \_ se combina ABS con el modificador [Negate](negate.md) , la combinación obliga al signo a ser negativo, como si se aplicara primero el modificador **\_ ABS** y luego el valor **negado**.
+Cuando se combina abs con \_ el [modificador negate,](negate.md) la combinación fuerza el signo a ser negativo, como si se aplicara primero el modificador **\_ abs** y, a continuación, **negate**.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Este modificador es compatible con los siguientes modelos de sombreador.
+Este modificador se admite en los siguientes modelos de sombreador.
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
@@ -52,18 +52,18 @@ Este modificador es compatible con los siguientes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Modificadores de instrucciones](instruction-modifiers.md)
+[Modificadores de instrucción](instruction-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

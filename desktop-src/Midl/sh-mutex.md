@@ -32,9 +32,9 @@ La **palabra clave sh \_ mutex** especifica que contiene `system_handle` un iden
 
 Esta palabra clave es un parámetro para [**system_handle**](system-handle.md).
 
-La [**system_handle**](system-handle.md) de acceso también contiene detalles sobre el uso opcional del *parámetro access-rights.* El comportamiento predeterminado es según `DUPLICATE_SAME_ACCESS` las especificaciones [ **de la función DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
+La [**system_handle**](system-handle.md) documentación también contiene detalles sobre el uso opcional del *parámetro access-rights.* El comportamiento predeterminado es según `DUPLICATE_SAME_ACCESS` las especificaciones [ **de la función DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para usar esta palabra clave con el atributo , la marca debe establecerse en `system_handle` `-target` `NT100` (o superior) al ejecutar midl.exe.
 
@@ -54,7 +54,7 @@ interface MyInterface : IUnknown
 | Cliente mínimo compatible | Windows 10 Actualización de aniversario (versión 1607, compilación 14393) |
 | Servidor mínimo compatible | Windows Server 2016 (compilación 14393) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

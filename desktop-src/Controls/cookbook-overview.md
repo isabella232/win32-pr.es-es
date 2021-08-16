@@ -31,7 +31,7 @@ En este tema se incluyen las secciones siguientes.
 
 Para permitir que la aplicación use estilos visuales, debe usar ComCtl32.dll versión 6 o posterior. Dado que la versión 6 no es redistribuible, solo está disponible cuando la aplicación se ejecuta en una versión de Windows que la contiene. Windows se suministra con las versiones 5 y 6. ComCtl32.dll versión 6 contiene los controles de usuario y los controles comunes. De forma predeterminada, las aplicaciones usan los controles de usuario definidos en User32.dll y los controles comunes definidos en ComCtl32.dll versión 5. Para obtener una lista de las versiones de DLL y sus plataformas de distribución, vea [Versiones de control comunes](common-control-versions.md).
 
-Si desea que la aplicación use estilos visuales, debe agregar un manifiesto de aplicación o una directiva del compilador que indique que se debe usar ComCtl32.dll versión 6 si está disponible.
+Si desea que la aplicación use estilos visuales, debe agregar un manifiesto de aplicación o una directiva del compilador que indique que ComCtl32.dll versión 6 debe usarse si está disponible.
 
 Un manifiesto de aplicación permite a una aplicación especificar qué versiones de un ensamblado requiere. En Microsoft Win32, un ensamblado es un conjunto de archivos DLL y una lista de objetos con control de versiones que se encuentran dentro de esos archivos DLL.
 
@@ -70,7 +70,7 @@ El manifiesto de ejemplo también proporciona una descripción de la aplicación
 A continuación se muestra un ejemplo de un archivo de manifiesto.
 
 > [!IMPORTANT]
-> Establezca la entrada **processorArchitecture** en **"X86"** si la aplicación tiene como destino la plataforma Windows de 32 bits o **en "amd64"** si la aplicación tiene como destino la plataforma de 64 Windows bits. También puede especificar **\* "",** lo que garantiza que todas las plataformas están destinadas, como se muestra en los ejemplos siguientes.
+> Establezca la entrada **processorArchitecture** en **"X86"** si la aplicación tiene como destino la plataforma Windows de 32 bits o **en "amd64"** si la aplicación tiene como destino la plataforma de Windows de 64 bits. También puede especificar **\* "",** lo que garantiza que todas las plataformas sean de destino, como se muestra en los ejemplos siguientes.
 
  
 
@@ -102,7 +102,7 @@ A continuación se muestra un ejemplo de un archivo de manifiesto.
 
 
 
-Si usa Microsoft Visual C++ 2005 o posterior, puede agregar la siguiente directiva del compilador al código fuente en lugar de crear manualmente un manifiesto. Para mejorar la legibilidad, la directiva se divide en varias líneas aquí.
+Si usa Microsoft Visual C++ 2005 o posterior, puede agregar la siguiente directiva de compilador al código fuente en lugar de crear manualmente un manifiesto. Para mejorar la legibilidad, la directiva se divide en varias líneas aquí.
 
 
 ```C++
@@ -206,7 +206,7 @@ Al compilar la aplicación, el manifiesto se agregará como un recurso binario.
 3.  Agregue el manifiesto al archivo de recursos de la aplicación como id. de recurso 123.
 
 > [!Note]  
-> Cuando cree una aplicación Panel de control, colóctela en la categoría adecuada. Panel de control ahora admite la categorización de Panel de control aplicaciones. Esto significa que Panel de control a las aplicaciones se les pueden asignar identificadores y separarse en áreas de tareas, como Agregar o quitar programas, Apariencia y temas o Fecha, Hora, Idioma y Opciones regionales.
+> Al crear una aplicación Panel de control, coló hay que colocarla en la categoría adecuada. Panel de control ahora admite la categorización de Panel de control aplicaciones. Esto significa que Panel de control a las aplicaciones se les pueden asignar identificadores y separarse en áreas de tareas, como Agregar o quitar programas, Apariencia y temas, o Fecha, Hora, Idioma y Opciones regionales.
 
  
 
@@ -214,7 +214,7 @@ Al compilar la aplicación, el manifiesto se agregará como un recurso binario.
 
 Se puede agregar compatibilidad con estilos visuales a una extensión, un complemento, un complemento MMC o un archivo DLL que se lleva a un proceso. Por ejemplo, siga estos pasos para agregar compatibilidad con estilos visuales para un complemento Microsoft Management Console (MMC).
 
-1.  Compile el complemento con la marca -DISOLATION AWARE ENABLED o inserte la siguiente instrucción antes de incluir \_ \_ la instrucción \# "windows.h".
+1.  Compile el complemento con la marca -DISOLATION AWARE ENABLED o inserte la siguiente instrucción antes de \_ \_ incluir la instrucción \# "windows.h".
 
     ```C++
     #define ISOLATION_AWARE_ENABLED 1
@@ -259,7 +259,7 @@ Se puede agregar compatibilidad con estilos visuales a una extensión, un comple
 
     
 
-4.  Agregue el manifiesto al archivo de recursos del complemento. Consulte [Using ComCtl32 Version 6 in an Application That Uses Extensions, Plug-ins,](/previous-versions//ms649781(v=vs.85)) or a DLL That Is Brought into a Process (Uso de ComCtl32 versión 6 en una aplicación que usa extensiones, complementos o un archivo DLL que se incorpora a un proceso) para obtener más información sobre cómo agregar un manifiesto a un archivo de recursos.
+4.  Agregue el manifiesto al archivo de recursos del complemento. Consulte [Using ComCtl32 Version 6 in an Application That Uses Extensions, Plug-ins, or a DLL That Is Brought into a Process](/previous-versions//ms649781(v=vs.85)) (Uso de ComCtl32 versión 6 en una aplicación que usa extensiones, complementos o un archivo DLL que se incorpora a un proceso) para obtener más información sobre cómo agregar un manifiesto a un archivo de recursos.
 
 ## <a name="turning-off-visual-styles"></a>Desactivar estilos visuales
 
@@ -272,11 +272,11 @@ SetWindowTheme(hwnd, L" ", L" ");
 
 
 
-En el ejemplo anterior, *hwnd* es el identificador de la ventana en la que se deshabilitarán los estilos visuales. Después de la llamada, el control se representa sin estilos visuales.
+En el ejemplo anterior, *hwnd* es el identificador de la ventana en la que se deshabilitan los estilos visuales. Después de la llamada, el control se representa sin estilos visuales.
 
 ## <a name="using-visual-styles-with-html-content"></a>Usar estilos visuales con contenido HTML
 
-Las páginas HTML que modifican Hojas de estilo CSS (CSS) como fondo o borde no tienen estilos visuales aplicados. Muestran el atributo CSS especificado. Cuando se especifica como parte del contenido, la mayoría de las propiedades CSS se aplican a los elementos que tienen estilos visuales aplicados.
+Las páginas HTML que modifican Hojas de estilo CSS (CSS) como el fondo o el borde no tienen estilos visuales aplicados. Muestran el atributo CSS especificado. Cuando se especifica como parte del contenido, la mayoría de las propiedades CSS se aplican a los elementos que tienen estilos visuales aplicados.
 
 De forma predeterminada, los estilos visuales se aplican a controles HTML intrínsecos en las páginas mostradas en Microsoft Internet Explorer 6 y versiones posteriores. Para desactivar los estilos visuales de una página HTML, agregue una etiqueta META a <head> . Esta técnica también se aplica al contenido empaquetado como aplicaciones HTML (HTA). Para desactivar los estilos visuales, la etiqueta META debe ser la siguiente:
 
@@ -288,29 +288,29 @@ De forma predeterminada, los estilos visuales se aplican a controles HTML intrí
 
 
 > [!Note]  
-> Si la configuración del explorador y la configuración de etiqueta no están de acuerdo, la página no aplicará estilos visuales. Por ejemplo, si la etiqueta META está establecida en "no" y el explorador está establecido para habilitar estilos visuales, los estilos visuales no se aplicarán a la página. Sin embargo, si el explorador o la etiqueta META se establecen en "sí" y no se especifica el otro elemento, se aplicarán estilos visuales.
+> Si la configuración del explorador y la configuración de etiqueta no están de acuerdo, la página no aplicará estilos visuales. Por ejemplo, si la etiqueta META se establece en "no" y el explorador está establecido para habilitar estilos visuales, los estilos visuales no se aplicarán a la página. Sin embargo, si el explorador o la etiqueta META se establecen en "sí" y no se especifica el otro elemento, se aplicarán estilos visuales.
 
  
 
-Los estilos visuales pueden cambiar el diseño del contenido. Además, si establece determinados atributos en controles HTML intrínsecos, como el ancho de un botón, es posible que la etiqueta del botón no sea legible en determinados estilos visuales.
+Los estilos visuales pueden cambiar el diseño del contenido. Además, si establece determinados atributos en controles HTML intrínsecos, como el ancho de un botón, es posible que la etiqueta del botón sea ilegible en determinados estilos visuales.
 
 Debe probar exhaustivamente el contenido mediante estilos visuales para determinar si la aplicación de estilos visuales tiene un efecto adverso en el contenido y el diseño.
 
 ## <a name="when-visual-styles-are-not-applied"></a>Cuando no se aplican estilos visuales
 
-Para evitar aplicar estilos visuales a una ventana de nivel superior, dé a la ventana una región que no sea NULL (**SetWindowRgn**). El sistema supone que una ventana con una región que no es NULL es una ventana especializada que no usa estilos visuales. Una ventana secundaria asociada a una ventana de nivel superior de estilos no visuales todavía puede aplicar estilos visuales aunque la ventana primaria no lo haga.
+Para evitar aplicar estilos visuales a una ventana de nivel superior, dé a la ventana una región que no sea NULL (**SetWindowRgn**). El sistema supone que una ventana con una región que no es NULL es una ventana especializada que no usa estilos visuales. Una ventana secundaria asociada a una ventana de nivel superior que no sea de estilos visuales puede seguir aplicando estilos visuales aunque la ventana primaria no lo haga.
 
-Si desea deshabilitar el uso de estilos visuales para todas las ventanas de la aplicación, llame a [**SetThemeAppProperties**](/windows/desktop/api/Uxtheme/nf-uxtheme-setthemeappproperties) y no pase la marca STAP \_ ALLOW \_ NONCLIENT. Si una aplicación no llama a **SetThemeAppProperties**, los valores de marca asumidos son STAP \_ ALLOW \_ NONCLIENT \| STAP \_ ALLOW CONTROLS \_ \| STAP ALLOW \_ \_ WEBCONTENT. Los valores asumidos hacen que se aplique un estilo visual al área no cliente, los controles y el contenido web.
+Si desea deshabilitar el uso de estilos visuales para todas las ventanas de la aplicación, llame a [**SetThemeAppProperties**](/windows/desktop/api/Uxtheme/nf-uxtheme-setthemeappproperties) y no pase la marca STAP \_ ALLOW \_ NONCLIENT. Si una aplicación no llama a **SetThemeAppProperties,** los valores de marca asumidos son STAP \_ ALLOW \_ NONCLIENT \| STAP \_ ALLOW CONTROLS \_ \| STAP ALLOW \_ \_ WEBCONTENT. Los valores asumidos hacen que se aplique un estilo visual al área no cliente, los controles y el contenido web.
 
 ## <a name="making-your-application-compatible-with-earlier-versions-of-windows"></a>Hacer que la aplicación sea compatible con versiones anteriores de Windows
 
-Gran parte de la arquitectura de estilo visual está diseñada para facilitar el envío del producto en versiones anteriores de Windows que no admiten cambiar la apariencia de los controles. Al enviar una aplicación para más de un sistema operativo, tenga en cuenta lo siguiente:
+Gran parte de la arquitectura de estilo visual está diseñada para facilitar el envío del producto en versiones anteriores de Windows que no admiten el cambio de la apariencia de los controles. Al enviar una aplicación para más de un sistema operativo, tenga en cuenta lo siguiente:
 
--   En las versiones de Windows anteriores a Windows 8, los estilos visuales están desactivados cuando el contraste alto está on. Para admitir el contraste alto, una aplicación heredada que admite estilos visuales debe proporcionar una ruta de acceso de código independiente para dibujar correctamente los elementos de la interfaz de usuario en contraste alto. En Windows 8, el contraste alto forma parte de los estilos visuales; sin embargo, una aplicación de Windows 8 (que incluye el GUID de Windows 8 en la sección de compatibilidad de su manifiesto de aplicación) todavía necesita proporcionar una ruta de acceso de código independiente para representarse correctamente en contraste alto en Windows 7 un anterior.
+-   En las versiones de Windows anteriores a Windows 8, los estilos visuales están desactivados cuando el contraste alto está on. Para admitir el contraste alto, una aplicación heredada que admite estilos visuales debe proporcionar una ruta de acceso de código independiente para dibujar correctamente los elementos de la interfaz de usuario en contraste alto. En Windows 8, el contraste alto forma parte de los estilos visuales; sin embargo, una aplicación Windows 8 (una que incluya el GUID de Windows 8 en la sección de compatibilidad de su manifiesto de aplicación) todavía necesita proporcionar una ruta de acceso de código independiente para representarse correctamente en contraste alto en Windows 7 un antes.
 -   Si usa las características de ComCtl32.dll versión 6, como la vista de icono o el control de vínculo, debe controlar el caso en el que esos controles no están disponibles en el equipo del usuario. ComCtl32.dll versión 6 no es redistribuible.
 -   Pruebe la aplicación para asegurarse de que no se basa en las características de ComCtl32.dll versión 6 sin comprobar primero la versión actual.
 -   No vincule a UxTheme.lib.
--   Escribir código de control de errores para instancias cuando los estilos visuales no funcionan según lo previsto.
+-   Escribir código de control de errores para instancias de cuando los estilos visuales no funcionan según lo previsto.
 -   La instalación del manifiesto de la aplicación en versiones anteriores no afectará a la representación de controles.
 
 ## <a name="related-topics"></a>Temas relacionados

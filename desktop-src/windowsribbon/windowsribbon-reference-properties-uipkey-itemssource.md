@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_ItemsSource
-description: Identifica la propiedad \_ ItemsSource de PKEY \_ de la interfaz de usuario.
+description: Identifica la propiedad \_ PKEY ItemsSource de la \_ interfaz de usuario.
 ms.assetid: f5e99d2a-f50a-4932-ae77-581037cb9ac8
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118201580"
 ---
 # <a name="ui_pkey_itemssource"></a>UI \_ PKEY \_ ItemsSource
 
-Identifica la propiedad \_ ItemsSource de PKEY \_ de la interfaz de usuario.
+Identifica la propiedad \_ PKEY ItemsSource de la \_ interfaz de usuario.
 
 ```
 propertyDescription
@@ -31,11 +31,11 @@ La interfaz de usuario PKEY ItemsSource la usa una aplicación para consultar la
 
 El valor de propiedad es un [**objeto IUICollection.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection)
 
-Cada elemento de [**esta IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) debe implementar [**IUISimplePropertySet**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) para exponer las propiedades de solo lectura asociadas al elemento, como la etiqueta o la imagen.
+Cada elemento de [**esta IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) debe implementar [**IUISimplePropertySet para**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) exponer las propiedades de solo lectura asociadas al elemento, como la etiqueta o la imagen.
 
 Para agregar o eliminar elementos de un control de galería en tiempo de ejecución, use los [**métodos IUICollection.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection)
 
-En la captura de pantalla siguiente se muestra una colección de elementos en un [**menú SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+En la siguiente captura de pantalla se muestra una colección de elementos en un [**menú SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ![captura de pantalla que muestra categorías en una galería de cinta de opciones.](images/markup/splitbutton-gallery-control.png)
 

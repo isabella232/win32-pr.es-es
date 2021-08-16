@@ -4,7 +4,7 @@ ms.assetid: e06e1f6e-8346-4656-b0cb-58e5b9fdaa33
 description: 'Más información sobre: Trabajar con controles basados en texto'
 keywords:
 - clientes, trabajar con controles basados en texto
-- clients,controles basados en texto
+- clientes, controles basados en texto
 - clients,text ranges
 - clients,Text control pattern
 - clients,Patrón de control TextRange
@@ -26,7 +26,7 @@ En este tema se describe cómo usar las interfaces expuestas por los patrones de
 -   [Descripción del modelo Automatización de la interfaz de usuario de objetos de texto](uiauto-understandingtheuiautomationtextobjectmodel.md)
 -   [Usar intervalos de texto](uiauto-usingtextrangeobjects.md)
 -   [Acceso al contenido de la hoja de cálculo](uiauto-accessingspreadsheetcontent.md)
--   [Controlar eventos relacionados con texto](uiauto-handlingtextrelatedevents.md)
+-   [Control de eventos relacionados con texto](uiauto-handlingtextrelatedevents.md)
 -   [Descripción de los problemas de rendimiento](uiauto-understandingperformanceissues.md)
 
 ## <a name="related-topics"></a>Temas relacionados

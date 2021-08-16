@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118411154"
 ---
-# <a name="nm_fontchanged-notification-code"></a>Código \_ de notificación DE NM FONTCHANGED
+# <a name="nm_fontchanged-notification-code"></a>Código \_ de notificación FONTCHANGED de NM
 
 Enviado por un control de vista de lista cuando el control ha cambiado una fuente. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 

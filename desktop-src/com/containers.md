@@ -39,7 +39,7 @@ Para obtener más información, vea los temas siguientes:
 
 <dl> <dt>
 
-[ActiveX Directrices para controlar y controlar contenedores](activex-control-and-control-container-guidelines.md)
+[ActiveX Instrucciones de contenedor de control y control](activex-control-and-control-container-guidelines.md)
 </dt> </dl>
 
  

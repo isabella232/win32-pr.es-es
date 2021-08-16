@@ -1,10 +1,10 @@
 ---
-title: Función DsRestoreGetDatabaseLocations (Ntdsbcli. h)
-description: Obtiene las ubicaciones en las que se deben copiar los archivos de copia de seguridad durante una operación de restauración.
+title: Función DsRestoreGetDatabaseLocations (Ntdsbcli.h)
+description: Obtiene las ubicaciones donde se deben copiar los archivos de copia de seguridad durante una operación de restauración.
 ms.assetid: f91d701c-72cf-418a-8d1c-6bf6ef41c2c1
 ms.tgt_platform: multiple
 keywords:
-- Active Directory de la función DsRestoreGetDatabaseLocations
+- Función DsRestoreGetDatabaseLocations Active Directory
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bcebb9f3822332269e1db09f3246c128e4ad1f2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f3c5626e2e0dc679a4669bb5d8be8096b6ae0629aeed7c833f397b5f9bca45db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429997"
 ---
-# <a name="dsrestoregetdatabaselocations-function"></a>DsRestoreGetDatabaseLocations función)
+# <a name="dsrestoregetdatabaselocations-function"></a>Función DsRestoreGetDatabaseLocations
 
-\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. A partir de Windows Vista, use [servicio de instantáneas de volumen (VSS)](../vss/volume-shadow-copy-service-overview.md) en su lugar.\]
+\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. A partir de Windows Vista, use [Servicio de instantáneas de volumen (VSS) en](../vss/volume-shadow-copy-service-overview.md) su lugar.\]
 
-La función **DsRestoreGetDatabaseLocations** obtiene las ubicaciones en las que se deben copiar los archivos de copia de seguridad durante una operación de restauración.
+La **función DsRestoreGetDatabaseLocations** obtiene las ubicaciones donde se deben copiar los archivos de copia de seguridad durante una operación de restauración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,111 +47,111 @@ HRESULT DsRestoreGetDatabaseLocations(
 
 <dl> <dt>
 
-*HBC* \[ de\]
+*hbc* \[ En\]
 </dt> <dd>
 
-Contiene el identificador de contexto de restauración obtenido con la función [**DsRestorePrepare**](dsrestoreprepare.md) .
+Contiene el identificador de contexto de restauración obtenido con la [**función DsRestorePrepare.**](dsrestoreprepare.md)
 
 </dd> <dt>
 
-*pszDatabaseLocationList* \[ enuncia\]
+*pszDatabaseLocationList* \[ out\]
 </dt> <dd>
 
-Puntero a un puntero de cadena que recibe la lista de ubicaciones de la base de datos como rutas UNC. Esta lista recibe una lista de dos cadenas terminadas en NULL con un valor nulo.
+Puntero a un puntero de cadena que recibe la lista de ubicaciones de base de datos como rutas de acceso UNC. Esta lista recibe una lista doble terminada en NULL de cadenas terminadas en null únicas.
 
-Este búfer se asigna mediante la función **DsRestoreGetDatabaseLocations** y se debe liberar cuando ya no es necesario llamando a la función [**DsBackupFree**](dsbackupfree.md) .
+La función **DsRestoreGetDatabaseLocations** asigna este búfer y se debe liberar cuando ya no sea necesario mediante una llamada a la función [**DsBackupFree.**](dsbackupfree.md)
 
-El primer carácter de cada uno de los nombres de archivo contiene una de las [**constantes BFT**](bft-constants.md) que identifica el tipo de nombre. La función **DsRestoreGetDatabaseLocations** solo proporciona los siguientes tipos de nombre.
+El primer carácter de cada uno de los nombres de archivo contiene una de las constantes [**de BFT**](bft-constants.md) que identifica el tipo de nombre. La **función DsRestoreGetDatabaseLocations** solo proporciona los siguientes tipos de nombre.
 
 <dt>
 
 <span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>
 
-<span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>**\_base de \_ datos Ntds BFT**
+<span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>**BFT \_ NTDS \_ DATABASE**
 
 
 </dt> <dd>
 
-El archivo de base de datos NTDS debe copiarse en este archivo. Este es el archivo que se identificó como **BFT \_ NTDS \_ Database** cuando se realizó la copia de seguridad.
+El archivo de base de datos NTDS debe copiarse en este archivo. Este es el archivo que se identificó como **BFT \_ NTDS \_ DATABASE** cuando se realizó la copia de seguridad.
 
 </dd> <dt>
 
 <span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>
 
-<span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>**DIR. de registro de BFT \_ \_**
+<span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>**BFT \_ LOG \_ DIR**
 
 
 </dt> <dd>
 
-Todos los archivos de registro se copian en este directorio. Los archivos de registro se identificaron como **\_ registro de BFT** cuando se realizó la copia de seguridad.
+Todos los archivos de registro se copian en este directorio. Los archivos de registro se identificaron como **BFT \_ LOG** cuando se realizó la copia de seguridad.
 
 </dd> <dt>
 
 <span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>
 
-<span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>**DIR. de punto de BFT \_ \_**
+<span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>**DIRECTORIO DE PUNTO DE COMPROBACIÓN DE BFT \_ \_**
 
 
 </dt> <dd>
 
-Todos los archivos de revisión se copian en este directorio. Los archivos de revisión se identificaron como **\_ \_ archivo de revisión BFT** cuando se realizó la copia de seguridad.
+Todos los archivos de revisión se copian en este directorio. Los archivos de revisión se identificaron como **BFT \_ PATCH FILE \_ cuando** se realizó la copia de seguridad.
 
 </dd> </dl> </dd> <dt>
 
-*PCB* \[ enuncia\]
+*sizesize* \[ out\]
 </dt> <dd>
 
-Puntero al valor **DWORD** que recibe el tamaño, en bytes, del búfer *pszDatabaseLocationList* .
+Puntero al **valor DWORD** que recibe el tamaño, en bytes, del *búfer pszDatabaseLocationList.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ OK** si la función es correcta o un código de error de Win32 o RPC en caso contrario. En la lista siguiente se enumeran los posibles códigos de error.
+Devuelve **S \_ OK si** la función se realiza correctamente o un código de error win32 o RPC en caso contrario. En la lista siguiente se enumeran los posibles códigos de error.
 
 <dl> <dt>
 
-**ERROR de \_ acceso \_ denegado**
+**ACCESO DE ERROR \_ \_ DENEGADO**
 </dt> <dd>
 
-El autor de la llamada no dispone de los privilegios de acceso adecuados para llamar a esta función. La función [**DsSetAuthIdentity**](dssetauthidentity.md) se puede usar para establecer las credenciales que se usarán para las funciones de copia de seguridad y restauración.
+El autor de la llamada no tiene los privilegios de acceso adecuados para llamar a esta función. La [**función DsSetAuthIdentity**](dssetauthidentity.md) se puede usar para establecer las credenciales que se usarán para las funciones de copia de seguridad y restauración.
 
 </dd> <dt>
 
-**ERROR \_ de \_ parámetro no válido**
+**ERROR \_ PARÁMETRO NO \_ VÁLIDO**
 </dt> <dd>
 
-*HBC*, *pszDatabaseLocationList* o *PCB* no son válidos.
+*hbc,* *pszDatabaseLocationList* o *hbSize* no son válidos.
 
 </dd> <dt>
 
-**ERROR \_ de \_ memoria insuficiente \_**
+**ERROR \_ NO HAY SUFICIENTE \_ \_ MEMORIA**
 </dt> <dd>
 
-Error de asignación de memoria.
+Se produjo un error de asignación de memoria.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **DsRestoreGetDatabaseLocations** se puede usar para obtener los directorios de restauración sin acceso a los datos de los que se ha realizado una copia de seguridad. Para ello, llame a [**DsRestorePrepare**](dsrestoreprepare.md) con **null** para el parámetro *pvExpiryToken* . Esto hace que **DsRestorePrepare** devuelva un identificador de contexto restringido que solo se puede usar con la función **DsRestoreGetDatabaseLocations** .
+La **función DsRestoreGetDatabaseLocations** se puede usar para obtener los directorios de restauración sin acceso a los datos de copia de seguridad. Para ello, llame a [**DsRestorePrepare**](dsrestoreprepare.md) con **NULL para** el *parámetro pvExpiryToken.* Esto hace **que DsRestorePrepare** devuelva un identificador de contexto restringido que solo se puede usar con la función **DsRestoreGetDatabaseLocations.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                        |
-| Encabezado<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>                 |
-| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl>               |
+| Header<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl>                 |
+| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli.lib</dt> </dl>               |
 | Archivo DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl>               |
 | Nombres Unicode y ANSI<br/>   | **DsRestoreGetDatabaseLocationsW** (Unicode) y **DsRestoreGetDatabaseLocationsA** (ANSI)<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

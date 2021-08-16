@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentNoAttachmentsFailedIncrementalReseedException'
-title: Constructor de EsentNoAttachmentsFailedIncrementalReseedException
+description: 'Más información sobre: Constructor EsentNoAttachmentsFailedIncrementalReseedException'
+title: Constructor EsentNoAttachmentsFailedIncrementalReseedException
 TOCTitle: 'EsentNoAttachmentsFailedIncrementalReseedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNoAttachmentsFailedIncrementalReseedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentnoattachmentsfailedincrementalreseedexception.esentnoattachmentsfailedincrementalreseedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6ee31a02a8247ce5c615182f57a7a9acab7ef39d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 521e2ca3291be2498a7a9e168bdf3388b8686100e3fc6244e3999bb5c8c6a48d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118775383"
 ---
-# <a name="esentnoattachmentsfailedincrementalreseedexception-constructor"></a>Constructor de EsentNoAttachmentsFailedIncrementalReseedException
+# <a name="esentnoattachmentsfailedincrementalreseedexception-constructor"></a>Constructor EsentNoAttachmentsFailedIncrementalReseedException
 
 Inicializa una nueva instancia de la clase EsentNoAttachmentsFailedIncrementalReseedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentNoAttachmentsFailedIncrementalReseedException()
 public EsentNoAttachmentsFailedIncrementalReseedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentNoAttachmentsFailedIncrementalReseedException()
 
 [Miembros de EsentNoAttachmentsFailedIncrementalReseedException](./esentnoattachmentsfailedincrementalreseedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

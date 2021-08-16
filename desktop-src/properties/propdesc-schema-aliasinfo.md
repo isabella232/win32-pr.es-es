@@ -1,21 +1,21 @@
 ---
-description: Especifica un alias de ordenación o una lista de alias de ordenación mediante la especificación de un elemento que contiene una propiedad de ordenación o una lista de propiedades de ordenación.
+description: Especifica un alias de ordenación o una lista de alias de ordenación especificando un elemento que contiene una propiedad de ordenación o una lista de propiedades de ordenación.
 ms.assetid: 4c514197-0df0-49c6-b39e-8a2a7cefa93d
 title: aliasInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 052409864617bdaba7acbf9ae561752c83d18395
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 087323df682a2f74164c530f18a9c4da8405930304186288a3d84635bb06ab55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970974"
 ---
 # <a name="aliasinfo"></a>aliasInfo
 
-Especifica un alias de ordenación o una lista de alias de ordenación mediante la especificación de un elemento que contiene una propiedad de ordenación o una lista de propiedades de ordenación. Solo debe haber un elemento [aliasInfo]() para cada elemento [propertyDescription](./propdesc-schema-propertydescription.md) . En el caso de las propiedades que establecen canGroupBy = true, a menos que se especifique una propiedad de ordenación secundaria ( aliasInfo/@additionalSortByAliases = prop: example), el usuario puede experimentar un comportamiento inesperado al cambiar el criterio de ordenación en una vista que está agrupada por la propiedad. En concreto, el orden de los grupos cambiará, pero el orden de los elementos dentro de los grupos no lo hará.
+Especifica un alias de ordenación o una lista de alias de ordenación especificando un elemento que contiene una propiedad de ordenación o una lista de propiedades de ordenación. Solo debe haber un [elemento aliasInfo]() para cada [elemento propertyDescription.](./propdesc-schema-propertydescription.md) Para las propiedades que establecen canGroupBy=true, a menos que se especifique una propiedad de ordenación secundaria ( =prop:example), el usuario puede experimentar un comportamiento inesperado al cambiar el criterio de ordenación en una vista agrupada por la aliasInfo/@additionalSortByAliases propiedad . En concreto, el orden de los grupos cambiará, pero el orden de los elementos dentro de los grupos no.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -36,7 +36,7 @@ Especifica un alias de ordenación o una lista de alias de ordenación mediante 
 
 | Elemento primario                                                   | Elementos secundarios |
 |------------------------------------------------------------------|----------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | None           |
+| [propertyDescription](./propdesc-schema-propertydescription.md) | Ninguno           |
 
 
 
@@ -48,8 +48,8 @@ Especifica un alias de ordenación o una lista de alias de ordenación mediante 
 
 | Atributo               | Descripción                                                                                                                                                            |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sortByAlias             | Público. Opcional. Nombre canónico de la propiedad que se debe usar para ordenar por. Esta cadena es de tipo canónico-Type.                                            |
-| additionalSortByAliases | Público. Opcional. Una lista delimitada por punto y coma de propiedades adicionales que se usarán al ordenar. Las propiedades se aplican a la ordenación en la secuencia en la que se proporcionan. |
+| sortByAlias             | Público. Opcional. Nombre canónico de la propiedad que se debe usar para ordenar. Esta cadena es de tipo canonical-type.                                            |
+| additionalSortByAliases | Público. Opcional. Lista delimitada por punto y coma de propiedades adicionales que se usarán al ordenar. Las propiedades se aplican a la ordenación en la secuencia que se les da. |
 
 
 

@@ -1,17 +1,17 @@
 ---
 description: Estructura que describe un valor de color único.
 ms.assetid: 710f3ef1-bbc3-416d-9faf-aa4a716007c2
-title: XPS_COLOR (Xpsobjectmodel. h)
+title: XPS_COLOR (Xpsobjectmodel.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34c148c2a5452154bfe33b0c74d695fe78f0cdad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f771bcbb516352b2ef689060c11003808d434be8059d16af78fe8db646c97000
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971154"
 ---
-# <a name="xps_color"></a>\_color XPS
+# <a name="xps_color"></a>XPS \_ COLOR
 
 Estructura que describe un valor de color único.
 
@@ -34,31 +34,31 @@ typedef union switch (XPS_COLOR_TYPE colorType) value
 } XPS_COLOR;
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El formato de la estructura depende del valor de *colorType*.
 
 <dl>
 
-[**\_tipo de color XPS \_ \_ sRGB**](/previous-versions/windows/desktop/dd372944(v=vs.85))  
-[**\_color del \_ tipo \_ SCRGB de XPS**](/previous-versions/windows/desktop/dd372943(v=vs.85))  
-[**\_contexto de \_ tipo de color de XPS \_**](/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color)  
+[**XPS \_ COLOR \_ TYPE \_ SRGB**](/previous-versions/windows/desktop/dd372944(v=vs.85))  
+[**XPS \_ COLOR \_ TYPE \_ SCRGB**](/previous-versions/windows/desktop/dd372943(v=vs.85))  
+[**CONTEXTO DE TIPO \_ DE COLOR \_ XPS \_**](/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color)  
 </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y actualización de plataforma para aplicaciones de UWP de aplicaciones de escritorio de Windows Vista \[ \|\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y la actualización de la plataforma de aplicaciones de escritorio de Windows Server 2008 \[ \| aplicaciones para UWP\]<br/> |
-| Encabezado<br/>                   | <dl> <dt>Xpsobjectmodel. h</dt> </dl>                                              |
-| IDL<br/>                      | <dl> <dt>XpsObjectModel. idl</dt> </dl>                                            |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para Windows aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
+| Header<br/>                   | <dl> <dt>Xpsobjectmodel.h</dt> </dl>                                              |
+| Idl<br/>                      | <dl> <dt>XpsObjectModel.idl</dt> </dl>                                            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

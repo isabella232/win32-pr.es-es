@@ -16,7 +16,7 @@ ms.locfileid: "118555165"
 
 Los tipos de contadores no condicionales no tienen una fórmula asociada. El valor sin formato es directamente significativo.
 
-La **propiedad FilesToBeIndexed** de la clase [**\_ \_ ContentIndex \_ IndexingService de PerfRawData de Win32**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) es un ejemplo del tipo de contador **\_ PERF COUNTER \_ RAWCOUNT.** Contiene un recuento de archivos que no se han indexado.
+La **propiedad FilesToBeIndexed** de la clase [**\_ \_ ContentIndex \_ IndexingService de Win32 PerfRawData**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) es un ejemplo del tipo de contador **\_ PERF COUNTER \_ RAWCOUNT.** Contiene un recuento de archivos que no se han indexado.
 
 Los tipos de contador se designan mediante la constante definida en Winperf.h, que se encuentra en el Kit de desarrollo de software (SDK) de Microsoft Windows. En la tabla siguiente se enumeran los tipos de contadores no condicionales que se proporcionan.
 

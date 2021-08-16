@@ -27,7 +27,7 @@ ms.locfileid: "118568442"
 
 La **propiedad enableErrorDialogs** obtiene o establece un valor que indica si los cuadros de diálogo de error se muestran automáticamente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -52,7 +52,7 @@ Valor **System.Boolean** que indica si los cuadros de diálogo de error se muest
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -60,7 +60,7 @@ Valor **System.Boolean** que indica si los cuadros de diálogo de error se muest
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

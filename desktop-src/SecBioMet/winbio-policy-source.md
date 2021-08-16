@@ -1,10 +1,10 @@
 ---
-title: Enumeración WINBIO_POLICY_SOURCE (Winbio \_ Types. h)
-description: Enumera los orígenes posibles de información de directiva para la detección de suplantación de los factores biométricos.
+title: WINBIO_POLICY_SOURCE enumeración (Winbio \_ types.h)
+description: Enumera los posibles orígenes de información de directiva para la detección de suplantación de datos para factores biométricos.
 ms.assetid: 3DC3BB0B-1FD7-473C-8E0B-B7E0A4A44E9E
 keywords:
-- WINBIO_POLICY_SOURCE enumeración Plataforma de biometría de Windows API
-- PWINBIO_POLICY_SOURCE de puntero de enumeración Plataforma de biometría de Windows API
+- WINBIO_POLICY_SOURCE enumeración Windows Biometric Framework API
+- PWINBIO_POLICY_SOURCE puntero de enumeración Windows BIOMETRIC Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 866d1d82d939f143c4385caa5d94c68ffe3758f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 962d4bc3e8cffb778df56d78a9ddaf0641f57f8f96c8f7b024745a4b879f2f81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909944"
 ---
-# <a name="winbio_policy_source-enumeration"></a>\_Enumeración de origen de directiva WINBIO \_
+# <a name="winbio_policy_source-enumeration"></a>Enumeración \_ WINBIO POLICY \_ SOURCE
 
-Enumera los orígenes posibles de información de directiva para la detección de suplantación de los factores biométricos.
+Enumera los posibles orígenes de información de directiva para la detección de suplantación de datos para factores biométricos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,31 +44,31 @@ typedef enum _WINBIO_POLICY_SOURCE {
 
 <dl> <dt>
 
-<span id="WINBIO_POLICY_UNKNOWN"></span><span id="winbio_policy_unknown"></span>**Directiva de WINBIO \_ \_ desconocida**
+<span id="WINBIO_POLICY_UNKNOWN"></span><span id="winbio_policy_unknown"></span>**DIRECTIVA WINBIO \_ \_ DESCONOCIDA**
 </dt> <dd>
 
-Se desconoce el origen de la Directiva.
+Se desconoce el origen de la directiva.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_DEFAULT"></span><span id="winbio_policy_default"></span>**\_directiva \_ predeterminada de WINBIO**
+<span id="WINBIO_POLICY_DEFAULT"></span><span id="winbio_policy_default"></span>**DIRECTIVA PREDETERMINADA DE WINBIO \_ \_**
 </dt> <dd>
 
-La Directiva es la directiva predeterminada que proporciona el Plataforma de biometría de Windows.
+La directiva es la directiva predeterminada que proporciona Windows Biometric Framework.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_LOCAL"></span><span id="winbio_policy_local"></span>**\_Directiva WINBIO \_ local**
+<span id="WINBIO_POLICY_LOCAL"></span><span id="winbio_policy_local"></span>**DIRECTIVA LOCAL DE WINBIO \_ \_**
 </dt> <dd>
 
-La directiva establecida por el usuario individual para su cuenta mediante la aplicación de **configuración** . Esta directiva invalida la directiva predeterminada.
+Directiva que el usuario individual estableció para su cuenta mediante el uso de **Configuración** aplicación. Esta directiva invalida la directiva predeterminada.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_ADMIN"></span><span id="winbio_policy_admin"></span>**\_Administrador de directivas de WINBIO \_**
+<span id="WINBIO_POLICY_ADMIN"></span><span id="winbio_policy_admin"></span>**ADMINISTRADOR DE DIRECTIVAS DE WINBIO \_ \_**
 </dt> <dd>
 
-Una directiva de grupo establecida por el administrador de TI para la empresa. Los usuarios individuales no pueden invalidar esta Directiva.
+Una directiva de grupo que el administrador de TI estableció para la empresa. Los usuarios individuales no pueden invalidar esta directiva.
 
 </dd> </dl>
 
@@ -78,9 +78,9 @@ Una directiva de grupo establecida por el administrador de TI para la empresa. L
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h para aplicaciones cliente o \_ adaptadores de Winbio. h para adaptadores)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluya Winbio.h para aplicaciones cliente o Adaptadores \_ de Winbio.h para adaptadores)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Una directiva de grupo establecida por el administrador de TI para la empresa. L
 
 <dl> <dt>
 
-[**acción de directiva de WINBIO \_ anti \_ Spoofing \_ \_**](winbio-anti-spoof-policy-action.md)
+[**ACCIÓN DE \_ DIRECTIVA \_ ANTI SUPLANTACIÓN \_ DE SEGURIDAD DE \_ WINBIO**](winbio-anti-spoof-policy-action.md)
 </dt> </dl>
 
  

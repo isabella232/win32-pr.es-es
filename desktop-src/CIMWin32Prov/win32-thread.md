@@ -504,7 +504,7 @@ Los valores son:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
@@ -518,7 +518,7 @@ Los valores son:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -867,7 +867,7 @@ Sin embargo, cuando se solucionan problemas con una aplicación, el seguimiento 
 
 Como se implícito en el bloque de sintaxis anterior, la clase Thread de **Win32 \_** no informa del nombre del proceso en el que se ejecuta cada subproceso. En su lugar, notifica el identificador del proceso en el que se ejecuta el subproceso. Para devolver el nombre de un proceso y una lista de todos sus subprocesos, el script debe:
 
-1.  Conectar a la clase Process de [**Win32 \_**](win32-process.md) y devuelve la lista de procesos y sus IDs de proceso.
+1.  Conectar a la [**clase Win32 \_ Process**](win32-process.md) y devuelve la lista de procesos y sus IDs de proceso.
 2.  Almacene temporalmente esta información en una matriz o un objeto Dictionary.
 3.  Para cada identificador de proceso, devuelva la lista de subprocesos para ese proceso y, a continuación, muestre el nombre del proceso y la lista de subprocesos.
 

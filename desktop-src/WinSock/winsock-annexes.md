@@ -1,5 +1,5 @@
 ---
-description: Los anexos de Winsock proporcionan información de implementación para conjuntos de protocolos comunes de Winsock y analizan cómo usar cada protocolo con Winsock.
+description: Los anexos de Winsock proporcionan información de implementación para conjuntos de protocolos de Winsock comunes y analizan cómo usar cada protocolo con Winsock.
 ms.assetid: 3d9cba77-ef84-4835-b914-c43b3629166b
 title: Anexos de Winsock
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118558887"
 ---
 # <a name="winsock-annexes"></a>Anexos de Winsock
 
-Los anexos de Winsock proporcionan información de implementación para conjuntos de protocolos comunes de Winsock y analizan cómo usar cada protocolo con Winsock.
+Los anexos de Winsock proporcionan información de implementación para conjuntos de protocolos de Winsock comunes y analizan cómo usar cada protocolo con Winsock.
 
 Cada protocolo de este anexo tiene convenciones, comportamientos o características especiales que no se presta a la implementación genérica. En esta sección se detallan los detalles que los desarrolladores deben tener en cuenta al implementar o usar los protocolos descritos.
 
 Los anexos de Winsock incluyen las secciones siguientes:
 
--   [Anexo de ATM de Winsock](winsock-atm-annex.md)
--   [Anexo de WINSOCK IPX/SPX](winsock-ipx-spx-annex.md)
--   [Anexo tcp/IP de Winsock](winsock-tcp-ip-annex.md)
+-   [Anexo del cajero automático de Winsock](winsock-atm-annex.md)
+-   [Anexo de Winsock IPX/SPX](winsock-ipx-spx-annex.md)
+-   [Anexo TCP/IP de Winsock](winsock-tcp-ip-annex.md)
 
  
 

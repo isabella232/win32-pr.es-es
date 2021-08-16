@@ -13,7 +13,7 @@ ms.locfileid: "118638734"
 ---
 # <a name="configuring-the-setupexe-resources"></a>Configuración de los Setup.exe recursos
 
-Se incluye un ejecutable de arranque configurable (Setup.exe) y una herramienta de configuración [(Msistuff.exe](msistuff-exe.md)) en los componentes del SDK de Windows para desarrolladores [Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Mediante el Msistuff.exe para configurar los recursos de Setup.exe, los desarrolladores pueden crear fácilmente una instalación web de un paquete Windows Installer. Para obtener más información, [vea Internet Download Bootstrapping](internet-download-bootstrapping.md).
+Se incluye un ejecutable de arranque configurable (Setup.exe) y una herramienta de configuración ( [Msistuff.exe](msistuff-exe.md)) en los componentes del SDK de Windows para Windows [Desarrolladores del instalador](platform-sdk-components-for-windows-installer-developers.md). Mediante el Msistuff.exe para configurar los recursos de Setup.exe, los desarrolladores pueden crear fácilmente una instalación web de un paquete Windows Installer. Para obtener más información, [vea Internet Download Bootstrapping](internet-download-bootstrapping.md).
 
 Al escribir la siguiente línea de comandos, se configuran los recursos para el ejemplo descrito en [A URL Based Windows Installer Installation Example](a-url-based-windows-installer-installation-example.md).
 

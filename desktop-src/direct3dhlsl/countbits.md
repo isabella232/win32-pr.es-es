@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 357aceca6e2aea261a9e94212b58ff6308c99560
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: 5f3816152b91fd03348e64c7a36dd41e8b620bd5e5ef8f4463538c44ef974485
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793973"
 ---
 # <a name="countbits-function"></a>countbits (función)
 
@@ -51,7 +51,7 @@ Tipo: **uint**
 
 Número de bits.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 También están disponibles las siguientes versiones sobrecargadas:
 
@@ -88,7 +88,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

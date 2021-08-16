@@ -1,21 +1,21 @@
 ---
 title: Implementar canalizaciones de salida en el cliente
-description: Al usar una canalización de salida para transferir datos del servidor al cliente, debe implementar un procedimiento de extracción en el cliente.
+description: Cuando se usa una canalización de salida para transferir datos desde el servidor al cliente, debe implementar un procedimiento de inserción en el cliente.
 ms.assetid: ab544daf-fbf7-4b00-95a8-55c149a86c27
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ff274491e2b665d86b550853d07c3ff6a4b2a83
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e959db9e505bb7dfe570552fe0385251485591fecb1f818ab4d5de402c2297b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103791992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118929134"
 ---
 # <a name="implementing-output-pipes-on-the-client"></a>Implementar canalizaciones de salida en el cliente
 
-Al usar una canalización de salida para transferir datos del servidor al cliente, debe implementar un procedimiento de extracción en el cliente. El procedimiento de extracción toma un puntero a un búfer y un recuento de elementos del código auxiliar del cliente y, si el recuento de elementos es mayor que 0, procesa los datos. Por ejemplo, podría copiar los datos del búfer del código auxiliar en su propia memoria. Como alternativa, podría procesar los datos en el búfer del código auxiliar y guardarlos en un archivo. Cuando el recuento de elementos es igual a cero, el procedimiento de extracción completa cualquier tarea de limpieza necesaria antes de volver.
+Cuando se usa una canalización de salida para transferir datos desde el servidor al cliente, debe implementar un procedimiento de inserción en el cliente. El procedimiento de inserción toma un puntero a un búfer y un recuento de elementos del código auxiliar del cliente y, si el recuento de elementos es mayor que 0, procesa los datos. Por ejemplo, podría copiar los datos del búfer del código auxiliar en su propia memoria. Como alternativa, podría procesar los datos en el búfer del código auxiliar y guardarlos en un archivo. Cuando el recuento de elementos es igual a cero, el procedimiento de inserción completa las tareas de limpieza necesarias antes de volver.
 
-En el ejemplo siguiente, la función de cliente ReceiveLongs asigna una estructura de canalización y un búfer de memoria global. Inicializa la estructura, realiza la llamada a procedimiento remoto y libera la memoria.
+En el ejemplo siguiente, la función de cliente ReceiveLongs asigna una estructura de canalización y un búfer de memoria global. Inicializa la estructura , realiza la llamada a procedimiento remoto y, a continuación, libera la memoria.
 
 ## <a name="example"></a>Ejemplo
 
@@ -95,28 +95,28 @@ void PipePush( rpc_ss_pipe_state_t stateInfo,
 
 
 
-En este ejemplo se incluye el archivo de encabezado generado por el compilador MIDL. Para obtener más información, vea [definir canalizaciones en un archivo IDL](defining-pipes-in-idl-files.md). También declara una variable, globalPipeData, que usa como receptor de datos. La variable globalBuffer es un búfer que el procedimiento de extracción utiliza para recibir los bloques de datos que almacena en globalPipeData.
+En este ejemplo se incluye el archivo de encabezado generado por el compilador midl. Para obtener más información, [vea Definición de canalizaciones en el archivo IDL](defining-pipes-in-idl-files.md). También declara una variable, globalPipeData, que usa como receptor de datos. La variable globalBuffer es un búfer que el procedimiento de inserción usa para recibir bloques de datos que almacena en globalPipeData.
 
-La función ReceiveLongs declara una canalización y asigna espacio de memoria para la variable global del receptor de datos. En el programa cliente/servidor, el receptor de datos puede ser un archivo o una estructura de datos que crea el cliente. En este sencillo ejemplo, el origen de datos es un búfer asignado dinámicamente de enteros largos.
+La función ReceiveLongs declara una canalización y asigna espacio de memoria para la variable de receptor de datos global. En el programa cliente/servidor, el receptor de datos puede ser un archivo o una estructura de datos que el cliente crea. En este sencillo ejemplo, el origen de datos es un búfer asignado dinámicamente de enteros largos.
 
-Antes de que pueda comenzar la transferencia de datos, el programa cliente debe inicializar la estructura de la canalización de salida. Debe establecer punteros a la variable de estado, al procedimiento de extracción y al procedimiento de asignación. En este ejemplo, la variable de canalización de salida se denomina outputPipe.
+Antes de que pueda comenzar la transferencia de datos, el programa cliente debe inicializar la estructura de canalización de salida. Debe establecer punteros a la variable de estado, el procedimiento de inserción y el procedimiento de asignación. En este ejemplo, la variable de canalización de salida se denomina outputPipe.
 
-Los clientes señalan a los servidores que están preparados para recibir datos mediante la invocación de un procedimiento remoto en el servidor. En este ejemplo, el procedimiento remoto se denomina outpipe. Cuando el cliente llama al procedimiento remoto, el servidor inicia la transferencia de datos. Cada vez que llegan los datos, el código auxiliar del cliente llama a los procedimientos de asignación e instalación del cliente según sea necesario.
+Los clientes señalan a los servidores que están listos para recibir datos mediante la invocación de un procedimiento remoto en el servidor. En este ejemplo, el procedimiento remoto se denomina OutPipe. Cuando el cliente llama al procedimiento remoto, el servidor comienza la transferencia de datos. Cada vez que llegan los datos, el código auxiliar del cliente llama a los procedimientos de inserción y de aoc del cliente según sea necesario.
 
-En lugar de asignar memoria cada vez que se necesita un búfer, el procedimiento de asignación en este ejemplo simplemente establece un puntero a la variable globalBuffer. A continuación, el procedimiento de extracción vuelve a utilizar este búfer cada vez que transfiere los datos. Los programas cliente más complejos pueden necesitar asignar un nuevo búfer cada vez que el servidor extrae datos del cliente.
+En lugar de asignar memoria cada vez que se necesita un búfer, el procedimiento de asignación de este ejemplo simplemente establece un puntero a la variable globalBuffer. A continuación, el procedimiento de extracción reutiliza este búfer cada vez que transfiere datos. Es posible que los programas cliente más complejos necesiten asignar un nuevo búfer cada vez que el servidor extrae datos del cliente.
 
-El procedimiento de extracción de este ejemplo usa la variable de estado para realizar el seguimiento de la siguiente posición en la que se almacenarán los datos en el búfer del receptor de datos global. Escribe los datos desde el búfer de canalización en el búfer del receptor. A continuación, el código auxiliar del cliente recibe el siguiente bloque de datos del servidor y lo almacena en el búfer de canalización. Cuando se han enviado todos los datos, el servidor transmite un búfer de tamaño cero. Este es el procedimiento de extracción para dejar de recibir datos.
+El procedimiento de inserción de este ejemplo usa la variable de estado para realizar un seguimiento de la siguiente posición donde almacenará los datos en el búfer del receptor de datos global. Escribe datos del búfer de canalización en el búfer receptor. A continuación, el código auxiliar de cliente recibe el siguiente bloque de datos del servidor y los almacena en el búfer de canalización. Cuando se han enviado todos los datos, el servidor transmite un búfer de tamaño cero. Esto hace que el procedimiento de inserción deje de recibir datos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[codo](/windows/desktop/Midl/pipe)
+[Pipa](/windows/desktop/Midl/pipe)
 </dt> <dt>
 
-[**/OI**](/windows/desktop/Midl/-oi)
+[**/Oi**](/windows/desktop/Midl/-oi)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

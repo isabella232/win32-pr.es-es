@@ -51,14 +51,14 @@ Cadena que contiene una lista delimitada por punto y coma de las rutas de acceso
 *Producto* 
 </dt> <dd>
 
-Este parámetro proporciona el [**Código De Producto**](productcode.md) del producto al que se va a aplicar la revisión. Este parámetro es opcional. Cuando este parámetro es null, las revisiones se aplican a todos los productos que son aptos para recibir estas revisiones.
+Este parámetro proporciona el [**ProductCode**](productcode.md) del producto al que se va a aplicar la revisión. Este parámetro es opcional. Cuando este parámetro es NULL, las revisiones se aplican a todos los productos que son aptos para recibir estas revisiones.
 
 </dd> <dt>
 
 *szPropertiesList* 
 </dt> <dd>
 
-Cadena terminada en NULL que especifica la configuración de propiedades de la línea de comandos. Este parámetro es opcional. Vea [Acerca de las propiedades](about-properties.md) y Establecimiento de valores de propiedad pública en la línea de [comandos](setting-public-property-values-on-the-command-line.md). Todas las propiedades las comparten todos los productos de destino.
+Cadena terminada en NULL que especifica la configuración de propiedades de la línea de comandos. Este parámetro es opcional. Vea [Acerca de las propiedades](about-properties.md) y establecimiento de valores de propiedad pública en la línea de [comandos](setting-public-property-values-on-the-command-line.md). Todas las propiedades comparten todos los productos de destino.
 
 </dd> </dl>
 
@@ -70,15 +70,15 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP.<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                    |
-| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                                         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

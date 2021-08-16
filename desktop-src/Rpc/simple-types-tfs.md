@@ -4,12 +4,12 @@ description: Todos los tipos simples se representan mediante un carácter de for
 ms.assetid: 77c293a1-70c4-4825-bb2e-de36e01d3abb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afe123ca7c06a0522a139dc0cca8a9e24d1d585d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e265c24d1eaf4b85ab67c7f8997c656257522bfc8290e73596a8628bdd4215c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118925165"
 ---
 # <a name="simple-types"></a>Tipos simples
 
@@ -35,13 +35,13 @@ FC_INT3264,                 // 0xb8
 FC_UINT3264,                // 0xb9
 ```
 
-Los tipos pequeños, WCHAR, HYPER, \_ status \_ T, \_ \_ INT3264 son intrínsecos de MIDL con interpretaciones RPC especiales. Los tipos INT e \_ \_ Int32 se asignan a las asignaciones Long, unsigned \_ int y Unsigned \_ \_ INT32 a FC \_ ULong, \_ \_ INT64 y Unsigned \_ \_ INT64 se asignan a FC \_ Hyper.
+Los tipos SMALL, WCHAR, HYPER, ERROR \_ STATUS \_ T, \_ \_ INT3264 son intrínsecos MIDL con interpretaciones rpc especiales. Los tipos INT e INT32 se asignan a FC LONG, INT sin signo e INT32 sin signo se asignan a \_ \_ \_ \_ \_ FC \_ ULONG, \_ \_ INT64 e \_ \_ INT64 \_ sin signo a FC HYPER.
 
-\_ \_ No se admiten los tipos INT128, FLOAT128 y FLOAT80.
+No \_ \_ se admiten los tipos INT128, FLOAT128 y FLOAT80.
 
- 
+ 
 
- 
+ 
 
 
 

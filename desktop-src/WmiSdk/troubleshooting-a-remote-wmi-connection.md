@@ -16,11 +16,11 @@ ms.locfileid: "118312421"
 
 En las secciones siguientes se describen los problemas comunes que pueden tener los desarrolladores con la creación de una conexión WMI remota.
 
-En este tema se de abordan las secciones siguientes:
+En este tema se de abordan las siguientes secciones:
 
 -   [Acceso denegado de DCOM](#dcom-access-denied)
 -   [Error al Conectar](#failure-to-connect)
--   [Se ha producido un tiempo de espera de conexión WMI](#wmi-connection-timed-out)
+-   [Tiempo de espera de la conexión WMI](#wmi-connection-timed-out)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="dcom-access-denied"></a>Acceso denegado de DCOM
@@ -44,9 +44,9 @@ Es posible que DCOM no esté configurado para permitir una conexión WMI.
 <span id="Resolution"></span><span id="resolution"></span><span id="RESOLUTION"></span>Resolución
 </dt> <dd>
 
-Puede configurar las opciones de DCOM para WMI mediante la utilidad de configuración de DCOM (**DCOMCnfg.exe**) que se encuentra en Herramientas **administrativas** **en Panel de control**. Esta utilidad expone la configuración que permite a determinados usuarios conectarse al equipo de forma remota a través de DCOM. Los miembros del grupo Administradores pueden conectarse de forma remota al equipo de forma predeterminada. Con esta utilidad puede establecer la seguridad para iniciar, acceder y configurar el servicio WMI.
+Puede configurar las opciones de DCOM para WMI mediante la utilidad  de configuración de DCOM (**DCOMCnfg.exe**) que se encuentra en Herramientas **administrativas en Panel de control**. Esta utilidad expone la configuración que permite a determinados usuarios conectarse al equipo de forma remota a través de DCOM. Los miembros del grupo Administradores pueden conectarse de forma remota al equipo de forma predeterminada. Con esta utilidad puede establecer la seguridad para iniciar, acceder y configurar el servicio WMI.
 
-Para obtener más información, [vea Securing a Remote WMI Connection](securing-a-remote-wmi-connection.md).
+Para obtener más información, [vea Proteger una conexión WMI remota.](securing-a-remote-wmi-connection.md)
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ No se puede conectar a WMI en un sistema remoto.
 
 Es posible que esté intentando conectarse a un sistema que no admite WMI. No se admiten las siguientes conexiones entre las versiones del sistema operativo:
 
--   No se puede conectar a un equipo que ejecute una edición Starter, Basic o Home.
+-   No se puede conectar a un equipo que ejecuta una edición Starter, Basic o Home.
 
-Como alternativa, puede estar intentando conectarse a un espacio de nombres que requiere una conexión cifrada, una que requiere un nivel de autenticación `pktPrivacy` de , **WbemAuthenticationLevelPktPrivacy** o **RPC C \_ \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**.
+Como alternativa, puede estar intentando conectarse a un espacio de nombres que requiere una conexión cifrada, que requiere un nivel de autenticación de `pktPrivacy` , **WbemAuthenticationLevelPktPrivacy** o **RPC C \_ \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Para obtener más información, vea [Securing WMI Namespaces](securing-wmi-names
 
 </dd> </dl>
 
-## <a name="wmi-connection-timed-out"></a>Se ha producido un tiempo de espera de conexión WMI
+## <a name="wmi-connection-timed-out"></a>Tiempo de espera de la conexión WMI
 
 <dl> <dt>
 

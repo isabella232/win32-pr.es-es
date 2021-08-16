@@ -1,23 +1,23 @@
 ---
-title: dtof (SM5-ASM)
-description: Conversión de componentes de datos de punto flotante de precisión doble en datos de punto flotante de precisión sencilla.
+title: dtof (sm5 - asm)
+description: Conversión por componente de datos de punto flotante de precisión doble a datos de punto flotante de precisión sencilla.
 ms.assetid: 1D2EF05C-06EF-44F0-AA0F-22D3057FF43E
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a66e72cf4c2cb1ac49adc492a586b4cbb9eef3b4
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3d16ddf79b1a201bf78e0b45d1206169576bee4193b8c8158469055131768efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104358469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118792332"
 ---
-# <a name="dtof-sm5---asm"></a>dtof (SM5-ASM)
+# <a name="dtof-sm5---asm"></a>dtof (sm5 - asm)
 
-Conversión de componentes de datos de punto flotante de precisión doble en datos de punto flotante de precisión sencilla.
+Conversión por componente de datos de punto flotante de precisión doble a datos de punto flotante de precisión sencilla.
 
 
 
-| dtof dest \[ . Mask \] , \[ - \] src \[ . swizzle \] , |
+| dtof dest \[ .mask \] , \[ - \] src \[ .swprendle \] , |
 |-------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Conversión de componentes de datos de punto flotante de precisión doble en dat
 
 | Elemento                                                            | Descripción                                          |
 |-----------------------------------------------------------------|------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección de los datos convertidos.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] los datos que se van a convertir.<br/>          |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección de los datos convertidos.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Los datos que se convertirán.<br/>          |
 
 
 
@@ -37,23 +37,23 @@ Conversión de componentes de datos de punto flotante de precisión doble en dat
 
 ## <a name="remarks"></a>Observaciones
 
-Cada componente del origen se convierte a partir de la representación de precisión doble en la representación de precisión sencilla mediante el redondeo de redondeo a la más cercana.
+Cada componente del origen se convierte de la representación de precisión doble a la representación de precisión sencilla mediante el redondeo round-to-nearest-even.
 
-El swizzles válido para el parámetro de origen es. xyzw,. xyxy,. zwxy,. zwzw.
+Los swzzles válidos para el parámetro de origen son .xyzw, .xyxy, .zwxy, .zwzw.
 
-Las máscaras de *destino* válidas son uno o dos componentes. Es decir:. x,. y,. z,. w,. XY,. XZ,. XW,. YZ,. YW,. ZW el resultado de la primera conversión va al primer componente de la máscara, y el resultado del segundo componente entra en el segundo componente de la máscara, si está presente.
+Las *máscaras dest* válidas son uno o dos componentes. Es decir: .x, .y, .z, .w, .xy, .xz, .xw, .yz, .yw, .zw El resultado de la primera conversión va al primer componente de la máscara y el resultado del segundo componente se encuentra en el segundo componente de la máscara, si está presente.
 
-los componentes de *dest* son float32.
+*Los componentes dest* son float32.
 
-*src* es un doble vec2 entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB) post swizzle.
+*src* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB) después de swzzle.
 
-En el caso de las conversiones de tipo float32<->Double, las implementaciones pueden aceptar desnormativas float32 o vaciarlas.
+Para las conversiones<->float32, las implementaciones pueden respetar los desnormados float32 o vaciarlos.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -61,17 +61,17 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
@@ -84,7 +84,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

@@ -98,7 +98,7 @@ El archivo de encabezado Ntddstor.h está disponible en Windows Driver Kit (WDK)
 
 <dl> <dt>
 
-[**CAPACIDAD DE \_ LECTURA DE ALMACENAMIENTO DE \_ \_ IOCTL**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
+[**CAPACIDAD DE \_ LECTURA DE \_ ALMACENAMIENTO DE IOCTL \_**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
 </dt> </dl>
 
  

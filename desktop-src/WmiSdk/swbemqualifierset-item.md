@@ -27,7 +27,7 @@ ms.locfileid: "118312996"
 
 El **método Item** del objeto [**SWbemQualifierSet**](swbemqualifierset.md) devuelve un objeto [**SWbemQualifier**](swbemqualifier.md) con nombre de la colección. Este es el método predeterminado de este objeto .
 
-Para obtener una explicación de esta sintaxis, consulte [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Obligatorio. Nombre del calificador que se recuperará.
 
 </dd> <dt>
 
-*iFlags* \[ en, opcional\]
+*iFlags* \[ in, opcional\]
 </dt> <dd>
 
 Reservado. El valor predeterminado es 0 (cero).
@@ -83,7 +83,7 @@ Error no especificado.
 
 </dd> <dt>
 
-**wbemErrNotFound:** 2147749890 (0x80041002)
+**wbemErrNotFound** : 2147749890 (0x80041002)
 </dt> <dd>
 
 El calificador especificado no existe.

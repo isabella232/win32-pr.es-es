@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_BIR_QUALITY (Winbio \_ Types. h)
-description: Especifique la calidad relativa de los datos biométricos en el BIR si no se ha especificado un valor entero de 0 a 100.
+title: WINBIO_BIR_QUALITY constantes (Winbio \_ types.h)
+description: Especifique la calidad relativa de los datos biométricos en bir si no se ha especificado un valor entero de 0 a 100.
 ms.assetid: A42AA21B-9AA5-4DB6-B58F-0776BEC63E6C
 topic_type:
 - apiref
@@ -13,23 +13,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1eb0881672c9e3bf51214cff93cb3f68d802b04
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bbb5139b1420ea3dbfbc9e37a9dc07421788bb051acb40449e9c0117031320e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911059"
 ---
-# <a name="winbio_bir_quality-constants"></a>Constantes de calidad de WINBIO \_ Bir \_
+# <a name="winbio_bir_quality-constants"></a>Constantes DE \_ CALIDAD DE BIR DE WINBIO \_
 
-El miembro de **calidad** de datos de la estructura de [**\_ \_ encabezado WINBIO Bir**](winbio-bir-header.md) utiliza las marcas siguientes para especificar la calidad relativa de los datos biométricos en Bir si no se ha especificado un valor entero de 0 a 100.
+El miembro **DataQuality** de la estructura [**\_ \_ WINBIO BIR HEADER**](winbio-bir-header.md) usa las marcas siguientes para especificar la calidad relativa de los datos biométricos en bir si no se ha especificado un valor entero de 0 a 100.
 
 
 
 | Constante o valor                                                                                                                                                                                                                                                                       | Descripción                                                                                       |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_DATA_QUALITY_NOT_SET"></span><span id="winbio_data_quality_not_set"></span><dl> <dt>**WINBIO \_ Calidad de datos \_ \_ no \_ establecida**</dt> <dt> 1</dt> </dl>                   | El creador de BIR admite las medidas de calidad, pero no se establece ningún valor en BIR.<br/> |
-| <span id="WINBIO_DATA_QUALITY_NOT_SUPPORTED"></span><span id="winbio_data_quality_not_supported"></span><dl> <dt>**WINBIO \_ Calidad de datos \_ \_ no \_ admitida**</dt> <dt> 2</dt> </dl> | El creador de BIR no admite las medidas de calidad.<br/>                             |
+| <span id="WINBIO_DATA_QUALITY_NOT_SET"></span><span id="winbio_data_quality_not_set"></span><dl> <dt>**WINBIO \_ CALIDAD \_ DE DATOS NO \_ \_ ESTABLECIDA**</dt> <dt> EN 1</dt> </dl>                   | Las medidas de calidad son compatibles con el creador de BIR, pero no se establece ningún valor en la BIR.<br/> |
+| <span id="WINBIO_DATA_QUALITY_NOT_SUPPORTED"></span><span id="winbio_data_quality_not_supported"></span><dl> <dt>**WINBIO \_ CALIDAD \_ DE DATOS NO \_ \_ ADMITIDA**</dt> <dt> 2</dt> </dl> | Las medidas de calidad no son compatibles con el creador de BIR.<br/>                             |
 
 
 
@@ -39,9 +39,9 @@ El miembro de **calidad** de datos de la estructura de [**\_ \_ encabezado WINBI
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

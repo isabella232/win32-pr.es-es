@@ -1,6 +1,6 @@
 ---
 title: Funciones básicas para usar en un contexto de dispositivo
-description: Las siguientes funciones de WCS ofrecen funcionalidades básicas de asignación de colores en contextos de dispositivo. Son útiles para todas las aplicaciones que necesitan implementar la administración de colores con poca sobrecarga y una intervención mínima del usuario.
+description: Las siguientes funciones de WCS ofrecen funcionalidades básicas de asignación de colores en contextos de dispositivo. Son útiles para todas las aplicaciones que necesitan implementar la administración de colores con poca sobrecarga y mínima intervención del usuario.
 ms.assetid: 199fac5e-daba-4aa3-a631-bb1eb2270b2e
 keywords:
 - Windows Sistema de colores (WCS), funciones
@@ -8,7 +8,7 @@ keywords:
 - administración de colores de imagen, funciones
 - administración de colores, funciones
 - colors,functions
-- WCS reference,functions
+- Referencia de WCS, funciones
 - referencia de WCS,functions
 - Windows Sistema de colores (WCS), contextos de dispositivo
 - WCS (Windows color), contextos de dispositivo
@@ -30,7 +30,7 @@ ms.locfileid: "118210984"
 ---
 # <a name="basic-functions-for-use-within-a-device-context"></a>Funciones básicas para usar en un contexto de dispositivo
 
-Las siguientes funciones de WCS ofrecen funcionalidades básicas [de asignación de](c.md) colores en contextos de dispositivo. Son útiles para todas las aplicaciones que necesitan implementar la administración de colores con poca sobrecarga y una intervención mínima del usuario.
+Las siguientes funciones de WCS ofrecen funcionalidades básicas de [asignación de](c.md) colores en contextos de dispositivo. Son útiles para todas las aplicaciones que necesitan implementar la administración de colores con poca sobrecarga y mínima intervención del usuario.
 
 
 

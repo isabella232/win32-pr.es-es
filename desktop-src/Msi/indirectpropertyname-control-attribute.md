@@ -13,9 +13,9 @@ ms.locfileid: "118634329"
 ---
 # <a name="indirectpropertyname-control-attribute"></a>Atributo de control IndirectPropertyName
 
-Este atributo es el nombre de una propiedad indirecta asociada al control . Si se [establece](indirect-control-attribute.md) el bit indirecto, el control muestra o cambia el valor de la propiedad que tiene este nombre y este nombre es el valor de la propiedad enumerada en la columna Propiedad de la [tabla Control](control-table.md).
+Este atributo es el nombre de una propiedad indirecta asociada al control . Si se [establece el](indirect-control-attribute.md) bit indirecto, el control muestra o cambia el valor de la propiedad que tiene este nombre y este nombre es el valor de la propiedad enumerada en la columna Propiedad de la [tabla Control](control-table.md).
 
-Para los controles inertes, este atributo devuelve Null.
+Para los controles inert, este atributo devuelve Null.
 
 ## <a name="valid-controls"></a>Controles válidos
 
@@ -25,7 +25,7 @@ Todos los controles activos.
 
 Este atributo no usa marcas de bits.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 

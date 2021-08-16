@@ -29,7 +29,7 @@ g \_ wszWMOriginalArtist
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE \_ TIPO \_ WMT**
+**CADENA DE TIPO WMT \_ \_**
 
 ## <a name="remarks"></a>Comentarios
 

@@ -109,7 +109,7 @@ Tipo de polaridad compuesta. Se trata de la polaridad de los pulsos de sincroniz
 
 
 
-| Value                                                                              | Significado                                                                    |
+| Valor                                                                              | Significado                                                                    |
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | La polaridad compuesta es positiva.<br/>                                 |
 | <dl> <dt>1 (0x1)</dt> </dl> | La polaridad compuesta es negativa.<br/>                                 |
@@ -186,7 +186,7 @@ Tipo de polaridad horizontal.
 
 
 
-| Value                                                                              | Significado                                                                   |
+| Valor                                                                              | Significado                                                                   |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | La polaridad horizontal es positiva.<br/>                               |
 | <dl> <dt>1 (0x1)</dt> </dl> | La polaridad horizontal es negativa.<br/>                               |
@@ -276,7 +276,7 @@ Indica qué tipo de serranía es necesario, si procede.
 
 
 
-| Value                                                                              | Significado                                                                                                  |
+| Valor                                                                              | Significado                                                                                                  |
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | El controlador debe proporcionar sincronización horizontal durante la sincronización vertical.<br/>                                 |
 | <dl> <dt>1 (0x1)</dt> </dl> | El controlador no debe proporcionar sincronización horizontal durante la sincronización vertical.<br/>                             |
@@ -301,7 +301,7 @@ Indica qué líneas de señal de vídeo se deben sincronizar, si procede.
 
 
 
-| Value                                                                              | Significado                                                                           |
+| Valor                                                                              | Significado                                                                           |
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | El pulso de sincronización debe aparecer en las tres líneas de señal de vídeo.<br/>                  |
 | <dl> <dt>1 (0x1)</dt> </dl> | El pulso de sincronización solo debe aparecer en la línea de señal de vídeo verde.<br/>          |
@@ -339,7 +339,7 @@ Tipo de modo estéreo. En la tabla siguiente se enumeran los valores posibles.
 
 
 
-| Value                                                                              | Significado                                                             |
+| Valor                                                                              | Significado                                                             |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | Sin estéreo.<br/>                                               |
 | <dl> <dt>1 (0x1)</dt> </dl> | Estéreo secuencial de campo con imagen derecha en sincronización estéreo.<br/> |
@@ -368,7 +368,7 @@ Tipo de sincronización de señal. En la tabla siguiente se enumeran los valores
 
 
 
-| Value                                                                              | Significado                             |
+| Valor                                                                              | Significado                             |
 |------------------------------------------------------------------------------------|-------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | Compuesto análogo<br/>         |
 | <dl> <dt>1 (0x1)</dt> </dl> | Composite analógico de Resalte<br/> |
@@ -446,7 +446,7 @@ Tipo de polaridad vertical.
 
 
 
-| Value                                                                              | Significado                                                                   |
+| Valor                                                                              | Significado                                                                   |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | La polaridad vertical es positiva.<br/>                                 |
 | <dl> <dt>1 (0x1)</dt> </dl> | La polaridad vertical es negativa<br/>                                  |
@@ -523,7 +523,7 @@ Tipo estándar de vídeo.
 
 
 
-| Value                                                                                | Significado                                                                                                        |
+| Valor                                                                                | Significado                                                                                                        |
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl>   | Otros<br/>                                                                                               |
 | <dl> <dt>1 (0x1)</dt> </dl>   | VESA DMT. De la especificación de control de tiempo del monitor de pantalla de Video Electronics Standard Association (VESA).<br/> |
@@ -564,7 +564,7 @@ Tipo estándar de vídeo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -574,7 +574,7 @@ Tipo estándar de vídeo.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

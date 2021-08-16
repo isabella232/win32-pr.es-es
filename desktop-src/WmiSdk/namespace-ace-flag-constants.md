@@ -27,7 +27,7 @@ ms.locfileid: "118555185"
 ---
 # <a name="namespace-ace-flag-constants"></a>Constantes de marca ACE de espacio de nombres
 
-En la lista siguiente se enumeran los valores **posibles** del campo Marcas en una entrada de Access Control WMI (ACE).
+En la lista siguiente se enumeran los valores **posibles** del campo Marcas en una entrada Access Control WMI (ACE).
 
 <dl> <dt>
 
@@ -91,7 +91,7 @@ La ACE solo se aplica a los espacios de nombres secundarios.
 
 
 
-Esto no lo establecen los clientes, pero se notifica a los clientes cuando el origen de una ACE es un espacio de nombres primario.
+Los clientes no lo establecen, pero se notifica a los clientes cuando el origen de una ACE es un espacio de nombres primario.
 
 
 </dt> </dl> </dd> </dl>
@@ -106,14 +106,14 @@ Esto no lo establecen los clientes, pero se notifica a los clientes cuando el or
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Constantes de seguridad wmi](wmi-security-constants.md)
+[Constantes de seguridad WMI](wmi-security-constants.md)
 </dt> <dt>
 
-[Establecer descriptores de seguridad namepace](setting-namespace-security-descriptors.md)
+[Establecer descriptores de seguridad de namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
 [Establecer la herencia de la seguridad del espacio de nombres](establishing-inheritance-of-namespace-security.md)

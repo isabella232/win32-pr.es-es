@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-Application-version
-description: Un número de versión para indicar que el AzApplication está actualizado.
+title: Atributo ms-DS-Az-Application-Version
+description: Número de versión para indicar que AzApplication está actualizado.
 ms.assetid: e7a2771a-cada-48a3-979e-59af6a398a79
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-AZ-Application-version
-- Esquema de AD de atributo msDS-AzApplicationVersion
+- Esquema de AD del atributo ms-DS-Az-Application-Version
+- Esquema de AD del atributo msDS-AzApplicationVersion
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ce0855f8462fb560bd337289a042f19be3380cd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57a57819c3c8677feb274294f5c56593173c8ae1b6f16eb3aff4f56cf69add33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426970"
 ---
-# <a name="ms-ds-az-application-version-attribute"></a>atributo MS-DS-AZ-Application-version
+# <a name="ms-ds-az-application-version-attribute"></a>Atributo ms-DS-Az-Application-Version
 
-Un número de versión para indicar que el AzApplication está actualizado.
+Número de versión para indicar que AzApplication está actualizado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------------------|
-| CN                | MS-DS-AZ-Application-version                         |
-| Nombre para mostrar de LDAP | msDS-AzApplicationVersion                            |
-| Tamaño              | \-                                                   |
-| Actualizar privilegio  | Administrador de AzRoles                                        |
+| CN                | ms-DS-Az-Application-Version                         |
+| Ldap-Display-Name | msDS-AzApplicationVersion                            |
+| Size              | \-                                                   |
+| Actualizar privilegios  | Administrador de AzRoles                                        |
 | Frecuencia de actualización  | Cuando cambia el número de versión de la aplicación. |
 | Attribute-Id      | 1.2.840.113556.1.4.1817                              |
-| System-ID-GUID    | 7184a120-3ac4-47ae-848f-fe0ab20784d4                 |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)          |
+| System-Id-Guid    | 7184a120-3ac4-47ae-848f-fe0ab20784d4                 |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)          |
 
 
 
@@ -52,20 +52,20 @@ Un número de versión para indicar que el AzApplication está actualizado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Un número de versión para indicar que el AzApplication está actualizado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Un número de versión para indicar que el AzApplication está actualizado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Un número de versión para indicar que el AzApplication está actualizado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Un número de versión para indicar que el AzApplication está actualizado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 

@@ -4,7 +4,7 @@ description: El diseño de una propiedad personalizada, un evento o un patrón d
 ms.assetid: e4b224a0-3958-4ae7-96cb-fe6dc16511a7
 keywords:
 - Automatización de la interfaz de usuario,propiedades personalizadas
-- Automatización de la interfaz de usuario,información general sobre eventos
+- Automatización de la interfaz de usuario, información general sobre eventos
 - Automatización de la interfaz de usuario, información general sobre los patrones de control
 - Automatización de la interfaz de usuario, diseñar propiedades personalizadas
 - Automatización de la interfaz de usuario, diseñar eventos
@@ -66,7 +66,7 @@ Una propiedad de elemento de automatización personalizada o una propiedad de pa
 
 ## <a name="designing-custom-events"></a>Diseño de eventos personalizados
 
-Las aplicaciones usan Automatización de la interfaz de usuario notificaciones de eventos para responder a cambios y acciones que implican elementos de interfaz de usuario. La mayoría de las propiedades tienen eventos de cambio de propiedad asociados Automatización de la interfaz de usuario genera cuando cambia el valor de la propiedad. Si introduce una propiedad personalizada, debe considerar la posibilidad de introducir los eventos personalizados correspondientes que también sean necesarios.
+Las aplicaciones usan Automatización de la interfaz de usuario notificaciones de eventos para responder a cambios y acciones que implican elementos de interfaz de usuario. La mayoría de las propiedades tienen eventos de cambio de propiedad asociados que Automatización de la interfaz de usuario genera cuando cambia el valor de la propiedad. Si introduce una propiedad personalizada, debe considerar la posibilidad de introducir los eventos personalizados correspondientes que también sean necesarios.
 
 Un evento personalizado debe cumplir las siguientes directrices de diseño:
 
@@ -77,7 +77,7 @@ Un evento personalizado debe cumplir las siguientes directrices de diseño:
 
 [WinEvents es](winevents-infrastructure.md) un mecanismo útil de comunicación y eventos entre procesos en la plataforma Windows Microsoft. Sin embargo, la introducción de un nuevo identificador de WinEvent es arriesgada, ya que puede provocar colisiones con otras aplicaciones o con el sistema operativo, lo que hace que el sistema se vuelva inestable. Para evitar colisiones, Microsoft ha definido varias categorías diferentes de WinEvents y, para cada categoría, ha definido uno o varios intervalos de valores para su uso como los IDs de WinEvent. Para obtener más información, vea [Asignación de los IDs de WinEvent.](allocation-of-winevent-ids.md)
 
-Los Automatización de la interfaz de usuario personalizados evitan conflictos asignando el identificador de evento internamente en el marco de trabajo de automatización de la interfaz de usuario.
+Los Automatización de la interfaz de usuario personalizados evitan conflictos mediante la asignación interna del identificador de evento en el marco de trabajo de automatización de la interfaz de usuario.
 
 ## <a name="designing-custom-control-patterns"></a>Diseño de patrones de control personalizados
 
@@ -91,7 +91,7 @@ Un patrón de control personalizado debe cumplir las siguientes directrices de d
 
 ## <a name="custom-control-types"></a>Tipos de control personalizados
 
-Aunque este tema se centra en cómo registrar propiedades Automatización de la interfaz de usuario, eventos y patrones de control personalizados, también es posible introducir nuevos tipos de control. A diferencia de las propiedades personalizadas, los eventos y los patrones de control, un tipo de control personalizado no se puede registrar mediante programación en tiempo de ejecución porque en realidad es solo un valor potencial de la Automatización de la interfaz de usuario ControlType. Sin embargo, un identificador de tipo de control personalizado se puede definir, publicar y hacer que esté disponible para que otros clientes y proveedores los usen. Para obtener más información sobre los tipos de control, [vea Automatización de la interfaz de usuario información general sobre los tipos de control .](uiauto-controltypesoverview.md)
+Aunque este tema se centra en cómo registrar propiedades Automatización de la interfaz de usuario, eventos y patrones de control personalizados, también es posible introducir nuevos tipos de control. A diferencia de las propiedades personalizadas, los eventos y los patrones de control, un tipo de control personalizado no se puede registrar mediante programación en tiempo de ejecución porque en realidad es solo un valor potencial de la Automatización de la interfaz de usuario ControlType. Sin embargo, un identificador de tipo de control personalizado se puede definir, publicar y hacer que esté disponible para que otros clientes y proveedores los usen. Para obtener más información sobre los tipos de control, [vea Automatización de la interfaz de usuario información general sobre los tipos de control](uiauto-controltypesoverview.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -4,20 +4,20 @@ ms.assetid: 719954bf-0d7d-f647-2d3f-a77d87df204e
 title: DirectXMath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fd35f1faf004bc55a6802da204a6c2fe4e7869b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5a041696daf5d5cad8467d01f8ef7912d177ba63a7193945b4cb52a430f4afc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501772"
 ---
 # <a name="directxmath"></a>DirectXMath
 
 ## <a name="purpose"></a>Propósito
 
-DirectXMath API proporciona funciones y tipos de C++ compatibles con SIMD para operaciones matemáticas de gráficos y álgebra lineal comunes a las aplicaciones directX. La biblioteca proporciona versiones optimizadas para Windows de 32 bits (x86), Windows de 64 bits (x64) y Windows en ARM/ARM64 mediante compatibilidad intrínseca de SSE, AVX y ARM-NEON en el compilador Visual C++.
+DirectXMath API proporciona funciones y tipos de C++ compatibles con SIMD para operaciones matemáticas de gráficos y álgebra lineal comunes comunes a las aplicaciones DirectX. La biblioteca proporciona versiones optimizadas para Windows de 32 bits (x86), Windows de 64 bits (x64) y Windows en ARM/ARM64 a través de compatibilidad intrínseca de SSE, AVX y ARM-NEON en el compilador Visual C++.
 
-Para los desarrolladores nuevos en DirectXMath, es posible que quiera considerar la posibilidad de usar el contenedor SimpleMath en el Kit de herramientas de *DirectX* para [DirectX 11](https://go.microsoft.com/fwlink/?LinkId=248929)  /  [DirectX12](https://go.microsoft.com/fwlink/?LinkID=615561) como punto de partida.
+Para los desarrolladores nuevos en DirectXMath, puede considerar la posibilidad de usar el contenedor SimpleMath en el Kit de herramientas de *DirectX* para [DirectX 11](https://go.microsoft.com/fwlink/?LinkId=248929)  /  [DirectX12](https://go.microsoft.com/fwlink/?LinkID=615561) como punto de partida.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -38,9 +38,9 @@ La biblioteca DirectXMath está diseñada para desarrolladores de C++ que trabaj
 
 ## <a name="obtaining-directxmath"></a>Obtención de DirectXMath
  
-Los encabezados DirectXMath se incluyen en el Windows SDK que se incluye con Visual Studio 2012 o posterior, y como encabezado todo en línea no hay ningún archivo DLL o biblioteca estática con el que vincular. También está disponible como paquete en [NuGet.](https://www.nuget.org/packages/directxmath/)
+Los encabezados DirectXMath se incluyen en el SDK de Windows que viene con Visual Studio 2012 o posterior, y como encabezado todo en línea no hay ningún archivo DLL o biblioteca estática con la que vincular. También está disponible como paquete en [NuGet](https://www.nuget.org/packages/directxmath/).
 
-DirectXMath es de código abierto con la [licencia MIT](https://opensource.org/licenses/MIT) hospedada en [GitHub.](https://github.com/Microsoft/DirectXMath)
+DirectXMath es de código abierto bajo la [licencia MIT](https://opensource.org/licenses/MIT) hospedada [en GitHub](https://github.com/Microsoft/DirectXMath).
 
 
 

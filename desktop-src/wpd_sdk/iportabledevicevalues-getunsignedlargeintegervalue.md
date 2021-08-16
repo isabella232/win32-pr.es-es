@@ -51,7 +51,7 @@ Clave **REFPROPERTYKEY** que especifica el elemento que se recuperará.
 *pValue* \[ out\]
 </dt> <dd>
 
-Puntero al valor **de ULONGLONG recuperado.**
+Puntero al valor de **ULONGLONG recuperado.**
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 | Código devuelto                                                                                                            | Descripción                                                             |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                   | El método se ha llevado a cabo de forma correcta.<br/>                                        |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key no* es un **tipo ULONGLONG.**<br/> |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key* no es un **tipo ULONGLONG.**<br/> |
 | <dl> <dt>**HRESULT \_ DE \_ WIN32(ERROR \_ NO \_ ENCONTRADO)**</dt> </dl> | La propiedad especificada por *key no* está en la colección.<br/>    |
 
 
@@ -86,7 +86,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::SetUnsignedLargeIntegerValue**](iportabledevicevalues-setunsignedlargeintegervalue.md)

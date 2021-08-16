@@ -1,48 +1,48 @@
 ---
-title: Acerca de IMAPi
-description: IMAPi permite la creación de medios ópticos mediante una gran variedad de sistemas de archivos.
+title: Acerca de IMAPI
+description: IMAPI permite la creación de medios ópticos mediante una variedad de sistemas de archivos.
 ms.assetid: 12e99e39-8503-4f50-899a-d1ae69d5106d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88994cd0e79cf65e4e743a8a83bcb58000fab1a0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d669c23899c1610cdb14d8d01e722defd794b1842b64017cc45523d1fd514300
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103772643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118758905"
 ---
-# <a name="about-imapi"></a>Acerca de IMAPi
+# <a name="about-imapi"></a>Acerca de IMAPI
 
-IMAPi permite la creación de medios ópticos mediante una gran variedad de sistemas de archivos.
+IMAPI permite la creación de medios ópticos mediante una variedad de sistemas de archivos.
 
 ## <a name="features"></a>Características
 
-IMAPi proporciona las siguientes capacidades:
+IMAPI proporciona las siguientes funcionalidades:
 
--   Crea y quema discos de sesión única y multisesión.
--   Crea y graba discos de arranque.
--   Crea y graba imágenes de disco de CD sin procesar.
--   Proporciona acceso de bajo nivel al motor de grabación para desarrollar la compatibilidad con nuevos dispositivos.
--   Proporciona acceso a las propiedades de la grabadora extendida para el desarrollo de la compatibilidad con nuevos dispositivos.
+-   Crea y graba discos de sesión única y de varias sesiones.
+-   Crea y arranca discos de arranque.
+-   Crea y crea imágenes raw CD de disco a la vez.
+-   Proporciona acceso de bajo nivel al motor de grabación para desarrollar compatibilidad con nuevos dispositivos.
+-   Proporciona acceso a las propiedades de grabadora extendidas para desarrollar compatibilidad con nuevos dispositivos.
 -   Proporciona opciones de comprobación de la grabación.
 
-IMAPi admite los siguientes formatos. Para obtener más información, consulte [formatos de disco](disc-formats.md).
+IMAPI admite los siguientes formatos. Para obtener más información, vea [Formatos de disco](disc-formats.md).
 
--   Formato de imagen ISO9660 (incluye audio Redbook).
--   Formato de Joliet.
+-   Formato de imagen ISO9660 (incluye Redbook Audio).
+-   Formato Joliet.
 -   Formato de disco universal (UDF).
 
-IMAPi admite los siguientes dispositivos multimedia.
+IMAPI admite los siguientes dispositivos multimedia.
 
--   CD grabable (CD-R). Anteriormente conocido como CD Write.
--   CD regrabable (CD-RW)
--   DVD grabable (DVD-R y DVD + R).
--   DVD regrabable (DVD-RW y DVD + RW).
+-   CD grabable (CD-R). Anteriormente se conoce como escritura de CD una vez.
+-   CD reescribible (CD-RW)
+-   DVD grabable (DVD-R y DVD+R).
+-   DVD reescribible (DVD-RW y DVD+RW).
 -   DVD de acceso aleatorio (DVD-RAM).
--   DVD grabable de doble capa (en formatos DVD-R y DVD + R).
+-   DVD de doble capa grabable (en formatos DVD-R y DVD+R).
 -   BD grabable (BD-R)
--   BD regrabable (BD-RE)
--   Escribe en otros medios similares a disco.
+-   BD reescribible (BD-RE)
+-   Escribe en otros medios de disco.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -51,9 +51,9 @@ IMAPi admite los siguientes dispositivos multimedia.
 [Formatos de disco](disc-formats.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

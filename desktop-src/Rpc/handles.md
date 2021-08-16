@@ -1,23 +1,23 @@
 ---
 title: Asas
-description: Hasta dos partes de la descripción de la cadena de formato de una dirección de procedimiento que controla.
+description: Hasta dos partes en la descripción de cadena de formato de los identificadores de dirección de un procedimiento.
 ms.assetid: 11c6742c-b2f5-4201-8b1c-7e31ae52e0da
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d1c1ce68b74440fc9339fb9cf9170bfdd1fdfcd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1bb31dcf075b7b07b65d2a976a37386e164d8cadc11903a33c22172c433a3a51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118929542"
 ---
 # <a name="handles"></a>Asas
 
-Hasta dos partes de la descripción de la cadena de formato de una dirección de procedimiento que controla. La primera parte es el \_ tipo de identificador<1> campo de la descripción de un procedimiento, que se usa para indicar identificadores implícitos. Esta parte siempre está presente. La segunda parte es una descripción de parámetro de cualquier identificador explícito en el procedimiento. Ambos se explican en las secciones siguientes, junto con una explicación de la compatibilidad del compilador de MIDL adicional de la estructura de descriptores de código auxiliar para los problemas de identificador de enlace.
+Hasta dos partes en la descripción de cadena de formato de los identificadores de dirección de un procedimiento. La primera parte es el tipo de identificador<1> de la descripción de un procedimiento, que se \_ usa para indicar identificadores implícitos. Esta parte siempre está presente. La segunda parte es una descripción de parámetro de cualquier identificador explícito en el procedimiento. Ambos se explican en las secciones siguientes, junto con una explicación de la compatibilidad adicional del compilador MIDL de la estructura del descriptor de código auxiliar para los problemas de identificador de enlace.
 
 ## <a name="implicit-handles"></a>Identificadores implícitos
 
-Si un procedimiento usa un identificador implícito para el enlace, el \_ tipo de identificador<1> campo de la descripción del procedimiento contiene uno de los tres valores distintos de cero válidos. La compatibilidad del compilador de MIDL con los identificadores implícitos se encuentra en el \_ \_ campo información de identificador implícita de la estructura del descriptor de código auxiliar:
+Si un procedimiento usa un identificador implícito para el enlace, el tipo de identificador<un campo> de la descripción del procedimiento contiene uno de los tres valores distintos de \_ cero válidos. La compatibilidad del compilador MIDL con identificadores implícitos se encuentra en el campo IMPLICIT \_ HANDLE INFO de la estructura Descriptor de código \_ auxiliar:
 
 ``` syntax
 typedef  (__RPC_FAR * GENERIC_BINDING_ROUTINE)();
@@ -44,15 +44,15 @@ union
   } IMPLICIT_HANDLE_INFO;
 ```
 
-Si el procedimiento usa un identificador automático, el miembro **pAutoHandle** contiene la dirección de la variable de identificador automático definido por stub.
+Si el procedimiento usa un identificador automático, el **miembro pAutoHandle** contiene la dirección de la variable de identificador automático definida por el código auxiliar.
 
-Si el procedimiento usa un identificador primitivo implícito, el miembro **pPrimitiveHandle** contiene la dirección de la variable de identificador primitivo definida por el código auxiliar.
+Si el procedimiento usa un identificador primitivo implícito, el **miembro pPrimitiveHandle** contiene la dirección de la variable de identificador primitivo definida por el código auxiliar.
 
-Por último, si el procedimiento usa un identificador genérico implícito, el miembro **pGenericBindingInfo** contiene la dirección del puntero a la estructura **de \_ \_ información de enlace genérica** correspondiente. La descripción del **\_ código auxiliar \_ de MIDL** de la estructura de datos contiene un puntero a una colección de estructuras de **\_ \_ pares de enlace genéricos** . La entrada en la posición cero de esta colección está reservada para las rutinas de **enlace** y **desenlace** correspondientes al identificador de enlace genérico al que hace referencia **pGenericBindingInfo** en la **\_ \_ información de identificador implícita**. El tipo de identificador de enlace implícito se indica en la cadena de formato.
+Por último, si el procedimiento usa un identificador genérico implícito, el **miembro pGenericBindingInfo** contiene la dirección del puntero a la estructura **GENERIC BINDING \_ \_ INFO** correspondiente. La estructura de datos **MIDL \_ STUB \_ DESC** contiene un puntero a una colección de estructuras **GENERIC BINDING \_ \_ PAIR.** La entrada en la posición cero de  esta  colección está reservada para las rutinas de enlace y desenlazadas correspondientes al identificador de enlace genérico al que hace referencia **pGenericBindingInfo** en **IMPLICIT \_ HANDLE \_ INFO**. El tipo de identificador de enlace implícito se indica en la cadena de formato.
 
 ## <a name="explicit-handles"></a>Identificadores explícitos
 
-Hay tres posibles tipos de identificador explícito: context, Generic y Primitive. En el caso de un identificador explícito (o un \[  \] identificador de contexto de solo salida, que se administra de la misma manera), la información del controlador de enlace aparece como uno de los parámetros del procedimiento. Las tres descripciones posibles son las siguientes.
+Hay tres posibles tipos de identificador explícitos: contexto, genérico y primitivo. En el caso de un identificador explícito (o un identificador de contexto de solo salida, que se controla de la misma manera), la información del identificador de enlace aparece como uno de los parámetros \[  \] del procedimiento. Las tres descripciones posibles son las siguientes.
 
 Primitivo
 
@@ -65,9 +65,9 @@ La marca<1> indica si un puntero pasa el identificador.
 El desplazamiento<2> proporciona el desplazamiento desde el principio de la pila hasta el identificador primitivo.
 
 > [!Note]  
-> Una descripción de identificador primitivo en la cadena de formato de tipo se reduce a un único \_ pase por alto de FC.
+> Una descripción de identificador primitivo en la cadena de formato de tipo se reduce a una única FC \_ IGNORE.
 
- 
+ 
 
 Genérico
 
@@ -75,60 +75,60 @@ Genérico
 FC_BIND_GENERIC, flag_and_size<1>, offset<2>, binding_routine_pair_index<1>, FC_PAD
 ```
 
-La marca \_ y el \_ tamaño<1> tiene la marca superior y el tamaño de la parte inferior. La marca indica si el identificador se pasa mediante un puntero. El campo tamaño proporciona el tamaño del tipo de identificador genérico definido por el usuario. Este tamaño está limitado a 1, 2 o 4 bytes en sistemas de 32 bits y 1, 2, 4 u 8 bytes en sistemas de 64 bits.
+La marca y el tamaño<1> la marca superior nibble y el tamaño \_ \_ inferior. La marca indica si un puntero pasa el identificador. El campo tamaño proporciona el tamaño del tipo de identificador genérico definido por el usuario. Este tamaño se limita a 1, 2 o 4 bytes en sistemas de 32 bits y 1, 2, 4 u 8 bytes en sistemas de 64 bits.
 
-El campo desplazamiento<2> proporciona el desplazamiento desde el principio de la pila del puntero a los datos del tamaño especificado.
+El campo<2> proporciona el desplazamiento desde el principio de la pila del puntero hasta los datos del tamaño especificado.
 
-El \_ \_ \_ campo de índice de rutina de enlace<1> proporciona el índice en el campo AGenericBindingRoutinePairs del descriptor de código auxiliar para los punteros de función de rutina de **enlace** y **desenlace** para el identificador genérico.
+El índice de par de rutinas de enlace<el campo 1> proporciona el índice en el \_ \_ campo \_ aGenericBindingRoutinePairs   del descriptor de código auxiliar para enlazar y desenlace punteros de función rutinaria para el identificador genérico.
 
 > [!Note]  
-> Una descripción de identificador genérico en el formato de tipo es la descripción del tipo de datos relacionado.
+> Una descripción de identificador genérico en el formato de tipo es solo la descripción del tipo de datos relacionado.
 
- 
+ 
 
-Context
+Contexto
 
 ``` syntax
 FC_BIND_CONTEXT flags<1> offset<2> context_rundown_routine_index<1> param_num<1>
 ```
 
-Las marcas<1> indican cómo se pasa el identificador y qué tipo es. En la tabla siguiente se muestran marcas válidas.
+Las marcas<1> indican cómo se pasa el identificador y qué tipo es. Las marcas válidas se muestran en la tabla siguiente.
 
 
 
 | Hex | Marca                                   |
 |-----|----------------------------------------|
-| 80  | el \_ parámetro de identificador \_ es \_ mediante \_ ptr            |
-| 40  | el \_ parámetro \_ de identificador está \_ en                  |
-| 20  | el \_ parámetro de identificador \_ está \_ fuera                 |
-| 21  | el \_ parámetro de identificador \_ es \_ devuelto              |
-| 08  | identificador de contexto de NDR \_ STRICT \_ \_           |
-| 04  | \_identificador de contexto NDR \_ \_ sin \_ serialización    |
-| 02  | \_ \_ serializar identificador de contexto de NDR \_        |
-| 01  | el \_ identificador de contexto de NDR \_ \_ no puede \_ ser \_ nulo |
+| 80  | HANDLE \_ PARAM \_ ES A TRAVÉS \_ DE \_ PTR            |
+| 40  | HANDLE \_ PARAM \_ ESTÁ \_ EN                  |
+| 20  | HANDLE \_ PARAM \_ IS \_ OUT                 |
+| 21  | HANDLE \_ PARAM \_ IS \_ RETURN              |
+| 08  | IDENTIFICADOR DE \_ CONTEXTO ESTRICTO \_ DE BAND \_           |
+| 04  | IDENTIFICADOR DE CONTEXTO DE BAND \_ \_ SIN \_ \_ SERIALIZACIÓN    |
+| 02  | SERIALIZACIÓN \_ DEL IDENTIFICADOR DE CONTEXTO DE \_ \_ SERIALIZACIÓN        |
+| 01  | EL IDENTIFICADOR DE CONTEXTO DE TAMPOCO \_ \_ PUEDE SER \_ \_ \_ NULL |
 
 
 
- 
+ 
 
-Las primeras cuatro marcas siempre están presentes, las cuatro últimas se agregaron en Windows 2000.
+Las cuatro primeras marcas siempre han estado presentes, las cuatro últimas se agregaron en Windows 2000.
 
-El campo desplazamiento<2> proporciona el desplazamiento desde el inicio de la pila hasta el identificador de contexto.
+El desplazamiento<2> campo proporciona el desplazamiento desde el inicio de la pila hasta el identificador de contexto.
 
-El \_ Índice de \_ rutina de informe detallado de contexto \_<1> proporciona un índice en el campo **apfnNdrRundownRoutines** del descriptor de código auxiliar de la rutina de detención utilizada para este identificador de contexto. El compilador siempre genera un índice. En el caso de las rutinas que no tienen una rutina de informe detallado, se trata de un índice de una posición de tabla que contiene null.
+El índice de rutina de desenlace de contexto<1> proporciona un índice en el \_ \_ campo \_ **apfnRunRundownRoutines** del descriptor de código auxiliar para la rutina de desmontaje utilizada para este identificador de contexto. El compilador siempre genera un índice. En el caso de las rutinas que no tienen una rutina de desmontaje, se trata de un índice de una posición de tabla que contiene null.
 
-En el caso de los códigos auxiliares integrados **: Oi2**, el parámetro \_ num<1> proporciona el recuento ordinal, empezando por cero y especificando el identificador de contexto que se encuentra en el procedimiento especificado.
+Para los códigos auxiliares integrados **en –Oi2**, el parámetro num<1> proporciona el recuento ordinal, empezando por cero, especificando qué identificador de contexto se encuentra en el procedimiento \_ especificado.
 
-En el caso de las versiones anteriores del intérprete, param \_ num<1> proporciona el número de parámetro del identificador de contexto, empezando por cero, en el procedimiento.
+Para las versiones anteriores del intérprete, el parámetro param num<1> proporciona el número de parámetro del identificador de contexto, empezando por cero, en \_ su procedimiento.
 
 > [!Note]  
-> Una descripción de identificador de contexto en la cadena de formato de tipo no tendrá el desplazamiento<2> en la descripción.
+> Una descripción del identificador de contexto en la cadena de formato de tipo no tendrá el desplazamiento<2> en la descripción.
 
- 
+ 
 
-## <a name="the-new-oif-header"></a>Nuevo encabezado – interfaces
+## <a name="the-new-oif-header"></a>Nuevo encabezado –Oif
 
-Como se mencionó anteriormente, el encabezado [**–**](/windows/desktop/Midl/-oi) activations se expande en el encabezado **– OI** . Para mayor comodidad, aquí se muestran todos los campos:
+Como se mencionó anteriormente, [**el encabezado –Oif**](/windows/desktop/Midl/-oi) se expande en el **encabezado –Oi.** Para mayor comodidad, aquí se muestran todos los campos:
 
 (El encabezado anterior)
 
@@ -141,7 +141,7 @@ stack_size<2>
 [explicit_handle_description<>]
 ```
 
-(Extensiones de [**-interfaces**](/windows/desktop/Midl/-oi) )
+(Las [**extensiones –Oif)**](/windows/desktop/Midl/-oi)
 
 ``` syntax
 constant_client_buffer_size<2>
@@ -150,11 +150,11 @@ INTERPRETER_OPT_FLAGS<1>
 number_of_params<1>
 ```
 
-El \_ \_ \_ tamaño de búfer de cliente constante<2> proporciona el tamaño del búfer de serialización que podría haber sido calculado previamente por el compilador. Esto puede ser solo un tamaño parcial, ya que la marca ClientMustSize desencadena el tamaño.
+El tamaño de búfer de cliente constante<2> proporciona el tamaño del búfer de serialización que el compilador podría haber calculado \_ \_ \_ previamente. Puede ser solo un tamaño parcial, ya que la marca ClientMustSize desencadena el tamaño.
 
-El \_ \_ \_ tamaño de búfer de servidor constante<2> proporciona el tamaño del búfer de serialización calculado por el compilador. Esto puede ser solo un tamaño parcial, ya que la marca ServerMustSize desencadena el tamaño.
+El tamaño de búfer de servidor constante<2> proporciona el tamaño del búfer de serialización según lo \_ \_ \_ precalutado por el compilador. Puede ser solo un tamaño parcial, ya que la marca ServerMustSize desencadena el tamaño.
 
-Las \_ marcas opt del intérprete \_ se definen en Ndrtypes. h:
+Las MARCAS \_ DE OPT DEL INTÉRPRETE se definen en \_ Typetypes.h:
 
 ``` syntax
 typedef struct
@@ -170,16 +170,16 @@ typedef struct
   } INTERPRETER_OPT_FLAGS, *PINTERPRETER_OPT_FLAGS;
 ```
 
--   El bit ServerMustSize se establece si el servidor necesita realizar un paso de tamaño del búfer.
--   El bit ClientMustSize se establece si el cliente necesita realizar un paso de tamaño del búfer.
+-   El bit ServerMustSize se establece si el servidor necesita realizar un paso de tamaño de búfer.
+-   El bit ClientMustSize se establece si el cliente necesita realizar un paso de ajuste de tamaño de búfer.
 -   El bit HasReturn se establece si el procedimiento tiene un valor devuelto.
 -   El bit HasPipes se establece si el paquete de canalización debe usarse para admitir un argumento de canalización.
 -   El bit HasAsyncUuid se establece si el procedimiento es un procedimiento DCOM asincrónico.
--   El bit HasExtensions indica que se usan las extensiones de Windows 2000 y versiones posteriores.
+-   El bit HasExtensions indica que Windows 2000 y las extensiones posteriores.
 -   El bit HasAsyncHandle indica un procedimiento RPC asincrónico.
 
-El bit HasAsyncHandle se ha usado inicialmente para una implementación DCOM diferente de compatibilidad asincrónica y, por tanto, no se pudo usar para la compatibilidad asincrónica de estilo actual en DCOM. El bit HasAsyncUuid indica actualmente esto.
+El bit HasAsyncHandle se ha usado inicialmente para una implementación DCOM diferente de compatibilidad asincrónica y, por lo tanto, no se pudo usar para la compatibilidad asincrónica de estilo actual en DCOM. El bit HasAsyncUuid lo indica actualmente.
 
- 
+ 
 
- 
+ 

@@ -3,26 +3,26 @@ title: Funciones de compresión de audio
 description: Funciones de compresión de audio
 ms.assetid: da207a50-9c67-4cf3-920b-5878637060db
 keywords:
-- audio multimedia, funciones ACM
-- audio, funciones ACM
-- Administrador de compresión de audio (ACM), funciones
-- ACM (Administrador de compresión de audio), funciones
+- audio multimedia, funciones de ACM
+- audio, funciones de ACM
+- administrador de compresión de audio (ACM), funciones
+- ACM (administrador de compresión de audio), funciones
 - Referencia de ACM, funciones
-- referencia de ACM, funciones
-- Funciones ACM
+- referencia de ACM,functions
+- Funciones de ACM
 - compresión de audio, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a495e52e404d04955a2c330729ef82cccb726554
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 142be3301841f8d9ecf083a5eed2004e77fb9f9b7fe100959ac562cdd11843ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941813"
 ---
 # <a name="audio-compression-functions"></a>Funciones de compresión de audio
 
-Las siguientes funciones se usan con la compresión de audio.
+Las siguientes funciones se usan con compresión de audio.
 
 -   [**acmDriverAdd**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 -   [**acmDriverClose**](/windows/desktop/api/Msacm/nf-msacm-acmdriverclose)
@@ -68,9 +68,9 @@ Las siguientes funciones se usan con la compresión de audio.
 
 <dl> <dt>
 
-[Referencia del administrador de compresión de audio](audio-compression-manager-reference.md)
+[Referencia del Administrador de compresión de audio](audio-compression-manager-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

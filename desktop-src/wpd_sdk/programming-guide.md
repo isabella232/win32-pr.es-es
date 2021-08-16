@@ -15,7 +15,7 @@ ms.locfileid: "118193856"
 
 El origen principal de esta guía de programación es un ejemplo que se incluye con el Kit de desarrollo de software (SDK) de Windows Portable Devices (WPD). Este ejemplo, denominado WpdApiSample.exe, consta de siete módulos .cpp. Seis de estos módulos contienen el código que muestra 26 tareas que una aplicación puede realizar mediante la interfaz de programación de aplicaciones (API) de WPD.
 
-Las excepciones a lo anterior son los temas que describen: tareas de servicio de dispositivo, el menú contextual y las extensiones de hoja de propiedades; estos temas no se han tomado de WpdApiSample. Las tareas del servicio de dispositivo se basan en el ejemplo denominado WpdServiceApiSample. El menú contextual y las extensiones de la hoja de propiedades son fragmentos de código tomados de aplicaciones que no se envían con el SDK Windows.
+Las excepciones a lo anterior son los temas que describen: tareas de servicio de dispositivo, el menú contextual y las extensiones de hoja de propiedades; estos temas no se han tomado de WpdApiSample. Las tareas del servicio de dispositivo se basan en el ejemplo denominado WpdServiceApiSample. El menú contextual y las extensiones de hoja de propiedades son fragmentos de código tomados de aplicaciones que no se envían con el SDK Windows.
 
 Las secciones siguientes se centran en las tareas que se logran en estos ejemplos y explican cómo se realiza cada una de ellas mediante las interfaces WPD y varios de los métodos que se encuentran en estas interfaces.
 

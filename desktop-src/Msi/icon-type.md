@@ -23,7 +23,7 @@ El tipo Binary se puede usar con los siguientes tipos de ContextData.
 
 **ShortcutIcon ContextData**
 
-Un módulo de combinación configurable puede usar este tipo para permitir [](icon-table.md) al usuario proporcionar una clave externa a una fila de la tabla de iconos que contiene una imagen adecuada para su uso como icono de acceso directo. Para especificar un elemento configurable de este tipo, los autores de módulos deben escribir el nombre del elemento configurable en la columna Nombre, escribir "1" en la columna Formato, escribir "Icono" en la columna Tipo y escribir "ShorcutIcon" en la columna ContextData de la tabla ModuleConfiguration. Este tipo no es adecuado para su uso en una tabla de interfaz de usuario. Para modificar una clave de la tabla Icon de estas tablas, vea Icon ContextData en [Tipo binario.](binary-type.md)
+Un módulo de combinación configurable puede usar este tipo para permitir [](icon-table.md) al usuario proporcionar una clave externa a una fila de la tabla de iconos que contiene una imagen adecuada para su uso como icono de acceso directo. Para especificar un elemento configurable de este tipo, los autores del módulo deben escribir el nombre del elemento configurable en la columna Nombre, escribir "1" en la columna Formato, escribir "Icono" en la columna Tipo y escribir "ShorcutIcon" en la columna ContextData de la tabla ModuleConfiguration. Este tipo no es adecuado para su uso en una tabla de interfaz de usuario. Para modificar una clave de la tabla Icon de estas tablas, vea Icon ContextData en [Tipo binario.](binary-type.md)
 
  
 

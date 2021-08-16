@@ -37,11 +37,11 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se concilian los valores de esquemas diferentes.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
@@ -82,7 +82,7 @@ Se concilian los valores de esquemas diferentes.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
