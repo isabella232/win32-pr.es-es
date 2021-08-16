@@ -1,28 +1,28 @@
 ---
 description: La interfaz IX509Enrollment expone los métodos siguientes.
 ms.assetid: 10BE79D8-A99B-469F-BB91-C31571E80D5C
-title: Métodos IX509Enrollment
+title: IX509 Métodos de inscripción
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c3bb4c9765fac756d968caeec36c1e6502211b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a87cd525233a97ad4bef33ed2d54672ddac73cfc11c008305cb045db1fb129e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881725"
 ---
-# <a name="ix509enrollment-methods"></a>Métodos IX509Enrollment
+# <a name="ix509enrollment-methods"></a>IX509 Métodos de inscripción
 
-La interfaz [IX509Enrollment](enrollwithix509enrollmenthelper.md) expone los métodos siguientes.
+La [interfaz IX509Enrollment](enrollwithix509enrollmenthelper.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Método CreatePFX**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-createpfx)
--   [**Método CreateRequest**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-createrequest)
--   [**Método ENROLL**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-enroll)
+-   [**CreatePFX (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-createpfx)
+-   [**CreateRequest (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-createrequest)
+-   [**Método Enroll**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-enroll)
 -   [**Método Initialize**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initialize)
--   [**Método InitializeFromRequest**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initializefromrequest)
--   [**Método InitializeFromTemplateName**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initializefromtemplatename)
+-   [**InitializeFromRequest (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initializefromrequest)
+-   [**InitializeFromTemplateName (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initializefromtemplatename)
 -   [**Método InstallResponse**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-installresponse)
 
  

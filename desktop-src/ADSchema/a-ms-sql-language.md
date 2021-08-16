@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-Language
-description: Lenguaje de la instancia actual de SQL Server.
+description: Idioma de la instancia actual de SQL Server.
 ms.assetid: 70ab1e8f-aff0-4a1e-ab2c-676a77b0c229
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de lenguaje MS-SQL
-- Esquema de AD de atributo de lenguaje mS-SQL
+- Esquema de AD del atributo MS-SQL-Language
+- Esquema de AD del atributo mS-SQL-Language
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fd9a4fb6ede4e656b7cebbfe7c5c920e19d9123
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: badc9f8a59df2727bcff304044666f2f6751dbcd7797d3178813a1dd5f289319
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705464"
 ---
 # <a name="ms-sql-language-attribute"></a>Atributo MS-SQL-Language
 
-Lenguaje de la instancia actual de SQL Server.
+Idioma de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Lenguaje MS-SQL                             |
-| Nombre para mostrar de LDAP | Lenguaje mS-SQL                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
-| Frecuencia de actualización  | En el programa de instalación del sistema.                            |
+| CN                | MS-SQL-Language                             |
+| Ldap-Display-Name | mS-SQL-Language                             |
+| Size              | \-                                          |
+| Privilegio actualizar  | Administrador de dominio                        |
+| Frecuencia de actualización  | En la configuración del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1389                     |
-| System-ID-GUID    | c57f72f4-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | c57f72f4-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ Lenguaje de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
@@ -74,15 +74,15 @@ Lenguaje de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
@@ -95,15 +95,15 @@ Lenguaje de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
@@ -116,15 +116,15 @@ Lenguaje de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
@@ -137,15 +137,15 @@ Lenguaje de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
@@ -158,15 +158,15 @@ Lenguaje de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | True                                                        |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |

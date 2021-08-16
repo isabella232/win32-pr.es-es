@@ -1,11 +1,11 @@
 ---
-title: Atributo de generación de proxy habilitado
+title: Atributo Proxy-Generation-Enabled
 description: TRUE si la generación de proxy está habilitada.
 ms.assetid: 8a9ee22d-531d-4ba7-90ba-094f0afb161f
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD de atributos habilitados para generación de proxy
-- proxyGenerationEnabled esquema de AD de atributos
+- Esquema de AD del atributo proxyGenerationEnabled
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e44aaf416821a6cda8bd170f4431b253e00dffc2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97e5f609202251371a9d255c18a72af3607ae77e8074eb713f3e0e1dd4da7702
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836795"
 ---
-# <a name="proxy-generation-enabled-attribute"></a>Atributo de generación de proxy habilitado
+# <a name="proxy-generation-enabled-attribute"></a>Atributo Proxy-Generation-Enabled
 
-**True** si la generación de proxy está habilitada.
+**TRUE si** la generación de proxy está habilitada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Proxy-generación habilitada             |
-| Nombre para mostrar de LDAP | proxyGenerationEnabled               |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Generación de proxy habilitada             |
+| Ldap-Display-Name | proxyGenerationEnabled               |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.523               |
-| System-ID-GUID    | 5fd424d6-1262-11d0-a060-00aa006c33ed |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 5fd424d6-1262-11d0-a060-00aa006c33ed |
+| Syntax            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -53,20 +53,20 @@ ms.locfileid: "104151391"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ ms.locfileid: "104151391"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ ms.locfileid: "104151391"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ ms.locfileid: "104151391"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ ms.locfileid: "104151391"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ ms.locfileid: "104151391"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 

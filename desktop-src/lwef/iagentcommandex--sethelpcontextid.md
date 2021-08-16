@@ -13,7 +13,7 @@ ms.locfileid: "118750219"
 ---
 # <a name="iagentcommandexsethelpcontextid"></a>IAgentCommandEx::SetHelpContextID
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT SetHelpContextID(

@@ -1,26 +1,26 @@
 ---
-title: Funciones de glColor
+title: funciones glColor
 description: Estas funciones establecen el color actual.
 ms.assetid: 916eb8b5-65c2-4523-bdb5-e609ad7a24a0
 keywords:
-- Funciones OpenGL, glColor
-- Referencia de OpenGL, funciones de glColor
-- referencia de las funciones OpenGL, glColor
+- Funciones OpenGL,glColor
+- Referencia de OpenGL, funciones glColor
+- referencia de las funciones OpenGL,glColor
 - OpenGL, funciones de color
 - Referencia de OpenGL, funciones de color
 - referencia de OpenGL, funciones de color
-- funciones de glColor
+- Funciones glColor
 - funciones de color
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc6c77e1201dec2fdd42d56871a95bf5d3fce359
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 37ab97a7cdefb482b0a401b8291839513637484ecfd75ccbaace556c5e2b1d79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082045"
 ---
-# <a name="glcolor-functions"></a>Funciones de glColor
+# <a name="glcolor-functions"></a>funciones glColor
 
 Estas funciones establecen el color actual:
 
@@ -57,9 +57,9 @@ Estas funciones establecen el color actual:
 -   [**glColor4uiv**](glcolor4uiv.md)
 -   [**glColor4usv**](glcolor4usv.md)
 
- 
+ 
 
- 
+ 
 
 
 

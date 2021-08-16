@@ -32,7 +32,7 @@ El botón se asigna a una apariencia de llamada.
 
 
 
-El botón es un botón "suave" asociado a la pantalla del teléfono. Un conjunto de teléfonos puede tener cero o más botones de presentación.
+El botón es un botón "soft" asociado a la pantalla del teléfono. Un conjunto de teléfonos puede tener cero o más botones de presentación.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Este valor se usa para describir una posición de botón o bombilla que no tiene
 
 
 
-El botón se asigna a la solicitud de características del conmutador, como la retención, la conferencia y la transferencia.
+El botón se asigna a las características de solicitud del conmutador, como la retención, la conferencia y la transferencia.
 
 
 </dt> </dl> </dd> <dt>
@@ -87,7 +87,7 @@ Este tipo de enumeración se usa en la estructura de datos [**PHONECAPS**](/wind
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
 | Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |

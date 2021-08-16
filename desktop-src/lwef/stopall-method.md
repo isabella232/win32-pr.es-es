@@ -13,14 +13,14 @@ ms.locfileid: "118745947"
 ---
 # <a name="stopall-method"></a>StopAll (método)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
-Detiene todas las solicitudes de animación o los tipos especificados de solicitudes para el carácter especificado.
+Detiene todas las solicitudes de animación o los tipos de solicitudes especificados para el carácter especificado.
 
 </dd> <dt>
 
@@ -33,7 +33,7 @@ Detiene todas las solicitudes de animación o los tipos especificados de solicit
 
 | Parte   | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Type* | Opcional. Para usar este parámetro, puede usar cualquiera de los valores siguientes. También puede especificar varios tipos si los separa con comas. <br/> "**Get**" <br/> Para detener todas las solicitudes [**Get**](get-method.md) en cola.<br/> "**NonQueuedGet**" <br/> Para detener todas las solicitudes [**Get**](get-method.md) no en cola **(método Get** con el **parámetro Queue** establecido en **False).**<br/> "**Move**" <br/> Para detener todas las solicitudes [**MoveTo en cola.**](moveto-method.md)<br/> "**Reproducir**" <br/> Para detener todas las solicitudes [**de Play en**](play-method.md) cola.<br/> "**Diga**" <br/> Para detener todas las solicitudes [**speak en**](speak-method.md) cola.<br/> |
+| *Type* | Opcional. Para usar este parámetro, puede usar cualquiera de los valores siguientes. También puede especificar varios tipos si los separa con comas. <br/> "**Get**" <br/> Para detener todas las solicitudes [**Get**](get-method.md) en cola.<br/> "**NonQueuedGet**" <br/> Para detener todas las solicitudes [**Get**](get-method.md) no en cola **(método Get** con el **parámetro Queue** establecido en **False).**<br/> "**Move**" <br/> Para detener todas las solicitudes [**MoveTo en cola.**](moveto-method.md)<br/> "**Reproducir**" <br/> Para detener todas las solicitudes [**de Play**](play-method.md) en cola.<br/> **"Hablar"** <br/> Para detener todas las solicitudes [**speak en**](speak-method.md) cola.<br/> |
 
 
 

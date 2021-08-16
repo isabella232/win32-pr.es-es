@@ -25,7 +25,7 @@ El objeto de lector asincrónico se puede usar para buscar los números de fotog
 
 Para buscar datos en un archivo ASF por número de fotograma mediante el lector asincrónico, realice los pasos siguientes.
 
-1.  Obtenga un puntero a la [**interfaz IWMReaderAdvanced3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced3) del objeto de lector llamando a **IWMReader::QueryInterface**.
+1.  Obtenga un puntero a la [**interfaz IWMReaderAdvanced3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced3) del objeto reader llamando a **IWMReader::QueryInterface**.
 2.  Establezca el número de fotograma inicial y la duración llamando a [**IWMReaderAdvanced3::StartAtPosition**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced3-startatposition). Debe especificar el número de secuencia de una secuencia de vídeo indizada por fotogramas. El lector sincronizará el resto de las salidas con el tiempo de presentación del marco especificado de la secuencia especificada y comenzará a entregar ejemplos de salida.
 3.  Controle los ejemplos como lo haría normalmente en la implementación del **método IWMReaderCallback::OnSample.**
 

@@ -1,19 +1,19 @@
 ---
-description: TAPI envía el \_ mensaje Phone DEVSPECIFIC a una aplicación para notificar a la aplicación los eventos específicos del dispositivo que se producen en el teléfono. El significado del mensaje y la interpretación de los parámetros están definidos por la implementación.
+description: TAPI envía el mensaje PHONE DEVSPECIFIC a una aplicación para notificar a la aplicación los eventos específicos del dispositivo que se \_ producen en el teléfono. El significado del mensaje y la interpretación de los parámetros están definidos por la implementación.
 ms.assetid: e3e803dd-b041-48b7-9acf-a89989370204
-title: Mensaje de PHONE_DEVSPECIFIC (TAPI. h)
+title: PHONE_DEVSPECIFIC mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c817f273a49fdcda36995cec335811fb06c8a917
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 578ba0960963f85ff597d9a6bc87ff3369a6c837ed58367bd82d62a13341e988
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072905"
 ---
-# <a name="phone_devspecific-message"></a>Mensaje de teléfono \_ DEVSPECIFIC
+# <a name="phone_devspecific-message"></a>Mensaje \_ PHONE DEVSPECIFIC
 
-TAPI envía el mensaje **Phone \_ DEVSPECIFIC** a una aplicación para notificar a la aplicación los eventos específicos del dispositivo que se producen en el teléfono. El significado del mensaje y la interpretación de los parámetros están definidos por la implementación.
+TAPI envía el **mensaje \_ PHONE DEVSPECIFIC** a una aplicación para notificar a la aplicación los eventos específicos del dispositivo que se producen en el teléfono. El significado del mensaje y la interpretación de los parámetros están definidos por la implementación.
 
 
 ```C++
@@ -29,14 +29,14 @@ TAPI envía el mensaje **Phone \_ DEVSPECIFIC** a una aplicación para notificar
 *hPhone* 
 </dt> <dd>
 
-Identificador del dispositivo telefónico.
+Identificador del dispositivo de teléfono.
 
 </dd> <dt>
 
 *dwCallbackInstance* 
 </dt> <dd>
 
-Instancia de devolución de llamada de la aplicación que se proporciona al abrir el dispositivo telefónico.
+La instancia de devolución de llamada de la aplicación proporcionada al abrir el dispositivo telefónico.
 
 </dd> <dt>
 
@@ -69,10 +69,10 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

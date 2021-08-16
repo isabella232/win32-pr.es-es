@@ -13,7 +13,7 @@ ms.locfileid: "118746637"
 ---
 # <a name="originalheight-property"></a>Propiedad OriginalHeight
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -27,17 +27,17 @@ Devuelve un valor entero que especifica el alto original del carácter.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agent.***Caracteres("**_CharacterID_*_"). OriginalHeight_*
+*agent.***Characters("**_CharacterID_*_"). OriginalHeight_*
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad devuelve el alto del marco del carácter tal y como se ha creado con el Editor de caracteres de Microsoft Agent.
 
 ## <a name="see-also"></a>Consulte también
 
-[**Propiedad Height**](height-property.md), [ **propiedad OriginalWidth**](originalwidth-property.md)
+[**Height,**](height-property.md) [ **propiedad OriginalWidth**](originalwidth-property.md)
 
 
  

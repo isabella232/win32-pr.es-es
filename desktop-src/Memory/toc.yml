@@ -7,11 +7,11 @@
         - name: Espacio de direcciones virtuales
           href: virtual-address-space.md
           items:
-            - name: Espacio de direcciones virtuales y almacenamiento físico
+            - name: Espacio de direcciones virtuales y Storage
               href: virtual-address-space-and-physical-storage.md
             - name: Espacio de trabajo
               href: working-set.md
-            - name: Estado de la página
+            - name: Estado de página
               href: page-state.md
             - name: Ámbito de la memoria asignada
               href: scope-of-allocated-memory.md
@@ -32,9 +32,9 @@
               href: allocating-virtual-memory.md
             - name: Liberar memoria virtual
               href: freeing-virtual-memory.md
-            - name: Trabajar con páginas
+            - name: Trabajar con Pages
               href: working-with-pages.md
-        - name: Funciones del montón
+        - name: Funciones de montón
           href: heap-functions.md
           items:
             - name: Montón de baja fragmentación
@@ -46,9 +46,9 @@
               href: creating-a-file-mapping-object.md
             - name: Crear una vista de archivo
               href: creating-a-file-view.md
-            - name: Compartir archivos y memoria
+            - name: Uso compartido de archivos y memoria
               href: sharing-files-and-memory.md
-            - name: Leer y escribir en una vista de archivo
+            - name: Lectura y escritura desde una vista de archivo
               href: reading-and-writing-from-a-file-view.md
             - name: Cerrar un objeto de asignación de archivos
               href: closing-a-file-mapping-object.md
@@ -57,13 +57,13 @@
         - name: Compatibilidad con memoria grande
           href: large-memory-support.md
           items:
-            - name: 'Optimización de 4 gigabytes: BCDEdit y Boot.ini'
+            - name: 'Ajuste de 4 gigabytes: BCDEdit y Boot.ini'
               href: 4-gigabyte-tuning.md
             - name: Extensión de dirección física
               href: physical-address-extension.md
-            - name: Extensiones de ventana de dirección
+            - name: Extensiones de ventana de direcciones
               href: address-windowing-extensions.md
-            - name: Compatibilidad con Large-Page
+            - name: Large-Page soporte técnico
               href: large-page-support.md
         - name: Funciones globales y locales
           href: global-and-local-functions.md
@@ -71,27 +71,27 @@
           href: standard-c-library-functions.md
         - name: Comparar métodos de asignación de memoria
           href: comparing-memory-allocation-methods.md
-    - name: Usar las funciones de administración de memoria
+    - name: Uso de las funciones de administración de memoria
       href: using-the-memory-management-functions.md
       items:
-        - name: Reservar y confirmar memoria
+        - name: Reserva y confirmación de memoria
           href: reserving-and-committing-memory.md
         - name: Creación de páginas de protección
           href: creating-guard-pages.md
         - name: Enumerar un montón
           href: enumerating-a-heap.md
-        - name: Obtener montones de proceso
+        - name: Obtención de montones de procesos
           href: getting-process-heaps.md
-        - name: Usar la asignación de archivos
+        - name: Uso de la asignación de archivos
           href: using-file-mapping.md
           items:
             - name: Crear una vista dentro de un archivo
               href: creating-a-view-within-a-file.md
-            - name: Crear memoria compartida con nombre
+            - name: Creación de memoria compartida con nombre
               href: creating-named-shared-memory.md
             - name: Crear una asignación de archivos mediante páginas grandes
               href: creating-a-file-mapping-using-large-pages.md
-            - name: Obtener un nombre de archivo de un identificador de archivo
+            - name: Obtener un nombre de archivo a partir de un identificador de archivo
               href: obtaining-a-file-name-from-a-file-handle.md
         - name: Ejemplo de AWE
           href: awe-example.md
@@ -166,7 +166,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-globalalloc
             - name: GlobalDiscard
               href: /windows/desktop/api/WinBase/nf-winbase-globaldiscard
-            - name: Indicadores
+            - name: GlobalFlags
               href: /windows/desktop/api/WinBase/nf-winbase-globalflags
             - name: GlobalFree
               href: /windows/desktop/api/WinBase/nf-winbase-globalfree
@@ -238,7 +238,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-locallock
             - name: LocalReAlloc
               href: /windows/desktop/api/WinBase/nf-winbase-localrealloc
-            - name: Variables locales
+            - name: LocalSize
               href: /windows/desktop/api/WinBase/nf-winbase-localsize
             - name: LocalUnlock
               href: /windows/desktop/api/WinBase/nf-winbase-localunlock
@@ -270,7 +270,7 @@
               href: /windows/desktop/api/MemoryApi/nf-memoryapi-openfilemappingfromapp
             - name: OfferVirtualMemory
               href: /windows/desktop/api/memoryapi/nf-memoryapi-offervirtualmemory
-            - name: PrefetchVirtualMemory
+            - name: Captura previaVirtualMemory
               href: /windows/desktop/api/memoryapi/nf-memoryapi-prefetchvirtualmemory
             - name: QueryMemoryResourceNotification
               href: /windows/desktop/api/memoryapi/nf-memoryapi-querymemoryresourcenotification
@@ -322,13 +322,13 @@
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualfreeex
             - name: VirtualLock
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtuallock
-            - name: VirtualProtect (
+            - name: VirtualProtect
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualprotect
             - name: VirtualProtectEx
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualprotectex
             - name: VirtualProtectFromApp
               href: /windows/desktop/api/MemoryApi/nf-memoryapi-virtualprotectfromapp
-            - name: VirtualQuery (
+            - name: VirtualQuery
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualquery
             - name: VirtualQueryEx
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualqueryex
@@ -346,7 +346,7 @@
               href: /windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_datatocode
             - name: AtlThunk_FreeData
               href: /windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_freedata
-        - name: Claves del registro de administración de memoria
+        - name: Claves del Registro de administración de memoria
           href: memory-management-registry-keys.md
         - name: Estructuras de administración de memoria
           href: memory-management-structures.md

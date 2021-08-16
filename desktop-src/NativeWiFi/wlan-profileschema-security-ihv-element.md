@@ -1,7 +1,7 @@
 ---
-description: Contiene diversas opciones de seguridad que utilizan los proveedores de hardware independientes.
+description: Contiene varias configuraciones de seguridad utilizadas por proveedores de hardware independientes.
 ms.assetid: 237c5d98-3f3c-4279-b2ad-b0d05df041f9
-title: Elemento Security (IHV)
+title: elemento security (IHV)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 6ace1bb0ca31f40fdc9d10fba13832797d8d4306
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4baeadc5e53dc53d0a526b62c4905da1a778a1015f58321ae8b96e4aa52dfcc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105677992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912755"
 ---
-# <a name="security-ihv-element"></a>Elemento Security (IHV)
+# <a name="security-ihv-element"></a>elemento security (IHV)
 
 El elemento de seguridad (IHV) contiene varias configuraciones de seguridad utilizadas por proveedores de hardware independientes.
 
 La configuración de seguridad de Microsoft y la configuración de seguridad de IHV son mutuamente excluyentes. Si ambos conjuntos de configuración de seguridad están presentes en el mismo perfil, el perfil no es válido.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="security">
@@ -40,20 +40,20 @@ La configuración de seguridad de Microsoft y la configuración de seguridad de 
 </xs:element>
 ```
 
-El elemento de **seguridad** se define mediante el elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) .
+El **elemento** de seguridad se define mediante el [**elemento IHV.**](wlan-profileschema-ihv-wlanprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

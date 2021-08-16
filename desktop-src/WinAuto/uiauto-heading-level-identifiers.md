@@ -1,6 +1,6 @@
 ---
-title: Identificadores de nivel de título (UIAutomationClient. h)
-description: Indica el nivel de encabezado de un elemento de automatización de la interfaz de usuario de Microsoft.
+title: Identificadores de nivel de encabezado (UIAutomationClient.h)
+description: Indica el nivel de encabezado de un elemento Automatización de la interfaz de usuario Microsoft.
 ms.assetid: D77D70DA-0EEE-438F-B467-159E0A8BF2B3
 topic_type:
 - apiref
@@ -21,22 +21,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b24c214e66e26bf957f8c0a8012246f86499d6f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6af1b4bd4d6e22e37303b7bb3eaa6e7d65b27598f25ae96b0977be9d7ee8227a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861265"
 ---
-# <a name="heading-level-identifiers"></a>Identificadores de nivel de título
+# <a name="heading-level-identifiers"></a>Identificadores de nivel de encabezado
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Indica el nivel de encabezado de un elemento de automatización de la interfaz de usuario de Microsoft.
+Indica el nivel de encabezado de un elemento Automatización de la interfaz de usuario Microsoft.
 
 <dl> <dt>
 
-<span id="HeadingLevel_None"></span><span id="headinglevel_none"></span><span id="HEADINGLEVEL_NONE"></span>**HeadingLevel \_ ninguno**
+<span id="HeadingLevel_None"></span><span id="headinglevel_none"></span><span id="HEADINGLEVEL_NONE"></span>**HeadingLevel \_ None**
 </dt> <dd> <dl> <dt>
 
 80050
@@ -44,7 +44,7 @@ Indica el nivel de encabezado de un elemento de automatización de la interfaz d
 
 
 
-No se especificó ningún nivel de encabezado.
+No se ha especificado ningún nivel de encabezado.
 
 
 </dt> </dl> </dd> <dt>
@@ -57,7 +57,7 @@ No se especificó ningún nivel de encabezado.
 
 
 
-Nivel de título 1.
+Nivel de encabezado 1.
 
 
 </dt> </dl> </dd> <dt>
@@ -83,7 +83,7 @@ Nivel de encabezado 2.
 
 
 
-Nivel de título 3.
+Nivel de encabezado 3.
 
 
 </dt> </dl> </dd> <dt>
@@ -96,7 +96,7 @@ Nivel de título 3.
 
 
 
-Nivel de título 4.
+Nivel de encabezado 4.
 
 
 </dt> </dl> </dd> <dt>
@@ -109,7 +109,7 @@ Nivel de título 4.
 
 
 
-Nivel de título 5.
+Nivel de encabezado 5.
 
 
 </dt> </dl> </dd> <dt>
@@ -135,7 +135,7 @@ Nivel de encabezado 6.
 
 
 
-Nivel de título 7.
+Nivel de encabezado 7.
 
 
 </dt> </dl> </dd> <dt>
@@ -148,7 +148,7 @@ Nivel de título 7.
 
 
 
-Nivel de título 8.
+Nivel de encabezado 8.
 
 
 </dt> </dl> </dd> <dt>
@@ -161,7 +161,7 @@ Nivel de título 8.
 
 
 
-Nivel de título 9.
+Nivel de encabezado 9.
 
 
 </dt> </dl> </dd> </dl>
@@ -170,11 +170,11 @@ Nivel de título 9.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>UIAutomationClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

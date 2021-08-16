@@ -1,11 +1,11 @@
 ---
-title: Propiedad AxWindowsMediaPlayer. openState
+title: Propiedad AxWindowsMediaPlayer.openState
 description: La propiedad openState obtiene un valor de enumeración que indica el estado del origen de contenido.
 ms.assetid: 7a76814a-649f-4516-a92a-5f536fb1b147
 keywords:
-- propiedades de openState Media Player de Windows
-- propiedad openState Media Player de Windows, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, propiedad openState
+- Propiedad openState Reproductor de Windows Media
+- Propiedad openState Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad openState
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 919bf906ce67793c4cd26f32892eae8acf441295
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 09fa09451bf323a9f30afeddf7b2d003183a1eba7b0999a79fb42c70e1417013
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573575"
 ---
-# <a name="axwindowsmediaplayeropenstate-property"></a>Propiedad AxWindowsMediaPlayer. openState
+# <a name="axwindowsmediaplayeropenstate-property"></a>Propiedad AxWindowsMediaPlayer.openState
 
 La propiedad openState obtiene un valor de enumeración que indica el estado del origen de contenido.
 
@@ -48,32 +48,32 @@ Public ReadOnly Property openState As WMPOpenState
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de enumeración WMPLib. WMPOpenState.
+Valor de enumeración WMPLib.WMPOpenState.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se garantiza que los Estados Media Player de Windows se produzcan en un orden determinado. Además, no todos los Estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de los Estados.
+Reproductor de Windows Media se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. OpenStateChange**](axwmplib-axwindowsmediaplayer-openstatechange.md)
+[**Evento AxWindowsMediaPlayer.OpenStateChange**](axwmplib-axwindowsmediaplayer-openstatechange.md)
 </dt> <dt>
 
 [**WMPLib.WMPOpenState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpopenstate)

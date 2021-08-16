@@ -1,19 +1,19 @@
 ---
-description: Se envía el mensaje del botón del teléfono TAPI \_ para notificar a la aplicación que la supervisión de la pulsación de botones está habilitada si ha detectado una pulsación de botón en el teléfono local.
+description: El mensaje TAPI PHONE BUTTON se envía para notificar a la aplicación que la supervisión de la pulsación de botones está habilitada si ha detectado una pulsación de botón \_ en el teléfono local.
 ms.assetid: fe47eed7-89d1-488b-b945-9e1aedc1f63c
-title: Mensaje de PHONE_BUTTON (TAPI. h)
+title: PHONE_BUTTON mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2da810630a937f8415e070373f359dca06a694e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aec64f754725e5926a8cab1d98b25e4cb379a444bf4208d6e8f3e976dafee82f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073005"
 ---
-# <a name="phone_button-message"></a>Mensaje de botón de teléfono \_
+# <a name="phone_button-message"></a>Mensaje \_ PHONE BUTTON
 
-Se envía el mensaje del **\_ botón del teléfono** TAPI para notificar a la aplicación que la supervisión de la pulsación de botones está habilitada si ha detectado una pulsación de botón en el teléfono local.
+El mensaje TAPI **PHONE \_ BUTTON** se envía para notificar a la aplicación que la supervisión de la pulsación de botones está habilitada si ha detectado una pulsación de botón en el teléfono local.
 
 
 ```C++
@@ -29,35 +29,35 @@ Se envía el mensaje del **\_ botón del teléfono** TAPI para notificar a la ap
 *hPhone* 
 </dt> <dd>
 
-Identificador del dispositivo telefónico.
+Identificador para el dispositivo de teléfono.
 
 </dd> <dt>
 
 *dwCallbackInstance* 
 </dt> <dd>
 
-Instancia de devolución de llamada de la aplicación que se proporciona al abrir el dispositivo telefónico.
+La instancia de devolución de llamada de la aplicación proporcionada al abrir el dispositivo telefónico.
 
 </dd> <dt>
 
 *dwParam1* 
 </dt> <dd>
 
-El identificador de botón o lámpara del botón que se presionó. Tenga en cuenta que los identificadores de botón del 0 al 11 siempre son los botones del teclado, donde "0" es el identificador de botón cero, "1" es el identificador de botón 1 (y así sucesivamente hasta el identificador de botón 9) y "" es el identificador de \* botón 10, y " \# " es el identificador de botón 11. La información adicional sobre un identificador de botón está disponible con [**phoneGetDevCaps**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) y [**phoneGetButtonInfo**](/windows/desktop/api/Tapi/nf-tapi-phonegetbuttoninfo).
+Identificador de botón o bombilla del botón que se presionó. Tenga en cuenta que los identificadores de botón de cero a 11 son siempre los botones KEYPAD, siendo "0" el identificador de botón cero, "1" el identificador de botón 1 (y así sucesivamente hasta el identificador de botón 9) y con "" como identificador de botón 10 y " " como identificador de botón \* \# 11. Hay información adicional sobre un identificador de botón disponible [**con phoneGetDevCaps**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) y [**phoneGetButtonInfo**](/windows/desktop/api/Tapi/nf-tapi-phonegetbuttoninfo).
 
 </dd> <dt>
 
 *dwParam2* 
 </dt> <dd>
 
-Modo de botón del botón. Este parámetro utiliza una de las [**\_ constantes de PHONEBUTTONMODE**](phonebuttonmode--constants.md).
+Modo de botón del botón. Este parámetro usa una de las [**constantes PHONEBUTTONMODE \_**](phonebuttonmode--constants.md).
 
 </dd> <dt>
 
 *dwParam3* 
 </dt> <dd>
 
-Especifica si se trata de un evento de botón o un evento de botón. Este parámetro utiliza una de las [**\_ constantes de PHONEBUTTONSTATE**](phonebuttonstate--constants.md).
+Especifica si se trata de un evento de botón hacia abajo o un evento de botón hacia arriba. Este parámetro usa una de las [**constantes PHONEBUTTONSTATE \_**](phonebuttonstate--constants.md).
 
 </dd> </dl>
 
@@ -65,22 +65,22 @@ Especifica si se trata de un evento de botón o un evento de botón. Este parám
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se envía un mensaje de **\_ botón de teléfono** cada vez que un botón cambia de estado. Se garantiza que una aplicación para cada evento de presionar el botón, se envía un evento Button up correspondiente. Un proveedor de servicios que no es capaz de detectar el botón real es necesario para generar el mensaje de botón arriba justo después del mensaje de botón abajo para cada pulsación de botón.
+Se envía un mensaje **\_ PHONE BUTTON** cada vez que un botón cambia de estado. Se garantiza que, para cada evento de botón hacia abajo, se envía finalmente un evento de botón hacia arriba correspondiente. Un proveedor de servicios que no pueda detectar el botón real hacia arriba es necesario para generar el mensaje de botón hacia arriba poco después del mensaje de botón hacia abajo para cada pulsación del botón.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

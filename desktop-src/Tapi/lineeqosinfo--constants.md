@@ -38,7 +38,7 @@ QoS no está disponible.
 
 
 
-No se pudo cumplir la solicitud de QoS.
+No se pudo cumplir la solicitud QoS.
 
 
 </dt> </dl> </dd> <dt>
@@ -73,7 +73,7 @@ Error de QoS no especificado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
 | Header<br/>       | <dl> <dt>Tspi.h</dt> </dl> |

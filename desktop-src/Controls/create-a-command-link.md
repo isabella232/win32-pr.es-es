@@ -4,31 +4,31 @@ description: En este tema se describe una manera de crear un vínculo de comando
 ms.assetid: F342075B-2D3B-40E0-B657-E1C57EDC2E3A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8024a7f060a7bae3779b9ec9ebec40bd81c74bb
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 9c61888921f06e017ec1ea625730c3cc52de5ab364db22fc01fd021ce5629c63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920905"
 ---
 # <a name="how-to-create-a-command-link"></a>Cómo crear un vínculo de comando
 
 En este tema se describe una manera de crear un vínculo de comando.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-create-an-instance-of-the-command-link-button"></a>Paso 1: crear una instancia del botón de vínculo de comando.
+### <a name="step-1-create-an-instance-of-the-command-link-button"></a>Paso 1: Crear una instancia del botón de vínculo de comando.
 
 En el siguiente ejemplo de código de C++, la constante de estilo [**BS \_ COMMANDLINK**](button-styles.md) especifica el botón como un botón de vínculo de comando.
 
@@ -50,9 +50,9 @@ HWND hwndCommandLink = CreateWindow(
 
 
 
-### <a name="step-2-set-the-command-link-label-and-explanation-text"></a>Paso 2: establecer la etiqueta del vínculo de comando y el texto de explicación
+### <a name="step-2-set-the-command-link-label-and-explanation-text"></a>Paso 2: Establecer la etiqueta del vínculo de comando y el texto de la explicación
 
-Utilice la función [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) para establecer la etiqueta del vínculo de comando y el texto complementario mediante el mensaje de [**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext) y el mensaje [**\_ SETNOTE de BCM**](bcm-setnote.md) , respectivamente.
+Use la [**función SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) para establecer la etiqueta del vínculo de comando y el texto complementario a través del mensaje [**\_ SETTEXT**](/windows/desktop/winmsg/wm-settext) de WM y el mensaje [**\_ SETNOTE de BCM,**](bcm-setnote.md) respectivamente.
 
 
 ```C++
@@ -78,6 +78,6 @@ SendMessage(hwndCommandLink, BCM_SETNOTE, 0, (LPARAM)L"with note");
 [Botón](buttons.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

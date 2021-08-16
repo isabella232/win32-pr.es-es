@@ -3,7 +3,7 @@ title: Elemento xmlType (XmlTypeListType)
 description: Define un tipo XML.
 ms.assetid: 4443963f-f47a-4371-87d8-58f508ba15d6
 keywords:
-- elemento xmlType EventLog
+- Elemento xmlType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5aa37214c5efc0dee9e788ad10ed2f437e3df19f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 119ebe7f09f86aa46d9e80380670309fe8734fa818b48049d5dffc29e6a2ebb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863285"
 ---
 # <a name="xmltype-xmltypelisttype-element"></a>Elemento xmlType (XmlTypeListType)
 
@@ -49,7 +49,7 @@ Define un tipo XML.
 </xs:element>
 ```
 
-El elemento **xmlType** se define mediante el tipo complejo de [**XmlTypeListType**](eventmanifestschema-xmltypelisttype-complextype.md) .
+El tipo complejo XmlTypeListType define el [**elemento xmlType.**](eventmanifestschema-xmltypelisttype-complextype.md) 
 
 ## <a name="attributes"></a>Atributos
 
@@ -58,8 +58,8 @@ El elemento **xmlType** se define mediante el tipo complejo de [**XmlTypeListTyp
 | Nombre   | Tipo      | Descripción                                                                                                                                                                                                                                                |
 |--------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name   | **QName** | Nombre del tipo de salida.<br/>                                                                                                                                                                                                                    |
-| símbolo | string    | Símbolo que se va a usar para hacer referencia al tipo de salida de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) utiliza el símbolo para crear una constante para el tipo de salida en el archivo de encabezado que genera el compilador.<br/> |
-| value  | string    | Valor entero que identifica de forma única el tipo de salida en la lista de tipos de salida que se define.<br/>                                                                                                                                          |
+| símbolo | string    | Símbolo que se usará para hacer referencia al tipo de salida en la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para el tipo de salida en el archivo de encabezado que genera el compilador.<br/> |
+| value  | string    | Valor entero que identifica de forma única el tipo de salida en la lista de tipos de salida que defina.<br/>                                                                                                                                          |
 
 
 
@@ -67,14 +67,14 @@ El elemento **xmlType** se define mediante el tipo complejo de [**XmlTypeListTyp
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

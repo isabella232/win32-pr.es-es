@@ -1,15 +1,15 @@
 ---
-description: La propiedad CurrentTitle recupera el número del título que se está reproduciendo.
+description: La propiedad CurrentTitle recupera el número del título que se está reproduciendo actualmente.
 ms.assetid: 8e401f39-f2ad-40c0-9707-d4a589fc63b2
 title: Propiedad CurrentTitle
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18acc19dbe19033cb1d1d67536cb48910ee2afd6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9f6bf8ef34d539049e395e8ee5649ff109556c47dcf02cfaee2aaf71158c315b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075985"
 ---
 # <a name="currenttitle-property"></a>Propiedad CurrentTitle
 
@@ -18,7 +18,7 @@ ms.locfileid: "103997689"
 
  
 
-La `CurrentTitle` propiedad recupera el número del título que se reproduce actualmente.
+La `CurrentTitle` propiedad recupera el número del título que se está reproduciendo actualmente.
 
 ``` syntax
 [ iCurTitle = ] MSWebDVD.CurrentTitle
@@ -28,11 +28,11 @@ La `CurrentTitle` propiedad recupera el número del título que se reproduce act
 
 Devuelve un valor entero comprendido entre 1 y 99 que representa el título del disco actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado.
+Esta propiedad es de solo lectura sin ningún valor predeterminado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

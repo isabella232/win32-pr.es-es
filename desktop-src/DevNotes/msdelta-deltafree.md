@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - msdelta.dll
-ms.openlocfilehash: 15885cfa3e879ed6a1e85b2f9553af92d436ca71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 606b8d91d20c74f7dd56ff4e09986abec3eef547989990a38bd8b4e3a27382c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105721599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079735"
 ---
 # <a name="deltafree-function"></a>Función DeltaFree
 
-Libera el bloque de memoria especificado. Debe llamar a esta función después de las llamadas correctas a [CreateDeltaB](msdelta-createdeltab.md) y [ApplyDeltaB](msdelta-applydeltab.md) para liberar el búfer de memoria asignado a MSDelta.
+Libera el bloque de memoria especificado. Debe llamar a esta función después de llamar correctamente a [CreateDeltaB](msdelta-createdeltab.md) y [ApplyDeltaB](msdelta-applydeltab.md) para liberar el búfer de memoria asignado a MSDelta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,21 +38,21 @@ BOOL  WINAPI  DeltaFree(
 
 *lpMemory*
 
-de Bloque de memoria que se va a liberar.
+[in] Bloque de memoria que se va a liberar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve **true** si se realiza correctamente; de lo contrario, devuelve **false**. Cuando la función devuelve **false**, puede llamar a [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obtener el código de error del sistema Win32 correspondiente.
+Esta función devuelve **TRUE** si se realiza correctamente; de lo contrario, devuelve **FALSE**. Cuando la función devuelve **FALSE,** puede llamar a [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obtener el código de error del sistema Win32 correspondiente.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |----------------|---------------------------------------------------------------------------------------|
-| Encabezado | msdelta. h |
+| Encabezado | msdelta.h |
 | Archivo DLL | msdelta.dll |
 | Unicode | No aplicable |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [MSDelta](msdelta.md)
 

@@ -1,11 +1,11 @@
 ---
-title: MSMQ-Interval2 atributo)
+title: MSMQ-Interval2 atributo
 description: En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 ms.assetid: 6b04fbb2-bab2-45f1-81ce-3dcd85de9b8a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de MSMQ-Interval2
-- mSMQInterval2 esquema de AD de atributos
+- MSMQ-Interval2 esquema de AD del atributo
+- Esquema de AD del atributo mSMQInterval2
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 531753a15d9d1f4a3155e087b7a10a12551ba42d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 85f3368e604992afa2727539660370c890e375a4e128118850a9f94a4bea5b7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803314"
 ---
-# <a name="msmq-interval2-attribute"></a>MSMQ-Interval2 atributo)
+# <a name="msmq-interval2-attribute"></a>MSMQ-Interval2 atributo
 
 En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Interval2                       |
-| Nombre para mostrar de LDAP | mSMQInterval2                        |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | mSMQInterval2                        |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1309              |
-| System-ID-GUID    | 99b88f52-3b7b-11d2-90cc-00c04fd91ab1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 99b88f52-3b7b-11d2-90cc-00c04fd91ab1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,20 +53,20 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Configuración de MSMQ-Enterprise**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**MSMQ-Enterprise-Configuración**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Configuración de MSMQ-Enterprise**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**MSMQ-Enterprise-Configuración**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Configuración de MSMQ-Enterprise**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**MSMQ-Enterprise-Configuración**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Configuración de MSMQ-Enterprise**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**MSMQ-Enterprise-Configuración**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Configuración de MSMQ-Enterprise**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**MSMQ-Enterprise-Configuración**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | True                                                                                                      |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                      |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Configuración de MSMQ-Enterprise**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**MSMQ-Enterprise-Configuración**](c-msmqenterprisesettings.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 

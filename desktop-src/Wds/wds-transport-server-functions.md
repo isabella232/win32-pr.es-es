@@ -21,7 +21,7 @@ Funciones proporcionadas por el servidor de multidifusión que se interfazn con 
 |----------------------------------------------------------------------------------|----------------------------------------------------------|
 | [**WdsTransportServerAllocateBuffer**](/windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportserverallocatebuffer)     | Asigna un búfer en memoria.                            |
 | [**WdsTransportServerCompleteRead**](/windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportservercompleteread)         | Proporciona el estado de la operación de lectura.                       |
-| [**WdsTransportServerFreeBuffer**](/windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportserverfreebuffer)             | Libera la memoria utilizada por un búfer.                        |
+| [**WdsTransportServerFreeBuffer**](/windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportserverfreebuffer)             | Libera la memoria usada por un búfer.                        |
 | [**WdsTransportServerRegisterCallback**](/windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportserverregistercallback) | Registra una devolución de llamada del proveedor con el servidor de multidifusión. |
 | [**WdsTransportServerTrace**](/windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportservertrace)                       | Envía un mensaje de depuración.                               |
 | [**WdsTransportServerTraceV**](/windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportservertracev)                     | Envía un mensaje de depuración.                               |

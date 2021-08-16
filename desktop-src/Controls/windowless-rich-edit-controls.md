@@ -1,19 +1,19 @@
 ---
-title: Controles Rich Edit sin ventanas
-description: Esta sección contiene información sobre los elementos de programación utilizados con controles Rich Edit sin ventana.
+title: Controles de edición enriquecciones sin ventanas
+description: Esta sección contiene información sobre los elementos de programación utilizados con controles de edición enriquecciones sin ventanas.
 ms.assetid: vs|controls|~\controls\richedit\windowlessricheditcontrols.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0431c5cb513aff003098e3d022fe73c6b6d83e9a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 54d03cbc4c694ce8e10a5b877298f148cd9ac47bd24c364aa3cde7fc19bc994e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655795"
 ---
-# <a name="windowless-rich-edit-controls"></a>Controles Rich Edit sin ventanas
+# <a name="windowless-rich-edit-controls"></a>Controles de edición enriquecciones sin ventanas
 
-Esta sección contiene información sobre los elementos de programación utilizados con controles Rich Edit sin ventana. El modelo de objetos componentes (COM) define un conjunto de interfaces para admitir objetos sin ventanas. Los objetos sin ventana pueden entrar en el estado activo en contexto sin tener su propia ventana, sino usar la ventana de su contenedor. Por lo tanto, un objeto sin ventana utiliza menos recursos del sistema y ofrece un mejor rendimiento a través de una activación y desactivación más rápidas. Además, los objetos sin ventana pueden ser no rectangulares y transparentes.
+Esta sección contiene información sobre los elementos de programación utilizados con controles de edición enriquecciones sin ventanas. El modelo de objetos componentes (COM) define un conjunto de interfaces para admitir objetos sin ventana. Los objetos sin ventana pueden entrar en el estado activo local sin tener su propia ventana, sino usar la ventana de su contenedor. Por lo tanto, un objeto sin ventanas usa menos recursos del sistema y proporciona un mejor rendimiento a través de una activación y desactivación más rápidas. Además, los objetos sin ventana pueden ser no rectangulares y transparentes.
 
 ### <a name="overviews"></a>Temas de introducción
 
@@ -21,7 +21,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 
 | Tema                                                                          | Contenido                                                                                                                                                                                                     |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Acerca de los controles de edición enriquecida sin ventanas](about-windowless-rich-edit-controls.md) | Un control Rich Edit sin ventana, también conocido como objeto de servicios de texto, es un objeto que proporciona la funcionalidad de un [control Rich Edit](rich-edit-controls.md) sin proporcionar la ventana.<br/> |
+| [Acerca de los controles Rich Edit sin ventanas](about-windowless-rich-edit-controls.md) | Un control de edición enriquecido sin ventanas, también conocido como objeto de servicios de texto, es un objeto que proporciona la funcionalidad de un [control](rich-edit-controls.md) de edición enriquecido sin proporcionar la ventana.<br/> |
 
 
 
@@ -33,7 +33,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 
 | Tema                                            | Contenido                                                                                                                                                                                                                                                             |
 |--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateTextServices**](/windows/desktop/api/Textserv/nf-textserv-createtextservices) | La función [**CreateTextServices**](/windows/desktop/api/Textserv/nf-textserv-createtextservices) crea una instancia de un objeto de servicios de texto. El objeto servicios de texto admite una variedad de interfaces, entre las que se incluyen [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) y el modelo de objetos de texto (Tom).<br/> |
+| [**CreateTextServices**](/windows/desktop/api/Textserv/nf-textserv-createtextservices) | La [**función CreateTextServices**](/windows/desktop/api/Textserv/nf-textserv-createtextservices) crea una instancia de un objeto de servicios de texto. El objeto de servicios de texto admite una variedad de interfaces, como [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) y Text Object Model (TOM).<br/> |
 
 
 
@@ -45,8 +45,8 @@ Esta sección contiene información sobre los elementos de programación utiliza
 
 | Tema                                  | Contenido                                                                                                                |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost)         | Un objeto de servicios de texto usa la interfaz [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost) para obtener los servicios de host de texto.<br/> |
-| [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) | Extiende el TOM para proporcionar una funcionalidad adicional para la operación sin ventanas.<br/>                                     |
+| [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost)         | Un objeto de servicios de texto usa la interfaz [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost) para obtener servicios host de texto.<br/> |
+| [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) | Extiende el TOM para proporcionar funcionalidad adicional para el funcionamiento sin ventanas.<br/>                                     |
 
 
 

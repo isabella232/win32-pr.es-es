@@ -1,7 +1,7 @@
 ---
-description: El método transfer del objeto Item transfiere datos de un dispositivo a un archivo. Este método solo se aplica a los elementos de tipo de dispositivo.
+description: El método Transfer del objeto Item transfiere datos de un dispositivo a un archivo. Este método solo se aplica a los elementos de tipo de dispositivo.
 ms.assetid: ed9696da-bd94-4063-80c2-311a7a441b10
-title: Item. Transfer (método)
+title: Método Item.Transfer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: a476f9653b7deced48394af0ecaa0ea0c8ae51e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efef054a324244553748b75659820f582100a01ed6f56f9a2f80b0ef0c08f105
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706325"
 ---
-# <a name="itemtransfer-method"></a>Item. Transfer (método)
+# <a name="itemtransfer-method"></a>Método Item.Transfer
 
-El método **Transfer** del objeto [**Item**](-wia-item.md) transfiere datos de un dispositivo a un archivo. Este método solo se aplica a los elementos de tipo de dispositivo.
+El **método Transfer** del objeto [**Item**](-wia-item.md) transfiere datos de un dispositivo a un archivo. Este método solo se aplica a los elementos de tipo de dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ Item.Transfer(
 
 <dl> <dt>
 
-*Nombre de archivo* \[ de\]
+*Nombre de archivo* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -49,23 +49,23 @@ Especifica el nombre del archivo al que se transfieren los datos.
 
 </dd> <dt>
 
-*AsyncTransfer* \[ de\]
+*AsyncTransfer* \[ En\]
 </dt> <dd>
 
-Tipo: **variante \_ bool**
+Tipo: **VARIANT \_ BOOL**
 
-Valor booleano que especifica si la transferencia se debe ejecutar como una llamada asincrónica.
+Valor booleano que especifica si la transferencia debe ejecutarse como una llamada asincrónica.
 
 <dt>
 
 
 
- (Variante \_ BOOLEANO
+ (VARIANT \_ BOOL)
 
 
 </dt> <dd>
 
-Predeterminada. Establezca este valor en **true** si la llamada debe ser asincrónica (vea la **sección Comentarios**).
+Predeterminada. Establezca este valor en **true si** la llamada debe ser asincrónica (vea **Comentarios**).
 
 </dd> </dl> </dd> </dl>
 
@@ -73,19 +73,19 @@ Predeterminada. Establezca este valor en **true** si la llamada debe ser asincr�
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método solo se aplica a los elementos de tipo de archivo. El método comprueba que el elemento admite este método antes de intentar completar la transferencia de datos.
 
-Use "Clipboard" como parámetro *filename* para transferir un elemento al portapapeles.
+Use "portapapeles" como parámetro *Filename* para transferir un elemento al Portapapeles.
 
-Establezca el valor de *AsyncTransfer* en **false** para las transferencias de cualquier aplicación o script que se ejecute en un entorno que termine un proceso al final de un script, como Windows Script Host (WSH). De lo contrario, el script puede finalizar y el proceso finaliza antes de que se complete la transferencia.
+Establezca el valor *de AsyncTransfer* en **false** para las transferencias dentro de cualquier aplicación o script que se ejecute en un entorno que finalice un proceso al final de un script, como Windows Script Host (WSH). De lo contrario, el script puede finalizar y finalizar el proceso antes de que se complete la transferencia.
 
-El método **Transfer** no tiene ningún valor devuelto. Tras la finalización de una transferencia, este método envía un evento [**OnTransferComplete**](-wia--iwiaevents-ontransfercomplete.md) al script o la aplicación.
+El **método Transfer** no tiene ningún valor devuelto. Tras la finalización de una transferencia, este método envía un [**evento OnTransferComplete**](-wia--iwiaevents-ontransfercomplete.md) al script o a la aplicación.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo se muestra el uso del método **Transfer** para transferir datos desde un dispositivo.
+En el ejemplo siguiente se muestra el uso del **método Transfer** para transferir datos desde un dispositivo.
 
 
 ```JScript
@@ -117,11 +117,11 @@ Next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

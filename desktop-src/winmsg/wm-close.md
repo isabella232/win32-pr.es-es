@@ -76,7 +76,7 @@ LRESULT CALLBACK WindowProc(
 Ejemplo de [Windows ejemplos clásicos](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/RadialController/cpp/RadialController.cpp) en GitHub.
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación puede solicitar confirmación al usuario, antes de destruir una ventana, procesando el mensaje **WM \_ CLOSE** y llamando a la [**función DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) solo si el usuario confirma la elección.
 
@@ -86,7 +86,7 @@ De forma predeterminada, [**la función DefWindowProc**](/windows/desktop/api/wi
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -94,7 +94,7 @@ De forma predeterminada, [**la función DefWindowProc**](/windows/desktop/api/wi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

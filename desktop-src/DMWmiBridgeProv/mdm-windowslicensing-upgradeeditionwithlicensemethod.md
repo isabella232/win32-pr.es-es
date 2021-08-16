@@ -1,11 +1,11 @@
 ---
-title: Método UpgradeEditionWithLicenseMethod de la clase MDM_WindowsLicensing
-description: Método para proporcionar una licencia para una actualización de edición de dispositivos Windows 10 Mobile. Vea también UpgradeEditionWithLicense.
+title: Método UpgradeEditionWithLicenseMethod de la MDM_WindowsLicensing clase
+description: Método para proporcionar una licencia para una actualización de edición de Windows 10 dispositivos móviles. Consulte también UpgradeEditionWithLicense.
 ms.assetid: 1a57fb71-eea6-41bf-bc44-6d3a816096a4
 keywords:
 - Método UpgradeEditionWithLicenseMethod
-- Método UpgradeEditionWithLicenseMethod, clase MDM_WindowsLicensing
-- Clase MDM_WindowsLicensing, método UpgradeEditionWithLicenseMethod
+- Método UpgradeEditionWithLicenseMethod, MDM_WindowsLicensing clase
+- MDM_WindowsLicensing, método UpgradeEditionWithLicenseMethod
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b336ee4128aa520ecd463c3607254526c7c3dc7d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26329c98bc73919d374787deea21841a2912a9df3fded8fdcde0637d8798c92f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913265"
 ---
-# <a name="upgradeeditionwithlicensemethod-method-of-the-mdm_windowslicensing-class"></a>Método UpgradeEditionWithLicenseMethod de la \_ clase WindowsLicensing de MDM
+# <a name="upgradeeditionwithlicensemethod-method-of-the-mdm_windowslicensing-class"></a>Método UpgradeEditionWithLicenseMethod de la clase \_ Mdm WindowsLicensing
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Método para proporcionar una licencia para una actualización de edición de dispositivos Windows 10 Mobile. Vea también [UpgradeEditionWithLicense](/windows/client-management/mdm/windowslicensing-csp).
+Método para proporcionar una licencia para una actualización de edición de Windows 10 dispositivos móviles. Consulte también [UpgradeEditionWithLicense](/windows/client-management/mdm/windowslicensing-csp).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,31 +44,31 @@ uint32 UpgradeEditionWithLicenseMethod(
 
 <dl> <dt>
 
-*parámetro* \[ de\]
+*param* \[ En\]
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**WindowsLicensing de MDM \_**](mdm-windowslicensing.md)
+[**MDM \_ WindowsLicensing**](mdm-windowslicensing.md)
 </dt> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

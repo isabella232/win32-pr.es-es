@@ -1,6 +1,6 @@
 ---
 title: Métricas de texto
-description: Para ayudar en el diseño, la selección de fuentes personalizadas y otras operaciones de uso intensivo de métricas, a partir de Windows 8, DirectWrite tiene una serie de nuevas API para expresar toda la información sobre las fuentes que podría necesitar para desarrollar aplicaciones de texto enriquecido.
+description: Para ayudar en el diseño, la selección de fuentes personalizadas y otras operaciones de uso intensivo de métricas, a partir de Windows 8, DirectWrite tiene una serie de nuevas API para expresar toda la información sobre las fuentes que puede necesitar para desarrollar aplicaciones de texto enriquecido.
 ms.assetid: 9df8c675-6f4d-4de7-916e-7dc51f5f04aa
 ms.topic: article
 ms.date: 05/31/2018
@@ -23,7 +23,7 @@ Para acceder a la información de PANOSE de una fuente, use el método [**GetPan
 
 ## <a name="additional-metrics"></a>Métricas adicionales
 
-A partir Windows 8, [la](direct-write-portal.md) API DirectWrite también admite una serie de métricas nuevas para expresar información útil sobre las fuentes a la aplicación. Estas nuevas métricas incluyen esta información.
+A partir Windows 8, la API [de DirectWrite](direct-write-portal.md) también admite una serie de métricas nuevas para expresar información útil sobre las fuentes a la aplicación. Estas nuevas métricas incluyen esta información.
 
 -   Métricas del rectángulo de selección de glifos left, right, top e bottom.
 -   Posición X e Y para elementos de superíndice y subíndice.
@@ -40,11 +40,11 @@ Esta información es específicamente útil si desea poder tener su pendiente de
 
 ## <a name="monospaced-discoverability"></a>Detectabilidad monoespacial
 
-Las aplicaciones que permiten a los usuarios escribir código de equipo a menudo usan fuentes monoespaciales en lugar de fuentes más tradicionales. Por lo tanto, puede tener más control sobre la selección de fuentes en aplicaciones relacionadas con el desarrollo, [DirectWrite](direct-write-portal.md) expresa si una fuente está monoespacial o no a través de la API. El [**método IsMonospacedFont**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefont1-ismonospacedfont) de la interfaz [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1) devuelve un valor booleano que indica si la fuente está monoespacial.
+Las aplicaciones que permiten a los usuarios escribir código de equipo a menudo usan fuentes monoespaciales en lugar de fuentes más tradicionales. Por lo tanto, puede tener más control sobre la selección de fuentes en aplicaciones relacionadas con el [desarrollo,](direct-write-portal.md) DirectWrite expresa si una fuente está monoespacial o no a través de la API. El [**método IsMonospacedFont**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefont1-ismonospacedfont) de la interfaz [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1) devuelve un valor booleano que indica si la fuente está monoespacial.
 
 ## <a name="font-name-matching"></a>Coincidencia de nombres de fuente
 
-Las aplicaciones de texto enriquecido, como los lectores PDF, deben poder hacer coincidir las fuentes de su contenido con las fuentes del sistema y necesitan tener acceso a los nombres completos de las fuentes en varios formatos. Por lo tanto, puede hacer coincidir mejor las fuentes, [DirectWrite](direct-write-portal.md) contiene una enumeración que expresa la información de nomenclatura completa sobre una fuente en muchos formatos.
+Las aplicaciones de texto enriquecido, como los lectores PDF, deben poder hacer coincidir las fuentes de su contenido con las fuentes del sistema y necesitan tener acceso a los nombres completos de las fuentes en varios formatos. Por lo tanto, puede hacer coincidir mejor las [fuentes, DirectWrite](direct-write-portal.md) contiene una enumeración que expresa la información de nomenclatura completa sobre una fuente en muchos formatos.
 
 use la [**enumeración DWRITE \_ INFORMATIONAL \_ STRING \_ ID**](/windows/win32/api/dwrite/ne-dwrite-dwrite_informational_string_id) para obtener el nombre completo, PostScript nombre y PostScript cid de cualquier fuente del sistema. Esta información es valiosa cuando necesita hacer coincidir las fuentes de la aplicación con las fuentes adecuadas en el sistema local.
 

@@ -1,60 +1,60 @@
 ---
-title: Cómo desplazarse por el texto
-description: En esta sección se describen los cambios que puede realizar en el procedimiento de ventana principal de una aplicación para permitir a los usuarios desplazarse por el texto.
+title: Desplazamiento de texto
+description: En esta sección se describen los cambios que puede realizar en el procedimiento de ventana principal de una aplicación para permitir que un usuario desplácese por el texto.
 ms.assetid: ACB4FF34-38EF-4F3D-9395-D48D58A72C0B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9ef9a2eea9490beac7b6ff5048b70de61eb635f
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: d2139ac1bff3d197d63011e6a6e76c861b984c5e20b5c54ceab8871678d31a52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103904831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914225"
 ---
-# <a name="how-to-scroll-text"></a>Cómo desplazarse por el texto
+# <a name="how-to-scroll-text"></a>Desplazamiento de texto
 
-En esta sección se describen los cambios que puede realizar en el procedimiento de ventana principal de una aplicación para permitir a los usuarios desplazarse por el texto. En el ejemplo de esta sección se crea y se muestra una matriz de cadenas de texto y se procesan los mensajes de la barra de desplazamiento [**\_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) para que el usuario pueda desplazarse por el texto vertical y horizontalmente.
+En esta sección se describen los cambios que puede realizar en el procedimiento de ventana principal de una aplicación para permitir que un usuario desplácese por el texto. En el ejemplo de esta sección se crea y se muestra una matriz de cadenas de texto, y se procesa wm [**\_ HSCROLL**](wm-hscroll.md) y mensajes de barra de desplazamiento [**\_ VSCROLL de WM**](wm-vscroll.md) para que el usuario pueda desplazar el texto tanto vertical como horizontalmente.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="processing-the-wm_create-message"></a>Procesamiento del mensaje de creación de WM \_
+### <a name="processing-the-wm_create-message"></a>Procesamiento del mensaje \_ WM CREATE
 
-Las unidades de desplazamiento se establecen normalmente al procesar el mensaje de [**\_ creación de WM**](/windows/desktop/winmsg/wm-create) . Es conveniente basar las unidades de desplazamiento en las dimensiones de la fuente asociada con el contexto de dispositivo (DC) de la ventana. Para recuperar las dimensiones de fuente de un controlador de dominio concreto, use la función [**GetTextMetrics**](/windows/desktop/api/wingdi/nf-wingdi-gettextmetrics) .
+Normalmente, las unidades de desplazamiento se establecen al procesar [**el \_ mensaje WM CREATE.**](/windows/desktop/winmsg/wm-create) Es conveniente basar las unidades de desplazamiento en las dimensiones de la fuente asociada al contexto de dispositivo (DC) de la ventana. Para recuperar las dimensiones de fuente de un controlador de dominio específico, use la [**función GetTextMetrics.**](/windows/desktop/api/wingdi/nf-wingdi-gettextmetrics)
 
-En el ejemplo de esta sección, una unidad de desplazamiento vertical es equivalente al alto de una celda de carácter, más la inicial externa. Una unidad de desplazamiento horizontal es equivalente al ancho medio de una celda de carácter. Por lo tanto, las posiciones de desplazamiento horizontal no corresponden a los caracteres reales, a menos que la fuente de la pantalla sea de ancho fijo.
+En el ejemplo de esta sección, una unidad de desplazamiento vertical equivale al alto de una celda de caracteres, más el inicial externo. Una unidad de desplazamiento horizontal es equivalente al ancho medio de una celda de caracteres. Por lo tanto, las posiciones de desplazamiento horizontal no se corresponden con caracteres reales, a menos que la fuente de la pantalla sea de ancho fijo.
 
-### <a name="processing-the-wm_size-message"></a>Procesar el mensaje de tamaño de WM \_
+### <a name="processing-the-wm_size-message"></a>Procesamiento del mensaje \_ WM SIZE
 
-Al procesar el mensaje de [**\_ tamaño de WM**](/windows/desktop/winmsg/wm-size) , es conveniente ajustar el intervalo de desplazamiento y el desplazamiento para reflejar las dimensiones del área de cliente, así como el número de líneas de texto que se mostrarán.
+Al procesar el [**mensaje WM \_ SIZE,**](/windows/desktop/winmsg/wm-size) es conveniente ajustar el intervalo de desplazamiento y la posición de desplazamiento para reflejar las dimensiones del área cliente, así como el número de líneas de texto que se mostrarán.
 
-La función [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) establece los valores de posición mínimo y máximo, el tamaño de página y la posición de desplazamiento de una barra de desplazamiento.
+La [**función SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) establece los valores de posición mínima y máxima, el tamaño de página y la posición de desplazamiento de una barra de desplazamiento.
 
-### <a name="processing-the-wm_hscroll-and-wm_vscroll-messages"></a>Procesamiento de los \_ mensajes de WM HSCROLL y WM \_ VSCROLL
+### <a name="processing-the-wm_hscroll-and-wm_vscroll-messages"></a>Procesamiento de los mensajes \_ WM HSCROLL y WM \_ VSCROLL
 
-La barra de desplazamiento envía mensajes de [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) al procedimiento de ventana siempre que el usuario hace clic en la barra de desplazamiento o arrastra el cuadro de desplazamiento. Las palabras de orden inferior de **WM \_ VSCROLL** y **WM \_ HSCROLL** contienen cada una un código de solicitud que indica la dirección y la magnitud de la acción de desplazamiento.
+La barra de desplazamiento envía mensajes [**\_ WM HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) al procedimiento de ventana cada vez que el usuario hace clic en la barra de desplazamiento o arrastra el cuadro de desplazamiento. Las palabras de orden bajo de **WM \_ VSCROLL** y **WM \_ HSCROLL** contienen cada una un código de solicitud que indica la dirección y magnitud de la acción de desplazamiento.
 
-Cuando se procesan los mensajes de [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) , se examina el código de solicitud de la barra de desplazamiento y se calcula el incremento de desplazamiento. Una vez aplicado el incremento a la posición de desplazamiento actual, la ventana se desplaza a la nueva posición mediante la función [**ScrollWindowEx**](/windows/desktop/api/Winuser/nf-winuser-scrollwindowex) y la posición del cuadro de desplazamiento se ajusta mediante la función [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) .
+Cuando se procesan los mensajes [**\_ WM HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL,**](wm-vscroll.md) se examina el código de solicitud de la barra de desplazamiento y se calcula el incremento de desplazamiento. Después de aplicar el incremento a la posición de desplazamiento actual, la ventana se desplaza a la nueva posición mediante la función [**ScrollWindowEx**](/windows/desktop/api/Winuser/nf-winuser-scrollwindowex) y la posición del cuadro de desplazamiento se ajusta mediante la función [**SetScrollInfo.**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo)
 
-Una vez desplazada una ventana, parte de su área de cliente no es válida. Para asegurarse de que se actualiza la región no válida, se usa la función [**UpdateWindow**](/windows/desktop/api/winuser/nf-winuser-updatewindow) para generar un mensaje de [**\_ dibujo de WM**](/windows/desktop/gdi/wm-paint) .
+Una vez que se desplaza una ventana, parte de su área de cliente no es válida. Para asegurarse de que se actualiza la región no válida, se usa [**la función UpdateWindow**](/windows/desktop/api/winuser/nf-winuser-updatewindow) para generar un [**mensaje WM \_ PAINT.**](/windows/desktop/gdi/wm-paint)
 
-### <a name="processing-the-wm_paint-message"></a>Procesar el mensaje de dibujo de WM \_
+### <a name="processing-the-wm_paint-message"></a>Procesamiento del mensaje \_ WM PAINT
 
-Al procesar el mensaje de [**\_ dibujo de WM**](/windows/desktop/gdi/wm-paint) , es conveniente dibujar las líneas de texto que desea que aparezcan en la parte no válida de la ventana. En el ejemplo siguiente se usa la posición de desplazamiento actual y las dimensiones de la región no válida para determinar el intervalo de líneas dentro de la región no válida con el fin de mostrarlas.
+Al procesar el [**mensaje \_ WM PAINT,**](/windows/desktop/gdi/wm-paint) es conveniente dibujar las líneas de texto que desea que aparezcan en la parte no válida de la ventana. En el ejemplo siguiente se usa la posición de desplazamiento actual y las dimensiones de la región no válida para determinar el intervalo de líneas dentro de la región no válida con el fin de mostrarlas.
 
-## <a name="example-of-scrolling-text"></a>Ejemplo de texto de desplazamiento
+## <a name="example-of-scrolling-text"></a>Ejemplo de desplazamiento de texto
 
-El ejemplo siguiente es un procedimiento de ventana para una ventana que muestra texto en su área de cliente. En el ejemplo se muestra cómo desplazar el texto en respuesta a la entrada de las barras de desplazamiento horizontal y vertical.
+El ejemplo siguiente es un procedimiento de ventana para una ventana que muestra texto en su área cliente. En el ejemplo se muestra cómo desplazar el texto en respuesta a la entrada de las barras de desplazamiento horizontal y vertical.
 
 
 ```C++
@@ -326,9 +326,9 @@ switch (uMsg)
 [Usar barras de desplazamiento](using-scroll-bars.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

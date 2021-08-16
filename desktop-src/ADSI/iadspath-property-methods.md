@@ -4,7 +4,7 @@ description: El método de propiedad de la interfaz IADsPath establece la propie
 ms.assetid: 6fc7ce1a-575b-48c4-9f66-3ea22d60c96b
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propiedad IADsPath
+- AdsI de los métodos de propiedad IADsPath
 topic_type:
 - apiref
 api_name:
@@ -67,7 +67,7 @@ HRESULT put_Path(
 
 </dt> </dl> </dd> <dt>
 
-**Type**
+**Tipo**
 </dt> <dd> <dl>
 
 Tipo de archivo del sistema de archivos.
@@ -129,7 +129,7 @@ HRESULT put_VolumeName(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -139,14 +139,14 @@ HRESULT put_VolumeName(
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IADsPath**](/windows/desktop/api/Iads/nn-iads-iadspath)
 </dt> <dt>
 
-[**RUTA DE \_ ACCESO DE ADS**](/windows/win32/api/iads/ns-iads-ads_path)
+[**RUTA DE ACCESO \_ DE ADS**](/windows/win32/api/iads/ns-iads-ads_path)
 </dt> </dl>
 
  

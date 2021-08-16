@@ -1,7 +1,7 @@
 ---
-description: Diagnostica la conectividad de red de una máquina virtual en un entorno de virtualización de red de Windows.
+description: Diagnostica la conectividad de red de una máquina virtual en un Windows Network Virtualization Environment.
 ms.assetid: c18f48bf-1f57-4a23-a495-462afad42750
-title: Método DiagnoseNetworkConnection de la clase Msvm_VirtualSystemManagementService
+title: Método DiagnoseNetworkConnection de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 70760f771e3908265a4ac70ebc1cbdf957d652c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c82f72a9c2a2b16ad991940fcb378c41e75fdf31e9e6f8b74f23f9d115cab93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681135"
 ---
-# <a name="diagnosenetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DiagnoseNetworkConnection de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="diagnosenetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DiagnoseNetworkConnection de la clase Msvm \_ VirtualSystemManagementService
 
-Diagnostica la conectividad de red de una máquina virtual en un entorno de virtualización de red de Windows.
+Diagnostica la conectividad de red de una máquina virtual en un Windows Network Virtualization Environment.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,37 +42,37 @@ uint32 DiagnoseNetworkConnection(
 
 <dl> <dt>
 
-*TargetNetworkAdapter* \[ de\]
+*TargetNetworkAdapter* \[ En\]
 </dt> <dd>
 
-Referencia a un [**\_ EthernetPortAllocationSettingData de MSVM**](msvm-ethernetportallocationsettingdata.md) que describe el adaptador de red de destino.
+Referencia a un [**Msvm \_ EthernetPortAllocationSettingData**](msvm-ethernetportallocationsettingdata.md) que describe el adaptador de red de destino.
 
 </dd> <dt>
 
-*DiagnosticSettings* \[ de\]
+*DiagnosticSettings* \[ En\]
 </dt> <dd>
 
-Configuración de diagnóstico que se va a usar.
+Configuración de diagnóstico que se usará.
 
 </dd> <dt>
 
-*DiagnosticInformation* \[ enuncia\]
+*DiagnosticInformation* \[ out\]
 </dt> <dd>
 
-Si se ejecuta correctamente, devuelve la información de diagnóstico.
+Si se realiza correctamente, devuelve la información de diagnóstico.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 o 4096 en caso de éxito; de lo contrario, devuelve un error.
+Devuelve 0 o 4096 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -85,7 +85,7 @@ Devuelve 0 o 4096 en caso de éxito; de lo contrario, devuelve un error.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -97,31 +97,31 @@ Devuelve 0 o 4096 en caso de éxito; de lo contrario, devuelve un error.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Replication-Notify-subsiguiente-DSA-Delay
-description: Este atributo controla el retraso en el tiempo entre la notificación de cada asociado de réplica subsiguiente para un NC.
+title: Atributo ms-DS-Replication-Notify-Subsequent-DSA-Delay
+description: Este atributo controla el retraso en el tiempo entre la notificación de cada asociado de réplica posterior para una NC.
 ms.assetid: 6bd9fed7-2003-4156-b1a0-da8622dc2ca8
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-Replication-Notify-subestado-DSA-Delay atributo AD Schema
-- msDS-Replication-Notify-subsiguientes-DSA-Delay Attribute AD Schema
+- Esquema de AD del atributo ms-DS-Replication-Notify-Subsequent-DSA-Delay
+- Esquema de AD del atributo msDS-Replication-Notify-Subsequent-DSA-Delay
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd8b267309fa8d017ace926f7497ca210fb2b00
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97ce9502c77b6ba3b4188dc34e11c805032da40508232127cc96bf6b536d5bf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803455"
 ---
-# <a name="ms-ds-replication-notify-subsequent-dsa-delay-attribute"></a>atributo MS-DS-Replication-Notify-subsiguiente-DSA-Delay
+# <a name="ms-ds-replication-notify-subsequent-dsa-delay-attribute"></a>Atributo ms-DS-Replication-Notify-Subsequent-DSA-Delay
 
-Este atributo controla el retraso en el tiempo entre la notificación de cada asociado de réplica subsiguiente para un NC.
+Este atributo controla el retraso en el tiempo entre la notificación de cada asociado de réplica posterior para una NC.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------|
-| CN                | MS-DS-Replication-Notify-subsiguiente-DSA-Delay |
-| Nombre para mostrar de LDAP | msDS-Replication-Notify-subsiguientes-DSA-Delay  |
-| Tamaño              | \-                                            |
-| Actualizar privilegio  | El sistema establece este valor.              |
+| CN                | ms-DS-Replication-Notify-Subsequent-DSA-Delay |
+| Ldap-Display-Name | msDS-Replication-Notify-Subsequent-DSA-Delay  |
+| Size              | \-                                            |
+| Actualizar privilegios  | El sistema establece este valor.              |
 | Frecuencia de actualización  | \-                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1664                       |
-| System-ID-GUID    | d63db385-dd92-4b52-b1d8-0d3ecc0e86b6          |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)          |
+| System-Id-Guid    | d63db385-dd92-4b52-b1d8-0d3ecc0e86b6          |
+| Syntax            | [**Enumeración**](s-enumeration.md)          |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -53,15 +53,15 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -70,19 +70,19 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -95,15 +95,15 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -116,15 +116,15 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -137,15 +137,15 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -158,15 +158,15 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |

@@ -181,7 +181,7 @@ case WM_TOUCH:
 
 
 > [!Note]  
-> Para usar la función [**ScreenToClient,**](/windows/desktop/api/winuser/nf-winuser-screentoclient) debe tener compatibilidad con valores altos de PPP en la aplicación. Para obtener más información sobre la compatibilidad con valores altos de PPP, consulte la [sección Valores altos]( ../hidpi/high-dpi-desktop-application-development-on-windows.md) de PPP de MSDN.
+> Para usar la función [**ScreenToClient,**](/windows/desktop/api/winuser/nf-winuser-screentoclient) debe tener compatibilidad con valores altos de PPP en la aplicación. Para obtener más información sobre la compatibilidad con valores altos de PPP, consulte la [sección Valores altos de PPP]( ../hidpi/high-dpi-desktop-application-development-on-windows.md) de MSDN.
 
  
 

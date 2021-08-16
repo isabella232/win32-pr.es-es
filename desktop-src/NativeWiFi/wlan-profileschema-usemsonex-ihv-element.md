@@ -1,7 +1,7 @@
 ---
-description: Especifica el origen de la configuración de seguridad de 802.1 X usada por un componente de seguridad IHV.
+description: Especifica el origen de la configuración de seguridad 802.1X utilizada por un componente de seguridad de IHV.
 ms.assetid: 9c216319-d962-4c68-89a3-116eff3f4376
-title: Elemento useMSOneX (IHV)
+title: elemento useMSOneX (IHV)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: aa9f2092ac0e76feae89b02f333ae3098288ccef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a62f2f25ef2a4a52fae82e2ce8ddb097a4b434d7c2f8f35a2783703a617ad8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912645"
 ---
-# <a name="usemsonex-ihv-element"></a>Elemento useMSOneX (IHV)
+# <a name="usemsonex-ihv-element"></a>elemento useMSOneX (IHV)
 
-El elemento **useMSOneX** (IHV) especifica el origen de la configuración de seguridad de 802.1 x usada por un componente de seguridad IHV.
+El **elemento useMSOneX** (IHV) especifica el origen de la configuración de seguridad 802.1X utilizada por un componente de seguridad de IHV.
 
-Cuando **useMSOneX** es true, los componentes de seguridad de IHV usan la configuración de 802.1 x definida por Microsoft. Cuando **useMSOneX** es false, los componentes de seguridad de IHV usan la configuración de 802.1 x suministrada por el proveedor.
+Cuando **useMSOneX es** true, los componentes de seguridad de IHV usan la configuración 802.1X definida por Microsoft. Cuando **useMSOneX es** false, los componentes de seguridad de IHV usan la configuración 802.1X proporcionada por el proveedor.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="useMSOneX"
@@ -34,20 +34,20 @@ Cuando **useMSOneX** es true, los componentes de seguridad de IHV usan la config
  />
 ```
 
-El elemento está definido por el elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) .
+El elemento se define mediante el [**elemento IHV.**](wlan-profileschema-ihv-wlanprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

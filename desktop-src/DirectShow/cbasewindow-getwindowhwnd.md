@@ -1,7 +1,7 @@
 ---
-description: El método GetWindowHWND recupera un identificador de la ventana.
+description: El método GetWindowHWND recupera un identificador en la ventana.
 ms.assetid: f7fcca87-b823-4d2e-9ba8-6a3ed90ec8a9
-title: Método CBaseWindow. GetWindowHWND (Winutil. h)
+title: Método CBaseWindow.GetWindowHWND (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 50776155adca0ea22c02010123612cffa2a60426
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26a7e0adb03ef0b9ca10fcf8257647c8bd7f038f18e242d840fd7ca7c18c4e7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016603"
 ---
-# <a name="cbasewindowgetwindowhwnd-method"></a>CBaseWindow. GetWindowHWND, método
+# <a name="cbasewindowgetwindowhwnd-method"></a>Método CBaseWindow.GetWindowHWND
 
-El `GetWindowHWND` método recupera un identificador de la ventana.
+El `GetWindowHWND` método recupera un identificador en la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,16 +50,16 @@ Devuelve un identificador a la ventana.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

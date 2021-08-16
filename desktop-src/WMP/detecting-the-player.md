@@ -3,30 +3,30 @@ title: Detección del reproductor
 description: Detección del reproductor
 ms.assetid: dc034226-578a-45de-9463-e1798fef874e
 keywords:
-- Windows Media Player tiendas en línea, detectar jugadores
-- tiendas en línea, detectar jugadores
-- tipo 1 tiendas en línea, detección de reproductores
-- tipo 2 tiendas en línea, detección de reproductores
-- Windows Media Player tiendas en línea, detección del reproductor
-- tiendas en línea, detección del reproductor
-- tipo 1 almacenes en línea, detección del reproductor
-- tipo 2 tiendas en línea, detección del reproductor
-- detección del reproductor
+- Reproductor de Windows Media en línea, detectar reproductores
+- tiendas en línea, detectar reproductores
+- tiendas en línea de tipo 1, detectar reproductores
+- tiendas en línea de tipo 2, detectar reproductores
+- Reproductor de Windows Media en línea, detección de reproductores
+- tiendas en línea, detección de reproductores
+- tiendas en línea de tipo 1, detección de reproductores
+- tiendas en línea de tipo 2, detección de reproductores
 - detección de reproductores
+- detectar reproductores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb919e790b07ccf5d8df587abd63d2344534b16b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d511fc8c14a901c6823715293c5eb621b45762cd5e9fae78d8c4df503a03bf38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863515"
 ---
 # <a name="detecting-the-player"></a>Detección del reproductor
 
-Al crear una página web para la tienda en línea, puede decidir que quiere que los usuarios puedan ver la página en un explorador Web o en Windows Media Player. Puede usar un script de ASP para determinar si la página web está hospedada en el reproductor.
+Al crear una página web para su tienda en línea, puede decidir que quiere que los usuarios puedan ver la página en un explorador web o en Reproductor de Windows Media. Puede usar un script ASP para determinar si la página web está hospedada en el reproductor.
 
-En el código de ejemplo siguiente se recupera el parámetro de versión de la cadena de consulta de dirección URL para determinar si la página se hospeda en Windows Media Player:
+El código de ejemplo siguiente recupera el parámetro version de la cadena de consulta url para determinar si la página está hospedada en Reproductor de Windows Media:
 
 
 ```C++
@@ -46,7 +46,7 @@ En el código de ejemplo siguiente se recupera el parámetro de versión de la c
 
 
 
-Tenga en cuenta que en el código anterior se supone que el parámetro Version existe en la cadena de consulta cuando se hospeda en Windows Media Player. Esto es así para las páginas abiertas por el usuario, pero puede que no sea cierto para las páginas abiertas mediante **external. NavigateTaskPaneURL**. Para que la cadena de consulta de la versión exista al navegar mediante programación, debe agregar el parámetro Version a la llamada al método o anexar dinámicamente la versión a la dirección URL base del elemento **Navigate** del documento ServiceInfo.
+Tenga en cuenta que el código anterior supone que el parámetro version existe en la cadena de consulta cuando se hospeda en Reproductor de Windows Media. Esto es así para las páginas abiertas por el usuario, pero puede que no sea cierto para las páginas abiertas mediante **External.NavigateTaskPaneURL**. Para que la cadena de consulta de versión exista al navegar mediante programación, debe agregar el parámetro version a la llamada al método o anexar dinámicamente la versión a la dirección URL base del elemento **Navigate** del documento ServiceInfo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -55,15 +55,15 @@ Tenga en cuenta que en el código anterior se supone que el parámetro Version e
 [**Creación dinámica del documento ServiceInfo**](creating-the-serviceinfo-document-dynamically.md)
 </dt> <dt>
 
-[**External. NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
+[**External.NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
 </dt> <dt>
 
-[**Información común para las tiendas en línea de tipo 1 y 2**](information-common-to-type-1-and-type-2-online-stores.md)
+[**Información común a los almacenes en línea de tipo 1 y 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,18 +4,18 @@ ms.assetid: b09c00ae-a498-499b-ba2b-735028e9fd8f
 title: Uso de fibras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c25c8d9d258853990bd200a01c77be85c1fdfaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ce5d33cfbe7e54d297366290587d14c282a2e8f2d008a92eba4427cfdd7a139
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101915"
 ---
 # <a name="using-fibers"></a>Uso de fibras
 
-La función [**CreateFiber**](/windows/desktop/api/WinBase/nf-winbase-createfiber) crea una nueva fibra para un subproceso. El subproceso de creación debe especificar la dirección inicial del código que va a ejecutar la nueva fibra. Normalmente, la dirección de inicio es el nombre de una función proporcionada por el usuario. Varios fibras pueden ejecutar la misma función.
+La [**función CreateFiber**](/windows/desktop/api/WinBase/nf-winbase-createfiber) crea una nueva fibra para un subproceso. El subproceso de creación debe especificar la dirección inicial del código que se va a ejecutar la nueva fibra. Normalmente, la dirección inicial es el nombre de una función proporcionada por el usuario. Varias fibras pueden ejecutar la misma función.
 
-En el ejemplo siguiente se muestra cómo crear, programar y eliminar fibras. Las fibras ejecutan las funciones definidas localmente ReadFiberFunc y WriteFiberFunc. En este ejemplo se implementa una operación de copia de archivos basada en fibra. Al ejecutar el ejemplo, debe especificar los archivos de origen y de destino. Tenga en cuenta que hay muchas otras formas de copiar el archivo mediante programación; Este ejemplo existe principalmente para ilustrar el uso de las funciones de fibra.
+En el ejemplo siguiente se muestra cómo crear, programar y eliminar fibras. Las fibras ejecutan las funciones definidas localmente ReadFiberFunc y WriteFiberFunc. En este ejemplo se implementa una operación de copia de archivos basada en fibra. Al ejecutar el ejemplo, debe especificar los archivos de origen y de destino. Tenga en cuenta que hay muchas otras formas de copiar archivos mediante programación; este ejemplo existe principalmente para ilustrar el uso de las funciones de fibra.
 
 
 ```C++
@@ -373,19 +373,19 @@ DisplayFiberInfo(
 
 
 
-En este ejemplo se usa una estructura de datos de fibra que se utiliza para determinar el comportamiento y el estado de la fibra. Existe una estructura de datos para cada fibra; el puntero a la estructura de datos se pasa a la fibra en el momento de la creación de la fibra mediante el parámetro de la función [*FiberProc*](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine) .
+En este ejemplo se usa una estructura de datos de fibra que se usa para determinar el comportamiento y el estado de la fibra. Existe una estructura de datos para cada fibra; El puntero a la estructura de datos se pasa a la fibra en el momento de la creación de la fibra mediante el parámetro de la [*función FiberProc.*](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine)
 
-El subproceso que realiza la llamada llama a la función [**ConvertThreadToFiber**](/windows/desktop/api/WinBase/nf-winbase-convertthreadtofiber) , lo que permite que el llamador programe las fibras. Esto también permite que otra fibra programe la fibra. A continuación, el subproceso crea dos fibras adicionales, una que realiza operaciones de lectura en un archivo especificado y otra que realiza las operaciones de escritura en un archivo especificado.
+El subproceso de llamada llama a [**la función ConvertThreadToFiber,**](/windows/desktop/api/WinBase/nf-winbase-convertthreadtofiber) que permite que el autor de la llamada programe las fibras. Esto también permite que otra fibra programe la fibra. A continuación, el subproceso crea dos fibras adicionales, una que realiza operaciones de lectura en un archivo especificado y otra que realiza las operaciones de escritura en un archivo especificado.
 
-El Fiber primario llama a la función [**SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber) para programar la fibra de lectura. Después de una lectura correcta, el Fiber de lectura programa la fibra de escritura. Después de una escritura correcta en la fibra de escritura, la fibra de escritura programa la fibra de lectura. Cuando se completa el ciclo de lectura/escritura, se programa la fibra principal, lo que da como resultado la visualización del estado de lectura/escritura. Si se produce un error durante las operaciones de lectura o escritura, la fibra principal está programada y, en ejemplo, muestra el estado de la operación.
+La fibra principal llama a [**la función SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber) para programar la fibra de lectura. Después de una lectura correcta, la fibra de lectura programa la fibra de escritura. Después de una escritura correcta en la fibra de escritura, la fibra de escritura programa la fibra de lectura. Una vez completado el ciclo de lectura y escritura, se programa la fibra principal, lo que da como resultado la presentación del estado de lectura y escritura. Si se produce un error durante las operaciones de lectura o escritura, se programa la fibra principal y, por ejemplo, se muestra el estado de la operación.
 
-Antes de la finalización del proceso, el proceso libera las fibras mediante la función [**DeleteFiber**](/windows/desktop/api/WinBase/nf-winbase-deletefiber) , cierra los identificadores de archivo y libera la memoria asignada.
+Antes de finalizar el proceso, el proceso libera las fibras mediante la función [**DeleteFiber,**](/windows/desktop/api/WinBase/nf-winbase-deletefiber) cierra los identificadores de archivo y libera la memoria asignada.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Fibra](fibers.md)
+[Fibras](fibers.md)
 </dt> </dl>
 
  

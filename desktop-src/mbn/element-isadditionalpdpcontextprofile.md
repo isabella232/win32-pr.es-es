@@ -29,7 +29,7 @@ Tenga en cuenta que si este elemento se establece en true, también debe cumplir
 
 **<IsAdditionalPdpContextProfile>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <IsAdditionalPdpContextProfile>

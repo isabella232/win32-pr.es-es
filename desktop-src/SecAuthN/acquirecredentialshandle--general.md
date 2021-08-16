@@ -1,37 +1,37 @@
 ---
-description: Adquiere un identificador a las credenciales preexistentes de una entidad de seguridad.
+description: Adquiere un identificador para las credenciales preexistentes de una entidad de seguridad.
 ms.assetid: acda4cf3-39a6-4bd2-91a0-db1f191b57b5
-title: AcquireCredentialsHandle (general) (función) (SSPI. h)
+title: Función AcquireCredentialsHandle (General) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 9c1202d8b482eee45697cec35ff6a7e8ba6ef354
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fcac88d1dcf31da19a15ab8a4834ae628d4e98e45ab777ec3da0db14092c75d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101465"
 ---
-# <a name="acquirecredentialshandle-general-function"></a>AcquireCredentialsHandle (general), función
+# <a name="acquirecredentialshandle-general-function"></a>Función AcquireCredentialsHandle (General)
 
-La función **AcquireCredentialsHandle (general)** adquiere un identificador a las credenciales preexistentes de una [*entidad de seguridad*](../secgloss/s-gly.md). Este identificador es necesario para las funciones [**InitializeSecurityContext (general)**](initializesecuritycontext--general.md) y [**AcceptSecurityContext (general)**](acceptsecuritycontext--general.md) . Pueden ser credenciales preexistentes, que se establecen a través de un inicio de sesión del sistema que no se describe aquí, o bien el autor de la llamada puede proporcionar credenciales alternativas.
+La **función AcquireCredentialsHandle (General)** adquiere un identificador para las credenciales preexistentes de una entidad [*de seguridad*](../secgloss/s-gly.md). Las funciones [**InitializeSecurityContext (General)**](initializesecuritycontext--general.md) y [**AcceptSecurityContext (General)**](acceptsecuritycontext--general.md) requieren este identificador. Pueden ser credenciales preexistentes, que se establecen a través de un inicio de sesión del sistema que no se describe aquí, o bien el autor de la llamada puede proporcionar credenciales alternativas.
 
 > [!Note]  
-> No se trata de un "Inicio de sesión en la red" y no implica la recopilación de credenciales.
+> Esto no es un "inicio de sesión en la red" y no implica la recopilación de credenciales.
 
  
 
-Para obtener información sobre el uso de esta función con un [*proveedor de compatibilidad de seguridad*](../secgloss/s-gly.md) (SSP) específico, vea los temas siguientes.
+Para obtener información sobre el uso de esta función con un proveedor [*de soporte técnico de seguridad*](../secgloss/s-gly.md) (SSP) específico, vea los temas siguientes.
 
 
 
 | Tema                                                                                           | Descripción                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AcquireCredentialsHandle (CredSSP)**](acquirecredentialshandle--credssp.md)<br/>     | Adquiere un identificador a las credenciales preexistentes de una entidad de seguridad que usa el proveedor de compatibilidad para seguridad de credenciales (CredSSP).<br/> |
-| [**AcquireCredentialsHandle (Resumen)**](acquirecredentialshandle--digest.md)<br/>       | Adquiere un identificador a las credenciales preexistentes de una entidad de seguridad que usa la síntesis.<br/>                                         |
-| [**AcquireCredentialsHandle (Kerberos)**](acquirecredentialshandle--kerberos.md)<br/>   | Adquiere un identificador a las credenciales preexistentes de una entidad de seguridad que usa Kerberos.<br/>                                       |
-| [**AcquireCredentialsHandle (Negotiate)**](acquirecredentialshandle--negotiate.md)<br/> | Adquiere un identificador a las credenciales preexistentes de una entidad de seguridad que utiliza Negotiate.<br/>                                      |
-| [**AcquireCredentialsHandle (NTLM)**](acquirecredentialshandle--ntlm.md)<br/>           | Adquiere un identificador a las credenciales preexistentes de una entidad de seguridad que usa NTLM.<br/>                                           |
-| [**AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md)<br/>   | Adquiere un identificador a las credenciales preexistentes de una entidad de seguridad que usa Schannel.<br/>                                       |
+| [**AcquireCredentialsHandle (CredSSP)**](acquirecredentialshandle--credssp.md)<br/>     | Adquiere un identificador para las credenciales preexistentes de una entidad de seguridad que usa el proveedor de compatibilidad de seguridad de credenciales (CredSSP).<br/> |
+| [**AcquireCredentialsHandle (digest)**](acquirecredentialshandle--digest.md)<br/>       | Adquiere un identificador para las credenciales preexistentes de una entidad de seguridad que usa Digest.<br/>                                         |
+| [**AcquireCredentialsHandle (Kerberos)**](acquirecredentialshandle--kerberos.md)<br/>   | Adquiere un identificador para las credenciales preexistentes de una entidad de seguridad que usa Kerberos.<br/>                                       |
+| [**AcquireCredentialsHandle (Negotiate)**](acquirecredentialshandle--negotiate.md)<br/> | Adquiere un identificador para las credenciales preexistentes de una entidad de seguridad que usa Negotiate.<br/>                                      |
+| [**AcquireCredentialsHandle (NTLM)**](acquirecredentialshandle--ntlm.md)<br/>           | Adquiere un identificador para las credenciales preexistentes de una entidad de seguridad que usa NTLM.<br/>                                           |
+| [**AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md)<br/>   | Adquiere un identificador para las credenciales preexistentes de una entidad de seguridad que usa Schannel.<br/>                                       |
 
 
 
@@ -60,47 +60,47 @@ SECURITY_STATUS SEC_Entry AcquireCredentialsHandle(
 
 <dl> <dt>
 
-*pszPrincipal* \[ de\]
+*pszPrincipal* \[ En\]
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica el nombre de la entidad de seguridad cuyas credenciales hará referencia el identificador.
+Puntero a una cadena terminada en NULL que especifica el nombre de la entidad de seguridad cuyas credenciales hará referencia el identificador.
 
-Cuando se usa el SSP de síntesis, este parámetro es opcional.
+Cuando se usa el SSP de resumen, este parámetro es opcional.
 
-Cuando se usa Schannel SSP, este parámetro no se utiliza y debe establecerse en **null**.
+Cuando se usa SSP de Schannel, este parámetro no se usa y debe establecerse en **NULL.**
 
 > [!Note]  
-> Si el proceso que solicita el identificador no tiene acceso a las credenciales, la función devuelve un error. Una cadena null indica que el proceso requiere un identificador a las credenciales del usuario en cuyo [*contexto de seguridad*](../secgloss/s-gly.md) se está ejecutando.
+> Si el proceso que solicita el identificador no tiene acceso a las credenciales, la función devuelve un error. Una cadena null indica que el proceso requiere un identificador para las credenciales del usuario en cuyo contexto [*de seguridad*](../secgloss/s-gly.md) se está ejecutando.
 
  
 
 </dd> <dt>
 
-*pszPackage* \[ de\]
+*pszPackage* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del [*paquete de seguridad*](../secgloss/s-gly.md) con el que se utilizarán estas credenciales. Se trata de un nombre de [*paquete de seguridad*](../secgloss/s-gly.md) devuelto en el miembro **Name** de una estructura [**SecPkgInfo**](/windows/win32/api/sspi/ns-sspi-secpkginfoa) devuelta por la función [**EnumerateSecurityPackages**](/windows/win32/api/sspi/ns-sspi-secpkginfoa) . Una vez establecido un contexto, se puede llamar a [**QueryContextAttributes (general)**](querycontextattributes--general.md) con *ULATTRIBUTE* establecido en SECPKG \_ ATTR \_ Package \_ info para devolver información sobre el [*paquete de seguridad*](../secgloss/s-gly.md) en uso.
+Puntero a una cadena terminada en NULL que especifica el nombre del paquete de [*seguridad*](../secgloss/s-gly.md) con el que se usarán estas credenciales. Se trata de [*un nombre de paquete*](../secgloss/s-gly.md) de seguridad devuelto en el miembro **Name** de una [**estructura SecPkgInfo**](/windows/win32/api/sspi/ns-sspi-secpkginfoa) devuelta por la [**función EnumerateSecurityPackages.**](/windows/win32/api/sspi/ns-sspi-secpkginfoa) Una vez establecido un contexto, se puede llamar a [**QueryContextAttributes (General)**](querycontextattributes--general.md) con *ulAttribute* establecido en SECPKG ATTR PACKAGE INFO para devolver información sobre el paquete de seguridad \_ en \_ \_ uso. [](../secgloss/s-gly.md)
 
-Al usar el SSP de síntesis, establezca este parámetro en WDIGEST \_ Sp \_ Name.
+Cuando use el SSP de resumen, establezca este parámetro en WDIGEST \_ SP \_ NAME.
 
-Al usar Schannel SSP, establezca este parámetro en UNISP \_ Name.
+Cuando use SCHANNEL SSP, establezca este parámetro en UNISP \_ NAME.
 
 </dd> <dt>
 
-*fCredentialUse* \[ de\]
+*fCredentialUse* \[ En\]
 </dt> <dd>
 
-Marca que indica cómo se utilizarán estas credenciales. Este parámetro puede ser uno de los valores siguientes.
+Marca que indica cómo se usarán estas credenciales. Este parámetro puede ser uno de los valores siguientes.
 
 
 
 | Valor                                                                                                                                                                                                                                                                                    | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SECPKG_CRED_AUTOLOGON_RESTRICTED"></span><span id="secpkg_cred_autologon_restricted"></span><dl> <dt>**SECPKG \_ CRED \_ AUTOlogon- \_ Restricted**</dt> <dt>0x00000010</dt> </dl> | La seguridad no usa credenciales de inicio de sesión predeterminadas o credenciales del [Administrador de credenciales](credential-manager.md).<br/> Este valor solo es compatible con la [*delegación restringida*](../secgloss/s-gly.md)Negotiate.<br/> **Windows server 2008, Windows Vista, Windows server 2003 y Windows XP:** Este valor no se admite.<br/>                                                                                                                                 |
-| <span id="SECPKG_CRED_BOTH"></span><span id="secpkg_cred_both"></span><dl> <dt>**SECPKG \_ CRED \_ both**</dt> </dl>                                                                                                                  | Validar una credencial entrante o usar una credencial local para preparar un token saliente. Esta marca habilita ambos marcadores. Esta marca no es válida con el SSP de Schannel y Digest.<br/>                                                                                                                                                                                                                                                                |
-| <span id="SECPKG_CRED_INBOUND"></span><span id="secpkg_cred_inbound"></span><dl> <dt>**SECPKG \_ de \_ entrada de cred**</dt> </dl>                                                                                                         | Validar una credencial de servidor entrante. Las credenciales de entrada se pueden validar mediante una autoridad de autenticación cuando se llama a [**InitializeSecurityContext (general)**](initializesecuritycontext--general.md) o [**AcceptSecurityContext (general)**](acceptsecuritycontext--general.md) . Si dicha entidad no está disponible, se producirá un error en la función y se devolverá la \_ \_ autoridad de \_ autenticación \_ . La validación es específica del paquete.<br/> |
-| <span id="SECPKG_CRED_OUTBOUND"></span><span id="secpkg_cred_outbound"></span><dl> <dt>**SECPKG \_ CRED \_ saliente**</dt> </dl>                                                                                                      | Permitir una credencial de cliente local para preparar un token saliente.<br/>                                                                                                                                                                                                                                                                                                                                                                                        |
-| <span id="SECPKG_CRED_PROCESS_POLICY_ONLY"></span><span id="secpkg_cred_process_policy_only"></span><dl> <dt>**SECPKG \_ La \_ Directiva de proceso CRED \_ \_ solo**</dt> es <dt>0x00000020</dt> </dl>   | La función procesa la Directiva de servidor y devuelve las **\_ \_ \_ credenciales sec e no**, lo que indica que la aplicación debe solicitar las credenciales.<br/> Este valor solo es compatible con la [*delegación restringida*](../secgloss/s-gly.md)Negotiate.<br/> **Windows server 2008, Windows Vista, Windows server 2003 y Windows XP:** Este valor no se admite.<br/>                                                                                                          |
+| <span id="SECPKG_CRED_AUTOLOGON_RESTRICTED"></span><span id="secpkg_cred_autologon_restricted"></span><dl> <dt>**SECPKG \_ CRED \_ AUTOLOGON \_ RESTRICTED**</dt> <dt>0x00000010</dt> </dl> | La seguridad no usa credenciales de inicio de sesión predeterminadas ni credenciales de [Administrador de credenciales](credential-manager.md).<br/> Este valor solo es compatible con la delegación [*restringida*](../secgloss/s-gly.md)Negotiate .<br/> **Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** Este valor no se admite.<br/>                                                                                                                                 |
+| <span id="SECPKG_CRED_BOTH"></span><span id="secpkg_cred_both"></span><dl> <dt>**SECPKG \_ CRED \_ BOTH**</dt> </dl>                                                                                                                  | Valide una credencial entrante o use una credencial local para preparar un token saliente. Esta marca habilita las otras dos marcas. Esta marca no es válida con los SSP digest y Schannel.<br/>                                                                                                                                                                                                                                                                |
+| <span id="SECPKG_CRED_INBOUND"></span><span id="secpkg_cred_inbound"></span><dl> <dt>**SECPKG \_ CRED \_ INBOUND**</dt> </dl>                                                                                                         | Valide una credencial de servidor entrante. Las credenciales de entrada se pueden validar mediante una autoridad de autenticación cuando se llama a [**InitializeSecurityContext (general)**](initializesecuritycontext--general.md) o [**AcceptSecurityContext (general).**](acceptsecuritycontext--general.md) Si dicha entidad no está disponible, la función producirá un error y devolverá SEC \_ E \_ NO \_ AUTHENTICATING \_ AUTHORITY. La validación es específica del paquete.<br/> |
+| <span id="SECPKG_CRED_OUTBOUND"></span><span id="secpkg_cred_outbound"></span><dl> <dt>**SECPKG \_ CRED \_ OUTBOUND**</dt> </dl>                                                                                                      | Permitir que una credencial de cliente local prepare un token de salida.<br/>                                                                                                                                                                                                                                                                                                                                                                                        |
+| <span id="SECPKG_CRED_PROCESS_POLICY_ONLY"></span><span id="secpkg_cred_process_policy_only"></span><dl> <dt>**SECPKG \_ SOLO DIRECTIVA \_ DE \_ PROCESOS \_ CRED**</dt> <dt>0x00000020</dt> </dl>   | La función procesa la directiva de servidor y devuelve **SEC \_ E NO \_ \_ CREDENTIALS**, lo que indica que la aplicación debe solicitar credenciales.<br/> Este valor solo es compatible con la delegación [*restringida*](../secgloss/s-gly.md)Negotiate .<br/> **Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** Este valor no se admite.<br/>                                                                                                          |
 
 
 
@@ -108,63 +108,63 @@ Marca que indica cómo se utilizarán estas credenciales. Este parámetro puede 
 
 </dd> <dt>
 
-*pvLogonID* \[ de\]
+*pvLogonID* \[ En\]
 </dt> <dd>
 
-Un puntero a un [*identificador local único*](../secgloss/l-gly.md) (LUID) que identifica al usuario. Este parámetro se proporciona para los procesos del sistema de archivos, como los redirectores de red. Este parámetro puede ser **NULL**.
+Puntero a un [*identificador único local*](../secgloss/l-gly.md) (LUID) que identifica al usuario. Este parámetro se proporciona para los procesos del sistema de archivos, como los redireccionamientos de red. Este parámetro puede ser **NULL**.
 
-Cuando se usa Schannel SSP, este parámetro no se utiliza y debe establecerse en **null**.
+Cuando se usa SSP de Schannel, este parámetro no se usa y debe establecerse en **NULL.**
 
 </dd> <dt>
 
-*pAuthData* \[ de\]
+*pAuthData* \[ En\]
 </dt> <dd>
 
-Puntero a datos específicos del paquete. Este parámetro puede ser **null**, lo que indica que se deben usar las credenciales predeterminadas para ese [*paquete de seguridad*](../secgloss/s-gly.md) . Para usar las credenciales proporcionadas, pase una estructura de [**\_ identidad de \_ autenticación \_ de WinNT**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a) de la SEC que incluya esas credenciales en este parámetro. El tiempo de ejecución de RPC pasa todo lo que se proporcionó en [**RpcBindingSetAuthInfo**](/windows/win32/api/rpcdce/nf-rpcdce-rpcbindingsetauthinfo).
+Puntero a datos específicos del paquete. Este parámetro puede ser **NULL,** lo que indica que se deben usar las credenciales predeterminadas para ese [*paquete*](../secgloss/s-gly.md) de seguridad. Para usar las credenciales proporcionadas, pase una estructura [**\_ SEC WINNT \_ AUTH \_ IDENTITY**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a) que incluya esas credenciales en este parámetro. El tiempo de ejecución de RPC pasa lo que se proporcionó [**en RpcBindingSetAuthInfo**](/windows/win32/api/rpcdce/nf-rpcdce-rpcbindingsetauthinfo).
 
-Cuando se usa el SSP de síntesis, este parámetro es un puntero a una estructura de [**\_ identidad de \_ autenticación \_ de WinNT**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a) de la SEC que contiene la información de autenticación que se va a usar para buscar las credenciales.
+Cuando se usa el SSP de resumen, este parámetro es un puntero a una estructura [**SEC \_ WINNT \_ AUTH \_ IDENTITY**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a) que contiene información de autenticación que se va a usar para buscar las credenciales.
 
-Al usar el SSP de Schannel, especifique una estructura de [**\_ CRED de Schannel**](/windows/win32/api/schannel/ns-schannel-schannel_cred) que indique el protocolo que se va a usar y los valores para varias características de canal personalizables.
+Al usar SChannel SSP, especifique una estructura [**\_ CRED**](/windows/win32/api/schannel/ns-schannel-schannel_cred) de SCHANNEL que indique el protocolo que se va a usar y la configuración de varias características de canal personalizables.
 
-Al usar los paquetes NTLM o Negotiate, las longitudes máximas de caracteres para el nombre de usuario, la contraseña y el dominio son 256, 256 y 15, respectivamente.
+Cuando se usan los paquetes NTLM o Negotiate, las longitudes máximas de caracteres para el nombre de usuario, la contraseña y el dominio son 256, 256 y 15, respectivamente.
 
 </dd> <dt>
 
-*pGetKeyFn* \[ de\]
+*pGetKeyFn* \[ En\]
 </dt> <dd>
 
-Este parámetro no se utiliza y debe establecerse en **null**.
+Este parámetro no se usa y debe establecerse en **NULL.**
 
 </dd> <dt>
 
-*pvGetKeyArgument* \[ de\]
+*pvGetKeyArgument* \[ En\]
 </dt> <dd>
 
-Este parámetro no se utiliza y debe establecerse en **null**.
+Este parámetro no se usa y debe establecerse en **NULL.**
 
 </dd> <dt>
 
-*phCredential* \[ enuncia\]
+*phCredential* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [CredHandle](sspi-handles.md) para recibir el identificador de la credencial.
+Puntero a una [estructura CredHandle](sspi-handles.md) para recibir el identificador de credenciales.
 
 </dd> <dt>
 
-*ptsExpiry* \[ enuncia\]
+*ptsExpiry* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura de [**marca**](timestamp.md) de tiempo que recibe la hora a la que expiran las credenciales devueltas. El valor devuelto en esta estructura de **marca** de tiempo depende de la [*delegación restringida*](../secgloss/s-gly.md). El [*paquete de seguridad*](../secgloss/s-gly.md) debe devolver este valor en la hora local.
+Puntero a una [**estructura TimeStamp**](timestamp.md) que recibe la hora a la que expiran las credenciales devueltas. El valor devuelto en esta **estructura TimeStamp** depende de [*la delegación restringida*](../secgloss/s-gly.md). El [*paquete de seguridad*](../secgloss/s-gly.md) debe devolver este valor en la hora local.
 
-Este parámetro se establece en un tiempo máximo constante. No hay ningún tiempo de expiración para las credenciales o el [*contexto de seguridad*](../secgloss/s-gly.md)implícita o cuando se usa el SSP de síntesis.
+Este parámetro se establece en un tiempo máximo constante. No hay ningún tiempo de expiración para las credenciales o [*contextos de*](../secgloss/s-gly.md)seguridad de resumen o cuando se usa el SSP de resumen.
 
-Cuando se usa Schannel SSP, este parámetro es opcional. Cuando la credencial que se va a usar para la autenticación es un certificado, este parámetro recibe la hora de expiración de ese certificado. Si no se ha proporcionado ningún certificado, se devuelve un valor de tiempo máximo.
+Cuando se usa SSP de Schannel, este parámetro es opcional. Cuando la credencial que se va a usar para la autenticación es un certificado, este parámetro recibe la hora de expiración de ese certificado. Si no se proporcionó ningún certificado, se devuelve un valor de tiempo máximo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve SEC \_ E \_ OK.
+Si la función se realiza correctamente, la función devuelve SEC \_ E \_ OK.
 
 Si se produce un error en la función, devuelve uno de los siguientes códigos de error.
 
@@ -172,55 +172,55 @@ Si se produce un error en la función, devuelve uno de los siguientes códigos d
 
 | Código devuelto                                                                                                 | Descripción                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**s \_ E \_ memoria insuficiente \_**</dt> </dl> | No hay suficiente memoria disponible para completar la acción solicitada.<br/>                                                                  |
-| <dl> <dt>**s \_ E \_ interno \_ error**</dt> </dl>      | Error que no se ha asignado a un código de error SSPI.<br/>                                                                               |
-| <dl> <dt>**s \_ E \_ sin \_ credenciales**</dt> </dl>      | No hay credenciales disponibles en la [*delegación restringida*](../secgloss/s-gly.md).<br/> |
-| <dl> <dt>**s \_ E \_ no \_ propietario**</dt> </dl>           | El autor de la llamada de la función no tiene las credenciales necesarias.<br/>                                                                     |
-| <dl> <dt>**s \_ E \_ SECPKG \_ no \_ encontrados**</dt> </dl>   | El [*paquete de seguridad*](../secgloss/s-gly.md) solicitado no existe.<br/>                                                                                          |
-| <dl> <dt>**s \_ E \_ credenciales desconocidas \_**</dt> </dl> | No se reconocieron las credenciales proporcionadas al paquete.<br/>                                                                            |
+| <dl> <dt>**S \_ E \_ MEMORIA \_ INSUFICIENTE**</dt> </dl> | No hay suficiente memoria disponible para completar la acción solicitada.<br/>                                                                  |
+| <dl> <dt>**ERROR \_ INTERNO DE SEC E \_ \_**</dt> </dl>      | Error que no se ha asignado a un código de error SSPI.<br/>                                                                               |
+| <dl> <dt>**SEC \_ E \_ NO \_ CREDENTIALS**</dt> </dl>      | No hay credenciales disponibles en la [*delegación restringida.*](../secgloss/s-gly.md)<br/> |
+| <dl> <dt>**SEC \_ E \_ NOT \_ OWNER**</dt> </dl>           | El llamador de la función no tiene las credenciales necesarias.<br/>                                                                     |
+| <dl> <dt>**SEC \_ E \_ SECPKG \_ NOT \_ FOUND**</dt> </dl>   | El paquete [*de seguridad solicitado*](../secgloss/s-gly.md) no existe.<br/>                                                                                          |
+| <dl> <dt>**CREDENCIALES DESCONOCIDAS DE SEC \_ E \_ \_**</dt> </dl> | No se han reconocido las credenciales proporcionadas al paquete.<br/>                                                                            |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **AcquireCredentialsHandle (general)** devuelve un identificador a las credenciales de una entidad de seguridad, como un usuario o un cliente, tal y como lo usa una [*delegación restringida*](../secgloss/s-gly.md)específica. Puede ser el identificador de las credenciales preexistentes o la función puede crear un nuevo conjunto de credenciales y devolverlo. Este identificador se puede utilizar en llamadas posteriores a las funciones [**AcceptSecurityContext (general)**](acceptsecuritycontext--general.md) y [**InitializeSecurityContext (general)**](initializesecuritycontext--general.md) .
+La **función AcquireCredentialsHandle (General)** devuelve un identificador a las credenciales de una entidad de seguridad, como un usuario o un cliente, tal como lo usa una delegación [*restringida específica.*](../secgloss/s-gly.md) Puede ser el identificador de las credenciales preexistente o la función puede crear un nuevo conjunto de credenciales y devolverlo. Este identificador se puede usar en llamadas posteriores a las funciones [**AcceptSecurityContext (General)**](acceptsecuritycontext--general.md) e [**InitializeSecurityContext (General).**](initializesecuritycontext--general.md)
 
-En general, **AcquireCredentialsHandle (general)** no permite a un proceso obtener un identificador de las credenciales de otros usuarios que han iniciado sesión en el mismo equipo. Sin embargo, un llamador con \_ el \_ [*privilegio*](../secgloss/s-gly.md) ' TCB name ' tiene la opción de especificar el [*identificador de inicio de sesión*](../secgloss/l-gly.md) (LUID) de cualquier token de sesión de inicio de sesión existente para obtener un identificador de las credenciales de la sesión. Normalmente, se usan en los módulos de modo kernel que deben actuar en nombre de un usuario que ha iniciado sesión.
+En general, **AcquireCredentialsHandle (general)** no permite que un proceso obtenga un identificador de las credenciales de otros usuarios que iniciaron sesión en el mismo equipo. Sin embargo, un llamador con privilegios SE nombre de TCB tiene la opción de especificar el identificador de inicio de sesión \_ \_ (LUID) [](../secgloss/s-gly.md) [](../secgloss/l-gly.md) de cualquier token de sesión de inicio de sesión existente para obtener un identificador de las credenciales de esa sesión. Normalmente, esto lo usan los módulos en modo kernel que deben actuar en nombre de un usuario que ha iniciado sesión.
 
-Un paquete podría llamar a la función en *pGetKeyFn* proporcionada por el transporte de tiempo de ejecución de RPC. Si el transporte no admite la noción de devolución de llamada para recuperar credenciales, este parámetro debe ser **null**.
+Un paquete podría llamar a la función en *pGetKeyFn* proporcionada por el transporte en tiempo de ejecución rpc. Si el transporte no admite la noción de devolución de llamada para recuperar credenciales, este parámetro debe ser **NULL.**
 
-En el caso de los autores de llamadas en modo kernel, deben tenerse en cuentan las siguientes diferencias:
+En el caso de los llamadores de modo kernel, se deben tener en cuenta las siguientes diferencias:
 
--   Los dos parámetros de cadena deben ser cadenas [*Unicode*](../secgloss/u-gly.md) .
--   Los valores de búfer deben asignarse en la memoria virtual del proceso, no en el grupo.
+-   Los dos parámetros de cadena deben ser [*cadenas Unicode.*](../secgloss/u-gly.md)
+-   Los valores de búfer deben asignarse en la memoria virtual del proceso, no desde el grupo.
 
-Cuando haya terminado de usar las credenciales devueltas, libere la memoria que usan las credenciales mediante una llamada a la función [**FreeCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-freecredentialshandle) .
+Cuando haya terminado de usar las credenciales devueltas, libera la memoria usada por las credenciales mediante una llamada a la [**función FreeCredentialsHandle.**](/windows/win32/api/sspi/nf-sspi-freecredentialshandle)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>SECUR32. lib</dt> </dl>                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |
+| Header<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Secur32.lib</dt> </dl>                 |
 | Archivo DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 | Nombres Unicode y ANSI<br/>   | **AcquireCredentialsHandleW** (Unicode) y **AcquireCredentialsHandleA** (ANSI)<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones SSPI](authentication-functions.md#sspi-functions)
+[Funciones de SSPI](authentication-functions.md#sspi-functions)
 </dt> <dt>
 
-[**AcceptSecurityContext (general)**](acceptsecuritycontext--general.md)
+[**AcceptSecurityContext (General)**](acceptsecuritycontext--general.md)
 </dt> <dt>
 
 [**InitializeSecurityContext (general)**](initializesecuritycontext--general.md)

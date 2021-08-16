@@ -1,7 +1,7 @@
 ---
-description: 'El método ConnectedIMemInputPin recupera un puntero al pin de entrada de nivel inferior. Este método devuelve la variable miembro CBaseOutputPin:: m \_ pInputPin.'
+description: El método ConnectedIMemInputPin recupera un puntero al pin de entrada de bajada. Este método devuelve la variable miembro CBaseOutputPin::m \_ pInputPin.
 ms.assetid: 39a12603-7768-43c3-9558-7caaa8f55108
-title: Método CTransInPlaceOutputPin. ConnectedIMemInputPin (TRANSip. h)
+title: Método CTransInPlaceOutputPin.ConnectedIMemInputPin (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 83f92472e67e1d37a51cd2526b8be65ea9bdbc6d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 180cce9bc0d52c6e11bbd90b64cfe7d57d4dcc99eada3a794f924df6857c4698
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076185"
 ---
-# <a name="ctransinplaceoutputpinconnectedimeminputpin-method"></a>CTransInPlaceOutputPin. ConnectedIMemInputPin, método
+# <a name="ctransinplaceoutputpinconnectedimeminputpin-method"></a>Método CTransInPlaceOutputPin.ConnectedIMemInputPin
 
-El `ConnectedIMemInputPin` método recupera un puntero al pin de entrada de nivel inferior. Este método devuelve la variable miembro [**CBaseOutputPin:: m \_ pInputPin**](cbaseoutputpin-m-pinputpin.md) .
+El `ConnectedIMemInputPin` método recupera un puntero al pin de entrada de bajada. Este método devuelve la variable [**miembro CBaseOutputPin::m \_ pInputPin.**](cbaseoutputpin-m-pinputpin.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a la interfaz [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) en el PIN de entrada de nivel inferior.
+Devuelve un puntero a la [**interfaz IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) en el pin de entrada de bajada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,16 +50,16 @@ Devuelve un puntero a la interfaz [**IMemInputPin**](/windows/desktop/api/Strmif
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransInPlaceOutputPin**](ctransinplaceoutputpin.md)
+[**CTransInPlaceOutputPin (clase)**](ctransinplaceoutputpin.md)
 </dt> </dl>
 
  
