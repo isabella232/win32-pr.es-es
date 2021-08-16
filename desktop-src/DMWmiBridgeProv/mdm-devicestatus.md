@@ -1,9 +1,9 @@
 ---
-title: MDM_DeviceStatus (clase)
-description: '\_La empresa usa la clase DeviceStatus de MDM para realizar un seguimiento del inventario de dispositivos y consultar el estado de cumplimiento de estos dispositivos con sus directivas de empresa.'
+title: MDM_DeviceStatus clase
+description: La empresa usa la clase MDM DeviceStatus para realizar un seguimiento del inventario de dispositivos y consultar el estado de cumplimiento de estos dispositivos \_ con sus directivas empresariales.
 ms.assetid: fceaaf36-8f33-410a-89b4-c824b10164d5
 keywords:
-- MDM_DeviceStatus (clase)
+- MDM_DeviceStatus clase
 - MDM_DeviceStatus clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 751a33553b4a00ac6719ce6e24c75a03444f0f49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e830b0c7f0883bdd46e22d21a46033ef48777b58eca18ec64971c5d67f604186
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967665"
 ---
-# <a name="mdm_devicestatus-class"></a>\_Clase DeviceStatus de MDM
+# <a name="mdm_devicestatus-class"></a>Mdm \_ DeviceStatus (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La empresa usa la clase **\_ DeviceStatus de MDM** para realizar un seguimiento del inventario de dispositivos y consultar el estado de cumplimiento de estos dispositivos con sus directivas de empresa.
+La empresa usa la clase **\_ MDM DeviceStatus** para realizar un seguimiento del inventario de dispositivos y consultar el estado de cumplimiento de estos dispositivos con sus directivas empresariales.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -63,7 +63,7 @@ La **clase \_ DeviceStatus de MDM** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -80,7 +80,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El nodo raíz del proveedor de servicios de configuración de DeviceStatus.
+Nodo raíz del proveedor del servicio de configuración DeviceStatus.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/"
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -115,21 +115,21 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | DMMap de MDM raíz de \\ CIMv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | DMMap \\ \\ de MDM de CIMv2 \\ raíz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

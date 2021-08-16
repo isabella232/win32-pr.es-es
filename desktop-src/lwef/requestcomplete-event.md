@@ -13,7 +13,7 @@ ms.locfileid: "118746562"
 ---
 # <a name="requestcomplete-event"></a>Evento RequestComplete
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Se produce cuando el servidor completa una solicitud en cola.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-**Sub** *agent: \_ RequestComplete* *  **(ByVal** *Request):)**
+**Sub** *agent** \_ RequestComplete* *  **(ByVal** *Request):)**
 
 
 
@@ -41,9 +41,9 @@ Se produce cuando el servidor completa una solicitud en cola.
 
 </dd> </dl>
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Este evento devuelve un [**objeto Request.**](/windows/desktop/lwef/the-request-object) Dado que las solicitudes se procesan de forma asincrónica, puede usar este evento para determinar cuándo el servidor finaliza el procesamiento de una solicitud (por ejemplo, un método [**Get**](get-method.md), [**Play**](play-method.md)o [**Speak)**](speak-method.md) para sincronizar este evento con otras acciones generadas por la aplicación. El servidor envía el evento solo al cliente que creó la referencia al objeto **Request** y solo si definió una variable global para la referencia de solicitud:
+Este evento devuelve un [**objeto Request.**](/windows/desktop/lwef/the-request-object) Dado que las solicitudes se procesan de forma asincrónica, puede usar este evento para determinar cuándo el servidor completa el procesamiento de una solicitud (por ejemplo, un método [**Get**](get-method.md), [**Play**](play-method.md)o [**Speak)**](speak-method.md) para sincronizar este evento con otras acciones generadas por la aplicación. El servidor envía el evento solo al cliente que creó la referencia al objeto **Request** y solo si definió una variable global para la referencia de solicitud:
 
 
 ```

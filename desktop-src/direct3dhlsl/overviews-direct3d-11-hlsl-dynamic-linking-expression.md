@@ -1,6 +1,6 @@
 ---
 title: Restricciones de uso de la interfaz
-description: El hardware de la GPU actual no admite la información de ranura variable en tiempo de ejecución del sombreador. Como consecuencia, las referencias a la interfaz de consecuencia no se pueden modificar en una expresión condicional como una instrucción if o switch.
+description: El hardware de GPU actual no admite la variación de la información de ranura en tiempo de ejecución del sombreador. Como consecuencia, las referencias de interfaz no se pueden modificar dentro de una expresión condicional, como una instrucción if o switch.
 ms.assetid: 95a505d8-3ec4-49b7-bb2b-f29a655e4225
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8825d192dcb874ce8b148c4ade5c579a55857311
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eae44bbdb93ab2b3ffa0d09385c56b463192cc68c17e0454f9edd3326f722d29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672565"
 ---
 # <a name="interface-usage-restrictions"></a>Restricciones de uso de la interfaz
 
-El hardware de la GPU actual no admite la información de ranura variable en tiempo de ejecución del sombreador. Como consecuencia, las referencias a la interfaz de consecuencia no se pueden modificar en una expresión condicional como una instrucción if o switch.
+El hardware de GPU actual no admite la variación de la información de ranura en tiempo de ejecución del sombreador. Como consecuencia, las referencias de interfaz no se pueden modificar dentro de una expresión condicional, como una instrucción if o switch.
 
-El código del sombreador siguiente muestra Cuándo se producirá esta restricción y un posible enfoque alternativo.
+El siguiente código de sombreador muestra cuándo se producirá esta restricción y un posible enfoque alternativo.
 
 Dadas las siguientes declaraciones de interfaz:
 
@@ -43,7 +43,7 @@ B arrayB[6];
 
 
 
-Dadas las declaraciones de clase siguientes:
+Dadas las siguientes declaraciones de clase:
 
 
 ```
@@ -78,7 +78,7 @@ class C4 : A, B
 
 
 
-Una referencia de interfaz no se puede modificar dentro de la expresión condicional (instrucción If):
+No se puede modificar una referencia de interfaz dentro de la expresión condicional (una instrucción if):
 
 
 ```
@@ -110,7 +110,7 @@ float main() : wicked
 
 
 
-Dadas las mismas declaraciones de interfaz y clase, podría usar un índice para proporcionar la misma funcionalidad y evitar el deshacer el bucle forzado.
+Dadas las mismas declaraciones de interfaz y clase, podría usar un índice para proporcionar la misma funcionalidad y evitar que se desenrolle el bucle forzado.
 
 
 ```
@@ -145,9 +145,9 @@ float main() : wicked
 [Vinculación dinámica](overviews-direct3d-11-hlsl-dynamic-linking.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

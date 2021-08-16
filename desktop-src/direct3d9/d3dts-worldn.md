@@ -1,7 +1,7 @@
 ---
-description: Identifica las matrices de transformación subsiguientes que se pueden usar para mezclar vértices mediante la matriz correspondiente y un valor de peso de fusión (beta) especificado en el formato de vértice.
+description: Identifica matrices de transformación posteriores que se pueden usar para combinar vértices mediante la matriz correspondiente y un valor de peso de combinación (beta) especificado en el formato de vértice.
 ms.assetid: cab444c2-b245-4d1a-a90c-745c92a2ea89
-title: D3DTS_WORLDn (D3d9types. h)
+title: D3DTS_WORLDn (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 004435d278538c788e21ed7dc3482fd5e248895b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7026308192f43b7290dedcb9572772c9eda45acdc87d018480bd59202a2dc2df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119405"
 ---
-# <a name="d3dts_worldn"></a>D3DTS \_ worlda
+# <a name="d3dts_worldn"></a>D3DTS \_ WORLDn
 
-Identifica las matrices de transformación subsiguientes que se pueden usar para mezclar vértices mediante la matriz correspondiente y un valor de peso de fusión (beta) especificado en el formato de vértice.
+Identifica matrices de transformación posteriores que se pueden usar para combinar vértices mediante la matriz correspondiente y un valor de peso de combinación (beta) especificado en el formato de vértice.
 
 ``` syntax
 #define D3DTS_WORLDn 
@@ -31,9 +31,9 @@ Identifica las matrices de transformación subsiguientes que se pueden usar para
 #define D3DTS_WORLD3 D3DTS_WORLDMATRIX(3)
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estas macros se proporcionan para facilitar la migración de aplicaciones existentes a Direct3D 9.
+Estas macros se proporcionan para facilitar la porción de aplicaciones existentes a Direct3D 9.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,11 +41,11 @@ Estas macros se proporcionan para facilitar la migración de aplicaciones existe
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

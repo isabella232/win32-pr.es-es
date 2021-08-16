@@ -27,7 +27,7 @@ ms.locfileid: "118544603"
 
 La **enumeración BITS_JOB_TRANSFER_POLICY** define los valores de identificador correspondientes a las propiedades do.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -56,7 +56,7 @@ Especifica que el trabajo se transferirá cuando la conectividad esté disponibl
 <span id="BITS_JOB_TRANSFER_POLICY_NOT_ROAMING"></span><span id="bits_job_transfer_policy_not_roaming"></span>**BITS_JOB_TRANSFER_POLICY_NOT_ROAMING**
 </dt> <dd>
 
-Especifica que el trabajo se transferirá cuando la conectividad esté disponible, a menos que esa conectividad esté sujeta a los suplementos de itinerancia.
+Especifica que el trabajo se transferirá cuando la conectividad esté disponible, a menos que esa conectividad esté sujeta a los sobrecargos de itinerancia.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Especifica que el trabajo se transferirá solo cuando haya conectividad disponib
 <span id="BITS_JOB_TRANSFER_POLICY_STANDARD"></span><span id="bits_job_transfer_policy_standard"></span>**BITS_JOB_TRANSFER_POLICY_STANDARD**
 </dt> <dd>
 
-Especifica que el trabajo se transferirá solo cuando la conectividad esté disponible, lo que no está sujeto a un sobrecargo ni a un agotamiento próximo.
+Especifica que el trabajo se transferirá solo cuando haya conectividad disponible, que no está sujeta a un sobrecargo ni a un agotamiento próximo.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Especifica que el trabajo se transferirá solo cuando haya conectividad disponib
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |

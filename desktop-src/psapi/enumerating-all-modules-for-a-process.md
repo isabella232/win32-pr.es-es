@@ -1,19 +1,19 @@
 ---
 title: Enumerar todos los módulos de un proceso
-description: Para determinar qué procesos han cargado un archivo DLL determinado, debe enumerar los módulos de cada proceso. En el siguiente código de ejemplo se usa la función EnumProcessModules para enumerar los módulos de los procesos actuales del sistema.
+description: Para determinar qué procesos han cargado un archivo DLL determinado, debe enumerar los módulos de cada proceso. El código de ejemplo siguiente usa la función EnumProcessModules para enumerar los módulos de los procesos actuales del sistema.
 ms.assetid: 2e411eba-ba60-4678-bf6f-bc15b6e8b478
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bf09d02d4ae9dc7e55177653e05e3d19df4ab7b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 17012019c21f550940ea8c11c07153b0c3495471b4d62bf2f8af469ef6b7b90b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104358980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032993"
 ---
 # <a name="enumerating-all-modules-for-a-process"></a>Enumerar todos los módulos de un proceso
 
-Para determinar qué procesos han cargado un archivo DLL determinado, debe enumerar los módulos de cada proceso. En el siguiente código de ejemplo se usa la función [**EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) para enumerar los módulos de los procesos actuales del sistema.
+Para determinar qué procesos han cargado un archivo DLL determinado, debe enumerar los módulos de cada proceso. El código de ejemplo siguiente usa la [**función EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) para enumerar los módulos de los procesos actuales del sistema.
 
 
 ```C++
@@ -101,8 +101,8 @@ int main( void )
 
 
 
-La función Main obtiene una lista de procesos mediante la función [**EnumProcesses**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) . Para cada proceso, la función Main llama a la función PrintModules, pasándole el identificador de proceso. PrintModules a su vez llama a la función [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) para obtener el identificador del proceso. Si se produce un error de **OpenProcess** , la salida muestra solo el identificador de proceso. Por ejemplo, se produce un error de **OpenProcess** en los procesos inactivos y csrss porque sus restricciones de acceso impiden que el código de nivel de usuario los abra. A continuación, PrintModules llama a la función [**EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) para obtener la función de los identificadores de módulo. Por último, PrintModules llama a la función [**GetModuleFileNameEx**](/windows/desktop/api/Psapi/nf-psapi-getmodulefilenameexa) , una vez para cada módulo, para obtener los nombres de los módulos.
+La función main obtiene una lista de procesos mediante la [**función EnumProcesses.**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) Para cada proceso, la función principal llama a la función PrintModules y le pasa el identificador del proceso. PrintModules, a su vez, llama [**a la función OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) para obtener el identificador del proceso. Si Se produce un error **en OpenProcess,** la salida muestra solo el identificador del proceso. Por ejemplo, **OpenProcess produce** un error en los procesos Inactivo y CSRSS porque sus restricciones de acceso impiden que el código de nivel de usuario los abra. A continuación, PrintModules llama [**a la función EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) para obtener la función de identificadores de módulo. Por último, PrintModules llama a [**la función GetModuleFileNameEx,**](/windows/desktop/api/Psapi/nf-psapi-getmodulefilenameexa) una vez para cada módulo, para obtener los nombres de módulo.
 
- 
+ 
 
- 
+ 

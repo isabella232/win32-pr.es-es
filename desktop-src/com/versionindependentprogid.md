@@ -25,13 +25,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
       VersionIndependentProgID = Program.Component
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de **un valor \_ SZ reg** que especifica la versión más reciente de la aplicación de objeto.
+Se trata de **un valor \_ REG SZ** que especifica la versión más reciente de la aplicación de objeto.
 
 El ProgID independiente de la versión se almacena y mantiene únicamente mediante código de aplicación. Cuando se le da el ProgID independiente de la versión, la función [**CLSIDFromProgID**](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) devuelve el CLSID de la versión actual.
 
-Puede usar [**CLSIDFromProgID**](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) y [**ProgIDFromCLSID**](/windows/desktop/api/combaseapi/nf-combaseapi-progidfromclsid) para convertir entre estas dos representaciones.
+Puede usar [**CLSIDFromProgID y**](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) [**ProgIDFromCLSID**](/windows/desktop/api/combaseapi/nf-combaseapi-progidfromclsid) para convertir entre estas dos representaciones.
 
  
 

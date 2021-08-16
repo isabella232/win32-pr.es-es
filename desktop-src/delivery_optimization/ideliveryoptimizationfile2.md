@@ -39,11 +39,11 @@ La **interfaz IDeliveryOptimizationFile2** tiene estos métodos.
 | Método                                                 | Descripción                                                  |
 |:-------------------------------------------------------|:-------------------------------------------------------------|
 | [**Getproperty**](ideliveryoptimizationfile2-getproperty.md)  | Este método devuelve una sola propiedad del archivo DO. |
-| [**Setproperty**](ideliveryoptimizationfile2-setproperty.md)  | Este método establece una sola propiedad del archivo DO.    |
+| [**Setproperty**](ideliveryoptimizationfile2-setproperty.md)  | Este método establece una única propiedad del archivo DO.    |
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo compatible      | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]                                    |
 | Servidor mínimo compatible      | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]                                |

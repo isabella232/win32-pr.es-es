@@ -22,7 +22,7 @@ ms.locfileid: "118626813"
 ---
 # <a name="recordlist-object"></a>Objeto RecordList
 
-El **objeto RecordList** es una colección de [**objetos Record.**](record-object.md) Debe comprobar que el objeto **RecordList** existe y no está vacío antes de hacer referencia a sus propiedades.
+El **objeto RecordList** es una colección de [**objetos Record.**](record-object.md) Debe comprobar que el **objeto RecordList** existe y no está vacío antes de hacer referencia a sus propiedades.
 
 ## <a name="members"></a>Miembros
 
@@ -49,15 +49,15 @@ El **objeto RecordList** tiene estas propiedades.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IRecordList se define como \_ 000C1096-0000-0000-C000-00000000046<br/>                                                                                                                                                                          |
+| IID<br/>     | IID IRecordList se define como \_ 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

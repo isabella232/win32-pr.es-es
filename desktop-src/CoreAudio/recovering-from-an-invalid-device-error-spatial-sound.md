@@ -12,7 +12,7 @@ ms.locfileid: "118406223"
 ---
 # <a name="recovering-from-an-invalid-device-error-spatial-sound"></a>Recuperación de un error Invalid-Device (sonido espacial)
 
-Muchos de los métodos de Microsoft Spatial Audio API, como [ISpatialAudioClient,](/windows/win32/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioclient) [ISpatialAudioObjectRenderStream](/windows/win32/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioobjectrenderstream)e [ISpatialAudioObject,](/windows/win32/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioobject)devuelven códigos de error si el dispositivo de punto de conexión de audio que usa la aplicación cliente deja de ser válido o se cambia el formato de representación de audio espacial en el punto de conexión. Estos códigos de error indican que el dispositivo de punto de conexión se ha desconectado o que el hardware de audio o los recursos de hardware asociados se han reconfigurado, deshabilitado, quitado, se ha cambiado el modo de audio espacial o se ha dejado de estar disponible para su uso. Con frecuencia, la aplicación puede recuperarse de este error.
+Muchos de los métodos de Microsoft Spatial Audio API, como [ISpatialAudioClient,](/windows/win32/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioclient) [ISpatialAudioObjectRenderStream](/windows/win32/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioobjectrenderstream)e [ISpatialAudioObject,](/windows/win32/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioobject)devuelven códigos de error si el dispositivo de punto de conexión de audio que usa la aplicación cliente deja de ser válido o el formato de representación de audio espacial cambia en el punto de conexión. Estos códigos de error indican que el dispositivo del punto de conexión se ha desconectado o que el hardware de audio o los recursos de hardware asociados se han reconfigurado, deshabilitado, quitado, se ha cambiado el modo de audio espacial o se ha dejado de estar disponible para su uso. Con frecuencia, la aplicación puede recuperarse de este error.
 
 Entre los códigos de error que indican un error de dispositivo no válido se incluyen los siguientes:
 
@@ -42,13 +42,13 @@ Si la aplicación selecciona un dispositivo de audio específico, siga estos pas
 1. Libere la interfaz ISpatialAudioObjectRenderStream y cualquier otra interfaz de audio espacial que se utilice para la representación, pero no libere **ISpatialAudioClient.**
 1. Use la instancia **actual de ISpatialAudioClient** para activar **ISpatialAudioObjectRenderStream.**
 
-Tenga en cuenta que para ambas estrategias enumeradas anteriormente, se pueden aplicar los mismos pasos a las aplicaciones que usan las interfaces [ISpatialAudioObjectRenderStreamForMetadata](/windows/win32/api/spatialaudiometadata/nn-spatialaudiometadata-ispatialaudioobjectrenderstreamformetadata) o [ISpatialAudioObjectRenderStreamForHrtf.](/windows/win32/api/spatialaudiohrtf/nn-spatialaudiohrtf-ispatialaudioobjectrenderstreamforhrtf) Simplemente reemplace **ISpatialAudioObjectRenderStream en** los pasos anteriores por los metadatos o las interfaces hrtf.
+Tenga en cuenta que para ambas estrategias enumeradas anteriormente, se pueden aplicar los mismos pasos a las aplicaciones que usan las interfaces [ISpatialAudioObjectRenderStreamForMetadata](/windows/win32/api/spatialaudiometadata/nn-spatialaudiometadata-ispatialaudioobjectrenderstreamformetadata) o [ISpatialAudioObjectRenderStreamForHrtf.](/windows/win32/api/spatialaudiohrtf/nn-spatialaudiohrtf-ispatialaudioobjectrenderstreamforhrtf) Simplemente reemplace **ISpatialAudioObjectRenderStream** en los pasos anteriores por los metadatos o las interfaces Hrtf.
 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
-[Recuperación de un error Invalid-Device error](recovering-from-an-invalid-device-error.md) 
+[Recuperación de una Invalid-Device error](recovering-from-an-invalid-device-error.md) 
  [Administración de flujos](stream-management.md)
 </dt> </dl>
 

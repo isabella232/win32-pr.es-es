@@ -27,7 +27,7 @@ Extiende la [**interfaz ITablet**](itablet.md).
 
 ## <a name="members"></a>Miembros
 
-La **interfaz ITablet2** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet2 también** tiene estos tipos de miembros:
+La **interfaz ITablet2** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet2** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -39,13 +39,13 @@ La **interfaz ITablet2** tiene estos métodos.
 
 | Método                                          | Descripción                                                                                              |
 |:------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| [**GetDeviceKind**](itablet2-getdevicekind.md) | Devuelve el tipo de dispositivo de hardware que el objeto de tableta representa, como el mouse, el lápiz o la entrada táctil.<br/> |
+| [**GetDeviceKind**](itablet2-getdevicekind.md) | Devuelve el tipo de dispositivo de hardware que el objeto de tableta representa, como mouse, lápiz o táctil.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta interfaz se introdujo en Windows Vista.
 
@@ -71,7 +71,7 @@ interface ITablet2 : IUnknown
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |

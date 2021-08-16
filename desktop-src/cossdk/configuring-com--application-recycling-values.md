@@ -16,7 +16,7 @@ ms.locfileid: "118548647"
 Puede usar los métodos siguientes para configurar los valores de reciclaje de aplicaciones para la aplicación COM+.
 
 > [!Note]  
-> No se puede reciclar una aplicación COM+ que se haya configurado para ejecutarse como Windows servicio. Además, las aplicaciones de biblioteca tienen las propiedades de reciclaje y agrupación de su proceso de host.
+> No se puede reciclar una aplicación COM+ que se haya configurado para ejecutarse como un Windows servicio. Además, las aplicaciones de biblioteca tienen las propiedades de reciclaje y agrupación de su proceso de host.
 
  
 
@@ -24,18 +24,18 @@ Puede usar los métodos siguientes para configurar los valores de reciclaje de a
 
 Para configurar el reciclaje de aplicaciones para una aplicación COM+, siga estos pasos:
 
-1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, haga clic con el botón derecho en la aplicación de servidor COM+ que desea reciclar y, a continuación, haga clic **en Propiedades**.
+1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, haga clic con el botón derecho en la aplicación de servidor COM+ que desea reciclar y, a continuación, haga clic **en Propiedades.**
 
 2.  En la pestaña Agrupación **de & Reciclaje,** escriba los valores de Límite de duración **(minutos),** Límite de memoria **(KB),** Tiempo de espera de expiración **(minutos),** Límite de llamadas y Límite de **activación,** en función de los criterios que quiera usar. 
 
-    -   **Límite de** duración indica el número máximo de minutos que puede ejecutar un proceso antes de reciclarse. El intervalo válido es de 0 a 30 240 minutos (21 días). El número predeterminado de minutos es 0.
-    -   **Límite de** memoria indica la cantidad máxima de uso de memoria del proceso (en kilobytes) antes de reciclar el proceso. Si el uso de memoria del proceso excede el número especificado durante más de un minuto, el proceso se recicla. El intervalo válido es de 0 a 1.048.576 KB y la cantidad predeterminada de uso de memoria es de 0 KB.
+    -   **Límite de** duración indica el número máximo de minutos que un proceso puede ejecutarse antes de reciclarse. El intervalo válido es de 0 a 30 240 minutos (21 días). El número predeterminado de minutos es 0.
+    -   **Límite de** memoria indica la cantidad máxima de uso de memoria del proceso (en kilobytes) antes de reciclar el proceso. Si el uso de memoria del proceso excede el número especificado durante más de un minuto, el proceso se recicla. El intervalo válido es de 0 a 1048 576 KB y la cantidad predeterminada de uso de memoria es de 0 KB.
     -   **Tiempo de espera** de expiración indica el número de minutos que hay que esperar, antes de cerrarse forzadamente, para liberar todas las referencias externas a los objetos del proceso. El intervalo válido es de 1 a 1440 minutos (24 horas) y el tiempo de espera de expiración predeterminado es de 15 minutos. Este valor sólo se usa cuando ya se ha determinado que un proceso se reciclará en función de otros criterios.
-    -   **Límite de** llamadas indica el número máximo de llamadas que los objetos de aplicación pueden aceptar antes de reciclar el proceso. El intervalo válido es de 0 a 1.048.576 llamadas y el número predeterminado de llamadas es 0.
-    -   **El límite de** activación indica el número máximo de activaciones de objetos de aplicación que se aceptan antes de reciclar el proceso. El intervalo válido es de 0 a 1.048.576 activaciones y el número predeterminado de activaciones es 0.
+    -   **Límite de** llamadas indica el número máximo de llamadas que los objetos de aplicación pueden aceptar antes de reciclar el proceso. El intervalo válido es de 0 a 1048 576 llamadas y el número predeterminado de llamadas es 0.
+    -   **Límite de** activación indica el número máximo de activaciones de objetos de aplicación que se aceptan antes de reciclar el proceso. El intervalo válido es de 0 a 1.048.576 activaciones y el número predeterminado de activaciones es 0.
 
     > [!Note]  
-    > Cuando el valor **límite** de **duración,** **límite** de memoria, límite de llamadas o límite de activación se establece en 0 (valor predeterminado), se deshabilita el reciclaje de la aplicación para ese criterio.  Cuando los cuatro criterios se establecen en 0, el reciclaje de aplicaciones se deshabilita para la aplicación seleccionada.
+    > Cuando el valor **límite de** **duración,** **límite** de memoria, límite de llamadas o límite de activación se establece en 0 (valor predeterminado), el reciclaje de la aplicación para ese criterio está deshabilitado.  Cuando los cuatro criterios se establecen en 0, el reciclaje de aplicaciones se deshabilita para la aplicación seleccionada.
 
      
 

@@ -42,18 +42,18 @@ La **interfaz ID3DX11EffectDepthStencilViewVariable** tiene estos métodos.
 | Método                                                                                     | Descripción                                              |
 |:-------------------------------------------------------------------------------------------|:---------------------------------------------------------|
 | [**GetDepthStencil**](id3dx11effectdepthstencilviewvariable-getdepthstencil.md)           | Obtenga un recurso depth-stencil-view.<br/>            |
-| [**GetDepthStencilArray**](id3dx11effectdepthstencilviewvariable-getdepthstencilarray.md) | Obtenga una matriz de recursos depth-stencil-view.<br/> |
+| [**GetDepthStencilArray**](id3dx11effectdepthstencilviewvariable-getdepthstencilarray.md) | Obtenga una matriz de recursos de vista de galería de símbolos de profundidad.<br/> |
 | [**SetDepthStencil**](id3dx11effectdepthstencilviewvariable-setdepthstencil.md)           | Establezca un recurso depth-stencil-view.<br/>            |
-| [**SetDepthStencilArray**](id3dx11effectdepthstencilviewvariable-setdepthstencilarray.md) | Establezca una matriz de recursos depth-stencil-view.<br/> |
+| [**SetDepthStencilArray**](id3dx11effectdepthstencilviewvariable-setdepthstencilarray.md) | Establezca una matriz de recursos de vista de galería de símbolos de profundidad.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,18 +64,18 @@ La **interfaz ID3DX11EffectDepthStencilViewVariable** tiene estos métodos.
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**ID3DX11EffectVariable**](id3dx11effectvariable.md)
 </dt> <dt>
 
-[Efectos 11 Interfaces](d3d11-graphics-reference-effects11-interfaces.md)
+[Interfaces de Efectos 11](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)

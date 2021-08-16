@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETLANGOPTIONS (RichEdit. h)
-description: Establece opciones para la compatibilidad con el editor de métodos de entrada (IME) y idiomas asiáticos en un control Rich Edit.
+title: EM_SETLANGOPTIONS mensaje (Richedit.h)
+description: Establece opciones para la compatibilidad del Editor de métodos de entrada (IME) y el idioma asiático en un control de edición enriquecido.
 ms.assetid: d42d0512-3339-471d-a91a-114151554799
 keywords:
-- EM_SETLANGOPTIONS controles de mensajes de Windows
+- EM_SETLANGOPTIONS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e5095c599dfa78740ce4cb081e4d52c33b2debd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5984c20273d2daa0a2e39fc6caf6dde88c8b274502a50e1a5e5eb3cca2b6f94c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831216"
 ---
-# <a name="em_setlangoptions-message"></a>\_Mensaje SETLANGOPTIONS em
+# <a name="em_setlangoptions-message"></a>Mensaje \_ EM SETLANGOPTIONS
 
-Establece opciones para la compatibilidad con el editor de métodos de entrada (IME) y idiomas asiáticos en un control Rich Edit.
+Establece opciones para la compatibilidad del Editor de métodos de entrada (IME) y el idioma asiático en un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Establece opciones para la compatibilidad con el editor de métodos de entrada (
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se usa; debe ser cero.
+Este parámetro no se utiliza; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Especifica las opciones de idioma. Para obtener una lista de los valores posibles, vea [**em \_ GETLANGOPTIONS**](em-getlangoptions.md).
+Especifica las opciones de idioma. Para obtener una lista de los valores posibles, [**vea EM \_ GETLANGOPTIONS**](em-getlangoptions.md).
 
 </dd> </dl>
 
@@ -47,37 +47,37 @@ Especifica las opciones de idioma. Para obtener una lista de los valores posible
 
 Este mensaje devuelve un valor de 1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **mensaje \_ SETLANGOPTIONS em** controla lo siguiente:
+El **mensaje EM \_ SETLANGOPTIONS** controla lo siguiente:
 
 -   Enlace de fuente automático.
--   Cambio automático de teclado.
--   Ajuste automático de tamaño de fuente.
--   Uso de las fuentes predeterminadas de la interfaz de usuario en lugar de las fuentes predeterminadas del documento.
--   Notificaciones al cliente durante la composición del IME.
--   Cómo el IME anula el modo de composición.
--   Revisión ortográfica, Autocorrección y predicción táctil de teclado.
+-   Cambio automático del teclado.
+-   Ajuste automático del tamaño de fuente.
+-   Uso de fuentes predeterminadas de interfaz de usuario en lugar de fuentes predeterminadas de documento.
+-   Notificaciones al cliente durante la composición de IME.
+-   Cómo anula IME el modo de composición.
+-   Corrector ortográfica, corrección automática y predicción táctil del teclado.
 
-Este mensaje establece los valores de todas las marcas de opciones de lenguaje. Para cambiar un subconjunto de las marcas, envíe el mensaje [**em \_ GETLANGOPTIONS**](em-getlangoptions.md) para obtener las marcas de opciones actuales, cambie las marcas que debe cambiar y, a continuación, envíe el mensaje **\_ SETLANGOPTIONS em** con el resultado.
+Este mensaje establece los valores de todas las marcas de opción de idioma. Para cambiar un subconjunto de las marcas, envíe el mensaje [**EM \_ GETLANGOPTIONS**](em-getlangoptions.md) para obtener las marcas de opción actuales, cambie las marcas que necesita cambiar y, a continuación, envíe el mensaje **EM \_ SETLANGOPTIONS con** el resultado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_GETLANGOPTIONS em**](em-getlangoptions.md)
+[**EM \_ GETLANGOPTIONS**](em-getlangoptions.md)
 </dt> </dl>
 
  

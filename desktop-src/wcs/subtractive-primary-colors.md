@@ -1,32 +1,32 @@
 ---
 title: Colores primarios sustractivos
-description: El método de sustracción de la combinación de colores se basa en la suposición de que empieza por el blanco.
+description: El método resta de la combinación de colores se basa en la suposición de que se empieza con blanco.
 ms.assetid: 6493497c-6de4-4f09-9e88-5948bd93c3b8
 keywords:
-- Sistema de color de Windows (WCS), colores primarios restados
-- WCS (sistema de colores de Windows), colores primarios restados
-- Administración del color de imagen, colores primarios restados
-- Administración del color, colores primarios restados
-- colores, principal resta
-- colores primarios restados
-- colores primarios
+- Windows Sistema de colores (WCS), colores primarios restas
+- WCS (Windows de colores), colores primarios restas
+- administración de colores de imagen, colores primarios restas
+- administración de colores, colores primarios restas
+- colors,subtractive primary
+- colores primarios restar
+- colores principales
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b129ab34dc7eecc29860c2f3085b1c438ca5dd1f
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: a3aaa8a177a38dc5e9970ff573327bb9c1aa3fc26c77b65910570c61f3235279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105720787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851412"
 ---
 # <a name="subtractive-primary-colors"></a>Colores primarios sustractivos
 
-El método de sustracción de la combinación de colores se basa en la suposición de que empieza por el blanco. Todos los colores están presentes en cantidades iguales. Si resta cian y amarillo del blanco, la imagen resultante es magenta. En una imagen verde, si se resta aguamarina, se cambiará la imagen a amarillo.
+El método resta de la combinación de colores se basa en la suposición de que se empieza con blanco. Todos los colores están presentes en iguales cantidades. Si resta el cian y el amarillo del blanco, la imagen resultante es de color rojo. En una imagen verde, la resta de cian dará lugar a cambiar la imagen a amarillo.
 
-Los [colores primarios](p.md) restados son cian, amarillo y magenta. En la ilustración siguiente se muestra la combinación de colores primarios sustractivos.
+Los colores primarios [restar son](p.md) cian, amarillo y rojo. En la ilustración siguiente se muestra la combinación resta de color primario.
 
-![combinación de colores para los colores primarios sustractivos](images/400px-subtractivecolor.png)
+![combinación de colores para colores primarios restas](images/400px-subtractivecolor.png)
 
  
 

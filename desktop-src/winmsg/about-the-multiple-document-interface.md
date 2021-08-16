@@ -34,7 +34,7 @@ Una aplicación MDI no muestra la salida en el área cliente de la ventana de ma
 
 Cuando el usuario abre o crea un documento, la ventana de cliente crea una ventana secundaria para el documento. La ventana de cliente es la ventana primaria de todas las ventanas secundarias MDI de la aplicación. Cada ventana secundaria tiene un borde de tamaño, una barra de título, un menú de ventana, un botón minimizar y un botón maximizar. Dado que se recorta una ventana secundaria, se limita a la ventana de cliente y no puede aparecer fuera de ella.
 
-Una aplicación MDI puede admitir más de un tipo de documento. Por ejemplo, una aplicación de hoja de cálculo típica permite al usuario trabajar con gráficos y hojas de cálculo. Para cada tipo de documento que admite, una aplicación MDI debe registrar una clase de ventana secundaria y proporcionar un procedimiento de ventana para admitir las ventanas que pertenecen a esa clase. Para obtener más información sobre las clases de ventana, vea [Clases de ventana](window-classes.md). Para obtener más información sobre los procedimientos de ventana, vea [Procedimientos de ventana](window-procedures.md).
+Una aplicación MDI puede admitir más de un tipo de documento. Por ejemplo, una aplicación de hoja de cálculo típica permite al usuario trabajar con gráficos y hojas de cálculo. Para cada tipo de documento que admita, una aplicación MDI debe registrar una clase de ventana secundaria y proporcionar un procedimiento de ventana para admitir las ventanas que pertenecen a esa clase. Para obtener más información sobre las clases de ventana, vea [Clases de ventana](window-classes.md). Para obtener más información sobre los procedimientos de ventana, vea [Procedimientos de ventana](window-procedures.md).
 
 A continuación se muestra una aplicación MDI típica. Se denomina Multipad.
 
@@ -52,7 +52,7 @@ Cualquier número de ventanas secundarias puede aparecer en la ventana de client
 
 El usuario puede activar una ventana secundaria inactiva haciendo clic en ella. Una aplicación MDI activa una ventana secundaria mediante el envío de un mensaje [**\_ WM MDIACTIVATE**](wm-mdiactivate.md) a la ventana de cliente MDI. A medida que la ventana de cliente procesa este mensaje, envía un mensaje **\_ WM MDIACTIVATE** al procedimiento de ventana de la ventana secundaria que se va a activar y al procedimiento de ventana de la ventana secundaria que se está desactivando.
 
-Para evitar que se active una ventana secundaria, controle el mensaje [**\_ WM NCACTIVATE**](wm-ncactivate.md) en la ventana secundaria devolviendo **FALSE**.
+Para evitar que una ventana secundaria se active, controle el mensaje [**\_ WM NCACTIVATE**](wm-ncactivate.md) en la ventana secundaria devolviendo **FALSE**.
 
 El sistema realiza un seguimiento de la posición de cada ventana secundaria en la pila de ventanas superpuestas. Este apilamiento se conoce como [orden Z.](window-features.md) El usuario puede activar la siguiente ventana secundaria en el orden Z haciendo clic en **Siguiente** en el menú de la ventana activa. Una aplicación activa la siguiente (o anterior) ventana secundaria en el orden Z mediante el envío de un mensaje [**\_ WM MDINEXT**](wm-mdinext.md) a la ventana de cliente.
 
@@ -66,7 +66,7 @@ La ventana marco de una aplicación MDI debe incluir una barra de menús con un 
 
 | Elemento de menú         | Propósito                                                                                                                  |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Icono**          | Organiza las ventanas secundarias en un formato de icono para que cada una aparezca en su totalidad en la ventana de cliente.                       |
+| **Icono**          | Organiza las ventanas secundarias en formato de icono para que cada una aparezca en su totalidad en la ventana de cliente.                       |
 | **Cascade**       | Organiza las ventanas secundarias en un formato en cascada. Las ventanas secundarias se superponen entre sí, pero la barra de título de cada una está visible. |
 | **Organizar iconos** | Organiza los iconos de las ventanas secundarias minimizadas a lo largo de la parte inferior de la ventana de cliente.                                     |
 | **Cerrar todo**     | Cierra todas las ventanas secundarias.                                                                                                |
@@ -79,7 +79,7 @@ Cada vez que se crea una ventana secundaria, el sistema anexa automáticamente u
 
 El sistema puede agregar hasta diez elementos de menú al menú de la ventana. Cuando se crea la décima ventana secundaria, el sistema agrega el elemento **Más Windows** al menú de la ventana. Al hacer clic en este elemento se **muestra el cuadro de diálogo** Seleccionar ventana . El cuadro de diálogo contiene un cuadro de lista con los títulos de todas las ventanas secundarias MDI disponibles actualmente. El usuario puede activar una ventana secundaria haciendo clic en su título en el cuadro de lista.
 
-Si la aplicación MDI admite varios tipos de ventanas secundarias, adapte la barra de menús para reflejar las operaciones asociadas a la ventana activa. Para ello, proporcione recursos de menú independientes para cada tipo de ventana secundaria que admita la aplicación. Cuando se activa un nuevo tipo de ventana secundaria, la aplicación debe enviar un mensaje [**\_ WM MDISETMENU**](wm-mdisetmenu.md) a la ventana de cliente y pasarle el identificador al menú correspondiente.
+Si la aplicación MDI admite varios tipos de ventanas secundarias, adapte la barra de menús para reflejar las operaciones asociadas a la ventana activa. Para ello, proporcione recursos de menú independientes para cada tipo de ventana secundaria que admita la aplicación. Cuando se activa un nuevo tipo de ventana secundaria, la aplicación debe enviar un mensaje [**\_ WM MDISETMENU**](wm-mdisetmenu.md) a la ventana cliente y pasarle el identificador al menú correspondiente.
 
 Cuando no existe ninguna ventana secundaria, la barra de menús solo debe contener elementos usados para crear o abrir un documento.
 
@@ -97,7 +97,7 @@ Una aplicación MDI controla el tamaño y la posición de sus ventanas secundari
 
 Una aplicación MDI puede organizar sus ventanas secundarias en un formato en cascada o de mosaico. Cuando las ventanas secundarias están en cascada, las ventanas aparecen en una pila. La ventana de la parte inferior de la pila ocupa la esquina superior izquierda de la pantalla y las ventanas restantes se desplazan vertical y horizontalmente para que el borde izquierdo y la barra de título de cada ventana secundaria estén visibles. Para organizar las ventanas secundarias en formato en cascada, una aplicación MDI envía el [**mensaje \_ WM MDICASCADE.**](wm-mdicascade.md) Normalmente, la aplicación envía este mensaje cuando el usuario hace clic en **Cascade en** el menú de la ventana.
 
-Cuando las ventanas secundarias están en mosaico, el sistema muestra cada ventana secundaria en su totalidad, superpuesta ninguna de las ventanas. Todas las ventanas tienen un tamaño, según sea necesario, para ajustarse a la ventana de cliente. Para organizar las ventanas secundarias en el formato de icono, una aplicación MDI envía un mensaje [**\_ WM MDITILE**](wm-mditile.md) a la ventana de cliente. Normalmente, la aplicación envía este mensaje cuando el usuario hace clic **en Icono en** el menú de la ventana.
+Cuando las ventanas secundarias están en mosaico, el sistema muestra cada ventana secundaria en su totalidad, superponiendo ninguna de las ventanas. Todas las ventanas tienen el tamaño necesario para ajustarse a la ventana de cliente. Para organizar las ventanas secundarias en formato de icono, una aplicación MDI envía un mensaje [**\_ WM MDITILE**](wm-mditile.md) a la ventana de cliente. Normalmente, la aplicación envía este mensaje cuando el usuario hace clic **en Icono en** el menú de la ventana.
 
 Una aplicación MDI debe proporcionar un icono diferente para cada tipo de ventana secundaria que admita. La aplicación especifica un icono al registrar la clase de ventana secundaria. El sistema muestra automáticamente el icono de una ventana secundaria en la parte inferior de la ventana de cliente cuando se minimiza la ventana secundaria. Una aplicación MDI indica al sistema que organice los iconos de ventana secundarios mediante el envío de un mensaje [**\_ WM MDIICONARRANGE**](wm-mdiiconarrange.md) a la ventana de cliente. Normalmente, la aplicación envía este mensaje cuando el usuario hace clic en **Organizar iconos** en el menú de la ventana.
 
@@ -116,13 +116,13 @@ Dado que el número de ventanas secundarias varía en función de cuántos docum
 
 ### <a name="window-structure"></a>Estructura de ventana
 
-Cuando una aplicación MDI registra una clase de ventana, puede reservar espacio adicional en la estructura de ventana para los datos de aplicación específicos de esta clase determinada de ventanas. Para almacenar y recuperar datos en este espacio adicional, la aplicación usa las [**funciones GetWindowLong**](/windows/win32/api/winuser/nf-winuser-getwindowlonga) [**y SetWindowLong.**](/windows/win32/api/winuser/nf-winuser-setwindowlonga)
+Cuando una aplicación MDI registra una clase de ventana, puede reservar espacio adicional en la estructura de la ventana para los datos de aplicación específicos de esta clase determinada de ventanas. Para almacenar y recuperar datos en este espacio adicional, la aplicación usa las [**funciones GetWindowLong**](/windows/win32/api/winuser/nf-winuser-getwindowlonga) [**y SetWindowLong.**](/windows/win32/api/winuser/nf-winuser-setwindowlonga)
 
 Para mantener una gran cantidad de datos para una ventana secundaria, una aplicación puede asignar memoria para una estructura de datos y, a continuación, almacenar el identificador en la memoria que contiene la estructura en el espacio adicional asociado a la ventana secundaria.
 
 ### <a name="window-properties"></a>Propiedades de la ventana
 
-Una aplicación MDI también puede almacenar datos por documento mediante propiedades de ventana. *Los datos por documento* son datos específicos del tipo de documento contenido en una ventana secundaria determinada. Las propiedades son diferentes del espacio adicional en la estructura de la ventana, ya que no es necesario asignar espacio adicional al registrar la clase de ventana. Una ventana puede tener cualquier número de propiedades. Además, cuando se usan desplazamientos para acceder al espacio adicional en las estructuras de ventana, los nombres de cadenas conocen las propiedades. Para obtener más información sobre las propiedades de la ventana, vea [Propiedades de ventana](window-properties.md).
+Una aplicación MDI también puede almacenar datos por documento mediante propiedades de ventana. *Los datos por documento* son datos específicos del tipo de documento contenido en una ventana secundaria determinada. Las propiedades son diferentes del espacio adicional en la estructura de la ventana, ya que no es necesario asignar espacio adicional al registrar la clase de ventana. Una ventana puede tener cualquier número de propiedades. Además, cuando se usan desplazamientos para acceder al espacio adicional en las estructuras de ventana, los nombres de cadenas conocen las propiedades. Para obtener más información sobre las propiedades de la ventana, vea [Propiedades de ventana.](window-properties.md)
 
  
 

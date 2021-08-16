@@ -1,19 +1,19 @@
 ---
-description: Un almacén del sistema es una colección que consta de uno o varios almacenes físicos del mismo nivel.
+description: Un almacén del sistema es una colección que consta de uno o varios almacenes físicos relacionados.
 ms.assetid: 41fe9366-4c17-43bb-91d6-934c7aa87a2d
 title: Ubicaciones del almacén del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0863ffde8be5db67459908b1ec26ec73da029744
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d793d94bcb1c58bcc0d8c046b038df7e699d287b9ede3f14d6e2cb3c94ab781e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897437"
 ---
 # <a name="system-store-locations"></a>Ubicaciones del almacén del sistema
 
-Un almacén del sistema es una colección que consta de uno o varios almacenes físicos del mismo nivel. En cada almacén del sistema hay almacenes físicos predefinidos. Después de abrir un almacén del sistema como mi en CERT \_ System \_ Store \_ Current \_ User, el proveedor de almacén llama a [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) para abrir cada uno de los almacenes físicos en la colección de almacenes del sistema. En el proceso de apertura, cada uno de estos almacenes físicos se agrega a la colección de almacenes del sistema mediante [**CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection). Todos los certificados de esos almacenes físicos están disponibles a través de la colección de almacenes lógicos del sistema.
+Un almacén del sistema es una colección que consta de uno o varios almacenes físicos relacionados. Para cada almacén del sistema, hay almacenes del mismo nivel físicos predefinidos. Después de abrir un almacén del sistema como MY en CERT SYSTEM STORE CURRENT USER, el proveedor del almacén llama a \_ \_ \_ \_ [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) para abrir cada uno de los almacenes físicos de la colección de almacenes del sistema. En el proceso abierto, cada uno de estos almacenes físicos se agrega a la colección de almacenes del sistema [**mediante CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection). Todos los certificados de esos almacenes físicos están disponibles a través de la colección de almacenes del sistema lógico.
 
 Para cada ubicación del almacén del sistema, los almacenes de sistemas predefinidos son:
 
@@ -22,23 +22,23 @@ Para cada ubicación del almacén del sistema, los almacenes de sistemas predefi
 -   Confianza
 -   CA
 
-En CERT \_ System \_ Store \_ \_ el usuario actual, también hay un almacén UserDS predefinido. Se planea una tienda de tarjetas inteligentes para esta ubicación.
+En CERT \_ SYSTEM STORE CURRENT USER \_ \_ \_ ,también hay un almacén UserDS predefinido. Se planea una tienda de tarjetas inteligentes para esta ubicación.
 
-Estos son los almacenes del sistema seguidos de comentarios adicionales:
+Estos son los almacenes del sistema seguidos de otros comentarios:
 
--   [\_ \_ usuario actual del almacén del sistema \_ CERT \_](#cert_system_store_current_user)
--   [\_ \_ máquina local del almacén del sistema \_ CERT \_](#cert_system_store_local_machine)
--   [\_ \_ servicio actual del almacén del sistema \_ de certificados \_](#cert_system_store_current_service)
--   [\_servicios del \_ almacén del sistema de certificados \_](#cert_system_store_services)
--   [\_usuarios del \_ almacén del sistema CERT \_](#cert_system_store_users)
--   [\_Directiva de \_ \_ grupo de usuario actual del \_ sistema \_ de certificados](#cert_system_current_user_group_policy)
--   [\_Directiva de \_ \_ Grupo del equipo local \_ \_ del sistema de certificados](#cert_system_local_machine_group_policy)
--   [certificado de la \_ \_ \_ máquina local del almacén \_ del sistema CERT \_](#cert_system_store_local_machine_enterprise)
+-   [USUARIO \_ ACTUAL DEL ALMACÉN DEL SISTEMA DE \_ \_ \_ CERTIFICADOS](#cert_system_store_current_user)
+-   [CERT \_ SYSTEM \_ STORE \_ LOCAL \_ MACHINE](#cert_system_store_local_machine)
+-   [CERT \_ SYSTEM \_ STORE \_ CURRENT \_ SERVICE](#cert_system_store_current_service)
+-   [CERT \_ SYSTEM \_ STORE \_ SERVICES](#cert_system_store_services)
+-   [CERT \_ SYSTEM \_ STORE \_ USERS](#cert_system_store_users)
+-   [DIRECTIVA \_ DE GRUPO DE USUARIOS ACTUAL DEL SISTEMA DE \_ \_ \_ \_ CERTIFICADOS](#cert_system_current_user_group_policy)
+-   [DIRECTIVA \_ DE GRUPO DE MÁQUINAS LOCALES DEL SISTEMA DE \_ \_ \_ \_ CERTIFICADOS](#cert_system_local_machine_group_policy)
+-   [CERT \_ SYSTEM \_ STORE \_ LOCAL \_ MACHINE \_ ENTERPRISE](#cert_system_store_local_machine_enterprise)
 -   [Comentarios:](#remarks)
 
-### <a name="cert_system_store_current_user"></a>\_ \_ usuario actual del almacén del sistema \_ CERT \_
+### <a name="cert_system_store_current_user"></a>USUARIO \_ ACTUAL DEL ALMACÉN DEL SISTEMA DE \_ \_ \_ CERTIFICADOS
 
-\_ \_ \_ Los almacenes del sistema del usuario actual del almacén del sistema \_ de certificados se encuentran en la siguiente ubicación del registro:
+Los almacenes \_ del sistema CERT SYSTEM STORE CURRENT USER se encuentran en la siguiente ubicación del \_ \_ \_ Registro:
 
 ```
 HKEY_CURRENT_USER
@@ -53,19 +53,19 @@ Los almacenes físicos predefinidos asociados a esos almacenes del sistema son l
 
 | Almacén del sistema | Almacén físico                                           |
 |--------------|----------------------------------------------------------|
-| MY           | . Predeterminada                                                 |
-| Root         | . Default. LocalMachine<br/> . Tarjeta<br/>   |
-| Confianza        | . Default. GroupPolicy<br/> . Almacén<br/> |
-| CA           | . Default. GroupPolicy<br/> . Almacén<br/> |
-| UserDS       | . UserCertificate                                         |
+| MY           | . Predeterminado                                                 |
+| Root         | . Default.LocalMachine<br/> . Smartcard<br/>   |
+| Confianza        | . Default.GroupPolicy<br/> . LocalMachine<br/> |
+| CA           | . Default.GroupPolicy<br/> . LocalMachine<br/> |
+| UserDS       | . Usercertificate                                         |
 
 
 
  
 
-### <a name="cert_system_store_local_machine"></a>\_ \_ máquina local del almacén del sistema \_ CERT \_
+### <a name="cert_system_store_local_machine"></a>CERT \_ SYSTEM \_ STORE \_ LOCAL \_ MACHINE
 
-\_ \_ \_ Los almacenes del sistema del equipo local del almacén del sistema \_ de certificados se encuentran en la siguiente ubicación del registro:
+Los \_ almacenes del sistema CERT SYSTEM STORE LOCAL MACHINE se encuentran en la siguiente ubicación del \_ \_ \_ Registro:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -74,24 +74,24 @@ HKEY_LOCAL_MACHINE
          SystemCertificates
 ```
 
-Los almacenes físicos predefinidos se asocian a los almacenes del sistema como se indica a continuación.
+Los almacenes físicos predefinidos están asociados a esos almacenes del sistema como se muestra a continuación.
 
 
 
 | Almacén del sistema | Almacén físico                                                                                    |
 |--------------|---------------------------------------------------------------------------------------------------|
-| MY           | . Predeterminada                                                                                          |
-| Root         | . Default. AuthRoot<br/> . GroupPolicy<br/> . Entidades<br/> . Tarjeta<br/> |
-| Confianza        | . Default. GroupPolicy<br/> . Entidades<br/>                                            |
-| CA           | . Default. GroupPolicy<br/> . Entidades <br/>                                           |
+| MY           | . Predeterminado                                                                                          |
+| Root         | . Default.AuthRoot<br/> . GroupPolicy<br/> . Enterprise<br/> . Smartcard<br/> |
+| Confianza        | . Default.GroupPolicy<br/> . Enterprise<br/>                                            |
+| CA           | . Default.GroupPolicy<br/> . Enterprise <br/>                                           |
 
 
 
  
 
-### <a name="cert_system_store_current_service"></a>\_ \_ servicio actual del almacén del sistema \_ de certificados \_
+### <a name="cert_system_store_current_service"></a>CERT \_ SYSTEM \_ STORE \_ CURRENT \_ SERVICE
 
-\_ \_ \_ \_ Los almacenes del sistema del servicio del almacén del sistema de certificados se encuentran en la siguiente ubicación del registro:
+Los \_ almacenes del sistema CERT SYSTEM STORE CURRENT SERVICE se encuentran en la siguiente ubicación del \_ \_ \_ Registro:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -109,18 +109,18 @@ Los almacenes físicos predefinidos asociados a esos almacenes del sistema son l
 
 | Almacén del sistema | Almacén físico                   |
 |--------------|----------------------------------|
-| MY           | . Predeterminada                         |
-| Root         | . Default. LocalMachine<br/> |
-| Confianza        | . Default. LocalMachine<br/> |
-| CA           | . Default. LocalMachine<br/> |
+| MY           | . Predeterminado                         |
+| Root         | . Default.LocalMachine<br/> |
+| Confianza        | . Default.LocalMachine<br/> |
+| CA           | . Default.LocalMachine<br/> |
 
 
 
  
 
-### <a name="cert_system_store_services"></a>\_servicios del \_ almacén del sistema de certificados \_
+### <a name="cert_system_store_services"></a>CERT \_ SYSTEM \_ STORE \_ SERVICES
 
-\_ \_ Los almacenes del sistema de certificados del almacén del sistema \_ se encuentran en la siguiente ubicación del registro:
+Los \_ almacenes del sistema CERT SYSTEM STORE SERVICES se encuentran en la siguiente ubicación del \_ \_ Registro:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -138,18 +138,18 @@ Los almacenes físicos predefinidos asociados a esos almacenes del sistema son l
 
 | Almacén del sistema       | Almacén físico                   |
 |--------------------|----------------------------------|
-| ServiceName \\ mi    | . Predeterminada                         |
-| ServiceName \\ raíz  | . Default. LocalMachine<br/> |
-| ServiceName \\ confianza | . Default. LocalMachine<br/> |
-| \\CA ServiceName    | . Default. LocalMachine<br/> |
+| ServiceName \\ MY    | . Predeterminado                         |
+| Raíz \\ de ServiceName  | . Default.LocalMachine<br/> |
+| Confianza \\ de ServiceName | . Default.LocalMachine<br/> |
+| Entidad de certificación ServiceName \\    | . Default.LocalMachine<br/> |
 
 
 
  
 
-### <a name="cert_system_store_users"></a>\_usuarios del \_ almacén del sistema CERT \_
+### <a name="cert_system_store_users"></a>CERT \_ SYSTEM \_ STORE \_ USERS
 
-\_ \_ \_ Los almacenes del sistema del almacén del sistema de certificados se encuentran en la siguiente ubicación del registro:
+Los \_ almacenes del sistema CERT SYSTEM STORE USERS se encuentran en la siguiente ubicación del \_ \_ Registro:
 
 ```
 HKEY_USERS
@@ -165,18 +165,18 @@ Los almacenes físicos predefinidos asociados a esos almacenes del sistema son l
 
 | Almacén del sistema  | Almacén físico                   |
 |---------------|----------------------------------|
-| userid \\ My    | . Default. LocalMachine<br/> |
-| userid \\ raíz  | . Default. LocalMachine<br/> |
-| userid \\ confianza | . Default. LocalMachine<br/> |
-| userid \\ CA    | . Default. LocalMachine<br/> |
+| userid \\ MY    | . Default.LocalMachine<br/> |
+| userid \\ Root  | . Default.LocalMachine<br/> |
+| userid \\ Trust | . Default.LocalMachine<br/> |
+| userid \\ CA    | . Default.LocalMachine<br/> |
 
 
 
  
 
-### <a name="cert_system_current_user_group_policy"></a>\_Directiva de \_ \_ grupo de usuario actual del \_ sistema \_ de certificados
+### <a name="cert_system_current_user_group_policy"></a>DIRECTIVA \_ DE GRUPO DE USUARIOS ACTUAL DEL SISTEMA DE \_ \_ \_ \_ CERTIFICADOS
 
-\_ \_ \_ \_ \_ Los almacenes del sistema de la Directiva de grupo del usuario actual del sistema de certificados se encuentran en la siguiente ubicación del registro:
+Los almacenes \_ del sistema CERT SYSTEM CURRENT USER GROUP POLICY se encuentran en la siguiente ubicación del \_ \_ \_ \_ Registro:
 
 ```
 HKEY_CURRENT_USER
@@ -186,9 +186,9 @@ HKEY_CURRENT_USER
             SystemCertificates
 ```
 
-### <a name="cert_system_local_machine_group_policy"></a>\_Directiva de \_ \_ Grupo del equipo local \_ \_ del sistema de certificados
+### <a name="cert_system_local_machine_group_policy"></a>DIRECTIVA \_ DE GRUPO DE MÁQUINAS LOCALES DEL SISTEMA DE \_ \_ \_ \_ CERTIFICADOS
 
-\_ \_ \_ \_ \_ Los almacenes del sistema de la Directiva de grupo del equipo local del sistema de certificados se encuentran en la siguiente ubicación del registro:
+Los \_ almacenes del sistema CERT SYSTEM LOCAL MACHINE GROUP POLICY se encuentran en la siguiente ubicación \_ del \_ \_ \_ Registro:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -198,9 +198,9 @@ HKEY_LOCAL_MACHINE
             SystemCertificates
 ```
 
-### <a name="cert_system_store_local_machine_enterprise"></a>certificado de la \_ \_ \_ máquina local del almacén \_ del sistema CERT \_
+### <a name="cert_system_store_local_machine_enterprise"></a>CERT \_ SYSTEM \_ STORE \_ LOCAL \_ MACHINE \_ ENTERPRISE
 
-\_Almacén del sistema de certificados: la \_ \_ \_ máquina local \_ contiene los certificados compartidos entre dominios de la empresa y descargados del directorio global de la empresa. Para sincronizar el almacén empresarial del cliente, el directorio empresarial se sondea cada ocho horas y los certificados se descargan automáticamente en segundo plano.
+CERT SYSTEM STORE LOCAL MACHINE ENTERPRISE contiene certificados compartidos entre dominios de la \_ \_ empresa y \_ \_ \_ descargados desde el directorio global de la empresa. Para sincronizar el almacén empresarial del cliente, el directorio empresarial se sondea cada ocho horas y los certificados se descargan automáticamente en segundo plano.
 
 Los almacenes físicos predefinidos asociados a estos almacenes del sistema son los siguientes.
 
@@ -208,36 +208,36 @@ Los almacenes físicos predefinidos asociados a estos almacenes del sistema son 
 
 | Almacén del sistema | Almacén físico |
 |--------------|----------------|
-| MY           | . Predeterminada       |
-| Root         | . Predeterminada       |
-| Confianza        | . Predeterminada       |
-| CA           | . Predeterminada       |
+| MY           | . Predeterminado       |
+| Root         | . Predeterminado       |
+| Confianza        | . Predeterminado       |
+| CA           | . Predeterminado       |
 
 
 
  
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
 Se pueden asociar almacenes físicos adicionales a un almacén del sistema mediante [**CertRegisterPhysicalStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregisterphysicalstore).
 
-\_ \_ Los almacenes de certificados \_ de servicio de almacén de sistema y certificado \_ de almacén del sistema \_ de certificados \_ se abren prefijando el nombre del almacén en la cadena que se pasa a *pvPara* con el nombre de servicio o de usuario como *ServiceName* \\ **Trust** o **.** \\ **Mi**. La ubicación de los usuarios de los servicios del almacén del sistema de certificados \_ \_ o del \_ \_ almacén del sistema \_ de certificados \_ puede abrir el mismo almacén en el \_ servicio actual del sistema de certificados \_ o el \_ \_ usuario actual del almacén del sistema de certificados mediante \_ \_ \_ el [*identificador de seguridad*](../secgloss/s-gly.md) de texto (SID) del servicio o usuario actual.
+Los almacenes CERT SYSTEM STORE SERVICE y CERT SYSTEM STORE USERS se abren antefijiendo el nombre del almacén en la cadena que se pasa a pvPara con el servicio o nombre de usuario, como \_ \_ \_ \_ \_ \_ *ServiceName*  \\ **Trust** o **. Mi** \\ **valor predeterminado** es . La ubicación CERT SYSTEM STORE SERVICES o CERT SYSTEM STORE USERS puede abrir el mismo almacén en CERT SYSTEM CURRENT SERVICE o CERT SYSTEM STORE CURRENT USER mediante el identificador de seguridad \_ \_ \_ \_ textual \_ \_ \_ \_ \_ \_ \_ \_ \_ (SID) [](../secgloss/s-gly.md) del servicio o usuario actual.
 
-Los almacenes de \_ la Directiva de grupo de usuarios del almacén del sistema de certificados \_ \_ \_ \_ y \_ \_ \_ la Directiva de grupo del equipo local del sistema de certificados \_ \_ en una configuración de red se descargan en el equipo cliente desde la plantilla de directiva de grupo (GPT) durante el inicio del equipo o el inicio de sesión Estos almacenes se pueden actualizar en el equipo cliente después del inicio o el inicio de sesión cuando un administrador cambia la GPT en el servidor de dominio. La función [**CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore) permite a una aplicación recibir una notificación cuando los almacenes en cualquiera de estas ubicaciones han cambiado.
+Los almacenes de LA DIRECTIVA DE GRUPO DE USUARIOS del ALMACÉN DEL SISTEMA DE CERT y LA DIRECTIVA DE GRUPO DE MÁQUINAS LOCALES DEL SISTEMA DE CERT en una configuración de red se descargan en el equipo cliente desde la plantilla de \_ \_ directiva de grupo \_ \_ \_ \_ \_ \_ \_ \_ (GPT) durante el inicio del equipo o el inicio de sesión del usuario. Estos almacenes se pueden actualizar en el equipo cliente después del inicio o el inicio de sesión cuando un administrador cambia el GPT en el servidor de dominio. La [**función CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore) permite notificar a una aplicación cuando los almacenes de cualquiera de estas ubicaciones han cambiado.
 
 Las siguientes ubicaciones del almacén del sistema se pueden abrir de forma remota:
 
--   \_ \_ máquina local del almacén del sistema \_ CERT \_
--   \_Directiva de \_ \_ Grupo del \_ equipo local del \_ almacén \_ del sistema de certificados
--   \_servicios del \_ almacén del sistema de certificados \_
--   \_usuarios del \_ almacén del sistema CERT \_
+-   CERT \_ SYSTEM \_ STORE \_ LOCAL \_ MACHINE
+-   CERT \_ SYSTEM \_ STORE \_ LOCAL \_ MACHINE \_ GROUP \_ POLICY
+-   CERT \_ SYSTEM \_ STORE \_ SERVICES
+-   CERT \_ SYSTEM \_ STORE \_ USERS
 
-Las ubicaciones del almacén del sistema se abren de forma remota mediante el prefijo del nombre del almacén en la cadena que se pasa a *pvPara* con el nombre del equipo. Ejemplos de nombres de almacén del sistema remoto:
+Las ubicaciones del almacén del sistema se abren de forma remota antefijiendo el nombre del almacén en la cadena que se pasa a *pvPara* con el nombre del equipo. Algunos ejemplos de nombres de almacén del sistema remoto son:
 
--   *Nombre del equipo* \\ **Entidad de certificación**
--   \\\\*Nombre del equipo* \\ **Entidad de certificación**
--   *Nombre del equipo* \\ *ServiceName* \\ **Confianza** de
--   \\\\*Nombre del equipo* \\ *ServiceName* \\ **Confianza** de
+-   *NombreDeEquipo* \\ **CA**
+-   \\\\*NombreDeEquipo* \\ **CA**
+-   *NombreDeEquipo* \\ *ServiceName* \\ **Confianza**
+-   \\\\*NombreDeEquipo* \\ *ServiceName* \\ **Confianza**
 
  
 

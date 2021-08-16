@@ -26,7 +26,7 @@ Establece o recupera el valor actual de una propiedad.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -44,7 +44,7 @@ Variable de tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) que
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
@@ -53,7 +53,7 @@ Variable de tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) que
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

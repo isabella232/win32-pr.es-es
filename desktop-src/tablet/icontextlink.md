@@ -38,15 +38,15 @@ La **interfaz IContextLink** tiene estos métodos.
 
 | Método                                                                  | Descripción                                                                                                             |
 |:------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
-| [**GetContextLinkDirection**](icontextlink-getcontextlinkdirection.md) | Recupera el tipo de relación que **representa este IContextLink.**<br/>                                         |
-| [**GetDestinationNode**](icontextlink-getdestinationnode.md)           | Recupera el [**objeto IContextNode**](icontextnode.md) que es el destino de **este objeto IContextLink.**<br/> |
-| [**GetSourceNode**](icontextlink-getsourcenode.md)                     | Recupera el [**objeto IContextNode**](icontextnode.md) que es el origen de **este objeto IContextLink.**<br/>      |
+| [**GetContextLinkDirection**](icontextlink-getcontextlinkdirection.md) | Recupera el tipo de relación que **representa IContextLink.**<br/>                                         |
+| [**GetDestinationNode**](icontextlink-getdestinationnode.md)           | Recupera el objeto [**IContextNode**](icontextnode.md) que es el destino de **este objeto IContextLink.**<br/> |
+| [**GetSourceNode**](icontextlink-getsourcenode.md)                     | Recupera el objeto [**IContextNode**](icontextnode.md) que es el origen de **este objeto IContextLink.**<br/>      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 A continuación se muestra un ejemplo de una relación representada por un **objeto IContextLink:**
 
@@ -56,16 +56,16 @@ A continuación se muestra un ejemplo de una relación representada por un **obj
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
 | Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

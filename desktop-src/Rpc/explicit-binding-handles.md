@@ -17,7 +17,7 @@ Para obtener el máximo control sobre el proceso de enlace, las aplicaciones cli
 
 La aplicación cliente debe pasar el identificador explícito como parámetro a cada llamada a procedimiento remoto. Para cumplir con el estándar de OSF, el identificador debe especificarse como el primer parámetro en cada procedimiento remoto. Sin embargo, las extensiones de Microsoft para RPC permiten especificar el identificador de enlace en otras posiciones. Para obtener más información, vea [Microsoft RPC Binding-Handle Extensions](microsoft-rpc-binding-handle-extensions.md).
 
-Para crear un identificador explícito, declare el identificador como un parámetro para las operaciones remotas en el archivo IDL. El [ejemplo Hello, World](tutorial.md) se puede volver a definir para usar un identificador explícito como se muestra:
+Para crear un identificador explícito, declare el identificador como un parámetro para las operaciones remotas en el archivo IDL. El [ejemplo Hello, World](tutorial.md) se puede volver a definir para usar un identificador explícito como se muestra a continuación:
 
 ``` syntax
 /* IDL file for explicit handles */

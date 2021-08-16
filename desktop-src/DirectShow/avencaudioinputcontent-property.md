@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117824215"
 ---
-# <a name="avencaudioinputcontent-property"></a>Propiedad AVEncAudioInputContent
+# <a name="avencaudioinputcontent-property"></a>AvEncAudioInputContent, propiedad
 
 Especifica si el contenido de audio contiene música o voz.
 

@@ -1,6 +1,6 @@
 ---
 title: Referencia de versión común
-description: La API de Direct3D define varios elementos de API que son comunes a Direct3D 12, Direct3D 11, Direct3D 10 y Direct3D 10.1.
+description: La API de Direct3D define varios elementos de API comunes a Direct3D 12, Direct3D 11, Direct3D 10 y Direct3D 10.1.
 ms.assetid: 2c9c354d-402f-4e79-9e54-ddf7e9b0c6db
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118537886"
 ---
 # <a name="common-version-reference"></a>Referencia de versión común
 
-La API de Direct3D define varios elementos de API que son comunes a Direct3D 12, Direct3D 11, Direct3D 10 y Direct3D 10.1. Puede usar estos elementos de API en el código para cualquiera de estas versiones de Direct3D. Estos elementos de API se conocen como versión neutra.
+La API de Direct3D define varios elementos de API comunes a Direct3D 12, Direct3D 11, Direct3D 10 y Direct3D 10.1. Puede usar estos elementos de API en el código para cualquiera de estas versiones de Direct3D. Estos elementos de API se conocen como versión neutra.
 
 
 ## <a name="in-this-section"></a>En esta sección

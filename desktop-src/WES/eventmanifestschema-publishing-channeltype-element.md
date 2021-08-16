@@ -1,6 +1,6 @@
 ---
-title: Elemento Publishing (ChannelType)
-description: Define las propiedades de registro para la sesión que utiliza el canal. | Elemento Publishing (ChannelType)
+title: elemento publishing (ChannelType)
+description: Define las propiedades de registro de la sesión que usa el canal. | elemento publishing (ChannelType)
 ms.assetid: 032b5888-550b-4771-bd30-3195602811a7
 keywords:
 - elemento de publicación EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e47604ad3a9a9372fa1432db96777e85ef901176
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f1758ee390c75708ea1f0acd5fb75af4e8db8c6128b1b7b39c8e4f2ea71ed28d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055863"
 ---
-# <a name="publishing-channeltype-element"></a>Elemento Publishing (ChannelType)
+# <a name="publishing-channeltype-element"></a>elemento publishing (ChannelType)
 
-Define las propiedades de registro para la sesión que utiliza el canal.
+Define las propiedades de registro de la sesión que usa el canal.
 
 ``` syntax
 <xs:element name="publishing"
@@ -30,27 +30,27 @@ Define las propiedades de registro para la sesión que utiliza el canal.
  />
 ```
 
-El elemento de **publicación** se define mediante el tipo complejo de [**ChannelType**](eventmanifestschema-channeltype-complextype.md) .
+El **elemento de publicación** se define mediante el tipo complejo [**ChannelType.**](eventmanifestschema-channeltype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**canal (ChannelListType)**](eventmanifestschema-channel-channellisttype-element.md)
+[**channel (ChannelListType)**](eventmanifestschema-channel-channellisttype-element.md)
 </dt> </dl>
 
  

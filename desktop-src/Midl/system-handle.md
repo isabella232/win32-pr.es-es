@@ -1,6 +1,6 @@
 ---
 title: Atributo system_handle
-description: El atributo \ system_handle\ especifica un tipo de identificador definido por el sistema.
+description: El atributo \system_handle\ especifica un tipo de identificador definido por el sistema.
 keywords:
 - system_handle atributo MIDL
 topic_type:
@@ -65,7 +65,7 @@ Los vínculos a listas de derechos de acceso para cada tipo de  objeto se pueden
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para usar este atributo, la `-target` marca debe establecerse en `NT100` (o superior) al ejecutar midl.exe.
 
@@ -105,7 +105,7 @@ interface MyInterface : IUnknown
 | Cliente mínimo compatible | Windows 10 Actualización de aniversario (versión 1607, compilación 14393) |
 | Servidor mínimo compatible | Windows Server 2016 (compilación 14393) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 <!--

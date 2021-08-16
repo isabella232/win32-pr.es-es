@@ -1,7 +1,7 @@
 ---
-description: Especifica un BLOB que se va a firmar.
+description: Especifica un BLOB que se firmará.
 ms.assetid: 214c9c05-5c95-4803-8993-23a87266f991
-title: Estructura de SIGNER_BLOB_INFO
+title: SIGNER_BLOB_INFO estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,21 +12,21 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a05e99cc4d7fa2eff196159bb449fa7dbfbf3026
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a865a65b5fd9a1ec658dcc86b1eb2b3dd255804308f04bebf4fffdb0650d71e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104547078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898932"
 ---
-# <a name="signer_blob_info-structure"></a>Estructura de \_ información del BLOB del firmante \_
+# <a name="signer_blob_info-structure"></a>ESTRUCTURA DE INFORMACIÓN \_ DE BLOB DE SIGNER \_
 
-\[La estructura de **\_ \_ información del BLOB del firmante** está disponible para su uso en los sistemas operativos especificados en la sección requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
+\[La **estructura SIGNER \_ BLOB \_ INFO** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
 
-La estructura de **\_ \_ información del BLOB del firmante** especifica el [*BLOB*](../secgloss/b-gly.md) que se va a firmar.
+La **estructura SIGNER \_ BLOB \_ INFO** especifica un [*BLOB*](../secgloss/b-gly.md) que se debe firmar.
 
 > [!Note]  
-> Esta estructura no está definida en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo tal como se muestra en este tema.
+> Esta estructura no se define en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo como se muestra en este tema.
 
  
 
@@ -52,35 +52,35 @@ typedef struct _SIGNER_BLOB_INFO {
 **cbSize**
 </dt> <dd>
 
-Tamaño de la estructura, en bytes.
+Tamaño, en bytes, de la estructura .
 
 </dd> <dt>
 
 **pGuidSubject**
 </dt> <dd>
 
-Un puntero a un **GUID** que especifica el paquete de interfaz de sujeto (SIP) que se va a cargar.
+Puntero a un **GUID que** especifica el paquete de interfaz de sujeto (SIP) que se cargará.
 
 </dd> <dt>
 
 **cbBlob**
 </dt> <dd>
 
-Tamaño, en bytes, del BLOB que se va a firmar.
+Tamaño, en bytes, del BLOB que se firmará.
 
 </dd> <dt>
 
 **pbBlob**
 </dt> <dd>
 
-Puntero al BLOB que se va a firmar.
+Puntero al BLOB que se firmará.
 
 </dd> <dt>
 
 **pwszDisplayName**
 </dt> <dd>
 
-Nombre para mostrar del BLOB. Este miembro se puede establecer en **null**.
+Nombre para mostrar del BLOB. Este miembro se puede establecer en **NULL.**
 
 </dd> </dl>
 
@@ -88,18 +88,18 @@ Nombre para mostrar del BLOB. Este miembro se puede establecer en **null**.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
 | Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**información de \_ asunto del firmante \_**](signer-subject-info.md)
+[**INFORMACIÓN DEL \_ \_ FIRMANTE**](signer-subject-info.md)
 </dt> </dl>
 
  

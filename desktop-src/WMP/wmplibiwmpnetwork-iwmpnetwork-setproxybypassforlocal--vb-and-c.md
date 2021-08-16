@@ -81,7 +81,7 @@ Este método produce un error a menos que la aplicación que realiza la llamada 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **setProxyBypassForLocal para** especificar si se omite el servidor proxy Reproductor de Windows Media cuando se usa el protocolo MMS, si el servidor de origen está en una red local. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo de código siguiente se usa **setProxyBypassForLocal para** especificar si se omite el servidor proxy Reproductor de Windows Media, cuando se usa el protocolo MMS, si el servidor de origen está en una red local. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp

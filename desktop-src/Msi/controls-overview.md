@@ -15,9 +15,9 @@ ms.locfileid: "118638527"
 
 Windows El instalador implementa una serie de controles estándar que los autores de paquetes pueden colocar en los cuadros de diálogo. Sin embargo, no todos los controles estándar Windows microsoft están disponibles y no se pueden crear controles personalizados para su uso con la interfaz de usuario del instalador.
 
-Los controles se crean en los cuadros de diálogo del instalador de una manera similar a cómo se crean los cuadros de diálogo mediante programación mediante la API Windows interfaz de usuario de Microsoft. Se crea un control a partir de una plantilla registrada en la tabla Control. Esta plantilla es ligeramente diferente en que contiene el nombre único del cuadro de diálogo en el que aparece el control.
+Los controles se crean en los cuadros de diálogo del instalador de una manera similar a cómo se crean los cuadros de diálogo mediante programación mediante la API de interfaz de usuario de Microsoft Windows. Se crea un control a partir de una plantilla registrada en la tabla Control. Esta plantilla es ligeramente diferente en que contiene el nombre único del cuadro de diálogo en el que aparece el control.
 
-En la API Windows interfaz de usuario de Microsoft, la interacción del usuario se realiza mediante la creación de una función de devolución de llamada para controlar los mensajes publicados por el control . Además, la mayoría de Windows de Microsoft reciben mensajes, como los enviados por la [función SendMessage.](/windows/win32/api/winuser/nf-winuser-sendmessage)
+En la API Windows interfaz de usuario de Microsoft, la interacción del usuario se realiza mediante la creación de una función de devolución de llamada para controlar los mensajes publicados por el control . Además, la mayoría de los Windows de Microsoft reciben mensajes, como los enviados por la [función SendMessage.](/windows/win32/api/winuser/nf-winuser-sendmessage)
 
 La comunicación entre el usuario y los controles se realiza en el instalador mediante el uso de [ControlEvents](controlevent-overview.md). Sin embargo, hay un conjunto limitado de ControlEvents que son específicos de cada control en el conjunto limitado de controles de Windows Installer. Los controles pueden publicar más de un control ControlEvent y pueden recibir más de un control ControlEvent.
 

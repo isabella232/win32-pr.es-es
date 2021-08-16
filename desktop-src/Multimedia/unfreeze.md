@@ -49,7 +49,7 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszUnfreeze"></span><span id="lpszunfreeze"></span><span id="LPSZUNFREEZE"></span>*lpszUnfreeze*
 </dt> <dd>
 
-Marca para volver a buscar la adquisición de vídeo en el búfer de fotogramas. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **unfreeze** y las marcas usadas por cada tipo.
+Marca para volver a enmarcar la adquisición de vídeo en el búfer de fotogramas. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **unfreeze** y las marcas usadas por cada tipo.
 
 
 

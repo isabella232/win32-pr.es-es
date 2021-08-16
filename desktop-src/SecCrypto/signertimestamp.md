@@ -1,7 +1,7 @@
 ---
-description: Marca de tiempo el sujeto especificado. Esta función admite la marca de tiempo de Authenticode. Para realizar una marca de tiempo de la infraestructura de clave pública (RFC 3161) de X. 509, utilice la función SignerTimeStampEx2.
+description: Marca de tiempo el asunto especificado. Esta función admite la marca de tiempo Authenticode. Para realizar la marca de tiempo de infraestructura de clave pública X.509 (RFC 3161), use la función SignerTimeStampEx2.
 ms.assetid: fb2c149b-dba2-4879-be97-831037e1110b
-title: SignerTimeStamp función)
+title: Función SignerTimeStamp
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: c4c57f231f70477a76b4d4f6156354ebc847a715
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb33852cb2860a29d43a41b2331a910a098384b872e972a74cf94f627bebf75a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898301"
 ---
-# <a name="signertimestamp-function"></a>SignerTimeStamp función)
+# <a name="signertimestamp-function"></a>Función SignerTimeStamp
 
-El tiempo de la función **SignerTimeStamp** marca el sujeto especificado. Esta función admite la marca de tiempo de Authenticode. Para realizar una marca de tiempo de la infraestructura de clave pública (RFC 3161) de X. 509, utilice la función [**SignerTimeStampEx2**](signertimestampex2.md) .
+La **función SignerTimeStamp** marca el asunto especificado. Esta función admite la marca de tiempo Authenticode. Para realizar la marca de tiempo de infraestructura de clave pública X.509 (RFC 3161), use la [**función SignerTimeStampEx2.**](signertimestampex2.md)
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mssign32.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mssign32.dll.
 
  
 
@@ -47,52 +47,52 @@ HRESULT WINAPI SignerTimeStamp(
 
 <dl> <dt>
 
-*pSubjectInfo* \[ de\]
+*pSubjectInfo* \[ En\]
 </dt> <dd>
 
-Dirección de una estructura de [**\_ \_ información de asunto del firmante**](signer-subject-info.md) que representa el sujeto de marca de tiempo.
+Dirección de una estructura [**SIGNER \_ SUBJECT \_ INFO**](signer-subject-info.md) que representa el sujeto al que se va a marcar la hora.
 
 </dd> <dt>
 
-*pwszHttpTimeStamp* \[ de\]
+*pwszHttpTimeStamp* \[ En\]
 </dt> <dd>
 
-Dirección de una cadena Unicode terminada en null que contiene la dirección URL de un servidor de marca de tiempo.
+Dirección de una cadena Unicode terminada en NULL que contiene la dirección URL de un servidor de marca de tiempo.
 
 </dd> <dt>
 
-*psRequest* \[ en, opcional\]
+*psRequest* \[ in, opcional\]
 </dt> <dd>
 
-Dirección de una estructura [**de \_ atributos de cifrado**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attributes) que contiene atributos adicionales que se agregan a la solicitud de marca de tiempo.
+Dirección de una estructura [**CRYPT \_ ATTRIBUTES que**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attributes) contiene atributos adicionales que se agregan a la solicitud de marca de tiempo.
 
-Este parámetro es opcional y puede ser **null** si no se incluye.
+Este parámetro es opcional y puede ser **NULL** si no se incluye.
 
 </dd> <dt>
 
-*pSipData* \[ en, opcional\]
+*pSipData* \[ in, opcional\]
 </dt> <dd>
 
-Valor de 32 bits que se pasa como datos adicionales a las funciones de SIP. El proveedor SIP define el formato y el contenido de este.
+Valor de 32 bits que se pasa como datos adicionales a las funciones de SIP. El proveedor DE SIP define el formato y el contenido de este.
 
-Este parámetro es opcional y puede ser **null** si no se incluye.
+Este parámetro es opcional y puede ser **NULL** si no se incluye.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve S \_ OK.
+Si la función se realiza correctamente, la función devuelve S \_ OK.
 
-Si se produce un error en la función, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en la función, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

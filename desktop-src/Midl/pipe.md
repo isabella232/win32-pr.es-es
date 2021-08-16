@@ -45,7 +45,7 @@ Especifica uno o varios identificadores o punteros a identificadores. Separe var
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Puede usar el constructor **de tipo de** canalización para transmitir datos en ambas direcciones. Un parámetro in pipe permite al servidor extraer el flujo de **\[** [](in.md) **\]** datos del cliente durante una llamada a procedimiento remoto. Un **\[** [**parámetro de**](out-idl.md) **\]** canalización de salida permite que el servidor vuelva a insertar el flujo de datos en el cliente. Las rutinas del lado cliente se suministran para insertar y extraer el flujo de datos y para asignar un búfer global para los datos. Las rutinas de código auxiliar de cliente y servidor serializan y desmarshaln los datos y pasan una referencia al búfer de vuelta a la aplicación.
 
@@ -117,7 +117,7 @@ typedef pipe SIMPLE_STRUCT SIMPLE_STRUCT_PIPE;
 [**representar \_ como**](represent-as.md)
 </dt> <dt>
 
-[**struct**](struct.md)
+[**Estructura**](struct.md)
 </dt> <dt>
 
 [**transmitir \_ como**](transmit-as.md)

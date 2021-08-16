@@ -31,15 +31,15 @@ g \_ wszWMStreamTypeInfo
 
 [**WM \_ STREAM \_ TYPE \_ INFO**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_type_info) (**WMT TYPE \_ \_ BINARY**)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo se aplica a secuencias específicas. No se puede recuperar este atributo para el flujo 0.
 
 Este atributo es de solo lectura.
 
-El objeto del editor de metadatos puede acceder a **WM/StreamTypeInfo.** Esta es la única manera de acceder a la información de configuración de flujo sin abrir el archivo con el objeto lector (o el objeto de lector sincrónico).
+El objeto del editor de metadatos puede acceder a **WM/StreamTypeInfo.** Esta es la única manera de acceder a la información de configuración de la secuencia sin abrir el archivo con el objeto de lector (o el objeto de lector sincrónico).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

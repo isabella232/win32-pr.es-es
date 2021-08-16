@@ -130,7 +130,7 @@ propertyDescription
             defineName = PHOTO_PROGRAMMODE_LANDSCAPE
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

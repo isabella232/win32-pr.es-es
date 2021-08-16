@@ -65,9 +65,9 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero a una estructura D3DXMATRIX girada alrededor del eje Z.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixRotationZ se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixRotationZ se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

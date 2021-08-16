@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. MaxVerPages (propiedad)'
-title: Propiedad InstanceParameters. MaxVerPages
+description: 'Más información sobre: Propiedad InstanceParameters.MaxVerPages'
+title: Propiedad InstanceParameters.MaxVerPages
 TOCTitle: 'MaxVerPages property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.MaxVerPages
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.maxverpages(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fd6a561a4005ab0992f6d32dbe6c65a241f517d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ce33867409725a017ee5e80a936e40ecdb0c280f37d92718412d97502002452
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039383"
 ---
-# <a name="instanceparametersmaxverpages-property"></a>Propiedad InstanceParameters. MaxVerPages
+# <a name="instanceparametersmaxverpages-property"></a>Propiedad InstanceParameters.MaxVerPages
 
-Obtiene o establece el número máximo de páginas del almacén de versiones reservadas para esta instancia.
+Obtiene o establece el número máximo de páginas de almacén de versiones reservadas para esta instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int MaxVerPages { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros InstanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

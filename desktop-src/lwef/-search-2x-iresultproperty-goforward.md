@@ -4,7 +4,7 @@ description: Reservado. | IResultProperty GoForward (método)
 ms.assetid: d1615051-d110-4b3c-902f-70c17a6a0fc9
 keywords:
 - Características heredadas del entorno de Windows GoForward
-- Método GoForward Heredado Windows environment Features , IResultProperty (interfaz IResultProperty)
+- GoForward method Legacy Windows Environment Features , IResultProperty (Interfaz IResultProperty)
 - IResultProperty interface Legacy Windows Environment Features , GoForward method
 ms.topic: reference
 ms.date: 05/31/2018

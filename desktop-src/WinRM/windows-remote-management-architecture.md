@@ -1,5 +1,5 @@
 ---
-title: Arquitectura de Administración remota de Windows
+title: Administración remota de Windows arquitectura
 description: La arquitectura Administración remota de Windows consta de componentes en los equipos cliente y servidor.
 ms.assetid: 82e67851-fe46-4bb0-8278-9718b5e0c7ae
 ms.tgt_platform: multiple
@@ -10,40 +10,40 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0f5576913c5e4a1f2a105fb77e2282dc682c6659
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 889a823c4c67bed29f9ce695d84c893654b541aed76e0c79860e31f24c543662
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121604"
 ---
-# <a name="windows-remote-management-architecture"></a>Arquitectura de Administración remota de Windows
+# <a name="windows-remote-management-architecture"></a>Administración remota de Windows arquitectura
 
-La arquitectura Administración remota de Windows consta de componentes en los equipos cliente y servidor. En la ilustración siguiente se muestran los componentes de ambos equipos, cómo interactúan los componentes con otros componentes y el protocolo que se usa para la comunicación entre los equipos.
+La arquitectura Administración remota de Windows consta de componentes en los equipos cliente y servidor. En la ilustración siguiente se muestran los componentes de ambos equipos, cómo interactúan los componentes con otros componentes y el protocolo que se usa para comunicarse entre los equipos.
 
-![arquitectura de WinRM](images/winrm-architecture.png)
+![arquitectura winrm](images/winrm-architecture.png)
 
-## <a name="requesting-client"></a>Cliente solicitante
+## <a name="requesting-client"></a>Solicitud de cliente
 
-Los siguientes componentes de WinRM residen en el equipo que ejecuta el script que solicita los datos.
+Los siguientes componentes de WinRM residen en el equipo que ejecuta el script que solicita datos.
 
 -   Aplicación WinRM
 
-    Esta es la herramienta de línea de comandos de **WinRM** o script que usa la API de scripting de WinRM para realizar llamadas para solicitar datos o para ejecutar métodos. Para obtener más información, consulte la [API de scripting de WinRM](winrm-scripting-api.md).
+    Se trata del script o la herramienta de línea de comandos **de Winrm** que usa la API de scripting de WinRM para realizar llamadas a para solicitar datos o ejecutar métodos. Para obtener más información, vea [WinRM Scripting API](winrm-scripting-api.md).
 
 -   WSMAuto.dll
 
-    Nivel de automatización que proporciona compatibilidad con scripting.
+    La capa de Automation que proporciona compatibilidad con scripting.
 
 -   WsmCL.dll
 
-    Nivel de la API de C dentro del sistema operativo.
+    Capa de API de C dentro del sistema operativo.
 
 -   API DE HTTP
 
     WinRM requiere compatibilidad con el transporte HTTP y HTTPS.
 
-## <a name="responding-server"></a>Servidor que responde
+## <a name="responding-server"></a>Servidor de respuesta
 
 Los siguientes componentes de WinRM residen en el equipo que responde.
 
@@ -53,19 +53,19 @@ Los siguientes componentes de WinRM residen en el equipo que responde.
 
 -   WSMAuto.dll
 
-    Nivel de automatización que proporciona compatibilidad con scripting.
+    La capa de Automation que proporciona compatibilidad con scripting.
 
 -   WsmCL.dll
 
-    Nivel de la API de C dentro del sistema operativo.
+    Capa de API de C dentro del sistema operativo.
 
 -   WsmSvc.dll
 
-    Servicio de [*escucha*](windows-remote-management-glossary.md) de WinRM.
+    Servicio de escucha [*winRM.*](windows-remote-management-glossary.md)
 
 -   WsmProv.dll
 
-    Subsistema del proveedor.
+    Subsistema de proveedor.
 
 -   WsmRes.dll
 
@@ -73,11 +73,11 @@ Los siguientes componentes de WinRM residen en el equipo que responde.
 
 -   WsmWmiPl.dll
 
-    [*Complemento WMI*](windows-remote-management-glossary.md). Esto le permite obtener datos de WMI a través de WinRM.
+    [*Complemento WMI*](windows-remote-management-glossary.md). Esto le permite obtener datos WMI a través de WinRM.
 
--   Controlador de interfaz de administración de plataforma inteligente (IPMI) y proveedor IPMI de WMI
+-   Controlador de interfaz de administración de plataforma inteligente (IPMI) y proveedor de IPMI WMI
 
-    Estos componentes proporcionan los datos de hardware solicitados mediante las clases de IPMI. Para obtener más información, consulte [proveedor IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider). El SMBIOS debe haber detectado hardware de BMC o el dispositivo creado manualmente cargando el controlador. Para obtener más información, vea [instalación y configuración de administración remota de Windows](installation-and-configuration-for-windows-remote-management.md).
+    Estos componentes suministran los datos de hardware que se solicitan mediante las clases IPMI. Para obtener más información, vea [Proveedor DE IPMI.](/previous-versions/windows/desktop/ipmiprv/ipmi-provider) El hardware de BMC debe haber sido detectado por SMBIOS o el dispositivo creado manualmente mediante la carga del controlador. Para obtener más información, [vea Instalación y configuración de Administración remota de Windows](installation-and-configuration-for-windows-remote-management.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -86,6 +86,6 @@ Los siguientes componentes de WinRM residen en el equipo que responde.
 [Acerca de Administración remota de Windows](about-windows-remote-management.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

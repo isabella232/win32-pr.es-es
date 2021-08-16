@@ -4,18 +4,18 @@ ms.assetid: fd16bd46-32e3-4896-ac5c-03c1bf6ad515
 title: JobAccountingSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 499d78db7a967e256ee79cd6e0c35d2f7d59dff4
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 678a2c0cb39fd29dcf46779b306e380dd7535a6fadc762d89a3cb92f4db24c57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034163"
 ---
 # <a name="jobaccountingsheet"></a>JobAccountingSheet
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la hoja de contabilidad que se va a generar para el trabajo. La hoja de contabilidad debe generarse en el valor predeterminado PageMediaSize y usar el valor predeterminado PageMediaType. La hoja de contabilidad debe aislarse del resto del trabajo. Esto significa que las opciones de finalización o procesamiento (como JobDuplex, JobStaple o JobBinding) no deben incluir la hoja de contabilidad. La hoja de contabilidad puede aparecer como la primera o la última página del trabajo a discreción del implementador.
+Describe la hoja de contabilidad que se va a generar para el trabajo. La hoja de contabilidad debe generarse en el valor predeterminado PageMediaSize y usar el valor predeterminado PageMediaType. La hoja de contabilidad debe aislarse del resto del trabajo. Esto significa que las opciones de finalización o procesamiento (como JobDuplex, JobStaple o JobBinding) no deben incluir la hoja de contabilidad. La hoja de contabilidad puede producirse como la primera o la última página del trabajo a discreción del implementador.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -60,7 +60,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 
@@ -69,7 +69,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobAccountingSheet">
@@ -88,7 +88,7 @@ Las palabras clave del esquema de impresión público se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

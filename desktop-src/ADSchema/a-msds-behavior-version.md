@@ -1,6 +1,6 @@
 ---
 title: Atributo ms-DS-Behavior-Version
-description: Este atributo se usa para realizar un seguimiento de la versión de comportamiento del dominio o bosque. Es un número que aumenta de forma monónica y que se usa para habilitar determinadas Active Directory características.
+description: Este atributo se usa para realizar un seguimiento de la versión de comportamiento del dominio o bosque. Es un número que aumenta de forma monótona y que se usa para habilitar determinadas Active Directory características.
 ms.assetid: 948c4777-11ed-4321-92e9-a0cf96a47fe6
 ms.tgt_platform: multiple
 keywords:
@@ -23,11 +23,11 @@ ms.locfileid: "118685261"
 ---
 # <a name="ms-ds-behavior-version-attribute"></a>Atributo ms-DS-Behavior-Version
 
-Este atributo se usa para realizar un seguimiento de la versión de comportamiento del dominio o bosque. Es un número que aumenta de forma monónica y que se usa para habilitar determinadas Active Directory características.
+Este atributo se usa para realizar un seguimiento de la versión de comportamiento del dominio o bosque. Es un número que aumenta de forma monótona y que se usa para habilitar determinadas Active Directory características.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------------|
 | CN                | ms-DS-Behavior-Version                         |
 | Ldap-Display-Name | msDS-Behavior-Version                          |
@@ -36,7 +36,7 @@ Este atributo se usa para realizar un seguimiento de la versión de comportamien
 | Frecuencia de actualización  | \-                                             |
 | Attribute-Id      | 1.2.840.113556.1.4.1459                        |
 | System-Id-Guid    | d31a8757-2447-4545-8081-3bb610cacbf2           |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)           |
+| Syntax            | [**Enumeración**](s-enumeration.md)           |
 
 
 
@@ -53,14 +53,14 @@ Este atributo se usa para realizar un seguimiento de la versión de comportamien
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Es de un solo valor       | True                                                                                                                                                                                           |
-| Está indexado             | False                                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                                          |
+| System-Only            | Verdadero                                                                                                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                           |
+| Está indexado             | Falso                                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
@@ -74,14 +74,14 @@ Este atributo se usa para realizar un seguimiento de la versión de comportamien
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Es de un solo valor       | True                                                                                                                                                                                           |
-| Está indexado             | False                                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                                          |
+| System-Only            | Verdadero                                                                                                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                           |
+| Está indexado             | Falso                                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
@@ -95,14 +95,14 @@ Este atributo se usa para realizar un seguimiento de la versión de comportamien
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Es de un solo valor       | True                                                                                                                                                                                           |
-| Está indexado             | False                                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                                          |
+| System-Only            | Verdadero                                                                                                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                           |
+| Está indexado             | Falso                                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
@@ -116,14 +116,14 @@ Este atributo se usa para realizar un seguimiento de la versión de comportamien
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Es de un solo valor       | True                                                                                                                                                                                           |
-| Está indexado             | False                                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                                          |
+| System-Only            | Verdadero                                                                                                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                           |
+| Está indexado             | Falso                                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
@@ -137,14 +137,14 @@ Este atributo se usa para realizar un seguimiento de la versión de comportamien
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Es de un solo valor       | True                                                                                                                                                                                           |
-| Está indexado             | False                                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                                          |
+| System-Only            | Verdadero                                                                                                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                           |
+| Está indexado             | Falso                                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |
@@ -158,14 +158,14 @@ Este atributo se usa para realizar un seguimiento de la versión de comportamien
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Es de un solo valor       | True                                                                                                                                                                                           |
-| Está indexado             | False                                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                                          |
+| System-Only            | Verdadero                                                                                                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                           |
+| Está indexado             | Falso                                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
 | Range-Lower            | \-                                                                                                                                                                                             |
 | Range-Upper            | \-                                                                                                                                                                                             |

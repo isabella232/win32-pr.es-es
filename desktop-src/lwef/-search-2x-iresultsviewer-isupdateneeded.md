@@ -3,7 +3,7 @@ title: Propiedad IResultsViewer IsUpdateNeeded (WdsView.h)
 description: Esto devuelve TRUE si la consulta de vistas se ha modificado y necesita actualizarse.
 ms.assetid: 68ae1f68-0585-4bc5-bea4-eb55f3626093
 keywords:
-- Propiedades IsUpdateNeeded heredadas Windows environment
+- Características heredadas del entorno de Windows isUpdateNeeded
 - Propiedad IsUpdateNeeded Heredada de Windows environment , interfaz IResultsViewer
 - IResultsViewer interface Legacy Windows Environment Features , IsUpdateNeeded property
 topic_type:

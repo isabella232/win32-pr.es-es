@@ -65,11 +65,11 @@ Un entorno de Windows de 64 bits basado en Intel, como Windows 2000, Windows Ser
 
 </dt> <dd>
 
-Un entorno de Windows de 64 bits basado en American Micro Devices, como Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
+Un entorno de Windows de 64 bits basado en Micro Devices de Estados Unidos, como Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El modificador es funcionalmente el mismo que la opción MIDL /env y lo reconoce el compilador midl únicamente por compatibilidad con versiones anteriores con **/<system>** MkTypLib. [](-env.md) Si va a generar un nuevo archivo Make, use el **modificador /env.**
 
@@ -77,7 +77,7 @@ El modificador es funcionalmente el mismo que la opción MIDL /env y lo reconoce
 
 **midl /win32 filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

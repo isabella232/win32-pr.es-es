@@ -1,23 +1,23 @@
 ---
-title: IMAX (SM4-ASM)
-description: Entero de tipo de componente máximo.
+title: imax (sm4 - asm)
+description: Máximo entero por componente.
 ms.assetid: 005468AA-577E-441F-ACD5-37A691E62CDD
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc1bc6311573b1e7b39fbeaa93904203e7aae2ae
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 20da254802d32b936724e11cf947baf91c205a0d9f61754c2e142a1380166640
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104148985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672865"
 ---
-# <a name="imax-sm4---asm"></a>IMAX (SM4-ASM)
+# <a name="imax-sm4---asm"></a>imax (sm4 - asm)
 
-Entero de tipo de componente máximo.
+Máximo entero por componente.
 
 
 
-| IMAX dest \[ . Mask \] , \[  - \] src0 \[ . swizzle \] , \[ - \] SRC1 \[ . swizzle \] , |
+| imax dest \[ .mask \] , \[  - \] src0 \[ .swzzle, \] \[ - \] src1 \[ .sw swzzle \] , |
 |--------------------------------------------------------------------|
 
 
@@ -28,17 +28,17 @@ Entero de tipo de componente máximo.
 
 | Elemento                                                            | Descripción                                                                                             |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] el resultado de la operación.<br/> *dest*  =  *src0*  >  *SRC1* ? *src0* : *SRC1*<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el valor que se va a comparar con *SRC1*.<br/>                                                       |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] el valor que se va a comparar con *src0*.<br/>                                                       |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] El resultado de la operación.<br/> *dest*  =  *src0*  >  *src1* ? *src0:* *src1*<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El valor que se va a comparar con *src1.*<br/>                                                       |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] El valor que se va a comparar con *src0.*<br/>                                                       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El modificador opcional Negate en los operandos de origen toma el complemento de 2 antes de realizar la operación.
+El modificador negate opcional en operandos de origen toma el complemento de 2 antes de realizar la operación.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -52,7 +52,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -60,12 +60,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -75,7 +75,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

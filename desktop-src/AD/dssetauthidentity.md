@@ -1,6 +1,6 @@
 ---
 title: Función DsSetAuthIdentity (Ntdsbcli.h)
-description: Establece el contexto de seguridad bajo el que se llama a las API de copia de seguridad de directorios.
+description: Establece el contexto de seguridad en el que se llama a las API de copia de seguridad de directorios.
 ms.assetid: bfa2f847-6fe3-4f9b-bafa-acf6a7c861d9
 ms.tgt_platform: multiple
 keywords:
@@ -72,7 +72,7 @@ Cadena terminada en NULL que especifica la contraseña del usuario en el dominio
 
 Si se realiza correctamente, devuelve un **código HRESULT** estándar; De lo contrario, se devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si **no se llama a DsSetAuthIdentity,** se supone el contexto de seguridad del proceso actual.
 
@@ -80,7 +80,7 @@ Si **no se llama a DsSetAuthIdentity,** se supone el contexto de seguridad del p
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -91,7 +91,7 @@ Si **no se llama a DsSetAuthIdentity,** se supone el contexto de seguridad del p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

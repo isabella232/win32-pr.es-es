@@ -6,23 +6,23 @@ keywords:
 - búfer de índice, crear
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38c4c99639748876a5f5fd84e546aaf299885c76
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d474114e5908a42a112dddd550e24c13e5e1d3bf2cec523d47dfe1d617ac0bf5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119505"
 ---
-# <a name="how-to-create-an-index-buffer"></a>Cómo: crear un búfer de índice
+# <a name="how-to-create-an-index-buffer"></a>Cómo: Crear un búfer de índice
 
-Los [búferes de índice](overviews-direct3d-11-resources-buffers-intro.md) contienen datos de índice. En este tema se muestra cómo inicializar un [búfer de índice](overviews-direct3d-11-resources-buffers-intro.md) como preparación para la representación.
+[Los búferes de índice](overviews-direct3d-11-resources-buffers-intro.md) contienen datos de índice. En este tema se muestra cómo inicializar un búfer [de índice](overviews-direct3d-11-resources-buffers-intro.md) como preparación para la representación.
 
 **Para inicializar un búfer de índice**
 
 1.  Cree un búfer que contenga la información del índice.
-2.  Cree una descripción de búfer rellenando una estructura [**\_ \_ DESC de búfer D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) . Pase la marca de búfer de D3D11 \_ BIND \_ index \_ al miembro **BindFlags** y pase el tamaño del búfer en bytes al miembro **ByteWidth** .
-3.  Cree una descripción de los datos de subrecurso rellenando una estructura de [**\_ \_ datos de subrecurso D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) . El miembro **pSysMem** debe apuntar directamente a los datos de índice creados en el paso uno.
-4.  Llame a [**ID3D11Device:: CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer) mientras pasa la estructura de [**\_ \_ DESC del búfer D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) , la estructura de [**\_ \_ datos del subrecurso D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) y la dirección de un puntero a la interfaz [**ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer) que se va a inicializar.
+2.  Cree una descripción del búfer rellenando una [**estructura \_ \_ DESC de búfer D3D11.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) Pase la marca BIND INDEX BUFFER de D3D11 al miembro BindFlags y pase el tamaño del búfer en bytes al \_ \_ miembro \_ **ByteWidth.** 
+3.  Cree una descripción de datos de subrecursos rellenando una [**estructura \_ SUBRESOURCE \_ DATA de D3D11.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) El **miembro pSysMem** debe apuntar directamente a los datos de índice creados en el paso uno.
+4.  Llame a [**ID3D11Device::CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer) mientras pasa la estructura [**D3D11 \_ BUFFER \_ DESC,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) la estructura [**D3D11 \_ SUBRESOURCE \_ DATA**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) y la dirección de un puntero a la interfaz [**ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer) que se inicializará.
 
 En el ejemplo de código siguiente se muestra cómo crear un búfer de índice. En este ejemplo se da por supuesto que
 
@@ -84,12 +84,12 @@ g_pd3dContext->IASetIndexBuffer( g_pIndexBuffer, DXGI_FORMAT_R32_UINT, 0 );
 [Búferes](overviews-direct3d-11-resources-buffers.md)
 </dt> <dt>
 
-[Cómo usar Direct3D 11](how-to-use-direct3d-11.md)
+[Uso de Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

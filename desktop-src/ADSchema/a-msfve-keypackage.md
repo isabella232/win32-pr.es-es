@@ -27,16 +27,16 @@ Contiene la clave de cifrado de BitLocker de un volumen protegida por la contras
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-FVE-KeyPackage                                     |
 | Ldap-Display-Name | msFVE-KeyPackage                                      |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1999                               |
 | System-Id-Guid    | 1fd55ea8-88a7-47dc-8129-0daa97186a54                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,14 +50,14 @@ Contiene la clave de cifrado de BitLocker de un volumen protegida por la contras
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Es de un solo valor       | True                                                                         |
-| Está indexado             | False                                                                        |
-| En el catálogo global      | False                                                                        |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | Verdadero                                                                         |
+| Está indexado             | Falso                                                                        |
+| En el catálogo global      | Falso                                                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
@@ -71,14 +71,14 @@ Contiene la clave de cifrado de BitLocker de un volumen protegida por la contras
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Es de un solo valor       | True                                                                         |
-| Está indexado             | False                                                                        |
-| En el catálogo global      | False                                                                        |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | Verdadero                                                                         |
+| Está indexado             | Falso                                                                        |
+| En el catálogo global      | Falso                                                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
@@ -92,14 +92,14 @@ Contiene la clave de cifrado de BitLocker de un volumen protegida por la contras
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Es de un solo valor       | True                                                                         |
-| Está indexado             | False                                                                        |
-| En el catálogo global      | False                                                                        |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | Verdadero                                                                         |
+| Está indexado             | Falso                                                                        |
+| En el catálogo global      | Falso                                                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentBackupNotAllowedYetException'
-title: Constructor de EsentBackupNotAllowedYetException
+description: 'Más información sobre: Constructor EsentBackupNotAllowedYetException'
+title: Constructor EsentBackupNotAllowedYetException
 TOCTitle: 'EsentBackupNotAllowedYetException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBackupNotAllowedYetException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentbackupnotallowedyetexception.esentbackupnotallowedyetexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eabb259bc8e5b51c872b64ad351718ab5cacb20c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0ff3762dd6052f09b9305a03ed2b9249ed6965a93d08c22584c5f0e1ada42e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119669640"
 ---
-# <a name="esentbackupnotallowedyetexception-constructor"></a>Constructor de EsentBackupNotAllowedYetException
+# <a name="esentbackupnotallowedyetexception-constructor"></a>Constructor EsentBackupNotAllowedYetException
 
 Inicializa una nueva instancia de la clase EsentBackupNotAllowedYetException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentBackupNotAllowedYetException()
 
 [Miembros de EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

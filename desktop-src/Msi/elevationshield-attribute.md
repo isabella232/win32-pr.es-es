@@ -25,7 +25,7 @@ Si no se establece este bit, el control de botón de inserción se crea con los 
 
 [Pulsador](pushbutton-control.md)
 
-## <a name="value"></a>Value
+## <a name="value"></a>Valor
 
 
 

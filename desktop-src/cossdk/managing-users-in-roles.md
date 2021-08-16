@@ -15,9 +15,9 @@ ms.locfileid: "118547675"
 
 La mayoría de las tareas de administración para configurar la seguridad de aplicaciones COM+ implican rellenar roles predefinidos con los usuarios, tanto al instalar aplicaciones como de forma continuada. Para obtener información introductoria sobre cómo funcionan estas características de seguridad, vea [Configuring Role-Based Security](configuring-role-based-security.md).
 
-En esta sección, se proporcionan instrucciones paso a paso para las siguientes tareas:
+En esta sección, se proporcionan instrucciones paso a paso para las tareas siguientes:
 
--   [Habilitación de Role-Based comprobación de autorización](enabling-role-based-authorization-checking.md)
+-   [Habilitación de Role-Based de autorización](enabling-role-based-authorization-checking.md)
 -   [Asignar una cuenta de usuario o un grupo a un rol](assigning-a-user-account-or-group-to-a-role.md)
 -   [Quitar una cuenta de usuario o un grupo de un rol](removing-a-user-account-or-group-from-a-role.md)
 -   [Mover una cuenta de usuario o un grupo a un rol diferente](moving-a-user-account-or-group-to-a-different-role.md)

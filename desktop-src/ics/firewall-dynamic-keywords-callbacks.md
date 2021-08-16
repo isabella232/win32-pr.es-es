@@ -2,7 +2,7 @@
 title: Devoluciones de llamada de palabras clave dinámicas de firewall
 description: Las palabras clave dinámicas del firewall contienen las siguientes devoluciones de llamada.
 keywords:
-- Palabras clave dinámicas del firewall, devoluciones de llamada
+- Palabras clave dinámicas de firewall, devoluciones de llamada
 ms.topic: article
 ms.date: 05/17/2021
 ms.localizationpriority: low

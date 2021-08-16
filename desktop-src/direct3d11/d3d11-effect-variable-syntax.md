@@ -15,22 +15,22 @@ ms.locfileid: "118538398"
 
 Una variable de efecto se declara con la sintaxis descrita en esta sección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 Sintaxis básica:
 
 *DataType* *VariableName* \[ *: Anotaciones SemanticName* = \]  <    >  \[ InitialValue \] ;
 
-Consulte [Sintaxis de variables (HLSL de DirectX) para obtener](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax) una sintaxis completa.
+Consulte [Sintaxis de variables (DirectX HLSL) para obtener](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax) una sintaxis completa.
 
 
 
 | Nombre         | Descripción                                                                                                                                                                                 |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DataType     | Cualquier [tipo básico](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)de [bloque](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type)de estado, sombreador o vista de acceso sin ordenar.                            |
+| DataType     | Cualquier [tipo básico](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)de [bloque](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type)de estado, sombreador o vista de acceso desordenado.                            |
 | VariableName | Cadena ASCII que identifica de forma única el nombre de la variable de efecto.                                                                                                                   |
 | SemanticName | Cadena ASCII que denota información adicional sobre cómo se debe usar una variable. Una semántica es una cadena ASCII que puede ser un valor del sistema predefinido o una cadena de usuario personalizado. |
-| anotaciones  | Uno o varios fragmentos de información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para obtener información sobre la [sintaxis, vea Annotation Syntax (Direct3D 11) (Sintaxis de anotación [Direct3D 11]).](d3d11-effect-annotation-syntax.md)     |
+| anotaciones  | Uno o varios fragmentos de información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para obtener sintaxis, vea [Sintaxis de anotación (Direct3D 11).](d3d11-effect-annotation-syntax.md)     |
 | InitialValue | Valor predeterminado de la variable.                                                                                                                                                          |
 
 

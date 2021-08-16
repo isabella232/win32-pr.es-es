@@ -1,9 +1,9 @@
 ---
-title: BUTTONGROUP. radio
+title: BUTTONGROUP.radio
 description: El atributo de radio especifica o recupera un valor que indica si BUTTONGROUP se compone de botones de radio.
 ms.assetid: f84479f8-af4f-4ca8-991e-1c2ab39d7110
 keywords:
-- BUTTONGROUP. radio Windows Media Player
+- ButtonGROUP.radio Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e1765a7756aedcebc2b7b030634d8598a5cd89e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 56a8a9f85a3dce5ef070519f436c28ec157f7aa467a9115bcd8e2ccefa6444f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997775"
 ---
-# <a name="buttongroupradio"></a>BUTTONGROUP. radio
+# <a name="buttongroupradio"></a>BUTTONGROUP.radio
 
-El atributo de **radio** especifica o recupera un valor que indica si **BUTTONGROUP** se compone de botones de radio.
+El **atributo de** radio especifica o recupera un valor que indica si **BUTTONGROUP** se compone de botones de radio.
 
 ``` syntax
         elementID.radio
@@ -29,38 +29,38 @@ El atributo de **radio** especifica o recupera un valor que indica si **BUTTONGR
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                                      |
+| Valor | Descripción                                      |
 |-------|--------------------------------------------------|
-| true  | **BUTTONGROUP** es el estilo de radio.              |
-| false | Predeterminada. **BUTTONGROUP** no es el estilo de radio. |
+| true  | **BUTTONGROUP es** un estilo de radio.              |
+| false | Predeterminada. **BUTTONGROUP no** es un estilo de radio. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor de **radio** está establecido en true, todos los elementos **BUTTONELEMENT** del **BUTTONGROUP** serán persistentes, pero solo un botón a la vez estará en estado desactivado.
+Si **radio** se establece en true, todos los elementos **BUTTONELEMENT** de **BUTTONGROUP** serán permanentes, pero solo un botón a la vez estará en estado de inactividad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**BUTTONELEMENT. adhesiva**](buttonelement-sticky.md)
+[**BUTTONELEMENT.sticky**](buttonelement-sticky.md)
 </dt> <dt>
 
 [**Elemento BUTTONGROUP**](buttongroup-element.md)

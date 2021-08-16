@@ -26,9 +26,9 @@ CertificateTemplate=User
 
 Esta configuración genera la siguiente salida de ejemplo. La configuración especifica el asunto, el tipo de solicitud (CMC) y la plantilla de certificado (usuario). La plantilla Usuario especifica que:
 
--   La solicitud debe usar el proveedor criptográfico base de Microsoft 1.0 o el proveedor criptográfico mejorado de Microsoft 1.0.
--   El nombre del sujeto debe crearse a partir de Active Directory.
--   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación de cliente.
+-   La solicitud debe usar el proveedor de servicios criptográficos base de Microsoft 1.0 o el proveedor de servicios criptográficos mejorado de Microsoft 1.0.
+-   El nombre del sujeto debe crearse a partir Active Directory.
+-   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), el correo electrónico seguro y la autenticación de cliente.
 
 ``` syntax
 0000: 30 82 04 df               ; SEQUENCE (4df Bytes)

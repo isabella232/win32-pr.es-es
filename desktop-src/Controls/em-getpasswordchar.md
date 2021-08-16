@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_GETPASSWORDCHAR (Winuser. h)
-description: Obtiene el carácter de la contraseña que muestra un control de edición cuando el usuario escribe texto. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+title: EM_GETPASSWORDCHAR mensaje (Winuser.h)
+description: Obtiene el carácter de contraseña que un control de edición muestra cuando el usuario escribe texto. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 ms.assetid: 874336f6-701b-466a-afa6-0cb3e787ba4c
 keywords:
-- EM_GETPASSWORDCHAR controles de mensajes de Windows
+- EM_GETPASSWORDCHAR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6285f002554e22c89896711d3d1d355a95c6bb7a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8c4e7ac576f18d0ab28fcf8c2288d2bee7966866a71180a81c34896c2396f56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831215"
 ---
-# <a name="em_getpasswordchar-message"></a>\_Mensaje GETPASSWORDCHAR em
+# <a name="em_getpasswordchar-message"></a>Mensaje \_ EM GETPASSWORDCHAR
 
-Obtiene el carácter de la contraseña que muestra un control de edición cuando el usuario escribe texto. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+Obtiene el carácter de contraseña que un control de edición muestra cuando el usuario escribe texto. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,46 +32,46 @@ Obtiene el carácter de la contraseña que muestra un control de edición cuando
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto especifica el carácter que se va a mostrar en lugar de los caracteres que escriba el usuario. Si el valor devuelto es **null**, no hay ningún carácter de contraseña y el control muestra los caracteres que escribe el usuario.
+El valor devuelto especifica el carácter que se va a mostrar en lugar de los caracteres que escriba el usuario. Si el valor devuelto es **NULL,** no hay ningún carácter de contraseña y el control muestra los caracteres especificados por el usuario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se crea un control de edición con el estilo de [**\_ contraseña de es**](edit-control-styles.md) , el carácter de contraseña predeterminado se establece en un asterisco ( \* ). Si se crea un control de edición sin el estilo de **\_ contraseña** es, no hay ningún carácter de contraseña. Para cambiar el carácter de contraseña, envíe el mensaje [**\_ SETPASSWORDCHAR em**](em-setpasswordchar.md) .
+Si se crea un control de edición con el estilo [**ES \_ PASSWORD,**](edit-control-styles.md) el carácter de contraseña predeterminado se establece en un asterisco ( \* ). Si se crea un control de edición sin el **estilo ES \_ PASSWORD,** no hay ningún carácter de contraseña. Para cambiar el carácter de contraseña, envíe el [**mensaje EM \_ SETPASSWORDCHAR.**](em-setpasswordchar.md)
 
-**Controles de edición:** Los controles de edición multilínea no admiten el estilo de contraseña ni los mensajes.
+**Editar controles:** Los controles de edición multilínea no admiten el estilo de contraseña ni los mensajes.
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 2,0 y versiones posteriores. Los controles de edición de línea única y multilínea admiten el estilo de contraseña y los mensajes. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 2.0 y versiones posteriores. Los controles de edición de línea única y multilínea admiten el estilo de contraseña y los mensajes. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_SETPASSWORDCHAR em**](em-setpasswordchar.md)
+[**EM \_ SETPASSWORDCHAR**](em-setpasswordchar.md)
 </dt> </dl>
 
  

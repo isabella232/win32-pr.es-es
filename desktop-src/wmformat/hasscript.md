@@ -29,7 +29,7 @@ g \_ wszWMHasScript
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WMT \_ TYPE \_ BOOL**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Comentarios
 

@@ -39,7 +39,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las referencias de función de código auxiliar se usan en escenarios de hospedaje para operaciones un solo sentido y dos.
 
@@ -49,7 +49,7 @@ Los valores válidos para este elemento son 1 (se incluyen referencias de funci�
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

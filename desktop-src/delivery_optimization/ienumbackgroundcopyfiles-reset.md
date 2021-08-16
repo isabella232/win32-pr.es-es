@@ -1,5 +1,5 @@
 ---
-title: Método Reset de IEnumBackgroundCopyFiles (Deliveryoptimization.h)
+title: Método de restablecimiento de IEnumBackgroundCopyFiles (Deliveryoptimization.h)
 description: 'Método IEnumBackgroundCopyFiles::Reset: restablece la secuencia de enumeración al principio.'
 ms.assetid: 6A303069-105C-4053-A8C5-2ECF60E789DE
 keywords:
@@ -49,7 +49,7 @@ Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** est
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
@@ -61,7 +61,7 @@ Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** est
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

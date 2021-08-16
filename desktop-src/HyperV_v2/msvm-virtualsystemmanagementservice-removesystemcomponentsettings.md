@@ -50,7 +50,7 @@ Matriz de [**Msvm \_ SystemComponentSettingData que**](msvm-systemcomponentsetti
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -94,9 +94,9 @@ Devuelve 0 o 4096 si se ejecuta correctamente; de lo contrario, devuelve un erro
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -104,7 +104,7 @@ Devuelve 0 o 4096 si se ejecuta correctamente; de lo contrario, devuelve un erro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

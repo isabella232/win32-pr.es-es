@@ -23,7 +23,7 @@ En las secciones siguientes se describen varias tareas de administración de equ
 
 Para obtener más información sobre cómo proporcionar datos a WMI, vea [Usar WMI](using-wmi.md), que hará referencia a temas sobre cómo escribir un [*proveedor*](gloss-p.md)WMI.
 
-Las operaciones que se muestran en los ejemplos de script pueden realizarse mediante aplicaciones en C++ o Visual Basic. Para obtener más información, vea [Creating a WMI Application Using C++ and](creating-a-wmi-application-using-c-.md) WMI [C++ Application Examples](wmi-c---application-examples.md).
+Las operaciones que se muestran en los ejemplos de script pueden realizarse mediante aplicaciones de C++ o Visual Basic. Para obtener más información, vea [Creating a WMI Application Using C++ and](creating-a-wmi-application-using-c-.md) WMI [C++ Application Examples](wmi-c---application-examples.md).
 
 En la tabla siguiente se enumeran las categorías de tareas.
 

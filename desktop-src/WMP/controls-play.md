@@ -1,11 +1,11 @@
 ---
-title: Controls. Play (método)
-description: El método play hace que el elemento multimedia actual empiece a reproducir o reanuda la reproducción de un elemento pausado.
+title: Método Controls.play
+description: El método de reproducción hace que el elemento multimedia actual empiece a reproducirse o reanuda la reproducción de un elemento en pausa.
 ms.assetid: 2218a13b-6294-45f5-bb6f-c5a1e433e0c6
 keywords:
-- método play Windows Media Player
-- método play Windows Media Player, clase Controls
-- Clase Controls Windows Media Player, método play
+- método play Reproductor de Windows Media
+- método play Reproductor de Windows Media , clase Controls
+- Controla la clase Reproductor de Windows Media método , play
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea66f3bc4cf01d194dc44bcdf7b7cc838e1f3799
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86ce3c1572515b320a62b1b3c76aac72e44101e21f3b0f89d7c3356046ea95f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997455"
 ---
-# <a name="controlsplay-method"></a>Controls. Play (método)
+# <a name="controlsplay-method"></a>Método Controls.play
 
-El método **Play** hace que el elemento multimedia actual empiece a reproducir o reanuda la reproducción de un elemento pausado.
+El **método de** reproducción hace que el elemento multimedia actual empiece a reproducirse o reanuda la reproducción de un elemento en pausa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,13 +44,13 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se llama a este método durante el reenvío rápido o el rebobinado, el valor de *Settings*. la **velocidad** se establece en 1,0.
+Si se llama a este método durante el reenvío rápido o la rebobinado, el valor de *Configuración*. **rate** se establece en 1,0.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento de botón HTML que utiliza **Play** para reproducir el elemento multimedia actual. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **play** para reproducir el elemento multimedia actual. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -72,18 +72,18 @@ En el ejemplo siguiente se crea un elemento de botón HTML que utiliza **Play** 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Controls (objeto)**](controls-object.md)
+[**Objeto Controls**](controls-object.md)
 </dt> </dl>
 
  

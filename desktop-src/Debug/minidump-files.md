@@ -1,5 +1,5 @@
 ---
-description: Las aplicaciones pueden generar archivos de minivolca en modo de usuario, que contienen un subconjunto útil de la información contenida en un archivo de volcado de memoria.
+description: Las aplicaciones pueden generar archivos de minivolcación en modo de usuario, que contienen un subconjunto útil de la información contenida en un archivo de volcado de memoria.
 ms.assetid: c5de86a4-6dab-4408-8093-66117eb4de10
 title: Archivos de minivolfón
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118406095"
 ---
 # <a name="minidump-files"></a>Archivos de minivolfón
 
-Las aplicaciones pueden generar archivos de minivolca en modo de usuario, que contienen un subconjunto útil de la información contenida en un archivo de volcado de memoria. Las aplicaciones pueden crear archivos de minivolfón de forma muy rápida y eficaz. Dado que los archivos de minivolquete son pequeños, se pueden enviar fácilmente a través de Internet al soporte técnico de la aplicación.
+Las aplicaciones pueden generar archivos de minivolcación en modo de usuario, que contienen un subconjunto útil de la información contenida en un archivo de volcado de memoria. Las aplicaciones pueden crear archivos de minivolfón de forma muy rápida y eficaz. Dado que los archivos de minivolquete son pequeños, se pueden enviar fácilmente a través de Internet al soporte técnico de la aplicación.
 
 Un archivo de minivolca no contiene tanta información como un archivo de volcado de memoria completo, pero contiene suficiente información para realizar operaciones de depuración básicas. Para leer un archivo de minivolumen, debe tener los archivos binarios y los archivos de símbolos disponibles para el depurador.
 

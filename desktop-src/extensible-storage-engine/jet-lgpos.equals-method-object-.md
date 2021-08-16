@@ -67,7 +67,7 @@ public override bool Equals(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

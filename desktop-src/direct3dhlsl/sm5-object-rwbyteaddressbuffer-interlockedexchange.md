@@ -56,7 +56,7 @@ Valor de entrada.
 
 </dd> <dt>
 
-*valor \_ original de* \[ salida\]
+*valor \_ de salida* \[ original\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
@@ -71,7 +71,7 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta operación solo se puede realizar en recursos escalares y variables de memoria compartida. Hay tres usos posibles para esta función. La primera es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza la operación en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza la operación en la ubicación de recursos a la que hace referencia dest. Por último, el tercer escenario es cuando R es un tipo de variable local. En este escenario, la función se reduce a la operación realizada mediante operaciones locales. Esta operación solo está disponible cuando R es legible y se puede escribir.
+Esta operación solo se puede realizar en recursos escalares y variables de memoria compartida. Hay tres usos posibles para esta función. La primera es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza la operación en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza la operación en la ubicación de recursos a la que hace referencia dest. Por último, el tercer escenario es cuando R es un tipo de variable local. En este escenario, la función se reduce a la operación realizada mediante operaciones locales. Esta operación solo está disponible cuando R es legible y grabable.
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

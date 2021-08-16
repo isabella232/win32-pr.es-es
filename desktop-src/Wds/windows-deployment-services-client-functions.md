@@ -1,5 +1,5 @@
 ---
-title: Windows Funciones de cliente de Servicios de implementación
+title: Windows Funciones de cliente de Deployment Services
 description: Las siguientes funciones se usan con la API de cliente Windows Deployment Services.
 ms.assetid: 4cedd8a8-7f46-4229-9d96-58965b751e43
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118566390"
 ---
-# <a name="windows-deployment-services-client-functions"></a>Windows Funciones de cliente de Servicios de implementación
+# <a name="windows-deployment-services-client-functions"></a>Windows Funciones de cliente de Deployment Services
 
 Las siguientes funciones se usan con la API de cliente Windows Deployment Services.
 
@@ -19,7 +19,7 @@ Las siguientes funciones se usan con la API de cliente Windows Deployment Servic
 
 | Función                                                                                 | Descripción                                                                                                                            |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| [*PFN \_ WdsCliCallback*](/windows/desktop/api/WdsClientAPI/nc-wdsclientapi-pfn_wdsclicallback)                                          | Notificación de progreso y mensajes de error durante la transferencia de archivos o imágenes.                                                              |
+| [*PFN \_ WdsCliCallback*](/windows/desktop/api/WdsClientAPI/nc-wdsclientapi-pfn_wdsclicallback)                                          | Notificación de progreso y mensajes de error durante una transferencia de archivos o imágenes.                                                              |
 | [*PFN \_ WdsCliTraceFunction*](/windows/desktop/api/WdsClientAPI/nc-wdsclientapi-pfn_wdsclitracefunction)                                | Recibe mensajes de depuración del cliente WDS.                                                                                       |
 | [**WdsCliAuthorizeSession**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscliauthorizesession)                                 | Convierte una sesión anónima en una sesión autenticada.                                                                           |
 | [**WdsCliCancelTransfer**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdsclicanceltransfer)                                     | Cancela una operación de transferencia de WDS.                                                                                                      |
@@ -29,10 +29,10 @@ Las siguientes funciones se usan con la API de cliente Windows Deployment Servic
 | [**WdsCliFindNextImage**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdsclifindnextimage)                                       | Avanza la referencia de un identificador de buscar a la siguiente imagen almacenada en un servidor WDS.                                                      |
 | [**WdsCliFreeStringArray**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdsclifreestringarray)                                   | Libera la matriz de valores de cadena que la [**función WdsCliObtainDriverPackages**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscliobtaindriverpackages) asigna. |
 | [**WdsCliGetEnumerationFlags**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetenumerationflags)                           | Devuelve la marca de enumeración de imágenes para el identificador de imagen actual.                                                                       |
-| [**WdsCliGetImageArchitecture**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagearchitecture)                         | Devuelve la arquitectura del procesador de la imagen actual.                                                                              |
+| [**WdsCliGetImageArchitecture**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagearchitecture)                         | Devuelve la arquitectura del procesador para la imagen actual.                                                                              |
 | [**WdsCliGetImageDescription**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagedescription)                           | Devuelve la descripción de la imagen actual.                                                                                          |
 | [**WdsCliGetImageGroup**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagegroup)                                       | Devuelve el nombre del grupo de imágenes de la imagen actual.                                                                                    |
-| [**WdsCliGetImageHalName**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagehalname)                                   | Devuelve el nombre de la capa de abstracción de hardware (HAS) de la imagen actual.                                                               |
+| [**WdsCliGetImageHalName**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagehalname)                                   | Devuelve el nombre de capa de abstracción de hardware (SES) de la imagen actual.                                                               |
 | [**WdsCliGetImageHandleFromFindHandle**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagehandlefromfindhandle)         | Devuelve un identificador de imagen para la imagen actual.                                                                                         |
 | [**WdsCliGetImageHandleFromTransferHandle**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagehandlefromtransferhandle) | Devuelve un identificador de imagen de un identificador de transferencia completado.                                                                              |
 | [**WdsCliGetImageIndex**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimageindex)                                       | Devuelve el índice de imagen de la imagen actual.                                                                                         |
@@ -45,9 +45,9 @@ Las siguientes funciones se usan con la API de cliente Windows Deployment Servic
 | [**WdsCliGetImageSize**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagesize)                                         | Devuelve el tamaño de la imagen actual.                                                                                                 |
 | [**WdsCliGetImageVersion**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimageversion)                                   | Devuelve la versión de la imagen actual.                                                                                              |
 | [**WdsCliGetTransferSize**](/windows/desktop/api/WdsClientApi/nf-wdsclientapi-wdscligettransfersize)                                   | Devuelve el tamaño de la transferencia actual.                                                                                              |
-| [**WdsCliInitializeLog**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscliinitializelog)                                       | Inicializa el registro del cliente.                                                                                                    |
+| [**WdsCliInitializeLog**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscliinitializelog)                                       | Inicializa el registro para el cliente.                                                                                                    |
 | [**WdsCliLog**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdsclilog)                                                           | Envía un evento de registro al servidor WDS.                                                                                                   |
-| [**WdsCliObtainDriverPackages**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscliobtaindriverpackages)                         | Obtiene de una imagen de WDS, los paquetes de controladores (archivos INF) que se pueden usar en este equipo.                                           |
+| [**WdsCliObtainDriverPackages**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscliobtaindriverpackages)                         | Obtiene de una imagen wds, los paquetes de controladores (archivos INF) que se pueden usar en este equipo.                                           |
 | [**WdsCliRegisterTrace**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscliregistertrace)                                       | Registra una función de devolución de llamada que recibirá mensajes de depuración.                                                                    |
 | [**WdsCliTransferFile**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdsclitransferfile)                                         | Transfiere un archivo desde un servidor WDS al cliente WDS mediante un protocolo de transferencia de multidifusión.                                              |
 | [**WdsCliTransferImage**](/windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdsclitransferimage)                                       | Transfiere una imagen desde un servidor WDS.                                                                                                  |

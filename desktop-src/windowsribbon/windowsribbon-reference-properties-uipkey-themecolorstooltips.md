@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118705954"
 ---
-# <a name="ui_pkey_themecolorstooltips"></a>UI \_ PKEY \_ ThemeColorsTooltips
+# <a name="ui_pkey_themecolorstooltips"></a>Tema \_ PKEY \_ de la interfaz de usuarioColorsTooltips
 
 Identifica la propiedad \_ PKEY \_ ThemeColorsTooltips de la interfaz de usuario.
 
@@ -25,9 +25,9 @@ propertyDescription
       type = VT_VECTOR | VT_LPWSTR
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La interfaz de usuario PKEY ThemeColorsTooltips se usa en una aplicación para consultar la información sobre herramientas de la muestra de color de \_ \_ un elemento [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
+Una \_ aplicación usa ui PKEY ThemeColorsTooltips para consultar la información sobre herramientas de la muestra de color de \_ [**dropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
 
 El valor de propiedad es una matriz de valores de cadena.
 
