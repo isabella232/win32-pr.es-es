@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase de tipo de evento para eventos de subprocesos listos. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de subproceso listos. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 861ab070-5536-4897-b523-9b09a7d59b3e
 title: Clase ReadyThread
 ms.topic: reference
@@ -17,18 +17,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e10029c0397c16a5a5eb30be6e3db64c0baec596
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b4b3d63b63e4deb9c48f9e117122f021e9d63791292e60da3cc919a6e4535e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069815"
 ---
 # <a name="readythread-class"></a>Clase ReadyThread
 
-Esta clase es la clase de tipo de evento para eventos de subprocesos listos.
+Esta clase es la clase de tipo de evento para los eventos de subproceso listos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,13 +46,13 @@ class ReadyThread : Thread_V2
 
 ## <a name="members"></a>Miembros
 
-La clase **ReadyThread** tiene estos tipos de miembros:
+La **clase ReadyThread** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **ReadyThread** tiene estas propiedades.
+La **clase ReadyThread** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,10 +65,10 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Valor por el que se va a ajustar la prioridad.
+Valor por el que se ajusta la prioridad.
 
 </dd> <dt>
 
@@ -81,18 +81,18 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
-Motivo del aumento de prioridad.
+El motivo del aumento de prioridad.
 
 
 
-| Value                                                                        | Significado                                                                                                                 |
+| Valor                                                                        | Significado                                                                                                                 |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | Omitir el incremento.<br/>                                                                                        |
-| <dl> <dt>1</dt> </dl> | Aplique el incremento, que se detendrá de forma incremental al final de cada Quantum.<br/>                              |
-| <dl> <dt>2</dt> </dl> | Aplique el incremento como aumento que determinará en su totalidad en cuanto a Quantum (normalmente para donaciones prioritarias).<br/> |
+| <dl> <dt>1</dt> </dl> | Aplique el incremento, que se desintegrará incrementalmente al final de cada cuántico.<br/>                              |
+| <dl> <dt>2</dt> </dl> | Aplique el incremento como un aumento que decaerá en su totalidad en lo cuántico (normalmente para la prioridad de la prioridad).<br/> |
 
 
 
@@ -109,28 +109,28 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
-A continuación se indican las posibles marcas de estado:
+Estas son las posibles marcas de estado:
 
 
 
-| Value                                                                          | Significado                                                                    |
+| Valor                                                                          | Significado                                                                    |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <dl> <dt>0x1</dt> </dl> | El subproceso se ha prepararon de DPC (llamada a procedimiento diferida).<br/> |
-| <dl> <dt>0X2</dt> </dl> | La pila de kernel está intercambiada actualmente.<br/>                      |
-| <dl> <dt>0x4</dt> </dl> | El espacio de direcciones de proceso se intercambia.<br/>                       |
+| <dl> <dt>0x1</dt> </dl> | El subproceso se ha leído de DPC (llamada a procedimiento diferido).<br/> |
+| <dl> <dt>0x2</dt> </dl> | La pila de kernel se intercambia actualmente.<br/>                      |
+| <dl> <dt>0x4</dt> </dl> | El espacio de direcciones del proceso se intercambia.<br/>                       |
 
 
 
  
 
-Tenga en cuenta que cuando se intercambia la pila de kernel o el espacio de direcciones de proceso, habrá un evento ReadyThread adicional después de que la pila de kernel o el espacio de direcciones de proceso se haya cambiado de nuevo en y el subproceso esté listo para enviarse.
+Tenga en cuenta que cuando se intercambia la pila del kernel o el espacio de direcciones del proceso, habrá un evento ReadyThread adicional después de que la pila del kernel o el espacio de direcciones del proceso se hayan intercambiado de nuevo y el subproceso esté listo para enviarse.
 
 </dd> <dt>
 
-Reservado
+Reservada
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **sint8**
@@ -139,7 +139,7 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5)
+Calificadores: WmiDataId(5)
 </dt> </dl>
 
 Reservado.
@@ -149,16 +149,16 @@ Reservado.
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), Format ("x")
+Calificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Identificador del subproceso del subproceso que se va prepararon para su ejecución.
+Identificador de subproceso del subproceso que se lee para su ejecución.
 
 </dd> </dl>
 
@@ -166,14 +166,14 @@ Identificador del subproceso del subproceso que se va prepararon para su ejecuci
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

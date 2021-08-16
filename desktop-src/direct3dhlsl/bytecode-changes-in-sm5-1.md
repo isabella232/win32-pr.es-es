@@ -15,7 +15,7 @@ ms.locfileid: "118794563"
 
 SM5.1 cambia la forma en que se declaran los registros de recursos y se hace referencia a ellos en las instrucciones.
 
-SM5.1 avanza hacia la declaración de un registro "variable", de forma similar a como se hace para los registros de memoria compartida de grupo, como se muestra en el ejemplo siguiente:
+SM5.1 avanza hacia la declaración de una "variable" de registro, similar a cómo se hace para los registros de memoria compartida de grupo, como se muestra en el ejemplo siguiente:
 
 ``` syntax
 Texture2D<float4> tex0          : register(t5,  space0);
@@ -33,7 +33,7 @@ float4 main(float4 coord : COORD) : SV_TARGET
 }
 ```
 
-A continuación se muestra el desensamblado de este ejemplo:
+El desensamblado de este ejemplo es el siguiente:
 
 ``` syntax
 // Resource Bindings:
@@ -84,7 +84,7 @@ ret
 // Approximately 12 instruction slots used
 ```
 
-Ahora, cada intervalo de recursos del sombreador tiene un identificador (un nombre) en el código de bytes del sombreador. Por ejemplo, la matriz de texturas de texas1 se convierte en "t1" en el código de bytes del sombreador. La asignación de identificadores únicos a cada intervalo de recursos permite dos cosas:
+Ahora, cada intervalo de recursos del sombreador tiene un identificador (un nombre) en el código de bytes del sombreador. Por ejemplo, la matriz de texturas tex1 se convierte en "t1" en el código de bytes del sombreador. La asignación de identificadores únicos a cada intervalo de recursos permite dos cosas:
 
 -   Identifique de forma inequívoca qué intervalo de recursos (consulte dcl resource texture2d) que se indexa en una instrucción \_ \_ (consulte la instrucción de ejemplo).
 -   Adjunte un conjunto de atributos a la declaración, por ejemplo, tipo de elemento, tamaño de paso, modo de operación de trama, etc.
@@ -93,13 +93,13 @@ Tenga en cuenta que el identificador del intervalo no está relacionado con la d
 
 El orden de los enlaces de recursos de reflexión y las instrucciones de declaración del sombreador es el mismo para ayudar a identificar la correspondencia entre variables HLSL e identificadores de código de bytes.
 
-Cada instrucción de declaración de SM5.1 usa un operando 3D para definir: id. de intervalo, límites inferior y superior. Se emite un token adicional para especificar el espacio de registro. También se pueden emitir otros tokens para transmitir propiedades adicionales del intervalo, por ejemplo, la instrucción de declaración de búfer estructurado o de cbuffer emite el tamaño del cbuffer o la estructura. Los detalles exactos de la codificación se pueden encontrar en d3d12TokenizedProgramFormat.h y D3D10ShaderBinary::CShaderCodeParser.
+Cada instrucción de declaración de SM5.1 usa un operando 3D para definir: id. de intervalo, límites inferiores y superiores. Se emite un token adicional para especificar el espacio de registro. También se pueden emitir otros tokens para transmitir propiedades adicionales del intervalo, por ejemplo, la instrucción de declaración de búfer estructurado o de cbuffer emite el tamaño del cbuffer o la estructura. Los detalles exactos de la codificación se pueden encontrar en d3d12TokenizedProgramFormat.h y D3D10ShaderBinary::CShaderCodeParser.
 
 Las instrucciones SM5.1 no emitirán información adicional sobre operandos de recursos como parte de la instrucción (como en SM5.0). Esta información se mueve ahora a las instrucciones de declaración. En SM5.0, las instrucciones de indexación de recursos requerían que los atributos de recursos se describieron en tokens de código de operación extendidos, ya que la indexación ofuscaba la asociación a la declaración. En SM5.1, cada identificador (como "t1") está asociado inequívocamente a una única declaración que describe la información de recursos necesaria. Por lo tanto, ya no se emiten los tokens de código de operación extendidos que se usan en las instrucciones para describir la información de recursos.
 
-En las instrucciones que no son de declaración, un operando de recurso para muestreadores, SRV y UAV es un operando 2D. El primer índice es una constante literal que especifica el identificador de intervalo. El segundo índice representa el valor lineal del índice. El valor se calcula con respecto al principio del espacio de registro correspondiente (no relativo al principio del intervalo lógico) para correlacionar mejor con la firma raíz y reducir la carga del compilador del controlador de ajustar el índice.
+En las instrucciones que no son de declaración, un operando de recurso para muestreadores, SRV y UAV es un operando 2D. El primer índice es una constante literal que especifica el identificador de intervalo. El segundo índice representa el valor linealizado del índice. El valor se calcula con respecto al principio del espacio de registro correspondiente (no relativo al principio del intervalo lógico) para correlacionar mejor con la firma raíz y reducir la carga del compilador del controlador de ajustar el índice.
 
-Un operando de recurso para CBV es un operando 3D: identificador literal del intervalo, índice del cbuffer, desplazamiento en la instancia concreta de cbuffer.
+Un operando de recurso para CBV es un operando 3D: identificador literal del intervalo, índice del búfer de búfer, desplazamiento en la instancia concreta de cbuffer.
 
 ## <a name="related-topics"></a>Temas relacionados
 

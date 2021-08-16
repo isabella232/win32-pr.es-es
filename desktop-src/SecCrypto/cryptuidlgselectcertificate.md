@@ -53,9 +53,9 @@ Si el **miembro dwFlags** de la estructura [**CRYPTUI \_ SELECTCERTIFICATE \_ ST
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows aplicaciones \[ de escritorio XP\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows solo aplicaciones \[ de escritorio XP\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                              |
 | Finalización del soporte técnico<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                       |
 | Biblioteca<br/>                  | <dl> <dt>Cryptui.lib</dt> </dl>            |

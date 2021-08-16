@@ -1,9 +1,9 @@
 ---
 title: función abort (Corecrt \_ terminate.h)
-description: Envía un mensaje de error a la cola de información y finaliza la llamada a draw o dispatch actual que se está ejecutando.
+description: Envía un mensaje de error a la cola de información y finaliza la llamada a draw o dispatch actual que se ejecuta.
 ms.assetid: b8ce153b-0d1c-4294-b88e-b7e50e708ab9
 keywords:
-- función abort HLSL
+- abort function HLSL
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118795529"
 ---
 # <a name="abort-function"></a>abort (función)
 
-Envía un mensaje de error a la cola de información y finaliza la llamada a draw o dispatch actual que se está ejecutando.
+Envía un mensaje de error a la cola de información y finaliza la llamada a draw o dispatch actual que se ejecuta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ Ninguno
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta operación no hace nada en los rasterizadores que no la admiten.
 
@@ -60,7 +60,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                        | Compatible |
 |---------------------------------------------------------------------|-----------|
-| [Shader Model 4 (DirectX HLSL) o posterior.](dx-graphics-hlsl-sm3.md) | sí       |
+| [Shader Model 4 (DirectX HLSL) o posterior.](dx-graphics-hlsl-sm3.md) | Sí       |
 
 
 
@@ -76,7 +76,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

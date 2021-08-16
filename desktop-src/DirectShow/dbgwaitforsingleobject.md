@@ -1,7 +1,7 @@
 ---
 description: Espera a que se señale un objeto.
 ms.assetid: 5fbcccd9-9db7-4834-852a-86f28218e92e
-title: Función DbgWaitForSingleObject (Wxdebug. h)
+title: Función DbgWaitForSingleObject (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 99d0058a60b5cf5b362adb80855a788d9a597af6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5e8180c905cdb7d8d1024f22a85984c17c0e12e18971499d29ed1479a79498f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749355"
 ---
-# <a name="dbgwaitforsingleobject-function"></a>DbgWaitForSingleObject función)
+# <a name="dbgwaitforsingleobject-function"></a>Función DbgWaitForSingleObject
 
 Espera a que se señale un objeto.
 
-En una compilación de depuración, esta función desencadena una aserción si el intervalo de tiempo de espera expira antes de que se Señalice el objeto. Para establecer el intervalo de tiempo de espera, llame a la función [**DbgSetWaitTimeout**](dbgsetwaittimeout.md) .
+En una compilación de depuración, esta función desencadena una aserción si el intervalo de tiempo de espera expira antes de que se señale el objeto. Para establecer el intervalo de tiempo de espera, llame a la [**función DbgSetWaitTimeout.**](dbgsetwaittimeout.md)
 
-En una compilación comercial, esta función es equivalente a la función **WaitForSingleObject** con un intervalo de tiempo de espera infinito.
+En una compilación comercial, esta función es equivalente a la **función WaitForSingleObject** con un intervalo de tiempo de espera infinito.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,12 +59,12 @@ Identificador del objeto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

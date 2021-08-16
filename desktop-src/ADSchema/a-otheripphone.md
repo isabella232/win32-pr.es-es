@@ -1,11 +1,11 @@
 ---
-title: Teléfono-IP-otro atributo
-description: La lista de direcciones TCP/IP alternativas para el teléfono. Utilizado por telefonía.
+title: Teléfono-Ip-Other
+description: Lista de direcciones TCP/IP alternativas para el teléfono. Usado por La telefonía.
 ms.assetid: 3689c561-6dc1-4d73-adec-01c4ebdb5e47
 ms.tgt_platform: multiple
 keywords:
-- Teléfono-IP-otro esquema de AD de atributos
-- otherIpPhone esquema de AD de atributos
+- Teléfono-Ip-Otro esquema de AD de atributo
+- otherIpPhone attribute AD Schema (Esquema de AD del atributo otherIpPhone)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7955b4fb80d46c19e5536517b53eb419e6de9ec6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c0457389ccdec37549ab4ccd1f36019b30a39f796e483b2950174b65d0b3a927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924035"
 ---
-# <a name="phone-ip-other-attribute"></a>Teléfono-IP-otro atributo
+# <a name="phone-ip-other-attribute"></a>Teléfono-Ip-Other
 
-La lista de direcciones TCP/IP alternativas para el teléfono. Utilizado por telefonía.
+Lista de direcciones TCP/IP alternativas para el teléfono. Usado por La telefonía.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Teléfono-IP-otro                                                                   |
-| Nombre para mostrar de LDAP | otherIpPhone                                                                     |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                           |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar el número de teléfono. |
+| CN                | Teléfono-Ip-Other                                                                   |
+| Ldap-Display-Name | otherIpPhone                                                                     |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.                                           |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y siempre que sea necesario cambiar el número de teléfono. |
 | Attribute-Id      | 1.2.840.113556.1.4.722                                                           |
-| System-ID-GUID    | 4d146e4b-48d4-11d1-a9c3-0000f80367c1                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 4d146e4b-48d4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -53,15 +53,15 @@ La lista de direcciones TCP/IP alternativas para el teléfono. Utilizado por tel
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -74,15 +74,15 @@ La lista de direcciones TCP/IP alternativas para el teléfono. Utilizado por tel
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -95,15 +95,15 @@ La lista de direcciones TCP/IP alternativas para el teléfono. Utilizado por tel
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -116,15 +116,15 @@ La lista de direcciones TCP/IP alternativas para el teléfono. Utilizado por tel
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -137,15 +137,15 @@ La lista de direcciones TCP/IP alternativas para el teléfono. Utilizado por tel
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -158,15 +158,15 @@ La lista de direcciones TCP/IP alternativas para el teléfono. Utilizado por tel
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |

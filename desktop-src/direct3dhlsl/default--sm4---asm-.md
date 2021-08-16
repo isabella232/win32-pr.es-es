@@ -1,6 +1,6 @@
 ---
 title: default (sm4 - asm)
-description: Una etiqueta opcional en una instrucción switch.
+description: Etiqueta opcional en una instrucción switch.
 ms.assetid: DB10F654-4A98-4ED8-A3B4-CA9FE1DFE6CD
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118792685"
 ---
 # <a name="default-sm4---asm"></a>default (sm4 - asm)
 
-Una etiqueta opcional en una [instrucción switch.](switch--sm4---asm-.md)
+Etiqueta opcional en una [instrucción switch.](switch--sm4---asm-.md)
 
 
 
@@ -24,9 +24,9 @@ Una etiqueta opcional en una [instrucción switch.](switch--sm4---asm-.md)
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción funciona  igual que el valor predeterminado en C. La aplicación de acceso solo es válida si no hay código agregado, por lo que varios casos (incluido el **predeterminado)** pueden compartir el mismo bloque de código.
+Esta instrucción funciona  igual que el valor predeterminado en C. El paso a través solo es válido si no hay código agregado, por lo que varios casos (incluido el predeterminado **)** pueden compartir el mismo bloque de código.
 
 Solo se **permite una** instrucción predeterminada en una **construcción switch.**
 
@@ -50,12 +50,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -65,7 +65,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

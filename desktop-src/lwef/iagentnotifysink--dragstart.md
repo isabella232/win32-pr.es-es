@@ -4,16 +4,16 @@ description: IAgentNotifySink DragStart
 ms.assetid: b3905b99-69e4-4046-aab9-2322618935aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f33ae89f9e24c6c7b0ec69fba1a98b3a64a18620
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: a3510449923d4567d3126bf9cd84655acd782b021f9f37f655a51114122a4717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105221"
 ---
 # <a name="iagentnotifysinkdragstart"></a>IAgentNotifySink::D ragStart
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT DragStart(
@@ -50,8 +50,8 @@ Parámetro que indica el botón del mouse y el estado de la tecla modificadora. 
 | 0x0010 | Botón Central    |
 | 0x0002 | Botón derecho     |
 | 0x0004 | Mayús Key Down   |
-| 0x0008 | Tecla De control hacia abajo |
-| 0x0020 | Tecla Alt hacia abajo     |
+| 0x0008 | Control de la tecla Abajo |
+| 0x0020 | Alt tecla abajo     |
 
 
 
@@ -62,14 +62,14 @@ Parámetro que indica el botón del mouse y el estado de la tecla modificadora. 
 <span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordenada x del puntero del mouse en píxeles, con respecto al origen de la pantalla (parte superior izquierda).
+Coordenada x del puntero del mouse en píxeles, en relación con el origen de la pantalla (parte superior izquierda).
 
 </dd> <dt>
 
 <span id="y"></span><span id="Y"></span>*y*
 </dt> <dd>
 
-Coordenada y del puntero del mouse en píxeles, con respecto al origen de la pantalla (parte superior izquierda).
+Coordenada y del puntero del mouse en píxeles, en relación con el origen de la pantalla (parte superior izquierda).
 
 </dd> </dl>
 

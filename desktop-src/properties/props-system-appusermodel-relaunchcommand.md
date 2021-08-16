@@ -1,19 +1,19 @@
 ---
-description: Especifica un comando que se puede ejecutar a través de ShellExecute para iniciar una aplicación cuando está anclada a la barra de tareas o cuando se inicia una nueva instancia de la aplicación a través de la Jump List de la aplicación.
+description: Especifica un comando que se puede ejecutar a través de ShellExecute para iniciar una aplicación cuando se ancla a la barra de tareas o cuando se inicia una nueva instancia de la aplicación a través de la aplicación Lista de accesos directos.
 ms.assetid: 83aab060-0629-48e3-a2db-9ba96a8631e5
-title: System. AppUserModel. RelaunchCommand
+title: System.AppUserModel.RelaunchCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84049f605896ba5e99a98f33557e6ee4dea37df5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cc2ce3783aa9ab3d76124b8d62f9d9d9ad2e1f5d4b92622716df111456dbabd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554525"
 ---
-# <a name="systemappusermodelrelaunchcommand"></a>System. AppUserModel. RelaunchCommand
+# <a name="systemappusermodelrelaunchcommand"></a>System.AppUserModel.RelaunchCommand
 
-Especifica un comando que se puede ejecutar a través de [**ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) para iniciar una aplicación cuando está anclada a la barra de tareas o cuando se inicia una nueva instancia de la aplicación a través de la Jump List de la aplicación.
+Especifica un comando que se puede ejecutar a través de [**ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) para iniciar una aplicación cuando se ancla a la barra de tareas o cuando se inicia una nueva instancia de la aplicación a través de la aplicación Lista de accesos directos.
 
 Entre otros, se incluyen los siguientes ejemplos:
 
@@ -28,23 +28,23 @@ notepad.exe
 
 
 
-Esta propiedad solo se usa si una ventana tiene un identificador de modelo de usuario de aplicación explícito (AppUserModelID) ([System.AppUserModel.ID](./props-system-appusermodel-id.md), establecido a través de [**SHGetPropertyStoreForWindow**](/windows/desktop/api/Shellapi/nf-shellapi-shgetpropertystoreforwindow)). Si la ventana no tiene un AppUserModelID explícito, esta propiedad se omite y la ventana se agrupa y se ancla como si formara parte del proceso que la posee. Para obtener más información sobre la aplicación de AppUserModelIDs explícitos y su efecto en el anclaje de la barra de tareas, vea [identificadores de modelo de usuario de la aplicación (AppUserModelIDs)](../shell/appids.md).
+Esta propiedad solo se usa si una ventana tiene un identificador de modelo de usuario de aplicación explícito (AppUserModelID) ([System.AppUserModel.ID](./props-system-appusermodel-id.md), establecido a través de [**SHGetPropertyStoreForWindow**](/windows/desktop/api/Shellapi/nf-shellapi-shgetpropertystoreforwindow)). Si la ventana no tiene un AppUserModelID explícito, esta propiedad se omite y la ventana se agrupa y ancla como si formara parte del proceso que la posee. Para obtener más información sobre la aplicación de appUserModelID explícitos y su efecto en la anclación de la barra de tareas, vea Application [User Model IDs (AppUserModelIDs)](../shell/appids.md)( Id. de modelo de usuario de aplicación [AppUserModelID]).
 
-Esta propiedad está pensada para ser utilizada por aplicaciones o ventanas que deseen proporcionar información de reinicio no predeterminada.
+Esta propiedad está pensada para que la utilicen las aplicaciones o ventanas que desean proporcionar información de reinició no predeterminada.
 
 > [!Note]  
-> [System. AppUserModel. RelaunchCommand]() y [System. AppUserModel. RelaunchDisplayNameResource](./props-system-appusermodel-relaunchdisplaynameresource.md) siempre se deben establecer juntos. Si no se establece una de esas propiedades, no se utiliza ninguna.
+> [System.AppUserModel.RelaunchCommand]() y [System.AppUserModel.RelaunchDisplayNameResource](./props-system-appusermodel-relaunchdisplaynameresource.md) siempre deben establecerse juntos. Si no se establece ninguna de esas propiedades, no se usa ninguna.
 
  
 
-Esta propiedad, junto con [System. AppUserModel. RelaunchDisplayNameResource](./props-system-appusermodel-relaunchdisplaynameresource.md) y [System. AppUserModel. RelaunchIconResource](./props-system-appusermodel-relaunchiconresource.md) se puede usar para definir visualmente una ventana como una aplicación para el usuario. Esto resulta útil para escenarios de aplicaciones host, donde una sola instancia de host ejecuta varias aplicaciones secundarias. Por ejemplo, una máquina virtual que hospede varias aplicaciones virtualizadas podría querer que esas aplicaciones virtualizadas aparezcan como aplicaciones individuales para el usuario. La máquina virtual podría etiquetar cada ventana con un AppUserModelID explícito y las propiedades de reinicio adecuadas para que aparezcan como aplicaciones. Después, el usuario podría anclarlos a la barra de tareas y "volver a iniciar" la instancia anclada.
+Esta propiedad, junto con [System.AppUserModel.RelaunchDisplayNameResource](./props-system-appusermodel-relaunchdisplaynameresource.md) y [System.AppUserModel.RelaunchIconResource,](./props-system-appusermodel-relaunchiconresource.md) se puede usar para definir visualmente una ventana como una aplicación para el usuario. Esto es útil para escenarios de aplicación host, donde una única instancia de host ejecuta varias aplicaciones secundarias. Por ejemplo, una máquina virtual que hospeda varias aplicaciones virtualizadas podría querer que esas aplicaciones virtualizadas aparezcan como aplicaciones individuales para el usuario. La máquina virtual podría etiquetar cada ventana con un AppUserModelID explícito y las propiedades de reinició adecuadas para que aparezcan como aplicaciones. A continuación, el usuario podría anclarlos a la barra de tareas y "volver a iniciar" la instancia anclada.
 
 > [!Note]  
-> Esta propiedad se omite si se establece [System. AppUserModel. PreventPinning](./props-system-appusermodel-preventpinning.md) . Esto permite que una aplicación controle la agrupación de sus ventanas asignándoles explícitamente AppUserModelIDs, pero evitando que esas ventanas se anclen.
+> Esta propiedad se omite si [se establece System.AppUserModel.PreventPinning.](./props-system-appusermodel-preventpinning.md) Esto permite que una aplicación controle la agrupación de sus ventanas asignándolos appUserModelID explícitos, pero evitando que esas ventanas se anclaran.
 
  
 
-Para establecer esta propiedad en una ventana, use [**SHGetPropertyStoreForWindow**](/windows/desktop/api/Shellapi/nf-shellapi-shgetpropertystoreforwindow) para recuperar el almacén de propiedades de la ventana y use los métodos de ese objeto [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) recuperado para establecer la propiedad [System. AppUserModel. RelaunchCommand]() de esa ventana.
+Para establecer esta propiedad en una ventana, use [**SHGetPropertyStoreForWindow**](/windows/desktop/api/Shellapi/nf-shellapi-shgetpropertystoreforwindow) para recuperar el almacén de propiedades de la ventana y use los métodos de ese objeto [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) recuperado para establecer la propiedad [System.AppUserModel.RelaunchCommand]() de esa ventana.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -62,15 +62,15 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Identificadores de modelo de usuario de la aplicación (AppUserModelIDs)](../shell/appids.md)
+[Id. de modelo de usuario de aplicación (AppUserModelID)](../shell/appids.md)
 </dt> <dt>
 
 [System.AppUserModel.ID](./props-system-appusermodel-id.md)
@@ -88,7 +88,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -103,7 +103,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -130,7 +130,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> <dt>
 
 [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md)

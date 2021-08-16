@@ -1,11 +1,11 @@
 ---
-title: Propiedad GetMuteOperation. Completed
+title: GetMuteOperation.Completed, propiedad
 description: Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por GetMuteAsync.
 ms.assetid: B8E1DE71-46AC-4F6A-B873-AE3239BE492C
 keywords:
-- Propiedad completada API de streaming de multimedia
-- Propiedad completada API de streaming multimedia, interfaz GetMuteOperation
-- Interfaz GetMuteOperation API de streaming de multimedia, propiedad Completed
+- Propiedad completada Media Streaming API
+- Propiedad completada Media Streaming API, interfaz GetMuteOperation
+- Interfaz GetMuteOperation Media Streaming API, propiedad Completed
 topic_type:
 - apiref
 api_name:
@@ -15,29 +15,29 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 40c360dc3597d8cf04d1a8c505e479a38136f592
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bb27715f284b96af4ba9e6cf8ff825a7237ba027d46d30d77859018d4d8b5574
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103791085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100679"
 ---
-# <a name="getmuteoperationcompleted-property"></a>Propiedad GetMuteOperation. Completed
+# <a name="getmuteoperationcompleted-property"></a>GetMuteOperation.Completed, propiedad
 
-Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetMuteAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getmuteasync) .
+Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetMuteAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getmuteasync)
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
 HRESULT put_Completed(
-  [in]  GetMuteCompletedHandler *value
+  [in]  GetMuteCompletedHandler *value
 );
 
 HRESULT get_Completed(
-  [out] GetMuteCompletedHandler **value
+  [out] GetMuteCompletedHandler **value
 );
 ```
 
@@ -47,13 +47,13 @@ HRESULT get_Completed(
 
 Controlador de eventos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**GetMuteOperation**](getmuteoperation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

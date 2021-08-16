@@ -21,7 +21,7 @@ Incluir miembros heredados
 
 Clase base para JET_err. Excepciones databaseIncompleteUpgrade.
 
-El [tipo EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-class.md) expone los miembros siguientes.
+El [tipo EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-class.md) expone los siguientes miembros.
 
 ## <a name="constructors"></a>Constructores
 

@@ -1,46 +1,46 @@
 ---
-title: Administrar archivos y datos
-description: Los usuarios tienen un acceso más sencillo a los archivos y datos en Windows 7.
+title: Administración de archivos y datos
+description: Los usuarios tienen un acceso más sencillo a los archivos y los datos Windows 7.
 ms.assetid: 44756220-1cd0-4c7e-a49e-5786a6220f8f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5617d7746746186933bce022aa2202175fb994e0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6d9091a2d9bb2cf01d4f9b514c55e78f2f989f01d6d64a929608e14c32bfd395
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086671"
 ---
-# <a name="managing-files-and-data"></a>Administrar archivos y datos
+# <a name="managing-files-and-data"></a>Administración de archivos y datos
 
-Los usuarios tienen un acceso más sencillo a los archivos y datos en Windows 7. Las nuevas API hacen que los archivos y las vistas sean más informativos, lo que permite a las aplicaciones ofrecer información relevante e distintiva al explorador de Windows. Además, las aplicaciones se benefician del nuevo modelo de *bibliotecas* , una noción útil y más abstracta del espacio de almacenamiento de usuario que las carpetas, y también pueden participar en bibliotecas comunes de tipos de archivo similares compartidos por aplicaciones diferentes.
+Los usuarios tienen un acceso más sencillo a los archivos y los datos Windows 7. Las nuevas API hacen que los archivos y vistas sean más informativos, lo que permite que las aplicaciones proporcionen información relevante y distintiva a Windows Explorer. Además, las aplicaciones se benefician del nuevo modelo *de bibliotecas,* una noción útil y más abstracta de espacio de almacenamiento de usuario que las carpetas, y también pueden participar en bibliotecas comunes de tipos de archivo similares que comparten distintas aplicaciones.
 
 ## <a name="libraries"></a>Bibliotecas
 
-Windows 7 presenta el concepto de *bibliotecas* como destinos en los que los desarrolladores y los usuarios finales pueden buscar y organizar sus datos como colecciones de elementos que pueden abarcar varias ubicaciones en el equipo local, así como en equipos remotos.
+Windows 7 presenta el concepto de bibliotecas como *destinos* donde los desarrolladores y usuarios finales pueden buscar y organizar sus datos como colecciones de elementos que pueden abarcar varias ubicaciones en el equipo local, así como en equipos remotos.
 
-Las API de *biblioteca* proporcionan a los desarrolladores una forma sencilla de crear aplicaciones que crean, interactúan con las bibliotecas y admiten *bibliotecas* como elementos de primera clase dentro de las aplicaciones. Las *bibliotecas* también se pueden seleccionar mediante el cuadro de diálogo Selector de carpetas. Las aplicaciones pueden enumerar ámbitos de biblioteca relevantes o pueden utilizar la biblioteca directamente como una carpeta. (Consulte [bibliotecas de Windows](/previous-versions/windows/desktop/legacy/dd758096(v=vs.85)) y [bibliotecas de Windows 7: recursos para desarrolladores](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/dataaccess)).
+Las *API* de biblioteca proporcionan una manera sencilla para que los desarrolladores creen aplicaciones que creen, interactúen con las *bibliotecas* y las admitan como elementos de primera clase dentro de las aplicaciones. *Las bibliotecas* también se pueden seleccionar mediante el cuadro de diálogo selector de carpetas. Las aplicaciones pueden enumerar los ámbitos de biblioteca pertinentes o pueden usar la biblioteca directamente como una carpeta. (Consulte [Bibliotecas Windows y bibliotecas](/previous-versions/windows/desktop/legacy/dd758096(v=vs.85)) [Windows 7: Recursos para desarrolladores](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/dataaccess)).
 
 ![Biblioteca de imágenes de Windows 7](images/windows7-10.jpg)
 
-La *biblioteca de imágenes* muestra las imágenes independientemente de dónde estén almacenadas
+*La biblioteca de* imágenes muestra las imágenes independientemente de dónde estén almacenadas.
 
 ## <a name="file-formats-and-data-stores"></a>Formatos de archivo y almacenes de datos
 
-En Windows 7, el explorador de Windows facilita la administración de archivos y la manipulación para el usuario de varias maneras:
+En Windows 7, Windows Explorer facilita la administración y manipulación de archivos para el usuario de varias maneras:
 
--   La vista previa del tipo de archivo de la aplicación es más accesible con un botón nuevo que permite a los usuarios mostrar y ocultar el panel de vista previa.
--   Las pilas visuales envolventes agregan imágenes en miniatura para los tipos de archivo en una vista.
--   Las vistas del explorador de Windows muestran información útil basada en las propiedades escritas con el controlador de propiedad.
--   Fragmentos de código de documento y resaltado de referencias use la implementación de la interfaz de **IFilter** para facilitar la búsqueda y la búsqueda de archivos.
--   Los comandos y verbos de menú contextual son más fáciles de implementar.
+-   La versión preliminar del tipo de archivo de la aplicación es más accesible con un nuevo botón que permite a los usuarios mostrar y ocultar el panel de vista previa.
+-   Las pilas de objetos visuales inmersivos agregan imágenes en miniatura para los tipos de archivo en una vista.
+-   Windows Las vistas del explorador muestran información útil basada en las propiedades escritas con el controlador de propiedades.
+-   Los fragmentos de código de documento y el resaltado de pulsaciones usan la **implementación de la interfaz IFilter** para facilitar la búsqueda y la búsqueda de archivos.
+-   Los verbos y comandos del menú contextual son más fáciles de implementar que nunca.
 
-Al implementar todos los controladores de formato adecuados para los elementos devueltos por el controlador de protocolo, los resultados de la búsqueda del almacén de datos personalizado pueden ser tan completos como los resultados de la búsqueda de archivos. Las *bibliotecas* se crean automáticamente para los controladores de protocolo, por lo que los usuarios pueden limitar sus búsquedas fácilmente. Y la lógica para crear *bibliotecas* se puede personalizar fácilmente a través del registro. (Consulte [desarrollo de filtros para Windows Search](../search/-search-3x-wds-extidx-filters.md)).
+Al implementar todos los controladores de formato adecuados para los elementos devueltos desde el controlador de protocolo, los resultados de búsqueda del almacén de datos personalizado pueden ser tan completos como los resultados de la búsqueda de archivos. *Las bibliotecas* se crean automáticamente para los controladores de protocolo para que los usuarios puedan establecer fácilmente el ámbito de sus búsquedas. Y la lógica para crear *bibliotecas* se puede personalizar fácilmente a través del Registro. (Vea [Developing Filters for Windows Search](../search/-search-3x-wds-extidx-filters.md)[Desarrollo de filtros para Windows Search]).
 
 ![Biblioteca de documentos de Windows 7](images/windows7-11.jpg)
 
-En Windows 7, el explorador de Windows facilita la administración y manipulación de archivos
+En Windows 7, Windows Explorer facilita la administración y manipulación de archivos
 
- 
+ 
 
- 
+ 

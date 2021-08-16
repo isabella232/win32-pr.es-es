@@ -27,12 +27,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 52ab249ab5087a1528317687d90f6d8fa665bc1a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 465fe0bacd23ad99bb744c915b60056b96419761f93a4aefd5f1a3d2fb4c6129
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766355"
 ---
 # <a name="systemconfig_phydisk-class"></a>Clase SystemConfig \_ PhyDisk
 
@@ -168,7 +168,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (13)
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -184,7 +184,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (11)
 </dt> </dl>
 
-Número de particiones en esta unidad de disco físico que reconoce el sistema operativo.
+Número de particiones de esta unidad de disco físico reconocidas por el sistema operativo.
 
 </dd> <dt>
 
@@ -280,7 +280,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (15), **Max** (2), **Format("s")**
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -296,7 +296,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (4)
 </dt> </dl>
 
-Número de pistas de cada cilindro en la unidad de disco físico. Nota: El valor de esta propiedad se obtiene a través de funciones extendidas de interrupción de BIOS de 13 horas. El valor puede ser inexacto si la unidad usa un esquema de traducción para admitir tamaños de disco de alta capacidad. Consulte al fabricante para obtener especificaciones precisas de la unidad.
+Número de pistas de cada cilindro en la unidad de disco físico. Nota: El valor de esta propiedad se obtiene a través de funciones extendidas de interrupción del BIOS 13 horas. El valor puede ser inexacto si la unidad usa un esquema de traducción para admitir tamaños de disco de alta capacidad. Consulte al fabricante para obtener especificaciones precisas de la unidad.
 
 </dd> <dt>
 
@@ -322,8 +322,8 @@ True si la caché de escritura está habilitada.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

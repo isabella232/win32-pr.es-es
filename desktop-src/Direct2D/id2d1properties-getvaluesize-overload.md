@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1Properties GetValueSize
-description: Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de la propiedad.
+title: Métodos Id2D1Properties GetValueSize
+description: Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de propiedad.
 ms.assetid: 62D47611-1AF7-45F3-BB7B-20BF478811BE
 keywords:
-- GetValueSize métodos de sobrecarga métodos Direct2D
+- Métodos de sobrecarga GetValueSize Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 88d4a36f72844b97e5a7ff28675a8a47e3b962d4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 89837444579ed38841232ce1f8704a30d0a428e0ec8e30177f6bde85ec87e1e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105685754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075269"
 ---
-# <a name="id2d1propertiesgetvaluesize-methods"></a>ID2D1Properties:: GetValueSize (métodos)
+# <a name="id2d1propertiesgetvaluesize-methods"></a>Métodos ID2D1Properties::GetValueSize
 
-Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de la propiedad.
+Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de propiedad.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,12 +29,12 @@ Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de la 
 
 | Método                                                       | Descripción                                                                                                     |
 |:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| [**GetValueSize (U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(u))     | Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de la propiedad. Se trata de una sobrecarga de plantilla.<br/> |
-| [**GetValueSize (UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(uint32)) | Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de la propiedad.<br/>                              |
+| [**GetValueSize(U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(u))     | Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de propiedad. Se trata de una sobrecarga de plantilla.<br/> |
+| [**GetValueSize(UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(uint32)) | Obtiene el tamaño del valor de propiedad en bytes, utilizando el índice de propiedad.<br/>                              |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

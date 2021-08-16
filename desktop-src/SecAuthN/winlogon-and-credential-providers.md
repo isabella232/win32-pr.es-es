@@ -13,7 +13,7 @@ ms.locfileid: "117785775"
 ---
 # <a name="winlogon-and-credential-providers"></a>Proveedores de winlogon y credenciales
 
-[*Winlogon es*](../secgloss/w-gly.md) el módulo Windows que realiza un inicio de sesión interactivo para una sesión [*de inicio de sesión.*](../secgloss/l-gly.md) El comportamiento de Winlogon se puede personalizar implementando y registrando un Proveedor de credenciales.
+[*Winlogon es*](../secgloss/w-gly.md) el módulo Windows que realiza un inicio de sesión interactivo para una sesión [*de inicio de sesión*](../secgloss/l-gly.md). El comportamiento de Winlogon se puede personalizar implementando y registrando un Proveedor de credenciales.
 
 Para obtener información sobre cómo implementar una Proveedor de credenciales, vea los temas siguientes.
 
@@ -21,7 +21,7 @@ Para obtener información sobre cómo implementar una Proveedor de credenciales,
 
 | Tema                                                                                                           | Descripción                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Proveedor de credenciales experiencia de inicio Windows inicio de sesión controlado](https://go.microsoft.com/fwlink/?LinkId=717287)<br/> | Información general sobre Winlogon y Proveedor de credenciales arquitectura y un ejemplo de Proveedor de credenciales.<br/> |
+| [Proveedor de credenciales controlada por Windows inicio de sesión](https://go.microsoft.com/fwlink/?LinkId=717287)<br/> | Información general sobre Winlogon y Proveedor de credenciales arquitectura y un ejemplo de Proveedor de credenciales.<br/> |
 | [Shell Interfaces](../shell/samples-usingthumbnailproviders.md)<br/>                                                                | Proveedor de credenciales de interfaz.<br/>                                                    |
 | [Proveedores de credenciales en Windows 10](credential-providers-in-windows.md)<br/>                            | Proveedores de credenciales de terceros y proveedores de credenciales del sistema en Windows 10.<br/>             |
 
@@ -29,7 +29,7 @@ Para obtener información sobre cómo implementar una Proveedor de credenciales,
 
  
 
-Para obtener un ejemplo Proveedor de credenciales implementación, consulte el ejemplo ubicado en el directorio de instalación del SDK de Windows en \\ Ejemplos \\ security \\ CredentialProvider.
+Para obtener un ejemplo Proveedor de credenciales implementación, consulte el ejemplo ubicado en el directorio de instalación del SDK de Windows en \\ Samples \\ Security \\ CredentialProvider (Ejemplos de CredentialProvider de seguridad).
 
 **Windows Server 2003 y Windows XP:** No se admiten proveedores de credenciales. Para obtener información sobre cómo personalizar Winlogon, consulte [Winlogon y GINA.](winlogon-and-gina.md)
 

@@ -1,5 +1,5 @@
 ---
-description: Nombres de personas en el campo Cc:.
+description: Los nombres de las personas en el campo Cc:.
 ms.assetid: a9675268-7006-4a6a-9a7a-68541f43311b
 title: System.Message.CcName
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118724683"
 ---
 # <a name="systemmessageccname"></a>System.Message.CcName
 
-Nombres de personas en el campo Cc:.
+Los nombres de las personas en el campo Cc:.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

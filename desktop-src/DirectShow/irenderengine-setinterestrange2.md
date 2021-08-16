@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2be9d8d2f69d2606de855cf5f08eb3deb41de634
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 69d78b4f4e18890e992bba5902ac6140dfed73fa8abb1f3814fc8dfbff6fdba1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791855"
 ---
 # <a name="irenderenginesetinterestrange2-method"></a>IRenderEngine::SetInterestRange2 (método)
 
@@ -70,7 +70,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la Microsoft Windows SDK [update para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

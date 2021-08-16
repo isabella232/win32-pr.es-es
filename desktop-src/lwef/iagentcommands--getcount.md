@@ -30,11 +30,11 @@ Recupera el número de objetos [**Command**](/windows/desktop/lwef/the-command-o
 <span id="pdwCount"></span><span id="pdwcount"></span><span id="PDWCOUNT"></span>*pdwCount*
 </dt> <dd>
 
-Dirección de una variable que recibe el número de [**comandos de**](/windows/desktop/lwef/the-command-object) una [**colección Commands.**](/windows/desktop/lwef/the-commands-collection-object)
+Dirección de una variable que recibe el número de [**comandos**](/windows/desktop/lwef/the-command-object) de una [**colección Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
 </dd> </dl>
 
-*pdwCount incluye* solo el número de [**comandos que**](/windows/desktop/lwef/the-command-object) defina en la [**colección Commands.**](/windows/desktop/lwef/the-commands-collection-object) No se incluyen entradas de servidor u otras entradas de cliente.
+*pdwCount* incluye solo el número de [**comandos que**](/windows/desktop/lwef/the-command-object) se definen en la [**colección Commands.**](/windows/desktop/lwef/the-commands-collection-object) No se incluyen las entradas de servidor u otras entradas de cliente.
 
  
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: UInt64ColumnValue. Size (propiedad)'
-title: UInt64ColumnValue. Size (propiedad)
+description: Más información sobre la propiedad UInt64ColumnValue.Size
+title: UInt64ColumnValue.Size, propiedad
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.UInt64ColumnValue.Size
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.uint64columnvalue.size(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8102b08ce8a48bb23a3618fe5829c354f200ff5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5d2a1a087ba924d93375ed66e0d87c97d56a4a36c0b5470ab53cd61eb9b6104
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603555"
 ---
-# <a name="uint64columnvaluesize-property"></a>UInt64ColumnValue. Size (propiedad)
+# <a name="uint64columnvaluesize-property"></a>UInt64ColumnValue.Size, propiedad
 
-Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binary y String).
+Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binario y cadena).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,14 +57,14 @@ protected override int Size { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase UInt64ColumnValue](./uint64columnvalue-class.md)
+[UInt64ColumnValue (clase)](./uint64columnvalue-class.md)
 
-[Miembros de UInt64ColumnValue](./uint64columnvalue-members.md)
+[Miembros UInt64ColumnValue](./uint64columnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

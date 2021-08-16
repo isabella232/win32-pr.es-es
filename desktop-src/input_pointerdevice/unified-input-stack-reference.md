@@ -13,7 +13,7 @@ ms.locfileid: "118758278"
 ---
 # <a name="pointer-device-input-stack-reference"></a>Referencia de pila de entrada de dispositivo de puntero
 
-En los temas de esta sección se proporcionan las especificaciones de referencia de [la pila de](pointer-device-stack-portal.md) entrada del dispositivo de puntero en Windows 8.
+En los temas de esta sección se proporcionan las especificaciones de referencia de la pila de entrada del dispositivo [de](pointer-device-stack-portal.md) puntero Windows 8.
 
 ## <a name="in-this-section"></a>En esta sección
 

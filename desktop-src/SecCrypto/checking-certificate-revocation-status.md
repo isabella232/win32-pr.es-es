@@ -1,23 +1,23 @@
 ---
 description: CAPICOM no habilita la comprobación de revocación de certificados de forma predeterminada.
 ms.assetid: c6e2724c-1802-4bc4-a0e4-3cb85427a445
-title: Comprobando el estado de revocación de certificados
+title: Comprobación del estado de revocación de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ada134bbca88b1a875ff27add7566116cf7334bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fbf1ce98e392da94fd800316fe63c5b79c8572a319c6db4246e7907eb80966d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769545"
 ---
-# <a name="checking-certificate-revocation-status"></a>Comprobando el estado de revocación de certificados
+# <a name="checking-certificate-revocation-status"></a>Comprobación del estado de revocación de certificados
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la .NET Framework para implementar características de seguridad. Para obtener más información, vea [alternativas al uso de CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la .NET Framework para implementar características de seguridad. Para obtener más información, [vea Alternativas al uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-CAPICOM no habilita la comprobación de revocación de certificados de forma predeterminada. Sin embargo, la comprobación de revocación de certificados se puede habilitar mediante programación para un certificado determinado a través de la propiedad **IsValid. CheckFlag** de un objeto de certificado. Una vez establecido el valor adecuado de **CheckFlag** , el acceso a la propiedad **IsValid. Result** del objeto de certificado o la creación de la ruta de acceso de comprobación del certificado mediante el método de compilación de un objeto Chain fuerza la comprobación de la revocación.
+CAPICOM no habilita la comprobación de revocación de certificados de forma predeterminada. Sin embargo, la comprobación de revocación de certificados se puede habilitar mediante programación para un certificado determinado a través de la **propiedad IsValid.CheckFlag** de un objeto Certificate. Una vez establecido el valor adecuado de **CheckFlag,** el acceso a la propiedad **IsValid.Result** del objeto Certificate o la compilación de la ruta de verificación del certificado mediante el método Build de un objeto Chain fuerza la comprobación de revocación.
 
-En el ejemplo siguiente, se ha creado una instancia de CERT como un certificado válido de CAPICOM.
+En el ejemplo siguiente, se ha crea una instancia de cert como un certificado CAPICOM válido.
 
 
 ```VB
@@ -52,9 +52,9 @@ End If
 
 
 
-Lo anterior se aplica a un certificado individual, independientemente de cómo se haya obtenido. La comprobación de la revocación de los certificados en un objeto [**SignedData**](signeddata.md) no es diferente porque el método [**Verify**](signeddata-verify.md) del objeto **SignedData** no se puede usar para este propósito porque si se habilita CAPICOM \_ , la \_ firma y el certificado no \_ \_ provocan la comprobación de CRL.
+Lo anterior se aplica a un certificado individual, independientemente de cómo se haya obtenido. La realización de la comprobación de revocación en los certificados de un objeto [**SignedData**](signeddata.md) no es diferente porque el método [**Verify**](signeddata-verify.md) del objeto **SignedData** no se puede usar para este propósito porque la habilitación de CAPICOM VERIFY SIGNATURE AND CERTIFICATE no provoca la comprobación de \_ \_ \_ \_ CRL.
 
-En su lugar, debe establecerse el valor de **CheckFlag** para el certificado de cada firmante. Considere el ejemplo siguiente donde se ha creado una instancia de sData como un objeto [**SignedData**](signeddata.md) de CAPICOM válido.
+En su lugar, se debe establecer **CheckFlag** para el certificado de cada firmante. Considere el ejemplo siguiente en el que se ha iniciado una instancia de sData como un objeto [**SignedData**](signeddata.md) capicom válido.
 
 
 ```VB
@@ -86,7 +86,7 @@ Next I
 
 
 
-El ejemplo adicional es el bucle sobre todos los certificados del objeto [**SignedData**](signeddata.md) .
+El ejemplo adicional es el bucle sobre todos los certificados del [**objeto SignedData.**](signeddata.md)
 
  
 

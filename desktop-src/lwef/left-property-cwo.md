@@ -1,19 +1,19 @@
 ---
 title: Propiedad Left (objeto CommandsWindow)
-description: Obtenga información sobre la propiedad de objeto Left CommandsWindow. Microsoft Agent está en desuso a partir de Windows 7.
+description: Obtenga información sobre la propiedad de objeto Left CommandsWindow. Microsoft Agent está en desuso a partir Windows 7.
 ms.assetid: 03786379-42c2-4f54-99cc-1dc120c45858
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fdcbb8cb39b2c07120ecab2b4da5da99d55b78f
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 348a695e69320abd340fd06789603ff6e1f2b3fe8671fa583ed2f253970cdf5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105031"
 ---
 # <a name="left-property-commandswindow-object"></a>Propiedad Left (objeto CommandsWindow)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 

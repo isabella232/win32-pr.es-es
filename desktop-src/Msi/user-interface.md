@@ -17,7 +17,7 @@ Windows El instalador proporciona una interfaz de usuario completa para instalar
 
 [Acerca de Interfaz de usuario](about-the-user-interface.md) describe la funcionalidad de la interfaz de usuario del instalador. [Mediante el Interfaz de usuario](using-the-user-interface.md) describe el uso de la interfaz de usuario interna del instalador.
 
-La información de referencia sobre el cuadro de diálogo interno del instalador y los estilos y opciones de control se [presenta en Interfaz de usuario referencia](user-interface-reference.md).
+La información de referencia sobre el cuadro de diálogo interno del instalador y los estilos y opciones de control se [presentan en Interfaz de usuario referencia](user-interface-reference.md).
 
  
 

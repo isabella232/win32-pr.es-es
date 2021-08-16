@@ -5,7 +5,7 @@ ms.assetid: 5131bd16-1a8d-4d4a-98e4-6140438c6517
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD de atributo que debe contener el sistema
-- Esquema de AD del atributo systemMustContain
+- SystemMustContain attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -29,10 +29,10 @@ Lista de atributos obligatorios para una clase. Estos atributos deben especifica
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------------------------------|
-| CN                | Debe contener el sistema                                                           |
+| CN                | System-Must-Contain                                                           |
 | Ldap-Display-Name | systemMustContain                                                             |
 | Size              | \-                                                                            |
-| Privilegio actualizar  | Administrador de esquemas                                                          |
+| Actualizar privilegios  | Administrador de esquemas                                                          |
 | Frecuencia de actualización  | Cuando se crea la clase o se agrega un nuevo atributo obligatorio a la clase . |
 | Attribute-Id      | 1.2.840.113556.1.4.197                                                        |
 | System-Id-Guid    | bf967a45-0de6-11d0-a285-00aa003049e2                                          |
@@ -67,7 +67,7 @@ Lista de atributos obligatorios para una clase. Estos atributos deben especifica
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
 
 
 
@@ -88,7 +88,7 @@ Lista de atributos obligatorios para una clase. Estos atributos deben especifica
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
 
 
 

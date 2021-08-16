@@ -1,11 +1,11 @@
 ---
-title: Privilege-Attributes atributo)
-description: Máscara de la máscara de atributos de privilegios.
+title: Privilege-Attributes atributo
+description: Máscara de bits de atributos de privilegios.
 ms.assetid: 7d8f940b-3f41-43a9-8b14-8696c9f636fb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Privilege-Attributes
-- privilegeAttributes esquema de AD de atributos
+- Privilege-Attributes esquema de AD de atributo
+- Esquema de AD del atributo privilegeAttributes
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c9b4f9e32acde9762eaeb812f4f40673b9f75d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a55fc1a8a628283fd382ac4edc61e4fc53a4289840f71dd03ea85a8cefd696d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923405"
 ---
-# <a name="privilege-attributes-attribute"></a>Privilege-Attributes atributo)
+# <a name="privilege-attributes-attribute"></a>Privilege-Attributes atributo
 
-Máscara de la máscara de atributos de privilegios.
+Máscara de bits de atributos de privilegios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Privilege-Attributes                 |
-| Nombre para mostrar de LDAP | privilegeAttributes                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | privilegeAttributes                  |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.636               |
-| System-ID-GUID    | 19405b9a-3cfa-11d1-a9c0-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 19405b9a-3cfa-11d1-a9c0-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,15 +53,15 @@ Máscara de la máscara de atributos de privilegios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -74,15 +74,15 @@ Máscara de la máscara de atributos de privilegios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -95,15 +95,15 @@ Máscara de la máscara de atributos de privilegios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -116,15 +116,15 @@ Máscara de la máscara de atributos de privilegios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -137,15 +137,15 @@ Máscara de la máscara de atributos de privilegios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -158,15 +158,15 @@ Máscara de la máscara de atributos de privilegios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

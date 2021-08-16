@@ -13,12 +13,12 @@ ms.locfileid: "117765569"
 ---
 # <a name="example-c-program-creating-a-certificate-chain"></a>Programa C de ejemplo: Crear una cadena de certificados
 
-En el ejemplo siguiente se crea e instala un motor de cadena de certificados no predeterminado. El motor se usa para compilar cadenas de certificados para cada uno de los certificados de un [*almacén de certificados.*](../secgloss/c-gly.md)
+En el ejemplo siguiente se crea e instala un motor de cadena de certificados no predeterminado. El motor se usa para generar cadenas de certificados para cada uno de los certificados de un [*almacén de certificados*](../secgloss/c-gly.md).
 
 En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Preparar la creación de un motor de cadena de certificados no predeterminado declarando e inicializando una estructura de datos [**CERT \_ CHAIN ENGINE \_ \_ CONFIG.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config)
--   Creación del motor de búsqueda [**mediante CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
+-   Preparar la creación de un motor de cadena de certificados no predeterminado mediante la declaración e inicialización de una estructura de datos [**CERT \_ CHAIN ENGINE \_ \_ CONFIG.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config)
+-   Crear el motor de búsqueda [**mediante CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
 -   Uso [**de CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea) para abrir el almacén Mi sistema.
 -   Recuperar todos los certificados del almacén abierto mediante [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) en un bucle.
 -   Para cada certificado del almacén abierto, recuperando el nombre del firmante del certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).

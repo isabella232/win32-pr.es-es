@@ -28,9 +28,9 @@ El **tipo de enumeración CAPICOM \_ CERTIFICATE SAVE AS \_ \_ \_ TYPE** define 
 
 
 
-| Miembro                                  | Descripción                                                                                                                                   | Valor |
+| Miembro                                  | Descripción                                                                                                                                   | Value |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| **CERTIFICADO CAPICOM \_ \_ GUARDAR COMO \_ \_ PFX** | El archivo de salida tendrá el formato de archivo PFX (PKCS 12) y también se guardarán las claves privadas asociadas que sean exportables.<br/> | 0     |
+| **CERTIFICADO CAPICOM \_ \_ GUARDAR COMO \_ \_ PFX** | El archivo de salida se formateará como un archivo PFX (PKCS 12) y también se guardarán las claves privadas asociadas que sean exportables.<br/> | 0     |
 | **CAPICOM \_ CERTIFICATE \_ SAVE \_ AS \_ CER** | El archivo de salida se formateará como un archivo CER sin claves privadas guardadas.<br/>                                                        | 1     |
 
 
@@ -43,7 +43,7 @@ El método [**Certificate.Save**](certificate-save.md) usa el tipo de enumeraci�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
 | Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |

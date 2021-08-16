@@ -1,9 +1,9 @@
 ---
-title: FUNCIÓN RWByteAddressBuffer::Store3
+title: Función RWByteAddressBuffer::Store3
 description: Establece tres valores.
 ms.assetid: eaf12b5a-c9c6-413a-9646-3d14e7825460
 keywords:
-- Función HLSL de Store3
+- Función HlSL de Store3
 topic_type:
 - apiref
 api_name:
@@ -37,7 +37,7 @@ void Store3(
 
 <dl> <dt>
 
-*dirección* \[ En\]
+*address* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -59,7 +59,7 @@ Tres valores de entrada.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -73,14 +73,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

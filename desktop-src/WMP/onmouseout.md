@@ -1,9 +1,9 @@
 ---
 title: onmouseout
-description: El controlador de eventos onmouseout controla un evento que se produce cuando el usuario mueve el puntero fuera del elemento.
+description: El controlador de eventos onmouseout controla un evento que tiene lugar cuando el usuario mueve el puntero fuera del elemento.
 ms.assetid: 8d4c5aec-0d4e-4912-a5e6-9aa1cf3e0971
 keywords:
-- Media Player de Windows onmouseout
+- onmouseout Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,40 +13,40 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 172865ad8a6255ff18d52369058ecb9bdbbeb09a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b14b055d99781423f5a9961ccb49f9b60380289d22ad53ab4d8aab975be2656
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616735"
 ---
 # <a name="onmouseout"></a>onmouseout
 
-El controlador de eventos **onmouseout** controla un evento que se produce cuando el usuario mueve el puntero fuera del elemento.
+El **controlador de eventos onmouseout** controla un evento que tiene lugar cuando el usuario mueve el puntero fuera del elemento.
 
 ``` syntax
 onmouseout
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este controlador de eventos no es aplicable al elemento de **lista de reproducción** .
+Este controlador de eventos no es aplicable al elemento **PLAYLIST.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> </dl>
 
  

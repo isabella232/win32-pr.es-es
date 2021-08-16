@@ -1,7 +1,7 @@
 ---
-description: La función CheckVideoInfo2Type comprueba un tipo de medio que contenga una estructura de formato VIDEOINFOHEADER2 para algunos errores comunes que pueden producir desbordamientos de búfer o desbordamientos de enteros.
+description: La función CheckVideoInfo2Type comprueba un tipo de medio que contiene una estructura de formato VIDEOINFOHEADER2 para ver si hay determinados errores comunes que pueden provocar saturaciones de búfer o desbordamientos de enteros.
 ms.assetid: 6a71ce7e-c6fc-4811-9182-67949644a0a5
-title: Función CheckVideoInfo2Type (Checkbmi. h)
+title: Función CheckVideoInfo2Type (Checkbmi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - checkbmi.h
-ms.openlocfilehash: 5ec092bdea1e3dd00de36893d1816f70ca6d7945
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 48d9deab4d87868cbc9e5418ccd6b7e2c7e9ecf93350ad70cb6c934d365e4655
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074189"
 ---
-# <a name="checkvideoinfo2type-function"></a>CheckVideoInfo2Type función)
+# <a name="checkvideoinfo2type-function"></a>Función CheckVideoInfo2Type
 
-La `CheckVideoInfo2Type` función comprueba un tipo de medio que contiene una estructura de formato [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) para algunos errores comunes que pueden producir desbordamientos de búfer o desbordamientos de enteros.
+La función comprueba un tipo de medio que contiene una estructura de formato VIDEOINFOHEADER2 para ver si hay determinados errores comunes que pueden provocar saturaciones de búfer o `CheckVideoInfo2Type` desbordamientos de enteros. [](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2)
 
 > [!Note]  
 > Esta función no garantiza que el tipo de medio sea válido o que el código que usa la estructura sea seguro.
@@ -44,32 +44,32 @@ HRESULT CheckVideoInfo2Type(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a la estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) que se va a validar.
+Puntero a la [**estructura AM MEDIA TYPE \_ \_ que**](/windows/win32/api/strmif/ns-strmif-am_media_type) se validará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los siguientes valores **HRESULT** .
+Devuelve uno de los siguientes **valores HRESULT.**
 
 
 
 | Código devuelto                                                                                                | Descripción                       |
 |------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                       | Correcto<br/>                |
-| <dl> <dt>**\_puntero E**</dt> </dl>                  | Valor de puntero **nulo**<br/> |
-| <dl> <dt>**\_tipo VFW \_ E \_ no \_ aceptado**</dt> </dl> | Tipo de medio no válido<br/>     |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Correcto<br/>                |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>                  | **Valor de** puntero NULL<br/> |
+| <dl> <dt>**TIPO E VFW \_ \_ NO \_ \_ ACEPTADO**</dt> </dl> | Tipo de medio no válido<br/>     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función llama a [**ValidateBitmapInfoHeader**](validatebitmapinfoheader.md) para validar la estructura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) en el tipo de medio. Si el tipo de formato no tiene el **formato \_ VideoInfo2**, la función devuelve el **\_ tipo VFW E \_ \_ no \_ aceptado**.
+Esta función llama [**a ValidateBitmapInfoHeader para**](validatebitmapinfoheader.md) validar la [**estructura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) en el tipo de medio. Si el tipo de formato no es **FORMAT \_ VideoInfo2,** la función devuelve **VFW \_ E TYPE \_ NOT \_ \_ ACCEPTED**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,11 +77,11 @@ Esta función llama a [**ValidateBitmapInfoHeader**](validatebitmapinfoheader.md
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Checkbmi. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Checkbmi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

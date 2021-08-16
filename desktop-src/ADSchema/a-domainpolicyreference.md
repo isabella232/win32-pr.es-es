@@ -4,8 +4,8 @@ description: Nombre distintivo de un objeto de directiva de dominio desde el que
 ms.assetid: 914920de-6dc2-4dda-bf10-a34f5315eb74
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de referencia de directiva de dominio
-- domainPolicyReference esquema de AD de atributos
+- Esquema de AD del atributo Domain-Policy-Reference
+- DomainPolicyReference attribute AD Schema (Esquema de AD del atributo domainPolicyReference)
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9723abde3bd04dc9c50f6b4c00f1ed80c4da0c2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e066b635aac650d0dc0c5713695ab9a1842d289fa3562470191e895bf6870f1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656905"
 ---
 # <a name="domain-policy-reference-attribute"></a>Atributo Domain-Policy-Reference
 
@@ -27,16 +27,16 @@ Nombre distintivo de un objeto de directiva de dominio desde el que se copia un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Referencia de directiva de dominio                 |
-| Nombre para mostrar de LDAP | domainPolicyReference                   |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Domain-Policy-Reference                 |
+| Ldap-Display-Name | domainPolicyReference                   |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.422                  |
-| System-ID-GUID    | 80a67e2a-9f22-11d0-afdd-00c04fd930c9    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 80a67e2a-9f22-11d0-afdd-00c04fd930c9    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,15 +53,15 @@ Nombre distintivo de un objeto de directiva de dominio desde el que se copia un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -74,15 +74,15 @@ Nombre distintivo de un objeto de directiva de dominio desde el que se copia un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -95,15 +95,15 @@ Nombre distintivo de un objeto de directiva de dominio desde el que se copia un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -116,15 +116,15 @@ Nombre distintivo de un objeto de directiva de dominio desde el que se copia un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -137,15 +137,15 @@ Nombre distintivo de un objeto de directiva de dominio desde el que se copia un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -158,15 +158,15 @@ Nombre distintivo de un objeto de directiva de dominio desde el que se copia un 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

@@ -1,7 +1,7 @@
 ---
-description: La \_ enumeración de la especificación de clave CAPICOM define las \_ Especificaciones clave.
+description: La enumeración CAPICOM \_ KEY SPEC define las \_ especificaciones de clave.
 ms.assetid: e4aaaf69-ab28-4e8c-8a8a-6dc662299865
-title: Enumeración CAPICOM_KEY_SPEC (CAPICOM. h)
+title: CAPICOM_KEY_SPEC enumeración (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 153f0431d78ff595b4d568fd7a677abea0d28be7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 211830b57d37240edf0df97524ef3865ebe600b33e814353f3a0d021b1b0d88c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772450"
 ---
-# <a name="capicom_key_spec-enumeration"></a>\_Enumeración de la especificación de clave CAPICOM \_
+# <a name="capicom_key_spec-enumeration"></a>CAPICOM \_ KEY \_ SPEC (enumeración)
 
-La enumeración de la **\_ \_ especificación de clave CAPICOM** define las especificaciones clave.
+La **enumeración CAPICOM \_ KEY \_ SPEC** define las especificaciones de clave.
 
 ## <a name="members"></a>Miembros
 
@@ -30,17 +30,17 @@ La enumeración de la **\_ \_ especificación de clave CAPICOM** define las espe
 
 | Miembro                              | Descripción                                                | Value |
 |-------------------------------------|------------------------------------------------------------|-------|
-| **\_KEYEXCHANGE de \_ especificación de clave CAPICOM \_** | La clave se puede utilizar para el cifrado y la firma.<br/> | 1     |
-| **firma de la \_ especificación de clave CAPICOM \_ \_**   | La clave solo se puede utilizar para firmar.<br/>           | 2     |
+| **CAPICOM \_ KEY \_ SPEC \_ KEYEXCHANGE** | La clave se puede usar para el cifrado y la firma.<br/> | 1     |
+| **FIRMA DE \_ ESPECIFICACIÓN DE CLAVE \_ \_ CAPICOM**   | La clave solo se puede usar para firmar.<br/>           | 2     |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La enumeración de la **\_ \_ especificación de clave CAPICOM** se usa en los siguientes métodos y propiedades:
+Los métodos y propiedades siguientes usan la enumeración **\_ CAPICOM KEY \_ SPEC:**
 
--   Propiedad [**privatekey. Especificación**](privatekey-keyspec.md) de.
--   Método [**privatekey. Open**](privatekey-open.md) .
+-   [**Propiedad PrivateKey.KeySpec.**](privatekey-keyspec.md)
+-   [**Método PrivateKey.Open.**](privatekey-open.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,8 +48,8 @@ La enumeración de la **\_ \_ especificación de clave CAPICOM** se usa en los s
 
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Encabezado<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
+| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

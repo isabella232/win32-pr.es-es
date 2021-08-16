@@ -1,19 +1,19 @@
 ---
-description: Marca de enumeración impresora de información de impresora.
+description: Información de impresora Marca de enumeración de impresoras.
 ms.assetid: 50a6df8e-1055-4964-a3d1-8e0ee8a74edc
-title: System. DeviceInterface. PrinterEnumerationFlag
+title: System.DeviceInterface.PrinterEnumerationFlag
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 228a5c91088ce1ff2e94a6081f772f56e8f0d366
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5d9fd2b02244d7421aea8d8cfaf4ef2a46a6ba4554cf3af09c7e7a1d10c841f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098026"
 ---
-# <a name="systemdeviceinterfaceprinterenumerationflag"></a>System. DeviceInterface. PrinterEnumerationFlag
+# <a name="systemdeviceinterfaceprinterenumerationflag"></a>System.DeviceInterface.PrinterEnumerationFlag
 
-Marca de enumeración impresora de información de impresora.
+Información de impresora Marca de enumeración de impresoras.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

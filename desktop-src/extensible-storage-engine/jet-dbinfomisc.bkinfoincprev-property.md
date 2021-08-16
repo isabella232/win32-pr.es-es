@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_DBINFOMISC. bkinfoIncPrev'
-title: Propiedad JET_DBINFOMISC. bkinfoIncPrev
+description: 'Más información sobre: JET_DBINFOMISC.bkinfoIncPrev'
+title: JET_DBINFOMISC.bkinfoIncPrev, propiedad
 TOCTitle: 'bkinfoIncPrev property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.bkinfoIncPrev
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.bkinfoincprev(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d323c9af95a59895b30c55cc0a2a5b2664a1c043
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 454fabe8bd14dbab82b96b972838455e354f60d8cb07b4878c3733aac26f9dba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617585"
 ---
-# <a name="jet_dbinfomiscbkinfoincprev-property"></a>Propiedad JET_DBINFOMISC. bkinfoIncPrev
+# <a name="jet_dbinfomiscbkinfoincprev-property"></a>JET_DBINFOMISC.bkinfoIncPrev, propiedad
 
-Obtiene información acerca de la última copia de seguridad incremental correcta. Este valor se restablece cuando se establece [bkinfoFullPrev](./jet-dbinfomisc.bkinfofullprev-property.md) .
+Obtiene información sobre la última copia de seguridad incremental correcta. Este valor se restablece cuando [se establece bkinfoFullPrev.](./jet-dbinfomisc.bkinfofullprev-property.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_BKINFO bkinfoIncPrev { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_BKINFO](./jet-bkinfo-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_BKINFO](./jet-bkinfo-structure2.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_DBINFOMISC (clase)](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC clase](./jet-dbinfomisc-class.md)
 
-[Miembros de JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC miembros](./jet-dbinfomisc-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

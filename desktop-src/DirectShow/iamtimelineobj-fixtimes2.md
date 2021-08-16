@@ -1,5 +1,5 @@
 ---
-description: El método FixTimes2 redondea las horas de inicio y de detenerse especificadas a los límites de fotogramas más cercanos, tal y como se define en la configuración de velocidad de fotogramas del grupo primario. Este método es equivalente a IAMTimelineObj::FixTimes, pero toma valores REFTIME.
+description: El método FixTimes2 redondea las horas de inicio y de detenerse especificadas a los límites de fotogramas más cercanos, tal como se define en la configuración de velocidad de fotogramas del grupo primario. Este método es equivalente a IAMTimelineObj::FixTimes, pero toma valores REFTIME.
 ms.assetid: bdb3d999-2c91-4108-9286-c6e1f3362c09
 title: Método IAMTimelineObj::FixTimes2 (Qedit.h)
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118400910"
 ---
-# <a name="iamtimelineobjfixtimes2-method"></a>Método IAMTimelineObj::FixTimes2
+# <a name="iamtimelineobjfixtimes2-method"></a>IamTimelineObj::FixTimes2 (método)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]

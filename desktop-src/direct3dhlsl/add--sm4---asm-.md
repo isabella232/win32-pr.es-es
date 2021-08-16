@@ -36,13 +36,13 @@ Adición por componente de 2 vectores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números, suponiendo que no se produzcan desbordamientos ni subdesbordes. F significa número real finito.
 
 
 
-| **src0 src1->** | **-inf** | **-F**     | **-denorm** | **-0** | **+0** | **denorma** | **+F**     | **+inf** | **NaN** |
+| **src0 src1->** | **-inf** | **-F**     | **-denorm** | **-0** | **+0** | **desnorma** | **+F**     | **+inf** | **NaN** |
 |--------------------|----------|------------|-------------|--------|--------|------------|------------|----------|---------|
 | **-inf**           | -inf     | -inf       | -inf        | -inf   | -inf   | -inf       | -inf       | NaN      | NaN     |
 | **-F**             | -inf     | -F         | src0        | src0   | src0   | src0       | +-F o +-0 | +inf     | NaN     |
@@ -78,12 +78,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 

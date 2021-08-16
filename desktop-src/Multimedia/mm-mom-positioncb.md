@@ -1,6 +1,6 @@
 ---
 title: MM_MOM_POSITIONCB mensaje (Mmsystem.h)
-description: El mensaje MM MOM POSITIONCB se envía a una ventana cuando se alcanza un evento \_ \_ CALLBACK de MEVT \_ F en el flujo de salida DE \_ MIDI.
+description: El mensaje MM MOM POSITIONCB se envía a una ventana cuando se alcanza un evento \_ \_ MEVT \_ F \_ CALLBACK en el flujo de salida de MIDI.
 ms.assetid: afd2ba4c-ff6a-4e47-a7e8-a0da62650963
 keywords:
 - MM_MOM_POSITIONCB mensaje Windows Multimedia
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119807165"
 ---
-# <a name="mm_mom_positioncb-message"></a>Mensaje \_ DE POSICIÓN DE MM \_ MOMCB
+# <a name="mm_mom_positioncb-message"></a>Mensaje \_ DE MM MOM \_ POSITIONCB
 
-El **mensaje MM MOM \_ \_ POSITIONCB** se envía a una ventana cuando se alcanza un evento CALLBACK de MEVT \_ F en el flujo de salida DE \_ MIDI.
+El **mensaje MM MOM \_ \_ POSITIONCB** se envía a una ventana cuando se alcanza un evento MEVT \_ F \_ CALLBACK en el flujo de salida DE MIDI.
 
 
 ```C++
@@ -48,7 +48,7 @@ Puntero a una [**estructura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midih
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Reservado; no use.
+Reservado; no se usan.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-La reproducción del búfer de flujo continúa incluso mientras se ejecuta la función de devolución de llamada. Los eventos después del evento MEVT F CALLBACK en el búfer se programarán y enviarán a tiempo, independientemente de cuánto tiempo se dedó en la función \_ \_ de devolución de llamada.
+La reproducción del búfer de flujo continúa incluso mientras se ejecuta la función de devolución de llamada. Los eventos después del evento MEVT F CALLBACK en el búfer se programarán y enviarán a tiempo, independientemente de cuánto tiempo se dedó a la función \_ \_ de devolución de llamada.
 
 Si las devoluciones de llamada de posición se generan más rápidamente de lo que la aplicación puede procesarlas, el **miembro dwOffset** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) podría hacer referencia a un evento que la aplicación aún no ha procesado.
 

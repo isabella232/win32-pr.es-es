@@ -1,19 +1,19 @@
 ---
-description: Compatibilidad con el modo de voz para el dispositivo de audio. Si \_ es Variant true, el dispositivo admite el modo de voz.
+description: Compatibilidad con el modo de voz para el dispositivo de audio. Si VARIANT \_ TRUE, el dispositivo admite el modo de voz.
 ms.assetid: 1ed8b831-df74-4612-aeef-009160325248
 title: System.Devices.AudioDevice.SpeechProcessingSupported
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 097b3961e19fa9fe0e76f5c68c13e2e685be585f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71b2b9339b04a2eb3510847ee45db3d321460d57979d679a47fd3c8bc1108911
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105716002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097846"
 ---
 # <a name="systemdevicesaudiodevicespeechprocessingsupported"></a>System.Devices.AudioDevice.SpeechProcessingSupported
 
-Compatibilidad con el modo de voz para el dispositivo de audio. Si \_ es Variant true, el dispositivo admite el modo de voz.
+Compatibilidad con el modo de voz para el dispositivo de audio. Si VARIANT \_ TRUE, el dispositivo admite el modo de voz.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

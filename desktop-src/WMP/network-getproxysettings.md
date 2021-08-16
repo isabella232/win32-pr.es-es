@@ -1,11 +1,11 @@
 ---
-title: Network. getProxySettings (método)
-description: El método getProxySettings recupera la configuración del proxy para un protocolo determinado.
+title: Método Network.getProxySettings
+description: El método getProxySettings recupera la configuración de proxy para un protocolo determinado.
 ms.assetid: a7b21eab-93e1-458b-aab0-60fd298cce44
 keywords:
-- método getProxySettings de Windows Media Player
-- método getProxySettings Windows Media Player, clase de red
-- Clase de red Windows Media Player, método getProxySettings
+- Método getProxySettings Reproductor de Windows Media
+- Método getProxySettings Reproductor de Windows Media , clase Network
+- Clase de red Reproductor de Windows Media método , getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44a306fca1e671e7e5b3a89c0da952e5c81ba20e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e142e7366c9e2b03e55dbd3768ee9c4fb41f30266d221a2ac5ac80019d5a7b3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647445"
 ---
-# <a name="networkgetproxysettings-method"></a>Network. getProxySettings (método)
+# <a name="networkgetproxysettings-method"></a>Método Network.getProxySettings
 
-El método **getProxySettings** recupera la configuración del proxy para un protocolo determinado.
+El **método getProxySettings** recupera la configuración de proxy para un protocolo determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,39 +42,39 @@ retVal = Network.getProxySettings(
 
 <dl> <dt>
 
-*Protocolo* \[ de de\]
+*protocolo* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**Cadena** que especifica el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un **número** (**Long**) que contiene uno de los valores siguientes.
+Este método devuelve un **valor Number** (**long**) que contiene uno de los valores siguientes.
 
 
 
-| Value | Descripción                                                                      |
+| Valor | Descripción                                                                      |
 |-------|----------------------------------------------------------------------------------|
-| 0     | No se utiliza un servidor proxy.                                                |
-| 1     | Se está usando la configuración de proxy del explorador actual (solo es válida para HTTP). |
+| 0     | No se usa un servidor proxy.                                                |
+| 1     | Se está utilizando la configuración de proxy para el explorador actual (solo es válida para HTTP). |
 | 2     | Se usa la configuración de proxy especificada manualmente.                            |
-| 3     | La configuración de proxy se detecta automáticamente.                                      |
+| 3     | La configuración del proxy se detecta automáticamente.                                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Se produce un error en este método a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **getProxySettings** para mostrar un mensaje que proporciona información sobre la configuración del proxy actual del reproductor, en la ventana del explorador. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **getProxySettings** para mostrar un mensaje, que proporciona información sobre la configuración de proxy actual del reproductor, en la ventana del explorador. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -112,14 +112,14 @@ case 3:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

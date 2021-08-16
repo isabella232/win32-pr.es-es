@@ -19,14 +19,14 @@ Use estas constantes para las consultas de tabla de enrutador.
 
 
 
-| Constante              | Valor      | Descripción                                                                |
+| Constante              | Value      | Descripción                                                                |
 |-----------------------|------------|----------------------------------------------------------------------------|
-| RTM \_ MATCH \_ NONE      | 0x00000000 | No coincide con ninguno de los criterios; se devuelven todas las rutas del destino. |
+| RTM \_ MATCH \_ NONE      | 0x00000000 | No coincide con ninguno de los criterios; se devuelven todas las rutas para el destino. |
 | PROPIETARIO DE COINCIDENCIA DE RTM \_ \_     | 0x00000001 | Coincide con las rutas con el mismo propietario.                                            |
-| RTM \_ MATCH \_ LOT MES | 0x00000002 | Coincide con las rutas con el mismo vecino.                                     |
+| RTM \_ MATCH \_ ESTADÓN | 0x00000002 | Coincide con las rutas con el mismo vecino.                                     |
 | RTM \_ MATCH \_ PREF      | 0x00000004 | Coincide con las rutas que tienen la misma preferencia.                              |
 | RTM \_ MATCH \_ NEXTHOP   | 0x00000008 | Coincide con las rutas que tienen el mismo próximo salto.                                |
-| INTERFAZ DE COINCIDENCIA DE RTM \_ \_ | 0x00000010 | Coincide con las rutas que están en la misma interfaz.                             |
+| INTERFAZ DE \_ COINCIDENCIA DE \_ RTM | 0x00000010 | Coincide con las rutas que están en la misma interfaz.                             |
 | RTM \_ MATCH \_ FULL      | 0x0000FFFF | Coincide con las rutas con todos los criterios.                                          |
 | MEJOR \_ PROTOCOLO RTM \_   | 0          | Devuelve una ruta independientemente del protocolo que la posee.                      |
 | RTM \_ ESTE \_ PROTOCOLO   | ~0         | Devuelve la mejor ruta para el protocolo de llamada.                           |

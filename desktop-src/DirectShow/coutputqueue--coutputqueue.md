@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3db82f5757b9ced3ae8d4c33dc6ba67c7de0d0ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2cbc26cc6c333e1bb93e51281c16c6d72c995b02be570411a3f241870134237e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634245"
 ---
 # <a name="coutputqueuecoutputqueue-destructor"></a>Destructor COutputQueue.~COutputQueue
 
@@ -42,7 +42,7 @@ Método destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

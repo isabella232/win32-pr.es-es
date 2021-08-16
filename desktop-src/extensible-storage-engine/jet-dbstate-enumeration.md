@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_dbstate'
-title: Enumeración JET_dbstate
+description: 'Más información sobre: enumeración JET_dbstate datos'
+title: JET_dbstate enumeración
 TOCTitle: JET_dbstate enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_dbstate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbstate(v=EXCHG.10)
@@ -34,19 +34,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a83c8a4313e5e6f21ee885ee7936c90503bfbd3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94b4214c2f06d6b8b4613e6a248477adc2fe3be51fa7816e78451645d5b3b5ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112173"
 ---
-# <a name="jet_dbstate-enumeration"></a>Enumeración JET_dbstate
+# <a name="jet_dbstate-enumeration"></a>JET_dbstate enumeración
 
-Estados de base de datos (se usa en [JET_DBINFOMISC](./jet-dbinfomisc-class.md)).
+Estados de base de datos (usados [en JET_DBINFOMISC](./jet-dbinfomisc-class.md)).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,17 +75,17 @@ public enum JET_dbstate
 <tr class="odd">
 <td></td>
 <td>JustCreated</td>
-<td>Se acaba de crear la base de datos.</td>
+<td>La base de datos se acaba de crear.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DirtyShutdown</td>
-<td>Base de datos de cierre sucio (incoherente).</td>
+<td>Base de datos de apagado incorrecto (incoherente).</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CleanShutdown</td>
-<td>Base de datos de cierre correcto (coherente).</td>
+<td>Limpieza de la base de datos de apagado (coherente).</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -95,14 +95,14 @@ public enum JET_dbstate
 <tr class="odd">
 <td></td>
 <td>ForceDetach</td>
-<td>La base de datos se desasoció forzosamente.</td>
+<td>La base de datos se desasociaba por fuerza.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

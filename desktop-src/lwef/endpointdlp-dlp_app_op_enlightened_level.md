@@ -1,6 +1,6 @@
 ---
-description: Asocia una acción de prevención de pérdida de datos (DLP) de punto de conexión a un nivel de cumplimiento.
-title: DLP_APP_OP_ENLIGHTENED_LEVEL estructura (endpointdlp.h)
+description: Asocia una acción de prevención de pérdida de datos (DLP) de punto de conexión con un nivel de cumplimiento.
+title: Estructura DLP_APP_OP_ENLIGHTENED_LEVEL (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,16 +12,16 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: 2d9c1aa8335078cad71832c6090cada1669641cb
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: e47fa7705701701af2fc0832c5ea27cfdc7d1e67948ec095f3c24837a93de18b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610485"
 ---
 # <a name="dlp_app_op_enlightened_level-structure"></a>DLP_APP_OP_ENLIGHTENED_LEVEL estructura
 
-Asocia una acción de prevención de pérdida de datos (DLP) de punto de conexión a un nivel de cumplimiento.
+Asocia una acción de prevención de pérdida de datos (DLP) de punto de conexión con un nivel de cumplimiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ typedef struct _DLP_APP_OP_ENLIGHTENED_LEVEL{
 *Operación* \[ En\]
 </dt> <dd>
 
-Valor de la enumeración [DlpActionType](endpointdlp-dlpactiontype.md) que especifica el tipo de acción DLP del punto de conexión.
+Valor de la enumeración [DlpActionType que](endpointdlp-dlpactiontype.md) especifica el tipo de acción DLP del punto de conexión.
 
 </dd> </dl>
 
@@ -50,7 +50,7 @@ Valor de la enumeración [DlpActionType](endpointdlp-dlpactiontype.md) que espec
 *AppEnforcementLevel* \[ En\]
 </dt> <dd>
 
-Valor de [DlpAppEnforceLevel que](endpointdlp-dlpappenforcelevel.md) especifica el nivel de cumplimiento para el tipo de acción DLP de punto de conexión asociado.
+Valor de [DlpAppEnforceLevel que](endpointdlp-dlpappenforcelevel.md) especifica el nivel de cumplimiento para el tipo de acción DLP del punto de conexión asociado.
 
 </dd> </dl>
 
@@ -58,15 +58,15 @@ Valor de [DlpAppEnforceLevel que](endpointdlp-dlpappenforcelevel.md) especifica 
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Pase una matriz de estas estructuras a [DlpInitializeEnforcementMode](endpointdlp-dlpinitializeenforcementmode.md) para establecer el modo de cumplimiento de un conjunto de operaciones DLP de punto de conexión.
+Pase una matriz de estas estructuras a [DlpInitializeEnforcementMode para](endpointdlp-dlpinitializeenforcementmode.md) establecer el modo de cumplimiento de un conjunto de operaciones DLP de punto de conexión.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito          |    Value                   |
+| Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, versión 1809 (10.0; Compilación 17763)           |
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: d0ccc8d0d39bc4022899deaeb9e8a81eae1f720f
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 99bd06a41c88ff0b5a02b9b329877c015aea7dfb3fdbc58fea3c2e305829faf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119349355"
 ---
 # <a name="dlpappenforcelevel-enumeration"></a>DlpAppEnforceLevel (enumeración)
 
 Especifica el nivel de cumplimiento de una operación de prevención de pérdida de datos (DLP) del punto de conexión.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -86,7 +86,7 @@ Valor máximo de la enumeración .
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La estructura DLP_APP_OP_ENLIGHTENED_LEVEL utiliza [los valores de esta enumeración.](endpointdlp-dlp_app_op_enlightened_level.md)
 
@@ -95,7 +95,7 @@ La estructura DLP_APP_OP_ENLIGHTENED_LEVEL utiliza [los valores de esta enumerac
 
 
 
-| Requisito          |    Value                   |
+| Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, versión 1809 (10.0; Compilación 17763)           |
 

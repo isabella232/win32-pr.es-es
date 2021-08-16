@@ -1,7 +1,7 @@
 ---
-description: La función CopyMediaType copia una \_ estructura de tipo de medio am \_ en otra estructura, incluido el bloque de formato
+description: La función CopyMediaType copia una estructura \_ AM MEDIA TYPE en otra \_ estructura, incluido el bloque de formato
 ms.assetid: 5b47e197-abb5-4b2c-ad65-a506c5e239be
-title: Función CopyMediaType (mtype. h)
+title: Función CopyMediaType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2e37f277244ae9b82c395d7901917e1fc1e78b35
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b193f64edb55a342546f26db1975080490f0e69b2caa91695b3bc63240750983
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634384"
 ---
-# <a name="copymediatype-function"></a>CopyMediaType función)
+# <a name="copymediatype-function"></a>Función CopyMediaType
 
-La función **CopyMediaType** copia una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) en otra estructura, incluido el bloque de formato
+La **función CopyMediaType** copia una estructura [**AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) en otra estructura, incluido el bloque de formato
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ HRESULT WINAPI CopyMediaType(
 *pmtTarget* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) . El método copia el tipo de archivo multimedia en esta estructura.
+Puntero a una [**estructura \_ AM MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type) El método copia el tipo de medio en esta estructura.
 
 </dd> <dt>
 
 *pmtSource* 
 </dt> <dd>
 
-Puntero a la estructura [**de \_ \_ tipo de medio**](/windows/win32/api/strmif/ns-strmif-am_media_type) de origen AM que se va a copiar.
+Puntero a una estructura [**AM \_ MEDIA TYPE \_ de**](/windows/win32/api/strmif/ns-strmif-am_media_type) origen que se copiará.
 
 </dd> </dl>
 
@@ -61,11 +61,11 @@ Puntero a la estructura [**de \_ \_ tipo de medio**](/windows/win32/api/strmif/n
 
 Devuelve S \_ OK o E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función asigna la memoria para el bloque de formato. Si el parámetro *pmtTarget* ya contiene un bloque de formato asignado, se producirá una fuga de memoria. Para evitar una pérdida de memoria, llame a [**FreeMediaType**](freemediatype.md) antes de llamar a esta función.
+Esta función asigna la memoria para el bloque de formato. Si el *parámetro pmtTarget* ya contiene un bloque de formato asignado, se producirá una pérdida de memoria. Para evitar una pérdida de memoria, llame [**a FreeMediaType antes**](freemediatype.md) de llamar a esta función.
 
-Después de que el método vuelva, llame a [**FreeMediaType**](freemediatype.md) en *pmtTarget* para liberar el bloque de formato.
+Una vez que el método vuelva, llame [**a FreeMediaType**](freemediatype.md) en *pmtTarget* para liberar el bloque de formato.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,12 +73,12 @@ Después de que el método vuelva, llame a [**FreeMediaType**](freemediatype.md)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

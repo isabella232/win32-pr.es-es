@@ -1,5 +1,5 @@
 ---
-description: Null indica el caso normal (el archivo está disponible sin conexión). El caso parcial es solo para las carpetas en las que es posible que algún contenido esté disponible sin conexión y otros no.
+description: Null indica el caso normal (el archivo está disponible sin conexión). El caso parcial es solo para carpetas en las que es posible que algún contenido esté disponible sin conexión y otros no.
 ms.assetid: 46b03632-702e-46df-8204-33ada85adbee
 title: System.FileOfflineAvailabilityStatus
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118727453"
 ---
 # <a name="systemfileofflineavailabilitystatus"></a>System.FileOfflineAvailabilityStatus
 
-Null indica el caso normal (el archivo está disponible sin conexión). El caso parcial es solo para las carpetas en las que es posible que algún contenido esté disponible sin conexión y otros no.
+Null indica el caso normal (el archivo está disponible sin conexión). El caso parcial es solo para carpetas en las que es posible que algún contenido esté disponible sin conexión y otros no.
 
 ## <a name="windows-10-version-1703"></a>Windows 10, versión 1703
 
@@ -91,7 +91,7 @@ propertyDescription
             defineToken = FILEOFFLINEAVAILABILITYSTATUS_PROP_PARTIALLYAVAILABLEOFFLINE
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

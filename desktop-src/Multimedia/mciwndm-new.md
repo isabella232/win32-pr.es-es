@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_NEW (VFW. h)
-description: El \_ nuevo mensaje MCIWNDM crea un nuevo archivo para el dispositivo MCI actual. Puede enviar este mensaje explícitamente o mediante la macro MCIWndNew.
+title: MCIWNDM_NEW mensaje (Vfw.h)
+description: El mensaje MCIWNDM \_ NEW crea un nuevo archivo para el dispositivo MCI actual. Puede enviar este mensaje explícitamente o mediante la macro MCIWndNew.
 ms.assetid: 18b2340d-8303-415a-867f-bd346034db2a
 keywords:
-- Mensaje de MCIWNDM_NEW de Windows multimedia
+- MCIWNDM_NEW mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 293323cd0404da45e648024b35b7f96ef60fea61
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bca9c03aff08c07f3ab1d8337547de776aeab5c6623a34ddaa71bfada0bca4f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783085"
 ---
-# <a name="mciwndm_new-message"></a>MCIWNDM \_ nuevo mensaje
+# <a name="mciwndm_new-message"></a>Mensaje MCIWNDM \_ NEW
 
-El **\_ nuevo mensaje MCIWNDM** crea un nuevo archivo para el dispositivo MCI actual. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndNew**](/windows/desktop/api/Vfw/nf-vfw-mciwndnew) .
+El **mensaje MCIWNDM \_ NEW** crea un nuevo archivo para el dispositivo MCI actual. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndNew.**](/windows/desktop/api/Vfw/nf-vfw-mciwndnew)
 
 
 ```C++
@@ -38,30 +38,30 @@ lParam = (LPARAM) (LPVOID) lp;
 
 <dl> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntero a un búfer que contiene el nombre del dispositivo MCI que utilizará el archivo.
+Puntero a un búfer que contiene el nombre del dispositivo MCI que usará el archivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

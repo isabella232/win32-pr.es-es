@@ -1,21 +1,21 @@
 ---
-description: Este tema es el paso 7 del tutorial reproducción de audio y vídeo en DirectShow.
+description: Este tema es el paso 7 del tutorial Reproducción de audio y vídeo en DirectShow.
 ms.assetid: 2e542a2d-fc71-41d5-9abd-0dfa70719c0f
-title: 'Paso 7: controles de transporte'
+title: 'Paso 7: Controles de transporte'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b974ccc8c186b1915d2a6564870a0b177073544e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8253efab566f5dc14a0d0210a26e84cb0a50113389d54b7a871d818a17296ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072419"
 ---
-# <a name="step-7-transport-controls"></a>Paso 7: controles de transporte
+# <a name="step-7-transport-controls"></a>Paso 7: Controles de transporte
 
-Este tema es el paso 7 del tutorial [reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md). El código completo se muestra en el tema [ejemplo de reproducción de DirectShow](directshow-playback-example.md).
+Este tema es el paso 7 del tutorial [Reproducción de audio y](audio-video-playback-in-directshow.md)vídeo en DirectShow . El código completo se muestra en el tema DirectShow [ejemplo de reproducción](directshow-playback-example.md).
 
-El último paso es agregar los controles de transporte (reproducir, pausar y detener). Para reproducir el archivo, llame a [**IMediaControl:: Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run).
+El último paso es agregar controles de transporte (reproducir, pausar y detener). Para reproducir el archivo, llame a [**IMediaControl::Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run).
 
 
 ```C++
@@ -37,7 +37,7 @@ HRESULT DShowPlayer::Play()
 
 
 
-Para pausar, llame a [**IMediaControl::P ause**](/windows/desktop/api/Control/nf-control-imediacontrol-pause).
+Para pausar, llame [**a IMediaControl::P ause**](/windows/desktop/api/Control/nf-control-imediacontrol-pause).
 
 
 ```C++
@@ -59,7 +59,7 @@ HRESULT DShowPlayer::Pause()
 
 
 
-Para detenerse, llame a [**IMediaControl:: Stop**](/windows/desktop/api/Control/nf-control-imediacontrol-stop).
+Para detener, llame a [**IMediaControl::Stop**](/windows/desktop/api/Control/nf-control-imediacontrol-stop).
 
 
 ```C++
@@ -88,7 +88,7 @@ HRESULT DShowPlayer::Stop()
 [Reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Ejemplo de reproducción de DirectShow](directshow-playback-example.md)
+[DirectShow Ejemplo de reproducción](directshow-playback-example.md)
 </dt> <dt>
 
 [Estados de filtro](filter-states.md)

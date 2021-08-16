@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 50de9a73438e2755e002570f921d15e6086a4b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7d338c94c4e9655c125b0f70e3f2e8dfa732316a970c74c26e4a7fbced22671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769930"
 ---
 # <a name="certstoreprovgetcertproperty-callback-function"></a>Función de devolución de llamada CertStoreProvGetCertProperty
 
-La función de devolución de llamada **CertStoreProvGetCertProperty** recupera una propiedad especificada de un certificado.
+La **función de devolución de llamada CertStoreProvGetCertProperty** recupera una propiedad especificada de un certificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,51 +43,51 @@ BOOL WINAPI CertStoreProvGetCertProperty(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+**Identificador de HCERTSTOREPROV** a un [*almacén de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCertContext* \[ de\]
+*pCertContext* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ contexto de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) .
+Puntero a una [**estructura CERT \_ CONTEXT.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 
 </dd> <dt>
 
-*dwPropId* \[ de\]
+*dwPropId* \[ En\]
 </dt> <dd>
 
 Indica un identificador de propiedad.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> <dt>
 
-*pvData* \[ enuncia\]
+*pvData* \[ out\]
 </dt> <dd>
 
-Puntero a un búfer que va a contener el puntero a una estructura de [**\_ contexto de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) que va a devolver la función. Se puede establecer en **null** en una primera llamada a la función para obtener el valor de *pcbData* antes de asignar memoria para el búfer.
+Puntero a un búfer que contiene el puntero a una estructura [**CERT \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) que va a devolver la función. Se puede establecer en **NULL en** una primera llamada a la función para obtener el valor de *pwData antes* de asignar memoria para el búfer.
 
 </dd> <dt>
 
-*pcbData* \[ in, out\]
+*pwData* \[ in, out\]
 </dt> <dd>
 
-Un puntero a un **valor DWORD** que indica la longitud del búfer *pvData* .
+Puntero a un **DWORD** que indica la longitud del *búfer pvData.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la función se ejecuta correctamente o **false** si se produce un error.
+Devuelve **TRUE** si la función se realiza correctamente o **FALSE** si se produce un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,16 +95,16 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**contexto de certificado \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO \_ DE CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> </dl>
 
  

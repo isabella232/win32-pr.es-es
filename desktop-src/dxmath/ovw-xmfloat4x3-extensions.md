@@ -1,22 +1,22 @@
 ---
-description: XMFLOAT4X3 describe una matriz de 4 \* 3 puntos flotantes.
+description: XMFLOAT4X3 describe una matriz de \* punto flotante de 4 3.
 ms.assetid: 6745ae3e-a0b5-4b3d-99d3-b6b024e1bea4
-title: Extensiones de XMFLOAT4X3
+title: Extensiones XMFLOAT4X3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b7b8cbb70965d0e9b8508234a82492188bc7938
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04fef2e31648f744a652c220e7a68c9979533ca2ab14dd1211eb894c4a8989bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118412"
 ---
-# <a name="xmfloat4x3-extensions"></a>Extensiones de XMFLOAT4X3
+# <a name="xmfloat4x3-extensions"></a>Extensiones XMFLOAT4X3
 
-[**XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3) describe una matriz de 4 \* 3 puntos flotantes.
+[**XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3) describe una matriz de \* punto flotante de 4 3.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

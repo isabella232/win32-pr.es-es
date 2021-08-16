@@ -2,7 +2,7 @@
 description: Descomprime el archivo de paginación lógico (o directorio) especificado en la ruta de acceso del objeto.
 ms.assetid: 9bd98ba8-068e-49af-8dd4-e5ee987eb31d
 ms.tgt_platform: multiple
-title: Método UNCOMPRESS de la clase Win32_PageFile
+title: Método Descomprimir de la Win32_PageFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 45a5b48ffa6b2249992b61eadf72f42f6d71969b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9eb9a7729ecf7a414a25ad3156237676681e94bc43a0f394b6bd6f12add0eb22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834585"
 ---
-# <a name="uncompress-method-of-the-win32_pagefile-class"></a>Método UNCOMPRESS de la clase de archivo de \_ paginación Win32
+# <a name="uncompress-method-of-the-win32_pagefile-class"></a>Método Descomprimir de la clase PageFile de Win32 \_
 
-El método de clase **descomprimir** [WMI](/windows/desktop/WmiSdk/retrieving-a-class) descomprime el archivo de paginación lógico (o directorio) especificado en la ruta de acceso del objeto.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Uncompress** descomprime el archivo de paginación lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el archivo se ha descomprimido correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si el archivo se descomprimió correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -141,24 +141,24 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Archivo de \_ paginación Win32**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

@@ -47,7 +47,7 @@ Hay algunas restricciones en las declaraciones de vértices con (D3DDECLUSAGE \_
 -   Solo se puede usar el flujo cero en estas declaraciones.
 -   Los elementos de vértice deben ordenarse aumentando el desplazamiento de flujo.
 -   El desplazamiento de flujo debe estar alineado con DWORD.
--   El mismo par (Uso, Índice de uso) debe aparecer solo una vez.
+-   El mismo par (uso, índice de uso) debe aparecer solo una vez.
 -   Solo se puede usar el método D3DDECLMETHOD \_ DEFAULT.
 -   Otros elementos de vértice no pueden tener la semántica (D3DDECLUSAGE \_ POSITION, 0).
 
@@ -55,11 +55,11 @@ Además, hay algunas restricciones en esta declaración relacionadas con la vers
 
 ## <a name="vertex-declarations-without-d3ddeclusage_positiont"></a>Declaraciones de vértices sin D3DDECLUSAGE \_ POSITIONT
 
-Runtime valida la creación de declaraciones. A continuación se den las reglas generales para las declaraciones que son legales.
+Runtime valida la creación de declaraciones. A continuación se muestra las reglas generales para las declaraciones que son legales.
 
 -   Todos los elementos de vértice de una secuencia deben ser consecutivos y ordenarse por desplazamiento.
 -   El desplazamiento de flujo debe estar alineado con DWORD.
--   El mismo par (Uso, Índice de uso) debe aparecer solo una vez.
+-   El mismo par (uso, índice de uso) debe aparecer solo una vez.
 -   Si D3DDEVCAPS2 \_ VERTEXELEMENTSCANSHARESTREAMOFFSET está establecido,
     -   Varios elementos de vértice pueden compartir el mismo desplazamiento en una secuencia.
     -   Todos los elementos de vértice pueden ser de distintos tipos, que pueden tener tamaños diferentes.

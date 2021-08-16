@@ -4,8 +4,8 @@ description: Número de días antes de que se quite un objeto eliminado de los s
 ms.assetid: 58898097-912b-4fe6-b6ea-91f49aaa2b1b
 ms.tgt_platform: multiple
 keywords:
-- Tombstone-Lifetime esquema de AD de atributo
-- tombstoneLifetime attribute AD Schema (Esquema de AD del atributo tombstoneLifetime)
+- Tombstone-Lifetime esquema de AD del atributo
+- tombstoneLifetime attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119644955"
 ---
 # <a name="tombstone-lifetime-attribute"></a>Tombstone-Lifetime atributo
 
-Número de días antes de que se quite un objeto eliminado de los servicios de directorio. Esto ayuda a quitar objetos de los servidores replicados e impedir que las restauraciones repliquen un objeto eliminado. Este valor está en el objeto Servicio de directorio de la NIC de configuración.
+Número de días antes de que se quite un objeto eliminado de los servicios de directorio. Esto ayuda a quitar objetos de servidores replicados e impedir que las restauraciones repliquen un objeto eliminado. Este valor está en el objeto Servicio de directorio de la NIC de configuración.
 
 
 
@@ -32,7 +32,7 @@ Número de días antes de que se quite un objeto eliminado de los servicios de d
 | CN                | Tombstone-Lifetime                                        |
 | Ldap-Display-Name | tombstoneLifetime                                         |
 | Size              | 4 bytes. El valor predeterminado es 60 días cuando no se introduce ningún valor. |
-| Actualizar privilegios  | \-                                                        |
+| Privilegio actualizar  | \-                                                        |
 | Frecuencia de actualización  | \-                                                        |
 | Attribute-Id      | 1.2.840.113556.1.2.54                                     |
 | System-Id-Guid    | 16c3a860-1273-11d0-a060-00aa006c33ed                      |

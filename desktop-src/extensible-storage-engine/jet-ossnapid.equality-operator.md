@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_OSSNAPID. Operador de igualdad'
+description: 'Más información sobre: JET_OSSNAPID. Operador de igualdad'
 title: JET_OSSNAPID. Operador de igualdad
 TOCTitle: 'Equality operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_OSSNAPID.op_Equality(Microsoft.Isam.Esent.Interop.JET_OSSNAPID,Microsoft.Isam.Esent.Interop.JET_OSSNAPID)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9a0fcd5d1edba1a0c3d05fe2b1778741626832d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5512a41505d9af0a995e0f2dcf16662bfd6abe4e9ba1cf79c21a1265d95bce48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107694"
 ---
 # <a name="jet_ossnapidequality-operator"></a>JET_OSSNAPID. Operador de igualdad
 
 Determina si dos instancias especificadas de JET_OSSNAPID son iguales.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,29 +64,29 @@ public static bool operator ==(
 
 #### <a name="parameters"></a>Parámetros
 
-  - LHS  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
     Primera instancia que se va a comparar.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
     Segunda instancia que se va a comparar.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID estructura](./jet-ossnapid-structure.md)
 
-[Miembros de JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID miembros](./jet-ossnapid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

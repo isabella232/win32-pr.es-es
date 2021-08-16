@@ -1,5 +1,5 @@
 ---
-description: Fecha y hora en que el archivo se importó en una base de datos de aplicación privada.
+description: Fecha y hora en que se importó el archivo en una base de datos de aplicación privada.
 ms.assetid: b859c2c9-0985-451c-be05-e17101bc2f3c
 title: System.DateImported
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118728993"
 ---
 # <a name="systemdateimported"></a>System.DateImported
 
-Fecha y hora en que el archivo se importó en una base de datos de aplicación privada. Por ejemplo, esta propiedad se puede usar cuando se importa una foto en una base de datos de fotos. Esta propiedad no es la misma que [System.DateAcquired.](./props-system-dateacquired.md)
+Fecha y hora en que se importó el archivo en una base de datos de aplicación privada. Por ejemplo, esta propiedad se puede usar cuando se importa una foto en una base de datos de fotos. Esta propiedad no es la misma que [System.DateAcquired.](./props-system-dateacquired.md)
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -44,7 +44,7 @@ propertyDescription
       type = DateTime
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

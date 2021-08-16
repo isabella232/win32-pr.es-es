@@ -13,15 +13,15 @@ ms.locfileid: "118708924"
 ---
 # <a name="federated-search"></a>Búsqueda federada
 
-Windows 7 admite la búsqueda de documentos más allá del equipo del usuario. Los desarrolladores y profesionales de TI pueden habilitar sus motores de búsqueda, repositorios de documentos, aplicaciones web y almacenes de datos propietarios para realizar búsquedas desde Windows 7 sin necesidad de escribir e implementar código de cliente. Esto permite a los usuarios finales buscar en su intranet corporativa o en la web con la misma facilidad que pueden buscar sus archivos locales, todo ello desde la misma interfaz de Windows conocida.
+Windows 7 admite la búsqueda de documentos más allá del equipo del usuario. Los desarrolladores y profesionales de TI pueden permitir que sus motores de búsqueda, repositorios de documentos, aplicaciones web y almacenes de datos propietarios se busquen desde Windows 7 sin necesidad de escribir e implementar código de cliente. Esto permite a los usuarios finales buscar en su intranet corporativa o en la web con la misma facilidad que pueden buscar sus archivos locales, todo ello desde la misma interfaz de Windows conocida.
 
-Windows compatibilidad con *OpenSearch* 7 pueden agregar desarrolladores y profesionales de TI a cualquier aplicación web en la que se puedan realizar búsquedas mediante la adición de salida *RSS* o *ATOM* tal como se define en el estándar [OpenSearch](http://www.opensearch.org/) público. *OpenSearch* los desarrolladores y usuarios avanzados pueden crear los archivos de descripción para definir los parámetros de conexión que permiten al cliente de escritorio crear un conector de búsqueda para el servicio.
+Windows compatibilidad con OpenSearch  7 compatibles pueden agregar desarrolladores y profesionales de TI a cualquier aplicación web en la [](http://www.opensearch.org/) que se puedan realizar búsquedas mediante la adición de salida *RSS* o *ATOM* tal como se define en el estándar de OpenSearch público. *OpenSearch* los desarrolladores y usuarios avanzados pueden crear los archivos de descripción para definir los parámetros de conexión que permiten al cliente de escritorio crear un conector de búsqueda para el servicio.
 
-SharePoint Search Server también puede consultar estos servicios de *OpenSearch* compatibles. Esto permite el acceso al servicio de búsqueda desde la *SharePoint* web del centro de búsqueda.
+SharePoint Search Server también puede consultar estos *servicios* OpenSearch compatibles. Esto permite el acceso al servicio de búsqueda desde la *SharePoint* web del centro de búsqueda.
 
 ![búsqueda de sharepoint en Windows 7](images/windows7-12.jpg)
 
-Windows 7 admite la búsqueda de documentos más allá del propio equipo del usuario, así como una vista previa de los resultados de búsqueda
+Windows 7 admite la búsqueda de documentos más allá del equipo del usuario, así como una vista previa de los resultados de la búsqueda.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -55,11 +55,11 @@ Cadena que indica el valor del miembro **AceType** de la [**estructura ACE \_ HE
 | "XU"            | AUDITORÍA DE DEVOLUCIÓN DE LLAMADA DE SDDL \_ \_                   | SYSTEM \_ AUDIT \_ CALLBACK ACE TYPE Windows Server \_ \_ **2008 R2, Windows 7, Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible.<br/>     |
 | "ZA"            | ACCESO PERMITIDO A OBJETOS \_ DE DEVOLUCIÓN \_ DE LLAMADA \_ DE \_ SDDL | ACCESS \_ ALLOWED \_ CALLBACK ACE TYPE Windows Server \_ \_ **2008 R2, Windows 7, Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible.<br/>   |
 | "TL"            | ETIQUETA DE \_ CONFIANZA DEL PROCESO \_ \_ SDDL             | SYSTEM \_ PROCESS TRUST LABEL ACE TYPE \_ \_ \_ \_ **Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible. |
-| "FL"            | FILTRO DE \_ ACCESO \_ SDDL                    | TIPO \_ ACE DE FILTRO DE ACCESO DEL SISTEMA \_ \_ \_ **Windows Server 2016, Windows 10 versión 1607, Windows 10 versión 1511, Windows 10 versión 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible. |
+| "FL"            | FILTRO DE \_ ACCESO DE \_ SDDL                    | TIPO \_ ACE DE FILTRO DE ACCESO DEL SISTEMA \_ \_ \_ **Windows Server 2016, Windows 10 versión 1607, Windows 10 versión 1511, Windows 10 versión 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible. |
  
 
 > [!Note]  
-> Si **\_ el** tipo ace es ACCESS ALLOWED OBJECT ACE TYPE y ni guid de objeto ni guid de objeto heredado tienen un \_ \_ \_ \_ **\_ \_ GUID** especificado, [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) **\_** **\_** [](/windows/win32/api/guiddef/ns-guiddef-guid) \_ \_ \_ convierte el tipo ace en ACCESS ALLOWED ACE TYPE.
+> Si **\_ el** tipo ace es ACCESS ALLOWED OBJECT ACE TYPE y ni guid de objeto ni guid de objeto heredado tienen un \_ \_ \_ GUID \_ especificado, [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) **\_** **\_ \_** [](/windows/win32/api/guiddef/ns-guiddef-guid) **\_** \_ \_ \_ convierte el tipo ace en ACCESS ALLOWED ACE TYPE.
 
  
 
@@ -77,12 +77,12 @@ Cadena que indica el valor del miembro **AceFlags** de la [**estructura ACE \_ H
 | "CI"             | SDDL \_ CONTAINER \_ INHERIT | ACE \_ DE HERENCIA DE \_ CONTENEDOR       |
 | "OI"             | SDDL \_ OBJECT \_ INHERIT    | ACE \_ DE HERENCIA DE \_ OBJETO          |
 | "NP"             | SDDL \_ NO \_ PROPAGATE      | NO \_ PROPAGATE \_ INHERIT \_ ACE   |
-| "E/S"             | SDDL \_ INHERIT \_ ONLY      | HEREDAR \_ SOLO \_ ACE            |
+| "E/S"             | SOLO HERENCIA \_ DE \_ SDDL      | HEREDAR \_ SOLO \_ ACE            |
 | "ID"             | SDDL \_ HEREDADO          | ACE \_ HEREDADA                |
 | "SA"             | SDDL \_ AUDIT \_ SUCCESS     | MARCA \_ ACE DE ACCESO \_ \_ CORRECTO |
 | "FA"             | ERROR DE \_ AUDITORÍA DE \_ SDDL     | MARCA \_ ACE DE ACCESO CON \_ \_ ERROR     |
 | "TP"             | FILTRO PROTEGIDO \_ DE CONFIANZA \_ DE \_ SDDL | TRUST \_ PROTECTED FILTER ACE FLAG \_ \_ \_ **Windows Server 2016, Windows 10 versión 1607, Windows 10 versión 1511, Windows 10 versión 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible. |
-| "CR"             | SDDL \_ CRITICAL           | MARCA \_ ACE CRÍTICA Windows server versión \_ **1803, Windows 10 versión 1803, Windows Server versión 1709, Windows 10 versión 1709, Windows 10 versión 1703, Windows Server 2016, Windows 10 versión 1607, Windows 10 versión 1511, Windows 10 versión 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible. |
+| "CR"             | SDDL \_ CRITICAL           | MARCA \_ ACE CRÍTICA Windows Server versión \_ **1803, Windows 10 versión 1803, Windows Server versión 1709, Windows 10 versión 1709, Windows 10 versión 1703, Windows Server 2016, Windows 10 versión 1607, Windows 10 versión 1511, Windows 10 versión 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista y Windows Server 2003:** No disponible. |
  
 
 </dd> <dt>
@@ -118,7 +118,7 @@ Cadena que indica los derechos [de acceso controlados](access-rights-and-access-
 | Cadena de derechos de acceso | Constante en Sddl.h | Valor derecho de acceso |
 |----------------------|--------------------|--------------------|
 | "RP"                 | PROPIEDAD \_ READ de \_ SDDL | ADS \_ RIGHT \_ DS \_ READ \_ PROP |
-| "WP"                 | PROPIEDAD \_ WRITE DE \_ SDDL | ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
+| "WP"                 | PROPIEDAD \_ DE ESCRITURA DE \_ SDDL | ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
 | "CC"                 | SDDL \_ CREATE \_ CHILD | ADS \_ RIGHT \_ DS \_ CREATE \_ CHILD |
 | "DC"                 | SDDL \_ DELETE \_ CHILD | ADS \_ RIGHT \_ DS \_ DELETE \_ CHILD |
 | "LC"                 | SDDL \_ LIST \_ CHILDREN | ADS \_ RIGHT \_ ACTRL \_ DS \_ LIST |
@@ -131,7 +131,7 @@ Cadena que indica los derechos [de acceso controlados](access-rights-and-access-
 
 | Cadena de derechos de acceso | Constante en Sddl.h | Valor derecho de acceso |
 |----------------------|--------------------|--------------------|
-| "FA"                 | ARCHIVO SDDL \_ \_ ALL    | ACCESO A \_ TODOS LOS \_ ARCHIVOS   |
+| "FA"                 | ARCHIVO SDDL \_ \_ ALL    | FILE \_ ALL \_ ACCESS   |
 | "FR"                 | LECTURA DE ARCHIVOS SDDL \_ \_   | LECTURA \_ GENÉRICA DE \_ ARCHIVOS |
 | "FW"                 | ESCRITURA DE \_ ARCHIVOS \_ SDDL  | ESCRITURA \_ GENÉRICA DE \_ ARCHIVOS |
 | "FX"                 | SDDL \_ FILE \_ EXECUTE | FILE \_ GENERIC \_ EXECUTE |
@@ -152,13 +152,13 @@ Cadena que indica los derechos [de acceso controlados](access-rights-and-access-
 |----------------------|--------------------|--------------------|
 | "NR"                 | SDDL \_ NO \_ READ \_ UP | SYSTEM \_ MANDATORY \_ LABEL NO READ UP Windows Server \_ \_ \_ **2008, Windows Vista y Windows Server 2003:** No disponible. |
 | "NW"                 | SDDL \_ NO \_ WRITE \_ UP | SYSTEM \_ MANDATORY \_ LABEL NO WRITE UP Windows Server \_ \_ \_ **2008, Windows Vista y Windows Server 2003:** No disponible. |
-| "NX"                 | SDDL \_ NO \_ EXECUTE \_ UP | ETIQUETA \_ OBLIGATORIA DEL SISTEMA NO EXECUTE UP Windows Server \_ \_ \_ \_ **2008, Windows Vista y Windows Server 2003:** No disponible. |
+| "NX"                 | SDDL \_ NO \_ EXECUTE \_ UP | SYSTEM \_ MANDATORY \_ LABEL NO EXECUTE UP Windows Server \_ \_ \_ **2008, Windows Vista y Windows Server 2003:** No disponible. |
 </dd> <dt>
 
 <span id="object_guid"></span><span id="OBJECT_GUID"></span>**GUID de \_ objeto**
 </dt> <dd>
 
-Representación de cadena de un GUID que indica el valor del **miembro ObjectType** de una estructura ACE específica del objeto, como [**ACCESS ALLOWED OBJECT \_ \_ \_ ACE**](/windows/desktop/api/Winnt/ns-winnt-access_allowed_object_ace). La cadena GUID usa el formato devuelto por la [**función UuidToString.**](/windows/desktop/api/rpcdce/nf-rpcdce-uuidtostring)
+Representación de cadena de un GUID que indica el valor del miembro **ObjectType** de una estructura ACE específica del objeto, como [**ACCESS ALLOWED OBJECT \_ \_ \_ ACE**](/windows/desktop/api/Winnt/ns-winnt-access_allowed_object_ace). La cadena GUID usa el formato devuelto por la [**función UuidToString.**](/windows/desktop/api/rpcdce/nf-rpcdce-uuidtostring)
 
 En la tabla siguiente se enumeran algunos GUID de objeto usados habitualmente.
 
@@ -264,7 +264,7 @@ Resource Attributes: Project has the strings Windows and SQL, Secrecy has the un
 
 
 
-Para obtener más información, vea [Formato de cadena de descriptor de seguridad](security-descriptor-string-format.md) y [Cadenas SID](sid-strings.md). Para las ACE condicionales, vea [Lenguaje de definición de descriptores de seguridad para ACE condicionales.](security-descriptor-definition-language-for-conditional-aces-.md)
+Para obtener más información, vea [Formato de cadena del descriptor de seguridad](security-descriptor-string-format.md) y [Cadenas SID](sid-strings.md). Para las ACE condicionales, vea [Lenguaje de definición de descriptores de seguridad para ACE condicionales.](security-descriptor-definition-language-for-conditional-aces-.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
