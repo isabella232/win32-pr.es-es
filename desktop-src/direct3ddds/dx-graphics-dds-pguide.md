@@ -95,7 +95,7 @@ La biblioteca D3DX (por ejemplo, D3DX11.lib) y otras bibliotecas similares de fo
 
 ## <a name="dds-variants"></a>Variantes de DDS
 
-Hay muchas herramientas que crean y consumen archivos DDS, pero pueden variar en los detalles de lo que requieren en el encabezado. Los escritores deben rellenar los encabezados lo máximo posible y los lectores deben comprobar los valores mínimos para obtener la máxima compatibilidad. Para validar un archivo DDS, un lector debe asegurarse de que el archivo tiene al menos 128 bytes para alojar el valor mágico y el encabezado básico, el valor mágico es 0x20534444 ("DDS"), el tamaño de ENCABEZADO de DDS es 124 y el PIXELFORMAT de DDS en el tamaño del encabezado \_ \_ es 32. Si DDS PIXELFORMAT dwFlags se establece en DDPF FOURCC y dwFourCC se establece en "DX10", el tamaño total del archivo debe ser de al menos \_ \_ 148 bytes.
+Hay muchas herramientas que crean y consumen archivos DDS, pero pueden variar en los detalles de lo que requieren en el encabezado. Los escritores deben rellenar los encabezados lo máximo posible y los lectores deben comprobar los valores mínimos para obtener la máxima compatibilidad. Para validar un archivo DDS, un lector debe asegurarse de que el archivo tiene al menos 128 bytes para alojar el valor mágico y el encabezado básico, el valor mágico es 0x20534444 ("DDS"), el tamaño del encabezado DDS es 124 y el PIXELFORMAT de DDS en el tamaño del encabezado \_ \_ es 32. Si DDS PIXELFORMAT dwFlags se establece en DDPF FOURCC y dwFourCC se establece en "DX10", el tamaño total del archivo debe ser de al menos \_ \_ 148 bytes.
 
 Hay algunas variantes comunes en uso en las que el formato de píxel se establece en un código FOURCC de DDPF donde dwFourCC se establece en un valor de enumeración \_ D3DFORMAT o DXGI \_ FORMAT. No hay ninguna manera de saber si un valor de enumeración es D3DFORMAT o DXGI FORMAT, por lo que se recomienda encarecidamente que la extensión "DX10" y el encabezado \_ DDS HEADER DXT10 se usen en su lugar para almacenar dxgiFormat cuando el PIXELFORMAT de DDS básico no pueda expresar \_ \_ el \_ formato.
 
@@ -185,9 +185,9 @@ for (int iArrayElement = 0; iArrayElement < header10.arraySize; iArrayElement++)
 
  
 
-\* = Un lector DDS sólido debe ser capaz de controlar estos códigos de formato heredados. Sin embargo, este tipo de lector DDS debe preferir usar la extensión de encabezado "DX10" cuando escribe estos códigos de formato para evitar ambigüedades.
+\* = Un lector DDS sólido debe ser capaz de controlar estos códigos de formato heredados. Sin embargo, este lector de DDS debe preferir usar la extensión de encabezado "DX10" cuando escribe estos códigos de formato para evitar ambigüedades.
 
-\*\* = Debido a algunos problemas de larga duración en implementaciones comunes de lectores y escritores de DDS, la manera más sólida de escribir datos de tipo 10:10:10:2 es usar la extensión de encabezado "DX10" con el código [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) "24" (es decir, el valor DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM). Los datos D3DFMT \_ A2R10G10B10 deben convertirse a datos de tipo 10:10:10:2 antes de escribirse como un archivo DDS con formato UNORM DXGI \_ FORMAT \_ R10G10B10A2. \_
+\*\* = Debido a algunos problemas de larga duración en implementaciones comunes de lectores y escritores de DDS, la manera más sólida de escribir datos de tipo 10:10:10:2 es usar la extensión de encabezado "DX10" con el código [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) "24" (es decir, el valor DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM). Los datos D3DFMT \_ A2R10G10B10 deben convertirse en datos de tipo 10:10:10:2 antes de escribirse como un archivo DDS con formato \_ DXGI FORMAT \_ R10G10B10A2 \_ UNORM.
 
 ## <a name="related-topics"></a>Temas relacionados
 

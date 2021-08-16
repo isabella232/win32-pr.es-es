@@ -4,7 +4,7 @@ description: Nombre para mostrar localizado de la propiedad.
 ms.assetid: 8f9e118a-9e92-4919-afe1-735c61af38f7
 keywords:
 - Características heredadas del entorno de Windows displayName
-- Propiedad DisplayName Legacy Windows Environment Features , IResultProperty (Interfaz IResultProperty)
+- Propiedad DisplayName Heredada de Windows Environment Features , IResultProperty (interfaz IResultProperty)
 - IResultProperty interface Legacy Windows Environment Features , DisplayName property
 topic_type:
 - apiref

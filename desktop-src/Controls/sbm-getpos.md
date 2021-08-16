@@ -71,7 +71,7 @@ El valor devuelto es la posición actual del cuadro de desplazamiento en la barr
 [**SBM \_ GETRANGE**](sbm-getrange.md)
 </dt> <dt>
 
-[**SETPOS de SBM \_**](sbm-setpos.md)
+[**SBM \_ SETPOS**](sbm-setpos.md)
 </dt> <dt>
 
 [**SETRANGE de SBM \_**](sbm-setrange.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_ENUMCOLUMNID. ToString (método)'
-title: JET_ENUMCOLUMNID. ToString (método)
+description: 'Más información sobre: JET_ENUMCOLUMNID. Método ToString'
+title: JET_ENUMCOLUMNID. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNID.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumnid.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 42d2c38936f071901063b02c22b23fa043571866
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b20a3b8335d8dde8db143455d98608050b36d06ae10cfe1d646647b7119e1cf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119110228"
 ---
-# <a name="jet_enumcolumnidtostring-method"></a>JET_ENUMCOLUMNID. ToString (método)
+# <a name="jet_enumcolumnidtostring-method"></a>JET_ENUMCOLUMNID. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [JET_ENUMCOLUMNID](./jet-enumcolumnid-class.md)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_ENUMCOLUMNID](./jet-enumcolumnid-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [JET_ENUMCOLUMNID](./jet-enumcolumnid-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el objeto [JET_ENUMCOLUMNID](./jet-enumcolumnid-class.md).  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMNID (clase)](./jet-enumcolumnid-class.md)
+[JET_ENUMCOLUMNID clase](./jet-enumcolumnid-class.md)
 
-[Miembros de JET_ENUMCOLUMNID](./jet-enumcolumnid-members.md)
+[JET_ENUMCOLUMNID miembros](./jet-enumcolumnid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

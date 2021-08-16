@@ -1,5 +1,5 @@
 ---
-description: Se trata de una tabla temporal de solo lectura que se usa para ver las transformaciones con el modo de vista de transformación. El instalador nunca conserva esta tabla.
+description: Se trata de una tabla temporal de solo lectura que se usa para ver transformaciones con el modo de vista de transformación. El instalador nunca conserva esta tabla.
 ms.assetid: 4763ac0e-900f-45f1-bee5-34d413c5e401
 title: _TransformView tabla
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118640470"
 ---
 # <a name="_transformview-table"></a>\_Tabla TransformView
 
-Se trata de una tabla temporal de solo lectura que se usa para ver las transformaciones con el modo de vista de transformación. El instalador nunca conserva esta tabla.
+Se trata de una tabla temporal de solo lectura que se usa para ver transformaciones con el modo de vista de transformación. El instalador nunca conserva esta tabla.
 
-Para invocar el modo de vista de transformación, obtenga un identificador y abra la base de datos de referencia. Vea [Obtener un identificador de base de datos](obtaining-a-database-handle.md). Llame [**a MsiDatabaseApplyTransform con**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseapplytransforma) MSITRANSFORM ERROR \_ \_ VIEWTRANSFORM. Esto impide que la transformación se aplique a la base de datos y vuelca el contenido de la transformación en la \_ tabla TransformView. Se puede acceder a los datos de la tabla mediante SQL consultas. Consulte [Trabajar con consultas](working-with-queries.md).
+Para invocar el modo de vista de transformación, obtenga un identificador y abra la base de datos de referencia. Vea [Obtener un identificador de base de datos](obtaining-a-database-handle.md). Llame [**a MsiDatabaseApplyTransform con**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseapplytransforma) EL ERROR DE MSITRANSFORM \_ \_ VIEWTRANSFORM. Esto impide que la transformación se aplique a la base de datos y vuelca el contenido de la transformación en la \_ tabla TransformView. Se puede acceder a los datos de la tabla mediante SQL consultas. Vea [Trabajar con consultas](working-with-queries.md).
 
 La \_ tabla TransformView no se borra cuando se aplica otra transformación. La tabla refleja el efecto acumulativo de las aplicaciones sucesivas. Para ver las transformaciones por separado, debe liberar la tabla.
 
@@ -23,12 +23,12 @@ La \_ tabla TransformView tiene las columnas siguientes.
 
 
 
-| Columna  | Tipo                         | Key | Nullable |
+| Columna  | Tipo                         | Clave | Nullable |
 |---------|------------------------------|-----|----------|
 | Tabla   | [Identificador](identifier.md) | Y   | N        |
 | Columna  | [Texto](text.md)             | Y   | N        |
 | Fila     | [Texto](text.md)             | Y   | Y        |
-| data    | [Texto](text.md)             | N   | Y        |
+| Datos    | [Texto](text.md)             | N   | Y        |
 | Current | [Texto](text.md)             | N   | Y        |
 
 
@@ -74,15 +74,15 @@ Valor actual de la base de datos de referencia o columna un número.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-TransformView se mantiene en memoria mediante un recuento de bloqueos, que \_ se puede liberar con el siguiente SQL comando.
+TransformView se mantiene en memoria mediante un recuento de bloqueos, que se puede liberar \_ con el siguiente SQL comando.
 
 "ALTER TABLE \_ TransformView FREE".
 
 Se puede acceder a los datos de la tabla mediante SQL consultas. El lenguaje SQL tiene dos divisiones principales: Lenguaje de definición de datos (DDL) que se usa para definir todos los objetos de una base de datos de SQL y Lenguaje de manipulación de datos (DML) que se usa para seleccionar, insertar, actualizar y eliminar datos en los objetos definidos mediante DDL.
 
-Las operaciones de transformación del lenguaje de manipulación de datos (DML) se indican de la manera siguiente. El lenguaje de manipulación de datos (DML) son las instrucciones de SQL que manipulan, en lugar de definir, los datos.
+Las operaciones de transformación del Lenguaje de manipulación de datos (DML) se indican de la siguiente manera. Lenguaje de manipulación de datos (DML) son las instrucciones de SQL que manipulan, en lugar de definir, los datos.
 
 
 

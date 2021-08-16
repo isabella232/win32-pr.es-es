@@ -19,7 +19,7 @@ ms.locfileid: "118703030"
 ---
 # <a name="id3-tag-support"></a>Compatibilidad con etiquetas ID3
 
-En la tabla siguiente se enumeran todos los atributos que corresponden a las etiquetas ID3. Si desea usar las etiquetas ID3 como atributos en lugar de usar los nombres de atributo estándar, agregue el prefijo "ID3/" al nombre de etiqueta. Por ejemplo, "ID3/TPE2" equivale a **Author**.
+En la tabla siguiente se enumeran todos los atributos que corresponden a las etiquetas ID3. Si quiere usar las etiquetas ID3 como atributos en lugar de usar los nombres de atributo estándar, agregue el prefijo "ID3/" al nombre de etiqueta. Por ejemplo, "ID3/TPE2" equivale a **Author**.
 
 
 

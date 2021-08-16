@@ -1,5 +1,5 @@
 ---
-description: ICE53 comprueba las entradas de la tabla registro que escriben información privada del instalador o valores de directiva en el registro del sistema.
+description: ICE53 comprueba las entradas de la tabla del Registro que escriben información del instalador privado o valores de directiva en el registro del sistema.
 ms.assetid: f5afca1f-bd36-4f95-a62a-f6b2e37238a6
 title: ICE53
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118635136"
 ---
 # <a name="ice53"></a>ICE53
 
-ICE53 comprueba las entradas de la tabla registro que escriben información privada del instalador o valores de directiva en el registro del sistema.
+ICE53 comprueba las entradas de la tabla del Registro que escriben información del instalador privado o valores de directiva en el registro del sistema.
 
 ## <a name="result"></a>Resultado
 
@@ -21,7 +21,7 @@ ICE53 envía una advertencia si la tabla del Registro especifica la escritura de
 
 ## <a name="example"></a>Ejemplo
 
-ICE53 publica la advertencia siguiente para el ejemplo mostrado.
+ICE53 publica la siguiente advertencia para el ejemplo que se muestra.
 
 ``` syntax
 Registry Key 'Registry1' writes Installer internal or policy information.
@@ -31,7 +31,7 @@ Registry Key 'Registry1' writes Installer internal or policy information.
 
 
 
-| Registro             | Root         | Key                                                                                                   |
+| Registro             | Root         | Clave                                                                                                   |
 |----------------------|--------------|-------------------------------------------------------------------------------------------------------|
 | Registry1<br/> | 1<br/> | **Software** \\ **Directivas** \\ **Microsoft** \\ **Windows** \\ **Instalador** \\ **DisableRollback**<br/> |
 
@@ -39,7 +39,7 @@ Registry Key 'Registry1' writes Installer internal or policy information.
 
  
 
-La fila de tabla del Registro "Registry1" escribe un valor de directiva del sistema en el Registro que afecta a la instalación de todos los paquetes. En función del paquete, puede ser posible deshabilitar la reversión solo para este paquete estableciendo la propiedad [**DISABLEROLLBACK**](-disablerollback.md) en la [tabla Property](property-table.md). Vea [Instalación de reversión.](rollback-installation.md)
+La fila de tabla del Registro "Registry1" escribe un valor de directiva del sistema en el Registro que afecta a la instalación de todos los paquetes. En función del paquete, puede ser posible deshabilitar la reversión solo para este paquete estableciendo la [**propiedad DISABLEROLLBACK**](-disablerollback.md) en la [tabla Property](property-table.md). Consulte [Instalación de reversión.](rollback-installation.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

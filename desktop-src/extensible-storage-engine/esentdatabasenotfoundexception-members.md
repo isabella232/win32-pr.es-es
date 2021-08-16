@@ -19,7 +19,7 @@ ms.locfileid: "118780994"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones databaseNotFound.
+Clase base para JET_err. DatabaseNotFound, excepciones.
 
 El [tipo EsentDatabaseNotFoundException](./esentdatabasenotfoundexception-class.md) expone los miembros siguientes.
 

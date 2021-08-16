@@ -1,7 +1,7 @@
 ---
 description: Asocia un objeto ID3DXTextureGutterHelper al objeto ID3DXPRTBuffer.
 ms.assetid: 095fea82-ac7a-42fa-990a-084715c73823
-title: 'ID3DXPRTBuffer:: AttachGH (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTBuffer::AttachGH (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1ba5afa238107d60620291b50b8f184eb4e5d361
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: afb625c0f8db9d04737420ab386095bbe70b3e0f23e375f75c212da71e59b0cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801953"
 ---
-# <a name="id3dxprtbufferattachgh-method"></a>ID3DXPRTBuffer:: AttachGH (método)
+# <a name="id3dxprtbufferattachgh-method"></a>Método ID3DXPRTBuffer::AttachGH
 
-Asocia un objeto [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) al objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) .
+Asocia un [**objeto ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) al [**objeto ID3DXPRTBuffer.**](id3dxprtbuffer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT AttachGH(
 
 <dl> <dt>
 
-*pGH* \[ de\]
+*pGH* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXTEXTUREGUTTERHELPER**](id3dxtexturegutterhelper.md)**
 
-Puntero a la interfaz [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) de un objeto que contiene los datos de medianil de textura.
+Puntero a la [**interfaz ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) de un objeto que contiene datos de medianera de textura.
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Puntero a la interfaz [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El recuento de referencias del objeto [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) se incrementará automáticamente en uno. Se liberarán todos los punteros de **ID3DXTextureGutterHelper** existentes.
+El recuento de referencias del [**objeto ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) se incrementará automáticamente en uno. Se **liberarán los punteros ID3DXTextureGutterHelper** existentes.
 
-Debe asegurarse de que el número de llamadas a **ID3DXPRTBuffer:: AttachGH** coincide con el número de llamadas [**ID3DXPRTBuffer:: ReleaseGH**](id3dxprtbuffer--releasegh.md) . Después de llamar a **ID3DXPRTBuffer:: ReleaseGH**, ya no se debe usar el puntero pGH devuelto por **ID3DXPRTBuffer:: AttachGH** .
+Debe asegurarse de que el número de llamadas **ID3DXPRTBuffer::AttachGH** coincide con el número de llamadas [**ID3DXPRTBuffer::ReleaseGH.**](id3dxprtbuffer--releasegh.md) Después de **llamar a ID3DXPRTBuffer::ReleaseGH,** ya no se debe usar el puntero pGH devuelto por **ID3DXPRTBuffer::AttachGH.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,12 +67,12 @@ Debe asegurarse de que el número de llamadas a **ID3DXPRTBuffer:: AttachGH** co
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

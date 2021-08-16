@@ -26,7 +26,7 @@ Se usa para almacenar una o varias imágenes de una persona mediante el formato 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | jpegPhoto                                             |
 | Ldap-Display-Name | jpegPhoto                                             |
@@ -51,14 +51,14 @@ Se usa para almacenar una o varias imágenes de una persona mediante el formato 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
@@ -72,14 +72,14 @@ Se usa para almacenar una o varias imágenes de una persona mediante el formato 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
@@ -93,14 +93,14 @@ Se usa para almacenar una o varias imágenes de una persona mediante el formato 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
@@ -114,14 +114,14 @@ Se usa para almacenar una o varias imágenes de una persona mediante el formato 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
@@ -135,14 +135,14 @@ Se usa para almacenar una o varias imágenes de una persona mediante el formato 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |

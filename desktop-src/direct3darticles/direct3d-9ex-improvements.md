@@ -13,7 +13,7 @@ ms.locfileid: "118797021"
 ---
 # <a name="direct3d-9ex-improvements"></a>Mejoras de Direct3D 9Ex
 
-En este tema se Windows compatibilidad agregada de Windows 7 para el modo de volteo presente y sus estadísticas presentes asociadas en Direct3D 9Ex y Administrador de ventanas de escritorio. Las aplicaciones de destino incluyen aplicaciones de presentación basadas en velocidad de fotogramas o vídeo. Las aplicaciones que usan direct3D 9Ex Flip Mode Present reducen la carga de recursos del sistema cuando DWM está habilitado. Presentar mejoras de estadísticas asociadas con el modo de volteo presente permite que las aplicaciones de Direct3D 9Ex controle mejor la tasa de presentación al proporcionar comentarios en tiempo real y mecanismos de corrección. Se incluyen explicaciones detalladas y punteros a recursos de ejemplo.
+En este tema se Windows compatibilidad agregada de Windows 7 para el modo de volteo presente y sus estadísticas presentes asociadas en Direct3D 9Ex y Administrador de ventanas de escritorio. Las aplicaciones de destino incluyen aplicaciones de presentación basadas en velocidad de fotogramas o vídeo. Las aplicaciones que usan direct3D 9Ex Flip Mode Present reducen la carga de recursos del sistema cuando DWM está habilitado. Presentar mejoras de estadísticas asociadas con el modo de volteo presente permite a las aplicaciones de Direct3D 9Ex controlar mejor la tasa de presentación al proporcionar comentarios en tiempo real y mecanismos de corrección. Se incluyen explicaciones detalladas y punteros a recursos de ejemplo.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -21,7 +21,7 @@ En este tema se incluyen las siguientes secciones.
 -   [Presentación del modo de volteo de Direct3D 9EX](#direct3d-9ex-flip-mode-presentation)
 -   [Modelo de programación y API](#programming-model-and-apis)
     -   [Cómo participar en el modelo de volteo de Direct3D 9Ex](#how-to-opt-into-the-direct3d-9ex-flip-model)
-    -   [Directrices de diseño para aplicaciones direct3D 9Ex Flip Model](#design-guidelines-for-direct3d-9ex-flip-model-applications)
+    -   [Directrices de diseño para aplicaciones de direct3D 9Ex Flip Model](#design-guidelines-for-direct3d-9ex-flip-model-applications)
     -   [Sincronización de fotogramas de aplicaciones de modelo de Volteo de Direct3D 9Ex](#frame-synchronization-of-direct3d-9ex-flip-model-applications)
     -   [Sincronización de fotogramas para aplicaciones en ventanas cuando DWM está desactivado](#frame-synchronization-for-windowed-applications-when-dwm-is-off)
 -   [Recorrido por un modelo de volteo de Direct3D 9Ex y ejemplo de presentación de estadísticas](#walk-through-of-a-direct3d-9ex-flip-model-and-present-statistics-sample)
@@ -32,7 +32,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="whats-improved-about-direct3d-9ex-for-windows-7"></a>Mejoras en Direct3D 9Ex para Windows 7
 
-La presentación en modo de volteo de Direct3D 9Ex es un modo mejorado de presentación de imágenes en Direct3D 9Ex que entrega eficazmente imágenes representados Windows 7 Administrador de ventanas de escritorio (DWM) para la composición. A partir Windows Vista, DWM compone todo el escritorio. Cuando DWM está habilitado, las aplicaciones en modo de ventana presentan su contenido en el escritorio mediante un método denominado Blt Mode Present to DWM (o Blt Model). Con el modelo Blt, DWM mantiene una copia de la superficie representada de Direct3D 9Ex para la composición de escritorio. Cuando se actualiza la aplicación, el nuevo contenido se copia en la superficie dwm a través de un blt. En el caso de las aplicaciones que contienen contenido de Direct3D y GDI, los datos de GDI también se copian en la superficie dwm.
+La presentación en modo de volteo de Direct3D 9Ex es un modo mejorado de presentación de imágenes en Direct3D 9Ex que entrega eficazmente las imágenes representados a Windows 7 Administrador de ventanas de escritorio (DWM) para la composición. A partir Windows Vista, DWM compone todo el escritorio. Cuando DWM está habilitado, las aplicaciones en modo de ventana presentan su contenido en el escritorio mediante un método denominado Blt Mode Present to DWM (o Blt Model). Con el modelo Blt, DWM mantiene una copia de la superficie representada de Direct3D 9Ex para la composición de escritorio. Cuando se actualiza la aplicación, el nuevo contenido se copia en la superficie dwm a través de un blt. En el caso de las aplicaciones que contienen contenido de Direct3D y GDI, los datos de GDI también se copian en la superficie dwm.
 
 Disponible en Windows 7, el modo de volteo presente en DWM (o Flip Model) es un nuevo método de presentación que básicamente permite pasar identificadores de superficies de aplicación entre aplicaciones en modo de ventana y DWM. Además de guardar recursos, Flip Model admite estadísticas actuales mejoradas.
 
@@ -40,7 +40,7 @@ Las estadísticas presentes son información de tiempo de fotogramas que las apl
 
 En Windows 7, las aplicaciones basadas en Direct3D 9Ex que adoptan flip model deben usar las API D3D9Ex para obtener las estadísticas actuales. Cuando DWM está habilitado, las aplicaciones direct3D 9Ex en modo de ventana y modo exclusivo de pantalla completa pueden esperar la misma información de estadísticas presentes cuando se usa Voltear modelo. Direct3D 9Ex Flip Model presenta estadísticas que permiten a las aplicaciones consultar las estadísticas actuales en tiempo real, en lugar de después de que el fotograma se haya mostrado en pantalla. la misma información de estadísticas actual está disponible para las aplicaciones en modo Flip-Model habilitadas como aplicaciones de pantalla completa; Una marca agregada en las API de D3D9Ex permite que las aplicaciones flip model descarten eficazmente los fotogramas en tiempo de presentación.
 
-Las nuevas aplicaciones de presentación basadas en velocidad de fotogramas o vídeo que tienen como destino direct3D 9Ex Flip Model deben usar Windows 7. Debido a la sincronización entre DWM y el entorno de ejecución de Direct3D 9Ex, las aplicaciones que usan flip model deben especificar entre 2 y 4 búferes de reserva para garantizar una presentación fluida. Las aplicaciones que usan la información de estadísticas actuales se beneficiarán del uso de las mejoras de estadísticas actuales habilitadas para flip model.
+Las nuevas aplicaciones de presentación basadas en velocidad de fotogramas o vídeo que tienen como destino direct3D 9Ex Flip Model deben usar Windows 7. Debido a la sincronización entre DWM y el entorno de ejecución de Direct3D 9Ex, las aplicaciones que usan flip model deben especificar entre 2 y 4 búferes de reserva para garantizar una presentación sin problemas. Las aplicaciones que usan la información de estadísticas actuales se beneficiarán del uso de las mejoras de estadísticas actuales habilitadas para flip model.
 
 ## <a name="direct3d-9ex-flip-mode-presentation"></a>Presentación del modo de volteo de Direct3D 9EX
 
@@ -62,7 +62,7 @@ Las mejoras de rendimiento de Direct3D 9Ex Flip Mode Present son significativas 
 
 El modo de volteo presente reduce el uso de memoria del sistema al reducir el número de lecturas y escrituras por el tiempo de ejecución de Direct3D para la composición de fotogramas en ventanas mediante DWM. Esto reduce el consumo de energía del sistema y el uso general de memoria.
 
-Las aplicaciones pueden aprovechar las ventajas del modo de volteo de Direct3D 9Ex presentar mejoras de estadísticas cuando DWM está on, independientemente de si la aplicación está en modo de ventana o en modo exclusivo de pantalla completa.
+Las aplicaciones pueden aprovechar las ventajas del modo de volteo de Direct3D 9Ex presentar mejoras de estadísticas cuando DWM está on, independientemente de si la aplicación está en modo de ventana o en modo exclusivo a pantalla completa.
 
 ## <a name="programming-model-and-apis"></a>Modelo de programación y API
 
@@ -74,9 +74,9 @@ Puede modificar las aplicaciones existentes para aprovechar el modo de volteo pr
 
 ### <a name="how-to-opt-into-the-direct3d-9ex-flip-model"></a>Cómo participar en el modelo de volteo de Direct3D 9Ex
 
-Las aplicaciones direct3D 9Ex que tienen como destino Windows 7 pueden participar en el modelo de volteo mediante la creación de la cadena de intercambio con el valor de enumeración [**\_ FLIPEX D3DSWAPEFFECT.**](/windows/desktop/direct3d9/d3dswapeffect) Para participar en el modelo flip, las aplicaciones especifican la estructura [**PARAMETERS \_ D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters) y, a continuación, pasan un puntero a esta estructura cuando llaman a la API [**IDirect3D9Ex::CreateDeviceEx.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) En esta sección se describe cómo las aplicaciones que tienen como destino Windows 7 **usan IDirect3D9Ex::CreateDeviceEx** para participar en el modelo flip. Para obtener más información sobre la API **IDirect3D9Ex::CreateDeviceEx,** vea **IDirect3D9Ex::CreateDeviceEx en MSDN.**
+Las aplicaciones de Direct3D 9Ex que tienen como destino Windows 7 pueden participar en el modelo de volteo mediante la creación de la cadena de intercambio con el valor de enumeración [**\_ FLIPEX D3DSWAPEFFECT.**](/windows/desktop/direct3d9/d3dswapeffect) Para participar en el modelo flip, las aplicaciones especifican la estructura [**PARAMETERS \_ D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters) y, a continuación, pasan un puntero a esta estructura cuando llaman a la API [**IDirect3D9Ex::CreateDeviceEx.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) En esta sección se describe cómo las aplicaciones que tienen como destino Windows 7 **usan IDirect3D9Ex::CreateDeviceEx** para participar en el modelo flip. Para obtener más información sobre la API **IDirect3D9Ex::CreateDeviceEx,** vea **IDirect3D9Ex::CreateDeviceEx en MSDN.**
 
-Para mayor comodidad, la sintaxis de [**D3DPRESENT \_ PARAMETERS**](/windows/desktop/direct3d9/d3dpresent-parameters) e [**IDirect3D9Ex::CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) se repite aquí.
+Para mayor comodidad, la [**sintaxis de D3DPRESENT \_ PARAMETERS**](/windows/desktop/direct3d9/d3dpresent-parameters) e [**IDirect3D9Ex::CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) se repite aquí.
 
 ``` syntax
 HRESULT CreateDeviceEx(
@@ -119,9 +119,9 @@ Al modificar las aplicaciones de Direct3D 9Ex para Windows 7 para participar en 
 
 Cuando **SwapEffect** se establece en el nuevo tipo de efecto de cadena de intercambio FLIPEX D3DSWAPEFFECT, el recuento de búferes de reserva debe ser igual o mayor que 2, para evitar una penalización del rendimiento de la aplicación como resultado de esperar a que DWM liberara el búfer present \_ anterior.
 
-Cuando la aplicación también usa estadísticas actuales asociadas a D3DSWAPEFFECT FLIPEX, se recomienda establecer el recuento de búferes de reserva en de \_ 2 a 4.
+Cuando la aplicación también usa estadísticas actuales asociadas a D3DSWAPEFFECT FLIPEX, se recomienda establecer el recuento de búferes de reserva en \_ de 2 a 4.
 
-El uso de D3DSWAPEFFECT FLIPEX en Windows Vista o versiones anteriores del sistema operativo devolverá un error \_ [**de CreateDeviceEx.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex)
+El uso de D3DSWAPEFFECT FLIPEX en Windows Vista o versiones anteriores del sistema operativo devolverá \_ un error [**de CreateDeviceEx.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex)
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ El uso de D3DSWAPEFFECT FLIPEX en Windows Vista o versiones anteriores del siste
 
 (solo Windows 7)
 
-El nuevo tipo de efecto de cadena de intercambio FLIPEX D3DSWAPEFFECT designa cuando una aplicación adopta el modo de volteo \_ presente en DWM. Permite a la aplicación un uso más eficaz de la memoria y la energía, y también permite que la aplicación aproveche las estadísticas presentes de pantalla completa en modo de ventana. El comportamiento de la aplicación a pantalla completa no se ve afectado. Si Windowed se establece en **TRUE** y **SwapEffect** se establece en D3DSWAPEFFECT FLIPEX, el tiempo de ejecución crea un búfer de reserva adicional y gira el controlador que pertenece al búfer que se convierte en el búfer front-time en tiempo de \_ presentación.
+El nuevo tipo de efecto de cadena de intercambio FLIPEX D3DSWAPEFFECT designa cuando una aplicación adopta el modo de volteo \_ presente en DWM. Permite a la aplicación un uso más eficaz de la memoria y la energía, y también permite que la aplicación aproveche las estadísticas presentes a pantalla completa en modo de ventana. El comportamiento de la aplicación a pantalla completa no se ve afectado. Si Windowed se establece en **TRUE** y **SwapEffect** se establece en D3DSWAPEFFECT FLIPEX, el tiempo de ejecución crea un búfer de reserva adicional y gira el controlador que pertenece al búfer que se convierte en el búfer front-time en tiempo de \_ presentación.
 
 </dd> <dt>
 
@@ -143,7 +143,7 @@ No se puede establecer la marca [ \_ \_ BACKBUFFER D3DPRESENTFLAG LOCKABLE](/win
 
 </dd> </dl>
 
-### <a name="design-guidelines-for-direct3d-9ex-flip-model-applications"></a>Directrices de diseño para aplicaciones direct3D 9Ex Flip Model
+### <a name="design-guidelines-for-direct3d-9ex-flip-model-applications"></a>Directrices de diseño para aplicaciones de direct3D 9Ex Flip Model
 
 Use las instrucciones de las secciones siguientes para diseñar las aplicaciones de Direct3D 9Ex Flip Model.
 
@@ -155,7 +155,7 @@ Las aplicaciones deben usar direct3D 9Ex Flip Mode Present en un HWND que no sea
 
 ![ilustración de la ventana primaria gdi y una ventana secundaria direct3d, cada una con su propio hwnd](images/parent-gdi.png)
 
-Dado que Blt Model mantiene una copia adicional de la superficie, GDI y otros contenidos de Direct3D se pueden agregar al mismo HWND a través de actualizaciones por fragmentos de Direct3D y GDI. Con el modelo flip, solo estará visible el contenido de Direct3D 9Ex en las cadenas de intercambio [**\_ FLIPEX D3DSWAPEFFECT**](/windows/desktop/direct3d9/d3dswapeffect) que se pasan a DWM. Todas las demás actualizaciones de contenido de Blt Model Direct3D o GDI se omitirán, como se muestra en las ilustraciones siguientes.
+Dado que Blt Model mantiene una copia adicional de la superficie, GDI y otros contenidos de Direct3D se pueden agregar al mismo HWND mediante actualizaciones por fragmentos de Direct3D y GDI. Con el modelo flip, solo estará visible el contenido de Direct3D 9Ex en las cadenas de intercambio [**\_ FLIPEX D3DSWAPEFFECT**](/windows/desktop/direct3d9/d3dswapeffect) que se pasan a DWM. Todas las demás actualizaciones de contenido de Blt Model Direct3D o GDI se omitirán, como se muestra en las ilustraciones siguientes.
 
 ![ilustración de texto gdi que podría no mostrarse si se usa el modelo de inversión y el contenido de direct3d y gdi está en el mismo hwnd](images/d3d-gdi-same-hwnd.png)
 
@@ -169,11 +169,11 @@ Algunas aplicaciones de Direct3D 9Ex usan las funciones ScrollWindow o ScrollWin
 
 ### <a name="use-one-d3dswapeffect_flipex-swap-chain-per-hwnd"></a>Usar una cadena de intercambio FLIPEX D3DSWAPEFFECT \_ por HWND
 
-Las aplicaciones que usan el modelo de volteo no deben usar varias cadenas de intercambio de flip model destinadas al mismo HWND.
+Las aplicaciones que usan flip model no deben usar varias cadenas de intercambio de flip model destinadas al mismo HWND.
 
-### <a name="frame-synchronization-of-direct3d-9ex-flip-model-applications"></a>Sincronización de fotogramas de aplicaciones de modelo de Volteo de Direct3D 9Ex
+### <a name="frame-synchronization-of-direct3d-9ex-flip-model-applications"></a>Sincronización de fotogramas de aplicaciones de modelos de Direct3D 9Ex Flip
 
-Las estadísticas presentes son información de tiempo de fotogramas que las aplicaciones multimedia usan para sincronizar secuencias de vídeo y audio y recuperarse de problemas de reproducción de vídeo. Para habilitar la disponibilidad actual de las estadísticas, la aplicación Direct3D 9Ex debe asegurarse de que el parámetro *BehaviorFlags* que la aplicación pasa a [**IDirect3D9Ex::CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) contiene la marca de comportamiento del dispositivo [D3DCREATE \_ ENABLE \_ PRESENTSTATS](/windows/desktop/direct3d9/d3dcreate).
+Las estadísticas presentes son información de tiempo de fotogramas que las aplicaciones multimedia usan para sincronizar secuencias de vídeo y audio y recuperarse de problemas de reproducción de vídeo. Para habilitar la disponibilidad de estadísticas actual, la aplicación Direct3D 9Ex debe asegurarse de que el parámetro *BehaviorFlags* que la aplicación pasa a [**IDirect3D9Ex::CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) contiene la marca de comportamiento del dispositivo [D3DCREATE \_ ENABLE \_ PRESENTSTATS](/windows/desktop/direct3d9/d3dcreate).
 
 Para mayor comodidad, la [**sintaxis de IDirect3D9Ex::CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) se repite aquí.
 
@@ -189,7 +189,7 @@ HRESULT CreateDeviceEx(
 );
 ```
 
-Direct3D 9Ex Flip Model agrega la marca de presentación [D3DPRESENT \_ FORCEIMMEDIATE](/windows/desktop/direct3d9/d3dpresent) que aplica el comportamiento de marca de presentación [D3DPRESENT \_ INTERVAL \_ IMMEDIATE.](/windows/desktop/direct3d9/d3dpresent) La aplicación Direct3D 9Ex especifica estas marcas de presentación en el parámetro *dwFlags* que la aplicación pasa a [**IDirect3DDevice9Ex::P resentEx,**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex)como se muestra aquí.
+Direct3D 9Ex Flip Model agrega la marca de presentación [ \_ FORCEIMMEDIATE de D3DPRESENT](/windows/desktop/direct3d9/d3dpresent) que aplica el comportamiento de marca de presentación [D3DPRESENT \_ INTERVAL \_ IMMEDIATE.](/windows/desktop/direct3d9/d3dpresent) La aplicación Direct3D 9Ex especifica estas marcas de presentación en el parámetro *dwFlags* que la aplicación pasa a [**IDirect3DDevice9Ex::P resentEx,**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex)como se muestra aquí.
 
 ``` syntax
 HRESULT PresentEx(
@@ -223,21 +223,21 @@ cuando la aplicación establece el **miembro SwapEffect** de [**D3DPRESENT \_ PA
 
 Esta marca solo se puede especificar si la aplicación establece el miembro **SwapEffect** de [**D3DPRESENT \_ PARAMETERS**](/windows/desktop/direct3d9/d3dpresent-parameters) en [**D3DSWAPEFFECT \_ FLIPEX**](/windows/desktop/direct3d9/d3dswapeffect) en una llamada a [**CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex). La aplicación puede usar esta marca para actualizar inmediatamente una superficie con varios fotogramas más adelante en la cola DWM Present, omitiendo básicamente los fotogramas intermedios.
 
-Las aplicaciones habilitadas para FlipEx en ventanas pueden usar esta marca para actualizar inmediatamente una superficie con un marco que se encuentra más adelante en la cola DWM Present, omitiendo fotogramas intermedios. Esto es especialmente útil para las aplicaciones multimedia que desean descartar fotogramas detectados como retrasados y presentar fotogramas posteriores en tiempo de composición. [**IDirect3DDevice9Ex::P resentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) devuelve un error de parámetro no válido si esta marca se especifica incorrectamente.
+Las aplicaciones habilitadas para FlipEx en ventanas pueden usar esta marca para actualizar inmediatamente una superficie con un marco que se encuentra más adelante en la cola DWM Present, omitiendo fotogramas intermedios. Esto es especialmente útil para las aplicaciones multimedia que desean descartar fotogramas que se han detectado con retraso y presentar fotogramas posteriores en tiempo de composición. [**IDirect3DDevice9Ex::P resentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) devuelve un error de parámetro no válido si esta marca se especifica incorrectamente.
 
 </dd> </dl>
 
 Para obtener información de estadísticas actual, la aplicación obtiene la estructura [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) llamando a la API [**IDirect3DSwapChain9Ex::GetPresentStatistics.**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85))
 
-La [**estructura D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) contiene estadísticas sobre [**las llamadas IDirect3DDevice9Ex::P resentEx.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) El dispositivo debe crearse mediante una llamada [**IDirect3D9Ex::CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) con la [marca D3DCREATE \_ ENABLE \_ PRESENTSTATS.](/windows/desktop/direct3d9/d3dcreate) De lo contrario, los datos [**devueltos por GetPresentStatistics**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) no están definidos. Una cadena de intercambio direct3D 9Ex habilitada para flip-model proporciona información de estadísticas presente en los modos de ventana y de pantalla completa.
+La [**estructura D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) contiene estadísticas sobre [**las llamadas IDirect3DDevice9Ex::P resentEx.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) El dispositivo debe crearse mediante una llamada [**IDirect3D9Ex::CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) con la [marca D3DCREATE \_ ENABLE \_ PRESENTSTATS.](/windows/desktop/direct3d9/d3dcreate) De lo contrario, los datos [**devueltos por GetPresentStatistics**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) no están definidos. Una cadena de intercambio Direct3D 9Ex habilitada para flip-model proporciona información de estadísticas presente en los modos de ventana y de pantalla completa.
 
 En el caso de las cadenas de intercambio direct3D 9Ex habilitadas para Blt-Model en modo de ventana, todos los valores de la estructura [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) serán ceros.
 
-En el caso de las estadísticas actuales de FlipEx, [**GetPresentStatistics**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) devuelve D3DERR \_ PRESENT \_ STATISTICS \_ DISJOINT en las situaciones siguientes:
+En el caso de las estadísticas presentes de FlipEx, [**GetPresentStatistics**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) devuelve D3DERR \_ PRESENT \_ STATISTICS \_ DISJOINT en las situaciones siguientes:
 
 -   Primera llamada a [**GetPresentStatistics,**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) que indica el principio de una secuencia
 -   Transición de DWM de on a off
--   Cambio de modo: modo de ventana hacia o desde pantalla completa o de pantalla completa a transiciones de pantalla completa
+-   Cambio de modo: modo con ventana hacia o desde pantalla completa o de pantalla completa a transiciones de pantalla completa
 
 Para mayor comodidad, la sintaxis [**de GetPresentStatistics**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) se repite aquí.
 
@@ -247,7 +247,7 @@ HRESULT GetPresentStatistics(
 );
 ```
 
-El método [**IDirect3DSwapChain9Ex::GetLastPresentCount**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount) devuelve el último PresentCount, es decir, el identificador present de la última llamada present correcta realizada por un dispositivo de visualización asociado a la cadena de intercambio. Este identificador present es el valor del **miembro PresentCount** de la [**estructura D3DPRESENTSTATS.**](/windows/desktop/direct3d9/d3dpresentstats) En el caso de las cadenas de intercambio direct3D 9Ex habilitadas para Blt-Model, mientras que en modo de ventana, todos los valores de la estructura **D3DPRESENTSTATS** serán ceros.
+El método [**IDirect3DSwapChain9Ex::GetLastPresentCount**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount) devuelve el último PresentCount, es decir, el identificador present de la última llamada correcta a Present realizada por un dispositivo de visualización asociado a la cadena de intercambio. Este id. de presente es el valor del **miembro PresentCount** de la [**estructura D3DPRESENTSTATS.**](/windows/desktop/direct3d9/d3dpresentstats) En el caso de las cadenas de intercambio direct3D 9Ex habilitadas para Blt-Model, mientras que en modo de ventana, todos los valores de la estructura **D3DPRESENTSTATS** serán ceros.
 
 Para mayor comodidad, la [**sintaxis de IDirect3DSwapChain9Ex::GetLastPresentCount**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount) se repite aquí.
 
@@ -259,8 +259,8 @@ HRESULT GetLastPresentCount(
 
 Al modificar la aplicación Direct3D 9Ex para Windows 7, debe tener en cuenta la siguiente información sobre la estructura [**D3DPRESENTSTATS:**](/windows/desktop/direct3d9/d3dpresentstats)
 
--   El valor presentCount que [**devuelve GetLastPresentCount**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount) no se actualiza cuando una llamada [**PresentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) con D3DPRESENT DONOTWAIT especificado en el parámetro \_ *dwFlags* devuelve un error.
--   Cuando se llama a [**PresentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) con D3DPRESENT DONOTFLIP, una llamada a GetPresentStatistics se realiza correctamente, pero no devuelve una estructura \_ [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) actualizada cuando la aplicación está en modo de ventana. [](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85))
+-   El valor PresentCount que [**devuelve GetLastPresentCount**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount) no se actualiza cuando una llamada [**a PresentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) con D3DPRESENT DONOTWAIT especificado en el parámetro \_ *dwFlags* devuelve un error.
+-   Cuando se llama a [**PresentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) con D3DPRESENT DONOTFLIP, una llamada GetPresentStatistics se realiza correctamente, pero no devuelve una estructura \_ [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) actualizada cuando la aplicación está en modo de ventana. [](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85))
 -   **PresentRefreshCount frente** **a SyncRefreshCount** en [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats):
     -   **PresentRefreshCount** es igual a **SyncRefreshCount** cuando la aplicación se presenta en cada vsync.
     -   **SyncRefreshCount** se obtiene en el intervalo de vsync cuando se envió el presente, **SyncQPCTime** es aproximadamente el tiempo asociado al intervalo de vsync.
@@ -277,9 +277,9 @@ typedef struct _D3DPRESENTSTATS {
 
 ### <a name="frame-synchronization-for-windowed-applications-when-dwm-is-off"></a>Sincronización de fotogramas para aplicaciones en ventanas cuando DWM está desactivado
 
-Cuando DWM está desactivado, las aplicaciones con ventanas se muestran directamente en la pantalla del monitor sin pasar por una cadena de volteo. En Windows Vista, no hay compatibilidad para obtener información de estadísticas de fotogramas para aplicaciones con ventanas cuando DWM está desactivado. Para mantener una API en la que las aplicaciones no necesiten tener en cuenta DWM, Windows 7 devolverá información de estadísticas de fotogramas para las aplicaciones en ventanas cuando DWM esté desactivado. Las estadísticas de fotogramas devueltas cuando DWM está desactivado son solo estimaciones.
+Cuando DWM está desactivado, las aplicaciones con ventanas se muestran directamente en la pantalla del monitor sin pasar por una cadena de volteo. En Windows Vista, no hay compatibilidad para obtener información de estadísticas de fotogramas para aplicaciones con ventanas cuando DWM está desactivado. Para mantener una API en la que las aplicaciones no necesitan tener en cuenta DWM, Windows 7 devolverá información de estadísticas de fotogramas para las aplicaciones con ventanas cuando DWM esté desactivado. Las estadísticas de fotogramas devueltas cuando DWM está desactivado son solo estimaciones.
 
-## <a name="walk-through-of-a-direct3d-9ex-flip-model-and-present-statistics-sample"></a>Walk-Through de un modelo de volteo de Direct3D 9Ex y ejemplo de estadísticas presentes
+## <a name="walk-through-of-a-direct3d-9ex-flip-model-and-present-statistics-sample"></a>Walk-Through de un modelo de volteo de Direct3D 9Ex y ejemplo de presentación de estadísticas
 
 **Para participar en la presentación de FlipEx para el ejemplo 9Ex de Direct3D**
 
@@ -307,7 +307,7 @@ Cuando DWM está desactivado, las aplicaciones con ventanas se muestran directam
 
 
 
-**Para participar también en el ejemplo present statistics for Direct3D 9Ex asociado a FlipEx**
+**Para participar también en el ejemplo de Present Statistics for Direct3D 9Ex asociado a FlipEx**
 
 -   Establezca [D3DCREATE \_ ENABLE \_ PRESENTSTATS en](/windows/desktop/direct3d9/d3dcreate) el parámetro *BehaviorFlags* [**de CreateDeviceEx.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex)
 
@@ -341,29 +341,29 @@ Cuando DWM está desactivado, las aplicaciones con ventanas se muestran directam
 
 **Para evitar, detectar y recuperarse de problemas**
 
-1.  Cola Llamadas presentes: el recuento recomendado de búferes de seguridad es de 2 a 4.
-2.  El ejemplo de Direct3D 9Ex agrega un búfer de seguridad implícito; la longitud real de la cola actual es el recuento de búferes de copia de seguridad + 1.
+1.  Cola Llamadas presentes: el recuento recomendado de búferes de copia de seguridad es de 2 a 4.
+2.  El ejemplo de Direct3D 9Ex agrega un búfer de copia de seguridad implícito; la longitud real de la cola actual es el recuento de búferes de backbuffer + 1.
 3.  Cree el asistente Present queue structure para almacenar todos los present ID (PresentCount) enviados correctamente y asociados, calculados o esperados PresentRefreshCount.
 4.  Para detectar la aparición de problemas:
 
     -   Llame [**a GetPresentStatistics.**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85))
     -   Obtenga el id. de presente (PresentCount) y el recuento de vsync donde se muestra el fotograma (PresentRefreshCount) del fotograma cuyas estadísticas actuales se obtienen.
-    -   Recupere el presentRefreshCount esperado (TargetRefresh en el código de ejemplo) asociado al identificador present.
+    -   Recupere el valor esperado de PresentRefreshCount (TargetRefresh en el código de ejemplo) asociado con present ID.
     -   Si presentRefreshCount real es posterior al esperado, se ha producido un problema.
 
 5.  Para recuperarse de problemas:
 
-    -   Calcule el número de fotogramas que se omitirán (g \_ iImmediates variable en el código de ejemplo).
+    -   Calcule cuántos fotogramas se omitirán (por ejemplo, \_ la variable iImmediates en el código de ejemplo).
     -   Presente los fotogramas omitido con el intervalo D3DPRESENT \_ FORCEIMMEDIATE.
 
 **Consideraciones para la detección y recuperación de problemas**
 
-1.  La recuperación de Glitch toma N (variable g iQueueDelay en el código de ejemplo) número de llamadas present donde \_ N (g \_ iQueueDelay) es igual a g iImmediates más la longitud de la cola Present, es \_ decir:
+1.  La recuperación de glitch toma N (g la variable iQueueDelay en el código de ejemplo) número de llamadas presentes donde \_ N (g \_ iQueueDelay) es igual a g iImmediates más la longitud de la cola Present, es \_ decir:
 
-    -   Omitir fotogramas con present interval D3DPRESENT \_ FORCEIMMEDIATE, más
+    -   Omitir fotogramas con el intervalo D3DPRESENT \_ FORCEIMMEDIATE, más
     -   Presentaciones en cola que deben procesarse
 
-2.  Establezca un límite en la longitud del problema (GLITCH \_ RECOVERY LIMIT en la \_ muestra). Si la aplicación de ejemplo no puede recuperarse de un problema que es demasiado largo (es decir, 1 segundo o 60 vsyncs en el monitor de 60Hz), salte por encima de la animación intermitente y restablezca la cola del asistente Present.
+2.  Establezca un límite en la longitud del problema (GLITCH \_ RECOVERY LIMIT en la \_ muestra). Si la aplicación de ejemplo no puede recuperarse de un problema que es demasiado largo (es decir, 1 segundo o 60 vsyncs en un monitor de 60Hz), salte por la animación intermitente y restablezca la cola del asistente Present.
 
 
 ```C++
@@ -536,34 +536,34 @@ VOID Render()
 
 **Escenario de ejemplo**
 
--   En la ilustración siguiente se muestra una aplicación con el recuento de búferes de reserva de 4. Por lo tanto, la longitud real de la cola Actual es 5.
+-   En la ilustración siguiente se muestra una aplicación con el recuento de búferes de reserva de 4. Por lo tanto, la longitud real de la cola present es 5.
 
-    ![ilustración de los fotogramas representados por applicas y la cola presente](images/sample-scenario.png)
+    ![ilustración de marcos representados de aplicaciones y cola presente](images/sample-scenario.png)
 
-    El fotograma A está destinado a pasar a la pantalla en el recuento de intervalos de sincronización de 1, pero se detectó que se mostró en el recuento de intervalos de sincronización de 4. Por lo tanto, se ha producido un problema. Los 3 fotogramas siguientes se presentan con D3DPRESENT \_ INTERVAL \_ FORCEIMMEDIATE. El problema debe tomar un total de 8 Llamadas presentes antes de recuperarse; el siguiente fotograma se mostrará según su recuento de intervalos de sincronización de destino.
+    El fotograma A está destinado a pasar a la pantalla en el recuento de intervalos de sincronización de 1, pero se detectó que se mostró en el recuento de intervalos de sincronización de 4. Por lo tanto, se ha producido un problema. Los 3 fotogramas posteriores se presentan con D3DPRESENT \_ INTERVAL \_ FORCEIMMEDIATE. El problema debe tardar un total de 8 Llamadas presentes antes de recuperarse; el siguiente fotograma se mostrará según su recuento de intervalos de sincronización de destino.
 
-### <a name="summary-of-programming-recommendations-for-frame-synchronization"></a>Resumen de la programación de Recomendaciones sincronización de fotogramas
+### <a name="summary-of-programming-recommendations-for-frame-synchronization"></a>Resumen de la programación Recomendaciones sincronización de fotogramas
 
--   Cree una lista de copia de seguridad de todos los IDs de LastPresentCount (obtenidos a través de [**GetLastPresentCount)**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount)y el valor estimado presentRefreshCount asociado de todos los present enviados.
+-   Cree una lista de copia de seguridad de todos los IDs de LastPresentCount (obtenidos a través de [**GetLastPresentCount)**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount)y el presentRefreshCount estimado asociado de todos los presentes enviados.
     > [!Note]  
     > Cuando la aplicación llama a [**PresentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) con D3DPRESENT DONOTFLIP, la llamada a GetPresentStatistics se realiza correctamente, pero no devuelve una estructura \_ [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) actualizada cuando la aplicación está en modo de ventana. [](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85))
 
      
 
--   Llame [**a GetPresentStatistics**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) para obtener el presentRefreshCount real asociado a cada present ID de fotogramas mostrados, para asegurarse de que la aplicación controla los errores que se devuelven de la llamada.
--   Si presentRefreshCount real es posterior al valor estimado de PresentRefreshCount, se detecta un problema. Compensa mediante el envío de fotogramas de retraso presentes con D3DPRESENT \_ FORCEIMMEDIATE.
--   Cuando un fotograma se presenta tarde en la cola Present, todos los fotogramas en cola posteriores se presentarán tarde. D3DPRESENT FORCEIMMEDIATE corregirá solo el siguiente fotograma que se presentará \_ después de todos los fotogramas en cola. Por lo tanto, el recuento de cola present o backbuffer no debe ser demasiado largo, por lo que hay menos problemas de fotogramas con los que ponerse al día. El número óptimo de búferes de reserva es de 2 a 4.
--   Si presentRefreshCount estimado es posterior al presentRefreshCount real, es posible que se haya producido una limitación de DWM. Las siguientes soluciones son posibles:
+-   Llame [**a GetPresentStatistics**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) para obtener el presentRefreshCount real asociado a cada id. de present de fotogramas que se muestra, para asegurarse de que la aplicación controla los resultados de error de la llamada.
+-   Si presentRefreshCount real es posterior al valor estimado de PresentRefreshCount, se detecta un problema. Compense mediante el envío de "Present" de marcos de retraso con D3DPRESENT \_ FORCEIMMEDIATE.
+-   Cuando un fotograma se presenta tarde en la cola Present, todos los fotogramas en cola posteriores se presentarán tarde. D3DPRESENT FORCEIMMEDIATE solo corregirá el fotograma siguiente que se presentará \_ después de todos los fotogramas en cola. Por lo tanto, el recuento de cola actual o de búfer de reserva no debe ser demasiado largo, por lo que hay menos problemas de fotogramas con los que ponerse al día. El recuento óptimo de búferes de reserva es de 2 a 4.
+-   Si se estima que PresentRefreshCount es posterior al presentRefreshCount real, es posible que se haya producido una limitación de DWM. Las siguientes soluciones son posibles:
 
     -   reducir la longitud de cola actual
-    -   reducir los requisitos de memoria de GPU con cualquier otro medio, además de reducir la longitud de cola presente (es decir, reducir la calidad, quitar efectos, entre otros)
+    -   reducir los requisitos de memoria de GPU con cualquier otro medio, además de reducir la longitud de la cola actual (es decir, reducir la calidad, quitar efectos, entre otros)
     -   especificar [**DwmEnableMMCSS para**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmenablemmcss) evitar la limitación de DWM en general
 
 -   Compruebe la funcionalidad de visualización de la aplicación y el rendimiento de las estadísticas de fotogramas en los escenarios siguientes:
 
     -   con DWM en y desactivado
     -   modos exclusivos y de ventana de pantalla completa
-    -   hardware de funcionalidad inferior
+    -   hardware de capacidad inferior
 
 -   Cuando las aplicaciones no pueden recuperarse de un gran número de fotogramas con problemas con D3DPRESENT \_ FORCEIMMEDIATE Present, pueden realizar las siguientes operaciones:
 
@@ -572,11 +572,11 @@ VOID Render()
 
 ## <a name="conclusion-about-direct3d-9ex-improvements"></a>Conclusiones sobre las mejoras de Direct3D 9Ex
 
-En Windows 7, las aplicaciones que muestran velocidad de fotogramas de vídeo o medidor durante la presentación pueden optar por voltear modelo. Las mejoras de estadísticas actuales asociadas con Flip Model Direct3D 9Ex pueden beneficiar a las aplicaciones que sincronizan la presentación por velocidad de fotogramas, con comentarios en tiempo real para la detección y recuperación de problemas. Los desarrolladores que adoptan el modelo de volteo de Direct3D 9Ex deben tener en cuenta el destino de un HWND independiente del contenido GDI y la sincronización de velocidad de fotogramas. Consulte los detalles de este tema y la documentación de MSDN. Para obtener documentación adicional, [vea Centro para desarrolladores de DirectX en MSDN.](/previous-versions/windows/apps/hh452744(v=win.10))
+En Windows 7, las aplicaciones que muestran velocidad de fotogramas de vídeo o medidor durante la presentación pueden optar por voltear modelo. Las mejoras de estadísticas actuales asociadas con Flip Model Direct3D 9Ex pueden beneficiar a las aplicaciones que sincronizan la presentación por velocidad de fotogramas, con comentarios en tiempo real para la detección y recuperación de problemas. Los desarrolladores que adoptan el modelo direct3D 9Ex Flip deben tener en cuenta el destino de un HWND independiente del contenido GDI y la sincronización de velocidad de fotogramas. Consulte los detalles de este tema y la documentación de MSDN. Para obtener documentación adicional, [vea Centro para desarrolladores de DirectX en MSDN.](/previous-versions/windows/apps/hh452744(v=win.10))
 
 ## <a name="call-to-action"></a>Pasar a la acción
 
-Le recomendamos que use direct3D 9Ex Flip Model y sus estadísticas actuales en Windows 7 al crear aplicaciones que intenten sincronizar la velocidad de fotogramas de presentación o recuperarse de problemas de pantalla.
+Le recomendamos que use direct3D 9Ex Flip Model y sus estadísticas actuales en Windows 7 al crear aplicaciones que intenten sincronizar la velocidad de fotogramas de presentación o recuperarse de problemas de visualización.
 
 ## <a name="related-topics"></a>Temas relacionados
 

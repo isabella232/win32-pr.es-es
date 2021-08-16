@@ -73,7 +73,7 @@ public static void JetGetTableInfo(
   - tableid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla sobre la que se recuperará información.
+    Tabla sobre la que se recupera información.
 
 <!-- end list -->
 
@@ -89,15 +89,15 @@ public static void JetGetTableInfo(
     
     Tipo de información que se recuperará.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta sobrecarga se usa con [SpaceOwned](./jet-tblinfo-enumeration.md) y [SpaceAvailable.](./jet-tblinfo-enumeration.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

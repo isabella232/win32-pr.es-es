@@ -30,7 +30,7 @@ ESTA clase se implementa mediante COM+.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |------------|------------------------------------------------------|
 | Interfaces | [**ISecurityCallersColl**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallerscoll) |
 
@@ -42,7 +42,7 @@ ESTA clase se implementa mediante COM+.
 
 Use esta clase para tener acceso a los métodos [**de ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No se puede crear directamente un **objeto SecurityCallContext.** Para usar los métodos de [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext), debe obtener una referencia a su implementación mediante una llamada a [**CoGetCallContext**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetcallcontext), que proporciona IID ISecurityCallContext para el \_ parámetro *riid.*
 
@@ -52,7 +52,7 @@ Para usar esta clase de Microsoft Visual Basic, agregue una referencia a la bibl
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -60,7 +60,7 @@ Para usar esta clase de Microsoft Visual Basic, agregue una referencia a la bibl
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

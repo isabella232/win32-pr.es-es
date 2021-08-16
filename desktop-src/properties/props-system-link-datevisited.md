@@ -4,12 +4,12 @@ ms.assetid: a0c8de2b-b21e-4b22-96d1-2a77e33f1780
 title: System.Link.DateVisited
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e380e44b1afe6064e4962c5fd6430832ed9ba4e4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 71fcefa6811a07a6269640697dcafd6849158aafbeee290426ddbf30b7e7a1f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090955"
 ---
 # <a name="systemlinkdatevisited"></a>System.Link.DateVisited
 

@@ -3,7 +3,7 @@ title: WM_DPICHANGED_AFTERPARENT mensaje (Winuser.h)
 description: Para las ventanas de nivel superior por monitor v2, este mensaje se envía a todos los HWND del árbol HWDN secundario de la ventana que está experimentando un cambio de PPP. | WM_DPICHANGED_AFTERPARENT mensaje (Winuser.h)
 ms.assetid: FEA1BF07-55B6-4584-ABD3-340515831E0A
 keywords:
-- WM_DPICHANGED_AFTERPARENT mensaje Valores altos de PPP
+- WM_DPICHANGED_AFTERPARENT de valores altos de PPP
 topic_type:
 - apiref
 api_name:
@@ -52,13 +52,13 @@ Este valor no se usa y será cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El sistema no usa y omite este valor.
+El sistema no usa este valor y lo omite.
 
 ## <a name="remarks"></a>Comentarios
 
 No hay ningún control predeterminado de este mensaje en [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-Este mensaje solo se envía cuando la ventana de nivel superior tiene un contexto de reconocimiento de PPP de PMv2.
+Este mensaje solo se envía cuando la ventana de nivel superior tiene un contexto de reconocimiento de PPP PMv2.
 
 ## <a name="requirements"></a>Requisitos
 

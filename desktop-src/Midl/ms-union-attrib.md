@@ -68,7 +68,7 @@ Especifica la lista de parámetros del procedimiento, que puede estar vacía.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Nunca use este modificador o atributo con nuevas interfaces. Se trata solo de una característica de compatibilidad con versiones anteriores. El compilador MIDL de esta versión de RPC de Microsoft refleja el comportamiento del compilador IDL de DCE de OSF para las uniones no superadas. Sin embargo, dado que las versiones anteriores del compilador MIDL no lo hacían, el modificador de unión [**/ms \_**](-ms-union.md) proporciona compatibilidad con interfaces creadas en versiones anteriores del compilador MIDL.
 

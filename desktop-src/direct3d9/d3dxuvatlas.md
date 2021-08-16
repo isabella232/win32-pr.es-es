@@ -51,7 +51,7 @@ Las mallas con más de 25 000 caras tendrán aplicado el método de distancia ge
 <span id="D3DXUVATLAS_GEODESIC_FAST"></span><span id="d3dxuvatlas_geodesic_fast"></span>**D3DVATVATLAS \_ GEODESIC \_ FAST**
 </dt> <dd>
 
-Usa aproximaciones para mejorar la velocidad de gráficos a costa de que se agregan gráficos extendidos o más para la malla.
+Usa aproximaciones para mejorar la velocidad de gráficos a costa de que se agregan gráficos extendidos o más que se van a generar para la malla.
 
 </dd> <dt>
 

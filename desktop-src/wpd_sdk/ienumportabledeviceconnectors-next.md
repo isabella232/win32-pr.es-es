@@ -52,7 +52,7 @@ Número de dispositivos solicitados. Este valor también indica el número de el
 *pConnectors* \[ out\]
 </dt> <dd>
 
-Matriz de [**punteros IPortableDeviceConnector,**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) cada uno de los que especifica un MTP Bluetooth dispositivo. El autor de la llamada debe asignar una matriz de punteros **IPortableDeviceConnector,** con la longitud de matriz especificada por *el parámetro cRequested.* Si la devolución es correcta, el autor de la llamada debe liberar tanto la matriz como los punteros devueltos. Las **interfaces IPortableDeviceConnector** se liberan mediante una llamada al **método IUnknown::Release.**
+Matriz de [**punteros IPortableDeviceConnector,**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) cada uno de los que especifica un MTP Bluetooth dispositivo. El autor de la llamada debe asignar una matriz de punteros **IPortableDeviceConnector,** con la longitud de matriz especificada por *el parámetro cRequested.* Si la devolución es correcta, el autor de la llamada debe liberar tanto la matriz como los punteros devueltos. Las **interfaces IPortableDeviceConnector** se liberan mediante una llamada **al método IUnknown::Release.**
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ IEnumPortableDeviceConnectors* pEnum = NULL;
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                                                                             |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                                                              |
@@ -130,7 +130,7 @@ IEnumPortableDeviceConnectors* pEnum = NULL;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

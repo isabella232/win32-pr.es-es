@@ -1,10 +1,10 @@
 ---
-title: Método ID3DX11EffectScalarVariable SetBoolArray (D3dx11effect. h)
-description: Establezca una matriz de variables Booleanas.
+title: Método ID3DX11EffectScalarVariable SetBoolArray (D3dx11effect.h)
+description: Establezca una matriz de variables booleanas.
 ms.assetid: 861634a2-547d-497b-b575-bbe6151ade25
 keywords:
 - Método SetBoolArray Direct3D 11
-- Método SetBoolArray Direct3D 11, interfaz ID3DX11EffectScalarVariable
+- Método SetBoolArray Direct3D 11 , interfaz ID3DX11EffectScalarVariable
 - Interfaz ID3DX11EffectScalarVariable Direct3D 11, método SetBoolArray
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e982e2475fe20a2aa12bef9c52095eed228bf44
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a095323244cd46526c0df9da23b45a6b0d1e3bdc5e4492a620c734f8745570aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118534089"
 ---
-# <a name="id3dx11effectscalarvariablesetboolarray-method"></a>ID3DX11EffectScalarVariable:: SetBoolArray (método)
+# <a name="id3dx11effectscalarvariablesetboolarray-method"></a>Método ID3DX11EffectScalarVariable::SetBoolArray
 
-Establezca una matriz de variables Booleanas.
+Establezca una matriz de variables booleanas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,27 +48,27 @@ HRESULT SetBoolArray(
 *pData* 
 </dt> <dd>
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)\***
 
-Puntero al principio de los datos que se van a establecer.
+Puntero al inicio de los datos que se establecerán.
 
 </dd> <dt>
 
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Debe establecerse en 0; está reservado para uso futuro.
+Debe establecerse en 0; está reservado para su uso futuro.
 
 </dd> <dt>
 
 *Recuento* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Número de elementos de matriz que se van a establecer.
+Número de elementos de matriz que se establecerán.
 
 </dd> </dl>
 
@@ -76,12 +76,12 @@ Número de elementos de matriz que se van a establecer.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,12 +91,12 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

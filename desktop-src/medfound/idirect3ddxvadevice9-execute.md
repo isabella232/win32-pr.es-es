@@ -1,5 +1,5 @@
 ---
-description: Realiza una operación de decodización de aceleración de vídeo de DirectX (DXVA).
+description: Realiza una operación de decodificación de aceleración de vídeo de DirectX (DXVA).
 ms.assetid: cb87a087-ca53-470e-ab46-f4022cfd7869
 title: Método IDirect3DDXVADevice9::Execute (Dxva.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "119465965"
 ---
 # <a name="idirect3ddxvadevice9execute-method"></a>IDirect3DDXVADevice9::Execute (Método)
 
-Realiza una operación de decodización de aceleración de vídeo de DirectX (DXVA).
+Realiza una operación de decodificación de aceleración de vídeo de DirectX (DXVA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ DWORD **que** contiene uno o varios números de función DXVA. Para más informa
 *pInputData* 
 </dt> <dd>
 
-Puntero a un búfer que contiene datos de entrada para la operación decoding. El significado de estos datos depende del tipo de superficie y el número de función.
+Puntero a un búfer que contiene datos de entrada para la operación decoding. El significado de estos datos depende del tipo de superficie y del número de función.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                              |
@@ -110,7 +110,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

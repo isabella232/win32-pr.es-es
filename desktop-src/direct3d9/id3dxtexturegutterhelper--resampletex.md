@@ -58,7 +58,7 @@ Textura que corresponde a la parametrización original en pMeshIn. Esta textura 
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Malla que contiene las parametrizaciones originales y nuevas. Es necesario almacenar la nueva parametrización en el índice 0 D3DDECLUSAGE \_ TEXCOORD.
+Malla que contiene las parametrizaciones originales y nuevas. Es necesario almacenar la nueva parametrización en el índice 0 de D3DDECLUSAGE \_ TEXCOORD.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Textura remuestreada.
+Textura de remuestreo.
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una parametrización en el caso de esta función es un conjunto de coordenadas de textura que asigna los triángulos de una malla a los triángulos de una textura. La nueva parametrización es el conjunto de coordenadas de textura contenidas en la interfaz auxiliar de medianía y la parametrización original es el conjunto de coordenadas de textura contenidas en la malla de entrada.
 
@@ -105,7 +105,7 @@ Por ejemplo, para prepararse para volver amuestrear una textura:
 
 -   Cree la interfaz de textura original (pOriginalTex a continuación) mediante una función como [**D3DXCreateTextureFromFile**](d3dxcreatetexturefromfile.md).
 -   Cree la nueva interfaz de textura para la textura remuestreada (pResampledTex a continuación). El tamaño de esta textura debe coincidir con el tamaño (ancho y alto) de la textura del asistente de medianía.
--   Llame [**a D3DXCreateTextureGutterHelper**](d3dxcreatetexturegutterhelper.md) para obtener la nueva parametrización como se muestra aquí:
+-   Llame [**a D3DXCreateTextureGutterHelper**](d3dxcreatetexturegutterhelper.md) para obtener la nueva parametrización, como se muestra aquí:
 
 
 ```
@@ -149,7 +149,7 @@ Un escenario común podría ser usar UVAtlas para crear un atlas de textura y, a
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

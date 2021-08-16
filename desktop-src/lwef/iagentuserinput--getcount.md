@@ -13,7 +13,7 @@ ms.locfileid: "118749522"
 ---
 # <a name="iagentuserinputgetcount"></a>IAgentUserInput::GetCount
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetCount(
@@ -21,7 +21,7 @@ HRESULT GetCount(
 );
 ```
 
-Recupera el número de [**alternativas**](command-event.md) de comando que se pasan a una devolución [**de llamada IAgentNotifySink::Command.**](iagentnotifysink--command.md)
+Recupera el número de [**alternativas**](command-event.md) de comando que se pasan a una devolución de llamada [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
 
 -   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 

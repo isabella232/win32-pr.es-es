@@ -1,9 +1,9 @@
 ---
-title: función glLogicOp (GL. h)
+title: Función glLogicOp (Gl.h)
 description: La función glLogicOp especifica una operación de píxeles lógicos para la representación del índice de color.
 ms.assetid: 29edf9bd-f3b8-4de7-9afb-07714f4efd92
 keywords:
-- glLogicOp (función) OpenGL
+- Función glLogicOp OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb29e8f845e99f6d3c988dfd0c0201de129bee69
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 427bd338e416843418fa7551d4e1632dccaf268426ca2a910e164aeae50663dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492675"
 ---
-# <a name="gllogicop-function"></a>glLogicOp función)
+# <a name="gllogicop-function"></a>función glLogicOp
 
-La función **glLogicOp** especifica una operación de píxeles lógicos para la representación del índice de color.
+La **función glLogicOp** especifica una operación de píxeles lógicos para la representación del índice de color.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,31 +40,31 @@ void WINAPI glLogicOp(
 
 <dl> <dt>
 
-*Código* 
+*opcode* 
 </dt> <dd>
 
-Una constante simbólica que selecciona una operación lógica. Los siguientes símbolos se aceptan donde s es igual al valor del bit de origen y d es el valor del bit de destino.
+Constante simbólica que selecciona una operación lógica. Se aceptan los símbolos siguientes donde s es igual al valor del bit de origen y d es el valor del bit de destino.
 
 
 
-| Value                                                                                                                                                                   | Significado              |
+| Valor                                                                                                                                                                   | Significado              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| <span id="GL_CLEAR"></span><span id="gl_clear"></span><dl> <dt>**\_borrado de contabilidad**</dt> </dl>                          | 0<br/>         |
-| <span id="GL_SET"></span><span id="gl_set"></span><dl> <dt>**conjunto de contabilidad \_**</dt> </dl>                                | 1<br/>         |
-| <span id="GL_COPY"></span><span id="gl_copy"></span><dl> <dt>**copia en GL \_**</dt> </dl>                             | s<br/>         |
-| <span id="GL_COPY_INVERTED"></span><span id="gl_copy_inverted"></span><dl> <dt>**copia en contab \_ \_ invertida**</dt> </dl> | ! s<br/>        |
-| <span id="GL_NOOP"></span><span id="gl_noop"></span><dl> <dt>**NOOP de GL \_**</dt> </dl>                             | d<br/>         |
-| <span id="GL_INVERT"></span><span id="gl_invert"></span><dl> <dt>**inversión en contab \_**</dt> </dl>                       | ! d<br/>        |
-| <span id="GL_AND"></span><span id="gl_and"></span><dl> <dt>**GL \_ y**</dt> </dl>                                | s & d<br/>     |
-| <span id="GL_NAND"></span><span id="gl_nand"></span><dl> <dt>**CC \_ NAND**</dt> </dl>                             | ! (s & d)<br/>  |
-| <span id="GL_OR"></span><span id="gl_or"></span><dl> <dt>**GL \_ o**</dt> </dl>                                   | s \| d<br/>    |
-| <span id="GL_NOR"></span><span id="gl_nor"></span><dl> <dt>**GL \_ y**</dt> </dl>                                | ! (s \| d)<br/> |
-| <span id="GL_XOR"></span><span id="gl_xor"></span><dl> <dt>**cont. de GL \_**</dt> </dl>                                | s ^ d<br/>     |
-| <span id="GL_EQUIV"></span><span id="gl_equiv"></span><dl> <dt>**EQUIV. cont. \_**</dt> </dl>                          | ! (s ^ d)<br/>  |
-| <span id="GL_AND_REVERSE"></span><span id="gl_and_reverse"></span><dl> <dt>**GL \_ e \_ inverso**</dt> </dl>       | s &! d<br/>    |
-| <span id="GL_AND_INVERTED"></span><span id="gl_and_inverted"></span><dl> <dt>**GL \_ y \_ invertido**</dt> </dl>    | ! s & d<br/>    |
-| <span id="GL_OR_REVERSE"></span><span id="gl_or_reverse"></span><dl> <dt>**GL \_ o \_ inverso**</dt> </dl>          | s \| ! d<br/>   |
-| <span id="GL_OR_INVERTED"></span><span id="gl_or_inverted"></span><dl> <dt>**GL \_ o \_ invertido**</dt> </dl>       | ! s \| d<br/>   |
+| <span id="GL_CLEAR"></span><span id="gl_clear"></span><dl> <dt>**GL \_ CLEAR**</dt> </dl>                          | 0<br/>         |
+| <span id="GL_SET"></span><span id="gl_set"></span><dl> <dt>**GL \_ SET**</dt> </dl>                                | 1<br/>         |
+| <span id="GL_COPY"></span><span id="gl_copy"></span><dl> <dt>**GL \_ COPY**</dt> </dl>                             | s<br/>         |
+| <span id="GL_COPY_INVERTED"></span><span id="gl_copy_inverted"></span><dl> <dt>**COPIA DE GL \_ \_ INVERTIDA**</dt> </dl> | !s<br/>        |
+| <span id="GL_NOOP"></span><span id="gl_noop"></span><dl> <dt>**GL \_ NOOP**</dt> </dl>                             | d<br/>         |
+| <span id="GL_INVERT"></span><span id="gl_invert"></span><dl> <dt>**GL \_ INVERT**</dt> </dl>                       | !d<br/>        |
+| <span id="GL_AND"></span><span id="gl_and"></span><dl> <dt>**GL \_ AND**</dt> </dl>                                | s & d<br/>     |
+| <span id="GL_NAND"></span><span id="gl_nand"></span><dl> <dt>**GL \_ NAND**</dt> </dl>                             | ! (s & d)<br/>  |
+| <span id="GL_OR"></span><span id="gl_or"></span><dl> <dt>**GL \_ O**</dt> </dl>                                   | s \| d<br/>    |
+| <span id="GL_NOR"></span><span id="gl_nor"></span><dl> <dt>**GL \_ NI**</dt> </dl>                                | ! (s \| d)<br/> |
+| <span id="GL_XOR"></span><span id="gl_xor"></span><dl> <dt>**GL \_ XOR**</dt> </dl>                                | s ^ d<br/>     |
+| <span id="GL_EQUIV"></span><span id="gl_equiv"></span><dl> <dt>**GL \_ EQUIV**</dt> </dl>                          | ! (s ^ d)<br/>  |
+| <span id="GL_AND_REVERSE"></span><span id="gl_and_reverse"></span><dl> <dt>**GL \_ Y \_ REVERSE**</dt> </dl>       | s & !d<br/>    |
+| <span id="GL_AND_INVERTED"></span><span id="gl_and_inverted"></span><dl> <dt>**GL \_ E \_ INVERTED**</dt> </dl>    | !s & d<br/>    |
+| <span id="GL_OR_REVERSE"></span><span id="gl_or_reverse"></span><dl> <dt>**GL \_ O \_ REVERSE**</dt> </dl>          | s \| !d<br/>   |
+| <span id="GL_OR_INVERTED"></span><span id="gl_or_inverted"></span><dl> <dt>**GL \_ O \_ INVERTED**</dt> </dl>       | !s \| d<br/>   |
 
 
 
@@ -84,44 +84,44 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | *OpCode* no era un valor aceptado.<br/>                                                                                        |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *opcode* no era un valor aceptado.<br/>                                                                                        |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glLogicOp** especifica una operación lógica que, cuando se habilita, se aplica entre el índice de color entrante y el índice de color en la ubicación correspondiente en fotogramas. La operación lógica está habilitada o deshabilitada con [**glEnable**](glenable.md) y **glDisable** con la constante simbólica de la lógica de contabilidad \_ \_ .
+La **función glLogicOp** especifica una operación lógica que, cuando está habilitada, se aplica entre el índice de color entrante y el índice de color en la ubicación correspondiente del búfer de fotogramas. La operación lógica está habilitada o deshabilitada [**con glEnable**](glenable.md) y **glDisable** mediante la constante simbólica GL \_ LOGIC \_ OP.
 
-El parámetro *OpCode* es una constante simbólica elegida en la lista siguiente. En la explicación de las operaciones lógicas, *s* representa el índice de color entrante y *d* representa el índice en fotogramas. Se usan los operadores estándar de lenguaje C. Como sugieren estos operadores bit a bit, la operación lógica se aplica independientemente a cada par de bits de los índices de origen y de destino.
+El *parámetro opcode* es una constante simbólica elegida en la lista siguiente. En la explicación de las operaciones lógicas, *s* representa el índice de color entrante y *d* representa el índice en el búfer de fotogramas. Se usan operadores de lenguaje C estándar. Como sugieren estos operadores bit a bit, la operación lógica se aplica de forma independiente a cada par de bits de los índices de origen y destino.
 
-Las operaciones de píxeles lógicos no se aplican a los búferes de color RGBA.
+Las operaciones de píxel lógico no se aplican a los búferes de color RGBA.
 
-Cuando se habilita más de un búfer de índice de color para dibujar, las operaciones lógicas se realizan por separado para cada búfer habilitado, utilizando el contenido de ese búfer para el índice de destino (vea [**glDrawBuffer**](gldrawbuffer.md)).
+Cuando se habilita más de un búfer de índice de color para dibujar, las operaciones lógicas se realizan por separado para cada búfer habilitado, usando el contenido de ese búfer para el índice de destino (vea [**glDrawBuffer**](gldrawbuffer.md)).
 
-El parámetro *OpCode* debe ser uno de los 16 valores aceptados. Otros valores producen un error.
+El *parámetro opcode* debe ser uno de los 16 valores aceptados. Otros valores producirán un error.
 
 Las siguientes funciones recuperan información relacionada con **glLogicOp**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el \_ modo de \_ OP \_ Logic de contabilidad de argumentos
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ LOGIC \_ OP \_ MODE
 
-[**glIsEnabled**](glisenabled.md) con el argumento \_ OP lógica de contabilidad \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ LOGIC \_ OP
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

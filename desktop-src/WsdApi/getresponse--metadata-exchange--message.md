@@ -1,7 +1,7 @@
 ---
 description: Mensaje WS-Transfer que se usa para responder a una solicitud de metadatos.
 ms.assetid: aff05317-35db-4ea6-9692-1e09e4682fe7
-title: Mensaje GetResponse (metadatos Exchange)
+title: Mensaje GetResponse (Metadata Exchange)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 11bc76038a32d28f4ed773a937654e6d159ab75460e8cb6d6d5af60f614fa7e0
@@ -11,14 +11,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118552406"
 ---
-# <a name="getresponse-metadata-exchange-message"></a>Mensaje GetResponse (metadatos Exchange)
+# <a name="getresponse-metadata-exchange-message"></a>Mensaje GetResponse (Metadata Exchange)
 
-Un mensaje GetResponse es un WS-Transfer que se usa para responder a una solicitud de metadatos. Para obtener más información sobre los mensajes de GetResponse, vea la sección 3.1 de la [especificación de WS-Transfer](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf).
+Un mensaje GetResponse es un WS-Transfer que se usa para responder a una solicitud de metadatos. Para obtener más información sobre los mensajes getResponse, vea la sección 3.1 de [la especificación de WS-Transfer](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf).
 
-Cualquier aplicación DPWS que envíe [Get](get--metadata-exchange--http-request-and-message.md) messages recibirá mensajes GetResponse.
+Cualquier aplicación DPWS que envíe [los mensajes Get](get--metadata-exchange--http-request-and-message.md) recibirá mensajes GetResponse.
 
 > [!Note]  
-> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la herramienta de interoperabilidad básica de [WSDAPI (WSDBIT)](https://msdn.microsoft.com/library/cc264250.aspx) en su lugar.
+> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la [herramienta de interoperabilidad básica WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
 
  
 
@@ -140,7 +140,7 @@ Un mensaje GetResponse tiene los siguientes puntos de enfoque.
 <td><pre class="syntax" data-space="preserve"><code><wsa:RelatesTo>
     urn:uuid:027bec45-c37c-466c-936c-68f648abe2bb
 </wsa:RelatesTo></code></pre></td>
-<td>Identificador del mensaje al que responde el dispositivo. Este encabezado coincide con el MessageID del <a href="get--metadata-exchange--http-request-and-message.md">mensaje Get.</a></td>
+<td>Identificador del mensaje al que responde el dispositivo. Este encabezado coincide con messageID en <a href="get--metadata-exchange--http-request-and-message.md">el mensaje Get.</a></td>
 </tr>
 <tr class="odd">
 <td>Dirección</td>

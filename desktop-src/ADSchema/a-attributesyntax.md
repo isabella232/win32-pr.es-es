@@ -27,7 +27,7 @@ OID de la sintaxis de este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Attribute-Syntax                                                |
 | Ldap-Display-Name | attributeSyntax                                                 |
@@ -36,7 +36,7 @@ OID de la sintaxis de este atributo.
 | Frecuencia de actualización  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.2.32                                           |
 | System-Id-Guid    | bf967925-0de6-11d0-a285-00aa003049e2                            |
-| Sintaxis            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -54,14 +54,14 @@ OID de la sintaxis de este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -75,14 +75,14 @@ OID de la sintaxis de este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -96,14 +96,14 @@ OID de la sintaxis de este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -117,14 +117,14 @@ OID de la sintaxis de este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -138,14 +138,14 @@ OID de la sintaxis de este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -159,14 +159,14 @@ OID de la sintaxis de este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -180,14 +180,14 @@ OID de la sintaxis de este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |

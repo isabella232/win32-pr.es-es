@@ -27,7 +27,7 @@ propertyDescription
       formatAs = VARIANT_TRUE=-1, VARIANT_FALSE=0
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La interfaz de usuario PKEY minimizada la usa una aplicación para consultar el estado contraído o expandido de la interfaz \_ de usuario de la cinta de \_ opciones.
 

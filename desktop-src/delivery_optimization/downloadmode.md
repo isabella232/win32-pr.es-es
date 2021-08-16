@@ -1,6 +1,6 @@
 ---
 title: Enumeración DownloadMode (Deliveryoptimization.h)
-description: Define los distintos modos de descarga que Optimización de distribución utiliza.
+description: Define los distintos modos de descarga Optimización de distribución usa.
 ms.assetid: 7E9407C6-A22F-459E-B316-5E7809F0067A
 keywords:
 - Omite Optimización de distribución y usa BITS en su lugar. Por ejemplo, selecciona este modo para que los clientes puedan usar BranchCache. enumeración
@@ -24,9 +24,9 @@ ms.locfileid: "118543729"
 ---
 # <a name="downloadmode-enumeration"></a>Enumeración DownloadMode
 
-Define los distintos modos de descarga que Optimización de distribución utiliza.
+Define los distintos modos de descarga Optimización de distribución usa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -77,7 +77,7 @@ Habilita orígenes del mismo nivel de Internet para Optimización de distribuci�
 <span id="DownloadMode_Simple"></span><span id="downloadmode_simple"></span><span id="DOWNLOADMODE_SIMPLE"></span>**DownloadMode_Simple**
 </dt> <dd>
 
-El modo simple deshabilita completamente el uso de los servicios en la nube de Optimización de distribución completo (para entornos sin conexión). Optimización de distribución cambia a este modo automáticamente cuando los servicios en la nube Optimización de distribución no están disponibles, son inaccesibles o cuando el tamaño del archivo de contenido es inferior a 10 MB. En este modo, Optimización de distribución una experiencia de descarga confiable, sin almacenamiento en caché punto a punto.
+El modo simple deshabilita completamente el uso de los servicios en la nube de Optimización de distribución completo (para entornos sin conexión). Optimización de distribución cambia a este modo automáticamente cuando los servicios en la nube de Optimización de distribución no están disponibles, son inaccesibles o cuando el tamaño del archivo de contenido es inferior a 10 MB. En este modo, Optimización de distribución una experiencia de descarga confiable, sin almacenamiento en caché punto a punto.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Omite Optimización de distribución y usa BITS en su lugar. Por ejemplo, selecc
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------|----------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>      |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>  |

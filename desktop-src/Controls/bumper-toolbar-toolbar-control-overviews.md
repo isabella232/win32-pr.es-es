@@ -15,7 +15,7 @@ ms.locfileid: "118415647"
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Acerca de los controles de la barra de herramientas](toolbar-controls-overview.md)
+-   [Acerca de los controles de barra de herramientas](toolbar-controls-overview.md)
 -   [Usar controles de barra de herramientas](using-toolbar-controls.md)
 
  

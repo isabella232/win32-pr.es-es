@@ -50,7 +50,7 @@ Dim instance As New JET_ENUMCOLUMN()
 public JET_ENUMCOLUMN()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -19,7 +19,7 @@ Los pasos siguientes inicializan SSPI:
 
 -   [Escribir e instalar un proveedor de soporte técnico de seguridad](writing-and-installing-a-security-support-provider.md)
 -   [Inicialización del paquete de seguridad](initializing-the-security-package.md)
--   [Obtener información acerca de los paquetes de seguridad](getting-information-about-security-packages.md)
+-   [Obtener información sobre los paquetes de seguridad](getting-information-about-security-packages.md)
 -   [Uso de paquetes de seguridad](using-security-packages.md)
 
  

@@ -1,7 +1,7 @@
 ---
-description: Cree un grupo de efectos. Un grupo se utiliza para compartir parámetros entre efectos.
+description: Cree un grupo de efectos. Un grupo se usa para compartir parámetros entre efectos.
 ms.assetid: 5b202f85-b32b-4041-8873-0de535c2f59f
-title: Función D3DXCreateEffectPool (D3DX9Effect. h)
+title: Función D3DXCreateEffectPool (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 14753500ac15fb0ed30d46b1121431af78e1fe93
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 55df5e579b724a26e30223a0a0df7ffa815bda5a64b6f7d7e7e2c2c7f02f2fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118804581"
 ---
-# <a name="d3dxcreateeffectpool-function"></a>D3DXCreateEffectPool función)
+# <a name="d3dxcreateeffectpool-function"></a>Función D3DXCreateEffectPool
 
-Cree un grupo de efectos. Un grupo se utiliza para compartir parámetros entre efectos.
+Cree un grupo de efectos. Un grupo se usa para compartir parámetros entre efectos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ HRESULT D3DXCreateEffectPool(
 
 <dl> <dt>
 
-*ppPool* \[ enuncia\]
+*ppPool* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECTPOOL**](id3dxeffectpool.md)\***
@@ -53,15 +53,15 @@ Devuelve un puntero al grupo creado.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK.
 
 Si los argumentos no son válidos, el método devolverá D3DERR \_ INVALIDCALL.
 
-Si se produce un error en el método, el valor devuelto será E \_ producirá un error.
+Si se produce un error en el método, el valor devuelto será E \_ FAIL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el caso de los efectos de un grupo, los parámetros compartidos con el mismo nombre comparten los mismos valores.
+Para los efectos dentro de un grupo, los parámetros compartidos con los mismos valores de recurso compartido de nombres.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,12 +69,12 @@ En el caso de los efectos de un grupo, los parámetros compartidos con el mismo 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

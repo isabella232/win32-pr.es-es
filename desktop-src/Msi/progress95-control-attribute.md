@@ -1,5 +1,5 @@
 ---
-description: Si este bit se establece en un control ProgressBar, la barra se dibuja como una serie de rectángulos pequeños. Si no se establece este bit, la barra del indicador de progreso se dibuja como un único rectángulo continuo.
+description: Si este bit se establece en un control ProgressBar, la barra se dibuja como una serie de rectángulos pequeños. Si no se establece este bit, la barra indicadora de progreso se dibuja como un único rectángulo continuo.
 ms.assetid: b2c43763-799c-4f09-b9f8-47a4a5f4faf3
 title: Atributo de control Progress95
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "118627366"
 ---
 # <a name="progress95-control-attribute"></a>Atributo de control Progress95
 
-Si este bit se establece en un [control ProgressBar](progressbar-control.md), la barra se dibuja como una serie de rectángulos pequeños. Si no se establece este bit, la barra del indicador de progreso se dibuja como un único rectángulo continuo.
+Si este bit se establece en un [control ProgressBar](progressbar-control.md), la barra se dibuja como una serie de rectángulos pequeños. Si no se establece este bit, la barra indicadora de progreso se dibuja como un único rectángulo continuo.
 
 ## <a name="valid-controls"></a>Controles válidos
 
 [Progressbar](progressbar-control.md)
 
-## <a name="value"></a>Value
+## <a name="value"></a>Valor
 
 
 
@@ -31,9 +31,9 @@ Si este bit se establece en un [control ProgressBar](progressbar-control.md), la
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para establecer este atributo en un control, incluya el bit Progress95 en la columna Atributos del registro del control en la [tabla Control](control-table.md).
+Para establecer este atributo en un control , incluya el bit Progress95 en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
 Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 

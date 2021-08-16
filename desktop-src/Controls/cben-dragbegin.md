@@ -3,7 +3,7 @@ title: CBEN_DRAGBEGIN de notificación (Commctrl.h)
 description: Se envía cuando el usuario comienza a arrastrar la imagen del elemento que se muestra en la parte de edición del control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: bdab2700-a605-48af-aee3-bbf573408e3f
 keywords:
-- CBEN_DRAGBEGIN código de notificación Windows controles
+- CBEN_DRAGBEGIN de notificación Windows controles
 topic_type:
 - apiref
 api_name:

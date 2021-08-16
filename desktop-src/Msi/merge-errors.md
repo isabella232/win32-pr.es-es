@@ -23,7 +23,7 @@ ms.locfileid: "118628913"
 ---
 # <a name="mergeerrors-property"></a>Merge.Errors, propiedad
 
-La propiedad **Errors** de solo lectura del [**objeto Merge**](merge-object.md) devuelve una colección de objetos [**Error**](error-object.md) que es el conjunto actual de errores.
+La propiedad **Errors** de solo lectura del [**objeto Merge**](merge-object.md) devuelve una colección de [**objetos Error**](error-object.md) que es el conjunto actual de errores.
 
 Esta propiedad es de solo lectura.
 
@@ -38,7 +38,7 @@ propVal = Merge.Errors
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La recuperación no es destructiva. Se pueden recuperar varias instancias de la colección de errores llamando repetidamente a este método.
 
@@ -50,7 +50,7 @@ Consulte [**get \_ Errors**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-g
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
 | Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |

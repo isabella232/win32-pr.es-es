@@ -1,7 +1,7 @@
 ---
 description: Recupera el objeto ID3DXFile.
 ms.assetid: 832878c6-73a4-400a-af30-57112b172977
-title: 'ID3DXFileEnumObject:: GetFile (método) (D3DX9Xof. h)'
+title: Método ID3DXFileEnumObject::GetFile (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: d3b5d672ca9b462e08c75a6f3352b01b07ead43c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b07874cf492bc84207c6ea084df4c8a7506e1a6b3fdf6f94947092ad13cd160d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802737"
 ---
-# <a name="id3dxfileenumobjectgetfile-method"></a>ID3DXFileEnumObject:: GetFile (método)
+# <a name="id3dxfileenumobjectgetfile-method"></a>Método ID3DXFileEnumObject::GetFile
 
-Recupera el objeto [**ID3DXFile**](id3dxfile.md) .
+Recupera el [**objeto ID3DXFile.**](id3dxfile.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GetFile(
 
 <dl> <dt>
 
-*ppFile* \[ enuncia\]
+*ppFile* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DXFile**](id3dxfile.md)\*\***
 
-Dirección de un puntero a una interfaz [**ID3DXFile**](id3dxfile.md) que representa el objeto devuelto.
+Dirección de un puntero a una [**interfaz ID3DXFile,**](id3dxfile.md) que representa el objeto devuelto.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Dirección de un puntero a una interfaz [**ID3DXFile**](id3dxfile.md) que repres
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DXFERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DXFERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,12 +61,12 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

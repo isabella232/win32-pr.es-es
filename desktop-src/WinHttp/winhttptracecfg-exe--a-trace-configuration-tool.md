@@ -1,5 +1,5 @@
 ---
-description: La herramienta de configuración de seguimiento de servicios HTTP de Microsoft Windows (WinHTTP), WinHttpTraceCfg.exe, se usa para configurar funcionalidades de seguimiento con fines de depuración y de análisis de paquetes.
+description: La herramienta de configuración de seguimiento de microsoft Windows HTTP Services (WinHTTP), WinHttpTraceCfg.exe, se usa para configurar funcionalidades de seguimiento con fines de depuración y de búsqueda de paquetes.
 ms.assetid: 744cae92-9c64-459e-96eb-eb609e62183c
 title: WinHttpTraceCfg.exe, una herramienta de configuración de seguimiento
 ms.topic: article
@@ -22,16 +22,16 @@ Esta instalación de seguimiento puede ser una herramienta valiosa para la depur
 
 ## <a name="using-the-trace-facility"></a>Uso de la instalación de seguimiento
 
-WinHTTP obtiene los parámetros de control de seguimiento del registro. Estos parámetros de control afectan a cómo WinHTTP genera la salida de seguimiento y cómo se formatee esa salida. Todas las aplicaciones que usan WinHTTP comparten la misma configuración.
+WinHTTP obtiene los parámetros de control de seguimiento del Registro. Estos parámetros de control afectan a cómo WinHTTP genera la salida de seguimiento y cómo se formatee esa salida. Todas las aplicaciones que usan WinHTTP comparten la misma configuración.
 
-Una herramienta de configuración de la instalación de seguimiento, WinHttpTraceCfg.exe, está disponible como descarga en el sitio web de herramientas del Kit de recursos de [Windows Server 2003.](https://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd) La herramienta de configuración establece o recupera la configuración del Registro de la instalación de seguimiento en función de los parámetros de línea de comandos especificados.
+Una herramienta de configuración de la instalación de seguimiento, WinHttpTraceCfg.exe, está disponible como descarga en el sitio web Windows Resource Kit Tools de [Windows Server 2003.](https://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd) La herramienta de configuración establece o recupera la configuración del Registro de la instalación de seguimiento en función de los parámetros de línea de comandos especificados.
 
 ``` syntax
 WinHttpTraceCfg [-e <0|1>] [-l [log-file]] [-d <0|1>] [-s <0|1|2>] 
                 [-t <0|1>] [-?] [-m <file size>]
 ```
 
-En la tabla siguiente se enumeran los parámetros posibles para la herramienta de configuración.
+En la tabla siguiente se enumeran los posibles parámetros de la herramienta de configuración.
 
 
 
@@ -72,7 +72,7 @@ En la tabla siguiente se enumeran los parámetros posibles para la herramienta d
 <tr class="odd">
 <td>-l</td>
 <td><p>Especifica un prefijo para el archivo de registro. El prefijo puede incluir una ruta de acceso. El archivo de registro se escribe en el directorio actual o en el directorio especificado en el prefijo y tiene el formato siguiente.</p>
-<p><<em></em> > prefijo -< <em>nombre de la aplicación</em> > . <hora <em>.log</em> ></p>
+<p><<em></em> > prefijo -< <em>nombre de la aplicación</em> > . <<em>.log de</em> > tiempo</p>
 <p>Si no se especifica un prefijo, se usa una cadena vacía. Especifique &quot; * &quot; para eliminar un prefijo existente.</p></td>
 </tr>
 <tr class="even">
@@ -102,11 +102,11 @@ En la tabla siguiente se enumeran los parámetros posibles para la herramienta d
 <tbody>
 <tr class="odd">
 <td>0</td>
-<td>Solo muestra encabezados HTTP.</td>
+<td>Solo muestra los encabezados HTTP.</td>
 </tr>
 <tr class="even">
 <td>1</td>
-<td>Configuración predeterminada. Muestra el tráfico de red en American National Standards Institute (ANSI).</td>
+<td>Configuración predeterminada. Muestra el tráfico de red American National Standards Institute (ANSI).</td>
 </tr>
 <tr class="odd">
 <td>2</td>
@@ -168,7 +168,7 @@ Cada línea de salida de seguimiento contiene información en tres columnas. La 
 
 La tercera columna muestra una llamada de función, tráfico HTTP o un mensaje de estado incluido para ayudar a interpretar el seguimiento.
 
-Cuando una entrada de registro corresponde a una llamada de función, también se registran los parámetros de la función. Las direcciones de memoria se muestran en formato hexadecimal, mientras que el resto de valores se muestran como una cadena ASCII. La instalación de seguimiento también registra el tiempo de devolución y el valor de cada función.
+Cuando una entrada de registro corresponde a una llamada de función, también se registran los parámetros de la función. Las direcciones de memoria se muestran en formato hexadecimal, mientras que todos los demás valores se muestran como una cadena ASCII. La instalación de seguimiento también registra el tiempo de devolución y el valor de cada función.
 
 El formato de los datos HTTP depende de la configuración del Registro especificada con la herramienta de configuración de la instalación de seguimiento. Cuando se cifran los datos HTTP, los datos descifrados también se muestran en la salida de seguimiento.
 

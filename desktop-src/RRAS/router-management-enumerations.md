@@ -1,28 +1,28 @@
 ---
 title: Enumeraciones de administración de enrutadores
-description: Las funciones de administración del enrutador y las funciones de configuración del enrutador usan los siguientes tipos enumerados
+description: Las funciones de administración del enrutador y las funciones de configuración de enrutador usan los siguientes tipos enumerados.
 ms.assetid: 61265bb0-7884-4896-a76a-a2cc11ccccda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1812ced484e70552bebf3216a347f15e08ddab8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4b0b1a628ab57b04be0d602fe5ad732c90f00101f9e8d10a271f303083bf441d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787831"
 ---
 # <a name="router-management-enumerations"></a>Enumeraciones de administración de enrutadores
 
-Las [funciones de administración del enrutador](router-administration-functions.md) y las [funciones de configuración del enrutador](router-configuration-functions.md) usan los siguientes tipos enumerados:
+Las [funciones de administración del enrutador](router-administration-functions.md) y las funciones de configuración de [enrutador](router-configuration-functions.md) usan los siguientes tipos enumerados:
 
--   [**\_tipo de objeto MPRAPI \_**](/windows/desktop/api/Mprapi/ne-mprapi-mprapi_object_type)
--   [**\_Estado de conexión del ENrutador \_**](/windows/desktop/api/Mprapi/ne-mprapi-router_connection_state)
--   [**\_tipo de interfaz de ENrutador \_**](/windows/desktop/api/Mprapi/ne-mprapi-router_interface_type)
--   [Razones de inasequibilidad](unreachability-reasons.md)
+-   [**TIPO DE OBJETO \_ \_ MPRAPI**](/windows/desktop/api/Mprapi/ne-mprapi-mprapi_object_type)
+-   [**ESTADO DE \_ CONEXIÓN DEL \_ ENRUTADOR**](/windows/desktop/api/Mprapi/ne-mprapi-router_connection_state)
+-   [**TIPO DE \_ INTERFAZ \_ DE ENRUTADOR**](/windows/desktop/api/Mprapi/ne-mprapi-router_interface_type)
+-   [Motivos de no recalibilidad](unreachability-reasons.md)
 
- 
+ 
 
- 
+ 
 
 
 

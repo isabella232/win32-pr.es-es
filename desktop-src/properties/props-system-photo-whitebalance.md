@@ -1,5 +1,5 @@
 ---
-description: Modo de equilibrio de blanco en el momento en que se tomó la foto, tal como se tomó de la información del archivo de imagen intercambiable (EXIF).
+description: El modo de saldo en blanco en el momento en que se tomó la foto, tal como se tomó de la información del archivo de imagen intercambiable (EXIF).
 ms.assetid: efa1f1db-b99e-49c1-b9ff-3e9e0e98905c
 title: System.Photo.WhiteBalance
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118723173"
 ---
 # <a name="systemphotowhitebalance"></a>System.Photo.WhiteBalance
 
-Modo de equilibrio de blanco en el momento en que se tomó la foto, tal como se tomó de la información del archivo de imagen intercambiable (EXIF).
+El modo de saldo en blanco en el momento en que se tomó la foto, tal como se tomó de la información del archivo de imagen intercambiable (EXIF).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -67,7 +67,7 @@ propertyDescription
             defineName = PHOTO_WHITEBALANCE_MANUAL
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras digitales still: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

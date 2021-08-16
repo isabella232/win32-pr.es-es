@@ -49,12 +49,12 @@ Marcas que controlan este método. Puede ser uno de los siguientes valores.
 
 
 
-| Value                                                                                                           | Significado                                                                                                                                                                                                                                                                                                                                               |
+| Valor                                                                                                           | Significado                                                                                                                                                                                                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>HTTPREQUEST \_ PROXYSETTING \_ DEFAULT</dt> </dl>   | Configuración predeterminada del proxy. Equivalente a **HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG**.<br/>                                                                                                                                                                                                                                                             |
-| <dl> <dt>HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG</dt> </dl> | Indica que la configuración del proxy debe obtenerse del registro. Esto supone [ que ](proxycfg-exe--a-proxy-configuration-tool.md)Proxycfg.exese ha ejecutado. Si Proxycfg.exe se ha ejecutado y se especifica **HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG,** el comportamiento es equivalente a **HTTPREQUEST \_ PROXYSETTING \_ DIRECT**.<br/> |
+| <dl> <dt>HTTPREQUEST \_ PROXYSETTING \_ PREDETERMINADO</dt> </dl>   | Configuración de proxy predeterminada. Equivalente a **HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG**.<br/>                                                                                                                                                                                                                                                             |
+| <dl> <dt>HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG</dt> </dl> | Indica que la configuración del proxy debe obtenerse del Registro. Esto supone [ que ](proxycfg-exe--a-proxy-configuration-tool.md)Proxycfg.exese ha ejecutado. Si Proxycfg.exe se ha ejecutado y se especifica **HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG,** el comportamiento es equivalente a **\_ HTTPREQUEST PROXYSETTING \_ DIRECT.**<br/> |
 | <dl> <dt>HTTPREQUEST \_ PROXYSETTING \_ DIRECT</dt> </dl>    | Indica que se debe acceder directamente a todos los servidores HTTP y HTTPS. Use este comando si no hay ningún servidor proxy.<br/>                                                                                                                                                                                                                       |
-| <dl> <dt>PROXY DE \_ HTTPREQUESTSETTING \_ PROXY</dt> </dl>     | Cuando **se \_ especifica \_ HTTPREQUEST PROXYSETTING PROXY,** *varProxyServer* debe establecerse en una cadena de servidor proxy y *varBypassList* debe establecerse en una cadena de lista de omisión de dominio. Esta configuración de proxy solo se aplica a la instancia actual del [**objeto WinHttpRequest.**](winhttprequest.md)<br/>                                    |
+| <dl> <dt>PROXY \_ HTTPREQUESTSETTING \_ PROXY</dt> </dl>     | Cuando **se especifica \_ HTTPREQUEST PROXYSETTING \_ PROXY,** *varProxyServer* debe establecerse en una cadena de servidor proxy y *varBypassList* debe establecerse en una cadena de lista de omisión de dominio. Esta configuración de proxy solo se aplica a la instancia actual del [**objeto WinHttpRequest.**](winhttprequest.md)<br/>                                    |
 
 
 
@@ -62,14 +62,14 @@ Marcas que controlan este método. Puede ser uno de los siguientes valores.
 
 </dd> <dt>
 
-*ProxyServer* \[ en, opcional\]
+*ProxyServer* \[ in, opcional\]
 </dt> <dd>
 
 Se establece en una cadena de servidor proxy cuando *ProxySetting* es igual a **HTTPREQUEST \_ PROXYSETTING \_ PROXY**.
 
 </dd> <dt>
 
-*BypassList* \[ en, opcional\]
+*BypassList* \[ in, opcional\]
 </dt> <dd>
 
 Se establece en una cadena de lista de omisión de dominio *cuando ProxySetting* es igual a **HTTPREQUEST \_ PROXYSETTING \_ PROXY**.
@@ -78,13 +78,13 @@ Se establece en una cadena de lista de omisión de dominio *cuando ProxySetting*
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
+El valor devuelto es **S \_ OK on** success o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Permite a la aplicación que realiza la llamada especificar el uso de información de proxy predeterminada (configurada por la herramienta de configuración de proxy) o invalidar [Proxycfg.exe](proxycfg-exe--a-proxy-configuration-tool.md). Se debe llamar a este método antes de llamar al [**método**](iwinhttprequest-send.md) Send. Si se llama a este método después [**del método Send,**](iwinhttprequest-send.md) no tiene ningún efecto.
+Permite a la aplicación que realiza la llamada especificar el uso de la información de proxy predeterminada (configurada por la herramienta de configuración de proxy) o invalidar [Proxycfg.exe](proxycfg-exe--a-proxy-configuration-tool.md). Se debe llamar a este método antes de llamar al [**método Send.**](iwinhttprequest-send.md) Si se llama a este método después [**del método Send,**](iwinhttprequest-send.md) no tiene ningún efecto.
 
-[**IWinHttpRequest**](iwinhttprequest-interface.md) pasa estos parámetros a Microsoft Windows servicios HTTP (WinHTTP).
+[**IWinHttpRequest**](iwinhttprequest-interface.md) pasa estos parámetros a Microsoft Windows HTTP Services (WinHTTP).
 
 > [!Note]  
 > Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
@@ -234,9 +234,9 @@ WScript.Echo( WinHttpReq.ResponseText);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
 | Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
@@ -245,7 +245,7 @@ WScript.Echo( WinHttpReq.ResponseText);
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -255,7 +255,7 @@ WScript.Echo( WinHttpReq.ResponseText);
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versiones winHTTP](winhttp-versions.md)
+[Versiones de WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

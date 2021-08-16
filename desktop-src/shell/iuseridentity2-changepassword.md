@@ -1,7 +1,7 @@
 ---
 description: ChangePassword no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: bc8813a0-9b40-481f-9ab3-cf6a9a0796d2
-title: 'IUserIdentity2:: ChangePassword (método) (Msident. h)'
+title: Método IUserIdentity2::ChangePassword (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: dd4b858924e4b042b3d7a0636d90eb582e9506df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d892fd3f676183864d72d905b72cea2f01643211314fc293b1cd76e5d70fc237
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092702"
 ---
-# <a name="iuseridentity2changepassword-method"></a>IUserIdentity2:: ChangePassword (método)
+# <a name="iuseridentity2changepassword-method"></a>IUserIdentity2::ChangePassword (método)
 
-\[**ChangePassword** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md).\]
+\[**ChangePassword** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [use cuentas de usuario con cambio rápido de usuario Escritorio remoto](fastuserswitching.md).\]
 
 Establece una nueva contraseña para la identidad.
 
@@ -42,19 +42,19 @@ HRESULT ChangePassword(
 
 <dl> <dt>
 
-*szOldPass* \[ de\]
+*szOldPass* \[ En\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Cadena de caracteres anchos que contiene la contraseña asociada actualmente a la identidad.
 
 </dd> <dt>
 
-_szNewPass * \[ en\]
+*szNewPass* \[ En\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Cadena de caracteres anchos que contiene la nueva contraseña que se va a asociar a la identidad.
 
@@ -62,26 +62,26 @@ Cadena de caracteres anchos que contiene la nueva contraseña que se va a asocia
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de *szOldPass* debe coincidir con la contraseña actual de la identidad de *szNewPass* que se va a aplicar. Un valor incorrecto de *szOldPass* producirá un error en un valor devuelto de E \_ .
+El valor de *szOldPass* debe coincidir con la contraseña actual de la identidad para *que se aplique szNewPass.* Un valor incorrecto de *szOldPass* dará como resultado un valor devuelto de E \_ FAIL.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows 2000 Server<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 

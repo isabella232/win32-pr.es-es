@@ -1,7 +1,7 @@
 ---
 description: Este método devuelve una interfaz que proporciona acceso a los datos de vídeo.
 ms.assetid: 084F020F-A6F5-4982-BA4B-A8F8D6182868
-title: 'IVideoFrameNative:: GetData (método)'
+title: IVideoFrameNative::GetData (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - windows.media.core.interop.h
-ms.openlocfilehash: c612d2d34e23b393921f83f7dbe9e189aa366b30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 832b2e300887699b926362ce9cbfc6f334c181805bacb3546532920c684251d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993775"
 ---
-# <a name="ivideoframenativegetdata-method"></a>IVideoFrameNative:: GetData (método)
+# <a name="ivideoframenativegetdata-method"></a>IVideoFrameNative::GetData (método)
 
 Este método devuelve una interfaz que proporciona acceso a los datos de vídeo.
 
@@ -40,25 +40,25 @@ HRESULT GetData(
 
 <dl> <dt>
 
-*riid* \[ de\]
+*riid* \[ En\]
 </dt> <dd>
 
-IID de la interfaz que se va a recuperar.
+El IID de la interfaz que se recuperará.
 
 </dd> <dt>
 
-*PPV* \[ enuncia\]
+*ppv* \[ out\]
 </dt> <dd>
 
-Cuando este método se devuelve correctamente, contiene el puntero de interfaz solicitado en el parámetro *riid* .
+Cuando este método se devuelve correctamente, contiene el puntero de interfaz solicitado en *el parámetro riid.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto al finalizar correctamente. Devuelve E \_ nointerface si no se encuentra la interfaz solicitada.
+Devuelve S \_ OK cuando se completa correctamente. Devuelve E NOINTERFACE si no se encuentra \_ la interfaz solicitada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

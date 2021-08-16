@@ -3,7 +3,7 @@ title: Buscable
 description: El atributo Seekable es un atributo de nivel de archivo que especifica si una aplicación puede buscar puntos dentro del contenido.
 ms.assetid: 9653e368-4782-4506-9c44-54c9406b61b5
 keywords:
-- Formato multimedia de windows buscable
+- Formato multimedia de Windows que se puede buscar
 topic_type:
 - apiref
 api_name:
@@ -31,15 +31,15 @@ g \_ wszWMSeekable
 
 **WMT \_ TYPE \_ BOOL**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se trata de un atributo codificado.
 
 Este atributo no se puede duplicar en el nivel de archivo. Si este atributo se usa para una secuencia individual, se tratará como metadatos personalizados y no transmitirá su significado normal a los objetos del SDK Windows Media Format.
 
-El valor de este atributo para un archivo puede variar en función del objeto que expone la interfaz [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) o [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) utilizada para recuperarlo. Esto se debe a que los objetos de lector (sincrónicos y asincrónicos) realizan una comprobación más exhaustiva que el objeto del editor de metadatos para determinar si se puede buscar un punto en un archivo. El **valor del atributo Seekable** devuelto por un objeto de lector es más preciso.
+El valor de este atributo para un archivo puede variar en función del objeto que expone la [**interfaz IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) o [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) utilizada para recuperarlo. Esto se debe a que los objetos de lector (sincrónicos y asincrónicos) realizan una comprobación más exhaustiva que el objeto del editor de metadatos para determinar si se puede buscar un punto en un archivo. El **valor del atributo Seekable** devuelto por un objeto de lector es más preciso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

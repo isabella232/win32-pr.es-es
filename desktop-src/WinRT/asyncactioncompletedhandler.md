@@ -26,7 +26,7 @@ Representa el método al que se llama cuando se completa una acción asincrónic
 
 ## <a name="members"></a>Miembros
 
-La **interfaz AsyncActionCompletedHandler** hereda de [**IAsyncInfo**](/windows/win32/api/asyncinfo/nn-asyncinfo-iasyncinfo). **AsyncActionCompletedHandler** también tiene estos tipos de miembros:
+La **interfaz AsyncActionCompletedHandler** hereda de [**IAsyncInfo.**](/windows/win32/api/asyncinfo/nn-asyncinfo-iasyncinfo) **AsyncActionCompletedHandler** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -44,15 +44,15 @@ La **interfaz AsyncActionCompletedHandler** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Asigne **AsyncActionCompletedHandler** a [**IAsyncAction**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction) para recibir una notificación cuando se complete la acción asincrónica.
+Asigne un **AsyncActionCompletedHandler** a [**IAsyncAction**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction) para recibir una notificación cuando se complete la acción asincrónica.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                    |
@@ -60,7 +60,7 @@ Asigne **AsyncActionCompletedHandler** a [**IAsyncAction**](/windows/win32/api/w
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

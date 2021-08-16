@@ -31,11 +31,11 @@ g \_ wszWMPlaylistDelay
 
 **CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No todos los reproductores multimedia respetan el retraso de la lista de reproducción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

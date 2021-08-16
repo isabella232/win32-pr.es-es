@@ -13,7 +13,7 @@ ms.locfileid: "118751997"
 ---
 # <a name="description-property-legacy-windows-environment-features"></a>Propiedad Description (características heredadas Windows entorno)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -41,9 +41,9 @@ Devuelve o establece una cadena que especifica la descripción del carácter esp
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La descripción de un **carácter** puede depender de la configuración **de LanguageID del** carácter. El nombre de un carácter en un idioma puede ser diferente o usar caracteres diferentes que en otro. La descripción predeterminada del **carácter** para un idioma específico se define cuando el carácter se compila con el Editor de caracteres del Agente de Microsoft.
+La descripción de un **carácter** puede depender de la configuración **de LanguageID del** carácter. El nombre de un carácter en un idioma puede ser diferente o usar caracteres diferentes que en otro. La descripción predeterminada del **carácter para** un idioma específico se define cuando el carácter se compila con el Editor de caracteres de Microsoft Agent.
 
 > [!Note]  
 > El **valor de** la propiedad Description es opcional y no se puede proporcionar para todos los caracteres.

@@ -4,7 +4,7 @@ description: Lea y escriba las propiedades descritas en la tabla siguiente.
 ms.assetid: dd348a3c-0386-4fa2-984d-cdea6f09bd72
 ms.tgt_platform: multiple
 keywords:
-- AdsI de métodos de propiedad IADsProperty
+- ADSI de métodos de propiedad IADsProperty
 topic_type:
 - apiref
 api_name:
@@ -311,7 +311,7 @@ CoUninitialize();
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -321,7 +321,7 @@ CoUninitialize();
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

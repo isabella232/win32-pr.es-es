@@ -25,15 +25,15 @@ La acción RegisterTypeLibraries debe ir después de [la acción InstallFiles.](
 
 | Campo | Descripción de los datos de acción                   |
 |-------|----------------------------------------------|
-| \[1\] | [GUID de](guid.md) la biblioteca de tipos registrada. |
+| \[1\] | [GUID](guid.md) de la biblioteca de tipos registrados. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La acción RegisterTypeLibraries requiere que el lenguaje de biblioteca de tipos se cree correctamente en el campo Idioma de la tabla TypeLib. La creación incorrecta del campo Idioma puede hacer que el instalador no registre una biblioteca de tipos válida de otro modo.
+La acción RegisterTypeLibraries requiere que el lenguaje de biblioteca de tipos se cree correctamente en el campo Idioma de la tabla TypeLib. La creación incorrecta del campo Idioma puede hacer que el instalador no pueda registrar una biblioteca de tipos válida de otro modo.
 
  
 

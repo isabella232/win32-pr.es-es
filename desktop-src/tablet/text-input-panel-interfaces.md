@@ -26,12 +26,12 @@ Esta sección contiene información sobre las interfaces que se usan para contro
 
 | Interfaz                                                                | Descripción                                                                                                                                  |
 |--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IHandWrittenTextInsertion (Interfaz)**](/windows/desktop/api/peninputpanel/nn-peninputpanel-ihandwrittentextinsertion) | Usado por el código de entrada de texto personalizado de la aplicación para insertar el texto en el campo de texto y en el almacén de respaldo de Text Services.<br/> |
+| [**IHandWrittenTextInsertion (Interfaz)**](/windows/desktop/api/peninputpanel/nn-peninputpanel-ihandwrittentextinsertion) | Lo usa el código de entrada de texto personalizado de la aplicación para insertar el texto tanto en el campo de texto como en el almacén de respaldo de Text Services.<br/> |
 | [**ITextInputPanel (interfaz)**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel)                     | Proporciona control sobre el Panel de entrada de Tablet PC.<br/>                                                                                  |
-| [**ITextInputPanelEventSink (interfaz)**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpaneleventsink)   | Define métodos que controlan los [**eventos de la interfaz ITextInputPanel.**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel)<br/>                                      |
+| [**ITextInputPanelEventSink (Interfaz)**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpaneleventsink)   | Define métodos que controlan los eventos de la interfaz [**ITextInputPanel.**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel)<br/>                                      |
 | [**ITextInputPanelRunInfo (Interfaz)**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanelruninfo)       | Proporciona un método para determinar si el Panel de entrada de texto se está ejecutando actualmente.<br/>                                                      |
 | [**ITipAutocompleteClient (interfaz)**](itipautocompleteclient.md)       | Permite al cliente llamar al objeto de proveedor autocompletar del Panel de entrada de texto de la aplicación.<br/>                                      |
-| [**ITipAutocompleteProvider (interfaz)**](itipautocompleteprovider.md)   | Administra la parte de la aplicación de la integración de autocompletar del Panel de entrada de texto.<br/>                                                 |
+| [**ITipAutocompleteProvider (interfaz)**](itipautocompleteprovider.md)   | Administra el lado de la aplicación de la integración autocompletar del Panel de entrada de texto.<br/>                                                 |
 
 
 

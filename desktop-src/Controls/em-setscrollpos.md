@@ -39,7 +39,7 @@ Este parámetro no se usa; debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura POINT**](/previous-versions//dd162805(v=vs.85)) que especifica un punto en el espacio de texto virtual del documento, expresado en píxeles. El documento se desplazará hasta que este punto se encuentra en la esquina superior izquierda de la ventana de control de edición. Si desea cambiar la vista de forma que la esquina superior izquierda de la vista esté dos líneas hacia abajo y un carácter en el borde izquierdo. Se pasa un punto de (7, 22).
+Puntero a una [**estructura POINT**](/previous-versions//dd162805(v=vs.85)) que especifica un punto en el espacio de texto virtual del documento, expresado en píxeles. El documento se desplazará hasta que este punto se encuentra en la esquina superior izquierda de la ventana de control de edición. Si desea cambiar la vista de forma que la esquina superior izquierda de la vista esté dos líneas hacia abajo y un carácter en el borde izquierdo. Se pasará un punto de (7, 22).
 
 El control rich edit comprueba las coordenadas x e y las ajusta si es necesario, para que se muestre una línea completa en la parte superior. También garantiza que el texto nunca se desplace completamente fuera del rectángulo de la vista.
 

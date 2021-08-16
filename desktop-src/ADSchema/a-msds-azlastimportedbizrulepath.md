@@ -27,7 +27,7 @@ La última ruta de acceso de regla de negocios importada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Az-Last-Imported-Biz-Rule-Path        |
 | Ldap-Display-Name | msDS-AzLastImportedBizRulePath              |
@@ -36,7 +36,7 @@ La última ruta de acceso de regla de negocios importada.
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1803                     |
 | System-Id-Guid    | 665acb5c-bb92-4dbc-8c59-b3638eab09b3        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,14 +52,14 @@ La última ruta de acceso de regla de negocios importada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
 | Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Es de un solo valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | 0                                                 |
 | Range-Upper            | 65536                                             |
@@ -73,14 +73,14 @@ La última ruta de acceso de regla de negocios importada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
 | Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Es de un solo valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | 0                                                 |
 | Range-Upper            | 65536                                             |
@@ -94,14 +94,14 @@ La última ruta de acceso de regla de negocios importada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
@@ -115,14 +115,14 @@ La última ruta de acceso de regla de negocios importada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
@@ -136,14 +136,14 @@ La última ruta de acceso de regla de negocios importada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |

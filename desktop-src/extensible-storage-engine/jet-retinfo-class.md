@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_RETINFO (clase)'
-title: JET_RETINFO (clase)
+description: 'Más información sobre: JET_RETINFO clase'
+title: JET_RETINFO clase
 TOCTitle: JET_RETINFO class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_RETINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retinfo(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 28d9d87edac5352c75c7d071625d6ab93ec9ad9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38c75ab9c451808eb85203fa293d49d1df445101f7a933cff51976c327dd80d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107438"
 ---
-# <a name="jet_retinfo-class"></a>JET_RETINFO (clase)
+# <a name="jet_retinfo-class"></a>JET_RETINFO clase
 
 Contiene parámetros de entrada y salida opcionales para JetRetrieveColumn.
 
@@ -40,10 +40,10 @@ Contiene parámetros de entrada y salida opcionales para JetRetrieveColumn.
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_RETINFO  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,10 +62,10 @@ public class JET_RETINFO : IContentEquatable<JET_RETINFO>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_RETINFO](./jet-retinfo-members.md)
+[JET_RETINFO miembros](./jet-retinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

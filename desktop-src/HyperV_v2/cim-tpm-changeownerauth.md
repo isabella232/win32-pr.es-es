@@ -82,7 +82,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
@@ -92,7 +92,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

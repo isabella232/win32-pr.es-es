@@ -25,7 +25,7 @@ ms.locfileid: "118544592"
 
 La **enumeración DODownloadProperty** especifica el identificador de las propiedades de la operación de descarga de DO. La interfaz **IDODownload** usa esta enumeración y la lleva a cabo un valor VARIANT, donde se encuentra el tipo de valor.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef enum _DODownloadProperty
@@ -57,7 +57,7 @@ typedef enum _DODownloadProperty
 
 ## <a name="constants"></a>Constantes
 
-| Requisito | Value |
+| Requisito | Valor |
 |-|-|
 | DODownloadProperty_Id | Solo lectura. Use esta propiedad para obtener el identificador que identifica de forma única la descarga. El tipo VARIANT es VT_BSTR. |
 | DODownloadProperty_Uri | Use esta propiedad para establecer u obtener la ruta de acceso del URI remoto del recurso que se va a descargar. Esta propiedad solo es necesaria *si DODownloadProperty_ContentId* no se proporciona. El tipo VARIANT es VT_BSTR. |
@@ -75,11 +75,11 @@ typedef enum _DODownloadProperty
 | DODownloadProperty_CallbackInterface | Opcional. Use esta propiedad para establecer u obtener el puntero a la interfaz **IDODownloadStatusCallback** usada para las devoluciones de llamada de descarga. El tipo VARIANT es VT_UNKNOWN. |
 | DODownloadProperty_StreamInterface | Opcional. Use esta propiedad para establecer u obtener el puntero a la interfaz IStream que se usa para el tipo de descarga de flujo. El tipo VARIANT es VT_UNKNOWN. |
 | DODownloadProperty_SecurityContext | Solo escritura opcional. Use esta propiedad para establecer el contexto de certificado que se usará durante las operaciones de solicitud HTTP. El valor debe constar de bytes serializados de CERT_CONTEXT. El tipo VARIANT es (VT_ARRAY \| VT_UI1). |
-| DODownloadProperty_NetworkToken | Solo escritura opcional. Use esta propiedad para establecer el token de red que se usará durante las operaciones HTTP. VARIANT_TRUE valor hará que DO capture el token de identidad del autor de la llamada y VARIANT_FALSE borrará el token existente. El valor predeterminado es el token del usuario que ha iniciado sesión. El tipo VARIANT es VT_BOOL. |
-| DODownloadProperty_CorrelationVector | Opcional. Establece un vector de correlación específico con fines de telemetría. El tipo VARIANT VT_BSTR. |
+| DODownloadProperty_NetworkToken | Solo escritura opcional. Use esta propiedad para establecer el token de red que se usará durante las operaciones HTTP. VARIANT_TRUE valor hará que DO capture el token de identidad del autor de la llamada y VARIANT_FALSE borrará el token existente. El valor predeterminado es el token del usuario que ha iniciado sesión. El tipo VARIANT VT_BOOL. |
+| DODownloadProperty_CorrelationVector | Opcional. Establece un vector de correlación específico para fines de telemetría. El tipo VARIANT VT_BSTR. |
 | DODownloadProperty_DecryptionInfo | Solo escritura opcional. Establece la información de descifrado en forma de cadena JSON. El tipo VARIANT VT_BSTR. |
 | DODownloadProperty_IntegrityCheckInfo | Solo escritura opcional. Establece la ubicación del archivo hash por pieza (PHF), que usa do para realizar comprobaciones de integridad en tiempo de ejecución en el contenido descargado. El tipo VARIANT VT_BSTR. |
-| DODownloadProperty_IntegrityCheckMandatory | Opcional. Establece una marca booleana que indica si el uso del archivo hash de pieza (PHF) es obligatorio. Si VARIANT_TRUE, la descarga se anulará si se produce un error en la comprobación de integridad. El tipo VARIANT es VT_BOOL. |
+| DODownloadProperty_IntegrityCheckMandatory | Opcional. Establece una marca booleana que indica si el uso del archivo hash de pieza (PHF) es obligatorio. Si VARIANT_TRUE, la descarga se anulará si se produce un error en la comprobación de integridad. El tipo VARIANT VT_BOOL. |
 | DODownloadProperty_TotalSizeBytes | Opcional. Especifica el tamaño total de descarga en bytes. El tipo VARIANT VT_UI8. |
 
 ## <a name="requirements"></a>Requisitos

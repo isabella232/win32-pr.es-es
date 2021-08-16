@@ -29,13 +29,13 @@ g \_ wszWMMediaIsStereo
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WMT \_ TYPE \_ BOOL**
+**TIPO WMT \_ \_ BOOL**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo se usa para la televisión de difusión.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

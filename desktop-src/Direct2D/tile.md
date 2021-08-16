@@ -71,7 +71,7 @@ Puede crear un icono de una imagen y generar un tamaño determinado sin ningún 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |

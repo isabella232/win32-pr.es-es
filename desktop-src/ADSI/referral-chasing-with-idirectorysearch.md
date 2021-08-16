@@ -37,7 +37,7 @@ SearchPref.vValue.Integer = ADS_CHASE_REFERRALS_ALWAYS;
 
 
 
-Para obtener más información sobre las referencias en Active Directory, vea [Referencias.](/windows/desktop/AD/referrals)
+Para obtener más información sobre las referencias en Active Directory, vea [Referencias](/windows/desktop/AD/referrals).
 
  
 

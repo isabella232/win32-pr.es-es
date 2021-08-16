@@ -1,34 +1,34 @@
 ---
-description: El cifrado masivo y las claves MAC se derivan de una clave maestra, pero pueden incluir otros orígenes según el protocolo y el conjunto de cifrado utilizado.
+description: El cifrado masivo y las claves MAC se derivan de una clave maestra, pero pueden incluir otros orígenes en función del protocolo y el conjunto de cifrado usados.
 ms.assetid: f78acb54-c32a-46a8-b465-855251069a57
 title: Derivación de cifrado masivo y claves MAC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97cbf216fd850c7b98c638d4fdc10a84087d91ac
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 602419be7cdddea27c190806f0d03e087b8aac63eeeee2d80e96e2b3bcfae561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105670105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767709"
 ---
 # <a name="deriving-bulk-encryption-and-mac-keys"></a>Derivación de cifrado masivo y claves MAC
 
-El [*cifrado masivo*](../secgloss/b-gly.md) y [*las claves Mac*](../secgloss/m-gly.md) se derivan de una [*clave maestra*](../secgloss/m-gly.md) , pero pueden incluir otros orígenes según el protocolo y el conjunto de cifrado utilizado.
+[*El cifrado masivo*](../secgloss/b-gly.md) y [*las claves MAC*](../secgloss/m-gly.md) se derivan de una clave [*maestra,*](../secgloss/m-gly.md) pero pueden incluir otros orígenes en función del protocolo y el conjunto de cifrado usados.
 
-El proceso de derivación de cifrado masivo y claves MAC es el mismo para el cliente y el servidor:
+El proceso de derivar el cifrado masivo y las claves MAC es el mismo para el cliente y el servidor:
 
-1.  El motor de protocolo llama a [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) en la clave maestra una o más veces para proporcionar al CSP la información necesaria para crear las claves.
-2.  Dado que las claves de [*CryptoAPI*](../secgloss/c-gly.md) no se pueden derivar directamente de otras claves, se crea un objeto hash a partir de la clave maestra mediante [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash). Este [*hash*](../secgloss/h-gly.md) se usa para crear las nuevas claves.
-3.  Las dos claves de cifrado masivo y las dos claves MAC se crean a partir del objeto "hash principal" mediante cuatro llamadas a [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
+1.  El motor de protocolo llama a [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) en la clave maestra una o varias veces para proporcionar al CSP la información necesaria para compilar las claves.
+2.  Dado [*que las claves CryptoAPI*](../secgloss/c-gly.md) no se pueden derivar directamente de otras claves, se crea un objeto hash a partir de la clave maestra mediante [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash). Este [*hash*](../secgloss/h-gly.md) se usa para crear las nuevas claves.
+3.  Las dos claves de cifrado masivo y las dos claves MAC se crean a partir del objeto "hash maestro" mediante cuatro llamadas a [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
 
 > [!Note]
-> Al realizar las reconexiones SSL, un motor de protocolo puede realizar el procedimiento anterior varias veces con la misma clave maestra. Esto permite que el cliente y el servidor dispongan de varias conexiones simultáneas, cada una con un [*cifrado masivo*](../secgloss/b-gly.md) diferente y claves Mac sin operaciones adicionales de RSA o Diffie-Hellman.
+> Al volver a conectar SSL, un motor de protocolo puede realizar el procedimiento anterior varias veces con la misma clave maestra. Esto permite que el cliente y el servidor tengan [](../secgloss/b-gly.md) varias conexiones, a menudo simultáneas, cada una con diferentes claves MAC y de cifrado masivo sin operaciones rsa o Diffie-Hellman adicionales.
 > 
-> Todos los CSP deben usar buenas prácticas de seguridad para subprocesos. Los recuentos de subprocesos de varias docenas no son inusuales.
+> Todos los CSP deben usar procedimientos seguros para subprocesos. Los recuentos de subprocesos de varias docenas no son inusuales.
 
  
 
-El siguiente es el código fuente típico del motor de protocolo:
+A continuación se muestra un código fuente típico para el motor de protocolo:
 
 
 ```C++

@@ -13,7 +13,7 @@ ms.locfileid: "118760981"
 ---
 # <a name="hit-testing-regions"></a>Regiones de pruebas de impacto
 
-Una aplicación realiza pruebas de posicionamiento en regiones para determinar las coordenadas de la posición actual del cursor. A continuación, pasa estas coordenadas, así como un identificador que identifica la región a la [**función PtInRegion.**](/windows/desktop/api/Wingdi/nf-wingdi-ptinregion) Las coordenadas de cursor se pueden recuperar procesando los distintos mensajes del mouse, como [**WM \_ LBUTTONDOWN,**](../inputdev/wm-lbuttondown.md) [**WM \_ LBUTTONUP,**](../inputdev/wm-lbuttonup.md) [**WM \_ RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) y [**WM \_ RBUTTONUP.**](../inputdev/wm-rbuttonup.md) El valor devuelto para PtInRegion indica si la posición del cursor está dentro de la región dada.
+Una aplicación realiza pruebas de posicionamiento en regiones para determinar las coordenadas de la posición actual del cursor. A continuación, pasa estas coordenadas, así como un identificador que identifica la región a la [**función PtInRegion.**](/windows/desktop/api/Wingdi/nf-wingdi-ptinregion) Las coordenadas del cursor se pueden recuperar procesando los distintos mensajes del mouse, como [**WM \_ LBUTTONDOWN,**](../inputdev/wm-lbuttondown.md) [**WM \_ LBUTTONUP,**](../inputdev/wm-lbuttonup.md) [**WM \_ RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) y [**WM \_ RBUTTONUP.**](../inputdev/wm-rbuttonup.md) El valor devuelto para PtInRegion indica si la posición del cursor está dentro de la región determinada.
 
  
 

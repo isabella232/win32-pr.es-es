@@ -1,11 +1,11 @@
 ---
-title: Template-Roots atributo)
-description: Este atributo se usa en el contenedor de configuración de Exchange para indicar dónde se almacenan los contenedores de la plantilla. Esta información la utiliza el proveedor de Active Directory MAPI.
+title: Template-Roots atributo
+description: Este atributo se usa en el contenedor Exchange config para indicar dónde se almacenan los contenedores de plantilla. Esta información la usa el proveedor Active Directory DE PROTOCOLOS.
 ms.assetid: 1416ce4a-ca07-4ca9-8ea1-e1a6ad19e7ad
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Template-Roots
-- templateRoots esquema de AD de atributos
+- Template-Roots esquema de AD de atributo
+- TemplateRoots attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 761c6d3d79bbf45e9a4d391b612956d6893cd314
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 06b037afe0e2489a2979e7d7b873e37cfc365643cb4728ab0411e4c56827a019
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923045"
 ---
-# <a name="template-roots-attribute"></a>Template-Roots atributo)
+# <a name="template-roots-attribute"></a>Template-Roots atributo
 
-Este atributo se usa en el contenedor de configuración de Exchange para indicar dónde se almacenan los contenedores de la plantilla. Esta información la utiliza el proveedor de Active Directory MAPI.
+Este atributo se usa en el contenedor Exchange config para indicar dónde se almacenan los contenedores de plantilla. Esta información la usa el proveedor Active Directory DE PROTOCOLOS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Template-Roots                          |
-| Nombre para mostrar de LDAP | templateRoots                           |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | Lo utiliza el sistema.             |
+| Ldap-Display-Name | templateRoots                           |
+| Size              | \-                                      |
+| Actualizar privilegios  | El sistema lo usa.             |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1346                 |
-| System-ID-GUID    | ed9de9a0-7041-11d2-9905-0000f87a57d4    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | ed9de9a0-7041-11d2-9905-0000f87a57d4    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,20 +53,20 @@ Este atributo se usa en el contenedor de configuración de Exchange para indicar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Este atributo se usa en el contenedor de configuración de Exchange para indicar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Este atributo se usa en el contenedor de configuración de Exchange para indicar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo se usa en el contenedor de configuración de Exchange para indicar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Este atributo se usa en el contenedor de configuración de Exchange para indicar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Este atributo se usa en el contenedor de configuración de Exchange para indicar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 

@@ -43,7 +43,7 @@ Donde:
 
 Las revisiones usan los vértices de la matriz de vértices como puntos de control para cada revisión.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

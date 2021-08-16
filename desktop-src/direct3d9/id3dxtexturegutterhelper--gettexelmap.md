@@ -55,9 +55,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor. D3DERR \_ INVALIDCALL
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para los elementos de textura de las clases 2 y [**4,**](id3dxtexturegutterhelper.md)las coordenadas de textura devueltas (u, v) corresponden al punto más cercano del triángulo más cercano.
+Para los elementos de textura de clase 2 y [**4,**](id3dxtexturegutterhelper.md)las coordenadas de textura devueltas (u, v) corresponden al punto más cercano del triángulo más cercano.
 
 La aplicación debe asignar y administrar pTexelData.
 
@@ -72,7 +72,7 @@ La aplicación debe asignar y administrar pTexelData.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

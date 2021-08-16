@@ -1,9 +1,9 @@
 ---
-title: Application. Commands (propiedad)
+title: Propiedad Application.Commands
 description: Representa un contenedor para todos los comandos definidos por la aplicación.
 ms.assetid: 160d7d28-2d64-4cbc-b2b9-2da6b2f5b3c8
 keywords:
-- Propiedad Application. Commands (cinta de Windows)
+- Application.Commands, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8de2b88b97dda96636a9c5da3ad078f678091d8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c23d7b30b45a6023c547904adbcaaacb13b8777f9047133cd8d617a1a58c32d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964324"
 ---
-# <a name="applicationcommands-property"></a>Application. Commands (propiedad)
+# <a name="applicationcommands-property"></a>Propiedad Application.Commands
 
 Representa un contenedor para todos los comandos definidos por la aplicación.
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                     | Descripción                                        |
 |-------------------------------------------------------------|----------------------------------------------------|
-| [**Command**](windowsribbon-element-command.md)<br/> | Puede producirse una o varias veces<br/> <br/> |
+| [**Comando**](windowsribbon-element-command.md)<br/> | Puede producirse una o varias veces<br/> <br/> |
 
 
 
@@ -55,15 +55,15 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada elemento de la [**aplicación**](windowsribbon-element-application.md) .
+Puede producirse como máximo una vez para cada [**elemento Application.**](windowsribbon-element-application.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un elemento **Application. Commands** que contiene un manifiesto de comandos del portapapeles.
+En el ejemplo siguiente se muestra **un elemento Application.Commands** que contiene un manifiesto de comandos del Portapapeles.
 
 
 ```C++
@@ -149,18 +149,18 @@ En el ejemplo siguiente se muestra un elemento **Application. Commands** que con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Application. views**](windowsribbon-element-application-views.md)
+[**Application.Views**](windowsribbon-element-application-views.md)
 </dt> </dl>
 
  

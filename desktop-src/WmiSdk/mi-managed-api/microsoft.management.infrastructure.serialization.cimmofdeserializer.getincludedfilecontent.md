@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: CimMofDeserializer. GetIncludedFileContent Delegate (cadena)'
-title: Delegado CimMofDeserializer. GetIncludedFileContent (Microsoft. Management. Infrastructure. Serialization)
+description: 'Más información sobre: CimMofDeserializer.GetIncludedFileContent delegate (String)'
+title: Delegado CimMofDeserializer.GetIncludedFileContent (Microsoft.Management.Infrastructure.Serialization)
 TOCTitle: CimMofDeserializer.GetIncludedFileContent delegate (Microsoft.Management.Infrastructure.Serialization)
 ms:assetid: T:Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer.GetIncludedFileContent
 ms.date: 11/13/2019
@@ -27,19 +27,19 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: cb922d785da7d01de93adec56cefee29785210d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8b34b9c96f418bc0facf615c86a69ea1a958726407a93bf97e7421a1582f997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992875"
 ---
-# <a name="cimmofdeserializergetincludedfilecontent-delegate-string"></a>Delegado CimMofDeserializer. GetIncludedFileContent (cadena)
+# <a name="cimmofdeserializergetincludedfilecontent-delegate-string"></a>CimMofDeserializer.GetIncludedFileContent delegado (String)
 
 Representa una devolución de llamada para recuperar el contenido del archivo en forma de una matriz de bytes.
 
-**Espacio de nombres:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
-**Ensamblado:**  Microsoft. Management. Infrastructure (en Microsoft.Management.Infrastructure.dll)  
+**Espacio de nombres:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
+**Ensamblado:**  Microsoft.Management.Infrastructure (en Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,16 +70,16 @@ Public Delegate Function GetIncludedFileContent (
 #### <a name="parameters"></a>Parámetros
 
   - fileName  
-    Tipo: [System. String](/dotnet/api/system.string?view=netframework-4.8)
+    Tipo: [System.String](/dotnet/api/system.string?view=netframework-4.8)
     
     Nombre de archivo, incluida la ruta de acceso.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Byte](/dotnet/api/system.byte?view=netframework-4.8)\[\]
+Tipo: [System.Byte](/dotnet/api/system.byte?view=netframework-4.8)\[\]
 
-Devuelve el contenido del archivo en forma de matriz de bytes.
+Devuelve el contenido del archivo en forma de una matriz de bytes.
 
 ## <a name="see-also"></a>Consulte también
 
-[Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))
+[Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

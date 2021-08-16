@@ -23,7 +23,7 @@ ms.locfileid: "118528113"
 
 Lo llama un [sombreador de intersección](intersection-shader.md) para notificar una intersección de rayos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 Esta definición de función intrínseca es equivalente a la siguiente plantilla de función:
 
 ```
@@ -41,7 +41,7 @@ Valor float que especifica la distancia paramétrica de la intersección.
 
 `HitKind`
 
-Entero sin signo que identifica el tipo de impacto que se produjo.  Se trata de un valor especificado por el usuario en el intervalo de 0 a 127.  El valor se puede leer [](closest-hit-shader.md) mediante [cualquier sombreador de](any-hit-shader.md) impacto o más cercano con el **intrínseco HitKind.**
+Entero sin signo que identifica el tipo de impacto que se produjo.  Se trata de un valor especificado por el usuario en el intervalo de 0 a 127.  Cualquier sombreador de impacto [](closest-hit-shader.md) [o](any-hit-shader.md) más cercano puede leer el valor con el **intrínseco HitKind.**
 
 `Attributes`
 
@@ -51,7 +51,7 @@ Estructura de atributo de [**intersección**](intersection-attributes.md) defini
 
 **bool** True si se aceptó la pulsación.  Se rechaza una pulsación si *THit* está fuera del intervalo de rayos actual o cualquier sombreador de llamadas llama [**a IgnoreHit**](ignorehit-function.md).  **RayTMin** y **RayTCurrent** definen el intervalo de rayo actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
@@ -61,7 +61,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador de rayt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
