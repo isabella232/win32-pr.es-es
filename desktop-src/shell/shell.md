@@ -13,20 +13,20 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 75fc151e-5b9e-476b-b4e5-b848917357a8
-ms.openlocfilehash: 55f8062b71e553ec5ceefa413b45f439874744b8
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: fe2fbaa1bad61ac9c22d36919e49cf493a26a778a8e97d69d1b200c0c62205e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857724"
 ---
 # <a name="shell-object"></a>Objeto shell
 
 Representa los objetos del Shell. Se proporcionan métodos para controlar el Shell y ejecutar comandos dentro del shell. También hay métodos para obtener otros objetos relacionados con Shell.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
-El **objeto Shell** tiene estos tipos de miembros:
+El **objeto** Shell tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
@@ -51,7 +51,7 @@ El **objeto Shell** tiene estos métodos.
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-addtorecent"><strong>AddToRecent</strong></a></td>
-<td style="text-align: left;">Agrega un archivo a la lista de mru usada más recientemente.<br/></td>
+<td style="text-align: left;">Agrega un archivo a la lista de uso más reciente (MRU).<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-browseforfolder.md"><strong>BrowseForFolder</strong></a></td>
@@ -63,14 +63,14 @@ El **objeto Shell** tiene estos métodos.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-cascadewindows.md"><strong>CascadeWindows</strong></a></td>
-<td style="text-align: left;">En cascada todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Ventanas en cascada</strong>.<br/></td>
+<td style="text-align: left;">En cascada todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Cascada Windows</strong>.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-controlpanelitem.md"><strong>ControlPanelItem</strong></a></td>
 <td style="text-align: left;">Ejecuta la aplicación Panel de control especificada (*.cpl). Si la aplicación ya está abierta, activará la instancia en ejecución. <br/>
 <blockquote>
 <p>[!Note]<br />
-Desde Windows Vista, la mayoría de Panel de control son elementos de Shell y no se pueden abrir con esta función. Para abrir esas Panel de control, pase el nombre canónico a control.exe. Por ejemplo:</p>
+A Windows Vista, la mayoría Panel de control aplicaciones son elementos de Shell y no se pueden abrir con esta función. Para abrir esas Panel de control, pase el nombre canónico a control.exe. Por ejemplo:</p>
 <pre class="syntax" data-space="preserve"><code>control.exe /name Microsoft.Personalization</code></pre>
 </blockquote>
 <br/></td>
@@ -81,7 +81,7 @@ Desde Windows Vista, la mayoría de Panel de control son elementos de Shell y no
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-explore.md"><strong>Explorar</strong></a></td>
-<td style="text-align: left;">Abre una carpeta especificada en una Explorador de Windows especificada.<br/></td>
+<td style="text-align: left;">Abre una carpeta especificada en una Windows Explorer.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-explorerpolicy.md"><strong>ExplorerPolicy</strong></a></td>
@@ -93,11 +93,11 @@ Desde Windows Vista, la mayoría de Panel de control son elementos de Shell y no
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-findcomputer.md"><strong>FindComputer</strong></a></td>
-<td style="text-align: left;">Muestra el cuadro <strong>de diálogo Resultados de la búsqueda:</strong> Equipos. El cuadro de diálogo muestra el resultado de la búsqueda de un equipo especificado.<br/></td>
+<td style="text-align: left;">Muestra el cuadro <strong>de diálogo Resultados de la búsqueda:</strong> Equipos . El cuadro de diálogo muestra el resultado de la búsqueda de un equipo especificado.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-findfiles.md"><strong>FindFiles</strong></a></td>
-<td style="text-align: left;">Muestra el <strong>cuadro de diálogo Buscar: Todos los</strong> archivos . Esto es lo mismo que hacer clic en el <strong>menú</strong> Inicio y, a continuación, seleccionar <strong>Buscar</strong> (o su equivalente en sistemas anteriores a Windows XP).<br/></td>
+<td style="text-align: left;">Muestra el <strong>cuadro de diálogo Buscar: Todos los</strong> archivos . Esto es lo mismo <strong></strong> que hacer clic en el menú Inicio y, a continuación, seleccionar <strong>Buscar</strong> (o su equivalente en sistemas anteriores a Windows XP.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-findprinter"><strong>FindPrinter</strong></a></td>
@@ -113,7 +113,7 @@ Desde Windows Vista, la mayoría de Panel de control son elementos de Shell y no
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-help.md"><strong>Ayuda</strong></a></td>
-<td style="text-align: left;">Muestra la ventana de Windows Centro de ayuda y soporte técnico. Este método tiene el mismo efecto que hacer clic en <strong>el menú</strong> Inicio y seleccionar Ayuda y <strong>soporte técnico.</strong><br/></td>
+<td style="text-align: left;">Muestra el Windows Centro de ayuda y soporte técnico. Este método tiene el mismo efecto que hacer clic en <strong>el menú</strong> Inicio y seleccionar Ayuda y <strong>soporte técnico.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-isrestricted"><strong>IsRestricted</strong></a></td>
@@ -125,7 +125,7 @@ Desde Windows Vista, la mayoría de Panel de control son elementos de Shell y no
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-minimizeall.md"><strong>MinimizeAll</strong></a></td>
-<td style="text-align: left;">Minimiza todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho <strong></strong> en la barra de tareas y seleccionar Minimizar todas las <strong>ventanas</strong> en sistemas anteriores o hacer clic en el icono Mostrar escritorio en el área inicio rápido de la barra de tareas en Windows 2000 o Windows XP.<br/></td>
+<td style="text-align: left;">Minimiza todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en <strong></strong> la barra de tareas y seleccionar Minimizar todos <strong>los Windows</strong> en sistemas anteriores o hacer clic en el icono Mostrar escritorio en el área inicio rápido de la barra de tareas en Windows 2000 o Windows XP.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-namespace.md"><strong>Nombres</strong></a></td>
@@ -165,7 +165,7 @@ Desde Windows Vista, la mayoría de Panel de control son elementos de Shell y no
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-shutdownwindows.md"><strong>ShutdownWindows</strong></a></td>
-<td style="text-align: left;">Muestra el <strong>cuadro de diálogo Apagar Windows.</strong> Esto es lo mismo que hacer clic en <strong>el menú</strong> Inicio y seleccionar <strong>Apagar.</strong><br/></td>
+<td style="text-align: left;">Muestra el <strong>cuadro de diálogo Windows</strong> cierre. Esto es lo mismo que hacer clic en <strong>el menú</strong> Inicio y seleccionar <strong>Apagar.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-suspend.md"><strong>Suspender</strong></a></td>
@@ -173,11 +173,11 @@ Desde Windows Vista, la mayoría de Panel de control son elementos de Shell y no
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-tilehorizontally.md"><strong>TileHorizontally</strong></a></td>
-<td style="text-align: left;">Iconos de todas las ventanas del escritorio horizontalmente. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Mosaico de Windows horizontalmente.</strong><br/></td>
+<td style="text-align: left;">Iconos de todas las ventanas del escritorio horizontalmente. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Icono Windows horizontalmente.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-tilevertically.md"><strong>TileVertically</strong></a></td>
-<td style="text-align: left;">Iconos de todas las ventanas en el escritorio verticalmente. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Icono de Windows verticalmente.</strong><br/></td>
+<td style="text-align: left;">Iconos de todas las ventanas en el escritorio verticalmente. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Icono Windows verticalmente.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-toggledesktop.md"><strong>ToggleDesktop</strong></a></td>
@@ -185,11 +185,11 @@ Desde Windows Vista, la mayoría de Panel de control son elementos de Shell y no
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-trayproperties.md"><strong>TrayProperties</strong></a></td>
-<td style="text-align: left;">Muestra el cuadro <strong>de diálogo Propiedades de la barra de tareas y del menú</strong> Inicio . Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Propiedades</strong>.<br/></td>
+<td style="text-align: left;">Muestra el cuadro <strong>de diálogo Propiedades de la barra de</strong> tareas y del menú Inicio . Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Propiedades</strong>.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-undominimizeall.md"><strong>UndoMinimizeALL</strong></a></td>
-<td style="text-align: left;">Restaura todas las ventanas de escritorio al mismo estado en que estaban antes del último <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Este método tiene el mismo efecto que hacer clic con el botón derecho en la <strong></strong> barra de tareas y seleccionar Deshacer Minimizar todas las <strong>ventanas</strong> en sistemas anteriores o un segundo clic en el icono Mostrar escritorio en el área inicio rápido de la barra de tareas en Windows 2000 o Windows XP.<br/></td>
+<td style="text-align: left;">Restaura todas las ventanas de escritorio al mismo estado que tenían antes del último <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de <strong></strong> tareas y seleccionar Deshacer minimizar todos <strong>los Windows</strong> en sistemas anteriores o hacer un segundo clic en el icono Mostrar escritorio en el área inicio rápido de la barra de tareas en Windows 2000 o Windows XP.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-windows.md"><strong>Windows</strong></a></td>
@@ -229,9 +229,9 @@ El **objeto Shell** tiene estas propiedades.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

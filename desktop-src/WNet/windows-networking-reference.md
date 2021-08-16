@@ -1,6 +1,6 @@
 ---
 title: Windows Referencia de redes
-description: Los siguientes elementos de API se usan en Windows Networking
+description: Los siguientes elementos de API se usan en Windows Redes
 ms.assetid: 2f930380-fc6e-4a39-98c6-a03b64f1bba5
 keywords:
 - Windows redes WNet , reference

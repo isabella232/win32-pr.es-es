@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemPartitions Association de Win32 relaciona un equipo y una partición de disco en ese sistema.
+description: La clase WMI de asociación SystemPartitions de Win32 relaciona un sistema \_ informático y una partición de disco en ese sistema.
 ms.assetid: e8f02cd0-9446-4258-b476-5dc6c72c80d4
 ms.tgt_platform: multiple
-title: Win32_SystemPartitions (clase)
+title: Win32_SystemPartitions clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: deae8129772e5d854f05b5b953ec66a12bd5bcaf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7c5ec2682e6a81d0cdc3e9fa590418bdf03e46c0a60086b470cd8bc4c97006fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117833953"
 ---
-# <a name="win32_systempartitions-class"></a>\_Clase Win32 SystemPartitions
+# <a name="win32_systempartitions-class"></a>Clase SystemPartitions de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemPartitions** Association de Win32 relaciona un equipo y una partición de disco en ese sistema.
+La clase WMI **de asociación \_ SystemPartitions** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y una partición de disco en ese sistema.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
 Referencia a la instancia de que representa las propiedades del sistema del equipo donde se encuentra la partición de disco.
@@ -77,36 +77,36 @@ Tipo de datos: **Win32 \_ DiskPartition**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ DiskPartition")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ DiskPartition")
 </dt> </dl>
 
 Referencia a la instancia de que representa las propiedades de una partición de disco que existe en el sistema del equipo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ SystemPartitions de Win32** se deriva de [**\_ SystemDevices de Win32**](win32-systemdevices.md).
+La **clase \_ SystemPartitions de Win32** se deriva de [**\_ SystemDevices de Win32.**](win32-systemdevices.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ SystemDevices**](win32-systemdevices.md)
+[**Sistema \_ Win32Dispositivos**](win32-systemdevices.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

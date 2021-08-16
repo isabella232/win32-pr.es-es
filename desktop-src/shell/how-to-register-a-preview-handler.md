@@ -69,7 +69,7 @@ El valor predeterminado de la subclave (aquí, **{ec3a629a-a47c-4245-bc78-b4b63d
 
 El signo menos (-101) del recurso .dll en la entrada DisplayName existe por motivos heredados. Por otro lado, la entrada Icono no requiere un signo menos.
 
-El valor AppID proporciona una referencia al AppID de la aplicación asociada a la extensión de nombre de archivo (almacenada en **HKEY \_ CLASSES \_ ROOT** \\ **APPID**. El valor usado aquí({6d2b5079-2f0b-48dd-ab7f-97cec514d30b}) es el identificador del host suplente de Prevhost.exe. Los controladores de versión preliminar de 32 bits deben usar **AppID** {534A1E02-D58F-44f0-B58B-36CBED287C7C} cuando se instalan en sistemas operativos de 64 bits.
+El valor AppID proporciona una referencia al AppID de la aplicación asociada a la extensión de nombre de archivo (almacenada en **HKEY \_ CLASSES \_ ROOT** \\ **APPID**. El valor que se usa aquí({6d2b5079-2f0b-48dd-ab7f-97cec514d30b}) es el identificador del host suplente de Prevhost.exe. Los controladores de versión preliminar de 32 bits deben usar **AppID** {534A1E02-D58F-44f0-B58B-36CBED287C7C} cuando se instalan en sistemas operativos de 64 bits.
 
 Las entradas de la subclave **InprocServer32** incluyen una referencia a la subclave ProgID de la extensión de nombre de archivo, así como una entrada para [versionIndependentProgID.](../com/versionindependentprogid.md)
 

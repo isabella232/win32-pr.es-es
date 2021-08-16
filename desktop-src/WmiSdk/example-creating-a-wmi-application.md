@@ -2,7 +2,7 @@
 description: Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realice la inicialización COM, se conecte a WMI en el equipo local, lea algunos datos y limpie.
 ms.assetid: d80bcf9f-e57c-499f-b7b8-cf25678c5a82
 ms.tgt_platform: multiple
-title: 'Ejemplo: Crear una aplicación WMI'
+title: 'Ejemplo: Creación de una aplicación WMI'
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 49e7633c666beb900da4cdbe41909880d9766c903be0fc8b6aa1d4e45be8d90f
@@ -12,23 +12,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118319314"
 ---
-# <a name="example-creating-a-wmi-application"></a>Ejemplo: Crear una aplicación WMI
+# <a name="example-creating-a-wmi-application"></a>Ejemplo: Creación de una aplicación WMI
 
 Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realice la inicialización COM, se conecte a WMI en el equipo local, lea algunos datos y limpie. [Conectarse a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md) describe cómo obtener datos de equipos remotos.
 
-En este procedimiento se incluyen todos los pasos necesarios para todas las aplicaciones WMI de C++.
+Este procedimiento incluye todos los pasos necesarios para todas las aplicaciones WMI de C++.
 
 1.  Inicialice los parámetros COM con una llamada a [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
 
     Para obtener más información, [vea Inicializar COM para una aplicación WMI.](initializing-com-for-a-wmi-application.md)
 
-2.  Inicialice la seguridad del proceso COM mediante [**una llamada a CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
+2.  Inicialice la seguridad del proceso COM mediante una [**llamada a CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
     Para obtener más información, vea [Establecer el nivel de seguridad de proceso predeterminado mediante C++.](setting-the-default-process-security-level-using-c-.md)
 
 3.  Obtenga un puntero a [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para un espacio de nombres en un equipo host especificado (el equipo local en el caso simple) mediante una llamada a [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver).
 
-    Para conectarse a un equipo remoto, por ejemplo, equipo A, use el siguiente parámetro de ruta \_ de acceso de objeto:
+    Para conectarse a un equipo remoto, por ejemplo, el equipo A, use el siguiente parámetro de ruta \_ de acceso de objeto:
 
     ```C++
     _bstr_t(L"\\COMPUTER_A\ROOT\\CIMV2")
@@ -42,13 +42,13 @@ En este procedimiento se incluyen todos los pasos necesarios para todas las apli
 
     Para obtener más información, vea [Establecer los niveles de seguridad en una conexión WMI.](setting-the-security-levels-on-a-wmi-connection.md)
 
-5.  Use el [**puntero IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para realizar solicitudes de WMI. Por ejemplo, la consulta de todas las instancias del servicio [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-service) para determinar qué servicios se detienen.
+5.  Use el [**puntero IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para realizar solicitudes de WMI. Por ejemplo, consultando todas las instancias del [**servicio Win32 \_**](/windows/desktop/CIMWin32Prov/win32-service) para determinar qué servicios se detienen.
 
     Para obtener más información, vea [Manipulating Class and Instance Information](manipulating-class-and-instance-information.md), [Querying WMI](querying-wmi.md)y Receiving a WMI [Event](receiving-a-wmi-event.md).
 
 6.  Limpiar objetos y COM.
 
-    Para obtener más información, vea [Limpieza y apagado de una aplicación WMI.](cleaning-up-and-shutting-down-a-wmi-application.md)
+    Para obtener más información, [vea Limpieza y apagado de una aplicación WMI.](cleaning-up-and-shutting-down-a-wmi-application.md)
 
 El código de ejemplo siguiente es una aplicación cliente WMI completa.
 

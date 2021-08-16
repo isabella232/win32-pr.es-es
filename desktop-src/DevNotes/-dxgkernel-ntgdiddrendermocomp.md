@@ -1,7 +1,7 @@
 ---
-description: Indica al controlador qué macrobloques representar especificando las superficies que contienen macrobloques, los desplazamientos en cada superficie donde existe el macrobloques y el tamaño de los datos de adaptativo macrobloque que se van a representar.
+description: Indica al controlador qué macrobloques se deben representar especificando las superficies que contienen los macrobloques, los desplazamientos en cada superficie donde existen los macrobloques y el tamaño de los datos de macrobloque que se representarán.
 ms.assetid: c49d9dfa-a3db-4572-a474-72c7d4e80940
-title: Función NtGdiDdRenderMoComp (Ntgdi. h)
+title: Función NtGdiDdRenderMoComp (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 6e1dd0942a6996264e02531f7e21b2a99f059143
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d057ba1c7b533d75ce10754670b911ddc01a689acee29d79614a3ce2f273d278
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103906973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827976"
 ---
-# <a name="ntgdiddrendermocomp-function"></a>NtGdiDdRenderMoComp función)
+# <a name="ntgdiddrendermocomp-function"></a>Función NtGdiDdRenderMoComp
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
-Indica al controlador qué macrobloques representar especificando las superficies que contienen macrobloques, los desplazamientos en cada superficie donde existe el macrobloques y el tamaño de los datos de adaptativo macrobloque que se van a representar.
+Indica al controlador qué macrobloques se deben representar especificando las superficies que contienen los macrobloques, los desplazamientos en cada superficie donde existen los macrobloques y el tamaño de los datos de macrobloque que se representarán.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,56 +45,56 @@ DWORD APIENTRY NtGdiDdRenderMoComp(
 
 <dl> <dt>
 
-*hMoComp* \[ de\]
+*hMoComp* \[ En\]
 </dt> <dd>
 
-Identificador de una [**estructura \_ \_ local DD MOTIONCOMP**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncomp_local) que contiene una descripción de la compensación de movimiento que se solicita.
+Controlar a una [**estructura \_ LOCAL MOTIONCOMP \_ de DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncomp_local) que contiene una descripción de la compensación de movimiento que se solicita.
 
 </dd> <dt>
 
 *puRenderMoCompData* \[ in, out\]
 </dt> <dd>
 
-Puntero a una estructura [**DD \_ RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) que contiene la información necesaria para representar un marco.
+Puntero a una [**estructura \_ RENDERMOCOMPDATA de DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) que contiene la información necesaria para representar un marco.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**NtGdiDdRenderMoComp** devuelve uno de los siguientes códigos de devolución de llamada.
+**NtGdiDdRenderMoComp devuelve** uno de los siguientes códigos de devolución de llamada.
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_controlador DDHAL \_ controlado**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ Aceptar, DirectDraw o Direct3D continúa con la función. De lo contrario, DirectDraw o Direct3D devuelve el código de error proporcionado por el controlador y anula la función.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED del controlador DDHAL \_**</dt> </dl> | El controlador no tiene ningún comentario en la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D informa de una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido ejecutando la implementación independiente de dispositivos DirectDraw o Direct3D.<br/> |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es correcto para \_ DD, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ NO CONTROLADA**</dt> </dl> | El controlador no tiene ningún comentario sobre la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D notifica una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido mediante la ejecución de la implementación independiente del dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información, vea el kit de desarrollo de controladores (DDK) de Microsoft DirectX video Acceleration.
+Para más información, consulte El Kit de desarrollo de controladores de aceleración de vídeo (DDK) de Microsoft DirectX.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

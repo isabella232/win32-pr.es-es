@@ -1,7 +1,7 @@
 ---
 description: Carga una biblioteca.
 ms.assetid: 191fcbd8-4542-4cad-955e-6951f3005fc5
-title: _LoadLibrary función)
+title: _LoadLibrary función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: ce4502813c1ca2a292486a18f1946f4c605c96cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67755d96d87530f450627714de7c1526750967b87bdf51901b788662c4534045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827986"
 ---
-# <a name="_loadlibrary-function"></a>\_LoadLibrary (función)
+# <a name="_loadlibrary-function"></a>\_Función LoadLibrary
 
-\[Esta función es un contenedor de la función **LoadLibrary** . Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar a **LoadLibrary** directamente.\]
+\[Esta función es un contenedor sobre la **función LoadLibrary.** Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar **directamente a LoadLibrary.**\]
 
-Carga una biblioteca. Consulte [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya).
+Carga una biblioteca. Vea [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,13 +49,13 @@ HMODULE _LoadLibrary(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Msmdun80.dll; </dt> <dt>Sqlunirl.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

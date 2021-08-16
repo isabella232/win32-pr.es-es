@@ -1,6 +1,6 @@
 ---
-title: Conjunto de comandos de VCR
-description: Conjunto de comandos de VCR
+title: Conjunto de comandos vcr
+description: Conjunto de comandos vcr
 ms.assetid: e17ec75d-a98f-46ea-8bef-7e45e1696f43
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118370261"
 ---
-# <a name="vcr-command-set"></a>Conjunto de comandos de VCR
+# <a name="vcr-command-set"></a>Conjunto de comandos vcr
 
 Los VCR admiten el siguiente conjunto de comandos.
 
@@ -22,10 +22,10 @@ Los VCR admiten el siguiente conjunto de comandos.
 | [**Romper**](break.md)             | [**MCI \_ BREAK**](mci-break.md)             |
 | [**Capacidad**](capability.md)   | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md)   |
 | [**Cue**](cue.md)                 | [**MCI \_ CUE**](mci-cue.md)                 |
-| [**Congelar**](freeze.md)           | [**INMOVILIZACIÓN DE MCI \_**](mci-freeze.md)           |
-| [**Índice**](./windows-multimedia-start-page.md)             | [**ÍNDICE \_ de MCI**](mci-index.md)             |
+| [**Congelar**](freeze.md)           | [**MCI \_ FREEZE**](mci-freeze.md)           |
+| [**Índice**](./windows-multimedia-start-page.md)             | [**ÍNDICE \_ DE MCI**](mci-index.md)             |
 | [**Información**](info.md)               | [**INFORMACIÓN \_ de MCI**](mci-info.md)               |
-| [**Lista**](list.md)               | [**LISTA \_ de MCI**](mci-list.md)               |
+| [**Lista**](list.md)               | [**LISTA \_ DE MCI**](mci-list.md)               |
 | [**Marca**](mark.md)               | [**MCI \_ MARK**](mci-mark.md)               |
 | [**Pausa**](pause.md)             | [**PAUSA \_ DE MCI**](mci-pause.md)             |
 | [**Jugar**](play.md)               | [**MCI \_ PLAY**](mci-play.md)               |

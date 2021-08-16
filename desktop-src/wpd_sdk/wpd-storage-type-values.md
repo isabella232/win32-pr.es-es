@@ -1,7 +1,7 @@
 ---
-description: El \_ tipo de \_ enumeración de valores de tipo de almacenamiento WPD \_ describe los distintos tipos de almacenamiento de dispositivos portátiles de Windows.
+description: El tipo de enumeración WPD STORAGE TYPE VALUES describe los distintos tipos Windows almacenamiento de \_ \_ \_ dispositivos portátiles.
 ms.assetid: 52c34458-e64e-4355-9231-7457a6dff5c5
-title: Enumeración WPD_STORAGE_TYPE_VALUES (PortableDevice. h)
+title: WPD_STORAGE_TYPE_VALUES enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: b741feb1cb9a834e16a35627fe98718ac8acf30f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1aad78833f9e5baa0d3c7da3ab37d39f4159672b85d5c01c54ae8b034c5b43d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842082"
 ---
-# <a name="wpd_storage_type_values-enumeration"></a>\_ \_ Enumeración de valores de tipo de almacenamiento WPD \_
+# <a name="wpd_storage_type_values-enumeration"></a>Enumeración \_ WPD STORAGE \_ TYPE \_ VALUES
 
-El tipo de enumeración de **\_ valores de \_ tipo \_ de almacenamiento WPD** describe los distintos tipos de almacenamiento de dispositivos portátiles de Windows.
+El **tipo de \_ enumeración WPD STORAGE \_ TYPE \_ VALUES** describe los distintos tipos Windows almacenamiento de dispositivos portátiles.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,35 +43,35 @@ typedef enum tagWPD_STORAGE_TYPE_VALUES {
 
 <dl> <dt>
 
-<span id="WPD_STORAGE_TYPE_UNDEFINED"></span><span id="wpd_storage_type_undefined"></span>**tipo de almacenamiento de WPD sin \_ \_ \_ definir**
+<span id="WPD_STORAGE_TYPE_UNDEFINED"></span><span id="wpd_storage_type_undefined"></span>**TIPO DE \_ ALMACENAMIENTO WPD \_ SIN \_ DEFINIR**
 </dt> <dd>
 
 El almacenamiento es de un tipo no definido.
 
 </dd> <dt>
 
-<span id="WPD_STORAGE_TYPE_FIXED_ROM"></span><span id="wpd_storage_type_fixed_rom"></span>**tipo de almacenamiento WPD de \_ \_ \_ \_ ROM fijo**
+<span id="WPD_STORAGE_TYPE_FIXED_ROM"></span><span id="wpd_storage_type_fixed_rom"></span>**WPD \_ STORAGE \_ TYPE \_ FIXED \_ ROM**
 </dt> <dd>
 
 El almacenamiento no es extraíble y de solo lectura.
 
 </dd> <dt>
 
-<span id="WPD_STORAGE_TYPE_REMOVABLE_ROM"></span><span id="wpd_storage_type_removable_rom"></span>**\_ \_ ROM extraíble del tipo de almacenamiento de \_ WPD \_**
+<span id="WPD_STORAGE_TYPE_REMOVABLE_ROM"></span><span id="wpd_storage_type_removable_rom"></span>**WPD \_ STORAGE \_ TYPE \_ REMOVABLE \_ ROM**
 </dt> <dd>
 
 El almacenamiento es extraíble y es de solo lectura.
 
 </dd> <dt>
 
-<span id="WPD_STORAGE_TYPE_FIXED_RAM"></span><span id="wpd_storage_type_fixed_ram"></span>**\_ \_ \_ memoria RAM fija de tipo de almacenamiento WPD \_**
+<span id="WPD_STORAGE_TYPE_FIXED_RAM"></span><span id="wpd_storage_type_fixed_ram"></span>**RAM FIJA \_ DE TIPO DE ALMACENAMIENTO \_ \_ \_ WPD**
 </dt> <dd>
 
 El almacenamiento no es extraíble y es compatible con lectura y escritura.
 
 </dd> <dt>
 
-<span id="WPD_STORAGE_TYPE_REMOVABLE_RAM"></span><span id="wpd_storage_type_removable_ram"></span>**\_ \_ \_ memoria RAM extraíble del tipo de almacenamiento WPD \_**
+<span id="WPD_STORAGE_TYPE_REMOVABLE_RAM"></span><span id="wpd_storage_type_removable_ram"></span>**RAM EXTRAÍBLE DE TIPO DE ALMACENAMIENTO \_ \_ \_ \_ WPD**
 </dt> <dd>
 
 El almacenamiento es extraíble y es compatible con lectura y escritura.
@@ -88,11 +88,11 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

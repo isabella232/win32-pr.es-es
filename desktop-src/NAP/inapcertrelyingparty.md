@@ -22,14 +22,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118368614"
 ---
-# <a name="inapcertrelyingparty-interface"></a>INapCertRelyingParty (interfaz)
+# <a name="inapcertrelyingparty-interface"></a>Interfaz INapCertRelyingParty
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-La **interfaz INapCertRelyingParty** proporciona métodos que los usuarios que dependen de certificados deben usar para comunicarse con NapAgent.
+La **interfaz INapCertRelyingParty** proporciona métodos que los usuarios de confianza de certificados deben usar para comunicarse con NapAgent.
 
 ## <a name="members"></a>Miembros
 

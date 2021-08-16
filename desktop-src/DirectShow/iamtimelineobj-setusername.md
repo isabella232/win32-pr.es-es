@@ -48,7 +48,7 @@ HRESULT SetUserName(
 *newVal* 
 </dt> <dd>
 
-Cadena de caracteres anchos que contiene el nombre. Las cadenas de más de 256 caracteres podrían truncarse.
+Cadena de caracteres anchos que contiene el nombre. Las cadenas de más de 256 caracteres pueden truncarse.
 
 </dd> </dl>
 

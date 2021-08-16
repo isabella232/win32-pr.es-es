@@ -1,20 +1,20 @@
 ---
-title: Tipos de tipo y constantes de Direct2D
+title: Constantes y tipos de datos de Direct2D
 description: Direct2D proporciona los siguientes tipos de datos y constantes.
 ms.assetid: e5ff04d9-6194-4bdf-9db3-213d79199e4b
 keywords:
-- Direct2D, tipos de texto
+- Direct2D, tipos de datos
 - Direct2D, constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a8566bd44d851b516e291f919e1deeddc06b696
-ms.sourcegitcommit: 66ba6a8d2fe79e55c46f6003b9b4abd127c76d8a
+ms.openlocfilehash: 5cea50069fcf860efa12d68c318657a896cd27d24fdf4c81b7c82a28e1f6567e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "105656293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825968"
 ---
-# <a name="direct2d-datatypes-and-constants"></a>Tipos de tipo y constantes de Direct2D
+# <a name="direct2d-datatypes-and-constants"></a>Constantes y tipos de datos de Direct2D
 
 Direct2D proporciona los siguientes tipos de datos y constantes.
 
@@ -24,7 +24,7 @@ Direct2D proporciona los siguientes tipos de datos y constantes.
 
 | Tema                                                           | Descripción                                                                                 |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**Tipo de la \_ etiqueta D2D1**](d2d1-tag.md)<br/>               | Un valor de 64 bits definido por la aplicación que se usa para marcar un conjunto de operaciones de representación. <br/> |
+| [**Tipo de datos D2D1 \_ TAG**](d2d1-tag.md)<br/>               | Valor de 64 bits definido por la aplicación que se usa para marcar un conjunto de operaciones de representación. <br/> |
 | [**Constantes de Direct2D**](direct2d-constants.md)<br/>     | Direct2D define la siguiente lista de constantes.<br/>                                |
 | [**Códigos de error de Direct2D**](direct2d-error-codes.md)<br/> | Enumera los códigos de error usados por Direct2D.<br/>                                          |
 

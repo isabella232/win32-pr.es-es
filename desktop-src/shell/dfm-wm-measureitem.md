@@ -1,19 +1,19 @@
 ---
-description: Se envía a la ventana propietaria de un control o un elemento de menú cuando se crea el control o el menú.
+description: Se envía a la ventana de propietario de un control o elemento de menú cuando se crea el control o el menú.
 ms.assetid: 4584a3da-6c92-4ecd-8cf2-e4afc1b8321d
-title: Mensaje de DFM_WM_MEASUREITEM (ShlObj. h)
+title: DFM_WM_MEASUREITEM mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c4ad79acf221ecaabf9060940ad2514422bef1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e7ad0d39a56f598a8ef4773c70f4f438388e91a2154b3083fdf85a1ebebec22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860903"
 ---
-# <a name="dfm_wm_measureitem-message"></a>DFM \_ WM \_ MEASUREITEM Message
+# <a name="dfm_wm_measureitem-message"></a>Mensaje \_ MEASUREITEM de WM DE DFM \_
 
-Se envía a la ventana propietaria de un control o un elemento de menú cuando se crea el control o el menú.
+Se envía a la ventana de propietario de un control o elemento de menú cuando se crea el control o el menú.
 
 
 ```C++
@@ -32,33 +32,33 @@ DFM_WM_MEASUREITEM
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-El valor del miembro **CtlID** de la estructura [**measureitemstruct (**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) señalada por el parámetro *lpMeasureItem* . Este valor identifica el control que envió el mensaje **DFM de \_ \_ MEASUREITEM de WM** .
+Valor del miembro **CtlID** de la [**estructura MEASUREITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) a la que apunta el *parámetro lpMeasureItem.* Este valor identifica el control que envió el mensaje **\_ \_ MEASUREITEM de WM DE DFM.**
 
 </dd> <dt>
 
-*lpMeasureItem* \[ enuncia\]
+*lpMeasureItem* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [**measureitemstruct (**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) que contiene las dimensiones del elemento de menú o control dibujado por el propietario.
+Puntero a una [**estructura MEASUREITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) que contiene las dimensiones del elemento de menú o control dibujado por el propietario.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la ventana propietaria recibe el mensaje **DFM de \_ \_ MEASUREITEM WM** , el propietario rellena la estructura [**measureitemstruct (**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) señalada por el parámetro *lpMeasureItem* del mensaje y devuelve; esto informa al sistema de las dimensiones del control.
+Cuando la ventana de propietario recibe el mensaje **\_ \_ MEASUREITEM de DFM WM,** el propietario rellena la estructura [**MEASUREITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) a la que apunta el parámetro *lpMeasureItem* del mensaje y devuelve ; esto informa al sistema de las dimensiones del control.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

@@ -1,33 +1,33 @@
 ---
-description: El shell utiliza una subclave del registro de identificador de programación (ProgID) para asociar un tipo de archivo a una aplicación y controlar el comportamiento de la asociación.
+description: El Shell usa una subclave del Registro de identificador de programación (ProgID) para asociar un tipo de archivo a una aplicación y para controlar el comportamiento de la asociación.
 ms.assetid: f2b666d6-bf22-47b5-87e1-8de5ff51c152
-title: Identificadores de programación
+title: Identificadores mediante programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67720fed1ad4b8401d11f6532cdc79836911e7cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cdc29a3981461a178bdf528768bb12b1840ac5dbed46f310c10718fa9429153
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860812"
 ---
-# <a name="programmatic-identifiers"></a>Identificadores de programación
+# <a name="programmatic-identifiers"></a>Identificadores mediante programación
 
-El shell utiliza una subclave del registro de identificador de programación (ProgID) para asociar un tipo de archivo a una aplicación y controlar el comportamiento de la asociación. Las entradas ProgID utilizadas para las asociaciones de archivo se encuentran en **HKEY \_ classes \_ root** en el registro.
+El Shell usa una subclave del Registro de identificador de programación (ProgID) para asociar un tipo de archivo a una aplicación y para controlar el comportamiento de la asociación. Las entradas progID usadas para las asociaciones de archivo se encuentran en **HKEY \_ CLASSES \_ ROOT** en el Registro.
 
 Este tema se organiza de la siguiente manera:
 
--   [Elementos de identificador de programación usados por las asociaciones de archivo](#programmatic-identifier-elements-used-by-file-associations)
--   [Usar identificadores de programación con versión](#using-versioned-programmatic-identifiers)
+-   [Elementos de identificador mediante programación usados por asociaciones de archivo](#programmatic-identifier-elements-used-by-file-associations)
+-   [Usar identificadores de programación con versiones](#using-versioned-programmatic-identifiers)
 -   [Temas relacionados](#related-topics)
 
-Para obtener más información, consulte [registro de un tipo de archivo para una nueva aplicación](how-to-register-a-file-type-for-a-new-application.md) .
+Para obtener más información, [lea Cómo registrar un tipo de archivo para una nueva aplicación.](how-to-register-a-file-type-for-a-new-application.md)
 
-## <a name="programmatic-identifier-elements-used-by-file-associations"></a>Elementos de identificador de programación usados por las asociaciones de archivo
+## <a name="programmatic-identifier-elements-used-by-file-associations"></a>Elementos de identificador mediante programación usados por asociaciones de archivo
 
-El formato correcto de un nombre de clave ProgID es \[ *Vendor o Application* \] . \[ *Componente* \] . \[ *Versión* \] , separados por puntos y sin espacios, como en Word.Document. 6. La parte de la *versión* es opcional, pero se recomienda encarecidamente. Para obtener más información, vea [usar identificadores de programación con versiones](#using-versioned-programmatic-identifiers).
+El formato adecuado de un nombre de clave de ProgID \[ *es Proveedor o Aplicación.* \] \[ *Componente* \] . \[ *Versión*, separada por puntos y sin espacios, como en \] Word.Document.6. La *parte* Versión es opcional, pero se recomienda encarecidamente. Para obtener más información, [vea Usar identificadores de programación con versiones](#using-versioned-programmatic-identifiers).
 
-Una subclave ProgID debe incluir los elementos siguientes. Tenga en cuenta que algunos datos de cadena de esta clave requieren un formato específico.
+Una subclave ProgID debe incluir los siguientes elementos. Tenga en cuenta que algunos datos de cadena de esta clave requieren un formato específico.
 
 
 
@@ -44,41 +44,41 @@ Una subclave ProgID debe incluir los elementos siguientes. Tenga en cuenta que a
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Predeterminada</strong></td>
-<td>Establezca la entrada predeterminada de la subclave ProgID en un nombre descriptivo para ese ProgID, que se pueda mostrar al usuario. El uso de esta entrada para contener el nombre descriptivo está en desuso en la entrada FriendlyTypeName en sistemas que ejecutan Windows 2000 o posterior. Sin embargo, debe establecer este valor para mantener la compatibilidad con versiones anteriores.<br/></td>
+<td><strong>(Valor predeterminado)</strong></td>
+<td>Establezca la entrada predeterminada de la subclave ProgID en un nombre descriptivo para ese ProgID, adecuado para mostrar al usuario. El uso de esta entrada para contener el nombre descriptivo está en desuso por la entrada FriendlyTypeName en sistemas que ejecutan Windows 2000 o posterior. Sin embargo, debe establecer este valor por compatibilidad con versiones anteriores.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>AllowSilentDefaultTakeOver</strong> (introducido en Windows 8)</td>
-<td>Establezca esta entrada opcional para indicar que Windows debe omitir este ProgID al determinar un controlador predeterminado para un tipo de archivo público. Independientemente de si se establece este valor, el ProgID seguirá apareciendo en el cuadro de diálogo y el menú contextual de OpenWith. Se trata de un valor de REG_NONE.</td>
+<td>Establezca esta entrada opcional para indicar que Windows debe omitir este ProgID al determinar un controlador predeterminado para un tipo de archivo público. Independientemente de si se establece este valor, progID sigue apareciendo en el menú contextual y el cuadro de diálogo AbrirCon. Se trata de REG_NONE valor.</td>
 </tr>
 <tr class="odd">
 <td><strong>AppUserModelID</strong> (introducido en Windows 7)</td>
-<td>Establezca esta entrada opcional en el identificador de modelo de usuario de la aplicación explícito de la aplicación (AppUserModelID) si la aplicación usa un AppUserModelID explícito y usa las listas de acceso <strong>frecuente</strong> o <strong>recientes</strong> generadas automáticamente del sistema, o proporciona una Jump List personalizada. Si una aplicación utiliza un AppUserModelID explícito y no establece este valor, los elementos no aparecerán en las Jump Lists de esa aplicación. Se trata de una cadena de REG_SZ. Para obtener más información, vea <a href="appids.md">identificadores de modelo de usuario de la aplicación (AppUserModelIDs)</a>.<br/></td>
+<td>Establezca esta entrada opcional en el identificador de modelo de usuario de aplicación (AppUserModelID) explícito de la aplicación <strong></strong> si <strong></strong> la aplicación usa un AppUserModelID explícito y usa listas de acceso rápidos recientes o frecuentes generadas automáticamente por el sistema o proporciona una Lista de accesos directos. Si una aplicación usa un AppUserModelID explícito y no establece este valor, los elementos no aparecerán en las listas de accesos rápidos de esa aplicación. Se trata de una REG_SZ cadena. Para obtener más información, vea Id. de modelo de usuario <a href="appids.md">de aplicación (AppUserModelIDs).</a><br/></td>
 </tr>
 <tr class="even">
 <td><strong>EditFlags</strong></td>
-<td>Establezca esta entrada opcional mediante marcas de la enumeración <a href="/windows/desktop/api/Shlwapi/ne-shlwapi-filetypeattributeflags"><strong>FILETYPEATTRIBUTEFLAGS</strong></a> . La entrada marcas controla algunos aspectos de la administración del shell de los tipos de archivo vinculados a este ProgID. También puede usar la entrada marcas para limitar la cantidad de tiempo que el usuario puede modificar determinados aspectos de estos tipos de archivo mediante la hoja de propiedades de un archivo. Los valores de <strong>FILETYPEATTRIBUTEFLAGS</strong> usados para marcas son valores binarios diseñados para que pueda combinar varios atributos en un solo valor en una operación OR bit a bit. Se trata de un valor REG_DWORD o REG_BINARY.<br/></td>
+<td>Establezca esta entrada opcional mediante marcas de la <a href="/windows/desktop/api/Shlwapi/ne-shlwapi-filetypeattributeflags"><strong>enumeración FILETYPEATTRIBUTEFLAGS.</strong></a> La entrada EditFlags controla algunos aspectos del control del shell de los tipos de archivo vinculados a este ProgID. También puede usar la entrada EditFlags para limitar cuánto puede modificar el usuario determinados aspectos de estos tipos de archivo mediante la hoja de propiedades de un archivo. Los <strong>valores FILETYPEATTRIBUTEFLAGS usados</strong> para EditFlags son valores binarios diseñados para que pueda combinar varios atributos en un único valor en una operación OR bit a bit. Se trata de un REG_DWORD o REG_BINARY valor.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>FriendlyTypeName</strong></td>
-<td>Establezca esta entrada en un nombre descriptivo para el ProgID, que se pueda mostrar al usuario. Por coherencia, esta cadena debe contener los mismos datos que la entrada predeterminada para esta clave ProgID. Esta entrada puede ser una cadena REG_SZ o REG_EXPAND_SZ, pero debe tener el formato de una cadena indirecta (un nombre de archivo completo y un valor de recurso precedidos del símbolo @), por ejemplo, <em>@% systemroot% \shell32.dll,-154</em>.<br/></td>
+<td>Establezca esta entrada en un nombre descriptivo para progID, adecuado para mostrarlo al usuario. Por coherencia, esta cadena debe contener los mismos datos que la entrada Default para esta clave ProgID. Esta entrada puede ser una cadena REG_SZ o REG_EXPAND_SZ, pero debe tener el formato de una cadena indirecta (un nombre de archivo completo y un valor de recurso precedido por el símbolo @), por ejemplo <em>@%SystemRoot%\shell32.dll,-154</em>.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>InfoTip</strong></td>
-<td>Establezca esta entrada en un breve mensaje de ayuda que el shell muestre para este ProgID. La entrada de recuadro informativo se muestra en un cuadro de diálogo de pasar el mouse. Este valor puede ser una cadena REG_SZ o REG_EXPAND_SZ pero, como FriendlyTypeName, debe tener el formato de una cadena indirecta.<br/></td>
+<td>Establezca esta entrada en un breve mensaje de ayuda que el Shell muestra para este ProgID. La entrada Información sobre se muestra en un cuadro de diálogo de mouse sobre . Este valor puede ser una cadena REG_SZ o REG_EXPAND_SZ, pero, al igual que FriendlyTypeName, debe tener formato de cadena indirecta.<br/></td>
 </tr>
 <tr class="odd">
-<td><strong>CurVer</strong></td>
-<td>Establezca la entrada (predeterminada) de esta subclave en la versión más reciente de este ProgID.<br/>
+<td><strong>Curver</strong></td>
+<td>Establezca la entrada (Valor predeterminado) de esta subclave en la versión más reciente de este ProgID.<br/>
 <blockquote>
 [!Note]<br />
-A menos que tenga versiones de aplicaciones en paralelo, es decir, varias versiones instaladas en el mismo sistema, debe evitar el uso de <strong>curver</strong>.
+A menos que tenga versiones de aplicación en paralelo, es decir, varias versiones instaladas en el mismo sistema, debe evitar el uso de <strong>CurVer</strong>.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><strong>DefaultIcon</strong>.</td>
-<td>Establezca la entrada (predeterminada) de esta subclave en el icono predeterminado que desea mostrar para los tipos de archivo asociados a este ProgID. Este valor puede ser un REG_SZ o REG_EXPAND_SZ cadena, pero se debe proporcionar como un nombre de archivo completo con su valor de recurso de operador, por ejemplo, <em>% systemroot% \shell32.dll,-154</em>.<br/></td>
+<td>Establezca la entrada (Valor predeterminado) de esta subclave en el icono predeterminado que desea mostrar para los tipos de archivo asociados a este ProgID. Este valor puede ser una cadena REG_SZ o REG_EXPAND_SZ, pero debe proporcionarse como un nombre de archivo completo con su valor de recurso de asistencia, por ejemplo <em>%SystemRoot%\shell32.dll,-154</em>.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -87,7 +87,7 @@ A menos que tenga versiones de aplicaciones en paralelo, es decir, varias versio
 
  
 
-El siguiente ejemplo de clave del registro ilustra un nodo de clave ProgID de Asociación de archivo:
+En el siguiente ejemplo de clave del Registro se muestra un nodo de clave ProgID de asociación de archivos:
 
 ```
 HKEY_CLASSES_ROOT
@@ -104,14 +104,14 @@ HKEY_CLASSES_ROOT
          (Default) = %SystemRoot%\shell32.dll,-1
 ```
 
-## <a name="using-versioned-programmatic-identifiers"></a>Usar identificadores de programación con versión
+## <a name="using-versioned-programmatic-identifiers"></a>Usar identificadores de programación con versiones
 
-Un ProgID con versión es aquél cuya versión se indica en su nombre. Para ello, normalmente se agrega un punto y el número de versión al nombre. Por ejemplo:
+Un ProgID con versión es aquella cuya versión se indica en su nombre. Normalmente, esto se hace agregando un punto y el número de versión al nombre. Por ejemplo:
 
--   Word.Document. 6
--   Word.Document. 8
+-   Word.Document.6
+-   Word.Document.8
 
-Se trata de ProgID con versión, con las versiones 6 y 8, respectivamente. Si tiene una aplicación en paralelo, es decir, una que admita varias versiones de la aplicación instaladas al mismo tiempo, use los ProgID independientes de curva y de versión. De lo contrario, deben evitarse los ProgID independientes de la versión y del curvador, ya que provocarán ineficiencias.
+Se trata de progID con versiones, con las versiones 6 y 8, respectivamente. Si tiene una aplicación en paralelo, es decir, una que admite varias versiones de la aplicación instaladas al mismo tiempo, use CurVer y ProgID independientes de versión. De lo contrario, se deben evitar los ProgID de CurVer y Version Independent, ya que darán lugar a ineficacias.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -129,13 +129,13 @@ Se trata de ProgID con versión, con las versiones 6 y 8, respectivamente. Si ti
 [Cómo funcionan las asociaciones de archivos](fa-how-work.md)
 </dt> <dt>
 
-[Vista de contenido por tipo de archivo o tipo](prophand-content-view.md)
+[Vista de contenido por tipo o tipo de archivo](prophand-content-view.md)
 </dt> <dt>
 
-[Comprobador de tipo de archivo](file-type-verifier.md)
+[Comprobador de tipos de archivo](file-type-verifier.md)
 </dt> <dt>
 
-[Controladores de tipo de archivo](fa-file-extensions.md)
+[Controladores de tipos de archivo](fa-file-extensions.md)
 </dt> <dt>
 
 [Tipos percibidos](fa-perceivedtypes.md)

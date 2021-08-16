@@ -1,6 +1,6 @@
 ---
 title: Función CheckAccessFullyMapped
-description: Determina si todos los valores de una operación sample, gather o load accedieron a iconos asignados en un recurso en mosaico.
+description: Determina si todos los valores de una operación Sample, Gather o Load accedieron a iconos asignados en un recurso en mosaico.
 ms.assetid: 2CAB7770-143E-4E29-A57F-96C27021AC5F
 keywords:
 - Función CheckAccessFullyMapped HLSL
@@ -41,7 +41,7 @@ bool CheckAccessFullyMapped(
 
 Tipo: **solo \_ uint**
 
-Valor de estado que se devuelve de una operación **Sample**, **Gather** o **Load.** Dado que no puede acceder directamente a este valor de estado, debe pasarlo a **CheckAccessFullyMapped**.
+Valor de estado que se devuelve de una **operación Sample**, **Gather** **o Load.** Dado que no puede acceder directamente a este valor de estado, debe pasarlo a **CheckAccessFullyMapped**.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Valor de estado que se devuelve de una operación **Sample**, **Gather** o **Loa
 
 Tipo: **bool**
 
-Devuelve un **valor booleano** que indica si todos los valores de una operación **Sample**, **Gather** o **Load** accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Devuelve **TRUE** si todos los valores de la operación accedieron a iconos asignados; de lo contrario, **devuelve FALSE** si se tomaron valores de un icono no recortado.
+Devuelve un **valor booleano** que indica si todos los valores de una operación **Sample**, **Gather** o **Load** accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Devuelve **TRUE si** todos los valores de la operación accedieron a iconos asignados; de lo contrario, **devuelve FALSE** si se han tomado valores de un icono no atado.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -61,7 +61,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 

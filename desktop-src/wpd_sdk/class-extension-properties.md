@@ -1,7 +1,7 @@
 ---
-description: Los dispositivos portátiles de Windows admiten las siguientes propiedades de extensión de clase.
+description: Windows Dispositivos portátiles admite las siguientes propiedades de extensión de clase.
 ms.assetid: 9b8983ba-5824-495d-868f-fd22b98e1954
-title: Propiedades de la extensión de clase (PortableDevice. h)
+title: Propiedades de extensión de clase (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,27 +13,27 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: c7e961b80ae990653e6c354640b35c28f8bcf8b8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c7215a383aec582f576cb64a6781068034bb7fa8df03b5a404368482f1c1619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843409"
 ---
 # <a name="class-extension-properties"></a>Propiedades de extensión de clase
 
-Los dispositivos portátiles de Windows admiten las siguientes propiedades de extensión de clase.
+Windows Dispositivos portátiles admite las siguientes propiedades de extensión de clase.
 
 
 
 | Propiedad                                                                      | VarType         | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_tipos de \_ \_ \_ contenido admitido de opciones de \_ extensión de clase WPD \_**                 | **VT \_ desconocido** | Valor que especifica la lista (superconjunto) de tipos de contenido admitidos por el controlador (similar a la llamada a funciones de comando de WPD \_ \_ \_ obtener \_ tipos de contenido admitidos \_ \_ en **\_ \_ categoría \_ funcional de WPD**).                                                                                                                                                                                                                                                                                                                                             |
-| **las opciones de extensión de clase de WPD no \_ \_ \_ \_ \_ registran la \_ \_ interfaz de dispositivo WPD \_**    | **VT \_ bool**    | Valor que especifica si el llamador desea que la biblioteca de extensiones de clase WPD registre la interfaz de clase de dispositivo WPD. Si este valor es true, el llamador asume la responsabilidad del registro.<br/> Si este valor es false, indica que el llamador espera que la biblioteca de extensiones de clase realice el registro.<br/>La mayoría de los controladores deben permitir que la biblioteca de extensiones de clase realice el registro, excepto en el caso de que el registro de la interfaz de clase de dispositivo WPD por la biblioteca de extensiones de clase pueda producir efectos negativos. |
-| **\_las opciones de extensión de clase de WPD \_ \_ \_ registran la \_ \_ \_ interfaz de dispositivo privado de WPD \_** | **VT \_ bool**    | Indica que el llamador desea que la biblioteca de extensiones de clase WPD registre la interfaz de clase de dispositivo WPD privada. Esto no se recomienda para la mayoría de los controladores. Solo se debería utilizar en casos en los que el registro de la interfaz de clase de dispositivo WPD por la biblioteca de extensiones de clase cause efectos negativos. Esta opción se usa normalmente junto con **\_ las opciones de extensión de clase de WPD no \_ registrar la interfaz de \_ \_ \_ \_ \_ dispositivo \_ de WPD** establecida en **true** .                                                                                          |
-| **Opciones de extensión de clase de WPD \_ \_ valores de \_ \_ identificación de dispositivos \_ \_**            | **VT \_ desconocido** | Se trata de un [IPortableDeviceValues](iportabledevicevalues.md) que contiene los valores de identificación del dispositivo (**\_ \_ fabricante del dispositivo de WPD**, **\_ \_ modelo de dispositivo** de WPD, **\_ \_ \_ versión de firmware del dispositivo** de WPD y **\_ \_ \_ \_ identificador único funcional del dispositivo WPD**). Incluir esto en otras opciones de extensión de clase al inicializar                                                                                                                                                                                                                               |
-| **\_Opciones de extensión de clase WPD ancho de \_ \_ \_ banda de transporte \_**                      | **VT \_ UI4**     | Indica el ancho de banda máximo teórico del transporte en kilobits por segundo                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Opciones de extensión de clase de WPD \_ \_ valores de \_ \_ identificación de dispositivos \_ \_**            | **VT \_ desconocido** | Se trata de un [IPortableDeviceValues](iportabledevicevalues.md) que contiene los valores de identificación del dispositivo (**\_ \_ fabricante del dispositivo de WPD**, **\_ \_ modelo de dispositivo** de WPD, **\_ \_ \_ versión de firmware del dispositivo** de WPD y **\_ \_ \_ \_ identificador único funcional del dispositivo WPD**). Inclúyalo con otras opciones de extensión de clase al inicializar.                                                                                                                                                                                                                              |
+| **TIPOS DE CONTENIDO ADMITIDOS EN LAS OPCIONES \_ DE EXTENSIÓN DE CLASE \_ \_ \_ \_ WPD \_**                 | **VT \_ UNKNOWN** | Valor que especifica la lista (superconjunto) de tipos de contenido admitidos por el controlador (similar a llamar a FUNCIONES DE COMANDO WPD OBTENER TIPOS DE CONTENIDO ADMITIDOs en \_ \_ \_ \_ \_ \_ **WPD \_ FUNCTIONAL CATEGORY \_ \_ ALL**).                                                                                                                                                                                                                                                                                                                                             |
+| **LAS OPCIONES DE \_ EXTENSIÓN \_ DE CLASE \_ WPD NO REGISTRAN LA \_ INTERFAZ DE DISPOSITIVO \_ \_ \_ \_ WPD**    | **VT \_ BOOL**    | Valor que especifica si el autor de la llamada desea que la biblioteca de extensiones de clase WPD registre la interfaz clase de dispositivo WPD. Si este valor es true, el autor de la llamada asume la responsabilidad del registro.<br/> Si este valor es false, indica que el autor de la llamada espera que la biblioteca de extensiones de clase realice el registro.<br/>La mayoría de los controladores deben permitir que la biblioteca de extensiones de clase realice el registro, excepto en los casos en los que el registro de la interfaz de clase de dispositivo WPD por parte de la biblioteca de extensiones de clase pueda producir efectos negativos. |
+| **OPCIONES DE \_ EXTENSIÓN DE \_ CLASE WPD REGISTRAR INTERFAZ \_ DE DISPOSITIVO PRIVADO \_ \_ \_ \_ \_ WPD** | **VT \_ BOOL**    | Indica que el autor de la llamada quiere que la biblioteca de extensiones de clase WPD registre la interfaz de clase de dispositivo WPD privada. Esto no se recomienda para la mayoría de los controladores. Solo se debe usar en casos en los que el registro de la interfaz de clase de dispositivo WPD por parte de la biblioteca de extensiones de clase cause efectos negativos. Esta opción se usa normalmente junto con **WPD \_ CLASS EXTENSION OPTIONS \_ \_ \_ DONT REGISTER \_ \_ WPD DEVICE \_ \_ INTERFACE** establecido en **TRUE.**                                                                                          |
+| **VALORES DE IDENTIFICACIÓN \_ DEL DISPOSITIVO DE OPCIONES DE EXTENSIÓN DE \_ \_ \_ \_ CLASE \_ WPD**            | **VT \_ UNKNOWN** | Se trata de [un valor IPortableDeviceValues](iportabledevicevalues.md) que contiene los valores de identificación del dispositivo **(WPD \_ DEVICE \_ MANUFACTURER**, **WPD DEVICE \_ \_ MODEL**, **WPD \_ DEVICE FIRMWARE \_ \_ VERSION** e **WPD DEVICE FUNCTIONAL \_ UNIQUE \_ \_ \_ ID**). Incluir esto con otras opciones de extensión de clase al inicializar                                                                                                                                                                                                                               |
+| **ANCHO DE BANDA DE \_ TRANSPORTE DE OPCIONES DE EXTENSIÓN DE \_ \_ \_ CLASE WPD \_**                      | **VT \_ UI4**     | Indica el ancho de banda máximo teórico del transporte en kilobits por segundo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **VALORES DE IDENTIFICACIÓN \_ DEL DISPOSITIVO DE OPCIONES DE EXTENSIÓN DE \_ \_ \_ \_ CLASE \_ WPD**            | **VT \_ UNKNOWN** | Se trata de [un valor IPortableDeviceValues](iportabledevicevalues.md) que contiene los valores de identificación del dispositivo **(WPD \_ DEVICE \_ MANUFACTURER**, **WPD DEVICE \_ \_ MODEL**, **WPD \_ DEVICE FIRMWARE \_ \_ VERSION** e **WPD DEVICE FUNCTIONAL \_ UNIQUE \_ \_ \_ ID**). Incluya esto con otras opciones de extensión de clase al inicializar.                                                                                                                                                                                                                              |
 
 
 
@@ -45,11 +45,11 @@ Los dispositivos portátiles de Windows admiten las siguientes propiedades de ex
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

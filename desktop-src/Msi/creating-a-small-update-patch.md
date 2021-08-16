@@ -1,5 +1,5 @@
 ---
-description: Siga las instrucciones siguientes al crear una revisión para una Windows Installer.
+description: Siga las siguientes directrices al crear una revisión para una Windows installer pequeña.
 ms.assetid: 0e57c2aa-e86a-4161-9749-c7963182a6d5
 title: Creación de una revisión de actualización pequeña
 ms.topic: article
@@ -23,7 +23,7 @@ En el siguiente escenario se muestra cuándo es mejor una revisión de actualiza
 
 Su empresa envía la versión 1.0 de Myproduct.msi. Poco después, se envía una pequeña [revisión de](small-updates.md) actualización para Myproduct.msi llamada QFE1. Esto no cambia la [**propiedad ProductCode**](productcode.md) ni [**la propiedad ProductVersion.**](productversion.md)
 
-Más adelante, cree una segunda [revisión de actualización](small-updates.md) pequeña para Myproduct.msi llamada QFE2. Esta segunda revisión debe tener como Myproduct.msi versión 1.0. Esta segunda revisión no debe tener como destino Myproduct.msi versión 1.0 y Myproduct.msi versión 1.0 + QFE1. Cuando se aplica QFE2, debe quitar QFE1.
+Más adelante, cree una segunda [revisión de actualización](small-updates.md) pequeña para Myproduct.msi llamada QFE2. Esta segunda revisión debe tener Myproduct.msi versión 1.0. Esta segunda revisión no debe tener como destino Myproduct.msi versión 1.0 y Myproduct.msi versión 1.0 + QFE1. Cuando se aplica QFE2, debe quitar QFE1.
 
  
 

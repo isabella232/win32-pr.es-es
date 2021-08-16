@@ -1,6 +1,6 @@
 ---
 title: Función TextureCubeArray::GatherGreen(S,float,uint)
-description: Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos. | Función TextureCubeArray::GatherGreen(S,float,uint)
+description: Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos. | Función TextureCubeArray::GatherGreen(S,float,uint)
 ms.assetid: 0DEB1810-F2C7-4097-B2D3-20ED4E297561
 keywords:
 - Función GatherGreen HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "118506504"
 ---
 # <a name="texturecubearraygathergreensfloatuint-function"></a>Función TextureCubeArray::GatherGreen(S,float,uint)
 
-Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos.
+Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ Coordenadas de ejemplo (u,v).
 
 Tipo: **uint**
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se han tomado valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Métodos GatherGreen](texturecubearray-gathergreen.md)
+[Métodos gatherGreen](texturecubearray-gathergreen.md)
 </dt> <dt>
 
 [**TextureCubeArray**](texturecubearray.md)

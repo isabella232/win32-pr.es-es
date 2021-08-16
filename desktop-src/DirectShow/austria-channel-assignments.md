@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Austria.
+description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Australia.
 ms.assetid: 200355f8-e472-4497-8d36-c77f6b2cf5c7
-title: Asignaciones de canal de Austria
+title: Asignaciones de canales de Australia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12f7ca86799e733f989c0de01faba23cb5eb581d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3324e47aea4fc9ef5326a6f96d784b36ebf30f9b0bb4419b312480d580aa90f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824265"
 ---
-# <a name="austria-channel-assignments"></a>Asignaciones de canal de Austria
+# <a name="austria-channel-assignments"></a>Asignaciones de canales de Australia
 
-En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Austria.
+En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Australia.
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se usaba la [tabla de frecuencias Unicable](unicable-frequency-table.md) .
+Las siguientes asignaciones de canales se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias unicables.](unicable-frequency-table.md)
 
 ## <a name="cable-assignments"></a>Asignaciones de cable
 
@@ -138,7 +138,7 @@ Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de televisión análoga internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

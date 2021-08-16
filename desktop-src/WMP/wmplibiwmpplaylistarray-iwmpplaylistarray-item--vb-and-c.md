@@ -3,7 +3,7 @@ title: Método IWMPPlaylistArray Item
 description: El método Item devuelve una interfaz IWMPPlaylist que representa la lista de reproducción en el índice especificado.
 ms.assetid: 5cb4b89f-b679-4d92-a5f9-5d0fe686775d
 keywords:
-- Método de elemento Reproductor de Windows Media
+- Método item Reproductor de Windows Media
 - Método item Reproductor de Windows Media , interfaz IWMPPlaylistArray
 - Interfaz IWMPPlaylistArray Reproductor de Windows Media , Método Item
 topic_type:
@@ -56,7 +56,7 @@ Implements IWMPPlaylistArray.Item
 *lIndex* \[ En\]
 </dt> <dd>
 
-**System.Int32 que** contiene el índice que identifica la lista de reproducción que el método debe recuperar.
+**System.Int32** que contiene el índice que identifica la lista de reproducción que el método debe recuperar.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Interfaz **WMPLib.IWMPPlaylist** para la lista de reproducción recuperada.
 
 ## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 

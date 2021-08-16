@@ -1,7 +1,7 @@
 ---
 description: Notifica a un objeto que debe mostrar su generador para la propiedad especificada.
 ms.assetid: 4d855aed-aaa1-4cc8-be9d-1175c254a813
-title: 'IProvidePropertyBuilder:: ExecuteBuilder (método)'
+title: IProvidePropertyBuilder::ExecuteBuilder (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Vsp.dll
-ms.openlocfilehash: c37c2a4ca1003bd701ea141f1723f4ca16aa69c3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9aef31629cac755d5689de929c02fbc8d9b816bf868a48bd59df3d08c911d9b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827292"
 ---
-# <a name="iprovidepropertybuilderexecutebuilder-method"></a>IProvidePropertyBuilder:: ExecuteBuilder (método)
+# <a name="iprovidepropertybuilderexecutebuilder-method"></a>IProvidePropertyBuilder::ExecuteBuilder (método)
 
 Notifica a un objeto que debe mostrar su generador para la propiedad especificada.
 
@@ -44,28 +44,28 @@ void ExecuteBuilder(
 
 <dl> <dt>
 
-*DISPID* \[ de\]
+*desaconsulte* \[ En\]
 </dt> <dd>
 
-El DISPID de la propiedad que muestra el generador.
+DISPID de la propiedad para la que se muestra el generador.
 
 </dd> <dt>
 
-*bstrGuidBldr* \[ de\]
+*bstrGuidBldr* \[ En\]
 </dt> <dd>
 
-**BSTR** del GUID del compilador que se va a invocar. Se devuelve desde [**MapToPropertyBuilder**](iprovidepropertybuilder-mappropertytobuilder.md).
+BSTR **del** GUID del generador que se va a invocar. Se devuelve desde [**MapToPropertyBuilder.**](iprovidepropertybuilder-mappropertytobuilder.md)
 
 </dd> <dt>
 
-*pdispApp* \[ de\]
+*pdispApp* \[ En\]
 </dt> <dd>
 
-Se establece en **null**.
+Se establece en **NULL.**
 
 </dd> <dt>
 
-*hwndBldrOwner* \[ de\]
+*hwndBldrOwner* \[ En\]
 </dt> <dd>
 
 Identificador de la ventana primaria del generador emergente.
@@ -75,32 +75,32 @@ Identificador de la ventana primaria del generador emergente.
 *pvarValue* \[ in, out\]
 </dt> <dd>
 
-El valor actual de la propiedad. Este valor puede ser modificado por el objeto y cambia al nuevo valor si *pbActionCommitted* es **true**.
+El valor actual de la propiedad. El objeto puede modificar este valor y cambiar al nuevo valor si *pbActionCommitted* es **TRUE.**
 
 </dd> <dt>
 
 *pbActionCommitted* \[ out, retval\]
 </dt> <dd>
 
-Valor que indica si el generador realizó una acción en el objeto. Se puede usar cuando un usuario modifica algo y, a continuación, presiona aceptar en el cuadro de diálogo Generador emergente.
+Valor que indica si el generador realizó una acción en el objeto . Se puede usar cuando un usuario modifica algo y, a continuación, presiona Aceptar en el cuadro de diálogo del generador emergente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Vsp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

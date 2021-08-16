@@ -1,7 +1,7 @@
 ---
 description: 'Evento InkOverlay.MouseUp: se produce cuando el puntero del mouse está sobre el objeto InkCollector o InkOverlay y se libera un botón del mouse.'
 ms.assetid: 049e1560-d4b2-4d34-9d54-2b45217001b2
-title: Evento InkOverlay.MouseUp (Ms mouseut.h)
+title: Evento InkOverlay.MouseUp (Msplaceut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 675c588d12976a506afec02e1bec58d97a99fd13ec897250f0e472dfbc519490
@@ -87,7 +87,7 @@ Para mejorar el rendimiento de la entrada de lápiz en tiempo real, oculte o mue
 
  
 
-Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ de DISPID \_ IPEMouseUp.
+Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador de \_ DISPID \_ IPEMouseUp.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,7 +95,7 @@ Este método de evento se define en las interfaces de solo envío \_ \_ (dispint
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
 | Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

@@ -13,11 +13,11 @@ ms.locfileid: "118218396"
 ---
 # <a name="about-tracelogging"></a>Acerca de TraceLogging
 
-TraceLogging es la nueva Windows 10 seguimiento de eventos para aplicaciones en modo de usuario y controladores en modo kernel. TraceLogging es un formato para el seguimiento de eventos autodescripto para Windows (ETW). TraceLogging se basa en el seguimiento de eventos para Windows (ETW) y proporciona una manera simplificada de instrumentar el código.
+TraceLogging es la nueva Windows 10 seguimiento de eventos para aplicaciones en modo de usuario y controladores en modo kernel. TraceLogging es un formato para el seguimiento de eventos autodescripto para Windows (ETW). TraceLogging se basa en el seguimiento de eventos Windows (ETW) y proporciona una manera simplificada de instrumentar el código.
 
 TraceLogging ofrece la simplicidad del preprocesador de seguimiento de software (WPP) de Windows con la ventaja adicional de poder incluir datos estructurados con eventos, la capacidad de correlacionar eventos y todo ello sin necesidad de un archivo XML de manifiesto de instrumentación independiente. Los eventos son autodescriptos, lo que significa que no es necesario registrar un archivo binario que contenga el manifiesto de instrumentación en el sistema para usar las API del asistente de datos de seguimiento (TDH) para descodificar y mostrar eventos.
 
-Seguimiento de eventos Windows (ETW) se introdujo con Windows 2000 y se actualizó en Windows Vista. El registro de seguimiento se basa en Windows API ETW de Vista. Los proveedores pueden usar la tecnología TraceLogging y seguir trabajando en Windows Vista. Los controladores existentes (Windows VistaAPIs) se pueden usar para controlar los proveedores de TraceLogging.
+Seguimiento de eventos para Windows (ETW) se introdujo con Windows 2000 y se actualizó en Windows Vista. El registro de seguimiento se basa en Windows API ETW de Vista. Los proveedores pueden usar la tecnología TraceLogging y seguir trabajando en Windows Vista. Los controladores existentes (Windows VistaAPIs) se pueden usar para controlar los proveedores de TraceLogging.
 
 TraceLogging también es compatible con las herramientas existentes. Todavía se admiten los proveedores que usan ETW basado en manifiestos. No es necesario convertir proveedores ETW basados en manifiestos en proveedores de seguimiento a menos que desee aprovechar la simplicidad que proporciona TraceLogging. También se admite el seguimiento de WPP.
 
@@ -45,7 +45,7 @@ Para desarrolladores de C/C++:
 
 Para desarrolladores de código administrado (Microsoft .NET Framework):
 
--   La [clase EventSource](/dotnet/api/system.diagnostics.tracing.eventsource) que se suministraba con versiones anteriores de .NET Framework ya admite la escritura de eventos ETW: generando automáticamente el manifiesto e insertando el manifiesto en el flujo de eventos. Sin embargo, el desarrollador todavía tenía que realizar un seguimiento del manifiesto para descodificar los eventos (a menos que trabajara en un escenario en el que se admite el manifiesto incrustado). TraceLogging permite eliminar completamente el manifiesto.
+-   La [clase EventSource](/dotnet/api/system.diagnostics.tracing.eventsource) que se suministraba con versiones anteriores de .NET Framework ya era compatible con la escritura de eventos ETW: generaba automáticamente el manifiesto e insertaba el manifiesto en el flujo de eventos. Sin embargo, el desarrollador todavía tenía que realizar un seguimiento del manifiesto para descodificar los eventos (a menos que trabajara en un escenario en el que se admite el manifiesto incrustado). TraceLogging permite eliminar completamente el manifiesto.
 
 ## <a name="related-topics"></a>Temas relacionados
 

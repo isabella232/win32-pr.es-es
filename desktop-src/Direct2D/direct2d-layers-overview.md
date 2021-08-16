@@ -7,12 +7,12 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 027be097c5c21929f3ccdbaa169a1f3dac55b394
-ms.sourcegitcommit: 698ce2d9ba2fa650f2875225d99623995fac246a
+ms.openlocfilehash: a54c5336b26d2b84f46df4f688101367686d3dbe60be33d8bac5d8c584151daa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114231612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825717"
 ---
 # <a name="layers-overview"></a>Información general sobre capas
 
@@ -43,11 +43,11 @@ Aunque las capas ofrecen una técnica de representación eficaz para producir ef
 
 ## <a name="layers-in-windows-8-and-later"></a>Capas en Windows 8 y versiones posteriores
 
-Windows 8 nuevas API relacionadas con capas que simplifican, mejoran el rendimiento de y agregan características a las capas.
+Windows 8 nuevas API relacionadas con la capa que simplifican, mejoran el rendimiento de y agregan características a las capas.
 
 ### <a name="id2d1devicecontext-and-pushlayer"></a>ID2D1DeviceContext y PushLayer
 
-La interfaz [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) se deriva de la interfaz [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) y es clave para mostrar contenido de Direct2D en Windows 8. Para obtener más información sobre esta interfaz, vea Dispositivos y [contextos de dispositivo.](devices-and-device-contexts.md) Con la interfaz de contexto del dispositivo, puede omitir la llamada al método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) y, a continuación, pasar NULL al [**método ID2D1DeviceContext::P ushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) Direct2D administra automáticamente el recurso de capa y puede compartir recursos entre capas y gráficos de efectos.
+La interfaz [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) se deriva de la interfaz [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) y es clave para mostrar contenido de Direct2D en Windows 8. Para más información sobre esta interfaz, consulte Dispositivos y [contextos de dispositivo.](devices-and-device-contexts.md) Con la interfaz de contexto del dispositivo, puede omitir la llamada al método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) y, a continuación, pasar NULL al [**método ID2D1DeviceContext::P ushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) Direct2D administra automáticamente el recurso de capa y puede compartir recursos entre capas y gráficos de efectos.
 
 ### <a name="d2d1_layer_parameters1-and-d2d1_layer_options1"></a>D2D1 \_ LAYER \_ PARAMETERS1 y D2D1 \_ LAYER \_ OPTIONS1
 
@@ -61,7 +61,7 @@ La [**estructura D2D1 \_ LAYER \_ PARAMETERS1**](/windows/desktop/api/d2d1_1/ns-
 
 ### <a name="blend-modes"></a>Modos de fusión
 
-A partir Windows 8, el contexto [](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) del dispositivo tiene un modo de combinación primitivo que determina cómo se combina cada primitivo con la superficie de destino. Este modo también se aplica a las capas cuando se llama al [**método PushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))
+A partir Windows 8, el contexto del [](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) dispositivo tiene un modo de combinación primitivo que determina cómo se combina cada primitivo con la superficie de destino. Este modo también se aplica a las capas cuando se llama al [**método PushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))
 
 Por ejemplo, si usa una capa para recortar primitivas con transparencia, establezca el modo [**COPY \_ DE BLEND \_ \_ PRIMITIVO D2D1**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) en el contexto del dispositivo para obtener los resultados adecuados. El modo de copia hace que el contexto del dispositivo interpola linealmente los 4 canales de color, incluido el canal alfa, de cada píxel con el contenido de la superficie de destino según la máscara geométrica de la capa.
 
@@ -75,11 +75,11 @@ El trabajo con capas requiere estar familiarizado con los métodos [**CreateLaye
 
 -   Llame al [**método CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) para crear un recurso de capa.
     > [!Note]  
-    > A partir Windows 8, puede omitir la llamada al método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) y, a continuación, pasar NULL al método [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) en la [**interfaz ID2D1DeviceContext.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Esto es más sencillo y permite que Direct2D administre automáticamente el recurso de capa y comparta recursos entre capas y gráficos de efectos.
+    > A partir Windows 8, puede omitir la llamada al método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) y, a continuación, pasar NULL al [**método PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) en la [**interfaz ID2D1DeviceContext.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Esto es más sencillo y permite que Direct2D administre automáticamente el recurso de capa y comparta recursos entre capas y gráficos de efectos.
 
      
 
--   Después de que el destino de representación haya empezado a dibujar (después de llamar a su [**método BeginDraw),**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) puede usar el [**método PushLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) El **método PushLayer** agrega la capa especificada al destino de representación, de modo que el destino recibe todas las operaciones de dibujo posteriores hasta que se llama a [**PopLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) Este método toma un [**objeto ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) devuelto llamando a [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) y *a layerParameters* en la estructura DE PARÁMETROS [**DE \_ CAPA \_ D2D1.**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) En la tabla siguiente se describen los campos de la estructura . 
+-   Después de que el destino de representación haya empezado a dibujar (después de llamar a su [**método BeginDraw),**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) puede usar [**el método PushLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) El **método PushLayer** agrega la capa especificada al destino de representación, de modo que el destino recibe todas las operaciones de dibujo posteriores hasta que se llama a [**PopLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) Este método toma un [**objeto ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) devuelto llamando a [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) y *a layerParameters* en la estructura DE PARÁMETROS [**DE \_ CAPA \_ D2D1.**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) En la tabla siguiente se describen los campos de la estructura . 
 
     | Campo                 | Descripción|
     |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -100,7 +100,7 @@ El trabajo con capas requiere estar familiarizado con los métodos [**CreateLaye
 
      
 
-    Para mayor comodidad, Direct2D proporciona el método [**D2D1::LayerParameters**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters) para ayudarle a crear estructuras [**de PARÁMETROS DE CAPA D2D1. \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters)
+    Para mayor comodidad, Direct2D proporciona el método [**D2D1::LayerParameters**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters) para ayudarle a crear estructuras de PARÁMETROS DE [**CAPA D2D1. \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters)
 
 -   Para componer el contenido de la capa en el destino de representación, llame al [**método PopLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) Debe llamar al método **PopLayer** antes de llamar al [**método EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw)
 
@@ -151,9 +151,9 @@ SafeRelease(&pLayer);
 
 
 
-El código se ha omitido en este ejemplo.
+En este ejemplo se ha omitido el código.
 
-Tenga en cuenta que cuando llame a [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) y [**PopLayer,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer)asegúrese de que **cada PushLayer** tiene una llamada **a PopLayer correspondiente.** Si hay más llamadas **a PopLayer** que llamadas **pushLayer,** el destino de representación se coloca en un estado de error. Si se llama a [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) antes de que se coloquen todas las capas pendientes, el destino de representación se coloca en un estado de error y devuelve un error. Para borrar el estado de error, use [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw).
+Tenga en cuenta que al llamar a [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) y [**PopLayer,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer)asegúrese de que cada **PushLayer** tiene una llamada **a PopLayer** correspondiente. Si hay más llamadas **PopLayer que** **llamadas PushLayer,** el destino de representación se coloca en un estado de error. Si [**se**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) llama a Flush antes de que se coloquen todas las capas pendientes, el destino de representación se coloca en un estado de error y devuelve un error. Para borrar el estado de error, use [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw).
 
 ## <a name="content-bounds"></a>Límites de contenido
 
@@ -197,19 +197,19 @@ HRESULT DemoApp::RenderWithLayerWithContentBounds(ID2D1RenderTarget *pRT)
 
 
 
-El código se ha omitido en este ejemplo.
+En este ejemplo se ha omitido el código.
 
 > [!Note]
 >
-> La imagen recortada resultante se ve afectada aún más si se especifica **una geometríaMask**. Consulte la [sección Máscaras geométricas](#geometric-masks) para obtener más información.
+> La imagen recortada resultante se ve afectada aún más si especifica una **máscara geométrica.** Consulte la [sección Máscaras geométricas](#geometric-masks) para obtener más información.
 
  
 
 ## <a name="geometric-masks"></a>Máscaras geométricas
 
-Una máscara geométrica es un clip o un recorte, definido por un objeto [**ID2D1Geometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) que enmascara una capa cuando se dibuja mediante un destino de representación. Puede usar el campo **geometryMask de** la estructura DE PARÁMETROS [**DE \_ CAPA \_ D2D1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) para enmascarar los resultados en una geometría. Por ejemplo, si desea mostrar una imagen enmascarada por una letra de bloque "A", primero puede crear una geometría que represente la letra de bloque "A" y usar esa geometría como máscara geométrica para una capa. Después de insertar la capa, puede dibujar la imagen. Al hacer clic en la capa, la imagen se recorta a la forma "A" de la letra de bloque.
+Una máscara geométrica es un clip o un recorte, definido por un objeto [**ID2D1Geometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) que enmascara una capa cuando un destino de representación lo dibuja. Puede usar el campo **geometryMask de** la estructura LAYER PARAMETERS de [**D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) para enmascarar los resultados en una geometría. Por ejemplo, si desea mostrar una imagen enmascarada por una letra de bloque "A", primero puede crear una geometría que represente la letra de bloque "A" y usar esa geometría como máscara geométrica para una capa. Después, después de insertar la capa, puede dibujar la imagen. Al hacer clic en la capa, la imagen se recorta a la forma de la letra de bloque "A".
 
-En el ejemplo siguiente se muestra cómo crear un [**id2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) que contiene una forma de una montaña y, a continuación, pasar la geometría de ruta de acceso a [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)). A continuación, dibuja un mapa de bits y cuadrados. Si solo hay un mapa de bits en la capa que se va a representar, use [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pincel de mapa de bits con fijación para mejorar la eficacia. En la siguiente ilustración se muestra el resultado del ejemplo.
+En el ejemplo siguiente se muestra cómo crear un [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) que contiene una forma de una montaña y, a continuación, pasar la geometría de ruta de acceso a [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)). A continuación, dibuja un mapa de bits y cuadrados. Si solo hay un mapa de bits en la capa que se va a representar, use [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pincel de mapa de bits con fijación para mejorar la eficacia. En la siguiente ilustración se muestra el resultado del ejemplo.
 
 ![ilustración de una imagen de una hoja y la imagen resultante después de aplicar una máscara geométrica de una montaña](images/layers-bitmapmask.png)
 
@@ -298,13 +298,13 @@ HRESULT DemoApp::RenderWithLayerWithGeometricMask(ID2D1RenderTarget *pRT)
 
 
 
-El código se ha omitido en este ejemplo.
+En este ejemplo se ha omitido el código.
 
 > [!Note]
 >
-> En general, si especifica una **geometríaMask**, puede usar el valor predeterminado, [**InfiniteRect**](/windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect), para **contentBounds**.
+> En general, si especifica una **máscara geométrica**, puede usar el valor predeterminado, [**InfiniteRect**](/windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect), para **contentBounds**.
 >
-> Si **contentBounds** es NULL y **geometricMask** no es NULL, los límites de contenido son efectivamente los límites de la máscara geométrica después de aplicar la transformación de máscara.
+> Si **contentBounds** es NULL y **geometricMask** no es NULL, los límites de contenido son de hecho los límites de la máscara geométrica después de aplicar la transformación de máscara.
 >
 > Si **contentBounds** no es NULL y **geometricMask** no es NULL, la máscara geométrica transformada se recorta eficazmente en los límites de contenido y se supone que los límites de contenido son infinitos.
 
@@ -312,7 +312,7 @@ El código se ha omitido en este ejemplo.
 
 ## <a name="opacity-masks"></a>Máscaras de opacidad
 
-Una máscara de opacidad es una máscara, descrita por un pincel o mapa de bits, que se aplica a otro objeto para que ese objeto sea parcial o completamente transparente. Permite usar el canal alfa de un pincel como máscara de contenido. Por ejemplo, puede definir un pincel de degradado radial que varíe de opaco a transparente para crear un efecto de viñeta.
+Una máscara de opacidad es una máscara, descrita por un pincel o mapa de bits, que se aplica a otro objeto para que ese objeto sea parcial o completamente transparente. Permite usar el canal alfa de un pincel como máscara de contenido. Por ejemplo, puede definir un pincel de degradado radial que varía de opaco a transparente para crear un efecto de viñeta.
 
 En el ejemplo siguiente se usa [**id2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) (*m \_ pRadialGradientBrush*) como máscara de opacidad. A continuación, dibuja un mapa de bits y cuadrados. Si solo hay un mapa de bits en la capa que se va a representar, use [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pincel de mapa de bits con fijación para mejorar la eficacia. En la ilustración siguiente se muestra la salida de este ejemplo.
 
@@ -372,14 +372,14 @@ HRESULT DemoApp::RenderWithLayerWithOpacityMask(ID2D1RenderTarget *pRT)
 
 
 
-El código se ha omitido en este ejemplo.
+En este ejemplo se ha omitido el código.
 
 > [!Note]  
-> En este ejemplo se usa una capa para aplicar una máscara de opacidad a un solo objeto para que el ejemplo sea lo más sencillo posible. Al aplicar una máscara de opacidad a un solo objeto, es más eficaz usar los métodos [**FillOpacityMask**](id2d1rendertarget-fillopacitymask.md) o [**FillGeometry,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) en lugar de una capa.
+> En este ejemplo se usa una capa para aplicar una máscara de opacidad a un único objeto para que el ejemplo sea lo más sencillo posible. Al aplicar una máscara de opacidad a un solo objeto, es más eficaz usar los métodos [**FillOpacityMask**](id2d1rendertarget-fillopacitymask.md) o [**FillGeometry,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) en lugar de una capa.
 
  
 
-Para obtener instrucciones sobre cómo aplicar una máscara de opacidad sin usar una capa, vea La información general [sobre las máscaras de opacidad](opacity-masks-overview.md).
+Para obtener instrucciones sobre cómo aplicar una máscara de opacidad sin usar una capa, vea Información general [sobre las máscaras de opacidad.](opacity-masks-overview.md)
 
 ## <a name="alternatives-to-layers"></a>Alternativas a las capas
 
@@ -398,7 +398,7 @@ pRT->PopAxisAlignedClip();
 
 
 
-De forma similar, use [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pincel de mapa de bits con fijación como alternativa al uso de una capa con una máscara de opacidad cuando solo hay un contenido en la capa que se va a representar, como se muestra en el ejemplo siguiente.
+De forma similar, use [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pincel de mapa de bits con fijación como alternativa al uso de una capa con una máscara de opacidad cuando solo hay un contenido en la capa para representar, como se muestra en el ejemplo siguiente.
 
 
 ```C++
@@ -433,7 +433,7 @@ m_pRenderTarget->SetAntialiasMode(D2D1_ANTIALIAS_MODE_PER_PRIMITIVE);
 
 
 
-Por último, si desea aplicar opacidad a una sola primitiva, debe multiplicar la opacidad en en el color del pincel y, a continuación, representar la primitiva. No necesita una capa ni un mapa de bits de máscara de opacidad.
+Por último, si desea aplicar opacidad a una sola primitiva, debe multiplicar la opacidad en en el color de pincel y, a continuación, representar la primitiva. No necesita una capa ni un mapa de bits de máscara de opacidad.
 
 
 ```C++
@@ -461,7 +461,7 @@ En la ilustración siguiente se muestra el resultado de aplicar un clip a una im
 
 Puede obtener este resultado mediante capas con una máscara de geometría o el [**método FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pincel de opacidad.
 
-Este es un ejemplo que usa una capa:
+Este es un ejemplo en el que se usa una capa:
 
 
 ```C++
@@ -511,13 +511,13 @@ m_d2dContext->FillGeometry(
 En este ejemplo de código, cuando se llama al método PushLayer, no se pasa una capa creada por la aplicación. Direct2D crea una capa automáticamente. Direct2D puede administrar la asignación y destrucción de este recurso sin intervención de la aplicación. Esto permite a Direct2D reutilizar capas internamente y aplicar optimizaciones de administración de recursos.
 
 > [!Note]  
-> En Windows 8 se han realizado muchas optimizaciones para el uso de capas y se recomienda intentar usar las API de capa en lugar de [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) siempre que sea posible.
+> En Windows 8 se han realizado muchas optimizaciones para el uso de capas y se recomienda intentar usar api de capa en lugar de [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) siempre que sea posible.
 
  
 
 ### <a name="axis-aligned-clips"></a>Clips alineados en el eje
 
-Si la región que se va a recortar está alineada con el eje de la superficie de dibujo, en lugar de arbitraria. Este caso es adecuado para usar un rectángulo de recorte en lugar de una capa. La ganancia de rendimiento es más para la geometría con alias que para la geometría suavizada. Para obtener más información sobre los clips alineados con el eje, vea el [**tema PushAxisAlignedClip.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))
+Si la región que se va a recortar está alineada con el eje de la superficie de dibujo, en lugar de arbitraria. Este caso es adecuado para usar un rectángulo de recorte en lugar de una capa. La ganancia de rendimiento es más para la geometría con alias que la geometría suavizada. Para obtener más información sobre los clips alineados en el eje, vea el [**tema PushAxisAlignedClip.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -19,11 +19,11 @@ ms.locfileid: "118320448"
 ---
 # <a name="accessing-performance-data-in-script"></a>Acceso a datos de rendimiento en script
 
-Los scripts WMI pueden tener acceso a las clases de contador de rendimiento [WMI](/windows/desktop/CIMWin32Prov/performance-counter-classes)preinstaladas, ya sea en el equipo local o de forma remota. Aunque los scripts pueden obtener datos de clases nocalculadas, como [**Win32 \_ PerfRawData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)o clases con formato, [**\_ Win32 PerfFormattedData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data), las clases de datos con formato pueden ser más fáciles de usar.
+Los scripts WMI pueden acceder a las clases de contador de rendimiento [WMI](/windows/desktop/CIMWin32Prov/performance-counter-classes)preinstaladas, ya sea en el equipo local o de forma remota. Aunque los scripts pueden obtener datos de clases nocalculadas, como [**Win32 \_ PerfRawData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)o clases con formato, [**\_ Win32 PerfFormattedData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data), las clases de datos con formato pueden ser más fáciles de usar.
 
 La supervisión de los datos de rendimiento con las clases de contador de rendimiento requiere el uso de [*un actualizador*](gloss-r.md). Use el [**objeto SWbemRefresher**](swbemrefresher.md) para almacenar uno o varios objetos de rendimiento para actualizar o actualizar un único objeto mediante la llamada [**SWbemObjectEx.Refresh.**](swbemobjectex-refresh-.md) Para obtener más información, vea [Actualizar datos WMI en scripts](refreshing-wmi-data-in-scripts.md).
 
-Al establecer la propiedad [**SWbemRefresher.AutoReconnect**](swbemrefresher-autoreconnect.md) en **TRUE,** WMI se vuelve a conectar automáticamente a un proveedor remoto si la conexión está rota para que no sea necesario comprobar el estado de la conexión.
+Al establecer la propiedad [**SWbemRefresher.AutoReconnect**](swbemrefresher-autoreconnect.md) en **TRUE,** WMI se vuelve a conectar automáticamente a un proveedor remoto si la conexión está rota, por lo que no es necesario comprobar el estado de la conexión.
 
 Como se muestra en el siguiente script de ejemplo de código de script, debe realizar una llamada de actualización inicial para obtener un valor inicial para el objeto que está actualizando. Las llamadas de actualización posteriores contienen datos.
 

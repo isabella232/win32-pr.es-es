@@ -1,36 +1,36 @@
 ---
-title: Cómo crear controles rebar
-description: Una aplicación crea un control rebar llamando a la función CreateWindowEx y especificando REBARCLASSNAME como clase de ventana.
+title: Cómo crear controles Rebar
+description: Una aplicación crea un control rebar llamando a la función CreateWindowEx y especificaNDO REBARCLASSNAME como clase de ventana.
 ms.assetid: F17CC2A4-BDC6-48A6-9AF5-19FCF65CC39A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19b38cd49e8e6016dafad5ec07c77be570a5a430
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 0ebd6063f8921453a5c71e1c2467bf803c67c0a1b4f66e98006b9118e6a588b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831777"
 ---
-# <a name="how-to-create-rebar-controls"></a>Cómo crear controles rebar
+# <a name="how-to-create-rebar-controls"></a>Cómo crear controles Rebar
 
-Una aplicación crea un control rebar llamando a la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando [**REBARCLASSNAME**](common-control-window-classes.md) como clase de ventana. La aplicación debe registrar primero la clase de ventana mediante una llamada a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) , especificando el \_ \_ bit de las clases de ICC Cool en la estructura [**InitCommonControlsEx**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) correspondiente.
+Una aplicación crea un control rebar llamando a la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y [**especificaNDO REBARCLASSNAME**](common-control-window-classes.md) como clase de ventana. En primer lugar, la aplicación debe registrar la clase window llamando a la función [**InitCommonControlsEx,**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) especificando el bit DE CLASES COOL DE JAVA EN LA ESTRUCTURA \_ \_ [**INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) que lo acompaña.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="create-a-rebar-control"></a>Crear un control rebar
+### <a name="create-a-rebar-control"></a>Crear un control Rebar
 
-En el ejemplo siguiente se crea un control rebar con dos bandas: una que contiene un cuadro combinado y otra que contiene una barra de herramientas. (Vea la ilustración en [acerca de los controles rebar](rebar-controls.md)). Estos controles se crean por separado y se pasan a la función de ejemplo como parámetros.
+En el ejemplo siguiente se crea un control rebar con dos bandas: una que contiene un cuadro combinado y otra que contiene una barra de herramientas. (Vea la ilustración en [Acerca de los controles rebar](rebar-controls.md)). Estos controles se crean por separado y se pasan a la función de ejemplo como parámetros.
 
 
 ```C++
@@ -117,15 +117,15 @@ HWND CreateRebar(HWND hwndOwner, HWND hwndToolbar, HWND hwndCombo)
 
 <dl> <dt>
 
-[Usar controles rebar](using-rebar-controls.md)
+[Usar controles Rebar](using-rebar-controls.md)
 </dt> <dt>
 
-[Acerca de los controles rebar](rebar-controls.md)
+[Acerca de los controles Rebar](rebar-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

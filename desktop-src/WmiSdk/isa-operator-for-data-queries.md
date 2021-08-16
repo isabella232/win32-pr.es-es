@@ -25,7 +25,7 @@ SELECT * FROM Class WHERE EmbeddedProp ISA "ParentClass"
 
 
 
-El resultado incluye instancias de **Class que** tienen objetos incrustados que se derivan de **ParentClass** en la **propiedad EmbeddedProp.** No todas las instancias del **objeto Class** se derivan de **ParentClass**, pero el resultado devuelve los objetos incrustados que se derivan de **ParentClass**.
+El resultado incluye instancias de **Class** que tienen objetos incrustados que se derivan de **ParentClass** en la **propiedad EmbeddedProp.** No todas las instancias del **objeto Class** se derivan de **ParentClass**, pero el resultado devuelve los objetos incrustados que se derivan de **ParentClass**.
 
 Por ejemplo, en la consulta siguiente, **ClassA** incluye la propiedad **EmbeddedObj** débilmente con tipo. La **clase ClassA** tiene diez instancias. Cinco de esas instancias tienen objetos incrustados con un tipo derivado de **ClassZ.** Los otros cinco tienen objetos incrustados de otros tipos.
 

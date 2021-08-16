@@ -1,5 +1,5 @@
 ---
-title: Drop-Down botón de configuración
+title: Drop-Down button
 description: El Drop-Down está formado por un botón que, al hacer clic en él, muestra una lista desplegable de elementos mutuamente excluyentes.
 ms.assetid: 41c5da07-43f7-4544-83be-248941cb8633
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118202561"
 ---
-# <a name="drop-down-button"></a>Drop-Down botón de configuración
+# <a name="drop-down-button"></a>Drop-Down button
 
 El Drop-Down está formado por un botón que, al hacer clic en él, muestra una lista desplegable de elementos mutuamente excluyentes.
 
@@ -21,26 +21,26 @@ El Drop-Down está formado por un botón que, al hacer clic en él, muestra una 
 
 ## <a name="details"></a>Detalles
 
-Este control es útil para exponer elementos estrechamente relacionados en casos en los que no hay ningún valor predeterminado obvio disponible y donde los elementos individuales se pueden representar mediante una imagen, texto o ambos.
+Este control es útil para exponer elementos estrechamente relacionados en casos en los que no hay disponible ningún valor predeterminado obvio y donde los elementos individuales se pueden representar mediante una imagen, texto o ambos.
 
 En la siguiente captura de pantalla se muestra el botón de Drop-Down en una cinta de opciones de ejemplo.
 
-![captura de pantalla de un control dropdownbutton en una cinta de opciones de ejemplo.](images/controls/dropdownbutton.png)
+![captura de pantalla de un control de botón desplegable en una cinta de opciones de ejemplo.](images/controls/dropdownbutton.png)
 
-## <a name="drop-down-button-properties"></a>propiedades Drop-Down botón de configuración
+## <a name="drop-down-button-properties"></a>Drop-Down propiedades del botón
 
-El marco de la cinta de opciones define una colección [de claves de propiedad](windowsribbon-reference-properties.md) para el Drop-Down control Button.
+El marco de la cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el Drop-Down control Button.
 
-Normalmente, una propiedad Drop-Down Button se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El evento de invalidación se controla y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
+Normalmente, una propiedad Drop-Down Button se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) controla el evento de invalidación y las actualizaciones de propiedad definidas.
 
-El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación ha consultado un valor de propiedad actualizado, hasta que el marco requiere la propiedad . Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
+El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación consulta un valor de propiedad actualizado, hasta que el marco de trabajo requiera la propiedad . Por ejemplo, cuando se activa una pestaña y se muestra un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
 
 > [!Note]  
 > En algunos casos, una propiedad se puede recuperar mediante el método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-En la tabla siguiente se enumeran las claves de propiedad asociadas al control Drop-Down control Button.
+En la tabla siguiente se enumeran las claves de propiedad asociadas al control Drop-Down Button.
 
 
 
@@ -65,7 +65,7 @@ En la tabla siguiente se enumeran las claves de propiedad asociadas al control D
 <td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br/> Si todos los elementos secundarios están deshabilitados, el marco <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> en false (0). De lo contrario, si uno o varios elementos secundarios están habilitados, UI_PKEY_Enabled se establece en true (-1).
 <blockquote>
 [!Important]<br />
-La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> propiedad del control Drop-Down Button debe invalidarse después de que uno o varios elementos secundarios estén habilitados o deshabilitados. Esto garantiza que el marco de trabajo consulta el valor de propiedad actualizado y actualiza el estado del control Drop-Down Button en la interfaz de usuario de la cinta de opciones.
+La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> del control Drop-Down Button debe invalidarse después de habilitar o deshabilitar uno o varios elementos secundarios. Esto garantiza que el marco consulta el valor de propiedad actualizado y actualiza el estado del control Drop-Down Button en la interfaz de usuario de la cinta de opciones.
 </blockquote>
 <br/> <br/></td>
 </tr>

@@ -99,12 +99,12 @@ Para que el sistema espere antes de procesar el mensaje, el valor devuelto debe 
 
 Para procesar el mensaje inmediatamente, el valor devuelto debe ser cero. El valor devuelto solo se usa si el código de enlace está **HC_GETNEXT**; De lo contrario, se omite.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un **procedimiento de enlace JournalPlaybackProc** debe copiar un mensaje de entrada en el parámetro *lParam.*
 El mensaje se debe haber registrado previamente mediante un procedimiento de enlace **JournalRecordProc,** que no debe modificar el mensaje.
 
-Para recuperar el mismo mensaje una y otra vez,  se puede llamar varias veces al procedimiento  de enlace con el parámetro de código establecido en **HC_GETNEXT** sin una llamada de intervención con el código establecido **en HC_SKIP**.
+Para recuperar el mismo mensaje una y otra vez,  se puede llamar varias veces al procedimiento  de enlace con el parámetro de código establecido en **HC_GETNEXT** sin una llamada de intervención con el código establecido en **HC_SKIP**.
 
 Si *el* código **HC_GETNEXT** y el valor devuelto es mayor que cero, el sistema se suspensión durante el número de milisegundos especificado por el valor devuelto. Cuando el sistema continúa, llama de nuevo al procedimiento de enlace con el código *establecido* **en HC_GETNEXT** para recuperar el mismo mensaje.
 El valor devuelto de esta nueva llamada a **JournalPlaybackProc** debe ser cero; De lo contrario, el sistema volverá a estar en modo de suspensión durante el número de milisegundos especificado por el valor devuelto, volverá a llamar a **JournalPlaybackProc,** y así sucesivamente.
@@ -114,18 +114,18 @@ A diferencia de la mayoría de otros procedimientos de enlace globales, siempre 
 
 Después de que el procedimiento de enlace devuelva el control al sistema, el mensaje se sigue procesando. Si *el* código **HC_SKIP**, el procedimiento de enlace debe prepararse para devolver el siguiente mensaje de evento registrado en su siguiente llamada.
 
-Instale el procedimiento de enlace **JournalPlaybackProc** especificando el tipo WH_JOURNALPLAYBACK y un puntero al procedimiento de enlace en una llamada a la **función SetWindowsHookEx.** [](about-hooks.md)
+Instale el procedimiento de enlace **JournalPlaybackProc** especificando el tipo [WH_JOURNALPLAYBACK](about-hooks.md) y un puntero al procedimiento de enlace en una llamada a la **función SetWindowsHookEx.**
 
-Si el usuario presiona CTRL+ESC O CTRL+ALT+SUPR durante la reproducción del diario, el sistema detiene la reproducción, desenlazna el procedimiento de reproducción del diario y envía un mensaje [WM_CANCELJOURNAL a](wm-canceljournal.md) la aplicación de registro en diario.
+Si el usuario presiona CTRL+ESC O CTRL+ALT+SUPR durante la reproducción del diario, el sistema detiene la reproducción, desenlazna el procedimiento de reproducción del diario y envía un mensaje [WM_CANCELJOURNAL](wm-canceljournal.md) a la aplicación de diario.
 
-Si el procedimiento de enlace devuelve un mensaje en el **intervalo** WM_KEYFIRST a **WM_KEYLAST**, se aplican las condiciones siguientes:
+Si el procedimiento de enlace devuelve un mensaje en el intervalo **WM_KEYFIRST** para **WM_KEYLAST**, se aplican las condiciones siguientes:
 
 * El **miembro paramL** de la **estructura EVENTMSG** especifica el código de clave virtual de la clave que se presionó.
 * El **miembro paramH** de la **estructura EVENTMSG** especifica el código de examen.
 * No hay ninguna manera de especificar un recuento de repeticiones.
 El evento siempre se toma para representar un evento clave.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex)
 

@@ -1,5 +1,5 @@
 ---
-description: La utilidad del comprobador de archivos del sistema, Sfc.exe, permite a los administradores examinar todos los recursos protegidos para comprobar sus versiones.
+description: La utilidad de comprobación de archivos del sistema, Sfc.exe, permite a los administradores examinar todos los recursos protegidos para comprobar sus versiones.
 ms.assetid: 72f69ad2-15d9-4191-a8aa-4c23a2392006
 title: Comprobador de archivos de sistema
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118330287"
 ---
 # <a name="system-file-checker"></a>Comprobador de archivos de sistema
 
-La utilidad del comprobador de archivos del sistema, Sfc.exe, permite a los administradores examinar todos los recursos protegidos para comprobar sus versiones.
+La utilidad de comprobación de archivos del sistema, Sfc.exe, permite a los administradores examinar todos los recursos protegidos para comprobar sus versiones.
 
-Los archivos críticos para reiniciar Windows que no coincidan con la versión Windows esperada se pueden reemplazar por las versiones correctas. Si se repara un archivo, también se reparan los datos del Registro correspondientes. Los archivos protegidos no son críticos para Windows no se reparan.
+Los archivos críticos para reiniciar Windows que no coincidan con la versión Windows esperada se pueden reemplazar por las versiones correctas. Si se repara un archivo, también se repararán los datos del Registro correspondientes. Los archivos protegidos no son críticos para Windows no se reparan.
 
 ## <a name="syntax"></a>Syntax
 
@@ -162,7 +162,7 @@ Para obtener más información, vea [Valores del Registro WFP](wfp-registry-valu
 
 ## <a name="remarks"></a>Comentarios
 
-Solo Windows Vista, puede establecer la variable de entorno **\_ \_ LOGFILE** de WINDOWS TRACING en la ubicación de un directorio válido para recibir un archivo de registro.
+Solo Windows Vista, puede establecer la variable de entorno **\_ \_ LOGFILE** de SEGUIMIENTO DE WINDOWS en la ubicación de un directorio válido para recibir un archivo de registro.
 
 ## <a name="examples"></a>Ejemplos
 

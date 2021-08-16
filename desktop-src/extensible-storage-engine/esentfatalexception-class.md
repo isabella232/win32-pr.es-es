@@ -33,7 +33,7 @@ ms.locfileid: "118496744"
 ---
 # <a name="esentfatalexception-class"></a>Clase EsentFatalException
 
-Clase base para excepciones fatales.
+Clase base para excepciones irreales.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 

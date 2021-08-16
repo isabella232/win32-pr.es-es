@@ -1,7 +1,7 @@
 ---
 description: 'Evento InkOverlay.DoubleClick: se produce cuando se hace doble clic en el objeto InkCollector o InkOverlay.'
 ms.assetid: 76ea40d4-82cf-420a-a9eb-66cb0492b43b
-title: Evento InkOverlay.DoubleClick (Msclickut.h)
+title: Evento InkOverlay.DoubleClick (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: bf670c191f06e53effa0a59a078a70d7c9d096d72d2ed49a387ffa933eb7bae1
@@ -51,7 +51,7 @@ Este método de evento se define en las interfaces de solo envío \_ \_ (dispint
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
 | Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

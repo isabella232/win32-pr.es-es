@@ -1,5 +1,5 @@
 ---
-description: Los valores de marca SFGAO de los atributos de Shell de un elemento se pueden probar para determinar si el verbo debe habilitarse o deshabilitarse.
+description: Los valores de marca SFGAO de los atributos de Shell para un elemento se pueden probar para determinar si el verbo debe habilitarse o deshabilitarse.
 ms.assetid: 3A539A9D-DB6B-4E3D-AD26-D5309BECEBB1
 title: Cómo usar atributos de elemento
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "117859574"
 ---
 # <a name="how-to-use-item-attributes"></a>Cómo usar atributos de elemento
 
-Los [**valores de marca SFGAO**](sfgao.md) de los atributos de Shell de un elemento se pueden probar para determinar si el verbo debe habilitarse o deshabilitarse.
+Los [**valores de marca SFGAO**](sfgao.md) de los atributos de Shell para un elemento se pueden probar para determinar si el verbo debe habilitarse o deshabilitarse.
 
-Para usar esta característica de atributo, agregue los siguientes **valores \_ REG DWORD** bajo el verbo :
+Para usar esta característica de atributo, agregue los siguientes **valores REG \_ DWORD** en el verbo :
 
 ## <a name="instructions"></a>Instructions
 
 ### <a name="step-1"></a>Paso 1:
 
-El valor AttributeMask especifica el valor [**SFGAO**](sfgao.md) de los valores de bits de la máscara con la que se probará.
+El valor attributeMask especifica el valor [**SFGAO**](sfgao.md) de los valores de bits de la máscara con la que se probará.
 
 ### <a name="step-2"></a>Paso 2:
 
@@ -29,7 +29,7 @@ El valor AttributeValue especifica el valor [**SFGAO**](sfgao.md) de los bits qu
 
 ### <a name="step-3"></a>Paso 3:
 
-ImpliedSelectionModel especifica cero para los verbos de elemento o distinto de cero para los verbos en el menú contextual de fondo.
+ImpliedSelectionModel especifica cero para verbos de elemento o distinto de cero para verbos en el menú contextual de fondo.
 
 ## <a name="remarks"></a>Comentarios
 

@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_OPENINTERFACE mensaje (Vfw.h)
-description: El mensaje MCIWNDM OPENINTERFACE asocia el flujo de datos o el archivo asociado a la interfaz especificada \_ a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndOpenInterface.
+description: El mensaje MCIWNDM OPENINTERFACE adjunta el flujo de datos o el archivo asociado a la interfaz especificada \_ a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndOpenInterface.
 ms.assetid: 73cbd637-d315-4b39-a978-2b72aed1f303
 keywords:
 - MCIWNDM_OPENINTERFACE mensaje Windows Multimedia

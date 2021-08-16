@@ -16,7 +16,7 @@ ms.locfileid: "118415269"
 ## <a name="in-this-section"></a>En esta sección
 
 -   [NM \_ CUSTOMDRAW (información sobre herramientas)](nm-customdraw-tooltip.md)
--   [TTN \_ GETDISPINFO](ttn-getdispinfo.md)
+-   [GETDISPINFO de TTN \_](ttn-getdispinfo.md)
 -   [TTN \_ LINKCLICK](ttn-linkclick.md)
 -   [TTN \_ NEEDTEXT](ttn-needtext.md)
 -   [TTN \_ POP](ttn-pop.md)

@@ -22,7 +22,7 @@ Esta sección contiene código de ejemplo e información sobre cómo crear y usa
 | Tema                                                                          | Descripción                                                                                                                                                                                                  |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Cómo crear controles SysLink](create-syslink-controls.md)<br/>       | Los hipervínculos del control SysLink se implementan a través del marcado en la cadena de inicialización del control o mediante el envío de un [**mensaje \_ SETITEM de LM.**](lm-setitem.md) <br/>                              |
-| [Uso de notificaciones syslink](use-syslihnk-notifications.md)<br/> | Hay dos mensajes de notificación asociados al control SysLink, uno para el mouse[ \_ (NM CLICK (syslink) )](nm-click-syslink.md)y otro para el teclado[(NM \_ RETURN](nm-return.md)). <br/> |
+| [Uso de notificaciones syslink](use-syslihnk-notifications.md)<br/> | Hay dos mensajes de notificación asociados al control SysLink, uno para el mouse[(NM \_ CLICK (syslink) )](nm-click-syslink.md)y otro para el teclado[(NM \_ RETURN).](nm-return.md) <br/> |
 
 
 

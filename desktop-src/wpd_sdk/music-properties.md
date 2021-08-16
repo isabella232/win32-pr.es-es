@@ -1,7 +1,7 @@
 ---
-description: Los dispositivos portátiles de Windows admiten las siguientes propiedades de música.
+description: Windows Dispositivos portátiles admite las siguientes propiedades de música.
 ms.assetid: a1688c95-af5a-4061-80d4-61f08787d49e
-title: Propiedades de música (PortableDevice. h)
+title: Música Propiedades (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,25 +13,25 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 3b33c2219dc9da43474f28b4b807727bdd1d90a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9231ad4a3c15aac893cc51105e764d7bb6bbd4866dae6e11164b9418db557c9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842886"
 ---
-# <a name="music-properties"></a>Propiedades de música
+# <a name="music-properties"></a>Música Propiedades
 
-Los dispositivos portátiles de Windows admiten las siguientes propiedades de música.
+Windows Dispositivos portátiles admite las siguientes propiedades de música.
 
 
 
 | Propiedad               | VarType        | Descripción                                |
 |------------------------|----------------|--------------------------------------------|
-| **\_álbum de música de WPD \_**  | **VT \_ LPWStr** | El álbum al que pertenece la pista.            |
-| **\_Letras de música de WPD \_** | **VT \_ LPWStr** | Letras de la música.                  |
-| **\_ánimo de música de WPD \_**   | **VT \_ LPWStr** | Cadena que describe el ambiente de la música. |
-| **\_pista de música de WPD \_**  | **VT \_ UI4**    | Número de pista de la grabación en el álbum. |
+| **WPD \_ MUSIC \_ ALBUM**  | **VT \_ LPWSTR** | El álbum al que pertenece la pista.            |
+| **WPD \_ MUSIC \_ LORÓN** | **VT \_ LPWSTR** | La letra de la música.                  |
+| **WPD \_ MUSIC \_ MOOD**   | **VT \_ LPWSTR** | Cadena que describe el ambiente de la música. |
+| **WPD \_ MUSIC \_ TRACK**  | **VT \_ UI4**    | Número de pista de la grabación en el álbum. |
 
 
 
@@ -43,11 +43,11 @@ Los dispositivos portátiles de Windows admiten las siguientes propiedades de m�
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

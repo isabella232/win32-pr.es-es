@@ -31,7 +31,7 @@ El Microsoft Active Accessibility dll, Oleacc.dll, consta de los siguientes comp
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Funcionamiento de Active Accessibility](how-active-accessibility-works.md)
+-   [Funcionamiento Active Accessibility](how-active-accessibility-works.md)
 -   [Active Accessibility básicos](active-accessibility-basics.md)
 -   [Instrucciones del servidor](server-guidelines.md)
 -   [Directrices de cliente](client-guidelines.md)

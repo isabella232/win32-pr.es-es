@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118392819"
 ---
-# <a name="getsystemcompatibilityinfo-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método GetSystemCompatibilityInfo de la clase \_ Msvm VirtualSystemMigrationService
+# <a name="getsystemcompatibilityinfo-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método GetSystemCompatibilityInfo de la clase Msvm \_ VirtualSystemMigrationService
 
-Genera un blob opaco de datos que contiene información de compatibilidad para el sistema especificado. Este método se usa junto con el método [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) para determinar si una migración rápida o en vivo de una máquina virtual a otro sistema de equipo host es posible sin intentar realmente la migración.
+Genera un blob opaco de datos que contiene información de compatibilidad para el sistema especificado. Este método se usa junto con el método [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) para determinar si es posible realizar una migración rápida o en vivo de una máquina virtual a otro sistema de equipo host sin intentar realmente la migración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ uint32 GetSystemCompatibilityInfo(
 *ComputerSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa la máquina virtual para la que se recuperará la información de compatibilidad. Si este parámetro hace referencia al sistema del equipo host, los datos devueltos en el parámetro *CompatibilityInfo* se pueden usar para determinar si alguna de las máquinas virtuales del sistema del equipo host se puede migrar rápidamente a otro sistema de equipo host.
+Referencia a una clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa la máquina virtual para la que se recupera información de compatibilidad. Si este parámetro hace referencia al sistema de equipo host, los datos devueltos en el parámetro *CompatibilityInfo* se pueden usar para determinar si cualquiera de las máquinas virtuales del sistema de equipo host se puede migrar rápidamente a otro sistema de equipo de hospedaje.
 
 </dd> <dt>
 
 *CompatibilityInfo* \[ out\]
 </dt> <dd>
 
-Blob opaco de datos que se puede pasar al [**método CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) en otro sistema de equipo host para confirmar la compatibilidad.
+Blob opaco de datos que se pueden pasar al [**método CheckSystemCompatibilityInfo en otro**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) sistema de equipo de hospedaje para confirmar la compatibilidad.
 
 </dd> </dl>
 

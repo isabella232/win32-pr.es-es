@@ -1,35 +1,35 @@
 ---
-description: Una aplicación multimedia que desea proporcionar una experiencia personalizada de pato debe escuchar las notificaciones de eventos cuando se abre o se cierra una secuencia de comunicación en el sistema.
+description: Una aplicación multimedia que quiera proporcionar una experiencia de afijo personalizada debe escuchar las notificaciones de eventos cuando se abre o cierra un flujo de comunicación en el sistema.
 ms.assetid: 709ad912-6b03-4ad3-bc47-ad8b6bd6de45
-title: Obtención de eventos de pato
+title: Obtención de eventos de afición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e45557c25570a89452a39683a0b6732b9632129
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a4a5869aa02a64ef3b7d035743b9bee3c91d295448c4d89d659862c5efc81d89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828266"
 ---
-# <a name="getting-ducking-events"></a>Obtención de eventos de pato
+# <a name="getting-ducking-events"></a>Obtención de eventos de afición
 
-Una aplicación multimedia que desea proporcionar una experiencia personalizada de pato debe escuchar las notificaciones de eventos cuando se abre o se cierra una secuencia de comunicación en el sistema. La implementación personalizada se puede proporcionar mediante MediaFoundation, DirectShow o DirectSound, que usan las API de audio principales. Un cliente de WASAPI directo también puede invalidar el control predeterminado si sabe cuándo se inicia y finaliza la sesión de comunicación.
+Una aplicación multimedia que quiera proporcionar una experiencia de afijo personalizada debe escuchar las notificaciones de eventos cuando se abre o cierra un flujo de comunicación en el sistema. La implementación personalizada se puede proporcionar mediante MediaFoundation, DirectShow o Direct Sound, que usan las API core audio. Un cliente WASAPI directo también puede invalidar el control predeterminado si sabe cuándo se inicia y finaliza la sesión de comunicación.
 
-Para proporcionar una implementación personalizada, una aplicación multimedia necesita recibir notificaciones del sistema cuando una aplicación de comunicación inicia o finaliza una secuencia de comunicación. La aplicación multimedia debe implementar la interfaz [**IAudioVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) y registrar la implementación con el sistema de audio. Tras el registro correcto, la aplicación multimedia recibe notificaciones de eventos en forma de devoluciones de llamada a través de los métodos de la interfaz. Para obtener más información, consulte [consideraciones de implementación para las notificaciones de patos](handling-audio-ducking-events-from-communication-devices.md).
+Para proporcionar una implementación personalizada, una aplicación multimedia debe recibir notificaciones del sistema cuando una aplicación de comunicación inicia o finaliza un flujo de comunicación. La aplicación multimedia debe implementar la [**interfaz IAudioVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) y registrar la implementación con el sistema de audio. Tras el registro correcto, la aplicación multimedia recibe notificaciones de eventos en forma de devoluciones de llamada a través de los métodos de la interfaz . Para obtener más información, vea [Consideraciones de implementación para notificaciones de atajo.](handling-audio-ducking-events-from-communication-devices.md)
 
-Para enviar notificaciones de patos, el sistema de audio debe saber qué sesión de audio está escuchando los eventos de perdedor. Cada sesión de audio se identifica de forma única con un GUID: identificador de instancia de sesión. El administrador de sesión permite a una aplicación obtener información sobre la sesión, como el título de la sesión de audio, el estado de representación y el identificador de la instancia de sesión. El identificador se puede recuperar mediante la interfaz de control de directivas, [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2).
+Para enviar notificaciones de afijo, el sistema de audio debe saber qué sesión de audio está escuchando los eventos de afijo. Cada sesión de audio se identifica de forma única con un GUID: identificador de instancia de sesión. El administrador de sesiones permite a una aplicación obtener información sobre la sesión, como el título de la sesión de audio, el estado de representación y el identificador de instancia de sesión. El identificador se puede recuperar mediante la interfaz de control de directivas, [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2).
 
 En los pasos siguientes se resume el proceso de obtención del identificador de instancia de sesión de la aplicación multimedia:
 
-1.  Cree una instancia del enumerador de dispositivos y Úsela para obtener una referencia al punto de conexión del dispositivo que usa la aplicación multimedia para representar la secuencia que no es de comunicación.
-2.  Active el administrador de sesión desde el punto de conexión del dispositivo y obtenga una referencia a la interfaz [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) del administrador de sesión.
-3.  Mediante el puntero [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) , obtenga una referencia a la interfaz [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) del administrador de sesión.
-4.  Consulte el [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) de la interfaz [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) .
-5.  Llame a [**IAudioSessionControl2:: GetSessionInstanceIdentifier**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-getsessioninstanceidentifier) y recupere una cadena que contenga el identificador de sesión para la sesión de audio actual.
+1.  Cree una instancia del enumerador de dispositivos y úselo para obtener una referencia al punto de conexión del dispositivo que usa la aplicación multimedia para representar el flujo que no es de comunicación.
+2.  Active el administrador de sesión desde el punto de conexión del dispositivo y obtenga una referencia a la [**interfaz IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) del administrador de sesiones.
+3.  Mediante el puntero [**IAudioSessionManager2,**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) obtenga una referencia a la [**interfaz IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) del administrador de sesiones.
+4.  Consulte [**IAudioSessionControl2 desde**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) la [**interfaz IAudioSessionControl.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol)
+5.  Llame [**a IAudioSessionControl2::GetSessionInstanceIdentifier**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-getsessioninstanceidentifier) y recupere una cadena que contenga el identificador de sesión de la sesión de audio actual.
 
-Para obtener notificaciones de patos sobre las secuencias de comunicación, la aplicación multimedia llama a [**IAudioSessionManager2:: RegisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-registerducknotification). La aplicación multimedia suministra su identificador de instancia de sesión al sistema de audio y un puntero a la implementación de [**IAudioVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) . La aplicación ahora puede recibir notificaciones de eventos cuando se abre una secuencia en el dispositivo de comunicación. Para dejar de recibir notificaciones, la aplicación multimedia debe llamar a [**IAudioSessionManager2:: UnregisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-unregisterducknotification).
+Para obtener notificaciones de afijo sobre los flujos de comunicación, la aplicación multimedia llama a [**IAudioSessionManager2::RegisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-registerducknotification). La aplicación multimedia proporciona su identificador de instancia de sesión al sistema de audio y un puntero a la [**implementación de IAudioVolumeDuckNotification.**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) La aplicación ahora puede recibir una notificación de eventos cuando se abre una secuencia en el dispositivo de comunicación. Para dejar de recibir notificaciones, la aplicación multimedia debe llamar a [**IAudioSessionManager2::UnregisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-unregisterducknotification).
 
-En el código siguiente se muestra cómo se puede registrar una aplicación para obtener notificaciones de patos. La clase CMediaPlayer se define en [consideraciones de implementación para las notificaciones de patos](handling-audio-ducking-events-from-communication-devices.md). En el ejemplo [DuckingMediaPlayer](duckingmediaplayer.md) se implementa esta funcionalidad.
+El código siguiente muestra cómo se puede registrar una aplicación para recibir notificaciones de afijo. La clase CMediaPlayer se define en Consideraciones de implementación [para notificaciones de atajo.](handling-audio-ducking-events-from-communication-devices.md) El [ejemplo DuckingMediaPlayer](duckingmediaplayer.md) implementa esta funcionalidad.
 
 
 ```C++
@@ -139,16 +139,16 @@ HRESULT CMediaPlayer::DuckingOptOut(bool DuckingOptOutChecked)
 [Uso de un dispositivo de comunicación](using-the-communication-device.md)
 </dt> <dt>
 
-[Experiencia predeterminada de los patos](stream-attenuation.md)
+[Experiencia de afición predeterminada](stream-attenuation.md)
 </dt> <dt>
 
-[Deshabilitación de la experiencia de patos predeterminada](disabling-the-ducking-experience.md)
+[Deshabilitación de la experiencia de afición predeterminada](disabling-the-ducking-experience.md)
 </dt> <dt>
 
-[Proporcionar un comportamiento personalizado de patos](providing-a-custom-ducking-experience.md)
+[Proporcionar un comportamiento de afijo personalizado](providing-a-custom-ducking-experience.md)
 </dt> <dt>
 
-[Consideraciones de implementación para las notificaciones de patos](handling-audio-ducking-events-from-communication-devices.md)
+[Consideraciones de implementación para notificaciones de afijo](handling-audio-ducking-events-from-communication-devices.md)
 </dt> </dl>
 
  

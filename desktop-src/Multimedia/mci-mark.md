@@ -1,6 +1,6 @@
 ---
 title: MCI_MARK comando (Mmsystem.h)
-description: El comando MCI MARK registra o borra marcas que se pueden usar con el comando MCI SEEK para \_ \_ búsquedas de alta velocidad. Los dispositivos VCR reconocen este comando.
+description: El comando MCI MARK registra o borra las marcas que se pueden usar con el comando MCI SEEK para \_ \_ búsquedas de alta velocidad. Los dispositivos VCR reconocen este comando.
 ms.assetid: 69b17e5b-99a1-4fb9-bc0e-30e772c1f11f
 keywords:
 - MCI_MARK comando Windows Multimedia
@@ -23,7 +23,7 @@ ms.locfileid: "118375000"
 ---
 # <a name="mci_mark-command"></a>Comando MCI \_ MARK
 
-El comando MCI MARK registra o borra marcas que se pueden usar con el comando \_ [ \_ MCI SEEK](mci-seek.md) para búsquedas de alta velocidad. Los dispositivos VCR reconocen este comando.
+El comando MCI MARK registra o borra las marcas que se pueden usar con el \_ [comando MCI \_ SEEK](mci-seek.md) para búsquedas de alta velocidad. Los dispositivos VCR reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -66,7 +66,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -81,7 +81,7 @@ Borra una marca en la posición actual si existe una.
 
 </dd> <dt>
 
-<span id="MCI_VCR_MARK_WRITE"></span><span id="mci_vcr_mark_write"></span>ESCRITURA DE \_ MARCA DE VCR \_ DE MCI \_
+<span id="MCI_VCR_MARK_WRITE"></span><span id="mci_vcr_mark_write"></span>MCI \_ VCR \_ MARK \_ WRITE
 </dt> <dd>
 
 Escribe una marca en la posición actual.

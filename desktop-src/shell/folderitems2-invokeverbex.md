@@ -45,7 +45,7 @@ iRetVal = FolderItems2.InvokeVerbEx(
 
 Tipo: **Variant**
 
-Variante **con** la cadena verbal que corresponde al comando que se va a ejecutar. Si no se especifica ningún verbo, se ejecuta el verbo predeterminado.
+Variante **con** la cadena de verbo que corresponde al comando que se va a ejecutar. Si no se especifica ningún verbo, se ejecuta el verbo predeterminado.
 
 </dd> <dt>
 
@@ -60,11 +60,11 @@ Variante **que** consta de una cadena con uno o varios argumentos para el comand
 
 ## <a name="remarks"></a>Comentarios
 
-Un verbo es una cadena que se usa para especificar una acción determinada asociada a un elemento o colección de elementos. Normalmente, al llamar a un verbo se inicia una aplicación relacionada. Por ejemplo, al llamar al **verbo abierto** en un archivo .txt normalmente se abre el archivo con un editor de texto, normalmente Microsoft Bloc de notas. Para obtener más información sobre los verbos, vea [Iniciar aplicaciones.](launch.md)
+Un verbo es una cadena que se usa para especificar una acción determinada asociada a un elemento o colección de elementos. Normalmente, al llamar a un verbo se inicia una aplicación relacionada. Por ejemplo, al llamar al **verbo** abierto en un archivo .txt normalmente se abre el archivo con un editor de texto, normalmente Microsoft Bloc de notas. Para obtener más información sobre los verbos, vea [Iniciar aplicaciones.](launch.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa InvokeVerbEx para** invocar el verbo predeterminado ("open") **en Mi PC**. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa InvokeVerbEx para** invocar el verbo predeterminado ("open") **en Mi PC**. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 

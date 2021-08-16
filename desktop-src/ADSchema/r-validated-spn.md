@@ -1,10 +1,10 @@
 ---
-title: 'Validadas: Escrituras validadas por SPN'
+title: Escrituras validadas con SPN validado
 description: Permiso de escritura validado para habilitar la configuración del atributo SPN que es compatible con el nombre de host DNS del equipo.
 ms.assetid: f5760ee0-d1e3-4e0d-afb8-6f1c1493d379
 ms.tgt_platform: multiple
 keywords:
-- 'Validado: el SPN validado escribe el esquema de AD'
+- El SPN validado escribe el esquema de AD
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2417c6bea1338031b27c8debc3ed257ea6e8d58
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8f6508f4c75b07a095cb3fb12f5d422975396a38cc2aff0476e2b008336bd7e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835731"
 ---
-# <a name="validated-spn-validated-writes"></a>Validadas: Escrituras validadas por SPN
+# <a name="validated-spn-validated-writes"></a>Escrituras validadas con SPN validado
 
 Permiso de escritura validado para habilitar la configuración del atributo SPN que es compatible con el nombre de host DNS del equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|-------------------------------------------|
-| CN           | Validado: SPN                             |
+| CN           | SPN validado                             |
 | Display-Name | Escritura validada en el nombre de entidad de seguridad de servicio |
 | Rights-GUID  | f3a64788-5306-11d1-a9c5-0000f80367c1      |
 
@@ -47,10 +47,10 @@ Permiso de escritura validado para habilitar la configuración del atributo SPN 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localización: ID. de presentación | 14                                        |
+| Localization-Display-ID | 14                                        |
 
 
 
@@ -58,10 +58,10 @@ Permiso de escritura validado para habilitar la configuración del atributo SPN 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localización: ID. de presentación | 14                                        |
+| Localization-Display-ID | 14                                        |
 
 
 
@@ -69,10 +69,10 @@ Permiso de escritura validado para habilitar la configuración del atributo SPN 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localización: ID. de presentación | 14                                        |
+| Localization-Display-ID | 14                                        |
 
 
 
@@ -80,10 +80,10 @@ Permiso de escritura validado para habilitar la configuración del atributo SPN 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localización: ID. de presentación | 14                                        |
+| Localization-Display-ID | 14                                        |
 
 
 
@@ -91,10 +91,10 @@ Permiso de escritura validado para habilitar la configuración del atributo SPN 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/> |
-| Localización: ID. de presentación | 14                                                                                                                         |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 14                                                                                                                         |
 
 
 
@@ -102,10 +102,10 @@ Permiso de escritura validado para habilitar la configuración del atributo SPN 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/> |
-| Localización: ID. de presentación | 14                                                                                                                         |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 14                                                                                                                         |
 
 
 

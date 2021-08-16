@@ -3,7 +3,7 @@ title: Errores generales de MCI
 description: Errores generales de MCI
 ms.assetid: be9c4a2b-44bc-410c-be74-ba55bb4e785b
 keywords:
-- Valores devueltos de MCIERR, errores generales
+- VALORES DEVUELTOS DE MCIERR, errores generales
 - referencia multimedia, errores de MCI
 - referencia de multimedia, errores de MCI
 - Interfaz de control multimedia (MCI), errores generales
@@ -33,34 +33,34 @@ La función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) o [**mci
 
 | Valor                            | Significado                                                                                                                                                     |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| FORMATO DE HORA \_ DE MCIERR \_ \_        | El valor especificado para el formato de hora no es válido.                                                                                                         |
+| FORMATO DE HORA \_ \_ DE MALA HORA DE MCIERR \_        | El valor especificado para el formato de hora no es válido.                                                                                                         |
 | MCIERR \_ NO PUEDE CARGAR EL \_ \_ CONTROLADOR     | El controlador de dispositivo especificado no se cargará correctamente.                                                                                                         |
-| MCIERR \_ NO PUEDE USAR \_ \_ ALL         | No se permite el nombre de dispositivo "all" para este comando.                                                                                                      |
+| MCIERR \_ NO PUEDE USAR \_ \_ TODO         | No se permite el nombre de dispositivo "all" para este comando.                                                                                                      |
 | MCIERR \_ CREATEWINDOW             | No se pudo crear ni usar la ventana.                                                                                                                             |
 | LONGITUD DEL DISPOSITIVO MCIERR \_ \_           | El nombre del dispositivo o del controlador es demasiado largo. Especifique un nombre de dispositivo o controlador con menos de 79 caracteres.                                                     |
-| DISPOSITIVO MCIERR \_ \_ BLOQUEADO           | El dispositivo se está cierrando. Espere unos segundos e inténtelo de nuevo.                                                                                         |
+| DISPOSITIVO MCIERR \_ \_ BLOQUEADO           | El dispositivo se está cierrando. Espere unos segundos y vuelva a intentarlo.                                                                                         |
 | DISPOSITIVO MCIERR \_ \_ NO \_ INSTALADO   | El dispositivo especificado no está instalado en el sistema. Use la opción Controladores del Panel de control para instalar el dispositivo.                                   |
-| DISPOSITIVO MCIERR \_ \_ NO \_ LISTO       | El controlador del dispositivo no está listo.                                                                                                                             |
-| DISPOSITIVO MCIERR \_ \_ ABIERTO             | Esta aplicación ya usa el nombre del dispositivo como alias. Use un alias único.                                                                        |
+| EL DISPOSITIVO MCIERR \_ \_ NO ESTÁ \_ LISTO       | El controlador de dispositivo no está listo.                                                                                                                             |
+| MCIERR \_ DEVICE \_ OPEN             | Esta aplicación ya usa el nombre del dispositivo como alias. Use un alias único.                                                                        |
 | LONGITUD DEL \_ \_ ORD DEL DISPOSITIVO MCIERR \_      | El nombre del dispositivo o del controlador es demasiado largo. Especifique un nombre de dispositivo o controlador con menos de 79 caracteres.                                                     |
-| SE REQUIERE EL \_ TIPO \_ DE DISPOSITIVO \_ MCIERR   | No se encuentra el dispositivo especificado en el sistema. Compruebe que el dispositivo está instalado y que el nombre del dispositivo está escrito correctamente.                            |
-| CONTROLADOR \_ MCIERR                   | El controlador del dispositivo presenta un problema. Consulte con el fabricante del dispositivo para obtener un nuevo controlador.                                                      |
-| MCIERR \_ DRIVER \_ INTERNAL         | El controlador del dispositivo presenta un problema. Consulte con el fabricante del dispositivo para obtener un nuevo controlador.                                                      |
+| SE REQUIERE EL \_ TIPO \_ DE DISPOSITIVO \_ MCIERR   | El dispositivo especificado no se encuentra en el sistema. Compruebe que el dispositivo está instalado y que el nombre del dispositivo está escrito correctamente.                            |
+| CONTROLADOR \_ MCIERR                   | El controlador de dispositivo presenta un problema. Consulte con el fabricante del dispositivo para obtener un nuevo controlador.                                                      |
+| MCIERR \_ DRIVER \_ INTERNAL         | El controlador de dispositivo presenta un problema. Consulte con el fabricante del dispositivo para obtener un nuevo controlador.                                                      |
 | ALIAS DUPLICADO DE MCIERR \_ \_         | El alias especificado ya se usa en esta aplicación. Use un alias único.                                                                                |
 | NO SE ENCONTRÓ LA EXTENSIÓN MCIERR \_ \_ \_    | La extensión especificada no tiene ningún tipo de dispositivo asociado. Especifique un tipo de dispositivo.                                                                       |
-| CARACTERES \_ ADICIONALES DE MCIERR \_        | Debe incluir una cadena entre comillas; Los caracteres que aparecen después de la comilla de cierre no son válidos.                                              |
+| CARACTERES \_ ADICIONALES DE MCIERR \_        | Debe incluir una cadena entre comillas; Los caracteres que aparecen después de las comillas de cierre no son válidos.                                              |
 | ARCHIVO MCIERR \_ \_ NO \_ ENCONTRADO         | No se encontró el archivo solicitado. Compruebe que la ruta de acceso y el nombre de archivo son correctos.                                                                             |
-| ARCHIVO MCIERR \_ \_ NO \_ GUARDADO         | El archivo no se guardó. Asegúrese de que el sistema tiene suficiente espacio en disco o de que tiene una conexión de red intacta.                                                |
-| MCIERR \_ FILE \_ READ               | Error al leer el archivo. Asegúrese de que el archivo está presente en el sistema o de que el sistema tiene una conexión de red intacta.                             |
-| ESCRITURA DE \_ ARCHIVOS MCIERR \_              | Error al escribir en el archivo. Asegúrese de que el sistema tiene suficiente espacio en disco o de que tiene una conexión de red intacta.                                            |
-| SE REQUIERE NOMBRE \_ DE ARCHIVO MCIERR \_       | El nombre de archivo no es válido. Asegúrese de que el nombre de archivo no tiene más de ocho caracteres, seguido de un punto y una extensión.                                  |
+| ARCHIVO MCIERR \_ \_ NO \_ GUARDADO         | El archivo no se guardó. Asegúrese de que el sistema tiene suficiente espacio en disco o tiene una conexión de red intacta.                                                |
+| LECTURA DEL ARCHIVO MCIERR \_ \_               | Error al leer el archivo. Asegúrese de que el archivo está presente en el sistema o de que el sistema tiene una conexión de red intacta.                             |
+| MCIERR \_ FILE \_ WRITE              | Error al escribir en el archivo. Asegúrese de que el sistema tiene suficiente espacio en disco o tiene una conexión de red intacta.                                            |
+| SE REQUIERE UN NOMBRE DE ARCHIVO MCIERR \_ \_       | El nombre de archivo no es válido. Asegúrese de que el nombre de archivo no tiene más de ocho caracteres, seguido de un punto y una extensión.                                  |
 | MARCAS MCIERR \_ \_ NO \_ COMPATIBLES   | Los parámetros especificados no se pueden usar juntos.                                                                                                           |
 | MCIERR \_ GET \_ CD                  | No se encontró el archivo solicitado o el dispositivo MCI. Intente cambiar directorios o reiniciar el sistema.                                                         |
 | HARDWARE DE MCIERR \_                 | El dispositivo especificado presenta un problema. Compruebe que el dispositivo funciona correctamente o póngase en contacto con el fabricante del dispositivo.                                     |
-| MCIERR \_ ILLEGAL \_ FOR \_ AUTO \_ OPEN | MCI no realizará el comando especificado en un dispositivo abierto automáticamente. Espere hasta que se cierre el dispositivo y, a continuación, intente realizar el comando.             |
+| MCIERR \_ ILLEGAL \_ FOR \_ AUTO \_ OPEN | MCI no realizará el comando especificado en un dispositivo abierto automáticamente. Espere hasta que se cierre el dispositivo y, a continuación, intente realizar el comando .             |
 | MCIERR \_ INTERNAL                 | Se produjo un problema al inicializar MCI. Intente reiniciar el Windows operativo.                                                                        |
 | IDENTIFICADOR DE DISPOSITIVO \_ NO VÁLIDO \_ DE MCIERR \_      | Identificador de dispositivo no válido. Use el identificador que se le dio al dispositivo cuando se abrió el dispositivo.                                                                               |
-| NOMBRE DE DISPOSITIVO \_ NO VÁLIDO \_ DE MCIERR \_    | MCI no abre ni reconoce el dispositivo especificado.                                                                                                     |
+| MCIERR \_ INVALID \_ DEVICE \_ NAME    | MCI no abre ni reconoce el dispositivo especificado.                                                                                                     |
 | ARCHIVO MCIERR \_ NO \_ VÁLIDO            | El archivo especificado no se puede reproducir en el dispositivo MCI especificado. El archivo puede estar dañado o puede usar un formato de archivo incorrecto.                               |
 | FALTA EL PARÁMETRO MCIERR \_ \_       | El comando especificado requiere un parámetro , que debe proporcionar.                                                                                          |
 | MCIERR \_ MULTIPLE                 | Se produjeron errores en más de un dispositivo. Especifique cada comando y dispositivo por separado para identificar los dispositivos que provocan los errores.                             |

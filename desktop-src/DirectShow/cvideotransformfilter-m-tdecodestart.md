@@ -1,7 +1,7 @@
 ---
-description: Período de tiempo que se tardó en descodificar el ejemplo más reciente, en milisegundos.
+description: Tiempo que tardó en descodificar la muestra más reciente, en milisegundos.
 ms.assetid: e9cac411-f327-4750-9129-0bc2885eedd7
-title: 'Miembro CVideoTransformFilter:: m_tDecodeStart (Vtrans. h)'
+title: CVideoTransformFilter::m_tDecodeStart miembro (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3948b37c2efeb7d21e664da354571c2bdf9ab298
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a162103a8a67cfcb4589c7f030db8ca7d93a89ee6fb7f12f1c0e2a40a4841ef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821602"
 ---
-# <a name="cvideotransformfilterm_tdecodestart-member"></a>Miembro tDecodeStart CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_tdecodestart-member"></a>Miembro CVideoTransformFilter::m \_ tDecodeStart
 
-Período de tiempo que se tardó en descodificar el ejemplo más reciente, en milisegundos.
+Tiempo que tardó en descodificar la muestra más reciente, en milisegundos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ int m_tDecodeStart;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Vtrans. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Vtrans.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CVideoTransformFilter**](cvideotransformfilter.md)
+[**CVideoTransformFilter (clase)**](cvideotransformfilter.md)
 </dt> </dl>
 
  

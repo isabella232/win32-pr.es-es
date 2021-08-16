@@ -35,7 +35,7 @@ Tenga en cuenta el siguiente código de ejemplo.
 
 
 
-En este caso, si Windows Internet Explorer versión del explorador es al menos 5.5, el párrafo correspondiente se muestra en la página web. Aunque la primera condición de este ejemplo ilustra la función de los comentarios condicionales, estos comentarios no se usan normalmente para mostrar marcado como la primera condición. En su lugar, los comentarios condicionales restantes del ejemplo anterior son más comunes. En estos comentarios restantes, los comentarios condicionales usan una hoja de estilos diferente para cada versión diferente del explorador.
+En este caso, si la Windows Internet Explorer del explorador es al menos 5.5, el párrafo correspondiente se muestra en la página web. Aunque la primera condición de este ejemplo ilustra la función de los comentarios condicionales, estos comentarios no se usan normalmente para mostrar marcado como la primera condición. En su lugar, los comentarios condicionales restantes del ejemplo anterior son más comunes. En estos comentarios restantes, los comentarios condicionales usan una hoja de estilos diferente para cada versión diferente del explorador.
 
 En el ejemplo de código anterior también se comprueba la igualdad de Microsoft Internet Explorer 6 y Windows Internet Explorer 7. Pero para Windows Internet Explorer 8, en el ejemplo se usa el operador gte (mayor o igual que). Este operador ayuda a probar el futuro del ejemplo para que se use la versión más compatible con los estándares de la hoja de estilos cuando se libera una nueva versión del explorador (en lugar de usar una hoja de estilos incorrecta o ninguna hoja de estilos). Las aplicaciones existentes a menudo no tienen en cuenta una versión de Internet Explorer pasados 7 (o la versión más reciente de Internet Explorer para la que se ha creado el sitio). Para obtener más información sobre los vectores de versión, vea [Vectores de versión](/previous-versions/cc817577(v=msdn.10)) en MSDN Library.
 
@@ -43,7 +43,7 @@ En el ejemplo de código anterior también se comprueba la igualdad de Microsoft
 
 <dl> <dt>
 
-[Corrección de problemas de compatibilidad en aplicaciones web mediante Vista de compatibilidad](remediating-web-applications-and-add-ons.md)
+[Corregir problemas de compatibilidad en aplicaciones web mediante Vista de compatibilidad](remediating-web-applications-and-add-ons.md)
 </dt> </dl>
 
  

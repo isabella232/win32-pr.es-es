@@ -15,7 +15,7 @@ ms.locfileid: "118328621"
 
 Los estándares web proporcionan una línea de base común de tecnologías que permiten a los usuarios seleccionar un explorador web sin preocuparse por el uso de los sitios web que desean y que permiten a los diseñadores y desarrolladores web crear un único sitio web que todos puedan usar.
 
-Los estándares del explorador web evolucionan constantemente y los exploradores web se actualizan continuamente para adoptar estos estándares. Por lo tanto, los profesionales y desarrolladores de TI deben asegurarse de que las aplicaciones web sean compatibles con los exploradores y estándares web actuales y emergentes. Este mantenimiento garantiza que las aplicaciones web y los sitios son compatibles con las nuevas versiones de los exploradores y ayuda a evitar muchos problemas de compatibilidad que pueden producirse.
+Los estándares del explorador web evolucionan constantemente y los exploradores web se actualizan continuamente para adoptar estos estándares. Por lo tanto, los profesionales y desarrolladores de TI deben asegurarse de que las aplicaciones web sean compatibles con los exploradores y estándares web actuales y emergentes. Este mantenimiento garantiza que las aplicaciones web y los sitios sean compatibles con las nuevas versiones de los exploradores y ayuda a evitar muchos problemas de compatibilidad que pueden producirse.
 
 ## <a name="related-topics"></a>Temas relacionados
 

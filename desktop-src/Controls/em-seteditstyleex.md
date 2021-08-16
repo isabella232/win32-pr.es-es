@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETEDITSTYLEEX (RichEdit. h)
-description: Establece las marcas de estilo de edición extendida actual.
+title: EM_SETEDITSTYLEEX mensaje (Richedit.h)
+description: Establece las marcas de estilo de edición extendida actuales.
 ms.assetid: C5CECC7C-6418-4A72-9F0B-6F55BE89E302
 keywords:
-- EM_SETEDITSTYLEEX controles de mensajes de Windows
+- EM_SETEDITSTYLEEX controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72fe7a1ff420048f620d69196360678e9718a510
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b96a353b62dc3a31affd9e827ee803c481bcd806eaad9f8a5d0e9dd35388cf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831226"
 ---
-# <a name="em_seteditstyleex-message"></a>\_Mensaje SETEDITSTYLEEX em
+# <a name="em_seteditstyleex-message"></a>Mensaje \_ EM SETEDITSTYLEEX
 
-Establece las marcas de estilo de edición extendida actual.
+Establece las marcas de estilo de edición extendida actuales.
 
 
 ```C++
@@ -39,38 +39,38 @@ Establece las marcas de estilo de edición extendida actual.
 *wParam* 
 </dt> <dd>
 
-Especifica una o más marcas de estilo de edición extendida. Para obtener una lista de los valores posibles, vea [**em \_ GETEDITSTYLEEX**](/windows/desktop/Controls/em-geteditstyleex).
+Especifica una o varias marcas de estilo de edición extendidas. Para obtener una lista de valores posibles, [**vea EM \_ GETEDITSTYLEEX**](/windows/desktop/Controls/em-geteditstyleex).
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Máscara formada por uno o varios de los valores de *wParam* . Solo se establecerán o se borrarán los valores especificados en esta máscara. Esto permite establecer o borrar una sola marca sin leer los Estados actuales de la marca.
+Máscara que consta de uno o varios de los *valores wParam.* Solo se establecerán o borrarán los valores especificados en esta máscara. Esto permite establecer o borrar una sola marca sin leer los estados de marca actuales.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el estado de las marcas de estilo de edición extendidas después de que la edición enriquecida haya intentado implementar los cambios de estilo de edición. Las marcas de estilo de edición son un conjunto de marcas que indican el estilo de edición actual.
+El valor devuelto es el estado de las marcas de estilo de edición extendidas después de que la edición enriquezca haya intentado implementar los cambios de estilo de edición. Las marcas de estilo de edición son un conjunto de marcas que indican el estilo de edición actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_GETEDITSTYLEEX em**](em-geteditstyleex.md)
+[**EM \_ GETEDITSTYLEEX**](em-geteditstyleex.md)
 </dt> </dl>
 
  
