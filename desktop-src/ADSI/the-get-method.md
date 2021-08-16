@@ -1,25 +1,25 @@
 ---
-title: El método get
-description: El método get de IADs se utiliza para recuperar los atributos con nombre individuales de un objeto de directorio.
+title: Método Get
+description: El método Get de los IAD se usa para recuperar atributos con nombre individuales de un objeto de directorio.
 ms.assetid: e3754663-fe31-46f3-9dc1-a9c96ed53fde
 ms.tgt_platform: multiple
 keywords:
-- Obtener ADSI mediante IADs Get
-- ADSI ADSI, usar, usar el método get de IADs
+- Obtener ADSI mediante IAD Get
+- ADSI ADSI , mediante, mediante el método Get de IADs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11590fda2cfd207315453323fa3d0999f298103d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 386c3fe6e50a9f7357ec161b1e6bd8731cf8d0a74eed4b4a765adc3315c1045d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105656142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838635"
 ---
-# <a name="the-get-method"></a>El método get
+# <a name="the-get-method"></a>Método Get
 
-El método [**IADs:: get**](/windows/desktop/api/Iads/nf-iads-iads-get) se utiliza para recuperar los atributos con nombre individuales de un objeto de directorio.
+El [**método IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get) se usa para recuperar atributos con nombre individuales de un objeto de directorio.
 
-En el ejemplo de código siguiente se usa el método [**IADs:: get**](/windows/desktop/api/Iads/nf-iads-iads-get) para recuperar un atributo con nombre de un objeto.
+En el ejemplo de código siguiente se usa [**el método IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get) para recuperar un atributo con nombre de un objeto .
 
 
 ```VB
@@ -43,9 +43,9 @@ Cleanup:
 
 
 
-En los lenguajes de automatización, también se puede tener acceso a los atributos con nombre directamente mediante la notación de puntos. Por ejemplo, **objeto. Get ("distinguishedName")** es idéntico a **Object. distinguishedName**.
+En los lenguajes de Automation, también se puede acceder directamente a los atributos con nombre mediante la notación de puntos. Por ejemplo, **object. Get("distinguishedName") es** idéntico a **object.distinguishedName.**
 
-El siguiente ejemplo de código es idéntico al ejemplo anterior, salvo que se tiene acceso al atributo **distinguishedName** mediante la notación de puntos.
+El ejemplo de código siguiente es idéntico al ejemplo anterior, salvo que se tiene acceso al atributo **distinguishedName** mediante la notación de puntos.
 
 
 ```VB
@@ -69,11 +69,11 @@ Cleanup:
 
 
 
-Si no se establece un valor en el objeto, el método [**IADs:: get**](/windows/desktop/api/Iads/nf-iads-iads-get) devolverá el error "propiedad no encontrada en la memoria caché".
+Si no se establece un valor en el objeto , el método [**IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get) devolverá el error "Property not found in cache".
 
- 
+ 
 
- 
+ 
 
 
 

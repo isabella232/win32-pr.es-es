@@ -17,12 +17,12 @@ El visor de objetos OLE-COM, Oleview.exe, es una aplicación suministrada con Vi
 
 Para ver la biblioteca de tipos de un objeto COM:
 
-1.  En el menú Archivo del visor **de** objetos, haga clic **en Ver TipoLib**. Aparece **un cuadro de** diálogo Abrir.
+1.  En el menú Archivo del visor **de** objetos, haga clic **en Ver tipoLib**. Aparece **un cuadro de** diálogo Abrir.
 2.  Especifique el archivo de biblioteca de tipos que desea abrir y haga clic en **Aceptar.**
 
 El visor de objetos muestra las interfaces del objeto.
 
-Para obtener más información, vea Using the OLE/COM Object Viewer (Uso del Visor de objetos [OLE/COM)](/previous-versions/d0kh9f4c(v=vs.140)) Visual C++ documentación.
+Para obtener más información, vea Using the OLE/COM Object Viewer (Uso del Visor de objetos [OLE/COM)](/previous-versions/d0kh9f4c(v=vs.140)) en Visual C++ documentación.
 
 ## <a name="related-topics"></a>Temas relacionados
 

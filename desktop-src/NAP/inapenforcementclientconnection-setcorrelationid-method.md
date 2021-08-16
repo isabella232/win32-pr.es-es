@@ -1,11 +1,11 @@
 ---
 title: Método INapEnforcementClientConnection SetCorrelationId (NapEnforcementClient.h)
-description: Establece el identificador que se usa para poner en correlación soh-requests y soH-responses.
+description: Establece el identificador que se usa para poner en correlación soH-requests y SoH-responses.
 ms.assetid: 8f9d5bde-95b1-4566-84ee-31c6ed5e8986
 keywords:
 - Método NAP de SetCorrelationId
-- Método NAP de SetCorrelationId, interfaz INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP , SetCorrelationId (método)
+- Método SetCorrelationId NAP , interfaz INapEnforcementClientConnection
+- Interfaz INapEnforcementClientConnection NAP, método SetCorrelationId
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ ms.locfileid: "118368265"
 
  
 
-El **método INapEnforcementClientConnection::SetCorrelationId** establece el identificador que se usa para correlacionar soH-requests y soH-responses.
+El **método INapEnforcementClientConnection::SetCorrelationId** establece el identificador usado para correlacionar soH-requests y SoH-responses.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,7 +76,7 @@ NapAgent establece el identificador de correlación y se basa en el identificado
 
 Este identificador se usa para correlacionar solicitudes y respuestas, es decir, describe de forma única un intercambio de SoH y siempre contiene el identificador del conjunto de SoH más reciente en el objeto de conexión.
 
-Cuando se recibe SoH-Response, NapAgent garantiza primero la coincidencia de los IDs; Si no es así, se devuelve un error y el ejecutor debe quitar el paquete. Vea [**INapEnforcementClientBinding::P rocessSoHResponse**](inapenforcementclientbinding-processsohresponse-method.md) para obtener más detalles.
+Cuando se recibe SoH-Response, NapAgent garantiza primero la coincidencia de los IDs. Si no es así, se devuelve un error y el ejecutor debe quitar el paquete. Vea [**INapEnforcementClientBinding::P rocessSoHResponse**](inapenforcementclientbinding-processsohresponse-method.md) para obtener más detalles.
 
 ## <a name="requirements"></a>Requisitos
 

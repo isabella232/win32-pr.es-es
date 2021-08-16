@@ -18,7 +18,7 @@ ms.locfileid: "118196511"
 ---
 # <a name="to-find-audio-formats"></a>Para buscar formatos de audio
 
-En el código de ejemplo siguiente se muestra cómo buscar un formato de audio que coincida con los criterios especificados. La **función FindAudioFormat** acepta un puntero a una estructura [**DEFORMATEX**](/previous-versions/windows/desktop/legacy/dd757720(v=vs.85)) que contiene el número de canales, bits por muestra y frecuencia de muestreo que desea usar. La función busca el formato que coincide con esos requisitos y tiene la velocidad de bits más alta que no supera el *parámetro dwMaxRate.* Si establece *fAVSync en* **TRUE,** la función solo valida los formatos que se pueden sincronizar con vídeo. Para simplificar, esta función solo funciona con formatos CBR de 1 paso.
+En el código de ejemplo siguiente se muestra cómo buscar un formato de audio que coincida con los criterios especificados. La **función FindAudioFormat** acepta un puntero a una estructura [**DEFORMATEX**](/previous-versions/windows/desktop/legacy/dd757720(v=vs.85)) que contiene el número de canales, bits por muestra y velocidad de muestreo que desea usar. La función busca el formato que coincida con esos requisitos y tenga la velocidad de bits más alta que no supere el *parámetro dwMaxRate.* Si establece *fAVSync en* **TRUE,** la función solo valida los formatos que se pueden sincronizar con vídeo. Para simplificar, esta función solo funciona con formatos CBR de 1 paso.
 
 
 ```C++

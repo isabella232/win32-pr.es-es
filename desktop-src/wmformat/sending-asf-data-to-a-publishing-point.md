@@ -21,7 +21,7 @@ ms.locfileid: "118197544"
 ---
 # <a name="sending-asf-data-to-a-publishing-point"></a>Envío de datos de ASF a un punto de publicación
 
-Puede usar el SDK Windows Media Format para insertar datos de ASF en un punto de publicación en un Windows Multimedia. A continuación, el servidor difunde los datos desde ese punto de publicación. Este escenario es útil si va a capturar o volver a codificar contenido en un equipo y desea distribuir el contenido desde otro equipo (o varios equipos). También es útil si necesita mover contenido de un equipo dentro de un firewall a un servidor multimedia de Windows fuera del firewall, ya que la distribución de inserción usa el protocolo HTTP.
+Puede usar el SDK Windows Media Format para insertar datos de ASF en un punto de publicación en un servidor Windows Media. A continuación, el servidor difunde los datos desde ese punto de publicación. Este escenario es útil si va a capturar o volver a codificar contenido en un equipo y desea distribuir el contenido desde otro equipo (o varios equipos). También es útil si necesita mover contenido de un equipo dentro de un firewall a un servidor multimedia de Windows fuera del firewall, ya que la distribución de inserción usa el protocolo HTTP.
 
 > [!Note]  
 > Un *punto de publicación* actúa básicamente como un redirector. El cliente especifica el punto de publicación en la dirección URL (por ejemplo, mms://MyServer/MyPublishingPoint) y el servidor lo traduce en una solicitud de contenido.

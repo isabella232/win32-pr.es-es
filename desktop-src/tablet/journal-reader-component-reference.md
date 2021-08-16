@@ -24,7 +24,7 @@ Esta sección contiene documentación de referencia de las clases públicas en l
 
 <dl> <dt>
 
-[Usar el componente de lector de diario](using-the-journal-reader-component.md)
+[Uso del componente de lector de diario](using-the-journal-reader-component.md)
 </dt> </dl>
 
  

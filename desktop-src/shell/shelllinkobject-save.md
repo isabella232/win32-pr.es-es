@@ -39,7 +39,7 @@ iRetVal = ShellLinkObject.Save(
 
 <dl> <dt>
 
-*sFile* \[ en, opcional\]
+*sFile* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
@@ -172,7 +172,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |

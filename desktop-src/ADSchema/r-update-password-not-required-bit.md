@@ -1,10 +1,10 @@
 ---
-title: Update-password-Not-Required-bit extendido derecho
-description: Derecho de acceso de control extendido que permite a un usuario habilitar o deshabilitar la contraseña \ 0034; no necesaria \ 0034; configuración para objetos de usuario.
+title: Derecho extendido update-password-not-required-bit
+description: Derecho de acceso de control extendido que permite a un usuario habilitar o deshabilitar \ 0034;password not required \ 0034; configuración de los objetos de usuario.
 ms.assetid: f633098d-f0af-43e0-b7bd-5cf53045f86e
 ms.tgt_platform: multiple
 keywords:
-- 'Update-password-Not-Required: esquema de AD derecho extendido de bit'
+- Update-Password-Not-Required-Bit extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e1e0d9b2f5bd28411f7aed773e899668071cc6b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 356b2003f82ab5aa831b1d3d5eae891c984071dae96977fba5e657902a1ea6f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835931"
 ---
-# <a name="update-password-not-required-bit-extended-right"></a>Update-password-Not-Required-bit extendido derecho
+# <a name="update-password-not-required-bit-extended-right"></a>Derecho extendido update-password-not-required-bit
 
-Derecho de acceso de control extendido que permite a un usuario habilitar o deshabilitar la configuración de "contraseña no necesaria" para los objetos de usuario.
+Derecho de acceso de control extendido que permite a un usuario habilitar o deshabilitar la configuración "Contraseña no necesaria" para los objetos de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Update-password-Not-Required-bit     |
-| Display-Name | Bit de actualización de contraseña no necesaria     |
+| CN           | Update-Password-Not-Required-Bit     |
+| Display-Name | Bit no necesario para actualizar la contraseña     |
 | Rights-GUID  | 280f369c-67c7-438e-ae98-1d46f3c6f541 |
 
 
@@ -46,10 +46,10 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 68                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 
@@ -57,10 +57,10 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 68                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 
@@ -68,10 +68,10 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 68                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 
@@ -79,10 +79,10 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 68                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 
@@ -90,10 +90,10 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 68                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 

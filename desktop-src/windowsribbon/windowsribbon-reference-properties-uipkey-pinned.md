@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118201490"
 ---
-# <a name="ui_pkey_pinned"></a>UI \_ PKEY \_ anclado
+# <a name="ui_pkey_pinned"></a>UI \_ PKEY \_ Pinned
 
 Identifica la propiedad \_ anclada PKEY de la interfaz \_ de usuario.
 
@@ -29,7 +29,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentarios
 
-Una aplicación usa ui PKEY Pinned para consultar si un elemento del menú de la aplicación \_ \_ está "anclado" [](windowsribbon-controls-applicationmenu.md) o es persistente en todas las instancias de la aplicación. Por ejemplo, un elemento de la lista de elementos usados más recientemente (MRU) es accesible y no coloca la lista de elementos de MRU hasta que se "desanclar".
+Una aplicación usa ui PKEY Pinned para consultar si un elemento del menú de la aplicación \_ \_ está "anclado" [](windowsribbon-controls-applicationmenu.md) o es persistente en todas las instancias de la aplicación. Por ejemplo, un elemento de la lista de elementos usados más recientemente (MRU) es accesible y no deja la lista de elementos de MRU hasta que se "desanclar".
 
 ## <a name="related-topics"></a>Temas relacionados
 

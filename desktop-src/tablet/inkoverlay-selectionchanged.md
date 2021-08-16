@@ -36,7 +36,7 @@ Este evento no devuelve un valor.
 
 No hay datos de eventos.
 
-Este método de evento se define en las interfaces de solo envío \_ (dispinterfaces) de IInkOverlayEvents e IInkPictureEvents con un identificador de \_ DISPID \_ IOESelectionChanged.
+Este método de evento se define en las interfaces de solo distribución \_ (dispinterfaces) de IInkOverlayEvents e \_ IInkPictureEvents con un identificador de DISPID \_ IOESelectionChanged.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ Este método de evento se define en las interfaces de solo envío \_ (dispinterf
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
 | Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

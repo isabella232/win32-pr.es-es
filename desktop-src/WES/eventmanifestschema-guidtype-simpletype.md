@@ -3,7 +3,7 @@ title: Tipo simple GUIDType (esquema EventManifest)
 description: Define un tipo de identificador único global, en formato registro. | Tipo simple GUIDType (esquema EventManifest)
 ms.assetid: c35fa54b-5a2e-46de-a1c7-fc408b00ee68
 keywords:
-- Tipo simple EVENTLog de GUIDType
+- Tipo simple EventLog de GUIDType
 topic_type:
 - apiref
 api_name:
@@ -38,7 +38,7 @@ Define un tipo de identificador único global, en formato registro.
 
 ## <a name="patterns"></a>Patrones
 
-El tipo simple **GUIDType** es una cadena restringida por el siguiente patrón:
+El tipo simple **GUIDType** es una cadena que está restringida por el siguiente patrón:
 
 -   `\{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\}`
 

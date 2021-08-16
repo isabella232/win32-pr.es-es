@@ -1,5 +1,5 @@
 ---
-description: Se produce cuando el usuario suelta una clave mientras el control InkEdit tiene el foco.
+description: Se produce cuando el usuario libera una clave mientras el control InkEdit tiene el foco.
 ms.assetid: 973d99f2-df09-4315-aaab-72877272100b
 title: Evento InkEdit.KeyUp (Inked.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118220787"
 ---
 # <a name="inkeditkeyup-event"></a>Evento InkEdit.KeyUp
 
-Se produce cuando el usuario suelta una clave mientras el control [InkEdit](inkedit-control-reference.md) tiene el foco.
+Se produce cuando el usuario libera una clave mientras el control [InkEdit](inkedit-control-reference.md) tiene el foco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ Código de clave virtual de la tecla presionada por el usuario.
 *MayúsKey* 
 </dt> <dd>
 
-Miembro de la [**enumeración InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) que indica qué teclas modificadoras están deprimidas en el momento del evento.
+Miembro de la [**enumeración InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) que indica qué teclas modificadoras se deprimen en el momento del evento.
 
 
 
 | Valor                                                                                                                                                                                     | Significado                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**Desplazamiento \_ IKM**</dt> </dl>             | Especifica que la tecla MAYÚS se usó como modificador. <br/> |
+| <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**Desplazamiento \_ de IKM**</dt> </dl>             | Especifica que la tecla MAYÚS se usó como modificador. <br/> |
 | <span id="IKM_Control_"></span><span id="ikm_control_"></span><span id="IKM_CONTROL_"></span><dl> <dt>**IKM \_ Control**</dt> </dl> | Especifica que la tecla CTRL se usó como modificador. <br/>  |
 | <span id="IKM_Alt_"></span><span id="ikm_alt_"></span><span id="IKM_ALT_"></span><dl> <dt>**IKM \_ Alt**</dt> </dl>                 | Especifica que la tecla ALT se usó como modificador. <br/>   |
 
@@ -71,9 +71,9 @@ Este método de evento se define en la **\_ interfaz IInkEditEvents.** La **\_ i
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>Inked.h (también requiere \_ i.c con entrada manuscrita)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Inked.h (también requiere \_ i.c con entrada de lápiz)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 
@@ -88,10 +88,10 @@ Este método de evento se define en la **\_ interfaz IInkEditEvents.** La **\_ i
 [**InkShiftKeyModifierFlags (Enumeración)**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags)
 </dt> <dt>
 
-[**Control InkEdit del \[ evento KeyDown\]**](inkedit-keydown.md)
+[**KeyDown Event \[ InkEdit Control\]**](inkedit-keydown.md)
 </dt> <dt>
 
-[**Control InkEdit del \[ evento KeyPress\]**](inkedit-keypress.md)
+[**KeyPress Event \[ InkEdit Control\]**](inkedit-keypress.md)
 </dt> </dl>
 
  

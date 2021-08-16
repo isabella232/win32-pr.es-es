@@ -1,5 +1,5 @@
 ---
-description: La variable \_ miembro m Dlg contiene un identificador para la ventana de diálogo. Esta variable miembro se inicializa cuando la ventana de diálogo procesa el mensaje WM \_ INITDIALOG.
+description: La variable \_ miembro m Dlg contiene un identificador para la ventana de diálogo. Esta variable miembro se inicializa cuando la ventana de diálogo procesa el mensaje \_ WM INITDIALOG.
 ms.assetid: e10ea37e-064a-4832-abda-57b4fad23168
 title: CBasePropertyPage::m_Dlg miembro (Cprop.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "117823138"
 ---
 # <a name="cbasepropertypagem_dlg-member"></a>Miembro Dlg CBasePropertyPage::m \_
 
-La `m_Dlg` variable miembro contiene un identificador para la ventana de diálogo. Esta variable miembro se inicializa cuando la ventana de diálogo procesa el mensaje WM \_ INITDIALOG.
+La `m_Dlg` variable miembro contiene un identificador para la ventana de diálogo. Esta variable miembro se inicializa cuando la ventana de diálogo procesa el mensaje \_ WM INITDIALOG.
 
 ## <a name="syntax"></a>Sintaxis
 

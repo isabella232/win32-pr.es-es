@@ -62,7 +62,7 @@ Este método puede devolver uno de estos valores.
 | <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                                | La operación se realizó correctamente.<br/>       |
 | <dl> <dt>**E \_ Puntero**</dt> <dt>0x80004003</dt> </dl>                  | El parámetro es **NULL.**<br/>          |
 | <dl> <dt>**Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING**</dt> <dt>0xA0040206</dt> </dl>     | La máquina virtual no se está ejecutando.<br/> |
-| <dl> <dt>**Máquina virtual \_ E \_ ERROR \_ DE DESASOCIÓN \_**</dt> <dt>USB 0xA00400927</dt> </dl> | Error en la operación de desasoción.<br/>        |
+| <dl> <dt>**Máquina virtual \_ E \_ ERROR \_ DE DESASOCUCIÓN \_**</dt> <dt>USB 0xA00400927</dt> </dl> | Error en la operación de desasoción.<br/>        |
 | <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>          | Se produjo un error inesperado.<br/>   |
 
 

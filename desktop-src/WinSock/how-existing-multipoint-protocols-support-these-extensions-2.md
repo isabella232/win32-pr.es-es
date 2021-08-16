@@ -1,6 +1,6 @@
 ---
 title: Compatibilidad de los protocolos multipunto con estas extensiones
-description: En los temas siguientes se indica cómo se puede acceder a las funcionalidades de multipunto y multipunto de multipunto y multidifusión IP a través de las funciones Windows Sockets 2 multipunto.
+description: En los temas siguientes se indica cómo se puede acceder a las funcionalidades de multipunto de multipunto y multipunto de multidifusión IP y ATM a través de las funciones Windows Sockets 2 multipunto.
 ms.assetid: f6f1dcfa-c316-455b-a993-e09f02c2eedb
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118322195"
 ---
 # <a name="how-multipoint-protocols-support-these-extensions"></a>Compatibilidad de los protocolos multipunto con estas extensiones
 
-En los temas siguientes se indica cómo se puede acceder a las funcionalidades de multipunto y multipunto de multipunto y multidifusión IP a través de las funciones Windows Sockets 2 multipunto. Elegimos estos dos ejemplos porque son populares y bien comprendidos.
+En los temas siguientes se indica cómo se puede acceder a las funcionalidades de multipunto de multipunto y multipunto de multidifusión IP y ATM a través de las funciones Windows Sockets 2 multipunto. Elegimos estos dos ejemplos porque son populares y bien comprendidos.
 
 -   [Multidifusión IP](ip-multicast-2.md)
 -   [Punto de cajero automático a multipunto](atm-point-to-multipoint-2.md)

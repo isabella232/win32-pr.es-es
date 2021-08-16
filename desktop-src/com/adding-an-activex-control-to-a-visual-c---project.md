@@ -1,6 +1,6 @@
 ---
 title: Agregar un control ActiveX a un Visual C++ Project
-description: El procedimiento siguiente agrega archivos de encabezado y clase de distribución para un control ActiveX a un Visual C++ proyecto.
+description: El procedimiento siguiente agrega archivos de clase de distribución y de encabezado para un control ActiveX a un Visual C++ proyecto.
 ms.assetid: f342d6af-2835-446f-8628-8b1008a2e613
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,11 +13,11 @@ ms.locfileid: "118311349"
 ---
 # <a name="adding-an-activex-control-to-a-visual-c-project"></a>Agregar un control ActiveX a un Visual C++ Project
 
-El procedimiento siguiente agrega archivos de encabezado y clase de distribución para un control ActiveX a un Visual C++ proyecto.
+El procedimiento siguiente agrega archivos de clase de distribución y de encabezado para un control ActiveX a un Visual C++ proyecto.
 
 **Para agregar un control ActiveX a un Visual C++ Project**
 
-1.  En el **menú Project,** haga clic **en Agregar a Project**. Aparece un menú contextual.
+1.  En el **menú Project,** haga clic **en Agregar para Project**. Aparece un menú contextual.
 2.  Haga clic **en Componentes y controles**. Aparece **el cuadro de diálogo Galería de** componentes y controles .
 3.  Haga clic en el componente que desea agregar al proyecto. Visual C++ muestra un cuadro de diálogo desde el que puede seleccionar un subconjunto de las clases del componente para agregar al proyecto.
 4.  Haga clic para activar las casillas de las clases que desea agregar y haga clic en **Aceptar.**

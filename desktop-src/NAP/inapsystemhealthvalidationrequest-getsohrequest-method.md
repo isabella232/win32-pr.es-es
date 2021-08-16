@@ -3,9 +3,9 @@ title: Método INapSystemHealthValidationRequest GetSoHRequest (NapSystemHealthV
 description: Permite a los validadores de estado del sistema (SHV) recuperar y validar la información de SoHRequest enviada por sus homólogos del Agente de mantenimiento del sistema (SHA) en el cliente.
 ms.assetid: e06e07c6-7305-4171-b94e-19c360e94c67
 keywords:
-- Método NAP de GetSoHRequest
+- Nap del método GetSoHRequest
 - Método NAP de GetSoHRequest, interfaz INapSystemHealthValidationRequest
-- Interfaz NAP de INapSystemHealthValidationRequest, método GetSoHRequest
+- INapSystemHealthValidationRequest interface NAP , Método GetSoHRequest
 topic_type:
 - apiref
 api_name:
@@ -23,14 +23,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118367733"
 ---
-# <a name="inapsystemhealthvalidationrequestgetsohrequest-method"></a>INapSystemHealthValidationRequest::GetSoHRequest (método)
+# <a name="inapsystemhealthvalidationrequestgetsohrequest-method"></a>Método INapSystemHealthValidationRequest::GetSoHRequest
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapSystemHealthValidationRequest::GetSoHRequest** permite a los validadores de estado del sistema (SHV) recuperar y validar la información [**de SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) enviada por sus homólogos de System Health Agent (SHA) en el cliente.
+El método **INapSystemHealthValidationRequest::GetSoHRequest** permite a los validadores de estado del sistema (SHV) recuperar y validar la información de [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) enviada por sus homólogos del Agente de mantenimiento del sistema (SHA) en el cliente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Puntero a un puntero a una [**estructura SoHRequest.**](/windows/win32/api/napty
 *napSystemGenerated* \[ out\]
 </dt> <dd>
 
-Valor **BOOL que** es **TRUE si** NapAgent creó el SoH en nombre de SHA y **FALSE** en caso contrario. Se usa principalmente para indicar un error sha en la SHV.
+Un **VALOR BOOL** que es **TRUE** si napAgent creó el SoH en nombre de SHA y **FALSE** en caso contrario. Se usa principalmente para indicar un error sha en la SHV.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Si el *parámetro napSystemGenerated* es **TRUE,** el formato *de SoHRequest* es
 
 -   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientComponent**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
--   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **<sha-failure-error-error-code>**](nap-error-constants.md)
+-   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **<sha-failure-error-code>**](nap-error-constants.md)
 
 ## <a name="requirements"></a>Requisitos
 

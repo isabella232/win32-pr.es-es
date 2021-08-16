@@ -15,21 +15,21 @@ ms.locfileid: "118319224"
 ---
 # <a name="e-wmi"></a>E (WMI)
 
-[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) E [F](gloss-f.md) G [H](gloss-h.md) [I](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) M [N](gloss-m.md) [O](gloss-n.md) [](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z
+[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) E [F](gloss-f.md) G [H I](gloss-h.md) [](gloss-i.md) J [K](gloss-k.md) [L M](gloss-l.md) [N](gloss-m.md) [O](gloss-n.md) [](gloss-o.md) [P P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z
 
 <dl> <dt>
 
 <span id="wmi.gloss_event_class"></span><span id="WMI.GLOSS_EVENT_CLASS"></span>**clase de eventos**
 </dt> <dd>
 
-Clase WMI a la *que los consumidores de* eventos pueden suscribirse mediante una consulta de *eventos*. La clase notifica un tipo específico de repetición. Por ejemplo, la [**clase \_ ProcessStopTrace de Win32**](/previous-versions/windows/desktop/krnlprov/win32-processstoptrace) informa de que se ha detenido un proceso específico.
+Clase WMI a la que *los consumidores de* eventos pueden suscribirse mediante una *consulta de eventos*. La clase informa de un tipo específico de repetición. Por ejemplo, la [**clase \_ ProcessStopTrace de Win32**](/previous-versions/windows/desktop/krnlprov/win32-processstoptrace) informa de que se ha detenido un proceso específico.
 
 </dd> <dt>
 
 <span id="wmi.gloss_event_consumer"></span><span id="WMI.GLOSS_EVENT_CONSUMER"></span>**consumidor de eventos**
 </dt> <dd>
 
-Destinatario de las notificaciones que informan de la aparición de un evento. Un consumidor de eventos es [*temporal o*](gloss-t.md) [*permanente.*](gloss-p.md)
+Destinatario de las notificaciones que informan de la aparición de un evento. Un consumidor de eventos es [*temporal*](gloss-t.md) o [*permanente.*](gloss-p.md)
 
 </dd> <dt>
 
@@ -50,7 +50,7 @@ Instancia de la [**\_ \_ clase del sistema EventFilter**](--eventfilter.md) que 
 <span id="wmi.gloss_event_provider"></span><span id="WMI.GLOSS_EVENT_PROVIDER"></span>**proveedor de eventos**
 </dt> <dd>
 
-Proveedor WMI que supervisa un origen de eventos y notifica a WMI cuando se producen eventos. Un proveedor de eventos implementa las interfaces [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) [**e IWbemEventProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventprovider) y, a veces, [**IWbemEventProviderQuerySink**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventproviderquerysink).
+Un proveedor WMI que supervisa un origen de eventos y notifica a WMI cuándo se producen los eventos. Un proveedor de eventos implementa las interfaces [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) [**e IWbemEventProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventprovider) y, a veces, [**IWbemEventProviderQuerySink.**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventproviderquerysink)
 
 </dd> <dt>
 
@@ -64,14 +64,14 @@ Una [*lenguaje de consulta de WMI*](gloss-w.md) que los consumidores de eventos 
 <span id="wmi.gloss_extension_schema"></span><span id="WMI.GLOSS_EXTENSION_SCHEMA"></span>**esquema de extensión**
 </dt> <dd>
 
-La tercera capa del esquema [*CIM,*](gloss-c.md)que incluye extensiones específicas de la plataforma del esquema CIM, como Windows, UNIX y Exchange Server. Consulte también [*Common Model (Modelo común)*](gloss-c.md) y Core Model (Modelo principal).
+Tercera capa del esquema [*CIM,*](gloss-c.md)que incluye extensiones específicas de la plataforma del esquema CIM, como Windows, UNIX y Exchange Server. Consulte también [*modelo común y*](gloss-c.md) modelo principal.
 
 </dd> <dt>
 
 <span id="wmi.gloss_extrinsic_event"></span><span id="WMI.GLOSS_EXTRINSIC_EVENT"></span>**evento extrínsico**
 </dt> <dd>
 
-Notificación de eventos de un proveedor. La mayoría de los proveedores crean una instancia de una clase de eventos definida en los archivos MOF del proveedor. Un evento extrínsico hereda de [**\_ \_ ExtrinsicEvent**](--extrinsicevent.md). Por ejemplo, el proveedor [de registro de eventos](/previous-versions/windows/desktop/eventlogprov/event-log-provider) define la clase de eventos [**Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent). Vea también [*el evento intrínseco*](gloss-i.md).
+Notificación de eventos de un proveedor. La mayoría de los proveedores crean una instancia de una clase de eventos definida en los archivos MOF del proveedor. Un evento extrínsico hereda de [**\_ \_ ExtrinsicEvent**](--extrinsicevent.md). Por ejemplo, el [proveedor de registro de eventos](/previous-versions/windows/desktop/eventlogprov/event-log-provider) define la clase de eventos [**Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent). Vea también [*el evento intrínseco*](gloss-i.md).
 
 </dd> </dl>
 

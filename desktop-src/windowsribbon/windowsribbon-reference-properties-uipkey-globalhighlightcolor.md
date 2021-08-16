@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_GlobalHighlightColor
-description: Identifica la propiedad \_ Ui PKEY \_ GlobalHighlightColor.
+description: Identifica la propiedad \_ PKEY \_ GlobalHighlightColor de la interfaz de usuario.
 ms.assetid: 1e5e400b-8e4b-4d25-9038-484138755b2c
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118201591"
 ---
 # <a name="ui_pkey_globalhighlightcolor"></a>UI \_ PKEY \_ GlobalHighlightColor
 
-Identifica la propiedad \_ Ui PKEY \_ GlobalHighlightColor.
+Identifica la propiedad \_ PKEY \_ GlobalHighlightColor de la interfaz de usuario.
 
 ```
 propertyDescription
@@ -29,7 +29,7 @@ propertyDescription
 
 Una \_ aplicación usa ui PKEY GlobalHighlightColor para consultar el color de resaltado \_ global de una cinta personalizada.
 
-**Introducido en Windows 8:** Ui \_ PKEY \_ GlobalHighlightColor no se puede establecer independientemente de la interfaz [de usuario \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md).
+**Introducido en Windows 8:** Ui \_ PKEY \_ GlobalHighlightColor no se puede establecer independientemente de la interfaz de usuario [ \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -38,7 +38,7 @@ Una \_ aplicación usa ui PKEY GlobalHighlightColor para consultar el color de r
 [Propiedades del marco](windowsribbon-reference-properties-framework.md)
 </dt> <dt>
 
-[Personalización de los colores de la cinta](ribbon-color.md)
+[Personalización de los colores de la cinta de opciones](ribbon-color.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Mensaje privado que pone la ventana en primer plano.
+description: Mensaje privado que lleva la ventana al primer plano.
 ms.assetid: 88b28888-d729-4cf3-8b9d-618dbe150926
 title: CBaseWindow::m_ShowStageMessage miembro (Winutil.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "117822365"
 ---
 # <a name="cbasewindowm_showstagemessage-member"></a>Miembro ShowStageMessage de CBaseWindow::m \_
 
-Mensaje privado que pone la ventana en primer plano.
+Mensaje privado que lleva la ventana al primer plano.
 
 ## <a name="syntax"></a>Sintaxis
 

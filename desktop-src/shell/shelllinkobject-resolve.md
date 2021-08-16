@@ -1,7 +1,7 @@
 ---
-description: Busca el destino de un vínculo de Shell, incluso si el destino se ha quitado o cambiado de nombre.
+description: Busca el destino de un vínculo de Shell, incluso si se ha movido o cambiado el nombre del destino.
 ms.assetid: 60e119be-8e45-4f63-a381-cad048de0765
-title: Método ShellLinkObject. Resolve (Shldisp. h)
+title: Método ShellLinkObject.Resolve (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b1cb0760f1ee19acfa10208711e73919fd084ecf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdff3fd1a606b8dbec35476988497dd14892692a42e6502343716264873c184d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857498"
 ---
-# <a name="shelllinkobjectresolve-method"></a>ShellLinkObject. Resolve (método)
+# <a name="shelllinkobjectresolve-method"></a>Método ShellLinkObject.Resolve
 
-Busca el destino de un vínculo de Shell, incluso si el destino se ha quitado o cambiado de nombre.
+Busca el destino de un vínculo de Shell, incluso si se ha movido o cambiado el nombre del destino.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ iRetVal = ShellLinkObject.Resolve(
 
 <dl> <dt>
 
-*fFlags* \[ de\]
+*fFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Integer**
+Tipo: **Entero**
 
 Marcas que especifican la acción que se va a realizar. Puede ser una combinación de los siguientes valores:
 
@@ -55,7 +55,7 @@ Marcas que especifican la acción que se va a realizar. Puede ser una combinaci�
 
 </dt> <dd>
 
-No muestre un cuadro de diálogo si no se puede resolver el vínculo. Cuando se establece esta marca, la palabra de orden superior de *fFlags* especifica una duración de tiempo de espera, en milisegundos. El método devuelve si no se puede resolver el vínculo dentro de la duración del tiempo de espera. Si la palabra de orden superior se establece en cero, la duración de tiempo de espera predeterminada es de 3000 milisegundos (3 segundos).
+No muestre un cuadro de diálogo si no se puede resolver el vínculo. Cuando se establece esta marca, la palabra de orden superior *de fFlags* especifica una duración de tiempo de espera, en milisegundos. El método devuelve si el vínculo no se puede resolver dentro de la duración del tiempo de espera. Si la palabra de orden superior se establece en cero, la duración del tiempo de espera se establece de forma predeterminada en 3000 milisegundos (3 segundos).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ No muestre un cuadro de diálogo si no se puede resolver el vínculo. Cuando se 
 
 </dt> <dd>
 
-Si el vínculo ha cambiado, actualice su ruta de acceso y la lista de identificadores.
+Si el vínculo ha cambiado, actualice su ruta de acceso y lista de identificadores.
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ No ejecute la heurística de búsqueda.
 
 </dt> <dd>
 
-No utilice el seguimiento de vínculos distribuidos.
+No use el seguimiento de vínculos distribuidos.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ No utilice el seguimiento de vínculos distribuidos.
 
 </dt> <dd>
 
-Deshabilite el seguimiento de vínculos distribuidos. De forma predeterminada, el seguimiento de vínculos distribuidos realiza un seguimiento de los medios extraíbles en varios dispositivos según el nombre del volumen. También utiliza la ruta de acceso UNC para realizar el seguimiento de los sistemas de archivos remotos cuya letra de unidad ha cambiado. Al establecer esta marca, se deshabilitan ambos tipos de seguimiento.
+Deshabilite el seguimiento de vínculos distribuidos. De forma predeterminada, el seguimiento de vínculos distribuidos realiza un seguimiento de los medios extraíbles en varios dispositivos según el nombre del volumen. También usa la ruta de acceso UNC para realizar un seguimiento de los sistemas de archivos remotos cuya letra de unidad ha cambiado. Al establecer esta marca se deshabilitan ambos tipos de seguimiento.
 
 </dd> <dt>
 
@@ -121,19 +121,19 @@ Deshabilite el seguimiento de vínculos distribuidos. De forma predeterminada, e
 
 </dt> <dd>
 
-Llame al Windows Installer.
+Llame al instalador Windows.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método es esencialmente idéntico en la funcionalidad que se va a [**resolver**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-resolve). Para obtener más información sobre la resolución de vínculos, vea la sección Comentarios de esa página.
+Este método es esencialmente idéntico en funcionalidad a [**Resolver**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-resolve). Para obtener más información sobre la resolución de vínculos, consulte la sección Comentarios de esa página.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -167,7 +167,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -239,13 +239,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo para aplicaciones de escritorio de Windows 2000 Professional con SP3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

@@ -70,7 +70,7 @@ Este parámetro puede ser uno de los valores siguientes.
 | Valor | Significado |
 |-------|---------|
 | **HC_ACTION** 0 | Los *parámetros wParam* *y lParam* contienen información sobre un mensaje del mouse. |
-| **HC_NOREMOVE** 3 | Los *parámetros wParam* *y lParam* contienen información sobre un mensaje del mouse y el mensaje del mouse no se ha quitado de la cola de mensajes. (Una aplicación denominada función **PeekMessage,** especificando el **PM_NOREMOVE** marca). |
+| **HC_NOREMOVE** 3 | Los *parámetros wParam* *y lParam* contienen información sobre un mensaje del mouse y el mensaje del mouse no se ha quitado de la cola de mensajes. (Una aplicación denominada función **PeekMessage,** que especifica la **PM_NOREMOVE** marca). |
 
 ### <a name="wparam-in"></a>wParam [in]
 

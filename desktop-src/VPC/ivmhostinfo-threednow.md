@@ -3,9 +3,9 @@ title: Propiedad ThreeDNow IVMHostInfo (VPCCOMInterfaces.h)
 description: Determina si el procesador admite el conjunto de instrucciones 3DNow. | Propiedad ThreeDNow IVMHostInfo (VPCCOMInterfaces.h)
 ms.assetid: 4987e326-d8fa-4dfa-b592-9dd90cedb0ef
 keywords:
-- Equipo virtual de la propiedad ThreeDNow
-- Propiedad de ThreeDNow Virtual PC, interfaz IVMHostInfo
-- IVMHostInfo interface Virtual PC , ThreeDNow property
+- Propiedad De ThreeDNow Virtual PC
+- Propiedad ThreeDNow Virtual PC , interfaz IVMHostInfo
+- Interfaz IVMHostInfo de Equipo virtual, propiedad ThreeDNow
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118345563"
 ---
-# <a name="ivmhostinfothreednow-property"></a>IVMHostInfo::ThreeDNow, propiedad
+# <a name="ivmhostinfothreednow-property"></a>Propiedad IVMHostInfo::ThreeDNow
 
 \[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
@@ -45,7 +45,7 @@ HRESULT get_ThreeDNow(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**TRUE si** el procesador host admite las instrucciones de 3DNow; en caso contrario, **FALSE.**
+**TRUE** si el procesador host admite las instrucciones de 3DNow; en caso contrario, **FALSE.**
 
 ## <a name="error-codes"></a>Códigos de error
 

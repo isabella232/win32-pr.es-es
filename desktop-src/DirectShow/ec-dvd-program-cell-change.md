@@ -1,7 +1,7 @@
 ---
-description: Se envía cuando cambia el número de programa o el número de celda del DVD.
+description: Se envía cuando cambia el número de programa de DVD o el número de celda.
 ms.assetid: a500e86d-cd42-4716-9c57-828a72c4e1df
-title: EC_DVD_PROGRAM_CELL_CHANGE (Dvdevcode. h)
+title: EC_DVD_PROGRAM_CELL_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: d41f691016c3e41cfc3e14ed1ce6fff276dcc70e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90683bfff2cc6d3bbdd09c6a51dd7febbb9516f81738c513d446264c2f1ffd0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820400"
 ---
-# <a name="ec_dvd_program_cell_change"></a>\_cambio de \_ celda del programa de DVD de EC \_ \_
+# <a name="ec_dvd_program_cell_change"></a>CAMBIO \_ DE CELDA DEL PROGRAMA DE DVD DE \_ \_ \_ EC
 
-Se envía cuando cambia el número de programa o el número de celda del DVD.
+Se envía cuando cambia el número de programa de DVD o el número de celda.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,20 +31,20 @@ Se envía cuando cambia el número de programa o el número de celda del DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-El nuevo número de programa.
+Nuevo número de programa.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-El nuevo número de celda.
+Nuevo número de celda.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2:: SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **DVD \_ NotifyPositionChange** en **true**.
+Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **\_ DVD NotifyPositionChange** en **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,11 +52,11 @@ Este evento está deshabilitado de forma predeterminada. Para habilitar este eve
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

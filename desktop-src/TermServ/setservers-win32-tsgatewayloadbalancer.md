@@ -26,7 +26,7 @@ ms.locfileid: "118349632"
 ---
 # <a name="setservers-method-of-the-win32_tsgatewayloadbalancer-class"></a>Método SetServers de la clase \_ TSGatewayLoadBalancer de Win32
 
-Establece la **propiedad Servers** con la lista de servidores de equilibrio de carga Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
+Establece la **propiedad Servers** con la lista de servidores de equilibrio de carga Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Si el método se realiza correctamente, devuelve cero. Si el método no es corre
 
 ## <a name="remarks"></a>Comentarios
 
-Si hay varios servidores en el *parámetro Servidores* y uno de los servidores no se puede procesar, no se procesará ninguno de los servidores.
+Si hay varios servidores en el *parámetro Servidores* y no se puede procesar uno de los servidores, no se procesará ninguno de los servidores.
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 

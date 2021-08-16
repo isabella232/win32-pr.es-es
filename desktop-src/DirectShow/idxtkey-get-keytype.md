@@ -1,7 +1,7 @@
 ---
-description: El \_ método get KeyType recupera el tipo de clave.
+description: El método get \_ KeyType recupera el tipo de clave.
 ms.assetid: 902cbd46-529a-45d8-afa2-a8dd9439769a
-title: 'Método IDxtKey:: get_KeyType (QEDIT. h)'
+title: Método IDxtKey::get_KeyType (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7341815169549f24db55518e021b9e5096286a65
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cfb8930df859771f61406ebab9a1e7f60cfdf149eaf66eae23120bb7292ebf74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819479"
 ---
-# <a name="idxtkeyget_keytype-method"></a>IDxtKey:: get \_ KeyType (método)
+# <a name="idxtkeyget_keytype-method"></a>Método IDxtKey::get \_ KeyType
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -45,20 +45,20 @@ HRESULT get_KeyType(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Recibe uno de los siguientes valores de enumeración.
 
 
 
-| Value             | Descripción                                           |
+| Valor             | Descripción                                           |
 |-------------------|-------------------------------------------------------|
-| DXTKEY \_ RGB       | Clave cromada. (Clave en valor RGB).                       |
-| DXTKEY \_ NONRED    | Clave Nonred. (Hace que las áreas azules y verdes sean transparentes). |
-| \_luminancia DXTKEY | Clave de luminancia.                                        |
-| \_alfa DXTKEY     | Clave por valor alfa.                                   |
-| \_matiz DXTKEY       | Clave por matiz.                                           |
+| DXTKEY \_ RGB       | Clave de exclusión. (Clave en el valor RGB).                       |
+| DXTKEY \_ NONRED    | Clave nored. (Hace que las áreas azul y verde sea transparente). |
+| DXTKEY \_ LUMINANCE | Tecla de luminosidad.                                        |
+| DXTKEY \_ ALPHA     | Clave por valor alfa.                                   |
+| DXTKEY \_ HUE       | Clave por matiz.                                           |
 
 
 
@@ -68,17 +68,17 @@ Recibe uno de los siguientes valores de enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -88,16 +88,16 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IDxtKey**](idxtkey.md)
+[**IDxtKey (interfaz)**](idxtkey.md)
 </dt> </dl>
 
  

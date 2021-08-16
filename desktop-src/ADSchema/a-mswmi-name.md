@@ -1,11 +1,11 @@
 ---
-title: atributo de nombre MS-WMI
-description: Nombre para mostrar de los objetos de directiva de nivel superior. Se utiliza en el catálogo global.
+title: Atributo ms-WMI-Name
+description: Nombre para mostrar de los objetos de directiva de nivel superior. Se usa en el catálogo global.
 ms.assetid: 4c07e4ba-7f3f-4066-b4cd-2c6d738d7421
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de nombre de MS-WMI
-- 'msWMI: atributo de nombre esquema de AD'
+- Esquema de AD del atributo ms-WMI-Name
+- Esquema de AD del atributo msWMI-Name
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e49d5a57a9056e6f7201d3cdd53039c4f74b590f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6de31306ef4f62ed0b502cf9d32c84dad0803c8cc593706913856114df26ee77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837298"
 ---
-# <a name="ms-wmi-name-attribute"></a>atributo de nombre MS-WMI
+# <a name="ms-wmi-name-attribute"></a>Atributo ms-WMI-Name
 
-Nombre para mostrar de los objetos de directiva de nivel superior. Se utiliza en el catálogo global.
+Nombre para mostrar de los objetos de directiva de nivel superior. Se usa en el catálogo global.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Nombre MS-WMI                                 |
-| Nombre para mostrar de LDAP | msWMI: nombre                                  |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de directiva de grupo                  |
+| CN                | ms-WMI-Name                                 |
+| Ldap-Display-Name | msWMI-Name                                  |
+| Size              | \-                                          |
+| Actualizar privilegios  | directiva de grupo administrador                  |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1639                     |
-| System-ID-GUID    | c6c8ace5-7e81-42af-ad72-77412c5941c4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | c6c8ace5-7e81-42af-ad72-77412c5941c4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,20 +52,20 @@ Nombre para mostrar de los objetos de directiva de nivel superior. Se utiliza en
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                              |
+| Id. de vínculo                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
-| System-Only            | False                                                                                                           |
-| Tiene un único valor       | True                                                                                                            |
-| Está indexado             | False                                                                                                           |
-| En el catálogo global      | False                                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                    |
+| System-Only            | Falso                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                            |
+| Está indexado             | Falso                                                                                                           |
+| En el catálogo global      | Falso                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Nombre para mostrar de los objetos de directiva de nivel superior. Se utiliza en
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                              |
+| Id. de vínculo                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
-| System-Only            | False                                                                                                           |
-| Tiene un único valor       | True                                                                                                            |
-| Está indexado             | False                                                                                                           |
-| En el catálogo global      | False                                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                    |
+| System-Only            | Falso                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                            |
+| Está indexado             | Falso                                                                                                           |
+| En el catálogo global      | Falso                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Nombre para mostrar de los objetos de directiva de nivel superior. Se utiliza en
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                              |
+| Id. de vínculo                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
-| System-Only            | False                                                                                                           |
-| Tiene un único valor       | True                                                                                                            |
-| Está indexado             | False                                                                                                           |
-| En el catálogo global      | False                                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                    |
+| System-Only            | Falso                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                            |
+| Está indexado             | Falso                                                                                                           |
+| En el catálogo global      | Falso                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Nombre para mostrar de los objetos de directiva de nivel superior. Se utiliza en
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                              |
+| Id. de vínculo                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
-| System-Only            | False                                                                                                           |
-| Tiene un único valor       | True                                                                                                            |
-| Está indexado             | False                                                                                                           |
-| En el catálogo global      | False                                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                    |
+| System-Only            | Falso                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                            |
+| Está indexado             | Falso                                                                                                           |
+| En el catálogo global      | Falso                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Nombre para mostrar de los objetos de directiva de nivel superior. Se utiliza en
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                              |
+| Id. de vínculo                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
-| System-Only            | False                                                                                                           |
-| Tiene un único valor       | True                                                                                                            |
-| Está indexado             | False                                                                                                           |
-| En el catálogo global      | False                                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                    |
+| System-Only            | Falso                                                                                                           |
+| Es de un solo valor       | Verdadero                                                                                                            |
+| Está indexado             | Falso                                                                                                           |
+| En el catálogo global      | Falso                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 

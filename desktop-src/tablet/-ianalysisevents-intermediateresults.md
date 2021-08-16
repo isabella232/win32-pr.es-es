@@ -1,7 +1,7 @@
 ---
-description: Se produce cuando finaliza la fase de análisis intermedio actual.
+description: Se produce cuando finaliza la fase de análisis intermedia actual.
 ms.assetid: 9ade61f4-bcfe-4c49-bda1-b60aaf780935
-title: 'Evento _IAnalysisEvents:: IntermediateResults (IACom. h)'
+title: _IAnalysisEvents::IntermediateResults (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 33430225746ddd1a4099f89112f14f99f2b6da84
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9efead00094fdcd773c3ac90b0d626e2036030171bcf3be011323b6da70fb665
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105697994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857201"
 ---
-# <a name="_ianalysiseventsintermediateresults-event"></a>\_Evento IAnalysisEvents:: IntermediateResults
+# <a name="_ianalysiseventsintermediateresults-event"></a>\_Evento IAnalysisEvents::IntermediateResults
 
-Se produce cuando finaliza la fase de análisis intermedio actual.
+Se produce cuando finaliza la fase de análisis intermedia actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ HRESULT IntermediateResults(
 
 <dl> <dt>
 
-*pInkAnalyzer* \[ de\]
+*pInkAnalyzer* \[ En\]
 </dt> <dd>
 
-[**IInkAnalyzer**](iinkanalyzer.md) que realiza el análisis.
+[**IInkAnalyzer que**](iinkanalyzer.md) realiza el análisis.
 
 </dd> <dt>
 
-*pAnalysisStatus* \[ de\]
+*pAnalysisStatus* \[ En\]
 </dt> <dd>
 
 Objeto [**IAnalysisStatus**](ianalysisstatus.md) que representa el estado de los resultados intermedios.
@@ -56,34 +56,34 @@ Objeto [**IAnalysisStatus**](ianalysisstatus.md) que representa el estado de los
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-[**IInkAnalyzer**](iinkanalyzer.md) genera este evento después de haber reconciliado los resultados intermedios de la fase de análisis actual.
+[**IInkAnalyzer**](iinkanalyzer.md) genera este evento después de haber conciliado los resultados intermedios de la fase de análisis actual.
 
-Si la aplicación mantiene su propia estructura de datos, que está sincronizada con la del [**IInkAnalyzer**](iinkanalyzer.md), este evento indica que el **IInkAnalyzer** ha terminado de realizar cambios en sus datos internos para esta fase de análisis.
+Si la aplicación mantiene su propia estructura de datos, que se sincroniza con la de [**IInkAnalyzer,**](iinkanalyzer.md)este evento indica que **IInkAnalyzer** ha terminado de realizar cambios en sus datos internos para esta fase de análisis.
 
-Bloquee la estructura de datos cuando el [**IInkAnalyzer**](iinkanalyzer.md) provoque el evento [**\_ IAnalysisProxyEvents:: InkAnalyzerStateChanging**](-ianalysisproxyevents-inkanalyzerstatechanging.md) . Los cambios en la estructura de datos durante esta fase de análisis pueden provocar errores en el análisis y la sincronización de las entradas manuscritas. Puede desbloquear la estructura de datos cuando el **IInkAnalyzer** genera el evento **\_ IAnalysisEvents:: IntermediateResults** o [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) .
+Bloquee la estructura de datos cuando [**IInkAnalyzer**](iinkanalyzer.md) genera el evento [**\_ IAnalysisProxyEvents::InkAnalyzerStateChanging.**](-ianalysisproxyevents-inkanalyzerstatechanging.md) Los cambios en la estructura de datos durante esta fase de análisis pueden provocar errores en el análisis de entrada de lápiz y la sincronización. Puede desbloquear la estructura de datos cuando **IInkAnalyzer** genera el evento **\_ IAnalysisEvents::IntermediateResults** o [**\_ IAnalysisEvents::Results.**](-ianalysisevents-results.md)
 
-Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [proxy de datos con análisis de tinta](data-proxy-with-ink-analysis.md).
+Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
-[**IInkAnalyzer**](iinkanalyzer.md) genera resultados intermedios solo cuando sus modos de análisis tienen establecida la marca **\_ IntermediateResults de AnalysisModes** (vea el [**método IInkAnalyzer:: GetAnalysisModes**](iinkanalyzer-getanalysismodes.md)).
+[**IInkAnalyzer**](iinkanalyzer.md) genera resultados intermedios solo cuando sus modos de análisis tienen establecida la marca **AnalysisModes \_ IntermediateResults** (vea El método [**IInkAnalyzer::GetAnalysisModes**](iinkanalyzer-getanalysismodes.md)).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -93,7 +93,7 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 [**AnalysisModes**](analysismodes.md)
 </dt> <dt>
 
-[**\_IAnalysisEvents:: results**](-ianalysisevents-results.md)
+[**\_IAnalysisEvents::Results**](-ianalysisevents-results.md)
 </dt> <dt>
 
 [**\_IAnalysisProxyEvents**](-ianalysisproxyevents.md)
@@ -102,11 +102,11 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: Analyze (método)**](iinkanalyzer-analyze.md)
+[**IInkAnalyzer::Analyze (Método)**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>

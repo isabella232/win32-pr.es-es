@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118369334"
 ---
-# <a name="wm_cap_stop-message"></a>Mensaje \_ STOP de WM CAP \_
+# <a name="wm_cap_stop-message"></a>Mensaje \_ DE DETENERSE DE WM CAP \_
 
 El **mensaje WM CAP \_ \_ STOP** detiene la operación de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capCaptureStop.**](/windows/desktop/api/Vfw/nf-vfw-capcapturestop)
 
@@ -38,7 +38,7 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
 ## <a name="remarks"></a>Comentarios
 

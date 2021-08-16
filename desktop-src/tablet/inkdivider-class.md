@@ -84,7 +84,7 @@ El **objeto InkDivider** usa el diseño de los trazos, el orden en el que se agr
 
 Los resultados del análisis se devuelven en [**un objeto IInkDivisionResult.**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionresult)
 
-El **objeto InkDivider** usa un objeto [**InkRecognizerContext**](inkrecognizercontext-class.md) para dividir con más precisión los trazos y asignar una cadena de reconocimiento a los resultados.
+El **objeto InkDivider** usa un objeto [**InkRecognizerContext**](inkrecognizercontext-class.md) para dividir los trazos con más precisión y asignar una cadena de reconocimiento a los resultados.
 
 > [!Note]  
 > El **objeto InkDivider** usa la configuración de propiedad predeterminada del [**objeto InkRecognizerContext.**](inkrecognizercontext-class.md)
@@ -94,7 +94,7 @@ El **objeto InkDivider** usa un objeto [**InkRecognizerContext**](inkrecognizerc
 Si no asigna un contexto de reconocedor al objeto **InkDivider,** el objeto **InkDivider** sigue analizando la entrada de lápiz, pero divide los trazos con menos precisión y no asocia texto a los resultados de división.
 
 > [!Note]  
-> La [**propiedad RecognizerContext**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_recognizercontext) debe establecerse antes de agregar trazos a la [**propiedad Strokes.**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_strokes) Después de agregar trazos al **objeto InkDivider,** no se puede cambiar la propiedad **RecognizerContext.**
+> La [**propiedad RecognizerContext**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_recognizercontext) debe establecerse antes de agregar trazos a la [**propiedad Strokes.**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_strokes) Una vez agregados los trazos al **objeto InkDivider,** no se puede cambiar la propiedad **RecognizerContext.**
 
  
 
@@ -108,7 +108,7 @@ Si no asigna un contexto de reconocedor al objeto **InkDivider,** el objeto **In
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                               |
-| Header<br/>                   | <dl> <dt>Msgniut15.h (también requiere Ms ashut15 \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut15.h (también requiere Msgniut15 \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Inkdiv.dll</dt> </dl>                                   |
 
 
@@ -123,7 +123,7 @@ Si no asigna un contexto de reconocedor al objeto **InkDivider,** el objeto **In
 [**InkRecognizerContext (clase)**](inkrecognizercontext-class.md)
 </dt> <dt>
 
-[Colección InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
+[InkStrokes Collection](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 </dt> </dl>
 
  

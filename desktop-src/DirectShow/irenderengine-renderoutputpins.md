@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117818567"
 ---
-# <a name="irenderenginerenderoutputpins-method"></a>Método IRenderEngine::RenderOutputPins
+# <a name="irenderenginerenderoutputpins-method"></a>IRenderEngine::RenderOutputPins (método)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -45,7 +45,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **valor HRESULT.** Estos son los valores posibles:
+Devuelve valores **HRESULT.** Estos son los valores posibles:
 
 
 
@@ -54,7 +54,7 @@ Devuelve un **valor HRESULT.** Estos son los valores posibles:
 | <dl> <dt>**S \_ OK**</dt> </dl>                         | Correcto.<br/>                                                        |
 | <dl> <dt>**EL AUDIO DE VFW \_ S \_ NO SE \_ \_ REPRESENTA**</dt> </dl>  | No se puede reproducir la secuencia de audio.<br/>                              |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>                 | Argumento no válido.<br/>                                               |
-| <dl> <dt>**E \_ EL MOTOR DE REPRESENTACIÓN ESTÁ \_ \_ \_ ROTO**</dt> </dl> | Error en la operación porque el proyecto no se representó correctamente.<br/> |
+| <dl> <dt>**E \_ RENDER \_ ENGINE \_ IS \_ BROKEN**</dt> </dl> | Error en la operación porque el proyecto no se representó correctamente.<br/> |
 | <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>                 | error inesperado.<br/>                                               |
 
 
@@ -63,11 +63,11 @@ Devuelve un **valor HRESULT.** Estos son los valores posibles:
 
 ## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, llame [**a IRenderEngine::ConnectFrontEnd para**](irenderengine-connectfrontend.md) compilar el front-end del gráfico. Para realizar una operación que no sea la versión preliminar, no llame a este método. En su lugar, [**llame a IRenderEngine::GetGroupOutputPin**](irenderengine-getgroupoutputpin.md) para obtener punteros a los pines de salida.
+Antes de llamar a este método, llame [**a IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md) para compilar el front-end del gráfico. Para realizar una operación que no sea la versión preliminar, no llame a este método. En su lugar, [**llame a IRenderEngine::GetGroupOutputPin**](irenderengine-getgroupoutputpin.md) para obtener punteros a los pines de salida.
 
-Si no hay ninguna tarjeta de sonido en el equipo del usuario, este método devuelve VFW \_ S \_ AUDIO NOT \_ \_ RENDERED. En este caso, no habrá una vista previa de audio, pero la vista previa del vídeo no se verá afectada.
+Si no hay ninguna tarjeta de sonido en el equipo del usuario, este método devuelve VFW \_ S \_ AUDIO NOT \_ \_ RENDERED. En este caso no habrá una vista previa de audio, pero la versión preliminar del vídeo no se verá afectada.
 
-Si el pin es de un grupo de vídeo, este método crea una ventana de vídeo. El subproceso de llamada debe enviar mensajes, por ejemplo, para mover la ventana o responder a los clics del mouse en el área de cliente de la ventana.
+Si el pin es de un grupo de vídeo, este método crea una ventana de vídeo. El subproceso de llamada debe enviar mensajes, por ejemplo, para mover la ventana o responder a los clics del mouse en el área cliente de la ventana.
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -94,10 +94,10 @@ Si el pin es de un grupo de vídeo, este método crea una ventana de vídeo. El 
 
 <dl> <dt>
 
-[**IRenderEngine (interfaz)**](irenderengine.md)
+[**IRenderEngine (Interfaz)**](irenderengine.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

@@ -1,26 +1,26 @@
 ---
-title: Modelo de objetos ADSI para proveedores de Winnt
-description: Ilustración que muestra los objetos ADSI utilizados para el proveedor de WinNT y las interfaces utilizadas para tener acceso a los objetos ADSI.
+title: Modelo de objetos ADSI para proveedores winNT
+description: Ilustración que muestra los objetos ADSI usados para el proveedor winNT y las interfaces usadas para acceder a los objetos ADSI.
 ms.assetid: bfddb78a-cddb-4523-b455-1ae858f597e9
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 567e50ef9c9951f1ca850544ec01fecd1c238617
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c828e897a30ff8f1533d3832dc3cc851775d852dbb38e4ca7a91477027b7f015
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117840848"
 ---
-# <a name="adsi-object-model-for-winnt-providers"></a>Modelo de objetos ADSI para proveedores de Winnt
+# <a name="adsi-object-model-for-winnt-providers"></a>Modelo de objetos ADSI para proveedores winNT
 
-En la ilustración siguiente se muestran los objetos ADSI utilizados para el proveedor WinNT y las interfaces utilizadas para tener acceso a los objetos ADSI.
+En la ilustración siguiente se muestran los objetos ADSI usados para el proveedor de WinNT y las interfaces que se usan para acceder a los objetos ADSI.
 
-![modelo de objetos para el proveedor de Winnt](images/adsiobjmodwinnt-gif-1.png)
+![modelo de objetos para el proveedor winnt](images/adsiobjmodwinnt-gif-1.png)
 
- 
+ 
 
- 
+ 
 
 
 

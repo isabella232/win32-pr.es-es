@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
@@ -59,11 +59,11 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 ## <a name="remarks"></a>Comentarios
 
-Mientras la captura está en estado en pausa, no se capturan nuevos fotogramas hasta que se llama al método [IRTC::Resume](irtc-resume.md) para reiniciar la captura.
+Mientras la captura está en estado en pausa, los fotogramas nuevos no se capturan hasta que se llama al método [IRTC::Resume](irtc-resume.md) para reiniciar la captura.
 
-Cuando usa los métodos **IRTC::P ause** e **IRTC::Resume** para controlar la captura, Monitor de red continúa agregando [*estadísticas*](c.md) de conversación cada vez que se ejecuta la captura.
+Cuando se usan los métodos **IRTC::P ause** e **IRTC::Resume** para controlar la captura, Monitor de red continúa agregando [*estadísticas*](c.md) de conversación cada vez que se ejecuta la captura.
 
-Para reiniciar la llamada de captura [IRTC::Resume](irtc-resume.md). Para detener la captura, llame [a IRTC::Stop](irtc-stop.md).
+Para reiniciar la llamada de [captura, llame a IRTC::Resume.](irtc-resume.md) Para detener la captura, llame [a IRTC::Stop](irtc-stop.md).
 
 ## <a name="requirements"></a>Requisitos
 

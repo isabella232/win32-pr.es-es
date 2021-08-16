@@ -1,5 +1,5 @@
 ---
-description: No se implementa el método GetCurrentSample.
+description: El método GetCurrentSample no está implementado.
 ms.assetid: 0c903498-3c1d-4e95-a797-ca8cfded25f2
 title: Método ISampleGrabber::GetCurrentSample (Qedit.h)
 ms.topic: reference

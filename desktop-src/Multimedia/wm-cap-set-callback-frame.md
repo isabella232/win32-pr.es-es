@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_SET_CALLBACK_FRAME mensaje (Vfw.h)
-description: El mensaje WM \_ CAP \_ SET \_ CALLBACK FRAME establece una función de \_ devolución de llamada de versión preliminar en la aplicación. AVICap llama a este procedimiento cuando la ventana de captura captura fotogramas de vista previa. Puede enviar este mensaje explícitamente o mediante la macro capSetCallbackOnFrame.
+description: El mensaje WM CAP SET CALLBACK FRAME establece una función de devolución \_ de llamada de versión preliminar en la \_ \_ \_ aplicación. AVICap llama a este procedimiento cuando la ventana de captura captura fotogramas de vista previa. Puede enviar este mensaje explícitamente o mediante la macro capSetCallbackOnFrame.
 ms.assetid: 3882e6f6-c48c-4e50-9697-cbdf5b9342a5
 keywords:
 - WM_CAP_SET_CALLBACK_FRAME mensaje Windows Multimedia
@@ -41,17 +41,17 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Puntero a la función de devolución de llamada de vista previa, de tipo [**capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Especifique **NULL para** este parámetro para deshabilitar una función de devolución de llamada instalada previamente.
+Puntero a la función de devolución de llamada de vista previa, de [**tipo capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Especifique **NULL para** este parámetro para deshabilitar una función de devolución de llamada instalada previamente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza **correctamente o FALSE si** la captura de streaming o una sesión de captura de un solo fotograma está en curso.
+Devuelve **TRUE si** se realiza correctamente o FALSE **si** la captura de streaming o una sesión de captura de un solo fotograma están en curso.
 
 ## <a name="remarks"></a>Comentarios
 
-La ventana de captura llama a la función de devolución de llamada antes de mostrar los fotogramas de vista previa. Esto permite que una aplicación modifique el marco si lo desea. Esta función de devolución de llamada no se usa durante la captura de vídeo de streaming.
+La ventana de captura llama a la función de devolución de llamada antes de mostrar fotogramas de vista previa. Esto permite que una aplicación modifique el marco si lo desea. Esta función de devolución de llamada no se usa durante la captura de vídeo de streaming.
 
 ## <a name="requirements"></a>Requisitos
 

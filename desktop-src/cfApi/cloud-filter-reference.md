@@ -1,5 +1,5 @@
 ---
-description: Los elementos siguientes se usan para crear y administrar directorios y archivos de marcador de posición.
+description: Los siguientes elementos se usan para crear y administrar directorios y archivos de marcador de posición.
 ms.assetid: 518988BF-9D75-4CA7-8622-33A5C9DD1F4E
 title: Referencia de filtro de nube
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118311449"
 ---
 # <a name="cloud-filter-reference"></a>Referencia de filtro de nube
 
-Los elementos siguientes se usan para crear y administrar directorios y archivos de marcador de posición.
+Los siguientes elementos se usan para crear y administrar directorios y archivos de marcador de posición.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -22,7 +22,7 @@ Los elementos siguientes se usan para crear y administrar directorios y archivos
 | Tema                                                                     | Descripción                                                                                                   |
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | [Enumeraciones de filtros en la nube](/windows/desktop/cfApi/cloud-files-enumerations)<br/> | Las enumeraciones siguientes se usan para crear y mantener directorios y archivos de marcador de posición.<br/> |
-| [Funciones de filtro de nube](/windows/desktop/cfApi/cloud-files-functions)<br/>       | Las siguientes funciones se usan para crear y mantener directorios y archivos de marcador de posición.<br/>    |
+| [Funciones de filtro en la nube](/windows/desktop/cfApi/cloud-files-functions)<br/>       | Las siguientes funciones se usan para crear y mantener archivos de marcador de posición y directorios.<br/>    |
 | [Estructuras de filtro de nube](/windows/desktop/cfApi/cloud-files-structures)<br/>     | Las estructuras siguientes se usan para crear y mantener directorios y archivos de marcador de posición.<br/>   |
 
 

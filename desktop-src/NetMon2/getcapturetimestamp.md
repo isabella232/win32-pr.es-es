@@ -54,7 +54,7 @@ Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
 ## <a name="remarks"></a>Comentarios
 
-La **función GetCaptureTimeStamp** devuelve la hora a la que el proveedor de paquetes de red (NPP) comienza a recopilar datos, no cuando el experto carga la captura para su análisis.
+La **función GetCaptureTimeStamp** devuelve la hora en que el proveedor de paquetes de red (NPP) comienza a recopilar datos, no cuando el experto carga la captura para su análisis.
 
 No sobrescriba los datos de la **estructura SYSTEMTIME.** Los datos forman parte de la captura. Al intentar modificar los datos, se produce una infracción de acceso.
 

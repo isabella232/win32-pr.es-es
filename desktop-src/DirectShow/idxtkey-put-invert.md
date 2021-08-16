@@ -1,7 +1,7 @@
 ---
-description: El \_ método put Invert especifica si se invierte la operación de clave. Esta propiedad se aplica a todos los tipos de clave excepto DXTKEY \_ Alpha.
+description: El método put \_ Invert especifica si se invierte la operación de clave. Esta propiedad se aplica a todos los tipos de clave excepto DXTKEY \_ ALPHA.
 ms.assetid: 06acdd9f-eb3a-49bd-961d-00966df2ccb4
-title: 'IDxtKey: método de ut_Invert de:p (QEDIT. h)'
+title: Método IDxtKey::p ut_Invert (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 3e4b807770d0eeb985c982b61b8390695cc42327
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ed1ed445e7a6f5f1f07eff74ac739934f2c9ca1358affe3e0cd699b7a101f0a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819442"
 ---
-# <a name="idxtkeyput_invert-method"></a>IDxtKey: método de \_ inversión:p UT
+# <a name="idxtkeyput_invert-method"></a>IDxtKey::p ut \_ Invert (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `put_Invert` método especifica si se invierte la operación de clave. Esta propiedad se aplica a todos los tipos de clave excepto DXTKEY \_ Alpha.
+El `put_Invert` método especifica si se invierte la operación de clave. Esta propiedad se aplica a todos los tipos de clave excepto DXTKEY \_ ALPHA.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,26 +45,26 @@ HRESULT put_Invert(
 
 <dl> <dt>
 
-*newVal* \[ de\]
+*newVal* \[ En\]
 </dt> <dd>
 
-Especifica un valor booleano. Si **es true**, los píxeles de la imagen superpuesta se invierten con respecto a la operación predeterminada. Si **es false**, los píxeles de la imagen superpuestas se convierten en transparentes de la manera predeterminada.
+Especifica un valor booleano. Si **es TRUE,** los píxeles de la imagen de sobrease se invierten con respecto a la operación predeterminada. Si **es FALSE,** los píxeles de la imagen de sobresaliendo se hacen transparentes de la manera predeterminada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,19 +74,19 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IDxtKey**](idxtkey.md)
+[**IDxtKey (interfaz)**](idxtkey.md)
 </dt> <dt>
 
-[**IDxtKey::p \_ KeyType**](idxtkey-put-keytype.md)
+[**IDxtKey::put \_ KeyType**](idxtkey-put-keytype.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: El método SetCallback especifica un método de devolución de llamada al que llamar en los ejemplos de entrada.
+description: El método SetCallback especifica un método de devolución de llamada para llamar a en los ejemplos entrantes.
 ms.assetid: b84d3f52-b986-492a-a8b9-1d98618dcdd3
-title: 'ISampleGrabber:: SetCallback (método) (QEDIT. h)'
+title: Método ISampleGrabber::SetCallback (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 46e0565c314bab86967ee0d5dabee6ba449a87dd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6e6d61d60a4664386cded025d2b7bcea82353602c7f7f8c0fb5bc4c53779ae2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817922"
 ---
-# <a name="isamplegrabbersetcallback-method"></a>ISampleGrabber:: SetCallback (método)
+# <a name="isamplegrabbersetcallback-method"></a>ISampleGrabber::SetCallback (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El método **SetCallback** especifica un método de devolución de llamada al que llamar en los ejemplos de entrada.
+El **método SetCallback** especifica un método de devolución de llamada para llamar a en los ejemplos entrantes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,21 +49,21 @@ HRESULT SetCallback(
 *pCallback* 
 </dt> <dd>
 
-Puntero a una interfaz [**ISampleGrabberCB**](isamplegrabbercb.md) que contiene el método de devolución de llamada o **null** para cancelar la devolución de llamada.
+Puntero a una [**interfaz ISampleGrabberCB**](isamplegrabbercb.md) que contiene el método de devolución de llamada o **NULL** para cancelar la devolución de llamada.
 
 </dd> <dt>
 
 *WhichMethodToCallback* 
 </dt> <dd>
 
-Índice que especifica el método de devolución de llamada. Debe ser uno de los valores siguientes.
+Índice que especifica el método de devolución de llamada. Debe ser uno de los siguientes valores:
 
 
 
-| Value | Descripción                                                                                                                                                                                     |
+| Valor | Descripción                                                                                                                                                                                     |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0     | El filtro de enganche de ejemplo llama al método [**ISampleGrabberCB:: SampleCB**](isamplegrabbercb-samplecb.md) . Este método recibe un puntero [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) .               |
-| 1     | El filtro de enganche de ejemplo llama al método [**ISampleGrabberCB:: BufferCB**](isamplegrabbercb-buffercb.md) . Este método recibe un puntero al búfer incluido en el ejemplo multimedia. |
+| 0     | El filtro Sample Grabber llama al [**método ISampleGrabberCB::SampleCB.**](isamplegrabbercb-samplecb.md) Este método recibe un [**puntero IMediaSample.**](/windows/desktop/api/Strmif/nn-strmif-imediasample)               |
+| 1     | El filtro Sample Grabber llama al [**método ISampleGrabberCB::BufferCB.**](isamplegrabbercb-buffercb.md) Este método recibe un puntero al búfer contenido en el ejemplo multimedia. |
 
 
 
@@ -73,21 +73,21 @@ Puntero a una interfaz [**ISampleGrabberCB**](isamplegrabbercb.md) que contiene 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El subproceso de procesamiento de datos se bloquea hasta que se devuelve el método de devolución de llamada. Si la devolución de llamada no vuelve rápidamente, puede interferir con la reproducción.
+El subproceso de procesamiento de datos se bloquea hasta que se devuelve el método de devolución de llamada. Si la devolución de llamada no se devuelve rápidamente, puede interferir con la reproducción.
 
-El filtro no invoca la función de devolución de llamada para los ejemplos de prefijo o para los ejemplos en los que el miembro **dwStreamId** de la estructura de [**\_ \_ propiedades AM SAMPLE2**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) es distinto de la \_ secuencia de multimedia AM \_ .
+El filtro no invoca la función de devolución de llamada para los ejemplos de inscripción previa, ni para los ejemplos en los que el **miembro dwStreamId** de la estructura [**PROPERTIES DE AM \_ SAMPLE2 \_**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) no sea AM STREAM \_ \_ MEDIA.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -97,19 +97,19 @@ El filtro no invoca la función de devolución de llamada para los ejemplos de p
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Usar el enganche de ejemplo](using-the-sample-grabber.md)
+[Uso de Sample Grabber](using-the-sample-grabber.md)
 </dt> <dt>
 
-[**Interfaz ISampleGrabber**](isamplegrabber.md)
+[**ISampleGrabber (interfaz)**](isamplegrabber.md)
 </dt> </dl>
 
  

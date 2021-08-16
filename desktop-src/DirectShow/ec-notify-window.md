@@ -1,17 +1,17 @@
 ---
 description: Notifica a un filtro la ventana del representador de vídeo.
 ms.assetid: 65d2f40e-c42c-4d71-b9b3-7662a8be0953
-title: EC_NOTIFY_WINDOW (DShow. h)
+title: EC_NOTIFY_WINDOW (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3165247f05e2fb945f02fee43149b84480bd4b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 355d4ec8b5b6bea55a2f32f01cc2f83aabeab84443b28e431e5b0d6155acc6d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820117"
 ---
-# <a name="ec_notify_window"></a>\_ventana notificación de EC \_
+# <a name="ec_notify_window"></a>VENTANA \_ DE NOTIFICACIÓN DE \_ EC
 
 Notifica a un filtro la ventana del representador de vídeo.
 
@@ -22,7 +22,7 @@ Notifica a un filtro la ventana del representador de vídeo.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**HWnd**) Identificador de la ventana.
+(**HWND**) Identificador de la ventana.
 
 </dd> <dt>
 
@@ -35,11 +35,11 @@ Cero.
 
 ## <a name="default-action"></a>Acción predeterminada
 
-DirectShow usa internamente este evento. El administrador de gráficos de filtro no pasa este evento a la aplicación. Las aplicaciones no pueden invalidar la acción predeterminada para este evento.
+Este evento lo usa internamente DirectShow. El administrador de gráficos de filtros no pasa este evento a la aplicación. Las aplicaciones no pueden invalidar la acción predeterminada para este evento.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se conecta un representador de vídeo, comprueba si el PIN de salida ascendente admite la interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) . Si es así, el representador envía este evento al filtro de nivel superior.
+Cuando se conecta un representador de vídeo, comprueba si el pin de salida ascendente admite la [**interfaz IMediaEventSink.**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) Si es así, el representador envía este evento al filtro ascendente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,11 +47,11 @@ Cuando se conecta un representador de vídeo, comprueba si el PIN de salida asce
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

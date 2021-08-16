@@ -61,13 +61,13 @@ No hay atributos.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Comentarios
 
-Este elemento genera declaraciones de funciones miembro correspondientes a las operaciones a las que llama el contrato. Estas declaraciones tienen un formato adecuado para su consumo por parte del compilador midl y se usan generalmente en archivos .idl.
+Este elemento genera declaraciones de funciones miembro correspondientes a las operaciones a las que llama el contrato. Estas declaraciones tienen un formato adecuado para el consumo por parte del compilador MIDL y se usan generalmente en archivos .idl.
 
 Ejemplo:
 

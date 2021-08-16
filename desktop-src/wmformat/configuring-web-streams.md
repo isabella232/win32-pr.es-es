@@ -4,8 +4,8 @@ description: Configuración de web Secuencias
 ms.assetid: 1eeb6243-5095-4dba-994c-2083beda7b78
 keywords:
 - streams,configuring Web streams
-- codecs,configuring Web streams
-- Flujos web, configuración
+- códecs, configuración de flujos web
+- Flujos web, configurar
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a8df1ced96a772a26b674fb47a30a8664d6431ff946328f45467554857b1ee4b
@@ -24,14 +24,14 @@ Las secuencias web son un tipo especializado de flujo de transferencia de archiv
 | Configuración                                            | Descripción                                                                       |
 |----------------------------------------------------|-----------------------------------------------------------------------------------|
 | **WM \_ MEDIA \_ TYPE.majortype**                      | Se establece en WMMEDIATYPE \_ FileTransfer.                                                 |
-| **WM \_ MEDIA \_ TYPE.subtype**                        | Se establece en WMMEDIASUBTYPE \_ WebStream.                                                 |
+| **WM \_ MEDIA \_ TYPE.subtype**                        | Establezca en WMMEDIASUBTYPE \_ WebStream.                                                 |
 | **WM \_ MEDIA \_ TYPE.bFixedSizeSamples**              | Establezca en False.                                                                     |
 | **WM \_ MEDIA \_ TYPE.bComposiciónCompression**           | Establezca en True.                                                                      |
 | **WM \_ MEDIA \_ TYPE.lSampleSize**                    | Establecer en 0.                                                                         |
-| **WM \_ MEDIA \_ TYPE.formattype**                     | Establezca en WMFORMAT \_ WebStream.                                                       |
+| **WM \_ MEDIA \_ TYPE.formattype**                     | Se establece en WMFORMAT \_ WebStream.                                                       |
 | **WM \_ MEDIA \_ TYPE.pUnk**                           | Se establece en **NULL.**                                                                  |
 | **WM \_ MEDIA \_ TYPE.cbFormat**                       | Establézcalo en `sizeof(WMT_WEBSTREAM_FORMAT)`.                                            |
-| **WM \_ MEDIA \_ TYPE.pbFormat**                       | Se establece en la dirección de una estructura **DE FORMATO DE WMT \_ WEBSTREAM \_ configurada** correctamente. |
+| **WM \_ MEDIA \_ TYPE.pbFormat**                       | Se establece en la dirección de una estructura **WMT \_ WEBSTREAM \_ FORMAT configurada** correctamente. |
 | **WMT \_ WEBSTREAM \_ FORMAT.cbSampleHeaderFixedData** | Establézcalo en `sizeof(WMT_WEBSTREAM_SAMPLE_HEADER)`.                                     |
 | **WMT \_ WEBSTREAM \_ FORMAT.wVersion**                | establézcalo en 1.                                                                         |
 | **WMT \_ WEBSTREAM \_ FORMAT.wreserved**               | Establecer en 0.                                                                         |

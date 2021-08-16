@@ -65,7 +65,7 @@ HRESULT get_IpAddresses(
 
 Puntero a una matriz de [**estructuras \_ connectionPoint de TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) que reciben las direcciones IP externas del destino.
 
-Puntero a una variable **DWORD** que contiene el número de direcciones IP externas en el *parámetro sockaddr.* Si se desconoce el número de direcciones, pase *sockaddr* como **NULL.** El método devolverá el número de estructuras [**de \_ ConnectionPoint de TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necesarias para asignar en la matriz a la que apunta *el parámetro sockaddr.*
+Puntero a una variable **DWORD** que contiene el número de direcciones IP externas en *el parámetro sockaddr.* Si se desconoce el número de direcciones, pase *sockaddr* como **NULL.** El método devolverá el número de estructuras [**de \_ ConnectionPoint de TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necesarias para asignar en la matriz a la que apunta el *parámetro sockaddr.*
 
 ## <a name="remarks"></a>Comentarios
 
@@ -118,7 +118,7 @@ Si se desconoce el número de direcciones IP externas, puede llamar a este méto
 [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget)
 </dt> <dt>
 
-[**Punto de conexión de TSSD \_**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint)
+[**Punto de conexión TSSD \_**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint)
 </dt> </dl>
 
  

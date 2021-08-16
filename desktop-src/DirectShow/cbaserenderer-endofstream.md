@@ -1,7 +1,7 @@
 ---
-description: El método EndOfStream notifica al filtro que el PIN de entrada ha recibido una notificación de final de secuencia.
+description: El método EndOfStream notifica al filtro que el pin de entrada recibió una notificación de fin de flujo.
 ms.assetid: bdfd03f9-81e0-4d52-959e-82fd1a67e1c3
-title: Método CBaseRenderer. EndOfStream (Renbase. h)
+title: Método CBaseRenderer.EndOfStream (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6e12da02ffbce99b29d324c1166b3d4cdf2265c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ff047865aa4f52dee6c03411cddb0c957327851f0f6ca1b7a03f0b6adaacfe5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822736"
 ---
-# <a name="cbaserendererendofstream-method"></a>CBaseRenderer. EndOfStream, método
+# <a name="cbaserendererendofstream-method"></a>Método CBaseRenderer.EndOfStream
 
-El `EndOfStream` método notifica al filtro que el PIN de entrada ha recibido una notificación de final de secuencia.
+El `EndOfStream` método notifica al filtro que el pin de entrada recibió una notificación de fin de flujo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El PIN de entrada del filtro llama a este método cuando recibe una notificación de final de secuencia.
+El pin de entrada del filtro llama a este método cuando recibe una notificación de fin de flujo.
 
-Este método establece la [**marca CBaseRenderer:: m \_ BeOS**](cbaserenderer-m-beos.md) en **true** y llama al método [**CBaseRenderer:: SendEndOfStream**](cbaserenderer-sendendofstream.md) para programar un evento de [**\_ finalización de EC**](ec-complete.md) . Si el filtro está en pausa y en espera de un ejemplo, este método completa la transición de estado.
+Este método establece la marca [**CBaseRenderer::m \_ bEOS**](cbaserenderer-m-beos.md) en **TRUE** y llama al método [**CBaseRenderer::SendEndOfStream**](cbaserenderer-sendendofstream.md) para programar un [**evento EC \_ COMPLETE.**](ec-complete.md) Si el filtro está en pausa y esperando un ejemplo, este método completa la transición de estado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,16 +56,16 @@ Este método establece la [**marca CBaseRenderer:: m \_ BeOS**](cbaserenderer-m-
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

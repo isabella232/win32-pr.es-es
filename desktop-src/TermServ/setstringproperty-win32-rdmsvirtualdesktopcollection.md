@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método SetStringProperty Servicios de Escritorio remoto
 - Método SetStringProperty Servicios de Escritorio remoto , Win32_RDMSVirtualDesktopCollection clase
-- Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto método , SetStringProperty
+- Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto , método SetStringProperty
 topic_type:
 - apiref
 api_name:

@@ -20,15 +20,15 @@ Use estos artículos para ayudarle a diseñar la experiencia del usuario para su
 
 -   [Cómo diseñar una experiencia de usuario excelente](how-to-design-desktop-ux.md)
 
-    Recomendaciones para lograr eficacia y simplicidad a través de una presentación y selección de características cuidadosamente equilibradas.
+    Recomendaciones para lograr eficacia y simplicidad a través de una selección y presentación de características cuidadosamente equilibradas.
 
 <!-- -->
 
--   [Lista de comprobación de la experiencia de usuario](top-violations.md)
+-   [Lista de comprobación de experiencia de usuario](top-violations.md)
 
     Algunos errores comunes e incoherencias que hay que tener en cuenta en el diseño de la interfaz de usuario.
 
-(Para obtener información sobre el diseño de aplicaciones Windows universal (UWP), consulta Conceptos básicos de diseño [para aplicaciones para UWP).](https://dev.windows.com/design/design-basics)
+(Para obtener información sobre el diseño de aplicaciones Windows plataforma universal (UWP), consulta Conceptos básicos de diseño [para aplicaciones para UWP).](https://dev.windows.com/design/design-basics)
 
  
 

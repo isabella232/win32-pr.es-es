@@ -5,7 +5,7 @@ ms.assetid: 9a8ab4b5-6ee8-463f-809b-b88cd28d9373
 keywords:
 - Pc virtual de la propiedad FloppyDrives
 - Propiedad FloppyDrives Pc virtual, interfaz IVMHostInfo
-- Interfaz IVMHostInfo De PC virtual, propiedad FloppyDrives
+- IVMHostInfo interface Virtual PC , FloppyDrives property
 topic_type:
 - apiref
 api_name:

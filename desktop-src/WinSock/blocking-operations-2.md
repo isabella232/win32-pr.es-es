@@ -13,7 +13,7 @@ ms.locfileid: "118322440"
 ---
 # <a name="blocking-operations"></a>Operaciones de bloqueo
 
-La noción de bloqueo en un entorno Windows ha sido históricamente muy importante. En Windows sockets 1.1, no se recomiendan las llamadas de bloqueo, ya que tienden a deshabilitar la interacción continua con el sistema. Además, emplean una técnica de pseudobloqueo que, por diversos motivos, no siempre funciona según lo previsto. Sin embargo, en entornos de Windows programados de forma preferente, las llamadas de bloqueo tienen mucho más sentido, se pueden implementar mediante servicios de sistema operativo nativo y, de hecho, son un mecanismo preferido por lo general. La API winsock 2 ya no admite psuedoblocking, pero dado que las correcciones de compatibilidad de Windows Sockets 1.1 deben seguir emulando este comportamiento, los proveedores de servicios deben admitirlo como se describe a continuación.
+La noción de bloqueo en un entorno Windows ha sido históricamente muy importante. En Windows sockets 1.1, no se recomienda bloquear las llamadas, ya que tienden a deshabilitar la interacción continua con el sistema. Además, emplean una técnica de pseudobloqueo que, por diversos motivos, no siempre funciona según lo previsto. Sin embargo, en entornos de Windows programados de forma preferente, las llamadas de bloqueo tienen mucho más sentido, pueden implementarse mediante servicios de sistema operativo nativos y, de hecho, son un mecanismo preferido por lo general. La API winsock 2 ya no admite psuedoblocking, pero dado que las correcciones de compatibilidad de Windows Sockets 1.1 deben seguir emulando este comportamiento, los proveedores de servicios deben admitirlo como se describe a continuación.
 
  
 

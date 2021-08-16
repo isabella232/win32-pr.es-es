@@ -1,10 +1,10 @@
 ---
 title: atributo uniqueMember
-description: Nombre distintivo del miembro de un grupo. Usado por groupOfUniqueNames.
+description: Nombre distintivo del miembro de un grupo. Lo usa groupOfUniqueNames.
 ms.assetid: a299d2c9-bf45-435c-9868-b1ffdbaa96d2
 ms.tgt_platform: multiple
 keywords:
-- uniqueMember esquema de AD de atributos
+- Esquema de AD del atributo uniqueMember
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a9cf5ade98d14d61920649bfe7f1cf895761042
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9cd4b57a60b776a0141561ffb99a3604f793e6233977df106ace5c851bf1cf6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836488"
 ---
 # <a name="uniquemember-attribute"></a>atributo uniqueMember
 
-Nombre distintivo del miembro de un grupo. Usado por groupOfUniqueNames.
+Nombre distintivo del miembro de un grupo. Lo usa groupOfUniqueNames.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | uniqueMember                            |
-| Nombre para mostrar de LDAP | uniqueMember                            |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| Ldap-Display-Name | uniqueMember                            |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 2.5.4.50                                |
-| System-ID-GUID    | 8f888726-f80a-44d7-b1ee-cb9df21392c8    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 8f888726-f80a-44d7-b1ee-cb9df21392c8    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -51,15 +51,15 @@ Nombre distintivo del miembro de un grupo. Usado por groupOfUniqueNames.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -72,15 +72,15 @@ Nombre distintivo del miembro de un grupo. Usado por groupOfUniqueNames.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -93,15 +93,15 @@ Nombre distintivo del miembro de un grupo. Usado por groupOfUniqueNames.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -114,15 +114,15 @@ Nombre distintivo del miembro de un grupo. Usado por groupOfUniqueNames.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -135,15 +135,15 @@ Nombre distintivo del miembro de un grupo. Usado por groupOfUniqueNames.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |

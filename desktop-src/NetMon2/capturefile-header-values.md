@@ -93,21 +93,21 @@ Hora de captura.
 **FrameTableOffset**
 </dt> <dd>
 
-Tabla de índice de fotogramas.
+Tabla de índice de marco.
 
 </dd> <dt>
 
 **FrameTableLength**
 </dt> <dd>
 
-Tamaño de la tabla de índice de fotogramas.
+Tamaño de tabla de índice de marco.
 
 </dd> <dt>
 
 **UserDataOffset**
 </dt> <dd>
 
-Desplazamiento de datos de usuario.
+Desplazamiento de datos del usuario.
 
 </dd> <dt>
 

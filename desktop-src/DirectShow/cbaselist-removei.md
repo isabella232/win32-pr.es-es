@@ -1,7 +1,7 @@
 ---
-description: El método removei quita el elemento en la posición especificada.
+description: El método RemoveI quita el elemento en la posición especificada.
 ms.assetid: 6a6d54ce-7ab3-48dd-8d5d-1315816bcbb9
-title: Método CBaseList. removei (Wxlist. h)
+title: Método CBaseList.RemoveI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a4511a9867f61596572c959a3d763eb56d862311
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac3277f30e959e42cf2fd2d1aeeb13f81cb17515abb8434a8ae13406d244aaec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823742"
 ---
-# <a name="cbaselistremovei-method"></a>CBaseList. Remove (método)
+# <a name="cbaselistremovei-method"></a>Método CBaseList.RemoveI
 
 El `RemoveI` método quita el elemento en la posición especificada.
 
@@ -45,7 +45,7 @@ void* RemoveI(
 *pos* 
 </dt> <dd>
 
-Valor de posición que indica el elemento que se va a quitar.
+Valor POSITION que indica el elemento que se quitará.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Valor de posición que indica el elemento que se va a quitar.
 
 Devuelve un puntero al elemento.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método elimina el nodo de la lista, pero no elimina el elemento contenido en ese nodo.
 
-Si *pos* es **null**, el método devuelve **null**.
+Si *pos* es **NULL,** el método devuelve **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,16 +65,16 @@ Si *pos* es **null**, el método devuelve **null**.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

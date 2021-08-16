@@ -1,7 +1,7 @@
 ---
-description: 'El método ReceiveCanBlock determina si las llamadas al método IMemInputPin:: Receive podrían bloquearse. Este método implementa el método IMemInputPin:: ReceiveCanBlock.'
+description: El método ReceiveCanBlock determina si las llamadas al método IMemInputPin::Receive pueden bloquearse. Este método implementa el método IMemInputPin::ReceiveCanBlock.
 ms.assetid: db96e389-e1bc-4b38-8d0a-a20f0d3a4460
-title: Método CBaseInputPin. ReceiveCanBlock (Amfilter. h)
+title: Método CBaseInputPin.ReceiveCanBlock (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 93c80d6c8f834b45381b89e80d2e0acc392bf25a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4ece7243c145d34ed06e29b2a29ae9847e682981337b96a47976c20eb76272d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823857"
 ---
-# <a name="cbaseinputpinreceivecanblock-method"></a>CBaseInputPin. ReceiveCanBlock, método
+# <a name="cbaseinputpinreceivecanblock-method"></a>Método CBaseInputPin.ReceiveCanBlock
 
-El `ReceiveCanBlock` método determina si las llamadas al método [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) podrían bloquearse. Este método implementa el método [**IMemInputPin:: ReceiveCanBlock**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivecanblock) .
+El `ReceiveCanBlock` método determina si las llamadas al método [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) pueden bloquearse. Este método implementa el [**método IMemInputPin::ReceiveCanBlock.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivecanblock)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que aparecen en la tabla siguiente.
+Devuelve un **valor HRESULT.** El valor posible incluye los enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                             | Descripción                                                 |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | El PIN no se bloqueará en una llamada a **Receive**.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | El PIN podría bloquearse en una llamada a **Receive**.<br/>    |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | El pin no se bloqueará en una llamada a **Receive**.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | El pin podría bloquearse en una llamada a **Receive**.<br/>    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Devuelve S \_ false si se garantiza que las llamadas al método **Receive** no se bloquean. De lo contrario, devuelve \_ un código de error o correcto. Si el método **Receive** llama a **Receive** en un PIN de nivel inferior, el PIN de bajada podría bloquearse; `ReceiveCanBlock` debe tener en cuenta este factor.
+Devuelve S FALSE si se garantiza que las llamadas al \_ **método Receive** no se bloqueen. De lo contrario, devuelva S \_ OK o un código de error. Si el **método Receive** llama a **Receive** en un pin de bajada, el pin de bajada podría bloquearse; `ReceiveCanBlock` debe tener en cuenta ese factor.
 
-Un filtro de nivel superior puede utilizar este método para determinar su estrategia de subprocesos. Si el método **Receive** podría bloquearse, el filtro de nivel superior podría decidir usar un subproceso de trabajo que almacene en búfer los datos. Vea la clase [**COutputQueue**](coutputqueue.md) para obtener una implementación de esta estrategia.
+Un filtro ascendente puede usar este método para determinar su estrategia de subprocesos. Si el **método Receive** puede bloquearse, el filtro ascendente podría decidir usar un subproceso de trabajo que almacena en búfer los datos. Consulte la [**clase COutputQueue**](coutputqueue.md) para obtener una implementación de esta estrategia.
 
-En la clase base, este método devuelve S \_ OK cuando se cumple alguna de las siguientes condiciones:
+En la clase base, este método devuelve S OK cuando se cumple alguna \_ de las siguientes condiciones:
 
--   El filtro no tiene clavijas de salida.
--   Un PIN de entrada conectado a este filtro indica que podría bloquearse.
--   Un PIN de entrada conectado a este filtro no admite la interfaz [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) .
+-   El filtro no tiene ningún pin de salida.
+-   Un pin de entrada conectado a este filtro indica que podría bloquearse.
+-   Un pin de entrada conectado a este filtro no admite la [**interfaz IMemInputPin.**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,16 +73,16 @@ En la clase base, este método devuelve S \_ OK cuando se cumple alguna de las s
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

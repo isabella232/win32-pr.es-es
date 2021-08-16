@@ -1,7 +1,7 @@
 ---
-description: El método CBaseList implementa una lista abtract. La plantilla de clase CGenericList, que se deriva de CBaseList, proporciona comprobación de tipos y una interfaz más sencilla que la clase CBaseList.
+description: El método CBaseList implementa una lista de abstracciones. La plantilla de clase CGenericList, que se deriva de CBaseList, proporciona comprobación de tipos y una interfaz más sencilla que la clase CBaseList.
 ms.assetid: 372ee6f7-be0c-469f-92b3-673970ebd6da
-title: Clase CBaseList (Wxlist. h)
+title: CBaseList (clase, Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,59 +16,59 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c6aa4a3c80cd583bd3cc83a2a0adedecb6caaf7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5616edd16921bb2ae4d1a0b7ad67f5bbec3fba560594d4710512bd2cec6f275f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823715"
 ---
-# <a name="cbaselist-class"></a>Clase CBaseList
+# <a name="cbaselist-class"></a>CBaseList (clase)
 
 ![jerarquía de clases cbaselist](images/list01.png)
 
-El método **CBaseList** implementa una lista abtract. La plantilla de clase [**CGenericList**](cgenericlist.md) , que se deriva de **CBaseList**, proporciona comprobación de tipos y una interfaz más sencilla que la clase **CBaseList** .
+El **método CBaseList** implementa una lista de abstracciones. La [**plantilla de clase CGenericList,**](cgenericlist.md) que se deriva de **CBaseList,** proporciona comprobación de tipos y una interfaz más sencilla que la **clase CBaseList.**
 
-La clase **CBaseList** se modela después de la clase **CObList** en la biblioteca Microsoft Foundation Classes (MFC). Las posiciones dentro de la lista se representan mediante una estructura de posición. El llamador no debe tener acceso a los miembros internos de la estructura de la posición; se trata como un puntero a un nodo de lista. La posición de un objeto en la lista sigue siendo válida hasta que se elimina el objeto.
+La **clase CBaseList** se modela después de la **clase CObList** en la biblioteca Microsoft Foundation Classes (MFC). Las posiciones dentro de la lista se representan mediante una estructura POSITION. El autor de la llamada no debe tener acceso a los miembros internos de la estructura POSITION; tratarlo como un puntero a un nodo de lista. La posición de un objeto en la lista sigue siendo válida hasta que se elimina el objeto.
 
-La lista no requiere compatibilidad con los objetos que contiene. No realiza ninguna administración de almacenamiento ni copia de los objetos. Los objetos pueden estar en varias listas.
+La lista no requiere ninguna compatibilidad con los objetos que contiene. No realiza ninguna administración de almacenamiento ni copia en los objetos. Los objetos pueden estar en varias listas.
 
-Aproximadamente la mitad de los métodos de esta clase actúan en objetos únicos. Estos métodos tienen el sufijo-I en el nombre del método. Los otros métodos actúan en listas completas. Por ejemplo, el método [**CBaseList:: AddAfter**](cbaselist-addafter.md) anexa una lista a otra lista. Las operaciones de un solo objeto devuelven valores de posición o **null** en caso de error. Las operaciones de lista devuelven **true** si se realizan correctamente o **false** en caso contrario.
+Aproximadamente la mitad de los métodos de esta clase actúan sobre objetos individuales. Estos métodos tienen el sufijo : I en el nombre del método. Los otros métodos actúan en listas enteras. Por ejemplo, el [**método CBaseList::AddAfter**](cbaselist-addafter.md) anexa una lista a otra lista. Las operaciones de objeto único devuelven valores POSITION o **NULL en caso** de error. Las operaciones de lista **devuelven TRUE si** se realiza **correctamente** o FALSE de lo contrario.
 
 
 
-| Variables de miembro protegidas                             | Descripción                                                               |
+| Variables de miembro protegido                             | Descripción                                                               |
 |--------------------------------------------------------|---------------------------------------------------------------------------|
-| [**recuento de m \_**](cbaselist-m-count.md)                  | Número de elementos de la lista.                                              |
+| [**m \_ Count**](cbaselist-m-count.md)                  | Número de elementos de la lista.                                              |
 | [**m \_ pFirst**](cbaselist-m-pfirst.md)                | Puntero al primer nodo de la lista.                                    |
 | [**m \_ pLast**](cbaselist-m-plast.md)                  | Puntero al último nodo de la lista.                                     |
 | Métodos protegidos                                      | Descripción                                                               |
-| [**GetNextI**](cbaselist-getnexti.md)                 | Recupera el elemento en la posición especificada y hace avanzar la posición.  |
+| [**GetNextI**](cbaselist-getnexti.md)                 | Recupera el elemento en la posición especificada y avanza la posición.  |
 | [**GetI**](cbaselist-geti.md)                         | Recupera el elemento en la posición especificada.                             |
-| [**Buscar**](cbaselist-findi.md)                       | Recupera la primera posición que contiene el elemento especificado.               |
+| [**FindI**](cbaselist-findi.md)                       | Recupera la primera posición que contiene el elemento especificado.               |
 | [**RemoveHeadI**](cbaselist-removeheadi.md)           | Quita el primer elemento de la lista.                                       |
 | [**RemoveTailI**](cbaselist-removetaili.md)           | Quita el último elemento de la lista.                                        |
-| [**Cambiar movimiento**](cbaselist-removei.md)                   | Quita el elemento de en la posición especificada.                               |
+| [**RemoveI**](cbaselist-removei.md)                   | Quita el elemento de en la posición especificada.                               |
 | [**AddTailI**](cbaselist-addtaili.md)                 | Agrega un elemento al final de la lista.                                      |
-| [**AddHeadI**](cbaselist-addheadi.md)                 | Agrega un elemento al principio de la lista.                                    |
+| [**AddHeadI**](cbaselist-addheadi.md)                 | Agrega un elemento al frente de la lista.                                    |
 | [**AddAfterI**](cbaselist-addafteri.md)               | Inserta un elemento después de la posición especificada.                             |
 | [**AddBeforeI**](cbaselist-addbeforei.md)             | Inserta un elemento antes de la posición especificada.                            |
 | Métodos públicos                                         | Descripción                                                               |
-| [**CBaseList**](cbaselist-cbaselist.md)               | Método de constructor.                                                       |
-| [**~ CBaseList**](cbaselist--cbaselist.md)            | Método de destructor.                                                        |
-| [**RemoveAll**](cbaselist-removeall.md)               | Quita todos los nodos de la lista.                                          |
+| [**CBaseList**](cbaselist-cbaselist.md)               | Método constructor.                                                       |
+| [**~ CBaseList**](cbaselist--cbaselist.md)            | Método destructor.                                                        |
+| [**Removeall**](cbaselist-removeall.md)               | Quita todos los nodos de la lista.                                          |
 | [**GetHeadPositionI**](cbaselist-getheadpositioni.md) | Recupera la posición del primer elemento de la lista.                     |
 | [**GetTailPositionI**](cbaselist-gettailpositioni.md) | Recupera la posición del último elemento de la lista.                      |
 | [**GetCountI**](cbaselist-getcounti.md)               | Recupera el número de elementos de la lista.                                |
-| [**Next**](cbaselist-next.md)                         | Recupera la posición siguiente en la lista.                                  |
-| [**Anterior**](cbaselist-prev.md)                         | Recupera la posición anterior en la lista.                              |
-| [**AddHead**](cbaselist-addhead.md)                   | Inserta otra lista al principio de esta lista.                           |
-| [**Addtail (**](cbaselist-addtail.md)                   | Anexa otra lista al final de esta lista.                             |
+| [**Next**](cbaselist-next.md)                         | Recupera la siguiente posición de la lista.                                  |
+| [**Prev**](cbaselist-prev.md)                         | Recupera la posición anterior en la lista.                              |
+| [**AddHead**](cbaselist-addhead.md)                   | Inserta otra lista al frente de esta lista.                           |
+| [**AddTail**](cbaselist-addtail.md)                   | Anexa otra lista al final de esta lista.                             |
 | [**AddAfter**](cbaselist-addafter.md)                 | Inserta una lista después de la posición especificada.                              |
 | [**AddBefore**](cbaselist-addbefore.md)               | Inserta una lista antes de la posición especificada.                             |
-| [**MoveToTail**](cbaselist-movetotail.md)             | Divide la lista y anexa la parte del encabezado a la cola de otra lista. |
-| [**MoveToHead**](cbaselist-movetohead.md)             | Divide la lista e inserta la parte del final en el encabezado de otra lista. |
-| [**Viceversa**](cbaselist-reverse.md)                   | Invierte el orden de la lista.                                           |
+| [**MoveToTail**](cbaselist-movetotail.md)             | Divide la lista y anexa la parte principal al final de otra lista. |
+| [**MoveToHead**](cbaselist-movetohead.md)             | Divide la lista e inserta la parte final en la parte superior de otra lista. |
+| [**Marcha atrás**](cbaselist-reverse.md)                   | Invierte el orden de la lista.                                           |
 
 
 
@@ -80,16 +80,16 @@ Aproximadamente la mitad de los métodos de esta clase actúan en objetos único
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Clases base de DirectShow](directshow-base-classes.md)
+[DirectShow Clases base](directshow-base-classes.md)
 </dt> </dl>
 
  

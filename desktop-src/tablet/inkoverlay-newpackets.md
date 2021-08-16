@@ -13,7 +13,7 @@ ms.locfileid: "118219209"
 ---
 # <a name="inkoverlaynewpackets-event"></a>Evento InkOverlay.NewPackets
 
-Se produce cuando el recopiladores de entrada de lápiz resocia un paquete.
+Se produce cuando el recopiladores de entrada de lápiz resocia un paquete
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,7 +71,7 @@ Este evento no devuelve un valor.
 
 Los paquetes se reciben mientras se recopila un trazo. Los eventos de paquetes se producen rápidamente y un controlador de eventos [**NewPackets**](inkcollector-newpackets.md) debe ser rápido o el rendimiento se vería afectado.
 
-Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ DE DISPID \_ ICENewPackets.
+Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ de DISPID \_ ICENewPackets.
 
 Este evento debe usarse cuidadosamente, ya que podría tener un efecto adverso en el rendimiento de la entrada de lápiz si se ejecuta demasiado código en los controladores de eventos.
 
@@ -88,9 +88,9 @@ Para establecer qué propiedades están contenidas en esta matriz, use la [**pro
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

@@ -1,11 +1,11 @@
 ---
 title: Atributo ACS-Identity-Name
-description: Este atributo contiene el DN de un usuario o una unidad organizativa y es la identidad de un usuario o un grupo de usuarios a los que se aplica esta directiva de QoS.
+description: Este atributo contiene el DN de un usuario o unidad organizativa y es la identidad de un usuario o un grupo de usuarios a los que se aplica esta directiva de QoS.
 ms.assetid: 00e6e2bd-aec8-426f-b89e-0661c15cfd46
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo ACS-Identity-Name
-- aCSIdentityName esquema de AD de atributos
+- Esquema de AD del atributo aCSIdentityName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33ef1db92b908ef8474dfb125aca678d3c22d09f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f7f623f15510d38243822420925f628d427d2adc975f2b140b78dc191a91200a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838405"
 ---
 # <a name="acs-identity-name-attribute"></a>Atributo ACS-Identity-Name
 
-Este atributo contiene el DN de un usuario o una unidad organizativa y es la identidad de un usuario o un grupo de usuarios a los que se aplica esta directiva de QoS.
+Este atributo contiene el DN de un usuario o unidad organizativa y es la identidad de un usuario o un grupo de usuarios a los que se aplica esta directiva de QoS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Nombre de identidad de ACS                           |
-| Nombre para mostrar de LDAP | aCSIdentityName                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| CN                | ACS-Identity-Name                           |
+| Ldap-Display-Name | aCSIdentityName                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.784                      |
-| System-ID-GUID    | dab029b6-ddf7-11d1-90a5-00c04fd91ab1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | dab029b6-ddf7-11d1-90a5-00c04fd91ab1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,20 +53,20 @@ Este atributo contiene el DN de un usuario o una unidad organizativa y es la ide
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Este atributo contiene el DN de un usuario o una unidad organizativa y es la ide
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Este atributo contiene el DN de un usuario o una unidad organizativa y es la ide
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo contiene el DN de un usuario o una unidad organizativa y es la ide
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Este atributo contiene el DN de un usuario o una unidad organizativa y es la ide
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Este atributo contiene el DN de un usuario o una unidad organizativa y es la ide
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Se produce antes de que el objeto InkOverlay o InkPicture haya completado el propio dibujo.
+description: Se produce antes de que el objeto InkOverlay o InkPicture haya terminado de volver a dibujarse.
 ms.assetid: abfd37fb-2d2b-4d60-96a1-08f68b73417b
 title: Evento InkOverlay.Painting (Msyecciónut.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118218948"
 ---
 # <a name="inkoverlaypainting-event"></a>Evento InkOverlay.Painting
 
-Se produce antes de que el [**objeto InkOverlay**](inkoverlay-class.md) o [InkPicture](inkpicture-control-reference.md) haya completado el propio dibujo.
+Se produce antes de que [**el objeto InkOverlay**](inkoverlay-class.md) o [InkPicture](inkpicture-control-reference.md) haya terminado de volver a dibujarse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,7 +35,7 @@ void Painting(
 *hDC* \[ En\]
 </dt> <dd>
 
-Contexto del dispositivo en el que se producirá el dibujo.
+Contexto del dispositivo en el que se realizará la pintura.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en las interfaces de solo distribución \_ (dispinterfaces) de IInkOverlayEvents e IInkPictureEvents con un identificador de \_ DISPID \_ IOEPainting.
+Este método de evento se define en las interfaces de solo envío \_ (dispinterfaces) de IInkOverlayEvents e IInkPictureEvents con un identificador de \_ DISPID \_ IOEPainting.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ Este método de evento se define en las interfaces de solo distribución \_ (dis
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

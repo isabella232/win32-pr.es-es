@@ -3,7 +3,7 @@ title: Propiedad Ribbon.QuickAccessToolbar
 description: Representa un contenedor para la barra de herramientas de acceso rápido (QAT).
 ms.assetid: 8a873a48-4f8b-439d-acad-7da2081fbf40
 keywords:
-- Cinta de opciones de la propiedad Ribbon.QuickAccessToolbar Windows cinta de opciones
+- Ribbon.QuickAccessToolbar, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:

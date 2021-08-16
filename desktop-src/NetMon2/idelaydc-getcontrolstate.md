@@ -1,5 +1,5 @@
 ---
-description: 'Método IDelaydC::GetControlState: el método GetControlState recupera el estado de la captura, lo que indica si la captura se está ejecutando o en pausa.'
+description: 'Método IDelaydC::GetControlState: el método GetControlState recupera el estado de la captura, que indica si la captura se está ejecutando o en pausa.'
 ms.assetid: 21b7faaa-591f-4e15-b4e9-453ea690ab4a
 title: Método IDelaydC::GetControlState (Netmon.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118365898"
 ---
 # <a name="idelaydcgetcontrolstate-method"></a>IDelaydC::GetControlState (método)
 
-El **método GetControlState** recupera el estado de [*la*](c.md)captura , lo que indica si la captura se está ejecutando o en pausa.
+El **método GetControlState** recupera el estado de [*la*](c.md)captura , que indica si la captura se está ejecutando o en pausa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,14 +59,14 @@ Indicador de que la captura actual está en pausa.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IDelaydC::Conectar](idelaydc-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ NO \_ RETRASADO**</dt> </dl>   | El NPP está conectado a la red, pero no con [el método IDelaydC::Conectar.](idelaydc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ RETRASADA**</dt> </dl>   | El NPP está conectado a la red, pero no con [el método IDelaydC::Conectar.](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -76,7 +76,7 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 Se puede llamar a este método cada vez que el NPP se conecta a la red mediante la [interfaz IDelaydC.](idelaydc.md) Puede usar este método para averiguar si se está ejecutando una captura, si la captura está en pausa o si la captura se ha detenido pero el NPP no está desconectado.
 
-Los métodos usados para iniciar, pausar y detener la captura se enumeran en la lista Ver también a continuación.
+Los métodos usados para iniciar, pausar y detener la captura se enumeran en la lista Vea también a continuación.
 
 ## <a name="requirements"></a>Requisitos
 

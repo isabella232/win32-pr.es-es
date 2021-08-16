@@ -72,7 +72,7 @@ Puntero a una variable que recibe la ruta de acceso real al  archivo, si difiere
 *Marcas* 
 </dt> <dd>
 
-Combinación bit a bit de cero o más marcas. Para obtener una lista de las marcas posibles, vea [**Marcas de validación de nombre de archivo**](file-name-validation-flags.md).
+Combinación bit a bit de cero o más marcas. Para obtener una lista de las marcas posibles, vea [**Marcas de validación de nombres de archivo**](file-name-validation-flags.md).
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="remarks"></a>Comentarios
 
-La cadena de filtro del cuadro de diálogo Abrir archivo, especificada por el *parámetro FilterString,* contiene caracteres NULL internos. Por ejemplo, Video \\ 0 \*.avi\\ 0 \\ 0 es una cadena de filtro válida. No se puede usar la función **SysAllocStr** para asignar el BSTR, porque esa función espera una cadena terminada en NULL y truncará la cadena en el primer carácter NULL. Por lo tanto, use una función como **SysAllocStringLen**, que incluye un parámetro explícito para la longitud:
+La cadena de filtro para el cuadro de diálogo Abrir archivo, especificada por el *parámetro FilterString,* contiene caracteres NULL internos. Por ejemplo, Video \\ 0 \*.avi\\ 0 \\ 0 es una cadena de filtro válida. No se puede usar la función **SysAllocStr** para asignar el BSTR, porque esa función espera una cadena terminada en NULL y truncará la cadena en el primer carácter NULL. Por lo tanto, use una función como **SysAllocStringLen**, que incluye un parámetro explícito para la longitud:
 
 
 ```C++

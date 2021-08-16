@@ -60,10 +60,10 @@ Un contenedor que admite Visual Basic controles enlazados a datos, pero no admit
 
 <dl> <dt>
 
-[Asociar iconos a una categoría](associating-icons-with-a-category.md)
+[Asociación de iconos a una categoría](associating-icons-with-a-category.md)
 </dt> <dt>
 
-[Categorización por funcionalidades de componentes](categorizing-by-component-capabilities.md)
+[Categorización por funcionalidades de componente](categorizing-by-component-capabilities.md)
 </dt> <dt>
 
 [Clases y asociaciones predeterminadas](default-classes-and-associations.md)

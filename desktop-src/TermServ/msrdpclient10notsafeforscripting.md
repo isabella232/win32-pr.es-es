@@ -192,7 +192,7 @@ La **clase MsRdpClient10NotSafeForScripting** tiene estas propiedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-allowpromptingforcredentials.md"><strong>AllowPromptingForCredentials</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si el control Escritorio remoto ActiveX puede solicitar credenciales al usuario.<br/></td>
+<td style="text-align: left;">Especifica si el control Escritorio remoto ActiveX puede solicitar al usuario las credenciales.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscnonscriptable-binarypassword.md"><strong>BinaryPassword</strong></a><br/></td>
@@ -212,7 +212,7 @@ La **clase MsRdpClient10NotSafeForScripting** tiene estas propiedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscnonscriptable-cleartextpassword.md"><strong>ClearTextPassword</strong></a><br/></td>
 <td style="text-align: left;">Solo escritura<br/></td>
-<td style="text-align: left;">La Escritorio remoto ActiveX de control, en formato de texto no cifrado.<br/></td>
+<td style="text-align: left;">El Escritorio remoto ActiveX contraseña de control, en formato de texto no cifrado.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient-colordepth.md"><strong>Colordepth</strong></a><br/></td>
@@ -262,7 +262,7 @@ La **clase MsRdpClient10NotSafeForScripting** tiene estas propiedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-disableremoteappcapscheck.md"><strong>DisableRemoteAppCapsCheck</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si el control Escritorio remoto ActiveX no debe comprobar las funcionalidades de RemoteApp en el servidor.<br/></td>
+<td style="text-align: left;">Especifica si el control Escritorio remoto ActiveX no debe comprobar las funcionalidades de RemoteApp del servidor.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscax-disconnectedtext.md"><strong>DisconnectedText</strong></a><br/></td>
@@ -287,7 +287,7 @@ La **clase MsRdpClient10NotSafeForScripting** tiene estas propiedades.
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient-extendeddisconnectreason.md"><strong>ExtendedDisconnectReason</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">Información extendida sobre el motivo de desconexión del control de cliente.<br/></td>
+<td style="text-align: left;">Información ampliada sobre el motivo de la desconexión del control de cliente.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient-fullscreen.md"><strong>Fullscreen</strong></a><br/></td>
@@ -317,17 +317,17 @@ La **clase MsRdpClient10NotSafeForScripting** tiene estas propiedades.
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-markrdpsettingssecure.md"><strong>MarkRdpSettingsSecure</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si la configuración de RDP se marca como segura.<br/></td>
+<td style="text-align: left;">Especifica si la configuración de RDP está marcada como segura.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient5-msrdpclientshell.md"><strong>MsRdpClientShell</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">Configuración de cliente para el iniciador del portal web.<br/></td>
+<td style="text-align: left;">La configuración de cliente para el iniciador del portal web.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-negotiatesecuritylayer.md"><strong>NegotiateSecurityLayer</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si el valor NegotiateSecurityLayer es compatible con esta conexión.<br/>
+<td style="text-align: left;">Especifica si se admite la configuración NegotiateSecurityLayer para esta conexión.<br/>
 <blockquote>
 [!Note]<br />
 Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>CredSspSupport</strong></a> está habilitado y presente en el cliente, o cuando Capa de sockets seguros (SSL) está habilitado con la autenticación de usuario, NegotiateSecurityLayer se omite.
@@ -377,7 +377,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-redirectionwarningtype.md"><strong>RedirectionWarningType</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Controla la presencia y la apariencia del cuadro de diálogo de redirección.<br/></td>
+<td style="text-align: left;">Controla la presencia y la apariencia del cuadro de diálogo de redireccionamiento.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-remotemonitorcount.md"><strong>RemoteMonitorCount</strong></a><br/></td>
@@ -412,7 +412,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient-securedsettings2.md"><strong>SecuredSettings2</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">Puntero a la <a href="imsrdpclientsecuredsettings-interface.md"><strong>interfaz IMsRdpClientSecuredSettings,</strong></a> que se usa para establecer la configuración segura para el control de cliente.<br/></td>
+<td style="text-align: left;">Puntero a la <a href="imsrdpclientsecuredsettings-interface.md"><strong>interfaz IMsRdpClientSecuredSettings,</strong></a> que se usa para establecer la configuración protegida para el control de cliente.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient7-securedsettings3.md"><strong>SecuredSettings3</strong></a><br/></td>
@@ -447,7 +447,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient6-transportsettings2.md"><strong>TransportSettings2</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">Interfaz para <a href="imsrdpclienttransportsettings2.md"><strong>IMsRdpClientTransportSettings2</strong></a>.<br/></td>
+<td style="text-align: left;">Interfaz de <a href="imsrdpclienttransportsettings2.md"><strong>IMsRdpClientTransportSettings2</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient7-transportsettings3.md"><strong>TransportSettings3</strong></a><br/></td>
@@ -462,7 +462,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-trustedzonesite.md"><strong>TrustedZoneSite</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si el sitio web desde el que el usuario inició la conexión se encuentra en la lista de sitios de confianza del equipo cliente.<br/></td>
+<td style="text-align: left;">Especifica si el sitio web desde el que el usuario inició la conexión está en la lista de sitios de confianza del equipo cliente.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable2-uiparentwindowhandle.md"><strong>UIParentWindowHandle</strong></a><br/></td>
@@ -477,7 +477,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdppreferredredirectioninfo-useredirectionservername.md"><strong>UseRedirectionServerName</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Si se va a usar el nombre del servidor de redireccionamiento.<br/></td>
+<td style="text-align: left;">Si se va a usar el nombre del servidor de redirección.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscax-username.md"><strong>nombre de usuario</strong></a><br/></td>

@@ -13,9 +13,9 @@ ms.locfileid: "118218534"
 ---
 # <a name="instantiating-the-peninputpanel-class"></a>Creación de instancias de la clase PenInputPanel
 
-\[[**PenInputPanel**](peninputpanel-class.md) se ha reemplazado por [Microsoft.Ink.TextInput](/previous-versions/dotnet/netframework-3.5/ms581554(v=vs.90)). Consulte Programar el [panel de entrada de texto](programming-the-text-input-panel.md).\]
+\[[**PenInputPanel**](peninputpanel-class.md) se ha reemplazado [por Microsoft.Ink.TextInput](/previous-versions/dotnet/netframework-3.5/ms581554(v=vs.90)). Consulte Programar el [panel de entrada de texto](programming-the-text-input-panel.md).\]
 
-Puede crear instancias de varios objetos [**PenInputPanel,**](peninputpanel-class.md) asociar uno a cada control en un formulario, o puede crear una instancia de un objeto **PenInputPanel** y moverlo entre los controles de los controladores de eventos de foco. Dado que solo un control de edición puede tener el foco a la vez, el segundo método puede ahorrar memoria. Se ha implementado una versión del ejemplo de notificaciones automáticas denominada [Ejemplo PenInputPanel](peninputpanel-sample.md) que muestra ambas técnicas.
+Puede crear una instancia de varios objetos [**PenInputPanel,**](peninputpanel-class.md) asociar uno a cada control en un formulario, o puede crear una instancia de un objeto **PenInputPanel** y moverlo entre los controles de los controladores de eventos de foco. Dado que solo un control de edición puede tener el foco a la vez, el segundo método puede ahorrar memoria. Se ha implementado una versión del ejemplo de notificaciones automáticas denominada [Ejemplo PenInputPanel](peninputpanel-sample.md) que muestra ambas técnicas.
 
 En las secciones siguientes se describe cómo crear y mostrar [**objetos PenInputPanel.**](peninputpanel-class.md)
 

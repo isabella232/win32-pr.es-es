@@ -1,5 +1,5 @@
 ---
-description: Como con otros lenguajes como PowerShell, VBScript o C++, puede usar C# para supervisar de forma remota el hardware y el software de los equipos remotos.
+description: Al igual que con otros lenguajes como PowerShell, VBScript o C++, puede usar C# para supervisar de forma remota el hardware y el software en equipos remotos.
 ms.assetid: 9E03A8D0-01AB-4B7E-99B6-FEEF9C1CAE17
 ms.tgt_platform: multiple
 title: 'Conexión a WMI de forma remota con C #'
@@ -10,29 +10,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2ad9fe2008b52276a8f68149b33ae3729daaf7d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f9ed735a1440d124a065a9f509eac7c58b1fded9be0683e361903b9f02fc1f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118319443"
 ---
 # <a name="connecting-to-wmi-remotely-with-c"></a>Conexión a WMI de forma remota con C #
 
-Como con otros lenguajes como PowerShell, VBScript o C++, puede usar C# para supervisar de forma remota el hardware y el software de los equipos remotos. Las conexiones remotas para código administrado se realizan a través del espacio de nombres [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) . (Las versiones anteriores de WMI usaban el espacio de nombres [System. Management](/dotnet/api/system.management) , que se incluye aquí para integridad).
+Al igual que con otros lenguajes como PowerShell, VBScript o C++, puede usar C# para supervisar de forma remota el hardware y el software en equipos remotos. Las conexiones remotas para código administrado se logran a través del espacio [de nombres Microsoft.Management.Infrastructure.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) (Las versiones anteriores de WMI usaban [el espacio de nombres System.Management,](/dotnet/api/system.management) que se incluye aquí para mayor integridad).
 
 > [!Note]  
-> **System. Management** era el espacio de nombres .net original utilizado para tener acceso a WMI. sin embargo, las API de este espacio de nombres suelen ser más lentas y no se escalan con respecto a sus homólogos de **Microsoft. Management. Infrastructure** más modernos.
+> **System.Management era el** espacio de nombres original de .NET que se usaba para tener acceso a WMI; Sin embargo, las API de este espacio de nombres suelen ser más lentas y no escalan tan bien en relación con sus homólogos **microsoft.management.infrastructure** más modernos.
 
  
 
-La conexión remota mediante las clases del espacio de nombres [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) usa DCOM como mecanismo remoto subyacente. Las conexiones WMI remotas se deben ajustar a los requisitos de seguridad de DCOM en lo que respecta a la suplantación y la autenticación. De forma predeterminada, un ámbito está enlazado al equipo local y al \\ espacio de nombres del sistema "root CIMv2". Sin embargo, puede cambiar el equipo, el dominio y el espacio de nombres WMI al que tiene acceso. También puede establecer la autoridad, la suplantación, las credenciales y otras opciones de conexión.
+La conexión remota mediante clases en el espacio [de nombres Microsoft.Management.Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) usa DCOM como mecanismo remoto subyacente. Las conexiones WMI remotas se deben ajustar a los requisitos de seguridad de DCOM en lo que respecta a la suplantación y la autenticación. De forma predeterminada, un ámbito está enlazado al equipo local y al espacio de nombres del sistema \\ "ROOT CIMv2". Sin embargo, puede cambiar el equipo, el dominio y el espacio de nombres WMI a los que tiene acceso. También puede establecer la autoridad, la suplantación, las credenciales y otras opciones de conexión.
 
-**Para conectarse a WMI de forma remota con C# (Microsoft. Management. Infrastructure)**
+**Para conectarse a WMI de forma remota con C# (Microsoft.Management.Infrastructure)**
 
-1.  Cree una sesión en el equipo remoto con una llamada a [CimSession. Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832539(v=vs.85)).
+1.  Cree una sesión en el equipo remoto con una llamada a [CimSession.Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832539(v=vs.85)).
 
-    Si se va a conectar a un equipo remoto con las mismas credenciales (dominio y nombre de usuario) con la que ha iniciado sesión, puede especificar el nombre del equipo en la llamada de [creación](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832539(v=vs.85)) . Una vez que tenga el objeto [CimSession](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832509(v=vs.85)) devuelto, puede realizar la consulta de WMI.
+    Si se conecta a un equipo remoto con las mismas credenciales (dominio y nombre de usuario) con las que ha iniciado sesión, puede especificar el nombre del equipo en la llamada [a](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832539(v=vs.85)) Crear. Una vez que haya devuelto [el objeto CimSession,](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832509(v=vs.85)) puede realizar la consulta WMI.
 
     ```CSharp
     using Microsoft.Management.Infrastructure;
@@ -45,11 +45,11 @@ La conexión remota mediante las clases del espacio de nombres [Microsoft. Manag
 
     
 
-    Para obtener más información sobre cómo realizar consultas WMI con la API **Microsoft. Management. Infrastructure** en C#, vea [recuperar datos de clase o instancia de WMI](retrieving-class-or-instance-data.md).
+    Para obtener más información sobre cómo realizar consultas WMI con la API **Microsoft.Management.Infrastructure** en C#, vea Recuperar datos de instancia o [clase WMI.](retrieving-class-or-instance-data.md)
 
-2.  Si desea establecer diferentes opciones para la conexión, como las distintas credenciales, la configuración regional o los niveles de suplantación, debe usar un objeto [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)) en la llamada a [CimSession. Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85)).
+2.  Si desea establecer diferentes opciones para la conexión, como diferentes credenciales, configuración regional o niveles de suplantación, debe usar un objeto [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)) en la llamada a [CimSession.Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85)).
 
-    [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)) es una clase base para [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) y [DComSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832688(v=vs.85)). Puede usar o para establecer las opciones de las sesiones de WS-Man y DCOM, respectivamente. En el ejemplo de código siguiente se describe el uso de un objeto [DComSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832688(v=vs.85)) para establecer el nivel de suplantación en Impersonate.
+    [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)) es una clase base para [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) y [DComSessionOptions.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832688(v=vs.85)) Puede usar cualquiera de las opciones para establecer las opciones en las sesiones WS-Man y DCOM, respectivamente. En el ejemplo de código siguiente se describe el uso de un [objeto DComSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832688(v=vs.85)) para establecer el nivel de suplantación en Suplantar.
 
     ```CSharp
     string computer = "Computer_B"
@@ -61,9 +61,9 @@ La conexión remota mediante las clases del espacio de nombres [Microsoft. Manag
 
     
 
-3.  Si desea establecer las credenciales para la conexión, tendrá que crear y agregar un objeto [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) a [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)).
+3.  Si desea establecer las credenciales de la conexión, deberá crear y agregar un objeto [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) a [CimSessionOptions.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))
 
-    En el ejemplo de código siguiente se describe cómo crear una clase [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) , rellenarla con el [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))adecuado y usarla en una llamada [CimSession. Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85)) .
+    En el ejemplo de código siguiente se describe cómo crear una clase [WSManSessionOptions,](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) rellenarla con el [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))adecuado y usarlo en una [llamada a CimSession.Create.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85))
 
     ```CSharp
     string computer = “Computer_B”;
@@ -85,15 +85,15 @@ La conexión remota mediante las clases del espacio de nombres [Microsoft. Manag
 
     
 
-    Por lo general, se recomienda no codificar una contraseña en las aplicaciones; como indica el ejemplo de código anterior, siempre que sea posible, intente consultar a su usuario la contraseña y guárdela de forma segura.
+    Por lo general, se recomienda no codificar de forma segura una contraseña en las aplicaciones. Como indica el ejemplo de código anterior, siempre que sea posible, intente consultar la contraseña al usuario y almacenarla de forma segura.
 
-WMI está diseñado para supervisar el hardware y el software en equipos remotos. Las conexiones remotas para WMI v1 se realizan a través del objeto [ManagementScope](/dotnet/api/system.management.managementscope) .
+WMI está diseñado para supervisar el hardware y el software en equipos remotos. Las conexiones remotas para WMI v1 se logran a través del [objeto ManagementScope.](/dotnet/api/system.management.managementscope)
 
-**Para conectarse a WMI de forma remota con C# (System. Management)**
+**Para conectarse a WMI de forma remota con C# (System.Management)**
 
-1.  Cree un objeto [ManagementScope](/dotnet/api/system.management.managementscope) , utilizando el nombre del equipo y la ruta de acceso WMI, y conéctese a su destino con una llamada a ManagementScope. Connect ().
+1.  Cree un [objeto ManagementScope,](/dotnet/api/system.management.managementscope) con el nombre del equipo y la ruta de acceso WMI, y conéctese al destino con una llamada a ManagementScope. Conectar().
 
-    Si se va a conectar a un equipo remoto con las mismas credenciales (dominio y nombre de usuario) con la que ha iniciado sesión, solo tendrá que especificar la ruta de acceso WMI. Una vez que se haya conectado, puede realizar la consulta de WMI.
+    Si se conecta a un equipo remoto con las mismas credenciales (dominio y nombre de usuario) con las que ha iniciado sesión, solo tiene que especificar la ruta de acceso de WMI. Una vez que se haya conectado, puede realizar la consulta WMI.
 
     ```CSharp
     using System.Management;
@@ -106,11 +106,11 @@ WMI está diseñado para supervisar el hardware y el software en equipos remotos
 
     
 
-    Para obtener más información sobre cómo realizar consultas WMI con la API [System. Management](/dotnet/api/system.management) en C#, vea [recuperar datos de clase o instancia de WMI](retrieving-class-or-instance-data.md).
+    Para obtener más información sobre cómo realizar consultas WMI con la API [System.Management](/dotnet/api/system.management) en C#, vea Recuperar datos de instancia [o clase WMI.](retrieving-class-or-instance-data.md)
 
-2.  Si se conecta a un equipo remoto en un dominio diferente o usa un nombre de usuario y una contraseña diferentes, debe usar un objeto [ConnectionOptions](/dotnet/api/system.management.connectionoptions) en la llamada a [ManagementScope](/dotnet/api/system.management.managementscope).
+2.  Si se conecta a un equipo remoto en un dominio diferente o con un nombre de usuario y una contraseña diferentes, debe usar un objeto [ConnectionOptions](/dotnet/api/system.management.connectionoptions) en la llamada a [ManagementScope](/dotnet/api/system.management.managementscope).
 
-    [ConnectionOptions](/dotnet/api/system.management.connectionoptions) contiene propiedades para describir la autenticación, la suplantación, el nombre de usuario, la contraseña y otras opciones de conexión. En el ejemplo de código siguiente se describe el uso de [ConnectionOptions](/dotnet/api/system.management.connectionoptions) para establecer el nivel de suplantación en Impersonate.
+    [ConnectionOptions contiene propiedades](/dotnet/api/system.management.connectionoptions) para describir las opciones de autenticación, suplantación, nombre de usuario, contraseña y otras opciones de conexión. En el ejemplo de código siguiente se describe el uso [de ConnectionOptions para](/dotnet/api/system.management.connectionoptions) establecer el nivel de suplantación en Suplantar.
 
     ```CSharp
     ConnectionOptions options = new ConnectionOptions();
@@ -125,13 +125,13 @@ WMI está diseñado para supervisar el hardware y el software en equipos remotos
 
     
 
-    En general, se recomienda establecer el nivel de suplantación en Impersonate, a menos que se necesite explícitamente. Además, intente evitar escribir su nombre y contraseña en código C#. (Si es posible, consulte si puede consultar al usuario para que los suministre dinámicamente en tiempo de ejecución).
+    Por lo general, se recomienda establecer el nivel de suplantación en Suplantar a menos que se necesite explícitamente lo contrario. Además, intente evitar escribir su nombre y contraseña en código de C#. (Si es posible, vea si puede consultar al usuario para proporcionarlos dinámicamente en tiempo de ejecución).
 
-    Para obtener más ejemplos de configuración de distintas propiedades en una conexión WMI remota, consulte la sección ejemplos de la página de referencia de [ConnectionOptions](/dotnet/api/system.management.connectionoptions) .
+    Para obtener más ejemplos de cómo establecer diferentes propiedades en una conexión WMI remota, vea la sección Ejemplos de la [página de referencia ConnectionOptions.](/dotnet/api/system.management.connectionoptions)
 
-## <a name="microsoftmanagementinfrastructure-example"></a>Ejemplo de Microsoft. Management. Infrastructure
+## <a name="microsoftmanagementinfrastructure-example"></a>Ejemplo de Microsoft.Management.Infrastructure
 
-En el siguiente ejemplo de código de C#, basado en la siguiente [entrada de blog de TechNet](/archive/blogs/josebda/sample-c-code-for-using-the-latest-wmi-classes-to-manage-windows-storage), se describe cómo usar [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) y [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) para establecer credenciales en una conexión remota.
+En el siguiente ejemplo de código de C#, basado en la siguiente entrada de blog en [TechNet,](/archive/blogs/josebda/sample-c-code-for-using-the-latest-wmi-classes-to-manage-windows-storage)se describe cómo usar [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) y [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) para establecer credenciales en una conexión remota.
 
 
 ```CSharp
@@ -214,9 +214,9 @@ namespace SMAPIQuery
 
 
 
-## <a name="systemmanagement-example"></a>Ejemplo de System. Management
+## <a name="systemmanagement-example"></a>Ejemplo de System.Management
 
-En el ejemplo de código de C# siguiente se describe una conexión remota general, mediante los objetos System. Management.
+En el siguiente ejemplo de código de C# se describe una conexión remota general, mediante los objetos System.Management.
 
 
 ```CSharp

@@ -1,5 +1,5 @@
 ---
-title: Sintaxis de Object (DS-DN)
+title: Sintaxis de objeto (DS-DN)
 description: Cadena que contiene un nombre distintivo (DN).
 ms.assetid: 089104c4-ff82-49ea-a8db-a6dadc3a18bc
 ms.tgt_platform: multiple
@@ -13,32 +13,32 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45154985fa7fbfc4d95d563196357d43eac2ea72
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ad0c9adf4138de56d90ac89743c3b428a1f25b45027bc19f0b5dccc2e005b143
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835688"
 ---
-# <a name="objectds-dn-syntax"></a>Sintaxis de Object (DS-DN)
+# <a name="objectds-dn-syntax"></a>Sintaxis de objeto (DS-DN)
 
-Cadena que contiene un nombre distintivo (DN). En el caso de los atributos con esta sintaxis, Active Directory controla los valores de atributo como referencias al objeto identificado por el DN y actualiza automáticamente el valor si el objeto se mueve o se cambia de nombre. En el caso de las consultas que incluyen atributos de sintaxis DN en un filtro, especifique nombres distintivos completos. No se admiten los caracteres comodín (por ejemplo, CN = John \* ).
+Cadena que contiene un nombre distintivo (DN). Para los atributos con esta sintaxis, Active Directory los valores de atributo como referencias al objeto identificado por el DN y actualiza automáticamente el valor si se mueve o se cambia el nombre del objeto. Para las consultas que incluyen atributos de sintaxis DN en un filtro, especifique nombres completos distintivos. No se admiten caracteres comodín (por ejemplo, \* cn=John).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|------------------------------------------------------------------------|
 | Nombre         | Object(DS-DN)                                                           |
-| IDENTIFICADOR de sintaxis    | 2.5.5.1                                                                |
-| IDENTIFICADOR DE OM        | 127                                                                    |
-| Tipo MAPI    | OBJECT                                                                 |
-| Tipo ADS     | ADSTYPE \_ \_ cadena DN                                                    |
-| Tipo Variant | VT \_ BSTR                                                               |
-| Tipo de SDS     | [System.String](/dotnet/api/system.string) |
+| Identificador de sintaxis    | 2.5.5.1                                                                |
+| Id. de OM        | 127                                                                    |
+| Tipo DE MAPI    | OBJECT                                                                 |
+| ADS Type     | ADSTYPE \_ DN \_ STRING                                                    |
+| Tipo de variante | VT \_ BSTR                                                               |
+| Tipo sds     | [System.String](/dotnet/api/system.string) |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

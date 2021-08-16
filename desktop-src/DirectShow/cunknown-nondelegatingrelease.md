@@ -1,7 +1,7 @@
 ---
-description: 'Disminuye el recuento de referencias en el objeto. Este método implementa el método INonDelegatingUnknown:: NonDelegatingRelease.'
+description: Disminuye el recuento de referencias en el objeto . Este método implementa el método INonDelegatingUnknown::NonDelegatingRelease.
 ms.assetid: 58610f7d-5524-450f-a0f8-b299944abc78
-title: Método CUnknown. NonDelegatingRelease (ComBase. h)
+title: Método CUnknown.NonDelegatingRelease (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec709d4b636eea6a145f9a24a868ad5c495e4477
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ac5145e1776602c5bb358805c45ec271766fe918b7924d948e286ae32b31794
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821960"
 ---
-# <a name="cunknownnondelegatingrelease-method"></a>CUnknown. NonDelegatingRelease, método
+# <a name="cunknownnondelegatingrelease-method"></a>CUnknown.NonDelegatingRelease (método)
 
-Disminuye el recuento de referencias en el objeto. Este método implementa el método **INonDelegatingUnknown:: NonDelegatingRelease** .
+Disminuye el recuento de referencias en el objeto . Este método implementa el **método INonDelegatingUnknown::NonDelegatingRelease.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve el recuento de referencias.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el recuento de referencias llega a cero, el objeto se elimina a sí mismo.
+Cuando el recuento de referencias alcanza cero, el objeto se elimina a sí mismo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Cuando el recuento de referencias llega a cero, el objeto se elimina a sí mismo
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
