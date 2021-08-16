@@ -1,9 +1,9 @@
 ---
-title: Tipo simple de UInt16Type
-description: Define un tipo Short sin signo.
+title: Tipo simple UInt16Type
+description: Define un tipo corto sin signo.
 ms.assetid: 2200bb14-8f38-43fd-aed3-2a6b3ac33ed5
 keywords:
-- UInt16Type de tipo simple de registro
+- Tipo simple EventLog de UInt16Type
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e687f42a43a12266267a0531ce078e8c6b5d1031
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3398b0ad92724c8b7f415bd85e8101d7c74cc6a9391e1f95349f6ef629dff0c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118343735"
 ---
-# <a name="uint16type-simple-type"></a>Tipo simple de UInt16Type
+# <a name="uint16type-simple-type"></a>Tipo simple UInt16Type
 
-Define un tipo Short sin signo. El valor se puede especificar como un entero de 2 bytes o como un valor hexadecimal en el intervalo comprendido entre 0 y 65.535.
+Define un tipo corto sin signo. El valor se puede especificar como un entero de 2 bytes o un valor hexadecimal en el intervalo comprendido entre 0 y 65 535.
 
 ``` syntax
 <xs:simpleType name="UInt16Type">
@@ -36,10 +36,10 @@ Define un tipo Short sin signo. El valor se puede especificar como un entero de 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

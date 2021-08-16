@@ -1,21 +1,21 @@
 ---
-description: Un almacén de directivas de autorización contiene información de directiva de autorización para una o más aplicaciones. Para cada aplicación que usa ese almacén de directivas, debe crear un objeto IAzApplication y guardarlo en un almacén de directivas.
+description: Un almacén de directivas de autorización contiene información de directiva de autorización para una o varias aplicaciones. Para cada aplicación que use ese almacén de directivas, debe crear un objeto IAzApplication y guardarlo en un almacén de directivas.
 ms.assetid: 2bba1068-ae03-4388-be4d-9865e42e440e
 title: Crear un objeto de aplicación en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86885124e2fff52bc5cce2260e3d7fb727b58eb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a434bb87d064a7fe19698e78565577238f75051fbf233e36ddf2da1725987c06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117782629"
 ---
 # <a name="creating-an-application-object-in-c"></a>Crear un objeto de aplicación en C++
 
-Un almacén de directivas de autorización contiene información de directiva de autorización para una o más aplicaciones. Para cada aplicación que usa ese almacén de directivas, debe crear un objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) y guardarlo en un almacén de directivas.
+Un almacén de directivas de autorización contiene información de directiva de autorización para una o varias aplicaciones. Para cada aplicación que use ese almacén de directivas, debe crear un objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) y guardarlo en un almacén de directivas.
 
-En el ejemplo siguiente se muestra cómo crear un objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) que representa una aplicación y cómo agregar el objeto **IAzApplication** al almacén de directivas de autorización que usa la aplicación. En el ejemplo se da por supuesto que hay un almacén de directivas XML con el nombre MyStore.xml en el directorio raíz de la unidad C.
+En el ejemplo siguiente se muestra cómo crear un objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) que representa una aplicación y cómo agregar el objeto **IAzApplication** al almacén de directivas de autorización que usa la aplicación. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C.
 
 
 ```C++

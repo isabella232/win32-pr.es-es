@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de StringTableType
-description: Define una lista de cadenas traducidas a las que se puede hacer referencia en el manifiesto. | Tipo complejo de StringTableType
+title: Tipo complejo StringTableType
+description: Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto. | Tipo complejo StringTableType
 ms.assetid: 47a59ff7-aaf6-4200-805b-0a8b5f57f101
 keywords:
-- StringTableType tipo complejo EventLog
+- Tipo complejo StringTableType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a9964c51524f7401afdfdd8a2da10cf43326bcae
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f5d52f19ca01a926c82fcc1e13cc7191866722ba5e0e6eef81e916e244744783
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342989"
 ---
-# <a name="stringtabletype-complex-type"></a>Tipo complejo de StringTableType
+# <a name="stringtabletype-complex-type"></a>Tipo complejo StringTableType
 
-Define una lista de cadenas traducidas a las que se puede hacer referencia en el manifiesto.
+Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto.
 
 ``` syntax
 <xs:complexType name="StringTableType">
@@ -62,7 +62,7 @@ Define una lista de cadenas traducidas a las que se puede hacer referencia en el
 
 | Elemento                                                              | Tipo | Descripción                            |
 |----------------------------------------------------------------------|------|----------------------------------------|
-| [**string**](eventmanifestschema-string-stringtabletype-element.md) |      | Define una cadena traducida.<br/> |
+| [**Cadena**](eventmanifestschema-string-stringtabletype-element.md) |      | Define una cadena localizada.<br/> |
 
 
 
@@ -72,24 +72,24 @@ Define una lista de cadenas traducidas a las que se puede hacer referencia en el
 
 | Nombre       | Tipo   | Descripción                                                                                                              |
 |------------|--------|--------------------------------------------------------------------------------------------------------------------------|
-| id         | string | Identificador que identifica de forma única la cadena en la tabla de cadenas. Por ejemplo, "Printer. Connection".<br/> |
-| stringType | string | No se utiliza.<br/>                                                                                                     |
+| id         | string | Identificador que identifica de forma única la cadena dentro de la tabla de cadenas. Por ejemplo, "Printer.Connection".<br/> |
+| stringType | string | No se usa.<br/>                                                                                                     |
 | value      | string | Cadena localizada.<br/>                                                                                         |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede hacer referencia a las cadenas desde cualquier tipo de manifiesto que contenga el atributo Message. Para hacer referencia a una cadena con un valor de stringType de "String" y un identificador de "Printer. Connection", use $ (String. Printer. Connection) como valor del atributo Message.
+Puede hacer referencia a las cadenas de cualquier tipo de manifiesto que contenga el atributo de mensaje. Para hacer referencia a una cadena con un stringType de "string" y un identificador de "Printer.Connection", use $(string. Printer.Connection) como el valor del atributo de mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

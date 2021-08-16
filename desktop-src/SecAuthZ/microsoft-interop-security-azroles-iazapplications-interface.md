@@ -1,7 +1,7 @@
 ---
 description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad de IAzApplications.
 ms.assetid: 3070abc0-dc5e-4949-b398-ebe68aeb725b
-title: Interfaz Microsoft. Interop. Security. AzRoles. IAzApplications
+title: Interfaz Microsoft.Interop.Security.AzRoles.IAzApplications
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,33 +23,33 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 1af9203abcbbbfdd14e8f6b3983aa2ebbfc6c35b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 280632767dd51de3e21876cee6e70efc60fff640af38cab78b3e514c6c6f24b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117781113"
 ---
-# <a name="microsoftinteropsecurityazrolesiazapplications-interface"></a>Interfaz Microsoft. Interop. Security. AzRoles. IAzApplications
+# <a name="microsoftinteropsecurityazrolesiazapplications-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzApplications
 
-Los métodos y propiedades de contenedor de interoperabilidad **Microsoft. Interop. Security. Azroles. IAzApplications** se documentan en la versión com del método o propiedad. Un vínculo a la documentación COM de correlación sigue cada nombre de miembro.
+Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzApplications** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzApplications** tiene estos tipos de miembros:
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplications** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzApplications** tiene estos métodos.
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplications** tiene estos métodos.
 
 
 
 | Método                                                               | Descripción                                                              |
 |:---------------------------------------------------------------------|:-------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzApplications. GetEnumerator** | [**IAzApplications:: \_ NewEnum**](/windows/desktop/api/Azroles/nf-azroles-iazapplications-get__newenum)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzApplications.GetEnumerator** | [**IAzApplications:: \_ NewEnum**](/windows/desktop/api/Azroles/nf-azroles-iazapplications-get__newenum)<br/> |
 
 
 
@@ -57,14 +57,14 @@ La interfaz **Microsoft. Interop. Security. AzRoles. IAzApplications** tiene est
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **Microsoft. Interop. Security. AzRoles. IAzApplications** tiene estas propiedades.
+La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplications** tiene estas propiedades.
 
 
 
 | Propiedad                                                                | Tipo de acceso          | Descripción                                                                   |
 |:------------------------------------------------------------------------|:---------------------|:------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzApplications. Count**<br/> | Solo lectura<br/> | [**Propiedad Count de IAzApplications**](/windows/desktop/api/Azroles/nf-azroles-iazapplications-get_count)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzApplications. Item**<br/>  | Solo lectura<br/> | [**Propiedad Item de IAzApplications**](/windows/desktop/api/Azroles/nf-azroles-iazapplications-get_item)<br/>   |
+| **Microsoft.Interop.Security.Azroles.IAzApplications.Count**<br/> | Solo lectura<br/> | [**Propiedad Count de IAzApplications**](/windows/desktop/api/Azroles/nf-azroles-iazapplications-get_count)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzApplications.Item**<br/>  | Solo lectura<br/> | [**Propiedad Item de IAzApplications**](/windows/desktop/api/Azroles/nf-azroles-iazapplications-get_item)<br/>   |
 
 
 

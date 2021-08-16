@@ -33,10 +33,10 @@ void SelectionResized(
 *OldSelectionRect* \[ En\]
 </dt> <dd>
 
-Rectángulo delimitador de la colección [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) seleccionada tal como existía antes de que se desencadenase el evento **SelectionResized.**
+Rectángulo delimitador de la colección [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) seleccionada tal como existía antes de que se desencadenase el **evento SelectionResized.**
 
 > [!Note]  
-> Este rectángulo se especifica en coordenadas de espacio de entrada de lápiz, lo que permite escenarios de deshacer.
+> Este rectángulo se especifica en coordenadas de espacio de entrada manuscrita, lo que permite escenarios de deshacer.
 
  
 
@@ -48,7 +48,7 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en las interfaces de solo distribución \_ (dispinterfaces) de IInkOverlayEvents e \_ IInkPictureEvents con un identificador de DISPID \_ IOESelectionResized.
+Este método de evento se define en las interfaces de solo distribución \_ \_ (dispinterfaces) de IInkOverlayEvents e IInkPictureEvents con un identificador de DISPID \_ IOESelectionResized.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Este método de evento se define en las interfaces de solo distribución \_ (dis
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

@@ -27,7 +27,7 @@ ms.locfileid: "118312504"
 
 El **método ReferencesTo** del objeto [**SWbemServices**](swbemservices.md) devuelve una colección de todas las clases o instancias de asociación que hacen referencia a una clase o instancia de origen específica. Este método realiza la misma función que la [consulta REFERENCES OF](references-of-statement.md) WQL.
 
-Se llama a este método en modo semisincronoso. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
+Se llama a este método en el modo semisincronoso. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
 Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
@@ -56,7 +56,7 @@ objWbemObjectSet = .ReferencesTo( _
 *strObjectPath* 
 </dt> <dd>
 
-Obligatorio. Cadena que contiene la ruta de acceso del objeto de origen para este método. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+Obligatorio. Cadena que contiene la ruta de acceso del objeto del origen para este método. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Valor booleano que indica si se debe devolver o no una lista de nombres de clase
 *bSchemaOnly* \[ Opcional\]
 </dt> <dd>
 
-Valor booleano que indica si la consulta se aplica o no al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE,** el conjunto de puntos de conexión devueltos representa clases que están asociadas adecuadamente a la clase de origen en el esquema.
+Valor booleano que indica si la consulta se aplica o no al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE**, el conjunto de puntos de conexión devueltos representa las clases que están asociadas adecuadamente a la clase de origen en el esquema.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Cadena que contiene un nombre de calificador. Si se especifica, este parámetro 
 *iFlags* \[ Opcional\]
 </dt> <dd>
 
-Entero que especifica marcas adicionales para la operación. El valor predeterminado de este parámetro es **wbemFlagReturnImmediately**, que dirige a la llamada a que devuelva inmediatamente en lugar de esperar hasta que se haya completado la consulta. Este parámetro puede aceptar los valores siguientes.
+Entero que especifica marcas adicionales para la operación. El valor predeterminado de este parámetro es **wbemFlagReturnImmediately**, que dirige a la llamada a que se devuelva inmediatamente en lugar de esperar hasta que se haya completado la consulta. Este parámetro puede aceptar los valores siguientes.
 
 <dt>
 
@@ -109,7 +109,7 @@ Entero que especifica marcas adicionales para la operación. El valor predetermi
 
 </dt> <dd>
 
-Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avance suelen ser mucho más rápidos y usan menos memoria que los enumeradores convencionales, pero no permiten llamadas a [**SWbemObject.Clone. \_**](swbemobject-clone-.md)
+Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avance suelen ser mucho más rápidos y usan menos memoria que los enumeradores convencionales, pero no permiten llamadas a [**SWbemObject.Clone \_**](swbemobject-clone-.md).
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avan
 
 </dt> <dd>
 
-Hace que Windows Management Instrumentation (WMI) conserve punteros a objetos de la enumeración hasta que el cliente libere el enumerador.
+Hace Windows Management Instrumentation (WMI) conservar punteros a objetos de la enumeración hasta que el cliente libera el enumerador.
 
 </dd> <dt>
 
@@ -153,14 +153,14 @@ Hace que esta llamada se bloquee hasta que se haya completado la consulta. Esta 
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase junto con la definición de clase base. Para obtener más información, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clase junto con la definición de clase base. Para obtener más información, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objWbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> </dl>
 
@@ -216,7 +216,7 @@ Hace que WMI devuelva datos de modificación de clase con la definición de clas
 
 ## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre la consulta WQL asociada REFERENCES OF, las instancias de origen y los objetos de asociación, vea [ASSOCIATORS OF (Instrucción](associators-of-statement.md)).
+Para obtener más información sobre la consulta WQL asociada REFERENCES OF, las instancias de origen y los objetos de asociación, vea [LA INSTRUCCIÓN ASSOCIATORS OF](associators-of-statement.md).
 
 ## <a name="requirements"></a>Requisitos
 

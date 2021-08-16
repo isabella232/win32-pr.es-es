@@ -1,9 +1,9 @@
 ---
-title: Elemento Retention (ChannelLoggingType)
+title: elemento retention (ChannelLoggingType)
 description: Determina si el archivo de registro es un archivo de registro secuencial o circular.
 ms.assetid: a67425a1-275f-4a04-b327-91707f9382c6
 keywords:
-- elemento de retención EventLog
+- elemento retention EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 561b5d6926e49990e79aebe47c447aa63d35f0d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: baff9701cff719c0b22e8dc6a09300073ce06cdf8da0b0490bb10b257087764d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118343395"
 ---
-# <a name="retention-channelloggingtype-element"></a>Elemento Retention (ChannelLoggingType)
+# <a name="retention-channelloggingtype-element"></a>elemento retention (ChannelLoggingType)
 
 Determina si el archivo de registro es un archivo de registro secuencial o circular.
 
@@ -30,20 +30,20 @@ Determina si el archivo de registro es un archivo de registro secuencial o circu
  />
 ```
 
-El elemento de **retención** se define mediante el tipo complejo de [**ChannelLoggingType**](eventmanifestschema-channelloggingtype-complextype.md) .
+El **elemento retention** se define mediante el tipo complejo [**ChannelLoggingType.**](eventmanifestschema-channelloggingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

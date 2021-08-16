@@ -1,19 +1,19 @@
 ---
-description: '\_Se envía el mensaje de creación de línea TAPI para informar a la aplicación de la creación de un nuevo dispositivo de línea.'
+description: El mensaje TAPI LINE \_ CREATE se envía para informar a la aplicación de la creación de un nuevo dispositivo de línea.
 ms.assetid: d4735eab-392f-49d9-a1d9-5895d9232624
-title: Mensaje de LINE_CREATE (TAPI. h)
+title: LINE_CREATE mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd9973849c3942b5427dfb6b3fe7c47bc4d2a716
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4ab18245dc151f074588216d272c305c3a4cbd6aaa85c650ec9854710f5b9eac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117762279"
 ---
-# <a name="line_create-message"></a>Mensaje de creación de línea \_
+# <a name="line_create-message"></a>Mensaje \_ LINE CREATE
 
-Se envía el mensaje de **\_ creación de línea** TAPI para informar a la aplicación de la creación de un nuevo dispositivo de línea.
+El mensaje TAPI **LINE \_ CREATE** se envía para informar a la aplicación de la creación de un nuevo dispositivo de línea.
 
 
 ```C++
@@ -43,7 +43,7 @@ Sin usar.
 *dwParam1* 
 </dt> <dd>
 
-*HDeviceID* del dispositivo recién creado.
+*HDeviceID del* dispositivo recién creado.
 
 </dd> <dt>
 
@@ -65,11 +65,11 @@ Sin usar.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones anteriores (que negoció la versión 1,3 de TAPI) se envían a un mensaje de [**línea \_ LINEDEVSTATE**](line-linedevstate.md) que especifica LINEDEVSTATE \_ reinit, que les obliga a apagar el uso de la API y a llamar a [**lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize) de nuevo para obtener el nuevo número de dispositivos. Sin embargo, a diferencia de las versiones anteriores de TAPI, esta versión no requiere que se cierren todas las aplicaciones antes de permitir que las aplicaciones se reinicialicen. la reinicialización puede tener lugar inmediatamente cuando se crea un nuevo dispositivo (el cierre completo sigue siendo necesario cuando se quita un proveedor de servicios del sistema).
+Las aplicaciones anteriores (que negociaron la versión 1.3 de TAPI) se envían un mensaje [**\_ LINE LINEDEVSTATE**](line-linedevstate.md) que especifica LINEDEVSTATE REINIT, que requiere que apaguen su uso de la API y llamen a \_ [**lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize) de nuevo para obtener el nuevo número de dispositivos. Sin embargo, a diferencia de las versiones anteriores de TAPI, esta versión no requiere que todas las aplicaciones se apaguen antes de permitir que las aplicaciones se reinicialicen. La reinicialización puede tener lugar inmediatamente cuando se crea un nuevo dispositivo (todavía se requiere un apagado completo cuando se quita un proveedor de servicios del sistema).
 
-Las aplicaciones que admiten la versión 1,4 o posterior de TAPI se envían al mensaje de **\_ creación de línea** . Esto informa de la existencia del nuevo dispositivo y su nuevo identificador de dispositivo. A continuación, la aplicación puede elegir si desea o no intentar trabajar con el nuevo dispositivo en su momento. Este mensaje se envía a todas las aplicaciones que admiten esta versión o versiones posteriores de la API que han llamado a [**lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize) o [**lineInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa), incluidos los que no tienen dispositivos de línea abiertos en este momento.
+Las aplicaciones que admiten TAPI versión 1.4 o posterior se envían un **mensaje LINE \_ CREATE.** Esto les informa de la existencia del nuevo dispositivo y su nuevo identificador de dispositivo. A continuación, la aplicación puede elegir si intenta o no trabajar con el nuevo dispositivo en su momento. Este mensaje se envía a todas las aplicaciones que admiten esta o versiones posteriores de la API que han llamado [**a lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize) o [**lineInitializeEx,**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa)incluidas aquellas que no tienen ningún dispositivo de línea abierto en ese momento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,16 +77,16 @@ Las aplicaciones que admiten la versión 1,4 o posterior de TAPI se envían al m
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**LÍNEA \_ LINEDEVSTATE**](line-linedevstate.md)
+[**LINE \_ LINEDEVSTATE**](line-linedevstate.md)
 </dt> <dt>
 
 [**lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize)

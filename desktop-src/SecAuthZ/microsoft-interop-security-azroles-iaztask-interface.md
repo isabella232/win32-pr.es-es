@@ -152,7 +152,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzTask** tiene estas propiedad
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

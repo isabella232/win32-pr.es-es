@@ -1,50 +1,50 @@
 ---
-description: Recuperación de las categorías funcionales admitidas por un dispositivo
+description: Recuperar las categorías funcionales admitidas por un dispositivo
 ms.assetid: 7748e111-9987-4685-8fc8-10c5d4631080
-title: Recuperación de las categorías funcionales admitidas por un dispositivo
+title: Recuperar las categorías funcionales admitidas por un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6514c6255fa089dc235b5edd8a25b5ef581aee84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d410788616cc20563b914a293afcd8e2bbbd87099f738ae21463d2092c620597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842697"
 ---
-# <a name="retrieving-the-functional-categories-supported-by-a-device"></a>Recuperación de las categorías funcionales admitidas por un dispositivo
+# <a name="retrieving-the-functional-categories-supported-by-a-device"></a>Recuperar las categorías funcionales admitidas por un dispositivo
 
-Los dispositivos portátiles de Windows pueden admitir una o varias categorías funcionales. Estas categorías se describen en la tabla siguiente.
+Windows Los dispositivos portátiles pueden admitir una o varias categorías funcionales. Estas categorías se describen en la tabla siguiente.
 
 
 
-| Category                    | Descripción                                                                          |
+| Categoría                    | Descripción                                                                          |
 |-----------------------------|--------------------------------------------------------------------------------------|
 | Captura de audio               | El dispositivo se puede usar para grabar audio.                                              |
 | Información de representación       | El dispositivo proporciona datos que describen los archivos multimedia que es capaz de representar. |
-| Servicio de mensajes cortos (SMS) | El dispositivo admite la mensajería de texto.                                                  |
-| Captura de imagen fija         | El dispositivo se puede usar para capturar imágenes fijas.                                      |
-| Almacenamiento                     | El dispositivo se puede usar para almacenar archivos.                                               |
+| Servicio de mensajes cortos (SMS) | El dispositivo admite mensajería de texto.                                                  |
+| Captura de imágenes de still         | El dispositivo se puede usar para capturar imágenes fijas.                                      |
+| Storage                     | El dispositivo se puede usar para almacenar archivos.                                               |
 
 
 
  
 
-La función ListFunctionalCategories del módulo DeviceCapabilities. cpp muestra la recuperación de las categorías funcionales de un dispositivo seleccionado.
+La función ListFunctionalCategories del módulo DeviceCapabilities.cpp muestra la recuperación de categorías funcionales para un dispositivo seleccionado.
 
-La aplicación puede recuperar las categorías funcionales admitidas por un dispositivo mediante el uso de las interfaces que se describen en la tabla siguiente.
+La aplicación puede recuperar las categorías funcionales admitidas por un dispositivo mediante las interfaces descritas en la tabla siguiente.
 
 
 
 | Interfaz                                                                                      | Descripción                                                   |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [**Interfaz IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Proporciona acceso a los métodos de recuperación de categoría funcional. |
-| [**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Se utiliza para enumerar y almacenar datos de categoría funcional.         |
+| [**IPortableDeviceCapabilities (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Proporciona acceso a los métodos de recuperación de categorías funcionales. |
+| [**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md) | Se usa para enumerar y almacenar datos de categoría funcional.         |
 
 
 
  
 
-La primera tarea que se lleva a cabo mediante la aplicación de ejemplo es la recuperación de un objeto [**IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) , que se usa para recuperar las categorías funcionales en el dispositivo seleccionado.
+La primera tarea que realiza la aplicación de ejemplo es la recuperación de un objeto [**IPortableDeviceCapabilities,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) que se usa para recuperar las categorías funcionales en el dispositivo seleccionado.
 
 
 ```C++
@@ -80,9 +80,9 @@ if (SUCCEEDED(hr))
 
 
 
-Las categorías recuperadas se almacenan en un objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) .
+Las categorías recuperadas se almacenan en un [**objeto IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
 
-El paso siguiente es la enumeración y la visualización de las categorías admitidas. El primer paso que realiza la aplicación de ejemplo es recuperar el recuento de las categorías admitidas. A continuación, usa este recuento para recorrer en iteración el objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) que contiene las categorías admitidas.
+El siguiente paso es la enumeración y la presentación de las categorías admitidas. El primer paso que realiza la aplicación de ejemplo es recuperar el recuento de categorías admitidas. A continuación, usa este recuento para recorrer en iteración el objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) que contiene las categorías admitidas.
 
 
 ```C++
@@ -130,13 +130,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interfaz IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)
+[**IPortableDeviceCapabilities (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)
 </dt> <dt>
 
-[**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [**Guía de programación**](programming-guide.md)

@@ -1,31 +1,31 @@
 ---
-description: Los almacenes de directivas de autorización que se almacenan en Active Directory admiten la delegación de la administración.
+description: Los almacenes de directivas de autorización que se almacenan en Active Directory admiten la delegación de administración.
 ms.assetid: ccad4c19-7a16-4599-9a42-23cae7084418
 title: Delegación de la definición de permisos en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc299e3506300da1f0db2b4a9bacfce60def1c40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f79202a3f8ee21934f890d3c5a66a19be4466fa2b1ecdfe31672a4edfc2319e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117782059"
 ---
 # <a name="delegating-the-defining-of-permissions-in-c"></a>Delegación de la definición de permisos en C++
 
-Los almacenes de directivas de autorización que se almacenan en Active Directory admiten la delegación de la administración. La administración se puede delegar a usuarios y grupos en el nivel de almacén, aplicación o ámbito.
+Los almacenes de directivas de autorización que se almacenan en Active Directory admiten la delegación de administración. La administración se puede delegar a usuarios y grupos en el nivel de almacén, aplicación o ámbito.
 
 En cada nivel, hay una lista de administradores y lectores. Los administradores de un almacén, aplicación o ámbito pueden leer y modificar el almacén de directivas en el nivel delegado. Los lectores pueden leer el almacén de directivas en el nivel delegado, pero no pueden modificar el almacén.
 
-También se debe agregar un usuario o grupo que sea administrador o lector de una aplicación como usuario delegado del almacén de directivas que contiene esa aplicación. De forma similar, un usuario o grupo que sea administrador o lector de un ámbito debe agregarse como un usuario delegado de la aplicación que contiene ese ámbito.
+También se debe agregar un usuario o grupo que sea administrador o lector de una aplicación como usuario delegado del almacén de directivas que contiene esa aplicación. De forma similar, se debe agregar un usuario o grupo que sea administrador o lector de un ámbito como usuario delegado de la aplicación que contiene ese ámbito.
 
-Por ejemplo, para delegar la administración de un ámbito, agregue primero el usuario o el grupo a la lista de usuarios delegados del almacén que contiene el ámbito llamando al método [**IAzAuthorizationStore:: AddDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-adddelegatedpolicyuser) . A continuación, agregue el usuario o el grupo a la lista de usuarios delegados de la aplicación que contiene el ámbito mediante una llamada al método [**IAzApplication:: AddDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-adddelegatedpolicyuser) . Por último, agregue el usuario o el grupo a la lista de administradores del ámbito llamando al método [**IAzScope:: AddPolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyadministrator) .
+Por ejemplo, para delegar la administración de un ámbito, agregue primero el usuario o grupo a la lista de usuarios delegados del almacén que contiene el ámbito mediante una llamada al método [**IAzAuthorizationStore::AddDelegatedPolicyUser.**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-adddelegatedpolicyuser) A continuación, agregue el usuario o grupo a la lista de usuarios delegados de la aplicación que contiene el ámbito mediante una llamada al método [**IAzApplication::AddDelegatedPolicyUser.**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-adddelegatedpolicyuser) Por último, agregue el usuario o grupo a la lista de administradores del ámbito mediante una llamada al método [**IAzScope::AddPolicyAdministrator.**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyadministrator)
 
-Los almacenes de directivas basados en XML no admiten la delegación en cualquier nivel.
+Los almacenes de directivas basados en XML no admiten la delegación en ningún nivel.
 
 No se puede delegar un ámbito dentro de un almacén de autorización almacenado en Active Directory si el ámbito contiene definiciones de tareas que incluyen reglas de autorización o definiciones de roles que incluyen reglas de autorización.
 
-En el ejemplo siguiente se muestra cómo delegar la administración de una aplicación. En el ejemplo se supone que existe un almacén de directivas de autorización de Active Directory en la ubicación especificada, que este almacén de directivas contiene una aplicación denominada///Expense y que esta aplicación no contiene tareas con scripts de reglas de negocios.
+En el ejemplo siguiente se muestra cómo delegar la administración de una aplicación. En el ejemplo se da por supuesto que hay un almacén de directivas de autorización de Active Directory existente en la ubicación especificada, que este almacén de directivas contiene una aplicación denominada Expense y que esta aplicación no contiene tareas con scripts de reglas de negocios.
 
 
 ```C++

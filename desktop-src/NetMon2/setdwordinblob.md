@@ -1,7 +1,7 @@
 ---
 description: La función SetDwordInBlob establece el valor DWORD con nombre de un BLOB.
 ms.assetid: 9174cd5c-4442-4fbe-8dc7-f8a74e1cc85d
-title: Función SetDwordInBlob (Netmon. h)
+title: Función SetDwordInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 9bca0efe61824c6fb8dd41b0b241791b6303799d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0fdc05052542c8606bf72d7250e29086a59b6cc69761229df4800abdc781027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364053"
 ---
-# <a name="setdwordinblob-function"></a>SetDwordInBlob función)
+# <a name="setdwordinblob-function"></a>Función SetDwordInBlob
 
-La función **SetDwordInBlob** establece el valor **DWORD** con nombre de un BLOB.
+La **función SetDwordInBlob** establece el valor **DWORD** con nombre de un BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,62 +43,62 @@ DWORD SetDwordInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB que se está configurando.
 
 </dd> <dt>
 
-*pOwnerName* \[ de\]
+*pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del **propietario** del BLOB que se va a establecer.
+Puntero al nombre del **propietario de** BLOB que se va a establecer.
 
 </dd> <dt>
 
-*pCategoryName* \[ de\]
+*pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la **categoría** de BLOB que se va a establecer.
+Puntero al nombre de **la categoría** BLOB que se va a establecer.
 
 </dd> <dt>
 
-*pTagName* \[ de\]
+*pTagName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la **etiqueta** de BLOB que se va a establecer.
+Puntero al nombre de **la etiqueta** BLOB que se va a establecer.
 
 </dd> <dt>
 
-*DWORD* \[ de\]
+*Dword* \[ En\]
 </dt> <dd>
 
-Valor **DWORD** del BLOB que se va a establecer.
+**Valor DWORD** del BLOB que se va a establecer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

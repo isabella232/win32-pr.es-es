@@ -1,5 +1,5 @@
 ---
-description: Vínculos a documentación para los métodos y propiedades del contenedor de interoperabilidad IAzRoleAssignment.
+description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad IAzRoleAssignment.
 ms.assetid: abf9afee-9a7e-4572-8ead-497c11d0fac4
 title: Interfaz Microsoft.Interop.Security.AzRoles.IAzRoleAssignment
 ms.topic: reference
@@ -173,7 +173,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzRoleAssignment** tiene estas
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

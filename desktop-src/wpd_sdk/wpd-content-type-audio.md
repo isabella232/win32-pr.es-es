@@ -1,19 +1,19 @@
 ---
-description: tipo de contenido de WPD ( \_ \_ \_ audio)
+description: AUDIO DE \_ TIPO DE \_ CONTENIDO WPD \_
 ms.assetid: a3d84878-489b-489a-a67e-0e4d25ddd3f7
 title: WPD_CONTENT_TYPE_AUDIO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b83d43fcef539579fc0a687a97ba51e52278e4da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd4aa78b7fa546fab9fe186265ca721e441860a2fc55c2ba0b384df377e1344b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842359"
 ---
-# <a name="wpd_content_type_audio"></a>tipo de contenido de WPD ( \_ \_ \_ audio)
+# <a name="wpd_content_type_audio"></a>AUDIO DE \_ TIPO DE \_ CONTENIDO WPD \_
 
-Un objeto que describe su tipo como tipo de contenido de WPD el \_ \_ \_ audio representa un archivo de audio, como un archivo Windows Media Audio (WMA) o MP3.
+Un objeto que describe su tipo como WPD CONTENT TYPE AUDIO representa un archivo de audio, como un archivo \_ \_ Windows Media Audio \_ (WMA) o MP3.
 
 Este tipo de objeto admite las siguientes propiedades.
 
@@ -21,68 +21,68 @@ Este tipo de objeto admite las siguientes propiedades.
 
 | Nombre de la propiedad                                                                                                         | Obligatorio u opcional                                                               |
 |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [\_identificador de objeto de WPD \_](object-properties.md)                                                                | Requerido, de solo lectura. Un cliente no puede establecer esta propiedad, ni siquiera en el momento de la creación.     |
-| [\_ \_ ID. primario del objeto WPD \_](object-properties.md)                                                 | Obligatorio.                                                                          |
-| [\_nombre del objeto WPD \_](object-properties.md)                                                            | Es obligatorio si el objeto representa un archivo.                                          |
-| [\_ \_ \_ identificador único persistente del objeto WPD \_](object-properties.md)                          | Requerido, de solo lectura. Un cliente no puede establecer esta propiedad, ni siquiera en el momento de la creación.     |
-| [\_formato de objeto WPD \_](object-properties.md)                                                        | Obligatorio.                                                                          |
-| [\_tipo de \_ contenido del objeto WPD \_](object-properties.md)                                           | Obligatorio.                                                                          |
-| [\_objeto WPD \_ ISHIDDEN](object-properties.md)                                                    | Es obligatorio si el objeto está oculto.                                                  |
-| [\_objeto WPD \_ ISSYSTEM](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema).              |
-| [\_tamaño del objeto WPD \_](object-properties.md)                                                            | Obligatorio si el objeto tiene al menos un recurso.                                  |
-| [\_nombre de \_ \_ archivo original del objeto \_ WPD](object-properties.md)                              | Es obligatorio si el objeto representa un archivo.                                          |
-| [\_objeto WPD \_ no \_ consumible](object-properties.md)                                       | Se recomienda si el objeto no está diseñado para su consumo por parte del dispositivo.              |
-| [\_referencias a objetos de WPD \_](object-properties.md)                                                | Obligatorio si el objeto tiene referencias a otros objetos.                            |
-| [\_palabras clave del objeto WPD \_](object-properties.md)                                                    | Opcional.                                                                          |
-| [\_identificador de \_ sincronización del objeto WPD \_](object-properties.md)                                                     | Opcional.                                                                          |
-| [el \_ objeto \_ WPD \_ está \_ protegido con DRM](object-properties.md)                                  | Obligatorio si el objeto está protegido por la tecnología DRM.                             |
-| [\_fecha de objeto WPD \_ \_ creada](object-properties.md)                                           | Opcional.                                                                          |
-| [\_fecha del objeto WPD \_ \_ modificada](object-properties.md)                                         | Se recomienda su uso.                                                                       |
-| [\_fecha del objeto WPD \_ \_ creado](object-properties.md)                                         | Opcional.                                                                          |
-| [\_ \_ referencias inversas de objetos de WPD \_](object-properties.md)                                                                | Se recomienda si otro objeto hace referencia al objeto.                         |
-| [\_identificador de \_ \_ objeto funcional \_ del contenedor de objetos de \_ WPD](object-properties.md)     | Opcional.                                                                          |
-| [el \_ objeto WPD \_ genera \_ miniaturas \_ desde el \_ recurso](object-properties.md) | Opcional.                                                                          |
-| [el \_ objeto WPD \_ puede \_ eliminar](object-properties.md)                                                                     | Obligatorio si el objeto se puede eliminar.                                             |
-| [\_ \_ configuración regional de idioma del objeto WPD \_](object-properties.md)                                                                | Opcional.                                                                          |
-| [\_velocidad de \_ bits total de medios de WPD \_](media-properties.md)                                            | Se recomienda su uso.                                                                       |
-| [\_tipo de \_ velocidad de bits de medios de WPD \_](media-properties.md)                                              | Opcional.                                                                          |
-| [COPYRIGHT de los medios de WPD \_ \_](media-properties.md)                                                     | Opcional.                                                                          |
-| [\_ \_ \_ ID. de contenido de suscripción de medios de WPD \_](media-properties.md)                       | Se recomienda si este objeto representa el contenido de un servicio de suscripción en línea. |
-| [recuento de uso de medios de WPD \_ \_ \_](media-properties.md)                                                    | Se recomienda su uso.                                                                       |
-| [recuento de omisiones de medios de WPD \_ \_ \_](media-properties.md)                                                  | Opcional.                                                                          |
-| [\_ \_ última hora de \_ acceso a los medios \_ de WPD](media-properties.md)                                 | Opcional.                                                                          |
-| [\_ \_ clasificación parental de medios de \_ WPD](media-properties.md)                                        | Opcional.                                                                          |
-| [metagénero de multimedia de WPD \_ \_ \_](media-properties.md)                                                  | Opcional.                                                                          |
-| [\_compositor de medios de WPD \_](media-properties.md)                                                       | Opcional.                                                                          |
-| [\_ \_ clasificación efectiva de medios de WPD \_](media-properties.md)                                      | Opcional.                                                                          |
-| [subtítulo de medios de WPD \_ \_ \_](media-properties.md)                                                    | Opcional.                                                                          |
-| [\_fecha de \_ lanzamiento de medios de WPD \_](media-properties.md)                                              | Se recomienda su uso.                                                                       |
-| [\_velocidad de \_ muestra \_ multimedia de WPD](media-properties.md)                                                | Opcional.                                                                          |
-| [\_clasificación de media \_ Star \_ de WPD](media-properties.md)                                                | Se recomienda su uso.                                                                       |
-| [\_ \_ \_ clasificación efectiva del usuario \_ de los medios de WPD](media-properties.md)                           | Se recomienda su uso.                                                                       |
-| [título de los medios de WPD \_ \_](media-properties.md)                                                             | Obligatorio.                                                                          |
-| [duración de los medios de WPD \_ \_](media-properties.md)                                                       | Obligatorio.                                                                          |
-| [\_compra multimedia \_ WPD \_ Now](media-properties.md)                                                        | Se recomienda su uso.                                                                       |
-| [\_Perfil de \_ codificación multimedia \_ WPD](media-properties.md)                                      | Opcional.                                                                          |
-| [\_intérprete multimedia de WPD \_](media-properties.md)                                                                            | Se recomienda su uso.                                                                       |
-| [\_intérprete del \_ álbum \_ multimedia de WPD](media-properties.md)                                                                     | Se recomienda su uso.                                                                       |
-| [\_URL de \_ origen de medios de WPD \_](media-properties.md)                                                                       | Opcional.                                                                          |
-| [\_URL de \_ destino de medios de WPD \_](media-properties.md)                                                                  | Opcional.                                                                          |
-| [\_Descripción de medios de WPD \_](media-properties.md)                                                                       | Opcional.                                                                          |
-| [\_género multimedia de WPD \_](media-properties.md)                                                                             | Opcional.                                                                          |
-| [\_marcador de \_ tiempo de medio de WPD \_](media-properties.md)                                                                    | Opcional.                                                                          |
-| [\_marcador de \_ bytes multimedia de WPD \_](media-properties.md)                                                                    | Opcional.                                                                          |
-| [\_GUID de medios de WPD \_](media-properties.md)                                                                              | Opcional.                                                                          |
-| [subdescripción de los medios de WPD \_ \_ \_](media-properties.md)                                                                  | Opcional.                                                                          |
-| [\_álbum de música de WPD \_](music-properties.md)                                                             | Se recomienda su uso.                                                                       |
-| [\_pista de música de WPD \_](music-properties.md)                                                             | Se recomienda su uso.                                                                       |
-| [\_Letras de música de WPD \_](music-properties.md)                                                           | Opcional.                                                                          |
-| [\_ánimo de música de WPD \_](music-properties.md)                                                               | Opcional.                                                                          |
-| [velocidad de bits de \_ audio WPD \_](audio-properties.md)                                                         | Se recomienda su uso.                                                                       |
-| [recuento de canales de audio de WPD \_ \_ \_](audio-properties.md)                                            | Opcional.                                                                          |
-| [\_código de \_ formato de audio de WPD \_](audio-properties.md)                                                | Opcional.                                                                          |
-| [\_profundidad de \_ bits de audio de WPD \_](audio-properties.md)                                                    | Opcional.                                                                          |
-| [\_alineación del \_ bloque de audio de WPD \_](audio-properties.md)                                        | Opcional.                                                                          |
+| [IDENTIFICADOR DE OBJETO \_ DE \_ WPD](object-properties.md)                                                                | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación.     |
+| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Obligatorio.                                                                          |
+| [NOMBRE DE OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto representa un archivo.                                          |
+| [WPD \_ OBJECT \_ PERSISTENT \_ UNIQUE \_ ID](object-properties.md)                          | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación.     |
+| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Obligatorio.                                                                          |
+| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Obligatorio.                                                                          |
+| [\_ISHIDDEN DEL \_ OBJETO WPD](object-properties.md)                                                    | Obligatorio si el objeto está oculto.                                                  |
+| [WPD \_ OBJECT \_ ISSYSTEM](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema).              |
+| [TAMAÑO DEL OBJETO \_ WPD \_](object-properties.md)                                                            | Obligatorio si el objeto tiene al menos un recurso.                                  |
+| [NOMBRE DE ARCHIVO \_ \_ ORIGINAL DEL OBJETO \_ \_ WPD](object-properties.md)                              | Obligatorio si el objeto representa un archivo.                                          |
+| [OBJETO WPD \_ \_ NO \_ CONSUMIBLE](object-properties.md)                                       | Se recomienda si el objeto no está pensado para el consumo por parte del dispositivo.              |
+| [REFERENCIAS DE OBJETOS \_ WPD \_](object-properties.md)                                                | Obligatorio si el objeto tiene referencias a otros objetos.                            |
+| [PALABRAS CLAVE DE \_ OBJETO \_ WPD](object-properties.md)                                                    | Opcional.                                                                          |
+| [IDENTIFICADOR DE SINCRONIZACIÓN \_ DE \_ OBJETOS \_ WPD](object-properties.md)                                                     | Opcional.                                                                          |
+| [EL OBJETO \_ WPD \_ ESTÁ PROTEGIDO CON \_ \_ DRM](object-properties.md)                                  | Obligatorio si el objeto está protegido por la tecnología DRM.                             |
+| [FECHA DE CREACIÓN \_ DEL \_ OBJETO WPD \_](object-properties.md)                                           | Opcional.                                                                          |
+| [FECHA DE MODIFICACIÓN \_ DEL OBJETO \_ WPD \_](object-properties.md)                                         | Se recomienda su uso.                                                                       |
+| [FECHA DE CREACIÓN \_ DEL OBJETO \_ \_ WPD](object-properties.md)                                         | Opcional.                                                                          |
+| [REFERENCIAS ATRÁS DE \_ OBJETOS WPD \_ \_](object-properties.md)                                                                | Se recomienda si otro objeto hace referencia al objeto.                         |
+| [IDENTIFICADOR DE OBJETO \_ FUNCIONAL DEL CONTENEDOR DE OBJETOS \_ \_ \_ \_ WPD](object-properties.md)     | Opcional.                                                                          |
+| [WPD \_ OBJECT \_ GENERATE \_ THUMBNAIL \_ FROM \_ RESOURCE](object-properties.md) | Opcional.                                                                          |
+| [EL OBJETO \_ WPD \_ PUEDE \_ ELIMINAR](object-properties.md)                                                                     | Obligatorio si el objeto se puede eliminar.                                             |
+| [CONFIGURACIÓN REGIONAL \_ DEL LENGUAJE DE OBJETOS \_ \_ WPD](object-properties.md)                                                                | Opcional.                                                                          |
+| [VELOCIDAD DE BITS \_ \_ TOTAL DE MEDIOS \_ WPD](media-properties.md)                                            | Se recomienda su uso.                                                                       |
+| [TIPO DE \_ VELOCIDAD DE BITS DE MEDIOS \_ \_ WPD](media-properties.md)                                              | Opcional.                                                                          |
+| [COPYRIGHT DE \_ WPD \_ MEDIA](media-properties.md)                                                     | Opcional.                                                                          |
+| [IDENTIFICADOR DE \_ CONTENIDO DE LA SUSCRIPCIÓN DE \_ \_ \_ WPD MEDIA](media-properties.md)                       | Se recomienda si este objeto representa el contenido de un servicio de suscripción en línea. |
+| [RECUENTO DE \_ USO DE MEDIOS DE \_ \_ WPD](media-properties.md)                                                    | Se recomienda su uso.                                                                       |
+| [RECUENTO DE \_ SKIP \_ DE WPD \_ MEDIA](media-properties.md)                                                  | Opcional.                                                                          |
+| [HORA DE \_ ÚLTIMO ACCESO A WPD \_ \_ \_ MEDIA](media-properties.md)                                 | Opcional.                                                                          |
+| [CLASIFICACIÓN PARENTAL \_ DE WPD \_ MEDIA \_](media-properties.md)                                        | Opcional.                                                                          |
+| [WPD \_ MEDIA \_ META \_ GENRE](media-properties.md)                                                  | Opcional.                                                                          |
+| [WPD \_ MEDIA \_ COMPOSER](media-properties.md)                                                       | Opcional.                                                                          |
+| [CLASIFICACIÓN EFICAZ \_ DE WPD MEDIA \_ \_](media-properties.md)                                      | Opcional.                                                                          |
+| [SUB TÍTULO DE \_ \_ WPD \_ MEDIA](media-properties.md)                                                    | Opcional.                                                                          |
+| [FECHA DE LANZAMIENTO \_ DE WPD \_ \_ MEDIA](media-properties.md)                                              | Se recomienda su uso.                                                                       |
+| [FRECUENCIA DE MUESTREO \_ DE \_ WPD \_ MEDIA](media-properties.md)                                                | Opcional.                                                                          |
+| [CLASIFICACIÓN POR \_ ESTRELLAS DE \_ WPD \_ MEDIA](media-properties.md)                                                | Se recomienda su uso.                                                                       |
+| [CLASIFICACIÓN EFECTIVA DEL USUARIO DE WPD \_ \_ \_ \_ MEDIA](media-properties.md)                           | Se recomienda su uso.                                                                       |
+| [TÍTULO MULTIMEDIA \_ DE \_ WPD](media-properties.md)                                                             | Obligatorio.                                                                          |
+| [DURACIÓN MULTIMEDIA \_ DE \_ WPD](media-properties.md)                                                       | Obligatorio.                                                                          |
+| [WPD \_ MEDIA \_ BUY \_ NOW](media-properties.md)                                                        | Se recomienda su uso.                                                                       |
+| [PERFIL DE \_ CODIFICACIÓN \_ MULTIMEDIA \_ WPD](media-properties.md)                                      | Opcional.                                                                          |
+| [WPD \_ MEDIA \_ ARTIST](media-properties.md)                                                                            | Se recomienda su uso.                                                                       |
+| [WPD \_ MEDIA \_ ALBUM \_ ARTIST](media-properties.md)                                                                     | Se recomienda su uso.                                                                       |
+| [DIRECCIÓN URL DE \_ ORIGEN \_ DE \_ WPD MEDIA](media-properties.md)                                                                       | Opcional.                                                                          |
+| [DIRECCIÓN URL DE \_ DESTINO DE \_ \_ WPD MEDIA](media-properties.md)                                                                  | Opcional.                                                                          |
+| [DESCRIPCIÓN DE LOS \_ MEDIOS DE \_ WPD](media-properties.md)                                                                       | Opcional.                                                                          |
+| [GÉNERO MULTIMEDIA DE WPD \_ \_](media-properties.md)                                                                             | Opcional.                                                                          |
+| [MARCADOR DE \_ TIEMPO MULTIMEDIA \_ WPD \_](media-properties.md)                                                                    | Opcional.                                                                          |
+| [MARCADOR DE \_ BYTES MULTIMEDIA \_ WPD \_](media-properties.md)                                                                    | Opcional.                                                                          |
+| [GUID DE \_ MEDIOS DE \_ WPD](media-properties.md)                                                                              | Opcional.                                                                          |
+| [SUB DESCRIPTION DE \_ WPD MEDIA \_ \_](media-properties.md)                                                                  | Opcional.                                                                          |
+| [WPD \_ MUSIC \_ ALBUM](music-properties.md)                                                             | Se recomienda su uso.                                                                       |
+| [WPD \_ MUSIC \_ TRACK](music-properties.md)                                                             | Se recomienda su uso.                                                                       |
+| [WPD \_ MUSIC \_ LORÓN](music-properties.md)                                                           | Opcional.                                                                          |
+| [WPD \_ MUSIC \_ MOOD](music-properties.md)                                                               | Opcional.                                                                          |
+| [VELOCIDAD DE \_ BITS DE AUDIO \_ WPD](audio-properties.md)                                                         | Se recomienda su uso.                                                                       |
+| [RECUENTO DE \_ CANALES DE AUDIO \_ \_ WPD](audio-properties.md)                                            | Opcional.                                                                          |
+| [CÓDIGO DE \_ FORMATO DE AUDIO \_ \_ WPD](audio-properties.md)                                                | Opcional.                                                                          |
+| [PROFUNDIDAD DE \_ BITS DE \_ AUDIO \_ WPD](audio-properties.md)                                                    | Opcional.                                                                          |
+| [ALINEACIÓN DE \_ BLOQUES DE AUDIO \_ WPD \_](audio-properties.md)                                        | Opcional.                                                                          |
 
 
 
@@ -96,9 +96,9 @@ Estos objetos suelen incluir los siguientes recursos.
 
 | Nombre de recurso                                               | Obligatorio u opcional       | Descripción                                        |
 |-------------------------------------------------------------|----------------------------|----------------------------------------------------|
-| [**\_valor predeterminado del recurso WPD \_**](wpd-resource-default.md)      | Opcional.                  | Contiene el archivo de audio completo.                  |
-| [**\_carátula de \_ álbum de recursos de WPD \_**](wpd-resource-album-art.md) | Recomendado, si está disponible. | Contiene la imagen del álbum.                |
-| [**\_AUDIOCLIP de recursos de WPD \_**](wpd-resource-audio-clip.md) | Opcional.                  | Contiene un clip de ejemplo del archivo de audio completo. |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md)      | Opcional.                  | Contiene el archivo de audio completo.                  |
+| [**WPD \_ RESOURCE \_ ALBUM \_ ART**](wpd-resource-album-art.md) | Se recomienda, si está disponible. | Contiene la imagen del álbum.                |
+| [**AUDIOCLIP \_ DE RECURSOS DE WPD \_**](wpd-resource-audio-clip.md) | Opcional.                  | Contiene un clip de ejemplo del archivo de audio completo. |
 
 
 

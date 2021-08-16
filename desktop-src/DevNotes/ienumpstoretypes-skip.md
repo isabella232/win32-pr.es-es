@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: fdc656af2a8f50d02d2f88545d189d9c9285a7f9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bcd1d6eb0f348bc74ac44f054bba9c7cd792158f984b8f6a920c91ee06e7d17d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827229"
 ---
 # <a name="ienumpstoretypesskip-method"></a>IEnumPStoreTypes::Skip (Método)
 
-\[El almacenamiento protegido (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
+\[La Storage protegida (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Omite el siguiente número especificado de elementos en la secuencia de enumeración.
 
@@ -50,7 +50,7 @@ Número de tipos de proveedor que se omitirán.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un **valor HRESULT.**
+El valor devuelto es **un valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

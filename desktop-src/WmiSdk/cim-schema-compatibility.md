@@ -14,13 +14,13 @@ ms.locfileid: "118319791"
 ---
 # <a name="cim-schema-compatibility"></a>Compatibilidad de esquemas CIM
 
-Un componente clave de la infraestructura Windows Instrumental de administración de recursos (WMI) es un modelo orientado a objetos de las entidades administrables de un sistema. El modelo se ajusta a un estándar mantenido por el Grupo de tareas de administración de escritorio[(DMTF)](https://www.dmtf.org/standards/wsman)y se conoce como Modelo de información común (CIM). El esquema CIM proporciona un único mecanismo de descripción de datos para los datos que proporcionan.
+Un componente clave de la infraestructura Windows Instrumental de administración de recursos (WMI) es un modelo orientado a objetos de las entidades administrables de un sistema. El modelo se ajusta a un estándar mantenido por el Equipo de tareas de administración de escritorio[(DMTF)](https://www.dmtf.org/standards/wsman)y se conoce como Modelo de información común (CIM). El esquema CIM proporciona un único mecanismo de descripción de datos para los datos que proporcionan.
 
-A partir Windows 7, WMI es compatible con el esquema CIM versión 2.17.1 ( [https://www.dmtf.org/standards/cim/cim\_schema\_v2171/](https://www.dmtf.org/standards/cim/cim_schema_v2171) ). Los usuarios ahora pueden compilar un esquema definido por DMTF en un Windows equipo.
+A partir Windows 7, WMI es compatible con la versión 2.17.1 del esquema CIM ( [https://www.dmtf.org/standards/cim/cim\_schema\_v2171/](https://www.dmtf.org/standards/cim/cim_schema_v2171) ). Los usuarios ahora pueden compilar un esquema definido por DMTF en un Windows equipo.
 
 ## <a name="benefits-of-cim-schema-version-2171-compatibility"></a>Ventajas de la compatibilidad con el esquema CIM versión 2.17.1
 
--   Cuando un usuario descarga los archivos CIM Schema version 2.17.1 o DMTF MOF, se pueden compilar correctamente en el equipo Windows destino.
+-   Cuando un usuario descarga los archivos CIM Schema versión 2.17.1 o DMTF MOF, se pueden compilar correctamente en el equipo Windows destino.
 -   La versión 2.17.1 del esquema CIM agregó compatibilidad con BIOS, impresoras, mensajes estándar, estado del sistema operativo, paradigmas modernos de administración de energía, virtualización y seguridad.
 -   La versión 2.1.7.1 del esquema CIM ofrece compatibilidad con perfiles adicionales. Para obtener más información, vea [Cross Namespace Association Traversal (Recorrido de asociación entre espacios de nombres).](cross-namespace-association-traversal.md)
 

@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 3728f8114d87d07ddb33dd77a6fda5db30d07cf0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c30194e4131cbd375192723e23308e1ad5ead69d849ab73857f72ef1d4b0790
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784083"
 ---
 # <a name="authzcomputegroupscallback-callback-function"></a>Función de devolución de llamada AuthzComputeGroupsCallback
 
-La función **AuthzComputeGroupsCallback** es una función definida por la aplicación que crea una lista de [*identificadores de seguridad*](/windows/desktop/SecGloss/s-gly) (SID) que se aplican a un cliente. **AuthzComputeGroupsCallback** es un marcador de posición para el nombre de la función definida por la aplicación.
+La **función AuthzComputeGroupsCallback** es una función definida por la aplicación que crea una lista de identificadores de seguridad (SID) que se aplican a un cliente. [](/windows/desktop/SecGloss/s-gly) **AuthzComputeGroupsCallback es** un marcador de posición para el nombre de la función definida por la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,59 +43,59 @@ BOOL CALLBACK AuthzComputeGroupsCallback(
 
 <dl> <dt>
 
-*hAuthzClientContext* \[ de\]
+*hAuthzClientContext* \[ En\]
 </dt> <dd>
 
 Identificador de un contexto de cliente.
 
 </dd> <dt>
 
-*Argumentos* \[ de\]
+*Args* \[ En\]
 </dt> <dd>
 
-Datos pasados en el parámetro *DynamicGroupArgs* de una llamada a la función [**AuthzInitializeContextFromAuthzContext**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromauthzcontext), [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid)o [**AuthzInitializeContextFromToken**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken) .
+Datos pasados en el parámetro *DynamicGroupArgs* de una llamada a la función [**AuthzInitializeContextFromAuthzContext**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromauthzcontext), [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid)o [**AuthzInitializeContextFromToken.**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken)
 
 </dd> <dt>
 
-*pSidAttrArray* \[ enuncia\]
+*pSidAttrArray* \[ out\]
 </dt> <dd>
 
-Puntero a una variable de puntero que recibe la dirección de una matriz de estructuras de [**SID \_ y \_ atributos**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) . Estas estructuras representan los grupos a los que pertenece el cliente.
+Puntero a una variable de puntero que recibe la dirección de una matriz de [**estructuras SID \_ Y \_ ATTRIBUTES.**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) Estas estructuras representan los grupos a los que pertenece el cliente.
 
 </dd> <dt>
 
-*pSidCount* \[ enuncia\]
+*pSidCount* \[ out\]
 </dt> <dd>
 
-El número de estructuras en *pSidAttrArray*.
+Número de estructuras de *pSidAttrArray.*
 
 </dd> <dt>
 
-*pRestrictedSidAttrArray* \[ enuncia\]
+*pRestrictedSidAttrArray* \[ out\]
 </dt> <dd>
 
-Puntero a una variable de puntero que recibe la dirección de una matriz de estructuras de [**SID \_ y \_ atributos**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) . Estas estructuras representan los grupos de los que el cliente está restringido.
+Puntero a una variable de puntero que recibe la dirección de una matriz de [**estructuras SID \_ Y \_ ATTRIBUTES.**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) Estas estructuras representan los grupos desde los que el cliente está restringido.
 
 </dd> <dt>
 
-*pRestrictedSidCount* \[ enuncia\]
+*pRestrictedSidCount* \[ out\]
 </dt> <dd>
 
-El número de estructuras en *pSidRestrictedAttrArray*.
+Número de estructuras de *pSidRestrictedAttrArray.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función devuelve correctamente una lista de SID, el valor devuelto es **true**.
+Si la función devuelve correctamente una lista de SID, el valor devuelto es **TRUE.**
 
-Si se produce un error en la función, el valor devuelto es **false**.
+Si se produce un error en la función, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones también pueden agregar SID al contexto del cliente mediante una llamada a [**AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext).
+Las aplicaciones también pueden agregar SID al contexto de cliente llamando a [**AuthzAddSidsToContext.**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext)
 
-Las variables de atributo deben tener el formato de una expresión cuando se utilizan con operadores lógicos; de lo contrario, se evalúan como Unknown.
+Las variables de atributo deben tener el formato de una expresión cuando se usan con operadores lógicos; De lo contrario, se evalúan como desconocidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,17 +103,17 @@ Las variables de atributo deben tener el formato de una expresión cuando se uti
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                   |
-| Redistribuible<br/>          | Paquete de herramientas de administración de Windows Server 2003 en Windows XP<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                   |
+| Redistribuible<br/>          | Windows Paquete de herramientas de administración de Server 2003 en Windows XP<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones básicas de Access Control](authorization-functions.md)
+[Funciones Access Control básicas](authorization-functions.md)
 </dt> <dt>
 
 [**AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext)
@@ -134,7 +134,7 @@ Las variables de atributo deben tener el formato de una expresión cuando se uti
 [**AuthzInitializeResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager)
 </dt> <dt>
 
-[**SID \_ y \_ atributos**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes)
+[**SID \_ Y \_ ATRIBUTOS**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes)
 </dt> </dl>
 
  

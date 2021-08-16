@@ -2,7 +2,7 @@
 description: Controla el acceso remoto a versiones no admitidas de Windows.
 ms.assetid: eb326bba-a011-4b9c-b4ee-fc08ae364f6f
 ms.tgt_platform: multiple
-title: __NTLMUser9X (clase)
+title: __NTLMUser9X clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 79aa5153869c7337b6849e8c465dbbf8b36a0f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d05920b0936e8ff4de3eb338938e03e92edb4596efbf01f1064b6952a7df661
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118320583"
 ---
-# <a name="__ntlmuser9x-class"></a>\_\_Clase NTLMUser9X
+# <a name="__ntlmuser9x-class"></a>\_\_NTLMUser9X (clase)
 
-La clase del sistema **\_ \_ NTLMUser9X** controla el acceso remoto a versiones no admitidas de Windows. La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La **\_ \_ clase del sistema NTLMUser9X** controla el acceso remoto a versiones no admitidas de Windows. La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ class __NTLMUser9X : __SecurityRelatedClass
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ NTLMUser9X** tiene estos tipos de miembros:
+La **\_ \_ clase NTLMUser9X** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ NTLMUser9X** tiene estas propiedades.
+La **\_ \_ clase NTLMUser9X** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ La clase **\_ \_ NTLMUser9X** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Dominio al que se aplica un nombre de usuario.
@@ -74,10 +74,10 @@ Dominio al que se aplica un nombre de usuario.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Marcadores de herencia.
+Marcas de herencia.
 
 <dt>
 
@@ -91,7 +91,7 @@ Sin herencias.
 2
 </dt> <dd>
 
-Aplicar a los espacios de nombres secundarios, además del actual.
+Se aplica a los espacios de nombres secundarios, además del actual.
 
 </dd> </dl>
 
@@ -103,10 +103,10 @@ Aplicar a los espacios de nombres secundarios, además del actual.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Máscara de máscara que especifica los derechos de acceso al espacio de nombres en el repositorio de Instrumental de administración de Windows (WMI). Para los valores de bit, consulte [**constantes de derechos de acceso de espacio de nombres**](namespace-access-rights-constants.md).
+Máscara de bits que especifica los derechos de acceso al espacio de nombres en el Windows instrumental de administración de recursos (WMI). Para los valores de bits, vea [**Constantes de derechos de acceso de espacio de nombres**](namespace-access-rights-constants.md).
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Máscara de máscara que especifica los derechos de acceso al espacio de nombres
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Nombre de usuario.
@@ -129,7 +129,7 @@ Nombre de usuario.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Acceso permitido.
@@ -146,21 +146,21 @@ Acceso permitido.
 2
 </dt> <dd>
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **\_ \_ NTLMUser9X** se usa como parámetro de entrada para los métodos [**\_ \_ SystemSecurity:: Get9XUserList**](--systemsecurity-get9xuserlist.md) y [**\_ \_ SystemSecurity:: Set9XUserList**](--systemsecurity-set9xuserlist.md) .
+La **\_ \_ clase NTLMUser9X** se usa como parámetro de entrada para los métodos [**\_ \_ SystemSecurity::Get9XUserList**](--systemsecurity-get9xuserlist.md) y [**\_ \_ SystemSecurity::Set9XUserList.**](--systemsecurity-set9xuserlist.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -168,7 +168,7 @@ La clase **\_ \_ NTLMUser9X** se usa como parámetro de entrada para los método
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

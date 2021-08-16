@@ -1,7 +1,7 @@
 ---
 description: Inicializa el administrador de componentes opcional.
 ms.assetid: 9a7ddca6-a6c8-4d96-81bb-66158b83ab68
-title: OcInitialize función)
+title: Función OcInitialize
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - OcManage.dll
-ms.openlocfilehash: aad102ac9881a801f693a429aab5dae07d09b5e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08e7ffd7f8ad6faa2b08f937627627b6e74bbc09505482c589023db5dae37677
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117826750"
 ---
-# <a name="ocinitialize-function"></a>OcInitialize función)
+# <a name="ocinitialize-function"></a>Función OcInitialize
 
 Inicializa el administrador de componentes opcional.
 
@@ -43,21 +43,21 @@ PVOID OcInitialize(
 
 <dl> <dt>
 
-*Devoluciones de llamada* \[ de\]
+*Devoluciones de llamada* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ \_ devoluciones de llamada de cliente de OCM**](ocm-client-callbacks.md) que especifica las funciones de devolución de llamada que va a usar el administrador de OC para realizar varias tareas.
+Puntero a una estructura [**OCM \_ CLIENT \_ CALLBACKS**](ocm-client-callbacks.md) que especifica las funciones de devolución de llamada que el administrador de OC usará para realizar varias tareas.
 
 </dd> <dt>
 
-*MasterOcInfName* \[ de\]
+*MasterOcInfName* \[ En\]
 </dt> <dd>
 
-Ruta de acceso del archivo. inf de procesamiento maestro.
+Ruta de acceso del archivo OC .inf maestro.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Este parámetro puede ser uno o varios de los valores siguientes.
@@ -76,14 +76,14 @@ Este parámetro puede ser uno o varios de los valores siguientes.
 <span id="OCINIT_LANGUAGEAWARE"></span><span id="ocinit_languageaware"></span>**OCINIT \_ LANGUAGEAWARE** (0x00000008)
 </dt> </dl> </dd> <dt>
 
-*ShowError* \[ enuncia\]
+*ShowError* \[ out\]
 </dt> <dd>
 
-Si se produce un error en la función, este parámetro indica si se muestra un mensaje de error.
+Si se produce un error en la función, este parámetro indica si se debe mostrar un mensaje de error.
 
 </dd> <dt>
 
-*Registro* \[ de de\]
+*Registro* \[ En\]
 </dt> <dd>
 
 Identificador del registro.
@@ -94,25 +94,25 @@ Identificador del registro.
 
 La función devuelve el valor de contexto del administrador de OC.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>OcManage.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_devoluciones de llamada de cliente de OCM \_**](ocm-client-callbacks.md)
+[**DEVOLUCIONES DE LLAMADA \_ DE CLIENTE DE OCM \_**](ocm-client-callbacks.md)
 </dt> <dt>
 
 [**OcTerminate**](octerminate.md)

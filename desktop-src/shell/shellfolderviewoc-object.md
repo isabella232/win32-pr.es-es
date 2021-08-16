@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b50f549c-a79d-4411-a18e-a181b4b924e3
-ms.openlocfilehash: 2670578417dc616d30f319887f5281fa5d0615f5
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: bc00dc285c1bcca72e998ecb22f75af56dd085542d0f191c484c096e5e511cce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857677"
 ---
 # <a name="shellfolderviewoc-object"></a>Objeto ShellFolderViewOC
 
 Reenvía los eventos desencadenados por un objeto [**ShellFolderView**](shellfolderview.md) especificado a los controladores de eventos **ShellFolderViewOC** correspondientes.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto ShellFolderViewOC** tiene estos tipos de miembros:
 
@@ -60,9 +60,9 @@ El **objeto ShellFolderViewOC** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El [**objeto ShellFolderView**](shellfolderview.md) desvía dos eventos, [**EnumDone**](shellfolderviewoc-enumdone.md) y [**SelectionChanged,**](shellfolderviewoc-selectionchanged.md)que las aplicaciones suelen controlar. Sin embargo, algunas aplicaciones deben controlar eventos de una serie de **objetos ShellFolderView.** Por ejemplo, una aplicación podría hospedar un control WebBrowser que permita a los usuarios navegar por una serie de carpetas. Cada carpeta tiene su propio **objeto ShellFolderView** con sus eventos asociados. Controlar estos eventos puede ser difícil.
+El [**objeto ShellFolderView**](shellfolderview.md) desvía dos eventos, [**EnumDone**](shellfolderviewoc-enumdone.md) y [**SelectionChanged,**](shellfolderviewoc-selectionchanged.md)que normalmente controlan las aplicaciones. Sin embargo, algunas aplicaciones deben controlar eventos de una serie de **objetos ShellFolderView.** Por ejemplo, una aplicación podría hospedar un control WebBrowser que permita a los usuarios navegar por una serie de carpetas. Cada carpeta tiene su propio **objeto ShellFolderView** con sus eventos asociados. Controlar estos eventos puede ser difícil.
 
 El **objeto ShellFolderViewOC** simplifica el control de eventos para estos escenarios. Permite a las aplicaciones controlar eventos para todos los [**objetos ShellFolderView**](shellfolderview.md) con un único par de controladores de eventos **ShellFolderViewOC.** Cada vez que el usuario navega a una nueva carpeta, la aplicación pasa el objeto **ShellFolderView** asociado al objeto **ShellFolderViewOC** mediante una llamada a [**SetFolderView**](shellfolderviewoc-setfolderview.md). A continuación, cuando se desencadena un evento [**EnumDone**](shellfolderviewoc-enumdone.md) o [**SelectionChanged,**](shellfolderviewoc-selectionchanged.md) el objeto **ShellFolderViewOC** reenvía el evento a su propio controlador para su procesamiento.
 
@@ -70,10 +70,10 @@ El **objeto ShellFolderViewOC** simplifica el control de eventos para estos esce
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |

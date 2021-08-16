@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_SETSEL (commctrl. h)
-description: Establece las posiciones inicial y final para el intervalo de selección disponible en una barra de inicio.
+title: TBM_SETSEL mensaje (Commctrl.h)
+description: Establece las posiciones inicial y final del intervalo de selección disponible en una barra de seguimiento.
 ms.assetid: 71f5b9f8-4850-44a8-8acf-adca9bda84c3
 keywords:
-- TBM_SETSEL controles de mensajes de Windows
+- TBM_SETSEL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2edebc6b6dcf3b0b93e3047a39aac74c34d121bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d055b317cc6db5e17edbe57bc57e6dbfe287274788718e8e2a920e1f25d9316b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829338"
 ---
-# <a name="tbm_setsel-message"></a>TBM \_ SETSEL
+# <a name="tbm_setsel-message"></a>Mensaje TBM \_ SETSEL
 
-Establece las posiciones inicial y final para el intervalo de selección disponible en una barra de inicio.
+Establece las posiciones inicial y final del intervalo de selección disponible en una barra de seguimiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Establece las posiciones inicial y final para el intervalo de selección disponi
 *wParam* 
 </dt> <dd>
 
-Volver a dibujar el marcador. Si este parámetro es **true**, el mensaje vuelve a dibujar el TrackBar después de establecer el intervalo de selección. Si este parámetro es **false**, el mensaje establece el intervalo de selección, pero no vuelve a dibujar el TrackBar.
+Volver a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar la barra de seguimiento después de establecer el intervalo de selección. Si este parámetro es **FALSE,** el mensaje establece el intervalo de selección, pero no vuelve a dibujar la barra de seguimiento.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica la posición lógica de inicio para el intervalo de selección y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica la posición lógica final.
+LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) la posición lógica inicial para el intervalo de selección y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica la posición lógica final.
 
 </dd> </dl>
 
@@ -47,25 +47,25 @@ Volver a dibujar el marcador. Si este parámetro es **true**, el mensaje vuelve 
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje se omite si TrackBar no tiene el estilo [**\_ ENABLESELRANGE de TBS**](trackbar-control-styles.md) .
+Este mensaje se omite si la barra de seguimiento no tiene el [**estilo TBS \_ ENABLESELRANGE.**](trackbar-control-styles.md)
 
-**TBM \_ SETSEL** le permite restringir el puntero a solo una parte del intervalo disponible en la barra de progreso.
+**TBM \_ SETSEL** permite restringir el puntero solo a una parte del intervalo disponible para la barra de progreso.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

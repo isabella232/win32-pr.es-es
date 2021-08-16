@@ -1,5 +1,5 @@
 ---
-description: El mensaje siguiente se usa con el tiempo.
+description: El mensaje siguiente se usa con time.
 ms.assetid: 8aced280-0af9-4e9e-ba6a-d02d41602466
 title: Mensajes de hora
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117763104"
 ---
 # <a name="time-messages"></a>Mensajes de hora
 
-El mensaje siguiente se usa con el tiempo.
+El mensaje siguiente se usa con time.
 
 <dl>
 

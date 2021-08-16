@@ -1,5 +1,5 @@
 ---
-description: Las constantes RENDBIND son marcas que usa el método ITDirectory::Bind para indicar los tipos de autenticación proporcionados.
+description: Las constantes RENDBIND son marcas usadas por el método ITDirectory::Bind para indicar los tipos de autenticación proporcionada.
 ms.assetid: 27bcf36a-1826-4603-9821-22fcc5c1e186
 title: RENDBIND_ constantes (Rend.h)
 ms.topic: reference
@@ -13,9 +13,9 @@ ms.locfileid: "117760868"
 ---
 # <a name="rendbind_-constants"></a>Constantes RENDBIND \_
 
-\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-Las constantes RENDBIND son marcas que usa el método [**ITDirectory::Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind) para indicar los tipos de autenticación proporcionados.
+Las constantes RENDBIND son marcas usadas por el método [**ITDirectory::Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind) para indicar los tipos de autenticación proporcionada.
 
 <dl> <dt>
 
@@ -88,7 +88,7 @@ Los tres anteriores ORed juntos para mayor comodidad.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                             |
 | Header<br/>       | <dl> <dt>Rend.h</dt> </dl> |

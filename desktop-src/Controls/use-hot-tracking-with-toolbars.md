@@ -1,44 +1,44 @@
 ---
-title: Cómo usar Hot-Tracking con barras de herramientas
-description: Cuando se mantiene el puntero del mouse sobre un elemento, el elemento pasa a estar activo. Si está habilitado el seguimiento activo, se resalta el elemento activo. Una barra de herramientas que se crea con el \_ estilo plano TBSTYLE, o una que usa estilos visuales, admite el seguimiento activo de forma predeterminada.
+title: Uso de Hot-Tracking con barras de herramientas
+description: Cuando un puntero del mouse mantiene el puntero sobre un elemento, el elemento se activa. Si está habilitado el seguimiento en caliente, el elemento de acceso activa se resalta. Una barra de herramientas que se crea con el estilo TBSTYLE FLAT, o una que usa estilos visuales, admite el seguimiento en caliente \_ de forma predeterminada.
 ms.assetid: E77B15D7-F0C9-41F7-8BE9-30260FA4BB0C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a486407b8dafade1e3bba083c5a56f3a9be2adcf
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 6dd735828675ca360cfa91aceefb2d76d34252a96aa7b5edb776e3d48a1fcdc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "104077470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829095"
 ---
-# <a name="how-to-use-hot-tracking-with-toolbars"></a>Cómo usar Hot-Tracking con barras de herramientas
+# <a name="how-to-use-hot-tracking-with-toolbars"></a>Uso de Hot-Tracking con barras de herramientas
 
-Cuando se mantiene el puntero del mouse sobre un elemento, el elemento pasa a estar activo. Si está habilitado el seguimiento activo, se resalta el elemento activo. Una barra de herramientas que se crea con el estilo [**\_ plano TBSTYLE**](toolbar-control-and-button-styles.md) , o una que usa [estilos visuales](themes-overview.md), admite el seguimiento activo de forma predeterminada.
+Cuando un puntero del mouse mantiene el puntero sobre un elemento, el elemento se activa. Si está habilitado el seguimiento en caliente, el elemento de acceso activa se resalta. Una barra de herramientas que se crea con el estilo [**TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) o una que usa estilos visuales [admite](themes-overview.md)el seguimiento rápido de forma predeterminada.
 
-El seguimiento activo requiere la creación de listas de imágenes. por lo tanto, no puede usar el mensaje [**TB \_ ADDBITMAP**](tb-addbitmap.md) o la función [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) para crear la barra de herramientas.
+El seguimiento en caliente requiere que cree listas de imágenes. Por lo tanto, no puede usar el mensaje [**\_ ADDBITMAP de TB**](tb-addbitmap.md) o la función [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) para crear la barra de herramientas.
 
-Cuando el mouse se desplaza sobre un botón de la barra de herramientas, el botón se describe para resaltarlo. En la ilustración siguiente se muestra una barra de herramientas con el seguimiento activo habilitado; se mantiene el puntero del mouse en el botón Guardar cuando se tomó la captura de pantalla.
+Cuando el mouse mantiene el mouse sobre un botón de la barra de herramientas, el botón se describe para resaltarlo. En la ilustración siguiente se muestra una barra de herramientas con el seguimiento rápido habilitado; el puntero del mouse se desplazaba sobre el botón Guardar cuando se tomó la captura de pantalla.
 
 ![captura de pantalla de un cuadro de diálogo con una barra de herramientas de tres elementos; se describe el icono seleccionado](images/tb-withstyles.png)
 
-Si desea que un mapa de bits del botón de la barra de herramientas cambie cuando cambie el estado del control, almacene las distintas imágenes en [las listas de imágenes](image-lists.md). Por ejemplo, algunas aplicaciones tienen botones de barra de herramientas en blanco y negro que se colorean cuando se seleccionan. Las dos imágenes diferentes se almacenan en las listas de imágenes. Las barras de herramientas admiten el uso de hasta tres listas de imágenes. Normalmente, una aplicación tiene una lista de imágenes predeterminada, deshabilitada y de seguimiento activo. Para establecer y recuperar listas de imágenes para botones de la barra de herramientas activa, use los mensajes [**TB \_ SETHOTIMAGELIST**](tb-sethotimagelist.md) y [**TB \_ GETHOTIMAGELIST**](tb-gethotimagelist.md) .
+Si desea que un mapa de bits de botón de la barra de herramientas cambie cuando cambie el estado del control, almacene las distintas imágenes en las [listas de imágenes](image-lists.md). Por ejemplo, algunas aplicaciones tienen botones de barra de herramientas en blanco y negro que se coloreados cuando se seleccionan. Las dos imágenes diferentes se almacenan en listas de imágenes. Las barras de herramientas admiten el uso de hasta tres listas de imágenes. Normalmente, una aplicación tiene una lista predeterminada, deshabilitada y de seguimiento en caliente de imágenes. Para establecer y recuperar listas de imágenes para los botones de la barra de herramientas activa, use los mensajes [**\_ TB SETHOTIMAGELIST**](tb-sethotimagelist.md) y [**TB \_ GETHOTIMAGELIST.**](tb-gethotimagelist.md)
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="use-hot-tracking-with-a-toolbar"></a>Usar Hot-Tracking con una barra de herramientas
 
-En el ejemplo de código siguiente se crea, se rellena y se asigna una lista de imágenes para los botones de acceso rápido.
+En el ejemplo de código siguiente se crea, rellena y asigna una lista de imágenes para los botones de acceso rápido.
 
 
 ```C++
@@ -75,15 +75,15 @@ DeleteObject(hBitmapHot);    // Delete the loaded bitmap.
 
 <dl> <dt>
 
-[Usar controles Toolbar](using-toolbar-controls.md)
+[Usar controles de barra de herramientas](using-toolbar-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

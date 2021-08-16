@@ -1,31 +1,31 @@
 ---
-description: Un almacén de directivas de autorización contiene información sobre la Directiva de seguridad de una aplicación o grupo de aplicaciones. La información incluye las aplicaciones, operaciones, tareas, usuarios y grupos de usuarios asociados a la tienda.
+description: Un almacén de directivas de autorización contiene información sobre la directiva de seguridad de una aplicación o grupo de aplicaciones. La información incluye las aplicaciones, las operaciones, las tareas, los usuarios y los grupos de usuarios asociados al almacén.
 ms.assetid: 6fc84944-8050-4000-8856-36558d94e2fd
 title: Crear un objeto de almacén de directivas de autorización en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58b50bfa4234f5adaf162b1499f85785a7d65f5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4be0b39633eb773b84ad16098f24b59cb23e5d9cc234afdfca414e9cba7a640b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117782470"
 ---
 # <a name="creating-an-authorization-policy-store-object-in-c"></a>Crear un objeto de almacén de directivas de autorización en C++
 
-Un almacén de directivas de autorización contiene información sobre la Directiva de seguridad de una aplicación o grupo de aplicaciones. La información incluye las aplicaciones, operaciones, tareas, usuarios y grupos de usuarios asociados a la tienda. Cuando una aplicación que usa administrador de autorización se inicializa, carga esta información desde el almacén. El almacén de directivas de autorización debe estar ubicado en un sistema de confianza porque los administradores de ese sistema tienen un alto grado de acceso al almacén.
+Un almacén de directivas de autorización contiene información sobre la directiva de seguridad de una aplicación o grupo de aplicaciones. La información incluye las aplicaciones, las operaciones, las tareas, los usuarios y los grupos de usuarios asociados al almacén. Cuando se inicializa una aplicación que usa el Administrador de autorización, carga esta información desde el almacén. El almacén de directivas de autorización debe encontrarse en un sistema de confianza porque los administradores de ese sistema tienen un alto grado de acceso al almacén.
 
-Administrador de autorización admite el almacenamiento de la Directiva de autorización en el servicio de directorio de Active Directory o en un archivo XML, tal como se muestra en los ejemplos siguientes. En la API de administrador de autorización, un almacén de directivas de autorización se representa mediante un objeto [**AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) . En los ejemplos se muestra cómo crear un objeto **AzAuthorizationStore** para un almacén de Active Directory y un almacén XML.
+El Administrador de autorización admite el almacenamiento de la directiva de autorización Active Directory servicio de directorio o en un archivo XML, como se muestra en los ejemplos siguientes. En la API de Authorization Manager, un almacén de directivas de autorización se representa mediante [**un objeto AzAuthorizationStore.**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) En los ejemplos se muestra cómo crear un **objeto AzAuthorizationStore** para un Active Directory y un almacén XML.
 
--   [Creación de un almacén de Active Directory](#creating-an-active-directory-store)
--   [Creación de un almacén de SQL Server](#creating-a-sql-server-store)
--   [Crear un almacén XML](#creating-an-xml-store)
+-   [Creación de una Active Directory Store](#creating-an-active-directory-store)
+-   [Creación de un SQL Server Store](#creating-a-sql-server-store)
+-   [Creación de un almacén XML](#creating-an-xml-store)
 
-## <a name="creating-an-active-directory-store"></a>Creación de un almacén de Active Directory
+## <a name="creating-an-active-directory-store"></a>Creación de una Active Directory Store
 
-Para usar Active Directory para almacenar la Directiva de autorización, el dominio debe estar en el nivel funcional del dominio de **Windows Server 2003** . No se encuentra el almacén de directivas de autorización en un **contexto de nomenclatura que no es de dominio** (también denominado partición de aplicación). Se recomienda ubicar el almacén en el contenedor de **datos de programa** en una nueva unidad organizativa creada específicamente para el almacén de directivas de autorización. También se recomienda que el almacén se encuentre en la misma red de área local que los servidores de aplicaciones que ejecutan las aplicaciones que usan el almacén.
+Para usar Active Directory para almacenar la directiva de autorización, el dominio debe estar en el nivel funcional de dominio Windows **Server 2003.** El almacén de directivas de autorización no se puede encontrar en un contexto de nomenclatura que no **sea de dominio** (también denominado partición de aplicación). Se recomienda que el almacén  se encuentra en el contenedor Datos del programa en una nueva unidad organizativa creada específicamente para el almacén de directivas de autorización. También se recomienda que el almacén se encuentra dentro de la misma red de área local que los servidores de aplicaciones que ejecutan aplicaciones que usan el almacén.
 
-En el ejemplo siguiente se muestra cómo crear un objeto [**AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) que representa un almacén de directivas de autorización en Active Directory. En el ejemplo se supone que hay una unidad organizativa Active Directory denominada datos de programa en un dominio denominado authmanager.com.
+En el ejemplo siguiente se muestra cómo crear un [**objeto AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) que representa un almacén de directivas de autorización en Active Directory. En el ejemplo se supone que hay una unidad organizativa Active Directory denominada Datos de programa en un dominio denominado authmanager.com.
 
 
 ```C++
@@ -103,18 +103,18 @@ void MyHandleError(char *s)
 
 
 
-## <a name="creating-a-sql-server-store"></a>Creación de un almacén de SQL Server
+## <a name="creating-a-sql-server-store"></a>Creación de un SQL Server Store
 
-Administrador de autorización admite la creación de un almacén de directivas de autorización basado en Microsoft SQL Server. Para crear un almacén de autorización basado en SQL Server, use una dirección URL que comience con el prefijo **MSSQL://**. La dirección URL debe contener una cadena de conexión SQL válida, un nombre de base de datos y el nombre del almacén de directivas de autorización: **MSSQL://**_ConnectionString_ *_/_* _DatabaseName_ *_/_* _PolicyStoreName_.
+El Administrador de autorización admite la creación de un Microsoft SQL Server de directivas de autorización basado en la autorización. Para crear un SQL Server de autorización basado en el servidor, use una dirección URL que comience con el **prefijo MSSQL://**. La dirección URL debe contener una cadena de conexión SQL, un nombre de base de datos y el nombre del almacén de directivas de autorización: **MSSQL://**_ConnectionString_ *_/_* _DatabaseName_ *_/_* _PolicyStoreName_.
 
-Si la instancia de SQL Server no contiene la base de datos de administrador de autorización especificada, el administrador de autorización crea una nueva base de datos con ese nombre.
+Si la instancia de SQL Server no contiene la base de datos del Administrador de autorización especificada, el Administrador de autorización crea una nueva base de datos con ese nombre.
 
 > [!Note]  
-> Las conexiones a un almacén de SQL Server no se cifran a menos que se configure explícitamente el cifrado SQL para la conexión o se configure el cifrado del tráfico de red que usa el protocolo de seguridad de Internet (IPsec).
+> Las conexiones a un almacén de SQL Server no se cifran a menos que configure explícitamente el cifrado de SQL para la conexión o configure el cifrado del tráfico de red que usa seguridad de protocolo de Internet (IPsec).
 
  
 
-En el ejemplo siguiente se muestra cómo crear un objeto [**AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) que representa un almacén de directivas de autorización en una base de datos de SQL Server.
+En el ejemplo siguiente se muestra cómo crear un [**objeto AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) que representa un almacén de directivas de autorización en una base SQL Server datos.
 
 
 ```C++
@@ -189,13 +189,13 @@ void MyHandleError(char *s)
 
 
 
-## <a name="creating-an-xml-store"></a>Crear un almacén XML
+## <a name="creating-an-xml-store"></a>Creación de un almacén XML
 
-Administrador de autorización admite la creación de un almacén de directivas de autorización en formato XML. El almacén XML puede ubicarse en el mismo equipo en el que se ejecuta la aplicación, o bien se puede almacenar de forma remota. No se admite la edición directa del archivo XML. Use el complemento MMC de administrador de autorización o la API de administrador de autorización para editar el almacén de directivas.
+Authorization Manager admite la creación de un almacén de directivas de autorización en formato XML. El almacén XML se puede encontrar en el mismo equipo donde se ejecuta la aplicación o se puede almacenar de forma remota. No se admite la edición directa del archivo XML. Use el complemento MMC de Authorization Manager o la API de Authorization Manager para editar el almacén de directivas.
 
-Administrador de autorización no admite la delegación de la administración de un almacén de directivas XML. Para obtener información acerca de la delegación, vea [delegar la definición de permisos en C++](delegating-the-defining-of-permissions-in-c--.md).
+El Administrador de autorización no admite la delegación de la administración de un almacén de directivas XML. Para obtener información sobre la delegación, vea [Delegación de la definición de permisos en C++.](delegating-the-defining-of-permissions-in-c--.md)
 
-En el ejemplo siguiente se muestra cómo crear un objeto [**AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) que representa un almacén de directivas de autorización en un archivo XML.
+En el ejemplo siguiente se muestra cómo crear un [**objeto AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) que representa un almacén de directivas de autorización en un archivo XML.
 
 
 ```C++

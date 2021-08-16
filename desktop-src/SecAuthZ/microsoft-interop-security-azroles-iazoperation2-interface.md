@@ -106,7 +106,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzOperation2** tiene estas pro
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

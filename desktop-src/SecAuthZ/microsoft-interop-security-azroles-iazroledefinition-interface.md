@@ -186,7 +186,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzRoleDefinition** tiene estas
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

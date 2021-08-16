@@ -117,7 +117,7 @@ Se notifica a una aplicación sobre los cambios en estos elementos de estado en 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
 | Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |

@@ -1,29 +1,29 @@
 ---
 title: SHV de ejemplo
-description: En el ejemplo siguiente se configura un validador de mantenimiento del sistema (SHV) en un servidor de directivas de mantenimiento de NAP.
+description: En el ejemplo siguiente se configura un validador de estado del sistema (SHV) en un servidor de directivas de mantenimiento nap.
 ms.assetid: 2264c1d7-b1fb-4937-bf24-d6fa05bdc6fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c071a1ce6ba974d2170cbd8a4cda2d7e66b18f46
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 82ec6d2f3f1c5f6aa7f9a1686d288177054f373a3962a9d7db47b9467d9b08a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369019"
 ---
 # <a name="example-shv"></a>SHV de ejemplo
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
- 
+ 
 
-En el ejemplo siguiente se configura un validador de mantenimiento del sistema (SHV) en un servidor de directivas de mantenimiento de NAP.
+En el ejemplo siguiente se configura un validador de estado del sistema (SHV) en un servidor de directivas de mantenimiento nap.
 
 > [!Note]  
-> El SDK de NAP también contiene un conjunto completo de código de ejemplo que se puede encontrar en la.. \\ . Ejemplos \\ NetDS \\ NAP... directorio de la instalación del SDK. Este conjunto de ejemplo incluye y el agente de mantenimiento del sistema (SHA), SHV y el cliente de cumplimiento (EC). Tiene escenarios completos de NAP en funcionamiento con la configuración de la comunicación entre SHA-SHV y SHA-EC.
+> El SDK de NAP también contiene un conjunto completo de código de ejemplo que se puede encontrar en ... \\ Ejemplos \\ de NAP de NetDS... \\ directorio de la instalación del SDK. Este conjunto de ejemplo incluye y el agente de mantenimiento del sistema (SHA), SHV y el cliente de cumplimiento (EC). Tiene escenarios NAP completos en funcionamiento que configura la comunicación entre SHA-SHV y SHA-EC.
 
- 
+ 
 
 
 ```C++
@@ -285,9 +285,9 @@ HRESULT CSampleShv::FillResponseSoH(HRESULT validationResult,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

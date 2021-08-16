@@ -1,5 +1,5 @@
 ---
-description: El editor de control de acceso puede incluir una página de propiedades Auditoría que permite al usuario ver y editar las entradas de control de acceso (ACE) en una lista de control de acceso del sistema (SACL) de objetos. Para obtener más información sobre las SACL, vea Listas de Access Control (ACL).
+description: El editor de control de acceso puede incluir una página de propiedades Auditoría que permite al usuario ver y editar las entradas de control de acceso (ACE) en una lista de control de acceso del sistema (SACL) de objetos. Para obtener más información sobre las SACL, vea listas de Access Control (ACL).
 ms.assetid: 2a9152b7-c72d-4f03-bc3f-b75927fb4b6c
 title: Página de propiedades Auditoría
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117784323"
 ---
 # <a name="auditing-property-page"></a>Página de propiedades Auditoría
 
-El editor de control  de acceso puede incluir una página de propiedades Auditoría que permite al usuario ver y editar las entradas de [*control*](/windows/desktop/SecGloss/a-gly) de acceso (ACE) en la lista de control de acceso del sistema (SACL) de un objeto. [](/windows/desktop/SecGloss/s-gly) Para obtener más información sobre las SACL, [vea listas de Access Control](access-control-lists.md) listas de control de acceso (ACL).
+El editor de control  de acceso puede incluir una página de propiedades Auditoría que permite al usuario ver y editar las entradas de [*control*](/windows/desktop/SecGloss/s-gly) de acceso (ACE) en la lista de [*control*](/windows/desktop/SecGloss/a-gly) de acceso del sistema (SACL) de un objeto. Para obtener más información sobre las SACL, [vea listas de](access-control-lists.md) Access Control listas de control de acceso (ACL).
 
 **Para ver la página de propiedades Auditoría**
 

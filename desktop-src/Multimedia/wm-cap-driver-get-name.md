@@ -58,7 +58,7 @@ Devuelve **TRUE si** se realiza **correctamente o FALSE** si la ventana de captu
 
 ## <a name="remarks"></a>Comentarios
 
-El nombre es una cadena de texto recuperada del área de recursos del controlador. Las aplicaciones deben asignar aproximadamente 80 bytes para esta cadena. Si el controlador no contiene un recurso de nombre, se devuelve el nombre completo de la ruta de acceso del controlador que aparece en el registro o en SYSTEM.INI archivo.
+El nombre es una cadena de texto recuperada del área de recursos del controlador. Las aplicaciones deben asignar aproximadamente 80 bytes para esta cadena. Si el controlador no contiene un recurso de nombre, se devuelve el nombre de ruta de acceso completo del controlador que aparece en el registro o en SYSTEM.INI archivo.
 
 ## <a name="requirements"></a>Requisitos
 

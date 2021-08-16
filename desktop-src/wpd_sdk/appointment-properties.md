@@ -1,7 +1,7 @@
 ---
-description: Los dispositivos portátiles de Windows admiten las siguientes propiedades de cita.
+description: Windows Dispositivos portátiles admite las siguientes propiedades de cita.
 ms.assetid: d7e2130b-722b-46ef-9114-17db9c95d017
-title: Propiedades de la cita (PortableDevice. h)
+title: Propiedades de citas (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,29 +13,29 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 542029f9eb698c8093c43cbb8ee309b3d1f9da6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2ba82c12dfffb0367ab61d355d6e256ab5d97bfbeef3e4a588f3a76a5651f9b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843595"
 ---
-# <a name="appointment-properties"></a>Propiedades de cita
+# <a name="appointment-properties"></a>Propiedades de citas
 
-Los dispositivos portátiles de Windows admiten las siguientes propiedades de cita.
+Windows Dispositivos portátiles admite las siguientes propiedades de cita.
 
 
 
 | Propiedad                                   | VarType        | Descripción                                                                          |
 |--------------------------------------------|----------------|--------------------------------------------------------------------------------------|
-| **\_ \_ asistentes aceptados por la cita de WPD \_**  | **VT \_ LPWStr** | Lista delimitada por signos de punto y coma de los asistentes que han aceptado la cita.             |
-| **\_ \_ Asistente rechazado de citas de WPD \_**  | **VT \_ LPWStr** | Lista delimitada por signos de punto y coma de los asistentes que han rechazado la cita.             |
-| **\_Ubicación de citas de WPD \_**             | VT \_ LPWStr     | Una ubicación fácil de lectura de la cita, por ejemplo, "Building 5, Room 7".    |
-| **\_ \_ asistentes opcionales de cita de WPD \_**  | **VT \_ LPWStr** | Lista delimitada por signos de punto y coma de asistentes opcionales para la cita.                  |
-| **\_ \_ asistentes requeridos de la cita de WPD \_**  | **VT \_ LPWStr** | Lista delimitada por signos de punto y coma de los asistentes necesarios para la cita.                  |
-| **\_recursos de cita de WPD \_**            | **VT \_ LPWStr** | Lista delimitada por signos de punto y coma de los recursos necesarios para la cita.                  |
-| **\_ \_ asistentes provisionales de cita de WPD \_** | **VT \_ LPWStr** | Lista delimitada por signos de punto y coma de los asistentes que han aceptado la cita provisionalmente. |
-| **\_tipo de cita de WPD \_**                 | **VT \_ LPWStr** | El tipo de cita, por ejemplo, "personal", "Business", etc.              |
+| **ASISTENTES \_ \_ ACEPTADOS EN LA CITA \_ DE WPD**  | **VT \_ LPWSTR** | Lista delimitada por punto y coma de los asistentes que han aceptado la cita.             |
+| **ASISTENTES \_ RECHAZADOS \_ POR CITA DE WPD \_**  | **VT \_ LPWSTR** | Lista delimitada por punto y coma de los asistentes que han rechazado la cita.             |
+| **UBICACIÓN DE CITA \_ DE \_ WPD**             | VT \_ LPWSTR     | Una ubicación fácil de usar para el lector de la cita, por ejemplo, "Building 5, Room 7".    |
+| **ASISTENTES \_ \_ OPCIONALES A LA CITA \_ DE WPD**  | **VT \_ LPWSTR** | Lista delimitada por punto y coma de asistentes opcionales para la cita.                  |
+| **ASISTENTES NECESARIOS \_ PARA \_ LA CITA DE WPD \_**  | **VT \_ LPWSTR** | Lista delimitada por punto y coma de los asistentes necesarios para la cita.                  |
+| **RECURSOS DE CITAS DE WPD \_ \_**            | **VT \_ LPWSTR** | Lista delimitada por punto y coma de los recursos necesarios para la cita.                  |
+| **ASISTENTES \_ PROVISIONALES A \_ CITAS DE WPD \_** | **VT \_ LPWSTR** | Lista delimitada por punto y coma de los asistentes que han aceptado provisionalmente la cita. |
+| **TIPO DE \_ CITA \_ WPD**                 | **VT \_ LPWSTR** | El tipo de cita, por ejemplo, "Personal", "Business", y así sucesivamente.              |
 
 
 
@@ -47,11 +47,11 @@ Los dispositivos portátiles de Windows admiten las siguientes propiedades de ci
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

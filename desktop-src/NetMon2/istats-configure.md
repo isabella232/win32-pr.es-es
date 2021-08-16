@@ -1,7 +1,7 @@
 ---
-description: El método configure envía información de configuración de la captura.
+description: El método Configure envía información de configuración de captura.
 ms.assetid: 739ed1df-1a84-4c48-a1ac-2dba7a614cdd
-title: 'IStas:: Configurate (método) (Netmon. h)'
+title: Método IStats::Configure (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 9f2dddea3132ce81a57f16737c0f90c6277d4efd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 357d0dd9dbb6e0f57a7ecd3dffcec4c0d1e546ce0bc058ce0144796ca8836113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364972"
 ---
-# <a name="istatsconfigure-method"></a>IStas:: Configure (método)
+# <a name="istatsconfigure-method"></a>IStats::Configure (método)
 
-El método **Configure** envía información de configuración de la captura.
+El **método Configure** envía información de configuración de captura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,78 +41,78 @@ HRESULT STDMETHODCALLTYPE Configure(
 
 <dl> <dt>
 
-*hConfigurationBlob* \[ de\]
+*hConfigurationBlob* \[ En\]
 </dt> <dd>
 
-Identificador del BLOB que el autor de la llamada configura.
+Controle el BLOB que configura el autor de la llamada.
 
 </dd> <dt>
 
-*hErrorBlob* \[ enuncia\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que contiene información de error adicional.
+Controlar un blob de error que contiene información de error adicional.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                                         | Descripción                                                                                                                                                                                                                              |
 |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ cadena de blob \_ \_ no válida**</dt> </dl>         | La cadena no termina en NULL.<br/>                                                                                                                                                                                            |
-| <dl> <dt>**\_BLOB NMERR \_ no \_ inicializado**</dt> </dl>        | No se ha llamado al método **CreateBlob** .<br/>                                                                                                                                                                                |
-| <dl> <dt>**NMERR \_ BLOB no válido \_**</dt> </dl>                 | El objeto al que se apunta no es un BLOB.<br/>                                                                                                                                                                                  |
-| <dl> <dt>**\_BLOB de nivel superior de NMERR \_**</dt> </dl>                 | El número de versión del BLOB no es correcto.<br/>                                                                                                                                                                                         |
-| <dl> <dt>**la \_ entrada de BLOB NMERR \_ \_ ya \_ existe**</dt> </dl>  | Ya existe una entrada de BLOB.<br/>                                                                                                                                                                                                  |
-| <dl> <dt>**la \_ entrada de BLOB NMERR \_ \_ \_ no \_ existe**</dt> </dl> | Falta una entrada necesaria para realizar esta operación en el BLOB de configuración especificado por el parámetro *hConfigurationBlob* . Examine el BLOB de error devuelto por el parámetro *hErrorBlob* para determinar qué entrada no se encontró.<br/> |
-| <dl> <dt>**NMERR \_ ( \_ especificador ambiguo)**</dt> </dl>          | Falta la información del propietario o de la categoría en el BLOB.<br/>                                                                                                                                                                                 |
-| <dl> <dt>**\_ \_ \_ no \_ se encontró el propietario del BLOB de NMERR**</dt> </dl>       | No se encontró la sección Owner del BLOB.<br/>                                                                                                                                                                                  |
-| <dl> <dt>**\_ \_ \_ no \_ se encontró la categoría de BLOB NMERR**</dt> </dl>    | No se encontró la sección de categoría del BLOB.<br/>                                                                                                                                                                               |
-| <dl> <dt>**NMERR \_ \_ categoría desconocida**</dt> </dl>             | Se encontró información de categoría, pero no se entendió.<br/>                                                                                                                                                                            |
-| <dl> <dt>**NMERR \_ \_ etiqueta desconocida**</dt> </dl>                  | Se encontró información de etiqueta, pero no se entendió.<br/>                                                                                                                                                                                 |
-| <dl> <dt>**\_error de \_ conversión de BLOB NMERR \_**</dt> </dl>       | El BLOB está dañado.<br/>                                                                                                                                                                                                          |
-| <dl> <dt>**\_desencadenador no válido de NMERR \_**</dt> </dl>              | La parte del desencadenador del BLOB está dañada.<br/>                                                                                                                                                                                   |
+| <dl> <dt>**CADENA DE BLOB DE NMERR \_ \_ NO \_ VÁLIDA**</dt> </dl>         | La cadena no termina en NULL.<br/>                                                                                                                                                                                            |
+| <dl> <dt>**BLOB DE NMERR \_ \_ NO \_ INICIALIZADO**</dt> </dl>        | No se ha llamado al método **CreateBlob.**<br/>                                                                                                                                                                                |
+| <dl> <dt>**BLOB NO VÁLIDO DE NMERR \_ \_**</dt> </dl>                 | El objeto al que se apunta no es un BLOB.<br/>                                                                                                                                                                                  |
+| <dl> <dt>**BLOB DE NIVEL SUPERIOR \_ NMERR \_**</dt> </dl>                 | El número de versión de BLOB es incorrecto.<br/>                                                                                                                                                                                         |
+| <dl> <dt>**LA ENTRADA DE BLOB DE NMERR \_ \_ YA \_ \_ EXISTE**</dt> </dl>  | Ya existe una entrada BLOB.<br/>                                                                                                                                                                                                  |
+| <dl> <dt>**LA ENTRADA DE BLOB DE NMERR \_ \_ NO \_ \_ \_ EXISTE**</dt> </dl> | El BLOB de configuración especificado por el *parámetro hConfigurationBlob* carece de una entrada necesaria para realizar esta operación. Mire el blob de error devuelto por el *parámetro hErrorBlob* para determinar qué entrada no se encontró.<br/> |
+| <dl> <dt>**ESPECIFICADOR \_ AMBIGUO DE \_ NMERR**</dt> </dl>          | El BLOB carece de información de propietario o categoría.<br/>                                                                                                                                                                                 |
+| <dl> <dt>**NO SE ENCONTRÓ EL \_ PROPIETARIO DEL BLOB \_ DE \_ \_ NMERR**</dt> </dl>       | No se encontró la sección Propietario del BLOB.<br/>                                                                                                                                                                                  |
+| <dl> <dt>**NO SE ENCONTRÓ \_ LA CATEGORÍA DE BLOB \_ DE \_ NMERR \_**</dt> </dl>    | No se encontró la sección Categoría del BLOB.<br/>                                                                                                                                                                               |
+| <dl> <dt>**CATEGORÍA DESCONOCIDA DE \_ \_ NMERR**</dt> </dl>             | Se encontró información de categoría, pero no se comprendía.<br/>                                                                                                                                                                            |
+| <dl> <dt>**ETIQUETA DESCONOCIDA DE NMERR \_ \_**</dt> </dl>                  | Se encontró información de etiquetas, pero no se comprendía.<br/>                                                                                                                                                                                 |
+| <dl> <dt>**ERROR DE CONVERSIÓN \_ DE \_ BLOBS DE NMERR \_**</dt> </dl>       | El BLOB está dañado.<br/>                                                                                                                                                                                                          |
+| <dl> <dt>**DESENCADENADOR NO ES DE NMERR \_ \_**</dt> </dl>              | La parte del desencadenador del BLOB está dañada.<br/>                                                                                                                                                                                   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Debe aplicar este método para reiniciar un NPP que se ha iniciado, detenido pero no desconectado.
 
-El BLOB de error devuelto por *hErrorBlob* contiene entradas que monitor de red no pudo comprender o encontrar en el BLOB de configuración especificado en el parámetro *hConfigurationBlob* . El BLOB de error devuelto contiene información de error que la aplicación puede usar para solucionar problemas. Por ejemplo, si \_ \_ se devuelve la entrada de BLOB NMERR \_ \_ \_ , la entrada monitor de red no encontró se incluye en el BLOB de error devuelto.
+El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron comprender ni encontrar en el BLOB de configuración especificado en el *parámetro hConfigurationBlob.* El blob de error devuelto contiene información de error que la aplicación puede usar para solucionar problemas. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada Monitor de red no se encuentra se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[IStas](istats.md)
+[IStats](istats.md)
 </dt> <dt>
 
-[ISTA:: Connect](istats-connect.md)
+[ISTATS::Conectar](istats-connect.md)
 </dt> <dt>
 
-[BLOBs Monitor de red](network-monitor-blobs.md)
+[Monitor de red BLOBS](network-monitor-blobs.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Una función definida por la aplicación que libera memoria asignada por la función AuthzComputeGroupsCallback. AuthzFreeGroupsCallback es un marcador de posición para el nombre de la función definida por la aplicación.
+description: Función definida por la aplicación que libera la memoria asignada por la función AuthzComputeGroupsCallback. AuthzFreeGroupsCallback es un marcador de posición para el nombre de la función definida por la aplicación.
 ms.assetid: 5563311c-2bd1-4e96-ba0a-5a4225050f77
 title: Función de devolución de llamada AuthzFreeGroupsCallback
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 7d8942acbc67f122ea79f0b9e98793628b5f21f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cce78e261892fede79fb8fc76bc5b0d009342db3e0bf672be2854cb8492bcec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783769"
 ---
 # <a name="authzfreegroupscallback-callback-function"></a>Función de devolución de llamada AuthzFreeGroupsCallback
 
-La función **AuthzFreeGroupsCallback** es una función definida por la aplicación que libera la memoria asignada por la función [**AuthzComputeGroupsCallback**](authzcomputegroupscallback.md) . **AuthzFreeGroupsCallback** es un marcador de posición para el nombre de la función definida por la aplicación.
+La **función AuthzFreeGroupsCallback** es una función definida por la aplicación que libera la memoria asignada por la función [**AuthzComputeGroupsCallback.**](authzcomputegroupscallback.md) **AuthzFreeGroupsCallback es** un marcador de posición para el nombre de la función definida por la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,10 +38,10 @@ void CALLBACK AuthzFreeGroupsCallback(
 
 <dl> <dt>
 
-*pSidAttrArray* \[ de\]
+*pSidAttrArray* \[ En\]
 </dt> <dd>
 
-Puntero a la memoria asignada por [**AuthzComputeGroupsCallback**](authzcomputegroupscallback.md).
+Puntero a la memoria asignada por [**AuthzComputeGroupsCallback.**](authzcomputegroupscallback.md)
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Puntero a la memoria asignada por [**AuthzComputeGroupsCallback**](authzcomputeg
 
 Esta función de devolución de llamada no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las variables de atributo deben tener el formato de una expresión cuando se utilizan con operadores lógicos; de lo contrario, se evalúan como Unknown.
+Las variables de atributo deben tener el formato de una expresión cuando se usan con operadores lógicos; De lo contrario, se evalúan como desconocidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,17 +59,17 @@ Las variables de atributo deben tener el formato de una expresión cuando se uti
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                   |
-| Redistribuible<br/>          | Paquete de herramientas de administración de Windows Server 2003 en Windows XP<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                   |
+| Redistribuible<br/>          | Windows Paquete de herramientas de administración de Server 2003 en Windows XP<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones básicas de Access Control](authorization-functions.md)
+[Funciones Access Control básicas](authorization-functions.md)
 </dt> <dt>
 
 [**AuthzComputeGroupsCallback**](authzcomputegroupscallback.md)

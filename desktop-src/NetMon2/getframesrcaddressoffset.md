@@ -44,7 +44,7 @@ DWORD WINAPI GetFrameSrcAddressOffset(
 *hFrame* 
 </dt> <dd>
 
-Identificador del marco.
+Controle el marco.
 
 </dd> <dt>
 
@@ -59,15 +59,15 @@ Tipo de dirección de origen. El valor del parámetro puede ser uno de los sigui
 -   TOKENRING \_ DE TIPO \_ DE DIRECCIÓN
 -   TIPO \_ DE \_ DIRECCIÓN FDDI
 -   TIPO \_ DE \_ DIRECCIÓN XNS
--   TIPO \_ DE DIRECCIÓN IP DE LA \_ DIRECCION \_
--   ADDRESS \_ TYPE \_ ATM
+-   IP \_ DE TIPO DE DIRECCIÓN DE \_ ALÁDS \_
+-   CAJERO \_ AUTOMÁTICO DE TIPO DE \_ DIRECCIÓN
 
 </dd> <dt>
 
 *AddressLength* 
 </dt> <dd>
 
-Puntero a **un DWORD**, que, a la vuelta, contiene la longitud de la dirección, en bytes.
+Puntero a un **objeto DWORD**, que, al devolverse, contiene la longitud de la dirección, en bytes.
 
 </dd> </dl>
 

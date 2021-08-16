@@ -1,53 +1,53 @@
 ---
-title: Objeto de receptor de red del escritor
-description: Objeto de receptor de red del escritor
+title: Objeto de receptor de red writer
+description: Objeto de receptor de red writer
 ms.assetid: f7765b42-693a-4f48-b750-17579e860b6d
 keywords:
-- SDK de Windows Media Format, objetos de receptor de red del escritor
-- Advanced Systems Format (ASF), objetos de receptor de red del escritor
-- ASF (formato de sistemas avanzados), objetos de receptor de red del sistema de escritura
-- objetos, objetos de receptor de red del escritor
-- objetos de receptor de red del escritor
+- Windows SDK de formato multimedia, objetos receptores de red writer
+- Formato de sistemas avanzados (ASF), objetos receptores de red de escritura
+- ASF (formato de sistemas avanzados), escritura de objetos receptores de red
+- objects,writer network sink objects
+- objetos receptores de red writer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c85af356c1d326ddaaf3703ca87c3b7bdd1628b9
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: c2011fd161fc4ac5e1cd03d955f06259e6499e343970cc309b1e8c41db051a32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104149129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843730"
 ---
-# <a name="writer-network-sink-object"></a>Objeto de receptor de red del escritor
+# <a name="writer-network-sink-object"></a>Objeto de receptor de red writer
 
-El objeto de receptor de red del escritor se utiliza para escribir medios digitales en una red.
+El objeto de receptor de red de escritor se usa para escribir medios digitales en una red.
 
-La función [**WMCreateWriterNetworkSink**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatewriternetworksink)crea el objeto de receptor de red del escritor, que establece un puntero a una interfaz **IWMWriterNetworkSink** . Las demás interfaces del objeto de receptor de red del escritor se pueden obtener llamando al método **QueryInterface** .
+La función [**WMCreateWriterNetworkSink**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatewriternetworksink)crea el objeto de receptor de red del escritor, que establece un puntero a una **interfaz IWMWriterNetworkSink.** Las demás interfaces del objeto de receptor de red del escritor se pueden obtener llamando al **método QueryInterface.**
 
 
 
 | Interfaz                                              | Descripción                                                                                                                                                                                                     |
 |--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IWMClientConnections**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmclientconnections)   | Recopila información sobre los clientes conectados.                                                                                                                                                                      |
-| [**IWMClientConnections2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmclientconnections2) | Recupera información de cliente avanzada.                                                                                                                                                                          |
-| [**IWMRegisterCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmregistercallback)     | Permite que la aplicación obtenga mensajes de estado del objeto.                                                                                                                                                 |
-| [**IWMWriterNetworkSink**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriternetworksink)   | Abre y cierra los puertos, establece y recupera el número máximo de clientes que pueden conectarse al objeto de receptor, establece el protocolo de red que va a usar el objeto de escritor y realiza otras funciones avanzadas. |
-| [**IWMWriterSink**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwritersink)                 | Asigna memoria, determina si el receptor está funcionando en tiempo real y controla varias funciones de devolución de llamada.                                                                                                |
+| [**IWMClientConnections2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmclientconnections2) | Recupera información avanzada del cliente.                                                                                                                                                                          |
+| [**IWMRegisterCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmregistercallback)     | Permite que la aplicación obtenga mensajes de estado del objeto .                                                                                                                                                 |
+| [**IWMWriterNetworkSink**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriternetworksink)   | Abre y cierra puertos, establece y recupera el número máximo de clientes que pueden conectarse al objeto receptor, establece el protocolo de red que usará el objeto de escritor y realiza otras funciones avanzadas. |
+| [**IWMWriterSink**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwritersink)                 | Asigna memoria, determina si el receptor funciona en tiempo real y controla varias funciones de devolución de llamada.                                                                                                |
 
 
 
- 
+ 
 
-La aplicación puede implementar la siguiente interfaz de devolución de llamada para realizar el seguimiento del progreso de un objeto de receptor de red del escritor.
+La aplicación puede implementar la siguiente interfaz de devolución de llamada para realizar un seguimiento del progreso de un objeto receptor de red de escritor.
 
 
 
 | Interfaz                                      | Descripción                                                                    |
 |------------------------------------------------|--------------------------------------------------------------------------------|
-| [**IWMStatusCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback) | Obligatorio cuando la información de estado se debe comunicar a la aplicación host. |
+| [**IWMStatusCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback) | Se requiere cuando se debe comunicar la información de estado a la aplicación host. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -56,15 +56,15 @@ La aplicación puede implementar la siguiente interfaz de devolución de llamada
 [**Difusión de datos de ASF**](broadcasting-asf-data.md)
 </dt> <dt>
 
-[**de la empresa**](objects.md)
+[**Objetos**](objects.md)
 </dt> <dt>
 
 [**Trabajar con receptores de escritor**](working-with-writer-sinks.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

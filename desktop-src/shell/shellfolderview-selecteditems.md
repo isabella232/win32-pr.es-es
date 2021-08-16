@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 1ee3bf2e-f9c9-47d9-a0f2-efedd69770c5
-ms.openlocfilehash: 485eda530adc4955abb27899d67ac0900eb0a910
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: c8da62afba7e8cc2f594f15c34e2f2bcf6af1ae8e03f857324d18e79b0967d4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857687"
 ---
 # <a name="shellfolderviewselecteditems-method"></a>Método ShellFolderView.SelectedItems
 
@@ -43,13 +43,13 @@ Tipo: **[ **FolderItems**](folderitems.md)\*\***
 
 Referencia de objeto al [**objeto FolderItems.**](folderitems.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo se puede llamar a **SelectedItems** en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método en JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso correcto de este método en JScript insertado en HTML.
 
 
 ```JScript
@@ -101,9 +101,9 @@ En el ejemplo siguiente se muestra el uso adecuado de este método en JScript in
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

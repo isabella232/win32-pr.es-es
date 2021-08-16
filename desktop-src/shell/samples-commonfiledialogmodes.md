@@ -1,5 +1,5 @@
 ---
-description: Muestra cómo usar el cuadro de diálogo de archivo común en modos diferentes para elegir archivos, contenedores (carpetas) o archivos y carpetas (modo de cesta) sin descartar el cuadro de diálogo.
+description: Muestra cómo usar el cuadro de diálogo Archivo común en distintos modos para seleccionar archivos, contenedores (carpetas) o archivos y carpetas (modo de cesta de la compra) sin descartar el cuadro de diálogo.
 title: Ejemplo de modos de cuadro de diálogo de archivo común
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 0dab735425c800e143bc2808b247fa89d1c23094
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e6cdc5df1d8ba07664f1ca06114dbf138d7a7e7dde7b78cb588d4c446072a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858477"
 ---
 # <a name="common-file-dialog-modes-sample"></a>Ejemplo de modos de cuadro de diálogo de archivo común
 
-Muestra cómo usar el cuadro de diálogo de archivo común en modos diferentes para elegir archivos, contenedores (carpetas) o archivos y carpetas (modo de cesta) sin descartar el cuadro de diálogo.
+Muestra cómo usar el cuadro de diálogo Archivo común en distintos modos para seleccionar archivos, contenedores (carpetas) o archivos y carpetas (modo de cesta de la compra) sin descartar el cuadro de diálogo.
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,27 +34,27 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
-| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
 
 
 
  
 
-Para conocer los requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
+Para obtener requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                                             |
+| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Ejemplo de CommonFileDialogModes](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/CommonFileDialogModes) |
+| GitHub  | [Ejemplo CommonFileDialogModes](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/CommonFileDialogModes) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
  
 

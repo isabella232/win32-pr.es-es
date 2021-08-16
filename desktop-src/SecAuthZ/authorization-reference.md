@@ -1,5 +1,5 @@
 ---
-description: Las páginas de referencia de autorización contienen descripciones detalladas de las funciones de autorización, interfaces, objetos, estructuras y otros elementos de programación de Microsoft.
+description: Las páginas de referencia de autorización contienen descripciones detalladas de las funciones de autorización de Microsoft, interfaces, objetos, estructuras y otros elementos de programación.
 ms.assetid: edfc2012-d948-4b01-a7c8-387a7d5caa86
 title: Referencia de autorización
 ms.topic: article
@@ -13,16 +13,16 @@ ms.locfileid: "117784171"
 ---
 # <a name="authorization-reference"></a>Referencia de autorización
 
-Las páginas de referencia de autorización contienen descripciones detalladas de las funciones de autorización, interfaces, objetos, estructuras y otros elementos de programación de Microsoft. Estas páginas incluyen descripciones de referencia de la API para trabajar con controles de acceso, incluidos los editores de control de acceso.
+Las páginas de referencia de autorización contienen descripciones detalladas de las funciones de autorización de Microsoft, interfaces, objetos, estructuras y otros elementos de programación. Estas páginas incluyen descripciones de referencia de la API para trabajar con controles de acceso, incluidos los editores de control de acceso.
 
-Las páginas de referencia se dividen en los siguientes grupos.
+Las páginas de referencia se dividen en los grupos siguientes.
 
 | Sección                                                                                        | Descripción                                                            |
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [Ensamblado Microsoft.Interop.Security.AzRoles](microsoft-interop-security-azroles-assembly.md) | Vínculos a la documentación de las interfaces de ensamblado AzRoles.            |
-| [Constantes de autorización](authorization-constants.md)                                         | Constantes usadas por elementos de programación de autorización.                  |
-| [Tipos de datos de autorización](authorization-data-types.md)                                       | Tipos de datos utilizados por elementos de programación de autorización.                 |
-| [Enumeraciones de autorización](authorization-enumerations.md)                                   | Enumeraciones utilizadas por elementos de programación de autorización.               |
+| [Ensamblado Microsoft.Interop.Security.AzRoles](microsoft-interop-security-azroles-assembly.md) | Vínculos a la documentación de las interfaces de ensamblado de AzRoles.            |
+| [Constantes de autorización](authorization-constants.md)                                         | Constantes utilizadas por los elementos de programación de autorización.                  |
+| [Tipos de datos de autorización](authorization-data-types.md)                                       | Tipos de datos utilizados por los elementos de programación de autorización.                 |
+| [Enumeraciones de autorización](authorization-enumerations.md)                                   | Enumeraciones utilizadas por los elementos de programación de autorización.               |
 | [Funciones de autorización](authorization-functions.md)                                         | Funciones usadas con autorización.                                     |
 | [Interfaces de autorización](authorization-interfaces.md)                                       | Interfaces usadas con autorización.                                    |
 | [Objetos de autorización](authorization-objects.md)                                             | Objetos usados con autorización.                                       |

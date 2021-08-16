@@ -16,16 +16,16 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 5cd3fe778ca7338df6b2674a4930458ef9113a1d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 93b80f7571630b306951c9efddef459930b23ab66a0f1b62913836f459db8033
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118312654"
 ---
 # <a name="swbemservicesexecqueryasync-method"></a>SWbemServices.Exemétodo cQueryAsync
 
-El **método ExecQueryAsync** del [**objeto SWbemServices**](swbemservices.md) ejecuta una consulta para recuperar objetos. La llamada a este método se devuelve inmediatamente y los resultados y el estado se devuelven al autor de la llamada a través de eventos entregados al receptor que se especifica en *objWbemSink*. Para controlar cada objeto devuelto, cree *un objeto objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md)
+El **método ExecQueryAsync** del [**objeto SWbemServices**](swbemservices.md) ejecuta una consulta para recuperar objetos. La llamada a este método se devuelve inmediatamente y los resultados y el estado se devuelven al autor de la llamada a través de eventos entregados al receptor especificado en *objWbemSink*. Para controlar cada objeto devuelto, cree *un objeto objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md)
 
 Se llama al método en modo asincrónico. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
@@ -61,7 +61,7 @@ Receptor de objetos que ejecuta la consulta de forma asincrónica. Cree un [**ob
 *strQuery* 
 </dt> <dd>
 
-Necesario. Cadena que contiene el texto de la consulta. Este parámetro no puede estar en blanco. Para obtener más información sobre la creación de cadenas de consulta WMI, vea Consulta con [WQL](querying-with-wql.md) y la referencia [de WQL.](wql-sql-for-wmi.md)
+Obligatorio. Cadena que contiene el texto de la consulta. Este parámetro no puede estar en blanco. Para obtener más información sobre la creación de cadenas de consulta WMI, vea Consulta con [WQL](querying-with-wql.md) y la referencia [de WQL.](wql-sql-for-wmi.md)
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Entero que determina el comportamiento de la consulta. Este parámetro puede ace
 
 </dt> <dd>
 
-Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor del objeto.
+Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor de objetos.
 
 </dd> <dt>
 
@@ -119,14 +119,14 @@ Se usa para un prototipo. Impide que se haga la consulta y, en su lugar, devuelv
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clases con la definición de clase base. Para obtener más información, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objwbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, esto no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que proporciona servicios a la solicitud. Un proveedor que admita o requiera información de contexto debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que proporciona servicios a la solicitud. Un proveedor que admita o requiera información de contexto debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> <dt>
 
@@ -175,14 +175,14 @@ La sintaxis de consulta no es válida.
 
 </dd> <dt>
 
-**wbemErrInvalidQueryType** - 2147749912 (0x80041018)
+**wbemErrInvalidQueryType:** 2147749912 (0x80041018)
 </dt> <dd>
 
 No se admite el lenguaje de consulta solicitado.
 
 </dd> <dt>
 
-**wbemErrOutOfMemory-** 2147749894 (0x80041006)
+**wbemErrOutOfMemory:** 2147749894 (0x80041006)
 </dt> <dd>
 
 No hay suficiente memoria para completar la operación.
@@ -193,11 +193,11 @@ No hay suficiente memoria para completar la operación.
 
 Esta llamada se devuelve inmediatamente. Los objetos y el estado solicitados se devuelven al autor de la llamada a través de devoluciones de llamada entregadas al receptor especificado en *objWbemSink*. Para procesar cada objeto cuando vuelva, cree *un objeto objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md) Una vez devueltos todos los objetos, realice el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
 
-Una devolución de llamada asincrónica permite que un usuario no autenticado proporcione datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, consulte [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
+Una devolución de llamada asincrónica permite a un usuario no autenticado proporcionar datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, consulte [Establecimiento de la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
-El **método ExecQueryAsync** devuelve un conjunto de resultados vacío cuando no hay objetos que coincidan con los criterios de la consulta. Este método devuelve propiedades de clave independientemente de si se solicita o no la [**propiedad Key**](standard-qualifiers.md) en el *parámetro strQuery.*
+El **método ExecQueryAsync** devuelve un conjunto de resultados vacío cuando no hay objetos que coincidan con los criterios de la consulta. Este método devuelve propiedades de clave independientemente de si se solicita o no la propiedad [**Key**](standard-qualifiers.md) en el *parámetro strQuery.*
 
-Hay límites en el número de palabras clave **AND** **y OR** que se pueden usar en consultas WQL. Un gran número de palabras clave WQL usadas en una consulta compleja puede hacer que WMI devuelva el código de error WBEM \_ E QUOTA VIOLATION como un valor \_ \_ **HRESULT.** El límite de palabras clave WQL depende de lo compleja que sea la consulta.
+Hay límites en el número de palabras clave **AND** y **OR** que se pueden usar en consultas WQL. Un gran número de palabras clave WQL usadas en una consulta compleja puede hacer que WMI devuelva el código de error WBEM \_ E QUOTA VIOLATION como un valor \_ \_ **HRESULT.** El límite de palabras clave de WQL depende de lo compleja que sea la consulta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -207,7 +207,7 @@ Hay límites en el número de palabras clave **AND** **y OR** que se pueden usar
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
