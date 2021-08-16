@@ -89,7 +89,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ System**.**OtherIdentifyingInfo**")
 </dt> </dl>
 
-Matriz que contiene descripciones de los valores de la **propiedad OtherIdentifyingInfo.** Los elementos de matriz **de IdentifyingDescriptions** corresponden a los elementos de la **propiedad IdentifyingDescriptions.**
+Matriz que contiene descripciones de los valores de la **propiedad OtherIdentifyingInfo.** Los elementos de matriz **de IdentifyingDescriptions** corresponden a los elementos de **la propiedad IdentifyingDescriptions.**
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Convención de nomenclatura utilizada por la propiedad Name para asegurarse de que **los valores name** son únicos.
+Convención de nomenclatura utilizada por la propiedad Name para asegurarse de que **los valores** name son únicos.
 
 </dd> <dt>
 
@@ -137,7 +137,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ System**.**IdentifyingDescriptions**")
 </dt> </dl>
 
-Matriz que contiene un conjunto de datos adicionales, más allá de la información de nombre del sistema, que se pueden usar para identificar un sistema informático.
+Matriz que contiene un conjunto de datos adicionales, más allá de la información del nombre del sistema, que se podrían usar para identificar un sistema informático.
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| General Information \| 001.4")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Información general de DMTF \| \| 001.4")
 </dt> </dl>
 
 Cadena que proporciona información sobre cómo se puede acceder al propietario del sistema principal (por ejemplo, el número de teléfono, la dirección de correo electrónico, entre otros).
@@ -190,7 +190,7 @@ Matriz que contiene los roles que lleva a cabo el sistema en un entorno empresar
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -200,7 +200,7 @@ Matriz que contiene los roles que lleva a cabo el sistema en un entorno empresar
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

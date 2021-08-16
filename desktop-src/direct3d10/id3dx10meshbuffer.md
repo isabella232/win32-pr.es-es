@@ -23,7 +23,7 @@ ms.locfileid: "118540159"
 ---
 # <a name="id3dx10meshbuffer-interface"></a>Interfaz ID3DX10MeshBuffer
 
-Un búfer de malla es un búfer que contiene datos sobre una malla. Puede contener uno de los cinco tipos diferentes de datos: datos de vértices, datos de índice, datos de adyacencia, datos de atributos o datos de punto de réplica. La estructura se usa para tener acceso a estos cinco datos a través de las cinco API siguientes: [**ID3DX10Mesh::GetVertexBuffer**](id3dx10mesh-getvertexbuffer.md), [**ID3DX10Mesh::GetIndexBuffer**](id3dx10mesh-getindexbuffer.md), [**ID3DX10Mesh::GetAdjacencyBuffer**](id3dx10mesh-getadjacencybuffer.md), [**ID3DX10Mesh::GetAttributeBuffer**](id3dx10mesh-getattributebuffer.md)o [**ID3DX10Mesh::GetPointRepBuffer**](id3dx10mesh-getpointrepbuffer.md).
+Un búfer de malla es un búfer que contiene datos sobre una malla. Puede contener uno de los cinco tipos diferentes de datos: datos de vértices, datos de índice, datos de adyacencia, datos de atributo o datos de punto de repetición. La estructura se usa para tener acceso a estos cinco datos a través de las cinco API siguientes: [**ID3DX10Mesh::GetVertexBuffer,**](id3dx10mesh-getvertexbuffer.md) [**ID3DX10Mesh::GetIndexBuffer,**](id3dx10mesh-getindexbuffer.md) [**ID3DX10Mesh::GetAdjacencyBuffer**](id3dx10mesh-getadjacencybuffer.md), [**ID3DX10Mesh::GetAttributeBuffer**](id3dx10mesh-getattributebuffer.md)o [**ID3DX10Mesh::GetPointRepBuffer**](id3dx10mesh-getpointrepbuffer.md).
 
 ## <a name="members"></a>Miembros
 
@@ -39,7 +39,7 @@ La **interfaz ID3DX10MeshBuffer** tiene estos métodos.
 
 | Método                                       | Descripción                                                                |
 |:---------------------------------------------|:---------------------------------------------------------------------------|
-| [**GetSize**](id3dx10meshbuffer-getsize.md) | Obtenga el tamaño del búfer de malla, en bytes.<br/>                      |
+| [**GetSize**](id3dx10meshbuffer-getsize.md) | Obtiene el tamaño del búfer de malla, en bytes.<br/>                      |
 | [**Mapa**](id3dx10meshbuffer-map.md)         | Obtenga un puntero a la memoria del búfer de malla para modificar su contenido.<br/> |
 | [**Unmap**](id3dx10meshbuffer-unmap.md)     | Desamape un búfer.<br/>                                                 |
 
@@ -58,7 +58,7 @@ La **interfaz ID3DX10MeshBuffer** tiene estos métodos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

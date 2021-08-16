@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Propiedades de EsentSLVRootStopenException'
+description: 'Más información sobre: Propiedades de EsentSLVRootStengOpenException'
 title: Propiedades de EsentSLVRootStengOpenException
 TOCTitle: EsentSLVRootStillOpenException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSLVRootStillOpenException

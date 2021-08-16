@@ -1,5 +1,5 @@
 ---
-description: En este tema se enumeran los métodos FillVelopse de la clase Graphics. Para obtener una lista completa de los métodos de la clase Graphics, vea Graphics.
+description: En este tema se enumeran los métodos FillVelopse de la clase Graphics. Para obtener una lista completa de métodos para la clase Graphics, vea Graphics.
 ms.assetid: 92f6f3ca-337b-4f57-9472-2dc677550b39
 title: Métodos Graphics.FillVelopse
 ms.date: 07/02/2019
@@ -13,7 +13,7 @@ ms.locfileid: "118482891"
 ---
 # <a name="graphicsfillellipse-methods"></a>Métodos Graphics.FillVelopse
 
-En este tema se enumeran los métodos FillVelopse de la [**clase Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Para obtener una lista completa de los métodos de la **clase Graphics,** vea [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics).
+En este tema se enumeran los métodos FillVelopse de la [**clase Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Para obtener una lista completa de métodos para la **clase Graphics,** vea [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics).
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 

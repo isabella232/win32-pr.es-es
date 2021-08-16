@@ -13,7 +13,7 @@ ms.locfileid: "118389924"
 ---
 # <a name="using-escape-sequences-and-control-characters"></a>Usar secuencias de escape y caracteres de control
 
-Cuando una aplicación convierte cadenas de ASCII o de una página de códigos [Windows (ANSI)](code-pages.md) a Unicode, debe traducir secuencias de escape carácter a carácter a Unicode. Cuando un ascii u otro archivo de texto de 8 bits se convierte en Unicode, existe la posibilidad de que se vuelva a convertir posteriormente. Convertir secuencias de escape en Unicode por carácter, en lugar de combinarlas como un único carácter Unicode, permite realizar la conversión inversa sin necesidad de reconocer y analizar las secuencias de escape como tales. Por ejemplo, ESC+A debe convertirse 0x001B (ESC), 0x0041 (A), en lugar de 0x411B.
+Cuando una aplicación convierte cadenas de ASCII o de una página de códigos [Windows (ANSI)](code-pages.md) a Unicode, debe traducir secuencias de escape carácter a carácter en Unicode. Cuando un archivo de texto ASCII u otro archivo de texto de 8 bits se convierte en Unicode, existe la posibilidad de que posteriormente se vuelva a convertir. La conversión de secuencias de escape en Unicode por carácter, en lugar de combinarlas como un único carácter Unicode, permite realizar la conversión inversa sin necesidad de reconocer y analizar las secuencias de escape como tales. Por ejemplo, ESC+A debe convertirse en 0x001B (ESC), 0x0041 (A), en lugar de 0x411B.
 
 Los primeros 32 valores de código de 16 bits en Unicode están diseñados para los 32 caracteres de control. Esta especificación admite el uso existente de caracteres de control con fines de formato. Las aplicaciones Unicode pueden tratar estos caracteres de control exactamente de la misma manera que tratan sus equivalentes ASCII.
 

@@ -1,25 +1,25 @@
 ---
 title: Código de ejemplo para buscar el contenedor de particiones
-description: En este tema se incluyen ejemplos de código que buscan el contenedor de la partición.
+description: En este tema se incluyen ejemplos de código que localizan el contenedor de particiones.
 ms.assetid: 7aa6ad5a-7baf-484a-9296-eafb61da5f4e
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para buscar el contenedor de particiones AD
-- Particiones de directorio de aplicaciones AD, código de ejemplo para buscar el contenedor de particiones
+- Código de ejemplo para buscar el contenedor de particiones de AD
+- Application Directory Partitions AD , Ejemplo de código para buscar el contenedor de particiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3f10156894a71a3308b58d125c16782497e5f29
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5757e638e046089d828ee1c681d04ec210986181cb74ec3b1253c05515eda2fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105656345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962314"
 ---
 # <a name="example-code-for-locating-the-partitions-container"></a>Código de ejemplo para buscar el contenedor de particiones
 
-En este tema se incluyen ejemplos de código que buscan el contenedor de la partición.
+En este tema se incluyen ejemplos de código que localizan el contenedor de particiones.
 
-El siguiente ejemplo de código de C/C++ obtiene el nombre distintivo del contenedor de particiones buscando el objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) en el contenedor de configuración.
+En el siguiente ejemplo de código de C/C++ se obtiene el nombre distintivo del contenedor Partitions buscando el objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) en el contenedor de configuración.
 
 
 ```C++
@@ -150,7 +150,7 @@ HRESULT GetPartitionsDNSearch(LPWSTR *ppwszPartitionsDN)
 
 
 
-En el siguiente ejemplo de código de Visual Basic Scripting Edition se obtiene el nombre distintivo del contenedor de particiones buscando el objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) en el contenedor de configuración.
+En el Visual Basic ejemplo de código de Scripting Edition se obtiene el nombre distintivo del contenedor Partitions buscando el objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) en el contenedor de configuración.
 
 
 ```VB
@@ -193,7 +193,7 @@ End Function
 
 
 
-El siguiente ejemplo de código de C/C++ obtiene el nombre distintivo del contenedor de particiones mediante la generación manual del nombre distintivo.
+En el siguiente ejemplo de código de C/C++ se obtiene el nombre distintivo del contenedor Partitions mediante la creación manual del nombre distintivo.
 
 
 ```C++
@@ -262,7 +262,7 @@ HRESULT GetPartitionsDNManual(LPWSTR *ppwszPartitionsDN)
 
 
 
-En el siguiente ejemplo de código de Visual Basic se obtiene el nombre distintivo del contenedor de particiones mediante la generación manual del nombre distintivo.
+En el Visual Basic ejemplo de código siguiente se obtiene el nombre distintivo del contenedor Partitions mediante la creación manual del nombre distintivo.
 
 
 ```VB
@@ -283,7 +283,7 @@ End Function
 
 
 
-En el siguiente ejemplo de código de C# se obtiene el nombre distintivo del contenedor de particiones buscando el objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) en el contenedor de configuración. En este ejemplo se usa C# con System. DirectoryServices.
+En el siguiente ejemplo de código de C# se obtiene el nombre distintivo del contenedor Partitions buscando el [**objeto crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) en el contenedor de configuración. En este ejemplo se usa C# con System.DirectoryServices.
 
 
 ```CSharp
@@ -317,7 +317,7 @@ static string GetPartitionsDN()
 
 
 
-En el siguiente ejemplo de código de .NET Visual Basic se obtiene el nombre distintivo del contenedor de partición buscando el objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) en el contenedor de configuración. En este ejemplo se usa Visual Basic .NET con System. DirectoryServices.
+En el Visual Basic ejemplo de código de .NET se obtiene el nombre distintivo del contenedor Partition buscando el objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) en el contenedor de configuración. En este ejemplo se Visual Basic .NET con System.DirectoryServices.
 
 
 ```VB
@@ -352,6 +352,6 @@ End Function
 
 
 
- 
+ 
 
- 
+ 

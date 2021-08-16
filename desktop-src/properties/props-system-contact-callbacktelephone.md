@@ -1,5 +1,5 @@
 ---
-description: Llame al número de reserva del contacto.
+description: Número de llamada del contacto.
 ms.assetid: bcfd0f2b-317b-41de-88ab-acfde822e6fb
 title: System.Contact.CallbackTelephone
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118730169"
 ---
 # <a name="systemcontactcallbacktelephone"></a>System.Contact.CallbackTelephone
 
-Llame al número de reserva del contacto.
+Número de llamada del contacto.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

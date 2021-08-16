@@ -1,7 +1,7 @@
 ---
 description: Crea una copia de IAnalysisRegion.
 ms.assetid: eb94e1ce-7801-409d-9ae6-e7db0a9b861f
-title: 'IAnalysisRegion:: Clone (método) (IACom. h)'
+title: Método IAnalysisRegion::Clone (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: fb069ddb461ab4422f8cbbc8990fb6d735808e62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13bd514396c738f2e5367528dc62833bd3a4dcc195aecf30ee723ea9c09b5bcf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596795"
 ---
-# <a name="ianalysisregionclone-method"></a>IAnalysisRegion:: Clone (método)
+# <a name="ianalysisregionclone-method"></a>IAnalysisRegion::Clone (método)
 
-Crea una copia de [**IAnalysisRegion**](ianalysisregion.md).
+Crea una copia de [**IAnalysisRegion.**](ianalysisregion.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,23 +39,23 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*pClonedRegion* \[ enuncia\]
+*pClonedRegion* \[ out\]
 </dt> <dd>
 
-Puntero a una copia de [**IAnalysisRegion**](ianalysisregion.md).
+Puntero a una copia de [**IAnalysisRegion.**](ianalysisregion.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se eqivalent al método System. Windows. Ink. AnalysisCore. AnalysisRegionBase. Clone en el .NET Framework.
+Este método es eqimio para el sistema. Windows. Método Ink.AnalysisCore.AnalysisRegionBase.Clone del .NET Framework.
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *pClonedRegion* cuando ya no necesite usar la región de análisis clonada.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *pClonedRegion* cuando ya no necesite usar la región de análisis clonada.
 
  
 
@@ -63,23 +63,23 @@ Este método se eqivalent al método System. Windows. Ink. AnalysisCore. Analysi
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IAnalysisRegion**](ianalysisregion.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

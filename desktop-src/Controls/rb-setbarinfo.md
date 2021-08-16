@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_SETBARINFO (commctrl. h)
+title: RB_SETBARINFO mensaje (Commctrl.h)
 description: Establece las características de un control rebar.
 ms.assetid: e4413d46-574f-4ccd-b5fd-3ba6c1e3924b
 keywords:
-- RB_SETBARINFO controles de mensajes de Windows
+- RB_SETBARINFO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b360bc0b4d14963619aad8f769634d7dd0ad17e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b4297d73a8bca6abac1a4b99abc4a91147ad237548a67e325a9efb2f1a1f1c46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696615"
 ---
-# <a name="rb_setbarinfo-message"></a>Mensaje de SETBARINFO de RB \_
+# <a name="rb_setbarinfo-message"></a>Mensaje \_ SETBARINFO de RB
 
 Establece las características de un control rebar.
 
@@ -35,23 +35,23 @@ Establece las características de un control rebar.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**REBARINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) que contiene la información que se va a establecer. Debe establecer el miembro **cbSize** de esta estructura en **sizeof**(REBARINFO) antes de enviar este mensaje.
+Puntero a una [**estructura REBARINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) que contiene la información que se va a establecer. Debe establecer el **miembro cbSize** de esta estructura en **sizeof**(REBARINFO) antes de enviar este mensaje.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

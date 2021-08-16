@@ -27,7 +27,7 @@ Devuelve o establece si la voz está habilitada para los comandos globales del A
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agent.***Characters("**_CharacterID_*_"). Commands.GlobalVoiceCommandsEnabled_*
+*agent.***Caracteres("**_CharacterID_*_"). Commands.GlobalVoiceCommandsEnabled_*
 
 \[ = *Booleana*\]
 
@@ -43,9 +43,9 @@ Devuelve o establece si la voz está habilitada para los comandos globales del A
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Microsoft Agent agrega automáticamente parámetros de voz (gramática) para abrir y cerrar la ventana Comandos de voz y para mostrar y ocultar el carácter. Si establece **GlobalVoiceCommandsEnabled** en **False**, el Agente deshabilita los parámetros de voz [](caption-property.md) para estos comandos, así como los parámetros de voz para el título de los objetos [**Commands de**](/windows/desktop/lwef/the-commands-collection-object) otro cliente. Esto le permite eliminarlos de la gramática activa actual del cliente. Sin embargo, dado que esto podría bloquear el acceso de voz a otros clientes, restablezca esta propiedad en **True** después de procesar la entrada de voz del usuario.
+Microsoft Agent agrega automáticamente parámetros de voz (gramática) para abrir y cerrar la ventana Comandos de voz y para mostrar y ocultar el carácter. Si establece **GlobalVoiceCommandsEnabled** en **False,** el Agente deshabilita los parámetros de voz [](caption-property.md) para estos comandos, así como los parámetros de voz para el título de los objetos [**Commands de**](/windows/desktop/lwef/the-commands-collection-object) otro cliente. Esto le permite eliminarlos de la gramática activa actual del cliente. Sin embargo, dado que esto podría bloquear el acceso de voz a otros clientes, restablezca esta propiedad a **True** después de procesar la entrada de voz del usuario.
 
 Deshabilitar la propiedad no afecta al menú emergente del carácter. Los comandos globales agregados por el servidor seguirán apareciendo. No se pueden quitar del menú emergente.
 

@@ -1,9 +1,9 @@
 ---
-title: función glGenTextures (GL. h)
+title: Función glGenTextures (Gl.h)
 description: La función glGenTextures genera nombres de textura.
 ms.assetid: f2491faf-2b33-4b06-9a9f-51ac295690fb
 keywords:
-- glGenTextures (función) OpenGL
+- Función glGenTextures OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 204a5d4fb736a88cf615577f4c740cde15d75829
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b28275bef054b26c2145ab9779ec776297ac7838d0313769123fb1be904a3bd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625235"
 ---
-# <a name="glgentextures-function"></a>glGenTextures función)
+# <a name="glgentextures-function"></a>Función glGenTextures
 
-La función **glGenTextures** genera nombres de textura.
+La **función glGenTextures** genera nombres de textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,11 +44,11 @@ void WINAPI glGenTextures(
 *n* 
 </dt> <dd>
 
-El número de nombres de textura que se van a generar.
+Número de nombres de textura que se generarán.
 
 </dd> <dt>
 
-*texturas* 
+*Texturas* 
 </dt> <dd>
 
 Puntero al primer elemento de una matriz en la que se almacenan los nombres de textura generados.
@@ -67,23 +67,23 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | *n* era un valor negativo.<br/>                                                                                                  |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *n* era un valor negativo.<br/>                                                                                                  |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glGenTextures** devuelve *n* nombres de textura en el parámetro *Textures* . Los nombres de las texturas no son necesariamente un conjunto contiguo de enteros; sin embargo, ninguno de los nombres devueltos se puede haber estado usando inmediatamente antes de llamar a la función **glGenTextures** . Las texturas generadas suponen la dimensionalidad del destino de textura al que se enlazan por primera vez con la función [**glBindTexture**](glbindtexture.md) . Los nombres de textura devueltos por **glGenTextures** no se devuelven en las llamadas subsiguientes a **glGenTextures** , a menos que se eliminen primero llamando a [**glDeleteTextures**](gldeletetextures.md).
+La **función glGenTextures** devuelve *n nombres* de textura en el parámetro *textures.* Los nombres de textura no son necesariamente un conjunto contiguo de enteros, pero ninguno de los nombres devueltos puede haber estado en uso inmediatamente antes de llamar a la **función glGenTextures.** Las texturas generadas asumen la dimensionalidad del destino de textura al que se enlazan primero con la [**función glBindTexture.**](glbindtexture.md) Las llamadas posteriores a **glGenTextures** no devuelven nombres de textura devueltos por **glGenTextures** a menos que se eliminen primero mediante una llamada [**a glDeleteTextures**](gldeletetextures.md).
 
-No se puede incluir **glGenTextures** en las listas de visualización.
+No se puede **incluir glGenTextures en** las listas para mostrar.
 
 > [!Note]  
-> La función **glGenTextures** solo está disponible en la versión 1,1 o posterior de OpenGL.
+> La **función glGenTextures** solo está disponible en OpenGL versión 1.1 o posterior.
 
  
 
-La siguiente función recupera información relacionada con **glGenTextures**:
+La función siguiente recupera información relacionada con **glGenTextures**:
 
 -   [**glIsTexture**](glistexture.md)
 
@@ -91,17 +91,17 @@ La siguiente función recupera información relacionada con **glGenTextures**:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

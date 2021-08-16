@@ -17,7 +17,7 @@ ms.locfileid: "118554305"
 Por uniformidad, cada instancia de la macro TRAP-TYPE se asigna primero a una instancia de la macro [NOTIFICATION-TYPE](notification-type-macro.md) mediante la asignación definida en [RFC 1908](https://www.ietf.org/rfc/rfc1908.txt).
 
 > [!Note]  
-> Para obtener más información sobre cómo instalar el proveedor, vea [Configurar el entorno SNMP de WMI.](setting-up-the-wmi-snmp-environment.md)
+> Para obtener más información sobre cómo instalar el proveedor, vea [Configuración del entorno SNMP de WMI.](setting-up-the-wmi-snmp-environment.md)
 
  
 

@@ -4,12 +4,12 @@ description: Clic en IAgentNotifySink
 ms.assetid: 6587fed8-4651-4c5c-b257-6e3f991cd3a0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f0e63244a89467225a7bfd045af6dc112431d12
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 154b35d85b86d1bd835275e93e6ea4c397b01240910066debd826c3570f806fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477081"
 ---
 # <a name="iagentnotifysinkclick"></a>IAgentNotifySink::Click
 
@@ -50,9 +50,9 @@ Parámetro que indica el botón del mouse y el estado de la tecla modificadora. 
 | 0x0010 | Botón Central                                  |
 | 0x0002 | Botón derecho                                   |
 | 0x0004 | Mayús Key Down                                 |
-| 0x0008 | Control de la tecla Abajo                               |
-| 0x0020 | Alt tecla abajo                                   |
-| 0x1000 | Evento en el icono de la barra de tareas del carácter |
+| 0x0008 | Tecla De control hacia abajo                               |
+| 0x0020 | Tecla Alt hacia abajo                                   |
+| 0x1000 | Evento producido en el icono de la barra de tareas del carácter |
 
 
 
@@ -63,7 +63,7 @@ Parámetro que indica el botón del mouse y el estado de la tecla modificadora. 
 <span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordenada x del puntero del mouse en píxeles, en relación con el origen de la pantalla (parte superior izquierda).
+Coordenada x del puntero del mouse en píxeles, con respecto al origen de la pantalla (parte superior izquierda).
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Coordenada y del puntero del mouse en píxeles, en relación con el origen de la
 
 </dd> </dl>
 
-Este evento se envía al cliente activo de entrada del carácter. Si ninguno de los clientes del carácter está activo de entrada, el servidor notifica al cliente activo del carácter. Si el carácter está visible, el servidor también activa esa entrada de cliente y envía [**IAgentNotifySink::ActivateInputState**](iagentnotifysink--activateinputstate.md). Si el carácter está oculto, el carácter también se muestra automáticamente.
+Este evento se envía al cliente activo de entrada del carácter. Si ninguno de los clientes del carácter es de entrada-activo, el servidor notifica al cliente activo del carácter. Si el carácter está visible, el servidor también activa esa entrada de cliente y envía [**IAgentNotifySink::ActivateInputState**](iagentnotifysink--activateinputstate.md). Si el carácter está oculto, el carácter también se muestra automáticamente.
 
  
 

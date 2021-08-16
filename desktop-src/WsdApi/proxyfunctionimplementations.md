@@ -1,7 +1,7 @@
 ---
 description: Genera implementaciones para las funciones de proxy para las operaciones de tipo de puerto.
 ms.assetid: 9505ee5f-fdb9-41b8-9537-0c5d29f90168
-title: elemento proxyFunctionImplementations
+title: Elemento proxyFunctionImplementations
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5d64ae53d76100e5d38e1dd1a363f64a1004284b6f8a35ce5eb4e49d6d1e9a79
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118552436"
 ---
-# <a name="proxyfunctionimplementations-element"></a>elemento proxyFunctionImplementations
+# <a name="proxyfunctionimplementations-element"></a>Elemento proxyFunctionImplementations
 
 Genera implementaciones para las funciones de proxy para las operaciones de tipo de puerto.
 
@@ -36,7 +36,7 @@ No hay atributos.
 | [**Async**](async.md)<br/>           | Especifica si las operaciones asincrónicas se incluyen en las funciones de proxy generadas.<br/> <br/>         |
 | [**Eventos**](events.md)<br/>         | Especifica si los eventos relacionados se incluyen en las funciones generadas.<br/> <br/>                        |
 | [**faultInfo**](faultinfo.md)<br/>   | Especifica si los parámetros usados para pasar información de error se incluyen en las funciones generadas.<br/> <br/> |
-| [**Operación**](operation.md)<br/>   | Especifica una operación para la que se va a generar código.<br/> <br/>                                        |
+| [**operation**](operation.md)<br/>   | Especifica una operación para la que se va a generar código.<br/> <br/>                                        |
 | [**portType**](porttype.md)<br/>     | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/>                                       |
 | [**proxyClass**](proxyclass.md)<br/> | Especifica el nombre de la clase de proxy del lado cliente.<br/> <br/>                                               |
 
@@ -61,7 +61,7 @@ No hay atributos.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
@@ -69,7 +69,7 @@ No hay atributos.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

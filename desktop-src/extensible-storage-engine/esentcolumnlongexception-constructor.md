@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Constructor EsentColumnLongException'
-title: Constructor EsentColumnLongException
+title: Constructor esentColumnLongException
 TOCTitle: 'EsentColumnLongException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnLongException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcolumnlongexception.esentcolumnlongexception(v=EXCHG.10)
@@ -31,7 +31,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118782390"
 ---
-# <a name="esentcolumnlongexception-constructor"></a>Constructor EsentColumnLongException
+# <a name="esentcolumnlongexception-constructor"></a>Constructor esentColumnLongException
 
 Inicializa una nueva instancia de la clase EsentColumnLongException.
 
@@ -52,7 +52,7 @@ Dim instance As New EsentColumnLongException()
 public EsentColumnLongException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

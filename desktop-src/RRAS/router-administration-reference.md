@@ -1,5 +1,5 @@
 ---
-title: Referencia de administración del enrutador
+title: Referencia de administración de enrutadores
 ms.assetid: a4a2ac06-2451-4ec1-8c9a-01b3b976ee01
 description: 'Más información sobre: Referencia de administración de enrutadores'
 ms.topic: article
@@ -11,11 +11,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117788050"
 ---
-# <a name="router-administration-reference"></a>Referencia de administración del enrutador
+# <a name="router-administration-reference"></a>Referencia de administración de enrutadores
 
-En la siguiente documentación se describen las funciones que se deben usar al trabajar con la administración del enrutador:
+En la documentación siguiente se describen las funciones que se deben usar al trabajar con la administración del enrutador:
 
--   [Funciones de administración del enrutador](router-administration-functions.md)
+-   [Funciones de administración de enrutadores](router-administration-functions.md)
 
  
 

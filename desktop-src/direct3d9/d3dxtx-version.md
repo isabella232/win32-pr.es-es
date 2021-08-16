@@ -30,7 +30,7 @@ Token de versión que crea un relleno de textura de procedimientos en efectos. L
 
 ## <a name="return-value"></a>Valor devuelto
 
-La macro devuelve el token de versión de textura de procedimiento.
+La macro devuelve el token de versión de textura de procedimientos.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -50,7 +50,7 @@ Una [**referencia CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdat
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga duración, opcionalmente se puede devolver [**un \_ ConcreteJob cim**](cim-concretejob.md) que representa el trabajo.
+Si la operación es de larga duración, opcionalmente se puede devolver [**un \_ concretejob CIM**](cim-concretejob.md) que representa el trabajo.
 
 > [!Note]  
 > Este parámetro era de lectura y escritura en Windows 8.1.
@@ -61,7 +61,7 @@ Si la operación es de larga duración, opcionalmente se puede devolver [**un \_
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -83,13 +83,13 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 **Estado no válido** (5)
 </dt> <dt>
 
-**Tipo no** válido (6)
+**Tipo no válido** (6)
 </dt> <dt>
 
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método activados: trabajo iniciado** (4096)
+**Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Método reservado** (4097..32767)
@@ -102,7 +102,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -112,7 +112,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

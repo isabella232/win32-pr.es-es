@@ -17,7 +17,7 @@ ICE50 comprueba que los iconos de acceso directo se especifican para que se mues
 
 ## <a name="result"></a>Resultado
 
-ICE50 envía un mensaje de error si la extensión del icono y los archivos de destino no coinciden. ICE50 envía una advertencia si los iconos se almacenan en archivos que no tienen una extensión .exe o .ico.
+ICE50 publica un mensaje de error si la extensión del icono y los archivos de destino no coinciden. ICE50 envía una advertencia si los iconos se almacenan en archivos que no tienen una extensión .exe o .ico.
 
 ## <a name="example"></a>Ejemplo
 
@@ -27,8 +27,8 @@ ICE50 notifica el siguiente error para el ejemplo mostrado.
 
 | Error o advertencia de ICE50                                                                                                              | Descripción                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| La extensión del icono "Icon2.dat" para el acceso directo "Shortcut2" no coincide con la extensión del archivo de clave para el componente "Component2". | Si las extensiones del icono y el archivo de destino no coinciden, el acceso directo no tendrá el menú contextual correcto cuando se anuncie el componente. Para corregir este error, cambie el nombre del icono para que coincida con la extensión del archivo de destino.<br/> |
-| La extensión del icono "Icon1.bat" para el acceso directo "Shortcut1" no es "exe" ni "ico". El icono no se mostrará correctamente.         | No todas las versiones del shell muestran correctamente iconos almacenados en archivos que no tienen extensiones de "exe" o "ico". Para corregir esta advertencia, cambie el nombre del icono y tenga una extensión de "exe" o "ico".<br/>                                      |
+| La extensión del icono "Icon2.dat" para el acceso directo "Shortcut2" no coincide con la extensión del archivo de claves para el componente "Component2". | Si las extensiones del icono y el archivo de destino no coinciden, el acceso directo no tendrá el menú contextual correcto cuando se anuncie el componente. Para corregir este error, cambie el nombre del icono para que coincida con la extensión del archivo de destino.<br/> |
+| La extensión del icono "Icon1.bat" para el acceso directo "Shortcut1" no es "exe" ni "ico". El icono no se mostrará correctamente.         | No todas las versiones del shell muestran correctamente iconos almacenados en archivos que no tienen extensiones de "exe" o "ico". Para corregir esta advertencia, cambie el nombre del icono por una extensión de "exe" o "ico".<br/>                                      |
 
 
 
@@ -76,10 +76,10 @@ ICE50 notifica el siguiente error para el ejemplo mostrado.
 
 
 
-| Nombre      | data            |
+| Nombre      | Datos            |
 |-----------|-----------------|
 | Icon1.bat | \[Binary Data\] |
-| Icon2.dat | \[Binary Data\] |
+| Icono2.dat | \[Binary Data\] |
 
 
 
@@ -92,7 +92,7 @@ ICE50 notifica el siguiente error para el ejemplo mostrado.
 | Acceso directo  | Componente  | Destino   | Icono\_    |
 |-----------|------------|----------|-----------|
 | Acceso directo1 | Componente1 | Característica 1 | Icon1.bat |
-| Acceso directo2 | Componente 2 | Característica 1 | Icon2.dat |
+| Acceso directo2 | Componente 2 | Característica 1 | Icono2.dat |
 
 
 

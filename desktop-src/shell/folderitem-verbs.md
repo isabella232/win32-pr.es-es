@@ -1,7 +1,7 @@
 ---
 description: Recupera el objeto FolderItemVerbs del elemento. Este objeto es la colección de verbos que se pueden ejecutar en el elemento.
 ms.assetid: e31160cd-093a-45a6-a066-58120c44eb2c
-title: Método carpeta. Verbs (Shldisp. h)
+title: Método FolderItem.Verbs (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f15c2471f749748f7928a45aa03037d955c75d4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 963581431c35e2c63cbe9af4f5b37ef6d0709d01146a223253247ad2b8c37dda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090605"
 ---
-# <a name="folderitemverbs-method"></a>Carpeta. Verbs (método)
+# <a name="folderitemverbs-method"></a>Método FolderItem.Verbs
 
-Recupera el objeto [**FolderItemVerbs**](folderitemverbs.md) del elemento. Este objeto es la colección de verbos que se pueden ejecutar en el elemento.
+Recupera el objeto [**FolderItemVerbs del**](folderitemverbs.md) elemento. Este objeto es la colección de verbos que se pueden ejecutar en el elemento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ Este método no tiene parámetros.
 
 Tipo: **[ **FolderItemVerbs**](folderitemverbs.md)\*\***
 
-Una referencia de objeto al objeto [**FolderItemVerbs**](folderitemverbs.md) .
+Referencia de objeto al [**objeto FolderItemVerbs.**](folderitemverbs.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se utilizan **verbos** para recuperar el objeto [**FolderItemVerbs**](folderitemverbs.md) que representa el conjunto de verbos que se pueden ejecutar en la carpeta Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usan verbos** para recuperar el [**objeto FolderItemVerbs**](folderitemverbs.md) que representa el conjunto de verbos que se pueden ejecutar en la Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -81,7 +81,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -162,27 +162,27 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Carpeta**](folderitem.md)
+[**FolderItem**](folderitem.md)
 </dt> <dt>
 
 [**InvokeVerb**](folderitem-invokeverb.md)
 </dt> <dt>
 
-[**DoIt**](folderitemverb-doit.md)
+[**Doit**](folderitemverb-doit.md)
 </dt> </dl>
 
  

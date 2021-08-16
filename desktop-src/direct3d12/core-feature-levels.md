@@ -12,35 +12,35 @@ ms.locfileid: "118530725"
 ---
 # <a name="the-direct3d-12-core-10-feature-level"></a>Nivel de característica 12 Core 1.0 de Direct3D
 
-El nivel de característica Core 1.0 es un subconjunto del conjunto completo de características de Direct3D 12. El nivel de característica Core 1.0 se puede exponer mediante una categoría de dispositivos conocidos como *dispositivos de solo proceso.* El modelo de controlador general para dispositivos de solo proceso es El modelo de controlador de proceso de Microsoft (MCDM). MCDM es un par de escalado vertical del modelo Windows Device Driver Model (WDDM), que tiene un ámbito mayor.
+El nivel de característica Core 1.0 es un subconjunto del conjunto completo de características de Direct3D 12. El nivel de característica Core 1.0 se puede exponer mediante una categoría de dispositivos conocidos como *dispositivos de solo proceso.* El modelo de controlador general para los dispositivos de solo proceso es El modelo de controlador de proceso de Microsoft (MCDM). MCDM es un par de escalado vertical del Windows Device Driver Model (WDDM), que tiene un ámbito mayor.
 
-Un dispositivo que solo *admite las* características de un nivel de característica principal se conoce como *dispositivo principal.*
+Un dispositivo que solo *admite las* características dentro de un nivel de característica principal se conoce como *dispositivo principal.*
 
 > [!NOTE]
-> *El dispositivo de solo proceso,* *el dispositivo MCDM,* el dispositivo *de nivel de* característica principal y el dispositivo *principal* significan lo mismo. Preferiremos el *dispositivo Core por* motivos de simplicidad.
+> *El dispositivo de solo proceso,* *el dispositivo MCDM,* el dispositivo de nivel *de* característica principal y el *dispositivo principal* significan lo mismo. Preferiremos el *dispositivo Core por* motivos de simplicidad.
 
-## <a name="creating-a-core-device"></a>Creación de un dispositivo Core
+## <a name="creating-a-core-device"></a>Creación de un dispositivo principal
 
 En general, para crear un dispositivo Direct3D 12, llame a la función [**D3D12CreateDevice**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createdevice) y especifique un nivel de característica mínimo.
 
-Si especifica un nivel de característica de 9 a 12, el dispositivo que se devuelve es un dispositivo con varias características, como una GPU tradicional (que admite un superconjunto de la funcionalidad de un dispositivo Core). Nunca se devuelve un dispositivo Core para ese intervalo de niveles de características.
+Si especifica un nivel de característica de 9 a 12, el dispositivo que se devuelve es un dispositivo con varias características, como una GPU tradicional (que admite un superconjunto de la funcionalidad de un dispositivo Principal). Nunca se devuelve un dispositivo Core para ese intervalo de niveles de características.
 
-Por otro lado, si especifica un nivel de característica Principal (por ejemplo, [**D3D_FEATURE_LEVEL::D 3D_FEATURE_LEVEL_1_0_CORE),**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level)el dispositivo que se devuelve podría tener muchas características o podría ser un dispositivo Core.
+Por otro lado, si especifica un nivel de característica Principal (por ejemplo, [**D3D_FEATURE_LEVEL::D 3D_FEATURE_LEVEL_1_0_CORE),**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level)el dispositivo que se devuelve podría tener muchas características o podría ser un dispositivo Principal.
 
 ```cpp
 // d3dcommon.h
 D3D_FEATURE_LEVEL_1_0_CORE = 0x1000
 ```
 
-Si especifica un nivel de característica, la capa de tiempo de ejecución o depuración valida que las características que usa la aplicación están `_CORE` permitidas por ese `_CORE` nivel de característica. Ese conjunto de características se define más adelante en este tema.
+Si especifica un nivel de característica, la capa de tiempo de ejecución o depuración valida que ese nivel de característica permita las características que `_CORE` usa `_CORE` la aplicación. Este conjunto de características se define más adelante en este tema.
 
-## <a name="shader-model-for-core-devices"></a>Modelo de sombreador para dispositivos Principales
+## <a name="shader-model-for-core-devices"></a>Modelo de sombreador para dispositivos principales
 
 Un dispositivo Core admite Shader Model 5.0+.
 
-El tiempo de ejecución realiza la conversión de modelos de sombreador 5.x que no son DXIL a DXIL 6.0. Por lo tanto, el controlador solo necesita admitir la versión 6.x.
+El runtime realiza la conversión de modelos de sombreador 5.x que no son DXIL a DXIL 6.0. Por lo tanto, el controlador solo necesita compatibilidad con 6.x.
 
-## <a name="resource-management-model-for-core-devices"></a>Modelo de administración de recursos para dispositivos Principales
+## <a name="resource-management-model-for-core-devices"></a>Modelo de administración de recursos para dispositivos principales
 
 - Dimensiones de recursos admitidas: solo búferes sin procesar y estructurados (sin búferes con tipo, texture1d/2D, etc.)
 - No se admiten recursos reservados (en mosaico)
@@ -49,35 +49,35 @@ El tiempo de ejecución realiza la conversión de modelos de sombreador 5.x que 
   - D3D12_HEAP_FLAG_HARDWARE_PROTECTED
   - D3D12_HEAP_FLAG_ALLOW_WRITE_WATCH
   - D3D12_HEAP_FLAG_ALLOW_DISPLAY
-  - D3D12_HEAP_FLAG_ALLOW_SHADER_ATOMICS (tenga en cuenta que los atomics del sombreador son necesarios, esta marca es para otra característica, los atomics del adaptador cruzado)
+  - D3D12_HEAP_FLAG_ALLOW_SHADER_ATOMICS (tenga en cuenta que se requieren atomics de sombreador, esta marca es para otra característica, atomics de adaptador cruzado)
 
-## <a name="resource-binding-model-for-core-devices"></a>Modelo de enlace de recursos para dispositivos Core
+## <a name="resource-binding-model-for-core-devices"></a>Modelo de enlace de recursos para dispositivos principales
 
 - Compatibilidad solo con el nivel 1 de enlace de recursos
 - Excepciones:
   - No se admiten muestreadores de textura
   - Compatibilidad con 64 UAV como el nivel de característica 11.1+ (en lugar de solo 8)
   - Las implementaciones no tienen que implementar la comprobación de límites en los accesos del sombreador a los recursos a través de descriptores, los accesos fuera de límites generan un comportamiento indefinido.
-    - Como producto secundario, no se admite la marca de intervalo D3D12_DESCRIPTOR_RANGE_FLAG_DESCRIPTORS_STATIC_KEEPING_BUFFER_BOUNDS_CHECKS descriptor en las firmas raíz.
-- Los descriptores UAV/CBV solo se pueden crear en recursos de montones predeterminados (por lo que no hay montones de carga o de lectura). Esto obliga a la aplicación a realizar copias para obtener datos a través de la CPU< de >GPU.
-- A pesar de ser el nivel de funcionalidad de enlace más bajo, todavía hay algunas características necesarias incluso en este nivel que merece la pena mencionar:
-  - Los montones de descriptores se pueden actualizar después de registrar las listas de comandos (consulte D3D12_DESCRIPTOR_RANGE_FLAG_DESCRIPTORS_VOLATILE en la especificación de enlace de recursos).
+    - Como un producto byproduct, no se admite la marca de intervalo D3D12_DESCRIPTOR_RANGE_FLAG_DESCRIPTORS_STATIC_KEEPING_BUFFER_BOUNDS_CHECKS descriptor en las firmas raíz.
+- Los descriptores UAV/CBV solo se pueden crear en recursos de montones predeterminados (por lo que no hay montones de carga o de lectura). Esto obliga a la aplicación a realizar copias para obtener datos a través de la CPU<->GPU.
+- A pesar de ser el nivel de funcionalidad de enlace más bajo, todavía hay algunas características necesarias incluso en este nivel que merece la pena destacar:
+  - Los montones de descriptores se pueden actualizar después de registrar listas de comandos (consulte D3D12_DESCRIPTOR_RANGE_FLAG_DESCRIPTORS_VOLATILE en la especificación de enlace de recursos).
   - Los descriptores raíz son básicamente punteros GPUVA
     - Aunque no hay compatibilidad con MMU/VA, las VAs de búfer que se usan en descriptores raíz se pueden emular mediante implementaciones mediante la aplicación de revisiones de direcciones.
 
 ### <a name="structured-buffer-restrictions"></a>Restricciones de búfer estructurado
 
-Los búferes estructurados deben tener una dirección base de 4 bytes alineada y el intervalo debe ser 2 o un múltiplo de 4. El caso de un paso de 2 es para las aplicaciones con datos de 16 bits, especialmente si no hay compatibilidad con búferes con tipo en D3D_FEATURE_LEVEL_1_0_CORE.
+Los búferes estructurados deben tener una dirección base de 4 bytes alineados y el intervalo debe ser 2 o un múltiplo de 4. El caso de un paso de 2 es para las aplicaciones con datos de 16 bits, especialmente si no hay compatibilidad con búferes con tipo en D3D_FEATURE_LEVEL_1_0_CORE.
 
 El intervalo especificado en los descriptores debe coincidir con el intervalo especificado en HLSL.  
 
 ## <a name="command-queue-support-for-core-devices"></a>Compatibilidad de la cola de comandos con dispositivos Core
 
-Solo colas de proceso y copia (no colas 3D, vídeo, etc.).
+Solo colas de proceso y copia (no colas en 3D, vídeo, etc.).
 
-## <a name="shader-support-for-core-devices"></a>Compatibilidad del sombreador con dispositivos Principales
+## <a name="shader-support-for-core-devices"></a>Compatibilidad del sombreador con dispositivos Core
 
-Solo sombreadores de cálculo, ningún sombreador de gráficos (vértices, sombreadores de píxeles, etc.) ni ninguna funcionalidad relacionada, como destinos de representación, cadenas de intercambio, ensamblador de entrada.
+Solo sombreadores de cálculo, sombreadores de gráficos (vértices, sombreadores de píxeles, etc.) ni ninguna funcionalidad relacionada, como destinos de representación, cadenas de intercambio, ensamblador de entrada.
 
 ### <a name="arithmetic-precision"></a>Precisión aritmética
 
@@ -154,7 +154,7 @@ La lista siguiente representa el subconjunto admitido de la  interfaz de program
 * [ID3D12CommandQueue::BeginEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-beginevent)
 * [ID3D12CommandQueue::EndEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-endevent)
 * [ID3D12CommandQueue::ExecuteCommandLists](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists)
-* [ID3D12CommandQueue::GetClock Yabration](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-getclockcalibration)
+* [ID3D12CommandQueue::GetClockCmdbration](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-getclockcalibration)
 * [ID3D12CommandQueue::GetDesc](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-getdesc)
 * [ID3D12CommandQueue::GetTimestampFrequency](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-gettimestampfrequency)
 * [ID3D12CommandQueue::SetMarker](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-setmarker)
@@ -181,7 +181,7 @@ La lista siguiente representa el subconjunto admitido de la  interfaz de program
 * [ID3D12GraphicsCommandList::EndQuery](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endquery)
 * [ID3D12GraphicsCommandList::Reset](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-reset)
 * [ID3D12GraphicsCommandList::ResolveQueryData](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resolvequerydata)
-* [ID3D12GraphicsCommandList::ResourceBartero](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier)
+* [ID3D12GraphicsCommandList::ResourceBarcommand](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier)
 * [ID3D12GraphicsCommandList::SetComputeRoot32BitConstant](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputeroot32bitconstant)
 * [ID3D12GraphicsCommandList::SetComputeRoot32BitConstants](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputeroot32bitconstants)
 * [ID3D12GraphicsCommandList::SetComputeRootConstantBufferView](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootconstantbufferview)

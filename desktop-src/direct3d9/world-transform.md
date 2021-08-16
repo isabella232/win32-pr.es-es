@@ -1,33 +1,33 @@
 ---
-description: La explicación de la transformación mundial presenta conceptos básicos y proporciona detalles sobre cómo configurar una transformación universal.
+description: La explicación de la transformación mundial presenta conceptos básicos y proporciona detalles sobre cómo configurar una transformación mundial.
 ms.assetid: c3d3b247-e482-4750-a6fb-724f81ee2b19
-title: Transformación universal (Direct3D 9)
+title: World Transform (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e192f8ce4350c767122ef60f3cd36777753d2e22
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bfbddefbaa5ad4bd41e7dafa79e086605d8f40e761cca2bd6ce9b9c0b212950a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104422795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118518913"
 ---
-# <a name="world-transform-direct3d-9"></a>Transformación universal (Direct3D 9)
+# <a name="world-transform-direct3d-9"></a>World Transform (Direct3D 9)
 
-La explicación de la transformación mundial presenta conceptos básicos y proporciona detalles sobre cómo configurar una transformación universal.
+La explicación de la transformación mundial presenta conceptos básicos y proporciona detalles sobre cómo configurar una transformación mundial.
 
 ## <a name="what-is-a-world-transform"></a>¿Qué es una transformación mundial?
 
-Una transformación de mundo cambia las coordenadas del espacio del modelo, donde los vértices se definen en relación con el origen local de un modelo, en el espacio universal, donde se definen los vértices en relación con un origen común a todos los objetos de una escena. En esencia, la transformación mundial coloca un modelo en el mundo; por lo tanto, su nombre. En el diagrama siguiente se muestra la relación entre el sistema de coordenadas universal y el sistema de coordenadas local de un modelo.
+Una transformación del mundo cambia las coordenadas del espacio del modelo, donde los vértices se definen en relación con el origen local de un modelo, al espacio mundial, donde los vértices se definen en relación con un origen común a todos los objetos de una escena. Básicamente, la transformación del mundo coloca un modelo en el mundo; por lo tanto, su nombre. En el diagrama siguiente se muestra la relación entre el sistema de coordenadas mundial y el sistema de coordenadas local de un modelo.
 
-![diagrama de cómo se relacionan las coordenadas del mundo y las coordenadas locales](images/worldcrd.png)
+![diagrama de cómo se relacionan las coordenadas globales y las coordenadas locales](images/worldcrd.png)
 
-La transformación del mundo puede incluir cualquier combinación de traducciones, giros y escalado.
+La transformación mundial puede incluir cualquier combinación de traducciones, rotaciones y escalas.
 
 ## <a name="setting-up-a-world-matrix"></a>Configuración de una matriz mundial
 
-Como con cualquier otra transformación, cree la transformación universal mediante la concatenación de una serie de matrices en una matriz única que contenga la suma total de sus efectos. En el caso más simple, cuando un modelo está en el origen del mundo y sus ejes de coordenadas locales están orientados igual que el espacio del mundo, la matriz mundial es la matriz de identidad. Normalmente, la matriz mundial es una combinación de una traducción en el espacio universal y, posiblemente, una o más rotaciones para convertir el modelo según sea necesario.
+Como con cualquier otra transformación, cree la transformación del mundo concatenando una serie de matrices en una sola matriz que contenga la suma total de sus efectos. En el caso más sencillo, cuando un modelo está en el origen mundial y sus ejes de coordenadas locales están orientados al mismo que el espacio mundial, la matriz del mundo es la matriz de identidad. Más comúnmente, la matriz mundial es una combinación de una traducción al espacio mundial y, posiblemente, una o varias rotaciones para convertir el modelo según sea necesario.
 
-En el ejemplo siguiente, de una clase de modelo 3D ficticia escrita en C++, se usan las funciones auxiliares incluidas en la biblioteca de utilidades de D3DX para crear una matriz universal que incluye tres giros para orientar un modelo y una traslación para reubicarlo en relación con su posición en el espacio universal.
+En el ejemplo siguiente, de una clase de modelo 3D ficticia escrita en C++, se usan las funciones auxiliares incluidas en la biblioteca de utilidades D3DX para crear una matriz mundial que incluye tres rotaciones para orientar un modelo y una traducción para reubicarlos en relación con su posición en el espacio mundial.
 
 
 ```
@@ -73,10 +73,10 @@ void C3DModel::MakeWorldMatrix( D3DXMATRIX* pMatWorld )
 
 
 
-Después de preparar la matriz universal, llame al método [**IDirect3DDevice9:: SetTransform**](/windows/desktop/api) para establecerla, especificando la macro [**D3DTS \_ World**](d3dts-world.md) para el primer parámetro.
+Después de preparar la matriz mundial, llame al método [**IDirect3DDevice9::SetTransform**](/windows/desktop/api) para establecerla y especifique la macro [**D3DTS \_ WORLD**](d3dts-world.md) para el primer parámetro.
 
 > [!Note]  
-> Direct3D usa el mundo y las matrices de vistas que se establecen para configurar varias estructuras de datos internas. Cada vez que se establece un nuevo mundo o una matriz de vistas, el sistema vuelve a calcular las estructuras internas asociadas. Establecer estas matrices con frecuencia (por ejemplo, miles de veces por fotograma) es un proceso que consume mucho tiempo. Puede minimizar el número de cálculos necesarios concatenando el mundo y ver las matrices en una matriz de vista mundial que establezca como la matriz universal y, a continuación, estableciendo la matriz de la vista en la identidad. Mantenga copias en caché de matrices de todo el mundo y vistas para que pueda modificar, concatenar y restablecer la matriz universal según sea necesario. Para mayor claridad, en esta documentación los ejemplos de Direct3D raramente emplean esta optimización.
+> Direct3D usa el mundo y las matrices de vistas que se establecen para configurar varias estructuras de datos internas. Cada vez que se establece una nueva matriz de mundo o vista, el sistema vuelve a calcular las estructuras internas asociadas. Establecer estas matrices con frecuencia (por ejemplo, miles de veces por fotograma) lleva mucho tiempo. Puede minimizar el número de cálculos necesarios concatenando el mundo y ver matrices en una matriz de vista mundial que estableció como matriz de mundo y, a continuación, estableciendo la matriz de vistas en la identidad. Mantenga copias almacenadas en caché de mundos individuales y vea matrices para poder modificar, concatenar y restablecer la matriz mundial según sea necesario. Para mayor claridad, en esta documentación, los ejemplos de Direct3D rara vez emplean esta optimización.
 
  
 

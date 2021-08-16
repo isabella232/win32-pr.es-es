@@ -44,7 +44,7 @@ Estas son las colecciones de nivel superior del catálogo:
 -   [**FilesForImport**](filesforimport.md)
 -   [**InprocServers**](inprocservers.md)
 -   [**LegacyServers**](legacyservers.md)
--   [**Equipo local**](localcomputer.md)
+-   [**LocalComputer**](localcomputer.md)
 -   [**Particiones**](partitions.md)
 -   [**PartitionUsers**](partitionusers.md)
 -   [**Propertyinfo**](propertyinfo.md)
@@ -53,7 +53,7 @@ Estas son las colecciones de nivel superior del catálogo:
 -   [**WOWInprocServers**](wowinprocservers.md)
 -   [**WOWLegacyServers**](wowlegacyservers.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

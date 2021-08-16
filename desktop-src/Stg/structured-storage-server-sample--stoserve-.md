@@ -1,29 +1,29 @@
 ---
-title: Ejemplo de servidor de almacenamiento estructurado (StoServe)
-description: El tutorial de servidor de almacenamiento estructurado para StoServe proporciona información completa y ejemplos de código para crear un proceso de servidor de modelo.
+title: Ejemplo Storage servidor estructurado (StoServe)
+description: El Tutorial de Structured Storage Server para StoServe proporciona información completa y ejemplos de código para crear un proceso de servidor de modelos.
 ms.assetid: 0607c77a-32c0-4b5a-b58d-f5fe56a3f614
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b54a0439d7d6024453fc0e6ed08d1cb4a2967244
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4d7dfb0d1ceb5e082853ecbf7c31383125e2747396c0e5258872b450ca2f1f41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661685"
 ---
-# <a name="structured-storage-server-sample-stoserve"></a>Ejemplo de servidor de almacenamiento estructurado (StoServe)
+# <a name="structured-storage-server-sample-stoserve"></a>Ejemplo Storage servidor estructurado (StoServe)
 
-El tutorial de servidor de almacenamiento estructurado para StoServe proporciona información completa y ejemplos de código para crear un proceso de servidor de modelo. **StoServe** es un archivo DLL que está diseñado principalmente como un servidor com y es un servidor de proceso de registro automático.
+El Tutorial de Structured Storage Server para StoServe proporciona información completa y ejemplos de código para crear un proceso de servidor de modelos. **StoServe** es un archivo DLL destinado principalmente a un servidor COM y es un servidor en proceso que se registra automáticamente.
 
-En las secciones siguientes se proporcionan las instrucciones de ejemplo **StoServe** , la información de referencia y los vínculos al código de ejemplo **StoServe** .
+En las secciones siguientes se proporcionan las instrucciones **de ejemplo de StoServe,** la información de referencia y los vínculos **al código de ejemplo de StoServe.**
 
 -   [Información general de StoServe](stoserve-overview.md)
--   [Usar StoServe](using-stoserve.md)
--   [Crear y ejecutar el ejemplo StoServe](create-and-run-stoserve-sample.md)
+-   [Uso de StoServe](using-stoserve.md)
+-   [Creación y ejecución de un ejemplo de StoServe](create-and-run-stoserve-sample.md)
 
- 
+ 
 
- 
+ 
 
 
 

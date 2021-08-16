@@ -44,14 +44,14 @@ uint32 ControlMetrics(
 *Asunto* \[ En\]
 </dt> <dd>
 
-Instancia [**de \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) que identifica los elementos administrados para los que se recopilarán las métricas. Si este parámetro es **Null,** se recopilarán las métricas de todos los elementos administrados asociados al parámetro *Definition.*
+Instancia [**de \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) que identifica los elementos administrados para los que se recopilarán las métricas. Si este parámetro es **Null**, se recopilarán las métricas de todos los elementos administrados asociados al parámetro *Definition.*
 
 </dd> <dt>
 
 *Definición* \[ En\]
 </dt> <dd>
 
-Instancia [**de \_ BaseMetricDefinition de Msvm**](msvm-basemetricdefinition.md) que especifica qué métricas se recopilarán. Si este parámetro es **Null,** se recopilarán las métricas de todas las definiciones asociadas al elemento administrado identificado por el *parámetro Subject.*
+Instancia [**de \_ BaseMetricDefinition de Msvm**](msvm-basemetricdefinition.md) que especifica qué métricas se recopilarán. Si este parámetro es **Null**, se recopilarán las métricas de todas las definiciones asociadas al elemento administrado identificado por el *parámetro Subject.*
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ Deshabilite la recopilación de métricas.
 
 </dt> <dd>
 
-Restablezca los valores de las métricas.
+Restablecer valores de métricas.
 
 </dd> <dt>
 
@@ -130,19 +130,19 @@ Este método devuelve uno de los valores siguientes.
 **Específico del** proveedor (32768..65535)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método producirá un error en las siguientes instancias:
+Este método producirá un error en las instancias siguientes:
 
 -   Los *parámetros Subject* y *Definition* son **null.**
 -   Los *parámetros Subject* y *Definition* no son NULL y no hay una instancia de [**Msvm \_ MetricDefForME**](msvm-metricdefforme.md) que asocie las dos instancias.
--   El *parámetro Definition* es una referencia a una instancia de [**Msvm \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) que no está asociada a [**Msvm \_ MetricService**](msvm-metricservice.md) a través de [**Msvm \_ ServiceAffectsElement.**](msvm-serviceaffectselement.md)
+-   El *parámetro Definition* es una referencia a una instancia de [**Msvm \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) que no está asociada a [**Msvm \_ MetricService**](msvm-metricservice.md) a través de [**Msvm \_ ServiceAffectsElement**](msvm-serviceaffectselement.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
@@ -152,7 +152,7 @@ Este método producirá un error en las siguientes instancias:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

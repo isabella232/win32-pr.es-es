@@ -1,9 +1,9 @@
 ---
-title: 'Texture2D:: GatherGreen (S, Float, INT2, INT2, INT2, INT2) (función)'
-description: 'Devuelve los componentes verdes de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal. | Texture2D:: GatherGreen (S, Float, INT2, INT2, INT2, INT2) (función)'
+title: Función Texture2D::GatherGreen(S,float,int2,int2,int2,int2)
+description: Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Función Texture2D::GatherGreen(S,float,int2,int2,int2,int2)
 ms.assetid: 043434C0-BB12-4A08-A3E5-34C9738DEBDB
 keywords:
-- GatherGreen de función HLSL
+- Función GatherGreen HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af1bbaf4052bab32ab1841542bfb63322de154ba
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d0c7fa8f28a0a0ddc276af696b102df29de1362b948a4a909733cf14df35aa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104547659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043593"
 ---
-# <a name="texture2dgathergreensfloatint2int2int2int2-function"></a>Texture2D:: GatherGreen (S, Float, INT2, INT2, INT2, INT2) (función)
+# <a name="texture2dgathergreensfloatint2int2int2int2-function"></a>Función Texture2D::GatherGreen(S,float,int2,int2,int2,int2)
 
-Devuelve los componentes verdes de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,50 +49,50 @@ TemplateType GatherGreen(
 
 Tipo: **SamplerState**
 
-Índice de muestra de base cero.
+Índice de sampler de base cero.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordenadas de ejemplo (u, v).
+Coordenadas de ejemplo (u,v).
 
 </dd> <dt>
 
-*Offset1* \[ de\]
+*Offset1* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Primer componente de desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Offset2* \[ de\]
+*Offset2* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Segundo componente de desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Offset3* \[ de\]
+*Offset3* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Tercer componente de desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Offset4* \[ de\]
+*Offset4* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Cuarto componente de desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
@@ -102,17 +102,17 @@ Cuarto componente de desplazamiento aplicado a las coordenadas de textura antes 
 
 Tipo: **TemplateType**
 
-Un valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
+Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los ejemplos de textura se pueden usar para la interpolación bilineal.
+Las muestras de textura se pueden usar para la interpolación bilineal.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -120,11 +120,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Métodos GatherGreen](texture2d-gathergreen.md)
+[Métodos gatherGreen](texture2d-gathergreen.md)
 </dt> </dl>
 
  

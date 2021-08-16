@@ -1,11 +1,11 @@
 ---
-title: Método IDWriteTextLayout GetOvergeoMetrics
+title: Método IDWriteTextLayout GetOvermetrics
 description: Devuelve los sobresalciones (en DIP) del diseño y todos los objetos contenidos en él, incluidos los glifos de texto y los objetos en línea.
 ms.assetid: 4b23f6c5-cacc-41e2-8934-6f95208b999a
 keywords:
 - Escritura directa del método GetOvermetrics
-- Método GetOvermetrics Direct Write , interfaz IDWriteTextLayout
-- Método Direct Write de la interfaz IDWriteTextLayout , GetOvermetrics
+- Método GetOvermetrics direct write , interfaz IDWriteTextLayout
+- Método GetOvermetrics de la interfaz IDWriteTextLayout
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118649750"
 ---
-# <a name="idwritetextlayoutgetoverhangmetrics-method"></a>IdWriteTextLayout::GetOvermetrics (método)
+# <a name="idwritetextlayoutgetoverhangmetrics-method"></a>Método IDWriteTextLayout::GetOvermetrics
 
 Devuelve los sobresalciones (en DIP) del diseño y todos los objetos contenidos en él, incluidos los glifos de texto y los objetos en línea.
 
@@ -45,7 +45,7 @@ virtual HRESULT GetOverhangMetrics(
 *sobresalciones* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **DWRITE \_ OVERHANG \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
+Tipo: **[ **DWRITE \_ OVER METRICS \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
 
 Sobreshoots de extensiones visibles (en DIP) fuera del diseño.
 
@@ -57,7 +57,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los subrayados y los tachados no contribuyen a la determinación de la caja negra, ya que en realidad los dibuja el representador, que puede dibujarlos en cualquier variedad de estilos.
 
@@ -65,14 +65,14 @@ Los subrayados y los tachados no contribuyen a la determinación de la caja negr
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
 | Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

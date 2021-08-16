@@ -19,7 +19,7 @@ ms.locfileid: "118774352"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentRecoveryVerifyFailureException](./esentrecoveryverifyfailureexception-class.md) expone los miembros siguientes.
+El [tipo EsentRecoveryVerifyFailureException](./esentrecoveryverifyfailureexception-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 

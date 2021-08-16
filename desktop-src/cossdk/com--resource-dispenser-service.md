@@ -21,8 +21,8 @@ Los temas descritos en la tabla siguiente proporcionan información general y de
 
 | Tema                                                                               | Descripción                                                                  |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [Conceptos del distribuidor de recursos com+](com--resource-dispenser-concepts.md)<br/> | Proporciona información general sobre el uso de un servicio de dispensador de recursos COM+.<br/>  |
-| [Tareas del distribuidor de recursos com+](com--resource-dispenser-tasks.md)<br/>       | Proporciona instrucciones para implementar un dispensador de recursos COM+.<br/> |
+| [Conceptos del dispensador de recursos com+](com--resource-dispenser-concepts.md)<br/> | Proporciona información general sobre el uso de un servicio de dispensador de recursos COM+.<br/>  |
+| [Tareas del dispensador de recursos com+](com--resource-dispenser-tasks.md)<br/>       | Proporciona instrucciones para implementar un dispensador de recursos COM+.<br/> |
 
 
 

@@ -78,7 +78,7 @@ Si \[ [**se**](optional.md) \] usa opcional, los tipos de esos parámetros deben
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La salida del archivo de encabezado (.h) para los módulos es una serie de prototipos de función. La **palabra** clave module y los corchetes circundantes se quitan de la salida del archivo de encabezado (.h), pero se inserta un comentario (// **modulename** ) antes de los prototipos. La palabra clave **extern** se inserta antes de las declaraciones.
 
@@ -141,7 +141,7 @@ module somemodule
 [**propputref**](propputref.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Cadena**](string.md)
 </dt> <dt>
 
 [**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)

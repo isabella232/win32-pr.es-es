@@ -46,7 +46,7 @@ El **método AdvertiseProduct** del [**objeto Installer**](installer-object.md) 
 *packagePath* 
 </dt> <dd>
 
-Ruta de acceso completa al paquete Windows Installer (.msi) que se va a anunciar.
+Ruta de acceso completa al paquete Windows instalador (.msi) que se va a anunciar.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Contexto del anuncio. Este parámetro puede ser uno de los valores siguientes.
 
 | Valor                                                                                                                                                                                                                                                                                                   | Significado                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="msiAdvertiseProductMachine"></span><span id="msiadvertiseproductmachine"></span><span id="MSIADVERTISEPRODUCTMACHINE"></span><dl> <dt>**msiAdvertiseProductMachine**</dt> <dt>0</dt> </dl> | Anuncia la aplicación para una instalación en el contexto de instalación [por máquina.](installation-context.md) Esto hace que todos los usuarios del equipo puedan instalar el paquete.<br/> |
+| <span id="msiAdvertiseProductMachine"></span><span id="msiadvertiseproductmachine"></span><span id="MSIADVERTISEPRODUCTMACHINE"></span><dl> <dt>**msiAdvertiseProductMachine**</dt> <dt>0</dt> </dl> | Anuncia la aplicación para una instalación en el contexto de instalación [por máquina](installation-context.md). Esto hace que todos los usuarios del equipo puedan instalar el paquete.<br/> |
 | <span id="msiAdvertiseProductUser"></span><span id="msiadvertiseproductuser"></span><span id="MSIADVERTISEPRODUCTUSER"></span><dl> <dt>**msiAdvertiseProductUser**</dt> <dt>1</dt> </dl>             | Anuncia la aplicación para una instalación en el contexto de instalación [por usuario](installation-context.md).<br/>                                                                                   |
 
 
@@ -71,7 +71,7 @@ Contexto del anuncio. Este parámetro puede ser uno de los valores siguientes.
 *Transforma* 
 </dt> <dd>
 
-Lista de transformaciones que se aplicarán al producto. Las transformaciones de la lista están delimitadas por punto y coma. Este parámetro es opcional.
+Lista de transformaciones que se aplicarán al producto. Las transformaciones de la lista se delimitan mediante punto y coma. Este parámetro es opcional.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Opciones de anuncio. Este parámetro es opcional. Este parámetro puede ser uno 
 | Valor                                                                                                                                                                                                                                                                                                   | Significado                                                                                                                                                                                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="msiAdvertiseDefault"></span><span id="msiadvertisedefault"></span><span id="MSIADVERTISEDEFAULT"></span><dl> <dt>**msiAdvertiseDefault**</dt> <dt>0</dt> </dl>                             | Anuncio estándar<br/>                                                                                                                                                                                                                                                                                                                 |
-| <span id="msiAdvertiseSingleInstance"></span><span id="msiadvertisesingleinstance"></span><span id="MSIADVERTISESINGLEINSTANCE"></span><dl> <dt>**msiAdvertiseSingleInstance**</dt> <dt>1</dt> </dl> | Anuncia una nueva instancia del producto. Requiere que la primera transformación de la lista de transformaciones del parámetro *transforms* sea la transformación de instancia que cambia el código del producto. Para obtener más información, [vea Instalación de varias instancias de productos y revisiones.](installing-multiple-instances-of-products-and-patches.md)<br/> |
+| <span id="msiAdvertiseSingleInstance"></span><span id="msiadvertisesingleinstance"></span><span id="MSIADVERTISESINGLEINSTANCE"></span><dl> <dt>**msiAdvertiseSingleInstance**</dt> <dt>1</dt> </dl> | Anuncia una nueva instancia del producto. Requiere que la primera transformación de la lista de transformaciones del parámetro *transforms* sea la transformación de instancia que cambia el código del producto. Para obtener más información, vea [Installing Multiple Instances of Products and Patches](installing-multiple-instances-of-products-and-patches.md).<br/> |
 
 
 
@@ -104,7 +104,7 @@ Opciones de anuncio. Este parámetro es opcional. Este parámetro puede ser uno 
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El **método AdvertiseProduct** usa la [**función MsiAdvertiseProductEx.**](/windows/desktop/api/Msi/nf-msi-msiadvertiseproductexa)
 
@@ -142,15 +142,15 @@ Installer.InstallProduct "c:\scratch\simpletst\rtm\simple.msi", "REMOVE=ALL"
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 4.5 en Windows Server 2003 y Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 4.5 en Windows Server 2003 y Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                           |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                                |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

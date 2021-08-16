@@ -23,7 +23,7 @@ Descubra qué nuevas características se han agregado a las actualizaciones ante
 | Tema                                                                                                | Descripción                                                                                                                            |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | [Novedades del SDK de agosto de 2009 Windows 7/Direct3D 11](dx11-whats-new.md)<br/>             | Esta versión de Windows 7/Direct3D 11 se incluye como parte del SDK de DirectX y contiene nuevas características, herramientas y documentación.<br/> |
-| [Novedades de la versión preliminar técnica de Noviembre de 2008 de Direct3D 11](dx11-08nov-whats-new.md)<br/> | Esta versión de Direct3D 11 contiene nuevas características, herramientas y documentación.<br/>                                                |
+| [Novedades de la versión preliminar técnica de Direct3D 11 de noviembre de 2008](dx11-08nov-whats-new.md)<br/> | Esta versión de Direct3D 11 contiene nuevas características, herramientas y documentación.<br/>                                                |
 
 
 

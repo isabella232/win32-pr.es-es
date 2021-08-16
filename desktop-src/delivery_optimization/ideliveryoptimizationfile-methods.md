@@ -21,7 +21,7 @@ La [**interfaz IDeliveryOptimizationFile**](ideliveryoptimizationfile.md) expone
 
 | Tema                                                                    | Descripción                                                       |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [**Método GetStats**](ideliveryoptimizationfile-getstats.md)<br/> | Devuelve estadísticas de descarga y carga de un archivo específico.<br/> |
+| [**Método GetStats**](ideliveryoptimizationfile-getstats.md)<br/> | Devuelve estadísticas de descarga y carga para un archivo específico.<br/> |
 
 
 

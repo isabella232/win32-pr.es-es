@@ -1,5 +1,5 @@
 ---
-description: La tabla TargetFiles \_ OptionalData contiene información sobre archivos específicos en una imagen de destino. Esta tabla es opcional en la base de datos de creación de revisiones (archivo .csv) y la usa la función UiCreatePatchPackageEx.
+description: La tabla TargetFiles \_ OptionalData contiene información sobre archivos específicos de una imagen de destino. Esta tabla es opcional en la base de datos de creación de revisiones (archivo .fp) y la usa la función UiCreatePatchPackageEx.
 ms.assetid: 577b1674-1e44-42e1-b011-c0fb561b514c
 title: TargetFiles_OptionalData tabla (Patchwiz.dll)
 ms.topic: article
@@ -11,15 +11,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118623740"
 ---
-# <a name="targetfiles_optionaldata-table-patchwizdll"></a>Tabla \_ OptionalData de TargetFiles (Patchwiz.dll)
+# <a name="targetfiles_optionaldata-table-patchwizdll"></a>TargetFiles \_ OptionalData Table (Patchwiz.dll)
 
-La tabla TargetFiles \_ OptionalData contiene información sobre archivos específicos en una imagen de destino. Esta tabla es opcional en la base de datos de creación de revisiones (archivo .csv) y la usa la función [UiCreatePatchPackageEx.](uicreatepatchpackageex--patchwiz-dll-.md)
+La tabla TargetFiles \_ OptionalData contiene información sobre archivos específicos de una imagen de destino. Esta tabla es opcional en la base de datos de creación de revisiones (archivo .fp) y la usa la función [UiCreatePatchPackageEx.](uicreatepatchpackageex--patchwiz-dll-.md)
 
-La tabla TargetFiles \_ OptionalData tiene las columnas siguientes.
+La tabla TargetFiles \_ OptionalData tiene las siguientes columnas.
 
 
 
-| Columna        | Tipo | Key | Nullable |
+| Columna        | Tipo | Clave | Nullable |
 |---------------|------|-----|----------|
 | Destino        | texto | Y   | N        |
 | FTK           | texto | Y   | N        |
@@ -60,7 +60,7 @@ El valor de este campo se agrega a la lista delimitada por punto y coma de carpe
 <span id="IgnoreOffsets"></span><span id="ignoreoffsets"></span><span id="IGNOREOFFSETS"></span>IgnoreOffsets
 </dt> <dd>
 
-El valor de este campo es una lista delimitada por comas de números de desplazamiento de intervalo para los intervalos que se omitirán en el archivo de destino. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreLengths. Esta columna es opcional.
+El valor de este campo es una lista delimitada por comas de números de desplazamiento de intervalo para los intervalos que se van a omitir en el archivo de destino. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreLengths. Esta columna es opcional.
 
 Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirán los valores en ULONG.
 
@@ -69,7 +69,7 @@ Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md
 <span id="IgnoreLengths"></span><span id="ignorelengths"></span><span id="IGNORELENGTHS"></span>IgnoreLengths
 </dt> <dd>
 
-El valor de este campo es una lista delimitada por comas de longitudes de intervalo en bytes para los intervalos que se omitirán en el archivo de destino. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreOffsets. Esta columna es opcional.
+El valor de este campo es una lista delimitada por comas de longitudes de intervalo en bytes para los intervalos que se van a omitir en el archivo de destino. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreOffsets. Esta columna es opcional.
 
 Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirán los valores en ULONG.
 

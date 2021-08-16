@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f75d0e2eed242155f27a7355182bf616d14de7e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 31647f5425382eb4fe266fab20a7208aa4c42a313ca20303a2246862edc2b528
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147868"
 ---
 # <a name="requeststatechange-method-of-the-msvm_vsscomponent-class"></a>Método RequestStateChange de la clase \_ VssComponent de Msvm
 
@@ -128,16 +128,16 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ objeto ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia al [**\_ elemento ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar **timeoutPeriod.** Un valor de 0 o un parámetro NULL indica que el cliente no tiene requisitos de tiempo para la transición.
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar **timeoutPeriod.** Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
 
-Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno de "No se admite el uso del parámetro de tiempo de espera".
+Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno "Use Of Timeout Parameter Not Supported" (No se admite el uso del parámetro de tiempo de espera).
 
 </dd> </dl>
 
@@ -171,7 +171,7 @@ Este método devuelve uno de los siguientes valores:
 
 <dl> <dt>
 
-[**\_VssComponent de Msvm**](msvm-vsscomponent.md)
+[**VssComponent de Msvm \_**](msvm-vsscomponent.md)
 </dt> </dl>
 
  

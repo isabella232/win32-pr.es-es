@@ -17,13 +17,13 @@ Después de agregar un objeto COM al proyecto como referencia o componente, pued
 
 Para ver un objeto COM en el Explorador de objetos:
 
--   En el **menú Ver** , haga clic en Explorador **de objetos**.
+-   En el menú **Ver** , haga clic en **Explorador de objetos**.
 
 El lado izquierdo de la ventana Explorador de objetos muestra todas las clases de referencias y componentes agregados al proyecto actual. El lado derecho contiene los métodos, las propiedades y los eventos de esas clases.
 
 Puede filtrar qué clases de objeto COM se muestran seleccionando una biblioteca de objetos en la lista desplegable de selección de biblioteca.
 
-Para obtener más información, vea [Examinar ActiveX de tipos de componente](/previous-versions/visualstudio/visual-basic-6/aa240782(v=vs.60)) en la documentación Visual Basic.
+Para obtener más información, vea [Examinar ActiveX de tipos de componentes](/previous-versions/visualstudio/visual-basic-6/aa240782(v=vs.60)) en Visual Basic documentación.
 
 En algunos casos, Visual Basic explorador de objetos parece no mostrar un tipo de valor devuelto para una función o propiedad. No aparece ningún tipo de valor devuelto cuando el tipo de valor devuelto es el tipo predeterminado, **Variant**. Si el panel de descripción del Explorador de objetos describe el elemento como una función o propiedad y no se muestra un tipo de valor devuelto, la instrucción de tipo de valor devuelto es "As Variant".
 

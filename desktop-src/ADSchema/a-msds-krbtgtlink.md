@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-KrbTgt-Link
-description: Se usa con los RODC para definir qué \_ cuenta de krbtgt xxxx corresponde a cada RODC.
+title: Atributo ms-DS-KrbTgt-Link
+description: Se usa con RODC para definir qué cuenta krbtgt \_ XXXX corresponde a cada RODC.
 ms.assetid: 08c3e50f-7f2a-4746-86b6-77780316679c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-KrbTgt-Link
-- Esquema de AD de atributo msDS-KrbTgtLink
+- ms-DS-KrbTgt-Link attribute AD Schema
+- Esquema de AD del atributo msDS-KrbTgtLink
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcf8ddfee6f15532e4dad91fc1e34e1f136ea99b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8499af8941ebbdd37001e3f5a0d9ea3ebc98fd24dbeac96083fd5579b1872dde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960744"
 ---
-# <a name="ms-ds-krbtgt-link-attribute"></a>atributo MS-DS-KrbTgt-Link
+# <a name="ms-ds-krbtgt-link-attribute"></a>Atributo ms-DS-KrbTgt-Link
 
-Se usa con los RODC para definir qué \_ cuenta de krbtgt xxxx corresponde a cada RODC.
+Se usa con RODC para definir qué cuenta krbtgt \_ XXXX corresponde a cada RODC.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-KrbTgt-Link                       |
-| Nombre para mostrar de LDAP | msDS-KrbTgtLink                         |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-KrbTgt-Link                       |
+| Ldap-Display-Name | msDS-KrbTgtLink                         |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1923                 |
-| System-ID-GUID    | 778ff5c9-6f4e-4b74-856a-d68383313910    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 778ff5c9-6f4e-4b74-856a-d68383313910    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -50,15 +50,15 @@ Se usa con los RODC para definir qué \_ cuenta de krbtgt xxxx corresponde a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | 2100                                      |
+| Id. de vínculo                | 2100                                      |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -71,15 +71,15 @@ Se usa con los RODC para definir qué \_ cuenta de krbtgt xxxx corresponde a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | 2100                                      |
+| Id. de vínculo                | 2100                                      |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -92,15 +92,15 @@ Se usa con los RODC para definir qué \_ cuenta de krbtgt xxxx corresponde a cad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | 2100                                      |
+| Id. de vínculo                | 2100                                      |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |

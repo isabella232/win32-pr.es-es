@@ -1,21 +1,21 @@
 ---
 description: El <ownerSID> elemento especifica el identificador de seguridad (SID) del creador de la biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
 ms.assetid: 03FBE499-7920-4991-B9EF-2D3721803A01
-title: Elemento ownerSID (esquema de biblioteca)
+title: elemento ownerSID (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 639fb4a17b46b47219c44e39c0ac883e21ee7c01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2abc62e615bd76824483454cca62fb4fe1c3a869ff150a754db847baaf311146
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032113"
 ---
-# <a name="ownersid-element-library-schema"></a>Elemento ownerSID (esquema de biblioteca)
+# <a name="ownersid-element-library-schema"></a>elemento ownerSID (esquema de biblioteca)
 
 El <ownerSID> elemento especifica el identificador de seguridad (SID) del creador de la biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <!-- ownerSID -->
@@ -28,7 +28,7 @@ El <ownerSID> elemento especifica el identificador de seguridad (SID) del creado
 
 | Elemento primario                                                               | Elementos secundarios |
 |------------------------------------------------------------------------------|----------------|
-| [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) |                |
+| [elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) |                |
 
 
 
@@ -41,7 +41,7 @@ El <ownerSID> elemento especifica el identificador de seguridad (SID) del creado
 [Esquema de descripción de biblioteca](library-schema-entry.md)
 </dt> <dt>
 
-[Esquema de Descripción del conector de búsqueda](../search/search-sconn-desc-schema-entry.md)
+[Esquema de descripción del conector de búsqueda](../search/search-sconn-desc-schema-entry.md)
 </dt> </dl>
 
  

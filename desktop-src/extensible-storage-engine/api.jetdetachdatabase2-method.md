@@ -33,7 +33,7 @@ ms.locfileid: "118784347"
 ---
 # <a name="apijetdetachdatabase2-method"></a>Método Api.JetDetachDatabase2
 
-Libera un archivo de base de datos que se adjuntaba previamente a una sesión de base de datos.
+Libera un archivo de base de datos que se ha adjuntado previamente a una sesión de base de datos.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -74,7 +74,7 @@ public static void JetDetachDatabase2(
   - database  
     Tipo: [System.String](/dotnet/api/system.string)  
     
-    Base de datos que se desasoyó.
+    Base de datos que se desasoyera.
 
 <!-- end list -->
 
@@ -83,11 +83,11 @@ public static void JetDetachDatabase2(
     
     Opciones de desasoción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

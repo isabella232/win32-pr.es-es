@@ -1,52 +1,52 @@
 ---
-description: Define la abertura de la pantalla, que es la región de un fotograma de vídeo que contiene datos de imagen válidos.
+description: Define la apertura de la pantalla, que es la región de un fotograma de vídeo que contiene datos de imagen válidos.
 ms.assetid: 86a7509b-c690-49c2-bbe4-8b02d64c307c
-title: MF_MT_MINIMUM_DISPLAY_APERTURE atributo (mfapi. h)
+title: MF_MT_MINIMUM_DISPLAY_APERTURE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42d13252378422081044d7f2cb21e5a31098702a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97ff6dd226492c848bd2347ccc2bac17c2dd8824467e661e83be06d590f65c0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012945"
 ---
-# <a name="mf_mt_minimum_display_aperture-attribute"></a>\_Atributo de \_ \_ abertura de pantalla mínima MF MT \_
+# <a name="mf_mt_minimum_display_aperture-attribute"></a>Atributo MF \_ MT \_ MINIMUM DISPLAY \_ \_ APERTURE
 
-Define la abertura de la pantalla, que es la región de un fotograma de vídeo que contiene datos de imagen válidos.
+Define la apertura de la pantalla, que es la región de un fotograma de vídeo que contiene datos de imagen válidos.
 
 ## <a name="data-type"></a>Tipo de datos
 
 Byte array
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor del atributo es una estructura [**MFVideoArea**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoarea) .
+El valor del atributo es [**una estructura MFVideoArea.**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoarea)
 
-La abertura de pantalla mínima es la región que contiene la parte válida de la señal. Los píxeles que están fuera de la abertura contienen datos no válidos y no se deben mostrar.
+La apertura de pantalla mínima es la región que contiene la parte válida de la señal. Los píxeles situados fuera de la apertura contienen datos no válidos y no deben mostrarse.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> <dt>
 
 [Relación de aspecto de la imagen](picture-aspect-ratio.md)
@@ -55,19 +55,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 [Tipos de medios de vídeo](video-media-types.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**ATTRIBUTEAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**ATTRIBUTEAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[**\_ \_ apertura geométrica de MF MT \_**](mf-mt-geometric-aperture-attribute.md)
+[**APERTURA \_ GEOMÉTRICA DE MF MT \_ \_**](mf-mt-geometric-aperture-attribute.md)
 </dt> <dt>
 
-[**\_apertura de \_ \_ análisis panorámico MF MT \_**](mf-mt-pan-scan-aperture-attribute.md)
+[**MF \_ MT \_ PAN \_ SCAN \_ APERTURE**](mf-mt-pan-scan-aperture-attribute.md)
 </dt> </dl>
 
  

@@ -5,23 +5,23 @@ ms.assetid: 22d6a220-7712-4b07-a6d9-67dd748358a6
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33a8b6eb65706ad3adc9fd4c10b4c60f96a72848
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a16e4ff9890aa73b1107fe511c3e41480b5db7f1bb68a8a264a990cf58a94ea4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962324"
 ---
 # <a name="example-code-for-installing-a-static-context-menu-item"></a>Código de ejemplo para instalar un elemento de menú contextual estático
 
-En el ejemplo de código siguiente se usan dos scripts. El primer script (Frommenu.vbs) es el comando que se ejecuta cuando se selecciona el elemento de menú. El segundo script (Addmenu.vbs) instala el elemento de menú contextual del especificador de presentación para ejecutar el script Frommenu.vbs. En este ejemplo se asume la configuración regional 409 (Inglés de EE. UU.) y se extiende el menú contextual del objeto de usuario en Active Directory complementos administrativos.
+En el ejemplo de código siguiente se usan dos scripts. El primer script (Frommenu.vbs) es el comando que se ejecuta cuando se selecciona el elemento de menú. El segundo script (Addmenu.vbs) instala el elemento de menú contextual del especificador de pantalla para ejecutar el script Frommenu.vbs. En este ejemplo se da por supuesto la configuración regional 409 (inglés de EE. UU.) y se amplía el menú contextual del objeto de usuario en Active Directory complementos administrativos.
 
 Para ejecutar el código de ejemplo
 
-1.  Copie el código para Frommenu.vbs siguiente, abra el Bloc de notas, pegue el código en el Bloc de notas, guarde el archivo como C: \\frommenu.vbs y cierre el Bloc de notas.
-2.  Copie el código para Addmenu.vbs siguiente, abra el Bloc de notas, pegue el código en el Bloc de notas, guarde el archivo como C: \\addmenu.vbs y cierre el Bloc de notas.
+1.  Copie el código para Frommenu.vbs a continuación, abra Bloc de notas, pegue el código en Bloc de notas, guarde el archivo como C:frommenu.vbs y cierre \\ Bloc de notas.
+2.  Copie el código para Addmenu.vbs a continuación, abra Bloc de notas, pegue el código en Bloc de notas, guarde el archivo como C:addmenu.vbs y cierre \\ Bloc de notas.
 3.  Ejecute Addmenu.vbs.
-4.  Inicie el complemento usuarios y equipos de Active Directory.
+4.  Inicie el Usuarios y equipos de Active Directory complemento.
 
 FROMMENU.VBS
 
@@ -126,9 +126,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

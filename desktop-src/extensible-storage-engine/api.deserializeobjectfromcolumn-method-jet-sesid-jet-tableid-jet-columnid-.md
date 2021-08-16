@@ -85,9 +85,9 @@ public static Object DeserializeObjectFromColumn(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Object](/dotnet/api/system.object)  
-Objeto deserializado. Null si la columna es NULL.  
+Objeto deserializado. Null si la columna era NULL.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

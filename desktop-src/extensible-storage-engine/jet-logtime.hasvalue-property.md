@@ -39,7 +39,7 @@ Obtiene un valor que indica si el JET_LOGTIME tiene un valor NULL.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ Tipo: [System.Boolean](/dotnet/api/system.boolean)
 
 [INullableJetStruct.HasValue](./inullablejetstruct.hasvalue-property.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

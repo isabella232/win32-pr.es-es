@@ -156,76 +156,76 @@ En esta sección se describen los paneles funcionales de la interfaz de usuario 
 
 El **panel Árbol de elementos de** Automation contiene una instantánea jerárquica de objetos de elementos de automatización que están disponibles para pruebas. El elemento superior del árbol representa el escritorio.
 
-Esta vista es una colección estática que se compila cuando se inicia Visual UIA Verify. Para actualizar la vista en el nodo seleccionado, use el comando de menú Actualizar elemento **seleccionado** o el botón de barra de herramientas.
+Esta vista es una colección estática que se compila cuando se inicia Visual UIA Verify. Para actualizar la vista en el nodo seleccionado, use el botón de barra de herramientas o el comando de menú **Actualizar elemento** seleccionado.
 
 En la siguiente captura de pantalla se muestra el **panel Árbol de elementos de** Automation.
 
-![panel de árbol de elementos de automatización de comprobación de uia visual](images/automation-elements-tree-pane.png)
+![panel de árbol de elementos de automatización de la comprobación de uia visual](images/automation-elements-tree-pane.png)
 
-Un nodo atenuado (no disponible) en el árbol de elementos de **Automation** indica que el elemento es miembro de la vista sin formato de Automatización de la interfaz de usuario, pero no cumple las condiciones necesarias para considerarse miembro de la vista de contenido o vista de control. Sin embargo, el elemento todavía se puede probar desde Visual Automatización de la interfaz de usuario Verify. Para obtener más información, vea la información [general Automatización de la interfaz de usuario árbol de archivos](uiauto-treeoverview.md).
+Un nodo atenuado (no disponible) en el árbol de elementos de **Automation** indica que el elemento es miembro de la vista sin formato de Automatización de la interfaz de usuario, pero no cumple las condiciones necesarias para ser considerado miembro de la vista de contenido o vista de control. Sin embargo, el elemento todavía se puede probar desde Visual Automatización de la interfaz de usuario Verify. Para obtener más información, vea la información [general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
 
 Los comandos disponibles en la barra de **herramientas árbol de elementos de Automation** incluyen:
 
 -   **Actualizar:** actualice el nodo seleccionado y sus elementos secundarios. Este comando no actualiza todo el árbol de elementos a menos que se seleccione el nodo raíz.
 -   **Primario (Ctrl+Mayús+F6):** vaya al elemento primario del nodo actual.
 -   **Primer elemento secundario (Ctrl+Mayús+F7):** vaya al primer elemento secundario del nodo actual.
--   **Siguiente relacionado (Ctrl+Mayús+F8):** vaya al siguiente elemento secundario del mismo nivel del nodo actual.
+-   **Siguiente elemento relacionado (Ctrl+Mayús+F8):** vaya al siguiente elemento secundario del mismo nivel del nodo actual.
 -   **Anterior relacionado (Ctrl+Mayús+F9):** vaya al nodo anterior del nodo actual.
 -   **Último elemento secundario (Ctrl+Mayús+F10):** vaya al último elemento secundario del nodo actual.
 -   **Seguimiento de foco:** active o desactive la selección de nodos en función del seguimiento del foco.
 
 ### <a name="tests-pane"></a>Panel Pruebas
 
-El **panel** Pruebas contiene una lista de pruebas de Automatización de la interfaz de usuario organizadas por tipo de prueba (elemento de **Automation**, **control** y patrón **)** y prioridad **(Comprobación** de compilación, Prioridad **0,** Prioridad **1,** Prioridad **2** y **Prioridad 3).** Esta lista se genera en función del tipo de control del elemento seleccionado en el panel **Árbol de elementos de** Automation. Para obtener más información, consulta [UI Automation Control Types Overview](uiauto-controltypesoverview.md).
+El **panel** Pruebas contiene una lista de pruebas de Automatización de la interfaz de usuario organizadas por tipo de prueba (elemento de **Automation**, **control** y patrón **)** y prioridad **(Comprobación** de compilación, Prioridad **0,** Prioridad **1,** **Prioridad 2** y **Prioridad 3).** Esta lista se genera en función del tipo de control del elemento seleccionado en el panel **Árbol de elementos de** Automation. Para obtener más información, consulta [UI Automation Control Types Overview](uiauto-controltypesoverview.md).
 
-En la siguiente captura de pantalla se muestra **el panel** Pruebas.
+En la siguiente captura de pantalla se muestra el **panel** Pruebas.
 
 ![panel de prueba](images/test-pane.png)
 
 Los comandos disponibles en la barra de **herramientas Pruebas** incluyen:
 
--   **Mostrar**: especifica las Automatización de la interfaz de usuario que se mostrarán; Es decir, mostrar todas las pruebas o solo las pruebas adecuadas para el tipo de control del elemento seleccionado en el árbol de **elementos de Automation** (valor predeterminado).
+-   **Mostrar**: especifica las pruebas Automatización de la interfaz de usuario que se mostrarán; es decir, mostrar todas las pruebas o solo las pruebas adecuadas para el tipo de control del elemento seleccionado en el árbol de **elementos de Automation** (valor predeterminado).
 -   **Tipo**: especifica los tipos de prueba que se mostrarán: **Elemento de Automation,** **Patrón** o **Control**.
--   **Prioridades**: especifica las prioridades de prueba que se mostrarán: **Comprobación** de compilación, **Prioridad 0,** Prioridad **1,** Prioridad **2** o **Prioridad 3.**
--   **Ir a la** izquierda : vaya al elemento primario del nodo actual.
--   **Subir :** vaya al elemento anterior del mismo nivel del nodo actual.
--   **Bajar :** vaya al siguiente elemento relacionado del nodo actual.
+-   **Prioridades**: especifica las prioridades de prueba que se mostrarán: **Comprobación** de compilación, **Prioridad 0,** **Prioridad 1,** **Prioridad 2** o **Prioridad 3.**
+-   **Ir a la** izquierda: vaya al elemento primario del nodo actual.
+-   **Subir :** vaya al nodo anterior del nodo actual.
+-   **Bajar:** vaya al siguiente nodo relacionado del nodo actual.
 -   **Ir a la** derecha: vaya al primer elemento secundario del nodo actual.
--   **Ejecutar pruebas seleccionadas:** ejecuta las pruebas en el elemento seleccionado en el **árbol de elementos de Automation**.
+-   **Ejecutar pruebas seleccionadas:** ejecuta las pruebas en el elemento seleccionado en el árbol **de elementos de Automation**.
 
 ### <a name="test-results-pane"></a>Panel Resultados de prueba
 
-El **Resultados de pruebas** contiene la funcionalidad de registro De comprobación de Visual UIA. En la siguiente captura de pantalla se muestra **Resultados de pruebas** panel.
+El **Resultados de pruebas** contiene la funcionalidad de registro De comprobación de Visual UIA. En la siguiente captura de pantalla se **muestra Resultados de pruebas** panel.
 
 ![panel de resultados de pruebas](images/test-results-pane.png)
 
 Los comandos disponibles en la barra de **herramientas Resultados de pruebas** incluyen:
 
--   **Atrás :** retroceso de página en el historial de visualización de informes.
+-   **Atrás:** página atrás en el historial de visualización de informes.
 -   **Reenviar**: avance de página en el historial de visualización de informes.
--   **General:** muestra un resumen de los resultados de la prueba **(superado,** **con** error y **error inesperado).** El resultado de la prueba está vinculado a la **vista Todos los** resultados. El **comando** General muestra una tabla como la siguiente.
+-   **General:** muestra un resumen de los resultados de las **pruebas (superados,** **con** errores y **con un error inesperado).** El resultado de la prueba está vinculado a la **vista Todos los** resultados. El **comando** General muestra una tabla como la siguiente.
 
     ![tabla general de resultados de pruebas](images/overall-test-results.png)
 
--   **Todos los resultados:** muestra un registro detallado para cada resultado de la prueba, como se muestra en las tablas siguientes.
+-   **Todos los** resultados: muestra un registro detallado para cada resultado de la prueba, como se muestra en las tablas siguientes.
 
     ![detalles de resultados del registro de ejemplo de la vista de todos los resultados](images/all-results-log.png)
 
-    El nombre de la prueba de **la tabla Todos los** resultados está vinculado a una descripción del caso de prueba para el elemento , como en la tabla siguiente.
+    El nombre de la prueba de **la tabla Todos** los resultados está vinculado a una descripción del caso de prueba para el elemento, como en la tabla siguiente.
 
     ![detalles del caso de prueba](images/test-case-detail.png)
 
 -   **Registro completo:** muestra una vista alternativa del registro detallado para cada resultado de la prueba, como se muestra en la siguiente captura de pantalla.
 
-    ![vista alternativa de los detalles de un caso de prueba](images/alt-view-of-test-case-detail.png)
+    ![Vista alternativa de los detalles de un caso de prueba](images/alt-view-of-test-case-detail.png)
 
 -   **XML**: muestra el XML sin formato generado por el registrador XML.
--   **Búsqueda rápida:** búsqueda de texto simple de la vista actual en el **Resultados de pruebas** texto.
--   **Abrir en nueva ventana**: abre la vista actual en una nueva instancia de Internet Explorer.
+-   **Búsqueda rápida:** búsqueda de texto simple de la vista actual en el **Resultados de pruebas** datos.
+-   **Abrir en nueva ventana:** abre la vista actual en una nueva instancia de Internet Explorer.
 
 ### <a name="properties-pane"></a>Panel Propiedades
 
-El **panel Propiedades** contiene una lista de propiedades Automatización de la interfaz de usuario y valores de propiedad organizados por tipo de propiedad: Accesibilidad **general,** **Identificación,** Patrones **(patrones** de control), **Estado** y **Visibilidad.** Los valores de propiedad se rellenan dinámicamente en función del tipo de control del objeto seleccionado en el panel **Árbol de elementos de** Automation. En la siguiente captura de pantalla se muestra **el panel** Propiedades.
+El **panel Propiedades** contiene una lista de propiedades Automatización de la interfaz de usuario y valores de propiedad organizados por tipo de propiedad: Accesibilidad **general** **,** Identificación **,** Patrones (patrones de control), **Estado** y **Visibilidad.** Los valores de propiedad se rellenan dinámicamente en función del tipo de control del objeto seleccionado en el panel **Árbol de elementos de** Automation. En la siguiente captura de pantalla se muestra **el panel** Propiedades.
 
 ![panel de propiedades](images/properties-pane.png)
 
@@ -235,7 +235,7 @@ Si el control seleccionado admite un patrón de control específico, Visual UIA 
 
 Los comandos disponibles en la barra **de herramientas Propiedades** incluyen:
 
--   **Actualizar**: actualice el **árbol De** propiedades.
+-   **Actualizar**: actualice el **árbol Propiedades.**
 -   **Expandir todo**: expande todos los nodos del **árbol Propiedades.**
 
  

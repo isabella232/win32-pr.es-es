@@ -1,11 +1,11 @@
 ---
-title: Método ISoftKbd UnadviseSoftKeyboardEventSink (Softkbdc. h)
-description: El método ISoftKbd UnadviseSoftKeyboardEventSink quita un receptor de eventos de teclado en pantalla.
+title: Método ISoftKbd UnadviseSoftKeyboardEventSink (Softkbdc.h)
+description: El método ISoftKbd UnadviseSoftKeyboardEventSink quita un receptor de eventos de teclado soft.
 ms.assetid: 785340bd-c4f6-4c80-a492-6e60d1c1d552
 keywords:
-- Método UnadviseSoftKeyboardEventSink marco de trabajo de servicios de texto
-- Método UnadviseSoftKeyboardEventSink marco de trabajo de servicios de texto, interfaz ISoftKbd
-- ISoftKbd interface Text Services Framework, método UnadviseSoftKeyboardEventSink
+- Método UnadviseSoftKeyboardEventSink Text Services Framework
+- Método UnadviseSoftKeyboardEventSink Text Services Framework interfaz , ISoftKbd
+- Interfaz ISoftKbd Text Services Framework método , UnadviseSoftKeyboardEventSink
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a77129d1b5df024964af4ab19318963708d4b3d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90552c09e47d8a51f413f0588b12c8da5d44e665a6a5a51a79dc31717c6d56c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877115"
 ---
-# <a name="isoftkbdunadvisesoftkeyboardeventsink-method"></a>ISoftKbd:: UnadviseSoftKeyboardEventSink (método)
+# <a name="isoftkbdunadvisesoftkeyboardeventsink-method"></a>ISoftKbd::UnadviseSoftKeyboardEventSink (método)
 
-El método **ISoftKbd:: UnadviseSoftKeyboardEventSink** quita un receptor de eventos de teclado en pantalla.
+El **método ISoftKbd::UnadviseSoftKeyboardEventSink** quita un receptor de eventos de teclado soft.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ HRESULT UnadviseSoftKeyboardEventSink(
 
 <dl> <dt>
 
-*TID* \[ de\]
+*tid* \[ En\]
 </dt> <dd>
 
-Identificador del cliente que posee el receptor de eventos de teclado en pantalla. Este valor se pasó cuando se instaló el receptor de eventos mediante [ISoftKbd:: AdviseSoftKeyboardEventSink](isoftkbd-advisesoftkeyboardeventsink.md).
+Identificador del cliente que posee el receptor de eventos de teclado flexible. Este valor se pasó cuando se instaló el receptor de eventos [mediante ISoftKbd::AdviseSoftKeyboardEventSink](isoftkbd-advisesoftkeyboardeventsink.md).
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Value                                                                                                   | Descripción                                                   |
+| Valor                                                                                                   | Descripción                                                   |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                    | Método realizado correctamente.<br/>                         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>            | El parámetro *TID* no es válido.<br/>                    |
-| <dl> <dt>**CONECTAR \_ E \_ noconnection**</dt> </dl> | No se encontró el receptor de notificaciones identificado por *TID* .<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Método realizado correctamente.<br/>                         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>            | El *parámetro tid* no es válido.<br/>                    |
+| <dl> <dt>**CONNECT \_ E \_ NOCONNECTION**</dt> </dl> | No se encontró el receptor de aviso identificado por *tid.*<br/> |
 
 
 
@@ -69,18 +69,18 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Redistribuible<br/>          | TSF 1,0 en Windows 2000 Professional<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                        |
+| Header<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

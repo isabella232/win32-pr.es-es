@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-DfsPath
-description: Contiene la ruta de acceso completa del vínculo de Sistema de archivos distribuido (DFS) asociado.
+title: Atributo ms-DFSR-DfsPath
+description: Contiene la ruta de acceso completa del vínculo Sistema de archivos distribuido asociado (DFS).
 ms.assetid: bd596110-b156-4640-a6d0-ace9e4e30909
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFSR-DfsPath
-- msDFSR-DfsPath atributo AD Schema
+- Esquema de AD del atributo ms-DFSR-DfsPath
+- Esquema de AD del atributo msDFSR-DfsPath
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 718c052ea89df9d8c237c4ef73a6d6d6af13ee49
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 24a8f1e1ae9f9baeaa134737d5f6b84777f99c283f7f7013828483b2e6751b7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960974"
 ---
-# <a name="ms-dfsr-dfspath-attribute"></a>atributo MS-DFSR-DfsPath
+# <a name="ms-dfsr-dfspath-attribute"></a>Atributo ms-DFSR-DfsPath
 
-Contiene la ruta de acceso completa del vínculo de Sistema de archivos distribuido (DFS) asociado para la compatibilidad del servicio Replicación DFS.
+Contiene la ruta de acceso completa del vínculo Sistema de archivos distribuido asociado (DFS) para la compatibilidad Replicación DFS servicio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFSR-DfsPath                             |
-| Nombre para mostrar de LDAP | msDFSR-DfsPath                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DFSR-DfsPath                             |
+| Ldap-Display-Name | msDFSR-DfsPath                              |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.21                  |
-| System-ID-GUID    | 2cc903e2-398c-443b-ac86-ff6b01eac7ba        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2cc903e2-398c-443b-ac86-ff6b01eac7ba        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,20 +51,20 @@ Contiene la ruta de acceso completa del vínculo de Sistema de archivos distribu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -72,20 +72,20 @@ Contiene la ruta de acceso completa del vínculo de Sistema de archivos distribu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -93,20 +93,20 @@ Contiene la ruta de acceso completa del vínculo de Sistema de archivos distribu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -114,26 +114,26 @@ Contiene la ruta de acceso completa del vínculo de Sistema de archivos distribu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **MS-DFSR-DfsPath** forma parte de la compatibilidad con el servicio de replicación sistema de archivos distribuido (DFS).
+El **atributo ms-DFSR-DfsPath** forma parte de la compatibilidad del servicio de replicación Sistema de archivos distribuido (DFS).
 
  
 

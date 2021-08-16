@@ -4,7 +4,7 @@ description: Contiene la cadena de filtro que se aplica a los directorios.
 ms.assetid: baea6575-80d3-4f69-8e98-47f4a5941388
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo ms-DFSR-DirectoryFilter
+- ms-DFSR-DirectoryFilter attribute AD Schema
 - Esquema de AD del atributo msDFSR-DirectoryFilter
 topic_type:
 - apiref
@@ -27,16 +27,16 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DFSR-DirectoryFilter                     |
 | Ldap-Display-Name | msDFSR-DirectoryFilter                      |
 | Size              | \-                                          |
-| Privilegio actualizar  | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.13                  |
 | System-Id-Guid    | 93c7b477-1f2e-4b40-b7bf-007e8d038ccf        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,14 +51,14 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Es de un solo valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
@@ -72,14 +72,14 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
-| System-Only            | False                                                                                                                                 |
-| Es de un solo valor       | True                                                                                                                                  |
-| Está indexado             | False                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
@@ -93,14 +93,14 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
-| System-Only            | False                                                                                                                                 |
-| Es de un solo valor       | True                                                                                                                                  |
-| Está indexado             | False                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
@@ -114,14 +114,14 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
-| System-Only            | False                                                                                                                                 |
-| Es de un solo valor       | True                                                                                                                                  |
-| Está indexado             | False                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
@@ -131,7 +131,7 @@ Contiene la cadena de filtro que se aplica a los directorios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El **atributo ms-DFSR-DirectoryFilter** forma parte de la compatibilidad del servicio de replicación Sistema de archivos distribuido (DFS).
 

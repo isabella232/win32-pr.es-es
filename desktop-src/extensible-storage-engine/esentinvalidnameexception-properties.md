@@ -19,7 +19,7 @@ ms.locfileid: "118777558"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentInvalidNameException](./esentinvalidnameexception-class.md) expone los miembros siguientes.
+El [tipo EsentInvalidNameException](./esentinvalidnameexception-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 

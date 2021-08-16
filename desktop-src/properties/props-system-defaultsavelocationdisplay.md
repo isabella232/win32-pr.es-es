@@ -52,7 +52,7 @@ propertyDescription
             defineToken = ISDEFAULTSAVE_BOTH
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

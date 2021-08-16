@@ -29,7 +29,7 @@ Si no se establece este bit, el texto del control se especifica en la columna Te
 
 [RadioButtonGroup](radiobuttongroup-control.md)
 
-## <a name="value"></a>Value
+## <a name="value"></a>Valor
 
 
 
@@ -41,7 +41,7 @@ Si no se establece este bit, el texto del control se especifica en la columna Te
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para establecer este atributo en un control , incluya el bit Bitmap en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 

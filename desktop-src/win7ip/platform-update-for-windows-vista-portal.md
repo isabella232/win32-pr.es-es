@@ -4,12 +4,12 @@ description: Actualización de plataforma para Windows Vista
 ms.assetid: 661f88f9-e5ba-412d-8cb4-f3f186568b74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a97e083c8b7458b8a475631da30b8409cbd802c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4d272893699222e2a34263839afae03afc814b032d9473d7687403265a711468
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964564"
 ---
 # <a name="platform-update-for-windows-vista"></a>Actualización de plataforma para Windows Vista
 
@@ -24,7 +24,7 @@ La API compatible con la actualización de plataforma para Windows Vista y la ac
 Ventajas recomendadas:
 
 -   Programación COM
--   Programación de la API de Windows
+-   Windows Programación de API
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 

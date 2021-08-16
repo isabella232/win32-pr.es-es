@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectShaderVariable GetPixelShader (D3dx11effect. h)
+title: Método ID3DX11EffectShaderVariable GetPixelShader (D3dx11effect.h)
 description: Obtiene un sombreador de píxeles.
 ms.assetid: 4ce4b248-23b9-4135-a2b4-262e63247688
 keywords:
 - Método GetPixelShader Direct3D 11
-- Método GetPixelShader Direct3D 11, interfaz ID3DX11EffectShaderVariable
-- Interfaz ID3DX11EffectShaderVariable Direct3D 11, método GetPixelShader
+- Método GetPixelShader Direct3D 11 , interfaz ID3DX11EffectShaderVariable
+- Interfaz ID3DX11EffectShaderVariable direct3D 11 , método GetPixelShader
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6588fd9afb7e58308f0fbc120705d4a22d9f2ea
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ddf94d3e4686bcbc0206601938e8cf8ab5d0d81a1925aaf7bb814eb30a82ba4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104548059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118533261"
 ---
-# <a name="id3dx11effectshadervariablegetpixelshader-method"></a>ID3DX11EffectShaderVariable:: GetPixelShader (método)
+# <a name="id3dx11effectshadervariablegetpixelshader-method"></a>Método ID3DX11EffectShaderVariable::GetPixelShader
 
 Obtiene un sombreador de píxeles.
 
@@ -47,18 +47,18 @@ HRESULT GetPixelShader(
 *ShaderIndex* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Un índice basado en cero.
 
 </dd> <dt>
 
-*ppPS* 
+*App* 
 </dt> <dd>
 
 Tipo: **[ **ID3D11PixelShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11pixelshader)\*\***
 
-Un puntero a un puntero [**ID3D11PixelShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11pixelshader) que se establecerá en el sombreador de píxeles de la devolución.
+Puntero a un [**puntero ID3D11PixelShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11pixelshader) que se establecerá en el sombreador de píxeles en la devolución.
 
 </dd> </dl>
 
@@ -66,12 +66,12 @@ Un puntero a un puntero [**ID3D11PixelShader**](/windows/win32/api/d3d11/nn-d3d1
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -81,12 +81,12 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

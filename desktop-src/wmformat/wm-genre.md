@@ -29,11 +29,11 @@ g \_ wszWMGenre
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE \_ TIPO \_ WMT**
+**CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este es el atributo preferido para especificar el género de contenido.
+Este es el atributo preferido para especificar el género del contenido.
 
 Si cambia **WM/Genre** o **WM/GenreID** en un archivo MP3, el otro atributo se cambiará para que coincida.
 
@@ -50,7 +50,7 @@ Si cambia **WM/Genre** o **WM/GenreID** en un archivo MP3, el otro atributo se c
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

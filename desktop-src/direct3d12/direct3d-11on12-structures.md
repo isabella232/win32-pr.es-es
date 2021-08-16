@@ -22,7 +22,7 @@ Las estructuras siguientes se declaran en d3d11on12.h.
 
 | Tema                                                             | Descripción                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MARCAS DE RECURSOS D3D11 \_ \_**](/windows/desktop/api/d3d11on12/ns-d3d11on12-d3d11_resource_flags)<br/> | Se usa con [**ID3D11On12Device::CreateWrappedResource**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) para invalidar las marcas que se deducirían mediante las propiedades del recurso o las propiedades del montón, incluidas las marcas de enlace, las marcas misc y las marcas de acceso de CPU. <br/> |
+| [**MARCAS DE RECURSOS D3D11 \_ \_**](/windows/desktop/api/d3d11on12/ns-d3d11on12-d3d11_resource_flags)<br/> | Se usa con [**ID3D11On12Device::CreateWrappedResource**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) para invalidar las marcas que se inferirán en las propiedades del recurso o las propiedades del montón, incluidas las marcas de enlace, las marcas misc y las marcas de acceso de CPU. <br/> |
 
 
 
@@ -32,7 +32,7 @@ Las estructuras siguientes se declaran en d3d11on12.h.
 
 <dl> <dt>
 
-[Referencia de 11on12 (d3d11on12.h)](direct3d-11on12-reference.md)
+[Referencia 11on12 (d3d11on12.h)](direct3d-11on12-reference.md)
 </dt> </dl>
 
  

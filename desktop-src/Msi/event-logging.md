@@ -13,7 +13,7 @@ ms.locfileid: "118636929"
 ---
 # <a name="event-logging-windows-installer"></a>Registro de eventos (Windows instalador)
 
-[Windows Events proporciona](../events/windows-events.md) una manera estándar y centralizada para que las aplicaciones (y el sistema operativo) registren eventos importantes de software y hardware. El servicio de registro de eventos almacena eventos de varios orígenes en una sola colección denominada registro *de eventos*. Antes de Windows Vista, usaría Seguimiento de eventos [para Windows](../etw/event-tracing-portal.md) (ETW) o Registro de [eventos](../eventlog/event-logging.md) para registrar eventos. Windows Vista introdujo un nuevo modelo de eventos que unifica ETW y Windows [Event Log](../wes/windows-event-log.md) API.
+[Windows Events proporciona](../events/windows-events.md) una manera estándar y centralizada para que las aplicaciones (y el sistema operativo) registren eventos importantes de software y hardware. El servicio de registro de eventos almacena eventos de varios orígenes en una sola colección denominada registro *de eventos*. Antes de Windows Vista, usaría Seguimiento de eventos [para](../etw/event-tracing-portal.md) Windows (ETW) o Registro de eventos para [registrar](../eventlog/event-logging.md) eventos. Windows Vista introdujo un nuevo modelo de eventos que unifica ETW y la API [Windows Event Log](../wes/windows-event-log.md) API.
 
 El instalador también escribe entradas en el registro de eventos. Estos eventos de registro son los siguientes:
 
@@ -21,11 +21,11 @@ El instalador también escribe entradas en el registro de eventos. Estos eventos
 -   Errores que se producen durante la configuración del producto.
 -   Detección de datos de configuración dañados.
 
-Si se escribe una gran cantidad de información, el archivo de registro de eventos puede estar lleno y el instalador muestra el mensaje "El archivo de registro de aplicación está lleno".
+Si se escribe una gran cantidad de información, el archivo de registro de eventos puede estar lleno y el instalador muestra el mensaje "El archivo de registro de aplicaciones está lleno".
 
 El instalador puede escribir las siguientes entradas en el registro de eventos. Todos los mensajes del registro de eventos tienen un identificador de evento único. Todos los errores generales que se han escrito en la tabla [Error](error-table.md) que se devuelven para una instalación que produce un error se registran en el registro de eventos de la aplicación con un identificador de mensaje igual al error + 10 000. Por ejemplo, el número de error de la tabla Error de una instalación completada correctamente es 1707. La instalación correcta se registra en el registro de eventos de la aplicación con un identificador de mensaje de 11707 (1707 + 10 000).
 
-Para obtener información sobre cómo habilitar el registro detallado en el equipo de un usuario al solucionar problemas de implementación, vea Windows [Procedimientos](windows-installer-best-practices.md)recomendados del instalador .
+Para obtener información sobre cómo habilitar el registro detallado en el equipo de un usuario al solucionar problemas de implementación, vea Windows procedimientos recomendados [del instalador.](windows-installer-best-practices.md)
 
 
 
@@ -34,7 +34,7 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <tr class="header">
 <th>Id. de evento</th>
 <th>Message</th>
-<th>Observaciones</th>
+<th>Comentarios</th>
 </tr>
 </thead>
 <tbody>
@@ -65,8 +65,8 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 </tr>
 <tr class="even">
 <td>1006</td>
-<td>No se puede realizar la comprobación de la firma digital para el gabinete '%1'. WinVerifyTrust no está disponible en el equipo.</td>
-<td>Mensaje de advertencia. Se hizo un archivador en la <a href="msidigitalsignature-table.md">tabla MsiDigitalSignature</a> para que se realizara una <a href="/windows/desktop/api/wintrust/nf-wintrust-winverifytrust"><strong>comprobación de WinVerifyTrust.</strong></a> Esta acción no se pudo realizar porque el equipo no tiene instalados los archivos DLL de criptografía adecuados.</td>
+<td>No se puede realizar la comprobación de la firma digital del gabinete '%1'. WinVerifyTrust no está disponible en el equipo.</td>
+<td>Mensaje de advertencia. Se ha escrito un contenedor en la <a href="msidigitalsignature-table.md">tabla MsiDigitalSignature</a> para que se realice una <a href="/windows/desktop/api/wintrust/nf-wintrust-winverifytrust"><strong>comprobación de WinVerifyTrust.</strong></a> Esta acción no se pudo realizar porque el equipo no tiene instalados los archivos DLL de criptografía adecuados.</td>
 </tr>
 <tr class="odd">
 <td>1007</td>
@@ -90,7 +90,7 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 </tr>
 <tr class="odd">
 <td>1014</td>
-<td>Windows Información del proxy del instalador no registrada correctamente</td>
+<td>Windows La información del proxy del instalador no está registrada correctamente</td>
 <td>Mensaje de error que indica que la información del proxy no se registró correctamente.</td>
 </tr>
 <tr class="even">
@@ -100,18 +100,18 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 </tr>
 <tr class="odd">
 <td>1016</td>
-<td>Error de detección del producto "%1", característica "%2", componente "%3". No se pudo encontrar el recurso '%4' en un componente de ejecución desde el origen porque no se encontró ningún origen válido y accesible.</td>
+<td>Error de detección del producto "%1", característica "%2", componente "%3". No se pudo encontrar el recurso '%4' en un componente de ejecución desde origen porque no se encontró ningún origen válido y accesible.</td>
 <td>Mensaje de advertencia. Para obtener más información, <a href="searching-for-a-broken-feature-or-component.md">vea Buscar una característica o componente rotos.</a></td>
 </tr>
 <tr class="even">
 <td>1017</td>
-<td>El SID del usuario ha cambiado de "%1" a "%2", pero la aplicación administrada y las claves de datos de usuario no se pueden actualizar. Error = '%3'.</td>
+<td>El SID del usuario ha cambiado de '%1' a '%2', pero la aplicación administrada y las claves de datos de usuario no se pueden actualizar. Error = '%3'.</td>
 <td>Mensaje de error que indica que se produjo un error al intentar actualizar el registro del usuario después de cambiar el SID del usuario.</td>
 </tr>
 <tr class="odd">
 <td>1018</td>
 <td>No se puede instalar la aplicación '%1' porque no es compatible con esta versión de Windows.</td>
-<td>Mensaje de error que indica que la instalación no es compatible con la versión en ejecución de Windows. Póngase en contacto con el fabricante del software que se va a instalar para obtener una actualización.</td>
+<td>Mensaje de error que indica que la instalación no es compatible con la versión actual de Windows. Póngase en contacto con el fabricante del software que se va a instalar para obtener una actualización.</td>
 </tr>
 <tr class="even">
 <td>1019</td>
@@ -126,11 +126,11 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <tr class="even">
 <td>1021</td>
 <td>Producto: %1: no se pudo quitar la actualización "%2". Código de error %3.</td>
-<td>Mensaje de error que indica que el instalador no pudo quitar la actualización. Para obtener información sobre cómo activar el registro, vea Habilitar el registro detallado en el equipo del usuario <a href="windows-installer-best-practices.md">al solucionar problemas de implementación.</a> <strong>Windows Installer 2.0:</strong> No disponible.<br/></td>
+<td>Mensaje de error que indica que el instalador no pudo quitar la actualización. Para obtener información sobre cómo activar el registro, vea Habilitar el registro detallado en el equipo del usuario al solucionar problemas <a href="windows-installer-best-practices.md">de implementación.</a> <strong>Windows Installer 2.0:</strong> No disponible.<br/></td>
 </tr>
 <tr class="odd">
 <td>1022</td>
-<td>Producto: %1: actualización "%2" instalada correctamente.</td>
+<td>Producto: %1- Actualización "%2" instalada correctamente.</td>
 <td>Mensaje informativo que indica que el instalador ha instalado la actualización correctamente. <strong>Windows Installer 2.0:</strong> No disponible.<br/></td>
 </tr>
 <tr class="even">
@@ -141,7 +141,7 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <tr class="odd">
 <td>1024</td>
 <td>Producto: %1: no se pudo instalar la actualización "%2". Código de error %3.</td>
-<td>Mensaje de error que indica que el instalador no pudo instalar la actualización. Para obtener información sobre cómo activar el registro, vea Habilitar el registro detallado en el equipo del usuario al solucionar <a href="windows-installer-best-practices.md">problemas de implementación.</a> <strong>Windows Installer 2.0:</strong> No disponible.<br/></td>
+<td>Mensaje de error que indica que el instalador no pudo instalar la actualización. Para obtener información sobre cómo activar el registro, vea Habilitar el registro detallado en el equipo del usuario <a href="windows-installer-best-practices.md">al solucionar problemas de implementación.</a> <strong>Windows Installer 2.0:</strong> No disponible.<br/></td>
 </tr>
 <tr class="even">
 <td>1025</td>
@@ -161,27 +161,27 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <tr class="odd">
 <td>1028</td>
 <td>Windows El instalador ha determinado que su carpeta de caché de datos de configuración no se ha protegido correctamente. El propietario de la clave debe ser Sistema local o Integrado\Administradores. La carpeta existente se eliminará y se volverá a crear con la configuración de seguridad adecuada.</td>
-<td>Mensaje de<strong><a href="not-supported-in-windows-installer-version-3-1.md">Windows instalador 3.1 y versiones</a>anteriores:</strong> No disponible.<br/></td>
+<td>Mensaje de<strong><a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones</a>anteriores:</strong> No disponible.<br/></td>
 </tr>
 <tr class="even">
 <td>1029</td>
 <td>Producto: %1. Se requiere reiniciar.</td>
-<td>Mensaje de advertencia que indica que se requiere un reinicio del sistema para completar la instalación y el reinicio se ha aplazado más adelante. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/></td>
+<td>Mensaje de advertencia que indica que se requiere un reinicio del sistema para completar la instalación y que el reinicio se ha aplazado más adelante. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/></td>
 </tr>
 <tr class="odd">
 <td>1030</td>
 <td>Producto: %1. La aplicación intentó instalar una versión más reciente del archivo de Windows protegido %2. Es posible que tenga que actualizar el sistema operativo para que esta aplicación funcione correctamente. (Versión del paquete: %3, versión protegida del sistema operativo: %4).</td>
-<td>Mensaje de advertencia que indica que la instalación intentó reemplazar un archivo crítico protegido por <a href="windows-resource-protection-on-windows-vista.md">Windows Resource Protection</a>. Es posible que sea necesaria una actualización del sistema operativo para usar esta aplicación. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/></td>
+<td>Mensaje de advertencia que indica que la instalación intentó reemplazar un archivo crítico protegido por <a href="windows-resource-protection-on-windows-vista.md">Windows Resource Protection</a>. Es posible que se requiera una actualización del sistema operativo para usar esta aplicación. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/></td>
 </tr>
 <tr class="even">
 <td>1031</td>
-<td>Producto: %1. El ensamblado "%2" para el componente "%3" está en uso.</td>
+<td>Producto: %1. El ensamblado '%2' para el componente '%3' está en uso.</td>
 <td>Mensaje de advertencia que indica que la instalación intentó actualizar un ensamblado actualmente en uso. El sistema debe reiniciarse para completar la actualización de este ensamblado. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/></td>
 </tr>
 <tr class="odd">
 <td>1032</td>
 <td>Error al actualizar las variables de entorno actualizadas durante la instalación de '%1'.</td>
-<td>Mensaje de advertencia que indica que algunos usuarios que han iniciado sesión en el equipo pueden tener que cerrar la sesión y volver a iniciarla para completar la actualización de las variables de entorno. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/></td>
+<td>Mensaje de advertencia que indica que es posible que algunos usuarios que han iniciado sesión en el equipo deban cerrar sesión y volver a iniciarla para completar la actualización de las variables de entorno. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/></td>
 </tr>
 <tr class="even">
 <td>3082</td>

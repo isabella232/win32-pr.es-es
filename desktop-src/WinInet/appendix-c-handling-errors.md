@@ -13,7 +13,7 @@ ms.locfileid: "118562355"
 ---
 # <a name="handling-errors-windows-internet"></a>Control de errores (Windows Internet)
 
-La [**función GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) recupera el último código de error para todas las funciones de WinINet. Si [**se devuelve ERROR INTERNET EXTENDED \_ \_ \_ ERROR,**](wininet-errors.md) hay una cadena o búfer que contiene un mensaje de error detallado. Llame a [**la función InternetGetLastResponseInfo**](/windows/desktop/api/Wininet/nf-wininet-internetgetlastresponseinfoa) para recuperar el texto de error extendido.
+La [**función GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) recupera el último código de error para todas las funciones de WinINet. Si [**se devuelve ERROR INTERNET EXTENDED \_ \_ \_ ERROR,**](wininet-errors.md) hay una cadena o búfer que contiene un mensaje de error detallado. Llame a [**la función InternetGetLastResponseInfo**](/windows/desktop/api/Wininet/nf-wininet-internetgetlastresponseinfoa) para recuperar el texto extendido del error.
 
 Para obtener el texto de error de un error, llame a la función [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) y pase un identificador **HMODULE** a Wininet.dll, que se puede obtener mediante la [función GetModuleHandle.](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)
 
@@ -186,7 +186,7 @@ void WINAPI addLastErrorToMsg( LPTSTR szMsgBuffer, DWORD dwSize )
 
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para implementaciones de servidor o servicios, use [Microsoft Windows SERVICIOS HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 

@@ -13,13 +13,13 @@ ms.locfileid: "118640194"
 ---
 # <a name="accessing-the-current-installer-session-from-inside-a-custom-action"></a>Acceso a la sesión actual del instalador desde dentro de una acción personalizada
 
-Las acciones personalizadas no deducidas [](scripts.md) que llaman a scripts o bibliotecas de [vínculos dinámicos](dynamic-link-libraries.md) pueden acceder a una instalación en ejecución para consultar o modificar los atributos de la sesión de instalación actual. Solo puede **existir un objeto Session** para cada proceso y los scripts de acción personalizados no deben intentar crear otra sesión.
+Las acciones personalizadas no deducidas [](scripts.md) que llaman a scripts o bibliotecas de [vínculos dinámicos](dynamic-link-libraries.md) pueden tener acceso a una instalación en ejecución para consultar o modificar los atributos de la sesión de instalación actual. Solo puede **existir un objeto Session** para cada proceso y los scripts de acción personalizados no deben intentar crear otra sesión.
 
-Las acciones personalizadas solo pueden agregar, modificar o quitar filas, columnas o tablas temporales de una base de datos. Las acciones personalizadas no pueden modificar datos persistentes en una base de datos, por ejemplo, datos que forman parte de la base de datos almacenada en disco.
+Las acciones personalizadas solo pueden agregar, modificar o quitar filas, columnas o tablas temporales de una base de datos. Las acciones personalizadas no pueden modificar los datos persistentes de una base de datos, por ejemplo, los datos que forman parte de la base de datos almacenada en disco.
 
 [Bibliotecas de vínculos dinámicos](dynamic-link-libraries.md)
 
-Para tener acceso a una instalación en ejecución, las acciones personalizadas que llaman a bibliotecas de vínculos dinámicos (DLL) se pasan un identificador del tipo MSIHANDLE para la sesión actual como único argumento al punto de entrada dll denominado en la columna Destino de la [tabla CustomAction](customaction-table.md). Dado que el instalador proporciona este identificador, la acción personalizada no debe cerrarlo, por ejemplo, para recibir el identificador *hInstall* del instalador, la función de acción personalizada se declara como sigue.
+Para tener acceso a una instalación en ejecución, las acciones personalizadas que llaman a bibliotecas de vínculos dinámicos (DLL) se pasan un identificador del tipo MSIHANDLE para la sesión actual como único argumento al punto de entrada dll denominado en la columna Target de la [tabla CustomAction](customaction-table.md). Dado que el instalador proporciona este identificador, la acción personalizada no debe cerrarlo, por ejemplo, para recibir el identificador *hInstall* del instalador, la función de acción personalizada se declara como sigue.
 
 
 ```C++
@@ -32,9 +32,9 @@ Para obtener acceso de solo lectura a la base de datos actual, obtenga el identi
 
 [Scripts](scripts.md)
 
-Las acciones personalizadas escritas en VBScript JScript pueden acceder a la sesión de instalación actual mediante el [**objeto session**](session-object.md). El instalador crea un **objeto Session** denominado "Session" que hace referencia a la instalación actual. Para obtener acceso de solo lectura a la base de datos actual, use la [**propiedad Database**](session-database.md) del **objeto Session.**
+Las acciones personalizadas escritas en VBScript JScript pueden acceder a la sesión de instalación actual mediante el [**objeto session**](session-object.md). El instalador crea un **objeto Session** denominado "Session" que hace referencia a la instalación actual. Para obtener acceso de solo lectura a la base de datos actual, use [**la propiedad Database**](session-database.md) del objeto **Session.**
 
-Dado que un script se ejecuta desde el contexto del [**objeto Session,**](session-object.md) no siempre es necesario calificar completamente las propiedades y los métodos. En el ejemplo siguiente, cuando se usa VBScript, la referencia Me puede reemplazar el objeto **Session;** por ejemplo, las tres líneas siguientes son equivalentes.
+Dado que un script se ejecuta desde el contexto del [**objeto Session,**](session-object.md) no siempre es necesario calificar completamente las propiedades y los métodos. En el ejemplo siguiente, al usar VBScript, la referencia Me puede reemplazar el objeto **Session,** por ejemplo, las tres líneas siguientes son equivalentes.
 
 
 ```VB
@@ -59,7 +59,7 @@ SetInstallLevel 1
 
 [Archivos ejecutables](executable-files.md)
 
-No se puede acceder a la sesión actual del instalador desde acciones personalizadas que llaman a archivos ejecutables iniciados con una línea de comandos, por ejemplo, Custom [Action Type 2](custom-action-type-2.md) y [Custom Action Type 18](custom-action-type-18.md).
+No se puede acceder a la sesión del instalador actual desde acciones personalizadas que llaman a archivos ejecutables iniciados con una línea de comandos, por ejemplo, Custom [Action Type 2](custom-action-type-2.md) y [Custom Action Type 18](custom-action-type-18.md).
 
 [Acciones personalizadas de ejecución aplazada](deferred-execution-custom-actions.md)
 

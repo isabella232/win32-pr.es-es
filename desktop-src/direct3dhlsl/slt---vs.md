@@ -1,5 +1,5 @@
 ---
-title: SLT-vs
+title: slt- vs
 description: Calcula el signo si el primer origen es menor que el segundo origen.
 ms.assetid: 7573bcee-8f31-49ea-b515-5be59a7a508d
 ms.topic: reference
@@ -9,47 +9,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f6476ec24f82295d56b04682dfa4320547672b43
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 76117b802826d9c8b95264cdc07071c85db4a395e66124fc923ba5f9f11b9d7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104077078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095185"
 ---
-# <a name="slt---vs"></a>SLT-vs
+# <a name="slt---vs"></a>slt- vs
 
 Calcula el signo si el primer origen es menor que el segundo origen.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| SLT DST, src0, SRC1 |
+| slt dst, src0, src1 |
 |---------------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| SLT                    | x    | x    | x    | x     | x    | x     |
+| Slt                    | x    | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```
@@ -68,9 +68,9 @@ dest.w = (src0.w < src1.w) ? 1.0f : 0.0f;
 [Instrucciones del sombreador de vértices](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

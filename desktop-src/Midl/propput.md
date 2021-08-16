@@ -59,7 +59,7 @@ Cero o más parámetros para el procedimiento remoto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una función que tenga el **\[ atributo propput \]** también debe tener, como último parámetro, un parámetro que tenga el atributo **\[** [**in.**](in.md) **\]**
 
