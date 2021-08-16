@@ -23,7 +23,7 @@ ms.locfileid: "118544870"
 ---
 # <a name="xtyp_advdata-transaction"></a>Transacción \_ ADVDATA de XTYP
 
-Informa al cliente de que el valor del elemento de datos ha cambiado. La datos dinámicos Exchange de devolución de llamada de cliente (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción después de establecer un bucle de asesoramiento con un servidor.
+Informa al cliente de que el valor del elemento de datos ha cambiado. La datos dinámicos Exchange de devolución de llamada de cliente (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción después de establecer un bucle de aviso con un servidor.
 
 
 ```C++
@@ -47,7 +47,7 @@ El tipo de transacción.
 *uFmt* 
 </dt> <dd>
 
-Átomo de formato de los datos enviados desde el servidor.
+El atom de formato de los datos enviados desde el servidor.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Identificador del nombre del elemento.
 *hdata* 
 </dt> <dd>
 
-Identificador de los datos asociados con el nombre del tema y el par de nombres de elemento. Este parámetro es **NULL** si el cliente especificó la **marca \_ NODATA XTYPF** cuando solicitó el bucle advise.
+Identificador de los datos asociados con el nombre del tema y el par de nombres de elemento. Este parámetro es **NULL** si el cliente especificó la **marca \_ XTYPF NODATA** cuando solicitó el bucle advise.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ No se usa.
 
 Una función de devolución de llamada DDE debe devolver **DDE \_ FACK** si procesa esta transacción, **DDE \_ FBUSY** si está demasiado ocupado para procesar esta transacción o **DDE \_ FNOTPROCESSED** si rechaza esta transacción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación no debe liberar el identificador de datos obtenido durante esta transacción. Sin embargo, una aplicación debe copiar los datos asociados al identificador de datos si la aplicación debe procesar los datos después de que se devuelva la función de devolución de llamada. Una aplicación puede usar la [**función DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata) para copiar los datos.
 
@@ -105,7 +105,7 @@ Una aplicación no debe liberar el identificador de datos obtenido durante esta 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
@@ -113,7 +113,7 @@ Una aplicación no debe liberar el identificador de datos obtenido durante esta 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

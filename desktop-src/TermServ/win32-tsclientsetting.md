@@ -79,7 +79,7 @@ ms.locfileid: "118349369"
 ---
 # <a name="win32_tsclientsetting-class"></a>Clase \_ TSClientSetting de Win32
 
-La clase WMI **\_ TSClientSetting de Win32** define los valores de configuración de la clase [**\_ Terminal Win32**](win32-terminal.md) relacionada con la directiva de conexión.
+La clase WMI **\_ Win32 TSClientSetting** define los valores de configuración de la clase [**\_ Terminal Win32**](win32-terminal.md) relacionada con la directiva de conexión.
 
 La sintaxis siguiente se simplifica a partir del código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
 
@@ -189,7 +189,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica si se deben habilitar los gráficos RemoteFX avanzados para RemoteApp.
+Especifica si se deben habilitar los gráficos RemoteFX para RemoteApp.
 
 **Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2012 R2 y Windows 8.1.
 
@@ -247,7 +247,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si se debe permitir el redireccionamiento de la captura de audio.
+Especifica si se permite el redireccionamiento de la captura de audio.
 
 **Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2008 R2 y Windows 7.
 
@@ -579,7 +579,7 @@ La configuración de conexión del usuario está en vigor.
 
 <span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>
 
-<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Invalidación de** servidor (1)
+<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Invalidación del** servidor (1)
 
 
 </dt> <dd>
@@ -733,7 +733,7 @@ Especifica la calidad de la imagen para la experiencia de RDP.
 
 <span id="lossless"></span><span id="LOSSLESS"></span>
 
-**sin pérdida** (1)
+**sin pérdidas** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -909,7 +909,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si se va a permitir Plug and Play redireccionamiento.
+Especifica si se debe permitir Plug and Play redirección.
 
 <dt>
 
@@ -946,7 +946,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad AdvancedRemoteAppGraphics** está configurada por la directiva de servidor o grupo.
+Indica si la directiva de servidor o grupo configura la propiedad **AdvancedRemoteAppGraphics.**
 
 **Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2012 R2 y Windows 8.1.
 
@@ -1010,7 +1010,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad AudioCaptureRedir** está configurada por el servidor o la directiva de grupo.
+Indica si la directiva de servidor o grupo configura la propiedad **AudioCaptureRedir.**
 
 **Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2008 R2 y Windows 7.
 
@@ -1077,7 +1077,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica cómo se configura la propiedad **AVC444ModePreferredis.**
+Indica cómo se configura **la propiedad AVC444ModePreferredis.**
 
 **Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 R2, Windows Vista y Windows Server 2008:** Esta propiedad no está disponible antes de Windows 10 o Windows Server 2016.
 
@@ -1216,7 +1216,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad COMPortMapping** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
+Indica si la propiedad **COMPortMapping** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -1288,7 +1288,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad DriveMapping** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
+Indica si la propiedad **DriveMapping** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -1324,7 +1324,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica cómo se **configura EncodeImageQualityi.**
+Indica cómo se configura **EncodeImageQualityi.**
 
 **Windows 7, Windows Server 2008 R2, Windows Vista y Windows Server 2008:** Esta propiedad no está disponible antes de Windows 8 o Windows Server 2012.
 
@@ -1422,7 +1422,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad MaxMonitors** está configurada por el servidor, la directiva de grupo o el valor predeterminado.
+Indica si la **propiedad MaxMonitors está** configurada por el servidor, la directiva de grupo o el valor predeterminado.
 
 <dt>
 
@@ -1620,7 +1620,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad VideoPlaybackRedir** está configurada por la directiva de servidor o grupo.
+Indica si la directiva de servidor o grupo configura la propiedad **VideoPlaybackRedir.**
 
 **Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2008 R2 y Windows 7.
 
@@ -1651,7 +1651,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **WindowsPrinterMapping** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
+Indica si la **propiedad WindowsPrinterMapping** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -1687,7 +1687,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica el perfil para la experiencia de RDP.
+Especifica el perfil para la experiencia rdp.
 
 **Windows 7, Windows Server 2008 R2, Windows Vista y Windows Server 2008:** Esta propiedad no está disponible antes de Windows 8 o Windows Server 2012.
 
@@ -1695,7 +1695,7 @@ Especifica el perfil para la experiencia de RDP.
 
 <span id="scale"></span><span id="SCALE"></span>
 
-**scale** (1)
+**escala** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1755,7 +1755,7 @@ deshabilitado en estado estable
 3
 </dt> <dd>
 
-deshabilitado en el momento de la conexión y en estado estable.
+deshabilitado en tiempo de conexión y en estado estable.
 
 </dd> </dl>
 
@@ -1811,7 +1811,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1899,7 +1899,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si se debe permitir el redireccionamiento de reproducción de vídeo.
+Especifica si se permite el redireccionamiento de reproducción de vídeo.
 
 **Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2008 R2 y Windows 7.
 
@@ -1930,7 +1930,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si la asignación de impresoras está deshabilitada o habilitada para la ventana del cliente.
+Especifica si la asignación de impresora está deshabilitada o habilitada para la ventana del cliente.
 
 <dt>
 
@@ -1962,7 +1962,7 @@ La asignación de impresoras está deshabilitada.
 
 Tenga en cuenta que una estación de ventana asociada a la sesión de consola no puede tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad **TerminalName,** los métodos de este objeto **devolverán WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error también se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al espacio \\ de nombres Raíz de \\ TerminalServices CIMV2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de seis.
+Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de seis.
 
 En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
@@ -1985,7 +1985,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
@@ -1998,7 +1998,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 [**Win32 \_ Terminal**](win32-terminal.md)
 </dt> <dt>
 
-[**TerminalSetting de Win32 \_**](win32-terminalsetting.md)
+[**Terminal \_ Win32Setting**](win32-terminalsetting.md)
 </dt> <dt>
 
 [**Configuración de CIM \_**](/windows/desktop/CIMWin32Prov/cim-setting)

@@ -1,7 +1,7 @@
 ---
 description: La propiedad ProductCode del objeto Patch devuelve el GUID productCode del producto.
 ms.assetid: 11d81bc0-dac6-4135-9b60-31d39c3455da
-title: Propiedad Patch.ProductCode
+title: Patch.ProductCode, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118627658"
 ---
-# <a name="patchproductcode-property"></a>Propiedad Patch.ProductCode
+# <a name="patchproductcode-property"></a>Patch.ProductCode, propiedad
 
 La **propiedad ProductCode** del [**objeto Patch**](patch-object.md) devuelve el GUID [**productCode**](productcode.md) del producto.
 
@@ -41,15 +41,15 @@ propVal = Patch.ProductCode
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID IPatch se define como \_ 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

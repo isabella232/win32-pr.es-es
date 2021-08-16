@@ -60,9 +60,9 @@ Contiene información de error, como el archivo que se está procesando en el mo
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método debe devolver **S_OK**; De lo contrario, do continúa con la llamada a este **método hasta S_OK** se devuelve. Por motivos de rendimiento, debe limitar el número de veces que devuelve un valor distinto de **S_OK** a varias veces. Como alternativa a devolver un código de error, considere la posibilidad de devolver siempre **S_OK** controlar el error internamente. El intervalo en el que se llama a este método es arbitrario.
+Este método debe devolver **S_OK**; De lo contrario, do continúa con la llamada a este **método hasta S_OK** se devuelve. Por motivos de rendimiento, debe limitar el número de veces que devuelve un valor distinto de **S_OK** varias veces. Como alternativa a devolver un código de error, considere la posibilidad de devolver **siempre S_OK** y controlar el error internamente. El intervalo en el que se llama a este método es arbitrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Después de determinar la causa del error, realice una de las siguientes opciones:
 
@@ -72,13 +72,13 @@ Después de determinar la causa del error, realice una de las siguientes opcione
 
 Los errores transitorios no generan llamadas al [**método JobError.**](https://www.bing.com/search?q=**JobError**)
 
-DO devuelve BG_ERROR_CONTEXT_REMOTE_FILE si el trabajo produjo un error HTTP 403, BG_ERROR_CONTEXT_NONE lo contrario.
+DO devuelve BG_ERROR_CONTEXT_REMOTE_FILE si el trabajo ha producido un error HTTP 403, BG_ERROR_CONTEXT_NONE lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
@@ -90,7 +90,7 @@ DO devuelve BG_ERROR_CONTEXT_REMOTE_FILE si el trabajo produjo un error HTTP 403
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,8 +1,8 @@
 ---
-description: Descomprime el archivo de método abreviado lógico (o directorio) especificado en la ruta de acceso del objeto.
+description: Descomprime el archivo de acceso directo lógico (o directorio) especificado en la ruta de acceso del objeto.
 ms.assetid: e120391a-3839-4f8c-aca3-473d7f8b30bf
 ms.tgt_platform: multiple
-title: Método UNCOMPRESS de la clase Win32_ShortcutFile
+title: Método Descomprimir de la Win32_ShortcutFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 48267f519dce9ae5d78581050255bd8e8b02222c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 05ce0f0a9bf8956a5c4841c18b098d86a5dff57fc66ac45f0a4e3fefecb3ef53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117834520"
 ---
-# <a name="uncompress-method-of-the-win32_shortcutfile-class"></a>Método UNCOMPRESS de la \_ clase ShortcutFile de Win32
+# <a name="uncompress-method-of-the-win32_shortcutfile-class"></a>Método Uncompress de la clase ShortcutFile de Win32 \_
 
-El método de clase **descomprimir** [WMI](/windows/desktop/WmiSdk/retrieving-a-class) descomprime el archivo de método abreviado lógico (o directorio) especificado en la ruta de acceso del objeto.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Uncompress** descomprime el archivo de acceso directo lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el archivo se ha descomprimido correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si el archivo se descomprimió correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -141,17 +141,17 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

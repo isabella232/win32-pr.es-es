@@ -15,7 +15,7 @@ ms.locfileid: "118505680"
 
 Puede usar Visual Studio y el SDK Windows 8 para depurar aplicaciones directX de forma remota. El SDK Windows 8 proporciona un conjunto de componentes que admiten el desarrollo de DirectX y proporcionan comprobación de errores y validación de parámetros, además de la depuración que Visual Studio proporciona. Estos componentes son D3D11 \_1SDKLayers.dll, D2D1Debug1.dll y Dxgidebug.dll.
 
-Si desea depurar de forma remota en un equipo sin el SDK de Windows 8 instalado y desea esta funcionalidad de depuración adicional, debe instalar el paquete de depuración remota adecuado para la arquitectura en la que desea depurar. Los Windows instalador de instalación de `C:\Program Files (x86)\Windows Kits\8.0\Remote\<arch>` instalan el soporte técnico adecuado.
+Si desea depurar de forma remota en un equipo sin el SDK de Windows 8 instalado y desea esta funcionalidad de depuración adicional, debe instalar el paquete de depuración remota adecuado para la arquitectura en la que desea depurar. Los Windows instalador de instalación de `C:\Program Files (x86)\Windows Kits\8.0\Remote\<arch>` instalan la compatibilidad adecuada.
 
 Para habilitar las funcionalidades de depuración adicionales para las aplicaciones de Direct2D, use este código:
 
@@ -38,7 +38,7 @@ Para habilitar las funcionalidades de depuración adicionales para las aplicacio
         );         
 ```
 
-Para habilitar las funcionalidades de depuración adicionales para aplicaciones de Direct3D, use este código:
+Para habilitar las funcionalidades de depuración adicionales para las aplicaciones de Direct3D, use este código:
 
 ```cpp
     // This flag supports surfaces with a different color channel ordering than the API default.

@@ -51,10 +51,10 @@ ms.locfileid: "118319594"
 ---
 # <a name="commandlineeventconsumer-class"></a>CommandLineEventConsumer (clase)
 
-La **clase CommandLineEventConsumer** inicia un proceso arbitrario en el sistema local cuando se le entrega un evento. Esta clase es uno de los consumidores de eventos estándar que proporciona WMI. Para obtener más información, vea [Supervisión y respuesta a eventos con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
+La **clase CommandLineEventConsumer** inicia un proceso arbitrario en el sistema local cuando se le entrega un evento. Esta clase es uno de los consumidores de eventos estándar que proporciona WMI. Para obtener más información, [vea Supervisión y respuesta a eventos con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
 > [!Note]  
-> Al usar la **clase CommandLineEventConsumer,** proteja el archivo ejecutable que desea iniciar. Si el ejecutable no está en una ubicación segura o está protegido con una lista de control de acceso seguro (ACL), un usuario no autorizado puede reemplazar el ejecutable por un ejecutable malintencionado. Para obtener más información sobre las ACL, visite la sección Seguridad del Kit de desarrollo de software (SDK) de Microsoft Windows y vea Creación de un descriptor de seguridad [para un nuevo objeto](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
+> Al usar la **clase CommandLineEventConsumer,** proteja el archivo ejecutable que desea iniciar. Si el archivo ejecutable no está en una ubicación segura o está protegido con una lista de control de acceso seguro (ACL), un usuario no autorizado puede reemplazar el archivo ejecutable por un ejecutable malintencionado. Para obtener más información sobre las ACL, visite la sección Seguridad del Kit de desarrollo de software (SDK) de Microsoft Windows y vea Crear un descriptor de seguridad [para un nuevo objeto](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
 
  
 
@@ -129,7 +129,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-No se usa. Si se asigna un valor a esta propiedad, se genera un mensaje de seguimiento. Para obtener más información, vea [Seguimiento de la actividad WMI](tracing-wmi-activity.md).
+No se usa. Si se asigna un valor a esta propiedad, se genera un mensaje de seguimiento. Para obtener más información, vea [Seguimiento de la actividad WMI.](tracing-wmi-activity.md)
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es True,** el nuevo proceso es el proceso raíz de un nuevo grupo de procesos. El grupo de procesos incluye todos los procesos que son descendientes de este proceso raíz. El identificador de proceso del nuevo grupo de procesos es el mismo que este identificador de proceso. El método [**GenerateConsoleCtrlEvent**](/windows/console/generateconsolectrlevent) usa grupos de procesos para habilitar el envío de una señal CTRL+C o CTRL+BREAK a un grupo de procesos de consola.
+Si **es True**, el nuevo proceso es el proceso raíz de un nuevo grupo de procesos. El grupo de procesos incluye todos los procesos que son descendientes de este proceso raíz. El identificador de proceso del nuevo grupo de procesos es el mismo que este identificador de proceso. El método [**GenerateConsoleCtrlEvent**](/windows/console/generateconsolectrlevent) usa grupos de procesos para habilitar el envío de una señal CTRL+C o CTRL+BREAK a un grupo de procesos de consola.
 
 </dd> <dt>
 
@@ -155,7 +155,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es True,** el nuevo proceso se ejecuta en una máquina virtual privada de DOS (VDM). Esto solo es válido cuando se inicia una aplicación que se ejecuta en un sistema operativo de 16 Windows bits. Si se establece en **False,** todas las aplicaciones que se ejecutan en un sistema operativo de 16 Windows se ejecutan como subprocesos en un único VDM compartido. Para obtener más información, vea la sección Comentarios de este tema.
+Si **es True,** el nuevo proceso se ejecuta en una máquina Virtual DOS privada (VDM). Esto solo es válido cuando se inicia una aplicación que se ejecuta en un sistema operativo de Windows de 16 bits. Si se establece en **False**, todas las aplicaciones que se ejecutan en un sistema operativo de 16 Windows se ejecutan como subprocesos en un VDM compartido único. Para obtener más información, vea la sección Comentarios de este tema.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es True,** [**el método CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) ejecuta el nuevo proceso en la máquina virtual de DOS (VDM) compartida. Esta propiedad puede invalidar el modificador DefaultSeparateVDM en la Windows de Win.ini si se establece en **True.** Para obtener más información, vea la sección Comentarios de este tema.
+Si **es True,** [**el método CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) ejecuta el nuevo proceso en la máquina virtual de DOS compartida (VDM). Esta propiedad puede invalidar el modificador DefaultSeparateVDM en la Windows de Win.ini si se establece en **True.** Para obtener más información, vea la sección Comentarios de este tema.
 
 </dd> <dt>
 
@@ -181,7 +181,7 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de seguridad (SID) que identifica de forma única al usuario que crea un filtro. WMI almacena el SID del usuario que crea una instancia de [**\_ \_ EventConsumer**](--eventconsumer.md) o el SID de administrador, según el sistema operativo. Para obtener más información, vea [Enlazar un filtro de eventos con](binding-an-event-filter-with-a-logical-consumer.md) un consumidor lógico y Supervisar y Responder a eventos con [consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
+Identificador de seguridad (SID) que identifica de forma única al usuario que crea un filtro. WMI almacena el SID del usuario que crea una instancia de [**\_ \_ EventConsumer**](--eventconsumer.md) o el SID de administrador, en función del sistema operativo. Para obtener más información, vea [Enlazar un filtro de eventos con](binding-an-event-filter-with-a-logical-consumer.md) un consumidor lógico y Supervisar y Responder a eventos con [consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
 Esta propiedad se hereda de [**\_ \_ EventConsumer.**](--eventconsumer.md)
 
@@ -196,7 +196,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-No se usa. Si se asigna un valor a esta propiedad, se genera un mensaje de seguimiento. Para obtener más información, vea [Seguimiento de la actividad WMI](tracing-wmi-activity.md).
+No se usa. Si se asigna un valor a esta propiedad, se genera un mensaje de seguimiento. Para obtener más información, vea [Seguimiento de la actividad WMI.](tracing-wmi-activity.md)
 
 </dd> <dt>
 
@@ -214,7 +214,7 @@ Módulo que se ejecutará. La cadena puede especificar la ruta de acceso complet
 La **propiedad ExecutablePath** puede ser **NULL.** En ese caso, el nombre del módulo debe ser el primer token delimitado por espacios en blanco en el valor de la propiedad **CommandLineTemplate.** Si usa un nombre de archivo largo que contiene un espacio, use cadenas entre comillas para indicar dónde finaliza el nombre de archivo y los argumentos comienzan a aclarar el nombre de archivo.
 
 > [!Note]  
-> Dado que la propiedad **CommandLineTemplate** puede ser una plantilla en la que una variable proporciona el módulo que se va a ejecutar, una propiedad **ExecutablePath** **NULL** permite ejecutar el módulo especificado en el parámetro y, a continuación, está fuera de su control. Establezca siempre la **propiedad ExecutablePath** en el registro **CommandLineEventConsumer** para incluir el ejecutable necesario, lo que evita sobrescribir los parámetros de eventos. Si debe usar una plantilla y una variable para especificar el módulo que se va a ejecutar, tenga cuidado con quién se concede el privilegio de escritura completo en el espacio de nombres .
+> Dado que la propiedad **CommandLineTemplate** puede ser una plantilla en la que una variable proporciona el módulo que se va a ejecutar, una propiedad **ExecutablePath** **NULL** permite ejecutar el módulo especificado en el parámetro y, a continuación, está fuera de su control. Establezca siempre la **propiedad ExecutablePath** en el registro **CommandLineEventConsumer** para incluir el ejecutable necesario, lo que evita sobrescribir los parámetros de eventos. Si debe usar una plantilla y una variable para especificar el módulo que se va a ejecutar, tenga cuidado con quién se concede el privilegio de escritura completa en el espacio de nombres .
 
  
 
@@ -229,7 +229,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el texto inicial y los colores de fondo si se crea una nueva ventana de consola en una aplicación de consola.
+Especifica el texto inicial y los colores de fondo si se crea una nueva ventana de consola en una aplicación de consola
 
 </dd> <dt>
 
@@ -302,7 +302,7 @@ intensidad de fondo
 
 </dd> </dl>
 
-Por ejemplo, las siguientes combinaciones generan texto rojo en un fondo blanco:
+Por ejemplo, las siguientes combinaciones generan texto rojo sobre un fondo blanco:
 
 
 ```mof
@@ -357,7 +357,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número, en segundos, que el servicio WMI espera antes de acabar con un proceso 0 (cero) indica que no se va a acabar un proceso. La ejecución de un proceso impide que un proceso se ejecute indefinidamente.
+Número, en segundos, que el servicio WMI espera antes de acabar con un proceso 0 (cero) indica que no se va a acabar un proceso. Al acabar con un proceso, se impide que un proceso se ejecute indefinidamente.
 
 </dd> <dt>
 
@@ -400,7 +400,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](key-qualifier.md)
+Calificadores: [ **clave**](key-qualifier.md)
 </dt> </dl>
 
 Nombre único de un consumidor.
@@ -430,21 +430,21 @@ Indica un proceso normal sin necesidad de programación.
 64 (0x40)
 </dt> <dd>
 
-Indica un proceso cuyos subprocesos se ejecutan solo cuando el sistema está inactivo y son adelantados por los subprocesos de cualquier proceso que se ejecuta en una clase de prioridad más alta. Un ejemplo es un protector de pantalla. Los procesos secundarios heredan la clase de prioridad inactiva.
+Indica un proceso cuyos subprocesos se ejecutan solo cuando el sistema está inactivo y son adelantados por los subprocesos de cualquier proceso que se ejecuta en una clase de mayor prioridad. Un ejemplo es un protector de pantalla. Los procesos secundarios heredan la clase de prioridad inactiva.
 
 </dd> <dt>
 
 128 (0x80)
 </dt> <dd>
 
-Indica un proceso que realiza tareas críticas de tiempo y prioridad alta. Los subprocesos de un proceso de clase de prioridad alta adelantan los subprocesos de los procesos de clase de prioridad normal o de prioridad inactiva. Un ejemplo es el Lista de tareas, que debe responder rápidamente cuando lo llama el usuario independientemente de la carga en el sistema. Debe tener mucho cuidado al usar la clase de prioridad alta, ya que una aplicación enlazada a la CPU con una clase de prioridad alta puede usar casi todos los ciclos disponibles.
+Indica un proceso que realiza tareas críticas de tiempo de alta prioridad. Los subprocesos de un proceso de clase de prioridad alta adelantan los subprocesos de los procesos de clase de prioridad normal o de prioridad inactiva. Un ejemplo es el Lista de tareas, que debe responder rápidamente cuando lo llame el usuario, independientemente de la carga en el sistema. Al usar la clase de prioridad alta, debe tener mucho cuidado, ya que una aplicación enlazada a la CPU con una clase de prioridad alta puede usar casi todos los ciclos disponibles.
 
 </dd> <dt>
 
 256 (0x100)
 </dt> <dd>
 
-Indica un proceso que tiene la prioridad más alta posible. Los subprocesos de un proceso de clase de prioridad en tiempo real adelantan los subprocesos de todos los demás procesos, incluidos los procesos del sistema operativo que realizan tareas importantes. Por ejemplo, un proceso en tiempo real que se ejecuta durante más de un breve intervalo puede hacer que las memorias caché de disco no se vacían o que el mouse deje de responder.
+Indica un proceso que tiene la prioridad más alta posible. Los subprocesos de un proceso de clase de prioridad en tiempo real adelantan los subprocesos de todos los demás procesos, incluidos los procesos del sistema operativo que realizan tareas importantes. Por ejemplo, un proceso en tiempo real que se ejecuta durante más de un breve intervalo puede hacer que las memorias caché de disco no se vacíen o que el mouse deje de responder.
 
 </dd> </dl>
 
@@ -474,7 +474,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado de presentación de la ventana. Puede ser cualquiera de los valores que se pueden especificar en el parámetro *nCmdShow* para la [función ShowWindow.](/windows/desktop/api/winuser/nf-winuser-showwindow)
+Estado de presentación de ventana. Puede ser cualquiera de los valores que se pueden especificar en el parámetro *nCmdShow* para la [función ShowWindow.](/windows/desktop/api/winuser/nf-winuser-showwindow)
 
 </dd> <dt>
 
@@ -599,10 +599,10 @@ Alto, en píxeles, de la nueva ventana, si se crea una nueva ventana.
 
 La **clase CommandLineEventConsumer** se deriva de la [**\_ \_ clase abstracta EventConsumer.**](--eventconsumer.md)
 
-La **propiedad CreateSeparateWowVdm** indica si el nuevo proceso se ejecuta o no en una máquina virtual privada de DOS (VDM). La ventaja de ejecutarse por separado es que un bloqueo solo finaliza el VDM único. Los programas que se ejecutan en vdms distintos siguen funcionando con normalidad y las aplicaciones basadas en Windows de 16 bits que se ejecutan en vdms independientes tienen colas de entrada independientes. Esto significa que si una aplicación deja de responder momentáneamente, las aplicaciones de vdms independientes siguen recibiendo entradas. La desventaja de ejecutar por separado es que se necesita mucho más memoria para hacerlo. Debe establecer esta propiedad en **True** solo si el usuario solicita que las aplicaciones basadas en Windows de 16 bits se ejecuten en su propio VDM.
+La **propiedad CreateSeparateWowVdm** indica si el nuevo proceso se ejecuta o no en una máquina virtual privada de DOS (VDM). La ventaja de ejecutarse por separado es que un bloqueo solo finaliza el VDM único. Los programas que se ejecutan en vdms distintos siguen funcionando con normalidad y las aplicaciones basadas en Windows de 16 bits que se ejecutan en VDMs independientes tienen colas de entrada independientes. Esto significa que si una aplicación deja de responder momentáneamente, las aplicaciones de vdms independientes siguen recibiendo entradas. La desventaja de ejecutar por separado es que se necesita mucho más memoria para hacerlo. Debe establecer esta propiedad en **True** solo si el usuario solicita que las aplicaciones basadas en Windows de 16 bits se ejecuten en su propio VDM.
 
 > [!Note]  
-> **CommandLineEventConsumer** usa internamente el método [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) y pasa las propiedades **ExecutablePath** y **CommandLineTemplate** como los parámetros *lpApplicationName* y *lpCommandLine.* En el Managed Object Format de código de Managed Object Format (MOF) no se **usa CommandLineEventConsumer** correctamente.
+> **CommandLineEventConsumer** usa internamente el método [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) y pasa las propiedades **ExecutablePath** y **CommandLineTemplate** como los parámetros *lpApplicationName* y *lpCommandLine.* En el Managed Object Format de código de Managed Object Format (MOF) siguiente no se **usa CommandLineEventConsumer** correctamente.
 
  
 
@@ -617,7 +617,7 @@ instance of CommandLineEventConsumer
 
 
 
-El [**método CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) pasa *lpCommandLine* como `argv[0]` , , y así `argv[1]` sucesivamente. Dado que en el caso de las aplicaciones de 16 bits que se solían reservar para el nombre de archivo ejecutable, el código MOF anterior da como resultado que el proceso se crea como si el comando siguiente se especificara en el símbolo del `argv[0]` sistema: **c: \\ windows \\ system32 \\cscript.exe param1 param2**.
+El [**método CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) pasa *lpCommandLine* como `argv[0]` , , y así `argv[1]` sucesivamente. Dado que para las aplicaciones de 16 bits que se solían reservar para el nombre de archivo ejecutable, el código MOF anterior da como resultado que el proceso se crea como si el comando siguiente se especificara en el símbolo del `argv[0]` sistema: **c: \\ windows \\ system32 \\cscript.exe param1 param2**.
 
 El comando anterior no se realiza correctamente porque Cscript.exe no mira , por lo que no reconoce que no contiene su propio nombre, sino algo más `argv[0]` ("c: \\ \\ scripts \\ \\MyScript.js"). En el ejemplo siguiente se identifica el uso recomendado de **CommandLineEventConsumer**.
 

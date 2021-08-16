@@ -1,5 +1,5 @@
 ---
-title: Referencia de sombreador (gráficos de Direct3D 11)
+title: Referencia del sombreador (gráficos de Direct3D 11)
 description: La API de Direct3D define varios elementos de API para ayudarle a crear y administrar sombreadores programables. Los sombreadores son programas ejecutables que se programan exclusivamente mediante HLSL.
 ms.assetid: dd2e414b-02ed-4f55-90ad-8d17c322ec72
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118537737"
 ---
-# <a name="shader-reference-direct3d-11-graphics"></a>Referencia de sombreador (gráficos de Direct3D 11)
+# <a name="shader-reference-direct3d-11-graphics"></a>Referencia del sombreador (gráficos de Direct3D 11)
 
 La API de Direct3D define varios elementos de API para ayudarle a crear y administrar sombreadores programables. Los sombreadores son programas ejecutables que se programan exclusivamente mediante HLSL.
 

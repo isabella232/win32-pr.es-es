@@ -1,33 +1,33 @@
 ---
-description: Un usuario puede deshabilitar la experiencia predeterminada de la forma predeterminada que proporciona el sistema mediante las opciones que están disponibles en la pestaña comunicaciones del panel de control multimedia de Windows, Mmsys.cpl.
+description: Un usuario puede deshabilitar la experiencia de protección predeterminada proporcionada por el sistema mediante las opciones que están disponibles en la pestaña Comunicaciones del panel de control multimedia de Windows, Mmsys.cpl.
 ms.assetid: 5604b927-99f8-450f-a48c-b38d782584de
-title: Deshabilitación de la experiencia de patos predeterminada
+title: Deshabilitación de la experiencia de afición predeterminada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed33fa7d9473cb5c68a018b98bff8a826612387e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 473b0bab8c3575d416cc72b7e931b4c85160bdaacc6031611ad80394f44b9098
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828556"
 ---
-# <a name="disabling-the-default-ducking-experience"></a>Deshabilitación de la experiencia de patos predeterminada
+# <a name="disabling-the-default-ducking-experience"></a>Deshabilitación de la experiencia de afición predeterminada
 
-Un usuario puede deshabilitar la [experiencia predeterminada](stream-attenuation.md) de la forma predeterminada que proporciona el sistema mediante las opciones que están disponibles en la pestaña **comunicaciones** del panel de control multimedia de Windows, Mmsys.cpl.
+Un usuario puede deshabilitar la [experiencia](stream-attenuation.md) de protección predeterminada proporcionada por  el sistema mediante las opciones que están disponibles en la pestaña Comunicaciones del panel de control multimedia Windows, Mmsys.cpl.
 
-Cuando se aplica la pato, se usa un efecto de fundido y fundido para un período de 1 segundo. Es posible que una aplicación de juego no quiera que la secuencia de comunicación interfiera con el audio del juego. Es posible que algunas aplicaciones multimedia descubran que la experiencia de reproducción es discordante cuando la música se vuelve a atenuar. Estos tipos de aplicaciones pueden optar por no participar en la experiencia de los patos.
+Cuando se aplica el afijo, se usa un efecto de atenuación y atenuación durante un período de 1 segundo. Es posible que una aplicación de juego no quiera que el flujo de comunicación interfiera con el audio del juego. Es posible que algunas aplicaciones multimedia descubran que la experiencia de reproducción se está reproduciendo cuando la música vuelve a atenuarse. Estos tipos de aplicaciones pueden optar por no participar en la experiencia de afición.
 
-Mediante programación, un cliente de WASAPI directo puede optar por usar el administrador de sesión para la sesión de audio que proporciona control de volumen para las secuencias que no son de comunicación. Tenga en cuenta que, incluso si un cliente no se puede utilizar, sigue recibiendo notificaciones de patos del sistema.
+Mediante programación, un cliente WASAPI directo puede optar por no participar mediante el administrador de sesión para la sesión de audio que proporciona control de volumen para las secuencias que no son de comunicación. Tenga en cuenta que incluso si un cliente opta por no recibir notificaciones de afijo del sistema.
 
-Para no participar, el cliente debe obtener una referencia a la interfaz [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) del administrador de sesión. Para no participar en la experiencia de los patos, siga estos pasos:
+Para no participar en el ataque, el cliente debe obtener una referencia a la [**interfaz IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) del administrador de sesiones. Para rechazar la experiencia de afición, siga estos pasos:
 
-1.  Cree una instancia del enumerador de dispositivos y Úsela para obtener una referencia al punto de conexión del dispositivo que usa la aplicación multimedia para representar la secuencia que no es de comunicación.
-2.  Active el administrador de sesión desde el punto de conexión del dispositivo y obtenga una referencia a la interfaz [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) del administrador de sesión.
-3.  Mediante el puntero [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) , obtenga una referencia a la interfaz [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) del administrador de sesión.
-4.  Consulte el [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) de la interfaz [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) .
-5.  Llame a [**IAudioSessionControl2:: SetDuckingPreference**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-setduckingpreference) y pase **true** o **false** para especificar la preferencia de pato. La preferencia especificada se puede cambiar dinámicamente durante la sesión. Tenga en cuenta que el cambio de cancelación no surte efecto hasta que la secuencia se detiene y se inicia de nuevo.
+1.  Cree una instancia del enumerador de dispositivos y úselo para obtener una referencia al punto de conexión del dispositivo que usa la aplicación multimedia para representar el flujo que no es de comunicación.
+2.  Active el administrador de sesión desde el punto de conexión del dispositivo y obtenga una referencia a la [**interfaz IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) del administrador de sesiones.
+3.  Mediante el puntero [**IAudioSessionManager2,**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) obtenga una referencia a la [**interfaz IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) del administrador de sesiones.
+4.  Consulte [**IAudioSessionControl2 desde**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) la [**interfaz IAudioSessionControl.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol)
+5.  Llame [**a IAudioSessionControl2::SetDuckingPreference**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-setduckingpreference) y pase **TRUE** o **FALSE** para especificar la preferencia de afijo. La preferencia especificada se puede cambiar dinámicamente durante la sesión. Tenga en cuenta que el cambio de exclusión no tiene efecto hasta que la secuencia se detiene e inicia de nuevo.
 
-En el código siguiente se muestra cómo una aplicación puede especificar su preferencia de pato. El autor de la llamada de la función debe pasar **true** o **false** en el parámetro DuckingOptOutChecked. En función del valor que se pase, se habilitará o deshabilitará la función de pato a través de [**IAudioSessionControl2:: SetDuckingPreference**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-setduckingpreference).
+El código siguiente muestra cómo una aplicación puede especificar su preferencia de afijo. El autor de la llamada de la función debe pasar **TRUE** o **FALSE** en el parámetro DuckingOptOutChecked. Dependiendo del valor pasado, el afijo se habilita o deshabilita a través de [**IAudioSessionControl2::SetDuckingPreference**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-setduckingpreference).
 
 
 ```C++
@@ -120,16 +120,16 @@ HRESULT DuckingOptOut(bool DuckingOptOutChecked)
 [Uso de un dispositivo de comunicación](using-the-communication-device.md)
 </dt> <dt>
 
-[Experiencia predeterminada de los patos](stream-attenuation.md)
+[Experiencia de afición predeterminada](stream-attenuation.md)
 </dt> <dt>
 
-[Proporcionar un comportamiento personalizado de patos](providing-a-custom-ducking-experience.md)
+[Proporcionar un comportamiento de afijo personalizado](providing-a-custom-ducking-experience.md)
 </dt> <dt>
 
-[Consideraciones de implementación para las notificaciones de patos](handling-audio-ducking-events-from-communication-devices.md)
+[Consideraciones de implementación para notificaciones de afijo](handling-audio-ducking-events-from-communication-devices.md)
 </dt> <dt>
 
-[Obtención de eventos de pato](getting-ducking-events-from-a-communication-device.md)
+[Obtención de eventos de afición](getting-ducking-events-from-a-communication-device.md)
 </dt> </dl>
 
  

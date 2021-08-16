@@ -1,5 +1,5 @@
 ---
-title: Ejemplo baseWindow
+title: Ejemplo de BaseWindow
 description: Esta aplicación de ejemplo muestra cómo pasar datos de estado de aplicación en el mensaje \_ WM NCCREATE.
 ms.assetid: 5be8a5ef-8a63-43e7-b2a5-a4fff63c7ce3
 ms.topic: article
@@ -11,13 +11,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118388458"
 ---
-# <a name="basewindow-sample"></a>Ejemplo baseWindow
+# <a name="basewindow-sample"></a>Ejemplo de BaseWindow
 
 Esta aplicación de ejemplo muestra cómo pasar datos de estado de aplicación en el [**mensaje \_ WM NCCREATE.**](/windows/desktop/winmsg/wm-nccreate)
 
 ## <a name="description"></a>Descripción
 
-La aplicación de ejemplo BaseWindow es una variación en el [Windows Hello Ejemplo mundial.](windows-hello-world-sample.md) Usa el mensaje [**WM \_ NCCREATE**](/windows/desktop/winmsg/wm-nccreate) para pasar datos de aplicación al procedimiento de ventana. Este ejemplo se describe en el tema Administración [del estado de la aplicación](managing-application-state-.md).
+La aplicación de ejemplo BaseWindow es una variación en el [Windows Hello World Sample](windows-hello-world-sample.md). Usa el mensaje [**WM \_ NCCREATE para**](/windows/desktop/winmsg/wm-nccreate) pasar datos de aplicación al procedimiento de ventana. Este ejemplo se describe en el tema Administración [del estado de la aplicación](managing-application-state-.md).
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 

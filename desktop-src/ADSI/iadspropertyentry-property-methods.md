@@ -4,7 +4,7 @@ description: Proporcione acceso a las siguientes propiedades.
 ms.assetid: 73b0f6d4-55db-46cf-a781-e10bc4fcf2db
 ms.tgt_platform: multiple
 keywords:
-- AdsI de los métodos de propiedad IADsPropertyEntry
+- Métodos de propiedad IADsPropertyEntry ADSI
 topic_type:
 - apiref
 api_name:
@@ -45,7 +45,7 @@ Los métodos de propiedad [**de la interfaz IADsPropertyEntry**](/windows/deskto
 **ADsType**
 </dt> <dd> <dl>
 
-Tipo de datos de la **propiedad** Name. Los valores del tipo de datos se definen en la [**enumeración ADSTYPEENUM.**](/windows/win32/api/iads/ne-iads-adstypeenum)
+Tipo de datos de la **propiedad Name.** Los valores del tipo de datos se definen en la [**enumeración ADSTYPEENUM.**](/windows/win32/api/iads/ne-iads-adstypeenum)
 
 <dt>
 
@@ -101,7 +101,7 @@ HRESULT put_ControlCode(
 **Nombre**
 </dt> <dd> <dl>
 
-Nombre de la entrada de propiedad. Este nombre debe corresponder al nombre de un atributo tal y como se define en el esquema.
+Nombre de la entrada de propiedad. Este nombre debe corresponder al nombre de un atributo tal como se define en el esquema.
 
 <dt>
 
@@ -158,7 +158,7 @@ HRESULT put_Values(
 
 ## <a name="remarks"></a>Comentarios
 
-Cada método de propiedad admite los **valores devueltos HRESULT** estándar, incluido S \_ OK. Para obtener más información sobre otros valores devueltos, vea [AdsI Error Codes](adsi-error-codes.md).
+Cada método de propiedad admite los valores **devueltos de HRESULT** estándar, incluido S \_ OK. Para obtener más información sobre otros valores devueltos, vea [Códigos de error ADSI](adsi-error-codes.md).
 
 ## <a name="examples"></a>Ejemplos
 

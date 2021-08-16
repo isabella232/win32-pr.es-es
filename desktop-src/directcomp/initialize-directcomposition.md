@@ -1,24 +1,24 @@
 ---
-title: Cómo inicializar DirectComposition
+title: Inicialización de DirectComposition
 description: En este tema se muestra cómo crear e inicializar el conjunto mínimo de objetos DirectComposition de Microsoft necesarios para crear una composición simple.
 ms.assetid: F2BF9CE2-05EF-4345-A00E-F5C8A8660B24
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f8d248c3036bd0c901ee318ae0274809dafdf20
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 58c915bded416d7359c32558a00feaa1d058c02f28882b73caa5dc010d8bb5b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118505156"
 ---
-# <a name="how-to-initialize-directcomposition"></a>Cómo inicializar DirectComposition
+# <a name="how-to-initialize-directcomposition"></a>Inicialización de DirectComposition
 
 > [!NOTE]
-> En el caso de las aplicaciones de Windows 10, se recomienda usar las API de Windows. UI. Composition en lugar de DirectComposition. Para obtener más información, consulte [modernice su aplicación de escritorio con el nivel de objetos visuales](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones de Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 En este tema se muestra cómo crear e inicializar el conjunto mínimo de objetos DirectComposition de Microsoft necesarios para crear una composición simple.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
@@ -32,11 +32,11 @@ En este tema se muestra cómo crear e inicializar el conjunto mínimo de objetos
 -   Microsoft Win32
 -   Modelo de objetos componentes (COM)
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-create-the-direct3d-device-object"></a>Paso 1: creación del objeto de dispositivo Direct3D
+### <a name="step-1-create-the-direct3d-device-object"></a>Paso 1: Creación del objeto de dispositivo Direct3D
 
-Use la función [**D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d11createdevice) de la API de Microsoft Direct3D para crear una instancia de un objeto de dispositivo que represente el adaptador de pantalla.
+Use la [**función D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d11createdevice) de la API de Microsoft Direct3D para crear una instancia de un objeto de dispositivo que represente el adaptador de pantalla.
 
 
 ```C++
@@ -64,9 +64,9 @@ Use la función [**D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d1
 
 
 
-### <a name="step-2-retrieve-a-pointer-to-the-dxgi-object"></a>Paso 2: recuperar un puntero al objeto de DXGI
+### <a name="step-2-retrieve-a-pointer-to-the-dxgi-object"></a>Paso 2: Recuperar un puntero al objeto DXGI
 
-Use el método **QueryInterface** para recuperar el puntero [**IDXGIDevice**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice) del objeto de dispositivo Direct3D. DirectComposition usará el objeto de infraestructura de gráficos de Microsoft DirectX (DXGI) para crear todos los objetos de superficie para el dispositivo DirectComposition.
+Use el **método QueryInterface** para recuperar el [**puntero IDXGIDevice**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice) del objeto de dispositivo Direct3D. DirectComposition usará el objeto microsoft Infraestructura de gráficos de DirectX (DXGI) para crear todos los objetos de superficie para el dispositivo DirectComposition.
 
 
 ```C++
@@ -82,9 +82,9 @@ Use el método **QueryInterface** para recuperar el puntero [**IDXGIDevice**](/w
 
 
 
-### <a name="step-3-create-the-directcomposition-device-object"></a>Paso 3: creación del objeto de dispositivo DirectComposition
+### <a name="step-3-create-the-directcomposition-device-object"></a>Paso 3: Creación del objeto de dispositivo DirectComposition
 
-Use la función [**DCompositionCreateDevice**](/windows/desktop/api/Dcomp/nf-dcomp-dcompositioncreatedevice) para crear una instancia del objeto de dispositivo DirectComposition, especificando el puntero [**IDXGIDevice**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice) recuperado en el paso anterior. La función recupera un puntero [**IDCompositionDevice**](/windows/win32/api/dcomp/nn-dcomp-idcompositiondevice) que se usa para crear todos los demás objetos DirectComposition utilizados en una composición.
+Use la [**función DCompositionCreateDevice**](/windows/desktop/api/Dcomp/nf-dcomp-dcompositioncreatedevice) para crear una instancia del objeto de dispositivo DirectComposition y especifique el puntero [**IDXGIDevice**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice) recuperado en el paso anterior. La función recupera un puntero [**IDCompositionDevice**](/windows/win32/api/dcomp/nn-dcomp-idcompositiondevice) usado para crear todos los demás objetos DirectComposition usados en una composición.
 
 
 ```C++
@@ -104,9 +104,9 @@ Use la función [**DCompositionCreateDevice**](/windows/desktop/api/Dcomp/nf-dco
 
 
 
-### <a name="step-4-create-the-composition-target-object"></a>Paso 4: crear el objeto de destino de composición
+### <a name="step-4-create-the-composition-target-object"></a>Paso 4: Crear el objeto de destino de composición
 
-Use el método [**IDCompositionDevice:: CreateTargetForHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtargetforhwnd) para crear una instancia del objeto de destino de la composición. La llamada a **CreateTargetForHwnd** enlaza el objeto de dispositivo a la ventana de la aplicación que mostrará la composición.
+Use el [**método IDCompositionDevice::CreateTargetForHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtargetforhwnd) para crear una instancia del objeto de destino de composición. Al **llamar a CreateTargetForHwnd,** se enlaza el objeto de dispositivo a la ventana de la aplicación que mostrará la composición.
 
 
 ```C++
@@ -125,9 +125,9 @@ Use el método [**IDCompositionDevice:: CreateTargetForHwnd**](/windows/win32/ap
 
 
 
-### <a name="step-5-create-a-visual-object"></a>Paso 5: crear un objeto visual
+### <a name="step-5-create-a-visual-object"></a>Paso 5: Crear un objeto visual
 
-Use el método [**IDCompositionDevice:: CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) para crear un objeto visual. El método recupera un puntero [**IDCompositionVisual**](/windows/win32/api/dcomp/nn-dcomp-idcompositionvisual) que se usa para establecer las propiedades del visual. Para obtener más información, vea [propiedades de un objeto visual](basic-concepts.md).
+Use el [**método IDCompositionDevice::CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) para crear un objeto visual. El método recupera un puntero [**IDCompositionVisual**](/windows/win32/api/dcomp/nn-dcomp-idcompositionvisual) utilizado para establecer las propiedades del objeto visual. Para obtener más información, [vea Propiedades de un objeto visual.](basic-concepts.md)
 
 
 ```C++
@@ -139,9 +139,9 @@ Use el método [**IDCompositionDevice:: CreateVisual**](/windows/win32/api/dcomp
 
 
 
-### <a name="step-6-create-a-composition-surface-and-render-a-bitmap-to-the-surface"></a>Paso 6: crear una superficie de composición y representar un mapa de bits en la superficie
+### <a name="step-6-create-a-composition-surface-and-render-a-bitmap-to-the-surface"></a>Paso 6: Crear una superficie de composición y representar un mapa de bits en la superficie
 
-Cree un puntero [**IDCompositionSurface**](/windows/win32/api/dcomp/nn-dcomp-idcompositionsurface) .
+Cree un [**puntero IDCompositionSurface.**](/windows/win32/api/dcomp/nn-dcomp-idcompositionsurface)
 
 
 ```C++
@@ -157,7 +157,7 @@ Cree un puntero [**IDCompositionSurface**](/windows/win32/api/dcomp/nn-dcomp-idc
 
 
 
-La función siguiente crea una superficie DirectComposition de Microsoft y dibuja el mapa de bits en la superficie.
+La siguiente función crea una superficie de Microsoft DirectComposition y dibuja el mapa de bits en la superficie.
 
 
 ```C++
@@ -253,11 +253,11 @@ HRESULT DemoApp::MyCreateGDIRenderedDCompSurface(HBITMAP hBitmap,
 
 
 
-### <a name="step-7-bind-surface-to-visual-and-set-the-properties-of-the-visual-object"></a>Paso 7: enlace de la superficie a visual y establecimiento de las propiedades del objeto visual
+### <a name="step-7-bind-surface-to-visual-and-set-the-properties-of-the-visual-object"></a>Paso 7: Enlazar la superficie al objeto visual y establecer las propiedades del objeto visual
 
 Llame a los métodos de la interfaz [**IDCompositionVisual**](/windows/win32/api/dcomp/nn-dcomp-idcompositionvisual) del objeto visual para establecer las propiedades del objeto visual.
 
-En el siguiente ejemplo se establece el contenido del mapa de bits para el visual y la posición horizontal y vertical del visual en relación con la esquina superior izquierda de su contenedor. Dado que es el visual raíz, el contenedor de este visual es la ventana de destino de la composición.
+En el ejemplo siguiente se establece el contenido del mapa de bits del objeto visual y la posición horizontal y vertical del objeto visual con respecto a la esquina superior izquierda de su contenedor. Dado que es el objeto visual raíz, el contenedor de este objeto visual es la ventana de destino de composición.
 
 
 ```C++
@@ -281,9 +281,9 @@ En el siguiente ejemplo se establece el contenido del mapa de bits para el visua
 
 
 
-### <a name="step-8-set-the-root-visual-of-the-visual-tree"></a>Paso 8: establecimiento del valor visual raíz del árbol visual
+### <a name="step-8-set-the-root-visual-of-the-visual-tree"></a>Paso 8: Establecer el objeto visual raíz del árbol visual
 
-Establezca el valor visual raíz del árbol visual llamando al método [**IDCompositionTarget:: SetRoot**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot) .
+Establezca el objeto visual raíz del árbol visual llamando al [**método IDCompositionTarget::SetRoot.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot)
 
 
 ```C++
@@ -296,9 +296,9 @@ Establezca el valor visual raíz del árbol visual llamando al método [**IDComp
 
 
 
-### <a name="step-9-commit-the-composition"></a>Paso 9: confirmar la composición
+### <a name="step-9-commit-the-composition"></a>Paso 9: Confirmación de la composición
 
-Llame al método [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar el lote de comandos en DirectComposition para su procesamiento. La composición resultante aparece en la ventana de destino.
+Llame al [**método IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar el lote de comandos en DirectComposition para su procesamiento. La composición resultante aparece en la ventana de destino.
 
 
 ```C++
@@ -311,9 +311,9 @@ Llame al método [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-
 
 
 
-### <a name="step-10-free-the-directcomposition-objects"></a>Paso 10: liberación de los objetos DirectComposition
+### <a name="step-10-free-the-directcomposition-objects"></a>Paso 10: Liberar los objetos DirectComposition
 
-Es una buena práctica de programación liberar los objetos visuales en cuanto ya no los necesite. En el ejemplo siguiente se llama a la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definida por la aplicación para liberar el objeto visual.
+Es una buena práctica de programación liberar objetos visuales en cuanto ya no los necesite. En el ejemplo siguiente se llama a la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definida por la aplicación para liberar el objeto visual.
 
 
 ```C++
@@ -323,7 +323,7 @@ Es una buena práctica de programación liberar los objetos visuales en cuanto y
 
 
 
-Además, no olvide liberar el objeto DXGI, el objeto de dispositivo y el objeto de destino de composición antes de que se cierre la aplicación.
+Además, recuerde liberar el objeto DXGI, el objeto de dispositivo y el objeto de destino de composición antes de que se cierre la aplicación.
 
 
 ```C++
@@ -964,7 +964,7 @@ HRESULT DemoApp::MyCreateGDIRenderedDCompSurface(HBITMAP hBitmap,
 [**D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d11createdevice)
 </dt> <dt>
 
-[**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit)
+[**IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit)
 </dt> <dt>
 
 [**IDCompositionDevice::CreateTargetForHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtargetforhwnd)
@@ -979,7 +979,7 @@ HRESULT DemoApp::MyCreateGDIRenderedDCompSurface(HBITMAP hBitmap,
 [**IDCompositionTarget::SetRoot**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot)
 </dt> <dt>
 
-[**IDCompositionVisual:: SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent)
+[**IDCompositionVisual::SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent)
 </dt> <dt>
 
 [**IDXGIDevice**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice)
@@ -988,6 +988,6 @@ HRESULT DemoApp::MyCreateGDIRenderedDCompSurface(HBITMAP hBitmap,
 [**SafeRelease**](/windows/desktop/medfound/saferelease)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

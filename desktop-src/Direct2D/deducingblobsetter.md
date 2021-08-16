@@ -1,6 +1,6 @@
 ---
-title: DeducingBlobSetter (D2d1effecthelpers. h)
-description: Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del establecedor de la propiedad de función miembro para una propiedad de tipo BLOB.
+title: DeducingBlobSetter (D2d1effecthelpers.h)
+description: Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del setter de la propiedad member-function para una propiedad de tipo blob.
 ms.assetid: 4B8B871D-FE5E-4EF3-AEED-A3D92C10E8C6
 keywords:
 - DeducingBlobSetter Direct2D
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2d3bbfcc0a48d722bd98456821d7f7df5e8780a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 165f88f9ba9a7f0706726a13a1dfa3445d3b752719e71dc231a23cdd1583a4c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825987"
 ---
 # <a name="deducingblobsetter"></a>DeducingBlobSetter
 
-Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del establecedor de la propiedad de función miembro para una propiedad de tipo BLOB.
+Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del setter de la propiedad member-function para una propiedad de tipo blob.
 
 > [!Note]  
-> No se debe llamar a DeducingBlobSetter directamente.
+> No se debe llamar directamente a DeducingBlobSetter.
 
  
 
@@ -46,11 +46,11 @@ HRESULT DeducingBlobSetter(
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

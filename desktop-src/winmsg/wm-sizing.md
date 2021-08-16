@@ -1,5 +1,5 @@
 ---
-description: Se envía a una ventana en la que el usuario está redimensionando el tamaño. Al procesar este mensaje, una aplicación puede supervisar el tamaño y la posición del rectángulo de arrastre y, si es necesario, cambiar su tamaño o posición.
+description: Se envía a una ventana en la que el usuario va a cambiar el tamaño. Al procesar este mensaje, una aplicación puede supervisar el tamaño y la posición del rectángulo de arrastre y, si es necesario, cambiar su tamaño o posición.
 ms.assetid: 8cf56194-8a10-48e1-b0eb-aa3d66896599
 title: WM_SIZING mensaje (Winuser.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118436160"
 ---
-# <a name="wm_sizing-message"></a>Mensaje \_ wm SIZING
+# <a name="wm_sizing-message"></a>Mensaje \_ de SIZING de WM
 
-Se envía a una ventana en la que el usuario está redimensionando el tamaño. Al procesar este mensaje, una aplicación puede supervisar el tamaño y la posición del rectángulo de arrastre y, si es necesario, cambiar su tamaño o posición.
+Se envía a una ventana en la que el usuario va a cambiar el tamaño. Al procesar este mensaje, una aplicación puede supervisar el tamaño y la posición del rectángulo de arrastre y, si es necesario, cambiar su tamaño o posición.
 
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
@@ -41,7 +41,7 @@ Borde de la ventana a la que se va a dimensionado. Este parámetro puede ser uno
 | <span id="WMSZ_BOTTOMLEFT"></span><span id="wmsz_bottomleft"></span><dl> <dt>**WMSZ \_ BOTTOMLEFT**</dt> <dt>7</dt> </dl>    | Esquina inferior izquierda<br/>  |
 | <span id="WMSZ_BOTTOMRIGHT"></span><span id="wmsz_bottomright"></span><dl> <dt>**WMSZ \_ BOTTOMRIGHT**</dt> <dt>8</dt> </dl> | Esquina inferior derecha<br/> |
 | <span id="WMSZ_LEFT"></span><span id="wmsz_left"></span><dl> <dt>**WMSZ \_ LEFT**</dt> <dt>1</dt> </dl>                      | Borde izquierdo<br/>           |
-| <span id="WMSZ_RIGHT"></span><span id="wmsz_right"></span><dl> <dt>**WMSZ \_ DERECHA**</dt> <dt>2</dt> </dl>                   | Borde derecho<br/>          |
+| <span id="WMSZ_RIGHT"></span><span id="wmsz_right"></span><dl> <dt>**WMSZ \_ RIGHT**</dt> <dt>2</dt> </dl>                   | Borde derecho<br/>          |
 | <span id="WMSZ_TOP"></span><span id="wmsz_top"></span><dl> <dt>**WMSZ \_ TOP**</dt> <dt>3</dt> </dl>                         | Borde superior<br/>            |
 | <span id="WMSZ_TOPLEFT"></span><span id="wmsz_topleft"></span><dl> <dt>**WMSZ \_ TOPLEFT**</dt> <dt>4</dt> </dl>             | Esquina superior izquierda<br/>     |
 | <span id="WMSZ_TOPRIGHT"></span><span id="wmsz_topright"></span><dl> <dt>**WMSZ \_ TOPRIGHT**</dt> <dt>5</dt> </dl>          | Esquina superior derecha<br/>    |
@@ -69,7 +69,7 @@ Una aplicación debe devolver **TRUE** si procesa este mensaje.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -77,17 +77,17 @@ Una aplicación debe devolver **TRUE** si procesa este mensaje.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**MOVIMIENTO DE \_ WM**](wm-moving.md)
+[**WM \_ MOVING**](wm-moving.md)
 </dt> <dt>
 
-[**TAMAÑO \_ DE WM**](wm-size.md)
+[**TAMAÑO \_ WM**](wm-size.md)
 </dt> <dt>
 
 **Conceptual**

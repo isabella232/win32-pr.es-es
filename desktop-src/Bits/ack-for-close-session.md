@@ -1,9 +1,9 @@
 ---
-title: Confirmación para Close-Session
-description: Use la confirmación de Close-Session paquete para confirmar la solicitud de Close-Session del cliente. El servidor envía la confirmación después de liberar todos los recursos asociados a la sesión de carga.
+title: Ack for Close-Session
+description: Use la confirmación para Close-Session paquete para confirmar la solicitud de Close-Session cliente. El servidor envía la confirmación después de liberar todos los recursos asociados a la sesión de carga.
 ms.assetid: 9d4b658a-8b41-4678-b996-f2174784cdd6
 keywords:
-- Confirmación de Close-Session BITS
+- Ack for Close-Session BITS
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7142bfd8d1d5d65d1f669a328c75a2c8cdfb036
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 289f2cfc2ca9f1e879e0aa592af28d86ae433f6e06d007aa71e00581baba2af5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104149720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835418"
 ---
-# <a name="ack-for-close-session"></a>Confirmación para Close-Session
+# <a name="ack-for-close-session"></a>Ack for Close-Session
 
-Use el paquete **ACK for Close-Session** para confirmar la solicitud de [**cierre de sesión**](close-session.md) del cliente. El servidor envía la confirmación después de liberar todos los recursos asociados a la sesión de carga.
+Use el **paquete Ack for Close-Session** para confirmar la solicitud [**cerrar sesión del**](close-session.md) cliente. El servidor envía la confirmación después de liberar todos los recursos asociados a la sesión de carga.
 
 ``` syntax
 reason-code reason-description
@@ -36,72 +36,72 @@ BITS-Error-Context: error-context
 
 <dl> <dt>
 
-<span id="reason-code"></span><span id="REASON-CODE"></span>código de motivo
+<span id="reason-code"></span><span id="REASON-CODE"></span>reason-code
 </dt> <dd>
 
-Reemplace Reason-Code por el código de motivo HTTP. Por ejemplo, establezca Reason-Code en 200 si se realiza correctamente. Para obtener una lista de códigos de motivo HTTP, consulte [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
+Reemplace reason-code por el código de motivo HTTP. Por ejemplo, establezca reason-code en 200 si se ha hecho correctamente. Para obtener una lista de códigos de motivo HTTP, [vea RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
 
 </dd> <dt>
 
-<span id="reason-description"></span><span id="REASON-DESCRIPTION"></span>razón: Descripción
+<span id="reason-description"></span><span id="REASON-DESCRIPTION"></span>reason-description
 </dt> <dd>
 
-Reemplace Reason-Description por la descripción de HTTP asociada al código de motivo. Por ejemplo, establezca Reason-Description en OK si Reason-Code es 200.
+Reemplace reason-description por la descripción HTTP asociada al código de motivo. Por ejemplo, establezca reason-description en Ok si reason-code es 200.
 
 </dd> <dt>
 
-<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>BITS-paquete-tipo
+<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>BITS-Packet-Type
 </dt> <dd>
 
-Identifica este paquete de respuesta como un paquete de confirmación.
+Identifica este paquete de respuesta como un paquete Ack.
 
 </dd> <dt>
 
-<span id="BITS-Session-Id"></span><span id="bits-session-id"></span><span id="BITS-SESSION-ID"></span>Identificador de sesión BITS
+<span id="BITS-Session-Id"></span><span id="bits-session-id"></span><span id="BITS-SESSION-ID"></span>BITS-Session-Id
 </dt> <dd>
 
-GUID de cadena que identifica la sesión en el cliente. Reemplace {GUID} por el identificador de sesión que el cliente envió en el paquete de solicitud de [**sesión cerrada**](close-session.md) . Si no reconoce el identificador de sesión, establezca el encabezado BITS-error-código en la sesión de \_ BG \_ E \_ no \_ encontrada.
+GUID de cadena que identifica la sesión al cliente. Reemplace {guid} por el identificador de sesión que el cliente envió en el [**paquete de solicitud Cerrar**](close-session.md) sesión. Si no reconoce el identificador de sesión, establezca el encabezado BITS-Error-Code en BG \_ E \_ SESSION NOT \_ \_ FOUND.
 
 </dd> <dt>
 
-<span id="Content-Length"></span><span id="content-length"></span><span id="CONTENT-LENGTH"></span>Longitud de contenido
+<span id="Content-Length"></span><span id="content-length"></span><span id="CONTENT-LENGTH"></span>Longitud del contenido
 </dt> <dd>
 
-Reemplace length por el número de bytes incluidos en el cuerpo de la respuesta. La longitud del contenido es obligatoria, incluso si el cuerpo de la respuesta no incluye contenido.
+Reemplace length por el número de bytes incluidos en el cuerpo de la respuesta. Se requiere content-length, incluso si el cuerpo de la respuesta no incluye contenido.
 
 </dd> <dt>
 
-<span id="BITS-Error-Code"></span><span id="bits-error-code"></span><span id="BITS-ERROR-CODE"></span>BIT-error-código
+<span id="BITS-Error-Code"></span><span id="bits-error-code"></span><span id="BITS-ERROR-CODE"></span>BITS-Error-Code
 </dt> <dd>
 
-Reemplace el código de error por un número hexadecimal que represente un valor HRESULT asociado a un error del servidor. Incluya solo este encabezado si Reason-Code no es 200 o 201.
+Reemplace el código de error por un número hexadecimal que represente un valor HRESULT asociado a un error del lado servidor. Incluya solo este encabezado si el código de motivo no es 200 o 201.
 
 </dd> <dt>
 
-<span id="BITS-Error-Context"></span><span id="bits-error-context"></span><span id="BITS-ERROR-CONTEXT"></span>BITS-error-contexto
+<span id="BITS-Error-Context"></span><span id="bits-error-context"></span><span id="BITS-ERROR-CONTEXT"></span>BITS-Error-Context
 </dt> <dd>
 
-Reemplace error-context por un número hexadecimal que representa el contexto en el que se produjo el error. Especifique el número hexadecimal del [**\_ \_ \_ \_ archivo remoto de contexto de error de BG**](/windows/win32/api/bits/ne-bits-bg_error_context) (0X5) si el servidor ha generado el error. En caso contrario, especifique el número hexadecimal de la **\_ \_ \_ \_ aplicación remota de contexto de error de BG** (0X7) si el error fue generado por la aplicación a la que se pasa el archivo de carga. Incluya este encabezado solo si el código de motivo no es 200 o 201.
+Reemplace error-context por un número hexadecimal que represente el contexto en el que se produjo el error. Especifique el número hexadecimal para [**BG ERROR CONTEXT REMOTE \_ \_ \_ \_ FILE**](/windows/win32/api/bits/ne-bits-bg_error_context) (0x5) si el servidor generó el error. De lo contrario, especifique el número hexadecimal para **BG ERROR CONTEXT REMOTE \_ \_ \_ \_ APPLICATION** (0x7) si la aplicación a la que se pasa el archivo de carga generó el error. Incluya este encabezado solo si el código de motivo no es 200 o 201.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cliente de BITS reenvía el paquete de [**sesión de cierre**](close-session.md) si el código de motivo está en el intervalo de 500 a 599, a menos que el encabezado bits-error-Code esté presente con un valor de la \_ sesión BG E \_ \_ no \_ se encuentre. El cliente no volverá a intentarlo por los códigos de motivo 100 a 499.
+El cliente bits vuelve a enviar el paquete [**Close-Session**](close-session.md) si el código de motivo está en el intervalo de 500 a 599, a menos que el encabezado BITS-Error-Code esté presente con un valor de BG \_ E SESSION NOT \_ \_ \_ FOUND. El cliente no volverá a intentarlo por los códigos de motivo del 100 al 499.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Confirmación para cancelar sesión**](ack-for-cancel-session.md)
+[**Ack for Cancel-Session**](ack-for-cancel-session.md)
 </dt> <dt>
 
-[**Sesión de cierre**](close-session.md)
+[**Cerrar sesión**](close-session.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118440807"
 ---
-# <a name="iwiadevmgr2selectdevicedlgid-method"></a>Método IWiaDevMgr2::SelectDeviceDlgID
+# <a name="iwiadevmgr2selectdevicedlgid-method"></a>IWiaDevMgr2::SelectDeviceDlgID (método)
 
 Muestra un cuadro de diálogo que permite al usuario seleccionar un dispositivo de hardware para la adquisición de imágenes.
 
@@ -118,7 +118,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método crea y muestra el cuadro de diálogo **Seleccionar** dispositivo para que el usuario pueda seleccionar un dispositivo WIA 2.0 para la adquisición de imágenes. Si un dispositivo se selecciona correctamente, el método **IWiaDevMgr2::SelectDeviceDlgID** pasa su cadena de identificador a la aplicación a través de su *parámetro pbstrDeviceID.*
 
@@ -133,7 +133,7 @@ La aplicación puede restringir los dispositivos que se muestran al usuario a ti
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |

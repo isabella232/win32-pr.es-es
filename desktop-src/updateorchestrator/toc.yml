@@ -1,15 +1,15 @@
-- name: Actualizar Orchestrator
+- name: Actualización de Orchestrator
   href: index.md
-- name: Actualizar referencia de Orchestrator
+- name: Actualización de la referencia de Orchestrator
   items:
     - name: Interfaces
       items:
         - name: IUniversalOrchestrator
           href: universalorchestrator-iuniversalorchestrator.md
           items:
-            - name: ':: Programar el programa'
+            - name: '::ScheduleWork'
               href: universalorchestrator-schedulework.md
             - name: '::WorkCompleted'
               href: universalorchestrator-workcompleted.md
-            - name: '::HasMoratoriumPassed'
+            - name: '::HasMofiliaPassed'
               href: universalorchestrator-hasmoratoriumpassed.md

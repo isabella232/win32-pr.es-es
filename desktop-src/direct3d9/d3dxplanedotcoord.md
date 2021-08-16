@@ -1,5 +1,5 @@
 ---
-description: Calcula el producto de punto de un plano y un vector 3D. Se supone que el parámetro w del vector es 1.
+description: Calcula el producto de puntos de un plano y un vector 3D. Se supone que el parámetro w del vector es 1.
 ms.assetid: 634de6bc-b631-493d-a7a6-292a3c3253d6
 title: Función D3DXPlaneDotCoord (D3dx9math.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118524932"
 ---
 # <a name="d3dxplanedotcoord-function"></a>Función D3DXPlaneDotCoord
 
-Calcula el producto de punto de un plano y un vector 3D. Se supone que el parámetro w del vector es 1.
+Calcula el producto de puntos de un plano y un vector 3D. Se supone que el parámetro w del vector es 1.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,7 +65,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Producto de punto del plano y vector 3D.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Dado un plano (a, b, c, d) y un vector 3D (x, y, z), el valor devuelto de esta función es \* x + b y + c z + d \* \* \* 1. La **función D3DXPlaneDotCoord** es útil para determinar la relación del plano con una coordenada en el espacio 3D.
 
@@ -80,7 +80,7 @@ Dado un plano (a, b, c, d) y un vector 3D (x, y, z), el valor devuelto de esta f
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

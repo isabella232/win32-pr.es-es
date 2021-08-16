@@ -1,7 +1,7 @@
 ---
 description: Especifica el identificador de hardware PnP-X del servicio.
 ms.assetid: aa4c935f-0d60-4603-ae96-d5cabdf9af00
-title: PnPXHardwareId, elemento
+title: Elemento PnPXHardwareId
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0d032974486d4bd43f0a699eba6b8f6b75598c49858eeedb09bae5d3e79b11e0
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118311520"
 ---
-# <a name="pnpxhardwareid-element"></a>PnPXHardwareId, elemento
+# <a name="pnpxhardwareid-element"></a>Elemento PnPXHardwareId
 
-Especifica el identificador de hardware PnP-X del servicio. PnP coincide con este elemento con las descripciones de hardware proporcionadas en la \[ sección PnpxDevice del archivo INF del \] dispositivo. En función de esta información, el servicio PnP selecciona y carga el controlador de dispositivo más adecuado.
+Especifica el identificador de hardware PnP-X del servicio. PnP coincide con este elemento con las descripciones de hardware proporcionadas en la \[ sección PnpxDevice \] del archivo INF del dispositivo. En función de esta información, el servicio PnP selecciona y carga el controlador de dispositivo más adecuado.
 
 ## <a name="usage"></a>Uso
 

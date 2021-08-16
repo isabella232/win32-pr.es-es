@@ -1,17 +1,17 @@
 ---
 description: Nombre del fabricante de la cámara que tomó la foto, en formato de cadena.
 ms.assetid: cf68067a-742b-4acd-b8b1-c6758c35845f
-title: System. Photo. CameraManufacturer
+title: System.Photo.CameraManufacturer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a69bdbf5d2a4b747ca733a0562973b8f709133f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef35e30b7078342955da475fc446789504d3ce7ec358245ea6a43d49c0f687a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970154"
 ---
-# <a name="systemphotocameramanufacturer"></a>System. Photo. CameraManufacturer
+# <a name="systemphotocameramanufacturer"></a>System.Photo.CameraManufacturer
 
 Nombre del fabricante de la cámara que tomó la foto, en formato de cadena.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

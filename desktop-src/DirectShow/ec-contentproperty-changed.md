@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117820522"
 ---
-# <a name="ec_contentproperty_changed"></a>EC \_ CONTENTPROPERTY \_ CHANGED
+# <a name="ec_contentproperty_changed"></a>EC \_ CONTENTPROPERTY \_ HA CAMBIADO
 
 Este evento no se admite.
 

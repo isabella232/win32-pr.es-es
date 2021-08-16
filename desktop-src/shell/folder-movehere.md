@@ -49,12 +49,12 @@ Elemento o elementos que se moverá. Puede ser una cadena que representa un nomb
 
 </dd> <dt>
 
-*vOptions* \[ in, opcional\]
+*vOptions* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
 
-Opciones para la operación de movimiento. Este valor puede ser cero o una combinación de los valores siguientes. Estos valores se basan en marcas definidas para su uso con el **miembro fFlags** de la estructura [**SHFILEOPSTRUCT de**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) C++. Estas marcas no se definen como tales para Visual Basic, VBScript o JScript, por lo que debe definirlas usted mismo o usar sus equivalentes numéricos.
+Opciones para la operación de movimiento. Este valor puede ser cero o una combinación de los valores siguientes. Estos valores se basan en marcas definidas para su uso con el **miembro fFlags** de la estructura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) de C++. Estas marcas no se definen como tales para Visual Basic, VBScript o JScript, por lo que debe definirlas usted mismo o usar sus equivalentes numéricos.
 
 <dt>
 
@@ -76,7 +76,7 @@ No mostrar un cuadro de diálogo de progreso.
 
 </dt> <dd>
 
-Asigne al archivo que se está operando con un nuevo nombre en una operación de movimiento, copia o cambio de nombre si ya existe un archivo con el nombre de destino.
+Asigne al archivo que se está operando con un nombre nuevo en una operación de movimiento, copia o cambio de nombre si ya existe un archivo con el nombre de destino.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Conserve la información de deshacer, si es posible.
 
 </dt> <dd>
 
-Realice la operación en archivos solo si se especifica un nombre de archivo comodín ( \* . \* ).
+Realice la operación en los archivos solo si se especifica un nombre de archivo comodín ( \* . \* ).
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Realice la operación en archivos solo si se especifica un nombre de archivo com
 
 </dt> <dd>
 
-Mostrar un cuadro de diálogo de progreso, pero no mostrar los nombres de archivo.
+Muestra un cuadro de diálogo de progreso, pero no muestra los nombres de archivo.
 
 </dd> <dt>
 
@@ -183,16 +183,16 @@ Solo funciona en el directorio local. No funcione de forma recursiva en subdirec
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se genera un error 0x800A01BD (decimal 445).
+> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se 0x800A01BD error (decimal 445).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa MoveHere** para mover el archivo Temp.txt desde el directorio raíz de la unidad C a la carpeta Windows \\ C: . Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa MoveHere** para mover el archivo Temp.txt desde el directorio raíz de la unidad C a la Windows \\ C: . Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -271,7 +271,7 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

@@ -53,7 +53,7 @@ La **clase \_ PnPDevicePropertyReal64Array de Win32** tiene estos tipos de miemb
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ PnPDevicePropertyReal64Array de Win32** tiene estas propiedades.
+La **clase Win32 \_ PnPDevicePropertyReal64Array** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -81,7 +81,7 @@ Tipo de acceso: solo lectura
 
 Identifica el dispositivo PnP.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
@@ -94,9 +94,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor del par clave Name-Value que identifica la **propiedad** Data.
+Valor del par de Name-Value clave que identifica la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
@@ -109,9 +109,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par clave Name-Value que identifica la **propiedad** Data.
+Nombre del par de Name-Value clave que identifica la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Tipo de acceso: solo lectura
 
 Tipo de la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 Los valores posibles son.
 
@@ -477,7 +477,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Desconocido: comprobación de devpropdef.h** (4120)
+**Desconocido: check in devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>

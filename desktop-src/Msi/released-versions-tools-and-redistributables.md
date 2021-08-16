@@ -1,7 +1,7 @@
 ---
 description: En los temas siguientes se proporciona más información sobre las versiones publicadas, las herramientas y las redistribuibles de Windows Installer.
 ms.assetid: 6e644502-4e0f-4bf2-9ef7-7883211c4f4a
-title: Versiones, herramientas y redistribuibles publicados
+title: Versiones publicadas, herramientas y redistribuibles
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 74eb46c502e88c17ac3da46a2a8868a594da3f0f3217b42131d0adfe807c02e7
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118626659"
 ---
-# <a name="released-versions-tools-and-redistributables"></a>Versiones, herramientas y redistribuibles publicados
+# <a name="released-versions-tools-and-redistributables"></a>Versiones publicadas, herramientas y redistribuibles
 
 En los temas siguientes se proporciona más información sobre las versiones publicadas, las herramientas y las redistribuibles de Windows Installer.
 
@@ -19,7 +19,7 @@ En los temas siguientes se proporciona más información sobre las versiones pub
 -   [Windows Installer Redistributables proporciona](windows-installer-redistributables.md) información sobre dónde obtener los componentes redistribuibles del instalador.
 -   [Versiones publicadas de Windows Installer](released-versions-of-windows-installer.md) enumera las versiones publicadas del instalador que se han incluido con distintos sistemas operativos.
 -   [Windows herramientas de desarrollo del instalador contiene](windows-installer-development-tools.md) páginas de referencia para usar las herramientas de desarrollo del instalador.
--   [Instmsi.exe](instmsi-exe.md) describe qué instmsi es compatible con cada sistema operativo. InstMsi es el paquete redistribuible para instalar el instalador.
+-   [Instmsi.exe](instmsi-exe.md) describe qué instmsi es compatible con qué sistema operativo. InstMsi es el paquete redistribuible para instalar el instalador.
 
  
 

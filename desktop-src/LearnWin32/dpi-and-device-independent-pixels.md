@@ -34,7 +34,7 @@ En la ilustración siguiente se muestra una fuente de 72 puntos. Las líneas só
 
 ![ilustración que muestra una fuente de 72 puntos.](images/graphics11.png)
 
-Sin embargo, cuando se trata de una pantalla de equipo, medir el tamaño del texto es problemático, ya que los píxeles no tienen el mismo tamaño. El tamaño de un píxel depende de dos factores: la resolución de pantalla y el tamaño físico del monitor. Por lo tanto, las pulgadas físicas no son una medida útil, ya que no hay ninguna relación fija entre pulgadas físicas y píxeles. En su lugar, las fuentes se miden en *unidades lógicas.* Una fuente de 72 puntos se define para tener una pulgada lógica de alto. A continuación, las pulgadas lógicas se convierten en píxeles. Durante muchos años, Windows la conversión siguiente: una pulgada lógica es igual a 96 píxeles. Con este factor de escalado, una fuente de 72 puntos se representa como 96 píxeles de alto. Una fuente de 12 puntos tiene 16 píxeles de alto.
+Sin embargo, cuando se trata de una pantalla de equipo, medir el tamaño del texto es problemático, ya que los píxeles no tienen el mismo tamaño. El tamaño de un píxel depende de dos factores: la resolución de pantalla y el tamaño físico del monitor. Por lo tanto, las pulgadas físicas no son una medida útil, ya que no hay ninguna relación fija entre pulgadas físicas y píxeles. En su lugar, las fuentes se miden en *unidades lógicas.* Una fuente de 72 puntos se define para tener una pulgada lógica de alto. A continuación, las pulgadas lógicas se convierten en píxeles. Durante muchos años, Windows la siguiente conversión: una pulgada lógica es igual a 96 píxeles. Con este factor de escalado, una fuente de 72 puntos se representa como 96 píxeles de alto. Una fuente de 12 puntos tiene 16 píxeles de alto.
 
 <dl> 12 puntos = 12/72 pulgadas lógicas = 1/6 pulgada lógica = 96/6 píxeles = 16 píxeles  
 </dl>
@@ -74,7 +74,7 @@ Para declarar que el programa es compatible con PPP, incluya la siguiente inform
 </assembly>
 ```
 
-La lista que se muestra aquí es solo un manifiesto parcial, pero Visual Studio vinculador genera automáticamente el resto del manifiesto. Para incluir un manifiesto parcial en el proyecto, realice los pasos siguientes en Visual Studio.
+La lista que se muestra aquí es solo un manifiesto parcial, pero el vinculador Visual Studio genera automáticamente el resto del manifiesto. Para incluir un manifiesto parcial en el proyecto, realice los pasos siguientes en Visual Studio.
 
 1.  En el menú **Project,** haga clic en **Propiedad**.
 2.  En el panel izquierdo, expanda **Propiedades de configuración,** expanda **Herramienta manifiesto** y, a continuación, haga clic en Entrada **y salida.**
@@ -108,13 +108,13 @@ Direct2D realiza automáticamente el escalado para que coincida con la configura
 
 Por ejemplo, si el valor de PPP del usuario es 144 PPP y pide a Direct2D que dibuje un rectángulo de 200 × 100, el rectángulo será de 300 × 150 píxeles físicos. Además, DirectWrite tamaños de fuente en DIP, en lugar de puntos. Para crear una fuente de 12 puntos, especifique 16 DIP (12 puntos = 1/6 pulgadas lógicas = 96/6 DIP). Cuando el texto se dibuja en la pantalla, Direct2D convierte los DIP en píxeles físicos. La ventaja de este sistema es que las unidades de medida son coherentes para el texto y el dibujo, independientemente de la configuración de PPP actual.
 
-Una palabra de precaución: las coordenadas del mouse y la ventana se siguen dando en píxeles físicos, no en DIP. Por ejemplo, si procesa el mensaje [**\_ WM LBUTTONDOWN,**](/windows/desktop/inputdev/wm-lbuttondown) la posición del mouse hacia abajo se indica en píxeles físicos. Para dibujar un punto en esa posición, debe convertir las coordenadas de píxel en DIP.
+Una palabra de precaución: las coordenadas del mouse y la ventana se siguen dando en píxeles físicos, no en DIP. Por ejemplo, si procesa el mensaje [**WM \_ LBUTTONDOWN,**](/windows/desktop/inputdev/wm-lbuttondown) la posición del mouse hacia abajo se indica en píxeles físicos. Para dibujar un punto en esa posición, debe convertir las coordenadas de píxel en DIP.
 
 ## <a name="converting-physical-pixels-to-dips"></a>Convertir píxeles físicos en DIP
 
 La conversión de píxeles físicos a DIP usa la fórmula siguiente.
 
-<dl> DIP = píxeles / (PPP/96,0)  
+<dl> DIP = píxeles / (PPP/96.0)  
 </dl>
 
 Para obtener la configuración de PPP, llame al [**método ID2D1Factory::GetDesktopDpi.**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) El valor de PPP se devuelve como dos valores de punto flotante, uno para el eje X y otro para el eje Y. En teoría, estos valores pueden diferir. Calcule un factor de escalado independiente para cada eje.
@@ -162,11 +162,11 @@ void InitializeDPIScale(HWND hwnd)
 }
 ```
 > [!Note]  
-> En Windows 10, versión 1903, [**ID2D1Factory::GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) está en desuso y la recomendación es [**DisplayInformation::LogicalDpi**](/uwp/api/windows.graphics.display.displayinformation.logicaldpi?view=winrt-19041) para aplicaciones de Windows Store o [**GetDpiForWindow**](/windows/win32/api/winuser/nf-winuser-getdpiforwindow) para aplicaciones de escritorio. Si todavía quiere usarlo, suprima el mensaje de error del compilador escribiendo la línea [**#pragma warning(suppress: 4996)**](/cpp/error-messages/compiler-warnings/compiler-warning-level-3-c4996?view=vs-2019) justo antes de la llamada [**a ID2D1Factory::GetDesktopDpi.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) Aunque no se recomienda, es posible establecer el reconocimiento de PPP predeterminado mediante programación mediante [**SetProcessDpiAwarenessContext**](/windows/win32/api/winuser/nf-winuser-setprocessdpiawarenesscontext). Una vez que se ha creado una ventana (un HWND) en el proceso, ya no se admite el cambio del modo de reconocimiento de PPP. Si está estableciendo el modo de reconocimiento de PPP predeterminado del proceso mediante programación, debe llamar a la API correspondiente antes de que se hayan creado los HWND. Para obtener información, [vea Establecer el reconocimiento de PPP predeterminado para un proceso](../hidpi/setting-the-default-dpi-awareness-for-a-process.md).
+> En Windows 10, versión 1903, [**ID2D1Factory::GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) está en desuso y la recomendación es [**DisplayInformation::LogicalDpi**](/uwp/api/windows.graphics.display.displayinformation.logicaldpi?view=winrt-19041) para aplicaciones de Windows Store o [**GetDpiForWindow**](/windows/win32/api/winuser/nf-winuser-getdpiforwindow) para aplicaciones de escritorio. Si todavía quiere usarlo, suprima el mensaje de error del compilador escribiendo la línea [**#pragma warning(suppress: 4996)**](/cpp/error-messages/compiler-warnings/compiler-warning-level-3-c4996?view=vs-2019) justo antes de la llamada [**a ID2D1Factory::GetDesktopDpi.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) Aunque no se recomienda, es posible establecer el reconocimiento de PPP predeterminado mediante programación mediante [**SetProcessDpiAwarenessContext**](/windows/win32/api/winuser/nf-winuser-setprocessdpiawarenesscontext). Una vez que se ha creado una ventana (un HWND) en el proceso, ya no se admite el cambio del modo de reconocimiento de PPP. Si va a establecer el modo de reconocimiento de PPP predeterminado del proceso mediante programación, debe llamar a la API correspondiente antes de que se hayan creado los HWND. Para obtener información, [vea Establecer el reconocimiento de PPP predeterminado para un proceso](../hidpi/setting-the-default-dpi-awareness-for-a-process.md).
 
 ## <a name="resizing-the-render-target"></a>Redimensionar el destino de representación
 
-Si cambia el tamaño de la ventana, debe cambiar el tamaño del destino de representación para que coincida. En la mayoría de los casos, también deberá actualizar el diseño y volver a dibujar la ventana. En el código siguiente se muestran estos pasos.
+Si cambia el tamaño de la ventana, debe cambiar el tamaño del destino de representación para que coincida. En la mayoría de los casos, también tendrá que actualizar el diseño y volver a dibujar la ventana. En el código siguiente se muestran estos pasos.
 
 
 ```C++
@@ -209,7 +209,7 @@ void MainWindow::CalculateLayout()
 
 
 
-El [**método ID2D1RenderTarget::GetSize**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-getsize) devuelve el tamaño del destino de representación en DIP (no píxeles), que es la unidad adecuada para calcular el diseño. Hay un método estrechamente relacionado, [**ID2D1RenderTarget::GetPixelSize**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-getpixelsize), que devuelve el tamaño en píxeles físicos. Para un **destino de representación HWND,** este valor coincide con el tamaño devuelto por [**GetClientRect**](/windows/desktop/api/winuser/nf-winuser-getclientrect). Pero recuerde que el dibujo se realiza en DIP, no en píxeles.
+El [**método ID2D1RenderTarget::GetSize**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-getsize) devuelve el tamaño del destino de representación en DIP (no píxeles), que es la unidad adecuada para calcular el diseño. Hay un método estrechamente relacionado, [**ID2D1RenderTarget::GetPixelSize**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-getpixelsize), que devuelve el tamaño en píxeles físicos. Para un **destino de representación HWND,** este valor coincide con el tamaño devuelto por [**GetClientRect.**](/windows/desktop/api/winuser/nf-winuser-getclientrect) Pero recuerde que el dibujo se realiza en DIP, no en píxeles.
 
 ## <a name="next"></a>Siguientes
 

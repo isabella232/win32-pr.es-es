@@ -15,7 +15,7 @@ ms.locfileid: "118311386"
 
 En esta sección se describen las tecnologías de gráficos de Microsoft DirectX que se admiten mínimamente. Esta información se proporciona para admitir aplicaciones existentes. No se recomienda usar estas tecnologías en nuevas aplicaciones.
 
-Para obtener información sobre cómo empezar a trabajar con gráficos DirectX, [consulte Tareas iniciales con gráficos directX.](./getting-started-with-directx-graphics.md)
+Para obtener información sobre cómo empezar a trabajar con gráficos DirectX, [vea Tareas iniciales con gráficos directX.](./getting-started-with-directx-graphics.md)
 
 ## <a name="in-this-section"></a>En esta sección
 

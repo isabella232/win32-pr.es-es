@@ -17,7 +17,7 @@ Un administrador puede forzar a una aplicación cliente COM a usar siempre la mi
 
 -   Coloque el archivo DLL del servidor COM y .exe cliente en componentes independientes.
 -   Escriba un registro en la [tabla IsolatedComponent](isolatedcomponent-table.md) con el componente COM-client en la columna Component Shared (Componente compartido) y la aplicación cliente \_ en la columna Component Application \_ (Aplicación de componentes). Incluya la [acción IsolateComponents en](isolatecomponents-action.md) las tablas de secuencia.
--   Establezca el **bit msidbComponentAttributesSharedDllRefCount** en el registro [de tabla Component](component-table.md) para Component \_ Shared. El instalador requiere este recuento de referencias global en la ubicación compartida para proteger los archivos compartidos y el registro en los casos en los que se comparte con otras tecnologías de instalación.
+-   Establezca el **bit msidbComponentAttributesSharedDllRefCount** en el registro [de la tabla Component](component-table.md) para Component \_ Shared. El instalador requiere este recuento de referencias global en la ubicación compartida para proteger los archivos compartidos y el registro en los casos en los que se comparte con otras tecnologías de instalación.
 
  
 

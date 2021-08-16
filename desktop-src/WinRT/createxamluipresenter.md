@@ -1,5 +1,5 @@
 ---
-description: Una función de creador estático que puede crear un elemento XamlUIPresenter para una superficie de representación en una aplicación de escritorio.
+description: Una función de creador estática que puede crear un elemento XamlUIPresenter para una superficie de representación en una aplicación de escritorio.
 ms.assetid: 3160E4C2-39D3-8FF5-ED37-78E645D1AC2E
 title: Función CreateXamlUIPresenter
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118323446"
 ---
 # <a name="createxamluipresenter-function"></a>Función CreateXamlUIPresenter
 
-Una función de creador estático que puede crear un [**elemento XamlUIPresenter para**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041) una superficie de representación en una aplicación de escritorio.
+Una función de creador estática que puede crear un [**elemento XamlUIPresenter para**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041) una superficie de representación en una aplicación de escritorio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ Una función de creador estático que puede crear un [**elemento XamlUIPresenter
 *pPresentSite* \[ En\]
 </dt> <dd>
 
-Interfaz de hospedaje existente. Consulte **IViewObjectPresentNotifySite en** Internet Explorer documentación.
+Interfaz de hospedaje existente. Vea **IViewObjectPresentNotifySite en** Internet Explorer documentación.
 
 </dd> <dt>
 
@@ -56,11 +56,11 @@ Interfaz **\[ exclusiveto \]** para un [**elemento XamlUIPresenter.**](/uwp/api/
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un **valor HResult** estándar, **S \_ OK** para que se haga correctamente.
+HResult **estándar,** **S \_ OK** para que se haga correctamente.
 
 ## <a name="remarks"></a>Comentarios
 
-Llamar a este método requiere **un archivo DllImport** de Windows.UI.Xaml.dll.
+Llamar a este método requiere **dllimport de** Windows.UI.Xaml.dll.
 
 No se puede llamar a este método desde una Windows Store.
 

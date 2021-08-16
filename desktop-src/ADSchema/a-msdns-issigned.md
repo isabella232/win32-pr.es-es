@@ -32,7 +32,7 @@ Atributo que se usa para definir si la zona DNS está firmada o no.
 | CN                | ms-DNS-Is-Signed                     |
 | Ldap-Display-Name | msDNS-IsSigned                       |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2130              |
 | System-Id-Guid    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |

@@ -3,7 +3,7 @@ title: Elemento UserId (logonTriggerType)
 description: Identificador del usuario. La tarea se inicia cuando este usuario inicia sesión en el equipo.
 ms.assetid: 52568899-e351-4ee1-b613-d7c42d7b983d
 keywords:
-- UserId, elemento Programador de tareas
+- Elemento UserId Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -32,7 +32,7 @@ Identificador del usuario. La tarea se inicia cuando este usuario inicia sesión
  />
 ```
 
-El **elemento UserId** se define mediante el tipo [**complejo logonTriggerType.**](taskschedulerschema-logontriggertype-complextype.md)
+El tipo complejo [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md) define el elemento **UserId.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -52,7 +52,7 @@ Para el desarrollo de C++, el identificador de usuario para el desencadenador de
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML de una tarea que especifica un desencadenador de inicio de sesión, vea Ejemplo de desencadenador de inicio de [sesión (XML).](logon-trigger-example--xml-.md)
+Para obtener un ejemplo completo del XML para una tarea que especifica un desencadenador de inicio de sesión, vea Ejemplo de desencadenador de inicio de [sesión (XML).](logon-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 

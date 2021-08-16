@@ -19,13 +19,13 @@ ms.locfileid: "118433891"
 ---
 # <a name="device-registration-object"></a>Objeto de registro de dispositivos
 
-El objeto de registro de dispositivos administra la base de datos de registro de dispositivos. Esta base de datos almacena información sobre los dispositivos de red, como los reproductores de vídeo establecidos, que están conectados al equipo cliente. El propósito principal de la base de datos de registro de dispositivos es administrar los dispositivos que usan el protocolo DRM 10 de Windows Media para dispositivos de red para recibir flujos de datos protegidos.
+El objeto de registro de dispositivos administra la base de datos de registro de dispositivos. Esta base de datos almacena información sobre los dispositivos de red, como los reproductores de vídeo de nivel superior establecidos, que están conectados al equipo cliente. El propósito principal de la base de datos de registro de dispositivos es administrar los dispositivos que usan Windows Media DRM 10 para el protocolo de dispositivos de red para recibir flujos de datos protegidos.
 
-Si la aplicación admite Windows Media DRM 10 para dispositivos de red, debe usar las interfaces de este objeto para registrar dispositivos de red y validar esos dispositivos. También puede usar la base de datos de registro de dispositivos para almacenar información sobre los dispositivos de red que no usan drm de medios de Windows 10 para dispositivos de red, aunque no toda la información de la base de datos se aplicará a dichos dispositivos.
+Si la aplicación admite Windows Media DRM 10 para dispositivos de red, debe usar las interfaces de este objeto para registrar dispositivos de red y validar esos dispositivos. También puede usar la base de datos de registro de dispositivos para almacenar información sobre los dispositivos de red que no usan Windows Media DRM 10 para dispositivos de red, aunque no toda la información de la base de datos se aplicará a dichos dispositivos.
 
-La función [**WMCreateDeviceRegistration**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatedeviceregistration) crea el objeto de registro del dispositivo, que establece un puntero a una **interfaz IWMDeviceRegistration.** Los demás métodos del objeto de registro de dispositivo se pueden obtener llamando al **método QueryInterface.**
+La función [**WMCreateDeviceRegistration**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatedeviceregistration) crea el objeto de registro del dispositivo, que establece un puntero a una **interfaz IWMDeviceRegistration.** Los demás métodos del objeto de registro de dispositivos se pueden obtener llamando al **método QueryInterface.**
 
-El objeto de registro de dispositivos admite las interfaces siguientes.
+El objeto de registro de dispositivos admite las siguientes interfaces.
 
 
 
@@ -39,7 +39,7 @@ El objeto de registro de dispositivos admite las interfaces siguientes.
 
  
 
-La aplicación debe implementar la siguiente interfaz de devolución de llamada para poder usar los métodos de la **interfaz IWMProximityDetection.**
+La aplicación debe implementar la siguiente interfaz de devolución de llamada para usar los métodos de la **interfaz IWMProximityDetection.**
 
 
 

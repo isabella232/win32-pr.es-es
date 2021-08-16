@@ -38,7 +38,7 @@ Señala una condición de error de DVD.
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-El significado depende del valor *de lParam1*. Consulte [**ERROR \_ DE DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) para obtener más información.
+El significado depende del valor *de lParam1.* Consulte [**ERROR \_ DE DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) para obtener más información.
 
 </dd> </dl>
 

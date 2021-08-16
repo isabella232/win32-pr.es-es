@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_BKLOGTIME estructura'
+description: 'Más información sobre: JET_BKLOGTIME structure'
 title: JET_BKLOGTIME estructura
 TOCTitle: JET_BKLOGTIME Structure
 ms:assetid: 31460079-7c5b-4145-837d-b112ba0117d6

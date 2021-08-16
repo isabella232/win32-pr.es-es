@@ -13,7 +13,7 @@ ms.locfileid: "118477218"
 ---
 # <a name="iagentcommandexsetvoicecaption"></a>IAgentCommandEx::SetVoiceCaption
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT SetVoiceCaption(

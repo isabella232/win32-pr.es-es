@@ -1,7 +1,7 @@
 ---
 description: Recupera un objeto que representa el elemento primario del objeto actual.
 ms.assetid: 2FDEF8D3-3F5B-43ae-9812-83B4249D9CBB
-title: Propiedad IShellDispatch. Parent (Shldisp. h)
+title: Propiedad IShellDispatch.Parent (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 051e6f323b9663b692410d81d85e55a404e99d56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e166afe66aa20a98e316d55b4c9b94016dd8be3c73b4f23aca11c47c462a5a64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969074"
 ---
-# <a name="ishelldispatchparent-property"></a>IShellDispatch. Parent (propiedad)
+# <a name="ishelldispatchparent-property"></a>IShellDispatch.Parent, propiedad
 
 Recupera un objeto que representa el elemento primario del objeto actual.
 
@@ -47,15 +47,15 @@ Property Parent As Object
 
 Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recibe el objeto primario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad se implementa y se obtiene acceso a ella a través de la propiedad [**Shell. Parent**](shell-parent.md) .
+Esta propiedad se implementa y se accede a través de la [**propiedad Shell.Parent.**](shell-parent.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de los **elementos primarios** en JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso de **Parent** en JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -76,7 +76,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -128,13 +128,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

@@ -55,7 +55,7 @@ Un control de edición asigna automáticamente el búfer especificado siempre qu
 
 Al enviar **un mensaje EM \_ SETHANDLE** se borra el búfer de deshacer [**(EM \_ CANUNDO**](em-canundo.md) devuelve cero) y la marca de modificación interna [**(EM \_ GETMODIFY**](em-getmodify.md) devuelve cero). Se vuelve a dibujar la ventana de control de edición.
 
-**Edición enriquecte:** No se admite el mensaje **\_ EM SETHANDLE.** Los controles de edición enriquecciones no almacenan texto como una matriz simple de caracteres.
+**Edición enriqueceda:** No se admite el mensaje **\_ EM SETHANDLE.** Los controles de edición enriquecciones no almacenan texto como una matriz simple de caracteres.
 
 ## <a name="requirements"></a>Requisitos
 

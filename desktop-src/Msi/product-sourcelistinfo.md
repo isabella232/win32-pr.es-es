@@ -1,7 +1,7 @@
 ---
 description: La propiedad SourceListInfo del objeto Product obtiene y establece las propiedades de información de origen de un producto. Esta propiedad llama a MsiSourceListGetInfo o MsiSourceListSetInfo. Se trata de una propiedad de lectura o escritura.
 ms.assetid: 3a2c4af5-592f-4acd-b7d8-df163e00b1e2
-title: Propiedad Product.SourceListInfo
+title: Product.SourceListInfo, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118376708"
 ---
-# <a name="productsourcelistinfo-property"></a>Propiedad Product.SourceListInfo
+# <a name="productsourcelistinfo-property"></a>Product.SourceListInfo, propiedad
 
 La **propiedad SourceListInfo** del objeto [**Product**](product-object.md) obtiene y establece las propiedades de información de origen de un producto. Esta propiedad llama [**a MsiSourceListGetInfo**](/windows/desktop/api/Msi/nf-msi-msisourcelistgetinfoa) [**o MsiSourceListSetInfo.**](/windows/desktop/api/Msi/nf-msi-msisourcelistsetinfoa) Se trata de una propiedad de lectura o escritura.
 
@@ -37,7 +37,7 @@ propVal = Product.SourceListInfo
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Nombre de las propiedades de información de origen de un producto que se consulta o establece. Para ver los valores posibles, consulte la sección Comentarios de este tema.
+Nombre de las propiedades de información de origen de un producto que se debe consultar o establecer. Para ver los valores posibles, consulte la sección Comentarios de este tema.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -48,10 +48,10 @@ No se pueden establecer todas las propiedades que se pueden recuperar. El *pará
 | Propiedad         | ¿Se puede establecer? | Significado                                                                                                                                                                                                                                                        |
 |------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MediaPackagePath | Y        | Ruta de acceso relativa a la raíz del medio de instalación.                                                                                                                                                                                                       |
-| DiskPrompt       | Y        | Plantilla de símbolo del sistema que se usa al solicitar al usuario medios de instalación.                                                                                                                                                                                       |
-| LastUsedSource   | Y        | La ubicación de origen usada más recientemente para el producto. Al establecer esta propiedad, antefi a la ubicación de origen con "n;" para un origen de red o "u;" para el tipo de dirección URL. Por ejemplo, "n; \\ \\ scratch \\ scratch \\ MySource" y "u; https://MyServer/MyFolder/MySource ". |
-| LastUsedType     | N        | "n" si el último origen usado es una ubicación de red. "u" si el último origen usado era una ubicación de dirección URL. "m" si el último origen usado era multimedia. Cadena vacía ("") si no hay ningún origen usado por última vez.                                                                   |
-| PackageName      | Y        | El nombre del paquete Windows instalador o paquete de revisión en el origen.                                                                                                                                                                                      |
+| DiskPrompt       | Y        | Plantilla de aviso que se usa al solicitar al usuario medios de instalación.                                                                                                                                                                                       |
+| LastUsedSource   | Y        | La ubicación de origen usada más recientemente para el producto. Al establecer esta propiedad, antefiese la ubicación de origen con "n;" para un origen de red o "u;" para el tipo de dirección URL. Por ejemplo, "n; \\ \\ scratch \\ scratch \\ MySource" y "u; https://MyServer/MyFolder/MySource ". |
+| LastUsedType     | N        | "n" si el último origen usado es una ubicación de red. "u" si el último origen usado era una ubicación de dirección URL. "m" si el último origen usado era un medio. Cadena vacía ("") si no hay ningún origen usado por última vez.                                                                   |
+| PackageName      | Y        | Nombre del paquete Windows instalador o paquete de revisión en el origen.                                                                                                                                                                                      |
 
 
 
@@ -63,9 +63,9 @@ No se pueden establecer todas las propiedades que se pueden recuperar. El *pará
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-00000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 
 
 

@@ -50,7 +50,7 @@ Especifica el código [**de producto**](productcode.md) del producto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación debe llamar al **método CollectUserInfo** la primera vez que se ejecuta. El **método CollectUserInfo** abre el paquete de instalación del producto e invoca una secuencia del asistente de interfaz de usuario que recopila información del usuario. Tras la finalización de la secuencia del asistente, se registra la información de usuario recopilada. La [**propiedad UILevel**](installer-uilevel.md) debe establecerse en msiUILevelFull porque esta API requiere una interfaz de usuario de creación.
 
@@ -60,15 +60,15 @@ El **método CollectUserInfo** invoca el [cuadro de diálogo FirstRun](firstrun-
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

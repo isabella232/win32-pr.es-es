@@ -55,7 +55,7 @@ Lenguaje utilizado para procesar datos en una base de datos relacional. Puede us
 <span id="_msi_summary_information_stream_gly"></span><span id="_MSI_SUMMARY_INFORMATION_STREAM_GLY"></span>**secuencia de información de resumen**
 </dt> <dd>
 
-Storage ubicación en [*el.msi para*](m-gly.md) obtener información que se puede ver con Microsoft Windows Explorer. Para obtener más información, [vea Acerca del flujo de información de resumen](about-the-summary-information-stream.md).
+Storage ubicación en el [*.msi para*](m-gly.md) obtener información que se puede ver con Microsoft Windows Explorer. Para obtener más información, [vea Acerca del flujo de información de resumen](about-the-summary-information-stream.md).
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Cuando el instalador espera a que se complete el subproceso independiente de una
 <span id="_msi_system_policy_using_windows_installer__gly"></span><span id="_MSI_SYSTEM_POLICY_USING_WINDOWS_INSTALLER__GLY"></span>**directiva del sistema**
 </dt> <dd>
 
-Lo usan los administradores del sistema para controlar las configuraciones de usuario y equipo desde una única ubicación en una red. Las directivas del sistema propagan la configuración del Registro a un gran número de equipos sin necesidad de que el administrador tenga conocimientos detallados del registro. La directiva del sistema del instalador se puede configurar mediante el Editor de directiva de grupo (GPE), incluido en Windows 2000. Para obtener más información, vea [Directiva del sistema](system-policy.md).
+Lo usan los administradores del sistema para controlar las configuraciones de usuario y equipo desde una única ubicación en una red. Las directivas del sistema propagan la configuración del Registro a un gran número de equipos sin necesidad de que el administrador tenga conocimientos detallados del registro. La directiva del sistema del instalador se puede configurar mediante el editor de directiva de grupo (GPE), incluido en Windows 2000. Para obtener más información, vea [Directiva del sistema](system-policy.md).
 
 </dd> </dl>
 

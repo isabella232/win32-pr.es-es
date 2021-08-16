@@ -13,17 +13,17 @@ ms.locfileid: "118311604"
 ---
 # <a name="inspecting-network-traces-for-http-metadata-exchange"></a>Inspección de seguimientos de red para los metadatos HTTP Exchange
 
-Cualquier analizador de paquetes de red que pueda mostrar paquetes sin procesar se puede usar para inspeccionar las solicitudes de intercambio de metadatos HTTP. Monitor de red de Microsoft 3 (Netmon) se recomienda. Para obtener más información sobre Netmon, vea [Descarga de netmon y filtros de DPWS de ejemplo.](downloading-netmon-and-sample-dpws-filters.md)
+Cualquier analizador de paquetes de red que pueda mostrar paquetes sin procesar se puede usar para inspeccionar las solicitudes de intercambio de metadatos HTTP. Monitor de red de Microsoft 3 (Netmon) se recomienda. Para obtener más información sobre Netmon, consulte Descarga de netmon y filtros [DPWS de ejemplo.](downloading-netmon-and-sample-dpws-filters.md)
 
 Este procedimiento de diagnóstico puede no ser tan útil para los clientes y hosts que usan un canal seguro para las comunicaciones porque el contenido del mensaje está cifrado.
 
 **Para inspeccionar los seguimientos de red para el intercambio de metadatos HTTP**
 
 1.  Configure el host y el cliente para que se ejecuten a través de la red (es decir, asegúrese de que el host y el cliente funcionarán en equipos diferentes).
-2.  Instale el analizador de paquetes (Netmon) en el cliente o en el host.
+2.  Instale el analizador de paquetes (Netmon) en el cliente o el host.
 3.  Configure el analizador de paquetes para capturar el tráfico en el adaptador de red que conecta el host y el cliente.
 4.  Reproduzca el error iniciando el host y el cliente o presionando F5 en el Explorador de red.
-5.  Filtre los resultados para aislar el tráfico WS-Discovery y el intercambio de metadatos. Para ver los filtros de Netmon de ejemplo, consulte [Descarga de netmon y filtros DE DPWS de ejemplo.](downloading-netmon-and-sample-dpws-filters.md)
+5.  Filtre los resultados para aislar el WS-Discovery y el tráfico de intercambio de metadatos. Para ver los filtros de Netmon de ejemplo, consulte [Descarga de netmon y filtros DPWS de ejemplo.](downloading-netmon-and-sample-dpws-filters.md)
     > [!Note]  
     > Este paso es opcional.
 
@@ -37,14 +37,14 @@ Los clientes y hosts de WSDAPI deben enviar mensajes que cumplan los criterios s
 
 -   Los mensajes deben cumplir los requisitos de tráfico proporcionados en el tema [Inspecting Network Traces for UDP WS-Discovery](inspecting-network-traces-for-udp-ws-discovery.md), a menos que esté absolutamente seguro de que WS-Discovery no se usa para el intercambio de metadatos.
 -   Se debe establecer una conexión TCP entre el cliente y la primera dirección de transporte proporcionada en el **elemento XAddrs** de un [mensaje ProbeMatches](probematches-message.md) [o ResolveMatches.](resolvematches-message.md) En la lista siguiente se muestra un intercambio de paquetes típico que se usa para establecer una conexión TCP.
-    -   El cliente envía un paquete TCP SYN al host en un puerto especificado.
+    -   El cliente envía un paquete SYN TCP al host en un puerto especificado.
     -   El host envía un paquete TCP SYN/ACK al cliente.
     -   El cliente envía un paquete TCP ACK al host en un puerto especificado.
 
     Una vez que el cliente ha enviado un paquete TCP ACK, se establece la conexión TCP. Tenga en cuenta que este intercambio de mensajes no se producirá si se ha establecido previamente una conexión TCP.
 -   El cliente debe enviar una solicitud [HTTP Get](get--metadata-exchange--http-request-and-message.md) y un mensaje válidos.
 -   El host debe estar escuchando en la ruta de acceso url especificada en la [solicitud GET](get--metadata-exchange--http-request-and-message.md) HTTP.
--   El **elemento To** de un mensaje [get](get--metadata-exchange--http-request-and-message.md) metadata debe estar presente y no estar vacío. El valor del elemento **To debe** coincidir con una de las direcciones del punto de conexión del host. La dirección del punto de conexión de un host se anuncia normalmente en un [mensaje ProbeMatches](probematches-message.md) [o ResolveMatches.](resolvematches-message.md)
+-   El **elemento To** de un mensaje [get](get--metadata-exchange--http-request-and-message.md) metadata debe estar presente y no estar vacío. El valor del elemento **To debe** coincidir con una de las direcciones de punto de conexión del host. La dirección del punto de conexión de un host se anuncia normalmente en un [mensaje ProbeMatches](probematches-message.md) [o ResolveMatches.](resolvematches-message.md)
 -   El host debe enviar un encabezado de respuesta HTTP válido. Si la solicitud inicial se ha realizado correctamente, el encabezado de respuesta debe contener el código de estado HTTP/1.1 200.
 -   El host debe enviar un mensaje [GetResponse](getresponse--metadata-exchange--message.md) válido.
 -   El **elemento RelatesTo** de un [mensaje GetResponse](getresponse--metadata-exchange--message.md) debe estar presente y no debe estar vacío. Su valor debe coincidir con el valor del **elemento MessageId** del mensaje [Get](get--metadata-exchange--http-request-and-message.md) correspondiente.

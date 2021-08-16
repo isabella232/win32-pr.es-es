@@ -1,15 +1,15 @@
 ---
-description: TAPI admite funciones de dispositivo de línea para configurar dispositivos de línea y realizar funciones de telefonía, como retener y reenviar.
+description: TAPI admite funciones de dispositivo de línea para configurar dispositivos de línea y realizar funciones de telefonía como la retención y reenvío.
 ms.assetid: 74e6300f-0d72-4b0f-8b95-fc1c8d0d0293
 title: Funciones de dispositivo de línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcaa65f996d31514b6fdd7ecfd8e50115fc43a5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09d7b45a6cc25ede14da6b105cd0ce3da00adbade49e19f8ed2e44fb1d1baac9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119405265"
 ---
 # <a name="line-device-functions"></a>Funciones de dispositivo de línea
 
@@ -30,7 +30,7 @@ TAPI admite las siguientes funciones de dispositivo de línea:
 -   [**lineDeallocateCall**](/windows/desktop/api/Tapi/nf-tapi-linedeallocatecall)
 -   [**lineDevSpecific**](/windows/desktop/api/Tapi/nf-tapi-linedevspecific)
 -   [**lineDevSpecificFeature**](/windows/desktop/api/Tapi/nf-tapi-linedevspecificfeature)
--   [**Fino**](/windows/desktop/api/Tapi/nf-tapi-linedial)
+-   [**lineDial**](/windows/desktop/api/Tapi/nf-tapi-linedial)
 -   [**lineDrop**](/windows/desktop/api/Tapi/nf-tapi-linedrop)
 -   [**lineForward**](/windows/desktop/api/Tapi/nf-tapi-lineforward)
 -   [**lineGatherDigits**](/windows/desktop/api/Tapi/nf-tapi-linegatherdigits)
@@ -63,7 +63,7 @@ TAPI admite las siguientes funciones de dispositivo de línea:
 -   [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall)
 -   [**lineMonitorDigits**](/windows/desktop/api/Tapi/nf-tapi-linemonitordigits)
 -   [**lineMonitorMedia**](/windows/desktop/api/Tapi/nf-tapi-linemonitormedia)
--   [**lineMonitorTones**](/windows/desktop/api/Tapi/nf-tapi-linemonitortones)
+-   [**lineMonitorMonitorMonitor**](/windows/desktop/api/Tapi/nf-tapi-linemonitortones)
 -   [**lineNegotiateAPIVersion**](/windows/desktop/api/Tapi/nf-tapi-linenegotiateapiversion)
 -   [**lineNegotiateExtVersion**](/windows/desktop/api/Tapi/nf-tapi-linenegotiateextversion)
 -   [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen)
@@ -103,7 +103,7 @@ TAPI admite las siguientes funciones de dispositivo de línea:
 -   [**lineUnhold**](/windows/desktop/api/Tapi/nf-tapi-lineunhold)
 -   [**lineUnpark**](/windows/desktop/api/Tapi/nf-tapi-lineunpark)
 
-Para una categorización de las funciones de TAPI por nivel de servicio y tarea, consulte [referencia de funciones rápidas de TAPI](tapi-quick-function-reference.md).
+Para obtener una categorización de las funciones TAPI por nivel de servicio y tarea, vea [Referencia de funciones rápidas de TAPI.](tapi-quick-function-reference.md)
 
  
 

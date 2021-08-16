@@ -1,6 +1,6 @@
 ---
-title: HTTP.sys escenarios de capacidad de administración
-description: En los escenarios siguientes se proporcionan ejemplos de cómo estas herramientas pueden ayudar a los profesionales de IT a diagnosticar y resolver problemas relacionados con el componente HTTP Server API (HTTP.sys).
+title: HTTP.sys de administración de aplicaciones
+description: En los escenarios siguientes se proporcionan ejemplos de cómo estas herramientas pueden ayudar a los profesionales de IT a diagnosticar y resolver problemas relacionados con el componente DE API de servidor HTTP (HTTP.sys).
 ms.assetid: 000e26d7-fce4-4768-96f5-ff97d240007e
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,11 +11,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118394274"
 ---
-# <a name="httpsys-manageability-scenarios"></a>HTTP.sys escenarios de capacidad de administración
+# <a name="httpsys-manageability-scenarios"></a>HTTP.sys de administración de aplicaciones
 
-En los escenarios siguientes se proporcionan ejemplos de cómo estas herramientas pueden ayudar a los profesionales de IT a diagnosticar y resolver problemas relacionados con el componente HTTP Server API (HTTP.sys). Las herramientas usadas en estos ejemplos están disponibles en Windows Vista y Windows Server 2008.
+En los escenarios siguientes se proporcionan ejemplos de cómo estas herramientas pueden ayudar a los profesionales de IT a diagnosticar y resolver problemas relacionados con el componente DE API de servidor HTTP (HTTP.sys). Las herramientas usadas en estos ejemplos están disponibles en Windows Vista y Windows Server 2008.
 
--   [Escenario 1: Ejemplo de tiempo de espera http mediante el seguimiento etw y comandos Netsh](scenario-1--http-timeout-example-using-etw-tracing-and-netsh-commands.md)
+-   [Escenario 1: Ejemplo de tiempo de espera HTTP mediante el seguimiento etw y comandos Netsh](scenario-1--http-timeout-example-using-etw-tracing-and-netsh-commands.md)
 -   [Escenario 2: Ejemplo de analizador mediante el seguimiento etw](scenario-2--parser-example-using-etw-tracing.md)
 -   [Escenario 3: Contadores de rendimiento](scenario-3--performance-counters.md)
 

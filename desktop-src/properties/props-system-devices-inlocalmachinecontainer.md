@@ -1,17 +1,17 @@
 ---
 description: El dispositivo está en el contenedor de la máquina local.
 ms.assetid: 95b92f2a-614b-4fb1-b98e-6984de0a8377
-title: System. Devices. InLocalMachineContainer
+title: System.Devices.InLocalMachineContainer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0479a0f96e124ae63eff1a272fadd0e95d4bdb68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23e4e4651439e83a468797a8d386a2096cf72028f894fa71314a0d3f4af06713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118467637"
 ---
-# <a name="systemdevicesinlocalmachinecontainer"></a>System. Devices. InLocalMachineContainer
+# <a name="systemdevicesinlocalmachinecontainer"></a>System.Devices.InLocalMachineContainer
 
 El dispositivo está en el contenedor de la máquina local.
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -129,16 +129,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d789a233df777d98860e519f7e877a030aba55a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1e937ad9cc32a7837303d535b73b176c7e16f2d0ab0033bf625f629d2d5f7bc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504357"
 ---
 # <a name="directdraw-return-codes"></a>Códigos de retorno de DirectDraw
 
-Los errores se representan mediante valores negativos y no se pueden combinar. En esta tabla se enumeran los valores que pueden devolver todos los métodos de las funciones [DirectDraw Interfaces](directdraw-interfaces.md) [y DirectDraw](directdraw-functions.md). Para obtener una lista de los códigos de error que puede devolver cada método o función, vea la descripción del método o la función.
+Los errores se representan mediante valores negativos y no se pueden combinar. En esta tabla se enumeran los valores que pueden devolver todos los métodos de las funciones [DirectDraw Interfaces](directdraw-interfaces.md) y [DirectDraw](directdraw-functions.md). Para obtener una lista de los códigos de error que puede devolver cada método o función, vea la descripción del método o la función.
 
 <dl> <dt>
 
@@ -167,7 +167,7 @@ El objeto ya se ha inicializado.
 
 
 
-Un objeto DirectDrawClipper se adjunta a una superficie de origen que ha pasado a una llamada al método [**IDirectDrawSurface7::BltFast.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast)
+Un objeto DirectDrawClipper se adjunta a una superficie de origen que se ha pasado a una llamada al método [**IDirectDrawSurface7::BltFast.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast)
 
 
 </dt> </dl> </dd> <dt>
@@ -197,7 +197,7 @@ Una superficie no se puede desasociar de otra superficie solicitada.
 
 
 
-Windows no puede crear más contextos de dispositivo (DC) o un controlador de dominio ha solicitado una superficie indizada por paleta cuando la superficie no tenía ninguna paleta y el modo de presentación no estaba indexado por paleta (en este caso, DirectDraw no puede seleccionar una paleta adecuada en el controlador de dominio).
+Windows puede crear más contextos de dispositivo (DC) o un controlador de dominio ha solicitado una superficie indizada por paleta cuando la superficie no tenía ninguna paleta y el modo de presentación no estaba indexado por la paleta (en este caso, DirectDraw no puede seleccionar una paleta adecuada en el controlador de dominio).
 
 
 </dt> </dl> </dd> <dt>
@@ -227,7 +227,7 @@ Se rechaza el acceso a esta superficie porque se intentó bloquear la superficie
 
 
 
-Error al intentar bloquear la página de una superficie. El bloqueo de página no funciona en una superficie de memoria para mostrar ni en una superficie principal emulada.
+Error al intentar bloquear la página de una superficie. El bloqueo de página no funciona en una superficie de memoria para mostrar o en una superficie principal emulada.
 
 
 </dt> </dl> </dd> <dt>
@@ -237,12 +237,12 @@ Error al intentar bloquear la página de una superficie. El bloqueo de página n
 
 
 
-Error al intentar desbloquear una superficie. El desbloqueo de página no funciona en una superficie de memoria para mostrar ni en una superficie principal emulada.
+Error al intentar desbloquear una superficie en la página. El desbloqueo de páginas no funciona en una superficie de memoria para mostrar o en una superficie principal emulada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CLIPPERISUSINGHWND"></span><span id="dderr_clipperisusinghwnd"></span>**\_CLIPPERISUSINGHWND de DDERR**
+<span id="DDERR_CLIPPERISUSINGHWND"></span><span id="dderr_clipperisusinghwnd"></span>**DDERR \_ CLIPPERISUSINGHWND**
 </dt> <dd> <dl> <dt>
 
 
@@ -427,7 +427,7 @@ DirectDraw no admite la lista de clips proporcionada.
 
 
 
-El identificador único global (GUID) pasado a la [**función DirectDrawCreate**](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreate) no es un identificador de controlador de DirectDraw válido.
+El identificador único global (GUID) pasado a la [**función DirectDrawCreate**](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreate) no es un identificador de controlador directDraw válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -452,7 +452,7 @@ DirectDraw recibió un puntero que era un objeto DirectDraw no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDPARAMS"></span><span id="dderr_invalidparams"></span>**DDERR \_ INVALIDPARAMS**
+<span id="DDERR_INVALIDPARAMS"></span><span id="dderr_invalidparams"></span>**INVALIDPARAMS de DDERR \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -467,12 +467,12 @@ Uno o varios de los parámetros pasados al método son incorrectos.
 
 
 
-El formato de píxel no era válido como se especificó.
+El formato de píxel no era válido según lo especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDPOSITION"></span><span id="dderr_invalidposition"></span>**DDERR \_ INVALIDPOSITION**
+<span id="DDERR_INVALIDPOSITION"></span><span id="dderr_invalidposition"></span>**INVALIDPOSITION de DDERR \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -532,7 +532,7 @@ Hay más datos disponibles de los que puede contener el tamaño de búfer especi
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NEWMODE"></span><span id="dderr_newmode"></span>**NEWMODE de DDERR \_**
+<span id="DDERR_NEWMODE"></span><span id="dderr_newmode"></span>**DDERR \_ NEWMODE**
 </dt> <dd> <dl> <dt>
 
 
@@ -627,7 +627,7 @@ No hay compatibilidad de hardware con la clave de color de destino.
 
 
 
-Se llamó a una función create [**sin el método IDirectDraw7::SetCooperativeLevel.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel)
+Se llamó a una función create sin el [**método IDirectDraw7::SetCooperativeLevel.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel)
 
 
 </dt> </dl> </dd> <dt>
@@ -697,7 +697,7 @@ La emulación de software no está disponible.
 
 
 
-La operación requiere que la aplicación tenga el modo exclusivo, pero la aplicación no tiene modo exclusivo.
+La operación requiere que la aplicación tenga el modo exclusivo, pero la aplicación no tiene el modo exclusivo.
 
 
 </dt> </dl> </dd> <dt>
@@ -717,7 +717,7 @@ No se admite la volteo de superficies visibles.
 
 
 
-Se intentó crear o establecer una ventana del dispositivo sin establecer primero la ventana de foco.
+Se intentó crear o establecer una ventana de dispositivo sin establecer primero la ventana de foco.
 
 
 </dt> </dl> </dd> <dt>
@@ -737,7 +737,7 @@ No hay GDI presente.
 
 
 
-La notificación de Clipper requiere un identificador de ventana o no se ha establecido previamente ningún identificador de ventana como identificador de ventana de nivel cooperativo.
+Clipper notificación requiere un identificador de ventana o no se ha establecido previamente ningún identificador de ventana como identificador de ventana de nivel cooperativo.
 
 
 </dt> </dl> </dd> <dt>
@@ -807,7 +807,7 @@ Se llama al método [**IDirectDrawSurface7::GetOverlayPosition**](/windows/deskt
 
 
 
-No hay ningún hardware de superposición presente o disponible.
+No hay ningún hardware superpuesto presente o disponible.
 
 
 </dt> </dl> </dd> <dt>
@@ -847,7 +847,7 @@ No hay ningún hardware de operación de trama adecuado presente o disponible.
 
 
 
-No hay hardware de rotación presente ni disponible.
+No hay ningún hardware de rotación presente o disponible.
 
 
 </dt> </dl> </dd> <dt>
@@ -867,7 +867,7 @@ No hay ningún hardware estéreo presente o disponible.
 
 
 
-No hay compatibilidad con hardware para el stretching.
+No hay compatibilidad de hardware para la extensión.
 
 
 </dt> </dl> </dd> <dt>
@@ -877,7 +877,7 @@ No hay compatibilidad con hardware para el stretching.
 
 
 
-No hay ningún hardware que admita superficies estéreo.
+No hay hardware presente que admita superficies estéreo.
 
 
 </dt> </dl> </dd> <dt>
@@ -1027,7 +1027,7 @@ La operación para crear un búfer z en la memoria para mostrar o para realizar 
 
 
 
-Las superficies superpuestas no se pueden superponer en capas z, en función del orden z porque el hardware no admite el orden z de las superposiciones.
+Las superficies superpuestas no se pueden superponer en capas z, en función del orden z porque el hardware no admite la ordenación z de las superposiciones.
 
 
 </dt> </dl> </dd> <dt>
@@ -1072,7 +1072,7 @@ Los rectángulos de origen y destino están en la misma superficie y se superpon
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OVERLAYCANTCLIP"></span><span id="dderr_overlaycantclip"></span>**SUPERPOSICIÓN DE \_ DDERRCANTCLIP**
+<span id="DDERR_OVERLAYCANTCLIP"></span><span id="dderr_overlaycantclip"></span>**DDERR \_ OVERLAYCANTCLIP**
 </dt> <dd> <dl> <dt>
 
 
@@ -1092,12 +1092,12 @@ Se intentó tener más de una clave de color activa en una superposición.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OVERLAYNOTVISIBLE"></span><span id="dderr_overlaynotvisible"></span>**SUPERPOSICIÓN DE \_ DDERRNOTVISIBLE**
+<span id="DDERR_OVERLAYNOTVISIBLE"></span><span id="dderr_overlaynotvisible"></span>**DDERR \_ OVERLAYNOTVISIBLE**
 </dt> <dd> <dl> <dt>
 
 
 
-Se [**llamó al método IDirectDrawSurface7::GetOverlayPosition**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getoverlayposition) en una superposición oculta.
+Se llamó al método [**IDirectDrawSurface7::GetOverlayPosition**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getoverlayposition) en una superposición oculta.
 
 
 </dt> </dl> </dd> <dt>
@@ -1197,7 +1197,7 @@ La superficie solicitada no está adjunta.
 
 
 
-Novedad de DirectX 7.0. Cuando lo devuelve el método [**IDirectDraw7::StartModeTest,**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) este valor significa que no se podría iniciar ninguna prueba porque todas las resoluciones elegidas para las pruebas ya tienen información de frecuencia de actualización en el Registro. Cuando [**IDirectDraw7::EvaluateMode**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode)lo devuelve, el valor significa que DirectDraw ha completado una prueba de frecuencia de actualización.
+Novedad de DirectX 7.0. Cuando lo devuelve el método [**IDirectDraw7::StartModeTest,**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) este valor significa que no se puede iniciar ninguna prueba porque todas las resoluciones elegidas para las pruebas ya tienen información de frecuencia de actualización en el Registro. Cuando [**IDirectDraw7::EvaluateMode**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode)lo devuelve, el valor significa que DirectDraw ha completado una prueba de frecuencia de actualización.
 
 
 </dt> </dl> </dd> <dt>
@@ -1267,7 +1267,7 @@ DirectDraw no admite la máscara de bits en el formato de píxel solicitado.
 
 
 
-La pantalla está actualmente en modo no compatible.
+La pantalla está actualmente en un modo no admitido.
 
 
 </dt> </dl> </dd> <dt>

@@ -1,19 +1,19 @@
 ---
-description: Wi-Fi ID. de grupo directo.
+description: Wi-Fi de grupo directo.
 ms.assetid: e832403c-1f4f-4b01-b97c-158f42e421c6
-title: System. Devices. WiFiDirect. GroupId
+title: System.Devices.WiFiDirect.GroupId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49bdc0c91ad06a9802f76a2abb98a9b77fa7cf7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70f90927c01a353d00594b6d7a083f589f491c1ee2819365f7ee0e0d50e6e351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118467281"
 ---
-# <a name="systemdeviceswifidirectgroupid"></a>System. Devices. WiFiDirect. GroupId
+# <a name="systemdeviceswifidirectgroupid"></a>System.Devices.WiFiDirect.GroupId
 
-Wi-Fi ID. de grupo directo
+Wi-Fi de grupo de Direct
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

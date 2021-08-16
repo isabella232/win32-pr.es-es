@@ -24,7 +24,7 @@ ms.locfileid: "118334990"
 
 El **objeto PlaylistArray** proporciona una manera de acceder a las listas de reproducción por número de índice.
 
-El **objeto PlaylistArray** admite la propiedad siguiente.
+El **objeto PlaylistArray** admite la siguiente propiedad.
 
 
 

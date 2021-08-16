@@ -1,5 +1,5 @@
 ---
-description: Los datos de suscripción residen en el catálogo de COM+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación mediante la interfaz ICOMAdminCatalog::InstallComponent.
+description: Los datos de suscripción residen en el catálogo com+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación mediante la interfaz ICOMAdminCatalog::InstallComponent.
 ms.assetid: 190e88f3-1d87-4c27-9451-0a633cbae829
 title: Suscripciones
 ms.topic: article
@@ -13,16 +13,16 @@ ms.locfileid: "118546177"
 ---
 # <a name="subscriptions"></a>Suscripciones
 
-Los datos de suscripción residen en el catálogo de COM+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación mediante la [**interfaz ICOMAdminCatalog::InstallComponent.**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-installcomponent)
+Los datos de suscripción residen en el catálogo com+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación mediante la [**interfaz ICOMAdminCatalog::InstallComponent.**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-installcomponent)
 
-La [**colección SubscriptionsForComponent**](subscriptionsforcomponent.md) se usa para agregar, eliminar o cambiar información relacionada con las suscripciones. La **colección SubscriptionsForComponent** es una colección secundaria de un componente. Para agregar una suscripción, obtenga la colección **SubscriptionsForComponent** del componente y use el [**método Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) para agregar una entrada a la colección. Para configurar las distintas propiedades del objeto de suscripción, use la [**propiedad Value.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_value) Para guardar los cambios, use [**SaveChanges en**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) el **objeto de colección SubscriptionsForComponent.**
+La [**colección SubscriptionsForComponent**](subscriptionsforcomponent.md) se usa para agregar, eliminar o cambiar información relativa a las suscripciones. La **colección SubscriptionsForComponent** es una colección secundaria de un componente. Para agregar una suscripción, obtenga la colección **SubscriptionsForComponent** del componente y use el [**método Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) para agregar una entrada a la colección. Para configurar las distintas propiedades del objeto de suscripción, use la [**propiedad**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_value) Value. Para guardar los cambios, use [**SaveChanges en**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) el **objeto de colección SubscriptionsForComponent.**
 
 También puede usar la herramienta de administración Servicios de componentes para modificar algunas de las propiedades de la suscripción, pero no todas. Las suscripciones especifican la siguiente información:
 
 -   Identidad y ubicación del suscriptor
 -   Método de entrega
--   Métodos de eventos para entregar
--   Objeto de clase de evento y propiedad PublisherID de un componente de clase de eventos desde el que el suscriptor quiere recibir eventos
+-   Métodos de eventos que se entregan
+-   Objeto de clase de evento y propiedad PublisherID de un componente de clase de eventos del que el suscriptor desea recibir eventos
 
 Las suscripciones existen independientemente de los objetos de clase de eventos. Puede deshabilitar una suscripción estableciendo la propiedad Enabled en False. Eventos COM+ no llama a una suscripción deshabilitada.
 
@@ -33,9 +33,9 @@ Los tres tipos de suscripciones son los siguientes:
 <span id="Persistent"></span><span id="persistent"></span><span id="PERSISTENT"></span>Persistente
 </dt> <dd>
 
-Las suscripciones persistentes residen en el catálogo de COM+ y son independientes de la duración del suscriptor. Las suscripciones persistentes sobreviven a un reinicio del sistema. Por lo general, se crea una suscripción persistente cuando se instala una aplicación en el equipo de un suscriptor y se quita cuando se quita la aplicación. Una vez creada una suscripción persistente, EVENTOS COM+ activa el suscriptor cada vez que se le debe entregar un evento.
+Las suscripciones persistentes residen en el catálogo de COM+ y son independientes de la duración del suscriptor. Las suscripciones persistentes sobreviven a un reinicio del sistema. Por lo general, se crea una suscripción persistente cuando se instala una aplicación en el equipo de un suscriptor y se quita cuando se quita la aplicación. Después de crear una suscripción persistente, EVENTOS COM+ activa al suscriptor cada vez que se le debe entregar un evento.
 
-Cuando un publicador crea una instancia [](the-com--event-class-object.md) de y realiza una llamada en un objeto de clase de eventos, el objeto busca todas las suscripciones persistentes en el catálogo de COM+ y crea una nueva instancia de cada objeto. El proceso de creación puede ser directo o a través de un moniker para los componentes en cola. Especifique el objeto de suscriptor mediante la [**propiedad SubscriberMoniker**](subscriptionsforcomponent.md) de la suscripción. Los objetos de suscriptor creados por una suscripción persistente siempre se liberan después de cada llamada de evento.
+Cuando un publicador crea instancias y [](the-com--event-class-object.md) realiza una llamada en un objeto de clase de eventos, el objeto busca todas las suscripciones persistentes en el catálogo de COM+ y crea una nueva instancia de cada objeto. El proceso de creación puede ser directo o a través de un moniker para los componentes en cola. Especifique el objeto de suscriptor mediante la [**propiedad SubscriberMoniker**](subscriptionsforcomponent.md) de la suscripción. Los objetos de suscriptor creados por una suscripción persistente siempre se liberan después de cada llamada de evento.
 
 </dd> <dt>
 
@@ -49,13 +49,13 @@ Para las suscripciones transitorias, puede usar la [**colección TransientSubscr
 <span id="Per_user"></span><span id="per_user"></span><span id="PER_USER"></span>Por usuario
 </dt> <dd>
 
-Las suscripciones por usuario solo pueden entregar eventos cuando el suscriptor ha iniciado sesión en el equipo del sistema de eventos. Cuando el suscriptor inicia sesión, el sistema de eventos habilita todas las suscripciones en las que la marca *PerUser* está establecida en **TRUE** y *UserName* en el nombre del usuario que ha iniciado sesión. Cuando el suscriptor cierra la sesión, las suscripciones se deshabilitan.
+Las suscripciones por usuario solo pueden entregar eventos cuando el suscriptor ha iniciado sesión en el equipo del sistema de eventos. Cuando el suscriptor inicia sesión, el sistema de eventos habilita todas las suscripciones en las que la marca *PerUser* está establecida en **TRUE** y *UserName* se establece en el nombre del usuario que ha iniciado sesión. Cuando el suscriptor cierra la sesión, las suscripciones se deshabilitan.
 
 Las suscripciones por usuario solo son efectivas cuando el publicador y el suscriptor están en el mismo equipo. El inicio de sesión y la cierre de sesión solo se detectan en el equipo del publicador, no en el equipo en el que reside el objeto de suscriptor.
 
 </dd> </dl>
 
-El sistema de eventos usa metadatos para notificar a los suscriptores interesados cada vez que se crean, modifican o quitan objetos o suscripciones de clase de eventos. Para recibir metaeventos del sistema de eventos, las aplicaciones deben crear una suscripción que resida en el equipo del sistema de eventos y que especifique el identificador de interfaz de activación (IID \_ IEventObjectChange).
+El sistema de eventos usa metadatos para notificar a los suscriptores interesados cada vez que se crean, modifican o quitan objetos o suscripciones de clase de eventos. Para recibir metadatos del sistema de eventos, las aplicaciones deben crear una suscripción que resida en el equipo del sistema de eventos y que especifique el identificador de interfaz de activación (IID \_ IEventObjectChange).
 
 ## <a name="related-topics"></a>Temas relacionados
 

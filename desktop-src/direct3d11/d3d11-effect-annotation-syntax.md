@@ -39,9 +39,9 @@ Una anotación es un fragmento de información definido por el usuario, declarad
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede agregar más de una anotación entre corchetes angulares, cada una separada por un punto y coma. Las API del marco de trabajo de efecto reconocen anotaciones en variables globales; todas las demás anotaciones se omiten.
+Puede agregar más de una anotación entre corchetes angulares, cada una separada por un punto y coma. Las API del marco de efecto reconocen anotaciones en variables globales. todas las demás anotaciones se omiten.
 
 ## <a name="example"></a>Ejemplo
 

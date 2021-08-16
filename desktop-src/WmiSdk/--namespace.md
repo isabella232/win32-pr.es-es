@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118320773"
 ---
-# <a name="__namespace-class"></a>\_\_Clase Namespace
+# <a name="__namespace-class"></a>\_\_Clase de espacio de nombres
 
 La **\_ \_ clase del** sistema Namespace representa un espacio de nombres WMI.
 
@@ -69,15 +69,15 @@ Nombre del espacio de nombres.
 
 La **\_ \_ clase Namespace** se deriva de [**\_ \_ SystemClass**](--systemclass.md), que no tiene propiedades.
 
-Puede usar **\_ \_ Espacio de nombres** para identificar, crear y eliminar espacios de nombres secundarios dentro del espacio de nombres de trabajo actual para el que tiene un objeto [**IWbemServices.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) Al crear una nueva instancia de **\_ \_ Namespace dentro** de cualquier espacio de nombres en funcionamiento, se crea un espacio de nombres secundario dentro del espacio de nombres de trabajo. Por el contrario, al eliminar una instancia de **\_ \_ Namespace** se quita el espacio de nombres secundario del espacio de nombres de trabajo. Tenga en cuenta que al eliminar un espacio de nombres secundario también se eliminan todas sus clases e instancias.
+Puede usar **\_ \_ Espacio de nombres** para identificar, crear y eliminar espacios de nombres secundarios dentro del espacio de nombres de trabajo actual para el que tiene un objeto [**IWbemServices.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) Al crear una nueva instancia de **\_ \_ Namespace dentro de** cualquier espacio de nombres de trabajo, se crea un espacio de nombres secundario dentro del espacio de nombres de trabajo. Por el contrario, al eliminar una instancia de **\_ \_ Namespace** se quita el espacio de nombres secundario del espacio de nombres de trabajo. Tenga en cuenta que la eliminación de un espacio de nombres secundario también elimina todas sus clases e instancias.
 
 La enumeración de instancias de esta clase dentro de cualquier espacio de nombres de trabajo proporciona los espacios de nombres secundarios disponibles.
 
-Por ejemplo, dentro del espacio \\ de nombres raíz hay dos instancias de **\_ \_ Namespace**. Una tiene su **propiedad Name** establecida en "Default", la otra tiene **nombre** establecido en "Cimv2". Estas instancias representan los espacios \\ de nombres root default y root \\ \\ \\ cimv2, respectivamente.
+Por ejemplo, dentro del espacio \\ de nombres raíz hay dos instancias de **\_ \_ Namespace**. Una tiene su **propiedad Name** establecida en "Default", la otra tiene **nombre** establecido en "Cimv2". Estas instancias representan los espacios de nombres raíz default y \\ \\ root \\ \\ cimv2, respectivamente.
 
 ## <a name="examples"></a>Ejemplos
 
-En [el ejemplo de VBScript](https://Gallery.TechNet.Microsoft.Com/4a8e84f1-4b52-452c-ae4f-e4e00e266257) Enumerar todos los espacios de nombres WMI de la Galería de TechNet se usa una llamada recursiva para enumerar todas las instancias de la clase Namespace en un \_ \_ sistema.
+En [el ejemplo de VBScript Enumerar](https://Gallery.TechNet.Microsoft.Com/4a8e84f1-4b52-452c-ae4f-e4e00e266257) todos los espacios de nombres WMI de la Galería de TechNet se usa una llamada recursiva para enumerar todas las instancias de la clase Namespace en un \_ \_ sistema.
 
 En el ejemplo de código siguiente se recuperan todos los espacios de nombres de PowerShell.
 
@@ -88,7 +88,7 @@ get-wmiobject __namespace -namespace 'root' -list -recurse | format-table __name
 
 
 
-El ejemplo de código siguiente mejora en el ejemplo anterior y agrega información adicional.
+El ejemplo de código siguiente mejora con respecto al ejemplo anterior y agrega información adicional.
 
 
 ```PowerShell

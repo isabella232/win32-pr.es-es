@@ -32,7 +32,7 @@ En las secciones siguientes se describe cómo obtener la información que necesi
 
 | Sección                                                                                                | Descripción                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Para enumerar todos los códecs multimedia Windows instalados](to-enumerate-all-installed-windows-media-codecs.md) | Describe cómo usar los métodos de las interfaces **IWMCodecInfo** e **IWMCodecInfo2** para recuperar el nombre y el índice de códec de cada códec Windows media instalado. |
+| [Para enumerar todos los códecs multimedia Windows instalados](to-enumerate-all-installed-windows-media-codecs.md) | Describe cómo usar los métodos de las interfaces **IWMCodecInfo** e **IWMCodecInfo2** para recuperar el nombre y el índice de códec de cada códec Windows Media instalado. |
 | [Para enumerar formatos de códec](to-enumerate-codec-formats.md)                                           | Describe cómo obtener objetos de configuración de secuencias de códecs para su uso en los perfiles.                                                                               |
 
 

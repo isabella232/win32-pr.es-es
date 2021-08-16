@@ -17,11 +17,11 @@ Se trata de una directiva de [sistema por](system-policy.md) máquina que se pue
 
 Si no se establece esta directiva, el instalador busca aplicaciones en el registro en el orden siguiente: aplicaciones administradas registradas como por usuario, aplicaciones no administradas registradas como por usuario y, por último, aplicaciones registradas como por equipo.
 
-Si esta directiva se establece en 1, el instalador omite todas las aplicaciones registradas como por usuario y solo busca aplicaciones registradas como por equipo. Las llamadas a la interfaz de programación de Windows Installer o al sistema omiten las aplicaciones por usuario. Un intento de realizar una instalación [](installation-context.md) en el contexto de instalación por usuario hace que el instalador muestre un mensaje de error y detenga la instalación. En este caso, el instalador de Windows también impide las instalaciones por usuario desde un servidor de Terminal Server.
+Si esta directiva se establece en 1, el instalador omite todas las aplicaciones registradas como por usuario y solo busca aplicaciones registradas como por equipo. Las llamadas a la interfaz de programación de aplicaciones Windows Installer o al sistema omiten las aplicaciones por usuario. Un intento de realizar una instalación [](installation-context.md) en el contexto de instalación por usuario hace que el instalador muestre un mensaje de error y detenga la instalación. En este caso, el instalador de Windows también impide las instalaciones por usuario desde un servidor de Terminal Server.
 
 ## <a name="registry-key"></a>Clave del Registro
 
-**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Local \_ Machine** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
 
 ## <a name="data-type"></a>Tipo de datos
 

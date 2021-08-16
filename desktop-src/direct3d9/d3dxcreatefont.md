@@ -119,7 +119,7 @@ Juego de caracteres de la fuente.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Especifica cómo Windows debe intentar hacer coincidir los tamaños de fuente y las características deseados con las fuentes reales. Use OUT TT ONLY PRECIS por ejemplo, para asegurarse de que siempre \_ \_ obtiene una fuente \_ TrueType.
+Especifica cómo Windows debe intentar hacer coincidir los tamaños de fuente y las características deseados con las fuentes reales. Use OUT \_ TT ONLY PRECIS por ejemplo, para asegurarse de que \_ siempre obtiene una fuente \_ TrueType.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Cadena que contiene el nombre del tipo de letra. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
+Cadena que contiene el nombre del tipo de letra. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -169,9 +169,9 @@ Si la función se realiza correctamente, el valor devuelto es S \_ OK. Si se pro
 
 La creación de un objeto ID3DXFont requiere que el dispositivo admita un color de 32 bits.
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXCreateFontW. De lo contrario, la llamada de función se resuelve en D3DXCreateFontA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXCreateFontW. De lo contrario, la llamada de función se resuelve en D3DXCreateFontA porque se usan cadenas ANSI.
 
-Si desea obtener más información sobre los parámetros de fuente, vea [La fuente lógica](../gdi/creating-a-logical-font.md).
+Si desea obtener más información sobre los parámetros de fuente, vea [Fuente lógica](../gdi/creating-a-logical-font.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -188,7 +188,7 @@ Si desea obtener más información sobre los parámetros de fuente, vea [La fuen
 
 <dl> <dt>
 
-[De uso general Functions](dx9-graphics-reference-d3dx-functions-general-purpose.md)
+[De uso general functions](dx9-graphics-reference-d3dx-functions-general-purpose.md)
 </dt> </dl>
 
  

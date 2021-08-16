@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_CALLBACK función de devolución de llamada'
-title: JET_CALLBACK función de devolución de llamada
+description: 'Más información sobre: JET_CALLBACK de devolución de llamada'
+title: JET_CALLBACK de devolución de llamada
 TOCTitle: JET_CALLBACK Callback Function
 ms:assetid: d15d4f84-8378-4b4b-9b8b-e89a56be5ead
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294098(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5e6d26bd5e347757fce270d5f2c78ab471755c1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d50f0f3a0908b725d7f704df962324a0f16af1fc6f7353515a8d604e87edd0a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487618"
 ---
-# <a name="jet_callback-callback-function"></a>JET_CALLBACK función de devolución de llamada
+# <a name="jet_callback-callback-function"></a>JET_CALLBACK de devolución de llamada
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_callback-callback-function"></a>JET_CALLBACK función de devolución de llamada
+## <a name="jet_callback-callback-function"></a>JET_CALLBACK de devolución de llamada
 
-La función **JET_CALLBACK** es una función de devolución de llamada de varios propósitos utilizada por el motor de base de datos para informar a la aplicación de un evento que implique las notificaciones de estado de cursor y desfragmentación en línea.
+La **JET_CALLBACK** es una función de devolución de llamada multipropósito que usa el motor de base de datos para informar a la aplicación de un evento que implica desfragmentación en línea y notificaciones de estado de cursor.
 
-Vea [JET_CBTYP](./jet-cbtyp.md) para ver la configuración específica para los parámetros de esta función, ya que estas opciones variarán en función de la opción **JET_CBTYP** seleccionada para su uso en el parámetro *CBTYP* .
+Consulte [JET_CBTYP](./jet-cbtyp.md) configuración específica que se usará para los parámetros de esta función, ya que esta configuración variará en función de la opción **JET_CBTYP** seleccionada para su uso en el *parámetro cbtyp.*
 
 ```cpp
     JET_ERR JET_API* JET_CALLBACK(
@@ -52,43 +52,43 @@ Vea [JET_CBTYP](./jet-cbtyp.md) para ver la configuración específica para los 
 
 Sesión para la que se realiza la devolución de llamada.
 
-*DBID*
+*Dbid*
 
-La base de datos para la que se realiza la devolución de llamada.
+Base de datos para la que se realiza la devolución de llamada.
 
-*TABLEID*
+*tableid*
 
 Cursor para el que se realiza la devolución de llamada.
 
 *cbtyp*
 
-Punto de la operación en el que se realiza la devolución de llamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener una lista de valores y el significado de los parámetros siguientes en cada caso.
+Punto de la operación en la que se realiza la devolución de llamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener una lista de valores y el significado de los parámetros siguientes en cada caso.
 
 *pvArg1*
 
-Parámetro que se usa para comunicarse con la aplicación mediante la devolución de llamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de este parámetro para cada devolución de llamada admitida por el motor de base de datos.
+Parámetro que se usa para comunicarse con la aplicación mediante la devolución de llamada. Vea [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de este parámetro para cada devolución de llamada compatible con el motor de base de datos.
 
 *pvArg2*
 
-Parámetro que se usa para comunicarse con la aplicación mediante la devolución de llamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de este parámetro para cada devolución de llamada admitida por el motor de base de datos.
+Parámetro que se usa para comunicarse con la aplicación mediante la devolución de llamada. Vea [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de este parámetro para cada devolución de llamada compatible con el motor de base de datos.
 
 *pvContext*
 
-Parámetro que se usa para comunicarse con la aplicación mediante la devolución de llamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de este parámetro para cada devolución de llamada admitida por el motor de base de datos.
+Parámetro que se usa para comunicarse con la aplicación mediante la devolución de llamada. Vea [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de este parámetro para cada devolución de llamada compatible con el motor de base de datos.
 
 *ulUnused*
 
-Parámetro que se usa para comunicarse con la aplicación mediante la devolución de llamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de este parámetro para cada devolución de llamada admitida por el motor de base de datos.
+Parámetro que se usa para comunicarse con la aplicación mediante la devolución de llamada. Vea [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de este parámetro para cada devolución de llamada compatible con el motor de base de datos.
 
 #### <a name="return-value"></a>Valor devuelto
 
-La función devuelve uno de los [códigos de error del motor de almacenamiento extensible](./extensible-storage-engine-error-codes.md). Para obtener información sobre cómo devolver estos códigos como valores HRESULT, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md). Si se ejecuta correctamente, la operación que emitió la devolución de llamada puede continuar con normalidad. En algunos casos, la devolución de llamada puede devolver una advertencia que influye en esa operación. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de estas advertencias en la operación.
+La función devuelve uno de los códigos de [error extensibles Storage Engine](./extensible-storage-engine-error-codes.md). Para obtener información sobre cómo devolver estos códigos como HSULT, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md). Si se ejecuta correctamente, la operación que emitió la devolución de llamada puede continuar con normalidad. En algunos casos, la devolución de llamada puede devolver una advertencia que influye en esa operación. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de estas advertencias por la operación.
 
-En caso de error, la operación que ha emitido la devolución de llamada puede continuar normalmente o puede producir un error. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso del código de error en la operación.
+En caso de error, la operación que emitió la devolución de llamada puede continuar con normalidad o puede producir un error. Vea [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso del código de error por la operación.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Si la devolución de llamada pasa un cursor a la aplicación, es importante saber que este cursor está limitado intencionadamente a un conjunto más pequeño de funciones para evitar la recursividad y otros ugliness. Se permiten las siguientes operaciones:
+Si la devolución de llamada pasa un cursor a la aplicación, es importante saber que este cursor se limita intencionadamente a un conjunto más pequeño de funcionalidades para evitar la recursividad y otras características. Se permiten las siguientes operaciones:
 
   - [JetDupCursor](./jetdupcursor-function.md)
 
@@ -128,7 +128,7 @@ Si la devolución de llamada pasa un cursor a la aplicación, es importante sabe
 
   - [JetUnregisterCallback](./jetunregistercallback-function.md)
 
-Al diseñar la devolución de llamada, tenga en cuenta que incluso con estas restricciones, todavía es posible que se produzca un error en la devolución de llamada.
+Al diseñar la devolución de llamada, tiene en cuenta que, incluso con estas restricciones, todavía es posible que se pueda producir un error en la devolución de llamada.
 
 #### <a name="requirements"></a>Requisitos
 
@@ -143,12 +143,12 @@ Al diseñar la devolución de llamada, tenga en cuenta que incluso con estas res
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

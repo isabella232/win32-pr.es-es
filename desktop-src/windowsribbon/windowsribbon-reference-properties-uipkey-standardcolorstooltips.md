@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_StandardColorsTooltips
-description: Identifica la propiedad \_ Ui PKEY \_ StandardColorsTooltips.
+description: Identifica la propiedad \_ PKEY \_ StandardColorsTooltips de la interfaz de usuario.
 ms.assetid: 78786f72-69d3-44f6-bef4-51d0f4497dfb
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118437810"
 ---
 # <a name="ui_pkey_standardcolorstooltips"></a>UI \_ PKEY \_ StandardColorsTooltips
 
-Identifica la propiedad \_ Ui PKEY \_ StandardColorsTooltips.
+Identifica la propiedad \_ PKEY \_ StandardColorsTooltips de la interfaz de usuario.
 
 ```
 propertyDescription
@@ -25,13 +25,13 @@ propertyDescription
       type = VT_VECTOR | VT_LPWSTR
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La interfaz de usuario PKEY StandardColorsTooltips se usa en una aplicación para consultar la información sobre herramientas de la muestra de color de \_ \_ un elemento [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
+La interfaz de usuario PKEY StandardColorsTooltips la usa una aplicación para consultar la información sobre herramientas de la muestra de color de \_ \_ un elemento [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
 
 El valor de propiedad es una matriz de valores de cadena.
 
-Cada valor de cadena corresponde a la información sobre herramientas de una muestra de color en [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) independientemente del valor especificado para el **atributo ColorTemplate.**
+Cada valor de cadena corresponde a la información sobre herramientas de una muestra de color en [**DropDownColorPicker,**](windowsribbon-element-dropdowncolorpicker.md) independientemente del valor especificado para el **atributo ColorTemplate.**
 
 ## <a name="related-topics"></a>Temas relacionados
 

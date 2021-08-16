@@ -80,7 +80,7 @@ Tipo de datos: **uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de pantalla para el monitor. En la tabla siguiente se enumeran los valores posibles.
+Tipo de presentación del monitor. En la tabla siguiente se enumeran los valores posibles.
 
 
 

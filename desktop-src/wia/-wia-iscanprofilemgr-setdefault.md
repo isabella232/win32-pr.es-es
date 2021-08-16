@@ -1,7 +1,7 @@
 ---
-description: Establece el perfil de digitalización especificado como perfil predeterminado.
+description: Establece el perfil de examen especificado como perfil predeterminado.
 ms.assetid: c680be8b-88f0-4f7f-b1a3-e12711dba870
-title: 'IScanProfileMgr:: SetDefault (método) (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::SetDefault (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 3a7c32f246bcafc8ff7ce55e8c6f34ea45553a95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd7b46241e967e02083c344aa7f3f77a773c72b02ff74b225910788d498fe252
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965801"
 ---
-# <a name="iscanprofilemgrsetdefault-method"></a>IScanProfileMgr:: SetDefault (método)
+# <a name="iscanprofilemgrsetdefault-method"></a>IScanProfileMgr::SetDefault (Método)
 
-Establece el perfil de digitalización especificado como perfil predeterminado.
+Establece el perfil de examen especificado como perfil predeterminado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ HRESULT SetDefault(
 
 <dl> <dt>
 
-*pScanProfile* \[ de\]
+*pScanProfile* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IScanProfile**](-wia-iscanprofile.md) \** _
+Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\***
 
 Puntero al perfil.
 
@@ -50,37 +50,37 @@ Puntero al perfil.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use el método **IScanProfileMgr:: SetDefault** para agregar un `<Default>` elemento al perfil o para quitar ese elemento del perfil predeterminado anterior del dispositivo.
+Use el **método IScanProfileMgr::SetDefault** para agregar un elemento al perfil o para quitar ese elemento del perfil predeterminado `<Default>` anterior del dispositivo.
 
-Use el método [**ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) para cambiar el perfil predeterminado.
+Use el [**método ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) para cambiar el perfil predeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118392073"
 ---
-# <a name="modifykvpitems-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyKvpItems de la clase Msvm \_ VirtualSystemManagementService
+# <a name="modifykvpitems-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyKvpItems de la clase \_ Msvm VirtualSystemManagementService
 
 Modifica los pares clave-valor existentes en una máquina virtual.
 
@@ -55,16 +55,16 @@ Referencia a la máquina virtual en la que se modificarán los pares clave-valor
 
 Tipo: **\[ \] cadena**
 
-Matriz de pares clave-valor que se va a modificar. Cada elemento de la matriz es una instancia incrustada de la [**clase Msvm \_ KvpExchangeDataItem.**](msvm-kvpexchangedataitem.md) Este método produce un error si alguno de los pares clave-valor especificados no existe en el sistema de destino. Esta matriz puede contener como máximo 128 elementos.
+Matriz de pares clave-valor que se va a modificar. Cada elemento de la matriz es una instancia incrustada de la clase [**Msvm \_ KvpExchangeDataItem.**](msvm-kvpexchangedataitem.md) Este método produce un error si alguno de los pares clave-valor especificados no existe en el sistema de destino. Esta matriz puede contener como máximo 128 elementos.
 
 </dd> <dt>
 
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **Cim \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
+Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Este método devuelve uno de los valores siguientes.
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -109,7 +109,7 @@ Este método devuelve uno de los valores siguientes.
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -117,11 +117,11 @@ Este método devuelve uno de los valores siguientes.
 
 ## <a name="remarks"></a>Comentarios
 
-El acceso a [**la clase Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+El acceso a la [**clase \_ VirtualSystemManagementService de Msvm**](msvm-virtualsystemmanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente de C# se modifican los pares clave-valor en una máquina virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
+En el ejemplo de C# siguiente se modifican los pares clave-valor en una máquina virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 > [!IMPORTANT]
 > Para funcionar correctamente, el código siguiente debe ejecutarse en el servidor host de la máquina virtual y debe ejecutarse con privilegios de administrador.

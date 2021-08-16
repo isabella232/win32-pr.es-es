@@ -38,17 +38,17 @@ Se envía a un archivo DLL de extensión cuando el usuario selecciona un nombre 
 
 Un archivo DLL de extensión debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los cambios en la parte del árbol de la ventana de directorio no generan este mensaje.
 
-Dado que el usuario puede cambiar la selección muchas veces, el archivo DLL de extensión debe devolver rápidamente después de procesar este mensaje para evitar ralentizar el proceso de selección para el usuario.
+Dado que el usuario puede cambiar la selección muchas veces, el archivo DLL de extensión debe devolver rápidamente después de procesar este mensaje para evitar ralentizar el proceso de selección del usuario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
@@ -56,7 +56,7 @@ Dado que el usuario puede cambiar la selección muchas veces, el archivo DLL de 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

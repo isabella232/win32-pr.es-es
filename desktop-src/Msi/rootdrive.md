@@ -13,9 +13,9 @@ ms.locfileid: "118625742"
 ---
 # <a name="rootdrive-property"></a>Propiedad ROOTDRIVE
 
-La **propiedad ROOTDRIVE** especifica la unidad predeterminada para el directorio de destino de la instalación. Si la columna Directory de la tabla [Directory](directory-table.md) indica el directorio de destino raíz mediante un nombre de propiedad que no está definido, el instalador usa el valor de la **propiedad ROOTDRIVE** para resolver la ruta de acceso al directorio de destino.
+La **propiedad ROOTDRIVE** especifica la unidad predeterminada para el directorio de destino de la instalación. Si la columna Directory de la tabla [Directory](directory-table.md) indica el directorio de destino raíz por un nombre de propiedad que no está definido, el instalador usa el valor de la **propiedad ROOTDRIVE** para resolver la ruta de acceso al directorio de destino.
 
-Si **ROOTDRIVE no** se establece en una línea de comandos o se crea en la [tabla Property](property-table.md), el instalador establece esta propiedad. Durante una [instalación administrativa,](administrative-installation.md) el instalador establece **ROOTDRIVE** en la primera unidad de red conectada en la que se puede escribir. Si no se trata de una instalación administrativa o si el instalador no encuentra unidades de red, el instalador establece **ROOTDRIVE** en la unidad local que se puede escribir para que tenga el máximo espacio libre.
+Si **ROOTDRIVE no** se establece en una línea de comandos o se crea en la [tabla Property](property-table.md), el instalador establece esta propiedad. Durante una [instalación administrativa,](administrative-installation.md) el instalador establece **ROOTDRIVE** en la primera unidad de red conectada en la que encuentra que se puede escribir. Si no se trata de una instalación administrativa o si el instalador no encuentra ninguna unidad de red, el instalador establece **ROOTDRIVE** en la unidad local que se puede escribir para tener el máximo espacio libre.
 
 El valor de esta propiedad debe terminar con \\ ''.
 
@@ -23,9 +23,9 @@ El valor de esta propiedad debe terminar con \\ ''.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time](windows-installer-portal.md) para obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 
