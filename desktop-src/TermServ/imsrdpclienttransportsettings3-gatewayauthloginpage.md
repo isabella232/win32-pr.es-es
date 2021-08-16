@@ -1,12 +1,12 @@
 ---
-title: Propiedad GatewayAuthLoginPage de IMsRdpClientTransportSettings3
-description: Dirección de la Página Web de inicio de sesión que se va a usar para autenticar a un usuario.
+title: Propiedad IMsRdpClientTransportSettings3 GatewayAuthLoginPage
+description: Dirección de la página web de inicio de sesión que se usará para autenticar a un usuario.
 ms.assetid: d7a5e0d8-353e-416d-a9e0-11ef5072f9ff
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayAuthLoginPage
-- Propiedad GatewayAuthLoginPage Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings3, propiedad GatewayAuthLoginPage
+- Propiedad GatewayAuthLoginPage Servicios de Escritorio remoto
+- Propiedad GatewayAuthLoginPage Servicios de Escritorio remoto interfaz , IMsRdpClientTransportSettings3
+- Interfaz IMsRdpClientTransportSettings3 Servicios de Escritorio remoto , propiedad GatewayAuthLoginPage
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5be535dea0a89f1cf6e7c238029e53f38f58b0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 672fc929e2fccf6934a2703684e467c75fd8afb725107a73bf0f6bb311c09bfc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000935"
 ---
-# <a name="imsrdpclienttransportsettings3gatewayauthloginpage-property"></a>IMsRdpClientTransportSettings3:: GatewayAuthLoginPage (propiedad)
+# <a name="imsrdpclienttransportsettings3gatewayauthloginpage-property"></a>Propiedad IMsRdpClientTransportSettings3::GatewayAuthLoginPage
 
-Dirección de la Página Web de inicio de sesión que se va a usar para autenticar a un usuario.
+Dirección de la página web de inicio de sesión que se usará para autenticar a un usuario.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,22 +49,22 @@ HRESULT get_GatewayAuthLoginPage(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La nueva dirección de página web de inicio de sesión.
+La nueva dirección de la página web de inicio de sesión.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

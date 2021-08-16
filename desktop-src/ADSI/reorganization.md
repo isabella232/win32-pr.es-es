@@ -53,7 +53,7 @@ Tenga en cuenta que el vínculo de informe directo del administrador entre Julia
 
     ![cuadro de diálogo de propiedades command1](images/adadsi3.png)
 
-7.  Haga clic **en SQL de la opción Instrucción** y escriba lo siguiente:
+7.  Haga clic **en SQL botón de opción Instrucción** y escriba lo siguiente:
 
     SELECT Name,telephoneNumber FROM 'LDAP://DC=Fabrikam,DC=com' WHERE objectCategory='Person' AND objectClass='user'
 
@@ -64,7 +64,7 @@ Tenga en cuenta que el vínculo de informe directo del administrador entre Julia
 10. En **Propiedades de DataReport1,** para **DataSource,** seleccione **DataEnvironment1** en el menú desplegable y seleccione **Comando1** en el **campo DataMember.**
 11. En la ventana del proyecto, haga clic con el botón **derecho en Data Project** y seleccione **DataProject Properties (Propiedades del proyecto de datos).**
 12. En la **ventana de diálogo DataProject - Project Propiedades,** en **Objeto** de inicio , seleccione **DataReport1** en el menú desplegable. Haz clic en **Aceptar** para guardar.
-13. Compilación. Aparecerá el siguiente cuadro de **diálogo DataReport1.**
+13. Compilación. Aparecerá el siguiente cuadro de diálogo **DataReport1.**
 
     ![datareport1 , cuadro de diálogo](images/adadsi4.png)
 

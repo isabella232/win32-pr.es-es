@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_TABLEID. Método ToString (String, IFormatProvider)'
+description: 'Más información sobre: JET_TABLEID. Método ToString (String, IFormatProvider)'
 title: JET_TABLEID. Método ToString (String, IFormatProvider)
 TOCTitle: ToString method (String, IFormatProvider)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_TABLEID.ToString(System.String,System.IFormatProvider)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9e8d57d572a44f04c5b76ffb11f5243f7afb2b9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a674e980f86b57e7dd12fe451bc413b5b9b2f90b4cdc218be8753d7955376997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979212"
 ---
 # <a name="jet_tableidtostring-method-string-iformatprovider"></a>JET_TABLEID. Método ToString (String, IFormatProvider)
 
 Da formato al valor de la instancia actual usando el formato especificado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,34 +62,34 @@ public string ToString(
 #### <a name="parameters"></a>Parámetros
 
   - format  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    [Cadena](/dotnet/api/system.string) que especifica el formato que se va a utilizar. o bien, null para usar el formato predeterminado definido para el tipo de la implementación de [IFormattable](/dotnet/api/system.iformattable) .
+    Cadena [que](/dotnet/api/system.string) especifica el formato que se usará; o bien, null para usar el formato predeterminado definido para el tipo de implementación [de IFormattable.](/dotnet/api/system.iformattable)
 
 <!-- end list -->
 
-  - FormatProvider (  
-    Tipo: [System. IFormatProvider](/dotnet/api/system.iformatprovider)  
+  - formatProvider  
+    Tipo: [System.IFormatProvider](/dotnet/api/system.iformatprovider)  
     
-    [IFormatProvider](/dotnet/api/system.iformatprovider) que se va a utilizar para dar formato al valor; o bien, null para obtener la información de formato numérico de la configuración regional actual del sistema operativo.
+    [IFormatProvider que se](/dotnet/api/system.iformatprovider) usará para dar formato al valor; o null para obtener la información de formato numérico de la configuración regional actual del sistema operativo.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que contiene el valor de la instancia actual en el formato especificado.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) contiene el valor de la instancia actual en el formato especificado.  
 
 #### <a name="implements"></a>Implementaciones
 
-[IFormattable. ToString (String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
+[IFormattable.ToString(String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_TABLEID](./jet-tableid-structure.md)
+[JET_TABLEID estructura](./jet-tableid-structure.md)
 
-[Miembros de JET_TABLEID](./jet-tableid-members.md)
+[JET_TABLEID miembros](./jet-tableid-members.md)
 
 [Sobrecarga de ToString](./jet-tableid.tostring-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

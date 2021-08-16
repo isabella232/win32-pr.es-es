@@ -4,7 +4,7 @@ description: Para buscar números de flujo y números de salida
 ms.assetid: 531edd4a-a257-47cd-a367-b59cda3ea76c
 keywords:
 - Formato de sistemas avanzados (ASF), números de secuencia
-- ASF (formato de sistemas avanzados), creación de números
+- ASF (formato de sistemas avanzados), crear números
 - Formato de sistemas avanzados (ASF), buscar números de salida
 - ASF (formato de sistemas avanzados), buscar números de salida
 - lectores sincrónicos, números de secuencia

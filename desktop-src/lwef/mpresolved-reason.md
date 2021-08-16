@@ -1,10 +1,10 @@
 ---
-title: Enumeración MPRESOLVED_REASON (MpClient. h)
-description: Posibles causas de la resolución de un error de corrección.
+title: MPRESOLVED_REASON enumeración (MpClient.h)
+description: Posibles motivos para resolver un error de corrección.
 ms.assetid: 29E875D7-97DA-4129-AB71-B261CD0E682A
 keywords:
-- MPRESOLVED_REASON enumeración características de entorno heredado de Windows
-- PMPRESOLVED_REASON el puntero de enumeración características de entorno heredado de Windows
+- MPRESOLVED_REASON enumeración de características heredadas Windows entorno
+- PMPRESOLVED_REASON puntero de enumeración Heredados Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab31fc8b734852ccdf15278f535d916228b43976
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a365ef55d9fe2d76e619f3c772cc1df2e6c5e1c8c33721f24dc844d064b33398
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975985"
 ---
-# <a name="mpresolved_reason-enumeration"></a>\_Enumeración de motivo de MPRESOLVED
+# <a name="mpresolved_reason-enumeration"></a>Enumeración MPRESOLVED \_ REASON
 
-Posibles causas de la resolución de un error de corrección.
+Posibles motivos para resolver un error de corrección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,24 +43,24 @@ typedef enum tagMPRESOLVED_REASON {
 
 <dl> <dt>
 
-<span id="MPRESOLVED_REASON_UNKNOWN"></span><span id="mpresolved_reason_unknown"></span>**\_motivo MPRESOLVED \_ desconocido**
+<span id="MPRESOLVED_REASON_UNKNOWN"></span><span id="mpresolved_reason_unknown"></span>**MOTIVO MPRESOLVED \_ \_ DESCONOCIDO**
 </dt> <dd>
 
 En un estado de error.
 
 </dd> <dt>
 
-<span id="MPRESOLVED_REASON_FULL_SCAN"></span><span id="mpresolved_reason_full_scan"></span>**\_ \_ examen completo del motivo de MPRESOLVED \_**
+<span id="MPRESOLVED_REASON_FULL_SCAN"></span><span id="mpresolved_reason_full_scan"></span>**EXAMEN COMPLETO DE LA \_ RAZÓN \_ DE MPRESOLVED \_**
 </dt> <dd>
 
 Se realizó un examen completo.
 
 </dd> <dt>
 
-<span id="MPRESOLVED_REASON_TIMED_OUT"></span><span id="mpresolved_reason_timed_out"></span>**se \_ \_ agotó el tiempo de \_ espera de MPRESOLVED**
+<span id="MPRESOLVED_REASON_TIMED_OUT"></span><span id="mpresolved_reason_timed_out"></span>**SE HA RESUELTO \_ EL TIEMPO DE ESPERA DE LA \_ RAZÓN DE MPRESOLVED \_**
 </dt> <dd>
 
-Ha transcurrido el tiempo suficiente. El valor predeterminado es una semana.
+Ha pasado suficiente tiempo. El valor predeterminado es una semana.
 
 </dd> </dl>
 
@@ -68,11 +68,11 @@ Ha transcurrido el tiempo suficiente. El valor predeterminado es una semana.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

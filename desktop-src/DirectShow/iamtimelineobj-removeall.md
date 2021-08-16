@@ -28,7 +28,7 @@ ms.locfileid: "118400753"
 
  
 
-El método quita permanentemente este objeto de la escala de `RemoveAll` tiempo, incluidos los subobjetos y los elementos secundarios.
+El `RemoveAll` método quita permanentemente este objeto de la escala de tiempo, incluidos los subobjetos y los elementos secundarios.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,10 +76,10 @@ Para quitar un objeto con el fin de reinsertarlo en otro lugar de la escala de t
 
 <dl> <dt>
 
-[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
+[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

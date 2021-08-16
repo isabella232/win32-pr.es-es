@@ -147,7 +147,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Host Storage \| 001.4", "MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits", "MIF. DMTF \| Storage Devices \| 001.5")
 </dt> </dl>
 
-Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si se usan tamaños de bloque variable, esta propiedad debe especificar el tamaño máximo del bloque. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para **\_ AggregateExtent** de CIM , Memoria [**CIM \_**](cim-memory.md) o Disco lógico [**CIM), \_**](cim-logicaldisk.md)esta propiedad debe establecerse en "1" (sin saberlo).
+Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si se usan tamaños de bloque variable, esta propiedad debe especificar el tamaño máximo del bloque. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para **\_ AggregateExtent** de [**CIM, memoria \_ CIM**](cim-memory.md) o Disco lógico [**CIM), \_**](cim-logicaldisk.md)esta propiedad debe establecerse en "1" (sin saberlo).
 
 </dd> <dt>
 
@@ -160,7 +160,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número máximo de bloques, que están disponibles para su uso al almacenar en capas **\_ Cim StorageExtent** mediante la asociación [**de clase \_ BasedOn de CIM.**](cim-basedon.md) Esta propiedad solo tiene significado cuando se hace referencia a la extensión de almacenamiento en la **propiedad Antecedente** en un **objeto \_ BasedOn de CIM.**
+El número máximo de bloques, que están disponibles para su uso al en capas **\_ storageExtent** de CIM mediante la [**asociación \_ de la clase BasedOn**](cim-basedon.md) de CIM. Esta propiedad solo tiene significado cuando se hace referencia a la extensión de almacenamiento en la **propiedad Antecedentes** de un **objeto \_ BasedOn de CIM.**
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Tipo de organización de datos que usan los medios.
 
 <span id="Count_Key_Data"></span><span id="count_key_data"></span><span id="COUNT_KEY_DATA"></span>
 
-**Recuento de datos clave** (4)
+**Recuento de datos de** clave (4)
 
 
 </dt> <dd></dd> </dl>
@@ -223,7 +223,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DataRedundancyGoal",**"**CIM \_ StorageSetting**.**DataRedundancyMax**", "**CIM \_ StorageSetting**.**DataRedundancyMin**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DataRedundancyGoal**", "**CIM \_ StorageSetting**.**DataRedundancyMax**", "**CIM \_ StorageSetting**.**DataRedundancyMin**")
 </dt> </dl>
 
 Número de copias completas de los datos que se mantienen actualmente.
@@ -255,7 +255,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El tipo de detección y corrección de errores admitidos por la extensión de almacenamiento.
+Tipo de detección y corrección de errores admitidos por la extensión de almacenamiento.
 
 </dd> <dt>
 
@@ -295,7 +295,7 @@ Información de estado adicional.
 
 <span id="Broken"></span><span id="broken"></span><span id="BROKEN"></span>
 
-**Broken** (3)
+**Roto** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -344,7 +344,7 @@ Información de estado adicional.
 
 <span id="Readying"></span><span id="readying"></span><span id="READYING"></span>
 
-**Preparar** (10)
+**Readying** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -423,7 +423,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**True** si las extensiones de almacenamiento subyacentes son miembros de [**un \_ storageRedundancyGroup**](/windows/desktop/CIMWin32Prov/cim-storageredundancygroup)de CIM; en caso contrario, **false.**
+**True** si las extensiones de almacenamiento subyacentes son miembros de [**un objeto \_ StorageRedundancyGroup de CIM;**](/windows/desktop/CIMWin32Prov/cim-storageredundancygroup)en caso contrario, **false.**
 
 </dd> <dt>
 
@@ -436,7 +436,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, identificador de asociación \| 0"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**", "**Cim \_ StorageExtent**.**NameNamespace**")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, Association 0 \| Identifier"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**", "**CIM \_ StorageExtent**.**NameNamespace**")
 </dt> </dl>
 
 Identificador único para la extensión de almacenamiento. La **propiedad NameFormat** especifica el formato de nomenclatura que se usará en la **propiedad Name.**
@@ -452,10 +452,10 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nombre**", "**Cim \_ StorageExtent**.**NameNamespace**", "**Cim \_ StorageExtent**.**OtherNameFormat**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nombre**", "**Cim \_ StorageExtent**.**NameNamespace**", "**CIM \_ StorageExtent**.**OtherNameFormat**")
 </dt> </dl>
 
-Formato de nomenclatura de la **propiedad Name.**
+Formato de nomenclatura de la **propiedad** Name.
 
 <dt>
 
@@ -561,7 +561,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, identificador de asociación \| 0"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nombre**", "**Cim \_ StorageExtent**.**OtherNameNamespace**", "**Cim \_ StorageExtent**.**NameFormat**")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, Association 0 \| Identifier"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nombre**", "**Cim \_ StorageExtent**.**OtherNameNamespace**", "**CIM \_ StorageExtent**.**NameFormat**")
 </dt> </dl>
 
 Espacio de nombres de la propiedad name.
@@ -626,7 +626,7 @@ Espacio de nombres de la propiedad name.
 
 <span id="OS_Device_Namespace"></span><span id="os_device_namespace"></span><span id="OS_DEVICE_NAMESPACE"></span>
 
-**Espacio de nombres de dispositivo del** sistema operativo (8)
+**Espacio de nombres del dispositivo del sistema** operativo (8)
 
 
 </dt> <dd></dd> </dl>
@@ -645,7 +645,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**NoSinglePointOfFailure**")
 </dt> </dl>
 
-**true** si no hay ningún único punto de error; de lo contrario, **false**.
+**True** si no hay ningún único punto de error; de lo contrario, **false**.
 
 </dd> <dt>
 
@@ -693,7 +693,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameNamespace**")
 </dt> </dl>
 
-Descripción del espacio de nombres de la **propiedad Name** cuando la **propiedad NameNamespace** está establecida en "1" (Otros).
+Descripción del espacio de nombres de la **propiedad Name** cuando la **propiedad NameNamespace** se establece en "1" (Other).
 
 </dd> <dt>
 
@@ -706,7 +706,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**PackageRedundancyGoal",**"**CIM \_ StorageSetting**.**PackageRedundancyMax**", "**CIM \_ StorageSetting**.**PackageRedundancyMin**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**PackageRedundancyGoal**", "**CIM \_ StorageSetting**.**PackageRedundancyMax**", "**CIM \_ StorageSetting**.**PackageRedundancyMin**")
 </dt> </dl>
 
 Número actual de paquetes físicos que pueden producir un error sin pérdida de datos. Por ejemplo, en un dominio de almacenamiento, podría ser el número de ejes de disco.
@@ -759,7 +759,7 @@ Tipo de acceso: solo lectura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -769,7 +769,7 @@ Tipo de acceso: solo lectura
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

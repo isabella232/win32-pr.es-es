@@ -1,40 +1,40 @@
 ---
-description: El descodificador MP3 de Windows Media descodifica archivos de audio que se han codificado en los siguientes formatos.
+description: El Windows multimedia MP3 descodifica los archivos de audio que se han codificado en los siguientes formatos.
 ms.assetid: 817bbc2d-b3d5-49b4-84e4-bc8dc232a8ea
-title: Descodificador MP3 de Windows Media (Wmcodecdsp. h)
+title: Windows Descodificador MP3 multimedia (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de9bc49b3422e48f5de15678946845e21e868fe5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 58788a00ddaa43686c3cb4be4a52292edb3fe6c6f81fabbc5b4f3e75c47f0f24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118737004"
 ---
-# <a name="windows-media-mp3-decoder"></a>Descodificador MP3 de Windows Media
+# <a name="windows-media-mp3-decoder"></a>Windows Descodificador mp3 multimedia
 
-El descodificador MP3 de Windows Media descodifica archivos de audio que se han codificado en los siguientes formatos.
+El Windows multimedia MP3 descodifica los archivos de audio que se han codificado en los siguientes formatos.
 
--   ISO/IEC 11172-3 (audio MPEG-1) capa 3
--   ISO/IEC 13818-3 (MPEG-2 audio) de nivel 3, extensión de frecuencia de muestreo bajo
+-   ISO/IEC 11172-3 (MPEG-1 Audio) Capa 3
+-   ISO/IEC 13818-3 (MPEG-2 Audio) Capa 3, extensión de frecuencia de muestreo baja
 
 ## <a name="class-identifier"></a>Identificador de clase
 
-El identificador de clase (CLSID) para el descodificador MP3 de Windows Media se representa mediante la **constante \_ CMP3DecMediaObject de CLSID**. Puede crear una instancia del descodificador MP3 llamando a **CoCreateInstance**.
+El identificador de clase (CLSID) del descodificador mp3 Windows media se representa mediante la constante **CLSID \_ CMP3DecMediaObject**. Puede crear una instancia del descodificador MP3 llamando a **CoCreateInstance**.
 
 ## <a name="interfaces"></a>Interfaces
 
-Un objeto descodificador MP3 expone la interfaz **IMediaObject** para que el objeto se pueda usar como un objeto multimedia de DirectX (DMO) y expone la interfaz **IMFTransform** para que el objeto se pueda usar como una transformación de Media Foundation (MFT).
+Un objeto descodificador MP3 expone la interfaz **IMediaObject** para que el objeto se pueda usar como un objeto multimedia DirectX (DMO) y expone la interfaz **DETRANSFORMTRANSFORM** para que el objeto se pueda usar como una transformación de Media Foundation (MFT).
 
-Un descodificador MP3 de Windows Media se comporta como un DMO o una MFT en función de las interfaces que se obtengan y de la versión de Windows que se esté ejecutando. En la tabla siguiente se muestran las condiciones en las que un descodificador MP3 de Windows Media se comporta como un DMO o MFT.
+Un descodificador mp3 de Windows Media se comporta como un DMO o un MFT en función de las interfaces que se obtengan y la versión de Windows se esté ejecutando. En la tabla siguiente se muestran las condiciones en las que un descodificador mp3 Windows media se comporta como un DMO o MFT.
 
 
 
 | Sistema operativo | Comportamiento del descodificador                                                                                                                                                                               |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows XP       | Un descodificador MP3 de Windows Media siempre se comporta como DMO.                                                                                                                                           |
-| Windows Vista    | De forma predeterminada, un descodificador MP3 de Windows Media se comporta como un DMO. Si obtiene una interfaz **IMFTransform** o una interfaz **IPropertyStore** en un descodificador MP3 de Windows Media, se comporta como una MFT. |
-| Windows 7        | De forma predeterminada, un descodificador MP3 de Windows Media se comporta como un DMO. Si obtiene una interfaz **IMFTransform** en un descodificador MP3 de Windows Media, se comporta como una MFT.                                    |
+| Windows XP       | Un Windows multimedia MP3 siempre se comporta como un DMO.                                                                                                                                           |
+| Windows Vista    | De forma predeterminada, un Windows multimedia MP3 se comporta como un DMO. Si obtiene una interfaz **IMFTransform** o **una interfaz IPropertyStore** en un descodificador mp3 Windows Media, se comporta como MFT. |
+| Windows 7        | De forma predeterminada, un Windows multimedia MP3 se comporta como un DMO. Si obtiene una interfaz **IMFTransform** en un descodificador MP3 Windows Media, se comporta como un MFT.                                    |
 
 
 
@@ -42,13 +42,13 @@ Un descodificador MP3 de Windows Media se comporta como un DMO o una MFT en func
 
 ## <a name="input-formats"></a>Formatos de entrada
 
-En la tabla siguiente se muestra la etiqueta de formato de audio que representa el tipo de entrada que admite el descodificador MP3 de Windows Media.
+En la tabla siguiente se muestra la etiqueta de formato de audio que representa el tipo de entrada admitido por Windows descodificador MP3 multimedia.
 
 
 
-| Format (constante de etiqueta)      | Valor de etiqueta de formato | Formato de audio     |
+| Constante de etiqueta de formato      | Valor de etiqueta de formato | Formato de audio     |
 |--------------------------|------------------|------------------|
-| Formato de onda \_ \_ MPEGLAYER3 | 0x55             | ISO MPEG nivel 3 |
+| FORMATO \_ WAVE \_ MPEGLAYER3 | 0x55             | Capa 3 de ISO MPEG |
 
 
 
@@ -56,31 +56,31 @@ En la tabla siguiente se muestra la etiqueta de formato de audio que representa 
 
 ## <a name="output-formats"></a>Formatos de salida
 
-En la tabla siguiente se muestran las etiquetas de formato de audio que representan los tipos de salida admitidos por el descodificador MP3 de Windows Media.
+En la tabla siguiente se muestran las etiquetas de formato de audio que representan los tipos de salida admitidos por Windows descodificador MP3 multimedia.
 
 
 
-| Format (constante de etiqueta)       | Valor de etiqueta de formato | Formato de audio                                                                |
+| Constante de etiqueta de formato       | Valor de etiqueta de formato | Formato de audio                                                                |
 |---------------------------|------------------|-----------------------------------------------------------------------------|
-| \_PCM con formato de onda \_         | 0x0001           | Formato PCM (cuando se usa como DMO o MFT)                                   |
-| \_formato Wave \_ IEEE \_ float | 0x0003           | Punto flotante IEEE (cuando se usa como MFT)                                   |
-| formato de onda \_ \_ extensible  | 0xFFFE           | Formato PCM/IEEE en la estructura **WAVEFORMATEXTENSIBLE** (cuando se usa como MFT) |
+| WAVE \_ FORMAT \_ PCM         | 0x0001           | Formato PCM (cuando se usa como DMO o MFT)                                   |
+| FORMATO WAVE \_ \_ IEEE \_ FLOAT | 0x0003           | Punto flotante IEEE (cuando se usa como MFT)                                   |
+| FORMATO \_ WAVE \_ EXTENSIBLE  | 0xFFFE           | Formato PCM/IEEE en **la estructura DESATEXTENSIBLE** (cuando se usa como MFT) |
 
 
 
  
 
-El descodificador MP3 de Windows Media admite y enumera los siguientes tipos de medios de salida.
+El Windows multimedia MP3 admite y enumera los siguientes tipos de medios de salida.
 
--   Un tipo de salida que tiene la misma velocidad de muestreo y número de canales que el tipo de entrada.
+-   Tipo de salida que tiene la misma frecuencia de muestreo y número de canales que el tipo de entrada.
 -   Salida mono para entrada estéreo.
 -   Tipos de salida con profundidades de bits de 8 y 16.
 -   Salida de punto flotante, si el descodificador se comporta como MFT.
 
-El descodificador MP3 de Windows Media admite, pero no enumera, los siguientes tipos de medios de salida.
+El Windows multimedia MP3 admite, pero no enumera, los siguientes tipos de medios de salida.
 
 -   Tipo de salida que tiene la mitad de la frecuencia de muestreo del tipo de entrada.
--   Un tipo de salida que tiene un cuarto de la frecuencia de muestreo del tipo de entrada.
+-   Tipo de salida que tiene una cuarta parte de la frecuencia de muestreo del tipo de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,8 +88,8 @@ El descodificador MP3 de Windows Media admite, pero no enumera, los siguientes t
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>    | <dl> <dt>Mp3dmod.dll</dt> </dl>  |
 
 
@@ -98,7 +98,7 @@ El descodificador MP3 de Windows Media admite, pero no enumera, los siguientes t
 
 <dl> <dt>
 
-[Objetos Codec](codecobjects.md)
+[Objetos de códec](codecobjects.md)
 </dt> <dt>
 
 [Implementación de códecs](codecimplementation.md)

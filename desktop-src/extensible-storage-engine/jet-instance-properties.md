@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_INSTANCE propiedades'
+description: 'Más información sobre: JET_INSTANCE propiedades'
 title: JET_INSTANCE propiedades
 TOCTitle: JET_INSTANCE properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_INSTANCE
@@ -19,7 +19,7 @@ ms.locfileid: "118765812"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_INSTANCE](./jet-instance-structure.md) muestra los miembros siguientes.
+El [JET_INSTANCE](./jet-instance-structure.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -43,7 +43,7 @@ El [JET_INSTANCE](./jet-instance-structure.md) muestra los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

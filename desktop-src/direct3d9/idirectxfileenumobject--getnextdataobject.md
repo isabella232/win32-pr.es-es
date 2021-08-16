@@ -1,7 +1,7 @@
 ---
-description: Recupera el siguiente objeto de nivel superior en el archivo de DirectX. En desuso.
+description: Recupera el siguiente objeto de nivel superior en el archivo DirectX. En desuso.
 ms.assetid: 91cd3205-5603-4a62-aab2-7ef4adb9e6d1
-title: 'IDirectXFileEnumObject:: GetNextDataObject (método) (DXFile. h)'
+title: Método IDirectXFileEnumObject::GetNextDataObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: bc50af216eaae1687351d472b7151aaaeae9116f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 42d95fcee1b431f5121389d7bb6595e5c53ca56298c75ed6010ee86733c310e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985135"
 ---
-# <a name="idirectxfileenumobjectgetnextdataobject-method"></a>IDirectXFileEnumObject:: GetNextDataObject (método)
+# <a name="idirectxfileenumobjectgetnextdataobject-method"></a>IDirectXFileEnumObject::GetNextDataObject (método)
 
-Recupera el siguiente objeto de nivel superior en el archivo de DirectX. En desuso.
+Recupera el siguiente objeto de nivel superior en el archivo DirectX. En desuso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GetNextDataObject(
 
 <dl> <dt>
 
-*ppDataObj* \[ enuncia\]
+*ppDataObj* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)\***
 
-Dirección de un puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.md) que representa el objeto de datos de archivo devuelto.
+Dirección de un puntero a una [**interfaz IDirectXFileData,**](idirectxfiledata.md) que representa el objeto de datos de archivo devuelto.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Dirección de un puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOMOREOBJECTS
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOMOREOBJECTS
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los objetos de nivel superior son siempre objetos de datos. Los objetos de referencia de datos y los objetos binarios solo pueden ser elementos secundarios de objetos de datos.
+Los objetos de nivel superior siempre son objetos de datos. Los objetos de referencia de datos y los objetos binarios solo pueden ser secundarios de objetos de datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,12 +65,12 @@ Los objetos de nivel superior son siempre objetos de datos. Los objetos de refer
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

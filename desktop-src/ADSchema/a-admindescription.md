@@ -4,8 +4,8 @@ description: Descripción que se muestra en las pantallas de administración.
 ms.assetid: 4307b85b-f285-4e72-a73f-1f179ebb991a
 ms.tgt_platform: multiple
 keywords:
-- Admin-Description esquema de AD de atributo
-- AdminDescription attribute AD Schema (Esquema de AD del atributo adminDescription)
+- Admin-Description esquema de AD del atributo
+- Esquema de AD del atributo adminDescription
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ Descripción que se muestra en las pantallas de administración.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Admin-Description                           |
 | Ldap-Display-Name | adminDescription                            |
 | Size              | \-                                          |
-| Actualizar privilegios  | Administrador de dominio                        |
+| Privilegio actualizar  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.226                      |
 | System-Id-Guid    | bf967919-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,14 +54,14 @@ Descripción que se muestra en las pantallas de administración.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x804A                          |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
@@ -75,14 +75,14 @@ Descripción que se muestra en las pantallas de administración.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x804A                          |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
@@ -96,14 +96,14 @@ Descripción que se muestra en las pantallas de administración.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x804A                          |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
@@ -117,14 +117,14 @@ Descripción que se muestra en las pantallas de administración.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x804A                          |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
@@ -138,14 +138,14 @@ Descripción que se muestra en las pantallas de administración.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x804A                          |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
@@ -159,14 +159,14 @@ Descripción que se muestra en las pantallas de administración.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x804A                          |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
@@ -180,14 +180,14 @@ Descripción que se muestra en las pantallas de administración.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x804A                          |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |

@@ -1,7 +1,7 @@
 ---
 description: Esta constante es el número máximo de declaradores de vértices para una malla.
 ms.assetid: 234e99a2-1907-4065-b03b-fb9e8d6812ab
-title: Enumeración MAX_FVF_DECL_SIZE (D3dx9mesh. h)
+title: MAX_FVF_DECL_SIZE enumeración (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 7204308e6b9355b416218f31af301b5ea6d8fff5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 52ac939cc77bbd87dbecffc07253f0fadc5cbbdaa48e07f938f163c453c21e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105689872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798801"
 ---
-# <a name="max_fvf_decl_size-enumeration"></a>Enumeración de tamaño máximo de \_ FVF \_ decl \_
+# <a name="max_fvf_decl_size-enumeration"></a>Enumeración MAX \_ FVF \_ DECL \_ SIZE
 
 Esta constante es el número máximo de declaradores de vértices para una malla.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -39,16 +39,16 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="MAX_FVF_DECL_SIZE"></span><span id="max_fvf_decl_size"></span>**tamaño máximo de \_ FVF \_ decl \_**
+<span id="MAX_FVF_DECL_SIZE"></span><span id="max_fvf_decl_size"></span>**MAX \_ FVF \_ DECL \_ SIZE**
 </dt> <dd>
 
-Número máximo de elementos en la declaración de vértice. El (+ 1) adicional es para [**D3DDECL \_ End**](d3ddecl-end.md).
+Número máximo de elementos de la declaración de vértice. El adicional (+1) es para [**D3DDECL \_ END.**](d3ddecl-end.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-MAXD3DDECLLENGTH se define como un máximo de 64 (vea d3d9types. h). Esto no incluye el elemento de vértice del marcador "fin".
+MAXD3DDECLLENGTH se define como un máximo de 64 (vea d3d9types.h). Esto no incluye el elemento de vértice de marcador "end".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,15 +56,15 @@ MAXD3DDECLLENGTH se define como un máximo de 64 (vea d3d9types. h). Esto no inc
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> <dt>
 
 [**ID3DXBaseMesh**](id3dxbasemesh.md)

@@ -51,14 +51,14 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Todos los cambios realizados desde el último código de [notificación DE PSN \_ APPLY](psn-apply.md) se cancelan, excepto en el caso de [**PSH \_ AEROWIZARD,**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)que no admite ese código de notificación.
+Todos los cambios realizados desde el último código de notificación [DE PSN \_ APPLY](psn-apply.md) se cancelan, excepto en el caso de [**PSH \_ AEROWIZARD,**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)que no admite ese código de notificación.
 
-El **miembro lParam** de la estructura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-pshnotify) a la que *apunta lParam* se establecerá en **TRUE** si el usuario hizo clic en el botón **X** de la esquina superior derecha de la hoja de propiedades. Será FALSE **si el** usuario hizo clic en el **botón** Cancelar. La **estructura PSHNOTIFY** contiene una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) como su primer miembro, **hdr.** El **miembro hwndFrom** de esta **estructura NMHDR** contiene el identificador de la hoja de propiedades.
+El **miembro lParam** de la estructura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-pshnotify) a la que apunta *lParam* se establecerá en **TRUE** si el usuario hizo clic en el botón **X** de la esquina superior derecha de la hoja de propiedades. Será FALSE **si** el usuario hace clic en el **botón** Cancelar. La **estructura PSHNOTIFY** contiene una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) como su primer miembro, **hdr**. El **miembro hwndFrom** de esta **estructura NMHDR** contiene el identificador de la hoja de propiedades.
 
 Una aplicación puede usar este código de notificación como una oportunidad para realizar operaciones de limpieza.
 
 > [!Note]  
-> La hoja de propiedades está en proceso de manipular la lista de páginas cuando se envía el código de notificación \_ de PSN RESET. No intente agregar, quitar ni insertar páginas mientras administra este código de notificación. Si lo hace, tendrá resultados impredecibles.
+> La hoja de propiedades está en proceso de manipular la lista de páginas cuando se envía el código de notificación \_ de PSN RESET. No intente agregar, quitar ni insertar páginas mientras se administra este código de notificación. Si lo hace, tendrá resultados impredecibles.
 
  
 

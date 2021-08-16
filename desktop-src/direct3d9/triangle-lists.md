@@ -1,29 +1,29 @@
 ---
-description: Una lista de triángulo es una lista de triángulos aislados. Pueden estar o no cercanos entre sí. Una lista de triángulos debe tener al menos tres vértices y el número total de vértices debe ser divisible por tres.
+description: Una lista de triángulos es una lista de triángulos aislados. Es posible que se acerquen entre sí. Una lista de triángulos debe tener al menos tres vértices y el número total de vértices debe ser divisible entre tres.
 ms.assetid: e5c3470f-361c-458a-a42a-3549c51d8794
 title: Listas de triángulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 230cac9b4120d31821d70db022ab50d311d7b73e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1d0f9df4d9a0a6d883abd2ccf6b4f3e86c03bb54bcc404901b3c3fa6d10ede03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105705252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118797447"
 ---
 # <a name="triangle-lists"></a>Listas de triángulos
 
-Una lista de triángulo es una lista de triángulos aislados. Pueden estar o no cercanos entre sí. Una lista de triángulos debe tener al menos tres vértices y el número total de vértices debe ser divisible por tres.
+Una lista de triángulos es una lista de triángulos aislados. Es posible que se acerquen entre sí. Una lista de triángulos debe tener al menos tres vértices y el número total de vértices debe ser divisible entre tres.
 
-Use listas de triángulos para crear un objeto compuesto por piezas disjuntos. Por ejemplo, una forma de crear un muro de campo forzada en un juego 3D es especificar una lista grande de triángulos pequeños y no conectados. A continuación, aplique un material y una textura que parezcan emitir luz a la lista de triángulos. Cada triángulo de la pared aparece iluminado. La escena detrás de la pared se hace visible parcialmente a través de los huecos entre los triángulos, ya que un reproductor podría esperar al mirar un campo de fuerza.
+Use listas de triángulos para crear un objeto que se compone de partes desconexas. Por ejemplo, una manera de crear una pared de campo de fuerza en un juego 3D es especificar una lista grande de triángulos pequeños y no conectados. A continuación, aplique un material y una textura que parezca emitir luz a la lista de triángulos. Parece que cada triángulo de la pared se desluce. La escena detrás de la pared se vuelve parcialmente visible a través de los huecos entre los triángulos, como podría esperar un jugador al mirar un campo de fuerza.
 
-Las listas de triángulos también son útiles para crear primitivas que tienen bordes nítidos y se sombrean con sombreado Gouraud. Consulte [vectores normales de cara y vértice (Direct3D 9)](face-and-vertex-normal-vectors.md).
+Las listas de triángulos también son útiles para crear primitivas que tienen bordes nítidos y se sombrean con sombreado de Gouraud. Vea [Vectores normales de caras y vértices (Direct3D 9).](face-and-vertex-normal-vectors.md)
 
-En la ilustración siguiente se muestra una lista de triángulos representada.
+En la ilustración siguiente se muestra una lista de triángulos representados.
 
-![Ilustración de una lista de triángulos representada](images/trilist.png)
+![ilustración de una lista de triángulos representados](images/trilist.png)
 
-En el código siguiente se muestra cómo crear vértices para esta lista de triángulos.
+El código siguiente muestra cómo crear vértices para esta lista de triángulos.
 
 
 ```
@@ -46,7 +46,7 @@ CUSTOMVERTEX Vertices[] =
 
 
 
-En el ejemplo de código siguiente se muestra cómo representar esta lista de triángulos en Direct3D 9 mediante [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
+En el ejemplo de código siguiente se muestra cómo representar esta lista de triángulos en Direct3D 9 mediante [**IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
 
 
 ```
@@ -59,7 +59,7 @@ d3dDevice->DrawPrimitive( D3DPT_TRIANGLELIST, 0, 2 );
 
 
 
-También puede usar bandas triangulares para representar triángulos que no están conectados entre sí. Para ello, especifique un triángulo degenerado (es decir, un triángulo con tamaño cero) en la lista; Esto creará una línea entre los dos triángulos que no aparecerá durante la representación. Por ejemplo, para representar solo el primer y último triángulo del ejemplo anterior, inicialice el búfer de vértices con los siguientes vértices:
+También puede usar franjas de triángulos para representar triángulos que no están conectados entre sí. Para ello, especifique un triángulo degenerado (es decir, un triángulo con tamaño cero) en la lista; esto creará una línea entre los dos triángulos que no aparecerán durante la representación. Por ejemplo, para representar solo el primer y el último triángulo del ejemplo anterior, inicialice el búfer de vértices con los siguientes vértices:
 
 
 ```

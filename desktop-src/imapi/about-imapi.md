@@ -1,6 +1,6 @@
 ---
 title: Acerca de IMAPI
-description: IMAPI permite la creación de medios ópticos mediante una variedad de sistemas de archivos.
+description: IMAPI permite la creación de medios ópticos mediante diversos sistemas de archivos.
 ms.assetid: 12e99e39-8503-4f50-899a-d1ae69d5106d
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,20 +13,20 @@ ms.locfileid: "118758905"
 ---
 # <a name="about-imapi"></a>Acerca de IMAPI
 
-IMAPI permite la creación de medios ópticos mediante una variedad de sistemas de archivos.
+IMAPI permite la creación de medios ópticos mediante diversos sistemas de archivos.
 
 ## <a name="features"></a>Características
 
 IMAPI proporciona las siguientes funcionalidades:
 
--   Crea y graba discos de sesión única y de varias sesiones.
+-   Crea y desmantela discos de sesión única y multisesión.
 -   Crea y arranca discos de arranque.
--   Crea y crea imágenes raw CD de disco a la vez.
+-   Crea y desardena imágenes de disco a la vez de CD sin formato.
 -   Proporciona acceso de bajo nivel al motor de grabación para desarrollar compatibilidad con nuevos dispositivos.
 -   Proporciona acceso a las propiedades de grabadora extendidas para desarrollar compatibilidad con nuevos dispositivos.
 -   Proporciona opciones de comprobación de la grabación.
 
-IMAPI admite los siguientes formatos. Para obtener más información, vea [Formatos de disco](disc-formats.md).
+IMAPI admite los siguientes formatos. Para obtener más información, vea [Formatos de disco.](disc-formats.md)
 
 -   Formato de imagen ISO9660 (incluye Redbook Audio).
 -   Formato Joliet.
@@ -34,7 +34,7 @@ IMAPI admite los siguientes formatos. Para obtener más información, vea [Forma
 
 IMAPI admite los siguientes dispositivos multimedia.
 
--   CD grabable (CD-R). Anteriormente se conoce como escritura de CD una vez.
+-   CD grabable (CD-R). Anteriormente se conocía como ESCRITURA DE CD una vez.
 -   CD reescribible (CD-RW)
 -   DVD grabable (DVD-R y DVD+R).
 -   DVD reescribible (DVD-RW y DVD+RW).
@@ -42,7 +42,7 @@ IMAPI admite los siguientes dispositivos multimedia.
 -   DVD de doble capa grabable (en formatos DVD-R y DVD+R).
 -   BD grabable (BD-R)
 -   BD reescribible (BD-RE)
--   Escribe en otros medios de disco.
+-   Escribe en otros medios de tipo disco.
 
 ## <a name="related-topics"></a>Temas relacionados
 

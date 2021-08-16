@@ -4,22 +4,22 @@ description: La interfaz IBackgroundCopyCallback expone los métodos siguientes.
 ms.assetid: 44DF3117-AF7F-4248-B15E-0DA5F4091BA8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58e2eb48f5e8dbd3a331040d030e2623bc9fa4e1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 952a417897b1cce2d492d7b9fb86fe39d0eca6353d607116423bd0b096df21e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104083640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959474"
 ---
 # <a name="ibackgroundcopycallback-methods-bits"></a>Métodos IBackgroundCopyCallback (BITS)
 
-La interfaz [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) expone los métodos siguientes.
+La [**interfaz IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Método JobError**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-joberror)
+-   [**JobError (método)**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-joberror)
 -   [**Método JobModification**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobmodification)
--   [**Método JobTransferred**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred)
+-   [**JobTransferred (método)**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred)
 
  
 

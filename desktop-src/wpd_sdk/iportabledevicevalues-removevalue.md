@@ -1,7 +1,7 @@
 ---
 description: El método RemoveValue quita un elemento de la colección.
 ms.assetid: 864c23ee-5a4e-4e06-add0-f6aef5562430
-title: 'IPortableDeviceValues:: RemoveValue (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::RemoveValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: f65160cc2798524d88471382c855f65dea2e6033
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2cc21976b72c0d493f1534d63ea5da56fac059db6444ed81c310b9c154f3ee3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963624"
 ---
-# <a name="iportabledevicevaluesremovevalue-method"></a>IPortableDeviceValues:: RemoveValue (método)
+# <a name="iportabledevicevaluesremovevalue-method"></a>IPortableDeviceValues::RemoveValue (método)
 
-El método **RemoveValue** quita un elemento de la colección.
+El **método RemoveValue** quita un elemento de la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,22 +40,22 @@ HRESULT RemoveValue(
 
 <dl> <dt>
 
-*clave* \[ de de\]
+*key* \[ En\]
 </dt> <dd>
 
-**REFPROPERTYKEY** que especifica el elemento que se va a quitar.
+**REFPROPERTYKEY que** especifica el elemento que se quitará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -67,22 +67,22 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues:: GetValue**](iportabledevicevalues-getvalue.md)
+[**IPortableDeviceValues::GetValue**](iportabledevicevalues-getvalue.md)
 </dt> <dt>
 
-[**IPortableDeviceValues:: SetValue**](iportabledevicevalues-setvalue.md)
+[**IPortableDeviceValues::SetValue**](iportabledevicevalues-setvalue.md)
 </dt> </dl>
 
  

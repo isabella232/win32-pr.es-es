@@ -3,7 +3,7 @@ title: Elemento SplitButtonGallery
 description: Representa un control Split Button Gallery (Dividir galería de botones) con un menú desplegable basado en la galería.
 ms.assetid: 65b6af50-6d9a-4285-b2d9-26dfb904d0b8
 keywords:
-- Elemento SplitButtonGallery Windows cinta de opciones
+- Elemento SplitButtonGallery Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:

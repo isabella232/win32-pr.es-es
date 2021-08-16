@@ -1,68 +1,68 @@
 ---
-description: Se puede usar la sintaxis de mensajes criptográficos para codificar mensajes con doble cifrado.
+description: La sintaxis de mensajes criptográficos se puede usar para codificar mensajes sobres.
 ms.assetid: f35aacda-6827-42e9-b7ac-58dc007fc697
-title: Codificación de datos con doble cifrado
+title: Codificación de datos con sobres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53dc20fc7483ba1ef364d8b59824d26bd14d458d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3517a956311373d067072899ee71bcdf742990877c7d569bfe4e5ef7f2757e08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104559449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766770"
 ---
-# <a name="encoding-enveloped-data"></a>Codificación de datos con doble cifrado
+# <a name="encoding-enveloped-data"></a>Codificación de datos con sobres
 
-Los datos con doble cifrado se componen de contenido cifrado de cualquier tipo y claves de sesión cifradas de cifrado de contenido para uno o más destinatarios. Los mensajes con doble cifrado mantienen el contenido del mensaje secreto y permiten que solo las personas o entidades especificadas recuperen el contenido.
+Los datos sobres constan de contenido cifrado de cualquier tipo y claves de sesión de cifrado de contenido cifradas para uno o varios destinatarios. Los mensajes con sobre mantienen el contenido del secreto del mensaje y permiten que solo las personas o entidades especificadas recuperen el contenido.
 
-La sintaxis de mensajes criptográficos (CMS) se puede usar para codificar mensajes con doble cifrado. CMS admite tres técnicas de administración de claves: transporte de claves, contrato de claves y claves de cifrado de claves simétricas (KEK) distribuidas previamente. Los KEK simétricos distribuidos previamente también se conocen como distribución de claves de lista de distribución de correo.
+La sintaxis de mensajes criptográficos (CMS) se puede usar para codificar mensajes sobres. CMS admite tres técnicas de administración de claves: transporte de claves, contrato de claves y claves de cifrado de claves simétricas (KEK) distribuidas previamente. La KEK simétrica distribuida anteriormente también se conoce como distribución de claves de lista de distribución de correo.
 
-En cada una de estas tres técnicas, se genera una clave de sesión única para cifrar el mensaje con doble cifrado. Los problemas de administración de claves solucionan la manera en que el remitente cifra la clave de sesión y la descifra un receptor. Un solo mensaje cifrado se puede distribuir a muchos destinatarios mediante una combinación de las técnicas de administración de claves.
+En cada una de estas tres técnicas, se genera una clave de sesión única para cifrar el mensaje en sobre. Los problemas de administración de claves tratan la manera en que el remitente cifra esa clave de sesión y la descifra un receptor. Un único mensaje cifrado se puede distribuir a muchos destinatarios mediante una combinación de las técnicas de administración de claves.
 
-La administración de claves de transporte de claves utiliza la clave pública del receptor previsto para cifrar la clave de sesión. El receptor descifra la clave de sesión mediante la clave privada asociada a la clave pública que se usó para cifrar. A continuación, el receptor usa la clave de sesión descifrada para descifrar los datos con doble cifrado. Cuando se utiliza el transporte de claves, el receptor no ha confirmado la información sobre la identidad del remitente.
+La administración de claves de transporte de claves usa la clave pública de un receptor previsto para cifrar la clave de sesión. El receptor descifra la clave de sesión mediante la clave privada asociada a la clave pública que se usó para cifrar. A continuación, el receptor usa la clave de sesión descifrada para descifrar los datos sobreados. Cuando se usa el transporte de claves, el receptor no ha confirmado información sobre la identidad del remitente.
 
-En la administración de acuerdos de claves, se genera una clave privada Diffie-Hellman temporal y efímera que se usa para cifrar la clave de sesión. La clave pública correspondiente a la clave privada efímera se incluye como parte de la información del destinatario del mensaje. El destinatario descifra la clave de sesión mediante la clave efímera recibida y usa esta clave de sesión descifrada para descifrar el mensaje con doble cifrado. Mediante el uso del acuerdo de claves efímeras junto con la clave privada del receptor, el receptor del mensaje ha confirmado la información sobre la identidad del remitente.
+En la administración de contratos de claves, se genera una clave Diffie-Hellman clave privada temporal y se usa para cifrar la clave de sesión. La clave pública correspondiente a la clave privada efímera se incluye como parte de la información del destinatario del mensaje. El destinatario descifra la clave de sesión mediante la clave efímera recibida y usa esta clave de sesión descifrada para descifrar el mensaje sobres. Mediante el acuerdo de clave efímera junto con la clave privada del receptor, el receptor del mensaje tiene información confirmada sobre la identidad del remitente.
 
-Para la administración de claves mediante [*claves simétricas*](../secgloss/s-gly.md)distribuidas previamente, cada mensaje incluye la clave de cifrado de contenido que se ha cifrado con una clave de cifrado de clave distribuida previamente. Los receptores usan la clave de cifrado de clave distribuida previamente para descifrar la clave de cifrado de contenido y, a continuación, usan la clave de cifrado de contenido descifrado para descifrar el mensaje con doble cifrado.
+Para la administración de [](../secgloss/s-gly.md)claves mediante claves simétricas distribuidas previamente, cada mensaje incluye la clave de cifrado de contenido que se ha cifrado con una clave de cifrado de claves distribuida previamente. Los receptores usan la clave de cifrado de claves distribuida previamente para descifrar la clave de cifrado de contenido y, a continuación, usan la clave de cifrado de contenido descifrada para descifrar el mensaje envoltorio.
 
-En la ilustración siguiente se muestra una secuencia CMS típica de eventos para codificar los datos con doble cifrado.
+En la ilustración siguiente se muestra una secuencia típica de eventos de CMS para codificar datos sobreados.
 
-![codificación de datos con doble cifrado](images/envelmsg.png)
+![codificación de datos envolventes](images/envelmsg.png)
 
--   Se recupera un puntero al mensaje de [*texto simple*](../secgloss/p-gly.md) .
--   Se genera una clave simétrica ([*sesión*](../secgloss/s-gly.md)).
--   La [*clave simétrica*](../secgloss/s-gly.md) y el algoritmo de cifrado especificado se utilizan para cifrar los datos del mensaje.
--   Se abre un [*almacén de certificados*](../secgloss/c-gly.md) .
+-   Se recupera un [*puntero*](../secgloss/p-gly.md) al mensaje de texto no cifrado.
+-   Se genera una [*clave simétrica (sesión).*](../secgloss/s-gly.md)
+-   La [*clave simétrica y*](../secgloss/s-gly.md) el algoritmo de cifrado especificado se usan para cifrar los datos del mensaje.
+-   Se [*abre un almacén*](../secgloss/c-gly.md) de certificados.
 -   El certificado del destinatario se recupera del almacén.
 -   La [*clave pública*](../secgloss/p-gly.md) se recupera del certificado del destinatario.
--   Con la clave pública del destinatario, la clave simétrica está cifrada.
--   En el certificado del destinatario, se recupera el identificador del destinatario.
+-   Con la clave pública del destinatario, se cifra la clave simétrica.
+-   Desde el certificado del destinatario, se recupera el identificador del destinatario.
 -   La siguiente información se incluye en el mensaje con sobre digital: el algoritmo de cifrado de datos, los datos cifrados, la clave simétrica cifrada y la estructura de información del destinatario.
 
-Para usar funciones de mensaje de bajo nivel para realizar las tareas típicas que se acaban de mostrar, use el procedimiento siguiente.
+Para usar funciones de mensaje de bajo nivel para realizar las tareas típicas que se enumeran, use el procedimiento siguiente.
 
-**Para codificar un mensaje con doble cifrado**
+**Para codificar un mensaje sobre**
 
 1.  Cree o recupere el contenido.
 2.  Obtener un proveedor de servicios criptográficos.
-3.  Obtener un certificado de destinatario.
-4.  Inicializa la estructura de [**\_ información de \_ codificación \_ con doble cifrado de CMSG**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_enveloped_encode_info) .
-5.  Llame a [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength) para obtener el tamaño del BLOB del mensaje codificado. Asigne memoria.
-6.  Llame a [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), pasando CMSG \_ sobre *dwMsgType* y un puntero a la información de [**\_ \_ codificación \_ con doble cifrado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_enveloped_encode_info) para *pvMsgEncodeInfo*. Como resultado de esta llamada, obtendrá un identificador para el mensaje abierto.
-7.  Llame a [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate), pasando el identificador recuperado en el paso 6 y un puntero a los datos que se van a cifrar, sobre y codificar. Se puede llamar a esta función tantas veces como sea necesario para completar el proceso de codificación.
-8.  Llame a [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), pasando el identificador recuperado en el paso 6 y los tipos de parámetro adecuados para tener acceso a los datos codificados deseados. Por ejemplo, pase \_ el parámetro de contenido CMSG \_ para obtener un puntero al mensaje PKCS \# 7 completo.
+3.  Obtenga un certificado de destinatario.
+4.  Inicialice [**la estructura \_ CMSG ENVELOPED \_ ENCODE \_ INFO.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_enveloped_encode_info)
+5.  Llame [**a CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength) para obtener el tamaño del blob del mensaje codificado. Asigne memoria para ella.
+6.  Llame a [**CryptMsgOpenToEncode y**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode)pase CMSG ENVELOPED para dwMsgType y un puntero \_ a [**CMSG \_ ENVELOPED \_ ENCODE \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_enveloped_encode_info) para  *pvMsgEncodeInfo*. Como resultado de esta llamada, recibirá un identificador para el mensaje abierto.
+7.  Llame a [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate), pasando el identificador recuperado en el paso 6 y un puntero a los datos que se va a cifrar, envolviendo y codificando. Se puede llamar a esta función tantas veces como sea necesario para completar el proceso de codificación.
+8.  Llame [**a CryptMsgGetParam,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam)pasando el identificador recuperado en el paso 6 y los tipos de parámetro adecuados para tener acceso a los datos codificados deseados. Por ejemplo, pase CMSG CONTENT PARAM para \_ obtener un puntero a todo el mensaje \_ PKCS \# 7.
 
-    Si el resultado de esta codificación se va a usar como [*datos internos*](../secgloss/i-gly.md) de otro mensaje codificado, como un mensaje con doble cifrado, \_ \_ \_ se debe pasar el parámetro de parámetro CMSG de código sin sistema operativo. Para obtener un ejemplo, vea [código alternativo para codificar un mensaje con doble cifrado](alternate-code-for-encoding-an-enveloped-message.md).
+    Si el resultado de esta codificación [](../secgloss/i-gly.md) se va a usar como los datos internos de otro mensaje codificado, como un mensaje con sobres, se debe pasar el parámetro DE CMSG \_ BARE CONTENT \_ \_ PARAM. Para obtener un ejemplo, vea [Código alternativo para codificar un mensaje sobres](alternate-code-for-encoding-an-enveloped-message.md).
 
-9.  Cierre el mensaje mediante una llamada a [**CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose).
+9.  Cierre el mensaje mediante una llamada [**a CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose).
 
-El resultado de este procedimiento es un mensaje codificado que contiene los datos cifrados, la [*clave simétrica*](../secgloss/s-gly.md) cifrada con las claves públicas del destinatario y las estructuras de datos de información de destinatarios. La combinación de contenido cifrado y una clave simétrica cifrada para un destinatario es una [*envoltura digital*](../secgloss/d-gly.md) para ese destinatario. Se puede hacer sobre cualquier tipo de contenido para varios destinatarios.
+El resultado de este procedimiento es un mensaje codificado [](../secgloss/s-gly.md) que contiene los datos cifrados, la clave simétrica cifrada con las claves públicas del destinatario y las estructuras de datos de información del destinatario. La combinación de contenido cifrado y una clave simétrica cifrada para un destinatario es un [*sobre digital*](../secgloss/d-gly.md) para ese destinatario. Cualquier tipo de contenido se puede envoltorio para varios destinatarios.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Programa C de ejemplo: codificar un mensaje con signo de cifrado](example-c-program-encoding-an-enveloped-signed-message.md)
+[Programa C de ejemplo: codificación de un mensaje con sobres firmado](example-c-program-encoding-an-enveloped-signed-message.md)
 </dt> </dl>
 
  

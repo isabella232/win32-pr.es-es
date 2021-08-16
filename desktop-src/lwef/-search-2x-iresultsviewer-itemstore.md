@@ -1,10 +1,10 @@
 ---
-title: Propiedad IResultsViewer ItemStore (WdsView.h)
+title: Propiedad ItemStore de IResultsViewer (WdsView.h)
 description: Esta propiedad establecerá o devolverá el nombre del almacén por el que filtrar los resultados.
 ms.assetid: c2a60485-c8f7-4951-a75e-2e6f6dcc2e4f
 keywords:
 - Características heredadas del entorno de Windows ItemStore
-- Propiedades de ItemStore heredadas Windows Environment Features , IResultsViewer (interfaz)
+- Propiedad ItemStore Legacy Windows Environment Features , IResultsViewer (Interfaz IResultsViewer)
 - IResultsViewer interface Legacy Windows Environment Features , ItemStore property
 topic_type:
 - apiref
@@ -25,10 +25,10 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118753906"
 ---
-# <a name="iresultsvieweritemstore-property"></a>Propiedad IResultsViewer::ItemStore
+# <a name="iresultsvieweritemstore-property"></a>IResultsViewer::ItemStore, propiedad
 
 > [!NOTE]
-> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use Windows [Search API](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
 Esta propiedad establecerá o devolverá el nombre del almacén por el que filtrar los resultados.
 
@@ -59,8 +59,8 @@ Establece los nombres del almacén.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                 |
-| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio sp1 \[\]<br/>                        |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                        |
 | Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                        |
 | Header<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 

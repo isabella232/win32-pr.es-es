@@ -1,23 +1,23 @@
 ---
-description: A continuación se indican las funciones ImageHlp.
+description: Las siguientes son las funciones ImageHlp.
 ms.assetid: 926f412e-25ba-4f9c-a118-b5a1bc723379
-title: Funciones ImageHlp
+title: ImageHlp (Funciones)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16e921707474f68e288f67e84dda9e361922bca0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f2650d80dfb78f346a5fab22e0adfabdfb11c8e626ad3b5ea39930337feaebe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957114"
 ---
-# <a name="imagehlp-functions"></a>Funciones ImageHlp
+# <a name="imagehlp-functions"></a>ImageHlp (Funciones)
 
-A continuación se indican las funciones ImageHlp.
+Las siguientes son las funciones ImageHlp.
 
 ## <a name="image-access"></a>Acceso a imágenes
 
-Las funciones de acceso a la imagen obtienen acceso a los datos de una imagen ejecutable. Las funciones proporcionan acceso de alto nivel a la base de imágenes y acceso muy específico a las partes más comunes de los datos de una imagen.
+Las funciones de acceso a imágenes acceden a los datos de una imagen ejecutable. Las funciones proporcionan acceso de alto nivel a la base de imágenes y acceso muy específico a las partes más comunes de los datos de una imagen.
 
 <dl>
 
@@ -32,7 +32,7 @@ Las funciones de acceso a la imagen obtienen acceso a los datos de una imagen ej
 
 ## <a name="image-integrity"></a>Integridad de la imagen
 
-Las funciones de integridad de la imagen administran el conjunto de certificados en un archivo de imagen.
+Las funciones de integridad de imagen administran el conjunto de certificados en un archivo de imagen.
 
 <dl>
 
@@ -45,7 +45,7 @@ Las funciones de integridad de la imagen administran el conjunto de certificados
 [**ImageRemoveCertificate**](/windows/desktop/api/Imagehlp/nf-imagehlp-imageremovecertificate)  
 </dl>
 
-## <a name="image-modification"></a>Modificación de imagen
+## <a name="image-modification"></a>Modificación de la imagen
 
 Las funciones de modificación de imágenes permiten cambiar la imagen ejecutable.
 

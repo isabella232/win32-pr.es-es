@@ -4,13 +4,13 @@ title: User Input Extended Example description: User Input: Extended Example ms.
 
 # <a name="user-input-extended-example"></a>Entrada del usuario: ejemplo extendido
 
-Vamos a combinar todo lo que hemos aprendido sobre la entrada del usuario para crear un sencillo programa de dibujo. Esta es una captura de pantalla del programa:
+Vamos a combinar todo lo que hemos aprendido sobre la entrada del usuario para crear un programa de dibujo simple. Esta es una captura de pantalla del programa:
 
 ![captura de pantalla del programa de dibujo](images/input03.png)
 
-El usuario puede dibujar puntos suspensivos en varios colores diferentes y seleccionar, mover o eliminar puntos suspensivos. Para que la interfaz de usuario sea sencilla, el programa no permite al usuario seleccionar los colores de elipse. En su lugar, el programa pasa automáticamente por una lista predefinida de colores. El programa no admite formas distintas de los puntos suspensivos. Obviamente, este programa no ganará ningún premio por el software de gráficos. Sin embargo, sigue siendo un ejemplo útil del que aprender. Puede descargar el código fuente completo de [Ejemplo de dibujo simple](simple-drawing-sample.md). En esta sección solo se tratarán algunos aspectos destacados.
+El usuario puede dibujar puntos suspensivos en varios colores diferentes y seleccionar, mover o eliminar puntos suspensivos. Para que la interfaz de usuario sea sencilla, el programa no permite al usuario seleccionar los colores de elipse. En su lugar, el programa recorrerá automáticamente una lista predefinida de colores. El programa no admite formas distintas de los puntos suspensivos. Obviamente, este programa no ganará ningún premio por el software de gráficos. Sin embargo, sigue siendo un ejemplo útil del que aprender. Puede descargar el código fuente completo de [Ejemplo de dibujo simple](simple-drawing-sample.md). En esta sección solo se tratarán algunos aspectos destacados.
 
-Los puntos suspensivos se representan en el programa mediante una estructura que contiene los datos de elipse [**(D2D1 \_ ELLIPSE**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse)) y el color ([**D2D1 \_ COLOR \_ F**](/windows/desktop/Direct2D/d2d1-color-f)). La estructura también define dos métodos: un método para dibujar la elipse y un método para realizar pruebas de acceso.
+Los puntos suspensivos se representan en el programa mediante una estructura que contiene los datos de elipse ([**D2D1 \_ ELLIPSE**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse)) y el color ([**D2D1 \_ COLOR \_ F**](/windows/desktop/Direct2D/d2d1-color-f)). La estructura también define dos métodos: un método para dibujar la elipse y un método para realizar pruebas de impacto.
 
 
 ```C++
@@ -43,7 +43,7 @@ struct MyEllipse
 
 El programa usa el mismo pincel de color sólido para dibujar el relleno y el contorno de cada elipse, cambiando el color según sea necesario. En Direct2D, cambiar el color de un pincel de color sólido es una operación eficaz. Por lo tanto, el objeto de pincel de color sólido admite un [**método SetColor.**](/windows/desktop/Direct2D/id2d1solidcolorbrush-setcolor)
 
-Los puntos suspensivos se almacenan en un contenedor de lista **de** STL:
+Los puntos suspensivos se almacenan en un contenedor **de** lista de STL:
 
 
 ```C++
@@ -100,7 +100,7 @@ En la tabla siguiente se resumen los efectos de la entrada del mouse en cada uno
 
  
 
-El método siguiente de la `MainWindow` clase controla los mensajes [**\_ LBUTTONDOWN de WM.**](/windows/desktop/inputdev/wm-lbuttondown)
+El método siguiente de la `MainWindow` clase controla los mensajes WM [**\_ LBUTTONDOWN.**](/windows/desktop/inputdev/wm-lbuttondown)
 
 
 ```C++
@@ -142,9 +142,9 @@ void MainWindow::OnLButtonDown(int pixelX, int pixelY, DWORD flags)
 
 
 
-Las coordenadas del mouse se pasan a este método en píxeles y, a continuación, se convierten en DIP. Es importante no confundir estas dos unidades. Por ejemplo, la [**función DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) usa píxeles, pero el dibujo y las pruebas de impacto usan DIP. La regla general es que las funciones relacionadas con las ventanas o la entrada del mouse usan píxeles, mientras que Direct2D y DirectWrite usan DIP. Pruebe siempre el programa con una configuración de valores altos de PPP y recuerde marcar el programa como compatible con PPP. Para obtener más información, vea [PPP y Device-Independent Pixels](dpi-and-device-independent-pixels.md).
+Las coordenadas del mouse se pasan a este método en píxeles y, a continuación, se convierten en DIP. Es importante no confundir estas dos unidades. Por ejemplo, la [**función DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) usa píxeles, pero el dibujo y las pruebas de impacto usan DIP. La regla general es que las funciones relacionadas con las ventanas o la entrada del mouse usan píxeles, mientras que Direct2D y DirectWrite DIP. Pruebe siempre el programa con una configuración de valores altos de PPP y recuerde marcar el programa como compatible con PPP. Para obtener más información, vea [PPP y Device-Independent Píxeles](dpi-and-device-independent-pixels.md).
 
-Este es el código que controla los [**mensajes \_ MOUSEMOVE de WM.**](/windows/desktop/inputdev/wm-mousemove)
+Este es el código que controla los [**mensajes \_ WM MOUSEMOVE.**](/windows/desktop/inputdev/wm-mousemove)
 
 
 ```C++
@@ -178,7 +178,7 @@ void MainWindow::OnMouseMove(int pixelX, int pixelY, DWORD flags)
 
 
 
-La lógica para cambiar el tamaño de una elipse se describió anteriormente, en la sección [Ejemplo: Círculos de dibujo](mouse-movement.md). Observe también la llamada a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esto se asegura de que la ventana se vuelva a dibujar. El código siguiente controla los [**mensajes \_ de WM LBUTTONUP.**](/windows/desktop/inputdev/wm-lbuttonup)
+La lógica para cambiar el tamaño de una elipse se describió anteriormente, en la sección [Ejemplo: Dibujar círculos](mouse-movement.md). Observe también la llamada a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esto se asegura de que la ventana se vuelva a dibujar. El código siguiente controla los [**mensajes \_ LBUTTONUP de WM.**](/windows/desktop/inputdev/wm-lbuttonup)
 
 
 ```C++
@@ -199,9 +199,9 @@ void MainWindow::OnLButtonUp()
 
 
 
-Como puede ver, los controladores de mensajes para la entrada del mouse tienen código de bifurcación, dependiendo del modo actual. Este es un diseño aceptable para este programa bastante sencillo. Sin embargo, podría volverse demasiado complejo si se agregan nuevos modos. Para un programa más grande, una arquitectura de controlador de vista de modelos (MVC) podría ser un mejor diseño. En este tipo de arquitectura, el *controlador*, que controla la entrada del usuario, se separa del modelo *,* que administra los datos de la aplicación.
+Como puede ver, los controladores de mensajes para la entrada del mouse tienen código de bifurcación, dependiendo del modo actual. Este es un diseño aceptable para este programa bastante sencillo. Sin embargo, podría volverse demasiado complejo si se agregan nuevos modos. Para un programa más grande, una arquitectura de controlador de vista de modelos (MVC) podría ser un mejor diseño. En este tipo de arquitectura, el *controlador*, que controla la entrada del usuario, está separado del modelo *,* que administra los datos de la aplicación.
 
-Cuando el programa cambia de modo, el cursor cambia para proporcionar comentarios al usuario.
+Cuando el programa cambia de modo, el cursor cambia para enviar comentarios al usuario.
 
 
 ```C++

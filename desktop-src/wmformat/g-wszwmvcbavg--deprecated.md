@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCBAvg (Wmcodecdsp.h)
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCBAvg (Wmcodecdsp.h)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCBAvg (Wmcodecdsp.h)
 ms.assetid: c838375d-0ba0-4e12-be9d-f4c455f35114
 keywords:
 - g_wszWMVCBAvg windows Media Format
@@ -23,7 +23,7 @@ ms.locfileid: "117847999"
 ---
 # <a name="g_wszwmvcbavg"></a>g \_ wszWMVCBAvg
 
-Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señales digitales, consulte Windows [Media Audio and Video Codec y LAS API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 

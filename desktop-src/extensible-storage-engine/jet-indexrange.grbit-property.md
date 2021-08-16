@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEXRANGE. grbit'
-title: Propiedad JET_INDEXRANGE. grbit
+description: 'Más información sobre: JET_INDEXRANGE.grbit'
+title: JET_INDEXRANGE.grbit, propiedad
 TOCTitle: 'grbit property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXRANGE.grbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexrange.grbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 60ae6e3e0bc142afd80624302df4aee919a5a755
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2281f6aba08be58ee0ebe5e3f61539a08ac9637829a5a171a7c22031c24c046
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980225"
 ---
-# <a name="jet_indexrangegrbit-property"></a>Propiedad JET_INDEXRANGE. grbit
+# <a name="jet_indexrangegrbit-property"></a>JET_INDEXRANGE.grbit, propiedad
 
 Obtiene o establece la opción indexrange.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public IndexRangeGrbit grbit { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft. ISAM. esent. Interop. IndexRangeGrbit](./indexrangegrbit-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.IndexRangeGrbit](./indexrangegrbit-enumeration.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXRANGE (clase)](./jet-indexrange-class.md)
+[JET_INDEXRANGE clase](./jet-indexrange-class.md)
 
-[Miembros de JET_INDEXRANGE](./jet-indexrange-members.md)
+[JET_INDEXRANGE miembros](./jet-indexrange-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

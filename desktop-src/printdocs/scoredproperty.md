@@ -1,21 +1,21 @@
 ---
-description: Busque información sobre el elemento ScoredProperty. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Busque información sobre el elemento ScoredProperty. Este tema no está al día. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 0552d301-5105-490f-962b-135c8c2e936b
 title: ScoredProperty
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb93fbdaeb6101cbd1ff75d6c0b3a829afe0d317
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: eb600f3fa30c475f7bf28ab1e4c12b19875b6ef49e4f6f3537aead95bf47b999
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033893"
 ---
 # <a name="scoredproperty"></a>ScoredProperty
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Un elemento ScoredProperty declara una propiedad intrínseca a una definición de opción. Estas propiedades se deben comparar al evaluar la coincidencia de una opción solicitada con una opción compatible con el dispositivo.
+Un elemento ScoredProperty declara una propiedad intrínseca a una definición de opción. Estas propiedades se deben comparar al evaluar el nivel de coincidencia de una opción solicitada con una opción compatible con el dispositivo.
 
 ## <a name="element-tag"></a>Etiqueta de elemento
 
@@ -35,7 +35,7 @@ En la tabla siguiente se enumeran los atributos XML que pueden pertenecer a este
 
  
 
-Para más información, consulte la [sección Atributos XML.](xml-attributes.md)
+Para obtener más información, vea la [sección Atributos XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -46,8 +46,8 @@ En la tabla siguiente se enumeran los elementos que pueden ser elementos primari
 | Category                   | Detalles                                                                                                                                                                  |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Elementos primarios<br/> | *Opción*<br/> *ScoredProperty*<br/>                                                                                                                          |
-| Elementos secundarios<br/>  | Es posible usar el<br/> *ParameterRef* (uno)<br/> or<br/> *Valor* (uno)<br/> *Propiedad* (cero o más)<br/> *ScoredProperty* (cero o más)<br/> |
-| Este elemento<br/>    | No se permiten datos de caracteres.<br/> No se permiten elementos secundarios duplicados relacionados.<br/>                                                                        |
+| Elementos secundarios<br/>  | Es posible usar el<br/> *ParameterRef* (uno)<br/> o<br/> *Valor* (uno)<br/> *Propiedad* (cero o más)<br/> *ScoredProperty* (cero o más)<br/> |
+| Este elemento<br/>    | No se permiten datos de caracteres.<br/> No se permiten elementos secundarios duplicados del mismo nivel.<br/>                                                                        |
 
 
 

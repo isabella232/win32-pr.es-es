@@ -1,5 +1,5 @@
 ---
-description: Representa un punto de acceso de servicio (SAP), que puede utilizar o invocar un servicio. Las SAP indican que hay un servicio disponible para que lo usen otras entidades.
+description: Representa un punto de acceso de servicio (SAP), que puede utilizar o invocar un servicio. Los PROVEEDORES de servicios indican que hay un servicio disponible para que lo usen otras entidades.
 ms.assetid: 09349c95-3f7e-46c5-bea1-c3d14ee16a2a
 title: CIM_ServiceAccessPoint (administración de Hyper-V)
 ms.topic: reference
@@ -26,7 +26,7 @@ ms.locfileid: "118647577"
 ---
 # <a name="cim_serviceaccesspoint-class-hyper-v-management"></a>CIM_ServiceAccessPoint (administración de Hyper-V)
 
-Representa un punto de acceso de servicio (SAP), que puede utilizar o invocar un servicio. Las SAP indican que hay un servicio disponible para que lo usen otras entidades.
+Representa un punto de acceso de servicio (SAP), que puede utilizar o invocar un servicio. Los PROVEEDORES de servicios indican que hay un servicio disponible para que lo usen otras entidades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,13 +43,13 @@ class CIM_ServiceAccessPoint : CIM_EnabledLogicalElement
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ ServiceAccessPoint de CIM** tiene estos tipos de miembros:
+La **clase Cim \_ ServiceAccessPoint** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ ServiceAccessPoint de CIM** tiene estas propiedades.
+La **clase Cim \_ ServiceAccessPoint** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de clase utilizado para crear una instancia de esta clase. **CreationClassName se** combina con otras propiedades clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
+Nombre de clase utilizado para crear una instancia de esta clase. **CreationClassName** se combina con otras propiedades clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Nombre del sistema que contiene el SAP.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -131,7 +131,7 @@ Nombre del sistema que contiene el SAP.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

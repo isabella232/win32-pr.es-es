@@ -27,16 +27,16 @@ No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-Applications                         |
 | Ldap-Display-Name | mS-SQL-Applications                         |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1400                     |
 | System-Id-Guid    | fbcda2ea-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,14 +53,14 @@ No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Es de un solo valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
@@ -74,14 +74,14 @@ No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Es de un solo valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
@@ -95,14 +95,14 @@ No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Es de un solo valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
@@ -116,14 +116,14 @@ No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Es de un solo valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
@@ -137,14 +137,14 @@ No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Es de un solo valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
@@ -158,14 +158,14 @@ No se usa. El valor predeterminado es Appl 1, Appl 2, Appl 3, Appl 4 y Appl 5.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Es de un solo valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |

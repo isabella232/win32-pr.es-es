@@ -1,9 +1,9 @@
 ---
-title: función gluPwlCurve (GLU. h)
-description: La función gluPwlCurve describe una curva de recorte B-spline racional no uniforme (NURBS) a trozos lineal.
+title: Función gluPwlCurve (Glu.h)
+description: La función gluPwlCurve describe una curva de recorte lineal lineal no uniforme de B-Spline lógica (DSLBS).
 ms.assetid: 3d08e7e8-dfdf-447c-9795-bd73299412b5
 keywords:
-- gluPwlCurve (función) OpenGL
+- Función GluPwlCurve OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d15c532659811c7e499369e7798c4b1ceaf842bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9911619e54247c633d4b3cecc69327f92da6a7f27c3cebf9231ec86ad0f0a20d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105666041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061573"
 ---
-# <a name="glupwlcurve-function"></a>gluPwlCurve función)
+# <a name="glupwlcurve-function"></a>Función gluPwlCurve
 
-La función **gluPwlCurve** describe una curva de recorte B-spline racional no uniforme ([NURBS](using-nurbs-curves-and-surfaces.md)) a trozos lineal.
+La **función gluPwlCurve** describe una curva de recorte lineal lineal no uniforme de B-Spline lógica [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ void WINAPI gluPwlCurve(
 *nobj* 
 </dt> <dd>
 
-El objeto NURBS (creado con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+El objeto RGBBS (creado [**con gluNewNurbsRenderer).**](glunewnurbsrenderer.md)
 
 </dd> <dt>
 
@@ -61,11 +61,11 @@ Número de puntos de la curva.
 *array* 
 </dt> <dd>
 
-Una matriz que contiene los puntos de curva.
+Matriz que contiene los puntos de curva.
 
 </dd> <dt>
 
-*STRI* 
+*Paso* 
 </dt> <dd>
 
 Desplazamiento (un número de valores de punto flotante de precisión sencilla) entre los puntos de la curva.
@@ -75,7 +75,7 @@ Desplazamiento (un número de valores de punto flotante de precisión sencilla) 
 *type* 
 </dt> <dd>
 
-Tipo de curva. Debe ser GLU \_ MAP1 \_ Trim \_ 2 o Glu \_ MAP1 \_ Trim \_ 3.
+Tipo de curva. Debe ser GLU \_ MAP1 \_ TRIM \_ 2 o GLU \_ MAP1 \_ TRIM \_ 3.
 
 </dd> </dl>
 
@@ -83,27 +83,27 @@ Tipo de curva. Debe ser GLU \_ MAP1 \_ Trim \_ 2 o Glu \_ MAP1 \_ Trim \_ 3.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluPwlCurve** describe una curva de recorte lineal a trozos para una superficie NURBS. Una curva lineal a trozos consta de una lista de coordenadas de puntos en el espacio de parámetros para que se recorte la superficie NURBS. Estos puntos están conectados con segmentos de línea para formar una curva. Si la curva es una aproximación a una curva real, los puntos deben ser lo suficientemente cercanos para que el trazado resultante aparezca curvado en la resolución usada en la aplicación.
+La **función gluPwlCurve** describe una curva de recorte lineal por fragmentos para una superficie DE ASEBS. Una curva lineal por fragmentos consta de una lista de coordenadas de puntos en el espacio de parámetros para la superficie DE LA BASE DE DATOS QUE se va a recortar. Estos puntos están conectados con segmentos de línea para formar una curva. Si la curva es una aproximación a una curva real, los puntos deben estar lo suficientemente cerca como para que la ruta de acceso resultante aparezca curvada en la resolución utilizada en la aplicación.
 
-Si *Type* es Glu \_ MAP1 \_ Trim \_ 2, describe una curva en el espacio de parámetros bidimensional (*u* y *v*). Si es GLU \_ MAP1 \_ Trim \_ 3, describe una curva en el espacio de parámetros homogéneos bidimensionales (*u*, *v* y *w*). Para obtener más información sobre las curvas de recorte, vea [**gluBeginTrim**](glubegintrim.md).
+Si *type* es GLU MAP1 TRIM 2, describe una curva en un espacio de parámetros \_ \_ \_ bidimensional *(u* y *v).* Si es GLU MAP1 TRIM 3, describe una curva en un espacio de parámetros \_ \_ \_ homogéneo bidimensional *(u,* *v* y *w).* Para obtener más información sobre el recorte de curvas, [**vea gluBeginTrim**](glubegintrim.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

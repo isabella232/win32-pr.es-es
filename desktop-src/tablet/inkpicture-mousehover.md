@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando el puntero del mouse se desplaza sobre el control InkPicture.
+description: Se produce cuando el puntero del mouse mantiene el puntero sobre el control InkPicture.
 ms.assetid: 95a03833-529e-4fca-b8df-ae7edefc8e5e
-title: Evento InkPicture. MouseHover (Msinkaut. h)
+title: Evento InkPicture.MouseHover (Ms mouseut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32f896d69cea95456d637d8f1195d66376d92049
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30c0e0e5d363241944e24cea3286445e6bb026d480ca54f098472a0b65ac7c7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967074"
 ---
-# <a name="inkpicturemousehover-event"></a>Evento InkPicture. MouseHover
+# <a name="inkpicturemousehover-event"></a>Evento InkPicture.MouseHover
 
-Se produce cuando el puntero del mouse se desplaza sobre el control [InkPicture](inkpicture-control-reference.md) .
+Se produce cuando el puntero del mouse mantiene el puntero sobre el control [InkPicture.](inkpicture-control-reference.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,24 +32,24 @@ Este evento no tiene parámetros.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La interfaz **\_ IInkPictureEvents** implementa la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEMouseHover.
+Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEMouseHover.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

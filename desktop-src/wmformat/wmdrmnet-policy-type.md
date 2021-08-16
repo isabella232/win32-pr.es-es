@@ -26,7 +26,7 @@ ms.locfileid: "118697817"
 
 El **tipo de enumeración WMDRMNET \_ POLICY \_ TYPE** enumera los tipos de directivas que están disponibles para Windows DRM multimedia para operaciones de dispositivos de red.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,14 +45,14 @@ typedef enum WMDRMNET_POLICY_TYPE {
 <span id="WMDRMNET_POLICY_TYPE_UNDEFINED"></span><span id="wmdrmnet_policy_type_undefined"></span>**TIPO DE DIRECTIVA WMDRMNET \_ \_ SIN \_ DEFINIR**
 </dt> <dd>
 
-No se admiten tipos de directiva no definidos.
+No se admiten los tipos de directiva no definidos.
 
 </dd> <dt>
 
-<span id="WMDRMNET_POLICY_TYPE_TRANSCRYPTPLAY"></span><span id="wmdrmnet_policy_type_transcryptplay"></span>**TRANSCRYPTPLAY \_ DEL TIPO \_ DE DIRECTIVA \_ WMDRMNET**
+<span id="WMDRMNET_POLICY_TYPE_TRANSCRYPTPLAY"></span><span id="wmdrmnet_policy_type_transcryptplay"></span>**TIPO DE DIRECTIVA DE WMDRMNET \_ \_ \_ TRANSCRYPTPLAY**
 </dt> <dd>
 
-La directiva rige la capacidad de convertir contenido protegido por drm multimedia de Windows en DRM multimedia de Windows protegido para los datos de dispositivos de red y reproducirlo en un dispositivo en red.
+La directiva rige la capacidad de convertir contenido protegido por drm multimedia de Windows en drm multimedia de Windows protegido para dispositivos de red y reproducirlo en un dispositivo en red.
 
 </dd> </dl>
 
@@ -70,14 +70,14 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Tipos de enumeración**](drm-enumeration-types.md)
 </dt> <dt>
 
-[**DIRECTIVA DE \_ WMDRMNET**](wmdrmnet-policy.md)
+[**DIRECTIVA \_ WMDRMNET**](wmdrmnet-policy.md)
 </dt> </dl>
 
  

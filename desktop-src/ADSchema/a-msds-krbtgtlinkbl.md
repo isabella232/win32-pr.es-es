@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-KrbTgt-Link-BL
-description: Vínculo hacia atrás para el atributo MS-DS-KrbTgt-Link.
+title: Atributo ms-DS-KrbTgt-Link-BL
+description: Vínculo hacia atrás para el atributo ms-DS-KrbTgt-Link.
 ms.assetid: dcaa8257-260c-4eae-8c82-762d70d62281
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-KrbTgt-Link-BL
-- Esquema de AD de atributo msDS-KrbTgtLinkBl
+- ms-DS-KrbTgt-Link-BL attribute AD Schema
+- msDS-KrbTgtLinkBl attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11fc821ccd4515dcfc2932855c58bbad9525f8de
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bc94ab62be3cb1f37941c92aa8e339d17f95f4927962b491ca123489f9c792a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960734"
 ---
-# <a name="ms-ds-krbtgt-link-bl-attribute"></a>atributo MS-DS-KrbTgt-Link-BL
+# <a name="ms-ds-krbtgt-link-bl-attribute"></a>Atributo ms-DS-KrbTgt-Link-BL
 
-Vínculo hacia atrás para el atributo [**MS-DS-KrbTgt-Link**](a-msds-krbtgtlink.md) .
+Vínculo hacia atrás para [**el atributo ms-DS-KrbTgt-Link.**](a-msds-krbtgtlink.md)
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-KrbTgt-Link-BL                    |
-| Nombre para mostrar de LDAP | msDS-KrbTgtLinkBl                       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-KrbTgt-Link-BL                    |
+| Ldap-Display-Name | msDS-KrbTgtLinkBl                       |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1931                 |
-| System-ID-GUID    | 5dd68c41-bfdf-438b-9b5d-39d9618bf260    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 5dd68c41-bfdf-438b-9b5d-39d9618bf260    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -50,15 +50,15 @@ Vínculo hacia atrás para el atributo [**MS-DS-KrbTgt-Link**](a-msds-krbtgtlink
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2101                            |
+| Id. de vínculo                | 2101                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -71,15 +71,15 @@ Vínculo hacia atrás para el atributo [**MS-DS-KrbTgt-Link**](a-msds-krbtgtlink
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2101                            |
+| Id. de vínculo                | 2101                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,15 +92,15 @@ Vínculo hacia atrás para el atributo [**MS-DS-KrbTgt-Link**](a-msds-krbtgtlink
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2101                            |
+| Id. de vínculo                | 2101                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

@@ -1,7 +1,7 @@
 ---
-description: El método AddSource del objeto Installer agrega un origen a la lista de orígenes de red válidos en sourcelist.
+description: El método AddSource del objeto Installer agrega un origen a la lista de orígenes de red válidos en la lista de orígenes.
 ms.assetid: e24c8484-fe84-4f97-9c06-c063bb7c6810
-title: Installer.AddSource (método)
+title: Método Installer.AddSource
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118633190"
 ---
-# <a name="installeraddsource-method"></a>Installer.AddSource (método)
+# <a name="installeraddsource-method"></a>Método Installer.AddSource
 
-El **método AddSource** del objeto [**Installer**](installer-object.md) agrega un origen a la lista de orígenes de red válidos en sourcelist.
+El **método AddSource** del objeto [**Installer**](installer-object.md) agrega un origen a la lista de orígenes de red válidos en la lista de orígenes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Especifica el código de producto.
 *User* 
 </dt> <dd>
 
-Nombre de usuario para la instalación por usuario; Cadena nula o vacía para la instalación por equipo.
+Nombre de usuario para la instalación por usuario; Cadena nula o vacía para la instalación por máquina.
 
 </dd> <dt>
 
@@ -70,15 +70,15 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

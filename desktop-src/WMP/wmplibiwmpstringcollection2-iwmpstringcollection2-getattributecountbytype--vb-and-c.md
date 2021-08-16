@@ -4,7 +4,7 @@ description: El método getAttributeCountByType devuelve el número de atributos
 ms.assetid: 30312039-3676-4322-b6f6-fb86098bf578
 keywords:
 - Método getAttributeCountByType Reproductor de Windows Media
-- Método getAttributeCountByType Reproductor de Windows Media , interfaz IWMPStringCollection2
+- Método getAttributeCountByType Reproductor de Windows Media interfaz , IWMPStringCollection2
 - Interfaz IWMPStringCollection2 Reproductor de Windows Media método , getAttributeCountByType
 topic_type:
 - apiref

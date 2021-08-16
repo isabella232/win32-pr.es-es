@@ -1,30 +1,30 @@
 ---
-title: Requisitos para los motores de texto a voz
-description: Requisitos para los motores de texto a voz
+title: Requisitos de los motores de texto a voz
+description: Requisitos de los motores de texto a voz
 ms.assetid: 21d19949-c9b4-4d9c-9684-6d15162f7a7d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa6d1bc9f4340327c5fbfb71b900e10f60738fdf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3025be266d0aa40cd5a3bca6adb63e333310df444be7bd07e3a72b0f10b9c49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118746420"
 ---
-# <a name="requirements-for-text-to-speech-engines"></a>Requisitos para los motores de texto a voz
+# <a name="requirements-for-text-to-speech-engines"></a>Requisitos de los motores de texto a voz
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-El motor debe ser totalmente compatible con SAPI 4,0. Además, el motor también debe admitir las siguientes interfaces de SAPI para el texto etiquetado y las notificaciones de marcador. Estas interfaces permiten al agente de Microsoft ajustar el ritmo de la salida de texto al globo de palabras de un carácter y sincronizar el Lip de la boca del carácter (o equivalente) con las palabras pronunciadas.
+El motor debe ser totalmente compatible con SAPI 4.0. Además, el motor también debe admitir las siguientes interfaces SAPI para notificaciones etiquetadas de texto y marcadores. Estas interfaces permiten a Microsoft Agent dar un ritmo a la salida de texto al globo de palabras de un carácter y sincronizar la expresión del carácter (o equivalente) con las palabras habladas.
 
 -   [ITTSCentralW](ittscentralw.md)
 -   [ITTSNotifySinkW](ittsnotifysinkw.md)
 -   [ITTSBufNotifySinkW](ittsbufnotifysinkw.md)
 -   [ITTSAttributesW](ittsattributesw.md)
 
- 
+ 
 
- 
+ 
 
 
 

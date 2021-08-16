@@ -4,7 +4,7 @@ description: Importar material de clave y licencia
 ms.assetid: 72ce5901-3e5b-4339-b695-592895ac6bfe
 keywords:
 - Windows SDK de formato multimedia, importación de DRM
-- Windows SDK de formato multimedia, importación
+- Windows SDK de formato multimedia, importar
 - Windows SDK de formato multimedia, licencias
 - digital rights management (DRM),import
 - DRM (administración de derechos digitales),importar
@@ -17,7 +17,7 @@ keywords:
 - API extendidas de cliente DRM, licencias
 - API extendidas de cliente, licencias
 - API extendidas de cliente DRM, material clave
-- API extendidas de cliente, material de clave
+- API extendidas de cliente, material clave
 - licenses,importing
 ms.topic: article
 ms.date: 05/31/2018
@@ -36,7 +36,7 @@ Si tiene contenido multimedia cifrado mediante un sistema de protección de cont
 2.  Analice la colección de certificados, asegurándose de que está firmada correctamente y se valida con una clave pública raíz de Microsoft conocida. La colección de certificados se ajusta al esquema XMR. Para obtener más información, vea [Building an XMR License](building-an-xmr-license.md).
 3.  Opcional: extraiga la lista de revocación llamando al [**método IWMDRMSecurity::GetRevocationData.**](iwmdrmsecurity-getrevocationdata.md)
 4.  Opcional: se asegura de que no se revoca ningún certificado de la colección. Para obtener más información, vea [Comprobar la revocación de certificados.](checking-certificate-revocation.md)
-5.  Genere una licencia en el formato XMR que represente los requisitos de directiva para el contenido de importación y contenga el material de clave DRM Windows multimedia adecuado. Para obtener más información, vea el tema [Building an XMR License](building-an-xmr-license.md).
+5.  Genere una licencia en formato XMR que represente los requisitos de directiva para el contenido de importación y que contenga el material de clave DRM Windows multimedia adecuado. Para obtener más información, vea el tema [Building an XMR License](building-an-xmr-license.md).
 6.  Pase la licencia XMR al sistema DRM de Windows Media para su procesamiento mediante el método [**IWMDRMLicenseManagement::StoreLicense.**](iwmdrmlicensemanagement-storelicense.md)
 
 > [!Note]  

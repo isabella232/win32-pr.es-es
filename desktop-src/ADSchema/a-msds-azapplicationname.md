@@ -27,16 +27,16 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Az-Application-Name                   |
 | Ldap-Display-Name | msDS-AzApplicationName                      |
 | Size              | 128 caracteres                              |
-| Actualizar privilegios  | Administrador de AzRoles                               |
+| Privilegio actualizar  | Administrador de AzRoles                               |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1798                     |
 | System-Id-Guid    | db5b0728-6208-4876-83b7-95d3e5695275        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,14 +52,14 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Es de un solo valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
@@ -73,14 +73,14 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Es de un solo valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
@@ -94,14 +94,14 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Es de un solo valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
@@ -115,14 +115,14 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Es de un solo valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
@@ -136,14 +136,14 @@ Cadena que identifica de forma única un objeto de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Es de un solo valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |

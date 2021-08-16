@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c499a65ef8beee485bab647d8649559b74cfbd1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9be6df5b67da26b9f5691e26c8b8a915f0e717f47d123455421a1fa9606b816
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961144"
 ---
 # <a name="ms-sql-creationdate-attribute"></a>Atributo MS-SQL-CreationDate
 
@@ -27,16 +27,16 @@ Fecha en que se creó la base de datos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-CreationDate                         |
-| Nombre para mostrar de LDAP | mS-SQL-CreationDate                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| Ldap-Display-Name | mS-SQL-CreationDate                         |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema establece este valor.            |
 | Frecuencia de actualización  | Cuando se crea una nueva base de datos.             |
 | Attribute-Id      | 1.2.840.113556.1.4.1397                     |
-| System-ID-GUID    | ede14754-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ede14754-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ Fecha en que se creó la base de datos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -74,15 +74,15 @@ Fecha en que se creó la base de datos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -95,15 +95,15 @@ Fecha en que se creó la base de datos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -116,15 +116,15 @@ Fecha en que se creó la base de datos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -137,15 +137,15 @@ Fecha en que se creó la base de datos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -158,15 +158,15 @@ Fecha en que se creó la base de datos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |

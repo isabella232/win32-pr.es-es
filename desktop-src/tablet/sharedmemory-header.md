@@ -1,7 +1,7 @@
 ---
-description: Almacena información sobre las secciones de la memoria compartida.
+description: Almacena información sobre las secciones de memoria compartida.
 ms.assetid: 73a650ee-110c-43f2-a5e2-783d52fd29ee
-title: Estructura de SHAREDMEMORY_HEADER
+title: SHAREDMEMORY_HEADER estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 695f3ef09cb5e7e67de757ee3926df6fde7ddff5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ae596819feb4bd70aa47e7881521e5a69e5bd0a509b974e591d08907efda51c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966804"
 ---
-# <a name="sharedmemory_header-structure"></a>\_Estructura del encabezado SHAREDMEMORY
+# <a name="sharedmemory_header-structure"></a>ESTRUCTURA SHAREDMEMORY \_ HEADER
 
-Almacena información sobre las secciones de la memoria compartida.
+Almacena información sobre las secciones de memoria compartida.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,7 +65,7 @@ Tamaño, en bytes, que los números de serie se desplazan de la estructura de en
 **idxEvent**
 </dt> <dd>
 
-Índice del evento. Este valor se incrementa con eventos sucesivos.
+Índice de eventos. Este valor se incrementa con eventos sucesivos.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Evento asociado a este encabezado.
 **Cid**
 </dt> <dd>
 
-Identificador de cursor al que hace referencia el encabezado de memoria compartida.
+Identificador del cursor al que hace referencia el encabezado de memoria compartida.
 
 </dd> <dt>
 
@@ -93,41 +93,41 @@ Número de serie del encabezado de memoria compartida.
 **sysEvt**
 </dt> <dd>
 
-El evento del sistema, prefijo SE \_ \* asocia a este encabezado. Vea la sección Comentarios para obtener más información.
+Evento del sistema, con el prefijo SE \_ \* , asociado a este encabezado. Consulte la sección comentarios para obtener más información.
 
 </dd> <dt>
 
 **sysEvtData**
 </dt> <dd>
 
-La estructura de [**\_ \_ datos de eventos del sistema**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) asociada al evento del sistema.
+Estructura [**SYSTEM \_ EVENT \_ DATA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) asociada al evento del sistema.
 
 </dd> <dt>
 
 **cPackets**
 </dt> <dd>
 
-Un recuento de los paquetes asociados a la sección memoria compartida actual.
+Recuento de los paquetes asociados a la sección de memoria compartida actual.
 
 </dd> <dt>
 
 **cbPackets**
 </dt> <dd>
 
-Tamaño, en bytes, de los paquetes asociados a la sección memoria compartida actual.
+Tamaño, en bytes, de los paquetes asociados a la sección de memoria compartida actual.
 
 </dd> <dt>
 
 **fSnsPresent**
 </dt> <dd>
 
-Marca que indica si los números de serie están presentes en la sección memoria compartida actual.
+Marca que indica si los números de serie están presentes en la sección de memoria compartida actual.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los siguientes valores se definen para el miembro **sysEvt** .
+Los valores siguientes se definen para el **miembro sysEvt.**
 
 
 ```C++
@@ -146,11 +146,11 @@ Los siguientes valores se definen para el miembro **sysEvt** .
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_datos de eventos del sistema \_**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data)
+[**DATOS DE \_ EVENTOS DEL \_ SISTEMA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: El identificador de flujo del receptor de flujo asociado a este nodo de topología.
+description: Identificador de flujo del receptor de flujo asociado a este nodo de topología.
 ms.assetid: 0b8060ab-1463-45c2-8277-d15122561248
-title: MF_TOPONODE_STREAMID atributo (Mfidl. h)
+title: MF_TOPONODE_STREAMID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2377183927cf75c6e0a7436384426dcab94680c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4cf1edc8918af91144de4f408e7913c3f40b1f0246059bc5bf9e4f1193a1cf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739894"
 ---
-# <a name="mf_toponode_streamid-attribute"></a>\_ \_ Atributo STREAMID de MF TOPONODE
+# <a name="mf_toponode_streamid-attribute"></a>Atributo MF \_ TOPONODE \_ STREAMID
 
-El identificador de flujo del receptor de flujo asociado a este nodo de topología.
+Identificador de flujo del receptor de flujo asociado a este nodo de topología.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,11 +21,11 @@ El identificador de flujo del receptor de flujo asociado a este nodo de topolog�
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se aplica a los nodos de salida (**\_ nodo de \_ salida \_ de topología MF**).
+Este atributo se aplica a los nodos de salida (**MF \_ TOPOLOGY \_ OUTPUT \_ NODE**).
 
-Cuando la sesión multimedia carga la topología, consulta el receptor de medios para obtener un receptor de flujo con el identificador especificado. Si se produce un error, intenta agregar un nuevo receptor de la secuencia al receptor de medios.
+Cuando la sesión multimedia carga la topología, consulta el receptor de medios para un receptor de flujo con el identificador especificado. Si se produce un error, intenta agregar un nuevo receptor de flujo al receptor multimedia.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

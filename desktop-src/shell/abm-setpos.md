@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117861607"
 ---
-# <a name="abm_setpos-message"></a>Mensaje de SETPOS de ABM \_
+# <a name="abm_setpos-message"></a>Mensaje \_ SETPOS de ABM
 
 Establece el tamaño y la posición de la pantalla de una barra de aplicaciones. El mensaje especifica un borde de pantalla y el rectángulo delimitador para la barra de aplicaciones. El sistema puede ajustar el rectángulo delimitador para que la barra de aplicaciones no interfiera con la Windows de tareas ni con ninguna otra barra de aplicaciones.
 
@@ -39,7 +39,7 @@ Siempre devuelve **TRUE.**
 
 ## <a name="remarks"></a>Comentarios
 
-Este mensaje hace que el sistema envíe el mensaje de [**notificación \_ POSCHANGED**](abn-poschanged.md) de ABN a todas las barras de aplicaciones.
+Este mensaje hace que el sistema envíe el mensaje de [**notificación \_ ABN POSCHANGED**](abn-poschanged.md) a todas las barras de aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Este mensaje hace que el sistema envíe el mensaje de [**notificación \_ POSCHA
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
 | Encabezado<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 

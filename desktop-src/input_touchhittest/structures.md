@@ -1,6 +1,6 @@
 ---
 title: Estructuras (prueba de impacto táctil)
-description: En los temas de esta sección se proporcionan las especificaciones de referencia de las estructuras de Touch Hit Testing.
+description: En los temas de esta sección se proporcionan las especificaciones de referencia para las estructuras de Prueba de impacto táctil.
 ms.assetid: 75528CC6-0637-4CAB-9187-AEC4291C119D
 keywords:
 - interacción con el usuario
@@ -16,9 +16,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118757874"
 ---
-# <a name="touch-hit-testing-structures"></a>Estructuras touch hit testing
+# <a name="touch-hit-testing-structures"></a>Estructuras de pruebas de impacto táctiles
 
-En los temas de esta sección se proporcionan las especificaciones de referencia de las [estructuras de Touch Hit Testing.](touch-hit-testing-portal.md)
+En los temas de esta sección se proporcionan las especificaciones de referencia para las [estructuras de Prueba de impacto](touch-hit-testing-portal.md) táctil.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -29,4 +29,4 @@ En los temas de esta sección se proporcionan las especificaciones de referencia
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Referencia de touch hit testing](touchhittest-reference.md)
+[Referencia de pruebas de impacto táctiles](touchhittest-reference.md)

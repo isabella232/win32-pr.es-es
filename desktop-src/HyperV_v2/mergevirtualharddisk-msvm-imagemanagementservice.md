@@ -1,5 +1,5 @@
 ---
-description: Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales primarios en la cadena.
+description: Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales primarios de la cadena.
 ms.assetid: 10633176-F0C3-4CA0-8E7B-2B11FF93B0EA
 title: Método MergeVirtualHardDisk de la Msvm_ImageManagementService clase
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118644877"
 ---
 # <a name="mergevirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método MergeVirtualHardDisk de la clase \_ Msvm ImageManagementService
 
-Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales primarios en la cadena. Vea Comentarios sobre las restricciones de uso para este método.
+Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales primarios de la cadena. Vea Comentarios sobre las restricciones de uso para este método.
 
 Si el usuario que ejecuta esta función no tiene permiso para actualizar las máquinas virtuales, se producirá un error en esta función.
 
@@ -81,7 +81,7 @@ Este método puede devolver uno de los valores siguientes.
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método activados: trabajo iniciado** (4096)
+**Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -111,7 +111,7 @@ Este método puede devolver uno de los valores siguientes.
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -120,7 +120,7 @@ Este método puede devolver uno de los valores siguientes.
 **Archivo no encontrado** (32779)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El disco duro virtual secundario debe estar sin conexión.
 
@@ -176,7 +176,7 @@ public static void MergeVirtualHardDisk(string ChildPath, string ParentPath)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
@@ -186,7 +186,7 @@ public static void MergeVirtualHardDisk(string ChildPath, string ParentPath)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

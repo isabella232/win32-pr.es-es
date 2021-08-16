@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetCompact (método)'
-title: Método API. JetCompact
+description: Más información sobre el método Api.JetCompact
+title: Método Api.JetCompact
 TOCTitle: 'JetCompact method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetCompact(Microsoft.Isam.Esent.Interop.JET_SESID,System.String,System.String,Microsoft.Isam.Esent.Interop.JET_PFNSTATUS,Microsoft.Isam.Esent.Interop.JET_CONVERT,Microsoft.Isam.Esent.Interop.CompactGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetcompact(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 74d714a1b0fa8d53743945afb3a35cc2015df293
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8aecd3ec6120a93edb19b06d1f86c9573c1404f8dc1feb95c1acfec2d0077bcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983465"
 ---
-# <a name="apijetcompact-method"></a>Método API. JetCompact
+# <a name="apijetcompact-method"></a>Método Api.JetCompact
 
-Realiza una copia de una base de datos existente. La copia se compacta con un estado óptimo para su uso. Los datos de los datos copiados se empaquetarán de acuerdo con las medidas elegidas para los índices en la creación de índices. De esta manera, los datos comprimidos se pueden almacenar de la forma más densa posible. Como alternativa, los datos compactos pueden reservar espacio para las inserciones de índice o el crecimiento de registros posteriores.
+Realiza una copia de una base de datos existente. La copia se compacta a un estado óptimo para su uso. Los datos de los datos copiados se empaquetarán según las medidas elegidas para los índices en la creación del índice. De esta manera, los datos compactados se pueden almacenar lo más densamente posible. Como alternativa, los datos compactados pueden reservar espacio para las posteriores inserciones de índices o crecimiento de registros.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,51 +75,51 @@ public static void JetCompact(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar para la llamada.
+    Sesión que se usará para la llamada.
 
 <!-- end list -->
 
   - sourceDatabase  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    La base de datos de origen que se compactará.
+    Base de datos de origen que se compactará.
 
 <!-- end list -->
 
   - destinationDatabase  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Nombre que se va a utilizar para la base de datos compactada.
+    Nombre que se usará para la base de datos compactada.
 
 <!-- end list -->
 
   - statusCallback  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_PFNSTATUS](./jet-pfnstatus-delegate.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_PFNSTATUS](./jet-pfnstatus-delegate.md)  
     
-    Función de devolución de llamada a la que se puede llamar periódicamente a través de la operación de compactación de base de datos para informar del progreso.
+    Función de devolución de llamada a la que se puede llamar periódicamente a través de la operación compacta de base de datos para informar del progreso.
 
 <!-- end list -->
 
   - no se tiene en cuenta  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_CONVERT](./jet-convert-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_CONVERT](./jet-convert-class.md)  
     
-    Este parámetro se omite y debe ser null.
+    Este parámetro se omite y debe ser NULL.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. CompactGrbit](./compactgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.CompactGrbit](./compactgrbit-enumeration.md)  
     
-    Opciones de Compact.
+    Opciones compactas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

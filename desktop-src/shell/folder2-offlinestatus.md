@@ -1,7 +1,7 @@
 ---
 description: Contiene el estado sin conexión de la carpeta.
 ms.assetid: b50b130d-0675-49b5-b730-f67ea1c71d8c
-title: Propiedad Carpeta2. OfflineStatus (Shldisp. h)
+title: Propiedad Folder2.OfflineStatus (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d456eae826e8a2e173b92fac4be716fb24bcb92d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2664a99fb103b41bd3b5040b3876b0cb92b8f9c010f420f93af7eb62a6f32bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860252"
 ---
-# <a name="folder2offlinestatus-property"></a>Propiedad Carpeta2. OfflineStatus
+# <a name="folder2offlinestatus-property"></a>Propiedad Folder2.OfflineStatus
 
 Contiene el estado sin conexión de la carpeta.
 
@@ -37,13 +37,13 @@ iOfflineStatus = Folder2.OfflineStatus
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un **entero** que se establece en uno de los valores siguientes.
+Entero **que** se establece en uno de los valores siguientes.
 
 <dt>
 
 
 
- (OFS \_ DIRTYCACHE)
+ (OFS) \_ DIRTYCACHE)
 
 
 </dt> <dd>
@@ -54,18 +54,18 @@ El servidor está en línea con cambios no sincronizados.
 
 
 
- (OFS \_ INACTIVA
+ (OFS) \_ INACTIVO)
 
 
 </dt> <dd>
 
-No se ha habilitado el almacenamiento en caché sin conexión para esta carpeta.
+El almacenamiento en caché sin conexión no está habilitado para esta carpeta.
 
 </dd> <dt>
 
 
 
- (OFS \_ N
+ (OFS) \_ OFFLINE)
 
 
 </dt> <dd>
@@ -76,7 +76,7 @@ El servidor está sin conexión.
 
 
 
- (OFS \_ PANTALLA
+ (OFS) \_ ONLINE)
 
 
 </dt> <dd>
@@ -87,7 +87,7 @@ El servidor está en línea.
 
 
 
- (OFS \_ SERVERBACK)
+ (OFS) \_ SERVERBACK)
 
 
 </dt> <dd>
@@ -96,18 +96,18 @@ El servidor está sin conexión, pero se puede acceder a él.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Archivos sin conexión debe habilitarse a través de opciones de carpeta para que **OfflineStatus** funcione correctamente. Si la opción Archivos sin conexión no está habilitada, la propiedad devuelve **OFS \_ Inactive**.
+> Archivos sin conexión debe habilitarse a través de Opciones de carpeta para **que OfflineStatus** funcione correctamente. Si la Archivos sin conexión no está habilitada, la propiedad devuelve **OFS \_ INACTIVE**.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de **OfflineStatus** para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de **OfflineStatus** para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -130,7 +130,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -184,17 +184,17 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

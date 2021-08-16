@@ -1,7 +1,7 @@
 ---
 description: Identifica los datos de recursos. En desuso.
 ms.assetid: acb379c7-ac80-412f-8891-d5917b3f8da4
-title: Estructura DXFILELOADRESOURCE (DXFile. h)
+title: Estructura DXFILELOADRESOURCE (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - DXFile.h
-ms.openlocfilehash: 233fe6acb13a6ae654a714028a316d7d6f6871ee
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 54d0072d7c87f6d26483faf8c591ea7651eff29b411643eb9848de11ff50d899
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803042"
 ---
-# <a name="dxfileloadresource-structure"></a>Estructura DXFILELOADRESOURCE
+# <a name="dxfileloadresource-structure"></a>DXFILELOADRESOURCE (estructura)
 
 Identifica los datos de recursos. En desuso.
 
@@ -48,7 +48,7 @@ Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificador del módulo que contiene el recurso que se va a cargar. Si este miembro es **null**, el recurso se debe adjuntar al archivo ejecutable que lo usará.
+Identificador del módulo que contiene el recurso que se va a cargar. Si este miembro es **NULL,** el recurso se debe adjuntar al archivo ejecutable que lo usará.
 
 </dd> <dt>
 
@@ -74,9 +74,9 @@ Puntero a una cadena que especifica el tipo definido por el usuario que identifi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura identifica un recurso que se va a cargar cuando una aplicación usa el método [**CreateEnumObject**](idirectxfile--createenumobject.md) y especifica DXFILELOAD \_ FROMRESOURCE.
+Esta estructura identifica un recurso que se va a cargar cuando una aplicación usa el [**método CreateEnumObject**](idirectxfile--createenumobject.md) y especifica DXFILELOAD \_ FROMRESOURCE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,21 +84,21 @@ Esta estructura identifica un recurso que se va a cargar cuando una aplicación 
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DXFile. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DXFile.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de archivos X](dx9-graphics-reference-x-file-structures.md)
+[Estructuras de archivo X](dx9-graphics-reference-x-file-structures.md)
 </dt> <dt>
 
 [**CreateEnumObject**](idirectxfile--createenumobject.md)
 </dt> <dt>
 
-[Constantes de DXFILE](dxfile.md)
+[Constantes DXFILE](dxfile.md)
 </dt> </dl>
 
  

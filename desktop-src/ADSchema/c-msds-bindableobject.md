@@ -1,6 +1,6 @@
 ---
 title: ms-DS-Bindable-Object (clase)
-description: Clase auxiliar para representar un objeto enlazable. Cualquier clase definida por el usuario que represente una entidad que se pueda usar para enlazar al directorio (es decir, un usuario), debe incluir esta clase auxiliar.
+description: Clase auxiliar para representar un objeto enlazable. Cualquier clase definida por el usuario que represente una entidad que se pueda usar para enlazar con el directorio (es decir, un usuario), debe incluir esta clase auxiliar.
 ms.assetid: 181b3e2b-9442-4f11-9af7-4697491115f3
 ms.tgt_platform: multiple
 keywords:
@@ -23,15 +23,15 @@ ms.locfileid: "118680785"
 ---
 # <a name="ms-ds-bindable-object-class"></a>ms-DS-Bindable-Object (clase)
 
-Clase auxiliar para representar un objeto enlazable. Cualquier clase definida por el usuario que represente una entidad que se pueda usar para enlazar al directorio (es decir, un usuario), debe incluir esta clase auxiliar.
+Clase auxiliar para representar un objeto enlazable. Cualquier clase definida por el usuario que represente una entidad que se pueda usar para enlazar con el directorio (es decir, un usuario), debe incluir esta clase auxiliar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-Bindable-Object                |
 | Ldap-Display-Name | msDS-BindableObject                  |
-| Actualizar privilegios  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Schema-Id-Guid    | 89f4a69f-4416-6b49-821d-6e3c4a0ff802 |
 
@@ -47,9 +47,9 @@ Clase auxiliar para representar un objeto enlazable. Cualquier clase definida po
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-----------------------------|--------------------------------------------------------------|
-| System-Only                 | False                                                        |
+| System-Only                 | Falso                                                        |
 | Object-Category             | 3                                                            |
 | Default-Object-Category     | \-                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.244                                       |
@@ -72,98 +72,98 @@ Esta clase contiene los atributos siguientes para ADAM:
 
 | Atributo                                                                                      | Mandatory | Derivado de                                                                                 |
 |------------------------------------------------------------------------------------------------|-----------|----------------------------------------------------------------------------------------------|
-| [**Account-Expires**](a-accountexpires.md)                                                    | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**Admin-Description**](a-admindescription.md)                                                | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Admin-Display-Name**](a-admindisplayname.md)                                               | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Atributos permitidos**](a-allowedattributes.md)                                              | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                           | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                                         | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                      | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Tiempo de contraseña incorrecta**](a-badpasswordtime.md)                                                 | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**Bad-Pwd-Count**](a-badpwdcount.md)                                                         | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                  | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Canonical-Name**](a-canonicalname.md)                                                      | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Common-Name**](a-cn.md)                                                                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                                                 | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Descripción**](a-description.md)                                                           | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Nombre para mostrar**](a-displayname.md)                                                          | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Firma DSA**](a-dsasignature.md)                                                        | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Desde entrada**](a-fromentry.md)                                                              | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                                     | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Tipo de instancia**](a-instancetype.md)                                                        | True      | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                  | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Se elimina**](a-isdeleted.md)                                                              | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Is-Member-Of-DL**](a-memberof.md)                                                          | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Último elemento primario conocido**](a-lastknownparent.md)                                                 | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Marca de tiempo del último inicio de sesión**](a-lastlogontimestamp.md)                                           | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**Tiempo de bloqueo**](a-lockouttime.md)                                                          | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**Objetos administrados**](a-managedobjects.md)                                                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Mastered-By**](a-masteredby.md)                                                            | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                                                 | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)                         | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                                      | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-Disable-For-Instances-BL**](a-msds-disableforinstancesbl.md)                         | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                                 | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                                          | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)                       | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)                     | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)                         | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                                 | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-Service-Account-BL**](a-msds-serviceaccountbl.md)                                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**ms-DS-User-Account-Auto-Locked**](a-ms-ds-useraccountautolocked.md)                        | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**ms-DS-User-Account-Control-Computed**](a-msds-user-account-control-computed.md)            | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**ms-DS-User-Account-Disabled**](a-msds-useraccountdisabled.md)                              | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**ms-DS-User-Dont-Expire-Password**](a-msds-userdontexpirepassword.md)                       | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**ms-DS-User-Encrypted-Text-Password-Allowed**](a-ms-ds-userencryptedtextpasswordallowed.md) | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**ms-DS-User-Password-Expired**](a-msds-userpasswordexpired.md)                              | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**ms-DS-User-Password-Not-Required**](a-ms-ds-userpasswordnotrequired.md)                    | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**Nt-Pwd-History**](a-ntpwdhistory.md)                                                       | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                       | True      | [**Entidad de seguridad**](c-securityprincipal.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Obj-Dist-Name**](a-distinguishedname.md)                                                   | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Object-Category**](a-objectcategory.md)                                                    | True      | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Object-Class**](a-objectclass.md)                                                          | True      | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Guid de objeto**](a-objectguid.md)                                                            | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Object-Sid**](a-objectsid.md)                                                              | True      | [**Entidad de seguridad**](c-securityprincipal.md)<br/>                                 |
-| [**Object-Version**](a-objectversion.md)                                                      | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                      | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Partial-Attribute-Set**](a-partialattributeset.md)                                         | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Posibles inferiores**](a-possibleinferiors.md)                                              | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Proxied-Object-Name**](a-proxiedobjectname.md)                                             | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Pwd-Last-Set**](a-pwdlastset.md)                                                           | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**Query-Policy-BL**](a-querypolicybl.md)                                                     | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Rdn**](a-name.md)                                                                          | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                      | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                                           | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Reps-From**](a-repsfrom.md)                                                                | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Reps-To**](a-repsto.md)                                                                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Revisión**](a-revision.md)                                                                 | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**SD-Rights-Effective**](a-sdrightseffective.md)                                             | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Server-Reference-BL**](a-serverreferencebl.md)                                             | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                                 | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Site-Object-BL**](a-siteobjectbl.md)                                                       | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Structural-Object-Class**](a-structuralobjectclass.md)                                     | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Sub refs**](a-subrefs.md)                                                                  | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**SubSchemaSubEntry**](a-subschemasubentry.md)                                               | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Credenciales complementarias**](a-supplementalcredentials.md)                                  | False     | [**Entidad de seguridad**](c-securityprincipal.md)<br/>                                 |
-| [**Marcas del sistema**](a-systemflags.md)                                                          | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Grupos de tokens**](a-tokengroups.md)                                                          | False     | [**Entidad de seguridad**](c-securityprincipal.md)<br/>                                 |
-| [**Unicode-Pwd**](a-unicodepwd.md)                                                            | False     | **ms-DS-Bindable-Object**                                                                    |
-| [**USN cambiado**](a-usnchanged.md)                                                            | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Creado por USN**](a-usncreated.md)                                                            | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                     | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**USN-Intersite**](a-usnintersite.md)                                                        | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                    | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**USN-Source**](a-usnsource.md)                                                              | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Wbem-Path**](a-wbempath.md)                                                                | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Objetos conocidos**](a-wellknownobjects.md)                                               | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Cuándo se ha cambiado**](a-whenchanged.md)                                                          | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**Cuando se crea**](a-whencreated.md)                                                          | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                                         | False     | [**Arriba**](c-top.md)<br/>                                                              |
-| [**WWW-Page-Other**](a-url.md)                                                                | False     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Account-Expires**](a-accountexpires.md)                                                    | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**Descripción del administrador**](a-admindescription.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Admin-Display-Name**](a-admindisplayname.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Atributos permitidos**](a-allowedattributes.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                      | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Tiempo de contraseña incorrecta**](a-badpasswordtime.md)                                                 | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**Bad-Pwd-Count**](a-badpwdcount.md)                                                         | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Canonical-Name**](a-canonicalname.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Nombre común**](a-cn.md)                                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Descripción**](a-description.md)                                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Nombre para mostrar**](a-displayname.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Firma DSA**](a-dsasignature.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Desde entrada**](a-fromentry.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Tipo de instancia**](a-instancetype.md)                                                        | Verdadero      | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Se elimina**](a-isdeleted.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Is-Member-Of-DL**](a-memberof.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Último elemento primario conocido**](a-lastknownparent.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Marca de tiempo del último inicio de sesión**](a-lastlogontimestamp.md)                                           | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**Tiempo de bloqueo**](a-lockouttime.md)                                                          | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**Objetos administrados**](a-managedobjects.md)                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Mastered-By**](a-masteredby.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-Disable-For-Instances-BL**](a-msds-disableforinstancesbl.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)                     | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-Service-Account-BL**](a-msds-serviceaccountbl.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**ms-DS-User-Account-Auto-Locked**](a-ms-ds-useraccountautolocked.md)                        | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**ms-DS-User-Account-Control-Computed**](a-msds-user-account-control-computed.md)            | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**ms-DS-User-Account-Disabled**](a-msds-useraccountdisabled.md)                              | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**ms-DS-User-Dont-Expire-Password**](a-msds-userdontexpirepassword.md)                       | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**ms-DS-User-Encrypted-Text-Password-Allowed**](a-ms-ds-userencryptedtextpasswordallowed.md) | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**ms-DS-User-Password-Expired**](a-msds-userpasswordexpired.md)                              | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**ms-DS-User-Password-Not-Required**](a-ms-ds-userpasswordnotrequired.md)                    | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**Nt-Pwd-History**](a-ntpwdhistory.md)                                                       | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                       | Verdadero      | [**Entidad de seguridad**](c-securityprincipal.md)<br/> [**Arriba**](c-top.md)<br/> |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Object-Category**](a-objectcategory.md)                                                    | Verdadero      | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Object-Class**](a-objectclass.md)                                                          | Verdadero      | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Guid de objeto**](a-objectguid.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Object-Sid**](a-objectsid.md)                                                              | Verdadero      | [**Entidad de seguridad**](c-securityprincipal.md)<br/>                                 |
+| [**Object-Version**](a-objectversion.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                      | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Posibles inferiores**](a-possibleinferiors.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Pwd-Last-Set**](a-pwdlastset.md)                                                           | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Rdn**](a-name.md)                                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Reps-From**](a-repsfrom.md)                                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Reps-To**](a-repsto.md)                                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Revisión**](a-revision.md)                                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Sub refs**](a-subrefs.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**SubSchemaSubEntry**](a-subschemasubentry.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Credenciales complementarias**](a-supplementalcredentials.md)                                  | Falso     | [**Entidad de seguridad**](c-securityprincipal.md)<br/>                                 |
+| [**Marcas del sistema**](a-systemflags.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Grupos de tokens**](a-tokengroups.md)                                                          | Falso     | [**Entidad de seguridad**](c-securityprincipal.md)<br/>                                 |
+| [**Unicode-Pwd**](a-unicodepwd.md)                                                            | Falso     | **ms-DS-Bindable-Object**                                                                    |
+| [**USN cambiado**](a-usnchanged.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Creado por USN**](a-usncreated.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**USN-Intersite**](a-usnintersite.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**USN-Source**](a-usnsource.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Wbem-Path**](a-wbempath.md)                                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Objetos conocidos**](a-wellknownobjects.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Cuándo se ha cambiado**](a-whenchanged.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**Cuando se crea**](a-whencreated.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
+| [**WWW-Page-Other**](a-url.md)                                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                              |
 
 
 
