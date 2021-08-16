@@ -13,7 +13,7 @@ ms.locfileid: "118363674"
 ---
 # <a name="setting-a-pattern-match"></a>Establecer una coincidencia de patrón
 
-Para obtener más información sobre cómo establecer una coincidencia de patrón dentro de un filtro de captura, vea [Filtros de captura.](capture-filters.md)
+Para obtener más información sobre cómo establecer una coincidencia de patrón dentro de un filtro de captura, vea [Filtros de captura](capture-filters.md).
 
  
 

@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118402969"
 ---
-# <a name="cbaserendererm_interfacelock-member"></a>CBaseRenderer::m \_ (miembro InterfaceLock)
+# <a name="cbaserendererm_interfacelock-member"></a>Miembro InterfaceLock de CBaseRenderer::m \_
 
 Bloqueo de estado de filtro.
 

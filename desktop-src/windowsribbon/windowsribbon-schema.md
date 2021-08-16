@@ -1,16 +1,16 @@
 ---
-title: Declarar comandos y controles con marcado de cinta
-description: El Windows ribbon usa un lenguaje de marcado basado en lenguaje XAML (XAML) para implementar mediante declaración la apariencia de una aplicación ribbon.
+title: Declarar comandos y controles con marcado de cinta de opciones
+description: El Windows ribbon usa un lenguaje de marcado basado en lenguaje XAML (XAML) para implementar mediante declaración la apariencia de una aplicación de cinta de opciones.
 ms.assetid: 76bacfb3-ecaf-47b3-be97-afa5e7e52330
 keywords:
-- Windows Cinta, estructura de marcado
-- Cinta, estructura de marcado
+- Windows Cinta de opciones, estructura de marcado
+- Cinta de opciones, estructura de marcado
 - Windows Cinta de opciones, separación de la presentación de la lógica de comandos
 - Cinta de opciones, separación de la presentación de la lógica de comandos
 - Windows Cinta de opciones, componentes
 - Cinta de opciones, componentes
 - sistema de comandos para Windows cinta de opciones
-- controles para Windows cinta de opciones
+- controles para la cinta Windows opciones
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 20ae6c8d62012fac240c6d044c688295d89d8d5899e3673a3b914d8d142111d1
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118201327"
 ---
-# <a name="declaring-commands-and-controls-with-ribbon-markup"></a>Declarar comandos y controles con marcado de cinta
+# <a name="declaring-commands-and-controls-with-ribbon-markup"></a>Declarar comandos y controles con marcado de cinta de opciones
 
-El Windows ribbon usa un lenguaje de marcado basado en lenguaje XAML (XAML) para implementar mediante declaración la apariencia de una aplicación ribbon.
+El Windows ribbon usa un lenguaje de marcado basado en lenguaje XAML (XAML) para implementar mediante declaración la apariencia de una aplicación de cinta de opciones.
 
 -   [Separación de la presentación de la lógica de comandos](#separating-presentation-from-command-logic)
 -   [Estructura de marcado](#markup-structure)
@@ -31,37 +31,37 @@ El Windows ribbon usa un lenguaje de marcado basado en lenguaje XAML (XAML) para
 
 ## <a name="separating-presentation-from-command-logic"></a>Separación de la presentación de la lógica de comandos
 
-La separación de los atributos visuales y de presentación de la lógica de comandos en el marco de la cinta de opciones se realiza a través de dos plataformas de desarrollo distintas, pero dependientes. Los diseños de control, los comportamientos de escalado, las declaraciones de comandos y las especificaciones de recursos son el dominio de tiempo de diseño de una sintaxis de marcado declarativa basada en la [especificación lenguaje XAML (XAML).](/dotnet/framework/wpf/advanced/xaml-in-wpf) La funcionalidad de bajo nivel, los enlaces de aplicación y los controladores de comandos se definen en implementaciones de interfaz basadas en el modelo de objetos componentes (COM).
+La separación de los atributos visuales y de presentación de la lógica de comandos en el marco de la cinta de opciones se logra a través de dos plataformas de desarrollo distintas, pero dependientes. Los diseños de control, los comportamientos de escalado, las declaraciones de comandos y las especificaciones de recursos son el dominio en tiempo de diseño de una sintaxis de marcado declarativa basada en [la especificación lenguaje XAML (XAML).](/dotnet/framework/wpf/advanced/xaml-in-wpf) La funcionalidad de bajo nivel, los enlaces de aplicación y los controladores de comandos se definen en implementaciones de interfaz basadas en el Modelo de objetos componentes (COM).
 
 Esta separación de la presentación y la lógica proporciona las siguientes ventajas:
 
--   Un ciclo de desarrollo de aplicaciones más eficaz que permite a los desarrolladores y diseñadores de la interfaz de usuario implementar la GUI de la aplicación ribbon independientemente de la funcionalidad principal de la aplicación. Esta funcionalidad principal se puede dejar a los desarrolladores de software dedicados.
+-   Un ciclo de desarrollo de aplicaciones más eficaz que permite a los desarrolladores y diseñadores de la interfaz de usuario implementar la GUI de la aplicación de cinta de opciones independientemente de la funcionalidad principal de la aplicación. Esta funcionalidad principal se puede dejar a desarrolladores de software dedicados.
 -   Mantenimiento menos costoso porque los cambios en la GUI son posibles sin cambios en la funcionalidad principal (y viceversa).
--   Especificación simple de los recursos de cadena e imagen a través del marcado.
+-   Especificación simple de los recursos de cadena e imagen mediante marcado.
 -   Facilidad de creación de prototipos.
 
 ## <a name="markup-structure"></a>Estructura de marcado
 
 Existen dos ramas distintas dentro de la estructura del marcado del marco de la cinta de opciones.
 
-La primera rama contiene un manifiesto de declaraciones de comandos y recursos (cadenas e imágenes). El marco de trabajo usa cada entrada Command para enlazar un control Ribbon, a través de un identificador de comando, a un controlador command definido en el código de la aplicación.
+La primera rama contiene un manifiesto de declaraciones de comandos y recursos (cadenas e imágenes). El marco usa cada entrada Command para enlazar un control Ribbon, a través de un identificador de comando, a un controlador Command definido en el código de la aplicación.
 
-La segunda rama contiene las declaraciones de control reales. Cada control está asociado a un comando a través de un *atributo CommandName* que se asigna a un *atributo Name* especificado en cada declaración command.
+La segunda rama contiene las declaraciones de control reales. Cada control está asociado a un comando a través de un *atributo CommandName* que se asigna a un *atributo Name* especificado en cada declaración Command.
 
 ## <a name="ribbon-components"></a>Componentes de la cinta de opciones
 
-La funcionalidad de interfaz de usuario del marco de opciones se expone a través [de vistas](windowsribbon-reference-elements-view.md). Una vista es básicamente un [](windowsribbon-element-ribbon.md) contenedor, como la cinta de opciones y [**ContextPopup,**](windowsribbon-element-contextpopup.md)que se usa para presentar los controles de marco y los comandos a los que están enlazados.
+La funcionalidad de interfaz de usuario del marco de opciones se expone a través [de vistas](windowsribbon-reference-elements-view.md). Una vista es básicamente un [](windowsribbon-element-ribbon.md) contenedor, como la cinta de opciones y [**ContextPopup,**](windowsribbon-element-contextpopup.md)que se usa para presentar controles de marco y los comandos a los que están enlazados.
 
-La [](windowsribbon-element-ribbon.md) vista de la cinta de opciones se compone de varios componentes que incluyen un menú de aplicación, la barra [](windowsribbon-controls-group.md) de herramientas de acceso rápido [(QAT)](windowsribbon-controls-quickaccesstoolbar.md) para mostrar comandos usados habitualmente desde la interfaz de usuario de la cinta de opciones, [pestañas](windowsribbon-controls-tab.md) principales y contextuales que contienen grupos de controles y el sistema de menú contextual enriquecido de [**ContextPopup.**](windowsribbon-element-contextpopup.md) [](windowsribbon-controls-applicationmenu.md)
+La [](windowsribbon-element-ribbon.md) vista de la cinta de opciones se compone de varios componentes que incluyen un menú de [aplicación,](windowsribbon-controls-applicationmenu.md)la barra [](windowsribbon-controls-group.md) de herramientas de acceso rápido [(QAT)](windowsribbon-controls-quickaccesstoolbar.md) para mostrar comandos usados habitualmente desde la interfaz de usuario de la cinta de opciones, las [pestañas](windowsribbon-controls-tab.md) principales y contextuales que contienen grupos de controles y el sistema de menús contextuales enriquecido de [**ContextPopup**](windowsribbon-element-contextpopup.md).
 
 Todos los componentes de la cinta de opciones se declaran en un archivo de marcado independiente que:
 
 -   Especifica las propiedades básicas de cada elemento.
 -   Muestra claramente las relaciones jerárquicas.
--   Proporciona preferencias de diseño y sugerencias de escalado. Para obtener más información sobre las plantillas de diseño del marco de la cinta de opciones, vea Personalización de una cinta a través de definiciones [de tamaño y directivas de escalado.](windowsribbon-templates.md)
--   Proporciona una manera de definir recursos como imágenes y etiquetas. Para obtener más información sobre los recursos de imagen, vea Especificar recursos de imagen de la cinta de [opciones.](windowsribbon-imageformats.md)
+-   Proporciona preferencias de diseño y sugerencias de escalado. Para obtener más información sobre las plantillas de diseño del marco de opciones, vea Personalizar una cinta de opciones mediante definiciones [de tamaño y directivas de escalado.](windowsribbon-templates.md)
+-   Proporciona una manera de definir recursos como imágenes y etiquetas. Para obtener más información sobre los recursos de imagen, vea [Especificar recursos de imagen de la cinta de opciones.](windowsribbon-imageformats.md)
 
-Los dos ejemplos de marcado de la cinta de opciones siguientes muestran cómo un conjunto de elementos de menú de la aplicación de cinta de opciones se asocian cada uno con un nombre de comando y un identificador.
+Los dos ejemplos de marcado de la cinta de opciones siguientes muestran cómo un conjunto de elementos del menú Aplicación de la cinta de opciones se asocian cada uno con un nombre de comando y un identificador.
 
 1.  En esta sección se muestran las declaraciones de comandos necesarias para un menú de aplicación con comandos básicos como Nuevo, Abrir y Guardar.
     ```XML
@@ -114,7 +114,7 @@ Los dos ejemplos de marcado de la cinta de opciones siguientes muestran cómo un
 
     
 
-2.  En esta sección se muestran las declaraciones de control asociadas.
+2.  En esta sección se muestran las declaraciones de Control asociadas.
     ```XML
     <!-- Control declarations for Application Menu items. -->
     <Ribbon.ApplicationMenu>
@@ -139,7 +139,7 @@ Los dos ejemplos de marcado de la cinta de opciones siguientes muestran cómo un
 
     
 
-Cuando el marcado se compila con la herramienta Compilador de comandos de interfaz de usuario (UICC), los nombres de comando y los IDs se colocan en un archivo de encabezado utilizado por la aplicación host de la cinta de opciones.
+Cuando el marcado se compila con la herramienta Compilador de comandos de interfaz de usuario (UICC), los nombres de comando y los IDs se colocan en un archivo de encabezado usado por la aplicación host de la cinta de opciones.
 
 A continuación se muestra un ejemplo de un archivo de encabezado generado por UICC.
 

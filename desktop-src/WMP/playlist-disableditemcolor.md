@@ -48,7 +48,7 @@ Este atributo es una cadena de **lectura** y escritura que contiene cualquier va
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

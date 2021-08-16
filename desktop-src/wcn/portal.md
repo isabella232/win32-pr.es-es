@@ -31,7 +31,7 @@ Windows Connect Now se admite a partir de Windows 7.
 
 | Tema                                                                         | Descripción                                                                                                             |
 |-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Acerca de Windows Connect Now](about-windows-connect-now.md)<br/>         | Breve introducción a la API Windows Connect Now.<br/>                                                             |
+| [Acerca de Windows Connect Now](about-windows-connect-now.md)<br/>         | Breve introducción a la API de Windows Connect Now.<br/>                                                             |
 | [Windows Connect Now Referencia](windows-connect-now-reference.md)<br/> | Descripciones detalladas de los elementos de programación que se incluyen en Windows Connect Now API (WCNAPI).<br/> |
 
 

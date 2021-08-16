@@ -80,14 +80,14 @@ Public Function DeserializeClasses (
   - offset  
     Tipo: [System.UInt32](/dotnet/api/system.uint32?view=netframework-4.8)
     
-    Desplazamiento de bytes a la ubicación en la que se va a empezar a leer los datos. Cuando el método vuelve, el desplazamiento apuntará al byte siguiente después de las clases deserializadoras.
+    Desplazamiento de bytes a la ubicación en la que se comienza a leer los datos. Cuando el método devuelve un resultado, el desplazamiento apuntará al byte siguiente después de las clases deserializadoras.
 
 <!-- end list -->
 
   - clases  
     Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8)\<[CimClass](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832269(v=vs.85))\>
     
-    Una memoria caché opcional de clases CIM primarias.
+    Caché opcional de clases CIM primarias.
 
 #### <a name="return-value"></a>Valor devuelto
 

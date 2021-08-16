@@ -39,7 +39,7 @@ https://www.proseware.com/XML/serviceinfo.asp?OEM=Fabrikam
 
 
 
-Después, la tienda en línea de Proseware puede usar la cadena de consulta para determinar qué OEM instaló Reproductor de Windows Media y devolver un documento ServiceInfo generado dinámicamente que apunta a la versión de marca de la tienda en línea.
+A continuación, la tienda en línea de Proseware puede usar la cadena de consulta para determinar qué OEM instaló Reproductor de Windows Media y devolver un documento ServiceInfo generado dinámicamente que apunta a la versión con marca de la tienda en línea.
 
 ## <a name="related-topics"></a>Temas relacionados
 

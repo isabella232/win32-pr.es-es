@@ -1,5 +1,5 @@
 ---
-description: Use las siguientes instrucciones para crear una instalación Windows Installer que muestra un cuadro de mensaje que solicita al usuario que inserte un disco.
+description: Use las siguientes directrices para crear una instalación Windows Installer que muestra un cuadro de mensaje en el que se le pide al usuario que inserte un disco.
 ms.assetid: 8b53a490-921f-4d89-83b7-dbc62231ef92
 title: Creación de mensajes de solicitud de disco
 ms.topic: article
@@ -13,18 +13,18 @@ ms.locfileid: "118381389"
 ---
 # <a name="authoring-disk-prompt-messages"></a>Creación de mensajes de solicitud de disco
 
-Use las siguientes instrucciones para crear una instalación Windows Installer que muestra un cuadro de mensaje que solicita al usuario que inserte un disco.
+Use las siguientes directrices para crear una instalación Windows Installer que muestra un cuadro de mensaje en el que se le pide al usuario que inserte un disco.
 
 **Para mostrar un cuadro de mensaje en el que se solicita al usuario que inserte un disco**
 
-1.  Use las funcionalidades de creación del instalador para establecer la cadena [**de propiedad DiskPrompt**](diskprompt.md) en la [tabla Property.](property-table.md) Debe incluir el nombre del producto que se va a instalar y un parámetro de marcador de posición dentro de la cadena del título impreso en el disco. Por ejemplo, Microsoft Publisher propiedad **DiskPrompt** podría ser "Microsoft Publisher: Disco \[ 1", donde 1 es el marcador de posición para el título \] del \[ \] disco.
-2.  Escriba los títulos de cada uno de los discos que se solicitan en filas independientes de la columna DiskPrompt de la [tabla Media.](media-table.md) Por ejemplo, la primera y única entrada en la tabla Multimedia podría ser "1–Install".
-3.  Durante la [acción InstallFiles,](installfiles-action.md) el valor de la columna DiskPrompt de la tabla [Media](media-table.md) se sustituye por el marcador de posición en la cadena de la [**propiedad DiskPrompt.**](diskprompt.md)
-4.  El mensaje que muestra el cuadro de mensaje se crea a partir de una cadena de plantilla integrada en la [tabla Error](error-table.md). Este es el error 1302 y la cadena de plantilla es: "Inserte el disco: 2", y el 2 representa un marcador de posición para la \[ \] propiedad \[ \] [**DiskPrompt.**](diskprompt.md)
+1.  Use las funcionalidades de creación del instalador para establecer la cadena [**de propiedad DiskPrompt**](diskprompt.md) en la [tabla Property.](property-table.md) Esto debe incluir el nombre del producto que se va a instalar y un parámetro de marcador de posición dentro de la cadena del título impreso en el disco. Por ejemplo, Microsoft Publisher propiedad **DiskPrompt** podría ser "Microsoft Publisher: Disco \[ 1", donde 1 es el marcador de posición del título \] del \[ \] disco.
+2.  Escriba los títulos de cada uno de los discos que se solicitan en filas independientes de la columna DiskPrompt de la [tabla](media-table.md) Media. Por ejemplo, la primera y única entrada de la tabla Media podría ser "1–Install".
+3.  Durante la [acción InstallFiles,](installfiles-action.md) el valor de la columna DiskPrompt de la tabla [Media](media-table.md) se sustituye por el marcador de posición de la cadena de la [**propiedad DiskPrompt.**](diskprompt.md)
+4.  El mensaje que muestra el cuadro de mensaje se crea a partir de una cadena de plantilla integrada en la [tabla Error](error-table.md). Este es el error 1302 y la cadena de plantilla es: "Inserte el disco: 2" y el 2 representa un marcador de posición para la \[ \] propiedad \[ \] [**DiskPrompt.**](diskprompt.md)
 
-En el ejemplo se muestra el siguiente mensaje al usuario: "Inserte el disco: Microsoft Publisher: Disco 1 – Instalar".
+En el ejemplo se muestra el mensaje siguiente al usuario: "Inserte el disco: Microsoft Publisher: Disco 1 – Instalar".
 
-Tenga en cuenta que los mensajes de solicitud de disco se muestran en todos [los niveles Interfaz de usuario excepto](user-interface-levels.md) Ninguno.
+Tenga en cuenta que todos [](user-interface-levels.md) los niveles de Interfaz de usuario, excepto Ninguno, muestran los mensajes de solicitud de disco.
 
  
 

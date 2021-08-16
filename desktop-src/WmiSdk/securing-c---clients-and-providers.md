@@ -16,7 +16,7 @@ ms.locfileid: "118316164"
 
 Tanto los proveedores de C++ como las aplicaciones cliente deben realizar muchas de las mismas operaciones para mantener la seguridad de WMI.
 
-Las aplicaciones cliente deben establecer correctamente los niveles de [suplantación y](setting-the-default-process-security-level-using-c-.md) [autenticación](setting-authentication-in-wmi.md) de DCOM al conectarse a WMI. Las devoluciones de [llamada](setting-security-on-an-asynchronous-call.md) de llamadas asincrónicas [](performing-access-checks.md) tienen riesgos de seguridad, por lo que las aplicaciones cliente deben realizar comprobaciones de acceso para asegurarse de que la devolución de llamada es de un origen de confianza. Los clientes necesitan proteger los [consumidores de eventos temporales y permanentes.](securing-wmi-events.md)
+Las aplicaciones cliente deben establecer correctamente los niveles de [suplantación y](setting-the-default-process-security-level-using-c-.md) [autenticación](setting-authentication-in-wmi.md) de DCOM al conectarse a WMI. Las devoluciones de llamada de llamadas [asincrónicas](setting-security-on-an-asynchronous-call.md) [](performing-access-checks.md) tienen riesgos de seguridad, por lo que las aplicaciones cliente deben realizar comprobaciones de acceso para asegurarse de que la devolución de llamada es de un origen de confianza. Los clientes necesitan proteger los [consumidores de eventos temporales y permanentes.](securing-wmi-events.md)
 
 Un proveedor puede [realizar comprobaciones de acceso](performing-access-checks.md) para asegurarse de que solo los clientes adecuados acceden a los recursos que crea.
 

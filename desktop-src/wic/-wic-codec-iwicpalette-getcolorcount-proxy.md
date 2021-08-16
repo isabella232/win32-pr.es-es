@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118206343"
 ---
-# <a name="iwicpalette_getcolorcount_proxy-function"></a>Función IWICPalette \_ GetColorCount \_ Proxy
+# <a name="iwicpalette_getcolorcount_proxy-function"></a>Función de proxy IWICPalette \_ GetColorCount \_
 
 Función de proxy para [**el método GetColorCount.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-getcolorcount)
 
@@ -73,7 +73,7 @@ Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
 | Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 

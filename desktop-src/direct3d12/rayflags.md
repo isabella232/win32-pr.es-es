@@ -21,7 +21,7 @@ ms.locfileid: "118300976"
 ---
 # <a name="rayflags"></a>RayFlags
 
-Entero sin signo que contiene las [**marcas**](ray_flag.md) ray_flag actuales. 
+Entero sin signo que contiene las marcas [**ray_flag**](ray_flag.md) actuales. 
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ uint RayFlags();
 
 ## <a name="remarks"></a>Comentarios
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
+Se puede llamar a esta función desde los siguientes tipos de sombreador:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)

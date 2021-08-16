@@ -1,5 +1,5 @@
 ---
-description: La clase Singleton ScriptingStandardConsumerSetting proporciona datos de registro comunes a todas las instancias de la clase de consumidor estándar ActiveScriptEventConsumer.
+description: La clase ScriptingStandardConsumerSetting singleton proporciona datos de registro comunes a todas las instancias de la clase de consumidor estándar ActiveScriptEventConsumer.
 ms.assetid: d217e058-3529-4173-b896-ebff3d7b05c6
 ms.tgt_platform: multiple
 title: Clase ScriptingStandardConsumerSetting
@@ -28,9 +28,9 @@ ms.locfileid: "118316209"
 ---
 # <a name="scriptingstandardconsumersetting-class"></a>Clase ScriptingStandardConsumerSetting
 
-La clase Singleton **ScriptingStandardConsumerSetting** proporciona datos de registro comunes a todas las instancias de la clase de consumidor estándar [**ActiveScriptEventConsumer.**](activescripteventconsumer.md) Una **instancia de ActiveScriptEventConsumer** usa las **propiedades MaximumScripts** y **Timeout.** Para obtener más información, vea [Supervisión y respuesta a eventos con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
+La clase **ScriptingStandardConsumerSetting** singleton proporciona datos de registro comunes a todas las instancias de la clase de consumidor estándar [**ActiveScriptEventConsumer.**](activescripteventconsumer.md) Una **instancia de ActiveScriptEventConsumer** usa las **propiedades MaximumScripts** y **Timeout.** Para obtener más información, [vea Supervisión y respuesta a eventos con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](standard-qualifiers.md) (64)
 </dt> </dl>
 
-Descripción breve de un objeto de una cadena de una línea. Contiene la cadena **ScriptingStandardConsumerSetting** porque se trata de una clase singleton.
+Breve descripción de un objeto de una cadena de una línea. Contiene la cadena **ScriptingStandardConsumerSetting porque** se trata de una clase singleton.
 
 </dd> <dt>
 
@@ -134,7 +134,7 @@ Número máximo de minutos antes de que un consumidor inicie una nueva instancia
 
 ## <a name="remarks"></a>Comentarios
 
-La instancia única de la **clase ScriptingStandardConsumerSetting** reside en el espacio de \\ nombres cimv2 raíz.
+La instancia única de la **clase ScriptingStandardConsumerSetting** reside en el espacio de \\ nombres raíz cimv2.
 
 ## <a name="requirements"></a>Requisitos
 

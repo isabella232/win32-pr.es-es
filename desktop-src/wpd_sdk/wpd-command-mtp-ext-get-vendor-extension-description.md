@@ -11,13 +11,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118193519"
 ---
-# <a name="wpd_command_mtp_ext_get_vendor_extension_description-command"></a>Comando WPD \_ \_ MTP \_ EXT GET VENDOR EXTENSION DESCRIPTION \_ (COMANDO MTP EXT GET VENDOR EXTENSION \_ \_ \_ DESCRIPTION)
+# <a name="wpd_command_mtp_ext_get_vendor_extension_description-command"></a>Comando WPD MTP EXT GET VENDOR EXTENSION DESCRIPTION (Comando DE EXTENSIÓN \_ \_ DE PROVEEDOR DE MTP EXT \_ \_ \_ \_ \_ GET)
 
 El **comando WPD \_ COMMAND \_ MTP EXT GET VENDOR \_ \_ EXTENSION \_ \_ \_ DESCRIPTION** recupera la cadena de descripción de la extensión de proveedor. Esta cadena se define mediante un conjunto **de datos DeviceInfo.**
 
 ## <a name="command-category"></a>Categoría de comando
 
-**OPERACIONES DE PROVEEDOR \_ \_ EXT DE MTP \_ \_ DE CATEGORÍA WPD \_**
+**OPERACIONES DE PROVEEDOR EXT DE MTP DE CATEGORÍA \_ \_ \_ WPD \_ \_**
 
 ## <a name="parameters"></a>Parámetros
 
@@ -25,7 +25,7 @@ Este comando no contiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El controlador devuelve los siguientes resultados.
+El controlador devuelve los resultados siguientes.
 
 
 
@@ -55,7 +55,7 @@ Solo se puede llamar directamente mediante [**IPortableDevice::SendCommand**](/w
 
 <dl> <dt>
 
-[Compatibilidad con extensiones MTP](supporting-mtp-extensions.md)
+[Compatibilidad con extensiones de MTP](supporting-mtp-extensions.md)
 </dt> </dl>
 
  

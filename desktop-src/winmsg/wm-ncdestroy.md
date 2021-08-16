@@ -13,9 +13,9 @@ ms.locfileid: "118200051"
 ---
 # <a name="wm_ncdestroy-message"></a>Mensaje \_ WM NCDESTROY
 
-Notifica a una ventana que se está destruyendo su área no cliente. La [**función DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) envía el mensaje **WM \_ NCDESTROY** a la ventana que sigue al [**mensaje WM \_ DESTROY.**](wm-destroy.md) [**WM \_ DESTROY**](wm-destroy.md) se usa para liberar el objeto de memoria asignado asociado a la ventana.
+Notifica a una ventana que se está destruyendo su área no cliente. La [**función DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) envía el **mensaje WM \_ NCDESTROY** a la ventana que sigue al [**mensaje WM \_ DESTROY.**](wm-destroy.md) [**WM \_ DESTROY**](wm-destroy.md) se usa para liberar el objeto de memoria asignado asociado a la ventana.
 
-El **mensaje \_ WM NCDESTROY** se envía después de que se hayan destruido las ventanas secundarias. Por el contrario, [**WM \_ DESTROY**](wm-destroy.md) se envía antes de que se destruyan las ventanas secundarias.
+El **mensaje \_ WM NCDESTROY** se envía después de destruir las ventanas secundarias. En cambio, [**WM \_ DESTROY**](wm-destroy.md) se envía antes de que se destruyan las ventanas secundarias.
 
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 

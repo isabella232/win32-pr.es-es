@@ -41,7 +41,7 @@ Este valor se genera a partir de System.Photo.MaxApertureNumerator y System.Phot
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
@@ -82,7 +82,7 @@ Este valor se genera a partir de System.Photo.MaxApertureNumerator y System.Phot
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 

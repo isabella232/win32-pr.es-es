@@ -48,7 +48,7 @@ El sistema llama a esta función después de que se produzca un evento de entrad
 El procedimiento de enlace puede supervisar los mensajes de un cuadro de diálogo, un cuadro de mensaje, un menú o una barra de desplazamiento creados por una aplicación determinada o todas las aplicaciones.
 
 El **tipo HOOKPROC** define un puntero a esta función de devolución de llamada.
-**MessageProc** es un marcador de posición para el nombre de función definido por la aplicación o definido por la biblioteca.
+**MessageProc** es un marcador de posición para el nombre de la función definida por la aplicación o definida por la biblioteca.
 
 ```cpp
 LRESULT CALLBACK MessageProc(

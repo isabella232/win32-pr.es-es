@@ -29,7 +29,7 @@ El **atributo toolbarVisible** especifica o recupera un valor que indica si se m
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un valor booleano de lectura **y escritura.** El valor predeterminado es false.
+Este atributo es un booleano de lectura **y escritura.** El valor predeterminado es false.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -49,7 +49,7 @@ La barra de herramientas Lista de reproducción proporciona elementos de interfa
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

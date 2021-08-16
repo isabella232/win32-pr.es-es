@@ -35,7 +35,7 @@ Para crear un receptor de archivos y agregarlo al escritor, realice los pasos si
 
 1.  Cree un nuevo receptor mediante una llamada a la [**función WMCreateWriterFileSink.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatewriterfilesink)
 2.  Proporcione un nombre de archivo para el receptor mediante una [**llamada a IWMWriterFileSink::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink-open).
-3.  Agregue el receptor de archivos al sistema de escritura mediante una [**llamada a IWMWriterAdvanced::AddSink**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-addsink).
+3.  Agregue el receptor de archivos al escritor mediante una [**llamada a IWMWriterAdvanced::AddSink**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-addsink).
 4.  Realice la escritura de la manera habitual.
 5.  Una vez completada la escritura, el receptor cerrará el archivo automáticamente.
 
@@ -45,7 +45,7 @@ Después de comenzar las operaciones de escritura, puede dejar de escribir en un
 
 Hay muchas razones posibles por las que le gustaría dejar de escribir en un receptor. Por ejemplo, si está grabando desde un origen en directo, es posible que solo le interese parte del contenido.
 
-Puede reanudar la escritura en un receptor de archivos llamando a [**IWMWriterFileSink2::Start**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink2-start). Tanto **Stop** como **Start usan** tiempos de presentación para controlar aproximadamente cuándo se ejecuta el comando. Puede usar los métodos [**IWMWriterFileSink3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterfilesink3) para obtener más control sobre los tiempos de inicio y de detección.
+Puede reanudar la escritura en un receptor de archivos llamando a [**IWMWriterFileSink2::Start**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink2-start). Tanto **Stop** como **Start usan tiempos** de presentación para controlar aproximadamente cuándo se ejecuta el comando. Puede usar los métodos [**IWMWriterFileSink3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterfilesink3) para obtener más control sobre los tiempos de inicio y de detección.
 
 ## <a name="closing-file-sinks"></a>Receptores de archivos de cierre
 
@@ -53,7 +53,7 @@ Normalmente, un receptor de archivos se cierra automáticamente. Si ha terminado
 
 ## <a name="getting-sink-statistics"></a>Obtención de estadísticas de receptor
 
-Puede obtener el tamaño y la duración del archivo para un receptor abierto llamando a [**IWMWriterFileSink2::GetFileSize**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink2-getfilesize) e [**IWMWriterFileSink2::GetFileDuration,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink2-getfileduration) respectivamente.
+Puede obtener el tamaño de archivo y la duración de un receptor abierto llamando a [**IWMWriterFileSink2::GetFileSize**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink2-getfilesize) e [**IWMWriterFileSink2::GetFileDuration,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink2-getfileduration) respectivamente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

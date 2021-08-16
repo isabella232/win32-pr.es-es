@@ -15,7 +15,7 @@ ms.locfileid: "118306153"
 
 La activación JIT de COM+ básicamente pone en peligro a los clientes expansidores y los servidores expansiones para obtener un rendimiento óptimo. Los clientes obtienen para mantener las referencias de objeto, mientras que los servidores pueden administrar más estrechamente el uso de memoria.
 
-Puede refinar esto aún más mediante la [agrupación de objetos COM+.](com--object-pooling.md) Al agrupar objetos que están activados JIT, puede dedicar una determinada cantidad de memoria para contener un determinado número de objetos activos en la memoria, listos para su reutilización inmediata. Esto tiene más sentido cuando los objetos son caros de crear, como en el caso en el que tienen varios recursos.
+Puede refinar esto aún más mediante la [agrupación de objetos COM+.](com--object-pooling.md) Al agrupar objetos que están activados JIT, puede dedicar una cierta cantidad de memoria para contener un determinado número de objetos activos en la memoria, listos para su reutilización inmediata. Esto tiene más sentido cuando los objetos son costosos de crear, como en el caso en el que tienen varios recursos.
 
 La agrupación de objetos activados por JIT de esta manera le permite obtener las siguientes ventajas:
 

@@ -1,5 +1,5 @@
 ---
-description: 'Método CBaseInputPin.Inactive: el método inactivo notifica al pin que el filtro ya no está activo.'
+description: 'Método CBaseInputPin.Inactive: el método Inactivo notifica al pin que el filtro ya no está activo.'
 ms.assetid: e00e1562-54bb-4968-8a86-b29e1077d7a5
 title: Método CBaseInputPin.Inactive (Amfilter.h)
 ms.topic: reference
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1324e9e2641e5e05bc3b0429ee269098c13d4bae
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dec73f0c691c7c644ead6456cc76fb1758202497ffcd968893780b2f0f61f93b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403464"
 ---
-# <a name="cbaseinputpininactive-method"></a>CBaseInputPin.Inactive (método)
+# <a name="cbaseinputpininactive-method"></a>Método CBaseInputPin.Inactive
 
 El `Inactive` método notifica al pin que el filtro ya no está activo.
 
@@ -67,7 +67,7 @@ Si invalida este método, llame al método de clase base desde el método de ree
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

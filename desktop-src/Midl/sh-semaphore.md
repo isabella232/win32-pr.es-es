@@ -1,6 +1,6 @@
 ---
 title: Palabra clave sh_semaphore
-description: La palabra clave \sh \_ semaphore\ especifica que el objeto del sistema es un identificador de un semáforo.
+description: La palabra clave \sh \_ semaphore\ especifica que el objeto del sistema es un identificador para un semáforo.
 keywords:
 - sh_semaphore clave MIDL
 topic_type:
@@ -32,11 +32,11 @@ La **palabra clave sh \_ semaphore** especifica que un contiene `system_handle` 
 
 Esta palabra clave es un parámetro para [**system_handle**](system-handle.md).
 
-La [**system_handle**](system-handle.md) documentación también contiene detalles sobre el uso opcional del *parámetro access-rights.* El comportamiento predeterminado es según `DUPLICATE_SAME_ACCESS` las especificaciones [ **de la función DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
+La [**system_handle**](system-handle.md) de acceso también contiene detalles sobre el uso opcional del *parámetro access-rights.* El comportamiento predeterminado es según `DUPLICATE_SAME_ACCESS` las [ **especificaciones de la función DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Comentarios
 
-Para usar esta palabra clave con el atributo , la marca debe establecerse en `system_handle` `-target` (o superior) al ejecutar `NT100` midl.exe.
+Para usar esta palabra clave con el atributo , la marca debe establecerse en `system_handle` `-target` `NT100` (o superior) al ejecutar midl.exe.
 
 ## <a name="examples"></a>Ejemplos
 

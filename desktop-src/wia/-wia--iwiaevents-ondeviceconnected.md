@@ -1,5 +1,5 @@
 ---
-description: Evento que tiene lugar cuando se conecta Windows nuevo dispositivo de hardware de adquisición de imágenes (WIA).
+description: Evento que tiene lugar cuando se conecta un nuevo Windows de hardware de adquisición de imágenes (WIA).
 ms.assetid: 327a29b8-581c-41b5-bea7-068bec95e653
 title: Evento Wia.OnDeviceConnected
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118209552"
 ---
 # <a name="wiaondeviceconnected-event"></a>Evento Wia.OnDeviceConnected
 
-Evento que tiene lugar cuando se conecta Windows nuevo dispositivo de hardware de adquisición de imágenes (WIA).
+Evento que tiene lugar cuando se conecta un nuevo Windows de hardware de adquisición de imágenes (WIA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Por ejemplo, es posible que desee que un script actualice la colección [**Dispo
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

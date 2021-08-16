@@ -1,6 +1,6 @@
 ---
 title: switch_is (atributo)
-description: El atributo \ switch is\ especifica la expresión o el identificador que actúa como discriminador de \_ unión que selecciona el miembro de unión.
+description: El atributo \ switch is\ especifica la expresión o el identificador que actúa como discriminador de unión \_ que selecciona el miembro de unión.
 ms.assetid: 93552bdf-6a14-47ce-877e-32ed976bb895
 keywords:
 - switch_is atributo MIDL
@@ -49,14 +49,14 @@ Especifica una etiqueta opcional para una estructura .
 *limited-expr* 
 </dt> <dd>
 
-Especifica una expresión de lenguaje C compatible con MIDL. Se admiten casi todas las expresiones en lenguaje C. El compilador MIDL admite expresiones condicionales, expresiones lógicas, expresiones relacionales y expresiones aritméticas. MIDL no permite invocaciones de función en expresiones y no permite operadores previos y posteriores al incremento y previos y posteriores al decremento.
+Especifica una expresión de lenguaje C compatible con MIDL. Se admiten casi todas las expresiones en lenguaje C. El compilador MIDL admite expresiones condicionales, expresiones lógicas, expresiones relacionales y expresiones aritméticas. MIDL no permite invocaciones de función en expresiones y no permite operadores previos y posteriores al incremento y anteriores y posteriores al decremento.
 
 </dd> <dt>
 
 *field-attr-list* 
 </dt> <dd>
 
-Especifica cero o más atributos de campo que se aplican a un miembro de unión. Los atributos de campo válidos incluyen primero , el último es , length es , max es , size es ; la cadena de atributos de uso , ignore y el identificador de contexto ; el atributo de puntero ref , unique o ptr; y para los miembros que son **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](ref.md) **\]** **\[** [](unique.md) **\]** **\[** [](ptr.md) **\]** propiamente uniones, **\[** [**\_**](switch-type.md) **\]** el tipo de modificador de atributo union . Separe varios atributos de campo con comas.
+Especifica cero o más atributos de campo que se aplican a un miembro de unión. Los atributos de campo válidos incluyen primero , el último es , length es , max es , size es ; la cadena de atributos de uso , ignore y el identificador de contexto ; el atributo de puntero ref , unique o ptr ; y para los miembros que son a su vez **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](ref.md) **\]** **\[** [](unique.md) **\]** **\[** [](ptr.md) **\]** uniones, **\[** [**\_**](switch-type.md) **\]** el tipo de modificador de atributo union . Separe varios atributos de campo con comas.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Especifica el identificador [**de tipo**](union.md) de unión. Una especificaci�
 *declarator y declarator-list* 
 </dt> <dd>
 
-Especifica un declarador de C estándar, como un identificador, un declarador de puntero y un declarador de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en uniones que se transmiten en llamadas a procedimiento remoto. Estos declaradores se permiten en uniones que no se transmiten). Separe varios declaradores con comas.
+Especifica un declarador de C estándar, como un identificador, un declarador de puntero y un declarador de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en uniones que se transmiten en llamadas a procedimientos remotos. Estos declaradores se permiten en uniones que no se transmiten). Separe varios declaradores con comas.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Especifica el nombre del procedimiento remoto.
 *param-attr-list* 
 </dt> <dd>
 
-Especifica cero o más atributos adecuados para el tipo de parámetro especificado. **\[ \_ \]** **\[ \]** **\[ \]** **\[ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \]** **\[ \]** **\[ Los atributos de parámetro pueden tomar los atributos direccionales de entrada y salida, los atributos de campo primero es , el último es , length es , max es , size es y switch type ; el atributo de puntero ref , unique o ptr; y el identificador de contexto de los atributos \]** de uso y la cadena . El atributo usage **\[ ignore no \]** se puede usar como atributo de parámetro. Separe varios atributos con comas.
+Especifica cero o más atributos adecuados para el tipo de parámetro especificado. **\[ \_ \]** **\[ \]** **\[ \]** **\[ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \]** **\[ \]** **\[ Los atributos de parámetro pueden tomar los atributos direccionales de entrada y salida, los atributos de campo primero son , el último es , length es , max es , size es y switch type ; el atributo de puntero ref , unique o ptr; y el identificador de contexto de los atributos \]** de uso y la cadena . El atributo usage **\[ ignore no \]** se puede usar como atributo de parámetro. Separe varios atributos con comas.
 
 </dd> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Firma el archivo especificado.
 ms.assetid: 5a59e663-057b-4380-aa14-536030e4051d
-title: SignerSign función)
+title: Función SignerSign
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: 9aa8ecc15e38c4a502b363898d5845cba5b0e47e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9756fba3a931ddf09715b5086e613a9395c10c57c82fa18c64007aeb02b615c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117973139"
 ---
-# <a name="signersign-function"></a>SignerSign función)
+# <a name="signersign-function"></a>Función SignerSign
 
-La función **SignerSign** firma el archivo especificado.
+La **función SignerSign** firma el archivo especificado.
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mssign32.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mssign32.dll.
 
  
 
@@ -50,76 +50,76 @@ HRESULT WINAPI SignerSign(
 
 <dl> <dt>
 
-*pSubjectInfo* \[ de\]
+*pSubjectInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ información de asunto del firmante**](signer-subject-info.md) que especifica el sujeto que se va a firmar.
+Puntero a una estructura [**SIGNER \_ SUBJECT \_ INFO**](signer-subject-info.md) que especifica el firmante.
 
 </dd> <dt>
 
-*pSignerCert* \[ de\]
+*pSignerCert* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ certificado de firmante**](signer-cert.md) que especifica el certificado que se va a utilizar para crear la firma digital.
+Puntero a una [**estructura SIGNER \_ CERT**](signer-cert.md) que especifica el certificado que se usará para crear la firma digital.
 
 </dd> <dt>
 
-*pSignatureInfo* \[ de\]
+*pSignatureInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ información de firma de firmante**](signer-signature-info.md) que contiene información sobre la firma digital.
+Puntero a una estructura [**SIGNER \_ SIGNATURE \_ INFO**](signer-signature-info.md) que contiene información sobre la firma digital.
 
 </dd> <dt>
 
-*pProviderInfo* \[ en, opcional\]
+*pProviderInfo* \[ in, opcional\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ información del proveedor de firmante**](signer-provider-info.md) que especifica el proveedor de [*servicios criptográficos*](../secgloss/c-gly.md) (CSP) y la información de [*clave privada*](../secgloss/p-gly.md) que se usa para crear la firma digital.
+Puntero a una estructura [**SIGNER \_ PROVIDER \_ INFO**](signer-provider-info.md) que especifica el proveedor de servicios criptográficos [*(CSP)*](../secgloss/c-gly.md) y la [*información*](../secgloss/p-gly.md) de clave privada que se usa para crear la firma digital.
 
-Si el valor de este parámetro es **null**, el valor del parámetro *pSignerCert* debe especificar un certificado asociado a un CSP.
+Si el valor de este parámetro es **NULL,** el valor del parámetro *pSignerCert* debe especificar un certificado asociado a un CSP.
 
 </dd> <dt>
 
-*pwszHttpTimeStamp* \[ en, opcional\]
+*pwszHttpTimeStamp* \[ in, opcional\]
 </dt> <dd>
 
 Dirección URL de un servidor de marca de tiempo.
 
 </dd> <dt>
 
-*psRequest* \[ en, opcional\]
+*psRequest* \[ in, opcional\]
 </dt> <dd>
 
-Puntero a una matriz de estructuras [**de \_ atributo de cifrado**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attribute) que se agregan a una solicitud de firma. Este parámetro se omite si el parámetro *pwszHttpTimeStamp* no contiene un valor válido que no sea **null**.
+Puntero a una matriz de estructuras [**CRYPT \_ ATTRIBUTE**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attribute) que se agregan a una solicitud de firma. Este parámetro se omite si el *parámetro pwszHttpTimeStamp* no contiene un valor válido que no sea **NULL.**
 
 </dd> <dt>
 
-*pSipData* \[ en, opcional\]
+*pSipData* \[ in, opcional\]
 </dt> <dd>
 
-Valor de 32 bits que se pasa como datos adicionales a las funciones de SIP. El proveedor SIP define el formato y el contenido de este.
+Valor de 32 bits que se pasa como datos adicionales a las funciones de SIP. El proveedor DE SIP define el formato y el contenido de este.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve S \_ OK.
+Si la función se realiza correctamente, la función devuelve S \_ OK.
 
-Si se produce un error en la función, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en la función, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

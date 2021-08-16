@@ -56,7 +56,7 @@ Especifica el tipo de dispositivos WIA 2.0 que se enumerará.
 
 </dt> <dd>
 
-Solo se enumeran los dispositivos de escáner activo conectados localmente.
+Solo se enumeran los dispositivos de escáner activos conectados localmente.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Todos los dispositivos se enumeran, tanto de forma local como remota, incluidos 
 
 Tipo: **[ **IEnumWIA \_ DEV \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)\*\***
 
-Recibe la dirección de un puntero a la interfaz INFO de [**IEnumWIA \_ \_ DEV.**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)
+Recibe la dirección de un puntero a la [**interfaz INFO de IEnumWIA \_ DEV. \_**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)
 
 </dd> </dl>
 
@@ -88,9 +88,9 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="remarks"></a>Comentarios
 
-El **método IWiaDevMgr2::EnumDeviceInfo** crea un objeto enumerador que admite la [**interfaz INFO de IEnumWIA \_ DEV. \_**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) El método almacena un puntero a la **interfaz INFO de IEnumWIA \_ DEV \_** en el parámetro *ppIEnum*. Las aplicaciones pueden usar el puntero de interfaz INFO de **IEnumWIA \_ \_ DEV** para enumerar las propiedades de cada dispositivo WIA 2.0 conectado al equipo del usuario.
+El **método IWiaDevMgr2::EnumDeviceInfo** crea un objeto enumerador que admite la interfaz [**INFO de IEnumWIA \_ DEV. \_**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) El método almacena un puntero a la **interfaz INFO de IEnumWIA \_ DEV \_** en el parámetro *ppIEnum*. Las aplicaciones pueden usar el puntero de interfaz INFO de **IEnumWIA \_ \_ DEV** para enumerar las propiedades de cada dispositivo WIA 2.0 conectado al equipo del usuario.
 
-Las aplicaciones deben llamar [al método IUnknown::Release en](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) los punteros de interfaz que reciben a través del parámetro *ppIEnum.*
+Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del *parámetro ppIEnum.*
 
 ## <a name="requirements"></a>Requisitos
 

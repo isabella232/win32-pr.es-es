@@ -21,7 +21,7 @@ En esta sección se presenta información general sobre cómo funciona Windows a
 -   [Navegar por un árbol de elementos](-wia-navigating-an-item-tree.md)
 -   [Registro de eventos de WIA](-wia-registering-wia-events.md)
 -   [Uso de enumeradores WIA](-wia-using-wia-enumerators.md)
--   [Lectura y configuración de propiedades de WIA](-wia-reading-and-setting-wia-properties.md)
+-   [Leer y establecer propiedades de WIA](-wia-reading-and-setting-wia-properties.md)
 -   [Información de error de WIA](-wia-wia-error-information.md)
 -   [Uso de varios subprocesos en una aplicación WIA](-wia-using-multiple-threads.md)
 -   [Comunicación con un dispositivo WIA en varios subprocesos o aplicaciones](-wia-communicating-with-a-wia-device.md)

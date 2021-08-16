@@ -1,7 +1,7 @@
 ---
-description: Instala un nuevo dispositivo. Se solicita al usuario que seleccione el dispositivo.
+description: Instala un nuevo dispositivo. Se pide al usuario que seleccione el dispositivo.
 ms.assetid: 9bdee82c-1d0a-41ea-8b42-7ad96ac37663
-title: InstallNewDevice función)
+title: Función InstallNewDevice
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - NewDev.dll
-ms.openlocfilehash: 76a458ae071c61b9f1030aad535c4d4c6a31078c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cb12e87ceee4812ffc8c0e39d961ce631e26c4ab8ca7ae555785c8ad8381ca01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118405317"
 ---
-# <a name="installnewdevice-function"></a>InstallNewDevice función)
+# <a name="installnewdevice-function"></a>Función InstallNewDevice
 
-Instala un nuevo dispositivo. Se solicita al usuario que seleccione el dispositivo.
+Instala un nuevo dispositivo. Se pide al usuario que seleccione el dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,24 +41,24 @@ BOOL WINAPI InstallNewDevice(
 
 <dl> <dt>
 
-*hwndParent* \[ de\]
+*hwndParent* \[ En\]
 </dt> <dd>
 
 Identificador de la ventana de nivel superior que se va a usar para cualquier interfaz de usuario necesaria.
 
 </dd> <dt>
 
-*ClassGuid* \[ de\]
+*ClassGuid* \[ En\]
 </dt> <dd>
 
-Un puntero a un **GUID** de clase. Este parámetro es opcional. Si este parámetro es **null**, el usuario se inicia en la página de opciones de detección. Si este parámetro es **GUID \_ null** o **GUID \_ DEVCLASS \_ Unknown**, el usuario se inicia en la página de selección de clases.
+Puntero a un **GUID de clase.** Este parámetro es opcional. Si este parámetro es **NULL,** el usuario comienza en la página de opción de detección. Si este parámetro es **GUID \_ NULL o** GUID **\_ DEVCLASS \_ UNKNOWN,** el usuario comienza en la página de selección de clases.
 
 </dd> <dt>
 
-*Inicio previo* \[ enuncia\]
+*pReboot* \[ out\]
 </dt> <dd>
 
-Un puntero a una variable que recibe el estado de reinicio. Este parámetro puede ser **di \_ NEEDRESTART** o **di \_ NEEDREBOOT**.
+Puntero a una variable que recibe el estado de reinicio. Este parámetro puede ser **DI \_ NEEDRESTART** o **DI \_ NEEDREBOOT.**
 
 </dd> </dl>
 
@@ -70,13 +70,13 @@ Si la función no se realiza correctamente, el valor devuelto es cero. Para obte
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función no tiene ninguna biblioteca de importación asociada. Debe utilizar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a NewDev.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Debe usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a NewDev.dll.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                        |
@@ -84,11 +84,11 @@ Esta función no tiene ninguna biblioteca de importación asociada. Debe utiliza
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de administración de dispositivos](device-management-functions.md)
+[Administración de dispositivos functions](device-management-functions.md)
 </dt> </dl>
 
  

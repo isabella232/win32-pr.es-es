@@ -19,7 +19,7 @@ ms.locfileid: "118208067"
 # <a name="limitations-of-the-scripting-model"></a>Limitaciones del modelo de scripting
 
 > [!Note]  
-> Este sistema de scripting se ha reemplazado por Windows capa de automatización de adquisición de imágenes (WIA). Consulte [Windows capa de automatización de adquisición de imágenes.](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage)
+> Este sistema de scripting se ha reemplazado por Windows de automatización de adquisición de imágenes (WIA). Consulte [Windows capa de automatización de adquisición de imágenes.](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage)
 
  
 

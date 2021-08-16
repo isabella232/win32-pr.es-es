@@ -14,7 +14,7 @@ ms.locfileid: "118315679"
 ---
 # <a name="select-statement-for-schema-queries"></a>Instrucción SELECT para consultas de esquema
 
-Las consultas de datos de esquema usan la instrucción SELECT con una sintaxis similar a la de las [consultas de datos](select-statement-for-data-queries.md). La diferencia es el uso de una clase especial denominada "meta \_ class", que identifica la consulta como una consulta de esquema.
+Las consultas de datos de esquema usan la instrucción SELECT con una sintaxis similar a la de las [consultas de datos](select-statement-for-data-queries.md). La diferencia es el uso de una clase especial denominada "meta class", que identifica la consulta \_ como una consulta de esquema.
 
 En el ejemplo siguiente se solicitan todas las definiciones de clase que están dentro del espacio de nombres actual.
 
@@ -36,7 +36,7 @@ SELECT * FROM meta_class WHERE __this ISA "Win32_LogicalDisk"
 
 
 
-La propiedad especial denominada **\_ \_ this** identifica la clase de destino para una consulta de esquema. Tenga en cuenta que el operador ISA debe usarse con **esta \_ \_** propiedad para solicitar definiciones para las subclases de la clase de destino. La consulta anterior devuelve la definición de la [**clase \_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) y las definiciones de todas sus subclases.
+La propiedad especial denominada **\_ \_ this** identifica la clase de destino para una consulta de esquema. Tenga en cuenta que el operador ISA debe usarse con esta **propiedad \_ \_** para solicitar definiciones para las subclases de la clase de destino. La consulta anterior devuelve la definición de la [**clase \_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) y las definiciones de todas sus subclases.
 
 En el ejemplo siguiente se muestra cómo solicitar una definición de clase para una sola clase mediante la propiedad del sistema **\_ \_ Class.**
 
@@ -47,7 +47,7 @@ SELECT * FROM meta_class WHERE __Class = "Win32_LogicalDisk"
 
 
 
-Esta consulta equivale a llamar al [**método IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) o [**IWbemServices::GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) con el parámetro path del objeto establecido en "Win32 \_ LogicalDisk".
+Esta consulta equivale a llamar al [**método IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) o [**IWbemServices::GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) con el parámetro de ruta de acceso del objeto establecido en "Win32 \_ LogicalDisk".
 
 El siguiente ejemplo de código VBScript recupera todas las clases secundarias de una clase WMI de nivel superior. La propiedad del sistema WMI de Wmi de Wmi contiene el nombre de la clase de nivel superior de la que se deriva una clase, que puede usar para recuperar todas las clases de un espacio de nombres derivado de una clase de nivel superior, incluida esa \_ \_ clase.
 

@@ -9,7 +9,7 @@ keywords:
 - registry,file name extensions
 - registry,ConvertPluginCLSID subclave
 - registry,settings for Reproductor de Windows Media
-- configuración del Registro de extensión de nombre de archivo
+- configuración del Registro de extensiones de nombre de archivo
 - Subclave ConvertPluginCLSID
 ms.topic: article
 ms.date: 05/31/2018
@@ -38,7 +38,7 @@ La **subclave ConvertPluginCLSID** tiene las siguientes entradas.
 -   Entrada con nombre que representa el complemento de conversión predeterminado.
 -   Entradas con nombre adicionales que representan complementos de conversión alternativos.
 
-Por ejemplo, suponga que un formato de archivo personalizado tiene un complemento de conversión predeterminado y dos complementos de conversión alternativos. Las entradas del Registro bajo la subclave **ConvertPluginCLSID** tendrían el formato siguiente.
+Por ejemplo, suponga que un formato de archivo personalizado tiene un complemento de conversión predeterminado y dos complementos de conversión alternativos. Las entradas del Registro de la subclave **ConvertPluginCLSID** tendrían el formato siguiente.
 
 
 

@@ -1,10 +1,10 @@
 ---
 title: ORPC_DBG_BUFFER estructura
-description: La estructura BUFFER de DBG DE ORPC es el formato de búfer que se usa para canalizar datos RPC a los métodos de \_ \_ la interfaz IOrpcDebugNotify.
+description: La estructura BUFFER de DBG de ORPC es el formato de búfer que se usa para canalizar datos RPC a los métodos de \_ \_ la interfaz IOrpcDebugNotify.
 ms.assetid: 444cd3b8-bc7b-425d-9ccc-04fd6c7393b2
 keywords:
-- ORPC_DBG_BUFFER com de estructura
-- PORPC_DBG_BUFFER puntero de estructura COM
+- ORPC_DBG_BUFFER structure COM
+- PORPC_DBG_BUFFER de estructura de datos COM
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.locfileid: "118310261"
 ---
 # <a name="orpc_dbg_buffer-structure"></a>ESTRUCTURA DE \_ BÚFER DE DBG DE ORPC \_
 
-La **estructura BUFFER de \_ DBG \_ DE ORPC** es el formato de búfer que se usa para canalizar datos RPC a los métodos de la [**interfaz IOrpcDebugNotify.**](iorpcdebugnotify.md)
+La **estructura BUFFER de \_ DBG \_ de ORPC** es el formato de búfer que se usa para canalizar datos RPC a los métodos de la [**interfaz IOrpcDebugNotify.**](iorpcdebugnotify.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,7 +66,7 @@ Valor que controla la generación del depurador. **alwaysOrSometimes** puede ser
 | Valor                                                                                                                                                                                                                                                                   | Significado                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="ORPC_DEBUG_ALWAYS"></span><span id="orpc_debug_always"></span><dl> <dt>**ORPC \_ DEPURAR \_ SIEMPRE**</dt> <dt>0x00000000</dt> </dl>                              | Si se establece, COM siempre genera la notificación de cliente o servidor en el receptor.<br/>                                                                                                                                                    |
-| <span id="ORPC_DEBUG_IF_HOOK_ENABLED"></span><span id="orpc_debug_if_hook_enabled"></span><dl> <dt>**ORPC \_ DEPURACIÓN \_ SI \_ EL ENLACE \_ ESTÁ**</dt> <dt>0X00000001</dt> </dl> | Si se establece, COM solo genera la notificación de cliente o servidor en el receptor si se ha habilitado la depuración COM mediante una llamada a [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) en ese proceso con **fTrace** establecido en **TRUE.** <br/> |
+| <span id="ORPC_DEBUG_IF_HOOK_ENABLED"></span><span id="orpc_debug_if_hook_enabled"></span><dl> <dt>**ORPC \_ DEPURACIÓN \_ SI \_ EL ENLACE \_ ESTÁ**</dt> <dt>HABILITADO 0x00000001</dt> </dl> | Si se establece, COM solo genera la notificación de cliente o servidor en el receptor si se ha habilitado la depuración COM mediante una llamada [**a DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) en ese proceso con **fTrace** establecido en **TRUE.** <br/> |
 
 
 
@@ -104,8 +104,8 @@ Guid que determina qué miembros de la unión están presentes a continuación. 
 
 | Valor                                                                                                           | Significado                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>9CADE560-8F43-101A-B07B-00DD01113F11</dt> </dl> | Determina si el depurador va a realizar una sola ejecución paso a paso. A continuación solo está presente el miembro **fStopOnOtherSide** de la unión.<br/>                                             |
-| <dl> <dt>D62AEDFA-57EA-11ce-A964-00AA006C3706</dt> </dl> | Determina si se pasan al receptor los datos y códigos de operación de depuración de RPC. Todos los miembros de la unión están presentes a continuación, a excepción de **fStopOnOtherSide**.<br/> |
+| <dl> <dt>9CADE560-8F43-101A-B07B-00DD01113F11</dt> </dl> | Determina si el depurador va a realizar una sola ejecución paso a paso. A **continuación solo está presente el miembro fStopOnOtherSide** de la unión.<br/>                                             |
+| <dl> <dt>D62AEDFA-57EA-11ce-A964-00AA006C3706</dt> </dl> | Determina si los datos de RPC y los códigos de operación de depuración se pasan al receptor. Todos los miembros de la unión están presentes a continuación con la excepción **de fStopOnOtherSide**.<br/> |
 
 
 
@@ -116,7 +116,7 @@ Guid que determina qué miembros de la unión están presentes a continuación. 
 **fStopOnOtherSide**
 </dt> <dd>
 
-Si **es TRUE,** el depurador realiza una sola ejecución paso a paso y debe salir del servidor y continuar con la ejecución una vez que se alcanza el otro lado. De lo contrario, no se realiza una sola ejecución y la ejecución del depurador se detiene en el otro lado.
+Si **es TRUE,** el depurador realiza una sola ejecución paso a paso y debe salir del servidor y continuar con la ejecución una vez que se alcanza el otro lado. De lo contrario, no se realiza una sola ejecución paso a paso y la ejecución del depurador se detiene en el otro lado.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Valor que permite especificar una de una serie de operaciones. **wDebuggingOpCod
 | Valor                                                                             | Significado                                                                                              |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0x0000</dt> </dl> | No hay ninguna operación.<br/>                                                                             |
-| <dl> <dt>0x0001</dt> </dl> | Si se establece, la semántica de un solo paso es idéntica **a fStopOnOtherSide cuando** se establece en **TRUE.**<br/> |
+| <dl> <dt>0x0001</dt> </dl> | Si se establece, la semántica de un solo paso es idéntica **a fStopOnOtherSide** cuando se establece en **TRUE.**<br/> |
 
 
 
@@ -179,13 +179,13 @@ GUID **que** determina el tipo de datos en **rgbData.** **guidExtent** puede tom
 **rgbData**
 </dt> <dd>
 
-Búfer **BYTE** que se usa para pasar datos COM con cifrado RPC entre los depuradores de cliente y servidor. El contenido de **rgbData** viene determinado por el **GUID** en **guidExtent.**
+Un **búfer BYTE** que se usa para pasar datos COM con salida RPC entre los depuradores de cliente y servidor. El contenido de **rgbData** viene determinado por el **GUID** **de guidExtent.**
 
 
 
 | Valor guidExtent                     | contenido rgbData                                                                                                                                                                                                                                    |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 53199051-57EB-11ce-A964-00AA006C3706 | Puntero de interfaz de referencia que resulta de llamar a [**CoMarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterface). El puntero de referencia se convierte en su puntero de interfaz correspondiente mediante [**CoUnmarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface). |
+| 53199051-57EB-11ce-A964-00AA006C3706 | Puntero de interfaz de referencia que resulta de llamar [**a CoMarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterface). El puntero de referencia se convierte en su puntero de interfaz correspondiente mediante [**CoUnmarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface). |
 
 
 
@@ -216,7 +216,7 @@ Estos miembros de esta estructura tienen una alineación de 1 byte y siempre se 
 [**ORPC \_ DBG \_ ALL**](orpc-dbg-all.md)
 </dt> <dt>
 
-[**ORPC \_ INIT \_ ARGS**](orpc-init-args.md)
+[**ARGUMENTOS \_ DE ORPC INIT \_**](orpc-init-args.md)
 </dt> <dt>
 
 [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md)

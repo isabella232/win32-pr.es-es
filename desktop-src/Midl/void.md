@@ -1,5 +1,5 @@
 ---
-title: void (atributo)
+title: atributo void
 description: El tipo base void indica un procedimiento sin argumentos o un procedimiento que no devuelve un valor de resultado.
 ms.assetid: a3eebfe7-bf43-4bab-b87b-9188a54ab9bf
 keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118382441"
 ---
-# <a name="void-attribute"></a>void (atributo)
+# <a name="void-attribute"></a>atributo void
 
 El tipo base **void** indica un procedimiento sin argumentos o un procedimiento que no devuelve un valor de resultado.
 

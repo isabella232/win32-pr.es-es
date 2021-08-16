@@ -3,7 +3,7 @@ title: WM/SubTitle
 description: El atributo WM/SubTitle contiene el subtítulo del contenido.
 ms.assetid: 290ec571-3bb9-4817-8f63-3d6c3c9802bf
 keywords:
-- Formato multimedia de windows WM/SubTitle
+- Formato multimedia de Windows WM/SubTitle
 topic_type:
 - apiref
 api_name:

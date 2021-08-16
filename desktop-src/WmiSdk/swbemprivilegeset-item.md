@@ -27,7 +27,7 @@ ms.locfileid: "118313527"
 
 El **método Item** del objeto [**SWbemPrivilegeSet**](swbemprivilegeset.md) devuelve un objeto [**SWbemPrivilege**](swbemprivilege.md) de la colección. El **método Item** es el método predeterminado de un objeto **SWbemPrivilegeSet.**
 
-Para obtener una explicación de esta sintaxis, consulte [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ Error no especificado.
 
 </dd> <dt>
 
-**wbemErrNotFound:** 2147749890 (0x80041002)
+**wbemErrNotFound** : 2147749890 (0x80041002)
 </dt> <dd>
 
 El privilegio especificado no existe.
@@ -77,7 +77,7 @@ El privilegio especificado no existe.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código de VBScript se usa el **método Item**
+En el siguiente ejemplo de código de VBScript se usa **el método Item**
 
 
 ```VB

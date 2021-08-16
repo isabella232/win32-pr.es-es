@@ -31,7 +31,7 @@ El **atributo CDTrackEnabled** indica si la pista está habilitada para la repro
 
 Este atributo solo se almacena en la memoria caché de la biblioteca.
 
-Al reproducir un CD en Reproductor de Windows Media, el usuario puede seleccionar una pista y especificar que no se debe reproducir. Este valor de este atributo es True si se puede reproducir la pista o False si el usuario especificó que no se debe reproducir la pista.
+Al reproducir un CD Reproductor de Windows Media, el usuario puede seleccionar una pista y especificar que no se debe reproducir. Este valor de este atributo es True si se puede reproducir la pista o False si el usuario especificó que no se debe reproducir la pista.
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 

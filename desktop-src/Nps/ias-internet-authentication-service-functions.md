@@ -30,9 +30,9 @@ La arquitectura de archivos DLL de extensión NPS admite las siguientes funcione
 -   [**RadiusExtensionProcess2**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2)
 -   [**RadiusExtensionTerm**](/windows/desktop/api/authif/nc-authif-pradius_extension_term)
 
-Las [**funciones RadiusExtensionInit**](/windows/desktop/api/authif/nc-authif-pradius_extension_init) [**y RadiusExtensionTerm**](/windows/desktop/api/authif/nc-authif-pradius_extension_term) son opcionales.
+Las [**funciones RadiusExtensionInit**](/windows/desktop/api/authif/nc-authif-pradius_extension_init) y [**RadiusExtensionTerm**](/windows/desktop/api/authif/nc-authif-pradius_extension_term) son opcionales.
 
-El archivo DLL de extensión [**puede exportar RadiusExtensionProcess2**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2) en lugar de [**RadiusExtensionProcess**](/windows/desktop/api/authif/nc-authif-pradius_extension_process) [**o RadiusExtensionProcessEx.**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_ex)
+El archivo DLL de extensión puede [**exportar RadiusExtensionProcess2**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2) en lugar [**de RadiusExtensionProcess**](/windows/desktop/api/authif/nc-authif-pradius_extension_process) [**o RadiusExtensionProcessEx.**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_ex)
 
 Si el archivo DLL de extensión [**exporta RadiusExtensionProcessEx**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_ex), también debe exportar [**RadiusExtensionFreeAttributes**](/windows/desktop/api/authif/nc-authif-pradius_extension_free_attributes).
 

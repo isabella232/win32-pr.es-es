@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCEndOfPass (Wmcodecdsp.h)
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCEndOfPass (Wmcodecdsp.h)
+description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCEndOfPass (Wmcodecdsp.h)
 ms.assetid: e590436f-85b2-472b-8e6d-6f82d4a1fe9d
 keywords:
 - g_wszWMVCEndOfPass windows Media Format
@@ -23,7 +23,7 @@ ms.locfileid: "118198930"
 ---
 # <a name="g_wszwmvcendofpass"></a>g \_ wszWMVCEndOfPass
 
-Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec y LAS API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 

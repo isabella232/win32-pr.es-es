@@ -19,7 +19,7 @@ ms.locfileid: "118315392"
 ---
 # <a name="setting-the-authentication-service-using-vbscript"></a>Establecimiento del servicio de autenticación mediante VBScript
 
-Al acceder a un servidor Windows Management Instrumentation (WMI) con un script, puede elegir entre los protocolos de autenticación NT LAN Manager (NTLM) o Kerberos. No es necesario especificar Kerberos excepto cuando se usa la delegación. Para obtener más información, [vea Connecting to a 3rd Computer-Delegation](connecting-to-a-3rd-computer-delegation.md).
+Al acceder a un servidor Windows Management Instrumentation (WMI) con un script, puede elegir entre los protocolos de autenticación NT LAN Manager (NTLM) o Kerberos. No es necesario especificar Kerberos excepto cuando se usa la delegación. Para obtener más información, vea [Connecting to a 3rd Computer-Delegation](connecting-to-a-3rd-computer-delegation.md).
 
 Dado que las versiones del sistema operativo difieren en el servicio de autenticación que usan, se recomienda no especificar un valor para el campo de autoridad al conectarse a un sistema remoto. En su lugar, permita que el sistema operativo y la versión distribuida del Modelo de objetos componentes (DCOM) seleccione NTLM o Kerberos. Si se especifica un servicio de autenticación, la sintaxis requiere el nombre principal del servidor, que es el nombre del equipo de destino en lugar del controlador de dominio.
 

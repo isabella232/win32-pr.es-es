@@ -44,21 +44,21 @@ D3DCOLOR D3DCOLOR_XYUV(
 *y* 
 </dt> <dd>
 
-Componente de luminosidad del color. Este valor debe estar entre 0 y 255.
+Componente de luminosidad del color. Este valor debe estar en el intervalo de 0 a 255.
 
 </dd> <dt>
 
 *u* 
 </dt> <dd>
 
-Brillo azul del color. Este valor debe estar entre 0 y 255.
+Brillo azul del color. Este valor debe estar en el intervalo de 0 a 255.
 
 </dd> <dt>
 
 *V* 
 </dt> <dd>
 
-Brillo rojo del color. Este valor debe estar entre 0 y 255.
+Brillo rojo del color. Este valor debe estar en el intervalo de 0 a 255.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Devuelve el [**valor D3DCOLOR**](d3dcolor.md) que corresponde a los valores prop
 
 ## <a name="remarks"></a>Comentarios
 
-Un color RGB se puede reducir a 16 bits por píxel mediante la conversión a las diferencias de luminosidad y color con las siguientes ecuaciones:
+Un color RGB se puede reducir a 16 bits por píxel mediante la conversión a diferencias de luminosidad y color con las ecuaciones siguientes:
 
 
 ```C++

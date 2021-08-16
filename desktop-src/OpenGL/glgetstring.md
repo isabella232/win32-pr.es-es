@@ -1,9 +1,9 @@
 ---
-title: función glGetString (GL. h)
-description: La función glGetString devuelve una cadena que describe la conexión de OpenGL actual.
+title: Función glGetString (Gl.h)
+description: La función glGetString devuelve una cadena que describe la conexión OpenGL actual.
 ms.assetid: 768e6ec2-3f00-44e6-b3cb-de0f06d6a73d
 keywords:
-- glGetString (función) OpenGL
+- Función glGetString OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e263e35802af752fa262c898d036fccaa37aff87
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9cbc5a1add320d711c92020074b3de810d134e88953a8413c0efd2e6b6fdd954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118359914"
 ---
-# <a name="glgetstring-function"></a>glGetString función)
+# <a name="glgetstring-function"></a>Función glGetString
 
-La función **glGetString** devuelve una cadena que describe la conexión de OpenGL actual.
+La **función glGetString** devuelve una cadena que describe la conexión OpenGL actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ const GLubyte* WINAPI glGetString(
 *name* 
 </dt> <dd>
 
-Una de las constantes simbólicas siguientes.
+Una de las siguientes constantes simbólicas.
 
 
 
-| Value                                                                                                                                                         | Significado                                                                                                                                                                        |
+| Valor                                                                                                                                                         | Significado                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_VENDOR"></span><span id="gl_vendor"></span><dl> <dt>**proveedor de contabilidad general \_**</dt> </dl>             | Devuelve la empresa responsable de esta implementación de OpenGL. Este nombre no cambia de Release a Release.<br/>                                                  |
-| <span id="GL_RENDERER"></span><span id="gl_renderer"></span><dl> <dt>**Representador de GL \_**</dt> </dl>       | Devuelve el nombre del representador. Este nombre suele ser específico de una configuración determinada de una plataforma de hardware. No cambia de Release a Release.<br/> |
-| <span id="GL_VERSION"></span><span id="gl_version"></span><dl> <dt>**versión de contabilidad \_**</dt> </dl>          | Devuelve una versión o un número de versión.<br/>                                                                                                                                |
-| <span id="GL_EXTENSIONS"></span><span id="gl_extensions"></span><dl> <dt>**extensiones de GL \_**</dt> </dl> | Devuelve una lista separada por espacios de las extensiones admitidas a OpenGL.<br/>                                                                                                   |
+| <span id="GL_VENDOR"></span><span id="gl_vendor"></span><dl> <dt>**\_PROVEEDOR DE GL**</dt> </dl>             | Devuelve la empresa responsable de esta implementación de OpenGL. Este nombre no cambia de versión a versión.<br/>                                                  |
+| <span id="GL_RENDERER"></span><span id="gl_renderer"></span><dl> <dt>**REPRESENTADOR \_ DE GL**</dt> </dl>       | Devuelve el nombre del representador. Este nombre suele ser específico de una configuración determinada de una plataforma de hardware. No cambia de versión a versión.<br/> |
+| <span id="GL_VERSION"></span><span id="gl_version"></span><dl> <dt>**VERSIÓN \_ DE GL**</dt> </dl>          | Devuelve una versión o un número de versión.<br/>                                                                                                                                |
+| <span id="GL_EXTENSIONS"></span><span id="gl_extensions"></span><dl> <dt>**EXTENSIONES \_ GL**</dt> </dl> | Devuelve una lista separada por espacios de extensiones admitidas a OpenGL.<br/>                                                                                                   |
 
 
 
@@ -68,28 +68,28 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | *el nombre* no era un valor aceptado.<br/>                                                                                          |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *name* no era un valor aceptado.<br/>                                                                                          |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glGetString** devuelve un puntero a una cadena estática que describe algún aspecto de la conexión de OpenGL actual.
+La **función glGetString** devuelve un puntero a una cadena estática que describe algún aspecto de la conexión OpenGL actual.
 
-Dado que OpenGL no incluye consultas para las características de rendimiento de una implementación, se espera que algunas aplicaciones se escriban para reconocer plataformas conocidas y modifiquen el uso de OpenGL en función de las características de rendimiento conocidas de estas plataformas. Las cadenas de \_ representador de contabilidad y de libro de contabilidad de forma \_ exclusiva especifican una plataforma y no cambiarán de Release a Release. Los algoritmos de reconocimiento de plataforma deben usarlos como tales.
+Dado que OpenGL no incluye consultas para las características de rendimiento de una implementación, se espera que algunas aplicaciones se escriban para reconocer plataformas conocidas y modifiquen su uso de OpenGL en función de las características de rendimiento conocidas de estas plataformas. Las cadenas GL VENDOR y GL RENDERER juntos especifican de forma única una plataforma \_ \_ y no cambiarán de versión a versión. Deben usarse como tales mediante algoritmos de reconocimiento de plataforma.
 
-El formato y el contenido de la cadena que devuelve **glGetString** dependen de la implementación, excepto en que:
+El formato y el contenido de la cadena que **glGetString devuelve** dependen de la implementación, salvo que:
 
--   Los nombres de extensión no incluirán caracteres de espacio y estarán separados por caracteres de espacio en la \_ cadena de extensiones GL.
--   La cadena de versión de GL \_ comienza con un número de versión. El número de versión usa una de estas formas:
+-   Los nombres de extensión no incluirán caracteres de espacio y estarán separados por caracteres de espacio en la cadena \_ GL EXTENSIONS.
+-   La cadena \_ GL VERSION comienza con un número de versión. El número de versión usa uno de estos formularios:
 
-    *\_ número principal*. *\_ número secundario*
+    *número \_ principal*. *número \_ menor*
 
-    *\_ número principal*. *\_ número secundario*. *\_ número de versión*
+    *número \_ principal*. *número \_ menor*. *número de \_ versión*
 
 -   La información específica del proveedor puede seguir el número de versión. Su formato depende de la implementación, pero un espacio siempre separa el número de versión y la información específica del proveedor.
--   Todas las cadenas terminan en NULL.
+-   Todas las cadenas finalizan en NULL.
 
 Si se genera un error, **glGetString** devuelve cero.
 
@@ -97,17 +97,17 @@ Si se genera un error, **glGetString** devuelve cero.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

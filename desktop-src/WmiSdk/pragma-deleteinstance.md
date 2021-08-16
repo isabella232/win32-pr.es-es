@@ -33,7 +33,7 @@ A continuación se describe la sintaxis de este comando:
 
 
 
-*InstanceId* es un identificador único de la instancia que el compilador de MOF elimina del espacio de nombres actual.
+*InstanceId es* un identificador único de la instancia que el compilador MOF elimina del espacio de nombres actual.
 
 *\[ La \]* marca debe ser uno de los argumentos siguientes.
 

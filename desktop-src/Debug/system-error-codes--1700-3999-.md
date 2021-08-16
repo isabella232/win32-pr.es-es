@@ -457,7 +457,7 @@ La etiqueta no es válida.
 
 
 
-Los límites de matriz no son válidos.
+Los límites de la matriz no son válidos.
 
 
 </dt> </dl> </dd> <dt>
@@ -501,7 +501,7 @@ No se admite la sintaxis de nombre.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_UUID_NO_ADDRESS"></span><span id="rpc_s_uuid_no_address"></span>**RPC \_ S \_ UUID \_ NO \_ ADDRESS**
+<span id="RPC_S_UUID_NO_ADDRESS"></span><span id="rpc_s_uuid_no_address"></span>**UUID \_ DE RPC S SIN \_ \_ \_ DIRECCIÓN**
 </dt> <dd> <dl> <dt>
 
 1739 (0x6CB)
@@ -527,7 +527,7 @@ El punto de conexión es un duplicado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_UNKNOWN_AUTHN_TYPE"></span><span id="rpc_s_unknown_authn_type"></span>**TIPO \_ DE \_ \_ AUTENTICACIÓN DESCONOCIDO DE \_ RPC S**
+<span id="RPC_S_UNKNOWN_AUTHN_TYPE"></span><span id="rpc_s_unknown_authn_type"></span>**TIPO \_ DE \_ \_ AUTENTICACIÓN DESCONOCIDO DE \_ RPC**
 </dt> <dd> <dl> <dt>
 
 1741 (0x6CD)
@@ -600,7 +600,7 @@ El número de procedimiento está fuera del intervalo.
 
 
 
-El enlace no contiene información de autenticación.
+El enlace no contiene ninguna información de autenticación.
 
 
 </dt> </dl> </dd> <dt>
@@ -631,7 +631,7 @@ Se desconoce el nivel de autenticación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_AUTH_IDENTITY"></span><span id="rpc_s_invalid_auth_identity"></span>**IDENTIDAD \_ DE \_ AUTENTICACIÓN NO VÁLIDA DE RPC \_ \_ S**
+<span id="RPC_S_INVALID_AUTH_IDENTITY"></span><span id="rpc_s_invalid_auth_identity"></span>**IDENTIDAD \_ DE \_ AUTENTICACIÓN NO VÁLIDA \_ DE \_ RPC S**
 </dt> <dd> <dl> <dt>
 
 1749 (0x6D5)
@@ -756,12 +756,12 @@ No hay más miembros.
 
 
 
-No hay nada que no se puede desaportar.
+No hay nada que desaportar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INTERFACE_NOT_FOUND"></span><span id="rpc_s_interface_not_found"></span>**NO \_ SE ENCUENTRA LA INTERFAZ RPC \_ \_ \_ S**
+<span id="RPC_S_INTERFACE_NOT_FOUND"></span><span id="rpc_s_interface_not_found"></span>**NO \_ SE ENCONTRÓ LA INTERFAZ RPC \_ \_ \_ S**
 </dt> <dd> <dl> <dt>
 
 1759 (0x6DF)
@@ -787,7 +787,7 @@ La entrada ya existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_ENTRY_NOT_FOUND"></span><span id="rpc_s_entry_not_found"></span>**ENTRADA \_ RPC S NO \_ \_ \_ ENCONTRADA**
+<span id="RPC_S_ENTRY_NOT_FOUND"></span><span id="rpc_s_entry_not_found"></span>**NO \_ SE ENCONTRÓ LA ENTRADA RPC \_ \_ \_ S**
 </dt> <dd> <dl> <dt>
 
 1761 (0x6E1)
@@ -813,7 +813,7 @@ El servicio de nombres no está disponible.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_NAF_ID"></span><span id="rpc_s_invalid_naf_id"></span>**IDENTIFICADOR \_ \_ NAF NO VÁLIDO \_ de \_ RPC S**
+<span id="RPC_S_INVALID_NAF_ID"></span><span id="rpc_s_invalid_naf_id"></span>**IDENTIFICADOR \_ \_ NAF NO VÁLIDO de RPC \_ \_ S**
 </dt> <dd> <dl> <dt>
 
 1763 (0x6E3)
@@ -878,7 +878,7 @@ El servidor RPC intentó una división de enteros por cero.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_ADDRESS_ERROR"></span><span id="rpc_s_address_error"></span>**ERROR \_ DE DIRECCIÓN S \_ DE \_ RPC**
+<span id="RPC_S_ADDRESS_ERROR"></span><span id="rpc_s_address_error"></span>**ERROR DE DIRECCIÓN DE RPC \_ S \_ \_**
 </dt> <dd> <dl> <dt>
 
 1768 (0x6E8)
@@ -899,12 +899,12 @@ Error de direccionamiento en el servidor RPC.
 
 
 
-Una operación de punto flotante en el servidor RPC provocó una división por cero.
+Una operación de punto flotante en el servidor RPC produjo una división por cero.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_FP_UNDERFLOW"></span><span id="rpc_s_fp_underflow"></span>**\_ \_ SUBDESBORDO de FP de RPC S \_**
+<span id="RPC_S_FP_UNDERFLOW"></span><span id="rpc_s_fp_underflow"></span>**FLUJO \_ INFERIOR DE FP \_ \_ de RPC S**
 </dt> <dd> <dl> <dt>
 
 1770 (0x6EA)
@@ -943,7 +943,7 @@ Se ha agotado la lista de servidores RPC disponibles para el enlace de identific
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_SS_CHAR_TRANS_OPEN_FAIL"></span><span id="rpc_x_ss_char_trans_open_fail"></span>**ERROR \_ AL ABRIR RPC X \_ SS CHAR \_ \_ TRANS \_ \_**
+<span id="RPC_X_SS_CHAR_TRANS_OPEN_FAIL"></span><span id="rpc_x_ss_char_trans_open_fail"></span>**ERROR AL ABRIR RPC \_ X \_ SS \_ CHAR \_ TRANS \_ \_**
 </dt> <dd> <dl> <dt>
 
 1773 (0x6ED)
@@ -995,7 +995,7 @@ El identificador de contexto cambió durante una llamada a procedimiento remoto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_SS_HANDLES_MISMATCH"></span><span id="rpc_x_ss_handles_mismatch"></span>**RPC \_ X \_ SS \_ HANDLES \_ MISMATCH**
+<span id="RPC_X_SS_HANDLES_MISMATCH"></span><span id="rpc_x_ss_handles_mismatch"></span>**ERROR \_ DE COINCIDENCIA DE \_ \_ IDENTIFICADORES DE RPC X SS \_**
 </dt> <dd> <dl> <dt>
 
 1778 (0x6F2)
@@ -1021,7 +1021,7 @@ El código auxiliar no puede obtener el identificador de llamada a procedimiento
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_NULL_REF_POINTER"></span><span id="rpc_x_null_ref_pointer"></span>**RPC \_ X \_ NULL \_ REF \_ POINTER**
+<span id="RPC_X_NULL_REF_POINTER"></span><span id="rpc_x_null_ref_pointer"></span>**PUNTERO RPC \_ X \_ NULL \_ REF \_**
 </dt> <dd> <dl> <dt>
 
 1780 (0x6F4)
@@ -1060,7 +1060,7 @@ El recuento de bytes es demasiado pequeño.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_BAD_STUB_DATA"></span><span id="rpc_x_bad_stub_data"></span>**RPC \_ X DATOS DE CÓDIGO AUXILIAR NO \_ \_ \_ CIFRADO**
+<span id="RPC_X_BAD_STUB_DATA"></span><span id="rpc_x_bad_stub_data"></span>**DATOS \_ DE CÓDIGO AUXILIAR NO CIFRADO \_ \_ RPC X \_**
 </dt> <dd> <dl> <dt>
 
 1783 (0x6F7)
@@ -1068,7 +1068,7 @@ El recuento de bytes es demasiado pequeño.
 
 
 
-El código auxiliar recibió datos no obtenidos.
+El código auxiliar recibió datos no recibidos.
 
 
 </dt> </dl> </dd> <dt>
@@ -1086,7 +1086,7 @@ El búfer de usuario proporcionado no es válido para la operación solicitada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNRECOGNIZED_MEDIA"></span><span id="error_unrecognized_media"></span>**ERROR \_ MEDIOS NO \_ RECONOCIDOS**
+<span id="ERROR_UNRECOGNIZED_MEDIA"></span><span id="error_unrecognized_media"></span>**MEDIOS \_ NO RECONOCIDOS DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1785 (0x6F9)
@@ -1125,7 +1125,7 @@ La base de datos de seguridad del servidor no tiene una cuenta de equipo para es
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRUSTED_DOMAIN_FAILURE"></span><span id="error_trusted_domain_failure"></span>**ERROR ERROR \_ DE \_ DOMINIO DE \_ CONFIANZA**
+<span id="ERROR_TRUSTED_DOMAIN_FAILURE"></span><span id="error_trusted_domain_failure"></span>**ERROR DE \_ DOMINIO \_ DE \_ CONFIANZA**
 </dt> <dd> <dl> <dt>
 
 1788 (0x6FC)
@@ -1138,7 +1138,7 @@ Error en la relación de confianza entre el dominio principal y el dominio en el
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRUSTED_RELATIONSHIP_FAILURE"></span><span id="error_trusted_relationship_failure"></span>**ERROR ERROR \_ DE RELACIÓN \_ DE \_ CONFIANZA**
+<span id="ERROR_TRUSTED_RELATIONSHIP_FAILURE"></span><span id="error_trusted_relationship_failure"></span>**ERROR ERROR \_ DE \_ RELACIÓN DE \_ CONFIANZA**
 </dt> <dd> <dl> <dt>
 
 1789 (0x6FD)
@@ -1151,7 +1151,7 @@ Error en la relación de confianza entre esta estación de trabajo y el dominio 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRUST_FAILURE"></span><span id="error_trust_failure"></span>**ERROR \_ DE CONFIANZA \_**
+<span id="ERROR_TRUST_FAILURE"></span><span id="error_trust_failure"></span>**ERROR DE \_ CONFIANZA \_**
 </dt> <dd> <dl> <dt>
 
 1790 (0x6FE)
@@ -1216,7 +1216,7 @@ El redirector está en uso y no se puede descargar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DRIVER_ALREADY_INSTALLED"></span><span id="error_printer_driver_already_installed"></span>**ERROR \_ EL CONTROLADOR DE IMPRESORA YA ESTÁ \_ \_ \_ INSTALADO**
+<span id="ERROR_PRINTER_DRIVER_ALREADY_INSTALLED"></span><span id="error_printer_driver_already_installed"></span>**ERROR \_ CONTROLADOR DE IMPRESORA YA \_ \_ \_ INSTALADO**
 </dt> <dd> <dl> <dt>
 
 1795 (0x703)
@@ -1710,7 +1710,7 @@ Versión de canalización RPC no admitida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_COOKIE_AUTH_FAILED"></span><span id="rpc_s_cookie_auth_failed"></span>**ERROR \_ DE \_ AUTENTICACIÓN DE COOKIE \_ DE \_ RPC S**
+<span id="RPC_S_COOKIE_AUTH_FAILED"></span><span id="rpc_s_cookie_auth_failed"></span>**ERROR \_ EN LA \_ AUTENTICACIÓN DE COOKIES \_ DE \_ RPC S**
 </dt> <dd> <dl> <dt>
 
 1833 (0x729)
@@ -1744,12 +1744,12 @@ No se encontró el miembro del grupo.
 
 
 
-No se pudo crear la entrada de base de datos del asignador de puntos de conexión.
+No se pudo crear la entrada de la base de datos del asignador de puntos de conexión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_OBJECT"></span><span id="rpc_s_invalid_object"></span>**OBJETO \_ RPC S NO \_ \_ VÁLIDO**
+<span id="RPC_S_INVALID_OBJECT"></span><span id="rpc_s_invalid_object"></span>**RPC \_ S \_ INVALID \_ OBJECT**
 </dt> <dd> <dl> <dt>
 
 1900 (0x76C)
@@ -1783,7 +1783,7 @@ La hora especificada no es válida.
 
 
 
-El nombre de formulario especificado no es válido.
+El nombre del formulario especificado no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -1801,7 +1801,7 @@ El tamaño de formulario especificado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALREADY_WAITING"></span><span id="error_already_waiting"></span>**ERROR \_ YA EN \_ ESPERA**
+<span id="ERROR_ALREADY_WAITING"></span><span id="error_already_waiting"></span>**ERROR \_ YA \_ EN ESPERA**
 </dt> <dd> <dl> <dt>
 
 1904 (0x770)
@@ -1809,12 +1809,12 @@ El tamaño de formulario especificado no es válido.
 
 
 
-Ya se está esperando el identificador de impresora especificado.
+El identificador de impresora especificado ya está esperando.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DELETED"></span><span id="error_printer_deleted"></span>**IMPRESORA \_ DE ERROR \_ ELIMINADA**
+<span id="ERROR_PRINTER_DELETED"></span><span id="error_printer_deleted"></span>**ERROR \_ IMPRESORA \_ ELIMINADA**
 </dt> <dd> <dl> <dt>
 
 1905 (0x771)
@@ -1840,7 +1840,7 @@ El estado de la impresora no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PASSWORD_MUST_CHANGE"></span><span id="error_password_must_change"></span>**LA CONTRASEÑA \_ DE ERROR \_ DEBE \_ CAMBIAR**
+<span id="ERROR_PASSWORD_MUST_CHANGE"></span><span id="error_password_must_change"></span>**ERROR \_ LA CONTRASEÑA DEBE \_ \_ CAMBIAR**
 </dt> <dd> <dl> <dt>
 
 1907 (0x773)
@@ -1866,7 +1866,7 @@ No se encontró el controlador de dominio para este dominio.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACCOUNT_LOCKED_OUT"></span><span id="error_account_locked_out"></span>**CUENTA DE ERROR \_ \_ \_ BLOQUEADA**
+<span id="ERROR_ACCOUNT_LOCKED_OUT"></span><span id="error_account_locked_out"></span>**CUENTA DE ERROR \_ \_ BLOQUEADA \_**
 </dt> <dd> <dl> <dt>
 
 1909 (0x775)
@@ -1879,7 +1879,7 @@ La cuenta a la que se hace referencia está bloqueada actualmente y es posible q
 
 </dt> </dl> </dd> <dt>
 
-<span id="OR_INVALID_OXID"></span><span id="or_invalid_oxid"></span>**O \_ INVALID \_ INVALIDAD**
+<span id="OR_INVALID_OXID"></span><span id="or_invalid_oxid"></span>**O \_ INVALIDAD \_**
 </dt> <dd> <dl> <dt>
 
 1910 (0x776)
@@ -1913,12 +1913,12 @@ No se encontró el objeto especificado.
 
 
 
-No se encontró el conjunto de resolución de objetos especificado.
+No se encontró el conjunto de solucionador de objetos especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_SEND_INCOMPLETE"></span><span id="rpc_s_send_incomplete"></span>**ENVÍO DE RPC \_ S \_ \_ INCOMPLETO**
+<span id="RPC_S_SEND_INCOMPLETE"></span><span id="rpc_s_send_incomplete"></span>**RPC \_ S \_ SEND \_ INCOMPLETE**
 </dt> <dd> <dl> <dt>
 
 1913 (0x779)
@@ -1926,12 +1926,12 @@ No se encontró el conjunto de resolución de objetos especificado.
 
 
 
-Quedan algunos datos por enviar en el búfer de solicitudes.
+Algunos datos permanecen para enviarse en el búfer de solicitudes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_ASYNC_HANDLE"></span><span id="rpc_s_invalid_async_handle"></span>**IDENTIFICADOR \_ \_ ASINCRÓNICO NO VÁLIDO \_ DE \_ RPC S**
+<span id="RPC_S_INVALID_ASYNC_HANDLE"></span><span id="rpc_s_invalid_async_handle"></span>**IDENTIFICADOR \_ \_ ASINCRÓNICO NO VÁLIDO \_ DE \_ RPC**
 </dt> <dd> <dl> <dt>
 
 1914 (0x77A)
@@ -1944,7 +1944,7 @@ Identificador de llamada a procedimiento remoto asincrónico no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_ASYNC_CALL"></span><span id="rpc_s_invalid_async_call"></span>**LLAMADA \_ ASINCRÓNICA NO VÁLIDA \_ \_ DE \_ RPC S**
+<span id="RPC_S_INVALID_ASYNC_CALL"></span><span id="rpc_s_invalid_async_call"></span>**RPC \_ S \_ INVALID \_ ASYNC \_ CALL**
 </dt> <dd> <dl> <dt>
 
 1915 (0x77B)
@@ -1952,7 +1952,7 @@ Identificador de llamada a procedimiento remoto asincrónico no válido.
 
 
 
-Identificador de llamada RPC asincrónico no válido para esta operación.
+Identificador de llamada RPC asincrónica no válido para esta operación.
 
 
 </dt> </dl> </dd> <dt>
@@ -1978,7 +1978,7 @@ El objeto de canalización RPC ya se ha cerrado.
 
 
 
-La llamada RPC se completó antes de que se procesaron todas las canalizaciones.
+La llamada RPC se completó antes de procesar todas las canalizaciones.
 
 
 </dt> </dl> </dd> <dt>
@@ -2035,7 +2035,7 @@ El sistema no puede resolver el nombre del archivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_ENTRY_TYPE_MISMATCH"></span><span id="rpc_s_entry_type_mismatch"></span>**ERROR DE \_ COINCIDENCIA DEL TIPO DE ENTRADA \_ \_ \_ DE RPC S**
+<span id="RPC_S_ENTRY_TYPE_MISMATCH"></span><span id="rpc_s_entry_type_mismatch"></span>**ERROR DE \_ COINCIDENCIA DEL TIPO DE \_ \_ ENTRADA DE \_ RPC S**
 </dt> <dd> <dl> <dt>
 
 1922 (0x782)
@@ -2056,7 +2056,7 @@ La entrada no es del tipo esperado.
 
 
 
-No todos los UUID de objeto se pueden exportar a la entrada especificada.
+No todos los UUID de objeto se podrían exportar a la entrada especificada.
 
 
 </dt> </dl> </dd> <dt>
@@ -2074,7 +2074,7 @@ No se pudo exportar la interfaz a la entrada especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_PROFILE_NOT_ADDED"></span><span id="rpc_s_profile_not_added"></span>**PERFIL DE RPC \_ S \_ NO \_ \_ AGREGADO**
+<span id="RPC_S_PROFILE_NOT_ADDED"></span><span id="rpc_s_profile_not_added"></span>**PERFIL DE RPC \_ \_ S NO \_ \_ AGREGADO**
 </dt> <dd> <dl> <dt>
 
 1925 (0x785)
@@ -2381,7 +2381,7 @@ No se encontró la etiqueta especificada.
 
 
 
-Una etiqueta obligatoria no está presente.
+No hay una etiqueta obligatoria.
 
 
 </dt> </dl> </dd> <dt>
@@ -2511,7 +2511,7 @@ El índice de color con nombre especificado no está presente en el perfil.
 
 
 
-El perfil especificado está pensado para un dispositivo de un tipo diferente al especificado.
+El perfil especificado está pensado para un dispositivo de un tipo diferente al dispositivo especificado.
 
 
 </dt> </dl> </dd> <dt>
@@ -2594,7 +2594,7 @@ Las conexiones activas siguen existiendo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_IN_USE"></span><span id="error_device_in_use"></span>**DISPOSITIVO \_ DE ERROR EN \_ \_ USO**
+<span id="ERROR_DEVICE_IN_USE"></span><span id="error_device_in_use"></span>**ERROR \_ DEL DISPOSITIVO EN \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 2404 (0x964)
@@ -2607,7 +2607,7 @@ El dispositivo está en uso por un proceso activo y no se puede desconectar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNKNOWN_PRINT_MONITOR"></span><span id="error_unknown_print_monitor"></span>**ERROR MONITOR \_ DE \_ IMPRESIÓN \_ DESCONOCIDO**
+<span id="ERROR_UNKNOWN_PRINT_MONITOR"></span><span id="error_unknown_print_monitor"></span>**ERROR \_ MONITOR DE IMPRESIÓN \_ \_ DESCONOCIDO**
 </dt> <dd> <dl> <dt>
 
 3000 (0xBB8)
@@ -2633,7 +2633,7 @@ El controlador de impresora especificado está actualmente en uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SPOOL_FILE_NOT_FOUND"></span><span id="error_spool_file_not_found"></span>**NO \_ SE ENCONTRÓ EL ARCHIVO \_ SPOOL DE \_ \_ ERROR**
+<span id="ERROR_SPOOL_FILE_NOT_FOUND"></span><span id="error_spool_file_not_found"></span>**ERROR \_ NO SE ENCONTRÓ EL ARCHIVO \_ \_ SPOOL \_**
 </dt> <dd> <dl> <dt>
 
 3002 (0xBBA)
@@ -2641,7 +2641,7 @@ El controlador de impresora especificado está actualmente en uso.
 
 
 
-No se encontró el archivo spool.
+No se encontró el archivo de cola.
 
 
 </dt> </dl> </dd> <dt>
@@ -2672,7 +2672,7 @@ No se emitió una llamada a AddJob.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_PROCESSOR_ALREADY_INSTALLED"></span><span id="error_print_processor_already_installed"></span>**PROCESADOR \_ DE IMPRESIÓN DE ERRORES YA \_ \_ \_ INSTALADO**
+<span id="ERROR_PRINT_PROCESSOR_ALREADY_INSTALLED"></span><span id="error_print_processor_already_installed"></span>**ERROR \_ EL PROCESADOR DE IMPRESIÓN YA ESTÁ \_ \_ \_ INSTALADO**
 </dt> <dd> <dl> <dt>
 
 3005 (0xBBD)
@@ -2680,12 +2680,12 @@ No se emitió una llamada a AddJob.
 
 
 
-El procesador de impresión especificado ya se ha instalado.
+El procesador de impresión especificado ya está instalado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_MONITOR_ALREADY_INSTALLED"></span><span id="error_print_monitor_already_installed"></span>**MONITOR \_ DE IMPRESIÓN DE ERRORES YA \_ \_ \_ INSTALADO**
+<span id="ERROR_PRINT_MONITOR_ALREADY_INSTALLED"></span><span id="error_print_monitor_already_installed"></span>**ERROR PRINT MONITOR ALREADY INSTALLED (MONITOR DE \_ IMPRESIÓN DE ERRORES YA \_ \_ \_ INSTALADO)**
 </dt> <dd> <dl> <dt>
 
 3006 (0xBBE)
@@ -2693,7 +2693,7 @@ El procesador de impresión especificado ya se ha instalado.
 
 
 
-Ya se ha instalado el monitor de impresión especificado.
+El monitor de impresión especificado ya se ha instalado.
 
 
 </dt> </dl> </dd> <dt>
@@ -2711,7 +2711,7 @@ El monitor de impresión especificado no tiene las funciones necesarias.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_MONITOR_IN_USE"></span><span id="error_print_monitor_in_use"></span>**MONITOR \_ DE IMPRESIÓN DE ERRORES EN \_ \_ \_ USO**
+<span id="ERROR_PRINT_MONITOR_IN_USE"></span><span id="error_print_monitor_in_use"></span>**ERROR \_ DEL MONITOR DE IMPRESIÓN EN \_ \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 3008 (0xBC0)
@@ -2724,7 +2724,7 @@ El monitor de impresión especificado está actualmente en uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_HAS_JOBS_QUEUED"></span><span id="error_printer_has_jobs_queued"></span>**LA IMPRESORA \_ DE ERRORES TIENE TRABAJOS EN \_ \_ \_ COLA**
+<span id="ERROR_PRINTER_HAS_JOBS_QUEUED"></span><span id="error_printer_has_jobs_queued"></span>**ERROR \_ LA IMPRESORA TIENE TRABAJOS EN \_ \_ \_ COLA**
 </dt> <dd> <dl> <dt>
 
 3009 (0xBC1)
@@ -2732,12 +2732,12 @@ El monitor de impresión especificado está actualmente en uso.
 
 
 
-La operación solicitada no se permite cuando hay trabajos en cola en la impresora.
+No se permite la operación solicitada cuando hay trabajos en cola en la impresora.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SUCCESS_REBOOT_REQUIRED"></span><span id="error_success_reboot_required"></span>**ERROR \_ NECESARIO PARA REINICIAR \_ \_ CORRECTAMENTE**
+<span id="ERROR_SUCCESS_REBOOT_REQUIRED"></span><span id="error_success_reboot_required"></span>**ERROR NECESARIO \_ \_ PARA REINICIAR \_ CORRECTAMENTE**
 </dt> <dd> <dl> <dt>
 
 3010 (0xBC2)
@@ -2745,7 +2745,7 @@ La operación solicitada no se permite cuando hay trabajos en cola en la impreso
 
 
 
-La operación solicitada se realiza correctamente. Los cambios no serán efectivos hasta que se reinicie el sistema.
+La operación solicitada se ha realizado correctamente. Los cambios no serán efectivos hasta que se reinicie el sistema.
 
 
 </dt> </dl> </dd> <dt>
@@ -2758,7 +2758,7 @@ La operación solicitada se realiza correctamente. Los cambios no serán efectiv
 
 
 
-La operación solicitada se realiza correctamente. Los cambios no serán efectivos hasta que se reinicie el servicio.
+La operación solicitada se ha realizado correctamente. Los cambios no serán efectivos hasta que se reinicie el servicio.
 
 
 </dt> </dl> </dd> <dt>
@@ -2776,7 +2776,7 @@ No se encontraron impresoras.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DRIVER_WARNED"></span><span id="error_printer_driver_warned"></span>**SE HA \_ PRODUCIDO UN ERROR EN EL CONTROLADOR DE \_ \_ IMPRESORA**
+<span id="ERROR_PRINTER_DRIVER_WARNED"></span><span id="error_printer_driver_warned"></span>**ERROR \_ EL CONTROLADOR DE IMPRESORA HA SIDO \_ \_ AMONESTÓ**
 </dt> <dd> <dl> <dt>
 
 3013 (0xBC5)
@@ -2802,7 +2802,7 @@ Se sabe que el controlador de impresora daña el sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DRIVER_PACKAGE_IN_USE"></span><span id="error_printer_driver_package_in_use"></span>**PAQUETE DE \_ CONTROLADOR DE IMPRESORA DE ERROR EN \_ \_ \_ \_ USO**
+<span id="ERROR_PRINTER_DRIVER_PACKAGE_IN_USE"></span><span id="error_printer_driver_package_in_use"></span>**ERROR \_ DEL PAQUETE DEL CONTROLADOR DE IMPRESORA EN \_ \_ \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 3015 (0xBC7)
@@ -2823,12 +2823,12 @@ El paquete de controladores de impresora especificado está actualmente en uso.
 
 
 
-No se encuentra un paquete de controladores principal requerido por el paquete de controladores de impresora.
+No se puede encontrar un paquete de controladores principal requerido por el paquete de controladores de impresora.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_REBOOT_REQUIRED"></span><span id="error_fail_reboot_required"></span>**ERROR \_ AL REINICIAR \_ \_ NECESARIO**
+<span id="ERROR_FAIL_REBOOT_REQUIRED"></span><span id="error_fail_reboot_required"></span>**ERROR AL \_ \_ REINICIAR NECESARIO \_**
 </dt> <dd> <dl> <dt>
 
 3017 (0xBC9)
@@ -2841,7 +2841,7 @@ Error en la operación solicitada. Se requiere un reinicio del sistema para reve
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_REBOOT_INITIATED"></span><span id="error_fail_reboot_initiated"></span>**ERROR \_ AL REINICIAR \_ \_ INICIADO**
+<span id="ERROR_FAIL_REBOOT_INITIATED"></span><span id="error_fail_reboot_initiated"></span>**ERROR \_ AL \_ REINICIAR \_ INICIADO**
 </dt> <dd> <dl> <dt>
 
 3018 (0xBCA)
@@ -2854,7 +2854,7 @@ Error en la operación solicitada. Se ha iniciado un reinicio del sistema para r
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DRIVER_DOWNLOAD_NEEDED"></span><span id="error_printer_driver_download_needed"></span>**ERROR DE \_ DESCARGA DEL CONTROLADOR DE IMPRESORA \_ \_ \_ NECESARIA**
+<span id="ERROR_PRINTER_DRIVER_DOWNLOAD_NEEDED"></span><span id="error_printer_driver_download_needed"></span>**ERROR NECESARIO \_ PARA DESCARGAR EL CONTROLADOR DE \_ \_ \_ IMPRESORA**
 </dt> <dd> <dl> <dt>
 
 3019 (0xBCB)
@@ -2867,7 +2867,7 @@ El controlador de impresora especificado no se encontró en el sistema y debe de
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_JOB_RESTART_REQUIRED"></span><span id="error_print_job_restart_required"></span>**ERROR SE \_ REQUIERE EL REINICIO DEL TRABAJO DE \_ \_ \_ IMPRESIÓN**
+<span id="ERROR_PRINT_JOB_RESTART_REQUIRED"></span><span id="error_print_job_restart_required"></span>**ERROR SE \_ REQUIERE REINICIAR EL TRABAJO DE \_ \_ \_ IMPRESIÓN**
 </dt> <dd> <dl> <dt>
 
 3020 (0xBCC)
@@ -2888,7 +2888,7 @@ No se pudo imprimir el trabajo de impresión solicitado. Una actualización del 
 
 
 
-El controlador de impresora no contiene un manifiesto válido o contiene demasiados manifiestos.
+El controlador de impresora no contiene un manifiesto válido o demasiados manifiestos.
 
 
 </dt> </dl> </dd> <dt>
@@ -2906,7 +2906,7 @@ No se puede compartir la impresora especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REQUEST_PAUSED"></span><span id="error_request_paused"></span>**SOLICITUD DE ERROR \_ \_ EN PAUSA**
+<span id="ERROR_REQUEST_PAUSED"></span><span id="error_request_paused"></span>**SOLICITUD \_ DE ERROR EN \_ PAUSA**
 </dt> <dd> <dl> <dt>
 
 3050 (0xBEA)
@@ -2919,7 +2919,7 @@ La operación se ha pausado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IO_REISSUE_AS_CACHED"></span><span id="error_io_reissue_as_cached"></span>**ERROR \_ IO \_ REISSUE \_ AS \_ CACHED**
+<span id="ERROR_IO_REISSUE_AS_CACHED"></span><span id="error_io_reissue_as_cached"></span>**ERROR \_ \_ E/S SE VUELVAN A EMITIR \_ COMO ALMACENADOS EN \_ CACHÉ**
 </dt> <dd> <dl> <dt>
 
 3950 (0xF6E)
@@ -2939,7 +2939,7 @@ Vuelva a emitir la operación dada como una operación de E/S almacenada en cach
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
 | Header<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 

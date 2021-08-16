@@ -3,7 +3,7 @@ title: Cómo descomprimir secuencias desde un archivo AVI u otro archivo sobre e
 description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Cómo descomprimir secuencias desde un archivo AVI u otro archivo sobre el que no tengo información de formato
 ms.assetid: ba283da2-4ae4-442e-9efc-754c4e1fe0ac
 keywords:
-- Cómo descomprimir secuencias de un archivo AVI u otro archivo sobre el que no tengo información de formato Windows Media Format
+- Cómo descomprimir secuencias de un archivo AVI u otro archivo sobre el que no tengo información de formato windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118198496"
 ---
 # <a name="how-do-i-decompress-streams-from-an-avi-file-or-other-file-about-which-i-have-no-format-information"></a>Cómo descomprimir secuencias desde un archivo AVI u otro archivo sobre el que no tengo información de formato
 
-Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señales digitales, consulte Windows Media Audio and [Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

@@ -1,7 +1,7 @@
 ---
 description: Contiene el nombre de un perfil de LAN inalámbrica.
 ms.assetid: b8977183-7b5d-4c79-9065-ade85ed45716
-title: nombre (WLANProfile) (elemento)
+title: elemento name (WLANProfile)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 79174d1cb24fff1841b3022fa06e201794415ce5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a6d19c043f7cc2e42ca8221e98b05e4afe7628b143bd572465f00e1d3652275
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117984118"
 ---
-# <a name="name-wlanprofile-element"></a>nombre (WLANProfile) (elemento)
+# <a name="name-wlanprofile-element"></a>elemento name (WLANProfile)
 
-El elemento Name (WLANProfile) contiene el nombre de un perfil de LAN inalámbrica.
+El elemento name (WLANProfile) contiene el nombre de un perfil de LAN inalámbrica.
 
 ``` syntax
 <xs:element name="name"
@@ -29,33 +29,33 @@ El elemento Name (WLANProfile) contiene el nombre de un perfil de LAN inalámbri
  />
 ```
 
-El elemento **Name** se define mediante el elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+El **elemento name** se define mediante el elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los nombres distinguen mayúsculas de minúsculas.
 
-En Windows XP con Service Pack 3 (SP3) y la API de LAN inalámbrica para Windows XP con Service Pack 2 (SP2), el elemento Name se omite cuando el perfil se guarda en el almacén de perfiles. El nombre del perfil se deriva del SSID de la red. En el caso de los perfiles de red de infraestructura, el nombre del perfil es el SSID de la red. En el caso de los perfiles de red ad hoc, el nombre del perfil es el SSID de la red ad hoc seguido de `-adhoc` . No se muestran los caracteres de escape XML, como &. Evite usar caracteres de escape XML en nombres SSID para los perfiles implementados en Windows XP con SP3 o la API de LAN inalámbrica para Windows XP con SP2.
+Para Windows XP con Service Pack 3 (SP3) e WIRELESS LAN API para Windows XP con Service Pack 2 (SP2), el elemento name se omite cuando el perfil se guarda en el almacén de perfiles. El nombre del perfil se deriva del SSID de la red. Para los perfiles de red de infraestructura, el nombre del perfil es el SSID de la red. Para los perfiles de red ad hoc, el nombre del perfil es el SSID de la red ad hoc seguido de `-adhoc` . Los caracteres de escape XML, &, no se muestran. Evite el uso de caracteres de escape XML en nombres SSID para perfiles implementados en Windows XP con SP3 o API de LAN inalámbrica para Windows XP con SP2.
 
-En el caso de cualquier perfil de red diseñado para usarse solo en Windows Vista o Windows Server 2008, el nombre puede ser cualquier cadena.
+Para cualquier perfil de red diseñado para su uso solo en Windows Vista o Windows Server 2008, el nombre puede ser cualquier cadena.
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento **Name** , vea [ejemplos de perfiles inalámbricos](wireless-profile-samples.md).
+Para ver los perfiles de ejemplo que usan el **elemento name,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

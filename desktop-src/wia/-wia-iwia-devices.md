@@ -45,7 +45,7 @@ propVal = Wia.Devices
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso de la **colección Devices** para enumerar los dispositivos de un sistema.
+En el ejemplo siguiente se muestra el uso de la colección **Devices** para enumerar los dispositivos en un sistema.
 
 
 ```JScript
@@ -72,7 +72,7 @@ Next
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

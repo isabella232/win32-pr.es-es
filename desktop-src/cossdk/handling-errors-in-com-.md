@@ -13,7 +13,7 @@ ms.locfileid: "118306554"
 ---
 # <a name="handling-errors-in-com"></a>Control de errores en COM+
 
-La parte más problemática de la escritura de componentes es tratar con posibles errores. Intentar determinar qué puede salir mal y qué hacer al respecto puede ser complicado en las mejores condiciones. Los errores comunes que el componente podría comprobar y controlar son conexiones de red con errores, errores de seguridad y errores asociados a objetos inaccesibles.
+La parte más problemática de la escritura de componentes es tratar con posibles errores. Intentar determinar qué puede salir mal y qué hacer al respecto puede ser un desafío en las mejores condiciones. Los errores comunes que el componente podría comprobar y controlar son conexiones de red con errores, errores de seguridad y errores asociados a objetos inaccesibles.
 
 Además, puede desarrollar sus propios códigos de error para notificar errores específicos de la interfaz, como cuando se ha infringido una regla de negocios.
 
@@ -29,9 +29,9 @@ En esta sección se incluyen temas, que se describen en la tabla siguiente, en l
 | [Cómo modifica COM+ los valores devueltos](how-com--modifies-return-values.md)<br/>               | Identifica la única condición en la que COM+ convierte un HRESULT estándar en un código de error COM+ antes de devolverlo al autor de la llamada.<br/>             |
 | [Aislamiento de errores y directiva de conmutación por error](fault-isolation-and-failfast-policy.md)<br/>       | Muestra cómo el aislamiento de errores y la directiva de conmutación por error afectan al comportamiento de COM+.<br/>                                                                          |
 | [Buscar el origen de un error](finding-the-source-of-an-error.md)<br/>                 | Describe cómo puede diagnosticar el origen y obtener una descripción de los errores de la aplicación. <br/>                                                       |
-| [Interpretación de códigos de error](interpreting-error-codes.md)<br/>                             | Identifica el mecanismo predominante de control de errores para Microsoft Visual C++, el lenguaje Java y Microsoft Visual Basic. <br/>                    |
+| [Interpretación de códigos de error](interpreting-error-codes.md)<br/>                             | Identifica el mecanismo predominante de control de errores Microsoft Visual C++, el lenguaje Java y Microsoft Visual Basic. <br/>                    |
 | [Solución de problemas](troubleshooting.md)<br/>                                               | Proporciona ayuda adicional para diagnosticar errores.<br/>                                                                                             |
-| [Ponerse en contacto con el soporte técnico](contacting-support.md)<br/>                                         | Identifica información importante para resolver problemas que debe proporcionar al ponerse en contacto con el soporte técnico.<br/>                                                     |
+| [Ponerse en contacto con el soporte técnico](contacting-support.md)<br/>                                         | Identifica información importante para la solución de problemas que debe proporcionar al ponerse en contacto con el soporte técnico.<br/>                                                     |
 
 
 

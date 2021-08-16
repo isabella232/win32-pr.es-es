@@ -5,8 +5,8 @@ ms.assetid: 8655a81b-9f13-4ee5-ba0d-9aa9da1bfd09
 keywords:
 - contextos de representación OpenGL , porting
 - OpenGL en Windows, contextos de representación
-- porte a OpenGL, representación de contextos
-- Porte de OpenGL, representación de contextos
+- porting to OpenGL,rendering contexts
+- Porte de OpenGL, contextos de representación
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1f4fcb6a70f6858ac9c11258c681345ee88a8807c91230f8d3d35fc579ab3371
@@ -24,7 +24,7 @@ En la tabla siguiente se enumeran las funciones de representación glx y sus fun
 
 
 
-| Función de contexto de representación GLX                                                                            | Windows de contexto de representación                                      |
+| Función de contexto de representación de GLX                                                                            | Windows de contexto de representación                                      |
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | GLXContext **glXCopyContext**( Display *\* dpy*,GLXContext *src*,GLXContext *dst*,GLuint *mask*)            | No es aplicable.                                                         |
 | GLXContext **glXCreateContext**( Display *\* dpy*,XVisualInfo *\* vis*,GLXContext *shareList*,Bool *direct*) | HGLRC [**wglCreateContext**](/windows/desktop/api/wingdi/nf-wingdi-wglcreatecontext)( HDC *hdc*)          |
@@ -37,9 +37,9 @@ En la tabla siguiente se enumeran las funciones de representación glx y sus fun
 
  
 
-Los tipos de valor devuelto y otros tipos tienen nombres diferentes en el sistema de ventanas X que en Windows. Puede buscar repeticiones de GLXContext para ayudar a encontrar partes del código que se deben porte.
+Los tipos de valor devuelto y otros tipos tienen nombres diferentes en el sistema de ventanas X que en Windows. Puede buscar repeticiones de GLXContext para ayudar a encontrar partes del código que deben porterse.
 
-En las secciones siguientes se compara la representación de ejemplos de código de contexto en un programa del sistema de ventanas X y el mismo código después de que se haya portado a Windows.
+En las secciones siguientes se comparan ejemplos de código de contexto de representación en un programa del sistema de ventanas X y el mismo código después de que se haya portado a Windows.
 
 Para obtener más información sobre los contextos de representación, vea [Rendering Contexts](rendering-contexts.md).
 

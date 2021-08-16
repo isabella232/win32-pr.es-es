@@ -20,7 +20,7 @@ La API de WPD proporciona un amplio conjunto de interfaces y métodos que puede 
 | Datos del dispositivo                                                                             | Descripción                                                                               |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | [Categorías funcionales](retrieving-the-functional-categories-supported-by-a-device.md) | Las categorías funcionales describen las operaciones que un dispositivo es capaz de realizar. |
-| [Tipos de contenido](retrieving-the-content-types-supported-by-a-device.md)                 | Los tipos de contenido denotan qué tipos de contenido es capaz de representar un dispositivo.         |
+| [Tipos de contenido](retrieving-the-content-types-supported-by-a-device.md)                 | Los tipos de contenido indican qué tipos de contenido es capaz de representar un dispositivo.         |
 | [Eventos](retrieving-the-events-supported-by-a-device.md)                               | Algunos dispositivos son capaces de activar eventos a los que la aplicación puede realizar un seguimiento y responder. |
 
 

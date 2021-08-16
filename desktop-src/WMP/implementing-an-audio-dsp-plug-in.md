@@ -1,6 +1,6 @@
 ---
-title: Implementación de un complemento DSP de audio
-description: Implementación de un complemento DSP de audio
+title: Implementación de un complemento dsp de audio
+description: Implementación de un complemento dsp de audio
 ms.assetid: 93ff0c45-f418-443d-8fba-c0a62f6e4e80
 keywords:
 - Reproductor de Windows Media complementos,DSP de audio
@@ -12,7 +12,7 @@ keywords:
 - complementos de procesamiento de señal digital, implementación de audio
 - Complementos de DSP, implementación de audio
 - complementos DE DSP de audio, implementar código
-- complementos dsp de audio, modificar código de ejemplo
+- complementos DSP de audio, modificar código de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2f18ca0aada7072ca7cd1c0796c3cd6770a9b45340a4d9f67a342944f4c22887
@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118338646"
 ---
-# <a name="implementing-an-audio-dsp-plug-in"></a>Implementación de un complemento DSP de audio
+# <a name="implementing-an-audio-dsp-plug-in"></a>Implementación de un complemento dsp de audio
 
 Para crear un Reproductor de Windows Media de DSP que procese el audio, deberá modificar el código de ejemplo en la función **denominada DoProcessOutput**. **Se llama a DoProcessOutput** cada vez Reproductor de Windows Media llama correctamente a **IMediaObject::P rocessOutput**. Es la función que realiza las tareas de procesamiento de señales digitales que producen el resultado de audio que el complemento DSP está diseñado para producir.
 

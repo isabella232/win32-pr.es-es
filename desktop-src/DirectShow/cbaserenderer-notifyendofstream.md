@@ -1,7 +1,7 @@
 ---
-description: El método NotifyEndOfStream publica un \_ evento de finalización de EC en el administrador de gráficos de filtro.
+description: El método NotifyEndOfStream envía un evento EC \_ COMPLETE al administrador de gráficos de filtros.
 ms.assetid: 9eec5b65-654d-4b2e-be39-93225a7674a5
-title: Método CBaseRenderer. NotifyEndOfStream (Renbase. h)
+title: Método CBaseRenderer.NotifyEndOfStream (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2f1187705bfa678252237bd95d9a4cb21a0f97d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 05504b2ca1520320777b93c1c066e91edd5135798e4710c6514dbe858737760b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402816"
 ---
-# <a name="cbaserenderernotifyendofstream-method"></a>CBaseRenderer. NotifyEndOfStream, método
+# <a name="cbaserenderernotifyendofstream-method"></a>Método CBaseRenderer.NotifyEndOfStream
 
-El `NotifyEndOfStream` método envía un evento de [**\_ finalización de EC**](ec-complete.md) al administrador de gráficos de filtro.
+El `NotifyEndOfStream` método envía un evento EC [**\_ COMPLETE**](ec-complete.md) al administrador de gráficos de filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,19 +50,19 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> <dt>
 
-[**CBaseRenderer:: EndOfStream**](cbaserenderer-endofstream.md)
+[**CBaseRenderer::EndOfStream**](cbaserenderer-endofstream.md)
 </dt> <dt>
 
 [**CBaseRenderer::SendEndOfStream**](cbaserenderer-sendendofstream.md)

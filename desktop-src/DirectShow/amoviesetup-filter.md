@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura de filtro AMOVIESETUP contiene información para registrar un filtro.
+description: La estructura FILTER de AMOVIESETUP \_ contiene información para registrar un filtro.
 ms.assetid: 72e58f33-e480-4b32-b3d5-8f6c8eb2d5a3
-title: Estructura de AMOVIESETUP_FILTER (ComBase. h)
+title: AMOVIESETUP_FILTER estructura (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - combase.h
-ms.openlocfilehash: 55a225185733a822591d8f93c2eca3674d51a340
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe50295f87e2932d3eb0fe53aac4896343a31441f8fa832bbaa69d5256846414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824795"
 ---
-# <a name="amoviesetup_filter-structure"></a>AMOVIESETUP \_ estructura de filtro
+# <a name="amoviesetup_filter-structure"></a>Estructura FILTER de AMOVIESETUP \_
 
-La estructura de **\_ filtro AMOVIESETUP** contiene información para registrar un filtro.
+La **estructura FILTER \_ de AMOVIESETUP** contiene información para registrar un filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ typedef struct _AMOVIESETUP_FILTER {
 
 <dl> <dt>
 
-**clsID**
+**Clsid**
 </dt> <dd>
 
 Identificador de clase del filtro.
@@ -60,30 +60,30 @@ Nombre del filtro.
 **dwMerit**
 </dt> <dd>
 
-Mérito del filtro. Lo usa la interfaz [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) al construir un gráfico de filtro. Para obtener una lista de los valores de méritos, vea [mérito](merit.md).
+Filtrar el resultado. Usado por la [**interfaz IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) al construir un gráfico de filtros. Para obtener una lista de los valores de los valores de los [valores,](merit.md)
 
 </dd> <dt>
 
 **nPins**
 </dt> <dd>
 
-Número de elementos de la matriz *lpPin* . Si *lpPin* es **null**, establezca este miembro en cero.
+Número de elementos de la *matriz lpPin.* Si *lpPin* es **NULL,** establezca este miembro en cero.
 
 </dd> <dt>
 
 **lpPin**
 </dt> <dd>
 
-Puntero a una matriz de estructuras [**AMOVIESETUP \_ PIN**](amoviesetup-pin.md) , de tamaño *nPins*. Cada miembro de esta matriz describe un PIN en el filtro.
+Puntero a una matriz de estructuras de [**\_ PIN de AMOVIESETUP,**](amoviesetup-pin.md) de tamaño *nPins*. Cada miembro de esta matriz describe un pin en el filtro.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener información acerca del uso de esta estructura, consulte [How to Register DirectShow filters](how-to-register-directshow-filters.md). Use esta estructura solo para los filtros que se registran en la categoría de filtro predeterminada (CLSID \_ LegacyAmFilterCategory). Para registrar un filtro en una categoría diferente, use el método [**IFilterMapper2:: RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) , como se describe en [implementación de DllRegisterServer](implementing-dllregisterserver.md).
+Para obtener información sobre el uso de esta estructura, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md). Use esta estructura solo para los filtros registrados en la categoría de filtro predeterminada (CLSID \_ LegacyAmFilterCategory). Para registrar un filtro en una categoría diferente, use el método [**IFilterMapper2::RegisterFilter,**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) como se describe en [Implementación de DllRegisterServer](implementing-dllregisterserver.md).
 
 > [!Note]  
-> El archivo de encabezado ComBase. h se proporciona con las [clases base de DirectShow](directshow-base-classes.md).
+> El archivo de encabezado combase.h se proporciona con las [DirectShow base](directshow-base-classes.md).
 
  
 
@@ -93,15 +93,15 @@ Para obtener información acerca del uso de esta estructura, consulte [How to Re
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de DirectShow](directshow-structures.md)
+[DirectShow Estructuras](directshow-structures.md)
 </dt> </dl>
 
  

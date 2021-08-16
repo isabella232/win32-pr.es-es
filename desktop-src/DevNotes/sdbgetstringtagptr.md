@@ -56,7 +56,7 @@ TAGID **que** corresponde a los datos de cadena que se recuperarán.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve un puntero a los datos de cadena o **NULL** si **tagid** no es válido o no es de tipo **TAG TYPE \_ \_ STRING** o **TAG TYPE \_ \_ STRINGREF**.
+La función devuelve un puntero a los datos de cadena o **NULL** si **el TAGID** no es válido o no es de tipo **TAG TYPE \_ \_ STRING** o **TAG TYPE \_ \_ STRINGREF**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ La función devuelve un puntero a los datos de cadena o **NULL** si **tagid** no
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 

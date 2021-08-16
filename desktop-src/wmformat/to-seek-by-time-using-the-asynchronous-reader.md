@@ -4,10 +4,10 @@ description: Para buscar por tiempo mediante el lector asincrónico
 ms.assetid: 731b0a6e-1472-45a7-998c-e395be86036f
 keywords:
 - Formato de sistemas avanzados (ASF), búsqueda por hora
-- ASF (formato de sistemas avanzados), buscar por hora
+- ASF (formato de sistemas avanzados), búsqueda por hora
 - Formato de sistemas avanzados (ASF), lectores asincrónicos
 - ASF (formato de sistemas avanzados), lectores asincrónicos
-- lectores asincrónicos, buscando por hora
+- lectores asincrónicos, buscar por hora
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 070d480cade395cdbead99b1aedde8928c6fb18b4af15bf6b72c1bcc0dcd6dc3
@@ -30,10 +30,10 @@ Para buscar datos en un archivo ASF por tiempo de presentación mediante el lect
 [**IWMReader (Interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreader)
 </dt> <dt>
 
-[**Lectura de archivos con el lector asincrónico**](reading-files-with-the-asynchronous-reader.md)
+[**Leer archivos con el lector asincrónico**](reading-files-with-the-asynchronous-reader.md)
 </dt> <dt>
 
-[**Lectura de metadatos durante la reproducción**](reading-metadata-at-playback.md)
+[**Leer metadatos en reproducción**](reading-metadata-at-playback.md)
 </dt> <dt>
 
 [**Trabajar con índices**](working-with-indexes.md)

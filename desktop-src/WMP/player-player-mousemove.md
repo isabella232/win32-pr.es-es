@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MouseMove
-description: El evento MouseMove se produce cuando se mueve el puntero del mouse. | Evento Player. MouseMove
+title: Evento Player.MouseMove
+description: El evento MouseMove tiene lugar cuando se mueve el puntero del mouse. | Evento Player.MouseMove
 ms.assetid: 026928a3-25a6-4e67-837a-df71c05e49ee
 keywords:
-- Media Player de eventos de MouseMove en Windows
-- Evento MouseMove Windows Media Player, clase Player
-- Clase de reproductor Windows Media Player, evento MouseMove
+- Evento MouseMove Reproductor de Windows Media
+- Evento MouseMove Reproductor de Windows Media , clase Player
+- Player class Reproductor de Windows Media , MouseMove event
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a536609ba5e3095fed9826b071084491a81b385f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb864e2a8bf686bd39f2d44ba8f5558516d72034f606579a79c76a5d86ab3990
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338110"
 ---
-# <a name="playermousemove-event"></a>Evento Player. MouseMove
+# <a name="playermousemove-event"></a>Evento Player.MouseMove
 
-El evento **MouseMove** se produce cuando se mueve el puntero del mouse.
+El **evento MouseMove** tiene lugar cuando se mueve el puntero del mouse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,31 +45,31 @@ Player.MouseMove(
 
 <dl> <dt>
 
-*Nbotón* 
+*nButton* 
 </dt> <dd>
 
-**Número** (**int**) que especifica un campo de bits con bits correspondientes al botón izquierdo (bit 0), botón derecho (bit 1) y botón central (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. Se pueden establecer algunos, todos o ninguno de los bits, lo que indica que se presionan algunos, todos o ninguno de los botones.
+**Number** (**int**) especificando un campo de bits con bits correspondientes al botón izquierdo (bit 0), el botón derecho (bit 1) y el botón central (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. Se pueden establecer algunos, todos o ninguno de los bits, lo que indica que se presionan algunos, todos o ninguno de los botones.
 
 </dd> <dt>
 
 *nShiftState* 
 </dt> <dd>
 
-**Número** (**int**) que especifica un campo de bits con los bits menos significativos correspondientes a la tecla Mayús (bit 0), la tecla Ctrl (bit 1) y la tecla Alt (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. El argumento Shift indica el estado de estas claves. Se pueden establecer algunos, todos o ninguno de los bits, lo que indica que se presionan algunas, todas o ninguna de las teclas.
+**Number** (**int**) que especifica un campo de bits con los bits menos significativos correspondientes a la tecla MAYÚS (bit 0), la tecla CTRL (bit 1) y la tecla ALT (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. El argumento mayús indica el estado de estas claves. Se pueden establecer algunos, todos o ninguno de los bits, lo que indica que se presionan algunas, todas o ninguna de las teclas.
 
 </dd> <dt>
 
-*Efectos* 
+*Fx* 
 </dt> <dd>
 
-**Número** (**largo**) que especifica la coordenada x del puntero del mouse en relación con la esquina superior izquierda del control.
+**Number** **(long)** que especifica la coordenada x del puntero del mouse con respecto a la esquina superior izquierda del control.
 
 </dd> <dt>
 
-*fY* 
+*Fy* 
 </dt> <dd>
 
-**Número** (**largo**) que especifica la coordenada y del puntero del mouse en relación con la esquina superior izquierda del control.
+**Number** **(long)** que especifica la coordenada y del puntero del mouse con respecto a la esquina superior izquierda del control.
 
 </dd> </dl>
 
@@ -77,24 +77,24 @@ Player.MouseMove(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

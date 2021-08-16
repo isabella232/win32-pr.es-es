@@ -5,7 +5,7 @@ ms.assetid: 3f447fa8-2d09-49c3-8efd-6bf048429a6b
 keywords:
 - Reproductor de Windows Media, atributos de lista de reproducción de CD
 - Reproductor de Windows Media Atributos de lista de reproducción de Mobile,CD
-- Reproductor de Windows Media modelo de objetos, atributos de lista de reproducción de CD
+- Reproductor de Windows Media de objetos, atributos de lista de reproducción de CD
 - modelo de objetos, atributos de lista de reproducción de CD
 - ActiveX control, atributos de lista de reproducción de CD
 - Reproductor de Windows Media ActiveX control, atributos de lista de reproducción de CD

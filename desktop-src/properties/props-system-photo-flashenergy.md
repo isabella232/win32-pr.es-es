@@ -1,5 +1,5 @@
 ---
-description: Indica la energía estrobón en el momento en que se capturó la imagen, medida en Los segundos de energía de los rayos. Se calcula a partir de PKEY \_ Photo \_ FlashEnergyNumerator y PKEY \_ Photo \_ FlashEnergyDenominator.
+description: Indica la energía estrobómica en el momento en que se capturó la imagen, medida en Los segundos de energía de los rayos. Se calcula a partir de PKEY \_ Photo \_ FlashEnergyNumerator y PKEY \_ Photo \_ FlashEnergyDenominator.
 ms.assetid: afdd1bc6-87c3-4c47-9d29-43422fd699b3
 title: System.Photo.FlashEnergy
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118229970"
 ---
 # <a name="systemphotoflashenergy"></a>System.Photo.FlashEnergy
 
-Indica la energía estrobón en el momento en que se capturó la imagen, medida en Los segundos de energía de los rayos. Se calcula a partir de PKEY \_ Photo \_ FlashEnergyNumerator y PKEY \_ Photo \_ FlashEnergyDenominator.
+Indica la energía estrobómica en el momento en que se capturó la imagen, medida en Los segundos de energía de los rayos. Se calcula a partir de PKEY \_ Photo \_ FlashEnergyNumerator y PKEY \_ Photo \_ FlashEnergyDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -39,7 +39,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras de digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras Digital Still: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

@@ -45,7 +45,7 @@ Solo se pueden usar las siguientes acciones en la tabla AdvtExecuteSequence. Las
 
 [RegisterProgIdInfo](registerprogidinfo-action.md)
 
-Las columnas son idénticas a las de [la tabla InstallExecuteSequence](installexecutesequence-table.md). La tabla AdvtExecuteSequence tiene las columnas siguientes.
+Las columnas son idénticas a las de [la tabla InstallExecuteSequence](installexecutesequence-table.md). La tabla AdvtExecuteSequence tiene las siguientes columnas.
 
 
 
@@ -66,7 +66,7 @@ Las columnas son idénticas a las de [la tabla InstallExecuteSequence](installex
 <span id="Action"></span><span id="action"></span><span id="ACTION"></span>Acción
 </dt> <dd>
 
-Nombre de la [acción estándar que](standard-actions.md) el instalador va a ejecutar. Esta es la clave principal de la tabla.
+Nombre de la [acción estándar que](standard-actions.md) va a ejecutar el instalador. Esta es la clave principal de la tabla.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Un valor positivo indica la posición de secuencia de la acción. Los siguientes
 | msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con [los cuadros de](exit-dialog.md) diálogo Salir.               |
 | msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con [los cuadros de diálogo UserExit.](userexit-dialog.md)     |
 | msiDoActionStatusFailure  | -3    | Finaliza la salida irrescindiendo. Se usa con cuadros [de diálogo FatalError.](fatalerror-dialog.md) |
-| msiDoActionStatusSuspend  | -4    | La instalación está suspendida.                                                                |
+| msiDoActionStatusSuspend  | -4    | La instalación se suspende.                                                                |
 
 
 

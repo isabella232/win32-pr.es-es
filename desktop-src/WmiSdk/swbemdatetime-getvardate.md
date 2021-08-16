@@ -74,11 +74,11 @@ Se produce un error en el método **GetVarDate** (**wbemErrFailed**) si alguna d
 
 Si la devolución de [**SetVarDate**](swbemdatetime-setvardate.md)se realiza correctamente, todas estas propiedades se establecen en **TRUE.**
 
-Después de una llamada correcta a [**SetVarDate,**](swbemdatetime-setvardate.md)el valor [**DATETIME**](datetime.md) siempre se interpreta como un valor **DATETIME** absoluto en lugar de un intervalo, y [**IsInterval**](swbemdatetime-isinterval.md) se establece en **FALSE.**
+Después de una llamada correcta a [**SetVarDate**](swbemdatetime-setvardate.md), el valor [**DATETIME**](datetime.md) siempre se interpreta como un valor **DATETIME** absoluto en lugar de un intervalo, y [**IsInterval**](swbemdatetime-isinterval.md) se establece en **FALSE.**
 
 Si [**IsInterval**](swbemdatetime-isinterval.md) se establece en **TRUE,** una llamada a **GetVarDate** produce el error **wbemErrFailed.**
 
-Algunas pérdidas de precisión se producen cuando se llama a **GetVarDate**, porque los valores [datetime](datetime.md) tienen una resolución de un microsegundos (s) y los valores **VT \_ DATE** tienen una resolución de 500 milisegundos.
+Algunas pérdidas de precisión se producen cuando se llama a **GetVarDate,** porque los valores [datetime](datetime.md) tienen una resolución de un microsegundos (s) y los valores **VT \_ DATE** tienen una resolución de 500 milisegundos.
 
 ## <a name="examples"></a>Ejemplos
 

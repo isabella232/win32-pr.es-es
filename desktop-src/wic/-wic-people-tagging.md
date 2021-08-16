@@ -1,5 +1,5 @@
 ---
-description: En este tema se presentan el nuevo esquema de Extensible Metadata Platform (XMP) y la propiedad de foto system.Photo.PeopleNames de Windows 7 que permite el etiquetado de personas en una foto digital.
+description: En este tema se presentan el nuevo esquema de Extensible Metadata Platform (XMP) y la propiedad de foto System.Photo.PeopleNames de Windows 7 que permite el etiquetado de personas en una foto digital.
 ms.assetid: 557c3e9a-1756-4abb-8465-b12195ecbc91
 title: Introducción al etiquetado de personas
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118205714"
 ---
 # <a name="people-tagging-overview"></a>Introducción al etiquetado de personas
 
-En este tema se presentan el nuevo esquema de Extensible Metadata Platform (XMP) y la propiedad de foto [System.Photo.PeopleNames](../properties/props-system-photo-peoplenames.md) de Windows 7 que permite el etiquetado de personas en una foto digital. En este tema también se describe cómo usar la API Windows Imaging Component (WIC) para leer y escribir los metadatos necesarios para el etiquetado de personas.
+En este tema se presenta el nuevo esquema de Extensible Metadata Platform (XMP) y la propiedad de foto [System.Photo.PeopleNames](../properties/props-system-photo-peoplenames.md) de Windows 7 que permite el etiquetado de personas en una foto digital. En este tema también se describe cómo usar la API Windows Imaging Component (WIC) para leer y escribir los metadatos necesarios para el etiquetado de personas.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -31,7 +31,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para comprender este tema, debe estar familiarizado con las interfaces de descodificador de WIC y sus componentes de Modelo de objetos componentes (COM) relacionados, tal como se describe en la introducción al componente de creación de imágenes de [Windows.](-wic-about-windows-imaging-codec.md) También ayuda a familiarizarse con los metadatos de creación de imágenes, especialmente XMP.
+Para comprender este tema, debe estar familiarizado con las interfaces de descodificador de WIC y sus componentes del Modelo de objetos componentes (COM) relacionados, como se describe en la información general sobre componentes de creación de imágenes de [Windows.](-wic-about-windows-imaging-codec.md) También ayuda a familiarizarse con los metadatos de creación de imágenes, especialmente XMP.
 
 ## <a name="introduction"></a>Introducción
 
@@ -285,7 +285,7 @@ A continuación se muestra una representación de los metadatos XMP para el etiq
 [Introducción a los metadatos de WIC](-wic-about-metadata.md)
 </dt> <dt>
 
-[Información general sobre la lectura y escritura de metadatos de imágenes](-wic-codec-readingwritingmetadata.md)
+[Información general sobre la lectura y escritura de metadatos de imagen](-wic-codec-readingwritingmetadata.md)
 </dt> <dt>
 
 [Información general sobre el lenguaje de consulta de metadatos](-wic-codec-metadataquerylanguage.md)

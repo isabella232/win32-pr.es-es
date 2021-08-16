@@ -25,7 +25,7 @@ ms.locfileid: "118313789"
 ---
 # <a name="swbemobjectsecurity_-property"></a>Propiedad SWbemObject.Security \_
 
-La **\_ propiedad Security** del [**objeto SWbemObject**](swbemobject.md) se usa para leer o establecer la configuración de seguridad de **un objeto SWbemObject.** Esta propiedad es un [**objeto SWbemSecurity.**](swbemsecurity.md) La configuración de seguridad de este objeto no indica la autenticación, suplantación o configuración de privilegios realizada en una conexión a Windows Management Instrumentation (WMI) ni la seguridad en vigor para el proxy cuando un objeto se entrega a un receptor en una llamada asincrónica. Para obtener más información, vea [Mantener la seguridad de WMI.](maintaining-wmi-security.md)
+La **\_ propiedad Security** del [**objeto SWbemObject**](swbemobject.md) se usa para leer o establecer la configuración de seguridad de **un objeto SWbemObject.** Esta propiedad es un [**objeto SWbemSecurity.**](swbemsecurity.md) La configuración de seguridad de este objeto no indica la autenticación, suplantación o configuración de privilegios realizada en una conexión a Windows Management Instrumentation (WMI) ni la seguridad en vigor para el proxy cuando un objeto se entrega a un receptor en una llamada asincrónica. Para obtener más información, vea [Mantenimiento de la seguridad wmi.](maintaining-wmi-security.md)
 
 > [!Note]  
 > Establecer la **propiedad Security \_** de un objeto [**SWbemObject**](swbemobject.md) en **NULL** concede acceso ilimitado a todos los usuarios todo el tiempo. Para obtener más información, [**vea SWbemSecurity**](swbemsecurity.md).

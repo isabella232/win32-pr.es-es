@@ -1,5 +1,5 @@
 ---
-description: Una aplicación envía el mensaje WM MDIREFRESHMENU a una ventana de cliente de interfaz de múltiples documentos (MDI) para actualizar el menú de ventana de la \_ ventana marco MDI.
+description: Una aplicación envía el mensaje WM MDIREFRESHMENU a una ventana cliente de interfaz de múltiples documentos (MDI) para actualizar el menú de ventana de la \_ ventana marco MDI.
 ms.assetid: 6450d84a-a0b9-45d0-9e0c-757d26502059
 title: WM_MDIREFRESHMENU mensaje (Winuser.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118200071"
 ---
 # <a name="wm_mdirefreshmenu-message"></a>Mensaje \_ MDIREFRESHMENU de WM
 
-Una aplicación envía el **mensaje WM \_ MDIREFRESHMENU** a una ventana de cliente de interfaz de múltiples documentos (MDI) para actualizar el menú de ventana de la ventana marco MDI.
+Una aplicación envía el **mensaje \_ WM MDIREFRESHMENU** a una ventana cliente de interfaz de múltiples documentos (MDI) para actualizar el menú de ventana de la ventana marco MDI.
 
 
 ```C++

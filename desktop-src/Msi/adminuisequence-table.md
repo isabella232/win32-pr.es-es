@@ -17,7 +17,7 @@ En la tabla AdminUISequence se enumeran las acciones a las que llama el instalad
 
 Las acciones admin de la secuencia de instalación hasta la acción [InstallValidate](installvalidate-action.md)y los cuadros de diálogo de salida se encuentran en la tabla AdminUISequence. Todas las acciones desde InstallValidate hasta el final de la secuencia de instalación se encuentran en la [tabla AdminExecuteSequence](adminexecutesequence-table.md). Dado que la tabla AdminExecuteSequence debe ser independiente, también contiene las acciones de inicialización necesarias, como [LaunchConditions,](launchconditions-action.md) [CostInitialize,](costinitialize-action.md) [FileCost](filecost-action.md)y [CostFinalize.](costfinalize-action.md) También tiene la [acción ExecuteAction](executeaction-action.md).
 
-Las columnas son idénticas a las de [la tabla InstallUISequence](installuisequence-table.md). La tabla AdminUISequence tiene las siguientes columnas.
+Las columnas son idénticas a las de [la tabla InstallUISequence](installuisequence-table.md). La tabla AdminUISequence tiene las columnas siguientes.
 
 
 
@@ -38,7 +38,7 @@ Las columnas son idénticas a las de [la tabla InstallUISequence](installuiseque
 <span id="Action"></span><span id="action"></span><span id="ACTION"></span>Acción
 </dt> <dd>
 
-Nombre de la acción que se ejecutará. Se trata de una acción estándar, un asistente para la interfaz de usuario o una acción personalizada enumerada en la [tabla CustomAction](customaction-table.md).
+Nombre de la acción que se ejecutará. Se trata de una acción estándar, un asistente de interfaz de usuario o una acción personalizada enumerada en la [tabla CustomAction](customaction-table.md).
 
 Clave de tabla principal.
 
@@ -63,7 +63,7 @@ Un valor positivo indica la posición de secuencia de la acción. Los siguientes
 | msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con [los cuadros de](exit-dialog.md) diálogo Salir.               |
 | msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con [los cuadros de diálogo UserExit.](userexit-dialog.md)     |
 | msiDoActionStatusFailure  | -3    | Finaliza la salida irrescindiendo. Se usa con cuadros [de diálogo FatalError.](fatalerror-dialog.md) |
-| msiDoActionStatusSuspend  | -4    | La instalación se suspende.                                                                |
+| msiDoActionStatusSuspend  | -4    | La instalación está suspendida.                                                                |
 
 
 

@@ -55,7 +55,7 @@ Identificador del dispositivo.
 
 Tipo: **ULONG \***
 
-Cuando se pasa, un puntero al número máximo de perfiles que se devolverán. Cuando se devuelve, un puntero al número de perfiles devueltos.
+Cuando se pasa, un puntero al número máximo de perfiles que se devolverán. Cuando se devuelve, el puntero a la cantidad de perfiles devueltos.
 
 </dd> <dt>
 

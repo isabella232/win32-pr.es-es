@@ -1,6 +1,6 @@
 ---
 title: Función glEnableClientState (Gl.h)
-description: Las funciones glEnableClientState y glDisableClientState habilitan y deshabilitan matrices respectivamente. | Función glEnableClientState (Gl.h)
+description: Las funciones glEnableClientState y glDisableClientState habilitan y deshabilitan matrices, respectivamente. | Función glEnableClientState (Gl.h)
 ms.assetid: 02520f81-0b0d-4774-b1e2-713cf226347f
 keywords:
 - Función glEnableClientState OpenGL
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118360422"
 ---
-# <a name="glenableclientstate-function"></a>Función glEnableClientState
+# <a name="glenableclientstate-function"></a>función glEnableClientState
 
-Las **funciones glEnableClientState** y [**glDisableClientState**](gldisableclientstate.md) habilitan y deshabilitan matrices respectivamente.
+Las **funciones glEnableClientState** y [**glDisableClientState**](gldisableclientstate.md) habilitan y deshabilitan matrices, respectivamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,11 +50,11 @@ Constante simbólica para la matriz que desea habilitar o deshabilitar. Este par
 | Valor                                                                                                                                                                                      | Significado                                                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="GL_COLOR_ARRAY"></span><span id="gl_color_array"></span><dl> <dt>**GL \_ COLOR \_ ARRAY**</dt> </dl>                          | Si está habilitada, use matrices de colores con llamadas [**a glArrayElement,**](glarrayelement.md) [**glDrawElements**](gldrawelements.md)o [**glDrawArrays.**](gldrawarrays.md)<br/> Vea también [**glColorPointer**](glcolorpointer.md).<br/>                    |
-| <span id="GL_EDGE_FLAG_ARRAY"></span><span id="gl_edge_flag_array"></span><dl> <dt>**GL \_ EDGE \_ FLAG \_ ARRAY**</dt> </dl>             | Si está habilitada, use matrices de marcas perimetrales con llamadas [**a glArrayElement,**](glarrayelement.md) [**glDrawElements**](gldrawelements.md)o [**glDrawArrays.**](gldrawarrays.md)<br/> Vea también [**glEdgeFlagPointer.**](gledgeflagpointer.md)<br/>          |
+| <span id="GL_EDGE_FLAG_ARRAY"></span><span id="gl_edge_flag_array"></span><dl> <dt>**GL \_ EDGE \_ FLAG \_ ARRAY**</dt> </dl>             | Si está habilitada, use matrices de marcas perimetrales con llamadas [**a glArrayElement,**](glarrayelement.md) [**glDrawElements**](gldrawelements.md)o [**glDrawArrays.**](gldrawarrays.md)<br/> Vea también [**glEdgeFlagPointer**](gledgeflagpointer.md).<br/>          |
 | <span id="GL_INDEX_ARRAY"></span><span id="gl_index_array"></span><dl> <dt>**GL \_ INDEX \_ ARRAY**</dt> </dl>                          | Si está habilitada, use matrices de índices con llamadas [**a glArrayElement,**](glarrayelement.md) [**glDrawElements**](gldrawelements.md)o [**glDrawArrays.**](gldrawarrays.md)<br/> Vea también [**glIndexPointer**](glindexpointer.md).<br/>                    |
 | <span id="GL_NORMAL_ARRAY"></span><span id="gl_normal_array"></span><dl> <dt>**GL \_ NORMAL \_ ARRAY**</dt> </dl>                       | Si está habilitada, use matrices normales con llamadas [**a glArrayElement,**](glarrayelement.md) [**glDrawElements**](gldrawelements.md)o [**glDrawArrays.**](gldrawarrays.md)<br/> Vea también [**glNormalPointer**](glnormalpointer.md).<br/>                 |
 | <span id="GL_TEXTURE_COORD_ARRAY"></span><span id="gl_texture_coord_array"></span><dl> <dt>**GL \_ TEXTURE \_ COORD \_ ARRAY**</dt> </dl> | Si está habilitada, use matrices de coordenadas de textura con llamadas [**a glArrayElement,**](glarrayelement.md) [**glDrawElements**](gldrawelements.md)o [**glDrawArrays.**](gldrawarrays.md)<br/> Vea también [**glTexCoordPointer**](gltexcoordpointer.md).<br/> |
-| <span id="GL_VERTEX_ARRAY"></span><span id="gl_vertex_array"></span><dl> <dt>**GL \_ VERTEX \_ ARRAY**</dt> </dl>                       | Si está habilitada, use matrices de vértices con llamadas [**a glArrayElement,**](glarrayelement.md) [**glDrawElements**](gldrawelements.md)o [**glDrawArrays.**](gldrawarrays.md)<br/> Vea también [**glVertexPointer.**](glvertexpointer.md)<br/>                 |
+| <span id="GL_VERTEX_ARRAY"></span><span id="gl_vertex_array"></span><dl> <dt>**GL \_ VERTEX \_ ARRAY**</dt> </dl>                       | Si está habilitada, use matrices de vértices con llamadas [**a glArrayElement,**](glarrayelement.md) [**glDrawElements**](gldrawelements.md)o [**glDrawArrays.**](gldrawarrays.md)<br/> Vea también [**glVertexPointer**](glvertexpointer.md).<br/>                 |
 
 
 
@@ -74,7 +74,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 | Nombre                                                                                             | Significado                                       |
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl> | *Array* no era un valor aceptado.<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl> | *Array* no era un valor aceptado.<br/> |
 
 
 

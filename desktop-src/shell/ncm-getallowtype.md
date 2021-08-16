@@ -1,6 +1,6 @@
 ---
-description: Recupera los tipos de dirección de red que un control de dirección de red especificado acepta.
-title: Mensaje de NCM_GETALLOWTYPE (ShellAPI. h)
+description: Recupera los tipos de direcciones de red que acepta un control de dirección de red especificado.
+title: NCM_GETALLOWTYPE mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 1B06463F-0CA6-4e8e-BD3B-917562A6A244
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5d93cb3cff575c18764e352da54a717d7c557001
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11b937ca851f00c51090683db4aebfc3db63cbf83efc95bad7a6f456d8f58988
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858814"
 ---
-# <a name="ncm_getallowtype-message"></a>NCM \_ GETALLOWTYPE
+# <a name="ncm_getallowtype-message"></a>Mensaje \_ GETALLOWTYPE de NCM
 
-Recupera los tipos de dirección de red que un control de dirección de red especificado acepta.
+Recupera los tipos de direcciones de red que acepta un control de dirección de red especificado.
 
 
 ```C++
@@ -49,27 +49,27 @@ NCM_GETALLOWTYPE
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve los tipos de dirección de red permitidos como una o varias de las constantes de [**\_ cadena**](net-string.md) de red.
+Devuelve los tipos de direcciones de red permitidos como una o varias de las [**constantes \_ DE NET STRING.**](net-string.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La máscara devuelta es el criterio que se usa para validar una dirección de red en el mensaje de [**NCM \_ GETADDRESS**](ncm-getaddress.md) .
+La máscara devuelta es el criterio utilizado para validar una dirección de red en el [**mensaje \_ GETADDRESS de NCM.**](ncm-getaddress.md)
 
-Use este mensaje solo para un control de dirección de red. Para crear una instancia de, use la clase **msctls \_ netaddress** definida en ShellAPI. h. Llame a [**InitNetworkAddressControl**](/windows/desktop/api/Shellapi/nf-shellapi-initnetworkaddresscontrol) en tiempo de ejecución antes de enviar este mensaje. Esto inicializa la biblioteca de controles comunes que contiene el control de dirección de red.
+Use este mensaje solo para un control de direcciones de red. Para crear una instancia, use la **clase msctls \_ netaddress** definida en Shellapi.h. Llame [**a InitNetworkAddressControl en**](/windows/desktop/api/Shellapi/nf-shellapi-initnetworkaddresscontrol) tiempo de ejecución antes de enviar este mensaje. Esto inicializa la biblioteca de controles comunes que contiene el control de direcciones de red.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>ShellAPI. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

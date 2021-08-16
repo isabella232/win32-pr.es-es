@@ -55,7 +55,7 @@ Número de particiones en el intervalo de intervalo de cuadrícula \[ u1, u2 \] 
 *u1* 
 </dt> <dd>
 
-Valor utilizado como asignación para el valor de dominio de cuadrícula de enteros i = 0.
+Valor que se usa como asignación para el valor de dominio de cuadrícula de enteros i = 0.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 ## <a name="remarks"></a>Comentarios
 
-Las **funciones glMapGrid** y [glEvalMesh](glevalmesh-functions.md) se usan conjuntamente para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La función glEvalMesh pasa por el dominio entero de una cuadrícula unidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md)
+Las **funciones glMapGrid** y [glEvalMesh](glevalmesh-functions.md) se usan conjuntamente para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La función glEvalMesh atraviesa el dominio entero de una cuadrícula unidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md)
 
 Las [**funciones glMapGrid1**](glmapgrid1d.md) y [**glMapGrid2**](glmapgrid2d.md) especifican las asignaciones de cuadrícula lineal entre las coordenadas de cuadrícula de enteros i (o i y j), a las coordenadas del mapa de evaluación de punto flotante u (o usted y v). Consulte [**glMap1**](glmap1.md) y [**glMap2 para**](glmap2.md) obtener más información sobre cómo se evalúan las coordenadas v y usted.
 

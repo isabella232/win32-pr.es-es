@@ -1,7 +1,7 @@
 ---
-description: Tareas de transacciones com+
+description: Tareas de transacciones COM+
 ms.assetid: fe4374f1-2452-4316-be57-b866c438404d
-title: Tareas de transacciones com+
+title: Tareas de transacciones COM+
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 102b0ec6ae54430be5499c67b5041ee26035eb077e27b1b860377cd728e3e42d
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118307595"
 ---
-# <a name="com-transactions-tasks"></a>Tareas de transacciones com+
+# <a name="com-transactions-tasks"></a>Tareas de transacciones COM+
 
-Aunque el procesamiento automático de transacciones en COM+ permite dedicar un tiempo de desarrollo más productivo a la creación y configuración de objetos que desea participar en transacciones automáticas, hay algunas tareas de programación que puede realizar para adaptar el comportamiento de las transacciones a los requisitos de la aplicación.
+Aunque el procesamiento automático de transacciones en COM+ permite dedicar más tiempo de desarrollo productivo a la creación y configuración de objetos que desea que participen en transacciones automáticas, hay algunas tareas de programación que puede realizar para adaptar el comportamiento de las transacciones a los requisitos de la aplicación.
 
 En los temas siguientes se tratan opciones de programación específicas relacionadas con el procesamiento de transacciones.
 
@@ -25,7 +25,7 @@ En los temas siguientes se tratan opciones de programación específicas relacio
 | [Establecer el nivel de aislamiento de la transacción](setting-the-transaction-isolation-level.md)<br/> | Describe cómo establecer los niveles de aislamiento de transacción para los objetos de transacción.<br/>     |
 | [Establecer el tiempo de espera de la transacción](setting-the-transaction-time-out.md)<br/>               | Describe cómo establecer intervalos de tiempo de espera para las transacciones.<br/>                          |
 | [Establecimiento de las marcas Coherente y Listo](setting-the-consistent-and-done-flags.md)<br/>     | Muestra cómo usar las marcas coherentes y realizadas para controlar el resultado de una transacción.<br/> |
-| [Creación de objetos BYOT](creating-byot-objects.md)<br/>                                     | Describe cómo crear objetos para que pueda aportar su propia transacción (BYOT).<br/>           |
+| [Crear objetos BYOT](creating-byot-objects.md)<br/>                                     | Describe cómo crear objetos para que pueda aportar su propia transacción (BYOT).<br/>           |
 
 
 
@@ -40,7 +40,7 @@ En los temas siguientes se tratan opciones de programación específicas relacio
 
 <dl> <dt>
 
-[Conceptos de transacciones de COM+](com--transactions-concepts.md)
+[Conceptos de transacciones com+](com--transactions-concepts.md)
 </dt> </dl>
 
  

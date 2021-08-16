@@ -17,7 +17,7 @@ El formato de un archivo en un dispositivo se puede describir mediante un valor 
 
 ## <a name="vendor-extended-formats"></a>Formatos extendidos del proveedor
 
-Cuando un fabricante de dispositivos admite un formato extendido por el proveedor, su controlador combina el código de formato del proveedor (UINT16) con los 16 bits más altos del GUID **\_ \_ \_ UNSPECIFIED DE WPD OBJECT FORMAT.**
+Cuando un fabricante de dispositivos admite un formato extendido por el proveedor, su controlador combina el código de formato del proveedor (UINT16) con los 16 bits más altos del GUID **WPD \_ OBJECT FORMAT \_ \_ UNSPECIFIED.**
 
 Por ejemplo, si el código extendido por el proveedor 0xB001, el GUID resultante sería como se muestra en el ejemplo siguiente:
 

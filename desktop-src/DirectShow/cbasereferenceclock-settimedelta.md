@@ -1,7 +1,7 @@
 ---
-description: El método SetTimeDelta ajusta la hora interna del reloj.
+description: El método SetTimeDelta ajusta la hora del reloj interno.
 ms.assetid: 51534c92-5573-4e2a-baeb-b1a82ccf88de
-title: Método CBaseReferenceClock. SetTimeDelta (Refclock. h)
+title: Método CBaseReferenceClock.SetTimeDelta (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de58363119dc08c21d2cab0070b438ad6b4331e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac9eba5337fa43e43e3b7a45a7a92263fd4e6d69388185a2096c1a270590e482
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403444"
 ---
-# <a name="cbasereferenceclocksettimedelta-method"></a>CBaseReferenceClock. SetTimeDelta, método
+# <a name="cbasereferenceclocksettimedelta-method"></a>Método CBaseReferenceClock.SetTimeDelta
 
-El `SetTimeDelta` método ajusta la hora interna del reloj.
+El `SetTimeDelta` método ajusta la hora del reloj interno.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ HRESULT SetTimeDelta(
 
 <dl> <dt>
 
-*TimeDelta* \[ CLI\]
+*TimeDelta* \[ Ref\]
 </dt> <dd>
 
-Cantidad para ajustar la hora del reloj, en unidades de 100-nanosegundos. Un valor positivo mueve el reloj hacia delante y un valor negativo mueve el reloj hacia atrás.
+Cantidad para ajustar la hora del reloj, en unidades de 100 nanosegundos. Un valor positivo mueve el reloj hacia delante y un valor negativo mueve el reloj hacia atrás.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase derivada puede usar este método para ajustar el reloj interno, si se desplaza desde el dispositivo que está proporcionando información de tiempo.
+La clase derivada puede usar este método para ajustar el reloj interno, si se desvia del dispositivo que proporciona información de tiempo.
 
-El método [**CBaseReferenceClock:: getTime**](cbasereferenceclock-gettime.md) nunca devuelve valores decrecientes. Si ajusta el reloj hacia atrás, **getTime** devuelve el valor anterior hasta que el reloj llega a ese valor de nuevo.
+El [**método CBaseReferenceClock::GetTime**](cbasereferenceclock-gettime.md) nunca devuelve valores decrecientes. Si ajusta el reloj hacia atrás, **GetTime** devuelve el valor anterior hasta que el reloj vuelve a alcanzar ese valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,16 +65,16 @@ El método [**CBaseReferenceClock:: getTime**](cbasereferenceclock-gettime.md) n
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Refclock. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Refclock.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseReferenceClock**](cbasereferenceclock.md)
+[**CBaseReferenceClock (clase)**](cbasereferenceclock.md)
 </dt> </dl>
 
  

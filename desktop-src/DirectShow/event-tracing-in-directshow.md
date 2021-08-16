@@ -4,20 +4,20 @@ ms.assetid: e78c4514-25f4-441d-bfd0-6dac4f7567fd
 title: Seguimiento de eventos en DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c567d8a2e75d838570323d8ad6be04f11502c9c4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6afdeabfb13608453fc6b84bbefb36cca79265739c049cc0e5d35e997ebaf902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819587"
 ---
 # <a name="event-tracing-in-directshow"></a>Seguimiento de eventos en DirectShow
 
-DirectShow admite el seguimiento de eventos para Windows (ETW), que se puede usar para crear registros de eventos para la instrumentación o la depuración. Para obtener más información acerca de ETW, consulte la documentación de Windows SDK. Para consumir eventos ETW en una aplicación de DirectShow, debe habilitar el seguimiento y, a continuación, procesar los eventos de seguimiento. Siga los pasos que se describen a continuación.
+DirectShow seguimiento de eventos para Windows (ETW), que se puede usar para crear registros de eventos para instrumentación o depuración. Para más información sobre ETW, consulte la documentación Windows SDK. Para consumir eventos ETW en una DirectShow, debe habilitar el seguimiento y, a continuación, procesar los eventos de seguimiento. Siga los pasos que se describen a continuación.
 
-**Establecer las claves del registro necesarias**
+**Establecer las claves del Registro necesarias**
 
-Para habilitar el seguimiento en el equipo del usuario, primero establezca las siguientes claves del registro:
+Para habilitar el seguimiento en el equipo del usuario, establezca primero las siguientes claves del Registro:
 
 
 ```C++
@@ -29,28 +29,28 @@ HKEY_LOCAL_MACHINE\SOFTWARE\DEBUG\Quartz.dll
 
 
 
-Estas claves se aplican a los archivos binarios de lanzamiento y depuración.
+Estas claves se aplican a los archivos binarios de versión y depuración.
 
-**Habilitar el seguimiento en la aplicación**
+**Habilitación del seguimiento en la aplicación**
 
 Para habilitar el seguimiento en la aplicación, realice los pasos siguientes:
 
-1.  Llame a **StartTrace** para iniciar una nueva sesión de seguimiento.
-2.  Llame a **EnableTrace** para habilitar el seguimiento. El GUID del proveedor para DirectShow es el GUID de la \_ CTL de DSHOW \_ .
-3.  Antes de que se cierre la aplicación, llame a **StopTrace** para cerrar la sesión de seguimiento.
+1.  Llame **a StartTrace** para iniciar una nueva sesión de seguimiento.
+2.  Llame **a EnableTrace** para habilitar el seguimiento. El GUID del proveedor para DirectShow es GUID \_ DSHOW \_ CTL.
+3.  Antes de que se cierre la aplicación, llame a **StopTrace para** cerrar la sesión de seguimiento.
 
 **Procesar los eventos**
 
 Para procesar los eventos, realice los pasos siguientes:
 
-1.  Llame a **OpenTrace** para abrir el seguimiento para su procesamiento.
-2.  Llame a **ProcessTrace** para procesar los eventos.
-3.  En la devolución de llamada **ProcessTrace** , use el GUID del evento para buscar el tipo de evento. El GUID del evento indica la estructura que se utiliza para los datos del evento. Vea [GUID de eventos de seguimiento](trace-guids.md).
-4.  Llame a **CloseTrace** para cerrar el identificador de seguimiento.
+1.  Llame **a OpenTrace** para abrir el seguimiento para su procesamiento.
+2.  Llame **a ProcessTrace** para procesar los eventos.
+3.  En la **devolución de llamada de ProcessTrace,** use el GUID del evento para buscar el tipo de evento. El GUID del evento indica la estructura que se usa para los datos del evento. Consulte [GUID de eventos de seguimiento.](trace-guids.md)
+4.  Llame **a CloseTrace** para cerrar el identificador de seguimiento.
 
 **Código de ejemplo**
 
-En el código siguiente se muestra una clase auxiliar que habilita el seguimiento. Este código muestra cómo escribir eventos en un archivo de registro, que se puede procesar una vez completada la sesión. También puede procesar eventos en tiempo real. Para obtener más información, consulte la documentación de ETW en el Windows SDK.
+En el código siguiente se muestra una clase auxiliar que permite el seguimiento. Este código muestra cómo escribir eventos en un archivo de registro, que se puede procesar una vez completada la sesión. También puede procesar eventos en tiempo real. Para obtener más información, consulte la documentación de ETW en Windows SDK.
 
 
 ```C++
@@ -178,7 +178,7 @@ protected:
 
 
 
-En el código siguiente se muestra cómo procesar el registro de eventos:
+El código siguiente muestra cómo procesar el registro de eventos:
 
 
 ```C++
@@ -234,7 +234,7 @@ void ProcessTraceEvents(WCHAR *wszLogFile)
 
 <dl> <dt>
 
-[Depurar en DirectShow](debugging-in-directshow.md)
+[Depuración en DirectShow](debugging-in-directshow.md)
 </dt> </dl>
 
  

@@ -49,7 +49,7 @@ HRESULT GetStatusDescription(
 
 Tipo: **[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Puntero al [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) del elemento que se va a transferir. Este objeto implementa mínimamente [**IWiaItem2**](-wia-iwiaitem2.md) e [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer).
+Puntero al [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) del elemento que se transfiere. Este objeto implementa mínimamente [**IWiaItem2**](-wia-iwiaitem2.md) e [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer).
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Devuelve uno de los valores siguientes.
 
 | Código devuelto                                                                             | Descripción                                                        |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>    | *pbstrDescription* contiene un puntero **BSTR** válido. <br/>  |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | *pbstrDescription contiene* un puntero **BSTR** válido. <br/>  |
 | <dl> <dt>**S \_ FALSE**</dt> </dl> | *hrStatus* es desconocido y no hay ninguna descripción disponible. <br/> |
 
 

@@ -13,9 +13,9 @@ ms.locfileid: "118310028"
 ---
 # <a name="overloading-ipropertynotifysink"></a>Sobrecarga de IPropertyNotifySink
 
-Muchos ActiveX contenedores de control implementan una ventana de exploración de propiedades modeless. Si las propiedades de un control se modifican a través de las páginas de propiedades del control, las propiedades del control pueden no estar sincronizadas con la vista del contenedor de esas propiedades (el control siempre es correcto, por supuesto). Para asegurarse de que siempre tiene los valores actuales de las propiedades de un control, un contenedor de controles ActiveX puede sobrecargar la interfaz [**IPropertyNotifySink**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertynotifysink) (enlace de datos) y también usarla para recibir notificaciones de que una propiedad de control ha cambiado. Esta técnica es opcional y no es necesaria para los contenedores ActiveX control ni ActiveX controles.
+Muchos ActiveX contenedores de control implementan una ventana de exploración de propiedades modeless. Si las propiedades de un control se modifican a través de las páginas de propiedades del control, las propiedades del control pueden no estar sincronizadas con la vista del contenedor de esas propiedades (el control siempre es correcto, por supuesto). Para asegurarse de que siempre tiene los valores actuales de las propiedades de un control, un contenedor de controles de ActiveX puede sobrecargar la interfaz [**IPropertyNotifySink**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertynotifysink) (enlace de datos) y también usarla para recibir notificaciones de que una propiedad de control ha cambiado. Esta técnica es opcional y no es necesaria para ActiveX contenedores de control ni ActiveX controles.
 
-Tenga en cuenta que un control debe usar [**OnRequestEdit solo**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit) para el enlace de datos; Es gratuito usar [**OnChanged**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onchanged) para uno o ambos fines.
+Tenga en cuenta que un control solo [**debe usar OnRequestEdit**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit) para el enlace de datos; Es gratuito usar [**OnChanged**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onchanged) para uno o ambos propósitos.
 
  
 

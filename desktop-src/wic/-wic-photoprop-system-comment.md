@@ -13,7 +13,7 @@ ms.locfileid: "118205634"
 ---
 # <a name="systemcomment-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Comment
 
-Directiva de metadatos de fotos para la [propiedad System.Comment.](../properties/props-system-comment.md)
+Directiva de metadatos de fotos para [la propiedad System.Comment.](../properties/props-system-comment.md)
 
 ### <a name="pkey"></a>Pkey
 
@@ -37,7 +37,7 @@ VT \_ LPWSTR o VT \_ LPSTR
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se concilian los valores de esquemas diferentes.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_TABLECREATE (clase)'
-title: JET_TABLECREATE (clase)
+description: 'Más información sobre: JET_TABLECREATE clase'
+title: JET_TABLECREATE clase
 TOCTitle: JET_TABLECREATE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_TABLECREATE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7f422e0d5eb8cb7fe28edb7d3139a073776f06b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3bc04a6aad8d0d4c2b36d483f9d8b022a392e4d2bb8a8322fb2899ce364b413
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117892639"
 ---
-# <a name="jet_tablecreate-class"></a>JET_TABLECREATE (clase)
+# <a name="jet_tablecreate-class"></a>JET_TABLECREATE clase
 
 Contiene la información necesaria para crear una tabla en una base de datos ESE. Contiene la información necesaria para crear una tabla en una base de datos ESE.
 
@@ -40,10 +40,10 @@ Contiene la información necesaria para crear una tabla en una base de datos ESE
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_TABLECREATE  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -64,10 +64,10 @@ public class JET_TABLECREATE : IContentEquatable<JET_TABLECREATE>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE miembros](./jet-tablecreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-description: Cuando un subproceso se comunica activamente con un dispositivo de adquisición de imágenes (WIA) de Windows (por ejemplo, transferencia de datos o escritura de propiedades del dispositivo), WIA &\# 0034; bloquea \#&0034; el dispositivo.
+description: Cuando un subproceso se comunica activamente con un dispositivo de adquisición de imágenes (WIA) de Windows (por ejemplo, transferencia de datos o escritura de propiedades del dispositivo), WIA &\# 0034;bloquea&\# 0034; el dispositivo.
 ms.assetid: 59533937-284a-4732-a73b-d2e0b5a9a370
 title: Comunicación con un dispositivo WIA en varios subprocesos o aplicaciones
 ms.topic: article

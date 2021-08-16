@@ -1,5 +1,5 @@
 ---
-description: En los ejemplos siguientes se usa la función SetStringInBlob para crear entradas blob especiales.
+description: En los ejemplos siguientes se usa la función SetStringInBlob para crear entradas BLOB especiales.
 ms.assetid: 4a921b0d-9934-48e2-8837-be0bd7b7fa7a
 title: Entradas blob especiales
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118363143"
 ---
 # <a name="special-blob-entries"></a>Entradas blob especiales
 
-En los ejemplos siguientes se usa [**la función SetStringInBlob**](setstringinblob.md) para crear entradas blob especiales.
+En los ejemplos siguientes se usa [**la función SetStringInBlob**](setstringinblob.md) para crear entradas BLOB especiales.
 
 ## <a name="npp-name"></a>Nombre de NPP
 

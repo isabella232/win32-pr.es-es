@@ -1,6 +1,6 @@
 ---
 title: transmit_as (atributo)
-description: El atributo \transmit as\ indica al compilador que asocie type-id, que es un tipo presentado que las aplicaciones cliente y servidor manipulan, con un tipo \_ transmitido xmit-type.
+description: El atributo \ transmit as\ indica al compilador que asocie type-id, que es un tipo presentado que las aplicaciones cliente y servidor manipulan, con un tipo \_ transmitido xmit-type.
 ms.assetid: 3dd1a242-03ec-49b4-ac96-87ef186e41d2
 keywords:
 - transmit_as atributo MIDL
@@ -52,14 +52,14 @@ Especifica el tipo de datos que se transmite entre el cliente y el servidor.
 *type-attribute-list* 
 </dt> <dd>
 
-Especifica uno o varios atributos que se aplican al tipo. Los atributos de tipo válidos incluyen el identificador , el tipo de modificador ; el atributo de puntero ref , unique o ptr ; y la **\[** [](handle.md) **\]** cadena de atributos **\[** [**\_**](switch-type.md) **\]** de uso **\[** [](ref.md) **\]** **\[** [](unique.md) **\]** y **\[** [](ptr.md) **\]** **\[** [](string.md) **\]** **\[** [**omiten**](ignore.md) **\]** . Separe varios atributos con comas.
+Especifica uno o varios atributos que se aplican al tipo. Los atributos de tipo válidos incluyen el identificador , el tipo de modificador ; el atributo de puntero **\[** [](handle.md) **\]** **\[** [**\_**](switch-type.md)ref , **\]** unique o **\[** [](ref.md) **\]** **\[** [](unique.md) **\]** **\[** [**ptr**](ptr.md) **\]** ; **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** y la cadena de atributos de uso y omiten . Separe varios atributos con comas.
 
 </dd> <dt>
 
 *type-specifier* 
 </dt> <dd>
 
-Especifica un tipo [base,](midl-base-types.md) [**struct**](struct.md), [**union,**](union.md) [**tipo de enumeración**](enum.md) o identificador de tipo. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
+Especifica un tipo [base](midl-base-types.md), [**struct**](struct.md), [**union**](union.md), [**enum**](enum.md) type o type identifier. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Especifica el nombre del tipo de datos que se presenta a las aplicaciones client
 
 ## <a name="remarks"></a>Comentarios
 
-Para usar el atributo **\[ transmitir \_ \]** como , el usuario debe proporcionar rutinas que conviertan datos entre los tipos presentados y transmitidos; estas rutinas también deben liberar memoria usada para contener los datos convertidos. El **\[ atributo transmit \_ as \]** indica a los códigos auxiliares que llamen a las rutinas de conversión proporcionadas por el usuario.
+Para usar **\[ la \_ \]** transmisión como atributo, el usuario debe proporcionar rutinas que conviertan datos entre los tipos presentados y transmitidos; estas rutinas también deben liberar la memoria usada para contener los datos convertidos. El **\[ atributo transmit \_ as \]** indica a los códigos auxiliares que llamen a las rutinas de conversión proporcionadas por el usuario.
 
 El tipo transmitido *xmit-type* debe resolverse en un tipo base MIDL, un tipo predefinido o un identificador de tipo. Para obtener más información, vea [MidL Base Types](midl-base-types.md).
 
@@ -90,8 +90,8 @@ El usuario debe proporcionar las rutinas siguientes.
 | Nombre de rutina              | Descripción                                                                                                                                                                                                       |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *type-id: \_ para \_ xmit**   | Convierte los datos del tipo presentado al tipo transmitido. Esta rutina asigna memoria para el tipo transmitido y para los datos a los que hacen referencia los punteros del tipo transmitido.                            |
-| *type-id% \_ de \_ xmit** | Convierte los datos del tipo transmitido al tipo presentado. Esta rutina es responsable de asignar memoria para los datos a los que hacen referencia los punteros en el tipo presentado. RPC asigna memoria para el propio tipo. |
-| *type-id" \_ free \_ inst** | Libera la memoria asignada para los datos a los que hacen referencia los punteros en el tipo presentado. RPC libera memoria para el propio tipo.                                                                                               |
+| *type-id: \_ de \_ xmit** | Convierte los datos del tipo transmitido al tipo presentado. Esta rutina es responsable de asignar memoria para los datos a los que hacen referencia los punteros en el tipo presentado. RPC asigna memoria para el propio tipo. |
+| *type-id: \_ free \_ inst** | Libera la memoria asignada para los datos a los que hacen referencia los punteros en el tipo presentado. RPC libera memoria para el propio tipo.                                                                                               |
 | *type-id: \_ \_ xmit gratis** | Libera el almacenamiento utilizado por el autor de la llamada para el tipo transmitido y para los datos a los que hacen referencia los punteros del tipo transmitido.                                                                                            |
 
 
@@ -100,18 +100,18 @@ El usuario debe proporcionar las rutinas siguientes.
 
  
 
-El código auxiliar de cliente llama *a type-id** para \_ \_ xmit** para asignar espacio para el tipo transmitido y traducir los datos en objetos de tipo *xmit-type.* El código auxiliar del servidor asigna espacio para el tipo de datos original y llama a *type-id** desde \_ \_ xmit** para traducir los datos de su tipo transmitido al tipo presentado.
+El código auxiliar del cliente llama *a type-id** para \_ \_ xmit** para asignar espacio para el tipo transmitido y para traducir los datos en objetos de tipo *xmit-type.* El código auxiliar del servidor asigna espacio para el tipo de datos original y llama a *type-id** desde \_ \_ xmit** para traducir los datos de su tipo transmitido al tipo presentado.
 
-Tras la devolución del código de aplicación, el código auxiliar del servidor llama a *type-id+ \_ free \_ inst** para desasignar el almacenamiento para *type-id* en el lado servidor. El código auxiliar de cliente llama *a type-id+ \_ \_ xmit** gratis para desasignar el almacenamiento *de tipo xmit* en el lado cliente.
+Tras la devolución del código de aplicación, el código auxiliar del servidor llama a *type-id+ \_ free \_ inst** para desasignar el almacenamiento para *type-id* en el lado servidor. El código auxiliar del cliente *llama a type-id+ \_ \_ xmit** gratis para desasignar el *almacenamiento de tipo xmit* en el lado cliente.
 
-Los siguientes tipos no pueden tener un **\[ atributo transmit \_ as: \]**
+Los siguientes tipos no pueden tener una **\[ transmisión \_ como \]** atributo:
 
 -   Identificadores de contexto (tipos con el atributo de tipo de identificador de contexto y **\[** tipos que se usan como parámetros con el atributo de identificador [**\_**](context-handle.md) **\]** **\[ \_ de \]** contexto)
--   Tipos que son canalizaciones o derivadas de canalizaciones
+-   Tipos que son canalizaciones o derivados de canalizaciones
 -   Tipos de datos que se usan como tipo base de una definición de canalización
--   Parámetros que son punteros o se resuelven como punteros
+-   Parámetros que son punteros o que se resuelven como punteros
 -   Parámetros que son matrices compatibles, variables o abiertas
--   Estructuras que contienen matrices conformes
+-   Estructuras que contienen matrices compatibles
 -   El identificador de tipo [**predefinido \_ t**](handle-t.md), [**void**](void.md)
 
 Los tipos que se transmiten deben cumplir las restricciones siguientes:

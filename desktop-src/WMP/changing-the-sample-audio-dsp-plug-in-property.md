@@ -1,9 +1,9 @@
 ---
-title: Cambiar la propiedad del complemento DSP de audio de ejemplo
-description: Cambiar la propiedad del complemento DSP de audio de ejemplo
+title: Cambio de la propiedad del complemento DSP de audio de ejemplo
+description: Cambio de la propiedad del complemento DSP de audio de ejemplo
 ms.assetid: 9e742bcd-cff8-422f-ad91-d8d46f15bdc4
 keywords:
-- Reproductor de Windows Media complementos,DSP de audio
+- Reproductor de Windows Media complementos, DSP de audio
 - complementos, DSP de audio
 - complementos de procesamiento de señal digital, propiedades de audio
 - Complementos de DSP, propiedades de audio
@@ -17,14 +17,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118342628"
 ---
-# <a name="changing-the-sample-audio-dsp-plug-in-property"></a>Cambiar la propiedad del complemento DSP de audio de ejemplo
+# <a name="changing-the-sample-audio-dsp-plug-in-property"></a>Cambio de la propiedad del complemento DSP de audio de ejemplo
 
-Probablemente quiera cambiar la propiedad que el Asistente para Reproductor de Windows Media complementos crea de forma predeterminada. En la lista siguiente se detallan los elementos que pueden requerir cambiar:
+Probablemente quiera cambiar la propiedad que el Asistente para Reproductor de Windows Media complementos crea de forma predeterminada. En la lista siguiente se detallan los elementos que pueden requerir un cambio:
 
--   **Recurso de diálogo.** Haga clic en **la pestaña ResourceView** en la Project área de trabajo. Expanda la lista de carpetas para abrir la carpeta Dialog. Haga doble clic en el recurso de cuadro de diálogo para abrir el editor de recursos. Puede realizar cambios en el cuadro de diálogo de la página de propiedades para satisfacer sus necesidades. Por ejemplo, puede cambiar el texto de la etiqueta o reemplazar el control de edición por una casilla.
--   **Código de objeto de la página de propiedades.** La implementación predeterminada usa una variable de tipo double para almacenar el factor de escala. Es posible que necesite un tipo de datos diferente. Esto también requeriría cambiar el código que conserva los datos en el Registro y lee los datos del registro (incluido el código que lee del registro en *CProjectName*::**FinalConstruct**).
+-   **Recurso de diálogo.** Haga clic en **la pestaña ResourceView** en la Project Área de trabajo. Expanda la lista de carpetas para abrir la carpeta Diálogo. Haga doble clic en el recurso de cuadro de diálogo para abrir el editor de recursos. Puede realizar cambios en el cuadro de diálogo de la página de propiedades para satisfacer sus necesidades. Por ejemplo, puede cambiar el texto de la etiqueta o reemplazar el control de edición por una casilla.
+-   **Código de objeto de la página de propiedades.** La implementación predeterminada usa una variable de tipo double para almacenar el factor de escala. Es posible que necesite otro tipo de datos. Esto también requeriría cambiar el código que conserva los datos en el registro y lee los datos del registro (incluido el código que lee del registro en *CProjectName*::**FinalConstruct**).
 -   **Variable miembro que almacena el valor de propiedad.** Esta variable se denomina "m \_ fScaleFactor" y se declara como tipo double. Es posible que quiera cambiar el nombre y el tipo de esta variable en todo el proyecto.
--   **Los métodos get y property put de la propiedad .** Es posible que quiera cambiar los nombres, parámetros e implementaciones de estos métodos. No olvide reflejar también esos cambios en otra parte del proyecto. Por ejemplo, la página de propiedades **Apply** method llama *a CProjectName*::**put \_ scale**.
+-   **Métodos get y property put de la propiedad .** Es posible que quiera cambiar los nombres, parámetros e implementaciones de estos métodos. No olvide reflejar también esos cambios en otra parte del proyecto. Por ejemplo, la página de propiedades **Apply** method llama *a CProjectName*::**put \_ scale**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

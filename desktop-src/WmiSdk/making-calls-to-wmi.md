@@ -38,7 +38,7 @@ STDMETHODIMP CClassProv::GetObjectAsync (BSTR ObjectPath,
 
 
 
-El ejemplo de código de C++ de este tema requiere que las siguientes referencias e \# instrucciones include se compilen correctamente.
+El ejemplo de código de C++ de este tema requiere las siguientes referencias e \# instrucciones include para compilarse correctamente.
 
 
 ```C++

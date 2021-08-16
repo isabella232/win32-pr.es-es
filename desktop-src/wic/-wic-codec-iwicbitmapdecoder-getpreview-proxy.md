@@ -23,7 +23,7 @@ ms.locfileid: "118207226"
 ---
 # <a name="iwicbitmapdecoder_getpreview_proxy-function"></a>Función de \_ proxy GetPreview de IWICBitmapDecoder \_
 
-Función de proxy para el [**método GetPreview.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview)
+Función de proxy para [**el método GetPreview.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview)
 
 ## <a name="syntax"></a>Sintaxis
 

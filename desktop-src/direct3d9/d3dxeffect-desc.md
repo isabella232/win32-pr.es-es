@@ -1,7 +1,7 @@
 ---
 description: Describe un objeto de efecto.
 ms.assetid: 161d3e7a-213a-4a83-a1b5-837b0aab96bf
-title: D3DXEFFECT_DESC estructura (D3dx9effect. h)
+title: D3DXEFFECT_DESC estructura (D3dx9effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: c8e7a3a2adf19514e2e4d1c6f61dbea888ce033d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0b30ad0348a5c799690d668e036724d30808c2998eee9d762fa2ad3fc8106c91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298598"
 ---
 # <a name="d3dxeffect_desc-structure"></a>D3DXEFFECT \_ DESC (estructura)
 
@@ -56,18 +56,18 @@ Cadena que contiene el nombre del creador del efecto.
 **Parámetros**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de parámetros utilizados para el efecto.
+Número de parámetros usados para el efecto.
 
 </dd> <dt>
 
-**Descrita**
+**Técnicas**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -78,7 +78,7 @@ Número de técnicas que pueden representar el efecto.
 **Funciones**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -86,9 +86,9 @@ Número de funciones que pueden representar el efecto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un objeto Effect puede contener varias técnicas de representación y parámetros para el mismo efecto.
+Un objeto de efecto puede contener varias técnicas de representación y parámetros para el mismo efecto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,15 +96,15 @@ Un objeto Effect puede contener varias técnicas de representación y parámetro
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9effect. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9effect.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de efectos](dx9-graphics-reference-effects-structures.md)
+[Estructuras de efecto](dx9-graphics-reference-effects-structures.md)
 </dt> </dl>
 
  

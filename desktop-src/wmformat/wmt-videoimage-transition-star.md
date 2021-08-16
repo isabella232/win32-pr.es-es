@@ -63,7 +63,7 @@ En la tabla siguiente se describen los parámetros utilizados por esta transici�
 <tr class="even">
 <td>Composición</td>
 <td><strong>fEffectPara3</strong></td>
-<td>Establezca en uno de los valores siguientes:
+<td>Establezca en uno de los siguientes valores:
 <ul>
 <li>0: especifica la composición normal, en la que la imagen anterior es el fondo y la imagen actual es el primer plano.</li>
 <li>1 - Especifica la composición invertida, en la que la imagen actual es la imagen de fondo, y la imagen anterior es el primer plano.</li>
