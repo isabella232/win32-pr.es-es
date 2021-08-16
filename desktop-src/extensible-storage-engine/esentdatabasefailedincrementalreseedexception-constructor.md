@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseFailedIncrementalReseedException'
-title: Constructor de EsentDatabaseFailedIncrementalReseedException
+description: 'Más información sobre: Constructor EsentDatabaseFailedIncrementalReseedException'
+title: Constructor EsentDatabaseFailedIncrementalReseedException
 TOCTitle: 'EsentDatabaseFailedIncrementalReseedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseFailedIncrementalReseedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabasefailedincrementalreseedexception.esentdatabasefailedincrementalreseedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 64d5e8e075ea4b348c5ff612c3251cf66241a0bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65a79dfab481bcc383f348a4c09a096e76ce485081a7ee77f548a810aea03d69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117713124"
 ---
-# <a name="esentdatabasefailedincrementalreseedexception-constructor"></a>Constructor de EsentDatabaseFailedIncrementalReseedException
+# <a name="esentdatabasefailedincrementalreseedexception-constructor"></a>Constructor EsentDatabaseFailedIncrementalReseedException
 
 Inicializa una nueva instancia de la clase EsentDatabaseFailedIncrementalReseedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentDatabaseFailedIncrementalReseedException()
 
 [Miembros de EsentDatabaseFailedIncrementalReseedException](./esentdatabasefailedincrementalreseedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

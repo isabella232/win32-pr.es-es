@@ -1,11 +1,11 @@
 ---
-title: Propiedad burnProgress de IWMPCdromBurn
-description: La propiedad burnProgress obtiene el progreso de la grabación del CD como porcentaje completado.
+title: Propiedad IWMPCdromRomRom burnProgress
+description: La propiedad burnProgress obtiene el progreso de la grabación de CD como porcentaje completado.
 ms.assetid: 831cc55d-bd26-4328-a715-1a1fa48d7a40
 keywords:
-- propiedades de burnProgress Media Player de Windows
-- propiedad burnProgress de Windows Media Player, interfaz IWMPCdromBurn
-- Interfaz IWMPCdromBurn Windows Media Player, propiedad burnProgress
+- propiedad burnProgress Reproductor de Windows Media
+- La propiedad burnProgress Reproductor de Windows Media , interfaz IWMPCdromRomRom
+- Interfaz IWMPCdromRom Reproductor de Windows Media , propiedad burnProgress
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 835c8c1091941437c226427ddb3ef53e8c577b5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90b8e468bc57bb40d990c0b2aeaffc23e184ef2ffa04ab85c9f60cf0d6bced57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332073"
 ---
-# <a name="iwmpcdromburnburnprogress-property"></a>IWMPCdromBurn:: burnProgress (propiedad)
+# <a name="iwmpcdromburnburnprogress-property"></a>Propiedad IWMPCdromRom::burnProgress
 
-La propiedad **burnProgress** obtiene el progreso de la grabación del CD como porcentaje completado.
+La **propiedad burnProgress** obtiene el progreso de la grabación de CD como porcentaje completado.
 
 Esta propiedad es de solo lectura.
 
@@ -49,17 +49,17 @@ Public ReadOnly Property burnProgress As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el valor de progreso. Los valores de progreso oscilan entre 0 y 100.
+**System.Int32 que** es el valor de progreso. Los valores de progreso van de 0 a 100.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de progreso representa el porcentaje completado del proceso de grabación completo, incluidas las operaciones de almacenamiento provisional.
+El valor de progreso representa el porcentaje completado de todo el proceso de grabación, incluidas las operaciones de almacenamiento provisional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11<br/>                                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -67,11 +67,11 @@ El valor de progreso representa el porcentaje completado del proceso de grabaci�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IWMPCdromBurn (VB y C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaz IWMPCdromRomRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> </dl>
 
  

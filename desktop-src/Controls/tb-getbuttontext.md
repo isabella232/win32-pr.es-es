@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETBUTTONTEXT (commctrl. h)
-description: Recupera el texto para mostrar de un botón de una barra de herramientas.
+title: TB_GETBUTTONTEXT mensaje (Commctrl.h)
+description: Recupera el texto para mostrar de un botón en una barra de herramientas.
 ms.assetid: 16dd7181-a404-4056-b084-05f49f5a4b14
 keywords:
-- TB_GETBUTTONTEXT controles de mensajes de Windows
+- TB_GETBUTTONTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ac0b238574cc136f41959b57f3f0e1ec13e3ea1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ec63815886ecc32f8f0b0759b9f6a8cf847bfe56e6c898fd6e3a3ae8e0f40ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829771"
 ---
-# <a name="tb_getbuttontext-message"></a>\_Mensaje GETBUTTONTEXT TB
+# <a name="tb_getbuttontext-message"></a>Mensaje \_ GETBUTTONTEXT de TB
 
-Recupera el texto para mostrar de un botón de una barra de herramientas.
+Recupera el texto para mostrar de un botón en una barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,28 +47,28 @@ Puntero a un búfer que recibe el texto del botón.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la longitud, en caracteres, de la cadena a la que señala *lParam*. La longitud no incluye el carácter nulo de terminación. Si no se realiza correctamente, el valor devuelto es-1.
+Devuelve la longitud, en caracteres, de la cadena a la que *apunta lParam.* La longitud no incluye el carácter nulo de terminación. Si no se realiza correctamente, el valor devuelto es -1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Advertencia de seguridad:** El uso incorrecto de este mensaje podría poner en peligro la seguridad del programa. Este mensaje no proporciona una manera de conocer el tamaño del búfer. Si usa este mensaje, llame primero al mensaje que pasa **null** en *lParam*; esto devuelve el número de caracteres, excluidos los **valores NULL** necesarios. A continuación, llame al mensaje una segunda vez para recuperar la cadena. Debe revisar las [consideraciones de seguridad: controles de Microsoft Windows](sec-comctls.md) antes de continuar.
+**Advertencia de seguridad:** El uso incorrecto de este mensaje podría poner en peligro la seguridad del programa. Este mensaje no proporciona una manera de conocer el tamaño del búfer. Si usa este mensaje, llame primero al mensaje que pasa **NULL** en *lParam*, lo que devuelve el número de caracteres, excepto **NULL** que son necesarios. A continuación, llame al mensaje una segunda vez para recuperar la cadena. Debe revisar las [Consideraciones de seguridad: Controles de Windows Microsoft](sec-comctls.md) antes de continuar.
 
-La cadena devuelta corresponde al texto que se muestra actualmente en el botón.
+La cadena devuelta corresponde al texto que muestra actualmente el botón.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TB \_ GETBUTTONTEXTW** (Unicode) y **TB \_ GETBUTTONTEXTA** (ANSI)<br/>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ La cadena devuelta corresponde al texto que se muestra actualmente en el botón.
 [**TB \_ GETBUTTONINFO**](tb-getbuttoninfo.md)
 </dt> <dt>
 
-[**GETSTRING de TB \_**](tb-getstring.md)
+[**TB \_ GETSTRING**](tb-getstring.md)
 </dt> <dt>
 
 [**TB \_ SETBUTTONINFO**](tb-setbuttoninfo.md)

@@ -1,7 +1,7 @@
 ---
-description: Establece el valor del secreto que se usa para derivar la clave de sesión criptográfica usada para cifrar y descifrar los datos.
+description: Establece el valor del secreto utilizado para derivar la clave de sesión criptográfica utilizada para cifrar y descifrar datos.
 ms.assetid: d940ae0b-a697-4529-b494-0051b9a6db5e
-title: EncryptedData. SetSecret (método)
+title: Método EncryptedData.SetSecret
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: c8d30355b022a593ca17519e3ccfa876a5b07b54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0e56bd490c4e665d900eb39fb57d09019ab4cfa3b1eb3ad06ad74cb4e83514ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766450"
 ---
-# <a name="encrypteddatasetsecret-method"></a>EncryptedData. SetSecret (método)
+# <a name="encrypteddatasetsecret-method"></a>Método EncryptedData.SetSecret
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use servicios de invocación de plataforma (PInvoke) para llamar a las funciones de la API de Win32 [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) y [**CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage) para cifrar y descifrar los mensajes. Para obtener información sobre PInvoke, vea [tutorial de invocación de plataforma](https://msdn.microsoft.com/library/aa288468.aspx). También pueden resultar útiles las subsecciones de [.net y CryptoAPI a través de p/Invoke: parte 1](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic5) y [.net y CryptoAPI a través de p/Invoke: parte 2](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic6) de la extensión de la [criptografía de .net con CAPICOM y p/Invoke](/previous-versions/ms867087(v=msdn.10)) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use Platform Invocation Services (PInvoke) para llamar a las funciones de API de Win32 [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) y [**CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage) para cifrar y descifrar mensajes. Para obtener información sobre PInvoke, vea [Tutorial de invocación de plataforma](https://msdn.microsoft.com/library/aa288468.aspx). Las subsecciones .NET y CryptoAPI a través de [P/Invoke:](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic5) Parte 1 y .NET y CryptoAPI a través de [P/Invoke:](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic6) subsecciones de la parte 2 de Extensión de criptografía de .NET con [CAPICOM y P/Invoke](/previous-versions/ms867087(v=msdn.10)) también pueden resultar útiles.\]
 
-El método **SetSecret** establece el valor del secreto que se usa para derivar la [*clave de sesión*](../secgloss/s-gly.md) criptográfica usada para cifrar y descifrar los datos.
+El **método SetSecret** establece el valor del secreto utilizado para derivar la clave de [*sesión*](../secgloss/s-gly.md) criptográfica utilizada para cifrar y descifrar datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,23 +42,23 @@ EncryptedData.SetSecret( _
 
 <dl> <dt>
 
-*newVal* \[ de\]
+*newVal* \[ En\]
 </dt> <dd>
 
-Cadena que contiene un secreto que se usa para crear una clave criptográfica de sesión.
+Cadena que contiene un secreto usado para crear una clave criptográfica de sesión.
 
 </dd> <dt>
 
-*SecretType* \[ en, opcional\]
+*SecretType* \[ in, opcional\]
 </dt> <dd>
 
-Un valor de la enumeración de [**\_ \_ tipo de secreto de CAPICOM**](capicom-secret-type.md) que indica el tipo de secreto usado para generar la clave de sesión. El valor predeterminado es la \_ contraseña del secreto de CAPICOM \_ . Este parámetro puede ser el valor siguiente.
+Valor de la enumeración [**CAPICOM \_ SECRET \_ TYPE**](capicom-secret-type.md) que indica el tipo de secreto utilizado para generar la clave de sesión. El valor predeterminado es CAPICOM \_ SECRET \_ PASSWORD. Este parámetro puede ser el siguiente valor.
 
 
 
 | Value                                                                                                                                                                                        | Significado                                                         |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <span id="CAPICOM_SECRET_PASSWORD"></span><span id="capicom_secret_password"></span><dl> <dt>**\_contraseña secreta de CAPICOM \_**</dt> </dl> | La clave de cifrado debe derivarse de una contraseña.<br/> |
+| <span id="CAPICOM_SECRET_PASSWORD"></span><span id="capicom_secret_password"></span><dl> <dt>**CONTRASEÑA SECRETA DE CAPICOM \_ \_**</dt> </dl> | La clave de cifrado se va a derivar de una contraseña.<br/> |
 
 
 
@@ -70,11 +70,11 @@ Un valor de la enumeración de [**\_ \_ tipo de secreto de CAPICOM**](capicom-se
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El secreto se usa para crear la clave de sesión para el cifrado o descifrado. Se debe usar el mismo secreto para ambas operaciones. Si se pierde el secreto que se usa para cifrar los datos, los datos cifrados no se pueden descifrar.
+El secreto se usa para crear la clave de sesión para el cifrado o descifrado. Se debe usar el mismo secreto para ambas operaciones. Si se pierde el secreto usado para cifrar los datos, los datos cifrados no se pueden descifrar.
 
-Si es adecuado para su aplicación, considere la posibilidad de usar [**CryptProtectMemory**](/windows/desktop/api/Dpapi/nf-dpapi-cryptprotectmemory) o [**CryptProtectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptprotectdata) para proteger el secreto antes y después de usarlo. Borre la memoria asociada al secreto cuando haya terminado.
+Si es adecuado para la aplicación, considere la posibilidad de usar [**CryptProtectMemory**](/windows/desktop/api/Dpapi/nf-dpapi-cryptprotectmemory) o [**CryptProtectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptprotectdata) para proteger el secreto antes y después de su uso. Borre la memoria asociada al secreto cuando haya terminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,12 +84,12 @@ Si es adecuado para su aplicación, considere la posibilidad de usar [**CryptPro
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

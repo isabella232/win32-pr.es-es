@@ -4,12 +4,12 @@ description: En este ejemplo de código se muestra el marcado y el código neces
 ms.assetid: 8fb84bd1-5e63-447c-b7a0-b3d7cb8c3be7
 ms.topic: article
 ms.date: 07/13/2021
-ms.openlocfilehash: 52a81a1a1950305437a7bbc68aab95876b3a6374
-ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
+ms.openlocfilehash: 99e7ad587820ac18ce83d673efaa972f0f3b75c4547ddc7e8b4889a0e17e3bcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113691764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202178"
 ---
 # <a name="fontcontrol-sample"></a>Ejemplo de FontControl
 
@@ -24,9 +24,9 @@ En este ejemplo de código se muestra el marcado y el código necesarios para im
 
 ## <a name="usage"></a>Uso
 
-Los ejemplos Windows marco de la cinta de opciones se pueden descargar como proyectos de Microsoft Visual Studio independientes desde el Centro de descarga de [Microsoft](https://www.microsoft.com/download/details.aspx?id=9620) o instalarse como parte del Kit de desarrollo de [software (SDK)](https://developer.microsoft.com/windows/downloads/sdk-archive/)de Windows .
+Los ejemplos Windows marco de la cinta de opciones se pueden descargar como proyectos de Microsoft Visual Studio independientes desde el Centro de descarga de [Microsoft](https://www.microsoft.com/download/details.aspx?id=9620) o instalarse como parte del Kit de desarrollo de [software (SDK)](https://developer.microsoft.com/windows/downloads/sdk-archive/)de Windows.
 
-- Windows Kit de desarrollo de software (SDK) (ruta de instalación estándar): %ProgramFiles% SDK de Microsoft Windows número de versión \\ \\ Ejemplos \\ \[ \] \\ \\ winui \\ WindowsRibbon \\ FontControl
+- Windows Kit de desarrollo de software (SDK) (ruta de instalación estándar): %ProgramFiles% SDK de Microsoft Windows número de versión \\ \\ ejemplos \\ \[ \] \\ \\ winui \\ WindowsRibbon \\ FontControl
 
 ### <a name="building-the-sample"></a>Generar el ejemplo
 
@@ -44,9 +44,9 @@ Para ejecutar el ejemplo desde la ventana de comandos del entorno de compilació
 
 Para ejecutar el ejemplo compilado con depuración en Visual Studio, presione F5.
 
-## <a name="support"></a>Compatibilidad
+## <a name="support"></a>Soporte técnico
 
-El [foro Windows desarrollo de la cinta](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de opciones está disponible para analizar temas y hacer preguntas relacionadas con el desarrollo de Windows de cinta de opciones.
+El [foro Windows desarrollo de la cinta](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de opciones está disponible para analizar temas y hacer preguntas relacionadas con el desarrollo de Windows ribbon.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
@@ -54,9 +54,9 @@ El [foro Windows desarrollo de la cinta](https://social.msdn.microsoft.com/Forum
 
 | Requisito | Valor |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 7<br/> Windows Vista con Service Pack 2 (SP2) y [actualización de plataforma para Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
-| Servidor mínimo compatible | Windows Server 2008 R2<br/> Windows Server 2008 con SP2 y actualización de plataforma [para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
-| Windows SDK              | 7.0                                                                                                                                                                      |
+| Cliente mínimo compatible | Windows 7<br/> Windows Vista con Service Pack 2 (SP2) y [Platform Update para Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
+| Servidor mínimo compatible | Windows Server 2008 R2<br/> Windows Server 2008 con SP2 y [actualización de plataforma para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
+| Windows SDK              | 7,0                                                                                                                                                                      |
 | Visual Studio            | 2008                                                                                                                                                                     |
 | Archivos de encabezado e IDL     | uiribbon.h, uiribbon.idl                                                                                                                                                 |
 

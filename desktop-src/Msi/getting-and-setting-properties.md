@@ -17,7 +17,7 @@ Para usar [propiedades](properties.md) en la instalación, puede obtener y estab
 
 -   Para obtener una propiedad actual, llame a la [**función MsiGetProperty.**](/windows/desktop/api/Msiquery/nf-msiquery-msigetpropertya)
 -   Para obtener el estado de instalación actual, llame a [**la función MsiGetMode.**](/windows/desktop/api/Msiquery/nf-msiquery-msigetmode)
--   Para obtener el idioma de la instalación actual, llame a [**la función MsiGetLanguage.**](/windows/desktop/api/Msiquery/nf-msiquery-msigetlanguage)
+-   Para obtener el idioma de la instalación actual, llame a la [**función MsiGetLanguage.**](/windows/desktop/api/Msiquery/nf-msiquery-msigetlanguage)
 -   Para establecer una propiedad, llame a la [**función MsiSetProperty.**](/windows/desktop/api/Msiquery/nf-msiquery-msisetpropertya)
 -   Para establecer el estado de instalación, llame a [**la función MsiSetMode.**](/windows/desktop/api/Msiquery/nf-msiquery-msisetmode)
 -   Para borrar una propiedad (establecerla en Null), establezca el valor de la propiedad en una cadena vacía: "".

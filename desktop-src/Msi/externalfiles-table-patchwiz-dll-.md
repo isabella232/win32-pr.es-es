@@ -13,13 +13,13 @@ ms.locfileid: "118636882"
 ---
 # <a name="externalfiles-table-patchwizdll"></a>Tabla ExternalFiles (Patchwiz.dll)
 
-La tabla ExternalFiles contiene información sobre archivos específicos que no forman parte de una imagen de destino normal. Estos archivos pueden existir en productos actualizados por otro producto, actualización o revisión. Esta tabla es opcional en la base de datos de creación de revisiones (archivo .csv) y la usa la función [UiCreatePatchPackageEx.](uicreatepatchpackageex--patchwiz-dll-.md)
+La tabla ExternalFiles contiene información sobre archivos específicos que no forman parte de una imagen de destino normal. Estos archivos pueden existir en productos actualizados por otro producto, actualización o revisión. Esta tabla es opcional en la base de datos de creación de revisiones (archivo .fp) y la usa la función [UiCreatePatchPackageEx.](uicreatepatchpackageex--patchwiz-dll-.md)
 
-La tabla ExternalFiles tiene las columnas siguientes.
+La tabla ExternalFiles tiene las siguientes columnas.
 
 
 
-| Columna        | Tipo    | Key | Nullable |
+| Columna        | Tipo    | Clave | Nullable |
 |---------------|---------|-----|----------|
 | Familia        | texto    | Y   | N        |
 | FTK           | texto    | Y   | N        |
@@ -62,14 +62,14 @@ Ruta de acceso completa del archivo externo, incluido el nombre de archivo. El c
 <span id="SymbolPaths"></span><span id="symbolpaths"></span><span id="SYMBOLPATHS"></span>SymbolPaths
 </dt> <dd>
 
-Ruta de acceso completa en la que se buscan archivos de símbolos del archivo especificado en la columna FTK.
+Ruta de acceso completa busca archivos de símbolos del archivo especificado en la columna FTK.
 
 </dd> <dt>
 
 <span id="IgnoreOffsets"></span><span id="ignoreoffsets"></span><span id="IGNOREOFFSETS"></span>IgnoreOffsets
 </dt> <dd>
 
-El valor de este campo es una lista delimitada por comas de números de desplazamiento de intervalo para los intervalos que se omitirán en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreLengths. Esta columna es opcional.
+El valor de este campo es una lista delimitada por comas de números de desplazamiento de intervalo para los intervalos que se van a omitir en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreLengths. Esta columna es opcional.
 
 Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirá los valores en ULONG.
 
@@ -78,7 +78,7 @@ Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md
 <span id="IgnoreLengths"></span><span id="ignorelengths"></span><span id="IGNORELENGTHS"></span>IgnoreLengths
 </dt> <dd>
 
-El valor de este campo es una lista delimitada por comas de longitudes de intervalo en bytes para los intervalos que se omitirán en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreOffsets. Esta columna es opcional.
+El valor de este campo es una lista delimitada por comas de longitudes de intervalo en bytes para los intervalos que se van a omitir en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreOffsets. Esta columna es opcional.
 
 Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirá los valores en ULONG.
 
@@ -87,7 +87,7 @@ Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md
 <span id="RetainOffsets"></span><span id="retainoffsets"></span><span id="RETAINOFFSETS"></span>RetainOffsets
 </dt> <dd>
 
-El valor de este campo es una lista delimitada por comas de números de desplazamiento de intervalo para los intervalos que se conservarán en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna RetainOffsets del registro correspondiente de [la tabla FamilyFileRanges (Patchwiz.dll).](familyfileranges-table-patchwiz-dll-.md)
+El valor de este campo es una lista delimitada por comas de números de desplazamiento de intervalo para los intervalos que se conservarán en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna RetainOffsets del registro correspondiente de la tabla [FamilyFileRanges (Patchwiz.dll).](familyfileranges-table-patchwiz-dll-.md)
 
 Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirá los valores en ULONG.
 
@@ -100,7 +100,7 @@ Si se especifican dos o más versiones para el mismo archivo externo, la tabla p
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta tabla acepta variables de entorno como rutas de acceso a partir de la versión 4.0 de Patchwiz.dll.
 

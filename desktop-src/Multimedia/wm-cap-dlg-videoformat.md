@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_DLG_VIDEOFORMAT (VFW. h)
-description: El \_ mensaje de \_ vídeo de formato de Cap de WM Dlg \_ muestra un cuadro de diálogo en el que el usuario puede seleccionar el formato de vídeo.
+title: WM_CAP_DLG_VIDEOFORMAT mensaje (Vfw.h)
+description: El mensaje \_ WM CAP DLG VIDEOFORMAT muestra un cuadro de diálogo en el que el \_ usuario puede seleccionar el formato de \_ vídeo.
 ms.assetid: 3b44507e-3806-467f-877a-e9992d1337cb
 keywords:
-- Mensaje de WM_CAP_DLG_VIDEOFORMAT de Windows multimedia
+- WM_CAP_DLG_VIDEOFORMAT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d244c4c141845d4ede66804918514e091872e89
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fbaa58e99c6a07db9109a0b1a6dae25de8abd46fef2631eb539961de16455ec0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135404"
 ---
-# <a name="wm_cap_dlg_videoformat-message"></a>\_Mensaje de \_ \_ videoformateador de Cap de WM
+# <a name="wm_cap_dlg_videoformat-message"></a>Mensaje \_ DE \_ DLG \_ VIDEOFORMAT de WM CAP
 
-El mensaje de vídeo de **formato de Cap de WM \_ \_ \_ Dlg** muestra un cuadro de diálogo en el que el usuario puede seleccionar el formato de vídeo. El cuadro de diálogo formato de vídeo se puede usar para seleccionar las opciones dimensiones de imagen, profundidad de bits y compresión de hardware. Puede enviar este mensaje explícitamente o mediante la macro [**capDlgVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capdlgvideoformat) .
+El **mensaje WM CAP \_ \_ DLG \_ VIDEOFORMAT** muestra un cuadro de diálogo en el que el usuario puede seleccionar el formato de vídeo. El cuadro de diálogo Formato de vídeo puede usarse para seleccionar las opciones de dimensiones de imagen, profundidad de bits y compresión de hardware. Puede enviar este mensaje explícitamente o mediante la [**macro capDlgVideoFormat.**](/windows/desktop/api/Vfw/nf-vfw-capdlgvideoformat)
 
 
 ```C++
@@ -36,27 +36,27 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una vez que se devuelve este mensaje, es posible que las aplicaciones necesiten actualizar la estructura [**CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) porque el usuario podría haber cambiado las dimensiones de la imagen.
+Una vez que se devuelve este mensaje, es posible que las aplicaciones tengan que actualizar la [**estructura CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) porque el usuario podría haber cambiado las dimensiones de la imagen.
 
-El cuadro de diálogo formato de vídeo es único para cada controlador de captura. Es posible que algunos controladores de captura no admitan un cuadro de diálogo formato de vídeo. Las aplicaciones pueden determinar si el controlador de captura admite este mensaje comprobando el miembro **fHasDlgVideoFormat** de [**CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdrivercaps).
+El cuadro de diálogo Formato de vídeo es único para cada controlador de captura. Es posible que algunos controladores de captura no admitan un cuadro de diálogo Formato de vídeo. Las aplicaciones pueden determinar si el controlador de captura admite este mensaje comprobando el **miembro fHasDlgVideoFormat** de [**CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdrivercaps).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Identificador del proveedor de almacenamiento de este archivo.
+description: Identificador del proveedor de almacenamiento para este archivo.
 ms.assetid: 03863ed4-9d77-4394-9122-6b6f4285e9ec
-title: System. StorageProviderFileIdentifier
+title: System.StorageProviderFileIdentifier
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd1fbfb2ba57722715498486360b15bd7d3349b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6dea053cef5b60715af13ea485f2a82fae0a6416cfd03b4a6b18a102734660b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864538"
 ---
-# <a name="systemstorageproviderfileidentifier"></a>System. StorageProviderFileIdentifier
+# <a name="systemstorageproviderfileidentifier"></a>System.StorageProviderFileIdentifier
 
-Identificador del proveedor de almacenamiento de este archivo.
+Identificador del proveedor de almacenamiento para este archivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

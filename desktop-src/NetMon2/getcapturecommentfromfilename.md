@@ -1,7 +1,7 @@
 ---
 description: La función GetCaptureCommentFromFilename extrae el comentario de captura de un archivo de captura.
 ms.assetid: d3665cb0-d54d-45f7-aef9-c2e603d6f773
-title: Función GetCaptureCommentFromFilename (Netmon. h)
+title: Función GetCaptureCommentFromFilename (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 9dbfb086ccc27ad2f4c35018c3384a4b81ef0528
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b92b81fa00834c3a4038a6a6bb9f295246a7c0b217c99779a5d2c569dbbf982
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366816"
 ---
-# <a name="getcapturecommentfromfilename-function"></a>GetCaptureCommentFromFilename función)
+# <a name="getcapturecommentfromfilename-function"></a>Función GetCaptureCommentFromFilename
 
-La función **GetCaptureCommentFromFilename** extrae el comentario de captura de un [*archivo de captura*](c.md).
+La **función GetCaptureCommentFromFilename** extrae el comentario de captura de un [*archivo de captura.*](c.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ DWORD  WINAPI GetCaptureCommentFromFilename(
 
 <dl> <dt>
 
-*lpFilename* \[ de\]
+*lpFilename* \[ En\]
 </dt> <dd>
 
 Puntero al nombre del archivo de captura.
 
 </dd> <dt>
 
-*lpComment* \[ de\]
+*lpComment* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena asignada previamente para el comentario.
+Puntero a una cadena preasignada para el comentario.
 
 </dd> <dt>
 
-*BufferSize* \[ de\]
+*BufferSize* \[ En\]
 </dt> <dd>
 
 Tamaño de la cadena.
@@ -64,44 +64,44 @@ Tamaño de la cadena.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función es correcta (es decir, si se encuentra el comentario y se copia, o si no hay ningún comentario en el archivo de captura), el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente (es decir, si el comentario se encuentra y se copia, o no hay ningún comentario en el archivo de captura), el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un código de error.
+Si la función no se realiza correctamente, el valor devuelto es un código de error.
 
 
 
 | Código devuelto                                                                                                 | Descripción                                                                  |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <dl> <dt>**\_error de \_ lectura del archivo NMERR \_**</dt> </dl>     | No se puede leer el comentario de captura.<br/>                               |
-| <dl> <dt>**NMERR \_ \_ formato de archivo no válido \_**</dt> </dl> | El marco del comentario no es un formato de archivo válido.<br/>                     |
-| <dl> <dt>**\_ \_ no \_ se encontró el archivo NMERR**</dt> </dl>      | No se encuentra el archivo especificado por el parámetro *lpFilename* .<br/> |
-| <dl> <dt>**NMERR \_ parámetro no válido \_**</dt> </dl>    | Uno de los parámetros no se ha especificado correctamente.<br/>                   |
+| <dl> <dt>**ERROR DE LECTURA \_ DEL ARCHIVO NMERR \_ \_**</dt> </dl>     | No se puede leer el comentario de captura.<br/>                               |
+| <dl> <dt>**FORMATO DE ARCHIVO \_ NO \_ VÁLIDO DE \_ NMERR**</dt> </dl> | El marco Comentario no es un formato de archivo válido.<br/>                     |
+| <dl> <dt>**ARCHIVO NMERR \_ \_ NO \_ ENCONTRADO**</dt> </dl>      | No se encuentra el archivo especificado *por el parámetro lpFilename.*<br/> |
+| <dl> <dt>**NMERR \_ INVALID \_ PARAMETER**</dt> </dl>    | Uno de los parámetros se especifica incorrectamente.<br/>                   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **GetCaptureCommentFromFilename** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a la **función GetCaptureCommentFromFilename.**
 
-Para recuperar el comentario de una captura en tiempo real, llame a la función [GetCaptureComment](getcapturecomment.md) .
+Para recuperar el comentario de una captura en tiempo real, llame a la [función GetCaptureComment.](getcapturecomment.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

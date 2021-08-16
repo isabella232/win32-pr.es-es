@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b5f69ca081379a6e493369a4dde3454d31201c9d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e3fd9fe5b64e7fa4b12c76e5fdb85ef902343c792b49b945e41358e2ede93c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823249"
 ---
 # <a name="cbasepropertypagecbasepropertypage-destructor"></a>Destructor CBasePropertyPage.~CBasePropertyPage
 
@@ -42,7 +42,7 @@ Método destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Streams.h)</dt> </dl>                                                                                     |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

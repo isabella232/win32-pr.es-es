@@ -1,7 +1,7 @@
 ---
 description: Determina el producto de punto de dos vectores 2D.
 ms.assetid: ae77ff29-44be-4b67-9c63-aaffa4fe8d59
-title: Función D3DXVec2Dot (D3dx9math. h)
+title: Función D3DXVec2Dot (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 79b65127c415695b3df9f927b6edff8fcdd5c58d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 98cb865ebd075dcd78db8200b18de1644107e9a497b977fe062017c758e52256
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523831"
 ---
-# <a name="d3dxvec2dot-function"></a>D3DXVec2Dot función)
+# <a name="d3dxvec2dot-function"></a>Función D3DXVec2Dot
 
 Determina el producto de punto de dos vectores 2D.
 
@@ -41,27 +41,27 @@ FLOAT D3DXVec2Dot(
 
 <dl> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR2**](d3dxvector2.md) de origen.
+Puntero a una estructura [**D3DXVECTOR2 de**](d3dxvector2.md) origen.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR2**](d3dxvector2.md) de origen.
+Puntero a una estructura [**D3DXVECTOR2 de**](d3dxvector2.md) origen.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Producto escalar.
 
@@ -71,12 +71,12 @@ Producto escalar.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: MCI_INFO_PARMS estructura (Mciapi. h)
-description: La \_ estructura MCI info \_ parms contiene información del comando MCI \_ info.
+title: MCI_INFO_PARMS estructura (Mciapi.h)
+description: La estructura \_ MCI INFO \_ PARMS contiene información para el comando INFO \_ de MCI.
 ms.assetid: c64cff7d-a6d5-44b7-8cfb-9593f6328832
 keywords:
-- Estructura de MCI_INFO_PARMS de Windows multimedia
+- MCI_INFO_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d23221d140aaf093525691d7127c8466f392b95
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d2415fe0234c1a5b553a8b55d785febd82ebdd770f8c297bfc483549a1aa2a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375020"
 ---
-# <a name="mci_info_parms-structure"></a>Estructura de parms de \_ información de MCI \_
+# <a name="mci_info_parms-structure"></a>Estructura MCI \_ INFO \_ PARMS
 
-La estructura **MCI \_ info \_ parms** contiene información del comando [**MCI \_ info**](mci-info.md) .
+La **estructura \_ MCI INFO \_ PARMS** contiene información para el [**comando INFO \_ de MCI.**](mci-info.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,25 +45,25 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **lpstrReturn**
 </dt> <dd>
 
-Búfer de la cadena devuelta.
+Búfer para la cadena de devolución.
 
 </dd> <dt>
 
 **dwRetSize**
 </dt> <dd>
 
-Tamaño, en caracteres, de la cadena devuelta.
+Tamaño, en caracteres, de la cadena de devolución.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -71,25 +71,25 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**información de MCI \_**](mci-info.md)
+[**INFORMACIÓN \_ de MCI**](mci-info.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

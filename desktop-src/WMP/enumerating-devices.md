@@ -4,30 +4,30 @@ description: Este código de ejemplo muestra una función que enumera los dispos
 ms.assetid: 0236a629-c09a-4687-a8ba-fa05107fab33
 keywords:
 - Reproductor de Windows Media dispositivos portátiles
-- Reproductor de Windows Media modelo de objetos, dispositivos portátiles
+- Reproductor de Windows Media de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
-- Reproductor de Windows Media control ActiveX, dispositivos portátiles
-- Control ActiveX, dispositivos portátiles
-- Reproductor de Windows Media control ActiveX móvil, dispositivos portátiles
-- Reproductor de Windows Media móviles, dispositivos portátiles
-- dispositivos portátiles, enumeración
+- Reproductor de Windows Media ActiveX control, dispositivos portátiles
+- ActiveX control, dispositivos portátiles
+- Reproductor de Windows Media Control ActiveX dispositivos móviles, dispositivos portátiles
+- Reproductor de Windows Media Dispositivos móviles y portátiles
+- dispositivos portátiles, enumerar
 - enumeraciones, dispositivos portátiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d44f71fa26f40983424ced70280d9c03e0892a00
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 64f62ecc599e8a9610bf01b5f8a1651b330c9f8ed6abb4197fac89daeb751c4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339863"
 ---
 # <a name="enumerating-devices"></a>Enumeración de dispositivos
 
-Reproductor de Windows Media representa dispositivos portátiles mediante la **interfaz IWMPSyncDevice.** El código de ejemplo siguiente muestra una función que crea una matriz de punteros a **IWMPSyncDevice**. Cada puntero de la matriz representa un dispositivo para el que Reproductor de Windows Media información almacenada. No es necesario que un dispositivo esté conectado al equipo ni que tenga una asociación con la instancia de Reproductor de Windows Media actual.
+Reproductor de Windows Media dispositivos portátiles mediante la **interfaz IWMPSyncDevice.** En el código de ejemplo siguiente se muestra una función que crea una matriz de punteros a **IWMPSyncDevice**. Cada puntero de la matriz representa un dispositivo para el que Reproductor de Windows Media información almacenada. No es necesario que un dispositivo esté conectado al equipo ni que tenga una asociación con la instancia de Reproductor de Windows Media actual.
 
 Debe enumerar los dispositivos cada vez que reciba el **evento DeviceConnect** o **el evento DeviceDisconnect.**
 
-La siguiente función enumera los dispositivos. El *parámetro bConnectedOnly* especifica si se deben enumerar solo los dispositivos conectados actualmente al equipo del usuario.
+La función siguiente enumera los dispositivos. El *parámetro bConnectedOnly* especifica si se deben enumerar solo los dispositivos conectados actualmente al equipo del usuario.
 
 
 ```C++

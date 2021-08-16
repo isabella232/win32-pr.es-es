@@ -1,7 +1,7 @@
 ---
 description: Establece la ubicación del icono asignado al vínculo.
 ms.assetid: 257bb8e2-29fa-4d2f-ac2d-3497cf12959c
-title: Método ShellLinkObject. SetIconLocation (Shldisp. h)
+title: Método ShellLinkObject.SetIconLocation (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 996f9648e9b9f59e1e84871abac1d6b37e2592d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d994e80721649121d0046e79661e849d34e454b7c07153714771a256b7b2e2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857164"
 ---
-# <a name="shelllinkobjectseticonlocation-method"></a>ShellLinkObject. SetIconLocation, método
+# <a name="shelllinkobjectseticonlocation-method"></a>Método ShellLinkObject.SetIconLocation
 
 Establece la ubicación del icono asignado al vínculo.
 
@@ -40,7 +40,7 @@ iRetVal = ShellLinkObject.SetIconLocation(
 
 <dl> <dt>
 
-*Spath* \[ de\]
+*sPath* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -49,20 +49,20 @@ Ruta de acceso completa del archivo que contiene el icono.
 
 </dd> <dt>
 
-*iIndex* \[ de\]
+*iIndex* \[ En\]
 </dt> <dd>
 
-Tipo: **Integer**
+Tipo: **Entero**
 
-Índice del icono del archivo especificado por *Spath*.
+Índice del icono en el archivo especificado por *sPath*.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -97,7 +97,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -171,13 +171,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo para aplicaciones de escritorio de Windows 2000 Professional con SP3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

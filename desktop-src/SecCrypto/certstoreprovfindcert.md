@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 09701991d6b192d27f921642bfc960df819f9140
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a50a53e819fcfd12ff490b4e6642536c01d9a49b4e9345e7713bf0eb08a0fac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117770024"
 ---
 # <a name="certstoreprovfindcert-callback-function"></a>Función de devolución de llamada CertStoreProvFindCert
 
-La función de devolución de llamada **CertStoreProvFindCert** enumera o busca el primer certificado o el siguiente en un [*almacén externo*](../secgloss/e-gly.md) que coincida con los criterios especificados.
+La función de devolución de llamada **CertStoreProvFindCert** enumera o [](../secgloss/e-gly.md) busca el primer certificado o el siguiente en un almacén externo que coincida con los criterios especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,51 +43,51 @@ BOOL WINAPI CertStoreProvFindCert(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+**Identificador HCERTSTOREPROV** para un [*almacén de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pFindInfo* \[ de\]
+*pFindInfo* \[ En\]
 </dt> <dd>
 
-Un puntero a una estructura de [**\_ \_ \_ \_ información del Prov del almacén de certificados**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info) que contiene todos los parámetros pasados a la función [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore) .
+Puntero a una estructura FIND INFO de [**CERT \_ STORE \_ PROV \_ \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info) que contiene todos los parámetros pasados a la [**función CertFindCertificateInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
 
 </dd> <dt>
 
-*pPrevCertContext* \[ de\]
+*pPrevCertContext* \[ En\]
 </dt> <dd>
 
-Un puntero a un [**\_ contexto**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) de certificado del certificado encontrado. En la primera llamada a la función, este parámetro debe establecerse en **null**. En las llamadas posteriores, debe establecerse en el puntero devuelto en el parámetro *ppProvCertContext* en la última llamada. La función de devolución de llamada libera un puntero no **nulo** que se pasa en este parámetro.
+Puntero a un [**CONTEXTO \_ CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) del certificado encontrado. En la primera llamada a la función, este parámetro debe establecerse en **NULL.** En las llamadas posteriores, se debe establecer en el puntero devuelto en el *parámetro ppProvCertContext* en la última llamada. La función **de** devolución de llamada libera un puntero que no es NULL pasado en este parámetro.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> <dt>
 
 *ppvStoreProvFindInfo* \[ in, out\]
 </dt> <dd>
 
-Un puntero a un puntero a un búfer para devolver la información del proveedor de almacenamiento. Opcionalmente, la devolución de llamada puede devolver un puntero a información interna de búsqueda en este parámetro. Después de la primera llamada, este parámetro se establece en el puntero devuelto por la llamada anterior a la función.
+Puntero a un puntero a un búfer para devolver la información del proveedor de almacén. Opcionalmente, la devolución de llamada puede devolver un puntero a la información de la buscar interna en este parámetro. Después de la primera llamada, este parámetro se establece en el puntero devuelto por la llamada anterior a la función .
 
 </dd> <dt>
 
-*ppProvCertContext* \[ enuncia\]
+*ppProvCertContext* \[ out\]
 </dt> <dd>
 
-Si la búsqueda se realiza correctamente, se devuelve un puntero al certificado encontrado en este parámetro.
+Si se encuentra correctamente, se devuelve un puntero al certificado encontrado en este parámetro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la función se ejecuta correctamente o **false** si se produce un error.
+Devuelve **TRUE** si la función se realiza correctamente o **FALSE** si se produce un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,19 +95,19 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**contexto de certificado \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO \_ DE CERTIFICADO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
-[**información de la búsqueda de almacén de certificados \_ \_ \_ \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info)
+[**CERT \_ STORE \_ PROV \_ FIND \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info)
 </dt> <dt>
 
 [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)

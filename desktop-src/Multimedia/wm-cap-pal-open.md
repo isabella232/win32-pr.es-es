@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_PAL_OPEN (VFW. h)
-description: El \_ \_ \_ mensaje abierto PAL Cap de WM carga una nueva paleta desde un archivo de paleta y la pasa a un controlador de captura.
+title: WM_CAP_PAL_OPEN mensaje (Vfw.h)
+description: El mensaje WM CAP PAL OPEN carga una nueva paleta de un archivo de paleta \_ y la pasa a un controlador de \_ \_ captura.
 ms.assetid: e77b518e-ff03-4622-978f-d9ebaa49c6a4
 keywords:
-- Mensaje de WM_CAP_PAL_OPEN de Windows multimedia
+- WM_CAP_PAL_OPEN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e949bab50294251543c50d72c8d8b169cfc5514
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 29cb831ca0128b0562d6ee53b8e66309d2e1dbd91803dab13202dc4a6723bfa2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800584"
 ---
-# <a name="wm_cap_pal_open-message"></a>\_ \_ Mensaje abierto PAL Cap de WM \_
+# <a name="wm_cap_pal_open-message"></a>Mensaje \_ DE WM CAP PAL \_ \_ OPEN
 
-El **mensaje \_ \_ \_ abierto PAL Cap de WM** carga una nueva paleta desde un archivo de paleta y la pasa a un controlador de captura. Los archivos de paleta suelen utilizar la extensión de nombre de archivo. Señales. Un controlador de captura usa una paleta cuando lo requiere el formato de imagen digitalizada especificado. Puede enviar este mensaje explícitamente o mediante la macro [**capPaletteOpen**](/windows/desktop/api/Vfw/nf-vfw-cappaletteopen) .
+El **mensaje WM CAP PAL \_ \_ \_ OPEN** carga una nueva paleta de un archivo de paleta y la pasa a un controlador de captura. Normalmente, los archivos de paleta usan la extensión de nombre de archivo . Camarada. Un controlador de captura usa una paleta cuando lo requiere el formato de imagen digitalizado especificado. Puede enviar este mensaje explícitamente o mediante la [**macro capPaletteOpen.**](/windows/desktop/api/Vfw/nf-vfw-cappaletteopen)
 
 
 ```C++
@@ -41,29 +41,29 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 <span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
 </dt> <dd>
 
-Puntero a una cadena terminada en null que contiene el nombre de archivo de la paleta.
+Puntero a una cadena terminada en NULL que contiene el nombre de archivo de la paleta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error con el mensaje de [**\_ error de devolución de \_ \_ llamada \_ de Cap de WM**](wm-cap-set-callback-error.md) , se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

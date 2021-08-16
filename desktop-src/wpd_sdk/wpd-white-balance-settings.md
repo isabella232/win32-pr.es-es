@@ -1,7 +1,7 @@
 ---
-description: El \_ tipo de enumeración de valores de equilibrio de blanco de WPD \_ \_ describe cómo un dispositivo de vídeo o imagen pondera los canales de color para lograr un equilibrio de blanco adecuado.
+description: El tipo de enumeración WPD WHITE BALANCE SETTINGS describe cómo un dispositivo de vídeo o imagen pondera los canales de \_ color para lograr un equilibrio de blanco \_ \_ adecuado.
 ms.assetid: 7bc173dd-4fdd-4b03-994e-f0711c910618
-title: Enumeración WPD_WHITE_BALANCE_SETTINGS (PortableDevice. h)
+title: WPD_WHITE_BALANCE_SETTINGS enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 06e607acc06ed00cc9fe91670650caee44c30430
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b596dd6d8fbcc2b2a875b70d80e8eb4040c966590642a004c551ec159c9f5d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842052"
 ---
-# <a name="wpd_white_balance_settings-enumeration"></a>\_ \_ Enumeración de valores de equilibrio de blanco de WPD \_
+# <a name="wpd_white_balance_settings-enumeration"></a>Enumeración \_ WPD WHITE \_ BALANCE \_ SETTINGS
 
-El tipo de enumeración de valores de equilibrio de blanco de WPD describe cómo un dispositivo de vídeo o imagen pondera los canales de color para lograr un equilibrio de blanco adecuado. **\_ \_ \_**
+El **tipo de \_ enumeración WPD WHITE \_ BALANCE \_ SETTINGS** describe cómo un dispositivo de vídeo o imagen pondera los canales de color para lograr un equilibrio de blanco adecuado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,58 +45,58 @@ typedef enum WPD_WHITE_BALANCE_SETTINGS {
 
 <dl> <dt>
 
-<span id="WPD_WHITE_BALANCE_UNDEFINED"></span><span id="wpd_white_balance_undefined"></span>**\_balance blanco de WPD \_ \_ sin definir**
+<span id="WPD_WHITE_BALANCE_UNDEFINED"></span><span id="wpd_white_balance_undefined"></span>**WPD \_ WHITE \_ BALANCE \_ UNDEFINED**
 </dt> <dd>
 
 Este valor no se ha definido.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_MANUAL"></span><span id="wpd_white_balance_manual"></span>**\_manual de \_ balance \_ blanco de WPD**
+<span id="WPD_WHITE_BALANCE_MANUAL"></span><span id="wpd_white_balance_manual"></span>**MANUAL DE \_ EQUILIBRIO DE BLANCO DE \_ \_ WPD**
 </dt> <dd>
 
-El balance de blanco se establece explícitamente mediante la propiedad de [ \_ \_ ganancia de imagen \_ RGB \_ ](still-image-properties.md) de la imagen de carga continua de WPD y no cambiará.
+El equilibrio de blanco se establece explícitamente mediante la propiedad [ \_ WPD STILL \_ IMAGE RGB \_ \_ GAIN](still-image-properties.md) y no cambiará por sí mismo.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_AUTOMATIC"></span><span id="wpd_white_balance_automatic"></span>**\_balance blanco de WPD \_ \_ automático**
+<span id="WPD_WHITE_BALANCE_AUTOMATIC"></span><span id="wpd_white_balance_automatic"></span>**WPD \_ WHITE \_ BALANCE \_ AUTOMATIC**
 </dt> <dd>
 
-El dispositivo establecerá el balance de blanco.
+El dispositivo establecerá el saldo blanco.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_ONE_PUSH_AUTOMATIC"></span><span id="wpd_white_balance_one_push_automatic"></span>**equilibrio de blanco de WPD \_ en \_ \_ una \_ instalación \_ automática**
+<span id="WPD_WHITE_BALANCE_ONE_PUSH_AUTOMATIC"></span><span id="wpd_white_balance_one_push_automatic"></span>**WPD \_ WHITE \_ BALANCE \_ ONE \_ PUSH \_ AUTOMATIC**
 </dt> <dd>
 
-El dispositivo establecerá el balance de blanco, pero solo cuando el usuario inserte el botón de captura del dispositivo mientras dirige el dispositivo a un campo en blanco.
+El dispositivo establecerá el equilibrio de blanco, pero solo cuando el usuario presione el botón de captura del dispositivo mientras apunta el dispositivo a un campo blanco.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_DAYLIGHT"></span><span id="wpd_white_balance_daylight"></span>**\_verano de \_ balance \_ blanco de WPD**
+<span id="WPD_WHITE_BALANCE_DAYLIGHT"></span><span id="wpd_white_balance_daylight"></span>**WPD \_ WHITE \_ BALANCE \_ DAYLIGHT**
 </dt> <dd>
 
-El dispositivo usará los números de balance de blanco adecuados para su uso en la mayoría de los valores de horario de verano.
+El dispositivo usará números de saldo blanco adecuados para su uso en la mayoría de las configuraciones de verano.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_TUNGSTEN"></span><span id="wpd_white_balance_tungsten"></span>**\_Tungsten de \_ equilibrio de blanco de WPD \_**
+<span id="WPD_WHITE_BALANCE_TUNGSTEN"></span><span id="wpd_white_balance_tungsten"></span>**WPD \_ WHITE \_ BALANCE \_ TUNGSTEN**
 </dt> <dd>
 
-El dispositivo usará los números de balance de blanco adecuados para su uso en la mayoría de los valores de iluminación de la luz de los interiores.
+El dispositivo usará números de saldo blanco adecuados para su uso en la mayoría de las configuraciones de iluminación incandescentes interiores.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_FLASH"></span><span id="wpd_white_balance_flash"></span>**BALANCE de blanco de WPD \_ en \_ \_ Flash**
+<span id="WPD_WHITE_BALANCE_FLASH"></span><span id="wpd_white_balance_flash"></span>**WPD \_ WHITE \_ BALANCE \_ FLASH**
 </dt> <dd>
 
-El dispositivo usará los números de balance de blanco adecuados para su uso con un flash.
+El dispositivo usará números de saldo blanco adecuados para su uso con un flash.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración se usa en la propiedad de equilibrio de blancos de la imagen de la [ \_ \_ imagen \_ \_ ](still-image-properties.md) .
+Esta enumeración la usa la [propiedad \_ WPD STILL \_ IMAGE WHITE \_ \_ BALANCE.](still-image-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,11 +104,11 @@ Esta enumeración se usa en la propiedad de equilibrio de blancos de la imagen d
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

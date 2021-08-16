@@ -1,11 +1,11 @@
 ---
-title: atributo MS-SPP-KMS-IDS
-description: Identificadores de KMS habilitados por el objeto de activación
+title: Atributo ms-SPP-KMS-Ids
+description: KMS Los ID habilitados por el objeto activation
 ms.assetid: b5e11081-202e-4b9a-bf23-8552475f01f0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-SPP-KMS-IDS
-- msSPP-KMSIds atributo AD Schema
+- Esquema de AD del atributo ms-SPP-KMS-Ids
+- Esquema de AD del atributo msSPP-KMSIds
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77e47103137a52fa2dbcc9cf4eb04ae073191115
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4fd8296adf05a697f92abc70247681fea4776513c15d1c39c6592a2d15363889
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838078"
 ---
-# <a name="ms-spp-kms-ids-attribute"></a>atributo MS-SPP-KMS-IDS
+# <a name="ms-spp-kms-ids-attribute"></a>Atributo ms-SPP-KMS-Ids
 
-Identificadores de KMS habilitados por el objeto de activación
+KMS Los ID habilitados por el objeto activation
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-SPP-KMS-IDS                                        |
-| Nombre para mostrar de LDAP | msSPP-KMSIds                                          |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-SPP-KMS-Ids                                        |
+| Ldap-Display-Name | msSPP-KMSIds                                          |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2082                               |
-| System-ID-GUID    | 9b663eda-3542-46d6-9df0-314025af2bac                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9b663eda-3542-46d6-9df0-314025af2bac                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -48,20 +48,20 @@ Identificadores de KMS habilitados por el objeto de activación
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | True                                                                    |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Verdadero                                                                    |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 16                                                                      |
 | Range-Upper            | 16                                                                      |
 | Search-Flags           | 0x00000001                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Clases usadas en        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

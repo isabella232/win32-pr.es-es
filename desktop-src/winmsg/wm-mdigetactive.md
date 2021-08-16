@@ -1,19 +1,19 @@
 ---
-description: Una aplicación envía el mensaje de MDIGETACTIVE de WM \_ a una ventana de cliente de la interfaz de múltiples documentos (MDI) para recuperar el identificador de la ventana secundaria MDI activa.
+description: Una aplicación envía el mensaje MDIGETACTIVE de WM a una ventana cliente de interfaz de múltiples documentos (MDI) para recuperar el identificador a la ventana secundaria \_ de MDI activa.
 ms.assetid: 3ee445be-dd55-4825-8508-fa18a346ffcd
-title: Mensaje de WM_MDIGETACTIVE (Winuser. h)
+title: WM_MDIGETACTIVE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c49f4ec321f526cd4c9766555e2361ef2cfbd040
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7716138028f7fe7447cc89d8feded7806f4f8757cd4a18b4bef6f2d812de3f17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200145"
 ---
-# <a name="wm_mdigetactive-message"></a>Mensaje de MDIGETACTIVE de WM \_
+# <a name="wm_mdigetactive-message"></a>Mensaje \_ MDIGETACTIVE de WM
 
-Una aplicación envía el mensaje de **\_ MDIGETACTIVE de WM** a una ventana de cliente de la interfaz de múltiples documentos (MDI) para recuperar el identificador de la ventana secundaria MDI activa.
+Una aplicación envía el **mensaje \_ MDIGETACTIVE** de WM a una ventana cliente de interfaz de múltiples documentos (MDI) para recuperar el identificador a la ventana secundaria de MDI activa.
 
 
 ```C++
@@ -36,13 +36,13 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Estado maximizado. Si este parámetro no es **null**, es un puntero a un valor que indica el estado maximizado de la ventana secundaria MDI. Si el valor es **true**, la ventana está maximizada; un valor de **false** indica que no lo es. Si este parámetro es **null**, se omite el parámetro.
+Estado maximizado. Si este parámetro no es **NULL,** es un puntero a un valor que indica el estado maximizado de la ventana secundaria MDI. Si el valor es **TRUE**, la ventana se maximiza; Un valor **de FALSE** indica que no lo es. Si este parámetro es **NULL,** se omite el parámetro .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
 El valor devuelto es el identificador de la ventana secundaria MDI activa.
 
@@ -50,19 +50,19 @@ El valor devuelto es el identificador de la ventana secundaria MDI activa.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información general sobre la interfaz de varios documentos](multiple-document-interface.md)
+[Introducción a la interfaz de varios documentos](multiple-document-interface.md)
 </dt> </dl>
 
  

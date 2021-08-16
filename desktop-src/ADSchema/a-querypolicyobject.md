@@ -1,11 +1,11 @@
 ---
-title: 'Query: atributo de objeto de Directiva'
-description: Referencia a la Query-Policy predeterminada en vigor para este servidor.
+title: Atributo Query-Policy-Object
+description: Referencia al valor predeterminado Query-Policy en vigor para este servidor.
 ms.assetid: 5a492305-ac57-4331-b96b-bdd8107d4a4d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de objeto de directiva de consulta
-- queryPolicyObject esquema de AD de atributos
+- Esquema de AD del atributo Query-Policy-Object
+- Esquema de AD del atributo queryPolicyObject
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e33bc2840fb1ca8a936b417c4407f48fcdf7f46
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57ddd8b98cdc19efc8bed8db709fb0b335ff770129dde5bbf5933b706273d722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836785"
 ---
-# <a name="query-policy-object-attribute"></a>Query: atributo de objeto de Directiva
+# <a name="query-policy-object-attribute"></a>Atributo Query-Policy-Object
 
-Referencia a la Query-Policy predeterminada en vigor para este servidor.
+Referencia al valor predeterminado Query-Policy en vigor para este servidor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Query: objeto de Directiva                     |
-| Nombre para mostrar de LDAP | queryPolicyObject                       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Query-Policy-Object                     |
+| Ldap-Display-Name | queryPolicyObject                       |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.607                  |
-| System-ID-GUID    | e1aea403-cd5b-11d0-afff-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | e1aea403-cd5b-11d0-afff-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ Referencia a la Query-Policy predeterminada en vigor para este servidor.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,20 +54,20 @@ Referencia a la Query-Policy predeterminada en vigor para este servidor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 68                                                                                                   |
+| Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | False                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Falso                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -75,41 +75,41 @@ Referencia a la Query-Policy predeterminada en vigor para este servidor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 68                                                                                                   |
+| Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | False                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Falso                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 68                                                                                                   |
+| Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | False                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Falso                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ Referencia a la Query-Policy predeterminada en vigor para este servidor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 68                                                                                                   |
+| Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | False                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Falso                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -138,20 +138,20 @@ Referencia a la Query-Policy predeterminada en vigor para este servidor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 68                                                                                                   |
+| Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | False                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Falso                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -159,20 +159,20 @@ Referencia a la Query-Policy predeterminada en vigor para este servidor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 68                                                                                                   |
+| Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | False                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Falso                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ Referencia a la Query-Policy predeterminada en vigor para este servidor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 68                                                                                                   |
+| Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | False                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Falso                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Clases usadas en        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> |
 
 
 

@@ -1,32 +1,32 @@
 ---
-description: Cómo obtener acceso a la información del BIOS de administración del sistema (SMBIOS) desde una aplicación universal de Windows.
+description: Acceso a la información del BIOS de administración del sistema (SMBIOS) desde una aplicación Windows universal.
 ms.assetid: 4D185319-C093-4B1B-A182-E845E72FEA5D
-title: Acceder a la información de SMBIOS desde una aplicación universal de Windows
+title: Acceso a información de SMBIOS desde una aplicación de Windows universal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76791622ad4bcba15ddd889f36a6f0feeb5e3dfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 936d30a653059b3573e962b2e52770aa2bd000180ee0612c1855de3d6a1a9778
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104545782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764959"
 ---
-# <a name="access-smbios-information-from-a-universal-windows-app"></a>Acceder a la información de SMBIOS desde una aplicación universal de Windows
+# <a name="access-smbios-information-from-a-universal-windows-app"></a>Acceso a información de SMBIOS desde una aplicación de Windows universal
 
-> Tenga en cuenta Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.
+> [NOTA] Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.
 
-Cómo obtener acceso a la información del BIOS de administración del sistema (SMBIOS) desde una aplicación universal de Windows.
+Acceso a la información del BIOS de administración del sistema (SMBIOS) desde una aplicación Windows universal.
 
-## <a name="access-smbios-information-from-a-universal-windows-platform-app"></a>Acceder a la información de SMBIOS desde una aplicación Plataforma universal de Windows
+## <a name="access-smbios-information-from-a-universal-windows-platform-app"></a>Acceso a la información de SMBIOS desde una aplicación Windows plataforma universal
 
-A partir de Windows 10, versión 1803, las aplicaciones universales de Windows pueden usar [GetSystemFirmwareTable](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable) y [EnumSystemFirmwareTables](/windows/win32/api/sysinfoapi/nf-sysinfoapi-enumsystemfirmwaretables) para acceder a la información de SMBIOS mediante la declaración de la capacidad restringida de **SMBIOS** en el manifiesto de la aplicación.
+A partir de Windows 10, versión 1803, las aplicaciones universales de Windows pueden usar [GetSystemFirmwareTable](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable) y [EnumSystemFirmwareTables](/windows/win32/api/sysinfoapi/nf-sysinfoapi-enumsystemfirmwaretables) para acceder a la información de SMBIOS declarando la funcionalidad restringida **de smbios** en el manifiesto de aplicación.
 
 > [!IMPORTANT]
-> Solo se admite el acceso a tablas de firmware de SMBIOS sin procesar (RSMB) desde una aplicación universal de Windows. **Acceso a \_ Denegado** se devolverá si intenta tener acceso a otros tipos de tabla de firmware desde una aplicación universal de Windows.
+> Solo se admite el acceso a tablas de firmware SMBIOS (RSMB) sin procesar desde una aplicación Windows universal. **ACCESO \_ DENIED** se devolverá si intenta acceder a otros tipos de tabla de firmware desde una aplicación de Windows universal.
 
  
 
-Para declarar la funcionalidad restringida de **SMBIOS** en el manifiesto de la aplicación, agregue el espacio de nombres **ResCap** y la capacidad de **SMBIOS** como se indica a continuación:
+Para declarar la **funcionalidad restringida de smbios** en el manifiesto de aplicación, agregue el espacio de nombres **rescap** y la funcionalidad **smbios** como se muestra a continuación:
 
 ``` syntax
 <Package
@@ -53,7 +53,7 @@ Para declarar la funcionalidad restringida de **SMBIOS** en el manifiesto de la 
 [EnumSystemFirmwareTables](/windows/win32/api/sysinfoapi/nf-sysinfoapi-enumsystemfirmwaretables)
 </dt> <dt>
 
-[Acceder a las variables de firmware UEFI desde una aplicación universal de Windows](access-uefi-firmware-variables-from-a-universal-windows-app.md)
+[Acceso a variables de firmware UEFI desde una aplicación Windows universal](access-uefi-firmware-variables-from-a-universal-windows-app.md)
 </dt> </dl>
 
  

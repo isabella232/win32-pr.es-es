@@ -1,7 +1,7 @@
 ---
 description: El método AddBeforeI inserta un elemento antes de la posición especificada.
 ms.assetid: d310e303-889a-43a6-bda5-2e7b805b25d1
-title: Método CBaseList. AddBeforeI (Wxlist. h)
+title: Método CBaseList.AddBeforeI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6996d2fd3ed0cad07a442530e3ae77470aaf6890
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cfb995e614904e807e67eeee9c0f344525fd701d039c596eb081b6ff3be4f078
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823752"
 ---
-# <a name="cbaselistaddbeforei-method"></a>CBaseList. AddBeforeI, método
+# <a name="cbaselistaddbeforei-method"></a>Método CBaseList.AddBeforeI
 
 El `AddBeforeI` método inserta un elemento antes de la posición especificada.
 
@@ -46,7 +46,7 @@ POSITION AddBeforeI(
 *pos* 
 </dt> <dd>
 
-Posición antes de la que se va a agregar el elemento.
+Posición delante de la que se va a agregar el elemento.
 
 </dd> <dt>
 
@@ -61,9 +61,9 @@ Puntero al elemento.
 
 Devuelve el indicador de posición del elemento insertado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *pos* es **null**, este método agrega el elemento al final de la lista (equivalente a llamar al método [**CBaseList:: AddTailI**](cbaselist-addtaili.md) ).
+Si *pos* es **NULL,** este método agrega el elemento al final de la lista (equivalente a llamar al [**método CBaseList::AddTailI).**](cbaselist-addtaili.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,16 +71,16 @@ Si *pos* es **null**, este método agrega el elemento al final de la lista (equi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MM_MIXM_LINE_CHANGE (mmsystem. h)
-description: '\_ \_ \_ Un dispositivo de mezclador envía el mensaje de cambio de línea mm MIXM para notificar a una aplicación que ha cambiado el estado de una línea de audio en el dispositivo especificado. La aplicación debe actualizar su presentación y los valores almacenados en caché para la línea de audio especificada.'
+title: MM_MIXM_LINE_CHANGE mensaje (Mmsystem.h)
+description: Un dispositivo mezclador envía el mensaje MM MIXM LINE CHANGE para notificar a una aplicación que el estado de una línea de audio en \_ el dispositivo especificado ha \_ \_ cambiado. La aplicación debe actualizar su pantalla y los valores almacenados en caché para la línea de audio especificada.
 ms.assetid: 68ada0be-9dc5-4edf-b924-ef0d10a1b79a
 keywords:
-- Mensaje de MM_MIXM_LINE_CHANGE de Windows multimedia
+- MM_MIXM_LINE_CHANGE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c4aa10d9934f8cf5f5747ecb4e4eb736af2655
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed3bd1c122d5e0cf62aa39266da547cd3701e43e6afbf01b853c7d24040504d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373597"
 ---
-# <a name="mm_mixm_line_change-message"></a>\_Mensaje de \_ cambio de línea mm MIXM \_
+# <a name="mm_mixm_line_change-message"></a>Mensaje \_ MM MIXM \_ LINE \_ CHANGE
 
-Un dispositivo de mezclador envía el mensaje de **\_ cambio de \_ línea \_ mm MIXM** para notificar a una aplicación que ha cambiado el estado de una línea de audio en el dispositivo especificado. La aplicación debe actualizar su presentación y los valores almacenados en caché para la línea de audio especificada.
+Un dispositivo mezclador envía el mensaje **MM \_ MIXM \_ LINE \_ CHANGE** para notificar a una aplicación que el estado de una línea de audio en el dispositivo especificado ha cambiado. La aplicación debe actualizar su pantalla y los valores almacenados en caché para la línea de audio especificada.
 
 
 ```C++
@@ -41,41 +41,41 @@ lParam = (LPARAM) dwLineID
 <span id="hMixer"></span><span id="hmixer"></span><span id="HMIXER"></span>*hMixer*
 </dt> <dd>
 
-Identificador del dispositivo de mezclador que envió el mensaje de notificación.
+Identificador del dispositivo mezclador que envió el mensaje de notificación.
 
 </dd> <dt>
 
 <span id="dwLineID"></span><span id="dwlineid"></span><span id="DWLINEID"></span>*dwLineID*
 </dt> <dd>
 
-Identificador de línea de la línea de audio que ha cambiado de estado. Este identificador es el mismo que el miembro **dwLineID** de la estructura **MIXERLINE** devuelta por la función **mixerGetLineInfo**.
+Identificador de línea de la línea de audio que ha cambiado de estado. Este identificador es el mismo que el **miembro dwLineID** de la **estructura MIXERLINE** devuelta por la **función mixerGetLineInfo.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación debe abrir un dispositivo de mezclador y especificar una ventana de devolución de llamada para recibir el mensaje de **\_ cambio de \_ línea \_ mm MIXM** .
+Una aplicación debe abrir un dispositivo mezclador y especificar una ventana de devolución de llamada para recibir el **mensaje MM \_ MIXM LINE \_ \_ CHANGE.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Mezcladores de audio](audio-mixers.md)
 </dt> <dt>
 
-[Mensajes de mezclador de audio](audio-mixer-messages.md)
+[Mensajes de Mixer audio](audio-mixer-messages.md)
 </dt> </dl>
 
  

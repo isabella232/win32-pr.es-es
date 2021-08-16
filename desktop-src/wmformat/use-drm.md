@@ -1,9 +1,9 @@
 ---
 title: Use_DRM
-description: El \_ atributo use DRM indica al objeto de escritor que aplique la protección de DRM versión 1 al archivo actual.
+description: El atributo \_ Usar DRM indica al objeto de escritor que aplique la protección drm versión 1 al archivo actual.
 ms.assetid: ad959e4a-faf7-4b61-9988-6878afcf3a90
 keywords:
-- Use_DRM formato de Windows Media
+- Use_DRM windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fcb010855ac4660792a7c579556001d5d7c4c96
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: b802a7bef777fab4ed835aa3a1770169deaa6eeea9a7eddeb802fb2e4b0a9dd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104532974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845306"
 ---
-# <a name="use_drm"></a>Usar \_ DRM
+# <a name="use_drm"></a>Uso de \_ DRM
 
-El atributo **use \_ DRM** indica al objeto de escritor que aplique la protección de DRM versión 1 al archivo actual.
+El **atributo \_ Usar DRM** indica al objeto de escritor que aplique la protección drm versión 1 al archivo actual.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,22 +29,22 @@ g \_ wszWMUse \_ DRM
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ bool**
+**WMT \_ TYPE \_ BOOL**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use [**IWMHeaderInfo:: setAttribute**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-setattribute) para establecer esta propiedad en **true** al crear el contenido de la versión 1 de DRM. No se puede obtener acceso a esta propiedad desde el objeto de lector.
+Use [**IWMHeaderInfo::SetAttribute para**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-setattribute) establecer esta propiedad en **TRUE** al crear contenido de la versión 1 de DRM. Esta propiedad no es accesible desde el objeto de lector.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Propiedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

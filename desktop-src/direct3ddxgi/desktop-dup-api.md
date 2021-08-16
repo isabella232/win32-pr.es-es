@@ -1,37 +1,37 @@
 ---
-description: Windows 8 deshabilita los controladores de reflejo estándar del modelo de controladores de pantalla de Windows 2000 (XDDM) y ofrece en su lugar la API de duplicado de escritorio.
+description: Windows 8 deshabilita los controladores reflejados Windows modelo de controlador de pantalla (XDDM) estándar y ofrece la API de duplicación de escritorio en su lugar.
 ms.assetid: 523FBFAD-5D78-4EE3-A3B7-8FD5BA39DC46
 title: API de duplicación de escritorio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad27f545318254404beb6372344d8dd0cdfdf604
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 93c1960d064d7fd1e34748dcc2efb3c86459b498df91b52c1384ef8698a37c01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118518501"
 ---
 # <a name="desktop-duplication-api"></a>API de duplicación de escritorio
 
-Windows 8 deshabilita los controladores de reflejo estándar del modelo de controladores de pantalla de Windows 2000 (XDDM) y ofrece en su lugar la API de duplicado de escritorio. La API de duplicación de escritorio proporciona acceso remoto a una imagen de escritorio para escenarios de colaboración. Las aplicaciones pueden usar la API de duplicación de escritorio para tener acceso a las actualizaciones de fotogramas fotogramas en el escritorio. Dado que las aplicaciones reciben actualizaciones de la imagen de escritorio en una superficie de DXGI, las aplicaciones pueden usar toda la capacidad de la GPU para procesar las actualizaciones de la imagen.
+Windows 8 deshabilita los controladores reflejados Windows modelo de controlador de pantalla (XDDM) estándar y ofrece la API de duplicación de escritorio en su lugar. La API de duplicación de escritorio proporciona acceso remoto a una imagen de escritorio para escenarios de colaboración. Las aplicaciones pueden usar la API de duplicación de escritorio para acceder a las actualizaciones fotograma a fotograma en el escritorio. Dado que las aplicaciones reciben actualizaciones de la imagen de escritorio en una superficie DXGI, las aplicaciones pueden usar toda la potencia de la GPU para procesar las actualizaciones de la imagen.
 
--   [Actualización de los datos de imagen de escritorio](#updating-the-desktop-image-data)
--   [Girar la imagen de escritorio](#rotating-the-desktop-image)
--   [Actualizar el puntero de escritorio](#updating-the-desktop-pointer)
+-   [Actualización de los datos de la imagen de escritorio](#updating-the-desktop-image-data)
+-   [Rotación de la imagen de escritorio](#rotating-the-desktop-image)
+-   [Actualización del puntero de escritorio](#updating-the-desktop-pointer)
 -   [Temas relacionados](#related-topics)
 
-## <a name="updating-the-desktop-image-data"></a>Actualización de los datos de imagen de escritorio
+## <a name="updating-the-desktop-image-data"></a>Actualización de los datos de la imagen de escritorio
 
-DXGI proporciona una superficie que contiene una imagen de escritorio actual a través del nuevo método [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) . El formato de la imagen de escritorio siempre es el [**formato de DXGI \_ \_ B8G8R8A8 \_ UNORM**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) , independientemente del modo de presentación actual. Junto con esta superficie, estos métodos [**IDXGIOutputDuplication**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgioutputduplication) devuelven los tipos de información indicados que le ayudarán a determinar qué píxeles de la superficie debe procesar:
+DXGI proporciona una superficie que contiene una imagen de escritorio actual a través del nuevo [**método IDXGIOutputDuplication::AcquireNextFrame.**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) El formato de la imagen de escritorio siempre es [**DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) independientemente del modo de presentación actual. Junto con esta superficie, estos métodos [**IDXGIOutputDuplication**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgioutputduplication) devuelven los tipos de información indicados que le ayudan a determinar qué píxeles de la superficie necesita procesar:
 
--   [**IDXGIOutputDuplication:: GetFrameDirtyRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframedirtyrects) devuelve regiones desfasadas, que son rectángulos no superpuestos que indican las áreas de la imagen de escritorio que el sistema operativo ha actualizado desde que se procesó la imagen de escritorio anterior.
--   [**IDXGIOutputDuplication:: GetFrameMoveRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframemoverects) devuelve regiones de movimiento, que son rectángulos de píxeles de la imagen de escritorio que el sistema operativo ha movido a otra ubicación dentro de la misma imagen. Cada región de movimiento consta de un rectángulo de destino y un punto de origen. El punto de origen especifica la ubicación desde la que el sistema operativo ha copiado la región y el rectángulo de destino especifica el lugar en el que el sistema operativo ha despasado esa región. Las regiones de movimiento siempre son regiones no estiradas, por lo que el origen siempre tiene el mismo tamaño que el destino.
+-   [**IDXGIOutputDuplication::GetFrameDirtyRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframedirtyrects) devuelve regiones desfasadas, que son rectángulos no superpuestos que indican las áreas de la imagen de escritorio que el sistema operativo actualizó desde que procesó la imagen de escritorio anterior.
+-   [**IDXGIOutputDuplication::GetFrameMoveRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframemoverects) devuelve regiones de movimiento, que son rectángulos de píxeles en la imagen de escritorio que el sistema operativo movió a otra ubicación dentro de la misma imagen. Cada región de movimiento consta de un rectángulo de destino y un punto de origen. El punto de origen especifica la ubicación desde la que el sistema operativo copió la región y el rectángulo de destino especifica dónde se movió el sistema operativo esa región. Las regiones de movimiento siempre son regiones no elásticas, por lo que el origen siempre tiene el mismo tamaño que el destino.
 
-Supongamos que la imagen de escritorio se ha transmitido a través de una conexión lenta a la aplicación cliente remota. La cantidad de datos que se envían a través de la conexión se reduce recibiendo solo datos sobre cómo la aplicación cliente debe trasladar regiones de píxeles en lugar de datos de píxeles reales. Para procesar los movimientos, la aplicación cliente debe haber almacenado la última imagen completa.
+Supongamos que la imagen de escritorio se transmitió a través de una conexión lenta a la aplicación cliente remota. La cantidad de datos que se envían a través de la conexión se reduce al recibir solo datos sobre cómo la aplicación cliente debe mover regiones de píxeles en lugar de datos de píxeles reales. Para procesar los movimientos, la aplicación cliente debe haber almacenado la última imagen completa.
 
-Aunque el sistema operativo acumula actualizaciones de imágenes de escritorio no procesadas, podría quedarse sin espacio para almacenar de forma precisa las regiones de actualización. En esta situación, el sistema operativo comienza a acumular las actualizaciones mediante la combinación de las regiones de actualización existentes para cubrir todas las actualizaciones nuevas. Como resultado, el sistema operativo cubre los píxeles que todavía no se han actualizado en ese marco. Sin embargo, esta situación no genera problemas visuales en la aplicación cliente porque recibe la imagen de escritorio completa y no solo los píxeles actualizados.
+Aunque el sistema operativo acumula actualizaciones de imágenes de escritorio sin procesar, puede que se queme espacio para almacenar con precisión las regiones de actualización. En esta situación, el sistema operativo comienza a acumular las actualizaciones mediante la conjunción de ellas con las regiones de actualización existentes para cubrir todas las actualizaciones nuevas. Como resultado, el sistema operativo cubre píxeles que aún no se han actualizado en ese marco. Pero esta situación no genera problemas visuales en la aplicación cliente porque recibe toda la imagen de escritorio y no solo los píxeles actualizados.
 
-Para reconstruir la imagen de escritorio correcta, la aplicación cliente debe procesar primero todas las regiones de movimiento y, a continuación, procesar todas las regiones desfasadas. Cualquiera de estas listas de regiones desfasadas y de movimiento puede estar completamente vacía. El código de ejemplo del [ejemplo de duplicación de escritorio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) muestra cómo procesar las regiones desfasadas y de movimiento en un solo fotograma:
+Para reconstruir la imagen de escritorio correcta, la aplicación cliente debe procesar primero todas las regiones de movimiento y, a continuación, procesar todas las regiones desapreociadas. Cualquiera de estas listas de regiones desnuciados y de movimiento puede estar completamente vacía. El código de ejemplo del [ejemplo de duplicación de](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) escritorio muestra cómo procesar las regiones desduplicadas y de movimiento en un solo fotograma:
 
 
 ```C++
@@ -164,42 +164,42 @@ HRESULT DUPLICATIONMANAGER::DoneWithFrame()
 
 
 
-## <a name="rotating-the-desktop-image"></a>Girar la imagen de escritorio
+## <a name="rotating-the-desktop-image"></a>Rotación de la imagen de escritorio
 
-Debe agregar código explícito a la aplicación cliente de duplicación de escritorio para admitir modos girados. En un modo girado, la superficie que recibe de [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) siempre está en la orientación no girada y la imagen del escritorio se gira dentro de la superficie. Por ejemplo, si el escritorio se establece en 768x1024 con una rotación de 90 grados, **AcquireNextFrame** devuelve una superficie de 1024x768 con la imagen de escritorio girada dentro de ella. Estos son algunos ejemplos de rotación.
+Debe agregar código explícito a la aplicación cliente de duplicación de escritorio para admitir los modos girados. En un modo girado, la superficie que recibe de [**IDXGIOutputDuplication::AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) siempre está en la orientación sin girar y la imagen de escritorio gira dentro de la superficie. Por ejemplo, si el escritorio está establecido en 768 x 1024 a 90 grados de rotación, **AcquireNextFrame** devuelve una superficie de 1024 x 768 con la imagen de escritorio girada dentro de ella. Estos son algunos ejemplos de rotación.
 
 
 
-| Modo de presentación establecido en Mostrar panel de control | Modo de presentación devuelto por GDI o DXGI | Superficie devuelta por [ **AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe)                |
+| Modo de visualización establecido desde el panel de control de pantalla | Modo de presentación devuelto por GDI o DXGI | Surface devuelta desde [ **AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe)                |
 |---------------------------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|
-| vertical 1024x768                          | rotación de 0 grados 1024x768           | \[nueva línea 1024x768\] ![escritorio remoto no girado](images/dxgi-outdupl-0-rotate.png)<br/>            |
-| 1024x768 vertical                           | rotación de 768x1024 90 grados          | \[nueva línea 1024x768\] ![escritorio remoto girado 90 grados](images/dxgi-outdupl-90-rotate.png)<br/>   |
-| 1024x768 horizontalmente (volteado)                | rotación de grado de 1024x768 180         | \[nueva línea 1024x768\] ![escritorio remoto girado 180 grados](images/dxgi-outdupl-180-rotate.png)<br/> |
-| 1024x768 vertical (volteado)                 | rotación de 768x1024 270 grados         | \[nueva línea 1024x768\] ![escritorio remoto girado 270 grados](images/dxgi-outdupl-270-rotate.png)<br/> |
+| Horizontal de 1024 x 768                          | Rotación de 0 grados de 1024 x 768           | Nueva línea 1024x768 \[\] ![Escritorio remoto no arrobado](images/dxgi-outdupl-0-rotate.png)<br/>            |
+| Vertical de 1024 x 768                           | Rotación de 90 grados de 768x1024          | Nueva línea 1024x768 \[\] ![Escritorio remoto girado a 90 grados](images/dxgi-outdupl-90-rotate.png)<br/>   |
+| Horizontal de 1024 x 768 (volteado)                | Rotación de 180 grados de 1024 x 768         | Nueva línea 1024x768 \[\] ![Escritorio remoto girado a 180 grados](images/dxgi-outdupl-180-rotate.png)<br/> |
+| Vertical de 1024 x 768 (volteado)                 | Rotación de 768x1024 270 grados         | Nueva línea 1024x768 \[\] ![Escritorio remoto girado a 270 grados](images/dxgi-outdupl-270-rotate.png)<br/> |
 
 
 
  
 
-El código de la aplicación cliente de duplicación de escritorio debe girar la imagen de escritorio correctamente antes de mostrar la imagen de escritorio.
+El código de la aplicación cliente de duplicación de escritorio debe rotar la imagen de escritorio correctamente antes de mostrar la imagen de escritorio.
 
 > [!Note]  
-> En escenarios de varios monitores, puede girar la imagen de escritorio de cada monitor de manera independiente.
+> En escenarios de varios monitores, puede rotar la imagen de escritorio de cada monitor de forma independiente.
 
  
 
-## <a name="updating-the-desktop-pointer"></a>Actualizar el puntero de escritorio
+## <a name="updating-the-desktop-pointer"></a>Actualización del puntero de escritorio
 
-Debe usar la API de duplicación de escritorio para determinar si la aplicación cliente debe dibujar la forma del puntero del mouse en la imagen del escritorio. Ya se ha dibujado el puntero del mouse en la imagen de escritorio que [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) proporciona o el puntero del mouse es independiente de la imagen del escritorio. Si el puntero del mouse se dibuja en la imagen del escritorio, los datos de la posición del puntero informados por **AcquireNextFrame** (en el miembro **PointerPosition** de la  [**\_ \_ \_ información de fotogramas de DXGI OUTDUPL**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) al que apunta el parámetro pFrameInfo) indican que un puntero independiente no está visible. Si el adaptador de gráficos superpone el puntero del mouse encima de la imagen del escritorio, **AcquireNextFrame** informa de que hay un puntero independiente visible. Por lo tanto, la aplicación cliente debe dibujar la forma puntero del mouse en la imagen de escritorio para representar con precisión lo que el usuario actual verá en su monitor.
+Debe usar la API de duplicación de escritorio para determinar si la aplicación cliente debe dibujar la forma del puntero del mouse en la imagen de escritorio. El puntero del mouse ya está dibujado en la imagen de escritorio que [**proporciona IDXGIOutputDuplication::AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) o el puntero del mouse es independiente de la imagen de escritorio. Si el puntero del mouse se dibuja en la imagen de escritorio, los datos de posición del puntero notificados por **AcquireNextFrame** (en el miembro **PointerPosition** de [**DXGI \_ OUTDUPL \_ FRAME \_ INFO**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) al que apunta el parámetro *pFrameInfo)* indican que un puntero independiente no está visible. Si el adaptador de gráficos se superpone al puntero del mouse en la parte superior de la imagen de escritorio, **AcquireNextFrame** informa de que hay un puntero independiente visible. Por lo tanto, la aplicación cliente debe dibujar la forma del puntero del mouse en la imagen de escritorio para representar con precisión lo que el usuario actual verá en su monitor.
 
-Para dibujar el puntero del mouse del escritorio, use el miembro **PointerPosition** de la [**\_ \_ \_ información de fotogramas de DXGI OUTDUPL**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) del parámetro *pFrameInfo* de [**AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) para determinar dónde ubicar la esquina superior izquierda del puntero del mouse en la imagen de escritorio. Al dibujar el primer fotograma, debe usar el método [**IDXGIOutputDuplication:: GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) para obtener información sobre la forma del puntero del mouse. Cada llamada a **AcquireNextFrame** para obtener el fotograma siguiente también proporciona la posición actual del puntero para ese marco. Por otro lado, debe volver a usar **GetFramePointerShape** solo si la forma cambia. Por lo tanto, mantenga una copia de la última imagen de puntero y Úsela para dibujar en el escritorio a menos que cambie la forma del puntero del mouse.
+Para dibujar el puntero del mouse del escritorio, use el miembro **PointerPosition** de [**DXGI \_ OUTDUPL \_ FRAME \_ INFO**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) desde el *parámetro pFrameInfo* [**de AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) para determinar dónde buscar la esquina superior izquierda del puntero del mouse en la imagen de escritorio. Al dibujar el primer fotograma, debe usar el método [**IDXGIOutputDuplication::GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) para obtener información sobre la forma del puntero del mouse. Cada llamada a **AcquireNextFrame para** obtener el marco siguiente también proporciona la posición del puntero actual para ese marco. Por otro lado, solo debe usar **GetFramePointerShape** si cambia la forma. Por lo tanto, mantenga una copia de la última imagen de puntero y úsela para dibujarla en el escritorio a menos que cambie la forma del puntero del mouse.
 
 > [!Note]  
-> Junto con la imagen de la forma de puntero, [**GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) proporciona el tamaño de la ubicación de la zona activa. La zona activa solo se proporciona con fines informativos. La ubicación donde se dibuja la imagen del puntero es independiente de la zona activa.
+> Junto con la imagen de forma de puntero, [**GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) proporciona el tamaño de la ubicación del punto de acceso rápido. El punto de acceso se proporciona solo con fines informativos. La ubicación en la que se va a dibujar la imagen de puntero es independiente de la zona activa.
 
  
 
-Este código de ejemplo del [ejemplo de duplicación del escritorio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) muestra cómo obtener la forma del puntero del mouse:
+Este código de ejemplo del ejemplo [de duplicación de escritorio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) muestra cómo obtener la forma del puntero del mouse:
 
 
 ```C++
@@ -293,7 +293,7 @@ HRESULT DUPLICATIONMANAGER::GetMouse(_Out_ PTR_INFO* PtrInfo, _In_ DXGI_OUTDUPL_
 
 <dl> <dt>
 
-[Mejoras en DXGI 1,2](dxgi-1-2-improvements.md)
+[Mejoras de DXGI 1.2](dxgi-1-2-improvements.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Obtiene un valor BOOLEANO.
+description: Obtiene un valor BOOL.
 ms.assetid: 9d61efcd-f267-4c45-b685-d363588796f7
-title: 'ID3DXBaseEffect:: GetBool (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::GetBool (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 0476c62733379a7e92aca55c3cdc2c31a3526de2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 13fa69c8fd20798f683003bd561193a4079ba48c291248f7d4ce6fe1d0fc5fe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118522324"
 ---
-# <a name="id3dxbaseeffectgetbool-method"></a>ID3DXBaseEffect:: GetBool (método)
+# <a name="id3dxbaseeffectgetbool-method"></a>Método ID3DXBaseEffect::GetBool
 
-Obtiene un valor BOOLEANO.
+Obtiene un valor BOOL.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,19 +41,19 @@ HRESULT GetBool(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*PB* \[ enuncia\]
+*pb* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)\***
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)\***
 
 Devuelve un valor booleano.
 
@@ -63,7 +63,7 @@ Devuelve un valor booleano.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

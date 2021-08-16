@@ -4,16 +4,16 @@ ms.assetid: 36282F91-6C14-4943-967B-046DD0FD94DC
 title: Propiedades de IAzApplication
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4086acb6e6ceba0821af7cc117d8598bee731d16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67877d3b364ce52038fc4a6524f9beaa32987fb0201095dbe78514c7cbccc502
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117781660"
 ---
 # <a name="iazapplication-properties"></a>Propiedades de IAzApplication
 
-La interfaz [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) expone las siguientes propiedades.
+La [**interfaz IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -31,9 +31,9 @@ La interfaz [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazappl
 -   [**Propiedad PolicyAdministratorsName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyadministratorsname)
 -   [**Propiedad PolicyReaders**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreaders)
 -   [**Propiedad PolicyReadersName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreadersname)
--   [**Propiedad roles**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_roles)
+-   [**Propiedad Roles**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_roles)
 -   [**Propiedad Scopes**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_scopes)
--   [**Tasks (propiedad)**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_tasks)
+-   [**Propiedad Tasks**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_tasks)
 -   [**Propiedad Version**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_version)
 -   [**Propiedad grabable**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_writable)
 

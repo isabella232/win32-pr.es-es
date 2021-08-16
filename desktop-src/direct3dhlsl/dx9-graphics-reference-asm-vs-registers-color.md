@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 38ee29ebafd9e7374fa868c6d84ad45f6c07dedf
-ms.sourcegitcommit: 3f366316c02c411c4c5e14620a699f6f30608634
+ms.openlocfilehash: b19850985002ad9c36a6a6366f744106cb041db858f9df9b755996e114fdf6c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104361773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512291"
 ---
 # <a name="color-register"></a>Registro de color
 
@@ -29,7 +29,7 @@ Estos registros de salida del sombreador de vértices contienen un valor de colo
 
  
 
-El valor oD0 se interpola y se escribe en el registro de color del sombreador de píxeles 0 (V0). El valor oD1 se interpola y se escribe en el registro de color del sombreador de píxeles 1 (V1). Para obtener más información sobre los registros de color del sombreador de píxeles, vea el tema [registro del color de entrada](dx9-graphics-reference-asm-ps-registers-input-color.md) del sombreador de píxeles.
+El valor de oD0 está interpolado y se escribe en el registro de color del sombreador de píxeles 0 (v0). El valor de oD1 se interpola y se escribe en el registro de color del sombreador de píxeles 1 (v1). Para obtener más información sobre los registros de color del sombreador de píxeles, vea el tema Registro de [color de entrada del](dx9-graphics-reference-asm-ps-registers-input-color.md) sombreador de píxeles.
 
 ## <a name="remarks"></a>Comentarios
 

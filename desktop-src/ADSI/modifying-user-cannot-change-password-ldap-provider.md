@@ -1,72 +1,72 @@
 ---
-title: La modificación del usuario no puede cambiar la contraseña (proveedor LDAP)
-description: La capacidad de un usuario de cambiar su propia contraseña es un permiso que se puede conceder o denegar.
+title: Modificar el usuario no puede cambiar la contraseña (proveedor LDAP)
+description: La capacidad de un usuario para cambiar su propia contraseña es un permiso que se puede conceder o denegar.
 ms.assetid: 9d5c2d6a-9997-4d0c-b896-bf1b578e64ac
 ms.tgt_platform: multiple
 keywords:
 - La modificación del usuario no puede cambiar la contraseña (proveedor LDAP) ADSI
-- El usuario no puede cambiar la contraseña (proveedor LDAP) ADSI, modificar
-- ADSI Provider LDAP, ejemplos de administración de usuarios, el usuario debe cambiar la contraseña en el siguiente inicio de sesión, modificar
+- El usuario no puede cambiar el ADSI de contraseña (proveedor LDAP), modificando
+- ADSI del proveedor LDAP, ejemplos de administración de usuarios, usuario debe cambiar contraseña en el siguiente inicio de sesión, modificar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e1628b113c2f15278bc72e41aa79e4be03a98f2
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: ec664f9a79e0de4ff0b75ae31abd8dc1532cd17c0d3d35a934e094da45eb3383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179023"
 ---
-# <a name="modifying-user-cannot-change-password-ldap-provider"></a>La modificación del usuario no puede cambiar la contraseña (proveedor LDAP)
+# <a name="modifying-user-cannot-change-password-ldap-provider"></a>Modificar el usuario no puede cambiar la contraseña (proveedor LDAP)
 
-La capacidad de un usuario de cambiar su propia contraseña es un permiso que se puede conceder o denegar. Para denegar este permiso, establezca dos entradas ACE en la lista de control de acceso discrecional (DACL) del descriptor de seguridad del objeto de usuario con el tipo de ACE de **\_ \_ objeto de acceso \_ denegado \_ de ADS ACETYPE** . Una ACE deniega el permiso al usuario y otra ACE deniega el permiso al grupo todos. Ambas Ace son ACE de denegación específicas del objeto que especifican el GUID del permiso extendido para cambiar las contraseñas. Para conceder este permiso, establezca las mismas ACE con el tipo de ACE de **\_ \_ \_ \_ objeto permitidos de ADS ACETYPE Access** .
+La capacidad de un usuario para cambiar su propia contraseña es un permiso que se puede conceder o denegar. Para denegar este permiso, establezca dos ACE en la lista de control de acceso discrecional (DACL) del descriptor de seguridad del objeto de usuario con el tipo **\_ ACETYPE \_ ACCESS DENIED \_ \_ OBJECT** ace de ADS. Una ACE deniega el permiso al usuario y otra ACE deniega el permiso al grupo Todos. Ambas ACE son ACE de denegación específicas del objeto que especifican el GUID del permiso extendido para cambiar contraseñas. Para conceder este permiso, establezca las mismas ACE con el tipo **\_ ACETYPE \_ ACCESS ALLOWED \_ \_ OBJECT** ace de ADS.
 
 En el procedimiento siguiente se describe cómo modificar o agregar ACE para este permiso.
 
 **Para modificar o agregar las ACE para este permiso**
 
-1.  Enlazar al objeto de usuario.
-2.  Obtenga el objeto [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) de la propiedad **ntSecurityDescriptor** del objeto de usuario.
-3.  Obtenga una interfaz [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) para el descriptor de seguridad de la propiedad [**IADsSecurityDescriptor. DiscretionaryAcl**](iadssecuritydescriptor-property-methods.md) .
-4.  Enumere las ACE para el objeto y busque las ACE que tengan el GUID de cambio de contraseña ({AB721A53-1E2F-11D0-9819-00AA0040529B}) para la propiedad [**IADsAccessControlEntry. ObjectType**](iadsaccesscontrolentry-property-methods.md) y "everyone" o "NT Authority \\ Self" para la propiedad **IADsAccessControlEntry. Trustee** .
+1.  Enlace al objeto de usuario.
+2.  Obtenga el [**objeto IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) de la **propiedad ntSecurityDescriptor** del objeto de usuario.
+3.  Obtenga una [**interfaz IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) para el descriptor de seguridad de la [**propiedad IADsSecurityDescriptor.DiscretionaryAcl.**](iadssecuritydescriptor-property-methods.md)
+4.  Enumerar las ACE del objeto y buscar las ACE que tienen el GUID de contraseña de cambio ({AB721A53-1E2F-11D0-9819-00AA0040529B}) para la propiedad [**IADsAccessControlEntry.ObjectType**](iadsaccesscontrolentry-property-methods.md) y "Todos" o "NT AUTHORITY SELF" para la propiedad \\ **IADsAccessControlEntry.Trustee.**
 
     > [!Note]  
-    > Las cadenas "todos" y "NT AUTHORITY \\ Self" se localizan en función del idioma del primer controlador de dominio del dominio. Por este motivo, las cadenas no deben usarse directamente. Los nombres de cuenta se deben obtener en tiempo de ejecución mediante una llamada a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con el SID para "todos" ("s-1-1-0") y "NT Authority \\ Self" ("s-1-5-10") entidades de seguridad conocidas. Las funciones de ejemplo **GetSidAccountName**, **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** C++ que se muestran en [lectura de usuarios no pueden cambiar la contraseña (proveedor LDAP)](reading-user-cannot-change-password-ldap-provider.md) demuestran cómo hacerlo.
+    > Las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador \\ de dominio del dominio. Por este problema, las cadenas no se deben usar directamente. Los nombres de cuenta se deben obtener en tiempo de ejecución mediante una llamada a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con el SID para "Todos" ("S-1-1-0") y "NT AUTHORITY \\ SELF" ("S-1-5-10") entidades de seguridad conocidas. Las funciones de ejemplo **GetSidAccountName**, **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** C++ mostradas en Lectura del usuario no se puede cambiar la contraseña [(proveedor LDAP)](reading-user-cannot-change-password-ldap-provider.md) muestran cómo hacerlo.
 
-     
+     
 
-5.  Modifique la propiedad [**IADsAccessControlEntry. AceType**](iadsaccesscontrolentry-property-methods.md) de las ACE encontradas a **ADS AceType el \_ \_ objeto de acceso \_ denegado \_** si el usuario no puede cambiar su contraseña o **ADS \_ AceType \_ acceso \_ permitido \_** si el usuario puede cambiar la contraseña.
-6.  Si no se encuentra la ACE "everyone", cree un nuevo objeto [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) que contenga los valores de propiedad que se muestran en la tabla siguiente y agregue la nueva entrada a la ACL con el método [**IADsAccessControlList. AddAce**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-addace) .
-7.  Si \\ no se encuentra la ACE "NT Authority Self", cree un nuevo objeto [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) con los mismos valores de propiedad que se muestran en la tabla siguiente, excepto que la propiedad [**Trustee**](iadsaccesscontrolentry-property-methods.md) contiene el nombre de cuenta del SID "S-1-5-10" ("NT Authority \\ Self"). Agregue la entrada a la ACL con el método [**IADsAccessControlList. AddAce**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-addace) .
-8.  Para actualizar la propiedad **ntSecurityDescriptor** del objeto, llame al método [**IADs. put**](/windows/desktop/api/Iads/nf-iads-iads-put) con el mismo [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) obtenido en el paso 2.
-9.  Confirme los cambios locales en el servidor con el método [**IADs. SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) .
-10. Si se creó alguna de las ACE, debe reordenar la ACL para que las ACE estén en el orden correcto. Para ello, llame a la función [**GetNamedSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-getnamedsecurityinfoa) con la ADsPath LDAP del objeto y, a continuación, la función [**SetNamedSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-setnamedsecurityinfoa) con la misma DACL. Esta reordenación se realizará automáticamente cuando se agreguen las ACE.
+5.  Modifique la propiedad [**IADsAccessControlEntry.AceType**](iadsaccesscontrolentry-property-methods.md) de las ACE que se encontraron en **ADS \_ ACETYPE \_ ACCESS DENIED \_ \_ OBJECT** si el usuario no puede cambiar su contraseña o **ADS \_ ACETYPE ACCESS ALLOWED \_ \_ \_ OBJECT** si el usuario puede cambiar su contraseña.
+6.  Si no se encuentra la ACE "Todos", cree un nuevo objeto [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) que contenga los valores de propiedad que se muestran en la tabla siguiente y agregue la nueva entrada a la ACL con el método [**IADsAccessControlList.AddAce.**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-addace)
+7.  Si no se encuentra la ACE "NT AUTHORITY SELF", cree un nuevo objeto IADsAccessControlEntry con los mismos valores de propiedad que se muestran en la tabla siguiente, excepto que la propiedad Trustee contiene el nombre de cuenta del \\ SID "S-1-5-10" ("NT AUTHORITY [](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) [](iadsaccesscontrolentry-property-methods.md) \\ SELF"). Agregue la entrada a la ACL con [**el método IADsAccessControlList.AddAce.**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-addace)
+8.  Para actualizar la propiedad **ntSecurityDescriptor** del objeto , llame al método [**IADs.Put**](/windows/desktop/api/Iads/nf-iads-iads-put) con el mismo [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) obtenido en el paso 2.
+9.  Confirme los cambios locales en el servidor con [**el método IADs.SetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-setinfo)
+10. Si se creó cualquiera de las ACE, debe reordenar la ACL para que las ACE estén en el orden correcto. Para ello, llame a la función [**GetNamedSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-getnamedsecurityinfoa) con ldap ADsPath del objeto y, a continuación, a la función [**SetNamedSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-setnamedsecurityinfoa) con la misma DACL. Esta reordenación se producirá automáticamente cuando se agregan las ACE.
 
-En la tabla siguiente se enumeran los valores de propiedad del objeto [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) .
+En la tabla siguiente se enumeran los valores de propiedad del objeto [**IADsAccessControlEntry.**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)
 
 
 
-| Propiedad IADsAccessControlEntry                                        | Value                                                                                                                                                                 |
+| Propiedad IADsAccessControlEntry                                        | Valor                                                                                                                                                                 |
 |------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AccessMask**](iadsaccesscontrolentry-property-methods.md)          | **\_acceso de \_ \_ control DS derecho de \_ ADS**                                                                                                                                   |
-| [**AceType**](iadsaccesscontrolentry-property-methods.md)             | **Anuncios \_ de ACETYPE \_ acceso \_ denegado a un \_ objeto** si el usuario no puede cambiar su contraseña o el **\_ \_ \_ \_ objeto ACETYPE permitido de acceso a ADS** si el usuario puede cambiar su contraseña. |
+| [**Máscara de acceso**](iadsaccesscontrolentry-property-methods.md)          | **ADS \_ RIGHT \_ DS \_ CONTROL \_ ACCESS**                                                                                                                                   |
+| [**AceType**](iadsaccesscontrolentry-property-methods.md)             | **ADS \_ ACETYPE \_ ACCESS \_ DENIED \_ OBJECT** si el usuario no puede cambiar su contraseña o **ADS \_ ACETYPE ACCESS ALLOWED \_ \_ \_ OBJECT** si el usuario puede cambiar su contraseña. |
 | [**AceFlags**](iadsaccesscontrolentry-property-methods.md)            | 0                                                                                                                                                                     |
-| [**Marcas**](iadsaccesscontrolentry-property-methods.md)               | **\_tipo de objeto de marca ADS \_ \_ \_ presente**                                                                                                                                  |
-| [**ObjectType**](iadsaccesscontrolentry-property-methods.md)          | "{AB721A53-1E2F-11D0-9819-00AA0040529B}", que es el GUID de cambio de contraseña en forma de cadena.                                                                            |
+| [**Banderas**](iadsaccesscontrolentry-property-methods.md)               | **ADS \_ FLAG \_ OBJECT \_ TYPE \_ PRESENT**                                                                                                                                  |
+| [**ObjectType**](iadsaccesscontrolentry-property-methods.md)          | "{AB721A53-1E2F-11D0-9819-00AA0040529B}", que es el GUID de contraseña de cambio en forma de cadena.                                                                            |
 | [**InheritedObjectType**](iadsaccesscontrolentry-property-methods.md) | No se usa                                                                                                                                                              |
-| [**Confianza**](iadsaccesscontrolentry-property-methods.md)             | Nombre de cuenta del SID "S-1-1-0" (todos).                                                                                                                            |
+| [**Fideicomisario**](iadsaccesscontrolentry-property-methods.md)             | Nombre de cuenta del SID "S-1-1-0" (Todos).                                                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="example-code"></a>Código de ejemplo
 
-En el ejemplo de código siguiente se muestra cómo obtener una interfaz para cambiar una DACL. La interfaz [**IADsObjectOptions**](/windows/desktop/api/Iads/nn-iads-iadsobjectoptions) se puede usar si se establece la opción DACL de información de seguridad de **ADS \_ \_ \_** .
+En el ejemplo de código siguiente se muestra cómo obtener una interfaz para cambiar una DACL. La [**interfaz IADsObjectOptions**](/windows/desktop/api/Iads/nn-iads-iadsobjectoptions) se puede usar estableciendo la opción **ADS SECURITY INFO \_ \_ \_ DACL.**
 
 > [!Note]  
-> Para usar el código documentado en este ejemplo, debe ser administrador. Si no es administrador, tendrá que agregar más código que utilizará una interfaz que permitirá a un usuario cambiar la manera en que la memoria caché del lado cliente se vacía de nuevo en el servicio de Dominio de Active Directory.
+> Para usar el código documentado en este ejemplo, debe ser administrador. Si no es administrador, deberá agregar más código que usará una interfaz que permitirá a un usuario cambiar la forma en que la caché del lado cliente se vacía de nuevo en el servicio Dominio de Active Directory.
 
- 
+ 
 
 
 ```C++
@@ -106,9 +106,9 @@ if(SUCCEEDED(hr))
 
 
 
-En el ejemplo de código siguiente se muestra cómo modificar el permiso el usuario no puede cambiar la contraseña mediante el proveedor LDAP. En este ejemplo de código se usa la función de utilidad **GetObjectACE** definida anteriormente.
+En el ejemplo de código siguiente se muestra cómo modificar el permiso User Cannot Change Password mediante el proveedor LDAP. En este ejemplo de código se usa la función de utilidad **GetObjectACE** definida anteriormente.
 
-En este ejemplo se usan las funciones de ejemplo **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** C++ que se muestran en [leer el usuario no puede cambiar la contraseña (proveedor LDAP)](reading-user-cannot-change-password-ldap-provider.md).
+En este ejemplo se usan las funciones de ejemplo **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** C++ que se muestran en Lectura del usuario no se puede cambiar la contraseña [(proveedor LDAP).](reading-user-cannot-change-password-ldap-provider.md)
 
 
 ```C++
@@ -417,12 +417,12 @@ HRESULT SetUserCannotChangePassword(LPCWSTR pwszUserDN,
 
 
 
-En el ejemplo de código siguiente se muestra cómo modificar el permiso el usuario no puede cambiar la contraseña mediante el proveedor LDAP.
+En el ejemplo de código siguiente se muestra cómo modificar el permiso User Cannot Change Password mediante el proveedor LDAP.
 
 > [!Note]  
-> El siguiente ejemplo solo funcionará en los dominios en los que el idioma principal sea el inglés, ya que las cadenas "todos" y "NT AUTHORITY \\ Self" se localizan en función del idioma del primer controlador de dominio del dominio. No hay ninguna manera de Visual Basic para obtener los nombres de cuenta de una entidad de seguridad conocida sin llamar a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) . Si usa Visual Basic, se recomienda que use el proveedor de WinNT para modificar el permiso el usuario no puede cambiar la contraseña, tal como se muestra en [modificación de usuario no puede cambiar la contraseña (proveedor de WinNT)](modifying-user-cannot-change-password-winnt-provider.md).
+> El ejemplo siguiente solo funcionará en dominios en los que el idioma principal sea inglés porque las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador de dominio del \\ dominio. No hay ninguna manera de Visual Basic los nombres de cuenta de una entidad de seguridad conocida sin llamar a la [**función LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Si usa Visual Basic, se recomienda usar el proveedor winNT para modificar el permiso Usuario no se puede cambiar la contraseña como se muestra en Modificar el usuario no se puede cambiar la contraseña [(proveedor winNT).](modifying-user-cannot-change-password-winnt-provider.md)
 
- 
+ 
 
 
 ```VB
@@ -507,6 +507,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

@@ -3,17 +3,17 @@ title: Asignación de metadatos
 description: El contenido de un documento de metadatos se asigna a la API de metadatos de las maneras que se explican en las secciones siguientes.
 ms.assetid: 266f8319-b7ac-497f-8eb7-8e2c7bcede33
 keywords:
-- Servicios Web de asignación de metadatos para Windows
+- Servicios web de asignación de metadatos para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb9da067768569e78ba6bb98ee219e11917d3201
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 57e6577e05f1d51ec13cc917465c306b94c403827149b086f252a38964997ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105695806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841495"
 ---
 # <a name="metadata-mapping"></a>Asignación de metadatos
 
@@ -40,13 +40,13 @@ wst10  => http://schemas.xmlsoap.org/ws/2005/02/trust
 wsi    => http://schemas.xmlsoap.org/ws/2005/05/identity
 ```
 
-En las secciones siguientes se describen las construcciones de API junto con qué construcciones de metadatos (WSDL o Directiva) corresponden.
+En las secciones siguientes se describen las construcciones de API junto con las construcciones de metadatos (WSDL o Directiva) a las que se corresponden.
 
-Familiarizarse con las especificaciones de metadatos, como WSDL y Policy, ayudará a comprender esta sección.
+La familiaridad con las especificaciones de metadatos, como WSDL y Policy, ayudará a comprender esta sección.
 
-## <a name="endpoint-address"></a>Dirección del extremo
+## <a name="endpoint-address"></a>Dirección del punto de conexión
 
-La dirección de un punto de conexión (vea [**\_ \_ dirección del punto de conexión de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address)) se obtiene de un elemento de extensibilidad dentro del elemento wsdl: Port del documento WSDL. Se admiten los siguientes elementos de extensibilidad para especificar la dirección:
+La dirección de un punto de conexión (vea DIRECCIÓN DEL PUNTO DE CONEXIÓN de [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address)) se obtiene de un elemento de extensibilidad dentro del elemento wsdl:port del documento WSDL. Se admiten los siguientes elementos de extensibilidad para especificar la dirección :
 
 ``` syntax
 <wsdl:port...>
@@ -72,9 +72,9 @@ La dirección de un punto de conexión (vea [**\_ \_ dirección del punto de con
 </wsdl:port>
 ```
 
-## <a name="ws_channel_binding"></a>\_enlace de canal de WS \_
+## <a name="ws_channel_binding"></a>ENLACE DE \_ CANAL WS \_
 
-El enlace de canal (consulte [**WS \_ Channel \_ Binding**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_binding)) viene determinado por el transporte que se usa en el enlace SOAP, como se indica a continuación:
+El enlace de canal (vea [**WS \_ CHANNEL \_ BINDING**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_binding)) viene determinado por el transporte que usa el enlace soap, como se muestra a continuación:
 
 ``` syntax
 <soap:binding transport=&quot;http://schemas.microsoft.com/soap/tcp&quot;/> => WS_TCP_CHANNEL_BINDING
@@ -84,9 +84,9 @@ El enlace de canal (consulte [**WS \_ Channel \_ Binding**](/windows/desktop/api
 <soap:binding transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/> => WS_HTTP_CHANNEL_BINDING
 ```
 
-## <a name="ws_channel_property_envelope_version"></a>\_versión de \_ sobre de propiedades de canal de WS \_ \_
+## <a name="ws_channel_property_envelope_version"></a>VERSIÓN DEL SOBRE \_ \_ DE PROPIEDAD DEL \_ CANAL \_ WS
 
-La versión de sobre (vea la versión de sobre de propiedad de canal de WS) viene determinada por el enlace SOAP que se utiliza, como se indica a continuación: [**\_ \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_property_id)
+La versión del sobre (vea [**WS \_ CHANNEL PROPERTY ENVELOPE \_ \_ \_ VERSION**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_property_id)) viene determinada por el enlace soap que se usa, como se muestra a continuación:
 
 ``` syntax
 <wsdl:binding...>
@@ -102,7 +102,7 @@ La versión de sobre (vea la versión de sobre de propiedad de canal de WS) vien
 
 ## <a name="addressing-version"></a>Versión de direccionamiento
 
-La versión de direccionamiento (vea [**WS \_ Channel \_ Property \_ Addressing \_ version**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_property_id)) viene determinada por las siguientes aserciones en la Directiva de punto de conexión:
+La versión de direccionamiento (consulte [**WS \_ CHANNEL PROPERTY \_ \_ ADDRESSING \_ VERSION**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_property_id)) viene determinada por las aserciones siguientes en la directiva de punto de conexión:
 
 ``` syntax
 <wsp:Policy...>
@@ -116,11 +116,11 @@ La versión de direccionamiento (vea [**WS \_ Channel \_ Property \_ Addressing 
 </wsp:Policy>
 ```
 
-Si no hay ninguna aserción de direccionamiento, se supone el transporte de la [**versión de WS \_ Addressing \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_addressing_version) .
+Si no hay ninguna aserción de direccionamiento, se supone [**que WS \_ ADDRESSING \_ VERSION \_ TRANSPORT.**](/windows/desktop/api/WebServices/ne-webservices-ws_addressing_version)
 
 ## <a name="message-encoding"></a>Codificación de mensajes
 
-La codificación del mensaje (consulte codificación de [**\_ propiedades de \_ \_ canal de WS**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_property_id)) viene determinada por las siguientes aserciones de la Directiva de extremo:
+La codificación del mensaje (vea [**WS \_ CHANNEL PROPERTY \_ \_ ENCODING**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_property_id)) viene determinada por las aserciones siguientes en la directiva de punto de conexión:
 
 ``` syntax
 <wsp:Policy...>
@@ -128,7 +128,7 @@ La codificación del mensaje (consulte codificación de [**\_ propiedades de \_ 
 </wsp:Policy>
 ```
 
-Tenga en cuenta que la aserción de directiva de codificación binaria no incluye información sobre si la codificación binaria es con sesión o sin sesión. Esto viene determinado por la restricción de propiedad de codificación (que debe ser adecuada según si el [**\_ \_ tipo de canal de WS**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_type) que se está usando es o no con sesión).
+Tenga en cuenta que la aserción de la directiva de codificación binaria no incluye información sobre si la codificación binaria tiene sesión o no tiene sesión. Esto viene determinado por la restricción de propiedad de codificación (que debe ser adecuada en función de si el tipo de canal de [**WS \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_type) que se usa tiene sesión o no).
 
 ``` syntax
 <wsp:Policy...>
@@ -136,15 +136,15 @@ Tenga en cuenta que la aserción de directiva de codificación binaria no incluy
 </wsp:Policy>
 ```
 
-Si ninguna de las aserciones anteriores está presente, se usa una codificación de texto: [**WS \_ codificación \_ XML \_ UTF8**](/windows/desktop/api/WebServices/ne-webservices-ws_encoding), **WS \_ codificación \_ XML \_ UTF16LE**, **WS \_ codificación \_ XML \_ UTF16BE**.
+Si no hay ninguna de las aserciones anteriores, se usa una codificación de texto: [**WS \_ ENCODING XML \_ \_ UTF8,**](/windows/desktop/api/WebServices/ne-webservices-ws_encoding) **WS ENCODING XML \_ \_ \_ UTF16LE,** **WS ENCODING XML \_ \_ \_ UTF16BE**.
 
-Tenga en cuenta que la Directiva no incluye información sobre el juego de caracteres para MTOM o codificaciones de texto (ya sea UTF8, UTF16LE o UTF16BE). El valor del juego de caracteres real utilizado está determinado por la restricción de la propiedad de codificación.
+Tenga en cuenta que la directiva no incluye información sobre el juego de caracteres para MTOM o codificaciones de texto (ya sea UTF8, UTF16LE o UTF16BE). El valor real del juego de caracteres utilizado viene determinado por la restricción de propiedad de codificación.
 
 ## <a name="constraints-with-http-header-authentication"></a>Restricciones con autenticación de encabezado HTTP
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de la restricción de enlace de seguridad de [**\_ \_ autenticación del encabezado \_ \_ \_ \_ http WS**](/windows/desktop/api/WebServices/ns-webservices-ws_http_header_auth_security_binding_constraint) .
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**WS \_ HTTP HEADER \_ \_ AUTH SECURITY BINDING \_ \_ \_ CONSTRAINT.**](/windows/desktop/api/WebServices/ns-webservices-ws_http_header_auth_security_binding_constraint)
 
-Este enlace de seguridad se indica en la Directiva mediante aserciones diferentes que indica que se debe usar la autenticación de encabezado HTTP y que se debe usar un esquema de autenticación determinado. Las aserciones de Directiva se corresponden con los valores del [**\_ esquema de \_ \_ autenticación de \_ \_ encabezado HTTP \_ \_ de la propiedad de enlace WS Security**](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_property_id) como se indica a continuación:
+Este enlace de seguridad se indica en la directiva mediante distintas aserciones que indican que se debe usar la autenticación de encabezado HTTP y que se debe usar un esquema de autenticación determinado. Las aserciones de directiva corresponden a los valores de [**WS \_ SECURITY BINDING PROPERTY HTTP HEADER \_ \_ \_ \_ \_ AUTH \_ SCHEME**](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_property_id) como se muestra a continuación:
 
 ``` syntax
 <wsp:Policy...>
@@ -170,9 +170,9 @@ Este enlace de seguridad se indica en la Directiva mediante aserciones diferente
 </wsp:Policy>
 ```
 
-## <a name="constraints-with-sll-transport-security"></a>Restricciones con seguridad de transporte de SSL
+## <a name="constraints-with-sll-transport-security"></a>Restricciones con seguridad de transporte de SLL
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de la [**restricción de enlace de \_ seguridad de \_ transporte \_ \_ \_ WS SSL**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding_constraint) . En este caso, se usan las siguientes aserciones de directiva:
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**WS \_ SSL TRANSPORT SECURITY BINDING \_ \_ \_ \_ CONSTRAINT.**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding_constraint) En este caso, se usan las aserciones de directiva siguientes:
 
 ``` syntax
 <wsp:Policy...>
@@ -187,9 +187,9 @@ Esta sección se aplica cuando se especifica la restricción de enlace de seguri
 </wsp:Policy>
 ```
 
-## <a name="constraints-with-sspi-transport-security"></a>Restricciones con seguridad de transporte SSPI
+## <a name="constraints-with-sspi-transport-security"></a>Restricciones con seguridad de transporte de SSPI
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de la restricción de enlace de seguridad de [**\_ \_ \_ \_ \_ \_ transporte SSPI de WS TCP**](/windows/desktop/api/WebServices/ns-webservices-ws_tcp_sspi_transport_security_binding_constraint) . En este caso, se usan las siguientes aserciones de directiva:
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**TRANSPORT BINDING \_ \_ \_ \_ \_ \_ CONSTRAINT de WS TCP SSPI.**](/windows/desktop/api/WebServices/ns-webservices-ws_tcp_sspi_transport_security_binding_constraint) En este caso, se usan las aserciones de directiva siguientes:
 
 ``` syntax
 <wsp:Policy...>
@@ -206,15 +206,15 @@ Esta sección se aplica cuando se especifica la restricción de enlace de seguri
 
 ## <a name="constrains-with-transport-security"></a>Restricciones con seguridad de transporte
 
-Se puede especificar la restricción de propiedad de [**nivel de protección de transporte de propiedades de WS \_ Security \_ \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id) si se especifica cualquiera de las restricciones de enlace de seguridad:
+La [**restricción de propiedad WS SECURITY PROPERTY TRANSPORT PROTECTION \_ \_ \_ \_ \_ LEVEL**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id) se puede especificar si se especifica alguna de las restricciones de enlace de seguridad:
 
--   [**\_restricción de \_ \_ enlace de seguridad de transporte SSL \_ de \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE TRANSPORTE SSL \_ \_ \_ DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding_constraint)
 
-    El valor de la Directiva siempre es el [**\_ nivel de protección WS y el \_ \_ \_ \_ cifrado**](/windows/desktop/api/WebServices/ne-webservices-ws_protection_level).
+    El valor de la directiva siempre es [**WS \_ PROTECTION LEVEL SIGN AND \_ \_ \_ \_ ENCRYPT**](/windows/desktop/api/WebServices/ne-webservices-ws_protection_level).
 
--   [**\_restricción de \_ \_ enlace de seguridad de transporte SSPI \_ \_ de WS TCP \_**](/windows/desktop/api/WebServices/ns-webservices-ws_tcp_sspi_transport_security_binding_constraint)
+-   [**RESTRICCIÓN DE ENLACE DE SEGURIDAD DE TRANSPORTE DE WS \_ TCP \_ SSPI \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_tcp_sspi_transport_security_binding_constraint)
 
-    El valor de la Directiva se especifica como parte de la aserción WindowsTransportSecurity, como se indica a continuación:
+    El valor de la directiva se especifica como parte de la aserción de WindowsTransportSecurity, como se indica a continuación:
 
     ``` syntax
     <netf:WindowsTransportSecurity...>None</netf:WindowsTransportSecurity> => WS_PROTECTION_LEVEL_NONE
@@ -228,13 +228,13 @@ Se puede especificar la restricción de propiedad de [**nivel de protección de 
     <netf:WindowsTransportSecurity...>EncryptAndSign</netf:WindowsTransportSecurity> => WS_PROTECTION_LEVEL_SIGN_AND_ENCRYPT
     ```
 
--   [**\_restricción de \_ \_ enlace de seguridad de autenticación de encabezado \_ http \_ de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_http_header_auth_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE \_ \_ AUTH DEL \_ ENCABEZADO \_ \_ HTTP WS**](/windows/desktop/api/WebServices/ns-webservices-ws_http_header_auth_security_binding_constraint)
 
-    El valor de la Directiva siempre es el [**\_ \_ nivel \_ de protección WS**](/windows/desktop/api/WebServices/ne-webservices-ws_protection_level).
+    El valor de la directiva siempre es [**WS \_ PROTECTION LEVEL \_ \_ NONE**](/windows/desktop/api/WebServices/ne-webservices-ws_protection_level).
 
-## <a name="constraints-with-kerberos-apreq-security-binding"></a>Restricciones con el enlace de seguridad de Kerberos APREQ
+## <a name="constraints-with-kerberos-apreq-security-binding"></a>Restricciones con el enlace de seguridad APREQ de Kerberos
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de la restricción de enlace de seguridad de [**\_ mensajes WS Kerberos \_ APREQ \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding_constraint) . En este caso, se usan las siguientes aserciones de directiva:
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**MESSAGE BINDING CONSTRAINT de WS \_ KERBEROS \_ APREQ. \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding_constraint) En este caso, se usan las aserciones de directiva siguientes:
 
 ``` syntax
 <sp:EndorsingSupportingTokens...>
@@ -246,9 +246,9 @@ Esta sección se aplica cuando se especifica la restricción de enlace de seguri
 </sp:EndorsingSupportingTokens>
 ```
 
-## <a name="constraints-with-message-security-binding"></a>Restricciones con el enlace de seguridad de mensajes
+## <a name="constraints-with-message-security-binding"></a>Restricciones con enlace de seguridad de mensajes
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de la restricción de enlace de seguridad de [**mensajes de WS \_ username \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding_constraint) . En este caso, se usan las siguientes aserciones de directiva:
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**WS \_ USERNAME MESSAGE SECURITY BINDING \_ \_ \_ \_ CONSTRAINT.**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding_constraint) En este caso, se usan las aserciones de directiva siguientes:
 
 ``` syntax
 <sp:SignedSupportingTokens>
@@ -258,9 +258,9 @@ Esta sección se aplica cuando se especifica la restricción de enlace de seguri
 </sp:SignedSupportingTokens>
 ```
 
-## <a name="ws_cert_message_security_binding_constraint"></a>\_restricción de \_ enlace de seguridad de mensajes de certificado WS \_ \_ \_
+## <a name="ws_cert_message_security_binding_constraint"></a>RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE \_ \_ \_ \_ CERTIFICADO WS
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de la restricción de enlace de seguridad de [**\_ \_ mensajes \_ \_ \_ WS CERT**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_message_security_binding_constraint) . En este caso, se usan las siguientes aserciones de directiva:
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**WS \_ CERT MESSAGE SECURITY BINDING \_ \_ \_ \_ CONSTRAINT.**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_message_security_binding_constraint) En este caso, se usan las aserciones de directiva siguientes:
 
 ``` syntax
 <sp:EndorsingSupportingTokens>
@@ -270,9 +270,9 @@ Esta sección se aplica cuando se especifica la restricción de enlace de seguri
 </sp:EndorsingSupportingTokens>
 ```
 
-## <a name="ws_issued_token_message_security_binding_constraint"></a>\_restricción de \_ \_ enlace de seguridad de mensaje de token \_ emitido \_ de WS \_
+## <a name="ws_issued_token_message_security_binding_constraint"></a>RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE TOKEN \_ \_ \_ \_ \_ EMITIDOS POR WS
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de la restricción de enlace de seguridad de [**\_ \_ mensaje de token \_ \_ \_ \_ emitido de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint) . En este caso, se usan las siguientes aserciones de directiva:
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**WS \_ ISSUED \_ TOKEN MESSAGE \_ SECURITY \_ \_ \_ CONSTRAINT.**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint) En este caso, se usan las aserciones de directiva siguientes:
 
 ``` syntax
 <sp:EndorsingSupportingTokens...>
@@ -296,17 +296,17 @@ Esta sección se aplica cuando se especifica la restricción de enlace de seguri
 </sp:EndorsingSupportingTokens>
 ```
 
-A continuación se describe la asignación de campos de [**la \_ \_ restricción de \_ \_ enlace de \_ \_ seguridad de mensaje de token emitido de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint) a la directiva anterior:
+A continuación se describe la asignación de campos de la RESTRICCIÓN DE ENLACE DE SEGURIDAD DE MENSAJES DE TOKEN EMITIDOS por [**WS \_ \_ \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint) a la directiva anterior:
 
--   El campo claimConstraints se usa para comprobar el conjunto de identificadores URI de tipo de demanda que aparecen en el elemento WSI: ClaimType anterior.
+-   El campo claimConstraints se usa para comprobar el conjunto de URI de tipo de notificación que aparecen en el elemento wsi:ClaimType anterior.
 
--   El campo issuerAddress se corresponde con el elemento WSP: issuer anterior, que es [**la \_ \_ dirección del punto de conexión de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address) del servicio que puede emitir el token.
+-   El campo issuerAddress corresponde al elemento wsp:Issuer anterior, que es la dirección DEL PUNTO DE CONEXIÓN de [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address) del servicio que puede emitir el token.
 
--   El campo requestSecurityTokenTemplate se corresponde con los elementos secundarios del elemento WSP: RequestSecurityTokenTemplate.
+-   El campo requestSecurityTokenTemplate corresponde a los elementos secundarios del elemento wsp:RequestSecurityTokenTemplate.
 
-## <a name="ws_security_context_message_security_binding_constraint"></a>\_restricción de \_ \_ enlace de seguridad de mensaje de contexto \_ de \_ WS Security \_
+## <a name="ws_security_context_message_security_binding_constraint"></a>RESTRICCIÓN DE ENLACE DE SEGURIDAD DEL MENSAJE DE CONTEXTO DE SEGURIDAD DE \_ \_ \_ \_ \_ \_ WS
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de restricción de enlace de seguridad de [**mensaje de contexto de WS \_ \_ \_ \_ \_ \_ Security**](/windows/desktop/api/WebServices/ns-webservices-ws_security_context_message_security_binding_constraint) . En este caso, se usan las siguientes aserciones de directiva:
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**WS \_ SECURITY CONTEXT MESSAGE SECURITY BINDING \_ \_ \_ \_ \_ CONSTRAINT.**](/windows/desktop/api/WebServices/ns-webservices-ws_security_context_message_security_binding_constraint) En este caso, se usan las aserciones de directiva siguientes:
 
 ``` syntax
 <sp:EndorsingSupportingTokens...>
@@ -326,11 +326,11 @@ Esta sección se aplica cuando se especifica la restricción de enlace de seguri
 </sp:EndorsingSupportingTokens>
 ```
 
-El modo de entropía viene determinado por la aserción <SP: Trust10>. <SP: RequireClientEntropy/> y <SP: RequireServerEntropy/> => [**\_ modo de entropía de clave de seguridad ws \_ \_ \_ \_ combinado**](/windows/desktop/api/WebServices/ne-webservices-ws_security_key_entropy_mode) <SP: RequireClientEntropy/> => el **modo de entropía de clave de seguridad de WS \_ \_ \_ \_ \_ \_ solo** <SP: RequireServerEntropy/> => **WS \_ Security \_ \_ \_ \_ \_ solo servidor de modo de entropía de clave**
+El modo de entropía viene determinado por la <sp:Trust10> aserción. <sp:RequireClientEntropy/> y <sp:RequireServerEntropy/> => [**WS \_ SECURITY KEY \_ \_ ENTROPY MODE \_ \_ COMBINED**](/windows/desktop/api/WebServices/ne-webservices-ws_security_key_entropy_mode) <sp:RequireClientEntropy/> => **WS SECURITY KEY \_ \_ \_ ENTROPY \_ MODE \_ CLIENT \_ ONLY** <sp:RequireServerEntropy/> => **WS SECURITY KEY \_ \_ \_ ENTROPY \_ MODE SERVER \_ \_ ONLY**
 
-## <a name="ws_request_security_token_property_trust_version"></a>versión de confianza de la \_ propiedad de token de seguridad de solicitud WS \_ \_ \_ \_ \_
+## <a name="ws_request_security_token_property_trust_version"></a>VERSIÓN DE CONFIANZA DE LA PROPIEDAD DEL TOKEN DE SEGURIDAD DE WS \_ \_ \_ \_ \_ \_ REQUEST
 
-Esta sección se aplica cuando se especifica la restricción de enlace de seguridad de la restricción de enlace de seguridad de [**\_ \_ mensaje de token \_ \_ \_ \_ emitido de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint) . Las aserciones de directiva siguientes se usan para identificar la [**\_ \_ versión de WS Trust**](/windows/desktop/api/WebServices/ne-webservices-ws_trust_version) y las opciones asociadas.
+Esta sección se aplica cuando se especifica la restricción de enlace de seguridad [**WS \_ ISSUED \_ TOKEN MESSAGE \_ SECURITY \_ \_ \_ CONSTRAINT.**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint) Las aserciones de directiva siguientes se usan para identificar la [**versión de WS \_ TRUST \_ y**](/windows/desktop/api/WebServices/ne-webservices-ws_trust_version) las opciones asociadas.
 
 ``` syntax
 <sp:Trust10> => WS_TRUST_VERSION_FEBRUARY_2005
@@ -344,18 +344,18 @@ Esta sección se aplica cuando se especifica la restricción de enlace de seguri
 </sp:Trust10>
 ```
 
-La versión de confianza se puede especificar mediante [**la \_ \_ restricción de \_ \_ propiedad del \_ token de seguridad**](/windows/desktop/api/WebServices/ns-webservices-ws_request_security_token_property_constraint) de la solicitud de WS con un identificador de propiedad de la versión de confianza de la propiedad del token de seguridad de la [**\_ solicitud \_ \_ \_ \_ \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_request_security_token_property_id).
+La versión de confianza se puede especificar mediante [**WS \_ REQUEST SECURITY TOKEN PROPERTY \_ \_ \_ \_ CONSTRAINT**](/windows/desktop/api/WebServices/ns-webservices-ws_request_security_token_property_constraint) con un identificador de propiedad de [**WS REQUEST SECURITY TOKEN \_ PROPERTY TRUST \_ \_ \_ \_ \_ VERSION**](/windows/desktop/api/WebServices/ne-webservices-ws_request_security_token_property_id).
 
-## <a name="ws_security_property_security_header_version"></a>\_versión del \_ \_ encabezado de \_ seguridad \_ de la propiedad WS Security
+## <a name="ws_security_property_security_header_version"></a>VERSIÓN DEL ENCABEZADO \_ DE SEGURIDAD DE LA \_ \_ PROPIEDAD WS \_ SECURITY \_
 
 Esta sección se aplica cuando se usa cualquiera de las siguientes restricciones de enlace:
 
--   [**\_restricción de \_ \_ enlace de \_ seguridad de mensaje \_ \_ WS Kerberos APREQ**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding_constraint)
--   [**\_restricción de \_ enlace de seguridad de mensaje \_ \_ de WS username \_**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding_constraint)
--   [**\_restricción de \_ enlace de seguridad de mensajes de certificado WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_message_security_binding_constraint)
--   [**\_restricción de \_ \_ enlace de seguridad de mensaje de token \_ emitido \_ de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE WS KERBEROS \_ APREQ \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE ENLACE \_ DE SEGURIDAD DE MENSAJES DE NOMBRE DE \_ \_ \_ USUARIO DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE \_ \_ \_ \_ CERTIFICADO WS**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE TOKEN \_ \_ \_ \_ \_ EMITIDOS POR WS**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint)
 
-La versión de seguridad del encabezado (especificada por la versión de encabezado de seguridad de la [**propiedad de WS \_ Security \_ \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id)) se determina mediante una de las siguientes aserciones de directiva:
+La versión de seguridad del encabezado (especificada por [**WS \_ SECURITY PROPERTY SECURITY HEADER \_ \_ \_ \_ VERSION)**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id)viene determinada por una de las aserciones de directiva siguientes:
 
 ``` syntax
 <wsp:Wss10> ... </wsp:Wss10> => WS_SECURITY_HEADER_VERSION_1_0
@@ -365,16 +365,16 @@ La versión de seguridad del encabezado (especificada por la versión de encabez
 <wsp:Wss11> ... </wsp:Wss11> => WS_SECURITY_HEADER_VERSION_1_1
 ```
 
-## <a name="constraints-with-header-security-layout"></a>Restricciones con el diseño de seguridad de encabezado
+## <a name="constraints-with-header-security-layout"></a>Restricciones con diseño de seguridad de encabezado
 
 Esta sección se aplica cuando se usa cualquiera de las siguientes restricciones de enlace:
 
--   [**\_restricción de \_ \_ enlace de \_ seguridad de mensaje \_ \_ WS Kerberos APREQ**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding_constraint)
--   [**\_restricción de \_ enlace de seguridad de mensaje \_ \_ de WS username \_**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding_constraint)
--   [**\_restricción de \_ enlace de seguridad de mensajes de certificado WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_message_security_binding_constraint)
--   [**\_restricción de \_ \_ enlace de seguridad de mensaje de token \_ emitido \_ de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE WS KERBEROS \_ APREQ \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE ENLACE \_ DE SEGURIDAD DE MENSAJES DE NOMBRE DE \_ \_ \_ USUARIO DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE \_ \_ \_ \_ CERTIFICADO WS**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE TOKEN \_ \_ \_ \_ \_ EMITIDOS POR WS**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint)
 
-El diseño del encabezado de seguridad (tal y como se especifica en el diseño del encabezado de seguridad de la [**propiedad de WS \_ Security \_ \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id)) viene determinado por una de las siguientes aserciones de la Directiva:
+El diseño del encabezado de seguridad (especificado por [**WS \_ SECURITY PROPERTY SECURITY HEADER \_ \_ \_ \_ LAYOUT**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id)) viene determinado por una de las aserciones de directiva siguientes:
 
 ``` syntax
 <sp:TransportBinding>
@@ -420,12 +420,12 @@ El diseño del encabezado de seguridad (tal y como se especifica en el diseño d
 
 Esta sección se aplica cuando se usa cualquiera de las siguientes restricciones de enlace:
 
--   [**\_restricción de \_ \_ enlace de \_ seguridad de mensaje \_ \_ WS Kerberos APREQ**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding_constraint)
--   [**\_restricción de \_ enlace de seguridad de mensaje \_ \_ de WS username \_**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding_constraint)
--   [**\_restricción de \_ enlace de seguridad de mensajes de certificado WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_message_security_binding_constraint)
--   [**\_restricción de \_ \_ enlace de seguridad de mensaje de token \_ emitido \_ de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE WS KERBEROS \_ APREQ \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE ENLACE \_ DE SEGURIDAD DE MENSAJES DE NOMBRE DE \_ \_ \_ USUARIO DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE \_ \_ \_ \_ CERTIFICADO WS**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_message_security_binding_constraint)
+-   [**RESTRICCIÓN DE \_ ENLACE DE SEGURIDAD DE MENSAJES DE TOKEN \_ \_ \_ \_ \_ EMITIDOS POR WS**](/windows/desktop/api/WebServices/ns-webservices-ws_issued_token_message_security_binding_constraint)
 
-El hecho de que una marca de tiempo se incluya en el encabezado de seguridad (tal y como se especifica en el uso de la marca de tiempo de la [**propiedad de WS \_ Security \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id)) viene determinada por la presencia de SP: IncludeTimestamp en la siguiente ubicación:
+La presencia de sp:IncludeTimestamp en la ubicación siguiente determina si se incluye o no una marca de tiempo en el encabezado de seguridad (como se especifica en [**WS \_ SECURITY PROPERTY \_ TIMESTAMP \_ \_ USAGE):**](/windows/desktop/api/WebServices/ne-webservices-ws_security_property_id)
 
 ``` syntax
 <sp:TransportBinding>
@@ -435,9 +435,9 @@ El hecho de que una marca de tiempo se incluya en el encabezado de seguridad (ta
 </sp:TransportBinding>
 ```
 
-Si la aserción SP: IncludeTimestamp está presente, el valor de la Directiva es el uso de la marca de tiempo de [**WS \_ Security \_ \_ \_ siempre**](/windows/desktop/api/WebServices/ne-webservices-ws_security_timestamp_usage).
+Si la aserción sp:IncludeTimestamp está presente, el valor de la directiva es [**WS \_ SECURITY TIMESTAMP USAGE \_ \_ \_ ALWAYS**](/windows/desktop/api/WebServices/ne-webservices-ws_security_timestamp_usage).
 
-Si la aserción SP: IncludeTimestamp no está presente, el valor de la Directiva es el uso de la marca de tiempo de [**WS \_ Security \_ \_ \_ nunca**](/windows/desktop/api/WebServices/ne-webservices-ws_security_timestamp_usage).
+Si la aserción sp:IncludeTimestamp no está presente, el valor de la directiva es [**WS \_ SECURITY TIMESTAMP USAGE \_ \_ \_ NEVER**](/windows/desktop/api/WebServices/ne-webservices-ws_security_timestamp_usage).
 
  
 

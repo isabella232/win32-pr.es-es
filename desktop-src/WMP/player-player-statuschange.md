@@ -1,11 +1,11 @@
 ---
-title: Evento Player. StatusChange
-description: El evento StatusChange se produce cuando cambia el valor de la propiedad status. | Evento Player. StatusChange
+title: Player.StatusChange, evento
+description: El evento StatusChange tiene lugar cuando la propiedad status cambia de valor. | Player.StatusChange, evento
 ms.assetid: a457c345-2f24-4f91-a7ff-27025f7bb41d
 keywords:
-- Media Player StatusChange de eventos de Windows
-- Evento StatusChange de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento StatusChange
+- StatusChange event Reproductor de Windows Media
+- StatusChange event Reproductor de Windows Media , Player (Clase)
+- Clase player Reproductor de Windows Media , evento StatusChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c11aaa81c8bfe45c986ba3b3c5dd2524130694e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4643db91003418c8523de31e73c1a4ec8c9f0efa181c16d705ccd4a4db96ff5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118337915"
 ---
-# <a name="playerstatuschange-event"></a>Evento Player. StatusChange
+# <a name="playerstatuschange-event"></a>Player.StatusChange, evento
 
-El evento **StatusChange** se produce cuando cambia el valor de la propiedad **status** .
+El **evento StatusChange** tiene lugar cuando la **propiedad status** cambia de valor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,21 +48,21 @@ Este evento no devuelve un valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Reproductor. estado**](player-status.md)
+[**Player.status**](player-status.md)
 </dt> </dl>
 
  

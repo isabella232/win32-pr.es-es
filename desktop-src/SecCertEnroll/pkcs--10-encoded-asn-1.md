@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una \# solicitud PKCS 10 que se muestra en formato ASN. 1. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud PKCS \# 10 que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf usado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: 5001d641-a121-421a-90bf-f2e6e5f88dc8
-title: '\#ASN de codificación PKCS 10.1'
+title: ASN con codificación PKCS \# 10.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e1699ce6b73fb22a38e74f570f848db70fabf38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21da0b55a9494bde480f00aea9d2b36f1ea0ecc6aebfa47d7d0268a90024c1cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774698"
 ---
-# <a name="pkcs-10-encoded-asn1"></a>\#ASN de codificación PKCS 10.1
+# <a name="pkcs-10-encoded-asn1"></a>ASN con codificación PKCS \# 10.1
 
-El ejemplo siguiente contiene una \# solicitud PKCS 10 que se muestra en formato ASN. 1. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud PKCS \# 10 que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf usado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -24,11 +24,11 @@ RequestType=pkcs10
 CertificateTemplate=User
 ```
 
-Esta configuración genera el siguiente resultado de ejemplo. La configuración especifica el asunto, el tipo de solicitud (PKCS \# 10) y la plantilla de certificado (usuario). La plantilla de usuario especifica que:
+Esta configuración genera la siguiente salida de ejemplo. La configuración especifica el asunto, el tipo de solicitud (PKCS \# 10) y la plantilla de certificado (usuario). La plantilla Usuario especifica que:
 
--   La solicitud debe usar el proveedor de servicios criptográficos de base de Microsoft 1,0 o el proveedor de servicios criptográficos de Microsoft mejorado 1,0.
--   El nombre del firmante se debe crear a partir de Active Directory.
--   La solicitud incluye el nombre de la plantilla de certificado, el uso mejorado de clave (EKU) y las extensiones de uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación del cliente.
+-   La solicitud debe usar el proveedor criptográfico base de Microsoft 1.0 o el proveedor criptográfico mejorado de Microsoft 1.0.
+-   El nombre del sujeto debe crearse a partir Active Directory.
+-   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación de cliente.
 
 ``` syntax
 0000: 30 82 03 19               ; SEQUENCE (319 Bytes)

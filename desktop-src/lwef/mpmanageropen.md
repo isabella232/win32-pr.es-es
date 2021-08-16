@@ -1,9 +1,9 @@
 ---
-title: Función MpManagerOpen (MpClient. h)
+title: Función MpManagerOpen (MpClient.h)
 description: Establece una conexión con el administrador de protección contra malware en el equipo local.
 ms.assetid: 40513A74-AFCC-4E22-9B78-D46FEB575A00
 keywords:
-- Función MpManagerOpen características de entorno heredado de Windows
+- Función MpManagerOpen Características heredadas del Windows entorno
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af432cc7d91530fd3d37176592f7f457b31b6314
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 324d013c46777ac48af32e6c91f557b7feda3a03fbdf0c21a7c79e8cf5e3d9dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883370"
 ---
-# <a name="mpmanageropen-function"></a>MpManagerOpen función)
+# <a name="mpmanageropen-function"></a>Función MpManagerOpen
 
 Establece una conexión con el administrador de protección contra malware en el equipo local.
 
@@ -41,7 +41,7 @@ HRESULT WINAPI MpManagerOpen(
 
 <dl> <dt>
 
-*dwReserved* \[ de\]
+*dwReserved* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -50,12 +50,12 @@ Reservado para uso futuro. Se debe establecer en 0.
 
 </dd> <dt>
 
-*phMpHandle* \[ enuncia\]
+*phMpHandle* \[ out\]
 </dt> <dd>
 
 Tipo: **PMPHANDLE**
 
-Identificador de la interfaz del administrador de protección contra malware. Este identificador debe cerrarse con la función [**MpHandleClose**](mphandleclose.md) .
+Controlar la interfaz del administrador de protección contra malware. Este identificador debe cerrarse con la [**función MpHandleClose.**](mphandleclose.md)
 
 </dd> </dl>
 
@@ -63,24 +63,24 @@ Identificador de la interfaz del administrador de protección contra malware. Es
 
 Tipo: **HRESULT**
 
-Si la función se ejecuta correctamente, el valor devuelto es **S \_ OK**. Se garantiza que esta llamada de función se realiza correctamente aunque no se esté ejecutando un servicio antimalware.
+Si la función se realiza correctamente, el valor devuelto es **S \_ OK**. Se garantiza que esta llamada de función se realiza correctamente aunque no se esté ejecutando un servicio AntiMalware.
 
-Si se produce un error en la función, el valor devuelto es un código **HRESULT** erróneo. El autor de la llamada puede usar la función [**MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
+Si se produce un error en la función, el valor devuelto es un **código HRESULT con** errores. El autor de la llamada puede usar [**la función MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

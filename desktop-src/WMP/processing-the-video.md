@@ -3,27 +3,27 @@ title: Procesamiento del vídeo
 description: Procesamiento del vídeo
 ms.assetid: 2fa337dd-34c0-4a09-8c20-21f6103627dd
 keywords:
-- Complementos de Windows Media Player, DSP de vídeo
+- Reproductor de Windows Media complementos, DSP de vídeo
 - complementos, DSP de vídeo
-- Complementos de procesamiento de señal digital, procesamiento de vídeo
-- Complementos DSP, procesamiento de vídeo
-- Complementos de DSP de vídeo, procesamiento
+- complementos de procesamiento de señales digitales, procesamiento de vídeo
+- Complementos de DSP, procesamiento de vídeo
+- complementos de DSP de vídeo, procesamiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a8d21aaa3999d05ea3628ff341c74379b07a6dd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ea168199270cfe8029b7b9303a7745db2c255f4268252a5bd80472a73c6f2f29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334028"
 ---
 # <a name="processing-the-video"></a>Procesamiento del vídeo
 
-Los detalles del vídeo de procesamiento varían en cada formato. queda fuera del ámbito de esta documentación proporcionar estos detalles. En un sentido general, el objetivo del complemento es cambiar los datos de color en el búfer de entrada y, a continuación, copiar los datos en el búfer de salida.
+Los detalles del procesamiento de vídeo varían para cada formato; está fuera del ámbito de esta documentación para proporcionar estos detalles. En un sentido general, el objetivo del complemento es cambiar los datos de color en el búfer de entrada y, a continuación, copiar los datos en el búfer de salida.
 
 El complemento de ejemplo procesa dos tipos de formatos de vídeo: YUV y RGB.
 
-En el caso de vídeo YUV, la información de color rojo y azul se codifica en los valores de ti y V y el nivel de luminancia se representa mediante el valor Y. el valor verde se codifica y se puede recuperar mediante un algoritmo. El complemento de ejemplo simplemente cambia los valores de ti y V para que afecten al nivel de color. Cada byte U o V tiene un valor entre cero y 255. En primer lugar, el complemento ajusta cada valor para que se represente en un intervalo de-128 a 127 y, a continuación, escala el valor por el factor de escala proporcionado. Por último, el código ajusta el valor de nuevo para el intervalo de cero a 255 original y copia los datos en el búfer de salida. En el código de ejemplo siguiente se procesa el vídeo UYVY. En este formato, cada otro byte es un valor U o Y.
+En el caso del vídeo YUV, la información de color rojo y azul se codifica en los valores you y V y el nivel de luminosidad se representa mediante el valor Y; el valor verde está codificado y se puede recuperar mediante un algoritmo. El complemento de ejemplo simplemente cambia los valores de you y V para que afecten al nivel de color. Cada byte U o V tiene un valor entre cero y 255. El complemento ajusta primero cada valor para que se represente mediante un intervalo de -128 a 127 y, a continuación, escala el valor por el factor de escala proporcionado. Por último, el código vuelve a ajustar el valor para el intervalo de cero a 255 original y copia los datos en el búfer de salida. El código de ejemplo siguiente procesa el vídeo UYVY. En este formato, todos los demás bytes son un valor U o Y.
 
 
 ```C++
@@ -62,7 +62,7 @@ while( dwHeight-- )
 
 
 
-En el vídeo RGB, la información de color y luminancia se codifica como valores de rojo, verde y azul distintos. El complemento de ejemplo calcula el promedio de los tres valores para determinar el valor de Gray y, a continuación, ajusta cada valor de color mediante el factor de escala proporcionado. Una vez más, los valores se deben normalizar para el intervalo de-128 a 127 antes de la escala. El siguiente código de Process32Bit muestra el proceso de RGB32:
+En el caso del vídeo RGB, la información de color y luminosidad se codifica como valores rojos, verdes y azules independientes. El complemento de ejemplo calcula el promedio de los tres valores para determinar el valor del gris y, a continuación, ajusta cada valor de color mediante el factor de escala proporcionado. Una vez más, los valores deben normalizarse para el intervalo de -128 a 127 antes del escalado. El código siguiente de Process32Bit muestra el proceso para RGB32:
 
 
 ```C++
@@ -97,7 +97,7 @@ while( dwHeight-- )
 
 
 
-Para obtener más información acerca de los formatos de vídeo, consulte el [sitio web de FourCC](../directshow/fourcc-codes.md).
+Para más información sobre los formatos de vídeo, consulte el [sitio web de FourCC.](../directshow/fourcc-codes.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -106,6 +106,6 @@ Para obtener más información acerca de los formatos de vídeo, consulte el [si
 [**Implementación de un complemento DSP de vídeo**](implementing-a-video-dsp-plug-in.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

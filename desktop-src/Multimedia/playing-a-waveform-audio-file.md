@@ -1,19 +1,19 @@
 ---
-title: Reproducir un archivo de Waveform-Audio
-description: Reproducir un archivo de Waveform-Audio
+title: Reproducción de un Waveform-Audio archivo
+description: Reproducción de un Waveform-Audio archivo
 ms.assetid: b28ee3e8-1633-4eb8-af1c-d1441ef752e1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb6cd1bf32de7ae9002dc3691d342af360f29455
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1581a891f07a69641338f203fb56ce57f9b3717d6cd52800b907798fce43795d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372665"
 ---
-# <a name="playing-a-waveform-audio-file"></a>Reproducir un archivo de Waveform-Audio
+# <a name="playing-a-waveform-audio-file"></a>Reproducción de un Waveform-Audio archivo
 
-En el ejemplo siguiente se abre un dispositivo de audio de forma de onda y se reproduce el archivo de audio de forma de onda especificado por el parámetro *lpszWAVEFileName* mediante la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .
+En el ejemplo siguiente se abre un dispositivo de audio de forma de onda y se reproduce el archivo de audio de forma de onda especificado por el *parámetro lpszWAVEFileName* mediante la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++
@@ -63,6 +63,6 @@ DWORD playWAVEFile(HWND hWndNotify, LPSTR lpszWAVEFileName)
 
 
 
- 
+ 
 
- 
+ 

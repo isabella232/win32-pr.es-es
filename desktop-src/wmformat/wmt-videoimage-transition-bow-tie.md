@@ -1,9 +1,9 @@
 ---
-title: WMT_VIDEOIMAGE_TRANSITION_BOW_TIE (Wmsdkidl. h)
-description: La transición de lazo revela la nueva imagen en un conjunto de triángulos en lados opuestos del marco.
+title: WMT_VIDEOIMAGE_TRANSITION_BOW_TIE (Wmsdkidl.h)
+description: La transición de la vinculación de arco revela la nueva imagen en un conjunto de triángulos en los lados opuestos del marco.
 ms.assetid: d98da767-eea7-460c-ae5f-6bef9d93ad9d
 keywords:
-- WMT_VIDEOIMAGE_TRANSITION_BOW_TIE formato de Windows Media
+- WMT_VIDEOIMAGE_TRANSITION_BOW_TIE windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd4d426c335a30853085a2501206ccd6e7efc7e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f77cd2782bad6e4f83b5a4d1e719b0c21d704fefd2d4cccacfc0690a4fb0fa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843956"
 ---
-# <a name="wmt_videoimage_transition_bow_tie"></a>\_ \_ vinculación de lazo de transición de imagen WMT \_ \_
+# <a name="wmt_videoimage_transition_bow_tie"></a>VIDEOIMAGE \_ \_ TRANSITION \_ BOW \_ TIE DE WMT
 
-La transición de lazo revela la nueva imagen en un conjunto de triángulos en lados opuestos del marco.
+La transición de la vinculación de arco revela la nueva imagen en un conjunto de triángulos en los lados opuestos del marco.
 
 ## <a name="parameters"></a>Parámetros
 
-En la tabla siguiente se describen los parámetros que se usan en esta transición y se enumeran los miembros de la estructura de [**\_ \_ SAMPLE2 de imágenes WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) en la que se asignan.
+En la tabla siguiente se describen los parámetros utilizados por esta transición y se enumeran los miembros de la estructura [**\_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) de WMT a la que se asignan.
 
 
 
@@ -48,29 +48,29 @@ En la tabla siguiente se describen los parámetros que se usan en esta transici�
 <tr class="odd">
 <td>Ancho</td>
 <td><strong>fEffectPara0</strong></td>
-<td>Ancho de cada lado triangular del empate.</td>
+<td>Ancho de cada lado triangular del arco.</td>
 </tr>
 <tr class="even">
 <td>Alto</td>
 <td><strong>fEffectPara1</strong></td>
-<td>Alto de cada lado triangular del empate.</td>
+<td>Alto de cada lado triangular del arco.</td>
 </tr>
 <tr class="odd">
 <td>Dirección</td>
 <td><strong>fEffectPara2</strong></td>
-<td>Establezca en uno de los valores siguientes:
+<td>Establezca en uno de los siguientes valores:
 <ul>
-<li>0: especifica el efecto de empate horizontal, en el que los triángulos entran en los lados derecho e izquierdo del marco.</li>
-<li>1: especifica el efecto de empate vertical, en el que los triángulos entran en la parte superior e inferior del marco.</li>
+<li>0 : especifica el efecto de atado de arco horizontal, en el que los triángulos entran desde los lados derecho e izquierdo del marco.</li>
+<li>1 - Especifica el efecto de atados verticales, en el que los triángulos entran desde la parte superior e inferior del marco.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Composición</td>
 <td><strong>fEffectPara3</strong></td>
-<td>Establezca en uno de los valores siguientes:
+<td>Establezca en uno de los siguientes valores:
 <ul>
-<li>0: especifica una composición normal, en la que la imagen anterior es el fondo y la imagen actual es el primer plano.</li>
-<li>1: especifica una composición invertida, en la que la imagen actual es la imagen de fondo y la imagen anterior es el primer plano.</li>
+<li>0: especifica la composición normal, en la que la imagen anterior es el fondo y la imagen actual es el primer plano.</li>
+<li>1 - Especifica la composición invertida, en la que la imagen actual es la imagen de fondo, y la imagen anterior es el primer plano.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -86,15 +86,15 @@ En la tabla siguiente se describen los parámetros que se usan en esta transici�
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmsdkidl. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmsdkidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Transiciones de imagen de vídeo**](video-image-transitions.md)
+[**Transiciones de imágenes de vídeo**](video-image-transitions.md)
 </dt> </dl>
 
  

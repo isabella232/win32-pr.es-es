@@ -1,9 +1,9 @@
 ---
-title: Player. Controls
-description: La propiedad controles recupera el objeto controles.
+title: Player.controls
+description: La propiedad controls recupera el objeto Controls.
 ms.assetid: 25771690-af04-4c31-967d-cebae42ebe64
 keywords:
-- Player. Controls Windows Media Player
+- Player.controls Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,37 +14,37 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcd4ede5b89be590172092423b3390a52e8d2db0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 237bdfc778400be6eaa3e469715d1bfcbae9bdd7ff45694df7e14a63ed5f9e0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338349"
 ---
-# <a name="playercontrols"></a>Player. Controls
+# <a name="playercontrols"></a>Player.controls
 
-La propiedad **controles** recupera el objeto controles.
+La **propiedad controls** recupera el objeto Controls.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor* . **controles** de
+*player* . **controles**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto de **controles** de solo lectura.
+Esta propiedad es un objeto **Controls de solo** lectura.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

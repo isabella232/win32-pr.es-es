@@ -1,42 +1,42 @@
 ---
 title: Cómo crear un control de edición multilínea
-description: En este tema se muestra cómo implementar un procesador de textos sencillo agregando un control de edición multilínea al área cliente de una ventana.
+description: En este tema se muestra cómo implementar un procesador de palabras simple agregando un control de edición multilínea al área cliente de una ventana.
 ms.assetid: B955CC42-F89F-48EB-A19A-ADA6E5273EF6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d05133707e9a47a632a70807177c6ec1b63bc842
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d11100d4d6f82c7a352d4ddacaa7fc05694b4d54125febc766a6d3f1c68376e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103995746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829076"
 ---
 # <a name="how-to-create-a-multiline-edit-control"></a>Cómo crear un control de edición multilínea
 
-En este tema se muestra cómo implementar un procesador de textos sencillo agregando un control de edición multilínea al área cliente de una ventana. Mediante el control de edición de varias líneas, el usuario puede seleccionar Editar comandos de un menú. Estos comandos permiten al usuario realizar operaciones de edición sencillas, como deshacer una acción anterior, cortar o copiar selecciones en el portapapeles, pegar texto del portapapeles y eliminar la selección actual.
+En este tema se muestra cómo implementar un procesador de palabras simple agregando un control de edición multilínea al área cliente de una ventana. Mediante el control de edición multilínea, el usuario puede seleccionar los comandos de edición en un menú. Estos comandos permiten al usuario realizar operaciones de edición sencillas, como deshacer una acción anterior, cortar o copiar selecciones en el Portapapeles, pegar texto del Portapapeles y eliminar la selección actual.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-La aplicación debe incluir código para crear una instancia de e inicializar un control de edición de varias líneas y, a continuación, procesar los comandos de edición del usuario.
+La aplicación debe incluir código para crear una instancia de e inicializar un control de edición multilínea y, a continuación, procesar los comandos de edición del usuario.
 
-En el siguiente ejemplo de código de C++ se implementa gran parte de la funcionalidad de un procesador de textos sencillo agregando un control de edición multilínea al área cliente de una ventana. El sistema realiza automáticamente operaciones de ajuste de líneas para el control de edición y controla también el procesamiento de la barra de desplazamiento vertical (que se crea especificando [**es \_ AUTOVSCROLL**](edit-control-styles.md) en la llamada a la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ).
+El siguiente ejemplo de código de C++ implementa gran parte de la funcionalidad de un procesador de palabras simple agregando un control de edición multilínea al área cliente de una ventana. El sistema realiza automáticamente operaciones de ajuste de palabras para el control de edición y también controla el procesamiento de la barra de desplazamiento vertical (creada especificando [**ES \_ AUTOVSCROLL**](edit-control-styles.md) en la llamada a la [**función CreateWindow).**](/windows/desktop/api/winuser/nf-winuser-createwindowa)
 
-Los comandos de edición de usuario se envían al proceso de ventana a través de mensajes de notificación de [**\_ comandos de WM**](/windows/desktop/menurc/wm-command) .
+Los comandos de edición de usuario se envían al proceso de ventana a través [**de mensajes de notificación DE WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 > [!Note]  
-> Si la ventana incluye la cinta de opciones de Windows, se debe ajustar el tamaño del control de edición para acomodar el alto de la cinta de opciones. Para obtener más información, vea [marco de cinta de Windows](/windows/desktop/windowsribbon/-uiplat-windowsribbon-entry).
+> Si la ventana incluye la Windows, el tamaño del control de edición debe ajustarse para adaptarse al alto de la cinta de opciones. Para obtener más información, [vea Windows Ribbon Framework](/windows/desktop/windowsribbon/-uiplat-windowsribbon-entry).
 
  
 
@@ -160,7 +160,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd,      // window handle
 
 <dl> <dt>
 
-[Acerca de los controles de edición](about-edit-controls.md)
+[Acerca de editar controles](about-edit-controls.md)
 </dt> <dt>
 
 [Editar referencia de control](bumper-edit-control-edit-control-reference.md)
@@ -169,7 +169,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd,      // window handle
 [Usar controles de edición](/windows/desktop/Controls/using-edit-controls)
 </dt> <dt>
 
-[Control de edición](edit-controls.md)
+[Editar control](edit-controls.md)
 </dt> </dl>
 
  

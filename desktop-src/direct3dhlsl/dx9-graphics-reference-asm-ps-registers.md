@@ -9,19 +9,19 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5a13c771a4c1f136c500c324de4f5b458f31bc8d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3a9c26ae1b3b763388e2ea1b85c728c480f9131f8c64f3098233f775bad4732c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512855"
 ---
 # <a name="registers"></a>Registros
 
--   [PS \_ 1 \_ 1 \_ \_ PS \_ 1 \_ 2 \_ \_ PS \_ 1 \_ 3 \_ \_ PS \_ 1 \_ 4 registros](dx9-graphics-reference-asm-ps-registers-ps-1-x.md)
--   [Registros de PS \_ 2 \_ 0](dx9-graphics-reference-asm-ps-registers-ps-2-0.md)
--   [Registros de PS \_ 2 \_ x](dx9-graphics-reference-asm-ps-registers-ps-2-x.md)
--   [Registros de PS \_ 3 \_ 0](dx9-graphics-reference-asm-ps-registers-ps-3-0.md)
+-   [ps \_ 1 \_ 1 \_ \_ ps \_ 1 \_ 2 ps \_ \_ \_ 1 \_ 3 ps \_ \_ \_ 1 \_ 4 Registers](dx9-graphics-reference-asm-ps-registers-ps-1-x.md)
+-   [ps \_ 2 \_ 0 Registros](dx9-graphics-reference-asm-ps-registers-ps-2-0.md)
+-   [ps \_ 2 \_ x Registros](dx9-graphics-reference-asm-ps-registers-ps-2-x.md)
+-   [ps \_ 3 \_ 0 Registros](dx9-graphics-reference-asm-ps-registers-ps-3-0.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -30,9 +30,9 @@ ms.locfileid: "104357752"
 [Sombreadores de píxeles](dx9-graphics-reference-asm-ps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

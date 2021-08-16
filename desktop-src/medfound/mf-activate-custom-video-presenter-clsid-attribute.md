@@ -1,62 +1,62 @@
 ---
-description: CLSID de un presentador de vídeo personalizado para el receptor de medios de representador de vídeo mejorado (EVR).
+description: CLSID de un presentador de vídeo personalizado para el receptor multimedia de representador de vídeo mejorado (EVR).
 ms.assetid: f035ee56-7582-45d3-bafe-dd9c821b6326
-title: MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_CLSID atributo (Mfidl. h)
+title: MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_CLSID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c0eb913a56671d5d2ac8d27c785e1cc1fbfc51a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5afd39cf31cd0efaff4dc4d32756e1e27433d87fac643e4058897babd0f4f50f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877258"
 ---
-# <a name="mf_activate_custom_video_presenter_clsid-attribute"></a>MF \_ activar \_ \_ \_ atributo CLSID del presentador de vídeo personalizado \_
+# <a name="mf_activate_custom_video_presenter_clsid-attribute"></a>Atributo \_ \_ \_ \_ \_ CLSID DE MF ACTIVATE CUSTOM VIDEO PRESENTER
 
-CLSID de un presentador de vídeo personalizado para el receptor de medios de representador de vídeo mejorado (EVR).
+CLSID de un presentador de vídeo personalizado para el receptor multimedia de representador de vídeo mejorado (EVR).
 
 ## <a name="data-type"></a>Tipo de datos
 
 **GUID**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si va a crear EVR a través de un objeto de activación, puede usar este atributo para establecer un presentador de vídeo personalizado en EVR. Use este atributo como se indica a continuación:
+Si va a crear la EVR a través de un objeto de activación, puede usar este atributo para establecer un presentador de vídeo personalizado en la EVR. Use este atributo como se muestra a continuación:
 
-1.  Llame a la función [**MFCreateVideoRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) para crear un objeto de activación para EVR. La función devuelve un puntero a la interfaz [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) .
+1.  Llame a [**la función MFCreateVideoRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) para crear un objeto de activación para la EVR. La función devuelve un puntero a la [**interfaz DEACTIVATE.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
 
-2.  Establezca este attribue en el puntero [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) llamando a [**IMFAttributes:: SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid). El valor del atributo es el CLSID del presentador de vídeo personalizado de la aplicación.
+2.  Establezca esta atribución en el puntero [**DE LAACTIVATE mediante**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) una llamada [**aATTRIBUTEAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid). El valor del atributo es el CLSID del presentador de vídeo personalizado de la aplicación.
 
-Si se establece este atributo, EVR llama a **CoCreateInstance** con el CLSID especificado para crear el presentador de vídeo personalizado. El presentador de vídeo debe exponer la interfaz [**IMFVideoPresenter**](/windows/desktop/api/evr/nn-evr-imfvideopresenter) . El presentador se crea como un servidor COM en proceso.
+Si se establece este atributo, evr llama a **CoCreateInstance** con el CLSID especificado para crear el presentador de vídeo personalizado. El presentador de vídeo debe exponer la [**interfaz DEPRESENTVideoPresenter.**](/windows/desktop/api/evr/nn-evr-imfvideopresenter) El presentador se crea como un servidor COM en proceso.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de representador de vídeo mejorados](enhanced-video-renderer-attributes.md)
+[Atributos mejorados del representador de vídeo](enhanced-video-renderer-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
+[**ATTRIBUTEAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
 </dt> <dt>
 
-[**IMFAttributes:: SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
+[**ATTRIBUTEAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
 </dt> <dt>
 
 [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)

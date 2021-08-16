@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: fab501912c55aaaf6cab832bf76763672e830d33
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 41542f133961104180257b9c15b1843f3458bf6d9d2dd156fa3d97ea7b9ca87d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857744"
 ---
-# <a name="shellnamespace-method"></a>Shell.NameSpace (método)
+# <a name="shellnamespace-method"></a>Método Shell.NameSpace
 
 Crea y devuelve un [**objeto Folder**](folder.md) para la carpeta especificada.
 
@@ -54,7 +54,7 @@ Shell.NameSpace( _
 
 Tipo: **Variant**
 
-Carpeta para la que se va a crear [**el objeto Folder.**](folder.md) Puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
+Carpeta para la que se va a crear el [**objeto Folder.**](folder.md) Puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript ni JScript. En esos casos, los valores numéricos deben usarse en su lugar.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Referencia de objeto al [**objeto Folder**](folder.md) de la carpeta especificad
 
 En el ejemplo siguiente se **muestra NameSpace** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -150,7 +150,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

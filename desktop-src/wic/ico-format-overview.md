@@ -4,12 +4,12 @@ ms.assetid: EF28956E-7156-4BAE-8805-C64B8C8ADE50
 title: Introducción al formato ICO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 329a53a3b5d386c5e5386141162c608dc9db1ec0
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: caf90f0a31beb2d004dcb43e08cb0b6b1539021071ff2cb3302b3076033bc833
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204075"
 ---
 # <a name="ico-format-overview"></a>Introducción al formato ICO
 
@@ -32,7 +32,7 @@ En la tabla siguiente se proporciona información de identificación de códecs.
 
  
 
-En la tabla siguiente se enumeran los GUID que se usan para identificar los componentes de códec ICO nativos.
+En la tabla siguiente se enumeran los GUID usados para identificar los componentes nativos del códec ICO.
 
 
 
@@ -48,11 +48,11 @@ En la tabla siguiente se enumeran los GUID que se usan para identificar los comp
 
 ## <a name="encoding"></a>Encoding
 
-WIC no proporciona un codificador de imágenes ICO nativo.
+WIC no proporciona un codificador de imagen ICO nativo.
 
 ## <a name="decoding"></a>Descodificación
 
-La API de decoding de WIC está diseñada para ser independiente del códec y lacoding de imágenes para códecs habilitados para WIC es básicamente la misma. Para obtener más información sobre lacodación de imágenes, vea Información general [sobre la decodación.](-wic-creating-decoder.md) Para obtener más información sobre el uso de datos de imagen descodificados, vea Información general sobre orígenes [de mapa de bits](-wic-bitmapsources.md).
+La API de decoding de WIC está diseñada para ser independiente del códec y lacoding de imágenes para códecs habilitados para WIC es básicamente la misma. Para obtener más información sobre lacoding de imágenes, vea Información general [sobre la decodación.](-wic-creating-decoder.md) Para obtener más información sobre el uso de datos de imagen descodificados, vea Información general sobre orígenes [de mapa de bits](-wic-bitmapsources.md).
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: En el ejemplo de código siguiente se muestra cómo usar EnumDisplayDevices para obtener información sobre un monitor de pantalla.
 ms.assetid: 8c2420de-292f-481e-b06b-54cc174a8faf
-title: Obtener información sobre un monitor de pantalla
+title: Obtención de información en un monitor de pantalla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e8b120563e9ceed2e87d66e5bb79790a0f7c771
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4b446b379d1d90dd32eedb47d356d2de0fb9e07d1f30eba9e65e470a3f24e82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117886728"
 ---
-# <a name="getting-information-on-a-display-monitor"></a>Obtener información sobre un monitor de pantalla
+# <a name="getting-information-on-a-display-monitor"></a>Obtención de información en un monitor de pantalla
 
 En el ejemplo de código siguiente se muestra cómo usar [**EnumDisplayDevices**](/windows/desktop/api/Winuser/nf-winuser-enumdisplaydevicesa) para obtener información sobre un monitor de pantalla.
 

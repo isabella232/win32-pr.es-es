@@ -8,24 +8,24 @@
           href: snapshots-of-the-system.md
         - name: Recorrido del proceso
           href: process-walking.md
-        - name: Recorrido de subprocesos
+        - name: Recorrido por subprocesos
           href: thread-walking.md
-        - name: Recorrido de módulos
+        - name: Recorrido del módulo
           href: module-walking.md
-        - name: Listas de montones y recorrido de montones
+        - name: Heap Lists and Heap Walking
           href: heap-lists-and-heap-walking.md
-    - name: Usar las funciones de ayuda de la herramienta
+    - name: Uso de las funciones de ayuda de herramientas
       href: using-the-tool-help-functions.md
       items:
-        - name: Tomar una instantánea y ver los procesos
+        - name: Tomar una instantánea y ver procesos
           href: taking-a-snapshot-and-viewing-processes.md
-        - name: Atravesar la lista de subprocesos
+        - name: Recorrer la lista de subprocesos
           href: traversing-the-thread-list.md
-        - name: Atravesar la lista de módulos
+        - name: Recorrer la lista de módulos
           href: traversing-the-module-list.md
-        - name: Atravesar la lista de montones
+        - name: Recorrida de la lista de montones
           href: traversing-the-heap-list.md
-    - name: Referencia de la ayuda de herramientas
+    - name: Referencia de la Ayuda de herramientas
       href: tool-help-reference.md
       items:
         - name: Funciones de ayuda de herramientas
@@ -43,15 +43,15 @@
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next
             - name: Module32First
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-module32first
-            - name: Module32Next
+            - name: Module32Siguiente
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-module32next
             - name: Process32First
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-process32first
-            - name: Process32Next
+            - name: Process32Siguiente
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-process32next
             - name: Thread32First
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first
-            - name: Thread32Next
+            - name: Thread32Siguiente
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next
             - name: Toolhelp32ReadProcessMemory
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-toolhelp32readprocessmemory
