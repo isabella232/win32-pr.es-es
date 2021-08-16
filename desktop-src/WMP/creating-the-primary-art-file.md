@@ -28,7 +28,7 @@ Para crear el archivo de arte principal, creará las capas siguientes en el orde
 
 Capa de fondo de máscara
 
-Este es el color que será transparente cuando se muestre la máscara. Cree primero una capa para esta, pero elija el color final de esta capa después de elegir un color para la capa de contenedor de máscaras. Este color debe ser similar a la capa de contenedor de máscaras, pero no igual a esta, para ocultar los efectos de suavizado de alias.
+Este es el color que será transparente cuando se muestre la máscara. Cree primero una capa para esta, pero elija el color final de esta capa después de elegir un color para la capa de contenedor de máscaras. Este color debe ser similar a la capa del contenedor de máscaras, pero no igual, para ocultar los efectos de suavizado de alias.
 
 Capa de contenedor de máscara
 
@@ -40,7 +40,7 @@ Estos son los dos controles de interfaz de usuario que usa este ejemplo. Las col
 
 Antes de crear las capas, debe crear el archivo que contendrán las capas. Inicie Photoshop y cree un nuevo archivo de 100 píxeles de alto y 200 píxeles de ancho. El archivo que se usa para crear el arte de este ejemplo se tiny.psd y se incluye con el SDK.
 
-Todas las instrucciones se proporcionan en términos de Photoshop, pero cualquier otro programa de arte se puede usar para crear máscaras, siempre y cuando se pueda guardar en uno de los formatos de archivo admitidos por Reproductor de Windows Media (BMP, GIF, JPG y PNG). Le será más fácil crear máscaras si usa un programa de arte que tiene capas, como Adobe Adobe Adobe, Jasc Paint Shop Pro o Jedor Secundo. Las capas son muy útiles porque las imágenes deben estar alineadas correctamente para la asignación de imágenes y la presentación de imágenes alternativas.
+Todas las instrucciones se proporcionan en términos de Photoshop, pero cualquier otro programa de arte se puede usar para crear máscaras, siempre y cuando se pueda guardar en uno de los formatos de archivo admitidos por Reproductor de Windows Media (BMP, GIF, JPG y PNG). Le será más fácil crear máscaras si usa un programa de arte que tiene capas, como Adobe Adobe Adobe, Jasc Paint Shop Pro o Jedor Secundo. Las capas son muy útiles porque las imágenes deben estar correctamente alineadas para la asignación de imágenes y la presentación de imágenes alternativas.
 
 ## <a name="skin-background-layer"></a>Capa de fondo de máscara
 
@@ -74,9 +74,9 @@ La capa de fondo de la máscara debe tener un aspecto parecido al de la ilustrac
 
 ## <a name="play-and-close-button-layers"></a>Reproducir y cerrar capas de botón
 
-Cree una nueva capa y así mismo den el nombre "Botón Cerrar". Con la herramienta de selección marquesina elíptica de nuevo, cree un círculo y posiciones en el lado izquierdo de la imagen general. Active la visibilidad del archivo de contenedor de máscaras para ayudar a colocar la selección.
+Cree una nueva capa y así denóciela "Botón Cerrar". Con la herramienta de selección marquesina elíptica de nuevo, cree un círculo y posiciones en el lado izquierdo de la imagen general. Active la visibilidad del archivo de contenedor de máscaras para ayudar a colocar la selección.
 
-Cuando esté satisfecho con la colocación, rellene la selección con cualquier color (excepto el color del contenedor de máscaras o el fondo de la máscara). En este ejemplo, se eligió un color púrpura. No es necesario recordar el número del color. A continuación, cancele la selección y aplique otro efecto de capa bisel y relieve predeterminado. Si desea aplicar efectos que no son de capa al botón, realice una copia del original para su uso posterior en la asignación.
+Cuando esté satisfecho con la colocación, rellene la selección con cualquier color (excepto el color del contenedor de máscaras o el fondo de la máscara). En este ejemplo, se ha elegido un color púrpura. No es necesario recordar el número del color. A continuación, cancele la selección y aplique otro efecto de capa bisel y relieve predeterminado. Si desea aplicar efectos que no son de capa al botón, realice una copia del original para su uso posterior en la asignación.
 
 El botón Cerrar debe tener un aspecto parecido al de la ilustración siguiente.
 

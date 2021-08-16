@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 6298061d-7e24-45ab-8bc4-96b28e071080
-ms.openlocfilehash: 46cb246e91f9901204432527ba36fd8ac72beba4
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 69078274ccd8a7a7b91bbd7bd8e8d84b3b033cec6dbcf4ce495ac2ebfd0e8381
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224169"
 ---
 # <a name="fmevent_helpmenuitem-message"></a>Mensaje \_ HELPMENUITEM de FMEVENT
 
@@ -46,7 +46,7 @@ Un procedimiento DLL de extensión debe devolver cero si procesa este mensaje.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |

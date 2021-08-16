@@ -1,7 +1,7 @@
 ---
 description: Define una red bloqueada.
 ms.assetid: ccf24d45-cae0-4eb7-951a-004a5f71e04a
-title: Elemento de la red (de listas de bloqueo)
+title: elemento network (blockList)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: f58948573db281aacb00e227ff0fbc2f1cdf82b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 893c557ca5c20dd73f10f2a31d3b416d76116deb206f5d04420d35443d902130
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117984465"
 ---
-# <a name="network-blocklist-element"></a>Elemento de la red (de listas de bloqueo)
+# <a name="network-blocklist-element"></a>elemento network (blockList)
 
-El elemento de la red (de listas de bloqueo) define una red bloqueada. Una máquina no se puede conectar a una red bloqueada.
+El elemento network (blockList) define una red bloqueada. Una máquina no se puede conectar a una red bloqueada.
 
 ``` syntax
 <xs:element name="network"
@@ -29,33 +29,33 @@ El elemento de la red (de listas de bloqueo) define una red bloqueada. Una máqu
  />
 ```
 
-El [**elemento de**](wlan-policyschema-blocklist-networkfilter-element.md) la definición de listas define el elemento de **red** .
+El **elemento network** se define mediante el elemento [**blockList.**](wlan-policyschema-blocklist-networkfilter-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Bloqueo**](wlan-policyschema-blocklist-networkfilter-element.md)
+[**blockList**](wlan-policyschema-blocklist-networkfilter-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**listas de bloqueo (networkFilter)**](wlan-policyschema-blocklist-networkfilter-element.md)
+[**blockList (networkFilter)**](wlan-policyschema-blocklist-networkfilter-element.md)
 </dt> </dl>
 
  

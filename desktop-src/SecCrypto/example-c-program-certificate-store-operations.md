@@ -13,22 +13,22 @@ ms.locfileid: "117765538"
 ---
 # <a name="example-c-program-certificate-store-operations"></a>Programa C de ejemplo: Operaciones de almacén de certificados
 
-En el ejemplo siguiente se muestra una serie de [*operaciones*](../secgloss/c-gly.md) comunes de almacén de certificados, así como las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
+En el ejemplo siguiente se muestran varias operaciones comunes de almacén [*de*](../secgloss/c-gly.md) certificados, así como las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Abrir y cerrar memoria y almacenes del sistema [**mediante CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) [**y CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
--   Duplicación de un almacén abierto [**mediante CertDuplicateStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatestore).
--   Buscar en almacena certificados que cumplen algunos criterios mediante [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
+-   Apertura y cierre de memoria y almacenes del sistema [**mediante CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) [**y CertCloseStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
+-   Duplicación de un almacén abierto mediante [**CertDuplicateStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatestore).
+-   Buscar en almacena certificados que cumplen algunos criterios [**mediante CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
 -   Crear un nuevo contexto de certificado a partir de la parte codificada de un certificado existente [**mediante CertCreateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatecontext).
--   Agregar un certificado recuperado a un almacén en memoria mediante [**CertAddCertificateContextToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore).
--   Agregar un vínculo a un certificado a un almacén mediante [**CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
+-   Agregar un certificado recuperado a un almacén en memoria [**mediante CertAddCertificateContextToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore).
+-   Agregar un vínculo a un certificado a un almacén [**mediante CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
 -   Guardar el almacén en memoria en un archivo en disco.
 -   Abrir y cerrar un almacén de certificados basado en archivos.
 
 En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
-En este ejemplo se usa la función **CreateMyDACL,** definida en el tema Creación de una [DACL,](../secbp/creating-a-dacl.md) para asegurarse de que el archivo abierto se crea con una DACL adecuada.
+En este ejemplo se usa **la función CreateMyDACL,** definida en el tema Creación de una [DACL,](../secbp/creating-a-dacl.md) para asegurarse de que el archivo abierto se crea con una DACL adecuada.
 
-En este ejemplo se crea un almacén de certificados en memoria. Se abre y duplica un almacén del sistema. Se recupera un certificado del almacén del sistema. Se crea un nuevo certificado a partir de la parte codificada del certificado recuperado. El certificado recuperado se agrega al almacén de memoria. Se recupera un segundo certificado del almacén Mi almacén y se agrega un vínculo a ese certificado al almacén de memoria. A continuación, el certificado y el vínculo se recuperan del almacén de memoria y la memoria se guarda en el disco. Todos los almacenes y archivos están cerrados. A continuación, se vuelve a abrir el almacén de archivos y se realiza una búsqueda para el vínculo del certificado. El éxito de este programa depende de que mi tienda esté disponible. Ese almacén debe incluir un certificado con el asunto "Insert cert subject name1" (Insertar nombre de sujeto del certificado1) y un segundo certificado con el asunto "Insert cert subject name2" (Insertar nombre de sujeto \_ \_ del \_ \_ \_ \_ certificado2). Los nombres de los asuntos deben cambiarse por los nombres de los firmantes de certificado que se sabe que están en el almacén Mi.
+En este ejemplo se crea un almacén de certificados en memoria. Se abre y se duplica un almacén del sistema. Se recupera un certificado del almacén del sistema. Se crea un nuevo certificado a partir de la parte codificada del certificado recuperado. El certificado recuperado se agrega al almacén de memoria. Se recupera un segundo certificado de Mi almacén y se agrega un vínculo a ese certificado al almacén de memoria. A continuación, el certificado y el vínculo se recuperan del almacén de memoria y la memoria se guarda en el disco. Se cierran todos los almacenes y archivos. A continuación, se vuelve a abrir el almacén de archivos y se realiza una búsqueda para el vínculo de certificado. El éxito de este programa depende de que mi tienda esté disponible. Ese almacén debe incluir un certificado con el asunto "Insertar nombre de sujeto del certificado1" y un segundo certificado con el asunto "Insertar nombre de sujeto \_ \_ del \_ \_ \_ \_ certificado2". Los nombres de los firmantes deben cambiarse por los nombres de los firmantes del certificado que se sabe que están en el almacén Mi.
 
 
 ```C++

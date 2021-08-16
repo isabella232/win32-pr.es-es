@@ -16,9 +16,9 @@ ms.locfileid: "118316219"
 
 Una recuperación de instancia parcial es cuando WMI recupera solo un subconjunto de las propiedades de una instancia. Por ejemplo, WMI solo podría recuperar las **propiedades Nombre** **y** Clave. El uso más común de la recuperación de instancias parciales es en enumeraciones grandes que tienen varias propiedades.
 
-## <a name="retrieving-part-of-a-wmi-instance-using-powershell"></a>Recuperar parte de una instancia wmi mediante PowerShell
+## <a name="retrieving-part-of-a-wmi-instance-using-powershell"></a>Recuperar parte de una instancia de WMI mediante PowerShell
 
-Puede recuperar una propiedad individual de una instancia mediante [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx); la propia propiedad se puede recuperar y mostrar varias maneras. Al igual que con la recuperación de una instancia, PowerShell devolverá de forma predeterminada todas las instancias de una clase determinada; Debe especificar un valor específico si desea recuperar solo una instancia de .
+Puede recuperar una propiedad individual de una instancia mediante [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx); la propia propiedad se puede recuperar y mostrar de varias maneras. Al igual que con la recuperación de una instancia, PowerShell devolverá de forma predeterminada todas las instancias de una clase determinada. Debe especificar un valor específico si desea recuperar solo una instancia de .
 
 En el ejemplo de código siguiente se muestra el número de serie del volumen de una instancia de la [**clase \_ LogicalDisk de Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
@@ -40,10 +40,10 @@ $myDisk.DeviceID
 
 ## <a name="retrieving-part-of-a-wmi-instance-using-c-systemmanagement"></a>Recuperar parte de una instancia de WMI mediante C# (System.Management)
 
-Puede recuperar una propiedad individual de una instancia mediante la creación de un [nuevo objeto ManagementObject](/dotnet/api/system.management.managementobject) con los detalles de una instancia específica. A continuación, puede recuperar implícitamente una o varias propiedades de la instancia con el [método GetPropertyValue.](/dotnet/api/system.management.managementbaseobject.getpropertyvalue#System_Management_ManagementBaseObject_GetPropertyValue_System_String_)
+Puede recuperar una propiedad individual de una instancia mediante la creación de un [objeto ManagementObject](/dotnet/api/system.management.managementobject) con los detalles de una instancia específica. A continuación, puede recuperar implícitamente una o varias propiedades de la instancia con el [método GetPropertyValue.](/dotnet/api/system.management.managementbaseobject.getpropertyvalue#System_Management_ManagementBaseObject_GetPropertyValue_System_String_)
 
 > [!Note]  
-> **System.Management era el** espacio de nombres original de .NET que se usaba para tener acceso a WMI; Sin embargo, las API de este espacio de nombres suelen ser más lentas y no escalan tan bien en relación con sus homólogos **microsoft.management.infrastructure** más modernos.
+> **System.Management era el** espacio de nombres .NET original que se usaba para acceder a WMI; sin embargo, las API de este espacio de nombres suelen ser más lentas y no escalan tan bien con respecto a sus homólogos **de Microsoft.Management.Infrastructure** más modernos.
 
  
 
@@ -60,7 +60,7 @@ Console.WriteLine(myProperty);
 
 
 
-## <a name="retrieving-part-of-a-wmi-instance-using-vbscript"></a>Recuperar parte de una instancia de WMI mediante VBScript
+## <a name="retrieving-part-of-a-wmi-instance-using-vbscript"></a>Recuperar parte de una instancia wmi mediante VBScript
 
 Puede recuperar una propiedad individual de una instancia mediante [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject).
 
@@ -75,13 +75,13 @@ MsgBox (GetObject("WinMgmts:Win32_LogicalDisk='C:'").VolumeSerialNumber)
 
 ## <a name="retrieving-part-of-a-wmi-instance-using-c"></a>Recuperar parte de una instancia de WMI mediante C++
 
-El siguiente procedimiento se usa para solicitar una recuperación de instancia parcial mediante C++.
+El procedimiento siguiente se usa para solicitar una recuperación de instancia parcial mediante C++.
 
 **Para solicitar una recuperación de instancia parcial mediante C++**
 
 1.  Cree un [**objeto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) con una llamada a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
-    Un objeto de contexto es un objeto que WMI usa para pasar más información a un proveedor WMI. En este caso, se usa el [**objeto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) para indicar al proveedor que procese una recuperación de instancia parcial.
+    Un objeto de contexto es un objeto que WMI usa para pasar más información a un proveedor WMI. En este caso, está usando el objeto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) para indicar al proveedor que procese una recuperación de instancia parcial.
 
 2.  Agregue GET EXTENSIONS, GET EXT CLIENT REQUEST y cualquier otro valor con nombre que describa las propiedades que desea recuperar en \_ \_ \_ el objeto \_ \_ \_ \_ \_ [**IWbemContext.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext)
 
@@ -91,10 +91,10 @@ El siguiente procedimiento se usa para solicitar una recuperación de instancia 
 
     | Valor con nombre                              | Descripción                                                                                                                                                                                                                                                                 |
     |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | \_\_OBTENER \_ EXTENSIONES<br/>           | **VT \_ BOOL establecido** en **VARIANT \_ TRUE.** Se usa para indicar que se usan operaciones de recuperación de instancias parciales. Esto permite una comprobación rápida y única sin tener que enumerar todo el objeto de contexto. Si se usa cualquiera de los demás valores, este debe ser .<br/> |
-    | \_\_OBTENER \_ PROPIEDADES EXT \_<br/>      | [**SAFEARRAY**](/windows/win32/api/oaidl/ns-oaidl-safearray) de cadenas que enumeran las propiedades que se recuperarán. No se puede especificar simultáneamente con \_ \_ GET EXT KEYS \_ \_ \_ ONLY.<br/> Un asterisco " \* " es un nombre de propiedad no válido para GET EXT \_ \_ \_ \_ PROPERTIES.<br/>                    |
+    | \_\_GET \_ EXTENSIONS<br/>           | **VT \_ BOOL establecido** en **VARIANT \_ TRUE.** Se usa para indicar que se están utilizando operaciones de recuperación de instancias parciales. Esto permite una comprobación rápida y única sin tener que enumerar todo el objeto de contexto. Si se usa cualquiera de los demás valores, este debe ser .<br/> |
+    | \_\_GET \_ EXT \_ PROPERTIES<br/>      | [**SAFEARRAY**](/windows/win32/api/oaidl/ns-oaidl-safearray) de cadenas que enumeran las propiedades que se recuperarán. No se puede especificar simultáneamente con \_ \_ GET EXT KEYS \_ \_ \_ ONLY.<br/> Un asterisco " \* " es un nombre de propiedad no válido para GET EXT \_ \_ \_ \_ PROPERTIES.<br/>                    |
     | \_\_OBTENER \_ SOLO \_ CLAVES \_ EXT<br/>      | **VT \_ BOOL establecido** en **VARIANT \_ TRUE.** Indica que solo se deben proporcionar claves en el objeto devuelto. No se puede especificar simultáneamente con \_ \_ GET EXT \_ \_ PROPERTIES. En su lugar, tiene prioridad sobre \_ \_ GET EXT \_ \_ PROPERTIES.<br/>                            |
-    | \_\_OBTENER \_ SOLICITUD DE CLIENTE \_ \_ EXT<br/> | **VT \_ BOOL establecido** en **VARIANT \_ TRUE.** Indica que el autor de la llamada era el que escribió el valor en el objeto de contexto y que no se propagaba desde otra operación dependiente.<br/>                                                                        |
+    | \_\_GET \_ EXT \_ CLIENT \_ REQUEST<br/> | **VT \_ BOOL establecido** en **VARIANT \_ TRUE.** Indica que el autor de la llamada fue quien escribió el valor en el objeto de contexto y que no se propague desde otra operación dependiente.<br/>                                                                        |
 
     
 
@@ -106,7 +106,7 @@ El siguiente procedimiento se usa para solicitar una recuperación de instancia 
 
 Si el proveedor no puede cumplir con la operación de instancia parcial, el proveedor continúa como si no hubiera especificado el objeto de contexto o devuelve **WBEM \_ E \_ UNSUPPORTED \_ PARAMETER**.
 
-En el ejemplo siguiente se describe cómo realizar una recuperación de instancia completa de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)y, a continuación, realiza una recuperación de instancia parcial de la **propiedad \_ LogicalDisk.Caption de Win32.**
+En el ejemplo siguiente se describe cómo realizar una recuperación de instancia completa de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)y, a continuación, realiza una recuperación de instancia parcial de la propiedad **\_ LogicalDisk.Caption de Win32.**
 
 
 ```C++
@@ -300,7 +300,7 @@ void main(void)
 
 
 
-Cuando se ejecuta, el ejemplo de código anterior escribe la siguiente información. La primera descripción del objeto es de la recuperación de instancia completa. La segunda descripción del objeto es de la recuperación de instancia parcial. En la última sección se muestra que recibe un **valor NULL** si solicita una propiedad que no se solicitó en la [**llamada getObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) original.
+Cuando se ejecuta, el ejemplo de código anterior escribe la siguiente información. La primera descripción del objeto es de la recuperación de instancia completa. La segunda descripción del objeto es de la recuperación de instancia parcial. En la última sección se muestra que recibe un **valor NULL** si solicita una propiedad que no se solicitó en la [**llamada GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) original.
 
 ``` syntax
 Successfully connected to namespace
@@ -340,7 +340,7 @@ instance of Win32_LogicalDisk
 };
 ```
 
-El ejemplo anterior genera la siguiente salida.
+El ejemplo anterior genera la salida siguiente.
 
 ``` syntax
 file system variable is null - expected

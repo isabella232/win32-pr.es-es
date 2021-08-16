@@ -60,13 +60,13 @@ Si el subproceso llama a funciones que usan API, establezca el parámetro *dwFla
 
 ## <a name="waiting-on-an-address"></a>Esperando una dirección
 
-Un subproceso puede usar la [**función WaitOnAddress**](/windows/desktop/api/SynchAPI/nf-synchapi-waitonaddress) para esperar a que el valor de una dirección de destino cambie de algún valor no deseado a cualquier otro valor. Esto permite a los subprocesos esperar a que un valor cambie sin tener que girar o controlar los problemas de sincronización que pueden surgir cuando el subproceso captura un valor no deseado, pero el valor cambia antes de que el subproceso pueda esperar.
+Un subproceso puede usar la [**función WaitOnAddress**](/windows/desktop/api/SynchAPI/nf-synchapi-waitonaddress) para esperar a que el valor de una dirección de destino cambie de algún valor no deseado a cualquier otro valor. Esto permite que los subprocesos esperen a que un valor cambie sin tener que girar o controlar los problemas de sincronización que pueden surgir cuando el subproceso captura un valor no deseado, pero el valor cambia antes de que el subproceso pueda esperar.
 
 [**WaitOnAddress**](/windows/desktop/api/SynchAPI/nf-synchapi-waitonaddress) devuelve cuando el código que modifica el valor de destino señala el cambio mediante una llamada a [**WakeByAddressSingle**](/windows/desktop/api/SynchAPI/nf-synchapi-wakebyaddresssingle) para reactivar un único subproceso en espera o [**WakeByAddressAll**](/windows/desktop/api/SynchAPI/nf-synchapi-wakebyaddressall) para reactivar todos los subprocesos en espera. Si se especifica un intervalo de tiempo de espera con **WaitOnAddress** y ningún subproceso llama a una función de reactivación, la función devuelve cuando transcurre el intervalo de tiempo de espera. Si no se especifica ningún intervalo de tiempo de espera, el subproceso espera indefinidamente.
 
 ## <a name="wait-functions-and-time-out-intervals"></a>Funciones de espera e intervalos de tiempo de espera
 
-La precisión del intervalo de tiempo de espera especificado depende de la resolución del reloj del sistema. El reloj del sistema "marca" a una velocidad constante. Si el intervalo de tiempo de espera es menor que la resolución del reloj del sistema, el tiempo de espera puede ser menor que el período de tiempo especificado. Si el intervalo de tiempo de espera es mayor que un tic, pero menor que dos, la espera puede estar en cualquier lugar entre uno y dos tics, y así sucesivamente.
+La precisión del intervalo de tiempo de espera especificado depende de la resolución del reloj del sistema. El reloj del sistema "marca" a una velocidad constante. Si el intervalo de tiempo de espera es menor que la resolución del reloj del sistema, el tiempo de espera puede ser menor que el período de tiempo especificado. Si el intervalo de tiempo de espera es mayor que un paso, pero menor que dos, la espera puede estar en cualquier lugar entre uno y dos tics, y así sucesivamente.
 
 Para aumentar la precisión del intervalo de tiempo de espera de las funciones de espera, llame a la función **timeGetDevCaps** para determinar la resolución mínima de temporizador admitida y la función **timeBeginPeriod** para establecer la resolución del temporizador en su mínimo. Tenga cuidado al llamar **a timeBeginPeriod,** ya que las llamadas frecuentes pueden afectar significativamente al reloj del sistema, al uso de energía del sistema y al programador. Si llama a **timeBeginPeriod,** llámelo una vez al principio de la aplicación y asegúrese de llamar a la función **timeEndPeriod** al final de la aplicación.
 
@@ -74,14 +74,14 @@ Para aumentar la precisión del intervalo de tiempo de espera de las funciones d
 
 Las funciones de espera pueden modificar los estados de algunos tipos de objetos [de sincronización.](synchronization-objects.md) La modificación solo se produce para el objeto u objetos cuyo estado señalado ha provocado la devolución de la función. Las funciones wait pueden modificar los estados de los objetos de sincronización de la manera siguiente:
 
--   El recuento de un objeto semáforo disminuye en uno y el estado del semáforo se establece en sin signo si su recuento es cero.
+-   El recuento de un objeto de semáforo disminuye en uno y el estado del semáforo se establece en sin signo si su recuento es cero.
 -   Los estados de exclusión mutua, evento de restablecimiento automático y objetos de notificación de cambios se establecen en no firma.
 -   El estado de un temporizador de sincronización se establece en nonsignaled.
 -   Los estados de los objetos de entrada de evento de restablecimiento manual, temporizador de restablecimiento manual, proceso, subproceso y consola no se ven afectados por una función de espera.
 
 ## <a name="wait-functions-and-creating-windows"></a>Funciones wait y creación de Windows
 
-Debe tener cuidado al usar las funciones de espera y el código que crea ventanas directa o indirectamente. Si un subproceso crea ventanas, debe procesar los mensajes. Las difusiones de mensajes se envían a todas las ventanas del sistema. Si tiene un subproceso que usa una función de espera sin intervalo de tiempo de espera, el sistema interbloqueará. Dos ejemplos de código que crean ventanas indirectamente son DDE y **la función CoInitialize.** Por lo tanto, si tiene un subproceso que crea ventanas, use [**MsgWaitForMultipleObjects**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjects) o [**MsgWaitForMultipleObjectsEx,**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjectsex)en lugar de las otras funciones de espera.
+Debe tener cuidado al usar las funciones de espera y el código que crea ventanas directa o indirectamente. Si un subproceso crea ventanas, debe procesar los mensajes. Las difusiones de mensajes se envían a todas las ventanas del sistema. Si tiene un subproceso que usa una función de espera sin intervalo de tiempo de espera, el sistema interbloqueará. Dos ejemplos de código que crea indirectamente ventanas son DDE y **la función CoInitialize.** Por lo tanto, si tiene un subproceso que crea ventanas, use [**MsgWaitForMultipleObjects**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjects) o [**MsgWaitForMultipleObjectsEx,**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjectsex)en lugar de las otras funciones de espera.
 
  
 

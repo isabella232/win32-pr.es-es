@@ -57,15 +57,15 @@ El uso de un lápiz para la entrada tiene las siguientes características:
 
 **Todos Windows programas deben tener una buena experiencia de lápiz.** Los usuarios deben poder realizar las tareas más importantes del programa de forma eficaz mediante un lápiz. Algunas tareas, como escribir o manipular píxeles detalladamente, no son adecuadas para un lápiz, pero al menos deberían ser posibles.
 
-Afortunadamente, si el programa ya está bien diseñado y es fácil de tocar, es fácil proporcionar una buena compatibilidad con lápiz. Para ello, un programa bien diseñado:
+Afortunadamente, si el programa ya está bien diseñado y es táctil, es fácil proporcionar una buena compatibilidad con lápiz. Para ello, un programa bien diseñado:
 
 -   **Tiene una buena compatibilidad con el mouse.** Los controles interactivos tienen unas asequiciones claras y visibles, y tienen estados de puntero para los comentarios del puntero. Los objetos tienen comportamientos estándar para las interacciones estándar del mouse (clic único y doble a la izquierda, clic con el botón derecho, arrastrar y mantener el mouse). La [forma del](inter-mouse.md) puntero cambia según corresponda para indicar el tipo de manipulación directa.
 -   **Tiene una buena compatibilidad con el teclado.** El programa hace que los usuarios sean eficaces al proporcionar asignaciones de teclas de método abreviado estándar, especialmente para comandos de navegación y edición que también se pueden generar mediante gestos.
--   **Tiene controles lo suficientemente grandes para el toque.** Los controles tienen un tamaño mínimo de 23 x 23 píxeles (D DLL de 13 x 13 unidades de diálogo) y los controles más usados son al menos \[ \] 40 x 40 píxeles (23 x 22 D DLL). Para evitar un comportamiento que no responde, no debe haber espacios pequeños entre los destinos que los elementos de la interfaz de usuario deben estar espaciados para que los destinos adyacentes se toquen o tengan al menos 5 píxeles (3 D DLL) de espacio entre ellos.
--   **Es accesible.** Usa Microsoft Active Accessibility (MSAA) para proporcionar acceso mediante programación a la interfaz de usuario para tecnologías de asistencia. El programa responde adecuadamente a los cambios de tema y métricas del sistema.
+-   **Tiene controles lo suficientemente grandes para el toque.** Los controles tienen un tamaño mínimo de 23 x 23 píxeles (D DLL de 13 x 13 unidades de diálogo) y los controles más usados son al menos \[ \] 40 x 40 píxeles (23 x 22 D DLL). Para evitar un comportamiento que no responde, no debe haber espacios pequeños entre los destinos en los que los elementos de la interfaz de usuario deben estar espaciados para que los destinos adyacentes se toquen o tengan al menos 5 píxeles (3 D DLL) de espacio entre ellos.
+-   **Es accesible.** Usa Microsoft Active Accessibility (MSAA) para proporcionar acceso mediante programación a la interfaz de usuario para las tecnologías de asistencia. El programa responde adecuadamente a los cambios de tema y métricas del sistema.
 -   Funciona bien y se ve bien **en 120 ppp (puntos por pulgada),** que es la resolución de pantalla predeterminada recomendada para equipos habilitados para lápiz.
 -   **Usa controles comunes.** Los controles más comunes están diseñados para admitir una buena experiencia de lápiz. Si es necesario, el programa usa controles personalizados bien implementados que están diseñados para admitir la manipulación interactiva y la orientación fácil.
--   **Usa controles restringidos.** Cuando se diseñan para facilitar la selección de destino, los controles restringidos, como listas y controles deslizantes, pueden ser mejores que los controles sin restricciones, como los cuadros de texto, porque reducen la necesidad de entrada de texto.
+-   **Usa controles restringidos.** Cuando se diseñan para facilitar la selección de destino, los controles restringidos como listas y controles deslizantes pueden ser mejores que los controles sin restricciones, como los cuadros de texto, porque reducen la necesidad de entrada de texto.
 -   **Proporciona los valores predeterminados adecuados.** El programa selecciona la opción más segura (para evitar la pérdida de datos o acceso al sistema) y la opción más segura de forma predeterminada. Si la seguridad y la seguridad no son factores, el programa selecciona la opción más probable o cómoda, lo que elimina la interacción innecesaria.
 -   **Proporciona la finalización automática de texto.** Proporciona una lista de los valores de entrada más probables o recientes para facilitar la entrada de texto.
 
@@ -73,7 +73,7 @@ Desafortunadamente, lo contrario también es cierto si el programa no está bien
 
 ### <a name="model-for-pen-interaction"></a>Modelo para la interacción con lápiz
 
-Si no tiene experiencia con el uso de un lápiz, la mejor introducción es aprender haciendo esto. Obtenga un equipo habilitado para lápiz, coloque el mouse y el teclado a un lado y realice las tareas que normalmente se hacen con solo un lápiz. Asegúrese de probar los programas habilitados para entrada de lápiz, como Windows Journal, y los programas que no están habilitados para entrada de lápiz. Si tiene un tablet PC, experimente con mantenerla en distintas posiciones, como en el regón, en una mesa o en los manos mientras está de pie. Pruebe a usarlo en orientación vertical y horizontal, y sosteniendo el lápiz para escribir y solo para apuntar, tanto en la mano izquierda como en la derecha.
+Si no tiene experiencia con el uso de un lápiz, la mejor introducción es aprender haciendo esto. Obtenga un equipo habilitado para lápiz, coloque el mouse y el teclado a un lado y realice las tareas que normalmente se hacen con solo un lápiz. Asegúrese de probar los programas habilitados para entrada de lápiz, como Windows Journal, y los programas que no están habilitados para entrada de lápiz. Si tiene un tablet PC, experimente con mantenerla en distintas posiciones, como en el regón, en una mesa o en los manos mientras está de pie. Pruebe a usarlo en orientación vertical y horizontal, y manteniendo el lápiz para escribir y solo para apuntar, tanto en la mano izquierda como en la derecha.
 
 A medida que experimente con el uso de un lápiz, descubrirá lo siguiente:
 
@@ -105,7 +105,7 @@ Los destinos pequeños cerca del borde de presentación pueden ser difíciles de
 
 **Gestos del sistema**
 
-Los gestos del sistema se definen y controlan mediante Windows. Como resultado, todos los Windows tienen acceso a ellos. Estos gestos tienen mensajes equivalentes de comandos de mouse, teclado y aplicación:
+Los gestos del sistema se definen y controlan mediante Windows. Como resultado, todos los Windows tienen acceso a ellos. Estos gestos tienen mensajes de comandos equivalentes del mouse, el teclado y la aplicación:
 
 
 
@@ -123,7 +123,7 @@ Los gestos del sistema se definen y controlan mediante Windows. Como resultado, 
 
  
 
-**Desarrolladores:** Para obtener más información, [vea SystemGesture (Enumeración).](/previous-versions/ms552724(v=vs.100))
+**Desarrolladores:** Para obtener más información, [vea SystemGesture Enumeration](/previous-versions/ms552724(v=vs.100)).
 
 **Películas**
 
@@ -164,7 +164,7 @@ Las aplicaciones también pueden definir y controlar otros gestos. Microsoft Ges
 
 **La capacidad de respuesta es esencial para crear experiencias de lápiz que se sientan directas y atractivas.** Para que se sientan directos, los gestos deben tener efecto inmediatamente y los puntos de contacto de un objeto deben permanecer debajo del lápiz sin problemas a lo largo del gesto. Cualquier retraso, respuesta desmesada, pérdida de contacto o resultados inexactos destruye la percepción de manipulación directa y también de calidad.
 
-**La coherencia es esencial para crear experiencias de lápiz que se sientan naturales e intuitivas.** Una vez que los usuarios aprenden un gesto estándar, esperan que ese gesto tenga el mismo efecto en todos los programas aplicables. Para evitar confusiones y frustraciones, no asigne nunca significados no estándar a los gestos estándar. En su lugar, use gestos personalizados para interacciones exclusivas del programa.
+**La coherencia es esencial para crear experiencias de lápiz que se sientan naturales e intuitivas.** Una vez que los usuarios aprenden un gesto estándar, esperan que ese gesto tenga el mismo efecto en todos los programas aplicables. Para evitar confusiones y frustraciones, no asigne nunca significados no estándar a los gestos estándar. En su lugar, use gestos personalizados para las interacciones únicas del programa.
 
 **Edición de entrada de lápiz y texto**
 
@@ -178,7 +178,7 @@ En este ejemplo, la interfaz de usuario de entrada se acerca al 150 %.
 
 **Si solo hace cuatro cosas...**
 
-1.  1. Haga que Windows programas tengan una buena experiencia de lápiz. Los usuarios deben poder realizar las tareas más importantes del programa de forma eficaz mediante un lápiz (al menos aquellas tareas que no implican una gran cantidad de escritura o manipulación de píxeles detallada).
+1.  1. Haga que Windows programas tengan una buena experiencia de lápiz. Los usuarios deben poder realizar las tareas más importantes del programa de forma eficaz mediante un lápiz (al menos aquellas tareas que no implican una gran cantidad de escritura o manipulación detallada de píxeles).
 2.  2. Considere la posibilidad de agregar compatibilidad para escribir, dibujar y agregar comentarios directamente mediante la entrada de lápiz en los escenarios más relevantes.
 3.  3. Para crear una experiencia directa y atractiva, haga que los gestos suenen efecto inmediatamente, mantenga los puntos de contacto bajo el lápiz del usuario sin problemas a lo largo del gesto y haga que el efecto del gesto se asigne directamente al movimiento del usuario.
 4.  4. Para crear una experiencia natural e intuitiva, admita los gestos estándar adecuados y asígneles sus significados estándar. Use gestos personalizados para interacciones únicas del programa.

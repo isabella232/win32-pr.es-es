@@ -26,7 +26,7 @@ ms.locfileid: "118391901"
 
 Se usa para asociar una máquina virtual a su BIOS.
 
-La sintaxis siguiente se Managed Object Format código MOF e incluye todas las propiedades heredadas.
+La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-La máquina virtual que se inicia desde el BIOS.
+Máquina virtual que se inicia desde el BIOS.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ BIOS asociado a la máquina virtual.
 
 ## <a name="remarks"></a>Comentarios
 
-El acceso a **la clase \_ SystemBIOS de Msvm** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+El acceso a la **clase \_ SystemBIOS de Msvm** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 

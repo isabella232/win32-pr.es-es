@@ -1,17 +1,17 @@
 ---
 description: Se ha completado una solicitud de pausa.
 ms.assetid: 32acad47-65bd-42f0-987e-3690bb824b05
-title: EC_PAUSED (DShow. h)
+title: EC_PAUSED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fa25a2f32f191519e55e286dac52542bcef949a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebc16eefcf88402ccf0a6173bcfa22e3100c33985469b7372ad6bb2ea97c572d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820056"
 ---
-# <a name="ec_paused"></a>EC en \_ pausa
+# <a name="ec_paused"></a>EC \_ PAUSED
 
 Se ha completado una solicitud de pausa.
 
@@ -22,7 +22,7 @@ Se ha completado una solicitud de pausa.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**HRESULT**) Estado del operación de pausa.
+(**HRESULT**) Estado de la operación de pausa.
 
 </dd> <dt>
 
@@ -37,9 +37,9 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El administrador de gráficos de filtros envía este evento cuando completa un comando de pausa asincrónica.
+El administrador de gráficos de filtros envía este evento cuando completa un comando de pausa asincrónico.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,11 +47,11 @@ El administrador de gráficos de filtros envía este evento cuando completa un c
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

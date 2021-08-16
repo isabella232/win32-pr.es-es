@@ -1,7 +1,7 @@
 ---
 description: Compara dos tokens de acceso y determina si son equivalentes con respecto a una llamada a la función AccessCheck.
 ms.assetid: 3a07ddc6-9748-4f96-a597-2af6b4282e56
-title: Función NtCompareTokens (Ntseapi. h)
+title: Función NtCompareTokens (Ntseapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: d4d0f35bff8fa65e0e09be32a55281b5118f244c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a763f6f4238632c3bcc736ebacbd2ff133b1955da673a0397ba9a95ebb87c2fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117780567"
 ---
-# <a name="ntcomparetokens-function"></a>NtCompareTokens función)
+# <a name="ntcomparetokens-function"></a>Función NtCompareTokens
 
-La función **NtCompareTokens** compara dos [*tokens de acceso*](/windows/desktop/SecGloss/a-gly) y determina si son equivalentes con respecto a una llamada a la función [**AccessCheck**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) .
+La **función NtCompareTokens** compara dos [*tokens*](/windows/desktop/SecGloss/a-gly) de acceso y determina si son equivalentes con respecto a una llamada a la [**función AccessCheck.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,43 +41,43 @@ NTSTATUS NTAPI NtCompareTokens(
 
 <dl> <dt>
 
-*FirstTokenHandle* \[ de\]
+*FirstTokenHandle* \[ En\]
 </dt> <dd>
 
-Identificador del primer token de acceso que se va a comparar. El token debe estar abierto para el acceso a la **\_ consulta de tokens** .
+Identificador del primer token de acceso que se comparará. El token debe estar abierto para el **acceso a TOKEN \_ QUERY.**
 
 </dd> <dt>
 
-*SecondTokenHandle* \[ de\]
+*SecondTokenHandle* \[ En\]
 </dt> <dd>
 
-Identificador del segundo token de acceso que se va a comparar. El token debe estar abierto para el acceso a la **\_ consulta de tokens** .
+Identificador del segundo token de acceso que se comparará. El token debe estar abierto para el **acceso a TOKEN \_ QUERY.**
 
 </dd> <dt>
 
-*Igual* \[ a enuncia\]
+*Igual a* \[ out\]
 </dt> <dd>
 
-Un puntero a una variable que recibe un valor que indica si los tokens representados por los parámetros *FirstTokenHandle* y *SecondTokenHandle* son equivalentes.
+Puntero a una variable que recibe un valor que indica si los tokens representados por los parámetros *FirstTokenHandle* y *SecondTokenHandle* son equivalentes.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve el estado \_ Success.
+Si la función se realiza correctamente, la función devuelve STATUS \_ SUCCESS.
 
-Si se produce un error en la función, devuelve un código de error **NTSTATUS** .
+Si se produce un error en la función, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Dos tokens de control de acceso se consideran equivalentes si se cumplen todas las condiciones siguientes:
 
--   Cada [*identificador de seguridad*](/windows/desktop/SecGloss/s-gly) (SID) que se encuentra en cualquiera de los tokens también está presente en el otro token.
+-   Todos [*los identificadores*](/windows/desktop/SecGloss/s-gly) de seguridad (SID) presentes en cualquiera de los tokens también están presentes en el otro token.
 -   Ninguno de los tokens o ambos están restringidos.
--   Si ambos tokens están restringidos, todos los SID que están restringidos en un token también están restringidos en el otro token.
--   Cada privilegio presente en cualquiera de los tokens también está presente en el otro token.
+-   Si ambos tokens están restringidos, todos los SID restringidos en un token también se restringen en el otro token.
+-   Todos los privilegios presentes en cualquiera de los tokens también están presentes en el otro token.
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,9 +85,9 @@ Esta función no tiene asociado ningún archivo de encabezado o biblioteca de im
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Ntseapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Ntseapi.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ntdll.dll</dt> </dl> |
 
 

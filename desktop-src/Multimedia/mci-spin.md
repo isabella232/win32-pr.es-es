@@ -1,6 +1,6 @@
 ---
 title: MCI_SPIN comando (Mmsystem.h)
-description: El comando MCI \_ SPIN inicia el dispositivo girando o hacia abajo. Los dispositivos Videodisc reconocen este comando.
+description: El comando SPIN de MCI \_ inicia el dispositivo girando hacia arriba o hacia abajo. Los dispositivos videodiscos reconocen este comando.
 ms.assetid: 9e491455-d06d-44c6-8aca-6360384ec266
 keywords:
 - MCI_SPIN comando Windows Multimedia
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118374597"
 ---
-# <a name="mci_spin-command"></a>Comando MCI \_ SPIN
+# <a name="mci_spin-command"></a>Comando SPIN de MCI \_
 
-El comando MCI \_ SPIN inicia el dispositivo girando o hacia abajo. Los dispositivos Videodisc reconocen este comando.
+El comando SPIN de MCI \_ inicia el dispositivo girando hacia arriba o hacia abajo. Los dispositivos videodiscos reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -66,11 +66,11 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
-Las siguientes marcas adicionales se aplican a los dispositivos videodisc:
+Las marcas adicionales siguientes se aplican a los dispositivos videodisc:
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Detiene el giro del disco.
 <span id="MCI_VD_SPIN_UP"></span><span id="mci_vd_spin_up"></span>MCI \_ VD \_ SPIN \_ UP
 </dt> <dd>
 
-Inicia el giro del disco.
+Inicia el disco girando.
 
 </dd> </dl>
 

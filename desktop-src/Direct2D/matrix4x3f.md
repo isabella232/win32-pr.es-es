@@ -1,10 +1,10 @@
 ---
-title: Clase Matrix4x3F (D2d1 \_ helper. h)
-description: La clase Matrix4x3F representa una matriz de 4 por 3 y proporciona métodos útiles para crear matrices.
+title: Clase Matrix4x3F (D2d1 \_ helper.h)
+description: La clase Matrix4x3F representa una matriz 4 por 3 y proporciona métodos prácticos para crear matrices.
 ms.assetid: 633B1828-0CB5-4CD3-9826-C65083C6C0A9
 keywords:
 - Clase Matrix4x3F Direct2D
-- Clase Matrix4x3F Direct2D, descrita
+- Matrix4x3F clase Direct2D , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,33 +15,33 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81467b51eb22586d537c7ea8032e13a30da19c55
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bf7522ebb7eb3d2accee2a914de46ae5c90fb29653765a0fa3d541a46f83b563
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825170"
 ---
-# <a name="matrix4x3f-class"></a>Clase Matrix4x3F
+# <a name="matrix4x3f-class"></a>Matrix4x3F (clase)
 
-La clase **Matrix4x3F** representa una matriz de 4 por 3 y proporciona métodos útiles para crear matrices.
+La **clase Matrix4x3F** representa una matriz 4 por 3 y proporciona métodos prácticos para crear matrices.
 
 ## <a name="members"></a>Miembros
 
-La clase **Matrix4x3F** hereda de [**D2D1 \_ Matrix \_ 4X3 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_4x3_f). **Matrix4x3F** también tiene estos tipos de miembros:
+La **clase Matrix4x3F** hereda de [**D2D1 \_ MATRIX \_ 4X3 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_4x3_f). **Matrix4x3F** también tiene estos tipos de miembros:
 
 -   [Constructores](#constructors)
 
 ### <a name="constructors"></a>Constructores
 
-La clase **Matrix4x3F** tiene estos constructores.
+La **clase Matrix4x3F** tiene estos constructores.
 
 
 
 | Constructor                                                                                                                                                                                           | Descripción                                                                                                                        |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-| [**Matrix4x3F()**](matrix4x3f-matrix4x3f--.md)                                                                                                                                                       | Crea una nueva instancia de una clase **Matrix4x3F** no inicializada.<br/>                                                   |
-| [**Matrix4x3F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT) (FLOAT, Float, Float, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, float)**](matrix4x3f-matrix4x3f-floats-.md) | Crea una nueva instancia de una clase **Matrix4x3F** que se inicializa con todos los valores de la matriz de punto flotante.<br/> |
+| [**Matrix4x3F()**](matrix4x3f-matrix4x3f--.md)                                                                                                                                                       | Crea instancias de una nueva instancia de una clase **Matrix4x3F** sin inicializar.<br/>                                                   |
+| [**Matrix4x3F(FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT)(FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT)**](matrix4x3f-matrix4x3f-floats-.md) | Crea instancias de una nueva instancia de una clase **Matrix4x3F** que se inicializa con todos los valores de la matriz de punto flotante.<br/> |
 
 
 
@@ -51,23 +51,23 @@ La clase **Matrix4x3F** tiene estos constructores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y actualización de plataforma para aplicaciones de UWP de aplicaciones de escritorio de Windows Vista \[ \|\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y la actualización de la plataforma de aplicaciones de escritorio de Windows Server 2008 \[ \| aplicaciones para UWP\]<br/> |
-| Teléfono mínimo compatible<br/>  | Windows Phone 8,1 \[ Windows Phone aplicaciones de Windows Runtime Silverlight 8,1 y\]<br/>                                                  |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
+| Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
 | Espacio de nombres<br/>                | D2D1<br/>                                                                                                                          |
-| Encabezado<br/>                   | <dl> <dt>\_Aplicación auxiliar de D2d1. h</dt> </dl>                                                |
-| Biblioteca<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                                      |
+| Header<br/>                   | <dl> <dt>D2d1 \_ helper.h</dt> </dl>                                                |
+| Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**D2D1 \_ Matrix \_ 4X3 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_4x3_f)
+[**MATRIZ D2D1 \_ \_ 4X3 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_4x3_f)
 </dt> </dl>
 
  

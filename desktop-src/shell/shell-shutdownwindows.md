@@ -1,5 +1,5 @@
 ---
-description: 'Método Shell.ShutdownWindows: muestra el cuadro de diálogo Cerrar Windows ventana. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Apagar.'
+description: 'Método Shell.ShutdownWindows: muestra el cuadro de diálogo Cerrar Windows cierre. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Apagar.'
 ms.assetid: 6fa8e2e0-a58f-4837-89f5-898cece2d80a
 title: Método Shell.ShutdownWindows (Shldisp.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "117857734"
 ---
 # <a name="shellshutdownwindows-method"></a>Método Shell.ShutdownWindows
 
-Muestra el **cuadro de diálogo Cerrar Windows** cierre. Esto es lo mismo que hacer clic en **el menú** Inicio y seleccionar **Apagar.**
+Muestra el **cuadro de diálogo Windows** apagado. Esto es lo mismo que hacer clic en **el menú** Inicio y seleccionar **Apagar.**
 
 ## <a name="syntax"></a>Sintaxis
 

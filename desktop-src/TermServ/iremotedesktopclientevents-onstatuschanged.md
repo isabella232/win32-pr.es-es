@@ -1,12 +1,12 @@
 ---
-title: Método IRemoteDesktopClientEvents OnStatusChanged (Locationapi. h)
+title: Método OnStatusChanged de IRemoteDesktopClientEvents (Locationapi.h)
 description: Se llama cuando el control de cliente ha actualizado su estado.
 ms.assetid: AAFBDC9E-C8B5-4924-AA69-82EF09996AF7
 ms.tgt_platform: multiple
 keywords:
 - Método OnStatusChanged Servicios de Escritorio remoto
-- Método OnStatusChanged Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método OnStatusChanged
+- Método OnStatusChanged Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnStatusChanged
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b17e42e75072033f952c7ef790365d6a363a5b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d08b15eb2b8112afcef6c98a841a249672df2ae3fbb7f36ceea513d53a5b0478
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118351627"
 ---
-# <a name="iremotedesktopclienteventsonstatuschanged-method"></a>IRemoteDesktopClientEvents:: OnStatusChanged (método)
+# <a name="iremotedesktopclienteventsonstatuschanged-method"></a>IRemoteDesktopClientEvents::OnStatusChanged (método)
 
 Se llama cuando el control de cliente ha actualizado su estado.
 
@@ -47,14 +47,14 @@ void OnStatusChanged(
 *statusCode* 
 </dt> <dd>
 
-El nuevo código de estado.
+Nuevo código de estado.
 
 </dd> <dt>
 
 *statusMessage* 
 </dt> <dd>
 
-El texto del mensaje de estado.
+Texto del mensaje de estado.
 
 </dd> </dl>
 
@@ -66,18 +66,18 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>Locationapi. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Locationapi.h</dt> </dl>       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>         |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>         |
 | IID<br/>                      | DIID \_ IRemoteDesktopClientEvents se define como 079863B7-6D47-4105-8BFE-0CDCB360E67D<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

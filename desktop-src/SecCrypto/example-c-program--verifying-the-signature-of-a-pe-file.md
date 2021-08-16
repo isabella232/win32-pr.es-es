@@ -1,7 +1,7 @@
 ---
 description: WinVerifyTrust API se puede usar para comprobar la firma de un archivo ejecutable portátil.
 ms.assetid: dd53bd44-5dbf-44e9-9945-093995508f44
-title: 'Programa C de ejemplo: Comprobar la firma de un archivo PE'
+title: 'Programa C de ejemplo: comprobar la firma de un archivo PE'
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ec2f2aa5261924fcb9744848f4d9455b2aad69c28ad03360370f621886a9339d
@@ -11,11 +11,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117765525"
 ---
-# <a name="example-c-program-verifying-the-signature-of-a-pe-file"></a>Programa C de ejemplo: Comprobar la firma de un archivo PE
+# <a name="example-c-program-verifying-the-signature-of-a-pe-file"></a>Programa C de ejemplo: comprobar la firma de un archivo PE
 
 [**WinVerifyTrust**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) API se puede usar para comprobar la firma de un archivo ejecutable portátil.
 
-En el ejemplo siguiente se muestra cómo usar [**WinVerifyTrust**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) API para comprobar la firma de un archivo ejecutable portátil firmado.
+En el ejemplo siguiente se muestra cómo usar la API [**WinVerifyTrust**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) para comprobar la firma de un archivo ejecutable portátil firmado.
 
 
 ```C++

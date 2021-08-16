@@ -28,7 +28,7 @@ Implementa la [**interfaz IInkAnalyzer.**](iinkanalyzer.md)
 
 Esta clase implementa la [**interfaz COM IInkAnalyzer.**](iinkanalyzer.md)
 
-[ \_ IAnalysisEvents](-ianalysisevents.md) es el origen predeterminado de eventos y proporciona eventos estándar para [**IInkAnalyzer.**](iinkanalyzer.md)
+[ \_ IAnalysisEvents es](-ianalysisevents.md) el origen predeterminado de eventos y proporciona eventos estándar para [**IInkAnalyzer.**](iinkanalyzer.md)
 
 [**\_ IAnalysisProxyEvents proporciona**](-ianalysisproxyevents.md) los eventos de proxy de datos para [**IInkAnalyzer.**](iinkanalyzer.md) Para obtener más información, vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 

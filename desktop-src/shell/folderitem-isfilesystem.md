@@ -1,7 +1,7 @@
 ---
 description: Indica si el elemento forma parte del sistema de archivos.
 ms.assetid: 321a2109-88b5-4a41-9a67-dab3e82e95d8
-title: Propiedad carpeta. IsFileSystem (Shldisp. h)
+title: Propiedad FolderItem.IsFileSystem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 852f022e1c24fa24c158ee4eb68dca44e6f010a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b618821880a713e3e76e3ae9c78454bb15469a578ab4d40def1a66d2d763c71a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860215"
 ---
-# <a name="folderitemisfilesystem-property"></a>Propiedad carpeta. IsFileSystem
+# <a name="folderitemisfilesystem-property"></a>Propiedad FolderItem.IsFileSystem
 
 Indica si el elemento forma parte del sistema de archivos.
 
@@ -37,13 +37,13 @@ bIsFileSystem = FolderItem.IsFileSystem
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un **valor booleano** que recibe **true** si el elemento forma parte del sistema de archivos o **false** en caso contrario.
+Valor **booleano** que recibe **true** si el elemento forma parte del sistema de archivos o **false** si no es así.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **IsFileSystem** para determinar si la carpeta de Windows forma parte del sistema de archivos. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa IsFileSystem** para determinar si Windows carpeta forma parte del sistema de archivos. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -146,13 +146,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

@@ -1,45 +1,45 @@
 ---
 title: Spinner
-description: El control de número es un control compuesto que consta de un botón de incremento, un botón de decremento y un control de edición, que se usan para proporcionar valores decimales a la aplicación.
+description: Spinner es un control compuesto que consta de un botón de incremento, un botón de decremento y un control de edición, que se usan para proporcionar valores decimales a la aplicación.
 ms.assetid: 63689ed3-7326-4f7a-b700-d89e9b501ef1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0875fb31d0dac73c88f3bd502746c473dc1c2b1
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 30c4a6544c10634783b1671f586108a795d67d90c808943b08a2cfcbf6a476da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105695783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851393"
 ---
 # <a name="spinner"></a>Spinner
 
-El control de número es un control compuesto que consta de un botón de incremento, un botón de decremento y un control de edición, que se usan para proporcionar valores decimales a la aplicación.
+Spinner es un control compuesto que consta de un botón de incremento, un botón de decremento y un control de edición, que se usan para proporcionar valores decimales a la aplicación.
 
 -   [Detalles](#details)
--   [Propiedades de control de número](#spinner-properties)
+-   [Propiedades de spinner](#spinner-properties)
 -   [Comentarios:](#remarks)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="details"></a>Detalles
 
-En la captura de pantalla siguiente se muestra el control de número de cinta.
+En la siguiente captura de pantalla se muestra el botón de número de la cinta de opciones.
 
-![captura de pantalla de un control de número en la cinta de Windows Live MovieMaker.](images/controls/spinner.png)
+![captura de pantalla de un control de número en la cinta de windows live moviemaker.](images/controls/spinner.png)
 
-## <a name="spinner-properties"></a>Propiedades de control de número
+## <a name="spinner-properties"></a>Propiedades de spinner
 
-El marco de cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el control de número.
+El marco de la cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el control Spinner.
 
-Normalmente, una propiedad de número se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control a través de una llamada al método [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) . Se controla el evento de invalidación y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+Normalmente, una propiedad Spinner se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) controla el evento de invalidación y las actualizaciones de propiedad definidas.
 
-No se ejecuta el método de devolución de llamada [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) y la aplicación solicitó un valor de propiedad actualizado hasta que el marco de trabajo requiera la propiedad. Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
+El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación consulta un valor de propiedad actualizado, hasta que el marco de trabajo requiera la propiedad . Por ejemplo, cuando se activa una pestaña y se muestra un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
 
 > [!Note]  
-> En algunos casos, una propiedad se puede recuperar a través del método [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) .
+> En algunos casos, una propiedad se puede recuperar mediante el método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-En la tabla siguiente se enumeran las claves de propiedad que están asociadas al control de número.
+En la tabla siguiente se enumeran las claves de propiedad asociadas al control Spinner.
 
 
 
@@ -61,16 +61,16 @@ En la tabla siguiente se enumeran las claves de propiedad que están asociadas a
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-decimalvalue.md">UI_PKEY_DecimalValue</a></td>
-<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> y <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.
+<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.
 <blockquote>
 [!Note]<br />
-Si el comando asociado al control se invalida mediante una llamada a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand"><strong>IUIFramework:: InvalidateUICommand</strong></a>, el marco consulta esta propiedad cuando <code>UI_INVALIDATIONS_VALUE</code> se pasa como el valor de <em>Flags</em>.
+Si el comando asociado al control se invalida mediante una llamada a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand"><strong>IUIFramework::InvalidateUICommand</strong></a>, el marco consulta esta propiedad cuando se pasa como el valor de <code>UI_INVALIDATIONS_VALUE</code> <em>las marcas</em>.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> y <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-formatstring.md">UI_PKEY_FormatString</a></td>
@@ -131,7 +131,7 @@ Si el comando asociado al control se invalida mediante una llamada a <a href="/w
 
  
 
-En la sección de código siguiente se muestra cómo se actualizan varias propiedades del control de número en el método [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+En la siguiente sección de código se muestra cómo se actualizan varias propiedades del control Spinner en el [**método IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
 
 ```C++
@@ -210,12 +210,12 @@ STDMETHODIMP CCommandHandler::UpdateProperty(
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor mínimo ([UI \_ PKEY \_ MinValue](windowsribbon-reference-properties-uipkey-minvalue.md)) de un control de número se inicializa en 0,0, la aplicación debe asegurarse de que cualquier valor subsiguiente proporcionado por el control no sea igual a-0,0 (cero negativo). Si el control de número proporciona un valor de-0,0, la aplicación debe restablecer este valor a 0,0 (cero positivo) mediante el método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) como se muestra en el ejemplo siguiente de un método [**IUICommandHandler:: Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) para un control de número.
+Si el valor mínimo[(ui \_ PKEY \_ MinValue)](windowsribbon-reference-properties-uipkey-minvalue.md)de un spinner se inicializa en 0,0, la aplicación debe asegurarse de que cualquier valor posterior proporcionado por el control no sea igual a -0,0 (cero negativo). Si spinner proporciona un valor de -0.0, la aplicación debe restablecer este valor a 0,0 (cero positivo) mediante el método [**IUIFramework::SetUICommandProperty,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) como se muestra en el ejemplo siguiente de un método [**IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) para un control Spinner.
 
 > [!Note]  
-> Si no se realiza esta prueba y el valor se deja sin corregir, el campo de edición del control muestra la cadena "auto".
+> Si no se realiza esta prueba y el valor se deja sin corregir, el campo de edición del control muestra la cadena "Auto".
 
  
 
@@ -301,9 +301,9 @@ STDMETHODIMP CCommandHandler::Execute(
 
 <dl> <dt>
 
-[Biblioteca de controles de Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controles del marco de opciones](windowsribbon-controls-entry.md)
 </dt> <dt>
 
-[**Elemento de marcado de número**](windowsribbon-element-spinner.md)
+[**Elemento de marcado Spinner**](windowsribbon-element-spinner.md)
 </dt> </dl>
 

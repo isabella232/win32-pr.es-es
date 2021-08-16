@@ -1,5 +1,5 @@
 ---
-description: Cómo usar la API de inscripción de certificados para ampliar las funcionalidades de Servicios de certificados de Active Directory.
+description: Uso de la API de inscripción de certificados para ampliar las funcionalidades de Servicios de certificados de Active Directory.
 ms.assetid: a38c6974-609b-4a60-98da-ad8e0a8fd58f
 title: Uso de la API de inscripción de certificados
 ms.topic: article

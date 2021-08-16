@@ -1,5 +1,5 @@
 ---
-description: WMI se ejecuta como un servicio con el nombre para mostrar &\# 0034;Windows Management Instrumentation&0034; y el nombre del \# servicio &\# 0034;winmgmt&\# 0034;.
+description: WMI se ejecuta como un servicio con el nombre para mostrar &\# 0034;Windows Management Instrumentation&0034; y el nombre del servicio \# \# &0034;winmgmt&\# 0034;.
 ms.assetid: 8dff43bf-71d0-4d5a-91bc-6f474186d4ba
 ms.tgt_platform: multiple
 title: Iniciar y detener el servicio WMI
@@ -43,7 +43,7 @@ En el procedimiento siguiente se describe cómo detener el servicio WMI.
 
 1.  En un símbolo del sistema, escriba **net stop winmgmt**.
 
-2.  Otros servicios que dependen del servicio WMI también se detienen, como el host del agente SMS o el firewall Windows sms.
+2.  Otros servicios que dependen del servicio WMI también se detienen, como el host del agente SMS o Windows Firewall.
 
 ## <a name="examples"></a>Ejemplos
 

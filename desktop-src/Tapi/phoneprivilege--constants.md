@@ -22,7 +22,7 @@ Las constantes de marca de bits **PHONEPRIVILEGE \_** describen las distintas fo
 
 
 
-Se informa a una aplicación que abre un dispositivo telefónico con el privilegio de monitor sobre los eventos y los cambios de estado que se producen en el teléfono. La aplicación no puede invocar ninguna operación en el dispositivo telefónico que cambiaría su estado, por lo que solo se pueden invocar operaciones de estado. Varias aplicaciones pueden supervisar un dispositivo de teléfono en un momento dado.
+Se informa a una aplicación que abre un dispositivo telefónico con el privilegio de monitor sobre los eventos y los cambios de estado que se producen en el teléfono. La aplicación no puede invocar ninguna operación en el dispositivo telefónico que cambiaría su estado, por lo que solo se pueden invocar las operaciones de estado. Varias aplicaciones pueden supervisar un dispositivo de teléfono en un momento dado.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ Se informa a una aplicación que abre un dispositivo telefónico con el privileg
 
 
 
-Una aplicación que abre un dispositivo de teléfono con el privilegio de propietario puede cambiar el estado de las bombillas, el timbre, la pantalla, el conmutador de enlace y los bloques de datos del teléfono. La apertura de un dispositivo de teléfono en modo de propietario también proporciona supervisión del dispositivo telefónico. Solo se permite que una aplicación sea el propietario de un dispositivo de teléfono en un momento dado.
+Una aplicación que abre un dispositivo telefónico con el privilegio de propietario puede cambiar el estado de las bombillas, el timbre, la pantalla, el conmutador de enlace y los bloques de datos del teléfono. La apertura de un dispositivo de teléfono en modo de propietario también proporciona supervisión del dispositivo telefónico. Solo se permite que una aplicación sea el propietario de un dispositivo de teléfono en un momento dado.
 
 
 </dt> </dl> </dd> </dl>
@@ -45,7 +45,7 @@ Sin extensibilidad. Los 32 bits están reservados.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
 | Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |

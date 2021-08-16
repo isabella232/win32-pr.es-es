@@ -25,7 +25,7 @@ Los temas contenidos en esta sección describen aspectos específicos del marco 
 
 [Crear una aplicación de cinta de opciones](windowsribbon-stepbystep.md)
 
-Para que Windows de la cinta de opciones consuma el archivo de marcado de la cinta de opciones, el archivo de marcado debe compilarse en un archivo de recursos de formato binario. Un compilador de marcado de cinta dedicado, el compilador de comandos de interfaz de usuario (UICC), se incluye con el Kit de desarrollo de software (SDK) de Microsoft Windows (7.0 o posterior) para este propósito. Además de compilar la versión binaria del marcado de la cinta de opciones, uicc genera un archivo de encabezado de definición de identificador (.h) que expone todos los elementos de marcado a la aplicación host de la cinta de opciones y un archivo de recursos (.rc) que se usa para vincular recursos de imagen y cadena a la aplicación host en tiempo de compilación.
+Para que Windows marco de la cinta de opciones consuma el archivo de marcado de la cinta de opciones, el archivo de marcado debe compilarse en un archivo de recursos de formato binario. Para ello, se incluye un compilador de marcado de cinta dedicado, el compilador de comandos de interfaz de usuario (UICC), con el Kit de desarrollo de software (SDK) de Microsoft Windows (7.0 o posterior). Además de compilar la versión binaria del marcado de la cinta de opciones, uicc genera un archivo de encabezado de definición de identificador (.h) que expone todos los elementos de marcado a la aplicación host de la cinta de opciones y un archivo de recursos (.rc) que se usa para vincular recursos de imagen y cadena a la aplicación host en tiempo de compilación.
 
 [Migración al marco de Windows cinta de opciones](ribbon-migration.md)
 
@@ -47,7 +47,7 @@ Para Windows 7 y versiones anteriores, los recursos de imagen deben ajustarse al
 
 [Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 
-Los controles hospedados en la barra de comandos de la cinta de opciones están sujetos a reglas de diseño que exige el marco de la cinta de opciones y se basan en una combinación de comportamientos predeterminados y plantillas de diseño (tanto definidas como personalizadas por el marco) tal y como se declara en el marcado de la cinta de opciones. Estas reglas definen los comportamientos de diseño adaptable del marco de la cinta de opciones que influyen en cómo los controles de la barra de comandos se adaptan a varios tamaños de cinta en tiempo de ejecución.
+Los controles hospedados en la barra de comandos de la cinta de opciones están sujetos a reglas de diseño que exige el marco de la cinta de opciones y se basan en una combinación de comportamientos predeterminados y plantillas de diseño (tanto definidas como personalizadas por el marco) tal y como se declara en el marcado de la cinta de opciones. Estas reglas definen los comportamientos de diseño adaptable del marco de la cinta de opciones que influyen en cómo se adaptan los controles de la barra de comandos a varios tamaños de cinta en tiempo de ejecución.
 
 [Trabajar con galerías](ribbon-controls-galleries.md)
 
@@ -73,11 +73,11 @@ El marco de la cinta de opciones expone un conjunto de propiedades que permiten 
 
 [Estado de la cinta de opciones persistente](ribbon-statepersistence.md)
 
-El Windows marco de trabajo de Nidón (cinta de opciones) proporciona la capacidad de conservar el estado de una variedad de configuraciones de usuario y preferencias en las sesiones de la aplicación.
+El Windows de aplicaciones (cinta de opciones) proporciona la capacidad de conservar el estado de una variedad de configuraciones de usuario y preferencias en las sesiones de la aplicación.
 
 [Escuchar eventos de la cinta de opciones](listening-for-ribbon-events.md)
 
-El marco de la cinta de opciones usa la infraestructura de seguimiento de eventos [para Windows (ETW)](../etw/event-tracing-portal.md) para permitir a los desarrolladores aprender cómo interactúan los usuarios con la cinta de opciones de su aplicación.
+El marco de la cinta de opciones usa la infraestructura de seguimiento de eventos para [Windows (ETW)](../etw/event-tracing-portal.md) para permitir a los desarrolladores aprender cómo interactúan los usuarios con la cinta de opciones de su aplicación.
 
 ## <a name="markup-compiler"></a>Compilador de marcado
 
@@ -87,7 +87,7 @@ Para que el marco de la cinta de opciones consuma el archivo de marcado [de](win
 
 [Descripción de los mensajes del compilador de marcado](windowsribbon-compilationerrors.md)
 
-El compilador de marcado Windows Ribbon Framework (Ribbon), ui Command Compiler (UICC.exe), valida el marcado de la cinta de opciones con el esquema de la cinta de opciones y un conjunto adicional de reglas definido por el marco de la cinta.
+El compilador de marcado Windows Ribbon Framework (Ribbon), ui Command Compiler (UICC.exe), valida el marcado de la cinta de opciones con el esquema de la cinta de opciones y un conjunto adicional de reglas definido por el marco de la cinta de opciones.
 
  
 

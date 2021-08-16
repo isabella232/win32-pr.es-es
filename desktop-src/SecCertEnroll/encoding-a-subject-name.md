@@ -1,5 +1,5 @@
 ---
-description: Al inicializar un objeto IX500DistinguishedName con un nombre distintivo para identificar el asunto de una solicitud de certificado, se crea una secuencia de notación de sintaxis abstracta (ASN.1) codificada en reglas de codificación distinguida (DER).
+description: Al inicializar un objeto IX500DistinguishedName con un nombre distintivo para identificar el asunto de una solicitud de certificado, se crea una secuencia de notación de sintaxis abstracta codificada por reglas de codificación distinguida (DER) One (ASN.1).
 ms.assetid: 58b05b59-2235-49bd-9543-45e786d62eaf
 title: Codificación de un nombre de sujeto
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117780084"
 ---
 # <a name="encoding-a-subject-name"></a>Codificación de un nombre de sujeto
 
-Al inicializar un objeto [**IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) con un nombre distintivo para identificar el asunto de una solicitud de certificado, se crea una secuencia de notación de sintaxis abstracta codificada en [*reglas de codificación distinguida*](/windows/desktop/SecGloss/d-gly) (DER) (ASN.1). [](/windows/desktop/SecGloss/a-gly) Por ejemplo, suponga que el nombre distintivo del sujeto consta de los siguientes nombres distintivos relativos (RDN):<dl> E=Administrator@jdomcsc.nttest.microsoft.com  
+Al inicializar un objeto [**IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) con un nombre distintivo para identificar el asunto de una [](/windows/desktop/SecGloss/a-gly) solicitud de certificado, se crea una secuencia de notación de sintaxis abstracta codificada en [*reglas de codificación distinguida*](/windows/desktop/SecGloss/d-gly) (DER) (ASN.1). Por ejemplo, suponga que el nombre distintivo del sujeto consta de los siguientes nombres distintivos relativos (RDN):<dl> E=Administrator@jdomcsc.nttest.microsoft.com  
 CN=Administrator  
 CN=Users  
 DC=jdomcsc  
@@ -96,7 +96,7 @@ Como se describe [en](subject-names.md)Nombres de sujeto , cada RDN de un nombre
       |  |           ; "Users"
 ```
 
-La sintaxis de transferencia DER de un objeto ASN.1 siempre contiene un triplete de tipo, longitud y valor, y cada campo del triplete contiene uno o varios bytes. Cuando se codifica, CN=Users consta de un OID y un valor de cadena. La notación decimal con puntos del OID cn es 2.5.4.3 y el valor de cadena es "Users". El valor de cadena se representa como un **PRINTABLE_STRING** de datos. El valor de tipo numérico asociado **a OBJECT_ID** siempre es 0x06  y el tipo numérico asociado a PRINTABLE_STRING siempre se 0x13. La longitud del nombre común "Users" es 0x05 bytes. La longitud del OID es 0x03 bytes y su valor es 0x55 0x04 0x03.
+La sintaxis de transferencia DER de un objeto ASN.1 siempre contiene un triplete de tipo, longitud y valor, y cada campo del triplete contiene uno o varios bytes. Cuando se codifica, CN=Users consta de un OID y un valor de cadena. La notación decimal con puntos del OID cn es 2.5.4.3 y el valor de cadena es "Users". El valor de cadena se representa como un **PRINTABLE_STRING** de datos. El valor de tipo numérico asociado **a OBJECT_ID** siempre es 0x06 y el tipo numérico asociado a **PRINTABLE_STRING** siempre se 0x13. La longitud del nombre común "Users" es 0x05 bytes. La longitud del OID es 0x03 bytes y su valor es 0x55 0x04 0x03.
 
 > [!Note]  
 > Para convertir los dos primeros dígitos del OID 2.5.4.3 en el valor hexadecimal 0x55, multiplique el primer dígito del OID por 40 (2 x 40) y agregue el segundo dígito (5) antes de convertir a hexadecimal.

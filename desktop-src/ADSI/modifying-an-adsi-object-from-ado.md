@@ -1,30 +1,30 @@
 ---
 title: Modificar un objeto ADSI desde ADO
-description: ADSI para Windows 2000 y el cliente de DS incluye un proveedor de OLE DB de solo lectura. Esto significa que, en la actualidad, no se puede emitir la instrucción UPDATE en el dialecto SQL.
+description: ADSI para Windows 2000 y DS Client incluye un proveedor de OLE DB lectura. Esto significa que, en este momento, no se puede emitir la instrucción UPDATE en el SQL dialecto.
 ms.assetid: b0a107ed-0271-45ab-b971-f589f34472e2
 ms.tgt_platform: multiple
 keywords:
-- Modificar un objeto ADSI desde ADSI de ADO
-- Objeto de datos ActiveX ADSI, modificar un objeto ADSI desde ADO
+- Modificación de un objeto ADSI a partir de ADSI de ADO
+- ActiveX adsi de objeto de datos , modificar un objeto ADSI desde ADO
 - ADSI ADSI, código de ejemplo C/C++, modificar un objeto ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53e7291088915a537231077e1d75161b57684caa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e4562e67043ea168a0b158088ffe3c2772f3ae28a0a2fa8881e102574cf2eb97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103772943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839455"
 ---
 # <a name="modifying-an-adsi-object-from-ado"></a>Modificar un objeto ADSI desde ADO
 
-ADSI para Windows 2000 y el cliente de DS incluye un proveedor de OLE DB de solo lectura. Esto significa que, en la actualidad, no se puede emitir la instrucción UPDATE en el dialecto SQL.
+ADSI para Windows 2000 y DS Client incluye un proveedor de OLE DB lectura. Esto significa que, en este momento, no se puede emitir la instrucción UPDATE en el SQL dialecto.
 
-**Para modificar un objeto devuelto desde una consulta de ADO**
+**Para modificar un objeto devuelto desde una consulta ADO**
 
-1.  Solicite el **ADsPath** al especificar un nombre de atributo, como en "seleccionar ADsPath,..."
-2.  Ejecute la consulta y obtenga el atributo **ADsPath** .
-3.  Enlace con el conjunto de registros mediante **ADsPath** y modifique los atributos.
+1.  Solicite **ADsPath al** especificar un nombre de atributo, como en "SELECT ADsPath, ..."
+2.  Ejecute la consulta y obtenga el **atributo ADsPath.**
+3.  Enlace al conjunto de registros mediante **ADsPath** y modifique los atributos.
 
 En el ejemplo de código siguiente se muestra cómo modificar un objeto ADSI después de realizar los pasos descritos en el ejemplo anterior.
 
@@ -56,9 +56,9 @@ Wend
 
 
 
- 
+ 
 
- 
+ 
 
 
 

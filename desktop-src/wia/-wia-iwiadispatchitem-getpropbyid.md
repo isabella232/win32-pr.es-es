@@ -56,9 +56,9 @@ Este método devuelve el valor de la propiedad especificada por *id.*.
 
 ## <a name="remarks"></a>Comentarios
 
-Use este método para buscar el valor de una propiedad de elemento a partir de su identificador. Para obtener una lista de los IDs de propiedad, vea [Definiciones de constantes de propiedad de WIA.](-wia-wia-property-constant-definitions.md) Para obtener información sobre las propias propiedades, vea [WiA Property Constants](-wia-wia-property-constants.md).
+Use este método para buscar el valor de una propiedad de elemento a partir de su identificador. Para obtener una lista de los iDs de propiedad, vea [Definiciones de constantes de propiedad de WIA.](-wia-wia-property-constant-definitions.md) Para obtener información sobre las propias propiedades, vea [WiA Property Constants](-wia-wia-property-constants.md).
 
-Para las aplicaciones Visual Basic Microsoft, agregue una referencia a "biblioteca de tipos Windows image acquisition 1.01". Las siguientes constantes definidas en ese archivo solo son válidas para los elementos raíz (elementos de dispositivo):
+Para las aplicaciones Visual Basic Microsoft, agregue una referencia a "Windows biblioteca de tipos de adquisición de imágenes 1.01". Las siguientes constantes definidas en ese archivo solo son válidas para los elementos raíz (elementos de dispositivo):
 
 ``` syntax
 const FirmwareVersion = 1026
@@ -150,7 +150,7 @@ Next
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

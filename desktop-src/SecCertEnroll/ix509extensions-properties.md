@@ -19,7 +19,7 @@ La [**interfaz IX509Extensions**](/windows/desktop/api/CertEnroll/nn-certenroll-
 
 -   [**\_Propiedad NewEnum**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get__newenum)
 -   [**Count (propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get_count)
--   [**IndexByObjectId( Propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get_indexbyobjectid)
+-   [**Propiedad IndexByObjectId**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get_indexbyobjectid)
 -   [**Propiedad ItemByIndex**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensions-get_itembyindex)
 
  

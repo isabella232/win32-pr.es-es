@@ -1,7 +1,7 @@
 ---
-description: Se utiliza con el método Store. Open para indicar cómo se va a abrir un almacén de certificados.
+description: Se usa con el método Store.Open para indicar cómo se va a abrir un almacén de certificados.
 ms.assetid: 6ec87b8c-9431-4ecc-bd90-943cfe2df1c2
-title: Enumeración CAPICOM_STORE_OPEN_MODE (CAPICOM. h)
+title: CAPICOM_STORE_OPEN_MODE enumeración (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 61fe8be0bdf75db5204066563ca07f8225678f7d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebd46b751f4a098361618f3b6e992e4333425f501bf6afdedfca047e921ad7ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772062"
 ---
-# <a name="capicom_store_open_mode-enumeration"></a>\_ \_ Enumeración de modo de apertura de la tienda CAPICOM \_
+# <a name="capicom_store_open_mode-enumeration"></a>CAPICOM \_ STORE OPEN MODE \_ \_ (enumeración)
 
-El \_ tipo de \_ enumeración de modo abierto de CAPICOM \_ se utiliza con el método [**Store. Open**](store-open.md) para indicar cómo se va a abrir un almacén de certificados.
+El tipo de enumeración CAPICOM STORE OPEN MODE se usa con el método \_ \_ \_ [**Store.Open**](store-open.md) para indicar cómo se va a abrir un almacén de certificados.
 
 ## <a name="members"></a>Miembros
 
@@ -30,21 +30,21 @@ El \_ tipo de \_ enumeración de modo abierto de CAPICOM \_ se utiliza con el m�
 
 | Miembro                                      | Descripción                                                                                                                                                              | Value |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| **CAPICOM \_ Store \_ Open \_ Read \_ Only**        | Abra el almacén en modo de solo lectura.<br/>                                                                                                                             | 0     |
-| **CAPICOM \_ Store \_ Open \_ Read \_ Write**       | Abra el almacén en modo de lectura y escritura.<br/>                                                                                                                            | 1     |
-| **\_ \_ \_ máximo permitido del almacén \_ de CAPICOM**  | Abra el almacén en modo de lectura y escritura si el usuario tiene permisos de lectura y escritura. Si el usuario no tiene permisos de lectura/escritura, abra el almacén en modo de solo lectura.<br/> | 2     |
-| **CAPICOM \_ Store \_ Open \_ exist \_ Only**    | Abrir solo los almacenes existentes; no cree un nuevo almacén. Introducido por CAPICOM 2,0.<br/>                                                                              | 128   |
-| **\_ \_ archivos abiertos de \_ la tienda de CAPICOM \_** | Incluir certificados archivados al usar el almacén. Introducido por CAPICOM 2,0.<br/>                                                                                | 256   |
+| **CAPICOM \_ STORE \_ OPEN \_ READ \_ ONLY**        | Abra el almacén en modo de solo lectura.<br/>                                                                                                                             | 0     |
+| **CAPICOM \_ STORE \_ OPEN \_ READ \_ WRITE**       | Abra el almacén en modo de lectura y escritura.<br/>                                                                                                                            | 1     |
+| **CAPICOM \_ STORE \_ OPEN \_ MAXIMUM \_ ALLOWED**  | Abra el almacén en modo de lectura y escritura si el usuario tiene permisos de lectura y escritura. Si el usuario no tiene permisos de lectura y escritura, abra el almacén en modo de solo lectura.<br/> | 2     |
+| **CAPICOM \_ STORE \_ OPEN \_ EXISTING \_ ONLY**    | Abra solo los almacenes existentes; no cree un nuevo almacén. Introducido por CAPICOM 2.0.<br/>                                                                              | 128   |
+| **CAPICOM \_ STORE \_ OPEN \_ INCLUDE \_ ARCHIVED** | Incluya certificados archivados al usar el almacén. Introducido por CAPICOM 2.0.<br/>                                                                                | 256   |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al utilizar la \_ \_ enumeración de modo abierto de la tienda CAPICOM \_ , solo se puede usar una de las siguientes opciones.
+Cuando se usa la enumeración CAPICOM STORE OPEN MODE, solo se puede usar una de las \_ \_ opciones \_ siguientes.
 
--   CAPICOM \_ Store \_ Open \_ Read \_ Only
--   CAPICOM \_ Store \_ Open \_ Read \_ Write
--   \_ \_ \_ máximo permitido del almacén \_ de CAPICOM
+-   CAPICOM \_ STORE \_ OPEN \_ READ \_ ONLY
+-   CAPICOM \_ STORE \_ OPEN \_ READ \_ WRITE
+-   CAPICOM \_ STORE \_ OPEN \_ MAXIMUM \_ ALLOWED
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,16 +52,16 @@ Al utilizar la \_ \_ enumeración de modo abierto de la tienda CAPICOM \_ , solo
 
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Encabezado<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
+| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Store. Open**](store-open.md)
+[**Store.Open**](store-open.md)
 </dt> </dl>
 
  

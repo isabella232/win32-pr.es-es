@@ -1,9 +1,9 @@
 ---
-title: MDM_EnterpriseDataProtection_Settings01 (clase)
-description: La \_ clase Settings01 de EnterpriseDataProtection de MDM \_ se usa para configurar las opciones específicas de Windows Information Protection (WIP) (anteriormente conocido como protección de datos empresariales).
+title: MDM_EnterpriseDataProtection_Settings01 clase
+description: La clase MDM EnterpriseDataProtection Settings01 se usa para configurar Windows Information Protection \_ \_ (WIP) (anteriormente conocido como Enterprise Data Protection).
 ms.assetid: 7537f548-85fb-46b4-ab94-c9dcf2bf1447
 keywords:
-- MDM_EnterpriseDataProtection_Settings01 (clase)
+- MDM_EnterpriseDataProtection_Settings01 clase
 - MDM_EnterpriseDataProtection_Settings01 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e6ef063a1a8d72666dc44a2276bcecfb7d420c3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e80502ff724a43f1034922b0734fe128124c193f0ef5319ee2976257d26fbe3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165838"
 ---
-# <a name="mdm_enterprisedataprotection_settings01-class"></a>\_Clase Settings01 EnterpriseDataProtection de MDM \_
+# <a name="mdm_enterprisedataprotection_settings01-class"></a>Clase MDM \_ EnterpriseDataProtection \_ Settings01
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Settings01 de EnterpriseDataProtection de MDM** se usa para configurar las opciones específicas de Windows Information Protection (WIP) (anteriormente conocido como protección de datos empresariales). Para obtener más información sobre WIP, consulte protección [de los datos de la empresa mediante la protección de datos empresariales (este)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+La **clase MDM \_ EnterpriseDataProtection \_ Settings01** se usa para configurar Windows Information Protection (WIP) (anteriormente conocido como Enterprise Data Protection). Para más información sobre WIP, consulte Protección de los datos empresariales mediante la protección de datos [empresariales (EDP).](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -54,13 +54,13 @@ class MDM_EnterpriseDataProtection_Settings01
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ Settings01 de MDM EnterpriseDataProtection** tiene estos tipos de miembros:
+La **clase MDM \_ EnterpriseDataProtection \_ Settings01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Settings01 de MDM EnterpriseDataProtection** tiene estas propiedades.
+La **clase MDM \_ EnterpriseDataProtection \_ Settings01** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ La **clase \_ \_ Settings01 de MDM EnterpriseDataProtection** tiene estas propie
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -81,7 +81,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -92,7 +92,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **Octetstring**
@@ -106,7 +106,7 @@ Calificadores: **Octetstring**
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -117,7 +117,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -128,7 +128,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -142,10 +142,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica el nombre del nodo primario. Para esta clase, la cadena es "Settings".
+Identifica el nombre del nodo primario. Para esta clase, la cadena es "Configuración".
 
 </dd> <dt>
 
@@ -158,10 +158,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/EnterpriseDataProtection".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/EnterpriseDataProtection"
 
 </dd> <dt>
 
@@ -171,7 +171,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -182,7 +182,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -193,7 +193,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -202,13 +202,13 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

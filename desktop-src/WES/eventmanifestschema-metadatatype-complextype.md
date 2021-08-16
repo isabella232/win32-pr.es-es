@@ -127,7 +127,7 @@ Define los tipos de metadatos que puede definir en la sección de metadatos del 
 |---------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | message | [**strTableRef**](eventmanifestschema-strtableref-simpletype.md) | Referencia a la cadena localizada en la tabla de cadenas.<br/>                                |
 | mId     | xs:string                                                         | No se usa.<br/>                                                                               |
-| name    | anyURI                                                            | Uri del archivo de metadatos. <br/>                                                              |
+| name    | anyURI                                                            | Uri del metarchivo. <br/>                                                              |
 | símbolo  | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Nombre simbólico que desea que el compilador de mensajes cree para esta cadena de mensaje.<br/> |
 | value   | [**UInt32Type**](eventmanifestschema-hexint32type-simpletype.md) | Número que se va a usar como identificador de mensaje para este mensaje.<br/>                           |
 

@@ -1,5 +1,5 @@
 ---
-description: Las constantes de marca de bits LINECALLCOMPLMODE describen \_ distintas maneras en que se puede completar una llamada.
+description: Las constantes de marca de bits LINECALLCOMPLMODE describen diferentes maneras en las que \_ se puede completar una llamada.
 ms.assetid: 68f755a1-586b-4c5b-b8e8-c8b40eb71685
 title: LINECALLCOMPLMODE_ constantes (Tapi.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117761759"
 ---
-# <a name="linecallcomplmode_-constants"></a>Constantes LINECALLCOMPLMODE \_
+# <a name="linecallcomplmode_-constants"></a>LineCALLCOMPLMODE \_ (Constantes)
 
-Las constantes de marca de bits **LINECALLCOMPLMODE \_** describen distintas maneras en que se puede completar una llamada.
+Las constantes de marca de bits **LINECALLCOMPLMODE \_** describen diferentes maneras en las que se puede completar una llamada.
 
 <dl> <dt>
 
@@ -42,7 +42,7 @@ Pone en cola la llamada hasta que se puede completar la llamada.
 
 
 
-Agrega la aplicación a la llamada existente en la estación llamada (ir a).
+Agrega la aplicación a la llamada existente en la estación llamada (ir a la estación).
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Agrega la aplicación a la llamada existente en la estación llamada (ir a).
 
 
 
-Deja un mensaje corto predefinido para la estación llamada (Dejar llamada a Word). El mensaje que se va a enviar se especifica por separado.
+Deja un mensaje predefinido corto para la estación llamada (Dejar llamada a Word). El mensaje que se va a enviar se especifica por separado.
 
 
 </dt> </dl> </dd> </dl>
@@ -65,7 +65,7 @@ Sin extensibilidad. Los 32 bits están reservados.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
 | Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |

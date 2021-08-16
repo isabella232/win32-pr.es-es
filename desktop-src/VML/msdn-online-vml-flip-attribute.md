@@ -1,24 +1,24 @@
 ---
-title: Atributo Flip de VML
-description: Atributo Flip de VML
+title: Atributo flip de VML
+description: Atributo flip de VML
 ms.assetid: 0d3d4c54-e769-4f6b-a9f5-6e48125a7215
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7d17c224ee8ec04a5dcf301ad501de51323efe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5293bdff5ab888b13fdc095038e74fdbcf725bbfb1948a04018fbf5a22c5677c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346639"
 ---
-# <a name="vml-flip-attribute"></a>Atributo Flip de VML
+# <a name="vml-flip-attribute"></a>Atributo flip de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Cambia la orientación de una forma. Lectura/escritura **Cadena**.
 
@@ -28,13 +28,13 @@ Cambia la orientación de una forma. Lectura/escritura **Cadena**.
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "Flip: *Expression* " >
+<v: *element* style="flip: *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Style. Flip = "*expresión*"
+*element* .style.flip="*expression*"
 
-*expresión* = de *elemento*. Style. flip
+*expresión* = *elemento*.style.flip
 
 **Comentarios:**
 
@@ -42,26 +42,26 @@ Estos valores incluyen:
 
 
 
-| Value | Descripción                                           |
+| Valor | Descripción                                           |
 |-------|-------------------------------------------------------|
-| x     | Se voltea a lo largo del eje y, invirtiendo las coordenadas *x*. |
-| y     | Se voltea a lo largo del eje *x* y se invierten las coordenadas y. |
-| xy    | Se voltea a lo largo del eje y y del eje *x*.                  |
-| YX    | Se *voltea a lo* largo del eje *x* e y.                |
+| x     | Voltee a lo largo del eje Y, invirtiendo *las x*-coordinates. |
+| y     | Voltee a lo largo del eje *x,* invirtiendo las coordenadas Y. |
+| xy    | Voltee a lo largo de los ejes y *y y x.*                  |
+| Yx    | Voltear a lo *largo de los ejes x* e *y.*                |
 
 
 
- 
+ 
 
 *Atributo estándar de VML*
 
 **Vea también**
 
-[VgFlipOrientation](msdn-online-vector-markup-language-object-model-reference.md)
+[DvFlipOrientation](msdn-online-vector-markup-language-object-model-reference.md)
 
 **Ejemplo**
 
-La forma se voltea a lo largo del eje *y* invirtiendo las coordenadas *x* .
+La forma se volteará a lo largo *del eje y* al invertir las coordenadas *x.*
 
 
 ```HTML
@@ -72,8 +72,8 @@ La forma se voltea a lo largo del eje *y* invirtiendo las coordenadas *x* .
 
 
 
-[Ejemplo de atributo Flip](/previous-versions/bb229670(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo Flip](/previous-versions/bb229670(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

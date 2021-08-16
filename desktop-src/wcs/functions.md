@@ -8,7 +8,7 @@ keywords:
 - administración de colores de imagen, funciones
 - administración de colores, funciones
 - colors,functions
-- WCS reference,functions
+- Referencia de WCS, funciones
 - referencia de WCS,functions
 ms.localizationpriority: high
 ms.topic: article

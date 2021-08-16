@@ -1,11 +1,11 @@
 ---
-title: Propiedad de mouse IVMVirtualMachine (VPCCOMInterfaces. h)
-description: Recupera el dispositivo de mouse de la máquina virtual.
+title: Propiedad IVMVirtualMachine Mouse (VPCCOMInterfaces.h)
+description: Recupera el dispositivo del mouse de la máquina virtual.
 ms.assetid: 917bbcc1-615d-4fd7-87e1-62abf2ece539
 keywords:
-- PC virtual de propiedad del mouse
-- Propiedad del mouse Virtual PC, interfaz IVMVirtualMachine
-- Interfaz IVMVirtualMachine Virtual PC, propiedad del mouse
+- Propiedad del mouse Virtual PC
+- Propiedad del mouse Virtual PC , interfaz IVMVirtualMachine
+- IVMVirtualMachine interface Virtual PC , propiedad mouse
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 111d511f4e7948a83a968b154721bf81dbfe53b4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 96ef16d32410e66e8ea3a3baf23160074cf99d97762df3402bf437d0719d6332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344659"
 ---
-# <a name="ivmvirtualmachinemouse-property"></a>IVMVirtualMachine:: mouse (propiedad)
+# <a name="ivmvirtualmachinemouse-property"></a>Propiedad IVMVirtualMachine::Mouse
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera el dispositivo de mouse de la máquina virtual.
+Recupera el dispositivo del mouse de la máquina virtual.
 
 Esta propiedad es de solo lectura.
 
@@ -45,7 +45,7 @@ HRESULT get_Mouse(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Objeto [**IVMMouse**](ivmmouse.md) .
+Objeto [**IVMMouse.**](ivmmouse.md)
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,11 +53,11 @@ Objeto [**IVMMouse**](ivmmouse.md) .
 
 | Nombre o valor                                                                                                                                                         | Significado                                        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                            | La operación se realizó correctamente.<br/>       |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>              | El parámetro es **null**.<br/>          |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl>      | La configuración es desconocida.<br/>       |
-| <dl> <dt>Máquina virtual \_ La \_ VM E \_ no \_ ejecuta</dt> <dt>0xA0040206</dt> </dl> | La máquina virtual no se está ejecutando.<br/> |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>      | Se produjo un error inesperado.<br/>   |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                            | La operación se realizó correctamente.<br/>       |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>              | El parámetro es **NULL.**<br/>          |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl>      | La configuración es desconocida.<br/>       |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING</dt> <dt>0xA0040206</dt> </dl> | La máquina virtual no se está ejecutando.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>      | Se produjo un error inesperado.<br/>   |
 
 
 
@@ -65,18 +65,18 @@ Objeto [**IVMMouse**](ivmmouse.md) .
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine se define como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualMachine se define como \_ f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

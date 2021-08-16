@@ -43,7 +43,7 @@ Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) qu
 
 La **propiedad Application** devuelve el objeto de automatización admitido por la aplicación que contiene el control WebBrowser, si ese objeto es accesible. De lo contrario, esta propiedad devuelve el objeto de automatización del control WebBrowser.
 
-Use esta propiedad con los comandos **Set** y **CreateObject** o con el comando **GetObject** para crear y manipular una instancia de la Windows Internet Explorer aplicación.
+Use esta propiedad con los **comandos Set** y **CreateObject** o con el comando **GetObject** para crear y manipular una instancia de la Windows Internet Explorer aplicación.
 
 ## <a name="requirements"></a>Requisitos
 

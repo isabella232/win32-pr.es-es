@@ -20,7 +20,7 @@ En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 -   Adquirir un identificador para un proveedor [*de servicios criptográficos*](../secgloss/c-gly.md) mediante una [**llamada a CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
 -   Derivar una clave simétrica de una cadena de bytes mediante una llamada a [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash), [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)y [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
 -   Uso de la clave simétrica para crear un objeto hash HMAC mediante una llamada a [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) y [**CryptSetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam).
--   Aplica un algoritmo hash a un mensaje [**llamando a CryptHashData.**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)
+-   Hashing a message by calling [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
 -   Recuperar el hash mediante una [**llamada a CryptGetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam).
 
 

@@ -1,7 +1,7 @@
 ---
 description: Descifra una cadena de datos cifrada y codificada.
 ms.assetid: 7601083d-0adb-48e1-98a7-804a49f71206
-title: EncryptedData. Decrypt (método)
+title: Método EncryptedData.Decrypt
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: aa702a5cefc46f6d0cbe5d7e0fba17ff03596b40
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8bf8a108efdc462a9f08a508a05b736817ec38ce43ee50dbd3fdd11aa2af9f74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766712"
 ---
-# <a name="encrypteddatadecrypt-method"></a>EncryptedData. Decrypt (método)
+# <a name="encrypteddatadecrypt-method"></a>Método EncryptedData.Decrypt
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use servicios de invocación de plataforma (PInvoke) para llamar a las funciones de la API de Win32 [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) y [**CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage) para cifrar y descifrar los mensajes. Para obtener información sobre PInvoke, vea [tutorial de invocación de plataforma](https://msdn.microsoft.com/library/aa288468.aspx). También pueden resultar útiles las subsecciones de [.net y CryptoAPI a través de p/Invoke: parte 1](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic5) y [.net y CryptoAPI a través de p/Invoke: parte 2](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic6) de la extensión de la [criptografía de .net con CAPICOM y p/Invoke](/previous-versions/ms867087(v=msdn.10)) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use Platform Invocation Services (PInvoke) para llamar a las funciones de API de Win32 [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) y [**CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage) para cifrar y descifrar mensajes. Para obtener información sobre PInvoke, vea [Tutorial de invocación de plataforma](https://msdn.microsoft.com/library/aa288468.aspx). Las subsecciones .NET y CryptoAPI a través de [P/Invoke:](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic5) Parte 1 y .NET y CryptoAPI a través de [P/Invoke:](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic6) subsecciones de la parte 2 de Extensión de criptografía de .NET con [CAPICOM y P/Invoke](/previous-versions/ms867087(v=msdn.10)) también pueden resultar útiles.\]
 
-El método **descifrado** descifra una cadena de datos cifrada y codificada. Los datos de texto no cifrado resultantes se convierten en la propiedad de [**contenido**](encrypteddata-content.md) del objeto [**EncryptedData**](encrypteddata.md) . Se produce un error en el descifrado del contenido a menos que el secreto, establecido por el método [**SetSecret**](encrypteddata-setsecret.md) , sea exactamente el mismo que el secreto que se usa para derivar la clave utilizada para cifrar el contenido.
+El **método Decrypt** descifra una cadena de datos cifrada y codificada. Los datos de texto no cifrado resultantes se [**convierten en la propiedad Content**](encrypteddata-content.md) del objeto [**EncryptedData.**](encrypteddata.md) Se produce un error de descifrado del contenido a menos que el secreto, establecido por el [**método SetSecret,**](encrypteddata-setsecret.md) sea exactamente el mismo que el secreto utilizado para derivar la clave utilizada para cifrar el contenido.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ EncryptedData.Decrypt( _
 
 <dl> <dt>
 
-*EncryptedMessage* \[ de\]
+*EncryptedMessage* \[ En\]
 </dt> <dd>
 
-Cadena que contiene los datos cifrados codificados que se van a descifrar.
+Cadena que contiene los datos cifrados codificados que se descifrarán.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Cadena que contiene los datos cifrados codificados que se van a descifrar.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La clave de sesión derivada del secreto actual se usa para el descifrado. Este método no producirá el texto no cifrado correcto a menos que el secreto actual coincida exactamente con el secreto utilizado para cifrar el mensaje.
 
@@ -64,16 +64,16 @@ La clave de sesión derivada del secreto actual se usa para el descifrado. Este 
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objetos de criptografía**](cryptography-objects.md)
+[**Objetos criptografía**](cryptography-objects.md)
 </dt> <dt>
 
 [**EncryptedData**](encrypteddata.md)

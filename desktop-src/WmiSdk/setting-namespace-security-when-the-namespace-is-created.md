@@ -1,6 +1,6 @@
 ---
 title: Establecimiento de la seguridad en la creación de espacios de nombres
-description: El Managed Object Format (MOF) que crea un espacio de nombres también puede definir los descriptores de seguridad para el espacio de nombres incluyendo el calificador NamespaceSecuritySDDL con el descriptor de seguridad en formato de lenguaje de definición de descriptor de seguridad (SDDL).
+description: El Managed Object Format (MOF) que crea un espacio de nombres también puede definir los descriptores de seguridad para el espacio de nombres incluyendo el calificador NamespaceSecuritySDDL con el descriptor de seguridad en formato sddl (lenguaje de definición de descriptores de seguridad).
 ms.assetid: eeda3351-11ec-4064-90dd-f67ccf5c8cb6
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "118315642"
 ---
 # <a name="setting-security-on-namespace-creation"></a>Establecimiento de la seguridad en la creación de espacios de nombres
 
-El archivo Managed Object Format (MOF) que crea un espacio de nombres también puede definir los [*descriptores*](/windows/desktop/SecGloss/s-gly) de seguridad para el espacio de nombres incluyendo el calificador **NamespaceSecuritySDDL** con el descriptor de seguridad en formato de lenguaje de definición de descriptor de seguridad [(SDDL).](/windows/desktop/SecAuthZ/security-descriptor-definition-language)
+El Managed Object Format (MOF) que crea un espacio de nombres también puede definir los descriptores de seguridad para el espacio de nombres incluyendo el calificador **NamespaceSecuritySDDL** con el descriptor de seguridad en formato [sddl (lenguaje](/windows/desktop/SecAuthZ/security-descriptor-definition-language) de definición de [*descriptores*](/windows/desktop/SecGloss/s-gly) de seguridad).
 
 Puede usar **NamespaceSecuritySDDL para** proteger cualquier espacio de nombres. También puede usar este calificador en un archivo MOF simple para modificar el descriptor de seguridad en un espacio de nombres existente. WMI procesa la cadena SDDL para establecer la seguridad del espacio de nombres, pero no se almacena como una cadena. Si no se especifica ningún descriptor de seguridad, se usa la seguridad predeterminada. Para obtener más información, vea [Setting Namepace Security Descriptors](setting-namespace-security-descriptors.md).
 

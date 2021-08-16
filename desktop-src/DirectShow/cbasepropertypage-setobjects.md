@@ -46,7 +46,7 @@ HRESULT SetObjects(
 *cObjects* 
 </dt> <dd>
 
-Especifica el número de punteros **IUnknown** en la matriz especificada por *ppUnk.*
+Especifica el número de **punteros IUnknown** en la matriz especificada por *ppUnk*.
 
 </dd> <dt>
 

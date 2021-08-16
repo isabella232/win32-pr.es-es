@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117817595"
 ---
-# <a name="isamplegrabbercbbuffercb-method"></a>ISampleGrabberCB::BufferCB (Método)
+# <a name="isamplegrabbercbbuffercb-method"></a>ISampleGrabberCB::BufferCB (método)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -50,7 +50,7 @@ HRESULT BufferCB(
 *SampleTime* 
 </dt> <dd>
 
-Hora de inicio de la muestra, en segundos.
+Hora de inicio del ejemplo, en segundos.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Longitud del búfer al que apunta *pBuffer*, en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si se realiza correctamente o un código de error **HRESULT** en caso contrario.
+Devuelve S \_ OK si se realiza correctamente o un código de error **HRESULT** de lo contrario.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -108,10 +108,10 @@ Para configurar la devolución de llamada, llame [**a ISampleGrabber::SetCallbac
 
 <dl> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> <dt>
 
-[**Interfaz ISampleGrabberCB**](isamplegrabbercb.md)
+[**ISampleGrabberCB (interfaz)**](isamplegrabbercb.md)
 </dt> </dl>
 
  

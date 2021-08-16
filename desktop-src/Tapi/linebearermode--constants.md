@@ -52,7 +52,7 @@ Modo multiuso definido por ISDN.
 
 
 
-Esto corresponde a una conexión de señalización no asociada a llamadas desde la aplicación al proveedor de servicios o al conmutador (tratado como un flujo multimedia por TAPI).
+Esto corresponde a una conexión de señalización no asociada a la llamada desde la aplicación al proveedor de servicios o al conmutador (tratado como un flujo multimedia por TAPI).
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ Cuando una llamada está activa en LINEBEARERMODE PASSTHROUGH, el proveedor de s
 
 
 
-Servicio de portador para datos digitales en el que solo los siete bits de orden inferior de cada octeto pueden contener datos de usuario (por ejemplo, para el servicio de 56 kbits/s conmutado).
+Servicio de portador para datos digitales en el que solo los siete bits de orden inferior de cada octeto pueden contener datos de usuario (por ejemplo, para el servicio conmutado de 56 kbits/s).
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ Servicio de portador para datos digitales en el que solo los siete bits de orden
 
 
 
-Esto corresponde a la transmisión de voz G.711 en la llamada. La red puede usar técnicas de procesamiento como transmisión análoga, cancelación de eco y compresión/descompresión. La integridad de bits no está garantizada. La voz no está pensada para admitir los tipos de medios de fax y módem.
+Esto corresponde a la transmisión de voz G.711 en la llamada. La red puede usar técnicas de procesamiento como la transmisión análoga, la cancelación de eco y la compresión y descompresión. La integridad de bits no está garantizada. La voz no está pensada para admitir los tipos de medios de fax y módem.
 
 
 </dt> </dl> </dd> <dt>
@@ -101,13 +101,13 @@ Se trata de un servicio de portador de nivel de voz análogo normal de 3,1 kHz. 
 
 Los 16 bits de orden superior se pueden asignar para extensiones específicas del dispositivo. Los 16 bits de orden inferior están reservados.
 
-Tenga en cuenta que el modo de portador y el tipo de medio son nociones diferentes. El modo de portador de una llamada es una indicación de la calidad de la conexión telefónica proporcionada principalmente por la red. El tipo de medio de una llamada es una indicación del tipo de flujo de información que se intercambia a través de esa llamada. El fax o el módem de datos del grupo 3 son tipos de medios que usan una llamada con un modo de portador de voz de 3,1 kHz.
+Tenga en cuenta que el modo de portador y el tipo de medio son nociones diferentes. El modo de portador de una llamada es una indicación de la calidad de la conexión telefónica proporcionada principalmente por la red. El tipo de medio de una llamada es una indicación del tipo de flujo de información que se intercambia sobre esa llamada. El fax o el módem de datos del grupo 3 son tipos de medios que usan una llamada con un modo de portador de voz de 3,1 kHz.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
 | Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |

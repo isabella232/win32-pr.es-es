@@ -1,5 +1,5 @@
 ---
-description: El ejemplo siguiente contiene una solicitud PKCS \# 10. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud PKCS \# 10. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf usado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: a71cd259-e5b0-42ee-a26c-fd949386ff9d
 title: Solicitud PKCS \# 10
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117774644"
 ---
 # <a name="pkcs-10-request"></a>Solicitud PKCS \# 10
 
-El ejemplo siguiente contiene una solicitud PKCS \# 10. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud PKCS \# 10. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf usado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]

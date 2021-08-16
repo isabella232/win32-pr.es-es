@@ -4,22 +4,22 @@ ms.assetid: D50483E5-4305-4FCB-9A23-D10BBF15E424
 title: Métodos EncryptedData
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dc333863c973fcb6a836cee23b000fd7fb03586
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49873053a32f7e717202733c2910ccf05ac7cc7c094ecfb96f5200b40e7f29c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766528"
 ---
 # <a name="encrypteddata-methods"></a>Métodos EncryptedData
 
-El objeto [**EncryptedData**](encrypteddata.md) expone los métodos siguientes.
+El [**objeto EncryptedData**](encrypteddata.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Decrypt (método)**](encrypteddata-decrypt.md)
 -   [**Encrypt (método)**](encrypteddata-encrypt.md)
--   [**Método SetSecret**](encrypteddata-setsecret.md)
+-   [**SetSecret (método)**](encrypteddata-setsecret.md)
 
  
 

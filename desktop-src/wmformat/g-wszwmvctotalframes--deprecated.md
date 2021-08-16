@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCTotalFrames (Wmcodecdsp.h)
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCTotalFrames (Wmcodecdsp.h)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCTotalFrames (Wmcodecdsp.h)
 ms.assetid: da343f27-a7fd-4ed4-a6d8-156f30358cb0
 keywords:
 - g_wszWMVCTotalFrames windows Media Format
@@ -23,7 +23,7 @@ ms.locfileid: "118198423"
 ---
 # <a name="g_wszwmvctotalframes"></a>g \_ wszWMVCTotalFrames
 
-Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señales digitales, consulte Windows Media Audio and [Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
+Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 

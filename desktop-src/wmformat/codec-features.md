@@ -17,7 +17,7 @@ ms.locfileid: "117849166"
 ---
 # <a name="codec-features"></a>Características del códec
 
-El SDK Windows Media Format se entrega con varios códecs de audio y vídeo. Puede usar los códecs proporcionados para comprimir y descomprimir contenido para satisfacer una variedad de necesidades. El códec que usa el escritor para comprimir los datos se especifica mediante la información de configuración de secuencias en el perfil. A continuación, la información del perfil se almacena en el encabezado del archivo creado por el escritor. A continuación, cuando el lector o el lector sincrónico abren el archivo, la información del perfil del encabezado identifica el códec necesario para descomprimir los datos.
+El SDK Windows Media Format se entrega con varios códecs de audio y vídeo. Puede usar los códecs proporcionados para comprimir y descomprimir el contenido para satisfacer una variedad de necesidades. El códec utilizado por el escritor para comprimir los datos se especifica mediante la información de configuración de secuencias en el perfil. A continuación, la información del perfil se almacena en el encabezado del archivo creado por el escritor. A continuación, cuando el lector o el lector sincrónico abren el archivo, la información de perfil del encabezado identifica el códec necesario para descomprimir los datos.
 
 En esta sección se de abordan las siguientes características.
 

@@ -13,7 +13,7 @@ ms.locfileid: "118194015"
 ---
 # <a name="issuing-the-getnumobjects-command"></a>Emisión del comando GetNumObjects
 
-En el ejemplo de esta sección se invoca el **comando GetNumObjects** MTP. (Para obtener una descripción completa de este comando y sus parámetros, vea la [especificación de MTP).](https://www.usb.org/sites/default/files/MTPv1_1.zip)
+En el ejemplo de esta sección se invoca el **comando MTP GetNumObjects.** (Para obtener una descripción completa de este comando y sus parámetros, vea la [especificación de MTP).](https://www.usb.org/sites/default/files/MTPv1_1.zip)
 
 Antes de invocar este comando, primero debe configurar los parámetros del comando.
 
@@ -187,7 +187,7 @@ Una vez que la aplicación invoca el comando, procesa la respuesta del controlad
 
 <dl> <dt>
 
-[Compatibilidad con extensiones de MTP](supporting-mtp-extensions.md)
+[Compatibilidad con extensiones MTP](supporting-mtp-extensions.md)
 </dt> </dl>
 
  

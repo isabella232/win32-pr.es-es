@@ -13,10 +13,10 @@ ms.locfileid: "117861362"
 ---
 # <a name="default-programs"></a>Programas predeterminados
 
-Use **Programas predeterminados para** establecer la experiencia del usuario predeterminada. Los usuarios pueden **acceder a los** programas predeterminados Panel de control o directamente desde el **menú** Inicio. Establezca la herramienta Acceso a programas y valores predeterminados del equipo [(SPAD),](cpl-setprogramaccess.md) la experiencia de valores predeterminados principal para los usuarios de Windows XP, ahora es una parte de **programas predeterminados.**
+Use **Programas predeterminados para** establecer la experiencia del usuario predeterminada. Los usuarios pueden **acceder a los** programas predeterminados Panel de control o directamente desde el **menú** Inicio. Establezca la herramienta Acceso a programas y Valores predeterminados del equipo [(SPAD),](cpl-setprogramaccess.md) la experiencia de valores predeterminados principal para los usuarios de Windows XP, ahora es una parte de **programas predeterminados.**
 
 > [!IMPORTANT]
-> Este tema no se aplica a Windows 10. La forma en que funcionan las asociaciones de archivos predeterminadas en Windows 10. Para obtener más información, vea la sección Cambios en la **forma en que Windows 10 las aplicaciones predeterminadas** en esta [entrada](https://blogs.windows.com/windowsexperience/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
+> Este tema no se aplica a Windows 10. La forma en que funcionan las asociaciones de archivos predeterminadas ha cambiado Windows 10. Para obtener más información, vea la sección Sobre los cambios en **Windows 10 controla las aplicaciones predeterminadas** en esta [entrada](https://blogs.windows.com/windowsexperience/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
 
  
 
@@ -161,7 +161,7 @@ La **subclave MIMEAssociations** contiene tipos MIME específicos que la aplicac
 La **subclave Startmenu** está asociada a las entradas de **Internet** y **correo** electrónico asignables por el usuario en el **menú** Inicio. Una aplicación debe registrarse por separado como contendiente para esas entradas. Para obtener más información, [vea Registrar programas con tipos de cliente.](reg-middleware-apps.md)
 
 > [!Note]  
-> A partir Windows 7, ya no hay entradas de **Internet** y **correo** electrónico en el **menú** Inicio. Los datos del  Registro asociados a la entrada de correo electrónico se siguen utilizando para el cliente PREDETERMINADO de LDAP, pero los datos del Registro asociados a la entrada de **Internet** no se usan Windows en absoluto.
+> A partir Windows 7, ya no hay entradas de **Internet** y **correo** electrónico en el **menú** Inicio. Los datos del  Registro asociados a la entrada de correo electrónico se siguen utilizando para el cliente PREDETERMINADO de MAPI, pero los datos del Registro asociados a la entrada de **Internet** no se usan Windows en absoluto.
 
  
 
@@ -169,7 +169,7 @@ Al asociar el registro **del** menú Inicio de una aplicación a su registro de 
 
 La **subclave Startmenu** tiene dos entradas: StartMenuInternet y Mail,  que corresponden a las posiciones canónicas de **Internet** y Correo electrónico en el **menú** Inicio. Una aplicación asigna a StartMenuInternet o Mail un valor igual al nombre de la subclave registrada de la aplicación en **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Clients** \\ **StartMenuInternet** o **HKEY LOCAL \_ \_ MACHINE** \\ **SOFTWARE** \\ **Clients** \\ **Mail** (como [](reg-middleware-apps.md)se describe en Registro de programas con tipos de cliente).
 
-En el caso  de la posición canónica del correo electrónico en el menú Inicio, representa el cliente PREDETERMINADO de LAN Y, por lo tanto, se supone que es capaz de entregar llamadas DE LAN.  En Windows 7, aunque ya no  hay una posición canónica de correo electrónico en el menú Inicio, esta subclave se sigue utilizando para el cliente PREDETERMINADO DE LA RUTA DE ACCESO.  Una aplicación que reclame el valor predeterminado de correo debe registrarse como un controlador DE PROTOCOLO DE SEGURIDAD en la subclave siguiente:
+En el caso  de la posición canónica del correo electrónico en el menú Inicio, representa el cliente PREDETERMINADO de LAN Y, por lo tanto, se supone que es capaz de entregar llamadas DE LAN.  En Windows 7, aunque ya no  hay una posición canónica de correo electrónico en el menú Inicio, esta subclave se sigue utilizando para el cliente PREDETERMINADO de MAPI.  Una aplicación que reclame el valor predeterminado de correo debe registrarse como un controlador DE PROTOCOLO DE SEGURIDAD en la subclave siguiente:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -239,7 +239,7 @@ HKEY_LOCAL_MACHINE
                      (Default) = %ProgramFiles%\Litware\litware.exe
 ```
 
-En las entradas siguientes se muestra el ProgID combinado para el .mpeg tipo MIME y la extensión de nombre de archivo.
+Las entradas siguientes muestran el ProgID combinado para la extensión .mpeg tipo MIME y el nombre de archivo.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -287,7 +287,7 @@ HKEY_LOCAL_MACHINE
 
 El registro del explorador debe seguir los procedimientos recomendados descritos en este tema. Cuando se instala el explorador, Windows puede presentar al usuario una notificación del sistema a través de la cual el usuario puede seleccionar el explorador como valor predeterminado del sistema. Esta notificación se muestra cuando se cumplen estas condiciones:
 
--   El instalador del explorador llama a [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) con la marca **\_ ASSOCCHANGED de SHCNE** para indicar Windows que se han registrado nuevos controladores de protocolo.
+-   El instalador del explorador llama a [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) con la marca **\_ ASSOCCHANGED de SHCNE** para indicar a Windows que se han registrado nuevos controladores de protocolo.
 -   Windows detecta que una o varias aplicaciones nuevas se han registrado para controlar los protocolos http:// y https://, y el usuario aún no ha recibido una notificación. En otras palabras, no se ha mostrado nada de lo siguiente al usuario: una notificación del sistema que anuncia la aplicación, un control flyout OpenWith que contiene la aplicación o la página Establecer valores predeterminados de usuario (SUD) Panel de control la aplicación.
 
 En el ejemplo siguiente se muestra el código de registro recomendado que el instalador del explorador debe ejecutar después de escribir sus claves del Registro.
@@ -380,7 +380,7 @@ Debe usar esta interfaz de usuario para las aplicaciones en lugar de crear la su
 
 Las aplicaciones suelen comprobar si se establecen como valor predeterminado cuando se ejecutan. Establezca las aplicaciones para realizar esta comprobación mediante una llamada a [**IApplicationAssociationRegistration::QueryAppIsDefault**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationassociationregistration-queryappisdefault) o [**IApplicationAssociationRegistration::QueryAppIsDefaultAll**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationassociationregistration-queryappisdefaultall).
 
-Si la aplicación determina que no es el valor predeterminado, puede presentar una interfaz de usuario que pregunte al usuario si debe aceptar la situación actual o si quiere que la aplicación sea el valor predeterminado. Incluya siempre una casilla en esta interfaz de usuario que esté seleccionada de forma predeterminada y que presente la opción para no volver a solicitarla.
+Si la aplicación determina que no es el valor predeterminado, puede presentar la interfaz de usuario que pregunta al usuario si debe aceptar la situación actual o si quiere que la aplicación sea el valor predeterminado. Incluya siempre una casilla en esta interfaz de usuario que esté seleccionada de forma predeterminada y que presente la opción que no se volverá a solicitar.
 
 > [!Note]  
 > La opción predeterminada debe estar controlada por el usuario. Una aplicación nunca debe reclamar un valor predeterminado sin preguntar al usuario.

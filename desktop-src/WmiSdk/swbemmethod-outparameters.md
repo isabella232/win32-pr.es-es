@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118314426"
 ---
-# <a name="swbemmethodoutparameters-property"></a>Propiedad SWbemMethod.OutParameters
+# <a name="swbemmethodoutparameters-property"></a>SWbemMethod.OutParameters, propiedad
 
 La **propiedad OutParameters** del objeto [**SWbemMethod**](swbemmethod.md) es un objeto [**SWbemObject**](swbemobject.md) cuyas propiedades definen los parámetros out y el tipo de valor devuelto de este método. Esta propiedad es de solo lectura.
 

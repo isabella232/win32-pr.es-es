@@ -1,5 +1,5 @@
 ---
-description: El método get MediaType devuelve el tipo de medio de salida actual del \_ filtro de cambio de tamaño.
+description: El método get MediaType devuelve el tipo de medio de salida actual del filtro de cambio \_ de tamaño.
 ms.assetid: b9900f7c-05f6-47e4-9cb0-683df2aea404
 title: Método IResize::get_MediaType (Qedit.h)
 ms.topic: reference
@@ -48,7 +48,7 @@ HRESULT get_MediaType(
 *pmt* \[ out\]
 </dt> <dd>
 
-Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) asignada por el autor de la llamada. El método rellena esta estructura con el tipo de medio. El autor de la llamada debe liberar el bloque de formato, si lo hubiera.
+Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) asignada por el autor de la llamada. El método rellena esta estructura con el tipo de medio. El autor de la llamada debe liberar el bloque de formato, si lo hay.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Si no se ha establecido el tipo de medio de salida, devuelva un tipo de medio pr
 
 <dl> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> <dt>
 
 [**IResize (Interfaz)**](iresize.md)
