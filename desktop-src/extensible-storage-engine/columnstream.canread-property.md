@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnStream. CanRead (propiedad)'
-title: Propiedad ColumnStream. CanRead
+description: 'Más información sobre: Propiedad ColumnStream.CanRead'
+title: Propiedad ColumnStream.CanRead
 TOCTitle: 'CanRead property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnStream.CanRead
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.canread(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f38621d96cc3401c16108078a8e0093e2392066
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2d2b22c201a32a8b9edd591ca96a88b7ddf2206cccf7f9ffbdad62c1c3d46da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117717056"
 ---
-# <a name="columnstreamcanread-property"></a>Propiedad ColumnStream. CanRead
+# <a name="columnstreamcanread-property"></a>Propiedad ColumnStream.CanRead
 
-Obtiene un valor que indica si la secuencia admite lectura.
+Obtiene un valor que indica si la secuencia admite la lectura.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,14 +58,14 @@ public override bool CanRead { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnStream](./columnstream-class.md)
+[ColumnStream (clase)](./columnstream-class.md)
 
-[Miembros de ColumnStream](./columnstream-members.md)
+[Miembros ColumnStream](./columnstream-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-description: Especifica si un ejemplo de vídeo contiene un solo campo o dos campos intercalados. Este atributo se aplica a los ejemplos multimedia.
+description: Especifica si un ejemplo de vídeo contiene uno o dos campos intercalados. Este atributo se aplica a los ejemplos multimedia.
 ms.assetid: 550619be-2042-4a2c-9ad2-728474835255
 title: MFSampleExtension_SingleField atributo (Mfapi.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119462905"
 ---
 # <a name="mfsampleextension_singlefield-attribute"></a>Atributo MFSampleExtension \_ SingleField
 
-Especifica si un ejemplo de vídeo contiene un solo campo o dos campos intercalados. Este atributo se aplica a los ejemplos multimedia.
+Especifica si un ejemplo de vídeo contiene uno o dos campos intercalados. Este atributo se aplica a los ejemplos multimedia.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,21 +21,21 @@ Especifica si un ejemplo de vídeo contiene un solo campo o dos campos intercala
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**a IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**a IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Se aplica a
 
-[**SAMPLESample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor es **TRUE**, el ejemplo contiene un campo. Si el valor es **FALSE** o el atributo no está establecido, el ejemplo contiene un marco completo. (Dos campos si están entrelazados o un marco progresiva).
+Si el valor es **TRUE,** el ejemplo contiene un campo. Si el valor es **FALSE o** el atributo no está establecido, el ejemplo contiene un marco completo. (Dos campos si están entrelazados o un marco progresiva).
 
 Si el tipo de medio son fotogramas progresivas o campos intercalados, este atributo debe ser **FALSE** o dejar sin establecer.
 
-Si el tipo de medio es un solo campo, este atributo debe ser **TRUE.** Establezca el [**atributo MFSampleExtension \_ BottomFieldFirst**](mfsampleextension-bottomfieldfirst-attribute.md) en el ejemplo para indicar si es el campo superior o el inferior.
+Si el tipo de medio es un solo campo, este atributo debe ser **TRUE.** Establezca el [**atributo MFSampleExtension \_ BottomFieldFirst**](mfsampleextension-bottomfieldfirst-attribute.md) en el ejemplo para indicar si es el campo superior o el campo inferior.
 
 Actualmente, el representador de vídeo mejorado (EVR) no admite contenido que cambia entre fotogramas entrelazados y campos individuales.
 
@@ -48,7 +48,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
-| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
 | Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 

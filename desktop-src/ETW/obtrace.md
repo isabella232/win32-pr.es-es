@@ -1,7 +1,7 @@
 ---
 description: Representa la clase primaria de la que se derivan todas las clases de seguimiento de eventos del administrador de objetos.
 ms.assetid: 07cfc4a2-c665-4080-bc4b-fe9ec7191fdc
-title: Clase ObTrace
+title: ObTrace (clase)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,7 +19,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119328755"
 ---
-# <a name="obtrace-class"></a>Clase ObTrace
+# <a name="obtrace-class"></a>ObTrace (clase)
 
 Representa la clase primaria de la que se derivan todas las clases de seguimiento de eventos del administrador de objetos.
 
@@ -40,13 +40,13 @@ La **clase ObTrace** no define ningún miembro.
 
 ## <a name="remarks"></a>Comentarios
 
-Para habilitar el seguimiento de eventos del administrador de objetos, llame a la función [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) con el parámetro *InformationClass* igual al valor de enumeración [**TRACE INFO \_ \_ CLASS**](/windows/win32/api/evntrace/ne-evntrace-trace_query_info_class) **TraceSystemTraceEnableFlagsInfo** y al miembro **EnableFlags** de la estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) igual a **PERF OB \_ \_ HANDLE** (0x80000040).
+Para habilitar el seguimiento de eventos del administrador de objetos, llame a la función [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) con el parámetro *InformationClass* igual al valor de enumeración **TraceSystemTraceEnableFlagsInfo** y al miembro **EnableFlags** de la estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) igual a **PERF \_ OB \_ HANDLE** (0x80000040). [**\_ \_**](/windows/win32/api/evntrace/ne-evntrace-trace_query_info_class)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                   |

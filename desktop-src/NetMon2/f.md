@@ -26,7 +26,7 @@ Objeto binario grande (BLOB) que se usa para restringir la búsqueda de una tarj
 <span id="_netmon_follow_set_gly"></span><span id="_NETMON_FOLLOW_SET_GLY"></span>**seguir el conjunto**
 </dt> <dd>
 
-Conjunto de protocolos que sigue a un protocolo. Monitor de red el siguiente conjunto de un protocolo si el analizador no puede detectar el siguiente protocolo a partir de los datos de la captura. Consulte también [ *handoff set (Conjunto de entregas).*](h.md)
+Conjunto de protocolos que sigue a un protocolo. Monitor de red usa el siguiente conjunto de un protocolo si el analizador no puede detectar el siguiente protocolo a partir de los datos de la captura. Consulte también [ *handoff set (Conjunto de entregas).*](h.md)
 
 </dd> <dt>
 
@@ -40,7 +40,7 @@ Un paquete de datos que se transmite como una unidad a través de una red. Cada 
 <span id="_netmon_frame_viewer_window_gly"></span><span id="_NETMON_FRAME_VIEWER_WINDOW_GLY"></span>**ventana visor de fotogramas**
 </dt> <dd>
 
-Una Monitor de red que muestra información detallada sobre fotogramas individuales. Puede abrir varias ventanas de visor de fotogramas a la vez.
+Ventana Monitor de red que muestra información detallada sobre fotogramas individuales. Puede abrir varias ventanas de visor de fotogramas a la vez.
 
 </dd> </dl>
 

@@ -1,11 +1,11 @@
 ---
-title: MediaCollection. getByGenre, método
+title: Método MediaCollection.getByGenre
 description: El método getByGenre recupera una lista de reproducción de los elementos multimedia con el género especificado.
 ms.assetid: 022a0c52-93e1-4ab4-90a7-632bcd6fc004
 keywords:
-- método getByGenre de Windows Media Player
-- método getByGenre de Windows Media Player, clase MediaCollection
-- Clase MediaCollection Windows Media Player, método getByGenre
+- Método getByGenre Reproductor de Windows Media
+- Método getByGenre Reproductor de Windows Media , clase MediaCollection
+- Clase MediaCollection Reproductor de Windows Media , método getByGenre
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b73cd7fe9bb3efa9115e2ba5d01b6d12c89898d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 06df514e7ed399e73f6778912df32a4ed0be57a90039fe867c75cf31a3eec807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135018"
 ---
-# <a name="mediacollectiongetbygenre-method"></a>MediaCollection. getByGenre, método
+# <a name="mediacollectiongetbygenre-method"></a>Método MediaCollection.getByGenre
 
-El método **getByGenre** recupera una lista de reproducción de los elementos multimedia con el género especificado.
+El **método getByGenre** recupera una lista de reproducción de los elementos multimedia con el género especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ retVal = MediaCollection.getByGenre(
 
 <dl> <dt>
 
-*género* \[ de\]
+*genre* \[ En\]
 </dt> <dd>
 
 **Cadena** que contiene el nombre del género.
@@ -51,15 +51,15 @@ retVal = MediaCollection.getByGenre(
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un objeto de **lista de reproducción** .
+Este método devuelve un objeto **Playlist.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *MediaCollection*. **getByGenre** para recuperar una lista de reproducción de elementos multimedia. La lista de reproducción contiene elementos con el género especificado por el usuario en un elemento de entrada de texto HTML denominado GetGenre. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se *usa MediaCollection*. **getByGenre para recuperar** una lista de reproducción de elementos multimedia. La lista de reproducción contiene elementos con el género especificado por el usuario en un elemento de entrada HTML TEXT denominado GetGenre. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -94,7 +94,7 @@ onClick = "
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -106,13 +106,13 @@ onClick = "
 [**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

@@ -14,14 +14,14 @@ ms.locfileid: "117791893"
 ---
 # <a name="c-rras"></a>C (RRAS)
 
-[A](a-gly.md) [B](b-gly.md) C [D](d-gly.md) [E](e-gly.md) F G H [I](i-gly.md) J K L M N O [P](p-gly.md) Q R [S](s-gly.md) T U V W X Y Z
+[A](a-gly.md) [B](b-gly.md) C [D](d-gly.md) [E](e-gly.md) F G H [I](i-gly.md) J K L M N O [P P](p-gly.md) Q R [S](s-gly.md) T U V W X Y Z
 
 <dl> <dt>
 
 <span id="_rras_cyclic_redundancy_check_crc__gly"></span><span id="_RRAS_CYCLIC_REDUNDANCY_CHECK_CRC__GLY"></span>**Comprobación de redundancia cíclica (CRC)**
 </dt> <dd>
 
-Un CRC es un valor numérico relacionado con un bloque de datos. Este valor proporciona información que permite a una aplicación determinar si se han modificado los datos. Un CRC es similar a una suma de comprobación, pero se considera un mecanismo de comprobación de errores más fuerte.
+Un CRC es un valor numérico relacionado con un bloque de datos. Este valor proporciona información que permite a una aplicación determinar si los datos se han modificado. Un CRC es similar a una suma de comprobación, pero se considera un mecanismo de comprobación de errores más fuerte.
 
 </dd> <dt>
 

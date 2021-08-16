@@ -55,7 +55,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -65,7 +65,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

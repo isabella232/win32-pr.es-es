@@ -30,9 +30,9 @@ El **atributo LibraryID** es el identificador de la biblioteca a la que pertenec
 -   [**Elementos de lista de reproducción**](playlist-attributes-ref.md)
 -   [**Elementos de vídeo**](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un elemento multimedia puede pertenecer a la biblioteca local del usuario actual o puede pertenecer a una biblioteca que otro usuario haya puesto a disposición de otro usuario en la red principal o en Internet.
+Un elemento multimedia podría pertenecer a la biblioteca local del usuario actual o pertenecer a una biblioteca que otro usuario haya puesto a disposición de otro usuario en la red principal o en Internet.
 
 El valor de este atributo es el mismo que el valor devuelto por el [**método IWMPLibrary2::getItemInfo.**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name)
 

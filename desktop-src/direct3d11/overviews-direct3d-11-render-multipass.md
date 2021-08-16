@@ -1,23 +1,23 @@
 ---
-title: Multiple-Pass representación
-description: La representación de varias pasadas es un proceso en el que una aplicación atraviesa su gráfico de escenas varias veces para producir una salida que se represente en la pantalla.
+title: Multiple-Pass Rendering
+description: La representación de varios pasos es un proceso en el que una aplicación recorre su gráfico de escena varias veces con el fin de generar una salida para representarla en la pantalla.
 ms.assetid: 9a11686a-fd99-4d40-8b02-6f8ec18346e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70fcf7f3f04bd641fdf82c9cf317e8a2ec99e85c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 242573dea2982f3525082187aad536a407e446c4ce59f116f53b8fa0d40fc582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124213"
 ---
-# <a name="multiple-pass-rendering"></a>Multiple-Pass representación
+# <a name="multiple-pass-rendering"></a>Multiple-Pass Rendering
 
-La representación de varias pasadas es un proceso en el que una aplicación atraviesa su gráfico de escenas varias veces para producir una salida que se represente en la pantalla. La representación de varias pasadas mejora el rendimiento porque divide escenas complejas en tareas que se pueden ejecutar simultáneamente.
+La representación de varios pasos es un proceso en el que una aplicación recorre su gráfico de escena varias veces con el fin de generar una salida para representarla en la pantalla. La representación de varios pases mejora el rendimiento porque divide escenas complejas en tareas que se pueden ejecutar simultáneamente.
 
-Para realizar una representación de varias pasadas, se crea un contexto y una lista de comandos aplazados para cada paso adicional. Mientras la aplicación atraviesa el gráfico de escenas, registra comandos (por ejemplo, comandos de representación como [**Draw**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw)) en un contexto diferido. Una vez que la aplicación finaliza el recorrido, llama al método [**FinishCommandList**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-finishcommandlist) en el contexto diferido. Por último, la aplicación llama al método [**ExecuteCommandList**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-executecommandlist) en el contexto inmediato para ejecutar los comandos en cada lista de comandos.
+Para realizar la representación de varios pases, cree un contexto aplazado y una lista de comandos para cada paso adicional. Mientras la aplicación recorre el gráfico de escena, registra comandos (por ejemplo, comandos de representación como [**Draw)**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw)en un contexto aplazado. Una vez que la aplicación finaliza el recorrido, llama al [**método FinishCommandList**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-finishcommandlist) en el contexto diferido. Por último, la aplicación llama al [**método ExecuteCommandList**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-executecommandlist) en el contexto inmediato para ejecutar los comandos en cada lista de comandos.
 
-En el siguiente pseudocódigo se muestra cómo realizar la representación de varias pasadas:
+El pseudocódigo siguiente muestra cómo realizar la representación de varios pasos:
 
 ``` syntax
 {
@@ -46,9 +46,9 @@ En el siguiente pseudocódigo se muestra cómo realizar la representación de va
 ```
 
 > [!Note]  
-> El contexto inmediato modifica un recurso, que está enlazado al contexto inmediato como una vista de destino de representación (RTV); por el contrario, cada contexto diferido simplemente usa el recurso, que está enlazado al contexto diferido como vista de recursos del sombreador (SRV). Para obtener más información sobre los contextos inmediatos y aplazados, consulte [representación inmediata y diferida](overviews-direct3d-11-render-multi-thread-render.md).
+> El contexto inmediato modifica un recurso, que está enlazado al contexto inmediato como una vista de destino de representación (RTV); En cambio, cada contexto aplazado simplemente usa el recurso , que está enlazado al contexto diferido como una vista de recursos de sombreador (SRV). Para obtener más información sobre los contextos inmediatos y diferidos, vea [Representación inmediata y diferida.](overviews-direct3d-11-render-multi-thread-render.md)
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -57,9 +57,9 @@ En el siguiente pseudocódigo se muestra cómo realizar la representación de va
 [Representación](overviews-direct3d-11-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

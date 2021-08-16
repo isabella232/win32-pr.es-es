@@ -4,36 +4,36 @@ ms.assetid: e73e1736-9be5-4831-8277-23a62658b7b5
 title: JobNUpAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9106259c80a7efb89cc4481780bfb55af4f07e23
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: fef26a28d970d135419a89015761fa33369a2147edd05712ad7671e881aef2c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119353605"
 ---
 # <a name="jobnupalldocumentscontiguously"></a>JobNUpAllDocumentsContiguously
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe la salida de varias páginas lógicas en una sola hoja física. Todos los documentos del trabajo se compilan juntos de forma contigua. JobNUpAllDocumentsContiguously y DocumentNUp son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre estas palabras clave.
 
-En el diagrama siguiente se muestra un ejemplo con el documento 1 que contiene 3 páginas y el documento 2 que contiene 2 páginas. Cada documento del trabajo se dúplex de forma contigua. Las instrucciones de presentación que se muestran en el ejemplo son la opción RightBottom.
+En el diagrama siguiente se muestra un ejemplo con el documento 1 que contiene 3 páginas y el documento 2 que contiene 2 páginas. Cada documento del trabajo se dúplex de forma contigua. Las direcciones de presentación que se muestran en el ejemplo son la opción RightBottom.
 
-![un diagrama que muestra cómo se estableciendo las páginas del documento en una sola hoja en función de la configuración de documentnup](images/local-1242234459-jobduplexpics.gif)
+![diagrama que muestra cómo se estableciendo las páginas del documento en una sola hoja en función de la configuración de documentnup](images/local-1242234459-jobduplexpics.gif)
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
+-   [contenido lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                             |
 | Prefijo de ámbito <br/> | Trabajo<br/>                                                                                                                                 |
-| Notas <br/>          | Top, Bottom, Left y Right son relativos a PageImageableSize, donde TopLeft se indica mediante el origen del alto y el ancho.<br/> |
+| Notas <br/>          | Top, Bottom, Left y Right son relativos a PageImageableSize, donde TopLeft se indica por el origen del alto y el ancho.<br/> |
 
 
 
@@ -72,18 +72,18 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                                           | Tipo de datos          | Unidad                     | Valores admitidos                                                                                                                                                                      | Resumen                                                                                                                              |
 |------------------------------------------------|--------------------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>                      | string<br/>  | caracteres<br/>    | Nombre completo válido tal y como se define en [Espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                   |
+| \_OptionName\_<br/>                      | string<br/>  | caracteres<br/>    | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                   |
 | \_IdentityOptionValue\_<br/>             | string<br/>  | N/D<br/>           | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>                                                         |
 | \_PagesPerSheetValue\_<br/>              | integer<br/> | Páginas lógicas<br/> | Todos los enteros (mayor que cero).<br/>                                                                                                                                          | Especifica el número de páginas lógicas por hoja física. El conjunto admitido puede ser cualquier conjunto de enteros, por ejemplo. {1,2,4,6,8,9,16}.<br/> |
-| \_PresentationDirectionOptionName\_<br/> | string<br/>  | caracteres<br/>    | Nombre completo válido tal y como se define en [Espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                   |
+| \_PresentationDirectionOptionName\_<br/> | string<br/>  | caracteres<br/>    | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                   |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
+## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobNUpAllDocumentsContiguously">
@@ -121,7 +121,7 @@ Las palabras clave públicas del esquema de impresión se definen en el espacio 
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

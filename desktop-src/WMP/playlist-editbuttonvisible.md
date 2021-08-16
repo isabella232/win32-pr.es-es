@@ -29,7 +29,7 @@ El **atributo editButtonVisible** especifica o recupera un valor que indica si e
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un valor booleano de lectura **y escritura.**
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
@@ -42,7 +42,7 @@ Este atributo es un valor booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al establecer este atributo en true, el botón de edición de la lista de reproducción aparecerá en la esquina inferior izquierda del elemento **PLAYLIST.** Al hacer clic en este botón se muestra un menú de opciones que permite al usuario editar, borrar, ordenar, abrir, guardar o copiar una lista de reproducción.
 
@@ -60,7 +60,7 @@ Al establecer este atributo en true, el botón de edición de la lista de reprod
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

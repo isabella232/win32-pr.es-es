@@ -1,10 +1,10 @@
 ---
 title: Atributo oncRpcNumber
-description: Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
+description: Contiene parte del mapa RPC y almacena el número RPC para UNIX RPC.
 ms.assetid: c824d740-5c68-4fce-93f3-01ac52b47e5b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo oncRpcNumber
+- OncRpcNumber attribute AD Schema (Esquema de AD del atributo oncRpcNumber)
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "119442175"
 ---
 # <a name="oncrpcnumber-attribute"></a>Atributo oncRpcNumber
 
-Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
+Contiene parte del mapa RPC y almacena el número RPC para UNIX RPC.
 
 
 
@@ -31,11 +31,11 @@ Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
 | CN                | oncRpcNumber                         |
 | Ldap-Display-Name | oncRpcNumber                         |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.18                     |
 | System-Id-Guid    | 966825f5-01d9-4a5c-a011-d15ae84efa55 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -54,10 +54,10 @@ Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
@@ -75,10 +75,10 @@ Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
@@ -96,10 +96,10 @@ Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
@@ -117,10 +117,10 @@ Contiene parte de la asignación RPC y almacena el número de RPC para UNIX RPC.
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |

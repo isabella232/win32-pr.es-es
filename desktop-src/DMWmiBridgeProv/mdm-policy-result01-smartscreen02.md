@@ -26,7 +26,7 @@ ms.locfileid: "119433284"
 ---
 # <a name="mdm_policy_result01_smartscreen02-class"></a>Clase Mdm \_ Policy \_ Result01 \_ SmartScreen02
 
-\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información aquí proporcionada.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 La clase MDM \_ Policy \_ Result01 \_ SmartScreen02 representa las directivas de pantalla inteligente.
 

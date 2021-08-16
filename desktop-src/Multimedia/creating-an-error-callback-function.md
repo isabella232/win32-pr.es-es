@@ -3,19 +3,19 @@ title: Crear una función de devolución de llamada de error
 description: Crear una función de devolución de llamada de error
 ms.assetid: a489ec94-c566-44b1-aa93-9b43f23de744
 keywords:
-- capSetCallbackOnError (macro)
+- CapSetCallbackOnError macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ac37c0e12b8f92520c4445c4c5ba3361974d836
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c86b2c3445bdd4d93db36307827e648fe804e82ac8dfb06011bd7a920ab7c8e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144698"
 ---
 # <a name="creating-an-error-callback-function"></a>Crear una función de devolución de llamada de error
 
-El ejemplo siguiente es una función de devolución de llamada de error simple. Registre esta devolución de llamada mediante la macro [**capSetCallbackOnError**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror) .
+El ejemplo siguiente es una función de devolución de llamada de error simple. Registre esta devolución de llamada mediante la [**macro capSetCallbackOnError.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror)
 
 
 ```
@@ -52,12 +52,12 @@ LRESULT PASCAL ErrorCallbackProc(HWND hWnd, int nErrID,
 
 <dl> <dt>
 
-[Uso de la captura de vídeo](using-video-capture.md)
+[Uso de captura de vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

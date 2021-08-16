@@ -34,7 +34,7 @@ Determina si un objeto OLE se mostrará como un icono. Lectura/escritura **DvTri
 
 El valor predeterminado es **false**. Si **es True**, el objeto OLE se muestra como un icono.
 
-Microsoft Microsoft Office Internet Explorer usa este atributo.
+Microsoft Microsoft Office usa este atributo, pero no lo usa Microsoft Internet Explorer.
 
 *Microsoft Office Atributo Extensions*
 

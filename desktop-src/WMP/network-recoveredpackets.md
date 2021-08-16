@@ -1,9 +1,9 @@
 ---
-title: Network. recoveredPackets
+title: Network.recoveredPackets
 description: La propiedad recoveredPackets recupera el número de paquetes recuperados.
 ms.assetid: ce10b906-2e8b-4b9f-83d0-56ba67cacd3f
 keywords:
-- Windows Media Player de red. recoveredPackets
+- Network.recoveredPackets Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,34 +14,34 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a4222033d7e124e6ef29714bc47faf5664950fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 464f7ad27603e506632d87254eaa4f76cbedf39ed15e353050cd13da0fa46204
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134938"
 ---
-# <a name="networkrecoveredpackets"></a>Network. recoveredPackets
+# <a name="networkrecoveredpackets"></a>Network.recoveredPackets
 
-La propiedad **recoveredPackets** recupera el número de paquetes recuperados.
+La **propiedad recoveredPackets** recupera el número de paquetes recuperados.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **recoveredPackets**
+*player*. *network*. **recoveredPackets**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada vez que se detiene y se reinicia la reproducción, esta propiedad se establece en cero. No se restablece si la reproducción está en pausa.
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se establece en cero. No se restablece si la reproducción está en pausa.
 
-Esta propiedad devuelve información válida solo durante el tiempo de ejecución y solo si el *reproductor*. También se establece la propiedad **URL** . Será igual a cero cuando se usa el protocolo HTTP, que es sin pérdida.
+Esta propiedad devuelve información válida solo durante el tiempo de ejecución y solo si el *reproductor .* **También se** establece la propiedad URL. Será igual a cero cuando se use el protocolo HTTP, que no tiene pérdidas.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **recoveredPackets** para mostrar el número de paquetes recuperados. La información se muestra en un DIV HTML creado con ID = "PR". En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **recoveredPackets para** mostrar el número de paquetes recuperados. La información se muestra en una DIV HTML creada con id. = "PR". En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -78,7 +78,7 @@ function UpdatePR(){
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -90,7 +90,7 @@ function UpdatePR(){
 [**Objeto de red**](network-object.md)
 </dt> <dt>
 
-[**Player. URL**](player-url.md)
+[**Player.URL**](player-url.md)
 </dt> </dl>
 
  

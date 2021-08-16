@@ -107,7 +107,7 @@ Puntero a la memoria que contiene el sombreador nocompilado.
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Dirección de un puntero a la memoria que contiene errores de creación de efectos, si se produjo alguno.
+Dirección de un puntero a la memoria que contiene errores de creación de efectos, si se ha producido alguno.
 
 </dd> <dt>
 
@@ -137,7 +137,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Di
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

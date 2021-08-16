@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. ProcessingMethod.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.ProcessingMethod.
 ms.assetid: 840021a8-ec1d-4916-93b2-7cc1803e2d8c
-title: Directiva de metadatos de la foto System. GPS. ProcessingMethod
+title: Directiva de metadatos de fotos System.GPS.ProcessingMethod
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02bf1484eb8e8a53c65a9cd43c54b076e418d4eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 800515d3a7870fa2dc9b5a6ec8c19178889482fa820f66d7d98e8e3ff09870f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931745"
 ---
-# <a name="systemgpsprocessingmethod-photo-metadata-policy"></a>Directiva de metadatos de la foto System. GPS. ProcessingMethod
+# <a name="systemgpsprocessingmethod-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.ProcessingMethod
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. ProcessingMethod](../properties/props-system-gps-processingmethod.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.ProcessingMethod.](../properties/props-system-gps-processingmethod.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ GPS \_ ProcessingMethod
 
@@ -27,17 +27,17 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-\_Se prefiere VT LPWStr, pero \_ también se acepta VT LPSTR.
+Se \_ prefiere VT LPWSTR, pero también se \_ acepta VT LPSTR.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 
@@ -45,22 +45,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 27}     |             |
+| 1     | /app1/ifd/gps/{ushort=27}     |             |
 | 2     | /xmp/exif:GPSProcessingMethod | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 27}     |             |
+| 1     | /app1/ifd/gps/{ushort=27}     |             |
 | 2     | /xmp/exif:GPSProcessingMethod | unicode     |
 
 
@@ -71,9 +71,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 27}     |
+| 1     | /app1/ifd/gps/{ushort=27}     |
 | 2     | /xmp/exif:gpsprocessingmethod |
 
 
@@ -86,23 +86,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                              | Formato de disco |
+| Pedido | Ruta de acceso                              | Formato de disco |
 |-------|-----------------------------------|-------------|
 | 1     | /ifd/xmp/exif:GPSProcessingMethod | unicode     |
-| 2     | /IFD/GPS/{ushort = 27}              |             |
+| 2     | /ifd/gps/{ushort=27}              |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                              | Formato de disco |
+| Pedido | Ruta de acceso                              | Formato de disco |
 |-------|-----------------------------------|-------------|
 | 1     | /ifd/xmp/exif:GPSProcessingMethod | unicode     |
-| 2     | /IFD/GPS/{ushort = 27}              |             |
+| 2     | /ifd/gps/{ushort=27}              |             |
 
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                              |
+| Pedido | Ruta de acceso                              |
 |-------|-----------------------------------|
 | 1     | /ifd/xmp/exif:gpsprocessingmethod |
-| 2     | /IFD/GPS/{ushort = 27}              |
+| 2     | /ifd/gps/{ushort=27}              |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. ProcessingMethod](../properties/props-system-gps-processingmethod.md)
+[System.GPS.ProcessingMethod](../properties/props-system-gps-processingmethod.md)
 </dt> </dl>
 
  

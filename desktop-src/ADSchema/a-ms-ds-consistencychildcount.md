@@ -27,7 +27,7 @@ Este atributo se usa para comprobar la coherencia entre el directorio y otro obj
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | MS-DS-Consistency-Child-Count        |
 | Ldap-Display-Name | mS-DS-ConsistencyChildCount          |
@@ -54,7 +54,7 @@ Este atributo se usa para comprobar la coherencia entre el directorio y otro obj
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -75,7 +75,7 @@ Este atributo se usa para comprobar la coherencia entre el directorio y otro obj
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -96,7 +96,7 @@ Este atributo se usa para comprobar la coherencia entre el directorio y otro obj
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -117,7 +117,7 @@ Este atributo se usa para comprobar la coherencia entre el directorio y otro obj
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -138,7 +138,7 @@ Este atributo se usa para comprobar la coherencia entre el directorio y otro obj
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -159,7 +159,7 @@ Este atributo se usa para comprobar la coherencia entre el directorio y otro obj
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -180,7 +180,7 @@ Este atributo se usa para comprobar la coherencia entre el directorio y otro obj
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |

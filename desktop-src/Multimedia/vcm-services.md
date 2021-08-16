@@ -1,47 +1,47 @@
 ---
-title: VCM servicios
-description: VCM servicios
+title: Servicios de VCM
+description: Servicios de VCM
 ms.assetid: ca35cf56-b823-450d-a218-e386bafbe872
 keywords:
-- Vídeo para Windows (VFW), VCM Services
-- VFW (vídeo para Windows), VCM Services
+- Vídeo para Windows (VFW), servicios de VCM
+- VFW (vídeo para Windows),servicios de VCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ac723ee2d135cde9b57cababa76db9fefbb9a23
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13d32d4a81005b6545b205d14612e9e8de06a82d436619fd5bb3a2ea9286f6ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800837"
 ---
-# <a name="vcm-services"></a>VCM servicios
+# <a name="vcm-services"></a>Servicios de VCM
 
-En general, una aplicación utiliza VCM para realizar las siguientes tareas:
+En general, una aplicación usa VCM para realizar las siguientes tareas:
 
--   Busque, abra o instale un compresor o descompresor.
--   Configurar u obtener información de configuración sobre el compresor o descompresor.
+-   Busque, abra o instale un descomprimidor o un descomprimidor.
+-   Configure u obtenga información de configuración sobre el descomprimidor o el descompresión.
 -   Use una serie de funciones para comprimir, descomprimir o dibujar los datos.
 
-Las funciones y macros de la biblioteca DrawDib realizan estas tareas implícitamente y pueden proporcionar la manera más cómoda de usar VCM. Para obtener más información acerca de la biblioteca DrawDib, consulte [DrawDib](drawdib.md).
+Las funciones y macros de la biblioteca DrawDib realizan estas tareas implícitamente y pueden proporcionar la manera más cómoda de usar VCM. Para obtener más información sobre la biblioteca DrawDib, vea [DrawDib](drawdib.md).
 
 En las secciones siguientes se describen las tareas que puede realizar mediante VCM:
 
--   [Aspectos básicos del compresor y el descompresor](compressor-and-decompressor-basics.md)
--   [Compresores seleccionados por el usuario](user-selected-compressors.md)
--   [Instalación y descompresor del compresor y descompresor](compressor-and-decompressor-installation-and-removal.md)
--   [Configuración del compresor y descompresor](compressor-and-decompressor-configuration.md)
--   [Obtener información acerca de los compresores y descompresores](getting-information-about-compressors-and-decompressors.md)
--   [Compresión de imagen única](single-image-compression.md)
+-   [Conceptos básicos sobre el descompresión y el descompresión](compressor-and-decompressor-basics.md)
+-   [Permisos seleccionados por el usuario](user-selected-compressors.md)
+-   [Instalación y eliminación de descomprimir y descomprimir](compressor-and-decompressor-installation-and-removal.md)
+-   [Configuración de descompresión y descompresión](compressor-and-decompressor-configuration.md)
+-   [Obtener información sobre los descompresores y los descomprimir](getting-information-about-compressors-and-decompressors.md)
+-   [Compresión de una sola imagen](single-image-compression.md)
 -   [Compresión de secuencia](sequence-compression.md)
 -   [Compresión de datos de imagen](image-data-compression.md)
--   [Descompresión de imagen única](single-image-decompression.md)
--   [Descompresión de datos de imagen](image-data-decompression.md)
--   [Supervisar el progreso de los compresores y descompresores](monitoring-the-progress-of-compressors-and-decompressors.md)
--   [Capacidades de dibujo de hardware](hardware-drawing-capabilities.md)
+-   [Descompresión de una sola imagen](single-image-decompression.md)
+-   [Descompresión de datos de imágenes](image-data-decompression.md)
+-   [Supervisar el progreso de los descompresores y descomprimir](monitoring-the-progress-of-compressors-and-decompressors.md)
+-   [Funcionalidades de dibujo de hardware](hardware-drawing-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

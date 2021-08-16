@@ -1,21 +1,21 @@
 ---
-title: Enumeraciones de Windows Virtual PC
+title: Windows Enumeraciones de PC virtual
 ms.assetid: a9800f9f-d91f-48be-bbb9-f736132c2fd7
-description: 'Más información sobre: enumeraciones de Windows Virtual PC'
+description: 'Más información sobre: Windows enumeraciones de PC virtual'
 keywords:
-- Windows Virtual PC Virtual PC, enumeraciones
+- Windows Virtual PC Virtual PC , enumeraciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e16e8a9faee398b546a4c15e2df6ec85565d1ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9d136e3ec1a8b4cf6c3d988017844b0994f2a3c035a5e6c2a756ea504d79b95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136488"
 ---
-# <a name="windows-virtual-pc-enumerations"></a>Enumeraciones de Windows Virtual PC
+# <a name="windows-virtual-pc-enumerations"></a>Windows Enumeraciones de PC virtual
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Las enumeraciones siguientes son compatibles con Windows Virtual PC:
 
@@ -25,9 +25,9 @@ Las enumeraciones siguientes son compatibles con Windows Virtual PC:
 -   [**VMDVDDriveAttachmentType**](vmdvddriveattachmenttype.md)
 -   [**VMDVDDriveEvent**](vmdvddriveevent.md)
 -   [**VMEndpointType**](vmendpointtype.md)
--   [**VMFloppyDiskImageType**](vmfloppydiskimagetype.md)
--   [**VMFloppyDriveAttachmentType**](vmfloppydriveattachmenttype.md)
--   [**vmFloppyDriveEvent**](vmfloppydriveevent.md)
+-   [**VMFstonepyDiskImageType**](vmfloppydiskimagetype.md)
+-   [**VMFstonepyDriveAttachmentType**](vmfloppydriveattachmenttype.md)
+-   [**vmFstonepyDriveEvent**](vmfloppydriveevent.md)
 -   [**VMHardDiskType**](vmharddisktype.md)
 -   [**VMLogoffType**](vmlogofftype.md)
 -   [**VMMouseButton**](vmmousebutton.md)

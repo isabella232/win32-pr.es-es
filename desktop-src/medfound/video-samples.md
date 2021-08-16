@@ -13,23 +13,23 @@ ms.locfileid: "118972604"
 ---
 # <a name="video-samples"></a>Ejemplos de vídeo
 
-El objeto de ejemplo de vídeo es una implementación especializada de la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) para su uso con [el representador de](enhanced-video-renderer.md) vídeo mejorado (EVR). Para crear una instancia de este objeto, llame a la [**función MFCreateVideoSampleFromSurface.**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) La función toma un puntero a una superficie de Direct3D y devuelve un puntero a la **interfazSAMPLESample.** Los siguientes tipos de objetos deben asignar ejemplos mediante esta función:
+El objeto de ejemplo de vídeo es una implementación especializada de la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) para su uso con [el representador de](enhanced-video-renderer.md) vídeo mejorado (EVR). Para crear una instancia de este objeto, llame a [**la función MFCreateVideoSampleFromSurface.**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) La función toma un puntero a una superficie de Direct3D y devuelve un puntero a la **interfaz IMFSample.** Los siguientes tipos de objetos deben asignar ejemplos mediante esta función:
 
--   Presentadores de EVR personalizados. Un presentador asigna ejemplos de vídeo y los envía al método [**MIXERTransform::P rocessOutput del**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) mezclador. Para obtener más información, [vea How to Write an EVR Presenter](how-to-write-an-evr-presenter.md).
+-   Presentadores evr personalizados. Un presentador asigna ejemplos de vídeo y los envía al método [**MIXERTransform::P rocessOutput del**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) mezclador. Para obtener más información, [vea How to Write an EVR Presenter](how-to-write-an-evr-presenter.md).
 
 -   Descodificadores de vídeo que admiten la aceleración de vídeo. Para obtener más información, [vea Compatibilidad con DXVA 2.0 en Media Foundation](supporting-dxva-2-0-in-media-foundation.md).
 
 El objeto de ejemplo de vídeo implementa las interfaces siguientes:
 
--   [**SAMPLESample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+-   [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
 -   [**IMFDesiredSample**](/windows/desktop/api/evr/nn-evr-imfdesiredsample)
 
 -   [**IMFTrackedSample**](/windows/win32/api/mfidl/nn-mfidl-imftrackedsample)
 
-Si el *parámetro pUnkSurface* de [**MFCreateVideoSampleFromSurface**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) no es **NULL,** el ejemplo de vídeo resultante contiene un único búfer multimedia que encapsula la superficie de Direct3D. Este objeto de búfer tiene una funcionalidad limitada:
+Si el *parámetro pUnkSurface* de [**MFCreateVideoSampleFromSurface**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) no es **NULL,** el ejemplo de vídeo resultante contiene un único búfer multimedia que encapsula la superficie de Direct3D. Este objeto de búfer tiene funcionalidad limitada:
 
--   El [**métodoBUFFERMediaBuffer::Lock del**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) búfer devuelve E \_ NOTIMPL.
+-   El método [**IMFMediaBuffer::Lock del**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) búfer devuelve E \_ NOTIMPL.
 
 -   El búfer no implementa la [**interfaz IMF2DBuffer.**](/windows/desktop/api/mfobjects/nn-mfobjects-imf2dbuffer)
 
@@ -49,7 +49,7 @@ Use este enfoque si necesita que la memoria de superficie sea accesible a travé
 
 <dl> <dt>
 
-[Búferes multimedia](media-buffers.md)
+[Búferes de medios](media-buffers.md)
 </dt> <dt>
 
 [Ejemplos de medios](media-samples.md)

@@ -1,7 +1,7 @@
 ---
-description: Obtiene un valor booleano que indica si se ha completado el archivo de cuota para el volumen.
+description: Obtiene un valor booleano que indica si el archivo de cuota del volumen está completo.
 ms.assetid: 25eb7df4-ba6c-4c6c-b611-e32b673a4d18
-title: Propiedad DiskQuotaControl. QuotaFileIncomplete
+title: Propiedad DiskQuotaControl.QuotaFileIncomplete
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: feb9365a6aa541ed8461bbe6d58c77ebc3684b91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9556b6a2cca3aa2ab040a3cfb81b29c8578d4d544c8d51af6ad70a0d601d63cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032783"
 ---
-# <a name="diskquotacontrolquotafileincomplete-property"></a>Propiedad DiskQuotaControl. QuotaFileIncomplete
+# <a name="diskquotacontrolquotafileincomplete-property"></a>Propiedad DiskQuotaControl.QuotaFileIncomplete
 
-Obtiene un valor booleano que indica si se ha completado el archivo de cuota para el volumen.
+Obtiene un valor booleano que indica si el archivo de cuota del volumen está completo.
 
 Esta propiedad es de solo lectura.
 
@@ -37,7 +37,7 @@ bQuotaFileIncomplete = DiskQuotaControl.QuotaFileIncomplete
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Esta propiedad se establece en **true** si el archivo de cuota está incompleto o **false** en caso contrario.
+Esta propiedad se establece en **TRUE si** el archivo de cuota está incompleto o **false** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Esta propiedad se establece en **true** si el archivo de cuota está incompleto 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Esta propiedad se establece en **true** si el archivo de cuota está incompleto 
 
 <dl> <dt>
 
-[**Objeto DiskQuotaControl**](diskquotacontrol-object.md)
+[**DiskQuotaControl (objeto)**](diskquotacontrol-object.md)
 </dt> </dl>
 
  

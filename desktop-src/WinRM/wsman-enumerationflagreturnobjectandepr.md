@@ -1,12 +1,12 @@
 ---
-title: Método WSMan. EnumerationFlagReturnObjectAndEPR (WSManDisp. h)
-description: Devuelve el valor de la marca de enumeración EnumerationFlagReturnObjectAndEPR para su uso en el parámetro flags de Session. Enumerate.
+title: Método WSMan.EnumerationFlagReturnObjectAndEPR (WSManDisp.h)
+description: Devuelve el valor de la marca de enumeración EnumerationFlagReturnObjectAndEPR para su uso en el parámetro flags de Session.Enumerate.
 ms.assetid: 052b93df-8a83-4b5e-8325-1ad500b43a88
 ms.tgt_platform: multiple
 keywords:
-- Método EnumerationFlagReturnObjectAndEPR Administración remota de Windows
-- Administración remota de Windows método EnumerationFlagReturnObjectAndEPR, objeto WSMan
-- Administración remota de Windows de objeto WSMan, método EnumerationFlagReturnObjectAndEPR
+- Método EnumerationFlagReturnObjectAndEPR Windows Remote Management
+- Método EnumerationFlagReturnObjectAndEPR Windows remote management , objeto WSMan
+- WSMan object Windows Remote Management , EnumerationFlagReturnObjectAndEPR method
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 187f8c029d0392ad9ac1a909e1e45de165815e2b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: baa63e84770010a05e144c702a10a814aea4cf8323681f6e95c8bf2facc1dfc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742284"
 ---
-# <a name="wsmanenumerationflagreturnobjectandepr-method"></a>WSMan. EnumerationFlagReturnObjectAndEPR (método)
+# <a name="wsmanenumerationflagreturnobjectandepr-method"></a>Método WSMan.EnumerationFlagReturnObjectAndEPR
 
-El método **EnumerationFlagReturnObjectAndEPR** devuelve el valor de la marca de enumeración **EnumerationFlagReturnObjectAndEPR** para su uso en el parámetro *Flags* de [**Session. Enumerate**](session-enumerate.md). Este método proporciona una sintaxis más eficaz para usar la constante, de modo que los scripts no sean necesarios para establecer un valor constante. Para obtener más información sobre cómo llamar a este método, vea [constantes de sesión](session-constants.md).
+El **método EnumerationFlagReturnObjectAndEPR** devuelve el valor de la marca de enumeración **EnumerationFlagReturnObjectAndEPR** para su uso en el parámetro *flags* [**de Session.Enumerate**](session-enumerate.md). Este método proporciona una sintaxis más eficaz para usar la constante para que los scripts no sean necesarios para establecer un valor constante. Para obtener más información sobre cómo llamar a este método, vea [Constantes de sesión](session-constants.md).
 
-**EnumerationFlagReturnObjectAndEPR** es una constante de la enumeración **\_ WSManEnumFlags** y se describe en [**constantes de enumeración**](enumeration-constants.md).
+**EnumerationFlagReturnObjectAndEPR es** una constante de la enumeración **\_ WSManEnumFlags** y se describe en [**Constantes de enumeración**](enumeration-constants.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ WSMan.EnumerationFlagReturnObjectAndEPR( _
 
 <dl> <dt>
 
-*marcas* \[ de enuncia\]
+*flags* \[ out\]
 </dt> <dd>
 
 Valor de la constante.
@@ -54,7 +54,7 @@ Valor de la constante.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -78,7 +78,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**WSMan**](wsman.md)
 </dt> <dt>
 
-[**De sesión**](session.md)
+[**Sesión**](session.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: El método check comprueba si el evento está establecido, sin bloqueos.
+description: El método Check comprueba si el evento está establecido, sin bloquearlo.
 ms.assetid: b8e55798-fd8e-4442-bc35-08887d8a3129
-title: Método CAMEvent. check (Wxutil. h)
+title: Método CAMEvent.Check (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1a112d1b9484acb4d7e9cc2992b8dee629f40e23
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a961d7df45ddac7ade5e39f91c1aed56609ce2d2eeb8e7423799c9a4903884e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955544"
 ---
-# <a name="cameventcheck-method"></a>CAMEvent. check (método)
+# <a name="cameventcheck-method"></a>Método CAMEvent.Check
 
-El `Check` método comprueba si el evento está establecido, sin bloqueos.
+El `Check` método comprueba si el evento está establecido, sin bloquear.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ BOOL Check();
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Devuelve **true** si se establece el evento o **false** en caso contrario. Este método llama al método [**CAMEvent:: wait**](camevent-wait.md) con un tiempo de espera de cero. Si el objeto es un evento de restablecimiento automático, este método restablece el evento.
+Devuelve **TRUE** si se establece el evento o **FALSE** en caso contrario. Este método llama al [**método CAMEvent::Wait**](camevent-wait.md) con un tiempo de espera de cero. Si el objeto es un evento de restablecimiento automático, este método restablece el evento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si se establece el evento o **false** en caso contrario. Este 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve **true** si se establece el evento o **false** en caso contrario. Este 
 
 <dl> <dt>
 
-[**Clase CAMEvent**](camevent.md)
+[**CLASE CAMEvent**](camevent.md)
 </dt> </dl>
 
  

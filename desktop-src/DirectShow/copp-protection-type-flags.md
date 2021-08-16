@@ -39,12 +39,12 @@ Las constantes siguientes se usan con el Protocolo de protección de salida cert
 | <span id="COPP_ProtectionType_HDCP"></span><span id="copp_protectiontype_hdcp"></span><span id="COPP_PROTECTIONTYPE_HDCP"></span><dl> <dt>**COPP \_ ProtectionType \_ HDCP**</dt> <dt>0x00000001</dt> </dl>                 | High-Bandwidth Digital Content Protection (HDCP).<br/>    |
 | <span id="COPP_ProtectionType_ACP"></span><span id="copp_protectiontype_acp"></span><span id="COPP_PROTECTIONTYPE_ACP"></span><dl> <dt>**COPP \_ ProtectionType \_ ACP**</dt> <dt>0x00000002</dt> </dl>                     | Protección de copia análoga (ACP).<br/>                        |
 | <span id="COPP_ProtectionType_CGMSA"></span><span id="copp_protectiontype_cgmsa"></span><span id="COPP_PROTECTIONTYPE_CGMSA"></span><dl> <dt>**COPP \_ ProtectionType \_ CGMSA**</dt> <dt>0x00000004</dt> </dl>             | Análogo del sistema de administración de generación de copias (CGMS-A).<br/> |
-| <span id="COPP_ProtectionType_Mask"></span><span id="copp_protectiontype_mask"></span><span id="COPP_PROTECTIONTYPE_MASK"></span><dl> <dt>**COPP \_ ProtectionType \_ Mask**</dt> <dt>0x80000007</dt> </dl>                 | Máscara de bits para aislar las marcas válidas.<br/>                      |
+| <span id="COPP_ProtectionType_Mask"></span><span id="copp_protectiontype_mask"></span><span id="COPP_PROTECTIONTYPE_MASK"></span><dl> <dt>**COPP \_ Máscara \_ ProtectionType**</dt> <dt>0x80000007</dt> </dl>                 | Máscara de bits para aislar las marcas válidas.<br/>                      |
 | <span id="COPP_ProtectionType_Reserved"></span><span id="copp_protectiontype_reserved"></span><span id="COPP_PROTECTIONTYPE_RESERVED"></span><dl> <dt>**COPP \_ ProtectionType \_ Reserved**</dt> <dt>0x7FFFFFF8</dt> </dl> | Reservado. Debe ser cero.<br/>                              |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Algunos métodos devuelven una sola marca de este tipo de enumeración y algunos métodos devuelven un **OR** bit a bit de una o varias marcas.
 

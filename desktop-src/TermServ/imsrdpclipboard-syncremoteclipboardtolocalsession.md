@@ -1,6 +1,6 @@
 ---
 title: Método SyncRemoteClipboardToLocalSession de la interfaz IMsRdpClipboard
-description: Sincroniza el portapapeles remoto con la sesión local.
+description: Sincroniza el Portapapeles remoto con la sesión local.
 ms.tgt_platform: multiple
 keywords:
 - Método SyncRemoteClipboardToLocalSession Servicios de Escritorio remoto
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: d397d7c1ca4407a5125877721be9aa022f8132a7
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: e1e56a67504ab3182ed6ccaba97591e8259d6e46b6ebdd3bdc06fbaf63c170f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104536394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000825"
 ---
-# <a name="imsrdpclipboardsyncremoteclipboardtolocalsession-method"></a>IMsRdpClipboard:: SyncRemoteClipboardToLocalSession (método)
+# <a name="imsrdpclipboardsyncremoteclipboardtolocalsession-method"></a>Método IMsRdpClipboard::SyncRemoteClipboardToLocalSession
 
-Sincroniza el portapapeles remoto con la sesión local.
+Sincroniza el Portapapeles remoto con la sesión local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,7 +48,7 @@ Vuelva **a \_ Aceptar si es** correcto.
 | Cliente mínimo compatible| Windows 10, versión 1803 (compilación 17134)      |
 | Biblioteca de tipos            | MsTscAx.dll                        |
 | Archivo DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpClipboard se define como 2E769EE8-00C7-43DC-AFD9-235D75B72A40          |
+| IID                      | IID IMsRdpClipboard se define como \_ 2E769EE8-00C7-43DC-AFD9-235D75B72A40          |
 
 ## <a name="see-also"></a>Vea también
 

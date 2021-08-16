@@ -1,5 +1,5 @@
 ---
-description: CLSID de un mezclador de vídeo personalizado para el receptor multimedia de representador de vídeo mejorado (EVR).
+description: CLSID de un mezclador de vídeo personalizado para el receptor de medios de representador de vídeo mejorado (EVR).
 ms.assetid: a3586e6f-a2a2-4932-8b43-a076f64c5958
 title: MF_ACTIVATE_CUSTOM_VIDEO_MIXER_CLSID atributo (Mfidl.h)
 ms.topic: reference
@@ -13,23 +13,23 @@ ms.locfileid: "119464585"
 ---
 # <a name="mf_activate_custom_video_mixer_clsid-attribute"></a>Atributo \_ \_ \_ \_ \_ CLSID DE MF ACTIVATE CUSTOM VIDEO MIXER
 
-CLSID de un mezclador de vídeo personalizado para el receptor multimedia de representador de vídeo mejorado (EVR).
+CLSID de un mezclador de vídeo personalizado para el receptor de medios de representador de vídeo mejorado (EVR).
 
 ## <a name="data-type"></a>Tipo de datos
 
 **GUID**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si va a crear la EVR a través de un objeto de activación, puede usar este atributo para establecer un mezclador de vídeo personalizado en la EVR. Use este atributo como se muestra a continuación:
+Si va a crear la EVR a través de un objeto de activación, puede usar este atributo para establecer un mezclador de vídeo personalizado en el EVR. Use este atributo como se muestra a continuación:
 
 1.  Llame a [**la función MFCreateVideoRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) para crear un objeto de activación para la EVR. La función devuelve un puntero a la [**interfaz DEACTIVATE.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
 
-2.  Establezca esta atribución en el puntero [**DE LAACTIVATE mediante**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) una llamada [**aATTRIBUTEAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid). El valor del atributo es el CLSID del mezclador de vídeo personalizado de la aplicación.
+2.  Establezca esta atribución en el puntero [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) mediante una llamada [**a IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid). El valor del atributo es el CLSID del mezclador de vídeo personalizado de la aplicación.
 
-Si se establece este atributo, evr llama a **CoCreateInstance** con el CLSID especificado para crear el mezclador de vídeo personalizado. El mezclador de vídeo debe exponer la [**interfaz DETRANSFORMTRANSFORM.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) El mezclador se crea como un servidor COM en proceso.
+Si se establece este atributo, el EVR llama a **CoCreateInstance** con el CLSID especificado para crear el mezclador de vídeo personalizado. El mezclador de vídeo debe exponer la [**interfaz DETRANSFORMTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) El mezclador se crea como un servidor COM en proceso.
 
-La constante GUID de este atributo se exporta desde mfuuid.lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,7 +1,7 @@
 ---
-description: Los métodos que se usan para trabajar con archivos de DirectX. x pueden devolver los siguientes valores además de los valores devueltos de COM estándar. En desuso.
+description: Los métodos usados para trabajar con archivos .x de DirectX pueden devolver los siguientes valores además de los valores devueltos com estándar. En desuso.
 ms.assetid: a91168bc-966a-47b5-ba83-fc480593228d
-title: Valores devueltos (DXFile. h)
+title: Valores devueltos (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - HeaderDef
 api_location:
 - DXFile.h
-ms.openlocfilehash: 7d465b9759d958cba06bf0b950bc67772fbb84a3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 51bc2155a74daf15945a79714355bdace06672c348dfd75679156f812d3d42be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122482"
 ---
-# <a name="return-values-dxfileh"></a>Valores devueltos (DXFile. h)
+# <a name="return-values-dxfileh"></a>Valores devueltos (DXFile.h)
 
-Los métodos que se usan para trabajar con archivos de DirectX. x pueden devolver los siguientes valores además de los valores devueltos de COM estándar. En desuso.
+Los métodos usados para trabajar con archivos .x de DirectX pueden devolver los siguientes valores además de los valores devueltos com estándar. En desuso.
 
 <dl> <dt>
 
-<span id="DXFILE_OK"></span><span id="dxfile_ok"></span>**DXFILE \_ Aceptar**
+<span id="DXFILE_OK"></span><span id="dxfile_ok"></span>**DXFILE \_ OK**
 </dt> <dd>
 
 El comando se completó correctamente.
@@ -50,7 +50,7 @@ El tamaño de la matriz no es válido.
 <span id="DXFILEERR_BADCACHEFILE"></span><span id="dxfileerr_badcachefile"></span>**DXFILEERR \_ BADCACHEFILE**
 </dt> <dd>
 
-El archivo de caché que contiene la fecha del archivo. x no es válido. Un archivo caché contiene datos recuperados de la red, almacenados en memoria caché en el disco duro y recuperados en solicitudes posteriores.
+El archivo de caché que contiene la fecha del archivo .x no es válido. Un archivo de caché contiene datos recuperados de la red, almacenados en caché en el disco duro y recuperados en solicitudes posteriores.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ El tamaño de punto flotante no es válido.
 <span id="DXFILEERR_BADFILETYPE"></span><span id="dxfileerr_badfiletype"></span>**DXFILEERR \_ BADFILETYPE**
 </dt> <dd>
 
-El archivo no es un archivo de DirectX. x.
+El archivo no es un archivo .x de DirectX.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ El recurso no es válido.
 <span id="DXFILEERR_BADSTREAMHANDLE"></span><span id="dxfileerr_badstreamhandle"></span>**DXFILEERR \_ BADSTREAMHANDLE**
 </dt> <dd>
 
-El identificador de secuencia no es válido.
+El identificador de flujo no es válido.
 
 </dd> <dt>
 
@@ -148,14 +148,14 @@ No se encontró el archivo.
 <span id="DXFILEERR_INTERNALERROR"></span><span id="dxfileerr_internalerror"></span>**DXFILEERR \_ INTERNALERROR**
 </dt> <dd>
 
-Se produjo un error interno.
+Error interno.
 
 </dd> <dt>
 
-<span id="DXFILEERR_NOINTERNET"></span><span id="dxfileerr_nointernet"></span>**DXFILEERR \_ NOinternet**
+<span id="DXFILEERR_NOINTERNET"></span><span id="dxfileerr_nointernet"></span>**DXFILEERR \_ NOINTERNET**
 </dt> <dd>
 
-No se encontró la conexión a Internet.
+No se encuentra la conexión a Internet.
 
 </dd> <dt>
 
@@ -176,25 +176,25 @@ Se han enumerado todos los objetos.
 <span id="DXFILEERR_NOMORESTREAMHANDLES"></span><span id="dxfileerr_nomorestreamhandles"></span>**DXFILEERR \_ NOMORESTREAMHANDLES**
 </dt> <dd>
 
-No hay identificadores de flujo disponibles.
+No hay controladores de flujo disponibles.
 
 </dd> <dt>
 
 <span id="DXFILEERR_NOTDONEYET"></span><span id="dxfileerr_notdoneyet"></span>**DXFILEERR \_ NOTDONEYET**
 </dt> <dd>
 
-La operación no ha finalizado.
+La operación no se ha completado.
 
 </dd> <dt>
 
 <span id="DXFILEERR_NOTFOUND"></span><span id="dxfileerr_notfound"></span>**DXFILEERR \_ NOTFOUND**
 </dt> <dd>
 
-No se pudo encontrar el objeto.
+No se encontró el objeto.
 
 </dd> <dt>
 
-<span id="DXFILEERR_PARSEERROR"></span><span id="dxfileerr_parseerror"></span>**DXFILEERR \_ Nº**
+<span id="DXFILEERR_PARSEERROR"></span><span id="dxfileerr_parseerror"></span>**DXFILEERR \_ PARSEERROR**
 </dt> <dd>
 
 No se pudo analizar el archivo.
@@ -208,7 +208,7 @@ No se encontró el recurso.
 
 </dd> <dt>
 
-<span id="DXFILEERR_NOTEMPLATE"></span><span id="dxfileerr_notemplate"></span>**DXFILEERR \_ NOtemplate**
+<span id="DXFILEERR_NOTEMPLATE"></span><span id="dxfileerr_notemplate"></span>**DXFILEERR \_ NOTEMPLATE**
 </dt> <dd>
 
 No hay ninguna plantilla disponible.
@@ -228,7 +228,7 @@ No se encontró la dirección URL.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DXFile. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DXFile.h</dt> </dl> |
 
 
 

@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentLogDiskFullException'
-title: Constructor de EsentLogDiskFullException
+description: 'Más información sobre: Constructor EsentLogDiskFullException'
+title: Constructor EsentLogDiskFullException
 TOCTitle: 'EsentLogDiskFullException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLogDiskFullException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlogdiskfullexception.esentlogdiskfullexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d931a42a8a01135e93c9515e02d602b899164c90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fed2483428bb3faedcfdf8ce2193550988b1a60990b6b8ca3b8222b8b189251
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119363798"
 ---
-# <a name="esentlogdiskfullexception-constructor"></a>Constructor de EsentLogDiskFullException
+# <a name="esentlogdiskfullexception-constructor"></a>Constructor EsentLogDiskFullException
 
 Inicializa una nueva instancia de la clase EsentLogDiskFullException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLogDiskFullException()
 public EsentLogDiskFullException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentLogDiskFullException()
 
 [Miembros de EsentLogDiskFullException](./esentlogdiskfullexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

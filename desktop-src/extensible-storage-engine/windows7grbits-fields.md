@@ -103,7 +103,7 @@ El [tipo Windows7Grbits](./windows7grbits-class.md) expone los siguientes miembr
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

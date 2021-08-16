@@ -1,9 +1,9 @@
 ---
-title: Error (objeto, WMP SDK)
-description: El objeto error proporciona acceso a una colección de objetos ErrorItem.
+title: Objeto Error (SDK de WMP)
+description: El objeto Error proporciona acceso a una colección de objetos ErrorItem.
 ms.assetid: 1f026ad4-0240-48fe-90ad-739a24e8a7ca
 keywords:
-- Objeto de error de Windows Media Player
+- Error Object Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,30 +13,30 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0aae4c86dc3f5282be7a16207923e1238e217a9e
-ms.sourcegitcommit: 6f7576b297d54c0b8f9c79e02c912b83041aa4fb
+ms.openlocfilehash: c8e5b7627db2c55eb41a267f6c8d3a7a779e2f20190ca3061a49a41eb8577adb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "105695520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748474"
 ---
 # <a name="error-object"></a>Objeto de error
 
-El objeto **error** proporciona acceso a una colección de objetos [ErrorItem](erroritem-object.md) .
+El **objeto Error** proporciona acceso a una colección de objetos [ErrorItem.](erroritem-object.md)
 
-El objeto **error** admite la siguiente propiedad.
+El **objeto Error** admite la siguiente propiedad.
 
 
 
 | Propiedad                           | Descripción                                        |
 |------------------------------------|----------------------------------------------------|
-| [errorCount](error-errorcount.md) | Recupera el número de errores en la cola de errores. |
+| [errorCount](error-errorcount.md) | Recupera el número de errores de la cola de errores. |
 
 
 
- 
+ 
 
-El objeto **error** admite los métodos siguientes.
+El **objeto Error** admite los métodos siguientes.
 
 
 
@@ -44,13 +44,13 @@ El objeto **error** admite los métodos siguientes.
 |----------------------------------------------|-------------------------------------------------------------------------------------------------|
 | [clearErrorQueue](error-clearerrorqueue.md) | Borra los errores de la cola de errores.                                                         |
 | [item](error-item.md)                       | Recupera un objeto [ErrorItem](erroritem-object.md) de la cola de errores.                     |
-| [WebHelp](error-webhelp.md)                 | Inicia la página de ayuda Web de Windows Media Player para mostrar información adicional sobre el error. |
+| [Webhelp](error-webhelp.md)                 | Inicia la página Reproductor de Windows Media Web Help para mostrar más información sobre el error. |
 
 
 
- 
+ 
 
-Se tiene acceso al objeto de **error** a través de la propiedad siguiente.
+Se **tiene** acceso al objeto Error a través de la propiedad siguiente.
 
 
 
@@ -60,7 +60,7 @@ Se tiene acceso al objeto de **error** a través de la propiedad siguiente.
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -69,9 +69,9 @@ Se tiene acceso al objeto de **error** a través de la propiedad siguiente.
 [**Referencia del modelo de objetos para scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

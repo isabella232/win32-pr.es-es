@@ -1,7 +1,7 @@
 ---
-description: Registra los servicios de Intercambio dinámico de datos de Shell (DDE) en el proceso actual, notificando al sistema que el proceso actual desea hospedar objetos DDE.
+description: Registra los servicios de datos dinámicos Exchange shell (DDE) en el proceso actual, notificando al sistema que el proceso actual desea hospedar objetos DDE.
 ms.assetid: d7f65d6a-a697-475b-a739-c7950b7f4d5d
-title: ShellDDEInit función)
+title: Función ShellDDEInit
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Shdocvw.dll
-ms.openlocfilehash: cb2f4639d97a99cd063f372e303fd48b7a1d6e4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27d2e304cf3a67f522bbeec4835f5faa98b24d1509363873bb51387391f94b1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117676717"
 ---
-# <a name="shellddeinit-function"></a>ShellDDEInit función)
+# <a name="shellddeinit-function"></a>Función ShellDDEInit
 
-Registra los servicios de Intercambio dinámico de datos de Shell (DDE) en el proceso actual, notificando al sistema que el proceso actual desea hospedar objetos DDE.
+Registra los servicios de datos dinámicos Exchange shell (DDE) en el proceso actual, notificando al sistema que el proceso actual desea hospedar objetos DDE.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,12 +39,12 @@ void ShellDDEInit(
 
 <dl> <dt>
 
-*init* \[ de\]
+*init* \[ En\]
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-**True** para registrar el proceso actual como host DDE; **False** para anular el registro.
+**TRUE** para registrar el proceso actual como host DDE; **FALSE** para anular el registro.
 
 </dd> </dl>
 
@@ -52,11 +52,11 @@ Tipo: **bool**
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El proceso que llama a esta función actúa como el Shell y se usa para ver el contenido de las carpetas abiertas con el verbo ' Open ' de [**ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea) .
+El proceso que llama a esta función actúa como shell y se usa para ver el contenido de las carpetas abiertas con el verbo "open" de [**ShellExecute.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea)
 
-Esta función no tiene un archivo de encabezado o biblioteca asociado, por lo que debe llamarse por valor ordinal. Llame a [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con el nombre del archivo DLL (Shdocvw.dll) para obtener un identificador de módulo. A continuación, llame a [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) con ese identificador de módulo y el número ordinal de función 118 para obtener la dirección de la función.
+Esta función no tiene un archivo de encabezado o biblioteca asociado, por lo que debe llamarse mediante un valor ordinal. Llame [**a LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con el nombre dll (Shdocvw.dll) para obtener un identificador de módulo. A [**continuación, llame a GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) con ese identificador de módulo y el número ordinal 118 de la función para obtener la dirección de la función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Esta función no tiene un archivo de encabezado o biblioteca asociado, por lo qu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP, Windows 2000 Professional \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional aplicaciones \[ de escritorio\]<br/>                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shdocvw.dll (versión 6,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shdocvw.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 

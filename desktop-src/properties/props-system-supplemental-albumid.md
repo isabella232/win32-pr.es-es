@@ -1,19 +1,19 @@
 ---
-description: Contiene los identificadores de los álbumes de los que el elemento es miembro. Se puede usar junto con el elemento de álbum en las API del indexador de contenido para notificar a otras aplicaciones los álbumes de imagen que el usuario ha creado o las aplicaciones ya creadas.
+description: Contiene los identificadores de los álbumes de los que es miembro el elemento. Se puede usar junto con el elemento Album en las API de Content Indexer para notificar a otras aplicaciones los álbumes de imágenes creados por el usuario o las aplicaciones que ya se han creado.
 ms.assetid: c0b1bcf0-a2ea-4ec1-9ed8-892bfceec262
-title: System. Supplemental. AlbumID
+title: System.Supplemental.AlbumID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad2b609d9d77d85f417d7274d1e5dcde06527c74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc459297765fd9a4ea40efeecbfffab7c4d83bf9eb576032e836e209c2b19106
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095512"
 ---
-# <a name="systemsupplementalalbumid"></a>System. Supplemental. AlbumID
+# <a name="systemsupplementalalbumid"></a>System.Supplemental.AlbumID
 
-Contiene los identificadores de los álbumes de los que el elemento es miembro. Se puede usar junto con el elemento de álbum en las API del indexador de contenido para notificar a otras aplicaciones los álbumes de imagen que el usuario ha creado o las aplicaciones ya creadas.
+Contiene los identificadores de los álbumes de los que es miembro el elemento. Se puede usar junto con el elemento Album en las API de Content Indexer para notificar a otras aplicaciones los álbumes de imágenes creados por el usuario o las aplicaciones que ya se han creado.
 
 ## <a name="windows-10-version-1703"></a>Windows 10, versión 1703
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

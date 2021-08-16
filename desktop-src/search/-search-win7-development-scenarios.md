@@ -13,7 +13,7 @@ ms.locfileid: "118969604"
 ---
 # <a name="windows-shell-libraries-in-windows"></a>Windows Bibliotecas de shell en Windows
 
-En este tema se describe la introducción de las bibliotecas para Windows 7 y versiones posteriores. Las bibliotecas son una Windows Shell. Para acceder a Windows Shell, como bibliotecas, los desarrolladores de terceros de Windows Search deben implementar primero un almacén de datos de Shell. Para obtener más información, vea [Implementing the Basic Folder Object Interfaces](/previous-versions/windows/desktop/legacy/cc144093(v=vs.85)).
+En este tema se describe la introducción de las bibliotecas para Windows 7 y versiones posteriores. Las bibliotecas son una Windows Shell. Para acceder a Windows Shell, como bibliotecas, los desarrolladores de Windows Search deben implementar primero un almacén de datos de Shell. Para obtener más información, vea [Implementing the Basic Folder Object Interfaces](/previous-versions/windows/desktop/legacy/cc144093(v=vs.85)).
 
 Este tema se organiza de la siguiente manera:
 
@@ -28,11 +28,11 @@ Este tema se organiza de la siguiente manera:
 
 ## <a name="libraries"></a>Bibliotecas
 
-En Windows 7 y versiones posteriores, las bibliotecas son el repositorio predeterminado de datos de usuario. Los usuarios pueden examinar sus archivos de la misma manera que lo harían en una carpeta, o pueden ver sus archivos organizados por propiedades como fecha, tipo y autor. A diferencia de una carpeta, una biblioteca no almacena realmente elementos, pero muestra los archivos almacenados en varias carpetas al mismo tiempo. Las bibliotecas proporcionan un único punto de acceso y vistas enriquecciones dinámicas a los usuarios de su contenido agregado. Por ejemplo, si un usuario tiene archivos de música en carpetas de una unidad externa además de la carpeta **Mi Música,** puede acceder inmediatamente a todos los archivos de música a través de la biblioteca Música.
+En Windows 7 y versiones posteriores, las bibliotecas son el repositorio predeterminado de datos de usuario. Los usuarios pueden examinar sus archivos de la misma manera que lo harían en una carpeta, o pueden ver sus archivos organizados por propiedades como fecha, tipo y autor. A diferencia de una carpeta, una biblioteca no almacena realmente elementos, pero muestra los archivos almacenados en varias carpetas al mismo tiempo. Las bibliotecas proporcionan un único punto de acceso y vistas enriquecciones dinámicas a los usuarios de su contenido agregado. Por ejemplo, si un usuario tiene archivos de música en carpetas de una unidad externa además de la carpeta Mi **Música,** puede acceder inmediatamente a todos los archivos de música a través de la biblioteca Música.
 
 ### <a name="user-data-entry-points"></a>Puntos de entrada de datos de usuario
 
-Las bibliotecas predeterminadas **(como Mis documentos**, **Mis** imágenes, etc.) son equivalentes a [carpeta conocida.](/previous-versions/windows/desktop/legacy/bb776911(v=vs.85)) Las bibliotecas predeterminadas proporcionan puntos de entrada conocidos a los usuarios, pero como el contenido de la biblioteca no se limita a las bibliotecas de contenido de carpetas conocidas, los usuarios tienen más libertad para determinar dónde se deben almacenar los documentos y los medios. Las bibliotecas se exponen a través del espacio de nombres shell (origen de datos de Shell). La aplicación puede proporcionar a los usuarios los mismos puntos de entrada conocidos a sus datos mediante la habilitación del reconocimiento de la biblioteca y la exploración.
+Las bibliotecas predeterminadas **(como Mis documentos**, **Mis imágenes,** etc.) son equivalentes a [carpeta conocida.](/previous-versions/windows/desktop/legacy/bb776911(v=vs.85)) Las bibliotecas predeterminadas proporcionan puntos de entrada conocidos a los usuarios, pero como el contenido de la biblioteca no se limita a las bibliotecas de contenido de carpetas conocidas, los usuarios tienen más libertad para determinar dónde se deben almacenar los documentos y los medios. Las bibliotecas se exponen a través del espacio de nombres shell (origen de datos de Shell). La aplicación puede proporcionar a los usuarios los mismos puntos de entrada conocidos a sus datos mediante la habilitación del reconocimiento de la biblioteca y la exploración.
 
 ### <a name="collections-of-folders"></a>Colecciones de carpetas
 
@@ -40,11 +40,11 @@ Las bibliotecas son colecciones de contenido definidas por el usuario. Windows B
 
 ### <a name="supported-folders-in-libraries"></a>Carpetas admitidas en bibliotecas
 
-Para que las carpetas sean compatibles con las bibliotecas, deben ser indexables en el equipo local e indexadas en un equipo Windows remoto o indexadas en un servidor con archivos indexados por Windows Search.
+Para que las carpetas sean compatibles con las bibliotecas, deben ser indexables en el equipo local e indexadas en una máquina Windows remota o indexadas en un servidor con archivos indexados por Windows Search.
 
-Los usuarios no pueden agregar carpetas no admitidas en el cuadro de diálogo Windows administración de bibliotecas. Si se agregan carpetas remotas no indexadas a una biblioteca mediante la API [IShellLibrary,](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) la experiencia del usuario de la biblioteca revertirá al modo Caja fuerte **biblioteca.** En **Caja fuerte modo** de inicio, como las vistas de disposición  de pila basadas en propiedades, las sugerencias de filtro y la compatibilidad con la búsqueda del menú Inicio se quitan de la biblioteca afectada.
+Los usuarios no pueden agregar carpetas no admitidas en el cuadro de diálogo Windows administración de bibliotecas. Si se agregan carpetas remotas no indexadas a una biblioteca mediante la API [IShellLibrary,](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) la experiencia del usuario de la biblioteca revertirá al modo Caja fuerte **biblioteca.** En **Caja fuerte modo** de inicio, como las vistas de organización  de pila basadas en propiedades, las sugerencias de filtro y la compatibilidad con la búsqueda del menú Inicio se quitan de la biblioteca afectada.
 
-En la tabla siguiente se enumeran las carpetas incluidas en las bibliotecas mediante el cuadro de diálogo de administración de bibliotecas Windows Explorer y las carpetas que no se admiten en **Caja fuerte modo :**
+En la tabla siguiente se enumeran las carpetas incluidas en las bibliotecas mediante el cuadro de diálogo de administración de bibliotecas Windows Explorer y las carpetas que no se admiten **en Caja fuerte modo :**
 
 | Carpetas admitidas                                                                                                                            | Carpetas no admitidas                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ Las bibliotecas son colecciones de carpetas de almacenamiento. Los usuarios pued
 
 ### <a name="non-file-system-shell-containers"></a>Contenedores de Shell del sistema que no son de archivos
 
-Las bibliotecas pueden contener contenedores de  Shell del sistema de archivos, como Equipo **y Panel de control**, pero contienen elementos del sistema de archivos. Las carpetas y el contenido de la biblioteca se pueden enumerar y acceder a través de las API para archivos y carpetas del sistema de archivos en sistemas operativos anteriores. Si la aplicación depende en gran medida de las API específicas del sistema de archivos, la API [IShellLibrary](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) se puede usar para obtener las rutas de acceso del sistema de archivos de carpetas y archivos dentro de las bibliotecas. En la mayoría de los casos, se recomienda usar el modelo de programación de Shell para admitir varias versiones Windows y flexibilidad de elementos. Para obtener más información, vea [Navegar por el espacio de nombres del shell](https://msdn.microsoft.com/library/dd378496(VS.85).aspx).
+Las bibliotecas pueden contener contenedores de Shell del sistema de archivos, como **Equipo** **y Panel de control**, pero contienen elementos del sistema de archivos. Las carpetas y el contenido de la biblioteca se pueden enumerar y acceder a través de las API para archivos y carpetas del sistema de archivos en sistemas operativos anteriores. Si la aplicación depende en gran medida de las API específicas del sistema de archivos, la API [IShellLibrary](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) se puede usar para obtener las rutas de acceso del sistema de archivos de carpetas y archivos dentro de las bibliotecas. En la mayoría de los casos, se recomienda usar el modelo de programación de Shell para admitir varias versiones Windows y flexibilidad de elementos. Para obtener más información, vea [Navegar por el espacio de nombres del shell](https://msdn.microsoft.com/library/dd378496(VS.85).aspx).
 
 ### <a name="library-descriptions"></a>Descripciones de biblioteca
 

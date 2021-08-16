@@ -1,5 +1,5 @@
 ---
-title: Uso de curvas y superficies DE LABS
+title: Usar curvas y superficies DE LABS
 description: Las funciones no uniformes de B-Spline lógica (SPLINEBS) proporcionan descripciones generales y eficaces de curvas y superficies en dos y tres dimensiones, lo que convierte las curvas y superficies en evaluadores OpenGL.
 ms.assetid: 0b55659d-9fa2-47fc-ae15-0c296bd94dcb
 keywords:
@@ -16,13 +16,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118932775"
 ---
-# <a name="using-nurbs-curves-and-surfaces"></a>Uso de curvas y superficies DE LABS
+# <a name="using-nurbs-curves-and-surfaces"></a>Usar curvas y superficies DE LABS
 
-Las funciones no uniformes de B-Spline lógica (SPLINEBS) proporcionan descripciones generales y eficaces de curvas y superficies en dos y tres dimensiones, lo que convierte las curvas y superficies en evaluadores OpenGL. Las funciones DESEMPBS pueden representar la geometría en muchos sistemas de diseño mecánico asistidos por pc. Pueden representar curvas y superficies en una variedad de estilos, y pueden controlar automáticamente la subdivisión adaptable que tesola el dominio en triángulos más pequeños en regiones de alta curva y bordes cercanos. Las funciones DE LABS se divide en las siguientes categorías.
+Las funciones no uniformes de B-Spline lógica (SPLINEBS) proporcionan descripciones generales y eficaces de curvas y superficies en dos y tres dimensiones, lo que convierte las curvas y superficies en evaluadores OpenGL. Las funciones DESEMPBS pueden representar la geometría en muchos sistemas de diseño mecánico asistidos por pc. Pueden representar curvas y superficies en una variedad de estilos, y pueden controlar automáticamente la subdivisión adaptable que divide el dominio en triángulos más pequeños en regiones de alta curva y bordes cerca de los bordes de bordes. Las funciones DE LABS se divide en las siguientes categorías.
 
 Para administrar un objeto DEBS, use:
 
--   [**gluNewNurbsRenderer**](glunewnurbsrenderer.md) (crear un objeto DESANBS)
+-   [**gluNewNurbsRenderer**](glunewnurbsrenderer.md) (crear un objeto DERBS)
 -   [**gluDeleteNurbsRenderer**](gludeletenurbsrenderer.md) (elimina un objeto RGBBS)
 -   [*gluNurbsCallback*](glunurbs.md) (establece una función de control de errores)
 

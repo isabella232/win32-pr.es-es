@@ -1,19 +1,19 @@
 ---
-description: Una aplicación envía el mensaje de MDIACTIVATE de WM \_ a una ventana de cliente de la interfaz de múltiples documentos (MDI) para indicar a la ventana de cliente que active una ventana secundaria MDI diferente.
+description: Una aplicación envía el mensaje WM MDIACTIVATE a una ventana de cliente de interfaz de múltiples documentos (MDI) para indicar a la ventana de cliente que active otra ventana secundaria \_ MDI.
 ms.assetid: c5de18b5-fac3-4e55-9eca-3b6672df0e7b
-title: Mensaje de WM_MDIACTIVATE (Winuser. h)
+title: WM_MDIACTIVATE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b240c41d3b7127a5d69b855f3a5587e194b02d96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e8b71e0f3755d76ecb44d60eecbd3b92c124aa59339a6fbf59a098b1eeb274f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931275"
 ---
-# <a name="wm_mdiactivate-message"></a>Mensaje de MDIACTIVATE de WM \_
+# <a name="wm_mdiactivate-message"></a>Mensaje \_ MDIACTIVATE de WM
 
-Una aplicación envía el mensaje de **\_ MDIACTIVATE de WM** a una ventana de cliente de la interfaz de múltiples documentos (MDI) para indicar a la ventana de cliente que active una ventana secundaria MDI diferente.
+Una aplicación envía el **mensaje \_ WM MDIACTIVATE** a una ventana de cliente de interfaz de múltiples documentos (MDI) para indicar a la ventana de cliente que active otra ventana secundaria MDI.
 
 
 ```C++
@@ -48,27 +48,27 @@ Si una aplicación envía este mensaje a una ventana de cliente MDI, el valor de
 
 Una ventana secundaria MDI debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-A medida que la ventana de cliente procesa este mensaje, envía **WM \_ MDIACTIVATE** a la ventana secundaria que se está desactivando y a la ventana secundaria que se va a activar. Los parámetros de mensaje recibidos por una ventana secundaria MDI son los siguientes:
+A medida que la ventana de cliente procesa este mensaje, envía **WM \_ MDIACTIVATE** a la ventana secundaria que se está desactivando y a la ventana secundaria que se está activando. Los parámetros de mensaje recibidos por una ventana secundaria MDI son los siguientes:
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
-Identificador de la ventana secundaria MDI que se va a desactivar.
+Identificador de la ventana secundaria MDI que se está desactivando.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Identificador de la ventana secundaria MDI que se va a activar.
+Identificador de la ventana secundaria MDI que se está activando.
 
 </dd> </dl>
 
-Una ventana secundaria MDI se activa independientemente de la ventana de marco MDI. Cuando la ventana de marco se activa, la ventana secundaria que se activó por última vez con el mensaje de **\_ MDIACTIVATE de WM** recibe el mensaje de [**\_ NCACTIVATE de WM**](wm-ncactivate.md) para dibujar un marco de ventana activo y una barra de título; la ventana secundaria no recibe otro mensaje de **\_ MDIACTIVATE de WM** .
+Una ventana secundaria MDI se activa independientemente de la ventana de marco MDI. Cuando la ventana de marco se activa, la ventana secundaria se activa por última vez mediante el mensaje **WM \_ MDIACTIVATE** recibe el mensaje [**WM \_ NCACTIVATE**](wm-ncactivate.md) para dibujar un marco de ventana activo y una barra de título; la ventana secundaria no recibe otro mensaje **\_ MDIACTIVATE** de WM.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ Una ventana secundaria MDI se activa independientemente de la ventana de marco M
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -89,16 +89,16 @@ Una ventana secundaria MDI se activa independientemente de la ventana de marco M
 **Referencia**
 </dt> <dt>
 
-[**MDIGETACTIVE de WM \_**](wm-mdigetactive.md)
+[**WM \_ MDIGETACTIVE**](wm-mdigetactive.md)
 </dt> <dt>
 
-[**MDINEXT de WM \_**](wm-mdinext.md)
+[**WM \_ MDINEXT**](wm-mdinext.md)
 </dt> <dt>
 
-[**NCACTIVATE de WM \_**](wm-ncactivate.md)
+[**WM \_ NCACTIVATE**](wm-ncactivate.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Interfaz de varios documentos](multiple-document-interface.md)

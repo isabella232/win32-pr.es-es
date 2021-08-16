@@ -4,12 +4,12 @@ ms.assetid: 87ff447a-ced0-4079-b46d-239f0db37250
 title: elemento hostedService
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e96c9f6e010989f4844d93299bb34f1ab8893236
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 08479e88214e5fe6d1fbbb6ff5a3fffb7bb2047e8b7ca08cde92d64dd7dd6b2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130797"
 ---
 # <a name="hostedservice-element"></a>elemento hostedService
 

@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve la ventana de propietario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Recupera la ventana propietaria sin llamar al método de interfaz . Use esta función miembro en lugar de [**CBaseControlWindow::get \_ Owner**](cbasecontrolwindow-get-owner.md), a menos que llame a esta función externamente a través del método [**IVideoWindow::get \_ Owner.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_owner)
+Recupera la ventana propietaria sin llamar al método de interfaz. Use esta función miembro en lugar de [**CBaseControlWindow::get \_ Owner**](cbasecontrolwindow-get-owner.md), a menos que llame a esto externamente a través del método [**IVideoWindow::get \_ Owner.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_owner)
 
 ## <a name="requirements"></a>Requisitos
 

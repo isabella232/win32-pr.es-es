@@ -4,12 +4,12 @@ description: Ejemplos visuales de muchos elementos de la interfaz de usuario que
 ms.assetid: be99bf83-dcd7-44df-be0d-b1b17305a2d6
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 2dc56707564115b612cc008d66697a2543191859
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: e240cd30b022fa8acab654c80189239852e5bf906c9cfcbeb03963e1b541763c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119816122"
 ---
 # <a name="visual-index"></a>Índice visual
 
@@ -24,7 +24,7 @@ Este índice se divide en las secciones siguientes:
 -   [Comandos](#commands)
 -   [Punteros](#pointers)
 -   [Windows](#windows-environment)
--   [Entorno de Windows](#windows-environment)
+-   [Windows Ambiente](#windows-environment)
 -   [Objetos visuales](#visuals)
 
 ## <a name="controls"></a>Controles
@@ -38,7 +38,7 @@ Este índice se divide en las secciones siguientes:
 | [botones de comandos](ctrl-command-buttons.md)<br/> ![captura de pantalla de un botón Aceptar ](images/visual-index-image3.png)<br/>                                           |
 | [vínculos de comandos](ctrl-command-links.md)<br/> ![captura de pantalla de dos vínculos de comandos ](images/visual-index-image4.png)<br/>                                          |
 | [listas desplegables y cuadros combinados](./ctrl-drop.md)<br/> ![captura de pantalla de una lista desplegable de tamaños de fuente ](images/visual-index-image5.png)<br/>                |
-| [cuadros de grupo](ctrl-group-boxes.md)<br/> ![captura de pantalla de las dos casillas activadas ](images/visual-index-image6.png)<br/>                               |
+| [cuadros de grupo](ctrl-group-boxes.md)<br/> ![captura de pantalla de las dos casillas seleccionadas ](images/visual-index-image6.png)<br/>                               |
 | [vínculos](ctrl-links.md)<br/> ![captura de pantalla de un comando en texto azul subrayado ](images/visual-index-image7.png)<br/>                                         |
 | [cuadros de lista](ctrl-list-boxes.md)<br/> ![captura de pantalla de una lista de resoluciones de pantalla válidas ](images/visual-index-image8.png)<br/>                               |
 | [vistas de lista](ctrl-list-views.md)<br/> ![captura de pantalla de una lista de archivos ](images/visual-index-image9.png)<br/>                                                  |
@@ -52,7 +52,7 @@ Este índice se divide en las secciones siguientes:
 | [barras de estado](ctrl-status-bars.md)<br/> ![captura de pantalla de la barra de estado y la ventana emergente ](images/visual-index-image17.png)<br/>                                  |
 | [Pestañas](ctrl-tabs.md)<br/> ![captura de pantalla de cinco pestañas ](images/visual-index-image18.png)<br/>                                                                   |
 | [cuadros de texto](ctrl-text-boxes.md)<br/> ![captura de pantalla de un cuadro de texto y su etiqueta ](images/visual-index-image19.png)<br/>                                        |
-| [Tooltips](ctrl-tooltips-and-infotips.md)<br/> ![captura de pantalla del botón de impresión y su información sobre herramientas ](images/visual-index-image20.png)<br/>                           |
+| [tooltips](ctrl-tooltips-and-infotips.md)<br/> ![captura de pantalla del botón de impresión y su información sobre herramientas ](images/visual-index-image20.png)<br/>                           |
 | [información sobre la información](ctrl-tooltips-and-infotips.md)<br/> ![captura de pantalla del botón Compartir y su información ](images/visual-index-image21.png)<br/>                            |
 | [vistas de árbol](ctrl-tree-views.md)<br/> ![captura de pantalla de la jerarquía de carpetas ](images/visual-index-image22.png)<br/>                                                |
 
@@ -68,7 +68,7 @@ Este índice se divide en las secciones siguientes:
 |---------------------------------------------------------------------------------------------------------------------------------|
 | [Menús](cmd-menus.md)<br/> ![captura de pantalla del menú ver y sus submenús ](images/visual-index-image23.png)<br/> |
 | [Barras](cmd-toolbars.md)<br/> ![captura de pantalla de una barra de herramientas ](images/visual-index-image24.png)<br/>                |
-| [Cintas](cmd-ribbons.md)<br/> ![captura de pantalla de la cinta de opciones de microsoft word ](images/visual-index-image25.png)<br/>  |
+| [Cintas](cmd-ribbons.md)<br/> ![captura de pantalla de la cinta de opciones de palabra de Microsoft ](images/visual-index-image25.png)<br/>  |
 
 
 

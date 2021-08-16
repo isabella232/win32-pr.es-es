@@ -27,7 +27,7 @@ Lista de ámbitos de directorio (por ejemplo, C: \\ o D: \) que están indexados
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | IndexedScopes                               |
 | Ldap-Display-Name | indexedScopes                               |
@@ -53,7 +53,7 @@ Lista de ámbitos de directorio (por ejemplo, C: \\ o D: \) que están indexados
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -74,7 +74,7 @@ Lista de ámbitos de directorio (por ejemplo, C: \\ o D: \) que están indexados
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -95,7 +95,7 @@ Lista de ámbitos de directorio (por ejemplo, C: \\ o D: \) que están indexados
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -116,7 +116,7 @@ Lista de ámbitos de directorio (por ejemplo, C: \\ o D: \) que están indexados
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -137,7 +137,7 @@ Lista de ámbitos de directorio (por ejemplo, C: \\ o D: \) que están indexados
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -158,7 +158,7 @@ Lista de ámbitos de directorio (por ejemplo, C: \\ o D: \) que están indexados
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |

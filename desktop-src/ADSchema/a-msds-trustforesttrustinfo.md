@@ -27,12 +27,12 @@ Contiene información de confianza de bosque (un BLOB binario) que usa el sistem
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------------------|
 | CN                | ms-DS-Trust-Forest-Trust-Info                                                                                      |
 | Ldap-Display-Name | msDS-TrustForestTrustInfo                                                                                          |
 | Size              | \-                                                                                                                 |
-| Actualizar privilegios  | \-                                                                                                                 |
+| Privilegio actualizar  | \-                                                                                                                 |
 | Frecuencia de actualización  | Solo cuando cambia la relación de confianza entre bosques. Esto puede ocurrir si cambia la topología de un bosque de confianza. |
 | Attribute-Id      | 1.2.840.113556.1.4.1702                                                                                            |
 | System-Id-Guid    | 29cc866e-49d3-4969-942e-1dbc0925d183                                                                               |
@@ -52,7 +52,7 @@ Contiene información de confianza de bosque (un BLOB binario) que usa el sistem
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
@@ -73,7 +73,7 @@ Contiene información de confianza de bosque (un BLOB binario) que usa el sistem
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
@@ -94,7 +94,7 @@ Contiene información de confianza de bosque (un BLOB binario) que usa el sistem
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
@@ -115,7 +115,7 @@ Contiene información de confianza de bosque (un BLOB binario) que usa el sistem
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
@@ -136,7 +136,7 @@ Contiene información de confianza de bosque (un BLOB binario) que usa el sistem
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |

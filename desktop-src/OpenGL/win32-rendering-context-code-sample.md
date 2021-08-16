@@ -1,23 +1,23 @@
 ---
-title: Ejemplo de código de contexto de representación de Windows
-description: En el ejemplo de código siguiente se muestra cómo se ve el código de contexto de representación de GLX en la sección anterior cuando se ha migrado a Windows.
+title: Windows Ejemplo de código de contexto de representación
+description: En el ejemplo de código siguiente se muestra el aspecto del código contextual de representación de GLX en la sección anterior cuando se ha portado a Windows.
 ms.assetid: 12992faa-eb64-4a21-8015-3c73c2914189
 keywords:
-- contextos de representación
-- trasladar a OpenGL, contextos de representación
-- Portabilidad de OpenGL, contextos de representación
+- representar contextos
+- porte a OpenGL, representación de contextos
+- Porte de OpenGL, representación de contextos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca0423f7458538f903a339f2f82dbff1c86c0626
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9693b140083210ce0865b18463f4595c2f1fc731c8fc1d837f61342ede50b9d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794698"
 ---
-# <a name="windows-rendering-context-code-sample"></a>Ejemplo de código de contexto de representación de Windows
+# <a name="windows-rendering-context-code-sample"></a>Windows Ejemplo de código de contexto de representación
 
-En el ejemplo de código siguiente se muestra cómo se ve el código de contexto de representación de GLX en la sección anterior cuando se ha migrado a Windows.
+En el ejemplo de código siguiente se muestra el aspecto del código contextual de representación de GLX en la sección anterior cuando se ha portado a Windows.
 
 
 ```C++
@@ -69,9 +69,9 @@ break;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

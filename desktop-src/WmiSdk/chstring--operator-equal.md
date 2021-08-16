@@ -2,21 +2,21 @@
 description: El operador de asignación CHString (=) reinicializa un objeto CHString existente con nuevos datos.
 ms.assetid: 6864aacf-ac18-4b5a-be3e-3a0d8bb31e74
 ms.tgt_platform: multiple
-title: 'CHString:: Operator = (ChString. h)'
+title: CHString::operator= (ChString.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9abfa9ea2b72aa8f6830d9fb6388861c8c3b82d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dde67bbf0f1a7326074bc7638cdd6b256ad763e115ad12e2c193e6bcdc66605e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131787"
 ---
-# <a name="chstringoperator"></a>CHString:: Operator =
+# <a name="chstringoperator"></a>CHString::operator=
 
-\[La clase [**CHString**](chstring.md) forma parte del marco de trabajo del proveedor WMI, que ahora se considera en el estado final, y no habrá más desarrollo, mejoras o actualizaciones para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
+\[La [**clase CHString**](chstring.md) forma parte del marco de proveedores WMI que ahora se considera en estado final y no habrá más desarrollos, mejoras o actualizaciones disponibles para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
 
-El operador de asignación [**CHString**](chstring.md) (=) reinicializa un objeto CHString existente con nuevos datos.
+El [**operador de asignación CHString**](chstring.md) (=) reinicializa un objeto CHString existente con nuevos datos.
 
 ``` syntax
 const CHString& operator =(
@@ -55,31 +55,31 @@ throw( CHeap_Exception );
 <span id="stringSrc__p"></span><span id="stringsrc__p"></span><span id="STRINGSRC__P"></span>*stringSrc*, *p*
 </dt> <dd>
 
-Asigna una cadena [**CHString**](chstring.md) a este objeto.
+Asigna una [**cadena CHString**](chstring.md) a este objeto .
 
 </dd> <dt>
 
-<span id="ch"></span><span id="CH"></span>*Cam*
+<span id="ch"></span><span id="CH"></span>*Ch*
 </dt> <dd>
 
 Asigna un carácter a este objeto.
 
 </dd> <dt>
 
-<span id="lpsz__psz"></span><span id="LPSZ__PSZ"></span>*lpsz*, *PSZ*
+<span id="lpsz__psz"></span><span id="LPSZ__PSZ"></span>*lpsz*, *psz*
 </dt> <dd>
 
-Asigna una cadena terminada en **null** a este objeto.
+Asigna una **cadena terminada** en NULL a este objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la cadena de destino (es decir, el lado izquierdo) ya es lo suficientemente grande como para almacenar los datos nuevos, no se realiza ninguna asignación de memoria nueva. Sin embargo, pueden producirse excepciones de memoria cada vez que se usa el operador de asignación porque a menudo se asigna un nuevo almacenamiento para contener el objeto [**CHString**](chstring.md) resultante.
+Si la cadena de destino (es decir, el lado izquierdo) ya es lo suficientemente grande como para almacenar los nuevos datos, no se realiza ninguna nueva asignación de memoria. Sin embargo, pueden producirse excepciones de memoria cada vez que se usa el operador de asignación porque a menudo se asigna nuevo almacenamiento para contener el [**objeto CHString**](chstring.md) resultante.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el uso de **CHString:: Operator =**:
+En el ejemplo de código siguiente se muestra el uso de **CHString::operator =**:
 
 
 ```C++
@@ -101,8 +101,8 @@ s1 = 'x';               // Or just individual characters
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                                                                                |
-| Encabezado<br/>                   | <dl> <dt>ChString. h (incluye FwCommon. h)</dt> </dl>                                                    |
-| Biblioteca<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
+| Header<br/>                   | <dl> <dt>ChString.h (incluir FwCommon.h)</dt> </dl>                                                    |
+| Biblioteca<br/>                  | <dl> <dt>FrameDyn.lib</dt> </dl>                                                                       |
 | Archivo DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 
 

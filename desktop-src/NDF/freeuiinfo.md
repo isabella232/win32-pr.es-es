@@ -57,7 +57,7 @@ Esta función no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
@@ -65,7 +65,7 @@ Esta función no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

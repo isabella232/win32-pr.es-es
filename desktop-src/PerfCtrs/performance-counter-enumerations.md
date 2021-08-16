@@ -18,4 +18,4 @@ Los consumidores que usan las [funciones Consumidor de PerfLib V2](using-the-per
 - [**PerfCounterDataType**](/windows/desktop/api/Perflib/ne-perflib-perfcounterdatatype)
 - [**PerfRegInfoType**](/windows/desktop/api/Perflib/ne-perflib-perfreginfotype)
 
-Para obtener información sobre las funciones disponibles para trabajar con contadores de rendimiento, vea [Funciones de contadores de rendimiento](performance-counters-functions.md).
+Para obtener información sobre las funciones que están disponibles para trabajar con contadores de rendimiento, vea [Funciones de contadores de rendimiento](performance-counters-functions.md).

@@ -1,7 +1,7 @@
 ---
 description: Define un contador.
 ms.assetid: 8f1338c0-7ea6-4d0c-af71-51012973e4a0
-title: Counter (tipo complejo)
+title: counter Tipo complejo
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d591d4c23b626eaf2e2bfb10b528ff7c054507df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 754b72d47e4fecbc5de3697cbec255251714885835a2ec429210c9ce5f489c77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117793759"
 ---
-# <a name="counter-complex-type"></a>Counter (tipo complejo)
+# <a name="counter-complex-type"></a>counter Tipo complejo
 
 Define un contador.
 
@@ -283,7 +283,7 @@ Define un contador.
 
 | Elemento               | Tipo                                                                                 | Descripción                                                                                                      |
 |-----------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| **contraatributos** | [**Man: contraattributes**](performance-counters-counterattributes-complex-type.md) | Muestra los atributos únicos que especifican cómo se muestran los datos del contador en una aplicación de consumidor.<br/> |
+| **counterAttributes** | [**man:counterAttributes**](performance-counters-counterattributes-complex-type.md) | Enumera los atributos únicos que especifican cómo se muestran los datos del contador en una aplicación de consumidor.<br/> |
 
 
 
@@ -308,42 +308,42 @@ Define un contador.
 <tr class="odd">
 <td>aggregate</td>
 
-<td>Función de agregación que se va a aplicar si el atributo <strong>instances</strong> de <a href="performance-counters-counterset-complex-type.md"><strong>counterSet</strong></a> es GlobalAggregate, multipleAggregate o globalAggregateHistory. A continuación se muestran las posibles funciones de agregación que se pueden aplicar:<br/> <dl> <dt><span id="max"></span><span id="MAX"></span>máx.</dt> <dd> Se devuelve el valor de contador máximo.<br/> </dd> <dt><span id="min"></span><span id="MIN"></span>minuto</dt> <dd> Se devuelve el valor de contador mínimo.<br/> </dd> <dt><span id="avg"></span><span id="AVG"></span>latencia</dt> <dd> Se devuelve el valor de contador promedio.<br/> </dd> <dt><span id="sum"></span><span id="SUM"></span>Sume</dt> <dd> Se devuelve la suma de los valores del contador.<br/> </dd> <dt><span id="undefined"></span><span id="UNDEFINED"></span>indefinido</dt> <dd> No agregue este contador.<br/> </dd> </dl></td>
+<td>Función de agregación que se va a aplicar si el atributo <strong>de</strong> instancias de <a href="performance-counters-counterset-complex-type.md"><strong>counterSet</strong></a> es globalAggregate, multipleAggregate o globalAggregateHistory. Estas son las posibles funciones de agregación que puede aplicar:<br/> <dl> <dt><span id="max"></span><span id="MAX"></span>máximo</dt> <dd> Se devuelve el valor máximo del contador.<br/> </dd> <dt><span id="min"></span><span id="MIN"></span>Min</dt> <dd> Se devuelve el valor mínimo del contador.<br/> </dd> <dt><span id="avg"></span><span id="AVG"></span>Avg</dt> <dd> Se devuelve el valor promedio del contador.<br/> </dd> <dt><span id="sum"></span><span id="SUM"></span>Suma</dt> <dd> Se devuelve la suma de los valores del contador.<br/> </dd> <dt><span id="undefined"></span><span id="UNDEFINED"></span>Indefinido</dt> <dd> No agregue este contador.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td>baseID</td>
-<td><a href="performance-counters-uint32type-simple-type.md"><strong>Man: UInt32Type</strong></a></td>
-<td>El identificador de otro contador dentro del mismo conjunto de contadores, cuyo valor se utiliza para calcular el valor de este contador. Los siguientes tipos de contador requieren un contador base:<br/> <dl> <dt><span id="PERF_AVERAGE_TIMER"></span><span id="perf_average_timer"></span>PERF_AVERAGE_TIMER</dt> <dd> Requiere el contador base PERF_AVERAGE_BASE.<br/> </dd> <dt><span id="PERF_AVERAGE_BULK"></span><span id="perf_average_bulk"></span>PERF_AVERAGE_BULK</dt> <dd> Requiere el contador base PERF_AVERAGE_BASE.<br/> </dd> <dt><span id="PERF_COUNTER_MULTI_TIMER_INV"></span><span id="perf_counter_multi_timer_inv"></span>PERF_COUNTER_MULTI_TIMER_INV</dt> <dd> Requiere el contador base PERF_COUNTER_MULTI_BASE.<br/> </dd> <dt><span id="PERF_LARGE_RAW_FRACTION"></span><span id="perf_large_raw_fraction"></span>PERF_LARGE_RAW_FRACTION</dt> <dd> Requiere el contador base PERF_LARGE_RAW_BASE.<br/> </dd> <dt><span id="PERF_PRECISION_100NS_TIMER"></span><span id="perf_precision_100ns_timer"></span>PERF_PRECISION_100NS_TIMER</dt> <dd> Requiere el contador base PERF_LARGE_RAW_BASE.<br/> </dd> <dt><span id="PERF_RAW_FRACTION"></span><span id="perf_raw_fraction"></span>PERF_RAW_FRACTION</dt> <dd> Requiere el contador base PERF_RAW_BASE.<br/> </dd> <dt><span id="PERF_SAMPLE_FRACTION"></span><span id="perf_sample_fraction"></span>PERF_SAMPLE_FRACTION</dt> <dd> Requiere el contador base PERF_SAMPLE_BASE.<br/> </dd> </dl></td>
+<td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
+<td>Identificador de otro contador dentro del mismo conjunto de contadores, cuyo valor se usa para calcular el valor de este contador. Los siguientes tipos de contador requieren un contador base:<br/> <dl> <dt><span id="PERF_AVERAGE_TIMER"></span><span id="perf_average_timer"></span>PERF_AVERAGE_TIMER</dt> <dd> Requiere el PERF_AVERAGE_BASE base.<br/> </dd> <dt><span id="PERF_AVERAGE_BULK"></span><span id="perf_average_bulk"></span>PERF_AVERAGE_BULK</dt> <dd> Requiere el PERF_AVERAGE_BASE base.<br/> </dd> <dt><span id="PERF_COUNTER_MULTI_TIMER_INV"></span><span id="perf_counter_multi_timer_inv"></span>PERF_COUNTER_MULTI_TIMER_INV</dt> <dd> Requiere el PERF_COUNTER_MULTI_BASE base.<br/> </dd> <dt><span id="PERF_LARGE_RAW_FRACTION"></span><span id="perf_large_raw_fraction"></span>PERF_LARGE_RAW_FRACTION</dt> <dd> Requiere el PERF_LARGE_RAW_BASE base.<br/> </dd> <dt><span id="PERF_PRECISION_100NS_TIMER"></span><span id="perf_precision_100ns_timer"></span>PERF_PRECISION_100NS_TIMER</dt> <dd> Requiere el PERF_LARGE_RAW_BASE base.<br/> </dd> <dt><span id="PERF_RAW_FRACTION"></span><span id="perf_raw_fraction"></span>PERF_RAW_FRACTION</dt> <dd> Requiere el PERF_RAW_BASE base.<br/> </dd> <dt><span id="PERF_SAMPLE_FRACTION"></span><span id="perf_sample_fraction"></span>PERF_SAMPLE_FRACTION</dt> <dd> Requiere el PERF_SAMPLE_BASE base.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td>defaultScale</td>
 
-<td>Factor de escala que se va a aplicar al valor de contador (factor * valor de contador). El valor predeterminado es cero si no se aplica ninguna escala. Los valores válidos van de 10 a 10 (de 0,0000000001 a 1 mil millones). Si este valor es cero, el valor de escala es 1; Si este valor es 1, el valor de escala es 10; Si este valor es 1, el valor de escala es. 10; etc.<br/></td>
+<td>Factor de escala que se aplicará al valor del contador (factor * valor de contador). El valor predeterminado es cero si no se aplica ninguna escala. Los valores válidos van de 10 a 10 (0,0000000001 a 1000000000). Si este valor es cero, el valor de escala es 1; si este valor es 1, el valor de escala es 10; si este valor es 1, el valor de escala es .10; y así sucesivamente.<br/></td>
 </tr>
 <tr class="even">
 <td>description</td>
 <td><strong>xs:string</strong></td>
-<td>Breve descripción del contador. No es necesario especificar este atributo si el contador incluye el atributo <a href="performance-counters-counterattribute-complex-type.md"><strong>nodisplay</strong></a> .<br/></td>
+<td>Descripción breve del contador. No es necesario especificar este atributo si el contador incluye el <a href="performance-counters-counterattribute-complex-type.md"><strong>atributo noDisplay.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td>detailLevel</td>
 
-<td>Especifica la audiencia de destino para los detalles del contador. Los posibles valores son los siguientes:<br/> <dl> <dt><span id="standard"></span><span id="STANDARD"></span>normal</dt> <dd> Muestra detalles sobre el contador que un usuario típico entendería.<br/> </dd> <dt><span id="advanced"></span><span id="ADVANCED"></span>financieros</dt> <dd> Muestra detalles sobre el contador que solo un usuario avanzado entendería.<br/> </dd> </dl></td>
+<td>Especifica la audiencia de destino para los detalles del contador. Los posibles valores son los siguientes:<br/> <dl> <dt><span id="standard"></span><span id="STANDARD"></span>Estándar</dt> <dd> Mostrar detalles sobre el contador que un usuario típico entendería.<br/> </dd> <dt><span id="advanced"></span><span id="ADVANCED"></span>Avanzada</dt> <dd> Mostrar detalles sobre el contador que solo un usuario avanzado entendería.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td>campo</td>
-<td><a href="performance-counters-csymboltype-simple-type.md"><strong>Man: CSymbolType</strong></a></td>
-<td>Nombre de un campo dentro del struct que contiene el valor del contador. Este atributo no está permitido para los proveedores de modo de usuario.<br/></td>
+<td><a href="performance-counters-csymboltype-simple-type.md"><strong>man:CSymbolType</strong></a></td>
+<td>Nombre de un campo dentro de la estructura que contiene el valor del contador. Este atributo no se permite para los proveedores en modo de usuario.<br/></td>
 </tr>
 <tr class="odd">
 <td>id</td>
-<td><a href="performance-counters-uint32type-simple-type.md"><strong>Man: UInt32Type</strong></a></td>
-<td>Número único que identifica el contador en el conjunto de contadores.<br/></td>
+<td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
+<td>Número único que identifica el contador dentro del conjunto de contadores.<br/></td>
 </tr>
 <tr class="even">
 <td>multiCounterID</td>
-<td><a href="performance-counters-uint32type-simple-type.md"><strong>Man: UInt32Type</strong></a></td>
-<td>Identificador de otro contador dentro del mismo conjunto de contadores, cuyo valor de multiplicador se usa para calcular el valor de este contador. Los siguientes tipos de contador requieren un valor de multiplicador. El contador al que se hace referencia debe ser de tipo PERF_COUNTER_RAWCOUNT.<br/>
+<td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
+<td>Identificador de otro contador dentro del mismo conjunto de contadores, cuyo valor multiplicador se usa para calcular el valor de este contador. Los siguientes tipos de contador requieren un valor multiplicador. El contador al que se hace referencia debe ser de tipo PERF_COUNTER_RAWCOUNT.<br/>
 <ul>
 <li>PERF_COUNTER_MULTI_TIMER</li>
 <li>PERF_COUNTER_MULTI_TIMER_INV</li>
@@ -354,12 +354,12 @@ Define un contador.
 <tr class="odd">
 <td>name</td>
 
-<td>Nombre del contador. El nombre debe ser único y tener menos de 1.024 caracteres. El nombre distingue mayúsculas de minúsculas. No es necesario especificar este atributo si el contador incluye el atributo <a href="performance-counters-counterattribute-complex-type.md"><strong>nodisplay</strong></a> .<br/></td>
+<td>Nombre del contador. El nombre debe ser único y tener menos de 1024 caracteres. El nombre distingue mayúsculas de minúsculas. No es necesario especificar este atributo si el contador incluye el <a href="performance-counters-counterattribute-complex-type.md"><strong>atributo noDisplay.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td>perfFreqID</td>
-<td><a href="performance-counters-uint32type-simple-type.md"><strong>Man: UInt32Type</strong></a></td>
-<td>El identificador de otro contador dentro del mismo conjunto de contadores, cuyo valor de frecuencia se usa para calcular el valor de este contador. Los siguientes tipos de contador requieren una frecuencia. El tipo de contador PERF_COUNTER_LARGE_RAWCOUNT contiene el valor de la marca de tiempo.<br/>
+<td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
+<td>Identificador de otro contador dentro del mismo conjunto de contadores, cuyo valor de frecuencia se usa para calcular el valor de este contador. Los siguientes tipos de contador requieren una frecuencia. El PERF_COUNTER_LARGE_RAWCOUNT tipo de contador contiene el valor de marca de tiempo.<br/>
 <ul>
 <li>PERF_COUNTER_OBJECT_TIME_QUEUELEN_TYPE</li>
 <li>PERF_ELAPSED_TIME</li>
@@ -369,8 +369,8 @@ Define un contador.
 </tr>
 <tr class="odd">
 <td>perfTimeID</td>
-<td><a href="performance-counters-uint32type-simple-type.md"><strong>Man: UInt32Type</strong></a></td>
-<td>El identificador de otro contador dentro del mismo conjunto de contadores, cuyo valor de marca de tiempo se utiliza para calcular el valor de este contador. Los siguientes tipos de contador requieren una marca de tiempo. El tipo de contador PERF_COUNTER_LARGE_RAWCOUNT contiene el valor de la marca de tiempo.<br/>
+<td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
+<td>Identificador de otro contador dentro del mismo conjunto de contadores, cuyo valor de marca de tiempo se usa para calcular el valor de este contador. Los siguientes tipos de contador requieren una marca de tiempo. El PERF_COUNTER_LARGE_RAWCOUNT tipo de contador contiene el valor de marca de tiempo.<br/>
 <ul>
 <li>PERF_COUNTER_OBJECT_TIME_QUEUELEN_TYPE</li>
 <li>PERF_ELAPSED_TIME</li>
@@ -380,32 +380,32 @@ Define un contador.
 </tr>
 <tr class="even">
 <td>struct</td>
-<td><a href="performance-counters-csymboltype-simple-type.md"><strong>Man: CSymbolType</strong></a></td>
-<td>Nombre de un elemento de estructura que contiene este valor de contador. Este atributo no está permitido para los proveedores de modo de usuario.<br/></td>
+<td><a href="performance-counters-csymboltype-simple-type.md"><strong>man:CSymbolType</strong></a></td>
+<td>Nombre de un elemento struct que contiene este valor de contador. Este atributo no se permite para los proveedores en modo de usuario.<br/></td>
 </tr>
 <tr class="odd">
 <td>símbolo</td>
-<td><a href="performance-counters-csymboltype-simple-type.md"><strong>Man: CSymbolType</strong></a></td>
-<td>Nombre simbólico que identifica el contador. La herramienta <a href="ctrpp.md">CTRPP</a> crea una constante que se puede usar al llamar a funciones que requieren un identificador de contador (por ejemplo, <a href="/windows/desktop/api/Perflib/nf-perflib-perfincrementulongcountervalue"><strong>PerfIncrementULongCounterValue</strong></a>). El nombre de la constante es el nombre simbólico.<br/></td>
+<td><a href="performance-counters-csymboltype-simple-type.md"><strong>man:CSymbolType</strong></a></td>
+<td>Nombre simbólico que identifica el contador. La <a href="ctrpp.md">herramienta CTRPP</a> crea una constante que se puede usar al llamar a funciones que requieren un identificador de contador (por ejemplo, <a href="/windows/desktop/api/Perflib/nf-perflib-perfincrementulongcountervalue"><strong>PerfIncrementULongCounterValue).</strong></a> El nombre de la constante es el nombre simbólico.<br/></td>
 </tr>
 <tr class="even">
-<td>type</td>
+<td>tipo</td>
 
-<td>Nombre del tipo de contador. Para ver los valores posibles, vea el bloque de sintaxis anterior. Para obtener detalles de cada tipo, vea <a href="/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)">tipos de contador</a> en la guía de implementación de Windows 2003. El nombre distingue mayúsculas de minúsculas. <br/></td>
+<td>Nombre del tipo de contador. Para ver los valores posibles, consulte el bloque de sintaxis anterior. Para obtener más información sobre cada tipo, vea <a href="/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)">Tipos de contadores</a> en Windows Guía de implementación de 2003. El nombre distingue mayúsculas de minúsculas. <br/></td>
 </tr>
 <tr class="odd">
 <td>uri</td>
 <td><strong>xs:anyURI</strong></td>
-<td>Un identificador uniforme de recursos único que permite a los usuarios recuperar los valores de contador de cualquier ubicación.<br/></td>
+<td>Identificador uniforme de recursos único que permite a los usuarios recuperar valores de contador de cualquier ubicación.<br/></td>
 </tr>
 </tbody>
 </table>
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para proporcionar compatibilidad con versiones anteriores, cada contador del conjunto de contadores debe especificar los mismos valores de **perfFreqID** y **perfTimeID** .
+Para proporcionar compatibilidad con versiones anteriores, cada contador del conjunto de contadores debe especificar los mismos valores **perfFreqID** **y perfTimeID.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -413,8 +413,8 @@ Para proporcionar compatibilidad con versiones anteriores, cada contador del con
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

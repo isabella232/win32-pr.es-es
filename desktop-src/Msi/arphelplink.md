@@ -1,19 +1,19 @@
 ---
-description: La propiedad ARPHELPLINK es la dirección de Internet para el soporte técnico. Las applets de mantenimiento del producto muestran este valor.
+description: La propiedad ARPHELPLINK es la dirección de Internet para soporte técnico. Los applets de mantenimiento del producto muestran este valor.
 ms.assetid: 1f657f62-9e7d-466e-8f3e-084093c0e675
 title: Propiedad ARPHELPLINK
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f12de88f98f25f73b322fd6406b305a0644751d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41b456504e08b8764af36baaef151dbdcf3c5e07a5c5205094d5a52ba05eebde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066215"
 ---
 # <a name="arphelplink-property"></a>Propiedad ARPHELPLINK
 
-La propiedad **ARPHELPLINK** es la dirección de Internet para el soporte técnico. Las applets de mantenimiento del producto muestran este valor.
+La **propiedad ARPHELPLINK** es la dirección de Internet para soporte técnico. Los applets de mantenimiento del producto muestran este valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ La propiedad **ARPHELPLINK** es la dirección de Internet para el soporte técni
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

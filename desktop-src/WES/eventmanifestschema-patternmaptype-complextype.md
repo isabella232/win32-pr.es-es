@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de PatternMapType
-description: No se utiliza. Define una asignación entre dos expresiones regulares. Una expresión se utiliza para buscar una cadena coincidente en la cadena de mensaje y la otra se usa para modificar la cadena antes de que el servicio la vuelva a colocar en la cadena de mensaje.
+title: Tipo complejo PatternMapType
+description: No se usa. Define una asignación entre dos expresiones regulares. Una expresión se usa para buscar una cadena correspondiente en la cadena del mensaje y la otra para modificar la cadena antes de que el servicio la vuelva a coloca en la cadena del mensaje.
 ms.assetid: 184b6aeb-a554-4a92-b19e-1849c711d33b
 keywords:
-- PatternMapType tipo complejo EventLog
+- EventLog de tipo complejo PatternMapType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e39ca30520f4f595bfc73a4d80b9bc191793859a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d4ba0c404220023a124c082ea448cbb7bdcab192b611bf35a2afc90df82e9e63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136198"
 ---
-# <a name="patternmaptype-complex-type"></a>Tipo complejo de PatternMapType
+# <a name="patternmaptype-complex-type"></a>Tipo complejo PatternMapType
 
-No se utiliza. Define una asignación entre dos expresiones regulares. Una expresión se utiliza para buscar una cadena coincidente en la cadena de mensaje y la otra se usa para modificar la cadena antes de que el servicio la vuelva a colocar en la cadena de mensaje.
+No se usa. Define una asignación entre dos expresiones regulares. Una expresión se usa para buscar una cadena correspondiente en la cadena del mensaje y la otra para modificar la cadena antes de que el servicio la vuelva a coloca en la cadena del mensaje.
 
 ``` syntax
 <xs:complexType name="PatternMapType">
@@ -53,7 +53,7 @@ No se utiliza. Define una asignación entre dos expresiones regulares. Una expre
 
 | Elemento                                                       | Tipo                                                                               | Descripción                                                                                                   |
 |---------------------------------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [**mapa**](eventmanifestschema-map-patternmaptype-element.md) | [**PatternMapValueType**](eventmanifestschema-patternmapvaluetype-complextype.md) | Define las expresiones regulares que se usan para buscar una cadena coincidente en la cadena de mensaje y modificarla.<br/> |
+| [**Mapa**](eventmanifestschema-map-patternmaptype-element.md) | [**PatternMapValueType**](eventmanifestschema-patternmapvaluetype-complextype.md) | Define las expresiones regulares utilizadas para buscar una cadena correspondiente en la cadena del mensaje y modificarla.<br/> |
 
 
 
@@ -63,9 +63,9 @@ No se utiliza. Define una asignación entre dos expresiones regulares. Una expre
 
 | Nombre   | Tipo                                                              | Descripción                                                                                                                                                                                                                                                                                                         |
 |--------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| format | anyURI                                                            | Motor de expresiones regulares que se va a usar.<br/>                                                                                                                                                                                                                                                                    |
-| name   | **QName**                                                         | Nombre del mapa de patrones. Use el nombre en un elemento de datos para hacer referencia a las asignaciones.<br/>                                                                                                                                                                                                                   |
-| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se va a usar para hacer referencia a las asignaciones de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) utiliza el símbolo para crear una constante para la asignación en el archivo de encabezado que genera el compilador. Si no especifica un símbolo, el compilador genera uno automáticamente.<br/> |
+| format | anyURI                                                            | Motor de expresiones regulares que se usará.<br/>                                                                                                                                                                                                                                                                    |
+| name   | **QName**                                                         | Nombre del mapa de patrones. Use el nombre de un elemento de datos para hacer referencia a las asignaciones.<br/>                                                                                                                                                                                                                   |
+| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se usará para hacer referencia a las asignaciones de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para el mapa en el archivo de encabezado que genera el compilador. Si no especifica un símbolo, el compilador genera uno automáticamente.<br/> |
 
 
 
@@ -75,8 +75,8 @@ No se utiliza. Define una asignación entre dos expresiones regulares. Una expre
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

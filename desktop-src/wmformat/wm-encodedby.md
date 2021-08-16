@@ -1,9 +1,9 @@
 ---
 title: WM/EncodedBy
-description: El atributo WM/EncodedBy contiene el nombre de la persona o grupo que ha codificado el contenido.
+description: El atributo WM/EncodedBy contiene el nombre de la persona o grupo que codifica el contenido.
 ms.assetid: 13c4d8c6-6dca-4f2c-a76f-a127004a8aaf
 keywords:
-- Formato de Windows Media WM/EncodedBy
+- WM/EncodedBy windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4edff7d1688c1edfcabb2ad46b0a830c945bcd1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 31a316a4af680353be44be375094693234345523ab8936390153392820212783
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104357967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326545"
 ---
 # <a name="wmencodedby"></a>WM/EncodedBy
 
-El atributo **WM/EncodedBy** contiene el nombre de la persona o grupo que ha codificado el contenido.
+El **atributo WM/EncodedBy** contiene el nombre de la persona o grupo que codifica el contenido.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMEncodedBy
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE TIPO WMT \_ \_**
 
 ## <a name="see-also"></a>Vea también
 
@@ -38,9 +38,9 @@ g \_ wszWMEncodedBy
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

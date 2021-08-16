@@ -1,106 +1,106 @@
 ---
-description: En esta sección se describen las tecnologías de Windows que permiten admitir las diversas referencias culturales y lenguajes escritos del marketplace internacional en la aplicación Microsoft Win32 basada en C o C++.
+description: En esta sección se describen las tecnologías de Windows que permiten admitir las muchas culturas y los lenguajes escritos del marketplace internacional en la aplicación Win32 de Microsoft basada en C o C++.
 ms.assetid: 90dbbd70-3609-4c12-bdc1-7fa222c96f67
 title: Internacionalización para aplicaciones para Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83f6e4952c94af3b14dc0e8f4f135c1cc0cebafc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f78f4831390ffc31a5f3290f0784d32c3aa1044863c708e6e0329225519c2cae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147548"
 ---
 # <a name="internationalization-for-windows-applications"></a>Internacionalización para aplicaciones para Windows
 
-(Anteriormente titulado "soporte internacional")
+(anteriormente titulado "Soporte internacional")
 
-En esta sección se describen las tecnologías de Windows que permiten admitir las diversas referencias culturales y lenguajes escritos del marketplace internacional en la aplicación Microsoft Win32 basada en C o C++.
+En esta sección se describen las tecnologías de Windows que permiten admitir las muchas culturas y los lenguajes escritos del marketplace internacional en la aplicación Win32 de Microsoft basada en C o C++.
 
-Windows se ha convertido en una plataforma esencial para los clientes de todo el mundo. Los usuarios internacionales esperan soluciones que se adapten a sus idiomas y regiones de todo el mundo. En esta sección, encontrará la información que necesita para desarrollar soluciones multilingües, multiculturales y de varios sitios. La compatibilidad internacional integrada en Windows le permite implementar muchos escenarios con menos sobrecarga de ingeniería que nunca.
+Windows se ha convertido en una plataforma esencial para clientes de todo el mundo. Los usuarios internacionales esperan soluciones adaptadas a sus idiomas y regiones de todo el mundo. En esta sección, encontrará la información que necesita para desarrollar soluciones multilenguaje, transversales y de varios sitios. La compatibilidad internacional integrada en Windows permite implementar muchos escenarios con menos sobrecarga de ingeniería que nunca.
 
-El desarrollo de aplicaciones de uso internacional requiere el uso de muchos servicios y herramientas. Windows contiene características que permiten desarrollar soluciones que:
+El desarrollo de aplicaciones listas para el mundo requiere el uso de muchos servicios y herramientas. Windows contiene características que le permiten desarrollar soluciones que:
 
-- Admita las distintas necesidades específicas del idioma y específicas de la configuración regional de los usuarios de todo el mundo (incluida la compatibilidad con texto especializado, el comportamiento de ordenación, el formato de fecha y hora y las distribuciones de teclado). (Para obtener más información, vea [centro de soporte técnico de National Language](./national-language-support-reference.md)).
-- Se globalizan (se pueden implementar en todo el mundo a partir de una sola imagen binaria) y se pueden localizar (pueden adaptarse a mercados locales específicos). (Para obtener más información, consulte [interfaz de usuario multilingüe](./multilingual-user-interface.md)).
-- Mostrar fuentes y texto internacionales y permitir que los usuarios especifiquen la fuente que deseen. (Para obtener más información, consulte [compatibilidad con scripts y fuentes en Windows](/globalization/input/font-support)).
-- Permite al usuario escribir caracteres y símbolos complejos con un teclado estándar.
+- Admite las distintas necesidades específicas del idioma y específicas de la configuración regional de los usuarios de todo el mundo (incluida la compatibilidad con texto especializada, el comportamiento de ordenación, el formato de fecha y hora y los diseños de teclado). (Para obtener más información, vea [National Language Support Knowledge Center).](./national-language-support-reference.md)
+- Se globalizan (se pueden implementar en todo el mundo a partir de una sola imagen binaria) y se pueden localizar (se pueden adaptar para mercados locales específicos). (Para obtener más información, [vea Interfaz de usuario multilingüe](./multilingual-user-interface.md)).
+- Mostrar fuentes internacionales y texto, y permitir a los usuarios especificar la fuente que desean. (Para obtener más información, vea [Compatibilidad con scripts y](/globalization/input/font-support)fuentes Windows ).
+- Permite al usuario escribir caracteres complejos y símbolos con un teclado estándar.
 - Proporcionar compatibilidad con muchos lenguajes escritos diferentes a través de Unicode y juegos de caracteres tradicionales.
-- Detecte la entrada de idioma de un usuario y personalice la experiencia del usuario proporcionada por la aplicación. (Para obtener más información, consulte [escribir aplicaciones de uso internacional en Windows: servicios lingüísticos extendidos en Windows](./using-extended-linguistic-services.md)).
+- Descubra la entrada de idioma de un usuario y adapte la experiencia de usuario proporcionada por la aplicación. (Para obtener más información, vea [Writing World-Ready Applications in Windows: Extended Linguistic Services in Windows](./using-extended-linguistic-services.md)).
 
 ## <a name="in-this-section"></a>En esta sección
 
-En esta sección se documentan las siguientes tecnologías de soporte internacional. Aparecen con algunos escenarios clave para los que se pueden usar.
+En esta sección se documentan las siguientes tecnologías de soporte internacional. Se enumeran con algunos escenarios clave para los que se pueden usar.
 
-- [Introducción con el desarrollo internacional de Windows](getting-started-with-international-development.md)
+- [Tareas iniciales con el desarrollo de Windows internacional](getting-started-with-international-development.md)
 
-    Describe cómo empezar a crear aplicaciones de uso internacional y proporciona un tutorial que ilustra una tarea común en la escritura de software global.
+    Describe cómo empezar a crear aplicaciones listas para el mundo y proporciona un tutorial que ilustra una tarea común para escribir software global.
 
     Escenarios comunes:
 
-    - Determine la ruta de acceso que se debe llevar a cabo para obtener información sobre cómo desarrollar software internacional.
-    - Descubra las tecnologías de internacionalización disponibles en el kit de desarrollo de software (SDK) de Microsoft Windows.
-    - Siga un tutorial que toma una aplicación de Monolingual existente y agrega compatibilidad con otros idiomas.
+    - Determine una ruta de acceso a seguir para aprender a desarrollar software internacional.
+    - Descubra las tecnologías de internacionalización disponibles en Microsoft Windows Software Development Kit (SDK).
+    - Siga un tutorial que toma una aplicación monolingüe existente y agrega compatibilidad con idiomas adicionales.
 
 - [Servicios de globalización](globalization-services.md)
 
-    Describe los [servicios lingüísticos extendidos (Els)](extended-linguistic-services.md), que permiten detectar el idioma en el que se escribe el texto y la entrada del usuario, y la [compatibilidad con el idioma nacional (NLS)](national-language-support.md), que permite a una aplicación usar información de configuración regional para mostrar información que tiene en cuenta la referencia cultural (como hora, fechas y moneda) y ordenar correctamente las cadenas.
+    Describe Los Servicios lingüísticos extendidos [(ELS),](extended-linguistic-services.md)que permiten detectar el idioma en el que se escribe el texto y la entrada del usuario, y [National Language Support (NLS),](national-language-support.md)que permite a una aplicación usar la información de configuración regional para mostrar información confidencial de la referencia cultural (como la hora, las fechas y la moneda) y ordenar las cadenas correctamente.
 
     Escenarios comunes:
 
-    - Detecta el idioma de la entrada del usuario, de modo que el contenido de la ayuda se puede mostrar en un lenguaje comprensible.
-    - Detecta el script usado en el texto que se va a mostrar. Si se trata de un chino simplificado o tradicional, ofrezca al usuario la opción de convertir el texto en transliteración de uno a otro.
-    - Permite al usuario seleccionar una configuración regional (una colección de información de preferencias de usuario relacionada con el idioma).
+    - Descubra el idioma de la entrada del usuario para que el contenido de ayuda se pueda mostrar en un idioma comprensible.
+    - Detecte el script usado en el texto que se va a mostrar. Si es chino simplificado o tradicional, ofrezca al usuario la opción de transliterar el texto de uno a otro.
+    - Permitir al usuario seleccionar una configuración regional (una colección de información de preferencias de usuario relacionadas con el idioma).
     - Mostrar horas, fechas, información de calendario, moneda y muchos otros objetos dependientes de la referencia cultural en los idiomas y formatos adecuados.
-    - Ordena las cadenas en el orden esperado por el usuario de una configuración regional determinada.
+    - Ordene las cadenas en el orden esperado por el usuario de una configuración regional determinada.
 
 - [Administrador de métodos de entrada](input-method-manager.md)
 
-    Describe la tecnología usada por una aplicación para comunicarse con un editor de métodos de entrada (IME). El IME permite a los usuarios del equipo escribir caracteres y símbolos complejos mediante un teclado estándar.
+    Describe la tecnología utilizada por una aplicación para comunicarse con un editor de métodos de entrada (IME). El IME permite a los usuarios del equipo escribir caracteres complejos y símbolos mediante un teclado estándar.
 
     Escenario común:
 
-    - Permite al usuario usar un teclado estándar para escribir caracteres Kanji japoneses.
+    - Permitir que el usuario use un teclado estándar para escribir caracteres kanji en japonés.
 
 - [Fuentes internacionales y presentación de texto](international-fonts-and-text-display.md)
 
-    Describe la compatibilidad proporcionada por la plataforma de Windows para fuentes internacionales, texto internacional y tipografía precisa.
+    Describe la compatibilidad proporcionada por la plataforma Windows para fuentes internacionales, texto internacional y tipografía fina.
 
     Escenarios comunes:
 
-    - Permite al usuario seleccionar fuentes internacionales basadas en el juego de caracteres.
+    - Permitir al usuario seleccionar fuentes internacionales basadas en juego de caracteres.
     - Mostrar texto internacional.
     - Procese scripts complejos, incluida la representación bidireccional, el modelado contextual y las ligaduras (Uniscribe).
-    - Permitir un alto grado de control para la tipografía precisa (Uniscribe).
+    - Permita un alto grado de control para la tipografía fina (Uniscribe).
 
 - [Interfaz de usuario multilingüe](multilingual-user-interface.md)
 
-    Describe el modo en que las aplicaciones pueden separar los recursos dependientes del idioma del código independiente del lenguaje para los idiomas de interfaz de usuario compatibles.
+    Describe cómo las aplicaciones pueden separar los recursos dependientes del lenguaje del código independiente del idioma para los idiomas de interfaz de usuario admitidos.
 
     Escenarios comunes:
 
-    - Cree imágenes de implementación única regional o internacional de una aplicación.
-    - Localizar una solución actualizando los recursos de la aplicación sin cambiar el código fuente de la aplicación.
-    - Permitir a los usuarios cambiar de un idioma de interfaz de usuario a otro en tiempo de ejecución.
+    - Cree imágenes de implementación única regionales o en todo el mundo de una aplicación.
+    - Localice una solución actualizando los recursos de la aplicación sin ningún cambio en el código fuente de la aplicación.
+    - Permitir que los usuarios cambien de un idioma de interfaz de usuario a otro en tiempo de ejecución.
 
 - [Unicode y juegos de caracteres](unicode-and-character-sets.md)
 
-    Describe cómo las aplicaciones pueden aprovechar las ventajas de Unicode, el estándar de codificación de caracteres en todo el mundo que usa valores de código de 16 bits para representar todos los caracteres que se usan en la informática moderna, incluidos los símbolos técnicos y los caracteres especiales que se usan en la publicación.
+    Describe cómo las aplicaciones pueden aprovechar Unicode, el estándar mundial de codificación de caracteres que usa valores de código de 16 bits para representar todos los caracteres usados en la informática moderna, incluidos los símbolos técnicos y los caracteres especiales que se usan en la publicación.
 
     Escenarios comunes:
 
-    - Admita los distintos idiomas de marketplace internacional a través de Unicode.
-    - Convierta los caracteres Unicode en otros juegos de caracteres, si es necesario.
+    - Admitir los muchos idiomas diferentes del marketplace internacional a través de Unicode.
+    - Convertir caracteres Unicode en y desde otros juegos de caracteres, cuando sea necesario.
 
-- [Consideraciones de seguridad: características internacionales](security-considerations--international-features.md)
+- [Consideraciones de seguridad: Características internacionales](security-considerations--international-features.md)
 
-    Proporciona información sobre las consideraciones de seguridad relacionadas con las características de compatibilidad con el desarrollo internacional.
+    Proporciona información sobre las consideraciones de seguridad relacionadas con las características de soporte técnico de desarrollo internacional.
 
     La información de seguridad pertenece a todos los escenarios.
 
 ## <a name="related-international-technologies"></a>Tecnologías internacionales relacionadas
 
-La compatibilidad con el desarrollo internacional también está disponible para las aplicaciones escritas en código administrado. Si va a desarrollar para el .NET Framework, necesitará algunos o todos:
+La compatibilidad con el desarrollo internacional también está disponible para las aplicaciones escritas en código administrado. Si va a desarrollar para la .NET Framework, necesitará algunos o todos estos:
 
-- El [espacio de nombres System. Globalization](/dotnet/api/system.globalization) contiene clases que definen información relativa a la referencia cultural y proporcionan funciones avanzadas de globalización.
-- El [espacio de nombres System. Text](/dotnet/api/system.text) contiene clases que representan codificaciones de caracteres, convierten bloques de caracteres y manipulan y dan formato a objetos de cadena.
+- El [espacio de nombres System.Globalization](/dotnet/api/system.globalization) contiene clases que definen información relacionada con la referencia cultural y proporcionan funciones avanzadas de globalización.
+- El [espacio de nombres System.Text](/dotnet/api/system.text) contiene clases que representan codificaciones de caracteres, convierten bloques de caracteres y manipulan y formatear objetos String.

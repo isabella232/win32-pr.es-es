@@ -1,17 +1,17 @@
 ---
 description: Especifica si el descodificador de audio debe proporcionar una salida de alta resolución.
 ms.assetid: a96bd78f-982c-43fa-b2d3-8caba4aa84b6
-title: Propiedad MFPKEY_WMADEC_HIRESOUTPUT (Wmcodecdsp. h)
+title: MFPKEY_WMADEC_HIRESOUTPUT propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd59bc6b8b0e74be1daaea4a61ca82c810a0ca79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe5226babc8fd40875ec11cfa0b03345ba0b9c1a914b45b5ad79284f79d92130
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872543"
 ---
-# <a name="mfpkey_wmadec_hiresoutput-property"></a>\_ \_ Propiedad HIRESOUTPUT de MFPKEY WMADEC
+# <a name="mfpkey_wmadec_hiresoutput-property"></a>Propiedad MFPKEY \_ WMADEC \_ HIRESOUTPUT
 
 Especifica si el descodificador de audio debe proporcionar una salida de alta resolución.
 
@@ -21,24 +21,24 @@ g \_ wszWMACHiResOutput
 
 ## <a name="data-type"></a>Tipo de datos
 
-**VT \_ bool**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valor predeterminado
 
-**VARIANTE \_ false**
+**VARIANT \_ FALSE**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Establezca esta propiedad en VARIANT \_ true para descodificar el contenido de audio multicanal o de 24 bits, o audio con una velocidad de muestra superior a 48.000 Hz. Si el contenido se codifica en alta resolución, pero esta propiedad es \_ la variante falsa, se aplican los comportamientos siguientes:
+Establezca esta propiedad en VARIANT TRUE para descodificar contenido de audio multicanal o de 24 bits, o audio con una velocidad de muestreo superior \_ a 48 000 Hz. Si el contenido está codificado en alta resolución, pero esta propiedad es VARIANT \_ FALSE, se aplican los comportamientos siguientes:
 
--   La salida de DMO se limitará a un estéreo de 16 bits 48-KHz.
--   La MFT enumerará los modos de salida que están limitados a 16 bits y no implican cambios en el número de canales o la frecuencia de muestreo.
+-   La DMO salida se limitará a estéreo de 16 bits y 48 KHz.
+-   MFT enumerará los modos de salida que están limitados a 16 bits y que no implican cambios en el recuento de canales o la frecuencia de muestreo.
 
-Las propiedades de audio de alta resolución se pasan en una estructura [**WAVEFORMATEXTENSIBLE**](/previous-versions/windows/desktop/legacy/dd390971(v=vs.85)) , no en [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)).
+Las propiedades del audio de alta resolución se pasan en una [**estructura DE FORMAENTEXTENSIBLE,**](/previous-versions/windows/desktop/legacy/dd390971(v=vs.85)) no [**EN FORMA DE ONDAATEX.**](/previous-versions/dd757713(v=vs.85))
 
-La salida de alta resolución solo está disponible si el descodificador se ejecuta en Windows XP o posterior. Puede establecer esta propiedad independientemente del sistema operativo en el que se ejecuta la aplicación. En las versiones de Windows anteriores a Windows XP, el descodificador omitirá esta configuración y entregará la salida estándar.
+La salida de alta resolución solo está disponible si el descodificador se ejecuta Windows XP o posterior. Puede establecer esta propiedad independientemente del sistema operativo en el que se ejecute la aplicación. En las versiones de Windows anteriores a Windows XP, el descodificador omitirá esta configuración y entregará la salida estándar.
 
-Muchos jugadores (incluidos Windows Media Player series 9 y versiones posteriores) establecen este valor para todo el contenido.
+Muchos reproductores (incluidos Reproductor de Windows Media serie 9 y versiones posteriores) establecen este valor para todo el contenido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ Muchos jugadores (incluidos Windows Media Player series 9 y versiones posteriore
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ Muchos jugadores (incluidos Windows Media Player series 9 y versiones posteriore
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

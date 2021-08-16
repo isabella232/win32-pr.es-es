@@ -1,11 +1,11 @@
 ---
-title: Método media. getItemInfo
+title: Método Media.getItemInfo
 description: El método getItemInfo recupera el valor del atributo especificado para el elemento multimedia actual.
 ms.assetid: a1ee0d40-b979-424b-bd4e-d1acf6354d8d
 keywords:
-- método getItemInfo de Windows Media Player
-- método getItemInfo Windows Media Player, clase multimedia
-- Clase multimedia Windows Media Player, método getItemInfo
+- Método getItemInfo Reproductor de Windows Media
+- Método getItemInfo Reproductor de Windows Media , clase Media
+- Clase media Reproductor de Windows Media , método getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef7e7348e73e3550ed668f6694ccfe9ed615215b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab885a8505f3637d21f4a406e5a7c324ee6b9ec90e5ad0434a385e321072ccaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135158"
 ---
-# <a name="mediagetiteminfo-method"></a>Método media. getItemInfo
+# <a name="mediagetiteminfo-method"></a>Método Media.getItemInfo
 
-El método **getItemInfo** recupera el valor del atributo especificado para el elemento multimedia actual.
+El **método getItemInfo** recupera el valor del atributo especificado para el elemento multimedia actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,49 +42,49 @@ strRetVal = Media.getItemInfo(
 
 <dl> <dt>
 
-*nombre* \[ de de\]
+*name* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene el nombre del atributo. Para obtener información acerca de los atributos admitidos por Media Player de Windows, consulte la [referencia](attribute-reference.md)de los atributos de Windows Media Player.
+**Cadena** que contiene el nombre del atributo. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo](attribute-reference.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve una **cadena** que representa el valor del atributo especificado. En el caso de los atributos cuyo valor subyacente es **booleano**, devuelve la cadena "true" o "false".
+Este método devuelve un **objeto String** que representa el valor del atributo especificado. Para los atributos cuyo valor subyacente **es booleano,** devuelve la cadena "true" o "false".
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método recupera los metadatos de un elemento multimedia o elemento multimedia individual que forma parte de una lista de reproducción.
+Este método recupera los metadatos de un elemento multimedia digital individual o un elemento multimedia que forma parte de una lista de reproducción.
 
-La propiedad **attributeCount** contiene el número de nombres de atributo disponibles para un objeto **multimedia** determinado. Los números de índice se pueden usar con el método **getAttributeName** para determinar el nombre de cada atributo disponible. Los nombres de atributo individuales se pueden pasar a **getItemInfo**.
+La **propiedad attributeCount** contiene el número de nombres de atributo disponibles para un objeto **Multimedia** determinado. Los números de índice se pueden usar con el **método getAttributeName** para determinar el nombre de cada atributo disponible. Los nombres de atributo individuales se pueden pasar **a getItemInfo.**
 
-Para recuperar los atributos con varios valores y atributos con valores complejos, use el método **getItemInfoByType** .
+Para recuperar atributos con varios valores y atributos con valores complejos, use el **método getItemInfoByType.**
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Para compartir las bibliotecas de Windows Media a través de UPnP, Windows Media Player crea un servicio de directorio de contenido (CDS) que se expone a través de UPnP. Otros dispositivos pueden navegar y examinar las bibliotecas.
+Para compartir las bibliotecas Windows multimedia a través de UPnP, Reproductor de Windows Media crea un servicio de directorio de contenido (CDS) que se expone a través de UPnP. A continuación, otros dispositivos pueden navegar y examinar las bibliotecas.
 
-En Windows 7, una aplicación puede usar los atributos [**TrackingID**](trackingid-attribute.md) y [**MediaType**](mediatype-attribute.md) de Windows Media Player para construir el identificador de objeto de cada elemento de los CD. Tenga en cuenta que esta construcción podría cambiar en versiones futuras de Windows. La aplicación pasa cada una de estas cadenas de atributo en el parámetro *Name* en una llamada a **getItemInfo**. **getItemInfo** devuelve el valor de cada atributo en el valor devuelto. A continuación, la aplicación usa la siguiente sintaxis para construir cada identificador de objeto:
+En Windows 7, una aplicación puede usar los atributos Reproductor de Windows Media [**TrackingID**](trackingid-attribute.md) y [**MediaType**](mediatype-attribute.md) para construir el identificador de objeto de cada elemento del CDS. Tenga en cuenta que esta construcción puede cambiar en versiones futuras de Windows. La aplicación pasa cada una de estas cadenas de atributo en el *parámetro name* en una llamada a **getItemInfo**. **getItemInfo** devuelve el valor de cada atributo del valor devuelto. A continuación, la aplicación usa la siguiente sintaxis para construir cada identificador de objeto:
 
-*TrackingID*. 0. *MediaTypeID*
+*TrackingID*.0. *MediaTypeID*
 
 Esta sintaxis tiene el significado siguiente:
 
--   *TrackingID* es la cadena que se almacena en el atributo Windows Media Player [**TrackingID**](trackingid-attribute.md) del elemento multimedia.
--   *MediaTypeID* depende del valor del atributo [**mediatype**](mediatype-attribute.md) , tal como se muestra en la tabla siguiente:
+-   *TrackingID* es la cadena que se almacena en el Reproductor de Windows Media [**TrackingID**](trackingid-attribute.md) del elemento multimedia.
+-   *MediaTypeID* depende del valor del atributo [**MediaType,**](mediatype-attribute.md) como se muestra en la tabla siguiente:
 
-    | MediaType (atributo)                      | MediaTypeID |
+    | Atributo MediaType                      | MediaTypeID |
     |------------------------------------------|-------------|
     | [Elementos de audio](audio-item-attributes.md) | 4           |
-    | [Elementos de fotografía](photo-item-attributes.md) | B           |
+    | [Elementos de fotos](photo-item-attributes.md) | B           |
     | [Elementos de vídeo](video-item-attributes.md) | 8           |
 
     
 
      
 
-**Windows Media Player 10 Mobile:** Los atributos de un elemento multimedia solo están disponibles durante la reproducción, a menos que se recuperen del elemento a través de la colección de medios.
+**Reproductor de Windows Media 10 Mobile:** Los atributos de un elemento multimedia solo están disponibles durante la reproducción, a menos que se recuperen del elemento a través de la colección de elementos multimedia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,7 +92,7 @@ Esta sintaxis tiene el significado siguiente:
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -104,25 +104,25 @@ Esta sintaxis tiene el significado siguiente:
 [**Objeto multimedia**](media-object.md)
 </dt> <dt>
 
-[**Media. attributeCount**](media-attributecount.md)
+[**Media.attributeCount**](media-attributecount.md)
 </dt> <dt>
 
-[**Media. getAttributeName**](media-getattributename.md)
+[**Media.getAttributeName**](media-getattributename.md)
 </dt> <dt>
 
-[**Media. getItemInfoByType**](media-getiteminfobytype.md)
+[**Media.getItemInfoByType**](media-getiteminfobytype.md)
 </dt> <dt>
 
-[**Media. setItemInfo**](media-setiteminfo.md)
+[**Media.setItemInfo**](media-setiteminfo.md)
 </dt> <dt>
 
 [**Leer valores de atributo**](reading-attribute-values.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

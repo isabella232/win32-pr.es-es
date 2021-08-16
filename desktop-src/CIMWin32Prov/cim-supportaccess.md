@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM SupportAccess define cómo obtener ayuda para un producto.
+description: La clase SupportAccess de CIM \_ define cómo obtener ayuda para un producto.
 ms.assetid: f42a793f-d71e-498e-9c6b-581aa029a0dd
 ms.tgt_platform: multiple
-title: CIM_SupportAccess (clase)
+title: CIM_SupportAccess clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,23 +19,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: db5f1dc4331bd50e2fc61899f9d45fe2cdb0eca0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c53254b51b228efb2c1f14b7fb5f07475fb275d20c7df6444dc88e048bb1d30f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020913"
 ---
-# <a name="cim_supportaccess-class"></a>\_Clase SupportAccess de CIM
+# <a name="cim_supportaccess-class"></a>Clase \_ SupportAccess de CIM
 
-La clase **CIM \_ SupportAccess** define cómo obtener ayuda para un producto.
+La **clase Cim \_ SupportAccess** define cómo obtener ayuda para un producto.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,15 +51,15 @@ class CIM_SupportAccess
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
-La clase **CIM \_ SupportAccess** tiene estos tipos de miembros:
+La **clase \_ SupportAccess de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ SupportAccess** tiene estas propiedades.
+La **clase \_ SupportAccess de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -72,32 +72,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|FRU \| de DMTF 002,11 "," MIF. \|FRU 002,12 de DMTF \| ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| FRU \| 002.11", "MIF. DMTF \| FRU \| 002.12")
 </dt> </dl>
 
-Detalles del modo de comunicación. Por ejemplo, si la propiedad **CommunicationMode** es "Phone", esta propiedad especifica el número de teléfono al que llamar.
+Detalles del modo de comunicación. Por ejemplo, si la **propiedad CommunicationMode** es "Teléfono", esta propiedad especifica el número de teléfono al que se va a llamar.
 
 </dd> <dt>
 
 **CommunicationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Compatibilidad con DMTF \| 001,5 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Compatibilidad con DMTF \| \| 001.5")
 </dt> </dl>
 
-Forma de comunicación que se va a usar para obtener soporte técnico.
+Forma de comunicación que se usará para obtener soporte técnico.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -132,7 +132,7 @@ Forma de comunicación que se va a usar para obtener soporte técnico.
 
 <span id="Web_Page"></span><span id="web_page"></span><span id="WEB_PAGE"></span>
 
-<span id="Web_Page"></span><span id="web_page"></span><span id="WEB_PAGE"></span>**Página Web** (6)
+<span id="Web_Page"></span><span id="web_page"></span><span id="WEB_PAGE"></span>**Página web** (6)
 
 
 </dt> <dd>
@@ -155,7 +155,7 @@ Página web
 
 </dt> <dd>
 
-Email
+Correo electrónico
 
 </dd> </dl>
 
@@ -170,10 +170,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Compatibilidad con DMTF \| 001,3 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Compatibilidad con DMTF \| \| 001.3")
 </dt> </dl>
 
-Descripción textual del tipo de soporte proporcionado.
+Descripción textual del tipo de soporte técnico proporcionado.
 
 </dd> <dt>
 
@@ -186,10 +186,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Compatibilidad con DMTF \| 001,2 "), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Compatibilidad con DMTF \| \| 001.2"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Región geográfica o dialecto de lenguaje al que pertenece este recurso de compatibilidad.
+Región geográfica o dialecto de idioma al que pertenece este recurso de soporte técnico.
 
 </dd> <dt>
 
@@ -202,18 +202,18 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Cadena de forma libre arbitraria definida por el proveedor del producto o por la organización que implementa el producto. Esta propiedad, ya que es una clave, debe ser única en toda la empresa.
+Cadena de forma libre arbitraria definida por el proveedor del producto o por la organización que implementa el producto. Esta propiedad, puesto que es una clave, debe ser única en toda la empresa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -223,8 +223,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

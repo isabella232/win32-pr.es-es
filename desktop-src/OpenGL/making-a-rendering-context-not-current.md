@@ -1,6 +1,6 @@
 ---
 title: Hacer que un contexto de representación no sea actual
-description: Para separar un contexto de representación de un subproceso, no lo haga actual. Para ello, llame a la función wglMakeCurrent con los parámetros establecidos en NULL. A continuación se muestra un ejemplo de esta tarea sencilla.
+description: Para separar un contexto de representación de un subproceso, haga que no sea actual. Para ello, llame a la función wglMakeCurrent con los parámetros establecidos en NULL. A continuación se muestra un ejemplo de esta tarea sencilla.
 ms.assetid: fe76e3d3-5480-448d-95aa-a5af0da309f3
 keywords:
 - OpenGL en Windows, contextos de representación
@@ -16,7 +16,7 @@ ms.locfileid: "118937368"
 ---
 # <a name="making-a-rendering-context-not-current"></a>Hacer que un contexto de representación no sea actual
 
-Para separar un contexto de representación de un subproceso, no lo haga actual. Para ello, llame a la [**función wglMakeCurrent**](/windows/desktop/api/wingdi/nf-wingdi-wglmakecurrent) con los parámetros establecidos en **NULL.** A continuación se muestra un ejemplo de esta tarea sencilla.
+Para separar un contexto de representación de un subproceso, haga que no sea actual. Para ello, llame a la [**función wglMakeCurrent**](/windows/desktop/api/wingdi/nf-wingdi-wglmakecurrent) con los parámetros establecidos en **NULL.** A continuación se muestra un ejemplo de esta tarea sencilla.
 
 ``` syntax
 // detach the current rendering context from the thread  

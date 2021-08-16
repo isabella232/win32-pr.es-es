@@ -1,5 +1,5 @@
 ---
-description: En esta sección se de abordan las consideraciones prácticas para desarrollar aplicaciones con la infraestructura del mismo nivel, así como técnicas específicas para usar las API de forma más eficaz.
+description: En esta sección se de soluciones prácticas para desarrollar aplicaciones con la infraestructura del mismo nivel, así como técnicas específicas para usar las API de forma más eficaz.
 ms.assetid: 5ce0f8a6-ab61-4091-809f-2e4a990f4886
 title: Uso de la infraestructura del mismo nivel
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117794148"
 ---
 # <a name="using-the-peer-infrastructure"></a>Uso de la infraestructura del mismo nivel
 
-En esta sección se de abordan las consideraciones prácticas para desarrollar aplicaciones con la infraestructura del mismo nivel, así como técnicas específicas para usar las API de forma más eficaz.
+En esta sección se de soluciones prácticas para desarrollar aplicaciones con la infraestructura del mismo nivel, así como técnicas específicas para usar las API de forma más eficaz.
 
 En los temas siguientes se identifican soluciones a tareas comunes para desarrollar aplicaciones mediante la infraestructura del mismo nivel.
 

@@ -35,7 +35,7 @@ DFM_WM_DRAWITEM
 *wParam* \[ En\]
 </dt> <dd>
 
-Identificador del control que envió el **mensaje \_ DFM WM \_ DRAWITEM.** Si un menú envió el mensaje, este parámetro es cero.
+Identificador del control que envió el mensaje **\_ DFM WM \_ DRAWITEM.** Si un menú envió el mensaje, este parámetro es cero.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Antes de volver del procesamiento de este mensaje, una aplicación debe asegurar
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |

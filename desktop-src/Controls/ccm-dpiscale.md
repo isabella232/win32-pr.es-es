@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CCM_DPISCALE (commctrl. h)
-description: Habilita el escalado automático de puntos por pulgada (PPP) en controles Tree-View, controles de List-View, controles ComboBoxEx, controles de encabezado, botones, controles de barra de herramientas, controles de animación y listas de imágenes.
+title: CCM_DPISCALE mensaje (Commctrl.h)
+description: Habilita el escalado automático de puntos altos por pulgada (ppp) en controles Tree-View, controles List-View, controles ComboBoxEx, controles Header, Botones, Controles de barra de herramientas, Controles de animación y Listas de imágenes.
 ms.assetid: 3c751f10-992c-41f8-8f0b-3dc58f0591e4
 keywords:
-- CCM_DPISCALE controles de mensajes de Windows
+- CCM_DPISCALE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56ef978f486f370adf9872d28e1accbacc37a6de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e7e72cb8ac3acf413e4381580a4ecf38a4f5bd4b2f5b03d6cff7d7abb85c1f0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320255"
 ---
-# <a name="ccm_dpiscale-message"></a>\_Mensaje DPISCALE de CCM
+# <a name="ccm_dpiscale-message"></a>Mensaje \_ DE CCM PPPSCALE
 
-Habilita el ajuste de escala automático de puntos por pulgada (PPP) en [controles de vista de árbol](tree-view-controls.md), [controles de vista de lista](list-view-control-reference.md), [controles ComboBoxEx](comboboxex-controls.md), [controles de encabezado](header-controls.md), [botones](buttons.md), controles de [barra de herramientas](toolbar-controls-overview.md), controles de [animación](animation-control-overview.md)y [listas de imágenes](image-lists.md).
+Habilita el escalado automático de puntos altos por pulgada (ppp) en los controles [Tree-View,](tree-view-controls.md) [List-View,](list-view-control-reference.md) [ComboBoxEx,](comboboxex-controls.md) [Header controls](header-controls.md), [Buttons](buttons.md), [Toolbar controls](toolbar-controls-overview.md), [Animation controls](animation-control-overview.md)y [Image Lists](image-lists.md).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Habilita el ajuste de escala automático de puntos por pulgada (PPP) en [control
 *wParam* 
 </dt> <dd>
 
-Establézcalo en **true**.
+Establezca en **TRUE.**
 
 </dd> <dt>
 
@@ -45,16 +45,16 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El inicio rápido y la [barra de tareas](/windows/desktop/shell/taskbar) no deben especificar un ajuste de escala de PPP, ya que las imágenes ya se han escalado.
+inicio rápido y [la barra de](/windows/desktop/shell/taskbar) tareas no deben especificar un escalado de ppp, porque las imágenes ya se han escalado.
 
-Cualquier control que utiliza una lista de imágenes creada con la métrica SmallIcon no debe escalar sus iconos.
+Cualquier control que use una lista de imágenes creada con la métrica SmallIcon no debe escalar sus iconos.
 
 > [!Note]  
-> Para usar esta API, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar esta API, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -64,9 +64,9 @@ Cualquier control que utiliza una lista de imágenes creada con la métrica Smal
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

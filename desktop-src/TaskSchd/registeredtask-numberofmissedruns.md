@@ -1,11 +1,11 @@
 ---
-title: Propiedad RegisteredTask. NumberOfMissedRuns
-description: En el caso de scripting, obtiene el número de veces que la tarea registrada ha perdido una ejecución programada.
+title: Propiedad RegisteredTask.NumberOfMissedRuns
+description: Para el scripting, obtiene el número de veces que la tarea registrada ha perdido una ejecución programada.
 ms.assetid: cfccb782-eedd-47e4-a6c5-c5857f75d09d
 keywords:
-- Programador de tareas de la propiedad NumberOfMissedRuns
-- Programador de tareas de la propiedad NumberOfMissedRuns, objeto RegisteredTask
-- Programador de tareas de objeto RegisteredTask, propiedad NumberOfMissedRuns
+- Propiedad NumberOfMissedRuns Programador de tareas
+- Propiedad NumberOfMissedRuns Programador de tareas , objeto RegisteredTask
+- Objeto RegisteredTask Programador de tareas , propiedad NumberOfMissedRuns
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9115229afd5ee7cebf83b3b817991cbe0cf74ef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93e6deb2566d476147c4f51eac0e92f5919a897d8d686adf61ce5fe6250254f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759660"
 ---
-# <a name="registeredtasknumberofmissedruns-property"></a>Propiedad RegisteredTask. NumberOfMissedRuns
+# <a name="registeredtasknumberofmissedruns-property"></a>Propiedad RegisteredTask.NumberOfMissedRuns
 
-En el caso de scripting, obtiene el número de veces que la tarea registrada ha perdido una ejecución programada.
+Para el scripting, obtiene el número de veces que la tarea registrada ha perdido una ejecución programada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,7 +38,7 @@ RegisteredTask.NumberOfMissedRuns As Integer
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El número de veces que la tarea registrada ha perdido una ejecución programada.
+Número de veces que la tarea registrada no ha ejecutado una ejecución programada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ El número de veces que la tarea registrada ha perdido una ejecución programada
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

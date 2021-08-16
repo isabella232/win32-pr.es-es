@@ -1,5 +1,5 @@
 ---
-description: Pseudoblocking pseudo blocking operations in Windows Sockets (Winsock) (Pseudoblocking pseudo blocking operations in Windows Sockets (Winsock).
+description: Pseudobloqueo de operaciones de pseudobloqueo en Windows Sockets (Winsock).
 ms.assetid: fa8f29f1-bb4f-4814-ab8a-52d3c83232bb
 title: Pseudobloqueo y bloqueo verdadero
 ms.topic: article
@@ -16,7 +16,7 @@ ms.locfileid: "117740947"
 En 16 Windows entornos, el sistema operativo no admite el bloqueo verdadero. Por lo tanto, una operación de bloqueo que no se puede completar inmediatamente se controla de la siguiente manera:
 
 -   El proveedor de servicios inicia la operación y, a continuación, entra en un bucle durante el cual envía los mensajes Windows (lo que produce el procesador a otro subproceso si es necesario).
--   A continuación, comprueba la finalización de la Windows sockets.
+-   A continuación, comprueba la finalización de la Windows Sockets.
 -   Si se ha completado la función o si se ha invocado [**WSPCancelBlockingCall,**](/previous-versions/windows/desktop/legacy/ms742269(v=vs.85)) el bucle finaliza y la función de bloqueo se completa con un resultado adecuado.
 
 Esto es lo que significa el término pseudobloqueo y el bucle al que se hace referencia anteriormente se conoce como el enlace de bloqueo predeterminado.

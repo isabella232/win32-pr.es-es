@@ -52,7 +52,7 @@ A continuación se muestra un ejemplo de un control deslizante **personalizado p
 
 ![gráfico de imagen de posición de ejemplo](images/dialmap.png)
 
-En el código siguiente se muestra el uso de **atributos CUSTOMSLIDER.**
+El código siguiente muestra el uso de **atributos CUSTOMSLIDER.**
 
 
 ```XML
@@ -138,13 +138,13 @@ En el código siguiente se muestra el uso de **atributos CUSTOMSLIDER.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

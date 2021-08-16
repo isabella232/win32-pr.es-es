@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve el **miembro de datos privado m \_ ThreadId.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función devuelve el identificador de Microsoft Win32 para el subproceso de trabajo. Puede llamar a esta función miembro en el subproceso de trabajo o en un subproceso de cliente.
 

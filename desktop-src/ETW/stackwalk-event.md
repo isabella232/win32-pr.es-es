@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de seguimiento de la pila.
+description: Esta clase es la clase de tipo de evento para los eventos de seguimiento de pila.
 ms.assetid: 05117bd6-a39c-42f3-8aed-c6f758f946c6
-title: StackWalk_Event (clase)
+title: StackWalk_Event clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 746a7f2a9b5f6bb6316bf0d0e20e5645cea15a7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 672d8fc609c14a43ca2692b5cf8a46356a00cccb9c06371e515bc102706c3638
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069705"
 ---
-# <a name="stackwalk_event-class"></a>StackWalk ( \_ clase de eventos)
+# <a name="stackwalk_event-class"></a>StackWalk \_ (clase de eventos)
 
-Esta clase es la clase de tipo de evento para los eventos de seguimiento de la pila.
+Esta clase es la clase de tipo de evento para los eventos de seguimiento de pila.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -46,42 +46,42 @@ class StackWalk_Event : StackWalk
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ eventos StackWalk** tiene estos tipos de miembros:
+La **clase \_ de eventos StackWalk** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ evento StackWalk** tiene estas propiedades.
+La **clase \_ de eventos StackWalk** tiene estas propiedades.
 
 <dl> <dt>
 
 **EventTimeStamp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
-Marca de tiempo del evento original del encabezado del evento. Use esta marca de tiempo para hacer coincidir la pila con un evento.
+Marca de tiempo del evento original del encabezado de evento. Use esta marca de tiempo para hacer coincidir la pila con un evento.
 
 </dd> <dt>
 
 **Stack1**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), puntero
+Calificadores: WmiDataId(4), puntero
 </dt> </dl>
 
 Dirección de la llamada.
@@ -91,13 +91,13 @@ Dirección de la llamada.
 **Stack192**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (195), puntero
+Calificadores: WmiDataId(195), puntero
 </dt> </dl>
 
 Dirección de la llamada.
@@ -107,13 +107,13 @@ Dirección de la llamada.
 **StackProcess**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), Format ("x")
+Calificadores: WmiDataId(2), format("x")
 </dt> </dl>
 
 Identificador de proceso del evento original.
@@ -123,22 +123,22 @@ Identificador de proceso del evento original.
 **StackThread**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
 Identificador del subproceso del evento original.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que la clase no muestra todas las propiedades de **Stack * n*** que existen entre **Stack1** y **Stack192**. Use el tamaño del evento para determinar cuántas propiedades de **Stack * n*** contienen direcciones válidas.
+Tenga en cuenta que la clase no muestra todas las propiedades **stack*n*** que existen entre **Stack1** y **Stack192.** Use el tamaño del evento para determinar cuántas **propiedades de Stack*n*** contienen direcciones válidas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -146,8 +146,8 @@ Tenga en cuenta que la clase no muestra todas las propiedades de **Stack * n*** 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

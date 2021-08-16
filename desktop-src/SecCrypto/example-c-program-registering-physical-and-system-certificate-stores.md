@@ -1,26 +1,26 @@
 ---
-description: Muestra el registro (creación) y la apertura de un almacén del sistema, el registro de un almacén físico como miembro de un almacén del sistema y la anulación del registro (eliminación) de un almacén del sistema.
+description: Muestra cómo registrar (crear) y abrir un almacén del sistema, registrar un almacén físico como miembro de un almacén del sistema y anular (eliminar) un almacén del sistema.
 ms.assetid: 857ab592-68c7-4660-b37d-b165aeee14f4
 title: 'Programa C de ejemplo: registro de almacenes de certificados físicos y del sistema'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 708a840767b4e49bd1ba5c70dd5ae63f0f9ab7bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3e1302f0590244ae4e1cd84e477c5deac8266b69d15f9ee83f60b71df3d1a80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140878"
 ---
 # <a name="example-c-program-registering-physical-and-system-certificate-stores"></a>Programa C de ejemplo: registro de almacenes de certificados físicos y del sistema
 
-Los almacenes físicos se pueden convertir en miembros más o menos permanentes de un almacén del sistema. Cuando un almacén físico es miembro de un almacén del sistema, las operaciones en el almacén del sistema, como buscar un certificado, buscarán en todos los almacenes físicos que estén registrados como miembros del almacén del sistema. Un almacén físico se puede quitar de la pertenencia a un almacén del sistema mediante el uso de una función de anulación del registro.
+Los almacenes físicos se pueden convertir en miembros más o menos permanentes de un almacén del sistema. Cuando un almacén físico es miembro de un almacén del sistema, las operaciones en el almacén del sistema, como la búsqueda de un certificado, buscarán en todos los almacenes físicos registrados como miembros del almacén del sistema. Un almacén físico se puede quitar de la pertenencia a un almacén del sistema mediante una función de anulación del registro.
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
--   Registro (creación) de un nuevo almacén del sistema mediante [**CertRegisterSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregistersystemstore).
--   Apertura de un almacén del sistema recién creado mediante [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
--   Registro de un almacén físico como miembro de un almacén del sistema mediante [**CertRegisterPhysicalStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregisterphysicalstore).
--   Anular el registro (eliminación) de un almacén del sistema mediante [**CertUnregisterSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certunregistersystemstore).
+-   Registrar (crear) un nuevo almacén del sistema mediante [**CertRegisterSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregistersystemstore).
+-   Abrir un almacén del sistema recién creado [**mediante CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Registrar un almacén físico como miembro de un almacén del sistema mediante [**CertRegisterPhysicalStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregisterphysicalstore).
+-   Anulación del registro (eliminación) de un almacén del sistema [**mediante CertUnregisterSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certunregistersystemstore).
 
 En este ejemplo también se muestra la creación y eliminación de almacenes del sistema.
 

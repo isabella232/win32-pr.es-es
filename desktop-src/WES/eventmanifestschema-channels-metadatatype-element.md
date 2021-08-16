@@ -1,9 +1,9 @@
 ---
-title: Elemento Channels (MetadataType)
-description: Define una lista de canales en los que los proveedores pueden registrar eventos. | Elemento Channels (MetadataType)
+title: elemento channels (MetadataType)
+description: Define una lista de canales en los que los proveedores pueden registrar eventos. | elemento channels (MetadataType)
 ms.assetid: ead7317f-29ec-43d2-a588-7915c8e74dc1
 keywords:
-- elemento Channels EventLog
+- elemento channels EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9511972faf279917057d522872ecbd72710e42d6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4d199834b9d3a3379da987e4bf24e1e8e196d068a44dd5ea09fd0af3527ef1e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750931"
 ---
-# <a name="channels-metadatatype-element"></a>Elemento Channels (MetadataType)
+# <a name="channels-metadatatype-element"></a>elemento channels (MetadataType)
 
 Define una lista de canales en los que los proveedores pueden registrar eventos.
 
@@ -30,7 +30,7 @@ Define una lista de canales en los que los proveedores pueden registrar eventos.
  />
 ```
 
-El elemento **Channels** se define mediante el tipo complejo [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+El **elemento channels** se define mediante el tipo complejo [**MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Channels** se define mediante el tipo complejo [**MetadataType**](
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

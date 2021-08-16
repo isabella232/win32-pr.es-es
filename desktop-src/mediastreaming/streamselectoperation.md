@@ -1,6 +1,6 @@
 ---
-title: StreamSelectOperation (clase)
-description: Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por GetMuteAsync y proporciona un método que devuelve los resultados de la operación. | StreamSelectOperation (clase)
+title: Clase StreamSelectOperation
+description: Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por GetMuteAsync y proporciona un método que devuelve los resultados de la operación. | Clase StreamSelectOperation
 ms.assetid: 681142B4-AECD-42D0-A2D4-494E69A29025
 keywords:
 - StreamSelectOperation class Media Streaming API
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119461565"
 ---
-# <a name="streamselectoperation-class"></a>StreamSelectOperation (clase)
+# <a name="streamselectoperation-class"></a>Clase StreamSelectOperation
 
 Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetMuteAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getmuteasync) y proporciona un método que devuelve los resultados de la operación.
 

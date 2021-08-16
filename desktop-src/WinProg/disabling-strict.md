@@ -1,21 +1,21 @@
 ---
-title: Deshabilitar STRICT
-description: Para deshabilitar la comprobación estricta de tipos, defina el nombre del símbolo como NO \_ estricto. En Visual C/C++, también puede especificar esta definición en la línea de comandos o en un archivo make si especifica/DNO \_ STRICT como opción del compilador.
+title: Deshabilitación de STRICT
+description: Para deshabilitar la comprobación de tipos STRICT, defina el nombre de símbolo NO \_ STRICT. En Visual C/C++, también puede especificar esta definición en la línea de comandos o en un archivo Make especificando /DNO STRICT como \_ opción del compilador.
 ms.assetid: 57b01d2e-1f64-4ac0-b4f0-624c241899d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62bfdfef2aa7988576aa4c1e17f002639de98121
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 078361b5cc3fd4916ac2ab4f7207752e869568b8781c9ef3dd8e38427d252592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743661"
 ---
-# <a name="disabling-strict"></a>Deshabilitar STRICT
+# <a name="disabling-strict"></a>Deshabilitación de STRICT
 
-Para deshabilitar la comprobación **estricta** de tipos, defina el nombre del símbolo como **no \_ estricto**. En Visual C/C++, también puede especificar esta definición en la línea de comandos o en un archivo make si especifica **/DNO \_ STRICT** como opción del compilador.
+Para deshabilitar la comprobación de tipos **STRICT,** defina el nombre de símbolo **NO \_ STRICT.** En Visual C/C++, también puede especificar esta definición en la línea de comandos o en un archivo Make especificando **/DNO \_ STRICT** como opción del compilador.
 
-Para no definir de forma **\_ estricta** cada archivo, inserte una instrucción de **\# definición** antes de incluir Windows. h:
+Para definir **NO \_ STRICT archivo** a archivo, inserte una instrucción **\# define** antes de incluir Windows.h:
 
 
 ```C++
@@ -25,21 +25,21 @@ Para no definir de forma **\_ estricta** cada archivo, inserte una instrucción 
 
 
 
-Para obtener los mejores resultados, también debe establecer el nivel de advertencia para los mensajes de error en al menos **/W3**. Esto siempre es aconsejable con las aplicaciones de Windows, ya que una práctica de codificación que genera una advertencia (por ejemplo, pasando el número incorrecto de parámetros) suele provocar un error irrecuperable en tiempo de ejecución si no se corrige.
+Para obtener mejores resultados, también debe establecer el nivel de advertencia para los mensajes de error en al menos **/W3**. Esto siempre es aconsejable con las aplicaciones para Windows, ya que una práctica de codificación que provoca una advertencia (por ejemplo, pasar un número incorrecto de parámetros) suele provocar un error grave en tiempo de ejecución si no se corrige.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Habilitar STRICT](enabling-strict.md)
+[Habilitación de STRICT](enabling-strict.md)
 </dt> <dt>
 
-[Cumplimiento estricto](strict-compliance.md)
+[Cumplimiento strict](strict-compliance.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

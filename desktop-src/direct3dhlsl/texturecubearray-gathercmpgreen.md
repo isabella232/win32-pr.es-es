@@ -1,9 +1,9 @@
 ---
-title: Métodos TextureCubeArray::TextureCubeArray GatherCmpGreen
-description: Muestrea y compara una textura y devuelve el componente verde. | Métodos TextureCubeArray::TextureCubeArray GatherCmpGreen
+title: Métodos de TextureCubeArray::TextureCubeArray GatherCmpGreen
+description: Muestrea y compara una textura y devuelve el componente verde. | Métodos de TextureCubeArray::TextureCubeArray GatherCmpGreen
 ms.assetid: F4B58F67-E13C-4166-9793-4CD1E1712766
 keywords:
-- Métodos HLSL de GatherCmpGreen
+- Métodos de GatherCmpGreen HLSL
 topic_type:
 - apiref
 api_type:
@@ -33,7 +33,7 @@ Muestrea y compara una textura y devuelve el componente verde.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

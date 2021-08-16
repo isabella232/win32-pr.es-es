@@ -1,7 +1,7 @@
 ---
-description: Representa un valor de métrica definido por una instancia de la \_ clase MSVM BaseMetricDefinition.
+description: Representa un valor de métrica definido por una instancia de la clase \_ BaseMetricDefinition de Msvm.
 ms.assetid: bd872f21-ab71-4ab7-88d3-b26dd2fbdbe5
-title: Msvm_BaseMetricValue (clase)
+title: Msvm_BaseMetricValue clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f0e566de4822b271dcd4633c3dba35f7c88495bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24d61f6068cffc83f8556637bba30de57308b6a5bcefe5b015bc185ab7811108
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790225"
 ---
-# <a name="msvm_basemetricvalue-class"></a>MSVM \_ BaseMetricValue (clase)
+# <a name="msvm_basemetricvalue-class"></a>Clase BaseMetricValue de Msvm \_
 
-Representa un valor de métrica definido por una instancia de la clase [**MSVM \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) .
+Representa un valor de métrica definido por una instancia de la clase [**\_ BaseMetricDefinition de Msvm.**](msvm-basemetricdefinition.md)
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,13 +61,13 @@ class Msvm_BaseMetricValue : CIM_BaseMetricValue
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ BaseMetricValue** tiene estos tipos de miembros:
+La **clase \_ BaseMetricValue de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ BaseMetricValue** tiene estas propiedades.
+La **clase \_ BaseMetricValue de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica una dimensión de desglose de la matriz **BreakdownDimensions** definida en la [**\_ BaseMetricDefinition de MSVM**](msvm-basemetricdefinition.md)asociada. Esta es la dimensión en la que se divide este conjunto de valores de métricas. Esta propiedad se hereda de [**\_ BaseMetricDefinition CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Especifica una dimensión de desglose de la **matriz BreakdownDimensions** definida en el objeto [**\_ BaseMetricDefinition de Msvm asociado.**](msvm-basemetricdefinition.md) Esta es la dimensión a lo largo de la cual se desglosa este conjunto de valores de métrica. Esta propiedad se hereda de [**CIM \_ BaseMetricDefinition.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Define un valor de la propiedad **BreakdownDimension** definida para esta instancia de valor de métrica. Por ejemplo, si **BreakdownDimension** es "TransactionName", esta propiedad podría nombrar la transacción real a la que se aplica este valor de métrica en particular. Esta propiedad se hereda de [**\_ BaseMetricDefinition CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Define un valor de la propiedad **BreakdownDimension** definida para esta instancia de valor de métrica. Por ejemplo, si **BreakdownDimension** es "TransactionName", esta propiedad podría dar nombre a la transacción real a la que se aplica este valor de métrica determinado. Esta propiedad se hereda de [**CIM \_ BaseMetricDefinition.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -119,20 +119,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
-**Duration**
+**Duración**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica la duración de la validez de este valor de métrica. Esta propiedad no debe existir para las marcas de tiempo que se aplican solo a un punto en el tiempo, pero debe especificarse para los valores que se consideran válidos para un determinado período de tiempo (por ejemplo, muestreo). Si la propiedad **Duration** existe y no es **null**, la propiedad **timestamp** especifica el final del intervalo. Esta propiedad se hereda de [**\_ BaseMetricDefinition CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Especifica la duración de tiempo durante la que este valor de métrica es válido. Esta propiedad no debe existir para las marcas de tiempo que se aplican solo a un momento dado, sino que se debe especificar para los valores que se consideran válidos durante un período de tiempo determinado (por ejemplo, muestreo). Si la **propiedad Duration** existe y no es **Null,** la **propiedad TimeStamp** especifica el final del intervalo. Esta propiedad se hereda de [**CIM \_ BaseMetricDefinition.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -145,7 +145,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -158,10 +158,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Cadena que identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Cadena que identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -174,7 +174,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Un nombre descriptivo para el elemento al que pertenece el valor de métrica (el elemento medido). Esta propiedad se hereda de [**\_ BaseMetricDefinition CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nombre descriptivo del elemento al que pertenece el valor de métrica (el elemento medido). Esta propiedad se hereda de [**CIM \_ BaseMetricDefinition.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La clave de la instancia de [**\_ BaseMetricDefinition de MSVM**](msvm-basemetricdefinition.md) para este valor. Esta propiedad se hereda de [**\_ BaseMetricDefinition CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Clave de la instancia [**de \_ BaseMetricDefinition de Msvm**](msvm-basemetricdefinition.md) para este valor. Esta propiedad se hereda de [**CIM \_ BaseMetricDefinition.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -200,24 +200,24 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor de la métrica que se representa como una cadena. Esta propiedad se hereda de [**\_ BaseMetricDefinition CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Valor de la métrica que se representa como una cadena. Esta propiedad se hereda de [**CIM \_ BaseMetricDefinition.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
-**Indicaciones**
+**Timestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica la hora a la que se capturó o calculó el valor de métrica. Tenga en cuenta que esto es diferente del momento en que se creó la instancia. Esta propiedad se hereda de [**\_ BaseMetricDefinition CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Especifica la hora a la que se capturó o calculó el valor de métrica. Tenga en cuenta que esto es diferente de la hora en que se creó la instancia. Esta propiedad se hereda de [**CIM \_ BaseMetricDefinition.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
-**Volatil**
+**Volátil**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -226,7 +226,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**True** si el valor para el siguiente punto en el tiempo usará la misma instancia de la clase y simplemente cambiará los valores de propiedad (como el **valor** o la **marca** de tiempo). Si es **true**, la instancia se reutiliza. Si **es false**, las instancias existentes permanecen sin cambios y se crea una nueva instancia para el nuevo punto en el tiempo. Esta propiedad se hereda de [**\_ BaseMetricDefinition CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+**True** si el valor del siguiente momento en el tiempo usará la misma instancia de clase y solo cambiará los valores de propiedad (como **Value** o **TimeStamp).** Si **es True**, se reutiliza la instancia de . Si **es False**, las instancias existentes permanecen sin cambios y se crea una nueva instancia para el nuevo momento en el tiempo. Esta propiedad se hereda de [**CIM \_ BaseMetricDefinition.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> </dl>
 
@@ -236,10 +236,10 @@ Tipo de acceso: solo lectura
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

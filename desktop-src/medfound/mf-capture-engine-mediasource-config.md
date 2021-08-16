@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119464375"
 ---
-# <a name="mf_capture_engine_mediasource_config-attribute"></a>Atributo \_ DE CONFIGURACIÓN \_ MEDIASOURCE del MOTOR DE CAPTURA \_ \_ DE MF
+# <a name="mf_capture_engine_mediasource_config-attribute"></a>Atributo \_ DE CONFIGURACIÓN \_ \_ MEDIASOURCE DEL MOTOR DE CAPTURA \_ DE MF
 
 Contiene propiedades de configuración para el origen de captura.
 
@@ -19,7 +19,7 @@ Contiene propiedades de configuración para el origen de captura.
 
 **IPropertyStore \* *_ almacenado como _* IUnknown\***
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Actualmente, este atributo se omite. En el futuro, se podría usar para pasar propiedades de configuración al origen de medios.
 

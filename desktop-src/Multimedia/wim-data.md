@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WIM_DATA (mmsystem. h)
-description: El \_ mensaje de datos Wim se envía a la función de devolución de llamada de entrada de audio de forma de onda especificada cuando los datos de audio de forma de onda están presentes en el búfer de entrada y el búfer se devuelve a la aplicación.
+title: WIM_DATA mensaje (Mmsystem.h)
+description: El mensaje WIM DATA se envía a la función de devolución de llamada de entrada de audio de forma de onda dada cuando los datos de audio de forma de onda están presentes en el búfer de entrada y el búfer se devuelve a \_ la aplicación.
 ms.assetid: 94cc02b8-61c4-44b9-9f8e-041fe989c1a6
 keywords:
-- Mensaje de WIM_DATA de Windows multimedia
+- WIM_DATA mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28bcfdd249dda5621d4914d75d3ffc7b13e4d767
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6956dacefa507c2c92f05afdd39bc9c803c630421c81620e0320f3b06648b13b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940753"
 ---
-# <a name="wim_data-message"></a>\_Mensaje de datos Wim
+# <a name="wim_data-message"></a>Mensaje DE DATOS DE WIM \_
 
-El mensaje de **\_ datos Wim** se envía a la función de devolución de llamada de entrada de audio de forma de onda especificada cuando los datos de audio de forma de onda están presentes en el búfer de entrada y el búfer se devuelve a la aplicación. Se puede enviar el mensaje cuando el búfer esté lleno o después de que se llame a la función [**waveInReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveinreset) .
+El **mensaje WIM \_ DATA** se envía a la función de devolución de llamada de entrada de audio de forma de onda dada cuando los datos de audio de forma de onda están presentes en el búfer de entrada y el búfer se devuelve a la aplicación. El mensaje se puede enviar cuando el búfer está lleno o después de llamar a [**la función waveInReset.**](/windows/win32/api/mmeapi/nf-mmeapi-waveinreset)
 
 
 ```C++
@@ -41,24 +41,24 @@ dwParam2 = reserved
 <span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Puntero a una estructura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) que identifica el búfer que contiene los datos.
+Puntero a una [**estructura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) que identifica el búfer que contiene los datos.
 
 </dd> <dt>
 
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es posible que el búfer devuelto no esté lleno. Use el miembro **dwBytesRecorded** de la estructura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) especificada por *lpwvhdr* para determinar el número de bytes grabados en el búfer devuelto.
+Es posible que el búfer devuelto no esté lleno. Use el **miembro dwBytesRecorded** de la estructura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) especificada por *lpwvhdr* para determinar el número de bytes registrados en el búfer devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Es posible que el búfer devuelto no esté lleno. Use el miembro **dwBytesRecord
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ Es posible que el búfer devuelto no esté lleno. Use el miembro **dwBytesRecord
 
 <dl> <dt>
 
-[Audio de onda](waveform-audio.md)
+[Audio de forma de onda](waveform-audio.md)
 </dt> <dt>
 
-[Mensajes de onda](waveform-messages.md)
+[Mensajes de forma de onda](waveform-messages.md)
 </dt> </dl>
 
  

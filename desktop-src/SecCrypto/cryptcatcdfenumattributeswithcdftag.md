@@ -91,7 +91,7 @@ Si se completa correctamente, esta función devuelve un puntero a una [**estruct
 
 ## <a name="remarks"></a>Comentarios
 
-Normalmente se llama a esta función en un bucle para enumerar todos los atributos de miembro del archivo de catálogo en una CDF. Antes de entrar en el bucle, *establezca pPrevAttr en* **NULL.** La función devuelve un puntero al primer atributo. Establezca *pPrevAttr en* el valor devuelto de la función para las iteraciones posteriores del bucle.
+Normalmente, esta función se llama en un bucle para enumerar todos los atributos de miembro del archivo de catálogo en una CDF. Antes de entrar en el bucle, *establezca pPrevAttr en* **NULL.** La función devuelve un puntero al primer atributo. Establezca *pPrevAttr en el* valor devuelto de la función para las iteraciones posteriores del bucle.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -139,7 +139,7 @@ En el ejemplo siguiente se muestra la secuencia correcta de asignaciones para el
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
@@ -147,7 +147,7 @@ En el ejemplo siguiente se muestra la secuencia correcta de asignaciones para el
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

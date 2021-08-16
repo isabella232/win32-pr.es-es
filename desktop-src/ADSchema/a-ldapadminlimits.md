@@ -27,7 +27,7 @@ Contiene un conjunto de pares atributo-valor que definen los límites administra
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | LDAP-Admin-Limits                           |
 | Ldap-Display-Name | lDAPAdminLimits                             |
@@ -54,7 +54,7 @@ Contiene un conjunto de pares atributo-valor que definen los límites administra
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -75,7 +75,7 @@ Contiene un conjunto de pares atributo-valor que definen los límites administra
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -96,7 +96,7 @@ Contiene un conjunto de pares atributo-valor que definen los límites administra
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -117,7 +117,7 @@ Contiene un conjunto de pares atributo-valor que definen los límites administra
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -138,7 +138,7 @@ Contiene un conjunto de pares atributo-valor que definen los límites administra
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -159,7 +159,7 @@ Contiene un conjunto de pares atributo-valor que definen los límites administra
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -180,7 +180,7 @@ Contiene un conjunto de pares atributo-valor que definen los límites administra
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |

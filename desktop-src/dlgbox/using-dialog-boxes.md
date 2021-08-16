@@ -1,46 +1,46 @@
 ---
 title: Usar cuadros de diálogo
-description: Los cuadros de diálogo se usan para mostrar información y solicitar la intervención del usuario.
+description: Los cuadros de diálogo se usan para mostrar información y solicitar la entrada del usuario.
 ms.assetid: 8a5b6bdd-4429-4f48-b846-6bd617a87abf
 keywords:
-- Interfaz de usuario de Windows, ventanas
-- Interfaz de usuario de Windows, cuadros de diálogo
+- Windows Interfaz de usuario,windowing
+- Windows Interfaz de usuario,cuadros de diálogo
 - ventanas, cuadros de diálogo
 - cuadros de diálogo, acerca de
-- cuadros de diálogo, Mostrar
+- cuadros de diálogo, mostrar
 - cuadros de diálogo modales
 - cuadros de diálogo no modales
-- cuadros de diálogo, modales
-- cuadros de diálogo, no modales
+- cuadros de diálogo, modal
+- cuadros de diálogo, modeless
 - cuadros de diálogo, inicializar
 - plantillas de cuadro de diálogo
 - cuadros de diálogo, plantillas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21da47d7d59f4cadc21314566bce41a9ef3456a7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 32ec5e97060697388224ac92f60b6043a188d4259520aaf151fb188c43f6bb64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720803"
 ---
 # <a name="using-dialog-boxes"></a>Usar cuadros de diálogo
 
-Los cuadros de diálogo se usan para mostrar información y solicitar la intervención del usuario. La aplicación carga e inicializa el cuadro de diálogo, procesa los datos proporcionados por el usuario y destruye el cuadro de diálogo cuando el usuario finaliza la tarea. El proceso de control de cuadros de diálogo varía en función de si el cuadro de diálogo es modal o no modal. Un cuadro de diálogo modal requiere que el usuario cierre el cuadro de diálogo antes de activar otra ventana en la aplicación. Sin embargo, el usuario puede activar Windows en aplicaciones diferentes. Un cuadro de diálogo no modal no requiere una respuesta inmediata del usuario. Es similar a una ventana principal que contiene controles.
+Los cuadros de diálogo se usan para mostrar información y solicitar la entrada del usuario. La aplicación carga e inicializa el cuadro de diálogo, procesa la entrada del usuario y destruye el cuadro de diálogo cuando el usuario finaliza la tarea. El proceso para controlar los cuadros de diálogo varía en función de si el cuadro de diálogo es modal o no. Un cuadro de diálogo modal requiere que el usuario cierre el cuadro de diálogo antes de activar otra ventana en la aplicación. Sin embargo, el usuario puede activar ventanas en distintas aplicaciones. Un cuadro de diálogo de modelado no requiere una respuesta inmediata del usuario. Es similar a una ventana principal que contiene controles.
 
-En las secciones siguientes se explica cómo usar ambos tipos de cuadros de diálogo.
+En las secciones siguientes se describe cómo usar ambos tipos de cuadros de diálogo.
 
 -   [Mostrar un cuadro de mensaje](#displaying-a-message-box)
 -   [Crear un cuadro de diálogo modal](#creating-a-modal-dialog-box)
--   [Crear un cuadro de diálogo no modal](#creating-a-modeless-dialog-box)
+-   [Crear un cuadro de diálogo Modeless](#creating-a-modeless-dialog-box)
 -   [Inicializar un cuadro de diálogo](#initializing-a-dialog-box)
--   [Crear una plantilla en memoria](#creating-a-template-in-memory)
+-   [Creación de una plantilla en memoria](#creating-a-template-in-memory)
 
 ## <a name="displaying-a-message-box"></a>Mostrar un cuadro de mensaje
 
-La forma más sencilla de cuadro de diálogo modal es el cuadro de mensaje. La mayoría de las aplicaciones usan cuadros de mensaje para advertir al usuario de los errores y para solicitar instrucciones sobre cómo continuar después de que se produzca un error. Cree un cuadro de mensaje mediante la función [**MessageBox**](/windows/desktop/api/Winuser/nf-winuser-messagebox) o [**MessageBoxEx**](/windows/desktop/api/Winuser/nf-winuser-messageboxexa) , especificando el mensaje y el número y tipo de botones que se van a mostrar. El sistema crea un cuadro de diálogo modal, que proporciona su propio procedimiento y plantilla de cuadro de diálogo. Una vez que el usuario cierra el cuadro de mensaje, **MessageBox** o **MessageBoxEx** devuelve un valor que identifica el botón elegido por el usuario para cerrar el cuadro de mensaje.
+La forma más sencilla del cuadro de diálogo modal es el cuadro de mensaje. La mayoría de las aplicaciones usan cuadros de mensaje para advertir al usuario de errores y solicitar instrucciones sobre cómo continuar después de que se haya producido un error. Para crear un cuadro de mensaje, use la función [**MessageBox**](/windows/desktop/api/Winuser/nf-winuser-messagebox) o [**MessageBoxEx,**](/windows/desktop/api/Winuser/nf-winuser-messageboxexa) especificando el mensaje y el número y tipo de botones que se mostrarán. El sistema crea un cuadro de diálogo modal, proporcionando su propia plantilla y procedimiento de cuadro de diálogo. Después de que el usuario cierre el cuadro de mensaje, **MessageBox** o **MessageBoxEx** devuelve un valor que identifica el botón elegido por el usuario para cerrar el cuadro de mensaje.
 
-En el ejemplo siguiente, la aplicación muestra un cuadro de mensaje que solicita al usuario una acción una vez que se ha producido una condición de error. En el cuadro de mensaje se muestra el mensaje que describe la condición de error y cómo resolverlo. El estilo **MB \_ síno** dirige [**MessageBox**](/windows/desktop/api/Winuser/nf-winuser-messagebox) para proporcionar dos botones con los que el usuario puede elegir cómo proceder:
+En el ejemplo siguiente, la aplicación muestra un cuadro de mensaje que solicita al usuario una acción después de que se haya producido una condición de error. El cuadro de mensaje muestra el mensaje que describe la condición de error y cómo resolverla. El **estilo \_ MB YESNO** indica a [**MessageBox**](/windows/desktop/api/Winuser/nf-winuser-messagebox) que proporcione dos botones con los que el usuario puede elegir cómo continuar:
 
 
 ```
@@ -64,19 +64,19 @@ int DisplayConfirmSaveAsMessageBox()
 
 
 
-En la imagen siguiente se muestra el resultado del ejemplo de código anterior:
+En la imagen siguiente se muestra la salida del ejemplo de código anterior:
 
 ![cuadro de mensaje](images/messagebox-01.png)
 
 ## <a name="creating-a-modal-dialog-box"></a>Crear un cuadro de diálogo modal
 
-Puede crear un cuadro de diálogo modal mediante la función [**DialogBox**](/windows/desktop/api/Winuser/nf-winuser-dialogboxa) . Debe especificar el identificador o el nombre de un recurso de plantilla de cuadro de diálogo y un puntero al procedimiento de cuadro de diálogo. La función **DialogBox** carga la plantilla, muestra el cuadro de diálogo y procesa todos los datos proporcionados por el usuario hasta que el usuario cierra el cuadro de diálogo.
+Para crear un cuadro de diálogo modal, use la [**función DialogBox.**](/windows/desktop/api/Winuser/nf-winuser-dialogboxa) Debe especificar el identificador o el nombre de un recurso de plantilla de cuadro de diálogo y un puntero al procedimiento del cuadro de diálogo. La **función DialogBox** carga la plantilla, muestra el cuadro de diálogo y procesa todas las entradas del usuario hasta que el usuario cierre el cuadro de diálogo.
 
-En el ejemplo siguiente, la aplicación muestra un cuadro de diálogo modal cuando el usuario hace clic en **Eliminar elemento** en un menú de la aplicación. El cuadro de diálogo contiene un control de edición (en el que el usuario escribe el nombre de un elemento) y los botones **Aceptar** y **Cancelar** . Los identificadores de control de estos controles son ID. \_ ITEMNAME, IDOK y IDCANCEL, respectivamente.
+En el ejemplo siguiente, la aplicación muestra un cuadro de diálogo modal cuando el usuario hace clic **en Eliminar elemento** desde un menú de la aplicación. El cuadro de diálogo contiene un control de edición (en el que el usuario escribe el nombre de un elemento) y los **botones Aceptar** **y** Cancelar. Los identificadores de control para estos controles son ID \_ ITEMNAME, IDOK e IDCANCEL, respectivamente.
 
-La primera parte del ejemplo consta de las instrucciones que crean el cuadro de diálogo modal. Estas instrucciones, en el procedimiento de ventana de la ventana principal de la aplicación, crean el cuadro de diálogo cuando el sistema recibe un mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) con el \_ identificador de menú DELETEITEM de IDM. La segunda parte del ejemplo es el procedimiento de cuadro de diálogo, que recupera el contenido del control de edición y cierra el cuadro de diálogo tras recibir un mensaje de **\_ comando de WM** .
+La primera parte del ejemplo consta de las instrucciones que crean el cuadro de diálogo modal. Estas instrucciones, en el procedimiento de ventana de la ventana principal de la aplicación, crean el cuadro de diálogo cuando el sistema recibe un mensaje [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) con el identificador de menú \_ DELETEITEM de IDM. La segunda parte del ejemplo es el procedimiento del cuadro de diálogo, que recupera el contenido del control de edición y cierra el cuadro de diálogo al recibir un **mensaje \_ WM COMMAND.**
 
-Las instrucciones siguientes crean el cuadro de diálogo modal. La plantilla de cuadro de diálogo es un recurso del archivo ejecutable de la aplicación y tiene el identificador de recursos DLG \_ DELETEITEM.
+Las instrucciones siguientes crean el cuadro de diálogo modal. La plantilla de cuadro de diálogo es un recurso en el archivo ejecutable de la aplicación y tiene el identificador de recurso DLG \_ DELETEITEM.
 
 
 ```
@@ -104,7 +104,7 @@ case WM_COMMAND:
 
 
 
-En este ejemplo, la aplicación especifica su ventana principal como ventana propietaria para el cuadro de diálogo. Cuando el sistema muestra inicialmente el cuadro de diálogo, su posición es relativa a la esquina superior izquierda del área de cliente de la ventana propietaria. La aplicación utiliza el valor devuelto de [**DialogBox**](/windows/desktop/api/Winuser/nf-winuser-dialogboxa) para determinar si se debe continuar con la operación o cancelarla. Las instrucciones siguientes definen el procedimiento de cuadro de diálogo.
+En este ejemplo, la aplicación especifica su ventana principal como ventana propietaria del cuadro de diálogo. Cuando el sistema muestra inicialmente el cuadro de diálogo, su posición es relativa a la esquina superior izquierda del área de cliente de la ventana de propietario. La aplicación usa el valor devuelto de [**DialogBox**](/windows/desktop/api/Winuser/nf-winuser-dialogboxa) para determinar si se debe continuar con la operación o cancelarla. Las instrucciones siguientes definen el procedimiento del cuadro de diálogo.
 
 
 ```
@@ -137,15 +137,15 @@ BOOL CALLBACK DeleteItemProc(HWND hwndDlg,
 
 
 
-En este ejemplo, el procedimiento usa [**GetDlgItemText**](/windows/desktop/api/Winuser/nf-winuser-getdlgitemtexta) para recuperar el texto actual del control de edición identificado por el identificador \_ ITEMNAME. A continuación, el procedimiento llama a la función [**EndDialog**](/windows/desktop/api/Winuser/nf-winuser-enddialog) para establecer el valor devuelto del cuadro de diálogo en IDOK o IDCANCEL, dependiendo del mensaje recibido, y para comenzar el proceso de cerrar el cuadro de diálogo. Los identificadores IDOK y IDCANCEL se corresponden con los botones **Aceptar** y **Cancelar** . Una vez que el procedimiento llama a **EndDialog**, el sistema envía mensajes adicionales al procedimiento para destruir el cuadro de diálogo y devuelve el valor devuelto del cuadro de diálogo a la función que creó el cuadro de diálogo.
+En este ejemplo, el procedimiento usa [**GetDlgItemText para**](/windows/desktop/api/Winuser/nf-winuser-getdlgitemtexta) recuperar el texto actual del control de edición identificado por ID \_ ITEMNAME. A continuación, el procedimiento llama a la función [**EndDialog**](/windows/desktop/api/Winuser/nf-winuser-enddialog) para establecer el valor devuelto del cuadro de diálogo en IDOK o IDCANCEL, según el mensaje recibido, y para iniciar el proceso de cierre del cuadro de diálogo. Los identificadores IDOK e IDCANCEL corresponden a los **botones Aceptar** **y** Cancelar. Después de que el procedimiento llama a **EndDialog**, el sistema envía mensajes adicionales al procedimiento para destruir el cuadro de diálogo y devuelve el valor devuelto del cuadro de diálogo a la función que creó el cuadro de diálogo.
 
-## <a name="creating-a-modeless-dialog-box"></a>Crear un cuadro de diálogo no modal
+## <a name="creating-a-modeless-dialog-box"></a>Crear un cuadro de diálogo Modeless
 
-Puede crear un cuadro de diálogo no modal mediante la función [**CreateDialog**](/windows/desktop/api/Winuser/nf-winuser-createdialoga) , especificando el identificador o el nombre de un recurso de plantilla de cuadro de diálogo y un puntero al procedimiento del cuadro de diálogo. **CreateDialog** carga la plantilla, crea el cuadro de diálogo y, opcionalmente, la muestra. La aplicación es responsable de recuperar y enviar mensajes de entrada del usuario al procedimiento del cuadro de diálogo.
+Puede crear un cuadro de diálogo modeless mediante la función [**CreateDialog,**](/windows/desktop/api/Winuser/nf-winuser-createdialoga) especificando el identificador o el nombre de un recurso de plantilla de cuadro de diálogo y un puntero al procedimiento del cuadro de diálogo. **CreateDialog** carga la plantilla, crea el cuadro de diálogo y, opcionalmente, la muestra. La aplicación es responsable de recuperar y enviar los mensajes de entrada del usuario al procedimiento del cuadro de diálogo.
 
-En el ejemplo siguiente, la aplicación muestra un cuadro de diálogo no modal (si aún no se muestra) cuando el usuario hace clic en **ir a** desde un menú de la aplicación. El cuadro de diálogo contiene un control de edición, una casilla y botones **Aceptar** y **Cancelar** . La plantilla de cuadro de diálogo es un recurso del archivo ejecutable de la aplicación y tiene el identificador de recurso DLG \_ goto. El usuario escribe un número de línea en el control de edición y activa la casilla para especificar que el número de línea es relativo a la línea actual. Los identificadores de control son \_ línea ID, ID \_ ABSREL, IDOK y IDCANCEL.
+En el ejemplo siguiente, la aplicación muestra un cuadro de diálogo modeless (si aún no se muestra) cuando el usuario hace clic en **Ir** a desde un menú de la aplicación. El cuadro de diálogo contiene un control de edición, una casilla y los **botones Aceptar** **y** Cancelar. La plantilla de cuadro de diálogo es un recurso en el archivo ejecutable de la aplicación y tiene el identificador de recurso DLG \_ GOTO. El usuario escribe un número de línea en el control de edición y marca la casilla para especificar que el número de línea es relativo a la línea actual. Los identificadores de control son ID \_ LINE, ID \_ ABSREL, IDOK e IDCANCEL.
 
-Las instrucciones de la primera parte del ejemplo crean el cuadro de diálogo no modal. Estas instrucciones, en el procedimiento de ventana de la ventana principal de la aplicación, crean el cuadro de diálogo cuando el procedimiento de ventana recibe un mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) que tiene el \_ identificador de menú ir Goto, pero solo si la variable global no contiene ya un identificador válido. La segunda parte del ejemplo es el bucle de mensajes principal de la aplicación. El bucle incluye la función [**IsDialogMessage**](/windows/desktop/api/Winuser/nf-winuser-isdialogmessagea) para asegurarse de que el usuario puede usar la interfaz de teclado de cuadro de diálogo de este cuadro de diálogo no modal. La tercera parte del ejemplo es el procedimiento de cuadro de diálogo. El procedimiento recupera el contenido del control de edición y la casilla de verificación cuando el usuario hace clic en el botón **Aceptar** . El procedimiento destruye el cuadro de diálogo cuando el usuario hace clic en el botón **Cancelar** .
+Las instrucciones de la primera parte del ejemplo crean el cuadro de diálogo modeless. Estas instrucciones, en el procedimiento de ventana de la ventana principal de la aplicación, crean el cuadro de diálogo cuando el procedimiento de ventana recibe un mensaje [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) que tiene el identificador de menú GOTO de IDM, pero solo si la variable global aún no contiene un identificador \_ válido. La segunda parte del ejemplo es el bucle de mensajes principal de la aplicación. El bucle incluye la [**función IsDialogMessage**](/windows/desktop/api/Winuser/nf-winuser-isdialogmessagea) para asegurarse de que el usuario puede usar la interfaz de teclado del cuadro de diálogo en este cuadro de diálogo modeless. La tercera parte del ejemplo es el procedimiento del cuadro de diálogo. El procedimiento recupera el contenido del control de edición y la casilla cuando el usuario hace clic en el **botón** Aceptar. El procedimiento destruye el cuadro de diálogo cuando el usuario hace clic en el **botón** Cancelar.
 
 
 ```
@@ -172,7 +172,7 @@ case WM_COMMAND:
 
 
 
-En las instrucciones anteriores, se llama a [**CreateDialog**](/windows/desktop/api/Winuser/nf-winuser-createdialoga) solo si no `hwndGoto` contiene un identificador de ventana válido. Esto garantiza que la aplicación no muestre dos cuadros de diálogo al mismo tiempo. Para admitir este método de comprobación, el procedimiento de cuadro de diálogo debe establecer en **null** cuando destruya el cuadro de diálogo.
+En las instrucciones anteriores, se llama a [**CreateDialog**](/windows/desktop/api/Winuser/nf-winuser-createdialoga) solo si `hwndGoto` no contiene un identificador de ventana válido. Esto garantiza que la aplicación no muestra dos cuadros de diálogo al mismo tiempo. Para admitir este método de comprobación, el procedimiento de diálogo debe establecerse en **NULL** cuando destruye el cuadro de diálogo.
 
 El bucle de mensajes de una aplicación consta de las siguientes instrucciones.
 
@@ -196,9 +196,9 @@ while ((bRet = GetMessage(&msg, NULL, 0, 0)) != 0)
 
 
 
-El bucle comprueba la validez del identificador de ventana para el cuadro de diálogo y solo llama a la función [**IsDialogMessage**](/windows/desktop/api/Winuser/nf-winuser-isdialogmessagea) si el identificador es válido. **IsDialogMessage** solo procesa el mensaje si pertenece al cuadro de diálogo. De lo contrario, devuelve **false** y el bucle envía el mensaje a la ventana correspondiente.
+El bucle comprueba la validez del identificador de ventana en el cuadro de diálogo y solo llama a la [**función IsDialogMessage**](/windows/desktop/api/Winuser/nf-winuser-isdialogmessagea) si el identificador es válido. **IsDialogMessage solo** procesa el mensaje si pertenece al cuadro de diálogo. De lo contrario, devuelve **FALSE** y el bucle envía el mensaje a la ventana adecuada.
 
-Las instrucciones siguientes definen el procedimiento de cuadro de diálogo.
+Las instrucciones siguientes definen el procedimiento del cuadro de diálogo.
 
 
 ```
@@ -244,17 +244,17 @@ BOOL CALLBACK GoToProc(HWND hwndDlg, UINT message, WPARAM wParam, LPARAM lParam)
 
 
 
-En las instrucciones anteriores, el procedimiento procesa los mensajes de [**\_ comandos**](/windows/desktop/menurc/wm-command) de [**WM \_ INITDIALOG**](wm-initdialog.md) y WM. Durante el procesamiento de **\_ INITDIALOG de WM** , el procedimiento inicializa la casilla pasando el valor actual de la variable global a [**CheckDlgButton**](https://msdn.microsoft.com/library/Cc410649(v=MSDN.10).aspx). Después, el procedimiento devuelve **true** para indicar al sistema que establezca el foco de entrada predeterminado.
+En las instrucciones anteriores, el procedimiento procesa los [**mensajes WM \_ INITDIALOG**](wm-initdialog.md) [**y WM \_ COMMAND.**](/windows/desktop/menurc/wm-command) Durante **el procesamiento de WM \_ INITDIALOG,** el procedimiento inicializa la casilla pasando el valor actual de la variable global a [**CheckDlgButton**](https://msdn.microsoft.com/library/Cc410649(v=MSDN.10).aspx). A continuación, el **procedimiento devuelve TRUE** para dirigir al sistema para establecer el foco de entrada predeterminado.
 
-Durante el procesamiento de [**\_ comandos de WM**](/windows/desktop/menurc/wm-command) , el procedimiento cierra el cuadro de diálogo solo si el usuario hace clic en el botón **Cancelar** , es decir, el botón que tiene el identificador IDCANCEL. El procedimiento debe llamar a [**DestroyWindow**](/windows/desktop/api/winuser/nf-winuser-destroywindow) para cerrar un cuadro de diálogo no modal. Observe que en el procedimiento también se establece la variable en **null** para asegurarse de que otras instrucciones que dependen de esta variable funcionan correctamente.
+Durante [**el procesamiento de WM \_ COMMAND,**](/windows/desktop/menurc/wm-command) el procedimiento cierra  el cuadro de diálogo solo si el usuario hace clic en el botón Cancelar, es decir, el botón que tiene el identificador IDCANCEL. El procedimiento debe llamar a [**DestroyWindow**](/windows/desktop/api/winuser/nf-winuser-destroywindow) para cerrar un cuadro de diálogo modeless. Observe que el procedimiento también establece la variable en **NULL** para asegurarse de que otras instrucciones que dependen de esta variable funcionan correctamente.
 
-Si el usuario hace clic en el botón **Aceptar** , el procedimiento recupera el estado actual de la casilla y lo asigna a la variable **fRelative** . A continuación, usa la variable para recuperar el número de línea del control de edición. [**GetDlgItemInt**](/windows/desktop/api/Winuser/nf-winuser-getdlgitemint) traduce el texto del control de edición en un entero. El valor de **fRelative** determina si la función interpreta el número como un valor con o sin signo. Si el texto del control de edición no es un número válido, **GetDlgItemInt** establece el valor de la variable **fError** en un valor distinto de cero. El procedimiento comprueba este valor para determinar si se va a mostrar un mensaje de error o si se lleva a cabo la tarea. En caso de error, el procedimiento del cuadro de diálogo envía un mensaje al control de edición y lo dirige a seleccionar el texto del control para que el usuario pueda reemplazarlo fácilmente. Si **GetDlgItemInt** no devuelve un error, el procedimiento puede llevar a cabo la propia tarea solicitada o enviar un mensaje a la ventana propietaria y dirigirla para llevar a cabo la operación.
+Si el usuario hace clic **en** el botón Aceptar, el procedimiento recupera el estado actual de la casilla y lo asigna a la variable **fRelative.** A continuación, usa la variable para recuperar el número de línea del control de edición. [**GetDlgItemInt**](/windows/desktop/api/Winuser/nf-winuser-getdlgitemint) traduce el texto del control de edición en un entero. El valor de **fRelative** determina si la función interpreta el número como un valor con signo o sin signo. Si el texto del control de edición no es un número válido, **GetDlgItemInt** establece el valor de la variable **fError** en distinto de cero. El procedimiento comprueba este valor para determinar si se debe mostrar un mensaje de error o llevar a cabo la tarea. En caso de error, el procedimiento del cuadro de diálogo envía un mensaje al control de edición, que le indica que seleccione el texto del control para que el usuario pueda reemplazarlo fácilmente. Si **GetDlgItemInt** no devuelve un error, el procedimiento puede llevar a cabo la propia tarea solicitada o enviar un mensaje a la ventana de propietario, lo que le indica que lleve a cabo la operación.
 
 ## <a name="initializing-a-dialog-box"></a>Inicializar un cuadro de diálogo
 
-Inicializa el cuadro de diálogo y su contenido mientras procesa el mensaje de [**\_ INITDIALOG de WM**](wm-initdialog.md) . La tarea más común consiste en inicializar los controles para reflejar la configuración actual del cuadro de diálogo. Otra tarea habitual es centrar un cuadro de diálogo en la pantalla o en su ventana propietaria. Una tarea útil para algunos cuadros de diálogo es establecer el foco de entrada en un control especificado, en lugar de aceptar el foco de entrada predeterminado.
+Inicialice el cuadro de diálogo y su contenido al procesar el [**mensaje \_ WM INITDIALOG.**](wm-initdialog.md) La tarea más común consiste en inicializar los controles para reflejar la configuración actual del cuadro de diálogo. Otra tarea común consiste en centrar un cuadro de diálogo en la pantalla o dentro de su ventana de propietario. Una tarea útil para algunos cuadros de diálogo es establecer el foco de entrada en un control especificado en lugar de aceptar el foco de entrada predeterminado.
 
-En el ejemplo siguiente, el procedimiento del cuadro de diálogo centra el cuadro de diálogo y establece el foco de entrada al procesar el mensaje de [**\_ INITDIALOG de WM**](wm-initdialog.md) . Para centrar el cuadro de diálogo, el procedimiento recupera los rectángulos de ventana para el cuadro de diálogo y la ventana propietaria y calcula una nueva posición para el cuadro de diálogo. Para establecer el foco de entrada, el procedimiento comprueba el parámetro *wParam* para determinar el identificador del foco de entrada predeterminado.
+En el ejemplo siguiente, el procedimiento del cuadro de diálogo centra el cuadro de diálogo y establece el foco de entrada al procesar el [**mensaje \_ WM INITDIALOG.**](wm-initdialog.md) Para centrar el cuadro de diálogo, el procedimiento recupera los rectángulos de ventana para el cuadro de diálogo y la ventana de propietario y calcula una nueva posición para el cuadro de diálogo. Para establecer el foco de entrada, el procedimiento comprueba el *parámetro wParam* para determinar el identificador del foco de entrada predeterminado.
 
 
 ```
@@ -304,19 +304,19 @@ case WM_INITDIALOG:
 
 
 
-En las instrucciones anteriores, el procedimiento usa la función [**GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent) para recuperar el identificador de la ventana propietaria de un cuadro de diálogo. La función devuelve el identificador de la ventana propietaria a los cuadros de diálogo y el identificador de la ventana primaria a las ventanas secundarias. Dado que una aplicación puede crear un cuadro de diálogo que no tiene ningún propietario, el procedimiento comprueba el identificador devuelto y usa la función [**GetDesktopWindow**](/windows/desktop/api/winuser/nf-winuser-getdesktopwindow) para recuperar el identificador de la ventana del escritorio, si es necesario. Después de calcular la nueva posición, el procedimiento usa la función [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) para mover el cuadro de diálogo, especificando el \_ valor superior de HWND para asegurarse de que el cuadro de diálogo permanece en la parte superior de la ventana propietaria.
+En las instrucciones anteriores, el procedimiento usa la función [**GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent) para recuperar el identificador de ventana de propietario en un cuadro de diálogo. La función devuelve el identificador de la ventana de propietario a los cuadros de diálogo y el identificador de la ventana primaria a las ventanas secundarias. Dado que una aplicación puede crear un cuadro de diálogo que no tiene propietario, el procedimiento comprueba el identificador devuelto y usa la función [**GetDesktopWindow**](/windows/desktop/api/winuser/nf-winuser-getdesktopwindow) para recuperar el identificador de ventana de escritorio, si es necesario. Después de calcular la nueva posición, el procedimiento usa la función [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) para mover el cuadro de diálogo, especificando el valor HWND TOP para asegurarse de que el cuadro de diálogo permanece en la parte superior de la \_ ventana del propietario.
 
-Antes de establecer el foco de entrada, el procedimiento comprueba el identificador del control del foco de entrada predeterminado. El sistema pasa el identificador de ventana del foco de entrada predeterminado en el parámetro *wParam* . La función [**GetDlgCtrlID**](/windows/desktop/api/Winuser/nf-winuser-getdlgctrlid) devuelve el identificador del control identificado por el identificador de la ventana. Si el identificador no coincide con el identificador correcto, el procedimiento utiliza la función [**SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) para establecer el foco de entrada. La función [**GetDlgItem**](/windows/desktop/api/Winuser/nf-winuser-getdlgitem) es necesaria para recuperar el identificador de ventana del control deseado.
+Antes de establecer el foco de entrada, el procedimiento comprueba el identificador de control del foco de entrada predeterminado. El sistema pasa el identificador de ventana del foco de entrada predeterminado en el *parámetro wParam.* La [**función GetDlgCtrlID**](/windows/desktop/api/Winuser/nf-winuser-getdlgctrlid) devuelve el identificador del control identificado por el identificador de ventana. Si el identificador no coincide con el identificador correcto, el procedimiento usa la [**función SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) para establecer el foco de entrada. La [**función GetDlgItem**](/windows/desktop/api/Winuser/nf-winuser-getdlgitem) es necesaria para recuperar el identificador de ventana del control deseado.
 
-## <a name="creating-a-template-in-memory"></a>Crear una plantilla en memoria
+## <a name="creating-a-template-in-memory"></a>Creación de una plantilla en memoria
 
-A veces, las aplicaciones adaptan o modifican el contenido de los cuadros de diálogo en función del estado actual de los datos que se están procesando. En tales casos, no es práctico proporcionar todas las plantillas de cuadro de diálogo posibles como recursos en el archivo ejecutable de la aplicación. Pero la creación de plantillas en memoria ofrece a la aplicación más flexibilidad para adaptarse a cualquier circunstancia.
+Las aplicaciones a veces adaptan o modifican el contenido de los cuadros de diálogo en función del estado actual de los datos que se procesan. En tales casos, no es práctico proporcionar todas las plantillas de cuadro de diálogo posibles como recursos en el archivo ejecutable de la aplicación. Pero la creación de plantillas en memoria proporciona a la aplicación más flexibilidad para adaptarse a cualquier circunstancia.
 
-En el ejemplo siguiente, la aplicación crea una plantilla en memoria para un cuadro de diálogo modal que contiene un mensaje y botones **Aceptar** y **ayuda** .
+En el ejemplo siguiente, la aplicación crea una plantilla en memoria para un cuadro de diálogo modal que contiene un mensaje y **botones Aceptar** **y** Ayuda.
 
-En una plantilla de cuadro de diálogo, todas las cadenas de caracteres, como el cuadro de diálogo y los títulos de los botones, deben ser cadenas Unicode. En este ejemplo se usa la función [**MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) para generar estas cadenas Unicode.
+En una plantilla de diálogo, todas las cadenas de caracteres, como el cuadro de diálogo y los títulos de botón, deben ser cadenas Unicode. En este ejemplo se [**usa la función MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) para generar estas cadenas Unicode.
 
-Las estructuras [**DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) de una plantilla de cuadro de diálogo se deben alinear en los límites **DWORD** . Para alinear estas estructuras, en este ejemplo se usa una rutina auxiliar que toma un puntero de entrada y devuelve el puntero más cercano que está alineado en un límite **DWORD** .
+Las [**estructuras DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) de una plantilla de diálogo deben alinearse en los **límites DWORD.** Para alinear estas estructuras, en este ejemplo se usa una rutina auxiliar que toma un puntero de entrada y devuelve el puntero más cercano que se alinea en un **límite DWORD.**
 
 
 ```
@@ -433,6 +433,6 @@ LRESULT DisplayMyMessage(HINSTANCE hinst, HWND hwndOwner, LPSTR lpszMessage)
 
 
 
- 
+ 
 
- 
+ 
