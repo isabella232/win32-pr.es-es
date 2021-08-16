@@ -24,7 +24,7 @@ A todos los atributos se les asigna un idioma de la lista de idiomas del archivo
 
 Puede agregar atributos con cualquier nombre que quiera. Sin embargo, el uso de nombres de atributo que no son nombres estándar admitidos por el SDK de formato multimedia de Windows puede dificultar la de descubrimiento de los metadatos para los usuarios. La mayoría de las aplicaciones de reproducción multimedia comprobarán si hay valores estándar. Para obtener más información, vea [Metadatos personalizados.](custom-metadata.md)
 
-No puede usar el número de secuencia 0xFFFF agregar un atributo globalmente. Debe asignar cada atributo a un número de flujo específico o al flujo 0 para los atributos de nivel de archivo.
+No puede usar el número de secuencia 0xFFFF agregar un atributo globalmente. Debe asignar cada atributo a un número de flujo específico o flujo 0 para los atributos de nivel de archivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

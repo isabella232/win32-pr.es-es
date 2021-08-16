@@ -31,7 +31,7 @@ g \_ wszWMMediaClassSecondaryID
 
 **GUID DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo debe establecerse en uno de los valores de la tabla siguiente.
 
@@ -60,7 +60,7 @@ Este atributo debe establecerse en uno de los valores de la tabla siguiente.
 
 Al especificar un identificador de clase secundaria, el archivo también debe contener un atributo de identificador de clase principal.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

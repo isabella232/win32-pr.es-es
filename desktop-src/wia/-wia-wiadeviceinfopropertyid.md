@@ -15,7 +15,7 @@ ms.locfileid: "118207579"
 
 Las propiedades de información del dispositivo son propiedades que describen la instalación e instalación del dispositivo. Estas propiedades están disponibles a través de la [**interfaz IWiaDevMgr**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadevmgr) y también a través del elemento raíz.
 
-Las propiedades de información del dispositivo tienen el prefijo "WIA DIP" (propiedad de información del dispositivo) cuando se usa en C/C++, y se proporcionan mediante Windows adquisición de \_ \_ imágenes (WIA). Con fines de scripting, estas constantes usan el prefijo "DeviceInfo" y forman parte del tipo enumerado WiaDeviceInfoPropertyId. Consulte [**Constantes de propiedades de información del dispositivo para**](-wia-wiadeviceinfoprop.md) obtener más información.
+Las propiedades de información del dispositivo tienen como prefijo "WIA DIP" (propiedad de información del dispositivo) cuando se usan en C/C++, y se proporcionan mediante Windows Adquisición de \_ \_ imágenes (WIA). Con fines de scripting, estas constantes usan el prefijo "DeviceInfo" y forman parte del tipo enumerado WiaDeviceInfoPropertyId. Consulte [**Constantes de propiedades de información del dispositivo para**](-wia-wiadeviceinfoprop.md) obtener más información.
 
  
 

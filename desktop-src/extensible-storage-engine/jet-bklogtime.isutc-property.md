@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_BKLOGTIME. Propiedad IsUtc'
+description: 'Más información sobre: JET_BKLOGTIME. Propiedad IsUtc'
 title: JET_BKLOGTIME. Propiedad IsUtc
 TOCTitle: 'IsUtc property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_BKLOGTIME.IsUtc
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 414caa48ddfdd492389f63739bfbf23bfc7d1f4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03631ae43c65d2bfc8e5afc7b18b9654d122709d5eb2e67e060990579a158f5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487608"
 ---
 # <a name="jet_bklogtimeisutc-property"></a>JET_BKLOGTIME. Propiedad IsUtc
 
-Obtiene un valor que indica si la JET_BKLOGTIME está en UTC.
+Obtiene un valor que indica si el JET_BKLOGTIME está en UTC.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,14 +58,14 @@ public bool IsUtc { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_BKLOGTIME](./jet-bklogtime-structure2.md)
+[JET_BKLOGTIME estructura](./jet-bklogtime-structure2.md)
 
-[Miembros de JET_BKLOGTIME](./jet-bklogtime-members.md)
+[JET_BKLOGTIME miembros](./jet-bklogtime-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

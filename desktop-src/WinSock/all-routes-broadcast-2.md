@@ -1,21 +1,21 @@
 ---
-description: Una difusión general a través de Internet se logra estableciendo los \_ campos SA netnum y SA \_ nodenum en binarios (1).
+description: Una difusión general a través de Internet se logra estableciendo los campos sa netnum y sa nodenum en \_ \_ binarios (1).
 ms.assetid: a56f3059-d6e5-42eb-8ba2-16071fffafa5
-title: Difundir todas las rutas
+title: Difusión de todas las rutas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15830ad4f82a3cc5d93e84762c8c17ed0cfd85bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0a5f0ba1e900dd390610a3bd3af2f779d523ae4a08973596e7da6b8331acc31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322727"
 ---
-# <a name="all-routes-broadcast"></a>Difundir todas las rutas
+# <a name="all-routes-broadcast"></a>Difusión de todas las rutas
 
-Una difusión general a través de Internet se logra estableciendo los campos **SA \_ netnum** y **SA \_ nodenum** en binarios (1). El proveedor de servicios traduce esta solicitud a un paquete de tipo 20, que los enrutadores IPX reconocen y reenvían. El paquete visita todas las subredes y puede duplicarse varias veces. Los receptores deben controlar varias copias duplicadas del datagrama.
+Una difusión general a través de Internet se logra estableciendo los campos **sa \_ netnum** y **sa \_ nodenum** en binarios (1). El proveedor de servicios traduce esta solicitud en un paquete de tipo 20, que los enrutadores IPX reconocen y reenvía. El paquete visita todas las subredes y se puede duplicar varias veces. Los receptores deben controlar varias copias duplicadas del datagrama.
 
-El uso de este tipo de difusión no es popular entre los administradores de red, por lo que su uso debe ser extremadamente limitado. Muchos enrutadores deshabilitan este tipo de difusión y dejan las partes de la subred invisibles para el paquete.
+El uso de este tipo de difusión no es popular entre los administradores de red, por lo que su uso debe ser muy limitado. Muchos enrutadores deshabilitan este tipo de difusión, dejando partes de la subred invisibles para el paquete.
 
  
 

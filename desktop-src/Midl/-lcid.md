@@ -27,7 +27,7 @@ La **opción del compilador /lcid** MIDL permite usar caracteres internacionales
 midl /lcid localeID
 ```
 
-## <a name="switch-options"></a>Opciones de cambio
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
@@ -40,10 +40,10 @@ Especifica el identificador de configuración regional de 32 bits que se usa Win
 
 ## <a name="remarks"></a>Comentarios
 
-Dentro de los archivos de entrada, puede usar comentarios localizados, cadenas, cadenas de ayuda e identificadores. En concreto, el **modificador /lcid** proporciona compatibilidad completa con DBCS para representar idiomas asiáticos como japonés, chino y coreano.
+Dentro de los archivos de entrada, puede usar comentarios localizados, cadenas, cadenas de ayuda e identificadores. En concreto, el **modificador /lcid** proporciona compatibilidad completa con DBCS, para representar idiomas asiáticos como japonés, chino y coreano.
 
 > [!Note]  
-> El **modificador /lcid** está disponible con MIDL versión 3.01.75 y posteriores.
+> El **modificador /lcid** está disponible con midl versión 3.01.75 y versiones posteriores.
 
  
 

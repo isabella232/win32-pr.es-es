@@ -13,7 +13,7 @@ ms.locfileid: "118463920"
 ---
 # <a name="supplemental"></a>Suplemental
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información aquí proporcionada.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,7 +21,7 @@ ms.locfileid: "118463920"
 
 | Tema                                                                                  | Descripción                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [System.Supplemental.AlbumID](https://www.bing.com/search?q=System.Supplemental.AlbumID)<br/>       | Contiene los identificadores de los discos de los que es miembro el elemento. Se puede usar junto con el elemento Album en las API de Content Indexer para notificar a otras aplicaciones los discos de imágenes creados por el usuario o las aplicaciones que ya se han creado.<br/> |
+| [System.Supplemental.AlbumID](https://www.bing.com/search?q=System.Supplemental.AlbumID)<br/>       | Contiene los identificadores de los álbumes de los que es miembro el elemento. Se puede usar junto con el elemento Album en las API de Content Indexer para notificar a otras aplicaciones los álbumes de imágenes creados por el usuario o las aplicaciones que ya se han creado.<br/> |
 | [System.Supplemental.ResourceId](https://www.bing.com/search?q=System.Supplemental.ResourceId)<br/> | Contiene el identificador del elemento en el servicio de sincronización remota. Se usa para comparar un archivo del sistema con los que están disponibles en la nube.<br/>                                                                                               |
 
 

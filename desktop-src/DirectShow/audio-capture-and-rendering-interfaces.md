@@ -1,17 +1,17 @@
 ---
-description: Interfaces de representación y captura de audio
+description: Interfaces de captura y representación de audio
 ms.assetid: 79b42ffd-703a-4a7c-bb2d-5cfc2fbeb16c
-title: Interfaces de representación y captura de audio
+title: Interfaces de captura y representación de audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f941c1220f1adc06a686d702e9db21095a8cb7e6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a3ffdf586ec8566abddadcb0b7109680664963a63071472a3ac7aa895981e643
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824255"
 ---
-# <a name="audio-capture-and-rendering-interfaces"></a>Interfaces de representación y captura de audio
+# <a name="audio-capture-and-rendering-interfaces"></a>Interfaces de captura y representación de audio
 
 Estas interfaces admiten la captura y representación de audio en DirectShow
 
@@ -19,14 +19,14 @@ Estas interfaces admiten la captura y representación de audio en DirectShow
 
 | Interfaz                                              | Descripción                                                                                                                                               |
 |--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IAMAudioInputMixer**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer)       | Obtener acceso a las entradas analógicas de la tarjeta de sonido del sistema y ajustar características, como mono o estéreo, nivel de combinación, nivel de pan, sonoridad, agudos y graves. |
-| [**IAMAudioRendererStats**](/windows/desktop/api/Strmif/nn-strmif-iamaudiorendererstats) | Obtenga información estadística sobre el rendimiento de renderering de audio.                                                                                          |
-| [**IAMBufferNegotiation**](/windows/desktop/api/Strmif/nn-strmif-iambuffernegotiation)   | Controlan cómo el filtro de captura de audio asigna los búferes.                                                                                                   |
-| [**IAMClockSlave**](/windows/desktop/api/Strmif/nn-strmif-iamclockslave)                 | Controlar la tolerancia de un representador de audio cuando coincide con las tarifas con otro reloj.                                                                      |
-| [**IAMDirectSound**](/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound)               | Permite a una aplicación especificar qué ventana tiene el foco para controlar la reproducción de audio de DirectSound.                                                      |
-| [**IAMResourceControl**](/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol)       | Conserve un recurso de dispositivo de audio antes de que sea necesario.                                                                                                        |
-| [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig)             | Consulta y establece el formato de salida del filtro de captura.                                                                                                         |
-| [**IBasicAudio**](/windows/desktop/api/Control/nn-control-ibasicaudio)                     | Establezca el volumen y el equilibrio de salida de audio.                                                                                                                      |
+| [**IAMAudioInputMixer**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer)       | Acceda a las entradas análogas en la tarjeta de sonido del sistema y ajuste características, como mono o estéreo, nivel de mezcla, nivel de panorámica, sonoridad, triple y sonido. |
+| [**IAMAudioRendererStats**](/windows/desktop/api/Strmif/nn-strmif-iamaudiorendererstats) | Obtenga información estadística de rendimiento sobre el representador de audio.                                                                                          |
+| [**IAMBufferNegotiation**](/windows/desktop/api/Strmif/nn-strmif-iambuffernegotiation)   | Controlar cómo el filtro de captura de audio asigna búferes.                                                                                                   |
+| [**IAMClockLockLockE**](/windows/desktop/api/Strmif/nn-strmif-iamclockslave)                 | Controlar la tolerancia de un representador de audio cuando coincide con las velocidades con otro reloj.                                                                      |
+| [**IAMDirect Sound**](/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound)               | Permite a una aplicación especificar qué ventana tiene el foco para controlar la reproducción de audio Direct Sound.                                                      |
+| [**IAMResourceControl**](/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol)       | Mantenga un recurso de dispositivo de audio antes de que sea necesario.                                                                                                        |
+| [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig)             | Consulte y establezca el formato de salida del filtro de captura.                                                                                                         |
+| [**IBasicAudio**](/windows/desktop/api/Control/nn-control-ibasicaudio)                     | Establecer el volumen y el equilibrio de salida de audio.                                                                                                                      |
 
 
 

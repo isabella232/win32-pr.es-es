@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PGN_HOTITEMCHANGE (commctrl. h)
-description: Notifica a la ventana primaria de un control de paginación que el elemento activo (resaltado) ha cambiado. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: PGN_HOTITEMCHANGE mensaje (Commctrl.h)
+description: Notifica a la ventana primaria de un control de paginación que el elemento de acceso activa (resaltado) ha cambiado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 0f59677c-0251-49f4-b909-6fac6d93f354
 keywords:
-- PGN_HOTITEMCHANGE controles de mensajes de Windows
+- PGN_HOTITEMCHANGE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 573f3dd93a6e4b0b3db6682d36804416d6f6f1e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6510eeb648ad883d04ccc0baf916223bb5209d110c2237ef3bf618d241c2ede
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830139"
 ---
-# <a name="pgn_hotitemchange-message"></a>PGN \_ HOTITEMCHANGE
+# <a name="pgn_hotitemchange-message"></a>Mensaje \_ HOTITEMCHANGE de PGN
 
-Notifica a la ventana primaria de un control de paginación que el elemento activo (resaltado) ha cambiado. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de paginación que el elemento de acceso activa (resaltado) ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,18 +41,18 @@ PGN_HOTITEMCHANGE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMPGHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmpghotitem) que contiene información sobre este código de notificación.
+Puntero a una [**estructura NMPGHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmpghotitem) que contiene información sobre este código de notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero para resaltar el elemento o un valor distinto de cero para evitar el resaltado.
+Devuelve cero para resaltar el elemento o distinto de cero para evitar el resaltado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -60,11 +60,11 @@ Devuelve cero para resaltar el elemento o un valor distinto de cero para evitar 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

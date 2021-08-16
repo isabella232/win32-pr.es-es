@@ -1,7 +1,7 @@
 ---
-description: 'El método Apply aplica los valores de la página de propiedades actual al objeto asociado a la página de propiedades. Este método implementa el método IPropertyPage:: Apply.'
+description: El método Apply aplica los valores de página de propiedades actuales al objeto asociado a la página de propiedades. Este método implementa el método IPropertyPage::Apply.
 ms.assetid: 9fe759d1-2b46-4489-b7b8-b5a35330091d
-title: Método CBasePropertyPage. Apply (Cprop. h)
+title: Método CBasePropertyPage.Apply (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 21d1208979cca167b059cb720c492ac51c362c39
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9350aa7aaa4e2bfdcb72385d26b09b9d7a9bdf33deb05e273b0663485da1a5bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823248"
 ---
-# <a name="cbasepropertypageapply-method"></a>CBasePropertyPage. Apply (método)
+# <a name="cbasepropertypageapply-method"></a>CBasePropertyPage.Apply (método)
 
-El `Apply` método aplica los valores actuales de la página de propiedades al objeto asociado a la página de propiedades. Este método implementa el método **IPropertyPage:: Apply** .
+El `Apply` método aplica los valores de página de propiedades actuales al objeto asociado a la página de propiedades. Este método implementa el **método IPropertyPage::Apply.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                  | Descripción                    |
 |----------------------------------------------------------------------------------------------|--------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Correcto.<br/>            |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Error inesperado.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Correcto.<br/>            |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Error inesperado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la marca [**CBasePropertyPage:: m \_ BDirty**](cbasepropertypage-m-bdirty.md) es **true**, este método llama al método [**CBasePropertyPage:: OnApplyChanges**](cbasepropertypage-onapplychanges.md) . Invalide **OnApplyChanges** para aplicar los cambios al objeto.
+Si la [**marca CBasePropertyPage::m \_ bDirty**](cbasepropertypage-m-bdirty.md) es **TRUE,** este método llama al método [**CBasePropertyPage::OnApplyChanges.**](cbasepropertypage-onapplychanges.md) Invalide **OnApplyChanges** para aplicar los cambios al objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,16 +65,16 @@ Si la marca [**CBasePropertyPage:: m \_ BDirty**](cbasepropertypage-m-bdirty.md)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

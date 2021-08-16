@@ -1,21 +1,21 @@
 ---
-description: AppSequence información contenida en WS-Discovery anuncios y mensajes de respuesta (Hello, ProbeMatches y ResolveMatches).
+description: Información de AppSequence contenida en WS-Discovery mensajes de anuncio y respuesta (Hello, ProbeMatches y ResolveMatches).
 ms.assetid: f54eaa09-7ce8-4948-a0c5-edf2d054f6d5
 title: Reglas de validación de AppSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ea44c1ee2d157608ddd1756e71d7183f310df87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73f2acec9d9d3858b5d68b0240499d95dba059ac1bcac745f1dc69bebc2056a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738657"
 ---
 # <a name="appsequence-validation-rules"></a>Reglas de validación de AppSequence
 
-AppSequence información contenida en WS-Discovery anuncios y mensajes de respuesta ([Hello](hello-message.md), [ProbeMatches](probematches-message.md)y [ResolveMatches](resolvematches-message.md)). WSDAPI procesa y valida esta información antes de pasar estos mensajes a los componentes situados por encima de la pila (como el explorador de red o una aplicación que llama a WSDAPI).
+Información de AppSequence contenida en WS-Discovery de anuncio y respuesta[(Hello](hello-message.md), [ProbeMatches](probematches-message.md)y [ResolveMatches).](resolvematches-message.md) WSDAPI procesa y valida esta información antes de que estos mensajes se pasen a los componentes situados encima de la pila (como Explorador de red o una aplicación que llama a WSDAPI).
 
-En el código XML siguiente se muestra un elemento AppSequence de ejemplo. El prefijo WSD hace referencia al espacio de nombres `https://schemas.xmlsoap.org/ws/2005/04/discovery` .
+El siguiente XML muestra un elemento AppSequence de ejemplo. El prefijo wsd hace referencia al espacio de nombres `https://schemas.xmlsoap.org/ws/2005/04/discovery` .
 
 ``` syntax
 <wsd:AppSequence InstanceId="2"
@@ -24,17 +24,17 @@ En el código XML siguiente se muestra un elemento AppSequence de ejemplo. El pr
 </wsd:AppSequence>
 ```
 
-WSDAPI omite los mensajes obsoletos. Para cada dispositivo (identificado de forma exclusiva por la dirección del punto de conexión en el cuerpo de SOAP), WSDAPI omite los mensajes con un MessageNumber AppSequence inferior al último mensaje que se ha observado.
+WSDAPI omite los mensajes obsoletos. Para cada dispositivo (identificado de forma única por la dirección del punto de conexión en el cuerpo SOAP), WSDAPI omite los mensajes con un valor MessageNumber de AppSequence inferior al último mensaje visto.
 
-WSDAPI omite los anuncios XAddr obsoletos. Si el InstanceId AppSequence es inferior al último InstanceId detectado, WSDAPI omite el XAddrs anunciado en el cuerpo de SOAP. Además, si InstanceId es el mismo que el anterior pero el MetadataVersion es inferior al último MetadataVersion, WSDAPI omite XAddrs.
+WSDAPI omite los anuncios obsoletos de XAddr. Si appSequence InstanceId es inferior al último InstanceId visto, WSDAPI omite los XAddrs anunciados en el cuerpo SOAP. Además, si instanceId es el mismo que el anterior, pero MetadataVersion es menor que el último MetadataVersion, WSDAPI omite los XAddrs.
 
-WSDAPI omite los mensajes duplicados de WS-Discovery. Si se envían dos mensajes de WS-Discovery idénticos a WSDAPI, solo se procesará el primero recibido. Normalmente solo es pertinente para las aplicaciones que llaman directamente a las interfaces [**IWSDiscoveryPublisher**](/windows/desktop/api/WsdDisco/nn-wsddisco-iwsdiscoverypublisher) o [**IWSDiscoveryProvider**](/windows/desktop/api/WsdDisco/nn-wsddisco-iwsdiscoveryprovider) .
+WSDAPI omite los mensajes WS-Discovery duplicados. Si dos mensajes WS-Discovery idénticos se envían a WSDAPI, solo se procesarán los primeros recibidos. Normalmente, esto solo es relevante para las aplicaciones que llaman directamente a las interfaces [**IWSDiscoveryPublisher**](/windows/desktop/api/WsdDisco/nn-wsddisco-iwsdiscoverypublisher) [**o IWSDiscoveryProvider.**](/windows/desktop/api/WsdDisco/nn-wsddisco-iwsdiscoveryprovider)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Patrones de mensajes de intercambio de metadatos y detección](discovery-and-metadata-exchange-message-patterns.md)
+[Patrones de mensajes de Exchange de detección y metadatos](discovery-and-metadata-exchange-message-patterns.md)
 </dt> </dl>
 
  

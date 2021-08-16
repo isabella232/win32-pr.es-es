@@ -1,5 +1,5 @@
 ---
-description: 'Método Shell.TrayProperties: muestra la barra de tareas y el cuadro de diálogo Propiedades del menú Inicio . Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar Propiedades.'
+description: 'Método Shell.TrayProperties: muestra el cuadro de diálogo Propiedades de la barra de tareas y del menú Inicio . Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar Propiedades.'
 ms.assetid: 0d82d847-9e6f-461e-b938-fe8fd49a636f
 title: Método Shell.TrayProperties (Shldisp.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118452831"
 ---
 # <a name="shelltrayproperties-method"></a>Método Shell.TrayProperties
 
-Muestra el cuadro **de diálogo Propiedades de la barra de tareas y del menú** Inicio . Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar **Propiedades**.
+Muestra el cuadro **de diálogo Propiedades de la barra de** tareas y del menú Inicio . Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar **Propiedades**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -103,7 +103,7 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

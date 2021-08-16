@@ -21,7 +21,7 @@ Las enumeraciones siguientes se usan al trabajar con enclaves que se usan para c
 
 | Tema                                                                                    | Descripción                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DIRECTIVA DE \_ IDENTIDAD DE SELLADO DE \_ \_ ENCLAVE**](/windows/desktop/api/ntenclv/ne-ntenclv-enclave_sealing_identity_policy)<br/> | Define valores que especifican cómo debe estar relacionado otro enclave con el enclave que llama a [**EnclaveSealData**](/windows/desktop/api/winenclaveapi/nf-winenclaveapi-enclavesealdata) para que el enclave desenlace los datos.<br/> |
+| [**DIRECTIVA \_ DE IDENTIDAD DE SELLADO DE \_ \_ ENCLAVE**](/windows/desktop/api/ntenclv/ne-ntenclv-enclave_sealing_identity_policy)<br/> | Define valores que especifican cómo debe estar relacionado otro enclave con el enclave que llama a [**EnclaveSealData**](/windows/desktop/api/winenclaveapi/nf-winenclaveapi-enclavesealdata) para que el enclave desenlace los datos.<br/> |
 
 
 

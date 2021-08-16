@@ -65,16 +65,16 @@ Define la tarea que realiza el servicio Programador de tareas trabajo.
 | [**Datos**](taskschedulerschema-data-tasktype-element.md)                         | [**Datatype**](taskschedulerschema-datatype-complextype.md)                         | Especifica los datos de suma asociados a la tarea, pero el servicio de Programador de tareas de otro modo.<br/>         |
 | [**Principals**](taskschedulerschema-principals-tasktype-element.md)             | [**principalsType**](taskschedulerschema-principalstype-complextype.md)             | Especifica los contextos de seguridad que se pueden usar para ejecutar la tarea.<br/>                                                        |
 | [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica información administrativa sobre la tarea, como el autor de la tarea y la fecha en que se registra la tarea.<br/> |
-| [**Configuración**](taskschedulerschema-settings-tasktype-element.md)                 | [**settingsType**](taskschedulerschema-settingstype-complextype.md)                 | Especifica la configuración que el Programador de tareas utiliza para realizar la tarea.<br/>                                                 |
+| [**Configuración**](taskschedulerschema-settings-tasktype-element.md)                 | [**settingsType**](taskschedulerschema-settingstype-complextype.md)                 | Especifica la configuración que el Programador de tareas usa para realizar la tarea.<br/>                                                 |
 | [**Desencadenadores**](taskschedulerschema-triggers-tasktype-element.md)                 | [**triggersType**](taskschedulerschema-triggerstype-complextype.md)                 | Especifica los desencadenadores que inician la tarea.<br/>                                                                              |
 
 
 
 ## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea [**ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
+Para el desarrollo de C++, [**vea ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition).
 
-Para el desarrollo de scripts, vea [**TaskDefinition**](taskdefinition.md).
+Para el desarrollo de scripts, [**vea TaskDefinition**](taskdefinition.md).
 
 ## <a name="requirements"></a>Requisitos
 

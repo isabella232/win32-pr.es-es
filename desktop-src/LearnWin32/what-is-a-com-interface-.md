@@ -13,7 +13,7 @@ ms.locfileid: "118387617"
 ---
 # <a name="what-is-a-com-interface"></a>¿Qué es una interfaz COM?
 
-Si conoce C# o Java, las interfaces deben ser un concepto conocido. Una *interfaz* define un conjunto de métodos que un objeto puede admitir, sin dictar nada sobre la implementación. La interfaz marca un límite claro entre el código que llama a un método y el código que implementa el método . En términos de informática, el autor de la llamada *se desacopla* de la implementación.
+Si conoce C# o Java, las interfaces deben ser un concepto conocido. Una *interfaz* define un conjunto de métodos que un objeto puede admitir, sin dictar nada sobre la implementación. La interfaz marca un límite claro entre el código que llama a un método y el código que implementa el método . En términos de informática, el autor de la llamada se *desacopla* de la implementación.
 
 ![ilustración que muestra el límite de interfaz entre un objeto y una aplicación](images/com01.png)
 
@@ -39,7 +39,7 @@ IDrawable draw;
 draw.Draw();
 ```
 
-En su lugar, la biblioteca de gráficos proporciona objetos *que implementan* la `IDrawable` interfaz . Por ejemplo, la biblioteca podría proporcionar un objeto de forma para dibujar formas y un objeto de mapa de bits para dibujar imágenes. En C++, esto se hace heredando de una clase base abstracta común:
+En su lugar, la biblioteca de gráficos proporciona objetos que *implementan* la `IDrawable` interfaz . Por ejemplo, la biblioteca podría proporcionar un objeto de forma para dibujar formas y un objeto de mapa de bits para dibujar imágenes. En C++, esto se hace heredando de una clase base abstracta común:
 
 ```C++
 class Shape : public IDrawable
@@ -57,7 +57,7 @@ public:
 
 Las `Shape` clases y definen dos tipos `Bitmap` distintos de objeto drawable. Cada clase hereda de `IDrawable` y proporciona su propia implementación del método `Draw` . Naturalmente, las dos implementaciones pueden diferir considerablemente. Por ejemplo, el método podría rasterizar un conjunto de líneas, mientras que podría `Shape::Draw` `Bitmap::Draw` cortar una matriz de píxeles.
 
-Un programa que usa esta biblioteca de gráficos manipularía objetos y a través de `Shape` `Bitmap` punteros, en lugar de usar `IDrawable` `Shape` `Bitmap` punteros o directamente.
+Un programa que usa esta biblioteca de gráficos manipularía objetos y a través de `Shape` punteros, en lugar de usar `Bitmap` `IDrawable` `Shape` `Bitmap` punteros o directamente.
 
 ```C++
 IDrawable *pDrawable = CreateTriangleShape();
@@ -80,7 +80,7 @@ void DrawSomeShapes(IDrawable **drawableArray, size_t count)
 }
 ```
 
-Un punto clave sobre COM es que el código de llamada nunca ve el tipo de la clase derivada. En otras palabras, nunca declararía una variable de tipo `Shape` o `Bitmap` en el código. Todas las operaciones en formas y mapas de bits se realizan mediante `IDrawable` punteros. De esta manera, COM mantiene una separación estricta entre la interfaz y la implementación. Los detalles de implementación de las clases y pueden cambiar(por ejemplo, para corregir errores o agregar nuevas funcionalidades) sin cambios `Shape` en el código de `Bitmap` llamada.
+Un punto clave sobre COM es que el código que realiza la llamada nunca ve el tipo de la clase derivada. En otras palabras, nunca declararía una variable de tipo `Shape` o `Bitmap` en el código. Todas las operaciones en formas y mapas de bits se realizan mediante `IDrawable` punteros. De esta manera, COM mantiene una separación estricta entre la interfaz y la implementación. Los detalles de implementación de las clases y pueden cambiar(por ejemplo, para corregir errores o agregar nuevas funcionalidades) sin cambios `Shape` en el código de `Bitmap` llamada.
 
 En una implementación de C++, las interfaces se declaran mediante una clase o estructura.
 
@@ -123,7 +123,7 @@ En este ejemplo, la `Bitmap` clase implementa `ISerializable` . El programa podr
 
 ![ilustración que muestra la herencia de interfaz, con las clases de forma y mapa de bits que apuntan a idrawable, pero solo mapa de bits que apunta a iserializable](images/com02.png)
 
-En esta sección se ha examinado la base conceptual de las interfaces, pero hasta ahora no hemos visto código COM real. Comenzaremos por lo primero que cualquier aplicación COM debe hacer: Inicializar la biblioteca COM.
+En esta sección se ha examinado la base conceptual de las interfaces, pero hasta ahora no hemos visto código COM real. Comenzaremos con lo primero que debe hacer cualquier aplicación COM: Inicializar la biblioteca COM.
 
 ## <a name="next"></a>Siguientes
 

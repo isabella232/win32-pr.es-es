@@ -32,7 +32,7 @@ La prioridad actual (de un proceso, un trabajo de impresión, y así sucesivamen
 | CN                | Prioridad                             |
 | Ldap-Display-Name | priority                             |
 | Size              | 4 bytes                              |
-| Actualizar privilegios  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.231               |
 | System-Id-Guid    | 281416c7-1968-11d0-a28f-00aa003049e2 |

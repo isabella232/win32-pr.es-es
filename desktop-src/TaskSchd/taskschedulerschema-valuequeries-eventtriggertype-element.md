@@ -22,7 +22,7 @@ ms.locfileid: "118355348"
 ---
 # <a name="valuequeries-eventtriggertype-element"></a>Elemento ValueQueries (eventTriggerType)
 
-Contiene una secuencia de elementos que contienen un nombre y un valor de consulta XPath. Las consultas se aplican a un evento devuelto desde la suscripción de eventos especificada en el [**elemento**](taskschedulerschema-subscription-eventtriggertype-element.md) Subscription. El nombre del valor de consulta XPath se puede usar como variable en la sección de acción de una tarea.
+Contiene una secuencia de elementos que contienen un nombre y un valor de consulta XPath. Las consultas se aplican a un evento devuelto desde la suscripción de eventos especificada en el [**elemento Subscription.**](taskschedulerschema-subscription-eventtriggertype-element.md) El nombre del valor de consulta XPath se puede usar como variable en la sección de acción de una tarea.
 
 ``` syntax
 <xs:element name="ValueQueries"
@@ -47,11 +47,11 @@ El tipo complejo [**eventTriggerType**](taskschedulerschema-eventtriggertype-com
 
 Para el desarrollo de C++, [**vea Propiedad ValueQueries de IEventTrigger.**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_valuequeries)
 
-Para el desarrollo de scripts, [**vea EventTrigger.ValueQueries.**](eventtrigger-valuequeries.md)
+Para el desarrollo de scripts, [**consulte EventTrigger.ValueQueries**](eventtrigger-valuequeries.md).
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML para una tarea que especifica un desencadenador de eventos mediante este elemento, vea Ejemplo de desencadenador de [eventos (XML).](/previous-versions//aa446889(v=vs.85))
+Para obtener un ejemplo completo del XML de una tarea que especifica un desencadenador de eventos mediante este elemento, vea Ejemplo de desencadenador de [eventos (XML).](/previous-versions//aa446889(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 

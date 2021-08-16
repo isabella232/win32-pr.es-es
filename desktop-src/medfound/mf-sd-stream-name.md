@@ -21,9 +21,9 @@ Contiene el nombre de una secuencia.
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame [**a IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Para establecer este atributo, llame [**a IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -31,7 +31,7 @@ Para establecer este atributo, llame [**a IMFAttributes::SetString**](/windows/d
 
 ## <a name="remarks"></a>Comentarios
 
-El origen multimedia AVI establece este atributo si el archivo AVI contiene un fragmento "strn".
+El origen de medios AVI establece este atributo si el archivo AVI contiene un fragmento "strn".
 
 La constante GUID para este atributo se exporta desde mfuuid.lib.
 
@@ -41,7 +41,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
 | Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
@@ -54,7 +54,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos del descriptor de flujo](stream-descriptor-attributes.md)
+[Atributos de descriptor de flujo](stream-descriptor-attributes.md)
 </dt> </dl>
 
  

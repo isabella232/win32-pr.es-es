@@ -32,7 +32,7 @@ Profundidad del árbol de elementos para el destino de comprobación.
 [Directrices para el diseño de la interfaz de usuario de teclado](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
 </dt> <dt>
 
-[Windows Directrices de interacción de la experiencia del usuario: teclado](https://msdn.microsoft.com/library/bb545460.aspx#guidelines)
+[Windows Instrucciones de interacción de la experiencia del usuario: teclado](https://msdn.microsoft.com/library/bb545460.aspx#guidelines)
 </dt> </dl>
 
  

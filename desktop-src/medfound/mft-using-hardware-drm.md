@@ -1,5 +1,5 @@
 ---
-description: Especifica si EL ELEMENTO IMFTransform usa DRM de hardware.
+description: Especifica si EL OBJETO IMFTransform usa DRM de hardware.
 title: MFT_USING_HARDWARE_DRM (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,7 +12,7 @@ ms.locfileid: "118473556"
 ---
 # <a name="mft_using_hardware_drm-attribute"></a>Atributo MFT \_ USING \_ HARDWARE \_ DRM
 
-Especifica si EL ELEMENTO IMFTransform usa DRM de hardware.
+Especifica si EL OBJETO IMFTransform usa DRM de hardware.
 
 ## <a name="data-type"></a>Tipo de datos
 

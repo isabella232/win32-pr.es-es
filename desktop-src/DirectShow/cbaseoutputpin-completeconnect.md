@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cd4bc52db99b88c4d6f16c549fbb558bb6423730
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9832ddc0a68936461f9fe9ee8a70a7da3227f93e9b0bc9f7328d4cc2f95c2f28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823675"
 ---
 # <a name="cbaseoutputpincompleteconnect-method"></a>Método CBaseOutputPin.CompleteConnect
 
@@ -45,7 +45,7 @@ virtual HRESULT CompleteConnect(
 *pReceivePin* 
 </dt> <dd>
 
-Puntero a la patilla de entrada.
+Puntero al pin de entrada.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Este método invalida el [**método CBasePin::CompleteConnect.**](cbasepin-compl
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

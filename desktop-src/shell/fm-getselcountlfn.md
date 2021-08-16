@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: d0815afc-5356-48a7-a90d-5f48dae6bee5
-ms.openlocfilehash: 1ec06c08775836a94b9ada6520ea7c5ea46b62f3
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: ff0884e1b80e4a5a7e6c295bd449c8e1f6d069ced6c988f584108318a98c6891
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094180"
 ---
 # <a name="fm_getselcountlfn-message"></a>Mensaje \_ FM GETSELCOUNTLFN
 
@@ -38,7 +38,7 @@ Enviado por una extensión del Administrador de archivos para recuperar el núme
 
 Devuelve el número de archivos seleccionados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo las extensiones que admiten nombres de archivo largos (por ejemplo, extensiones compatibles con la red) deben usar este mensaje.
 
@@ -46,7 +46,7 @@ Solo las extensiones que admiten nombres de archivo largos (por ejemplo, extensi
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |

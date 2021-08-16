@@ -20,7 +20,7 @@ ms.locfileid: "118211234"
 
 ## <a name="description"></a>Descripción
 
-Aunque no hay ningún cambio de comportamiento en la copia de seguridad y restauración, esta función está en desuso y no se actualizará. Rara vez se usó y su funcionalidad se ha reemplazado por la nueva Historial de archivos característica. Se enviará en Windows 8 y los aficionados que actualizaron de Windows 7 a Windows 8 o que dependen de la copia de seguridad y restauración o de la copia de seguridad de imágenes de disco seguirán siendo capaces de usarla. Sin embargo, se han quitado todos los puntos de acceso a Copia de seguridad y restauración, a excepción Panel de control la copia de seguridad. El Panel de control applet usado por Copia de seguridad y restauración ha cambiado de nombre a Windows 7 File Recovery.
+Aunque no hay ningún cambio de comportamiento en la copia de seguridad y restauración, esta función está en desuso y no se actualizará. Rara vez se usó y su funcionalidad se ha reemplazado por la nueva Historial de archivos característica. Se enviará en Windows 8 y los aficionados que actualizaron de Windows 7 a Windows 8 o dependen de la copia de seguridad y restauración o de la copia de seguridad de imágenes de disco seguirán siendo capaces de usarla. Sin embargo, se han quitado todos los puntos de acceso a Copia de seguridad y restauración, a excepción del Panel de control de acceso. El Panel de control applet usado por Copia de seguridad y restauración ha cambiado de nombre a Windows 7 File Recovery.
 
 Los OEM que estaban estableciendo la clave del Registro para deshabilitar la notificación de copia de seguridad en sus imágenes ya no tendrán que hacerlo.
 
@@ -32,7 +32,7 @@ Los flujos de trabajo se pueden interrumpir y la documentación que hace referen
 
 ## <a name="mitigation"></a>Mitigación
 
-Las aplicaciones que pueden desencadenar copias de seguridad y restauración se deben volver a escribir para comprobar Historial de archivos está activado y permitir que los usuarios elijan su método preferido.
+Las aplicaciones que podrían desencadenar la copia de seguridad y restauración deben reescribirse para comprobar si Historial de archivos está activado y permitir que los usuarios elijan su método preferido.
 
  
 

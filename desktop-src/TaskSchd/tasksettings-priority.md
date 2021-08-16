@@ -44,23 +44,23 @@ Nivel de prioridad (0-10) de la tarea. El valor predeterminado es 7.
 
 ## <a name="remarks"></a>Comentarios
 
-El nivel de prioridad 0 es la prioridad más alta y el nivel de prioridad 10 es la prioridad más baja. El valor predeterminado es 7. Los niveles de prioridad 7 y 8 se usan para las tareas en segundo plano y los niveles de prioridad 4, 5 y 6 se usan para las tareas interactivas.
+El nivel de prioridad 0 es la prioridad más alta y el nivel de prioridad 10 es la prioridad más baja. El valor predeterminado es 7. Los niveles de prioridad 7 y 8 se usan para las tareas en segundo plano, y los niveles de prioridad 4, 5 y 6 se usan para las tareas interactivas.
 
-La acción de la tarea se inicia en un proceso con una prioridad que se basa en un valor de clase de prioridad. Se usa un valor de nivel de prioridad (prioridad de subproceso) para las acciones de controlador COM, cuadro de mensaje y tarea de correo electrónico. Para obtener más información sobre los valores de Priority Class y Priority Level, vea [Scheduling Priorities](/windows/desktop/ProcThread/scheduling-priorities). En la tabla siguiente se enumeran los valores posibles para el parámetro *priority* y los valores de Priority Class y Priority Level correspondientes.
+La acción de la tarea se inicia en un proceso con una prioridad que se basa en un valor priority class. Se usa un valor de nivel de prioridad (prioridad del subproceso) para las acciones de controlador COM, cuadro de mensaje y tarea de correo electrónico. Para obtener más información sobre los valores priority class y priority level, vea [Scheduling Priorities](/windows/desktop/ProcThread/scheduling-priorities). En la tabla siguiente se enumeran los valores posibles para el parámetro *priority* y los valores de Priority Class y Priority Level correspondientes.
 
 
 
-| Prioridad de *la tarea* | Priority (Clase)                 | Nivel de prioridad                   |
+| Prioridad de *la tarea* | Priority (clase)                 | Nivel de prioridad                   |
 |-----------------|--------------------------------|----------------------------------|
-| 0               | CLASE \_ PRIORITY EN \_ TIEMPO REAL      | TIEMPO CRÍTICO \_ DE PRIORIDAD \_ DEL \_ SUBPROCESO |
-| 1               | CLASE \_ DE PRIORIDAD \_ ALTA          | PRIORIDAD \_ MÁS ALTA DEL \_ SUBPROCESO        |
-| 2               | CLASE \_ DE PRIORIDAD NORMAL POR ENCIMA DE LA \_ \_ NORMAL | PRIORIDAD \_ DEL SUBPROCESO POR ENCIMA DE LO \_ \_ NORMAL  |
-| 3               | CLASE \_ DE PRIORIDAD NORMAL POR ENCIMA DE LA \_ \_ NORMAL | PRIORIDAD \_ DEL SUBPROCESO POR ENCIMA DE LO \_ \_ NORMAL  |
-| 4               | CLASE \_ PRIORITY \_ NORMAL        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
-| 5               | CLASE \_ PRIORITY \_ NORMAL        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
-| 6               | CLASE \_ PRIORITY \_ NORMAL        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
-| 7               | CLASE \_ DE PRIORIDAD NORMAL \_ \_ INFERIOR | PRIORIDAD \_ DEL SUBPROCESO POR \_ DEBAJO DE LO \_ NORMAL  |
-| 8               | CLASE \_ DE PRIORIDAD NORMAL \_ \_ INFERIOR | PRIORIDAD \_ DEL SUBPROCESO POR \_ DEBAJO DE LO \_ NORMAL  |
+| 0               | CLASE \_ PRIORITY EN \_ TIEMPO REAL      | TIEMPO CRÍTICO \_ DE \_ PRIORIDAD DEL \_ SUBPROCESO |
+| 1               | HIGH \_ PRIORITY \_ (CLASE)          | PRIORIDAD \_ MÁS ALTA DEL \_ SUBPROCESO        |
+| 2               | ABOVE \_ NORMAL \_ PRIORITY \_ CLASS | PRIORIDAD \_ DEL SUBPROCESO POR ENCIMA DE LO \_ \_ NORMAL  |
+| 3               | ABOVE \_ NORMAL \_ PRIORITY \_ CLASS | PRIORIDAD \_ DEL SUBPROCESO POR ENCIMA DE LO \_ \_ NORMAL  |
+| 4               | NORMAL \_ PRIORITY \_ (CLASE)        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
+| 5               | NORMAL \_ PRIORITY \_ (CLASE)        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
+| 6               | NORMAL \_ PRIORITY \_ (CLASE)        | PRIORIDAD \_ NORMAL DEL \_ SUBPROCESO         |
+| 7               | CLASE \_ POR \_ DEBAJO DE LA PRIORIDAD \_ NORMAL | PRIORIDAD \_ DEL SUBPROCESO POR \_ DEBAJO DE LO \_ NORMAL  |
+| 8               | CLASE \_ POR \_ DEBAJO DE LA PRIORIDAD \_ NORMAL | PRIORIDAD \_ DEL SUBPROCESO POR \_ DEBAJO DE LO \_ NORMAL  |
 | 9               | IDLE \_ PRIORITY \_ (CLASE)          | PRIORIDAD \_ MÁS BAJA DEL \_ SUBPROCESO         |
 | 10              | IDLE \_ PRIORITY \_ (CLASE)          | PRIORIDAD \_ DE SUBPROCESO \_ INACTIVA           |
 
@@ -68,7 +68,7 @@ La acción de la tarea se inicia en un proceso con una prioridad que se basa en 
 
  
 
-Al leer o escribir XML para una tarea, esta configuración se especifica en el elemento [**Priority (settingsType)**](taskschedulerschema-priority-settingstype-element.md) del esquema Programador de tareas datos.
+Al leer o escribir XML para una tarea, esta configuración se especifica en el elemento [**Priority (settingsType)**](taskschedulerschema-priority-settingstype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -61,7 +61,7 @@ Ancho del recurso, en texturas.
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El número de niveles de mapa mip *(también requiere MipLevel).*
+El número de niveles de asignación mip *(también requiere MipLevel).*
 
 </dd> </dl>
 

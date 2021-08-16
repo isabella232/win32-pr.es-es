@@ -24,7 +24,7 @@ Schannel admite las versiones 2.0 y 3.0 del [*protocolo Capa de sockets seguros 
 
 ## <a name="ssl-30"></a>SSL 3.0
 
-SSL 3.0 es el predecesor del protocolo de seguridad de [la capa de transporte.](transport-layer-security-protocol.md)
+SSL 3.0 es el predecesor del Protocolo de seguridad de la [capa de transporte.](transport-layer-security-protocol.md)
 
 Schannel admite los conjuntos de cifrado enumerados en [Conjuntos de cifrado TLS](tls-cipher-suites.md) para SSL 3.0. SSL 3.0 admite todos los conjuntos de cifrado enumerados en Conjuntos de cifrado TLS, así como SSL \_ FORTEZZA \_ KEA \_ WITH \_ FORTEZZA \_ CBC \_ SHA.
 

@@ -1,7 +1,7 @@
 ---
 description: Se produce cuando el puntero del mouse sale del control InkPicture.
 ms.assetid: 4b7961cd-58a3-4e75-bb9e-fbb6dc225d3d
-title: Evento InkPicture.MouseLeave (Ms mouseut.h)
+title: Evento InkPicture.MouseLeave (Msplaceut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ff08c3ffbac12911d5eda02a67da2bd31213f943a14afe77f5e7fc17ca885933
@@ -42,9 +42,9 @@ Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

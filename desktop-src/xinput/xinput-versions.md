@@ -23,7 +23,7 @@ Actualmente hay tres versiones actuales del archivo DLL XInput. Elija la versió
 
 ## <a name="xinput-14"></a>XInput 1.4
 
-XInput 1.4 se distribuye hoy en día como un componente del sistema en Windows 8 como XINPUT1 \_4.DLL. Está disponible como "bandeja de entrada" y no requiere redistribución con una aplicación. El Windows Software Development Kit (SDK) contiene el encabezado y la biblioteca de importación para la vinculación estática con XINPUT1 \_4.DLL. Para descargar el SDK Windows 8, consulte [Descargas para desarrollar aplicaciones de escritorio.](https://developer.microsoft.com/windows/downloads/)
+XInput 1.4 se distribuye hoy en día como un componente del sistema en Windows 8 como XINPUT1 \_4.DLL. Está disponible como "bandeja de entrada" y no requiere redistribución con una aplicación. El kit Windows desarrollo de software (SDK) contiene el encabezado y la biblioteca de importación para la vinculación estática con XINPUT1 \_4.DLL. Para descargar el SDK Windows 8, consulte [Descargas para desarrollar aplicaciones de escritorio.](https://developer.microsoft.com/windows/downloads/)
 
 XInput 1.4 tiene estas ventajas principales con respecto a otras versiones de XInput:
 
@@ -47,4 +47,4 @@ XInput 9.1.0 tiene estas desventajas con respecto a otras versiones de XInput:
 
 Algunas versiones anteriores de XInput se han proporcionado como archivos DLL redistribuibles en el SDK de DirectX. La primera versión redistribuible de XInput, XInput 1.1, enviada en la versión de abril de 2006 del SDK de DirectX. La última versión que se entrenó en el SDK de DirectX fue XInput 1.3, disponible en la versión de junio de 2010 del SDK de DirectX heredado. *El SDK de DirectX ya no está disponible en descargas de Microsoft.*
 
-Puede usar XInput 1.3 para las aplicaciones que admiten versiones de nivel inferior de Windows y requieren la funcionalidad no proporcionada por XInput 9.1.0 (es decir, informes de subtipo correctos, compatibilidad con audio, compatibilidad explícita con informes de batería, y así sucesivamente).
+Puede usar XInput 1.3 para las aplicaciones que admiten versiones de nivel inferior de Windows y requieren funcionalidad no proporcionada por XInput 9.1.0 (es decir, informes de subtipo correctos, compatibilidad con audio, compatibilidad explícita con informes de batería, y así sucesivamente).

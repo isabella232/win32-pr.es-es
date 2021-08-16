@@ -1,21 +1,21 @@
 ---
-title: Categorización de proxies y códigos auxiliares de DCOM
-description: Categorización de proxies y códigos auxiliares de DCOM
+title: Categorización de servidores proxy y código auxiliar de DCOM
+description: Categorización de servidores proxy y código auxiliar de DCOM
 ms.assetid: f5d117d6-6c2c-4beb-8869-1581a5b1846f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31685cd1318856b9e305246cfebc2cebb3a7874e
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 5f45f61d89e31316975685d3e603a93d30559546c86abc3b63e8e7e8a0c83ff1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105714479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118310872"
 ---
-# <a name="categorizing-dcom-proxies-and-stubs"></a>Categorización de proxies y códigos auxiliares de DCOM
+# <a name="categorizing-dcom-proxies-and-stubs"></a>Categorización de servidores proxy y código auxiliar de DCOM
 
-DCOM calcula las referencias a los objetos mediante la construcción de OBJREFs que contienen CLSID. Estos CLSID son vulnerables a los ataques de seguridad porque se pueden cargar archivos dll arbitrarios durante el cálculo de referencias. Sin embargo, \_ \_ \_ se puede especificar la marca de serialización no personalizada EOAC al llamar a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) (consulte [**capacidades de \_ autenticación \_ de Eole**](/windows/win32/api/objidlbase/ne-objidlbase-eole_authentication_capabilities)). La configuración de esta marca ayuda a proteger la seguridad del servidor al usar DCOM porque reduce las posibilidades de ejecutar archivos dll arbitrarios. Cuando se establece esta marca, el servidor permite el cálculo de referencias solo de los CLSID que se implementan en ole32.dll, comadmin.dll, comsvcs.dll o es.dll, o que implementan el \_ identificador de categoría del contador de referencias CATID.
+DCOM serializa las referencias a objetos mediante la construcción de objetos OBJREF que contienen CLID. Estos CLSID son vulnerables a ataques de seguridad porque se pueden cargar archivos DLL arbitrarios durante la serialización. Sin embargo, se puede especificar la marca EOAC NO CUSTOM MARSHAL al llamar a \_ \_ \_ [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) (vea [**EOLE \_ AUTHENTICATION \_ CAPABILITIES**](/windows/win32/api/objidlbase/ne-objidlbase-eole_authentication_capabilities)). Establecer esta marca ayuda a proteger la seguridad del servidor cuando se usa DCOM, ya que reduce las posibilidades de ejecutar archivos DLL arbitrarios. Cuando se establece esta marca, el servidor permite serializar solo los CLID que se implementan en ole32.dll, comadmin.dll, comsvcs.dll o es.dll, o que implementan el identificador de categoría DE \_ SERIALIZADOR CATID.
 
-\_El contador de referencias CATID es un GUID de categoría de componente que se puede asociar a un CLSID que se va a serializar. Las interfaces a las que se calculan las referencias personalizadas con este CLSID se permiten cuando EOAC \_ no \_ \_ se establece ningún cálculo de referencias personalizado a través de [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
+CATID MARSHALER es un GUID de categoría de componente que se puede asociar a un \_ CLSID que se está serializando de forma personalizada. Las interfaces que se serializan de forma personalizada con este CLSID se permiten cuando EOAC NO CUSTOM MARSHAL se establece a través \_ \_ de \_ [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -24,6 +24,6 @@ DCOM calcula las referencias a los objetos mediante la construcción de OBJREFs 
 [Categorías del componente](component-categories.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

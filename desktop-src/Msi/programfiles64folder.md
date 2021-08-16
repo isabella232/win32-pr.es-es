@@ -1,31 +1,31 @@
 ---
-description: El instalador establece la propiedad ProgramFiles64Folder en la ruta de acceso completa de la carpeta de archivos de programa de 64 bits predefinida. La propiedad ProgramFilesFolder existente se establece en la carpeta de 32 bits correspondiente.
+description: El instalador establece la propiedad ProgramFiles64Folder en la ruta de acceso completa de la carpeta Archivos de programa de 64 bits predefinida. La propiedad ProgramFilesFolder existente se establece en la carpeta de 32 bits correspondiente.
 ms.assetid: 9301628a-3d56-4d0a-aab5-88663742daa1
 title: Propiedad ProgramFiles64Folder
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdb8b85e0a433a3a4b51cfe23ef2de1f75dba09c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f3910c9a498a918580a43b4981740263bb1ab2f8d080f5dbae7a829833723fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118376450"
 ---
 # <a name="programfiles64folder-property"></a>Propiedad ProgramFiles64Folder
 
-El instalador establece la propiedad **ProgramFiles64Folder** en la ruta de acceso completa de la carpeta de archivos de programa de 64 bits predefinida. La propiedad [**ProgramFilesFolder**](programfilesfolder.md) existente se establece en la carpeta de 32 bits correspondiente.
+El instalador establece la **propiedad ProgramFiles64Folder** en la ruta de acceso completa de la carpeta Archivos de programa de 64 bits predefinida. La propiedad [**ProgramFilesFolder**](programfilesfolder.md) existente se establece en la carpeta de 32 bits correspondiente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El instalador establece esta propiedad. Por ejemplo, en Windows de 64 bits, el valor puede ser C: \\ archivos de programa. Esta propiedad no se utiliza en Windows de 32 bits.
+El instalador establece esta propiedad. Por ejemplo, en archivos de 64 Windows, el valor puede ser C: \\ Archivos de programa. Esta propiedad no se usa en archivos de 32 Windows.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
 
 
 

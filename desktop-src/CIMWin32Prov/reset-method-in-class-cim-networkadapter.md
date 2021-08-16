@@ -2,7 +2,7 @@
 description: El método Reset de la clase NetworkAdapter cim \_ solicita un restablecimiento del dispositivo lógico.
 ms.assetid: ff4493b7-a9e1-4a39-a14a-05da75659d4e
 ms.tgt_platform: multiple
-title: Método reset de la CIM_NetworkAdapter clase
+title: Método Reset de la CIM_NetworkAdapter clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,7 +26,7 @@ ms.locfileid: "118418995"
 El **método Reset** de la clase NetworkAdapter cim solicita un \_ restablecimiento del dispositivo lógico. Este método se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

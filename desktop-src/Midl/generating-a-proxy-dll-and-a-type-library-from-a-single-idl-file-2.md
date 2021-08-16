@@ -1,6 +1,6 @@
 ---
 title: Generar un archivo DLL de proxy y una biblioteca de tipos a partir de un único archivo IDL
-description: Puede usar un único archivo IDL para generar el código auxiliar del proxy y los archivos de encabezado para serializar código y una biblioteca de tipos.
+description: Puede usar un único archivo IDL para generar los archivos de encabezado y los códigos auxiliares de proxy para serializar código y una biblioteca de tipos.
 ms.assetid: faa647ac-765a-45bd-8193-b6ea90d064ff
 keywords:
 - Lenguaje de definición de interfaz de Microsoft MIDL, tareas, generación de un archivo DLL de proxy y una biblioteca de tipos
@@ -15,7 +15,7 @@ ms.locfileid: "118384241"
 ---
 # <a name="generating-a-proxy-dll-and-a-type-library-from-a-single-idl-file"></a>Generar un archivo DLL de proxy y una biblioteca de tipos a partir de un único archivo IDL
 
-Puede usar un único archivo IDL para generar el código auxiliar del proxy y los archivos de encabezado para serializar código y una biblioteca de tipos. Para ello, defina una interfaz fuera del bloque de biblioteca y, a continuación, haga referencia a esa interfaz desde dentro del bloque de biblioteca, como se muestra en este ejemplo:
+Puede usar un único archivo IDL para generar los archivos de encabezado y los códigos auxiliares de proxy para serializar código y una biblioteca de tipos. Para ello, defina una interfaz fuera del bloque de biblioteca y, a continuación, haga referencia a esa interfaz desde dentro del bloque de biblioteca, como se muestra en este ejemplo:
 
 ``` syntax
 //file: AllKnown.idl
@@ -49,7 +49,7 @@ library KnownLibrary
 };
 ```
 
-Para obtener más información, vea [Serializar tipos de datos OLE](marshaling-ole-data-types.md) y Archivos [adicionales necesarios para generar una biblioteca de tipos](additional-files-required-to-generate-a-type-library-2.md).
+Para obtener más información, vea [Serializar tipos de datos OLE](marshaling-ole-data-types.md) y archivos [adicionales necesarios para generar una biblioteca de tipos.](additional-files-required-to-generate-a-type-library-2.md)
 
  
 

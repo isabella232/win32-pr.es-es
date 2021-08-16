@@ -31,13 +31,13 @@ g \_ wszWMEncodingTime
 
 **FILETIME** (**WMT \_ TYPE \_ QWORD**)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo usa un valor FILETIME, que es un valor de 64 bits que representa el número de unidades de tiempo de 100 nanosegundos transcurridos desde el 1 de enero de 1601. Para obtener más información sobre FILETIME, consulte la Windows Información del sistema del SDK de plataforma.
 
 No es un atributo codificado. Debe establecerlo manualmente si desea incluirlo en los archivos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

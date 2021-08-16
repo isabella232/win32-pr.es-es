@@ -1,9 +1,9 @@
 ---
-title: modificador/Pack
-description: El modificador/Pack es el mismo que el de la opción/ZP.
+title: Modificador /pack
+description: El modificador /pack es el mismo que la opción /Zp.
 ms.assetid: 381e3099-adb4-4219-bbb4-89c9e1dd3928
 keywords:
-- /Pack modificador MIDL
+- /pack switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,62 +12,62 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c807846148d81e0e59620046d9f24380fe647c11
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ad9282cd5ab56d2e037ba585676a83c5cd558ecb26354ab191899ad341506f5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117991947"
 ---
-# <a name="pack-switch"></a>modificador/Pack
+# <a name="pack-switch"></a>Modificador /pack
 
-El modificador **/Pack** es el mismo que el de la opción [**/ZP**](-zp.md) .
+El **modificador /pack** es el mismo que la [**opción /Zp.**](-zp.md)
 
 ``` syntax
 midl /pack packing_level
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
-*nivel de empaquetado \_* 
+*nivel de \_ empaquetado* 
 </dt> <dd>
 
 Especifica el nivel de empaquetado de las estructuras en el sistema de destino. El valor de nivel de empaquetado se puede establecer en 1, 2, 4 u 8.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El modificador **/Pack** designa el nivel de empaquetado de las estructuras en el sistema de destino. El valor de nivel de empaquetado corresponde al valor de la opción [**/ZP**](-zp.md) usado por el compilador de Microsoft C/C++ versión 7,0. Para obtener más información, vea la documentación de programación de Microsoft C/C++.
+El **modificador /pack** designa el nivel de empaquetado de las estructuras en el sistema de destino. El valor de nivel de empaquetado corresponde al valor de opción [**/Zp**](-zp.md) utilizado por el compilador de Microsoft C/C++ versión 7.0. Para obtener más información, consulte la documentación de programación de Microsoft C/C++.
 
-Especifique el mismo nivel de empaquetado al invocar el compilador de MIDL y el compilador de C. El nivel de empaquetado predeterminado que se usa cuando no se especifica el modificador [**/ZP**](-zp.md) ni **/Pack** es 8, en todos los entornos de compilación.
+Especifique el mismo nivel de empaquetado al invocar el compilador MIDL y el compilador de C. El nivel de empaquetado predeterminado que se usa cuando no se especifica el modificador [**/Zp**](-zp.md) ni **/pack** es 8, en ambos entornos de compilación.
 
-Para obtener una explicación de los posibles peligros en el uso de niveles de empaquetado no estándar, vea el tema de ayuda de [**/ZP**](-zp.md) .
+Para obtener una explicación de los posibles riesgos en el uso de niveles de empaquetado no estándar, consulte el tema de ayuda [**/Zp.**](-zp.md)
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/Pack 2 nombrearchivo. idl**
+**midl /pack 2 filename.idl**
 
-**MIDL/Pack 8 bar. idl**
+**midl /pack 8 bar.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[**/ENV**](-env.md)
+[**/env**](-env.md)
 </dt> <dt>
 
-[**/ZP**](-zp.md)
+[**/Zp**](-zp.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

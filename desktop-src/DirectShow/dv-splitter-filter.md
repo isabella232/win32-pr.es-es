@@ -4,12 +4,12 @@ ms.assetid: 099d1cc7-f0c5-4c50-a1d5-f2defde7e104
 title: Filtro de divisor DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74ca8e856f1a49ff22ee05f7dc0ae341fad6aa91
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 323593fd5b55fdbd65cb05e83d1097d0d764c94c30141125dcc1cc6fc5ed60d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820677"
 ---
 # <a name="dv-splitter-filter"></a>Filtro de divisor DV
 
@@ -17,7 +17,7 @@ Este filtro divide una secuencia de vídeo digital intercalado (DV) en sus secue
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfaces de filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [ **IDVSplitter**](/windows/desktop/api/Strmif/nn-strmif-idvsplitter)                                                                             |
 | Tipos de medios de pin de entrada                    | MEDIATYPE \_ intercalado, MEDIASUBTYPE \_ dvsd, FORMAT \_ DvInfo                                                                                         |
@@ -27,7 +27,7 @@ Este filtro divide una secuencia de vídeo digital intercalado (DV) en sus secue
 | Filtrar CLSID                             | CLSID \_ DVSplitter                                                                                                                                  |
 | CLSID de la página de propiedades                      | No hay ninguna página de propiedades.                                                                                                                                  |
 | Executable                               | qdv.dll                                                                                                                                            |
-| [Mérito](merit.md)                       | PROCEDIMIENTO \_ NORMAL                                                                                                                                      |
+| [Mérito](merit.md)                       | NORMAL DE LA OPERACIÓN DE \_ NORMALIZACIÓN                                                                                                                                      |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                      |
 
 
@@ -36,21 +36,21 @@ Este filtro divide una secuencia de vídeo digital intercalado (DV) en sus secue
 
 ## <a name="remarks"></a>Comentarios
 
-Los fotogramas DV contienen audio y vídeo en el mismo fotograma. El filtro dv splitter extrae los datos de audio y los entrega como una o dos secuencias de audio, desde las clavijas de salida de audio. El fotograma DV original se entrega desde el pin de salida del vídeo, como un fotograma de vídeo. El tipo de medio en el fotograma de vídeo se cambia de MEDIATYPE intercalado a MEDIATYPE Video, pero de lo contrario los datos \_ \_ no se modifican. El tipo de medio se cambia para indicar que se deben omitir los datos de audio en el marco. El divisor DV no establece un tiempo de medios en sus ejemplos de salida; Si está escribiendo un filtro de bajada que requiere los tiempos multimedia, puede derivar las horas del recuento de fotogramas.
+Los marcos DV contienen audio y vídeo en el mismo fotograma. El filtro divisor DV extrae los datos de audio y los entrega como una o dos secuencias de audio, de las patillas de salida de audio. El fotograma DV original se entrega desde el pin de salida del vídeo, como un fotograma de vídeo. El tipo de medio en el fotograma de vídeo se cambia de MEDIATYPE intercalado a MEDIATYPE Video, pero de lo contrario los datos \_ \_ no se modifican. El tipo de medio se cambia para indicar que se deben omitir los datos de audio en el marco. El divisor DV no establece un tiempo de medios en sus ejemplos de salida; Si va a escribir un filtro de nivel inferior que requiere las horas de medios, puede derivar las horas del recuento de fotogramas.
 
 Solo un pin de salida a la vez expone las interfaces [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) [**e IMediaSeeking.**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)
 
-El filtro dv splitter puede aceptar cambios de formato dinámico en la secuencia de audio. Sin embargo, si el [filtro avi Mux](avi-mux-filter.md) es descendente, rechazará el cambio de formato. Si esto ocurre, el divisor DV deja de generar una secuencia de audio. Esta limitación solo afecta a la captura de archivos de tipo 2. En el caso de los archivos de tipo 1, la secuencia intercalada no se divide en primer lugar. Para la versión preliminar, no hay ningún filtro avi Mux de bajada.
+El filtro divisor DV puede aceptar cambios de formato dinámico en la secuencia de audio. Sin embargo, si el [filtro Mux avi](avi-mux-filter.md) es descendente, rechazará el cambio de formato. Si esto sucede, el divisor DV deja de generar una secuencia de audio. Esta limitación solo afecta a la captura de archivos de tipo 2. En el caso de los archivos de tipo 1, la secuencia intercalada no se divide en primer lugar. Para la versión preliminar, no hay ningún filtro Mux AVI de bajada.
 
 Si el origen dv es una cámara en directo, normalmente no hay ninguna razón para que cambie el formato de audio. Sin embargo, el formato puede cambiar si transmite desde una cinta VTR que contiene varios orígenes heterogéneos.
 
-Cada fotograma DV contiene metadatos, además de los datos de audio y vídeo. Estos metadatos pueden cambiar de marco a marco. Las aplicaciones pueden analizar los metadatos examinando los ejemplos de entrada o los ejemplos de salida de vídeo. Sin embargo, DirectShow no proporciona ninguna compatibilidad directa para analizar los metadatos dv. Consulte IEC 61834-4 para obtener más información.
+Cada fotograma DV contiene metadatos, además de los datos de audio y vídeo. Estos metadatos pueden cambiar de marco a marco. Las aplicaciones pueden analizar los metadatos examinando los ejemplos de entrada o los ejemplos de salida de vídeo. Sin embargo, DirectShow no proporciona compatibilidad directa para analizar metadatos DV. Consulte IEC 61834-4 para obtener más información.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> <dt>
 
 [Vídeo digital en DirectShow](digital-video-in-directshow.md)

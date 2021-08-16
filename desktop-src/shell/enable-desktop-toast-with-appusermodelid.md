@@ -1,5 +1,5 @@
 ---
-description: En este tema se muestra cómo crear un acceso directo para la aplicación, asignarla a un AppUserModelID e instalarla en la pantalla Inicio.
+description: En este tema se muestra cómo crear un acceso directo para la aplicación, asignarle un AppUserModelID e instalarlo en el pantalla Inicio.
 title: Cómo habilitar las notificaciones del sistema del escritorio a través de AppUserModelID
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbSyntax
-ms.openlocfilehash: bd02a0ec6512aa7637f0d6b2b281e1b862e61d3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 517c2b72e830c00b105048adc63923291f896cd5d0d77569c91b1aa12e034e60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459797"
 ---
 # <a name="how-to-enable-desktop-toast-notifications-through-an-appusermodelid"></a>Cómo habilitar las notificaciones del sistema del escritorio a través de AppUserModelID
 
-En este tema se muestra cómo crear un acceso directo para la aplicación, asignarla a un [AppUserModelID](appids.md)e instalarla en la pantalla Inicio. Le recomendamos encarecidamente que lo haga en el Windows Installer en lugar de en el código de la aplicación. Sin un acceso directo válido instalado en la pantalla Inicio o en **todos los programas**, no se puede generar una notificación del sistema desde una aplicación de escritorio.
+En este tema se muestra cómo crear un acceso directo para la aplicación, asignarle un [AppUserModelID](appids.md)e instalarlo en el pantalla Inicio. Se recomienda encarecidamente que haga esto en el instalador Windows en lugar de en el código de la aplicación. Sin un acceso directo válido instalado en el pantalla Inicio o en **Todos** los programas , no se puede generar una notificación del sistema desde una aplicación de escritorio.
 
 > [!Note]  
-> Los métodos de ejemplo que se usan en este tema se toman del [ejemplo del sistema de notificación del escritorio](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DesktopToasts).
+> Los métodos de ejemplo usados en este tema se toman del ejemplo [del sistema de escritorio](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DesktopToasts).
 
  
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
@@ -34,16 +34,16 @@ En este tema se muestra cómo crear un acceso directo para la aplicación, asign
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   Bibliotecas
-    -   C++: Runtime. Object. lib
+    -   C++: Runtime.object.lib
     -   C \# : Windows. Winmd
--   C \# : paquete de código de la API de Windows para Microsoft .NET Framework
--   Una versión de Microsoft Visual Studio que admita al menos Windows 8
+-   C \# : Windows code pack de API para Microsoft .NET Framework
+-   Una versión de Microsoft Visual Studio admite al menos Windows 8
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-prepare-the-shortcut-to-be-created"></a>Paso 1: preparar el acceso directo que se va a crear
+### <a name="step-1-prepare-the-shortcut-to-be-created"></a>Paso 1: Preparar el acceso directo que se va a crear
 
-En primer lugar, este ejemplo determina la ruta de acceso de la carpeta de datos de la aplicación del usuario a través de la función [**GetEnvironmentVariable**](/windows/win32/api/processenv/nf-processenv-getenvironmentvariablea) . A continuación, crea la ruta de acceso completa al acceso directo, determina que ya no existe un acceso directo a ese nombre en esa ubicación y pasa esa información a otro método que crea e instala el acceso directo.
+En primer lugar, este ejemplo determina la ruta de acceso de la carpeta de datos de la aplicación del usuario a través de [**la función GetEnvironmentVariable.**](/windows/win32/api/processenv/nf-processenv-getenvironmentvariablea) A continuación, crea la ruta de acceso completa al acceso directo, determina que aún no existe un acceso directo con ese nombre en esa ubicación y pasa esa información a otro método que crea e instala el acceso directo.
 
 Tenga en cuenta que el acceso directo se puede implementar por usuario o por aplicación.
 
@@ -81,9 +81,9 @@ HRESULT DesktopToastsApp::TryCreateShortcut()
 
 
 
-### <a name="step-2-create-the-shortcut-and-install-it-in-the-start-screen"></a>Paso 2: crear el acceso directo e instalarlo en la pantalla Inicio
+### <a name="step-2-create-the-shortcut-and-install-it-in-the-start-screen"></a>Paso 2: Crear el acceso directo e instalarlo en el pantalla Inicio
 
-En este ejemplo también se recupera el almacén de propiedades del método abreviado y se establece la propiedad [System.AppUserModel.ID](../properties/props-system-appusermodel-id.md) requerida a partir de una variable definida anteriormente, `AppID` .
+En este ejemplo también se recupera el almacén de propiedades del acceso directo y se establece la propiedad System.AppUserModel.ID [necesaria](../properties/props-system-appusermodel-id.md) de una variable definida previamente, `AppID` .
 
 
 ```C++
@@ -144,48 +144,48 @@ HRESULT DesktopToastsApp::InstallShortcut(_In_z_ wchar_t *shortcutPath)
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Como alternativa al enfoque que se muestra en este tema, puede usar un marco de trabajo como Windows Installer XML (WiX) para generar el acceso directo e implementarlo como parte de la Windows Installer. En ese caso, este código debe incluirse en el MSI en lugar de en el código de la aplicación. Para obtener más información, vea el archivo de configuración de WiX de ejemplo incluido en el ejemplo de [envío de notificaciones del sistema de aplicaciones de escritorio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208)) .
+Como alternativa al enfoque que se muestra en este tema, puede usar un marco como Windows Installer XML (WiX) para generar el acceso directo e implementarlo como parte del instalador de Windows. En ese caso, este código debe incluirse en msi en lugar de en el código de la aplicación. Para más información, consulte el archivo de configuración de WiX de ejemplo incluido en el ejemplo Envío de [notificaciones del sistema desde aplicaciones de](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208)) escritorio.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Inicio rápido: envío de una notificación del sistema desde el escritorio](quickstart-sending-desktop-toast.md)
+[Inicio rápido: Envío de una notificación del sistema desde el escritorio](quickstart-sending-desktop-toast.md)
 </dt> <dt>
 
 [Ejemplo sobre cómo enviar notificaciones del sistema de aplicaciones de escritorio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208))
 </dt> <dt>
 
-[Identificadores de modelo de usuario de la aplicación (AppUserModelIDs)](appids.md)
+[Id. de modelo de usuario de aplicación (AppUserModelID)](appids.md)
 </dt> <dt>
 
-[Cómo: instalar las herramientas de Windows Installer XML (WiX)](/previous-versions/windows/server-essentials/gg513936(v=msdn.10))
+[Cómo: Instalar las herramientas xml Windows installer (WiX)](/previous-versions/windows/server-essentials/gg513936(v=msdn.10))
 </dt> <dt>
 
-[Esquema XML del sistema de notificación](/uwp/schemas/tiles/toastschema/schema-root)
+[Esquema XML del sistema](/uwp/schemas/tiles/toastschema/schema-root)
 </dt> <dt>
 
 [Introducción a las notificaciones del sistema](/previous-versions/windows/apps/hh779727(v=win.10))
 </dt> <dt>
 
-[Inicio rápido: envío de una notificación del sistema](/previous-versions/windows/apps/hh465448(v=win.10))
+[Inicio rápido: Envío de una notificación del sistema](/previous-versions/windows/apps/hh465448(v=win.10))
 </dt> <dt>
 
-[Inicio rápido: envío de una notificación de notificaciones de envío](/previous-versions/windows/hh761487(v=win.10))
+[Inicio rápido: Envío de una notificación push del sistema](/previous-versions/windows/hh761487(v=win.10))
 </dt> <dt>
 
-[Directrices y lista de comprobación para las notificaciones del sistema](/windows/uwp/design/shell/tiles-and-notifications/)
+[Directrices y lista de comprobación para notificaciones del sistema](/windows/uwp/design/shell/tiles-and-notifications/)
 </dt> <dt>
 
-[Cómo agregar imágenes a una plantilla de notificación del sistema](/previous-versions/windows/)
+[Cómo agregar imágenes a una plantilla del sistema](/previous-versions/windows/)
 </dt> <dt>
 
 [Comprobación de la configuración de notificaciones del sistema](/previous-versions/windows/)
 </dt> <dt>
 
-[Cómo elegir y usar una plantilla de notificación del sistema](/previous-versions/windows/apps/hh465448(v=win.10))
+[Cómo elegir y usar una plantilla del sistema](/previous-versions/windows/apps/hh465448(v=win.10))
 </dt> <dt>
 
 [Cómo controlar la activación desde una notificación del sistema](/previous-versions/windows/apps/hh761468(v=win.10))
@@ -194,7 +194,7 @@ Como alternativa al enfoque que se muestra en este tema, puede usar un marco de 
 [Cómo participar en las notificaciones del sistema](/previous-versions/windows/apps/hh781238(v=win.10))
 </dt> <dt>
 
-[Elección de una plantilla de notificación del sistema](/previous-versions/windows/apps/hh761494(v=win.10))
+[Elección de una plantilla del sistema](/previous-versions/windows/apps/hh761494(v=win.10))
 </dt> <dt>
 
 [Opciones de audio del sistema](/previous-versions/windows/apps/hh761492(v=win.10))

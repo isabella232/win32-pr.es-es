@@ -1,7 +1,7 @@
 ---
-description: Busca todas las direcciones IP del host local.
+description: Busca todas las direcciones IP de localhost.
 ms.assetid: 47f7d03e-c1a1-4395-9889-01891208fe0f
-title: myIPAddressEx función)
+title: Función myIPAddressEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 88c205dbd5ce071a809cf87f4f97bb6d42120dcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5db6107c061c845113e91590dab405bdd84cb4741f766abfeef6a1344652f115
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744167"
 ---
-# <a name="myipaddressex-function"></a>myIPAddressEx función)
+# <a name="myipaddressex-function"></a>Función myIPAddressEx
 
-Busca todas las direcciones IP del host local.
+Busca todas las direcciones IP de localhost.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -29,11 +29,11 @@ Esta función no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una cadena delimitada por punto y coma que contiene todas las direcciones IP para localhost (IPv6 o IPv4) o una cadena vacía si no puede resolver localhost en una dirección IP.
+Cadena delimitada por punto y coma que contiene todas las direcciones IP de localhost (IPv6 o IPv4) o una cadena vacía si no se puede resolver localhost en una dirección IP.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los implementadores de FindProxyforURLEx deben agregar código que interrumpa la cadena de direcciones IP delimitadas por punto y coma en direcciones independientes.
+Los implementadores FindProxyforURLEx deben agregar código que divide la cadena de direcciones IP delimitadas por punto y coma en direcciones independientes.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -47,10 +47,10 @@ myIpAddressEx();
 
 <dl> <dt>
 
-[Definiciones de API de aplicación auxiliar de proxy compatible con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definiciones de API del asistente de proxy compatibles con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
-[Extensiones IPv6 para el formato de archivo de configuración automática de navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
+[Extensiones IPv6 para el formato de archivo de configuración automática del navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
 </dt> </dl>
 
  

@@ -287,7 +287,7 @@ HRESULT put_Revision(
 **SaclDefaulted**
 </dt> <dd> <dl>
 
-Marca del tipo BOOL que indica que la SACL se deriva de un mecanismo predeterminado, en lugar de ser proporcionada explícitamente por el proveedor original del descriptor de seguridad. Esta marca puede afectar al modo en que el sistema controla la SACL, con respecto a la herencia ace. El sistema omite esta marca si no se SE la marca \_ SACL \_ PRESENT.
+Marca del tipo BOOL que indica que la SACL se deriva de un mecanismo predeterminado, en lugar de ser proporcionada explícitamente por el proveedor original del descriptor de seguridad. Esta marca puede afectar a la forma en que el sistema controla la SACL, con respecto a la herencia ace. El sistema omite esta marca si no se SE la marca \_ SACL \_ PRESENT.
 
 <dt>
 

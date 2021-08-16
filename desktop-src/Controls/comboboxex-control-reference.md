@@ -1,6 +1,6 @@
 ---
 title: ComboBoxEx Control
-description: Esta sección contiene información sobre los elementos de programación utilizados con controles ComboBoxEx.
+description: Esta sección contiene información sobre los elementos de programación utilizados con los controles ComboBoxEx.
 ms.assetid: vs|controls|~\controls\comboex\reflist.htm
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118413468"
 ---
 # <a name="comboboxex-control"></a>ComboBoxEx Control
 
-Esta sección contiene información sobre los elementos de programación utilizados con controles ComboBoxEx.
+Esta sección contiene información sobre los elementos de programación utilizados con los controles ComboBoxEx.
 
 ### <a name="overviews"></a>Temas de introducción
 
@@ -62,12 +62,12 @@ Esta sección contiene información sobre los elementos de programación utiliza
 | Tema                                                      | Contenido                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [CBEN \_ BEGINEDIT](cben-beginedit.md)                      | Se envía cuando el usuario activa la lista desplegable o hace clic en el cuadro de edición del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                    |
-| [DELETEITEM de CBEN \_](cben-deleteitem.md)                    | Se envía cuando se ha eliminado un elemento. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                                     |
-| [CBEN \_ DRAGBEGIN](cben-dragbegin.md)                      | Se envía cuando el usuario comienza a arrastrar la imagen del elemento que se muestra en la parte de edición del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                  |
+| [CBEN \_ DELETEITEM](cben-deleteitem.md)                    | Se envía cuando se ha eliminado un elemento. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                                     |
+| [DRAGBEGIN DE CBEN \_](cben-dragbegin.md)                      | Se envía cuando el usuario comienza a arrastrar la imagen del elemento que se muestra en la parte de edición del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                  |
 | [CBEN \_ ENDEDIT](cben-endedit.md)                          | Se envía cuando el usuario ha finalizado una operación dentro del cuadro de edición o ha seleccionado un elemento de la lista desplegable del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)<br/>                             |
-| [CBEN \_ GETDISPINFO](cben-getdispinfo.md)                  | Se envía para recuperar información de visualización sobre un elemento de devolución de llamada. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                             |
-| [INSERTITEM DE CBEN \_](cben-insertitem.md)                    | Se envía cuando se inserta un nuevo elemento en el control . Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                  |
-| [NM \_ SETCURSOR (ComboBoxEx)](nm-setcursor-comboboxex-.md) | Notifica a la ventana primaria de un control ComboBoxEx que el control está estableciendo el cursor en respuesta a un [**mensaje \_ SETCURSOR**](/windows/desktop/menurc/wm-setcursor) de WM. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/> |
+| [GETDISPINFO DE CBEN \_](cben-getdispinfo.md)                  | Se envía para recuperar información de visualización sobre un elemento de devolución de llamada. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                             |
+| [CBEN \_ INSERTITEM](cben-insertitem.md)                    | Se envía cuando se ha insertado un nuevo elemento en el control . Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                  |
+| [NM \_ SETCURSOR (ComboBoxEx)](nm-setcursor-comboboxex-.md) | Notifica a la ventana primaria de un control ComboBoxEx que el control establece el cursor en respuesta a un [**mensaje \_ SETCURSOR**](/windows/desktop/menurc/wm-setcursor) de WM. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/> |
 
 
 
@@ -80,7 +80,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 | Tema                                    | Contenido                                                                                                                                                                                     |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) | Contiene información sobre un elemento de un control ComboBoxEx.<br/>                                                                                                                       |
-| [**NMCBEDRAGBEGIN**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbedragbegina) | Contiene información utilizada con el código [de notificación \_ DRAGBEGIN de CBEN.](cben-dragbegin.md) <br/>                                                                                      |
+| [**NMCBEDRAGBEGIN**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbedragbegina) | Contiene información usada con el código [de notificación \_ DRAGBEGIN de CBEN.](cben-dragbegin.md) <br/>                                                                                      |
 | [**NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbeendedita)     | Contiene información sobre la conclusión de una operación de edición dentro de un control ComboBoxEx. Esta estructura se usa con el código [de notificación \_ ENDEDIT de CBEN.](cben-endedit.md) <br/> |
 | [**NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa)     | Contiene información específica de los elementos ComboBoxEx para su uso con códigos de notificación. <br/>                                                                                               |
 

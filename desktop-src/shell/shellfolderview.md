@@ -1,5 +1,5 @@
 ---
-description: Representa los objetos de una vista y proporciona propiedades y métodos que se usan para obtener información sobre el contenido de la vista.
+description: Representa los objetos de una vista y proporciona propiedades y métodos utilizados para obtener información sobre el contenido de la vista.
 ms.assetid: 3b866266-fee0-42f7-a1e0-9adb6cc2e23f
 title: Objeto ShellFolderView (Shldisp.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118452132"
 ---
 # <a name="shellfolderview-object"></a>Objeto ShellFolderView
 
-Representa los objetos de una vista y proporciona propiedades y métodos que se usan para obtener información sobre el contenido de la vista.
+Representa los objetos de una vista y proporciona propiedades y métodos utilizados para obtener información sobre el contenido de la vista.
 
 ## <a name="members"></a>Miembros
 
@@ -40,7 +40,7 @@ El **objeto ShellFolderView** tiene estos eventos.
 
 | Evento                                                        | Descripción                                                                              |
 |:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
-| [**SelectionChanged**](shellfolderview-selectionchanged.md) | Se produce cuando cambia el estado de selección de cualquier elemento o elemento de la vista.<br/> |
+| [**SelectionChanged**](shellfolderview-selectionchanged.md) | Se produce cuando el estado de selección de cualquier elemento o elemento de la vista ha cambiado.<br/> |
 
 
 
@@ -85,7 +85,7 @@ El **objeto ShellFolderView** tiene estas propiedades.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
@@ -96,7 +96,7 @@ El **objeto ShellFolderView** tiene estas propiedades.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

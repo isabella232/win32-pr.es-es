@@ -86,7 +86,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
-Coincide con el valor de este puntero con el valor del puntero **FileObject** en un [**evento FileIo \_ Name**](fileio-name.md) para determinar el nombre del archivo.
+Coincide con el valor de este puntero con el valor de puntero **FileObject** de un [**evento FileIo \_ Name**](fileio-name.md) para determinar el nombre del archivo.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(1), Extension("WmiTime")
 </dt> </dl>
 
-Marca de tiempo de inicio en la que se produjo un error en la página.
+Marca de tiempo de inicio en la que se produjo un error de página.
 
 </dd> <dt>
 

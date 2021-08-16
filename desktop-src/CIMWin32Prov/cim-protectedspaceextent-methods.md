@@ -1,5 +1,5 @@
 ---
-description: La clase \_ PROTECTEDSpaceExtent de CIM expone los métodos siguientes.
+description: La clase \_ CIM ProtectedSpaceExtent expone los métodos siguientes.
 ms.assetid: C715B0F1-488E-4A9E-AFD1-A0146D02DE6D
 ms.tgt_platform: multiple
 title: CIM_ProtectedSpaceExtent métodos
@@ -14,10 +14,10 @@ ms.locfileid: "118421306"
 ---
 # <a name="cim_protectedspaceextent-methods"></a>Métodos \_ ProtectedSpaceExtent de CIM
 
-La [**clase \_ PROTECTEDSpaceExtent de CIM**](cim-protectedspaceextent.md) expone los métodos siguientes.
+La [**clase \_ CIM ProtectedSpaceExtent**](cim-protectedspaceextent.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

@@ -3,7 +3,7 @@ title: WM/OriginalFilename
 description: El atributo WM/OriginalFilename contiene el nombre del archivo desde el que se hizo el contenido.
 ms.assetid: c7d5bda3-59b6-4ccd-a308-d06d5c803b34
 keywords:
-- Formato multimedia de Windows WM/OriginalFilename
+- WM/OriginalFilename windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ g \_ wszWMOriginalFilename
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE \_ TIPO \_ WMT**
+**CADENA DE TIPO WMT \_ \_**
 
 ## <a name="see-also"></a>Consulte también
 

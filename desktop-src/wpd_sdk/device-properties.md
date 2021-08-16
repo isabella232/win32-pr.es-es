@@ -43,7 +43,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="even">
 <td><span id="wpd_device_firmware_version"></span><span id="WPD_DEVICE_FIRMWARE_VERSION"></span><strong>WPD_DEVICE_FIRMWARE_VERSION</strong></td>
 <td><strong>VT_LPWSTR</strong></td>
-<td>Versión de firmware del dispositivo.</td>
+<td>La versión de firmware del dispositivo.</td>
 </tr>
 <tr class="odd">
 <td><span id="wpd_device_functional_unique_id"></span><span id="WPD_DEVICE_FUNCTIONAL_UNIQUE_ID"></span><strong>WPD_DEVICE_FUNCTIONAL_UNIQUE_ID</strong></td>
@@ -53,7 +53,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="even">
 <td><span id="wpd_device_manufacturer"></span><span id="WPD_DEVICE_MANUFACTURER"></span><strong>WPD_DEVICE_MANUFACTURER</strong></td>
 <td><strong>VT_LPWSTR</strong></td>
-<td>Nombre del fabricante del dispositivo legible.</td>
+<td>Un nombre de fabricante de dispositivos legible.</td>
 </tr>
 <tr class="odd">
 <td><span id="wpd_device_model"></span><span id="WPD_DEVICE_MODEL"></span><strong>WPD_DEVICE_MODEL</strong></td>
@@ -68,7 +68,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="odd">
 <td><strong>WPD_DEVICE_NETWORK_IDENTIFIER</strong></td>
 <td><strong>VT_UI8</strong></td>
-<td>Valor que especifica el identificador de red EUI-64 del dispositivo; esta propiedad se usa para las operaciones de red fuera de banda. Si el dispositivo tiene direcciones de red físicas MAC-48 (típicas de las redes IPv4), la dirección MAC-48 se codifica en la dirección EUI-64 como las dos mitades de la dirección MAC-48 separadas por FF-FF. El valor EUI-64 se almacena en orden de red o big-endian, donde una dirección &quot; &quot; &quot; &quot; EUI-64 de 01-02-03-FF-FF-04-05-06 se colocaría en el VT_UI8 de forma que el valor decimal sea 72624942021346566. Esta propiedad es necesaria en cualquier dispositivo que admita la autenticación nominal o segura. Esta propiedad se recomienda en dispositivos que solo admiten la autenticación cero. El host puede usar el valor para establecer automáticamente el acceso al dispositivo sin intervención del usuario.<br/></td>
+<td>Valor que especifica el identificador de red EUI-64 del dispositivo; esta propiedad se usa para operaciones de red fuera de banda. Si el dispositivo tiene direcciones de red físicas MAC-48 (típicas de las redes IPv4), la dirección MAC-48 se codifica en la dirección EUI-64 como las dos mitades de la dirección MAC-48 separadas por FF-FF. El valor EUI-64 se almacena en orden de red o big-endian, donde una dirección &quot; &quot; &quot; &quot; EUI-64 de 01-02-03-FF-FF-04-05-06 se colocaría en el VT_UI8 de forma que el valor decimal sea 72624942021346566. Esta propiedad es necesaria en cualquier dispositivo que admita la autenticación nominal o segura. Esta propiedad se recomienda en dispositivos que solo admiten la autenticación cero. El host puede usar el valor para establecer automáticamente el acceso al dispositivo sin intervención del usuario.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="wpd_device_power_level"></span><span id="WPD_DEVICE_POWER_LEVEL"></span><strong>WPD_DEVICE_POWER_LEVEL</strong></td>
@@ -78,7 +78,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="odd">
 <td><span id="wpd_device_power_source"></span><span id="WPD_DEVICE_POWER_SOURCE"></span><strong>WPD_DEVICE_POWER_SOURCE</strong></td>
 <td>VT_UI4</td>
-<td>Enumeración <a href="wpd-power-sources.md"><strong>WPD_POWER_SOURCES</strong></a> que especifica la fuente de alimentación del dispositivo.</td>
+<td>Una <a href="wpd-power-sources.md"><strong>WPD_POWER_SOURCES</strong></a> enumeración que especifica la fuente de alimentación del dispositivo.</td>
 </tr>
 <tr class="even">
 <td><span id="wpd_device_protocol"></span><span id="WPD_DEVICE_PROTOCOL"></span><strong>WPD_DEVICE_PROTOCOL</strong></td>
@@ -108,7 +108,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="odd">
 <td><span id="wpd_device_sync_partner"></span><span id="WPD_DEVICE_SYNC_PARTNER"></span><strong>WPD_DEVICE_SYNC_PARTNER</strong></td>
 <td><strong>VT_LPWSTR</strong></td>
-<td>Descripción legible del asociado de sincronización de <em>un dispositivo.</em> Se trata de un dispositivo, aplicación o servidor con el que el dispositivo se comunica para mantener un estado o un grupo de archivos comunes entre ambos asociados. Algunos ejemplos son los programas de correo electrónico y las bibliotecas de música.</td>
+<td>Descripción legible del asociado de sincronización <em>de un dispositivo.</em> Se trata de un dispositivo, aplicación o servidor con el que el dispositivo se comunica para mantener un estado o un grupo de archivos comunes entre ambos asociados. Algunos ejemplos son los programas de correo electrónico y las bibliotecas de música.</td>
 </tr>
 <tr class="even">
 <td><span id="wpd_device_friendly_name"></span><span id="WPD_DEVICE_FRIENDLY_NAME"></span><strong>WPD_DEVICE_FRIENDLY_NAME</strong></td>
@@ -123,7 +123,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="even">
 <td><span id="wpd_device_type"></span><span id="WPD_DEVICE_TYPE"></span><strong>WPD_DEVICE_TYPE</strong></td>
 <td><strong>VT_UI4</strong></td>
-<td>Valor que especifica el tipo de dispositivo; las aplicaciones usan esta propiedad solo con fines de representación. Las características funcionales del dispositivo se deciden a través de objetos funcionales. Los dispositivos que no proporcionen un <strong></strong> icono de dispositivo, por ejemplo, un WPD_RESOURCE_ICON para el objeto de dispositivo, se representarán en el espacio de nombres de WPD con un icono genérico. Este icono dependerá del tipo de dispositivo especificado; por ejemplo, si el tipo de dispositivo es un teléfono móvil, se usa el icono de teléfono genérico. En la primera instalación del dispositivo, el instalador de clase WPD consultará este valor de propiedad y lo almacenará en el registro de dispositivos en el valor PORTABLE_DEVICE_TYPE como un REG_DWORD.<br/> Los valores posibles de este parámetro son de la <a href="object-properties.md"><strong>WPD_DEVICE_TYPES</strong></a> enumeración definida en PortableDevice.h. Los valores son:<br/> <dl> <strong>WPD_DEVICE_TYPE_GENERIC</strong><br />
+<td>Valor que especifica el tipo de dispositivo; las aplicaciones usan esta propiedad solo con fines de representación. Las características funcionales del dispositivo se deciden a través de objetos funcionales. Los dispositivos que no proporcionen un <strong></strong> icono de dispositivo, por ejemplo, un WPD_RESOURCE_ICON para el objeto de dispositivo, se representarán en el espacio de nombres de WPD con un icono genérico. Este icono dependerá del tipo de dispositivo especificado; por ejemplo, si el tipo de dispositivo es un teléfono móvil, se usa el icono de teléfono genérico. En la primera instalación del dispositivo, el instalador de clase WPD consultará este valor de propiedad y lo almacenará en el registro de dispositivos en el valor PORTABLE_DEVICE_TYPE como REG_DWORD.<br/> Los valores posibles de este parámetro son de la <a href="object-properties.md"><strong>WPD_DEVICE_TYPES</strong></a> enumeración definida en PortableDevice.h. Los valores son:<br/> <dl> <strong>WPD_DEVICE_TYPE_GENERIC</strong><br />
 <strong>WPD_DEVICE_TYPE_CAMERA</strong><br />
 <strong>WPD_DEVICE_TYPE_MEDIA_PLAYER</strong><br />
 <strong>WPD_DEVICE_TYPE_PHONE</strong><br />
@@ -135,7 +135,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="odd">
 <td><span id="wpd_device_use_device_stage"></span><span id="WPD_DEVICE_USE_DEVICE_STAGE"></span><strong>WPD_DEVICE_USE_DEVICE_STAGE</strong></td>
 <td><strong>VT_BOOL</strong></td>
-<td>Si esta propiedad existe y se establece en <strong>TRUE,</strong>el dispositivo se puede usar con la fase de dispositivo . Esto está pensado para dispositivos que no pueden almacenar <strong>metadatos</strong>mediante el dispositivo Metadata Service , pero que proporcionarán metadatos en los servidores de Microsoft.</td>
+<td>Si esta propiedad existe y se establece en <strong>TRUE,</strong>el dispositivo se puede usar con la fase de dispositivo . Está pensado para dispositivos que no pueden almacenar metadatos mediante el Metadata Service <strong>dispositivo,</strong>pero que proporcionarán metadatos en los servidores de Microsoft.</td>
 </tr>
 </tbody>
 </table>
@@ -154,7 +154,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

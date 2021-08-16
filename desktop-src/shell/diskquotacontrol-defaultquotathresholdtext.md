@@ -41,7 +41,7 @@ Valor de cadena que contiene el umbral de cuota predeterminado para el volumen.
 
 ## <a name="remarks"></a>Comentarios
 
-El umbral de cuota predeterminado se aplica automáticamente a los nuevos usuarios del volumen. Si el uso de disco de un usuario supera este valor y la propiedad [**LogQuotaThreshold**](diskquotacontrol-logquotathreshold.md) se establece en **TRUE,** el sistema genera una entrada del registro de eventos. Por ejemplo, si el umbral predeterminado es 10,0 MB, el valor de la propiedad es "10,0 MB". Si el volumen no tiene ningún umbral predeterminado, la propiedad se establece en "Sin límite" o en el equivalente localizado.
+El umbral de cuota predeterminado se aplica automáticamente a los nuevos usuarios del volumen. Si el uso del disco de un usuario supera este valor y la propiedad [**LogQuotaThreshold**](diskquotacontrol-logquotathreshold.md) se establece en **TRUE,** el sistema genera una entrada del registro de eventos. Por ejemplo, si el umbral predeterminado es 10,0 MB, el valor de la propiedad es "10,0 MB". Si el volumen no tiene ningún umbral predeterminado, la propiedad se establece en "Sin límite" o en el equivalente localizado.
 
 ## <a name="requirements"></a>Requisitos
 

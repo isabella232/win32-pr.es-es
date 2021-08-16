@@ -22,12 +22,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 24ac4655fc374c40eb530828229a319f9ee1375e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 15b24c827d99386206b778675f93fbe1a507cf0ec849caa066e0a438f413d101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814016"
 ---
 # <a name="thread_v2_typegroup1-class"></a>Clase \_ \_ TypeGroup1 de Thread V2
 
@@ -228,7 +228,7 @@ Dirección inicial de la función que va a ejecutar este subproceso.
 
 ## <a name="remarks"></a>Comentarios
 
-Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se están ejecutando actualmente en el momento en que se inicia y finaliza la sesión del kernel, respectivamente.
+Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se ejecutan actualmente en el momento en que se inicia y finaliza la sesión del kernel, respectivamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -236,8 +236,8 @@ Los tipos de eventos DCStart y DCEnd enumeran los subprocesos que se están ejec
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

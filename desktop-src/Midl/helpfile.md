@@ -3,7 +3,7 @@ title: helpfile (atributo)
 description: El atributo \ helpfile\ establece el nombre del archivo de Ayuda para una biblioteca de tipos. Todos los tipos de una biblioteca comparten el mismo archivo de Ayuda.
 ms.assetid: caa248b1-a1a7-4c36-886a-079a66a01907
 keywords:
-- ATRIBUTO MIDL del archivo de ayuda
+- atributo helpfile MIDL
 topic_type:
 - apiref
 api_name:
@@ -60,7 +60,7 @@ Especifica cero o más atributos que el compilador MIDL aplicará a la [**biblio
 
 </dd> <dt>
 
-*instrucciones de biblioteca* 
+*instrucciones library* 
 </dt> <dd>
 
 Especifica una o varias instrucciones MIDL que definen la interfaz de biblioteca.

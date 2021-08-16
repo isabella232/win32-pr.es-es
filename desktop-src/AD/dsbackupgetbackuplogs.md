@@ -57,7 +57,7 @@ Contiene el identificador de contexto de copia de seguridad obtenido con la [**f
 *pszBackupLogFiles* \[ out\]
 </dt> <dd>
 
-Puntero a un puntero de cadena que recibe la lista de nombres de archivo de registro como rutas de acceso UNC. Inicialice este valor en **NULL** antes de llamar a **DsBackupGetBackupLogs.**
+Puntero a un puntero de cadena que recibe la lista de nombres de archivo de registro como rutas de acceso UNC. Inicialice este valor **en NULL** antes de llamar a **DsBackupGetBackupLogs.**
 
 Esta lista recibe una lista doble terminada en NULL de cadenas terminadas en null únicas.
 
@@ -90,18 +90,18 @@ El autor de la llamada no tiene los privilegios de acceso adecuados para llamar 
 **ERROR \_ PARÁMETRO NO \_ VÁLIDO**
 </dt> <dd>
 
-*hbc,* *pszBackupLogFiles* o *vhSize no* es válido.
+*hbc,* *pszBackupLogFiles* o *pwSize* no es válido.
 
 </dd> <dt>
 
 **ERROR \_ NO HAY SUFICIENTE \_ \_ MEMORIA**
 </dt> <dd>
 
-Error de asignación de memoria.
+Se produjo un error de asignación de memoria.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **función DsBackupGetBackupLogs proporciona** una lista de los archivos de registro necesarios para una copia de seguridad. Una copia de seguridad completa consta de los archivos de base de datos proporcionados por la función [**DsBackupGetDatabaseNames**](dsbackupgetdatabasenames.md) y los archivos de registro. No se admiten copias de Active Directory incrementales de servidores.
 
@@ -109,7 +109,7 @@ La **función DsBackupGetBackupLogs proporciona** una lista de los archivos de r
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -120,7 +120,7 @@ La **función DsBackupGetBackupLogs proporciona** una lista de los archivos de r
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -133,7 +133,7 @@ La **función DsBackupGetBackupLogs proporciona** una lista de los archivos de r
 [**Constantes de BFT**](bft-constants.md)
 </dt> <dt>
 
-[Hacer una copia de seguridad de Active Directory Server](backing-up-an-active-directory-server.md)
+[Copia de seguridad de un Active Directory servidor](backing-up-an-active-directory-server.md)
 </dt> <dt>
 
 [Funciones de copia de seguridad de directorios](directory-backup-functions.md)

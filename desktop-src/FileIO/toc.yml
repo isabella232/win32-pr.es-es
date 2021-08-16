@@ -7,25 +7,25 @@
         - name: Acerca de la administración de directorios
           href: about-directory-management.md
           items:
-            - name: Crear y eliminar directorios
+            - name: Creación y eliminación de directorios
               href: creating-and-deleting-directories.md
             - name: Identificadores de directorio
               href: obtaining-a-handle-to-a-directory.md
             - name: Puntos de análisis
               href: reparse-points.md
               items:
-                - name: Etiquetas de punto de reanálisis
+                - name: Etiquetas de punto de reanción
                   href: reparse-point-tags.md
-                - name: Operaciones de punto de análisis
+                - name: Operaciones de punto de reanción
                   href: reparse-point-operations.md
-                - name: Puntos de análisis y operaciones de archivo
+                - name: Análisis de puntos y operaciones de archivo
                   href: reparse-points-and-file-operations.md
         - name: Uso de la administración de directorios
           href: using-directory-management.md
           items:
             - name: Cambiar el directorio actual
               href: changing-the-current-directory.md
-            - name: Enumerar los archivos de un directorio
+            - name: Enumeración de los archivos de un directorio
               href: listing-the-files-in-a-directory.md
             - name: Mover directorios
               href: moving-directories.md
@@ -94,21 +94,21 @@
     - name: Administración de discos
       href: disk-management.md
       items:
-        - name: Acerca de la administración de discos
+        - name: Acerca de administración de discos
           href: about-disk-management.md
           items:
-            - name: Dispositivos y particiones de disco
+            - name: Dispositivos de disco y particiones
               href: disk-devices-and-partitions.md
             - name: Discos básicos y dinámicos
               href: basic-and-dynamic-disks.md
-            - name: Definir un nombre de dispositivo de MS-DOS
+            - name: Definir un nombre de dispositivo MS-DOS
               href: defining-an-ms-dos-device-name.md
             - name: Administración de cuotas de disco
               href: managing-disk-quotas.md
               items:
-                - name: Administración de las cuotas de disco en el nivel de usuario
+                - name: Administración de cuotas de disco en el nivel de usuario
                   href: user-level-administration-of-disk-quotas.md
-                - name: Administración de las cuotas de disco en el nivel de sistema
+                - name: Administración de cuotas de disco de nivel de sistema
                   href: system-level-administration-of-disk-quotas.md
                 - name: Límites de cuota de disco
                   href: disk-quota-limits.md
@@ -240,92 +240,92 @@
                 - name: IDiskQuotaControl
                   href: /windows/desktop/api/dskquota/nn-dskquota-idiskquotacontrol
                   items:
-                    - name: Método AddUserName
+                    - name: AddUserName (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-addusername
-                    - name: Método AddUserSid
+                    - name: AddUserSid (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-addusersid
-                    - name: Método CreateEnumUsers
+                    - name: CreateEnumUsers (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-createenumusers
-                    - name: Método CreateUserBatch
+                    - name: CreateUserBatch (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-createuserbatch
                     - name: DeleteUser (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-deleteuser
-                    - name: Método FindUserName
+                    - name: FindUserName (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-findusername
-                    - name: Método FindUserSid
+                    - name: FindUserSid (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-findusersid
-                    - name: Método GetDefaultQuotaLimit
+                    - name: GetDefaultQuotaLimit (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getdefaultquotalimit
-                    - name: Método GetDefaultQuotaLimitText
+                    - name: GetDefaultQuotaLimitText (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getdefaultquotalimittext
-                    - name: Método GetDefaultQuotaThreshold
+                    - name: GetDefaultQuotaThreshold (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getdefaultquotathreshold
-                    - name: Método GetDefaultQuotaThresholdText
+                    - name: GetDefaultQuotaThresholdText (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getdefaultquotathresholdtext
-                    - name: Método GetQuotaLogFlags
+                    - name: GetQuotaLogFlags (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getquotalogflags
-                    - name: Método GetQuotaState
+                    - name: GetQuotaState (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getquotastate
                     - name: Método GiveUserNameResolutionPriority
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-giveusernameresolutionpriority
                     - name: Método Initialize
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-initialize
-                    - name: Método InvalidateSidNameCache
+                    - name: InvalidateSidNameCache (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-invalidatesidnamecache
-                    - name: Método SetDefaultQuotaLimit
+                    - name: SetDefaultQuotaLimit (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-setdefaultquotalimit
-                    - name: Método SetDefaultQuotaThreshold
+                    - name: SetDefaultQuotaThreshold (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-setdefaultquotathreshold
-                    - name: Método SetQuotaLogFlags
+                    - name: SetQuotaLogFlags (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-setquotalogflags
-                    - name: Método SetQuotaState
+                    - name: SetQuotaState (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-setquotastate
-                    - name: Método ShutdownNameResolution
+                    - name: ShutdownNameResolution (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-shutdownnameresolution
                 - name: IDiskQuotaEvents
                   href: /windows/desktop/api/dskquota/nn-dskquota-idiskquotaevents
                   items:
-                    - name: Método OnUserNameChanged
+                    - name: OnUserNameChanged (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotaevents-onusernamechanged
                 - name: IDiskQuotaUser
                   href: /windows/desktop/api/dskquota/nn-dskquota-idiskquotauser
                   items:
-                    - name: Método GetAccountStatus
+                    - name: GetAccountStatus (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getaccountstatus
                     - name: Método GetID
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getid
                     - name: Método GetName
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getname
-                    - name: Método GetQuotaInformation
+                    - name: GetQuotaInformation (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotainformation
-                    - name: Método GetQuotaLimit
+                    - name: GetQuotaLimit (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotalimit
-                    - name: Método GetQuotaLimitText
+                    - name: GetQuotaLimitText (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotalimittext
-                    - name: Método GetQuotaThreshold
+                    - name: GetQuotaThreshold (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotathreshold
-                    - name: Método GetQuotaThresholdText
+                    - name: GetQuotaThresholdText (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotathresholdtext
-                    - name: Método GetQuotaUsed
+                    - name: GetQuotaUsed (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotaused
-                    - name: Método GetQuotaUsedText
+                    - name: GetQuotaUsedText (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotausedtext
                     - name: GetSid (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getsid
-                    - name: Método GetSidLength
+                    - name: GetSidLength (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getsidlength
-                    - name: Invalidate (método)
+                    - name: Invalidate (Método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-invalidate
-                    - name: Método SetQuotaLimit
+                    - name: SetQuotaLimit (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-setquotalimit
-                    - name: Método SetQuotaThreshold
+                    - name: SetQuotaThreshold (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-setquotathreshold
                 - name: IDiskQuotaUserBatch
                   href: /windows/desktop/api/dskquota/nn-dskquota-idiskquotauserbatch
                   items:
                     - name: Agregar método
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauserbatch-add
-                    - name: Método FlushToDisk
+                    - name: FlushToDisk (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauserbatch-flushtodisk
                     - name: Remove (método)
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauserbatch-remove
@@ -485,7 +485,7 @@
                   href: /windows/win32/api/WinIoCtl/ns-winioctl-verify_information
             - name: Tipos de partición de disco
               href: disk-partition-types.md
-        - name: Trabajar con unidades de NVMe
+        - name: Trabajar con unidades NVMe
           href: working-with-nvme-devices.md
     - name: Administración de archivos
       href: file-management.md
@@ -495,12 +495,12 @@
           items:
             - name: Comparación de la funcionalidad del sistema de archivos
               href: filesystem-functionality-comparison.md
-            - name: Especificación del sistema de archivos exFat
+            - name: exComponción del sistema de archivos
               href: exfat-specification.md
             - name: Archivos y clústeres
               href: files-and-clusters.md
               items:
-                - name: Secuencias de archivo
+                - name: Archivo Secuencias
                   href: file-streams.md
                 - name: Objetos de archivo
                   href: file-objects.md
@@ -513,9 +513,9 @@
             - name: 'Crear, eliminar y mantener archivos'
               href: creating--deleting--and-maintaining-files.md
               items:
-                - name: 'Nomenclatura de archivos, rutas de acceso y espacios de nombres'
+                - name: 'Asignar nombres a archivos, rutas de acceso y espacios de nombres'
                   href: naming-a-file.md
-                - name: Límite máximo de rutas de acceso de archivo
+                - name: Limitación máxima de ruta de acceso de archivo
                   href: maximum-file-path-limitation.md
                 - name: Crear y abrir archivos
                   href: creating-and-opening-files.md
@@ -523,12 +523,12 @@
                   href: moving-and-replacing-files.md
                 - name: Cerrar y eliminar archivos
                   href: closing-and-deleting-files.md
-                - name: Desfragmentar archivos
+                - name: Desfragmentación de archivos
                   href: defragmenting-files.md
-            - name: Obtener y establecer información de archivos
+            - name: Obtención y configuración de la información del archivo
               href: obtaining-and-setting-file-information.md
               items:
-                - name: Recuperando información de tipo de archivo
+                - name: Recuperar información de tipo de archivo
                   href: retrieving-file-type-information.md
                 - name: Determinar el tamaño de un archivo
                   href: determining-the-size-of-a-file.md
@@ -543,16 +543,16 @@
               items:
                 - name: Colocar un puntero de archivo
                   href: positioning-a-file-pointer.md
-                - name: Leer o escribir en archivos mediante un esquema de Scatter-Gather
+                - name: Lectura o escritura en archivos mediante un esquema Scatter-Gather datos
                   href: reading-from-or-writing-to-files-using-a-scatter-gather-scheme.md
-                - name: Vaciar System-Buffered datos de e/s en el disco
+                - name: Vaciado de System-Buffered datos de E/S en disco
                   href: flushing-system-buffered-i-o-data-to-disk.md
-                - name: Truncar o extender archivos
+                - name: Truncamiento o extensión de archivos
                   href: truncating-or-extending-files.md
             - name: Vinculación de archivos y directorios
               href: file-and-directory-linking.md
               items:
-                - name: Vínculos físicos y uniones
+                - name: Vínculos duros y uniones
                   href: hard-links-and-junctions.md
                 - name: Seguimiento de vínculos distribuidos e identificadores de objetos
                   href: distributed-link-tracking-and-object-identifiers.md
@@ -561,22 +561,22 @@
             - name: Compresión y descompresión de archivos
               href: file-compression-and-decompression.md
               items:
-                - name: Atributo Compression
+                - name: Atributo compression
                   href: compression-attribute.md
                 - name: Estado de compresión
                   href: compression-state.md
-                - name: Obtención del tamaño de un archivo comprimido
+                - name: Obtener el tamaño de un archivo comprimido
                   href: obtaining-the-size-of-a-compressed-file.md
-                - name: Descompresión de un solo archivo
+                - name: Descompresión de un único archivo
                   href: decompressing-a-single-file.md
-                - name: Descomprimir varios archivos
+                - name: Descompresión de varios archivos
                   href: decompressing-multiple-files.md
-                - name: Leer archivos comprimidos
+                - name: Lectura desde archivos comprimidos
                   href: reading-from-compressed-files.md
             - name: Cifrado de archivos
               href: file-encryption.md
               items:
-                - name: Administrar archivos y directorios cifrados
+                - name: Control de archivos y directorios cifrados
                   href: handling-encrypted-files-and-directories.md
                 - name: Archivos cifrados y claves de usuario
                   href: encrypted-files-and-user-keys.md
@@ -584,42 +584,42 @@
                   href: backup-and-restore-of-encrypted-files.md
             - name: Derechos de acceso y seguridad de archivos
               href: file-security-and-access-rights.md
-            - name: Entrada y salida (e/s)
+            - name: Entrada y salida (E/S)
               href: input-and-output--i-o-.md
               items:
-                - name: Conceptos de e/s
+                - name: Conceptos de E/S
                   href: i-o-concepts.md
                   items:
                     - name: Almacenamiento en búfer de archivo
                       href: file-buffering.md
                     - name: Almacenamiento en caché de archivos
                       href: file-caching.md
-                    - name: E/s sincrónica y asincrónica
+                    - name: E/S sincrónica y asincrónica
                       href: synchronous-and-asynchronous-i-o.md
-                    - name: Cancelar operaciones de e/s pendientes
+                    - name: Cancelación de operaciones de E/S pendientes
                       href: canceling-pending-i-o-operations.md
-                    - name: E/s de alertas
+                    - name: E/S que se puede alertar
                       href: alertable-i-o.md
-                    - name: Puertos de finalización de e/s
+                    - name: Puertos de finalización de E/S
                       href: i-o-completion-ports.md
-                - name: Conceptos de e/s de red
+                - name: Conceptos de E/S de red
                   href: network-i-o-concepts.md
                   items:
-                    - name: Descripción de una operación de e/s de red
+                    - name: Descripción de una operación de E/S de red
                       href: description-of-a-network-i-o-operation.md
                       items:
-                        - name: Diferencias en la e/s local y de red
+                        - name: Diferencias en E/S local y de red
                           href: differences-in-local-and-network-i-o.md
-                        - name: Redirectores de red
+                        - name: Redirectors de red
                           href: network-redirectors.md
-                    - name: Información general sobre el protocolo SMB de Microsoft y el protocolo CIFS
+                    - name: Introducción al protocolo SMB de Microsoft y al protocolo CIFS
                       href: microsoft-smb-protocol-and-cifs-protocol-overview.md
                       items:
                         - name: Dialectos del protocolo SMB de Microsoft
                           href: microsoft-smb-protocol-dialects.md
                         - name: Autenticación de protocolo SMB de Microsoft
                           href: microsoft-smb-protocol-authentication.md
-                        - name: Escenario de intercambio de paquetes del protocolo SMB de Microsoft
+                        - name: Escenario de paquetes de protocolo SMB Exchange Microsoft
                           href: microsoft-smb-protocol-packet-exchange-scenario.md
                     - name: Bloqueos oportunistas
                       href: opportunistic-locks.md
@@ -630,13 +630,13 @@
                           href: data-coherency.md
                         - name: Cómo solicitar un bloqueo oportunista
                           href: how-to-request-an-opportunistic-lock.md
-                        - name: Respuesta del servidor para abrir solicitudes en archivos bloqueados
+                        - name: Respuesta del servidor a solicitudes abiertas en archivos bloqueados
                           href: server-response-to-open-requests-on-locked-files.md
                         - name: Tipos de bloqueos oportunistas
                           href: types-of-opportunistic-locks.md
-                        - name: Interrumpir bloqueos oportunistas
+                        - name: Separación de bloqueos oportunistas
                           href: breaking-opportunistic-locks.md
-                        - name: Ejemplos de bloqueos oportunistas
+                        - name: Ejemplos de bloqueo oportunista
                           href: opportunistic-lock-examples.md
                         - name: Operaciones de bloqueo oportunista
                           href: opportunistic-lock-operations.md
@@ -645,20 +645,20 @@
               items:
                 - name: Operaciones de archivos dispersos
                   href: sparse-file-operations.md
-                - name: Obtención del tamaño de un archivo disperso
+                - name: Obtener el tamaño de un archivo disperso
                   href: obtaining-the-size-of-a-sparse-file.md
                 - name: Archivos dispersos y cuotas de disco
                   href: sparse-files-and-disk-quota.md
             - name: Vínculos simbólicos
               href: symbolic-links.md
               items:
-                - name: Efectos simbólicos de los vínculos en las funciones del sistema de archivos
+                - name: Efectos simbólicos de vínculo en funciones de sistemas de archivos
                   href: symbolic-link-effects-on-file-systems-functions.md
                 - name: Consideraciones sobre la programación
                   href: symbolic-link-programming-considerations.md
                 - name: Crear vínculos simbólicos
                   href: creating-symbolic-links.md
-        - name: Uso de la administración de archivos
+        - name: Uso de administración de archivos
           href: using-file-management.md
           items:
             - name: Agregar usuarios a un archivo cifrado
@@ -667,15 +667,15 @@
               href: appending-one-file-to-another-file.md
             - name: Crear y usar un archivo temporal
               href: creating-and-using-a-temporary-file.md
-            - name: Bloquear y desbloquear intervalos de bytes en archivos
+            - name: Bloqueo y desbloqueo de intervalos de bytes en archivos
               href: locking-and-unlocking-byte-ranges-in-files.md
             - name: Apertura de un archivo para lectura o escritura
               href: opening-a-file-for-reading-or-writing.md
             - name: Recuperar y cambiar atributos de archivo
               href: retrieving-and-changing-file-attributes.md
-            - name: Probar el final de un archivo
+            - name: Pruebas para el final de un archivo
               href: testing-for-the-end-of-a-file.md
-            - name: Usar secuencias
+            - name: Uso de Secuencias
               href: using-streams.md
         - name: Referencia de administración de archivos
           href: file-management-reference.md
@@ -1169,7 +1169,7 @@
                   href: /windows/win32/api/WinIoCtl/ns-winioctl-ntfs_statistics
                 - name: 'NTFS_STATISTICS_EX '
                   href: /windows/win32/api/WinIoCtl/ns-winioctl-ntfs_statistics_ex
-                - name: Unstruct
+                - name: OFSTRUCT
                   href: /windows/win32/api/WinBase/ns-winbase-ofstruct
                 - name: OVERLAPPED_ENTRY
                   href: /windows/win32/api/MinWinBase/ns-minwinbase-overlapped_entry
@@ -1199,9 +1199,9 @@
           items:
             - name: Cuándo usar NTFS transaccional
               href: when-to-use-transactional-ntfs.md
-            - name: Implementar NTFS transaccional
+            - name: Implementación de NTFS transaccional
               href: deploying-transactional-ntfs.md
-            - name: Cómo usar NTFS transaccional
+            - name: Uso de NTFS transaccional
               href: how-to-use-transactional-ntfs.md
             - name: Conceptos básicos de TxF
               href: txf-basic-concepts.md
@@ -1209,7 +1209,7 @@
               href: programming-considerations-for-transacted-fileio-.md
             - name: Consideraciones de rendimiento para NTFS transaccional
               href: performance-considerations-for-transactional-ntfs.md
-        - name: Referencia de NTFS transaccional
+        - name: Referencia ntfs transaccional
           href: transactional-ntfs-reference.md
           items:
             - name: Códigos de control TxF
@@ -1237,7 +1237,7 @@
                   href: /windows/desktop/api/winioctl/ni-winioctl-fsctl_txfs_transaction_active
                 - name: FSCTL_TXFS_WRITE_BACKUP_INFORMATION
                   href: /windows/desktop/api/winioctl/ni-winioctl-fsctl_txfs_write_backup_information
-            - name: Funciones TxF
+            - name: Funciones de TxF
               href: txf-functions.md
               items:
                 - name: TxfLogCreateFileReadContext
@@ -1246,7 +1246,7 @@
                   href: /windows/desktop/api/TxfW32/nf-txfw32-txflogdestroyreadcontext
                 - name: TxfLogReadRecords
                   href: /windows/desktop/api/TxfW32/nf-txfw32-txflogreadrecords
-            - name: Estructuras TxF
+            - name: Estructuras txf
               href: transactional-ntfs-structures.md
               items:
                 - name: TXFS_CREATE_MINIVERSION_INFO
@@ -1295,35 +1295,35 @@
           items:
             - name: Reconocimiento del sistema de archivos
               href: file-system-recognition.md
-            - name: Asignar un nombre a un volumen
+            - name: Asignar nombres a un volumen
               href: naming-a-volume.md
-            - name: Enumerar volúmenes
+            - name: Enumeración de volúmenes
               href: enumerating-volumes.md
             - name: Obtención de información de volumen
               href: obtaining-volume-information.md
-            - name: Cambiar diarios
+            - name: Cambiar diario
               href: change-journals.md
               items:
                 - name: Cambiar registros de diario
                   href: change-journal-records.md
                 - name: Usar el identificador del diario de cambios
                   href: using-the-change-journal-identifier.md
-                - name: 'Creación, modificación y eliminación de un diario de cambios'
+                - name: 'Crear, modificar y eliminar un diario de cambios'
                   href: creating-modifying-and-deleting-a-change-journal.md
-                - name: Obtención de un identificador de volumen para las operaciones del diario de cambios
+                - name: Obtener un identificador de volumen para las operaciones del diario de cambios
                   href: obtaining-a-volume-handle-for-change-journal-operations.md
-                - name: Cambiar operaciones de diario
+                - name: Operaciones de diario de cambios
                   href: change-journal-operations.md
             - name: Carpetas montadas
               href: volume-mount-points.md
               items:
                 - name: Crear carpetas montadas
                   href: mounting-and-dismounting-a-volume.md
-                - name: Enumerar carpetas montadas
+                - name: Enumeración de carpetas montadas
                   href: enumerating-volume-mount-points.md
                 - name: Determinar si un directorio es una carpeta montada
                   href: determining-whether-a-directory-is-a-volume-mount-point.md
-                - name: Asignación de una letra de unidad a un volumen
+                - name: Asignar una letra de unidad a un volumen
                   href: assigning-a-drive-letter-to-a-volume.md
                 - name: Funciones de carpeta montada
                   href: volume-mount-point-functions.md
@@ -1332,24 +1332,24 @@
         - name: Uso de administración de volúmenes
           href: using-volume-management.md
           items:
-            - name: Calcular una suma de comprobación del reconocimiento del sistema de archivos
+            - name: Calcular una suma de comprobación de reconocimiento del sistema de archivos
               href: computing-a-file-system-recognition-checksum.md
             - name: Ejemplos de carpetas montadas
               href: volume-mount-point-examples.md
               items:
                 - name: Mostrar rutas de acceso de volumen
                   href: displaying-volume-paths.md
-                - name: Edición de asignaciones de Letras de unidad
+                - name: Edición de asignaciones de letra de unidad
                   href: editing-drive-letter-assignments.md
                 - name: Crear una carpeta montada
                   href: mounting-a-volume-at-a-mount-point.md
-                - name: Enumerar rutas de acceso de GUID de volumen
+                - name: Enumeración de rutas de acceso GUID de volumen
                   href: enumerating-unique-volume-names.md
-                - name: Eliminar una carpeta montada
+                - name: Eliminación de una carpeta montada
                   href: unmounting-a-volume-at-a-mount-point.md
-            - name: Obtención de información de reconocimiento del sistema de archivos
+            - name: Obtener información de reconocimiento del sistema de archivos
               href: obtaining-file-system-recognition-information.md
-            - name: Recorrer un búfer de registros del diario de cambios
+            - name: Recorrer un búfer de registros de diario de cambios
               href: walking-a-buffer-of-change-journal-records.md
         - name: Referencia de administración de volúmenes
           href: volume-management-reference.md
@@ -1459,7 +1459,7 @@
                   href: /windows/desktop/api/FileAPI/nf-fileapi-findvolumeclose
                 - name: FindVolumeMountPointClose
                   href: /windows/desktop/api/WinBase/nf-winbase-findvolumemountpointclose
-                - name: GetDriveType
+                - name: Getdrivetype
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getdrivetypea
                 - name: GetLogicalDrives
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getlogicaldrives
