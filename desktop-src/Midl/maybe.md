@@ -1,9 +1,9 @@
 ---
-title: posible atributo
-description: La palabra clave \ maybe \ indica que la llamada a procedimiento remoto no tiene que ejecutarse cada vez que se llama a y el cliente no espera una respuesta. Tenga en cuenta que el protocolo \ tal vez no garantiza la entrega o la finalización de la llamada.
+title: atributo maybe
+description: La palabra clave \maybe\ indica que la llamada a procedimiento remoto no necesita ejecutarse cada vez que se llama a y el cliente no espera una respuesta. Tenga en cuenta que el protocolo \maybe\ no garantiza la entrega ni la finalización de la llamada.
 ms.assetid: 163b9fd5-7dce-493e-95bc-63807f42a498
 keywords:
-- posible atributo MIDL
+- quizás atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68704e19d421150444933d74f6b78fc5bada46f6
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 178faf3d308f7dd282e31a8f0eabf8708bb8b3fe1a0d52a981e65adddb258ad1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067155"
 ---
-# <a name="maybe-attribute"></a>posible atributo
+# <a name="maybe-attribute"></a>atributo maybe
 
-La palabra clave **\[ puede \]** indicar que la llamada a procedimiento remoto no tiene que ejecutarse cada vez que se llama a y el cliente no espera una respuesta. Tenga en cuenta que el protocolo **\[ maybe \]** no garantiza la entrega ni la finalización de la llamada.
+La palabra **\[ clave puede \]** indicar que la llamada a procedimiento remoto no necesita ejecutarse cada vez que se llama a y el cliente no espera una respuesta. Tenga en cuenta **\[ que el protocolo quizás \]** no garantiza la entrega ni la finalización de la llamada.
 
 ``` syntax
 [
@@ -37,28 +37,28 @@ interface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de cero o más atributos IDL que se aplican a la interfaz en conjunto. Cuando dos o más atributos de interfaz están presentes, deben separarse con comas.
+Especifica una lista de cero o más atributos IDL que se aplican a la interfaz en su conjunto. Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Especifica el nombre de la interfaz.
 
 </dd> <dt>
 
-*lista de atributos* 
+*attribute-list* 
 </dt> <dd>
 
-Especifica los atributos adicionales que se van a aplicar a la función. Separe varios atributos con comas.
+Especifica atributos adicionales que se aplicarán a la función. Separe varios atributos con comas.
 
 </dd> <dt>
 
-*ReturnType* 
+*returntype* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
@@ -68,7 +68,7 @@ Especifica el tipo de valor devuelto de la función.
 *nombre-de-la-función* 
 </dt> <dd>
 
-Especifica el nombre de la función a la que se aplicará el atributo **\[ maybe \]** .
+Especifica el nombre de la función a la que **\[ \] se** aplicará el atributo maybe.
 
 </dd> <dt>
 
@@ -79,15 +79,15 @@ Lista de parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una llamada con el atributo **\[ maybe \]** no puede contener parámetros de salida y es implícitamente una **\[** llamada [**idempotente**](idempotent.md) **\]** .
+Una llamada con el **\[ atributo \] maybe** no puede contener parámetros de salida y es implícitamente una llamada **\[** [**idempotente.**](idempotent.md) **\]**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**amplia**](broadcast.md)
+[**Difusión**](broadcast.md)
 </dt> <dt>
 
 [**idempotent**](idempotent.md)
@@ -96,9 +96,9 @@ Una llamada con el atributo **\[ maybe \]** no puede contener parámetros de sal
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre el elemento JobOptimalDestinationColorProfile que especifica el perfil de color óptimo dada la configuración actual del dispositivo.
+description: Obtenga información sobre el elemento JobOptimalDestinationColorProfile, que especifica el perfil de color óptimo dada la configuración actual del dispositivo.
 ms.assetid: 70790dc2-180a-4e04-91a9-a10ee76c836b
 title: JobOptimalDestinationColorProfile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e7ad2ea269594809b047922ea4f6c99b924e5ae
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 9f2a63f63993f6a9cf8de8ba0a332407bb645099d98e6d92669c18368bd7629a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099673"
 ---
 # <a name="joboptimaldestinationcolorprofile"></a>JobOptimalDestinationColorProfile
 
@@ -61,7 +61,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                            | Tipo de datos         | Unidad           | Valores admitidos          | Resumen                                        |
 |---------------------------------|-------------------|----------------|---------------------------|------------------------------------------------|
-| \_ProfileValue\_<br/>     | string<br/> | N/D<br/> | RGB, RGB, RGB, CCI<br/> | Especifica el perfil de color.<br/>        |
+| \_ProfileValue\_<br/>     | string<br/> | N/D<br/> | RGB, RGB, RGB, RGB<br/> | Especifica el perfil de color.<br/>        |
 | \_PathValue\_<br/>        | string<br/> | N/D<br/> | N/D<br/>            | Especifica la ruta de acceso del archivo al perfil.<br/> |
 | \_ProfileDataValue\_<br/> | string<br/> | N/D<br/> | N/D<br/>            | Contiene contenido de datos de perfil.<br/>      |
 
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
  <psf:Property name="psk:JobOptimalDestinationColorProfile">
@@ -91,7 +91,7 @@ Las palabras clave del esquema de impresión público se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

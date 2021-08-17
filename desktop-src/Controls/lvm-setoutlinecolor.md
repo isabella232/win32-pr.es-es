@@ -39,7 +39,7 @@ Establece el color del borde de un control de vista de lista si se establece el 
 
 Devuelve **la estructura COLORREF** que contiene el color del contorno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
 > Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)

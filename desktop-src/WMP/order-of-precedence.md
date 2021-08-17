@@ -3,11 +3,11 @@ title: Orden de precedencia
 description: Orden de precedencia
 ms.assetid: 3865ea8a-2489-4714-9a05-d1082589841f
 keywords:
-- Metaarchivos de Windows Media, orden de prioridad
-- Metaarchivos de Windows Media, prioridad
-- metaarchivos, orden de prioridad
-- metaarchivos, prioridad
-- Windows Media, metaarchivos
+- Windows Metarchivos multimedia, orden de prioridad
+- Windows Metarchivos multimedia, prioridad
+- metarchivos, orden de prioridad
+- metarchivos, prioridad
+- Windows Multimedia, metarchivos
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -15,72 +15,72 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9161d1e43f61ae1b1a7231c640e33c4c6ec6527f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12b55f34dd18fa6122d3f1588111aaffe374f2d87c06ef9100cbac057efd4bd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467998"
 ---
 # <a name="order-of-precedence"></a>Orden de precedencia
 
-No todos los atributos de elemento de metarchivo se crean igual. Algunos atributos de elemento de metarchivo invalidan otros atributos de elemento. Los atributos de elemento pueden reemplazarse por atributos de elemento similares en función de la posición y el orden. Los atributos de una lista de reproducción de metarchivo invalidan los contenidos en un archivo de Windows Media al que se hace referencia. Un atributo que reemplaza a otro tiene mayor precedencia.
+No todos los atributos de elemento de metarchivo se crean iguales. Algunos atributos de elemento de metarchivo invalidan otros atributos de elemento. Los atributos de elemento se pueden reemplazar por atributos de elemento similares en función de la posición y el orden. Los atributos de una lista de reproducción de metarchivo invalidan los contenidos en un archivo Windows media. Un atributo que invalida otro tiene mayor prioridad.
 
-En la tabla siguiente se muestra la jerarquía de prioridad más alta a la más baja. El elemento de prioridad más alto nunca se invalida.
+En la tabla siguiente se muestra la jerarquía, la prioridad más alta a la más baja. El elemento de prioridad más alta nunca se invalida.
 
 
 
 | Ámbito                    | Hierarchy                                   |
 |--------------------------|---------------------------------------------|
 | "Contenido DRM firmado"     | Nunca se invalida.                           |
-| Ámbito del elemento **ref**    | Solo se reemplaza por contenido DRM firmado.      |
-| Ámbito del elemento de **entrada**  | Reemplaza los elementos de las categorías siguientes. |
-| Ámbito de **ASX**            | Invalida los elementos de archivo multimedia.              |
-| Ámbito de archivo de Windows Media | Reemplazado por todo lo anterior.             |
+| **Ámbito del** elemento REF    | Solo se reemplaza por contenido DRM firmado.      |
+| **Ámbito del** elemento ENTRY  | Invalida los elementos de las categorías siguientes. |
+| **Ámbito de ASX**            | Invalida los elementos del archivo multimedia.              |
+| Windows Ámbito del archivo multimedia | Se reemplaza por todos los anteriores.             |
 
 
 
- 
+ 
 
 -   "Contenido DRM firmado": objeto de firma digital.
 
-    Los atributos de contenido DRM firmado reemplazarán a todos los demás. Por ejemplo, la información de copyright de "contenido DRM firmado" no se invalidará. Siempre se transmitirá por secuencias y se presentará.
+    Los atributos del contenido drm firmado reemplazarán a todos los demás. Por ejemplo, no se invalidará la información de copyright del "contenido DRM firmado". Siempre se transmitirá y presentará.
 
--   Ámbito del elemento **ref**
+-   **Ámbito del** elemento REF
 
-    Los atributos del elemento **ref** reemplazarán a otros atributos de elemento, pero no a contenido DRM firmado.
+    Los atributos del **elemento REF** invalidarán otros atributos de elemento, pero no el contenido DRM firmado.
 
--   Ámbito de **entrada**
+-   **Ámbito ENTRY**
 
-    El atributo de elemento de **referencia** invalidará los atributos del elemento de **entrada** , pero invalidará otros atributos de elemento. Los metadatos de **título** del elemento de **entrada** se muestran en lugar de la información de título del archivo multimedia.
+    Los atributos del **elemento ENTRY** se reemplazarán por el atributo de elemento **REF,** pero invalidarán otros atributos de elemento. **Los** metadatos TITLE del **elemento ENTRY** se muestran en lugar de la información de título del archivo multimedia.
 
--   Ámbito de **ASX**
+-   **Ámbito de ASX**
 
-    Las propiedades que se escriban en el metarchivo invalidarán las contenidas en el archivo de Windows Media. Los atributos del elemento de **entrada** reemplazan los atributos del elemento **ASX** . Mientras se reproduce el clip multimedia al que se hace referencia del elemento de **entrada** , se muestran los metadatos del **título** del elemento de **entrada** en lugar de la información de título del elemento **ASX** .
+    Las propiedades que se introducen en el metarchivo invalidan las contenidas en el Windows multimedia. Los atributos del **elemento ENTRY** invalidan los atributos del elemento **ASX.** Mientras se **reproduce el** clip multimedia al que se hace referencia del elemento **ENTRY,** se muestran los metadatos TITLE del **elemento ENTRY** en lugar de la información de título del **elemento ASX.**
 
--   Ámbito de archivo de Windows Media
+-   Windows Ámbito del archivo multimedia
 
-    Los atributos de metarchivo reemplazan a los atributos del archivo de Windows Media. Los metadatos del archivo multimedia se muestran solo si no hay metadatos definidos para ese elemento en el metarchivo.
+    Los atributos del archivo Windows multimedia se reemplazan por cualquier atributo de metarchivo. Los metadatos del archivo multimedia solo se muestran si no hay ningún metadato definido para ese elemento en el metarchivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Crear listas de reproducción de metarchivo**](creating-metafile-playlists.md)
+[**Creación de listas de reproducción de metarchivo**](creating-metafile-playlists.md)
 </dt> <dt>
 
-[**Listas de reproducción de metarchivos**](metafile-playlists.md)
+[**Listas de reproducción de metarchivo**](metafile-playlists.md)
 </dt> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guía de metarchivo de Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guía de metarchivo multimedia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

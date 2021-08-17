@@ -1,23 +1,23 @@
 ---
-description: En la tabla de este tema se muestran los valores de las propiedades seleccionadas del sistema operativo Windows Installer.
+description: En la tabla de este tema se muestran los valores de las propiedades Windows sistema operativo del instalador seleccionado.
 ms.assetid: 4f516cf0-d5b3-4df6-b171-54bbafc0ef93
 title: Valores de propiedad del sistema operativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b5747d5be27566bbdb5ec1e7e9208ac5ffbf6f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 461419a29bc62b9aa51e76fe2a471f4c6ef9a079767f40cbeaab397358a10ec8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145558"
 ---
 # <a name="operating-system-property-values"></a>Valores de propiedad del sistema operativo
 
-En la tabla de este tema se muestran los valores de [las propiedades seleccionadas del sistema operativo](property-reference.md)Windows Installer.
+En la tabla de este tema se muestran los valores de las propiedades Windows sistema operativo [del instalador seleccionados.](property-reference.md)
 
 
 
-| System                                        | VersionNT | WindowsBuild                  | ServicePackLevel |
+| Sistema                                        | VersionNT | WindowsBuild                  | ServicePackLevel |
 |-----------------------------------------------|-----------|-------------------------------|------------------|
 | Windows 2000                                  | 500       | 2195                          | No aplicable   |
 | Windows 2000 + Service Pack 1                 | 500       | 2195                          | 1                |
@@ -37,7 +37,7 @@ En la tabla de este tema se muestran los valores de [las propiedades seleccionad
 | Windows Server 2008                           | 600       | 6001                          | No aplicable   |
 | Windows Server 2008 con Service Pack 2 (SP2) | 600       | 6002                          | 2                |
 | Windows Server 2008 R2                        | 601       | mayor que 7100             | No aplicable   |
-| Windows 7                                     | 601       | mayor que 7100             | No aplicable   |
+| Windows 7                                     | 601       | mayor que 7100             | No aplicable   |
 | Windows 7 con Service Pack 1 (SP1)           | 601       | mayor que 7100             | 1                |
 | Windows 8                                     | 602       | mayor o igual que 9200 | No es aplicable   |
 | Windows Server 2012                           | 602       | mayor o igual que 9200 | No aplicable   |
@@ -46,7 +46,7 @@ En la tabla de este tema se muestran los valores de [las propiedades seleccionad
 
  
 
-Para obtener más información, consulte [versiones publicadas de Windows Installer](released-versions-of-windows-installer.md), [**VersionNT**](versionnt.md), [**WindowsBuild**](windowsbuild.md)y [**ServicePackLevel**](servicepacklevel.md).
+Para obtener más información, vea Versiones publicadas [de Windows Installer](released-versions-of-windows-installer.md), [**VersionNT**](versionnt.md), [**WindowsBuild**](windowsbuild.md)y [**ServicePackLevel**](servicepacklevel.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

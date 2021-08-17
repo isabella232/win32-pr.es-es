@@ -4,16 +4,16 @@ ms.assetid: 275fda71-61ef-4b50-96fe-bdc0c0266646
 title: Especificar información de cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4f6ca094b627b6c2cee16ec587a8c850cd17f78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b437c4d0c0ce9d04f55bb00a1fd4b666d30cf29228050151072e43f87edb11a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119445505"
 ---
 # <a name="specifying-client-information"></a>Especificar información de cliente
 
-Algunos controladores de dispositivos usan la información de cliente proporcionada en el segundo argumento para optimizar el rendimiento del dispositivo. Como mínimo, la aplicación debe proporcionar una cadena que contenga su nombre, un número de versión principal, un número de versión secundaria y un número de revisión. Estos son los campos proporcionados por la aplicación de ejemplo.
+Algunos controladores de dispositivo usan la información de cliente proporcionada en el segundo argumento para optimizar el rendimiento del dispositivo. Como mínimo, la aplicación debe proporcionar una cadena que contenga su nombre, un número de versión principal, un número de versión secundaria y un número de revisión. Estos son los campos proporcionados por la aplicación de ejemplo.
 
 
 ```C++
@@ -25,7 +25,7 @@ Algunos controladores de dispositivos usan la información de cliente proporcion
 
 
 
-La `GetClientInformation` función de la aplicación de ejemplo crea y rellena una interfaz **IPortableDeviceValues** con la información del cliente. Esta función tiene dos partes principales. La primera parte crea una instancia de un objeto de valores de dispositivo portable mediante una llamada a la función CoCreateInstance.
+La `GetClientInformation` función de la aplicación de ejemplo crea y rellena una interfaz **IPortableDeviceValues** con información de cliente. Esta función tiene dos partes principales. La primera parte crea una instancia de un objeto device-values portátil mediante una llamada a la función CoCreateInstance.
 
 
 ```C++
@@ -37,7 +37,7 @@ HRESULT hr = CoCreateInstance(CLSID_PortableDeviceValues,
 
 
 
-La segunda parte establece la información del cliente en el objeto de valores de dispositivo portable.
+La segunda parte establece la información del cliente en el objeto portable device-values.
 
 
 ```C++
@@ -88,10 +88,10 @@ else
 
 <dl> <dt>
 
-[**Interfaz IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**Guía de programación**](programming-guide.md)

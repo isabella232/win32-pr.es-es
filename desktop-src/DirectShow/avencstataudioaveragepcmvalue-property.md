@@ -1,19 +1,19 @@
 ---
-description: Devuelve el nivel de volumen medio del contenido de audio.
+description: Devuelve el nivel medio de volumen del contenido de audio.
 ms.assetid: 371c2eb6-24dc-42f0-a525-2a7fcd7cb087
-title: Propiedad AVEncStatAudioAveragePCMValue (Codecapi. h)
+title: Propiedad AVEncStatAudioAveragePCMValue (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15de3cb8f1a4aaf8f1e71f3d534dffed1535dbeb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4a516c0fe1fd00696892c3e2d35735bbea0f3502b0c0013d5016b92dc34b2209
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275975"
 ---
 # <a name="avencstataudioaveragepcmvalue-property"></a>Propiedad AVEncStatAudioAveragePCMValue
 
-Devuelve el nivel de volumen medio del contenido de audio.
+Devuelve el nivel medio de volumen del contenido de audio.
 
 Esta propiedad es de lectura y escritura.
 
@@ -25,7 +25,7 @@ Esta propiedad es de lectura y escritura.
 
 **CODECAPI \_ AVEncStatAudioAveragePCMValue**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad está disponible una vez completada la codificación.
 
@@ -33,22 +33,22 @@ Esta propiedad está disponible una vez completada la codificación.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Especifica el método que se va a utilizar para la coincidencia de movimiento.
+description: Especifica el método que se usará para la coincidencia de movimiento.
 ms.assetid: 75bbc189-3092-4813-9f45-54e8e48b05cd
-title: Propiedad MFPKEY_MOTIONMATCHMETHOD (Wmcodecdsp. h)
+title: MFPKEY_MOTIONMATCHMETHOD propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09496e714633dd394f55122b7461f29a2daa3656
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bec0604acc7dc0634be296e5097c3594dc74e5ceb7bdb7563b48a164cd13b164
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119355735"
 ---
-# <a name="mfpkey_motionmatchmethod-property"></a>\_Propiedad MOTIONMATCHMETHOD de MFPKEY
+# <a name="mfpkey_motionmatchmethod-property"></a>Propiedad MFPKEY \_ MOTIONMATCHMETHOD
 
-Especifica el método que se va a utilizar para la coincidencia de movimiento.
+Especifica el método que se usará para la coincidencia de movimiento.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -27,9 +27,9 @@ VT \_ I4
 
 0
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad se puede establecer en uno de los valores siguientes.
+Esta propiedad puede establecerse en uno de los valores siguientes.
 
 
 
@@ -37,13 +37,13 @@ Esta propiedad se puede establecer en uno de los valores siguientes.
 |-------|-----------------------------------|
 | 0     | suma de diferencias absolutas (SAD) |
 | 1     | Hadamard                          |
-| -1    | Adaptativo macrobloque: adaptable.              |
+| -1    | Macroblock-adaptive.              |
 
 
 
  
 
-La suma de diferencias absolutas (SAD) es un método más rápido pero menos preciso que la transformación Hadamard. La transformación Hadamard es más precisa pero es computacionalmente intensiva. El modo de adaptación adaptativo macrobloque proporciona un compromiso razonable entre los dos métodos mediante la elección dinámica entre las dos transformaciones y la selección de la transformación Hadamard solo cuando sea necesario.
+La suma de las diferencias absolutas (SAD) es un método más rápido pero menos preciso que la transformación de Hadamard. La transformación de Hadamard es más precisa, pero requiere muchos cálculos. El modo de macrobloqueo adaptable proporciona un riesgo razonable entre los dos métodos al elegir dinámicamente entre las dos transformaciones, seleccionando la transformación de Hadamard solo cuando sea necesario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ La suma de diferencias absolutas (SAD) es un método más rápido pero menos pre
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ La suma de diferencias absolutas (SAD) es un método más rápido pero menos pre
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

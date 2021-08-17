@@ -58,16 +58,16 @@ La sugerencia de [**análisis IContextNode**](icontextnode.md) objetos [**en el 
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis](classes-and-interfaces---ink-analysis.md) de entrada de lápiz de los valores devueltos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppAnalysisHints* cuando ya no necesite usar el objeto .
 
  
 
-Este método devuelve una colección vacía si no hay nodos de sugerencia de análisis asociados a [**IInkAnalyzer.**](iinkanalyzer.md)
+Este método devuelve una colección vacía si no hay nodos de sugerencia de análisis asociados a [**IInkAnalyzer**](iinkanalyzer.md).
 
-Un nodo de sugerencia de análisis es [**un IContextNode**](icontextnode.md) con un tipo de nodo de contexto AnalysisHint (vea [**IContextNode::GetType**](icontextnode-gettype.md) y [Tipos de nodo de contexto).](context-node-types.md)
+Un nodo de sugerencia de análisis es [**un IContextNode**](icontextnode.md) con un tipo de nodo de contexto AnalysisHint (vea [**IContextNode::GetType**](icontextnode-gettype.md) y Tipos de nodo [de contexto).](context-node-types.md)
 
 Para agregar información de contexto a la sugerencia, use [**IContextNode::AddPropertyData**](icontextnode-addpropertydata.md) con el parámetro *pPropertyDataId* establecido en uno de los identificadores únicos globales (GUID) en las constantes [propiedades](analysis-hint-properties.md) de sugerencias de análisis.
 
@@ -77,7 +77,7 @@ Para buscar qué valores de propiedad se establecen en un nodo de contexto, use 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
@@ -86,7 +86,7 @@ Para buscar qué valores de propiedad se establecen en un nodo de contexto, use 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

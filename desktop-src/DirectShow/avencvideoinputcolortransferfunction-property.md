@@ -27,21 +27,21 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la [**enumeración eAVEncVideoColorTransferFunction.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolortransferfunction)
+El valor de esta propiedad es miembro de la [**enumeración eAVEncVideoColorTransferFunction.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolortransferfunction)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
 | Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -38,7 +38,7 @@ Public Class InkCollection
 
 ## <a name="setting-things-up"></a>Configuración de las cosas
 
-El método del `InkCollection_Load` formulario controla el evento Load [del](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) formulario. Crea un objeto [InkCollector](/previous-versions/ms836493(v=msdn.10)) asignado al formulario que modifica la propiedad [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) del objeto InkCollector y habilita el objeto InkCollector.
+El método del `InkCollection_Load` formulario controla el evento Load [del](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) formulario. Crea un [objeto InkCollector](/previous-versions/ms836493(v=msdn.10)) asignado al formulario que modifica la propiedad [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) del objeto InkCollector y habilita el objeto InkCollector.
 
 
 ```C++
@@ -67,7 +67,7 @@ La propiedad [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) 
 
 ## <a name="changing-the-properties"></a>Cambiar las propiedades
 
-El resto de esta sencilla aplicación consta de controladores para las distintas selecciones de menú que el usuario puede realizar. Por ejemplo, cuando el usuario elige cambiar el color de la entrada de lápiz a rojo seleccionando Rojo en el menú Entrada manuscrita, el color cambia mediante la [propiedad Color](/previous-versions/ms837933(v=msdn.10)) de la propiedad [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) del objeto [InkCollector](/previous-versions/ms836493(v=msdn.10)) en el controlador de eventos del menú.
+El resto de esta sencilla aplicación consta de controladores para las distintas selecciones de menú que el usuario puede realizar. Por ejemplo, cuando el usuario elige cambiar el color de la entrada de lápiz a rojo seleccionando Rojo en el menú Entrada manuscrita, el color cambia mediante la propiedad [Color](/previous-versions/ms837933(v=msdn.10)) de la propiedad [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) del objeto [InkCollector](/previous-versions/ms836493(v=msdn.10)) en el controlador de eventos del menú.
 
 
 ```C++

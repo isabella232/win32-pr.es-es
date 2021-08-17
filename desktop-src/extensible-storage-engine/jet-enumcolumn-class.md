@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_ENUMCOLUMN (clase)'
-title: JET_ENUMCOLUMN (clase)
+description: 'Más información sobre: JET_ENUMCOLUMN clase'
+title: JET_ENUMCOLUMN clase
 TOCTitle: JET_ENUMCOLUMN class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dab7b5b8dc886f60f508c49f67e5dd3167e0cf5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 199b60d221c22b8d52ac88a251c366583cad21c6747578589706a2addeceb85b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475245"
 ---
-# <a name="jet_enumcolumn-class"></a>JET_ENUMCOLUMN (clase)
+# <a name="jet_enumcolumn-class"></a>JET_ENUMCOLUMN clase
 
-Enumera los valores de columna de un registro mediante la función JetEnumerateColumns. JetEnumerateColumns devuelve una matriz de estructuras JET_ENUMCOLUMNVALUE. La matriz se devuelve en memoria que se asignó mediante la devolución de llamada que se proporcionó a esa función.
+Enumera los valores de columna de un registro mediante la función JetEnumerateColumns. JetEnumerateColumns devuelve una matriz de JET_ENUMCOLUMNVALUE estructuras. La matriz se devuelve en la memoria que se asignó mediante la devolución de llamada que se proporcionó a esa función.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -64,6 +64,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN miembros](./jet-enumcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

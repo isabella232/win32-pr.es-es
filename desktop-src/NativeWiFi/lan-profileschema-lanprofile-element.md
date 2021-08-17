@@ -1,5 +1,5 @@
 ---
-description: Contiene un perfil de red con cable.
+description: Contiene un perfil de red cableada.
 ms.assetid: f5f9fcdc-febf-4730-8be4-5e1885d9ab08
 title: Elemento LANProfile
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 58ad88c9f975455bdd2d77a0ef8ee028d9027d9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6adaa0f4884ad275137a6c949dbc466416006f33bb6603dc61e87153d9b23361
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065105"
 ---
 # <a name="lanprofile-element"></a>Elemento LANProfile
 
-El elemento LANProfile contiene un perfil de red con cable. Este elemento es el elemento raíz único para un perfil de red con cable.
+El elemento LANProfile contiene un perfil de red cableada. Este elemento es el elemento raíz único para un perfil de red cableada.
 
 El espacio de nombres de destino para el elemento LANProfile es `https://www.microsoft.com/networking/LAN/profile/v1` .
 
@@ -76,16 +76,16 @@ El espacio de nombres de destino para el elemento LANProfile es `https://www.mic
 
 | Elemento                                                                 | Tipo    | Descripción                                                                                                                              |
 |-------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MSM**](lan-profileschema-msm-lanprofile-element.md)                 |         | Contiene la configuración del módulo específico del medio (MSM). <br/>                                                                               |
-| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Especifica si el servicio de configuración automática de redes cableadas intentará la autenticación del puerto mediante 802.1 X. <br/>      |
-| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1 X para la autenticación de puertos. <br/> |
-| [**bursátil**](lan-profileschema-security-msm-element.md)              |         | Contiene la configuración de seguridad. <br/>                                                                                                  |
+| [**Msm**](lan-profileschema-msm-lanprofile-element.md)                 |         | Contiene la configuración del módulo específico del medio (MSM). <br/>                                                                               |
+| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Especifica si el servicio de configuración automática para redes cableadas intentará la autenticación de puerto mediante 802.1X. <br/>      |
+| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1X para la autenticación de puertos. <br/> |
+| [**Seguridad**](lan-profileschema-security-msm-element.md)              |         | Contiene la configuración de seguridad. <br/>                                                                                                  |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para ver la lista de elementos secundarios en una estructura similar a un árbol, [vea \_ elementos de esquema de Perfil de LAN](lan-profileschema-elements.md).
+Para ver la lista de elementos secundarios en una estructura similar a un árbol, vea Elementos de esquema de [perfil DE \_ LAN.](lan-profileschema-elements.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,8 +93,8 @@ Para ver la lista de elementos secundarios en una estructura similar a un árbol
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Funciones de devolución de llamada y notificación de RPC
 description: Página de navegación llamada a procedimiento remoto (RPC) para funciones de devolución de llamada y notificación.
 ms.assetid: 63695358-5a34-4446-a896-4f0a25615cff
 keywords:
-- Llamada a procedimiento remoto RPC, funciones de referencia, devolución de llamada y notificación
+- Llamadas a procedimiento remoto RPC, funciones de referencia, devolución de llamada y notificación
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a1e05fab4300724f43972098753806b0d56ba59023fe884d05ab83d054e02a44
@@ -19,7 +19,7 @@ La lista siguiente contiene información sobre las funciones de devolución de l
 
 -   [**RPC \_ AUTH \_ KEY \_ RETRIEVAL \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_auth_key_retrieval_fn)
 -   [**RPC \_ IF \_ CALLBACK \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_if_callback_fn)
--   [**FN \_ DE \_ \_ DEVOLUCIÓN DE LLAMADA INACTIVA \_ DEL GRUPO DE INTERFAZ \_ RPC**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_interface_group_idle_callback_fn)
+-   [**FN \_ DE \_ \_ DEVOLUCIÓN DE \_ LLAMADA INACTIVA DEL GRUPO DE INTERFAZ \_ RPC**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_interface_group_idle_callback_fn)
 -   [**RPC \_ MGMT \_ AUTHORIZATION \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_mgmt_authorization_fn)
 -   [**RPC \_ OBJECT \_ INQ \_ FN**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_object_inq_fn)
 -   [**RPCNOTIFICATION \_ ROUTINE**](/previous-versions/aa375808(v=vs.80))

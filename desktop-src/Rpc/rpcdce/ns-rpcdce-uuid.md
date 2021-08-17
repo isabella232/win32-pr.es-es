@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118925952"
 ---
-# <a name="uuid-structure"></a>UUID (estructura)
+# <a name="uuid-structure"></a>Estructura UUID
 
 La **estructura UUID** define un identificador único universal (UUID). Un **UUID** proporciona una designación única de un objeto como una interfaz, un vector de punto de entrada de administrador o un objeto de cliente.
 
@@ -31,9 +31,9 @@ Las bibliotecas rpc en tiempo de ejecución usan **UUID** para comprobar la comp
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | Se define en rpcdce.h; include rpc.h |
+| **Header** | Definido en rpcdce.h; include rpc.h |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) 
  [UUID \_ VECTOR](/windows/win32/api/rpcdce/ns-rpcdce-uuid_vector)

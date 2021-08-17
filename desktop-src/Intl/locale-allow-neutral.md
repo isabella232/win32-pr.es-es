@@ -1,19 +1,19 @@
 ---
-description: configuración regional \_ permitir \_ neutro
+description: LOCALE \_ ALLOW \_ NEUTRAL
 ms.assetid: 7e51d290-bcc1-44ba-a968-0d04438c69b5
 title: LOCALE_ALLOW_NEUTRAL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19f062ce697a388625cebc88fee2a359d7b279e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d16fd5ee432ed581ecdc989f2bf0fb4646e8031da30cd2808ec3df36ae95060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147508"
 ---
-# <a name="locale_allow_neutral"></a>configuración regional \_ permitir \_ neutro
+# <a name="locale_allow_neutral"></a>LOCALE \_ ALLOW \_ NEUTRAL
 
-**Solo Windows Vista:** Considere la posibilidad de que las configuraciones regionales neutras sean válidas.
+**Windows Vista:** Considere la posibilidad de que las configuraciones regionales neutras sean válidas.
 
  
 

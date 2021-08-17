@@ -1,26 +1,26 @@
 ---
-description: Notifica a las aplicaciones que el sistema, normalmente un equipo personal con batería, está a punto de entrar en modo de suspensión.
+description: Notifica a las aplicaciones que el sistema, normalmente un equipo personal con batería, está a punto de entrar en modo suspendido.
 ms.assetid: ceaa5ca4-799e-4801-96cd-aeea3dfd7d52
-title: Mensaje de WM_POWER (WinUser. h)
+title: WM_POWER mensaje (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc53fd165ee1cefe8970f85daea04b931a673b33
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fd525b4bf229fdb04dac4c1d1492a52dad44317344f58a2f0807ba9afbdc962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143188"
 ---
-# <a name="wm_power-message"></a>Mensaje de energía de WM \_
+# <a name="wm_power-message"></a>Mensaje \_ DE WM POWER
 
-Notifica a las aplicaciones que el sistema, normalmente un equipo personal con batería, está a punto de entrar en modo de suspensión.
+Notifica a las aplicaciones que el sistema, normalmente un equipo personal con batería, está a punto de entrar en modo suspendido.
 
 > [!Note]  
-> El mensaje de **\_ energía de WM** está obsoleto. Solo se proporciona para ofrecer compatibilidad con aplicaciones basadas en Windows de 16 bits. Las aplicaciones deben usar el mensaje de [**\_ POWERBROADCAST de WM**](wm-powerbroadcast.md) .
+> El **mensaje WM \_ POWER** está obsoleto. Solo se proporciona por compatibilidad con aplicaciones basadas en Windows de 16 bits. Las aplicaciones deben usar el [**mensaje \_ WM POWERBROADCAST.**](wm-powerbroadcast.md)
 
  
 
-Una ventana recibe este mensaje a través de su función **WindowProc** .
+Una ventana recibe este mensaje a través de su **función WindowProc.**
 
 
 ```C++
@@ -38,7 +38,7 @@ LRESULT CALLBACK WindowProc
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador de la ventana.
@@ -48,22 +48,22 @@ Identificador de la ventana.
 *uMsg* 
 </dt> <dd>
 
-Identificador del mensaje de **\_ energía de WM** .
+Identificador **del mensaje WM \_ POWER.**
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-La notificación de evento de potencia. Este parámetro puede ser uno de los valores siguientes.
+Notificación de eventos de energía. Este parámetro puede ser uno de los valores siguientes.
 
 
 
 | Valor                                                                                                                                                                        | Significado                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PWR_CRITICALRESUME"></span><span id="pwr_criticalresume"></span><dl> <dt>**PWR \_ CRITICALRESUME**</dt> </dl> | Indica que el sistema está reanudando la operación después de entrar en modo suspendido sin difundir primero un mensaje de notificación **PWR \_ SUSPENDREQUEST** a la aplicación. Una aplicación debe realizar las acciones de recuperación necesarias.<br/>                                                   |
+| <span id="PWR_CRITICALRESUME"></span><span id="pwr_criticalresume"></span><dl> <dt>**PWR \_ CRITICALRESUME**</dt> </dl> | Indica que el sistema reanuda la operación después de entrar en modo suspendido sin difundir primero un mensaje de notificación **\_ SUSPENDREQUEST** de PWR a la aplicación. Una aplicación debe realizar las acciones de recuperación necesarias.<br/>                                                   |
 | <span id="PWR_SUSPENDREQUEST"></span><span id="pwr_suspendrequest"></span><dl> <dt>**PWR \_ SUSPENDREQUEST**</dt> </dl> | Indica que el sistema está a punto de entrar en modo suspendido.<br/>                                                                                                                                                                                                                                 |
-| <span id="PWR_SUSPENDRESUME"></span><span id="pwr_suspendresume"></span><dl> <dt>**PWR \_ SUSPENDRESUME**</dt> </dl>    | Indica que el sistema está reanudando la operación después de haber entrado en modo suspendido normalmente, es decir, el sistema difunde un mensaje de notificación **PWR \_ SUSPENDREQUEST** a la aplicación antes de que se suspendiera el sistema. Una aplicación debe realizar las acciones de recuperación necesarias.<br/> |
+| <span id="PWR_SUSPENDRESUME"></span><span id="pwr_suspendresume"></span><dl> <dt>**PWR \_ SUSPENDRESUME**</dt> </dl>    | Indica que el sistema está reanudando la operación después de haber entrado en modo suspendido normalmente, es decir, el sistema difunde un mensaje de notificación **\_ SUSPENDREQUEST** de PWR a la aplicación antes de que se suspendiera el sistema. Una aplicación debe realizar las acciones de recuperación necesarias.<br/> |
 
 
 
@@ -80,13 +80,13 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor que devuelve una aplicación depende del valor del parámetro *wParam* . Si *wParam* es **PWR \_ SUSPENDREQUEST**, el valor devuelto es **PWR \_ FAIL** para evitar que el sistema entre en estado suspendido; de lo contrario, es **PWR \_ OK**. Si *wParam* es **PWR \_ SUSPENDRESUME** o **PWR \_ CRITICALRESUME**, el valor devuelto es cero.
+El valor que devuelve una aplicación depende del valor del *parámetro wParam.* Si *wParam* es **PWR \_ SUSPENDREQUEST,** el valor devuelto es **PWR \_ FAIL** para evitar que el sistema entre en el estado suspendido; de lo contrario, **es PWR \_ OK**. Si *wParam es* **PWR \_ SUSPENDRESUME** o **PWR \_ CRITICALRESUME,** el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje solo se difunde a una aplicación que se ejecuta en un sistema que se ajusta a la especificación del sistema básico de entrada y salida (BIOS) de administración avanzada de energía (APM). El controlador de administración de energía emite el mensaje a cada ventana devuelta por la función **EnumWindows** .
+Este mensaje solo se difunde a una aplicación que se ejecuta en un sistema que se ajusta a la especificación del sistema básico de entrada/salida (BIOS) de Advanced Power Management (APM). El controlador de administración de energía difunde el mensaje a cada ventana devuelta por la **función EnumWindows.**
 
-El modo suspendido es el estado en el que se produce la mayor cantidad de ahorro de energía, pero se conservan todos los datos y parámetros operativos. Se conserva el contenido de la memoria de acceso aleatorio (RAM), pero es probable que se desactiven muchos dispositivos.
+El modo suspendido es el estado en el que se produce la mayor cantidad de ahorro de energía, pero se conservan todos los parámetros y datos operativos. Se conserva el contenido de la memoria de acceso aleatorio (RAM), pero es probable que muchos dispositivos se apaguen.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,9 +94,9 @@ El modo suspendido es el estado en el que se produce la mayor cantidad de ahorro
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ El modo suspendido es el estado en el que se produce la mayor cantidad de ahorro
 
 <dl> <dt>
 
-[**POWERBROADCAST de WM \_**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> </dl>
 
  

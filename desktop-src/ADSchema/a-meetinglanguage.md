@@ -1,10 +1,10 @@
 ---
 title: atributo meetingLanguage
-description: El idioma de una reunión.
+description: Idioma de una reunión.
 ms.assetid: 105bf324-deef-430d-91a2-f1d737f49318
 ms.tgt_platform: multiple
 keywords:
-- meetingLanguage esquema de AD de atributos
+- Esquema de AD del atributo meetingLanguage
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ae52b800eee8c6ff35a4d671bf367015e0610c7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: de007bb18de8ac0da2cd00d98ac89901a00e6b442a278c9be1dac11d40f3af0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300765"
 ---
 # <a name="meetinglanguage-attribute"></a>atributo meetingLanguage
 
-El idioma de una reunión.
+Idioma de una reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingLanguage                                                                  |
-| Nombre para mostrar de LDAP | meetingLanguage                                                                  |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Cualquier usuario puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
+| Ldap-Display-Name | meetingLanguage                                                                  |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Cualquiera puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
 | Frecuencia de actualización  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.574                                                           |
-| System-ID-GUID    | 11b6cc84-48c4-11d1-a9c3-0000f80367c1                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 11b6cc84-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -52,20 +52,20 @@ El idioma de una reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ El idioma de una reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ El idioma de una reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ El idioma de una reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ El idioma de una reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -157,20 +157,20 @@ El idioma de una reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 

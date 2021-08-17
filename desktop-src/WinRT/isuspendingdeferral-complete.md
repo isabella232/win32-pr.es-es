@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119464405"
 ---
-# <a name="isuspendingdeferralcomplete-method"></a>ISuspendingDeferral::Complete (Método)
+# <a name="isuspendingdeferralcomplete-method"></a>ISuspendingDeferral::Complete (método)
 
 Notifica al sistema que la aplicación ha guardado sus datos y está lista para suspenderse.
 

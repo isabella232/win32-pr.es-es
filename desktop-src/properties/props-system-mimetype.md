@@ -30,13 +30,13 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 
 Por ejemplo, un archivo EML tendría un [valor System.MIMEType]() de `message/rfc822` .
 
-En el caso de los archivos multimedia que son compatibles con varios tipos MIME, esta propiedad puede tener un sesgo hacia la indicación de un tipo MIME adecuado para Digital Living Network Alliance (DLNA).
+En el caso de los archivos multimedia compatibles con varios tipos MIME, esta propiedad puede tener un sesgo hacia la indicación de un tipo MIME adecuado para Digital Living Network Alliance (DLNA).
 
 ## <a name="related-topics"></a>Temas relacionados
 

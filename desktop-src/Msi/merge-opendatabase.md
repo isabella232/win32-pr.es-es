@@ -1,7 +1,7 @@
 ---
-description: El método OpenDatabase del objeto Merge abre una Windows Installer base de datos de instalación, que se encuentra en una ruta de acceso especificada, que se va a combinar con un módulo.
+description: El método OpenDatabase del objeto Merge abre una base de datos de instalación de Windows Installer, ubicada en una ruta de acceso especificada, que se va a combinar con un módulo.
 ms.assetid: 86f168e5-bc76-476d-9757-9b2a21bb9c4b
-title: Merge. OpenDatabase (método) (Mergemod. h)
+title: Método Merge.OpenDatabase (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 2e200da6fe3f4913e53d96a237cac2b4d4c9b77e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63736c3346c68f6902c1e35b63be46a7a3f202dfb8ac0254ac448c808bf85bfc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314895"
 ---
-# <a name="mergeopendatabase-method"></a>Merge. OpenDatabase (método)
+# <a name="mergeopendatabase-method"></a>Método Merge.OpenDatabase
 
-El método **OpenDatabase** del objeto [**Merge**](merge-object.md) abre una Windows Installer base de datos de instalación, que se encuentra en una ruta de acceso especificada, que se va a combinar con un módulo.
+El **método OpenDatabase** del objeto [**Merge**](merge-object.md) abre una base de datos de instalación de Windows Installer, ubicada en una ruta de acceso especificada, que se va a combinar con un módulo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ Merge.OpenDatabase(
 *Ruta de acceso* 
 </dt> <dd>
 
-Ruta de acceso a la base de datos que se está abriendo.
+Ruta de acceso a la base de datos que se va a abrir.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="c"></a>C++
 
-Vea función [**OpenDatabase**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-opendatabase) .
+Consulte [**Función OpenDatabase.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-opendatabase)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Vea función [**OpenDatabase**](/windows/win32/api/mergemod/nf-mergemod-imsmmerg
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 1,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

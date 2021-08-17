@@ -1,7 +1,7 @@
 ---
 description: Obtiene el siguiente número especificado de nombres de elementos de datos en la secuencia de enumeración.
 ms.assetid: 6f30bf64-bd63-43d7-ab7e-f64e372c723b
-title: 'IEnumPStoreItems:: Next (método) (pstore. h)'
+title: Método IEnumPStoreItems::Next (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 967f2f84553b87965d5b2c92d99e347cb259264b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0a70ac415c937b3fb3d5bf95901d2ae30f9d4b8fd5b5677c55465ccbadada4b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432595"
 ---
-# <a name="ienumpstoreitemsnext-method"></a>IEnumPStoreItems:: Next (método)
+# <a name="ienumpstoreitemsnext-method"></a>IEnumPStoreItems::Next (Método)
 
-\[El almacenamiento protegido (pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para las operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en las versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura proporcionada por las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Storage (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Obtiene el siguiente número especificado de nombres de elementos de datos en la secuencia de enumeración.
 
@@ -43,14 +43,14 @@ HRESULT Next(
 
 <dl> <dt>
 
-*Celt* \[ de\]
+*celta* \[ En\]
 </dt> <dd>
 
-El número de elementos de datos solicitados.
+Número de elementos de datos solicitados.
 
 </dd> <dt>
 
-*rgelt* \[ enuncia\]
+*rgelt* \[ out\]
 </dt> <dd>
 
 Puntero a una cadena en la que se va a devolver el nombre del elemento de datos.
@@ -66,7 +66,7 @@ Puntero al número de nombres de elementos de datos proporcionados realmente.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un valor **HRESULT** .
+El valor devuelto es un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ El valor devuelto es un valor **HRESULT** .
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| Encabezado<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | Archivo DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

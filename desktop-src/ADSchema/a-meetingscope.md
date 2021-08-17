@@ -1,10 +1,10 @@
 ---
 title: atributo meetingScope
-description: Puede ser global, local o algún otro valor. Su interpretación es específica de la aplicación.
+description: Puede ser global, local o cualquier otro valor. Su interpretación es específica de la aplicación.
 ms.assetid: 41d1552e-70e0-479c-86ce-cd5a52fe47ec
 ms.tgt_platform: multiple
 keywords:
-- meetingScope esquema de AD de atributos
+- Esquema de AD del atributo meetingScope
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95511f48a5b89752a7dcbb3c0fe072a540146322
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3e29b9f709b6e3d75017e1d049ab97c2d3b9f1a5c2958d76dc560d043fbf4591
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300615"
 ---
 # <a name="meetingscope-attribute"></a>atributo meetingScope
 
-Puede ser global, local o algún otro valor. Su interpretación es específica de la aplicación.
+Puede ser global, local o cualquier otro valor. Su interpretación es específica de la aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | meetingScope                                |
-| Nombre para mostrar de LDAP | meetingScope                                |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | meetingScope                                |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.581                      |
-| System-ID-GUID    | 11b6cc8a-48c4-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 11b6cc8a-48c4-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,20 +52,20 @@ Puede ser global, local o algún otro valor. Su interpretación es específica d
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Puede ser global, local o algún otro valor. Su interpretación es específica d
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Puede ser global, local o algún otro valor. Su interpretación es específica d
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Puede ser global, local o algún otro valor. Su interpretación es específica d
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Puede ser global, local o algún otro valor. Su interpretación es específica d
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -157,20 +157,20 @@ Puede ser global, local o algún otro valor. Su interpretación es específica d
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 

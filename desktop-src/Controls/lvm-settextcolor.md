@@ -1,6 +1,6 @@
 ---
 title: LVM_SETTEXTCOLOR mensaje (Commctrl.h)
-description: Establece el color de texto de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView SetTextColor.
+description: Establece el color de texto de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro \_ SetTextColor de ListView.
 ms.assetid: ff90c18b-0cd7-4331-bcd8-61044e891d1f
 keywords:
 - LVM_SETTEXTCOLOR controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "119217375"
 ---
 # <a name="lvm_settextcolor-message"></a>Mensaje \_ SETTEXTCOLOR de LVM
 
-Establece el color de texto de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView SetTextColor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextcolor)
+Establece el color de texto de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetTextColor de ListView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextcolor)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,13 +35,13 @@ Establece el color de texto de un control de vista de lista. Puede enviar este m
 *lParam* 
 </dt> <dd>
 
-COLORREF [**que**](/windows/desktop/gdi/colorref) especifica el nuevo color de texto.
+COLORREF [**que**](/windows/desktop/gdi/colorref) especifica el nuevo color del texto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 

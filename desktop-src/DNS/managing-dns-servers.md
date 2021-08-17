@@ -4,12 +4,12 @@ description: Obtenga información sobre la administración de servidores DNS. Un
 ms.assetid: 9ac68e35-112a-44d3-918d-2caea47b6e52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48d797e05bc326b35e48173082d9b36a2b334fd9
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: ccce0b6c4a292e2fe46ec8584a601deee9267d2c5f1bfdeebaefa05db630f437
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433385"
 ---
 # <a name="managing-dns-servers"></a>Administración de servidores DNS
 
@@ -36,7 +36,7 @@ Para ilustrar cómo implementar esos pasos de administración, se proporcionan e
 -   [Detención de un servidor DNS](dns-wmi-provider-samples-managing-a-dns-server.md)
 -   [Iniciar un servidor DNS](dns-wmi-provider-samples-managing-a-dns-server.md)
 -   [Reiniciar un servidor DNS](dns-wmi-provider-samples-managing-a-dns-server.md)
--   [Adición de una dirección IP](dns-wmi-provider-samples-managing-a-dns-server.md)
+-   [Agregar una dirección IP](dns-wmi-provider-samples-managing-a-dns-server.md)
 -   [Eliminación de una dirección IP](dns-wmi-provider-samples-managing-a-dns-server.md)
 -   [Enumeración de las propiedades del servidor DNS](dns-wmi-provider-samples-managing-a-dns-server.md)
 -   [Mostrar tipos de propiedades de servidor DNS](dns-wmi-provider-samples-managing-a-dns-server.md)

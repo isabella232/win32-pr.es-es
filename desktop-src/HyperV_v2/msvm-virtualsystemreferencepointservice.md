@@ -1,7 +1,7 @@
 ---
 description: Describe un servicio de punto de referencia del sistema virtual.
 ms.assetid: 888ecd21-4b59-46a9-b2e1-538e30dd2d1c
-title: Msvm_VirtualSystemReferencePointService (clase)
+title: Msvm_VirtualSystemReferencePointService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0614349ed6f6358316826bbfc2cd10ac55cba953
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f33ac35e9848b913978ef6fab91f60823e5c40e9a2bb652236b2ab902e4ea435
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105670063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119340165"
 ---
-# <a name="msvm_virtualsystemreferencepointservice-class"></a>MSVM \_ VirtualSystemReferencePointService (clase)
+# <a name="msvm_virtualsystemreferencepointservice-class"></a>Clase \_ VirtualSystemReferencePointService de Msvm
 
 Describe un servicio de punto de referencia del sistema virtual.
 
@@ -37,13 +37,13 @@ class Msvm_VirtualSystemReferencePointService : CIM_Service
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemReferencePointService** tiene estos tipos de miembros:
+La **clase \_ VirtualSystemReferencePointService de Msvm** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSVM \_ VirtualSystemReferencePointService** tiene estos métodos.
+La **clase \_ VirtualSystemReferencePointService de Msvm** tiene estos métodos.
 
 
 
@@ -52,7 +52,7 @@ La clase **MSVM \_ VirtualSystemReferencePointService** tiene estos métodos.
 | [**CreateReferencePoint**](msvm-virtualsystemreferencepointservice-createreferencepoint.md)                 | Crea un punto de referencia de un sistema virtual.<br/>            |
 | [**DestroyReferencePoint**](msvm-virtualsystemreferencepointservice-destroyreferencepoint.md)               | Elimina el punto de referencia especificado.<br/>                    |
 | [**ExportReferencePoint**](msvm-virtualsystemreferencepointservice-exportreferencepoint.md)                 | Exporta el punto de referencia del sistema virtual.<br/>        |
-| [**ImportReferencePointMetadata**](msvm-virtualsystemreferencepointservice-importreferencepointmetadata.md) | Importa los metadatos del punto de referencia del sistema virtual.<br/>   |
+| [**ImportReferencePointMetadata**](msvm-virtualsystemreferencepointservice-importreferencepointmetadata.md) | Importa metadatos de punto de referencia del sistema virtual.<br/>   |
 | [**RemoveAssociatedData**](msvm-virtualsystemreferencepointservice-removeassociateddata.md)                 | Quita el registro de datos asociado al punto de referencia.<br/> |
 
 
@@ -65,10 +65,10 @@ La clase **MSVM \_ VirtualSystemReferencePointService** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -77,7 +77,7 @@ La clase **MSVM \_ VirtualSystemReferencePointService** tiene estos métodos.
 
 <dl> <dt>
 
-[**\_Servicio CIM**](cim-service.md)
+[**Servicio \_ CIM**](cim-service.md)
 </dt> </dl>
 
  

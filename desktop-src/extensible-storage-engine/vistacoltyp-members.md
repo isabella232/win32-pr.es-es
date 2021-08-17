@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Miembros de VistaColtyp'
-title: Miembros de VistaColtyp (Microsoft.Isam.Esent.Interop.Vista)
+title: Miembros vistaColtyp (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaColtyp members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp_members(v=EXCHG.10)
@@ -21,7 +21,7 @@ Incluir miembros heredados
 
 Tipos de columna que se han agregado a la versión vista de ESENT.
 
-El [tipo VistaColtyp](./vistacoltyp-class.md) expone los siguientes miembros.
+El [tipo VistaColtyp](./vistacoltyp-class.md) expone los miembros siguientes.
 
 ## <a name="fields"></a>Campos
 
@@ -60,7 +60,7 @@ El [tipo VistaColtyp](./vistacoltyp-class.md) expone los siguientes miembros.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

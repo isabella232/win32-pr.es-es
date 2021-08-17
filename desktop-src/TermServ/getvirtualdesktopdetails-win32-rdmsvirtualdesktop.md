@@ -1,12 +1,12 @@
 ---
-title: Método GetVirtualDesktopDetails de la clase Win32_RDMSVirtualDesktop
+title: Método GetVirtualDesktopDetails de la Win32_RDMSVirtualDesktop clase
 description: Recupera la información adicional sobre el escritorio virtual.
 ms.assetid: 487e3a02-4306-4639-a44e-5b9519163a67
 ms.tgt_platform: multiple
 keywords:
 - Método GetVirtualDesktopDetails Servicios de Escritorio remoto
-- Método GetVirtualDesktopDetails Servicios de Escritorio remoto, clase Win32_RDMSVirtualDesktop
-- Win32_RDMSVirtualDesktop de clase Servicios de Escritorio remoto, método GetVirtualDesktopDetails
+- Método GetVirtualDesktopDetails Servicios de Escritorio remoto , Win32_RDMSVirtualDesktop clase
+- Win32_RDMSVirtualDesktop clase Servicios de Escritorio remoto , método GetVirtualDesktopDetails
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7382a7ea10b3e557cd7317bdf1ddb0c4bcea55d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6ca1b552147623822ae007ca17abf8e4eaebfb149f5e80ac4760719f1ef7168
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059493"
 ---
-# <a name="getvirtualdesktopdetails-method-of-the-win32_rdmsvirtualdesktop-class"></a>Método GetVirtualDesktopDetails de la \_ clase RDMSVirtualDesktop de Win32
+# <a name="getvirtualdesktopdetails-method-of-the-win32_rdmsvirtualdesktop-class"></a>Método GetVirtualDesktopDetails de la clase \_ RDMSVirtualDesktop de Win32
 
 Recupera la información adicional sobre el escritorio virtual.
 
@@ -45,21 +45,21 @@ uint32 GetVirtualDesktopDetails(
 
 <dl> <dt>
 
-*RAMSizeInMB* \[ enuncia\]
+*RAMSizeInMB* \[ out\]
 </dt> <dd>
 
 Recibe la cantidad de RAM asignada al escritorio virtual, en bytes.
 
 </dd> <dt>
 
-*RemoteFXEnabled* \[ enuncia\]
+*RemoteFXEnabled* \[ out\]
 </dt> <dd>
 
-Recibe un valor que indica si RemoteFX está habilitado en el escritorio virtual. **True** si RemoteFX está habilitado; en caso contrario, **false**.
+Recibe un valor que indica si RemoteFX está habilitado en el escritorio virtual. **TRUE** si RemoteFX está habilitado; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
-*OSVersion* \[ enuncia\]
+*OSVersion* \[ out\]
 </dt> <dd>
 
 Recibe la versión del sistema operativo del escritorio virtual.
@@ -68,7 +68,7 @@ Recibe la versión del sistema operativo del escritorio virtual.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,8 +78,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -88,7 +88,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
+[**RDMSVirtualDesktop de Win32 \_**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

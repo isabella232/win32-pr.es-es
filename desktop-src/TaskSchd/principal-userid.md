@@ -1,11 +1,11 @@
 ---
-title: Propiedad principal. UserId
-description: En el caso de scripting, obtiene o establece el identificador de usuario necesario para ejecutar las tareas que están asociadas a la entidad de seguridad.
+title: Propiedad Principal.UserId
+description: Para el scripting, obtiene o establece el identificador de usuario necesario para ejecutar las tareas asociadas a la entidad de seguridad.
 ms.assetid: 57a34d7b-70b2-4156-b525-befecbaf070d
 keywords:
 - Propiedad UserId Programador de tareas
-- Propiedad UserId Programador de tareas, objeto principal
-- Programador de tareas de objeto principal, propiedad UserId
+- Propiedad UserId Programador de tareas , objeto Principal
+- Objeto principal Programador de tareas , propiedad UserId
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6fce7fcfdf235ba8a83f262161c2e0f2afc71c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9501184f3316e464aa26f42d51e0b4c27eccaeb72d447faa91edaa33b0b4774c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060033"
 ---
-# <a name="principaluserid-property"></a>Propiedad principal. UserId
+# <a name="principaluserid-property"></a>Propiedad Principal.UserId
 
-En el caso de scripting, obtiene o establece el identificador de usuario necesario para ejecutar las tareas que están asociadas a la entidad de seguridad.
+Para el scripting, obtiene o establece el identificador de usuario necesario para ejecutar las tareas asociadas a la entidad de seguridad.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,11 +40,11 @@ Principal.UserId As String
 
 Identificador de usuario necesario para ejecutar la tarea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No establezca esta propiedad si se especifica un identificador de grupo en la propiedad [**GROUPID**](principal-groupid.md) .
+No establezca esta propiedad si se especifica un identificador de grupo en la [**propiedad GroupId.**](principal-groupid.md)
 
-Al leer o escribir XML para una tarea, el identificador de usuario de la entidad de seguridad se especifica mediante el elemento [**userid**](taskschedulerschema-userid-principaltype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, el identificador de usuario de la entidad de seguridad se especifica mediante el [**elemento UserId**](taskschedulerschema-userid-principaltype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Al leer o escribir XML para una tarea, el identificador de usuario de la entidad
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -69,7 +69,7 @@ Al leer o escribir XML para una tarea, el identificador de usuario de la entidad
 [**Principal**](principal.md)
 </dt> <dt>
 
-[**Entidad de seguridad. GroupId**](principal-groupid.md)
+[**Principal.GroupId**](principal-groupid.md)
 </dt> </dl>
 
  

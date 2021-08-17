@@ -1,7 +1,7 @@
 ---
-description: Define una estructura que contiene uno o más valores de contador.
+description: Define una estructura que contiene uno o varios valores de contador.
 ms.assetid: 3085d490-4ac1-491c-bce0-8af46b16fab9
-title: struct (tipo complejo)
+title: Tipo complejo de struct
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dc59103a1a98b0baf1559ead159221ea42288936
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29796a259810cd03739c45338709966bd765f0c1fd9026777f435acb2c5de253
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978855"
 ---
-# <a name="struct-complex-type"></a>struct (tipo complejo)
+# <a name="struct-complex-type"></a>Tipo complejo de struct
 
-Define una estructura que contiene uno o más valores de contador.
+Define una estructura que contiene uno o varios valores de contador.
 
 ``` syntax
 <xs:complexType name="struct">
@@ -45,8 +45,8 @@ Define una estructura que contiene uno o más valores de contador.
 
 | Nombre | Tipo                                                                    | Descripción                                                                                                                                      |
 |------|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| name | [**Man: CSymbolType**](performance-counters-csymboltype-simple-type.md) | Nombre de la estructura.<br/>                                                                                                            |
-| type | [**Man: CSymbolType**](performance-counters-csymboltype-simple-type.md) | Nombre simbólico que identifica la estructura. La herramienta [CTRPP](ctrpp.md) crea una variable de estructura con este nombre que puede usar.<br/> |
+| name | [**man:CSymbolType**](performance-counters-csymboltype-simple-type.md) | Nombre de la estructura.<br/>                                                                                                            |
+| tipo | [**man:CSymbolType**](performance-counters-csymboltype-simple-type.md) | Nombre simbólico que identifica la estructura. La [herramienta CTRPP](ctrpp.md) crea una variable de estructura con este nombre que puede usar.<br/> |
 
 
 
@@ -56,8 +56,8 @@ Define una estructura que contiene uno o más valores de contador.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

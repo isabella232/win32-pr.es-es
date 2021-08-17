@@ -1,11 +1,11 @@
 ---
-title: ITfContextRenderingMarkup GetRenderingMarkup, método
-description: El método ITfContextRenderingMarkup GetRenderingMarkup recupera un enumerador de los marcas de representación para el intervalo especificado.
+title: Método ITfContextRenderingMarkup GetRenderingMarkup
+description: El método ITfContextRenderingMarkup GetRenderingMarkup recupera un enumerador de los marcados de representación para el intervalo especificado.
 ms.assetid: fe060eab-8a6b-4eb7-9c7f-353b887657d8
 keywords:
-- Método GetRenderingMarkup marco de trabajo de servicios de texto
-- Método GetRenderingMarkup marco de trabajo de servicios de texto, interfaz ITfContextRenderingMarkup
-- ITfContextRenderingMarkup interface Text Services Framework, método GetRenderingMarkup
+- Método GetRenderingMarkup Text Services Framework
+- Método GetRenderingMarkup Text Services Framework interfaz , ITfContextRenderingMarkup
+- Interfaz ITfContextRenderingMarkup Text Services Framework , método GetRenderingMarkup
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f3ccfb97af6a6657c33982359640a2a924cad2f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4a94c8a7cce8673560cf01091b819def343213bfde578df6ce1e8850e2721723
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119476964"
 ---
-# <a name="itfcontextrenderingmarkupgetrenderingmarkup-method"></a>ITfContextRenderingMarkup:: GetRenderingMarkup (método)
+# <a name="itfcontextrenderingmarkupgetrenderingmarkup-method"></a>ITfContextRenderingMarkup::GetRenderingMarkup (método)
 
-El método **ITfContextRenderingMarkup:: GetRenderingMarkup** recupera un enumerador de los marcas de representación para el intervalo especificado.
+El **método ITfContextRenderingMarkup::GetRenderingMarkup** recupera un enumerador de los marcados de representación para el intervalo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,14 +44,14 @@ HRESULT GetRenderingMarkup(
 
 <dl> <dt>
 
-*EC* \[ de\]
+*ec* \[ En\]
 </dt> <dd>
 
-\[en \] una cookie de edición de solo lectura para tener acceso al contexto.
+\[en \] Una cookie de edición de solo lectura para acceder al contexto.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 \[in\]
@@ -60,7 +60,7 @@ HRESULT GetRenderingMarkup(
 
 | Value                                                                                                                                                                                         | Significado                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="TF_GRM_INCLUDE_PROPERTY"></span><span id="tf_grm_include_property"></span><dl> <dt>**\_propiedad de \_ inclusión TF GRM \_**</dt> </dl> | Si este bit es 1, el enumerador incluirá la \_ propiedad del atributo prop de GUID \_ .<br/> |
+| <span id="TF_GRM_INCLUDE_PROPERTY"></span><span id="tf_grm_include_property"></span><dl> <dt>**TF \_ GRM \_ INCLUDE \_ PROPERTY**</dt> </dl> | Si este bit es 1, el enumerador incluirá la propiedad \_ GUID PROP \_ ATTRIBUTE.<br/> |
 
 
 
@@ -68,17 +68,17 @@ HRESULT GetRenderingMarkup(
 
 </dd> <dt>
 
-*pRangeCover* \[ de\]
+*pRangeCover* \[ En\]
 </dt> <dd>
 
-\[en \] un puntero a una interfaz [ITfRange](/windows/desktop/api/Msctf/nn-msctf-itfrange) del intervalo para enumerar los marcas de representación.
+\[en \] Puntero a una interfaz [ITfRange](/windows/desktop/api/Msctf/nn-msctf-itfrange) del intervalo para enumerar los marcados de representación.
 
 </dd> <dt>
 
-*ppEnum* \[ enuncia\]
+*ppEnum* \[ out\]
 </dt> <dd>
 
-\[\]un puntero para recuperar el puntero de la interfaz [IEnumTfRenderingMarkup](/windows/desktop/TSF/ienumtfrenderingmarkup) .
+\[out Puntero para recuperar el puntero de interfaz \] [IEnumTfRenderingMarkup.](/windows/desktop/TSF/ienumtfrenderingmarkup)
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ Este método puede devolver uno de estos valores.
 
 | Value                                                                                | Descripción                           |
 |--------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | Método realizado correctamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Método realizado correctamente.<br/> |
 
 
 
@@ -99,7 +99,7 @@ Este método puede devolver uno de estos valores.
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> Este método no está actualmente en los archivos de encabezado públicos. Para usar esta API, debe compilar MIDL en el [prototipo](prototypes.md).
+> Este método no está actualmente en los archivos de encabezado públicos. Para usar esta API, debe compilar midL en el [prototipo](prototypes.md).
 
  
 

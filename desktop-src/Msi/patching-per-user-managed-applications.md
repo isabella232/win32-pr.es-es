@@ -1,41 +1,41 @@
 ---
-description: A partir de Windows Installer 3,0, es posible aplicar revisiones a una aplicación que se ha instalado en un contexto administrado por el usuario después de haber registrado la revisión como con privilegios elevados.
+description: A partir de Windows Installer 3.0, es posible aplicar revisiones a una aplicación que se ha instalado en un contexto administrado por usuario después de que la revisión se haya registrado como con privilegios elevados.
 ms.assetid: ebe5f447-9b74-48dc-8192-f2ac90dca490
 title: Aplicación de revisiones para aplicaciones administradas por usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0aa6a19933e5c8ab409d510d980b8ed634a630e1
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 516af282dc7f149b86d03192303dc1b3da14416d1a6a22a4f3e716f641777500
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105670098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979375"
 ---
 # <a name="patching-per-user-managed-applications"></a>Aplicación de revisiones para aplicaciones administradas por usuario
 
-A partir de Windows Installer 3,0, es posible aplicar revisiones a una aplicación que se ha instalado en un contexto administrado por el usuario después de haber registrado la revisión como con privilegios elevados.
+A partir de Windows Installer 3.0, es posible aplicar revisiones a una aplicación que se ha instalado en un contexto administrado por usuario después de que la revisión se haya registrado como con privilegios elevados.
 
-**Windows Installer 2,0:** No compatible. No se pueden aplicar revisiones a las aplicaciones que se instalan en un contexto administrado por usuario con versiones de Windows Installer anteriores a Windows Installer 3,0.
+**Windows Installer 2.0:** No se admite. No se pueden aplicar revisiones a las aplicaciones instaladas en un contexto administrado por usuario mediante versiones de Windows Installer anteriores a Windows Installer 3.0.
 
-Una aplicación se instala en el estado administrado por el usuario en los casos siguientes.
+Una aplicación se instala en el estado administrado por usuario en los casos siguientes.
 
--   La instalación por usuario de la aplicación se realizó con la implementación y el [Directiva de grupo](/previous-versions/windows/desktop/Policy/group-policy-start-page).
--   La aplicación se ha anunciado a un usuario especificado y se ha instalado mediante el método descrito en el apartado [anunciar una aplicación Per-User que se va a instalar con privilegios elevados](advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md).
+-   La instalación por usuario de la aplicación se realizó mediante la implementación [y directiva de grupo](/previous-versions/windows/desktop/Policy/group-policy-start-page).
+-   La aplicación se anunció a un usuario especificado y se instaló mediante el método descrito en Advertising [a Per-User Application To Be Installed with Elevated Privileges](advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md).
 
-Se requieren privilegios para instalar una aplicación en el contexto administrado por el usuario; por lo tanto, el instalador también realiza Windows Installer futuras reinstalaciones o reparaciones de la aplicación con privilegios elevados. Esto significa que solo se pueden aplicar a la aplicación revisiones de orígenes de confianza.
+Se requieren privilegios para instalar una aplicación en el contexto administrado por usuario. Por lo tanto, el instalador Windows las reinstalaciones o reparaciones del instalador de la aplicación mediante privilegios elevados. Esto significa que solo se pueden aplicar a la aplicación revisiones de orígenes de confianza.
 
-A partir de Windows Installer 3,0, puede aplicar una revisión a una aplicación administrada por usuario después de haber registrado la revisión como con privilegios elevados. Para registrar una revisión como con privilegios elevados, use la función [**MsiSourceListAddSourceEx**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourceexa) o el método [**SourceListAddSource**](patch-sourcelistaddsource.md) del objeto [**patch**](patch-object.md) , con privilegios elevados. Después de registrar la revisión, puede aplicar la revisión mediante las funciones [**MsiApplyPatch**](/windows/desktop/api/Msi/nf-msi-msiapplypatcha) o [**MsiApplyMultiplePatches**](/windows/desktop/api/Msi/nf-msi-msiapplymultiplepatchesa) , [**ApplyPatch**](installer-applypatch.md) o [**ApplyMultiplePatches**](installer-applymultiplepatches.md) del [**objeto Installer**](installer-object.md)o la [opción de línea de comandos](command-line-options.md)/p.
+A partir Windows Installer 3.0, puede aplicar una revisión a una aplicación administrada por usuario después de que la revisión se haya registrado como con privilegios elevados. Para registrar una revisión con privilegios elevados, use la función [**MsiSourceListAddSourceEx**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourceexa) o el método [**SourceListAddSource**](patch-sourcelistaddsource.md) del objeto [**Patch,**](patch-object.md) con privilegios elevados. Después de registrar la revisión, puede aplicar la revisión mediante las funciones [**MsiApplyPatch**](/windows/desktop/api/Msi/nf-msi-msiapplypatcha) o [**MsiApplyMultiplePatches,**](/windows/desktop/api/Msi/nf-msi-msiapplymultiplepatchesa) los métodos [**ApplyPatch**](installer-applypatch.md) o [**ApplyMultiplePatches**](installer-applymultiplepatches.md) del objeto installer [**o**](installer-object.md)la opción de línea de comandos [/p](command-line-options.md).
 
 > [!Note]
-> Se puede registrar una revisión como con privilegios elevados antes de instalar la aplicación. Cuando se ha registrado una revisión, permanece registrada hasta que se quita la última aplicación registrada para esta revisión.
+> Se puede registrar una revisión con privilegios elevados antes de instalar la aplicación. Cuando se ha registrado una revisión, permanece registrada hasta que se quita la última aplicación registrada para esta revisión.
 > 
-> Las revisiones que se han aplicado a una aplicación administrada por usuario no se pueden quitar sin quitar toda la aplicación. Los registros de revisiones para una aplicación administrada por usuario se quitan en la eliminación de la aplicación.
+> Las revisiones que se han aplicado a una aplicación administrada por usuario no se pueden quitar sin quitar toda la aplicación. Los registros de revisión de una aplicación administrada por usuario se quitan al quitar la aplicación.
 
-También puede usar este método para permitir que un usuario no administrador aplique revisiones a una aplicación por equipo, o bien puede usar la aplicación de revisiones con privilegios mínimos descritas en la aplicación de [revisiones de control de cuentas de usuario (UAC)](user-account-control--uac--patching.md).
+También puede usar este método para permitir que un usuario que no sea administrador pueda aplicar revisiones a una aplicación por máquina, o bien puede usar la aplicación de revisiones con privilegios mínimos que se describe en Revisión de control de cuentas de usuario [(UAC).](user-account-control--uac--patching.md)
 
 ## <a name="example-1"></a>Ejemplo 1
 
-En el siguiente ejemplo de scripting se usa el método [**SourceListAddSource**](patch-sourcelistaddsource.md) para registrar un paquete de revisión ubicado en \\ \\ Server \\ share \\ Products \\ \\ example. MSP como con privilegios elevados. Esa revisión está lista para aplicarse a un producto administrado por usuario.
+En el ejemplo de scripting siguiente se usa el [**método SourceListAddSource**](patch-sourcelistaddsource.md) para registrar un paquete de revisión ubicado en el servidor \\ \\ share products \\ \\ \\ \\ patches example.msp con privilegios elevados. Esa revisión está lista para aplicarse a un producto administrado por usuario.
 
 ``` syntax
 const msiInstallContextUserManaged = 1
@@ -58,7 +58,7 @@ patch.SourceListInfo("PackageName") = PatchPackageName
 
 ## <a name="example-2"></a>Ejemplo 2
 
-En el ejemplo de código siguiente se usa la función [**MsiSourceListAddSourceEx**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourceexa) para registrar un paquete de revisión ubicado en \\ \\ Server \\ share \\ Products \\ \\ example. MSP como con privilegios elevados. Esa revisión está lista para aplicarse a un producto administrado por usuario.
+En el ejemplo de código siguiente se usa la función [**MsiSourceListAddSourceEx**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourceexa) para registrar un paquete de revisión ubicado en el servidor \\ \\ share products \\ \\ \\ patches \\ example.msp con privilegios elevados. Esa revisión está lista para aplicarse a un producto administrado por usuario.
 
 
 ```C++

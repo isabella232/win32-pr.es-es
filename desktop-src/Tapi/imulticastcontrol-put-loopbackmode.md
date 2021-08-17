@@ -1,21 +1,21 @@
 ---
-description: El \_ LoopbackMode Put establece el modo de bucle invertido de multidifusión.
+description: Put \_ LoopbackMode establece el modo de bucle atrás de multidifusión.
 ms.assetid: 38b28529-224f-4624-bb5e-22fee500e8e6
-title: 'IMulticastControl: método de ut_LoopbackMode de:p (Confpriv. h)'
+title: Método IMulticastControl::p ut_LoopbackMode (Confpriv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de5b5e51b3814b380cc06d9c960db1a4e4b9ecb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d564fbfd3e5ea0db2c168b6207823945eceb148af17d78bed25cbc59bb4e5ee6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140418"
 ---
-# <a name="imulticastcontrolput_loopbackmode-method"></a>IMulticastControl::p \_ método LoopbackMode UT
+# <a name="imulticastcontrolput_loopbackmode-method"></a>Método IMulticastControl::p ut \_ LoopbackMode
 
-\[**colocar \_ LoopbackMode** no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[**put \_ LoopbackMode** no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El **\_ LoopbackMode Put** establece el modo de bucle invertido de multidifusión.
+Put **\_ LoopbackMode establece** el modo de bucle atrás de multidifusión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT put_LoopbackMode(
 
 <dl> <dt>
 
-*modo* \[ de de\]
+*mode* \[ En\]
 </dt> <dd>
 
-[**Multidifusión \_ \_**](multicast-loopback-mode.md) Descriptor en modo de bucle invertido del nuevo modo de bucle invertido.
+[**MULTIDIFUSIÓN \_ Descriptor LOOPBACK \_ MODE**](multicast-loopback-mode.md) del nuevo modo de bucle atrás.
 
 </dd> </dl>
 
@@ -47,8 +47,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                  | Descripción                                   |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | El método se realizó correctamente.<br/>                  |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El parámetro de *modo* no es válido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | El método se realizó correctamente.<br/>                  |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El *parámetro mode* no es válido.<br/> |
 
 
 
@@ -60,9 +60,9 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Confpriv.h</dt> </dl> |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 

@@ -28,21 +28,21 @@ Asocia una sesión criptográfica a un dispositivo descodificador directX Video 
 
 | Requisito | Value |
 |--------------|-----------------------------------------------------------------------------------------------------------|
-| GUID de comando | **D3DAUTHENTICATEDCONFIGURE \_ CRYPTOSESSION**                                                              |
+| GUID del comando | **D3DAUTHENTICATEDCONFIGURE \_ CRYPTOSESSION**                                                              |
 | Datos de entrada   | [**D3DAUTHENTICATEDCHANNEL \_ CONFIGURECRYPTOSESSION**](d3dauthenticatedchannel-configurecryptosession.md) |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una vez enviado este comando, puede enviar la consulta [ \_ OUTPUTID D3DAUTHENTICATEDQUERY](d3dauthenticatedquery-outputid.md) para averiguar qué salidas de vídeo están asociadas a la sesión criptográfica.
+Después de enviar este comando, puede enviar la consulta [ \_ OUTPUTID D3DAUTHENTICATEDQUERY](d3dauthenticatedquery-outputid.md) para averiguar qué salidas de vídeo están asociadas a la sesión criptográfica.
 
 Los siguientes tipos de canal admiten este comando:
 
 -   **D3DAUTHENTICATEDCHANNEL \_ D3D9**
--   **SOFTWARE DE CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
+-   **SOFTWARE DEL CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Los siguientes tipos de canal admiten este comando:
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
 | Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 

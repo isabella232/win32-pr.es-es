@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_VirtualSystemManagementService clase : solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_VirtualSystemManagementService: solicita un cambio de estado.'
 ms.assetid: 3dafc143-4033-4137-9e90-2965c59d9a79
 title: Método RequestStateChange de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119426225"
 ---
-# <a name="requeststatechange-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RequestStateChange de la clase \_ Msvm VirtualSystemManagementService
+# <a name="requeststatechange-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RequestStateChange de la clase Msvm \_ VirtualSystemManagementService
 
 Solicita un cambio de estado.
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecimiento** (11)
+**Restablecer** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -128,14 +128,14 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ elemento ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 (**Use Of Timeout Parameter Not Supported**).
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene requisitos de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 **(No** se admite el uso del parámetro de tiempo de espera).
 
 </dd> </dl>
 

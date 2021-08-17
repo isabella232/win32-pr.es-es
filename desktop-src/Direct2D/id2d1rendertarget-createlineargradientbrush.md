@@ -51,7 +51,7 @@ Para obtener un ejemplo en el que se muestra cómo crear una colección de deten
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

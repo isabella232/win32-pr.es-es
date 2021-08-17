@@ -1,19 +1,19 @@
 ---
 title: Matrices fijas
-description: Si la interfaz especifica una matriz con un número específico de elementos como parámetro, se usa una matriz fija. Al usar MIDL, se definen matrices fijas de la misma manera que se definen en C. Especifique el tipo, el nombre y el tamaño de la matriz.
+description: Si la interfaz especifica una matriz con un número específico de elementos como parámetro, usa una matriz fija. Cuando se usa MIDL, se definen matrices fijas de la misma manera que se definen en C. Especifique el tipo, el nombre y el tamaño de la matriz.
 ms.assetid: b9a2fa0b-1386-43e1-ab55-0a57cd8d1f18
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bb3a620e86bff47e04afb5078dff50faee9fef0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1040e417cc896b9f4bd2271dc69e23033332354357b2aad32053724d94b79035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118929984"
 ---
 # <a name="fixed-arrays"></a>Matrices fijas
 
-Si la interfaz especifica una matriz con un número específico de elementos como parámetro, se usa una matriz fija. Al usar MIDL, se definen matrices fijas de la misma manera que se definen en C. Especifique el tipo, el nombre y el tamaño de la matriz.
+Si la interfaz especifica una matriz con un número específico de elementos como parámetro, usa una matriz fija. Cuando se usa MIDL, se definen matrices fijas de la misma manera que se definen en C. Especifique el tipo, el nombre y el tamaño de la matriz.
 
 En el ejemplo siguiente se muestra cómo definir una matriz fija.
 
@@ -31,13 +31,13 @@ interface MyInterface
 }
 ```
 
-Cuando un programa cliente pasa una matriz fija a un programa de servidor, el código auxiliar del cliente envía toda la matriz al código auxiliar del servidor. El código auxiliar del servidor asigna memoria a la matriz y almacena los datos de la matriz que recibe a través de la red en la memoria asignada. A continuación, pasa la matriz al procedimiento remoto en el servidor. El servidor puede modificar los datos de la matriz.
+Cuando un programa cliente pasa una matriz fija a un programa de servidor, el código auxiliar de cliente envía toda la matriz al código auxiliar del servidor. El código auxiliar del servidor asigna memoria para la matriz y almacena los datos de la matriz que recibe a través de la red en la memoria asignada. A continuación, pasa la matriz al procedimiento remoto en el servidor. El servidor puede modificar los datos de la matriz.
 
-Cuando finaliza el procedimiento remoto, el código auxiliar del servidor envía el contenido de la matriz de vuelta al cliente. El código auxiliar del cliente copia los datos recibidos del código auxiliar del servidor en la matriz original. Después, el programa cliente puede utilizar los datos como si hubiera recibido los datos de una llamada a procedimiento local.
+Cuando finaliza el procedimiento remoto, el código auxiliar del servidor devuelve el contenido de la matriz al cliente. El código auxiliar del cliente copia los datos recibidos del código auxiliar del servidor en la matriz original. A continuación, el programa cliente puede usar los datos como lo haría si recibiera los datos de una llamada a procedimiento local.
 
- 
+ 
 
- 
+ 
 
 
 

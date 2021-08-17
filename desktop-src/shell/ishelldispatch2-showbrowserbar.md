@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 7143b55ae59c8fca845d256ddc1f79e69672364b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0b1380a44d2985b75e77dced43878c85e38d6a21b877fe06d9cdc7c10a8a2002
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090335"
 ---
 # <a name="ishelldispatch2showbrowserbar-method"></a>IShellDispatch2.ShowBrowserBar (método)
 
@@ -56,7 +56,7 @@ IShellDispatch2.ShowBrowserBar( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Cadena **que** contiene la forma de cadena del CLSID de la barra del explorador que se va a mostrar. El objeto debe registrarse como un objeto de barra del explorador con una categoría de componente \_ InfoBand CATID. Para obtener más información, vea [Crear barras de explorador personalizadas, bandas de herramientas y bandas de escritorio.](band-objects.md)
+Cadena **que** contiene la forma de cadena del CLSID de la barra del explorador que se va a mostrar. El objeto debe registrarse como un objeto de barra del explorador con una categoría de \_ componente InfoBand CATID. Para obtener más información, vea [Crear barras de explorador personalizadas, bandas de herramientas y bandas de escritorio.](band-objects.md)
 
 </dd> <dt>
 
@@ -106,9 +106,9 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso **de ShowBrowserBar** para mostrar la **barra del explorador** Favoritos. El uso se muestra para JScript y VBScript.
+En los ejemplos siguientes se muestra el uso **de ShowBrowserBar** para mostrar la **barra del explorador Favoritos.** El uso se muestra para JScript y VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -151,9 +151,9 @@ Vbscript:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 

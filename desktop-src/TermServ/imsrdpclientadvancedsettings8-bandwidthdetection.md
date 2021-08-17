@@ -1,12 +1,12 @@
 ---
-title: Propiedad BandwidthDetection de IMsRdpClientAdvancedSettings8
+title: Propiedad IMsRdpClientAdvancedSettings8 BandwidthDetection
 description: Especifica si los cambios de ancho de banda se detectan automáticamente.
 ms.assetid: 30b2b7b3-9050-4a11-9929-2ad1dbf5ed2d
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad BandwidthDetection
-- Propiedad BandwidthDetection Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad BandwidthDetection
+- Propiedad BandwidthDetection Servicios de Escritorio remoto
+- Propiedad BandwidthDetection Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad BandwidthDetection
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1f915aeff1159e675026cfc13906e69c96208f29
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ab6fbe8291c0318e378add8041d0e2d2d0f30b6ee1e298c3a43a6a0ccd430c31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138788"
 ---
-# <a name="imsrdpclientadvancedsettings8bandwidthdetection-property"></a>IMsRdpClientAdvancedSettings8:: BandwidthDetection (propiedad)
+# <a name="imsrdpclientadvancedsettings8bandwidthdetection-property"></a>Propiedad IMsRdpClientAdvancedSettings8::BandwidthDetection
 
 Especifica si los cambios de ancho de banda se detectan automáticamente.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,7 +44,7 @@ HRESULT get_BandwidthDetection(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**Variante \_ TRUE** si los cambios de ancho de banda se detectan automáticamente o **Variant \_ false** en caso contrario.
+**VARIANT \_ TRUE si** los cambios de ancho de banda se detectan automáticamente o **VARIANT FALSE \_ en** caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

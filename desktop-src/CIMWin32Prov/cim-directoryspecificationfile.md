@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación DirectorySpecificationFile de CIM representa el directorio que contiene el archivo especificado al hacer referencia a la \_ clase DIRECTORYSPECIFICATION de CIM.
+description: La asociación Cim DirectorySpecificationFile representa el directorio que contiene el archivo especificado haciendo referencia a \_ la clase \_ DirectorySpecification de CIM.
 ms.assetid: 57fe996e-6bd4-4070-9e99-460b2a36243f
 ms.tgt_platform: multiple
-title: CIM_DirectorySpecificationFile (clase)
+title: CIM_DirectorySpecificationFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1877d9864a76334c2b2e00fc7822adb09b91028b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d26cf0ff32380d6d0fb1daaa7e10e06159664b98778a074327c5a6d8654fd270
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119321355"
 ---
-# <a name="cim_directoryspecificationfile-class"></a>\_Clase DirectorySpecificationFile de CIM
+# <a name="cim_directoryspecificationfile-class"></a>Cim \_ DirectorySpecificationFile (clase)
 
-La **Asociación \_ DirectorySpecificationFile de CIM** representa el directorio que contiene el archivo especificado al hacer referencia a la clase [**\_ DirectorySpecification de CIM**](cim-directoryspecification.md) .
+La **\_ asociación Cim DirectorySpecificationFile** representa el directorio que contiene el archivo especificado haciendo referencia a la [**clase \_ DirectorySpecification de CIM.**](cim-directoryspecification.md)
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,26 +47,26 @@ class CIM_DirectorySpecificationFile
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ DirectorySpecificationFile** tiene estos tipos de miembros:
+La **clase CIM \_ DirectorySpecificationFile** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ DirectorySpecificationFile** tiene estas propiedades.
+La **clase CIM \_ DirectorySpecificationFile** tiene estas propiedades.
 
 <dl> <dt>
 
 **DirectorySpecification**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ DirectorySpecification**
+Tipo de datos: **Cim \_ DirectorySpecification**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**Máximo**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Referencia a la especificación del directorio.
@@ -82,18 +82,18 @@ Tipo de datos: **CIM \_ FileSpecification**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**mín**](/windows/desktop/WmiSdk/standard-qualifiers) . (0)
+Calificadores: [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Referencia a la especificación del archivo.
+Referencia a la especificación de archivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

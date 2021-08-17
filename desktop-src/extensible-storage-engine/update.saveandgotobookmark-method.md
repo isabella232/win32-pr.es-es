@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método Update. SaveAndGotoBookmark'
-title: Método Update. SaveAndGotoBookmark
+description: Más información sobre el método Update.SaveAndGotoBookmark
+title: Método Update.SaveAndGotoBookmark
 TOCTitle: 'SaveAndGotoBookmark method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.SaveAndGotoBookmark
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.saveandgotobookmark(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d682657b9821f782af339a3d0c3253b6fa771d37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 566be9b1af403a794b6ac87259a0fd6b6c0fea46c0b45287c536f336ee734b6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119106959"
 ---
-# <a name="updatesaveandgotobookmark-method"></a>Método Update. SaveAndGotoBookmark
+# <a name="updatesaveandgotobookmark-method"></a>Método Update.SaveAndGotoBookmark
 
-Actualice el TABLEID y coloque el TABLEID en el registro que se modificó. Esto puede ser útil al insertar un registro porque, de forma predeterminada, el TABLEID permanece en su ubicación anterior.
+Actualice el tableid y coloque el tableid en el registro que se modificó. Esto puede ser útil al insertar un registro porque, de forma predeterminada, tableid permanece en su ubicación anterior.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,16 +53,16 @@ instance.SaveAndGotoBookmark()
 public void SaveAndGotoBookmark()
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Guardar es el último paso para realizar una inserción o una actualización. La actualización se inicia llamando a crear un objeto Update y llamando a JetSetColumn o JetSetColumns una o varias veces para establecer el estado del registro. Por último, se llama a Update para completar la operación de actualización. Los índices solo se actualizan mediante Update o y no durante JetSetColumn ni JetSetColumns.
+Guardar es el último paso para realizar una inserción o una actualización. La actualización se inicia mediante una llamada a la creación de un objeto Update y, a continuación, llamando a JetSetColumn o JetSetColumns una o varias veces para establecer el estado del registro. Por último, se llama a Update para completar la operación de actualización. Los índices solo se actualizan mediante Update o y no durante JetSetColumn o JetSetColumns.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Update (clase)](./update-class.md)
+[Actualizar clase](./update-class.md)
 
 [Actualizar miembros](./update-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

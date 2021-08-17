@@ -27,7 +27,7 @@ ms.locfileid: "119428675"
 
  
 
-El `CreateFilterData` método crea datos binarios del Registro para un filtro. Estos datos se pueden escribir en el Registro como una subclave REG BINARY denominada FilterData, bajo la \_ clave CLSID del filtro.
+El `CreateFilterData` método crea datos binarios del Registro para un filtro. Estos datos se pueden escribir en el Registro como una subclave REG BINARY denominada FilterData, bajo la clave \_ CLSID del filtro.
 
 Normalmente no hay ninguna razón para que una aplicación llame a este método. El [**método IFilterMapper2::RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automáticamente los datos binarios y los agrega a la ubicación correcta del Registro. Para obtener más información, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md).
 
@@ -73,10 +73,10 @@ Puntero a una variable que recibe el tamaño de los datos binarios, en bytes.
 
 Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El encabezado Fil \_ data.h se encuentra en el directorio [Mapper Sample](mapper-sample.md) (Ejemplo del asignador) en Windows SDK.
+> El encabezado Fil \_ data.h se encuentra en el directorio [Mapper Sample](mapper-sample.md) del SDK Windows.
 
  
 
@@ -95,7 +95,7 @@ Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error
 
 <dl> <dt>
 
-[**IAMFilterData (interfaz)**](iamfilterdata.md)
+[**IamFilterData (interfaz)**](iamfilterdata.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Contiene información sobre un procesador.
 ms.assetid: fa8c533c-3a54-4eb5-893f-649dfd8b4609
-title: Estructura de PROCESSOR_POWER_INFORMATION
+title: PROCESSOR_POWER_INFORMATION estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 500a346080d7bf0c44d392a63a71310db74225a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bdb6a3bb8ae5b768c42609817c76934c203989ba6dea665fc6cc0a6896659de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143338"
 ---
-# <a name="processor_power_information-structure"></a>Estructura de información de \_ energía del procesador \_
+# <a name="processor_power_information-structure"></a>ESTRUCTURA \_ DE INFORMACIÓN DE POTENCIA DEL \_ PROCESADOR
 
 Contiene información sobre un procesador.
 
@@ -46,35 +46,35 @@ typedef struct _PROCESSOR_POWER_INFORMATION {
 **Number**
 </dt> <dd>
 
-El número de procesador del sistema.
+Número de procesador del sistema.
 
 </dd> <dt>
 
 **MaxMhz**
 </dt> <dd>
 
-La frecuencia de reloj máxima especificada del procesador del sistema, en megahercios.
+Frecuencia de reloj máxima especificada del procesador del sistema, en megahercios.
 
 </dd> <dt>
 
 **CurrentMhz**
 </dt> <dd>
 
-Frecuencia del reloj del procesador, en megahercios. Este número es la frecuencia máxima del reloj del procesador multiplicada por la limitación actual del procesador.
+Frecuencia del reloj del procesador, en megahercios. Este número es la frecuencia máxima de reloj del procesador especificada multiplicada por la limitación del procesador actual.
 
 </dd> <dt>
 
 **MhzLimit**
 </dt> <dd>
 
-Límite de la frecuencia del reloj del procesador, en megahercios. Este número es la frecuencia de reloj de procesador máxima especificada multiplicada por el límite de aceleración térmica del procesador actual.
+Límite de la frecuencia del reloj del procesador, en megahercios. Este número es la frecuencia máxima especificada del reloj del procesador multiplicada por el límite térmico del procesador actual.
 
 </dd> <dt>
 
 **MaxIdleState**
 </dt> <dd>
 
-El estado de inactividad máximo de este procesador.
+Estado de inactividad máximo de este procesador.
 
 </dd> <dt>
 
@@ -85,9 +85,9 @@ Estado de inactividad actual de este procesador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que esta definición de estructura se omitió accidentalmente en Winnt. h. Este error se corregirá en el futuro. Mientras tanto, para compilar la aplicación, incluya la definición de la estructura contenida en este tema en el código fuente.
+Tenga en cuenta que esta definición de estructura se omitió accidentalmente de WinNT.h. Este error se corregirá en el futuro. Mientras tanto, para compilar la aplicación, incluya la definición de estructura contenida en este tema en el código fuente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Tenga en cuenta que esta definición de estructura se omitió accidentalmente en
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 

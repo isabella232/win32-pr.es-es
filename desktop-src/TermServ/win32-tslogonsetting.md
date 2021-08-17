@@ -1,11 +1,11 @@
 ---
-title: Win32_TSLogonSetting (clase)
-description: Define la configuración para la \_ clase de terminal Win32 relacionada con el inicio de sesión de cliente.
+title: Win32_TSLogonSetting clase
+description: Define las opciones de configuración de la clase Terminal Win32 \_ relacionada con el inicio de sesión de cliente.
 ms.assetid: a2ccb419-da1a-44d1-8a7a-4d0266fc1be8
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLogonSetting clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSLogonSetting de clase, se describe
+- Win32_TSLogonSetting clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -30,18 +30,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e656f3913bb7320253dc9dbca6710f37e0cbdded
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 798a9d4fd3b3d8aebf60fae1e4f96590b26639dd380fbdb1de6638908299ff59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058323"
 ---
-# <a name="win32_tslogonsetting-class"></a>\_Clase Win32 TSLogonSetting
+# <a name="win32_tslogonsetting-class"></a>Clase \_ TSLogonSetting de Win32
 
-La clase WMI **\_ TSLogonSetting de Win32** define los valores de configuración para la clase de [**\_ terminal Win32**](win32-terminal.md) relacionada con el inicio de sesión de cliente.
+La clase WMI **\_ TSLogonSetting de Win32** define los valores de configuración de la clase [**\_ Terminal Win32**](win32-terminal.md) relacionada con el inicio de sesión de cliente.
 
-La siguiente sintaxis se simplifica desde el código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
+La sintaxis siguiente se simplifica a partir del código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,14 +75,14 @@ La **clase \_ TSLogonSetting de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSLogonSetting** tiene estos métodos.
+La **clase \_ TSLogonSetting de Win32** tiene estos métodos.
 
 
 
 | Método                                                                    | Descripción                                                                    |
 |:--------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
-| [**ExplicitLogon**](win32-tslogonsetting-explicitlogon.md)               | Establece el nombre de usuario, la contraseña y las credenciales de autenticación de dominio.<br/> |
-| [**SetPromptForPassword**](win32-tslogonsetting-setpromptforpassword.md) | Establece la propiedad **PromptForPassword** .<br/>                            |
+| [**ExplicitLogon**](win32-tslogonsetting-explicitlogon.md)               | Establece las credenciales de autenticación UserName, Password y Domain.<br/> |
+| [**SetPromptForPassword**](win32-tslogonsetting-setpromptforpassword.md) | Establece la **propiedad PromptForPassword.**<br/>                            |
 
 
 
@@ -108,20 +108,20 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ClientLogonInfoPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La Directiva que el servidor usa para determinar la configuración de conexión.
+Directiva que usa el servidor para determinar la configuración de conexión.
 
 <dt>
 
@@ -138,12 +138,12 @@ La configuración de conexión de usuario individual está en vigor.
 
 <span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>
 
-<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Invalidación de servidor** (1)
+<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Invalidación del** servidor (1)
 
 
 </dt> <dd>
 
-El servidor invalida la configuración de conexión de usuario individual.
+El servidor reemplaza la configuración de conexión de usuario individual.
 
 </dd> </dl>
 
@@ -160,7 +160,7 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -180,18 +180,18 @@ Credencial de autenticación de inicio de sesión de dominio del usuario. Este e
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -206,7 +206,7 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -219,20 +219,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La credencial de autenticación de inicio de sesión de contraseña del usuario. Esta propiedad no puede tener más de 14 caracteres. Se recomienda establecer el nivel de seguridad en privacidad de paquete (wbemAuthenticationLevelPktPrivacy = 6) si consulta esta propiedad. Esto se debe a que la contraseña no se cifra en la conexión sin este nivel de seguridad. Para obtener más información acerca de cómo establecer los niveles de seguridad, vea [establecer la seguridad de procesos de aplicación cliente](/windows/desktop/WmiSdk/setting-client-application-process-security) en la documentación del SDK de WMI.
+Credencial de autenticación de inicio de sesión con contraseña del usuario. Esta propiedad no puede tener más de 14 caracteres. Se recomienda establecer el nivel de seguridad en privacidad de paquetes (wbemAuthenticationLevelPktPrivacy = 6) si consulta esta propiedad. Esto se debe a que la contraseña no está cifrada en la conexión sin este nivel de seguridad. Para obtener más información sobre cómo establecer los niveles de seguridad, vea [Establecer la seguridad](/windows/desktop/WmiSdk/setting-client-application-process-security) del proceso de aplicación cliente en la documentación del SDK de WMI.
 
 </dd> <dt>
 
 **PolicySourceDomain**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad de **dominio** está configurada por el servidor, la Directiva de grupo o de forma predeterminada.
+Indica si la propiedad **Domain** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -262,13 +262,13 @@ Valor predeterminado
 **PolicySourcePromptForPassword**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **PromptForPassword** está configurada por el servidor, la Directiva de grupo o de forma predeterminada.
+Indica si la propiedad **PromptForPassword** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -298,13 +298,13 @@ Valor predeterminado
 **PolicySourceUserName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad de **nombre de usuario** está configurada por el servidor, la Directiva de grupo o de forma predeterminada.
+Indica si la propiedad **UserName** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -334,30 +334,30 @@ Valor predeterminado
 **PromptForPassword**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si al usuario se le solicita siempre una contraseña mientras inicia sesión en el servidor.
+Especifica si siempre se solicita al usuario una contraseña al iniciar sesión en el servidor.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
 
-No se solicita una contraseña al usuario.
+No se solicita al usuario una contraseña.
 
 </dd> <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**True** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
@@ -380,15 +380,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -416,21 +416,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -455,7 +455,7 @@ Tipo de acceso: solo lectura
 
 Nombre del terminal.
 
-Esta propiedad se hereda de [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Esta propiedad se hereda de [**\_ TerminalSetting de Win32.**](win32-terminalsetting.md)
 
 </dd> <dt>
 
@@ -468,15 +468,15 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La credencial de autenticación de inicio de sesión del nombre de usuario del usuario. Esta propiedad no puede tener más de 20 caracteres.
+Credencial de autenticación de inicio de sesión de nombre de usuario del usuario. Esta propiedad no puede tener más de 20 caracteres.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que Winstations asociado a la sesión de consola no puede tener acceso a los métodos y las propiedades de esta clase. Si se realiza un intento de hacerlo especificando "Console" como el valor de la propiedad TerminalName, los métodos de este objeto devuelven **WBEM \_ E \_ no \_ compatible**. Este código de error se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
+Tenga en cuenta que las winstations asociadas a la sesión de consola no pueden tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad TerminalName, los métodos de este objeto **devuelven WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al \\ espacio de \\ nombres TerminalServices de cimv2 raíz \\ , el nivel de autenticación debe incluir privacidad de paquetes. En el caso de las llamadas de C/C++, se trata de un nivel de autenticación de **\_ \_ \_ \_ \_ privacidad de nivel** de autenticación de RPC C. En el caso de las llamadas de Visual Basic y scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres Raíz de \\ TerminalServices CIMV2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el Visual Basic ejemplo de Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -487,7 +487,7 @@ Set objServices = GetObject( _
 
 
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -497,8 +497,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -507,10 +507,10 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**\_Terminal Win32**](win32-terminal.md)
+[**Win32 \_ Terminal**](win32-terminal.md)
 </dt> <dt>
 
-[**Win32 \_ TerminalSetting**](win32-terminalsetting.md)
+[**TerminalSetting de Win32 \_**](win32-terminalsetting.md)
 </dt> </dl>
 
  

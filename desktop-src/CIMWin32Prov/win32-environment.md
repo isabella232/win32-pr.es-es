@@ -1,8 +1,8 @@
 ---
-description: Representa un entorno o una configuración de entorno del sistema en un equipo Windows.
+description: Representa una configuración de entorno o entorno del sistema en un Windows equipo.
 ms.assetid: da7ee891-c759-4046-a9d8-d3caf66ab5a9
 ms.tgt_platform: multiple
-title: Win32_Environment (clase)
+title: Win32_Environment clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,22 +22,22 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3b7267e3ac03c14cfc6ad6ca73ede42cc8478b41
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5d7237d83c298916045b4bd0443eadc3048c94dc7ad028a1bd7bfa993c4ce764
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119391755"
 ---
-# <a name="win32_environment-class"></a>\_Clase de entorno Win32
+# <a name="win32_environment-class"></a>Clase De entorno de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) de **\_ entorno Win32** representa un entorno o una configuración de entorno del sistema en un equipo Windows. Al consultar esta clase se devuelven las variables de entorno que se encuentran en:
+La **clase WMI de entorno \_ win32** representa una configuración de entorno o entorno del sistema en un Windows equipo. [](/windows/desktop/WmiSdk/retrieving-a-class) Al consultar esta clase, se devuelven las variables de entorno que se encuentran en:
 
-**HKEY \_ Entorno de \_ equipo local** \\  \\ **CurrentControlSet** \\ **control** \\ **SessionManager** \\ **Environment**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **Sessionmanager** \\ **Environment**
 
 y
 
-**HKEY \_** \\ Entorno de **< usuario >** de usuarios \\ 
+**HKEY \_ Entorno** \\ **< *de usuario* >** de \\ **USUARIOS**
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -60,13 +60,13 @@ class Win32_Environment : CIM_SystemResource
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ entorno Win32** tiene estos tipos de miembros:
+La **clase Win32 \_ Environment** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ entorno Win32** tiene estas propiedades.
+La **clase Win32 \_ Environment** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -79,12 +79,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -97,30 +97,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -130,15 +130,15 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ Session Manager \\ \\ Environment")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Cadena de caracteres que especifica el nombre de una variable de entorno basada en Windows. Al especificar el nombre de una variable que aún no existe, una aplicación crea una nueva variable de entorno.
+Cadena de caracteres que especifica el nombre de una variable de entorno Windows basada en caracteres. Al especificar el nombre de una variable que aún no existe, una aplicación crea una nueva variable de entorno.
 
-Ejemplo: "path"
+Ejemplo: "Ruta de acceso"
 
 </dd> <dt>
 
@@ -151,14 +151,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -166,84 +166,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -259,10 +259,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ Session Manager \\ \\ Environment")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
-Indica si la variable es una variable del sistema. El sistema operativo establece una variable del sistema y es independiente de la configuración del entorno del usuario.
+Indica si la variable es una variable del sistema. El sistema operativo establece una variable del sistema y es independiente de la configuración del entorno de usuario.
 
 </dd> <dt>
 
@@ -275,10 +275,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ Session Manager \\ \\ Environment")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Nombre del propietario de la configuración del entorno. Se establece en <SYSTEM> para la configuración específica del sistema basado en Windows (en oposición a un usuario específico) y <DEFAULT> para la configuración de usuario predeterminada.
+Nombre del propietario de la configuración del entorno. Se establece en para la configuración específica del sistema basado en Windows (en lugar de un usuario específico) y para la <SYSTEM> <DEFAULT> configuración de usuario predeterminada.
 
 Ejemplo: "JSmith"
 
@@ -290,35 +290,35 @@ Ejemplo: "JSmith"
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ Session Manager \\ \\ Environment")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
-Variable de marcador de posición de una variable de entorno basada en Windows. La información como el directorio del sistema de archivos puede cambiar de equipo a equipo. El sistema operativo sustituye los marcadores de posición por estos.
+Variable de marcador de posición de una Windows de entorno basada en el marcador de posición. Información como el directorio del sistema de archivos puede cambiar de equipo a equipo. El sistema operativo sustituye los marcadores de posición por estos.
 
-Ejemplo: "% SystemRoot%"
+Ejemplo: "%SystemRoot%"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **\_ entorno de Win32** se deriva de [**\_ SystemResource CIM**](cim-systemresource.md). Puede usar esta clase para buscar las rutas de acceso de carpetas especiales, como la carpeta del sistema o los archivos de programa en un equipo remoto. Algunos ejemplos son: WINDIR, raízDelSistema, ProgramFiles y userprofile. **Win32 \_** Básicamente, el entorno devuelve lo que se puede encontrar en:
+La **clase Win32 \_ Environment** se deriva de CIM [**\_ SystemResource**](cim-systemresource.md). Puede usar esta clase para buscar las rutas de acceso de carpetas especiales, como la carpeta System o archivos de programa en un equipo remoto. Algunos ejemplos son: windir, systemroot, programfiles y userprofile. **Win32 \_ El** entorno devuelve básicamente lo que se puede encontrar en:
 
-**HKEY \_ Entorno de \_ equipo local** \\  \\ **CurrentControlSet** \\ **control** \\ **SessionManager** \\ **Environment**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **Sessionmanager** \\ **Environment**
 
 y
 
-**HKEY \_** \\ Entorno de **< usuario >** de usuarios \\ 
+**HKEY \_ Entorno** \\ **< *de usuario* >** de \\ **USUARIOS**
 
-El proceso de llamada que usa esta clase debe tener el privilegio de **\_ \_ nombre de restauración se** en el equipo en el que reside el registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [ejecutar operaciones con privilegios](/windows/desktop/WmiSdk/executing-privileged-operations).
+El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="examples"></a>Ejemplos
 
-La [lista de variables de entorno en un equipo Perl de](https://Gallery.TechNet.Microsoft.Com/79ae998e-2e29-4a6d-b0a6-34ed5b709d49) ejemplo usa WMI para devolver información acerca de todas las variables de entorno de un equipo.
+El [ejemplo Enumerar variables de entorno](https://Gallery.TechNet.Microsoft.Com/79ae998e-2e29-4a6d-b0a6-34ed5b709d49) en un equipo perl usa WMI para devolver información sobre todas las variables de entorno de un equipo.
 
-En el siguiente ejemplo de código de VBScript se enumeran las variables de entorno en el equipo local.
+En el ejemplo de código de VBScript siguiente se enumeran las variables de entorno en el equipo local.
 
 
 ```VB
@@ -336,7 +336,7 @@ Next
 
 
 
-El siguiente ejemplo de código de VBScript cambia una variable de entorno denominada \_ tipo de compilación a una entrada de valor por el usuario. El script supone que la variable de tipo de compilación \_ ya existe. Si no existe, el script finaliza. Se comprueba el valor de entrada: debe ser "Build1", "Build2" o "Build3" y no se acepta ningún otro valor. La función [UCase](https://msdn.microsoft.com/library/aa902519.aspx) de VBScript hace que la entrada no distinga mayúsculas de minúsculas. Si lo que se escribe no es uno de los tres valores aceptables, el script finaliza.
+En el ejemplo de código de VBScript siguiente se cambia una variable de entorno denominada BUILD \_ TYPE a una entrada de valor por parte del usuario. El script supone que la variable BUILD \_ TYPE ya existe. Si no existe, el script finaliza. El valor de entrada está activado: debe ser "Build1", "Build2" o "Build3" y no se acepta ningún otro valor. La función [UCase de](https://msdn.microsoft.com/library/aa902519.aspx) VBScript hace que la entrada no tenga en cuenta las mayúsculas y minúsculas de entrada. Si lo que se escribe en no es uno de los tres valores aceptables, el script finaliza.
 
 
 ```VB
@@ -370,21 +370,21 @@ End If
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_SYSTEMRESOURCE CIM**](cim-systemresource.md)
+[**CIM \_ SystemResource**](cim-systemresource.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

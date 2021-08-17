@@ -1,5 +1,5 @@
 ---
-description: 'Método IShellDispatch3.AddToRecent: agrega un archivo a la lista usada más recientemente (MRU).'
+description: 'Método IShellDispatch3.AddToRecent: agrega un archivo a la lista de uso más reciente (MRU).'
 ms.assetid: aa5aef31-7f3f-4cc4-949d-1484de243ef3
 title: Método IShellDispatch3.AddToRecent (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8d31d05e9eef889d9018e4806cf4c882dba3060e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8f5507755a6929cee9811f1f935e93b347aed9ebe57f2e0237365cdfbbf4b109
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090325"
 ---
 # <a name="ishelldispatch3addtorecent-method"></a>Método IShellDispatch3.AddToRecent
 
-Agrega un archivo a la lista de mru usada más recientemente.
+Agrega un archivo a la lista de uso más reciente (MRU).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Cadena **que** contiene la ruta de acceso del archivo que se agregará a la list
 
 </dd> <dt>
 
-*bstrCategory* \[ in, opcional\]
+*bstrCategory* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -83,9 +83,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso de **AddToRecent** para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso **de AddToRecent** para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -180,9 +180,9 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 

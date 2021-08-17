@@ -1,30 +1,30 @@
 ---
-description: La \_ exclusión mutua MSIExecute se establece solo al procesar la tabla InstallExecuteSequence, la tabla AdminExecuteSequence o la tabla AdvtExecuteSequence.
+description: MsiExecute Mutex solo se establece mientras se procesa la tabla \_ InstallExecuteSequence, la tabla AdminExecuteSequence o la tabla AdvtExecuteSequence.
 ms.assetid: 2186422d-ccb2-4f7e-8c6d-326c00e0d9a9
 title: _MSIExecute exclusión mutua
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c22a9ca79e83e8593c2ee99884965acfd414ff4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cbca288c2d75051c1d6247a1123c453509c635df2872c3724d27d9a2fa27cc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066555"
 ---
-# <a name="_msiexecute-mutex"></a>\_Exclusión mutua MSIExecute
+# <a name="_msiexecute-mutex"></a>\_MSIExecute Mutex
 
-La \_ exclusión mutua MSIExecute se establece solo al procesar la tabla [InstallExecuteSequence](installexecutesequence-table.md), la tabla [AdminExecuteSequence](adminexecutesequence-table.md)o la tabla [AdvtExecuteSequence](advtexecutesequence-table.md).
+MsiExecute Mutex solo se establece mientras se procesa la tabla \_ [InstallExecuteSequence](installexecutesequence-table.md), la tabla [AdminExecuteSequence](adminexecutesequence-table.md)o la [tabla AdvtExecuteSequence](advtexecutesequence-table.md).
 
-Dado que no se pueden ejecutar dos instalaciones en el mismo proceso, un intento de llamar a la interfaz de programación de aplicaciones (API) del instalador devuelve la instalación de ERROR \_ \_ que ya se \_ está ejecutando (1618) en dos casos:
+Dado que dos instalaciones no se pueden ejecutar en el mismo proceso, un intento de llamar a la interfaz de programación de aplicaciones (API) del instalador devuelve ERROR \_ INSTALL \_ ALREADY RUNNING \_ (1618) en dos casos:
 
--   Mientras \_ se establece la exclusión mutua MSIExecute.
--   Mientras el proceso actual está procesando la [tabla InstallUISequence](installuisequence-table.md) o la [tabla AdminUISequence](adminuisequence-table.md).
+-   Mientras se \_ establece MSIExecute Mutex.
+-   Mientras el proceso actual está procesando [la tabla InstallUISequence](installuisequence-table.md) o [la tabla AdminUISequence](adminuisequence-table.md).
 
-Consulte los mensajes de [registro de eventos](event-logging.md) para obtener información sobre la aplicación que se va a instalar.
+Consulte los [mensajes de registro de](event-logging.md) eventos para obtener información sobre la aplicación que se está instalando.
 
-En los casos en los que no resulta práctico devolver un \_ error en la instalación de un error \_ \_ , se puede recuperar el estado actual del servicio de Windows Installer antes de intentar iniciar la instalación mediante la función [**QueryServiceStatusEx**](/windows/desktop/api/winsvc/nf-winsvc-queryservicestatusex) . El servicio Windows Installer se está ejecutando actualmente si el valor del miembro **dwControlsAccepted** de la estructura [**de \_ \_ proceso de estado de servicio**](/windows/desktop/api/winsvc/ns-winsvc-service_status_process) devuelto es el **\_ \_ cierre del servicio Accept**.
+En los casos en los que no es práctico devolver un error ERROR INSTALL ALREADY RUNNING, puede recuperar el estado actual del servicio instalador de Windows antes de intentar iniciar la instalación mediante la \_ \_ función \_ [**QueryServiceStatusEx.**](/windows/desktop/api/winsvc/nf-winsvc-queryservicestatusex) El Windows installer está en ejecución actualmente si el valor del miembro **dwControlsAccepted** de la estructura [**SERVICE STATUS \_ \_ PROCESS**](/windows/desktop/api/winsvc/ns-winsvc-service_status_process) devuelta es **SERVICE ACCEPT \_ \_ SHUTDOWN**.
 
-**Windows Installer 2,0:** No compatible. El uso de la función [**QueryServiceStatusEx**](/windows/desktop/api/winsvc/nf-winsvc-queryservicestatusex) para recuperar el estado actual del servicio Windows Installer requiere Windows Installer versión 3,0 o superior.
+**Windows Installer 2.0:** No se admite. El uso de la [**función QueryServiceStatusEx**](/windows/desktop/api/winsvc/nf-winsvc-queryservicestatusex) para recuperar el estado actual del servicio Windows Installer requiere Windows Installer versión 3.0 o posterior.
 
  
 

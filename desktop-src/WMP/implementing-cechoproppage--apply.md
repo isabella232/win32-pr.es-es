@@ -3,28 +3,28 @@ title: Implementación de CEchoPropPage Apply
 description: Implementación de CEchoPropPage Apply
 ms.assetid: e887b851-e623-4ec4-8d8b-165e4b21e116
 keywords:
-- Complementos de Windows Media Player, páginas de propiedades de ejemplo echo
-- complementos, páginas de propiedades de ejemplo echo
-- Complementos de procesamiento de señal digital, páginas de propiedades de ejemplo de eco
-- Complementos DSP, páginas de propiedades de ejemplo echo
-- Ejemplo de complemento de DSP de eco, páginas de propiedades
-- Ejemplo de complemento DSP de eco, método CEchoPropPage Apply
+- Reproductor de Windows Media complementos, páginas de propiedades de ejemplo echo
+- complementos, páginas de propiedades de ejemplo de eco
+- complementos de procesamiento de señales digitales, páginas de propiedades de ejemplo de eco
+- Complementos de DSP, páginas de propiedades de ejemplo de eco
+- Ejemplo de complemento DSP de eco, páginas de propiedades
+- Ejemplo de complemento DE DSP de eco, método CEchoPropPage Apply
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bdca8a771d3e3e26923567f25bf7d19e968595e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a53d05bee90908f766034c300c99bcfa8d529b06e6713c803bd99bcf042b579
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135628"
 ---
-# <a name="implementing-cechoproppageapply"></a>Implementación de CEchoPropPage:: Apply
+# <a name="implementing-cechoproppageapply"></a>Implementación de CEchoPropPage::Apply
 
-El método CEchoPropPage:: Apply se implementa en EchoPropPage. cpp. Se ejecuta cuando el usuario hace clic en **aplicar** en el cuadro de diálogo Página de propiedades de Windows Media Player. El código de ejemplo del Asistente para complementos proporciona una implementación para controlar una sola propiedad. Puede modificar este código para una de las propiedades de ejemplo de eco y, a continuación, agregar código para almacenar el otro valor de propiedad.
+El método CEchoPropPage::Apply se implementa en EchoPropPage.cpp. Se ejecuta cuando el usuario hace clic en **Aplicar en** el cuadro de diálogo de la página de propiedades Reproductor de Windows Media. El código de ejemplo del asistente para complementos proporciona una implementación para controlar una sola propiedad. Puede modificar este código para una de las propiedades de ejemplo Echo y, a continuación, agregar código para almacenar el otro valor de propiedad.
 
-## <a name="declaring-the-apply-method-variables"></a>Declarar las variables de método Apply
+## <a name="declaring-the-apply-method-variables"></a>Declarar las variables del método Apply
 
-En primer lugar, debe quitar la declaración de fScaleFactor. A continuación, agregue las declaraciones de variable que necesitará. En el ejemplo siguiente se muestran las declaraciones de variables completadas:
+En primer lugar, debe quitar la declaración de fScaleFactor. A continuación, agregue las declaraciones de variable que necesitará. En el ejemplo siguiente se muestran las declaraciones de variable completadas:
 
 
 ```
@@ -36,9 +36,9 @@ double  fWetmix = 0.50;      // Initialize a double for effect level.
 
 
 
-## <a name="retrieving-the-values-from-the-property-page"></a>Recuperación de los valores de la página de propiedades
+## <a name="retrieving-the-values-from-the-property-page"></a>Recuperar los valores de la página de propiedades
 
-Debe implementar el código para recuperar y validar los datos proporcionados por el usuario. En el ejemplo de código siguiente se recupera el valor de tiempo de retraso del \_ cuadro de edición IDC DELAYTIME y, a continuación, se comprueba si el valor está dentro de un intervalo especificado:
+Debe implementar código para recuperar y validar la entrada del usuario. En el ejemplo de código siguiente se recupera el valor de tiempo de retraso del cuadro de edición DELAYTIME de IDC y, a continuación, se comprueba que el valor está dentro de \_ un intervalo especificado:
 
 
 ```
@@ -63,7 +63,7 @@ if ((dwDelayTime < 10) || (dwDelayTime > 2000))
 
 Si la entrada del usuario no está en el intervalo especificado, el código muestra un cuadro de mensaje. Observe el uso del recurso de cadena que creó anteriormente para el mensaje de error.
 
-En el ejemplo siguiente se recupera el nivel de efecto del \_ cuadro de edición IDC WETMIX y, a continuación, se comprueba que el valor está dentro de un intervalo especificado:
+En el ejemplo siguiente se recupera el nivel de efecto del cuadro de edición IDC WETMIX y, a continuación, se comprueba que el valor está dentro de \_ un intervalo especificado:
 
 
 ```
@@ -86,9 +86,9 @@ if ((dwWetmix < 0) || (dwWetmix > 100))
 
 
 
-## <a name="storing-the-property-values-in-the-registry"></a>Almacenar los valores de propiedad en el registro
+## <a name="storing-the-property-values-in-the-registry"></a>Almacenar los valores de propiedad en el Registro
 
-A continuación, el código debe conservar los nuevos valores de propiedad en el registro. El código siguiente almacena ambos valores de propiedad:
+A continuación, el código debe conservar los nuevos valores de propiedad en el Registro. El código siguiente almacena ambos valores de propiedad:
 
 
 ```
@@ -113,9 +113,9 @@ if (ERROR_SUCCESS == lResult)
 
 
 
-## <a name="updating-the-echo-plug-in-property-values"></a>Actualizar los valores de las propiedades de los complementos de eco
+## <a name="updating-the-echo-plug-in-property-values"></a>Actualización de los valores de propiedad del complemento de eco
 
-El método **Apply** debe informar al complemento echo de que los valores de propiedad han cambiado. El código siguiente llama al método put de propiedad para cada propiedad mediante el puntero de interfaz recuperado en CEchoPropPage:: SetObjects:
+El **método Apply** debe informar al complemento Echo de que los valores de propiedad han cambiado. El código siguiente llama al método put de la propiedad para cada propiedad mediante el puntero de interfaz recuperado en CEchoPropPage::SetObjects:
 
 
 ```
@@ -132,11 +132,11 @@ if (m_spEcho)
 
 
 
-Observe que el valor de la combinación húmeda se convierte en el punto flotante antes de pasarse al complemento.
+Tenga en cuenta que el valor de mezcla con humedad se convierte en punto flotante antes de pasarse al complemento.
 
-## <a name="disabling-the-apply-button"></a>Deshabilitar el botón aplicar
+## <a name="disabling-the-apply-button"></a>Deshabilitar el botón Aplicar
 
-Como paso final, el código debe deshabilitar aplicar en el cuadro de diálogo Página de propiedades como una señal al usuario de que los valores se han actualizado correctamente. Esto requiere la siguiente línea de código:
+Como último paso, el código debe deshabilitar Aplicar en el cuadro de diálogo de la página de propiedades como una señal al usuario de que los valores se han actualizado correctamente. Esto requiere la siguiente línea de código única:
 
 
 ```
@@ -149,12 +149,12 @@ m_bDirty = FALSE; // Tell the property page to disable Apply.
 
 <dl> <dt>
 
-[**Modificar la página de propiedades de ejemplo echo**](modifying-the-echo-sample-property-page.md)
+[**Modificar la página de propiedades Echo Sample**](modifying-the-echo-sample-property-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

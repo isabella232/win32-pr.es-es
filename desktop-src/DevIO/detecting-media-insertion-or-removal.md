@@ -1,32 +1,32 @@
 ---
-description: Windows envía a todas las ventanas de nivel superior un conjunto de mensajes de DEVICECHANGE de WM predeterminados \_ cuando se agregan nuevos dispositivos o medios (como un CD o DVD) y están disponibles, y cuando se quitan los dispositivos o medios existentes.
+description: Windows envía a todas las ventanas de nivel superior un conjunto de mensajes PREDETERMINADOS DE WM DEVICECHANGE cuando se agregan nuevos dispositivos o medios (como un CD o DVD) y están disponibles, y cuando se quitan los dispositivos o medios \_ existentes.
 ms.assetid: 26baa3aa-e54d-42fe-b2b2-a3fcca6dee91
-title: Detección de la inserción o eliminación de medios
+title: Detección de inserción o eliminación de medios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e6cfd4539d6f2ce5eac41e355f56a5a87835505
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3f3f6d579ed654ae2d2f77d00f70b88dc1441d03bbce59c0f8cb39ca6800c6af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104157016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318355"
 ---
-# <a name="detecting-media-insertion-or-removal"></a>Detección de la inserción o eliminación de medios
+# <a name="detecting-media-insertion-or-removal"></a>Detección de inserción o eliminación de medios
 
-Windows envía a todas las ventanas de nivel superior un conjunto de mensajes de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) predeterminados cuando se agregan nuevos dispositivos o medios (como un CD o DVD) y están disponibles, y cuando se quitan los dispositivos o medios existentes. No es necesario registrarse para recibir estos mensajes predeterminados. Vea la sección Comentarios en [**RegisterDeviceNotification**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) para obtener más información sobre los mensajes que se envían de forma predeterminada. Los mensajes del ejemplo de código siguiente se encuentran entre los mensajes predeterminados.
+Windows envía a todas las ventanas de nivel superior un conjunto de mensajes [**DE WM \_ DEVICECHANGE**](wm-devicechange.md) predeterminados cuando se agregan nuevos dispositivos o medios (como un CD o DVD) y están disponibles, y cuando se quitan los dispositivos o medios existentes. No es necesario registrarse para recibir estos mensajes predeterminados. Consulte la sección Comentarios de [**RegisterDeviceNotification**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) para obtener más información sobre qué mensajes se envían de forma predeterminada. Los mensajes del ejemplo de código siguiente se encuentran entre los mensajes predeterminados.
 
 > [!Note]  
-> Windows solo envía mensajes de [**WM \_ DEVICECHANGE**](wm-devicechange.md) para eventos de medios de CD o DVD a ventanas de nivel superior que son propiedad de aplicaciones que se ejecutan en la sesión de consola activa. Las ventanas de nivel superior que son propiedad de las aplicaciones que se ejecutan en una sesión de escritorio remoto no reciben mensajes de [**WM \_ DEVICECHANGE**](wm-devicechange.md) para eventos de medios de CD o DVD.
+> Windows envía mensajes [**\_ WM DEVICECHANGE**](wm-devicechange.md) para eventos multimedia de CD o DVD a ventanas de nivel superior que pertenecen a aplicaciones que se ejecutan en la sesión de consola activa. Las ventanas de nivel superior que pertenecen a aplicaciones que se ejecutan en una sesión de Escritorio remoto no reciben mensajes [**DE WM \_ DEVICECHANGE**](wm-devicechange.md) para eventos multimedia de CD o DVD.
 
  
 
-Cada mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) tiene un evento asociado que describe el cambio y una estructura que proporciona información detallada sobre el cambio. La estructura consta de un encabezado independiente de eventos, [**dev \_ Broadcast \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr), seguido de miembros dependientes del evento. Los miembros dependientes del evento describen el dispositivo al que se aplica el evento. Para usar esta estructura, las aplicaciones deben determinar primero el tipo de evento y el tipo de dispositivo. A continuación, pueden usar la estructura correcta para tomar las medidas adecuadas.
+Cada [**mensaje DE WM \_ DEVICECHANGE**](wm-devicechange.md) tiene un evento asociado que describe el cambio y una estructura que proporciona información detallada sobre el cambio. La estructura consta de un encabezado independiente del evento, [**DEV \_ BROADCAST \_ HDR,**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr)seguido de miembros dependientes del evento. Los miembros dependientes del evento describen el dispositivo al que se aplica el evento. Para usar esta estructura, las aplicaciones deben determinar primero el tipo de evento y el tipo de dispositivo. A continuación, pueden usar la estructura correcta para tomar las medidas adecuadas.
 
-Cuando el usuario inserta un CD o DVD nuevo en una unidad de disco, las aplicaciones reciben un mensaje de [**WM \_ DEVICECHANGE**](wm-devicechange.md) con un evento [ \_ DEVICEARRIVAL de DBT](dbt-devicearrival.md) . La aplicación debe comprobar el evento para asegurarse de que el tipo de dispositivo que llega es un volumen (el miembro **dbch \_ DeviceType** es **DBT \_ DEVTYP \_**) y que el cambio afecta a los medios (el miembro **dbcv \_ Flags** es **DBTF \_ medios**).
+Cuando el usuario inserta un nuevo CD o DVD en una unidad, las aplicaciones reciben un mensaje [**DE WM \_ DEVICECHANGE**](wm-devicechange.md) con un [evento \_ DBT DEVICEARRIVAL.](dbt-devicearrival.md) La aplicación debe comprobar el evento para asegurarse de que el tipo de dispositivo que llega es un volumen (el miembro **dbch \_ devicetype** es **DBT \_ DEVTYP \_ VOLUME**) y que el cambio afecta a los medios (el miembro **dbcv \_ flags** **es DBTF \_ MEDIA).**
 
-Cuando el usuario quita un CD o un DVD de una unidad, las aplicaciones reciben un mensaje de [**WM \_ DEVICECHANGE**](wm-devicechange.md) con un evento [ \_ DEVICEREMOVECOMPLETE de DBT](dbt-deviceremovecomplete.md) . De nuevo, la aplicación debe comprobar el evento para asegurarse de que el dispositivo que se va a quitar es un volumen y que el cambio afecta a los medios.
+Cuando el usuario quita un CD o DVD de una unidad, las aplicaciones reciben un mensaje [**DE WM \_ DEVICECHANGE**](wm-devicechange.md) con un [evento DBT \_ DEVICEREMOVECOMPLETE.](dbt-deviceremovecomplete.md) Una vez más, la aplicación debe comprobar el evento para asegurarse de que el dispositivo que se va a quitar es un volumen y de que el cambio afecta a los medios.
 
-En el código siguiente se muestra cómo comprobar la inserción o eliminación de un CD o DVD.
+El código siguiente muestra cómo comprobar la inserción o eliminación de un CD o DVD.
 
 
 ```C++

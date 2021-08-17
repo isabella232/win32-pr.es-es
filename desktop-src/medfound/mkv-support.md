@@ -1,34 +1,34 @@
 ---
-description: En esta sección se describe Media Foundation compatibilidad con archivos de Contenedor multimedia de Matroska (DOCKER).
-title: Compatibilidad con El contenedor multimedia de Matroska (TAPE)
+description: En esta sección se describe Media Foundation compatibilidad con archivos de Matroska Media Container (MKV).
+title: Compatibilidad con Matroska Media Container (MKV)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdd860f58087bc8a0f3fe95d278bfa81edc412d0
-ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
+ms.openlocfilehash: aceb7a836b4a0409af3c359c8d81a0f232e6eb61082960cfb2b0705531de199c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110154224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102145"
 ---
-# <a name="matroska-media-container-mkv-support"></a>Compatibilidad con El contenedor multimedia de Matroska (TAPE)
+# <a name="matroska-media-container-mkv-support"></a>Compatibilidad con Matroska Media Container (MKV)
 
-En esta sección se describe Media Foundation compatibilidad con archivos de Contenedor multimedia de Matroska (DOCKER).
+En esta sección se describe Media Foundation compatibilidad con archivos de Matroska Media Container (MKV).
 
-El formato MPEG puede admitir varios códecs de audio y vídeo, como el audio H.264 y AAC. En general, los contenedores describen cómo se scriben los datos de vídeo y audio y qué información complementaria se usa para describir esas secuencias de A/V. Los contenedores también pueden incluir datos que complementan las secuencias de A/V, como el título, los idiomas de las secuencias de audio, las pistas de subtítulos o subtítulos, las fuentes para esos subtítulos, imágenes, información de capítulos y menús. CSV es un formato muy flexible que admite muchas de estas características de contenedor. Para obtener más información sobre el formato CSV, vea [https://matroska.org](https://matroska.org/)
+El formato MPEG puede admitir varios códecs de audio y vídeo, como H.264 y audio AAC. En general, los contenedores describen cómo se scriben los datos de vídeo y audio y qué información adicional se usa para describir esas secuencias de A/V. Los contenedores también pueden incluir datos que complementan las secuencias A/V, como el título, los idiomas de las secuencias de audio, las pistas de subtítulos o subtítulos, las fuentes para esos subtítulos, imágenes, información de capítulos y menús. CSV es un formato muy flexible que admite muchas de estas características de contenedor. Para obtener más información sobre el formato CSV, consulte [https://matroska.org](https://matroska.org/)
 
 
-## <a name="mkv-container-feature-support"></a>Compatibilidad con características de contenedor DE CONTENEDOR
-Las características del contenedor DE PERO son compatibles con Media Foundation de las siguientes maneras:
+## <a name="mkv-container-feature-support"></a>Compatibilidad con características de contenedor DE TOR
+Las características del contenedor DE SINC son compatibles con Media Foundation de las siguientes maneras:
 - Si hay una o varias pistas de vídeo, se reproducirá la primera pista.
-- Si hay una o varias pistas de audio presentes, se reproducirá la primera pista.
+- Si hay una o varias pistas de audio, se reproducirá la primera pista.
 - Se admiten pistas de título, pero no se seleccionan (se reproducen) de forma predeterminada.
 - Si hay una o varias fuentes o imágenes, los títulos e imágenes no se representarán, aunque el archivo se cargará y reproducirá.
 - La información del menú no se admite y no se mostrará, pero el archivo se cargará y reproducirá.
 - Si los archivos con capítulos hacen referencia a archivos complementarios, los archivos complementarios no se reproducirán.
 - Las imágenes en miniatura están disponibles al buscar archivos en unidades USB mediante el explorador de archivos.
 
-Este conjunto de características debe permitir la reproducción de la mayoría de los archivos MPEG si contienen códecs compatibles.
-Se admiten los archivos MPEG que contienen pistas de audio y vídeo codificadas con los códecs enumerados en la sección siguiente.
+Este conjunto de características debe permitir la reproducción de la mayoría de los archivos MPEG si contienen códecs admitidos.
+Se admiten los archivos MPEG que contienen pistas de vídeo y audio codificadas con los códecs enumerados en la sección siguiente.
 
 ## <a name="supported-mkv-codecs"></a>Códecs MPEG admitidos
 
@@ -55,35 +55,35 @@ Identificador de Matroska: V_MPEG4/MS/V3
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MP43
 - Descripción: Códec Microsoft MPEG 4 versión 3
-- Identificadores de FourCC o WAV: MP43
+- Identificadores fourCC o WAV: MP43
 
 Identificador de Matroska: V_MPEG4/ISO/ASP
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MP4V
 - Descripción: vídeo MPEG-4, parte 2
-- Identificadores de FourCC o WAV: MP4V
+- Identificadores fourCC o WAV: MP4V
 
 Identificador de Matroska: V_MS/VFW/FOURCC
 
-- Descripción: se asigna a varios códecs que normalmente se admiten en el formato AVI que están disponibles en la consola.
+- Descripción: Mapas a varios códecs que normalmente se admiten en el formato AVI que están disponibles en la consola.
 
 Identificador de Matroska: V_THEORA
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_Theora
 - Descripción: Theora
-- Identificadores de FourCC o WAV: theo
+- Identificadores fourCC o WAV: theo
 
 Identificador de Matroska: V_MPEG4/ISO/SP
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MP4V
-- Descripción: Perfil simple MPEG4 ISO (DivX4)
-- Identificadores de FourCC o WAV: MP4V
+- Descripción: Perfil simple DE MPEG4 ISO (DivX4)
+- Identificadores fourCC o WAV: MP4V
 
 Identificador de Matroska: V_MPEG4/ISO/AP
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MP4V
-- Descripción: Perfil sencillo avanzado de MPEG4 ISO (DivX5, DivD, FFMPEG)
-- Identificadores de FourCC o WAV: MP4V
+- Descripción: perfil sencillo avanzado MPEG4 ISO (DivX5, DivD, FFMPEG)
+- Identificadores fourCC o WAV: MP4V
 
 
 Identificador de Matroska: V_MPEGH/ISO/HEVC 
@@ -128,67 +128,67 @@ Identificador de Matroska: A_AC3
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Dolby_AC3
 - Descripción: Dolby AC3
-- Identificadores de FourCC o WAV: WAVE_FORMAT_DOLBY_AC3_SPDIF
+- Identificadores fourCC o WAV: WAVE_FORMAT_DOLBY_AC3_SPDIF
 
 Identificador de Matroska: A_MPEG/L3
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_MP3
 - Descripción: MPEG Audio Layer-3 (MP3)
-- Identificadores de FourCC o WAV: WAVE_FORMAT_MPEGLAYER3
+- Identificadores fourCC o WAV: WAVE_FORMAT_MPEGLAYER3
 
 Identificador de Matroska: A_MPEG/L1
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_MPEG
-- Descripción: carga de audio MPEG-1
-- Identificadores de FourCC o WAV: WAVE_FORMAT_MPEG
+- Descripción: Carga de audio MPEG-1
+- Identificadores fourCC o WAV: WAVE_FORMAT_MPEG
 
 Identificador de Matroska: A_PCM/INT/BIG
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_PCM
 - Descripción: Audio PCM sin comprimir
-- Identificadores de FourCC o WAV: WAVE_FORMAT_PCM
+- Identificadores fourCC o WAV: WAVE_FORMAT_PCM
 
 Identificador de Matroska: A_PCM/INT/LIT
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_PCM
 - Descripción: Audio PCM sin comprimir
-- Identificadores de FourCC o WAV: WAVE_FORMAT_PCM
+- Identificadores fourCC o WAV: WAVE_FORMAT_PCM
 
 Identificador de Matroska: A_PCM/FLOAT/IEEE
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Float
-- Descripción: Audio de punto flotante IEEE sin comprimir
-- Identificadores fourCC o WAV: WAVE_FORMAT_IEEE_FLOAT
+- Descripción: audio de punto flotante IEEE sin comprimir
+- Identificadores de FourCC o WAV: WAVE_FORMAT_IEEE_FLOAT
 
 Identificador de Matroska: A_ALAC
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_ALAC
 - Descripción: Códec de audio sin pérdida de Apple
-- Identificadores fourCC o WAV: 
+- Identificadores de FourCC o WAV: 
 
 Identificador de Matroska: A_MPEG/L2
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_MPEG
 - Descripción: MPEG Audio 1, 2 Capa II
-- Identificadores fourCC o WAV: WAVE_FORMAT_MPEG
+- Identificadores de FourCC o WAV: WAVE_FORMAT_MPEG
 
 Identificador de Matroska: A_DTS
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MEDIASUBTYPE_DTS_HD
-- Descripción: Sistema digital de traslación
-- Identificadores fourCC o WAV: WAVE_FORMAT_DTS
+- Descripción: Digital Theater System
+- Identificadores de FourCC o WAV: WAVE_FORMAT_DTS
 
 Identificador de Matroska: A_OPUS
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Opus
-- Descripción: Uno de los dos
-- Identificadores fourCC o WAV: WAVE_FORMAT_OPUS
+- Descripción: Indeste
+- Identificadores de FourCC o WAV: WAVE_FORMAT_OPUS
 
 Identificador de Matroska: A_VORBIS
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Vorbis
 - Descripción: Pombis
-- Identificadores fourCC o WAV: 
+- Identificadores de FourCC o WAV: 
 
 Identificador de Matroska: A_FLAC
 
@@ -206,17 +206,17 @@ Identificador de Matroska: A_EAC3
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Dolby_DDPlus
 - Descripción: AC-3 mejorado
-- Identificadores fourCC o WAV: 
+- Identificadores de FourCC o WAV: 
 
 Identificador de Matroska: A_TRUEHD
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MEDIASUBTYPE_DOLBY_TRUEHD
 - Descripción: Dolby TrueHD
-- Identificadores fourCC o WAV: 
+- Identificadores de FourCC o WAV: 
 
 Identificador de Matroska: A_MS/ACM
 
-- MSFT Media Foundation MF_MT_SUBTYPE: se asigna a varios WAVE_FORMAT de audio definidos en mmreg.h
+- MSFT Media Foundation MF_MT_SUBTYPE: Mapas a varios WAVE_FORMAT de audio definidos en mmreg.h
 
 
 ### <a name="subtitles-codec-support-for-mkv"></a>Compatibilidad con códecs de subtítulos para MPEG
@@ -244,7 +244,7 @@ Identificador de Matroska: S_TEXT/ASS
 Identificador de Matroska: S_VOBSUB
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFSubtitleFormat_VobSub
-- Descripción: subtítulos vobSub
+- Descripción: Subtítulos vobSub
 
 Identificador de Matroska: S_HDMV/PGS
 

@@ -1,7 +1,7 @@
 ---
-description: El método GetSwapInputs recupera un valor que indica si se intercambian las entradas de la transición.
+description: El método GetSwapInputs recupera un valor que indica si se intercambian las entradas de transición.
 ms.assetid: 84cb5c3d-7c3a-4c35-aac7-97d812d99a38
-title: 'IAMTimelineTrans:: GetSwapInputs (método) (QEDIT. h)'
+title: Método IAMTimelineTrans::GetSwapInputs (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a2acdff1007bd26773ce495d024676632eee1767
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 566dbc54b30619c67ffb9d804e4854d51cae86d3688bda0b48eebfeb64cdb749
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119316305"
 ---
-# <a name="iamtimelinetransgetswapinputs-method"></a>IAMTimelineTrans:: GetSwapInputs (método)
+# <a name="iamtimelinetransgetswapinputs-method"></a>Método IAMTimelineTrans::GetSwapInputs
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `GetSwapInputs` método recupera un valor que indica si se intercambian las entradas de la transición.
+El método recupera un valor que indica si se intercambian las entradas `GetSwapInputs` de transición.
 
-De forma predeterminada, una transición va desde el compuesto de todas las capas de prioridad inferior hasta la capa en la que reside la transición. Puede invertir esta progresión, por lo que la transición va desde la capa en la que reside hasta el compuesto de capas de menor prioridad.
+De forma predeterminada, una transición pasa de la composición de todas las capas de prioridad inferior a la capa donde reside la transición. Puede invertir esta progresión, por lo que la transición pasa de la capa donde reside de vuelta a la composición de capas de prioridad inferior.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,23 +50,23 @@ HRESULT GetSwapInputs(
 *pVal* 
 </dt> <dd>
 
-Recibe un valor booleano. Si el valor es **false**, la transición va desde el compuesto de todas las capas de prioridad más baja hasta la capa de transición. Si el valor es **true**, la transición va en la dirección opuesta. El valor predeterminado es **FALSE**.
+Recibe un valor booleano. Si el valor es **FALSE,** la transición pasa de la composición de todas las capas de prioridad inferior a la capa de transición. Si el valor es **TRUE,** la transición va en la dirección opuesta. El valor predeterminado es **FALSE**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineTrans**](iamtimelinetrans.md)
+[**IamTimelineTrans (interfaz)**](iamtimelinetrans.md)
 </dt> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)

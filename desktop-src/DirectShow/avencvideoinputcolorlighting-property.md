@@ -1,15 +1,15 @@
 ---
 description: Especifica las condiciones de iluminación previstas para ver el vídeo de entrada.
 ms.assetid: 718a6d56-c869-4340-bbb8-cac5b231c37e
-title: Propiedad AVEncVideoInputColorLighting (Codecapi. h)
+title: Propiedad AVEncVideoInputColorLighting (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a447642a2f622480240ec653520ef40021e22437
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c505c8dabc938811f8e672a6247f7b689323d07ab40fabc5b9f4bd911b88cdb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104080029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275375"
 ---
 # <a name="avencvideoinputcolorlighting-property"></a>Propiedad AVEncVideoInputColorLighting
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVEncVideoColorLighting**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolorlighting) .
+El valor de esta propiedad es un miembro de la [**enumeración eAVEncVideoColorLighting.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolorlighting)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVEncVideoColorL
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVEncVideoColorL
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  
